@@ -1,5 +1,5 @@
 ---
-name: Bug report - Отсчет об ошибке
+name: Bug report - Отчет об ошибке
 about: Create a report to help us improve
 title: ''
 labels: ''
