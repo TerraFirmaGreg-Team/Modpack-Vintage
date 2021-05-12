@@ -7,5 +7,5 @@
 
 [ENG]
 This is where GregTech and TerraFirmaCraft are combined to create the most insane modpack, one you will probably play until old age, if you dare.
-Some other things present are: Galacticraft, Forestry, Gendustry, Gregicality, Astral Sorcery, Thaumcraft with 10 addons, 300+ quests, a completely new set of ore generation settings for TFC, and this is just the beginning, since all the mods are integrated with one another via Crafttweaker.
+Some other things present are: Galacticraft, Forestry, Gendustry, Gregicality, Astral Sorcery, 300+ quests, a completely new set of ore generation settings for TFC, and this is just the beginning, since all the mods are integrated with one another via Crafttweaker.
 All this unbelievable content awaits you.
