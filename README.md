@@ -1,4 +1,4 @@
-# TerraFirmaGreg-1.12.2
+# TerraFirmaGreg-1.12.2 - Без Таумкрафта - Without Thaumcraft
 [RUS]
 Это сборка в которой GregTech и TerraFirmaCraft соединились, чтобы создать самую отбитую на голову сборку, которую вы будете проходить до старости, если осмелитесь.
 Так же в сборке есть Galacticraft, Forestry, Gendustry, Gregicallity, Astral Sorcery, Thaumcraft с 10 аддонами, открытый мир, 300+ квестов и это только начало, ведь каждый из этих модов гармонично сочетается друг с другом, посредством мода Crafttweaker и моих скриптов.
