@@ -1,0 +1,16 @@
+{
+	x: 12.0d,
+	y: 3.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.mefluidterminal.subtitle}",
+	dependencies: [
+		"8d7e7672"
+	],
+	tasks: [{
+		uid: "4df6ece0",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 520"
+		}]
+	}]
+}

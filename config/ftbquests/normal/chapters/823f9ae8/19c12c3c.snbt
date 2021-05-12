@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.primitive.vesselUnharneded.title}",
+	x: -23.0d,
+	y: -9.0d,
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "2ab3a32a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:ceramics/unfired/vessel"
+		}]
+	}]
+}

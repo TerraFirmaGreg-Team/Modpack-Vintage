@@ -1,0 +1,35 @@
+{
+	x: 3.0d,
+	y: -9.5d,
+	description: "{tfg.quests.primitive.tochilka3.subtitle}",
+	dependencies: [
+		"5bb9fc36"
+	],
+	tasks: [{
+		uid: "1b831b1d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					work: 0,
+					steps: {
+						last: -1,
+						third: -1,
+						second: -1
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfcthings:grindstone_quartz"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db7c8f33",
+		type: "item",
+		items: [{
+			item: "tfcthings:grindstone_base"
+		}]
+	}]
+}

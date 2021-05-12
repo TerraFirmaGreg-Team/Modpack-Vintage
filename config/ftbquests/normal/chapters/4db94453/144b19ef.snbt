@@ -1,0 +1,20 @@
+{
+	x: 23.0d,
+	y: 4.5d,
+	shape: "circle",
+	dependencies: [
+		"eee1afc9"
+	],
+	tasks: [{
+		uid: "bdba91de",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "appliedenergistics2:spatial_storage_cell_128_cubed"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

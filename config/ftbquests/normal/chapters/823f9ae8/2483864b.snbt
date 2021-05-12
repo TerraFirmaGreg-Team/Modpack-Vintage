@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.primitive.obsidian.title}",
+	x: 8.5d,
+	y: -0.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.obsidian.subtitle}",
+	dependencies: [
+		"b4eca65b",
+		"5805de92"
+	],
+	tasks: [{
+		uid: "4c40934e",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 7L
+	}],
+	rewards: [{
+		uid: "e58d36a2",
+		type: "item",
+		team_reward: false,
+		item: "minecraft:obsidian",
+		count: 7
+	}]
+}

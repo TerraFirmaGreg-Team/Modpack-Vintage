@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.woodchest.title}",
+	icon: "minecraft:chest",
+	x: -18.5d,
+	y: -10.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.woodchest.subtitle}",
+	dependencies: [
+		"c8377a61"
+	],
+	tasks: [{
+		uid: "5abd577a",
+		type: "item",
+		title: "{tfg.quests.primitive.woodchest.task.chest.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "chestWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any chestWood"
+				}
+			}
+		}]
+	}]
+}

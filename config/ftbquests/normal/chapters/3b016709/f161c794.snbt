@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.lv.h2o.title}",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "oxygen",
+			Amount: 1000
+		}
+	},
+	x: -5.5d,
+	y: 1.0d,
+	dependencies: [
+		"4194e346"
+	],
+	tasks: [{
+		uid: "89f3988a",
+		type: "fluid",
+		fluid: "oxygen"
+	},
+	{
+		uid: "5631e87b",
+		type: "fluid",
+		fluid: "hydrogen",
+		amount: 2000
+	}]
+}

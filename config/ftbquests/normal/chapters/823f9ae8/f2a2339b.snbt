@@ -1,0 +1,71 @@
+{
+	icon: "minecraft:paper",
+	x: -10.5d,
+	y: -14.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.paper.subtitle}",
+	dependencies: [
+		"2b068c5e"
+	],
+	tasks: [{
+		uid: "44536988",
+		type: "item",
+		items: [{
+			item: "minecraft:paper"
+		}]
+	},
+	{
+		uid: "010e6266",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			},
+			Count: 1b
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "terra"
+				}]
+			},
+			Count: 1b
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			},
+			Count: 1b
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			},
+			Count: 1b
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ordo"
+				}]
+			},
+			Count: 1b
+		}]
+	}]
+}

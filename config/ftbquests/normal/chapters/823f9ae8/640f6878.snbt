@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.primitive.jug.title}",
+	x: -24.0d,
+	y: -10.5d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.jug.subtitle}",
+	dependencies: [
+		"4a2c1797"
+	],
+	tasks: [{
+		uid: "a4a47c18",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:ceramics/fired/jug"
+		}],
+		ignore_nbt: 1b
+	}]
+}

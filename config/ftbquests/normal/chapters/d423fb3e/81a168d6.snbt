@@ -1,0 +1,52 @@
+{
+	title: "{tfg.quests.steam.books.title}",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "rftools:rftools_shape_manual"
+	},
+	x: -3.0d,
+	y: -10.5d,
+	description: "{tfg.quests.steam.books.subtitle}",
+	can_repeat: true,
+	dependencies: [
+		"738b98f0"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "155d24c1",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "a1e3a2e7",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftoolsdim:rftoolsdim_manual"
+		}
+	},
+	{
+		uid: "ce4764e6",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:rftools_shape_manual"
+		}
+	},
+	{
+		uid: "9181ae92",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:rftools_manual"
+		}
+	}]
+}

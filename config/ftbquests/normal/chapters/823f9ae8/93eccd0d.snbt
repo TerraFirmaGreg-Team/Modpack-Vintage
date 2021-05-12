@@ -1,0 +1,34 @@
+{
+	title: "{tfg.quests.primitive.blacksteelanvil.title}",
+	x: 3.0d,
+	y: -4.8d,
+	shape: "square",
+	dependencies: [
+		"f7244dc3"
+	],
+	size: 1.2d,
+	tasks: [{
+		uid: "a0ee65e3",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/anvil/black_steel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

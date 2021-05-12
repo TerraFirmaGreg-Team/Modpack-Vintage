@@ -1,0 +1,38 @@
+{
+	title: "{tfg.quests.primitive.copperanvil.title}",
+	x: -13.799999999999999d,
+	y: -4.8d,
+	shape: "square",
+	description: "{tfg.quests.primitive.copperanvil.subtitle}",
+	dependencies: [
+		"01aaa85a",
+		"6f433082",
+		"9f1afc5f",
+		"3aac6d33"
+	],
+	size: 1.2d,
+	tasks: [{
+		uid: "eea1b355",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/anvil/copper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

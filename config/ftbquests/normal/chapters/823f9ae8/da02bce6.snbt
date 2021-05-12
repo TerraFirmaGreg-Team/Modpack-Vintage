@@ -1,0 +1,80 @@
+{
+	title: "{tfg.quests.primitive.blackbronzeingot.title}",
+	icon: {
+		ForgeCaps: {
+			"tfc:item_forge": {
+				heat: 0.0f,
+				ticks: -1L,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						third: -1,
+						second: -1
+					}
+				}
+			}
+		},
+		id: "gregtech:meta_item_1",
+		Damage: 10229s
+	},
+	x: -12.0d,
+	y: 1.5d,
+	description: "{tfg.quests.primitive.blackbronzeingot.subtitle}",
+	dependencies: [
+		"72877b1a",
+		"57406373",
+		"517eb449"
+	],
+	tasks: [{
+		uid: "019c5dd1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "tfc:metal/ingot/black_bronze"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "gregtech:meta_item_1",
+			Damage: 10229s
+		}]
+	}]
+}

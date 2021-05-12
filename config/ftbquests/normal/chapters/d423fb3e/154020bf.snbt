@@ -1,0 +1,21 @@
+{
+	x: -10.0d,
+	y: 2.5d,
+	description: "{tfg.quests.steam.analyzator.subtitle}",
+	dependencies: [
+		"5b03e17e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "50347293",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forestry:portable_alyzer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

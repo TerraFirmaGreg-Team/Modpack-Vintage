@@ -1,0 +1,21 @@
+{
+	x: -10.5d,
+	y: -15.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.astralTome.subtitle}",
+	dependencies: [
+		"f2a2339b"
+	],
+	tasks: [{
+		uid: "8c8070f6",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemjournal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

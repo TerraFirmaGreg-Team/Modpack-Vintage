@@ -1,0 +1,35 @@
+{
+	title: "{tfg.quests.mv.coaltar.title}",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "coal_tar",
+			Amount: 1000
+		}
+	},
+	x: -5.0d,
+	y: -10.5d,
+	dependencies: [
+		"78d6911c",
+		"320166b2"
+	],
+	hide: true,
+	tasks: [{
+		uid: "512baf30",
+		type: "fluid",
+		fluid: "sulfuric_coal_tar_oil"
+	},
+	{
+		uid: "44b0dbb9",
+		type: "fluid",
+		fluid: "coal_tar_oil"
+	},
+	{
+		uid: "9e374c81",
+		type: "fluid",
+		fluid: "coal_tar"
+	}]
+}

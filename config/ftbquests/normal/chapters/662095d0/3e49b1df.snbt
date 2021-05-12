@@ -1,0 +1,23 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "polycaprolactam",
+			Amount: 1000
+		}
+	},
+	x: -9.0d,
+	y: -1.5d,
+	dependencies: [
+		"4021d3ff"
+	],
+	hide: true,
+	tasks: [{
+		uid: "efa30b62",
+		type: "fluid",
+		fluid: "polycaprolactam"
+	}]
+}

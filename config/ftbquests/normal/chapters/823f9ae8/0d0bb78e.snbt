@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.primitive.cheese.title}",
+	x: -9.0d,
+	y: -12.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.cheese.subtitle}",
+	dependencies: [
+		"d2b461b8",
+		"d5960a87",
+		"ffb7544a"
+	],
+	tasks: [{
+		uid: "a39ca40f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:food": {
+					traits: [],
+					creationDate: -9223372036854775808L
+				}
+			},
+			id: "tfc:food/cheese"
+		}]
+	}]
+}

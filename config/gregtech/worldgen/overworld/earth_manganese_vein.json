@@ -1,0 +1,45 @@
+{
+  "weight": 25,
+  "density": 0.3,
+  "max_height": 110,
+  "min_height": 40,
+  "surface_stone_material": "aluminium",
+  "generation_predicate":["ore_dict:GenRockII"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [20, 24]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:grossular"
+        },
+        {
+          "weight": 28,
+          "value": "ore:spessartine"
+        },
+		{
+          "weight": 25,
+          "value": "ore:pyrolusite"
+        },
+		{
+          "weight": 10,
+          "value": "ore:tantalite"
+        },
+		{
+          "weight": 5,
+          "value": "ore:rhodocrosite"
+        },
+		{
+          "weight": 2,
+          "value": "ore:fluorite"
+        }
+      ]
+    }
+  }
+}

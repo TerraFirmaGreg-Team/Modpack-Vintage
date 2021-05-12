@@ -1,0 +1,55 @@
+{
+	title: "{tfg.quests.primitive.redbluesteelanvil.title}",
+	x: 5.3999999999999995d,
+	y: -5.3999999999999995d,
+	shape: "square",
+	description: "{tfg.quests.primitive.redbluesteelanvil.subtitle}",
+	dependencies: [
+		"f1e04348",
+		"f3758d79"
+	],
+	dependency_requirement: "one_completed",
+	size: 1.2d,
+	tasks: [{
+		uid: "afe6c466",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/anvil/blue_steel"
+		},
+		{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/anvil/red_steel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

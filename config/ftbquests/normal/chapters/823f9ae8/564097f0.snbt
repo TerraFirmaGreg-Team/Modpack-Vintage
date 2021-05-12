@@ -1,0 +1,39 @@
+{
+	title: "{tfg.quests.primitive.farmer3000.title}",
+	x: -22.0d,
+	y: -6.0d,
+	description: "{tfg.quests.primitive.farmer3000.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "82c7783c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hoe/igneous_intrusive"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hoe/igneous_extrusive"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hoe/sedimentary"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hoe/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

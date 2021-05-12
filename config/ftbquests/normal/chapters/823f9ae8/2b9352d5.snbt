@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.primitive.redsteelbucket.title}",
+	x: 9.5d,
+	y: -6.0d,
+	description: "{tfg.quests.primitive.redsteelbucket.subtitle}",
+	dependencies: [
+		"501214da",
+		"f3758d79"
+	],
+	tasks: [{
+		uid: "724a137f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/bucket/red_steel"
+		}],
+		ignore_nbt: 1b
+	}]
+}

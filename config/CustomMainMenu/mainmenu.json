@@ -1,0 +1,197 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:mainmenu/tfglogocurse.png",
+            "posX" : -240,
+            "posY" : -30,
+            "width" : 480,
+            "height" : 180,
+            "alignment" : "top_center"
+        }
+		
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -200,
+            "posY" : 0,
+			"texture" : "modpack:mainmenu/blankbutton.png",
+            "alignment" : "center",
+			"hoverImage" : "modpack:mainmenu/ds.png",
+			"hoverTextColor" : 2096931,
+			"hoverText" : "Alone, again..",
+            "width" : 80,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -120,
+            "posY" : 0,
+			"texture" : "modpack:mainmenu/blankbutton.png",
+            "alignment" : "center",
+			"hoverText" : "With friends?",
+			"hoverTextColor" : 2070783,
+            "width" : 80,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : -40,
+            "posY" : 0,
+			"texture" : "modpack:mainmenu/blankbutton.png",
+            "alignment" : "center",
+			"hoverTextColor" : 16757535,
+			"hoverText" : "Some not enough?",
+            "width" : 80,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 40,
+            "posY" : 0,
+			"texture" : "modpack:mainmenu/blankbutton.png",
+            "alignment" : "center",
+			"hoverTextColor" : 16719857,
+			"hoverText" : "Install shaders..",
+            "width" : 80,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 120,
+            "posY" : 0,
+			"texture" : "modpack:mainmenu/blankbutton.png",
+            "alignment" : "center",
+			"hoverTextColor" : 16719647,
+			"hoverText" : "No, no, why?",
+            "width" : 80,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+		
+		"Discord":
+        {
+            "text" : "",
+            "alignment" : "bottom_left",
+			"texture" : "modpack:mainmenu/ds.png",
+            "posX" : 2,
+            "posY" : -43,
+            "width" : 20,
+            "height" : 20,
+            "action" :
+			{
+				"type" : "openLink",
+				"link" : "https://discord.gg/TZx8Cfr"
+			}
+		},
+		
+		"Youtube":
+        {
+            "text" : "",
+            "alignment" : "bottom_left",
+			"texture" : "modpack:mainmenu/yt.png",
+            "posX" : 22,
+            "posY" : -43,
+            "width" : 20,
+            "height" : 20,
+            "action" :
+			{
+				"type" : "openLink",
+				"link" : "https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw"
+			}
+		}
+    },
+    
+    "labels":
+    {
+        "VerClientTEXT":
+        {
+            "text" : "Current Version:",
+            "posX" : 2,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		
+		"VerClient":
+        {
+            "text" : "R2.6.2 [without Thaumcraft]",
+            "posX" : 68,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		
+		"VerClientAvText":
+        {
+            "text" : "Latest Version:",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		
+		"VerClientAv":
+        {
+            "text":"web:https://pastebin.com/raw/pPyKeYzA",
+            "posX" : 62,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+		
+    },
+    
+    "other": {
+		"background": {
+			"image": "",
+			"slideshow": {
+				"images": [
+					"modpack:mainmenu/backgrounds/bg1.jpg",
+					"modpack:mainmenu/backgrounds/bg2.jpg",
+					"modpack:mainmenu/backgrounds/bg3.jpg",
+					"modpack:mainmenu/backgrounds/bg4.jpg",
+					"modpack:mainmenu/backgrounds/bg5.jpg",
+					"modpack:mainmenu/backgrounds/bg6.jpg"
+				],
+				"displayDuration": 150,
+				"fadeDuration": 60
+			}
+		}
+	}
+}

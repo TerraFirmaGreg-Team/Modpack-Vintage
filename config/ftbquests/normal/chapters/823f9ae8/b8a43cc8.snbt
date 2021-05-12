@@ -1,0 +1,54 @@
+{
+	title: "{tfg.quests.primitive.nickelpile.title}",
+	x: 1.0d,
+	y: -5.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.nickelpile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "6fc6af2a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "gregtech:meta_item_1",
+			Damage: 2044s
+		},
+		{
+			item: "gregtech:meta_item_1 1 44"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "gregtech:meta_item_1",
+			Damage: 3044s
+		}]
+	}]
+}

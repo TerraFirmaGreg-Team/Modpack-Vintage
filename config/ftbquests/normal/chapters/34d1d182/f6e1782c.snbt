@@ -1,0 +1,66 @@
+{
+	title: "{tfg.quests.space.tier1spacesuit.title}",
+	x: 11.5d,
+	y: -7.0d,
+	description: "{tfg.quests.space.tier1spacesuit.subtitle}",
+	dependencies: [
+		"47b3df48",
+		"f0257b6e"
+	],
+	tasks: [{
+		uid: "6ec396ea",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier1_space_suit_helmet",
+			tag: {},
+			Damage: 100s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "74e64fed",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier1_space_suit_chest",
+			tag: {},
+			Damage: 100s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0f901741",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier1_space_suit_legings",
+			tag: {},
+			Damage: 100s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7c94cc3d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier1_space_suit_boots",
+			tag: {},
+			Damage: 100s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

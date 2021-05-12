@@ -1,0 +1,19 @@
+{
+	x: -1.0d,
+	y: -3.5d,
+	shape: "circle",
+	description: "{tfg.quests.lv.chemicalbath.subtitle}",
+	dependencies: [
+		"9b75479c",
+		"6aeff01a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3c613663",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 180"
+		}],
+		ignore_nbt: 1b
+	}]
+}

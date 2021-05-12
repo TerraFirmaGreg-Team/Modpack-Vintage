@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "groupId": "default",
+      "template": "Dimension: {dimName}"
+    },
+    {
+      "groupId": "gcsatellite",
+      "template": "Orbiting around {planet} on a space station"
+    },
+    {
+      "groupId": "gcmoon",
+      "template": "On {moon} around {planet}"
+    },
+    {
+      "groupId": "gcplanet",
+      "template": "On planet {planet}"
+    },
+    {
+      "groupId": "rftools",
+      "template": "RFTools dimension: {rftools}"
+    }
+  ],
+  "dimensions": [
+    {
+      "dimName": "moon.moon",
+      "template": "Moon"
+    },
+    {
+      "dimName": "twilight_forest",
+      "template": "The Twilight Forest"
+    },
+    {
+      "dimName": "hunting_dim",
+      "template": "The hunting dimension"
+    },
+    {
+      "dimName": "the_nether",
+      "template": "The Nether"
+    },
+    {
+      "dimName": "the_end",
+      "template": "The End"
+    },
+    {
+      "dimName": "overworld",
+      "template": "Earth"
+    },
+    {
+      "dimName": "planet.asteroids",
+      "template": "Jumping on some Asteroids"
+    }
+  ]
+}

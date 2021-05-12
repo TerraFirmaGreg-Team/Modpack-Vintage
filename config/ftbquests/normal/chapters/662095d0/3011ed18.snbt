@@ -1,0 +1,22 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "bio.ethanol",
+			Amount: 1000
+		}
+	},
+	x: -8.0d,
+	y: -7.5d,
+	dependencies: [
+		"78d6911c"
+	],
+	tasks: [{
+		uid: "306d8ac1",
+		type: "fluid",
+		fluid: "bio.ethanol"
+	}]
+}

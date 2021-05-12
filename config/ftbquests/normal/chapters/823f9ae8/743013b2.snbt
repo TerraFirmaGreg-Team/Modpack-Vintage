@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.primitive.fuelNumber2.title}",
+	icon: "tfc:ore/bituminous_coal",
+	x: -20.0d,
+	y: -1.5d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.fuelNumber2.subtitle}",
+	dependencies: [
+		"6f433082"
+	],
+	tasks: [{
+		uid: "0d9fec18",
+		type: "item",
+		items: [{
+			item: "tfc:ore/bituminous_coal"
+		},
+		{
+			item: "gregtech:meta_item_1 1 8211"
+		},
+		{
+			item: "minecraft:coal"
+		}]
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	x: 21.5d,
+	y: -2.0d,
+	shape: "circle",
+	dependencies: [
+		"4c4596ca"
+	],
+	tasks: [{
+		uid: "ea9bf292",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 469"
+		}]
+	},
+	{
+		uid: "ec5b9e0d",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 463"
+		}]
+	},
+	{
+		uid: "3af58890",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 462"
+		}]
+	},
+	{
+		uid: "30bb3c8a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 467"
+		}]
+	},
+	{
+		uid: "7faa1551",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 461"
+		}]
+	}]
+}

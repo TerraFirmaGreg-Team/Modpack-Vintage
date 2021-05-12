@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: -8.5d,
+	description: "{tfg.quests.space.terraformer3000.subtitle}",
+	dependencies: [
+		"bbf8a781"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7cfa6ded",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:mars_machine"
+		}]
+	}]
+}

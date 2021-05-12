@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.space.wpshuttlecore.title}",
+	x: 1.0d,
+	y: -14.0d,
+	description: "{tfg.quests.space.wpshuttlecore.subtitle}",
+	dependencies: [
+		"f51a360a"
+	],
+	tasks: [{
+		uid: "0308e874",
+		type: "item",
+		items: [{
+			item: "warpdrive:ship_core.basic"
+		},
+		{
+			item: "warpdrive:ship_core.advanced"
+		},
+		{
+			item: "warpdrive:ship_core.superior"
+		}]
+	}]
+}

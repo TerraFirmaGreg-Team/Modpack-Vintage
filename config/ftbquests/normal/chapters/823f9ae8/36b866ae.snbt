@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.primitive.vessel.title}",
+	x: -22.5d,
+	y: -10.5d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.vessel.subtitle}",
+	dependencies: [
+		"19c12c3c"
+	],
+	tasks: [{
+		uid: "001081f4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					fluidMode: 0b,
+					ticks: -1L,
+					items: {
+						Size: 4,
+						Items: []
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:ceramics/fired/vessel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

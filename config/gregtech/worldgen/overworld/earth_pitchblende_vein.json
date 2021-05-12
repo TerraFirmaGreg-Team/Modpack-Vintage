@@ -1,0 +1,28 @@
+{
+  "weight": 15,
+  "density": 0.4,
+  "max_height": 35,
+  "surface_stone_material": "pitchblende",
+  "generation_predicate":["ore_dict:GenRockMetamorf", "ore_dict:GenRockIE"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [10, 20]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 65,
+          "value": "ore:pitchblende"
+        },
+        {
+          "weight": 35,
+          "value": "ore:uraninite"
+        }
+      ]
+    }
+  }
+}

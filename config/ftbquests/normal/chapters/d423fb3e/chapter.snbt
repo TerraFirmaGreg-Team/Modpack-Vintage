@@ -1,0 +1,7 @@
+{
+	title: "{tfg.quests.steam.era.title}",
+	icon: "gregtech:meta_item_2 1 26095",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "circle"
+}

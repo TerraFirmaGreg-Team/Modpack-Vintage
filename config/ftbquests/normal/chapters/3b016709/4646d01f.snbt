@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 3.0d,
+	shape: "square",
+	description: "{tfg.quests.lv.start.subtitle}",
+	dependencies: [
+		"40c4948a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f9784b65",
+		type: "checkmark",
+		title: "{tfg.quests.lv.start.title}"
+	}]
+}

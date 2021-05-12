@@ -1,0 +1,21 @@
+{
+	x: 15.0d,
+	y: -10.0d,
+	description: "{tfg.quests.space.rocket1.subtitle}",
+	dependencies: [
+		"bb9ee8fb"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "2b9dc54e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftcore:rocket_t1",
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}]
+}

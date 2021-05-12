@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: -6.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.lv.pumplv.subtitle}",
+	dependencies: [
+		"4b134bc1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f1b677d1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32610"
+		}]
+	}]
+}

@@ -1,0 +1,45 @@
+{
+  "weight": 10,
+  "density": 0.3,
+  "max_height": 100,
+  "min_height": 35,
+  "surface_stone_material": "platinum",
+  "generation_predicate":["ore_dict:GenRockII"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [20, 24]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+		{
+          "weight": 40,
+          "value": "ore:platinum_metallic_powder"
+        },
+		{
+          "weight": 25,
+          "value": "ore:palladium_metallic_powder"
+        },
+		{
+          "weight": 15,
+          "value": "ore:rarest_metal_residue"
+        },
+		{
+          "weight": 10,
+          "value": "ore:cooperite"
+        },
+		{
+          "weight": 5,
+          "value": "ore:platinum"
+        },
+		{
+          "weight": 5,
+          "value": "ore:palladium"
+        }
+      ]
+    }
+  }
+}

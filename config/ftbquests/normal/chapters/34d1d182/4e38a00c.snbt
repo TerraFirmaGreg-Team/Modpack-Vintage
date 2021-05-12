@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: -1.5d,
+	description: "{tfg.quests.space.lvl4solarpanel.subtitle}",
+	dependencies: [
+		"d0d1cb64"
+	],
+	tasks: [{
+		uid: "59b7fe26",
+		type: "item",
+		items: [{
+			item: "extraplanets:solar 1 4"
+		}]
+	}]
+}

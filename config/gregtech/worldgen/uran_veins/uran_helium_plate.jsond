@@ -1,0 +1,29 @@
+{
+  "weight": 15,
+  "density": 1.0,
+  "max_height": 30,
+  "min_height": 10,
+  "priority": -100,
+  "count_as_vein": false,
+  "dimension_filter": ["dimension_id:-17"],
+  "generation_predicate": "any",
+
+  "generator": {
+    "type": "plate",
+    "length": [20, 56],
+    "depth": [20, 36],
+    "height": [5, 10]
+  },
+  "filler": {
+    "type": "ignore_bedrock",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 100,
+          "value": "fluid:helium"
+        }
+      ]
+    }
+  }
+}

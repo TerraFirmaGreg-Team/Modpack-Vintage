@@ -1,0 +1,56 @@
+{
+	title: "{tfg.quests.space.tier2termalarmor.title}",
+	x: 15.5d,
+	y: -12.0d,
+	description: "{tfg.quests.space.tier2termalarmor.subtitle}",
+	dependencies: [
+		"79111811"
+	],
+	tasks: [{
+		uid: "aae91b3f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftplanets:thermal_padding_t2",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b6c84bc7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftplanets:thermal_padding_t2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fee6546a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftplanets:thermal_padding_t2",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "36d7a099",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftplanets:thermal_padding_t2",
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}]
+}

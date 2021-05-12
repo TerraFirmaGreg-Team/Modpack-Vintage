@@ -1,0 +1,29 @@
+{
+	x: 7.5d,
+	y: -1.5d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.mesecurity.subtitle}",
+	dependencies: [
+		"cedc31b8"
+	],
+	tasks: [{
+		uid: "8353238e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:security_station"
+		}]
+	},
+	{
+		uid: "6991f690",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "appliedenergistics2:biometric_card",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Ракетное топливо",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "rocket_fuel",
+			Amount: 1000
+		}
+	},
+	x: 1.5d,
+	y: -4.5d,
+	shape: "circle",
+	dependencies: [
+		"a9b219e6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "91d1f26d",
+		type: "fluid",
+		fluid: "rocket_fuel"
+	}]
+}

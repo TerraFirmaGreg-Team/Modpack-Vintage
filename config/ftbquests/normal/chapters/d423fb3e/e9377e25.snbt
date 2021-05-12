@@ -1,0 +1,71 @@
+{
+	title: "{tfg.quests.steam.tools.title}",
+	x: -10.0d,
+	y: -2.5d,
+	shape: "diamond",
+	description: "{tfg.quests.steam.tools.subtitle}",
+	dependencies: [
+		"d9827d71"
+	],
+	hide: true,
+	tasks: [{
+		uid: "36feaf59",
+		type: "item",
+		title: "{tfg.quests.steam.tools.task.wrench.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWrench",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWrench"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b479714b",
+		type: "item",
+		title: "{tfg.quests.steam.tools.task.screwdriver.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolScrewdriver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolScrewdriver"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fd589fa4",
+		type: "item",
+		title: "{tfg.quests.steam.tools.task.wirecutter.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWireCutter",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWireCutter"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

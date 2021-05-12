@@ -1,0 +1,27 @@
+{
+	title: "Батарейный буфер HV",
+	x: -2.0d,
+	y: -2.0d,
+	shape: "circle",
+	dependencies: [
+		"e4f3463c"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d3dfd98a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 622"
+		},
+		{
+			item: "gregtech:machine 1 623"
+		},
+		{
+			item: "gregtech:machine 1 624"
+		},
+		{
+			item: "gregtech:machine 1 625"
+		}],
+		ignore_nbt: 1b
+	}]
+}

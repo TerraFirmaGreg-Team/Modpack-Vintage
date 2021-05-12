@@ -1,0 +1,25 @@
+{
+	icon: "minecraft:string",
+	x: -7.5d,
+	y: -10.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.strings.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "6e91620e",
+		type: "item",
+		title: "{tfg.quests.primitive.strings.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "string",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}]
+	}]
+}

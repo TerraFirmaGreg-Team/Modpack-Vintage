@@ -1,0 +1,218 @@
+{
+	title: "{tfg.quests.primitive.pebbles.title}",
+	icon: {
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f,
+				ticks: -1L
+			}
+		},
+		id: "tfc:rock/chert"
+	},
+	x: -24.0d,
+	y: -4.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.pebbles.subtitle}",
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "5dd94e80",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_size": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "minecraft:stick"
+		}],
+		count: 10L
+	},
+	{
+		uid: "4b786323",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/granite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/diorite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/gabbro"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/shale"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/claystone"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/rocksalt"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/limestone"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/conglomerate"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/dolomite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/chert"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/chalk"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/rhyolite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/basalt"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/andesite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/dacite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/quartzite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/slate"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/phyllite"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/gneiss"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_heat": {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:rock/schist"
+		}],
+		count: 10L
+	}]
+}

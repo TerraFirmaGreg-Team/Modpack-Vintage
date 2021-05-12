@@ -1,0 +1,16 @@
+{
+	x: 13.5d,
+	y: 1.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.accespoint.subtitle}",
+	dependencies: [
+		"8db2694e"
+	],
+	tasks: [{
+		uid: "477297e6",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:wireless_access_point"
+		}]
+	}]
+}

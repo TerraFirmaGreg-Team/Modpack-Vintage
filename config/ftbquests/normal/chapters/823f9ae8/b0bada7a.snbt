@@ -1,0 +1,16 @@
+{
+	x: -10.0d,
+	y: -5.0d,
+	shape: "square",
+	description: "{tfg.quests.primitive.bellows.subtitle}",
+	dependencies: [
+		"2816fe72"
+	],
+	tasks: [{
+		uid: "fc2df85e",
+		type: "item",
+		items: [{
+			item: "tfc:bellows"
+		}]
+	}]
+}

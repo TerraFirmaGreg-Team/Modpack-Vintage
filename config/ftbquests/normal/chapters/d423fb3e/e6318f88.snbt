@@ -1,0 +1,27 @@
+{
+	x: -7.5d,
+	y: -2.5d,
+	description: "{tfg.quests.steam.steelingot.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "810c7486",
+		type: "item",
+		title: "{tfg.quests.steam.steelingot.title}",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSteel"
+				}
+			}
+		}]
+	}]
+}

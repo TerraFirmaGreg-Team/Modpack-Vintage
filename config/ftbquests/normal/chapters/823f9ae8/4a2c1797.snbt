@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.primitive.jugButUnfired.title}",
+	x: -24.0d,
+	y: -9.0d,
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "6129e564",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L
+				}
+			},
+			id: "tfc:ceramics/unfired/jug"
+		}]
+	}]
+}

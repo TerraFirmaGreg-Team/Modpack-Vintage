@@ -1,0 +1,53 @@
+{
+	title: "{tfg.quests.primitive.saw.title}",
+	x: -19.5d,
+	y: -7.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.primitive.saw.subtitle}",
+	dependencies: [
+		"b51620dd",
+		"57406373"
+	],
+	tasks: [{
+		uid: "9a3a7d67",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "bismuth_bronze"
+				}
+			},
+			Damage: 5s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "bronze"
+				}
+			},
+			Damage: 5s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "black_bronze"
+				}
+			},
+			Damage: 5s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

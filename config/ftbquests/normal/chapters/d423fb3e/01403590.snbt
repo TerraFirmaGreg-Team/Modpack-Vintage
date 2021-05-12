@@ -1,0 +1,43 @@
+{
+	x: 1.0d,
+	y: -1.5d,
+	description: "{tfg.quests.steam.blacksteelingot2.subtitle}",
+	dependencies: [
+		"badc22e0",
+		"2d444c7e"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "15cb514d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "tfc:metal/ingot/black_steel"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 3.5d,
+	y: 0.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.formingpress.subtitle}",
+	dependencies: [
+		"c46493a4",
+		"898df31c",
+		"2c593cc2",
+		"78ab9af4"
+	],
+	tasks: [{
+		uid: "fea4f99d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 341"
+		}],
+		ignore_nbt: 1b
+	}]
+}

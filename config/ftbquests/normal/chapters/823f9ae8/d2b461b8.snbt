@@ -1,0 +1,34 @@
+{
+	title: "{tfg.quests.primitive.grains.title}",
+	icon: {
+		ForgeCaps: {
+			"tfc:food": {
+				traits: [],
+				creationDate: -9223372036854775808L
+			}
+		},
+		id: "tfc:food/wheat"
+	},
+	x: -12.5d,
+	y: -13.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.grains.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "d32f0738",
+		type: "item",
+		title: "Any categoryGrain",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "categoryGrain",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}]
+	}]
+}

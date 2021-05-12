@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.muchNeededStraw.title}",
+	x: -25.5d,
+	y: -6.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.muchNeededStraw.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "0358cf6b",
+		type: "item",
+		items: [{
+			item: "tfc:straw"
+		}],
+		count: 8L
+	}]
+}

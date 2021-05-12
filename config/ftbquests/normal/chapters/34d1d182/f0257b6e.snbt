@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: -6.0d,
+	dependencies: [
+		"8abfbdeb"
+	],
+	tasks: [{
+		uid: "f5b97e1b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "galacticraftcore:parachute"
+		}],
+		ignore_nbt: 1b
+	}]
+}

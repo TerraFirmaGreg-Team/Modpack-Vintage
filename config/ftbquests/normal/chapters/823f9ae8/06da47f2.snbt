@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.meshokmochi.title}",
+	x: -9.5d,
+	y: -6.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.meshokmochi.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "b7002116",
+		type: "item",
+		items: [{
+			item: "waterflasks:bladder"
+		}]
+	}]
+}

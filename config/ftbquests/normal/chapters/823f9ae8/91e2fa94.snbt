@@ -1,0 +1,53 @@
+{
+	x: -12.0d,
+	y: -5.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.bronzehammer.subtitle}",
+	dependencies: [
+		"106d5c1d"
+	],
+	tasks: [{
+		uid: "53a2375f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					MaxDurability: 1300,
+					Material: "bronze"
+				}
+			},
+			Damage: 6s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					MaxDurability: 1460,
+					Material: "black_bronze"
+				}
+			},
+			Damage: 6s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					MaxDurability: 1200,
+					Material: "bismuth_bronze"
+				}
+			},
+			Damage: 6s
+		}],
+		ignore_nbt: 1b
+	}]
+}

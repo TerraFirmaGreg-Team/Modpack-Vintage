@@ -1,0 +1,82 @@
+{
+	title: "{tfg.quests.primitive.redsteelingot.title}",
+	icon: {
+		ForgeCaps: {
+			"tfc:item_forge": {
+				heat: 0.0f,
+				ticks: -1L,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						third: -1,
+						second: -1
+					}
+				}
+			}
+		},
+		id: "gregtech:meta_item_1",
+		Damage: 10232s
+	},
+	x: 5.5d,
+	y: 1.5d,
+	description: "{tfg.quests.primitive.redsteelingot.subtitle}",
+	dependencies: [
+		"2be65217",
+		"93eccd0d",
+		"da7d16a1",
+		"6e27a4ea",
+		"f7244dc3"
+	],
+	tasks: [{
+		uid: "acb0ea9e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "tfc:metal/ingot/red_steel"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "gregtech:meta_item_1",
+			Damage: 10232s
+		}]
+	}]
+}

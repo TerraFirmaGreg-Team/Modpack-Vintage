@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: -16.0d,
+	description: "{tfg.quests.space.rocket4.subtitle}",
+	dependencies: [
+		"55d972c5",
+		"301bf4db"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "6416ee18",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:item_tier4_rocket",
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}]
+}

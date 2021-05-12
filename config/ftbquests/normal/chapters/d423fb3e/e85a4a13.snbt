@@ -1,0 +1,17 @@
+{
+	x: -1.0d,
+	y: 2.0d,
+	shape: "circle",
+	description: "Крутой способ получения пара, без выбросов CO2 в окружающую среду",
+	dependencies: [
+		"bf81da5c"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e6ef51ae",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 3"
+		}]
+	}]
+}

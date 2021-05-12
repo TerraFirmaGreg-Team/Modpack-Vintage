@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.steam.disltwater.title}",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "minecraft:water_bucket"
+	},
+	x: -2.0d,
+	y: 1.5d,
+	description: "{tfg.quests.steam.disltwater.subtitle}",
+	dependencies: [
+		"06a42a78",
+		"bf81da5c"
+	],
+	tasks: [{
+		uid: "ee511701",
+		type: "checkmark"
+	}]
+}

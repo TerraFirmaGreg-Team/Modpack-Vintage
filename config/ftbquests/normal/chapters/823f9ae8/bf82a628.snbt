@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.primitive.barrel.title}",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tfc:wood/barrel/oak"
+	},
+	x: -16.0d,
+	y: -9.5d,
+	shape: "square",
+	description: "{tfg.quests.primitive.barrel.subtitle}",
+	dependencies: [
+		"1ccd9dd8"
+	],
+	tasks: [{
+		uid: "fe54c5f5",
+		type: "item",
+		title: "Any barrel",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "barrel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

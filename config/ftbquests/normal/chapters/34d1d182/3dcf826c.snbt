@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.space.tier2Nspacesuit.title}",
+	x: 14.5d,
+	y: -12.0d,
+	dependencies: [
+		"79111811"
+	],
+	tasks: [{
+		uid: "01bfaf6b",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier2_un_prepared_space_suit_helmet"
+		}]
+	},
+	{
+		uid: "5ecc2e85",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier2_un_prepared_space_suit_chest"
+		}]
+	},
+	{
+		uid: "67554f03",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier2_un_prepared_space_suit_legings"
+		}]
+	},
+	{
+		uid: "9df4fca2",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier2_un_prepared_space_suit_boots"
+		}]
+	}]
+}

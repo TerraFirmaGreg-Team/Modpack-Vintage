@@ -1,0 +1,20 @@
+{
+	x: -3.0d,
+	y: -5.5d,
+	description: "{tfg.quests.primitive.toughtdowsingrod.subtitle}",
+	dependencies: [
+		"da7d16a1"
+	],
+	tasks: [{
+		uid: "7917e01b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "prospectors:prospector_low"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

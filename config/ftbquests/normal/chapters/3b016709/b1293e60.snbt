@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: 6.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.lv.robotarm.subtitle}",
+	dependencies: [
+		"2fbc8722"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6fafdcd8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32650"
+		}]
+	}]
+}

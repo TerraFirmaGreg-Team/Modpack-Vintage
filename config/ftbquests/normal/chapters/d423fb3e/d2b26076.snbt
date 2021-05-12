@@ -1,0 +1,16 @@
+{
+	x: -10.0d,
+	y: 3.5d,
+	description: "{tfg.quests.steam.apiary.subtitle}",
+	dependencies: [
+		"154020bf"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d5e3711c",
+		type: "item",
+		items: [{
+			item: "forestry:apiary"
+		}]
+	}]
+}

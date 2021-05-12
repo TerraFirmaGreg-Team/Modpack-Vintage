@@ -1,0 +1,24 @@
+{
+  "weight": 1,
+  "density": 0.1,
+  "max_height": 145,
+  "min_height": 135,
+  "generation_predicate":["ore_dict:GenAndesite","ore_dict:GenAndesiteSand"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [10, 14]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 100,
+          "value": "block:contenttweaker:aquamarine_andesite_sand"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	description: "{tfg.quests.lv.scanner.subtitle}",
+	dependencies: [
+		"aca49cbb"
+	],
+	hide_text_until_complete: true,
+	tasks: [{
+		uid: "8f65edfc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32579"
+		}]
+	}]
+}

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<worldGeneration version="3"
+				 xmlns="http://warpdrive.lemadec.org"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://warpdrive.lemadec.org WarpDrive.xsd">
+	
+	<structure group="ship_small" name="legacy" weight="1">
+		<schematic filename="legacy" weight="1" />
+		<replacement blockState="minecraft:stone">
+			<import group="hull_plain" />
+		</replacement>
+		<replacement blockState="minecraft:glass">
+			<import group="hull_glass" />
+		</replacement>
+		<replacement blockState="minecraft:fence">
+			<import group="ship_wiring" />
+		</replacement>
+		<replacement blockState="minecraft:sponge">
+			<import group="ship_solarPanel" />
+		</replacement>
+		<replacement blockState="minecraft:wool@color=red">
+			<for variable="metadataWoolRed" in="0,1,2,3,4,5,6,8">
+				<filler block="minecraft:wool" metadata="%metadataWoolRed%" weight="1" />
+			</for>
+		</replacement>
+		<replacement blockState="minecraft:wool@color=silver">
+			<for variable="metadataWoolSilver" in="7,9,10,11,12,13,14,15,16">
+				<filler block="minecraft:wool" metadata="%metadataWoolSilver%" weight="1" />
+			</for>
+		</replacement>
+		<replacement blockState="computercraft:computer">
+			<filler block="computercraft:computer" weight="1" mods="computercraft" />
+			<filler block="minecraft:air" ratio="0.5" />
+		</replacement>
+		<insertion blockState="opencomputers:case1" mods="opencomputers">
+			<import group="ship_computerCore" name="OpenComputers" />
+		</insertion>
+		<insertion blockState="opencomputers:case2" mods="opencomputers">
+			<import group="ship_computerCore" name="OpenComputers" />
+		</insertion>
+		<insertion blockState="opencomputers:diskdrive" mods="opencomputers">
+			<import group="ship_computerFloppy" name="OpenComputers" />
+		</insertion>
+	</structure>
+	
+	<structure group="ship_small" name="legacy" weight="1">
+		<schematic filename="legacy_corrupted" weight="1" />
+		<replacement blockState="minecraft:stone">
+			<import group="hull_plain" />
+			<filler block="minecraft:air" ratio="0.1" />
+			<filler block="warpdrive:ship_corruption" ratio="0.0025" />
+		</replacement>
+		<replacement blockState="minecraft:glass">
+			<import group="hull_glass" />
+			<filler block="minecraft:air" ratio="0.2" />
+		</replacement>
+		<replacement blockState="minecraft:fence">
+			<import group="ship_wiring" />
+			<filler block="minecraft:air" ratio="0.25" />
+		</replacement>
+		<replacement blockState="minecraft:sponge">
+			<import group="ship_solarPanel" />
+			<filler block="minecraft:air" ratio="0.25" />
+		</replacement>
+		<replacement blockState="minecraft:wool@color=red">
+			<for variable="metadataWoolRed" in="0,1,2,3,4,5,6,8">
+				<filler block="minecraft:wool" metadata="%metadataWoolRed%" weight="1" />
+			</for>
+		</replacement>
+		<replacement blockState="minecraft:wool@color=silver">
+			<for variable="metadataWoolSilver" in="7,9,10,11,12,13,14,15,16">
+				<filler block="minecraft:wool" metadata="%metadataWoolSilver%" weight="1" />
+			</for>
+		</replacement>
+		<replacement blockState="warpdrive:ship_core.basic">
+			<filler block="warpdrive:ship_core.basic" weight="1" />
+			<filler block="minecraft:air" ratio="0.5" />
+		</replacement>
+		<replacement blockState="warpdrive:air_generator.basic">
+			<filler block="warpdrive:air_generator.basic" weight="1" />
+			<filler block="minecraft:air" ratio="0.5" />
+		</replacement>
+		<replacement blockState="warpdrive:ship_controller.basic">
+			<filler block="warpdrive:ship_controller.basic" weight="1" />
+			<filler block="minecraft:air" ratio="0.5" />
+		</replacement>
+		<replacement blockState="computercraft:computer">
+			<filler block="computercraft:computer" weight="1" mods="computercraft" />
+			<filler block="minecraft:air" ratio="0.5" />
+		</replacement>
+	</structure>
+	
+</worldGeneration>

@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: 2.0d,
+	description: "{tfg.quests.steam.platemold.subtitle}",
+	dependencies: [
+		"badc22e0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1de188e5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32301"
+		}]
+	}]
+}

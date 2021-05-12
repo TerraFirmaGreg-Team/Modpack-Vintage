@@ -1,0 +1,29 @@
+{
+	icon: "gregtech:machine 1 626",
+	x: -0.5d,
+	y: 5.0d,
+	dependencies: [
+		"3d5ba582"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3d7b7b2f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 626"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dfa64965",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "gregtech:meta_item_2",
+			Damage: 32213s
+		}],
+		ignore_nbt: 1b
+	}]
+}

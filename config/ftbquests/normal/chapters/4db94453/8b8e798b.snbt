@@ -1,0 +1,26 @@
+{
+	x: 18.0d,
+	y: 4.5d,
+	shape: "circle",
+	dependencies: [
+		"0da9f2e2"
+	],
+	tasks: [{
+		uid: "17b5443b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7942312130750066863L,
+					AS_Amulet_HolderMost: -7089728296900211103L
+				}
+			},
+			id: "wpt:wpt",
+			tag: {
+				InfinityEnergy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,36 @@
+{
+  "weight": 60,
+  "density": 0.4,
+  "min_height": 40,
+  "surface_stone_material": "mica",
+  "generation_predicate":["ore_dict:GenRockMetamorf", "ore_dict:GenRockSedimentary"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [20, 24]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 20,
+          "value": "ore:mica"
+        },
+        {
+          "weight": 30,
+          "value": "ore:asbestos"
+        },
+        {
+          "weight": 20,
+          "value": "ore:gypsum"
+        },
+        {
+          "weight": 10,
+          "value": "ore:kaolinite"
+        }
+      ]
+    }
+  }
+}

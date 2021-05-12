@@ -1,0 +1,49 @@
+{
+	icon: {
+		ForgeCaps: {
+			Parent: {
+				heat: 0.0f,
+				ticks: -1L,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						third: -1,
+						second: -1
+					}
+				}
+			}
+		},
+		id: "tfc:metal/ingot/wrought_iron"
+	},
+	x: -8.5d,
+	y: -5.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.primitive.ironingot.subtitle}",
+	dependencies: [
+		"b0bada7a",
+		"1779861a",
+		"e5774e54"
+	],
+	tasks: [{
+		uid: "1a05161b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "tfc:metal/ingot/wrought_iron"
+		}]
+	}]
+}

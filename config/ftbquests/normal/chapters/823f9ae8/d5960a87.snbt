@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.primitive.fruitsAndBerries.title}",
+	x: -13.0d,
+	y: -13.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.fruitsAndBerries.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "49fda19e",
+		type: "item",
+		title: "Any categoryFruit",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "categoryFruit",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}]
+	}]
+}

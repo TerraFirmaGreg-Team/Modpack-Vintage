@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -6.5d,
+	description: "{tfg.quests.lv.autoclave.subtitle}",
+	dependencies: [
+		"6aeff01a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e054a20f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 110"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.lv.rubber.title}",
+	icon: "gregtech:meta_item_1 1 10152",
+	x: -1.0d,
+	y: -0.5d,
+	shape: "rsquare",
+	dependencies: [
+		"18f9af4b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "05de83a8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2153"
+		}],
+		count: 9L
+	},
+	{
+		uid: "3c7e9978",
+		type: "fluid",
+		fluid: "rubber"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -1.5d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.fluxseed.subtitle}",
+	dependencies: [
+		"848cab62"
+	],
+	tasks: [{
+		uid: "f9ae9c4f",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 1200
+			},
+			Damage: 1200s
+		}]
+	}]
+}

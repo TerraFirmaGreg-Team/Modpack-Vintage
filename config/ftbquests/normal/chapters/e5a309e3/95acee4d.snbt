@@ -1,0 +1,16 @@
+{
+	icon: "gregtech:meta_item_1 1 10133",
+	x: 6.5d,
+	y: 4.0d,
+	dependencies: [
+		"af66b0db"
+	],
+	hide: true,
+	tasks: [{
+		uid: "37e48289",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10133"
+		}]
+	}]
+}

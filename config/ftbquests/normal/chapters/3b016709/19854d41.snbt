@@ -1,0 +1,46 @@
+{
+	title: "{tfg.quests.lv.batterybuffer.title}",
+	icon: "gregtech:machine 1 614",
+	x: 0.0d,
+	y: -9.5d,
+	description: "{tfg.quests.lv.batterybuffer.subtitle}",
+	dependencies: [
+		"c931dddf",
+		"07c09c33"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	or_tasks: true,
+	tasks: [{
+		uid: "406ac5de",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10091"
+		}],
+		count: 2L
+	},
+	{
+		uid: "06b5f21f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32500"
+		}]
+	},
+	{
+		uid: "a65955a0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 614"
+		},
+		{
+			item: "gregtech:machine 1 615"
+		},
+		{
+			item: "gregtech:machine 1 616"
+		},
+		{
+			item: "gregtech:machine 1 617"
+		}],
+		ignore_nbt: 1b
+	}]
+}

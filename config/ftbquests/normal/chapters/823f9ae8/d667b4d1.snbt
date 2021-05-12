@@ -1,0 +1,32 @@
+{
+	x: 3.0d,
+	y: -6.5d,
+	description: "{tfg.quests.primitive.tochilka1.subtitle}",
+	dependencies: [
+		"f7244dc3"
+	],
+	tasks: [{
+		uid: "8b3599dd",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfcthings:honing_steel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

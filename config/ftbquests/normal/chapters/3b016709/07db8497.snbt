@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 8.0d,
+	description: "{tfg.quests.lv.formingpress.subtitle}",
+	dependencies: [
+		"2fbc8722"
+	],
+	hide: true,
+	tasks: [{
+		uid: "15cc3da5",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 340"
+		}],
+		ignore_nbt: 1b
+	}]
+}

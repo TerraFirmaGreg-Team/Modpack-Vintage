@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.space.end1.title}",
+	x: 3.5d,
+	y: -11.5d,
+	description: "{tfg.quests.space.end1.subtitle}",
+	dependencies: [
+		"551334df"
+	],
+	tasks: [{
+		uid: "ee12d99c",
+		type: "dimension",
+		title: "Visit: Kepler-22b",
+		dim: -22
+	}],
+	rewards: [{
+		uid: "7cb35474",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10993"
+	},
+	{
+		uid: "aad4bdb6",
+		type: "xp_levels",
+		xp_levels: 1000
+	}]
+}

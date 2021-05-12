@@ -1,0 +1,42 @@
+{
+	title: "{tfg.quests.primitive.theHammer.title}",
+	x: -25.5d,
+	y: -7.5d,
+	description: "{tfg.quests.primitive.theHammer.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "46c04371",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hammer/igneous_intrusive"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7942312130750066863L,
+					AS_Amulet_HolderMost: -7089728296900211103L
+				}
+			},
+			id: "tfc:stone/hammer/igneous_extrusive"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hammer/sedimentary"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:stone/hammer/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

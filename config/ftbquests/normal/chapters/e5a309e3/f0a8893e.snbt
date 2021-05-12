@@ -1,0 +1,23 @@
+{
+	x: 2.5d,
+	y: 3.0d,
+	dependencies: [
+		"d4c4c3bc"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7db808cc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7942312130750066863L,
+					AS_Amulet_HolderMost: -7089728296900211103L
+				}
+			},
+			id: "prospectors:prospector_high"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

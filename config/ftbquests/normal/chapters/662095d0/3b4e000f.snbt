@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 13.5d,
+	shape: "rsquare",
+	description: "{tfg.quests.mv.stainless.subtitle}",
+	dependencies: [
+		"bc3a7596",
+		"927fc999"
+	],
+	hide: true,
+	size: 3.0d,
+	tasks: [{
+		uid: "101b3871",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10183"
+		}]
+	}]
+}

@@ -1,0 +1,78 @@
+{
+	title: "{tfg.quests.primitive.brassingot.title}",
+	icon: {
+		ForgeCaps: {
+			"tfc:item_forge": {
+				heat: 0.0f,
+				ticks: -1L,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						third: -1,
+						second: -1
+					}
+				}
+			}
+		},
+		id: "gregtech:meta_item_1",
+		Damage: 10094s
+	},
+	x: -8.5d,
+	y: 0.5d,
+	dependencies: [
+		"c8b0cb86",
+		"57406373"
+	],
+	tasks: [{
+		uid: "73848ac2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "tfc:metal/ingot/brass"
+		},
+		{
+			ForgeCaps: {
+				"tfc:item_forge": {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				}
+			},
+			id: "gregtech:meta_item_1",
+			Damage: 10094s
+		}]
+	}]
+}

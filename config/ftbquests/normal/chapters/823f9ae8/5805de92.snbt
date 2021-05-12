@@ -1,0 +1,72 @@
+{
+	title: "{tfg.quests.primitive.redbluesteelpickaxe.title}",
+	x: 6.5d,
+	y: -3.0d,
+	description: "{tfg.quests.primitive.redbluesteelpickaxe.subtitle}",
+	dependencies: [
+		"f3758d79",
+		"f1e04348",
+		"f7244dc3"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "637887c7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/pick/black_steel"
+		},
+		{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/pick/red_steel"
+		},
+		{
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							third: -1,
+							second: -1
+						}
+					}
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tfc:metal/pick/blue_steel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

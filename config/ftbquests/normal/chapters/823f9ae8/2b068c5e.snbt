@@ -1,0 +1,23 @@
+{
+	x: -12.0d,
+	y: -14.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.sugarcane.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "5466dcd7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"tfc:food": {
+					traits: [],
+					creationDate: -9223372036854775808L
+				}
+			},
+			id: "tfc:food/sugarcane"
+		}]
+	}]
+}

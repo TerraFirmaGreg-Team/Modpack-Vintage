@@ -1,0 +1,56 @@
+{
+	title: "{tfg.quests.space.tier5termalarmor.title}",
+	x: 1.0d,
+	y: -16.0d,
+	description: "{tfg.quests.space.tier5termalarmor.subtitle}",
+	dependencies: [
+		"1dd04076"
+	],
+	tasks: [{
+		uid: "e4492db8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier5_thermal_padding"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a82cccff",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier5_thermal_padding",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "36561964",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier5_thermal_padding",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9c1934ca",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extraplanets:tier5_thermal_padding",
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}]
+}

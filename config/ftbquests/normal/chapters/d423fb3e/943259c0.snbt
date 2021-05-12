@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: -6.0d,
+	description: "{tfg.quests.steam.6lvltank.subtitle}",
+	dependencies: [
+		"b959a0b8",
+		"94ca4cd4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f9b830f0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 816"
+		}],
+		ignore_nbt: 1b
+	}]
+}
