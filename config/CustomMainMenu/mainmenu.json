@@ -150,7 +150,7 @@
 		
 		"VerClient":
         {
-            "text" : "R2.6.2 [with Thaumcraft]",
+            "text" : "R2.6.3 [without Thaumcraft]",
             "posX" : 68,
             "posY" : -20,
             "color" : -1,
