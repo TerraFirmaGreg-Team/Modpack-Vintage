@@ -1,0 +1,17 @@
+{
+	x: -7.5d,
+	y: -14.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.salisMundus.subtitle}",
+	dependencies: [
+		"5dae4b8f",
+		"d9827d71"
+	],
+	tasks: [{
+		uid: "7b6a6bc8",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	}]
+}

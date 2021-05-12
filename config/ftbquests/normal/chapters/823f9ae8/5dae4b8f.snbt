@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.primitive.bookshelf.title}",
+	x: -9.0d,
+	y: -14.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.bookshelf.subtitle}",
+	dependencies: [
+		"f2a2339b"
+	],
+	tasks: [{
+		uid: "768f88fa",
+		type: "item",
+		title: "Any bookshelf",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "bookshelf",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}]
+	}]
+}
