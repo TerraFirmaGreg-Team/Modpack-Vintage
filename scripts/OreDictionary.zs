@@ -316,6 +316,9 @@ for item in ButtonStone {
 //Ножи TFC = Ножи GT
 <ore:knife>.addAll(<ore:craftingToolKnife>);
 
+//Интеграция для Pams addon TFC
+<ore:craftingToolKnife>.addAll(<ore:toolCuttingboard>);
+
 //Тростник TFC = Тростник MC
 //<ore:sugarcane>.add(<tfc:food/sugarcane>);
 

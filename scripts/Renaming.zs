@@ -461,6 +461,15 @@ tooltip.firmalife.valid=Multiblock Valid
 tooltip.firmalife.invalid=Multiblock Invalid
 tooltip.firmalife.bumper=Bumper.
 tfc.tooltip.barrel_recipe_lime=Preserved in Limewater
+jei.category.firmalife.oven=Oven
+
+jei.category.firmalife.casting=Casting recipes
+jei.category.firmalife.knap.pumpkin=Pumpkin Carving
+jei.category.firmalife.drying=Drying
+jei.tooltip.firmalife.fruit_leaf=Fruit leaves are dropped by breaking any fruit tree's leaves!
+jei.tooltip.firmalife.cocoa_powder=You can get cocoa powder by crafting cocoa butter.
+jei.tooltip.firmalife.pineapple_chunks=You can get pineapple chunks by crafting pineapple fiber.
+vein.halite.name=Halite
 
 death.attack.swarm=%1$s died due to a swarm of bees
 effectFL.swarm=Swarm
