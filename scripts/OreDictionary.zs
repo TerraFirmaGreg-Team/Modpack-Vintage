@@ -317,11 +317,7 @@ for item in ButtonStone {
 <ore:knife>.addAll(<ore:craftingToolKnife>);
 
 //Интеграция для Pams addon TFC
-//<ore:craftingToolKnife>.addAll(<ore:toolCuttingboard>);
 <ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
-
-//Тростник TFC = Тростник MC
-//<ore:sugarcane>.add(<tfc:food/sugarcane>);
 
 //ПЕРЕРАБОТКА КОВАННОГО ЖЕЛЕЗА
 <ore:ingotWroughtIron>.remove(<tfc:metal/ingot/wrought_iron>);

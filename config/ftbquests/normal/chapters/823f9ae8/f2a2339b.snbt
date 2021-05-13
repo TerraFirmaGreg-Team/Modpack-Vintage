@@ -24,7 +24,8 @@
 					amount: 1,
 					key: "aer"
 				}]
-			}
+			},
+			Count: 1b
 		},
 		{
 			id: "thaumcraft:crystal_essence",
@@ -33,7 +34,8 @@
 					amount: 1,
 					key: "terra"
 				}]
-			}
+			},
+			Count: 1b
 		},
 		{
 			id: "thaumcraft:crystal_essence",
@@ -42,7 +44,8 @@
 					amount: 1,
 					key: "ignis"
 				}]
-			}
+			},
+			Count: 1b
 		},
 		{
 			id: "thaumcraft:crystal_essence",
@@ -51,7 +54,8 @@
 					amount: 1,
 					key: "aqua"
 				}]
-			}
+			},
+			Count: 1b
 		},
 		{
 			id: "thaumcraft:crystal_essence",
@@ -60,7 +64,8 @@
 					amount: 1,
 					key: "ordo"
 				}]
-			}
+			},
+			Count: 1b
 		}]
 	}]
 }
