@@ -42,6 +42,9 @@ val large_centrifuge as RecipeMap = RecipeMap.getByName("large_centrifuge");
 val distillery as RecipeMap = RecipeMap.getByName("distillery");
 
 //TERRAFIRMACRAFT + GREGTECH
+//Фикс бронзовой пыли
+recipes.removeByRecipeName("gregtech:dust_bronze");
+recipes.addShapeless(<gregtech:meta_item_1:2095>*10, [<ore:dustTin>*1, <ore:dustCopper>*9]);
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
@@ -52,7 +55,8 @@ centrifuge.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<gre
 //Первые способы получить резину
 extractor.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<gregtech:meta_item_1:32627>, 2500, 0).duration(200).EUt(2).buildAndRegister(); 
 //Чугун --> Сталь
-compressor.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
+forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
 recipes.addShaped(<gregtech:machine:13>,
