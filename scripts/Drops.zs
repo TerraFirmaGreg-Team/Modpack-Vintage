@@ -153,6 +153,9 @@ Dropt.list("Potatoes")
 Dropt.list("Wheat")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:wheat"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
+Dropt.list("Carrot")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:carrots:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
 
 //Дроп с поверхности, подповерхности и камня планет GC
 //Луна

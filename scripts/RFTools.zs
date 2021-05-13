@@ -1,5 +1,9 @@
+import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 
 //Облегчаем жизнь прописыванием коротких имен
 var quarry_shape_card = <rftools:shape_card:2>;
@@ -299,6 +303,64 @@ recipes.remove(<rftools:rftools_shape_manual>);
 recipes.remove(<rftools:rftools_manual>);
 recipes.remove(<rftoolscontrol:card_base>);
 recipes.removeByRecipeName("rftools:shape_card_quarry");
+
+//Базовая карточка из RFTools
+assembler.recipeBuilder().inputs(<ore:circuitBasic> * 2, <gregtech:meta_item_2:32443> * 1, <gregtech:meta_item_2:32455>*6, <gregtech:meta_item_2:32451>*2, <gregtech:meta_item_2:32452>*4).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<rftoolscontrol:card_base>).duration(1250).EUt(56).buildAndRegister(); 
+//Шард из RFTC
+chemical_reactor.recipeBuilder()
+	.inputs([<minecraft:prismarine_crystals>, <minecraft:chorus_fruit_popped> * 2])
+	.fluidInputs([<liquid:enderium> * 50])
+	.outputs(<rftools:dimensional_shard> * 4)
+	.duration(80)
+	.EUt(30)
+	.buildAndRegister();
+//Крутой алмаз из RFTC
+chemical_reactor.recipeBuilder()
+	.inputs([<rftools:dimensional_shard> * 8, <ore:gemDiamond>])
+	.fluidInputs([<liquid:radon> * 50])
+	.outputs(<rftools:infused_diamond>)
+	.duration(100)
+	.EUt(30)
+	.buildAndRegister();
+//Крутой эндерперл из RFTC
+chemical_reactor.recipeBuilder()
+	.inputs([<rftools:dimensional_shard> * 8, <ore:gemEnderPearl>])
+	.fluidInputs([<liquid:radon> * 50])
+	.outputs(<rftools:infused_enderpearl>)
+	.duration(100)
+	.EUt(30)
+	.buildAndRegister();
+//Краснокаменный провод из RFTC
+assembler.recipeBuilder()
+	.inputs(<minecraft:redstone> * 3, <minecraft:stone_slab> * 3)
+	.outputs(<rftools:wire_block> * 4)
+	.duration(600)
+	.EUt(4)
+	.buildAndRegister();
+//Процессор 1 лвл
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_2:32443>, <ore:circuitBasic>*2, <ore:wireGtSingleRedAlloy>*4, <gregtech:meta_item_1:32499>*2)
+	.fluidInputs([<liquid:soldering_alloy> * 288])
+	.outputs(<rftoolscontrol:cpu_core_500>)
+	.duration(500)
+	.EUt(32)
+	.buildAndRegister();
+//Процессор 2 лвл
+assembler.recipeBuilder()
+	.inputs(<rftoolscontrol:cpu_core_500>, <ore:circuitGood>*2, <ore:wireGtSingleAnnealedCopper>*8, <gregtech:meta_item_1:32681>)
+   	.fluidInputs([<liquid:soldering_alloy> * 486])
+	.outputs(<rftoolscontrol:cpu_core_1000>)
+	.duration(400)
+	.EUt(128)
+	.buildAndRegister();
+//Процессор 3 лвл
+assembler.recipeBuilder()
+	.inputs(<rftoolscontrol:cpu_core_1000>, <ore:circuitAdvanced>*2, <ore:wireGtSingleElectrum>*4, <gregtech:meta_item_1:32682>*2)
+   	.fluidInputs([<liquid:soldering_alloy> * 624])
+	.outputs(<rftoolscontrol:cpu_core_2000>)
+	.duration(300)
+	.EUt(256)
+	.buildAndRegister();
 
 //Рецепты
 //2x2 крафты

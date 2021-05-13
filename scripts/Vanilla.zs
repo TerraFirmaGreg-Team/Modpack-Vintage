@@ -1,5 +1,8 @@
+import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+
+val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 
 var ingotIron = <ore:ingotIron>;
 var blockIron = <ore:blockIron>;
@@ -22,7 +25,6 @@ var blockquartz = <ore:blockQuartz>;
 //Отключение крафтов
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
-
 recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
 recipes.removeByRecipeName("gregtech:cauldron");
 recipes.removeByRecipeName("gregtech:iron_trapdoor");
@@ -64,7 +66,6 @@ recipes.removeShapeless(<minecraft:concrete_powder:12>);
 recipes.removeShapeless(<minecraft:concrete_powder:13>);
 recipes.removeShapeless(<minecraft:concrete_powder:14>);
 recipes.removeShapeless(<minecraft:concrete_powder:15>);
-
 //Отключение рельс
 recipes.removeByRecipeName("tfc:vanilla/rail/activator_rail");
 recipes.removeByRecipeName("tfc:vanilla/rail/steel_activator_rail");
@@ -73,13 +74,31 @@ recipes.removeByRecipeName("tfc:vanilla/rail/steel_rail");
 recipes.removeByRecipeName("tfc:vanilla/rail/detector_rail");
 recipes.removeByRecipeName("tfc:vanilla/rail/steel_detector_rail");
 recipes.removeByRecipeName("tfc:vanilla/rail/powered_rail");
-
 //Отключение крафта факелов
 recipes.removeByRecipeName("gregtech:rubber_drop_torch");
 recipes.removeByRecipeName("gregtech:lignite_coal_torch");
 recipes.removeByRecipeName("gregtech:torch_sulfur");
 recipes.removeByRecipeName("gregtech:torch_phosphor");
 recipes.removeByRecipeName("forestry:beeswax_worth");
+
+//Создание крафтов
+//Цемент из ваниллы --> бетон разных цветов
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:1>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:1>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:2>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:2>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:3>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:3>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:4>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:4>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:5>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:5>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:6>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:6>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:7>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:7>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:8>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:8>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:9>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:9>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:10>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:10>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:11>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:11>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:12>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:12>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:13>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:13>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:14>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:14>).duration(10).EUt(8).buildAndRegister();
+chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:15>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:15>).duration(10).EUt(8).buildAndRegister();
 
 //Крафт стекла
 furnace.addRecipe(<minecraft:glass>, <ore:sand>);

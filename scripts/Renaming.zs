@@ -473,4 +473,42 @@ vein.halite.name=Halite
 
 death.attack.swarm=%1$s died due to a swarm of bees
 effectFL.swarm=Swarm
+
+config.firmalife.general=General Settings
+config.firmalife.general.tooltip=General configuration for Firmalife
+
+config.firmalife.general.worldgen=Worldgen Settings
+config.firmalife.general.worldgen.tooltip=Worldgen settings for Firmalife
+config.firmalife.general.compat=Compatibility Settings
+config.firmalife.general.compat.tooltip=Stuff that makes Firmalife integrate with other mods (mostly TFC)
+
+config.firmalife.general.worldgen.cinnamonRarity=Cinnamon Tree Rarity
+config.firmalife.general.worldgen.cinnamonRarity.tooltip=Rarity of cinnamon trees in 1/N chunks. Set to 0 to disable.
+
+config.firmalife.general.worldgen.beeRarity=Bee Rarity
+config.firmalife.general.worldgen.beeRarity.tooltip=Rarity of Wild Bees in 1/N chunks. Set to 0 to disable.
+
+config.firmalife.general.compat.woodenWhitelist=Add to Wooden Bucket Whitelist?
+config.firmalife.general.compat.woodenWhitelist.tooltip=Allows adding Firmalife's fluids to the wooden bucket whitelist. Disable if you want to configure it yourself.
+
+config.firmalife.general.compat.barrelWhitelist=Add to Wooden Bucket Whitelist?
+config.firmalife.general.compat.barrelWhitelist.tooltip=Allows adding Firmalife's fluids to the barrel whitelist. Disable if you want to configure it yourself.
+
+config.firmalife.general.compat.customMilk=Enable custom milk?
+config.firmalife.general.compat.customMilk.tooltip=Enables Firmalife intercepting the milking of Zebu, Goat, and Yak to give special milk.
+
+config.firmalife.general.compat.removeTFC=Remove TFC Recipes?
+config.firmalife.general.compat.removeTFC.tooltip=Enables the removal of some TFC recipes that don't make sense in Firmalife. Not recommended to disable.
+
+config.firmalife.general.compat.logging=Enable extra logging?
+config.firmalife.general.compat.logging.tooltip=Enable logging of some actions Firmalife takes (such as recipe removals)
+
+config.firmalife.general.balance.peelNeeded=Peel needed?
+config.firmalife.general.balance.peelNeeded.tooltip=Peel needed to take stuff out of the oven?
+
+config.firmalife.general.balance.nutTime=Nut Cooldown
+config.firmalife.general.balance.nutTime.tooltip=Ticks required between two nut hammerings
+
+config.firmalife.general.balance.nutDistance=Nut Distance
+config.firmalife.general.balance.nutDistance.tooltip=Distance required between two nut hammerings
 */

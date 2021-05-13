@@ -8,6 +8,7 @@ mods.jei.JEI.hideCategory("appliedenergistics2.inscriber");
 mods.jei.JEI.hideCategory("jeresources.enchantment");
 mods.jei.JEI.hideCategory("jeresources.dungeon");
 mods.jei.JEI.hideCategory("jeresources.villager");
+mods.jei.JEI.hideCategory("jeresources.worldgen");
 
 //Скрываем ненужные предметы
 //Minecraft vanilla
@@ -46,9 +47,6 @@ mods.jei.JEI.removeAndHide(<minecraft:chainmail_leggings>);
 mods.jei.JEI.removeAndHide(<minecraft:chainmail_boots>);
 
 //DynamicTrees
-//mods.jei.JEI.removeAndHide(<dynamictreestc:greatwoodseed>);
-//mods.jei.JEI.removeAndHide(<dynamictreestc:silverwoodseed>);
-//mods.jei.JEI.removeAndHide(<dynamictreesthaumicbases:goldenoakseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:birchseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:jungleseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:acaciaseed>);
@@ -58,10 +56,6 @@ mods.jei.JEI.removeAndHide(<dynamictrees:spruceseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:oakseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:appleseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:dirtbucket>);
-//mods.jei.JEI.removeAndHide(<dynamictreesthaumicbases:rainbowcactusseed>);
-//mods.jei.JEI.removeAndHide(<dynamictreesthaumicbases:hellishoakseed>);
-//mods.jei.JEI.removeAndHide(<dynamictreesthaumicbases:enderoakseed>);
-
 //TFC
 mods.jei.JEI.removeAndHide(<tfc:sluice>);
 //Hammers
@@ -87,7 +81,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/hammer/red_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer/boron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer/beryllium_copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer/zircaloy>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/hammer/thaumium>);
 //Hammers Heads
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/red_steel>);
@@ -112,7 +105,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/tungsten>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/aluminium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/cobalt>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/titanium>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/thaumium>);
 //Saw
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/nickel_silver>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/copper>);
@@ -136,7 +128,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/saw/red_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/boron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/beryllium_copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/zircaloy>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/saw/thaumium>);
 //Saw Heads
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/copper>);
@@ -151,7 +142,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/nickel_silver>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/tungsten>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/aluminium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/titanium>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/thaumium>);
 //Knife
 mods.jei.JEI.removeAndHide(<tfc:metal/knife/nickel_silver>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife/copper>);
@@ -175,7 +165,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/knife/red_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife/boron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife/beryllium_copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife/zircaloy>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/knife/thaumium>);
 //Knife Heads
 mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/red_steel>);
@@ -200,7 +189,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/tungsten>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/aluminium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/cobalt>);
 mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/titanium>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/knife_blade/thaumium>);
 //Geologic Pickaxe
 mods.jei.JEI.removeAndHide(<tfc:metal/propick/nickel_silver>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick/tungsten_steel>);
@@ -221,7 +209,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/propick/blue_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick/titanium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick/tungsten>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick/red_steel>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/propick/thaumium>);
 //Geologic Pickaxe Heads
 mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/nickel_silver>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/tungsten_steel>);
@@ -242,7 +229,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/blue_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/titanium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/tungsten>);
 mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/red_steel>);
-//mods.jei.JEI.removeAndHide(<tfc:metal/propick_head/thaumium>);
 
 //GT
 mods.jei.JEI.removeAndHide(<gregtech:machine:807>);
