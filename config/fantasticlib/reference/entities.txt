@@ -173,9 +173,9 @@ warpdrive:entity_offline_avatar
 warpdrive:entity_seat
 thermaldynamics:transport
 p455w0rdslib:sitting_entity
+forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
-forestry:butterflyge
 galacticraftcore:evolved_spider
 galacticraftcore:evolved_zombie
 galacticraftcore:evolved_creeper

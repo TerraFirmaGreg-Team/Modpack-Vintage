@@ -186,7 +186,7 @@
 				<render red="0.80" green="0.90" blue="0.90" alpha="0.30" />
 			</celestialObject>
 			
-			<celestialObject id="Ceres\n谷神星" mods="extraplanets">
+			<celestialObject id="Ceres" mods="extraplanets">
 				<parent>
 					<center x="146000" z="-10000" />
 				</parent>
@@ -198,7 +198,7 @@
 				<render red="0.80" green="0.90" blue="0.90" alpha="0.30" />
 			</celestialObject>
 			
-			<celestialObject id="Jupiter\n木星" mods="extraplanets">
+			<celestialObject id="Jupiter" mods="extraplanets">
 				<parent>
 					<center x="290000" z="0" />
 				</parent>
@@ -372,7 +372,7 @@
 					<center x="-900000" z="0" />
 				</parent>
 				<size x="20000" z="20000" />
-				<dimension id="1" isBreathable="true" gravity="normal">
+				<dimension id="1" isBreathable="false" gravity="normal">
 					<center x="0" z="0" />
 				</dimension>
 				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="minecraft:textures/blocks/end_stone.png" periodU="150" />

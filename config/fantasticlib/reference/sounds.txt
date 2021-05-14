@@ -683,12 +683,12 @@ galacticraftcore:player.unlockchest
 galacticraftcore:laser.charge
 galacticraftcore:laser.shoot
 fluxnetworks:button
+rftools:teleport_whoosh
+rftools:teleport_error
 rftools:elevator_start
 rftools:elevator_loop
 rftools:elevator_stop
 rftools:scan
-rftools:teleport_whoosh
-rftools:teleport_error
 rftoolsdim:deep_rumble
 rftoolsdim:wolfhowl
 tfcthings:sharpen

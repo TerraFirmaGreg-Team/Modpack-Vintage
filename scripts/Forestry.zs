@@ -45,6 +45,7 @@ recipes.remove(<forestry:alveary.sieve>);
 recipes.remove(<forestry:genetic_filter>);
 recipes.remove(<forestry:naturalist_helmet>);
 
+//Создание рецептов
 //Создание блоков меда Forestry через компрессор
 compressor.recipeBuilder().inputs(<forestry:bee_combs> * 9).outputs(<forestry:bee_combs_0>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:4> * 9).outputs(<forestry:bee_combs_0:4>).duration(4).EUt(2).buildAndRegister();

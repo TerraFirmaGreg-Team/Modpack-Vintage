@@ -10,6 +10,9 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 2"
+		},
+		{
+			item: "gregtech:machine 1 6"
 		}],
 		ignore_nbt: 1b
 	}]
