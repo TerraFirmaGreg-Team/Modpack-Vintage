@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Discord notification
-      uses: LeGitHubDeTai/github-to-discord@main
+      uses: SpeeeDCraft/github-to-discord@main
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         DISCORD_USERNAME: TFG Release
         DISCORD_AVATAR: https://raw.githubusercontent.com/LeGitHubDeTai/github-to-discord/main/icon.png
-        MESSAGE_TITLE: New Version
+        MESSAGE_TITLE: New Version - 
         MESSAGE_DESCRIPTION: TerraFirmaGreg Changelog
         MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
         MESSAGE_COLOR: 5814783
