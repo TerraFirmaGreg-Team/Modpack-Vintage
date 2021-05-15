@@ -12,9 +12,9 @@ jobs:
       uses: LeGitHubDeTai/github-to-discord@main
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        DISCORD_USERNAME: Tai Studio
-        DISCORD_AVATAR: https://raw.githubusercontent.com/LeGitHubDeTai/github-to-discord/main/icon.png
-        MESSAGE_TITLE: New Version
-        MESSAGE_DESCRIPTION: Github Action By Tai Studio
+        DISCORD_USERNAME: TFG - Releases
+        DISCORD_AVATAR: https://www.8thwall.com/static/web/static/gitHub-bbe48010c13f36106f684d7991f0570c.png
+        MESSAGE_TITLE: New Release
+        MESSAGE_DESCRIPTION: The new release has been published
         MESSAGE_URL: https://github.com/LeGitHubDeTai/AnimeBack
         MESSAGE_COLOR: 5814783
