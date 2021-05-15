@@ -472,36 +472,8 @@ recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
 recipes.addShapeless(<tfctech:powder/potash>*4, [<tfctech:pot_potash>]);
 
-//TFC+GT
-Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled_water>*1, 24);
-
-//TFC+THAUMCRAFT
-/*
-//Броня из таумиума
-Welding.removeRecipe(<tfc:metal/helmet/thaumium>);
-Welding.removeRecipe(<tfc:metal/chestplate/thaumium>);
-Welding.removeRecipe(<tfc:metal/greaves/thaumium>);
-Welding.removeRecipe(<tfc:metal/boots/thaumium>);
-Welding.addRecipe("tfc:thaumcraftthaumiumhelmet", <tfc:metal/unfinished_helmet/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_helm>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumchestplate", <tfc:metal/unfinished_chestplate/thaumium>, <tfc:metal/double_sheet/thaumium>, <thaumcraft:thaumium_chest>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumgreaves", <tfc:metal/unfinished_greaves/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_legs>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumboots", <tfc:metal/unfinished_boots/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_boots>, 3);
-//Броня из пустотного металла
-Anvil.addRecipe("tfc:thaumcraftvoidhelmet", <ore:plateVoidMetal>, <thaumcraft:void_helm>, 5, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfc:thaumcraftvoidchestplate", <tfc:metal/double_sheet/void_metal>, <thaumcraft:void_chest>, 5, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfc:thaumcraftvoidgreaves", <ore:plateVoidMetal>, <thaumcraft:void_legs>, 5, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
-Anvil.addRecipe("tfc:thaumcraftvoidboots", <ore:plateVoidMetal>, <thaumcraft:void_boots>, 5, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
-//Инструменты из таумиума
-recipes.addShapeless(<tfc:metal/sword/thaumium>, [<tfc:metal/sword_blade/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/pick/thaumium>, [<tfc:metal/pick_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/axe/thaumium>, [<tfc:metal/axe_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/shovel/thaumium>, [<tfc:metal/shovel_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/hoe/thaumium>, [<tfc:metal/hoe_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/chisel/thaumium>, [<tfc:metal/chisel_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/javelin/thaumium>, [<tfc:metal/javelin_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/scythe/thaumium>, [<tfc:metal/scythe_blade/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/mace/thaumium>, [<tfc:metal/mace_head/thaumium>, <ore:stickWood>]);
-*/
+//How water --> Dist
+Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled_water>*1, 6);
 
 //Крафт железного трапдора через наковальню тфк
 Anvil.addRecipe("tfc:irontrapdoortweaked", <tfc:metal/double_sheet/wrought_iron>, <minecraft:iron_trapdoor>, 3, "general", "UPSET_NOT_LAST", "BEND_NOT_LAST", "UPSET_THIRD_LAST");
@@ -554,7 +526,6 @@ Anvil.removeRecipe(<tfc:metal/propick_head/tungsten>);
 Anvil.removeRecipe(<tfc:metal/propick_head/aluminium>);
 Anvil.removeRecipe(<tfc:metal/propick_head/cobalt>);
 Anvil.removeRecipe(<tfc:metal/propick_head/titanium>);
-//Anvil.removeRecipe(<tfc:metal/propick_head/thaumium>);//Таумиум
 
 //Отключение крафтов всех молотков TFC
 Anvil.removeRecipe(<tfc:metal/hammer_head/red_steel>);
@@ -579,7 +550,6 @@ Anvil.removeRecipe(<tfc:metal/hammer_head/tungsten>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/aluminium>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/cobalt>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/titanium>);
-//Anvil.removeRecipe(<tfc:metal/hammer_head/thaumium>);//Таумиум
 
 //Отключение крафтов всех пил TFC(которые не дублируются)
 Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
@@ -594,7 +564,6 @@ Anvil.removeRecipe(<tfc:metal/saw_blade/nickel_silver>);
 Anvil.removeRecipe(<tfc:metal/saw_blade/tungsten>);
 Anvil.removeRecipe(<tfc:metal/saw_blade/aluminium>);
 Anvil.removeRecipe(<tfc:metal/saw_blade/titanium>);
-//Anvil.removeRecipe(<tfc:metal/saw_blade/thaumium>);//Таумиум
 
 //Отключение крафтов всех ножей TFC
 Anvil.removeRecipe(<tfc:metal/knife_blade/red_steel>);
@@ -619,7 +588,6 @@ Anvil.removeRecipe(<tfc:metal/knife_blade/tungsten>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/aluminium>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/cobalt>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/titanium>);
-//Anvil.removeRecipe(<tfc:metal/knife_blade/thaumium>);//Таумиум
 
 //Новые рецепты ковки GT(TFC) молотков
 Anvil.addRecipe("tfc:hammer_head/CopperF", <ore:ingotCopper>, <tfc:metal/hammer_head/copper>, 0, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
@@ -638,6 +606,15 @@ Anvil.addRecipe("tfc:hammer_head/InvarF", <ore:ingotInvar>, <gregtech:meta_item_
 Anvil.addRecipe("tfc:file_head/Bronze", <ore:ingotBronze>, <gregtech:meta_item_2:6095>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/BismuthBronze", <ore:ingotBlackBronze>, <gregtech:meta_item_2:6229>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/BlackBronze", <ore:ingotBismuthBronze>, <gregtech:meta_item_2:6230>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlackSteel", <ore:ingotBlackSteel>, <gregtech:meta_item_2:6231>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/RedSteel", <ore:ingotRedSteel>, <gregtech:meta_item_2:6232>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlueSteel", <ore:ingotBlueSteel>, <gregtech:meta_item_2:6233>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Steel", <ore:ingotSteel>, <gregtech:meta_item_2:6184>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/SterlingSilver", <ore:ingotSterlingSilver>, <gregtech:meta_item_2:6227>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/RoseGold", <ore:ingotRoseGold>, <gregtech:meta_item_2:6228>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <gregtech:meta_item_2:6094>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Iron", <ore:ingotIron>, <gregtech:meta_item_2:6033>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <gregtech:meta_item_2:6017>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
 //Платиновые короны
 recipes.remove(<tfcthings:crown/platinum_opal>);
@@ -696,66 +673,3 @@ recipes.addShapeless (<tfcthings:crown/gold_ruby>, [<ore:craftingToolHardHammer>
 recipes.addShapeless (<tfcthings:crown/gold_opal>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteOpal>]);
 recipes.addShapeless (<tfcthings:crown/gold_jasper>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJasper>]);
 recipes.addShapeless (<tfcthings:crown/gold_jade>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJade>]);
-
-//TFC-TECH
-recipes.remove(<tfctech:metal/copper_inductor>);
-recipes.addShaped(<tfctech:metal/copper_inductor>,
-[[null, <ore:wireGtSingleCopper>, null],
- [<ore:wireGtSingleCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:wireGtSingleCopper>],
- [null, <ore:wireGtSingleCopper>, null]]);
-
-recipes.remove(<tfctech:fridge>);
-recipes.addShaped(<tfctech:fridge>,
-[[<ore:plateSteel>, <tfctech:metal/copper_inductor>, <ore:plateSteel>],
- [<ore:plateSteel>, <ore:sheetDoubleWroughtIron>, <ore:plateSteel>],
- [<ore:plateSteel>, <tfctech:metal/copper_inductor>, <ore:plateSteel>]]);
- 
-recipes.remove(<tfctech:induction_crucible>);
-recipes.addShaped(<tfctech:induction_crucible>,
-[[<ore:plateSteel>, null, <ore:plateSteel>],
- [<tfctech:metal/copper_inductor>, <tfc:crucible>, <tfctech:metal/copper_inductor>],
- [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
- 
-recipes.remove(<tfctech:electric_forge>);
-recipes.addShaped(<tfctech:electric_forge>,
-[[<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>],
- [<tfctech:metal/copper_inductor>, <tfc:fire_bricks>, <tfctech:metal/copper_inductor>],
- [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
-
-ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/propick_head>);
-ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/hammer_head>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/sleeve>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/rackwheel_piece>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/glass_block>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/glass_pane>);
-Heating.removeRecipe(<tfctech:latex/rubber>);
-Barrel.removeRecipe(<tfctech:latex/rubber_mix>*6);
-Anvil.removeRecipe(<tfctech:metal/iron_tongs>);
-Anvil.removeRecipe(<tfctech:metal/black_steel_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/steel_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/iron_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/iron_groove>);
-Anvil.removeRecipe(<tfctech:metal/iron_bowl_mount>);
-Heating.removeRecipe(<tfctech:ceramics/mold/glass_block>);
-Heating.removeRecipe(<tfctech:ceramics/mold/glass_pane>);
-Heating.removeRecipe(<tfctech:ceramics/mold/rackwheel_piece>);
-Heating.removeRecipe(<tfctech:ceramics/mold/sleeve>);
-
-//Отключение вытяжных трубок
-Anvil.removeRecipe(<tfctech:metal/red_steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/blue_steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/black_steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/wrought_iron_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/osmium_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/manyullyn_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/boron_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/zircaloy_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/tungsten_steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/invar_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/tungsten_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/beryllium_copper_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/aluminium_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/cobalt_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/titanium_blowpipe>);
-//Anvil.removeRecipe(<tfctech:metal/thaumium_blowpipe>);//Таумиум

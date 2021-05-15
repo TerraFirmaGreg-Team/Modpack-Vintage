@@ -4,6 +4,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
+//Удаление рецептов
 recipes.remove(<minecraft:cobblestone>*2);
 recipes.remove(<extraplanets:canned_food>);
 recipes.remove(<galacticraftcore:food>);
@@ -13,9 +14,7 @@ recipes.remove(<galacticraftcore:aluminum_wire:1>);
 recipes.remove(<galacticraftcore:aluminum_wire:2>);
 recipes.remove(<galacticraftcore:aluminum_wire:3>);
 recipes.remove(<galacticraftcore:fluid_pipe>);
-recipes.addShapeless (<extraplanets:canned_food>, [<galacticraftcore:canister>, <ore:categoryCookedMeat>, <ore:categoryCookedMeat>]);
-recipes.addShapeless (<galacticraftcore:food>, [<galacticraftcore:canister>, <ore:categoryFruit>, <ore:categoryFruit>]);
-recipes.addShapeless (<galacticraftcore:food:1>, [<galacticraftcore:canister>, <ore:categoryVegetable>, <ore:categoryVegetable>]);
+recipes.remove(<extraplanets:tools>);
 
 //Отключение рецептов
 //1
@@ -88,6 +87,12 @@ mods.GalacticraftTweaker.removeCompressorRecipe(<extraplanets:tier7_items:3>);
 mods.GalacticraftTweaker.removeCompressorRecipe(<extraplanets:tier8_items:3>);
 mods.GalacticraftTweaker.removeCompressorRecipe(<extraplanets:tier9_items:3>);
 mods.GalacticraftTweaker.removeCompressorRecipe(<extraplanets:tier10_items:3>);
+
+//Еда
+recipes.addShapeless (<extraplanets:canned_food>, [<galacticraftcore:canister>, <ore:categoryCookedMeat>, <ore:categoryCookedMeat>]);
+recipes.addShapeless (<galacticraftcore:food>, [<galacticraftcore:canister>, <ore:categoryFruit>, <ore:categoryFruit>]);
+recipes.addShapeless (<galacticraftcore:food:1>, [<galacticraftcore:canister>, <ore:categoryVegetable>, <ore:categoryVegetable>]);
+
 //Светофакел
 recipes.addShapeless (<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
 //Жидкостный манипулятор

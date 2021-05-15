@@ -56,6 +56,7 @@ mods.jei.JEI.removeAndHide(<dynamictrees:spruceseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:oakseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:appleseed>);
 mods.jei.JEI.removeAndHide(<dynamictrees:dirtbucket>);
+
 //TFC
 mods.jei.JEI.removeAndHide(<tfc:sluice>);
 //Hammers
@@ -82,7 +83,7 @@ mods.jei.JEI.removeAndHide(<tfc:metal/hammer/boron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer/beryllium_copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer/zircaloy>);
 //Hammers Heads
-mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/copper>);
+//mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/red_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/blue_steel>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/black_steel>);
@@ -91,7 +92,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/wrought_iron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/bronze>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/black_bronze>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/bismuth_bronze>);
-mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/osmium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/manyullyn>);
 mods.jei.JEI.removeAndHide(<tfc:metal/hammer_head/mithril>);
@@ -129,7 +129,6 @@ mods.jei.JEI.removeAndHide(<tfc:metal/saw/boron>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/beryllium_copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw/zircaloy>);
 //Saw Heads
-mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/copper>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/osmium>);
 mods.jei.JEI.removeAndHide(<tfc:metal/saw_blade/manyullyn>);
