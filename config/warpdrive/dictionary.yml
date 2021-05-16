@@ -229,6 +229,7 @@ block_tags {
 # - Anchor: ship can't move with this entity aboard (default: none).
 # - NoMass: this entity doesn't count when calculating ship volume/mass (default: boats, frames, carts).
 # - LeftBehind: this entity won't move with your ship nor transporter (default: particle effects).
+# - NoReveal: this entity won't be revealed when uncloaking. Applies to buggy entity with no network packets. (default: SGCraft Iris).
 # - NonLivingTarget: this non-living entity can be targeted/removed by weapons (default: ItemFrame, Painting).
 # - LivingWithoutAir: this living entity doesn't need air to live (default: vanilla zombies and skeletons).
 ##########################################################################################################
@@ -292,6 +293,7 @@ entity_tags {
     S:"pneumaticcraft:drone"=LivingWithoutAir
     S:"pneumaticcraft:harvesting_drone"=LivingWithoutAir
     S:"pneumaticcraft:logistic_drone"=LivingWithoutAir
+    S:"sgcraft:stargate_iris"=NoReveal
     S:"techguns:turret"=NoMass LivingWithoutAir LeftBehind
     S:"testdummy:dummy"=NoMass LivingWithoutAir
     S:"thaumcraft:brainyzombie"=LivingWithoutAir

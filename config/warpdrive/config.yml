@@ -175,8 +175,6 @@ client {
 cloaking {
     # Extra blocks covered after the outer coils
     I:coil_capture_blocks=5
-
-    # Update speed of cloak simulation
     I:field_refresh_interval_seconds=3
 
     # Maximum energy stored
@@ -188,8 +186,20 @@ cloaking {
     # Energy cost per non-air block in a Tier1 cloak
     I:tier1_energy_per_block=32
 
+    # Update speed of a Tier1 cloak
+    I:tier1_field_refresh_interval_ticks=60
+
     # Energy cost per non-air block in a Tier2 cloak
     I:tier2_energy_per_block=128
+
+    # Update speed of a Tier2 cloak
+    I:tier2_field_refresh_interval_ticks=30
+
+    # Cloak volume won't be refreshed unless it's older than that many seconds
+    I:volume_scan_age_tolerance=120
+
+    # Number of blocks to scan per tick when getting cloak bounds, too high will cause lag spikes when resizing a cloak
+    I:volume_scan_blocks_per_tick=1000
 }
 
 
@@ -524,6 +534,9 @@ logging {
 
     # Chunk loading logs, enable it to report chunk loaders updates
     B:enable_chunk_loading_logs=true
+
+    # Report in logs when a chunk is reloaded shortly after being unloaded, usually associated with server lag.
+    B:enable_chunk_reloading_logs=true
 
     # Detailed collection logs to help debug the mod, enable it before reporting a bug
     B:enable_collection_logs=false
