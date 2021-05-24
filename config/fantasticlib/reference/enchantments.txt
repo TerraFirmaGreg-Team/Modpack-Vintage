@@ -28,11 +28,11 @@ minecraft:luck_of_the_sea
 minecraft:lure
 minecraft:mending
 minecraft:vanishing_curse
-endercore:autosmelt
 endercore:xpboost
-enderio:witherweapon
-enderio:soulbound
+endercore:autosmelt
 enderio:shimmer
+enderio:soulbound
+enderio:witherweapon
 enderio:witherarrow
 enderio:repellent
 gregtech:disjunction

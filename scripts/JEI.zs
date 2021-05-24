@@ -239,7 +239,6 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2356>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32037>);
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32038>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32015>);
-mods.jei.JEI.removeAndHide(<gregtech:compressed_15:3>);
 
 //FTB
 mods.jei.JEI.removeAndHide(<ftbquests:chest>);

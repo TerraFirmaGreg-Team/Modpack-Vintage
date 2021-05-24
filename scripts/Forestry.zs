@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var platebrass = <ore:plateBrass>;
 var platebronze = <ore:plateBronze>;
@@ -44,6 +45,7 @@ recipes.remove(<forestry:alveary.swarmer>);
 recipes.remove(<forestry:alveary.sieve>);
 recipes.remove(<forestry:genetic_filter>);
 recipes.remove(<forestry:naturalist_helmet>);
+fluid_extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
 
 //Создание рецептов
 //Создание блоков меда Forestry через компрессор
@@ -57,11 +59,17 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:2> * 9).outputs(<forestry:
 compressor.recipeBuilder().inputs(<forestry:bee_combs:3> * 9).outputs(<forestry:bee_combs_0:3>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry:bee_combs_1>).duration(4).EUt(2).buildAndRegister();
 
+//Масло из сидов
+fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*10).duration(100).EUt(8).buildAndRegister();
+
 //Гибкий корпус из форестри
 assembler.recipeBuilder().inputs(<ore:plateBronze>*4, <ore:plateEmerald>*2, <ore:slimeball>*2, <ore:glue>*2).fluidInputs([<liquid:glass> * 400]).outputs(<forestry:flexible_casing>).duration(20).EUt(16).buildAndRegister();
 
 //Веревочка
 recipes.addShapeless (<forestry:crafting_material:2>*3, [<ore:string>]);
+
+//Медовая капля
+recipes.addShapeless (<harvestcraft:honeyitem>, [<forestry:honey_drop>]);
 
 //Обычный корпус машины
 recipes.addShaped(<forestry:sturdy_machine>, 

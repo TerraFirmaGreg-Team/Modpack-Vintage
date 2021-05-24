@@ -87,7 +87,7 @@ assembler.findRecipe(16, [<gregtech:meta_item_1:12235>*8, <gregtech:meta_item_1:
 assembler.findRecipe(16, [<gregtech:meta_item_1:12207>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12859>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12311>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_item_1:12993>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
+//assembler.findRecipe(16, [<gregtech:meta_item_1:12993>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 //Создание
 assembler.recipeBuilder().inputs(<ore:plateIron>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:1>).duration(20).EUt(16).buildAndRegister();
