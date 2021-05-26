@@ -30,11 +30,19 @@ minecraft:mending
 minecraft:vanishing_curse
 endercore:xpboost
 endercore:autosmelt
+<<<<<<< Updated upstream
 enderio:shimmer
 enderio:soulbound
 enderio:witherweapon
 enderio:witherarrow
 enderio:repellent
+=======
+enderio:repellent
+enderio:shimmer
+enderio:witherweapon
+enderio:witherarrow
+enderio:soulbound
+>>>>>>> Stashed changes
 gregtech:disjunction
 parry:parry
 tombstone:shadow_step

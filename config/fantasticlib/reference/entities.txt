@@ -159,6 +159,7 @@ appliedenergistics2:appeng.entity.entitychargedquartz
 enderio:falling_machine
 enderio:primed_charge
 enderio:owl_egg
+enderio:primed_charge
 dynamictrees:falling_tree
 warpdrive:entityspheregenerator
 warpdrive:entity_star_sore
