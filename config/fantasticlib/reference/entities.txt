@@ -156,9 +156,9 @@ tfcthings:slingstonemetallight
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
+enderio:owl_egg
 enderio:falling_machine
 enderio:primed_charge
-enderio:owl_egg
 dynamictrees:falling_tree
 warpdrive:entityspheregenerator
 warpdrive:entity_star_sore
@@ -169,9 +169,9 @@ warpdrive:entity_npc
 warpdrive:entity_offline_avatar
 warpdrive:entity_seat
 p455w0rdslib:sitting_entity
-forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
+forestry:butterflyge
 galacticraftcore:evolved_spider
 galacticraftcore:evolved_zombie
 galacticraftcore:evolved_creeper

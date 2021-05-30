@@ -68,7 +68,7 @@ for item in ItemsToRemoveFORESTRYJEI{
 }
 
 //Удаление рецептов
-global ItemsToRemoveEI as IItemStack[] = [
+global ItemsToRemoveFORESTRY as IItemStack[] = [
 	<forestry:sturdy_machine>,
 	<forestry:portable_alyzer>,
 	<forestry:analyzer>,
@@ -97,7 +97,7 @@ global ItemsToRemoveEI as IItemStack[] = [
 	<forestry:genetic_filter>,
 	<forestry:naturalist_helmet>
 ] as IItemStack[];
-for item in ItemsToRemoveEI{
+for item in ItemsToRemoveFORESTRY{
     recipes.remove(item);
 }
 
