@@ -4,35 +4,42 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val autoclave as RecipeMap = RecipeMap.getByName("autoclave");
 
 //Удаление рецептов
-recipes.remove(<warpdrive:wrench>);
-recipes.remove(<warpdrive:component>);
-recipes.remove(<warpdrive:component:4>);
-recipes.remove(<warpdrive:component:3>);
-recipes.remove(<warpdrive:component:2>);
-recipes.remove(<warpdrive:component:1>);
-recipes.remove(<warpdrive:component:5>);
-recipes.remove(<warpdrive:warp_armor.basic.helmet>);
-recipes.remove(<warpdrive:warp_armor.basic.chestplate>);
-recipes.remove(<warpdrive:warp_armor.basic.leggings>);
-recipes.remove(<warpdrive:warp_armor.basic.boots>);
-recipes.remove(<warpdrive:warp_armor.advanced.helmet>);
-recipes.remove(<warpdrive:warp_armor.advanced.chestplate>);
-recipes.remove(<warpdrive:warp_armor.advanced.leggings>);
-recipes.remove(<warpdrive:warp_armor.advanced.boots>);
-recipes.remove(<warpdrive:warp_armor.superior.helmet>);
-recipes.remove(<warpdrive:warp_armor.superior.chestplate>);
-recipes.remove(<warpdrive:warp_armor.superior.leggings>);
-recipes.remove(<warpdrive:warp_armor.superior.boots>);
-recipes.remove(<warpdrive:capacitor.basic>);
-recipes.remove(<warpdrive:capacitor.advanced>);
-recipes.remove(<warpdrive:capacitor.superior>);
-recipes.remove(<warpdrive:component:32>);
-recipes.remove(<warpdrive:component:27>);
-recipes.remove(<warpdrive:component:31>);
-recipes.remove(<warpdrive:cloaking_core>);
-recipes.remove(<warpdrive:mining_laser>);
-recipes.remove(<warpdrive:laser_tree_farm>);
-recipes.remove(<warpdrive:force_field_upgrade:2>);
+
+//Удаление рецептов
+global ItemsToRemoveWP as IItemStack[] = [
+	<warpdrive:wrench>,
+	<warpdrive:component>,
+	<warpdrive:component:4>,
+	<warpdrive:component:3>,
+	<warpdrive:component:2>,
+	<warpdrive:component:1>,
+	<warpdrive:component:5>,
+	<warpdrive:warp_armor.basic.helmet>,
+	<warpdrive:warp_armor.basic.chestplate>,
+	<warpdrive:warp_armor.basic.leggings>,
+	<warpdrive:warp_armor.basic.boots>,
+	<warpdrive:warp_armor.advanced.helmet>,
+	<warpdrive:warp_armor.advanced.chestplate>,
+	<warpdrive:warp_armor.advanced.leggings>,
+	<warpdrive:warp_armor.advanced.boots>,
+	<warpdrive:warp_armor.superior.helmet>,
+	<warpdrive:warp_armor.superior.chestplate>,
+	<warpdrive:warp_armor.superior.leggings>,
+	<warpdrive:warp_armor.superior.boots>,
+	<warpdrive:capacitor.basic>,
+	<warpdrive:capacitor.advanced>,
+	<warpdrive:capacitor.superior>,
+	<warpdrive:component:32>,
+	<warpdrive:component:27>,
+	<warpdrive:component:31>,
+	<warpdrive:cloaking_core>,
+	<warpdrive:mining_laser>,
+	<warpdrive:laser_tree_farm>,
+	<warpdrive:force_field_upgrade:2>
+] as IItemStack[];
+for item in ItemsToRemoveWP{
+    recipes.remove(item);
+}
 
 //Ключ
 recipes.addShaped(<warpdrive:wrench>,

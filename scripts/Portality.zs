@@ -2,10 +2,18 @@ import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
+//Удаление рецептов + скрытие
+mods.jei.JEI.removeAndHide(<portality:module_energy:1>);
+mods.jei.JEI.removeAndHide(<portality:module_fluids:1>);
+mods.jei.JEI.removeAndHide(<portality:module_items:1>);
+mods.jei.JEI.removeAndHide(<portality:module_fluids>);
+mods.jei.JEI.removeAndHide(<portality:module_items>);
+mods.jei.JEI.removeAndHide(<portality:module_energy>);
 //Удаление рецептов
 recipes.remove(<portality:controller>);
 recipes.remove(<portality:frame>);
 recipes.remove(<portality:module_interdimensional>);
+
 
 //Создание рецептов
 //Контроллер

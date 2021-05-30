@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var platebrass = <ore:plateBrass>;
 var platebronze = <ore:plateBronze>;
@@ -17,35 +16,90 @@ var clock = <minecraft:clock>;
 var gearsteel = <ore:gearSteel>;
 var glass = <ore:blockGlass>;
 
+//Удаление рецептов + скрытие
+global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
+	<forestry:fertilizer_compound>,
+	<forestry:ffarm>.withTag({FarmBlock: 7}),
+	<forestry:ffarm>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 1}),
+	<forestry:ffarm>.withTag({FarmBlock: 4}),
+	<forestry:ffarm>.withTag({FarmBlock: 5}),
+	<forestry:wrench>,
+	<forestry:gear_tin>,
+	<forestry:gear_copper>,
+	<forestry:gear_bronze>,
+	<forestry:fabricator>,
+	<forestry:chipsets>.withTag({T: 0 as short}),
+	<forestry:crafting_material:1>,
+	<forestry:crafting_material>,
+	<forestry:carton>,
+	<forestry:bronze_pickaxe>,
+	<forestry:bronze_shovel>,
+	<forestry:broken_bronze_pickaxe>,
+	<forestry:broken_bronze_shovel>,
+	<forestry:arboretum:1>,
+	<forestry:farm_ender>,
+	<forestry:farm_ender:1>,
+	<forestry:peat_bog:1>,
+	<forestry:farm_nether:1>,
+	<forestry:farm_nether>,
+	<forestry:farm_crops:1>,
+	<forestry:farm_crops>,
+	<forestry:arboretum>,
+	<forestry:farm_gourd>,
+	<forestry:farm_gourd:1>,
+	<forestry:farm_mushroom>,
+	<forestry:farm_mushroom:1>,
+	<forestry:peat_bog>,
+	<gendustry:industrial_grafter:*>,
+	<gendustry:industrial_scoop:*>,
+	<forestry:bronze_pickaxe>,
+	<forestry:bronze_shovel>
+] as IItemStack[];
+for item in ItemsToRemoveFORESTRYJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
+
 //Удаление рецептов
-recipes.remove(<forestry:sturdy_machine>);
-recipes.remove(<forestry:portable_alyzer>);
-recipes.remove(<forestry:analyzer>);
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 0}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 2}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 3}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 6}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 8}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 9}));
-recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 10}));
-recipes.remove(<forestry:habitat_locator>);
-recipes.remove(<forestry:frame_untreated>);
-recipes.remove(<forestry:frame_impregnated>);
-recipes.remove(<forestry:smoker>);
-recipes.remove(<forestry:raintank>);
-recipes.remove(<forestry:habitat_screen>);
-recipes.remove(<forestry:habitat_former>);
-recipes.remove(<forestry:database>);
-recipes.remove(<forestry:crafting_material:3>);
-recipes.remove(<forestry:alveary.hygro>);
-recipes.remove(<forestry:alveary.heater>);
-recipes.remove(<forestry:crafting_material:6>);
-recipes.remove(<forestry:alveary.fan>);
-recipes.remove(<forestry:alveary.swarmer>);
-recipes.remove(<forestry:alveary.sieve>);
-recipes.remove(<forestry:genetic_filter>);
-recipes.remove(<forestry:naturalist_helmet>);
-fluid_extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
+global ItemsToRemoveEI as IItemStack[] = [
+	<forestry:sturdy_machine>,
+	<forestry:portable_alyzer>,
+	<forestry:analyzer>,
+	<forestry:ffarm>.withTag({FarmBlock: 0}),
+	<forestry:ffarm>.withTag({FarmBlock: 2}),
+	<forestry:ffarm>.withTag({FarmBlock: 3}),
+	<forestry:ffarm>.withTag({FarmBlock: 6}),
+	<forestry:ffarm>.withTag({FarmBlock: 8}),
+	<forestry:ffarm>.withTag({FarmBlock: 9}),
+	<forestry:ffarm>.withTag({FarmBlock: 10}),
+	<forestry:habitat_locator>,
+	<forestry:frame_untreated>,
+	<forestry:frame_impregnated>,
+	<forestry:smoker>,
+	<forestry:raintank>,
+	<forestry:habitat_screen>,
+	<forestry:habitat_former>,
+	<forestry:database>,
+	<forestry:crafting_material:3>,
+	<forestry:alveary.hygro>,
+	<forestry:alveary.heater>,
+	<forestry:crafting_material:6>,
+	<forestry:alveary.fan>,
+	<forestry:alveary.swarmer>,
+	<forestry:alveary.sieve>,
+	<forestry:genetic_filter>,
+	<forestry:naturalist_helmet>
+] as IItemStack[];
+for item in ItemsToRemoveEI{
+    recipes.remove(item);
+}
 
 //Создание рецептов
 //Создание блоков меда Forestry через компрессор
@@ -59,17 +113,11 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:2> * 9).outputs(<forestry:
 compressor.recipeBuilder().inputs(<forestry:bee_combs:3> * 9).outputs(<forestry:bee_combs_0:3>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry:bee_combs_1>).duration(4).EUt(2).buildAndRegister();
 
-//Масло из сидов
-fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*10).duration(100).EUt(8).buildAndRegister();
-
 //Гибкий корпус из форестри
 assembler.recipeBuilder().inputs(<ore:plateBronze>*4, <ore:plateEmerald>*2, <ore:slimeball>*2, <ore:glue>*2).fluidInputs([<liquid:glass> * 400]).outputs(<forestry:flexible_casing>).duration(20).EUt(16).buildAndRegister();
 
 //Веревочка
 recipes.addShapeless (<forestry:crafting_material:2>*3, [<ore:string>]);
-
-//Медовая капля
-recipes.addShapeless (<harvestcraft:honeyitem>, [<forestry:honey_drop>]);
 
 //Обычный корпус машины
 recipes.addShaped(<forestry:sturdy_machine>, 

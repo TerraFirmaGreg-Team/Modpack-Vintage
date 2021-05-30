@@ -81,6 +81,41 @@ recipes.removeByRecipeName("gregtech:torch_sulfur");
 recipes.removeByRecipeName("gregtech:torch_phosphor");
 recipes.removeByRecipeName("forestry:beeswax_worth");
 
+//Удаление рецептов + скрытие
+//Tools
+mods.jei.JEI.removeAndHide(<minecraft:diamond_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_hoe>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_hoe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_hoe>);
+//Armor
+mods.jei.JEI.removeAndHide(<minecraft:diamond_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_boots>);
+
 //Создание крафтов
 //Цемент из ваниллы --> бетон разных цветов
 chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete>).duration(10).EUt(8).buildAndRegister();

@@ -3,31 +3,42 @@ import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.Anvil;
 
-//TFC-TECH
+//Удаление + скрытие
+mods.jei.JEI.removeAndHide(<tfctech:wire_draw_bench>);
+mods.jei.JEI.removeAndHide(<tfctech:smeltery_firebox>);
+mods.jei.JEI.removeAndHide(<tfctech:smeltery_cauldron>);
+mods.jei.JEI.removeAndHide(<tfctech:wiredraw/leather_belt>);
+mods.jei.JEI.removeAndHide(<tfctech:wiredraw/winch>);
+
+//Медный индуктор
 recipes.remove(<tfctech:metal/copper_inductor>);
 recipes.addShaped(<tfctech:metal/copper_inductor>,
 [[null, <ore:wireGtSingleCopper>, null],
  [<ore:wireGtSingleCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:wireGtSingleCopper>],
  [null, <ore:wireGtSingleCopper>, null]]);
 
+//Холодос
 recipes.remove(<tfctech:fridge>);
 recipes.addShaped(<tfctech:fridge>,
 [[<ore:plateSteel>, <tfctech:metal/copper_inductor>, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:sheetDoubleWroughtIron>, <ore:plateSteel>],
  [<ore:plateSteel>, <tfctech:metal/copper_inductor>, <ore:plateSteel>]]);
  
+//Тигель
 recipes.remove(<tfctech:induction_crucible>);
 recipes.addShaped(<tfctech:induction_crucible>,
 [[<ore:plateSteel>, null, <ore:plateSteel>],
  [<tfctech:metal/copper_inductor>, <tfc:crucible>, <tfctech:metal/copper_inductor>],
  [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
  
+//Электро наковальня
 recipes.remove(<tfctech:electric_forge>);
 recipes.addShaped(<tfctech:electric_forge>,
 [[<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>],
  [<tfctech:metal/copper_inductor>, <tfc:fire_bricks>, <tfctech:metal/copper_inductor>],
  [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
 
+//Оф мусор.
 ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/propick_head>);
 ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/hammer_head>);
 ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/sleeve>);

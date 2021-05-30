@@ -1,18 +1,26 @@
+import crafttweaker.item.IItemStack;
+
+//Удаление групп
 //Удаление рецептов
-recipes.remove(<chisel:chisel_iron>);
-recipes.remove(<chisel:chisel_diamond>);
-recipes.remove(<chisel:chisel_hitech>);
-recipes.remove(<chiselsandbits:chisel_stone>);
-recipes.remove(<chiselsandbits:chisel_iron>);
-recipes.remove(<chiselsandbits:chisel_gold>);
-recipes.remove(<chiselsandbits:chisel_diamond>);
-recipes.remove(<chiselsandbits:bitsaw_diamond>);
-recipes.remove(<chiselsandbits:bit_bag>);
-recipes.remove(<chisel:tyrian>);
-recipes.remove(<chisel:laboratory>);
-recipes.remove(<chisel:temple>);
-recipes.remove(<chisel:factory>);
-recipes.remove(<chisel:brownstone>);
+global ItemsToRemove as IItemStack[] = [
+	<chisel:chisel_iron>,
+	<chisel:chisel_diamond>,
+	<chisel:chisel_hitech>,
+	<chiselsandbits:chisel_stone>,
+	<chiselsandbits:chisel_iron>,
+	<chiselsandbits:chisel_gold>,
+	<chiselsandbits:chisel_diamond>,
+	<chiselsandbits:bitsaw_diamond>,
+	<chiselsandbits:bit_bag>,
+	<chisel:tyrian>,
+	<chisel:laboratory>,
+	<chisel:temple>,
+	<chisel:factory>,
+	<chisel:brownstone>
+] as IItemStack[];
+for item in ItemsToRemove{
+    recipes.remove(item);
+}
 
 //Создание рецептов
 //Железная стамеска

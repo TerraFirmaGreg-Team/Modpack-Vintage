@@ -150,11 +150,7 @@
 		
 		"VerClient":
         {
-<<<<<<< Updated upstream
-            "text" : "R2.6.5 [Normal]",
-=======
             "text" : "R2.6.6 [Normal]",
->>>>>>> Stashed changes
             "posX" : 68,
             "posY" : -20,
             "color" : -1,
