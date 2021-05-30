@@ -1,3 +1,4 @@
+import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");

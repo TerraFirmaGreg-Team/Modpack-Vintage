@@ -226,78 +226,81 @@ mods.jei.JEI.removeAndHide(<rftoolscontrol:graphics_card>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:network_card>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:ram_chip>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:advanced_network_card>);
+
 //Удаление рецептов
+recipes.remove(tier1StorageModule);
+recipes.remove(tier2StorageModule);
+recipes.remove(tier3StorageModule);
+recipes.remove(dimensionalShard);
+recipes.remove(infusedDiamond);
+recipes.remove(infusedEnderpearl);
+recipes.remove(smartWrench);
+recipes.remove(syringe);
+recipes.remove(machineFrame);
+recipes.remove(machineBase);
+recipes.remove(crafter1);
+recipes.remove(crafter2);
+recipes.remove(crafter3);
+recipes.remove(matterReceiver);
+recipes.remove(matterTransmitter);
+recipes.remove(chargedPorter);
+recipes.remove(advChargedPorter);
+recipes.remove(dialingDevice);
+recipes.remove(simpleDialingDevice);
+recipes.remove(destinationAnalyzer);
+recipes.remove(matterBooster);
+recipes.remove(simpleCell);
+recipes.remove(mediumCell);
+recipes.remove(advCell);
+recipes.remove(cellCard);
+recipes.remove(environmentalController);
+recipes.remove(booster);
+recipes.remove(elevator);
+recipes.remove(ecRegeneration);
+recipes.remove(ecRegeneration3);
+recipes.remove(ecSpeed);
+recipes.remove(ecSpeed3);
+recipes.remove(ecHaste);
+recipes.remove(ecHaste3);
+recipes.remove(ecSaturation);
+recipes.remove(ecSaturation3);
+recipes.remove(ecFeatherFalling);
+recipes.remove(ecFeatherFallingPlus);
+recipes.remove(ecFlight);
+recipes.remove(peaceEssence);
+recipes.remove(ecPeaceful);
+recipes.remove(ecWaterBreathing);
+recipes.remove(ecNightVision);
+recipes.remove(ecBlindness);
+recipes.remove(ecWeakness);
+recipes.remove(ecPoison);
+recipes.remove(ecSlowness);
+recipes.remove(ecGlowing);
+recipes.remove(ecLuck);
+recipes.remove(ecNoTeleport);
+recipes.remove(networkMonitor);
+recipes.remove(rfMonitor);
+recipes.remove(redstoneWire);
+recipes.remove(liquidMonitor);
+recipes.remove(redstoneReceiver);
+recipes.remove(redstoneTransmitter);
+recipes.remove(redstoneCounter);
+recipes.remove(redstoneTimer);
+recipes.remove(redstoneLogic);
+recipes.remove(redstoneSequencer);
+recipes.remove(redstoneSensor);
+recipes.remove(redstoneInvChecker);
+recipes.remove(modularStorage);
+recipes.remove(remoteStorage);
+recipes.remove(levelEmitter);
+recipes.remove(screen);
+recipes.remove(shieldProjector1);
+recipes.remove(shieldProjector2);
+recipes.remove(shieldProjector3);
+recipes.remove(shieldProjector4);
+
+//Удаление рецептов 2
 global ItemsToRemoveRFT as IItemStack[] = [
-	tier1StorageModule,
-	tier2StorageModule,
-	tier3StorageModule,
-	dimensionalShard,
-	infusedDiamond,
-	infusedEnderpearl,
-	smartWrench,
-	syringe,
-	machineFrame,
-	machineBase,
-	crafter1,
-	crafter2,
-	crafter3,
-	matterReceiver,
-	matterTransmitter,
-	chargedPorter,
-	advChargedPorter,
-	dialingDevice,
-	simpleDialingDevice,
-	destinationAnalyzer,
-	matterBooster,
-	simpleCell,
-	mediumCell,
-	advCell,
-	cellCard,
-	environmentalController,
-	booster,
-	elevator,
-	ecRegeneration,
-	ecRegeneration3,
-	ecSpeed,
-	ecSpeed3,
-	ecHaste,
-	ecHaste3,
-	ecSaturation,
-	ecSaturation3,
-	ecFeatherFalling,
-	ecFeatherFallingPlus,
-	ecFlight,
-	peaceEssence,
-	ecPeaceful,
-	ecWaterBreathing,
-	ecNightVision,
-	ecBlindness,
-	ecWeakness,
-	ecPoison,
-	ecSlowness,
-	ecGlowing,
-	ecLuck,
-	ecNoTeleport,
-	networkMonitor,
-	rfMonitor,
-	redstoneWire,
-	liquidMonitor,
-	redstoneReceiver,
-	redstoneTransmitter,
-	redstoneCounter,
-	redstoneTimer,
-	redstoneLogic,
-	redstoneSequencer,
-	redstoneSensor,
-	redstoneInvChecker,
-	modularStorage,
-	remoteStorage,
-	levelEmitter,
-	screen,
-	shieldProjector1,
-	shieldProjector2,
-	shieldProjector3,
-	shieldProjector4,
 	<rftools:builder>,
 	<rftools:spawner>,
 	<rftools:matter_beamer>,
