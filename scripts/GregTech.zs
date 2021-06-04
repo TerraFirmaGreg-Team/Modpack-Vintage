@@ -134,6 +134,15 @@ icompressor.recipeBuilder().inputs(<ore:plateZinc> * 2, <ore:ingotCarbon> * 1).p
 //Пластина Совершенная
 icompressor.recipeBuilder().inputs(<ore:plateUranium235> * 2, <ore:ingotLead> * 3).property("explosives", 1).outputs(<contenttweaker:part_plate_elite> * 2).duration(50).EUt(256).buildAndRegister();
 
+//Удаление рецепта LV кейзинга
+recipes.removeByRecipeName("gregtech:casing_lv");
+
+//Фикс красной и синей стали
+recipes.removeByRecipeName("gregtech:dust_blue_steel");
+recipes.removeByRecipeName("gregtech:dust_red_steel");
+recipes.addShapeless (<gregtech:meta_item_1:2233>*8, [<gregtech:meta_item_1:2227>, <gregtech:meta_item_1:2230>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
+recipes.addShapeless (<gregtech:meta_item_1:2232>*8, [<gregtech:meta_item_1:2228>, <gregtech:meta_item_1:2094>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
+
 //Отключение крафта 2х слиток 1х молот = пластина
 recipes.removeShaped(<ore:plateAluminium>);
 recipes.removeShaped(<ore:plateAmericium>);

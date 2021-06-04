@@ -129,7 +129,7 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2360>, "COPPER", 50, true);
 //Тетраэдрит грязная кучка
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3188>, "COPPER", 30, true);
 //Регистрация кусочка тетраэдрита 100units
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2360>, "COPPER", 40, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2188>, "COPPER", 40, true);
 //Куприт грязная кучка
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3359>, "COPPER", 60, true);
 //Регистрация кусочка уцприта 100units

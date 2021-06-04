@@ -299,6 +299,9 @@ for item in ItemsToRemoveGC{
     recipes.remove(item);
 }
 
+//Еще минус рецепты
+furnace.remove(<minecraft:iron_ingot>);
+
 //Еда
 recipes.addShapeless (<extraplanets:canned_food>, [<galacticraftcore:canister>, <ore:categoryCookedMeat>, <ore:categoryCookedMeat>]);
 recipes.addShapeless (<galacticraftcore:food>, [<galacticraftcore:canister>, <ore:categoryFruit>, <ore:categoryFruit>]);
