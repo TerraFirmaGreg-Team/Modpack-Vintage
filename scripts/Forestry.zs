@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var platebrass = <ore:plateBrass>;
 var platebronze = <ore:plateBronze>;
@@ -61,7 +62,11 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<gendustry:industrial_grafter:*>,
 	<gendustry:industrial_scoop:*>,
 	<forestry:bronze_pickaxe>,
-	<forestry:bronze_shovel>
+	<forestry:bronze_shovel>,
+	<forestry:resource_storage>,
+	<forestry:resource_storage:1>,
+	<forestry:resource_storage:2>,
+	<forestry:resource_storage:3>
 ] as IItemStack[];
 for item in ItemsToRemoveFORESTRYJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -112,6 +117,15 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:6> * 9).outputs(<forestry:
 compressor.recipeBuilder().inputs(<forestry:bee_combs:2> * 9).outputs(<forestry:bee_combs_0:2>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:3> * 9).outputs(<forestry:bee_combs_0:3>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry:bee_combs_1>).duration(4).EUt(2).buildAndRegister();
+
+//Genetics Processor
+assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:genetics_processor>).duration(5000).EUt(32).buildAndRegister();
+//Enviromental Processor
+assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:env_processor>).duration(5000).EUt(32).buildAndRegister();
+
+//Seed Oil
+fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*20).duration(20).EUt(20).buildAndRegister();
+fluid_extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
 
 //Гибкий корпус из форестри
 assembler.recipeBuilder().inputs(<ore:plateBronze>*4, <ore:plateEmerald>*2, <ore:slimeball>*2, <ore:glue>*2).fluidInputs([<liquid:glass> * 400]).outputs(<forestry:flexible_casing>).duration(20).EUt(16).buildAndRegister();

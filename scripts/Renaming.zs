@@ -1,3 +1,7 @@
+//Water
+game.setLocalization("en_us","item.bucketWater.name","Processing Water Bucket");
+game.setLocalization("en_us","tile.water.name","Processing Water");
+
 //Wrought Iron Renaming
 game.setLocalization("en_us","item.tfc.metal.lamp.wrought_iron.name","Iron Lamp");
 game.setLocalization("en_us","item.tfc.metal.unfinished_greaves.wrought_iron.name","Unfinished Iron Greaves");

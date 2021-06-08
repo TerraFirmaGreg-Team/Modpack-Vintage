@@ -590,28 +590,28 @@ recipes.addShaped(<tfcthings:grindstone_base>,
 Welding.removeRecipe(<tfc:metal/double_sheet/wrought_iron>);
 Welding.addRecipe("tfc:double_plate_wrought_iron_fixed", <ore:plateIron>, <ore:plateIron>, <tfc:metal/double_sheet/wrought_iron>, 2);
 
-Welding.removeRecipe(<tfc:metal/shears/wrought_iron>);
+//Welding.removeRecipe(<tfc:metal/shears/wrought_iron>);
 Welding.addRecipe("tfc:shears_wrought_iron_fixed", <gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "iron"}}), <gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "iron"}}), <tfc:metal/shears/wrought_iron>, 2);
 
-Welding.removeRecipe(<tfc:metal/helmet/wrought_iron>);
+//Welding.removeRecipe(<tfc:metal/helmet/wrought_iron>);
 Welding.addRecipe("tfc:helmet_wrought_iron_fixed", <tfc:metal/unfinished_helmet/wrought_iron>, <ore:plateIron>, <tfc:metal/helmet/wrought_iron>, 2);
-Welding.removeRecipe(<tfc:metal/greaves/wrought_iron>);
+//Welding.removeRecipe(<tfc:metal/greaves/wrought_iron>);
 Welding.addRecipe("tfc:greaves_wrought_iron_fixed", <tfc:metal/unfinished_greaves/wrought_iron>, <ore:plateIron>, <tfc:metal/greaves/wrought_iron>, 2);
-Welding.removeRecipe(<tfc:metal/boots/wrought_iron>);
+//Welding.removeRecipe(<tfc:metal/boots/wrought_iron>);
 Welding.addRecipe("tfc:boots_wrought_iron_fixed", <tfc:metal/unfinished_boots/wrought_iron>, <ore:plateIron>, <tfc:metal/boots/wrought_iron>, 2);
 
-Anvil.removeRecipe(<tfc:metal/hoe_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/axe_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/shovel_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/chisel_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/pick_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/javelin_head/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/scythe_blade/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
-Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
-Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
-Anvil.removeRecipe(<tfc:metal/unfinished_boots/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/hoe_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/axe_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/shovel_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/chisel_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/saw_blade/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/pick_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/javelin_head/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/scythe_blade/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
+//Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
+//Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
+//Anvil.removeRecipe(<tfc:metal/unfinished_boots/wrought_iron>);
 
 Anvil.addRecipe("tfc:wrought_iron_hoe_fixed", <tfc:metal/ingot/wrought_iron>, <tfc:metal/hoe_head/wrought_iron>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
 Anvil.addRecipe("tfc:wrought_iron_axe_fixed", <tfc:metal/ingot/wrought_iron>, <tfc:metal/axe_head/wrought_iron>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
@@ -870,3 +870,121 @@ recipes.addShapeless (<tfcthings:crown/gold_ruby>, [<ore:craftingToolHardHammer>
 recipes.addShapeless (<tfcthings:crown/gold_opal>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteOpal>]);
 recipes.addShapeless (<tfcthings:crown/gold_jasper>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJasper>]);
 recipes.addShapeless (<tfcthings:crown/gold_jade>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJade>]);
+
+//Фикс тулов
+//Удаление рецептов
+global ItemsToRemoveTFCTools as IItemStack[] = [
+	//Кирки
+	<tfc:metal/pick/tungsten>,
+	<tfc:metal/pick/titanium>,
+	<tfc:metal/pick/boron>,
+	<tfc:metal/pick/cobalt>,
+	<tfc:metal/pick/bismuth_bronze>,
+	<tfc:metal/pick/black_bronze>,
+	<tfc:metal/pick/bronze>,
+	<tfc:metal/pick/copper>,
+	<tfc:metal/pick/mithril>,
+	<tfc:metal/pick/black_steel>,
+	<tfc:metal/pick/zircaloy>,
+	<tfc:metal/pick/steel>,
+	<tfc:metal/pick/osmium>,
+	<tfc:metal/pick/nickel_silver>,
+	<tfc:metal/pick/beryllium_copper>,
+	<tfc:metal/pick/wrought_iron>,
+	<tfc:metal/pick/aluminium>,
+	<tfc:metal/pick/tungsten_steel>,
+	<tfc:metal/pick/invar>,
+	<tfc:metal/pick/blue_steel>,
+	<tfc:metal/pick/red_steel>,
+	//Топоры
+	<tfc:metal/axe/tungsten>,
+	<tfc:metal/axe/titanium>,
+	<tfc:metal/axe/boron>,
+	<tfc:metal/axe/cobalt>,
+	<tfc:metal/axe/bismuth_bronze>,
+	<tfc:metal/axe/black_bronze>,
+	<tfc:metal/axe/bronze>,
+	<tfc:metal/axe/copper>,
+	<tfc:metal/axe/mithril>,
+	<tfc:metal/axe/black_steel>,
+	<tfc:metal/axe/zircaloy>,
+	<tfc:metal/axe/steel>,
+	<tfc:metal/axe/osmium>,
+	<tfc:metal/axe/nickel_silver>,
+	<tfc:metal/axe/beryllium_copper>,
+	<tfc:metal/axe/wrought_iron>,
+	<tfc:metal/axe/aluminium>,
+	<tfc:metal/axe/tungsten_steel>,
+	<tfc:metal/axe/invar>,
+	<tfc:metal/axe/blue_steel>,
+	<tfc:metal/axe/red_steel>,
+	//Мотыги
+	<tfc:metal/hoe/tungsten>,
+	<tfc:metal/hoe/titanium>,
+	<tfc:metal/hoe/boron>,
+	<tfc:metal/hoe/cobalt>,
+	<tfc:metal/hoe/bismuth_bronze>,
+	<tfc:metal/hoe/black_bronze>,
+	<tfc:metal/hoe/bronze>,
+	<tfc:metal/hoe/copper>,
+	<tfc:metal/hoe/mithril>,
+	<tfc:metal/hoe/black_steel>,
+	<tfc:metal/hoe/zircaloy>,
+	<tfc:metal/hoe/steel>,
+	<tfc:metal/hoe/osmium>,
+	<tfc:metal/hoe/nickel_silver>,
+	<tfc:metal/hoe/beryllium_copper>,
+	<tfc:metal/hoe/wrought_iron>,
+	<tfc:metal/hoe/aluminium>,
+	<tfc:metal/hoe/tungsten_steel>,
+	<tfc:metal/hoe/invar>,
+	<tfc:metal/hoe/blue_steel>,
+	<tfc:metal/hoe/red_steel>,
+	//Мечи
+	<tfc:metal/sword/tungsten>,
+	<tfc:metal/sword/titanium>,
+	<tfc:metal/sword/boron>,
+	<tfc:metal/sword/cobalt>,
+	<tfc:metal/sword/bismuth_bronze>,
+	<tfc:metal/sword/black_bronze>,
+	<tfc:metal/sword/bronze>,
+	<tfc:metal/sword/copper>,
+	<tfc:metal/sword/mithril>,
+	<tfc:metal/sword/black_steel>,
+	<tfc:metal/sword/zircaloy>,
+	<tfc:metal/sword/steel>,
+	<tfc:metal/sword/osmium>,
+	<tfc:metal/sword/nickel_silver>,
+	<tfc:metal/sword/beryllium_copper>,
+	<tfc:metal/sword/wrought_iron>,
+	<tfc:metal/sword/aluminium>,
+	<tfc:metal/sword/tungsten_steel>,
+	<tfc:metal/sword/invar>,
+	<tfc:metal/sword/blue_steel>,
+	<tfc:metal/sword/red_steel>,
+	//Лопаты
+	<tfc:metal/shovel/tungsten>,
+	<tfc:metal/shovel/titanium>,
+	<tfc:metal/shovel/boron>,
+	<tfc:metal/shovel/cobalt>,
+	<tfc:metal/shovel/bismuth_bronze>,
+	<tfc:metal/shovel/black_bronze>,
+	<tfc:metal/shovel/bronze>,
+	<tfc:metal/shovel/copper>,
+	<tfc:metal/shovel/mithril>,
+	<tfc:metal/shovel/black_steel>,
+	<tfc:metal/shovel/zircaloy>,
+	<tfc:metal/shovel/steel>,
+	<tfc:metal/shovel/osmium>,
+	<tfc:metal/shovel/nickel_silver>,
+	<tfc:metal/shovel/beryllium_copper>,
+	<tfc:metal/shovel/wrought_iron>,
+	<tfc:metal/shovel/aluminium>,
+	<tfc:metal/shovel/tungsten_steel>,
+	<tfc:metal/shovel/invar>,
+	<tfc:metal/shovel/blue_steel>,
+	<tfc:metal/shovel/red_steel>
+] as IItemStack[];
+for item in ItemsToRemoveTFCTools{
+    recipes.remove(item);
+}

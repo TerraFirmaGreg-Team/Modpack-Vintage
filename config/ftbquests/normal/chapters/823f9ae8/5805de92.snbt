@@ -14,57 +14,42 @@
 		type: "item",
 		items: [{
 			ForgeCaps: {
-				Parent: {
-					heat: 0.0f,
-					ticks: -1L,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							third: -1,
-							second: -1
-						}
-					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7942312130750066863L,
+					AS_Amulet_HolderMost: -7089728296900211103L
+				}
 			},
-			id: "tfc:metal/pick/black_steel"
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "blue_steel"
+				}
+			},
+			Damage: 1s
 		},
 		{
 			ForgeCaps: {
-				Parent: {
-					heat: 0.0f,
-					ticks: -1L,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							third: -1,
-							second: -1
-						}
-					}
-				},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "tfc:metal/pick/red_steel"
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "red_steel"
+				}
+			},
+			Damage: 1s
 		},
 		{
 			ForgeCaps: {
-				Parent: {
-					heat: 0.0f,
-					ticks: -1L,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							third: -1,
-							second: -1
-						}
-					}
-				},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "tfc:metal/pick/blue_steel"
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "black_steel"
+				}
+			},
+			Damage: 1s
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
