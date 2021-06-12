@@ -25,16 +25,6 @@ minecraft:glowing
 minecraft:levitation
 minecraft:luck
 minecraft:unluck
-tombstone:ghostly_shape
-tombstone:preservation
-tombstone:unstable_intangibleness
-tombstone:diversion
-tombstone:feather_fall
-tombstone:purification
-tombstone:true_sight
-tombstone:exorcism
-tombstone:reach
-tombstone:lightning_resistance
 tfc:overburdened
 tfc:thirst
 tfc:food_poison

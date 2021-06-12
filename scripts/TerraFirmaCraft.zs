@@ -9,6 +9,7 @@ import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
+import mods.tfcdryingrack.Rack;
 
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
@@ -245,6 +246,9 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:green
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete:14>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();	
 
+//Капля меда
+recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<gregtech:meta_item_1:2095>*10, [<ore:dustTin>*1, <ore:dustCopper>*9]);
@@ -302,6 +306,9 @@ recipes.addShaped(<gregtech:meta_item_2:32011>,
  
 //Крафт Furnaceblock'a
 assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 22})).outputs(<contenttweaker:furnaceblock>).duration(20).EUt(4).buildAndRegister();	
+
+//Fetilizer
+Rack.addRecipe("tfc:fertilizerFix", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8, 1.0);
 
 //Salt(Ocean water) --> Fresh water
 centrifuge.recipeBuilder().fluidInputs(<liquid:salt_water>*1000).chancedOutput(<gregtech:meta_item_1:2155>, 2500, 2500).fluidOutputs(<liquid:fresh_water>*750).duration(100).EUt(10).buildAndRegister();
@@ -873,6 +880,7 @@ recipes.addShapeless (<tfcthings:crown/gold_jade>, [<ore:craftingToolHardHammer>
 
 //Фикс тулов
 //Удаление рецептов
+/*
 global ItemsToRemoveTFCTools as IItemStack[] = [
 	//Кирки
 	<tfc:metal/pick/tungsten>,
@@ -988,3 +996,4 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 for item in ItemsToRemoveTFCTools{
     recipes.remove(item);
 }
+*/

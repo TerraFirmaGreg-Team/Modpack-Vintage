@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
 var platebrass = <ore:plateBrass>;
 var platebronze = <ore:plateBronze>;
@@ -122,6 +123,9 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry
 assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:genetics_processor>).duration(5000).EUt(32).buildAndRegister();
 //Enviromental Processor
 assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:env_processor>).duration(5000).EUt(32).buildAndRegister();
+
+//Капля меда
+centrifuge.recipeBuilder().inputs(<forestry:bee_combs>).chancedOutput(<forestry:beeswax>, 9000, 50).outputs(<forestry:honey_drop>).duration(10).EUt(2).buildAndRegister();
 
 //Seed Oil
 fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*20).duration(20).EUt(20).buildAndRegister();

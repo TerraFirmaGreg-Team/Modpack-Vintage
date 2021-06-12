@@ -157,8 +157,8 @@ appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
 enderio:primed_charge
-enderio:owl_egg
 enderio:falling_machine
+enderio:owl_egg
 dynamictrees:falling_tree
 warpdrive:entityspheregenerator
 warpdrive:entity_star_sore
@@ -231,3 +231,4 @@ extraplanets:extraplanets.evolvediceslimeboss
 extraplanets:extraplanets.evolvedsnowmanboss
 extraplanets:extraplanets.evolvedspacemanboss
 extraplanets:extraplanets.evolvedgiantzombieboss
+gravestone:player_ghost
