@@ -58,9 +58,13 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:813>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:814>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10183>*3).duration(750).EUt(34).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:815>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10072>*3).duration(750).EUt(34).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:816>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10235>*3).duration(750).EUt(34).buildAndRegister();
-	
+
+//Выплавка железа?
+furnace.addRecipe(<tfc:metal/ingot/wrought_iron>, <ore:dustIron>);
+
 //Реплейс всех печек на печной блок
 recipes.replaceAllOccurences(<minecraft:furnace>, <contenttweaker:furnaceblock>);
+recipes.addShapeless (<contenttweaker:furnaceblock>, [<minecraft:furnace>]);
 
 //Сундуки можно переработать
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:802>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10095>*10).EUt(8).duration(400).buildAndRegister();
@@ -68,6 +72,9 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:803>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:804>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10183>*10).EUt(120).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:805>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10072>*10).EUt(500).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:806>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10235>*10).EUt(1560).duration(400).buildAndRegister();
+
+//Фикс инварового кейзинга
+recipes.removeByRecipeName("gregtech:casing_invar_heatproof");
 
 //Лава из незерака
 fluid_extractor.recipeBuilder().inputs(<ore:netherrack>).fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();
@@ -89,7 +96,7 @@ fluid_heater.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag
 
 //Фиксы корпусов
 //Удаление
-assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<gregtech:meta_item_1:12197>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12184>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12001>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12183>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();

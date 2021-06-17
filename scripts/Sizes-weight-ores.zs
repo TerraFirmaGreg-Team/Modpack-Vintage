@@ -146,6 +146,7 @@ import mods.terrafirmacraft.ItemRegistry;
         <gregtech:ore_zeolite_0>,
         <gregtech:ore_zinc_0>,
         <gregtech:ore_zirkelite_0>,
+		/*
         <gregtech:poor_ore_almandine_0>,
         <gregtech:poor_ore_aluminium_0>,
         <gregtech:poor_ore_alunite_0>,
@@ -433,6 +434,7 @@ import mods.terrafirmacraft.ItemRegistry;
         <gregtech:rich_ore_zeolite_0>,
         <gregtech:rich_ore_zinc_0>,
         <gregtech:rich_ore_zirkelite_0>
+		*/
 ];
 
 for item in GregtechOres {
