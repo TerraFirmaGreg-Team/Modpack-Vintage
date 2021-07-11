@@ -12,10 +12,10 @@
 		uid: "654ad28d",
 		type: "item",
 		items: [{
+			id: "tfc:crucible",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:crucible"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

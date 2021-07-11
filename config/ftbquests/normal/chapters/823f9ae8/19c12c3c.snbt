@@ -9,13 +9,13 @@
 		uid: "2ab3a32a",
 		type: "item",
 		items: [{
+			id: "tfc:ceramics/unfired/vessel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "tfc:ceramics/unfired/vessel"
+			}
 		}]
 	}]
 }

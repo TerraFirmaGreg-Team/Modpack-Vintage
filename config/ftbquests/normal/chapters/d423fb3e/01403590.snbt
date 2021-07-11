@@ -11,33 +11,33 @@
 		uid: "15cb514d",
 		type: "item",
 		items: [{
+			id: "tfc:metal/ingot/black_steel",
 			ForgeCaps: {
-				"tfc:item_forge": {
-					heat: 0.0f,
+				Parent: {
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
-				Parent: {
-					heat: 0.0f,
+				"tfc:item_forge": {
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/ingot/black_steel"
+			}
 		}]
 	}]
 }

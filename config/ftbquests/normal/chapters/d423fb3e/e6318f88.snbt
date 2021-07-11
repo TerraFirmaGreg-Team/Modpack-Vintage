@@ -10,16 +10,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.steelingot.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotSteel",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ingotSteel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotSteel"
 				}
 			}
 		}]

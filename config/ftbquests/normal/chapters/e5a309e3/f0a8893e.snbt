@@ -9,13 +9,13 @@
 		uid: "7db808cc",
 		type: "item",
 		items: [{
+			id: "prospectors:prospector_high",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderLeast: -7942312130750066863L,
-					AS_Amulet_HolderMost: -7089728296900211103L
+					AS_Amulet_HolderMost: -7089728296900211103L,
+					AS_Amulet_HolderLeast: -7942312130750066863L
 				}
-			},
-			id: "prospectors:prospector_high"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

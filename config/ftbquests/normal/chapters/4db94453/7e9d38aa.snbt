@@ -9,10 +9,10 @@
 		uid: "d38e1250",
 		type: "item",
 		items: [{
+			id: "appliedenergistics2:spatial_storage_cell_16_cubed",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "appliedenergistics2:spatial_storage_cell_16_cubed"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

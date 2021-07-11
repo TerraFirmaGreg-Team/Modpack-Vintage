@@ -10,9 +10,6 @@
 		uid: "31554e3f",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "ae2wtlib:wut",
 			tag: {
 				StoredTerminals: [{
@@ -50,6 +47,9 @@
 				InfinityEnergy: 0,
 				SelectedTerminal: 0,
 				internalCurrentPower: 0.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

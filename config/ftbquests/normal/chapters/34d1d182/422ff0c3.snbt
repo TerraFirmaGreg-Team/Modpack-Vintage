@@ -10,12 +10,12 @@
 		uid: "b874fbad",
 		type: "item",
 		items: [{
+			id: "extraplanets:tier3_space_suit_boots",
+			Damage: 100s,
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extraplanets:tier3_space_suit_boots",
-			tag: {},
-			Damage: 100s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -24,12 +24,12 @@
 		uid: "9915e376",
 		type: "item",
 		items: [{
+			id: "extraplanets:tier3_space_suit_helmet",
+			Damage: 100s,
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extraplanets:tier3_space_suit_helmet",
-			tag: {},
-			Damage: 100s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -38,12 +38,12 @@
 		uid: "933f033c",
 		type: "item",
 		items: [{
+			id: "extraplanets:tier3_space_suit_chest",
+			Damage: 100s,
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extraplanets:tier3_space_suit_chest",
-			tag: {},
-			Damage: 100s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -52,12 +52,12 @@
 		uid: "ac5acd28",
 		type: "item",
 		items: [{
+			id: "extraplanets:tier3_space_suit_legings",
+			Damage: 100s,
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extraplanets:tier3_space_suit_legings",
-			tag: {},
-			Damage: 100s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

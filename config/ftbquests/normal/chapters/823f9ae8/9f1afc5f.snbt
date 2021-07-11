@@ -10,17 +10,17 @@
 		uid: "dd5d54d3",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "gregtech:meta_tool",
+			Damage: 6s,
 			tag: {
 				GT.ToolStats: {
 					MaxDurability: 450,
 					Material: "copper"
 				}
 			},
-			Damage: 6s
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

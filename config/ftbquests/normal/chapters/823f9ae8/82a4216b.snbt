@@ -10,45 +10,45 @@
 		uid: "eddcf1fb",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "gregtech:meta_tool",
+			Damage: 17s,
 			tag: {
 				GT.ToolStats: {
 					Material: "bronze"
 				}
 			},
-			Damage: 17s
-		},
-		{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
+			}
+		},
+		{
 			id: "gregtech:meta_tool",
+			Damage: 17s,
 			tag: {
 				GT.ToolStats: {
 					MaxDurability: 1460,
 					Material: "black_bronze"
 				}
 			},
-			Damage: 17s
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		},
 		{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderLeast: -7942312130750066863L,
-					AS_Amulet_HolderMost: -7089728296900211103L
-				}
-			},
 			id: "gregtech:meta_tool",
+			Damage: 17s,
 			tag: {
 				GT.ToolStats: {
 					MaxDurability: 1200,
 					Material: "bismuth_bronze"
 				}
 			},
-			Damage: 17s
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderMost: -7089728296900211103L,
+					AS_Amulet_HolderLeast: -7942312130750066863L
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

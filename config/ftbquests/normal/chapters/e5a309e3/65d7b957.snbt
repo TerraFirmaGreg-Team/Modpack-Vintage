@@ -1,12 +1,12 @@
 {
 	icon: {
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		},
 		id: "forge:bucketfilled",
 		tag: {
 			FluidName: "polytetrafluoroethylene",
 			Amount: 1000
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: -1.5d,

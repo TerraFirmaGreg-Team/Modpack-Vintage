@@ -9,15 +9,15 @@
 		uid: "17b5443b",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderLeast: -7942312130750066863L,
-					AS_Amulet_HolderMost: -7089728296900211103L
-				}
-			},
 			id: "wpt:wpt",
 			tag: {
 				InfinityEnergy: 0
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderMost: -7089728296900211103L,
+					AS_Amulet_HolderLeast: -7942312130750066863L
+				}
 			}
 		}],
 		ignore_damage: true,

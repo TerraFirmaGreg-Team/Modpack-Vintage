@@ -10,10 +10,10 @@
 		uid: "ee4cc1ca",
 		type: "item",
 		items: [{
+			id: "galacticraftplanets:thermal_padding",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "galacticraftplanets:thermal_padding"
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -21,11 +21,11 @@
 		uid: "9944c5c4",
 		type: "item",
 		items: [{
+			id: "galacticraftplanets:thermal_padding",
+			Damage: 1s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "galacticraftplanets:thermal_padding",
-			Damage: 1s
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -33,11 +33,11 @@
 		uid: "e92f4059",
 		type: "item",
 		items: [{
+			id: "galacticraftplanets:thermal_padding",
+			Damage: 2s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "galacticraftplanets:thermal_padding",
-			Damage: 2s
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -45,11 +45,11 @@
 		uid: "cc3c535f",
 		type: "item",
 		items: [{
+			id: "galacticraftplanets:thermal_padding",
+			Damage: 3s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "galacticraftplanets:thermal_padding",
-			Damage: 3s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

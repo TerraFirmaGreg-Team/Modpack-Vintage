@@ -1,9 +1,9 @@
 {
 	icon: {
+		id: "minecraft:bed",
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
-		},
-		id: "minecraft:bed"
+		}
 	},
 	x: -3.0d,
 	y: -10.5d,
@@ -17,13 +17,13 @@
 		type: "item",
 		title: "{tfg.quests.primitive.bed.title}",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "bed",
-					id: "ore"
+					id: "ore",
+					data: "bed"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}],
 		ignore_nbt: 1b
 	}]

@@ -17,11 +17,11 @@
 		uid: "6991f690",
 		type: "item",
 		items: [{
+			id: "appliedenergistics2:biometric_card",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "appliedenergistics2:biometric_card",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

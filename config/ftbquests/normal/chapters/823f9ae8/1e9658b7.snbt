@@ -16,76 +16,76 @@
 		uid: "41ff969f",
 		type: "item",
 		items: [{
+			id: "tfc:metal/anvil/bismuth_bronze",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/bismuth_bronze"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/black_bronze",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/black_bronze"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/bronze",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/bronze"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/nickel_silver",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/nickel_silver"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

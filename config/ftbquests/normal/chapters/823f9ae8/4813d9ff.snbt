@@ -13,16 +13,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.woodchest.task.chest.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "chestWood",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any chestWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "chestWood"
 				}
 			}
 		}]

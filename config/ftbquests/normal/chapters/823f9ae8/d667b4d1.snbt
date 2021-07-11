@@ -9,22 +9,22 @@
 		uid: "8b3599dd",
 		type: "item",
 		items: [{
+			id: "tfcthings:honing_steel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfcthings:honing_steel"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

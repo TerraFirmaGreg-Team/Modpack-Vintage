@@ -13,16 +13,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.tools.task.wrench.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolWrench",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolWrench"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolWrench"
 				}
 			}
 		}],
@@ -33,16 +33,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.tools.task.screwdriver.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolScrewdriver",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolScrewdriver"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolScrewdriver"
 				}
 			}
 		}],
@@ -53,16 +53,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.tools.task.wirecutter.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolWireCutter",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolWireCutter"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolWireCutter"
 				}
 			}
 		}],

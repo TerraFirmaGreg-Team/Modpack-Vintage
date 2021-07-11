@@ -13,26 +13,26 @@
 		type: "item",
 		title: "{tfg.quests.primitive.fireplace.tasks.wood.title}",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "logWood",
-					id: "ore"
+					id: "ore",
+					data: "logWood"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}]
 	},
 	{
 		uid: "b5353036",
 		type: "item",
 		items: [{
+			id: "minecraft:stick",
 			ForgeCaps: {
 				"tfc:item_size": {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "minecraft:stick"
+			}
 		}],
 		count: 3L
 	},
@@ -40,10 +40,10 @@
 		uid: "5bfbc21b",
 		type: "item",
 		items: [{
+			id: "tfc:firestarter",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:firestarter"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

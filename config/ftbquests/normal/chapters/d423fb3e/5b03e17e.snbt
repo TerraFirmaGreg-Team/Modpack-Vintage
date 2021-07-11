@@ -90,9 +90,6 @@
 		uid: "a24a9446",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "forestry:bee_princess_ge",
 			tag: {
 				MaxH: 20,
@@ -165,6 +162,9 @@
 						Slot: 12b
 					}]
 				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b

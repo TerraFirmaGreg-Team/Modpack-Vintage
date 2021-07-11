@@ -13,58 +13,58 @@
 		uid: "922ee609",
 		type: "item",
 		items: [{
+			id: "tfc:metal/anvil/wrought_iron",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/wrought_iron"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/invar",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/invar"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/cobalt",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:metal/anvil/cobalt"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

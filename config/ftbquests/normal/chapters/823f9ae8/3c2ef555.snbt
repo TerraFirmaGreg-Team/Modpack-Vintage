@@ -10,40 +10,40 @@
 		uid: "b3151313",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "gregtech:meta_tool",
+			Damage: 9s,
 			tag: {
 				GT.ToolStats: {
 					Material: "bronze"
 				}
 			},
-			Damage: 9s
-		},
-		{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
+			}
+		},
+		{
 			id: "gregtech:meta_tool",
+			Damage: 9s,
 			tag: {
 				GT.ToolStats: {
 					Material: "bismuth_bronze"
 				}
 			},
-			Damage: 9s
-		},
-		{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
+			}
+		},
+		{
 			id: "gregtech:meta_tool",
+			Damage: 9s,
 			tag: {
 				GT.ToolStats: {
 					Material: "black_bronze"
 				}
 			},
-			Damage: 9s
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

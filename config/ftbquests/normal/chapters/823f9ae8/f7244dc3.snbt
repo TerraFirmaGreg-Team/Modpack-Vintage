@@ -1,22 +1,22 @@
 {
 	title: "{tfg.quests.primitive.blacksteelingot.title}",
 	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 10231s,
 		ForgeCaps: {
 			"tfc:item_forge": {
-				heat: 0.0f,
 				ticks: -1L,
+				heat: 0.0f,
 				forge: {
 					work: 0,
 					steps: {
 						last: -1,
-						third: -1,
-						second: -1
+						second: -1,
+						third: -1
 					}
 				}
 			}
-		},
-		id: "gregtech:meta_item_1",
-		Damage: 10231s
+		}
 	},
 	x: 1.0d,
 	y: -3.5d,
@@ -31,51 +31,51 @@
 		uid: "db21d9f1",
 		type: "item",
 		items: [{
+			id: "tfc:metal/ingot/black_steel",
 			ForgeCaps: {
-				"tfc:item_forge": {
-					heat: 0.0f,
+				Parent: {
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				},
-				Parent: {
-					heat: 0.0f,
+				"tfc:item_forge": {
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/ingot/black_steel"
+			}
 		},
 		{
+			id: "gregtech:meta_item_1",
+			Damage: 10231s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 10231s
+			}
 		}]
 	}]
 }

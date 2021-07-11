@@ -11,66 +11,66 @@
 		uid: "670b5db6",
 		type: "item",
 		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 2232s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 2232s
+			}
 		}]
 	},
 	{
 		uid: "772f57e5",
 		type: "item",
 		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 2233s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 2233s
+			}
 		}]
 	},
 	{
 		uid: "7c4a349d",
 		type: "item",
 		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 2231s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 2231s
+			}
 		}]
 	}]
 }

@@ -11,10 +11,10 @@
 		uid: "a4a47c18",
 		type: "item",
 		items: [{
+			id: "tfc:ceramics/fired/jug",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:ceramics/fired/jug"
+			}
 		}],
 		ignore_nbt: 1b
 	}]

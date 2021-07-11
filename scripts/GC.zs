@@ -566,24 +566,21 @@ recipes.addShaped(<extraplanets:tier1_un_prepared_space_suit_legings>,
  [<gregtech:meta_item_1:12184>, null, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_1:12184>, null, <gregtech:meta_item_1:12184>]]);
 //неподготовленный ботинки
-recipes.addShaped(<extraplanets:tier1_un_prepared_space_suit_legings>,
+recipes.addShaped(<extraplanets:tier1_un_prepared_space_suit_boots>,
 [[null, null, null],
  [<gregtech:meta_item_1:12184>, null, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_1:12184>, null, <gregtech:meta_item_1:12184>]]);
 //неподготовленный шлем 2
-
 recipes.addShaped(<extraplanets:tier2_un_prepared_space_suit_helmet>,
 [[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>],
  [<gregtech:meta_item_1:12001>, <extraplanets:tier1_un_prepared_space_suit_helmet>, <gregtech:meta_item_1:12001>],
  [null, null, null]]);
 //неподготовленный нагрудник 2
-
 recipes.addShaped(<extraplanets:tier2_un_prepared_space_suit_chest>,
 [[<gregtech:meta_item_1:12001>, null, <gregtech:meta_item_1:12001>],
  [<gregtech:meta_item_1:12001>, <extraplanets:tier1_un_prepared_space_suit_chest>, <gregtech:meta_item_1:12001>],
  [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>]]);
 //неподготовленный поножи 2
-
 recipes.addShaped(<extraplanets:tier2_un_prepared_space_suit_legings>,
 [[<gregtech:meta_item_1:12001>, <extraplanets:tier1_un_prepared_space_suit_legings>, <gregtech:meta_item_1:12001>],
  [<gregtech:meta_item_1:12001>, null, <gregtech:meta_item_1:12001>],
@@ -592,7 +589,7 @@ recipes.addShaped(<extraplanets:tier2_un_prepared_space_suit_legings>,
 recipes.addShaped(<extraplanets:tier2_un_prepared_space_suit_boots>,
 [[null, null, null],
  [<gregtech:meta_item_1:12001>, null, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:12001>, <extraplanets:tier1_un_prepared_space_suit_legings>, <gregtech:meta_item_1:12001>]]);
+ [<gregtech:meta_item_1:12001>, <extraplanets:tier1_un_prepared_space_suit_boots>, <gregtech:meta_item_1:12001>]]);
 //неподготовленный шлем 3
 recipes.addShaped(<extraplanets:tier3_un_prepared_space_suit_helmet>,
 [[<gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>, <gregtech:meta_item_1:12183>],
@@ -612,7 +609,7 @@ recipes.addShaped(<extraplanets:tier3_un_prepared_space_suit_legings>,
 recipes.addShaped(<extraplanets:tier3_un_prepared_space_suit_boots>,
 [[null, null, null],
  [<gregtech:meta_item_1:12183>, null, <gregtech:meta_item_1:12183>],
- [<gregtech:meta_item_1:12183>, <extraplanets:tier2_un_prepared_space_suit_legings>, <gregtech:meta_item_1:12183>]]);
+ [<gregtech:meta_item_1:12183>, <extraplanets:tier2_un_prepared_space_suit_boots>, <gregtech:meta_item_1:12183>]]);
 //неподготовленный шлем 4
 recipes.addShaped(<extraplanets:tier4_un_prepared_space_suit_helmet>,
 [[<gregtech:meta_item_1:12016>, <gregtech:meta_item_1:12016>, <gregtech:meta_item_1:12016>],
@@ -632,7 +629,7 @@ recipes.addShaped(<extraplanets:tier4_un_prepared_space_suit_legings>,
 recipes.addShaped(<extraplanets:tier4_un_prepared_space_suit_boots>,
 [[null, null, null],
  [<gregtech:meta_item_1:12016>, null, <gregtech:meta_item_1:12016>],
- [<gregtech:meta_item_1:12016>, <extraplanets:tier3_un_prepared_space_suit_legings>, <gregtech:meta_item_1:12016>]]);
+ [<gregtech:meta_item_1:12016>, <extraplanets:tier3_un_prepared_space_suit_boots>, <gregtech:meta_item_1:12016>]]);
 //Сенсорные очки
 recipes.addShaped(<galacticraftcore:sensor_glasses>,
 [[<minecraft:leather>, <ore:plateDiamond>, <minecraft:leather>],
@@ -1301,7 +1298,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 //Скаф 2лвл тапки
 assembler.recipeBuilder()
-  .inputs(<extraplanets:tier2_un_prepared_space_suit_helmet>, <extraplanets:tier2_pressure_layer>*6, <extraplanets:tier2_radiation_layer>*3, <extraplanets:tier2_armor_layer>*3, <ore:leather>*5)
+  .inputs(<extraplanets:tier2_un_prepared_space_suit_boots>, <extraplanets:tier2_pressure_layer>*6, <extraplanets:tier2_radiation_layer>*3, <extraplanets:tier2_armor_layer>*3, <ore:leather>*5)
   .outputs(<extraplanets:tier2_space_suit_boots:100>)
   .duration(550)
   .EUt(156)
@@ -1343,7 +1340,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 //Скаф 3лвл тапки
 assembler.recipeBuilder()
-  .inputs(<extraplanets:tier3_un_prepared_space_suit_helmet>, <extraplanets:tier3_pressure_layer>*6, <extraplanets:tier3_radiation_layer>*3, <extraplanets:tier3_armor_layer>*3, <ore:leather>*5)
+  .inputs(<extraplanets:tier3_un_prepared_space_suit_boots>, <extraplanets:tier3_pressure_layer>*6, <extraplanets:tier3_radiation_layer>*3, <extraplanets:tier3_armor_layer>*3, <ore:leather>*5)
   .outputs(<extraplanets:tier3_space_suit_boots:100>)
   .duration(600)
   .EUt(256)
@@ -1378,7 +1375,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 //Скаф 3лвл шапка
 assembler.recipeBuilder()
-  .inputs(<extraplanets:tier3_un_prepared_space_suit_boots>, <extraplanets:tier3_pressure_layer>*6, <extraplanets:tier3_radiation_layer>*3, <extraplanets:tier3_armor_layer>*3, <ore:leather>*5)
+  .inputs(<extraplanets:tier3_un_prepared_space_suit_helmet>, <extraplanets:tier3_pressure_layer>*6, <extraplanets:tier3_radiation_layer>*3, <extraplanets:tier3_armor_layer>*3, <ore:leather>*5)
   .outputs(<extraplanets:tier3_space_suit_helmet:100>)
   .duration(600)
   .EUt(256)

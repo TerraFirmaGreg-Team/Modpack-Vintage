@@ -12,16 +12,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.sachok.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolScoop",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolScoop"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolScoop"
 				}
 			}
 		}],

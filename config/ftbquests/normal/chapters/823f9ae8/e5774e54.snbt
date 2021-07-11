@@ -11,10 +11,10 @@
 		uid: "c7f05678",
 		type: "item",
 		items: [{
+			id: "tfc:bloomery",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "tfc:bloomery"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

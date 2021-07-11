@@ -12,13 +12,13 @@
 		type: "item",
 		title: "Рюкзак",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "backpack",
-					id: "ore"
+					id: "ore",
+					data: "backpack"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}]
 	}]
 }

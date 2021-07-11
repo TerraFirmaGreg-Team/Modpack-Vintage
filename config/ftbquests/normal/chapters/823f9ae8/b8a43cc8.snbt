@@ -12,43 +12,43 @@
 		uid: "6fc6af2a",
 		type: "item",
 		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 2044s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 2044s
+			}
 		},
 		{
 			item: "gregtech:meta_item_1 1 44"
 		},
 		{
+			id: "gregtech:meta_item_1",
+			Damage: 3044s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_item_1",
-			Damage: 3044s
+			}
 		}]
 	}]
 }

@@ -534,8 +534,6 @@ logging {
 
     # Chunk loading logs, enable it to report chunk loaders updates
     B:enable_chunk_loading_logs=true
-
-    # Report in logs when a chunk is reloaded shortly after being unloaded, usually associated with server lag.
     B:enable_chunk_reloading_logs=true
 
     # Detailed collection logs to help debug the mod, enable it before reporting a bug
@@ -549,6 +547,9 @@ logging {
 
     # EntityFX logs, enable it to dump entityFX registry updates
     B:enable_entity_fx_logs=false
+
+    # Report in logs when a chunk is reloaded shortly after being unloaded, usually associated with server lag.
+    B:enable_experimental_chunk_reloading_logs=false
 
     # Detailed force field logs to help debug the mod, enable it before reporting a bug
     B:enable_force_field_logs=false

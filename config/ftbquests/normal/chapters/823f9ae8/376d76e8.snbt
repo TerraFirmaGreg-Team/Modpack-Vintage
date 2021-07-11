@@ -12,10 +12,10 @@
 		uid: "984b481d",
 		type: "item",
 		items: [{
+			id: "waterflasks:iron_flask",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "waterflasks:iron_flask"
+			}
 		}]
 	}]
 }

@@ -10,10 +10,10 @@
 		uid: "50347293",
 		type: "item",
 		items: [{
+			id: "forestry:portable_alyzer",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "forestry:portable_alyzer"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

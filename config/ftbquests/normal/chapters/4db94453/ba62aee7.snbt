@@ -9,11 +9,11 @@
 		uid: "f86a6e4b",
 		type: "item",
 		items: [{
+			id: "appliedenergistics2:wireless_terminal",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "appliedenergistics2:wireless_terminal",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

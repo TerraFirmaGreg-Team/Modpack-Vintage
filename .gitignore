@@ -1,0 +1,17 @@
+
+config/fantasticlib/reference/recipes.txt
+config/fantasticlib/reference/potion_types.txt
+config/fantasticlib/reference/oredict.txt
+config/fantasticlib/reference/items.txt
+config/fantasticlib/reference/entities.txt
+config/fantasticlib/reference/enchantments.txt
+config/fantasticlib/reference/blockstates.txt
+config/fantasticlib/reference/blocks.txt
+config/enderio/enderio.cfg
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/AppliedEnergistics2/items.csv
+config/astralsorcery/amulet_enchantments.cfg
+config/customloadingscreen_timings.nbt
+config/replaymod.cfg
+config/replaymod-rendersettings.json
+config/jei/worldSettings.cfg

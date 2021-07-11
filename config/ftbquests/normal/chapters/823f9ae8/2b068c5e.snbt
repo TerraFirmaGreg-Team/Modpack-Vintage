@@ -11,13 +11,13 @@
 		uid: "5466dcd7",
 		type: "item",
 		items: [{
+			id: "tfc:food/sugarcane",
 			ForgeCaps: {
 				"tfc:food": {
-					traits: [],
-					creationDate: -9223372036854775808L
+					creationDate: -9223372036854775808L,
+					traits: []
 				}
-			},
-			id: "tfc:food/sugarcane"
+			}
 		}]
 	}]
 }

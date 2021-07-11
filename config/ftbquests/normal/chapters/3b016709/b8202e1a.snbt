@@ -1,13 +1,13 @@
 {
 	title: "{tfg.quests.lv.blackgold.title}",
 	icon: {
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		},
 		id: "forge:bucketfilled",
 		tag: {
 			FluidName: "oil",
 			Amount: 1000
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: -6.5d,

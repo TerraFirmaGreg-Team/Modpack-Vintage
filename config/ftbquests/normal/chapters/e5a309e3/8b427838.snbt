@@ -9,10 +9,10 @@
 		uid: "e5b15082",
 		type: "item",
 		items: [{
+			id: "prospectors:prospector_best",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "prospectors:prospector_best"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

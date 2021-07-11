@@ -1,13 +1,13 @@
 {
 	title: "{tfg.quests.primitive.meat.title}",
 	icon: {
+		id: "tfc:food/cooked_venison",
 		ForgeCaps: {
 			"tfc:food": {
-				traits: [],
-				creationDate: -9223372036854775808L
+				creationDate: -9223372036854775808L,
+				traits: []
 			}
-		},
-		id: "tfc:food/cooked_venison"
+		}
 	},
 	x: -21.0d,
 	y: -10.5d,
@@ -24,16 +24,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.meat.tasks.meat.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "categoryCookedMeat",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any categoryCookedMeat"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "categoryCookedMeat"
 				}
 			}
 		}]

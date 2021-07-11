@@ -1,13 +1,13 @@
 {
 	title: "{tfg.quests.hv.argon.title}",
 	icon: {
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		},
 		id: "forge:bucketfilled",
 		tag: {
 			FluidName: "argon",
 			Amount: 1000
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: 2.0d,

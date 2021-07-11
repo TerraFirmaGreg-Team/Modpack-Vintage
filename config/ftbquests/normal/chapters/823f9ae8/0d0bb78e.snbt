@@ -13,13 +13,13 @@
 		uid: "a39ca40f",
 		type: "item",
 		items: [{
+			id: "tfc:food/cheese",
 			ForgeCaps: {
 				"tfc:food": {
-					traits: [],
-					creationDate: -9223372036854775808L
+					creationDate: -9223372036854775808L,
+					traits: []
 				}
-			},
-			id: "tfc:food/cheese"
+			}
 		}]
 	}]
 }
