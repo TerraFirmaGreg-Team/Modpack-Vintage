@@ -1,11 +1,13 @@
 {
 	title: "{tfg.quests.space.end1.title}",
-	x: 3.5d,
-	y: -11.5d,
+	x: -3.0d,
+	y: -13.5d,
+	shape: "hexagon",
 	description: "{tfg.quests.space.end1.subtitle}",
 	dependencies: [
-		"551334df"
+		"665e5294"
 	],
+	size: 3.0d,
 	tasks: [{
 		uid: "ee12d99c",
 		type: "dimension",
@@ -16,10 +18,5 @@
 		uid: "7cb35474",
 		type: "item",
 		item: "gregtech:meta_item_1 1 10993"
-	},
-	{
-		uid: "aad4bdb6",
-		type: "xp_levels",
-		xp_levels: 1000
 	}]
 }

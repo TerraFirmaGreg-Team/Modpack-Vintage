@@ -1,6 +1,6 @@
 {
 	x: 15.0d,
-	y: -16.0d,
+	y: -17.0d,
 	description: "{tfg.quests.space.rocket2.subtitle}",
 	dependencies: [
 		"b9fc65e4",
@@ -8,15 +8,10 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "16680226",
+		uid: "6df00f2e",
 		type: "item",
 		items: [{
-			id: "galacticraftplanets:rocket_t2",
-			Damage: 3s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}],
-		ignore_nbt: 1b
+			item: "galacticraftplanets:mars 1 6"
+		}]
 	}]
 }

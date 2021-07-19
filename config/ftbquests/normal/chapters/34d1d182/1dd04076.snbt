@@ -1,6 +1,6 @@
 {
 	x: 3.0d,
-	y: -16.0d,
+	y: -17.0d,
 	description: "{tfg.quests.space.rocket4.subtitle}",
 	dependencies: [
 		"55d972c5",
@@ -8,15 +8,17 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "6416ee18",
+		uid: "043c9ed9",
 		type: "item",
 		items: [{
-			id: "extraplanets:item_tier4_rocket",
-			Damage: 3s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}],
-		ignore_nbt: 1b
+			item: "extraplanets:ceres"
+		}]
+	},
+	{
+		uid: "1233c8b6",
+		type: "item",
+		items: [{
+			item: "extraplanets:jupiter"
+		}]
 	}]
 }

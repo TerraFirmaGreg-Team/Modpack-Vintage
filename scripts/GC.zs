@@ -309,6 +309,81 @@ recipes.addShapeless (<galacticraftcore:food:1>, [<galacticraftcore:canister>, <
 
 //Светофакел
 recipes.addShapeless (<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
+//Small oxygen tank
+recipes.addShaped(<galacticraftcore:oxygen_tank_light_full:900>,
+[[<minecraft:dye:2>, <gregtech:meta_item_2:18183>, <minecraft:dye:2>],
+ [<gregtech:meta_item_1:12184>, <gregtech:machine:812>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>]]);
+//Medium oxygen tank
+recipes.addShaped(<galacticraftcore:oxygen_tank_med_full:1800>,
+[[<gregtech:meta_item_2:32415>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_2:32415>],
+ [<gregtech:meta_item_1:12184>, <gregtech:machine:813>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>]]);
+//Big oxygen tank
+recipes.addShaped(<galacticraftcore:oxygen_tank_heavy_full:2700>,
+[[<minecraft:dye:1>, <gregtech:meta_item_2:18183>, <minecraft:dye:1>],
+ [<gregtech:meta_item_1:12184>, <gregtech:machine:815>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:13072>, <gregtech:meta_item_1:13072>, <gregtech:meta_item_1:13072>]]);
+//Oxygen mask
+recipes.addShaped(<galacticraftcore:oxygen_mask>,
+[[<minecraft:glass_pane>, <gregtech:meta_item_1:15209>, <minecraft:glass_pane>],
+ [<gregtech:meta_item_1:13184>, <minecraft:leather_helmet>, <gregtech:meta_item_1:13184>],
+ [<minecraft:glass_pane>, <gregtech:meta_item_1:32766>, <minecraft:glass_pane>]]);
+//Oxygen gear
+recipes.addShaped(<galacticraftcore:oxygen_gear>,
+[[<gregtech:meta_item_1:12001>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:12001>],
+ [<gregtech:meta_item_1:12184>, <gregtech:machine:814>, <gregtech:meta_item_1:12184>],
+ [<gregtech:cable:7018>, <gregtech:meta_item_2:18183>, <gregtech:cable:7018>]]);
+//Oxygen detector
+recipes.addShaped(<galacticraftcore:oxygen_detector>,
+[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:32212>.withTag({Charge: 1000000 as long}), <gregtech:meta_item_1:32691>],
+ [<gregtech:cable:7018>, <gregtech:meta_item_1:12001>, <gregtech:cable:7018>]]);
+//Oxygen sealer
+recipes.addShaped(<galacticraftcore:sealer>,
+[[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>],
+ [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:32691>],
+ [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>]]);
+//Oxygen bubble distributor
+recipes.addShaped(<galacticraftcore:distributor>,
+[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:32611>, <gregtech:machine:503>, <gregtech:meta_item_1:32691>],
+ [<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>]]);
+//Oxygen collector
+recipes.addShaped(<galacticraftcore:collector>,
+[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_2:18183>, <gregtech:machine:503>, <gregtech:meta_item_1:32611>],
+ [<gregtech:meta_item_1:12001>, <gregtech:machine:814>, <gregtech:meta_item_1:12001>]]);
+//Oxygen compressor
+recipes.addShaped(<galacticraftcore:oxygen_compressor>,
+[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
+ [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32611>, <gregtech:meta_item_1:12184>]]);
+//Oxygen compressor 2
+recipes.addShaped(<extraplanets:advanced_oxygen_compressor>,
+[[<gregtech:meta_item_1:12072>, <gregtech:machine:815>, <gregtech:meta_item_1:12072>],
+ [<gregtech:machine:920>, <galacticraftcore:oxygen_compressor>, <gregtech:meta_item_1:32642>],
+ [<gregtech:meta_item_1:12072>, <gregtech:machine:503>, <gregtech:meta_item_1:12072>]]);
+//Oxygen compressor 3
+recipes.addShaped(<extraplanets:ultimate_oxygen_compressor>,
+[[<gregtech:meta_item_1:12074>, <gregtech:machine:815>, <gregtech:meta_item_1:12074>],
+ [<gregtech:meta_item_1:32643>, <extraplanets:advanced_oxygen_compressor>, <gregtech:meta_item_1:32613>],
+ [<gregtech:meta_item_1:12074>, <gregtech:machine:504>, <gregtech:meta_item_1:12074>]]);
+//Oxygen decompressor
+recipes.addShaped(<galacticraftcore:oxygen_compressor:4>,
+[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>],
+ [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
+ [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32691>, <gregtech:meta_item_1:12184>]]);
+//Oxygen decompressor 2
+recipes.addShaped(<extraplanets:advanced_oxygen_compressor:4>,
+[[<gregtech:meta_item_1:12072>, <ore:circuitAdvanced>, <gregtech:meta_item_1:12072>],
+ [<gregtech:meta_item_1:32613>, <galacticraftcore:oxygen_compressor:4>, <ore:rotorChrome>],
+ [<gregtech:meta_item_1:12072>, <gregtech:machine:503>, <gregtech:meta_item_1:12072>]]);
+//Oxygen decompressor 3
+recipes.addShaped(<extraplanets:ultimate_oxygen_compressor:4>,
+[[<gregtech:meta_item_1:12074>, <ore:circuitExtreme>, <gregtech:meta_item_1:12074>],
+ [<gregtech:meta_item_1:32613>, <extraplanets:advanced_oxygen_compressor:4>, <ore:rotorTitanium>],
+ [<gregtech:meta_item_1:12074>, <gregtech:machine:504>, <gregtech:meta_item_1:12074>]]);
 //Жидкостный манипулятор
 recipes.addShaped(<galacticraftplanets:item_basic_mars:6>,
 [[<ore:plateIron>, <ore:rotorSteel>, <ore:plateIron>],
@@ -1063,7 +1138,6 @@ blast_furnace.recipeBuilder()
 	.EUt(700)
 	.buildAndRegister();
 //Tier 5
-/*
 blast_furnace.recipeBuilder()
 	.inputs([<gregtech:meta_item_1:12047>*3, <contenttweaker:part_plate_basic>*1])
 	.outputs(<extraplanets:tier5_items:3>*3)
@@ -1111,7 +1185,6 @@ blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(1060)
 	.buildAndRegister();
-*/
 //ADD CRAFT FOR ROCKETS 1-10TIER
 //Tier 1
 assembler.recipeBuilder()
@@ -1141,7 +1214,6 @@ assembler.recipeBuilder()
   .duration(2500)
   .EUt(400)
   .buildAndRegister();
-/*
 //Tier 5
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier5_items:3>*42, <extraplanets:schematic_tier5>, <gregtech:frame_titanium>*22, <gregtech:machine:815>*4, <ore:chest>*3, <extraplanets:tier5_items>, <extraplanets:tier5_items:2>*4, <extraplanets:tier5_items:1>*4, <extraplanets:nose_cone_tier5>)
@@ -1184,7 +1256,6 @@ assembler.recipeBuilder()
   .duration(5500)
   .EUt(750)
   .buildAndRegister();
-*/
 //Слой броня 1
 compressor.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:13001>*4)

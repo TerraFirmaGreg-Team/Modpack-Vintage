@@ -1,9 +1,9 @@
 {
-	x: 4.5d,
+	x: 6.0d,
 	y: -4.5d,
 	description: "{tfg.quests.space.lvl2solarpanel.subtitle}",
 	dependencies: [
-		"bbf8a781"
+		"9588dff3"
 	],
 	tasks: [{
 		uid: "8d13d487",

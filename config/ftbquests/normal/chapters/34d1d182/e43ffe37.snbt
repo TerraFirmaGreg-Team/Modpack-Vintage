@@ -1,6 +1,6 @@
 {
 	x: 9.0d,
-	y: -16.0d,
+	y: -17.0d,
 	description: "{tfg.quests.space.rocket3.subtitle}",
 	dependencies: [
 		"422ff0c3",
@@ -8,15 +8,30 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "6b7abb23",
+		uid: "ef68f403",
 		type: "item",
 		items: [{
-			id: "galacticraftplanets:rocket_t3",
-			Damage: 3s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}],
-		ignore_nbt: 1b
+			item: "galacticraftplanets:asteroids_block"
+		},
+		{
+			item: "galacticraftplanets:asteroids_block 1 1"
+		},
+		{
+			item: "galacticraftplanets:asteroids_block 1 2"
+		}]
+	},
+	{
+		uid: "bfe7affd",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:venus"
+		}]
+	},
+	{
+		uid: "7df1f3ec",
+		type: "item",
+		items: [{
+			item: "extraplanets:mercury"
+		}]
 	}]
 }

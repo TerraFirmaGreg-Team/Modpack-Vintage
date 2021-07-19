@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.tier3Nspacesuit.title}",
 	x: 13.0d,
-	y: -16.5d,
+	y: -17.5d,
 	dependencies: [
 		"e4e7bcbf"
 	],

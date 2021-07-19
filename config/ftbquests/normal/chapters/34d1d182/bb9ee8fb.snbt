@@ -9,10 +9,7 @@
 		uid: "1276e4bf",
 		type: "item",
 		items: [{
-			id: "galacticraftcore:flag",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "galacticraftcore:flag"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

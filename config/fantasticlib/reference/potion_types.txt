@@ -35,13 +35,13 @@ minecraft:strong_strength
 minecraft:weakness
 minecraft:long_weakness
 minecraft:luck
-enderio:confusion
-enderio:long_confusion
 enderio:withering
 enderio:long_withering
 enderio:floating
 enderio:strong_floating
 enderio:long_floating
+enderio:confusion
+enderio:long_confusion
 potioncore:saturation
 potioncore:strong_saturation
 potioncore:wither

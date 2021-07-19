@@ -139,7 +139,6 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
-computercraft:turtle_player
 davincisvessels:ship
 davincisvessels:seat
 davincisvessels:parachute
@@ -156,18 +155,10 @@ tfcthings:slingstonemetallight
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
+enderio:owl_egg
 enderio:primed_charge
 enderio:falling_machine
-enderio:owl_egg
 dynamictrees:falling_tree
-warpdrive:entityspheregenerator
-warpdrive:entity_star_sore
-warpdrive:entity_camera
-warpdrive:entity_particle_bunch
-warpdrive:entity_laser_exploder
-warpdrive:entity_npc
-warpdrive:entity_offline_avatar
-warpdrive:entity_seat
 p455w0rdslib:sitting_entity
 forestry:cart.beehouse
 forestry:cart.apiary

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.tier4spacesuit.title}",
-	x: 4.5d,
-	y: -16.5d,
+	x: 5.0d,
+	y: -17.5d,
 	description: "{tfg.quests.space.tier4spacesuit.subtitle}",
 	dependencies: [
 		"ac268f75"
@@ -12,10 +12,7 @@
 		items: [{
 			id: "extraplanets:tier4_space_suit_boots",
 			Damage: 100s,
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -26,10 +23,7 @@
 		items: [{
 			id: "extraplanets:tier4_space_suit_legings",
 			Damage: 100s,
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -40,10 +34,7 @@
 		items: [{
 			id: "extraplanets:tier4_space_suit_helmet",
 			Damage: 100s,
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -54,10 +45,7 @@
 		items: [{
 			id: "extraplanets:tier4_space_suit_chest",
 			Damage: 100s,
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

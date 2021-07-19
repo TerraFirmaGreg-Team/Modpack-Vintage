@@ -202,3 +202,127 @@ recipes.addShaped(<enderio:item_conduit_facade:3>*3,
 [[null, <ore:plateNeodymiumMagnetic>, null],
  [<ore:plateNeodymiumMagnetic>, <enderio:item_conduit_facade:2>, <ore:plateNeodymiumMagnetic>],
  [null, <ore:plateNeodymiumMagnetic>, null]]); 
+
+//Basic item filter
+recipes.addShaped(<enderio:item_basic_item_filter>, 
+[[null, <ore:paper>, null],
+ [<ore:paper>, <minecraft:hopper>, <ore:paper>],
+ [null, <ore:paper>, null]]);
+ 
+//Advanced item filter
+recipes.addShaped(<enderio:item_advanced_item_filter>, 
+[[<ore:cableGtSingleRedAlloy>, <ore:paper>, <ore:cableGtSingleRedAlloy>],
+ [<ore:paper>, <ore:circuitGood>, <ore:paper>],
+ [<ore:cableGtSingleRedAlloy>, <ore:paper>, <ore:cableGtSingleRedAlloy>]]);
+ 
+//Limited item filter
+recipes.addShaped(<enderio:item_limited_item_filter>, 
+[[<minecraft:comparator>, <enderio:item_advanced_item_filter>, <minecraft:comparator>]]);
+ 
+//Big item filter
+recipes.addShaped(<enderio:item_big_item_filter>, 
+[[<ore:dustObsidian>, <ore:paper>, <ore:dustObsidian>],
+ [<ore:paper>, <ore:circuitAdvanced>, <ore:paper>],
+ [<ore:dustObsidian>, <ore:paper>, <ore:dustObsidian>]]);
+ 
+//Advanced big intem filter
+recipes.addShaped(<enderio:item_big_advanced_item_filter>, 
+[[null, <minecraft:shulker_shell>, null],
+ [null, <enderio:item_advanced_item_filter>, null],
+ [null, <minecraft:shulker_shell>, null]]);
+ 
+//Existing item filter
+recipes.addShaped(<enderio:item_existing_item_filter>, 
+[[null, <ore:cableGtSingleRedAlloy>, null],
+ [<ore:cableGtSingleRedAlloy>, <enderio:item_advanced_item_filter>, <ore:cableGtSingleRedAlloy>],
+ [null, <minecraft:comparator>, null]]);
+ 
+//Mod item filter
+recipes.addShaped(<enderio:item_mod_item_filter>, 
+[[null, <ore:paper>, null],
+ [<ore:paper>, <enderio:item_yeta_wrench>, <ore:paper>],
+ [null, <ore:paper>, null]]);
+ 
+//Power item filter
+recipes.addShaped(<enderio:item_power_item_filter>, 
+[[null, <ore:paper>, null],
+ [<ore:paper>, <gregtech:machine:714>, <ore:paper>],
+ [null, <ore:paper>, null]]);
+ 
+//Fluid filter
+recipes.addShaped(<enderio:item_fluid_filter>, 
+[[null, <ore:paper>, null],
+ [<ore:paper>, <minecraft:bucket>, <ore:paper>],
+ [null, <ore:paper>, null]]);
+ 
+//Redstone filter base
+recipes.addShaped(<enderio:item_material:60>, 
+[[<ore:cableGtSingleRedAlloy>, <ore:paper>, <ore:cableGtSingleRedAlloy>],
+ [<ore:paper>, <ore:foilNeodymiumMagnetic>, <ore:paper>],
+ [<ore:cableGtSingleRedAlloy>, <ore:paper>, <ore:cableGtSingleRedAlloy>]]);
+ 
+//NOT filter
+recipes.addShaped(<enderio:item_redstone_not_filter>, 
+[[<minecraft:redstone_torch>, <enderio:item_material:60>, <ore:cableGtSingleRedAlloy>]]);
+ 
+//OR filter
+recipes.addShaped(<enderio:item_redstone_or_filter>, 
+[[null, <minecraft:redstone_torch>, null],
+ [null, <enderio:item_material:60>, null],
+ [null, <minecraft:redstone_torch>, null]]);
+ 
+//AND filter
+recipes.addShaped(<enderio:item_redstone_and_filter>, 
+[[null, <ore:cableGtSingleRedAlloy>, null],
+ [null, <enderio:item_material:60>, null],
+ [null, <ore:cableGtSingleRedAlloy>, null]]);
+ 
+//NOR filter
+recipes.addShaped(<enderio:item_redstone_nor_filter>, 
+[[<enderio:item_redstone_or_filter>, <minecraft:redstone_torch>, null]]);
+ 
+//NAND filter
+recipes.addShaped(<enderio:item_redstone_nand_filter>, 
+[[<enderio:item_redstone_and_filter>, <minecraft:redstone_torch>, null]]);
+ 
+//XOR filter
+recipes.addShaped(<enderio:item_redstone_xor_filter>, 
+[[<ore:cableGtSingleRedAlloy>, <minecraft:redstone_torch>, <ore:cableGtSingleRedAlloy>],
+ [<ore:cableGtSingleRedAlloy>, <enderio:item_material:60>, <ore:cableGtSingleRedAlloy>],
+ [<ore:cableGtSingleRedAlloy>, <minecraft:redstone_torch>, <ore:cableGtSingleRedAlloy>]]);
+ 
+//XNOR filter
+recipes.addShaped(<enderio:item_redstone_xnor_filter>, 
+[[<enderio:item_redstone_xor_filter>, <minecraft:redstone_torch>, null]]);
+ 
+//Toggle latch filter
+recipes.addShaped(<enderio:item_redstone_toggle_filter>, 
+[[<minecraft:lever>, <enderio:item_material:60>, <ore:craftingRedstoneTorch>]]);
+ 
+//Counting filter
+recipes.addShaped(<enderio:item_redstone_counting_filter>, 
+[[<ore:cableGtSingleRedAlloy>, <ore:cableGtSingleRedAlloy>, null],
+ [<ore:cableGtSingleRedAlloy>, <enderio:item_material:60>, <ore:craftingRedstoneTorch>],
+ [<ore:cableGtSingleRedAlloy>, <ore:cableGtSingleRedAlloy>, null]]);
+ 
+//Sensor filter
+recipes.addShaped(<enderio:item_redstone_sensor_filter>, 
+[[null, null, <ore:cableGtSingleRedAlloy>],
+ [<minecraft:comparator>, <enderio:item_material:60>, <ore:craftingRedstoneTorch>],
+ [null, null, <ore:cableGtSingleRedAlloy>]]);
+ 
+//Timer filter
+recipes.addShaped(<enderio:item_redstone_timer_filter>, 
+[[<ore:cableGtSingleRedAlloy>, <enderio:item_material:60>, <minecraft:clock>]]);
+
+//SPEEDUP Upgrade
+recipes.addShaped(<enderio:item_extract_speed_upgrade>, 
+[[null, <appliedenergistics2:material:30>, null],
+ [null, <enderio:item_basic_item_filter>, null],
+ [null, <appliedenergistics2:material:30>, null]]);
+ 
+//NOT SPEEDUP Upgrade
+recipes.addShaped(<enderio:item_extract_speed_downgrade>*3, 
+[[null, <appliedenergistics2:material:24>, null],
+ [null, <enderio:item_basic_item_filter>, null],
+ [null, <appliedenergistics2:material:24>, null]]);
