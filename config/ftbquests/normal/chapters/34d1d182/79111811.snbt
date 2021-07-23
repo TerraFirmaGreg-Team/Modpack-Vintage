@@ -10,7 +10,11 @@
 		uid: "2b9dc54e",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:rocket_t1 1 3"
+			id: "galacticraftcore:rocket_t1",
+			Damage: 3s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

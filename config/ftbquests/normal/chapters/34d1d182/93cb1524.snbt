@@ -12,7 +12,10 @@
 		items: [{
 			id: "extraplanets:tier2_space_suit_helmet",
 			Damage: 100s,
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -23,7 +26,10 @@
 		items: [{
 			id: "extraplanets:tier2_space_suit_chest",
 			Damage: 100s,
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -34,7 +40,10 @@
 		items: [{
 			id: "extraplanets:tier2_space_suit_legings",
 			Damage: 100s,
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -45,7 +54,10 @@
 		items: [{
 			id: "extraplanets:tier2_space_suit_boots",
 			Damage: 100s,
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -147,10 +147,10 @@ tfg.quests.primitive.salisMundus.subtitle=Cover the bookshelf in magic salt.
 tfg.quests.primitive.thaumonomicon=You're a wizard, Harry.
 
 tfg.quests.primitive.tin.title=Tin
-tfg.quests.primitive.tin.subtitle=Get more. This isn't enough.
+tfg.quests.primitive.tin.subtitle=Get more. This isn't enough. To break it, break the block under it.
 
 tfg.quests.primitive.copper.title=Copper
-tfg.quests.primitive.copper.subtitle=Search for copper piles on the ground.
+tfg.quests.primitive.copper.subtitle=Search for copper piles on the ground. To break it, break the block under it.
 
 tfg.quests.primitive.greenpeace.title=*knock* *knock* *knock* Greenpeace, open up!
 tfg.quests.primitive.greenpeace.subtitle=Need more logs. MORE LOGS FOR THE CHARCOAL GODS.
@@ -860,13 +860,3 @@ tfg.quests.space.rocket10.subtitle=The Company does not take responsibility for 
 
 tfg.quests.space.end1.title=The End
 tfg.quests.space.end1.subtitle=You won. Go home.
-
-tfg.quests.space.end2.subtitle=You won again.
-
-tfg.quests.space.wpshuttlecore.title=Build the Enterprise
-tfg.quests.space.wpshuttlecore.subtitle=Rockets suck, surprise Elon by building a space ship!
-
-tfg.quests.space.wpaircans.title=Like the ones in GC, but better.
-tfg.quests.space.wpaircans.subtitle=Want to breathe in Warp Drive space?
-
-tfg.quests.space.wpspace.subtitle=Now put on a GC space suit or a nano/quantum armour set and start adventuring!

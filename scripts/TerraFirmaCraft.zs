@@ -251,7 +251,15 @@ recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:crafting
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
-recipes.addShapeless(<gregtech:meta_item_1:2095>*10, [<ore:dustTin>*1, <ore:dustCopper>*9]);
+recipes.addShapeless(<gregtech:meta_item_1:2095>*10, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+mixer.findRecipe(8, [<gregtech:meta_item_1:2018>*3, <gregtech:meta_item_1:2071>], null).remove();
+mixer.findRecipe(8, [<gregtech:meta_item_1:1018>*3, <gregtech:meta_item_1:1071>], null).remove();
+large_mixer.findRecipe(8, [<gregtech:meta_item_1:2018>*3, <gregtech:meta_item_1:2071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();
+large_mixer.findRecipe(8, [<gregtech:meta_item_1:1018>*3, <gregtech:meta_item_1:1071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();
+mixer.recipeBuilder().inputs(<gregtech:meta_item_1:2018>*9, <gregtech:meta_item_1:2071>).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();
+mixer.recipeBuilder().inputs(<gregtech:meta_item_1:1018>*9, <gregtech:meta_item_1:1071>).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();	
+large_mixer.recipeBuilder().inputs(<gregtech:meta_item_1:2018>*9, <gregtech:meta_item_1:2071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();
+large_mixer.recipeBuilder().inputs(<gregtech:meta_item_1:1018>*9, <gregtech:meta_item_1:1071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();	
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
@@ -798,6 +806,9 @@ Anvil.addRecipe("tfc:hammer_head/CopperF", <ore:ingotCopper>, <tfc:metal/hammer_
 Anvil.addRecipe("tfc:hammer_head/BismuthBronzeF", <ore:ingotBismuthBronze>, <gregtech:meta_item_2:5230>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BlackBronzeF", <ore:ingotBlackBronze>, <gregtech:meta_item_2:5229>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BronzeF", <ore:ingotBronze>, <gregtech:meta_item_2:5095>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+//Осуждаю
+Anvil.addRecipe("tfc:hammer_head/IronF", <ore:ingotIron>, <gregtech:meta_item_2:5033>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+//
 Anvil.addRecipe("tfc:hammer_head/WroughtIronF", <ore:ingotWroughtIron>, <gregtech:meta_item_2:5197>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/SteelF", <ore:ingotSteel>, <gregtech:meta_item_2:5184>, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BlackSteelF", <ore:ingotBlackSteel>, <gregtech:meta_item_2:5231>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");

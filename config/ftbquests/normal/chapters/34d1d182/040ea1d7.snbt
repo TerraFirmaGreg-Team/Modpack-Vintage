@@ -1,6 +1,7 @@
 {
 	x: 1.5d,
 	y: -5.5d,
+	description: "{tfg.quests.space.compressor.subtitle}",
 	dependencies: [
 		"f728ff59"
 	],

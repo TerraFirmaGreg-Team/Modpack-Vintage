@@ -8,7 +8,10 @@
 		uid: "f5b97e1b",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:parachute"
+			id: "galacticraftcore:parachute",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

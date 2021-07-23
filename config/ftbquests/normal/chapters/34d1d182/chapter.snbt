@@ -1,6 +1,11 @@
 {
 	title: "{tfg.quests.space.era.title}",
-	icon: "galacticraftcore:rocket_t1",
+	icon: {
+		id: "galacticraftcore:rocket_t1",
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"

@@ -10,7 +10,10 @@
 		uid: "594ef794",
 		type: "item",
 		items: [{
-			item: "extraplanets:tier4_thermal_padding"
+			id: "extraplanets:tier4_thermal_padding",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -18,7 +21,11 @@
 		uid: "94c2b9c8",
 		type: "item",
 		items: [{
-			item: "extraplanets:tier4_thermal_padding 1 3"
+			id: "extraplanets:tier4_thermal_padding",
+			Damage: 3s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -26,7 +33,11 @@
 		uid: "b79b4a80",
 		type: "item",
 		items: [{
-			item: "extraplanets:tier4_thermal_padding 1 2"
+			id: "extraplanets:tier4_thermal_padding",
+			Damage: 2s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -34,7 +45,11 @@
 		uid: "f6a693f6",
 		type: "item",
 		items: [{
-			item: "extraplanets:tier4_thermal_padding 1 1"
+			id: "extraplanets:tier4_thermal_padding",
+			Damage: 1s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

@@ -293,7 +293,8 @@ global ItemsToRemoveGC as IItemStack[] = [
 	<extraplanets:tier7_items:2>,
 	<extraplanets:tier8_items:2>,
 	<extraplanets:tier9_items:2>,
-	<extraplanets:tier10_items:2>
+	<extraplanets:tier10_items:2>,
+	<galacticraftcore:basic_item:19>
 ] as IItemStack[];
 for item in ItemsToRemoveGC{
     recipes.remove(item);
@@ -337,7 +338,7 @@ recipes.addShaped(<galacticraftcore:oxygen_gear>,
 //Oxygen detector
 recipes.addShaped(<galacticraftcore:oxygen_detector>,
 [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:32212>.withTag({Charge: 1000000 as long}), <gregtech:meta_item_1:32691>],
+ [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:32691>],
  [<gregtech:cable:7018>, <gregtech:meta_item_1:12001>, <gregtech:cable:7018>]]);
 //Oxygen sealer
 recipes.addShaped(<galacticraftcore:sealer>,
@@ -495,10 +496,9 @@ recipes.addShaped(<galacticraftcore:air_vent>,
  [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>],
  [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>]]);
 //частотный модуль
-recipes.remove(<galacticraftcore:basic_item:19>);
 recipes.addShaped(<galacticraftcore:basic_item:19>,
 [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32692>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_2:32507>, <ore:cableGtSingleRedAlloy>, <gregtech:meta_item_2:32507>],
+ [<ore:circuitBasic>, <ore:cableGtSingleRedAlloy>, <ore:circuitBasic>],
  [<gregtech:meta_item_2:32483>, <gregtech:meta_item_2:32481>, <gregtech:meta_item_2:32483>]]);
 //тепло шлем
 recipes.addShaped(<galacticraftplanets:thermal_padding>,
