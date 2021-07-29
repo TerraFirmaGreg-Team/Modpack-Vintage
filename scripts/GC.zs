@@ -86,7 +86,19 @@ global ItemsToRemoveGCJEI as IItemStack[] = [
 	<extraplanets:canned_food:3>,
 	<galacticraftcore:food:2>,
 	<galacticraftcore:food:3>,
-	<galacticraftcore:food:6>
+	<galacticraftcore:food:6>,
+	<galacticraftcore:canister:1>,
+	<galacticraftcore:machine2:8>,
+	<galacticraftcore:basic_item:3>,
+	<galacticraftcore:basic_item:4>,
+	<galacticraftcore:basic_item:5>,
+	<galacticraftcore:basic_block_core:9>,
+	<galacticraftcore:basic_block_core:10>,
+	<galacticraftcore:basic_block_core:11>,
+	<galacticraftcore:oxygen_tank_light_full>,
+	<galacticraftcore:oxygen_tank_med_full>,
+	<galacticraftcore:oxygen_tank_heavy_full>,
+	<galacticraftcore:infinite_oxygen>
 ] as IItemStack[];
 for item in ItemsToRemoveGCJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -294,11 +306,170 @@ global ItemsToRemoveGC as IItemStack[] = [
 	<extraplanets:tier8_items:2>,
 	<extraplanets:tier9_items:2>,
 	<extraplanets:tier10_items:2>,
-	<galacticraftcore:basic_item:19>
+	<galacticraftcore:basic_item:19>,
+	<extraplanets:oxygen_tank_light_full_cyan:*>,
+	<extraplanets:oxygen_tank_light_full_purple:*>,
+	<extraplanets:oxygen_tank_light_full_blue:*>,
+	<extraplanets:oxygen_tank_light_full_brown:*>,
+	<extraplanets:oxygen_tank_light_full_green:*>,
+	<extraplanets:oxygen_tank_light_full_red:*>,
+	<extraplanets:oxygen_tank_light_full_black:*>,
+	<extraplanets:oxygen_tank_extremely_heavy_full:*>,
+	<extraplanets:oxygen_tank_very_heavy_full:*>,
+	<extraplanets:oxygen_tank_heavy_full_brown:*>,
+	<extraplanets:oxygen_tank_heavy_full_green:*>,
+	<extraplanets:oxygen_tank_heavy_full_lime:*>,
+	<extraplanets:oxygen_tank_heavy_full_black:*>,
+	<extraplanets:oxygen_tank_med_full_white:*>,
+	<extraplanets:oxygen_tank_med_full_lime:*>,
+	<extraplanets:oxygen_tank_med_full_magenta:*>,
+	<extraplanets:oxygen_tank_med_full_light_blue:*>,
+	<extraplanets:oxygen_tank_med_full_yellow:*>,
+	<extraplanets:oxygen_tank_med_full_pink:*>,
+	<extraplanets:oxygen_tank_med_full_gray:*>,
+	<extraplanets:oxygen_tank_med_full_light_gray:*>,
+	<extraplanets:oxygen_tank_med_full_cyan:*>,
+	<extraplanets:oxygen_tank_med_full_purple:*>,
+	<extraplanets:oxygen_tank_med_full_blue:*>,
+	<extraplanets:oxygen_tank_med_full_brown:*>,
+	<extraplanets:oxygen_tank_med_full_green:*>,
+	<extraplanets:oxygen_tank_med_full_red:*>,
+	<extraplanets:oxygen_tank_med_full_black:*>,
+	<extraplanets:oxygen_tank_light_full_white:*>,
+	<extraplanets:oxygen_tank_light_full_orange:*>,
+	<extraplanets:oxygen_tank_light_full_magenta:*>,
+	<extraplanets:oxygen_tank_light_full_light_blue:*>,
+	<extraplanets:oxygen_tank_light_full_yellow:*>,
+	<extraplanets:oxygen_tank_light_full_pink:*>,
+	<extraplanets:oxygen_tank_light_full_gray:*>,
+	<extraplanets:oxygen_tank_light_full_light_gray:*>,
+	<extraplanets:oxygen_tank_heavy_full_purple:*>,
+	<extraplanets:oxygen_tank_heavy_full_magenta:*>,
+	<extraplanets:oxygen_tank_heavy_full_light_blue:*>,
+	<extraplanets:oxygen_tank_heavy_full_yellow:*>,
+	<extraplanets:oxygen_tank_heavy_full_pink:*>,
+	<extraplanets:oxygen_tank_heavy_full_gray:*>,
+	<extraplanets:oxygen_tank_heavy_full_light_gray:*>,
+	<extraplanets:oxygen_tank_heavy_full_cyan:*>,
+	<extraplanets:oxygen_tank_heavy_full_blue:*>,
+	<extraplanets:oxygen_tank_heavy_full_white:*>,
+	<extraplanets:oxygen_tank_heavy_full_orange:*>,
+	<extraplanets:kepler22b_planks>,
+	<extraplanets:kepler22b_planks:1>,
+	<extraplanets:kepler22b_planks:2>,
+	<extraplanets:kepler22b_planks:3>,
+	<extraplanets:kepler22b_planks:4>,
+	<extraplanets:kepler22b_planks:5>,
+	<extraplanets:tier11_items:7>,
+	<extraplanets:tier11_items:8>,
+	<extraplanets:tier11_items:9>,
+	<extraplanets:tier11_items:10>,
+	<extraplanets:tier11_items:11>,
+	<extraplanets:tier11_items:12>
 ] as IItemStack[];
 for item in ItemsToRemoveGC{
     recipes.remove(item);
 }
+
+//Баллоны
+//Легкий
+assembler.recipeBuilder().inputs(<gregtech:machine:812>*2, <enderio:item_liquid_conduit:1>*4, <extraplanets:tier1_pressure_layer>*2).outputs(<extraplanets:oxygen_tank_light_full_white:900>).duration(1000).EUt(128).buildAndRegister();
+//Средний
+assembler.recipeBuilder().inputs(<gregtech:machine:813>*2, <enderio:item_liquid_conduit:1>*4, <extraplanets:tier2_pressure_layer>*2).outputs(<extraplanets:oxygen_tank_med_full_white:1800>).duration(1000).EUt(256).buildAndRegister();
+//Тяжелый
+assembler.recipeBuilder().inputs(<gregtech:machine:814>*2, <enderio:item_liquid_conduit:1>*4, <extraplanets:tier3_pressure_layer>*2).outputs(<extraplanets:oxygen_tank_heavy_full_white:2700>).duration(1000).EUt(512).buildAndRegister();
+//Очень большой
+assembler.recipeBuilder().inputs(<gregtech:machine:815>*2, <enderio:item_liquid_conduit:1>*4, <extraplanets:tier4_pressure_layer>*2).outputs(<extraplanets:oxygen_tank_very_heavy_full:7200>).duration(1000).EUt(1024).buildAndRegister();
+//Чрезвычайно большой
+assembler.recipeBuilder().inputs(<gregtech:machine:816>*2, <enderio:item_liquid_conduit:1>*4, <contenttweaker:part_plate_elite>*4).outputs(<extraplanets:oxygen_tank_extremely_heavy_full:9000>).duration(1000).EUt(2048).buildAndRegister();
+//Покраска баллонов
+//Легкий
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32444>).outputs(<extraplanets:oxygen_tank_light_full_gray:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32446>).outputs(<extraplanets:oxygen_tank_light_full_light_gray:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32448>).outputs(<extraplanets:oxygen_tank_light_full_cyan:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32450>).outputs(<extraplanets:oxygen_tank_light_full_purple:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32452>).outputs(<extraplanets:oxygen_tank_light_full_blue:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32454>).outputs(<extraplanets:oxygen_tank_light_full_brown:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32456>).outputs(<extraplanets:oxygen_tank_light_full_green:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32458>).outputs(<extraplanets:oxygen_tank_light_full_red:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32460>).outputs(<extraplanets:oxygen_tank_light_full_black:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32432>).outputs(<extraplanets:oxygen_tank_light_full_orange:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32434>).outputs(<extraplanets:oxygen_tank_light_full_magenta:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32436>).outputs(<extraplanets:oxygen_tank_light_full_light_blue:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32438>).outputs(<extraplanets:oxygen_tank_light_full_yellow:900>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_light_full_white:*>, <gregtech:meta_item_1:32442>).outputs(<extraplanets:oxygen_tank_light_full_pink:900>).duration(250).EUt(128).buildAndRegister();
+//Средний
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32444>).outputs(<extraplanets:oxygen_tank_med_full_gray:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32448>).outputs(<extraplanets:oxygen_tank_med_full_cyan:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32450>).outputs(<extraplanets:oxygen_tank_med_full_purple:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32452>).outputs(<extraplanets:oxygen_tank_med_full_blue:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32454>).outputs(<extraplanets:oxygen_tank_med_full_brown:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32456>).outputs(<extraplanets:oxygen_tank_med_full_green:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32458>).outputs(<extraplanets:oxygen_tank_med_full_red:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32460>).outputs(<extraplanets:oxygen_tank_med_full_black:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32434>).outputs(<extraplanets:oxygen_tank_med_full_magenta:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32438>).outputs(<extraplanets:oxygen_tank_med_full_yellow:1800>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_med_full_white:*>, <gregtech:meta_item_1:32442>).outputs(<extraplanets:oxygen_tank_med_full_pink:1800>).duration(250).EUt(128).buildAndRegister();
+//Тяжелый
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32444>).outputs(<extraplanets:oxygen_tank_heavy_full_gray:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32448>).outputs(<extraplanets:oxygen_tank_heavy_full_cyan:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32450>).outputs(<extraplanets:oxygen_tank_heavy_full_purple:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32452>).outputs(<extraplanets:oxygen_tank_heavy_full_blue:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32454>).outputs(<extraplanets:oxygen_tank_heavy_full_brown:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32456>).outputs(<extraplanets:oxygen_tank_heavy_full_green:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32460>).outputs(<extraplanets:oxygen_tank_heavy_full_black:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32432>).outputs(<extraplanets:oxygen_tank_heavy_full_orange:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32434>).outputs(<extraplanets:oxygen_tank_heavy_full_magenta:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32438>).outputs(<extraplanets:oxygen_tank_heavy_full_yellow:2700>).duration(250).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs(<extraplanets:oxygen_tank_heavy_full_white:*>, <gregtech:meta_item_1:32442>).outputs(<extraplanets:oxygen_tank_heavy_full_pink:2700>).duration(250).EUt(128).buildAndRegister();
+
+//Фикс переработки дерева кеплера-22б
+//2 доски
+recipes.addShapeless(<extraplanets:kepler22b_planks>*2, [<extraplanets:kepler22b_maple_logs>]);
+recipes.addShapeless(<extraplanets:kepler22b_planks:1>*2, [<extraplanets:kepler22b_maple_logs:1>]);
+recipes.addShapeless(<extraplanets:kepler22b_planks:2>*2, [<extraplanets:kepler22b_maple_logs:2>]);
+recipes.addShapeless(<extraplanets:kepler22b_planks:3>*2, [<extraplanets:kepler22b_maple_logs:3>]);
+recipes.addShapeless(<extraplanets:kepler22b_planks:4>*2, [<extraplanets:kepler22b_maple_logs2>]);
+recipes.addShapeless(<extraplanets:kepler22b_planks:5>*2, [<extraplanets:kepler22b_maple_logs2:1>]);
+//4 доски
+recipes.addShaped(<extraplanets:kepler22b_planks>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs>, null],
+ [null, null, null]]);
+recipes.addShaped(<extraplanets:kepler22b_planks:1>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs:1>, null],
+ [null, null, null]]);
+recipes.addShaped(<extraplanets:kepler22b_planks:2>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs:2>, null],
+ [null, null, null]]);
+recipes.addShaped(<extraplanets:kepler22b_planks:3>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs:3>, null],
+ [null, null, null]]);
+recipes.addShaped(<extraplanets:kepler22b_planks:4>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs2>, null],
+ [null, null, null]]);
+recipes.addShaped(<extraplanets:kepler22b_planks:5>*4,
+[[null, <ore:craftingToolSaw>, null],
+ [null, <extraplanets:kepler22b_maple_logs2:1>, null],
+ [null, null, null]]);
+//2 палки
+recipes.addShaped(<extraplanets:tier11_items:12>*2, [[null, <extraplanets:kepler22b_planks:5>, null],[null, <extraplanets:kepler22b_planks:5>, null], [null, null, null]]);
+recipes.addShaped(<extraplanets:tier11_items:12>*2, [[null, <extraplanets:kepler22b_planks:5>, null],[null, <extraplanets:kepler22b_planks:5>, null], [null, null, null]]);
+recipes.addShaped(<extraplanets:tier11_items:11>*2, [[null, <extraplanets:kepler22b_planks:4>, null],[null, <extraplanets:kepler22b_planks:4>, null], [null, null, null]]);
+recipes.addShaped(<extraplanets:tier11_items:10>*2, [[null, <extraplanets:kepler22b_planks:3>, null],[null, <extraplanets:kepler22b_planks:3>, null], [null, null, null]]);
+recipes.addShaped(<extraplanets:tier11_items:9>*2, [[null, <extraplanets:kepler22b_planks:2>, null],[null, <extraplanets:kepler22b_planks:2>, null], [null, null, null]]);
+recipes.addShaped(<extraplanets:tier11_items:8>*2, [[null, <extraplanets:kepler22b_planks:1>, null],[null, <extraplanets:kepler22b_planks:1>, null], [null, null, null]]);
+//4 палки
+recipes.addShaped(<extraplanets:tier11_items:12>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks:5>, null], [null, <extraplanets:kepler22b_planks:5>, null]]);
+recipes.addShaped(<extraplanets:tier11_items:11>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks:4>, null], [null, <extraplanets:kepler22b_planks:4>, null]]);
+recipes.addShaped(<extraplanets:tier11_items:10>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks:3>, null], [null, <extraplanets:kepler22b_planks:3>, null]]);
+recipes.addShaped(<extraplanets:tier11_items:9>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks:2>, null], [null, <extraplanets:kepler22b_planks:2>, null]]);
+recipes.addShaped(<extraplanets:tier11_items:8>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks:1>, null], [null, <extraplanets:kepler22b_planks:1>, null]]);
+recipes.addShaped(<extraplanets:tier11_items:7>*4, [[null, <ore:craftingToolSaw>, null],[null, <extraplanets:kepler22b_planks>, null], [null, <extraplanets:kepler22b_planks>, null]]);
 
 //Еще минус рецепты
 furnace.remove(<minecraft:iron_ingot>);

@@ -137,23 +137,17 @@ assembler.recipeBuilder().inputs(<ore:plateBronze>*4, <ore:plateEmerald>*2, <ore
 //Веревочка
 recipes.addShapeless (<forestry:crafting_material:2>*3, [<ore:string>]);
 
-//Обычный корпус машины
+//Прочный корпус
 recipes.addShaped(<forestry:sturdy_machine>, 
-[[platebronze,screwsteel,platebronze],
- [screwsteel,null,screwsteel],
- [platebronze,screwsteel,platebronze]]);
-
-//Обычный корпус машины 2
-recipes.addShaped(<forestry:sturdy_machine>, 
-[[platebrass,screwsteel,platebrass],
- [screwsteel,null,screwsteel],
- [platebrass,screwsteel,platebrass]]);
+[[<ore:plateBrass>,<ore:screwSteel>,<ore:plateBrass>],
+ [<ore:screwSteel>,null,<ore:screwSteel>],
+ [<ore:plateBrass>,<ore:screwSteel>,<ore:plateBrass>]]);
 
 //Фабрикатор
 recipes.addShaped(<forestry:fabricator>, 
-[[ingotgold,glass,ingotgold],
- [glass,<forestry:sturdy_machine>,glass],
- [ingotgold,ingotaluminium,ingotgold]]);
+[[<ore:plateGold>, <ore:blockGlass>, <ore:plateGold>],
+ [<ore:blockGlass>, <forestry:sturdy_machine>, <ore:blockGlass>],
+ [<ore:plateGold>, <ore:cableGtSingleAluminium>, <ore:plateGold>]]);
 
 //Портативный анализатор
 recipes.addShaped(<forestry:portable_alyzer>,
