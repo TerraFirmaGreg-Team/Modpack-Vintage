@@ -73,8 +73,9 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:804>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:805>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10072>*10).EUt(500).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:806>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10235>*10).EUt(1560).duration(400).buildAndRegister();
 
-//Фикс инварового кейзинга
+//Фикс кейзингов
 recipes.removeByRecipeName("gregtech:casing_invar_heatproof");
+recipes.removeByRecipeName("gregtech:casing_aluminium_frostproof");
 
 //Лава из незерака
 fluid_extractor.recipeBuilder().inputs(<ore:netherrack>).fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();

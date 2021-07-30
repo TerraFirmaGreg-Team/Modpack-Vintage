@@ -1,6 +1,122 @@
-//Удаление рецептов
-//recipes.remove();
+import mods.gregtech.recipe.RecipeMap;
 
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+
+//Фикс сот с красителями
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:10>)
+	.chancedOutput(<gendustry:honey_drop:10>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:11>)
+	.chancedOutput(<gendustry:honey_drop:11>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:12>)
+	.chancedOutput(<gendustry:honey_drop:12>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:13>)
+	.chancedOutput(<gendustry:honey_drop:13>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:14>)
+	.chancedOutput(<gendustry:honey_drop:14>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:15>)
+	.chancedOutput(<gendustry:honey_drop:15>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:16>)
+	.chancedOutput(<gendustry:honey_drop:16>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:17>)
+	.chancedOutput(<gendustry:honey_drop:17>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:18>)
+	.chancedOutput(<gendustry:honey_drop:18>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:19>)
+	.chancedOutput(<gendustry:honey_drop:19>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:20>)
+	.chancedOutput(<gendustry:honey_drop:20>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:21>)
+	.chancedOutput(<gendustry:honey_drop:21>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:22>)
+	.chancedOutput(<gendustry:honey_drop:22>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:23>)
+	.chancedOutput(<gendustry:honey_drop:23>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:24>)
+	.chancedOutput(<gendustry:honey_drop:24>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+//Соты 
+centrifuge.recipeBuilder()
+	.inputs(<gendustry:honey_comb:25>)
+	.chancedOutput(<gendustry:honey_drop:25>, 10000, 0)
+	.chancedOutput(<forestry:beeswax>, 5000, 1000)
+	.chancedOutput(<forestry:honey_drop>, 3000, 750)
+	.duration(30).EUt(5).buildAndRegister();
+
+//Создание рецептов
 //Образец гена пустой
 recipes.addShaped(<gendustry:gene_sample_blank>, 
 [[null ,<ore:plateTin>, null],
