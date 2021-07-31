@@ -3,7 +3,7 @@
   "density": 0.4,
   "min_height": 55,
   "surface_stone_material": "quartzite",
-  "generation_predicate":["ore_dict:GenQuartzite"],
+  "generation_predicate":["ore_dict:GenRockSedimentary"],
 
   "generator": {
     "type": "ellipsoid",
