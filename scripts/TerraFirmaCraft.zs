@@ -210,7 +210,6 @@ for item in ItemsToRemoveTFCJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-
 //Добавление рецептов печи для еды TFC
 furnace.addRecipe(<tfc:food/cooked_beef>, <tfc:food/beef>);
 furnace.addRecipe(<tfc:food/cooked_pork>, <tfc:food/pork>);
@@ -251,15 +250,7 @@ recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:crafting
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
-recipes.addShapeless(<gregtech:meta_item_1:2095>*10, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-mixer.findRecipe(8, [<gregtech:meta_item_1:2018>*3, <gregtech:meta_item_1:2071>], null).remove();
-mixer.findRecipe(8, [<gregtech:meta_item_1:1018>*3, <gregtech:meta_item_1:1071>], null).remove();
-large_mixer.findRecipe(8, [<gregtech:meta_item_1:2018>*3, <gregtech:meta_item_1:2071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();
-large_mixer.findRecipe(8, [<gregtech:meta_item_1:1018>*3, <gregtech:meta_item_1:1071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();
-mixer.recipeBuilder().inputs(<gregtech:meta_item_1:2018>*9, <gregtech:meta_item_1:2071>).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();
-mixer.recipeBuilder().inputs(<gregtech:meta_item_1:1018>*9, <gregtech:meta_item_1:1071>).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();	
-large_mixer.recipeBuilder().inputs(<gregtech:meta_item_1:2018>*9, <gregtech:meta_item_1:2071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();
-large_mixer.recipeBuilder().inputs(<gregtech:meta_item_1:1018>*9, <gregtech:meta_item_1:1071>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})).outputs(<gregtech:meta_item_1:2095>).duration(200).EUt(8).buildAndRegister();	
+recipes.addShapeless(<gregtech:meta_item_1:2095>*9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");

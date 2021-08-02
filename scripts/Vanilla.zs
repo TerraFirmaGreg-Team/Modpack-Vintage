@@ -38,6 +38,7 @@ recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecart");
 recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
 recipes.removeByRecipeName("minecraft:tripwire_hook");
 recipes.removeByRecipeName("minecraft:stick");
+recipes.removeByRecipeName("tfc:vanilla/cauldron");
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<minecraft:furnace>);
 recipes.remove(<minecraft:jukebox>);
@@ -248,3 +249,9 @@ recipes.addShaped(<minecraft:bucket>,
 [[<ore:plateCurvedWroughtIron>, <tfc:metal/bucket/blue_steel>.noReturn(), <ore:plateCurvedWroughtIron>],
  [<ore:plateCurvedWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateCurvedWroughtIron>],
  [null, <ore:plateWroughtIron>, null]]);
+
+//Крусибл
+recipes.addShaped(<minecraft:cauldron>,
+[[<ore:plateIron>, null, <ore:plateIron>],
+ [<ore:plateIron>, null, <ore:plateIron>],
+ [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
