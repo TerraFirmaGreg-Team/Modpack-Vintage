@@ -11,6 +11,6 @@ recipes.addShaped(<waystones:waystone>,
 
 //Варп камушек
 recipes.addShaped(<waystones:warp_stone>,
-[[<astralsorcery:itemusabledust>, <ore:dustAstralStarmetal>, <astralsorcery:itemusabledust>],
- [<astralsorcery:itemexchangewand>, <ore:gemExquisiteRuby>, <astralsorcery:itemgrapplewand>],
- [<astralsorcery:itemusabledust>, <ore:dustAstralStarmetal>, <astralsorcery:itemusabledust>]]);
+[[<tfc:ore/lapis_lazuli>, <ore:plateIron>|<ore:plateWroughtIron>, <tfc:ore/lapis_lazuli>],
+ [<ore:plateIron>|<ore:plateWroughtIron>, <ore:gemExquisite>, <ore:plateIron>|<ore:plateWroughtIron>],
+ [<tfc:ore/lapis_lazuli>, <ore:plateIron>|<ore:plateWroughtIron>, <tfc:ore/lapis_lazuli>]]);

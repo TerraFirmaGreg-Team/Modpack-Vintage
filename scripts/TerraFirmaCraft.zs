@@ -1,4 +1,3 @@
-import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
@@ -10,27 +9,6 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.tfcdryingrack.Rack;
-
-val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val brewer as RecipeMap = RecipeMap.getByName("brewer");
-val chemical_plant as RecipeMap = RecipeMap.getByName("chemical_plant");
-val large_chemical_reactor as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
-val bio_reactor as RecipeMap = RecipeMap.getByName("bio_reactor");
-val large_mixer as RecipeMap = RecipeMap.getByName("large_mixer");
-val large_centrifuge as RecipeMap = RecipeMap.getByName("large_centrifuge");
-val distillery as RecipeMap = RecipeMap.getByName("distillery");
-val extractor as RecipeMap = RecipeMap.getByName("extractor");
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
-val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-val green_house as RecipeMap = RecipeMap.getByName("green_house");
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
-val fluid_heater as RecipeMap = RecipeMap.getByName("fluid_heater");
-val macerator as RecipeMap = RecipeMap.getByName("macerator");
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
 
 //Удаление + скрытие
 global ItemsToRemoveTFCJEI as IItemStack[] = [
@@ -204,7 +182,9 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/propick_head/blue_steel>,
 	<tfc:metal/propick_head/titanium>,
 	<tfc:metal/propick_head/tungsten>,
-	<tfc:metal/propick_head/red_steel>
+	<tfc:metal/propick_head/red_steel>,
+	//other
+	<tfctech:powder/potash>
 ] as IItemStack[];
 for item in ItemsToRemoveTFCJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -245,8 +225,11 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:green
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete:14>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();	
 
-//Капля меда
-recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+//Исправление крафта бумаги
+recipes.removeByRecipeName("tfc:paper");
+
+//Выпаривание соли
+Rack.addRecipe("tfc:saltfromsaltwater", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24, 1.0); 
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
@@ -379,6 +362,7 @@ green_house.recipeBuilder().inputs(<tfc:crop/seeds/tomato>, <gregtech:meta_item_
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/red_bell_pepper>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/red_bell_pepper>, <tfc:crop/seeds/red_bell_pepper>*2).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/yellow_bell_pepper>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/yellow_bell_pepper>, <tfc:crop/seeds/yellow_bell_pepper>*2).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/jute>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:crop/product/jute>, <tfc:crop/seeds/jute>*2).duration(2500).EUt(26).buildAndRegister();
+
 //Отключение ванильных крафтов через теплицу(без удобрения)
 //green_house.findRecipe(16, [<minecraft:potato>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:water>*2000]).remove();
 //green_house.findRecipe(16, [<minecraft:carrot>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:water>*2000]).remove();
@@ -452,7 +436,7 @@ recipes.removeByRecipeName("forestry:cake_can");
 recipes.removeByRecipeName("forestry:cake_capsule");
 recipes.removeByRecipeName("forestry:cake_refractory");
 //Отключение печенек
-compressor.findRecipe(2, [<minecraft:cookie>*9], null).remove();
+//compressor.findRecipe(2, [<minecraft:cookie>*9], null).remove();
 //Отключение свеклы
 brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:juice>*20]).remove();
@@ -581,7 +565,7 @@ centrifuge.recipeBuilder().inputs(<ore:grass>).chancedOutput(<gregtech:meta_item
 
 //Еда из GC
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
-ItemRegistry.registerFood(<extraplanets:canned_food>, 4, 0.0, 0.5, 0.5, 0, 0, 0, 1.0, 0.5);
+//ItemRegistry.registerFood(<extraplanets:canned_food>, 4, 0.0, 0.5, 0.5, 0, 0, 0, 1.0, 0.5);
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.3, 0.3, 0.5, 0, 0, 1.0, 0, 0.5);
 ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.1, 0.4, 0.5, 0, 1.0, 0, 0, 0.5);
 
@@ -664,16 +648,6 @@ ItemRegistry.registerFuel(<ore:fuelCoke>, 3200, 1450, true, true);
 ItemRegistry.registerFuel(<ore:gemCoal>, 1600, 1400, true, true);
 ItemRegistry.registerFuel(<ore:gemLignite>, 1200, 1300, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
-
-//Крафт стекла
-Heating.removeRecipe(<minecraft:glass>);
-recipes.addShapeless (<contenttweaker:glassmix>, [<ore:dustPotash>, <ore:sand>, <tfc:powder/flux>]);
-ItemRegistry.registerItemHeat(<contenttweaker:glassmix>, 0.7, 1000.0, false);
-Heating.addRecipe("tfc:glassmixtoglass", <contenttweaker:glassmix>, <minecraft:glass>, 700.0, 1000.0);
-recipes.addShapeless(<tfctech:pot_ash>, [<tfc:wood_ash>|<ore:dustAsh>, <tfc:wood_ash>|<ore:dustAsh>, <tfc:wood_ash>|<ore:dustAsh>, <tfc:wood_ash>|<ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
-recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
-recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
-recipes.addShapeless(<tfctech:powder/potash>*4, [<tfctech:pot_potash>]);
 
 //How water --> Dist
 Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled_water>*1, 6);
@@ -882,7 +856,6 @@ recipes.addShapeless (<tfcthings:crown/gold_jade>, [<ore:craftingToolHardHammer>
 
 //Фикс тулов
 //Удаление рецептов
-/*
 global ItemsToRemoveTFCTools as IItemStack[] = [
 	//Кирки
 	<tfc:metal/pick/tungsten>,
@@ -907,6 +880,7 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 	<tfc:metal/pick/blue_steel>,
 	<tfc:metal/pick/red_steel>,
 	//Топоры
+	/*
 	<tfc:metal/axe/tungsten>,
 	<tfc:metal/axe/titanium>,
 	<tfc:metal/axe/boron>,
@@ -927,7 +901,7 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 	<tfc:metal/axe/tungsten_steel>,
 	<tfc:metal/axe/invar>,
 	<tfc:metal/axe/blue_steel>,
-	<tfc:metal/axe/red_steel>,
+	<tfc:metal/axe/red_steel>,*/
 	//Мотыги
 	<tfc:metal/hoe/tungsten>,
 	<tfc:metal/hoe/titanium>,
@@ -998,4 +972,3 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 for item in ItemsToRemoveTFCTools{
     recipes.remove(item);
 }
-*/

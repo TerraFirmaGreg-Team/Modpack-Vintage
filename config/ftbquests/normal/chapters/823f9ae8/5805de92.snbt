@@ -19,12 +19,6 @@
 				GT.ToolStats: {
 					Material: "blue_steel"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderMost: -7089728296900211103L,
-					AS_Amulet_HolderLeast: -7942312130750066863L
-				}
 			}
 		},
 		{
@@ -34,9 +28,6 @@
 				GT.ToolStats: {
 					Material: "red_steel"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -46,9 +37,6 @@
 				GT.ToolStats: {
 					Material: "black_steel"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

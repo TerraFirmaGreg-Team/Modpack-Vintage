@@ -1,11 +1,6 @@
 {
 	title: "{tfg.quests.primitive.barrel.title}",
-	icon: {
-		id: "tfc:wood/barrel/oak",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "tfc:wood/barrel/oak",
 	x: -16.0d,
 	y: -9.5d,
 	shape: "square",

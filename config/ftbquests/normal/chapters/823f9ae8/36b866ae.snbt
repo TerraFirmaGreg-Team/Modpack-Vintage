@@ -21,8 +21,7 @@
 						Items: [],
 						Size: 4
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		}],
 		ignore_damage: true,

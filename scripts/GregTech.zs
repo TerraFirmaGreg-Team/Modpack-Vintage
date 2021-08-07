@@ -1,45 +1,12 @@
 import crafttweaker.item.IItemStack;
-import crafttweaker.liquid.ILiquidStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IItemTransformer;
+//import crafttweaker.liquid.ILiquidStack;
+//import crafttweaker.item.IIngredient;
+//import crafttweaker.oredict.IOreDictEntry;
+//import crafttweaker.item.IItemTransformer;
 
-import mods.gregtech.recipe.PBFRecipeBuilder; //PBF
-import mods.gregtech.recipe.RecipeMaps;       //PBF
-import mods.gregtech.recipe.RecipeMap;
-
-//GT Machines
-val arc_furnace as RecipeMap = RecipeMap.getByName("arc_furnace");
-val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-val green_house as RecipeMap = RecipeMap.getByName("green_house");
-val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
-val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
-val extractor as RecipeMap = RecipeMap.getByName("extractor");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
-val fluid_heater as RecipeMap = RecipeMap.getByName("fluid_heater");
-val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
-val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
-val macerator as RecipeMap = RecipeMap.getByName("macerator");
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
-val packer as RecipeMap = RecipeMap.getByName("packer");
-val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
-val extruder as RecipeMap = RecipeMap.getByName("extruder");
-val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
-val lathe as RecipeMap = RecipeMap.getByName("lathe");
-val brewer as RecipeMap = RecipeMap.getByName("brewer");
-val chemical_plant as RecipeMap = RecipeMap.getByName("chemical_plant");
-val large_chemical_reactor as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
-val bio_reactor as RecipeMap = RecipeMap.getByName("bio_reactor");
-val large_mixer as RecipeMap = RecipeMap.getByName("large_mixer");
-val large_centrifuge as RecipeMap = RecipeMap.getByName("large_centrifuge");
-val distillery as RecipeMap = RecipeMap.getByName("distillery");
+//import mods.gregtech.recipe.PBFRecipeBuilder; //PBF
+//import mods.gregtech.recipe.RecipeMaps;       //PBF
+//import mods.gregtech.recipe.RecipeMap;
 
 //Удаление + скрытие
 mods.jei.JEI.removeAndHide(<gregtech:machine:807>);
@@ -72,6 +39,17 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:803>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:804>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10183>*10).EUt(120).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:805>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10072>*10).EUt(500).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:806>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10235>*10).EUt(1560).duration(400).buildAndRegister();
+
+//Исправление рецепта на бумагу
+//Крафт бумажной пыли
+recipes.addShaped(<gregtech:meta_item_1:2325>*2,
+[[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
+ [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null]]);
+//Крафт бамаги из пыли
+recipes.addShaped(<gregtech:meta_item_1:2325>*2,
+[[null, <ore:slabStonePolished>, null],
+ [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
+ [null, <ore:slabStonePolished>, null]]);
 
 //Фикс кейзингов
 recipes.removeByRecipeName("gregtech:casing_invar_heatproof");
@@ -119,9 +97,6 @@ assembler.recipeBuilder().inputs(<ore:plateOsmiridium>*6).notConsumable(<gregtec
 assembler.recipeBuilder().inputs(<ore:plateTritanium>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateNeutronium>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:9>).duration(20).EUt(16).buildAndRegister();
 	
-//Малоэффективный рецепт резины
-alloy_smelter.recipeBuilder().inputs(<ore:dustRawRubber> * 8, <ore:dustSulfur> * 4).outputs(<ore:ingotRubber>.firstItem * 1).duration(300).EUt(8).buildAndRegister();
-	
 //Малоэффективный рецепт резиновой пластины
 alloy_smelter.recipeBuilder().inputs(<ore:ingotRubber> * 2).notConsumable(<metaitem:shape.mold.plate>).outputs(<ore:plateRubber>.firstItem * 1).duration(140).EUt(8).buildAndRegister();
 
@@ -129,18 +104,6 @@ alloy_smelter.recipeBuilder().inputs(<ore:ingotRubber> * 2).notConsumable(<metai
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
-
-//Мрамор из AstralSorcery
-chemical_bath.recipeBuilder().inputs(<tfc:raw/marble>).fluidInputs([<liquid:hot_water> * 1000]).outputs(<astralsorcery:blockmarble>).duration(20).EUt(2).buildAndRegister();
-
-//Пластина простая
-icompressor.recipeBuilder().inputs(<ore:ingotSteel> * 2, <ore:ingotCarbon> * 1).property("explosives", 1).outputs(<contenttweaker:part_plate_basic> * 1).duration(50).EUt(32).buildAndRegister();
-//Пластина улучшенная
-icompressor.recipeBuilder().inputs(<ore:plateLead> * 2, <ore:ingotCarbon> * 1).property("explosives", 1).outputs(<contenttweaker:part_plate_advanced> * 1).duration(50).EUt(64).buildAndRegister();
-//Пластина ДУ
-icompressor.recipeBuilder().inputs(<ore:plateZinc> * 2, <ore:ingotCarbon> * 1).property("explosives", 1).outputs(<contenttweaker:part_plate_du> * 1).duration(50).EUt(128).buildAndRegister();
-//Пластина Совершенная
-icompressor.recipeBuilder().inputs(<ore:plateUranium235> * 2, <ore:ingotLead> * 3).property("explosives", 1).outputs(<contenttweaker:part_plate_elite> * 2).duration(50).EUt(256).buildAndRegister();
 
 //Удаление рецепта LV кейзинга
 recipes.removeByRecipeName("gregtech:casing_lv");

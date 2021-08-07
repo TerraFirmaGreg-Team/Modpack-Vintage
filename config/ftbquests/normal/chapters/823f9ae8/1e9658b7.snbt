@@ -29,8 +29,7 @@
 							third: -1
 						}
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		},
 		{
@@ -47,8 +46,7 @@
 							third: -1
 						}
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		},
 		{
@@ -65,8 +63,7 @@
 							third: -1
 						}
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		},
 		{
@@ -83,8 +80,7 @@
 							third: -1
 						}
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		}],
 		ignore_damage: true,

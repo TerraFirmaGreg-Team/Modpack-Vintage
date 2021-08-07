@@ -1,14 +1,14 @@
 {
   "weight": 80,
   "density": 0.4,
-  "max_height": 80,
+  "max_height": 240,
   "min_height": 10,
   "surface_stone_material": "iron",
   "generation_predicate":["ore_dict:GenRockIE", "ore_dict:GenRockII", "ore_dict:GenRockSedimentary"],
 
   "generator": {
     "type": "ellipsoid",
-    "radius": [20, 24]
+    "radius": [20, 32]
   },
   "filler": {
     "type": "simple",

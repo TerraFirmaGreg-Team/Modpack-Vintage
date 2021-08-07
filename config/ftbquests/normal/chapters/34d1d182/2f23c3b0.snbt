@@ -9,11 +9,7 @@
 		uid: "469b10df",
 		type: "item",
 		items: [{
-			id: "galacticraftcore:oxygen_tank_heavy_full",
-			Damage: 2700s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "galacticraftcore:oxygen_tank_heavy_full 1 2700"
 		}],
 		count: 2L,
 		ignore_damage: true,

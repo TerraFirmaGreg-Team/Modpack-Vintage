@@ -16,11 +16,48 @@ global ItemsToRemove as IItemStack[] = [
 	<chisel:laboratory>,
 	<chisel:temple>,
 	<chisel:factory>,
-	<chisel:brownstone>
+	<chisel:brownstone>,
+	//glass
+	<chisel:glasspane>,
+	<chisel:glasspane:1>,
+	<chisel:glasspane:2>,
+	<chisel:glasspane:3>,
+	<chisel:glasspane:4>,
+	<chisel:glasspane:6>,
+	<chisel:glasspane:7>,
+	<chisel:glasspane:8>,
+	<chisel:glasspane:9>,
+	<chisel:glasspane:10>,
+	<chisel:glasspane:10>,
+	<chisel:glasspane:11>,
+	<chisel:glasspane:12>,
+	<chisel:glasspane:13>,
+	<chisel:glasspane:14>,
+	<chisel:glasspane:15>,
+	<chisel:glasspane1>,
+	<chisel:glasspane1:1>,
+	<chisel:glasspanedyedbrown:*>,
+	<chisel:glasspanedyedcyan:*>,
+	<chisel:glasspanedyedyellow:*>,
+	<chisel:glasspanedyedlightblue:*>,
+	<chisel:glasspanedyedblack:*>,
+	<chisel:glasspanedyedblue:*>,
+	<chisel:glasspanedyedgray:*>,
+	<chisel:glasspanedyedwhite:*>,
+	<chisel:glasspanedyedred:*>,
+	<chisel:glasspanedyedlightgray:*>,
+	<chisel:glasspanedyedpink:*>,
+	<chisel:glasspanedyedorange:*>,
+	<chisel:glasspanedyedgreen:*>,
+	<chisel:glasspanedyedpurple:*>,
+	<chisel:glasspanedyedlime:*>,
+	<chisel:glasspanedyedmagenta:*>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
 }
+
+
 
 //Создание рецептов
 //Железная стамеска

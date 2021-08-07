@@ -1,10 +1,5 @@
 {
-	icon: {
-		id: "minecraft:bed",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "minecraft:bed",
 	x: -3.0d,
 	y: -10.5d,
 	shape: "square",

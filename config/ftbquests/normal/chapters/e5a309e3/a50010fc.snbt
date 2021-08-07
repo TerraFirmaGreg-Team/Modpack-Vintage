@@ -4,9 +4,6 @@
 		tag: {
 			FluidName: "nitro_fuel",
 			Amount: 1000
-		},
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: 3.0d,

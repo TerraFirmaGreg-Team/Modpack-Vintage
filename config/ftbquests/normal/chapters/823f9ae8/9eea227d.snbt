@@ -10,31 +10,16 @@
 		uid: "46c04371",
 		type: "item",
 		items: [{
-			id: "tfc:stone/hammer/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hammer/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/hammer/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderMost: -7089728296900211103L,
-					AS_Amulet_HolderLeast: -7942312130750066863L
-				}
-			}
+			item: "tfc:stone/hammer/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/hammer/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hammer/sedimentary"
 		},
 		{
-			id: "tfc:stone/hammer/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hammer/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

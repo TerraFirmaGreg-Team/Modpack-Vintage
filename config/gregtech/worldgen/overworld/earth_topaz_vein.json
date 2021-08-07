@@ -1,6 +1,6 @@
 {
   "weight": 25,
-  "density": 0.3,
+  "density": 0.1,
   "max_height": 65,
   "min_height": 10,
   "surface_stone_material": "topaz",
@@ -8,7 +8,7 @@
 
   "generator": {
     "type": "ellipsoid",
-    "radius": [10, 10]
+    "radius": [10, 32]
   },
   "filler": {
     "type": "simple",

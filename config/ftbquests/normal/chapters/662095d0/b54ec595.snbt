@@ -13,9 +13,6 @@
 			tag: {
 				FluidName: "fuel",
 				Amount: 1000
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

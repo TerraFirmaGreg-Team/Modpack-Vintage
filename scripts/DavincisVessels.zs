@@ -35,8 +35,8 @@ recipes.addShaped(<davincisvessels:gauge>,
  
 //Якорь
 recipes.addShaped(<davincisvessels:anchorpoint>,
-[[null, <tfc:metal/ingot/wrought_iron>, null],
- [<tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>],
+[[null, <ore:ingotIron>, null],
+ [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
  [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 
 //Паровой двигатель
@@ -53,6 +53,6 @@ recipes.addShaped(<davincisvessels:marker>,
 
 //Приватная кровать
 recipes.addShaped(<davincisvessels:securedbed>,
-[[null, <ore:plateWroughtIron>, null],
- [<ore:plateWroughtIron>, <ore:bed>, <ore:plateWroughtIron>],
- [null, <ore:plateWroughtIron>, null]]);
+[[null, <ore:plateWroughtIron>|<ore:plateIron>, null],
+ [<ore:plateWroughtIron>|<ore:plateIron>, <ore:bed>, <ore:plateWroughtIron>|<ore:plateIron>],
+ [null, <ore:plateWroughtIron>|<ore:plateIron>, null]]);

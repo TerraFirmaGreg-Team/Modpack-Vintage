@@ -1,11 +1,6 @@
 {
 	title: "{tfg.quests.primitive.grinder.title}",
-	icon: {
-		id: "tfc:handstone",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "tfc:handstone",
 	x: -14.5d,
 	y: -7.0d,
 	shape: "square",
@@ -17,10 +12,7 @@
 		uid: "7c78b386",
 		type: "item",
 		items: [{
-			id: "tfc:handstone",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:handstone"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -29,10 +21,7 @@
 		uid: "b8441b83",
 		type: "item",
 		items: [{
-			id: "tfc:quern",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:quern"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

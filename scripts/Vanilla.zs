@@ -146,9 +146,6 @@ furnace.addRecipe(<minecraft:glass>, <ore:sand>);
 //Крафт быстрого верстака
 recipes.addShapeless(<minecraft:crafting_table>,[<ore:craftingTableWood>]);
 
-//Крафт стеклянной панели
-recipes.addShapeless(<minecraft:glass_pane>,[<minecraft:glass>, <ore:craftingToolSaw>.firstItem.withEmptyTag()]);
-
 //Рельсовые приколы
 recipes.addShapeless(<minecraft:chest_minecart>,[<minecraft:minecart>,<ore:chestWood>]);
 recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecraft:furnace>]);
@@ -159,12 +156,6 @@ recipes.addShapeless(<minecraft:prismarine>, [blockquartz, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:1> * 4, [prismarine, prismarine, prismarine, prismarine]);
 recipes.addShapeless(<minecraft:sea_lantern>, [glowstone, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:2>, [prismarine, dyeblack]);
-
-//Стеклянная бутылочка
-recipes.addShaped(<minecraft:glass_bottle>,
-[[null, <ore:ButtonWood>, null],
- [<ore:paneGlass>, null, <ore:paneGlass>],
- [null, <ore:paneGlass>, null]]);
  
 //Рельсы
 //Активатор рельсы

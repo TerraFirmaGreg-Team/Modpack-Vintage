@@ -5,9 +5,6 @@
 		tag: {
 			FluidName: "oxygen",
 			Amount: 1000
-		},
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: -5.5d,

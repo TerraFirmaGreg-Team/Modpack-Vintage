@@ -11,10 +11,7 @@
 		uid: "5adfa0f1",
 		type: "item",
 		items: [{
-			id: "tfc:metal/bucket/blue_steel",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:metal/bucket/blue_steel"
 		}],
 		ignore_nbt: 1b
 	}]

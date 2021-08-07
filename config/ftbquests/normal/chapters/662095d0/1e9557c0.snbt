@@ -4,9 +4,6 @@
 		tag: {
 			FluidName: "bio_diesel",
 			Amount: 1000
-		},
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: -8.0d,

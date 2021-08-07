@@ -10,28 +10,16 @@
 		uid: "82c7783c",
 		type: "item",
 		items: [{
-			id: "tfc:stone/hoe/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hoe/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/hoe/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hoe/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/hoe/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hoe/sedimentary"
 		},
 		{
-			id: "tfc:stone/hoe/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/hoe/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

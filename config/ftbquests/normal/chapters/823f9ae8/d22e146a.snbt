@@ -9,10 +9,7 @@
 		uid: "b93a4e11",
 		type: "item",
 		items: [{
-			id: "tfcthings:grindstone_diamond",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfcthings:grindstone_diamond"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

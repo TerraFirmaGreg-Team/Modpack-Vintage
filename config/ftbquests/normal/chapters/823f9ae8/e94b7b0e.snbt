@@ -17,9 +17,6 @@
 				GT.ToolStats: {
 					Material: "bismuth_bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -28,12 +25,6 @@
 			tag: {
 				GT.ToolStats: {
 					Material: "black_bronze"
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderMost: -7089728296900211103L,
-					AS_Amulet_HolderLeast: -7942312130750066863L
 				}
 			}
 		},
@@ -44,9 +35,6 @@
 				GT.ToolStats: {
 					Material: "bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -63,8 +51,7 @@
 							third: -1
 						}
 					}
-				},
-				"astralsorcery:cap_item_amulet_holder": {}
+				}
 			}
 		}],
 		ignore_damage: true,

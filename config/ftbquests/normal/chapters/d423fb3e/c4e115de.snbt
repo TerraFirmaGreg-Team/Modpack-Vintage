@@ -1,11 +1,6 @@
 {
 	title: "{tfg.quests.steam.disltwater.title}",
-	icon: {
-		id: "minecraft:water_bucket",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "minecraft:water_bucket",
 	x: -2.0d,
 	y: 1.5d,
 	description: "{tfg.quests.steam.disltwater.subtitle}",

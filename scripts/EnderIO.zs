@@ -113,6 +113,8 @@ for item in ItemsToRemoveEI{
     recipes.remove(item);
 }
 
+recipes.removeByRecipeName("enderio:compatibility_glass_pane");
+recipes.removeByRecipeName("enderio:compatibility_glass_2_glass");
 
 //Добавление рецептов
 //Xyeta Wrench

@@ -14,10 +14,7 @@
 		uid: "1918b2b6",
 		type: "item",
 		items: [{
-			id: "waterflasks:leather_flask",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "waterflasks:leather_flask"
 		}]
 	}]
 }

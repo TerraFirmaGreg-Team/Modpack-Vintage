@@ -1,6 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
+//val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 //Удаление рецептов
 recipes.remove(<fluxnetworks:fluxblock>);

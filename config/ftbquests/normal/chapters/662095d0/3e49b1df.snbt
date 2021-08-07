@@ -4,9 +4,6 @@
 		tag: {
 			FluidName: "polycaprolactam",
 			Amount: 1000
-		},
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
 	x: -9.0d,

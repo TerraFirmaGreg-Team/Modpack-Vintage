@@ -207,11 +207,6 @@ FluidToItem.transform(<minecraft:concrete:13>, <liquid:salt_water>, [<minecraft:
 FluidToItem.transform(<minecraft:concrete:14>, <liquid:salt_water>, [<minecraft:concrete_powder:14>]);
 FluidToItem.transform(<minecraft:concrete:15>, <liquid:salt_water>, [<minecraft:concrete_powder:15>]);
 
-//Горячий железный слиток --> Слиток кованного железа
-FluidToItem.transform(<gregtech:meta_item_1:10197>, <liquid:fresh_water>, [<gtadditions:ga_meta_item:32037>]);
-FluidToItem.transform(<gregtech:meta_item_1:10197>, <liquid:salt_water>, [<gtadditions:ga_meta_item:32037>]);
-FluidToItem.transform(<gregtech:meta_item_1:10197>, <liquid:water_water>, [<gtadditions:ga_meta_item:32037>]);
-
 
 
 

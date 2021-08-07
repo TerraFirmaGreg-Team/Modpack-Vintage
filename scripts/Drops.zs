@@ -190,6 +190,7 @@ Dropt.list("Venus_Smooth_Stone")
    .addDrop(Dropt.drop().items([<contenttweaker:venusturf>])));
 
 //Меркурий
+/*
 //Реголит
 Dropt.list("Mercury_Turf")
    .add(Dropt.rule()
@@ -200,7 +201,7 @@ Dropt.list("Mercury_Soil")
    .add(Dropt.rule()
    .matchBlocks(["extraplanets:mercury:1"])
    .addDrop(Dropt.drop().items([<contenttweaker:mercurysoil>])));
-
+*/
 //Астероиды
 //3x Астероиды
 Dropt.list("Asteroids_stone_1")
@@ -215,75 +216,3 @@ Dropt.list("Asteroids_stone_3")
    .add(Dropt.rule()
    .matchBlocks(["galacticraftplanets:asteroids_block"])
    .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone3>])));
-   
-//Фобос
-//Поверхность
-Dropt.list("Phobos_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:phobos"])
-   .addDrop(Dropt.drop().items([<contenttweaker:phobosturf>])));
-//Подповерхность
-Dropt.list("Phobos_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:phobos:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:phobossoil>])));
-
-//Деймос
-//Поверхность
-Dropt.list("Deimos_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:deimos"])
-   .addDrop(Dropt.drop().items([<contenttweaker:deimosturf>])));
-//Подповерхность
-Dropt.list("Deimos_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:deimos:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:deimossoil>])));
-   
-//Юпитер
-//Поверхность
-Dropt.list("Jupiter_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:jupiter"])
-   .addDrop(Dropt.drop().items([<contenttweaker:jupiterturf>])));
-//Подповерхность
-Dropt.list("Jupiter_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:jupiter:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:jupitersoil>])));
-
-//Сатурн
-//Поверхность
-Dropt.list("Saturn_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:saturn"])
-   .addDrop(Dropt.drop().items([<contenttweaker:saturnturf>])));
-//Подповерхность
-Dropt.list("Saturn_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:saturn:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:saturnsoil>])));
-
-//Уран
-//Поверхность
-Dropt.list("Uranus_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:uranus"])
-   .addDrop(Dropt.drop().items([<contenttweaker:uranturf>])));
-//Подповерхность
-Dropt.list("Uranus_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:uranus:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:uransoil>])));
-
-//Нептун
-//Поверхность
-Dropt.list("Neptune_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:neptune"])
-   .addDrop(Dropt.drop().items([<contenttweaker:neptuneturf>])));
-//Подповерхность
-Dropt.list("Neptune_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["extraplanets:neptune:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:neptunesoil>])));

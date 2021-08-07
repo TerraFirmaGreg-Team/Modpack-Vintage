@@ -14,7 +14,8 @@
 			Damage: 3s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	},
@@ -26,7 +27,8 @@
 			Damage: 2s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	},
@@ -38,7 +40,8 @@
 			Damage: 1s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	},
@@ -49,7 +52,8 @@
 			id: "extraplanets:tier3_thermal_padding",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

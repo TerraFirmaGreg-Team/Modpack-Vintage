@@ -40,10 +40,7 @@
 		uid: "5bfbc21b",
 		type: "item",
 		items: [{
-			id: "tfc:firestarter",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:firestarter"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

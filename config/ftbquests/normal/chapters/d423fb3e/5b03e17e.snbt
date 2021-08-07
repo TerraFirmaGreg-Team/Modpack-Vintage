@@ -162,9 +162,6 @@
 						Slot: 12b
 					}]
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b

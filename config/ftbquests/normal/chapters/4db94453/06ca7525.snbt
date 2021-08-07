@@ -9,10 +9,7 @@
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:storage_cell_16k",
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

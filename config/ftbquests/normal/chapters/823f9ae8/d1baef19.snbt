@@ -1,11 +1,6 @@
 {
 	title: "{tfg.quests.primitive.primitiveTools.title}",
-	icon: {
-		id: "tfc:stone/knife/metamorphic",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "tfc:stone/knife/metamorphic",
 	x: -24.0d,
 	y: -6.0d,
 	shape: "hexagon",
@@ -17,28 +12,16 @@
 		uid: "3d0ccea3",
 		type: "item",
 		items: [{
-			id: "tfc:stone/knife/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/knife/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/knife/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/knife/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/knife/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/knife/sedimentary"
 		},
 		{
-			id: "tfc:stone/knife/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/knife/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -47,28 +30,16 @@
 		uid: "0c4901ad",
 		type: "item",
 		items: [{
-			id: "tfc:stone/shovel/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/shovel/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/shovel/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/shovel/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/shovel/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/shovel/sedimentary"
 		},
 		{
-			id: "tfc:stone/shovel/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/shovel/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -77,31 +48,16 @@
 		uid: "93c5f1c0",
 		type: "item",
 		items: [{
-			id: "tfc:stone/axe/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/axe/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/axe/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/axe/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/axe/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderMost: -7089728296900211103L,
-					AS_Amulet_HolderLeast: -7942312130750066863L
-				}
-			}
+			item: "tfc:stone/axe/sedimentary"
 		},
 		{
-			id: "tfc:stone/axe/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/axe/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -110,28 +66,16 @@
 		uid: "290f4243",
 		type: "item",
 		items: [{
-			id: "tfc:stone/javelin/igneous_intrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/javelin/igneous_intrusive"
 		},
 		{
-			id: "tfc:stone/javelin/igneous_extrusive",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/javelin/igneous_extrusive"
 		},
 		{
-			id: "tfc:stone/javelin/sedimentary",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/javelin/sedimentary"
 		},
 		{
-			id: "tfc:stone/javelin/metamorphic",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "tfc:stone/javelin/metamorphic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

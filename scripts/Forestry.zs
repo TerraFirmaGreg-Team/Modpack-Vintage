@@ -1,22 +1,4 @@
-import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
-
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-
-var platebrass = <ore:plateBrass>;
-var platebronze = <ore:plateBronze>;
-var ingotaluminium = <ore:ingotAluminium>;
-var ingotgold = <ore:ingotGold>;
-var screwsteel = <ore:screwSteel>;
-var plank = <ore:plankWood>;
-var rodsteel = <ore:stickSteel>;
-var piston = <ore:craftingPiston>;
-var clock = <minecraft:clock>;
-var gearsteel = <ore:gearSteel>;
-var glass = <ore:blockGlass>;
 
 //Удаление рецептов + скрытие
 global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
@@ -69,7 +51,10 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<forestry:resource_storage:2>,
 	<forestry:resource_storage:3>,
 	<forestry:squeezer>,
-	<forestry:centrifuge>
+	<forestry:centrifuge>,
+	<forestry:ash>,
+	<forestry:ash_brick>,
+	<forestry:ash_stairs>
 ] as IItemStack[];
 for item in ItemsToRemoveFORESTRYJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -109,6 +94,9 @@ for item in ItemsToRemoveFORESTRY{
     recipes.remove(item);
 }
 
+recipes.removeByRecipeName("forestry:greenhouse_window");
+recipes.removeByRecipeName("forestry:greenhouse_window_roof");
+
 //Создание рецептов
 //Создание блоков меда Forestry через компрессор
 compressor.recipeBuilder().inputs(<forestry:bee_combs> * 9).outputs(<forestry:bee_combs_0>).duration(4).EUt(2).buildAndRegister();
@@ -128,6 +116,9 @@ assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:c
 
 //Капля меда
 centrifuge.recipeBuilder().inputs(<forestry:bee_combs>).chancedOutput(<forestry:beeswax>, 9000, 50).outputs(<forestry:honey_drop>).duration(10).EUt(2).buildAndRegister();
+
+//Капля меда
+recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
 
 //Seed Oil
 fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*20).duration(20).EUt(20).buildAndRegister();

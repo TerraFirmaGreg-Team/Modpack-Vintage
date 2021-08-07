@@ -17,9 +17,6 @@
 					MaxDurability: 1300,
 					Material: "bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -30,9 +27,6 @@
 					MaxDurability: 1460,
 					Material: "black_bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -43,9 +37,6 @@
 					MaxDurability: 1200,
 					Material: "bismuth_bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b

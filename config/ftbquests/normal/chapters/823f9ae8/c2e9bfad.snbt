@@ -9,10 +9,7 @@
 		uid: "7917e01b",
 		type: "item",
 		items: [{
-			id: "prospectors:prospector_low",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "prospectors:prospector_low"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

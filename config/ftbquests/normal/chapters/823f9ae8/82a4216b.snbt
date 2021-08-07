@@ -16,9 +16,6 @@
 				GT.ToolStats: {
 					Material: "bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -29,9 +26,6 @@
 					MaxDurability: 1460,
 					Material: "black_bronze"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		},
 		{
@@ -41,12 +35,6 @@
 				GT.ToolStats: {
 					MaxDurability: 1200,
 					Material: "bismuth_bronze"
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderMost: -7089728296900211103L,
-					AS_Amulet_HolderLeast: -7942312130750066863L
 				}
 			}
 		}],

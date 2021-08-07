@@ -17,9 +17,6 @@
 					MaxDurability: 450,
 					Material: "copper"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b

@@ -14,7 +14,8 @@
 			Damage: 3s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]
