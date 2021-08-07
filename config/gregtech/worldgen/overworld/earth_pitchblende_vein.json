@@ -15,12 +15,16 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 65,
+          "weight": 55,
           "value": "ore:pitchblende"
         },
         {
           "weight": 35,
           "value": "ore:uraninite"
+        },
+        {
+          "weight": 10,
+          "value": "ore:bismuth"
         }
       ]
     }

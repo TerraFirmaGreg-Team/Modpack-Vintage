@@ -1,6 +1,6 @@
 {
   "weight": 5,
-  "density": 0.4,
+  "density": 0.1,
   "max_height": 85,
   "min_height": 10,
   "surface_stone_material": "lithium",

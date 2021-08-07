@@ -225,6 +225,8 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:green
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete:14>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();	
 
+//Исправление палок
+
 //Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
 
@@ -598,9 +600,9 @@ Welding.addRecipe("tfc:boots_wrought_iron_fixed", <tfc:metal/unfinished_boots/wr
 //Anvil.removeRecipe(<tfc:metal/pick_head/wrought_iron>);
 //Anvil.removeRecipe(<tfc:metal/javelin_head/wrought_iron>);
 //Anvil.removeRecipe(<tfc:metal/scythe_blade/wrought_iron>);
-//Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
-//Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
-//Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
+Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
+Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
+Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
 //Anvil.removeRecipe(<tfc:metal/unfinished_boots/wrought_iron>);
 
 Anvil.addRecipe("tfc:wrought_iron_hoe_fixed", <tfc:metal/ingot/wrought_iron>, <tfc:metal/hoe_head/wrought_iron>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
@@ -622,26 +624,6 @@ recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withE
 //Флюс использует крафт с помощью GT молота
 recipes.removeByRecipeName("tfc:flux");
 recipes.addShapeless (<tfc:powder/flux>*2, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:rockFlux>]);
-
-//Точильный инструмент использует крафт с помощью алмазной пыли GT
-recipes.remove(<tfcthings:diamond_grit>);
-recipes.remove(<tfcthings:grindstone_diamond>);
-Welding.removeRecipe(<tfcthings:honing_steel_head_diamond>);
-Welding.removeRecipe(<tfcthings:honing_steel_diamond>);
-recipes.addShaped(<tfcthings:grindstone_diamond>,
-[[<ore:dustDiamond>, <ore:dustDiamond>, <ore:dustDiamond>],
- [<ore:dustDiamond>, <tfcthings:grindstone_steel>, <ore:dustDiamond>],
- [<ore:dustDiamond>, <ore:dustDiamond>, <ore:dustDiamond>]]);
-Welding.addRecipe("tfc:honing_steel_head_diamond", <tfcthings:honing_steel_head>, <ore:dustDiamond>, <tfcthings:honing_steel_head_diamond>, 5);
-Welding.addRecipe("tfc:honing_steel_diamond", <tfcthings:honing_steel>, <ore:dustDiamond>, <tfcthings:honing_steel_diamond>, 5);
-
-//TFC-Things Sling Ammo с помощью GT молота
-//Sling Ammo Spread
-recipes.remove(<tfcthings:sling_ammo_spread>);
-recipes.addShapeless(<tfcthings:sling_ammo_spread>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:sling_ammo>]);
-//Sling Ammo Light
-recipes.remove(<tfcthings:sling_ammo_light>);
-recipes.addShapeless(<tfcthings:sling_ammo_light>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:sling_ammo>, <ore:craftingToolFile>.firstItem.withEmptyTag()]);
 
 //Добавление других вариантов угля для TFC
 ItemRegistry.registerFuel(<ore:fuelCoke>, 3200, 1450, true, true);
@@ -796,66 +778,9 @@ Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <gregtech:meta_item_2:6
 Anvil.addRecipe("tfc:file_head/Iron", <ore:ingotIron>, <gregtech:meta_item_2:6033>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <gregtech:meta_item_2:6017>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
-//Платиновые короны
-recipes.remove(<tfcthings:crown/platinum_opal>);
-recipes.remove(<tfcthings:crown/platinum_jasper>);
-recipes.remove(<tfcthings:crown/platinum_jade>);
-recipes.remove(<tfcthings:crown/platinum_garnet>);
-recipes.remove(<tfcthings:crown/platinum_emerald>);
-recipes.remove(<tfcthings:crown/platinum_diamond>);
-recipes.remove(<tfcthings:crown/platinum_beryl>);
-recipes.remove(<tfcthings:crown/platinum_amethyst>);
-recipes.remove(<tfcthings:crown/platinum_agate>);
-recipes.remove(<tfcthings:crown/platinum_ruby>);
-recipes.remove(<tfcthings:crown/platinum_sapphire>);
-recipes.remove(<tfcthings:crown/platinum_topaz>);
-recipes.remove(<tfcthings:crown/platinum_tourmaline>);
-//Золотые короны
-recipes.remove(<tfcthings:crown/gold_jade>);
-recipes.remove(<tfcthings:crown/gold_garnet>);
-recipes.remove(<tfcthings:crown/gold_emerald>);
-recipes.remove(<tfcthings:crown/gold_diamond>);
-recipes.remove(<tfcthings:crown/gold_beryl>);
-recipes.remove(<tfcthings:crown/gold_amethyst>);
-recipes.remove(<tfcthings:crown/gold_agate>);
-recipes.remove(<tfcthings:crown/gold_topaz>);
-recipes.remove(<tfcthings:crown/gold_tourmaline>);
-recipes.remove(<tfcthings:crown/gold_sapphire>);
-recipes.remove(<tfcthings:crown/gold_ruby>);
-recipes.remove(<tfcthings:crown/gold_opal>);
-recipes.remove(<tfcthings:crown/gold_jasper>);
-
-//Серебрянные короны
-recipes.addShapeless (<tfcthings:crown/platinum_garnet>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteGarnet>]);
-recipes.addShapeless (<tfcthings:crown/platinum_emerald>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteEmerald>]);
-recipes.addShapeless (<tfcthings:crown/platinum_diamond>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteDiamond>]);
-recipes.addShapeless (<tfcthings:crown/platinum_beryl>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteBeryl>]);
-recipes.addShapeless (<tfcthings:crown/platinum_amethyst>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteAmethyst>]);
-recipes.addShapeless (<tfcthings:crown/platinum_agate>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteAgate>]);
-recipes.addShapeless (<tfcthings:crown/platinum_sapphire>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteSapphire>]);
-recipes.addShapeless (<tfcthings:crown/platinum_topaz>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteTopaz>]);
-recipes.addShapeless (<tfcthings:crown/platinum_tourmaline>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteTourmaline>]);
-recipes.addShapeless (<tfcthings:crown/platinum_ruby>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteRuby>]);
-recipes.addShapeless (<tfcthings:crown/platinum_opal>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteOpal>]);
-recipes.addShapeless (<tfcthings:crown/platinum_jasper>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteJasper>]);
-recipes.addShapeless (<tfcthings:crown/platinum_jade>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/platinum_empty>, <ore:gemExquisiteJade>]);
-//Золотые короны
-recipes.addShapeless (<tfcthings:crown/gold_garnet>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteGarnet>]);
-recipes.addShapeless (<tfcthings:crown/gold_emerald>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteEmerald>]);
-recipes.addShapeless (<tfcthings:crown/gold_diamond>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteDiamond>]);
-recipes.addShapeless (<tfcthings:crown/gold_beryl>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteBeryl>]);
-recipes.addShapeless (<tfcthings:crown/gold_amethyst>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteAmethyst>]);
-recipes.addShapeless (<tfcthings:crown/gold_agate>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteAgate>]);
-recipes.addShapeless (<tfcthings:crown/gold_sapphire>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteSapphire>]);
-recipes.addShapeless (<tfcthings:crown/gold_topaz>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteTopaz>]);
-recipes.addShapeless (<tfcthings:crown/gold_tourmaline>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteTourmaline>]);
-recipes.addShapeless (<tfcthings:crown/gold_ruby>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteRuby>]);
-recipes.addShapeless (<tfcthings:crown/gold_opal>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteOpal>]);
-recipes.addShapeless (<tfcthings:crown/gold_jasper>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJasper>]);
-recipes.addShapeless (<tfcthings:crown/gold_jade>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:crown/gold_empty>, <ore:gemExquisiteJade>]);
-
 //Фикс тулов
 //Удаление рецептов
+/*
 global ItemsToRemoveTFCTools as IItemStack[] = [
 	//Кирки
 	<tfc:metal/pick/tungsten>,
@@ -880,7 +805,6 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 	<tfc:metal/pick/blue_steel>,
 	<tfc:metal/pick/red_steel>,
 	//Топоры
-	/*
 	<tfc:metal/axe/tungsten>,
 	<tfc:metal/axe/titanium>,
 	<tfc:metal/axe/boron>,
@@ -901,7 +825,7 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 	<tfc:metal/axe/tungsten_steel>,
 	<tfc:metal/axe/invar>,
 	<tfc:metal/axe/blue_steel>,
-	<tfc:metal/axe/red_steel>,*/
+	<tfc:metal/axe/red_steel>,
 	//Мотыги
 	<tfc:metal/hoe/tungsten>,
 	<tfc:metal/hoe/titanium>,
@@ -972,3 +896,4 @@ global ItemsToRemoveTFCTools as IItemStack[] = [
 for item in ItemsToRemoveTFCTools{
     recipes.remove(item);
 }
+*/

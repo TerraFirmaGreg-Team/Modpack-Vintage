@@ -1,16 +1,21 @@
 {
-	x: 9.0d,
-	y: -3.0d,
+	x: 14.5d,
+	y: -2.0d,
 	description: "{tfg.quests.lv.scanner.subtitle}",
 	dependencies: [
-		"aca49cbb"
+		"50508181"
 	],
 	hide_text_until_complete: true,
 	tasks: [{
-		uid: "8f65edfc",
+		uid: "3ddb62c0",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_2 1 32579"
-		}]
+			id: "gtadditions:ga_meta_item2",
+			Damage: 100s,
+			tag: {
+				Charge: 12800L
+			}
+		}],
+		ignore_nbt: 1b
 	}]
 }

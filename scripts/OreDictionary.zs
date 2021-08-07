@@ -12,29 +12,13 @@ for item in GenRockII {
 	gen1_GenRockII.add(item);
 }
 //2 - Rock Metamorfic
-var GenRockMetamorf = [
-<tfc:raw/marble>,
-<tfc:raw/gneiss>,
-<tfc:raw/schist>,
-<tfc:raw/quartzite>,
-<tfc:raw/phyllite>,
-<tfc:raw/slate>
-] as IItemStack[];
+var GenRockMetamorf = [<tfc:raw/marble>,<tfc:raw/gneiss>,<tfc:raw/schist>,<tfc:raw/quartzite>,<tfc:raw/phyllite>,<tfc:raw/slate>] as IItemStack[];
 var gen2_GenRockMetamorf = <ore:GenRockMetamorf>;
 for item in GenRockMetamorf {
 	gen2_GenRockMetamorf.add(item);
 }
 //3 - Rock Sedimentary
-var GenRockSedimentary = [
-<tfc:raw/shale>,
-<tfc:raw/dolomite>,
-<tfc:raw/conglomerate>,
-<tfc:raw/limestone>,
-<tfc:raw/rocksalt>,
-<tfc:raw/claystone>,
-<tfc:raw/chert>,
-<tfc:raw/chalk>
-] as IItemStack[];
+var GenRockSedimentary = [<tfc:raw/shale>,<tfc:raw/dolomite>,<tfc:raw/conglomerate>,<tfc:raw/limestone>,<tfc:raw/rocksalt>,<tfc:raw/claystone>,<tfc:raw/chert>,<tfc:raw/chalk>] as IItemStack[];
 var gen3_GenRockSedimentary = <ore:GenRockSedimentary>;
 for item in GenRockSedimentary {
 	gen3_GenRockSedimentary.add(item);
@@ -45,6 +29,7 @@ var gen4_GenRockIE = <ore:GenRockIE>;
 for item in GenRockIE {
 	gen4_GenRockIE.add(item);
 }
+
 //Прописывание oredictionary для камней тфк
 //Доломит
 <ore:GenDolomite>.add(<tfc:raw/dolomite>);
