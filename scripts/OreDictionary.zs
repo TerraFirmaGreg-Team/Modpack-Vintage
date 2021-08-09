@@ -3,8 +3,6 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-/*             ///Выдаем oredictionary для пород тфк///               */
-//
 //1 - Rock Igneus Instrusive
 var GenRockII = [<tfc:raw/granite>,<tfc:raw/gabbro>,<tfc:raw/rhyolite>,<tfc:raw/diorite>] as IItemStack[];
 var gen1_GenRockII = <ore:GenRockII>;
@@ -99,14 +97,8 @@ for item in GenRockIE {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block Forestry
 <ore:blockApatite>.remove(<forestry:resource_storage>);
-//Minecraft iron ingot
-<ore:ingotIron>.remove(<minecraft:iron_ingot>);
 //Minecraft goldingot
 <ore:ingotGold>.remove(<minecraft:gold_ingot>);
-//Thaumcraft Brass Plate
-//<ore:plateIron>.remove(<thaumcraft:plate:1>);
-//Thaumcraft Iron Plate
-//<ore:plateBrass>.remove(<thaumcraft:plate>);
 //Minecraft emerald
 <ore:gemEmerald>.remove(<minecraft:emerald>);
 //Minecraft diamond
@@ -305,9 +297,6 @@ for item in ButtonStone {
 
 <ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
 
-//ПЕРЕРАБОТКА КОВАННОГО ЖЕЛЕЗА
-<ore:ingotWroughtIron>.remove(<tfc:metal/ingot/wrought_iron>);
-<ore:plateWroughtIron>.remove(<tfc:metal/sheet/wrought_iron>);
-<ore:sheetWroughtIron>.remove(<tfc:metal/sheet/wrought_iron>);
-<ore:dustWroughtIron>.remove(<tfc:metal/dust/wrought_iron>);
-<ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);
+//Фик железка
+<ore:plateDoubleWroughtIron>.add(<tfc:metal/double_sheet/wrought_iron>);
+

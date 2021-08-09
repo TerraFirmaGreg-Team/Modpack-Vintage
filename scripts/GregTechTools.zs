@@ -345,8 +345,8 @@ recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/saw_blade/red_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/saw_blade/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/saw_blade/black_steel>]);
-recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/saw_blade/cobalt>]);
-recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/saw_blade/invar>]);
+//recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/saw_blade/cobalt>]);
+//recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/saw_blade/invar>]);
 
 //Отключение крафтов напильника(61)
 recipes.remove(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "neutronium"}}));

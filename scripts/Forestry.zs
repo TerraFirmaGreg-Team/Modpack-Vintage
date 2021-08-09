@@ -51,6 +51,7 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<forestry:resource_storage:2>,
 	<forestry:resource_storage:3>,
 	<forestry:squeezer>,
+	<forestry:moistener>,
 	<forestry:centrifuge>,
 	<forestry:ash>,
 	<forestry:ash_brick>,

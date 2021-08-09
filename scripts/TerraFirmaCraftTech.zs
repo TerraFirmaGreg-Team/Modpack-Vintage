@@ -7,12 +7,10 @@ import mods.terrafirmacraft.Anvil;
 WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
 WireDrawing.addRecipe("tfctech:wire_copper", <tfctech:metal/copper_wire:1>, 3, <gregtech:cable:18>, 0xFFA6B525);
 WireDrawing.removeRecipe(<tfctech:metal/electrum_wire>);
-WireDrawing.addRecipe("tfctech:wire_electrum", <tfctech:metal/electrum_wire:1>, 3, <gregtech:cable:112>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_electrum", <tfctech:metal/electrum_wire:1>, 3, <gregtech:cable:112>, 0xFFDFB950);
 WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
-WireDrawing.addRecipe("tfctech:wire_red_alloy", <tfctech:metal/red_alloy_wire:1>, 3, <gregtech:cable:237>, 0xFFA6B525);
-WireDrawing.removeRecipe(<tfctech:metal/cobalt_wire>);
-WireDrawing.addRecipe("tfctech:wire_cobalt", <tfctech:metal/cobalt_wire:1>, 3, <gregtech:cable:17>, 0xFFA6B525);
-WireDrawing.removeRecipe(<tfctech:metal/gold_wire>);
+WireDrawing.addRecipe("tfctech:wire_red_alloy", <tfctech:metal/red_alloy_wire:1>, 3, <gregtech:cable:237>, 0xFFDA6E6E);
+WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
 WireDrawing.addRecipe("tfctech:wire_gold", <tfctech:metal/gold_wire:1>, 3, <gregtech:cable:26>, 0xFFA6B525);
 WireDrawing.removeRecipe(<tfctech:metal/lead_wire>);
 WireDrawing.addRecipe("tfctech:wire_lead", <tfctech:metal/lead_wire:1>, 3, <gregtech:cable:35>, 0xFFA6B525);
@@ -30,6 +28,28 @@ WireDrawing.removeRecipe(<tfctech:metal/platinum_wire>);
 WireDrawing.addRecipe("tfctech:wire_platinum", <tfctech:metal/platinum_wire:1>, 3, <gregtech:cable:51>, 0xFFA6B525);
 WireDrawing.removeRecipe(<tfctech:metal/black_steel_wire>);
 WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <gregtech:cable:231>, 0xFFA6B525);
+
+//Фикс палок из TFC-Tech
+Anvil.addRecipe("tfctech:rod_1", <gregtech:meta_item_1:10230>, <gregtech:meta_item_2:14230>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_2", <gregtech:meta_item_2:10035>, <gregtech:meta_item_2:14035>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_3", <gregtech:meta_item_2:10232>, <gregtech:meta_item_2:14232>*2, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_4", <gregtech:meta_item_2:10227>, <gregtech:meta_item_2:14227>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_5", <gregtech:meta_item_2:10126>, <gregtech:meta_item_2:14126>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_6", <gregtech:meta_item_2:10051>, <gregtech:meta_item_2:14051>*2, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_7", <gregtech:meta_item_2:10233>, <gregtech:meta_item_2:14233>*2, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_8", <gregtech:meta_item_2:10112>, <gregtech:meta_item_2:14112>*2, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_9", <gregtech:meta_item_2:10071>, <gregtech:meta_item_2:14071>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_10", <gregtech:meta_item_2:10229>, <gregtech:meta_item_2:14229>*2, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_11", <gregtech:meta_item_2:10231>, <gregtech:meta_item_2:14231>*2, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_12", <gregtech:meta_item_2:10094>, <gregtech:meta_item_2:14094>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_13", <gregtech:meta_item_2:10184>, <gregtech:meta_item_2:14184>*2, 4, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_14", <gregtech:meta_item_2:10095>, <gregtech:meta_item_2:14095>*2, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_15", <gregtech:meta_item_2:10197>, <gregtech:meta_item_2:14197>*2, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_16", <gregtech:meta_item_2:10140>, <gregtech:meta_item_2:14140>*2, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_17", <gregtech:meta_item_2:10018>, <gregtech:meta_item_2:14018>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_18", <gregtech:meta_item_2:10062>, <gregtech:meta_item_2:14062>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_19", <gregtech:meta_item_2:10228>, <gregtech:meta_item_2:14228>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfctech:rod_20", <gregtech:meta_item_2:10026>, <gregtech:meta_item_2:14026>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 //Баффнутый крафт поташа
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
@@ -91,16 +111,3 @@ ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/sleeve>);
 ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/rackwheel_piece>);
 Heating.removeRecipe(<tfctech:ceramics/mold/rackwheel_piece>);
 Heating.removeRecipe(<tfctech:ceramics/mold/sleeve>);
-
-//Отключение некоторых вытяжных трубок
-Anvil.removeRecipe(<tfctech:metal/osmium_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/manyullyn_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/boron_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/zircaloy_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/tungsten_steel_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/invar_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/tungsten_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/beryllium_copper_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/aluminium_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/cobalt_blowpipe>);
-Anvil.removeRecipe(<tfctech:metal/titanium_blowpipe>);

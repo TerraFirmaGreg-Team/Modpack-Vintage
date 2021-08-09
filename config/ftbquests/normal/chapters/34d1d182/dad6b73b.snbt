@@ -1,59 +1,40 @@
 {
 	title: "{tfg.quests.space.tier3termalarmor.title}",
-	x: 13.0d,
-	y: -16.5d,
+	x: 12.5d,
+	y: -15.0d,
 	description: "{tfg.quests.space.tier3termalarmor.subtitle}",
 	dependencies: [
 		"e4e7bcbf"
 	],
 	tasks: [{
-		uid: "4e981c29",
+		uid: "57d31b08",
 		type: "item",
 		items: [{
-			id: "extraplanets:tier3_thermal_padding",
-			Damage: 3s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			item: "galaxyspace:thermal_padding_t3"
 		}],
 		ignore_nbt: 1b
 	},
 	{
-		uid: "0b8fe47e",
+		uid: "2abc1293",
 		type: "item",
 		items: [{
-			id: "extraplanets:tier3_thermal_padding",
-			Damage: 2s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			item: "galaxyspace:thermal_padding_t3 1 1"
 		}],
 		ignore_nbt: 1b
 	},
 	{
-		uid: "621beb28",
+		uid: "02792087",
 		type: "item",
 		items: [{
-			id: "extraplanets:tier3_thermal_padding",
-			Damage: 1s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			item: "galaxyspace:thermal_padding_t3 1 2"
 		}],
 		ignore_nbt: 1b
 	},
 	{
-		uid: "e30aaf30",
+		uid: "2be779b3",
 		type: "item",
 		items: [{
-			id: "extraplanets:tier3_thermal_padding",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			item: "galaxyspace:thermal_padding_t3 1 3"
 		}],
 		ignore_nbt: 1b
 	}]

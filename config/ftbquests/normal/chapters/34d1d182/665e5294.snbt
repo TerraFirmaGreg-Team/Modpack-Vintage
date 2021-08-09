@@ -2,20 +2,12 @@
 	x: -3.0d,
 	y: -17.0d,
 	shape: "rsquare",
-	dependencies: [
-		"f51a360a"
-	],
 	size: 2.0d,
 	tasks: [{
 		uid: "351bb50a",
 		type: "item",
 		items: [{
-			id: "extraplanets:item_tier5_rocket",
-			Damage: 3s,
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			item: "extraplanets:item_tier5_rocket 1 3"
 		}],
 		ignore_nbt: 1b
 	}]

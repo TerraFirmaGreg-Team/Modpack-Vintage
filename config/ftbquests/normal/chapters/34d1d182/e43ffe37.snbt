@@ -1,9 +1,8 @@
 {
-	x: 9.0d,
-	y: -17.0d,
+	x: 10.0d,
+	y: -15.0d,
 	description: "{tfg.quests.space.rocket3.subtitle}",
 	dependencies: [
-		"422ff0c3",
 		"dad6b73b"
 	],
 	size: 2.0d,
@@ -28,10 +27,10 @@
 		}]
 	},
 	{
-		uid: "7df1f3ec",
+		uid: "21e6c4f9",
 		type: "item",
 		items: [{
-			item: "extraplanets:mercury"
+			item: "galaxyspace:mercuryblocks"
 		}]
 	}]
 }

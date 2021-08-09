@@ -33,22 +33,7 @@
 			item: "gregtech:meta_item_1 1 44"
 		},
 		{
-			id: "gregtech:meta_item_1",
-			Damage: 3044s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 3044"
 		}]
 	}]
 }

@@ -9,7 +9,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-
 global alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 global arc_furnace as RecipeMap = RecipeMap.getByName("arc_furnace");
 global assembler as RecipeMap = RecipeMap.getByName("assembler");

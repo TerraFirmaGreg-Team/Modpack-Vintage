@@ -1,0 +1,16 @@
+{
+	x: 11.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "f40b6339",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10008"
+		}]
+	}],
+	rewards: [{
+		uid: "464b20ae",
+		type: "random",
+		table: 0
+	}]
+}

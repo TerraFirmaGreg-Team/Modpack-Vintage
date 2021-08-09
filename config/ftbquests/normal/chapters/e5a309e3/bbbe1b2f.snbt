@@ -1,22 +1,5 @@
 {
-	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 10047s,
-		ForgeCaps: {
-			"tfc:item_forge": {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
+	icon: "gregtech:meta_item_1 1 10047",
 	x: 11.955102040816342d,
 	y: 4.01088435374151d,
 	description: "{tfg.quests.hv.osmiumingot.subtitle}",
@@ -29,22 +12,7 @@
 		uid: "18ac2b26",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 10047s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 10047"
 		}]
 	}]
 }

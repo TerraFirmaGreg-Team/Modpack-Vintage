@@ -1,7 +1,6 @@
 {
 	x: 1.5d,
 	y: -6.5d,
-	description: "{tfg.quests.space.oxygencollector.subtitle}",
 	dependencies: [
 		"f728ff59"
 	],

@@ -24,19 +24,19 @@ recipes.addShaped(<davincisvessels:seat>,
 //Гаджеты 4х
 recipes.addShaped(<davincisvessels:gauge:1>,
 [[null, <ore:plateGold>, null],
- [<ore:wireGtSingleRedAlloy>, <davincisvessels:gauge>, <ore:plateIron>],
+ [<ore:wireGtSingleRedAlloy>, <davincisvessels:gauge>, <ore:ingotWroughtIron>],
  [null, <ore:plateGold>, null]]);
  
 //Гаджеты 5х
 recipes.addShaped(<davincisvessels:gauge>,
 [[null, <ore:plateGold>, null],
- [<gregtech:meta_item_2:32487>, <ore:wireGtSingleRedAlloy>, <ore:plateIron>],
+ [<gregtech:meta_item_2:32487>, <ore:wireGtSingleRedAlloy>, <ore:ingotWroughtIron>],
  [null, <ore:plateGold>, null]]);
  
 //Якорь
 recipes.addShaped(<davincisvessels:anchorpoint>,
-[[null, <ore:ingotIron>, null],
- [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+[[null, <ore:ingotWroughtIron>, null],
+ [<ore:ingotWroughtIron>, <ore:ingotWroughtIron>, <ore:ingotWroughtIron>],
  [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 
 //Паровой двигатель
@@ -53,6 +53,6 @@ recipes.addShaped(<davincisvessels:marker>,
 
 //Приватная кровать
 recipes.addShaped(<davincisvessels:securedbed>,
-[[null, <ore:plateWroughtIron>|<ore:plateIron>, null],
- [<ore:plateWroughtIron>|<ore:plateIron>, <ore:bed>, <ore:plateWroughtIron>|<ore:plateIron>],
- [null, <ore:plateWroughtIron>|<ore:plateIron>, null]]);
+[[null, <ore:plateWroughtIron>, null],
+ [<ore:plateWroughtIron>, <ore:bed>, <ore:plateWroughtIron>],
+ [null, <ore:plateWroughtIron>, null]]);

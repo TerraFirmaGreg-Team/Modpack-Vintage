@@ -1,23 +1,6 @@
 {
 	title: "Вольфрам",
-	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 10074s,
-		ForgeCaps: {
-			"tfc:item_forge": {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
+	icon: "gregtech:meta_item_1 1 10074",
 	x: -7.0d,
 	y: 2.0d,
 	dependencies: [
@@ -28,22 +11,7 @@
 		uid: "758dde35",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 2074s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 2074"
 		}]
 	},
 	{
@@ -57,22 +25,7 @@
 		uid: "b959a0b8",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 10074s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 10074"
 		}]
 	}]
 }

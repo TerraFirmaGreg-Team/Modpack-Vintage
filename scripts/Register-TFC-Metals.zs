@@ -20,7 +20,7 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12044>, "NICKEL", 200, true
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12228>, "ROSE_GOLD", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12062>, "SILVER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12071>, "TIN", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12036>, "LITHIUM", 200, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12036>, "LITHIUM", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12230>, "BISMUTH_BRONZE", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12229>, "BLACK_BRONZE", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12126>, "INVAR", 200, true);
@@ -29,8 +29,8 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12140>, "PIG_IRON", 200, tr
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12033>, "WROUGHT_IRON", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12227>, "STERLING_SILVER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12079>, "ZINC", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12017>, "COBALT", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12003>, "ANTIMONY", 200, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12017>, "COBALT", 200, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12003>, "ANTIMONY", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12112>, "ELECTRUM", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12237>, "RED_ALLOY", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12232>, "RED_STEEL", 200, true);
@@ -47,7 +47,7 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13044>, "NICKEL", 900, true
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13228>, "ROSE_GOLD", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13062>, "SILVER", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13071>, "TIN", 900, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13036>, "LITHIUM", 900, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13036>, "LITHIUM", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13230>, "BISMUTH_BRONZE", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13229>, "BLACK_BRONZE", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13126>, "INVAR", 900, true);
@@ -57,8 +57,8 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13197>, "WROUGHT_IRON", 900
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13033>, "WROUGHT_IRON", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13227>, "STERLING_SILVER", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13079>, "ZINC", 900, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13017>, "COBALT", 900, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13003>, "ANTIMONY", 900, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13017>, "COBALT", 900, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13003>, "ANTIMONY", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13112>, "ELECTRUM", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13237>, "RED_ALLOY", 900, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:13232>, "RED_STEEL", 900, true);
@@ -219,13 +219,13 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2271>, "NICKEL", 40, true);
 
 /////////////////////////////////////////Вариации Кобальта
 //Кобальт грязная кучка
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3017>, "COBALT", 80, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3017>, "COBALT", 80, true);
 //Кобальт 100units
 //ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2017>, "COBALT", 100, true);
 //Кобальтит грязная кучка
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3107>, "COBALT", 70, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3107>, "COBALT", 70, true);
 //Кобальтит 100units
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2107>, "COBALT", 90, true);
+//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2107>, "COBALT", 90, true);
 
 /////////////////////////////////////////Вариации Цинка
 //Цинк грязная кучка
@@ -276,17 +276,3 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3062>, "SILVER", 80, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:1062>, "SILVER", 25, true);
 //Висмут 10units
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:62>, "SILVER", 10, true);
-
-/////////////////////////////////////////Вариации алюминия
-//Алюминий грязная кучка
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3001>, "Aluminium", 80, true);
-//Алюминий 100units
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2001>, "Aluminium", 100, true);
-//Алюминий 25units
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:1001>, "Aluminium", 25, true);
-//Алюминийя 10units
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:1>, "Aluminium", 10, true);
-//Боксит грязная кучка
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:3001>, "Aluminium", 40, true);
-//Боксит 100units
-//ItemRegistry.registerItemMetal(<gregtech:meta_item_1:2001>, "Aluminium", 50, true);

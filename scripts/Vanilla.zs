@@ -23,6 +23,42 @@ var dyeblack = <ore:dyeBlack>;
 var blockquartz = <ore:blockQuartz>;
 
 //Отключение крафтов
+global ItemsToRemoveVJEI as IItemStack[] = [
+	<tfc:sluice>,
+    <minecraft:apple>,
+    <minecraft:mushroom_stew>,
+    <minecraft:bread>,
+    <minecraft:porkchop>,
+    <minecraft:cooked_porkchop>,
+    <minecraft:fish>,
+    <minecraft:fish:1>,
+    <minecraft:fish:2>,
+    <minecraft:fish:3>,
+    <minecraft:cooked_fish>,
+    <minecraft:cooked_fish:1>,
+    <minecraft:cake>,
+    <minecraft:cookie>,
+    <minecraft:melon>,
+    <minecraft:beef>,
+    <minecraft:cooked_beef>,
+    <minecraft:chicken>,
+    <minecraft:cooked_chicken>,
+    <minecraft:carrot>,
+    <minecraft:potato>,
+    <minecraft:baked_potato>,
+    <minecraft:poisonous_potato>,
+    <minecraft:pumpkin_pie>,
+    <minecraft:rabbit>,
+    <minecraft:cooked_rabbit>,
+    <minecraft:rabbit_stew>,
+    <minecraft:mutton>,
+    <minecraft:cooked_mutton>,
+    <minecraft:beetroot>,
+    <minecraft:beetroot_soup>
+] as IItemStack[];
+for item in ItemsToRemoveVJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
 recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");

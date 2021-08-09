@@ -28,40 +28,6 @@
 					}
 				}
 			}
-		},
-		{
-			id: "tfc:metal/anvil/invar",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "tfc:metal/anvil/cobalt",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

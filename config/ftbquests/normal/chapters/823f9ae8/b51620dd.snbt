@@ -11,22 +11,7 @@
 		uid: "92f4b7cf",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 71s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 71"
 		},
 		{
 			item: "gregtech:meta_item_1 1 98"
@@ -36,24 +21,7 @@
 	rewards: [{
 		uid: "c318d3e2",
 		type: "item",
-		item: {
-			id: "gregtech:meta_item_1",
-			Damage: 1071s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
+		item: "gregtech:meta_item_1 1 1071",
 		count: 10
 	}]
 }

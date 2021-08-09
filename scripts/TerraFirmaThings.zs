@@ -81,3 +81,7 @@ Welding.addRecipe("tfc:honing_steel_diamond", <tfcthings:honing_steel>, <ore:dus
 
 //Минус точильный камень
 recipes.removeByRecipeName("tfcthings:grindstone_base_steel");
+recipes.removeByRecipeName("tfcthings:grindstone_base");
+recipes.addShaped(<tfcthings:grindstone_base>,
+[[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+ [<ore:lumber>, null, <ore:lumber>]]);
