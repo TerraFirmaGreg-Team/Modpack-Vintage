@@ -30,6 +30,7 @@ WireDrawing.removeRecipe(<tfctech:metal/black_steel_wire>);
 WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <gregtech:cable:231>, 0xFFA6B525);
 
 //Фикс палок из TFC-Tech
+/*
 Anvil.addRecipe("tfctech:rod_1", <gregtech:meta_item_1:10230>, <gregtech:meta_item_2:14230>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:rod_2", <gregtech:meta_item_2:10035>, <gregtech:meta_item_2:14035>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:rod_3", <gregtech:meta_item_2:10232>, <gregtech:meta_item_2:14232>*2, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
@@ -50,6 +51,7 @@ Anvil.addRecipe("tfctech:rod_17", <gregtech:meta_item_2:10018>, <gregtech:meta_i
 Anvil.addRecipe("tfctech:rod_18", <gregtech:meta_item_2:10062>, <gregtech:meta_item_2:14062>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:rod_19", <gregtech:meta_item_2:10228>, <gregtech:meta_item_2:14228>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:rod_20", <gregtech:meta_item_2:10026>, <gregtech:meta_item_2:14026>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+*/
 
 //Баффнутый крафт поташа
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
@@ -87,18 +89,21 @@ recipes.addShaped(<tfctech:electric_forge>,
  [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
 
 //Smeltery Cauldron
+recipes.remove(<tfctech:smeltery_cauldron>);
 recipes.addShaped(<tfctech:smeltery_cauldron>,
 [[<ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>],
  [<ore:plateIron>|<ore:plateWroughtIron>, null, <ore:plateIron>|<ore:plateWroughtIron>],
  [<ore:stickLongIron>|<ore:stickLongWroughtIron>, null, <ore:stickLongIron>|<ore:stickLongWroughtIron>]]);
 
 //Smeltery Firebox
+recipes.remove(<tfctech:smeltery_firebox>);
 recipes.addShaped(<tfctech:smeltery_firebox>,
 [[<ore:stickIron>|<ore:stickWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:stickIron>|<ore:stickWroughtIron>],
  [<ore:plateIron>|<ore:plateWroughtIron>, <tfc:fire_bricks>, <ore:plateIron>|<ore:plateWroughtIron>],
  [<ore:stickIron>|<ore:stickWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:stickIron>|<ore:stickWroughtIron>]]);
 
 //Wire Draw Bench
+recipes.remove(<tfctech:wire_draw_bench>);
 recipes.addShaped(<tfctech:wire_draw_bench>,
 [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <tfctech:metal/iron_tongs>],
  [<ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>],
