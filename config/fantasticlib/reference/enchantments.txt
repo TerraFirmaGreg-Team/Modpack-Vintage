@@ -28,14 +28,12 @@ minecraft:luck_of_the_sea
 minecraft:lure
 minecraft:mending
 minecraft:vanishing_curse
-endercore:xpboost
 endercore:autosmelt
-enderio:repellent
+endercore:xpboost
+enderio:soulbound
 enderio:witherarrow
+enderio:repellent
 enderio:witherweapon
 enderio:shimmer
-enderio:soulbound
 gregtech:disjunction
 parry:parry
-astralsorcery:enchantment.as.nightvision
-astralsorcery:enchantment.as.smelting

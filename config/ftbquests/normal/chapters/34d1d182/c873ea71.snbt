@@ -1,11 +1,11 @@
 {
 	title: "{tfg.quests.space.end1.title}",
-	x: -3.0d,
-	y: -13.5d,
+	x: 1.5d,
+	y: -15.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.space.end1.subtitle}",
 	dependencies: [
-		"665e5294"
+		"1dd04076"
 	],
 	size: 3.0d,
 	tasks: [{

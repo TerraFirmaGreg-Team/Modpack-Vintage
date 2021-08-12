@@ -95,12 +95,11 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	//<tfc:metal/propick_head/invar>,//TFCM
 	//other
 	<tfctech:powder/potash>,
-	<gregtech:meta_item_1:10197>,
-	<gregtech:meta_item_1:9197>,
-	<gregtech:meta_item_1:10197>,
+	<tfc:metal/dust/wrought_iron>,
+	<tfc:metal/nugget/wrought_iron>,
+	<tfc:metal/double_sheet/wrought_iron>,
 	<gregtech:meta_item_1:12197>,
-	<gregtech:meta_item_1:2197>,
-	<gtadditions:ga_meta_item:1197>
+	<gregtech:meta_item_1:10197>
 ] as IItemStack[];
 for item in ItemsToRemoveTFCJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -180,6 +179,77 @@ compressor.recipeBuilder().inputs(<ore:gemSapphire>*9).outputs(<gregtech:meta_bl
 compressor.recipeBuilder().inputs(<ore:gemOpal>*9).outputs(<gregtech:meta_block_compressed_13:5>).duration(40).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemAmethyst>*9).outputs(<gregtech:meta_block_compressed_13:6>).duration(40).EUt(2).buildAndRegister();
 
+//Фикс рвотного железа
+//CONVERT
+forge_hammer.recipeBuilder().inputs(<gregtech:meta_item_1:10197>).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
+//FH Hot Iron Ingot --> Wrought Iron Ingot
+recipes.removeByRecipeName("gtadditions:ga_wrought");
+recipes.addShapeless(<tfc:metal/ingot/wrought_iron>, [<gtadditions:ga_meta_item:32037>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]);
+//Двойная пластина
+Welding.removeRecipe(<tfc:metal/double_sheet/wrought_iron>);
+Welding.addRecipe("tfc:double_plate_fixed", <ore:plateWroughtIron>, <ore:plateWroughtIron>, <gtadditions:ga_meta_item:1197>, 3);
+//Слиток
+furnace.remove(<gregtech:meta_item_1:10197>);
+furnace.addRecipe(<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:2197>);
+forge_hammer.findRecipe(8, [<gtadditions:ga_meta_item:32037>], null).remove();
+large_forge_hammer.findRecipe(8, [<gtadditions:ga_meta_item:32037>], [<liquid:lubricant>*2]).remove();
+forge_hammer.recipeBuilder().inputs(<gtadditions:ga_meta_item:32037>).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
+//Наггет
+alloy_smelter.findRecipe(8, [<gregtech:meta_item_1:9197>*9, <gregtech:meta_item_1:32306>], null).remove();
+alloy_smelter.recipeBuilder().inputs(<gregtech:meta_item_1:9197>*9).notConsumable(<gregtech:meta_item_1:32306>).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
+//Пластина
+recipes.removeByRecipeName("gtadditions:plate_wrought_iron");
+recipes.removeByRecipeName("gtadditions:flatten_plate_wrought_iron");
+recipes.addShaped(<tfc:metal/sheet/wrought_iron>,
+[[null, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), null], 
+[null, <gtadditions:ga_meta_item:197>, null],
+[null, null, null]]);
+//Жидкость слиток
+fluid_solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [<liquid:wrought_iron>*144]).remove();
+fluid_solidifier.recipeBuilder().notConsumable(<gregtech:meta_item_1:32306>).fluidInputs([<liquid:wrought_iron>*144]).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
+//Жидкость пластина
+fluid_solidifier.findRecipe(8, [<gregtech:meta_item_1:32301>], [<liquid:wrought_iron>*144]).remove();
+fluid_solidifier.recipeBuilder().notConsumable(<gregtech:meta_item_1:32301>).fluidInputs([<liquid:wrought_iron>*144]).outputs(<tfc:metal/sheet/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
+//Пластина AlloySmelter
+alloy_smelter.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*2, <gregtech:meta_item_1:32301>], null).remove();
+alloy_smelter.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>*2).notConsumable(<gregtech:meta_item_1:32301>).outputs(<tfc:metal/sheet/wrought_iron>).duration(200).EUt(16).buildAndRegister(); 
+//Слиток Compressor
+compressor.findRecipe(2, [<tfc:metal/nugget/wrought_iron>*9], null).remove();
+compressor.recipeBuilder().inputs(<gregtech:meta_item_1:9197>*9).outputs(<tfc:metal/ingot/wrought_iron>).duration(200).EUt(8).buildAndRegister(); 
+//Блок AlloySmelter
+alloy_smelter.findRecipe(8, [<gregtech:meta_block_compressed_12:5>, <gregtech:meta_item_1:32306>], null).remove();
+alloy_smelter.recipeBuilder().inputs(<gregtech:meta_block_compressed_12:5>).notConsumable(<gregtech:meta_item_1:32306>).outputs(<tfc:metal/ingot/wrought_iron>*9).duration(1000).EUt(8).buildAndRegister(); 
+//Слиток BlastFurnace
+blast_furnace.findRecipe(500, [<gregtech:meta_item_1:2121>*5], null).remove();
+blast_furnace.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2121>*5)
+    .outputs(<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:2122>*3)
+    .property("temperature", 1700)
+    .duration(600).EUt(500).buildAndRegister();
+//Слиток Packer
+packer.findRecipe(4, [<tfc:metal/nugget/wrought_iron>*9, <gtadditions:ga_meta_item:32133>], null).remove();
+//Блок Unpacker
+unpacker.findRecipe(8, [<gregtech:meta_block_compressed_12:5>, <gtadditions:ga_meta_item:32133>], null).remove();
+//Пластина MetalBender
+metal_bender.findRecipe(24, [<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], null).remove();
+metal_bender.findRecipe(24, [<gtadditions:ga_meta_item:197>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], null).remove();
+metal_bender.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0})).outputs(<tfc:metal/sheet/wrought_iron>).duration(140).EUt(24).buildAndRegister(); 
+metal_bender.recipeBuilder().inputs(<gtadditions:ga_meta_item:197>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0})).outputs(<tfc:metal/sheet/wrought_iron>).duration(140).EUt(24).buildAndRegister(); 
+//Пластины CuttingSaw
+cutting_saw.findRecipe(30, [<gregtech:meta_block_compressed_12:5>], [<liquid:water>*42]).remove();
+cutting_saw.findRecipe(30, [<gregtech:meta_block_compressed_12:5>], [<liquid:distilled_water>*31]).remove();
+cutting_saw.findRecipe(30, [<gregtech:meta_block_compressed_12:5>], [<liquid:lubricant>*10]).remove();
+cutting_saw.recipeBuilder().inputs(<gregtech:meta_block_compressed_12:5>).fluidInputs([<liquid:water>*42]).outputs(<tfc:metal/sheet/wrought_iron>*9).duration(600).EUt(30).buildAndRegister(); 
+cutting_saw.recipeBuilder().inputs(<gregtech:meta_block_compressed_12:5>).fluidInputs([<liquid:distilled_water>*31]).outputs(<tfc:metal/sheet/wrought_iron>*9).duration(400).EUt(30).buildAndRegister(); 
+cutting_saw.recipeBuilder().inputs(<gregtech:meta_block_compressed_12:5>).fluidInputs([<liquid:lubricant>*10]).outputs(<tfc:metal/sheet/wrought_iron>*9).duration(200).EUt(30).buildAndRegister(); 
+//Пластины Extruder
+extruder.findRecipe(64, [<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:32350>], null).remove();
+extruder.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).notConsumable(<gregtech:meta_item_1:32350>).outputs(<tfc:metal/sheet/wrought_iron>).duration(150).EUt(64).buildAndRegister(); 
+//Пластины ForgeHammer
+forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], null).remove();
+large_forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], [<liquid:lubricant>*2]).remove();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>*3).outputs(<tfc:metal/sheet/wrought_iron>*2).duration(100).EUt(16).buildAndRegister(); 
+
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
 recipes.addShaped(<gregtech:machine:13>,
@@ -238,9 +308,6 @@ extractor.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<greg
 forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 
-//Крафт Furnaceblock'a
-assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 22})).outputs(<contenttweaker:furnaceblock>).duration(20).EUt(4).buildAndRegister();	
-
 //Fetilizer
 Rack.addRecipe("tfc:fertilizerFix", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8, 1.0);
 
@@ -265,7 +332,7 @@ ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.1, 0.4, 0.5, 0, 1.0, 0
 //Кривые палки офаем
 Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
 Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
-Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
+
 
 //Палки из пиломатериалов
 recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>]);
@@ -285,7 +352,6 @@ Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled
 
 //Крафт железного трапдора через наковальню тфк
 Anvil.addRecipe("tfc:irontrapdoortweaked", <tfc:metal/double_sheet/wrought_iron>, <minecraft:iron_trapdoor>, 3, "general", "UPSET_NOT_LAST", "BEND_NOT_LAST", "UPSET_THIRD_LAST");
-
 
 //Отключение крафтов всех геологических TFC
 Anvil.removeRecipe(<tfc:metal/propick_head/red_steel>);
@@ -599,3 +665,98 @@ large_mixer.recipeBuilder().inputs(<tfc:plants/porcini>, <gtadditions:ga_meta_it
 //Земля+Трава
 centrifuge.recipeBuilder().inputs(<ore:dirt>).chancedOutput(<gregtech:meta_item_2:32570>, 1250, 750).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 4000, 900).duration(20).EUt(30).buildAndRegister();
 centrifuge.recipeBuilder().inputs(<ore:grass>).chancedOutput(<gregtech:meta_item_2:32570>, 3000, 1200).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 5000, 900).duration(20).EUt(30).buildAndRegister();
+
+//Фикс тулов
+//Удаление рецептов
+global ItemsToRemoveTFCTools as IItemStack[] = [
+	//Кирки
+	<tfc:metal/pick/bismuth_bronze>,
+	<tfc:metal/pick/black_bronze>,
+	<tfc:metal/pick/bronze>,
+	<tfc:metal/pick/copper>,
+	<tfc:metal/pick/black_steel>,
+	<tfc:metal/pick/steel>,
+	<tfc:metal/pick/wrought_iron>,
+	<tfc:metal/pick/blue_steel>,
+	<tfc:metal/pick/red_steel>,
+	//Топоры
+	/*
+	<tfc:metal/axe/tungsten>,
+	<tfc:metal/axe/titanium>,
+	<tfc:metal/axe/boron>,
+	<tfc:metal/axe/cobalt>,
+	<tfc:metal/axe/bismuth_bronze>,
+	<tfc:metal/axe/black_bronze>,
+	<tfc:metal/axe/bronze>,
+	<tfc:metal/axe/copper>,
+	<tfc:metal/axe/mithril>,
+	<tfc:metal/axe/black_steel>,
+	<tfc:metal/axe/zircaloy>,
+	<tfc:metal/axe/steel>,
+	<tfc:metal/axe/osmium>,
+	<tfc:metal/axe/nickel_silver>,
+	<tfc:metal/axe/beryllium_copper>,
+	<tfc:metal/axe/wrought_iron>,
+	<tfc:metal/axe/aluminium>,
+	<tfc:metal/axe/tungsten_steel>,
+	<tfc:metal/axe/invar>,
+	<tfc:metal/axe/blue_steel>,
+	<tfc:metal/axe/red_steel>,
+	//Мотыги
+	<tfc:metal/hoe/tungsten>,
+	<tfc:metal/hoe/titanium>,
+	<tfc:metal/hoe/boron>,
+	<tfc:metal/hoe/cobalt>,
+	<tfc:metal/hoe/bismuth_bronze>,
+	<tfc:metal/hoe/black_bronze>,
+	<tfc:metal/hoe/bronze>,
+	<tfc:metal/hoe/copper>,
+	<tfc:metal/hoe/mithril>,
+	<tfc:metal/hoe/black_steel>,
+	<tfc:metal/hoe/zircaloy>,
+	<tfc:metal/hoe/steel>,
+	<tfc:metal/hoe/osmium>,
+	<tfc:metal/hoe/nickel_silver>,
+	<tfc:metal/hoe/beryllium_copper>,
+	<tfc:metal/hoe/wrought_iron>,
+	<tfc:metal/hoe/aluminium>,
+	<tfc:metal/hoe/tungsten_steel>,
+	<tfc:metal/hoe/invar>,
+	<tfc:metal/hoe/blue_steel>,
+	<tfc:metal/hoe/red_steel>,*/
+	//Мечи
+	<tfc:metal/sword/bismuth_bronze>,
+	<tfc:metal/sword/black_bronze>,
+	<tfc:metal/sword/bronze>,
+	<tfc:metal/sword/copper>,
+	<tfc:metal/sword/black_steel>,
+	<tfc:metal/sword/steel>,
+	<tfc:metal/sword/wrought_iron>,
+	<tfc:metal/sword/blue_steel>,
+	<tfc:metal/sword/red_steel>,
+	//Лопаты
+	/*<tfc:metal/shovel/tungsten>,
+	<tfc:metal/shovel/titanium>,
+	<tfc:metal/shovel/boron>,
+	<tfc:metal/shovel/cobalt>,
+	<tfc:metal/shovel/bismuth_bronze>,
+	<tfc:metal/shovel/black_bronze>,
+	<tfc:metal/shovel/bronze>,
+	<tfc:metal/shovel/copper>,
+	<tfc:metal/shovel/mithril>,
+	<tfc:metal/shovel/black_steel>,
+	<tfc:metal/shovel/zircaloy>,
+	<tfc:metal/shovel/steel>,
+	<tfc:metal/shovel/osmium>,
+	<tfc:metal/shovel/nickel_silver>,
+	<tfc:metal/shovel/beryllium_copper>,
+	<tfc:metal/shovel/wrought_iron>,
+	<tfc:metal/shovel/aluminium>,
+	<tfc:metal/shovel/tungsten_steel>,
+	<tfc:metal/shovel/invar>,
+	<tfc:metal/shovel/blue_steel>,
+	<tfc:metal/shovel/red_steel>*/
+] as IItemStack[];
+for item in ItemsToRemoveTFCTools{
+    recipes.remove(item);
+}

@@ -13,7 +13,22 @@
 		type: "item",
 		title: "Кусочек висмута",
 		items: [{
-			item: "gregtech:meta_item_1 1 8"
+			id: "gregtech:meta_item_1",
+			Damage: 8s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
 			id: "gregtech:meta_item_1",
@@ -34,7 +49,22 @@
 			}
 		},
 		{
-			item: "gregtech:meta_item_1 1 8"
+			id: "gregtech:meta_item_1",
+			Damage: 8s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}]
 	}]
 }

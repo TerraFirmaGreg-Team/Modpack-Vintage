@@ -297,6 +297,13 @@ for item in ButtonStone {
 
 <ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
 
-//Фик железка
-<ore:plateDoubleWroughtIron>.add(<tfc:metal/double_sheet/wrought_iron>);
+//ОрДиктЖелезаИВротЖелеза
+//<ore:plateAllDefaultIron>.add(<gregtech:meta_item_1:12033>);
+//<ore:plateAllDefaultIron>.add(<gregtech:meta_item_1:12197>);
 
+//Фик железка
+<ore:plateWroughtIron>.remove(<gregtech:meta_item_1:12197>);
+<ore:ingotWroughtIron>.remove(<gregtech:meta_item_1:10197>);
+<ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);
+<ore:sheetDoubleWroughtIron>.remove(<tfc:metal/double_sheet/wrought_iron>);
+<ore:sheetDoubleWroughtIron>.add(<gtadditions:ga_meta_item:1197>);

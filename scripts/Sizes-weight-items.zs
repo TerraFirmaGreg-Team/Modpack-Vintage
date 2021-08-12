@@ -160,5 +160,5 @@ import crafttweaker.item.IItemStack;
 ];
 
 for item in GTIngots {
-	ItemRegistry.registerItemSize(item, "NORMAL", "MEDIUM");
+	ItemRegistry.registerItemSize(item, "LARGE", "LIGHT");
 	}

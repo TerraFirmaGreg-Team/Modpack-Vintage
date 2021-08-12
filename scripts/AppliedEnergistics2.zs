@@ -80,9 +80,6 @@ global ItemsToRemoveAE as IItemStack[] = [
 	<appliedenergistics2:entropy_manipulator>,
 	<appliedenergistics2:color_applicator>,
 	<appliedenergistics2:biometric_card>,
-	<appliedenergistics2:crystal_seed>,
-	<appliedenergistics2:crystal_seed:600>,
-	<appliedenergistics2:crystal_seed:1200>,
 	<appliedenergistics2:part:221>,
 	<appliedenergistics2:part:241>,
 	<appliedenergistics2:part:261>,
@@ -199,24 +196,6 @@ alloy_smelter.recipeBuilder()
     .outputs(<appliedenergistics2:quartz_glass> * 4)
     .duration(400).EUt(16).buildAndRegister();
 //Семяна
-//Крафт семени истинного кварца
-autoclave.recipeBuilder()
- 	.inputs(<ore:sand> * 2, <ore:dustCertusQuartz>)
- 	.fluidInputs(<liquid:water> * 100)
- 	.outputs(<appliedenergistics2:crystal_seed>)
- 	.duration(400).EUt(8).buildAndRegister();
-//Крафт семени незер кварца
-autoclave.recipeBuilder()
- 	.inputs(<ore:sand> * 2, <ore:dustNetherQuartz>)
- 	.fluidInputs(<liquid:water> * 100)
- 	.outputs(<appliedenergistics2:crystal_seed:600>)
- 	.duration(400).EUt(8).buildAndRegister();
-//Крафт семени флюкса
-autoclave.recipeBuilder()
- 	.inputs(<ore:sand> * 2, <ore:dustFluix>)
- 	.fluidInputs(<liquid:water> * 100)
- 	.outputs(<appliedenergistics2:crystal_seed:1200>)
- 	.duration(400).EUt(8).buildAndRegister();
 //Чистый флакс кристалл через воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed:1200> * 1)
@@ -386,7 +365,7 @@ assembler.recipeBuilder()
 	.duration(60).EUt(32).buildAndRegister();
 //Заряженный кварц
 electrolyzer.recipeBuilder()
-	.inputs(<ore:crystalCertusQuartz> | <ore:crystalPureCertusQuartz>)
+	.inputs(<ore:crystalCertusQuartz> | <ore:gemCertusQuartz>)
 	.outputs(<appliedenergistics2:material:1>)
 	.duration(520)
     .EUt(82)

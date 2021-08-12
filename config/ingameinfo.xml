@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <lines at="topleft">
+        <line>
+            <str>{pingicon} $6{username}$f </str>
+            <str>FPS: </str>
+            <op>
+                <str>gt</str>
+                <var>fps</var>
+                <num>60</num>
+                <num>45</num>
+                <num>30</num>
+                <num>15</num>
+                <num>0</num>
+                <str>$a</str>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <var>fps</var>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:clock</str>
+            </icon>
+            <str>$f Time: </str>
+            <str>$6{mctime24} $r</str>
+            <if>
+                <var>daytime</var>
+                <str>$e(day)</str>
+                <str>$7(night)</str>
+            </if>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:end_portal_frame</str>
+            </icon>
+            <str> $rDimension: $6{dimension}  </str>
+        </line>
+        <line>
+            <icon>
+                <str>tfc:wood/sapling/oak</str>
+            </icon>
+            <str> Biome: $3{biome}$f</str>
+        </line>
+		<line>
+            <icon>
+                <str>minecraft:map</str>
+            </icon>
+            <str> Coordinates: </str>
+			<str> X: $3{xi}$f</str>
+			<str> Y: $3{yi}$f</str>
+			<str> Z: $3{zi}$f</str>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:torch</str>
+            </icon>
+            <str> Light: </str>
+            <max>
+                <var>light</var>
+                <num>7.5</num>
+                <str>$e</str>
+                <str>$c</str>
+            </max>
+            <var>light</var>
+            <str>$r (eye: </str>
+            <max>
+                <var>lighteye</var>
+                <num>7.5</num>
+                <str>$e</str>
+                <str>$c</str>
+            </max>
+            <var>lighteye</var>
+            <str>$r)</str>
+        </line>
+    </lines>
+    <lines at="middleleft">
+        <line>
+            <var>mainhandicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>mainhanddamageleft</var>
+                    <var>mainhandmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <num>0</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <max>
+                <var>mainhanddamageleft</var>
+                <num>0.5</num>
+                <str>{mainhanddamageleft}$f / $e{mainhandmaxdamage}</str>
+                <var>mainhandquantity</var>
+            </max>
+        </line>
+        <line>
+            <var>helmeticon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>helmetdamageleft</var>
+                    <var>helmetmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>helmetdamageleft</var>
+                <num>0.5</num>
+                <str>{helmetdamageleft}$f / $e{helmetmaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+        </line>
+        <line>
+            <var>chestplateicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>chestplatedamageleft</var>
+                    <var>chestplatemaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>chestplatedamageleft</var>
+                <num>0.5</num>
+                <str>{chestplatedamageleft}$f / $e{chestplatemaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+        </line>
+        <line>
+            <var>leggingsicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>leggingsdamageleft</var>
+                    <var>leggingsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>leggingsdamageleft</var>
+                <num>0.5</num>
+                <str>{leggingsdamageleft}$f / $e{leggingsmaxdamage}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <var>bootsicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>bootsdamageleft</var>
+                    <var>bootsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>bootsdamageleft</var>
+                <num>0.5</num>
+                <str>{bootsdamageleft}$f / $e{bootsmaxdamage}</str>
+                <str/>
+            </max>
+        </line>
+    </lines>
+    <lines at="bottomright">
+        <line>
+            <max>
+                <var>potiondurationticks0</var>
+                <num>0.5</num>
+                <str>{potionduration0} {potionicon0}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks1</var>
+                <num>0.5</num>
+                <str>{potionduration1} {potionicon1}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks2</var>
+                <num>0.5</num>
+                <str>{potionduration2} {potionicon2}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks3</var>
+                <num>0.5</num>
+                <str>{potionduration3} {potionicon3}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks4</var>
+                <num>0.5</num>
+                <str>{potionduration4} {potionicon4}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks5</var>
+                <num>0.5</num>
+                <str>{potionduration5} {potionicon5}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks6</var>
+                <num>0.5</num>
+                <str>{potionduration6} {potionicon6}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks7</var>
+                <num>0.5</num>
+                <str>{potionduration7} {potionicon7}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <max>
+                <var>potiondurationticks8</var>
+                <num>0.5</num>
+                <str>{potionduration8} {potionicon8}</str>
+                <str/>
+            </max>
+        </line>
+    </lines>
+</config>

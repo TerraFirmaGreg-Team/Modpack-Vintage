@@ -1,23 +1,35 @@
 import crafttweaker.item.IItemStack;
-//import crafttweaker.liquid.ILiquidStack;
-//import crafttweaker.item.IIngredient;
-//import crafttweaker.oredict.IOreDictEntry;
-//import crafttweaker.item.IItemTransformer;
-
-//import mods.gregtech.recipe.PBFRecipeBuilder; //PBF
-//import mods.gregtech.recipe.RecipeMaps;       //PBF
-//import mods.gregtech.recipe.RecipeMap;
 
 //Удаление + скрытие
-mods.jei.JEI.removeAndHide(<gregtech:machine:807>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:808>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:2553>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:510>);
-mods.jei.JEI.removeAndHide(<gregtech:metal_casing:1>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2356>);
-mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32037>);
-mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32038>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32015>);
+global ItemsToRemoveGTJEI as IItemStack[] = [
+    <gregtech:machine:807>,
+    <gregtech:machine:808>,
+    <gregtech:machine:2553>,
+    <gregtech:machine:510>,
+    <gregtech:metal_casing:1>,
+    <gregtech:meta_item_1:2356>,
+    <gtadditions:ga_meta_item:32038>,
+    <gregtech:meta_item_2:32015>,
+    <gregtech:machine:2213>,
+    <gregtech:machine:2214>,
+    <gregtech:machine:2215>,
+    <gregtech:machine:2216>,
+    <gregtech:machine:4000>,
+    <gregtech:machine:4001>,
+    <gregtech:machine:4002>,
+    <gregtech:machine:4003>,
+    <gregtech:machine:4004>,
+    <gregtech:machine:4005>,
+    <gregtech:machine:4006>,
+    <gregtech:machine:4007>,
+    <gregtech:machine:410>,
+    <gregtech:machine:411>,
+    <gregtech:machine:412>,
+    <gregtech:machine:413>
+] as IItemStack[];
+for item in ItemsToRemoveGTJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
 
 //Переработка танков в Arc
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:812>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10095>*3).duration(750).EUt(34).buildAndRegister();
@@ -26,9 +38,8 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:814>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:815>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10072>*3).duration(750).EUt(34).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:816>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10235>*3).duration(750).EUt(34).buildAndRegister();
 
-//Реплейс всех печек на печной блок
-recipes.replaceAllOccurences(<minecraft:furnace>, <contenttweaker:furnaceblock>);
-recipes.addShapeless (<contenttweaker:furnaceblock>, [<minecraft:furnace>]);
+//Реплейс всех печек на печь из GT
+recipes.replaceAllOccurences(<minecraft:furnace>, <gregtech:machine:16>);
 
 //Сундуки можно переработать
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:802>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10095>*10).EUt(8).duration(400).buildAndRegister();
@@ -43,7 +54,7 @@ recipes.addShaped(<gregtech:meta_item_1:2325>*2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null]]);
 //Крафт бамаги из пыли
-recipes.addShaped(<gregtech:meta_item_1:2325>*2,
+recipes.addShaped(<minecraft:paper>*2,
 [[null, <ore:slabStonePolished>, null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
  [null, <ore:slabStonePolished>, null]]);
@@ -72,7 +83,7 @@ fluid_heater.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag
 
 //Фиксы корпусов
 //Удаление
-assembler.findRecipe(16, [<gregtech:meta_item_1:12197>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12184>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12001>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<gregtech:meta_item_1:12183>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
@@ -112,7 +123,9 @@ recipes.addShapeless (<gregtech:meta_item_1:2233>*8, [<gregtech:meta_item_1:2227
 recipes.addShapeless (<gregtech:meta_item_1:2232>*8, [<gregtech:meta_item_1:2228>, <gregtech:meta_item_1:2094>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
 
 //Отключение крафта 2х слиток 1х молот = пластина
+
 recipes.removeShaped(<ore:plateAluminium>);
+recipes.removeShaped(<ore:plateWroughtIron>);
 recipes.removeShaped(<ore:plateAmericium>);
 recipes.removeShaped(<ore:plateAntimony>);
 recipes.removeShaped(<ore:plateBeryllium>);

@@ -61,6 +61,15 @@ minecraft:mutated_mesa
 minecraft:mutated_mesa_rock
 minecraft:mutated_mesa_clear_rock
 appliedenergistics2:storage_biome
+galacticraftcore:outer space
+galacticraftplanets:outer space 1
+galacticraftplanets:outer space 2
+galaxyspace:space
+galaxyspace:spacelowplains
+galaxyspace:spacemidplains
+galaxyspace:spacelowhills
+galaxyspace:spacemidhills
+asmodeuscore:-=|worldengine|=-
 tfc:ocean
 tfc:river
 tfc:beach
@@ -75,16 +84,3 @@ tfc:mountains_edge
 tfc:high_plains
 tfc:deep_ocean
 tfc:lake
-galacticraftcore:outer space
-galacticraftplanets:outer space 1
-galacticraftplanets:outer space 2
-extraplanets:outer space 3
-extraplanets:outer space 4
-extraplanets:outer space 5
-extraplanets:outer space 6
-extraplanets:outer space 7
-extraplanets:outer space 8
-extraplanets:outer space 9
-extraplanets:outer space 10
-extraplanets:outer space 11
-extraplanets:outer space 12

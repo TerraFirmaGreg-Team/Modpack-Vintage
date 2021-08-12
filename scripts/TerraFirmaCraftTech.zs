@@ -11,25 +11,26 @@ WireDrawing.addRecipe("tfctech:wire_electrum", <tfctech:metal/electrum_wire:1>, 
 WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
 WireDrawing.addRecipe("tfctech:wire_red_alloy", <tfctech:metal/red_alloy_wire:1>, 3, <gregtech:cable:237>, 0xFFDA6E6E);
 WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
-WireDrawing.addRecipe("tfctech:wire_gold", <tfctech:metal/gold_wire:1>, 3, <gregtech:cable:26>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_gold", <tfctech:metal/gold_wire:1>, 3, <gregtech:cable:26>, 0xFFc2bb30);
 WireDrawing.removeRecipe(<tfctech:metal/lead_wire>);
-WireDrawing.addRecipe("tfctech:wire_lead", <tfctech:metal/lead_wire:1>, 3, <gregtech:cable:35>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_lead", <tfctech:metal/lead_wire:1>, 3, <gregtech:cable:35>, 0xFF593f73);
 WireDrawing.removeRecipe(<tfctech:metal/nickel_wire>);
-WireDrawing.addRecipe("tfctech:wire_nickel", <tfctech:metal/nickel_wire:1>, 3, <gregtech:cable:44>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_nickel", <tfctech:metal/nickel_wire:1>, 3, <gregtech:cable:44>, 0xFFb79bd4);
 WireDrawing.removeRecipe(<tfctech:metal/silver_wire>);
-WireDrawing.addRecipe("tfctech:wire_silver", <tfctech:metal/silver_wire:1>, 3, <gregtech:cable:62>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_silver", <tfctech:metal/silver_wire:1>, 3, <gregtech:cable:62>, 0xFFbfbfbf);
 WireDrawing.removeRecipe(<tfctech:metal/tin_wire>);
-WireDrawing.addRecipe("tfctech:wire_tin", <tfctech:metal/tin_wire:1>, 3, <gregtech:cable:71>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_tin", <tfctech:metal/tin_wire:1>, 3, <gregtech:cable:71>, 0xFF666666);
 WireDrawing.removeRecipe(<tfctech:metal/zinc_wire>);
-WireDrawing.addRecipe("tfctech:wire_zinc", <tfctech:metal/zinc_wire:1>, 3, <gregtech:cable:79>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_zinc", <tfctech:metal/zinc_wire:1>, 3, <gregtech:cable:79>, 0xFF999999);
 WireDrawing.removeRecipe(<tfctech:metal/steel_wire>);
-WireDrawing.addRecipe("tfctech:wire_steel", <tfctech:metal/steel_wire:1>, 3, <gregtech:cable:184>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_steel", <tfctech:metal/steel_wire:1>, 3, <gregtech:cable:184>, 0xFF4d4d4d);
 WireDrawing.removeRecipe(<tfctech:metal/platinum_wire>);
-WireDrawing.addRecipe("tfctech:wire_platinum", <tfctech:metal/platinum_wire:1>, 3, <gregtech:cable:51>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_platinum", <tfctech:metal/platinum_wire:1>, 3, <gregtech:cable:51>, 0xFFbabf88);
 WireDrawing.removeRecipe(<tfctech:metal/black_steel_wire>);
-WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <gregtech:cable:231>, 0xFFA6B525);
+WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <gregtech:cable:231>, 0xFF292929);
 
 //Фикс палок из TFC-Tech
+//Anvil.removeRecipe(<>);
 /*
 Anvil.addRecipe("tfctech:rod_1", <gregtech:meta_item_1:10230>, <gregtech:meta_item_2:14230>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:rod_2", <gregtech:meta_item_2:10035>, <gregtech:meta_item_2:14035>*2, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");

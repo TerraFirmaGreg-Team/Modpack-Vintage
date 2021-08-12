@@ -54,7 +54,8 @@ global ItemsToRemoveVJEI as IItemStack[] = [
     <minecraft:mutton>,
     <minecraft:cooked_mutton>,
     <minecraft:beetroot>,
-    <minecraft:beetroot_soup>
+    <minecraft:beetroot_soup>,
+    <minecraft:furnace>
 ] as IItemStack[];
 for item in ItemsToRemoveVJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -264,12 +265,6 @@ recipes.addShaped(<minecraft:piston>,
 recipes.addShaped(<minecraft:brewing_stand>, [
 [null,blazerod,null],
 [cobble,cobble,cobble]]);
-
-//Печка блок
-recipes.addShaped(<contenttweaker:furnaceblock>,
-[[<ore:plateCurvedSteel>, <minecraft:iron_trapdoor>, <ore:plateCurvedSteel>],
- [<ore:plateSteel>, <ore:GenRockII>, <ore:plateSteel>],
- [<ore:plateCurvedSteel>, <minecraft:cauldron>, <ore:plateCurvedSteel>]]);
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,

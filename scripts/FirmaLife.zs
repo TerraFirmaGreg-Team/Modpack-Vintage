@@ -10,14 +10,14 @@ recipes.addShaped(<firmalife:climate_station>,
 //Климатическая станция уровня 1
 recipes.remove(<firmalife:climate_station_1>);
 recipes.addShaped(<firmalife:climate_station_1>,
-[[<ore:dustWroughtIron>, <ore:blockGlass>, <ore:dustWroughtIron>],
+[[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
  [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
- [<ore:dustWroughtIron>, <ore:blockGlass>, <ore:dustWroughtIron>]]);
+ [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
 //Бафф крафта стен теплицы
 Anvil.removeRecipe(<firmalife:greenhouse_wall>*2);
-Anvil.addRecipe("tfc:greenhouse_wall_fix", <ore:dustWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
+Anvil.addRecipe("tfc:greenhouse_wall_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
 
 //Бафф крафта крыши теплицы
 Anvil.removeRecipe(<firmalife:greenhouse_roof>*2);
-Anvil.addRecipe("tfc:greenhouse_roof_fix", <ore:dustWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:greenhouse_roof_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");

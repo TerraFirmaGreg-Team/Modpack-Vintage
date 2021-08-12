@@ -11,13 +11,6 @@ aquamarine_andesite_sand.setBlockResistance(1.0);
 aquamarine_andesite_sand.setBlockSoundType(<soundtype:sand>);
 aquamarine_andesite_sand.register();
 
-//Печной блок
-var furnaceblock = VanillaFactory.createBlock("furnaceblock", <blockmaterial:rock>);
-furnaceblock.setBlockHardness(1.0);
-furnaceblock.setBlockResistance(1.0);
-furnaceblock.setBlockSoundType(<soundtype:stone>);
-furnaceblock.register();
-
 //ПЛАНЕТЫ
 //Марс
 VanillaFactory.createItem("marsturf").register();

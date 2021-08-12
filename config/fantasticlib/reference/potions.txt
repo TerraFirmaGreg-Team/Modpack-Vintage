@@ -25,10 +25,13 @@ minecraft:glowing
 minecraft:levitation
 minecraft:luck
 minecraft:unluck
+asmodeuscore:radiation
+asmodeuscore:overheat
+asmodeuscore:hypothermia
+galaxyspace:antiradiation
 tfc:overburdened
 tfc:thirst
 tfc:food_poison
-ca:caffeine
 firmalife:swarm
 potioncore:love
 potioncore:repair
@@ -73,11 +76,6 @@ potioncore:spin
 potioncore:curse
 potioncore:burst
 potioncore:archery
-astralsorcery:potioncheatdeath
-astralsorcery:potionbleed
-astralsorcery:potionspellplague
-astralsorcery:potiondropmodifier
-astralsorcery:potiontimefreeze
 xaerominimap:no_minimap
 xaerominimap:no_minimap_harmful
 xaerominimap:no_minimap_beneficial
