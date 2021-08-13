@@ -28,7 +28,7 @@ global ItemsToRemoveAE as IItemStack[] = [
 	<appliedenergistics2:quantum_link>,
 	<appliedenergistics2:spatial_pylon>,
 	<appliedenergistics2:spatial_io_port>,
-	<appliedenergistics2:part:440>,
+	//<appliedenergistics2:part:440>,
 	<appliedenergistics2:cell_workbench>,
 	<appliedenergistics2:io_port>,
 	<appliedenergistics2:condenser>,
@@ -451,6 +451,8 @@ recipes.addShapeless(<appliedenergistics2:part:302>, [<appliedenergistics2:part:
 recipes.addShapeless(<appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
 //Жидкостный интерфейс
 recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
+//Интерфейс
+//recipes.addShapeless(<appliedenergistics2:part:440>, [<appliedenergistics2:interface>]);
 //Шина P2P тунеля жидкостная
 recipes.addShapeless(<appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
 //Шина P2P тунеля редстоуновая
