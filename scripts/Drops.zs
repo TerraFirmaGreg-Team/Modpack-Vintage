@@ -120,6 +120,23 @@ Dropt.list("DynamicLeavesTFC43")
   .addDrop(Dropt.drop()
   .items([<tfc:wood/leaves/hevea>])));
 
+
+//Уголек
+//Битумный уголь
+Dropt.list("GTCoalToTFCCoal")
+  .add(Dropt.rule()
+      .matchBlocks(["gregtech:ore_coal_0"])
+      .matchDrops([<gregtech:ore_coal_0>])
+      .replaceStrategy("REPLACE_ITEMS")
+      .addDrop(Dropt.drop().items([<tfc:ore/bituminous_coal>])));
+//Лигнитовый уголь
+Dropt.list("GTLigniteCoalToTFCCoalStyle")
+  .add(Dropt.rule()
+      .matchBlocks(["gregtech:ore_lignite_0"])
+      .matchDrops([<gregtech:ore_lignite_0>])
+      .replaceStrategy("REPLACE_ITEMS")
+      .addDrop(Dropt.drop().items([<gregtech:meta_item_1:8211>])));
+
 Dropt.list("Dirt")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/granite>])));
