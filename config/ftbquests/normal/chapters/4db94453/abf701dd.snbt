@@ -1,20 +1,18 @@
 {
-	x: -10.5d,
-	y: -15.5d,
+	x: 1.5d,
+	y: 8.0d,
 	shape: "circle",
-	description: "{tfg.quests.primitive.astralTome.subtitle}",
 	dependencies: [
-		"f2a2339b"
+		"353f5942"
 	],
 	tasks: [{
-		uid: "8c8070f6",
+		uid: "9672c734",
 		type: "item",
 		items: [{
-			id: "astralsorcery:itemjournal",
+			id: "appliedenergistics2:network_tool",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			Count: 1b
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

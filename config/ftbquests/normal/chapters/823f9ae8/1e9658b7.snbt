@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.bronzeanvil.title}",
-	x: -12.0d,
-	y: -3.5999999999999996d,
+	x: -9.5d,
+	y: -4.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.bronzeanvil.subtitle}",
 	min_required_dependencies: 2,
@@ -11,7 +11,6 @@
 		"da02bce6",
 		"68bfa880"
 	],
-	size: 1.2d,
 	tasks: [{
 		uid: "41ff969f",
 		type: "item",

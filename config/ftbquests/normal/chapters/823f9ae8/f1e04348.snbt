@@ -18,8 +18,8 @@
 			}
 		}
 	},
-	x: 2.5d,
-	y: -1.0d,
+	x: 3.0d,
+	y: -2.0d,
 	description: "{tfg.quests.primitive.bluesteelingot.subtitle}",
 	dependencies: [
 		"93eccd0d",

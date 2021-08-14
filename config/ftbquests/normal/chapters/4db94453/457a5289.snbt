@@ -1,10 +1,10 @@
 {
-	x: 21.5d,
-	y: 1.5d,
+	x: -2.5d,
+	y: 10.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.spatialport.subtitle}",
 	dependencies: [
-		"4c4596ca"
+		"7daba4fb"
 	],
 	tasks: [{
 		uid: "d32201c9",

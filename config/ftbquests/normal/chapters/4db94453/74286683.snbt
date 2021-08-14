@@ -1,10 +1,10 @@
 {
-	x: 9.5d,
-	y: -1.5d,
+	x: -5.0d,
+	y: 10.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mestoragehousing.subtitle}",
 	dependencies: [
-		"9713578f"
+		"7daba4fb"
 	],
 	tasks: [{
 		uid: "ef1fbeea",

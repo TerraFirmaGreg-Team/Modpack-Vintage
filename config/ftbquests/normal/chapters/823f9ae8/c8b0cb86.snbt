@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.zincpile.title}",
 	x: -16.0d,
-	y: 2.0d,
+	y: 1.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.zincpile.subtitle}",
 	hide_dependency_lines: true,
@@ -13,24 +13,6 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 79"
-		},
-		{
-			id: "gregtech:meta_item_1",
-			Damage: 3079s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
 		}]
 	}]
 }

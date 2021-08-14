@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.barrel.title}",
 	icon: "tfc:wood/barrel/oak",
-	x: -16.0d,
-	y: -9.5d,
+	x: -15.5d,
+	y: -8.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.barrel.subtitle}",
 	dependencies: [

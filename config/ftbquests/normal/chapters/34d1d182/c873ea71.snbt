@@ -5,14 +5,13 @@
 	shape: "hexagon",
 	description: "{tfg.quests.space.end1.subtitle}",
 	dependencies: [
-		"1dd04076"
+		"377aef7d"
 	],
 	size: 3.0d,
 	tasks: [{
 		uid: "ee12d99c",
 		type: "dimension",
-		title: "Visit: Kepler-22b",
-		dim: -22
+		dim: -1030
 	}],
 	rewards: [{
 		uid: "7cb35474",

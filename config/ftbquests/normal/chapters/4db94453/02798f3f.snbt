@@ -1,6 +1,6 @@
 {
-	x: 9.5d,
-	y: 1.0d,
+	x: -1.0d,
+	y: -3.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.fluxcovered.subtitle}",
 	dependencies: [

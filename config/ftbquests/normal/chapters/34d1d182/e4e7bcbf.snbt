@@ -10,7 +10,7 @@
 		uid: "6df00f2e",
 		type: "item",
 		items: [{
-			item: "galacticraftplanets:mars 1 6"
+			item: "galacticraftplanets:rocket_t2 1 3"
 		}]
 	}]
 }

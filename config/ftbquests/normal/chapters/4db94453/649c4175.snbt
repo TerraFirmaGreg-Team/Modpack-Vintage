@@ -1,13 +1,13 @@
 {
-	x: 12.0d,
-	y: 3.0d,
+	x: -5.5d,
+	y: -1.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mefluidterminal.subtitle}",
 	dependencies: [
-		"8d7e7672"
+		"854c4803"
 	],
 	tasks: [{
-		uid: "4df6ece0",
+		uid: "1e4a2f1a",
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:part 1 520"

@@ -1,10 +1,13 @@
 {
-	x: 19.5d,
-	y: 4.5d,
+	x: 11.0d,
+	y: 8.0d,
 	shape: "square",
 	description: "{tfg.quests.ae2.ultimateterminal.subtitle}",
 	dependencies: [
-		"8b8e798b"
+		"0da9f2e2",
+		"8b8e798b",
+		"6caf9732",
+		"e0add132"
 	],
 	tasks: [{
 		uid: "31554e3f",
@@ -47,6 +50,9 @@
 				InfinityEnergy: 0,
 				SelectedTerminal: 0,
 				internalCurrentPower: 0.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

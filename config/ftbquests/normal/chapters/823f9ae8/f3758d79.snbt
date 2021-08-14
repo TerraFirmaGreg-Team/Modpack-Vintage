@@ -18,8 +18,8 @@
 			}
 		}
 	},
-	x: 2.0d,
-	y: 2.0d,
+	x: 2.5d,
+	y: 0.0d,
 	description: "{tfg.quests.primitive.redsteelingot.subtitle}",
 	dependencies: [
 		"2be65217",

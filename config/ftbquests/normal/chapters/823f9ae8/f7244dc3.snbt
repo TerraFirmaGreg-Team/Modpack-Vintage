@@ -19,7 +19,7 @@
 		}
 	},
 	x: 1.0d,
-	y: -3.5d,
+	y: -4.5d,
 	description: "{tfg.quests.primitive.blacksteelingot.subtitle}",
 	dependencies: [
 		"c79d4f95",

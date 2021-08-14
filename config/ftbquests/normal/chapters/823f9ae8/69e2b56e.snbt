@@ -1,6 +1,6 @@
 {
-	x: -10.5d,
-	y: -7.5d,
+	x: -11.0d,
+	y: -8.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.orecheckbox.subtitle}",
 	dependencies: [

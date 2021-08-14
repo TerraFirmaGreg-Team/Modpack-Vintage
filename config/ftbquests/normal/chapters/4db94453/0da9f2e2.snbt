@@ -1,9 +1,9 @@
 {
-	x: 16.5d,
-	y: 4.5d,
+	x: 9.5d,
+	y: 8.5d,
 	shape: "circle",
 	dependencies: [
-		"e0add132"
+		"ba62aee7"
 	],
 	tasks: [{
 		uid: "32fc2d12",
@@ -12,6 +12,9 @@
 			id: "wit:wit",
 			tag: {
 				InfinityEnergy: 0
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

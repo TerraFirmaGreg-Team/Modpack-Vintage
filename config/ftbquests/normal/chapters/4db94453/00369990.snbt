@@ -1,6 +1,6 @@
 {
-	x: 9.0d,
-	y: -3.0d,
+	x: -7.5d,
+	y: 10.0d,
 	description: "{tfg.quests.ae2.itemcell.subtitle}",
 	dependencies: [
 		"74286683"

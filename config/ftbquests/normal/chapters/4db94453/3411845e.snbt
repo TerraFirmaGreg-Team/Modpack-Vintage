@@ -1,6 +1,6 @@
 {
-	x: 8.0d,
-	y: -4.0d,
+	x: -8.5d,
+	y: 8.0d,
 	dependencies: [
 		"f31becba"
 	],
@@ -9,7 +9,10 @@
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:storage_cell_4k",
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

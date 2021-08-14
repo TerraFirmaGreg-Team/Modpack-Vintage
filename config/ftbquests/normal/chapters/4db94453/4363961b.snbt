@@ -1,10 +1,10 @@
 {
-	x: 23.0d,
-	y: 0.0d,
+	x: -4.5d,
+	y: 4.5d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mattercondenser.subtitle}",
 	dependencies: [
-		"4c4596ca"
+		"cedc31b8"
 	],
 	tasks: [{
 		uid: "c2ed694f",

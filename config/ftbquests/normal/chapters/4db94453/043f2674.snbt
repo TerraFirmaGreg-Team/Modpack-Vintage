@@ -1,6 +1,6 @@
 {
-	x: 21.5d,
-	y: 2.5d,
+	x: -2.5d,
+	y: 11.5d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.dvaVTretyey.subtitle}",
 	dependencies: [

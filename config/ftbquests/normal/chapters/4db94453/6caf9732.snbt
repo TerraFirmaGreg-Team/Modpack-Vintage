@@ -1,6 +1,6 @@
 {
-	x: 13.5d,
-	y: 4.5d,
+	x: 9.5d,
+	y: 6.5d,
 	shape: "circle",
 	dependencies: [
 		"ba62aee7"
@@ -12,6 +12,9 @@
 			id: "wct:wct",
 			tag: {
 				InfinityEnergy: 0
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

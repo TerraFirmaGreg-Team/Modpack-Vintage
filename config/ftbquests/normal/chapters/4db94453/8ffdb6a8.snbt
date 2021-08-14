@@ -1,16 +1,19 @@
 {
-	x: 23.0d,
-	y: -2.0d,
+	x: 2.0d,
+	y: -6.0d,
 	shape: "circle",
 	dependencies: [
-		"4c4596ca"
+		"6c5c4859"
 	],
 	tasks: [{
-		uid: "291cbcf5",
+		uid: "3ef9f316",
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:memory_card",
-			tag: {}
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

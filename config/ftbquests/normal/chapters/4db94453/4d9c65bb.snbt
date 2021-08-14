@@ -1,12 +1,13 @@
 {
-	x: 15.0d,
-	y: -1.5d,
+	x: -7.0d,
+	y: 1.0d,
+	shape: "circle",
 	description: "{tfg.quests.ae2.meinterfaceterminal.subtitle}",
 	dependencies: [
-		"2e9735e7"
+		"495d984a"
 	],
 	tasks: [{
-		uid: "5004b22d",
+		uid: "82f5b4e4",
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:part 1 480"

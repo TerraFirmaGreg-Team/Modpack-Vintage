@@ -1,6 +1,6 @@
 {
-	x: 23.0d,
-	y: 3.5d,
+	x: -1.0d,
+	y: 13.0d,
 	shape: "circle",
 	dependencies: [
 		"0275e94a"
@@ -9,7 +9,10 @@
 		uid: "d38e1250",
 		type: "item",
 		items: [{
-			item: "appliedenergistics2:spatial_storage_cell_16_cubed"
+			id: "appliedenergistics2:spatial_storage_cell_16_cubed",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

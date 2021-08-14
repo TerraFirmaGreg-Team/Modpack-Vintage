@@ -18,8 +18,8 @@
 			}
 		}
 	},
-	x: -3.0d,
-	y: -4.0d,
+	x: -2.0d,
+	y: -4.5d,
 	shape: "hexagon",
 	description: "{tfg.quests.primitive.steelingot.subtitle}",
 	dependencies: [

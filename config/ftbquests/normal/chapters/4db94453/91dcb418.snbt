@@ -1,0 +1,21 @@
+{
+	x: -7.0d,
+	y: 17.0d,
+	dependencies: [
+		"e1a7d190"
+	],
+	tasks: [{
+		uid: "d79f127b",
+		type: "item",
+		items: [{
+			id: "aeadditions:storage.fluid",
+			tag: {
+				fuzzyMode: "IGNORE_ALL"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

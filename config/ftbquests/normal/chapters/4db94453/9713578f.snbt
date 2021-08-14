@@ -1,10 +1,10 @@
 {
-	x: 9.5d,
-	y: 0.0d,
+	x: -1.0d,
+	y: -1.5d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.fluxpipe.subtitle}",
 	dependencies: [
-		"cedc31b8"
+		"848cab62"
 	],
 	tasks: [{
 		uid: "aa16b584",

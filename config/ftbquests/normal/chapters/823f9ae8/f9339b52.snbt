@@ -1,14 +1,13 @@
 {
 	title: "{tfg.quests.primitive.ironanvil.title}",
-	x: -6.5d,
-	y: -4.0d,
+	x: -6.0d,
+	y: -4.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.ironanvil.subtitle}",
 	dependencies: [
 		"85e10b5d"
 	],
 	dependency_requirement: "one_completed",
-	size: 1.2d,
 	tasks: [{
 		uid: "922ee609",
 		type: "item",

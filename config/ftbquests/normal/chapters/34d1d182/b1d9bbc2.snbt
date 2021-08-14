@@ -1,6 +1,6 @@
 {
-	x: 13.0d,
-	y: -8.0d,
+	x: 13.5d,
+	y: -7.5d,
 	description: "{tfg.quests.space.terraformer3000.subtitle}",
 	dependencies: [
 		"9e9cab41"

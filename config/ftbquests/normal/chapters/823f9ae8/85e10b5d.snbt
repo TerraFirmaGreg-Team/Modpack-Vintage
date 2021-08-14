@@ -28,8 +28,8 @@
 			}
 		}
 	},
-	x: -8.5d,
-	y: -5.0d,
+	x: -8.0d,
+	y: -4.5d,
 	shape: "hexagon",
 	description: "{tfg.quests.primitive.ironingot.subtitle}",
 	dependencies: [

@@ -1,12 +1,11 @@
 {
 	title: "{tfg.quests.primitive.blacksteelanvil.title}",
 	x: 3.0d,
-	y: -4.8d,
+	y: -4.5d,
 	shape: "square",
 	dependencies: [
 		"f7244dc3"
 	],
-	size: 1.2d,
 	tasks: [{
 		uid: "a0ee65e3",
 		type: "item",

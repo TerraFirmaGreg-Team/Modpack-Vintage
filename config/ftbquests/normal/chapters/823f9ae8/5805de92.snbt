@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.redbluesteelpickaxe.title}",
-	x: 7.5d,
+	x: 6.0d,
 	y: -2.5d,
 	description: "{tfg.quests.primitive.redbluesteelpickaxe.subtitle}",
 	dependencies: [

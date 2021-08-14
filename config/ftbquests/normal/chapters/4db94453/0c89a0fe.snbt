@@ -1,7 +1,7 @@
 {
 	icon: "appliedenergistics2:quantum_ring",
-	x: 26.0d,
-	y: 0.0d,
+	x: -10.5d,
+	y: 4.5d,
 	shape: "octagon",
 	description: "{tfg.quests.ae2.quantumring.subtitle}",
 	dependencies: [

@@ -1,6 +1,6 @@
 {
-	x: 13.5d,
-	y: 2.0d,
+	x: 3.5d,
+	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.wirelessbooster.subtitle}",
 	dependencies: [

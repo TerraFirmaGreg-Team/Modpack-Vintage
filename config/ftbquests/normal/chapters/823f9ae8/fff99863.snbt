@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.bismuthpile.title}",
-	x: -17.0d,
-	y: 1.0d,
+	x: -16.5d,
+	y: 0.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.bismuthpile.subtitle}",
 	hide_dependency_lines: true,
@@ -13,42 +13,6 @@
 		type: "item",
 		title: "Кусочек висмута",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 8s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_item_1",
-			Damage: 2008s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
 			id: "gregtech:meta_item_1",
 			Damage: 8s,
 			ForgeCaps: {

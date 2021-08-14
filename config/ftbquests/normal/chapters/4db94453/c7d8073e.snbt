@@ -1,10 +1,10 @@
 {
-	x: 13.5d,
-	y: 1.0d,
+	x: 3.5d,
+	y: 10.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.accespoint.subtitle}",
 	dependencies: [
-		"8db2694e"
+		"596163aa"
 	],
 	tasks: [{
 		uid: "477297e6",
