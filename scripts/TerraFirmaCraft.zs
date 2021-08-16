@@ -12,8 +12,6 @@ import mods.tfcdryingrack.Rack;
 
 //Удаление + скрытие
 global ItemsToRemoveTFCJEI as IItemStack[] = [
-	//TFC
-	<tfc:sluice>,
 	//Hammers
 	<tfc:metal/hammer/copper>,
 	<tfc:metal/hammer/bismuth_bronze>,
@@ -24,7 +22,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/hammer/black_steel>,
 	<tfc:metal/hammer/blue_steel>,
 	<tfc:metal/hammer/red_steel>,
-	//<tfc:metal/hammer/invar>,//TFCM
 	//Hammers Heads
 	//<tfc:metal/hammer_head/copper>,
 	<tfc:metal/hammer_head/red_steel>,
@@ -35,7 +32,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/hammer_head/bronze>,
 	<tfc:metal/hammer_head/black_bronze>,
 	<tfc:metal/hammer_head/bismuth_bronze>,
-	//<tfc:metal/hammer_head/invar>,//TFCM
 	//Saw
 	<tfc:metal/saw/copper>,
 	<tfc:metal/saw/bismuth_bronze>,
@@ -46,7 +42,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/saw/black_steel>,
 	<tfc:metal/saw/blue_steel>,
 	<tfc:metal/saw/red_steel>,
-	//<tfc:metal/saw/invar>,//TFCM
 	//Saw Heads
 	<tfc:metal/saw_blade/copper>,
 	//Knife
@@ -59,7 +54,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/knife/black_steel>,
 	<tfc:metal/knife/blue_steel>,
 	<tfc:metal/knife/red_steel>,
-	//<tfc:metal/knife/invar>,//TFCM
 	//Knife Heads
 	<tfc:metal/knife_blade/copper>,
 	<tfc:metal/knife_blade/red_steel>,
@@ -70,7 +64,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/knife_blade/bronze>,
 	<tfc:metal/knife_blade/black_bronze>,
 	<tfc:metal/knife_blade/bismuth_bronze>,
-	//<tfc:metal/knife_blade/invar>,//TFCM
 	//Propick
 	<tfc:metal/propick/bismuth_bronze>,
 	<tfc:metal/propick/bronze>,
@@ -81,7 +74,6 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/propick/black_steel>,
 	<tfc:metal/propick/blue_steel>,
 	<tfc:metal/propick/red_steel>,
-	//<tfc:metal/propick/invar>,//TFCM
 	//Geologic Pickaxe Heads
 	<tfc:metal/propick_head/bismuth_bronze>,
 	<tfc:metal/propick_head/bronze>,
@@ -92,8 +84,8 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/propick_head/black_steel>,
 	<tfc:metal/propick_head/blue_steel>,
 	<tfc:metal/propick_head/red_steel>,
-	//<tfc:metal/propick_head/invar>,//TFCM
-	//other
+	//Other
+	<tfc:sluice>,
 	<tfctech:powder/potash>,
 	<tfc:metal/dust/wrought_iron>,
 	<tfc:metal/nugget/wrought_iron>,
@@ -103,6 +95,63 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 ] as IItemStack[];
 for item in ItemsToRemoveTFCJEI{
     mods.jei.JEI.removeAndHide(item);
+}
+
+//Удаление рецептов
+global ItemsToRemoveTFC as IItemStack[] = [
+	//Кирки
+	<tfc:metal/pick/bismuth_bronze>,
+	<tfc:metal/pick/black_bronze>,
+	<tfc:metal/pick/bronze>,
+	<tfc:metal/pick/copper>,
+	<tfc:metal/pick/black_steel>,
+	<tfc:metal/pick/steel>,
+	<tfc:metal/pick/wrought_iron>,
+	<tfc:metal/pick/blue_steel>,
+	<tfc:metal/pick/red_steel>,
+	//Топоры
+	<tfc:metal/axe/bismuth_bronze>,
+	<tfc:metal/axe/black_bronze>,
+	<tfc:metal/axe/bronze>,
+	<tfc:metal/axe/copper>,
+	<tfc:metal/axe/black_steel>,
+	<tfc:metal/axe/steel>,
+	<tfc:metal/axe/wrought_iron>,
+	<tfc:metal/axe/blue_steel>,
+	<tfc:metal/axe/red_steel>,
+	//Мотыги
+	<tfc:metal/hoe/bismuth_bronze>,
+	<tfc:metal/hoe/black_bronze>,
+	<tfc:metal/hoe/bronze>,
+	<tfc:metal/hoe/copper>,
+	<tfc:metal/hoe/black_steel>,
+	<tfc:metal/hoe/steel>,
+	<tfc:metal/hoe/wrought_iron>,
+	<tfc:metal/hoe/blue_steel>,
+	<tfc:metal/hoe/red_steel>,
+	//Мечи
+	<tfc:metal/sword/bismuth_bronze>,
+	<tfc:metal/sword/black_bronze>,
+	<tfc:metal/sword/bronze>,
+	<tfc:metal/sword/copper>,
+	<tfc:metal/sword/black_steel>,
+	<tfc:metal/sword/steel>,
+	<tfc:metal/sword/wrought_iron>,
+	<tfc:metal/sword/blue_steel>,
+	<tfc:metal/sword/red_steel>,
+	//Лопаты
+	<tfc:metal/shovel/bismuth_bronze>,
+	<tfc:metal/shovel/black_bronze>,
+	<tfc:metal/shovel/bronze>,
+	<tfc:metal/shovel/copper>,
+	<tfc:metal/shovel/black_steel>,
+	<tfc:metal/shovel/steel>,
+	<tfc:metal/shovel/wrought_iron>,
+	<tfc:metal/shovel/blue_steel>,
+	<tfc:metal/shovel/red_steel>
+] as IItemStack[];
+for item in ItemsToRemoveTFC{
+    recipes.remove(item);
 }
 
 //Добавление рецептов печи для еды TFC
@@ -363,7 +412,6 @@ Anvil.removeRecipe(<tfc:metal/propick_head/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/propick_head/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/propick_head/copper>);
 Anvil.removeRecipe(<tfc:metal/propick_head/wrought_iron>);
-//Anvil.removeRecipe(<tfc:metal/propick_head/invar>);
 
 //Отключение крафтов всех молотков TFC
 Anvil.removeRecipe(<tfc:metal/hammer_head/red_steel>);
@@ -375,7 +423,6 @@ Anvil.removeRecipe(<tfc:metal/hammer_head/bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/copper>);
-//Anvil.removeRecipe(<tfc:metal/hammer_head/invar>);
 
 //Отключение крафтов всех пил TFC(которые не дублируются)
 Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
@@ -390,16 +437,12 @@ Anvil.removeRecipe(<tfc:metal/knife_blade/bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/copper>);
-//Anvil.removeRecipe(<tfc:metal/knife_blade/invar>);
 
 //Новые рецепты ковки GT(TFC) молотков
 Anvil.addRecipe("tfc:hammer_head/CopperF", <ore:ingotCopper>, <tfc:metal/hammer_head/copper>, 0, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BismuthBronzeF", <ore:ingotBismuthBronze>, <gregtech:meta_item_2:5230>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BlackBronzeF", <ore:ingotBlackBronze>, <gregtech:meta_item_2:5229>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BronzeF", <ore:ingotBronze>, <gregtech:meta_item_2:5095>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-//
-Anvil.addRecipe("tfc:hammer_head/IronF", <ore:ingotIron>, <gregtech:meta_item_2:5033>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-//
 Anvil.addRecipe("tfc:hammer_head/WroughtIronF", <ore:ingotWroughtIron>, <gregtech:meta_item_2:5197>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/SteelF", <ore:ingotSteel>, <gregtech:meta_item_2:5184>, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfc:hammer_head/BlackSteelF", <ore:ingotBlackSteel>, <gregtech:meta_item_2:5231>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
@@ -419,7 +462,6 @@ Anvil.addRecipe("tfc:file_head/Steel", <ore:ingotSteel>, <gregtech:meta_item_2:6
 Anvil.addRecipe("tfc:file_head/SterlingSilver", <ore:ingotSterlingSilver>, <gregtech:meta_item_2:6227>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/RoseGold", <ore:ingotRoseGold>, <gregtech:meta_item_2:6228>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <gregtech:meta_item_2:6094>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/Iron", <ore:ingotIron>, <gregtech:meta_item_2:6033>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <gregtech:meta_item_2:6017>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
 //Создание рецептов для теплицы
@@ -665,98 +707,3 @@ large_mixer.recipeBuilder().inputs(<tfc:plants/porcini>, <gtadditions:ga_meta_it
 //Земля+Трава
 centrifuge.recipeBuilder().inputs(<ore:dirt>).chancedOutput(<gregtech:meta_item_2:32570>, 1250, 750).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 4000, 900).duration(20).EUt(30).buildAndRegister();
 centrifuge.recipeBuilder().inputs(<ore:grass>).chancedOutput(<gregtech:meta_item_2:32570>, 3000, 1200).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 5000, 900).duration(20).EUt(30).buildAndRegister();
-
-//Фикс тулов
-//Удаление рецептов
-global ItemsToRemoveTFCTools as IItemStack[] = [
-	//Кирки
-	<tfc:metal/pick/bismuth_bronze>,
-	<tfc:metal/pick/black_bronze>,
-	<tfc:metal/pick/bronze>,
-	<tfc:metal/pick/copper>,
-	<tfc:metal/pick/black_steel>,
-	<tfc:metal/pick/steel>,
-	<tfc:metal/pick/wrought_iron>,
-	<tfc:metal/pick/blue_steel>,
-	<tfc:metal/pick/red_steel>,
-	//Топоры
-	/*
-	<tfc:metal/axe/tungsten>,
-	<tfc:metal/axe/titanium>,
-	<tfc:metal/axe/boron>,
-	<tfc:metal/axe/cobalt>,
-	<tfc:metal/axe/bismuth_bronze>,
-	<tfc:metal/axe/black_bronze>,
-	<tfc:metal/axe/bronze>,
-	<tfc:metal/axe/copper>,
-	<tfc:metal/axe/mithril>,
-	<tfc:metal/axe/black_steel>,
-	<tfc:metal/axe/zircaloy>,
-	<tfc:metal/axe/steel>,
-	<tfc:metal/axe/osmium>,
-	<tfc:metal/axe/nickel_silver>,
-	<tfc:metal/axe/beryllium_copper>,
-	<tfc:metal/axe/wrought_iron>,
-	<tfc:metal/axe/aluminium>,
-	<tfc:metal/axe/tungsten_steel>,
-	<tfc:metal/axe/invar>,
-	<tfc:metal/axe/blue_steel>,
-	<tfc:metal/axe/red_steel>,
-	//Мотыги
-	<tfc:metal/hoe/tungsten>,
-	<tfc:metal/hoe/titanium>,
-	<tfc:metal/hoe/boron>,
-	<tfc:metal/hoe/cobalt>,
-	<tfc:metal/hoe/bismuth_bronze>,
-	<tfc:metal/hoe/black_bronze>,
-	<tfc:metal/hoe/bronze>,
-	<tfc:metal/hoe/copper>,
-	<tfc:metal/hoe/mithril>,
-	<tfc:metal/hoe/black_steel>,
-	<tfc:metal/hoe/zircaloy>,
-	<tfc:metal/hoe/steel>,
-	<tfc:metal/hoe/osmium>,
-	<tfc:metal/hoe/nickel_silver>,
-	<tfc:metal/hoe/beryllium_copper>,
-	<tfc:metal/hoe/wrought_iron>,
-	<tfc:metal/hoe/aluminium>,
-	<tfc:metal/hoe/tungsten_steel>,
-	<tfc:metal/hoe/invar>,
-	<tfc:metal/hoe/blue_steel>,
-	<tfc:metal/hoe/red_steel>,*/
-	//Мечи
-	<tfc:metal/sword/bismuth_bronze>,
-	<tfc:metal/sword/black_bronze>,
-	<tfc:metal/sword/bronze>,
-	<tfc:metal/sword/copper>,
-	<tfc:metal/sword/black_steel>,
-	<tfc:metal/sword/steel>,
-	<tfc:metal/sword/wrought_iron>,
-	<tfc:metal/sword/blue_steel>,
-	<tfc:metal/sword/red_steel>,
-	//Лопаты
-	/*<tfc:metal/shovel/tungsten>,
-	<tfc:metal/shovel/titanium>,
-	<tfc:metal/shovel/boron>,
-	<tfc:metal/shovel/cobalt>,
-	<tfc:metal/shovel/bismuth_bronze>,
-	<tfc:metal/shovel/black_bronze>,
-	<tfc:metal/shovel/bronze>,
-	<tfc:metal/shovel/copper>,
-	<tfc:metal/shovel/mithril>,
-	<tfc:metal/shovel/black_steel>,
-	<tfc:metal/shovel/zircaloy>,
-	<tfc:metal/shovel/steel>,
-	<tfc:metal/shovel/osmium>,
-	<tfc:metal/shovel/nickel_silver>,
-	<tfc:metal/shovel/beryllium_copper>,
-	<tfc:metal/shovel/wrought_iron>,
-	<tfc:metal/shovel/aluminium>,
-	<tfc:metal/shovel/tungsten_steel>,
-	<tfc:metal/shovel/invar>,
-	<tfc:metal/shovel/blue_steel>,
-	<tfc:metal/shovel/red_steel>*/
-] as IItemStack[];
-for item in ItemsToRemoveTFCTools{
-    recipes.remove(item);
-}

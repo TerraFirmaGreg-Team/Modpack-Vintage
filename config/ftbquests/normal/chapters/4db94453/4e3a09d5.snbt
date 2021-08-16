@@ -13,9 +13,6 @@
 				upgrades: {},
 				config: {},
 				fuzzyMode: "IGNORE_ALL"
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b

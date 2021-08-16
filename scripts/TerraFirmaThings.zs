@@ -1,5 +1,6 @@
 import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Quern;
 
 //Платиновые короны
 recipes.remove(<tfcthings:crown/platinum_opal>);
@@ -67,17 +68,9 @@ recipes.addShapeless(<tfcthings:sling_ammo_spread>, [<ore:craftingToolHardHammer
 recipes.remove(<tfcthings:sling_ammo_light>);
 recipes.addShapeless(<tfcthings:sling_ammo_light>, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <tfcthings:sling_ammo>, <ore:craftingToolFile>.firstItem.withEmptyTag()]);
 
-//Точильный инструмент использует крафт с помощью алмазной пыли GT
+//Алмазная пыль --> крошка TFC
 recipes.remove(<tfcthings:diamond_grit>);
-recipes.remove(<tfcthings:grindstone_diamond>);
-Welding.removeRecipe(<tfcthings:honing_steel_head_diamond>);
-Welding.removeRecipe(<tfcthings:honing_steel_diamond>);
-recipes.addShaped(<tfcthings:grindstone_diamond>,
-[[<ore:dustDiamond>, <ore:dustDiamond>, <ore:dustDiamond>],
- [<ore:dustDiamond>, <tfcthings:grindstone_steel>, <ore:dustDiamond>],
- [<ore:dustDiamond>, <ore:dustDiamond>, <ore:dustDiamond>]]);
-Welding.addRecipe("tfc:honing_steel_head_diamond", <tfcthings:honing_steel_head>, <ore:dustDiamond>, <tfcthings:honing_steel_head_diamond>, 5);
-Welding.addRecipe("tfc:honing_steel_diamond", <tfcthings:honing_steel>, <ore:dustDiamond>, <tfcthings:honing_steel_diamond>, 5);
+Quern.addRecipe("tfc:Fdiamond_grit", <gregtech:meta_item_1:2111>, <tfcthings:diamond_grit>);
 
 //Минус точильный камень
 recipes.removeByRecipeName("tfcthings:grindstone_base_steel");

@@ -9,10 +9,7 @@
 		uid: "bdba91de",
 		type: "item",
 		items: [{
-			id: "appliedenergistics2:spatial_storage_cell_128_cubed",
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "appliedenergistics2:spatial_storage_cell_128_cubed"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

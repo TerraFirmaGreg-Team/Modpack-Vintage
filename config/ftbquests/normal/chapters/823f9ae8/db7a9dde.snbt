@@ -1,15 +1,14 @@
 {
-	x: 1.5d,
-	y: 8.0d,
-	shape: "circle",
+	x: -7.0d,
+	y: 2.0d,
 	dependencies: [
-		"353f5942"
+		"0e2a1059"
 	],
 	tasks: [{
-		uid: "9672c734",
+		uid: "74b2c739",
 		type: "item",
 		items: [{
-			item: "appliedenergistics2:network_tool"
+			item: "tfctech:ceramics/fluid_bowl"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

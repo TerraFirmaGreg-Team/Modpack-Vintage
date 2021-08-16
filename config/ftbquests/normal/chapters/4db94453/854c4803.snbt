@@ -5,7 +5,6 @@
 	dependencies: [
 		"eab2df13"
 	],
-	hide: true,
 	tasks: [{
 		uid: "a197780c",
 		type: "item",

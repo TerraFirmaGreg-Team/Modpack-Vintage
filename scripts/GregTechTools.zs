@@ -137,7 +137,6 @@ recipes.remove(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "iron"
 
 //Добавление рецептов молотов GT(38)+1
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.7 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/hammer_head/copper>]);
-//
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [<minecraft:stick>, <ore:toolHeadHammerNeutronium>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsss", MaxDurability: 15000}}), [<minecraft:stick>, <ore:toolHeadHammerHsss>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsse", MaxDurability: 19000}}), [<minecraft:stick>, <ore:toolHeadHammerHsse>]);
@@ -154,7 +153,7 @@ recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "rose_gold", MaxDurability: 500}}), [<minecraft:stick>, <ore:toolHeadHammerRoseGold>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "sterling_silver", MaxDurability: 250}}), [<minecraft:stick>, <ore:toolHeadHammerSterlingSilver>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "osmiridium", MaxDurability: 14500}}), [<minecraft:stick>, <ore:toolHeadHammerOsmiridium>]);
-//recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [<minecraft:stick>, <ore:toolHeadHammerWroughtIron>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [<minecraft:stick>, <ore:toolHeadHammerWroughtIron>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "ultimet", MaxDurability: 7850}}), [<minecraft:stick>, <ore:toolHeadHammerUltimet>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "steel", MaxDurability: 3400}}), [<minecraft:stick>, <ore:toolHeadHammerSteel>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stainless_steel", MaxDurability: 9500}}), [<minecraft:stick>, <ore:toolHeadHammerStainlessSteel>]);
@@ -345,8 +344,6 @@ recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/saw_blade/red_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/saw_blade/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/saw_blade/black_steel>]);
-//recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/saw_blade/cobalt>]);
-//recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/saw_blade/invar>]);
 
 //Отключение крафтов напильника(61)
 recipes.remove(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "neutronium"}}));
@@ -430,7 +427,7 @@ recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "rose_gold", MaxDurability: 500}}), [<minecraft:stick>, <ore:toolHeadFileRoseGold>]);
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "sterling_silver", MaxDurability: 250}}), [<minecraft:stick>, <ore:toolHeadFileSterlingSilver>]);
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "osmiridium", MaxDurability: 14500}}), [<minecraft:stick>, <ore:toolHeadFileOsmiridium>]);
-//recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [<minecraft:stick>, <ore:toolHeadFileWroughtIron>]);
+recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [<minecraft:stick>, <ore:toolHeadFileWroughtIron>]);
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "ultimet", MaxDurability: 7850}}), [<minecraft:stick>, <ore:toolHeadFileUltimet>]);
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "steel", MaxDurability: 3400}}), [<minecraft:stick>, <ore:toolHeadFileSteel>]);
 recipes.addShapeless(<gregtech:meta_tool:9>.withTag({"GT.ToolStats": {Material: "stainless_steel", MaxDurability: 9500}}), [<minecraft:stick>, <ore:toolHeadFileStainlessSteel>]);
@@ -518,8 +515,7 @@ recipes.remove(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "mang
 recipes.remove(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "iron"}}));
 
 //Добавление рецептов ножей GT(38)+1
-recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "copper", MaxDurability: 150}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickCopper>, null]]);
-//
+recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "copper", MaxDurability: 600}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickCopper>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateNeutronium>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickNeutronium>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "Hsss", MaxDurability: 15000}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateHsss>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickHsss>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "Hsse", MaxDurability: 117000}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateHsse>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickHsse>, null]]);
@@ -536,7 +532,7 @@ recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "b
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "rose_gold", MaxDurability: 500}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateRoseGold>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickRoseGold>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "sterling_silver", MaxDurability: 250}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateSterlingSilver>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickSterlingSilver>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "osmiridium", MaxDurability: 14500}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateOsmiridium>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickOsmiridium>, null]]);
-//recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateWroughtIron>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickWroughtIron>, null]]);
+recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "wrought_iron", MaxDurability: 2200}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateWroughtIron>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickWroughtIron>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "ultimet", MaxDurability: 7850}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateUltimet>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickUltimet>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "steel", MaxDurability: 3400}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickSteel>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "stainless_steel", MaxDurability: 9500}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateStainlessSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickStainlessSteel>, null]]);
@@ -561,7 +557,6 @@ recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "a
 
 //Рецепты тулов из TFC
 //Кирки
-
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "bismuth_bronze", MaxDurability: 1260}}), [<minecraft:stick>, <tfc:metal/pick_head/bismuth_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "black_bronze", MaxDurability: 1400}}), [<minecraft:stick>, <tfc:metal/pick_head/black_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "bronze", MaxDurability: 1300}}), [<minecraft:stick>, <tfc:metal/pick_head/bronze>]);
@@ -571,7 +566,6 @@ recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/pick_head/black_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/pick_head/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/pick_head/red_steel>]);
-/*
 //Топоры
 recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "bismuth_bronze", MaxDurability: 1260}}), [<minecraft:stick>, <tfc:metal/axe_head/bismuth_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "black_bronze", MaxDurability: 1400}}), [<minecraft:stick>, <tfc:metal/axe_head/black_bronze>]);
@@ -582,8 +576,6 @@ recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/axe_head/black_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/axe_head/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/axe_head/red_steel>]);
-recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/axe_head/invar>]);
-recipes.addShapeless(<gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/axe_head/cobalt>]);
 //Мотыги
 recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "bismuth_bronze", MaxDurability: 1260}}), [<minecraft:stick>, <tfc:metal/hoe_head/bismuth_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "black_bronze", MaxDurability: 1400}}), [<minecraft:stick>, <tfc:metal/hoe_head/black_bronze>]);
@@ -594,9 +586,6 @@ recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/hoe_head/black_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/hoe_head/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/hoe_head/red_steel>]);
-recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/hoe_head/invar>]);
-recipes.addShapeless(<gregtech:meta_tool:4>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/hoe_head/cobalt>]);
-*/
 //Мечи
 recipes.addShapeless(<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "bismuth_bronze", MaxDurability: 1260}}), [<minecraft:stick>, <tfc:metal/sword_blade/bismuth_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "black_bronze", MaxDurability: 1400}}), [<minecraft:stick>, <tfc:metal/sword_blade/black_bronze>]);
@@ -608,7 +597,6 @@ recipes.addShapeless(<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "b
 recipes.addShapeless(<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/sword_blade/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/sword_blade/red_steel>]);
 //Лопаты
-/*
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "bismuth_bronze", MaxDurability: 1260}}), [<minecraft:stick>, <tfc:metal/shovel_head/bismuth_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "black_bronze", MaxDurability: 1400}}), [<minecraft:stick>, <tfc:metal/shovel_head/black_bronze>]);
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "bronze", MaxDurability: 1300}}), [<minecraft:stick>, <tfc:metal/shovel_head/bronze>]);
@@ -618,6 +606,3 @@ recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: 
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "black_steel", MaxDurability: 4200}}), [<minecraft:stick>, <tfc:metal/shovel_head/black_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "blue_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/shovel_head/blue_steel>]);
 recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "red_steel", MaxDurability: 6500}}), [<minecraft:stick>, <tfc:metal/shovel_head/red_steel>]);
-recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "invar", MaxDurability: 4500}}), [<minecraft:stick>, <tfc:metal/shovel_head/invar>]);
-recipes.addShapeless(<gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "cobalt", MaxDurability: 2200}}), [<minecraft:stick>, <tfc:metal/shovel_head/cobalt>]);
-*/

@@ -12,9 +12,6 @@
 			id: "wpt:wpt",
 			tag: {
 				InfinityEnergy: 0
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

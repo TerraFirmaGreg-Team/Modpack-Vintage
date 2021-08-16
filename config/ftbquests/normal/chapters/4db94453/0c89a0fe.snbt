@@ -14,20 +14,22 @@
 		items: [{
 			item: "appliedenergistics2:quantum_ring"
 		}],
-		count: 8L
+		count: 16L
 	},
 	{
 		uid: "cb8bf7c4",
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:quantum_link"
-		}]
+		}],
+		count: 2L
 	},
 	{
 		uid: "665c1406",
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:material 1 48"
-		}]
+		}],
+		count: 2L
 	}]
 }

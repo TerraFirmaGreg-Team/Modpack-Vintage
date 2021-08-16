@@ -1,0 +1,13 @@
+{
+	x: -4.5d,
+	y: 2.0d,
+	description: "20mb",
+	dependencies: [
+		"db7a9dde"
+	],
+	tasks: [{
+		uid: "9fc7740f",
+		type: "fluid",
+		fluid: "latex"
+	}]
+}

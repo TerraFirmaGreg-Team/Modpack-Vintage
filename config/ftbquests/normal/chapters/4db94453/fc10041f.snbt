@@ -12,9 +12,6 @@
 			id: "aeadditions:storage.fluid.portable",
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_nbt: 1b
@@ -24,10 +21,7 @@
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:portable_cell",
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

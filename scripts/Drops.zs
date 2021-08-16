@@ -1,7 +1,6 @@
 import mods.dropt.Dropt;
 
 //.matchHarvester(Dropt.harvester().type("PLAYER").mainHand("WHITELIST", [<gregtech:meta_tool:17>, <tfc:stone/knife/igneous_intrusive>, <tfc:stone/knife/igneous_extrusive>, <tfc:stone/knife/sedimentary>, <tfc:stone/knife/metamorphic>]))
-
 //Динамические деревья TFC 1
 Dropt.list("DynamicLeavesTFC00")
   .add(Dropt.rule()
@@ -119,7 +118,6 @@ Dropt.list("DynamicLeavesTFC43")
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("WHITELIST", [<gregtech:meta_tool:17>, <tfc:stone/knife/igneous_intrusive>, <tfc:stone/knife/igneous_extrusive>, <tfc:stone/knife/sedimentary>, <tfc:stone/knife/metamorphic>]))
   .addDrop(Dropt.drop()
   .items([<tfc:wood/leaves/hevea>])));
-
 
 //Уголек
 //Битумный уголь

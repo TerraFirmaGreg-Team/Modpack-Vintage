@@ -10,7 +10,7 @@
 		}
 	},
 	x: -12.5d,
-	y: -6.0d,
+	y: -7.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,

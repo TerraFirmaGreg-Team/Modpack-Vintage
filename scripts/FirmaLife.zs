@@ -24,4 +24,4 @@ Anvil.removeRecipe(<firmalife:greenhouse_roof>*2);
 Anvil.addRecipe("tfc:greenhouse_roof_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
 
 //Фикс сыра
-Barrel.addRecipe("tfc:cheeseF", <liquid:milk_curdled>*625, <tfc:food/cheese>*2, 8);
+Barrel.addRecipe("fixedcheese", <liquid:milk_curdled>*625, <tfc:food/cheese>*2, 8);
