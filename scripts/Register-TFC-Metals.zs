@@ -22,14 +22,11 @@ ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12062>, "SILVER", 200, true
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12071>, "TIN", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12230>, "BISMUTH_BRONZE", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12229>, "BLACK_BRONZE", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12126>, "INVAR", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12184>, "STEEL", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12140>, "PIG_IRON", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12033>, "WROUGHT_IRON", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12227>, "STERLING_SILVER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12079>, "ZINC", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12112>, "ELECTRUM", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12237>, "RED_ALLOY", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12232>, "RED_STEEL", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12233>, "BLUE_STEEL", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_item_1:12231>, "BLACK_STEEL", 200, true);
@@ -41,7 +38,6 @@ ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1035>, "LEAD", 400, tru
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1228>, "ROSE_GOLD", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1230>, "BISMUTH_BRONZE", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1229>, "BLACK_BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1126>, "INVAR", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1184>, "STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1140>, "PIG_IRON", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1197>, "WROUGHT_IRON", 400, true);
@@ -49,54 +45,6 @@ ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1227>, "STERLING_SILVER
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1232>, "RED_STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1233>, "BLUE_STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gtadditions:ga_meta_item:1231>, "BLACK_STEEL", 400, true);
-
-//Молотки GT в единицы металла TFC
-/*
-//Медный молот
-ItemRegistry.registerItemMetal(<contenttweaker:copper_hammer>, "COPPER", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", MaxDurability: 600}}), "COPPER", 50, true);
-ItemRegistry.registerItemSize(<contenttweaker:copper_hammer>, "NORMAL", "MEDIUM");
-//Висмутный молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5230>, "BISMUTH_BRONZE", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "bismuth_bronze"}}), "BISMUTH_BRONZE", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5230>, "NORMAL", "MEDIUM");
-//Черная бронза молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5229>, "BLACK_BRONZE", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "black_bronze"}}), "BLACK_BRONZE", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5229>, "NORMAL", "MEDIUM");
-//Бронзовый молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5095>, "BRONZE", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "bronze"}}), "BRONZE", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5095>, "NORMAL", "MEDIUM");
-//Железный молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5033>, "WROUGHT_IRON", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "iron"}}), "WROUGHT_IRON", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5033>, "NORMAL", "MEDIUM");
-//Стальной молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5184>, "STEEL", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "steel"}}), "STEEL", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5184>, "NORMAL", "MEDIUM");
-//Черная сталь молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5231>, "BLACK_STEEL", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "black_steel"}}), "BLACK_STEEL", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5231>, "NORMAL", "MEDIUM");
-//Синяя сталь молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5233>, "BLUE_STEEL", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), "BLUE_STEEL", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5233>, "NORMAL", "MEDIUM");
-//Красная сталь молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5232>, "RED_STEEL", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "red_steel"}}), "RED_STEEL", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5232>, "NORMAL", "MEDIUM");
-//Серебро стирлинга молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5227>, "STERLING_SILVER", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "sterling_silver"}}), "STERLING_SILVER", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5227>, "NORMAL", "MEDIUM");
-//Кобальтовый молот
-ItemRegistry.registerItemMetal(<gregtech:meta_item_2:5017>, "COBALT", 100, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "cobalt"}}), "COBALT", 50, true);
-ItemRegistry.registerItemSize(<gregtech:meta_item_2:5017>, "NORMAL", "MEDIUM");
-*/
 
 /////////////////////////////////////////Вариации Меди
 //Медь грязная кучка

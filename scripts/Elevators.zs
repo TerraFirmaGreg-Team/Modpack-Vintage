@@ -6,9 +6,9 @@ recipes.remove(<movingelevators:button_block>);
 //Создание рецептов
 //Elevator Controller
 recipes.addShaped(<movingelevators:elevator_block>, 
-[[<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>],
+[[<ore:gearWroughtIron>, <ore:circuitBasic>, <ore:gearWroughtIron>],
  [<gtadditions:ga_motor_casing>, <gregtech:machine_casing:1>, <gtadditions:ga_motor_casing>],
- [<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>]]);
+ [<ore:gearWroughtIron>, <ore:circuitBasic>, <ore:gearWroughtIron>]]);
  
 //Elevator Screen
 recipes.addShaped(<movingelevators:display_block>, 

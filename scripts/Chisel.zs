@@ -57,12 +57,10 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
-
-
 //Создание рецептов
 //Железная стамеска
 recipes.addShaped(<chisel:chisel_iron>,
-[[null, <ore:plateIron>, null],
+[[null, <ore:plateWroughtIron>, null],
  [null, <ore:chisel>, null],
  [null, <ore:stickWood>, null]]);
 
@@ -87,7 +85,7 @@ recipes.addShaped(<chiselsandbits:chisel_stone>,
 //Стамеска железная
 recipes.addShaped(<chiselsandbits:chisel_iron>,
 [[null, null, null],
- [null, <ore:plateIron>, null],
+ [null, <ore:plateWroughtIron>, null],
  [null, <ore:stickWood>, null]]);
  
 //Стамеска золотая
@@ -108,7 +106,7 @@ recipes.addShaped(<chiselsandbits:bitsaw_diamond>,
  [null, <gregtech:meta_item_2:14111>, null],
  [<ore:stickWood>, null, null]]);
  
-//Мешок для данек(Опа вторая пасхалка)
+//Мешок для данек
 recipes.addShaped(<chiselsandbits:bit_bag>,
 [[<ore:leather>, <ore:wool>, <ore:leather>],
  [<ore:wool>, null, <ore:wool>],
@@ -129,14 +127,14 @@ recipes.addShaped(<chisel:temple>*8,
 //Тириан блок
 recipes.addShaped(<chisel:tyrian>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:ingotIron>, <ore:stone>],
+ [<ore:stone>, <ore:ingotWroughtIron>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 //Фактори блок
 recipes.addShaped(<chisel:factory>*8,
-[[<ore:ingotIron>, <ore:stone>, <ore:ingotIron>],
+[[<ore:ingotWroughtIron>, <ore:stone>, <ore:ingotWroughtIron>],
  [<ore:stone>, null, <ore:stone>],
- [<ore:ingotIron>, <ore:stone>, <ore:ingotIron>]]);
+ [<ore:ingotWroughtIron>, <ore:stone>, <ore:ingotWroughtIron>]]);
  
 //Бровн стоун
 recipes.addShaped(<chisel:brownstone>*8,

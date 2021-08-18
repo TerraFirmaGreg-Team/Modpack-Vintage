@@ -1,7 +1,3 @@
-import mods.gregtech.recipe.RecipeMap;
-
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
-
 //Удаление рецептов + скрытие
 mods.jei.JEI.removeAndHide(<portality:module_energy:1>);
 mods.jei.JEI.removeAndHide(<portality:module_fluids:1>);

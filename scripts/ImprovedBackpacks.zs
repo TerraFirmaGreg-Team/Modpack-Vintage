@@ -7,8 +7,8 @@ recipes.remove(<improvedbackpacks:upgrade:4>);
 //Улучшение железное
 recipes.addShaped(<improvedbackpacks:upgrade:2>,
 [[null, <improvedbackpacks:tanned_leather>, null],
- [<ore:plateIron>, <improvedbackpacks:blank_upgrade>, <ore:plateIron>],
- [null, <ore:plateIron>, null]]);
+ [<ore:plateWroughtIron>, <improvedbackpacks:blank_upgrade>, <ore:plateWroughtIron>],
+ [null, <ore:plateWroughtIron>, null]]);
  
 //Улучшение золотое
 recipes.addShaped(<improvedbackpacks:upgrade:3>,

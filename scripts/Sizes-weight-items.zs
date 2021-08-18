@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 
 	// Ingots
 	var GTIngots as IItemStack[] = [
-	
         <gregtech:meta_item_1:10001>,
         <gregtech:meta_item_1:11021>,
         <gregtech:meta_item_1:10021>,
@@ -156,9 +155,8 @@ import crafttweaker.item.IItemStack;
         <gregtech:meta_item_1:10421>,
         <gregtech:meta_item_1:10424>,
         <gregtech:meta_item_1:10470>,
-        <gregtech:meta_item_1:10965>  
-];
-
+        <gregtech:meta_item_1:10965>
+        ];
 for item in GTIngots {
 	ItemRegistry.registerItemSize(item, "LARGE", "LIGHT");
 	}

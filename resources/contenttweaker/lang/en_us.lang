@@ -1,17 +1,6 @@
 #Content tweaker
 tile.contenttweaker.aquamarine_andesite_sand.name=Aqumarine Andesite Sand
 
-tile.contenttweaker.furnaceblock.name=Furnaceblock
-
-item.contenttweaker.glassmix.name=Glass Mix
-
-item.contenttweaker.copper_hammer.name=Copper Hammer Head
-
-item.contenttweaker.part_plate_basic.name=Basic Plating
-item.contenttweaker.part_plate_advanced.name=Advanced Plating
-item.contenttweaker.part_plate_du.name=DU Plating
-item.contenttweaker.part_plate_elite.name=Elite Plating
-
 item.contenttweaker.moonturf.name=Moon turf (Dust)
 item.contenttweaker.moonsoil.name=Moon soil (Dust)
 item.contenttweaker.moonstone.name=Moon stone (Dust)
@@ -27,35 +16,9 @@ item.contenttweaker.mercuryturf.name=Mercury turf (Dust)
 item.contenttweaker.mercurysoil.name=Mercury soil (Dust)
 item.contenttweaker.mercurystone.name=Mercury stone (Dust)
 
-item.contenttweaker.asteroidstone.name=Asteroids stone (Dust)
-
-item.contenttweaker.phobosturf.name=Phobos turf (Dust)
-item.contenttweaker.phobossoil.name=Phobos soil (Dust)
-item.contenttweaker.phobosstone.name=Phobos stone (Dust)
-
-item.contenttweaker.deimosturf.name=Deimos turf (Dust)
-item.contenttweaker.deimossoil.name=Deimos soil (Dust)
-item.contenttweaker.deimosstone.name=Deimos stone (Dust)
-
-item.contenttweaker.jupiterturf.name=Jupiter turf (Dust)
-item.contenttweaker.jupitersoil.name=Jupiter soil (Dust)
-item.contenttweaker.jupiterstone.name=Jupiter stone (Dust)
-
-item.contenttweaker.saturnturf.name=Saturn turf (Dust)
-item.contenttweaker.saturnsoil.name=Saturn soil (Dust)
-item.contenttweaker.saturnstone.name=Saturn stone (Dust)
-
-item.contenttweaker.uranturf.name=Uranus turf (Dust)
-item.contenttweaker.uransoil.name=Uranus soil (Dust)
-item.contenttweaker.uranstone.name=Uranus stone (Dust)
-
-item.contenttweaker.neptuneturf.name=Neptune turf (Dust)
-item.contenttweaker.neptunesoil.name=Neptune soil (Dust)
-item.contenttweaker.neptunestone.name=Neptune stone (Dust)
-
-item.contenttweaker.plutoturf.name=Pluto turf (Dust)
-item.contenttweaker.plutosoil.name=Pluto soil (Dust)
-item.contenttweaker.plutostone.name=Pluto stone (Dust)
+item.contenttweaker.asteroidstone1.name=Asteroids stone (Dust)
+item.contenttweaker.asteroidstone2.name=Asteroids stone (Dust)
+item.contenttweaker.asteroidstone3.name=Asteroids stone (Dust)
 
 #Фикс перевода листвы
 tile.dynamictreestfc:leaves0.name=Leaves
@@ -855,10 +818,10 @@ tfg.quests.space.rocket1.subtitle=Rocket number uno.
 tfg.quests.space.rocket2.subtitle=Dos
 tfg.quests.space.rocket3.subtitle=Drei
 tfg.quests.space.rocket4.subtitle=Four
-tfg.quests.space.rocket9.subtitle=Close to the end.
-tfg.quests.space.rocket10.subtitle=The Company does not take responsibility for incompetent use of numbers for stellar vessel designation.
+tfg.quests.space.rocket6.subtitle=Close to the end.
+tfg.quests.space.rocket7.subtitle=The Company does not take responsibility for incompetent use of numbers for stellar vessel designation.
 
 tfg.quests.space.end1.title=The End
 tfg.quests.space.end1.subtitle=You won. Go home.
 
-imm.quests.mendeleevtable.era.title=Таблица химических элементов
+imm.quests.mendeleevtable.era.title=Chemical Table

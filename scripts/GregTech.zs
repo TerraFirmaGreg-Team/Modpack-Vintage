@@ -48,6 +48,12 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:804>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:805>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10072>*10).EUt(500).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:806>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10235>*10).EUt(1560).duration(400).buildAndRegister();
 
+//Рецепт Coke Oven
+recipes.addShaped(<gregtech:machine:526>,
+[[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
+ [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
+ [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
+
 //Исправление рецепта на бумагу
 //Крафт бумажной пыли
 recipes.addShaped(<gregtech:meta_item_1:2325>*2,

@@ -1,7 +1,3 @@
-import mods.gregtech.recipe.RecipeMap;
-
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-
 //Фикс сот с красителями
 //Соты 
 centrifuge.recipeBuilder()

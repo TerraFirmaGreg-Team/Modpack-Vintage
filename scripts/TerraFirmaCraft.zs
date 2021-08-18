@@ -92,6 +92,8 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	<tfc:metal/double_sheet/wrought_iron>,
 	<gregtech:meta_item_1:12197>,
 	<gregtech:meta_item_1:10197>
+	//<tfc:powder/saltpeter>
+	//<tfc:powder/salt>
 ] as IItemStack[];
 for item in ItemsToRemoveTFCJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -335,9 +337,6 @@ recipes.addShaped(<gregtech:meta_item_2:32011>,
  
 //Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
-
-//Выпаривание соли
-Rack.addRecipe("tfc:saltfromsaltwater", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24, 1.0); 
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");

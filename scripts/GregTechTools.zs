@@ -136,7 +136,7 @@ recipes.remove(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "manga
 recipes.remove(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "iron"}}));
 
 //Добавление рецептов молотов GT(38)+1
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.7 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/hammer_head/copper>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.5 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/hammer_head/copper>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [<minecraft:stick>, <ore:toolHeadHammerNeutronium>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsss", MaxDurability: 15000}}), [<minecraft:stick>, <ore:toolHeadHammerHsss>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsse", MaxDurability: 19000}}), [<minecraft:stick>, <ore:toolHeadHammerHsse>]);
@@ -305,7 +305,7 @@ recipes.remove(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "manga
 recipes.remove(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "iron"}}));
 
 //Крафт пил(38)+1
-recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.7 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/saw_blade/copper>]);
+recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.5 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/saw_blade/copper>]);
 //
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [<minecraft:stick>, <ore:toolHeadSawNeutronium>]);
 recipes.addShapeless(<gregtech:meta_tool:5>.withTag({"GT.ToolStats": {Material: "hsss", MaxDurability: 15000}}), [<minecraft:stick>, <ore:toolHeadSawHsss>]);
@@ -515,7 +515,7 @@ recipes.remove(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "mang
 recipes.remove(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "iron"}}));
 
 //Добавление рецептов ножей GT(38)+1
-recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "copper", MaxDurability: 600}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickCopper>, null]]);
+recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.5 as float, MaxDurability: 600}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickCopper>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateNeutronium>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickNeutronium>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "Hsss", MaxDurability: 15000}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateHsss>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickHsss>, null]]);
 recipes.addShaped(<gregtech:meta_tool:17>.withTag({"GT.ToolStats": {Material: "Hsse", MaxDurability: 117000}}), [[null, null, null],[<ore:craftingToolFile>.firstItem.withEmptyTag(), <ore:plateHsse>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()],[null, <ore:stickHsse>, null]]);

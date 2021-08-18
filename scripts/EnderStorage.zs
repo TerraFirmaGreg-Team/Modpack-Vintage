@@ -1,7 +1,3 @@
-import mods.gregtech.recipe.RecipeMap;
-
-//val assembler as RecipeMap = RecipeMap.getByName("assembler");
-
 //Удаление + скрытие
 mods.jei.JEI.removeAndHide(<enderstorage:ender_pouch>);
 

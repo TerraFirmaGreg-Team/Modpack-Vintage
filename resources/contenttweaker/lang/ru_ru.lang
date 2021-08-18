@@ -2,17 +2,6 @@
 
 tile.contenttweaker.aquamarine_andesite_sand.name=Аквамариновый андезитный песок
 
-tile.contenttweaker.furnaceblock.name=Печной блок
-
-item.contenttweaker.glassmix.name=Стеклянная смесь
-
-item.contenttweaker.copper_hammer.name=Медное оголовье молота
-
-item.contenttweaker.part_plate_basic.name=Базовая Пластина
-item.contenttweaker.part_plate_advanced.name=Улучшенная Пластина
-item.contenttweaker.part_plate_du.name=ДУ Пластина
-item.contenttweaker.part_plate_elite.name=Совершенная Пластина
-
 item.contenttweaker.moonturf.name=Лунный реголит (Пыль)
 item.contenttweaker.moonsoil.name=Лунный грунт (Пыль)
 item.contenttweaker.moonstone.name=Лунный камень (Пыль)
@@ -28,35 +17,9 @@ item.contenttweaker.mercuryturf.name=Меркурианский реголит (
 item.contenttweaker.mercurysoil.name=Меркурианский грунт (Пыль)
 item.contenttweaker.mercurystone.name=Меркурианский камень (Пыль)
 
-item.contenttweaker.asteroidstone.name=Астероидный камень (Пыль)
-
-item.contenttweaker.phobosturf.name=Поверхность фобоса (Пыль)
-item.contenttweaker.phobossoil.name=Подповерхность фобоса (Пыль)
-item.contenttweaker.phobosstone.name=Камень фобос (Пыль)
-
-item.contenttweaker.deimosturf.name=Поверхность деймоса (Пыль)
-item.contenttweaker.deimossoil.name=Подповерхность деймоса (Пыль)
-item.contenttweaker.deimosstone.name=Камень деймоса (Пыль)
-
-item.contenttweaker.jupiterturf.name=Поверхность Юпитера (Пыль)
-item.contenttweaker.jupitersoil.name=Подповерхность Юпитера (Пыль)
-item.contenttweaker.jupiterstone.name=Камень Юпитера (Пыль)
-
-item.contenttweaker.saturnturf.name=Поверхность Сатурна (Пыль)
-item.contenttweaker.saturnsoil.name=Подповерхность Сатурна (Пыль)
-item.contenttweaker.saturnstone.name=Камень Сатурна (Пыль)
-
-item.contenttweaker.uranturf.name=Поверхность Урана (Пыль)
-item.contenttweaker.uransoil.name=Подповерхность Урана (Пыль)
-item.contenttweaker.uranstone.name=Камень Урана (Пыль)
-
-item.contenttweaker.neptuneturf.name=Поверхность Нептуна (Пыль)
-item.contenttweaker.neptunesoil.name=Подповерхность Нептуна (Пыль)
-item.contenttweaker.neptunestone.name=Камень Нептуна (Пыль)
-
-item.contenttweaker.plutoturf.name=Поверхность Плутона (Пыль)
-item.contenttweaker.plutosoil.name=Подповерхность Плутона (Пыль)
-item.contenttweaker.plutostone.name=Камень Плутона (Пыль)
+item.contenttweaker.asteroidstone1.name=Астероидный камень (Пыль)
+item.contenttweaker.asteroidstone2.name=Астероидный камень (Пыль)
+item.contenttweaker.asteroidstone3.name=Астероидный камень (Пыль)
 
 #Фикс перевода листвы
 tile.dynamictreestfc:leaves0.name=Листва
@@ -856,12 +819,12 @@ tfg.quests.space.rocket1.subtitle=Первая ракета!
 tfg.quests.space.rocket2.subtitle=Вторая ракета!
 tfg.quests.space.rocket3.subtitle=Дай угадаю, она третья.
 tfg.quests.space.rocket4.subtitle=А вы уже были на астероидах?
-tfg.quests.space.rocket9.subtitle=Вы близки..
-tfg.quests.space.rocket10.subtitle=Вы думаете я вас не переиграю, я вас не уничтожу? Я вас уничтожу.
+tfg.quests.space.rocket6.subtitle=Вы близки..
+tfg.quests.space.rocket7.subtitle=Вы думаете я вас не переиграю, я вас не уничтожу? Я вас уничтожу.
 
 tfg.quests.space.end1.title=Это конец!
 tfg.quests.space.end1.subtitle=Я дажне не знаю кто, бог вы или маг, либо же сидите на стероидах, но с увереностью могу сказать, что вы заработали ачивку - Пройти TerraFirmaGreg, а также выкинуть пол жизни на свалку!
 
-imm.quests.mendeleevtable.era.title=Таблица химических элементов
+imm.quests.mendeleevtable.era.title=Химическая таблица
 
 

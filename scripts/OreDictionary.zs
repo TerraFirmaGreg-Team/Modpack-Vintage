@@ -294,14 +294,9 @@ for item in ButtonStone {
 
 //Ножи TFC = Ножи GT
 <ore:knife>.addAll(<ore:craftingToolKnife>);
-
 <ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
 
-//ОрДиктЖелезаИВротЖелеза
-//<ore:plateAllDefaultIron>.add(<gregtech:meta_item_1:12033>);
-//<ore:plateAllDefaultIron>.add(<gregtech:meta_item_1:12197>);
-
-//Фик железка
+//Фикc железка
 <ore:plateWroughtIron>.remove(<gregtech:meta_item_1:12197>);
 <ore:ingotWroughtIron>.remove(<gregtech:meta_item_1:10197>);
 <ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);

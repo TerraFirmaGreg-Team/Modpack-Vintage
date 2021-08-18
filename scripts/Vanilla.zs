@@ -1,26 +1,5 @@
-import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-
-val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
-
-var ingotIron = <ore:ingotIron>;
-var blockIron = <ore:blockIron>;
-var obsidian = <ore:obsidian>;
-var diamond = <ore:gemDiamond>;
-var book = <minecraft:book>;
-var dirt = <ore:dirt>;
-var cobble = <ore:cobblestone>;
-var gravel = <ore:gravel>;
-var sand = <ore:sand>;
-var chestwood = <ore:chestWood>;
-var blazerod = <minecraft:blaze_rod>;
-var dyecyan = <ore:dyeCyan>;
-var quartz = <minecraft:quartz>;
-var glowstone = <ore:glowstone>;
-var prismarine = <ore:blockPrismarine>;
-var dyeblack = <ore:dyeBlack>;
-var blockquartz = <ore:blockQuartz>;
 
 //Отключение крафтов
 global ItemsToRemoveVJEI as IItemStack[] = [
@@ -55,27 +34,44 @@ global ItemsToRemoveVJEI as IItemStack[] = [
     <minecraft:cooked_mutton>,
     <minecraft:beetroot>,
     <minecraft:beetroot_soup>,
-    <minecraft:furnace>
+    <minecraft:furnace>,
+    //Tools
+    <minecraft:diamond_pickaxe>,
+    <minecraft:golden_pickaxe>,
+    <minecraft:iron_pickaxe>,
+    <minecraft:diamond_shovel>,
+    <minecraft:golden_shovel>,
+    <minecraft:iron_shovel>,
+    <minecraft:diamond_sword>,
+    <minecraft:golden_sword>,
+    <minecraft:iron_sword>,
+    <minecraft:diamond_axe>,
+    <minecraft:golden_axe>,
+    <minecraft:iron_axe>,
+    <minecraft:iron_hoe>,
+    <minecraft:diamond_hoe>,
+    <minecraft:golden_hoe>,
+    //Armor
+    <minecraft:diamond_leggings>,
+    <minecraft:diamond_boots>,
+    <minecraft:diamond_chestplate>,
+    <minecraft:diamond_helmet>,
+    <minecraft:golden_helmet>,
+    <minecraft:golden_chestplate>,
+    <minecraft:golden_leggings>,
+    <minecraft:golden_boots>,
+    <minecraft:iron_helmet>,
+    <minecraft:iron_chestplate>,
+    <minecraft:iron_leggings>,
+    <minecraft:iron_boots>,
+    <minecraft:chainmail_helmet>,
+    <minecraft:chainmail_chestplate>,
+    <minecraft:chainmail_leggings>,
+    <minecraft:chainmail_boots>
 ] as IItemStack[];
 for item in ItemsToRemoveVJEI{
     mods.jei.JEI.removeAndHide(item);
 }
-recipes.removeByRecipeName("minecraft:stone_pressure_plate");
-recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
-recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
-recipes.removeByRecipeName("gregtech:cauldron");
-recipes.removeByRecipeName("gregtech:iron_trapdoor");
-recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
-recipes.removeByRecipeName("gregtech:iron_door");
-recipes.removeByRecipeName("minecraft:iron_door");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
-recipes.removeByRecipeName("tfc:vanilla/pressure_pate/heavy_weighted_pressure_plate");
-recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecart");
-recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
-recipes.removeByRecipeName("minecraft:tripwire_hook");
-recipes.removeByRecipeName("minecraft:stick");
-recipes.removeByRecipeName("tfc:vanilla/cauldron");
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<minecraft:furnace>);
 recipes.remove(<minecraft:jukebox>);
@@ -122,41 +118,23 @@ recipes.removeByRecipeName("gregtech:lignite_coal_torch");
 recipes.removeByRecipeName("gregtech:torch_sulfur");
 recipes.removeByRecipeName("gregtech:torch_phosphor");
 recipes.removeByRecipeName("forestry:beeswax_worth");
-
-//Удаление рецептов + скрытие
-//Tools
-mods.jei.JEI.removeAndHide(<minecraft:diamond_pickaxe>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_pickaxe>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_pickaxe>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_shovel>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_shovel>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_shovel>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_sword>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_sword>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_sword>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_axe>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_axe>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_axe>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_hoe>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_hoe>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_hoe>);
-//Armor
-mods.jei.JEI.removeAndHide(<minecraft:diamond_leggings>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_boots>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_chestplate>);
-mods.jei.JEI.removeAndHide(<minecraft:diamond_helmet>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_helmet>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_chestplate>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_leggings>);
-mods.jei.JEI.removeAndHide(<minecraft:golden_boots>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_helmet>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_chestplate>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
-mods.jei.JEI.removeAndHide(<minecraft:iron_boots>);
-mods.jei.JEI.removeAndHide(<minecraft:chainmail_helmet>);
-mods.jei.JEI.removeAndHide(<minecraft:chainmail_chestplate>);
-mods.jei.JEI.removeAndHide(<minecraft:chainmail_leggings>);
-mods.jei.JEI.removeAndHide(<minecraft:chainmail_boots>);
+//Другое
+recipes.removeByRecipeName("minecraft:stone_pressure_plate");
+recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
+recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
+recipes.removeByRecipeName("gregtech:cauldron");
+recipes.removeByRecipeName("gregtech:iron_trapdoor");
+recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
+recipes.removeByRecipeName("gregtech:iron_door");
+recipes.removeByRecipeName("minecraft:iron_door");
+recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
+recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
+recipes.removeByRecipeName("tfc:vanilla/pressure_pate/heavy_weighted_pressure_plate");
+recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecart");
+recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
+recipes.removeByRecipeName("minecraft:tripwire_hook");
+recipes.removeByRecipeName("minecraft:stick");
+recipes.removeByRecipeName("tfc:vanilla/cauldron");
 
 //Создание крафтов
 //Цемент из ваниллы --> бетон разных цветов
@@ -189,10 +167,10 @@ recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecra
 
 //Водная хрень
 recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
-recipes.addShapeless(<minecraft:prismarine>, [blockquartz, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:1> * 4, [prismarine, prismarine, prismarine, prismarine]);
-recipes.addShapeless(<minecraft:sea_lantern>, [glowstone, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:2>, [prismarine, dyeblack]);
+recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
+recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
+recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
+recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
  
 //Рельсы
 //Активатор рельсы
@@ -202,9 +180,9 @@ recipes.addShaped(<minecraft:golden_rail>*6,
  [<ore:stickGold>, <minecraft:stick>, <ore:stickGold>]]);
 //
 recipes.addShaped(<minecraft:detector_rail>*8,
-[[<ore:stickIron>, null, <ore:stickIron>],
- [<ore:stickIron>, <ore:pressurePlateStone>, <ore:stickIron>],
- [<ore:stickIron>, <ore:dustRedstone>, <ore:stickIron>]]);
+[[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:pressurePlateStone>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:dustRedstone>, <ore:stickWroughtIron>]]);
 //
 recipes.addShaped(<minecraft:detector_rail>*16,
 [[<ore:stickSteel>, null, <ore:stickSteel>],
@@ -212,9 +190,9 @@ recipes.addShaped(<minecraft:detector_rail>*16,
  [<ore:stickSteel>, <ore:dustRedstone>, <ore:stickSteel>]]); 
 //
 recipes.addShaped(<minecraft:activator_rail>*8,
-[[<ore:stickIron>, <minecraft:stick>, <ore:stickIron>],
- [<ore:stickIron>, <minecraft:lever>, <ore:stickIron>],
- [<ore:stickIron>, <minecraft:stick>, <ore:stickIron>]]); 
+[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:lever>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
 //
 recipes.addShaped(<minecraft:activator_rail>*16,
 [[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
@@ -222,9 +200,9 @@ recipes.addShaped(<minecraft:activator_rail>*16,
  [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
 //
 recipes.addShaped(<minecraft:rail>*8,
-[[<ore:stickIron>, <minecraft:stick>, <ore:stickIron>],
- [<ore:stickIron>, <minecraft:stick>, <ore:stickIron>],
- [<ore:stickIron>, <minecraft:stick>, <ore:stickIron>]]); 
+[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
 //
 recipes.addShaped(<minecraft:rail>*16,
 [[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
@@ -233,14 +211,14 @@ recipes.addShaped(<minecraft:rail>*16,
  
 //Лампа
 recipes.addShaped(<minecraft:redstone_lamp>,
-[[<ore:plateBrass>, <ore:stickIron>, <ore:plateBrass>],
- [<ore:stickIron>, <ore:cableGtSingleRedAlloy>, <ore:stickIron>],
- [<ore:plateBrass>, <ore:stickIron>, <ore:plateBrass>]]);
+[[<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>],
+ [<ore:stickWroughtIron>, <ore:cableGtSingleRedAlloy>, <ore:stickWroughtIron>],
+ [<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>]]);
 
 //Крюк
 recipes.addShaped(<minecraft:tripwire_hook>,
-[[null, <ore:ringIron>, null],
- [null, <ore:screwIron>, null],
+[[null, <ore:ringWroughtIron>, null],
+ [null, <ore:screwWroughtIron>, null],
  [null, <ore:stickWood>, null]]);
 
 //Проигрыватель
@@ -258,13 +236,13 @@ recipes.addShaped(<minecraft:enchanting_table>,
 //Поршень
 recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
- [<ore:stone>, <ore:gearIron>, <ore:stone>],
+ [<ore:stone>, <ore:gearWroughtIron>, <ore:stone>],
  [<ore:stone>, <ore:dustRedstone>, <ore:stone>]]);
 
 //Варочная стойка
 recipes.addShaped(<minecraft:brewing_stand>, [
-[null,blazerod,null],
-[cobble,cobble,cobble]]);
+[null, <ore:stickBlaze>, null],
+[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,
@@ -274,6 +252,6 @@ recipes.addShaped(<minecraft:bucket>,
 
 //Крусибл
 recipes.addShaped(<minecraft:cauldron>,
-[[<ore:plateIron>, null, <ore:plateIron>],
- [<ore:plateIron>, null, <ore:plateIron>],
- [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+[[<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);

@@ -6,11 +6,7 @@ import mods.terrafirmacraft.Anvil;
 //Провода для примитивной эры
 WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
 WireDrawing.addRecipe("tfctech:wire_copper", <tfctech:metal/copper_wire:1>, 3, <gregtech:cable:18>, 0xFFA6B525);
-WireDrawing.removeRecipe(<tfctech:metal/electrum_wire>);
-WireDrawing.addRecipe("tfctech:wire_electrum", <tfctech:metal/electrum_wire:1>, 3, <gregtech:cable:112>, 0xFFDFB950);
-WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
-WireDrawing.addRecipe("tfctech:wire_red_alloy", <tfctech:metal/red_alloy_wire:1>, 3, <gregtech:cable:237>, 0xFFDA6E6E);
-WireDrawing.removeRecipe(<tfctech:metal/red_alloy_wire>);
+WireDrawing.removeRecipe(<tfctech:metal/gold_wire>);
 WireDrawing.addRecipe("tfctech:wire_gold", <tfctech:metal/gold_wire:1>, 3, <gregtech:cable:26>, 0xFFc2bb30);
 WireDrawing.removeRecipe(<tfctech:metal/lead_wire>);
 WireDrawing.addRecipe("tfctech:wire_lead", <tfctech:metal/lead_wire:1>, 3, <gregtech:cable:35>, 0xFF593f73);
@@ -64,9 +60,9 @@ recipes.addShapeless(<gregtech:meta_item_1:12152>*2, [<tfctech:latex/rubber>, <o
 //Winch
 recipes.remove(<tfctech:wiredraw/winch>);
 recipes.addShaped(<tfctech:wiredraw/winch>,
-[[<ore:stickIron>|<ore:stickWroughtIron>, null, <ore:stickIron>|<ore:stickWroughtIron>],
- [null, <ore:stickLongIron>|<ore:stickLongWroughtIron>, null],
- [<ore:stickIron>|<ore:stickWroughtIron>, null, <ore:stickIron>|<ore:stickWroughtIron>]]);
+[[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
+ [null, <ore:stickLongWroughtIron>, null],
+ [<ore:stickWroughtIron>, null, <ore:stickWroughtIron>]]);
 
 //Медный индуктор
 recipes.remove(<tfctech:metal/copper_inductor>);
@@ -92,23 +88,23 @@ recipes.addShaped(<tfctech:electric_forge>,
 //Smeltery Cauldron
 recipes.remove(<tfctech:smeltery_cauldron>);
 recipes.addShaped(<tfctech:smeltery_cauldron>,
-[[<ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>],
- [<ore:plateIron>|<ore:plateWroughtIron>, null, <ore:plateIron>|<ore:plateWroughtIron>],
- [<ore:stickLongIron>|<ore:stickLongWroughtIron>, null, <ore:stickLongIron>|<ore:stickLongWroughtIron>]]);
+[[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
+ [<ore:stickLongWroughtIron>, null, <ore:stickLongWroughtIron>]]);
 
 //Smeltery Firebox
 recipes.remove(<tfctech:smeltery_firebox>);
 recipes.addShaped(<tfctech:smeltery_firebox>,
-[[<ore:stickIron>|<ore:stickWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:stickIron>|<ore:stickWroughtIron>],
- [<ore:plateIron>|<ore:plateWroughtIron>, <tfc:fire_bricks>, <ore:plateIron>|<ore:plateWroughtIron>],
- [<ore:stickIron>|<ore:stickWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:stickIron>|<ore:stickWroughtIron>]]);
+[[<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>],
+ [<ore:plateWroughtIron>, <tfc:fire_bricks>, <ore:plateWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>]]);
 
 //Wire Draw Bench
 recipes.remove(<tfctech:wire_draw_bench>);
 recipes.addShaped(<tfctech:wire_draw_bench>,
 [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <tfctech:metal/iron_tongs>],
- [<ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>, <ore:plateIron>|<ore:plateWroughtIron>],
- [<ore:plateIron>|<ore:plateWroughtIron>, null, <ore:plateIron>|<ore:plateWroughtIron>]]);
+ [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>]]);
 
 //Оф мусор.
 ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/propick_head>);
