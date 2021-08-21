@@ -39,7 +39,7 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:815>).fluidInputs([<liquid:
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:816>).fluidInputs([<liquid:oxygen> * 150]).outputs(<gregtech:meta_item_1:10235>*3).duration(750).EUt(34).buildAndRegister();
 
 //Реплейс всех печек на печь из GT
-recipes.replaceAllOccurences(<minecraft:furnace>, <gregtech:machine:16>);
+recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
 
 //Сундуки можно переработать
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:802>).fluidInputs([<liquid:oxygen> * 500]).outputs(<gregtech:meta_item_1:10095>*10).EUt(8).duration(400).buildAndRegister();

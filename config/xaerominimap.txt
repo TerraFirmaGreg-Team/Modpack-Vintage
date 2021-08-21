@@ -23,7 +23,7 @@ displayRedstone:true
 deathpoints:true
 oldDeathpoints:true
 distance:1
-showCoords:false
+showCoords:true
 lockNorth:true
 zoom:0
 minimapSize:100
@@ -51,7 +51,7 @@ dotsStyle:0
 headsScale:1.0
 dotNameScale:1.0
 compassOverWaypoints:false
-showBiome:false
+showBiome:true
 showEntityHeight:true
 showFlowers:true
 keepWaypointNames:false
@@ -83,9 +83,9 @@ hostileMobNames:0
 itemNames:0
 otherNames:0
 tamedMobNames:3
-showLightLevel:0
+showLightLevel:2
 renderLayerIndex:1
-showTime:0
+showTime:1
 biomeColorsVanillaMode:false
 lookingAtAngle:10
 lookingAtAngleVertical:180

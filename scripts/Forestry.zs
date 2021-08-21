@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 
 //Удаление рецептов + скрытие
 global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
-	<forestry:fertilizer_compound>,
+	//<forestry:fertilizer_compound>,
 	<forestry:ffarm>.withTag({FarmBlock: 7}),
 	<forestry:ffarm>.withTag({FarmBlock: 1}),
 	<forestry:ffarm:4>.withTag({FarmBlock: 7}),

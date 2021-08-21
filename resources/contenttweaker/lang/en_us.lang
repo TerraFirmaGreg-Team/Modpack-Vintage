@@ -125,6 +125,9 @@ tfg.quests.primitive.fuelNumber1.subtitle=Always have more.
 tfg.quests.primitive.fuelNumber2.title=The Fuel №2
 tfg.quests.primitive.fuelNumber2.subtitle=It burns.
 
+tfg.quests.primitive.fuelNumber3.title=The Fuel №3
+tfg.quests.primitive.fuelNumber3.subtitle=It burns slightly worse than ordinary coal.
+
 tfg.quests.primitive.saw.title=First saw
 tfg.quests.primitive.saw.subtitle=The saw.
 

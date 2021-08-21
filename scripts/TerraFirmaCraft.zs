@@ -9,6 +9,12 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.tfcdryingrack.Rack;
+import mods.firmalife.Drying;
+
+Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24000);
+
+//Fetilizer
+Rack.addRecipe("tfc:fertilizerFix", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8, 1.0);
 
 //Удаление + скрытие
 global ItemsToRemoveTFCJEI as IItemStack[] = [
@@ -100,6 +106,7 @@ for item in ItemsToRemoveTFCJEI{
 }
 
 //Удаление рецептов
+/*
 global ItemsToRemoveTFC as IItemStack[] = [
 	//Кирки
 	<tfc:metal/pick/bismuth_bronze>,
@@ -154,7 +161,7 @@ global ItemsToRemoveTFC as IItemStack[] = [
 ] as IItemStack[];
 for item in ItemsToRemoveTFC{
     recipes.remove(item);
-}
+}*/
 
 //Добавление рецептов печи для еды TFC
 //Хавка
@@ -300,6 +307,13 @@ extruder.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).notConsumable(<g
 forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], null).remove();
 large_forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], [<liquid:lubricant>*2]).remove();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>*3).outputs(<tfc:metal/sheet/wrought_iron>*2).duration(100).EUt(16).buildAndRegister(); 
+//Исправляем железные прутья
+Anvil.removeRecipe(<minecraft:iron_bars>*16);
+//Исправляем гриль
+Anvil.removeRecipe(<tfc:wrought_iron_grill>);
+Anvil.addRecipe("tfc:WroughtIronGrillTweaked", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
+//Крафт железного трапдора через наковальню тфк
+Anvil.addRecipe("tfc:IronTrapdoorTweaked", <ore:plateDoubleWroughtIron>, <minecraft:iron_trapdoor>, 3, "general", "UPSET_NOT_LAST", "BEND_NOT_LAST", "UPSET_THIRD_LAST");
 
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
@@ -356,9 +370,6 @@ extractor.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<greg
 forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 
-//Fetilizer
-Rack.addRecipe("tfc:fertilizerFix", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8, 1.0);
-
 //Salt(Ocean water) --> Fresh water
 centrifuge.recipeBuilder().fluidInputs(<liquid:salt_water>*1000).chancedOutput(<gregtech:meta_item_1:2155>, 2500, 2500).fluidOutputs(<liquid:fresh_water>*750).duration(100).EUt(10).buildAndRegister();
 
@@ -372,15 +383,9 @@ fluid_heater.recipeBuilder().fluidInputs(<liquid:fresh_water>*1000).notConsumabl
 //Дистилированная вода из горячей
 distillery.recipeBuilder().fluidInputs(<liquid:hot_water>*576).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 9})).fluidOutputs(<liquid:distilled_water>*510).duration(100).EUt(8).buildAndRegister();
 
-//Еда из GC
-//ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
-ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.3, 0.3, 0.5, 0, 0, 1.0, 0, 0.5);
-ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.1, 0.4, 0.5, 0, 1.0, 0, 0, 0.5);
-
 //Кривые палки офаем
 Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
 Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
-
 
 //Палки из пиломатериалов
 recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>]);
@@ -397,9 +402,6 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
 //How water --> Dist
 Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled_water>*1, 6);
-
-//Крафт железного трапдора через наковальню тфк
-Anvil.addRecipe("tfc:irontrapdoortweaked", <tfc:metal/double_sheet/wrought_iron>, <minecraft:iron_trapdoor>, 3, "general", "UPSET_NOT_LAST", "BEND_NOT_LAST", "UPSET_THIRD_LAST");
 
 //Отключение крафтов всех геологических TFC
 Anvil.removeRecipe(<tfc:metal/propick_head/red_steel>);

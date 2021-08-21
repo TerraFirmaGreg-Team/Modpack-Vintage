@@ -112,7 +112,7 @@ global ItemsToRemoveEI as IItemStack[] = [
 for item in ItemsToRemoveEI{
     recipes.remove(item);
 }
-
+recipes.removeByRecipeName("enderio:tweak_stick_from_wood");
 recipes.removeByRecipeName("enderio:compatibility_glass_pane");
 recipes.removeByRecipeName("enderio:compatibility_glass_2_glass");
 

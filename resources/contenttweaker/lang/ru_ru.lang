@@ -124,10 +124,13 @@ tfg.quests.primitive.fuelNumber1.title=Топливо №1
 tfg.quests.primitive.fuelNumber1.subtitle=Я предлагаю линчевать того дебила, который сделал невозможным топить горн и доменную печку каменным углём.
 
 tfg.quests.primitive.fuelNumber2.title=Топливо №2
-tfg.quests.primitive.fuelNumber2.subtitle=Наконец-то можно не линчевать того, кто придумал сами знаете что
+tfg.quests.primitive.fuelNumber2.subtitle=Наконец-то можно не линчевать того, кто придумал сами знаете что.
+
+tfg.quests.primitive.fuelNumber3.title=Топливо №3
+tfg.quests.primitive.fuelNumber3.subtitle=Оно горит чуть хуже чем обычный уголь.
 
 tfg.quests.primitive.saw.title=Первая пила
-tfg.quests.primitive.saw.subtitle=Сделайте бронзовую пилу
+tfg.quests.primitive.saw.subtitle=Сделайте бронзовую пилу.
 
 tfg.quests.primitive.planks.title=Доски, прям как...
 tfg.quests.primitive.planks.subtitle=Пилим, пилим, пилим..

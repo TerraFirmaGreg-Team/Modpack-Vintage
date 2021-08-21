@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.fuelNumber1.title}",
-	x: -17.5d,
+	x: -18.5d,
 	y: -2.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.fuelNumber1.subtitle}",

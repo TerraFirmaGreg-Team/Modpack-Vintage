@@ -3,7 +3,8 @@
 	y: -9.5d,
 	description: "{tfg.quests.primitive.tochilka5.subtitle}",
 	dependencies: [
-		"4c7d1957"
+		"4c7d1957",
+		"b6eb2f01"
 	],
 	tasks: [{
 		uid: "b93a4e11",

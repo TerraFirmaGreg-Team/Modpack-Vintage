@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: -3.0d,
+	dependencies: [
+		"85e10b5d"
+	],
+	tasks: [{
+		uid: "694e24a8",
+		type: "item",
+		items: [{
+			item: "tfctech:smeltery_firebox"
+		}]
+	}]
+}

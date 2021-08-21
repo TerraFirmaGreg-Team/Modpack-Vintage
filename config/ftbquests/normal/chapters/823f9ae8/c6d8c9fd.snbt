@@ -1,15 +1,16 @@
 {
-	x: -5.0d,
-	y: 1.5d,
+	x: -7.0d,
+	y: 3.0d,
 	shape: "circle",
+	hide_dependency_lines: true,
 	dependencies: [
-		"4f185247"
+		"85e10b5d"
 	],
 	tasks: [{
-		uid: "74b2c739",
+		uid: "95f064e1",
 		type: "item",
 		items: [{
-			item: "tfctech:ceramics/fluid_bowl"
+			item: "tfc:stone/hammer/igneous_intrusive"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

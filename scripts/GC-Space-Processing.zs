@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.ItemRegistry;
 
 //Удаление+скрытие рецептов JEI
 global ItemsToRemoveGCJEI as IItemStack[] = [
@@ -274,6 +275,11 @@ global ItemsToRemoveGC as IItemStack[] = [
 for item in ItemsToRemoveGC{
     recipes.remove(item);
 }
+
+//Еда из GC
+//ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.3, 0.3, 0.5, 0, 0, 1.0, 0, 0.5);
+ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.1, 0.4, 0.5, 0, 1.0, 0, 0, 0.5);
 
 //Шест
 recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>]);

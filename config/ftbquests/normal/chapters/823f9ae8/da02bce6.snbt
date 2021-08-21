@@ -19,7 +19,7 @@
 		}
 	},
 	x: -10.5d,
-	y: 0.5d,
+	y: 0.0d,
 	description: "{tfg.quests.primitive.blackbronzeingot.subtitle}",
 	dependencies: [
 		"72877b1a",

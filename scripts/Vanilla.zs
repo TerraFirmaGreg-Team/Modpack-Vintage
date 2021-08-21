@@ -137,23 +137,6 @@ recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("tfc:vanilla/cauldron");
 
 //Создание крафтов
-//Цемент из ваниллы --> бетон разных цветов
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:1>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:1>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:2>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:2>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:3>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:3>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:4>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:4>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:5>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:5>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:6>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:6>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:7>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:7>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:8>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:8>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:9>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:9>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:10>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:10>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:11>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:11>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:12>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:12>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:13>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:13>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:14>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:14>).duration(10).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<minecraft:concrete_powder:15>).fluidInputs([<liquid:fresh_water> * 1000]).outputs(<minecraft:concrete:15>).duration(10).EUt(8).buildAndRegister();
 
 //Крафт стекла
 furnace.addRecipe(<minecraft:glass>, <ore:sand>);
@@ -165,50 +148,6 @@ recipes.addShapeless(<minecraft:crafting_table>,[<ore:craftingTableWood>]);
 recipes.addShapeless(<minecraft:chest_minecart>,[<minecraft:minecart>,<ore:chestWood>]);
 recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecraft:furnace>]);
 
-//Водная хрень
-recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
-recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
-recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
- 
-//Рельсы
-//Активатор рельсы
-recipes.addShaped(<minecraft:golden_rail>*6,
-[[<ore:stickGold>, <minecraft:stick>, <ore:stickGold>],
- [<ore:stickGold>, <ore:dustRedstone>, <ore:stickGold>],
- [<ore:stickGold>, <minecraft:stick>, <ore:stickGold>]]);
-//
-recipes.addShaped(<minecraft:detector_rail>*8,
-[[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <ore:pressurePlateStone>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <ore:dustRedstone>, <ore:stickWroughtIron>]]);
-//
-recipes.addShaped(<minecraft:detector_rail>*16,
-[[<ore:stickSteel>, null, <ore:stickSteel>],
- [<ore:stickSteel>, <ore:pressurePlateStone>, <ore:stickSteel>],
- [<ore:stickSteel>, <ore:dustRedstone>, <ore:stickSteel>]]); 
-//
-recipes.addShaped(<minecraft:activator_rail>*8,
-[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:lever>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
-//
-recipes.addShaped(<minecraft:activator_rail>*16,
-[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:lever>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
-//
-recipes.addShaped(<minecraft:rail>*8,
-[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
-//
-recipes.addShaped(<minecraft:rail>*16,
-[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
- 
 //Лампа
 recipes.addShaped(<minecraft:redstone_lamp>,
 [[<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>],
@@ -255,3 +194,47 @@ recipes.addShaped(<minecraft:cauldron>,
 [[<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
  [<ore:plateWroughtIron>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
  [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
+
+//Водная хрень
+recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
+recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
+recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
+recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
+recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
+ 
+//Рельсы
+//Активатор рельсы
+recipes.addShaped(<minecraft:golden_rail>*6,
+[[<ore:stickGold>, <minecraft:stick>, <ore:stickGold>],
+ [<ore:stickGold>, <ore:dustRedstone>, <ore:stickGold>],
+ [<ore:stickGold>, <minecraft:stick>, <ore:stickGold>]]);
+//
+recipes.addShaped(<minecraft:detector_rail>*8,
+[[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:pressurePlateStone>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:dustRedstone>, <ore:stickWroughtIron>]]);
+//
+recipes.addShaped(<minecraft:detector_rail>*16,
+[[<ore:stickSteel>, null, <ore:stickSteel>],
+ [<ore:stickSteel>, <ore:pressurePlateStone>, <ore:stickSteel>],
+ [<ore:stickSteel>, <ore:dustRedstone>, <ore:stickSteel>]]); 
+//
+recipes.addShaped(<minecraft:activator_rail>*8,
+[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:lever>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
+//
+recipes.addShaped(<minecraft:activator_rail>*16,
+[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
+ [<ore:stickSteel>, <minecraft:lever>, <ore:stickSteel>],
+ [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
+//
+recipes.addShaped(<minecraft:rail>*8,
+[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
+ [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
+//
+recipes.addShaped(<minecraft:rail>*16,
+[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
+ [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
+ [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 

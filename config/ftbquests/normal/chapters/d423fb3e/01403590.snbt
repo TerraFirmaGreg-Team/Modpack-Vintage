@@ -11,31 +11,16 @@
 		uid: "15cb514d",
 		type: "item",
 		items: [{
-			id: "tfc:metal/ingot/black_steel",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBlackSteel"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "ingotBlackSteel"
 				}
 			}
 		}]

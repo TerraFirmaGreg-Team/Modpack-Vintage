@@ -1,6 +1,7 @@
 {
-	x: -4.5d,
-	y: 2.0d,
+	x: -3.5d,
+	y: 1.5d,
+	shape: "circle",
 	description: "20mb",
 	dependencies: [
 		"db7a9dde"
