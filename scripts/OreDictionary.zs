@@ -286,6 +286,9 @@ for item in ButtonStone {
 	oreButtonStone.add(item);
 }
 
+//Beeswax
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
+
 //Молоты TFC = Молоты GT
 <ore:hammer>.addAll(<ore:craftingToolHardHammer>);
 

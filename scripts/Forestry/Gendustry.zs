@@ -1,3 +1,13 @@
+import crafttweaker.item.IItemStack;
+
+val RemoveItemsFromJEI as IItemStack[] = [
+	<gendustry:industrial_grafter:*>,
+	<gendustry:industrial_scoop:*>
+] as IItemStack[];
+for item in RemoveItemsFromJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
+
 //Фикс сот с красителями
 //Соты 
 centrifuge.recipeBuilder()

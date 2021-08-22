@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.steam.bee.title}",
 	x: -10.0d,
-	y: 1.5d,
+	y: -4.5d,
 	description: "{tfg.quests.steam.bee.subtitle}",
 	dependencies: [
 		"7dfaafb2"

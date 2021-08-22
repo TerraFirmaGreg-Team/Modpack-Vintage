@@ -2,16 +2,16 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 //Удаление рецептов + скрытие
-global ItemsToRemoveAEJEI as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:material:46>,
 	<appliedenergistics2:material:2>
 ] as IItemStack[];
-for item in ItemsToRemoveAEJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
 //Удаление рецептов
-global ItemsToRemoveAE as IItemStack[] = [
+val RemoveItemRecipes as IItemStack[] = [
 	//Блоки
 	<appliedenergistics2:fluix_block>,
 	<appliedenergistics2:quartz_block>,
@@ -28,7 +28,6 @@ global ItemsToRemoveAE as IItemStack[] = [
 	<appliedenergistics2:quantum_link>,
 	<appliedenergistics2:spatial_pylon>,
 	<appliedenergistics2:spatial_io_port>,
-	//<appliedenergistics2:part:440>,
 	<appliedenergistics2:cell_workbench>,
 	<appliedenergistics2:io_port>,
 	<appliedenergistics2:condenser>,
@@ -115,7 +114,7 @@ global ItemsToRemoveAE as IItemStack[] = [
 	<appliedenergistics2:material:56>,
 	<appliedenergistics2:material:57>
 ] as IItemStack[];
-for item in ItemsToRemoveAE{
+for item in RemoveItemRecipes{
     recipes.remove(item);
 }
 
@@ -451,8 +450,6 @@ recipes.addShapeless(<appliedenergistics2:part:302>, [<appliedenergistics2:part:
 recipes.addShapeless(<appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
 //Жидкостный интерфейс
 recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
-//Интерфейс
-//recipes.addShapeless(<appliedenergistics2:part:440>, [<appliedenergistics2:interface>]);
 //Шина P2P тунеля жидкостная
 recipes.addShapeless(<appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
 //Шина P2P тунеля редстоуновая
@@ -475,6 +472,11 @@ recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife
 recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotSilver>]);
 recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotBrass>]);
 recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotInvar>]);
+//Жидкостный интерфейс
+recipes.addShaped(<appliedenergistics2:fluid_interface>, [
+	[<ore:plateIron>, <ore:plateLazurite>, <ore:plateIron>],
+	[<appliedenergistics2:material:43>, <gregtech:meta_item_1:32682>, <appliedenergistics2:material:44>],
+	[<ore:plateIron>, <ore:plateLazurite>, <ore:plateIron>]]);
 //Контроллер
 recipes.addShaped(<appliedenergistics2:controller>, [
 	[<ore:plateTitanium>, <ore:circuitAdvanced>, <ore:plateTitanium>],

@@ -2,7 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 //Отключение крафтов
-global ItemsToRemoveVJEI as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:sluice>,
     <minecraft:apple>,
     <minecraft:mushroom_stew>,
@@ -69,7 +69,7 @@ global ItemsToRemoveVJEI as IItemStack[] = [
     <minecraft:chainmail_leggings>,
     <minecraft:chainmail_boots>
 ] as IItemStack[];
-for item in ItemsToRemoveVJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 recipes.remove(<minecraft:bucket>);

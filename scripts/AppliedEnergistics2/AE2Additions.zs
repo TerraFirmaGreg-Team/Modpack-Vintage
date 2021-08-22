@@ -29,6 +29,9 @@ mods.jei.JEI.removeAndHide(<aeadditions:terminal.universal.wireless>.withTag({ty
 mods.jei.JEI.removeAndHide(<aeadditions:vibrantchamberfluid>);
 mods.jei.JEI.removeAndHide(<aeadditions:certustank>);
 
+//Жидкостный интерфейс 2
+recipes.addShapeless(<aeadditions:part.base:2>, [<appliedenergistics2:fluid_interface>, <ore:circuitGood>, <ore:circuitGood>]);
+
 //Fluid Storage Housing
 assembler.recipeBuilder()
 	.inputs(<ore:plateCertusQuartz>*2, <ore:gemQuartzite>*2, <ore:plateStainlessSteel>*2, <ore:plateAluminium>*2)

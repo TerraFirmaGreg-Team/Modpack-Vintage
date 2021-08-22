@@ -83,7 +83,7 @@ hostileMobNames:0
 itemNames:0
 otherNames:0
 tamedMobNames:3
-showLightLevel:2
+showLightLevel:3
 renderLayerIndex:1
 showTime:1
 biomeColorsVanillaMode:false

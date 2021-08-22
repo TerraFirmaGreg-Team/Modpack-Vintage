@@ -15,6 +15,14 @@ recipes.addShaped(<firmalife:climate_station_1>,
  [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
  [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
+//Свечка
+recipes.remove(<firmalife:candle> * 6);
+recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
+
+//Обработанное дерево
+recipes.remove(<firmalife:treated_lumber>);
+recipes.addShapeless(<firmalife:treated_lumber>, [<ore:lumber>, <ore:itemBeeswax>, <ore:dustSalt>]);
+
 //Бафф крафта стен теплицы
 Anvil.removeRecipe(<firmalife:greenhouse_wall>*2);
 Anvil.addRecipe("tfc:greenhouse_wall_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");

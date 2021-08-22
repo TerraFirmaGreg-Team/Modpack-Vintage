@@ -1,17 +1,17 @@
 import crafttweaker.item.IItemStack;
 
 //Удаление рецептов + скрытие
-global ItemsToRemoveEIJEI as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	<enderio:item_material:9>,
 	<enderio:item_material:10>,
 	<enderio:item_material:11>
 ] as IItemStack[];
-for item in ItemsToRemoveEIJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
 //Удаление рецептов
-global ItemsToRemoveEI as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	<enderio:block_exit_rail>,
 	<enderio:item_material:9>,
 	<enderio:item_material:60>,
@@ -109,7 +109,7 @@ global ItemsToRemoveEI as IItemStack[] = [
 	<enderio:item_conduit_facade:3>,
 	<enderio:item_conduit_facade:2>
 ] as IItemStack[];
-for item in ItemsToRemoveEI{
+for item in RemoveItemsFromJEI{
     recipes.remove(item);
 }
 recipes.removeByRecipeName("enderio:tweak_stick_from_wood");

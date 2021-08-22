@@ -8,16 +8,10 @@ import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
-import mods.tfcdryingrack.Rack;
 import mods.firmalife.Drying;
 
-Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24000);
-
-//Fetilizer
-Rack.addRecipe("tfc:fertilizerFix", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8, 1.0);
-
 //Удаление + скрытие
-global ItemsToRemoveTFCJEI as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	//Hammers
 	<tfc:metal/hammer/copper>,
 	<tfc:metal/hammer/bismuth_bronze>,
@@ -101,7 +95,7 @@ global ItemsToRemoveTFCJEI as IItemStack[] = [
 	//<tfc:powder/saltpeter>
 	//<tfc:powder/salt>
 ] as IItemStack[];
-for item in ItemsToRemoveTFCJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
@@ -352,9 +346,18 @@ recipes.addShaped(<gregtech:meta_item_2:32011>,
 //Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
 
+//Удобрение
+Drying.addRecipe("wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer> * 2, 8000);
+
+//Гниль из Forestry в удобрение
+Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fertilizer>);
+
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<gregtech:meta_item_1:2095>*9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+
+//Высушивание соли
+Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24000);
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");

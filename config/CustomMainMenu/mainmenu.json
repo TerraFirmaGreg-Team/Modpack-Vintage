@@ -1,12 +1,20 @@
 {
     "images":
     {
-		
+		"menu_bg":
+        {
+            "image" : "modpack:mainmenu/bg_menu.png",
+            "posX" : 95,
+            "posY" : -80,
+            "width" : 200,
+            "height" : 1500,
+            "alignment" : "top_left"
+        },
         "title":
         {
             "image" : "modpack:mainmenu/tfglogocurse.png",
-            "posX" : -7,
-            "posY" : -140,
+            "posX" : 45,
+            "posY" : -150,
             "width" : 300,
             "height" : 113,
             "alignment" : "left_center"
@@ -20,13 +28,13 @@
         "singleplayer":
         {
             "text" : "menu.singleplayer",
-            "posX" : 100,
+            "posX" : 140,
             "posY" : -50,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 2096931,
 			"hoverText" : "Alone, again..",
-            "width" : 80,
+            "width" : 100,
             "height" : 20,
             "action" : 
             {
@@ -37,13 +45,13 @@
         "multiplayer":
         {
             "text" : "menu.multiplayer",
-            "posX" : 100,
+            "posX" : 140,
             "posY" : -20,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverText" : "With friends?",
 			"hoverTextColor" : 2070783,
-            "width" : 80,
+            "width" : 100,
             "height" : 20,
             "action" : 
             {
@@ -51,16 +59,33 @@
                 "gui" : "multiplayer"
             }
         },
+        "mods":
+        {
+            "text" : "Mods (#modsactive#)",
+			"hoverTextColor" : 3125670,
+			"texture" : "modpack:mainmenu/button.png",
+            "hoverText" : "Not enough?",
+            "posX" : 140,
+            "posY" : 10,
+            "width" : 100,
+            "height" : 20,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
         "options":
         {
             "text" : "menu.options",
-            "posX" : 100,
-            "posY" : 10,
+            "posX" : 140,
+            "posY" : 40,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 16719857,
 			"hoverText" : "Install shaders..",
-            "width" : 80,
+            "width" : 100,
             "height" : 20,
             "action" : 
             {
@@ -71,13 +96,13 @@
         "quit":
         {
             "text" : "menu.quit",
-            "posX" : 100,
-            "posY" : 40,
+            "posX" : 140,
+            "posY" : 70,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 16719647,
 			"hoverText" : "No, no, why?",
-            "width" : 80,
+            "width" : 100,
             "height" : 20,
             "action" : 
             {
@@ -115,22 +140,7 @@
 				"type" : "openLink",
 				"link" : "https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw"
 			}
-		},
-
-        "refresh":
-        {
-            "text" : "",
-            "posX" : -154,
-            "posY" : 132,
-            "width" : 20,
-            "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
-            "action" : 
-            {
-                "type" : "refresh"
-            }
-        }
-
+		}
 
     },
     
@@ -138,38 +148,56 @@
     {
         "CurrentClientVersionLabel":
         {
-            "text" : "Current Version:",
-            "posX" : 2,
-            "posY" : -20,
+            "text" : "Modpack Version:",
+            "posX" : 140,
+            "posY" : 120,
             "color" : -1,
-            "alignment" : "bottom_left"
+            "alignment" : "left_center"
         },
 		
 		"CurrentClientVersionProvider":
         {
-            "text" : "R2.8.5 [Lite]",
-            "posX" : 68,
-            "posY" : -20,
+            "text" : "R2.8.7",
+            "posX" : 213,
+            "posY" : 120,
             "color" : -1,
-            "alignment" : "bottom_left"
+            "alignment" : "left_center"
+        },
+
+        "CurrentClientTypeLabel":
+        {
+            "text" : "Modpack Type:",
+            "posX" : 150,
+            "posY" : 135,
+            "color" : -1,
+            "alignment" : "left_center"
+        },
+
+        "CurrentClientTypeProvider":
+        {
+            "text" : "[Lite]",
+            "posX" : 213,
+            "posY" : 135,
+            "color" : -1,
+            "alignment" : "left_center"
         },
 		
 		"LatestClientVersionLabel":
         {
-            "text" : "Latest Version:",
-            "posX" : 2,
-            "posY" : -10,
+            "text" : "Latest Modpack Version:",
+            "posX" : 130,
+            "posY" : 150,
             "color" : -1,
-            "alignment" : "bottom_left"
+            "alignment" : "left_center"
         },
 		
 		"LatestClientVersionProviderURL":
         {
             "text":"web:https://pastebin.com/raw/pPyKeYzA",
-            "posX" : 62,
-            "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_left"
+            "posX" : 230,
+            "posY" : 150,
+            "color" : 5897984,
+            "alignment" : "left_center"
         }
 		
     },

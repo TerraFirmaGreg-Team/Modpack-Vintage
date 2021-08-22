@@ -1,9 +1,10 @@
 {
 	x: -10.0d,
-	y: 2.5d,
+	y: -6.5d,
 	description: "{tfg.quests.steam.analyzator.subtitle}",
 	dependencies: [
-		"5b03e17e"
+		"5b03e17e",
+		"f04e0193"
 	],
 	hide: true,
 	tasks: [{

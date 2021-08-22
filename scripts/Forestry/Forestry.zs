@@ -1,8 +1,8 @@
 import crafttweaker.item.IItemStack;
+import mods.forestry.Carpenter;
 
-//Удаление рецептов + скрытие
-global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
-	//<forestry:fertilizer_compound>,
+//Удаление из JEI
+val RemoveItemsFromJEI as IItemStack[] = [
 	<forestry:ffarm>.withTag({FarmBlock: 7}),
 	<forestry:ffarm>.withTag({FarmBlock: 1}),
 	<forestry:ffarm:4>.withTag({FarmBlock: 7}),
@@ -20,8 +20,6 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<forestry:gear_copper>,
 	<forestry:gear_bronze>,
 	<forestry:fabricator>,
-	<forestry:chipsets>.withTag({T: 0 as short}),
-	<forestry:crafting_material:1>,
 	<forestry:crafting_material>,
 	<forestry:carton>,
 	<forestry:bronze_pickaxe>,
@@ -42,8 +40,6 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<forestry:farm_mushroom>,
 	<forestry:farm_mushroom:1>,
 	<forestry:peat_bog>,
-	<gendustry:industrial_grafter:*>,
-	<gendustry:industrial_scoop:*>,
 	<forestry:bronze_pickaxe>,
 	<forestry:bronze_shovel>,
 	<forestry:resource_storage>,
@@ -55,14 +51,39 @@ global ItemsToRemoveFORESTRYJEI as IItemStack[] = [
 	<forestry:centrifuge>,
 	<forestry:ash>,
 	<forestry:ash_brick>,
-	<forestry:ash_stairs>
+	<forestry:ash_stairs>,
+	<forestry:peat>,
+	<forestry:bituminous_peat>,
+	<forestry:bog_earth>,
+	<forestry:kit_shovel>,
+	<forestry:kit_pickaxe>,
+	<forestry:flexible_casing>,
+	<forestry:wood_pulp>,
+	<forestry:humus>,
+	<forestry:rainmaker>,
+	<forestry:candle>,
+	<forestry:stump>,
+	<forestry:crafting_material:7>,
+	<forestry:greenhouse>,
+	<forestry:greenhouse:3>,
+	<forestry:greenhouse:4>,
+	<forestry:greenhouse:5>,
+	<forestry:climatiser>,
+	<forestry:climatiser:1>,
+	<forestry:climatiser:2>,
+	<forestry:climatiser:3>,
+	<forestry:climatiser:4>,
+	<forestry:greenhouse.window>,
+	<forestry:greenhouse.window_up>,
+	<forestry:decaying_wheat>,
+	<forestry:mouldy_wheat>
 ] as IItemStack[];
-for item in ItemsToRemoveFORESTRYJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
 //Удаление рецептов
-global ItemsToRemoveFORESTRY as IItemStack[] = [
+val RemoveItemRecipe as IItemStack[] = [
 	<forestry:sturdy_machine>,
 	<forestry:portable_alyzer>,
 	<forestry:analyzer>,
@@ -81,7 +102,6 @@ global ItemsToRemoveFORESTRY as IItemStack[] = [
 	<forestry:habitat_screen>,
 	<forestry:habitat_former>,
 	<forestry:database>,
-	<forestry:crafting_material:3>,
 	<forestry:alveary.hygro>,
 	<forestry:alveary.heater>,
 	<forestry:crafting_material:6>,
@@ -89,17 +109,44 @@ global ItemsToRemoveFORESTRY as IItemStack[] = [
 	<forestry:alveary.swarmer>,
 	<forestry:alveary.sieve>,
 	<forestry:genetic_filter>,
-	<forestry:naturalist_helmet>
+	<forestry:naturalist_helmet>,
+	<forestry:carpenter>,
+	<forestry:bee_house>,
+	<forestry:apiary>
 ] as IItemStack[];
-for item in ItemsToRemoveFORESTRY{
+for item in RemoveItemRecipe{
     recipes.remove(item);
 }
 
+//Удаление рецептов из Карпентера
+Carpenter.removeRecipe(<forestry:chipsets>.withTag({T: 0 as short}));
+Carpenter.removeRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}));
+Carpenter.removeRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}));
+Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
+Carpenter.removeRecipe(<forestry:soldering_iron>);
+Carpenter.removeRecipe(<forestry:hardened_machine>);
+Carpenter.removeRecipe(<forestry:impregnated_casing>);
+Carpenter.removeRecipe(<forestry:kit_shovel>);
+Carpenter.removeRecipe(<forestry:kit_pickaxe>);
+Carpenter.removeRecipe(<forestry:bog_earth> * 8);
+Carpenter.removeRecipe(<forestry:ingot_bronze>);
+Carpenter.removeRecipe(<forestry:ingot_bronze> * 2);
+Carpenter.removeRecipe(<forestry:carton>);
+Carpenter.removeRecipe(<forestry:wood_pulp>);
+Carpenter.removeRecipe(<forestry:oak_stick> * 2);
+Carpenter.removeRecipe(<minecraft:paper>);
+Carpenter.removeRecipe(<forestry:humus> * 9);
+Carpenter.removeRecipe(<forestry:escritoire>);
+Carpenter.removeRecipe(<forestry:portable_alyzer>);
+Carpenter.removeRecipe(<forestry:candle>);
+Carpenter.removeRecipe(<forestry:habitat_screen>);
+
+//Удаление поименно.
 recipes.removeByRecipeName("forestry:greenhouse_window");
 recipes.removeByRecipeName("forestry:greenhouse_window_roof");
 
 //Создание рецептов
-//Создание блоков меда Forestry через компрессор
+// --- Bee Comb Compressing
 compressor.recipeBuilder().inputs(<forestry:bee_combs> * 9).outputs(<forestry:bee_combs_0>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:4> * 9).outputs(<forestry:bee_combs_0:4>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:5> * 9).outputs(<forestry:bee_combs_0:5>).duration(4).EUt(2).buildAndRegister();
@@ -110,62 +157,131 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:2> * 9).outputs(<forestry:
 compressor.recipeBuilder().inputs(<forestry:bee_combs:3> * 9).outputs(<forestry:bee_combs_0:3>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry:bee_combs_1>).duration(4).EUt(2).buildAndRegister();
 
-//Genetics Processor
-assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:genetics_processor>).duration(5000).EUt(32).buildAndRegister();
-//Enviromental Processor
-assembler.recipeBuilder().inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gtadditions:ga_meta_item:32032>).fluidInputs([<liquid:soldering_alloy> * 288]).outputs(<gendustry:env_processor>).duration(5000).EUt(32).buildAndRegister();
-
-//Капля меда
-centrifuge.recipeBuilder().inputs(<forestry:bee_combs>).chancedOutput(<forestry:beeswax>, 9000, 50).outputs(<forestry:honey_drop>).duration(10).EUt(2).buildAndRegister();
-
-//Капля меда
-recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
-
-//Seed Oil
-fluid_extractor.recipeBuilder().inputs(<ore:listAllseed>).fluidOutputs(<liquid:seed.oil>*20).duration(20).EUt(20).buildAndRegister();
-fluid_extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
-
-//Гибкий корпус из форестри
-assembler.recipeBuilder().inputs(<ore:plateBronze>*4, <ore:plateEmerald>*2, <ore:slimeball>*2, <ore:glue>*2).fluidInputs([<liquid:glass> * 400]).outputs(<forestry:flexible_casing>).duration(20).EUt(16).buildAndRegister();
-
-//Веревочка
-recipes.addShapeless (<forestry:crafting_material:2>*3, [<ore:string>]);
-
-//Прочный корпус
-recipes.addShaped(<forestry:sturdy_machine>, 
-[[<ore:plateBrass>,<ore:screwSteel>,<ore:plateBrass>],
- [<ore:screwSteel>,null,<ore:screwSteel>],
- [<ore:plateBrass>,<ore:screwSteel>,<ore:plateBrass>]]);
-
-//Фабрикатор
-recipes.addShaped(<forestry:fabricator>, 
-[[<ore:plateGold>, <ore:blockGlass>, <ore:plateGold>],
- [<ore:blockGlass>, <forestry:sturdy_machine>, <ore:blockGlass>],
- [<ore:plateGold>, <ore:cableGtSingleAluminium>, <ore:plateGold>]]);
-
-//Портативный анализатор
-recipes.addShaped(<forestry:portable_alyzer>,
-[[<ore:plateTin>, <ore:paneGlass>, <ore:plateTin>],
- [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
- [<ore:dustRedstone>, <ore:gemDiamond>, <ore:dustRedstone>]]);
-
-//Укрепленный корпус
-recipes.addShaped(<forestry:hardened_machine>,
+// --- Harderer Casing
+Carpenter.addRecipe(<forestry:hardened_machine>, 
 [[<ore:plateTin>, <ore:plateDiamond>, <ore:plateTin>],
  [<ore:plateDiamond>, <forestry:sturdy_machine>, <ore:plateDiamond>],
- [<ore:plateTin>, <ore:plateDiamond>, <ore:plateTin>]]);
+ [<ore:plateTin>, <ore:plateDiamond>, <ore:plateTin>]], 250, <liquid:water> * 5000);
 
-//Секретер
-recipes.addShaped(<forestry:escritoire>,
+// --- Escritoire
+Carpenter.addRecipe(<forestry:escritoire>,
 [[<ore:plankWood>, null, null],
  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
- [<ore:plankWood>, <ore:circuitBasic>, <ore:plankWood>]]);
+ [<ore:plankWood>, <ore:circuitBasic>, <ore:plankWood>]], 250, <liquid:seed.oil> * 500);
 
-//Аналайзер
+// --- Habitat Screen
+Carpenter.addRecipe(<forestry:habitat_screen>,
+[[null, <gregtech:meta_item_1:32690>, null],
+ [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
+ [null, <ore:plateTin>, null]], 250, <liquid:water> * 2000);
+
+// --- Portable Analyzer
+Carpenter.addRecipe(<forestry:portable_alyzer>,
+[[<ore:plateTin>, <ore:paneGlass>, <ore:plateTin>],
+ [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
+ [<ore:dustRedstone>, <ore:gemDiamond>, <ore:dustRedstone>]], 250, <liquid:water> * 1000);
+
+// --- Portable Analyzer
+Carpenter.addRecipe(<forestry:apiary>,
+[[<ore:screwCupronickel>, <ore:slabWood>, <ore:screwCupronickel>],
+ [<forestry:bee_house>, <ore:beeComb>, <forestry:bee_house>],
+ [<ore:fenceWood>, <ore:slabWood>, <ore:fenceWood>]], 500, <liquid:seed.oil> * 2500, <forestry:frame_impregnated>);
+
+// --- Genetics Processor
+circuit_assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gtadditions:ga_meta_item:32032>)
+	.fluidInputs([<liquid:soldering_alloy> * 288])
+	.outputs(<gendustry:genetics_processor>)
+	.duration(5000).EUt(32).buildAndRegister();
+// --- Enviromental Processor
+circuit_assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gtadditions:ga_meta_item:32032>)
+	.fluidInputs([<liquid:soldering_alloy> * 288])
+	.outputs(<gendustry:env_processor>)
+	.duration(5000).EUt(32).buildAndRegister();
+
+// --- Капля меда
+centrifuge.recipeBuilder()
+	.inputs(<forestry:bee_combs>)
+	.chancedOutput(<forestry:beeswax>, 9000, 50)
+	.outputs(<forestry:honey_drop>)
+	.duration(10).EUt(2).buildAndRegister();
+
+// --- Seed Oil
+fluid_extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:listAllseed>)
+	.fluidOutputs(<liquid:seed.oil>*20)
+	.duration(20).EUt(20).buildAndRegister();
+
+// --- Basic Circuit Board
+circuit_assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:17033> * 4, <ore:circuitPrimitive> * 2, <gregtech:meta_item_1:19033> * 2,  <gtadditions:ga_meta_item:32029>, <gregtech:meta_item_2:16033>)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:soldering_alloy> * 576])
+	.outputs(<forestry:chipsets:0>.withTag({T: 0 as short}))
+	.duration(200).EUt(30).buildAndRegister();
+
+// --- Enhanced Circuit Board
+circuit_assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:17095> * 4, <ore:circuitBasic> * 2, <gregtech:meta_item_2:16095> * 2,  <gtadditions:ga_meta_item:32029>, <gregtech:meta_item_2:16033>)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:soldering_alloy> * 576])
+	.outputs(<forestry:chipsets:1>.withTag({T: 1 as short}))
+	.duration(200).EUt(30).buildAndRegister();
+
+// --- Refined Circuit Board
+circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:17184> * 4, <ore:circuitGood> * 2, <gregtech:meta_item_1:19184> * 2,  <gtadditions:ga_meta_item:32030>, <gregtech:meta_item_2:16184>)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:soldering_alloy> * 576])
+	.outputs(<forestry:chipsets:2>.withTag({T: 2 as short}))
+	.duration(200).EUt(30).buildAndRegister();
+
+// --- Intricate Circuit Board
+circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:17112> * 4, <ore:circuitAdvanced> * 2, <gregtech:meta_item_1:19112> * 2,  <gtadditions:ga_meta_item:32030>, <gregtech:meta_item_2:16112>)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.fluidInputs([<liquid:soldering_alloy> * 576])
+	.outputs(<forestry:chipsets:3>.withTag({T: 3 as short}))
+	.duration(200).EUt(30).buildAndRegister();
+
+// --- Капля меда
+recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+
+// --- Паяльник
+recipes.addShaped(<forestry:soldering_iron>, 
+[[null, <ore:stickIron>, <forestry:oak_stick>],
+ [<ore:stickIron>, <ore:circuitBasic>, <forestry:oak_stick>],
+ [null, null, <forestry:oak_stick>]]);
+
+// --- Карпентер
+recipes.addShaped(<forestry:carpenter>, 
+[[<ore:plateCupronickel>, <gregtech:machine:813>, <ore:plateCupronickel>],
+ [<ore:circuitBasic>, <forestry:sturdy_machine>, <ore:circuitBasic>],
+ [<ore:gearSteel>, <ore:circuitBasic>, <ore:gearSteel>]]);
+
+// --- Прочный корпус
+recipes.addShaped(<forestry:sturdy_machine>, 
+[[<ore:plateBrass>, <ore:screwSteel>, <ore:plateBrass>],
+ [<ore:screwSteel>, null, <ore:screwSteel>],
+ [<ore:plateBrass>, <ore:screwSteel>, <ore:plateBrass>]]);
+
+// --- Фабрикатор
+recipes.addShaped(<forestry:fabricator>,  
+[[<gregtech:meta_item_1:17184>, <gregtech:machine:813>, <gregtech:meta_item_1:17184>],
+ [<gregtech:meta_item_2:32456>, <forestry:sturdy_machine>, <gregtech:meta_item_2:32456>],
+ [<gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32601>, <gregtech:meta_item_1:17184>]]);
+
+// --- Аналайзер
 recipes.addShaped(<forestry:analyzer>,
 [[<ore:plateBronze>, <forestry:portable_alyzer>, <ore:plateBronze>],
  [<ore:paneGlass>, <forestry:sturdy_machine>, <ore:paneGlass>],
- [<ore:plateBronze>, null, <ore:plateBronze>]]);
+ [<ore:plateBronze>, <ore:circuitBasic>, <ore:plateBronze>]]);
+
+// --- Bee House
+recipes.addShaped(<forestry:bee_house>,
+[[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+ [<forestry:frame_impregnated>, <forestry:impregnated_casing>, <forestry:frame_impregnated>],
+ [<ore:beeComb>, <ore:slabWood>, <ore:beeComb>]]);
 
 //Farms
 //К-Кирпич
@@ -228,23 +344,11 @@ recipes.addShaped(<forestry:frame_impregnated>,
  [<forestry:oak_stick>, <ore:string>, <forestry:oak_stick>],
  [<forestry:oak_stick>, <forestry:oak_stick>, <forestry:oak_stick>]]);
 
-//Супер ткань
-recipes.addShaped(<forestry:crafting_material:3>,
-[[<ore:string>, <minecraft:wool>, <ore:string>],
- [<ore:string>, <minecraft:wool>, <ore:string>],
- [null, null, null]]);
-
 //Дымитель
 recipes.addShaped(<forestry:smoker>,
 [[<ore:leather>, <ore:stickWood>, <ore:plateTin>],
  [<ore:leather>, <minecraft:flint_and_steel>, <ore:plateTin>],
  [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
-
-//Экран окружающей среды
-recipes.addShaped(<forestry:habitat_screen>,
-[[null, <gregtech:meta_item_1:32690>, null],
- [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
- [null, <ore:plateTin>, null]]);
 
 //Бочка под дождь
 recipes.addShaped(<forestry:raintank>,
@@ -264,12 +368,6 @@ recipes.addShaped(<forestry:database>,
  [<ore:ForestryChests>, <forestry:sturdy_machine>, <ore:ForestryChests>],
  [<ore:plankWood>, <forestry:royal_jelly>, <ore:plankWood>]]);
 
-//Куча палок укрепленных
-recipes.addShaped(<forestry:crafting_material:6>,
-[[<forestry:oak_stick>, <forestry:oak_stick>, <forestry:oak_stick>],
- [<forestry:oak_stick>, <forestry:oak_stick>, <forestry:oak_stick>],
- [null, null, null]]);
-
 //Улучшения для пасеки 1
 recipes.addShaped(<forestry:alveary.hygro>,
 [[<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>],
@@ -284,8 +382,8 @@ recipes.addShaped(<forestry:alveary.heater>,
 
 //Улучшения для пасеки 3
 recipes.addShaped(<forestry:alveary.fan>,
-[[<ore:plateSteel>, null, <ore:plateSteel>],
- [null, <forestry:alveary.plain>, null],
+[[<ore:plateSteel>, <ore:rotorStainlessSteel>, <ore:plateSteel>],
+ [<ore:rotorStainlessSteel>, <forestry:alveary.plain>, <ore:rotorStainlessSteel>],
  [<ore:plateSteel>, <forestry:thermionic_tubes:4>, <ore:plateSteel>]]);
 
 //Улучшения для пасеки 4

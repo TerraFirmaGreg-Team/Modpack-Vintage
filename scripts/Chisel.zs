@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 
 //Удаление групп
 //Удаление рецептов
-global ItemsToRemove as IItemStack[] = [
+val RemoveItemsFromJEI as IItemStack[] = [
 	<chisel:chisel_iron>,
 	<chisel:chisel_diamond>,
 	<chisel:chisel_hitech>,
@@ -53,7 +53,7 @@ global ItemsToRemove as IItemStack[] = [
 	<chisel:glasspanedyedlime:*>,
 	<chisel:glasspanedyedmagenta:*>
 ] as IItemStack[];
-for item in ItemsToRemove{
+for item in RemoveItemsFromJEI{
     recipes.remove(item);
 }
 
