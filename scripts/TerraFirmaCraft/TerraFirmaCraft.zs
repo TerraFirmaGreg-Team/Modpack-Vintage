@@ -380,11 +380,12 @@ centrifuge.recipeBuilder().fluidInputs(<liquid:salt_water>*1000).chancedOutput(<
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
 electrolyzer.recipeBuilder().inputs(<ore:sand>*8).outputs(<gregtech:meta_item_1:2159>).chancedOutput(<gregtech:meta_item_1:2159>, 2500, 2500).duration(150).EUt(25).buildAndRegister();
 
-//Горячая вода из свежей.
-fluid_heater.recipeBuilder().fluidInputs(<liquid:fresh_water>*1000).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 3})).fluidOutputs(<liquid:hot_water>*950).duration(50).EUt(8).buildAndRegister();
-
 //Дистилированная вода из горячей
-distillery.recipeBuilder().fluidInputs(<liquid:hot_water>*576).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 9})).fluidOutputs(<liquid:distilled_water>*510).duration(100).EUt(8).buildAndRegister();
+distillery.recipeBuilder()
+	.fluidInputs(<liquid:fresh_water>*576)
+	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
+	.fluidOutputs(<liquid:distilled_water>*510)
+	.duration(240).EUt(30).buildAndRegister();
 
 //Кривые палки офаем
 Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
@@ -404,7 +405,7 @@ ItemRegistry.registerFuel(<ore:gemLignite>, 1200, 1300, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
 //How water --> Dist
-Barrel.addRecipe("tfc:hotwatertodwater", <liquid:hot_water>*5, <liquid:distilled_water>*1, 6);
+Barrel.addRecipe("tfc:freshwatertodistwater", <tfc:crop/product/jute_net>, <liquid:fresh_water>*4000, <tfc:crop/product/dirty_jute_net>, <liquid:distilled_water>*3600, 4);
 
 //Отключение крафтов всех геологических TFC
 Anvil.removeRecipe(<tfc:metal/propick_head/red_steel>);
