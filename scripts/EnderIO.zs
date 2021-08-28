@@ -11,7 +11,7 @@ for item in RemoveItemsFromJEI{
 }
 
 //Удаление рецептов
-val RemoveItemsFromJEI as IItemStack[] = [
+val RemoveItemRecipes as IItemStack[] = [
 	<enderio:block_exit_rail>,
 	<enderio:item_material:9>,
 	<enderio:item_material:60>,
@@ -109,7 +109,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<enderio:item_conduit_facade:3>,
 	<enderio:item_conduit_facade:2>
 ] as IItemStack[];
-for item in RemoveItemsFromJEI{
+for item in RemoveItemRecipes{
     recipes.remove(item);
 }
 recipes.removeByRecipeName("enderio:tweak_stick_from_wood");

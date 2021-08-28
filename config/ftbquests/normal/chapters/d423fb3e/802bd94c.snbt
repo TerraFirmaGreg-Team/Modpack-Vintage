@@ -1,6 +1,6 @@
 {
-	x: -4.0d,
-	y: -4.0d,
+	x: -2.5d,
+	y: -5.0d,
 	description: "{tfg.quests.steam.2lvltank.subtitle}",
 	dependencies: [
 		"c9452585"

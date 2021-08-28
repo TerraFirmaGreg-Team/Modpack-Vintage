@@ -128,8 +128,23 @@ recipes.removeByRecipeName("gregtech:dust_red_steel");
 recipes.addShapeless (<gregtech:meta_item_1:2233>*8, [<gregtech:meta_item_1:2227>, <gregtech:meta_item_1:2230>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
 recipes.addShapeless (<gregtech:meta_item_1:2232>*8, [<gregtech:meta_item_1:2228>, <gregtech:meta_item_1:2094>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
 
-//Отключение крафта 2х слиток 1х молот = пластина
 
+//Отключение крафта 2х пластина 1х молот = двойная пластина(Только дублирующие ТФК)
+recipes.removeShaped(<gtadditions:ga_meta_item:1230>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1094>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1095>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1229>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1035>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1228>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1184>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1232>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1233>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1227>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1197>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1140>);
+recipes.removeShaped(<gtadditions:ga_meta_item:1231>);
+
+//Отключение крафта 2х слиток 1х молот = пластина
 recipes.removeShaped(<ore:plateAluminium>);
 recipes.removeShaped(<ore:plateWroughtIron>);
 recipes.removeShaped(<ore:plateAmericium>);

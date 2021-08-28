@@ -1,0 +1,14 @@
+{
+	x: -17.5d,
+	y: -10.0d,
+	dependencies: [
+		"2179e057"
+	],
+	tasks: [{
+		uid: "0bd8a2db",
+		type: "item",
+		items: [{
+			item: "forestry:alveary.swarmer"
+		}]
+	}]
+}

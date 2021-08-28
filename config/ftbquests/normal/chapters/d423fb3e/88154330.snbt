@@ -1,0 +1,16 @@
+{
+	x: -15.5d,
+	y: -11.0d,
+	dependencies: [
+		"31d449ec"
+	],
+	tasks: [{
+		uid: "4f353e52",
+		type: "item",
+		items: [{
+			item: "forestry:frame_proven"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

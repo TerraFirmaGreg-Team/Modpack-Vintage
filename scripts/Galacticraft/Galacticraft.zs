@@ -128,10 +128,10 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:thermal_padding:3>,
 	<galacticraftplanets:item_basic_asteroids:7>,
 	<galacticraftplanets:basic_item_venus:3>,
-	<galacticraftplanets:thermal_padding_t2>,
-	<galacticraftplanets:thermal_padding_t2:1>,
-	<galacticraftplanets:thermal_padding_t2:2>,
-	<galacticraftplanets:thermal_padding_t2:3>,
+	//<galacticraftplanets:thermal_padding_t2>,
+	//<galacticraftplanets:thermal_padding_t2:1>,
+	//<galacticraftplanets:thermal_padding_t2:2>,
+	//<galacticraftplanets:thermal_padding_t2:3>,
 	<galacticraftcore:sensor_glasses>,
 	<galacticraftcore:sensor_lens>,
 	<galacticraftplanets:walkway>,
@@ -176,10 +176,10 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:item_basic_asteroids:2>,
 	<galacticraftplanets:item_basic_asteroids:2>,
 	<galacticraftcore:basic_item:19>,
-   //GS
-   <galaxyspace:oxygen_tank_4:3500>,
-   <galaxyspace:oxygen_tank_5:4000>,
-   <galaxyspace:oxygen_tank_6:4500>
+	<galacticraftcore:food>,
+	<galacticraftcore:food:1>,
+	<galacticraftcore:food:2>,
+	<galacticraftcore:food:3>,
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -187,11 +187,19 @@ for item in RemoveItemRecipe{
 
 //Еда из GC
 //ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
-ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.3, 0.3, 0.5, 0, 0, 1.0, 0, 0.5);
-ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.1, 0.4, 0.5, 0, 1.0, 0, 0, 0.5);
+ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
+
+//Еда
+recipes.addShapeless(<galacticraftcore:food>, [<galacticraftcore:canister>, <ore:apple>, <ore:apple>]);
+recipes.addShapeless(<galacticraftcore:food:1>, [<galacticraftcore:canister>, <tfc:food/carrot>, <tfc:food/carrot>]);
+recipes.addShapeless(<galacticraftcore:food:2>, [<galacticraftcore:canister>, <firmalife:melon>, <firmalife:melon>]);
+recipes.addShapeless(<galacticraftcore:food:3>, [<galacticraftcore:canister>, <tfc:food/potato>, <tfc:food/potato>]);
 
 //Шест
-recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>]);
+recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]);
 //Светофакел
 recipes.addShapeless(<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
 //Oxygen mask

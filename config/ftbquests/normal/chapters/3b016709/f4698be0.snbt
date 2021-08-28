@@ -1,5 +1,5 @@
 {
-	x: 8.5d,
+	x: 8.0d,
 	y: 3.5d,
 	shape: "rsquare",
 	description: "{tfg.quests.lv.assembler.subtitle}",

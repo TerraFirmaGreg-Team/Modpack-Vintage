@@ -1,6 +1,6 @@
 {
-	x: -10.0d,
-	y: -3.0d,
+	x: -12.0d,
+	y: -5.5d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.sachok.subtitle}",
 	dependencies: [

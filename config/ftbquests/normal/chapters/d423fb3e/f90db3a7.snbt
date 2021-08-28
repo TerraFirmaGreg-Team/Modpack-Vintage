@@ -1,0 +1,14 @@
+{
+	x: -17.5d,
+	y: -8.0d,
+	dependencies: [
+		"2179e057"
+	],
+	tasks: [{
+		uid: "659037a1",
+		type: "item",
+		items: [{
+			item: "forestry:alveary.stabiliser"
+		}]
+	}]
+}

@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.ItemRegistry;
 import mods.forestry.Carpenter;
 
 //Удаление из JEI
@@ -76,7 +77,9 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<forestry:greenhouse.window>,
 	<forestry:greenhouse.window_up>,
 	<forestry:decaying_wheat>,
-	<forestry:mouldy_wheat>
+	<forestry:mouldy_wheat>,
+	<forestry:imprinter>,
+	<forestry:grafter_proven>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -112,7 +115,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<forestry:naturalist_helmet>,
 	<forestry:carpenter>,
 	<forestry:bee_house>,
-	<forestry:apiary>
+	<forestry:apiary>,
+	<forestry:honeyed_slice>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -246,6 +250,12 @@ circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:17112> * 4, <ore:
 
 // --- Капля меда
 recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+
+// --- Хлеб с медом
+recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+
+// --- Регистрация хлеба с медом
+ItemRegistry.registerFood(<forestry:honeyed_slice>, 4, 0, 0.7, 0.4, 1.0, 0, 0, 0, 0);
 
 // --- Паяльник
 recipes.addShaped(<forestry:soldering_iron>, 

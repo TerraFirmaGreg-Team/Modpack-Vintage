@@ -90,7 +90,17 @@ val RemoveItemsFromJEI as IItemStack[] = [
    <galaxyspace:barnarda_c_ores:12>,
    <galaxyspace:barnarda_c_ores:9>,
    <galaxyspace:barnarda_c_ores:10>,
-   <galaxyspace:barnarda_c_ores:11>
+   <galaxyspace:barnarda_c_ores:11>,
+   <galaxyspace:gas_burner>,
+   <galaxyspace:modern_storage_module>,
+   <galaxyspace:liquid_separator>,
+   <galaxyspace:liquid_extractor>,
+   <galaxyspace:universal_recycler>,
+   <galaxyspace:rocket_assembler>,
+   <galaxyspace:fuel_generator>,
+   <galaxyspace:assembly_machine>,
+   <galaxyspace:adv_circuit_fabricator>,
+   <galaxyspace:oxygen_storage_module_1>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -100,11 +110,26 @@ for item in RemoveItemsFromJEI{
 val RemoveItemRecipe as IItemStack[] = [
    <galaxyspace:oxygen_tank_4:3500>,
    <galaxyspace:oxygen_tank_5:4000>,
-   <galaxyspace:oxygen_tank_6:4500>
+   <galaxyspace:oxygen_tank_6:4500>,
+   <galaxyspace:gs_basic:21>,
+   <galaxyspace:gs_basic:22>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
 }
+
+//Теплоизолирующая ткань 3
+assembler.recipeBuilder()
+   .inputs(<ore:dustDolomite>*4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
+   .fluidInputs([<liquid:nitrogen>*400])
+   .outputs(<galaxyspace:gs_basic:21> * 2)
+   .duration(1000).EUt(512).buildAndRegister();
+//Теплоизолирующая ткань 4
+assembler.recipeBuilder()
+   .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
+   .fluidInputs([<liquid:supercooled_cryotheum>*288])
+   .outputs(<galaxyspace:gs_basic:22> * 2)
+   .duration(1000).EUt(512).buildAndRegister();
 
 //Воздушные баки
 //Супер
@@ -123,6 +148,11 @@ assembler.recipeBuilder()
    .outputs(<galaxyspace:oxygen_tank_6:4500>)
    .duration(1000).EUt(4096).buildAndRegister();
 //Реген
+assembler.recipeBuilder()
+   .inputs(<gregtech:machine:1021>*2, <enderio:item_liquid_conduit:1>*16, <ore:plateLead>*32, <gregtech:meta_item_1:32617>*6)
+   .outputs(<galaxyspace:oxygen_tank_epp_1:2500> * 2)
+   .fluidInputs([<liquid:sterilized_growth_medium>*144])
+   .duration(1000).EUt(4096).buildAndRegister();
 
 //GALAXY-SPACE
 /*

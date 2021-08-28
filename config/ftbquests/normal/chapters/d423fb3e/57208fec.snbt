@@ -1,6 +1,6 @@
 {
 	x: -0.5d,
-	y: 2.0d,
+	y: 1.5d,
 	description: "{tfg.quests.steam.creosoteoven.subtitle}",
 	dependencies: [
 		"06a42a78"
