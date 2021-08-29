@@ -23,8 +23,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Modpack Version:**
-Write the modpack version here
+**Modpack**
+ - Modpack TFG(Modpack version and type(example: R2.8.8, Lite)): -
 
 **Additional context**
 Add any other context about the problem here.
