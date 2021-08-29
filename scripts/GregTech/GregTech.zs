@@ -94,6 +94,9 @@ fluid_heater.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag
 //Фикс ванильного хлеба
 furnace.remove(<minecraft:bread>);
 
+//Фикс снопа сена
+packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], null).remove();
+
 //Фиксы корпусов
 //Удаление
 assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
