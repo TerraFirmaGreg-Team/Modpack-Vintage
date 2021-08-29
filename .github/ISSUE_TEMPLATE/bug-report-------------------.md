@@ -1,8 +1,8 @@
 ---
-name: Bug report - Отчет об ошибке
+name: "[EN] --- Bug report"
 about: Create a report to help us improve
-title: ''
-labels: bug
+title: "[Bug]"
+labels: not confirmed
 assignees: ''
 
 ---
