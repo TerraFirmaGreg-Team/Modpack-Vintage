@@ -1,6 +1,6 @@
 {
 	x: 3.0d,
-	y: 8.0d,
+	y: 9.0d,
 	description: "{tfg.quests.lv.fisher.subtitle}",
 	dependencies: [
 		"b1293e60"

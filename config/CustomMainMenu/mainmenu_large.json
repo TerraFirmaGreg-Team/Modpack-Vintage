@@ -14,13 +14,11 @@
         {
             "image" : "modpack:mainmenu/tfglogocurse.png",
             "posX" : 45,
-            "posY" : -150,
+            "posY" : -170,
             "width" : 300,
             "height" : 113,
             "alignment" : "left_center"
         }
-		
-		
     },
     
     "buttons":
@@ -29,7 +27,7 @@
         {
             "text" : "menu.singleplayer",
             "posX" : 140,
-            "posY" : -50,
+            "posY" : -70,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 2096931,
@@ -46,7 +44,7 @@
         {
             "text" : "menu.multiplayer",
             "posX" : 140,
-            "posY" : -20,
+            "posY" : -40,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverText" : "With friends?",
@@ -66,7 +64,7 @@
 			"texture" : "modpack:mainmenu/button.png",
             "hoverText" : "Not enough?",
             "posX" : 140,
-            "posY" : 10,
+            "posY" : -10,
             "width" : 100,
             "height" : 20,
 			"alignment" : "left_center",
@@ -80,7 +78,7 @@
         {
             "text" : "menu.options",
             "posX" : 140,
-            "posY" : 40,
+            "posY" : 20,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 16719857,
@@ -97,7 +95,7 @@
         {
             "text" : "menu.quit",
             "posX" : 140,
-            "posY" : 70,
+            "posY" : 50,
 			"texture" : "modpack:mainmenu/button.png",
             "alignment" : "left_center",
 			"hoverTextColor" : 16719647,
@@ -150,7 +148,7 @@
         {
             "text" : "Modpack Version:",
             "posX" : 140,
-            "posY" : 120,
+            "posY" : 80,
             "color" : -1,
             "alignment" : "left_center"
         },
@@ -159,7 +157,7 @@
         {
             "text" : "R2.8.8",
             "posX" : 213,
-            "posY" : 120,
+            "posY" : 80,
             "color" : -1,
             "alignment" : "left_center"
         },
@@ -168,7 +166,7 @@
         {
             "text" : "Modpack Type:",
             "posX" : 150,
-            "posY" : 135,
+            "posY" : 100,
             "color" : -1,
             "alignment" : "left_center"
         },
@@ -177,7 +175,7 @@
         {
             "text" : "[Lite]",
             "posX" : 213,
-            "posY" : 135,
+            "posY" : 100,
             "color" : -1,
             "alignment" : "left_center"
         },
@@ -186,7 +184,7 @@
         {
             "text" : "Latest Modpack Version:",
             "posX" : 130,
-            "posY" : 150,
+            "posY" : 120,
             "color" : -1,
             "alignment" : "left_center"
         },
@@ -195,7 +193,7 @@
         {
             "text":"web:https://pastebin.com/raw/pPyKeYzA",
             "posX" : 230,
-            "posY" : 150,
+            "posY" : 120,
             "color" : 5897984,
             "alignment" : "left_center"
         }

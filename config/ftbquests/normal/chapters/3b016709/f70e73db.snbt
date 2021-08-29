@@ -1,14 +1,14 @@
 {
 	x: -10.0d,
-	y: -7.5d,
+	y: 3.0d,
 	dependencies: [
-		"f04e0193"
+		"4646d01f"
 	],
 	tasks: [{
-		uid: "e871ad80",
+		uid: "7ff90ae7",
 		type: "item",
 		items: [{
-			item: "forestry:escritoire"
+			item: "gregtech:machine 1 501"
 		}]
 	}]
 }

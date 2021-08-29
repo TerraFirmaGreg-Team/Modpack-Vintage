@@ -1,6 +1,6 @@
 {
 	x: 1.5d,
-	y: 8.0d,
+	y: 9.0d,
 	shape: "circle",
 	description: "{tfg.quests.lv.greenhouse.subtitle}",
 	dependencies: [

@@ -1,6 +1,6 @@
 {
 	x: 0.0d,
-	y: 8.0d,
+	y: 6.5d,
 	description: "{tfg.quests.lv.formingpress.subtitle}",
 	dependencies: [
 		"2fbc8722"

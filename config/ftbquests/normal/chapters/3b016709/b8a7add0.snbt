@@ -1,6 +1,6 @@
 {
 	x: 4.5d,
-	y: 8.0d,
+	y: 9.0d,
 	description: "{tfg.quests.lv.unpackager.subtitle}",
 	dependencies: [
 		"b1293e60"

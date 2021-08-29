@@ -161,6 +161,15 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:2> * 9).outputs(<forestry:
 compressor.recipeBuilder().inputs(<forestry:bee_combs:3> * 9).outputs(<forestry:bee_combs_0:3>).duration(4).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry:bee_combs_1>).duration(4).EUt(2).buildAndRegister();
 
+// --- Фикс пшеничных сот
+//centrifuge.findRecipe(5, [<forestry:bee_combs:14>], null).remove();
+compressor.recipeBuilder()
+	.inputs(<forestry:bee_combs:14>)
+	.chancedOutput(<forestry:honey_drop>, 2000, 1000)
+	.chancedOutput(<forestry:beeswax>, 2000, 1000)
+	.chancedOutput(<tfc:food/wheat>, 8000, 1000)
+	.duration(10).EUt(5).buildAndRegister();
+
 // --- Harderer Casing
 Carpenter.addRecipe(<forestry:hardened_machine>, 
 [[<ore:plateTin>, <ore:plateDiamond>, <ore:plateTin>],
@@ -185,7 +194,7 @@ Carpenter.addRecipe(<forestry:portable_alyzer>,
  [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
  [<ore:dustRedstone>, <ore:gemDiamond>, <ore:dustRedstone>]], 250, <liquid:water> * 1000);
 
-// --- Portable Analyzer
+// --- Apiary
 Carpenter.addRecipe(<forestry:apiary>,
 [[<ore:screwCupronickel>, <ore:slabWood>, <ore:screwCupronickel>],
  [<forestry:bee_house>, <ore:beeComb>, <forestry:bee_house>],

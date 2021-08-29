@@ -25,7 +25,11 @@ global ItemsToRemoveGTJEI as IItemStack[] = [
     <gregtech:machine:410>,
     <gregtech:machine:411>,
     <gregtech:machine:412>,
-    <gregtech:machine:413>
+    <gregtech:machine:413>,
+    //flour
+    <gregtech:meta_item_1:2345>,
+    <gregtech:meta_item_1:1345>,
+    <gregtech:meta_item_1:345>
 ] as IItemStack[];
 for item in ItemsToRemoveGTJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -87,6 +91,9 @@ mixer.recipeBuilder().inputs(<ore:sand>*4,<ore:gravel>*4).outputs(<tfc:aggregate
 //Жидкий воздух --> Воздух
 fluid_heater.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).fluidInputs(<liquid:liquid_oxygen> * 100).fluidOutputs(<liquid:oxygen> * 1000)  .duration(400).EUt(32).buildAndRegister();
 
+//Фикс ванильного хлеба
+furnace.remove(<minecraft:bread>);
+
 //Фиксы корпусов
 //Удаление
 assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
@@ -127,7 +134,6 @@ recipes.removeByRecipeName("gregtech:dust_blue_steel");
 recipes.removeByRecipeName("gregtech:dust_red_steel");
 recipes.addShapeless (<gregtech:meta_item_1:2233>*8, [<gregtech:meta_item_1:2227>, <gregtech:meta_item_1:2230>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
 recipes.addShapeless (<gregtech:meta_item_1:2232>*8, [<gregtech:meta_item_1:2228>, <gregtech:meta_item_1:2094>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
-
 
 //Отключение крафта 2х пластина 1х молот = двойная пластина(Только дублирующие ТФК)
 recipes.removeShaped(<gtadditions:ga_meta_item:1230>);

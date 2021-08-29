@@ -8,8 +8,10 @@
 	],
 	hide: true,
 	tasks: [{
-		uid: "f9784b65",
-		type: "checkmark",
-		title: "{tfg.quests.lv.start.title}"
+		uid: "168f2170",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 1 1"
+		}]
 	}]
 }

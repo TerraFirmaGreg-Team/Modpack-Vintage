@@ -347,7 +347,7 @@ recipes.addShaped(<gregtech:meta_item_2:32011>,
 recipes.removeByRecipeName("tfc:paper");
 
 //Удобрение
-Drying.addRecipe("wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer> * 2, 8000);
+Drying.addRecipe("wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
 
 //Гниль из Forestry в удобрение
 Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fertilizer>);
@@ -357,7 +357,7 @@ recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<gregtech:meta_item_1:2095>*9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 //Высушивание соли
-Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>*3, 24000);
+Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>, 24000);
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");

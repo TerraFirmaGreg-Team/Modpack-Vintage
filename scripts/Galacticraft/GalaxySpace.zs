@@ -100,7 +100,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
    <galaxyspace:fuel_generator>,
    <galaxyspace:assembly_machine>,
    <galaxyspace:adv_circuit_fabricator>,
-   <galaxyspace:oxygen_storage_module_1>
+   <galaxyspace:oxygen_storage_module_1>,
+   <galaxyspace:gs_basic:4>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -112,7 +113,21 @@ val RemoveItemRecipe as IItemStack[] = [
    <galaxyspace:oxygen_tank_5:4000>,
    <galaxyspace:oxygen_tank_6:4500>,
    <galaxyspace:gs_basic:21>,
-   <galaxyspace:gs_basic:22>
+   <galaxyspace:gs_basic:22>,
+   <galaxyspace:hydroponic_farm>,
+   <galaxyspace:hydroponic_base>,
+   <galaxyspace:modern_solarpanel>,
+   <galaxyspace:wind_generator>,
+   <galaxyspace:advanced_landing_pad>,
+   <galaxyspace:modification_table>,
+   <galaxyspace:solarwind_panel>,
+   <galaxyspace:planet_shield>,
+   <galaxyspace:energy_pad>,
+   <galaxyspace:modern_single_solarpanel>,
+   <galaxyspace:single_solarpanel>,
+   <galaxyspace:panel_controller>,
+   <galaxyspace:radiation_stabiliser>,
+   <galaxyspace:gravitation_module>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
