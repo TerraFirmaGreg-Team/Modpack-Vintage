@@ -1,7 +1,0 @@
-{
-	title: "{tfg.quests.ev.era.title}",
-	icon: "gregtech:meta_item_2 1 26072",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "rsquare"
-}
