@@ -210,7 +210,7 @@ recipes.addShaped(<galacticraftcore:oxygen_mask>,
 //Oxygen gear
 recipes.addShaped(<galacticraftcore:oxygen_gear>,
 [[<gregtech:meta_item_1:12001>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:12184>, <gregtech:machine:814>, <gregtech:meta_item_1:12184>],
+ [<galacticraftcore:oxygen_concentrator>, <gregtech:machine:814>, <galacticraftcore:oxygen_concentrator>],
  [<gregtech:cable:7018>, <gregtech:meta_item_2:18183>, <gregtech:cable:7018>]]);
 //Oxygen detector
 recipes.addShaped(<galacticraftcore:oxygen_detector>,
@@ -224,24 +224,24 @@ recipes.addShaped(<galacticraftcore:sealer>,
  [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>]]);
 //Oxygen bubble distributor
 recipes.addShaped(<galacticraftcore:distributor>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>],
+[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_1:32611>, <gregtech:machine:503>, <gregtech:meta_item_1:32691>],
  [<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>]]);
 //Oxygen collector
 recipes.addShaped(<galacticraftcore:collector>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
+[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_2:18183>, <gregtech:machine:503>, <gregtech:meta_item_1:32611>],
  [<gregtech:meta_item_1:12001>, <gregtech:machine:814>, <gregtech:meta_item_1:12001>]]);
 //Oxygen compressor
 recipes.addShaped(<galacticraftcore:oxygen_compressor>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>],
+[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
  [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32611>, <gregtech:meta_item_1:12184>]]);
 //Oxygen decompressor
 recipes.addShaped(<galacticraftcore:oxygen_compressor:4>,
 [[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>],
  [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32691>, <gregtech:meta_item_1:12184>]]);
+ [<galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:32691>, <galacticraftcore:oxygen_concentrator>]]);
 //Жидкостный манипулятор
 recipes.addShaped(<galacticraftplanets:item_basic_mars:6>,
 [[<ore:plateIron>, <ore:rotorSteel>, <ore:plateIron>],
