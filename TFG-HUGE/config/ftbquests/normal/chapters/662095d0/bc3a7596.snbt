@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 7.5d,
+	description: "{tfg.quests.mv.manganese.subtitle}",
+	dependencies: [
+		"c1e816f6"
+	],
+	tasks: [{
+		uid: "8e71835b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2039"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: 5.0d,
+	description: "{tfg.quests.lv.thermalcen.subtitle}",
+	dependencies: [
+		"4646d01f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "90a88bdf",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 460"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,32 @@
+{
+  "weight": 5,
+  "density": 0.3,
+  "max_height": 25,
+  "surface_stone_material": "pitchblende",
+  "generation_predicate":["ore_dict:GenRockMetamorf"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [7, 17]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 50,
+          "value": "ore:uranium_radioactive"
+        },
+        {
+          "weight": 25,
+          "value": "ore:uranium"
+        },
+		{
+          "weight": 25,
+          "value": "ore:uranium235"
+        }
+      ]
+    }
+  }
+}

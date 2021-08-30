@@ -1,0 +1,41 @@
+{
+  "weight": 3,
+  "density": 0.6,
+  "max_height": 35,
+  "min_height": 5,
+  "surface_stone_material": "naquadric_compound",
+  "generation_predicate":["ore_dict:GenRockIE"],
+  
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [10, 25]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 84,
+          "value": "ore:naquadric_compound"
+        },
+        {
+          "weight": 10,
+          "value": "ore:enriched_naquadric_compound"
+        },
+		{
+          "weight": 3,
+          "value": "ore:naquadriatic_compound"
+        },
+		{
+          "weight": 2,
+          "value": "ore:naquadah"
+        },
+		{
+          "weight": 1,
+          "value": "ore:naquadah_enriched"
+        }
+      ]
+    }
+  }
+}

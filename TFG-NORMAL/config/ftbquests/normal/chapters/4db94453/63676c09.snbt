@@ -1,0 +1,19 @@
+{
+	x: 18.5d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"35e5bc75",
+		"a4af0a36",
+		"587d7e11",
+		"f48f034a"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "25cdc9f4",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crafting_accelerator"
+		}]
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.primitive.rawHide.title}",
+	icon: "tfc:hide/prepared/large",
+	x: -17.0d,
+	y: -10.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.rawHide.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "90ede488",
+		type: "item",
+		items: [{
+			item: "tfc:hide/raw/medium"
+		},
+		{
+			item: "tfc:hide/raw/small"
+		},
+		{
+			item: "tfc:hide/raw/large"
+		}]
+	}]
+}

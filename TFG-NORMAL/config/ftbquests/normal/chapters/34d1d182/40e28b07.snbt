@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: -4.5d,
+	description: "{tfg.quests.space.lvl2solarpanel.subtitle}",
+	dependencies: [
+		"9588dff3"
+	],
+	tasks: [{
+		uid: "8d13d487",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:solar 1 4"
+		}]
+	}]
+}

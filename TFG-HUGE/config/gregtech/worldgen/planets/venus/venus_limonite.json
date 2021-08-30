@@ -1,0 +1,34 @@
+{
+    "weight": 80,
+    "max_height": 55,
+    "min_height": 15,
+    "density": 0.4,
+    "generator": {"type": "ellipsoid", "radius": [13, 30]},
+    "vein_populator": {"type": "surface_rock", "material": "iron"},
+    "dimension_filter": ["dimension_id:-31"],
+
+    "filler": {
+        "type": "simple",
+        "value": {
+            "type": "weight_random",
+            "values": [
+                {
+                    "weight": "30",
+                    "value": "ore:yellow_limonite"
+                },
+                {
+                    "weight": "30",
+                    "value": "ore:brown_limonite"
+                },
+                {
+                    "weight": "30",
+                    "value": "ore:banded_iron"
+                },
+                {
+                    "weight": "10",
+                    "value": "ore:malachite"
+                }
+            ]
+        }
+    }
+}

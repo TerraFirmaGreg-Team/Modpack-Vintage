@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: -10.5d,
+	description: "{tfg.quests.mv.dieselgenerator.subtitle}",
+	dependencies: [
+		"300a0f3f"
+	],
+	tasks: [{
+		uid: "3334a03b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2240"
+		}],
+		ignore_nbt: 1b
+	}]
+}

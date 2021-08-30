@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.bluesteelbucket.title}",
+	x: 7.5d,
+	y: -2.5d,
+	description: "{tfg.quests.primitive.bluesteelbucket.subtitle}",
+	dependencies: [
+		"501214da",
+		"f1e04348"
+	],
+	tasks: [{
+		uid: "5adfa0f1",
+		type: "item",
+		items: [{
+			item: "tfc:metal/bucket/blue_steel"
+		}],
+		ignore_nbt: 1b
+	}]
+}

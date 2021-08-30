@@ -1,0 +1,16 @@
+{
+	title: "{tfg.quests.primitive.fuelNumber3.title}",
+	x: -21.0d,
+	y: -3.5d,
+	description: "{tfg.quests.primitive.fuelNumber3.subtitle}",
+	dependencies: [
+		"6f433082"
+	],
+	tasks: [{
+		uid: "c20b0096",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 8211"
+		}]
+	}]
+}

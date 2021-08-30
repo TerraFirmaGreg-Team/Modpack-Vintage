@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.space.tier3termalarmor.title}",
+	x: 12.5d,
+	y: -15.0d,
+	description: "{tfg.quests.space.tier3termalarmor.subtitle}",
+	dependencies: [
+		"e4e7bcbf"
+	],
+	tasks: [{
+		uid: "57d31b08",
+		type: "item",
+		items: [{
+			item: "galaxyspace:thermal_padding_t3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2abc1293",
+		type: "item",
+		items: [{
+			item: "galaxyspace:thermal_padding_t3 1 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "02792087",
+		type: "item",
+		items: [{
+			item: "galaxyspace:thermal_padding_t3 1 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2be779b3",
+		type: "item",
+		items: [{
+			item: "galaxyspace:thermal_padding_t3 1 3"
+		}],
+		ignore_nbt: 1b
+	}]
+}

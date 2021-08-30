@@ -1,0 +1,27 @@
+{
+  "weight": 15,
+  "density": 0.2,
+  "max_height": 30,
+  "generation_predicate":["ore_dict:stone"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [7, 32]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 75,
+          "value": "ore:amethyst"
+        },
+		{
+          "weight": 25,
+          "value": "ore:prasiolite"
+        }
+      ]
+    }
+  }
+}

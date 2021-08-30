@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -6.0d,
+	description: "{tfg.quests.ae2.2p2tunnel.subtitle}",
+	dependencies: [
+		"4e54993c",
+		"848cab62"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e1d57858",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 460"
+		}]
+	}]
+}

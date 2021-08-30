@@ -1,0 +1,18 @@
+{
+	x: 1.5d,
+	y: 9.0d,
+	shape: "circle",
+	description: "{tfg.quests.lv.greenhouse.subtitle}",
+	dependencies: [
+		"b1293e60"
+	],
+	hide: true,
+	tasks: [{
+		uid: "65d2a21a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 3211"
+		}],
+		ignore_nbt: 1b
+	}]
+}

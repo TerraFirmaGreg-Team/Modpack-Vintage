@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -4.5d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.fluxdensecovered.subtitle}",
+	dependencies: [
+		"02798f3f"
+	],
+	tasks: [{
+		uid: "483247df",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 516"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 19.0d,
+	dependencies: [
+		"cb7dd424"
+	],
+	tasks: [{
+		uid: "bf51764f",
+		type: "item",
+		items: [{
+			item: "aeadditions:storage.component 1 6"
+		}]
+	}]
+}

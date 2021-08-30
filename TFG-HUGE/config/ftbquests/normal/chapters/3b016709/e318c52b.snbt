@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.lv.lightfuel.title}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "sulfuric_light_fuel",
+			Amount: 1000
+		}
+	},
+	x: -6.5d,
+	y: -5.5d,
+	dependencies: [
+		"18f9af4b",
+		"b8202e1a",
+		"3ee57151",
+		"f161c794"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ed12010e",
+		type: "fluid",
+		fluid: "sulfuric_light_fuel"
+	},
+	{
+		uid: "0cc48af2",
+		type: "fluid",
+		fluid: "light_fuel"
+	}]
+}

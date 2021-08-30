@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.graphitepile.title}",
+	x: -2.5d,
+	y: -9.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.graphitepile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "44dbfde3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 204"
+		}]
+	}]
+}

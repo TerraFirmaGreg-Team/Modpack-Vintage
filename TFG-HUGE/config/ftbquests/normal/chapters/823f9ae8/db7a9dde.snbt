@@ -1,0 +1,17 @@
+{
+	x: -5.0d,
+	y: 1.5d,
+	shape: "circle",
+	dependencies: [
+		"4f185247"
+	],
+	tasks: [{
+		uid: "74b2c739",
+		type: "item",
+		items: [{
+			item: "tfctech:ceramics/fluid_bowl"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

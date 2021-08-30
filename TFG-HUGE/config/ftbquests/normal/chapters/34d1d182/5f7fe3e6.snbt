@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.space.tier1termalarmor.title}",
+	x: 10.0d,
+	y: -5.0d,
+	description: "{tfg.quests.space.tier1termalarmor.subtitle}",
+	dependencies: [
+		"f0d8edbf"
+	],
+	tasks: [{
+		uid: "ee4cc1ca",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:thermal_padding"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9944c5c4",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:thermal_padding 1 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e92f4059",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:thermal_padding 1 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cc3c535f",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:thermal_padding 1 3"
+		}],
+		ignore_nbt: 1b
+	}]
+}

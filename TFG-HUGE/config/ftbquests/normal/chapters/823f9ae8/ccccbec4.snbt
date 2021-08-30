@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -7.5d,
+	shape: "square",
+	dependencies: [
+		"514c2665",
+		"ed15340a"
+	],
+	tasks: [{
+		uid: "4904f998",
+		type: "item",
+		items: [{
+			item: "tfc:ceramics/fire_clay"
+		}]
+	}]
+}

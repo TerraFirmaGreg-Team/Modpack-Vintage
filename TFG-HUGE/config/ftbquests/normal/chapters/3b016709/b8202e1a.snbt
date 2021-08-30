@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.lv.blackgold.title}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "oil",
+			Amount: 1000
+		}
+	},
+	x: -6.5d,
+	y: 2.0d,
+	description: "{tfg.quests.lv.blackgold.subtitle}",
+	dependencies: [
+		"4194e346"
+	],
+	hide: true,
+	tasks: [{
+		uid: "79893ba4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2324"
+		}]
+	},
+	{
+		uid: "729a497c",
+		type: "fluid",
+		fluid: "oil"
+	}]
+}

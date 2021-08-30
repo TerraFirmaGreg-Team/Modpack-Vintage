@@ -1,0 +1,17 @@
+{
+	x: -5.0d,
+	y: -2.5d,
+	shape: "square",
+	dependencies: [
+		"496ded55"
+	],
+	hide: true,
+	tasks: [{
+		uid: "db0c61b5",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 191"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	title: "{tfg.quests.space.painter.title}",
+	x: -1.0d,
+	y: -8.5d,
+	description: "{tfg.quests.space.painter.subtitle}",
+	dependencies: [
+		"f728ff59"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7472bd63",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:machine3"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+    "weight": 15,
+    "density": 0.1,
+    "max_height": 30,
+    "generator": {"type": "ellipsoid", "radius": [15, 30]},
+    "vein_populator": {"type": "surface_rock","material": "bauxite"},
+    "dimension_filter": ["dimension_id:-29"],
+
+    "filler": {
+      "type": "simple",
+      "value": {
+        "type": "weight_random",
+        "values": [
+          {
+            "weight": 100,
+            "value": "ore:vinteum"
+          }
+        ]
+      }
+    }
+}

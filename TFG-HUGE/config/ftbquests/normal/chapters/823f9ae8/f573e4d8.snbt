@@ -1,0 +1,45 @@
+{
+	x: -9.0d,
+	y: 3.5d,
+	dependencies: [
+		"5995c91c"
+	],
+	tasks: [{
+		uid: "f901c5ac",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any sandSilica"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "sandSilica"
+				}
+			}
+		}]
+	},
+	{
+		uid: "16e8f119",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2402"
+		}]
+	},
+	{
+		uid: "a5a07fb6",
+		type: "item",
+		items: [{
+			id: "tfctech:powder/lime",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

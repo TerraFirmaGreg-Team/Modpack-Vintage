@@ -1,0 +1,23 @@
+{
+	x: -2.5d,
+	y: 10.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.spatialport.subtitle}",
+	dependencies: [
+		"7daba4fb"
+	],
+	tasks: [{
+		uid: "d32201c9",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:spatial_io_port"
+		}]
+	},
+	{
+		uid: "896aff23",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:spatial_pylon"
+		}]
+	}]
+}

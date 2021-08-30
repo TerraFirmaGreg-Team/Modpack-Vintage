@@ -1,0 +1,16 @@
+{
+	x: 17.0d,
+	y: -6.0d,
+	description: "{tfg.quests.space.shield.subtitle}",
+	dependencies: [
+		"9e9cab41"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1186aab3",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:basic_item_venus"
+		}]
+	}]
+}

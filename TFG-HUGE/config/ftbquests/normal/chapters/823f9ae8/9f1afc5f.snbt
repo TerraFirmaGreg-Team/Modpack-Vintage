@@ -1,0 +1,24 @@
+{
+	x: -14.5d,
+	y: -4.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.copperhammer.subtitle}",
+	dependencies: [
+		"acf7d08d"
+	],
+	tasks: [{
+		uid: "dd5d54d3",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 6s,
+			tag: {
+				GT.ToolStats: {
+					MaxDurability: 450,
+					Material: "copper"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

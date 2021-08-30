@@ -1,0 +1,18 @@
+{
+	x: -3.0d,
+	y: 2.5d,
+	shape: "square",
+	description: "{tfg.quests.mv.orewasher.subtitle}",
+	dependencies: [
+		"496ded55"
+	],
+	hide: true,
+	tasks: [{
+		uid: "fd9dafc3",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 381"
+		}],
+		ignore_nbt: 1b
+	}]
+}

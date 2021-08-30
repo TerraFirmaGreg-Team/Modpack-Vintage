@@ -1,0 +1,17 @@
+{
+	x: -8.0d,
+	y: -4.0d,
+	description: "{tfg.quests.steam.steelcasing.subtitle}",
+	dependencies: [
+		"e6318f88"
+	],
+	hide: true,
+	tasks: [{
+		uid: "aa6d790c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 1 12"
+		}],
+		ignore_nbt: 1b
+	}]
+}

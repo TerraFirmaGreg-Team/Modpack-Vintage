@@ -1,0 +1,142 @@
+{
+    "constants": {
+        "image_interval": 10.0,
+        "transition_duration": 0.5,
+        "tip_interval": 8.0,
+        "random_slide_order": true,
+
+        "tip_seed": "generate_seed()",
+        "slideshow_seed": "generate_seed()"
+    },
+    "functions": {
+        "slideshow_frame_inner(float timeSub)": "floor((time - timeSub) / image_interval)",
+        "slideshow_frame(float timeSub, int count)": "random_slide_order ? ( random_int( slideshow_seed, slideshow_frame_inner(timeSub), count ) ) : slideshow_frame_inner(timeSub)"
+    },
+	"renders": [
+        {
+            "image": {
+                "parent": "builtin/slideshow",
+                "image": "config:slideshow_#.png",
+                "frame": "slideshow_frame(transition_duration, frame_count)",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "colour": "0xFF_FF_FF_FF",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width",
+                    "height": "screen_height"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/slideshow",
+                "image": "config:slideshow_#.png",
+                "frame": "slideshow_frame(0, frame_count)",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "colour": "0xFF_FF_FF | (0xFF_00_00_00 & (0x01_00_00_00 * floor(0xFF * min(1, ((transition_duration <= 0.01) ? (0) : (time/transition_duration)) % image_interval  ))))",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width",
+                    "height": "screen_height"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+		{
+            "image": {
+                "parent": "builtin/image",
+                "image": "modpack:mainmenu/tfglogocurse.png",
+                "position_type": "TOP_CENTER",
+                "offset_pos": "TOP_CENTER",
+                "colour": "0xFF_FF_FF_FF",
+                "position": {"x": "0", "y": "-40", "width": "480", "height": "180"}
+            }
+        },
+		{
+            "image": {
+                "parent": "builtin/image",
+                "image": "config:panel_bottom.png",
+                "position_type": "BOTTOM_CENTER",
+                "offset_pos": "BOTTOM_CENTER",
+                "colour": "0xFF_FF_FF_FF",
+                "position": {"x": "0", "y": "0", "width": "screen_width", "height": "31"}
+            }
+        },
+		{
+            "image": {
+                "parent": "sample/bottom_bar",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "0xFF_00_00_00",
+                "position": {"width": "screen_width", "y": "-35"}
+            }
+        },
+		{
+            "image": {
+                "parent": "sample/bottom_bar",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "colour": "0xFF_33_55_FF",
+                "position": {"y": "-35"}
+            }
+        },
+		{
+            "image": {
+                "parent": "builtin/text",
+                "text": "(floor(percentage * 100)) + '%'",
+                "scale": 2,
+                "position_type": "BOTTOM_RIGHT",
+                "offset_pos": "BOTTOM_RIGHT",
+                "position": { "x": -10, "y": -5 }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "text": "status",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": { "x": 10, "y": -16 }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "text": "sub_status",
+                "position_type": "BOTTOM_LEFT",
+                "offset_pos": "BOTTOM_LEFT",
+                "position": { "x": 10, "y": -4 }
+            }
+        },
+		{
+            "image": {
+                "parent": "builtin/text",
+                "text": "has_tips() ? tip(floor(time / 8)) : ''",
+                "position_type": "BOTTOM_CENTER",
+                "offset_pos": "BOTTOM_CENTER",
+                "position": { "x": 0, "y": -10 }
+            }
+        }
+    ],
+    "variables": {
+    },
+    "factories": [
+    ],
+    "actions": [
+    ]
+}

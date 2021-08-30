@@ -1,0 +1,17 @@
+{
+	icon: "minecraft:paper",
+	x: -10.5d,
+	y: -14.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.paper.subtitle}",
+	dependencies: [
+		"2b068c5e"
+	],
+	tasks: [{
+		uid: "44536988",
+		type: "item",
+		items: [{
+			item: "minecraft:paper"
+		}]
+	}]
+}

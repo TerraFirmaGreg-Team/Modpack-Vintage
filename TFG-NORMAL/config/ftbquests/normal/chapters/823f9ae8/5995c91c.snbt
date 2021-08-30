@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: 2.0d,
+	dependencies: [
+		"5c797ee7"
+	],
+	tasks: [{
+		uid: "cc7d54aa",
+		type: "item",
+		items: [{
+			item: "tfctech:smeltery_cauldron"
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 1.5d,
+	shape: "square",
+	description: "{tfg.quests.mv.assembler.subtitle}",
+	dependencies: [
+		"43847f05",
+		"e7ed2742"
+	],
+	hide: true,
+	tasks: [{
+		uid: "58d1128f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 101"
+		}],
+		ignore_nbt: 1b
+	}]
+}

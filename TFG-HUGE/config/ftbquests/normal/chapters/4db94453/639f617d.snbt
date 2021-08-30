@@ -1,0 +1,15 @@
+{
+	x: 8.5d,
+	y: 2.5d,
+	shape: "circle",
+	dependencies: [
+		"6597abd6"
+	],
+	tasks: [{
+		uid: "b7c7745f",
+		type: "item",
+		items: [{
+			item: "aeadditions:part.base 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 1.5d,
+	y: 8.0d,
+	shape: "circle",
+	dependencies: [
+		"353f5942"
+	],
+	tasks: [{
+		uid: "9672c734",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:network_tool"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

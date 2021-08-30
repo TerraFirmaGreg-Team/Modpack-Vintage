@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	description: "{tfg.quests.mv.gasturbine.subtitle}",
+	dependencies: [
+		"496ded55"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a1e3d200",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2246"
+		}],
+		ignore_nbt: 1b
+	}]
+}

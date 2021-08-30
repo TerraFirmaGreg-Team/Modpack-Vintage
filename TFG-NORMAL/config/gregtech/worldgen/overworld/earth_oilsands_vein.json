@@ -1,0 +1,24 @@
+{
+  "weight": 20,
+  "density": 0.8,
+  "max_height": 144,
+  "min_height": 125,
+  "generation_predicate":["ore_dict:stone", "ore_dict:sand"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [20, 48]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 100,
+          "value": "ore:oilsands"
+        }
+      ]
+    }
+  }
+}

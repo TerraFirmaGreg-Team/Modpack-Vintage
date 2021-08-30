@@ -1,0 +1,18 @@
+{
+	x: -2.5d,
+	y: -0.5d,
+	shape: "square",
+	description: "{tfg.quests.mv.arcfurnace.subtitle}",
+	dependencies: [
+		"496ded55"
+	],
+	hide: true,
+	tasks: [{
+		uid: "49b0e393",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 91"
+		}],
+		ignore_nbt: 1b
+	}]
+}

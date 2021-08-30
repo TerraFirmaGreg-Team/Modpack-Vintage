@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: -1.5d,
+	shape: "circle",
+	description: "{tfg.quests.steam.craftingstation.subtitle}",
+	dependencies: [
+		"5347bf68"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3a7d77e8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 825"
+		}]
+	}]
+}

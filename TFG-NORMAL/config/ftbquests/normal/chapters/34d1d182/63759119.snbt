@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: -6.5d,
+	dependencies: [
+		"2f23c3b0"
+	],
+	tasks: [{
+		uid: "52333b00",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:sealer"
+		}]
+	}]
+}
