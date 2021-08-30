@@ -1,0 +1,81 @@
+{
+	icon: "gregtech:machine 1 2542",
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"3d5ba582"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6d8a7b53",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2542"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6c4e70f0",
+		type: "item",
+		items: [{
+			item: "gregtech:turbine_casing 1 5"
+		}]
+	},
+	{
+		uid: "a4eb5ddf",
+		type: "item",
+		title: "Энергетический выходной  разьем",
+		items: [{
+			item: "gregtech:machine 1 705"
+		},
+		{
+			item: "gregtech:machine 1 715"
+		},
+		{
+			item: "gregtech:machine 1 725"
+		},
+		{
+			item: "gregtech:machine 1 735"
+		},
+		{
+			item: "gregtech:machine 1 745"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0d059270",
+		type: "item",
+		title: "Жидкостный входной люк",
+		items: [{
+			item: "gregtech:machine 1 702"
+		},
+		{
+			item: "gregtech:machine 1 712"
+		},
+		{
+			item: "gregtech:machine 1 722"
+		},
+		{
+			item: "gregtech:machine 1 732"
+		},
+		{
+			item: "gregtech:machine 1 742"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "925179fc",
+		type: "item",
+		title: "Держатель ротора",
+		items: [{
+			item: "gregtech:machine 1 817"
+		},
+		{
+			item: "gregtech:machine 1 818"
+		},
+		{
+			item: "gregtech:machine 1 819"
+		}],
+		ignore_nbt: 1b
+	}]
+}

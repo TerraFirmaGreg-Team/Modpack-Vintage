@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: -7.5d,
+	description: "{tfg.quests.lv.fluidcanner.subtitle}",
+	dependencies: [
+		"6aeff01a"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "93f70ca1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 290"
+		}],
+		ignore_nbt: 1b
+	}]
+}

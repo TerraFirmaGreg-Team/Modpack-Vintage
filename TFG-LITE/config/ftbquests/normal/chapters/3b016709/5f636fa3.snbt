@@ -1,0 +1,18 @@
+{
+	x: -2.0d,
+	y: 9.0d,
+	shape: "circle",
+	description: "{tfg.quests.lv.benderyoutube.subtitle}",
+	dependencies: [
+		"2fbc8722"
+	],
+	hide: true,
+	tasks: [{
+		uid: "05cfbe30",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 120"
+		}],
+		ignore_nbt: 1b
+	}]
+}

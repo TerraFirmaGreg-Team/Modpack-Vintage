@@ -1,0 +1,16 @@
+{
+	x: 15.0d,
+	y: -4.5d,
+	description: "{tfg.quests.space.ethernetIlona.subtitle}",
+	dependencies: [
+		"9e9cab41"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e7e03b40",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:dishbase"
+		}]
+	}]
+}

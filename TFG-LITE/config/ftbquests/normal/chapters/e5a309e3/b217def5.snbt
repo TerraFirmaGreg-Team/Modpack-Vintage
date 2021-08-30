@@ -1,0 +1,33 @@
+{
+	title: "{tfg.quests.hv.hvprocessor.title}",
+	x: 0.0d,
+	y: 4.0d,
+	description: "{tfg.quests.hv.hvprocessor.subtitle}",
+	dependencies: [
+		"e4f3463c",
+		"2e9f5774"
+	],
+	hide: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "fe458822",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32491"
+		},
+		{
+			item: "gregtech:meta_item_2 1 32492"
+		},
+		{
+			item: "gtadditions:ga_meta_item 1 32205"
+		},
+		{
+			item: "gtadditions:ga_meta_item 1 32223"
+		},
+		{
+			item: "gtadditions:ga_meta_item 1 32202"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

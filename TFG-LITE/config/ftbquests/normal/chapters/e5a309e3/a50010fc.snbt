@@ -1,0 +1,20 @@
+{
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "nitro_fuel",
+			Amount: 1000
+		}
+	},
+	x: 3.0d,
+	y: -3.0d,
+	dependencies: [
+		"493aceeb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0f40b39e",
+		type: "fluid",
+		fluid: "nitro_fuel"
+	}]
+}

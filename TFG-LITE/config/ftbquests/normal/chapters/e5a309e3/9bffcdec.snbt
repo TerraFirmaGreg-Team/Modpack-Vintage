@@ -1,0 +1,21 @@
+{
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "polyphenylene_sulfide",
+			Amount: 1000
+		}
+	},
+	x: 0.0d,
+	y: -5.5d,
+	shape: "circle",
+	dependencies: [
+		"a9b219e6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "14b4e482",
+		type: "fluid",
+		fluid: "polyphenylene_sulfide"
+	}]
+}

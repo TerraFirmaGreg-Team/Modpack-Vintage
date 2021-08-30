@@ -1,0 +1,17 @@
+{
+	x: -3.0d,
+	y: 9.0d,
+	description: "{tfg.quests.lv.forgehammer.subtitle}",
+	dependencies: [
+		"2fbc8722"
+	],
+	hide: true,
+	tasks: [{
+		uid: "36640b22",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 330"
+		}],
+		ignore_nbt: 1b
+	}]
+}

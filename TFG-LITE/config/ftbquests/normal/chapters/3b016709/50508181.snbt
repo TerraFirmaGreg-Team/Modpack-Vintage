@@ -1,0 +1,18 @@
+{
+	x: 12.0d,
+	y: -2.0d,
+	shape: "octagon",
+	description: "{tfg.quests.lv.aluminiumingot.subtitle}",
+	dependencies: [
+		"28b90e80"
+	],
+	hide: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "46d30e67",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10001"
+		}]
+	}]
+}

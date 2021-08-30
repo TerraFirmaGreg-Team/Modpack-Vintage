@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	shape: "circle",
+	description: "{tfg.quests.lv.centrifuge.subtitle}",
+	dependencies: [
+		"4646d01f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "845d611d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 150"
+		}],
+		ignore_nbt: 1b
+	}]
+}

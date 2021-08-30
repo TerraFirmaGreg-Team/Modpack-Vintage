@@ -1,0 +1,30 @@
+{
+	x: -12.0d,
+	y: -5.0d,
+	shape: "diamond",
+	description: "{tfg.quests.steam.sachok.subtitle}",
+	dependencies: [
+		"d9827d71"
+	],
+	hide: true,
+	tasks: [{
+		uid: "49868ed4",
+		type: "item",
+		title: "{tfg.quests.steam.sachok.title}",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolScoop"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolScoop"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -3.0d,
+	y: -8.0d,
+	tasks: [{
+		uid: "83c3ce46",
+		type: "fluid",
+		fluid: "hydrogen"
+	}],
+	rewards: [{
+		uid: "37399b1b",
+		type: "random",
+		table: 0
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -7.0d,
+	y: -9.0d,
+	description: "{tfg.quests.steam.lvmotor.subtitle}",
+	dependencies: [
+		"2295bfb5"
+	],
+	hide: true,
+	tasks: [{
+		uid: "45ecf83b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32600"
+		}],
+		count: 2L
+	}]
+}

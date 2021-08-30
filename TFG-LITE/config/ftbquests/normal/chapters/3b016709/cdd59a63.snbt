@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	description: "{tfg.quests.lv.clustermill.subtitle}",
+	dependencies: [
+		"4646d01f"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "312547ae",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2008"
+		}],
+		ignore_nbt: 1b
+	}]
+}

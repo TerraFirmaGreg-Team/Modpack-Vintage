@@ -1,0 +1,83 @@
+{
+	title: "{tfg.quests.primitive.primitiveTools.title}",
+	icon: "tfc:stone/knife/metamorphic",
+	x: -24.0d,
+	y: -6.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.primitive.primitiveTools.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "3d0ccea3",
+		type: "item",
+		items: [{
+			item: "tfc:stone/knife/igneous_intrusive"
+		},
+		{
+			item: "tfc:stone/knife/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/knife/sedimentary"
+		},
+		{
+			item: "tfc:stone/knife/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0c4901ad",
+		type: "item",
+		items: [{
+			item: "tfc:stone/shovel/igneous_intrusive"
+		},
+		{
+			item: "tfc:stone/shovel/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/shovel/sedimentary"
+		},
+		{
+			item: "tfc:stone/shovel/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "93c5f1c0",
+		type: "item",
+		items: [{
+			item: "tfc:stone/axe/igneous_intrusive"
+		},
+		{
+			item: "tfc:stone/axe/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/axe/sedimentary"
+		},
+		{
+			item: "tfc:stone/axe/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "290f4243",
+		type: "item",
+		items: [{
+			item: "tfc:stone/javelin/igneous_intrusive"
+		},
+		{
+			item: "tfc:stone/javelin/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/javelin/sedimentary"
+		},
+		{
+			item: "tfc:stone/javelin/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.vessel.title}",
+	x: -22.5d,
+	y: -10.5d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.vessel.subtitle}",
+	dependencies: [
+		"19c12c3c"
+	],
+	tasks: [{
+		uid: "001081f4",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/vessel",
+			ForgeCaps: {
+				Parent: {
+					fluidMode: 0b,
+					ticks: -1L,
+					heat: 0.0f,
+					items: {
+						Items: [],
+						Size: 4
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
