@@ -81,7 +81,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:basic_block_core:9>,
 	<galacticraftcore:basic_block_core:10>,
 	<galacticraftcore:basic_block_core:11>,
-	<galacticraftcore:infinite_oxygen>
+	<galacticraftcore:infinite_oxygen>,
+	<galacticraftplanets:basic_item_venus:4>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -186,7 +187,6 @@ for item in RemoveItemRecipe{
 }
 
 //Еда из GC
-//ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
@@ -320,7 +320,7 @@ recipes.addShaped(<galacticraftcore:solar>,
 //Солнечная панель 2
 recipes.addShaped(<galacticraftcore:solar:4>,
 [[<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>],
- [<gregtech:meta_item_1:13184>, <gregtech:meta_item_1:14184>, <gregtech:meta_item_1:13184>],
+ [<ore:plateStainlessSteel>, <ore:stickStainlessSteel>, <ore:plateStainlessSteel>],
  [<gregtech:meta_item_1:32602>, <gregtech:machine:503>, <gregtech:cable:2026>]]);
 //Клапан
 recipes.addShaped(<galacticraftcore:air_vent>,

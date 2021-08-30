@@ -222,3 +222,98 @@ icompressor.recipeBuilder()
 	.property("explosives", 4)
 	.outputs(<galaxyspace:compressed_plates:4>*2)
 	.duration(150).EUt(780).buildAndRegister();
+
+//Взлётка 2 лвл
+recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
+[[<ore:plateDenseTitanium>, <ore:plateDenseTitanium>, <ore:plateDenseTitanium>],
+ [<ore:blockTitanium>, <ore:blockTitanium>, <ore:blockTitanium>]]);
+
+//Гибридная солнечная панель
+recipes.addShaped(<galaxyspace:modern_solarpanel>,
+[[<galacticraftcore:solar:4>, <galacticraftcore:solar:4>, <galacticraftcore:solar:4>],
+ [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
+ [<gregtech:meta_item_1:32602>, <gregtech:machine:504>, <gregtech:cable:2026>]]);
+
+//Модификационный стол
+recipes.addShaped(<galaxyspace:modification_table>,
+[[<gregtech:meta_item_1:32539>, <gregtech:meta_item_1:32652>, <gregtech:meta_item_1:32499>],
+ [<gregtech:meta_item_1:32652>, <gregtech:machine:504>, <gregtech:meta_item_1:32652>],
+ [<gregtech:machine:2210>, <gregtech:meta_item_1:32652>, <gregtech:meta_item_1:32539>]]);
+
+//Контроллер мини-панелей
+recipes.addShaped(<galaxyspace:panel_controller>,
+[[<ore:plateLead>, <gtadditions:ga_meta_item:32579>, <ore:plateLead>],
+ [<ore:cableGtDoubleHvSuperconductor>, <gregtech:machine:503>, <ore:cableGtDoubleHvSuperconductor>],
+ [<ore:plateLead>, <gtadditions:ga_meta_item2:1>, <ore:plateLead>]]);
+
+//Солнечная мини-панель
+assembler.recipeBuilder()
+  .inputs(<gregtech:machine:503>, <gregtech:meta_item_1:32752>*8, <ore:cableGtSinglePlatinum>*8, <ore:plateLead>*2, <ore:circuitAdvanced>)
+  .fluidInputs([<liquid:soldering_alloy> * 288])
+  .outputs(<galaxyspace:single_solarpanel>*2)
+  .duration(500)
+  .EUt(128)
+  .buildAndRegister();
+
+//Солнечная модернизированная мини-панель
+assembler.recipeBuilder()
+  .inputs(<gregtech:machine:504>, <gregtech:meta_item_1:32752>*24, <ore:cableGtSinglePlatinum>*24, <ore:plateLead>*8, <ore:circuitAdvanced>)
+  .fluidInputs([<liquid:soldering_alloy> * 288])
+  .outputs(<galaxyspace:modern_single_solarpanel>*2)
+  .duration(500)
+  .EUt(256)
+  .buildAndRegister();
+
+//Зарядная панель
+assembler.recipeBuilder()
+  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:32539>, <ore:circuitAdvanced>, <gregtech:meta_item_1:32670>)
+  .fluidInputs([<liquid:soldering_alloy> * 1000])
+  .outputs(<galaxyspace:energy_pad>)
+  .duration(500)
+  .EUt(256)
+  .buildAndRegister();
+
+//Зарядная панель
+assembler.recipeBuilder()
+  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:32539>, <ore:circuitElite>, <gregtech:meta_item_1:32672>*2)
+  .fluidInputs([<liquid:soldering_alloy> * 144])
+  .outputs(<galaxyspace:gravitation_module>)
+  .duration(500)
+  .EUt(256)
+  .buildAndRegister();
+
+//Генератор поля
+recipes.addShaped(<galaxyspace:radiation_stabiliser>,
+[[<gregtech:wire_coil:1>, <gregtech:wire_coil:1>, <gregtech:wire_coil:1>],
+ [<gtadditions:ga_field_gen_casing:1>, <gregtech:machine_casing:3>, <gtadditions:ga_field_gen_casing:1>],
+ [<ore:cableGtDoublePlatinum>, <gtadditions:ga_meta_item2:1>, <ore:cableGtDoublePlatinum>]]);
+
+//Солнечный парус
+recipes.addShaped(<galaxyspace:solarwind_panel>,
+[[<galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>],
+ [<ore:stickLongAluminium>, <gregtech:machine:503>, <ore:stickLongAluminium>],
+ [<ore:cableGtDoublePlatinum>, <ore:circuitExtreme>, <ore:cableGtDoublePlatinum>]]);
+
+//Планитарный щит
+recipes.addShaped(<galaxyspace:planet_shield>,
+[[<gregtech:meta_item_1:32672>, <gregtech:meta_item_1:32693>, <gregtech:meta_item_1:32672>],
+ [<gregtech:meta_item_1:32672>, <gregtech:machine:504>, <gregtech:meta_item_1:32672>],
+ [<ore:cableGtDoubleIvSuperconductor>, <ore:cableGtDoubleIvSuperconductor>, <ore:cableGtDoubleIvSuperconductor>]]);
+
+//Основание гидроподной фермы
+assembler.recipeBuilder()
+  .inputs(<gregtech:machine:503>, <gregtech:meta_item_1:32691>*2, <gregtech:meta_item_1:32651>*2, <ore:cableGtQuadrupleAnnealedCopper>*4)
+  .fluidInputs([<liquid:soldering_alloy> * 144])
+  .outputs(<galaxyspace:hydroponic_base>)
+  .duration(260)
+  .EUt(512)
+  .buildAndRegister();
+
+//Стеклянное основание гидроподной фермы
+assembler.recipeBuilder()
+  .inputs(<gtadditions:ga_transparent_casing:1>*6, <gregtech:machine:503>, <gregtech:machine:2210>, <gregtech:machine:814>)
+  .fluidInputs([<liquid:soldering_alloy> * 144])
+  .outputs(<galaxyspace:hydroponic_farm>)
+  .duration(260)
+  .EUt(512)
+  .buildAndRegister();
