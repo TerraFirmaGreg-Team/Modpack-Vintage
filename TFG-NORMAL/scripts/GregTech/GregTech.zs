@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 //Удаление + скрытие
-global ItemsToRemoveGTJEI as IItemStack[] = [
+val ItemsToRemoveFromJEI as IItemStack[] = [
     <gregtech:machine:807>,
     <gregtech:machine:808>,
     <gregtech:machine:2553>,
@@ -31,8 +31,16 @@ global ItemsToRemoveGTJEI as IItemStack[] = [
     <gregtech:meta_item_1:1345>,
     <gregtech:meta_item_1:345>
 ] as IItemStack[];
-for item in ItemsToRemoveGTJEI{
+for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
+}
+
+val ItemsToRemove as IItemStack[] = [
+	<gregtech:machine:4212>,
+    <gregtech:meta_item_1:15209>
+] as IItemStack[];
+for item in ItemsToRemove{
+    recipes.remove(item);
 }
 
 //Переработка танков в Arc
@@ -69,33 +77,62 @@ recipes.addShaped(<minecraft:paper>*2,
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
  [null, <ore:slabStonePolished>, null]]);
 
-//Фикс кейзингов
-recipes.removeByRecipeName("gregtech:casing_invar_heatproof");
-recipes.removeByRecipeName("gregtech:casing_aluminium_frostproof");
-
 //Лава из незерака
-fluid_extractor.recipeBuilder().inputs(<ore:netherrack>).fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();
+fluid_extractor.recipeBuilder()
+    .inputs(<ore:netherrack>)
+    .fluidOutputs(<fluid:lava> * 250)
+    .EUt(140).duration(330).buildAndRegister();
 	
 //Лава из магма блока
-fluid_extractor.recipeBuilder().inputs(<minecraft:magma>).fluidOutputs(<fluid:lava> * 750).EUt(140).duration(220).buildAndRegister();
+fluid_extractor.recipeBuilder()
+    .inputs(<minecraft:magma>)
+    .fluidOutputs(<fluid:lava> * 750)
+    .EUt(140).duration(220).buildAndRegister();
 	
 //Гравий --> кремень
-forge_hammer.recipeBuilder().inputs([<ore:gravel> * 1]).outputs(<minecraft:flint> * 1).duration(45).EUt(5).buildAndRegister();
+forge_hammer.recipeBuilder()
+    .inputs([<ore:gravel> * 1])
+    .outputs(<minecraft:flint> * 1)
+    .duration(45).EUt(5).buildAndRegister();
 
 //Сахарный тростник --> целлюлоза
-forge_hammer.recipeBuilder().inputs([<ore:sugarcane> * 3]).outputs(<ore:dustPaper>.firstItem * 2).duration(105).EUt(4).buildAndRegister();
+forge_hammer.recipeBuilder()
+    .inputs([<ore:sugarcane> * 3])
+    .outputs(<ore:dustPaper>.firstItem * 2)
+    .duration(105).EUt(4).buildAndRegister();
 
 //Песок+Гравий --> цемент тфк
-mixer.recipeBuilder().inputs(<ore:sand>*4,<ore:gravel>*4).outputs(<tfc:aggregate>*8).duration(20).EUt(4).buildAndRegister();
+mixer.recipeBuilder()
+    .inputs(<ore:sand>*4,<ore:gravel>*4)
+    .outputs(<tfc:aggregate>*8)
+    .duration(20).EUt(4).buildAndRegister();
 
 //Жидкий воздух --> Воздух
-fluid_heater.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).fluidInputs(<liquid:liquid_oxygen> * 100).fluidOutputs(<liquid:oxygen> * 1000)  .duration(400).EUt(32).buildAndRegister();
+fluid_heater.recipeBuilder()
+    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+    .fluidInputs(<liquid:liquid_oxygen> * 100)
+    .fluidOutputs(<liquid:oxygen> * 1000)
+    .duration(400).EUt(32).buildAndRegister();
 
 //Фикс ванильного хлеба
 furnace.remove(<minecraft:bread>);
 
 //Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], null).remove();
+
+//Фикс алмазов
+packer.findRecipe(8, [<minecraft:diamond> * 9, <gtadditions:ga_meta_item:32133>], null).remove();
+unpacker.findRecipe(8, [<minecraft:diamond_block>, <gtadditions:ga_meta_item:32133>], null).remove();
+packer.recipeBuilder()
+    .inputs(<ore:gemDiamond>*9)
+    .notConsumable(<gtadditions:ga_meta_item:32133>)
+    .outputs(<minecraft:diamond_block>)
+    .duration(200).EUt(8).buildAndRegister();
+unpacker.recipeBuilder()
+    .inputs(<minecraft:diamond_block>)
+    .notConsumable(<gtadditions:ga_meta_item:32133>)
+    .outputs(<tfc:gem/diamond:2>*9)
+    .duration(200).EUt(8).buildAndRegister();
 
 //Фиксы корпусов
 //Удаление
@@ -137,6 +174,18 @@ recipes.removeByRecipeName("gregtech:dust_blue_steel");
 recipes.removeByRecipeName("gregtech:dust_red_steel");
 recipes.addShapeless (<gregtech:meta_item_1:2233>*8, [<gregtech:meta_item_1:2227>, <gregtech:meta_item_1:2230>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
 recipes.addShapeless (<gregtech:meta_item_1:2232>*8, [<gregtech:meta_item_1:2228>, <gregtech:meta_item_1:2094>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2184>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>, <gregtech:meta_item_1:2231>]);
+
+//Steam Chunk Miner
+recipes.addShaped(<gregtech:machine:4212>,
+[[<tfc:gem/diamond:2>, <ore:pipeMediumBronze>, <tfc:gem/diamond:2>],
+ [<ore:pipeMediumBronze>, <gregtech:machine_casing:10>, <ore:pipeMediumBronze>],
+ [<ore:rotorBronze>, <ore:pipeMediumBronze>, <ore:rotorBronze>]]);
+
+//White Lense
+recipes.addShaped(<gregtech:meta_item_1:15209>,
+[[<minecraft:flint>, <ore:craftingToolFile>.firstItem.withEmptyTag(), <minecraft:flint>],
+ [<minecraft:flint>, <ore:blockGlass>, <minecraft:flint>],
+ [<minecraft:flint>, <tfc:gem/diamond:2>, <minecraft:flint>]]);
 
 //Отключение крафта 2х пластина 1х молот = двойная пластина(Только дублирующие ТФК)
 recipes.removeShaped(<gtadditions:ga_meta_item:1230>);

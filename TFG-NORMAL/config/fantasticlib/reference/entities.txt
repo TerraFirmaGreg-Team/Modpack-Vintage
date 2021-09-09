@@ -152,9 +152,9 @@ tfcthings:slingstonemetallight
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
+enderio:primed_charge
 enderio:falling_machine
 enderio:owl_egg
-enderio:primed_charge
 astikorcarts:cargocart
 astikorcarts:plowcart
 astikorcarts:mobcart

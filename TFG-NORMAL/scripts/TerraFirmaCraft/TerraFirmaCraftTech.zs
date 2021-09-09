@@ -53,6 +53,9 @@ Anvil.addRecipe("tfctech:rod_20", <gregtech:meta_item_2:10026>, <gregtech:meta_i
 //Баффнутый крафт поташа
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
 recipes.addShapeless(<gregtech:meta_item_1:2402>*4, [<tfctech:pot_potash>]);
+//Фикс крафта поташа(резервуар остается)
+recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
+recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
 
 //Резина для примитивного этапа
 recipes.addShapeless(<gregtech:meta_item_1:12152>*2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);

@@ -93,3 +93,6 @@ xaerominimap:no_waypoints_beneficial
 xaerominimap:no_cave_maps
 xaerominimap:no_cave_maps_harmful
 xaerominimap:no_cave_maps_beneficial
+xaeroworldmap:no_world_map
+xaeroworldmap:no_world_map_harmful
+xaeroworldmap:no_world_map_beneficial

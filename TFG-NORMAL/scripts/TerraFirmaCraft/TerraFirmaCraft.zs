@@ -244,7 +244,6 @@ Welding.addRecipe("tfc:double_plate_fixed", <ore:plateWroughtIron>, <ore:plateWr
 furnace.remove(<gregtech:meta_item_1:10197>);
 furnace.addRecipe(<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:2197>);
 forge_hammer.findRecipe(8, [<gtadditions:ga_meta_item:32037>], null).remove();
-large_forge_hammer.findRecipe(8, [<gtadditions:ga_meta_item:32037>], [<liquid:lubricant>*2]).remove();
 forge_hammer.recipeBuilder().inputs(<gtadditions:ga_meta_item:32037>).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
 //Наггет
 alloy_smelter.findRecipe(8, [<gregtech:meta_item_1:9197>*9, <gregtech:meta_item_1:32306>], null).remove();
@@ -299,7 +298,6 @@ extruder.findRecipe(64, [<tfc:metal/ingot/wrought_iron>, <gregtech:meta_item_1:3
 extruder.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).notConsumable(<gregtech:meta_item_1:32350>).outputs(<tfc:metal/sheet/wrought_iron>).duration(150).EUt(64).buildAndRegister(); 
 //Пластины ForgeHammer
 forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], null).remove();
-large_forge_hammer.findRecipe(16, [<tfc:metal/ingot/wrought_iron>*3], [<liquid:lubricant>*2]).remove();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>*3).outputs(<tfc:metal/sheet/wrought_iron>*2).duration(100).EUt(16).buildAndRegister(); 
 //Исправляем железные прутья
 Anvil.removeRecipe(<minecraft:iron_bars>*16);
@@ -573,9 +571,9 @@ compressor.findRecipe(2, [<minecraft:potato>*8], null).remove();
 brewer.findRecipe(3, [<minecraft:potato>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:potato>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:potato>], [<liquid:water>*20]).remove();
-chemical_plant.findRecipe(30, [<minecraft:potato>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:potato>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:potato>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:potato>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:potato>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:potato>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 //Отключение арбуза
 chemical_reactor.findRecipe(30, [<minecraft:melon>, <minecraft:gold_nugget>*8], null).remove();
 large_chemical_reactor.findRecipe(30, [<minecraft:melon>, <minecraft:gold_nugget>*8], null).remove();
@@ -593,9 +591,9 @@ brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:beetroot>], [<liquid:water>*20]).remove();
 extractor.findRecipe(2, [<minecraft:beetroot>], null).remove();
 compressor.findRecipe(2, [<minecraft:beetroot>*8], null).remove();
-chemical_plant.findRecipe(30, [<minecraft:beetroot>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:beetroot>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:beetroot>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:beetroot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:beetroot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:beetroot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 //Отключение моркови
 recipes.removeByRecipeName("minecraft:golden_carrot");
 brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:for.honey>*20]).remove();
@@ -604,37 +602,37 @@ brewer.findRecipe(3, [<minecraft:carrot>], [<liquid:water>*20]).remove();
 compressor.findRecipe(2, [<minecraft:carrot>*8], null).remove();
 chemical_reactor.findRecipe(30, [<minecraft:carrot>, <minecraft:gold_nugget>*8], null).remove();
 large_chemical_reactor.findRecipe(30, [<minecraft:carrot>, <minecraft:gold_nugget>*8], null).remove();
-chemical_plant.findRecipe(30, [<minecraft:carrot>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:carrot>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:carrot>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:carrot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:carrot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:carrot>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 //Отключение кактуса
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:cactus>], [<liquid:water>*20]).remove();
-chemical_plant.findRecipe(30, [<minecraft:cactus>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:cactus>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:cactus>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:cactus>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:cactus>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:cactus>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 compressor.findRecipe(2, [<minecraft:cactus>*8], null).remove();
 //Отключение тростника
 brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:reeds>], [<liquid:water>*20]).remove();
-chemical_plant.findRecipe(30, [<minecraft:reeds>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:reeds>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:reeds>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:reeds>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:reeds>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:reeds>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 compressor.findRecipe(2, [<minecraft:reeds>*8], null).remove();
 macerator.findRecipe(2, [<minecraft:reeds>], null).remove();
 chemical_bath.findRecipe(8, [<minecraft:reeds>], [<liquid:water>*100]).remove();
 chemical_bath.findRecipe(8, [<minecraft:reeds>], [<liquid:distilled_water>*100]).remove();
-//forge_hammer.findRecipe(4, [<minecraft:reeds>*3], null).remove();//Не работает
+forge_hammer.findRecipe(4, [<minecraft:reeds>*3], null).remove();//Не работает
 //Отключение коричневого гриба
 compressor.findRecipe(2, [<minecraft:brown_mushroom>*8], null).remove(); 
 brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:brown_mushroom>], [<liquid:water>*20]).remove();
-chemical_plant.findRecipe(30, [<minecraft:brown_mushroom>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:brown_mushroom>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:brown_mushroom>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:brown_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:brown_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:brown_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 centrifuge.findRecipe(5, [<minecraft:brown_mushroom>], null).remove();
 large_centrifuge.findRecipe(5, [<minecraft:brown_mushroom>], null).remove();
 large_mixer.findRecipe(480, [<minecraft:brown_mushroom>, <gtadditions:ga_meta_item:32396>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();
@@ -644,9 +642,9 @@ compressor.findRecipe(2, [<minecraft:red_mushroom>*8], null).remove();
 brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:for.honey>*20]).remove();
 brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:juice>*20]).remove();
 brewer.findRecipe(3, [<minecraft:red_mushroom>], [<liquid:water>*20]).remove();
-chemical_plant.findRecipe(30, [<minecraft:red_mushroom>*10], [<liquid:for.honey>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:red_mushroom>*10], [<liquid:juice>*250]).remove();
-chemical_plant.findRecipe(30, [<minecraft:red_mushroom>*10], [<liquid:water>*250]).remove();
+mixer.findRecipe(30, [<minecraft:red_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:for.honey>*250]).remove();
+mixer.findRecipe(30, [<minecraft:red_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:juice>*250]).remove();
+mixer.findRecipe(30, [<minecraft:red_mushroom>*10, <gregtech:meta_item_1:32766>.withTag({Configuration: 1})], [<liquid:water>*250]).remove();
 centrifuge.findRecipe(5, [<minecraft:red_mushroom>], null).remove();
 large_centrifuge.findRecipe(5, [<minecraft:red_mushroom>], null).remove();
 large_mixer.findRecipe(480, [<minecraft:red_mushroom>, <gtadditions:ga_meta_item:32396>, <gregtech:meta_item_1:32766>.withTag({Configuration: 2})], null).remove();

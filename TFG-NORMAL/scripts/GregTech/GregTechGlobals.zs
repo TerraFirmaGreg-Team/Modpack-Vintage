@@ -50,7 +50,6 @@ global green_house as RecipeMap = RecipeMap.getByName("green_house");
 global icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
 global large_centrifuge as RecipeMap = LargeRecipeMap.of(GARecipeMaps.LARGE_CENTRIFUGE_RECIPES);
 global large_chemical_reactor as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
-global large_forge_hammer as RecipeMap = LargeRecipeMap.of(GARecipeMaps.LARGE_FORGE_HAMMER_RECIPES);
 global large_mixer as RecipeMap = RecipeMap.getByName("large_mixer");
 global laser_engraver as RecipeMap = RecipeMap.getByName("laser_engraver");
 global lathe as RecipeMap = RecipeMap.getByName("lathe");

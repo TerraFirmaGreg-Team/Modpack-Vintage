@@ -1,3 +1,3 @@
-import mods.terrafirmacraft.Barrel;
-
-Barrel.addRecipe("tfc:cheeseF", <liquid:milk_curdled>*625, <tfc:food/cheese>*2, 8);
+mods.jei.JEI.removeAndHide(<harvestcraft:queenbeeitem>);
+mods.jei.JEI.removeAndHide(<harvestcraft:beehive>);
+mods.jei.JEI.removeAndHide(<harvestcraft:grubitem>);

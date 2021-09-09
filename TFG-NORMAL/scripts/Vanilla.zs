@@ -67,7 +67,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:chainmail_helmet>,
     <minecraft:chainmail_chestplate>,
     <minecraft:chainmail_leggings>,
-    <minecraft:chainmail_boots>
+    <minecraft:chainmail_boots>,
+    <minecraft:diamond>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -135,6 +136,7 @@ recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
 recipes.removeByRecipeName("minecraft:tripwire_hook");
 recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("tfc:vanilla/cauldron");
+recipes.removeByRecipeName("minecraft:diamond_block");
 
 //Создание крафтов
 
