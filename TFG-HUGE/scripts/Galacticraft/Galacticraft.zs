@@ -181,6 +181,7 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:food:1>,
 	<galacticraftcore:food:2>,
 	<galacticraftcore:food:3>,
+	<galacticraftplanets:item_basic_mars:4>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -202,6 +203,11 @@ recipes.addShapeless(<galacticraftcore:food:3>, [<galacticraftcore:canister>, <t
 recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]);
 //Светофакел
 recipes.addShapeless(<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
+//Slimeling Inventory Bag
+recipes.addShaped(<galacticraftplanets:item_basic_mars:4>,
+[[<ore:leather>, <ore:plateDiamond>, <ore:leather>],
+ [<ore:leather>, <ore:slimeball>, <ore:leather>],
+ [null, <ore:chestWood>, null]]);
 //Oxygen mask
 recipes.addShaped(<galacticraftcore:oxygen_mask>,
 [[<minecraft:glass_pane>, <gregtech:meta_item_1:15209>, <minecraft:glass_pane>],

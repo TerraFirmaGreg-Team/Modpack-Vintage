@@ -5,6 +5,7 @@ import mods.astralsorcery.Altar;
 //Отключение крафтов
 furnace.remove(<astralsorcery:itemcraftingcomponent>*3);
 recipes.remove(<astralsorcery:blockblackmarble>);
+
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/enchantment_amulet_craft");
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/wand/aevitas");
@@ -16,6 +17,8 @@ Altar.removeAltarRecipe("astralsorcery:shaped/internal/cape/att/octans");
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/cape/att/bootes");
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/cape/att/fornax");
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/cape/att/pelotrio");
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lens_break");
+
 LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
 
 //Мрамор из AstralSorcery
@@ -157,3 +160,13 @@ Altar.addTraitAltarRecipe("pelotrio_cape", <astralsorcery:itemcape>.withTag({ast
 	null, null, null, 
 	<ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>,
 	<minecraft:rotten_flesh>, <ore:listAllegg>, <ore:apple>, <ore:dustBlaze>], "astralsorcery.constellation.pelotrio");	
+
+//Yellow Lens
+Altar.addConstellationAltarRecipe("yellow_lens", <astralsorcery:itemcoloredlens:1>, 2000, 10, [
+			null, <ore:gemDiamond>, null,
+			null, <astralsorcery:itemcraftingcomponent:3>, null,
+			null, <tfc:metal/pick/wrought_iron>, null,
+			<astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>, <ore:plateRoseGold>, 
+			<ore:plateRoseGold>, null, null,
+			null, null, null,
+			null, null, null]);
