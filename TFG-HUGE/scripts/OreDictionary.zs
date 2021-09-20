@@ -305,3 +305,6 @@ for item in ButtonStone {
 <ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);
 <ore:sheetDoubleWroughtIron>.remove(<tfc:metal/double_sheet/wrought_iron>);
 <ore:sheetDoubleWroughtIron>.add(<gtadditions:ga_meta_item:1197>);
+
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);

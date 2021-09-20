@@ -181,7 +181,9 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:food:1>,
 	<galacticraftcore:food:2>,
 	<galacticraftcore:food:3>,
-	<galacticraftplanets:item_basic_mars:4>
+	<galacticraftplanets:item_basic_mars:4>,
+	<galacticraftcore:basic_block_core:12>,
+	<galacticraftcore:item_basic_moon>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);

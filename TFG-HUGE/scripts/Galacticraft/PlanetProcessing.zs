@@ -1,4 +1,19 @@
 //GALACTICRAFT-PROCCESSING
+
+//Метеоритное железо
+large_centrifuge.recipeBuilder()
+   .inputs(<galacticraftcore:meteoric_iron_raw>)
+   .chancedOutput(<gregtech:meta_item_1:2326>, 9000, 500)
+   .chancedOutput(<gregtech:meta_item_1:1878>, 7000, 1000)
+   .chancedOutput(<gregtech:meta_item_1:3213>, 5000, 1500)
+   .chancedOutput(<gregtech:meta_item_1:3044>, 3000, 2000)
+   .chancedOutput(<gregtech:meta_item_1:3255>, 1000, 2500)
+   .chancedOutput(<gregtech:meta_item_1:2328>, 500, 3000)
+   .fluidOutputs(<liquid:water> * 50)
+   .duration(150)
+   .EUt(618)
+   .buildAndRegister();
+
 //ЛУНА
 //Лунный реголит
 centrifuge.recipeBuilder()

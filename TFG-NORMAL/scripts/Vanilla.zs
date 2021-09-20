@@ -68,7 +68,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:chainmail_chestplate>,
     <minecraft:chainmail_leggings>,
     <minecraft:chainmail_boots>,
-    <minecraft:diamond>
+    <minecraft:diamond>,
+    <minecraft:emerald>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);

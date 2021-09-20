@@ -120,20 +120,6 @@ furnace.remove(<minecraft:bread>);
 //Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:32766>.withTag({Configuration: 9})], null).remove();
 
-//Фикс алмазов
-packer.findRecipe(8, [<minecraft:diamond> * 9, <gtadditions:ga_meta_item:32133>], null).remove();
-unpacker.findRecipe(8, [<minecraft:diamond_block>, <gtadditions:ga_meta_item:32133>], null).remove();
-packer.recipeBuilder()
-    .inputs(<ore:gemDiamond>*9)
-    .notConsumable(<gtadditions:ga_meta_item:32133>)
-    .outputs(<minecraft:diamond_block>)
-    .duration(200).EUt(8).buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<minecraft:diamond_block>)
-    .notConsumable(<gtadditions:ga_meta_item:32133>)
-    .outputs(<tfc:gem/diamond:2>*9)
-    .duration(200).EUt(8).buildAndRegister();
-
 //Фиксы корпусов
 //Удаление
 assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
