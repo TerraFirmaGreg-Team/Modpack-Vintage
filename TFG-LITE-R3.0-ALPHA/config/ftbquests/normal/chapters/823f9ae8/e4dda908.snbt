@@ -1,0 +1,17 @@
+{
+	title: "{tfg.quests.primitive.blueClay.title}",
+	x: -24.0d,
+	y: -7.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.blueClay.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "f9b15d44",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}]
+	}]
+}

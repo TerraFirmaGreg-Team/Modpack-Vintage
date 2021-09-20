@@ -1,0 +1,16 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	description: "{tfg.quests.hv.nichromecoil.subtitle}",
+	dependencies: [
+		"95acee4d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "98ae492c",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 2"
+		}]
+	}]
+}

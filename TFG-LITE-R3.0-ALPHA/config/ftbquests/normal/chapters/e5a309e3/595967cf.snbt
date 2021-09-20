@@ -1,0 +1,18 @@
+{
+	icon: "gregtech:machine 1 2538",
+	x: -4.0d,
+	y: 3.0d,
+	dependencies: [
+		"2081d527"
+	],
+	hide: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "a2a3bbea",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2538"
+		}],
+		ignore_nbt: 1b
+	}]
+}

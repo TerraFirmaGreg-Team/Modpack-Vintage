@@ -1,0 +1,28 @@
+{
+	title: "{tfg.quests.mv.batterybuffer2.title}",
+	x: -5.0d,
+	y: 3.5d,
+	dependencies: [
+		"496ded55"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "583b833d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 618"
+		},
+		{
+			item: "gregtech:machine 1 619"
+		},
+		{
+			item: "gregtech:machine 1 620"
+		},
+		{
+			item: "gregtech:machine 1 621"
+		}],
+		consume_items: false,
+		ignore_nbt: 1b
+	}]
+}

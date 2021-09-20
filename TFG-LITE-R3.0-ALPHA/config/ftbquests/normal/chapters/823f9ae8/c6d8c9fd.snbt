@@ -1,0 +1,18 @@
+{
+	x: -7.0d,
+	y: 3.0d,
+	shape: "circle",
+	hide_dependency_lines: true,
+	dependencies: [
+		"85e10b5d"
+	],
+	tasks: [{
+		uid: "95f064e1",
+		type: "item",
+		items: [{
+			item: "tfc:stone/hammer/igneous_intrusive"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

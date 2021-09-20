@@ -1,0 +1,45 @@
+{
+    "name": "pyrochlore",
+    "weight": 40,
+    "max_height": 60,
+    "min_height": 30,
+    "generator": {
+        "type": "ellipsoid",
+        "radius": [
+            10,
+            10
+        ]
+    },
+    "density": 0.4,
+    "vein_populator": {
+        "type": "surface_rock",
+        "material": "pyrochlore"
+    },
+    "dimension_filter": [
+        "dimension_id:-20"
+    ],
+    "filler": {
+        "type": "simple",
+        "value": {
+            "type": "weight_random",
+            "values": [
+                {
+                    "weight": "70",
+                    "value": "ore:pyrochlore"
+                },
+                {
+                    "weight": "15",
+                    "value": "ore:zircon"
+                },
+                {
+                    "weight": "10",
+                    "value": "ore:pitchblende"
+                },
+                {
+                    "weight": "5",
+                    "value": "ore:zirkelite"
+                }
+            ]
+        }
+    }
+}

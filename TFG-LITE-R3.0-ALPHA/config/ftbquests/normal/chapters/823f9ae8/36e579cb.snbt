@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.primitive.supports.title}",
+	icon: "tfc:wood/support/douglas_fir",
+	x: -17.5d,
+	y: -7.0d,
+	description: "{tfg.quests.primitive.supports.subtitle}",
+	dependencies: [
+		"e94b7b0e",
+		"1ccd9dd8"
+	],
+	tasks: [{
+		uid: "8cd39c94",
+		type: "item",
+		title: "Опоры",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "support"
+				}
+			}
+		}],
+		count: 16L
+	}]
+}

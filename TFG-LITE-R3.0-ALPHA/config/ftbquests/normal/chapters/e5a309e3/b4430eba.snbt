@@ -1,0 +1,35 @@
+{
+	title: "{tfg.quests.hv.tetratitan.title}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "titanium_tetrachloride",
+			Amount: 1000
+		}
+	},
+	x: 6.0d,
+	y: 5.0d,
+	dependencies: [
+		"af66b0db"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f765572e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2123"
+		}]
+	},
+	{
+		uid: "e6484638",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2122"
+		}]
+	},
+	{
+		uid: "911ea7b1",
+		type: "fluid",
+		fluid: "titanium_tetrachloride"
+	}]
+}

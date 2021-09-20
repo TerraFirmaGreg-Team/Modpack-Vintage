@@ -1,0 +1,16 @@
+{
+	x: 12.0d,
+	y: -6.5d,
+	description: "{tfg.quests.lv.solarpanel2.subtitle}",
+	dependencies: [
+		"4c4595cf"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0b86216e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32752"
+		}]
+	}]
+}

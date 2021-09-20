@@ -1,0 +1,17 @@
+{
+	x: -3.0d,
+	y: 7.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.boiler.subtitle}",
+	dependencies: [
+		"b217def5"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c11dd6c9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 522"
+		}]
+	}]
+}

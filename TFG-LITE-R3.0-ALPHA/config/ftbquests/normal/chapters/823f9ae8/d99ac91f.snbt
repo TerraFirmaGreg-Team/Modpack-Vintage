@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.primitive.backpack.title}",
+	x: -9.5d,
+	y: -10.5d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.backpack.subtitle}",
+	dependencies: [
+		"2816fe72"
+	],
+	tasks: [{
+		uid: "15a4dc6a",
+		type: "item",
+		title: "Рюкзак",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "backpack"
+				}
+			}
+		}]
+	}]
+}
