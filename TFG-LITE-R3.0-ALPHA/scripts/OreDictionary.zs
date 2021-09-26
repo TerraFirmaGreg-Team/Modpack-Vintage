@@ -104,9 +104,9 @@ for item in GenRockIE {
 //Minecraft diamond
 <ore:gemDiamond>.remove(<minecraft:diamond>);
 //Lapis
-<ore:dye>.remove(<minecraft:dye:4>);
-<ore:dyeBlue>.remove(<minecraft:dye:4>);
-<ore:gemLapis>.remove(<minecraft:dye:4>);
+//<ore:dye>.remove(<minecraft:dye:4>);
+//<ore:dyeBlue>.remove(<minecraft:dye:4>);
+//<ore:gemLapis>.remove(<minecraft:dye:4>);
 /*             ///Убирание oredictionary у не используемых руд///               */
 //Stone coal
 <ore:oreCoal>.remove(<minecraft:coal_ore>);
@@ -300,11 +300,11 @@ for item in ButtonStone {
 <ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
 
 //Фикc железка
-<ore:plateWroughtIron>.remove(<gregtech:meta_item_1:12197>);
-<ore:ingotWroughtIron>.remove(<gregtech:meta_item_1:10197>);
+<ore:plateWroughtIron>.remove(<gregtech:meta_plate:209>);
+<ore:ingotWroughtIron>.remove(<gregtech:meta_ingot:209>);
 <ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);
 <ore:sheetDoubleWroughtIron>.remove(<tfc:metal/double_sheet/wrought_iron>);
-<ore:sheetDoubleWroughtIron>.add(<gtadditions:ga_meta_item:1197>);
+//<ore:sheetDoubleWroughtIron>.add(<gtadditions:ga_meta_item:1197>);
 
 <ore:dustSalt>.remove(<tfc:powder/salt>);
 <ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);

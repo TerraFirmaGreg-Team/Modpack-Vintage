@@ -1188,6 +1188,8 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
+forestry:habitat_former:0, Habitat Former
+forestry:habitat_screen, Habitat Screen
 forestry:apiarist_bag, Apiarist's Backpack
 forestry:lepidopterist_bag, Lepidopterist's Backpack
 forestry:miner_bag, Mining Backpack
@@ -1202,12 +1204,78 @@ forestry:adventurer_bag, Adventuring Backpack
 forestry:adventurer_bag_t2, Woven Adventuring Backpack
 forestry:builder_bag, Building Backpack
 forestry:builder_bag_t2, Woven Building Backpack
-forestry:habitat_former:0, Habitat Former
-forestry:habitat_screen, Habitat Screen
 forestry:database:0, Database
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
+forestry:mushroom:0, tile.for.mushroom.name
+forestry:mushroom:1, tile.for.mushroom.name
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:arboretum:0, Arboretum (Managed)
+forestry:arboretum:1, Arboretum (Manual)
+forestry:farm_crops:0, Farm (Managed)
+forestry:farm_crops:1, Farm (Manual)
+forestry:farm_mushroom:0, Mushroom Farm (Managed)
+forestry:farm_mushroom:1, Mushroom Farm (Manual)
+forestry:farm_gourd:0, Gourd Farm (Managed)
+forestry:farm_gourd:1, Gourd Farm (Manual)
+forestry:farm_nether:0, Infernal Farm (Managed)
+forestry:farm_nether:1, Infernal Farm (Manual)
+forestry:farm_ender:0, Ender Farm (Managed)
+forestry:farm_ender:1, Ender Farm (Manual)
+forestry:peat_bog:0, Peat Bog (Managed)
+forestry:peat_bog:1, Peat Bog (Manual)
 forestry:grafter, Grafter
 forestry:grafter_proven, Proven Grafter
 forestry:logs.0:0, Larch Wood
@@ -1660,89 +1728,6 @@ forestry:leaves.decorative.2:0, Papaya Leaves
 forestry:leaves.decorative.2:1, Date Palm Leaves
 forestry:leaves.decorative.2:2, White Poplar Leaves
 forestry:tree_chest:0, Arborist's Chest
-forestry:mushroom:0, tile.for.mushroom.name
-forestry:mushroom:1, tile.for.mushroom.name
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:arboretum:0, Arboretum (Managed)
-forestry:arboretum:1, Arboretum (Manual)
-forestry:farm_crops:0, Farm (Managed)
-forestry:farm_crops:1, Farm (Manual)
-forestry:farm_mushroom:0, Mushroom Farm (Managed)
-forestry:farm_mushroom:1, Mushroom Farm (Manual)
-forestry:farm_gourd:0, Gourd Farm (Managed)
-forestry:farm_gourd:1, Gourd Farm (Manual)
-forestry:farm_nether:0, Infernal Farm (Managed)
-forestry:farm_nether:1, Infernal Farm (Manual)
-forestry:farm_ender:0, Ender Farm (Managed)
-forestry:farm_ender:1, Ender Farm (Manual)
-forestry:peat_bog:0, Peat Bog (Managed)
-forestry:peat_bog:1, Peat Bog (Manual)
-forestry:genetic_filter:0, Genetic Filter
-forestry:greenhouse:0, Greenhouse Block
-forestry:greenhouse:3, Greenhouse Energy Distributor
-forestry:greenhouse:4, Greenhouse Control
-forestry:greenhouse:5, Greenhouse Screen
-forestry:climatiser:0, Greenhouse Hygroregulator
-forestry:climatiser:1, Greenhouse Heater
-forestry:climatiser:2, Greenhouse Fan
-forestry:climatiser:3, Greenhouse Humidifier
-forestry:climatiser:4, Greenhouse Dehumidifier
-forestry:greenhouse.window:0, Greenhouse Window
-forestry:greenhouse.window_up:0, Greenhouse Roof Window
 forestry:habitat_locator, Habitat Locator
 forestry:imprinter, Imprinter
 forestry:cart.beehouse:0, Minecart with Bee House
@@ -1802,19 +1787,17 @@ forestry:alveary.heater:0, Alveary Heater
 forestry:alveary.hygro:0, Alveary Hygroregulator
 forestry:alveary.stabiliser:0, Alveary Stabiliser
 forestry:alveary.sieve:0, Alveary Sieve
-forestry:bottler:0, Bottler
-forestry:carpenter:0, Carpenter
-forestry:centrifuge:0, Centrifuge
-forestry:fermenter:0, Fermenter
-forestry:moistener:0, Moistener
-forestry:squeezer:0, Squeezer
-forestry:still:0, Still
-forestry:rainmaker:0, Rainmaker
-forestry:fabricator:0, Thermionic Fabricator
-forestry:raintank:0, Rain Tank
-forestry:butterfly_chest:0, Lepidopterist's Chest
-forestry:cocoon:0, tile.for.cocoon.name
-forestry:cocoon.solid:0, tile.for.cocoon.solid.name
+forestry:greenhouse:0, Greenhouse Block
+forestry:greenhouse:3, Greenhouse Energy Distributor
+forestry:greenhouse:4, Greenhouse Control
+forestry:greenhouse:5, Greenhouse Screen
+forestry:climatiser:0, Greenhouse Hygroregulator
+forestry:climatiser:1, Greenhouse Heater
+forestry:climatiser:2, Greenhouse Fan
+forestry:climatiser:3, Greenhouse Humidifier
+forestry:climatiser:4, Greenhouse Dehumidifier
+forestry:greenhouse.window:0, Greenhouse Window
+forestry:greenhouse.window_up:0, Greenhouse Roof Window
 forestry:fluid.bio.ethanol, Ethanol
 forestry:fluid.biomass, Biomass
 forestry:fluid.for.honey, Honey
@@ -1825,6 +1808,23 @@ forestry:fluid.short.mead, Short Mead
 forestry:can, item.for.can.name
 forestry:capsule, item.for.capsule.name
 forestry:refractory, item.for.refractory.name
+forestry:genetic_filter:0, Genetic Filter
+forestry:butterfly_chest:0, Lepidopterist's Chest
+forestry:cocoon:0, tile.for.cocoon.name
+forestry:cocoon.solid:0, tile.for.cocoon.solid.name
+forestry:bottler:0, Bottler
+forestry:carpenter:0, Carpenter
+forestry:centrifuge:0, Centrifuge
+forestry:fermenter:0, Fermenter
+forestry:moistener:0, Moistener
+forestry:squeezer:0, Squeezer
+forestry:still:0, Still
+forestry:rainmaker:0, Rainmaker
+forestry:fabricator:0, Thermionic Fabricator
+forestry:raintank:0, Rain Tank
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
 enderstorage:ender_storage:0, Ender Chest
 enderstorage:ender_storage:1, Ender Tank
 enderstorage:ender_pouch, Ender Pouch
@@ -4173,15 +4173,6 @@ appliedenergistics2:facade:0, Cable Facade - Sipiri Leaves
 appliedenergistics2:facade:0, Cable Facade - Papaya Leaves
 appliedenergistics2:facade:0, Cable Facade - Date Palm Leaves
 appliedenergistics2:facade:0, Cable Facade - White Poplar Leaves
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Block
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Energy Distributor
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Control
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Screen
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Hygroregulator
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Heater
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Fan
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Humidifier
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Dehumidifier
 appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
 appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
 appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
@@ -4191,6 +4182,15 @@ appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
 appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
 appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
 appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Block
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Energy Distributor
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Control
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Screen
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Hygroregulator
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Heater
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Fan
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Humidifier
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Dehumidifier
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Pillar
 appliedenergistics2:facade:0, Cable Facade - Chiseled Certus Quartz Block
@@ -4411,6 +4411,9 @@ appliedenergistics2:facade:0, Cable Facade - Triton Subsurface Grunt
 appliedenergistics2:facade:0, Cable Facade - Triton Stone
 appliedenergistics2:facade:0, Cable Facade - Triton Geyser
 appliedenergistics2:facade:0, Cable Facade - Triton Small Geyser
+appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Dirt
+appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Grass
+appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Stone
 appliedenergistics2:facade:0, Cable Facade - Barnarda C Grass
 appliedenergistics2:facade:0, Cable Facade - Barnarda C Dirt
 appliedenergistics2:facade:0, Cable Facade - Barnarda C Stone
@@ -4436,9 +4439,6 @@ appliedenergistics2:facade:0, Cable Facade - Aluminum Ore
 appliedenergistics2:facade:0, Cable Facade - Quartz Ore
 appliedenergistics2:facade:0, Cable Facade - Cobalt Ore
 appliedenergistics2:facade:0, Cable Facade - Nickel Ore
-appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Dirt
-appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Grass
-appliedenergistics2:facade:0, Cable Facade - Tau Ceti F Stone
 appliedenergistics2:facade:0, Cable Facade - Proxima B Surface
 appliedenergistics2:facade:0, Cable Facade - Proxima B Subsurface
 appliedenergistics2:facade:0, Cable Facade - Proxima B Stone
@@ -7180,225 +7180,20 @@ appliedenergistics2:facade:0, Cable Facade - Mossy Dark Concrete Bricks
 appliedenergistics2:facade:0, Cable Facade - Chiseled Dark Concrete Bricks
 appliedenergistics2:facade:0, Cable Facade - Rubber Wood
 appliedenergistics2:facade:0, Cable Facade - Rubber Tree Leaves
-appliedenergistics2:facade:0, Cable Facade - Block of Scandium
-appliedenergistics2:facade:0, Cable Facade - Block of Seaborgium
-appliedenergistics2:facade:0, Cable Facade - Block of Selenium
-appliedenergistics2:facade:0, Cable Facade - Block of Silicon
-appliedenergistics2:facade:0, Cable Facade - Block of Silver
-appliedenergistics2:facade:0, Cable Facade - Block of Sodium
-appliedenergistics2:facade:0, Cable Facade - Block of Strontium
-appliedenergistics2:facade:0, Cable Facade - Block of Sulfur
-appliedenergistics2:facade:0, Cable Facade - Block of Tantalum
-appliedenergistics2:facade:0, Cable Facade - Block of Technetium
-appliedenergistics2:facade:0, Cable Facade - Block of Tellurium
-appliedenergistics2:facade:0, Cable Facade - Block of Tennessine
-appliedenergistics2:facade:0, Cable Facade - Block of Terbium
-appliedenergistics2:facade:0, Cable Facade - Block of Thorium
-appliedenergistics2:facade:0, Cable Facade - Block of Thallium
-appliedenergistics2:facade:0, Cable Facade - Block of Thulium
-appliedenergistics2:facade:0, Cable Facade - Block of Bauxite
-appliedenergistics2:facade:0, Cable Facade - Block of Invar
-appliedenergistics2:facade:0, Cable Facade - Block of Kanthal
-appliedenergistics2:facade:0, Cable Facade - Block of Lazurite
-appliedenergistics2:facade:0, Cable Facade - Block of Magnalium
-appliedenergistics2:facade:0, Cable Facade - Block of Magnesite
-appliedenergistics2:facade:0, Cable Facade - Block of Magnetite
-appliedenergistics2:facade:0, Cable Facade - Block of Molybdenite
-appliedenergistics2:facade:0, Cable Facade - Block of Nichrome
-appliedenergistics2:facade:0, Cable Facade - Block of Niobium Nitride
-appliedenergistics2:facade:0, Cable Facade - Block of Niobium-Titanium
-appliedenergistics2:facade:0, Cable Facade - Block of Obsidian
-appliedenergistics2:facade:0, Cable Facade - Block of Phosphate
-appliedenergistics2:facade:0, Cable Facade - Block of Pig Iron
-appliedenergistics2:facade:0, Cable Facade - Block of Polyethylene (PE)
-appliedenergistics2:facade:0, Cable Facade - Block of Epoxy Resin
-appliedenergistics2:facade:0, Cable Facade - Block of Enargite
-appliedenergistics2:facade:0, Cable Facade - Block of Tennantite
-appliedenergistics2:facade:0, Cable Facade - Block of Gallium Arsenide
-appliedenergistics2:facade:0, Cable Facade - Block of Potash
-appliedenergistics2:facade:0, Cable Facade - Block of Soda Ash
-appliedenergistics2:facade:0, Cable Facade - Block of Indium Gallium Phosphide
-appliedenergistics2:facade:0, Cable Facade - Block of Nickel Zinc Ferrite
-appliedenergistics2:facade:0, Cable Facade - Block of Silicon Dioxide
-appliedenergistics2:facade:0, Cable Facade - Block of Magnesium Chloride
-appliedenergistics2:facade:0, Cable Facade - Block of Sodium Sulfide
-appliedenergistics2:facade:0, Cable Facade - Block of Phosphorus Pentoxide
-appliedenergistics2:facade:0, Cable Facade - Block of Quicklime
-appliedenergistics2:facade:0, Cable Facade - Block of Sodium Bisulfate
-appliedenergistics2:facade:0, Cable Facade - Block of Ferrite Mixture
-appliedenergistics2:facade:0, Cable Facade - Block of Magnesia
-appliedenergistics2:facade:0, Cable Facade - Block of Platinum Group Sludge
-appliedenergistics2:facade:0, Cable Facade - Block of Sugar
-appliedenergistics2:facade:0, Cable Facade - Block of Vinteum
-appliedenergistics2:facade:0, Cable Facade - Block of Redrock
-appliedenergistics2:facade:0, Cable Facade - Block of Potassium Feldspar
-appliedenergistics2:facade:0, Cable Facade - Block of Biotite
-appliedenergistics2:facade:0, Cable Facade - Block of Black Granite
-appliedenergistics2:facade:0, Cable Facade - Block of Chrysotile
-appliedenergistics2:facade:0, Cable Facade - Block of Realgar
-appliedenergistics2:facade:0, Cable Facade - Block of Vanadium Magnetite
-appliedenergistics2:facade:0, Cable Facade - Block of Basaltic Mineral Sand
-appliedenergistics2:facade:0, Cable Facade - Block of Granitic Mineral Sand
-appliedenergistics2:facade:0, Cable Facade - Block of Garnet Sand
-appliedenergistics2:facade:0, Cable Facade - Block of Quartz Sand
-appliedenergistics2:facade:0, Cable Facade - Block of Bastnasite
-appliedenergistics2:facade:0, Cable Facade - Block of Pentlandite
-appliedenergistics2:facade:0, Cable Facade - Block of Fireclay
-appliedenergistics2:facade:0, Cable Facade - Block of Coke
-appliedenergistics2:facade:0, Cable Facade - Block of Soldering Alloy
-appliedenergistics2:facade:0, Cable Facade - Block of Spessartine
-appliedenergistics2:facade:0, Cable Facade - Block of Sphalerite
-appliedenergistics2:facade:0, Cable Facade - Block of Stainless Steel
-appliedenergistics2:facade:0, Cable Facade - Block of Steel
-appliedenergistics2:facade:0, Cable Facade - Block of Stibnite
-appliedenergistics2:facade:0, Cable Facade - Block of Tanzanite
-appliedenergistics2:facade:0, Cable Facade - Block of Tetrahedrite
-appliedenergistics2:facade:0, Cable Facade - Block of Tin Alloy
-appliedenergistics2:facade:0, Cable Facade - Block of Topaz
-appliedenergistics2:facade:0, Cable Facade - Block of Tungstate
-appliedenergistics2:facade:0, Cable Facade - Block of Ultimet
-appliedenergistics2:facade:0, Cable Facade - Block of Uraninite
-appliedenergistics2:facade:0, Cable Facade - Block of Uvarovite
-appliedenergistics2:facade:0, Cable Facade - Block of HSS-S
-appliedenergistics2:facade:0, Cable Facade - Block of Diamericium Titanium
-appliedenergistics2:facade:0, Cable Facade - Block of Potin
-appliedenergistics2:facade:0, Cable Facade - Block of Naquadah
-appliedenergistics2:facade:0, Cable Facade - Block of Naquadah Alloy
-appliedenergistics2:facade:0, Cable Facade - Block of Enriched Naquadah
-appliedenergistics2:facade:0, Cable Facade - Block of Naquadria
-appliedenergistics2:facade:0, Cable Facade - Block of Neutronium
-appliedenergistics2:facade:0, Cable Facade - Block of Tritanium
-appliedenergistics2:facade:0, Cable Facade - Block of Duranium
-appliedenergistics2:facade:0, Cable Facade - Block of Trinium
-appliedenergistics2:facade:0, Cable Facade - Block of Adamantium
-appliedenergistics2:facade:0, Cable Facade - Block of Vibranium
-appliedenergistics2:facade:0, Cable Facade - Block of Taranium
-appliedenergistics2:facade:0, Cable Facade - Block of Fluxed Electrum
-appliedenergistics2:facade:0, Cable Facade - Block of Tin
-appliedenergistics2:facade:0, Cable Facade - Block of Titanium
-appliedenergistics2:facade:0, Cable Facade - Block of Tungsten
-appliedenergistics2:facade:0, Cable Facade - Block of Uranium 238
-appliedenergistics2:facade:0, Cable Facade - Block of Uranium 235
-appliedenergistics2:facade:0, Cable Facade - Block of Vanadium
-appliedenergistics2:facade:0, Cable Facade - Block of Ytterbium
-appliedenergistics2:facade:0, Cable Facade - Block of Yttrium
-appliedenergistics2:facade:0, Cable Facade - Block of Zinc
-appliedenergistics2:facade:0, Cable Facade - Block of Zirconium
-appliedenergistics2:facade:0, Cable Facade - Block of Almandine
-appliedenergistics2:facade:0, Cable Facade - Block of Andradite
-appliedenergistics2:facade:0, Cable Facade - Block of Annealed Copper
-appliedenergistics2:facade:0, Cable Facade - Block of Asbestos
-appliedenergistics2:facade:0, Cable Facade - Block of Erbium
-appliedenergistics2:facade:0, Cable Facade - Block of Europium
-appliedenergistics2:facade:0, Cable Facade - Block of Fermium
-appliedenergistics2:facade:0, Cable Facade - Block of Flerovium
-appliedenergistics2:facade:0, Cable Facade - Block of Francium
-appliedenergistics2:facade:0, Cable Facade - Block of Gadolinium
-appliedenergistics2:facade:0, Cable Facade - Block of Gallium
-appliedenergistics2:facade:0, Cable Facade - Block of Germanium
-appliedenergistics2:facade:0, Cable Facade - Block of Hafnium
-appliedenergistics2:facade:0, Cable Facade - Block of Hassium
-appliedenergistics2:facade:0, Cable Facade - Block of Holmium
-appliedenergistics2:facade:0, Cable Facade - Block of Platinum
-appliedenergistics2:facade:0, Cable Facade - Block of Plutonium 239
-appliedenergistics2:facade:0, Cable Facade - Block of Plutonium 241
-appliedenergistics2:facade:0, Cable Facade - Block of Potassium
-appliedenergistics2:facade:0, Cable Facade - Block of Praseodymium
-appliedenergistics2:facade:0, Cable Facade - Block of Promethium
-appliedenergistics2:facade:0, Cable Facade - Block of Protactinium
-appliedenergistics2:facade:0, Cable Facade - Block of Radium
-appliedenergistics2:facade:0, Cable Facade - Block of Rhenium
-appliedenergistics2:facade:0, Cable Facade - Block of Rhodium
-appliedenergistics2:facade:0, Cable Facade - Block of Roentgenium
-appliedenergistics2:facade:0, Cable Facade - Block of Rubidium
-appliedenergistics2:facade:0, Cable Facade - Block of Ruthenium
-appliedenergistics2:facade:0, Cable Facade - Block of Rutherfordium
-appliedenergistics2:facade:0, Cable Facade - Block of Samarium
-appliedenergistics2:facade:0, Cable Facade - Block of Alunite
-appliedenergistics2:facade:0, Cable Facade - Block of Dolomite
-appliedenergistics2:facade:0, Cable Facade - Block of Wollastonite
-appliedenergistics2:facade:0, Cable Facade - Block of Zeolite
-appliedenergistics2:facade:0, Cable Facade - Block of Kyanite
-appliedenergistics2:facade:0, Cable Facade - Block of Kaolinite
-appliedenergistics2:facade:0, Cable Facade - Block of Talc
-appliedenergistics2:facade:0, Cable Facade - Block of Soapstone
-appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Iron
-appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Steel
-appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Neodymium
-appliedenergistics2:facade:0, Cable Facade - Block of Tungstencarbide
-appliedenergistics2:facade:0, Cable Facade - Block of Vanadiumsteel
-appliedenergistics2:facade:0, Cable Facade - Block of HSS-G
-appliedenergistics2:facade:0, Cable Facade - Block of HSS-E
-appliedenergistics2:facade:0, Cable Facade - Block of Polysiloxane
-appliedenergistics2:facade:0, Cable Facade - Block of Polycaprolactam
-appliedenergistics2:facade:0, Cable Facade - Block of Polytetrafluoroethylene (PTFE)
-appliedenergistics2:facade:0, Cable Facade - Block of Powellite
-appliedenergistics2:facade:0, Cable Facade - Block of Pyrite
-appliedenergistics2:facade:0, Cable Facade - Block of Pyrolusite
-appliedenergistics2:facade:0, Cable Facade - Block of Pyrope
-appliedenergistics2:facade:0, Cable Facade - Block of Rock Salt
-appliedenergistics2:facade:0, Cable Facade - Block of Rubber
-appliedenergistics2:facade:0, Cable Facade - Block of Ruby
-appliedenergistics2:facade:0, Cable Facade - Block of Salt
-appliedenergistics2:facade:0, Cable Facade - Block of Saltpeter
-appliedenergistics2:facade:0, Cable Facade - Block of Sapphire
-appliedenergistics2:facade:0, Cable Facade - Block of Scheelite
-appliedenergistics2:facade:0, Cable Facade - Block of Sodalite
-appliedenergistics2:facade:0, Cable Facade - Block of Olivine
-appliedenergistics2:facade:0, Cable Facade - Block of Opal
-appliedenergistics2:facade:0, Cable Facade - Block of Amethyst
-appliedenergistics2:facade:0, Cable Facade - Block of Enderpearl
-appliedenergistics2:facade:0, Cable Facade - Block of Endereye
-appliedenergistics2:facade:0, Cable Facade - Block of Flint
-appliedenergistics2:facade:0, Cable Facade - Block of Diatomite
-appliedenergistics2:facade:0, Cable Facade - Block of Niter
-appliedenergistics2:facade:0, Cable Facade - Block of Tantalite
-appliedenergistics2:facade:0, Cable Facade - Block of Apatite
-appliedenergistics2:facade:0, Cable Facade - Block of Sterling Silver
-appliedenergistics2:facade:0, Cable Facade - Block of Rose Gold
-appliedenergistics2:facade:0, Cable Facade - Block of Black Bronze
-appliedenergistics2:facade:0, Cable Facade - Block of Hydrated Coal
-appliedenergistics2:facade:0, Cable Facade - Block of Sodium Bicarbonate
-appliedenergistics2:facade:0, Cable Facade - Block of Potassium Dichromate
-appliedenergistics2:facade:0, Cable Facade - Block of Chromium Trioxide
-appliedenergistics2:facade:0, Cable Facade - Block of Antimony Trioxide
-appliedenergistics2:facade:0, Cable Facade - Block of Zincite
-appliedenergistics2:facade:0, Cable Facade - Block of Cupric Oxide
-appliedenergistics2:facade:0, Cable Facade - Block of Cobalt Oxide
-appliedenergistics2:facade:0, Cable Facade - Block of Arsenic Trioxide
-appliedenergistics2:facade:0, Cable Facade - Block of Massicot
-appliedenergistics2:facade:0, Cable Facade - Block of Ferrosilite
-appliedenergistics2:facade:0, Cable Facade - Block of Metal Mixture
-appliedenergistics2:facade:0, Cable Facade - Block of Sodium Hydroxide
-appliedenergistics2:facade:0, Cable Facade - Block of Ashes
-appliedenergistics2:facade:0, Cable Facade - Block of Banded Iron
-appliedenergistics2:facade:0, Cable Facade - Block of Battery Alloy
-appliedenergistics2:facade:0, Cable Facade - Block of Blue Topaz
-appliedenergistics2:facade:0, Cable Facade - Block of Brass
-appliedenergistics2:facade:0, Cable Facade - Block of Bronze
-appliedenergistics2:facade:0, Cable Facade - Block of Brown Limonite
-appliedenergistics2:facade:0, Cable Facade - Block of Calcite
-appliedenergistics2:facade:0, Cable Facade - Block of Cassiterite
-appliedenergistics2:facade:0, Cable Facade - Block of Cassiterite Sand
-appliedenergistics2:facade:0, Cable Facade - Block of Chalcopyrite
-appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
-appliedenergistics2:facade:0, Cable Facade - Block of Chromite
-appliedenergistics2:facade:0, Cable Facade - Block of Cinnabar
-appliedenergistics2:facade:0, Cable Facade - Block of Vanadium-Gallium
-appliedenergistics2:facade:0, Cable Facade - Block of Wrought Iron
-appliedenergistics2:facade:0, Cable Facade - Block of Wulfenite
-appliedenergistics2:facade:0, Cable Facade - Block of Yellow Limonite
-appliedenergistics2:facade:0, Cable Facade - Block of Yttrium Barium Cuprate
-appliedenergistics2:facade:0, Cable Facade - Block of Certus Quartz
-appliedenergistics2:facade:0, Cable Facade - Block of Quartzite
-appliedenergistics2:facade:0, Cable Facade - Block of Graphite
-appliedenergistics2:facade:0, Cable Facade - Block of Graphene
-appliedenergistics2:facade:0, Cable Facade - Block of Jasper
-appliedenergistics2:facade:0, Cable Facade - Block of Osmiridium
-appliedenergistics2:facade:0, Cable Facade - Block of Tenorite
-appliedenergistics2:facade:0, Cable Facade - Block of Cuprite
-appliedenergistics2:facade:0, Cable Facade - Block of Bornite
-appliedenergistics2:facade:0, Cable Facade - Block of Chalcocite
+appliedenergistics2:facade:0, Cable Facade - Block of Calcium
+appliedenergistics2:facade:0, Cable Facade - Block of Californium
+appliedenergistics2:facade:0, Cable Facade - Block of Carbon
+appliedenergistics2:facade:0, Cable Facade - Block of Cadmium
+appliedenergistics2:facade:0, Cable Facade - Block of Cerium
+appliedenergistics2:facade:0, Cable Facade - Block of Chrome
+appliedenergistics2:facade:0, Cable Facade - Block of Cobalt
+appliedenergistics2:facade:0, Cable Facade - Block of Copernicium
+appliedenergistics2:facade:0, Cable Facade - Block of Copper
+appliedenergistics2:facade:0, Cable Facade - Block of Curium
+appliedenergistics2:facade:0, Cable Facade - Block of Darmstadtium
+appliedenergistics2:facade:0, Cable Facade - Block of Dubnium
+appliedenergistics2:facade:0, Cable Facade - Block of Dysprosium
+appliedenergistics2:facade:0, Cable Facade - Block of Einsteinium
 appliedenergistics2:facade:0, Cable Facade - Block of Silicone Rubber
 appliedenergistics2:facade:0, Cable Facade - Block of Polystyrene
 appliedenergistics2:facade:0, Cable Facade - Block of Raw Styrene-Butadiene Rubber
@@ -7426,6 +7221,168 @@ appliedenergistics2:facade:0, Cable Facade - Block of Mica
 appliedenergistics2:facade:0, Cable Facade - Block of Trona
 appliedenergistics2:facade:0, Cable Facade - Block of Barite
 appliedenergistics2:facade:0, Cable Facade - Block of Gypsum
+appliedenergistics2:facade:0, Cable Facade - Block of Platinum
+appliedenergistics2:facade:0, Cable Facade - Block of Plutonium 239
+appliedenergistics2:facade:0, Cable Facade - Block of Plutonium 241
+appliedenergistics2:facade:0, Cable Facade - Block of Potassium
+appliedenergistics2:facade:0, Cable Facade - Block of Praseodymium
+appliedenergistics2:facade:0, Cable Facade - Block of Promethium
+appliedenergistics2:facade:0, Cable Facade - Block of Protactinium
+appliedenergistics2:facade:0, Cable Facade - Block of Radium
+appliedenergistics2:facade:0, Cable Facade - Block of Rhenium
+appliedenergistics2:facade:0, Cable Facade - Block of Rhodium
+appliedenergistics2:facade:0, Cable Facade - Block of Roentgenium
+appliedenergistics2:facade:0, Cable Facade - Block of Rubidium
+appliedenergistics2:facade:0, Cable Facade - Block of Ruthenium
+appliedenergistics2:facade:0, Cable Facade - Block of Rutherfordium
+appliedenergistics2:facade:0, Cable Facade - Block of Samarium
+appliedenergistics2:facade:0, Cable Facade - Block of HSS-S
+appliedenergistics2:facade:0, Cable Facade - Block of Diamericium Titanium
+appliedenergistics2:facade:0, Cable Facade - Block of Potin
+appliedenergistics2:facade:0, Cable Facade - Block of Naquadah
+appliedenergistics2:facade:0, Cable Facade - Block of Naquadah Alloy
+appliedenergistics2:facade:0, Cable Facade - Block of Enriched Naquadah
+appliedenergistics2:facade:0, Cable Facade - Block of Naquadria
+appliedenergistics2:facade:0, Cable Facade - Block of Neutronium
+appliedenergistics2:facade:0, Cable Facade - Block of Tritanium
+appliedenergistics2:facade:0, Cable Facade - Block of Duranium
+appliedenergistics2:facade:0, Cable Facade - Block of Trinium
+appliedenergistics2:facade:0, Cable Facade - Block of Adamantium
+appliedenergistics2:facade:0, Cable Facade - Block of Vibranium
+appliedenergistics2:facade:0, Cable Facade - Block of Taranium
+appliedenergistics2:facade:0, Cable Facade - Block of Fluxed Electrum
+appliedenergistics2:facade:0, Cable Facade - Block of Alunite
+appliedenergistics2:facade:0, Cable Facade - Block of Dolomite
+appliedenergistics2:facade:0, Cable Facade - Block of Wollastonite
+appliedenergistics2:facade:0, Cable Facade - Block of Zeolite
+appliedenergistics2:facade:0, Cable Facade - Block of Kyanite
+appliedenergistics2:facade:0, Cable Facade - Block of Kaolinite
+appliedenergistics2:facade:0, Cable Facade - Block of Talc
+appliedenergistics2:facade:0, Cable Facade - Block of Soapstone
+appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Iron
+appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Steel
+appliedenergistics2:facade:0, Cable Facade - Block of Magnetic Neodymium
+appliedenergistics2:facade:0, Cable Facade - Block of Tungstencarbide
+appliedenergistics2:facade:0, Cable Facade - Block of Vanadiumsteel
+appliedenergistics2:facade:0, Cable Facade - Block of HSS-G
+appliedenergistics2:facade:0, Cable Facade - Block of HSS-E
+appliedenergistics2:facade:0, Cable Facade - Block of Sugar
+appliedenergistics2:facade:0, Cable Facade - Block of Vinteum
+appliedenergistics2:facade:0, Cable Facade - Block of Redrock
+appliedenergistics2:facade:0, Cable Facade - Block of Potassium Feldspar
+appliedenergistics2:facade:0, Cable Facade - Block of Biotite
+appliedenergistics2:facade:0, Cable Facade - Block of Black Granite
+appliedenergistics2:facade:0, Cable Facade - Block of Chrysotile
+appliedenergistics2:facade:0, Cable Facade - Block of Realgar
+appliedenergistics2:facade:0, Cable Facade - Block of Vanadium Magnetite
+appliedenergistics2:facade:0, Cable Facade - Block of Basaltic Mineral Sand
+appliedenergistics2:facade:0, Cable Facade - Block of Granitic Mineral Sand
+appliedenergistics2:facade:0, Cable Facade - Block of Garnet Sand
+appliedenergistics2:facade:0, Cable Facade - Block of Quartz Sand
+appliedenergistics2:facade:0, Cable Facade - Block of Bastnasite
+appliedenergistics2:facade:0, Cable Facade - Block of Pentlandite
+appliedenergistics2:facade:0, Cable Facade - Block of Ashes
+appliedenergistics2:facade:0, Cable Facade - Block of Banded Iron
+appliedenergistics2:facade:0, Cable Facade - Block of Battery Alloy
+appliedenergistics2:facade:0, Cable Facade - Block of Blue Topaz
+appliedenergistics2:facade:0, Cable Facade - Block of Brass
+appliedenergistics2:facade:0, Cable Facade - Block of Bronze
+appliedenergistics2:facade:0, Cable Facade - Block of Brown Limonite
+appliedenergistics2:facade:0, Cable Facade - Block of Calcite
+appliedenergistics2:facade:0, Cable Facade - Block of Cassiterite
+appliedenergistics2:facade:0, Cable Facade - Block of Cassiterite Sand
+appliedenergistics2:facade:0, Cable Facade - Block of Chalcopyrite
+appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
+appliedenergistics2:facade:0, Cable Facade - Block of Chromite
+appliedenergistics2:facade:0, Cable Facade - Block of Cinnabar
+appliedenergistics2:facade:0, Cable Facade - Block of Bauxite
+appliedenergistics2:facade:0, Cable Facade - Block of Invar
+appliedenergistics2:facade:0, Cable Facade - Block of Kanthal
+appliedenergistics2:facade:0, Cable Facade - Block of Lazurite
+appliedenergistics2:facade:0, Cable Facade - Block of Magnalium
+appliedenergistics2:facade:0, Cable Facade - Block of Magnesite
+appliedenergistics2:facade:0, Cable Facade - Block of Magnetite
+appliedenergistics2:facade:0, Cable Facade - Block of Molybdenite
+appliedenergistics2:facade:0, Cable Facade - Block of Nichrome
+appliedenergistics2:facade:0, Cable Facade - Block of Niobium Nitride
+appliedenergistics2:facade:0, Cable Facade - Block of Niobium-Titanium
+appliedenergistics2:facade:0, Cable Facade - Block of Obsidian
+appliedenergistics2:facade:0, Cable Facade - Block of Phosphate
+appliedenergistics2:facade:0, Cable Facade - Block of Pig Iron
+appliedenergistics2:facade:0, Cable Facade - Block of Polyethylene (PE)
+appliedenergistics2:facade:0, Cable Facade - Block of Epoxy Resin
+appliedenergistics2:facade:0, Cable Facade - Block of Vanadium-Gallium
+appliedenergistics2:facade:0, Cable Facade - Block of Wrought Iron
+appliedenergistics2:facade:0, Cable Facade - Block of Wulfenite
+appliedenergistics2:facade:0, Cable Facade - Block of Yellow Limonite
+appliedenergistics2:facade:0, Cable Facade - Block of Yttrium Barium Cuprate
+appliedenergistics2:facade:0, Cable Facade - Block of Certus Quartz
+appliedenergistics2:facade:0, Cable Facade - Block of Quartzite
+appliedenergistics2:facade:0, Cable Facade - Block of Graphite
+appliedenergistics2:facade:0, Cable Facade - Block of Graphene
+appliedenergistics2:facade:0, Cable Facade - Block of Jasper
+appliedenergistics2:facade:0, Cable Facade - Block of Osmiridium
+appliedenergistics2:facade:0, Cable Facade - Block of Tenorite
+appliedenergistics2:facade:0, Cable Facade - Block of Cuprite
+appliedenergistics2:facade:0, Cable Facade - Block of Bornite
+appliedenergistics2:facade:0, Cable Facade - Block of Chalcocite
+appliedenergistics2:facade:0, Cable Facade - Block of Indium
+appliedenergistics2:facade:0, Cable Facade - Block of Iodine
+appliedenergistics2:facade:0, Cable Facade - Block of Iridium
+appliedenergistics2:facade:0, Cable Facade - Block of Lanthanum
+appliedenergistics2:facade:0, Cable Facade - Block of Lawrencium
+appliedenergistics2:facade:0, Cable Facade - Block of Lead
+appliedenergistics2:facade:0, Cable Facade - Block of Lithium
+appliedenergistics2:facade:0, Cable Facade - Block of Livermorium
+appliedenergistics2:facade:0, Cable Facade - Block of Lutetium
+appliedenergistics2:facade:0, Cable Facade - Block of Magnesium
+appliedenergistics2:facade:0, Cable Facade - Block of Mendelevium
+appliedenergistics2:facade:0, Cable Facade - Block of Manganese
+appliedenergistics2:facade:0, Cable Facade - Block of Meitnerium
+appliedenergistics2:facade:0, Cable Facade - Block of Cobaltite
+appliedenergistics2:facade:0, Cable Facade - Block of Sheldonite
+appliedenergistics2:facade:0, Cable Facade - Block of Cupronickel
+appliedenergistics2:facade:0, Cable Facade - Block of Dark Ashes
+appliedenergistics2:facade:0, Cable Facade - Block of Electrum
+appliedenergistics2:facade:0, Cable Facade - Block of Galena
+appliedenergistics2:facade:0, Cable Facade - Block of Garnierite
+appliedenergistics2:facade:0, Cable Facade - Block of Green Sapphire
+appliedenergistics2:facade:0, Cable Facade - Block of Grossular
+appliedenergistics2:facade:0, Cable Facade - Block of Ilmenite
+appliedenergistics2:facade:0, Cable Facade - Block of Rutile
+appliedenergistics2:facade:0, Cable Facade - Block of Erbium
+appliedenergistics2:facade:0, Cable Facade - Block of Europium
+appliedenergistics2:facade:0, Cable Facade - Block of Fermium
+appliedenergistics2:facade:0, Cable Facade - Block of Flerovium
+appliedenergistics2:facade:0, Cable Facade - Block of Francium
+appliedenergistics2:facade:0, Cable Facade - Block of Gadolinium
+appliedenergistics2:facade:0, Cable Facade - Block of Gallium
+appliedenergistics2:facade:0, Cable Facade - Block of Germanium
+appliedenergistics2:facade:0, Cable Facade - Block of Hafnium
+appliedenergistics2:facade:0, Cable Facade - Block of Hassium
+appliedenergistics2:facade:0, Cable Facade - Block of Holmium
+appliedenergistics2:facade:0, Cable Facade - Block of Paper
+appliedenergistics2:facade:0, Cable Facade - Block of Rare Earth
+appliedenergistics2:facade:0, Cable Facade - Block of Nether Star
+appliedenergistics2:facade:0, Cable Facade - Block of Collagen
+appliedenergistics2:facade:0, Cable Facade - Block of Gelatin
+appliedenergistics2:facade:0, Cable Facade - Block of Agar
+appliedenergistics2:facade:0, Cable Facade - Block of Perlite
+appliedenergistics2:facade:0, Cable Facade - Block of Borax
+appliedenergistics2:facade:0, Cable Facade - Block of Lignite Coal
+appliedenergistics2:facade:0, Cable Facade - Block of Olivine
+appliedenergistics2:facade:0, Cable Facade - Block of Opal
+appliedenergistics2:facade:0, Cable Facade - Block of Amethyst
+appliedenergistics2:facade:0, Cable Facade - Block of Enderpearl
+appliedenergistics2:facade:0, Cable Facade - Block of Endereye
+appliedenergistics2:facade:0, Cable Facade - Block of Flint
+appliedenergistics2:facade:0, Cable Facade - Block of Diatomite
+appliedenergistics2:facade:0, Cable Facade - Block of Niter
+appliedenergistics2:facade:0, Cable Facade - Block of Tantalite
+appliedenergistics2:facade:0, Cable Facade - Block of Apatite
+appliedenergistics2:facade:0, Cable Facade - Block of Sterling Silver
+appliedenergistics2:facade:0, Cable Facade - Block of Rose Gold
+appliedenergistics2:facade:0, Cable Facade - Block of Black Bronze
 appliedenergistics2:facade:0, Cable Facade - Block of Bismuth Bronze
 appliedenergistics2:facade:0, Cable Facade - Block of Black Steel
 appliedenergistics2:facade:0, Cable Facade - Block of Red Steel
@@ -7441,43 +7398,22 @@ appliedenergistics2:facade:0, Cable Facade - Block of Diorite
 appliedenergistics2:facade:0, Cable Facade - Block of Granite
 appliedenergistics2:facade:0, Cable Facade - Block of Red Garnet
 appliedenergistics2:facade:0, Cable Facade - Block of Yellow Garnet
-appliedenergistics2:facade:0, Cable Facade - Block of Cobaltite
-appliedenergistics2:facade:0, Cable Facade - Block of Sheldonite
-appliedenergistics2:facade:0, Cable Facade - Block of Cupronickel
-appliedenergistics2:facade:0, Cable Facade - Block of Dark Ashes
-appliedenergistics2:facade:0, Cable Facade - Block of Electrum
-appliedenergistics2:facade:0, Cable Facade - Block of Galena
-appliedenergistics2:facade:0, Cable Facade - Block of Garnierite
-appliedenergistics2:facade:0, Cable Facade - Block of Green Sapphire
-appliedenergistics2:facade:0, Cable Facade - Block of Grossular
-appliedenergistics2:facade:0, Cable Facade - Block of Ilmenite
-appliedenergistics2:facade:0, Cable Facade - Block of Rutile
-appliedenergistics2:facade:0, Cable Facade - Block of Molybdenum
-appliedenergistics2:facade:0, Cable Facade - Block of Moscovium
-appliedenergistics2:facade:0, Cable Facade - Block of Neodymium
-appliedenergistics2:facade:0, Cable Facade - Block of Neptunium
-appliedenergistics2:facade:0, Cable Facade - Block of Nickel
-appliedenergistics2:facade:0, Cable Facade - Block of Nihonium
-appliedenergistics2:facade:0, Cable Facade - Block of Niobium
-appliedenergistics2:facade:0, Cable Facade - Block of Nobelium
-appliedenergistics2:facade:0, Cable Facade - Block of Oganesson
-appliedenergistics2:facade:0, Cable Facade - Block of Osmium
-appliedenergistics2:facade:0, Cable Facade - Block of Palladium
-appliedenergistics2:facade:0, Cable Facade - Block of Phosphorus
-appliedenergistics2:facade:0, Cable Facade - Block of Polonium
-appliedenergistics2:facade:0, Cable Facade - Block of Indium
-appliedenergistics2:facade:0, Cable Facade - Block of Iodine
-appliedenergistics2:facade:0, Cable Facade - Block of Iridium
-appliedenergistics2:facade:0, Cable Facade - Block of Lanthanum
-appliedenergistics2:facade:0, Cable Facade - Block of Lawrencium
-appliedenergistics2:facade:0, Cable Facade - Block of Lead
-appliedenergistics2:facade:0, Cable Facade - Block of Lithium
-appliedenergistics2:facade:0, Cable Facade - Block of Livermorium
-appliedenergistics2:facade:0, Cable Facade - Block of Lutetium
-appliedenergistics2:facade:0, Cable Facade - Block of Magnesium
-appliedenergistics2:facade:0, Cable Facade - Block of Mendelevium
-appliedenergistics2:facade:0, Cable Facade - Block of Manganese
-appliedenergistics2:facade:0, Cable Facade - Block of Meitnerium
+appliedenergistics2:facade:0, Cable Facade - Block of Fireclay
+appliedenergistics2:facade:0, Cable Facade - Block of Coke
+appliedenergistics2:facade:0, Cable Facade - Block of Soldering Alloy
+appliedenergistics2:facade:0, Cable Facade - Block of Spessartine
+appliedenergistics2:facade:0, Cable Facade - Block of Sphalerite
+appliedenergistics2:facade:0, Cable Facade - Block of Stainless Steel
+appliedenergistics2:facade:0, Cable Facade - Block of Steel
+appliedenergistics2:facade:0, Cable Facade - Block of Stibnite
+appliedenergistics2:facade:0, Cable Facade - Block of Tanzanite
+appliedenergistics2:facade:0, Cable Facade - Block of Tetrahedrite
+appliedenergistics2:facade:0, Cable Facade - Block of Tin Alloy
+appliedenergistics2:facade:0, Cable Facade - Block of Topaz
+appliedenergistics2:facade:0, Cable Facade - Block of Tungstate
+appliedenergistics2:facade:0, Cable Facade - Block of Ultimet
+appliedenergistics2:facade:0, Cable Facade - Block of Uraninite
+appliedenergistics2:facade:0, Cable Facade - Block of Uvarovite
 appliedenergistics2:facade:0, Cable Facade - Block of Actinium
 appliedenergistics2:facade:0, Cable Facade - Block of Aluminium
 appliedenergistics2:facade:0, Cable Facade - Block of Americium
@@ -7491,46 +7427,110 @@ appliedenergistics2:facade:0, Cable Facade - Block of Bismuth
 appliedenergistics2:facade:0, Cable Facade - Block of Bohrium
 appliedenergistics2:facade:0, Cable Facade - Block of Boron
 appliedenergistics2:facade:0, Cable Facade - Block of Caesium
+appliedenergistics2:facade:0, Cable Facade - Block of Tin
+appliedenergistics2:facade:0, Cable Facade - Block of Titanium
+appliedenergistics2:facade:0, Cable Facade - Block of Tungsten
+appliedenergistics2:facade:0, Cable Facade - Block of Uranium 238
+appliedenergistics2:facade:0, Cable Facade - Block of Uranium 235
+appliedenergistics2:facade:0, Cable Facade - Block of Vanadium
+appliedenergistics2:facade:0, Cable Facade - Block of Ytterbium
+appliedenergistics2:facade:0, Cable Facade - Block of Yttrium
+appliedenergistics2:facade:0, Cable Facade - Block of Zinc
+appliedenergistics2:facade:0, Cable Facade - Block of Zirconium
+appliedenergistics2:facade:0, Cable Facade - Block of Almandine
+appliedenergistics2:facade:0, Cable Facade - Block of Andradite
+appliedenergistics2:facade:0, Cable Facade - Block of Annealed Copper
+appliedenergistics2:facade:0, Cable Facade - Block of Asbestos
+appliedenergistics2:facade:0, Cable Facade - Block of Hydrated Coal
+appliedenergistics2:facade:0, Cable Facade - Block of Sodium Bicarbonate
+appliedenergistics2:facade:0, Cable Facade - Block of Potassium Dichromate
+appliedenergistics2:facade:0, Cable Facade - Block of Chromium Trioxide
+appliedenergistics2:facade:0, Cable Facade - Block of Antimony Trioxide
+appliedenergistics2:facade:0, Cable Facade - Block of Zincite
+appliedenergistics2:facade:0, Cable Facade - Block of Cupric Oxide
+appliedenergistics2:facade:0, Cable Facade - Block of Cobalt Oxide
+appliedenergistics2:facade:0, Cable Facade - Block of Arsenic Trioxide
+appliedenergistics2:facade:0, Cable Facade - Block of Massicot
+appliedenergistics2:facade:0, Cable Facade - Block of Ferrosilite
+appliedenergistics2:facade:0, Cable Facade - Block of Metal Mixture
+appliedenergistics2:facade:0, Cable Facade - Block of Sodium Hydroxide
+appliedenergistics2:facade:0, Cable Facade - Block of Polysiloxane
+appliedenergistics2:facade:0, Cable Facade - Block of Polycaprolactam
+appliedenergistics2:facade:0, Cable Facade - Block of Polytetrafluoroethylene (PTFE)
+appliedenergistics2:facade:0, Cable Facade - Block of Powellite
+appliedenergistics2:facade:0, Cable Facade - Block of Pyrite
+appliedenergistics2:facade:0, Cable Facade - Block of Pyrolusite
+appliedenergistics2:facade:0, Cable Facade - Block of Pyrope
+appliedenergistics2:facade:0, Cable Facade - Block of Rock Salt
+appliedenergistics2:facade:0, Cable Facade - Block of Rubber
+appliedenergistics2:facade:0, Cable Facade - Block of Ruby
+appliedenergistics2:facade:0, Cable Facade - Block of Salt
+appliedenergistics2:facade:0, Cable Facade - Block of Saltpeter
+appliedenergistics2:facade:0, Cable Facade - Block of Sapphire
+appliedenergistics2:facade:0, Cable Facade - Block of Scheelite
+appliedenergistics2:facade:0, Cable Facade - Block of Sodalite
+appliedenergistics2:facade:0, Cable Facade - Block of Scandium
+appliedenergistics2:facade:0, Cable Facade - Block of Seaborgium
+appliedenergistics2:facade:0, Cable Facade - Block of Selenium
+appliedenergistics2:facade:0, Cable Facade - Block of Silicon
+appliedenergistics2:facade:0, Cable Facade - Block of Silver
+appliedenergistics2:facade:0, Cable Facade - Block of Sodium
+appliedenergistics2:facade:0, Cable Facade - Block of Strontium
+appliedenergistics2:facade:0, Cable Facade - Block of Sulfur
+appliedenergistics2:facade:0, Cable Facade - Block of Tantalum
+appliedenergistics2:facade:0, Cable Facade - Block of Technetium
+appliedenergistics2:facade:0, Cable Facade - Block of Tellurium
+appliedenergistics2:facade:0, Cable Facade - Block of Tennessine
+appliedenergistics2:facade:0, Cable Facade - Block of Terbium
+appliedenergistics2:facade:0, Cable Facade - Block of Thorium
+appliedenergistics2:facade:0, Cable Facade - Block of Thallium
+appliedenergistics2:facade:0, Cable Facade - Block of Thulium
+appliedenergistics2:facade:0, Cable Facade - Block of Enargite
+appliedenergistics2:facade:0, Cable Facade - Block of Tennantite
+appliedenergistics2:facade:0, Cable Facade - Block of Gallium Arsenide
+appliedenergistics2:facade:0, Cable Facade - Block of Potash
+appliedenergistics2:facade:0, Cable Facade - Block of Soda Ash
+appliedenergistics2:facade:0, Cable Facade - Block of Indium Gallium Phosphide
+appliedenergistics2:facade:0, Cable Facade - Block of Nickel Zinc Ferrite
+appliedenergistics2:facade:0, Cable Facade - Block of Silicon Dioxide
+appliedenergistics2:facade:0, Cable Facade - Block of Magnesium Chloride
+appliedenergistics2:facade:0, Cable Facade - Block of Sodium Sulfide
+appliedenergistics2:facade:0, Cable Facade - Block of Phosphorus Pentoxide
+appliedenergistics2:facade:0, Cable Facade - Block of Quicklime
+appliedenergistics2:facade:0, Cable Facade - Block of Sodium Bisulfate
+appliedenergistics2:facade:0, Cable Facade - Block of Ferrite Mixture
+appliedenergistics2:facade:0, Cable Facade - Block of Magnesia
+appliedenergistics2:facade:0, Cable Facade - Block of Platinum Group Sludge
+appliedenergistics2:facade:0, Cable Facade - Block of Molybdenum
+appliedenergistics2:facade:0, Cable Facade - Block of Moscovium
+appliedenergistics2:facade:0, Cable Facade - Block of Neodymium
+appliedenergistics2:facade:0, Cable Facade - Block of Neptunium
+appliedenergistics2:facade:0, Cable Facade - Block of Nickel
+appliedenergistics2:facade:0, Cable Facade - Block of Nihonium
+appliedenergistics2:facade:0, Cable Facade - Block of Niobium
+appliedenergistics2:facade:0, Cable Facade - Block of Nobelium
+appliedenergistics2:facade:0, Cable Facade - Block of Oganesson
+appliedenergistics2:facade:0, Cable Facade - Block of Osmium
+appliedenergistics2:facade:0, Cable Facade - Block of Palladium
+appliedenergistics2:facade:0, Cable Facade - Block of Phosphorus
+appliedenergistics2:facade:0, Cable Facade - Block of Polonium
 appliedenergistics2:facade:0, Cable Facade - Block of Cocoa
 appliedenergistics2:facade:0, Cable Facade - Block of Mince Meat
-appliedenergistics2:facade:0, Cable Facade - Block of Paper
-appliedenergistics2:facade:0, Cable Facade - Block of Rare Earth
-appliedenergistics2:facade:0, Cable Facade - Block of Nether Star
-appliedenergistics2:facade:0, Cable Facade - Block of Collagen
-appliedenergistics2:facade:0, Cable Facade - Block of Gelatin
-appliedenergistics2:facade:0, Cable Facade - Block of Agar
-appliedenergistics2:facade:0, Cable Facade - Block of Perlite
-appliedenergistics2:facade:0, Cable Facade - Block of Borax
-appliedenergistics2:facade:0, Cable Facade - Block of Lignite Coal
-appliedenergistics2:facade:0, Cable Facade - Block of Calcium
-appliedenergistics2:facade:0, Cable Facade - Block of Californium
-appliedenergistics2:facade:0, Cable Facade - Block of Carbon
-appliedenergistics2:facade:0, Cable Facade - Block of Cadmium
-appliedenergistics2:facade:0, Cable Facade - Block of Cerium
-appliedenergistics2:facade:0, Cable Facade - Block of Chrome
-appliedenergistics2:facade:0, Cable Facade - Block of Cobalt
-appliedenergistics2:facade:0, Cable Facade - Block of Copernicium
-appliedenergistics2:facade:0, Cable Facade - Block of Copper
-appliedenergistics2:facade:0, Cable Facade - Block of Curium
-appliedenergistics2:facade:0, Cable Facade - Block of Darmstadtium
-appliedenergistics2:facade:0, Cable Facade - Block of Dubnium
-appliedenergistics2:facade:0, Cable Facade - Block of Dysprosium
-appliedenergistics2:facade:0, Cable Facade - Block of Einsteinium
-appliedenergistics2:facade:0, Cable Facade - Polytetrafluoroethylene (PTFE) Frame Box
-appliedenergistics2:facade:0, Cable Facade - Bronze Frame Box
-appliedenergistics2:facade:0, Cable Facade - Stainless Steel Frame Box
-appliedenergistics2:facade:0, Cable Facade - Titanium Frame Box
-appliedenergistics2:facade:0, Cable Facade - Blue Steel Frame Box
+appliedenergistics2:facade:0, Cable Facade - Aluminium Frame Box
 appliedenergistics2:facade:0, Cable Facade - Invar Frame Box
-appliedenergistics2:facade:0, Cable Facade - Iron Frame Box
 appliedenergistics2:facade:0, Cable Facade - Neutronium Frame Box
-appliedenergistics2:facade:0, Cable Facade - Steel Frame Box
 appliedenergistics2:facade:0, Cable Facade - Tungstensteel Frame Box
 appliedenergistics2:facade:0, Cable Facade - HSS-E Frame Box
-appliedenergistics2:facade:0, Cable Facade - Aluminium Frame Box
+appliedenergistics2:facade:0, Cable Facade - Steel Frame Box
 appliedenergistics2:facade:0, Cable Facade - Wood Frame Box
+appliedenergistics2:facade:0, Cable Facade - Polytetrafluoroethylene (PTFE) Frame Box
 appliedenergistics2:facade:0, Cable Facade - HSS-G Frame Box
 appliedenergistics2:facade:0, Cable Facade - Tritanium Frame Box
+appliedenergistics2:facade:0, Cable Facade - Iron Frame Box
+appliedenergistics2:facade:0, Cable Facade - Titanium Frame Box
+appliedenergistics2:facade:0, Cable Facade - Bronze Frame Box
+appliedenergistics2:facade:0, Cable Facade - Blue Steel Frame Box
+appliedenergistics2:facade:0, Cable Facade - Stainless Steel Frame Box
 appliedenergistics2:facade:0, Cable Facade - Aqumarine Andesite Sand
 appliedenergistics2:crystal_seed:0, Certus Quartz Seed
 appliedenergistics2:crystal_seed:600, Nether Quartz Seed
@@ -9506,6 +9506,28 @@ galaxyspace:plasma_pickaxe, item.plasma_pickaxe.name
 galaxyspace:jetpack, Electric Jetpack
 galaxyspace:geo_scanner:0, Geological Scanner
 galaxyspace:geo_scanner:100, Geological Scanner
+galaxyspace:tauceti_f_blocks:0, Tau Ceti F Dirt
+galaxyspace:tauceti_f_blocks:1, Tau Ceti F Grass
+galaxyspace:tauceti_f_blocks:2, Tau Ceti F Stone
+galaxyspace:tauceti_f_watergrass:0, Red Algae
+galaxyspace:tauceti_f_watergrass:1, Algae Base
+galaxyspace:tauceti_f_watergrass:2, Algae
+galaxyspace:tauceti_f_watergrass:3, Algae Top
+galaxyspace:tauceti_f_watergrass:4, Slime Algae Base
+galaxyspace:tauceti_f_watergrass:5, Slime Algae Top
+galaxyspace:tauceti_f_watergrass:6, Thick Algae
+galaxyspace:tauceti_f_watergrass:7, Small Kelp
+galaxyspace:tauceti_f_corals:0, Brain Coral
+galaxyspace:tauceti_f_corals:1, Brain Coral Fan
+galaxyspace:tauceti_f_corals:2, Bubble Coral
+galaxyspace:tauceti_f_corals:3, Bubble Coral Fan
+galaxyspace:tauceti_f_corals:4, Fire Coral
+galaxyspace:tauceti_f_corals:5, Fire Coral Fan
+galaxyspace:tauceti_f_corals:6, Horn Coral
+galaxyspace:tauceti_f_corals:7, Horn Coral Fan
+galaxyspace:tauceti_f_corals:8, Tube Coral
+galaxyspace:tauceti_f_corals:9, Tube Coral Fan
+galaxyspace:tauceti_f_corals:10, Sponge Coral
 galaxyspace:barnarda_c_grasses:0, Barnarda C Grass
 galaxyspace:barnarda_c_blocks:0, Barnarda C Dirt
 galaxyspace:barnarda_c_blocks:1, Barnarda C Stone
@@ -9546,28 +9568,6 @@ galaxyspace:br_basic:0, Violet Reeds
 galaxyspace:br_basic:1, Water Grass
 galaxyspace:br_basic:2, Tree Juice
 galaxyspace:br_foods:0, Yellow Fruits
-galaxyspace:tauceti_f_blocks:0, Tau Ceti F Dirt
-galaxyspace:tauceti_f_blocks:1, Tau Ceti F Grass
-galaxyspace:tauceti_f_blocks:2, Tau Ceti F Stone
-galaxyspace:tauceti_f_watergrass:0, Red Algae
-galaxyspace:tauceti_f_watergrass:1, Algae Base
-galaxyspace:tauceti_f_watergrass:2, Algae
-galaxyspace:tauceti_f_watergrass:3, Algae Top
-galaxyspace:tauceti_f_watergrass:4, Slime Algae Base
-galaxyspace:tauceti_f_watergrass:5, Slime Algae Top
-galaxyspace:tauceti_f_watergrass:6, Thick Algae
-galaxyspace:tauceti_f_watergrass:7, Small Kelp
-galaxyspace:tauceti_f_corals:0, Brain Coral
-galaxyspace:tauceti_f_corals:1, Brain Coral Fan
-galaxyspace:tauceti_f_corals:2, Bubble Coral
-galaxyspace:tauceti_f_corals:3, Bubble Coral Fan
-galaxyspace:tauceti_f_corals:4, Fire Coral
-galaxyspace:tauceti_f_corals:5, Fire Coral Fan
-galaxyspace:tauceti_f_corals:6, Horn Coral
-galaxyspace:tauceti_f_corals:7, Horn Coral Fan
-galaxyspace:tauceti_f_corals:8, Tube Coral
-galaxyspace:tauceti_f_corals:9, Tube Coral Fan
-galaxyspace:tauceti_f_corals:10, Sponge Coral
 galaxyspace:proxima_b_blocks:0, Proxima B Surface
 galaxyspace:proxima_b_blocks:1, Proxima B Subsurface
 galaxyspace:proxima_b_blocks:2, Proxima B Stone
@@ -14309,225 +14309,20 @@ gregtech:concrete:15, Chiseled Dark Concrete Bricks
 gregtech:log:0, Rubber Wood
 gregtech:leaves:0, Rubber Tree Leaves
 gregtech:sapling:0, Rubber Tree Sapling
-gregtech:meta_block_compressed_6:0, Block of Scandium
-gregtech:meta_block_compressed_6:1, Block of Seaborgium
-gregtech:meta_block_compressed_6:2, Block of Selenium
-gregtech:meta_block_compressed_6:3, Block of Silicon
-gregtech:meta_block_compressed_6:4, Block of Silver
-gregtech:meta_block_compressed_6:5, Block of Sodium
-gregtech:meta_block_compressed_6:6, Block of Strontium
-gregtech:meta_block_compressed_6:7, Block of Sulfur
-gregtech:meta_block_compressed_6:8, Block of Tantalum
-gregtech:meta_block_compressed_6:9, Block of Technetium
-gregtech:meta_block_compressed_6:10, Block of Tellurium
-gregtech:meta_block_compressed_6:11, Block of Tennessine
-gregtech:meta_block_compressed_6:12, Block of Terbium
-gregtech:meta_block_compressed_6:13, Block of Thorium
-gregtech:meta_block_compressed_6:14, Block of Thallium
-gregtech:meta_block_compressed_6:15, Block of Thulium
-gregtech:meta_block_compressed_10:0, Block of Bauxite
-gregtech:meta_block_compressed_10:1, Block of Invar
-gregtech:meta_block_compressed_10:2, Block of Kanthal
-gregtech:meta_block_compressed_10:3, Block of Lazurite
-gregtech:meta_block_compressed_10:4, Block of Magnalium
-gregtech:meta_block_compressed_10:5, Block of Magnesite
-gregtech:meta_block_compressed_10:6, Block of Magnetite
-gregtech:meta_block_compressed_10:7, Block of Molybdenite
-gregtech:meta_block_compressed_10:8, Block of Nichrome
-gregtech:meta_block_compressed_10:9, Block of Niobium Nitride
-gregtech:meta_block_compressed_10:10, Block of Niobium-Titanium
-gregtech:meta_block_compressed_10:11, Block of Obsidian
-gregtech:meta_block_compressed_10:12, Block of Phosphate
-gregtech:meta_block_compressed_10:13, Block of Pig Iron
-gregtech:meta_block_compressed_10:14, Block of Polyethylene (PE)
-gregtech:meta_block_compressed_10:15, Block of Epoxy Resin
-gregtech:meta_block_compressed_14:0, Block of Enargite
-gregtech:meta_block_compressed_14:1, Block of Tennantite
-gregtech:meta_block_compressed_14:2, Block of Gallium Arsenide
-gregtech:meta_block_compressed_14:3, Block of Potash
-gregtech:meta_block_compressed_14:4, Block of Soda Ash
-gregtech:meta_block_compressed_14:5, Block of Indium Gallium Phosphide
-gregtech:meta_block_compressed_14:6, Block of Nickel Zinc Ferrite
-gregtech:meta_block_compressed_14:7, Block of Silicon Dioxide
-gregtech:meta_block_compressed_14:8, Block of Magnesium Chloride
-gregtech:meta_block_compressed_14:9, Block of Sodium Sulfide
-gregtech:meta_block_compressed_14:10, Block of Phosphorus Pentoxide
-gregtech:meta_block_compressed_14:11, Block of Quicklime
-gregtech:meta_block_compressed_14:12, Block of Sodium Bisulfate
-gregtech:meta_block_compressed_14:13, Block of Ferrite Mixture
-gregtech:meta_block_compressed_14:14, Block of Magnesia
-gregtech:meta_block_compressed_14:15, Block of Platinum Group Sludge
-gregtech:meta_block_compressed_20:0, Block of Sugar
-gregtech:meta_block_compressed_20:1, Block of Vinteum
-gregtech:meta_block_compressed_20:2, Block of Redrock
-gregtech:meta_block_compressed_20:3, Block of Potassium Feldspar
-gregtech:meta_block_compressed_20:4, Block of Biotite
-gregtech:meta_block_compressed_20:5, Block of Black Granite
-gregtech:meta_block_compressed_20:7, Block of Chrysotile
-gregtech:meta_block_compressed_20:8, Block of Realgar
-gregtech:meta_block_compressed_20:9, Block of Vanadium Magnetite
-gregtech:meta_block_compressed_20:10, Block of Basaltic Mineral Sand
-gregtech:meta_block_compressed_20:11, Block of Granitic Mineral Sand
-gregtech:meta_block_compressed_20:12, Block of Garnet Sand
-gregtech:meta_block_compressed_20:13, Block of Quartz Sand
-gregtech:meta_block_compressed_20:14, Block of Bastnasite
-gregtech:meta_block_compressed_20:15, Block of Pentlandite
-gregtech:meta_block_compressed_12:0, Block of Fireclay
-gregtech:meta_block_compressed_12:1, Block of Coke
-gregtech:meta_block_compressed_12:2, Block of Soldering Alloy
-gregtech:meta_block_compressed_12:3, Block of Spessartine
-gregtech:meta_block_compressed_12:4, Block of Sphalerite
-gregtech:meta_block_compressed_12:5, Block of Stainless Steel
-gregtech:meta_block_compressed_12:6, Block of Steel
-gregtech:meta_block_compressed_12:7, Block of Stibnite
-gregtech:meta_block_compressed_12:8, Block of Tanzanite
-gregtech:meta_block_compressed_12:9, Block of Tetrahedrite
-gregtech:meta_block_compressed_12:10, Block of Tin Alloy
-gregtech:meta_block_compressed_12:11, Block of Topaz
-gregtech:meta_block_compressed_12:12, Block of Tungstate
-gregtech:meta_block_compressed_12:13, Block of Ultimet
-gregtech:meta_block_compressed_12:14, Block of Uraninite
-gregtech:meta_block_compressed_12:15, Block of Uvarovite
-gregtech:meta_block_compressed_23:0, Block of HSS-S
-gregtech:meta_block_compressed_23:1, Block of Diamericium Titanium
-gregtech:meta_block_compressed_23:2, Block of Potin
-gregtech:meta_block_compressed_23:3, Block of Naquadah
-gregtech:meta_block_compressed_23:4, Block of Naquadah Alloy
-gregtech:meta_block_compressed_23:5, Block of Enriched Naquadah
-gregtech:meta_block_compressed_23:6, Block of Naquadria
-gregtech:meta_block_compressed_23:7, Block of Neutronium
-gregtech:meta_block_compressed_23:8, Block of Tritanium
-gregtech:meta_block_compressed_23:9, Block of Duranium
-gregtech:meta_block_compressed_23:10, Block of Trinium
-gregtech:meta_block_compressed_23:11, Block of Adamantium
-gregtech:meta_block_compressed_23:12, Block of Vibranium
-gregtech:meta_block_compressed_23:13, Block of Taranium
-gregtech:meta_block_compressed_23:14, Block of Fluxed Electrum
-gregtech:meta_block_compressed_7:0, Block of Tin
-gregtech:meta_block_compressed_7:1, Block of Titanium
-gregtech:meta_block_compressed_7:3, Block of Tungsten
-gregtech:meta_block_compressed_7:4, Block of Uranium 238
-gregtech:meta_block_compressed_7:5, Block of Uranium 235
-gregtech:meta_block_compressed_7:6, Block of Vanadium
-gregtech:meta_block_compressed_7:8, Block of Ytterbium
-gregtech:meta_block_compressed_7:9, Block of Yttrium
-gregtech:meta_block_compressed_7:10, Block of Zinc
-gregtech:meta_block_compressed_7:11, Block of Zirconium
-gregtech:meta_block_compressed_7:12, Block of Almandine
-gregtech:meta_block_compressed_7:13, Block of Andradite
-gregtech:meta_block_compressed_7:14, Block of Annealed Copper
-gregtech:meta_block_compressed_7:15, Block of Asbestos
-gregtech:meta_block_compressed_2:0, Block of Erbium
-gregtech:meta_block_compressed_2:1, Block of Europium
-gregtech:meta_block_compressed_2:2, Block of Fermium
-gregtech:meta_block_compressed_2:3, Block of Flerovium
-gregtech:meta_block_compressed_2:5, Block of Francium
-gregtech:meta_block_compressed_2:6, Block of Gadolinium
-gregtech:meta_block_compressed_2:7, Block of Gallium
-gregtech:meta_block_compressed_2:8, Block of Germanium
-gregtech:meta_block_compressed_2:10, Block of Hafnium
-gregtech:meta_block_compressed_2:11, Block of Hassium
-gregtech:meta_block_compressed_2:12, Block of Holmium
-gregtech:meta_block_compressed_5:0, Block of Platinum
-gregtech:meta_block_compressed_5:1, Block of Plutonium 239
-gregtech:meta_block_compressed_5:2, Block of Plutonium 241
-gregtech:meta_block_compressed_5:3, Block of Potassium
-gregtech:meta_block_compressed_5:4, Block of Praseodymium
-gregtech:meta_block_compressed_5:5, Block of Promethium
-gregtech:meta_block_compressed_5:6, Block of Protactinium
-gregtech:meta_block_compressed_5:8, Block of Radium
-gregtech:meta_block_compressed_5:9, Block of Rhenium
-gregtech:meta_block_compressed_5:10, Block of Rhodium
-gregtech:meta_block_compressed_5:11, Block of Roentgenium
-gregtech:meta_block_compressed_5:12, Block of Rubidium
-gregtech:meta_block_compressed_5:13, Block of Ruthenium
-gregtech:meta_block_compressed_5:14, Block of Rutherfordium
-gregtech:meta_block_compressed_5:15, Block of Samarium
-gregtech:meta_block_compressed_22:0, Block of Alunite
-gregtech:meta_block_compressed_22:1, Block of Dolomite
-gregtech:meta_block_compressed_22:2, Block of Wollastonite
-gregtech:meta_block_compressed_22:3, Block of Zeolite
-gregtech:meta_block_compressed_22:4, Block of Kyanite
-gregtech:meta_block_compressed_22:5, Block of Kaolinite
-gregtech:meta_block_compressed_22:6, Block of Talc
-gregtech:meta_block_compressed_22:7, Block of Soapstone
-gregtech:meta_block_compressed_22:9, Block of Magnetic Iron
-gregtech:meta_block_compressed_22:10, Block of Magnetic Steel
-gregtech:meta_block_compressed_22:11, Block of Magnetic Neodymium
-gregtech:meta_block_compressed_22:12, Block of Tungstencarbide
-gregtech:meta_block_compressed_22:13, Block of Vanadiumsteel
-gregtech:meta_block_compressed_22:14, Block of HSS-G
-gregtech:meta_block_compressed_22:15, Block of HSS-E
-gregtech:meta_block_compressed_11:0, Block of Polysiloxane
-gregtech:meta_block_compressed_11:1, Block of Polycaprolactam
-gregtech:meta_block_compressed_11:2, Block of Polytetrafluoroethylene (PTFE)
-gregtech:meta_block_compressed_11:3, Block of Powellite
-gregtech:meta_block_compressed_11:4, Block of Pyrite
-gregtech:meta_block_compressed_11:5, Block of Pyrolusite
-gregtech:meta_block_compressed_11:6, Block of Pyrope
-gregtech:meta_block_compressed_11:7, Block of Rock Salt
-gregtech:meta_block_compressed_11:8, Block of Rubber
-gregtech:meta_block_compressed_11:9, Block of Ruby
-gregtech:meta_block_compressed_11:10, Block of Salt
-gregtech:meta_block_compressed_11:11, Block of Saltpeter
-gregtech:meta_block_compressed_11:12, Block of Sapphire
-gregtech:meta_block_compressed_11:13, Block of Scheelite
-gregtech:meta_block_compressed_11:14, Block of Sodalite
-gregtech:meta_block_compressed_18:0, Block of Olivine
-gregtech:meta_block_compressed_18:1, Block of Opal
-gregtech:meta_block_compressed_18:2, Block of Amethyst
-gregtech:meta_block_compressed_18:6, Block of Enderpearl
-gregtech:meta_block_compressed_18:7, Block of Endereye
-gregtech:meta_block_compressed_18:8, Block of Flint
-gregtech:meta_block_compressed_18:9, Block of Diatomite
-gregtech:meta_block_compressed_18:10, Block of Niter
-gregtech:meta_block_compressed_18:11, Block of Tantalite
-gregtech:meta_block_compressed_18:12, Block of Apatite
-gregtech:meta_block_compressed_18:13, Block of Sterling Silver
-gregtech:meta_block_compressed_18:14, Block of Rose Gold
-gregtech:meta_block_compressed_18:15, Block of Black Bronze
-gregtech:meta_block_compressed_15:0, Block of Hydrated Coal
-gregtech:meta_block_compressed_15:1, Block of Sodium Bicarbonate
-gregtech:meta_block_compressed_15:2, Block of Potassium Dichromate
-gregtech:meta_block_compressed_15:3, Block of Chromium Trioxide
-gregtech:meta_block_compressed_15:4, Block of Antimony Trioxide
-gregtech:meta_block_compressed_15:5, Block of Zincite
-gregtech:meta_block_compressed_15:6, Block of Cupric Oxide
-gregtech:meta_block_compressed_15:7, Block of Cobalt Oxide
-gregtech:meta_block_compressed_15:8, Block of Arsenic Trioxide
-gregtech:meta_block_compressed_15:9, Block of Massicot
-gregtech:meta_block_compressed_15:10, Block of Ferrosilite
-gregtech:meta_block_compressed_15:11, Block of Metal Mixture
-gregtech:meta_block_compressed_15:12, Block of Sodium Hydroxide
-gregtech:meta_block_compressed_8:0, Block of Ashes
-gregtech:meta_block_compressed_8:1, Block of Banded Iron
-gregtech:meta_block_compressed_8:2, Block of Battery Alloy
-gregtech:meta_block_compressed_8:3, Block of Blue Topaz
-gregtech:meta_block_compressed_8:5, Block of Brass
-gregtech:meta_block_compressed_8:6, Block of Bronze
-gregtech:meta_block_compressed_8:7, Block of Brown Limonite
-gregtech:meta_block_compressed_8:8, Block of Calcite
-gregtech:meta_block_compressed_8:9, Block of Cassiterite
-gregtech:meta_block_compressed_8:10, Block of Cassiterite Sand
-gregtech:meta_block_compressed_8:11, Block of Chalcopyrite
-gregtech:meta_block_compressed_8:12, Block of Charcoal
-gregtech:meta_block_compressed_8:13, Block of Chromite
-gregtech:meta_block_compressed_8:14, Block of Cinnabar
-gregtech:meta_block_compressed_13:0, Block of Vanadium-Gallium
-gregtech:meta_block_compressed_13:1, Block of Wrought Iron
-gregtech:meta_block_compressed_13:2, Block of Wulfenite
-gregtech:meta_block_compressed_13:3, Block of Yellow Limonite
-gregtech:meta_block_compressed_13:4, Block of Yttrium Barium Cuprate
-gregtech:meta_block_compressed_13:6, Block of Certus Quartz
-gregtech:meta_block_compressed_13:7, Block of Quartzite
-gregtech:meta_block_compressed_13:8, Block of Graphite
-gregtech:meta_block_compressed_13:9, Block of Graphene
-gregtech:meta_block_compressed_13:10, Block of Jasper
-gregtech:meta_block_compressed_13:11, Block of Osmiridium
-gregtech:meta_block_compressed_13:12, Block of Tenorite
-gregtech:meta_block_compressed_13:13, Block of Cuprite
-gregtech:meta_block_compressed_13:14, Block of Bornite
-gregtech:meta_block_compressed_13:15, Block of Chalcocite
+gregtech:meta_block_compressed_1:0, Block of Calcium
+gregtech:meta_block_compressed_1:1, Block of Californium
+gregtech:meta_block_compressed_1:2, Block of Carbon
+gregtech:meta_block_compressed_1:3, Block of Cadmium
+gregtech:meta_block_compressed_1:4, Block of Cerium
+gregtech:meta_block_compressed_1:6, Block of Chrome
+gregtech:meta_block_compressed_1:7, Block of Cobalt
+gregtech:meta_block_compressed_1:8, Block of Copernicium
+gregtech:meta_block_compressed_1:9, Block of Copper
+gregtech:meta_block_compressed_1:10, Block of Curium
+gregtech:meta_block_compressed_1:11, Block of Darmstadtium
+gregtech:meta_block_compressed_1:13, Block of Dubnium
+gregtech:meta_block_compressed_1:14, Block of Dysprosium
+gregtech:meta_block_compressed_1:15, Block of Einsteinium
 gregtech:meta_block_compressed_16:0, Block of Silicone Rubber
 gregtech:meta_block_compressed_16:1, Block of Polystyrene
 gregtech:meta_block_compressed_16:3, Block of Raw Styrene-Butadiene Rubber
@@ -14555,6 +14350,168 @@ gregtech:meta_block_compressed_21:12, Block of Mica
 gregtech:meta_block_compressed_21:13, Block of Trona
 gregtech:meta_block_compressed_21:14, Block of Barite
 gregtech:meta_block_compressed_21:15, Block of Gypsum
+gregtech:meta_block_compressed_5:0, Block of Platinum
+gregtech:meta_block_compressed_5:1, Block of Plutonium 239
+gregtech:meta_block_compressed_5:2, Block of Plutonium 241
+gregtech:meta_block_compressed_5:3, Block of Potassium
+gregtech:meta_block_compressed_5:4, Block of Praseodymium
+gregtech:meta_block_compressed_5:5, Block of Promethium
+gregtech:meta_block_compressed_5:6, Block of Protactinium
+gregtech:meta_block_compressed_5:8, Block of Radium
+gregtech:meta_block_compressed_5:9, Block of Rhenium
+gregtech:meta_block_compressed_5:10, Block of Rhodium
+gregtech:meta_block_compressed_5:11, Block of Roentgenium
+gregtech:meta_block_compressed_5:12, Block of Rubidium
+gregtech:meta_block_compressed_5:13, Block of Ruthenium
+gregtech:meta_block_compressed_5:14, Block of Rutherfordium
+gregtech:meta_block_compressed_5:15, Block of Samarium
+gregtech:meta_block_compressed_23:0, Block of HSS-S
+gregtech:meta_block_compressed_23:1, Block of Diamericium Titanium
+gregtech:meta_block_compressed_23:2, Block of Potin
+gregtech:meta_block_compressed_23:3, Block of Naquadah
+gregtech:meta_block_compressed_23:4, Block of Naquadah Alloy
+gregtech:meta_block_compressed_23:5, Block of Enriched Naquadah
+gregtech:meta_block_compressed_23:6, Block of Naquadria
+gregtech:meta_block_compressed_23:7, Block of Neutronium
+gregtech:meta_block_compressed_23:8, Block of Tritanium
+gregtech:meta_block_compressed_23:9, Block of Duranium
+gregtech:meta_block_compressed_23:10, Block of Trinium
+gregtech:meta_block_compressed_23:11, Block of Adamantium
+gregtech:meta_block_compressed_23:12, Block of Vibranium
+gregtech:meta_block_compressed_23:13, Block of Taranium
+gregtech:meta_block_compressed_23:14, Block of Fluxed Electrum
+gregtech:meta_block_compressed_22:0, Block of Alunite
+gregtech:meta_block_compressed_22:1, Block of Dolomite
+gregtech:meta_block_compressed_22:2, Block of Wollastonite
+gregtech:meta_block_compressed_22:3, Block of Zeolite
+gregtech:meta_block_compressed_22:4, Block of Kyanite
+gregtech:meta_block_compressed_22:5, Block of Kaolinite
+gregtech:meta_block_compressed_22:6, Block of Talc
+gregtech:meta_block_compressed_22:7, Block of Soapstone
+gregtech:meta_block_compressed_22:9, Block of Magnetic Iron
+gregtech:meta_block_compressed_22:10, Block of Magnetic Steel
+gregtech:meta_block_compressed_22:11, Block of Magnetic Neodymium
+gregtech:meta_block_compressed_22:12, Block of Tungstencarbide
+gregtech:meta_block_compressed_22:13, Block of Vanadiumsteel
+gregtech:meta_block_compressed_22:14, Block of HSS-G
+gregtech:meta_block_compressed_22:15, Block of HSS-E
+gregtech:meta_block_compressed_20:0, Block of Sugar
+gregtech:meta_block_compressed_20:1, Block of Vinteum
+gregtech:meta_block_compressed_20:2, Block of Redrock
+gregtech:meta_block_compressed_20:3, Block of Potassium Feldspar
+gregtech:meta_block_compressed_20:4, Block of Biotite
+gregtech:meta_block_compressed_20:5, Block of Black Granite
+gregtech:meta_block_compressed_20:7, Block of Chrysotile
+gregtech:meta_block_compressed_20:8, Block of Realgar
+gregtech:meta_block_compressed_20:9, Block of Vanadium Magnetite
+gregtech:meta_block_compressed_20:10, Block of Basaltic Mineral Sand
+gregtech:meta_block_compressed_20:11, Block of Granitic Mineral Sand
+gregtech:meta_block_compressed_20:12, Block of Garnet Sand
+gregtech:meta_block_compressed_20:13, Block of Quartz Sand
+gregtech:meta_block_compressed_20:14, Block of Bastnasite
+gregtech:meta_block_compressed_20:15, Block of Pentlandite
+gregtech:meta_block_compressed_8:0, Block of Ashes
+gregtech:meta_block_compressed_8:1, Block of Banded Iron
+gregtech:meta_block_compressed_8:2, Block of Battery Alloy
+gregtech:meta_block_compressed_8:3, Block of Blue Topaz
+gregtech:meta_block_compressed_8:5, Block of Brass
+gregtech:meta_block_compressed_8:6, Block of Bronze
+gregtech:meta_block_compressed_8:7, Block of Brown Limonite
+gregtech:meta_block_compressed_8:8, Block of Calcite
+gregtech:meta_block_compressed_8:9, Block of Cassiterite
+gregtech:meta_block_compressed_8:10, Block of Cassiterite Sand
+gregtech:meta_block_compressed_8:11, Block of Chalcopyrite
+gregtech:meta_block_compressed_8:12, Block of Charcoal
+gregtech:meta_block_compressed_8:13, Block of Chromite
+gregtech:meta_block_compressed_8:14, Block of Cinnabar
+gregtech:meta_block_compressed_10:0, Block of Bauxite
+gregtech:meta_block_compressed_10:1, Block of Invar
+gregtech:meta_block_compressed_10:2, Block of Kanthal
+gregtech:meta_block_compressed_10:3, Block of Lazurite
+gregtech:meta_block_compressed_10:4, Block of Magnalium
+gregtech:meta_block_compressed_10:5, Block of Magnesite
+gregtech:meta_block_compressed_10:6, Block of Magnetite
+gregtech:meta_block_compressed_10:7, Block of Molybdenite
+gregtech:meta_block_compressed_10:8, Block of Nichrome
+gregtech:meta_block_compressed_10:9, Block of Niobium Nitride
+gregtech:meta_block_compressed_10:10, Block of Niobium-Titanium
+gregtech:meta_block_compressed_10:11, Block of Obsidian
+gregtech:meta_block_compressed_10:12, Block of Phosphate
+gregtech:meta_block_compressed_10:13, Block of Pig Iron
+gregtech:meta_block_compressed_10:14, Block of Polyethylene (PE)
+gregtech:meta_block_compressed_10:15, Block of Epoxy Resin
+gregtech:meta_block_compressed_13:0, Block of Vanadium-Gallium
+gregtech:meta_block_compressed_13:1, Block of Wrought Iron
+gregtech:meta_block_compressed_13:2, Block of Wulfenite
+gregtech:meta_block_compressed_13:3, Block of Yellow Limonite
+gregtech:meta_block_compressed_13:4, Block of Yttrium Barium Cuprate
+gregtech:meta_block_compressed_13:6, Block of Certus Quartz
+gregtech:meta_block_compressed_13:7, Block of Quartzite
+gregtech:meta_block_compressed_13:8, Block of Graphite
+gregtech:meta_block_compressed_13:9, Block of Graphene
+gregtech:meta_block_compressed_13:10, Block of Jasper
+gregtech:meta_block_compressed_13:11, Block of Osmiridium
+gregtech:meta_block_compressed_13:12, Block of Tenorite
+gregtech:meta_block_compressed_13:13, Block of Cuprite
+gregtech:meta_block_compressed_13:14, Block of Bornite
+gregtech:meta_block_compressed_13:15, Block of Chalcocite
+gregtech:meta_block_compressed_3:0, Block of Indium
+gregtech:meta_block_compressed_3:1, Block of Iodine
+gregtech:meta_block_compressed_3:2, Block of Iridium
+gregtech:meta_block_compressed_3:5, Block of Lanthanum
+gregtech:meta_block_compressed_3:6, Block of Lawrencium
+gregtech:meta_block_compressed_3:7, Block of Lead
+gregtech:meta_block_compressed_3:8, Block of Lithium
+gregtech:meta_block_compressed_3:9, Block of Livermorium
+gregtech:meta_block_compressed_3:10, Block of Lutetium
+gregtech:meta_block_compressed_3:11, Block of Magnesium
+gregtech:meta_block_compressed_3:12, Block of Mendelevium
+gregtech:meta_block_compressed_3:13, Block of Manganese
+gregtech:meta_block_compressed_3:14, Block of Meitnerium
+gregtech:meta_block_compressed_9:2, Block of Cobaltite
+gregtech:meta_block_compressed_9:3, Block of Sheldonite
+gregtech:meta_block_compressed_9:4, Block of Cupronickel
+gregtech:meta_block_compressed_9:5, Block of Dark Ashes
+gregtech:meta_block_compressed_9:7, Block of Electrum
+gregtech:meta_block_compressed_9:9, Block of Galena
+gregtech:meta_block_compressed_9:10, Block of Garnierite
+gregtech:meta_block_compressed_9:11, Block of Green Sapphire
+gregtech:meta_block_compressed_9:12, Block of Grossular
+gregtech:meta_block_compressed_9:14, Block of Ilmenite
+gregtech:meta_block_compressed_9:15, Block of Rutile
+gregtech:meta_block_compressed_2:0, Block of Erbium
+gregtech:meta_block_compressed_2:1, Block of Europium
+gregtech:meta_block_compressed_2:2, Block of Fermium
+gregtech:meta_block_compressed_2:3, Block of Flerovium
+gregtech:meta_block_compressed_2:5, Block of Francium
+gregtech:meta_block_compressed_2:6, Block of Gadolinium
+gregtech:meta_block_compressed_2:7, Block of Gallium
+gregtech:meta_block_compressed_2:8, Block of Germanium
+gregtech:meta_block_compressed_2:10, Block of Hafnium
+gregtech:meta_block_compressed_2:11, Block of Hassium
+gregtech:meta_block_compressed_2:12, Block of Holmium
+gregtech:meta_block_compressed_17:0, Block of Paper
+gregtech:meta_block_compressed_17:1, Block of Rare Earth
+gregtech:meta_block_compressed_17:5, Block of Nether Star
+gregtech:meta_block_compressed_17:9, Block of Collagen
+gregtech:meta_block_compressed_17:10, Block of Gelatin
+gregtech:meta_block_compressed_17:11, Block of Agar
+gregtech:meta_block_compressed_17:13, Block of Perlite
+gregtech:meta_block_compressed_17:14, Block of Borax
+gregtech:meta_block_compressed_17:15, Block of Lignite Coal
+gregtech:meta_block_compressed_18:0, Block of Olivine
+gregtech:meta_block_compressed_18:1, Block of Opal
+gregtech:meta_block_compressed_18:2, Block of Amethyst
+gregtech:meta_block_compressed_18:6, Block of Enderpearl
+gregtech:meta_block_compressed_18:7, Block of Endereye
+gregtech:meta_block_compressed_18:8, Block of Flint
+gregtech:meta_block_compressed_18:9, Block of Diatomite
+gregtech:meta_block_compressed_18:10, Block of Niter
+gregtech:meta_block_compressed_18:11, Block of Tantalite
+gregtech:meta_block_compressed_18:12, Block of Apatite
+gregtech:meta_block_compressed_18:13, Block of Sterling Silver
+gregtech:meta_block_compressed_18:14, Block of Rose Gold
+gregtech:meta_block_compressed_18:15, Block of Black Bronze
 gregtech:meta_block_compressed_19:0, Block of Bismuth Bronze
 gregtech:meta_block_compressed_19:1, Block of Black Steel
 gregtech:meta_block_compressed_19:2, Block of Red Steel
@@ -14570,43 +14527,22 @@ gregtech:meta_block_compressed_19:11, Block of Diorite
 gregtech:meta_block_compressed_19:12, Block of Granite
 gregtech:meta_block_compressed_19:13, Block of Red Garnet
 gregtech:meta_block_compressed_19:14, Block of Yellow Garnet
-gregtech:meta_block_compressed_9:2, Block of Cobaltite
-gregtech:meta_block_compressed_9:3, Block of Sheldonite
-gregtech:meta_block_compressed_9:4, Block of Cupronickel
-gregtech:meta_block_compressed_9:5, Block of Dark Ashes
-gregtech:meta_block_compressed_9:7, Block of Electrum
-gregtech:meta_block_compressed_9:9, Block of Galena
-gregtech:meta_block_compressed_9:10, Block of Garnierite
-gregtech:meta_block_compressed_9:11, Block of Green Sapphire
-gregtech:meta_block_compressed_9:12, Block of Grossular
-gregtech:meta_block_compressed_9:14, Block of Ilmenite
-gregtech:meta_block_compressed_9:15, Block of Rutile
-gregtech:meta_block_compressed_4:0, Block of Molybdenum
-gregtech:meta_block_compressed_4:1, Block of Moscovium
-gregtech:meta_block_compressed_4:2, Block of Neodymium
-gregtech:meta_block_compressed_4:4, Block of Neptunium
-gregtech:meta_block_compressed_4:5, Block of Nickel
-gregtech:meta_block_compressed_4:6, Block of Nihonium
-gregtech:meta_block_compressed_4:7, Block of Niobium
-gregtech:meta_block_compressed_4:9, Block of Nobelium
-gregtech:meta_block_compressed_4:10, Block of Oganesson
-gregtech:meta_block_compressed_4:11, Block of Osmium
-gregtech:meta_block_compressed_4:13, Block of Palladium
-gregtech:meta_block_compressed_4:14, Block of Phosphorus
-gregtech:meta_block_compressed_4:15, Block of Polonium
-gregtech:meta_block_compressed_3:0, Block of Indium
-gregtech:meta_block_compressed_3:1, Block of Iodine
-gregtech:meta_block_compressed_3:2, Block of Iridium
-gregtech:meta_block_compressed_3:5, Block of Lanthanum
-gregtech:meta_block_compressed_3:6, Block of Lawrencium
-gregtech:meta_block_compressed_3:7, Block of Lead
-gregtech:meta_block_compressed_3:8, Block of Lithium
-gregtech:meta_block_compressed_3:9, Block of Livermorium
-gregtech:meta_block_compressed_3:10, Block of Lutetium
-gregtech:meta_block_compressed_3:11, Block of Magnesium
-gregtech:meta_block_compressed_3:12, Block of Mendelevium
-gregtech:meta_block_compressed_3:13, Block of Manganese
-gregtech:meta_block_compressed_3:14, Block of Meitnerium
+gregtech:meta_block_compressed_12:0, Block of Fireclay
+gregtech:meta_block_compressed_12:1, Block of Coke
+gregtech:meta_block_compressed_12:2, Block of Soldering Alloy
+gregtech:meta_block_compressed_12:3, Block of Spessartine
+gregtech:meta_block_compressed_12:4, Block of Sphalerite
+gregtech:meta_block_compressed_12:5, Block of Stainless Steel
+gregtech:meta_block_compressed_12:6, Block of Steel
+gregtech:meta_block_compressed_12:7, Block of Stibnite
+gregtech:meta_block_compressed_12:8, Block of Tanzanite
+gregtech:meta_block_compressed_12:9, Block of Tetrahedrite
+gregtech:meta_block_compressed_12:10, Block of Tin Alloy
+gregtech:meta_block_compressed_12:11, Block of Topaz
+gregtech:meta_block_compressed_12:12, Block of Tungstate
+gregtech:meta_block_compressed_12:13, Block of Ultimet
+gregtech:meta_block_compressed_12:14, Block of Uraninite
+gregtech:meta_block_compressed_12:15, Block of Uvarovite
 gregtech:meta_block_compressed_0:1, Block of Actinium
 gregtech:meta_block_compressed_0:2, Block of Aluminium
 gregtech:meta_block_compressed_0:3, Block of Americium
@@ -14620,46 +14556,110 @@ gregtech:meta_block_compressed_0:11, Block of Bismuth
 gregtech:meta_block_compressed_0:12, Block of Bohrium
 gregtech:meta_block_compressed_0:13, Block of Boron
 gregtech:meta_block_compressed_0:15, Block of Caesium
+gregtech:meta_block_compressed_7:0, Block of Tin
+gregtech:meta_block_compressed_7:1, Block of Titanium
+gregtech:meta_block_compressed_7:3, Block of Tungsten
+gregtech:meta_block_compressed_7:4, Block of Uranium 238
+gregtech:meta_block_compressed_7:5, Block of Uranium 235
+gregtech:meta_block_compressed_7:6, Block of Vanadium
+gregtech:meta_block_compressed_7:8, Block of Ytterbium
+gregtech:meta_block_compressed_7:9, Block of Yttrium
+gregtech:meta_block_compressed_7:10, Block of Zinc
+gregtech:meta_block_compressed_7:11, Block of Zirconium
+gregtech:meta_block_compressed_7:12, Block of Almandine
+gregtech:meta_block_compressed_7:13, Block of Andradite
+gregtech:meta_block_compressed_7:14, Block of Annealed Copper
+gregtech:meta_block_compressed_7:15, Block of Asbestos
+gregtech:meta_block_compressed_15:0, Block of Hydrated Coal
+gregtech:meta_block_compressed_15:1, Block of Sodium Bicarbonate
+gregtech:meta_block_compressed_15:2, Block of Potassium Dichromate
+gregtech:meta_block_compressed_15:3, Block of Chromium Trioxide
+gregtech:meta_block_compressed_15:4, Block of Antimony Trioxide
+gregtech:meta_block_compressed_15:5, Block of Zincite
+gregtech:meta_block_compressed_15:6, Block of Cupric Oxide
+gregtech:meta_block_compressed_15:7, Block of Cobalt Oxide
+gregtech:meta_block_compressed_15:8, Block of Arsenic Trioxide
+gregtech:meta_block_compressed_15:9, Block of Massicot
+gregtech:meta_block_compressed_15:10, Block of Ferrosilite
+gregtech:meta_block_compressed_15:11, Block of Metal Mixture
+gregtech:meta_block_compressed_15:12, Block of Sodium Hydroxide
+gregtech:meta_block_compressed_11:0, Block of Polysiloxane
+gregtech:meta_block_compressed_11:1, Block of Polycaprolactam
+gregtech:meta_block_compressed_11:2, Block of Polytetrafluoroethylene (PTFE)
+gregtech:meta_block_compressed_11:3, Block of Powellite
+gregtech:meta_block_compressed_11:4, Block of Pyrite
+gregtech:meta_block_compressed_11:5, Block of Pyrolusite
+gregtech:meta_block_compressed_11:6, Block of Pyrope
+gregtech:meta_block_compressed_11:7, Block of Rock Salt
+gregtech:meta_block_compressed_11:8, Block of Rubber
+gregtech:meta_block_compressed_11:9, Block of Ruby
+gregtech:meta_block_compressed_11:10, Block of Salt
+gregtech:meta_block_compressed_11:11, Block of Saltpeter
+gregtech:meta_block_compressed_11:12, Block of Sapphire
+gregtech:meta_block_compressed_11:13, Block of Scheelite
+gregtech:meta_block_compressed_11:14, Block of Sodalite
+gregtech:meta_block_compressed_6:0, Block of Scandium
+gregtech:meta_block_compressed_6:1, Block of Seaborgium
+gregtech:meta_block_compressed_6:2, Block of Selenium
+gregtech:meta_block_compressed_6:3, Block of Silicon
+gregtech:meta_block_compressed_6:4, Block of Silver
+gregtech:meta_block_compressed_6:5, Block of Sodium
+gregtech:meta_block_compressed_6:6, Block of Strontium
+gregtech:meta_block_compressed_6:7, Block of Sulfur
+gregtech:meta_block_compressed_6:8, Block of Tantalum
+gregtech:meta_block_compressed_6:9, Block of Technetium
+gregtech:meta_block_compressed_6:10, Block of Tellurium
+gregtech:meta_block_compressed_6:11, Block of Tennessine
+gregtech:meta_block_compressed_6:12, Block of Terbium
+gregtech:meta_block_compressed_6:13, Block of Thorium
+gregtech:meta_block_compressed_6:14, Block of Thallium
+gregtech:meta_block_compressed_6:15, Block of Thulium
+gregtech:meta_block_compressed_14:0, Block of Enargite
+gregtech:meta_block_compressed_14:1, Block of Tennantite
+gregtech:meta_block_compressed_14:2, Block of Gallium Arsenide
+gregtech:meta_block_compressed_14:3, Block of Potash
+gregtech:meta_block_compressed_14:4, Block of Soda Ash
+gregtech:meta_block_compressed_14:5, Block of Indium Gallium Phosphide
+gregtech:meta_block_compressed_14:6, Block of Nickel Zinc Ferrite
+gregtech:meta_block_compressed_14:7, Block of Silicon Dioxide
+gregtech:meta_block_compressed_14:8, Block of Magnesium Chloride
+gregtech:meta_block_compressed_14:9, Block of Sodium Sulfide
+gregtech:meta_block_compressed_14:10, Block of Phosphorus Pentoxide
+gregtech:meta_block_compressed_14:11, Block of Quicklime
+gregtech:meta_block_compressed_14:12, Block of Sodium Bisulfate
+gregtech:meta_block_compressed_14:13, Block of Ferrite Mixture
+gregtech:meta_block_compressed_14:14, Block of Magnesia
+gregtech:meta_block_compressed_14:15, Block of Platinum Group Sludge
+gregtech:meta_block_compressed_4:0, Block of Molybdenum
+gregtech:meta_block_compressed_4:1, Block of Moscovium
+gregtech:meta_block_compressed_4:2, Block of Neodymium
+gregtech:meta_block_compressed_4:4, Block of Neptunium
+gregtech:meta_block_compressed_4:5, Block of Nickel
+gregtech:meta_block_compressed_4:6, Block of Nihonium
+gregtech:meta_block_compressed_4:7, Block of Niobium
+gregtech:meta_block_compressed_4:9, Block of Nobelium
+gregtech:meta_block_compressed_4:10, Block of Oganesson
+gregtech:meta_block_compressed_4:11, Block of Osmium
+gregtech:meta_block_compressed_4:13, Block of Palladium
+gregtech:meta_block_compressed_4:14, Block of Phosphorus
+gregtech:meta_block_compressed_4:15, Block of Polonium
 gregtech:meta_block_compressed_24:0, Block of Cocoa
 gregtech:meta_block_compressed_24:2, Block of Mince Meat
-gregtech:meta_block_compressed_17:0, Block of Paper
-gregtech:meta_block_compressed_17:1, Block of Rare Earth
-gregtech:meta_block_compressed_17:5, Block of Nether Star
-gregtech:meta_block_compressed_17:9, Block of Collagen
-gregtech:meta_block_compressed_17:10, Block of Gelatin
-gregtech:meta_block_compressed_17:11, Block of Agar
-gregtech:meta_block_compressed_17:13, Block of Perlite
-gregtech:meta_block_compressed_17:14, Block of Borax
-gregtech:meta_block_compressed_17:15, Block of Lignite Coal
-gregtech:meta_block_compressed_1:0, Block of Calcium
-gregtech:meta_block_compressed_1:1, Block of Californium
-gregtech:meta_block_compressed_1:2, Block of Carbon
-gregtech:meta_block_compressed_1:3, Block of Cadmium
-gregtech:meta_block_compressed_1:4, Block of Cerium
-gregtech:meta_block_compressed_1:6, Block of Chrome
-gregtech:meta_block_compressed_1:7, Block of Cobalt
-gregtech:meta_block_compressed_1:8, Block of Copernicium
-gregtech:meta_block_compressed_1:9, Block of Copper
-gregtech:meta_block_compressed_1:10, Block of Curium
-gregtech:meta_block_compressed_1:11, Block of Darmstadtium
-gregtech:meta_block_compressed_1:13, Block of Dubnium
-gregtech:meta_block_compressed_1:14, Block of Dysprosium
-gregtech:meta_block_compressed_1:15, Block of Einsteinium
-gregtech:frame_polytetrafluoroethylene, tile.frame.name
-gregtech:frame_bronze, tile.frame.name
-gregtech:frame_stainless_steel, tile.frame.name
-gregtech:frame_titanium, tile.frame.name
-gregtech:frame_blue_steel, tile.frame.name
+gregtech:frame_aluminium, tile.frame.name
 gregtech:frame_invar, tile.frame.name
-gregtech:frame_iron, tile.frame.name
 gregtech:frame_neutronium, tile.frame.name
-gregtech:frame_steel, tile.frame.name
 gregtech:frame_tungsten_steel, tile.frame.name
 gregtech:frame_hsse, tile.frame.name
-gregtech:frame_aluminium, tile.frame.name
+gregtech:frame_steel, tile.frame.name
 gregtech:frame_wood, tile.frame.name
+gregtech:frame_polytetrafluoroethylene, tile.frame.name
 gregtech:frame_hssg, tile.frame.name
 gregtech:frame_tritanium, tile.frame.name
+gregtech:frame_iron, tile.frame.name
+gregtech:frame_titanium, tile.frame.name
+gregtech:frame_bronze, tile.frame.name
+gregtech:frame_blue_steel, tile.frame.name
+gregtech:frame_stainless_steel, tile.frame.name
 horsepower:flour, Flour
 horsepower:dough, Dough
 horsepower:hand_grindstone, Grindstone
@@ -18372,225 +18372,20 @@ chiselsandbits:block_bit:0, Chiseled Bit - Cracked Dark Concrete Bricks
 chiselsandbits:block_bit:0, Chiseled Bit - Mossy Dark Concrete Bricks
 chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Dark Concrete Bricks
 chiselsandbits:block_bit:0, Chiseled Bit - Rubber Wood East/West
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Scandium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Seaborgium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Selenium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Silicon
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Silver
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Strontium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sulfur
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tantalum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Technetium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tellurium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tennessine
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Terbium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Thorium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Thallium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Thulium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Bauxite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Invar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Kanthal
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lazurite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnalium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Molybdenite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nichrome
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium Nitride
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium-Titanium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Obsidian
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Pig Iron
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Polyethylene (PE)
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Epoxy Resin
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Enargite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tennantite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Gallium Arsenide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Potash
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Soda Ash
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Indium Gallium Phosphide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nickel Zinc Ferrite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Silicon Dioxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesium Chloride
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Sulfide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphorus Pentoxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Quicklime
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Bisulfate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ferrite Mixture
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesia
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Platinum Group Sludge
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sugar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vinteum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Redrock
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium Feldspar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Biotite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Black Granite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chrysotile
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Realgar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium Magnetite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Basaltic Mineral Sand
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Granitic Mineral Sand
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Garnet Sand
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Quartz Sand
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Bastnasite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Pentlandite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Fireclay
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Coke
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Soldering Alloy
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Spessartine
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sphalerite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Stainless Steel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Steel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Stibnite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tanzanite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tetrahedrite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin Alloy
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Topaz
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungstate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ultimet
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Uraninite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Uvarovite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-S
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Diamericium Titanium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Potin
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadah
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadah Alloy
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Enriched Naquadah
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadria
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Neutronium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tritanium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Duranium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Trinium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Adamantium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vibranium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Taranium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Fluxed Electrum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Titanium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungsten
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Uranium 238
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Uranium 235
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ytterbium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Yttrium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Zinc
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Zirconium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Almandine
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Andradite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Annealed Copper
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Asbestos
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Erbium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Europium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Fermium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Flerovium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Francium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Gadolinium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Gallium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Germanium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Hafnium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Hassium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Holmium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Platinum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Plutonium 239
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Plutonium 241
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Praseodymium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Promethium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Protactinium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Radium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rhenium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rhodium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Roentgenium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rubidium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ruthenium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rutherfordium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Samarium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Alunite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Dolomite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Wollastonite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Zeolite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Kyanite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Kaolinite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Talc
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Soapstone
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Iron
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Steel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Neodymium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungstencarbide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadiumsteel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-G
-chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-E
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Polysiloxane
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Polycaprolactam
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Polytetrafluoroethylene (PTFE)
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Powellite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrolusite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrope
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rock Salt
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rubber
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ruby
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Salt
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Saltpeter
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sapphire
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Scheelite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodalite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Olivine
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Opal
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Amethyst
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Enderpearl
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Endereye
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Flint
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Diatomite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Niter
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tantalite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Apatite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sterling Silver
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rose Gold
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Black Bronze
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Hydrated Coal
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Bicarbonate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium Dichromate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chromium Trioxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Antimony Trioxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Zincite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cupric Oxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobalt Oxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Arsenic Trioxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Massicot
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ferrosilite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Metal Mixture
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Hydroxide
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ashes
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Banded Iron
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Battery Alloy
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Blue Topaz
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Brass
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Bronze
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Brown Limonite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Calcite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cassiterite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cassiterite Sand
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chalcopyrite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Charcoal
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chromite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cinnabar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium-Gallium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Wrought Iron
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Wulfenite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Yellow Limonite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Yttrium Barium Cuprate
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Certus Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Quartzite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Graphite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Graphene
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Jasper
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Osmiridium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Tenorite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cuprite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Bornite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chalcocite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Calcium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Californium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Carbon
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cadmium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cerium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chrome
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobalt
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Copernicium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Copper
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Curium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Darmstadtium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Dubnium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Dysprosium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Einsteinium
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Silicone Rubber
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Polystyrene
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Raw Styrene-Butadiene Rubber
@@ -18618,6 +18413,168 @@ chiselsandbits:block_bit:0, Chiseled Bit - Block of Mica
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Trona
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Barite
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Gypsum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Platinum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Plutonium 239
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Plutonium 241
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Praseodymium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Promethium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Protactinium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Radium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rhenium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rhodium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Roentgenium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rubidium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ruthenium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rutherfordium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Samarium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-S
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Diamericium Titanium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Potin
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadah
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadah Alloy
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Enriched Naquadah
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Naquadria
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Neutronium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tritanium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Duranium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Trinium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Adamantium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vibranium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Taranium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Fluxed Electrum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Alunite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Dolomite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Wollastonite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Zeolite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Kyanite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Kaolinite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Talc
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Soapstone
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Iron
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Steel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetic Neodymium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungstencarbide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadiumsteel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-G
+chiselsandbits:block_bit:0, Chiseled Bit - Block of HSS-E
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sugar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vinteum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Redrock
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium Feldspar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Biotite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Black Granite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chrysotile
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Realgar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium Magnetite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Basaltic Mineral Sand
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Granitic Mineral Sand
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Garnet Sand
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Quartz Sand
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Bastnasite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Pentlandite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ashes
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Banded Iron
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Battery Alloy
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Blue Topaz
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Brass
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Bronze
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Brown Limonite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Calcite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cassiterite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cassiterite Sand
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chalcopyrite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Charcoal
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chromite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cinnabar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Bauxite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Invar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Kanthal
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lazurite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnalium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnetite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Molybdenite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nichrome
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium Nitride
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium-Titanium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Obsidian
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Pig Iron
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Polyethylene (PE)
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Epoxy Resin
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium-Gallium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Wrought Iron
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Wulfenite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Yellow Limonite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Yttrium Barium Cuprate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Certus Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Quartzite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Graphite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Graphene
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Jasper
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Osmiridium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tenorite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cuprite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Bornite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chalcocite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Indium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Iodine
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Iridium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lanthanum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lawrencium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lead
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lithium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Livermorium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lutetium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Mendelevium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Manganese
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Meitnerium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobaltite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sheldonite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cupronickel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Dark Ashes
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Electrum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Galena
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Garnierite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Green Sapphire
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Grossular
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ilmenite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rutile
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Erbium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Europium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Fermium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Flerovium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Francium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Gadolinium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Gallium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Germanium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Hafnium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Hassium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Holmium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Paper
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rare Earth
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nether Star
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Collagen
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Gelatin
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Agar
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Perlite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Borax
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lignite Coal
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Olivine
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Opal
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Amethyst
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Enderpearl
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Endereye
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Flint
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Diatomite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Niter
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tantalite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Apatite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sterling Silver
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rose Gold
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Black Bronze
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Bismuth Bronze
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Black Steel
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Red Steel
@@ -18633,43 +18590,22 @@ chiselsandbits:block_bit:0, Chiseled Bit - Block of Diorite
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Granite
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Red Garnet
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Yellow Garnet
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobaltite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sheldonite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cupronickel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Dark Ashes
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Electrum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Galena
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Garnierite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Green Sapphire
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Grossular
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Ilmenite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rutile
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Molybdenum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Moscovium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Neodymium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Neptunium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nickel
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nihonium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nobelium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Oganesson
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Osmium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Palladium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphorus
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Polonium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Indium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Iodine
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Iridium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lanthanum
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lawrencium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lead
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lithium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Livermorium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lutetium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Mendelevium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Manganese
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Meitnerium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Fireclay
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Coke
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Soldering Alloy
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Spessartine
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sphalerite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Stainless Steel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Steel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Stibnite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tanzanite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tetrahedrite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin Alloy
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Topaz
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungstate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ultimet
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Uraninite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Uvarovite
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Actinium
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Aluminium
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Americium
@@ -18683,31 +18619,95 @@ chiselsandbits:block_bit:0, Chiseled Bit - Block of Bismuth
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Bohrium
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Boron
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Caesium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Titanium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tungsten
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Uranium 238
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Uranium 235
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Vanadium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ytterbium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Yttrium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Zinc
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Zirconium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Almandine
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Andradite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Annealed Copper
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Asbestos
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Hydrated Coal
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Bicarbonate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Potassium Dichromate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Chromium Trioxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Antimony Trioxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Zincite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cupric Oxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobalt Oxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Arsenic Trioxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Massicot
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ferrosilite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Metal Mixture
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Hydroxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Polysiloxane
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Polycaprolactam
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Polytetrafluoroethylene (PTFE)
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Powellite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrolusite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Pyrope
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rock Salt
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Rubber
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ruby
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Salt
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Saltpeter
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sapphire
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Scheelite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodalite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Scandium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Seaborgium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Selenium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Silicon
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Silver
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Strontium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sulfur
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tantalum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Technetium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tellurium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tennessine
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Terbium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Thorium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Thallium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Thulium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Enargite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Tennantite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Gallium Arsenide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Potash
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Soda Ash
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Indium Gallium Phosphide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nickel Zinc Ferrite
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Silicon Dioxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesium Chloride
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Sulfide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphorus Pentoxide
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Quicklime
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sodium Bisulfate
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Ferrite Mixture
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Magnesia
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Platinum Group Sludge
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Molybdenum
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Moscovium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Neodymium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Neptunium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nickel
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nihonium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Niobium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Nobelium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Oganesson
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Osmium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Palladium
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Phosphorus
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Polonium
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Cocoa
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Mince Meat
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Paper
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Rare Earth
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Nether Star
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Collagen
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Gelatin
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Agar
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Perlite
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Borax
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lignite Coal
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Calcium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Californium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Carbon
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cadmium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cerium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Chrome
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Cobalt
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Copernicium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Copper
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Curium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Darmstadtium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Dubnium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Dysprosium
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Einsteinium
 chiselsandbits:block_bit:0, Chiseled Bit - Aqumarine Andesite Sand
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
