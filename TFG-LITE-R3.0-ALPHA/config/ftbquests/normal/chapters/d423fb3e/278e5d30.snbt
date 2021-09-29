@@ -1,12 +1,11 @@
 {
-	x: -1.0d,
-	y: -1.5d,
+	x: -3.0d,
+	y: 3.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeextractor.subtitle}",
 	dependencies: [
-		"81574e53"
+		"5347bf68"
 	],
-	hide: true,
 	tasks: [{
 		uid: "9b3347b1",
 		type: "item",

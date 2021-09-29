@@ -1,13 +1,11 @@
 {
-	x: 0.0d,
-	y: -2.5d,
+	x: -5.0d,
+	y: 3.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeforgehammer.subtitle}",
 	dependencies: [
-		"2d444c7e"
+		"5347bf68"
 	],
-	hide: true,
-	optional: true,
 	tasks: [{
 		uid: "786218e1",
 		type: "item",

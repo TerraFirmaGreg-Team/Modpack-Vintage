@@ -17,16 +17,16 @@
 	tasks: [{
 		uid: "512baf30",
 		type: "fluid",
-		fluid: "sulfuric_coal_tar_oil"
+		fluid: "water"
 	},
 	{
 		uid: "44b0dbb9",
 		type: "fluid",
-		fluid: "coal_tar_oil"
+		fluid: "water"
 	},
 	{
 		uid: "9e374c81",
 		type: "fluid",
-		fluid: "coal_tar"
+		fluid: "water"
 	}]
 }

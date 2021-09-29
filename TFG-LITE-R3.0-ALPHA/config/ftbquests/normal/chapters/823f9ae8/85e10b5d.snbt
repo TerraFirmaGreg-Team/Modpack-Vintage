@@ -28,15 +28,15 @@
 			}
 		}
 	},
-	x: -8.0d,
+	x: -5.5d,
 	y: -4.5d,
-	shape: "hexagon",
+	shape: "gear",
 	description: "{tfg.quests.primitive.ironingot.subtitle}",
 	dependencies: [
-		"b0bada7a",
 		"1779861a",
 		"e5774e54"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "1a05161b",
 		type: "item",

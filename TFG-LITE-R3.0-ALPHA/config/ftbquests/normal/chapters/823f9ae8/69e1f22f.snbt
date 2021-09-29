@@ -1,0 +1,14 @@
+{
+	x: -22.0d,
+	y: 9.5d,
+	dependencies: [
+		"ffb7544a"
+	],
+	tasks: [{
+		uid: "57c04075",
+		type: "item",
+		items: [{
+			item: "horsepower:press"
+		}]
+	}]
+}

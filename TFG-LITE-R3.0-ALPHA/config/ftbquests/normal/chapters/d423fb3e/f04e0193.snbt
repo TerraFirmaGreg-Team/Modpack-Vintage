@@ -1,17 +1,17 @@
 {
 	title: "{tfg.quests.steam.basiccircuit.title}",
 	x: -9.0d,
-	y: -9.0d,
+	y: -10.5d,
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
 	dependencies: [
-		"e23bc585"
+		"ddb726c3"
 	],
 	hide: true,
 	tasks: [{
-		uid: "3eb879d5",
+		uid: "976dc000",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_2 1 32487"
+			item: "gregtech:meta_item_1 1 312"
 		}]
 	}]
 }

@@ -9,8 +9,8 @@
 			}
 		}
 	},
-	x: -21.0d,
-	y: -10.5d,
+	x: -23.5d,
+	y: -12.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.meat.subtitle}",
 	text: [

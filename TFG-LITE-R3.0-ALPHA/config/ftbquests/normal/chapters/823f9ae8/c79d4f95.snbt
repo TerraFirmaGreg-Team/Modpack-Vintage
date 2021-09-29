@@ -1,13 +1,13 @@
 {
 	title: "{tfg.quests.primitive.steelanvil.title}",
-	x: -1.2d,
-	y: -6.0d,
-	shape: "square",
+	x: 4.0d,
+	y: -11.5d,
+	shape: "gear",
 	description: "{tfg.quests.primitive.steelanvil.subtitle}",
 	dependencies: [
-		"da7d16a1"
+		"42f9d938"
 	],
-	size: 1.2d,
+	size: 3.0d,
 	tasks: [{
 		uid: "548cab83",
 		type: "item",

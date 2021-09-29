@@ -1,15 +1,13 @@
 {
 	title: "{tfg.quests.primitive.copperanvil.title}",
-	x: -12.5d,
-	y: -4.5d,
-	shape: "square",
+	x: -17.5d,
+	y: -11.5d,
+	shape: "gear",
 	description: "{tfg.quests.primitive.copperanvil.subtitle}",
 	dependencies: [
-		"01aaa85a",
-		"6f433082",
-		"9f1afc5f",
-		"3aac6d33"
+		"f16e0649"
 	],
+	size: 3.0d,
 	tasks: [{
 		uid: "eea1b355",
 		type: "item",

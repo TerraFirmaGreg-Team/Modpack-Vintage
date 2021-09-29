@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.woodchest.title}",
 	icon: "minecraft:chest",
-	x: -18.5d,
-	y: -10.5d,
+	x: -10.5d,
+	y: 0.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.woodchest.subtitle}",
 	dependencies: [

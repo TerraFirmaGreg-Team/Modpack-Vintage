@@ -4,7 +4,7 @@
 	tasks: [{
 		uid: "7bdedee2",
 		type: "fluid",
-		fluid: "ytterbium_178"
+		fluid: "water"
 	}],
 	rewards: [{
 		uid: "9241db3c",

@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.obsidian.title}",
-	x: 7.0d,
-	y: 0.0d,
+	x: 13.5d,
+	y: -7.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.obsidian.subtitle}",
 	dependencies: [
-		"b4eca65b",
-		"5805de92"
+		"a64833dd",
+		"b4eca65b"
 	],
 	tasks: [{
 		uid: "4c40934e",

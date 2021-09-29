@@ -1,6 +1,6 @@
 {
 	title: "{imm.quests.mendeleevtable.era.title}",
-	icon: "gregtech:meta_item_1 1 32005",
+	icon: "gregtech:meta_gear 1 361",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "square"

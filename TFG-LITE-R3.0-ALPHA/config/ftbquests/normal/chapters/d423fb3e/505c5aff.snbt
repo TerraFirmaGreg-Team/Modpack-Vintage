@@ -6,12 +6,11 @@
 	dependencies: [
 		"7d03eeb7"
 	],
-	hide: true,
 	tasks: [{
-		uid: "9eee5f62",
+		uid: "417846cd",
 		type: "item",
 		items: [{
-			item: "gregtech:machine_casing 1 11"
+			item: "gregtech:steam_casing 1 1"
 		}]
 	}]
 }

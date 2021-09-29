@@ -1,0 +1,31 @@
+{
+	x: -20.5d,
+	y: -2.0d,
+	dependencies: [
+		"36e579cb",
+		"57406373"
+	],
+	tasks: [{
+		uid: "dab7e5cc",
+		type: "item",
+		items: [{
+			id: "tfc:metal/pick/copper",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	x: 10.5d,
+	y: -7.5d,
+	dependencies: [
+		"f7244dc3"
+	],
+	tasks: [{
+		uid: "919a3245",
+		type: "item",
+		items: [{
+			id: "tfc:metal/pick/black_steel",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

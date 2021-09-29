@@ -9,9 +9,9 @@
 			}
 		}
 	},
-	x: -12.5d,
-	y: -7.5d,
-	shape: "diamond",
+	x: -22.0d,
+	y: -5.5d,
+	shape: "pentagon",
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,
 	dependencies: [

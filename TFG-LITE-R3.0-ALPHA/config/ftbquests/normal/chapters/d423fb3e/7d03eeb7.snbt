@@ -4,9 +4,8 @@
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeingot.subtitle}",
 	dependencies: [
-		"2e627990"
+		"8fdd423e"
 	],
-	hide: true,
 	tasks: [{
 		uid: "87e13187",
 		type: "item",

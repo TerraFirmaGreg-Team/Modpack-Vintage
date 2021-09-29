@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.grinder.title}",
 	icon: "tfc:handstone",
-	x: -14.5d,
-	y: -7.0d,
+	x: -22.0d,
+	y: -2.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.grinder.subtitle}",
 	dependencies: [
-		"e94b7b0e"
+		"01aaa85a"
 	],
 	tasks: [{
 		uid: "7c78b386",

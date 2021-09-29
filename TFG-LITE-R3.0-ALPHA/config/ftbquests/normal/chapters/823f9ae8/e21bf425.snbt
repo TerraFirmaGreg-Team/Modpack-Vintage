@@ -1,17 +1,14 @@
 {
-	title: "{tfg.quests.primitive.firstpickaxe.title}",
-	x: -16.5d,
-	y: -6.0d,
-	shape: "hexagon",
-	description: "{tfg.quests.primitive.firstpickaxe.subtitle}",
+	x: -8.0d,
+	y: -11.5d,
 	dependencies: [
-		"57406373"
+		"1e9658b7"
 	],
 	tasks: [{
-		uid: "7772dc41",
+		uid: "87930b58",
 		type: "item",
 		items: [{
-			id: "tfc:metal/pick/copper",
+			id: "tfc:metal/double_sheet/bismuth_bronze",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -28,7 +25,7 @@
 			}
 		},
 		{
-			id: "tfc:metal/pick/bismuth_bronze",
+			id: "tfc:metal/double_sheet/black_bronze",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -45,24 +42,7 @@
 			}
 		},
 		{
-			id: "tfc:metal/pick/black_bronze",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "tfc:metal/pick/bronze",
+			id: "tfc:metal/double_sheet/bronze",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -78,7 +58,6 @@
 				}
 			}
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		count: 8L
 	}]
 }

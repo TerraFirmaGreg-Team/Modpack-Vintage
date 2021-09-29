@@ -1,80 +1,25 @@
 {
 	title: "{tfg.quests.primitive.bluesteelingot.title}",
-	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 10233s,
-		ForgeCaps: {
-			"tfc:item_forge": {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
-	x: 3.0d,
-	y: -2.0d,
+	x: 10.5d,
+	y: -5.5d,
 	description: "{tfg.quests.primitive.bluesteelingot.subtitle}",
 	dependencies: [
-		"93eccd0d",
-		"3989dc22",
-		"da7d16a1",
-		"f7244dc3",
-		"68bfa880"
+		"f7244dc3"
 	],
 	tasks: [{
 		uid: "86d445e0",
 		type: "item",
 		items: [{
-			id: "tfc:metal/ingot/blue_steel",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBlueSteel"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_item_1",
-			Damage: 10233s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "ingotBlueSteel"
 				}
 			}
 		}]

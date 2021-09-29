@@ -10,8 +10,8 @@
 			}
 		}
 	},
-	x: -25.5d,
-	y: -10.5d,
+	x: -29.5d,
+	y: -12.5d,
 	shape: "pentagon",
 	dependencies: [
 		"7f2aa00c"

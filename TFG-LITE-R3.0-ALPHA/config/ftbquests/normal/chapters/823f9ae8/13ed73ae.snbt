@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.diamond.title}",
 	icon: "tfc:gem/diamond 1 4",
-	x: -24.0d,
+	x: -29.5d,
 	y: -2.5d,
 	description: "{tfg.quests.primitive.diamond.subtitle}",
 	dependencies: [

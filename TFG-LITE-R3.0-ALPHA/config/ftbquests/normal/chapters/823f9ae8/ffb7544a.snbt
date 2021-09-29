@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.povodok.title}",
-	x: -10.5d,
-	y: -11.5d,
+	x: -23.5d,
+	y: 8.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.povodok.subtitle}",
 	dependencies: [

@@ -1,0 +1,14 @@
+{
+	x: -1.5d,
+	y: 4.0d,
+	dependencies: [
+		"e887a376"
+	],
+	tasks: [{
+		uid: "df27850d",
+		type: "item",
+		items: [{
+			item: "firmalife:climate_station_4"
+		}]
+	}]
+}

@@ -1,12 +1,11 @@
 {
 	icon: "minecraft:string",
-	x: -7.5d,
-	y: -10.5d,
+	x: -19.5d,
+	y: 6.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.strings.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"b320933e"
+		"91df744a"
 	],
 	tasks: [{
 		uid: "6e91620e",

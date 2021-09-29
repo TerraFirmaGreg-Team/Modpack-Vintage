@@ -1,16 +1,15 @@
 {
-	x: -7.0d,
+	x: -5.0d,
 	y: -4.0d,
 	dependencies: [
 		"e6318f88"
 	],
 	hide: true,
 	tasks: [{
-		uid: "421f36ba",
+		uid: "6a95c337",
 		type: "item",
 		items: [{
-			item: "gregtech:machine_casing 1 13"
-		}],
-		ignore_nbt: 1b
+			item: "gregtech:steam_casing 1 3"
+		}]
 	}]
 }

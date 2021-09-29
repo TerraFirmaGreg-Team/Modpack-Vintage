@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.planks.title}",
 	icon: "tfc:wood/lumber/maple",
-	x: -18.5d,
-	y: -8.5d,
+	x: -10.5d,
+	y: -1.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.planks.subtitle}",
 	dependencies: [

@@ -1,11 +1,10 @@
 {
-	x: -0.5d,
-	y: 1.5d,
+	x: 0.5d,
+	y: 3.0d,
 	description: "{tfg.quests.steam.creosoteoven.subtitle}",
 	dependencies: [
 		"06a42a78"
 	],
-	hide: true,
 	tasks: [{
 		uid: "d2963a7f",
 		type: "item",
@@ -15,19 +14,17 @@
 		count: 24L
 	},
 	{
-		uid: "5e35d5e9",
+		uid: "be903e39",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 527"
-		}],
-		ignore_nbt: 1b
+			item: "gregtech:machine 1 1016"
+		}]
 	},
 	{
-		uid: "d9ab03c8",
+		uid: "4cb6f69d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 526"
-		}],
-		ignore_nbt: 1b
+			item: "gregtech:machine 1 1017"
+		}]
 	}]
 }

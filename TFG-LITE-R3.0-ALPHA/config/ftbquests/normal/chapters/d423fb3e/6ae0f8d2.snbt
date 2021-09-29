@@ -1,0 +1,14 @@
+{
+	x: -10.0d,
+	y: -18.0d,
+	dependencies: [
+		"40c4948a"
+	],
+	tasks: [{
+		uid: "16e14305",
+		type: "item",
+		items: [{
+			item: "tfctech:induction_crucible"
+		}]
+	}]
+}

@@ -1,12 +1,11 @@
 {
-	x: 1.0d,
-	y: 0.0d,
+	x: 2.0d,
+	y: -1.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzealloysmelter.subtitle}",
 	dependencies: [
 		"06a42a78"
 	],
-	hide: true,
 	tasks: [{
 		uid: "8706655a",
 		type: "item",

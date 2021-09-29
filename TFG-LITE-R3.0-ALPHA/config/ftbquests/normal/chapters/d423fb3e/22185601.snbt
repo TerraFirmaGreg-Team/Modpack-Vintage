@@ -1,17 +1,15 @@
 {
-	x: -5.0d,
-	y: -12.0d,
+	x: -7.5d,
+	y: -11.5d,
 	description: "{tfg.quests.steam.bigboiler.subtitle}",
 	dependencies: [
 		"f04e0193"
 	],
-	size: 2.0d,
 	tasks: [{
-		uid: "e6875d19",
+		uid: "c7bbddcd",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 521"
-		}],
-		ignore_nbt: 1b
+			item: "gregtech:machine 1 1012"
+		}]
 	}]
 }

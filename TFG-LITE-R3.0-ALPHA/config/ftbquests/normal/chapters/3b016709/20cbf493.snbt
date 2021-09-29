@@ -14,7 +14,8 @@
 			Damage: 100s,
 			tag: {
 				Charge: 12800L
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

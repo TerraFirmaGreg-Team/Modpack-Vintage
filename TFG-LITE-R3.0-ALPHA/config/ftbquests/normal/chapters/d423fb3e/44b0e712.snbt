@@ -1,8 +1,8 @@
 {
-	x: -7.0d,
-	y: -5.0d,
+	x: -6.5d,
+	y: -4.0d,
 	dependencies: [
-		"aa6b35c3"
+		"e6318f88"
 	],
 	hide: true,
 	tasks: [{
@@ -10,9 +10,6 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 2"
-		},
-		{
-			item: "gregtech:machine 1 6"
 		}],
 		ignore_nbt: 1b
 	}]

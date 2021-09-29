@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.kaolinitepile.title}",
-	x: 0.5d,
-	y: -9.0d,
+	x: -4.0d,
+	y: -15.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
 	hide_dependency_lines: true,
@@ -9,10 +9,10 @@
 		"b320933e"
 	],
 	tasks: [{
-		uid: "c16f3139",
+		uid: "ab70cd4b",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 293"
+			item: "gregtech:meta_dust 1 357"
 		}]
 	}]
 }

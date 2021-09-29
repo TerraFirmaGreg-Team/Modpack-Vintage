@@ -1,14 +1,59 @@
 {
-	x: -9.0d,
-	y: 2.0d,
+	x: -3.0d,
+	y: -8.0d,
 	dependencies: [
 		"5c797ee7"
 	],
 	tasks: [{
-		uid: "cc7d54aa",
+		uid: "b4f458f5",
 		type: "item",
 		items: [{
-			item: "tfctech:smeltery_cauldron"
+			id: "tfctech:ceramics/unfired/glass_block",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "a198340b",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/unfired/glass_pane",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "572c50d4",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/mold/glass_block",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "1eb7973f",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/mold/glass_pane",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		}]
 	}]
 }

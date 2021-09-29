@@ -1,16 +1,15 @@
 {
-	x: 2.5d,
-	y: 0.0d,
+	x: 2.0d,
+	y: 0.5d,
 	description: "{tfg.quests.steam.platemold.subtitle}",
 	dependencies: [
 		"badc22e0"
 	],
-	hide: true,
 	tasks: [{
-		uid: "1de188e5",
+		uid: "47e05996",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 32301"
+			item: "gregtech:meta_item_1 1 12"
 		}]
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.redbluesteelpickaxe.title}",
-	x: 5.5d,
-	y: -1.5d,
+	x: 9.0d,
+	y: -4.5d,
 	description: "{tfg.quests.primitive.redbluesteelpickaxe.subtitle}",
 	dependencies: [
 		"f3758d79",
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			id: "tfc:metal/pick/black_steel",
+			id: "tfc:metal/pick/blue_steel",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,

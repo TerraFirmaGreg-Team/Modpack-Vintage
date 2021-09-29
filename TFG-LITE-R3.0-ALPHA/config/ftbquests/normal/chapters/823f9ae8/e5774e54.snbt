@@ -1,12 +1,11 @@
 {
-	x: -8.4d,
-	y: -6.0d,
+	x: -8.0d,
+	y: -6.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.bloomery.subtitle}",
 	dependencies: [
-		"1e9658b7"
+		"e21bf425"
 	],
-	size: 1.2d,
 	tasks: [{
 		uid: "c7f05678",
 		type: "item",

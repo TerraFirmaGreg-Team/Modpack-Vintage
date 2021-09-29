@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.blueClay.title}",
-	x: -24.0d,
-	y: -7.5d,
+	x: -27.5d,
+	y: -9.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.blueClay.subtitle}",
 	dependencies: [

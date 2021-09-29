@@ -1,0 +1,16 @@
+{
+	x: -5.5d,
+	y: -15.0d,
+	dependencies: [
+		"514c2665",
+		"ed15340a",
+		"aa4a6809"
+	],
+	tasks: [{
+		uid: "54299232",
+		type: "item",
+		items: [{
+			item: "tfctech:latex/vulcanizing_agents"
+		}]
+	}]
+}

@@ -1,17 +1,16 @@
 {
-	x: -3.0d,
-	y: -1.0d,
+	x: -4.5d,
+	y: 2.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzehull.subtitle}",
 	dependencies: [
 		"7d03eeb7"
 	],
-	hide: true,
 	tasks: [{
-		uid: "96559e5f",
+		uid: "6db872b3",
 		type: "item",
 		items: [{
-			item: "gregtech:machine_casing 1 10"
+			item: "gregtech:steam_casing"
 		}]
 	}]
 }

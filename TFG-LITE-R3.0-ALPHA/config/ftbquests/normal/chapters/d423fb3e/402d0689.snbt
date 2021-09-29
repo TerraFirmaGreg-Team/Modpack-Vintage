@@ -1,10 +1,9 @@
 {
-	x: -5.5d,
-	y: -7.0d,
+	x: -6.5d,
+	y: -8.5d,
 	description: "{tfg.quests.steam.blacksteelingot.subtitle}",
 	dependencies: [
-		"707daec8",
-		"6bc19867"
+		"b1879b07"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

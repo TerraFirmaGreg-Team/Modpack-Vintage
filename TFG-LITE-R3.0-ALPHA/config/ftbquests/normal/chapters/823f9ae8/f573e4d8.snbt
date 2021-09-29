@@ -1,6 +1,6 @@
 {
-	x: -9.0d,
-	y: 3.5d,
+	x: -3.0d,
+	y: -9.5d,
 	dependencies: [
 		"5995c91c"
 	],
@@ -23,13 +23,6 @@
 		}]
 	},
 	{
-		uid: "16e8f119",
-		type: "item",
-		items: [{
-			item: "gregtech:meta_item_1 1 2402"
-		}]
-	},
-	{
 		uid: "a5a07fb6",
 		type: "item",
 		items: [{
@@ -38,6 +31,24 @@
 				Parent: {
 					ticks: -1L,
 					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "c0f5c971",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustPotash"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustPotash"
 				}
 			}
 		}]

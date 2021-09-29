@@ -1,12 +1,13 @@
 {
 	title: "{tfg.quests.primitive.saw.title}",
-	x: -19.5d,
-	y: -7.0d,
-	shape: "hexagon",
+	x: -12.5d,
+	y: -2.0d,
+	shape: "octagon",
 	description: "{tfg.quests.primitive.saw.subtitle}",
 	dependencies: [
-		"b51620dd",
-		"57406373"
+		"da02bce6",
+		"106d5c1d",
+		"68bfa880"
 	],
 	tasks: [{
 		uid: "9a3a7d67",

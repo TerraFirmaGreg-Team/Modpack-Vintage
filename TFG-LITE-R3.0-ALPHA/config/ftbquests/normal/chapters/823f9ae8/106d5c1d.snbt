@@ -29,8 +29,8 @@
 			}
 		}
 	},
-	x: -14.5d,
-	y: -5.5d,
+	x: -12.5d,
+	y: -4.5d,
 	dependencies: [
 		"57406373",
 		"b51620dd"
@@ -39,58 +39,13 @@
 		uid: "58c9e19f",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_item_1",
-			Damage: 10095s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 10095"
 		},
 		{
-			id: "gregtech:meta_item_1",
-			Damage: 10229s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 10229"
 		},
 		{
-			id: "gregtech:meta_item_1",
-			Damage: 10230s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_item_1 1 10230"
 		},
 		{
 			id: "tfc:metal/ingot/bismuth_bronze",

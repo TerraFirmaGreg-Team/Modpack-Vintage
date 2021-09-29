@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.tfcblastfurnace.title}",
-	x: -4.0d,
+	x: 1.0d,
 	y: -4.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.tfcblastfurnace.subtitle}",

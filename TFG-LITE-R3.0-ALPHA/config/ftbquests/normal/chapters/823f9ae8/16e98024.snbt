@@ -1,0 +1,21 @@
+{
+	x: -5.5d,
+	y: -13.0d,
+	dependencies: [
+		"6cec6109",
+		"addc1b8a"
+	],
+	tasks: [{
+		uid: "93b291da",
+		type: "item",
+		items: [{
+			id: "tfctech:latex/rubber_mix",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

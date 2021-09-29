@@ -9,8 +9,8 @@
 			}
 		}
 	},
-	x: -25.0d,
-	y: -9.0d,
+	x: -29.5d,
+	y: -11.0d,
 	dependencies: [
 		"e4dda908"
 	],
@@ -162,58 +162,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		}]
-	},
-	{
-		uid: "9f2dec23",
-		type: "item",
-		items: [{
-			id: "firmalife:unfired_mallet_mold",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		}]
-	},
-	{
-		uid: "26b1a4e0",
-		type: "item",
-		items: [{
-			id: "tfctech:ceramics/unfired/glass_block",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		}]
-	},
-	{
-		uid: "ab671711",
-		type: "item",
-		items: [{
-			id: "tfctech:ceramics/unfired/glass_pane",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		}]
-	},
-	{
-		uid: "609f69c9",
-		type: "item",
-		items: [{
-			id: "tfcthings:mold/unfired/prospectors_hammer_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,

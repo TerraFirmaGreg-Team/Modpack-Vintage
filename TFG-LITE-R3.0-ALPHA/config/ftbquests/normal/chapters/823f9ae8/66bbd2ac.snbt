@@ -1,9 +1,8 @@
 {
 	title: "{tfg.quests.primitive.rawHide.title}",
 	icon: "tfc:hide/prepared/large",
-	x: -17.0d,
-	y: -10.5d,
-	shape: "diamond",
+	x: -23.5d,
+	y: -6.5d,
 	description: "{tfg.quests.primitive.rawHide.subtitle}",
 	text: [
 		""

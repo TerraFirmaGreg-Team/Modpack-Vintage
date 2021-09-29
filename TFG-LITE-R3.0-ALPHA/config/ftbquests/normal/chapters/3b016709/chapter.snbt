@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.lv.era.title}",
-	icon: "gregtech:meta_item_2 1 26184",
+	icon: "enderio:item_material 1 11",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"

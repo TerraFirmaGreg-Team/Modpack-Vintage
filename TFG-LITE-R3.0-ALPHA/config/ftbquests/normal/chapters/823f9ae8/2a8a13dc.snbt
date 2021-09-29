@@ -1,7 +1,7 @@
 {
-	x: -17.5d,
-	y: -1.0d,
-	shape: "square",
+	x: -13.5d,
+	y: -5.5d,
+	shape: "rsquare",
 	description: "{tfg.quests.primitive.weakdowsingrod.subtitle}",
 	dependencies: [
 		"106d5c1d"

@@ -1,10 +1,10 @@
 {
-	x: -14.5d,
-	y: -4.5d,
+	x: -20.5d,
+	y: -7.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperhammer.subtitle}",
 	dependencies: [
-		"acf7d08d"
+		"57406373"
 	],
 	tasks: [{
 		uid: "dd5d54d3",

@@ -1,6 +1,6 @@
 {
-	x: -8.0d,
-	y: 5.0d,
+	x: -4.0d,
+	y: -11.0d,
 	dependencies: [
 		"f573e4d8"
 	],
@@ -9,6 +9,13 @@
 		type: "item",
 		items: [{
 			item: "minecraft:glass"
+		}]
+	},
+	{
+		uid: "e42a5e87",
+		type: "item",
+		items: [{
+			item: "minecraft:glass_pane"
 		}]
 	}]
 }
