@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: -18.0d,
+	dependencies: [
+		"40c4948a"
+	],
+	tasks: [{
+		uid: "5192016f",
+		type: "item",
+		items: [{
+			item: "tfctech:fridge"
+		}]
+	}]
+}

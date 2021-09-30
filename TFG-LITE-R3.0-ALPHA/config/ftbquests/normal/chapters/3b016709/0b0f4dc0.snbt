@@ -1,0 +1,93 @@
+{
+	title: "123",
+	x: 2.0d,
+	y: 1.0d,
+	dependencies: [
+		"c2728764"
+	],
+	tasks: [{
+		uid: "9c73a790",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_bauxite_0"
+		},
+		{
+			item: "gregtech:ore_green_sapphire_0"
+		},
+		{
+			item: "gregtech:ore_sapphire_0"
+		},
+		{
+			item: "gregtech:ore_rutile_0"
+		},
+		{
+			item: "gregtech:ore_ruby_0"
+		},
+		{
+			item: "gregtech:ore_spodumene_0"
+		},
+		{
+			item: "gregtech:ore_blue_topaz_0"
+		},
+		{
+			item: "gregtech:meta_dust 1 144"
+		},
+		{
+			item: "gregtech:meta_dust 1 356"
+		},
+		{
+			item: "gregtech:ore_topaz_0"
+		},
+		{
+			item: "gregtech:meta_dust 1 323"
+		},
+		{
+			item: "gregtech:meta_dust 1 337"
+		},
+		{
+			item: "gregtech:meta_dust 1 352"
+		},
+		{
+			item: "gregtech:ore_lepidolite_0"
+		},
+		{
+			item: "gregtech:ore_sodalite_0"
+		},
+		{
+			item: "gregtech:ore_glauconite_0"
+		},
+		{
+			item: "gregtech:meta_dust 1 340"
+		},
+		{
+			item: "gregtech:meta_dust 1 348"
+		},
+		{
+			item: "gregtech:meta_dust 1 163"
+		},
+		{
+			item: "gregtech:meta_dust 1 182"
+		},
+		{
+			item: "gregtech:meta_dust 1 156"
+		},
+		{
+			item: "gregtech:ore_spessartine_0"
+		},
+		{
+			item: "gregtech:ore_tanzanite_0"
+		},
+		{
+			item: "gregtech:meta_dust 1 324"
+		},
+		{
+			item: "gregtech:ore_almandine_0"
+		},
+		{
+			item: "gregtech:ore_emerald_0"
+		},
+		{
+			item: "gregtech:meta_dust 1 341"
+		}]
+	}]
+}
