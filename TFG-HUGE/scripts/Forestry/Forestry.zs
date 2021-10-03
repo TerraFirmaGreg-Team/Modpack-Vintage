@@ -4,18 +4,6 @@ import mods.forestry.Carpenter;
 
 //Удаление из JEI
 val RemoveItemsFromJEI as IItemStack[] = [
-	<forestry:ffarm>.withTag({FarmBlock: 7}),
-	<forestry:ffarm>.withTag({FarmBlock: 1}),
-	<forestry:ffarm:4>.withTag({FarmBlock: 7}),
-	<forestry:ffarm:3>.withTag({FarmBlock: 1}),
-	<forestry:ffarm:4>.withTag({FarmBlock: 1}),
-	<forestry:ffarm:3>.withTag({FarmBlock: 7}),
-	<forestry:ffarm:2>.withTag({FarmBlock: 7}),
-	<forestry:ffarm:2>.withTag({FarmBlock: 1}),
-	<forestry:ffarm:5>.withTag({FarmBlock: 7}),
-	<forestry:ffarm:5>.withTag({FarmBlock: 1}),
-	<forestry:ffarm>.withTag({FarmBlock: 4}),
-	<forestry:ffarm>.withTag({FarmBlock: 5}),
 	<forestry:wrench>,
 	<forestry:gear_tin>,
 	<forestry:gear_copper>,
@@ -79,7 +67,37 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<forestry:decaying_wheat>,
 	<forestry:mouldy_wheat>,
 	<forestry:imprinter>,
-	<forestry:grafter_proven>
+	<forestry:grafter_proven>,
+	<forestry:ffarm>.withTag({FarmBlock: 0}),
+	<forestry:ffarm>.withTag({FarmBlock: 1}),
+	<forestry:ffarm>.withTag({FarmBlock: 2}),
+	<forestry:ffarm>.withTag({FarmBlock: 4}),
+	<forestry:ffarm>.withTag({FarmBlock: 5}),
+	<forestry:ffarm>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 0}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 2}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 4}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 5}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 0}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 2}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 4}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 5}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 0}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 2}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 4}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 5}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 7}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 0}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 1}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 2}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 4}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 5}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 7})
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -90,13 +108,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<forestry:sturdy_machine>,
 	<forestry:portable_alyzer>,
 	<forestry:analyzer>,
-	<forestry:ffarm>.withTag({FarmBlock: 0}),
-	<forestry:ffarm>.withTag({FarmBlock: 2}),
-	<forestry:ffarm>.withTag({FarmBlock: 3}),
-	<forestry:ffarm>.withTag({FarmBlock: 6}),
-	<forestry:ffarm>.withTag({FarmBlock: 8}),
-	<forestry:ffarm>.withTag({FarmBlock: 9}),
-	<forestry:ffarm>.withTag({FarmBlock: 10}),
 	<forestry:habitat_locator>,
 	<forestry:frame_untreated>,
 	<forestry:frame_impregnated>,
@@ -116,7 +127,32 @@ val RemoveItemRecipe as IItemStack[] = [
 	<forestry:carpenter>,
 	<forestry:bee_house>,
 	<forestry:apiary>,
-	<forestry:honeyed_slice>
+	<forestry:honeyed_slice>,
+	<forestry:ffarm>.withTag({FarmBlock: 3}),
+	<forestry:ffarm>.withTag({FarmBlock: 6}),
+	<forestry:ffarm>.withTag({FarmBlock: 8}),
+	<forestry:ffarm>.withTag({FarmBlock: 9}),
+	<forestry:ffarm>.withTag({FarmBlock: 10}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 3}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 6}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 8}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 9}),
+	<forestry:ffarm:2>.withTag({FarmBlock: 10}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 3}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 6}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 8}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 9}),
+	<forestry:ffarm:3>.withTag({FarmBlock: 10}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 3}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 6}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 8}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 9}),
+	<forestry:ffarm:4>.withTag({FarmBlock: 10}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 3}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 6}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 8}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 9}),
+	<forestry:ffarm:5>.withTag({FarmBlock: 10})
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -148,6 +184,12 @@ Carpenter.removeRecipe(<forestry:habitat_screen>);
 //Удаление поименно.
 recipes.removeByRecipeName("forestry:greenhouse_window");
 recipes.removeByRecipeName("forestry:greenhouse_window_roof");
+recipes.removeByRecipeName("forestry:greenhouse_fan");
+recipes.removeByRecipeName("forestry:greenhouse_control");
+recipes.removeByRecipeName("forestry:greenhouse_heater");
+recipes.removeByRecipeName("forestry:greenhouse_dehumidifier");
+recipes.removeByRecipeName("forestry:greenhouse_humidifier");
+
 
 //Создание рецептов
 // --- Bee Comb Compressing
@@ -199,6 +241,156 @@ Carpenter.addRecipe(<forestry:apiary>,
 [[<ore:screwCupronickel>, <ore:slabWood>, <ore:screwCupronickel>],
  [<forestry:bee_house>, <ore:beeComb>, <forestry:bee_house>],
  [<ore:fenceWood>, <ore:slabWood>, <ore:fenceWood>]], 500, <liquid:seed.oil> * 2500, <forestry:frame_impregnated>);
+
+// --- Farm Block --- Bricks
+Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 3}),
+[[null, null, null],
+ [<ore:plateCopper>, <ore:brickStone>, <ore:plateCopper>],
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block --- Nether Bricks
+Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 6}),
+[[null, null, null],
+ [<ore:plateCopper>, <minecraft:nether_brick>, <ore:plateCopper>],
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block --- Quartz Block
+Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 8}),
+[[null, null, null],
+ [<ore:plateCopper>, <ore:blockNetherQuartz>, <ore:plateCopper>],
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block --- Chiseled Quartz Block
+Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 9}),
+[[null, null, null],
+ [<ore:plateCopper>, <minecraft:quartz_block:1>, <ore:plateCopper>],
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block --- Pillar Quartz Block
+Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 10}),
+[[null, null, null],
+ [<ore:plateCopper>, <minecraft:quartz_block:2>, <ore:plateCopper>],
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 2 --- Bricks
+Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 3}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
+ [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 2 --- Nether Bricks
+Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 6}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
+ [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 2 --- Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 8}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
+ [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 2 --- Chiseled Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 9}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
+ [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 2 --- Pillar Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 10}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
+ [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 3 --- Bricks
+Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 3}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 3 --- Nether Bricks
+Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 6}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 3 --- Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 8}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 3 --- Chiseled Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 9}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 3 --- Pillar Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 10}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 4 --- Bricks
+Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 3}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 4 --- Nether Bricks
+Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 6}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 4 --- Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 8}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 4 --- Chiseled Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 9}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 4 --- Pillar Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 10}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 5 --- Bricks
+Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 3}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 5 --- Nether Bricks
+Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 6}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 5 --- Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 8}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 5 --- Chiseled Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 9}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
+
+// --- Farm Block 5 --- Pillar Quartz Block
+Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 10}),
+[[null, null, null],
+ [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_2:32487>);
 
 // --- Genetics Processor
 circuit_assembler.recipeBuilder()
@@ -302,128 +494,85 @@ recipes.addShaped(<forestry:bee_house>,
  [<forestry:frame_impregnated>, <forestry:impregnated_casing>, <forestry:frame_impregnated>],
  [<ore:beeComb>, <ore:slabWood>, <ore:beeComb>]]);
 
-//Farms
-//К-Кирпич
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 0}),
-[[null, null, null],
- [<ore:plateCopper>, <ore:brickStone>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Р-К-Кирпич
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 2}),
-[[null, null, null],
- [<ore:plateCopper>, <ore:stoneCracked>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Кирпич
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 3}),
-[[null, null, null],
- [<ore:plateCopper>, <minecraft:brick_block>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Незер кирпич
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 6}),
-[[null, null, null],
- [<ore:plateCopper>, <minecraft:nether_brick>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Кварц 1
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 8}),
-[[null, null, null],
- [<ore:plateCopper>, <ore:blockNetherQuartz>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Кварц 2
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 9}),
-[[null, null, null],
- [<ore:plateCopper>, <minecraft:quartz_block:1>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
- 
-//Кварц 3
-recipes.addShaped(<forestry:ffarm>.withTag({FarmBlock: 10}),
-[[null, null, null],
- [<ore:plateCopper>, <minecraft:quartz_block:2>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
-
-//Обычные крафты
+// --- Обычные крафты
 recipes.addShaped(<forestry:habitat_locator>,
 [[null, <ore:plateCopper>, null],
  [<ore:plateCopper>, <gregtech:meta_item_1:32691>, <ore:plateCopper>],
  [null, <ore:plateCopper>, null]]);
 
-//Рамка простая
+// --- Рамка простая
 recipes.addShaped(<forestry:frame_untreated>,
 [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
  [<ore:stickWood>, <ore:string>, <ore:stickWood>],
  [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 
-//Рамка укрепленная
+// --- Рамка укрепленная
 recipes.addShaped(<forestry:frame_impregnated>,
 [[<forestry:oak_stick>, <forestry:oak_stick>, <forestry:oak_stick>],
  [<forestry:oak_stick>, <ore:string>, <forestry:oak_stick>],
  [<forestry:oak_stick>, <forestry:oak_stick>, <forestry:oak_stick>]]);
 
-//Дымитель
+// --- Дымитель
 recipes.addShaped(<forestry:smoker>,
 [[<ore:leather>, <ore:stickWood>, <ore:plateTin>],
  [<ore:leather>, <minecraft:flint_and_steel>, <ore:plateTin>],
  [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
 
-//Бочка под дождь
+// --- Бочка под дождь
 recipes.addShaped(<forestry:raintank>,
 [[<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>],
  [<ore:plateSteel>, <gregtech:machine:813>, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>]]);
 
-//Создаватель окружающей среды
+// --- Создаватель окружающей среды
 recipes.addShaped(<forestry:habitat_former>,
 [[<ore:paneGlass>, <ore:cableGtOctalRedAlloy>, <ore:paneGlass>],
  [<forestry:thermionic_tubes:6>, <forestry:sturdy_machine>, <forestry:thermionic_tubes:6>],
  [<ore:gearBronze>, <ore:circuitGood>, <ore:gearBronze>]]);
 
-//База данных
+// --- База данных
 recipes.addShaped(<forestry:database>,
 [[<ore:plateCopper>, <forestry:portable_alyzer>, <ore:plateCopper>],
  [<ore:ForestryChests>, <forestry:sturdy_machine>, <ore:ForestryChests>],
  [<ore:plankWood>, <forestry:royal_jelly>, <ore:plankWood>]]);
 
-//Улучшения для пасеки 1
+// --- Улучшения для пасеки 1
 recipes.addShaped(<forestry:alveary.hygro>,
 [[<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>],
  [<ore:paneGlass>, <forestry:alveary.plain>, <ore:paneGlass>],
  [<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>]]);
 
-//Улучшения для пасеки 2
+// --- Улучшения для пасеки 2
 recipes.addShaped(<forestry:alveary.heater>,
 [[<forestry:thermionic_tubes:4>, <ore:plateSteel>, <forestry:thermionic_tubes:4>],
  [null, <forestry:alveary.plain>, null],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
 
-//Улучшения для пасеки 3
+// --- Улучшения для пасеки 3
 recipes.addShaped(<forestry:alveary.fan>,
 [[<ore:plateSteel>, <ore:rotorStainlessSteel>, <ore:plateSteel>],
  [<ore:rotorStainlessSteel>, <forestry:alveary.plain>, <ore:rotorStainlessSteel>],
  [<ore:plateSteel>, <forestry:thermionic_tubes:4>, <ore:plateSteel>]]);
 
-//Улучшения для пасеки 4
+// --- Улучшения для пасеки 4
 recipes.addShaped(<forestry:alveary.swarmer>,
 [[<forestry:thermionic_tubes:5>, <ore:plateGold>, <forestry:thermionic_tubes:5>],
  [null, <forestry:alveary.plain>, null],
  [<forestry:thermionic_tubes:5>, <ore:plateGold>, <forestry:thermionic_tubes:5>]]);
 
-//Улучшения для пасеки 5
+// --- Улучшения для пасеки 5
 recipes.addShaped(<forestry:alveary.sieve>,
 [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
  [null, <forestry:alveary.plain>, null],
  [<forestry:crafting_material:3>, <forestry:crafting_material:3>, <forestry:crafting_material:3>]]);
 
-//Фильтр по геному
+// --- Фильтр по геному
 recipes.addShaped(<forestry:genetic_filter>,
 [[<ore:plankWood>, <ore:circuitBasic>, <ore:plankWood>],
  [<forestry:propolis>, <ore:paneGlass>, <forestry:propolis>],
  [<ore:gearBronze>, <ore:gemDiamond>, <ore:gearBronze>]]);
 
-//Шлем натуралиста
+// --- Шлем натуралиста
 recipes.addShaped(<forestry:naturalist_helmet>,
 [[null, <ore:plateCopper>, null],
  [<ore:ForestryPropolis>, null, <ore:ForestryPropolis>],

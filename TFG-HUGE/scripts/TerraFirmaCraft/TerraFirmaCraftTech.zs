@@ -60,6 +60,10 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 //Резина для примитивного этапа
 recipes.addShapeless(<gregtech:meta_item_1:12152>*2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);
 
+//Горшок
+recipes.removeByRecipeName("tfctech:latex/fluid_bowl");
+recipes.addShapeless(<tfctech:ceramics/fluid_bowl>, [<tfc:ceramics/fired/pot>.noReturn(), <ore:leather>, <ore:leather>]);
+
 //Winch
 recipes.remove(<tfctech:wiredraw/winch>);
 recipes.addShaped(<tfctech:wiredraw/winch>,
