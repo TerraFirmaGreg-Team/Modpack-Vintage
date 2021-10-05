@@ -30,10 +30,10 @@ minecraft:mending
 minecraft:vanishing_curse
 endercore:xpboost
 endercore:autosmelt
+enderio:witherarrow
+enderio:shimmer
+enderio:repellent
 enderio:soulbound
 enderio:witherweapon
-enderio:shimmer
-enderio:witherarrow
-enderio:repellent
 gregtech:disjunction
 parry:parry
