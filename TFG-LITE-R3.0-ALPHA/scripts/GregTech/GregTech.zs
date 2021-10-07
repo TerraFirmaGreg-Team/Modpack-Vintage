@@ -31,7 +31,7 @@ for item in ItemsToRemove{
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
 
 //Переработка танков в Arc
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1501>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1501>).fluidInputs(<liquid:water> * 150).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1502>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1503>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1504>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();

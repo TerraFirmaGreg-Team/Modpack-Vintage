@@ -7,7 +7,7 @@
     "type": "biome_dictionary",
     "mountain": 20
   },
-  "generation_predicate":["ore_dict:GenRockMetamorf", "ore_dict:GenRockIE"],
+  "generation_predicate":["ore_dict:RockMetamorpfic", "ore_dict:RockIE"],
 
   "generator": {
     "type": "ellipsoid",

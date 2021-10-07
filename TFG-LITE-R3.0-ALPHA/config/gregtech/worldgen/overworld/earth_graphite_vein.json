@@ -4,7 +4,7 @@
   "max_height": 150,
   "min_height": 90,
   "surface_stone_material": "graphite",
-  "generation_predicate":["ore_dict:GenRockSedimentary"],
+  "generation_predicate":["ore_dict:RockSedimentary"],
 
   "generator": {
     "type": "ellipsoid",

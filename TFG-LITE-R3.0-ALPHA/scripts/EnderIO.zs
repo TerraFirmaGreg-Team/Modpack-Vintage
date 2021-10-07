@@ -4,7 +4,10 @@ import crafttweaker.item.IItemStack;
 val RemoveItemsFromJEI as IItemStack[] = [
 	<enderio:item_material:9>,
 	<enderio:item_material:10>,
-	<enderio:item_material:11>
+	<enderio:item_material:11>,
+	<enderio:item_material>,
+	<enderio:item_material:66>,
+	<enderio:block_reinforced_obsidian>,
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -115,6 +118,8 @@ for item in RemoveItemRecipes{
 recipes.removeByRecipeName("enderio:tweak_stick_from_wood");
 recipes.removeByRecipeName("enderio:compatibility_glass_pane");
 recipes.removeByRecipeName("enderio:compatibility_glass_2_glass");
+
+recipes.removeByRecipeName("enderio:slabcobblestone_to_cobblestone");
 
 //Добавление рецептов
 //Xyeta Wrench

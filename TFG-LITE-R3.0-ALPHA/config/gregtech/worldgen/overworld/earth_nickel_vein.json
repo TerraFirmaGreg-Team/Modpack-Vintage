@@ -4,7 +4,7 @@
   "max_height": 135,
   "min_height": 5,
   "surface_stone_material": "nickel",
-  "generation_predicate":["ore_dict:GenGabbro", "ore_dict:GenBasalt"],
+  "generation_predicate":["block:tfc:raw/gabbro", "block:tfc:raw/basalt"],
 
   "generator": {
     "type": "ellipsoid",

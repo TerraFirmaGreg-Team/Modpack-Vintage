@@ -4,7 +4,10 @@ import crafttweaker.item.IItemStack;
 //Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:material:46>,
-	<appliedenergistics2:material:2>
+	<appliedenergistics2:material:2>,
+	<appliedenergistics2:material:49>,
+	<appliedenergistics2:material:51>,
+	<appliedenergistics2:material:3>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);

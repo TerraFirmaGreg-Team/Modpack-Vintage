@@ -4,7 +4,7 @@
   "max_height": 85,
   "min_height": 40,
   "surface_stone_material": "soapstone",
-  "generation_predicate":["ore_dict:GenRockIE"],
+  "generation_predicate":["ore_dict:RockIE"],
 
   "generator": {
     "type": "ellipsoid",

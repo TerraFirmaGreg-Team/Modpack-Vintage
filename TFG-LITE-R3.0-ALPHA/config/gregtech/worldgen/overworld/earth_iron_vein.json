@@ -4,7 +4,7 @@
   "max_height": 135,
   "min_height": 5,
   "surface_stone_material": "iron",
-  "generation_predicate":["ore_dict:GenRockIE"],
+  "generation_predicate":["ore_dict:RockIE"],
 
   "generator": {
     "type": "ellipsoid",

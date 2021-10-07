@@ -4,7 +4,7 @@
   "max_height": 120,
   "min_height": 10,
   "surface_stone_material": "redstone",
-  "generation_predicate":["ore_dict:GenRockIE", "ore_dict:GenQuartzite", "ore_dict:GenShale"],
+  "generation_predicate":["ore_dict:RockIE", "block:tfc:raw/quartzite", "block:tfc:raw/shale"],
 
   "generator": {
     "type": "ellipsoid",

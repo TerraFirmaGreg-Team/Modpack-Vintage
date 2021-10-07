@@ -4,7 +4,7 @@
   "max_height": 135,
   "min_height": 70,
   "surface_stone_material": "zinc",
-  "generation_predicate":["ore_dict:GenRockSedimentary"],
+  "generation_predicate":["ore_dict:RockSedimentary"],
 
   "generator": {
     "type": "ellipsoid",

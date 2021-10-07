@@ -4,7 +4,7 @@
   "max_height": 130,
   "min_height": 5,
   "surface_stone_material": "diamond",
-  "generation_predicate":["ore_dict:GenGabbro"],
+  "generation_predicate":["block:tfc:raw/gabbro"],
 
   "generator": {
     "type": "ellipsoid",

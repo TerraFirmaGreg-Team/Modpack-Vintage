@@ -4,79 +4,27 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
 //1 - Rock Igneus Instrusive
-var GenRockII = [<tfc:raw/granite>,<tfc:raw/gabbro>,<tfc:raw/rhyolite>,<tfc:raw/diorite>] as IItemStack[];
-for item in GenRockII {
-	<ore:GenRockII>.add(item);
+var RockII = [<tfc:raw/granite>,<tfc:raw/gabbro>,<tfc:raw/rhyolite>,<tfc:raw/diorite>, <tfc:raw/breccia>, <tfc:raw/porphyry>] as IItemStack[];
+for item in RockII {
+	<ore:RockII>.add(item);
 }
-//2 - Rock Metamorfic
-var GenRockMetamorf = [<tfc:raw/marble>,<tfc:raw/gneiss>,<tfc:raw/schist>,<tfc:raw/quartzite>,<tfc:raw/phyllite>,<tfc:raw/slate>] as IItemStack[];
-for item in GenRockMetamorf {
-	<ore:GenRockMetamorf>.add(item);
+//2 - Rock Igneus Extrusive
+var RockIE = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>, <tfc:raw/peridotite>] as IItemStack[];
+for item in RockIE {
+	<ore:RockIE>.add(item);
 }
-//3 - Rock Sedimentary
-var GenRockSedimentary = [<tfc:raw/shale>,<tfc:raw/dolomite>,<tfc:raw/conglomerate>,<tfc:raw/limestone>,<tfc:raw/rocksalt>,<tfc:raw/claystone>,<tfc:raw/chert>,<tfc:raw/chalk>] as IItemStack[];
-for item in GenRockSedimentary {
-	<ore:GenRockSedimentary>.add(item);
+//3 - Rock Metamorfic
+var RockMetamorpfic = [<tfc:raw/marble>, <tfc:raw/gneiss>, <tfc:raw/schist>, <tfc:raw/quartzite>, <tfc:raw/phyllite>, <tfc:raw/slate>, <tfc:raw/catlinite>, <tfc:raw/novaculite>, <tfc:raw/soapstone>, <tfc:raw/komatiite>] as IItemStack[];
+for item in RockMetamorpfic {
+	<ore:RockMetamorpfic>.add(item);
 }
-//4 - Rock Igneus Extrusive
-var GenRockIE = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>] as IItemStack[];
-for item in GenRockIE {
-	<ore:GenRockIE>.add(item);
+//4 - Rock Sedimentary
+var RockSedimentary = [<tfc:raw/shale>,<tfc:raw/dolomite>,<tfc:raw/conglomerate>,<tfc:raw/limestone>,<tfc:raw/rocksalt>,<tfc:raw/claystone>,<tfc:raw/chert>,<tfc:raw/chalk>, <tfc:raw/mudstone>, <tfc:raw/sandstone>, <tfc:raw/siltstone>] as IItemStack[];
+for item in RockSedimentary {
+	<ore:RockSedimentary>.add(item);
 }
 
-//Прописывание oredictionary для камней тфк
-//Доломит
-<ore:GenDolomite>.add(<tfc:raw/dolomite>);
-//Конгломерат
-<ore:GenConglomerate>.add(<tfc:raw/conglomerate>);
-//Известняк
-<ore:GenLimestone>.add(<tfc:raw/limestone>);
-//Каменная соль
-<ore:GenRocksalt>.add(<tfc:raw/rocksalt>);
-//Диорит
-<ore:GenDiorite>.add(<tfc:raw/diorite>);
-//Гранит
-<ore:GenGranite>.add(<tfc:raw/granite>);
-//Сланец
-<ore:GenShale>.add(<tfc:raw/shale>);
-//Андезит
-<ore:GenAndesite>.add(<tfc:raw/andesite>);
-//Базальт
-<ore:GenBasalt>.add(<tfc:raw/basalt>);
-//Мрамор
-<ore:GenMarble>.add(<tfc:raw/marble>);
-//Габбро
-<ore:GenGabbro>.add(<tfc:raw/gabbro>);
-//Агриллит
-<ore:GenClaystone>.add(<tfc:raw/claystone>);
-//Кремнистый известняк
-<ore:GenChert>.add(<tfc:raw/chert>);
-//Мел
-<ore:GenChalk>.add(<tfc:raw/chalk>);
-//Риолит
-<ore:GenRhyolite>.add(<tfc:raw/rhyolite>);
-//Дацит
-<ore:GenDacite>.add(<tfc:raw/dacite>);
-//Квартизит
-<ore:GenQuartzite>.add(<tfc:raw/quartzite>);
-//Шифер
-<ore:GenSlate>.add(<tfc:raw/slate>);
-//Филит
-<ore:GenPhyllite>.add(<tfc:raw/phyllite>);
-//Аспидный сланец
-<ore:GenSchist>.add(<tfc:raw/schist>);
-//Гнейс
-<ore:GenGneiss>.add(<tfc:raw/gneiss>);
-//Андезитовый песок
-<ore:GenAndesiteSand>.add(<tfc:sand/andesite>);
-
-//Сопоставление мрамора и базальта TFC с GT
-//Мрамор
-<ore:stoneMarble>.add(<tfc:raw/marble>);
-//Базальт
-<ore:stoneBasalt>.add(<tfc:raw/basalt>);
-
-/*             ///Убирание oredictionary у не используемых металлов///               */
+// --- Deleting OreDictionary
 //Bronze Forestry
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
 //Tin Forestry
@@ -103,7 +51,6 @@ for item in GenRockIE {
 <ore:dye>.remove(<minecraft:dye:4>);
 <ore:dyeBlue>.remove(<minecraft:dye:4>);
 <ore:gemLapis>.remove(<minecraft:dye:4>);
-/*             ///Убирание oredictionary у не используемых руд///               */
 //Stone coal
 <ore:oreCoal>.remove(<minecraft:coal_ore>);
 //Redstone
@@ -176,57 +123,6 @@ for item in ForestryPropolisArray {
 	ForestryPropolis1.add(item);
 }
 
-/*             ///Камень из тфк в один oredictionary///               */
-/*
-var TFCCrackedStoneBricksArray = [
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_granite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_diorite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_gabbro_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_shale_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_claystone_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_rocksalt_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_phyllite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_slate_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_conglomerate_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_dolomite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_chert_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_chalk_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_rhyolite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_basalt_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_andesite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_dacite_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_quartzite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_granite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_basalt_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_gneiss_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_marble_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_rhyolite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_chalk_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_chert_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_schist_0:2>,
-<unlimitedchiselworks:chisel_stonebrick_tfc_bricks_limestone_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_phyllite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_slate_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_gabbro_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_diorite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_claystone_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_shale_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_quartzite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_dacite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_andesite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_marble_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_rocksalt_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_limestone_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_dolomite_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_conglomerate_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_gneiss_0:2>,
-<unlimitedchiselworks:chisel_cobblestone_tfc_cobble_schist_0:2>
-] as IItemStack[];
-var TFCCSB1 = <ore:stoneCracked>;
-for item in TFCCrackedStoneBricksArray {
-	TFCCSB1.add(item);
-}
-*/
 /*             ///Кнопки деревянные из тфк в один oredictionary///               */
 var ButtonWood = [
 <tfc:wood/button/palm>,

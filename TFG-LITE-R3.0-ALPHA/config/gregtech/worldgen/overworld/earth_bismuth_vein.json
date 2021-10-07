@@ -4,7 +4,7 @@
   "max_height": 135,
   "min_height": 80,
   "surface_stone_material": "bismuth",
-  "generation_predicate":["ore_dict:GenRockSedimentary", "ore_dict:GenRockIE"],
+  "generation_predicate":["ore_dict:RockSedimentary", "ore_dict:RockIE"],
 
   "generator": {
     "type": "ellipsoid",

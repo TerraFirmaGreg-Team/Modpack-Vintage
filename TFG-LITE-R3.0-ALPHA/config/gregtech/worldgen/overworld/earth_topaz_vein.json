@@ -4,7 +4,7 @@
   "max_height": 65,
   "min_height": 10,
   "surface_stone_material": "topaz",
-  "generation_predicate":["ore_dict:GenRockMetamorf"],
+  "generation_predicate":["ore_dict:RockMetamorpfic"],
 
   "generator": {
     "type": "ellipsoid",

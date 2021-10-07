@@ -2,7 +2,7 @@
 	title: "{tfg.quests.primitive.ironanvil.title}",
 	x: -5.5d,
 	y: 0.0d,
-	shape: "square",
+	shape: "gear",
 	description: "{tfg.quests.primitive.ironanvil.subtitle}",
 	dependencies: [
 		"18b29807"

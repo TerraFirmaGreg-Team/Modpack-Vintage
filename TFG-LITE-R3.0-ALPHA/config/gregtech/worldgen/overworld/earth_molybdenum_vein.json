@@ -4,7 +4,7 @@
   "max_height": 90,
   "min_height": 20,
   "surface_stone_material": "molybdenum",
-  "generation_predicate":["ore_dict:GenRockIE", "ore_dict:GenRockII"],
+  "generation_predicate":["ore_dict:RockIE", "ore_dict:RockII"],
 
   "generator": {
     "type": "ellipsoid",

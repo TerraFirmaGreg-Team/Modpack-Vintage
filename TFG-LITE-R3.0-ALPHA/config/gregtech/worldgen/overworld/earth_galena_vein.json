@@ -4,7 +4,7 @@
   "max_height": 120,
   "min_height": 20,
   "surface_stone_material": "lead",
-  "generation_predicate":["ore_dict:GenGneiss", "ore_dict:GenGranite"],
+  "generation_predicate":["block:tfc:raw/gneiss", "block:tfc:raw/granite"],
 
   "generator": {
     "type": "ellipsoid",
