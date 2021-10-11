@@ -90,10 +90,11 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/dust/wrought_iron>,
 	<tfc:metal/nugget/wrought_iron>,
 	<tfc:metal/double_sheet/wrought_iron>,
-	<gregtech:meta_item_1:12197>,
-	<gregtech:meta_item_1:10197>,
+	//<gregtech:meta_item_1:12197>,
+	//<gregtech:meta_item_1:10197>,
 	<tfc:powder/saltpeter>,
-	<tfc:powder/salt>
+	<tfc:powder/salt>,
+	<tfc:sluice>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -218,6 +219,7 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_d
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();	
 
 //Фикс блоков из ценных штук
+/*
 compressor.findRecipe(2, [<tfc:gem/ruby:2>*9], null).remove();
 compressor.findRecipe(2, [<tfc:gem/topaz:2>*9], null).remove();
 compressor.findRecipe(2, [<tfc:gem/sapphire:2>*9], null).remove();
@@ -230,6 +232,7 @@ compressor.recipeBuilder().inputs(<ore:gemTopaz>*9).outputs(<gregtech:meta_block
 compressor.recipeBuilder().inputs(<ore:gemSapphire>*9).outputs(<gregtech:meta_block_compressed_9:13>).duration(40).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemOpal>*9).outputs(<gregtech:meta_block_compressed_13:5>).duration(40).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemAmethyst>*9).outputs(<gregtech:meta_block_compressed_13:6>).duration(40).EUt(2).buildAndRegister();
+*/
 
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
@@ -246,6 +249,7 @@ recipes.addShaped(<gregtech:machine:14>,
  [<ore:pipeSmallSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallSteel>]]);
  
 //Compressed coke clay
+/*
 recipes.removeByRecipeName("gtadditions:coke_brick");
 recipes.addShaped(<gtadditions:ga_meta_item:32036>*3,
 [[<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
@@ -257,10 +261,10 @@ recipes.addShaped(<gregtech:machine_casing:1>,
 [[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
  [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
  [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
- 
+*/
 //Фикс крафта деревянной панельки
 recipes.removeByRecipeName("gregtech:plank_to_wooden_shape");
-recipes.addShaped(<gregtech:meta_item_2:32011>,
+recipes.addShaped(<gregtech:meta_item_1:196>,
 [[null, <ore:lumber>, null],
  [null, <ore:lumber>, null],
  [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>, null]]);
@@ -276,36 +280,53 @@ Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fe
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
-recipes.addShapeless(<gregtech:meta_item_1:2095>*9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 //Высушивание соли
-Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <gregtech:meta_item_1:1155>, 24000);
+Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <ore:dustSmallSalt>.firstItem * 9, 24000);
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
 
 //Hevea TFC --> Rubber
-centrifuge.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<gregtech:meta_item_1:32627>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:2012>, 2500, 600).chancedOutput(<gregtech:meta_item_1:2196>, 2500, 700).chancedOutput(<gregtech:meta_item_2:32570>, 3750, 900).fluidOutputs(<liquid:methane> * 60).duration(200).EUt(20).buildAndRegister();  
+centrifuge.recipeBuilder()
+	.inputs(<tfc:wood/log/hevea>)
+	.chancedOutput(<gregtech:meta_item_1:119>, 5000, 1200)
+	.chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
+	.chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
+	.chancedOutput(<gregtech:meta_item_1:245>, 3750, 900)
+	.fluidOutputs(<liquid:methane> * 60)
+	.duration(200).EUt(20).buildAndRegister();  
 
 //Первые способы получить резину
-extractor.recipeBuilder().inputs([<tfc:wood/log/hevea> * 1]).chancedOutput(<gregtech:meta_item_1:32627>, 2500, 0).duration(200).EUt(2).buildAndRegister(); 
+extractor.recipeBuilder()
+	.inputs(<tfc:wood/log/hevea>)
+	.outputs(<ore:dustRawRubber>.firstItem)
+	.duration(200).EUt(2).buildAndRegister(); 
 
 //Чугун --> Сталь
-forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
-forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
+//forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
+//forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 
 //Salt(Ocean water) --> Fresh water
-centrifuge.recipeBuilder().fluidInputs(<liquid:salt_water>*1000).chancedOutput(<gregtech:meta_item_1:2155>, 2500, 2500).fluidOutputs(<liquid:fresh_water>*750).duration(100).EUt(10).buildAndRegister();
+centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:salt_water>*1000)
+	.chancedOutput(<ore:dustSalt>.firstItem, 2500, 2500)
+	.fluidOutputs(<liquid:fresh_water>*750)
+	.duration(100).EUt(10).buildAndRegister();
 
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
-electrolyzer.recipeBuilder().inputs(<ore:sand>*8).outputs(<gregtech:meta_item_1:2159>).chancedOutput(<gregtech:meta_item_1:2159>, 2500, 2500).duration(150).EUt(25).buildAndRegister();
+electrolyzer.recipeBuilder()
+	.inputs(<ore:sand>*8)
+	.outputs(<ore:dustSiliconDioxide>.firstItem)
+	.duration(150).EUt(25).buildAndRegister();
 
 //Дистилированная вода из горячей
 distillery.recipeBuilder()
 	.fluidInputs(<liquid:fresh_water>*576)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
+	.notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 0}))
 	.fluidOutputs(<liquid:distilled_water>*510)
 	.duration(240).EUt(30).buildAndRegister();
 
@@ -326,7 +347,7 @@ ItemRegistry.registerFuel(<ore:gemCoal>, 1600, 1400, true, true);
 ItemRegistry.registerFuel(<ore:gemLignite>, 1200, 1300, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
-//How water --> Dist
+//Hot water --> Dist
 Barrel.addRecipe("tfc:freshwatertodistwater", <tfc:crop/product/jute_net>, <liquid:fresh_water>*4000, <tfc:crop/product/dirty_jute_net>, <liquid:distilled_water>*3600, 4);
 
 //Отключение крафтов всех геологических TFC
@@ -367,31 +388,32 @@ Anvil.removeRecipe(<tfc:metal/knife_blade/copper>);
 
 //Новые рецепты ковки GT(TFC) молотков
 Anvil.addRecipe("tfc:hammer_head/CopperF", <ore:ingotCopper>, <tfc:metal/hammer_head/copper>, 0, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/BismuthBronzeF", <ore:ingotBismuthBronze>, <gregtech:meta_item_2:5230>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/BlackBronzeF", <ore:ingotBlackBronze>, <gregtech:meta_item_2:5229>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/BronzeF", <ore:ingotBronze>, <gregtech:meta_item_2:5095>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/WroughtIronF", <ore:ingotWroughtIron>, <gregtech:meta_item_2:5197>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/SteelF", <ore:ingotSteel>, <gregtech:meta_item_2:5184>, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/BlackSteelF", <ore:ingotBlackSteel>, <gregtech:meta_item_2:5231>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/BlueSteelF", <ore:ingotBlueSteel>, <gregtech:meta_item_2:5233>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/RedSteelF", <ore:ingotRedSteel>, <gregtech:meta_item_2:5232>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/CobaltF", <ore:ingotCobalt>, <gregtech:meta_item_2:5017>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfc:hammer_head/InvarF", <ore:ingotInvar>, <gregtech:meta_item_2:5126>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/BismuthBronzeF", <ore:ingotBismuthBronze>, <ore:toolHeadHammerBismuthBronze>.firstItem, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/BlackBronzeF", <ore:ingotBlackBronze>, <ore:toolHeadHammerBlackBronze>.firstItem, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/BronzeF", <ore:ingotBronze>, <ore:toolHeadHammerBronze>.firstItem, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/WroughtIronF", <ore:ingotWroughtIron>, <ore:toolHeadHammerWroughtIron>.firstItem, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/SteelF", <ore:ingotSteel>, <ore:toolHeadHammerSteel>.firstItem, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/BlackSteelF", <ore:ingotBlackSteel>, <ore:toolHeadHammerBlackSteel>.firstItem, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/BlueSteelF", <ore:ingotBlueSteel>, <ore:toolHeadHammerBlueSteel>.firstItem, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/RedSteelF", <ore:ingotRedSteel>, <ore:toolHeadHammerRedSteel>.firstItem, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/CobaltF", <ore:ingotCobalt>, <ore:toolHeadHammerCobalt>.firstItem, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfc:hammer_head/InvarF", <ore:ingotInvar>, <ore:toolHeadHammerInvar>.firstItem, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 
 //Крафт голов напильков из GT
-Anvil.addRecipe("tfc:file_head/Bronze", <ore:ingotBronze>, <gregtech:meta_item_2:6095>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BismuthBronze", <ore:ingotBlackBronze>, <gregtech:meta_item_2:6229>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BlackBronze", <ore:ingotBismuthBronze>, <gregtech:meta_item_2:6230>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BlackSteel", <ore:ingotBlackSteel>, <gregtech:meta_item_2:6231>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/RedSteel", <ore:ingotRedSteel>, <gregtech:meta_item_2:6232>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BlueSteel", <ore:ingotBlueSteel>, <gregtech:meta_item_2:6233>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/Steel", <ore:ingotSteel>, <gregtech:meta_item_2:6184>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/SterlingSilver", <ore:ingotSterlingSilver>, <gregtech:meta_item_2:6227>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/RoseGold", <ore:ingotRoseGold>, <gregtech:meta_item_2:6228>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <gregtech:meta_item_2:6094>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <gregtech:meta_item_2:6017>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Bronze", <ore:ingotBronze>, <ore:toolHeadFileBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BismuthBronze", <ore:ingotBlackBronze>, <ore:toolHeadFileBismuthBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlackBronze", <ore:ingotBismuthBronze>, <ore:toolHeadFileBlackBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlackSteel", <ore:ingotBlackSteel>, <ore:toolHeadFileBlackSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/RedSteel", <ore:ingotRedSteel>, <ore:toolHeadFileRedSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlueSteel", <ore:ingotBlueSteel>, <ore:toolHeadFileBlueSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Steel", <ore:ingotSteel>, <ore:toolHeadFileSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/SterlingSilver", <ore:ingotSterlingSilver>, <ore:toolHeadFileSterlingSilver>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/RoseGold", <ore:ingotRoseGold>, <ore:toolHeadFileRoseGold>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <ore:toolHeadFileBrass>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <ore:toolHeadFileCobalt>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
 //Создание рецептов для теплицы
+/*
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/barley>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/barley>).chancedOutput(<tfc:crop/seeds/barley>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/maize>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/maize>).chancedOutput(<tfc:crop/seeds/maize>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/oat>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/oat>).chancedOutput(<tfc:crop/seeds/oat>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
@@ -412,7 +434,8 @@ green_house.recipeBuilder().inputs(<tfc:crop/seeds/tomato>).notConsumable(<gregt
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/red_bell_pepper>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/red_bell_pepper>).chancedOutput(<tfc:crop/seeds/red_bell_pepper>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/yellow_bell_pepper>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/yellow_bell_pepper>).chancedOutput(<tfc:crop/seeds/yellow_bell_pepper>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/jute>).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 32})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:crop/product/jute>).chancedOutput(<tfc:crop/seeds/jute>, 2500, 2500).duration(2500).EUt(26).buildAndRegister();
-
+*/
+/*
 //Создание рецептов для теплицы с удобрением
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/barley>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/barley>, <tfc:crop/seeds/barley>*2).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/maize>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/maize>, <tfc:crop/seeds/maize>*2).duration(2500).EUt(26).buildAndRegister();
@@ -434,7 +457,8 @@ green_house.recipeBuilder().inputs(<tfc:crop/seeds/tomato>, <gregtech:meta_item_
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/red_bell_pepper>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/red_bell_pepper>, <tfc:crop/seeds/red_bell_pepper>*2).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/yellow_bell_pepper>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:food/yellow_bell_pepper>, <tfc:crop/seeds/yellow_bell_pepper>*2).duration(2500).EUt(26).buildAndRegister();
 green_house.recipeBuilder().inputs(<tfc:crop/seeds/jute>, <gregtech:meta_item_1:2754>*2).notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 31})).fluidInputs([<liquid:fresh_water> * 5000]).outputs(<tfc:crop/product/jute>, <tfc:crop/seeds/jute>*2).duration(2500).EUt(26).buildAndRegister();
-
+*/
+/*
 //Отключение ванильных крафтов через теплицу(без удобрения)
 //green_house.findRecipe(16, [<minecraft:potato>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:water>*2000]).remove();
 //green_house.findRecipe(16, [<minecraft:carrot>, <gregtech:meta_item_1:32766>.withTag({Configuration: 0})], [<liquid:water>*2000]).remove();
@@ -469,8 +493,10 @@ green_house.findRecipe(16, [<minecraft:beetroot>, <gregtech:meta_item_1:2754>, <
 assembler.findRecipe(4, [<minecraft:planks>*6, <minecraft:book>*3], null).remove();
 assembler.findRecipe(4, [<minecraft:planks>*3, <gregtech:meta_item_1:32766>.withTag({Configuration: 3})], null).remove();
 assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
+*/
 //ПЕРЕРАБОТКА ВСЕХ РАСТЕНИЙ И МЯСА ИЗ TFC ДЛЯ GT + Отключение ванильного.
 //
+/*
 //Отключение яблок
 macerator.findRecipe(120, [<minecraft:apple>], null).remove();
 chemical_reactor.findRecipe(30, [<minecraft:apple>, <tfc:metal/ingot/gold>*8], null).remove();
@@ -634,3 +660,4 @@ large_mixer.recipeBuilder().inputs(<tfc:plants/porcini>, <gtadditions:ga_meta_it
 //Земля+Трава
 centrifuge.recipeBuilder().inputs(<ore:dirt>).chancedOutput(<gregtech:meta_item_2:32570>, 1250, 750).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 4000, 900).duration(20).EUt(30).buildAndRegister();
 centrifuge.recipeBuilder().inputs(<ore:grass>).chancedOutput(<gregtech:meta_item_2:32570>, 3000, 1200).chancedOutput(<tfc:sand/basalt>, 5000, 1200).chancedOutput(<gregtech:meta_item_1:105>, 5000, 900).duration(20).EUt(30).buildAndRegister();
+*/

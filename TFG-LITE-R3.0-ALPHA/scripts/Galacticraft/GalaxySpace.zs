@@ -186,43 +186,6 @@ mods.galaxyspace.removeRecyclerRecipe(result);
 mods.galaxyspace.removeRocketAssemblyRecipe(result);
 */
 
-//Скафандры
-//Скаф 1лвл тапки
-assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_1:32538>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitExtreme>*3, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_feet:200>.withTag({modification_count: 2, boots_button: 0 as byte}))
-  .duration(500)
-  .EUt(128)
-  .buildAndRegister();
-//Скаф 1лвл поножи
-assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_1:32538>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_legs:200>.withTag({legs_button: 0 as byte, modification_count: 2}))
-  .duration(500)
-  .EUt(128)
-  .buildAndRegister();
-//Скаф 1лвл грудак
-assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_1:32538>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_chest:200>.withTag({modification_count: 2, chest_button: 0 as byte}))
-  .duration(500)
-  .EUt(128)
-  .buildAndRegister();
-//Скаф 1лвл шапка
-assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_1:32538>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_head:200>.withTag({modification_count: 2, helmet_button: 0 as byte}))
-  .duration(500)
-  .EUt(128)
-  .buildAndRegister();
-
-//SSHD-Alloy
-icompressor.recipeBuilder()
-	.inputs(<ore:plateBronze>*2, <ore:plateSteel>*3)
-	.property("explosives", 4)
-	.outputs(<galaxyspace:compressed_plates:4>*2)
-	.duration(150).EUt(780).buildAndRegister();
-
 //Взлётка 2 лвл
 recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 [[<ore:plateDenseTitanium>, <ore:plateDenseTitanium>, <ore:plateDenseTitanium>],
@@ -232,77 +195,116 @@ recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
 [[<galacticraftcore:solar:4>, <galacticraftcore:solar:4>, <galacticraftcore:solar:4>],
  [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
- [<gregtech:meta_item_1:32602>, <gregtech:machine:504>, <gregtech:cable:2026>]]);
+ [<gregtech:meta_item_1:105>, <gregtech:machine:989>, <gregtech:cable:2026>]]);
 
 //Модификационный стол
 recipes.addShaped(<galaxyspace:modification_table>,
-[[<gregtech:meta_item_1:32539>, <gregtech:meta_item_1:32652>, <gregtech:meta_item_1:32499>],
- [<gregtech:meta_item_1:32652>, <gregtech:machine:504>, <gregtech:meta_item_1:32652>],
- [<gregtech:machine:2210>, <gregtech:meta_item_1:32652>, <gregtech:meta_item_1:32539>]]);
+[[<gregtech:meta_item_1:98>, <gregtech:meta_item_1:140>, <gregtech:meta_item_1:83>],
+ [<gregtech:meta_item_1:140>, <gregtech:machine:989>, <gregtech:meta_item_1:140>],
+ [<gregtech:machine:1614>, <gregtech:meta_item_1:140>, <gregtech:meta_item_1:98>]]);
 
 //Контроллер мини-панелей
-recipes.addShaped(<galaxyspace:panel_controller>,
-[[<ore:plateLead>, <gtadditions:ga_meta_item:32579>, <ore:plateLead>],
- [<ore:cableGtDoubleHvSuperconductor>, <gregtech:machine:503>, <ore:cableGtDoubleHvSuperconductor>],
- [<ore:plateLead>, <gtadditions:ga_meta_item2:1>, <ore:plateLead>]]);
+recipes.addShaped(<galaxyspace:panel_controller>,//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
+[[<ore:plateLead>, null, <ore:plateLead>],
+ [<ore:cableGtDoubleHvSuperconductor>, <gregtech:machine:988>, <ore:cableGtDoubleHvSuperconductor>],
+ [<ore:plateLead>, <gregtech:meta_item_1:226>, <ore:plateLead>]]);
+
+//Генератор поля
+recipes.addShaped(<galaxyspace:radiation_stabiliser>,//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
+[[<gregtech:wire_coil:1>, <gregtech:wire_coil:1>, <gregtech:wire_coil:1>],
+ [null, <gregtech:machine:988>, null],
+ [<ore:cableGtDoublePlatinum>, <gregtech:meta_item_1:226>, <ore:cableGtDoublePlatinum>]]);
+
+//Солнечный парус
+recipes.addShaped(<galaxyspace:solarwind_panel>,
+[[<galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>],
+ [<ore:stickLongAluminium>, <gregtech:machine:988>, <ore:stickLongAluminium>],
+ [<ore:cableGtDoublePlatinum>, <ore:circuitExtreme>, <ore:cableGtDoublePlatinum>]]);
+
+//Планитарный щит
+recipes.addShaped(<galaxyspace:planet_shield>,
+[[<gregtech:meta_item_1:148>, <gregtech:meta_item_1:165>, <gregtech:meta_item_1:148>],
+ [<gregtech:meta_item_1:148>, <gregtech:machine:989>, <gregtech:meta_item_1:148>],
+ [<ore:cableGtDoubleIvSuperconductor>, <galaxyspace:gravitation_module>, <ore:cableGtDoubleIvSuperconductor>]]);
+
+//Скафандры
+//Скаф 1лвл тапки
+assembler.recipeBuilder()
+  .inputs(<gregtech:meta_item_1:97>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitExtreme>*3, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_feet:200>.withTag({modification_count: 2, boots_button: 0 as byte}))
+  .duration(500)
+  .EUt(128)
+  .buildAndRegister();
+//Скаф 1лвл поножи
+assembler.recipeBuilder()
+  .inputs(<gregtech:meta_item_1:97>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_legs:200>.withTag({legs_button: 0 as byte, modification_count: 2}))
+  .duration(500)
+  .EUt(128)
+  .buildAndRegister();
+//Скаф 1лвл грудак
+assembler.recipeBuilder()
+  .inputs(<gregtech:meta_item_1:97>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_chest:200>.withTag({modification_count: 2, chest_button: 0 as byte}))
+  .duration(500)
+  .EUt(128)
+  .buildAndRegister();
+//Скаф 1лвл шапка
+assembler.recipeBuilder()
+  .inputs(<gregtech:meta_item_1:97>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_head:200>.withTag({modification_count: 2, helmet_button: 0 as byte}))
+  .duration(500)
+  .EUt(128)
+  .buildAndRegister();
+
+//SSHD-Alloy
+icompressor.recipeBuilder()
+	.inputs(<ore:plateBronze> * 2, <ore:plateSteel> * 3)
+	.property("explosives", 4)
+	.outputs(<galaxyspace:compressed_plates:4> * 2)
+	.duration(150).EUt(780).buildAndRegister();
 
 //Солнечная мини-панель
 assembler.recipeBuilder()
-  .inputs(<gregtech:machine:503>, <gregtech:meta_item_1:32752>*8, <ore:cableGtSinglePlatinum>*8, <ore:plateLead>*2, <ore:circuitAdvanced>)
+  .inputs(<gregtech:machine:988>, <gregtech:meta_item_1:192>*8, <ore:cableGtSinglePlatinum>*8, <ore:plateLead>*2, <ore:circuitAdvanced>)
+  .notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 5}))
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<galaxyspace:single_solarpanel>*2)
+  .outputs(<galaxyspace:single_solarpanel> * 2)
   .duration(500)
   .EUt(128)
   .buildAndRegister();
 
 //Солнечная модернизированная мини-панель
 assembler.recipeBuilder()
-  .inputs(<gregtech:machine:504>, <gregtech:meta_item_1:32752>*24, <ore:cableGtSinglePlatinum>*24, <ore:plateLead>*8, <ore:circuitAdvanced>)
+  .inputs(<gregtech:machine:988>, <gregtech:meta_item_1:192>*24, <ore:cableGtSinglePlatinum>*24, <ore:plateLead>*8, <ore:circuitAdvanced>)
+  .notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 6}))
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<galaxyspace:modern_single_solarpanel>*2)
+  .outputs(<galaxyspace:modern_single_solarpanel> * 2)
   .duration(500)
   .EUt(256)
   .buildAndRegister();
 
 //Зарядная панель
 assembler.recipeBuilder()
-  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:32539>, <ore:circuitAdvanced>, <gregtech:meta_item_1:32670>)
+  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:98>, <ore:circuitAdvanced>, <gregtech:meta_item_1:146>)
   .fluidInputs([<liquid:soldering_alloy> * 1000])
   .outputs(<galaxyspace:energy_pad>)
   .duration(500)
   .EUt(256)
   .buildAndRegister();
 
-//Зарядная панель
+//Гравитационный модуль
 assembler.recipeBuilder()
-  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:32539>, <ore:circuitElite>, <gregtech:meta_item_1:32672>*2)
+  .inputs(<ore:plateAluminium>*3, <gregtech:meta_item_1:98>, <ore:circuitElite>, <gregtech:meta_item_1:148>*2)
   .fluidInputs([<liquid:soldering_alloy> * 144])
   .outputs(<galaxyspace:gravitation_module>)
   .duration(500)
   .EUt(256)
   .buildAndRegister();
 
-//Генератор поля
-recipes.addShaped(<galaxyspace:radiation_stabiliser>,
-[[<gregtech:wire_coil:1>, <gregtech:wire_coil:1>, <gregtech:wire_coil:1>],
- [<gtadditions:ga_field_gen_casing:1>, <gregtech:machine_casing:3>, <gtadditions:ga_field_gen_casing:1>],
- [<ore:cableGtDoublePlatinum>, <gtadditions:ga_meta_item2:1>, <ore:cableGtDoublePlatinum>]]);
-
-//Солнечный парус
-recipes.addShaped(<galaxyspace:solarwind_panel>,
-[[<galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>],
- [<ore:stickLongAluminium>, <gregtech:machine:503>, <ore:stickLongAluminium>],
- [<ore:cableGtDoublePlatinum>, <ore:circuitExtreme>, <ore:cableGtDoublePlatinum>]]);
-
-//Планитарный щит
-recipes.addShaped(<galaxyspace:planet_shield>,
-[[<gregtech:meta_item_1:32672>, <gregtech:meta_item_1:32693>, <gregtech:meta_item_1:32672>],
- [<gregtech:meta_item_1:32672>, <gregtech:machine:504>, <gregtech:meta_item_1:32672>],
- [<ore:cableGtDoubleIvSuperconductor>, <ore:cableGtDoubleIvSuperconductor>, <ore:cableGtDoubleIvSuperconductor>]]);
-
 //Основание гидроподной фермы
 assembler.recipeBuilder()
-  .inputs(<gregtech:machine:503>, <gregtech:meta_item_1:32691>*2, <gregtech:meta_item_1:32651>*2, <ore:cableGtQuadrupleAnnealedCopper>*4)
+  .inputs(<gregtech:machine:989>, <gregtech:meta_item_1:165>*2, <gregtech:meta_item_1:141>*2, <ore:cableGtQuadrupleAnnealedCopper>*4)
   .fluidInputs([<liquid:soldering_alloy> * 144])
   .outputs(<galaxyspace:hydroponic_base>)
   .duration(260)
@@ -310,10 +312,11 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 //Стеклянное основание гидроподной фермы
-assembler.recipeBuilder()
-  .inputs(<gtadditions:ga_transparent_casing:1>*6, <gregtech:machine:503>, <gregtech:machine:2210>, <gregtech:machine:814>)
+/*
+assembler.recipeBuilder()//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
+  .inputs(<gtadditions:ga_transparent_casing:1>*6, <gregtech:machine:989>, <gregtech:machine:2210>, <gregtech:machine:814>)
   .fluidInputs([<liquid:soldering_alloy> * 144])
   .outputs(<galaxyspace:hydroponic_farm>)
   .duration(260)
   .EUt(512)
-  .buildAndRegister();
+  .buildAndRegister();*/

@@ -11,6 +11,7 @@ import mods.horsepower.Grindstone;
  */
 
 // --- Унификация кованного железа
+/*
 //CONVERT
 forge_hammer.recipeBuilder().inputs(<gregtech:meta_item_1:10197>).outputs(<tfc:metal/ingot/wrought_iron>).duration(100).EUt(8).buildAndRegister(); 
 //FH Hot Iron Ingot --> Wrought Iron Ingot
@@ -85,24 +86,19 @@ Anvil.removeRecipe(<tfc:wrought_iron_grill>);
 Anvil.addRecipe("tfc:WroughtIronGrillTweaked", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
 //Крафт железного трапдора через наковальню тфк
 Anvil.addRecipe("tfc:IronTrapdoorTweaked", <ore:plateDoubleWroughtIron>, <minecraft:iron_trapdoor>, 3, "general", "UPSET_NOT_LAST", "BEND_NOT_LAST", "UPSET_THIRD_LAST");
-
-// --- Унификация алмазов
-packer.findRecipe(8, [<minecraft:diamond> * 9, <gtadditions:ga_meta_item:32133>], null).remove();
-unpacker.findRecipe(8, [<minecraft:diamond_block>, <gtadditions:ga_meta_item:32133>], null).remove();
+*/
 
 // --- Унификация соли
 Quern.removeRecipe(<tfc:powder/salt>*4);
 Quern.removeRecipe(<tfc:powder/salt>*2);
 Grindstone.remove(<tfc:powder/salt>*6);
 Grindstone.remove(<tfc:powder/salt>*8);
-Rack.removeRecipe(<gregtech:meta_item_1:2156>);
-Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <gregtech:meta_item_1:2155> * 4);
-Grindstone.add(<tfc:rock/rocksalt>, <gregtech:meta_item_1:2155> * 8, 10, false);
-Rack.addRecipe("rack_saltpeter_to_salt", <gregtech:meta_item_1:2156>, <gregtech:meta_item_1:2155>, 24, 1.0);
+Rack.removeRecipe(<ore:dustSaltpeter>.firstItem);
+Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 4);
+Grindstone.add(<tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 8, 10, false);
+Rack.addRecipe("rack_saltpeter_to_salt", <ore:dustSaltpeter>.firstItem, <ore:dustSalt>.firstItem, 24, 1.0);
 
 // --- Унификация сальпетера
 Quern.removeRecipe(<tfc:powder/saltpeter>*4);
 Grindstone.remove(<tfc:powder/saltpeter>*8);
 
-// --- Унификация эмеральдов
-unpacker.findRecipe(8, [<minecraft:emerald_block>, <gtadditions:ga_meta_item:32133>], null).remove();

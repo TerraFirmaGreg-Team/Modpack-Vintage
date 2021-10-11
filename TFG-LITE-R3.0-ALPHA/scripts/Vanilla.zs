@@ -3,7 +3,14 @@ import crafttweaker.item.IItemStack;
 
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
-	<tfc:sluice>,
+	<minecraft:gold_ore>,
+    <minecraft:iron_ore>,
+    <minecraft:coal_ore>,
+    <minecraft:lapis_ore>,
+    <minecraft:diamond_ore>,
+    <minecraft:redstone_ore>,
+    <minecraft:emerald_ore>,
+    <minecraft:quartz_ore>,
     <minecraft:apple>,
     <minecraft:mushroom_stew>,
     <minecraft:bread>,
