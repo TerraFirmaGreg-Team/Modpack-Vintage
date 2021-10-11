@@ -140,11 +140,12 @@ assembler.recipeBuilder()
    .outputs(<galaxyspace:gs_basic:21> * 2)
    .duration(1000).EUt(512).buildAndRegister();
 //Теплоизолирующая ткань 4
+/*
 assembler.recipeBuilder()
    .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
    .fluidInputs([<liquid:supercooled_cryotheum>*288])
    .outputs(<galaxyspace:gs_basic:22> * 2)
-   .duration(1000).EUt(512).buildAndRegister();
+   .duration(1000).EUt(512).buildAndRegister();*/   //FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
 
 //Воздушные баки
 //Супер
@@ -195,7 +196,7 @@ recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
 [[<galacticraftcore:solar:4>, <galacticraftcore:solar:4>, <galacticraftcore:solar:4>],
  [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
- [<gregtech:meta_item_1:105>, <gregtech:machine:989>, <gregtech:cable:2026>]]);
+ [<gregtech:meta_item_1:105>, <gregtech:machine:989>, <ore:cableGtQuadrupleGold>]]);
 
 //Модификационный стол
 recipes.addShaped(<galaxyspace:modification_table>,

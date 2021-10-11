@@ -82,7 +82,13 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:basic_block_core:10>,
 	<galacticraftcore:basic_block_core:11>,
 	<galacticraftcore:infinite_oxygen>,
-	<galacticraftplanets:basic_item_venus:4>
+	<galacticraftplanets:basic_item_venus:4>,
+	<galacticraftcore:platform>,
+	<galacticraftplanets:solar_array_module>,
+	<galacticraftplanets:solar_array_controller>,
+	<galacticraftcore:sensor_glasses>,
+	<galacticraftcore:sensor_lens>,
+	<galacticraftcore:standard_wrench>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -210,216 +216,229 @@ recipes.addShaped(<galacticraftplanets:item_basic_mars:4>,
 [[<ore:leather>, <ore:plateDiamond>, <ore:leather>],
  [<ore:leather>, <ore:slimeball>, <ore:leather>],
  [null, <ore:chestWood>, null]]);
-//Oxygen mask
+
+//Oxygen Mask
 recipes.addShaped(<galacticraftcore:oxygen_mask>,
-[[<minecraft:glass_pane>, <gregtech:meta_item_1:15209>, <minecraft:glass_pane>],
- [<gregtech:meta_item_1:13184>, <minecraft:leather_helmet>, <gregtech:meta_item_1:13184>],
- [<minecraft:glass_pane>, <gregtech:meta_item_1:32766>, <minecraft:glass_pane>]]);
-//Oxygen gear
+[[<minecraft:glass_pane>, <ore:craftingLensWhite>, <minecraft:glass_pane>],
+ [<ore:plateDenseSteel>, <minecraft:leather_helmet>, <ore:plateDenseSteel>],
+ [<minecraft:glass_pane>, <galacticraftcore:fluid_pipe>, <minecraft:glass_pane>]]);
+
+//Oxygen Gear
 recipes.addShaped(<galacticraftcore:oxygen_gear>,
-[[<gregtech:meta_item_1:12001>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:12001>],
- [<galacticraftcore:oxygen_concentrator>, <gregtech:machine:814>, <galacticraftcore:oxygen_concentrator>],
- [<gregtech:cable:7018>, <gregtech:meta_item_2:18183>, <gregtech:cable:7018>]]);
-//Oxygen detector
+[[<ore:plateAluminium>, <galacticraftcore:air_vent>, <ore:plateAluminium>],
+ [<galacticraftcore:oxygen_concentrator>, <gregtech:machine:1504>, <galacticraftcore:oxygen_concentrator>],
+ [<ore:cableGtQuadrupleCopper>, <ore:rotorStainlessSteel>, <ore:cableGtQuadrupleCopper>]]);
+
+//Oxygen Detector
 recipes.addShaped(<galacticraftcore:oxygen_detector>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:32691>],
- [<gregtech:cable:7018>, <gregtech:meta_item_1:12001>, <gregtech:cable:7018>]]);
-//Oxygen sealer
+[[<gregtech:meta_item_1:163>, <ore:plateAluminium>, <gregtech:meta_item_1:163>],
+ [<ore:plateAluminium>, <ore:circuitGood>, <ore:plateAluminium>],
+ [<ore:cableGtQuadrupleCopper>, <ore:plateAluminium>, <ore:cableGtQuadrupleCopper>]]);
+
+//Oxygen Sealer
 recipes.addShaped(<galacticraftcore:sealer>,
-[[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:32611>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:32691>],
- [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12001>]]);
-//Oxygen bubble distributor
+[[<gregtech:meta_item_1:164>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:164>],
+ [<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>],
+ [<gregtech:meta_item_1:113>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:113>]]);
+
+//Oxygen Bubble Distributor
 recipes.addShaped(<galacticraftcore:distributor>,
-[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32611>, <gregtech:machine:503>, <gregtech:meta_item_1:32691>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>]]);
-//Oxygen collector
+[[<gregtech:meta_item_1:164>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:164>],
+ [<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>],
+ [<gregtech:meta_item_1:254>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:254>]]);
+
+//Oxygen Collector
 recipes.addShaped(<galacticraftcore:collector>,
-[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_2:18183>, <gregtech:machine:503>, <gregtech:meta_item_1:32611>],
- [<gregtech:meta_item_1:12001>, <gregtech:machine:814>, <gregtech:meta_item_1:12001>]]);
-//Oxygen compressor
+[[<galacticraftcore:air_vent>, <ore:circuitExtreme>, <galacticraftcore:air_vent>],
+ [<ore:rotorStainlessSteel>, <gregtech:machine:988>, <ore:rotorStainlessSteel>],
+ [<gregtech:machine:1504>, <galacticraftcore:oxygen_concentrator>, <gregtech:machine:1504>]]);
+
+//Oxygen Compressor
 recipes.addShaped(<galacticraftcore:oxygen_compressor>,
-[[<gregtech:meta_item_1:12184>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32611>, <gregtech:meta_item_1:12184>]]);
-//Oxygen decompressor
+[[<ore:circuitAdvanced>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:112>],
+ [<ore:pipeSmallStainlessSteel>, <gregtech:machine:988>, <ore:pipeSmallStainlessSteel>],
+ [<gregtech:meta_item_1:112>, <ore:plateBlackSteel>, <gregtech:meta_item_1:112>]]);
+
+//Oxygen Decompressor
 recipes.addShaped(<galacticraftcore:oxygen_compressor:4>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:18183>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:12001>, <gregtech:machine:502>, <gregtech:meta_item_1:12001>],
- [<galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:32691>, <galacticraftcore:oxygen_concentrator>]]);
+[[<gregtech:meta_item_1:112>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:112>],
+ [<ore:pipeSmallStainlessSteel>, <gregtech:machine:988>, <ore:pipeSmallStainlessSteel>],
+ [<gregtech:meta_item_1:112>, <ore:plateBlackSteel>, <gregtech:machine:1438>]]);
+
 //Жидкостный манипулятор
 recipes.addShaped(<galacticraftplanets:item_basic_mars:6>,
 [[<ore:plateIron>, <ore:rotorSteel>, <ore:plateIron>],
  [<ore:glue>, <ore:circuitGood>, <ore:glue>],
  [<ore:plateIron>, <ore:rotorSteel>, <ore:plateIron>]]);
+
 //Загручкик топлива
 recipes.addShaped(<galacticraftcore:fuel_loader>,
-[[<ore:plateAluminium>, <gregtech:meta_item_1:12184>, <ore:plateAluminium>],
- [<gregtech:meta_item_1:32611>, <gregtech:machine:503>, <gregtech:meta_item_1:32611>],
- [<gregtech:meta_item_1:32691>, <gregtech:machine:814>, <gregtech:cable:8026>]]);
+[[<ore:plateAluminium>, <ore:circuitGood>, <ore:plateAluminium>],
+ [<gregtech:machine:1504>, <gregtech:machine:988>, <gregtech:meta_item_1:113>],
+ [<ore:pipeSmallStainlessSteel>, <ore:pipeSmallStainlessSteel>, <ore:pipeSmallStainlessSteel>]]);
+
 //Магнитный верстак
 recipes.addShaped(<galacticraftcore:magnetic_table>,
-[[<gregtech:meta_item_1:12297>, <gregtech:meta_item_1:12297>, <gregtech:meta_item_1:12297>],
- [<gregtech:meta_item_1:12297>, <ore:craftingTableWood>, <gregtech:meta_item_1:12297>],
- [<gregtech:meta_item_1:12297>, <gregtech:meta_item_1:12297>, <gregtech:meta_item_1:12297>]]);
+[[<ore:plateNickel>, <ore:plateNeodymiumMagnetic>, <ore:plateNickel>],
+ [<ore:plateNeodymiumMagnetic>, <ore:craftingTableWood>, <ore:plateNeodymiumMagnetic>],
+ [<ore:plateNickel>, <ore:plateNeodymiumMagnetic>, <ore:plateNickel>]]);
+
 //Воздушный шлюз каркас
-recipes.addShaped(<galacticraftcore:air_lock_frame>,
-[[<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>],
- [<gregtech:meta_item_1:12184>, <gregtech:metal_casing:4>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>, <gregtech:meta_item_1:12001>]]);
+recipes.addShaped(<galacticraftcore:air_lock_frame> * 2,
+[[<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>],
+ [<ore:plateStainlessSteel>, <ore:blockLead>, <ore:plateStainlessSteel>],
+ [<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>]]);
+
 //Контроллер воздушного шлюза
 recipes.addShaped(<galacticraftcore:air_lock_frame:1>,
-[[<gregtech:meta_item_1:12184>, <ore:plateAluminium>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:13033>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:13033>],
- [<gregtech:meta_item_1:12184>, <ore:plateAluminium>, <gregtech:meta_item_1:12184>]]);
+[[<ore:plateStainlessSteel>, <ore:cableGtDoubleGold>, <ore:plateStainlessSteel>],
+ [<ore:circuitAdvanced>, <ore:blockLead>, <ore:circuitAdvanced>],
+ [<ore:plateStainlessSteel>, <ore:cableGtDoubleGold>, <ore:plateStainlessSteel>]]);
+
 //Художник
 recipes.addShaped(<galacticraftcore:machine3>,
-[[<gregtech:meta_item_1:32640>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32640>],
- [<ore:dyeRed>, null, <ore:dyeBlue>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32517>, <gregtech:meta_item_1:12184>]]);
+[[<gregtech:meta_item_1:139>, <gregtech:meta_item_1:123>, <gregtech:meta_item_1:139>],
+ [<ore:circuitAdvanced>, <gregtech:machine:986>, <ore:circuitAdvanced>],
+ [<gregtech:meta_item_1:74>, <gregtech:meta_item_1:73>, <gregtech:meta_item_1:71>]]);
+
 //Телеметрический блок
 recipes.addShaped(<galacticraftcore:telemetry>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:13184>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32691>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:32691>],
- [<gregtech:meta_item_1:12184>, <appliedenergistics2:part:480>, <gregtech:meta_item_1:12184>]]);
-//Платформа гидравлическая
-recipes.addShaped(<galacticraftcore:platform>,
-[[<gregtech:meta_item_1:12184>, <minecraft:piston>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32640>, <gregtech:meta_item_1:32600>, <gregtech:meta_item_1:32640>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32511>, <gregtech:meta_item_1:12184>]]);
+[[<gregtech:meta_item_1:165>, <ore:cableGtDoubleGold>, <ore:circuitAdvanced>],
+ [<appliedenergistics2:wireless_access_point>, <gregtech:machine:988>, <appliedenergistics2:wireless_access_point>],
+ [<ore:plateStainlessSteel>, <appliedenergistics2:part:480>, <ore:plateStainlessSteel>]]);
+
 //Контроллер запуска
 recipes.addShaped(<galacticraftplanets:mars_machine:8>,
-[[<gregtech:meta_item_1:13072>, <gregtech:meta_item_1:32633>, <gregtech:meta_item_1:13072>],
- [<gregtech:meta_item_2:32490>, <gregtech:meta_item_2:32213>, <gregtech:meta_item_2:32490>],
- [<gregtech:meta_item_1:13072>, <gregtech:cable:6018>, <gregtech:meta_item_1:13072>]]);
+[[<ore:circuitAdvanced>, <ore:circuitAdvanced>, <ore:circuitAdvanced>],
+ [<gregtech:meta_item_1:156>, <gregtech:machine:988>, <gregtech:meta_item_1:156>],
+ [<ore:cableGtDoubleGold>, <ore:cableGtDoubleGold>, <ore:cableGtDoubleGold>]]);
+
 //Креокамера
 recipes.addShaped(<galacticraftplanets:mars_machine:4>,
-[[<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:32491>, <gregtech:meta_item_1:13072>],
- [<gregtech:meta_item_1:13072>, <ore:bed>, <gregtech:meta_item_1:13072>],
- [<gregtech:meta_item_1:13072>, <gregtech:meta_item_1:13184>, <gregtech:meta_item_1:13072>]]);
+[[<gregtech:meta_item_1:140>, <ore:circuitAdvanced>, <gregtech:meta_item_1:111>],
+ [<ore:plateDenseLead>, <ore:bed>, <ore:plateDenseLead>],
+ [<galacticraftcore:oxygen_concentrator>, <ore:circuitAdvanced>, <galacticraftcore:oxygen_concentrator>]]);
+
 //Терраформер
 recipes.addShaped(<galacticraftplanets:mars_machine>,
-[[<gregtech:meta_item_1:32652>, <gregtech:meta_item_1:32692>, <gregtech:meta_item_1:32652>],
- [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:32491>, <gregtech:meta_item_1:13072>],
- [<gregtech:meta_item_1:13072>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:13072>]]);
-//Контроллер солнечной батареи
-recipes.addShaped(<galacticraftplanets:solar_array_controller>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_2:32212>, <gregtech:meta_item_1:12184>],
- [<gregtech:cable:6018>, <gregtech:meta_item_2:32212>, <gregtech:cable:6018>],
- [<gregtech:meta_item_1:12184>, <ore:circuitGood>, <gregtech:meta_item_1:12184>]]);
+[[<gregtech:meta_item_1:141>, <gregtech:meta_item_1:166>, <gregtech:meta_item_1:141>],
+ [<ore:plateDenseLead>, <ore:circuitElite>, <ore:plateDenseLead>],
+ [<ore:cableGtDoubleGold>, <gregtech:meta_item_1:254>, <ore:cableGtDoubleGold>]]);
+
 //Контроллер щита
 recipes.addShaped(<galacticraftplanets:basic_item_venus>,
-[[<ore:paneGlass>, <gregtech:meta_item_1:32674>, <ore:paneGlass>],
- [<gregtech:meta_item_1:32674>, <gregtech:meta_item_2:32578>, <gregtech:meta_item_1:32674>],
- [<ore:paneGlass>, <gregtech:meta_item_1:32674>, <ore:paneGlass>]]);
-//Модуль солнечной батареи
-recipes.addShaped(<galacticraftplanets:solar_array_module>,
-[[<gregtech:meta_item_1:32750>, <gregtech:meta_item_1:32750>, <gregtech:meta_item_1:32750>],
- [<gregtech:cable:7018>, <gregtech:meta_item_1:32511>, <gregtech:cable:7018>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32511>, <gregtech:meta_item_1:12184>]]);
-//Солнечная панель 1
+[[<ore:paneGlassBlack>, <ore:stickNeodymiumMagnetic>, <ore:paneGlassBlack>],
+ [<ore:cableGtDoubleSuperconductor>, <gregtech:meta_item_1:254>, <ore:cableGtDoubleSuperconductor>],
+ [<ore:paneGlassBlack>, <ore:stickNeodymiumMagnetic>, <ore:paneGlassBlack>]]);
+
+//Базовая солнечная панель
 recipes.addShaped(<galacticraftcore:solar>,
-[[<gregtech:meta_item_1:32751>, <gregtech:meta_item_1:32751>, <gregtech:meta_item_1:32751>],
- [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:14184>, <gregtech:meta_item_1:12184>],
- [<gregtech:meta_item_1:32600>, <gregtech:machine:502>, <gregtech:cable:2026>]]);
-//Солнечная панель 2
+[[<gregtech:meta_item_1:191>, <gregtech:meta_item_1:191>, <gregtech:meta_item_1:191>],
+ [<ore:gearStainlessSteel>, <ore:stickStainlessSteel>, <ore:gearStainlessSteel>],
+ [<gregtech:meta_item_1:105>, <gregtech:machine:987>, <ore:cableGtQuadrupleGold>]]);
+
+//Улучшенная солнечная панель
 recipes.addShaped(<galacticraftcore:solar:4>,
-[[<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>],
- [<ore:plateStainlessSteel>, <ore:stickStainlessSteel>, <ore:plateStainlessSteel>],
- [<gregtech:meta_item_1:32602>, <gregtech:machine:503>, <gregtech:cable:2026>]]);
+[[<gregtech:meta_item_1:192>, <gregtech:meta_item_1:192>, <gregtech:meta_item_1:192>],
+ [<ore:gearStainlessSteel>, <ore:stickStainlessSteel>, <ore:gearStainlessSteel>],
+ [<gregtech:meta_item_1:106>, <gregtech:machine:989>, <ore:cableGtQuadrupleGold>]]);
+
 //Клапан
 recipes.addShaped(<galacticraftcore:air_vent>,
-[[<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>],
+[[<chisel:ironpane:4>, <ore:stickLongSteel>, <chisel:ironpane:4>],
  [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>],
- [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>]]);
-//частотный модуль
+ [<chisel:ironpane:4>, <ore:stickLongSteel>, <chisel:ironpane:4>]]);
+
+//Частотный модуль
 recipes.addShaped(<galacticraftcore:basic_item:19>,
-[[<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:32692>, <gregtech:meta_item_1:12184>],
- [<ore:circuitBasic>, <ore:cableGtSingleRedAlloy>, <ore:circuitBasic>],
- [<gregtech:meta_item_2:32483>, <gregtech:meta_item_2:32481>, <gregtech:meta_item_2:32483>]]);
-//тепло шлем
+[[<ore:plateLead>, <gregtech:meta_item_1:164>, <ore:plateLead>],
+ [<gregtech:meta_item_1:155>, <ore:cableGtSingleRedAlloy>, <ore:circuitBasic>],
+ [<gregtech:meta_item_1:303>, <gregtech:meta_item_1:306>, <gregtech:meta_item_1:303>]]);
+
+//Тепло-шлем
 recipes.addShaped(<galacticraftplanets:thermal_padding>,
 [[<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_helmet>, <galacticraftplanets:item_basic_asteroids:7>],
- [<galacticraftplanets:item_basic_asteroids:7>, <gregtech:meta_item_1:32766>, <galacticraftplanets:item_basic_asteroids:7>],
+ [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
  [null, null, null]]);
-//тепло нагрудник
+
+//Тепло-нагрудник
 recipes.addShaped(<galacticraftplanets:thermal_padding:1>,
-[[<galacticraftplanets:item_basic_asteroids:7>, <gregtech:meta_item_1:32766>, <galacticraftplanets:item_basic_asteroids:7>],
+[[<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
  [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_chestplate>, <galacticraftplanets:item_basic_asteroids:7>],
  [<galacticraftplanets:item_basic_asteroids:7>, <galacticraftplanets:item_basic_asteroids:7>, <galacticraftplanets:item_basic_asteroids:7>]]);
-//тепло поножи
+
+//Тепло-поножи
 recipes.addShaped(<galacticraftplanets:thermal_padding:2>,
 [[<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_leggings>, <galacticraftplanets:item_basic_asteroids:7>],
- [<galacticraftplanets:item_basic_asteroids:7>, <gregtech:meta_item_1:32766>, <galacticraftplanets:item_basic_asteroids:7>],
+ [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
  [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>]]);
-//тепло ботинки
+
+//Тепло-ботинки
 recipes.addShaped(<galacticraftplanets:thermal_padding:3>,
-[[null, <gregtech:meta_item_1:32766>, null],
+[[null, null, null],
  [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
  [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_boots>, <galacticraftplanets:item_basic_asteroids:7>]]);
-//Тепло ткань 1
-recipes.addShaped(<galacticraftplanets:item_basic_asteroids:7>*2,
+
+//Тепло-ткань 1
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids:7> * 2,
 [[<ore:wool>, <ore:wool>, <ore:wool>],
  [<ore:clothHighQuality>, <ore:clothHighQuality>, <ore:clothHighQuality>],
  [<ore:wool>, <ore:wool>, <ore:wool>]]);
-//тепло ткань 2
-recipes.addShaped(<galacticraftplanets:basic_item_venus:3>*2,
+
+//Тепло-ткань 2
+recipes.addShaped(<galacticraftplanets:basic_item_venus:3> * 2,
 [[null, <galacticraftplanets:item_basic_asteroids:7>, null],
- [<galacticraftplanets:item_basic_asteroids:7>, <gregtech:meta_item_1:12001>, <galacticraftplanets:item_basic_asteroids:7>],
+ [<galacticraftplanets:item_basic_asteroids:7>, <ore:plateLead>, <galacticraftplanets:item_basic_asteroids:7>],
  [null, <galacticraftplanets:item_basic_asteroids:7>, null]]);
-//Сенсорные очки
-recipes.addShaped(<galacticraftcore:sensor_glasses>,
-[[<minecraft:leather>, <ore:plateDiamond>, <minecraft:leather>],
- [<minecraft:leather>, null, <minecraft:leather>],
- [<galacticraftcore:sensor_lens>, <ore:plateBismuthBronze>, <galacticraftcore:sensor_lens>]]);
-//Сернсорные линзы
-recipes.addShaped(<galacticraftcore:sensor_lens>,
-[[<ore:circuitAdvanced>, <ore:wireGtQuadrupleAnnealedCopper>, <ore:circuitAdvanced>],
- [<ore:wireGtQuadrupleAnnealedCopper>, <ore:paneGlass>, <ore:wireGtQuadrupleAnnealedCopper>],
- [<ore:circuitAdvanced>, <ore:wireGtQuadrupleAnnealedCopper>, <ore:circuitAdvanced>]]);
+
 //Пешеходная дорожка
 recipes.addShaped(<galacticraftplanets:walkway>,
 [[<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
  [<ore:plateCurvedTitanium>, <ore:plateTitanium>, <ore:plateCurvedTitanium>],
  [null, <ore:plateTitanium>, null]]);
+
 //Пеш. дор с проводом
 recipes.addShaped(<galacticraftplanets:walkway:1>,
 [[<galacticraftplanets:walkway>, <ore:cableGtDoubleGold>, null],
  [<ore:cableGtDoubleGold>, null, null],
  [null, null, null]]);
+
 //Пеш. дор с жид. трубой
 recipes.addShaped(<galacticraftplanets:walkway:2>,
 [[<galacticraftplanets:walkway>, <galacticraftcore:fluid_pipe>, null],
  [<galacticraftcore:fluid_pipe>, null, null],
  [null, null, null]]);
+
 //Маяк ресивер
 recipes.addShaped(<galacticraftplanets:beam_receiver>,
 [[<ore:plateBeryllium>, <ore:plateSilver>, <ore:plateBeryllium>],
  [<ore:plateSilver>, <galacticraftplanets:item_basic_asteroids:8>, <ore:plateSilver>],
  [<ore:plateBeryllium>, <ore:circuitElite>, <ore:plateBeryllium>]]);
+
 //Лучевое ядро
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:8>,
 [[<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>],
  [<ore:platePlatinum>, <galacticraftplanets:basic_item_venus:2>, <ore:platePlatinum>],
  [<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>]]);
+
 //Радиоизотопное ядро
 recipes.addShaped(<galacticraftplanets:basic_item_venus:2>,
-[[<ore:plateGraphite>, <gregtech:meta_item_1:12076>, <ore:plateGraphite>],
- [<gregtech:meta_item_1:12075>, <gregtech:wire_coil:3>, <gregtech:meta_item_1:12075>],
- [<ore:plateGraphite>, <gregtech:meta_item_1:12076>, <ore:plateGraphite>]]);
+[[<ore:plateGraphite>, <gregtech:meta_item_1:260>, <ore:plateGraphite>],
+ [<ore:stickUranium235>, <gregtech:meta_item_1:260>, <ore:stickUranium235>],
+ [<ore:plateGraphite>, <gregtech:meta_item_1:260>, <ore:plateGraphite>]]);
+
 //Атомная батарейка
 recipes.addShaped(<galacticraftplanets:atomic_battery>,
-[[<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>],
- [<ore:plateNickel>, <galacticraftplanets:basic_item_venus:2>, <ore:plateNickel>],
- [<ore:plateNickel>, <gtadditions:ga_meta_item:32246>, <ore:plateNickel>]]);
-//Телепорт на корот
+[[null, <ore:plateInvar>, null],
+ [null, <galacticraftplanets:basic_item_venus:2>, null],
+ [null, <gregtech:meta_item_1:80>, null]]);
+
+//Площадка телепортации
 recipes.addShaped(<galacticraftplanets:telepad_short>,
 [[<ore:plateStaballoy>, <ore:circuitElite>, <ore:plateStaballoy>],
- [<gregtech:machine:493>, <galacticraftplanets:item_basic_asteroids:8>, <gregtech:machine:493>],
+ [<gregtech:machine:984>, <galacticraftplanets:item_basic_asteroids:8>, <gregtech:machine:984>],
  [<ore:plateStaballoy>, <ore:plateStaballoy>, <ore:plateStaballoy>]]);
+
 //Спасательная коробка
 recipes.addShaped(<galacticraftcore:emergency_box>,
 [[<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
@@ -430,199 +449,220 @@ recipes.addShaped(<galacticraftcore:landing_pad>*9,
 [[null, null, null],
  [<ore:plateDenseSteel>, <ore:plateDenseSteel>, <ore:plateDenseSteel>],
  [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]]);
+
 //Площадка для багги
 recipes.addShaped(<galacticraftcore:landing_pad:1>*9,
 [[null, null, null],
- [<ore:plateDenseWroughtIron>, <ore:plateDenseWroughtIron>, <ore:plateDenseWroughtIron>],
+ [<ore:plateDenseIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
  [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
+
 //Основания астрономического шахтера
 recipes.addShaped(<galacticraftplanets:miner_base>,
 [[<ore:plateDenseBlackSteel>, <ore:chestWood>, <ore:plateDenseBlackSteel>],
- [<galacticraftplanets:item_basic_asteroids:8>, <gtadditions:ga_meta_item:32205>, <galacticraftplanets:item_basic_asteroids:8>],
- [<ore:plateDenseBlackSteel>, <gregtech:machine:627>, <ore:plateDenseBlackSteel>]]);
+ [<galacticraftplanets:item_basic_asteroids:8>, <ore:circuitAdvanced>, <galacticraftplanets:item_basic_asteroids:8>],
+ [<ore:plateDenseBlackSteel>, <gregtech:machine:1333>, <ore:plateDenseBlackSteel>]]);
+
 //Вращательный движок
 recipes.addShaped(<galacticraftcore:spin_thruster>,
 [[<galacticraftcore:oil_canister_partial:1001>, <ore:circuitElite>, <galacticraftplanets:item_basic_asteroids:1>],
  [<ore:plateDenseStainlessSteel>, <gregtech:metal_casing:7>, <ore:plateDenseStainlessSteel>],
  [<ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>]]);
+
 //Капсула из галактики под жидкости
 recipes.addShaped(<galacticraftcore:oil_canister_partial:1001>,
-[[<gregtech:meta_item_1:12189>, <ore:plateSteel>, <gregtech:meta_item_1:12189>],
- [<gregtech:meta_item_1:12189>, <ore:blockGlass>, <gregtech:meta_item_1:12189>],
- [<gregtech:meta_item_1:12189>, <galacticraftcore:canister>, <gregtech:meta_item_1:12189>]]);
+[[<ore:plateAluminium>, <ore:plateBlackSteel>, <ore:plateAluminium>],
+ [<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>],
+ [<ore:plateAluminium>, <galacticraftcore:canister>, <ore:plateAluminium>]]);
+
 //Канистра из олова
 recipes.addShaped(<galacticraftcore:canister>,
-[[<gregtech:meta_item_1:12071>, null, <gregtech:meta_item_1:12071>],
- [<gregtech:meta_item_1:12071>, null, <gregtech:meta_item_1:12071>],
- [<gregtech:meta_item_1:12071>, <gregtech:meta_item_1:12071>, <gregtech:meta_item_1:12071>]]);
+[[<ore:plateTin>, null, <ore:plateTin>],
+ [<ore:plateTin>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:plateTin>],
+ [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
+
 //Дуговая лампа
 recipes.addShaped(<galacticraftcore:arclamp>,
-[[<ore:plateSteel>, <ore:dustGlowstone>, <ore:plateSteel>],
+[[<ore:plateBlackSteel>, <ore:dustGlowstone>, <ore:plateBlackSteel>],
  [<ore:dustGlowstone>, <galacticraftplanets:atomic_battery>, <ore:dustGlowstone>],
- [<ore:plateSteel>, <ore:dustGlowstone>, <ore:plateSteel>]]);
+ [<ore:plateBlackSteel>, <ore:dustGlowstone>, <ore:plateBlackSteel>]]);
+
 //Багги сиденье
 recipes.addShaped(<galacticraftcore:buggymat:1>,
-[[<ore:plateSteel>, null, null],
- [<ore:plateSteel>, <ore:leather>, null],
- [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
+[[<ore:plateBlackSteel>, null, null],
+ [<ore:plateBlackSteel>, <ore:leather>, null],
+ [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
+
 //Контейнер багги
 recipes.addShaped(<galacticraftcore:buggymat:2>,
 [[<ore:plateAluminium>, <ore:plateStainlessSteel>, <ore:plateAluminium>],
  [<ore:plateAluminium>, <ore:chestWood>, <ore:plateAluminium>],
  [<ore:plateAluminium>, <ore:plateStainlessSteel>, <ore:plateAluminium>]]);
+
 //Маяк дефлектор
 recipes.addShaped(<galacticraftplanets:beam_reflector>,
 [[null, <galacticraftplanets:item_basic_asteroids:8>, null],
  [<ore:circuitGood>, <ore:plateTitanium>, <minecraft:lever>],
  [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]]);
+
 //Антена связи
 recipes.addShaped(<galacticraftcore:dishbase>,
-[[<ore:plateDenseAluminium>, <galacticraftcore:basic_item:19>, <ore:plateDenseAluminium>],
- [null, <ore:plateDenseAluminium>, null],
- [<gtadditions:ga_meta_item:32208>, <ore:blockSteel>, <gtadditions:ga_meta_item:32209>]]);
+[[<ore:plateStainlessSteel>, <galacticraftcore:basic_item:19>, <ore:plateStainlessSteel>],
+ [null, <ore:plateStainlessSteel>, null],
+ [<ore:circuitMaster>, <ore:blockSteel>, <ore:circuitMaster>]]);
+
 //Тепловой контроллер
 recipes.addShaped(<galacticraftcore:basic_item:20>,
-[[<ore:wireGtSingleAluminium>, <ore:rotorChrome>, <ore:wireGtSingleAluminium>],
- [<ore:plateBronze>, <gtadditions:ga_meta_item:32211>, <ore:plateBronze>],
- [<ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>]]);
-//Концентратор говна донила(кстати это пасхалка :D)
+[[<ore:cableGtDoubleElectrum>, <ore:circuitElite>, <ore:cableGtDoubleElectrum>],
+ [<ore:plateBronze>, <ore:circuitElite>, <ore:plateBronze>],
+ [<galaxyspace:compressed_plates:4>, <ore:plateBlackSteel>, <galaxyspace:compressed_plates:4>]]);
+
+//Концентратор
 recipes.addShaped(<galacticraftcore:oxygen_concentrator>,
-[[<ore:plateSteel>, <ore:circuitGood>, <ore:plateSteel>],
+[[<ore:plateBlackSteel>, <ore:circuitGood>, <ore:plateBlackSteel>],
  [<ore:plateTin>, <galacticraftcore:canister>, <ore:plateTin>],
- [<ore:plateSteel>, <galacticraftcore:air_vent>, <ore:plateSteel>]]);
+ [<ore:plateBlackSteel>, <galacticraftcore:air_vent>, <ore:plateBlackSteel>]]);
+
 //Привод ориона
 recipes.addShaped(<galacticraftplanets:orion_drive>,
-[[<gregtech:meta_item_1:12049>, <gtadditions:ga_meta_item:32209>, <gregtech:meta_item_1:12049>],
- [<gtadditions:ga_meta_item:32245>, <galacticraftplanets:miner_base>, <gtadditions:ga_meta_item:32242>],
- [<gregtech:meta_item_1:12049>, <gtadditions:ga_meta_item:32213>, <gregtech:meta_item_1:12049>]]);
-//Гаечный ключ
-recipes.addShaped(<galacticraftcore:standard_wrench>,
-[[null, <ore:craftingToolFile>, <ore:plateBlackSteel>],
- [null, <ore:plateBlackBronze>, <ore:craftingToolHardHammer>],
- [<ore:plateBronze>, null, null]]);
+[[<ore:platePalladium>, <ore:circuitExtreme>, <ore:platePalladium>],
+ [<gregtech:meta_item_1:140>, <galacticraftplanets:miner_base>, <gregtech:meta_item_1:140>],
+ [<ore:platePalladium>, <ore:circuitElite>, <ore:platePalladium>]]);
+
 //Колесо багги
 recipes.addShaped(<galacticraftcore:buggymat>,
 [[null, <ore:leather>, null],
- [<ore:leather>, <gregtech:meta_item_1:12301>, <ore:leather>],
+ [<ore:leather>, <ore:plateVanadiumSteel>, <ore:leather>],
  [null, <ore:leather>, null]]);
+
 //Экран просмотра
 recipes.addShaped(<galacticraftcore:view_screen>,
-[[<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>],
+[[<ore:plateBlackSteel>, <ore:circuitBasic>, <ore:plateBlackSteel>],
  [<ore:circuitBasic>, <ore:paneGlass>, <ore:circuitBasic>],
- [<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>]]);
+ [<ore:plateBlackSteel>, <ore:circuitBasic>, <ore:plateBlackSteel>]]);
+
 //ДО 1
 recipes.addShaped(<galacticraftcore:basic_block_core:4>,
 [[<ore:stone>, <ore:stone>, null],
  [<ore:stone>, <ore:stone>, <ore:plateTin>],
  [null, null, null]]);
+
 //ДО 2
 recipes.addShaped(<galacticraftcore:basic_block_core:3>,
 [[<ore:stone>, <ore:stone>, null],
  [<ore:stone>, <ore:stone>, null],
  [null, <ore:plateTin>, null]]);
+
 //Свет панель 1
 recipes.addShaped(<galacticraftcore:panel_lighting>,
 [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
  [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
- [<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>]]);
+ [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+
 //Свет панель 2
 recipes.addShaped(<galacticraftcore:panel_lighting:1>,
 [[<ore:paneGlass>, null, <ore:paneGlass>],
  [null, <galacticraftcore:glowstone_torch>, null],
- [<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>]]);
+ [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+
 //Свет панель 3
 recipes.addShaped(<galacticraftcore:panel_lighting:2>,
 [[<ore:paneGlass>, null, <ore:paneGlass>],
  [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
- [<ore:paneGlass>, <ore:plateSteel>, <ore:paneGlass>]]);
+ [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+
 //Свет панель 4
 recipes.addShaped(<galacticraftcore:panel_lighting:3>,
 [[null, null, null],
  [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
- [null, <ore:plateSteel>, null]]);
+ [null, <ore:plateBlackSteel>, null]]);
+
 //Свет панель 5
 recipes.addShaped(<galacticraftcore:panel_lighting:4>,
 [[null, null, null],
  [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, null],
- [null, <ore:plateSteel>, null]]);
+ [null, <ore:plateBlackSteel>, null]]);
+
 //ENGINES 1-10TIER
 //Двигатель 1
 recipes.addShaped(<galacticraftcore:engine>,
-[[<ore:circuitAdvanced>, <gregtech:meta_item_1:32612>, <ore:circuitAdvanced>],
- [<galacticraftcore:heavy_plating>, <gregtech:machine:814>, <galacticraftcore:heavy_plating>],
+[[<ore:circuitAdvanced>, <gregtech:machine:1532>, <ore:circuitAdvanced>],
+ [<galacticraftcore:heavy_plating>, <gregtech:machine:1504>, <galacticraftcore:heavy_plating>],
  [<galacticraftcore:heavy_plating>, <galacticraftcore:air_vent>, <galacticraftcore:heavy_plating>]]);
 //Двигатель 2
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:1>,
-[[<ore:circuitAdvanced>, <gregtech:meta_item_1:32612>, <ore:circuitAdvanced>],
- [<galacticraftplanets:item_basic_asteroids:5>, <gregtech:machine:814>, <galacticraftplanets:item_basic_asteroids:5>],
+[[<ore:circuitExtreme>, <gregtech:machine:1532>, <ore:circuitExtreme>],
+ [<galacticraftplanets:item_basic_asteroids:5>, <gregtech:machine:1504>, <galacticraftplanets:item_basic_asteroids:5>],
  [<galacticraftplanets:item_basic_asteroids:5>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_asteroids:5>]]);
+
 //BOOSTERS 1-10tier
 //Lvl 1
 recipes.addShaped(<galacticraftcore:engine:1>,
-[[<galacticraftplanets:item_basic_mars:3>, <gregtech:meta_item_1:32612>, <galacticraftplanets:item_basic_mars:3>],
- [<galacticraftplanets:item_basic_mars:3>, <gregtech:machine:814>, <galacticraftplanets:item_basic_mars:3>],
+[[<galacticraftplanets:item_basic_mars:3>, <gregtech:machine:1532>, <galacticraftplanets:item_basic_mars:3>],
+ [<galacticraftplanets:item_basic_mars:3>, <gregtech:machine:1504>, <galacticraftplanets:item_basic_mars:3>],
  [<galacticraftplanets:item_basic_mars:3>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_mars:3>]]);
+
 //STABILIZATORS 1-10TIER
 //T1
 recipes.addShaped(<galacticraftcore:rocket_fins>,
-[[<ore:plateAluminium>, <ore:circuitAdvanced>, <ore:plateAluminium>],
+[[<ore:plateStainlessSteel>, <ore:circuitAdvanced>, <ore:plateStainlessSteel>],
  [<galacticraftcore:heavy_plating>, <gregtech:meta_item_1:32528>, <galacticraftcore:heavy_plating>],
  [<galacticraftcore:heavy_plating>, <galacticraftcore:air_vent>, <galacticraftcore:heavy_plating>]]);
 //T2
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>,
-[[<ore:plateAluminium>, <ore:circuitAdvanced>, <ore:plateAluminium>],
- [<galacticraftplanets:item_basic_mars:3>, <gregtech:meta_item_1:32528>, <galacticraftplanets:item_basic_mars:3>],
+[[<ore:plateStainlessSteel>, <ore:circuitAdvanced>, <ore:plateStainlessSteel>],
+ [<galacticraftplanets:item_basic_mars:3>, <gregtech:meta_item_1:32538>, <galacticraftplanets:item_basic_mars:3>],
  [<galacticraftplanets:item_basic_mars:3>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_mars:3>]]);
 //T3
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>,
-[[<ore:plateAluminium>, <ore:circuitAdvanced>, <ore:plateAluminium>],
- [<galacticraftplanets:item_basic_asteroids:5>, <gregtech:meta_item_1:32528>, <galacticraftplanets:item_basic_asteroids:5>],
+[[<ore:plateStainlessSteel>, <ore:circuitAdvanced>, <ore:plateStainlessSteel>],
+ [<galacticraftplanets:item_basic_asteroids:5>, <galacticraftplanets:atomic_battery>, <galacticraftplanets:item_basic_asteroids:5>],
  [<galacticraftplanets:item_basic_asteroids:5>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_asteroids:5>]]);
  
 //ADD CRAFT FOR SUPERPLATES FROM GALACTIC IN BLAST FURNACE
 //Tier 1
+/*
 blast_furnace.recipeBuilder()
-	.inputs([<gregtech:meta_item_1:13184> * 3, <gregtech:meta_item_1:12001> * 1])
-	.outputs(<galacticraftcore:heavy_plating>*3)
+	.inputs([<ore:plateBlackSteel>.firstItem * 27, <ore:plateAluminium>.firstItem])
+	.outputs(<galacticraftcore:heavy_plating> * 3)
 	.property("temperature", 2200)
 	.duration(1000)
 	.EUt(520)
 	.buildAndRegister();
 //Tier 2
 blast_furnace.recipeBuilder()
-	.inputs([<gregtech:meta_item_1:12001> * 3, <gregtech:meta_item_1:12183> * 1])
-	.outputs(<galacticraftplanets:item_basic_mars:3>*3)
+	.inputs([<ore:plateAluminium>.firstItem * 3, <ore:plateStainlessSteel>.firstItem])
+	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
 	.property("temperature", 2700)
 	.duration(1000)
 	.EUt(580)
 	.buildAndRegister();
 //Tier 3
 blast_furnace.recipeBuilder()
-	.inputs([<gregtech:meta_item_1:12183> * 3, <gregtech:meta_item_1:12072> * 1])
-	.outputs(<galacticraftplanets:item_basic_asteroids:5>*3)
+	.inputs([<ore:plateStainlessSteel>.firstItem * 3, <ore:plateTitanium>.firstItem])
+	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
 	.property("temperature", 3000)
 	.duration(1000)
 	.EUt(640)
 	.buildAndRegister();
-
+*/
 //ADD CRAFT FOR ROCKETS 1-10TIER
 //Tier 1
 assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_2:32492>*2, <galacticraftcore:heavy_plating>*34, <gregtech:frame_aluminium>*14, <gregtech:machine:813>*4, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
+  .inputs(<ore:circuitExtreme>*2, <galacticraftcore:heavy_plating>*34, <ore:frameGtAluminium>*14, <gregtech:machine:1502>*4, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
   .outputs(<galacticraftcore:rocket_t1:3>)
   .duration(1000)
   .EUt(220)
   .buildAndRegister();
 //Tier 2
 assembler.recipeBuilder()
-  .inputs(<galacticraftplanets:item_basic_mars:3>*36, <gregtech:frame_aluminium>*16, <gregtech:machine:813>*4, <galacticraftcore:schematic:1>, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:engine:1>*2, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
+  .inputs(<galacticraftplanets:item_basic_mars:3>*36, <ore:frameGtAluminium>*16, <gregtech:machine:1502>*4, <galacticraftcore:schematic:1>, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:engine:1>*2, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
   .outputs(<galacticraftplanets:rocket_t2:3>)
   .duration(1500)
   .EUt(280)
   .buildAndRegister();
 //Tier 3
 assembler.recipeBuilder()
-  .inputs(<galacticraftplanets:item_basic_asteroids:5>*38, <gregtech:frame_aluminium>*20, <galacticraftplanets:schematic>, <gregtech:machine:814>*2, <ore:chest>*3, <galacticraftplanets:item_basic_asteroids:1>, <galacticraftplanets:item_basic_asteroids:2>*4, <galacticraftcore:engine:1>*4, <galacticraftplanets:heavy_nose_cone>)
+  .inputs(<galacticraftplanets:item_basic_asteroids:5>*38, <ore:frameGtAluminium>*20, <galacticraftplanets:schematic>, <gregtech:machine:1503>*2, <ore:chest>*3, <galacticraftplanets:item_basic_asteroids:1>, <galacticraftplanets:item_basic_asteroids:2>*4, <galacticraftcore:engine:1>*4, <galacticraftplanets:heavy_nose_cone>)
   .outputs(<galacticraftplanets:rocket_t3:3>)
   .duration(2000)
   .EUt(340)
@@ -631,16 +671,16 @@ assembler.recipeBuilder()
 //Баллоны
 //Легкий
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:812>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*2, <gregtech:meta_item_1:32611>*2)
+   .inputs(<gregtech:machine:1501>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*2, <gregtech:meta_item_1:112>*2)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
    .duration(1000).EUt(128).buildAndRegister();
 //Средний
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:813>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*4, <gregtech:meta_item_1:32612>*2)
+   .inputs(<gregtech:machine:1502>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*4, <gregtech:meta_item_1:113>*2)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
    .duration(1000).EUt(256).buildAndRegister();
 //Тяжелый
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:814>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*6, <gregtech:meta_item_1:32613>*2)
+   .inputs(<gregtech:machine:1503>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*6, <gregtech:meta_item_1:114>*2)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .duration(1000).EUt(512).buildAndRegister();
