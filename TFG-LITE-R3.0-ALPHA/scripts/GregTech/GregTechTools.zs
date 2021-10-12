@@ -5,6 +5,7 @@ recipes.removeByRecipeName("gregtech:axe_flint");
 recipes.removeByRecipeName("gregtech:shovel_flint");
 recipes.removeByRecipeName("gregtech:knife_flint");
 recipes.removeByRecipeName("gregtech:hoe_flint");
+recipes.removeByRecipeName("gregtech:mortar_flint");
 
 //Отключение крафтов голов молотов GT(61)
 recipes.remove(<ore:toolHeadHammerNeutronium>);

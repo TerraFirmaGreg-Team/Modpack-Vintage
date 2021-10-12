@@ -158,6 +158,44 @@ for item in ItemsToRemoveTFC{
     recipes.remove(item);
 }*/
 
+//Quern - GT ore --> TFC ore
+Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <gregtech:meta_dust_small:25> * 3);
+Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <gregtech:meta_dust_small:346> * 3);
+Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <gregtech:meta_dust_small:201> * 3);
+Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <gregtech:meta_dust_small:222> * 3);
+Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <gregtech:meta_dust_small:220> * 3);
+Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <gregtech:meta_dust_small:139> * 3);
+Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <gregtech:meta_dust_small:223> * 3);
+Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <gregtech:meta_dust_small:224> * 3);
+
+Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <gregtech:meta_dust_small:112> * 3);
+Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <gregtech:meta_dust_small:137>);
+Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <gregtech:meta_dust_small:138>);
+
+Quern.addRecipe("GTOreToTFC_Iron", <gregtech:ore_iron_0>, <gregtech:meta_dust_small:51> * 3);
+Quern.addRecipe("GTOreToTFC_Pyrite", <gregtech:ore_pyrite_0>, <gregtech:meta_dust_small:180> * 3);
+Quern.addRecipe("GTOreToTFC_YellowLimonite", <gregtech:ore_yellow_limonite_0>, <gregtech:meta_dust_small:211> * 3);
+Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <gregtech:meta_dust_small:166> * 3);
+Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <gregtech:meta_dust_small:135> * 3);
+Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <gregtech:meta_dust_small:129> * 3);
+
+Quern.addRecipe("GTOreToTFC_Zinc", <gregtech:ore_zinc_0>, <gregtech:meta_dust_small:122> * 3);
+Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <gregtech:meta_dust_small:196> * 3);
+
+Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <gregtech:meta_dust_small:69> * 3);
+Quern.addRecipe("GTOreToTFC_Garnierite", <gregtech:ore_garnierite_0>, <gregtech:meta_dust_small:154> * 3);
+Quern.addRecipe("GTOreToTFC_Pentlandite", <gregtech:ore_pentlandite_0>, <gregtech:meta_dust_small:335> * 3);
+
+Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <gregtech:meta_dust_small:153> * 3);
+Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <gregtech:meta_dust_small:55> * 3);
+
+Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <gregtech:meta_dust_small:41> * 3);
+Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <gregtech:meta_dust_small:11> * 3);
+Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <gregtech:meta_dust_small:100> * 3);
+
+Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <gregtech:meta_dust_small:103> * 3);
+Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <gregtech:meta_dust_small:183> * 3);
+
 //Добавление рецептов печи для еды TFC
 //Хавка
 furnace.addRecipe(<tfc:food/cooked_beef>, <tfc:food/beef>);
