@@ -2,93 +2,93 @@ import mods.inworldcrafting.FluidToItem;
 
 //Чистая вода
 //Вариации меди
-FluidToItem.transform(<gregtech:meta_dust_small:25> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:25>]);
-FluidToItem.transform(<gregtech:meta_dust_small:222> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:222>]);
-FluidToItem.transform(<gregtech:meta_dust_small:201> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:201>]);
-FluidToItem.transform(<gregtech:meta_dust_small:221> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:221>]);
-FluidToItem.transform(<gregtech:meta_dust_small:220> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:220>]);
-FluidToItem.transform(<gregtech:meta_dust_small:139> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:139>]);
-FluidToItem.transform(<gregtech:meta_dust_small:224> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:224>]);
-FluidToItem.transform(<gregtech:meta_dust_small:346> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:346>]);
-FluidToItem.transform(<gregtech:meta_dust_small:223> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:223>]);
+FluidToItem.transform(<gregtech:meta_dust_small:25> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:25>]);
+FluidToItem.transform(<gregtech:meta_dust_small:222> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:222>]);
+FluidToItem.transform(<gregtech:meta_dust_small:201> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:201>]);
+FluidToItem.transform(<gregtech:meta_dust_small:221> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:221>]);
+FluidToItem.transform(<gregtech:meta_dust_small:220> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:220>]);
+FluidToItem.transform(<gregtech:meta_dust_small:139> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:139>]);
+FluidToItem.transform(<gregtech:meta_dust_small:224> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:224>]);
+FluidToItem.transform(<gregtech:meta_dust_small:346> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:346>]);
+FluidToItem.transform(<gregtech:meta_dust_small:223> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:223>]);
 //Вариации Олова
-FluidToItem.transform(<gregtech:meta_dust_small:112> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:112>]);
-FluidToItem.transform(<gregtech:meta_dust_small:137> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:137>]);
-FluidToItem.transform(<gregtech:meta_dust_small:138> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:138>]);
+FluidToItem.transform(<gregtech:meta_dust_small:112> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:112>]);
+FluidToItem.transform(<gregtech:meta_dust_small:137> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:137>]);
+FluidToItem.transform(<gregtech:meta_dust_small:138> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:138>]);
 //Вариации Железа
-FluidToItem.transform(<gregtech:meta_dust_small:51> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:51>]);
-FluidToItem.transform(<gregtech:meta_dust_small:129> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:129>]);
-FluidToItem.transform(<gregtech:meta_dust_small:180> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:180>]);
-FluidToItem.transform(<gregtech:meta_dust_small:166> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:166>]);
-FluidToItem.transform(<gregtech:meta_dust_small:211> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:211>]);
-FluidToItem.transform(<gregtech:meta_dust_small:135> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:135>]);
+FluidToItem.transform(<gregtech:meta_dust_small:51> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:51>]);
+FluidToItem.transform(<gregtech:meta_dust_small:129> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:129>]);
+FluidToItem.transform(<gregtech:meta_dust_small:180> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:180>]);
+FluidToItem.transform(<gregtech:meta_dust_small:166> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:166>]);
+FluidToItem.transform(<gregtech:meta_dust_small:211> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:211>]);
+FluidToItem.transform(<gregtech:meta_dust_small:135> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:135>]);
 //Никель
-FluidToItem.transform(<gregtech:meta_dust_small:69> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:69>]);
-FluidToItem.transform(<gregtech:meta_dust_small:154> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:154>]);
-FluidToItem.transform(<gregtech:meta_dust_small:335> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:335>]);
+FluidToItem.transform(<gregtech:meta_dust_small:69> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:69>]);
+FluidToItem.transform(<gregtech:meta_dust_small:154> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:154>]);
+FluidToItem.transform(<gregtech:meta_dust_small:335> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:335>]);
 //Вариации Кобальта
-FluidToItem.transform(<gregtech:meta_dust_small:23> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:23>]);
-FluidToItem.transform(<gregtech:meta_dust_small:146> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:146>]);
+FluidToItem.transform(<gregtech:meta_dust_small:23> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:23>]);
+FluidToItem.transform(<gregtech:meta_dust_small:146> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:146>]);
 //Вариации Цинка
-FluidToItem.transform(<gregtech:meta_dust_small:122> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:122>]);
-FluidToItem.transform(<gregtech:meta_dust_small:196> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:196>]);
+FluidToItem.transform(<gregtech:meta_dust_small:122> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:122>]);
+FluidToItem.transform(<gregtech:meta_dust_small:196> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:196>]);
 //Вариации Свинца
-FluidToItem.transform(<gregtech:meta_dust_small:55> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:55>]);
-FluidToItem.transform(<gregtech:meta_dust_small:153> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:153>]);
+FluidToItem.transform(<gregtech:meta_dust_small:55> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:55>]);
+FluidToItem.transform(<gregtech:meta_dust_small:153> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:153>]);
 //Вариации Золото
-FluidToItem.transform(<gregtech:meta_dust_small:41> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:41>]);
+FluidToItem.transform(<gregtech:meta_dust_small:41> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:41>]);
 //Вариации Висмута
-FluidToItem.transform(<gregtech:meta_dust_small:11> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:11>]);
+FluidToItem.transform(<gregtech:meta_dust_small:11> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:11>]);
 //Каолинит
-FluidToItem.transform(<gregtech:meta_dust_small:357> * 3, <liquid:fresh_water>, [<minecraft:grass>]);//<gregtech:meta_dust_impure:357>
+FluidToItem.transform(<gregtech:meta_dust_small:357> * 2, <liquid:fresh_water>, [<minecraft:grass>]);//<gregtech:meta_dust_impure:357>
 //Графит
-FluidToItem.transform(<gregtech:meta_dust_small:216> * 3, <liquid:fresh_water>, [<gregtech:meta_dust_impure:216>]);
+FluidToItem.transform(<gregtech:meta_dust_small:216> * 2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:216>]);
 //Алмазы занерфленные
 FluidToItem.transform(<gregtech:meta_dust_tiny:150>*2, <liquid:fresh_water>, [<gregtech:meta_dust_impure:150>]);
 
 //Соленая вода
 //Вариации меди
-FluidToItem.transform(<gregtech:meta_dust_small:25> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:25>]);
-FluidToItem.transform(<gregtech:meta_dust_small:222> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:222>]);
-FluidToItem.transform(<gregtech:meta_dust_small:201> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:201>]);
-FluidToItem.transform(<gregtech:meta_dust_small:221> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:221>]);
-FluidToItem.transform(<gregtech:meta_dust_small:220> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:220>]);
-FluidToItem.transform(<gregtech:meta_dust_small:139> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:139>]);
-FluidToItem.transform(<gregtech:meta_dust_small:224> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:224>]);
-FluidToItem.transform(<gregtech:meta_dust_small:346> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:346>]);
-FluidToItem.transform(<gregtech:meta_dust_small:223> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:223>]);
+FluidToItem.transform(<gregtech:meta_dust_small:25> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:25>]);
+FluidToItem.transform(<gregtech:meta_dust_small:222> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:222>]);
+FluidToItem.transform(<gregtech:meta_dust_small:201> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:201>]);
+FluidToItem.transform(<gregtech:meta_dust_small:221> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:221>]);
+FluidToItem.transform(<gregtech:meta_dust_small:220> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:220>]);
+FluidToItem.transform(<gregtech:meta_dust_small:139> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:139>]);
+FluidToItem.transform(<gregtech:meta_dust_small:224> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:224>]);
+FluidToItem.transform(<gregtech:meta_dust_small:346> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:346>]);
+FluidToItem.transform(<gregtech:meta_dust_small:223> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:223>]);
 //Вариации Олова
-FluidToItem.transform(<gregtech:meta_dust_small:112> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:112>]);
-FluidToItem.transform(<gregtech:meta_dust_small:137> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:137>]);
-FluidToItem.transform(<gregtech:meta_dust_small:138> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:138>]);
+FluidToItem.transform(<gregtech:meta_dust_small:112> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:112>]);
+FluidToItem.transform(<gregtech:meta_dust_small:137> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:137>]);
+FluidToItem.transform(<gregtech:meta_dust_small:138> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:138>]);
 //Вариации Железа
-FluidToItem.transform(<gregtech:meta_dust_small:51> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:51>]);
-FluidToItem.transform(<gregtech:meta_dust_small:129> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:129>]);
-FluidToItem.transform(<gregtech:meta_dust_small:180> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:180>]);
-FluidToItem.transform(<gregtech:meta_dust_small:166> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:166>]);
-FluidToItem.transform(<gregtech:meta_dust_small:211> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:211>]);
-FluidToItem.transform(<gregtech:meta_dust_small:135> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:135>]);
+FluidToItem.transform(<gregtech:meta_dust_small:51> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:51>]);
+FluidToItem.transform(<gregtech:meta_dust_small:129> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:129>]);
+FluidToItem.transform(<gregtech:meta_dust_small:180> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:180>]);
+FluidToItem.transform(<gregtech:meta_dust_small:166> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:166>]);
+FluidToItem.transform(<gregtech:meta_dust_small:211> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:211>]);
+FluidToItem.transform(<gregtech:meta_dust_small:135> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:135>]);
 //Никель
-FluidToItem.transform(<gregtech:meta_dust_small:69> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:69>]);
-FluidToItem.transform(<gregtech:meta_dust_small:154> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:154>]);
-FluidToItem.transform(<gregtech:meta_dust_small:335> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:335>]);
+FluidToItem.transform(<gregtech:meta_dust_small:69> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:69>]);
+FluidToItem.transform(<gregtech:meta_dust_small:154> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:154>]);
+FluidToItem.transform(<gregtech:meta_dust_small:335> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:335>]);
 //Вариации Кобальта
-FluidToItem.transform(<gregtech:meta_dust_small:23> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:23>]);
-FluidToItem.transform(<gregtech:meta_dust_small:146> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:146>]);
+FluidToItem.transform(<gregtech:meta_dust_small:23> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:23>]);
+FluidToItem.transform(<gregtech:meta_dust_small:146> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:146>]);
 //Вариации Цинка
-FluidToItem.transform(<gregtech:meta_dust_small:122> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:122>]);
-FluidToItem.transform(<gregtech:meta_dust_small:196> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:196>]);
+FluidToItem.transform(<gregtech:meta_dust_small:122> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:122>]);
+FluidToItem.transform(<gregtech:meta_dust_small:196> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:196>]);
 //Вариации Свинца
-FluidToItem.transform(<gregtech:meta_dust_small:55> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:55>]);
-FluidToItem.transform(<gregtech:meta_dust_small:153> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:153>]);
+FluidToItem.transform(<gregtech:meta_dust_small:55> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:55>]);
+FluidToItem.transform(<gregtech:meta_dust_small:153> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:153>]);
 //Вариации Золото
-FluidToItem.transform(<gregtech:meta_dust_small:41> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:41>]);
+FluidToItem.transform(<gregtech:meta_dust_small:41> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:41>]);
 //Вариации Висмута
-FluidToItem.transform(<gregtech:meta_dust_small:11> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:11>]);
+FluidToItem.transform(<gregtech:meta_dust_small:11> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:11>]);
 //Каолинит
-FluidToItem.transform(<gregtech:meta_dust_small:357> * 3, <liquid:salt_water>, [<minecraft:grass>]);//<gregtech:meta_dust_impure:357>
+FluidToItem.transform(<gregtech:meta_dust_small:357> * 2, <liquid:salt_water>, [<minecraft:grass>]);//<gregtech:meta_dust_impure:357>
 //Графит
-FluidToItem.transform(<gregtech:meta_dust_small:216> * 3, <liquid:salt_water>, [<gregtech:meta_dust_impure:216>]);
+FluidToItem.transform(<gregtech:meta_dust_small:216> * 2, <liquid:salt_water>, [<gregtech:meta_dust_impure:216>]);
 //Алмазы занерфленные
 FluidToItem.transform(<gregtech:meta_dust_tiny:150>*2, <liquid:salt_water>, [<gregtech:meta_dust_impure:150>]);
 

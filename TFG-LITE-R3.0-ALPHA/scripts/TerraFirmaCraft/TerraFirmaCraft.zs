@@ -100,65 +100,7 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-//Удаление рецептов
-/*
-global ItemsToRemoveTFC as IItemStack[] = [
-	//Кирки
-	<tfc:metal/pick/bismuth_bronze>,
-	<tfc:metal/pick/black_bronze>,
-	<tfc:metal/pick/bronze>,
-	<tfc:metal/pick/copper>,
-	<tfc:metal/pick/black_steel>,
-	<tfc:metal/pick/steel>,
-	<tfc:metal/pick/wrought_iron>,
-	<tfc:metal/pick/blue_steel>,
-	<tfc:metal/pick/red_steel>,
-	//Топоры
-	<tfc:metal/axe/bismuth_bronze>,
-	<tfc:metal/axe/black_bronze>,
-	<tfc:metal/axe/bronze>,
-	<tfc:metal/axe/copper>,
-	<tfc:metal/axe/black_steel>,
-	<tfc:metal/axe/steel>,
-	<tfc:metal/axe/wrought_iron>,
-	<tfc:metal/axe/blue_steel>,
-	<tfc:metal/axe/red_steel>,
-	//Мотыги
-	<tfc:metal/hoe/bismuth_bronze>,
-	<tfc:metal/hoe/black_bronze>,
-	<tfc:metal/hoe/bronze>,
-	<tfc:metal/hoe/copper>,
-	<tfc:metal/hoe/black_steel>,
-	<tfc:metal/hoe/steel>,
-	<tfc:metal/hoe/wrought_iron>,
-	<tfc:metal/hoe/blue_steel>,
-	<tfc:metal/hoe/red_steel>,
-	//Мечи
-	<tfc:metal/sword/bismuth_bronze>,
-	<tfc:metal/sword/black_bronze>,
-	<tfc:metal/sword/bronze>,
-	<tfc:metal/sword/copper>,
-	<tfc:metal/sword/black_steel>,
-	<tfc:metal/sword/steel>,
-	<tfc:metal/sword/wrought_iron>,
-	<tfc:metal/sword/blue_steel>,
-	<tfc:metal/sword/red_steel>,
-	//Лопаты
-	<tfc:metal/shovel/bismuth_bronze>,
-	<tfc:metal/shovel/black_bronze>,
-	<tfc:metal/shovel/bronze>,
-	<tfc:metal/shovel/copper>,
-	<tfc:metal/shovel/black_steel>,
-	<tfc:metal/shovel/steel>,
-	<tfc:metal/shovel/wrought_iron>,
-	<tfc:metal/shovel/blue_steel>,
-	<tfc:metal/shovel/red_steel>
-] as IItemStack[];
-for item in ItemsToRemoveTFC{
-    recipes.remove(item);
-}*/
-
-//Quern - GT ore --> TFC ore
+//Quern - GT ore --> GT small pile
 Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <gregtech:meta_dust_small:25> * 3);
 Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <gregtech:meta_dust_small:346> * 3);
 Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <gregtech:meta_dust_small:201> * 3);
@@ -167,32 +109,32 @@ Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <gregtech:meta
 Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <gregtech:meta_dust_small:139> * 3);
 Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <gregtech:meta_dust_small:223> * 3);
 Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <gregtech:meta_dust_small:224> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <gregtech:meta_dust_small:112> * 3);
-Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <gregtech:meta_dust_small:137>);
-Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <gregtech:meta_dust_small:138>);
-
+Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <gregtech:meta_dust_small:137> * 3);
+Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <gregtech:meta_dust_small:138> * 3);
+//-
 Quern.addRecipe("GTOreToTFC_Iron", <gregtech:ore_iron_0>, <gregtech:meta_dust_small:51> * 3);
 Quern.addRecipe("GTOreToTFC_Pyrite", <gregtech:ore_pyrite_0>, <gregtech:meta_dust_small:180> * 3);
 Quern.addRecipe("GTOreToTFC_YellowLimonite", <gregtech:ore_yellow_limonite_0>, <gregtech:meta_dust_small:211> * 3);
 Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <gregtech:meta_dust_small:166> * 3);
 Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <gregtech:meta_dust_small:135> * 3);
 Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <gregtech:meta_dust_small:129> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Zinc", <gregtech:ore_zinc_0>, <gregtech:meta_dust_small:122> * 3);
 Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <gregtech:meta_dust_small:196> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <gregtech:meta_dust_small:69> * 3);
 Quern.addRecipe("GTOreToTFC_Garnierite", <gregtech:ore_garnierite_0>, <gregtech:meta_dust_small:154> * 3);
 Quern.addRecipe("GTOreToTFC_Pentlandite", <gregtech:ore_pentlandite_0>, <gregtech:meta_dust_small:335> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <gregtech:meta_dust_small:153> * 3);
 Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <gregtech:meta_dust_small:55> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <gregtech:meta_dust_small:41> * 3);
 Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <gregtech:meta_dust_small:11> * 3);
 Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <gregtech:meta_dust_small:100> * 3);
-
+//-
 Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <gregtech:meta_dust_small:103> * 3);
 Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <gregtech:meta_dust_small:183> * 3);
 
@@ -378,12 +320,6 @@ recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withE
 //Флюс использует крафт с помощью GT молота
 recipes.removeByRecipeName("tfc:flux");
 recipes.addShapeless (<tfc:powder/flux>*2, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:rockFlux>]);
-
-//Добавление других вариантов угля для TFC
-ItemRegistry.registerFuel(<ore:fuelCoke>, 3200, 1450, true, true);
-ItemRegistry.registerFuel(<ore:gemCoal>, 1600, 1400, true, true);
-ItemRegistry.registerFuel(<ore:gemLignite>, 1200, 1300, true, true);
-ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
 //Hot water --> Dist
 Barrel.addRecipe("tfc:freshwatertodistwater", <tfc:crop/product/jute_net>, <liquid:fresh_water>*4000, <tfc:crop/product/dirty_jute_net>, <liquid:distilled_water>*3600, 4);

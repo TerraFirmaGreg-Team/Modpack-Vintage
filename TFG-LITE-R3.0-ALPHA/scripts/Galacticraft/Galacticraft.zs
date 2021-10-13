@@ -3,6 +3,35 @@ import mods.terrafirmacraft.ItemRegistry;
 
 //Удаление+скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
+	//Руды
+	//Медь
+	<galacticraftcore:basic_block_core:5>,
+	<galacticraftcore:basic_block_moon>,
+	<galacticraftplanets:mars>,
+	<galacticraftplanets:venus:7>,
+	//Олово
+	<galacticraftcore:basic_block_core:6>,
+	<galacticraftcore:basic_block_moon:1>,
+	<galacticraftplanets:mars:1>,
+	<galacticraftplanets:venus:11>,
+	//Железо
+	<galacticraftplanets:mars:3>,
+	<galacticraftplanets:asteroids_block:5>,
+	//Алюминиум
+	<galacticraftcore:basic_block_core:7>,
+	<galacticraftplanets:asteroids_block:3>,
+	<galacticraftplanets:venus:6>,
+	//Силикон
+	<galacticraftcore:basic_block_core:8>,
+	<galacticraftplanets:venus:10>,
+	//Остальные руды
+	<galacticraftcore:basic_block_moon:6>,
+	<galacticraftcore:basic_block_moon:2>,
+	<galacticraftplanets:venus:8>,
+	<galacticraftplanets:venus:9>,
+	<galacticraftplanets:mars:2>,
+	<galacticraftplanets:venus:13>,
+	//Предметы
 	<galacticraftplanets:rocket_t2:11>,
 	<galacticraftplanets:rocket_t2:12>,
 	<galacticraftcore:rocket_workbench>,
@@ -88,7 +117,12 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:solar_array_controller>,
 	<galacticraftcore:sensor_glasses>,
 	<galacticraftcore:sensor_lens>,
-	<galacticraftcore:standard_wrench>
+	<galacticraftcore:standard_wrench>,
+	<galacticraftplanets:laser_turret>,
+	<galacticraftcore:aluminum_wire>,
+	<galacticraftcore:aluminum_wire:1>,
+	<galacticraftcore:aluminum_wire:2>,
+	<galacticraftcore:aluminum_wire:3>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -96,10 +130,6 @@ for item in RemoveItemsFromJEI{
 
 //Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
-	<galacticraftcore:aluminum_wire>,
-	<galacticraftcore:aluminum_wire:1>,
-	<galacticraftcore:aluminum_wire:2>,
-	<galacticraftcore:aluminum_wire:3>,
 	<galacticraftcore:fluid_pipe>,
 	<galacticraftplanets:item_basic_mars:6>,
 	<galacticraftcore:distributor>,
@@ -114,13 +144,10 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:air_lock_frame:1>,
 	<galacticraftcore:machine3>,
 	<galacticraftcore:telemetry>,
-	<galacticraftcore:platform>,
 	<galacticraftplanets:mars_machine:8>,
 	<galacticraftplanets:mars_machine:4>,
 	<galacticraftplanets:mars_machine>,
-	<galacticraftplanets:solar_array_controller>,
 	<galacticraftplanets:basic_item_venus>,
-	<galacticraftplanets:solar_array_module>,
 	<galacticraftcore:solar>,
 	<galacticraftcore:solar:4>,
 	<galacticraftcore:air_vent>,
@@ -135,12 +162,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:thermal_padding:3>,
 	<galacticraftplanets:item_basic_asteroids:7>,
 	<galacticraftplanets:basic_item_venus:3>,
-	//<galacticraftplanets:thermal_padding_t2>,
-	//<galacticraftplanets:thermal_padding_t2:1>,
-	//<galacticraftplanets:thermal_padding_t2:2>,
-	//<galacticraftplanets:thermal_padding_t2:3>,
-	<galacticraftcore:sensor_glasses>,
-	<galacticraftcore:sensor_lens>,
 	<galacticraftplanets:walkway>,
 	<galacticraftplanets:walkway:1>,
 	<galacticraftplanets:walkway:2>,
@@ -166,7 +187,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:basic_item:20>,
 	<galacticraftcore:oxygen_concentrator>,
 	<galacticraftplanets:orion_drive>,
-	<galacticraftcore:standard_wrench>,
 	<galacticraftcore:buggymat>,
 	<galacticraftcore:view_screen>,
 	<galacticraftcore:basic_block_core:4>,

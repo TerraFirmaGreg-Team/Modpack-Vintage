@@ -101,7 +101,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
    <galaxyspace:assembly_machine>,
    <galaxyspace:adv_circuit_fabricator>,
    <galaxyspace:oxygen_storage_module_1>,
-   <galaxyspace:gs_basic:4>
+   <galaxyspace:gs_basic:4>,
+   <galaxyspace:jetpack:200>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
