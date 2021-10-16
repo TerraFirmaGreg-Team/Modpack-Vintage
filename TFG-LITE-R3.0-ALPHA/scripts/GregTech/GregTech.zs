@@ -31,22 +31,21 @@ for item in ItemsToRemove{
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
 
 //Переработка танков в Arc
-/*
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1501>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1502>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1503>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1504>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1505>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotTitanium>.firstItem * 3).duration(400).EUt(1560).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1506>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotTungstenSteel>.firstItem * 3).duration(400).EUt(2560).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1501>).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1502>).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1503>).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1504>).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1505>).outputs(<ore:ingotTitanium>.firstItem * 3).duration(400).EUt(1560).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1506>).outputs(<ore:ingotTungstenSteel>.firstItem * 3).duration(400).EUt(2560).buildAndRegister();
 
 //Сундуки можно переработать
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1487>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotBronze>.firstItem * 10).EUt(8).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1488>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotSteel>.firstItem * 10).EUt(30).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1489>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotAluminium>.firstItem * 10).EUt(120).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1490>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotStainlessSteel>.firstItem * 10).EUt(500).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotTitanium>.firstItem * 10).EUt(1560).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).fluidInputs(<liquid:oxygen> * 150).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
-*/
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1487>).outputs(<ore:ingotBronze>.firstItem * 10).EUt(8).duration(400).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1488>).outputs(<ore:ingotSteel>.firstItem * 10).EUt(30).duration(400).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1489>).outputs(<ore:ingotAluminium>.firstItem * 10).EUt(120).duration(400).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1490>).outputs(<ore:ingotStainlessSteel>.firstItem * 10).EUt(500).duration(400).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).outputs(<ore:ingotTitanium>.firstItem * 10).EUt(1560).duration(400).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
+
 
 //Рецепт Coke Oven
 recipes.addShaped("tfg_coke_oven_controller", <gregtech:machine:1016>,
@@ -95,39 +94,32 @@ mixer.recipeBuilder()
     .outputs(<tfc:aggregate>*8)
     .duration(20).EUt(4).buildAndRegister();
 
-//Жидкий воздух --> Воздух
-fluid_heater.recipeBuilder()
-    .notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 1}))
-    .fluidInputs(<liquid:liquid_oxygen> * 100)
-    .fluidOutputs(<liquid:oxygen> * 1000)
-    .duration(400).EUt(32).buildAndRegister();
-
 //Фикс снопа сена
-packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:193>.withTag({Configuration: 9})], null).remove();
+packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 
 //Фиксы корпусов
 //Удаление
-assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:198>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:2>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:197>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:113>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:309>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:22>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:50>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:75>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<gregtech:meta_plate:375>*8, <gregtech:meta_item_1:193>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<tfc:metal/sheet/wrought_iron>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateSteel>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateAluminium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateStainlessSteel>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateTitanium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateTungstenSteel>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateChrome>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateIridium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateOsmium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateNeutronium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 //Создание
-assembler.recipeBuilder().inputs(<ore:plateWroughtIron>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:1>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateAluminium>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:2>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateStainlessSteel>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:3>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateTitanium>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:4>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateTungstenSteel>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:5>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateChrome>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:6>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateIridium>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:7>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateOsmium>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateNeutronium>*6).notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:9>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateWroughtIron>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:1>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateAluminium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:2>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateStainlessSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:3>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateTitanium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:4>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateTungstenSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:5>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateChrome>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:6>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateIridium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:7>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateOsmium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateNeutronium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:14>).duration(20).EUt(16).buildAndRegister();
 
 //Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();

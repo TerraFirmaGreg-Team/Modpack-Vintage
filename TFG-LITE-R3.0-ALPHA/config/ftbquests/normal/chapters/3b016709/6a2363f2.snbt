@@ -5,10 +5,10 @@
 		"e101622b"
 	],
 	tasks: [{
-		uid: "c50dceee",
+		uid: "4310774d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 1451"
+			item: "gregtech:machine 1 1211"
 		}],
 		count: 2L
 	}]

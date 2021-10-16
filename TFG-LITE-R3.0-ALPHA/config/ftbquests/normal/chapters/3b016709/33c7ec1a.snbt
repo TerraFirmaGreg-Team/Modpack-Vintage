@@ -6,10 +6,10 @@
 		"4646d01f"
 	],
 	tasks: [{
-		uid: "63c5f8d3",
+		uid: "0813b1ab",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 161"
+			item: "gregtech:meta_ingot 1 287"
 		}]
 	}]
 }

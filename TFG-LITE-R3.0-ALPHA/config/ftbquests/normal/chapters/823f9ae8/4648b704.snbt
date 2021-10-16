@@ -5,10 +5,10 @@
 		"263fdccc"
 	],
 	tasks: [{
-		uid: "cf0205d1",
+		uid: "c1659a83",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust_tiny 1 186"
+			item: "gregtech:meta_dust_small 1 312"
 		}]
 	}]
 }

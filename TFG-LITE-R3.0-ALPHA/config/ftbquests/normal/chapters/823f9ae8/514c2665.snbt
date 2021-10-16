@@ -9,10 +9,10 @@
 		"b320933e"
 	],
 	tasks: [{
-		uid: "ab70cd4b",
+		uid: "3298f0d1",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 357"
+			item: "gregtech:meta_dust 1 391"
 		}]
 	}]
 }

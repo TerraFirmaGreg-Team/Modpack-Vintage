@@ -15,6 +15,6 @@
 	tasks: [{
 		uid: "286f7fb3",
 		type: "fluid",
-		fluid: "silicon_rubber"
+		fluid: "water"
 	}]
 }

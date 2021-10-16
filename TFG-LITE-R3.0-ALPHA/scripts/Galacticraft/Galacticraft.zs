@@ -32,9 +32,9 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:mars:2>,
 	<galacticraftplanets:venus:13>,
 	//Предметы
-	<galacticraftplanets:rocket_t2:11>,
-	<galacticraftplanets:rocket_t2:12>,
-	<galacticraftcore:rocket_workbench>,
+	//<galacticraftplanets:rocket_t2:11>,
+	//<galacticraftplanets:rocket_t2:12>,
+	//<galacticraftcore:rocket_workbench>,
 	<galacticraftplanets:volcanic_pickaxe>,
 	<galacticraftplanets:desh_pick_slime>,
 	<galacticraftcore:steel_pickaxe>,
@@ -74,7 +74,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:basic_item:1>,
 	<galacticraftplanets:basic_item_venus:5>,
 	<galacticraftplanets:basic_item_venus:6>,
-	<galacticraftcore:rocket_workbench>,
 	<galacticraftcore:machine>,
 	<galacticraftcore:machine:12>,
 	<galacticraftcore:machine2>,
@@ -122,7 +121,10 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:aluminum_wire>,
 	<galacticraftcore:aluminum_wire:1>,
 	<galacticraftcore:aluminum_wire:2>,
-	<galacticraftcore:aluminum_wire:3>
+	<galacticraftcore:aluminum_wire:3>,
+	<galacticraftcore:rocket_t1:4>,
+	<galacticraftplanets:rocket_t2:4>,
+	<galacticraftplanets:rocket_t3:4>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -209,7 +211,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:food:3>,
 	<galacticraftplanets:item_basic_mars:4>,
 	<galacticraftcore:basic_block_core:12>,
-	<galacticraftcore:item_basic_moon>
+	<galacticraftcore:item_basic_moon>,
+	<galacticraftcore:rocket_workbench>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -443,15 +446,21 @@ recipes.addShaped(<galacticraftplanets:item_basic_asteroids:8>,
 
 //Радиоизотопное ядро
 recipes.addShaped(<galacticraftplanets:basic_item_venus:2>,
-[[<ore:plateGraphite>, <gregtech:meta_item_1:260>, <ore:plateGraphite>],
- [<ore:stickUranium235>, <gregtech:meta_item_1:260>, <ore:stickUranium235>],
- [<ore:plateGraphite>, <gregtech:meta_item_1:260>, <ore:plateGraphite>]]);
+[[<ore:plateGraphite>, <gregtech:meta_item_1:497>, <ore:plateGraphite>],
+ [<ore:stickUranium235>, <gregtech:meta_item_1:497>, <ore:stickUranium235>],
+ [<ore:plateGraphite>, <gregtech:meta_item_1:497>, <ore:plateGraphite>]]);
 
 //Атомная батарейка
 recipes.addShaped(<galacticraftplanets:atomic_battery>,
 [[null, <ore:plateInvar>, null],
  [null, <galacticraftplanets:basic_item_venus:2>, null],
  [null, <gregtech:meta_item_1:80>, null]]);
+
+//Верстак NASA
+recipes.addShaped(<galacticraftcore:rocket_workbench>,
+[[<gregtech:meta_item_1:188>, null, <gregtech:meta_item_1:188>],
+ [<gregtech:meta_item_1:188>, <gregtech:meta_item_1:159>, <gregtech:meta_item_1:188>],
+ [<ore:cableGtSingleGold>, <ore:circuitGood>, <ore:cableGtSingleGold>]]);
 
 //Площадка телепортации
 recipes.addShaped(<galacticraftplanets:telepad_short>,
@@ -464,16 +473,17 @@ recipes.addShaped(<galacticraftcore:emergency_box>,
 [[<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
  [<ore:plateTin>, <ore:chestWood>, <ore:plateTin>],
  [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>]]);
+
 //Спасат коробка с самоспасателем
 recipes.addShaped(<galacticraftcore:landing_pad>*9,
 [[null, null, null],
- [<ore:plateDenseSteel>, <ore:plateDenseSteel>, <ore:plateDenseSteel>],
+ [<ore:plateDoubleBlackSteel>, <ore:plateDoubleBlackSteel>, <ore:plateDoubleBlackSteel>],
  [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]]);
 
 //Площадка для багги
 recipes.addShaped(<galacticraftcore:landing_pad:1>*9,
 [[null, null, null],
- [<ore:plateDenseIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
+ [<ore:plateDoubleIron>, <ore:plateDoubleIron>, <ore:plateDoubleIron>],
  [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 
 //Основания астрономического шахтера
@@ -625,12 +635,12 @@ recipes.addShaped(<galacticraftcore:engine:1>,
 //T1
 recipes.addShaped(<galacticraftcore:rocket_fins>,
 [[<ore:plateStainlessSteel>, <ore:circuitAdvanced>, <ore:plateStainlessSteel>],
- [<galacticraftcore:heavy_plating>, <gregtech:meta_item_1:32528>, <galacticraftcore:heavy_plating>],
+ [<galacticraftcore:heavy_plating>, <gregtech:machine:1597>, <galacticraftcore:heavy_plating>],
  [<galacticraftcore:heavy_plating>, <galacticraftcore:air_vent>, <galacticraftcore:heavy_plating>]]);
 //T2
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>,
 [[<ore:plateStainlessSteel>, <ore:circuitAdvanced>, <ore:plateStainlessSteel>],
- [<galacticraftplanets:item_basic_mars:3>, <gregtech:meta_item_1:32538>, <galacticraftplanets:item_basic_mars:3>],
+ [<galacticraftplanets:item_basic_mars:3>, <gregtech:machine:1598>, <galacticraftplanets:item_basic_mars:3>],
  [<galacticraftplanets:item_basic_mars:3>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_mars:3>]]);
 //T3
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>,
@@ -638,55 +648,31 @@ recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>,
  [<galacticraftplanets:item_basic_asteroids:5>, <galacticraftplanets:atomic_battery>, <galacticraftplanets:item_basic_asteroids:5>],
  [<galacticraftplanets:item_basic_asteroids:5>, <galacticraftcore:air_vent>, <galacticraftplanets:item_basic_asteroids:5>]]);
  
-//ADD CRAFT FOR SUPERPLATES FROM GALACTIC IN BLAST FURNACE
+//High Duty Plates(1-3)
 //Tier 1
-/*
-blast_furnace.recipeBuilder()
-	.inputs([<ore:plateBlackSteel>.firstItem * 27, <ore:plateAluminium>.firstItem])
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateBlackSteel>.firstItem * 3, <ore:plateAluminium>.firstItem, <ore:foilStainlessSteel>.firstItem * 16])
 	.outputs(<galacticraftcore:heavy_plating> * 3)
-	.property("temperature", 2200)
+	.property("temperature", 3500)
 	.duration(1000)
 	.EUt(520)
 	.buildAndRegister();
 //Tier 2
-blast_furnace.recipeBuilder()
-	.inputs([<ore:plateAluminium>.firstItem * 3, <ore:plateStainlessSteel>.firstItem])
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateAluminium>.firstItem * 3, <ore:plateStainlessSteel>.firstItem, <ore:foilTitanium>.firstItem * 16])
 	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
-	.property("temperature", 2700)
+	.property("temperature", 4400)
 	.duration(1000)
 	.EUt(580)
 	.buildAndRegister();
 //Tier 3
-blast_furnace.recipeBuilder()
-	.inputs([<ore:plateStainlessSteel>.firstItem * 3, <ore:plateTitanium>.firstItem])
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateStainlessSteel>.firstItem * 3, <ore:plateTitanium>.firstItem, <ore:foilTungstenSteel>.firstItem * 16])
 	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
-	.property("temperature", 3000)
+	.property("temperature", 5300)
 	.duration(1000)
 	.EUt(640)
 	.buildAndRegister();
-*/
-//ADD CRAFT FOR ROCKETS 1-10TIER
-//Tier 1
-assembler.recipeBuilder()
-  .inputs(<ore:circuitExtreme>*2, <galacticraftcore:heavy_plating>*34, <ore:frameGtAluminium>*14, <gregtech:machine:1502>*4, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
-  .outputs(<galacticraftcore:rocket_t1:3>)
-  .duration(1000)
-  .EUt(220)
-  .buildAndRegister();
-//Tier 2
-assembler.recipeBuilder()
-  .inputs(<galacticraftplanets:item_basic_mars:3>*36, <ore:frameGtAluminium>*16, <gregtech:machine:1502>*4, <galacticraftcore:schematic:1>, <ore:chest>*3, <galacticraftcore:nose_cone>, <galacticraftcore:engine:1>*2, <galacticraftcore:rocket_fins>*4, <galacticraftcore:engine>)
-  .outputs(<galacticraftplanets:rocket_t2:3>)
-  .duration(1500)
-  .EUt(280)
-  .buildAndRegister();
-//Tier 3
-assembler.recipeBuilder()
-  .inputs(<galacticraftplanets:item_basic_asteroids:5>*38, <ore:frameGtAluminium>*20, <galacticraftplanets:schematic>, <gregtech:machine:1503>*2, <ore:chest>*3, <galacticraftplanets:item_basic_asteroids:1>, <galacticraftplanets:item_basic_asteroids:2>*4, <galacticraftcore:engine:1>*4, <galacticraftplanets:heavy_nose_cone>)
-  .outputs(<galacticraftplanets:rocket_t3:3>)
-  .duration(2000)
-  .EUt(340)
-  .buildAndRegister();
 
 //Баллоны
 //Легкий

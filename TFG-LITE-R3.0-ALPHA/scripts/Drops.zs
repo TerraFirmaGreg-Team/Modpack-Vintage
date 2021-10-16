@@ -9,12 +9,13 @@ Dropt.list("GTCoalToTFCCoal")
       .replaceStrategy("REPLACE_ITEMS")
       .addDrop(Dropt.drop().items([<tfc:ore/bituminous_coal>])));
 //Лигнитовый уголь
+/*
 Dropt.list("GTLigniteCoalToTFCCoalStyle")
   .add(Dropt.rule()
       .matchBlocks(["gregtech:ore_lignite_0"])
       .matchDrops([<gregtech:ore_lignite_0>])
       .replaceStrategy("REPLACE_ITEMS")
-      .addDrop(Dropt.drop().items([<gregtech:meta_item_1:8211>])));
+      .addDrop(Dropt.drop().items([<gregtech:meta_item_1:8211>])));*/
 
 Dropt.list("Dirt")
   .add(Dropt.rule()

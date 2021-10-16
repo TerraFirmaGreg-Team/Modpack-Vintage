@@ -2,8 +2,7 @@
 	x: 4.0d,
 	y: 3.0d,
 	dependencies: [
-		"afd348c2",
-		"0b0f4dc0"
+		"afd348c2"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

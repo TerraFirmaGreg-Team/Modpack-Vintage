@@ -5,10 +5,10 @@
 		"99c5dd89"
 	],
 	tasks: [{
-		uid: "21b774f3",
+		uid: "86de4b03",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_plate 1 184"
+			item: "gregtech:meta_plate 1 1068"
 		}]
 	}]
 }

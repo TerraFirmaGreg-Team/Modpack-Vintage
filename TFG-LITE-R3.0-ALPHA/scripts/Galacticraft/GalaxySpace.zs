@@ -1,4 +1,3 @@
-
 import crafttweaker.item.IItemStack;
 
 //Удаление+скрытие рецептов JEI
@@ -96,13 +95,15 @@ val RemoveItemsFromJEI as IItemStack[] = [
    <galaxyspace:liquid_separator>,
    <galaxyspace:liquid_extractor>,
    <galaxyspace:universal_recycler>,
-   <galaxyspace:rocket_assembler>,
    <galaxyspace:fuel_generator>,
    <galaxyspace:assembly_machine>,
    <galaxyspace:adv_circuit_fabricator>,
    <galaxyspace:oxygen_storage_module_1>,
    <galaxyspace:gs_basic:4>,
-   <galaxyspace:jetpack:200>
+   <galaxyspace:jetpack:200>,
+   <galaxyspace:rocket_tier_4:4>,
+   <galaxyspace:rocket_tier_5:4>,
+   <galaxyspace:rocket_tier_6:4>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -128,7 +129,8 @@ val RemoveItemRecipe as IItemStack[] = [
    <galaxyspace:single_solarpanel>,
    <galaxyspace:panel_controller>,
    <galaxyspace:radiation_stabiliser>,
-   <galaxyspace:gravitation_module>
+   <galaxyspace:gravitation_module>,
+   <galaxyspace:rocket_assembler>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -136,17 +138,17 @@ for item in RemoveItemRecipe{
 
 //Теплоизолирующая ткань 3
 assembler.recipeBuilder()
-   .inputs(<ore:dustDolomite>*4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
-   .fluidInputs([<liquid:nitrogen>*400])
+   .inputs(<ore:dustDolomite> * 4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
+   .fluidInputs([<liquid:nitrogen> * 400])
    .outputs(<galaxyspace:gs_basic:21> * 2)
    .duration(1000).EUt(512).buildAndRegister();
+
 //Теплоизолирующая ткань 4
-/*
 assembler.recipeBuilder()
    .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
-   .fluidInputs([<liquid:supercooled_cryotheum>*288])
+   .fluidInputs([<liquid:nitrogen> * 12000])
    .outputs(<galaxyspace:gs_basic:22> * 2)
-   .duration(1000).EUt(512).buildAndRegister();*/   //FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
+   .duration(1000).EUt(512).buildAndRegister();
 
 //Воздушные баки
 //Супер
@@ -193,6 +195,12 @@ recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 [[<ore:plateDenseTitanium>, <ore:plateDenseTitanium>, <ore:plateDenseTitanium>],
  [<ore:blockTitanium>, <ore:blockTitanium>, <ore:blockTitanium>]]);
 
+//Сборщик ракет
+recipes.addShaped(<galaxyspace:rocket_assembler>,
+[[<gregtech:meta_item_1:189>, <gregtech:meta_item_1:159>, <gregtech:meta_item_1:189>],
+ [<ore:plateAluminium>, <gregtech:machine:988>, <ore:plateAluminium>],
+ [<ore:wireGtSingleMagnesiumDiboride>, <ore:wireGtSingleMagnesiumDiboride>, <ore:wireGtSingleMagnesiumDiboride>]]);
+
 //Гибридная солнечная панель
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
 [[<galacticraftcore:solar:4>, <galacticraftcore:solar:4>, <galacticraftcore:solar:4>],
@@ -228,6 +236,32 @@ recipes.addShaped(<galaxyspace:planet_shield>,
 [[<gregtech:meta_item_1:148>, <gregtech:meta_item_1:165>, <gregtech:meta_item_1:148>],
  [<gregtech:meta_item_1:148>, <gregtech:machine:989>, <gregtech:meta_item_1:148>],
  [<ore:cableGtDoubleIvSuperconductor>, <galaxyspace:gravitation_module>, <ore:cableGtDoubleIvSuperconductor>]]);
+
+//High Duty Plates(4-6)
+//Tier 4
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateTitanium>.firstItem * 3, <ore:plateTungstenSteel>.firstItem, <ore:foilOsmiridium>.firstItem * 16])
+	.outputs(<galaxyspace:hdp> * 3)
+	.property("temperature", 7100)
+	.duration(1000)
+	.EUt(520)
+	.buildAndRegister();
+//Tier 5
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateTungstenSteel>.firstItem * 3, <ore:plateHssg>.firstItem, <ore:foilHsss>.firstItem * 16])
+	.outputs(<galaxyspace:hdp:1> * 3)
+	.property("temperature", 8750)
+	.duration(1000)
+	.EUt(580)
+	.buildAndRegister();
+//Tier 6
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateHssg>.firstItem * 3, <ore:ingotDiamericiumTitanium>.firstItem, <ore:foilNaquadria>.firstItem * 16])
+	.outputs(<galaxyspace:hdp:2> * 3)
+	.property("temperature", 10777)
+	.duration(1000)
+	.EUt(640)
+	.buildAndRegister();
 
 //Скафандры
 //Скаф 1лвл тапки

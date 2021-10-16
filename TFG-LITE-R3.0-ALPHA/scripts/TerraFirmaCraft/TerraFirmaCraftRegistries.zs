@@ -19,9 +19,9 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
 // - Регистрация металлов
-//Регистрация металлов для сундуков.
-ItemRegistry.registerItemMetal(<gregtech:machine:1487>, "BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<gregtech:machine:1488>, "STEEL", 400, true);
+//Регистрация металлов для баков.
+ItemRegistry.registerItemMetal(<gregtech:machine:1596>, "BRONZE", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:machine:1597>, "STEEL", 400, true);
 
 //Регистрация металлов для палок GT
 ItemRegistry.registerItemMetal(<gregtech:meta_stick:41>, "GOLD", 50, true);
@@ -50,19 +50,19 @@ ItemRegistry.registerItemMetal(<gregtech:meta_plate:307>, "BLUE_STEEL", 200, tru
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:305>, "BLACK_STEEL", 200, true);
 
 //Регистрация металлов для двойных пластин GregTech
-//ItemRegistry.registerItemMetal(<>, "BRASS", 400, true);
-//ItemRegistry.registerItemMetal(<>, "BRONZE", 400, true);
-//ItemRegistry.registerItemMetal(<>, "LEAD", 400, true);
-//ItemRegistry.registerItemMetal(<>, "ROSE_GOLD", 400, true);
-//ItemRegistry.registerItemMetal(<>, "BISMUTH_BRONZE", 400, true);
-//ItemRegistry.registerItemMetal(<>, "BLACK_BRONZE", 400, true);
-//ItemRegistry.registerItemMetal(<>, "STEEL", 400, true);
-//ItemRegistry.registerItemMetal(<>, "PIG_IRON", 400, true);
-//ItemRegistry.registerItemMetal(<>, "WROUGHT_IRON", 400, true);
-//ItemRegistry.registerItemMetal(<>, "STERLING_SILVER", 400, true);
-//ItemRegistry.registerItemMetal(<>, "RED_STEEL", 400, true);
-//ItemRegistry.registerItemMetal(<>, "BLUE_STEEL", 400, true);
-//ItemRegistry.registerItemMetal(<>, "BLACK_STEEL", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:259>, "BRASS", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:260>, "BRONZE", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:55>, "LEAD", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:301>, "ROSE_GOLD", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:303>, "BISMUTH_BRONZE", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:302>, "BLACK_BRONZE", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:324>, "STEEL", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:299>, "PIG_IRON", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:335>, "WROUGHT_IRON", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:300>, "STERLING_SILVER", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2510>, "RED_STEEL", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2511>, "BLUE_STEEL", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2011>, "BLACK_STEEL", 400, true);
 
 // --- Вариации Меди
 //Медь --- Грязная Кучка
@@ -287,7 +287,7 @@ var GregtechOres as IItemStack[] = [
         <gregtech:ore_lazurite_0>,
         <gregtech:ore_lead_0>,
         <gregtech:ore_lepidolite_0>,
-        <gregtech:ore_lignite_0>,
+        ////<gregtech:ore_lignite_0>,
         <gregtech:ore_lithium_0>,
         <gregtech:ore_magnesite_0>,
         <gregtech:ore_magnetite_0>,
