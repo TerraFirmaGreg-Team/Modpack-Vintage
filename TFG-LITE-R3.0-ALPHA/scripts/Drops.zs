@@ -2,20 +2,12 @@ import mods.dropt.Dropt;
 
 //Уголек
 //Битумный уголь
-Dropt.list("GTCoalToTFCCoal")
+Dropt.list("GT_Coal_To_TFC_Coal")
   .add(Dropt.rule()
-      .matchBlocks(["gregtech:ore_coal_0"])
-      .matchDrops([<gregtech:ore_coal_0>])
-      .replaceStrategy("REPLACE_ITEMS")
-      .addDrop(Dropt.drop().items([<tfc:ore/bituminous_coal>])));
-//Лигнитовый уголь
-/*
-Dropt.list("GTLigniteCoalToTFCCoalStyle")
-  .add(Dropt.rule()
-      .matchBlocks(["gregtech:ore_lignite_0"])
-      .matchDrops([<gregtech:ore_lignite_0>])
-      .replaceStrategy("REPLACE_ITEMS")
-      .addDrop(Dropt.drop().items([<gregtech:meta_item_1:8211>])));*/
+  .matchBlocks(["gregtech:ore_coal_0"])
+  .matchDrops([<gregtech:ore_coal_0>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop().items([<tfc:ore/bituminous_coal>])));
 
 Dropt.list("Dirt")
   .add(Dropt.rule()
@@ -63,51 +55,52 @@ Dropt.list("Moon_Turf")
   .addDrop(Dropt.drop().items([<contenttweaker:moonturf>])));
 //Грунт
 Dropt.list("Moon_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftcore:basic_block_moon:3"])
-   .addDrop(Dropt.drop().items([<contenttweaker:moonsoil>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftcore:basic_block_moon:3"])
+  .addDrop(Dropt.drop().items([<contenttweaker:moonsoil>])));
    
 //Марс
 //Реголит
 Dropt.list("Mars_Stone")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:mars:5"])
-   .addDrop(Dropt.drop().items([<contenttweaker:marsturf>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:mars:5"])
+  .addDrop(Dropt.drop().items([<contenttweaker:marsturf>])));
 //Грунт
 Dropt.list("Mars_Soil")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:mars:6"])
-   .addDrop(Dropt.drop().items([<contenttweaker:marssoil>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:mars:6"])
+  .addDrop(Dropt.drop().items([<contenttweaker:marssoil>])));
 
 //Венера
 //Мягкий камень
 Dropt.list("Venus_Smooth_Stone")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:venus"])
-   .addDrop(Dropt.drop().items([<contenttweaker:venusturf>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:venus"])
+  .addDrop(Dropt.drop().items([<contenttweaker:venusturf>])));
 
 //Меркурий
 //Реголит
 Dropt.list("Mercury_Turf")
-   .add(Dropt.rule()
-   .matchBlocks(["galaxyspace:mercuryblocks"])
-   .addDrop(Dropt.drop().items([<contenttweaker:mercuryturf>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galaxyspace:mercuryblocks"])
+  .addDrop(Dropt.drop().items([<contenttweaker:mercuryturf>])));
 //Грунт
 Dropt.list("Mercury_Soil")
    .add(Dropt.rule()
    .matchBlocks(["galaxyspace:mercuryblocks:1"])
    .addDrop(Dropt.drop().items([<contenttweaker:mercurysoil>])));
+
 //Астероиды
 //3x Астероиды
 Dropt.list("Asteroids_stone_1")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:asteroids_block:2"])
-   .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone1>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:asteroids_block:2"])
+  .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone1>])));
 Dropt.list("Asteroids_stone_2")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:asteroids_block:1"])
-   .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone2>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:asteroids_block:1"])
+  .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone2>])));
 Dropt.list("Asteroids_stone_3")
-   .add(Dropt.rule()
-   .matchBlocks(["galacticraftplanets:asteroids_block"])
-   .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone3>])));
+  .add(Dropt.rule()
+  .matchBlocks(["galacticraftplanets:asteroids_block"])
+  .addDrop(Dropt.drop().items([<contenttweaker:asteroidstone3>])));

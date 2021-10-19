@@ -2,17 +2,12 @@ import crafttweaker.item.IItemStack;
 
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
-    //GT Wooden Small Chest
-    <gregtech:machine:1485>,
-    //GT Wooden Chest
-    <gregtech:machine:1486>,
     //Primitive Blast Furnace
-    <gregtech:metal_casing:1>,
-    <gregtech:metal_casing:1>,
+    <gregtech:machine:1000>,
     //flour
-    <gregtech:meta_dust:385>,
-    <gregtech:meta_dust_small:385>,
-    <gregtech:meta_dust_tiny:385>
+    <gregtech:meta_dust:1615>,
+    <gregtech:meta_dust_small:1615>,
+    <gregtech:meta_dust_tiny:1615>
 ] as IItemStack[];
 for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);

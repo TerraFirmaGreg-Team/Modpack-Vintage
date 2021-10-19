@@ -136,43 +136,6 @@ for item in RemoveItemRecipe{
     recipes.remove(item);
 }
 
-//Теплоизолирующая ткань 3
-assembler.recipeBuilder()
-   .inputs(<ore:dustDolomite> * 4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
-   .fluidInputs([<liquid:nitrogen> * 400])
-   .outputs(<galaxyspace:gs_basic:21> * 2)
-   .duration(1000).EUt(512).buildAndRegister();
-
-//Теплоизолирующая ткань 4
-assembler.recipeBuilder()
-   .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
-   .fluidInputs([<liquid:nitrogen> * 12000])
-   .outputs(<galaxyspace:gs_basic:22> * 2)
-   .duration(1000).EUt(512).buildAndRegister();
-
-//Воздушные баки
-//Супер
-assembler.recipeBuilder()
-   .inputs(<gregtech:machine:815>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*8, <gregtech:meta_item_1:32614>*2)
-   .outputs(<galaxyspace:oxygen_tank_4:3500>)
-   .duration(1000).EUt(1024).buildAndRegister();
-//Элитный
-assembler.recipeBuilder()
-   .inputs(<gregtech:machine:816>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*10, <gregtech:meta_item_1:32615>*4)
-   .outputs(<galaxyspace:oxygen_tank_5:4000>)
-   .duration(1000).EUt(2048).buildAndRegister();
-//Омега
-assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1020>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*12, <gregtech:meta_item_1:32616>*4)
-   .outputs(<galaxyspace:oxygen_tank_6:4500>)
-   .duration(1000).EUt(4096).buildAndRegister();
-//Реген
-assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1021>*2, <enderio:item_liquid_conduit:1>*16, <ore:plateLead>*32, <gregtech:meta_item_1:32617>*6)
-   .outputs(<galaxyspace:oxygen_tank_epp_1:2500> * 2)
-   .fluidInputs([<liquid:sterilized_growth_medium>*144])
-   .duration(1000).EUt(4096).buildAndRegister();
-
 //GALAXY-SPACE
 /*
 #########ADD##########
@@ -190,10 +153,55 @@ mods.galaxyspace.removeRecyclerRecipe(result);
 mods.galaxyspace.removeRocketAssemblyRecipe(result);
 */
 
+//mods.galaxyspace.addRocketAssemblyRecipe(<minecraft:quartz_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>);
+
+//Теплоизолирующая ткань 3
+assembler.recipeBuilder()
+   .inputs(<ore:dustDolomite> * 4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
+   .fluidInputs([<liquid:nitrogen> * 400])
+   .outputs(<galaxyspace:gs_basic:21> * 2)
+   .duration(1000).EUt(512).buildAndRegister();
+
+//Теплоизолирующая ткань 4
+assembler.recipeBuilder()
+   .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
+   .fluidInputs([<liquid:nitrogen> * 12000])
+   .outputs(<galaxyspace:gs_basic:22> * 2)
+   .duration(1000).EUt(512).buildAndRegister();
+
+//Воздушные баки
+//Супер
+assembler.recipeBuilder()
+   .inputs(<gregtech:machine:1575>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*8, <gregtech:meta_item_1:145>*2)
+   .outputs(<galaxyspace:oxygen_tank_4:3500>)
+   .duration(1000).EUt(1024).buildAndRegister();
+//Элитный
+assembler.recipeBuilder()
+   .inputs(<gregtech:machine:1576>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*10, <gregtech:meta_item_1:146>*4)
+   .outputs(<galaxyspace:oxygen_tank_5:4000>)
+   .duration(1000).EUt(2048).buildAndRegister();
+//Омега
+assembler.recipeBuilder()
+   .inputs(<gregtech:machine:1577>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*12, <gregtech:meta_item_1:147>*4)
+   .outputs(<galaxyspace:oxygen_tank_6:4500>)
+   .duration(1000).EUt(4096).buildAndRegister();
+//Реген
+assembler.recipeBuilder()
+   .inputs(<gregtech:machine:1579>*2, <enderio:item_liquid_conduit:1>*16, <ore:plateLead>*32, <gregtech:meta_item_1:148>*6)
+   .outputs(<galaxyspace:oxygen_tank_epp_1:2500> * 2)
+   .fluidInputs([<liquid:sterilized_growth_medium>*144])
+   .duration(1000).EUt(4096).buildAndRegister();
+
 //Взлётка 2 лвл
 recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 [[<ore:plateDenseTitanium>, <ore:plateDenseTitanium>, <ore:plateDenseTitanium>],
  [<ore:blockTitanium>, <ore:blockTitanium>, <ore:blockTitanium>]]);
+
+//Solar Flare Module
+recipes.addShaped(<galaxyspace:gs_basic:1>,
+[[<galacticraftcore:steel_pole>, null, null],
+ [<gregtech:meta_item_1:501>, <galacticraftcore:steel_pole>, null],
+ [<gregtech:meta_item_1:331>, <ore:foilStainlessSteel>, <galacticraftcore:steel_pole>]]);
 
 //Сборщик ракет
 recipes.addShaped(<galaxyspace:rocket_assembler>,
@@ -203,26 +211,26 @@ recipes.addShaped(<galaxyspace:rocket_assembler>,
 
 //Гибридная солнечная панель
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
-[[<galacticraftcore:solar:4>, <galacticraftcore:solar:4>, <galacticraftcore:solar:4>],
+[[<gregtech:meta_item_1:333>, <gregtech:meta_item_1:333>, <gregtech:meta_item_1:333>],
  [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
- [<gregtech:meta_item_1:105>, <gregtech:machine:989>, <ore:cableGtQuadrupleGold>]]);
+ [<gregtech:meta_item_1:176>, <gregtech:machine:989>, <ore:cableGtQuadrupleGold>]]);
 
 //Модификационный стол
 recipes.addShaped(<galaxyspace:modification_table>,
-[[<gregtech:meta_item_1:98>, <gregtech:meta_item_1:140>, <gregtech:meta_item_1:83>],
- [<gregtech:meta_item_1:140>, <gregtech:machine:989>, <gregtech:meta_item_1:140>],
- [<gregtech:machine:1614>, <gregtech:meta_item_1:140>, <gregtech:meta_item_1:98>]]);
+[[<gregtech:meta_item_1:98>, <gregtech:meta_item_1:190>, <gregtech:meta_item_1:83>],
+ [<gregtech:meta_item_1:190>, <gregtech:machine:989>, <gregtech:meta_item_1:190>],
+ [<gregtech:machine:1614>, <gregtech:meta_item_1:190>, <gregtech:meta_item_1:98>]]);
 
 //Контроллер мини-панелей
-recipes.addShaped(<galaxyspace:panel_controller>,//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
-[[<ore:plateLead>, null, <ore:plateLead>],
- [<ore:cableGtDoubleHvSuperconductor>, <gregtech:machine:988>, <ore:cableGtDoubleHvSuperconductor>],
+recipes.addShaped(<galaxyspace:panel_controller>,
+[[<ore:plateLead>, <gregtech:meta_item_1:234>, <ore:plateLead>],
+ [<ore:wireGtSingleMagnesiumDiboride>, <gregtech:machine:988>, <ore:wireGtSingleMagnesiumDiboride>],
  [<ore:plateLead>, <gregtech:meta_item_1:226>, <ore:plateLead>]]);
 
 //Генератор поля
-recipes.addShaped(<galaxyspace:radiation_stabiliser>,//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS//FIX THIS
+recipes.addShaped(<galaxyspace:radiation_stabiliser>,
 [[<gregtech:wire_coil:1>, <gregtech:wire_coil:1>, <gregtech:wire_coil:1>],
- [null, <gregtech:machine:988>, null],
+ [<gregtech:meta_item_1:100>, <gregtech:machine:988>, <gregtech:meta_item_1:100>],
  [<ore:cableGtDoublePlatinum>, <gregtech:meta_item_1:226>, <ore:cableGtDoublePlatinum>]]);
 
 //Солнечный парус
@@ -233,9 +241,9 @@ recipes.addShaped(<galaxyspace:solarwind_panel>,
 
 //Планитарный щит
 recipes.addShaped(<galaxyspace:planet_shield>,
-[[<gregtech:meta_item_1:148>, <gregtech:meta_item_1:165>, <gregtech:meta_item_1:148>],
- [<gregtech:meta_item_1:148>, <gregtech:machine:989>, <gregtech:meta_item_1:148>],
- [<ore:cableGtDoubleIvSuperconductor>, <galaxyspace:gravitation_module>, <ore:cableGtDoubleIvSuperconductor>]]);
+[[<gregtech:meta_item_1:203>, <ore:circuitAdvanced>, <gregtech:meta_item_1:203>],
+ [<gregtech:meta_item_1:203>, <gregtech:machine:989>, <gregtech:meta_item_1:203>],
+ [<ore:wireGtSingleMagnesiumDiboride>, <galaxyspace:gravitation_module>, <ore:wireGtSingleMagnesiumDiboride>]]);
 
 //High Duty Plates(4-6)
 //Tier 4

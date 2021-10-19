@@ -8,7 +8,7 @@ recipes.remove(<movingelevators:button_block>);
 //Elevator Controller
 recipes.addShaped(<movingelevators:elevator_block>, 
 [[<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>],
- [<gregtech:meta_item_1:103>, <gregtech:machine_casing:1>, <gregtech:meta_item_1:103>],
+ [<gregtech:meta_item_1:173>, <gregtech:machine_casing:1>, <gregtech:meta_item_1:173>],
  [<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>]]);
  
 //Elevator Screen
