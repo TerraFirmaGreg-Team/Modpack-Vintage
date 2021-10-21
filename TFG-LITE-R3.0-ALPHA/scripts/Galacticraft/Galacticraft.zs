@@ -1,6 +1,10 @@
 import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 
+//le le let me die
+//le le let me die
+//le le let me die
+
 //Удаление+скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
 	//Руды
@@ -34,7 +38,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	//Предметы
 	//<galacticraftplanets:rocket_t2:11>,
 	//<galacticraftplanets:rocket_t2:12>,
-	//<galacticraftcore:rocket_workbench>,
 	<galacticraftplanets:volcanic_pickaxe>,
 	<galacticraftplanets:desh_pick_slime>,
 	<galacticraftcore:steel_pickaxe>,
@@ -126,7 +129,54 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:rocket_t2:4>,
 	<galacticraftplanets:rocket_t3:4>,
 	<galacticraftplanets:item_basic_mars:6>,
-	<galacticraftcore:machine3>
+	<galacticraftcore:machine3>,
+	<galacticraftcore:cargo>,
+	<galacticraftcore:cargo:4>,
+	<galacticraftcore:rocket_workbench>,
+	<galacticraftcore:fluid_pipe>,
+	//Remove from JEI, bot not in JEI
+	<galacticraftcore:parachest>,
+	<galacticraftcore:cheese>,
+	<galacticraftcore:treasure_chest>,
+	<galacticraftcore:key>,
+	<galacticraftcore:basic_item:13>,
+	<galacticraftcore:basic_item:14>,
+	<galacticraftcore:infinite_battery>,
+	<galacticraftcore:food:8>,
+	<galacticraftcore:food:5>,
+	<galacticraftcore:food:4>,
+	<galacticraftcore:food:7>,
+	<galacticraftcore:food:6>,
+	<galacticraftcore:fallen_meteor>,
+	<galacticraftcore:meteor_chunk>,
+	<galacticraftcore:meteor_chunk>,
+	<galacticraftcore:dungeonfinder>,
+	<galacticraftcore:cheese_curd>,
+	<galacticraftplanets:rocket_t2:14>,
+	<galacticraftplanets:slimeling_egg>,
+	<galacticraftplanets:slimeling_egg:1>,
+	<galacticraftplanets:slimeling_egg:2>,
+	<galacticraftplanets:creeper_egg>,
+	<galacticraftplanets:cavern_vines>,
+	<galacticraftplanets:key>,
+	<galacticraftplanets:item_basic_asteroids>,
+	<galacticraftplanets:item_basic_asteroids:3>,
+	<galacticraftplanets:item_basic_asteroids:4>,
+	<galacticraftplanets:item_basic_asteroids:9>,
+	<galacticraftplanets:methane_canister_partial:1>,
+	<galacticraftplanets:canister_partial_lox:1>,
+	<galacticraftplanets:canister_partial_ln2:1>,
+	<galacticraftplanets:strange_seed>,
+	<galacticraftplanets:crashed_probe>,
+	<galacticraftplanets:web_torch:1>,
+	<galacticraftplanets:web_torch>,
+	<galacticraftplanets:treasure_t3>,
+	<galacticraftplanets:strange_seed:1>,
+	<galacticraftplanets:key_t3>,
+	<galacticraftplanets:basic_item_venus:1>,
+	<galacticraftcore:item_basic_moon>,
+	<galacticraftcore:meteor_chunk:1>,
+	<galacticraftplanets:item_basic_mars:2>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -134,7 +184,6 @@ for item in RemoveItemsFromJEI{
 
 //Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
-	<galacticraftcore:fluid_pipe>,
 	<galacticraftcore:distributor>,
 	<galacticraftcore:collector>,
 	<galacticraftcore:oxygen_compressor>,
@@ -212,29 +261,29 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:item_basic_mars:4>,
 	<galacticraftcore:basic_block_core:12>,
 	<galacticraftcore:item_basic_moon>,
-	<galacticraftcore:rocket_workbench>,
 	<galacticraftcore:steel_pole>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
 }
 
+//Другие рецепты которые удалены
+furnace.remove(<galacticraftcore:item_basic_moon>);
+furnace.remove(<galacticraftplanets:item_basic_mars:2>);
+
 //Еда из GC
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
-
-//Еда
-recipes.addShapeless(<galacticraftcore:food>, [<galacticraftcore:canister>, <ore:apple>, <ore:apple>]);
-recipes.addShapeless(<galacticraftcore:food:1>, [<galacticraftcore:canister>, <tfc:food/carrot>, <tfc:food/carrot>]);
-recipes.addShapeless(<galacticraftcore:food:2>, [<galacticraftcore:canister>, <firmalife:melon>, <firmalife:melon>]);
-recipes.addShapeless(<galacticraftcore:food:3>, [<galacticraftcore:canister>, <tfc:food/potato>, <tfc:food/potato>]);
+ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0);
 
 //Шест
 recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]);
+
 //Светофакел
 recipes.addShapeless(<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
+
 //Slimeling Inventory Bag
 recipes.addShaped(<galacticraftplanets:item_basic_mars:4>,
 [[<ore:leather>, <ore:plateDiamond>, <ore:leather>],
@@ -245,7 +294,7 @@ recipes.addShaped(<galacticraftplanets:item_basic_mars:4>,
 recipes.addShaped(<galacticraftcore:oxygen_mask>,
 [[<minecraft:glass_pane>, <ore:craftingLensWhite>, <minecraft:glass_pane>],
  [<ore:plateDenseSteel>, <minecraft:leather_helmet>, <ore:plateDenseSteel>],
- [<minecraft:glass_pane>, <galacticraftcore:fluid_pipe>, <minecraft:glass_pane>]]);
+ [<minecraft:glass_pane>, <ore:pipeTinyFluidStainlessSteel>, <minecraft:glass_pane>]]);
 
 //Oxygen Gear
 recipes.addShaped(<galacticraftcore:oxygen_gear>,
@@ -255,21 +304,21 @@ recipes.addShaped(<galacticraftcore:oxygen_gear>,
 
 //Oxygen Detector
 recipes.addShaped(<galacticraftcore:oxygen_detector>,
-[[<gregtech:meta_item_1:163>, <ore:plateAluminium>, <gregtech:meta_item_1:163>],
+[[<gregtech:meta_item_1:234>, <ore:plateAluminium>, <gregtech:meta_item_1:234>],
  [<ore:plateAluminium>, <ore:circuitGood>, <ore:plateAluminium>],
  [<ore:cableGtQuadrupleCopper>, <ore:plateAluminium>, <ore:cableGtQuadrupleCopper>]]);
 
 //Oxygen Sealer
 recipes.addShaped(<galacticraftcore:sealer>,
-[[<gregtech:meta_item_1:157>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:157>],
+[[<gregtech:meta_item_1:234>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:234>],
  [<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>],
  [<gregtech:meta_item_1:143>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:143>]]);
 
 //Oxygen Bubble Distributor
 recipes.addShaped(<galacticraftcore:distributor>,
-[[<gregtech:meta_item_1:157>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:157>],
+[[<gregtech:meta_item_1:234>, <galacticraftcore:air_vent>, <gregtech:meta_item_1:234>],
  [<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>],
- [<gregtech:meta_item_1:146>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:146>]]);
+ [<gregtech:meta_item_1:205>, <galacticraftcore:oxygen_concentrator>, <gregtech:meta_item_1:205>]]);
 
 //Oxygen Collector
 recipes.addShaped(<galacticraftcore:collector>,
@@ -417,8 +466,8 @@ recipes.addShaped(<galacticraftplanets:walkway:1>,
 
 //Пеш. дор с жид. трубой
 recipes.addShaped(<galacticraftplanets:walkway:2>,
-[[<galacticraftplanets:walkway>, <galacticraftcore:fluid_pipe>, null],
- [<galacticraftcore:fluid_pipe>, null, null],
+[[<galacticraftplanets:walkway>, <ore:pipeTinyFluidStainlessSteel>, null],
+ [<ore:pipeTinyFluidStainlessSteel>, null, null],
  [null, null, null]]);
 
 //Маяк ресивер
@@ -444,12 +493,6 @@ recipes.addShaped(<galacticraftplanets:atomic_battery>,
 [[null, <ore:plateInvar>, null],
  [null, <galacticraftplanets:basic_item_venus:2>, null],
  [null, <gregtech:meta_item_1:80>, null]]);
-
-//Верстак NASA
-recipes.addShaped(<galacticraftcore:rocket_workbench>,
-[[<gregtech:meta_item_1:188>, null, <gregtech:meta_item_1:188>],
- [<gregtech:meta_item_1:188>, <gregtech:meta_item_1:159>, <gregtech:meta_item_1:188>],
- [<ore:cableGtSingleGold>, <ore:circuitGood>, <ore:cableGtSingleGold>]]);
 
 //Площадка телепортации
 recipes.addShaped(<galacticraftplanets:telepad_short>,
@@ -674,3 +717,40 @@ assembler.recipeBuilder()
    .inputs(<gregtech:machine:1597>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*6, <gregtech:meta_item_1:144>*2)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .duration(1000).EUt(512).buildAndRegister();
+
+//Еда
+//Фруктовая канистра
+canner.recipeBuilder()
+   .inputs(<galacticraftcore:canister>, <ore:apple> * 2)
+   .outputs(<galacticraftcore:food>)
+   .duration(460)
+   .EUt(2)
+   .buildAndRegister();
+//Морковная канистра
+canner.recipeBuilder()
+   .inputs(<galacticraftcore:canister>, <tfc:food/carrot> * 2)
+   .outputs(<galacticraftcore:food:1>)
+   .duration(460)
+   .EUt(2)
+   .buildAndRegister();
+//Арбузная канистра
+canner.recipeBuilder()
+   .inputs(<galacticraftcore:canister>, <firmalife:melon> * 2)
+   .outputs(<galacticraftcore:food:2>)
+   .duration(460)
+   .EUt(2)
+   .buildAndRegister();
+//Картофельная канистра
+canner.recipeBuilder()
+   .inputs(<galacticraftcore:canister>, <tfc:food/potato> * 2)
+   .outputs(<galacticraftcore:food:3>)
+   .duration(460)
+   .EUt(2)
+   .buildAndRegister();
+//Мясная канистра
+canner.recipeBuilder()
+   .inputs(<galacticraftcore:canister>, <ore:categoryMeat> * 2)
+   .outputs(<galacticraftcore:food:9>)
+   .duration(460)
+   .EUt(2)
+   .buildAndRegister();

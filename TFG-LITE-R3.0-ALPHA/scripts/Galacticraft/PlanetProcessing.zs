@@ -1,5 +1,13 @@
 //GALACTICRAFT-PROCCESSING
 
+//Solid Meteoric Iron --> Meteoric Iron Raw
+macerator.recipeBuilder()
+   .inputs(<galacticraftcore:basic_block_core:12>)
+   .outputs(<galacticraftcore:meteoric_iron_raw> * 4)
+   .chancedOutput(<galacticraftcore:meteoric_iron_raw>, 2500, 500)
+   .duration(760)
+   .EUt(176)
+   .buildAndRegister();
 //Метеоритное железо
 centrifuge.recipeBuilder()
    .inputs(<galacticraftcore:meteoric_iron_raw>)
@@ -12,6 +20,28 @@ centrifuge.recipeBuilder()
    .fluidOutputs(<liquid:water> * 50)
    .duration(150)
    .EUt(618)
+   .buildAndRegister();
+
+//Dash --> Raw Dash
+macerator.recipeBuilder()
+   .inputs(<galacticraftplanets:mars:8>)
+   .outpus(<galacticraftplanets:item_basic_mars> * 4)
+   .chancedOutput(<galacticraftplanets:item_basic_mars>, 2500, 500)
+   .duration(760)
+   .EUt(510)
+   .buildAndRegister();
+//Dash
+centrifuge.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_mars>)
+   .chancedOutput(<ore:dustStone>.firstItem, 9000, 500)
+   .chancedOutput(<ore:dustImpureVanadiumMagnetite>.firstItem, 7000, 1000)
+   .chancedOutput(<ore:dustImpureOpal>.firstItem, 5000, 1500)
+   .chancedOutput(<ore:dustImpureNickel>.firstItem, 3000, 2000)
+   .chancedOutput(<ore:dustImpureVanadiumMagnetite>.firstItem, 1000, 2500)
+   .chancedOutput(<ore:dustRareEarth>.firstItem, 500, 3000)
+   .fluidOutputs(<liquid:water> * 50)
+   .duration(150)
+   .EUt(1750)
    .buildAndRegister();
 
 //ЛУНА
