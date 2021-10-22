@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.ItemRegistry;
 
 //Удаление+скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
