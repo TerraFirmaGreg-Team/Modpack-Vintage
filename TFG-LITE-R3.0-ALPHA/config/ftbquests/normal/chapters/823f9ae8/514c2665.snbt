@@ -12,7 +12,18 @@
 		uid: "3298f0d1",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 391"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustKaolinite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustKaolinite"
+				}
+			}
 		}]
 	}]
 }

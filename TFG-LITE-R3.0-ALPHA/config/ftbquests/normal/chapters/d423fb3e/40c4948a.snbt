@@ -4,9 +4,7 @@
 	shape: "octagon",
 	description: "{tfg.quests.steam.steamtubine.subtitle}",
 	dependencies: [
-		"f04e0193",
-		"a108a3f6",
-		"0e63b2d9"
+		"f04e0193"
 	],
 	hide: true,
 	size: 3.0d,

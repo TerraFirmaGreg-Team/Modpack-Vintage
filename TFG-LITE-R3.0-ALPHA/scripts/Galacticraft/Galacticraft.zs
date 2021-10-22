@@ -1,10 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 
-//le le let me die
-//le le let me die
-//le le let me die
-
 //Удаление+скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
 	//Руды
@@ -134,7 +130,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:cargo:4>,
 	<galacticraftcore:rocket_workbench>,
 	<galacticraftcore:fluid_pipe>,
-	//Remove from JEI, bot not in JEI
 	<galacticraftcore:parachest>,
 	<galacticraftcore:cheese>,
 	<galacticraftcore:treasure_chest>,
@@ -176,7 +171,13 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:basic_item_venus:1>,
 	<galacticraftcore:item_basic_moon>,
 	<galacticraftcore:meteor_chunk:1>,
-	<galacticraftplanets:item_basic_mars:2>
+	<galacticraftplanets:item_basic_mars:2>,
+	<galacticraftplanets:item_basic_mars:1>,
+	<galacticraftcore:basic_block_core:13>,
+	<galacticraftplanets:dense_ice>,
+	<galacticraftcore:emergency_box>,
+	<galacticraftcore:emergency_box:1>,
+	<galacticraftcore:emergency_kit>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -221,9 +222,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:basic_item_venus:2>,
 	<galacticraftplanets:atomic_battery>,
 	<galacticraftplanets:telepad_short>,
-	<galacticraftcore:emergency_box>,
-	<galacticraftcore:emergency_box:1>,
-	<galacticraftcore:emergency_kit>,
 	<galacticraftcore:landing_pad>,
 	<galacticraftcore:landing_pad:1>,
 	<galacticraftplanets:miner_base>,
@@ -258,10 +256,12 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:food:1>,
 	<galacticraftcore:food:2>,
 	<galacticraftcore:food:3>,
+	<galacticraftcore:food:9>,
 	<galacticraftplanets:item_basic_mars:4>,
 	<galacticraftcore:basic_block_core:12>,
 	<galacticraftcore:item_basic_moon>,
-	<galacticraftcore:steel_pole>
+	<galacticraftcore:steel_pole>,
+	<galacticraftplanets:mars:8>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -643,6 +643,30 @@ recipes.addShaped(<galacticraftcore:panel_lighting:4>,
 [[null, null, null],
  [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, null],
  [null, <ore:plateBlackSteel>, null]]);
+
+//Sealable Alum. Wire
+recipes.addShaped(<galacticraftcore:enclosed:14>,
+[[null, null, null],
+ [<galacticraftcore:basic_block_core:4>, <ore:cableGtSingleAnnealedCopper>, <galacticraftcore:basic_block_core:4>],
+ [null, null, null]]);
+
+//Sealable Alum. Wire
+recipes.addShaped(<galacticraftcore:enclosed:15>,
+[[null, null, null],
+ [<galacticraftcore:basic_block_core:4>, <ore:cableGtSingleGold>, <galacticraftcore:basic_block_core:4>],
+ [null, null, null]]);
+
+//Sealable Alum. Wire
+recipes.addShaped(<galacticraftcore:enclosed:13>,
+[[null, null, null],
+ [<galacticraftcore:basic_block_core:4>, <appliedenergistics2:part:16>, <galacticraftcore:basic_block_core:4>],
+ [null, null, null]]);
+
+//Sealable Alum. Wire
+recipes.addShaped(<galacticraftcore:enclosed:1>,
+[[null, null, null],
+ [<galacticraftcore:basic_block_core:4>, <ore:pipeSmallFluidStainlessSteel>, <galacticraftcore:basic_block_core:4>],
+ [null, null, null]]);
 
 //ENGINES 1-2TIER
 //Двигатель 1

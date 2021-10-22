@@ -298,342 +298,25 @@ tfg.quests.primitive.bed.subtitle=Steve can only sleep on a surface made from af
 ##################################################################################################################################
 tfg.quests.steam.era.title=Steam - Era II
 
-tfg.quests.steam.mortar.title=Mortar
-tfg.quests.steam.mortar.subtitle=Grind metals, confuse them with your grandfather's ashes.
-
-tfg.quests.steam.tools.title=Tools
-tfg.quests.steam.tools.subtitle=Useless? No.
-tfg.quests.steam.tools.task.wrench.title=Wrench
-tfg.quests.steam.tools.task.screwdriver.title=Screwdriver. Sonicness not included.
-tfg.quests.steam.tools.task.wirecutter.title=Wirecutters
-
-tfg.quests.steam.checkbox.title=Choose your path
-tfg.quests.steam.checkbox.subtitle=Pick a path for further advancement. Both are recommended.
-
-tfg.quests.steam.rate.title=More metal
-tfg.quests.steam.rate.subtitle=Was getting metals before painful? Yes, yes it was.
-
-tfg.quests.steam.bronzedust.subtitle=Simpler bronze craft
-
-tfg.quests.steam.bronzeingot.title=Bronze ingots
-tfg.quests.steam.bronzeingot.subtitle=Why this many? Because I said so. Get crafting.
-
-tfg.quests.steam.sachok.title=Butterfly net
-tfg.quests.steam.sachok.subtitle=Catch things.
-
-tfg.quests.steam.bee.title=Beeeeeee
-tfg.quests.steam.bee.subtitle=Behold. You caught a thing.
-
-tfg.quests.steam.analyzator.subtitle=Now as an item.
-
-tfg.quests.steam.apiary.subtitle=To be filled with bees.
-
-tfg.quests.steam.honeydrop.subtitle=Tasty.
-
-tfg.quests.steam.beeswax.subtitle=Sticky.
-
-tfg.quests.steam.steelingot.title=Steel ingot
-tfg.quests.steam.steelingot.subtitle=Make more.
-
-tfg.quests.steam.steelcasing.subtitle=For better devices.
-
-tfg.quests.steam.blacksteelingot.subtitle=Just 30 and 1 ingots.
-
-tfg.quests.steam.blueplusred.title=Blue and red steel
-tfg.quests.steam.blueplusred.subtitle=Blu or red?
-
-tfg.quests.steam.1lvltank.subtitle=Tank mk1.
-
-tfg.quests.steam.2lvltank.subtitle=A better tank.
-
-tfg.quests.steam.3lvltank.subtitle=Even better than the last one.
-
-tfg.quests.steam.4lvltank.subtitle=There's more of these.
-
-tfg.quests.steam.5lvltank.subtitle=Still can't move or shoot things. Boring.
-
-tfg.quests.steam.6lvltank.subtitle=A bit too much effort for a big barrel, innit?
-
-tfg.quests.steam.bronzebrickedhull.subtitle=For devices.
-
-tfg.quests.steam.bronzeboiler.subtitle=The most important thing you made so far.
-
-tfg.quests.steam.bronzelavaboiler.subtitle=Lava power.
-
-tfg.quests.steam.disltwater.title=Distilled water
-tfg.quests.steam.disltwater.subtitle=Used in the boiler.
-
-tfg.quests.steam.steamfurnace.subtitle=Here be furnace.
-
-tfg.quests.steam.creosoteoven.subtitle=Better coal is close.
-
-tfg.quests.steam.bronzealloysmelter.subtitle=Simpler alloys.
-
-tfg.quests.steam.platemold.subtitle=Need plates? Get your local machine to make them for you.
-
-tfg.quests.steam.blacksteelingot2.subtitle=More steel.
-
-tfg.quests.steam.bronzeforgehammer.subtitle=Faster than the macerator, but gets you less ore.
-
-tfg.quests.steam.bronzemacerator.subtitle=Makes one piece of ore into more than one.
-
-tfg.quests.steam.bronzeextractor.subtitle=Extract things.
-
-tfg.quests.steam.craftingstation.subtitle=Makes things easier.
-
-tfg.quests.steam.bronzehull.subtitle=For your first steam device.
-
-tfg.quests.steam.bronzecompressor.subtitle=This should be useful.
-
-tfg.quests.steam.bronzemixer.subtitle=Interesting recipes.
-
-tfg.quests.steam.bronzepump.subtitle=Do you really want to use this?
-
-tfg.quests.steam.tincable.subtitle=Can't touch this.
-
-tfg.quests.steam.electricity.title=Electricity
-tfg.quests.steam.electricity.subtitle=Pocket lightning.
-
-tfg.quests.steam.books.title=Books from RFtools
-tfg.quests.steam.books.subtitle=Now you decide what reality looks like.
-
-tfg.quests.steam.tinrotor.subtitle=Useful during the summer.
-
-tfg.quests.steam.lvmotor.subtitle=Someone tore this off a bike.
-
-tfg.quests.steam.basiccircuit.title=Basic circuit
-tfg.quests.steam.basiccircuit.subtitle=It thinks for the machine.
-
-tfg.quests.steam.bigboiler.subtitle=Praise the steam gods.
-
-tfg.quests.steam.steamtubine.subtitle=Now you can make electricity.
-
 ##################################################################################################################################
 ########################################################## LV Phase ##############################################################
 ##################################################################################################################################
 tfg.quests.lv.era.title=LV electricity - Era III
-
-tfg.quests.lv.start.title=A new era!
-tfg.quests.lv.start.subtitle=Remember that if there isn't a quest for something, that doesn't mean it's useless. These just provide direction.
-
-tfg.quests.lv.mixer.subtitle=Mixes things.
-
-tfg.quests.lv.clustermill.subtitle=No recipes, wot zis do?
-
-tfg.quests.lv.centrifuge.subtitle=This really shouldn't be able to produce so much ore.
-
-tfg.quests.lv.emitter.subtitle=Fancy.
-
-tfg.quests.lv.microwave.subtitle=This should be able to boil your enemies. Unfortunately, it is not.
-
-tfg.quests.lv.orewashing.subtitle=Byproducts.
-
-tfg.quests.lv.wiremill.subtitle=Cheaper wires.
-
-tfg.quests.lv.alloysmelter.subtitle=Helps with alloying.
-
-tfg.quests.lv.itemcollector.subtitle=Why is this here?
-
-tfg.quests.lv.thermalcen.subtitle=More metals for the metal gods.
-
-tfg.quests.lv.polarizer.subtitle=Makes magnetic sticks.
-
-tfg.quests.lv.electricfurnace.subtitle=What do you need this for? Use Thaumcraft.
-
-tfg.quests.lv.electrolyzer.subtitle=In addition to the centrifuge.
-
-tfg.quests.lv.blackgold.title=Black gold
-tfg.quests.lv.blackgold.subtitle=This is probably useful.
-
-tfg.quests.lv.chemicalreator.subtitle=A more sensible recipe for rubber.
-
-tfg.quests.lv.h2o.title=Praise Poseidon
-
-tfg.quests.lv.gasturbine.subtitle=It spins.
-
-tfg.quests.lv.dieselgenerator.subtitle=You don't need the atmosphere.
-
-tfg.quests.lv.lightfuel.title=Light fuel
-
-tfg.quests.lv.rubber.title=Rubber
-
-tfg.quests.lv.conveyer.subtitle=I'd take a ride.
-
-tfg.quests.lv.electromagneticseparator.subtitle=More byproducts.
-
-tfg.quests.lv.chemicalbath.subtitle=Makes getting paper faster.
-
-tfg.quests.lv.extractor.subtitle=Dyes and rubber.
-
-tfg.quests.lv.pumplv.subtitle=Lots of settings. Use a screwdriver.
-
-tfg.quests.lv.brewery.subtitle=Here be beer.
-
-tfg.quests.lv.basicpump.subtitle=Fluids.
-
-tfg.quests.lv.distellery.subtitle=A shittier version of a multiblock distillery.
-
-tfg.quests.lv.fluidheater.subtitle=Heats things.
-
-tfg.quests.lv.canningmachine.subtitle=Lets you make batteries.
-
-tfg.quests.lv.battery.title=Battery.
-tfg.quests.lv.battery.subtitle=Make more of these.
-
-tfg.quests.lv.batterybuffer.title=Battery buffer
-tfg.quests.lv.batterybuffer.subtitle=Shove batteries in here.
-
-tfg.quests.lv.fluidcanner.subtitle=Why is this here? You won't need it for a while.
-
-tfg.quests.lv.autoclave.subtitle=Cleans ore dust.
-
-tfg.quests.lv.fluidsolidifier.subtitle=Solidifies fluids.
-
-tfg.quests.lv.cuttingmachine.subtitle=Cuts things.
-
-tfg.quests.lv.scanner.subtitle=Lets you find metals underground.
-
-tfg.quests.lv.solaroanel1.subtitle=Praise the sun.
-
-tfg.quests.lv.solarpanel2.subtitle=Nature loves you.
-
-tfg.quests.lv.aluminiumingot.subtitle=An achivement.
-
-tfg.quests.lv.fluidextractor.subtitle=Extracts fluids from things.
-
-tfg.quests.lv.aircollector.subtitle=Collects air.
-
-tfg.quests.lv.assembler.subtitle=Shitty autocrafting.
-
-tfg.quests.lv.circuitassembler.subtitle=Easier circuit crafting.
-
-tfg.quests.lv.electrimblastfurnace.subtitle=Expensive but necessary.
-
-tfg.quests.lv.silicone.subtitle=For circuits.
-
-tfg.quests.lv.Rsteelingot.subtitle=Metal.
-
-tfg.quests.lv.packager.subtitle=Quite useless, since we have AE.
-
-tfg.quests.lv.robotarm.subtitle=Soft and delicate.
-
-tfg.quests.lv.unpackager.subtitle=Disassembles certain items.
-
-tfg.quests.lv.fisher.subtitle=Catches fish. There's no fish in TFC.
-
-tfg.quests.lv.greenhouse.subtitle=Grows plants. Ones from TFC included.
-
-tfg.quests.lv.formingpress.subtitle=Needed for EDM coils.
-
-tfg.quests.lv.macerator.subtitle=Better than the last one.
-
-tfg.quests.lv.sifter.subtitle=Byproducts.
-
-tfg.quests.lv.benderyoutube.subtitle=Bends things.
-
-tfg.quests.lv.forgehammer.subtitle=Probably useless.
-
-tfg.quests.lv.compressor.subtitle=Lets you make metal blocks.
-
-tfg.quests.lv.lathe.subtitle=Creates sticks from ingots. Also byproducts.
 
 ##################################################################################################################################
 ########################################################## MV Phase ##############################################################
 ##################################################################################################################################
 tfg.quests.mv.era.title=MV electricity - Era IV
 
-tfg.quests.mv.batterybuffer2.title=Battery buffer (MV)
-
-tfg.quests.mv.start.title=New beginning!
-tfg.quests.mv.start.subtitle=This questline has very few item descriptions, as most of them only vary by the appropriate voltage. Use JEI for crafts.
-
-tfg.quests.mv.proccessor.title=MV circuit
-tfg.quests.mv.proccessor.subtitle=Elon Musk would be proud.
-
-tfg.quests.mv.gasturbine.subtitle=Danger of the environment being polluted with dihydrogen monoxide.
-
-tfg.quests.mv.arcfurnace.subtitle=Stick your hand in there, I promise it won't hurt.
-
-tfg.quests.mv.mvvoltagetransformer.subtitle=Prevents natural selection of devices by excessive voltage.
-
-tfg.quests.mv.orewasher.subtitle=I WANT MORE BYPRODUCTS!
-
-tfg.quests.mv.steamturbine.subtitle=Big steam, big voltage.
-
-tfg.quests.mv.electrolyzer.subtitle=Conjure ore from the aether.
-
-tfg.quests.mv.inputenergyhatch4amps.subtitle=Input electricity here.
-
-tfg.quests.mv.centrifuge.subtitle=Merry-go-round for dust.
-
-tfg.quests.mv.pump.subtitle=Pump out all the seas to live on Tatooine.
-
-tfg.quests.mv.battery.title=MV battery.
-tfg.quests.mv.battery.subtitle=Contained powah.
-
-tfg.quests.mv.distellery.subtitle=This should be able to make platinum moonshine.
-
-tfg.quests.mv.coaltar.title=Charcoal byproduct.
-
-tfg.quests.mv.pyrolyseoven.subtitle=To get coke. Not the fun kind, unfortunately.
-
-tfg.quests.mv.dieselgenerator.subtitle=Treehuggers do not approve.
-
-tfg.quests.mv.assembler.subtitle=Automate your clay block factory!
-
-tfg.quests.mv.circuitassembler.subtitle=Now they build themselves.
-
-tfg.quests.mv.rubyoruvorite.title=Ruby or uvorite.
-tfg.quests.mv.rubyoruvorite.subtitle=Needed for chrome.
-
-tfg.quests.mv.manganese.subtitle=Not related to mangos.
-
-tfg.quests.mv.aircollector.title=Inhales the air for you.
-tfg.quests.mv.aircollector.subtitle=They will do the same.
-
-tfg.quests.mv.wafer.title=Waffle
-tfg.quests.mv.wafer.subtitle=Not suited for tea.
-
-tfg.quests.mv.centralprocessingunit.subtitle=Get a hundred of these to run minecraft without lag.
-
-tfg.quests.mv.processorassembly.subtitle=Get fifty of these to run minecraft without lag.
-
-tfg.quests.mv.stainless.subtitle=Fancy HV metal.
-
 ##################################################################################################################################
 ########################################################## HV Phase ##############################################################
 ##################################################################################################################################
 tfg.quests.hv.era.title=HV electricity - Era V
 
-tfg.quests.hv.hvprocessor.title=Extreme computing
-tfg.quests.hv.hvprocessor.subtitle=Extremely good at computing, I assume.
-
-tfg.quests.hv.implosium.subtitle=Creation by explosions. I approve.
-
-tfg.quests.hv.boiler.subtitle=Explodes harder.
-
-tfg.quests.hv.multismelter.subtitle=Also known as sir Smeltalot.
-
-tfg.quests.hv.kanthalcoil.subtitle=Upgrade things.
-
-tfg.quests.hv.nichromecoil.subtitle=Now? Again? Yes.
-
-tfg.quests.hv.titaniumingot.subtitle=Takes 7 hours to make with our chief monkey's incredible skill.
-
-tfg.quests.hv.osmiumingot.subtitle=Quantum tech awaits.
-
-tfg.quests.hv.argon.title=Argon
-
-tfg.quests.hv.tetratitan.title=TITAN
-
 ##################################################################################################################################
 ########################################################## EV Phase ##############################################################
 ##################################################################################################################################
 tfg.quests.ev.era.title=EV electricity - Era VI
-
-tfg.quests.ev.evhull.subtitle=This is different from the last one. Trust me.
-
-tfg.quests.ev.naquadahreactor.subtitle=FELL THE POWER.
 
 ##################################################################################################################################
 ########################################################## AE2 Phase #############################################################
@@ -800,5 +483,9 @@ tfg.quests.space.rocket7.subtitle=The Company does not take responsibility for i
 
 tfg.quests.space.end1.title=The End
 tfg.quests.space.end1.subtitle=You won. Go home.
+
+##################################################################################################################################
+########################################################## MT Phase ##############################################################
+##################################################################################################################################
 
 imm.quests.mendeleevtable.era.title=Chemical Table

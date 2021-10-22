@@ -12,6 +12,27 @@ import mods.firmalife.Drying;
 
 //Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
+	//Dusts
+	<tfc:metal/dust/bismuth>,
+	<tfc:metal/dust/bismuth_bronze>,
+	<tfc:metal/dust/black_bronze>,
+	<tfc:metal/dust/brass>,
+	<tfc:metal/dust/bronze>,
+	<tfc:metal/dust/copper>,
+	<tfc:metal/dust/gold>,
+	<tfc:metal/dust/lead>,
+	<tfc:metal/dust/nickel>,
+	<tfc:metal/dust/rose_gold>,
+	<tfc:metal/dust/silver>,
+	<tfc:metal/dust/tin>,
+	<tfc:metal/dust/zinc>,
+	<tfc:metal/dust/sterling_silver>,
+	<tfc:metal/dust/pig_iron>,
+	<tfc:metal/dust/steel>,
+	<tfc:metal/dust/platinum>,
+	<tfc:metal/dust/black_steel>,
+	<tfc:metal/dust/blue_steel>,
+	<tfc:metal/dust/red_steel>,
 	//Hammers
 	<tfc:metal/hammer/copper>,
 	<tfc:metal/hammer/bismuth_bronze>,
@@ -90,8 +111,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/dust/wrought_iron>,
 	<tfc:metal/nugget/wrought_iron>,
 	<tfc:metal/double_sheet/wrought_iron>,
-	//<gregtech:meta_item_1:12197>,
-	//<gregtech:meta_item_1:10197>,
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
 	<tfc:sluice>
@@ -137,6 +156,8 @@ Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <gregtech:meta_dus
 //-
 Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <gregtech:meta_dust_small:103> * 3);
 Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <gregtech:meta_dust_small:183> * 3);
+Quern.addRecipe("GTOreToTFC_Kaolinite", <gregtech:ore_kaolinite_0>, <gregtech:meta_dust_small:391> * 3);
+Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <gregtech:meta_dust_small:341> * 3);
 
 //Добавление рецептов печи для еды TFC
 //Хавка
@@ -196,7 +217,7 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:blue_
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:brown_dye> * 125]).outputs(<minecraft:concrete:12>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:green_dye> * 125]).outputs(<minecraft:concrete:13>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete:14>).duration(15).EUt(8).buildAndRegister();
-chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();	
+chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();
 
 //Фикс блоков из ценных штук
 /*
@@ -216,7 +237,7 @@ compressor.recipeBuilder().inputs(<ore:gemAmethyst>*9).outputs(<gregtech:meta_bl
 
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
-recipes.addShaped(<gregtech:machine:13>,
+recipes.addShaped(<gregtech:machine:13>, 
 [[<ore:pipeSmallBronze>, <ore:craftingPiston>, <ore:pipeSmallBronze>],
  [<ore:pipeSmallBronze>, <gregtech:machine_casing:10>, <ore:pipeSmallBronze>],
  [<ore:pipeSmallBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallBronze>]]);
@@ -227,7 +248,7 @@ recipes.addShaped(<gregtech:machine:14>,
 [[<ore:pipeSmallSteel>, <ore:craftingPiston>, <ore:pipeSmallSteel>],
  [<ore:pipeSmallSteel>, <gregtech:machine_casing:12>, <ore:pipeSmallSteel>],
  [<ore:pipeSmallSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallSteel>]]);
- 
+
 //Compressed coke clay
 /*
 recipes.removeByRecipeName("gtadditions:coke_brick");

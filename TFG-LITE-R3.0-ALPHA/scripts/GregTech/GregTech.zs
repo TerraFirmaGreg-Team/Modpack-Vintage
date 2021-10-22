@@ -4,6 +4,8 @@ import crafttweaker.item.IItemStack;
 val ItemsToRemoveFromJEI as IItemStack[] = [
     //Primitive Blast Furnace
     <gregtech:machine:1000>,
+    //Primitive Bricks
+    <gregtech:metal_casing:1>,
     //flour
     <gregtech:meta_dust:1615>,
     <gregtech:meta_dust_small:1615>,
@@ -13,14 +15,15 @@ for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-/*
 val ItemsToRemove as IItemStack[] = [
-	//2x ingots + hammer --> Plate
+	//Coke Oven
+    <gregtech:machine:1016>
+    //2x ingots + hammer --> Plate
 
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
-}*/
+}
 
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
@@ -41,8 +44,13 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:1490>).outputs(<ore:ingotSt
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).outputs(<ore:ingotTitanium>.firstItem * 10).EUt(1560).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
 
+//Lv Machine Casing
+recipes.addShaped("tfg_lv_machine_casing", <gregtech:machine_casing:1>,
+[[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
+ [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
+ [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
 
-//Рецепт Coke Oven
+//Coke Oven
 recipes.addShaped("tfg_coke_oven_controller", <gregtech:machine:1016>,
 [[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
  [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
@@ -105,7 +113,7 @@ assembler.findRecipe(16, [<ore:plateIridium>.firstItem*8, <gregtech:meta_item_1:
 assembler.findRecipe(16, [<ore:plateOsmium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<ore:plateNeutronium>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 //Создание
-assembler.recipeBuilder().inputs(<ore:plateWroughtIron>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateBlackSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:1>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateAluminium>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:2>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateStainlessSteel>*6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:3>).duration(20).EUt(16).buildAndRegister();
@@ -121,6 +129,20 @@ compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_b
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
 
-//Фикс красной и синей стали
+//Исправление рецепта синей стали
 recipes.removeByRecipeName("gregtech:dust_blue_steel");
+mixer.findRecipe(7, [<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
+mixer.recipeBuilder()
+    .inputs(<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
+    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+    .outputs(<gregtech:meta_dust:2511> * 8)
+    .duration(800).EUt(8).buildAndRegister();
+
+//Исправление рецепта красной стали
 recipes.removeByRecipeName("gregtech:dust_red_steel");
+mixer.findRecipe(7, [<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
+mixer.recipeBuilder()
+    .inputs(<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
+    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+    .outputs(<gregtech:meta_dust:2510> * 8)
+    .duration(800).EUt(8).buildAndRegister();
