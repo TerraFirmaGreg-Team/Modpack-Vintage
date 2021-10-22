@@ -1,6 +1,6 @@
 {
-	x: -3.0d,
-	y: 0.0d,
+	x: -1.0d,
+	y: -3.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzebrickedhull.subtitle}",
 	dependencies: [

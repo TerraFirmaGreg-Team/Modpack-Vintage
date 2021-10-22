@@ -1,0 +1,15 @@
+{
+	x: -7.5d,
+	y: 9.5d,
+	dependencies: [
+		"bd171a6e"
+	],
+	tasks: [{
+		uid: "f9c905e9",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_green_sapphire_0"
+		}],
+		ignore_damage: true
+	}]
+}

@@ -1,0 +1,62 @@
+{
+	x: -1.5d,
+	y: 10.0d,
+	dependencies: [
+		"0451ba86"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "7321cb96",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedPurifiedAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedPurifiedAluminium"
+				}
+			}
+		}]
+	},
+	{
+		uid: "586c15f9",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedPurifiedGreenSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedPurifiedGreenSapphire"
+				}
+			}
+		}]
+	},
+	{
+		uid: "f3bc6fab",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedPurifiedSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedPurifiedSapphire"
+				}
+			}
+		}]
+	}]
+}

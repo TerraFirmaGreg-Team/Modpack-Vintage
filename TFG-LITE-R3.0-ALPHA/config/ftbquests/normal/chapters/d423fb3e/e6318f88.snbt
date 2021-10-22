@@ -1,6 +1,6 @@
 {
-	x: -6.5d,
-	y: -2.5d,
+	x: -6.0d,
+	y: -6.5d,
 	description: "{tfg.quests.steam.steelingot.subtitle}",
 	dependencies: [
 		"8fdd423e"

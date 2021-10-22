@@ -1,0 +1,25 @@
+{
+	x: 3.5d,
+	y: 6.5d,
+	dependencies: [
+		"feac22dc"
+	],
+	tasks: [{
+		uid: "f987a245",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotTinAlloy"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotTinAlloy"
+				}
+			}
+		}]
+	}]
+}

@@ -11,13 +11,9 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:material 1 1"
-		}]
-	},
-	{
-		uid: "138730ce",
-		type: "item",
-		items: [{
-			item: "gregtech:meta_item_1 1 8202"
+		},
+		{
+			item: "gregtech:meta_gem 1 214"
 		}]
 	}]
 }

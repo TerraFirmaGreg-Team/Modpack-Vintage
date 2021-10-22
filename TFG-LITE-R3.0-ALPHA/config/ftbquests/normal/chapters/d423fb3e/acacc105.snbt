@@ -1,6 +1,6 @@
 {
-	x: -1.5d,
-	y: -4.0d,
+	x: -8.5d,
+	y: -7.0d,
 	dependencies: [
 		"eccc01a5"
 	],

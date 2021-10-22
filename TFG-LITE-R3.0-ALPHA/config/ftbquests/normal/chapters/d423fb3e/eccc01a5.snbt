@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: -2.5d,
+	x: -7.5d,
+	y: -6.5d,
 	description: "{tfg.quests.steam.steelcasing.subtitle}",
 	dependencies: [
 		"e6318f88"

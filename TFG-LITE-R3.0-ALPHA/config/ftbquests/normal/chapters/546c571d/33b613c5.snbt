@@ -1,0 +1,14 @@
+{
+	x: -8.5d,
+	y: 2.5d,
+	dependencies: [
+		"bd171a6e"
+	],
+	tasks: [{
+		uid: "5b4db3d8",
+		type: "item",
+		items: [{
+			item: "gendustry:mutagen_producer"
+		}]
+	}]
+}

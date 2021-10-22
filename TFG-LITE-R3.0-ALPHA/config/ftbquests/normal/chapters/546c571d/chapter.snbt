@@ -1,0 +1,7 @@
+{
+	title: "{tfg.quests.lv.era.title}",
+	icon: "enderio:item_material 1 11",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

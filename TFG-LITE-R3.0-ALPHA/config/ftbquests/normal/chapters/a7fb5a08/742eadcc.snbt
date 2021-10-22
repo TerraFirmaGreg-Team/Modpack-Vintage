@@ -5,12 +5,12 @@
 		uid: "342ad88d",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10038"
+			item: "galaxyspace:ingots 1 1"
 		}]
 	}],
 	rewards: [{
 		uid: "e3038a6f",
 		type: "random",
-		table: 0
+		table: 48
 	}]
 }

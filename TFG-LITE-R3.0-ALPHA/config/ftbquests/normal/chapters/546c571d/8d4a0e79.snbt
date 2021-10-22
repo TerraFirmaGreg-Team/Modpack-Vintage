@@ -1,0 +1,29 @@
+{
+	x: -1.0d,
+	y: 8.5d,
+	dependencies: [
+		"76c160aa"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "3b3bba7b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_impure 1 2"
+		}]
+	},
+	{
+		uid: "3f2c5c4f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_impure 1 281"
+		}]
+	},
+	{
+		uid: "6b3df52e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_impure 1 314"
+		}]
+	}]
+}

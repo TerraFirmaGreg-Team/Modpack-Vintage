@@ -4,10 +4,13 @@
 	shape: "octagon",
 	description: "{tfg.quests.steam.steamtubine.subtitle}",
 	dependencies: [
-		"f04e0193"
+		"f04e0193",
+		"a108a3f6",
+		"0e63b2d9"
 	],
 	hide: true,
 	size: 3.0d,
+	min_width: 3,
 	tasks: [{
 		uid: "787f5560",
 		type: "item",

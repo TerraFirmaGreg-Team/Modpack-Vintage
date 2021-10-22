@@ -1,9 +1,9 @@
 {
-	x: 0.5d,
-	y: 3.0d,
+	x: -5.0d,
+	y: -3.0d,
 	description: "{tfg.quests.steam.creosoteoven.subtitle}",
 	dependencies: [
-		"06a42a78"
+		"8fdd423e"
 	],
 	tasks: [{
 		uid: "d2963a7f",

@@ -5,12 +5,12 @@
 		uid: "b50d61dc",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10037"
+			item: "gregtech:meta_ingot 1 53"
 		}]
 	}],
 	rewards: [{
 		uid: "239ae1ff",
 		type: "random",
-		table: 0
+		table: 64
 	}]
 }

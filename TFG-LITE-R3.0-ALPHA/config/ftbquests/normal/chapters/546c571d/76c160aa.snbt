@@ -1,0 +1,28 @@
+{
+	x: -4.0d,
+	y: 9.5d,
+	dependencies: [
+		"31853edb"
+	],
+	tasks: [{
+		uid: "88cbda0e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed 1 2"
+		}]
+	},
+	{
+		uid: "4a2f1802",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed 1 281"
+		}]
+	},
+	{
+		uid: "9b88c872",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed 1 314"
+		}]
+	}]
+}

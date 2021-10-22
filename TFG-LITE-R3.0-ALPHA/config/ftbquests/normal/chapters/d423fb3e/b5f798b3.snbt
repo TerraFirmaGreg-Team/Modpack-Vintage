@@ -1,11 +1,10 @@
 {
 	title: "{tfg.quests.steam.blueplusred.title}",
-	x: 0.5d,
+	x: -1.5d,
 	y: -10.5d,
 	description: "{tfg.quests.steam.blueplusred.subtitle}",
 	dependencies: [
-		"402d0689",
-		"01403590"
+		"402d0689"
 	],
 	hide: true,
 	dependency_requirement: "one_completed",
