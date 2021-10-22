@@ -177,7 +177,10 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:dense_ice>,
 	<galacticraftcore:emergency_box>,
 	<galacticraftcore:emergency_box:1>,
-	<galacticraftcore:emergency_kit>
+	<galacticraftcore:emergency_kit>,
+	<galacticraftplanets:asteroids_block:7>,
+	<galacticraftplanets:venus:12>,
+	<galacticraftplanets:asteroids_block:6>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -265,10 +268,7 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:enclosed:14>,
 	<galacticraftcore:enclosed:15>,
 	<galacticraftcore:enclosed:13>,
-	<galacticraftcore:enclosed:1>,
-	<galacticraftplanets:asteroids_block:7>,
-	<galacticraftplanets:venus:12>,
-	<galacticraftplanets:asteroids_block:6>
+	<galacticraftcore:enclosed:1>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
