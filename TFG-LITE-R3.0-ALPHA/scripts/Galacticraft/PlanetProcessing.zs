@@ -25,7 +25,7 @@ centrifuge.recipeBuilder()
 //Dash --> Raw Dash
 macerator.recipeBuilder()
    .inputs(<galacticraftplanets:mars:8>)
-   .outpus(<galacticraftplanets:item_basic_mars> * 4)
+   .outputs(<galacticraftplanets:item_basic_mars> * 4)
    .chancedOutput(<galacticraftplanets:item_basic_mars>, 2500, 500)
    .duration(760)
    .EUt(510)
