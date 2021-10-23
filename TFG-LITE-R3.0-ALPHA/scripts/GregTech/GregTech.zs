@@ -101,7 +101,7 @@ mixer.recipeBuilder()
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 
 //Фикс сундуков
-assembler.findRecipe(4, [<minecraft:planks>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
 //Фиксы корпусов
 //Удаление

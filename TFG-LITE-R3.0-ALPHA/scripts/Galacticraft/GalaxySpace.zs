@@ -188,7 +188,8 @@ val RemoveItemRecipe as IItemStack[] = [
   <galaxyspace:panel_controller>,
   <galaxyspace:radiation_stabiliser>,
   <galaxyspace:gravitation_module>,
-  <galaxyspace:rocket_assembler>
+  <galaxyspace:rocket_assembler>,
+  <galaxyspace:gs_basic:32>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
   recipes.remove(item);
