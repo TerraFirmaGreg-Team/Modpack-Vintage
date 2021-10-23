@@ -317,7 +317,7 @@ recipes.addShaped(<galaxyspace:rocket_modules>,
 //Антирад
 recipes.addShaped(<galaxyspace:gs_basic:9>,
 [[<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>],
- [<galacticraftcore:canister>, <minecraft:milk_bucket>.NoReturn(), <galacticraftcore:canister>],
+ [<galacticraftcore:canister>, <minecraft:milk_bucket>, <galacticraftcore:canister>],
  [<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>]]);
 
 //Тир 3 лэндер
@@ -327,10 +327,11 @@ recipes.addShaped(<galaxyspace:rocket_modules:2>,
  [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
 
 //
+/*
 recipes.addShaped(<>,
 [[<>, <>, <>],
  [<>, <>, <>],
- [<>, <>, <>]]);
+ [<>, <>, <>]]);*/
 
 //High Duty Plates(4-6)
 //Tier 4

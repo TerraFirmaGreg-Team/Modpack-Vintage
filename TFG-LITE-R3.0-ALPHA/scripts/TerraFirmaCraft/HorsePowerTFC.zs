@@ -40,3 +40,5 @@ Grindstone.add(<gregtech:ore_silver_0>, <gregtech:meta_dust_small:100> * 5, 10, 
 //-
 Grindstone.add(<gregtech:ore_sulfur_0>, <gregtech:meta_dust_small:103> * 5, 10, false);
 Grindstone.add(<gregtech:ore_rock_salt_0>, <gregtech:meta_dust_small:183> * 5, 10, false);
+Grindstone.add(<gregtech:ore_kaolinite_0>, <gregtech:meta_dust_small:391> * 5, 10, false);
+Grindstone.add(<gregtech:ore_graphite_0>, <gregtech:meta_dust_small:341> * 5, 10, false);
