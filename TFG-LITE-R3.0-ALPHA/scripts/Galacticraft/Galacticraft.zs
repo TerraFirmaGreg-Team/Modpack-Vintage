@@ -32,8 +32,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:mars:2>,
 	<galacticraftplanets:venus:13>,
 	//Предметы
-	//<galacticraftplanets:rocket_t2:11>,
-	//<galacticraftplanets:rocket_t2:12>,
 	<galacticraftplanets:volcanic_pickaxe>,
 	<galacticraftplanets:desh_pick_slime>,
 	<galacticraftcore:steel_pickaxe>,
@@ -128,7 +126,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:machine3>,
 	<galacticraftcore:cargo>,
 	<galacticraftcore:cargo:4>,
-	<galacticraftcore:rocket_workbench>,
+	//<galacticraftcore:rocket_workbench>,
 	<galacticraftcore:fluid_pipe>,
 	<galacticraftcore:parachest>,
 	<galacticraftcore:cheese>,

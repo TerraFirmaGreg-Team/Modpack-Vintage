@@ -43,6 +43,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:beetroot_soup>,
     <minecraft:furnace>,
     <minecraft:double_plant:2>,
+    <minecraft:chest>,
+    <minecraft:trapped_chest>,
     //Tools
     <minecraft:diamond_pickaxe>,
     <minecraft:golden_pickaxe>,

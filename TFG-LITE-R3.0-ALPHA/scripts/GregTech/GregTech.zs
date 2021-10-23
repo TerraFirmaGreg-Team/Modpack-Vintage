@@ -98,7 +98,10 @@ mixer.recipeBuilder()
     .duration(20).EUt(4).buildAndRegister();
 
 //Фикс снопа сена
-packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
+packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
+
+//Фикс сундуков
+assembler.findRecipe(4, [<ore:PlankWood>.firstItem*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
 //Фиксы корпусов
 //Удаление
