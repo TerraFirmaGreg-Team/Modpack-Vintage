@@ -178,7 +178,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:emergency_kit>,
 	<galacticraftplanets:asteroids_block:7>,
 	<galacticraftplanets:venus:12>,
-	<galacticraftplanets:asteroids_block:6>
+	<galacticraftplanets:asteroids_block:6>,
+	<galacticraftplanets:treasure_t2>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -417,7 +418,7 @@ recipes.addShaped(<galacticraftcore:air_vent>,
 
 //Частотный модуль
 recipes.addShaped(<galacticraftcore:basic_item:19>,
-[[<ore:plateLead>, <gregtech:meta_item_1:164>, <ore:plateLead>],
+[[<ore:plateLead>, <gregtech:meta_item_1:219>, <ore:plateLead>],
  [<gregtech:meta_item_1:234>, <ore:cableGtSingleRedAlloy>, <ore:circuitBasic>],
  [<gregtech:meta_item_1:575>, <gregtech:meta_item_1:592>, <gregtech:meta_item_1:575>]]);
 

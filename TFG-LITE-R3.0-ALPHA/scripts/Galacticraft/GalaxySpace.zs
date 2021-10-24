@@ -111,7 +111,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:machineframes:2>,
   <galaxyspace:treasure_t4>,
   <galaxyspace:treasure_t5>,
-  <galaxyspace:gs_basic>,
   <galaxyspace:gs_basic:5>,
   <galaxyspace:gs_basic:7>,
   <galaxyspace:gs_basic:10>,
@@ -121,6 +120,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:gs_basic:16>,
   <galaxyspace:gs_basic:19>,
   <galaxyspace:gs_basic:18>,
+  <galaxyspace:gs_basic:6>,
   <galaxyspace:rocket_modules:4>,
   <galaxyspace:rocket_modules:5>,
   <galaxyspace:rocket_modules:6>,
@@ -360,7 +360,7 @@ recipes.addShaped(<galaxyspace:upgrades>,
 
 //Module Energy
 recipes.addShaped(<galaxyspace:upgrades:3>,
-[[null, <galaxyspace:gs_basic:6>, null],
+[[null, <galaxyspace:gs_basic:13>, null],
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateCobalt>, <gregtech:meta_item_1:372>, <ore:plateCobalt>]]);
 
@@ -479,3 +479,20 @@ assembler.recipeBuilder()
   .EUt(560)
   .buildAndRegister();
 
+//Small Fuel Canister
+assembler.recipeBuilder()
+  .inputs(<galaxyspace:gs_basic>, <galaxyspace:compressed_plates:4>*2)
+  .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 3}))
+  .outputs(<galaxyspace:rocket_modules:3>)
+  .duration(260)
+  .EUt(4)
+  .buildAndRegister();
+
+//Blank Fuel Canister
+assembler.recipeBuilder()
+  .inputs(<ore:plateBlackSteel>*8, <ore:paneGlass>)
+  .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 3}))
+  .outputs(<galaxyspace:gs_basic>)
+  .duration(260)
+  .EUt(4)
+  .buildAndRegister();

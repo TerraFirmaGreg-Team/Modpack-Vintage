@@ -7,7 +7,23 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:material:2>,
 	<appliedenergistics2:material:49>,
 	<appliedenergistics2:material:51>,
-	<appliedenergistics2:material:3>
+	<appliedenergistics2:material:3>,
+	<appliedenergistics2:smooth_sky_stone_block>,
+	<appliedenergistics2:sky_stone_block>,
+	<appliedenergistics2:smooth_sky_stone_slab>,
+	<appliedenergistics2:sky_stone_brick_slab>,
+	<appliedenergistics2:sky_stone_small_brick_slab>,
+	<appliedenergistics2:creative_storage_cell>,
+	<appliedenergistics2:encoded_pattern>,
+	<appliedenergistics2:material:45>,
+	<appliedenergistics2:creative_energy_cell>,
+	<appliedenergistics2:sky_stone_slab>,
+	<appliedenergistics2:sky_stone_small_brick_stairs>,
+	<appliedenergistics2:sky_stone_brick_stairs>,
+	<appliedenergistics2:smooth_sky_stone_stairs>,
+	<appliedenergistics2:sky_stone_stairs>,
+	<appliedenergistics2:sky_stone_small_brick>,
+	<appliedenergistics2:sky_stone_brick>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -493,8 +509,8 @@ recipes.addShaped(<appliedenergistics2:energy_cell>, [
 //Сетевой инструмент
 recipes.addShaped(<appliedenergistics2:network_tool>, [
 	[<gregtech:meta_tool:8>, <ore:stickLongCertusQuartz>, null],
-	[<ore:stickLongCertusQuartz>, <gregtech:meta_tool:34>, <gregtech:meta_item_1:32518>],
-	[null, <gregtech:meta_item_1:32518>, <appliedenergistics2:part:360>]]);
+	[<ore:stickLongCertusQuartz>, <gregtech:meta_tool:34>, <gregtech:meta_item_1:188>],
+	[null, <gregtech:meta_item_1:218>, <appliedenergistics2:part:360>]]);
 //Энерго-ячейка 2
 recipes.addShaped(<appliedenergistics2:dense_energy_cell>, [
 	[<appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>],
@@ -603,7 +619,7 @@ recipes.addShaped(<appliedenergistics2:material:9>, [
 //Беспроводной раздатчик сигнала
 recipes.addShaped(<appliedenergistics2:material:41>, [
 	[<appliedenergistics2:part:140>, <appliedenergistics2:material:9>, <appliedenergistics2:part:140>],
-	[null, <ore:stickEnderium>, null],
+	[null, <ore:stickLongCertusQuartz>, null],
 	[<ore:plateCertusQuartz>, <ore:circuitAdvanced>, <ore:plateCertusQuartz>]]);
 //Терминал
 recipes.addShaped(<appliedenergistics2:part:380>, [
