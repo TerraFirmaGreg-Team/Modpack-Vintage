@@ -77,7 +77,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:plasma_pickaxe>.withTag({plasma_heat: 0.0 as float}),
   <galaxyspace:gs_basic:29>,
   <galaxyspace:gs_basic:30>,
-  //<galaxyspace:mars_rover>,
+  <galaxyspace:mars_rover>,//WIP in GS
   <galaxyspace:barnarda_c_ores>,
   <galaxyspace:barnarda_c_ores:1>,
   <galaxyspace:barnarda_c_ores:2>,
@@ -189,7 +189,14 @@ val RemoveItemRecipe as IItemStack[] = [
   <galaxyspace:radiation_stabiliser>,
   <galaxyspace:gravitation_module>,
   <galaxyspace:rocket_assembler>,
-  <galaxyspace:gs_basic:32>
+  <galaxyspace:gs_basic:32>,
+  <galaxyspace:gs_basic:9>,
+  <galaxyspace:rocket_modules>,
+  <galaxyspace:upgrades:1>,
+  <galaxyspace:upgrades:2>,
+  <galaxyspace:upgrades>,
+  <galaxyspace:upgrades:3>,
+  <galaxyspace:gs_basic:11>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
   recipes.remove(item);
@@ -316,7 +323,7 @@ recipes.addShaped(<galaxyspace:rocket_modules>,
  [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
 
 //Антирад
-recipes.addShaped(<galaxyspace:gs_basic:9>,
+recipes.addShaped(<galaxyspace:gs_basic:9>*3,
 [[<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>],
  [<galacticraftcore:canister>, <minecraft:milk_bucket>, <galacticraftcore:canister>],
  [<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>]]);
@@ -327,12 +334,35 @@ recipes.addShaped(<galaxyspace:rocket_modules:2>,
  [<galacticraftcore:steel_pole>, <galacticraftcore:buggymat:1>, <galacticraftcore:steel_pole>],
  [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
 
-//
-/*
-recipes.addShaped(<>,
-[[<>, <>, <>],
- [<>, <>, <>],
- [<>, <>, <>]]);*/
+//Blank Module
+recipes.addShaped(<galaxyspace:gs_basic:11>,
+[[<ore:plateTinAlloy>, <ore:cableGtSingleGold>, <ore:plateTinAlloy>],
+ [<ore:cableGtSingleRedAlloy>, <ore:plateCobalt>, <ore:cableGtSingleRedAlloy>],
+ [<ore:plateTinAlloy>, <gregtech:meta_item_1:371>, <ore:plateTinAlloy>]]);
+
+//Module Stabilization
+recipes.addShaped(<galaxyspace:upgrades:1>,
+[[null, <galaxyspace:gs_basic:8>, null],
+ [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
+ [<ore:plateMagnesium>, <gregtech:meta_item_1:372>, <ore:plateMagnesium>]]);
+
+//Module Speed
+recipes.addShaped(<galaxyspace:upgrades:2>,
+[[null, <galaxyspace:gs_basic:3>, null],
+ [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
+ [<ore:plateNickel>, <gregtech:meta_item_1:372>, <ore:plateNickel>]]);
+
+//Module Expander
+recipes.addShaped(<galaxyspace:upgrades>,
+[[null, <galaxyspace:gs_basic:12>, null],
+ [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
+ [<ore:plateCobalt>, <gregtech:meta_item_1:372>, <ore:plateCobalt>]]);
+
+//Module Energy
+recipes.addShaped(<galaxyspace:upgrades:3>,
+[[null, <galaxyspace:gs_basic:6>, null],
+ [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
+ [<ore:plateCobalt>, <gregtech:meta_item_1:372>, <ore:plateCobalt>]]);
 
 //High Duty Plates(4-6)
 //Tier 4
@@ -448,3 +478,4 @@ assembler.recipeBuilder()
   .duration(260)
   .EUt(560)
   .buildAndRegister();
+

@@ -118,8 +118,10 @@ for item in RemoveItemRecipes{
 recipes.removeByRecipeName("enderio:tweak_stick_from_wood");
 recipes.removeByRecipeName("enderio:compatibility_glass_pane");
 recipes.removeByRecipeName("enderio:compatibility_glass_2_glass");
-
 recipes.removeByRecipeName("enderio:slabcobblestone_to_cobblestone");
+
+//Black Paper
+recipes.addShapeless(<enderio:item_material:77>*2, [<ore:paper>, <ore:dyeBlack>, <ore:dyeBlack>]);
 
 //Добавление рецептов
 //Xyeta Wrench
