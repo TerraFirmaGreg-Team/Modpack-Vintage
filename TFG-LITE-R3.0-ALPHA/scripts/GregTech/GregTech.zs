@@ -57,6 +57,7 @@ recipes.addShaped("tfg_coke_oven_controller", <gregtech:machine:1016>,
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
 
 //Исправление рецепта на бумагу
+recipes.removeByRecipeName("paper");
 //Крафт бумажной пыли
 recipes.addShaped("tfg_sugarcane_to_chad", <ore:dustPaper>.firstItem * 2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],

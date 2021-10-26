@@ -25,6 +25,9 @@ for item in RockSedimentary {
 }
 
 // --- Deleting OreDictionary
+//GregTech Ingots =/= TFC Ingots
+//<ore:ingotCopper>.remove(<gregtech:meta_ingot:25>);
+
 //Bronze Forestry
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
 //Tin Forestry
