@@ -1,0 +1,16 @@
+{
+	x: -0.5d,
+	y: -7.5d,
+	dependencies: [
+		"badc22e0",
+		"6bc19867"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "9b237cf5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2517"
+		}]
+	}]
+}

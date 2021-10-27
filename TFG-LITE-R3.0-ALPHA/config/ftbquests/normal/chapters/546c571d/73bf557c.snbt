@@ -1,6 +1,7 @@
 {
 	x: -7.5d,
 	y: 10.5d,
+	shape: "circle",
 	dependencies: [
 		"bd171a6e"
 	],
@@ -8,7 +9,18 @@
 		uid: "0ff4c1e2",
 		type: "item",
 		items: [{
-			item: "gregtech:ore_aluminium_0"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreAluminium"
+				}
+			}
 		}],
 		ignore_damage: true
 	}]

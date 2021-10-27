@@ -1,11 +1,14 @@
 {
-	x: 0.0d,
-	y: 0.0d,
+	x: -10.0d,
+	y: -7.0d,
+	dependencies: [
+		"50508181"
+	],
 	tasks: [{
 		uid: "105367dc",
 		type: "item",
 		items: [{
-			item: "minecraft:stone"
+			item: "gregtech:machine_casing 1 2"
 		}]
 	}]
 }

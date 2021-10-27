@@ -1,6 +1,6 @@
 {
-	x: -9.0d,
-	y: -15.0d,
+	x: -0.5d,
+	y: -14.0d,
 	shape: "octagon",
 	description: "{tfg.quests.steam.steamtubine.subtitle}",
 	dependencies: [

@@ -1,0 +1,84 @@
+{
+	x: 1.5d,
+	y: 2.5d,
+	shape: "rsquare",
+	dependencies: [
+		"b64fc487",
+		"06ef5f26",
+		"263da04f",
+		"2c4e6850"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "78c70f1b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustChrome"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustChrome"
+				}
+			}
+		}]
+	},
+	{
+		uid: "757c5f3b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustIron"
+				}
+			}
+		}]
+	},
+	{
+		uid: "0e78e608",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustNickel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustNickel"
+				}
+			}
+		}]
+	},
+	{
+		uid: "d1c52532",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustManganese"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustManganese"
+				}
+			}
+		}]
+	}]
+}

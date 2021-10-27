@@ -1,7 +1,9 @@
 {
-	x: -1.0d,
+	x: 0.0d,
 	y: 8.5d,
+	shape: "diamond",
 	dependencies: [
+		"d26c1ab2",
 		"76c160aa"
 	],
 	dependency_requirement: "one_started",

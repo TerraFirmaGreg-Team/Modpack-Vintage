@@ -1,0 +1,48 @@
+{
+	x: -10.0d,
+	y: -0.5d,
+	shape: "diamond",
+	min_required_dependencies: 2,
+	dependencies: [
+		"31853edb",
+		"2d969cc1",
+		"5d67d1fc"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "371a7b0b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedChrome"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedChrome"
+				}
+			}
+		}]
+	},
+	{
+		uid: "c7e64010",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedNickel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedNickel"
+				}
+			}
+		}]
+	}]
+}

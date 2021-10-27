@@ -1,6 +1,7 @@
 {
 	x: -7.5d,
 	y: 8.5d,
+	shape: "circle",
 	dependencies: [
 		"bd171a6e"
 	],
@@ -8,7 +9,18 @@
 		uid: "051fe4f1",
 		type: "item",
 		items: [{
-			item: "gregtech:ore_sapphire_0"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreSapphire"
+				}
+			}
 		}],
 		ignore_damage: true
 	}]

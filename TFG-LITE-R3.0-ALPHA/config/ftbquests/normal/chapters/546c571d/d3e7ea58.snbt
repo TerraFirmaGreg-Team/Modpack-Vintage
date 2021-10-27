@@ -1,13 +1,13 @@
 {
-	x: 1.0d,
+	x: 0.0d,
 	y: 10.5d,
+	shape: "diamond",
 	dependencies: [
-		"586c15f9",
+		"efd88b40",
 		"d26c1ab2",
-		"7321cb96",
-		"f3bc6fab"
+		"275ed4e9"
 	],
-	dependency_requirement: "one_completed",
+	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "5990d9a9",
 		type: "item",

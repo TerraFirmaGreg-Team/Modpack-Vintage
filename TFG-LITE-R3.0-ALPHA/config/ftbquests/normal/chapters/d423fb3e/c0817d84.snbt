@@ -1,6 +1,6 @@
 {
-	x: 2.0d,
-	y: -3.0d,
+	x: -3.5d,
+	y: -6.5d,
 	description: "{tfg.quests.steam.platemold.subtitle}",
 	dependencies: [
 		"badc22e0"

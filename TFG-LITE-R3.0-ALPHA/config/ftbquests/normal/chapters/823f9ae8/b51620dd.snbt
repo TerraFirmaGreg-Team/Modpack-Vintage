@@ -11,7 +11,22 @@
 		uid: "92f4b7cf",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust_tiny 1 112"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 112s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}]
 	}]
 }

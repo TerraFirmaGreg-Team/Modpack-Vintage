@@ -1,6 +1,7 @@
 {
 	x: -4.0d,
-	y: 9.5d,
+	y: 8.5d,
+	shape: "diamond",
 	dependencies: [
 		"31853edb"
 	],
@@ -8,21 +9,54 @@
 		uid: "88cbda0e",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_crushed 1 2"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedAluminium"
+				}
+			}
 		}]
 	},
 	{
 		uid: "4a2f1802",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_crushed 1 281"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedGreenSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedGreenSapphire"
+				}
+			}
 		}]
 	},
 	{
 		uid: "9b88c872",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_crushed 1 314"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedSapphire"
+				}
+			}
 		}]
 	}]
 }

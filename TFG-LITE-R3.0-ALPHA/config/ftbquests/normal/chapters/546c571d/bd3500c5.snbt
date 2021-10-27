@@ -1,6 +1,7 @@
 {
 	x: 3.5d,
 	y: 7.5d,
+	shape: "square",
 	dependencies: [
 		"feac22dc"
 	],

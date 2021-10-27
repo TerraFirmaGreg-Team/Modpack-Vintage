@@ -1,0 +1,65 @@
+{
+	x: -5.5d,
+	y: -2.5d,
+	shape: "rsquare",
+	min_required_dependencies: 2,
+	dependencies: [
+		"31853edb",
+		"5d67d1fc",
+		"2d969cc1"
+	],
+	tasks: [{
+		uid: "bbb1c99b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTantalite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTantalite"
+				}
+			}
+		}]
+	},
+	{
+		uid: "35954072",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustPyrolusite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustPyrolusite"
+				}
+			}
+		}]
+	},
+	{
+		uid: "a6db2bff",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustSpessartine"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSpessartine"
+				}
+			}
+		}]
+	}]
+}

@@ -2,7 +2,8 @@
 	x: 11.0d,
 	y: 10.5d,
 	dependencies: [
-		"a108a3f6"
+		"a108a3f6",
+		"0e63b2d9"
 	],
 	tasks: [{
 		uid: "46317693",
@@ -15,7 +16,7 @@
 		uid: "e396813f",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 1656"
+			item: "gregtech:machine 1 1654"
 		}]
 	},
 	{

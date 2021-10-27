@@ -1,6 +1,6 @@
 {
-	x: 0.5d,
-	y: -1.0d,
+	x: -7.0d,
+	y: -5.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeingot.subtitle}",
 	dependencies: [
@@ -23,7 +23,6 @@
 					data: "ingotBronze"
 				}
 			}
-		}],
-		count: 64L
+		}]
 	}]
 }

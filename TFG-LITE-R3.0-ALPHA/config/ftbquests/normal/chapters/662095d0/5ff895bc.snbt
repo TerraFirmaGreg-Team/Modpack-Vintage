@@ -1,0 +1,44 @@
+{
+	x: -5.5d,
+	y: 2.5d,
+	shape: "diamond",
+	dependencies: [
+		"c70cc5c4"
+	],
+	tasks: [{
+		uid: "1644e733",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedCentrifugedChrome"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedCentrifugedChrome"
+				}
+			}
+		}]
+	},
+	{
+		uid: "fad4ae39",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crushedCentrifugedNickel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "crushedCentrifugedNickel"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -10.0d,
+	y: -2.5d,
+	description: "2x",
+	text: [
+		"Processing is faster and lower in energy usage, but does not double ores or produce byproducts. Obtaining byproducts with a Macerator requieres at least HV (Universal Macerator)"
+	],
+	dependencies: [
+		"bea5176c"
+	],
+	tasks: [{
+		uid: "ec81790f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 66"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	icon: "gregtech:machine 1 501",
+	x: -9.5d,
+	y: 2.5d,
+	description: "Tiny Pile",
+	dependencies: [
+		"bf4aede8"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "40447db7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 501"
+		}]
+	}]
+}

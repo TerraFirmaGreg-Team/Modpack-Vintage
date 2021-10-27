@@ -7,6 +7,8 @@
 		"a6716e45",
 		"9265c4ca"
 	],
+	dependency_requirement: "all_started",
+	min_width: 3,
 	tasks: [{
 		uid: "43eac646",
 		type: "item",

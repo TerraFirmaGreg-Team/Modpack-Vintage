@@ -1,0 +1,17 @@
+{
+	x: -7.5d,
+	y: 2.5d,
+	description: "Tiny Pile",
+	dependencies: [
+		"bf4aede8",
+		"b151aab2"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "279f8560",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 606"
+		}]
+	}]
+}

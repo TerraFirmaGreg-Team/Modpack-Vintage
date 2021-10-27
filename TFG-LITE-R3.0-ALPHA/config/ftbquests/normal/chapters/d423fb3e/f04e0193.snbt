@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.steam.basiccircuit.title}",
-	x: -9.0d,
-	y: -10.5d,
+	x: -0.5d,
+	y: -10.0d,
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
 	dependencies: [
-		"b5f798b3"
+		"3c27da2d"
 	],
 	hide: true,
 	tasks: [{

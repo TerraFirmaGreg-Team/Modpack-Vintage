@@ -39,98 +39,16 @@
 		uid: "58c9e19f",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10095"
-		},
-		{
-			item: "gregtech:meta_item_1 1 10229"
-		},
-		{
-			item: "gregtech:meta_item_1 1 10230"
-		},
-		{
-			id: "tfc:metal/ingot/bismuth_bronze",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBronze"
 				}
-			}
-		},
-		{
-			id: "tfc:metal/ingot/black_bronze",
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "tfc:metal/ingot/bronze",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "ingotBronze"
 				}
 			}
 		}]
