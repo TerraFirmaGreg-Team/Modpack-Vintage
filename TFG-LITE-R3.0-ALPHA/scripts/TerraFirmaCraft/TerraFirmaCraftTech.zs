@@ -25,53 +25,9 @@ WireDrawing.addRecipe("tfctech:wire_platinum", <tfctech:metal/platinum_wire:1>, 
 WireDrawing.removeRecipe(<tfctech:metal/black_steel_wire>);
 WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <ore:wireGtSingleBlackSteel>.firstItem, 0xFF292929);
 
-//Фикс палок из TFC-Tech
-Anvil.removeRecipe(<tfctech:metal/brass_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bismuth_bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/black_bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/copper_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/gold_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/lead_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/rose_gold_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/silver_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/tin_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/sterling_silver_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/wrought_iron_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/pig_iron_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/black_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/blue_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/red_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/nickel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bismuth_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/platinum_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/zinc_long_rod>);
-Anvil.addRecipe("tfctech:long_rod_brass", <ore:ingotBrass>, <gregtech:meta_stick_long:259>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_bronze", <ore:ingotBronze>, <gregtech:meta_stick_long:260>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_copper", <ore:ingotCopper>, <gregtech:meta_stick_long:25>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_gold", <ore:ingotGold>, <gregtech:meta_stick_long:41>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_lead", <ore:ingotLead>, <gregtech:meta_stick_long:55>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_rose_gold", <ore:ingotRoseGold>, <gregtech:meta_stick_long:301>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_silver", <ore:ingotSilver>, <gregtech:meta_stick_long:100>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_tin", <ore:ingotTin>, <gregtech:meta_stick_long:112>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_bismuth_bronze", <ore:ingotBismuthBronze>, <gregtech:meta_stick_long:303>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_black_bronze", <ore:ingotBlackBronze>, <gregtech:meta_stick_long:302>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_steel", <ore:ingotSteel>, <gregtech:meta_stick_long:324>, 4, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_pig_iron", <ore:ingotPigIron>, <gregtech:meta_stick_long:299>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_wrought_iron", <ore:ingotWroughtIron>, <gregtech:meta_stick_long:335>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_sterling_silver", <ore:ingotSterlingSilver>, <gregtech:meta_stick_long:300>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_red_steel", <ore:ingotRedSteel>, <gregtech:meta_stick_long:2510>, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_blue_steel", <ore:ingotBlueSteel>, <gregtech:meta_stick_long:2511>, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_black_steel", <ore:ingotBlackSteel>, <gregtech:meta_stick_long:2011>, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_platinum", <ore:ingotPlatinum>, <gregtech:meta_stick_long:80>, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_nickel", <ore:ingotNickel>, <gregtech:meta_stick_long:69>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_bismuth", <ore:ingotBismuth>, <gregtech:meta_stick_long:11>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfctech:long_rod_zinc", <ore:ingotZinc>, <gregtech:meta_stick_long:122>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-
 //Баффнутый крафт поташа
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
-recipes.addShapeless(<ore:dustPotash>.firstItem * 4, [<tfctech:pot_potash>]);
+recipes.addShapeless(<ore:dustRegularPotash>.firstItem * 4, [<tfctech:pot_potash>]);
 //Фикс крафта поташа(резервуар остается)
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
 recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
