@@ -29,37 +29,45 @@ ItemRegistry.registerItemMetal(<gregtech:meta_stick:209>, "WROUGHT_IRON", 50, tr
 ItemRegistry.registerItemMetal(<gregtech:meta_stick:198>, "STEEL", 50, true);
 
 //Регистрация металлов для пластин GregTech
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:133>, "BRASS", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:134>, "BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:11>, "BISMUTH", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:259>, "BRASS", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:260>, "BRONZE", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:25>, "COPPER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:41>, "GOLD", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:55>, "LEAD", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:69>, "NICKEL", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:302>, "ROSE_GOLD", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:301>, "ROSE_GOLD", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:100>, "SILVER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:112>, "TIN", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:304>, "BISMUTH_BRONZE", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:303>, "BLACK_BRONZE", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:198>, "STEEL", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:173>, "PIG_IRON", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:209>, "WROUGHT_IRON", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:301>, "STERLING_SILVER", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:303>, "BISMUTH_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:302>, "BLACK_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:324>, "STEEL", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:299>, "PIG_IRON", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:335>, "WROUGHT_IRON", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:300>, "STERLING_SILVER", 200, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate:122>, "ZINC", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:306>, "RED_STEEL", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:307>, "BLUE_STEEL", 200, true);
-ItemRegistry.registerItemMetal(<gregtech:meta_plate:305>, "BLACK_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:2510>, "RED_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:2511>, "BLUE_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate:2011>, "BLACK_STEEL", 200, true);
 
 //Регистрация металлов для двойных пластин GregTech
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:11>, "BISMUTH", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:259>, "BRASS", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:260>, "BRONZE", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:25>, "COPPER", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:41>, "GOLD", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:55>, "LEAD", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:69>, "NICKEL", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:301>, "ROSE_GOLD", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:100>, "SILVER", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:112>, "TIN", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:303>, "BISMUTH_BRONZE", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:302>, "BLACK_BRONZE", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:324>, "STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:299>, "PIG_IRON", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:335>, "WROUGHT_IRON", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:300>, "STERLING_SILVER", 400, true);
+ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:122>, "ZINC", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2510>, "RED_STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2511>, "BLUE_STEEL", 400, true);
 ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2011>, "BLACK_STEEL", 400, true);

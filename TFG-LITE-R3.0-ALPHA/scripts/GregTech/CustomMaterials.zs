@@ -5,15 +5,13 @@ import mods.gregtech.material.Material;
 //Colored Colors
 <material:salt_water>.setMaterialRGB(0x1F5099);
 
-//Magnesium Gen Plates
+//Custom
 <material:magnesium>.addFlags("generate_plate");
-
 <material:copper>.addFlags("generate_long_rod");
-
-//Long Rods
-<material:zinc>.addFlags("generate_long_rod");
-<material:nickel>.addFlags("generate_long_rod");
-<material:bismuth>.addFlags("generate_long_rod", "generate_plate");
+<material:pig_iron>.addFlags("generate_gear");
+<material:zinc>.addFlags("generate_long_rod", "generate_gear");
+<material:nickel>.addFlags("generate_long_rod", "generate_gear");
+<material:bismuth>.addFlags("generate_long_rod", "generate_plate", "generate_gear");
 <material:platinum>.addFlags("generate_long_rod");
 
 /*

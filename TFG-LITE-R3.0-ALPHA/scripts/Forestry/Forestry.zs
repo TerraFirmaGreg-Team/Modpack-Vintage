@@ -250,151 +250,151 @@ Carpenter.addRecipe(<forestry:apiary>,
 Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 3}),
 [[null, null, null],
  [<ore:plateCopper>, <ore:brickStone>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block --- Nether Bricks
 Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 6}),
 [[null, null, null],
  [<ore:plateCopper>, <minecraft:nether_brick>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block --- Quartz Block
 Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 8}),
 [[null, null, null],
  [<ore:plateCopper>, <ore:blockNetherQuartz>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block --- Chiseled Quartz Block
 Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 9}),
 [[null, null, null],
  [<ore:plateCopper>, <minecraft:quartz_block:1>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block --- Pillar Quartz Block
 Carpenter.addRecipe(<forestry:ffarm>.withTag({FarmBlock: 10}),
 [[null, null, null],
  [<ore:plateCopper>, <minecraft:quartz_block:2>, <ore:plateCopper>],
- [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 2 --- Bricks
 Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 3}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
- [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:pipeSmallFluidSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 2 --- Nether Bricks
 Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 6}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
- [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:pipeSmallFluidSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 2 --- Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 8}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
- [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:pipeSmallFluidSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 2 --- Chiseled Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 9}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
- [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:pipeSmalFluidlSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 2 --- Pillar Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:2>.withTag({FarmBlock: 10}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
- [<ore:gearIron>, <ore:pipeSmallSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:pipeSmallFluidSteel>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 3 --- Bricks
 Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 3}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
- [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 3 --- Nether Bricks
 Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 6}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
- [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 3 --- Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 8}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
- [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 3 --- Chiseled Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 9}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
- [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 3 --- Pillar Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:3>.withTag({FarmBlock: 10}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
- [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:gearIron>, <ore:trapdoorWood>, <ore:gearIron>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 4 --- Bricks
 Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 3}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
- [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 4 --- Nether Bricks
 Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 6}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
- [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 4 --- Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 8}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
- [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 4 --- Chiseled Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 9}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
- [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 4 --- Pillar Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:4>.withTag({FarmBlock: 10}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
- [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:blockGlass>, <ore:gearIron>, <ore:blockGlass>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 5 --- Bricks
 Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 3}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 3}), null],
- [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 5 --- Nether Bricks
 Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 6}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 6}), null],
- [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 5 --- Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 8}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 8}), null],
- [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 5 --- Chiseled Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 9}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 9}), null],
- [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Farm Block 5 --- Pillar Quartz Block
 Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 10}),
 [[null, null, null],
  [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
- [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <gregtech:meta_item_1:312>);
+ [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
 // --- Genetics Processor
 circuit_assembler.recipeBuilder()
