@@ -29,3 +29,17 @@ config/fantasticlib/reference/potions.txt
 config/fantasticlib/reference/recipes.txt
 config/fantasticlib/reference/sounds.txt
 config/customloadingscreen_timings.nbt
+TFG-LITE-R3.0-ALPHA/config/AppliedEnergistics2/CustomRecipes.cfg
+TFG-LITE-R3.0-ALPHA/config/AppliedEnergistics2/items.csv
+TFG-LITE-R3.0-ALPHA/config/chiselsandbits.cfg
+TFG-LITE-R3.0-ALPHA/config/customloadingscreen_timings.nbt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/blocks.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/blockstates.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/enchantments.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/items.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/entities.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/oredict.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/potion_types.txt
+TFG-LITE-R3.0-ALPHA/config/fantasticlib/reference/recipes.txt
+TFG-LITE-R3.0-ALPHA/config/jei/worldSettings.cfg
+TFG-LITE-R3.0-ALPHA/config/splash.properties

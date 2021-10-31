@@ -24,30 +24,29 @@ for item in RockSedimentary {
 	<ore:RockSedimentary>.add(item);
 }
 
-// --- Deleting OreDictionary
-//TFC-Gears
-<ore:gearBismuth>.remove(<tfctech:metal/bismuth_gear>);
-<ore:gearBismuthBronze>.remove(<tfctech:metal/bismuth_bronze_gear>);
-<ore:gearBlackBronze>.remove(<tfctech:metal/black_bronze_gear>);
-<ore:gearBrass>.remove(<tfctech:metal/brass_gear>);
-<ore:gearBronze>.remove(<tfctech:metal/bronze_gear>);
-<ore:gearCopper>.remove(<tfctech:metal/copper_gear>);
-<ore:gearGold>.remove(<tfctech:metal/gold_gear>);
-<ore:gearLead>.remove(<tfctech:metal/lead_gear>);
-<ore:gearNickel>.remove(<tfctech:metal/nickel_gear>);
-<ore:gearRoseGold>.remove(<tfctech:metal/rose_gold_gear>);
-<ore:gearSilver>.remove(<tfctech:metal/silver_gear>);
-<ore:gearTin>.remove(<tfctech:metal/tin_gear>);
-<ore:gearZinc>.remove(<tfctech:metal/zinc_gear>);
-<ore:gearSterlingSilver>.remove(<tfctech:metal/sterling_silver_gear>);
-<ore:gearWroughtIron>.remove(<tfctech:metal/wrought_iron_gear>);
-<ore:gearPigIron>.remove(<tfctech:metal/pig_iron_gear>);
-<ore:gearSteel>.remove(<tfctech:metal/steel_gear>);
-<ore:gearPlatinum>.remove(<tfctech:metal/platinum_gear>);
-<ore:gearBlackSteel>.remove(<tfctech:metal/black_steel_gear>);
-<ore:gearBlueSteel>.remove(<tfctech:metal/blue_steel_gear>);
-<ore:gearRedSteel>.remove(<tfctech:metal/red_steel_gear>);
+//TFC-Sheets = GT-Plates
+//Single
+<ore:sheetCopper>.addAll(<ore:plateCopper>);
+<ore:sheetBismuthBronze>.addAll(<ore:plateBismuthBronze>);
+<ore:sheetBronze>.addAll(<ore:plateBronze>);
+<ore:sheetBlackBronze>.addAll(<ore:plateBlackBronze>);
+<ore:sheetWroughtIron>.addAll(<ore:plateWroughtIron>);
+<ore:sheetSteel>.addAll(<ore:plateSteel>);
+<ore:sheetBlackSteel>.addAll(<ore:plateBlackSteel>);
+<ore:sheetBlueSteel>.addAll(<ore:plateBlueSteel>);
+<ore:sheetRedSteel>.addAll(<ore:plateRedSteel>);
+//Double
+<ore:sheetDoubleCopper>.addAll(<ore:plateDoubleCopper>);
+<ore:sheetDoubleBismuthBronze>.addAll(<ore:plateDoubleBismuthBronze>);
+<ore:sheetDoubleBronze>.addAll(<ore:plateDoubleBronze>);
+<ore:sheetDoubleBlackBronze>.addAll(<ore:plateDoubleBlackBronze>);
+<ore:sheetDoubleWroughtIron>.addAll(<ore:plateDoubleWroughtIron>);
+<ore:sheetDoubleSteel>.addAll(<ore:plateDoubleSteel>);
+<ore:sheetDoubleBlackSteel>.addAll(<ore:plateDoubleBlackSteel>);
+<ore:sheetDoubleBlueSteel>.addAll(<ore:plateDoubleBlueSteel>);
+<ore:sheetDoubleRedSteel>.addAll(<ore:plateDoubleRedSteel>);
 
+// --- Deleting OreDictionary
 //Bronze Forestry
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
 //Tin Forestry

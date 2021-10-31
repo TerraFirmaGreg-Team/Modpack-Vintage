@@ -311,7 +311,7 @@ Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <gregtech:met
 Quern.addRecipe("GTOreToTFC_Kaolinite", <gregtech:ore_kaolinite_0>, <gregtech:meta_dust_small:391> * 3);
 Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <gregtech:meta_dust_small:341> * 3);
 
-//Добавление рецептов печи для еды TFC
+// --- Furnace recipes for TFC items
 //Хавка
 furnace.addRecipe(<tfc:food/cooked_beef>, <tfc:food/beef>);
 furnace.addRecipe(<tfc:food/cooked_pork>, <tfc:food/pork>);

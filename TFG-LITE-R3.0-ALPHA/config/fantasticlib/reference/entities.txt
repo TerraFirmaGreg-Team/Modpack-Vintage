@@ -138,8 +138,8 @@ tfcflorae:fruit_boat
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
-enderio:owl_egg
 enderio:primed_charge
+enderio:owl_egg
 enderio:falling_machine
 astikorcarts:cargocart
 astikorcarts:plowcart
@@ -178,9 +178,9 @@ galacticraftplanets:juicer
 galacticraftplanets:spider_queen
 galacticraftplanets:entry_pod_venus
 galacticraftplanets:web_shot
+forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
-forestry:butterflyge
 galacticraftcore:evolved_boss_blaze
 galacticraftcore:evolved_coldblaze
 galacticraftcore:evolved_boss_ghast

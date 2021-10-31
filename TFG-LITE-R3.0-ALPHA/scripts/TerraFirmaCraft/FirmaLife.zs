@@ -1,6 +1,9 @@
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Barrel;
 
+// --- Furnace recipes for TFC items
+furnace.addRecipe(<firmalife:unfired_mallet_mold>, <firmalife:mallet_mold>);
+
 //Климатическая станция уровня 0
 recipes.remove(<firmalife:climate_station>);
 recipes.addShaped(<firmalife:climate_station>,

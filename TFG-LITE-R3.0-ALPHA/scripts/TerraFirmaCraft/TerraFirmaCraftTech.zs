@@ -3,6 +3,12 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Anvil;
 
+// --- Furnace recipes for TFC items
+furnace.addRecipe(<tfctech:ceramics/unfired/sleeve>, <tfctech:ceramics/mold/sleeve>);
+furnace.addRecipe(<tfctech:ceramics/unfired/rackwheel_piece>, <tfctech:ceramics/mold/rackwheel_piece>);
+furnace.addRecipe(<tfctech:ceramics/unfired/glass_block>, <tfctech:ceramics/mold/glass_block>);
+furnace.addRecipe(<tfctech:ceramics/unfired/glass_pane>, <tfctech:ceramics/mold/glass_pane>);
+
 //Провода для примитивной эры
 WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
 WireDrawing.addRecipe("tfctech:wire_copper", <tfctech:metal/copper_wire:1>, 3, <ore:wireGtSingleCopper>.firstItem, 0xFFA6B525);
