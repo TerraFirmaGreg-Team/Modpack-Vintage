@@ -70,6 +70,7 @@ galaxyspace:spacemidplains
 galaxyspace:spacelowhills
 galaxyspace:spacemidhills
 asmodeuscore:-=|worldengine|=-
+asmodeuscore:-=|worldengine 2|=-
 tfc:ocean
 tfc:river
 tfc:beach
