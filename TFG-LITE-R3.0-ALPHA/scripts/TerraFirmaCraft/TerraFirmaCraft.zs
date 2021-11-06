@@ -393,22 +393,6 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:green
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete:14>).duration(15).EUt(8).buildAndRegister();
 chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete:15>).duration(15).EUt(8).buildAndRegister();
 
-//Фикс блоков из ценных штук
-/*
-compressor.findRecipe(2, [<tfc:gem/ruby:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/topaz:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/sapphire:2>*9], null).remove();
-compressor.findRecipe(2, [<minecraft:diamond>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/opal:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/amethyst:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:ore/lapis_lazuli>*9], null).remove();
-compressor.recipeBuilder().inputs(<ore:gemRuby>*9).outputs(<gregtech:meta_block_compressed_9:10>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemTopaz>*9).outputs(<gregtech:meta_block_compressed_11:14>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemSapphire>*9).outputs(<gregtech:meta_block_compressed_9:13>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemOpal>*9).outputs(<gregtech:meta_block_compressed_13:5>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemAmethyst>*9).outputs(<gregtech:meta_block_compressed_13:6>).duration(40).EUt(2).buildAndRegister();
-*/
-
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
 recipes.addShaped(<gregtech:machine:13>, 
@@ -502,9 +486,6 @@ recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withE
 //Флюс использует крафт с помощью GT молота
 recipes.removeByRecipeName("tfc:flux");
 recipes.addShapeless (<tfc:powder/flux>*2, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:rockFlux>]);
-
-//Hot water --> Dist
-Barrel.addRecipe("tfc:freshwatertodistwater", <tfc:crop/product/jute_net>, <liquid:fresh_water>*4000, <tfc:crop/product/dirty_jute_net>, <liquid:distilled_water>*3600, 4);
 
 //Отключение крафтов всех геологических TFC
 Anvil.removeRecipe(<tfc:metal/propick_head/red_steel>);

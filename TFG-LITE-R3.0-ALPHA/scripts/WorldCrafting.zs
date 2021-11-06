@@ -3,22 +3,22 @@ import mods.inworldcrafting.FluidToItem;
 //Чистая вода
 //Вариации меди
 FluidToItem.transform(<ore:dustSmallCopper>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCopper>]);
-FluidToItem.transform(<ore:dustSmallBornite>.forstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBornite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallTetrahedrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTetrahedrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallCuprite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCuprite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallTenorite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTenorite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallChalcopyrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureChalcopyrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallChalcocite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureChalcocite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallMalachite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMalachite>.firstITem]);
-FluidToItem.transform(<ore:dustSmallEnargite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureEnargite>.firstItem]);
+FluidToItem.transform(<ore:dustSmallBornite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBornite>]);
+FluidToItem.transform(<ore:dustSmallTetrahedrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTetrahedrite>]);
+FluidToItem.transform(<ore:dustSmallCuprite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCuprite>]);
+FluidToItem.transform(<ore:dustSmallTenorite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTenorite>]);
+FluidToItem.transform(<ore:dustSmallChalcopyrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureChalcopyrite>]);
+FluidToItem.transform(<ore:dustSmallChalcocite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureChalcocite>]);
+FluidToItem.transform(<ore:dustSmallMalachite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMalachite>]);
+FluidToItem.transform(<ore:dustSmallEnargite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureEnargite>]);
 //Вариации Олова
-FluidToItem.transform(<ore:dustSmallTin>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTin>.firstItem]);
-FluidToItem.transform(<ore:dustSmallCassiterite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCassiterite>.firstITem]);
-FluidToItem.transform(<ore:dustSmallCassiteriteSand>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCassiteriteSand>.firstITem]);
+FluidToItem.transform(<ore:dustSmallTin>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureTin>]);
+FluidToItem.transform(<ore:dustSmallCassiterite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCassiterite>]);
+FluidToItem.transform(<ore:dustSmallCassiteriteSand>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCassiteriteSand>]);
 //Вариации Железа
-FluidToItem.transform(<ore:dustSmallIron>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureIron>.firstItem]);
-FluidToItem.transform(<ore:dustSmallPyrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpurePyrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallMagnetite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMagnetite>.firstItem]);
+FluidToItem.transform(<ore:dustSmallIron>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureIron>]);
+FluidToItem.transform(<ore:dustSmallPyrite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpurePyrite>]);
+FluidToItem.transform(<ore:dustSmallMagnetite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMagnetite>]);
 FluidToItem.transform(<ore:dustSmallBrownLimonite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBrownLimonite>]);
 FluidToItem.transform(<ore:dustSmallYellowLimonite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureYellowLimonite>]);
 FluidToItem.transform(<ore:dustSmallBandedIron>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBandedIron>]);
@@ -49,22 +49,22 @@ FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:fresh_water>,
 //Соленая вода
 //Вариации меди
 FluidToItem.transform(<ore:dustSmallCopper>.firstItem * 2, <liquid:water>, [<ore:dustImpureCopper>]);
-FluidToItem.transform(<ore:dustSmallBornite>.forstItem * 2, <liquid:water>, [<ore:dustImpureBornite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallTetrahedrite>.firstItem * 2, <liquid:water>, [<ore:dustImpureTetrahedrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallCuprite>.firstItem * 2, <liquid:water>, [<ore:dustImpureCuprite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallTenorite>.firstItem * 2, <liquid:water>, [<ore:dustImpureTenorite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallChalcopyrite>.firstItem * 2, <liquid:water>, [<ore:dustImpureChalcopyrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallChalcocite>.firstItem * 2, <liquid:water>, [<ore:dustImpureChalcocite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallMalachite>.firstItem * 2, <liquid:water>, [<ore:dustImpureMalachite>.firstITem]);
-FluidToItem.transform(<ore:dustSmallEnargite>.firstItem * 2, <liquid:water>, [<ore:dustImpureEnargite>.firstItem]);
+FluidToItem.transform(<ore:dustSmallBornite>.firstItem * 2, <liquid:water>, [<ore:dustImpureBornite>]);
+FluidToItem.transform(<ore:dustSmallTetrahedrite>.firstItem * 2, <liquid:water>, [<ore:dustImpureTetrahedrite>]);
+FluidToItem.transform(<ore:dustSmallCuprite>.firstItem * 2, <liquid:water>, [<ore:dustImpureCuprite>]);
+FluidToItem.transform(<ore:dustSmallTenorite>.firstItem * 2, <liquid:water>, [<ore:dustImpureTenorite>]);
+FluidToItem.transform(<ore:dustSmallChalcopyrite>.firstItem * 2, <liquid:water>, [<ore:dustImpureChalcopyrite>]);
+FluidToItem.transform(<ore:dustSmallChalcocite>.firstItem * 2, <liquid:water>, [<ore:dustImpureChalcocite>]);
+FluidToItem.transform(<ore:dustSmallMalachite>.firstItem * 2, <liquid:water>, [<ore:dustImpureMalachite>]);
+FluidToItem.transform(<ore:dustSmallEnargite>.firstItem * 2, <liquid:water>, [<ore:dustImpureEnargite>]);
 //Вариации Олова
-FluidToItem.transform(<ore:dustSmallTin>.firstItem * 2, <liquid:water>, [<ore:dustImpureTin>.firstItem]);
-FluidToItem.transform(<ore:dustSmallCassiterite>.firstItem * 2, <liquid:water>, [<ore:dustImpureCassiterite>.firstITem]);
-FluidToItem.transform(<ore:dustSmallCassiteriteSand>.firstItem * 2, <liquid:water>, [<ore:dustImpureCassiteriteSand>.firstITem]);
+FluidToItem.transform(<ore:dustSmallTin>.firstItem * 2, <liquid:water>, [<ore:dustImpureTin>]);
+FluidToItem.transform(<ore:dustSmallCassiterite>.firstItem * 2, <liquid:water>, [<ore:dustImpureCassiterite>]);
+FluidToItem.transform(<ore:dustSmallCassiteriteSand>.firstItem * 2, <liquid:water>, [<ore:dustImpureCassiteriteSand>]);
 //Вариации Железа
-FluidToItem.transform(<ore:dustSmallIron>.firstItem * 2, <liquid:water>, [<ore:dustImpureIron>.firstItem]);
-FluidToItem.transform(<ore:dustSmallPyrite>.firstItem * 2, <liquid:water>, [<ore:dustImpurePyrite>.firstItem]);
-FluidToItem.transform(<ore:dustSmallMagnetite>.firstItem * 2, <liquid:water>, [<ore:dustImpureMagnetite>.firstItem]);
+FluidToItem.transform(<ore:dustSmallIron>.firstItem * 2, <liquid:water>, [<ore:dustImpureIron>]);
+FluidToItem.transform(<ore:dustSmallPyrite>.firstItem * 2, <liquid:water>, [<ore:dustImpurePyrite>]);
+FluidToItem.transform(<ore:dustSmallMagnetite>.firstItem * 2, <liquid:water>, [<ore:dustImpureMagnetite>]);
 FluidToItem.transform(<ore:dustSmallBrownLimonite>.firstItem * 2, <liquid:water>, [<ore:dustImpureBrownLimonite>]);
 FluidToItem.transform(<ore:dustSmallYellowLimonite>.firstItem * 2, <liquid:water>, [<ore:dustImpureYellowLimonite>]);
 FluidToItem.transform(<ore:dustSmallBandedIron>.firstItem * 2, <liquid:water>, [<ore:dustImpureBandedIron>]);
@@ -79,18 +79,18 @@ FluidToItem.transform(<ore:dustSmallCobaltite>.firstItem * 2, <liquid:water>, [<
 FluidToItem.transform(<ore:dustSmallZinc>.firstItem * 2, <liquid:water>, [<ore:dustImpureZinc>]);
 FluidToItem.transform(<ore:dustSmallSphalerite>.firstItem * 2, <liquid:water>, [<ore:dustImpureSphalerite>]);
 //Вариации Свинца
-FluidToItem.transform(<ore:dustSmallLead> * 2, <liquid:water>, [<ore:dustImpureLead>]);
-FluidToItem.transform(<ore:dustSmallGalena> * 2, <liquid:water>, [<ore:dustImpureGalena>]);
+FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:water>, [<ore:dustImpureLead>]);
+FluidToItem.transform(<ore:dustSmallGalena>.firstItem * 2, <liquid:water>, [<ore:dustImpureGalena>]);
 //Вариации Золото
-FluidToItem.transform(<ore:dustSmallGold> * 2, <liquid:water>, [<ore:dustImpureGold>]);
+FluidToItem.transform(<ore:dustSmallGold>.firstItem * 2, <liquid:water>, [<ore:dustImpureGold>]);
 //Вариации Висмута
-FluidToItem.transform(<ore:dustSmallBismuth> * 2, <liquid:water>, [<ore:dustImpureBismuth>]);
+FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:water>, [<ore:dustImpureBismuth>]);
 //Каолинит
-FluidToItem.transform(<ore:dustSmallKaolinite> * 2, <liquid:water>, [<ore:dustImpureKaolinite>]);
+FluidToItem.transform(<ore:dustSmallKaolinite>.firstItem * 2, <liquid:water>, [<ore:dustImpureKaolinite>]);
 //Графит
-FluidToItem.transform(<ore:dustSmallGraphite> * 2, <liquid:water>, [<ore:dustImpureGraphite>]);
+FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:water>, [<ore:dustImpureGraphite>]);
 //Алмазы занерфленные
-FluidToItem.transform(<ore:dustTinyDiamond>*2, <liquid:water>, [<ore:dustImpureDiamond>]);
+FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:water>, [<ore:dustImpureDiamond>]);
 
 //При бросании цемента в воду получается бетон
 //Чистая вода
