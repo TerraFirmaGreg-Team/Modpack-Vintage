@@ -9,7 +9,6 @@ ItemRegistry.registerArmor(<minecraft:leather_leggings>, 3.0, 6.0, 4.5);
 ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
 
 // - Регистрация топлива
-
 ItemRegistry.registerFuel(<ore:fuelCoke>, 3200, 1450, true, true);
 ItemRegistry.registerFuel(<ore:gemCoal>, 1600, 1400, true, true);
 //ItemRegistry.registerFuel(<ore:gemLignite>, 1200, 1300, true, true);
@@ -74,7 +73,7 @@ ItemRegistry.registerItemMetal(<gregtech:meta_plate_double:2011>, "BLACK_STEEL",
 
 // --- Вариации Меди
 //Медь --- Грязная Кучка
-ItemRegistry.registerItemMetal(<gregtech:meta_dust_impure:25>, "COPPER", 80, true);
+ItemRegistry.registerItemMetal(<ore:dustImpureCopper>.firstItem, "COPPER", 80, true);
 //Медь --- Средняя Кучка
 ItemRegistry.registerItemMetal(<gregtech:meta_dust_small:25>, "COPPER", 25, true);
 //Медь --- Маленькая Кучка

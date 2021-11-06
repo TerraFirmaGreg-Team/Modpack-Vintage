@@ -54,6 +54,28 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/dust/blue_steel>,
 	<tfc:metal/dust/red_steel>,
 	<tfc:metal/dust/wrought_iron>,
+	//Ingot
+	<tfc:metal/ingot/bismuth>,
+	<tfc:metal/ingot/bismuth_bronze>,
+	<tfc:metal/ingot/black_bronze>,
+	<tfc:metal/ingot/brass>,
+	<tfc:metal/ingot/bronze>,
+	<tfc:metal/ingot/copper>,
+	<tfc:metal/ingot/gold>,
+	<tfc:metal/ingot/lead>,
+	<tfc:metal/ingot/nickel>,
+	<tfc:metal/ingot/rose_gold>,
+	<tfc:metal/ingot/silver>,
+	<tfc:metal/ingot/tin>,
+	<tfc:metal/ingot/zinc>,
+	<tfc:metal/ingot/sterling_silver>,
+	<tfc:metal/ingot/pig_iron>,
+	<tfc:metal/ingot/steel>,
+	<tfc:metal/ingot/platinum>,
+	<tfc:metal/ingot/black_steel>,
+	<tfc:metal/ingot/blue_steel>,
+	<tfc:metal/ingot/red_steel>,
+	<tfc:metal/ingot/wrought_iron>,
 	//Plate
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
@@ -462,26 +484,12 @@ extractor.recipeBuilder()
 //forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
 //forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 
-//Salt(Ocean water) --> Fresh water
-centrifuge.recipeBuilder()
-	.fluidInputs(<liquid:salt_water>*1000)
-	.chancedOutput(<ore:dustSalt>.firstItem, 2500, 2500)
-	.fluidOutputs(<liquid:fresh_water>*750)
-	.duration(100).EUt(10).buildAndRegister();
-
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
 electrolyzer.recipeBuilder()
 	.inputs(<ore:sand>*8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(25).buildAndRegister();
-
-//Дистилированная вода из горячей
-distillery.recipeBuilder()
-	.fluidInputs(<liquid:fresh_water>*576)
-	.notConsumable(<gregtech:meta_item_1:193>.withTag({Configuration: 0}))
-	.fluidOutputs(<liquid:distilled_water>*510)
-	.duration(240).EUt(30).buildAndRegister();
 
 //Кривые палки офаем
 Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);

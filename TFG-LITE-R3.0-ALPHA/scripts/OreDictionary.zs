@@ -3,48 +3,33 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-//1 - Rock Igneus Instrusive
-var RockII = [<tfc:raw/granite>,<tfc:raw/gabbro>,<tfc:raw/rhyolite>,<tfc:raw/diorite>, <tfc:raw/breccia>, <tfc:raw/porphyry>] as IItemStack[];
-for item in RockII {
-	<ore:RockII>.add(item);
-}
-//2 - Rock Igneus Extrusive
-var RockIE = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>, <tfc:raw/peridotite>] as IItemStack[];
-for item in RockIE {
-	<ore:RockIE>.add(item);
-}
-//3 - Rock Metamorfic
-var RockMetamorpfic = [<tfc:raw/marble>, <tfc:raw/gneiss>, <tfc:raw/schist>, <tfc:raw/quartzite>, <tfc:raw/phyllite>, <tfc:raw/slate>, <tfc:raw/catlinite>, <tfc:raw/novaculite>, <tfc:raw/soapstone>, <tfc:raw/komatiite>] as IItemStack[];
-for item in RockMetamorpfic {
-	<ore:RockMetamorpfic>.add(item);
-}
-//4 - Rock Sedimentary
-var RockSedimentary = [<tfc:raw/shale>,<tfc:raw/dolomite>,<tfc:raw/conglomerate>,<tfc:raw/limestone>,<tfc:raw/rocksalt>,<tfc:raw/claystone>,<tfc:raw/chert>,<tfc:raw/chalk>, <tfc:raw/mudstone>, <tfc:raw/sandstone>, <tfc:raw/siltstone>] as IItemStack[];
-for item in RockSedimentary {
-	<ore:RockSedimentary>.add(item);
+/*             ///Сундуки из форестри в один oredictionary///               */
+var ForestryChestsArray = [
+<forestry:butterfly_chest>,
+<forestry:tree_chest>,
+<forestry:bee_chest>
+] as IItemStack[];
+var ForestryChests1 = <ore:ForestryChests>;
+for item in ForestryChestsArray {
+	ForestryChests1.add(item);
 }
 
-//TFC-Sheets = GT-Plates
-//Single
-<ore:sheetCopper>.addAll(<ore:plateCopper>);
-<ore:sheetBismuthBronze>.addAll(<ore:plateBismuthBronze>);
-<ore:sheetBronze>.addAll(<ore:plateBronze>);
-<ore:sheetBlackBronze>.addAll(<ore:plateBlackBronze>);
-<ore:sheetWroughtIron>.addAll(<ore:plateWroughtIron>);
-<ore:sheetSteel>.addAll(<ore:plateSteel>);
-<ore:sheetBlackSteel>.addAll(<ore:plateBlackSteel>);
-<ore:sheetBlueSteel>.addAll(<ore:plateBlueSteel>);
-<ore:sheetRedSteel>.addAll(<ore:plateRedSteel>);
-//Double
-<ore:sheetDoubleCopper>.addAll(<ore:plateDoubleCopper>);
-<ore:sheetDoubleBismuthBronze>.addAll(<ore:plateDoubleBismuthBronze>);
-<ore:sheetDoubleBronze>.addAll(<ore:plateDoubleBronze>);
-<ore:sheetDoubleBlackBronze>.addAll(<ore:plateDoubleBlackBronze>);
-<ore:sheetDoubleWroughtIron>.addAll(<ore:plateDoubleWroughtIron>);
-<ore:sheetDoubleSteel>.addAll(<ore:plateDoubleSteel>);
-<ore:sheetDoubleBlackSteel>.addAll(<ore:plateDoubleBlackSteel>);
-<ore:sheetDoubleBlueSteel>.addAll(<ore:plateDoubleBlueSteel>);
-<ore:sheetDoubleRedSteel>.addAll(<ore:plateDoubleRedSteel>);
+/*             ///Прополис из форестри в один oredictionary///               */
+var ForestryPropolisArray = [
+<forestry:propolis>,
+<forestry:propolis:1>,
+<forestry:propolis:3>
+] as IItemStack[];
+var ForestryPropolis1 = <ore:ForestryPropolis>;
+for item in ForestryPropolisArray {
+	ForestryPropolis1.add(item);
+}
+
+//Beeswax
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
+
+//<ore:dustSalt>.remove(<tfc:powder/salt>);
+//<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
 
 // --- Deleting OreDictionary
 //Bronze Forestry
@@ -63,8 +48,6 @@ for item in RockSedimentary {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block Forestry
 <ore:blockApatite>.remove(<forestry:resource_storage>);
-//Minecraft goldingot
-<ore:ingotGold>.remove(<minecraft:gold_ingot>);
 //Minecraft emerald
 <ore:gemEmerald>.remove(<minecraft:emerald>);
 //Minecraft diamond
@@ -122,105 +105,3 @@ for item in RockSedimentary {
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 //Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
-
-/*             ///Сундуки из форестри в один oredictionary///               */
-var ForestryChestsArray = [
-<forestry:butterfly_chest>,
-<forestry:tree_chest>,
-<forestry:bee_chest>
-] as IItemStack[];
-var ForestryChests1 = <ore:ForestryChests>;
-for item in ForestryChestsArray {
-	ForestryChests1.add(item);
-}
-
-/*             ///Прополис из форестри в один oredictionary///               */
-var ForestryPropolisArray = [
-<forestry:propolis>,
-<forestry:propolis:1>,
-<forestry:propolis:3>
-] as IItemStack[];
-var ForestryPropolis1 = <ore:ForestryPropolis>;
-for item in ForestryPropolisArray {
-	ForestryPropolis1.add(item);
-}
-
-/*             ///Кнопки деревянные из тфк в один oredictionary///               */
-var ButtonWood = [
-<tfc:wood/button/palm>,
-<tfc:wood/button/pine>,
-<tfc:wood/button/rosewood>,
-<tfc:wood/button/sequoia>,
-<tfc:wood/button/spruce>,
-<tfc:wood/button/sycamore>,
-<tfc:wood/button/white_cedar>,
-<tfc:wood/button/willow>,
-<tfc:wood/button/birch>,
-<tfc:wood/button/aspen>,
-<tfc:wood/button/ash>,
-<tfc:wood/button/hevea>,
-<tfc:wood/button/acacia>,
-<tfc:wood/button/maple>,
-<tfc:wood/button/oak>,
-<tfc:wood/button/kapok>,
-<tfc:wood/button/hickory>,
-<tfc:wood/button/douglas_fir>,
-<tfc:wood/button/chestnut>,
-<tfc:wood/button/blackwood>
-] as IItemStack[];
-var oreButtonWood = <ore:ButtonWood>;
-for item in ButtonWood {
-	oreButtonWood.add(item);
-}
-
-/*             ///Каменные копки из тфк в один oredictionary///               */
-var ButtonStone = [
-<tfc:stone/button/claystone>,
-<tfc:stone/button/rocksalt>,
-<tfc:stone/button/limestone>,
-<tfc:stone/button/conglomerate>,
-<tfc:stone/button/dolomite>,
-<tfc:stone/button/chert>,
-<tfc:stone/button/chalk>,
-<tfc:stone/button/diorite>,
-<tfc:stone/button/granite>,
-<tfc:stone/button/basalt>,
-<tfc:stone/button/andesite>,
-<tfc:stone/button/dacite>,
-<tfc:stone/button/quartzite>,
-<tfc:stone/button/slate>,
-<tfc:stone/button/schist>,
-<tfc:stone/button/phyllite>,
-<tfc:stone/button/gneiss>,
-<tfc:stone/button/marble>,
-<tfc:stone/button/gabbro>,
-<tfc:stone/button/shale>,
-<tfc:stone/button/rhyolite>
-] as IItemStack[];
-var oreButtonStone = <ore:ButtonStone>;
-for item in ButtonStone {
-	oreButtonStone.add(item);
-}
-
-//Beeswax
-<ore:itemBeeswax>.add(<firmalife:beeswax>);
-
-//Молоты TFC = Молоты GT
-<ore:hammer>.addAll(<ore:craftingToolHardHammer>);
-
-//Пилы TFC = Пилы GT
-<ore:saw>.addAll(<ore:craftingToolSaw>);
-
-//Ножи TFC = Ножи GT
-//<ore:knife>.addAll(<ore:craftingToolKnife>);
-//<ore:toolCuttingboard>.add(<gregtech:meta_tool:17>.withTag({}));
-
-//Фикc железка
-//<ore:plateWroughtIron>.remove(<gregtech:meta_item_1:12197>);
-//<ore:ingotWroughtIron>.remove(<gregtech:meta_item_1:10197>);
-//<ore:nuggetWroughtIron>.remove(<tfc:metal/nugget/wrought_iron>);
-//<ore:sheetDoubleWroughtIron>.remove(<tfc:metal/double_sheet/wrought_iron>);
-//<ore:sheetDoubleWroughtIron>.add(<gtadditions:ga_meta_item:1197>);
-
-<ore:dustSalt>.remove(<tfc:powder/salt>);
-<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
