@@ -137,7 +137,8 @@ recipes.remove(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "manga
 recipes.remove(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "iron"}}));
 
 //Добавление рецептов молотов GT(38)+1
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.5 as float, MaxDurability: 300}}), [<minecraft:stick>, <tfc:metal/hammer_head/copper>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.5 as float, MaxDurability: 120}}), [<minecraft:stick>, <ore:hammerHead>]);
+//recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "copper", DigSpeed: 0.5 as float, MaxDurability: 300}}), [<minecraft:stick>, <ore:toolHeadHammerCopper>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "neutronium"}}), [<minecraft:stick>, <ore:toolHeadHammerNeutronium>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsss", MaxDurability: 15000}}), [<minecraft:stick>, <ore:toolHeadHammerHsss>]);
 recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "hsse", MaxDurability: 19000}}), [<minecraft:stick>, <ore:toolHeadHammerHsse>]);

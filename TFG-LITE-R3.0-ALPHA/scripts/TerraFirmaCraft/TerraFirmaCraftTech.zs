@@ -4,10 +4,10 @@ import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Anvil;
 
 // --- Furnace recipes for TFC items
-furnace.addRecipe(<tfctech:ceramics/unfired/sleeve>, <tfctech:ceramics/mold/sleeve>);
-furnace.addRecipe(<tfctech:ceramics/unfired/rackwheel_piece>, <tfctech:ceramics/mold/rackwheel_piece>);
-furnace.addRecipe(<tfctech:ceramics/unfired/glass_block>, <tfctech:ceramics/mold/glass_block>);
-furnace.addRecipe(<tfctech:ceramics/unfired/glass_pane>, <tfctech:ceramics/mold/glass_pane>);
+furnace.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>);
+furnace.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>);
+furnace.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>);
+furnace.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>);
 
 //Провода для примитивной эры
 WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
@@ -89,11 +89,3 @@ recipes.addShaped(<tfctech:wire_draw_bench>,
 [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <tfctech:metal/iron_tongs>],
  [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
  [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>]]);
-
-//Оф мусор.
-ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/propick_head>);
-ClayKnapping.removeRecipe(<tfc:ceramics/unfired/mold/hammer_head>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/sleeve>);
-ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/rackwheel_piece>);
-Heating.removeRecipe(<tfctech:ceramics/mold/rackwheel_piece>);
-Heating.removeRecipe(<tfctech:ceramics/mold/sleeve>);
