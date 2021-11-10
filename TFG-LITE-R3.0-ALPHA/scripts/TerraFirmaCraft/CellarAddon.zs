@@ -1,19 +1,40 @@
+import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.Anvil;
 
-mods.jei.JEI.removeAndHide(<cellars:bronze_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:bismuth_bronze_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:black_bronze_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:wrought_iron_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:steel_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:black_steel_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:red_steel_ice_saw>);
-mods.jei.JEI.removeAndHide(<cellars:blue_steel_ice_saw>);
+//Удаление мусора
+val RemoveItemsFromJEI as IItemStack[] = [
+    <cellars:bronze_ice_saw>,
+    <cellars:bismuth_bronze_ice_saw>,
+    <cellars:black_bronze_ice_saw>,
+    <cellars:wrought_iron_ice_saw>,
+    <cellars:steel_ice_saw>,
+    <cellars:black_steel_ice_saw>,
+    <cellars:red_steel_ice_saw>,
+    <cellars:blue_steel_ice_saw>,
+    //
+    <cellars:bronze_ice_saw_head>,
+    <cellars:bismuth_bronze_ice_saw_head>,
+    <cellars:black_bronze_ice_saw_head>,
+    <cellars:wrought_iron_ice_saw_head>,
+    <cellars:steel_ice_saw_head>,
+    <cellars:black_steel_ice_saw_head>,
+    <cellars:red_steel_ice_saw_head>,
+    <cellars:blue_steel_ice_saw_head>
+] as IItemStack[];
+for item in RemoveItemsFromJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
 
-Anvil.removeRecipe(<cellars:bronze_ice_saw_head>);
-Anvil.removeRecipe(<cellars:bismuth_bronze_ice_saw_head>);
-Anvil.removeRecipe(<cellars:black_bronze_ice_saw_head>);
-Anvil.removeRecipe(<cellars:wrought_iron_ice_saw_head>);
-Anvil.removeRecipe(<cellars:steel_ice_saw_head>);
-Anvil.removeRecipe(<cellars:black_steel_ice_saw_head>);
-Anvil.removeRecipe(<cellars:red_steel_ice_saw_head>);
-Anvil.removeRecipe(<cellars:blue_steel_ice_saw_head>);
+val RemoveItemsFromAnvil as IItemStack[] = [
+    <cellars:bronze_ice_saw_head>,
+    <cellars:bismuth_bronze_ice_saw_head>,
+    <cellars:black_bronze_ice_saw_head>,
+    <cellars:wrought_iron_ice_saw_head>,
+    <cellars:steel_ice_saw_head>,
+    <cellars:black_steel_ice_saw_head>,
+    <cellars:red_steel_ice_saw_head>,
+    <cellars:blue_steel_ice_saw_head>
+] as IItemStack[];
+for item in RemoveItemsFromAnvil{
+    Anvil.removeRecipe(item);
+}

@@ -4,8 +4,10 @@
 	y: -9.0d,
 	description: "{tfg.quests.primitive.rockanvil.subtitle}",
 	dependencies: [
+		"9f1afc5f",
 		"9eea227d"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "05c38317",
 		type: "item",

@@ -7,21 +7,19 @@
 		"d1baef19"
 	],
 	tasks: [{
-		uid: "46c04371",
+		uid: "9672083c",
 		type: "item",
 		items: [{
-			item: "tfc:stone/hammer/igneous_intrusive"
-		},
-		{
-			item: "tfc:stone/hammer/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/hammer/sedimentary"
-		},
-		{
-			item: "tfc:stone/hammer/metamorphic"
+			id: "gregtech:meta_tool",
+			Damage: 6s,
+			tag: {
+				GT.ToolStats: {
+					MaxDurability: 120,
+					DigSpeed: 0.5f,
+					Material: "stone"
+				}
+			}
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}]
 }

@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.knifegt.title}",
-	x: -12.5d,
+	x: -17.5d,
 	y: 0.0d,
 	description: "{tfg.quests.primitive.knifegt.subtitle}",
 	dependencies: [

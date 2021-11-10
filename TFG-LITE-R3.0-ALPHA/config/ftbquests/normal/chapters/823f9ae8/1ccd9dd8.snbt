@@ -1,45 +1,24 @@
 {
 	title: "{tfg.quests.primitive.saw.title}",
-	x: -12.5d,
+	x: -17.5d,
 	y: -2.0d,
 	shape: "octagon",
 	description: "{tfg.quests.primitive.saw.subtitle}",
 	dependencies: [
-		"da02bce6",
-		"106d5c1d",
-		"68bfa880"
+		"57406373"
 	],
 	tasks: [{
-		uid: "9a3a7d67",
+		uid: "3f073efb",
 		type: "item",
 		items: [{
 			id: "gregtech:meta_tool",
 			Damage: 5s,
 			tag: {
 				GT.ToolStats: {
-					Material: "bismuth_bronze"
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_tool",
-			Damage: 5s,
-			tag: {
-				GT.ToolStats: {
-					Material: "bronze"
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_tool",
-			Damage: 5s,
-			tag: {
-				GT.ToolStats: {
-					Material: "black_bronze"
+					Material: "copper"
 				}
 			}
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}]
 }

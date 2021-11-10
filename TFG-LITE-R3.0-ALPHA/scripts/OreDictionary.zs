@@ -1,7 +1,28 @@
-#priority 9999
+#priority 1000
 
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
+
+//1 - Raw Igneous Intrusive
+var RawIgneousIntrusive = [<tfc:raw/granite>,<tfc:raw/gabbro>,<tfc:raw/rhyolite>,<tfc:raw/diorite>, <tfc:raw/breccia>, <tfc:raw/porphyry>] as IItemStack[];
+for item in RawIgneousIntrusive {
+	<ore:RawIgneousIntrusive>.add(item);
+}
+//2 - Raw Igneous Extrusive
+var RawIgneousExtrusive = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>, <tfc:raw/peridotite>] as IItemStack[];
+for item in RawIgneousExtrusive {
+	<ore:RawIgneousExtrusive>.add(item);
+}
+//3 - Rock Metamorphic
+var RawMetamorphic = [<tfc:raw/marble>, <tfc:raw/gneiss>, <tfc:raw/schist>, <tfc:raw/quartzite>, <tfc:raw/phyllite>, <tfc:raw/slate>, <tfc:raw/catlinite>, <tfc:raw/novaculite>, <tfc:raw/soapstone>, <tfc:raw/komatiite>] as IItemStack[];
+for item in RawMetamorphic {
+	<ore:RawMetamorphic>.add(item);
+}
+//4 - Rock Sedimentary
+var RawSedimentary = [<tfc:raw/shale>,<tfc:raw/dolomite>,<tfc:raw/conglomerate>,<tfc:raw/limestone>,<tfc:raw/rocksalt>,<tfc:raw/claystone>,<tfc:raw/chert>,<tfc:raw/chalk>, <tfc:raw/mudstone>, <tfc:raw/sandstone>, <tfc:raw/siltstone>] as IItemStack[];
+for item in RawSedimentary {
+	<ore:RawSedimentary>.add(item);
+}
 
 /*             ///Сундуки из форестри в один oredictionary///               */
 var ForestryChestsArray = [

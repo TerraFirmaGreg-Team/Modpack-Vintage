@@ -55,6 +55,7 @@ Welding.addRecipe("tfc:TFG_double_plate_platinum", <ore:platePlatinum>, <ore:pla
 Welding.addRecipe("tfc:TFG_double_plate_black_steel", <ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateDoubleBlackSteel>.firstItem, 5);
 Welding.addRecipe("tfc:TFG_double_plate_blue_steel", <ore:plateBlueSteel>, <ore:plateBlueSteel>, <ore:plateDoubleBlueSteel>.firstItem, 6);
 Welding.addRecipe("tfc:TFG_double_plate_red_steel", <ore:plateRedSteel>, <ore:plateRedSteel>, <ore:plateDoubleRedSteel>.firstItem, 6);
+//
 Welding.addRecipe("tfc:TFG_plate_wrought_iron", <ore:sheetWroughtIron>, <ore:plateBronze>, <tfc:metal/sheet/wrought_iron>, 3);
 
 // --- Унификация длинных палок
@@ -144,6 +145,36 @@ Welding.addRecipe("tfc:TFG_gear_platinum", <ore:rackwheelPlatinum>, <ore:sleeveS
 Welding.addRecipe("tfc:TFG_gear_black_steel", <ore:rackwheelBlackSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2011>, 5);
 Welding.addRecipe("tfc:TFG_gear_blue_steel", <ore:rackwheelBlueSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2511>, 6);
 Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2510>, 6);
+
+// --- Унификация слабой стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
+Welding.addRecipe("tfc:TFG_weak_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+
+// --- Унификация слабой красной стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
+Welding.addRecipe("tfc:TFG_weak_red_steel", <tfc:metal/ingot/weak_red_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_red_steel>, 4);
+
+// --- Унификация слабой синей стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
+Welding.addRecipe("tfc:TFG_weak_blue_steel", <tfc:metal/ingot/weak_blue_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_blue_steel>, 4);
+
+// --- Унификация стали
+Anvil.removeRecipe(<tfc:metal/ingot/steel>);
+Anvil.addRecipe("tfc:TFG_steel_ingot", <tfc:metal/ingot/high_carbon_steel>, <ore:ingotSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+
+// --- Унификация черной стали
+Anvil.removeRecipe(<tfc:metal/ingot/black_steel>);
+Anvil.addRecipe("tfc:TFG_black_steel_ingot", <tfc:metal/ingot/high_carbon_black_steel>, <ore:ingotBlackSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+
+// --- Унификация красной стали
+Anvil.removeRecipe(<tfc:metal/ingot/red_steel>);
+Anvil.addRecipe("tfc:TFG_red_steel_ingot", <tfc:metal/ingot/high_carbon_red_steel>, <ore:ingotRedSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+
+// --- Унификация синей стали
+Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
+Anvil.addRecipe("tfc:TFG_blue_steel_ingot", <tfc:metal/ingot/high_carbon_blue_steel>, <ore:ingotBlueSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+
+// --- Унификация каолинита
 
 // --- Унификация каолинита
 

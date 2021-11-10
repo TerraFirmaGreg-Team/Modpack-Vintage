@@ -7,18 +7,17 @@
 		"57406373"
 	],
 	tasks: [{
-		uid: "dd5d54d3",
+		uid: "d1dd8b8a",
 		type: "item",
 		items: [{
 			id: "gregtech:meta_tool",
 			Damage: 6s,
 			tag: {
 				GT.ToolStats: {
-					MaxDurability: 450,
 					Material: "copper"
 				}
 			}
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}]
 }

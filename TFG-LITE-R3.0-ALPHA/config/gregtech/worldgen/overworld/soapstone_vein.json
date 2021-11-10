@@ -1,0 +1,42 @@
+{
+  "weight": 40,
+  "density": 0.5,
+  "max_height": 130,
+  "min_height": 15,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "soapstone"
+  },
+  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [
+      14,
+      16
+    ]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 25,
+          "value": "ore:soapstone"
+        },
+        {
+          "weight": 25,
+          "value": "ore:talc"
+        },
+        {
+          "weight": 25,
+          "value": "ore:glauconite"
+        },
+        {
+          "weight": 25,
+          "value": "ore:pentlandite"
+        }
+      ]
+    }
+  }
+}
