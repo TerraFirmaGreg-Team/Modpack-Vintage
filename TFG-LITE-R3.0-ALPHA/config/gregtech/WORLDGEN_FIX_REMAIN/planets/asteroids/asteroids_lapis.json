@@ -1,0 +1,45 @@
+{
+    "name": "lapis",
+    "weight": 40,
+    "max_height": 60,
+    "min_height": 10,
+    "generator": {
+        "type": "ellipsoid",
+        "radius": [
+            15,
+            15
+        ]
+    },
+    "density": 0.6,
+    "vein_populator": {
+        "type": "surface_rock",
+        "material": "lapis"
+    },
+    "dimension_filter": [
+        "dimension_id:-20"
+    ],
+    "filler": {
+        "type": "simple",
+        "value": {
+            "type": "weight_random",
+            "values": [
+                {
+                    "weight": "30",
+                    "value": "ore:lapis"
+                },
+                {
+                    "weight": "30",
+                    "value": "ore:sodalite"
+                },
+                {
+                    "weight": "25",
+                    "value": "ore:lazurite"
+                },
+                {
+                    "weight": "15",
+                    "value": "ore:calcite"
+                }
+            ]
+        }
+    }
+}

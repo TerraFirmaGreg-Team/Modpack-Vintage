@@ -4,6 +4,9 @@ import mods.forestry.Carpenter;
 
 //Удаление из JEI
 val RemoveItemsFromJEI as IItemStack[] = [
+	<forestry:ingot_copper>,
+	<forestry:ingot_tin>,
+	<forestry:ingot_bronze>,
 	<forestry:resources>,
 	<forestry:resources:1>,
 	<forestry:resources:2>,

@@ -1,22 +1,5 @@
 {
 	title: "{tfg.quests.primitive.bismuthbronzeingot.title}",
-	icon: {
-		id: "tfc:metal/ingot/bismuth_bronze",
-		ForgeCaps: {
-			Parent: {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
 	x: -15.0d,
 	y: -4.5d,
 	description: "{tfg.quests.primitive.bismuthbronzeingot.subtitle}",

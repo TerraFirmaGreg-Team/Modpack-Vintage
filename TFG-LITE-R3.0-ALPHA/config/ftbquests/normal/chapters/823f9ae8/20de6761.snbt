@@ -183,5 +183,19 @@
 				}
 			}
 		}]
+	},
+	{
+		uid: "25ea6497",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/hammer_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
 	}]
 }

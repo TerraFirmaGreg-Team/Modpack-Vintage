@@ -1,0 +1,37 @@
+{
+  "weight": 95,
+  "density": 0.6,
+  "max_height": 100,
+  "min_height": 10,
+  "surface_stone_material": "copper",
+  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [20, 32]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:bornite"
+        },
+		{
+          "weight": 30,
+          "value": "ore:chalcocite"
+        },
+		{
+          "weight": 30,
+          "value": "ore:enargite"
+        },
+		{
+          "weight": 10,
+          "value": "ore:copper"
+        }
+      ]
+    }
+  }
+}

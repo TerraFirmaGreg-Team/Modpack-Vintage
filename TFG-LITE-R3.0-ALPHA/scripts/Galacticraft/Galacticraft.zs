@@ -751,7 +751,7 @@ assembler.recipeBuilder()
 //Еда
 //Фруктовая канистра
 canner.recipeBuilder()
-   .inputs(<galacticraftcore:canister>, <ore:apple> * 2)
+   .inputs(<galacticraftcore:canister>, <ore:categoryFruit> * 2)
    .outputs(<galacticraftcore:food>)
    .duration(460)
    .EUt(2)

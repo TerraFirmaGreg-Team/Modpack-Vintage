@@ -146,17 +146,21 @@ Welding.addRecipe("tfc:TFG_gear_black_steel", <ore:rackwheelBlackSteel>, <ore:sl
 Welding.addRecipe("tfc:TFG_gear_blue_steel", <ore:rackwheelBlueSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2511>, 6);
 Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2510>, 6);
 
-// --- Унификация слабой стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
-Welding.addRecipe("tfc:TFG_weak_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+// --- Унификация высокоуглеродной стали
+Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
+Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация слабой красной стали
+// --- Унификация высокоуглеродной черной стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
+Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+
+// --- Унификация высокоуглеродной красной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
-Welding.addRecipe("tfc:TFG_weak_red_steel", <tfc:metal/ingot/weak_red_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_red_steel>, 4);
+Welding.addRecipe("tfc:TFG_high_carbon_red_steel", <tfc:metal/ingot/weak_red_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_red_steel>, 4);
 
-// --- Унификация слабой синей стали
+// --- Унификация высокоуглеродной синей стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
-Welding.addRecipe("tfc:TFG_weak_blue_steel", <tfc:metal/ingot/weak_blue_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_blue_steel>, 4);
+Welding.addRecipe("tfc:TFG_high_carbon_blue_steel", <tfc:metal/ingot/weak_blue_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_blue_steel>, 4);
 
 // --- Унификация стали
 Anvil.removeRecipe(<tfc:metal/ingot/steel>);

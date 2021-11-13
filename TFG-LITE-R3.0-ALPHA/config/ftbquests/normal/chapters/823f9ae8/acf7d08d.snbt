@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copperingot.title}",
-	x: -17.5d,
+	x: -18.0d,
 	y: -4.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperingot.subtitle}",

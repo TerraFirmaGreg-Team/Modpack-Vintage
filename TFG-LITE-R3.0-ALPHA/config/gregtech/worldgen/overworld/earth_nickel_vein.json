@@ -1,0 +1,42 @@
+{
+  "weight": 65,
+  "density": 0.4,
+  "max_height": 125,
+  "min_height": 12,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "nickel"
+  },
+  "generation_predicate": ["block:tfc:raw/basalt", "block:tfc:raw/gabbro"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [
+      13,
+      32
+    ]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:garnierite"
+        },
+        {
+          "weight": 30,
+          "value": "ore:nickel"
+        },
+        {
+          "weight": 30,
+          "value": "ore:cobaltite"
+        },
+        {
+          "weight": 10,
+          "value": "ore:pentlandite"
+        }
+      ]
+    }
+  }
+}

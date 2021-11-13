@@ -1,40 +1,20 @@
 {
 	title: "{tfg.quests.primitive.knifegt.title}",
-	x: -17.5d,
-	y: 0.0d,
+	x: -17.0d,
+	y: -7.0d,
 	description: "{tfg.quests.primitive.knifegt.subtitle}",
 	dependencies: [
-		"1ccd9dd8"
+		"734b42fd"
 	],
 	tasks: [{
-		uid: "eddcf1fb",
+		uid: "378a44c1",
 		type: "item",
 		items: [{
 			id: "gregtech:meta_tool",
 			Damage: 17s,
 			tag: {
 				GT.ToolStats: {
-					Material: "bronze"
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_tool",
-			Damage: 17s,
-			tag: {
-				GT.ToolStats: {
-					MaxDurability: 1460,
-					Material: "black_bronze"
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_tool",
-			Damage: 17s,
-			tag: {
-				GT.ToolStats: {
-					MaxDurability: 1200,
-					Material: "bismuth_bronze"
+					Material: "copper"
 				}
 			}
 		}],
