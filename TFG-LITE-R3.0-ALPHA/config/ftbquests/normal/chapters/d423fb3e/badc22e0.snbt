@@ -1,6 +1,6 @@
 {
-	x: -3.5d,
-	y: -7.5d,
+	x: -12.0d,
+	y: -13.5d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzealloysmelter.subtitle}",
 	dependencies: [

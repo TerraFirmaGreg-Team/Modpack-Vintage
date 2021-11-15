@@ -1,6 +1,6 @@
 {
-	x: -9.0d,
-	y: -4.5d,
+	x: -16.5d,
+	y: -7.5d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzecompressor.subtitle}",
 	dependencies: [

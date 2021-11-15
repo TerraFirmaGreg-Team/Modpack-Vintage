@@ -5,8 +5,28 @@
 	dependencies: [
 		"bd171a6e"
 	],
+	or_tasks: true,
 	tasks: [{
-		uid: "f9c905e9",
+		uid: "bbf82126",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreSapphire"
+				}
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2ecb79ae",
 		type: "item",
 		items: [{
 			id: "itemfilters:filter",
@@ -19,6 +39,25 @@
 				Parent: {
 					id: "ore",
 					data: "oreGreenSapphire"
+				}
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "86875ff8",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreAluminium"
 				}
 			}
 		}],

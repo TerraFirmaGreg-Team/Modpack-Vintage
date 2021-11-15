@@ -1,0 +1,14 @@
+{
+	x: -22.0d,
+	y: 0.0d,
+	dependencies: [
+		"c8377a61"
+	],
+	tasks: [{
+		uid: "afdaf1e9",
+		type: "item",
+		items: [{
+			item: "tfcalloycalc:alloy_calculator"
+		}]
+	}]
+}

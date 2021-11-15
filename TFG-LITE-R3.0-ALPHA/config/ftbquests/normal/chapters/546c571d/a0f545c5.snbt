@@ -3,8 +3,9 @@
 	y: 23.0d,
 	shape: "pentagon",
 	dependencies: [
-		"f04e0193"
+		"168f2170"
 	],
+	hide: true,
 	tasks: [{
 		uid: "b1e862e3",
 		type: "item",

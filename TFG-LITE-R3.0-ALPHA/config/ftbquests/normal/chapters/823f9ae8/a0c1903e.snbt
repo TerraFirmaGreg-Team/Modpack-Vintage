@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.muchNeededStraw.title}",
 	x: -29.5d,
-	y: -7.0d,
+	y: -8.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.muchNeededStraw.subtitle}",
 	dependencies: [

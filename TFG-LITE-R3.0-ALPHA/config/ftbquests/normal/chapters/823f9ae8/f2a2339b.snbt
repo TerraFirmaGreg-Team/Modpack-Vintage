@@ -1,7 +1,7 @@
 {
 	icon: "minecraft:paper",
-	x: -23.5d,
-	y: 12.5d,
+	x: -16.5d,
+	y: 0.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.paper.subtitle}",
 	dependencies: [

@@ -1,12 +1,11 @@
 {
-	x: -0.5d,
-	y: -14.0d,
+	x: -10.5d,
+	y: -19.5d,
 	shape: "octagon",
 	description: "{tfg.quests.steam.steamtubine.subtitle}",
 	dependencies: [
 		"f04e0193"
 	],
-	hide: true,
 	size: 3.0d,
 	min_width: 3,
 	tasks: [{

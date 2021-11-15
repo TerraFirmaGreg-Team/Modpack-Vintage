@@ -9,6 +9,7 @@
 	dependencies: [
 		"bf4aede8"
 	],
+	hide: true,
 	dependency_requirement: "one_started",
 	optional: true,
 	tasks: [{

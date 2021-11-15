@@ -1,6 +1,7 @@
 {
-	x: -3.5d,
-	y: -6.5d,
+	x: -13.5d,
+	y: -13.5d,
+	shape: "diamond",
 	description: "{tfg.quests.steam.platemold.subtitle}",
 	dependencies: [
 		"badc22e0"

@@ -1,12 +1,13 @@
 {
 	title: "{tfg.quests.primitive.harderbucket.title}",
-	x: -12.0d,
-	y: 4.5d,
+	x: -3.0d,
+	y: 8.0d,
 	shape: "square",
 	description: "{tfg.quests.primitive.harderbucket.subtitle}",
 	dependencies: [
 		"85e10b5d",
-		"5ab7edf9"
+		"5ab7edf9",
+		"24382b4f"
 	],
 	tasks: [{
 		uid: "984b481d",

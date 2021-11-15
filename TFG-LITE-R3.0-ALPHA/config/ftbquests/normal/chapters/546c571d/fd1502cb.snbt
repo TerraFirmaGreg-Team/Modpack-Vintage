@@ -1,0 +1,15 @@
+{
+	x: -0.5d,
+	y: 2.5d,
+	dependencies: [
+		"56c53ffc",
+		"1dbc318f"
+	],
+	tasks: [{
+		uid: "8b6e6142",
+		type: "item",
+		items: [{
+			item: "forestry:impregnated_casing"
+		}]
+	}]
+}

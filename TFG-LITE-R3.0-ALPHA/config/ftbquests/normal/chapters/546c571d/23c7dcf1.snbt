@@ -1,5 +1,5 @@
 {
-	x: -10.0d,
+	x: -10.5d,
 	y: 7.5d,
 	shape: "circle",
 	dependencies: [

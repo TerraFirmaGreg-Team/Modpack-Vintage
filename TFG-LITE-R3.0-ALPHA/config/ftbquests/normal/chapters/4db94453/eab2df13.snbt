@@ -2,7 +2,9 @@
 	x: -2.5d,
 	y: 0.0d,
 	description: "{tfg.quests.ae2.certusquartz.subtitle}",
-	hide: true,
+	dependencies: [
+		"cc2ab5e7"
+	],
 	tasks: [{
 		uid: "5e6f1eed",
 		type: "item",

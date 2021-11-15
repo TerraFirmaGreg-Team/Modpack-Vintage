@@ -1,0 +1,13 @@
+{
+	x: 1.5d,
+	y: 1.0d,
+	dependencies: [
+		"083b4d00"
+	],
+	hide: true,
+	tasks: [{
+		uid: "afab4079",
+		type: "fluid",
+		fluid: "seed.oil"
+	}]
+}

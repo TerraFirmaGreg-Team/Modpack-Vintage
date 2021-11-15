@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 2.5d,
+	description: "{tfg.quests.steam.apiary.subtitle}",
+	dependencies: [
+		"fd1502cb"
+	],
+	tasks: [{
+		uid: "d5e3711c",
+		type: "item",
+		items: [{
+			item: "forestry:bee_house"
+		}]
+	}]
+}

@@ -8,6 +8,7 @@
 		"ad28f1ac",
 		"2c700136"
 	],
+	hide: true,
 	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "5e2ea02e",

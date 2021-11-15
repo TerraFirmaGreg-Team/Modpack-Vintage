@@ -5,8 +5,6 @@
 	min_required_dependencies: 2,
 	dependencies: [
 		"449629d6",
-		"3b3bba7b",
-		"5990d9a9",
 		"f623d356"
 	],
 	dependency_requirement: "one_completed",

@@ -1,8 +1,9 @@
 {
 	icon: {
-		id: "tfc:metal/ingot/wrought_iron",
+		id: "gregtech:meta_ingot",
+		Damage: 335s,
 		ForgeCaps: {
-			Parent: {
+			"tfc:item_forge": {
 				ticks: -1L,
 				heat: 0.0f,
 				forge: {
@@ -16,8 +17,8 @@
 			}
 		}
 	},
-	x: -5.5d,
-	y: -4.5d,
+	x: -3.0d,
+	y: -5.0d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.ironingot.subtitle}",
 	dependencies: [
@@ -29,19 +30,16 @@
 		uid: "1a05161b",
 		type: "item",
 		items: [{
-			id: "tfc:metal/ingot/wrought_iron",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotWroughtIron"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "ingotWroughtIron"
 				}
 			}
 		}]

@@ -8,6 +8,7 @@
 	dependencies: [
 		"bea5176c"
 	],
+	hide: true,
 	tasks: [{
 		uid: "ec81790f",
 		type: "item",

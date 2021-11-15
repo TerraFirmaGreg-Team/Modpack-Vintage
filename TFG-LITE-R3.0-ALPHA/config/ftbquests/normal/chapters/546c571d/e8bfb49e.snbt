@@ -4,10 +4,9 @@
 	shape: "rsquare",
 	min_required_dependencies: 2,
 	dependencies: [
-		"f623d356",
-		"3f2c5c4f",
-		"07558756"
+		"f623d356"
 	],
+	or_tasks: true,
 	tasks: [{
 		uid: "25478cf7",
 		type: "item",

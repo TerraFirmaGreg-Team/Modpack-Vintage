@@ -5,6 +5,7 @@
 		"0e63b2d9",
 		"76c160aa"
 	],
+	hide: true,
 	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "3ee9d3b7",

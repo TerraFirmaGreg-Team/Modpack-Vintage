@@ -2,7 +2,7 @@
 	title: "{tfg.quests.primitive.rawHide.title}",
 	icon: "tfc:hide/prepared/large",
 	x: -23.5d,
-	y: -6.5d,
+	y: -7.0d,
 	description: "{tfg.quests.primitive.rawHide.subtitle}",
 	text: [
 		""

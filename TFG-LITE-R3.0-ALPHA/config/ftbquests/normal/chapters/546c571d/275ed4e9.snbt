@@ -5,6 +5,7 @@
 		"efd88b40",
 		"686bcfe4"
 	],
+	hide: true,
 	dependency_requirement: "one_started",
 	optional: true,
 	tasks: [{

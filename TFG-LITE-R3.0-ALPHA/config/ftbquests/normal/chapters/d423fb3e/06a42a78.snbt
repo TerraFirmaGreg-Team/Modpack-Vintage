@@ -1,6 +1,6 @@
 {
-	x: -5.0d,
-	y: -7.5d,
+	x: -12.0d,
+	y: -12.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.steamfurnace.subtitle}",
 	dependencies: [

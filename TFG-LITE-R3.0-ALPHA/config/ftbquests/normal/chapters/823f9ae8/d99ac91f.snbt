@@ -1,11 +1,11 @@
 {
 	title: "{tfg.quests.primitive.backpack.title}",
-	x: -22.0d,
-	y: 1.0d,
+	x: -25.5d,
+	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.backpack.subtitle}",
 	dependencies: [
-		"2816fe72"
+		"1f08594d"
 	],
 	tasks: [{
 		uid: "15a4dc6a",

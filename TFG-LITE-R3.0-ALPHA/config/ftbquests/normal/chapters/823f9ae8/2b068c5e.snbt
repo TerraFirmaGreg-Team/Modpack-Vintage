@@ -1,6 +1,6 @@
 {
-	x: -25.5d,
-	y: 12.5d,
+	x: -16.5d,
+	y: -1.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.sugarcane.subtitle}",
 	hide_dependency_lines: true,

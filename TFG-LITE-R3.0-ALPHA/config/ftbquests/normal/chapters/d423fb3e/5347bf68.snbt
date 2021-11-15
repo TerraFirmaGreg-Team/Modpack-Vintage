@@ -1,7 +1,7 @@
 {
-	x: -8.0d,
-	y: -5.0d,
-	shape: "circle",
+	x: -15.5d,
+	y: -8.0d,
+	shape: "rsquare",
 	description: "{tfg.quests.steam.bronzehull.subtitle}",
 	dependencies: [
 		"7d03eeb7"

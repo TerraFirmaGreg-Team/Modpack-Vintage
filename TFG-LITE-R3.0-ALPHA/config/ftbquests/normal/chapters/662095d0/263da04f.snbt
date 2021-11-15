@@ -12,6 +12,7 @@
 		"bf4aede8",
 		"b151aab2"
 	],
+	hide: true,
 	dependency_requirement: "one_started",
 	optional: true,
 	tasks: [{

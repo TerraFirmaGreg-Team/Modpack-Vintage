@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.steelanvil.title}",
-	x: 4.0d,
-	y: -11.5d,
+	x: 4.5d,
+	y: -12.0d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.steelanvil.subtitle}",
 	dependencies: [

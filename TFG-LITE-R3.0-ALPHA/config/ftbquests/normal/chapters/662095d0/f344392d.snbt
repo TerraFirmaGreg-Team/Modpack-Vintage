@@ -2,12 +2,13 @@
 	x: -5.5d,
 	y: -2.5d,
 	shape: "rsquare",
-	min_required_dependencies: 2,
 	dependencies: [
-		"31853edb",
 		"5d67d1fc",
 		"2d969cc1"
 	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	or_tasks: true,
 	tasks: [{
 		uid: "bbb1c99b",
 		type: "item",

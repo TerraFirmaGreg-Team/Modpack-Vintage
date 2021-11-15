@@ -10,7 +10,7 @@
 		}
 	},
 	x: -22.0d,
-	y: -5.5d,
+	y: -1.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,

@@ -4,6 +4,7 @@
 	dependencies: [
 		"e8bfb49e"
 	],
+	hide: true,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "62ee9ade",

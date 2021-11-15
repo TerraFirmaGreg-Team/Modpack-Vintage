@@ -6,6 +6,7 @@
 		"0451ba86"
 	],
 	dependency_requirement: "one_completed",
+	or_tasks: true,
 	tasks: [{
 		uid: "7321cb96",
 		type: "item",

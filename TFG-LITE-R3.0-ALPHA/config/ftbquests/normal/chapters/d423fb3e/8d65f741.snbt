@@ -1,0 +1,13 @@
+{
+	x: -12.5d,
+	y: -2.5d,
+	shape: "diamond",
+	dependencies: [
+		"57208fec"
+	],
+	tasks: [{
+		uid: "b440a68b",
+		type: "fluid",
+		fluid: "creosote"
+	}]
+}

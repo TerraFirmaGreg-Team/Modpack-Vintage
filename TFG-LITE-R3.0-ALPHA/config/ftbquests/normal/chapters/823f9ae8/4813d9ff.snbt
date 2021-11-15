@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.woodchest.title}",
 	icon: "minecraft:chest",
-	x: -12.5d,
+	x: -18.0d,
 	y: 0.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.woodchest.subtitle}",
@@ -25,6 +25,8 @@
 					data: "chestWood"
 				}
 			}
-		}]
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

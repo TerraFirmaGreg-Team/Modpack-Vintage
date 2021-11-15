@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.redsteelbucket.title}",
-	x: 13.5d,
-	y: -3.5d,
+	x: 16.5d,
+	y: -4.0d,
 	description: "{tfg.quests.primitive.redsteelbucket.subtitle}",
 	dependencies: [
 		"501214da",

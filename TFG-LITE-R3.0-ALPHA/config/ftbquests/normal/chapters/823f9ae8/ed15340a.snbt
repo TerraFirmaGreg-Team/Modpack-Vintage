@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.graphitepile.title}",
-	x: -5.5d,
-	y: -16.5d,
+	x: 0.0d,
+	y: 3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.graphitepile.subtitle}",
 	hide_dependency_lines: true,

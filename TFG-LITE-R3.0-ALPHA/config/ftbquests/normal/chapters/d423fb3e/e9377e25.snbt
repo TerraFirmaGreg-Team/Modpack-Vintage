@@ -1,13 +1,12 @@
 {
 	title: "{tfg.quests.steam.tools.title}",
-	x: -12.0d,
-	y: 1.0d,
+	x: -10.5d,
+	y: 1.5d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.tools.subtitle}",
 	dependencies: [
 		"d9827d71"
 	],
-	hide: true,
 	tasks: [{
 		uid: "36feaf59",
 		type: "item",

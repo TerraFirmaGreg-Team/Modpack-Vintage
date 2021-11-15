@@ -5,6 +5,7 @@
 	dependencies: [
 		"31853edb"
 	],
+	or_tasks: true,
 	tasks: [{
 		uid: "88cbda0e",
 		type: "item",

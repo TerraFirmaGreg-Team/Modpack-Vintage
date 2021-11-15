@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: 4.0d,
+	dependencies: [
+		"bd3500c5"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3c0edf90",
+		type: "item",
+		items: [{
+			item: "forestry:carpenter"
+		}]
+	}]
+}
