@@ -182,5 +182,44 @@
 				}
 			}
 		}]
+	},
+	{
+		uid: "aa4da028",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/propick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "085dc95c",
+		type: "item",
+		items: [{
+			id: "tfcthings:mold/unfired/prospectors_hammer_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "f205352f",
+		type: "item",
+		items: [{
+			id: "firmalife:unfired_mallet_mold",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
 	}]
 }

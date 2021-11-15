@@ -265,26 +265,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/knife_blade/bronze>,
 	<tfc:metal/knife_blade/black_bronze>,
 	<tfc:metal/knife_blade/bismuth_bronze>,
-	//Propick
-	<tfc:metal/propick/bismuth_bronze>,
-	<tfc:metal/propick/bronze>,
-	<tfc:metal/propick/black_bronze>,
-	<tfc:metal/propick/wrought_iron>,
-	<tfc:metal/propick/copper>,
-	<tfc:metal/propick/steel>,
-	<tfc:metal/propick/black_steel>,
-	<tfc:metal/propick/blue_steel>,
-	<tfc:metal/propick/red_steel>,
-	//Geologic Pickaxe Heads
-	<tfc:metal/propick_head/bismuth_bronze>,
-	<tfc:metal/propick_head/bronze>,
-	<tfc:metal/propick_head/black_bronze>,
-	<tfc:metal/propick_head/wrought_iron>,
-	<tfc:metal/propick_head/copper>,
-	<tfc:metal/propick_head/steel>,
-	<tfc:metal/propick_head/black_steel>,
-	<tfc:metal/propick_head/blue_steel>,
-	<tfc:metal/propick_head/red_steel>,
 	//Other
 	<tfc:sluice>,
 	<tfctech:powder/potash>,
@@ -492,17 +472,6 @@ recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withE
 //Флюс использует крафт с помощью GT молота
 recipes.removeByRecipeName("tfc:flux");
 recipes.addShapeless (<tfc:powder/flux>*2, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:rockFlux>]);
-
-//Отключение крафтов всех геологических TFC
-Anvil.removeRecipe(<tfc:metal/propick_head/red_steel>);
-Anvil.removeRecipe(<tfc:metal/propick_head/blue_steel>);
-Anvil.removeRecipe(<tfc:metal/propick_head/black_steel>);
-Anvil.removeRecipe(<tfc:metal/propick_head/steel>);
-Anvil.removeRecipe(<tfc:metal/propick_head/bronze>);
-Anvil.removeRecipe(<tfc:metal/propick_head/black_bronze>);
-Anvil.removeRecipe(<tfc:metal/propick_head/bismuth_bronze>);
-Anvil.removeRecipe(<tfc:metal/propick_head/copper>);
-Anvil.removeRecipe(<tfc:metal/propick_head/wrought_iron>);
 
 //Отключение крафтов всех молотков TFC
 Anvil.removeRecipe(<tfc:metal/hammer_head/red_steel>);
