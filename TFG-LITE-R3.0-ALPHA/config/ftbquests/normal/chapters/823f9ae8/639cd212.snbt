@@ -1,8 +1,7 @@
 {
-	x: -19.0d,
+	x: -18.0d,
 	y: -3.0d,
 	dependencies: [
-		"36e579cb",
 		"57406373"
 	],
 	dependency_requirement: "one_completed",

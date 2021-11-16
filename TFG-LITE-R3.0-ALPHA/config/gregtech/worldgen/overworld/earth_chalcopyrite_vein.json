@@ -5,7 +5,7 @@
   "min_height": 15,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "chalcopyrite"
+    "material": "copper"
   },
   "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
   "generator": {

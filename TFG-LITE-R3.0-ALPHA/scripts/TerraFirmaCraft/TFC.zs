@@ -278,45 +278,45 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-//Quern - GT ore --> GT small pile
-Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:dustSmallCopper>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <ore:dustSmallMalachite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <ore:dustSmallTetrahedrite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <ore:dustSmallBornite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <ore:dustSmallTenorite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <ore:dustSmallChalcopyrite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <ore:dustSmallChalcocite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <ore:dustSmallEnargite>.firstItem * 3);
+//Quern - GT ore --> GT crushed ore
+Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:crushedCopper>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <ore:crushedMalachite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <ore:crushedTetrahedrite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <ore:crushedBornite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <ore:crushedTenorite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <ore:crushedChalcopyrite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <ore:crushedChalcocite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <ore:crushedEnargite>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <ore:dustSmallTin>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <ore:dustSmallCassiterite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <ore:dustSmallCassiteriteSand>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <ore:crushedTin>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <ore:crushedCassiterite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <ore:crushedCassiteriteSand>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Iron", <gregtech:ore_iron_0>, <ore:dustSmallIron>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Pyrite", <gregtech:ore_pyrite_0>, <ore:dustSmallPyrite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_YellowLimonite", <gregtech:ore_yellow_limonite_0>, <ore:dustSmallYellowLimonite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <ore:dustSmallMagnetite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <ore:dustSmallBrownLimonite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <ore:dustSmallBandedIron>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Iron", <gregtech:ore_iron_0>, <ore:crushedIron>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Pyrite", <gregtech:ore_pyrite_0>, <ore:crushedPyrite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_YellowLimonite", <gregtech:ore_yellow_limonite_0>, <ore:crushedYellowLimonite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <ore:crushedMagnetite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <ore:crushedBrownLimonite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <ore:crushedBandedIron>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Zinc", <gregtech:ore_zinc_0>, <ore:dustSmallZinc>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <ore:dustSmallSphalerite>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Zinc", <gregtech:ore_zinc_0>, <ore:crushedZinc>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <ore:crushedSphalerite>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <ore:dustSmallNickel>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Garnierite", <gregtech:ore_garnierite_0>, <ore:dustSmallGarnierite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Pentlandite", <gregtech:ore_pentlandite_0>, <ore:dustSmallPentlandite>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <ore:crushedNickel>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Garnierite", <gregtech:ore_garnierite_0>, <ore:crushedGarnierite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Pentlandite", <gregtech:ore_pentlandite_0>, <ore:crushedPentlandite>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <ore:dustSmallGalena>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <ore:dustSmallLead>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <ore:crushedGalena>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <ore:crushedLead>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <ore:dustSmallGold>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <ore:dustSmallBismuth>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <ore:dustSmallSilver>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <ore:crushedGold>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <ore:crushedBismuth>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <ore:crushedSilver>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <ore:dustSmallSulfur>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <ore:dustSmallRockSalt>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Kaolinite", <gregtech:ore_kaolinite_0>, <ore:dustSmallKaolinite>.firstItem * 3);
-Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <ore:dustSmallGraphite>.firstItem * 3);
+Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <ore:crushedSulfur>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <ore:crushedRockSalt>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Kaolinite", <gregtech:ore_kaolinite_0>, <ore:crushedKaolinite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <ore:crushedGraphite>.firstItem * 2);
 
 // --- Furnace recipes for TFC items
 //Хавка

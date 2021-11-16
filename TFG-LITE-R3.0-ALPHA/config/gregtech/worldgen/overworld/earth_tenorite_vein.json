@@ -1,13 +1,13 @@
 {
   "weight": 60,
   "density": 0.3,
-  "max_height": 120,
-  "min_height": 15,
+  "max_height": 144,
+  "min_height": 50,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "tenorite"
+    "material": "copper"
   },
-  "generation_predicate": ["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generation_predicate": ["ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
   "generator": {
     "type": "ellipsoid",
     "radius": [

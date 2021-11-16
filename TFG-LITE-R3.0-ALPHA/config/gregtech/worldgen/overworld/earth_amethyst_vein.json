@@ -2,6 +2,10 @@
   "weight": 15,
   "density": 0.2,
   "max_height": 30,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "amethyst"
+  },
   "generation_predicate":["ore_dict:RawIgneousIntrusive"],
 
   "generator": {

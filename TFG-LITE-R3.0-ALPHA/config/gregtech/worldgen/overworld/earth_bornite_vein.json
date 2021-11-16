@@ -1,10 +1,13 @@
 {
   "weight": 95,
   "density": 0.6,
-  "max_height": 100,
+  "max_height": 110,
   "min_height": 10,
-  "surface_stone_material": "copper",
-  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary"],
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "copper"
+  },
+  "generation_predicate":["ore_dict:RawIgneousIntrusive"],
 
   "generator": {
     "type": "ellipsoid",

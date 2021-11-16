@@ -1,11 +1,10 @@
 {
   "weight": 80,
   "density": 0.5,
-  "max_height": 140,
-  "min_height": 15,
+  "min_height": 155,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "chalcopyrite"
+    "material": "iron"
   },
   "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive"],
   "generator": {
