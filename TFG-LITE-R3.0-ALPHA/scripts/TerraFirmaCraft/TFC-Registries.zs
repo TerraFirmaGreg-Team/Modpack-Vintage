@@ -41,7 +41,6 @@ ItemRegistry.registerItemMetal(<ore:plateDoubleTin>.firstItem, "TIN", 400, true)
 ItemRegistry.registerItemMetal(<ore:plateDoubleBismuthBronze>.firstItem, "BISMUTH_BRONZE", 400, true);
 ItemRegistry.registerItemMetal(<ore:plateDoubleBlackBronze>.firstItem, "BLACK_BRONZE", 400, true);
 ItemRegistry.registerItemMetal(<ore:plateDoubleSteel>.firstItem, "STEEL", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoublePigIron>.firstItem, "PIG_IRON", 400, true);
 ItemRegistry.registerItemMetal(<ore:plateDoubleWroughtIron>.firstItem, "WROUGHT_IRON", 400, true);
 ItemRegistry.registerItemMetal(<ore:plateDoubleSterlingSilver>.firstItem, "STERLING_SILVER", 400, true);
 ItemRegistry.registerItemMetal(<ore:plateDoubleZinc>.firstItem, "ZINC", 400, true);
