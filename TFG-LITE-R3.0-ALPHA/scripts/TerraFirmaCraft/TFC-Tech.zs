@@ -10,6 +10,8 @@ furnace.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired
 furnace.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>);
 
 //Провода для примитивной эры
+WireDrawing.removeRecipe(<tfctech:metal/zinc_wire>);
+
 WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
 WireDrawing.addRecipe("tfctech:wire_copper", <tfctech:metal/copper_wire:1>, 3, <ore:wireGtSingleCopper>.firstItem, 0xFFA6B525);
 WireDrawing.removeRecipe(<tfctech:metal/gold_wire>);
@@ -22,8 +24,6 @@ WireDrawing.removeRecipe(<tfctech:metal/silver_wire>);
 WireDrawing.addRecipe("tfctech:wire_silver", <tfctech:metal/silver_wire:1>, 3, <ore:wireGtSingleSilver>.firstItem, 0xFFbfbfbf);
 WireDrawing.removeRecipe(<tfctech:metal/tin_wire>);
 WireDrawing.addRecipe("tfctech:wire_tin", <tfctech:metal/tin_wire:1>, 3, <ore:wireGtSingleTin>.firstItem, 0xFF666666);
-WireDrawing.removeRecipe(<tfctech:metal/zinc_wire>);
-WireDrawing.addRecipe("tfctech:wire_zinc", <tfctech:metal/zinc_wire:1>, 3, <ore:wireGtSingleZinc>.firstItem, 0xFF999999);
 WireDrawing.removeRecipe(<tfctech:metal/steel_wire>);
 WireDrawing.addRecipe("tfctech:wire_steel", <tfctech:metal/steel_wire:1>, 3, <ore:wireGtSingleSteel>.firstItem, 0xFF4d4d4d);
 WireDrawing.removeRecipe(<tfctech:metal/platinum_wire>);

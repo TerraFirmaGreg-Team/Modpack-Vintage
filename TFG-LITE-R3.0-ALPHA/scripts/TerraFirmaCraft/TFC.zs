@@ -47,7 +47,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/dust/tin>,
 	<tfc:metal/dust/zinc>,
 	<tfc:metal/dust/sterling_silver>,
-	<tfc:metal/dust/pig_iron>,
+	//<tfc:metal/dust/pig_iron>,
 	<tfc:metal/dust/steel>,
 	<tfc:metal/dust/platinum>,
 	<tfc:metal/dust/black_steel>,
@@ -69,7 +69,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/ingot/tin>,
 	<tfc:metal/ingot/zinc>,
 	<tfc:metal/ingot/sterling_silver>,
-	<tfc:metal/ingot/pig_iron>,
+	//<tfc:metal/ingot/pig_iron>,
 	<tfc:metal/ingot/steel>,
 	<tfc:metal/ingot/platinum>,
 	<tfc:metal/ingot/black_steel>,
@@ -91,7 +91,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/sheet/tin>,
 	<tfc:metal/sheet/zinc>,
 	<tfc:metal/sheet/sterling_silver>,
-	<tfc:metal/sheet/pig_iron>,
+	//<tfc:metal/sheet/pig_iron>,
 	<tfc:metal/sheet/steel>,
 	<tfc:metal/sheet/platinum>,
 	<tfc:metal/sheet/black_steel>,
@@ -114,7 +114,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/double_sheet/zinc>,
 	<tfc:metal/double_sheet/sterling_silver>,
 	<tfc:metal/double_sheet/wrought_iron>,
-	<tfc:metal/double_sheet/pig_iron>,
+	//<tfc:metal/double_sheet/pig_iron>,
 	<tfc:metal/double_sheet/platinum>,
 	<tfc:metal/double_sheet/steel>,
 	<tfc:metal/double_sheet/black_steel>,
@@ -135,7 +135,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/nugget/tin>,
 	<tfc:metal/nugget/zinc>,
 	<tfc:metal/nugget/sterling_silver>,
-	<tfc:metal/nugget/pig_iron>,
+	//<tfc:metal/nugget/pig_iron>,
 	<tfc:metal/nugget/steel>,
 	<tfc:metal/nugget/platinum>,
 	<tfc:metal/nugget/black_steel>,
@@ -158,7 +158,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfctech:metal/zinc_gear>,
 	<tfctech:metal/sterling_silver_gear>,
 	<tfctech:metal/wrought_iron_gear>,
-	<tfctech:metal/pig_iron_gear>,
+	//<tfctech:metal/pig_iron_gear>,
 	<tfctech:metal/steel_gear>,
 	<tfctech:metal/platinum_gear>,
 	<tfctech:metal/black_steel_gear>,
@@ -176,7 +176,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfctech:metal/tin_long_rod>,
 	<tfctech:metal/sterling_silver_long_rod>,
 	<tfctech:metal/wrought_iron_long_rod>,
-	<tfctech:metal/pig_iron_long_rod>,
+	//<tfctech:metal/pig_iron_long_rod>,
 	<tfctech:metal/brass_long_rod>,
 	<tfctech:metal/steel_long_rod>,
 	<tfctech:metal/black_steel_long_rod>,
@@ -198,7 +198,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfctech:metal/tin_rod>,
 	<tfctech:metal/sterling_silver_rod>,
 	<tfctech:metal/wrought_iron_rod>,
-	<tfctech:metal/pig_iron_rod>,
+	//<tfctech:metal/pig_iron_rod>,
 	<tfctech:metal/brass_rod>,
 	<tfctech:metal/steel_rod>,
 	<tfctech:metal/black_steel_rod>,
@@ -449,10 +449,6 @@ extractor.recipeBuilder()
 	.inputs(<tfc:wood/log/hevea>)
 	.outputs(<ore:dustRawRubber>.firstItem)
 	.duration(200).EUt(2).buildAndRegister(); 
-
-//Чугун --> Сталь
-//forge_hammer.findRecipe(16, [<gregtech:meta_item_1:10140>*3], null).remove();
-//forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<tfc:metal/ingot/steel>).duration(400).EUt(2).buildAndRegister(); 
 
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();

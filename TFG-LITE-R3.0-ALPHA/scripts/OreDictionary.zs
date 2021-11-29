@@ -97,6 +97,7 @@ for item in ForestryPropolisArray {
 <ore:oreCopper>.remove(<forestry:resources:1>);
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
 <ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
+<ore:ingotCopper>.remove(<galacticraftplanets:basic_item:3>);
 //Tin
 <ore:oreTin>.remove(<forestry:resources:2>);
 <ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
