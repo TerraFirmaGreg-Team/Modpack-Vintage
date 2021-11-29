@@ -25,13 +25,11 @@ Anvil.addRecipe("tfc:TFG_plate_silver", <ore:ingotDoubleSilver>, <ore:plateSilve
 Anvil.addRecipe("tfc:TFG_plate_tin", <ore:ingotDoubleTin>, <ore:plateTin>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_zinc", <ore:ingotDoubleZinc>, <ore:plateZinc>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_sterling_silver", <ore:ingotDoubleSterlingSilver>, <ore:plateSterlingSilver>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-Anvil.addRecipe("tfc:TFG_plate_pig_iron", <tfc:metal/double_ingot/pig_iron>, <tfc:metal/sheet/pig_iron>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_steel", <ore:ingotDoubleSteel>, <ore:plateSteel>.firstItem, 4, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_platinum", <ore:ingotDoublePlatinum>, <ore:platePlatinum>.firstItem, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_black_steel", <ore:ingotDoubleBlackSteel>, <ore:plateBlackSteel>.firstItem, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_blue_steel", <ore:ingotDoubleBlueSteel>, <ore:plateBlueSteel>.firstItem, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_red_steel", <ore:ingotDoubleRedSteel>, <ore:plateRedSteel>.firstItem, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-//Anvil.addRecipe("tfc:TFG_plate_wrought_iron", <ore:ingotDoubleWroughtIron>, <tfc:metal/sheet/wrought_iron>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // --- Унификация двойных пластин
 Welding.addRecipe("tfc:TFG_double_plate_bismuth", <ore:plateBismuth>, <ore:plateBismuth>, <ore:plateDoubleBismuth>.firstItem, 1);
@@ -49,7 +47,6 @@ Welding.addRecipe("tfc:TFG_double_plate_tin", <ore:plateTin>, <ore:plateTin>, <o
 Welding.addRecipe("tfc:TFG_double_plate_zinc", <ore:plateZinc>, <ore:plateZinc>, <ore:plateDoubleZinc>.firstItem, 1);
 Welding.addRecipe("tfc:TFG_double_plate_sterling_silver", <ore:plateSterlingSilver>, <ore:plateSterlingSilver>, <ore:plateDoubleSterlingSilver>.firstItem, 1);
 Welding.addRecipe("tfc:TFG_double_plate_wrought_iron", <ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateDoubleWroughtIron>.firstItem, 3);
-Welding.addRecipe("tfc:TFG_double_plate_pig_iron", <tfc:metal/sheet/pig_iron>, <tfc:metal/sheet/pig_iron>, <tfc:metal/double_sheet/pig_iron>, 3);
 Welding.addRecipe("tfc:TFG_double_plate_steel", <ore:plateSteel>, <ore:plateSteel>, <ore:plateDoubleSteel>.firstItem, 4);
 Welding.addRecipe("tfc:TFG_double_plate_platinum", <ore:platePlatinum>, <ore:platePlatinum>, <ore:plateDoublePlatinum>.firstItem, 5);
 Welding.addRecipe("tfc:TFG_double_plate_black_steel", <ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateDoubleBlackSteel>.firstItem, 5);
@@ -59,27 +56,6 @@ Welding.addRecipe("tfc:TFG_double_plate_red_steel", <ore:plateRedSteel>, <ore:pl
 Welding.addRecipe("tfc:TFG_plate_wrought_iron", <ore:sheetWroughtIron>, <ore:plateBronze>, <tfc:metal/sheet/wrought_iron>, 3);
 
 // --- Унификация длинных палок
-Anvil.removeRecipe(<tfctech:metal/brass_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bismuth_bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/black_bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bronze_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/copper_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/gold_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/lead_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/rose_gold_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/silver_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/tin_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/sterling_silver_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/wrought_iron_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/pig_iron_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/black_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/blue_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/red_steel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/nickel_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/bismuth_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/platinum_long_rod>);
-Anvil.removeRecipe(<tfctech:metal/zinc_long_rod>);
 Anvil.addRecipe("tfctech:TFG_long_rod_brass", <ore:ingotBrass>, <gregtech:meta_stick_long:259>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:TFG_long_rod_bronze", <ore:ingotBronze>, <gregtech:meta_stick_long:260>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:TFG_long_rod_copper", <ore:ingotCopper>, <gregtech:meta_stick_long:25>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
@@ -100,30 +76,8 @@ Anvil.addRecipe("tfctech:TFG_long_rod_platinum", <ore:ingotPlatinum>, <gregtech:
 Anvil.addRecipe("tfctech:TFG_long_rod_nickel", <ore:ingotNickel>, <gregtech:meta_stick_long:69>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:TFG_long_rod_bismuth", <ore:ingotBismuth>, <gregtech:meta_stick_long:11>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:TFG_long_rod_zinc", <ore:ingotZinc>, <gregtech:meta_stick_long:122>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-//Anvil.addRecipe("tfctech:TFG_long_rod_pig_iron", <tfc:metal/ingot/pig_iron>, <gregtech:meta_stick_long:299>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // --- Унификация шестеренок
-Welding.removeRecipe(<tfctech:metal/bismuth_gear>);
-Welding.removeRecipe(<tfctech:metal/bismuth_bronze_gear>);
-Welding.removeRecipe(<tfctech:metal/black_bronze_gear>);
-Welding.removeRecipe(<tfctech:metal/brass_gear>);
-Welding.removeRecipe(<tfctech:metal/bronze_gear>);
-Welding.removeRecipe(<tfctech:metal/copper_gear>);
-Welding.removeRecipe(<tfctech:metal/gold_gear>);
-Welding.removeRecipe(<tfctech:metal/lead_gear>);
-Welding.removeRecipe(<tfctech:metal/nickel_gear>);
-Welding.removeRecipe(<tfctech:metal/rose_gold_gear>);
-Welding.removeRecipe(<tfctech:metal/silver_gear>);
-Welding.removeRecipe(<tfctech:metal/tin_gear>);
-Welding.removeRecipe(<tfctech:metal/zinc_gear>);
-Welding.removeRecipe(<tfctech:metal/sterling_silver_gear>);
-Welding.removeRecipe(<tfctech:metal/wrought_iron_gear>);
-Welding.removeRecipe(<tfctech:metal/pig_iron_gear>);
-Welding.removeRecipe(<tfctech:metal/steel_gear>);
-Welding.removeRecipe(<tfctech:metal/platinum_gear>);
-Welding.removeRecipe(<tfctech:metal/black_steel_gear>);
-Welding.removeRecipe(<tfctech:metal/blue_steel_gear>);
-Welding.removeRecipe(<tfctech:metal/red_steel_gear>);
 Welding.addRecipe("tfc:TFG_gear_bismuth", <ore:rackwheelBismuth>, <ore:sleeveTin>, <gregtech:meta_gear:11>, 1);
 Welding.addRecipe("tfc:TFG_gear_bismuth_bronze", <ore:rackwheelBismuthBronze>, <ore:sleeveTin>, <gregtech:meta_gear:303>, 2);
 Welding.addRecipe("tfc:TFG_gear_black_bronze", <ore:rackwheelBlackBronze>, <ore:sleeveTin>, <gregtech:meta_gear:302>, 2);
@@ -148,11 +102,11 @@ Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeve
 
 // --- Унификация высокоуглеродной стали
 Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
-Anvil.addRecipe("tfc:TFG_high_carbon_steel", <tfc:metal/ingot/pig_iron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // --- Унификация высокоуглеродной черной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
-Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <tfc:metal/ingot/pig_iron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
 
 // --- Унификация высокоуглеродной красной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
