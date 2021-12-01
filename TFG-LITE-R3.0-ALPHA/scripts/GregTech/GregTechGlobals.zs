@@ -7,7 +7,6 @@ global arc_furnace as RecipeMap = RecipeMap.getByName("arc_furnace");
 global assembler as RecipeMap = RecipeMap.getByName("assembler");
 global assembly_line as RecipeMap = RecipeMap.getByName("assembly_line");
 global autoclave as RecipeMap = RecipeMap.getByName("autoclave");
-global blast_alloy as RecipeMap = RecipeMap.getByName("blast_alloy");
 global electric_blast_furnace as RecipeMap = RecipeMap.getByName("electric_blast_furnace");
 global brewer as RecipeMap = RecipeMap.getByName("brewer");
 global canner as RecipeMap = RecipeMap.getByName("canner");

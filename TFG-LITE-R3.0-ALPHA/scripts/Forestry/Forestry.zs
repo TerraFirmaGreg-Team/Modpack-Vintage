@@ -211,7 +211,7 @@ compressor.recipeBuilder().inputs(<forestry:bee_combs:16> * 9).outputs(<forestry
 
 // --- Фикс пшеничных сот
 //centrifuge.findRecipe(5, [<forestry:bee_combs:14>], null).remove();
-compressor.recipeBuilder()
+centrifuge.recipeBuilder()
 	.inputs(<forestry:bee_combs:14>)
 	.chancedOutput(<forestry:honey_drop>, 2000, 1000)
 	.chancedOutput(<forestry:beeswax>, 2000, 1000)
