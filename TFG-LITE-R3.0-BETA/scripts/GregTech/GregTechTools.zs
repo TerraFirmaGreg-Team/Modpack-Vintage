@@ -40,7 +40,7 @@ recipes.removeByRecipeName("gregtech:hammer_damascus_steel");
 recipes.removeByRecipeName("gregtech:hammer_chrome");
 recipes.removeByRecipeName("gregtech:hammer_osmiridium");
 recipes.removeByRecipeName("gregtech:hammer_molybdenum");
-recipes.removeByRecipeName("gregtech:hammer_titan");
+recipes.removeByRecipeName("gregtech:hammer_titanium");
 recipes.removeByRecipeName("gregtech:hammer_palladium");
 recipes.removeByRecipeName("gregtech:hammer_rose_gold");
 recipes.removeByRecipeName("gregtech:hammer_tungsten_carbide");

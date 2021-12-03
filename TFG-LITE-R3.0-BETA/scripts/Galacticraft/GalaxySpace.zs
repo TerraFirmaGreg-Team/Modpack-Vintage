@@ -231,22 +231,22 @@ assembler.recipeBuilder()
 //Воздушные баки
 //Супер
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1575>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*8, <gregtech:meta_item_1:145>*2)
+   .inputs(<gregtech:machine:1575>*2, <ore:pipeNormalFluidWroughtIron>*4, <ore:plateLead>*8, <gregtech:meta_item_1:145>*2)
    .outputs(<galaxyspace:oxygen_tank_4:3500>)
    .duration(1000).EUt(1024).buildAndRegister();
 //Элитный
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1576>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*10, <gregtech:meta_item_1:146>*4)
+   .inputs(<gregtech:machine:1576>*2, <ore:pipeNormalFluidWroughtIron>*4, <ore:plateLead>*10, <gregtech:meta_item_1:146>*4)
    .outputs(<galaxyspace:oxygen_tank_5:4000>)
    .duration(1000).EUt(2048).buildAndRegister();
 //Омега
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1577>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*12, <gregtech:meta_item_1:147>*4)
+   .inputs(<gregtech:machine:1577>*2, <ore:pipeNormalFluidStainlessSteel>*4, <ore:plateLead>*12, <gregtech:meta_item_1:147>*4)
    .outputs(<galaxyspace:oxygen_tank_6:4500>)
    .duration(1000).EUt(4096).buildAndRegister();
 //Реген
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1579>*2, <enderio:item_liquid_conduit:1>*16, <ore:plateLead>*32, <gregtech:meta_item_1:148>*6)
+   .inputs(<gregtech:machine:1579>*2, <ore:pipeNormalFluidStainlessSteel>*16, <ore:plateLead>*32, <gregtech:meta_item_1:148>*6)
    .outputs(<galaxyspace:oxygen_tank_epp_1:2500> * 2)
    .fluidInputs([<liquid:sterilized_growth_medium>*144])
    .duration(1000).EUt(4096).buildAndRegister();

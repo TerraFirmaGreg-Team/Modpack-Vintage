@@ -476,9 +476,9 @@ recipes.addShapeless(<appliedenergistics2:part:461>, [<appliedenergistics2:part:
 //Шина P2P тунеля световая
 recipes.addShapeless(<appliedenergistics2:part:467>, [<appliedenergistics2:part:460>, <ore:glowstone>]);
 //Шина P2P тунеля предметная
-recipes.addShapeless(<appliedenergistics2:part:462>, [<appliedenergistics2:part:460>, <enderio:item_item_conduit>]);
+recipes.addShapeless(<appliedenergistics2:part:462>, [<appliedenergistics2:part:460>, <ore:pipeLargeItemCobalt>]);
 //Шина P2P тунеля FE
-recipes.addShapeless(<appliedenergistics2:part:469>, [<appliedenergistics2:part:460>, <enderio:item_power_conduit>]);
+recipes.addShapeless(<appliedenergistics2:part:469>, [<appliedenergistics2:part:460>, <ore:cableGtQuadrupleCobalt>]);
 //Якори
 recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotIron>]);
 recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotCopper>]);

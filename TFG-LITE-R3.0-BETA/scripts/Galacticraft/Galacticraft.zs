@@ -412,9 +412,9 @@ recipes.addShaped(<galacticraftcore:solar:4>,
 
 //Клапан
 recipes.addShaped(<galacticraftcore:air_vent>,
-[[<chisel:ironpane:4>, <ore:stickLongSteel>, <chisel:ironpane:4>],
+[[<minecraft:iron_bars>, <ore:stickLongSteel>, <minecraft:iron_bars>],
  [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>],
- [<chisel:ironpane:4>, <ore:stickLongSteel>, <chisel:ironpane:4>]]);
+ [<minecraft:iron_bars>, <ore:stickLongSteel>, <minecraft:iron_bars>]]);
 
 //Частотный модуль
 recipes.addShaped(<galacticraftcore:basic_item:19>,
@@ -734,17 +734,17 @@ electric_blast_furnace.recipeBuilder()
 //Баллоны
 //Легкий
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1596>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*2, <gregtech:meta_item_1:142>*2)
+   .inputs(<gregtech:machine:1596>*2, <ore:pipeTinyFluidAluminium>*4, <ore:plateLead>*2, <gregtech:meta_item_1:142>*2)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
    .duration(1000).EUt(128).buildAndRegister();
 //Средний
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1597>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*4, <gregtech:meta_item_1:143>*2)
+   .inputs(<gregtech:machine:1597>*2, <ore:pipeTinyFluidAluminium>*4, <ore:plateLead>*4, <gregtech:meta_item_1:143>*2)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
    .duration(1000).EUt(256).buildAndRegister();
 //Тяжелый
 assembler.recipeBuilder()
-   .inputs(<gregtech:machine:1597>*2, <enderio:item_liquid_conduit:1>*4, <ore:plateLead>*6, <gregtech:meta_item_1:144>*2)
+   .inputs(<gregtech:machine:1597>*2, <ore:pipeTinyFluidAluminium>*4, <ore:plateLead>*6, <gregtech:meta_item_1:144>*2)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .duration(1000).EUt(512).buildAndRegister();
 
