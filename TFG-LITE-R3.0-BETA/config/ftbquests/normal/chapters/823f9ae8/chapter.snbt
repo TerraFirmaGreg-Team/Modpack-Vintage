@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.era.title}",
-	icon: "enderio:item_material 1 9",
+	icon: "gregtech:meta_gear 1 1617",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"

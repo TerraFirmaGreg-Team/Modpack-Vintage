@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.hv.era.title}",
-	icon: "enderio:item_material 1 13",
+	icon: "gregtech:meta_gear 1 323",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "pentagon"

@@ -4,7 +4,7 @@
 	tasks: [{
 		uid: "3586cc75",
 		type: "fluid",
-		fluid: "bromine"
+		fluid: "water"
 	}],
 	rewards: [{
 		uid: "1505ad65",

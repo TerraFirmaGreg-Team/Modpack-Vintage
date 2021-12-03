@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.steam.era.title}",
-	icon: "enderio:item_material 1 10",
+	icon: "gregtech:meta_gear 1 260",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"
