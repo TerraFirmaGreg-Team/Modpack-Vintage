@@ -1,24 +1,20 @@
 {
-	x: 7.0d,
+	x: 6.5d,
 	y: -4.0d,
 	tasks: [{
 		uid: "ad5f3638",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_ingot",
-			Damage: 100s,
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSilver"
+				}
+			},
 			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+				Parent: {
+					id: "ore",
+					data: "ingotSilver"
 				}
 			}
 		}]
@@ -26,6 +22,6 @@
 	rewards: [{
 		uid: "e06006f6",
 		type: "random",
-		table: 66
+		table: 48
 	}]
 }

@@ -5,12 +5,23 @@
 		uid: "4ca00266",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 118"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotVanadium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotVanadium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "7373d06c",
 		type: "random",
-		table: 98
+		table: 80
 	}]
 }

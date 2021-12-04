@@ -1,16 +1,27 @@
 {
-	x: -2.0d,
+	x: -2.5d,
 	y: -6.0d,
 	tasks: [{
 		uid: "342ad88d",
 		type: "item",
 		items: [{
-			item: "galaxyspace:ingots 1 1"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotMagnesium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotMagnesium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "e3038a6f",
 		type: "random",
-		table: 48
+		table: 30
 	}]
 }

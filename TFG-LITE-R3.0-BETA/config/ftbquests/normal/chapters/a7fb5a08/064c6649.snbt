@@ -5,12 +5,23 @@
 		uid: "7b8ecf22",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 16"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCalcium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotCalcium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "d4d02008",
 		type: "random",
-		table: 5
+		table: 111
 	}]
 }

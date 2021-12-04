@@ -5,12 +5,23 @@
 		uid: "0d83a9ca",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 8"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBarium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBarium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "baa6dd09",
 		type: "random",
-		table: 34
+		table: 16
 	}]
 }

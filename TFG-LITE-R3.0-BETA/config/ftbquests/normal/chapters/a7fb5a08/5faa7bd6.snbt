@@ -5,12 +5,23 @@
 		uid: "b70688a3",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 10"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBeryllium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBeryllium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "56d88c79",
 		type: "random",
-		table: 39
+		table: 21
 	}]
 }

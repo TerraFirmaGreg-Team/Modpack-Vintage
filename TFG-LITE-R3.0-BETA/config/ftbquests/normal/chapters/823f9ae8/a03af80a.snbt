@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.greenpeace.title}",
 	icon: "tfc:wood/log/oak",
-	x: -25.5d,
-	y: -3.5d,
+	x: -29.5d,
+	y: -7.5d,
 	description: "{tfg.quests.primitive.greenpeace.subtitle}",
 	dependencies: [
 		"d1baef19"

@@ -1,16 +1,27 @@
 {
-	x: 3.0d,
+	x: 3.5d,
 	y: 0.0d,
 	tasks: [{
 		uid: "d142fe10",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 95"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSamarium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotSamarium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "d141ef73",
 		type: "random",
-		table: 100
+		table: 82
 	}]
 }

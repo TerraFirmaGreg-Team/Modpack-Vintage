@@ -5,12 +5,23 @@
 		uid: "745df67c",
 		type: "item",
 		items: [{
-			item: "minecraft:iron_ingot"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotIron"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "9ed46ad3",
 		type: "random",
-		table: 35
+		table: 17
 	}]
 }

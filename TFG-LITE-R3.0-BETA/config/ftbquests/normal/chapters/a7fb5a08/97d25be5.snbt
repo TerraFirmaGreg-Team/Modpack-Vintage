@@ -1,16 +1,27 @@
 {
-	x: 4.0d,
+	x: 3.5d,
 	y: -4.0d,
 	tasks: [{
 		uid: "2d2b5b68",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 93"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotRuthenium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotRuthenium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "3fe884c9",
 		type: "random",
-		table: 67
+		table: 49
 	}]
 }

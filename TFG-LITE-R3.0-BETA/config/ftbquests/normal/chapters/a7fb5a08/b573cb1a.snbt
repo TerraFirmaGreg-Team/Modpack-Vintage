@@ -5,12 +5,23 @@
 		uid: "44f76cf4",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 50"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotIridium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotIridium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "c896c866",
 		type: "random",
-		table: 86
+		table: 68
 	}]
 }

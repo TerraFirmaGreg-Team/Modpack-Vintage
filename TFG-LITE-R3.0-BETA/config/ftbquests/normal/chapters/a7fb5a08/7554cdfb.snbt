@@ -1,16 +1,27 @@
 {
-	x: 9.0d,
+	x: 8.5d,
 	y: -4.0d,
 	tasks: [{
 		uid: "42c0084a",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 48"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotIndium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotIndium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "052c2d8d",
 		type: "random",
-		table: 49
+		table: 31
 	}]
 }

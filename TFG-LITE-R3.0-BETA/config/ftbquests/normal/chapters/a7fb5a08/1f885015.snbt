@@ -1,16 +1,27 @@
 {
-	x: -3.0d,
+	x: -3.5d,
 	y: -6.0d,
 	tasks: [{
 		uid: "54fe3545",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 101"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSodium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotSodium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "3e7dde88",
 		type: "random",
-		table: 16
+		table: 103
 	}]
 }

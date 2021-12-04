@@ -5,12 +5,23 @@
 		uid: "fe2df28a",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 75"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotOsmium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotOsmium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "1959522f",
 		type: "random",
-		table: 105
+		table: 87
 	}]
 }

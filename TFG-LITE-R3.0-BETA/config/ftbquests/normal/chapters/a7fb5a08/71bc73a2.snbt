@@ -5,12 +5,23 @@
 		uid: "90c3c36e",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 83"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotPotassium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotPotassium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "ca31fde7",
 		type: "random",
-		table: 46
+		table: 28
 	}]
 }

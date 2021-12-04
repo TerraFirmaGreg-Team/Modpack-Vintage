@@ -5,12 +5,23 @@
 		uid: "e249a8e5",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 22"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotChrome"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotChrome"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "7e8d2b1c",
 		type: "random",
-		table: 32
+		table: 14
 	}]
 }

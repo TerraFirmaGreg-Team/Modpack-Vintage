@@ -1,0 +1,16 @@
+{
+	disable_toast: true,
+	x: 54.0d,
+	y: -4.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	hide: true,
+	hide_text_until_complete: true,
+	optional: true,
+	tasks: [{
+		uid: "287e7874",
+		type: "xp",
+		value: 10000000000000000L,
+		points: false
+	}]
+}

@@ -5,12 +5,23 @@
 		uid: "32b6c2a5",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 15"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCaesium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotCaesium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "2170626e",
 		type: "random",
-		table: 1
+		table: 115
 	}]
 }

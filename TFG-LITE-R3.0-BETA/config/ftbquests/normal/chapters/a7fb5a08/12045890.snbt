@@ -5,12 +5,23 @@
 		uid: "7acc3c1e",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 18"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCarbon"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotCarbon"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "bb47ff6f",
 		type: "random",
-		table: 12
+		table: 112
 	}]
 }

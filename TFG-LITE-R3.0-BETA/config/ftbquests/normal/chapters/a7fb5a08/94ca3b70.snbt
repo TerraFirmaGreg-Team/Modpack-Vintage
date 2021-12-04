@@ -1,16 +1,27 @@
 {
-	x: -1.0d,
-	y: -3.0d,
+	x: -1.5d,
+	y: 0.0d,
 	tasks: [{
 		uid: "b50d61dc",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 53"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotLanthanum"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotLanthanum"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "239ae1ff",
 		type: "random",
-		table: 64
+		table: 46
 	}]
 }

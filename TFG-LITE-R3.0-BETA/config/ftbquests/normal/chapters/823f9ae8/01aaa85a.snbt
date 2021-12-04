@@ -9,7 +9,7 @@
 			}
 		}
 	},
-	x: -22.0d,
+	x: -25.5d,
 	y: -1.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.flux.subtitle}",

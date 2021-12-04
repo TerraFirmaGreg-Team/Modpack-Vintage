@@ -1,16 +1,27 @@
 {
-	x: 9.0d,
+	x: 8.5d,
 	y: -6.0d,
 	tasks: [{
 		uid: "27a4f442",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 2"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotAluminium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "c873a373",
 		type: "random",
-		table: 18
+		table: 0
 	}]
 }

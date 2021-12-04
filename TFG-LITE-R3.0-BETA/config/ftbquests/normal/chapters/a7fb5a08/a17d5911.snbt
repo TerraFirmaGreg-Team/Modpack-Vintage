@@ -1,16 +1,27 @@
 {
-	x: 12.0d,
+	x: 11.5d,
 	y: -6.0d,
 	tasks: [{
 		uid: "5e7fbb62",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 103"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustSulfur"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSulfur"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "9d80cccc",
 		type: "random",
-		table: 74
+		table: 56
 	}]
 }

@@ -1,16 +1,27 @@
 {
-	x: -1.0d,
+	x: -1.5d,
 	y: -4.0d,
 	tasks: [{
 		uid: "40439666",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 121"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotYttrium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotYttrium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "06076300",
 		type: "random",
-		table: 75
+		table: 57
 	}]
 }

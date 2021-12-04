@@ -1,16 +1,27 @@
 {
-	x: 12.0d,
+	x: 11.5d,
 	y: -2.0d,
 	tasks: [{
 		uid: "a5e06ab9",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 57"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotLivermorium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotLivermorium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "b36bd5f0",
 		type: "random",
-		table: 73
+		table: 55
 	}]
 }

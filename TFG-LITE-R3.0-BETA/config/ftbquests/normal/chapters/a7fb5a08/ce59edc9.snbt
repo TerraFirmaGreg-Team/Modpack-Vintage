@@ -5,12 +5,23 @@
 		uid: "06efd173",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 6"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustArsenic"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustArsenic"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "51c3dd6b",
 		type: "random",
-		table: 93
+		table: 75
 	}]
 }

@@ -5,12 +5,23 @@
 		uid: "a5a9415a",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 56"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotLithium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotLithium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "16f9ed2b",
 		type: "random",
-		table: 23
+		table: 5
 	}]
 }

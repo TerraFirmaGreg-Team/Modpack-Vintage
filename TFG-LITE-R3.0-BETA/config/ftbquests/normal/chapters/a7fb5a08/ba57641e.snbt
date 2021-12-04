@@ -1,16 +1,27 @@
 {
-	x: 12.0d,
+	x: 12.5d,
 	y: 0.0d,
 	tasks: [{
 		uid: "02385364",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 58"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotLutetium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotLutetium"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "79a55704",
 		type: "random",
-		table: 89
+		table: 71
 	}]
 }

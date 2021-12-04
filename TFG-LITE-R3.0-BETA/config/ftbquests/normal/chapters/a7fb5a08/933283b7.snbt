@@ -5,19 +5,16 @@
 		uid: "7ac25168",
 		type: "item",
 		items: [{
-			id: "minecraft:gold_ingot",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotGold"
+				}
+			},
 			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+				Parent: {
+					id: "ore",
+					data: "ingotGold"
 				}
 			}
 		}]
@@ -25,6 +22,6 @@
 	rewards: [{
 		uid: "67f1560e",
 		type: "random",
-		table: 63
+		table: 45
 	}]
 }

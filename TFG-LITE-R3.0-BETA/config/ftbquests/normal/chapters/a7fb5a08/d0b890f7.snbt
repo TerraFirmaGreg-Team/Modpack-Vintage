@@ -1,6 +1,10 @@
 {
-	x: 2.0d,
+	x: 1.5d,
 	y: -2.0d,
+	dependencies: [
+		"287e7874"
+	],
+	hide: true,
 	tasks: [{
 		uid: "a9b4faff",
 		type: "item",
@@ -11,6 +15,6 @@
 	rewards: [{
 		uid: "de4eb935",
 		type: "random",
-		table: 94
+		table: 76
 	}]
 }

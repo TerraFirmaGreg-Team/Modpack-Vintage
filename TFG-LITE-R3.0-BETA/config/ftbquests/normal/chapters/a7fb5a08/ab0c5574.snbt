@@ -1,5 +1,5 @@
 {
-	x: 14.0d,
+	x: 13.5d,
 	y: -8.0d,
 	tasks: [{
 		uid: "59990428",
@@ -9,6 +9,6 @@
 	rewards: [{
 		uid: "74062742",
 		type: "random",
-		table: 79
+		table: 61
 	}]
 }

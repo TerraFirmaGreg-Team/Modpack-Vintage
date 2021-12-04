@@ -5,12 +5,23 @@
 		uid: "28b80004",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 115"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotTungsten"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotTungsten"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "8abe472b",
 		type: "random",
-		table: 81
+		table: 63
 	}]
 }

@@ -5,12 +5,23 @@
 		uid: "fbae4cdb",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 104"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotTantalum"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotTantalum"
+				}
+			}
 		}]
 	}],
 	rewards: [{
 		uid: "37e92c53",
 		type: "random",
-		table: 91
+		table: 73
 	}]
 }

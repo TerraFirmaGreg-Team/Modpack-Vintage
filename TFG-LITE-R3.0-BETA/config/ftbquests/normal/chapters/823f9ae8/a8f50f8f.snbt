@@ -1,9 +1,12 @@
 {
 	title: "{tfg.quests.primitive.fuelNumber2.title}",
-	x: -16.5d,
-	y: -3.0d,
+	x: -16.0d,
+	y: -2.5d,
 	description: "{tfg.quests.primitive.fuelNumber2.subtitle}",
 	dependencies: [
+		"c66b2411",
+		"b3cca318",
+		"8c49e66c",
 		"639cd212"
 	],
 	tasks: [{
