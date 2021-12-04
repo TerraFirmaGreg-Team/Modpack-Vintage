@@ -1,0 +1,16 @@
+{
+	x: -5.5d,
+	y: -8.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.steam.steelcasing.subtitle}",
+	dependencies: [
+		"e6318f88"
+	],
+	tasks: [{
+		uid: "8cd860ee",
+		type: "item",
+		items: [{
+			item: "gregtech:steam_casing 1 2"
+		}]
+	}]
+}

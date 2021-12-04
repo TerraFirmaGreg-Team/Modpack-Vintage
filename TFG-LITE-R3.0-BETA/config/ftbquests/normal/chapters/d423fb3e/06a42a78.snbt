@@ -1,0 +1,18 @@
+{
+	x: -12.0d,
+	y: -12.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.steamfurnace.subtitle}",
+	dependencies: [
+		"bf81da5c",
+		"6d19301b"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "0f62851e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 15"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: -5.0d,
+	shape: "hexagon",
+	dependencies: [
+		"cade6fd1"
+	],
+	tasks: [{
+		uid: "4c8e37c1",
+		type: "item",
+		items: [{
+			item: "forestry:fertilizer_compound"
+		}]
+	}]
+}

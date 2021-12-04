@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.space.cosmicbed.title}",
+	x: 11.5d,
+	y: -6.0d,
+	description: "{tfg.quests.space.cosmicbed.subtitle}",
+	dependencies: [
+		"f6e1782c",
+		"5f7fe3e6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bb05991a",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:mars_machine 1 4"
+		}]
+	}]
+}

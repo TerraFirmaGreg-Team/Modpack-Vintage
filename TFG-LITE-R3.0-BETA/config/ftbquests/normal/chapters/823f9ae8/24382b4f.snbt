@@ -1,0 +1,19 @@
+{
+	title: "{tfg.quests.primitive.burlap.title}",
+	x: -19.0d,
+	y: 8.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.primitive.burlap.subtitle}",
+	dependencies: [
+		"69e1f22f",
+		"14ed0d1e"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "e402e07b",
+		type: "item",
+		items: [{
+			item: "tfc:crop/product/burlap_cloth"
+		}]
+	}]
+}

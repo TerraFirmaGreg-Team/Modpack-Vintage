@@ -1,0 +1,17 @@
+{
+	x: -23.5d,
+	y: 10.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "7f7c8e53",
+		type: "item",
+		items: [{
+			item: "tfc:spindle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

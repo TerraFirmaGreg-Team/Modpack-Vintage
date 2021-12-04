@@ -1,0 +1,16 @@
+{
+	x: -13.5d,
+	y: -8.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzebrickedhull.subtitle}",
+	dependencies: [
+		"7d03eeb7"
+	],
+	tasks: [{
+		uid: "417846cd",
+		type: "item",
+		items: [{
+			item: "gregtech:steam_casing 1 1"
+		}]
+	}]
+}

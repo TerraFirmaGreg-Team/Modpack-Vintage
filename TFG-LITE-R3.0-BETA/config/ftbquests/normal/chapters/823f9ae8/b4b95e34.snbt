@@ -1,0 +1,25 @@
+{
+	x: -5.0d,
+	y: 1.0d,
+	dependencies: [
+		"f573e4d8"
+	],
+	tasks: [{
+		uid: "72a26bb5",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any blowpipe"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "blowpipe"
+				}
+			}
+		}]
+	}]
+}

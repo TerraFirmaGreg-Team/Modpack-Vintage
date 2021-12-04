@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.primitive.grains.title}",
+	x: -12.5d,
+	y: 2.5d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.grains.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "d32f0738",
+		type: "item",
+		title: "Any categoryGrain",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "categoryGrain"
+				}
+			}
+		}]
+	}]
+}

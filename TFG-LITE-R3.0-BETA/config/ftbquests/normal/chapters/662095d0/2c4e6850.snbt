@@ -1,0 +1,21 @@
+{
+	x: -2.0d,
+	y: 5.5d,
+	shape: "circle",
+	description: "Fe, Au, Nd, Ke   40% Small Pile, 20% Nugget",
+	text: [
+		""
+	],
+	dependencies: [
+		"82520677"
+	],
+	hide: true,
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "f078bf7e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 306"
+		}]
+	}]
+}

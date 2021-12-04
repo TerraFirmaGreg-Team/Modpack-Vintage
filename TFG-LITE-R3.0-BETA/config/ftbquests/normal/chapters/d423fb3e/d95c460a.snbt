@@ -1,0 +1,16 @@
+{
+	x: -16.5d,
+	y: -6.5d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzeforgehammer.subtitle}",
+	dependencies: [
+		"5347bf68"
+	],
+	tasks: [{
+		uid: "786218e1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 13"
+		}]
+	}]
+}

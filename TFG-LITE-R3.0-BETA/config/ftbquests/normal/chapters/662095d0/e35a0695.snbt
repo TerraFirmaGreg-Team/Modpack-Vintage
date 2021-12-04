@@ -1,0 +1,22 @@
+{
+	x: -10.5d,
+	y: 2.5d,
+	shape: "circle",
+	description: "Mercury -> Ag, Au, Pt, Os..(70%)              Sodium Persulfate ->Co, Cu, Zn, Ni..(70%)",
+	text: [
+		""
+	],
+	dependencies: [
+		"bf4aede8"
+	],
+	hide: true,
+	dependency_requirement: "one_started",
+	optional: true,
+	tasks: [{
+		uid: "b31c6e4b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 216"
+		}]
+	}]
+}

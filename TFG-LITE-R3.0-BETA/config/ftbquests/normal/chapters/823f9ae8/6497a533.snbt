@@ -1,0 +1,14 @@
+{
+	x: -27.5d,
+	y: 6.0d,
+	dependencies: [
+		"bc100163"
+	],
+	tasks: [{
+		uid: "f3460454",
+		type: "item",
+		items: [{
+			item: "tfctech:wire_draw_bench"
+		}]
+	}]
+}

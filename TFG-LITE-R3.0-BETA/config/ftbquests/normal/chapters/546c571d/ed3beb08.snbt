@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: 13.5d,
+	shape: "square",
+	dependencies: [
+		"da69cbdc"
+	],
+	hide: true,
+	tasks: [{
+		uid: "804702c6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 256"
+		}]
+	}]
+}

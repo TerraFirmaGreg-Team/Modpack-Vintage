@@ -1,0 +1,25 @@
+{
+	icon: "gregtech:machine 1 426",
+	x: -3.5d,
+	y: 2.5d,
+	shape: "circle",
+	description: "Forge Hammer can replace Macerator.",
+	text: [
+		"Processing is faster and lower in energy usage, but does not double ores or produce byproducts. Obtaining byproducts with a Macerator requieres at least HV (Universal Macerator)"
+	],
+	dependencies: [
+		"5ff895bc",
+		"bf4aede8",
+		"b151aab2"
+	],
+	hide: true,
+	dependency_requirement: "one_started",
+	optional: true,
+	tasks: [{
+		uid: "b5cad2e8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 426"
+		}]
+	}]
+}

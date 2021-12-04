@@ -1,0 +1,34 @@
+{
+	title: "{tfg.quests.primitive.cheese.title}",
+	x: -14.0d,
+	y: 3.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.cheese.subtitle}",
+	dependencies: [
+		"d2b461b8",
+		"d5960a87",
+		"ffb7544a"
+	],
+	tasks: [{
+		uid: "b59703fa",
+		type: "item",
+		items: [{
+			item: "firmalife:cheddar_wheel"
+		},
+		{
+			item: "firmalife:chevre_wheel"
+		},
+		{
+			item: "firmalife:rajya_metok_wheel"
+		},
+		{
+			item: "firmalife:gouda_wheel"
+		},
+		{
+			item: "firmalife:feta_wheel"
+		},
+		{
+			item: "firmalife:shosha_wheel"
+		}]
+	}]
+}

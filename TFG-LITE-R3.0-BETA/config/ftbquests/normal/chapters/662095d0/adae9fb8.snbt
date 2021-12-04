@@ -1,0 +1,19 @@
+{
+	x: -7.5d,
+	y: 7.0d,
+	shape: "circle",
+	description: "Gems & Dust",
+	dependencies: [
+		"b151aab2"
+	],
+	hide: true,
+	dependency_requirement: "one_started",
+	optional: true,
+	tasks: [{
+		uid: "e108f000",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 591"
+		}]
+	}]
+}

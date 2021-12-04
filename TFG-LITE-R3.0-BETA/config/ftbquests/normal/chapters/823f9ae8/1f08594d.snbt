@@ -1,0 +1,24 @@
+{
+	x: -23.5d,
+	y: 8.0d,
+	min_required_dependencies: 2,
+	dependencies: [
+		"2816fe72",
+		"9160e91d",
+		"6df7dbf0"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "d48ff754",
+		type: "item",
+		items: [{
+			id: "improvedbackpacks:tanned_leather",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	x: 3.5d,
+	y: 6.5d,
+	shape: "square",
+	dependencies: [
+		"feac22dc"
+	],
+	tasks: [{
+		uid: "1a5ea7ec",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCupronickel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotCupronickel"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -9.5d,
+	y: -22.0d,
+	dependencies: [
+		"40c4948a"
+	],
+	tasks: [{
+		uid: "3fb3a4b3",
+		type: "item",
+		items: [{
+			item: "tfctech:electric_forge"
+		}]
+	}]
+}

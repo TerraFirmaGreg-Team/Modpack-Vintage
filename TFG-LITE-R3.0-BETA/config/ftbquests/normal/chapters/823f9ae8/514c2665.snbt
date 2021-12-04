@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.kaolinitepile.title}",
+	x: 0.0d,
+	y: 2.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "3298f0d1",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustKaolinite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustKaolinite"
+				}
+			}
+		}]
+	}]
+}

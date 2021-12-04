@@ -1,0 +1,14 @@
+{
+	x: 13.0d,
+	y: -6.0d,
+	tasks: [{
+		uid: "02a395c5",
+		type: "fluid",
+		fluid: "chlorine"
+	}],
+	rewards: [{
+		uid: "9dc6e80a",
+		type: "random",
+		table: 77
+	}]
+}

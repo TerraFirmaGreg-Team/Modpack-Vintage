@@ -1,0 +1,13 @@
+{
+	x: -6.5d,
+	y: 12.5d,
+	shape: "rsquare",
+	dependencies: [
+		"176fe26d"
+	],
+	tasks: [{
+		uid: "7cfa6426",
+		type: "fluid",
+		fluid: "rubber"
+	}]
+}

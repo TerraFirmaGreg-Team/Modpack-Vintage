@@ -1,0 +1,18 @@
+{
+	x: 2.0d,
+	y: -6.0d,
+	shape: "circle",
+	dependencies: [
+		"6c5c4859"
+	],
+	tasks: [{
+		uid: "3ef9f316",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:memory_card",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

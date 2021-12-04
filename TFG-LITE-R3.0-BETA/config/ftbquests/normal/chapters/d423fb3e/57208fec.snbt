@@ -1,0 +1,30 @@
+{
+	x: -12.0d,
+	y: -3.5d,
+	description: "{tfg.quests.steam.creosoteoven.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "d2963a7f",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 1 8"
+		}],
+		count: 24L
+	},
+	{
+		uid: "be903e39",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1016"
+		}]
+	},
+	{
+		uid: "4cb6f69d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1017"
+		}]
+	}]
+}

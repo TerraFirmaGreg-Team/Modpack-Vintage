@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.steelingot.title}",
+	x: 4.5d,
+	y: -5.0d,
+	shape: "octagon",
+	description: "{tfg.quests.primitive.steelingot.subtitle}",
+	dependencies: [
+		"b0bada7a",
+		"d6b816dd"
+	],
+	tasks: [{
+		uid: "348c9b15",
+		type: "item",
+		title: "Стальной слиток",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSteel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotSteel"
+				}
+			}
+		}]
+	}]
+}

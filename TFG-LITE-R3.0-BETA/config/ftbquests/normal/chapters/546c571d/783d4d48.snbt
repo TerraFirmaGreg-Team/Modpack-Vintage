@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: 4.0d,
+	dependencies: [
+		"0e6d918f",
+		"83eca8c3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8c2e4088",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			tag: {
+				T: 0s
+			}
+		}],
+		ignore_damage: true
+	}]
+}

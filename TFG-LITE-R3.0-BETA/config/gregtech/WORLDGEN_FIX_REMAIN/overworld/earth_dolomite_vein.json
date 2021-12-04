@@ -1,0 +1,38 @@
+{
+  "weight": 40,
+  "density": 0.6,
+  "min_height": 150,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "dolomite"
+  },
+  "generation_predicate": ["ore_dict:RawIgneousExtrusive", "ore_dict:RawMetamorphic"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 32]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:dolomite"
+        },
+        {
+          "weight": 30,
+          "value": "ore:wollastonite"
+        },
+        {
+          "weight": 30,
+          "value": "ore:trona"
+        },
+        {
+          "weight": 10,
+          "value": "ore:garnet_yellow"
+        }
+      ]
+    }
+  }
+}

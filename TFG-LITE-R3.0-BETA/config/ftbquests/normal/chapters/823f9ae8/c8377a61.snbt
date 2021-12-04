@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.primitive.planks.title}",
+	icon: "tfc:wood/lumber/maple",
+	x: -20.5d,
+	y: 0.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.planks.subtitle}",
+	dependencies: [
+		"1ccd9dd8"
+	],
+	tasks: [{
+		uid: "c906c6d9",
+		type: "item",
+		title: "Доски",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lumber"
+				}
+			}
+		}],
+		count: 8L
+	}]
+}

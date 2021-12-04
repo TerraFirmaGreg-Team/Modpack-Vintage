@@ -1,0 +1,35 @@
+{
+	x: 3.0d,
+	y: 10.5d,
+	shape: "rsquare",
+	min_required_dependencies: 2,
+	dependencies: [
+		"f623d356"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "25478cf7",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustGreenSapphire"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustGreenSapphire"
+				}
+			}
+		}]
+	},
+	{
+		uid: "12e9e2d8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 314"
+		}]
+	}]
+}

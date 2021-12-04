@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: -1.0d,
+	dependencies: [
+		"907bc789"
+	],
+	tasks: [{
+		uid: "16da5f04",
+		type: "item",
+		items: [{
+			item: "forestry:apiarist_bag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

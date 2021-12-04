@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: -1.5d,
+	dependencies: [
+		"7f29a641"
+	],
+	tasks: [{
+		uid: "2e8b82f9",
+		type: "item",
+		items: [{
+			item: "forestry:thermionic_tubes 1 7"
+		}]
+	}]
+}

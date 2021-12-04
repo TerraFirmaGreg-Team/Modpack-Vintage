@@ -1,0 +1,37 @@
+{
+	x: -9.0d,
+	y: -3.5d,
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "e2b2a12b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1647"
+		}]
+	},
+	{
+		uid: "7553d3a7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1648"
+		}]
+	},
+	{
+		uid: "c9728730",
+		type: "item",
+		items: [{
+			item: "gregtech:frame_wood"
+		}],
+		count: 10L
+	},
+	{
+		uid: "4a1cc8f2",
+		type: "item",
+		items: [{
+			item: "gregtech:steam_casing 1 4"
+		}],
+		count: 10L
+	}]
+}

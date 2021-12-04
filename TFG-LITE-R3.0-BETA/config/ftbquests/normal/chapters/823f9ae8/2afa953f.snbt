@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.primitive.tfccrusible.title}",
+	disable_toast: true,
+	x: 2.0d,
+	y: -3.5d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.tfccrusible.subtitle}",
+	dependencies: [
+		"ccccbec4"
+	],
+	tasks: [{
+		uid: "654ad28d",
+		type: "item",
+		items: [{
+			item: "tfc:crucible"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

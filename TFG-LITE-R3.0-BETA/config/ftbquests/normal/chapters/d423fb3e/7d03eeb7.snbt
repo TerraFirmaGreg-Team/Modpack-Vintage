@@ -1,0 +1,32 @@
+{
+	x: -13.5d,
+	y: -6.5d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzeingot.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "87e13187",
+		type: "item",
+		title: "{tfg.quests.steam.bronzeingot.title}",
+		items: [{
+			id: "gregtech:meta_plate",
+			Damage: 260s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}
