@@ -1,7 +1,0 @@
-{
-	title: "{imm.quests.mendeleevtable.era.title}",
-	icon: "galaxyspace:schematics 1 5",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "square"
-}
