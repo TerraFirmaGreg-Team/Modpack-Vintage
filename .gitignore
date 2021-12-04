@@ -48,3 +48,6 @@ TFG-LITE-R3.0-BETA/backups/
 TFG-LITE-R3.0-BETA/config/AppliedEnergistics2/CustomRecipes.cfg
 TFG-LITE-R3.0-BETA/config/AppliedEnergistics2/items.csv
 TFG-LITE-R3.0-BETA/config/splash.properties
+TFG-LITE-R3.0-BETA/logs/
+*.json
+
