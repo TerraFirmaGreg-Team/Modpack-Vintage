@@ -10,11 +10,16 @@
 		uid: "b6ad45ab",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 9s,
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
+				display: {
+					Name: "Any craftingToolFile"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolFile"
 				}
 			}
 		}],
