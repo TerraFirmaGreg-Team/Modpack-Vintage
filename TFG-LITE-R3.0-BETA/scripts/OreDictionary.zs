@@ -25,7 +25,7 @@ for item in RawSedimentary {
 }
 
 //Seeds
-var RawSedimentary = [
+var AllSeeds = [
 	<tfc:crop/seeds/barley>,
 	<tfc:crop/seeds/maize>,
 	<tfc:crop/seeds/oat>,
@@ -78,7 +78,7 @@ var RawSedimentary = [
 	<tfcflorae:crop/seeds/woad>,
 	<tfcflorae:crop/seeds/tobacco>
 	] as IItemStack[];
-for item in RawSedimentary {
+for item in AllSeeds {
 	<ore:listAllSeeds>.add(item);
 }
 
