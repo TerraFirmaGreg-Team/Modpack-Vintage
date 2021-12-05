@@ -30,12 +30,12 @@ for item in ItemsToRemove{
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
 
 //Переработка танков в Arc
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1501>).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1502>).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1503>).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1504>).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1505>).outputs(<ore:ingotTitanium>.firstItem * 3).duration(400).EUt(1560).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1506>).outputs(<ore:ingotTungstenSteel>.firstItem * 3).duration(400).EUt(2560).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1596>).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1597>).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1598>).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1599>).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1600>).outputs(<ore:ingotTitanium>.firstItem * 3).duration(400).EUt(1560).buildAndRegister();
+arc_furnace.recipeBuilder().inputs(<gregtech:machine:1601>).outputs(<ore:ingotTungstenSteel>.firstItem * 3).duration(400).EUt(2560).buildAndRegister();
 
 //Сундуки можно переработать
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1487>).outputs(<ore:ingotBronze>.firstItem * 10).EUt(8).duration(400).buildAndRegister();
@@ -170,7 +170,9 @@ mixer.recipeBuilder()
 
 //Отключение крафта одинарных пластин в верстаке
 val GTPlates = [
+    "gregtech:plate_livermorium",
     "gregtech:plate_rubber",
+    "gregtech:plate_rhodium_plated_palladium",
     "gregtech:plate_aluminium",
 	"gregtech:plate_iron_magnetic",
     "gregtech:plate_naquadah",
@@ -197,6 +199,7 @@ val GTPlates = [
     "gregtech:plate_erbium",
     "gregtech:plate_terbium",
     "gregtech:plate_niobium_titanium",
+    "gregtech:plate_titanium",
     "gregtech:plate_damascus_steel",
     "gregtech:plate_iridium",
     "gregtech:wrench_tungsten_steel",
@@ -310,7 +313,9 @@ for item in GTPlates{
 
 //Отключение крафта двойных пластин в верстаке
 val GTDoublePlates = [
+    "gregtech:plate_double_livermorium",
 	"gregtech:plate_double_blue_steel",
+    "gregtech:plate_rhodium_plated_palladium",
     "gregtech:plate_double_cobalt_brass",
     "gregtech:plate_double_copper",
     "gregtech:plate_double_naquadah_enriched",

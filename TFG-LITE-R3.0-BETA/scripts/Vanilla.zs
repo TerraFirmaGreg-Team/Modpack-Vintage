@@ -208,8 +208,8 @@ recipes.addShaped(<minecraft:brewing_stand>, [
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,
-[[<ore:plateCurvedWroughtIron>, <tfc:metal/bucket/blue_steel>.noReturn(), <ore:plateCurvedWroughtIron>],
- [<ore:plateCurvedWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateCurvedWroughtIron>],
+[[<ore:plateWroughtIron>, <tfc:metal/bucket/blue_steel>.noReturn(), <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateWroughtIron>],
  [null, <ore:plateWroughtIron>, null]]);
 
 //Крусибл

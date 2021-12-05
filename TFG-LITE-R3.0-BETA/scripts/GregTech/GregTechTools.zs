@@ -7,6 +7,12 @@ recipes.removeByRecipeName("gregtech:knife_flint");
 recipes.removeByRecipeName("gregtech:hoe_flint");
 recipes.removeByRecipeName("gregtech:mortar_flint");
 
+//Крафт каменного молота
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/igneous_intrusive>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/igneous_extrusive>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/sedimentary>]);
+recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/metamorphic>]);
+
 //Отключение крафтов молотков с палкой(62)
 recipes.removeByRecipeName("gregtech:hammer_naquadah_enriched");
 recipes.removeByRecipeName("gregtech:hammer_naquadah_alloy");
@@ -41,6 +47,7 @@ recipes.removeByRecipeName("gregtech:hammer_chrome");
 recipes.removeByRecipeName("gregtech:hammer_osmiridium");
 recipes.removeByRecipeName("gregtech:hammer_molybdenum");
 recipes.removeByRecipeName("gregtech:hammer_titanium");
+recipes.removeByRecipeName("gregtech:hammer_rhodium_plated_palladium");
 recipes.removeByRecipeName("gregtech:hammer_palladium");
 recipes.removeByRecipeName("gregtech:hammer_rose_gold");
 recipes.removeByRecipeName("gregtech:hammer_tungsten_carbide");

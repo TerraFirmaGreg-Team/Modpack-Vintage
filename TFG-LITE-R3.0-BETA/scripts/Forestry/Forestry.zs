@@ -179,7 +179,7 @@ Carpenter.removeRecipe(<forestry:ingot_bronze>);
 Carpenter.removeRecipe(<forestry:ingot_bronze> * 2);
 Carpenter.removeRecipe(<forestry:carton>);
 Carpenter.removeRecipe(<forestry:wood_pulp>);
-Carpenter.removeRecipe(<forestry:oak_stick> * 2);
+//Carpenter.removeRecipe(<forestry:oak_stick> * 2);
 Carpenter.removeRecipe(<minecraft:paper>);
 Carpenter.removeRecipe(<forestry:humus> * 9);
 Carpenter.removeRecipe(<forestry:escritoire>);
@@ -231,11 +231,10 @@ Carpenter.addRecipe(<forestry:escritoire>,
  [<ore:plankWood>, <ore:circuitBasic>, <ore:plankWood>]], 250, <liquid:seed.oil> * 500);
 
 // --- Habitat Screen
-/*
 Carpenter.addRecipe(<forestry:habitat_screen>,
-[[null, <gregtech:meta_item_1:32690>, null],
+[[null, <gregtech:meta_item_1:799>, null],
  [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
- [null, <ore:plateTin>, null]], 250, <liquid:water> * 2000);*/
+ [null, <ore:plateTin>, null]], 250, <liquid:water> * 2000);
 
 // --- Portable Analyzer
 Carpenter.addRecipe(<forestry:portable_alyzer>,
@@ -399,19 +398,6 @@ Carpenter.addRecipe(<forestry:ffarm:5>.withTag({FarmBlock: 10}),
  [null, <forestry:ffarm>.withTag({FarmBlock: 10}), null],
  [<ore:cableGtQuadrupleRedAlloy>, <forestry:thermionic_tubes:11>, <ore:cableGtQuadrupleRedAlloy>]], 1000, <liquid:creosote> * 2500, <ore:circuitBasic>.firstItem);
 
-// --- Genetics Processor
-circuit_assembler.recipeBuilder()
-	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gregtech:meta_item_1:268>*4)
-	.fluidInputs([<liquid:soldering_alloy> * 288])
-	.outputs(<gendustry:genetics_processor>)
-	.duration(5000).EUt(32).buildAndRegister();
-// --- Enviromental Processor
-circuit_assembler.recipeBuilder()
-	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gregtech:meta_item_1:269>*6)
-	.fluidInputs([<liquid:soldering_alloy> * 288])
-	.outputs(<gendustry:env_processor>)
-	.duration(5000).EUt(32).buildAndRegister();
-
 // --- Капля меда
 centrifuge.recipeBuilder()
 	.inputs(<forestry:bee_combs>)
@@ -429,7 +415,7 @@ extractor.recipeBuilder()
 // --- Basic Circuit Board
 circuit_assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:217>, <appliedenergistics2:material:17>, <ore:wireGtSingleAluminium>*4)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:0>.withTag({T: 0 as short}))
 	.duration(200).EUt(30).buildAndRegister();
@@ -437,21 +423,21 @@ circuit_assembler.recipeBuilder()
 // --- Enhanced Circuit Board
 circuit_assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:218>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleAnnealedCopper>*4)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:1>.withTag({T: 1 as short}))
 	.duration(200).EUt(30).buildAndRegister();
 
 // --- Refined Circuit Board
 circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:219>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleBlackSteel>*4)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:2>.withTag({T: 2 as short}))
 	.duration(200).EUt(30).buildAndRegister();
 
 // --- Intricate Circuit Board
 circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:220>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleGold>*4)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
+	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:3>.withTag({T: 3 as short}))
 	.duration(200).EUt(30).buildAndRegister();
@@ -473,7 +459,7 @@ recipes.addShaped(<forestry:soldering_iron>,
 
 // --- Карпентер
 recipes.addShaped(<forestry:carpenter>, 
-[[<ore:plateCupronickel>, <gregtech:machine:1502>, <ore:plateCupronickel>],
+[[<ore:plateCupronickel>, <gregtech:machine:1597>, <ore:plateCupronickel>],
  [<ore:circuitBasic>, <forestry:sturdy_machine>, <ore:circuitBasic>],
  [<ore:gearSteel>, <ore:circuitBasic>, <ore:gearSteel>]]);
 
@@ -505,7 +491,7 @@ recipes.addShaped(<forestry:bee_house>,
 // --- Определитель окружающей среды
 recipes.addShaped(<forestry:habitat_locator>,
 [[null, <ore:plateCopper>, null],
- [<ore:plateCopper>, <gregtech:meta_item_1:163>, <ore:plateCopper>],
+ [<ore:plateCopper>, <gregtech:meta_item_1:233>, <ore:plateCopper>],
  [null, <ore:plateCopper>, null]]);
 
 // --- Рамка простая
@@ -529,7 +515,7 @@ recipes.addShaped(<forestry:smoker>,
 // --- Бочка под дождь
 recipes.addShaped(<forestry:raintank>,
 [[<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>],
- [<ore:plateSteel>, <gregtech:machine:1502>, <ore:plateSteel>],
+ [<ore:plateSteel>, <gregtech:machine:1597>, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>]]);
 
 // --- Создаватель окружающей среды

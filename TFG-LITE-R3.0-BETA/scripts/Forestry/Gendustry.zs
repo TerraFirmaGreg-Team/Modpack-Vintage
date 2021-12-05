@@ -123,6 +123,19 @@ centrifuge.recipeBuilder()
 	.duration(30).EUt(5).buildAndRegister();
 
 //Создание рецептов
+// --- Genetics Processor
+circuit_assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAnnealedCopper>*4, <gregtech:meta_item_1:382>*4)
+	.fluidInputs([<liquid:soldering_alloy> * 288])
+	.outputs(<gendustry:genetics_processor>)
+	.duration(5000).EUt(32).buildAndRegister();
+// --- Enviromental Processor
+circuit_assembler.recipeBuilder()
+	.inputs(<ore:circuitBasic>, <ore:plateRoseGold>, <ore:cableGtSingleAluminium>*4, <gregtech:meta_item_1:383>*6)
+	.fluidInputs([<liquid:soldering_alloy> * 288])
+	.outputs(<gendustry:env_processor>)
+	.duration(5000).EUt(32).buildAndRegister();
+
 //Образец гена пустой
 recipes.addShaped(<gendustry:gene_sample_blank>, 
 [[null ,<ore:plateTin>, null],

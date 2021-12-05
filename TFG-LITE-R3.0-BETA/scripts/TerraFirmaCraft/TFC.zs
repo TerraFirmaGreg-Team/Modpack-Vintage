@@ -313,34 +313,27 @@ chemical_bath.recipeBuilder().inputs(<tfc:aggregate>).fluidInputs([<liquid:black
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
 recipes.addShaped(<gregtech:machine:13>, 
-[[<ore:pipeSmallBronze>, <ore:craftingPiston>, <ore:pipeSmallBronze>],
- [<ore:pipeSmallBronze>, <gregtech:machine_casing:10>, <ore:pipeSmallBronze>],
- [<ore:pipeSmallBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallBronze>]]);
+[[<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallFluidBronze>]]);
  
 //Крафт стального парового молотка
 recipes.remove(<gregtech:machine:14>);
 recipes.addShaped(<gregtech:machine:14>,
-[[<ore:pipeSmallSteel>, <ore:craftingPiston>, <ore:pipeSmallSteel>],
- [<ore:pipeSmallSteel>, <gregtech:machine_casing:12>, <ore:pipeSmallSteel>],
- [<ore:pipeSmallSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallSteel>]]);
+[[<ore:pipeSmallFluidSteel>, <ore:craftingPiston>, <ore:pipeSmallFluidSteel>],
+ [<ore:pipeSmallFluidSteel>, <gregtech:steam_casing:2>, <ore:pipeSmallFluidSteel>],
+ [<ore:pipeSmallFluidSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallFluidSteel>]]);
 
 //Compressed coke clay
-/*
-recipes.removeByRecipeName("gtadditions:coke_brick");
-recipes.addShaped(<gtadditions:ga_meta_item:32036>*3,
+recipes.remove(<gregtech:meta_item_1:350>);
+recipes.addShaped(<gregtech:meta_item_1:350> * 3,
 [[<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
- [<ore:sand>, <gregtech:meta_item_2:32012>, <ore:sand>],
+ [<ore:sand>, <gregtech:meta_item_1:348>, <ore:sand>],
  [<ore:sand>, <ore:sand>, <ore:sand>]]);
- 
-recipes.removeByRecipeName("gtadditions:ga_casing_lv");
-recipes.addShaped(<gregtech:machine_casing:1>,
-[[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
- [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
- [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
-*/
+
 //Фикс крафта деревянной панельки
 recipes.removeByRecipeName("gregtech:plank_to_wooden_shape");
-recipes.addShaped(<gregtech:meta_item_1:196>,
+recipes.addShaped(<gregtech:meta_item_1:347>,
 [[null, <ore:lumber>, null],
  [null, <ore:lumber>, null],
  [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>, null]]);
