@@ -171,7 +171,6 @@ Carpenter.removeRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}));
 Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
 Carpenter.removeRecipe(<forestry:soldering_iron>);
 Carpenter.removeRecipe(<forestry:hardened_machine>);
-Carpenter.removeRecipe(<forestry:impregnated_casing>);
 Carpenter.removeRecipe(<forestry:kit_shovel>);
 Carpenter.removeRecipe(<forestry:kit_pickaxe>);
 Carpenter.removeRecipe(<forestry:bog_earth> * 8);
@@ -179,7 +178,6 @@ Carpenter.removeRecipe(<forestry:ingot_bronze>);
 Carpenter.removeRecipe(<forestry:ingot_bronze> * 2);
 Carpenter.removeRecipe(<forestry:carton>);
 Carpenter.removeRecipe(<forestry:wood_pulp>);
-//Carpenter.removeRecipe(<forestry:oak_stick> * 2);
 Carpenter.removeRecipe(<minecraft:paper>);
 Carpenter.removeRecipe(<forestry:humus> * 9);
 Carpenter.removeRecipe(<forestry:escritoire>);
@@ -187,7 +185,7 @@ Carpenter.removeRecipe(<forestry:portable_alyzer>);
 Carpenter.removeRecipe(<forestry:candle>);
 Carpenter.removeRecipe(<forestry:habitat_screen>);
 
-//Удаление поименно.
+//Удаление поименно
 recipes.removeByRecipeName("forestry:greenhouse_window");
 recipes.removeByRecipeName("forestry:greenhouse_window_roof");
 recipes.removeByRecipeName("forestry:greenhouse_fan");
@@ -407,10 +405,13 @@ centrifuge.recipeBuilder()
 
 // --- Seed Oil
 extractor.findRecipe(2, [<minecraft:beetroot_seeds>], null).remove();
+extractor.findRecipe(2, [<minecraft:pumpkin_seeds>], null).remove();
+extractor.findRecipe(2, [<minecraft:melon_seeds>], null).remove();
+extractor.findRecipe(2, [<minecraft:wheat_seeds>], null).remove();
 extractor.recipeBuilder()
-	.inputs(<ore:listAllseed>)
+	.inputs(<ore:listAllSeeds>)
 	.fluidOutputs(<liquid:seed.oil>*20)
-	.duration(20).EUt(20).buildAndRegister();
+	.duration(20).EUt(2).buildAndRegister();
 
 // --- Basic Circuit Board
 circuit_assembler.recipeBuilder()

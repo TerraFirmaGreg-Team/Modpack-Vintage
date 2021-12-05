@@ -24,6 +24,64 @@ for item in RawSedimentary {
 	<ore:RawSedimentary>.add(item);
 }
 
+//Seeds
+var RawSedimentary = [
+	<tfc:crop/seeds/barley>,
+	<tfc:crop/seeds/maize>,
+	<tfc:crop/seeds/oat>,
+	<tfc:crop/seeds/rice>,
+	<tfc:crop/seeds/rye>,
+	<tfc:crop/seeds/wheat>,
+	<tfc:crop/seeds/beet>,
+	<tfc:crop/seeds/cabbage>,
+	<tfc:crop/seeds/carrot>,
+	<tfc:crop/seeds/garlic>,
+	<tfc:crop/seeds/green_bean>,
+	<tfc:crop/seeds/onion>,
+	<tfc:crop/seeds/potato>,
+	<tfc:crop/seeds/soybean>,
+	<tfc:crop/seeds/squash>,
+	<tfc:crop/seeds/sugarcane>,
+	<tfc:crop/seeds/tomato>,
+	<tfc:crop/seeds/red_bell_pepper>,
+	<tfc:crop/seeds/yellow_bell_pepper>,
+	<tfc:crop/seeds/jute>,
+	<tfcflorae:crop/product/malt_spelt>,
+	<tfcflorae:crop/seeds/amaranth>,
+	<tfcflorae:crop/seeds/buckwheat>,
+	<tfcflorae:crop/seeds/fonio>,
+	<tfcflorae:crop/seeds/millet>,
+	<tfcflorae:crop/seeds/quinoa>,
+	<tfcflorae:crop/seeds/spelt>,
+	<tfcflorae:crop/seeds/black_eyed_peas>,
+	<tfcflorae:crop/seeds/cayenne_pepper>,
+	<tfcflorae:crop/seeds/ginger>,
+	<tfcflorae:crop/seeds/ginseng>,
+	<tfcflorae:crop/seeds/rutabaga>,
+	<tfcflorae:crop/seeds/turnip>,
+	<tfcflorae:crop/seeds/sugar_beet>,
+	<tfcflorae:crop/seeds/purple_grape>,
+	<tfcflorae:crop/seeds/green_grape>,
+	<tfcflorae:crop/seeds/liquorice_root>,
+	<tfcflorae:crop/seeds/coffea>,
+	<tfcflorae:crop/seeds/agave>,
+	<tfcflorae:crop/seeds/coca>,
+	<tfcflorae:crop/seeds/cotton>,
+	<tfcflorae:crop/seeds/flax>,
+	<tfcflorae:crop/seeds/hemp>,
+	<tfcflorae:crop/seeds/hop>,
+	<tfcflorae:crop/seeds/indigo>,
+	<tfcflorae:crop/seeds/madder>,
+	<tfcflorae:crop/seeds/opium_poppy>,
+	<tfcflorae:crop/seeds/rape>,
+	<tfcflorae:crop/seeds/weld>,
+	<tfcflorae:crop/seeds/woad>,
+	<tfcflorae:crop/seeds/tobacco>
+	] as IItemStack[];
+for item in RawSedimentary {
+	<ore:listAllSeeds>.add(item);
+}
+
 /*             ///Сундуки из форестри в один oredictionary///               */
 var ForestryChestsArray = [
 <forestry:butterfly_chest>,
