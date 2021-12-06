@@ -83,7 +83,7 @@ recipes.addShapeless(<tfcthings:sling_ammo_light>, [<ore:craftingToolHardHammer>
 
 //Алмазная пыль --> крошка TFC
 recipes.remove(<tfcthings:diamond_grit>);
-Quern.addRecipe("tfc:Fdiamond_grit", <gregtech:meta_dust:150>, <tfcthings:diamond_grit>);
+Quern.addRecipe("tfc:Fdiamond_grit", <ore:dustDiamond>, <tfcthings:diamond_grit>);
 
 //Минус точильный камень
 recipes.removeByRecipeName("tfcthings:grindstone_base_steel");

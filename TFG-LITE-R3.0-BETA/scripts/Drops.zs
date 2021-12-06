@@ -1,5 +1,13 @@
 import mods.dropt.Dropt;
 
+//Фикс луж
+Dropt.list("Puddles_Fix")
+  .add(Dropt.rule()
+  .matchBlocks(["puddles:puddle"])
+  .matchDrops([<puddles:puddle>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop()));
+
 //Уголек
 //Битумный уголь
 Dropt.list("GT_Coal_To_TFC_Coal")

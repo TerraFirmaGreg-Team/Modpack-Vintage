@@ -26,6 +26,16 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
+//Удаление рецептов
+recipes.removeByRecipeName("gregtech:sticky_resin_torch");
+recipes.removeByRecipeName("gregtech:torch_phosphorus");
+recipes.removeByRecipeName("gregtech:torch_coke");
+recipes.removeByRecipeName("gregtech:torch_coke_dust");
+recipes.removeByRecipeName("gregtech:torch_sulfur");
+recipes.removeByRecipeName("gregtech:cauldron");
+recipes.removeByRecipeName("gregtech:iron_trapdoor");
+recipes.removeByRecipeName("gregtech:iron_door");
+
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
 

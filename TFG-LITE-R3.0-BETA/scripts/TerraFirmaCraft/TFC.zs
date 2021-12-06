@@ -179,6 +179,14 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/saw/red_steel>,
 	//Saw Heads
 	<tfc:metal/saw_blade/copper>,
+	<tfc:metal/saw_blade/bronze>,
+	<tfc:metal/saw_blade/black_bronze>,
+	<tfc:metal/saw_blade/bismuth_bronze>,
+	<tfc:metal/saw_blade/red_steel>,
+	<tfc:metal/saw_blade/blue_steel>,
+	<tfc:metal/saw_blade/black_steel>,
+	<tfc:metal/saw_blade/steel>,
+	<tfc:metal/saw_blade/wrought_iron>,
 	//Knife
 	<tfc:metal/knife/copper>,
 	<tfc:metal/knife/bismuth_bronze>,
@@ -404,6 +412,17 @@ Anvil.removeRecipe(<tfc:metal/hammer_head/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/copper>);
 
+//Отключение крафтов всех пил TFC
+Anvil.removeRecipe(<tfc:metal/saw_blade/red_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/blue_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/black_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/wrought_iron>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/black_bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/bismuth_bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
+
 //Отключение крафтов всех пил TFC(которые не дублируются)
 Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
 
@@ -433,8 +452,8 @@ Anvil.addRecipe("tfc:hammer_head/InvarF", <ore:ingotInvar>, <ore:toolHeadHammerI
 
 //Крафт голов напильков из GT
 Anvil.addRecipe("tfc:file_head/Bronze", <ore:ingotBronze>, <ore:toolHeadFileBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BismuthBronze", <ore:ingotBlackBronze>, <ore:toolHeadFileBismuthBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfc:file_head/BlackBronze", <ore:ingotBismuthBronze>, <ore:toolHeadFileBlackBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BismuthBronze", <ore:ingotBismuthBronze>, <ore:toolHeadFileBismuthBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfc:file_head/BlackBronze", <ore:ingotBlackBronze>, <ore:toolHeadFileBlackBronze>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/BlackSteel", <ore:ingotBlackSteel>, <ore:toolHeadFileBlackSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/RedSteel", <ore:ingotRedSteel>, <ore:toolHeadFileRedSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/BlueSteel", <ore:ingotBlueSteel>, <ore:toolHeadFileBlueSteel>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");

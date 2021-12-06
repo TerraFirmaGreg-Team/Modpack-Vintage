@@ -126,37 +126,17 @@ recipes.removeShapeless(<minecraft:concrete_powder:12>);
 recipes.removeShapeless(<minecraft:concrete_powder:13>);
 recipes.removeShapeless(<minecraft:concrete_powder:14>);
 recipes.removeShapeless(<minecraft:concrete_powder:15>);
-//Отключение рельс
-recipes.removeByRecipeName("tfc:vanilla/rail/activator_rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/steel_activator_rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/steel_rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/detector_rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/steel_detector_rail");
-recipes.removeByRecipeName("tfc:vanilla/rail/powered_rail");
 //Отключение крафта факелов
-recipes.removeByRecipeName("gregtech:rubber_drop_torch");
-recipes.removeByRecipeName("gregtech:lignite_coal_torch");
-recipes.removeByRecipeName("gregtech:torch_sulfur");
-recipes.removeByRecipeName("gregtech:torch_phosphor");
 recipes.removeByRecipeName("forestry:beeswax_worth");
 //Другое
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
-recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
-recipes.removeByRecipeName("gregtech:cauldron");
-recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
-recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("minecraft:iron_door");
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
-recipes.removeByRecipeName("tfc:vanilla/pressure_pate/heavy_weighted_pressure_plate");
-recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecart");
-recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
 recipes.removeByRecipeName("minecraft:tripwire_hook");
 recipes.removeByRecipeName("minecraft:stick");
-recipes.removeByRecipeName("tfc:vanilla/cauldron");
 recipes.removeByRecipeName("minecraft:diamond_block");
 
 //Создание крафтов

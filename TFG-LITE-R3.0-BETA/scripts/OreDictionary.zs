@@ -172,6 +172,8 @@ for item in ForestryPropolisArray {
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
+//Nickel
+<ore:plateNickel>.remove(<galaxyspace:compressed_plates:3>);
 //Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
 //Silicon
