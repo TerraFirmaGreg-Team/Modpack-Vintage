@@ -3,7 +3,7 @@
 	y: 23.0d,
 	shape: "pentagon",
 	dependencies: [
-		"168f2170"
+		"976dc000"
 	],
 	hide: true,
 	tasks: [{

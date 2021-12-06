@@ -1,7 +1,7 @@
 {
 	disable_toast: true,
-	x: 54.0d,
-	y: -4.5d,
+	x: 164.0d,
+	y: -29.0d,
 	shape: "diamond",
 	hide_dependency_lines: true,
 	hide: true,

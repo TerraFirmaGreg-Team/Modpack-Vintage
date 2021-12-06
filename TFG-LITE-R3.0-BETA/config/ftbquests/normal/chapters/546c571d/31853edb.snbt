@@ -3,11 +3,8 @@
 	y: 9.5d,
 	min_required_dependencies: 3,
 	dependencies: [
-		"709fab8b",
-		"c3998590",
-		"0e63b2d9"
+		"709fab8b"
 	],
-	hide: true,
 	tasks: [{
 		uid: "9f5a935f",
 		type: "item",

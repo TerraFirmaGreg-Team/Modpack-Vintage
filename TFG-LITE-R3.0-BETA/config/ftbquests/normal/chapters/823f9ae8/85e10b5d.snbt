@@ -25,6 +25,7 @@
 		"1779861a",
 		"e5774e54"
 	],
+	dependency_requirement: "one_completed",
 	size: 2.0d,
 	tasks: [{
 		uid: "1a05161b",

@@ -6,7 +6,6 @@
 		"efd88b40",
 		"76c160aa"
 	],
-	hide: true,
 	dependency_requirement: "one_started",
 	optional: true,
 	tasks: [{

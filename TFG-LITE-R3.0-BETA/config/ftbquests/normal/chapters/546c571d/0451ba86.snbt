@@ -2,10 +2,8 @@
 	x: -4.0d,
 	y: 9.5d,
 	dependencies: [
-		"0e63b2d9",
 		"76c160aa"
 	],
-	hide: true,
 	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "3ee9d3b7",
