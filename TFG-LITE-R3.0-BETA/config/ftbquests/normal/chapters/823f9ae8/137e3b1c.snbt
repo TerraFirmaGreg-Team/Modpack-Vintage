@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.jute.title}",
-	x: -19.0d,
-	y: 1.5d,
-	shape: "diamond",
+	x: -20.5d,
+	y: 3.0d,
+	shape: "pentagon",
 	description: "{tfg.quests.primitive.jute.subtitle}",
 	hide_dependency_lines: true,
 	dependencies: [

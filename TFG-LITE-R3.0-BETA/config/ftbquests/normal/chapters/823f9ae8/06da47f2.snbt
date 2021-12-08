@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.meshokmochi.title}",
-	x: -20.5d,
+	x: -19.5d,
 	y: 7.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.meshokmochi.subtitle}",

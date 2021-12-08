@@ -1,15 +1,14 @@
 {
-	x: -25.5d,
-	y: 10.0d,
-	hide_dependency_lines: true,
+	x: -16.0d,
+	y: -1.0d,
 	dependencies: [
-		"8fc0c70f"
+		"fb6454c0"
 	],
 	tasks: [{
-		uid: "7f7c8e53",
+		uid: "d94c9d85",
 		type: "item",
 		items: [{
-			item: "tfc:spindle"
+			item: "astikorcarts:plowcart"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

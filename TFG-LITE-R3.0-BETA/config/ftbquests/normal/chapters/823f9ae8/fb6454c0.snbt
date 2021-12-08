@@ -1,0 +1,14 @@
+{
+	x: -18.0d,
+	y: 0.0d,
+	dependencies: [
+		"c8377a61"
+	],
+	tasks: [{
+		uid: "200afdc6",
+		type: "item",
+		items: [{
+			item: "astikorcarts:wheel"
+		}]
+	}]
+}

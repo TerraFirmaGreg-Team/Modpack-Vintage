@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.burlap.title}",
-	x: -19.0d,
+	x: -18.0d,
 	y: 8.0d,
 	shape: "rsquare",
 	description: "{tfg.quests.primitive.burlap.subtitle}",
