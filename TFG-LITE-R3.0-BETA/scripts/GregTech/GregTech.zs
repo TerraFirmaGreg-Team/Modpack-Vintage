@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 
+val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamond>;
+
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
     //Primitive Blast Furnace
@@ -19,8 +21,11 @@ val ItemsToRemove as IItemStack[] = [
 	//Coke Oven
     <gregtech:machine:1016>,
     //LV Casing
-    <gregtech:machine_casing:1>
-    //2x ingots + hammer --> Plate
+    <gregtech:machine_casing:1>,
+    //Crafting Station
+    <gregtech:machine:1646>,
+    //Steam Miner
+    <gregtech:machine:21>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -66,6 +71,18 @@ recipes.addShaped(<gregtech:machine:1016>,
 [[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
  [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
+
+//Crafting Station
+recipes.addShaped(<gregtech:machine:1646>,
+[[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
+ [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
+ [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
+
+//Steam Miner
+recipes.addShaped(<gregtech:machine:21>,
+[[Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
+ [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
+ [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
 
 //Исправление рецепта на бумагу
 recipes.removeByRecipeName("paper");

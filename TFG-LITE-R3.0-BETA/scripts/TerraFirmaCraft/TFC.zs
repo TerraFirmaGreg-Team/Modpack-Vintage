@@ -366,6 +366,12 @@ Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidNa
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
 
+//Фикс ведер
+Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
+Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
+Anvil.addRecipe("tfc:bucket/BlueSteelF", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfc:bucket/RedSteelF", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+
 //Hevea TFC --> Rubber
 centrifuge.recipeBuilder()
 	.inputs(<tfc:wood/log/hevea>)
@@ -389,17 +395,16 @@ electrolyzer.recipeBuilder()
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(25).buildAndRegister();
 
-//Кривые палки офаем
-Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>*2);
-Anvil.removeRecipe(<tfc:metal/rod/steel>*2);
-Anvil.removeRecipe(<tfc:metal/rod/gold>*2);
-
-//Палки из пиломатериалов
-recipes.addShapeless(<minecraft:stick>*2, [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>]);
-
-//Флюс использует крафт с помощью GT молота
-recipes.removeByRecipeName("tfc:flux");
-recipes.addShapeless (<tfc:powder/flux>*2, [<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:rockFlux>]);
+//Отключение крафтов всех пил TFC
+Anvil.removeRecipe(<tfc:metal/saw_blade/red_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/blue_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/black_steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/steel>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/wrought_iron>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/black_bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/bismuth_bronze>);
+Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
 
 //Отключение крафтов всех молотков TFC
 Anvil.removeRecipe(<tfc:metal/hammer_head/red_steel>);
@@ -412,20 +417,6 @@ Anvil.removeRecipe(<tfc:metal/hammer_head/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/copper>);
 
-//Отключение крафтов всех пил TFC
-Anvil.removeRecipe(<tfc:metal/saw_blade/red_steel>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/blue_steel>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/black_steel>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/steel>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/bronze>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/black_bronze>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/bismuth_bronze>);
-Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
-
-//Отключение крафтов всех пил TFC(которые не дублируются)
-Anvil.removeRecipe(<tfc:metal/saw_blade/copper>);
-
 //Отключение крафтов всех ножей TFC
 Anvil.removeRecipe(<tfc:metal/knife_blade/red_steel>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/blue_steel>);
@@ -436,6 +427,19 @@ Anvil.removeRecipe(<tfc:metal/knife_blade/bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/black_bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/bismuth_bronze>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/copper>);
+
+//Новые рецепты ковки GT(TFC) пил
+Anvil.addRecipe("tfc:saw_blade/CopperF", <ore:ingotCopper>, <ore:toolHeadSawCopper>.firstItem, 0, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/BismuthBronzeF", <ore:ingotBismuthBronze>, <ore:toolHeadHammerBismuthBronze>.firstItem, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/BlackBronzeF", <ore:ingotBlackBronze>, <ore:toolHeadHammerBlackBronze>.firstItem, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/BronzeF", <ore:ingotBronze>, <ore:toolHeadHammerBronze>.firstItem, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/WroughtIronF", <ore:ingotWroughtIron>, <ore:toolHeadHammerWroughtIron>.firstItem, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/SteelF", <ore:ingotSteel>, <ore:toolHeadHammerSteel>.firstItem, 4, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/BlackSteelF", <ore:ingotBlackSteel>, <ore:toolHeadHammerBlackSteel>.firstItem, 5, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/BlueSteelF", <ore:ingotBlueSteel>, <ore:toolHeadHammerBlueSteel>.firstItem, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/RedSteelF", <ore:ingotRedSteel>, <ore:toolHeadHammerRedSteel>.firstItem, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/CobaltF", <ore:ingotCobalt>, <ore:toolHeadHammerCobalt>.firstItem, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfc:saw_blade/InvarF", <ore:ingotInvar>, <ore:toolHeadHammerInvar>.firstItem, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
 
 //Новые рецепты ковки GT(TFC) молотков
 Anvil.addRecipe("tfc:hammer_head/CopperF", <ore:ingotCopper>, <tfc:metal/hammer_head/copper>, 0, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");

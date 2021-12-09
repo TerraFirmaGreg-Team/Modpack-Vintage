@@ -41,6 +41,14 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 //Резина для примитивного этапа
 recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);
 
+//Tongs
+Anvil.removeRecipe(<tfctech:metal/iron_tongs>);
+Anvil.addRecipe("tfctech:TongsF", <ore:ingotWroughtIron>, <tfctech:metal/iron_tongs>, 3, "general", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+
+//Bowl Mount
+Anvil.removeRecipe(<tfctech:metal/iron_bowl_mount>);
+Anvil.addRecipe("tfctech:BowlMountF", <ore:ingotWroughtIron>, <tfctech:metal/iron_bowl_mount>, 3, "general", "BEND_LAST", "DRAW_SECOND_LAST", "BEND_NOT_LAST");
+
 //Winch
 recipes.remove(<tfctech:wiredraw/winch>);
 recipes.addShaped(<tfctech:wiredraw/winch>,
