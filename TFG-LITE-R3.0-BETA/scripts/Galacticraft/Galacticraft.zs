@@ -277,6 +277,9 @@ for item in RemoveItemRecipe{
 furnace.remove(<galacticraftcore:item_basic_moon>);
 furnace.remove(<galacticraftplanets:item_basic_mars:2>);
 
+//Именованное удаление
+recipes.removeByRecipeName("galacticraftcore:slime_ball");
+
 //Еда из GC
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
@@ -289,6 +292,12 @@ recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <or
 
 //Светофакел
 recipes.addShapeless(<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
+
+//Slimeball
+recipes.addShaped(<minecraft:slime_ball>,
+[[<ore:dyeGreen>, <ore:dustSugar>, <ore:dyeGreen>],
+ [<ore:dustSugar>, <firmalife:cheddar_wheel>,<ore:dustSugar>],
+ [<ore:dyeGreen>, <ore:dustSugar>, <ore:dyeGreen>]]);
 
 //Slimeling Inventory Bag
 recipes.addShaped(<galacticraftplanets:item_basic_mars:4>,

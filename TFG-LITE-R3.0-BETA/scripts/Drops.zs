@@ -15,7 +15,7 @@ Dropt.list("GT_Coal_To_TFC_Coal")
   .matchBlocks(["gregtech:ore_coal_0"])
   .matchDrops([<gregtech:ore_coal_0>])
   .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop().items([<tfc:ore/bituminous_coal>])));
+  .addDrop(Dropt.drop().items([<minecraft:coal>])));
 
 Dropt.list("Dirt")
   .add(Dropt.rule()

@@ -208,6 +208,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/knife_blade/black_bronze>,
 	<tfc:metal/knife_blade/bismuth_bronze>,
 	//Other
+	<tfc:ore/bituminous_coal>,
+	<tfc:ore/lignite>,
 	<tfc:sluice>,
 	<tfctech:powder/potash>,
 	<tfc:powder/saltpeter>,
@@ -371,6 +373,10 @@ Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
 Anvil.addRecipe("tfc:bucket/BlueSteelF", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 Anvil.addRecipe("tfc:bucket/RedSteelF", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+
+//Фикс гриля
+Anvil.removeRecipe(<tfc:wrought_iron_grill>);
+Anvil.addRecipe("tfc:grillF", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
 
 //Hevea TFC --> Rubber
 centrifuge.recipeBuilder()

@@ -40,6 +40,7 @@ recipes.removeByRecipeName("gregtech:torch_sulfur");
 recipes.removeByRecipeName("gregtech:cauldron");
 recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("gregtech:iron_door");
+recipes.removeByRecipeName("gregtech:quartz_sand");
 
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
@@ -83,6 +84,22 @@ recipes.addShaped(<gregtech:machine:21>,
 [[Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
  [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
  [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
+
+//Quartz Sand
+recipes.addShaped(<ore:dustQuartzSand>.firstItem,
+[[null, <ore:sand>, null],
+ [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
+ [null, null, null]]);
+
+//Переработка тфкшной гевеи
+centrifuge.recipeBuilder()
+    .inputs(<tfc:wood/log/hevea>)
+    .chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
+    .chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
+    .chancedOutput(<gregtech:meta_item_1:439>, 3750, 900)
+    .chancedOutput(<gregtech:meta_item_1:438>, 5000, 1200)
+    .fluidOutputs(<fluid:methane> * 250)
+    .EUt(20).duration(300).buildAndRegister();
 
 //Исправление рецепта на бумагу
 recipes.removeByRecipeName("paper");

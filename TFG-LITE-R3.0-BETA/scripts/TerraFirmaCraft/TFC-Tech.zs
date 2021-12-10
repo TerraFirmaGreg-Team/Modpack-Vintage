@@ -41,6 +41,14 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 //Резина для примитивного этапа
 recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);
 
+//Draw Plates
+Anvil.removeRecipe(<tfctech:metal/iron_draw_plate>);
+Anvil.addRecipe("tfctech:IronDrawPlateF", <ore:ingotWroughtIron>, <tfctech:metal/iron_draw_plate>, 3, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "HIT_ANY");
+Anvil.removeRecipe(<tfctech:metal/steel_draw_plate>);
+Anvil.addRecipe("tfctech:SteelDrawPlateF", <ore:ingotSteel>, <tfctech:metal/steel_draw_plate>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "HIT_ANY");
+Anvil.removeRecipe(<tfctech:metal/black_steel_draw_plate>);
+Anvil.addRecipe("tfctech:BlackSteelDrawPlateF", <ore:ingotBlackSteel>, <tfctech:metal/black_steel_draw_plate>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "HIT_ANY");
+
 //Tongs
 Anvil.removeRecipe(<tfctech:metal/iron_tongs>);
 Anvil.addRecipe("tfctech:TongsF", <ore:ingotWroughtIron>, <tfctech:metal/iron_tongs>, 3, "general", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
