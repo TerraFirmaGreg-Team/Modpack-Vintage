@@ -25,7 +25,11 @@ val ItemsToRemove as IItemStack[] = [
     //Crafting Station
     <gregtech:machine:1646>,
     //Steam Miner
-    <gregtech:machine:21>
+    <gregtech:machine:21>,
+    //Steam macerator
+    <gregtech:machine:9>,
+ //Steam Rock Breaker
+    <gregtech:machine:19>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
