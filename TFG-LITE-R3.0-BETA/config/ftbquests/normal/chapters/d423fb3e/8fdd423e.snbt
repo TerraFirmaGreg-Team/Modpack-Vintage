@@ -1,5 +1,5 @@
 {
-	x: -10.5d,
+	x: -11.0d,
 	y: -3.5d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.checkbox.subtitle}",

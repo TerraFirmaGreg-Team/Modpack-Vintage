@@ -1,5 +1,5 @@
 {
-	x: -12.0d,
+	x: -12.5d,
 	y: -3.5d,
 	description: "{tfg.quests.steam.creosoteoven.subtitle}",
 	dependencies: [

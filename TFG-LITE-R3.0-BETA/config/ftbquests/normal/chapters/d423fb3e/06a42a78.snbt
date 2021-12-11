@@ -1,11 +1,10 @@
 {
-	x: -12.0d,
-	y: -12.0d,
+	x: -12.5d,
+	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.steamfurnace.subtitle}",
 	dependencies: [
-		"bf81da5c",
-		"6d19301b"
+		"505c5aff"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

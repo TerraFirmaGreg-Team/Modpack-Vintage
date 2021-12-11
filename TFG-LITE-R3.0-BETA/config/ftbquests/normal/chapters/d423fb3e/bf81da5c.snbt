@@ -1,6 +1,6 @@
 {
 	x: -13.5d,
-	y: -12.0d,
+	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeboiler.subtitle}",
 	dependencies: [

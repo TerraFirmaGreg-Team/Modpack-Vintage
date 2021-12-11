@@ -85,6 +85,18 @@ recipes.addShaped(<gregtech:machine:21>,
  [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
  [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
 
+ //Steam macerator
+recipes.addShaped(<gregtech:machine:9>,
+[[Diamonds, <ore:pipeSmallFluidBronze>, Diamonds],
+ [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
+ [<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>]]);
+
+ //Steam Rock Breaker
+recipes.addShaped(<gregtech:machine:19>,
+[[<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>],
+ [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
+ [Diamonds, <ore:pipeSmallFluidBronze>, Diamonds]]);
+
 //Quartz Sand
 recipes.addShaped(<ore:dustQuartzSand>.firstItem,
 [[null, <ore:sand>, null],

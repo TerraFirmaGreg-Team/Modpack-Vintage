@@ -1,7 +1,7 @@
 {
-	x: -5.5d,
-	y: -8.0d,
-	shape: "rsquare",
+	x: -9.5d,
+	y: -8.5d,
+	shape: "octagon",
 	description: "{tfg.quests.steam.steelcasing.subtitle}",
 	dependencies: [
 		"e6318f88"

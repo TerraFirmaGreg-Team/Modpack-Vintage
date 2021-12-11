@@ -1,6 +1,6 @@
 {
-	x: -10.5d,
-	y: -12.0d,
+	x: -9.5d,
+	y: -14.5d,
 	description: "{tfg.quests.steam.bigboiler.subtitle}",
 	dependencies: [
 		"f04e0193"

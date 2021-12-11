@@ -130,7 +130,7 @@ for item in ForestryPropolisArray {
 //Minecraft emerald
 <ore:gemEmerald>.remove(<minecraft:emerald>);
 //Minecraft diamond
-<ore:gemDiamond>.remove(<minecraft:diamond>);
+//<ore:gemDiamond>.remove(<minecraft:diamond>);
 //Lapis
 <ore:dye>.remove(<minecraft:dye:4>);
 <ore:dyeBlue>.remove(<minecraft:dye:4>);
