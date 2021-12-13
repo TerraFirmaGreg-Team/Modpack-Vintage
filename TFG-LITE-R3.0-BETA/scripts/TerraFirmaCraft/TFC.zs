@@ -378,15 +378,17 @@ Anvil.addRecipe("tfc:bucket/RedSteelF", <ore:plateRedSteel>, <tfc:metal/bucket/r
 Anvil.removeRecipe(<tfc:wrought_iron_grill>);
 Anvil.addRecipe("tfc:grillF", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
 
-//Hevea TFC --> Rubber
-centrifuge.recipeBuilder()
-	.inputs(<tfc:wood/log/hevea>)
-	.chancedOutput(<gregtech:meta_item_1:119>, 5000, 1200)
-	.chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
-	.chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
-	.chancedOutput(<gregtech:meta_item_1:245>, 3750, 900)
-	.fluidOutputs(<liquid:methane> * 60)
-	.duration(200).EUt(20).buildAndRegister();  
+//Фикс двири
+Anvil.removeRecipe(<minecraft:iron_door>);
+Anvil.addRecipe("tfc:iron_doorF", <ore:plateDoubleWroughtIron>, <minecraft:iron_door>, 3, "general", "HIT_LAST", "DRAW_NOT_LAST", "PUNCH_NOT_LAST");
+
+//Iron Bars x8
+Anvil.removeRecipe(<minecraft:iron_bars> * 8);
+Anvil.addRecipe("tfc:iron_barsF", <ore:plateWroughtIron>, <minecraft:iron_bars> * 8, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+
+//Iron Bars x16
+Anvil.removeRecipe(<minecraft:iron_bars> * 16);
+Anvil.addRecipe("tfc:iron_bars2F", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
 //Первые способы получить резину
 extractor.recipeBuilder()
@@ -397,9 +399,9 @@ extractor.recipeBuilder()
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
 electrolyzer.recipeBuilder()
-	.inputs(<ore:sand>*8)
+	.inputs(<ore:sand> * 8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
-	.duration(150).EUt(25).buildAndRegister();
+	.duration(150).EUt(26).buildAndRegister();
 
 //Отключение крафтов всех пил TFC
 Anvil.removeRecipe(<tfc:metal/saw_blade/red_steel>);

@@ -1,9 +1,12 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
+val QuartzPlates = <ore:plateCertusQuartz> | <ore:plateNetherQuartz> | <ore:plateQuartzite>;
+
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
-	<minecraft:gold_ore>,
+    //Ores
+    <minecraft:gold_ore>,
     <minecraft:iron_ore>,
     <minecraft:coal_ore>,
     <minecraft:lapis_ore>,
@@ -11,6 +14,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:redstone_ore>,
     <minecraft:emerald_ore>,
     <minecraft:quartz_ore>,
+    //Food
     <minecraft:apple>,
     <minecraft:mushroom_stew>,
     <minecraft:bread>,
@@ -41,10 +45,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:cooked_mutton>,
     <minecraft:beetroot>,
     <minecraft:beetroot_soup>,
-    <minecraft:furnace>,
     <minecraft:double_plant:2>,
-    <minecraft:chest>,
-    <minecraft:trapped_chest>,
     //Tools
     <minecraft:diamond_pickaxe>,
     <minecraft:golden_pickaxe>,
@@ -88,86 +89,76 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:chainmail_chestplate>,
     <minecraft:chainmail_leggings>,
     <minecraft:chainmail_boots>,
-    //<minecraft:diamond>,
-    <minecraft:emerald>
+    //Other
+    <minecraft:crafting_table>,
+    <minecraft:furnace>,
+    <minecraft:chest>,
+    <minecraft:trapped_chest>,
+    <minecraft:stone_pressure_plate>,
+    <minecraft:wooden_pressure_plate>,
+    <minecraft:wooden_button>,
+    <minecraft:stone_button>,
+    <minecraft:trapdoor>,
+    <minecraft:wooden_door>,
+    <minecraft:spruce_door>,
+    <minecraft:birch_door>,
+    <minecraft:jungle_door>,
+    <minecraft:acacia_door>,
+    <minecraft:dark_oak_door>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
-recipes.remove(<minecraft:bucket>);
-recipes.remove(<minecraft:furnace>);
-recipes.remove(<minecraft:jukebox>);
-recipes.remove(<minecraft:enchanting_table>);
-recipes.remove(<minecraft:furnace>);
-recipes.remove(<minecraft:piston>);
-recipes.remove(<minecraft:wooden_pressure_plate> * 8);
-recipes.remove(<minecraft:crafting_table>);
-recipes.remove(<minecraft:rail> * 32);
-recipes.remove(<minecraft:activator_rail> * 16);
-recipes.remove(<minecraft:detector_rail> * 16);
-recipes.remove(<minecraft:golden_rail> * 16);
-recipes.remove(<minecraft:leather_helmet>);
-recipes.remove(<minecraft:leather_chestplate>);
-recipes.remove(<minecraft:leather_leggings>);
-recipes.remove(<minecraft:leather_boots>);
-recipes.removeShapeless(<minecraft:concrete_powder>);
-recipes.removeShapeless(<minecraft:concrete_powder:1>);
-recipes.removeShapeless(<minecraft:concrete_powder:2>);
-recipes.removeShapeless(<minecraft:concrete_powder:3>);
-recipes.removeShapeless(<minecraft:concrete_powder:4>);
-recipes.removeShapeless(<minecraft:concrete_powder:5>);
-recipes.removeShapeless(<minecraft:concrete_powder:6>);
-recipes.removeShapeless(<minecraft:concrete_powder:7>);
-recipes.removeShapeless(<minecraft:concrete_powder:8>);
-recipes.removeShapeless(<minecraft:concrete_powder:9>);
-recipes.removeShapeless(<minecraft:concrete_powder:10>);
-recipes.removeShapeless(<minecraft:concrete_powder:11>);
-recipes.removeShapeless(<minecraft:concrete_powder:12>);
-recipes.removeShapeless(<minecraft:concrete_powder:13>);
-recipes.removeShapeless(<minecraft:concrete_powder:14>);
-recipes.removeShapeless(<minecraft:concrete_powder:15>);
-//Отключение крафта факелов
-recipes.removeByRecipeName("forestry:beeswax_worth");
+
+val ItemsToRemove as IItemStack[] = [
+    //Leather Armor
+    <minecraft:leather_helmet>,
+    <minecraft:leather_chestplate>,
+    <minecraft:leather_leggings>,
+    <minecraft:leather_boots>,
+    <minecraft:bucket>,
+    <minecraft:enchanting_table>
+] as IItemStack[];
+for item in ItemsToRemove{
+    recipes.remove(item);
+}
+
+//Remove Workbench
+assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
+
+//Remove Wooden Pressure Plate
+assembler.findRecipe(7, [<ore:plankWood>.firstItem * 2, <ore:springIron>.firstItem], null).remove();
+
+//Remove Stone Pressure Plate
+assembler.findRecipe(7, [<minecraft:stone_slab> * 2, <ore:springIron>.firstItem], null).remove();
+
+//Remove Wooden Trapdoor
+assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <gregtech:meta_item_1:461>.withTag({Configuration: 3})], null).remove();
+
+//Remove Wooden Trapdoor
+assembler.findRecipe(16, [<ore:plateIron>.firstItem * 4, <minecraft:trapdoor>], null).remove();
+
 //Другое
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
 recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
 recipes.removeByRecipeName("minecraft:iron_door");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
 recipes.removeByRecipeName("minecraft:tripwire_hook");
 recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("minecraft:diamond_block");
 
 //Создание крафтов
-
-//Крафт стекла
-furnace.addRecipe(<minecraft:glass>, <ore:sand>);
-
-//Крафт быстрого верстака
-recipes.addShapeless(<minecraft:crafting_table>,[<ore:craftingTableWood>]);
-
-//Рельсовые приколы
-recipes.addShapeless(<minecraft:chest_minecart>,[<minecraft:minecart>,<ore:chestWood>]);
-recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecraft:furnace>]);
+//Iron Trapdoor
+assembler.recipeBuilder()
+    .inputs(<ore:plateIron>.firstItem * 4, <ore:trapdoorWood>)
+    .outputs(<minecraft:iron_trapdoor>)
+    .duration(100).EUt(16).buildAndRegister();
 
 //Лампа
 recipes.addShaped(<minecraft:redstone_lamp>,
 [[<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>],
  [<ore:stickWroughtIron>, <ore:cableGtSingleRedAlloy>, <ore:stickWroughtIron>],
  [<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>]]);
-
-//Крюк
-recipes.addShaped(<minecraft:tripwire_hook>,
-[[null, <ore:ringWroughtIron>, null],
- [null, <ore:screwWroughtIron>, null],
- [null, <ore:stickWood>, null]]);
-
-//Проигрыватель
-recipes.addShaped(<minecraft:jukebox>,
-[[<ore:lumber>, <ore:trapdoorWood>, <ore:lumber>],
- [<ore:lumber>, <ore:circuitBasic>, <ore:lumber>],
- [<ore:lumber>, <ore:lumber>, <ore:lumber>]]);
 
 //Чар стол
 recipes.addShaped(<minecraft:enchanting_table>,
@@ -178,13 +169,8 @@ recipes.addShaped(<minecraft:enchanting_table>,
 //Поршень
 recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
- [<ore:stone>, <ore:gearWroughtIron>, <ore:stone>],
- [<ore:stone>, <ore:dustRedstone>, <ore:stone>]]);
-
-//Варочная стойка
-recipes.addShaped(<minecraft:brewing_stand>, [
-[null, <ore:stickBlaze>, null],
-[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+ [<ore:gearSmallIron>, <ore:fenceWood>, <ore:gearSmallIron>],
+ [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]]);
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,
@@ -192,11 +178,11 @@ recipes.addShaped(<minecraft:bucket>,
  [<ore:plateWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateWroughtIron>],
  [null, <ore:plateWroughtIron>, null]]);
 
-//Крусибл
-recipes.addShaped(<minecraft:cauldron>,
-[[<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
- [<ore:plateWroughtIron>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
- [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
+//Observer
+recipes.addShaped(<minecraft:observer>,
+[[<ore:ringIron>, <ore:cobblestone>, <ore:ringIron>],
+ [<ore:cobblestone>, QuartzPlates, <ore:cobblestone>],
+ [<ore:gearSmallIron>, <ore:stickRedAlloy>, <ore:gearSmallIron>]]);
 
 //Водная хрень
 recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
@@ -205,42 +191,6 @@ recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:
 recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
  
-//Рельсы
-//Активатор рельсы
-recipes.addShaped(<minecraft:golden_rail>*6,
-[[<ore:stickGold>, <minecraft:stick>, <ore:stickGold>],
- [<ore:stickGold>, <ore:dustRedstone>, <ore:stickGold>],
- [<ore:stickGold>, <minecraft:stick>, <ore:stickGold>]]);
-//
-recipes.addShaped(<minecraft:detector_rail>*8,
-[[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <ore:pressurePlateStone>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <ore:dustRedstone>, <ore:stickWroughtIron>]]);
-//
-recipes.addShaped(<minecraft:detector_rail>*16,
-[[<ore:stickSteel>, null, <ore:stickSteel>],
- [<ore:stickSteel>, <ore:pressurePlateStone>, <ore:stickSteel>],
- [<ore:stickSteel>, <ore:dustRedstone>, <ore:stickSteel>]]); 
-//
-recipes.addShaped(<minecraft:activator_rail>*8,
-[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:lever>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
-//
-recipes.addShaped(<minecraft:activator_rail>*16,
-[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:lever>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
-//
-recipes.addShaped(<minecraft:rail>*8,
-[[<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>],
- [<ore:stickWroughtIron>, <minecraft:stick>, <ore:stickWroughtIron>]]); 
-//
-recipes.addShaped(<minecraft:rail>*16,
-[[<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>],
- [<ore:stickSteel>, <minecraft:stick>, <ore:stickSteel>]]); 
-
- //Фикс снопа сена
-//packer.findRecipe(2, [<minecraft:wheat> * 9, <gregtech:meta_item_1:193>.withTag({Configuration: 7})], null).remove();
+//Рельсовые приколы
+recipes.addShapeless(<minecraft:chest_minecart>,[<minecraft:minecart>,<ore:chestWood>]);
+recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecraft:furnace>]);

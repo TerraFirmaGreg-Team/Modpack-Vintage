@@ -4,6 +4,7 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
+    <gregtech:machine:1646>, //TODO
     //Primitive Blast Furnace
     <gregtech:machine:1000>,
     //Primitive Bricks
@@ -26,9 +27,9 @@ val ItemsToRemove as IItemStack[] = [
     <gregtech:machine:1646>,
     //Steam Miner
     <gregtech:machine:21>,
-    //Steam macerator
+    //Steam Macerator
     <gregtech:machine:9>,
- //Steam Rock Breaker
+    //Steam Rock Breaker
     <gregtech:machine:19>
 ] as IItemStack[];
 for item in ItemsToRemove{
@@ -36,12 +37,13 @@ for item in ItemsToRemove{
 }
 
 //Удаление рецептов
+recipes.removeByRecipeName("gregtech:piston_iron");
 recipes.removeByRecipeName("gregtech:sticky_resin_torch");
 recipes.removeByRecipeName("gregtech:torch_phosphorus");
 recipes.removeByRecipeName("gregtech:torch_coke");
 recipes.removeByRecipeName("gregtech:torch_coke_dust");
 recipes.removeByRecipeName("gregtech:torch_sulfur");
-recipes.removeByRecipeName("gregtech:cauldron");
+//recipes.removeByRecipeName("gregtech:cauldron");
 recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("gregtech:quartz_sand");
@@ -65,6 +67,12 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:1490>).outputs(<ore:ingotSt
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).outputs(<ore:ingotTitanium>.firstItem * 10).EUt(1560).duration(400).buildAndRegister();
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
 
+//Crafting Station
+/*recipes.addShaped(<gregtech:machine:1646>,
+[[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
+ [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
+ [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);*/
+
 //LV Machine Casing
 recipes.addShaped(<gregtech:machine_casing:1>,
 [[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
@@ -77,35 +85,36 @@ recipes.addShaped(<gregtech:machine:1016>,
  [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
 
-//Crafting Station
-recipes.addShaped(<gregtech:machine:1646>,
-[[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
- [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
- [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
-
 //Steam Miner
-recipes.addShaped(<gregtech:machine:21>,
-[[Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
- [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
- [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
-
- //Steam macerator
 recipes.addShaped(<gregtech:machine:9>,
 [[Diamonds, <ore:pipeSmallFluidBronze>, Diamonds],
  [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
  [<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>]]);
 
- //Steam Rock Breaker
+//Steam Macerator
+recipes.addShaped(<gregtech:machine:21>,
+[[Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
+ [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
+ [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
+
+//Steam Rock Breaker
 recipes.addShaped(<gregtech:machine:19>,
 [[<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>],
  [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
  [Diamonds, <ore:pipeSmallFluidBronze>, Diamonds]]);
 
-//Quartz Sand
+//Quartz Sand - 1
 recipes.addShaped(<ore:dustQuartzSand>.firstItem,
 [[null, <ore:sand>, null],
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
  [null, null, null]]);
+
+//Quartz Sand - 2
+macerator.findRecipe(2, [<minecraft:sand>], null).remove();
+macerator.recipeBuilder()
+    .inputs([<ore:sand>])
+    .outputs(<ore:dustQuartzSand>.firstItem)
+    .duration(50).EUt(2).buildAndRegister();
 
 //Переработка тфкшной гевеи
 centrifuge.recipeBuilder()
@@ -164,6 +173,13 @@ packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({C
 
 //Фикс сундуков
 assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+
+//Rock breaker fixes
+rock_breaker.findRecipe(30, [<minecraft:stone>], null).remove();
+rock_breaker.findRecipe(30, [<minecraft:cobblestone>], null).remove();
+rock_breaker.findRecipe(120, [<ore:stoneGranite>.firstItem], null).remove();
+rock_breaker.findRecipe(120, [<ore:stoneDiorite>.firstItem], null).remove();
+rock_breaker.findRecipe(120, [<ore:stoneAndesite>.firstItem], null).remove();
 
 //Фиксы корпусов
 //Удаление

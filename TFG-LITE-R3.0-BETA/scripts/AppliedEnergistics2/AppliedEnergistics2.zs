@@ -144,6 +144,9 @@ recipes.removeByRecipeName("appliedenergistics2:tools/misctools_charged_staff");
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
 
+recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
+recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
+
 //Рецепты
 //Покраска кабелей
 recipes.addShapeless(<appliedenergistics2:part:60>, [<ore:smartCableDenseAny>, <ore:dyeWhite>]);

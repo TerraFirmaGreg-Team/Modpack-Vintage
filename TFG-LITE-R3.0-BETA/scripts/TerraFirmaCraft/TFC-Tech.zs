@@ -57,6 +57,10 @@ Anvil.addRecipe("tfctech:TongsF", <ore:ingotWroughtIron>, <tfctech:metal/iron_to
 Anvil.removeRecipe(<tfctech:metal/iron_bowl_mount>);
 Anvil.addRecipe("tfctech:BowlMountF", <ore:ingotWroughtIron>, <tfctech:metal/iron_bowl_mount>, 3, "general", "BEND_LAST", "DRAW_SECOND_LAST", "BEND_NOT_LAST");
 
+//Blowpipe
+Anvil.removeRecipe(<tfctech:metal/wrought_iron_blowpipe>);
+Anvil.addRecipe("tfctech:WroughtIronBlowpipeF", <ore:plateWroughtIron>, <tfctech:metal/wrought_iron_blowpipe>, 3, "general", "BEND_LAST", "BEND_SECOND_LAST");
+
 //Winch
 recipes.remove(<tfctech:wiredraw/winch>);
 recipes.addShaped(<tfctech:wiredraw/winch>,

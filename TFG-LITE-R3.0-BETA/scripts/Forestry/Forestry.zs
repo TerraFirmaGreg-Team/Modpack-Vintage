@@ -186,6 +186,7 @@ Carpenter.removeRecipe(<forestry:candle>);
 Carpenter.removeRecipe(<forestry:habitat_screen>);
 
 //Удаление поименно
+recipes.removeByRecipeName("forestry:beeswax_worth");
 recipes.removeByRecipeName("forestry:greenhouse_window");
 recipes.removeByRecipeName("forestry:greenhouse_window_roof");
 recipes.removeByRecipeName("forestry:greenhouse_fan");

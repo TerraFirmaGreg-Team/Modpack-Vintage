@@ -127,10 +127,6 @@ for item in ForestryPropolisArray {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block Forestry
 <ore:blockApatite>.remove(<forestry:resource_storage>);
-//Minecraft emerald
-<ore:gemEmerald>.remove(<minecraft:emerald>);
-//Minecraft diamond
-//<ore:gemDiamond>.remove(<minecraft:diamond>);
 //Lapis
 <ore:dye>.remove(<minecraft:dye:4>);
 <ore:dyeBlue>.remove(<minecraft:dye:4>);
