@@ -8,7 +8,7 @@ Grindstone.add(<gregtech:ore_copper_0>, <ore:dustImpureCopper>.firstItem * 3, 10
 Grindstone.add(<gregtech:ore_malachite_0>, <ore:dustImpureMalachite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_tetrahedrite_0>, <ore:dustImpureTetrahedrite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_bornite_0>, <ore:dustImpureBornite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_tenorite_0>, <ore:dustImpureTenorite>.firstItem * 3, 10, false);
+//Grindstone.add(<gregtech:ore_tenorite_0>, <ore:dustImpureTenorite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_chalcopyrite_0>, <ore:dustImpureChalcopyrite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_chalcocite_0>, <ore:dustImpureChalcocite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_enargite_0>, <ore:dustImpureEnargite>.firstItem * 3, 10, false);

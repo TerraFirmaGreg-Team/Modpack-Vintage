@@ -30,7 +30,13 @@ val ItemsToRemove as IItemStack[] = [
     //Steam Macerator
     <gregtech:machine:9>,
     //Steam Rock Breaker
-    <gregtech:machine:19>
+    <gregtech:machine:19>,
+    //Pump deck
+    <gregtech:steam_casing:4>,
+    //Pump hatch
+    <gregtech:machine:1648>,
+    //Primitive pump
+    <gregtech:machine:1647>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -47,6 +53,10 @@ recipes.removeByRecipeName("gregtech:torch_sulfur");
 recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("gregtech:quartz_sand");
+// recipes.removeByRecipeName("gregtech:pump_deck");
+// recipes.removeByRecipeName("gregtech:pump_hatch");
+// recipes.removeByRecipeName("gregtech:primitive_pump");
+
 
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
@@ -78,6 +88,23 @@ recipes.addShaped(<gregtech:machine_casing:1>,
 [[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
  [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
  [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
+
+ //Pump deck
+recipes.addShaped(<gregtech:steam_casing:4> * 2,
+[[<ore:screwIron>, <ore:plankWood>, <ore:screwIron>],
+ [<ore:craftingToolScrewdriver>, <ore:slabCobblestone>, <ore:craftingToolHardHammer>]]);
+
+//Pump hatch
+recipes.addShaped(<gregtech:machine:1648>,
+[[<ore:screwIron>, <ore:ringIron>, <ore:craftingToolScrewdriver>],
+ [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
+ [<ore:slabCobblestone>, <ore:ringIron>, <ore:slabCobblestone>]]);
+
+//Primitive pump
+recipes.addShaped(<gregtech:machine:1647>,
+[[<ore:ringIron>, <ore:pipeNormalFluidWood>, <ore:screwIron>],
+ [<ore:rotorIron>, <ore:plankWood>, <ore:craftingToolScrewdriver>],
+ [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 //Coke Oven
 recipes.addShaped(<gregtech:machine:1016>,

@@ -224,7 +224,7 @@ Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:crushedCopper
 Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <ore:crushedMalachite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <ore:crushedTetrahedrite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <ore:crushedBornite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <ore:crushedTenorite>.firstItem * 2);
+//Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <ore:crushedTenorite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <ore:crushedChalcopyrite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <ore:crushedChalcocite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <ore:crushedEnargite>.firstItem * 2);

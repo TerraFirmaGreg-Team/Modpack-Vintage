@@ -64,13 +64,13 @@ ItemRegistry.registerItemMetal(<ore:dustImpureTetrahedrite>.firstItem, "COPPER",
 //Тетраэдрит --- Большая Кучка
 ItemRegistry.registerItemMetal(<ore:dustTetrahedrite>.firstItem, "COPPER", 40, true);
 //Куприт --- Грязная Кучка
-ItemRegistry.registerItemMetal(<ore:dustImpureCuprite>.firstItem, "COPPER", 60, true);
+//ItemRegistry.registerItemMetal(<ore:dustImpureCuprite>.firstItem, "COPPER", 60, true);
 //Куприт --- Большая Кучка
-ItemRegistry.registerItemMetal(<ore:dustCuprite>.firstItem, "COPPER", 70, true);
+//ItemRegistry.registerItemMetal(<ore:dustCuprite>.firstItem, "COPPER", 70, true);
 //Тенорит --- Грязная Кучка
-ItemRegistry.registerItemMetal(<ore:dustImpureTenorite>.firstItem, "COPPER", 40, true);
+//ItemRegistry.registerItemMetal(<ore:dustImpureTenorite>.firstItem, "COPPER", 40, true);
 //Тенорит --- Большая Кучка
-ItemRegistry.registerItemMetal(<ore:dustTenorite>.firstItem, "COPPER", 50, true);
+//ItemRegistry.registerItemMetal(<ore:dustTenorite>.firstItem, "COPPER", 50, true);
 //Халькопирит --- Грязная Кучка
 ItemRegistry.registerItemMetal(<ore:dustImpureChalcopyrite>.firstItem, "COPPER", 20, true);
 //Халькопирит --- Большая Кучка
@@ -239,7 +239,7 @@ var GregtechOres as IItemStack[] = [
         <gregtech:ore_cobaltite_0>,
         <gregtech:ore_cooperite_0>,
         <gregtech:ore_copper_0>,
-        <gregtech:ore_cuprite_0>,
+        //<gregtech:ore_cuprite_0>,
         <gregtech:ore_diamond_0>,
         //<gregtech:ore_diatomite_0>,
         //<gregtech:ore_dolomite_0>,
@@ -331,7 +331,7 @@ var GregtechOres as IItemStack[] = [
         <gregtech:ore_tanzanite_0>,
         //<gregtech:ore_tellurium_0>,
         <gregtech:ore_tennantite_0>,
-        <gregtech:ore_tenorite_0>,
+        //<gregtech:ore_tenorite_0>,
         <gregtech:ore_tetrahedrite_0>,
         <gregtech:ore_thorium_0>,
         <gregtech:ore_tin_0>,
