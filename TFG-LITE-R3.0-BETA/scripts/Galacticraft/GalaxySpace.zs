@@ -383,7 +383,7 @@ electric_blast_furnace.recipeBuilder()
 	.buildAndRegister();
 //Tier 6
 electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateHssg>.firstItem * 3, <ore:ingotDiamericiumTitanium>.firstItem, <ore:foilNaquadria>.firstItem * 16])
+	.inputs([<ore:plateHssg>.firstItem * 3, <ore:foilNaquadria>.firstItem * 16])
 	.outputs(<galaxyspace:hdp:2> * 3)
 	.property("temperature", 10777)
 	.duration(1000)
