@@ -173,8 +173,6 @@ ItemRegistry.registerItemMetal(<ore:dustSmallGold>.firstItem, "GOLD", 25, true);
 ItemRegistry.registerItemMetal(<ore:dustTinyGold>.firstItem, "GOLD", 10, true);
 
 // --- Вариации висмута
-//Висмут --- Грязная Кучка
-ItemRegistry.registerItemMetal(<ore:dustImpureBismuth>.firstItem, "Bismuth", 80, true);
 //Висмут --- Средняя Кучка
 ItemRegistry.registerItemMetal(<ore:dustSmallBismuth>.firstItem, "Bismuth", 25, true);
 //Висмут --- Маленькая Кучка
