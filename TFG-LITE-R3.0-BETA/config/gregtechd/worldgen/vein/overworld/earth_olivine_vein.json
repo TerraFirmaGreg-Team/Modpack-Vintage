@@ -1,0 +1,42 @@
+{
+  "weight": 55,
+  "density": 0.3,
+  "max_height": 125,
+  "min_height": 12,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "olivine"
+  },
+  "generation_predicate": ["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [
+      13,
+      32
+    ]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:bentonite"
+        },
+        {
+          "weight": 30,
+          "value": "ore:magnesite"
+        },
+        {
+          "weight": 30,
+          "value": "ore:olivine"
+        },
+        {
+          "weight": 10,
+          "value": "ore:glauconite"
+        }
+      ]
+    }
+  }
+}

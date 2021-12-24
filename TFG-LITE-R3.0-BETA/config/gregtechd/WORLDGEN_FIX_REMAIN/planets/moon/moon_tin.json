@@ -1,0 +1,30 @@
+{
+    "weight": 50,
+    "max_height": 80,
+    "min_height": 20,
+	"density": 0.5,
+    "generator": {"type": "ellipsoid", "radius": [14, 30]},
+    "vein_populator": {"type": "surface_rock", "material": "tin"},
+    "dimension_filter": ["dimension_id:-28"],
+	
+    "filler": {
+        "type": "simple",
+        "value": {
+            "type": "weight_random",
+            "values": [
+                {
+                    "weight": "60",
+                    "value": "ore:tin"
+                },
+                {
+                    "weight": "30",
+                    "value": "ore:cassiterite"
+                },
+                {
+                    "weight": "10",
+                    "value": "ore:apatite"
+                }
+            ]
+        }
+    }
+}

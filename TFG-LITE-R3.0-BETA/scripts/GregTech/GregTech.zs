@@ -218,7 +218,7 @@ assembler.findRecipe(16, [<ore:plateTitanium>.firstItem * 8, <gregtech:meta_item
 assembler.findRecipe(16, [<ore:plateTungstenSteel>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<ore:plateRhodiumPlatedPalladium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<ore:plateNaquadahAlloy>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateLivermorium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(16, [<ore:plateDarmstadtium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 assembler.findRecipe(16, [<ore:plateNeutronium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 //Создание
 assembler.recipeBuilder().inputs(<ore:plateWroughtIron> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
@@ -229,7 +229,7 @@ assembler.recipeBuilder().inputs(<ore:plateTitanium> * 6).notConsumable(<gregtec
 assembler.recipeBuilder().inputs(<ore:plateTungstenSteel> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:5>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateRhodiumPlatedPalladium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:6>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateNaquadahAlloy> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:7>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateLivermorium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs(<ore:plateDarmstadtium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs(<ore:plateNeutronium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:14>).duration(20).EUt(16).buildAndRegister();
 
 //Крафт некоторых блоков в компрессоре

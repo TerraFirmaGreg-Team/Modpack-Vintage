@@ -224,10 +224,8 @@ Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:crushedCopper
 Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <ore:crushedMalachite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <ore:crushedTetrahedrite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <ore:crushedBornite>.firstItem * 2);
-//Quern.addRecipe("GTOreToTFC_Tenorite", <gregtech:ore_tenorite_0>, <ore:crushedTenorite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <ore:crushedChalcopyrite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <ore:crushedChalcocite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Enargite", <gregtech:ore_enargite_0>, <ore:crushedEnargite>.firstItem * 2);
 //-
 Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <ore:crushedTin>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <ore:crushedCassiterite>.firstItem * 2);
@@ -240,7 +238,6 @@ Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <ore:crushed
 Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <ore:crushedBrownLimonite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <ore:crushedBandedIron>.firstItem * 2);
 //-
-Quern.addRecipe("GTOreToTFC_Zinc", <gregtech:ore_zinc_0>, <ore:crushedZinc>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <ore:crushedSphalerite>.firstItem * 2);
 //-
 Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <ore:crushedNickel>.firstItem * 2);
@@ -251,12 +248,10 @@ Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <ore:crushedGalena
 Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <ore:crushedLead>.firstItem * 2);
 //-
 Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <ore:crushedGold>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <ore:crushedBismuth>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <ore:crushedSilver>.firstItem * 2);
 //-
 Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <ore:crushedSulfur>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <ore:crushedRockSalt>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Kaolinite", <gregtech:ore_kaolinite_0>, <ore:crushedKaolinite>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <ore:crushedGraphite>.firstItem * 2);
 
 // --- Furnace recipes for TFC items

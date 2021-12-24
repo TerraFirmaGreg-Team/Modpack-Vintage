@@ -1,0 +1,30 @@
+{
+  "weight": 20,
+  "density": 0.5,
+  "max_height": 25,
+  "min_height": 5,
+  "surface_stone_material": "iridium",
+  "dimension_filter": ["dimension_id:-29"],
+
+  "generator": {"type": "ellipsoid", "radius": [11, 30]},
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+		{
+          "weight": 90,
+          "value": "block:gregtech:ore_iridium_metal_residue_0"
+        },
+		{
+          "weight": 5,
+          "value": "ore:iridium"
+        },
+		{
+          "weight": 5,
+          "value": "ore:osmium"
+        }
+      ]
+    }
+  }
+}

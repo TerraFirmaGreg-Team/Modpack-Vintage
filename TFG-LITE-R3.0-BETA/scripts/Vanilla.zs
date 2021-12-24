@@ -122,7 +122,7 @@ val ItemsToRemove as IItemStack[] = [
 for item in ItemsToRemove{
     recipes.remove(item);
 }
-
+/*
 //Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 
@@ -137,7 +137,7 @@ assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <gregtech:meta_item_1:46
 
 //Remove Wooden Trapdoor
 assembler.findRecipe(16, [<ore:plateIron>.firstItem * 4, <minecraft:trapdoor>], null).remove();
-
+*/
 //Другое
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
