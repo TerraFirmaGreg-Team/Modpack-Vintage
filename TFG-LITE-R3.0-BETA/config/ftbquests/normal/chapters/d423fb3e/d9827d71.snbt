@@ -12,16 +12,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.mortar.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolMortar",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolMortar"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolMortar"
 				}
 			}
 		}],

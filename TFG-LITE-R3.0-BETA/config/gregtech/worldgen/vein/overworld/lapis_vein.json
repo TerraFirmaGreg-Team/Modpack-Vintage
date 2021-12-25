@@ -1,17 +1,18 @@
 {
   "weight": 40,
   "density": 0.25,
-  "max_height": 50,
+  "max_height": 140,
   "min_height": 20,
   "vein_populator": {
     "type": "surface_rock",
     "material": "lapis"
   },
+  "generation_predicate":["ore_dict:RawMetamorphic"],
   "generator": {
     "type": "layered",
     "radius": [
       14,
-      16
+      32
     ]
   },
   "filler": {

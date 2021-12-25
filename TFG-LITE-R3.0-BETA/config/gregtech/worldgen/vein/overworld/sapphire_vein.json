@@ -1,17 +1,18 @@
 {
   "weight": 60,
   "density": 0.25,
-  "max_height": 40,
-  "min_height": 10,
+  "max_height": 90,
+  "min_height": 15,
   "vein_populator": {
     "type": "surface_rock",
     "material": "sapphire"
   },
+  "generation_predicate":["ore_dict:RawIgneousExtrusive"],
   "generator": {
     "type": "layered",
     "radius": [
       14,
-      16
+      32
     ]
   },
   "filler": {

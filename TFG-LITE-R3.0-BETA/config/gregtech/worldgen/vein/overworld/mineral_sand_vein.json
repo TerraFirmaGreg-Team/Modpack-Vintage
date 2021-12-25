@@ -1,12 +1,13 @@
 {
   "weight": 80,
   "density": 0.2,
-  "max_height": 60,
-  "min_height": 50,
+  "max_height": 140,
+  "min_height": 120,
   "vein_populator": {
     "type": "surface_rock",
     "material": "basaltic_mineral_sand"
   },
+  "generation_predicate":["block:tfc:raw/granite", "block:tfc:raw/basalt"],
   "generator": {
     "type": "layered",
     "radius": [

@@ -7,6 +7,7 @@
     "type": "surface_rock",
     "material": "coal"
   },
+  "generation_predicate":["ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
   "generator": {
     "type": "layered",
     "radius": [

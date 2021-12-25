@@ -1,0 +1,34 @@
+{
+  "weight": 40,
+  "density": 0.25,
+  "min_height": 40,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "aluminium"
+  },
+  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive"],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:bauxite"
+      },
+      {
+        "secondary": "ore:ilmenite"
+      },
+      {
+        "between": "ore:aluminium"
+      },
+      {
+        "sporadic": "ore:ilmenite"
+      }
+    ]
+  }
+}
