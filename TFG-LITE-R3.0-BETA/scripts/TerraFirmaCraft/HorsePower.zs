@@ -37,3 +37,4 @@ Grindstone.add(<gregtech:ore_silver_0>, <ore:dustImpureSilver>.firstItem * 3, 10
 Grindstone.add(<gregtech:ore_sulfur_0>, <ore:dustImpureSulfur>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_rock_salt_0>, <ore:dustImpureRockSalt>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_graphite_0>, <ore:dustImpureGraphite>.firstItem * 3, 10, false);
+Grindstone.add(<gregtech:ore_mica_0>, <ore:dustImpureMica>.firstItem * 3, 10, false);

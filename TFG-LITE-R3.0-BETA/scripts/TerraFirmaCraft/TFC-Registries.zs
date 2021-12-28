@@ -17,11 +17,6 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 // - Регистрация инструментов
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
-// - Регистрация металлов
-//Регистрация металлов для баков.
-ItemRegistry.registerItemMetal(<gregtech:machine:1596>, "BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<gregtech:machine:1597>, "STEEL", 400, true);
-
 //Регистрация металлов для палок GT
 ItemRegistry.registerItemMetal(<ore:stickGold>.firstItem, "GOLD", 50, true);
 ItemRegistry.registerItemMetal(<ore:stickWroughtIron>.firstItem, "WROUGHT_IRON", 50, true);
@@ -189,6 +184,8 @@ ItemRegistry.registerItemMetal(<ore:dustTinySilver>.firstItem, "SILVER", 10, tru
 //Регистрация предметов - Вес + Размер
 // Ingots
 ItemRegistry.registerItemSize(<gregtech:meta_ingot:*>, "LARGE", "LIGHT");
+// Plates
+ItemRegistry.registerItemSize(<gregtech:meta_plate:*>, "LARGE", "LIGHT");
 
 // - Регистрация блоков руд - Вес + Размер
 var GregtechOres as IItemStack[] = [

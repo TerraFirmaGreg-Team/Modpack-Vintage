@@ -38,6 +38,8 @@ FluidToItem.transform(<ore:dustSmallGold>.firstItem * 2, <liquid:fresh_water>, [
 FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBismuth>]);
 //Графит
 FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureGraphite>]);
+//Мика
+FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMica>]);
 //Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureDiamond>]);
 
@@ -79,41 +81,7 @@ FluidToItem.transform(<ore:dustSmallGold>.firstItem * 2, <liquid:salt_water>, [<
 FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureBismuth>]);
 //Графит
 FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureGraphite>]);
+//Мика
+FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureMica>]);
 //Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureDiamond>]);
-
-//При бросании цемента в воду получается бетон
-//Чистая вода
-FluidToItem.transform(<minecraft:concrete>, <liquid:fresh_water>, [<minecraft:concrete_powder>]);
-FluidToItem.transform(<minecraft:concrete:1>, <liquid:fresh_water>, [<minecraft:concrete_powder:1>]);
-FluidToItem.transform(<minecraft:concrete:2>, <liquid:fresh_water>, [<minecraft:concrete_powder:2>]);
-FluidToItem.transform(<minecraft:concrete:3>, <liquid:fresh_water>, [<minecraft:concrete_powder:3>]);
-FluidToItem.transform(<minecraft:concrete:4>, <liquid:fresh_water>, [<minecraft:concrete_powder:4>]);
-FluidToItem.transform(<minecraft:concrete:5>, <liquid:fresh_water>, [<minecraft:concrete_powder:5>]);
-FluidToItem.transform(<minecraft:concrete:6>, <liquid:fresh_water>, [<minecraft:concrete_powder:6>]);
-FluidToItem.transform(<minecraft:concrete:7>, <liquid:fresh_water>, [<minecraft:concrete_powder:7>]);
-FluidToItem.transform(<minecraft:concrete:8>, <liquid:fresh_water>, [<minecraft:concrete_powder:8>]);
-FluidToItem.transform(<minecraft:concrete:9>, <liquid:fresh_water>, [<minecraft:concrete_powder:9>]);
-FluidToItem.transform(<minecraft:concrete:10>, <liquid:fresh_water>, [<minecraft:concrete_powder:10>]);
-FluidToItem.transform(<minecraft:concrete:11>, <liquid:fresh_water>, [<minecraft:concrete_powder:11>]);
-FluidToItem.transform(<minecraft:concrete:12>, <liquid:fresh_water>, [<minecraft:concrete_powder:12>]);
-FluidToItem.transform(<minecraft:concrete:13>, <liquid:fresh_water>, [<minecraft:concrete_powder:13>]);
-FluidToItem.transform(<minecraft:concrete:14>, <liquid:fresh_water>, [<minecraft:concrete_powder:14>]);
-FluidToItem.transform(<minecraft:concrete:15>, <liquid:fresh_water>, [<minecraft:concrete_powder:15>]);
-//Соленая вода
-FluidToItem.transform(<minecraft:concrete>, <liquid:salt_water>, [<minecraft:concrete_powder>]);
-FluidToItem.transform(<minecraft:concrete:1>, <liquid:salt_water>, [<minecraft:concrete_powder:1>]);
-FluidToItem.transform(<minecraft:concrete:2>, <liquid:salt_water>, [<minecraft:concrete_powder:2>]);
-FluidToItem.transform(<minecraft:concrete:3>, <liquid:salt_water>, [<minecraft:concrete_powder:3>]);
-FluidToItem.transform(<minecraft:concrete:4>, <liquid:salt_water>, [<minecraft:concrete_powder:4>]);
-FluidToItem.transform(<minecraft:concrete:5>, <liquid:salt_water>, [<minecraft:concrete_powder:5>]);
-FluidToItem.transform(<minecraft:concrete:6>, <liquid:salt_water>, [<minecraft:concrete_powder:6>]);
-FluidToItem.transform(<minecraft:concrete:7>, <liquid:salt_water>, [<minecraft:concrete_powder:7>]);
-FluidToItem.transform(<minecraft:concrete:8>, <liquid:salt_water>, [<minecraft:concrete_powder:8>]);
-FluidToItem.transform(<minecraft:concrete:9>, <liquid:salt_water>, [<minecraft:concrete_powder:9>]);
-FluidToItem.transform(<minecraft:concrete:10>, <liquid:salt_water>, [<minecraft:concrete_powder:10>]);
-FluidToItem.transform(<minecraft:concrete:11>, <liquid:salt_water>, [<minecraft:concrete_powder:11>]);
-FluidToItem.transform(<minecraft:concrete:12>, <liquid:salt_water>, [<minecraft:concrete_powder:12>]);
-FluidToItem.transform(<minecraft:concrete:13>, <liquid:salt_water>, [<minecraft:concrete_powder:13>]);
-FluidToItem.transform(<minecraft:concrete:14>, <liquid:salt_water>, [<minecraft:concrete_powder:14>]);
-FluidToItem.transform(<minecraft:concrete:15>, <liquid:salt_water>, [<minecraft:concrete_powder:15>]);

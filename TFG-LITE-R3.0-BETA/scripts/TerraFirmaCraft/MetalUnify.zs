@@ -1,6 +1,8 @@
 import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Quern;
+import mods.terrafirmacraft.Heating;
+import mods.firmalife.Oven;
 import mods.tfcdryingrack.Rack;
 import mods.horsepower.Grindstone;
 
@@ -101,67 +103,76 @@ Welding.addRecipe("tfc:TFG_gear_black_steel", <ore:rackwheelBlackSteel>, <ore:sl
 Welding.addRecipe("tfc:TFG_gear_blue_steel", <ore:rackwheelBlueSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2511>, 6);
 Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2510>, 6);
 
-// --- Унификация высокоуглеродной стали
+// --- ---  Унификация высокоуглеродной стали
 Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
 Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация высокоуглеродной черной стали
+// --- --- Унификация высокоуглеродной черной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
 Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
 
-// --- Унификация высокоуглеродной красной стали
+// --- --- Унификация высокоуглеродной красной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
 Welding.addRecipe("tfc:TFG_high_carbon_red_steel", <tfc:metal/ingot/weak_red_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_red_steel>, 4);
 
-// --- Унификация высокоуглеродной синей стали
+// --- --- Унификация высокоуглеродной синей стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
 Welding.addRecipe("tfc:TFG_high_carbon_blue_steel", <tfc:metal/ingot/weak_blue_steel>, <ore:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_blue_steel>, 4);
 
-// --- Унификация стали
+// --- --- Унификация стали
 Anvil.removeRecipe(<tfc:metal/ingot/steel>);
 Anvil.addRecipe("tfc:TFG_steel_ingot", <tfc:metal/ingot/high_carbon_steel>, <ore:ingotSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация черной стали
+// --- --- Унификация черной стали
 Anvil.removeRecipe(<tfc:metal/ingot/black_steel>);
 Anvil.addRecipe("tfc:TFG_black_steel_ingot", <tfc:metal/ingot/high_carbon_black_steel>, <ore:ingotBlackSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация красной стали
+// --- --- Унификация красной стали
 Anvil.removeRecipe(<tfc:metal/ingot/red_steel>);
 Anvil.addRecipe("tfc:TFG_red_steel_ingot", <tfc:metal/ingot/high_carbon_red_steel>, <ore:ingotRedSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация синей стали
+// --- --- Унификация синей стали
 Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
 Anvil.addRecipe("tfc:TFG_blue_steel_ingot", <tfc:metal/ingot/high_carbon_blue_steel>, <ore:ingotBlueSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- Унификация каолинита
+// --- --- Унификация каолинита
+// --- Удаление рецептов
+Quern.removeRecipe(<tfc:powder/kaolinite> * 4);
+Heating.removeRecipe(<tfc:powder/kaolinite>);
+Oven.removeRecipe(<tfc:powder/kaolinite>);
+Grindstone.remove(<tfc:powder/kaolinite> * 6);
+// --- --- Добавление рецептов
+Quern.addRecipe("quern_mica_to_kaolinite", <ore:dustMica>, <tfc:powder/kaolinite> * 2);
+Grindstone.add(<ore:dustMica>, <tfc:powder/kaolinite> * 4, 10, false);
 
-// --- Унификация каолинита
+// --- --- Унификация графита
 
-// --- Унификация графита
+// --- --- Унификация серы
 
-// --- Унификация серы
+// --- --- Удаление гематита
 
-// --- Удаление гематита
+// --- --- Унификация ляписа
 
-// --- Унификация ляписа
+// --- --- Унификация желтого лимонита
 
-// --- Унификация желтого лимонита
+// --- --- Унификация малахита
 
-// --- Унификация малахита
+// --- --- Унификация древесного угля
 
-// --- Унификация древесного угля
-
-// --- Унификация соли
+// --- --- Унификация соли
+// --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/salt>*4);
 Quern.removeRecipe(<tfc:powder/salt>*2);
 Grindstone.remove(<tfc:powder/salt>*6);
 Grindstone.remove(<tfc:powder/salt>*8);
 Rack.removeRecipe(<ore:dustSaltpeter>.firstItem);
+// --- --- Добавление рецептов
 Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 4);
 Grindstone.add(<tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 8, 10, false);
 Rack.addRecipe("rack_saltpeter_to_salt", <ore:dustSaltpeter>.firstItem, <ore:dustSalt>.firstItem, 24, 1.0);
 
-// --- Унификация сальпетера
+// --- --- Унификация сальпетера
+// --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/saltpeter>*4);
 Grindstone.remove(<tfc:powder/saltpeter>*8);
 

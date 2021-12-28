@@ -9,21 +9,10 @@
 		"b320933e"
 	],
 	tasks: [{
-		uid: "3298f0d1",
+		uid: "ae706ed9",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustKaolinite"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustKaolinite"
-				}
-			}
+			item: "tfc:powder/kaolinite"
 		}]
 	}]
 }

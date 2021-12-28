@@ -1,14 +1,16 @@
 {
-	x: 6.0d,
-	y: -3.0d,
+	x: 7.0d,
+	y: -7.0d,
+	dependencies: [
+		"d6b816dd"
+	],
 	tasks: [{
-		uid: "5967e3f0",
+		uid: "9dcfbf42",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_ingot",
-			Damage: 80s,
+			id: "tfc:metal/sheet/wrought_iron",
 			ForgeCaps: {
-				"tfc:item_forge": {
+				Parent: {
 					ticks: -1L,
 					heat: 0.0f,
 					forge: {
@@ -22,10 +24,5 @@
 				}
 			}
 		}]
-	}],
-	rewards: [{
-		uid: "1818571d",
-		type: "random",
-		table: 89
 	}]
 }

@@ -5,9 +5,9 @@
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.tfcblastfurnace.subtitle}",
 	dependencies: [
-		"f9339b52",
 		"a10d12a0",
-		"2afa953f"
+		"2afa953f",
+		"f9339b52"
 	],
 	tasks: [{
 		uid: "236888d3",

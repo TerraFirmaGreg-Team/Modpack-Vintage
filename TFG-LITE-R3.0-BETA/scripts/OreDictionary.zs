@@ -104,29 +104,46 @@ for item in ForestryPropolisArray {
 	ForestryPropolis1.add(item);
 }
 
+// --- Adding OreDictionary
+// --- TFC
+//Rock Types
+<ore:stoneBasalt>.add(<tfc:raw/basalt>);
+<ore:stoneMarble>.add(<tfc:raw/marble>);
+
+// --- Forestry
 //Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
-//<ore:dustSalt>.remove(<tfc:powder/salt>);
-//<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
+
 
 // --- Deleting OreDictionary
-//Bronze Forestry
+// --- ProjectRed
+//Copper
+<ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
+//Tin
+<ore:ingotTin>.remove(<projectred-core:resource_item:101>);
+//Silver
+<ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
+
+// --- Forestry
+//Bronze
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
-//Tin Forestry
+//Tin
 <ore:ingotTin>.remove(<forestry:ingot_tin>);
-//Copper Forestry
+//Copper
 <ore:ingotCopper>.remove(<forestry:ingot_copper>);
-//Apatite Forestry
+//Apatite
 <ore:gemApatite>.remove(<forestry:apatite>);
-//Bronze Block Forestry
+//Bronze Block
 <ore:blockBronze>.remove(<forestry:resource_storage:3>);
-//Tin Block Forestry
+//Tin Block
 <ore:blockTin>.remove(<forestry:resource_storage:2>);
-//Copper Block Forestry
+//Copper Block
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
-//Apatite Block Forestry
+//Apatite Block
 <ore:blockApatite>.remove(<forestry:resource_storage>);
+
+// --- Minecraft
 //Lapis
 <ore:dye>.remove(<minecraft:dye:4>);
 <ore:dyeBlue>.remove(<minecraft:dye:4>);

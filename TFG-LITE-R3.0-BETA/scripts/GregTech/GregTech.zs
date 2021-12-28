@@ -4,6 +4,7 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
+    //Crafting Station
     <gregtech:machine:1646>, //TODO
     //Primitive Blast Furnace
     <gregtech:machine:1000>,
@@ -43,20 +44,17 @@ for item in ItemsToRemove{
 }
 
 //Удаление рецептов
+recipes.removeByRecipeName("gregtech:cobblestone_hammer");
 recipes.removeByRecipeName("gregtech:piston_iron");
 recipes.removeByRecipeName("gregtech:sticky_resin_torch");
 recipes.removeByRecipeName("gregtech:torch_phosphorus");
 recipes.removeByRecipeName("gregtech:torch_coke");
 recipes.removeByRecipeName("gregtech:torch_coke_dust");
 recipes.removeByRecipeName("gregtech:torch_sulfur");
-//recipes.removeByRecipeName("gregtech:cauldron");
 recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("gregtech:iron_door");
+recipes.removeByRecipeName("gregtech:iron_bars");
 recipes.removeByRecipeName("gregtech:quartz_sand");
-// recipes.removeByRecipeName("gregtech:pump_deck");
-// recipes.removeByRecipeName("gregtech:pump_hatch");
-// recipes.removeByRecipeName("gregtech:primitive_pump");
-
 
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);

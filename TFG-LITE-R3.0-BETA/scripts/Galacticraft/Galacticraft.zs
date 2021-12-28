@@ -279,6 +279,9 @@ furnace.remove(<galacticraftplanets:item_basic_mars:2>);
 
 //Именованное удаление
 recipes.removeByRecipeName("galacticraftcore:slime_ball");
+recipes.removeByRecipeName("galacticraftcore:cobblestone");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
 
 //Еда из GC
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);

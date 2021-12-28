@@ -1,13 +1,14 @@
 import crafttweaker.item.IItemStack;
 
 //Удаление и скрытие предметов
-/*
-global ItemsToRemovePR as IItemStack[] = [
-	
+val ItemsToRemove as IItemStack[] = [
+	<projectred-core:resource_item:100>,
+    <projectred-core:resource_item:101>,
+    <projectred-core:resource_item:102>,
 ] as IItemStack[];
-for item in ItemsToRemovePR{
+for item in ItemsToRemove{
     mods.jei.JEI.removeAndHide(item);
-}*/
+}
 
 //Iron Coil
 recipes.remove(<projectred-core:resource_item:401>);
