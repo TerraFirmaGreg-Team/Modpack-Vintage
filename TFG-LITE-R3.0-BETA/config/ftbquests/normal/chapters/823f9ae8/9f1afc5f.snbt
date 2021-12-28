@@ -1,6 +1,6 @@
 {
 	x: -20.5d,
-	y: -7.0d,
+	y: -7.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperhammer.subtitle}",
 	dependencies: [

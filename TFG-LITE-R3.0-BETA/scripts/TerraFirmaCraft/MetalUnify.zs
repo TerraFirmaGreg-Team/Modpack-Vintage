@@ -135,7 +135,7 @@ Anvil.addRecipe("tfc:TFG_red_steel_ingot", <tfc:metal/ingot/high_carbon_red_stee
 Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
 Anvil.addRecipe("tfc:TFG_blue_steel_ingot", <tfc:metal/ingot/high_carbon_blue_steel>, <ore:ingotBlueSteel>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация каолинита
+// --- --- Унификация каолинита(Mica)
 // --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/kaolinite> * 4);
 Heating.removeRecipe(<tfc:powder/kaolinite>);
@@ -146,18 +146,27 @@ Quern.addRecipe("quern_mica_to_kaolinite", <ore:dustMica>, <tfc:powder/kaolinite
 Grindstone.add(<ore:dustMica>, <tfc:powder/kaolinite> * 4, 10, false);
 
 // --- --- Унификация графита
+// --- Удаление рецептов
+Quern.removeRecipe(<tfc:powder/graphite> * 4);
+Grindstone.remove(<tfc:powder/graphite> * 6);
 
 // --- --- Унификация серы
-
-// --- --- Удаление гематита
+// --- Удаление рецептов
+Quern.removeRecipe(<tfc:powder/sulfur> * 4);
+Grindstone.remove(<tfc:powder/sulfur> * 8);
+Rack.removeRecipe(<tfc:powder/sulfur>);
+// --- Добавление рецептов
+Rack.addRecipe("rack_sulfurshrooms_to_sulfur", <tfcflorae:plants/sulphur_shroom>, <ore:dustSulfur>.firstItem, 8, 1.0);
 
 // --- --- Унификация ляписа
+// --- Удаление рецептов
+Quern.removeRecipe(<tfc:powder/lapis_lazuli> * 4);
+Grindstone.remove(<tfc:powder/lapis_lazuli> * 8);
 
-// --- --- Унификация желтого лимонита
-
-// --- --- Унификация малахита
-
-// --- --- Унификация древесного угля
+// --- --- Унификация древесный уголь
+// --- Удаление рецептов
+Quern.removeRecipe(<tfc:powder/charcoal> * 4);
+Grindstone.remove(<tfc:powder/charcoal> * 8);
 
 // --- --- Унификация соли
 // --- Удаление рецептов
@@ -166,7 +175,7 @@ Quern.removeRecipe(<tfc:powder/salt>*2);
 Grindstone.remove(<tfc:powder/salt>*6);
 Grindstone.remove(<tfc:powder/salt>*8);
 Rack.removeRecipe(<ore:dustSaltpeter>.firstItem);
-// --- --- Добавление рецептов
+// --- Добавление рецептов
 Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 4);
 Grindstone.add(<tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 8, 10, false);
 Rack.addRecipe("rack_saltpeter_to_salt", <ore:dustSaltpeter>.firstItem, <ore:dustSalt>.firstItem, 24, 1.0);

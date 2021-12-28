@@ -8,8 +8,14 @@ Dropt.list("Puddles_Fix")
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
-//Уголек
-//Битумный уголь
+//Urns TODO
+Dropt.list("Urn_disables")
+  .add(Dropt.rule()
+  .matchBlocks(["tfcflorae:storage/urn_loot"])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop()));
+
+//Руда угля GT -> Уголь Гем
 Dropt.list("GT_Coal_To_TFC_Coal")
   .add(Dropt.rule()
   .matchBlocks(["gregtech:ore_coal_0"])

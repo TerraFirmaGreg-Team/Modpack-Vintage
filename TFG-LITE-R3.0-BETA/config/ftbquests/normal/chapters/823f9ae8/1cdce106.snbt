@@ -2,7 +2,7 @@
 	title: "{tfg.quests.primitive.bucket.title}",
 	x: 19.5d,
 	y: -5.0d,
-	shape: "diamond",
+	shape: "gear",
 	description: "{tfg.quests.primitive.bucket.subtitle}",
 	dependencies: [
 		"2b9352d5",

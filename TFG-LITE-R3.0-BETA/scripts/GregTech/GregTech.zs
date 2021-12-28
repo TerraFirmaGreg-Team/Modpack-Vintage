@@ -4,16 +4,21 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
-    //Crafting Station
-    <gregtech:machine:1646>, //TODO
     //Primitive Blast Furnace
     <gregtech:machine:1000>,
     //Primitive Bricks
     <gregtech:metal_casing:1>,
-    //flour
+    //Flour
     <gregtech:meta_dust:1615>,
     <gregtech:meta_dust_small:1615>,
-    <gregtech:meta_dust_tiny:1615>
+    <gregtech:meta_dust_tiny:1615>,
+    //Compressed Clay
+    <gregtech:meta_item_1:349>,
+    //FireClay
+    <gregtech:meta_item_1:351>,
+    <ore:dustFireclay>.firstItem,
+    <ore:dustSmallFireclay>.firstItem,
+    <ore:dustTinyFireclay>.firstItem
 ] as IItemStack[];
 for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -76,10 +81,10 @@ arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).outputs(<ore:ingotTi
 arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
 
 //Crafting Station
-/*recipes.addShaped(<gregtech:machine:1646>,
+recipes.addShaped(<gregtech:machine:1646>,
 [[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
  [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
- [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);*/
+ [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
 
 //LV Machine Casing
 recipes.addShaped(<gregtech:machine_casing:1>,
@@ -234,22 +239,6 @@ assembler.recipeBuilder().inputs(<ore:plateNeutronium> * 6).notConsumable(<gregt
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
-
-//Фикс блоков из ценных штук
-/*
-compressor.findRecipe(2, [<tfc:gem/ruby:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/topaz:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/sapphire:2>*9], null).remove();
-compressor.findRecipe(2, [<minecraft:diamond>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/opal:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:gem/amethyst:2>*9], null).remove();
-compressor.findRecipe(2, [<tfc:ore/lapis_lazuli>*9], null).remove();
-compressor.recipeBuilder().inputs(<ore:gemRuby>*9).outputs(<gregtech:meta_block_compressed_9:10>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemTopaz>*9).outputs(<gregtech:meta_block_compressed_11:14>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemSapphire>*9).outputs(<gregtech:meta_block_compressed_9:13>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemOpal>*9).outputs(<gregtech:meta_block_compressed_13:5>).duration(40).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemAmethyst>*9).outputs(<gregtech:meta_block_compressed_13:6>).duration(40).EUt(2).buildAndRegister();
-*/
 
 //Исправление рецепта синей стали
 recipes.removeByRecipeName("gregtech:dust_blue_steel");

@@ -207,13 +207,21 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/knife_blade/bronze>,
 	<tfc:metal/knife_blade/black_bronze>,
 	<tfc:metal/knife_blade/bismuth_bronze>,
+	//Powder
+	<tfc:powder/saltpeter>,
+	<tfc:powder/salt>,
+	<tfc:ore/graphite>,
+	<tfc:powder/graphite>,
+	<tfc:powder/sulfur>,
+	<tfc:powder/lapis_lazuli>,
+	<tfc:powder/limonite>,
+	<tfc:powder/malachite>,
+	<tfc:powder/charcoal>,
 	//Other
 	<tfc:ore/bituminous_coal>,
 	<tfc:ore/lignite>,
 	<tfc:sluice>,
-	<tfctech:powder/potash>,
-	<tfc:powder/saltpeter>,
-	<tfc:powder/salt>
+	<tfctech:powder/potash>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);

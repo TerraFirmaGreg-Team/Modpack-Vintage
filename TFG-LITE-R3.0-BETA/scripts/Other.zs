@@ -15,11 +15,6 @@ mods.jei.JEI.removeAndHide(<ftbquests:chest>);
 //B.A.S.E
 mods.jei.JEI.removeAndHide(<base:wrench>);
 
-//mods.jei.JEI.removeAndHide(<>);
-mods.jei.JEI.removeAndHide(<tfctech:electric_forge>);
-mods.jei.JEI.removeAndHide(<tfctech:induction_crucible>);
-mods.jei.JEI.removeAndHide(<tfctech:fridge>);
-
 //TOP
 mods.jei.JEI.removeAndHide(<theoneprobe:creativeprobe>);
 mods.jei.JEI.removeAndHide(<theoneprobe:probenote>);

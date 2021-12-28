@@ -124,6 +124,8 @@ for item in ForestryPropolisArray {
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
 //Silver
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
+//RedAlloy
+<ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
 
 // --- Forestry
 //Bronze
