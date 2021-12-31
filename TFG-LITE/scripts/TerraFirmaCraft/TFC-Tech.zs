@@ -3,6 +3,9 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Anvil;
 
+// --- Removing
+mods.jei.JEI.removeAndHide(<tfctech:powder/potash>);
+
 // --- Furnace recipes for TFC items
 furnace.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>);
 furnace.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>);

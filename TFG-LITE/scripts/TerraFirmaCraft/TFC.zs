@@ -210,14 +210,15 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	//Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
-	<tfc:ore/graphite>,
 	<tfc:powder/graphite>,
 	<tfc:powder/sulfur>,
 	<tfc:powder/lapis_lazuli>,
 	<tfc:powder/limonite>,
 	<tfc:powder/malachite>,
 	<tfc:powder/charcoal>,
+	<tfc:powder/hematite>,
 	//Other
+	<tfc:ore/graphite>,
 	<tfc:ore/bituminous_coal>,
 	<tfc:ore/lignite>,
 	<tfc:sluice>,
