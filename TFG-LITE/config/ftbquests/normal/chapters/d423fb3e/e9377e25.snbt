@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.steam.tools.title}",
-	x: -11.0d,
+	x: -12.5d,
 	y: 0.5d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.tools.subtitle}",
