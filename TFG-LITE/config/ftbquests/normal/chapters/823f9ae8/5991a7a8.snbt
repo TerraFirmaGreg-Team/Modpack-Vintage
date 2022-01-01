@@ -1,6 +1,7 @@
 {
 	x: -22.0d,
 	y: -3.0d,
+	description: "{tfg.quests.primitive.woodencrate.subtitle}",
 	dependencies: [
 		"1ccd9dd8"
 	],

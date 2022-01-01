@@ -30,6 +30,7 @@
 	tasks: [{
 		uid: "1a05161b",
 		type: "item",
+		title: "{tfg.quests.primitive.ironingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

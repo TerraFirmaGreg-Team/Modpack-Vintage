@@ -4,7 +4,7 @@
 	shape: "circle",
 	hide_dependency_lines: true,
 	dependencies: [
-		"f7244dc3"
+		"57406373"
 	],
 	tasks: [{
 		uid: "48f2af17",

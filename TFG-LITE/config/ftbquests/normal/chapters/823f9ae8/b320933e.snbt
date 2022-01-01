@@ -10,5 +10,11 @@
 		type: "checkmark",
 		title: "{tfg.quests.primitive.start.tasks.clickMe}",
 		icon: "minecraft:grass"
+	}],
+	rewards: [{
+		uid: "19e997ac",
+		type: "command",
+		auto: "enabled",
+		command: "/say Hi, @p"
 	}]
 }

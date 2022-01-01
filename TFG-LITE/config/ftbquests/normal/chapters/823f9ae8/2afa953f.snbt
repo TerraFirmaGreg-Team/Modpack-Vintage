@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.tfccrusible.title}",
 	disable_toast: true,
-	x: 2.0d,
+	x: 2.5d,
 	y: -3.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.tfccrusible.subtitle}",

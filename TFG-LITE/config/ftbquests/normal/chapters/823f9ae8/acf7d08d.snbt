@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.copperingot.title}",
 	x: -18.0d,
 	y: -5.0d,
 	shape: "circle",
@@ -8,9 +7,9 @@
 		"57406373"
 	],
 	tasks: [{
-		uid: "9c899c57",
+		uid: "ebbeb70e",
 		type: "item",
-		title: "Медный слиток",
+		title: "{tfg.quests.primitive.copperingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

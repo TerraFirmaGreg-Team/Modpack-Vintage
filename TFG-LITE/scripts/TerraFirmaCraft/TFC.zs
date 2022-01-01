@@ -8,7 +8,6 @@ import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
-import mods.firmalife.Drying;
 
 //Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -356,18 +355,12 @@ recipes.addShaped(<gregtech:meta_item_1:347>,
 //Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
 
-//Удобрение
-Drying.addRecipe("wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
-
 //Гниль из Forestry в удобрение
 Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fertilizer>);
 
 //Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-//Высушивание соли
-Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <ore:dustSmallSalt>.firstItem * 9, 24000);
 
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");

@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.steelingot.title}",
 	x: 4.5d,
 	y: -5.0d,
 	shape: "octagon",
@@ -12,7 +11,7 @@
 	tasks: [{
 		uid: "348c9b15",
 		type: "item",
-		title: "Стальной слиток",
+		title: "{tfg.quests.primitive.steelingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

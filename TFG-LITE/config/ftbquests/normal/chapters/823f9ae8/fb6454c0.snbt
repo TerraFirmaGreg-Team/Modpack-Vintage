@@ -1,6 +1,7 @@
 {
 	x: -18.0d,
 	y: 0.0d,
+	description: "{tfg.quests.primitive.wheel.subtitle}",
 	dependencies: [
 		"c8377a61"
 	],

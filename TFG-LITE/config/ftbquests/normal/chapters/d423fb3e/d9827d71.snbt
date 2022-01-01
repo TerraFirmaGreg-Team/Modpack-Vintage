@@ -4,7 +4,7 @@
 	shape: "diamond",
 	description: "{tfg.quests.steam.mortar.subtitle}",
 	dependencies: [
-		"1e9658b7"
+		"8fdd423e"
 	],
 	size: 2.0d,
 	tasks: [{

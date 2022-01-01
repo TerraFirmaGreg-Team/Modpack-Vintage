@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.bismuthbronzeingot.title}",
 	x: -14.0d,
 	y: -5.0d,
 	description: "{tfg.quests.primitive.bismuthbronzeingot.subtitle}",
@@ -11,6 +10,7 @@
 	tasks: [{
 		uid: "ad1c58a3",
 		type: "item",
+		title: "{tfg.quests.primitive.bismuthbronzeingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

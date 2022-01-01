@@ -1,4 +1,5 @@
 {
+	title: "{tfg.quests.primitive.tin.title}",
 	x: -12.0d,
 	y: -4.0d,
 	shape: "diamond",
@@ -11,20 +12,16 @@
 		uid: "92f4b7cf",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_dust_tiny",
-			Damage: 112s,
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyTin"
+				}
+			},
 			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+				Parent: {
+					id: "ore",
+					data: "dustTinyTin"
 				}
 			}
 		}]

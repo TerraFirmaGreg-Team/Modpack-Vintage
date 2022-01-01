@@ -1,8 +1,15 @@
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Barrel;
+import mods.firmalife.Drying;
 
 // --- Furnace recipes for TFC items
 furnace.addRecipe(<firmalife:unfired_mallet_mold>, <firmalife:mallet_mold>);
+
+//Удобрение
+Drying.addRecipe("wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
+
+//Высушивание соли
+Drying.addRecipe("saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <ore:dustSmallSalt>.firstItem * 2, 24000);
 
 //Климатическая станция уровня 0
 recipes.remove(<firmalife:climate_station>);

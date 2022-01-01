@@ -1,7 +1,8 @@
 {
-	title: "{tfg.quests.primitive.jugButUnfired.title}",
+	title: "{tfg.quests.primitive.jug.title}",
 	x: -27.5d,
 	y: -11.0d,
+	description: "{tfg.quests.primitive.jug.subtitle}",
 	dependencies: [
 		"e4dda908"
 	],
@@ -17,5 +18,13 @@
 				}
 			}
 		}]
+	},
+	{
+		uid: "4c42c6b9",
+		type: "item",
+		items: [{
+			item: "tfc:ceramics/fired/jug"
+		}],
+		ignore_nbt: 1b
 	}]
 }

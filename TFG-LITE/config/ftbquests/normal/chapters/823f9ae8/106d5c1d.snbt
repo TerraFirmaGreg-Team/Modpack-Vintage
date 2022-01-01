@@ -1,14 +1,15 @@
 {
-	title: "{tfg.quests.primitive.bronzeingot.title}",
 	x: -12.0d,
 	y: -5.0d,
+	description: "{tfg.quests.primitive.bronzeingot.subtitle}",
 	dependencies: [
 		"57406373",
 		"b51620dd"
 	],
 	tasks: [{
-		uid: "58c9e19f",
+		uid: "04a1f097",
 		type: "item",
+		title: "{tfg.quests.primitive.bronzeingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

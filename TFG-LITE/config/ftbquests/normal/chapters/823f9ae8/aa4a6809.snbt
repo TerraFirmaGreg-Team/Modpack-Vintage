@@ -10,7 +10,18 @@
 		uid: "14fbc66f",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust_tiny 1 103"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinySulfur"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinySulfur"
+				}
+			}
 		}]
 	}]
 }

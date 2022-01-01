@@ -1,6 +1,7 @@
 {
 	x: -25.5d,
 	y: 10.0d,
+	description: "{tfg.quests.primitive.spindle.subtitle}",
 	hide_dependency_lines: true,
 	dependencies: [
 		"8fc0c70f"

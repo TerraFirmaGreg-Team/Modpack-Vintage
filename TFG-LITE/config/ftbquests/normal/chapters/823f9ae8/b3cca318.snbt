@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.bismuthbronzepickaxe.title}",
 	x: -14.0d,
 	y: -2.5d,
+	description: "{tfg.quests.primitive.bismuthbronzepickaxe.subtitle}",
 	dependencies: [
 		"fff99863",
 		"c8b0cb86"

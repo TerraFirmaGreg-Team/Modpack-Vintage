@@ -1,6 +1,7 @@
 {
 	x: -22.0d,
 	y: -7.5d,
+	description: "{tfg.quests.primitive.coppergeopick.subtitle}",
 	dependencies: [
 		"57406373"
 	],

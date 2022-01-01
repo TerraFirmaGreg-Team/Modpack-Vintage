@@ -5,7 +5,7 @@
   "min_height": 90,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "tetrahedrite"
+    "material": "copper"
   },
   "generation_predicate": ["ore_dict:RawIgneousExtrusive"],
   "generator": {

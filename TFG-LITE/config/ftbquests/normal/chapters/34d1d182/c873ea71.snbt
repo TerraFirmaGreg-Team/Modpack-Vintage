@@ -12,10 +12,5 @@
 		uid: "ee12d99c",
 		type: "dimension",
 		dim: -1030
-	}],
-	rewards: [{
-		uid: "7cb35474",
-		type: "item",
-		item: "gregtech:meta_item_1 1 10993"
 	}]
 }

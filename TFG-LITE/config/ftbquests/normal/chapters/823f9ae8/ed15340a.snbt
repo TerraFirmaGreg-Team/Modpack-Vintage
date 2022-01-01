@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.graphitepile.title}",
-	x: 0.0d,
+	x: 0.5d,
 	y: 3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.graphitepile.subtitle}",
@@ -9,19 +9,19 @@
 		"b320933e"
 	],
 	tasks: [{
-		uid: "e12c09b6",
+		uid: "1597f4e0",
 		type: "item",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any dustGraphite"
+					Name: "Any dustRegularGraphite"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "dustGraphite"
+					data: "dustRegularGraphite"
 				}
 			}
 		}]

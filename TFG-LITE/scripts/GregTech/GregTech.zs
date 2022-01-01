@@ -25,12 +25,12 @@ for item in ItemsToRemoveFromJEI{
 }
 
 val ItemsToRemove as IItemStack[] = [
-	//Coke Oven
+	//Paper
+    <minecraft:paper> * 2,
+    //Coke Oven
     <gregtech:machine:1016>,
     //LV Casing
     <gregtech:machine_casing:1>,
-    //Crafting Station
-    <gregtech:machine:1646>,
     //Steam Miner
     <gregtech:machine:21>,
     //Steam Macerator
@@ -63,22 +63,6 @@ recipes.removeByRecipeName("gregtech:quartz_sand");
 
 //Реплейс всех печек на печь из GT
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
-
-//Переработка танков в Arc
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1596>).outputs(<ore:ingotBronze>.firstItem * 3).duration(400).EUt(8).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1597>).outputs(<ore:ingotSteel>.firstItem * 3).duration(400).EUt(30).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1598>).outputs(<ore:ingotAluminium>.firstItem *3).duration(400).EUt(120).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1599>).outputs(<ore:ingotStainlessSteel>.firstItem * 3).duration(400).EUt(500).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1600>).outputs(<ore:ingotTitanium>.firstItem * 3).duration(400).EUt(1560).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1601>).outputs(<ore:ingotTungstenSteel>.firstItem * 3).duration(400).EUt(2560).buildAndRegister();
-
-//Сундуки можно переработать
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1487>).outputs(<ore:ingotBronze>.firstItem * 10).EUt(8).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1488>).outputs(<ore:ingotSteel>.firstItem * 10).EUt(30).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1489>).outputs(<ore:ingotAluminium>.firstItem * 10).EUt(120).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1490>).outputs(<ore:ingotStainlessSteel>.firstItem * 10).EUt(500).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1491>).outputs(<ore:ingotTitanium>.firstItem * 10).EUt(1560).duration(400).buildAndRegister();
-arc_furnace.recipeBuilder().inputs(<gregtech:machine:1492>).outputs(<ore:ingotTungstenSteel>.firstItem * 10).EUt(2560).duration(400).buildAndRegister();
 
 //Crafting Station
 recipes.addShaped(<gregtech:machine:1646>,
@@ -153,11 +137,10 @@ centrifuge.recipeBuilder()
     .chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
     .chancedOutput(<gregtech:meta_item_1:439>, 3750, 900)
     .chancedOutput(<gregtech:meta_item_1:438>, 5000, 1200)
-    .fluidOutputs(<fluid:methane> * 250)
+    .fluidOutputs(<fluid:methane> * 65)
     .EUt(20).duration(300).buildAndRegister();
 
 //Исправление рецепта на бумагу
-recipes.removeByRecipeName("paper");
 //Крафт бумажной пыли
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],

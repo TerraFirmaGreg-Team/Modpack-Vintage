@@ -11,10 +11,10 @@
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
-		uid: "901b9d91",
+		uid: "fe3f3b76",
 		type: "item",
 		items: [{
-			item: "tfc:ore/bituminous_coal"
+			item: "minecraft:coal"
 		}]
 	}]
 }

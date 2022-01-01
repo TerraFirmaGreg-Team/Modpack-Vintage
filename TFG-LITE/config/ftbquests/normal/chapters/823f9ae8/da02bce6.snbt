@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.blackbronzeingot.title}",
 	x: -10.0d,
 	y: -5.0d,
 	description: "{tfg.quests.primitive.blackbronzeingot.subtitle}",
@@ -11,6 +10,7 @@
 	tasks: [{
 		uid: "019c5dd1",
 		type: "item",
+		title: "{tfg.quests.primitive.blackbronzeingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

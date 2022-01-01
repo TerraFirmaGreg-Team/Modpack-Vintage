@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.kaolinitepile.title}",
-	x: 0.0d,
+	x: 0.5d,
 	y: 2.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",

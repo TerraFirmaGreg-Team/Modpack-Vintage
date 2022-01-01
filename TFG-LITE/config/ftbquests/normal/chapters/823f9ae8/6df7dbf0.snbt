@@ -1,11 +1,12 @@
 {
 	x: -20.5d,
 	y: 6.0d,
+	description: "{tfg.quests.primitive.pineappleleather.subtitle}",
 	dependencies: [
 		"14ed0d1e"
 	],
 	tasks: [{
-		uid: "4118406d",
+		uid: "0d9b7518",
 		type: "item",
 		items: [{
 			item: "firmalife:pineapple_leather"

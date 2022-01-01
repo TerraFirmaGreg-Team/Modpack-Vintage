@@ -2,6 +2,7 @@
 	title: "Ткацкий станок",
 	x: -18.0d,
 	y: 4.5d,
+	description: "{tfg.quests.primitive.loom.subtitle}",
 	dependencies: [
 		"3bcc6936"
 	],

@@ -15,12 +15,5 @@
 			item: "minecraft:obsidian"
 		}],
 		count: 7L
-	}],
-	rewards: [{
-		uid: "e58d36a2",
-		type: "item",
-		team_reward: false,
-		item: "minecraft:obsidian",
-		count: 7
 	}]
 }

@@ -1,6 +1,7 @@
 {
 	x: -23.5d,
 	y: 8.0d,
+	description: "{tfg.quests.primitive.tannedleather.subtitle}",
 	min_required_dependencies: 2,
 	dependencies: [
 		"2816fe72",

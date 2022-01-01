@@ -16,8 +16,9 @@
 			}
 		}
 	},
-	x: 2.0d,
+	x: 2.5d,
 	y: -12.0d,
+	description: "{tfg.quests.primitive.tuyere.subtitle}",
 	dependencies: [
 		"f9339b52"
 	],

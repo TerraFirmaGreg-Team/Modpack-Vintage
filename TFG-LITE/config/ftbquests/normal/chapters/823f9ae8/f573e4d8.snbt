@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.siliciasand.title}",
 	x: -5.0d,
 	y: -0.5d,
+	description: "{tfg.quests.primitive.siliciasand.subtitle}",
 	dependencies: [
 		"5995c91c"
 	],
@@ -36,19 +38,19 @@
 		}]
 	},
 	{
-		uid: "c0f5c971",
+		uid: "cdfb8c99",
 		type: "item",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any dustPotash"
+					Name: "Any dustRegularPotash"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "dustPotash"
+					data: "dustRegularPotash"
 				}
 			}
 		}]

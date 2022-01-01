@@ -1,7 +1,8 @@
 {
-	title: "{tfg.quests.primitive.vesselUnharneded.title}",
+	title: "{tfg.quests.primitive.vessel.title}",
 	x: -25.5d,
 	y: -11.0d,
+	description: "{tfg.quests.primitive.vessel.subtitle}",
 	dependencies: [
 		"e4dda908"
 	],
@@ -17,5 +18,25 @@
 				}
 			}
 		}]
+	},
+	{
+		uid: "e784ca9d",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/vessel",
+			ForgeCaps: {
+				Parent: {
+					fluidMode: 0b,
+					ticks: -1L,
+					heat: 0.0f,
+					items: {
+						Items: [],
+						Size: 4
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

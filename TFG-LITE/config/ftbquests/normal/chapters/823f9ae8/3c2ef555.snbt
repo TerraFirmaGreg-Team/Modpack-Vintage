@@ -7,19 +7,14 @@
 		"734b42fd"
 	],
 	tasks: [{
-		uid: "b6ad45ab",
+		uid: "9530d4b2",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:meta_tool",
+			Damage: 9s,
 			tag: {
-				display: {
-					Name: "Any craftingToolFile"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolFile"
+				GT.ToolStats: {
+					Material: "copper"
 				}
 			}
 		}],
