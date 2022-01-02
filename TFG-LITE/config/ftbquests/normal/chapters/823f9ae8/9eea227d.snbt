@@ -21,9 +21,5 @@
 			}
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "06cf21dd",
-		type: "custom"
 	}]
 }

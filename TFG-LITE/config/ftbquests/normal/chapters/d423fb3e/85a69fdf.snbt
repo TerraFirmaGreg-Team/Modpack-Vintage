@@ -2,6 +2,7 @@
 	x: -9.5d,
 	y: 0.5d,
 	shape: "diamond",
+	description: "{tfg.quests.steam.craftingstation.subtitle}",
 	dependencies: [
 		"d9827d71"
 	],

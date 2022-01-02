@@ -1,7 +1,7 @@
 {
 	x: -12.5d,
 	y: -3.5d,
-	description: "{tfg.quests.steam.creosoteoven.subtitle}",
+	description: "{tfg.quests.steam.cokeoven.subtitle}",
 	dependencies: [
 		"8fdd423e"
 	],

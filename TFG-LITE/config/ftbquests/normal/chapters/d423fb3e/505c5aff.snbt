@@ -2,7 +2,6 @@
 	x: -12.5d,
 	y: -8.5d,
 	shape: "octagon",
-	description: "{tfg.quests.steam.bronzebrickedhull.subtitle}",
 	dependencies: [
 		"7d03eeb7"
 	],

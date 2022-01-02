@@ -1,6 +1,7 @@
 {
 	x: -7.5d,
 	y: -3.5d,
+	description: "{tfg.quests.steam.primitivewatertank.subtitle}",
 	dependencies: [
 		"b8c6b061"
 	],

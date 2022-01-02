@@ -2,7 +2,6 @@
 	x: -9.5d,
 	y: -8.5d,
 	shape: "octagon",
-	description: "{tfg.quests.steam.steelcasing.subtitle}",
 	dependencies: [
 		"e6318f88"
 	],

@@ -8,46 +8,6 @@
 		"d9827d71"
 	],
 	tasks: [{
-		uid: "36feaf59",
-		type: "item",
-		title: "{tfg.quests.steam.tools.task.wrench.title}",
-		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any craftingToolWrench"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolWrench"
-				}
-			}
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "b479714b",
-		type: "item",
-		title: "{tfg.quests.steam.tools.task.screwdriver.title}",
-		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any craftingToolScrewdriver"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolScrewdriver"
-				}
-			}
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "fd589fa4",
 		type: "item",
 		title: "{tfg.quests.steam.tools.task.wirecutter.title}",
@@ -62,6 +22,36 @@
 				Parent: {
 					id: "ore",
 					data: "craftingToolWireCutter"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "53ed6242",
+		type: "item",
+		title: "{tfg.quests.steam.tools.task.wrench.title}",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 8s,
+			tag: {
+				GT.ToolStats: {
+					Material: "neutronium"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "260d1bad",
+		type: "item",
+		title: "{tfg.quests.steam.tools.task.screwdriver.title}",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 11s,
+			tag: {
+				GT.ToolStats: {
+					Material: "neutronium"
 				}
 			}
 		}],

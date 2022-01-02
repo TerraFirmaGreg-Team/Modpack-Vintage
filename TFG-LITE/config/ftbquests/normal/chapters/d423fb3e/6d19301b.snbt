@@ -1,6 +1,7 @@
 {
 	x: -14.5d,
 	y: -6.5d,
+	description: "{tfg.quests.steam.bronzeboiler.subtitle}",
 	dependencies: [
 		"7d03eeb7"
 	],

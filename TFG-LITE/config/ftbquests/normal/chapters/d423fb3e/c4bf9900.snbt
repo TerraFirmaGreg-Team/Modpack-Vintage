@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.steam.diffboilers.title}",
 	x: -11.0d,
 	y: -11.0d,
+	description: "{tfg.quests.steam.diffboilers.subtitle}",
 	dependencies: [
 		"aa6b35c3"
 	],

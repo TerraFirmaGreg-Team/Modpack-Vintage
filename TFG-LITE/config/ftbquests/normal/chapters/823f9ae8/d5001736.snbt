@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.greenhouseblocks.title}",
 	x: -8.0d,
 	y: -3.5d,
+	description: "{tfg.quests.primitive.greenhouseblocks.subtitle}",
 	dependencies: [
 		"85e10b5d"
 	],
@@ -27,9 +29,5 @@
 			item: "firmalife:greenhouse_roof"
 		}],
 		count: 20L
-	}],
-	rewards: [{
-		uid: "4268795f",
-		type: "custom"
 	}]
 }

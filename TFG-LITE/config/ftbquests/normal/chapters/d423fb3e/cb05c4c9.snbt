@@ -1,6 +1,7 @@
 {
 	x: -12.5d,
 	y: -2.5d,
+	description: "{tfg.quests.steam.raintank.subtitle}",
 	dependencies: [
 		"8fdd423e"
 	],

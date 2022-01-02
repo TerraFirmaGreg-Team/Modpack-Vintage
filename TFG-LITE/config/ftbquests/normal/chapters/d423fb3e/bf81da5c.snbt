@@ -1,8 +1,9 @@
 {
+	title: "{tfg.quests.steam.diffboilers.title}",
 	x: -13.5d,
 	y: -11.0d,
 	shape: "circle",
-	description: "{tfg.quests.steam.bronzeboiler.subtitle}",
+	description: "{tfg.quests.steam.diffboilers.subtitle}",
 	dependencies: [
 		"505c5aff"
 	],

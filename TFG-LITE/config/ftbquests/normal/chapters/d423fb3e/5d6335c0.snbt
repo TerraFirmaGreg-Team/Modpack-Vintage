@@ -1,6 +1,7 @@
 {
 	x: -9.5d,
 	y: -2.5d,
+	description: "{tfg.quests.steam.safe.subtitle}",
 	dependencies: [
 		"8fdd423e"
 	],

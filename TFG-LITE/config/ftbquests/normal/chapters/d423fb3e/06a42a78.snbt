@@ -2,7 +2,7 @@
 	x: -12.5d,
 	y: -11.0d,
 	shape: "circle",
-	description: "{tfg.quests.steam.steamfurnace.subtitle}",
+	description: "{tfg.quests.steam.bronzefurnace.subtitle}",
 	dependencies: [
 		"505c5aff"
 	],

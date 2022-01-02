@@ -1,6 +1,7 @@
 {
 	x: -17.5d,
 	y: -11.0d,
+	description: "{tfg.quests.steam.bronzerockbreaker.subtitle}",
 	dependencies: [
 		"5347bf68"
 	],
