@@ -151,11 +151,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/hammer/black_steel>,
 	<tfc:metal/hammer/blue_steel>,
 	<tfc:metal/hammer/red_steel>,
-	//Stone Hammers
-	<tfc:stone/hammer/igneous_intrusive>,
-	<tfc:stone/hammer/igneous_extrusive>,
-	<tfc:stone/hammer/sedimentary>,
-	<tfc:stone/hammer/metamorphic>,
 	//Hammers Heads
 	<tfc:metal/hammer_head/copper>,
 	<tfc:metal/hammer_head/red_steel>,

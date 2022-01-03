@@ -7,12 +7,6 @@ recipes.removeByRecipeName("gregtech:knife_flint");
 recipes.removeByRecipeName("gregtech:hoe_flint");
 recipes.removeByRecipeName("gregtech:mortar_flint");
 
-//Крафт каменного молота
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/igneous_intrusive>]);
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/igneous_extrusive>]);
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/sedimentary>]);
-recipes.addShapeless(<gregtech:meta_tool:6>.withTag({"GT.ToolStats": {Material: "stone", DigSpeed: 0.0 as float, MaxDurability: 25}}), [<minecraft:stick>, <tfc:stone/hammer_head/metamorphic>]);
-
 //Отключение крафтов молотков с палкой(62)
 recipes.removeByRecipeName("gregtech:hammer_naquadah_enriched");
 recipes.removeByRecipeName("gregtech:hammer_naquadah_alloy");
@@ -64,3 +58,15 @@ recipes.removeByRecipeName("gregtech:hammer_iridium");
 recipes.removeByRecipeName("gregtech:hammer_aluminium");
 recipes.removeByRecipeName("gregtech:hammer_ultimet");
 recipes.removeByRecipeName("gregtech:hammer_black_bronze");
+recipes.removeByRecipeName("gregtech:hammer_emerald");
+recipes.removeByRecipeName("gregtech:hammer_garnet_red");
+recipes.removeByRecipeName("gregtech:hammer_amethyst");
+recipes.removeByRecipeName("gregtech:hammer_garnet_yellow");
+recipes.removeByRecipeName("gregtech:hammer_topaz");
+recipes.removeByRecipeName("gregtech:hammer_opal");
+recipes.removeByRecipeName("gregtech:hammer_olivine");
+recipes.removeByRecipeName("gregtech:hammer_diamond");
+recipes.removeByRecipeName("gregtech:hammer_green_sapphire");
+recipes.removeByRecipeName("gregtech:hammer_sapphire");
+recipes.removeByRecipeName("gregtech:hammer_blue_topaz");
+recipes.removeByRecipeName("gregtech:hammer_ruby");

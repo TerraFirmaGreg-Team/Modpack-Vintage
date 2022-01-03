@@ -1,0 +1,9 @@
+{
+  "speakerVolume": 100,
+  "microphoneVolume": 100,
+  "speaker": "",
+  "stereo": true,
+  "bitrate": 96000,
+  "microphone": "",
+  "toggle-to-talk": false
+}
