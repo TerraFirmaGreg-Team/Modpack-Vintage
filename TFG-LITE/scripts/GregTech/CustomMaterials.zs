@@ -12,3 +12,7 @@ import mods.gregtech.material.Material;
 <material:zinc>.addFlags("generate_long_rod", "generate_gear");
 <material:nickel>.addFlags("generate_long_rod", "generate_gear");
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
+
+/*
+val bismuth = <material:bismuth>;
+bismuth.addOre();*/

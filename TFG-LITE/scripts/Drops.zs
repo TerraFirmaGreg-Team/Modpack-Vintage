@@ -25,7 +25,10 @@ Dropt.list("GT_Coal_To_TFC_Coal")
 
 Dropt.list("Dirt")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/granite>])));
+  .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/basalt>])));
+Dropt.list("Gravel")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:gravel"]).addDrop(Dropt.drop().items([<tfc:gravel/basalt>])));
 Dropt.list("Chest")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:chest:*"]).addDrop(Dropt.drop().items([<tfc:wood/chest/oak>])));

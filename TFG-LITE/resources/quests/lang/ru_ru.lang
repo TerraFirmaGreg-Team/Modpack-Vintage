@@ -6,7 +6,7 @@ tfg.quests.primitive.era.title=&dПримитив - Эра 1
 
 tfg.quests.primitive.start.title=Старт
 tfg.quests.primitive.start.subtitle=&aСпасибо, что выбрали нашу сборку модов, ведь в ней очень тесно завязались TerraFirmaCraft и GregTech, удачи тебе молодой инженер!
-tfg.quests.primitive.start.tasks.clickMe=Тыкай сюды!
+tfg.quests.primitive.start.tasks.clickMe=&aТыкай сюды!
 
 tfg.quests.primitive.pebbles.title=Камни на земле
 tfg.quests.primitive.pebbles.subtitle=&aНайди, лежащие на земле, палки и камни.
@@ -49,7 +49,7 @@ tfg.quests.primitive.fireplace.tasks.wood.title=Бревна
 
 tfg.quests.primitive.meat.title=МЯЯЯЯСО!
 tfg.quests.primitive.meat.subtitle=&aОно веганское. Я не вру, дай попробовать травоеду для подтверждения.
-tfg.quests.primitive.meat.tasks.meat.title=Мясо
+tfg.quests.primitive.meat.tasks.meat.title=&aМясо
 
 tfg.quests.primitive.rawHide.title=Сырая шкура
 tfg.quests.primitive.rawHide.subtitle=&aДобудьте любую сырую шкуру, надеюсь не одна овца не пострадает.
@@ -81,7 +81,7 @@ tfg.quests.primitive.fuelNumber1.subtitle=&aТак как TFC слишком р�
 
 tfg.quests.primitive.greenpeace.title=Гринпис уже за вами выехал..
 tfg.quests.primitive.greenpeace.subtitle=&aРубите бревна, дети мои! Их нам понадобится очень много.
-tfg.quests.primitive.greenpeace.tasks.logs.title=Бревна
+tfg.quests.primitive.greenpeace.tasks.logs.title=&aБревна
 
 tfg.quests.primitive.fuelNumber2.title=Топливо №2
 tfg.quests.primitive.fuelNumber2.subtitle=&aРастопить печь вы не сможете при помощи данного угля, но например поддерживать горение легко.
@@ -96,7 +96,7 @@ tfg.quests.primitive.alloycalc.subtitle=&aКалькулятор сплавов,
 
 tfg.quests.primitive.woodchest.title=Сундуки
 tfg.quests.primitive.woodchest.subtitle=&aКакой-то дебил придумал несколько крафтов для сундуков, делайте выводы какой рецепт выгоднее.
-tfg.quests.primitive.woodchest.task.chest.title=Любой сундук
+tfg.quests.primitive.woodchest.task.chest.title=&aЛюбой сундук
 
 tfg.quests.primitive.woodencrate.subtitle=&aВаш первый ящик, который умеет хранить в себе руды в виде блока.
 
