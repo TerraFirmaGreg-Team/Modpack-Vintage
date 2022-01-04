@@ -1,0 +1,26 @@
+{
+	title: "Basic Centrifuge",
+	icon: "gregtech:machine 1 185",
+	x: -39.25d,
+	y: 11.5d,
+	text: [
+		"§lOutside of Ore Processing:§r",
+		"Oh boy this machine does a lot... Decomposition recipes to separate dust types, separating air and many others...",
+		"The list is too long, let's just say §cyou need the Centrifuge§r.",
+		"",
+		"",
+		"§lFor Ore Processing:§r",
+		"This takes §aImpure Dust§r or §aPurified Dust§r and turns them into clean Dust plus an added tiny Dust §6Byproduct§r. This is outside of the optimal chain for Byproducts, but this is also the cheapest Ore Processing machine of this set to run and to setup on a small scale.",
+		"",
+		"",
+		"§bLore:§r In base GTCE, this was the strongest Ore Processing machine as it was fairly easy to use, and gave three tiny dusts, just like the Ore Washer or the Thermal Centrifuge. We tuned it down in favor of diversity."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c579e2ea",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 185"
+		}]
+	}]
+}

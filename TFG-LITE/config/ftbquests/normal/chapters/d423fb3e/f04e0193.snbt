@@ -1,10 +1,14 @@
 {
-	x: -14.5d,
-	y: -15.0d,
+	x: -12.5d,
+	y: -20.5d,
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
 	dependencies: [
-		"6bc19867"
+		"445f79e7",
+		"031ab2d9",
+		"36338f88",
+		"5d2b7c55"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "badf7c98",
 		type: "item",

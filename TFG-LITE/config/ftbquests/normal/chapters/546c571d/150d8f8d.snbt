@@ -1,10 +1,7 @@
 {
 	x: 3.5d,
-	y: 8.5d,
+	y: 7.5d,
 	shape: "square",
-	dependencies: [
-		"feac22dc"
-	],
 	tasks: [{
 		uid: "65139727",
 		type: "item",

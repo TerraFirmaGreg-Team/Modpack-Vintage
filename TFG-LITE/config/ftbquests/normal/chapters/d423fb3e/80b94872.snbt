@@ -1,0 +1,21 @@
+{
+	x: -11.0d,
+	y: 0.5d,
+	dependencies: [
+		"d9827d71"
+	],
+	tasks: [{
+		uid: "b57f2362",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 19s,
+			tag: {
+				GT.ToolStats: {
+					Material: "bronze"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

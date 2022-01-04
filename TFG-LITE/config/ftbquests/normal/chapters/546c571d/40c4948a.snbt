@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 9.0d,
+	shape: "octagon",
+	description: "{tfg.quests.steam.steamturbine.subtitle}",
+	dependencies: [
+		"dd1bc7c8"
+	],
+	size: 2.0d,
+	min_width: 3,
+	tasks: [{
+		uid: "787f5560",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 950"
+		}]
+	}]
+}

@@ -1,18 +1,17 @@
 {
-	x: 7.0d,
-	y: 13.5d,
+	x: 3.0d,
+	y: 11.5d,
 	min_required_dependencies: 2,
 	dependencies: [
-		"df987c1c",
-		"ad28f1ac",
-		"2c700136"
+		"a02702d7",
+		"8e04de9f"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "5e2ea02e",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 185"
+			item: "gregtech:machine 1 170"
 		}]
 	}]
 }

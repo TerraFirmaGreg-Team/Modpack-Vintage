@@ -1,12 +1,10 @@
 {
-	x: 11.0d,
-	y: 13.5d,
+	x: 10.5d,
+	y: 11.5d,
 	dependencies: [
 		"fcfd072d",
 		"0c6d2117",
-		"9571e4b2",
-		"5764bd42",
-		"e292ccfd"
+		"9571e4b2"
 	],
 	hide: true,
 	dependency_requirement: "one_completed",
@@ -14,13 +12,13 @@
 		uid: "35b8b22a",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 1320"
+			item: "gregtech:machine 1 1316"
 		},
 		{
-			item: "gregtech:machine 1 1321"
+			item: "gregtech:machine 1 1326"
 		},
 		{
-			item: "gregtech:machine 1 1322"
+			item: "gregtech:machine 1 1336"
 		}]
 	}]
 }

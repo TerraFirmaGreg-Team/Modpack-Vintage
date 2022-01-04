@@ -1,12 +1,8 @@
 {
-	x: 6.0d,
-	y: 9.5d,
+	x: 14.0d,
+	y: 12.0d,
 	shape: "rsquare",
 	min_required_dependencies: 2,
-	dependencies: [
-		"449629d6",
-		"f623d356"
-	],
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "565b96cf",

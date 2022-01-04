@@ -1,5 +1,5 @@
 {
-	x: -18.5d,
+	x: -19.5d,
 	y: -11.0d,
 	description: "{tfg.quests.steam.bronzemacerator.subtitle}",
 	dependencies: [

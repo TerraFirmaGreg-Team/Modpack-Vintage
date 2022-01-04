@@ -1,0 +1,32 @@
+{
+	title: "Breath of Fresh Oxygen",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "oxygen"
+		}
+	},
+	x: -43.5d,
+	y: 11.5d,
+	text: [
+		"§oIf you wanted to be picky, it would be Dioxygen, or Oxygen Gas. But gameplay convention makes it simply Oxygen.§r",
+		"",
+		"You could be spending §ominutes§r in JEI looking for Oxygen recipes given the many ways to obtain it. Various minerals will produce it when electrolyzed.",
+		"",
+		"However the best source according to me (!) is §acentrifuging Air§r after making a §dGas Collector§r, which you probably cannot make just yet. This recipe also gives §aNitrogen§r, which can speed up certain §9Electric Blast Furnace§r recipes§r.",
+		"",
+		"The second best source according to me (!) is §aelectrolyzing Silicon Dioxide§r. Silicon Dioxide is obtained from various sources, such as Glass Dust, Granite Dust and Black Granite Dust.",
+		"",
+		"The third best source according to me (!) is §aelectrolyzing Water§r. But that's more for §aHydrogen§r due to the higher energy cost.",
+		"",
+		"The fourth best source according to me (!) is §ato not void§r it, ever. Any Oxygen obtained from any source is worth something and should be stored in Tanks. The §3Steel Multiblock Tank§r is a good candidate for storing Oxygen... Or you can simply make more drums.",
+		"",
+		"",
+		"§9Note:§r Submit a fluid by having it stored in §lany§r tank in your inventory. A bucket will also work."
+	],
+	dependencies: [
+		"baa13c19",
+		"3b9fc1a9"
+	]
+}

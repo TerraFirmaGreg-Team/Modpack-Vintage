@@ -1,0 +1,16 @@
+{
+	title: "я здесь что нибудь напишу",
+	x: 0.0d,
+	y: 13.5d,
+	dependencies: [
+		"a6716e45"
+	],
+	tasks: [{
+		uid: "63db760d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 464"
+		}],
+		ignore_nbt: 1b
+	}]
+}

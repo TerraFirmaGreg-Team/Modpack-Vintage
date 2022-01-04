@@ -1,0 +1,25 @@
+{
+	title: "Glued",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "glue"
+		}
+	},
+	x: -39.25d,
+	y: 14.0d,
+	text: [
+		"§oIt is time to stop processing Resin through the Extractor.§r",
+		"",
+		"You can now centrifuge Resin, which will still give the Raw Rubber, alongside with §aGlue§r (and the less useful Plantball).",
+		"",
+		"Make a lot of Glue. You can use for §6cheaper Resistors§r, §6cheaper Circuit Boards§r, an exclusive Name Tag §din the Assembling Machine§r and more... §oin the next quest§r.",
+		"",
+		"",
+		"§9Note:§r Submit a fluid by having it stored in §lany§r tank in your inventory. A bucket will also work."
+	],
+	dependencies: [
+		"3b9fc1a9"
+	]
+}

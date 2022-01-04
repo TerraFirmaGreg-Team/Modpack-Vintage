@@ -1,13 +1,13 @@
 {
-	x: 11.5d,
-	y: 9.5d,
+	x: 14.0d,
+	y: 10.0d,
 	dependencies: [
 		"88b64177",
 		"269ba610",
 		"65e73e54",
-		"5af91f1c",
-		"a6cf6e20"
+		"5af91f1c"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "0815241d",
 		type: "item",

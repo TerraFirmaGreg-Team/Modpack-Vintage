@@ -1,0 +1,16 @@
+{
+	x: -13.5d,
+	y: -16.0d,
+	description: "{tfg.quests.steam.resistor.subtitle}",
+	dependencies: [
+		"0e2a1059"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1c2bae48",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 519"
+		}]
+	}]
+}

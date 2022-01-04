@@ -1,6 +1,6 @@
 {
-	x: 14.810119047619025d,
-	y: 9.492857142857154d,
+	x: 14.051488095238085d,
+	y: 3.645238095238085d,
 	shape: "gear",
 	description: "{tfg.quests.lv.aluminiumingot.subtitle}",
 	dependencies: [

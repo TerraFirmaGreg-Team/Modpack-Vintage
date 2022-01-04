@@ -1,0 +1,23 @@
+{
+	title: "Basic Electrolyzer",
+	icon: "gregtech:machine 1 275",
+	x: -41.75d,
+	y: 11.5d,
+	text: [
+		"§lOutside of Ore Processing:§r",
+		"This machine, similarly to the Centrifuge, also does a lot of things...",
+		"And I cannot list them! But fortunately it's one of the cheapest, so get it whenever you want something from it.",
+		"",
+		"",
+		"§lFor Ore Processing:§r",
+		"So, I lied, it's not §oexactly§r in the Ore Processing, it's actually for §aDecomposition of Dusts§r. However most of this style of Decomposition through Electrolysis is locked at MV."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c4dfc413",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 275"
+		}]
+	}]
+}
