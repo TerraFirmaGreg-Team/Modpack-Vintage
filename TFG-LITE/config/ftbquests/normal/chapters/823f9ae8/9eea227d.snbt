@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.theHammer.title}",
 	x: -25.5d,
 	y: -9.0d,
 	description: "{tfg.quests.primitive.theHammer.subtitle}",
@@ -9,16 +8,18 @@
 	tasks: [{
 		uid: "9672083c",
 		type: "item",
+		title: "{tfg.quests.primitive.theHammer.title}",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 6s,
-			tag: {
-				GT.ToolStats: {
-					MaxDurability: 120,
-					DigSpeed: 0.5f,
-					Material: "stone"
-				}
-			}
+			item: "tfc:stone/hammer/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/hammer/sedimentary"
+		},
+		{
+			item: "tfc:stone/hammer/metamorphic"
+		},
+		{
+			item: "tfc:stone/hammer/igneous_intrusive"
 		}],
 		ignore_nbt: 1b
 	}]

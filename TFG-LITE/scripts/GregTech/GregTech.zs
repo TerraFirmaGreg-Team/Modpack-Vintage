@@ -147,9 +147,9 @@ recipes.addShaped( <ore:dustPaper>.firstItem * 2,
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null]]);
 //Крафт бамаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
-[[null, <ore:slabStonePolished>, null],
+[[null, <ore:slabStonePolished>.reuse(), null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
- [null, <ore:slabStonePolished>, null]]);
+ [null, <ore:slabStonePolished>.reuse(), null]]);
 
 //Лава из незерака
 extractor.recipeBuilder()
