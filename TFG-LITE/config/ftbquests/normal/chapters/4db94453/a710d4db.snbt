@@ -1,4 +1,5 @@
 {
+	title: "Forming Press",
 	x: 0.0d,
 	y: 3.5d,
 	shape: "circle",
@@ -13,7 +14,16 @@
 		uid: "fea4f99d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 341"
+			item: "gregtech:machine 1 425"
+		},
+		{
+			item: "gregtech:machine 1 426"
+		},
+		{
+			item: "gregtech:machine 1 427"
+		},
+		{
+			item: "gregtech:machine 1 428"
 		}],
 		ignore_nbt: 1b
 	}]

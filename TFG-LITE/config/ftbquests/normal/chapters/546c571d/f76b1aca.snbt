@@ -1,6 +1,6 @@
 {
-	x: 0.0d,
-	y: 6.0d,
+	x: 5.0d,
+	y: 10.5d,
 	description: "{tfg.quests.steam.bigbronzeboiler.subtitle}",
 	dependencies: [
 		"40c4948a"

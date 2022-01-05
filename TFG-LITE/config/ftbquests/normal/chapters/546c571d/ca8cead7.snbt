@@ -1,10 +1,13 @@
 {
 	title: "Basic Electromagnetic Separator",
 	icon: "gregtech:machine 1 290",
-	x: -43.25d,
-	y: 8.5d,
+	x: -4.5d,
+	y: 16.0d,
 	text: [
 		"A rarely used machine. It uses magnetic fields to separate some Magnetic ores and gain additional §6Byproducts§r you would not obtain otherwise."
+	],
+	dependencies: [
+		"3418fbbb"
 	],
 	tasks: [{
 		uid: "493ce538",

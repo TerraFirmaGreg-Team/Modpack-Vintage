@@ -7,8 +7,8 @@
 			FluidName: "oxygen"
 		}
 	},
-	x: -43.5d,
-	y: 11.5d,
+	x: -6.0d,
+	y: 18.0d,
 	text: [
 		"§oIf you wanted to be picky, it would be Dioxygen, or Oxygen Gas. But gameplay convention makes it simply Oxygen.§r",
 		"",
@@ -28,5 +28,10 @@
 	dependencies: [
 		"baa13c19",
 		"3b9fc1a9"
-	]
+	],
+	tasks: [{
+		uid: "21c3ec8b",
+		type: "fluid",
+		fluid: "oxygen"
+	}]
 }

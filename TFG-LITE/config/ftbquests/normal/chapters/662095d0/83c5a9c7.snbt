@@ -1,0 +1,21 @@
+{
+	title: "Inductors",
+	icon: "gregtech:meta_item_1 1 522",
+	x: 21.25d,
+	y: -5.0d,
+	text: [
+		"A Circuit Component, that you can now make thanks the §3MV Assembler§r.",
+		"",
+		"If you want to make them cheaper, you may smelt §aNickel-Zinc Ferrite§r."
+	],
+	dependencies: [
+		"08970ed3"
+	],
+	tasks: [{
+		uid: "135115f9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 522"
+		}]
+	}]
+}

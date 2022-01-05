@@ -1,7 +1,19 @@
 {
-	title: "я здесь что нибудь напишу",
-	x: 0.0d,
-	y: 13.5d,
+	title: "LV Age Progression",
+	x: 0.5d,
+	y: 15.0d,
+	text: [
+		"§oSo many choices! AAAAAAAhh! Didn't I tell you I would give you freedom!?§r",
+		"",
+		"The LV Age will make you craft a lot of different machines! Are you lost? Here is a tip to set goals: check a lategame item and go from there. So let's say Fusion Controller Mark 3... Nevermind, let's check a closer goal instead. The §dElectric Blast Furnace§r, the main end goal of LV Age.",
+		"",
+		"The EBF is expensive, which is why you should focus first on machines making materials cheaper. Quests will keep helping you for that.",
+		"",
+		"Other important goals are the §dAssembling Machine§r and §aMV Circuits§r.",
+		"",
+		"",
+		"Talking about goals to note down, take this Clipboard. You will appreciate it."
+	],
 	dependencies: [
 		"a6716e45"
 	],

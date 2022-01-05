@@ -1,8 +1,8 @@
 {
 	title: "Basic Arc Furnace",
 	icon: "gregtech:machine 1 95",
-	x: -43.5d,
-	y: 14.0d,
+	x: -6.0d,
+	y: 19.5d,
 	text: [
 		"§oThe description of the machine refers to metallurgy where Blast Furnace and Arc Furnace serve a similar purpose, not exactly here though!§r",
 		"",
@@ -64,19 +64,5 @@
 			item: "gregtech:meta_ingot 16 252"
 		}],
 		count: 16L
-	}],
-	rewards: [{
-		uid: "d1cd9579",
-		type: "item",
-		item: {
-			id: "gregtech:machine",
-			Damage: 1611s,
-			tag: {
-				Fluid: {
-					Amount: 8000,
-					FluidName: "oxygen"
-				}
-			}
-		}
 	}]
 }

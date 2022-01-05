@@ -1,8 +1,8 @@
 {
 	title: "Basic Cutting Machine",
 	icon: "gregtech:machine 1 245",
-	x: -40.5d,
-	y: 13.0d,
+	x: -3.5d,
+	y: 19.5d,
 	text: [
 		"§oThe Cutting Machine... cuts... thanks to lubrification.§r",
 		"",

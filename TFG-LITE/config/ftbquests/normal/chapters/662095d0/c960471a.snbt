@@ -1,0 +1,58 @@
+{
+	title: "MV Components",
+	icon: "gregtech:meta_item_1 1 128",
+	x: 4.5d,
+	y: -4.0d,
+	text: [
+		"§oDid you hate crafting the components in the previous tier? They're back, and stronger!§r",
+		"",
+		"Here is a list of the components you will need in the MV Age.",
+		"",
+		"Conveyors, Pumps and Robot Arms are upgrades to LV versions if you use them as covers."
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "e7ab40aa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 128"
+		}]
+	},
+	{
+		uid: "27d01661",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 173"
+		}]
+	},
+	{
+		uid: "6361dbf9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 143"
+		}]
+	},
+	{
+		uid: "5caadf8a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 158"
+		}]
+	},
+	{
+		uid: "94b595c0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 188"
+		}]
+	},
+	{
+		uid: "2c2200df",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 218"
+		}]
+	}]
+}

@@ -1,8 +1,8 @@
 {
 	title: "Basic Ore Washing Plant",
 	icon: "gregtech:machine 1 485",
-	x: -38.25d,
-	y: 7.25d,
+	x: -2.5d,
+	y: 16.0d,
 	text: [
 		"§oThis machine combines Cauldron washing for simple automation, but also advanced and precise washing for byproducts.§r",
 		"",
@@ -10,6 +10,9 @@
 		"Any Ore will give at minimum 2/3 dusts of this Byproduct through washing! So prioritize this step the most.",
 		"",
 		"Distilled Water over Water cuts recipe duration in half, but is also less convenient to produce."
+	],
+	dependencies: [
+		"3418fbbb"
 	],
 	tasks: [{
 		uid: "83598f04",

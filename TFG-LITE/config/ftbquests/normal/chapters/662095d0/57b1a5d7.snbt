@@ -1,0 +1,34 @@
+{
+	title: "Advanced Extruder",
+	icon: "gregtech:machine 1 321",
+	x: 3.5988095238095212d,
+	y: -5.47500000000003d,
+	text: [
+		"§oI hope at no point you made the LV Extruder, because only the MV Extruder is actually useful. If you did, I suggest you recycle it through the Arc Furnace.§r",
+		"",
+		"The Extruder shapes solid materials into (almost!) any form using §aIngots§r. This is a great way to reduce the amount of microcrafting, as well as keeping a high conversion ratio.",
+		"",
+		"The Extruder can make §6Bolts§r, §6§6Small Gears§r, §6Gears§r, and §6§6Rings§r at the highest efficiency in a single step!",
+		"You may also like to use it for §dPipes§r, §dLong Rods§r, and §dRotors§r (though less efficiently for Rotors)."
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "0a4e9aeb",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 321"
+		}]
+	}],
+	rewards: [{
+		uid: "83edc0b7",
+		type: "item",
+		item: "gregtech:meta_item_1 1 55"
+	},
+	{
+		uid: "f8795d89",
+		type: "item",
+		item: "gregtech:meta_item_1 1 52"
+	}]
+}

@@ -1,0 +1,120 @@
+{
+	title: "A Balanced Quest",
+	icon: {
+		id: "minecraft:clay_ball",
+		ForgeCaps: {
+			"tfc:item_heat": {
+				ticks: -1L,
+				heat: 0.0f
+			}
+		}
+	},
+	x: 5.0d,
+	y: -2.0d,
+	text: [
+		"Clay is an extremely §mbalanced§r useful material for electrolysis.",
+		"All four output Dusts are great.",
+		"",
+		"You will need §a§ra total of §a416 Clay Dust§r for this quest. You may also want to look into other sources of similar materials, such as §aSodalite§r. Check JEI for some ideas.",
+		"",
+		"You should use Sodium and/or Lithium to make some §6MV Batteries§r."
+	],
+	dependencies: [
+		"409e98ab"
+	],
+	tasks: [{
+		uid: "fdd48d3c",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustClay"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustClay"
+				}
+			}
+		}],
+		count: 64L
+	},
+	{
+		uid: "52a7e017",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustSodium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSodium"
+				}
+			}
+		}],
+		count: 64L
+	},
+	{
+		uid: "871fa93e",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustLithium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustLithium"
+				}
+			}
+		}],
+		count: 32L
+	},
+	{
+		uid: "24abaf4b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustAluminium"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustAluminium"
+				}
+			}
+		}],
+		count: 64L
+	},
+	{
+		uid: "5ca928d9",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustSilicon"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSilicon"
+				}
+			}
+		}],
+		count: 64L
+	}]
+}

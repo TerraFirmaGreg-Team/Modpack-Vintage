@@ -1,0 +1,32 @@
+{
+	title: "Ethanol",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "bio.ethanol",
+			Amount: 1000
+		}
+	},
+	x: 6.5d,
+	y: -12.0d,
+	text: [
+		"§oHey! That's Alcohol!§r",
+		"",
+		"Put your previously made §aBiomass§r into a §3MV Distillery§r, to make §aEthanol§r.",
+		"You will need this for §dEthylene§r by reacting it with §aSulfuric Acid§r in a §3Chemical Reactor§r... unless you chose the Oil path.",
+		"",
+		"",
+		"Do not try to use Ethanol as a Power source... You may regret it.",
+		"If you want plant based §9Power§r, I suggest §dBenzene§r instead!"
+	],
+	dependencies: [
+		"75e24d56",
+		"9bab507a",
+		"65405836"
+	],
+	tasks: [{
+		uid: "a791c9ed",
+		type: "fluid",
+		fluid: "bio.ethanol"
+	}]
+}

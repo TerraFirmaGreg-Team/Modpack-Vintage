@@ -1,8 +1,8 @@
 {
 	title: "Basic Centrifuge",
 	icon: "gregtech:machine 1 185",
-	x: -39.25d,
-	y: 11.5d,
+	x: -3.525000000000013d,
+	y: 17.98214285714291d,
 	text: [
 		"§lOutside of Ore Processing:§r",
 		"Oh boy this machine does a lot... Decomposition recipes to separate dust types, separating air and many others...",
@@ -14,6 +14,9 @@
 		"",
 		"",
 		"§bLore:§r In base GTCE, this was the strongest Ore Processing machine as it was fairly easy to use, and gave three tiny dusts, just like the Ore Washer or the Thermal Centrifuge. We tuned it down in favor of diversity."
+	],
+	dependencies: [
+		"3418fbbb"
 	],
 	size: 1.5d,
 	tasks: [{

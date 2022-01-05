@@ -1,5 +1,5 @@
 {
-	x: -20.5d,
+	x: -21.5d,
 	y: -13.0d,
 	description: "{tfg.quests.steam.grinder.subtitle}",
 	dependencies: [

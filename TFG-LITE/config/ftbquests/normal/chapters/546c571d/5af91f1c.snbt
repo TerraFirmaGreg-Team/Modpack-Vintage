@@ -1,8 +1,9 @@
 {
-	x: 10.5d,
-	y: 8.5d,
+	x: 12.0d,
+	y: 11.0d,
 	dependencies: [
-		"16e3bb63"
+		"16e3bb63",
+		"b9ccf07f"
 	],
 	dependency_requirement: "all_started",
 	min_width: 3,

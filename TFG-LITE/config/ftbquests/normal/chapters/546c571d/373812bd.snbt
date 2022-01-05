@@ -7,8 +7,8 @@
 			FluidName: "glue"
 		}
 	},
-	x: -39.25d,
-	y: 14.0d,
+	x: -2.5d,
+	y: 19.5d,
 	text: [
 		"§oIt is time to stop processing Resin through the Extractor.§r",
 		"",
@@ -21,5 +21,10 @@
 	],
 	dependencies: [
 		"3b9fc1a9"
-	]
+	],
+	tasks: [{
+		uid: "3aa84bef",
+		type: "fluid",
+		fluid: "glue"
+	}]
 }

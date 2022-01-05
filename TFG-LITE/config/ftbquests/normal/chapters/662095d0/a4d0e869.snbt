@@ -1,0 +1,19 @@
+{
+	title: "More MV Circuits",
+	icon: "gregtech:meta_item_1 1 624",
+	x: 14.5d,
+	y: -2.5d,
+	text: [
+		"The MV Circuit for the Integrated Tier."
+	],
+	dependencies: [
+		"d853a3be"
+	],
+	tasks: [{
+		uid: "4fb4d162",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 624"
+		}]
+	}]
+}

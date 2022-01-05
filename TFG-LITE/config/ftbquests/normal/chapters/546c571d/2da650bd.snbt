@@ -1,8 +1,8 @@
 {
 	title: "Basic Gas Collector",
 	icon: "gregtech:machine 1 530",
-	x: -41.75d,
-	y: 14.0d,
+	x: -4.5d,
+	y: 19.5d,
 	text: [
 		"The Gas Collector collects Air, to centrifuge into §aOxygen§r and §aNitrogen§r.",
 		"",
@@ -10,8 +10,7 @@
 		"§bLore:§r GregTech 5 players remember when they had to use a Compressor with IC2 cells to get Compressed Air... In here, cell chemistry is no more."
 	],
 	dependencies: [
-		"0ca753fa",
-		"3ad0895d"
+		"0ca753fa"
 	],
 	tasks: [{
 		uid: "23c3812b",

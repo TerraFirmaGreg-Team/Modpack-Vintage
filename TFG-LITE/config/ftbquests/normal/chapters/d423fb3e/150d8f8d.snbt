@@ -1,0 +1,25 @@
+{
+	x: -10.5d,
+	y: -14.0d,
+	dependencies: [
+		"badc22e0"
+	],
+	tasks: [{
+		uid: "65139727",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotInvar"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotInvar"
+				}
+			}
+		}]
+	}]
+}

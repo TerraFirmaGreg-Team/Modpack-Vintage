@@ -1,0 +1,45 @@
+{
+	title: "Laser Engraving",
+	icon: "gregtech:machine 1 561",
+	x: 13.008333333333333d,
+	y: -3.065476190476218d,
+	text: [
+		"The §aLaser Engraver§r engraves patterns into §9Silicon Wafers§r based on the type of §9Lens§r it is given. After the wafers are engraved, they must be passed through a §9Cutting Machine§r to turn them into components ready to be put into Circuits. Higher tier Engravers can etch more complex wafers for more efficient Circuits.",
+		"",
+		"For now, the §aIntegrated Logic Circuit§r will be the one of interest, but the others will become important for higher tier Circuits."
+	],
+	dependencies: [
+		"3ad0895d",
+		"beb35f08"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5641bc4c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 561"
+		}]
+	},
+	{
+		uid: "a3aaa89c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_lens 1 311"
+		}]
+	},
+	{
+		uid: "8709fb9d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 568"
+		}]
+	},
+	{
+		uid: "634d5299",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 8 593"
+		}],
+		count: 8L
+	}]
+}

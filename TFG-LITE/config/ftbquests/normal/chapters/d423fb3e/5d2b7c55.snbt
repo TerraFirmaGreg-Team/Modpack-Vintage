@@ -1,11 +1,10 @@
 {
-	x: -13.5d,
+	x: -17.5d,
 	y: -16.0d,
 	description: "{tfg.quests.steam.resistor.subtitle}",
 	dependencies: [
-		"0e2a1059"
+		"c0b5031d"
 	],
-	hide: true,
 	tasks: [{
 		uid: "1c2bae48",
 		type: "item",

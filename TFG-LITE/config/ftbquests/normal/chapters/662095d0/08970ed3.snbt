@@ -1,0 +1,20 @@
+{
+	title: "Capacitors",
+	icon: "gregtech:meta_item_1 1 520",
+	x: 19.0d,
+	y: -7.5d,
+	text: [
+		"A Circuit Component, that you can now make thanks the §3MV Assembler§r."
+	],
+	dependencies: [
+		"a9cdae40",
+		"4e8615d1"
+	],
+	tasks: [{
+		uid: "05fe997d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 520"
+		}]
+	}]
+}

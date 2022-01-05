@@ -1,12 +1,11 @@
 {
-	x: 5.0d,
-	y: 2.5d,
+	x: 5.5d,
+	y: 4.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.steam.analyzator.subtitle}",
 	dependencies: [
 		"56c53ffc"
 	],
-	hide: true,
 	tasks: [{
 		uid: "50347293",
 		type: "item",

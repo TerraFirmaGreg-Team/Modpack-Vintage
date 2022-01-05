@@ -1,0 +1,31 @@
+{
+	title: "Silicon Lottery",
+	icon: "gregtech:meta_item_1 1 361",
+	x: 13.0d,
+	y: 0.0d,
+	text: [
+		"§oJust kidding, Silicon Wafers in this mod are perfectly fungible.§r",
+		"",
+		"§9Silicon Boules§r are made in the EBF with lots of §9Silicon Dust§r and a small amount of §9Gallium Arsenide§r. After making the Boule, cut it in the §9Cutting Machine§r to get 16 Silicon Wafers ready for engraving.",
+		"",
+		"§cWarning:§r Each Silicon Boule takes §c7.5 minutes§r to make at 120 EU/t, or §c1,080,000 EU§r! If the EBF loses power midway, the recipe will start to §close progress§r. Be sure you have enough power before starting."
+	],
+	dependencies: [
+		"9c6e5aed"
+	],
+	tasks: [{
+		uid: "00583148",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 32 99"
+		}],
+		count: 32L
+	},
+	{
+		uid: "aae1b522",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 361"
+		}]
+	}]
+}

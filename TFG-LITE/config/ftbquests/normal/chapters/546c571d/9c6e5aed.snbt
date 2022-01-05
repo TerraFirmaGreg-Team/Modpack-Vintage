@@ -1,8 +1,8 @@
 {
 	title: "Gallium Arsenide",
 	icon: "gregtech:meta_dust 1 351",
-	x: -36.75d,
-	y: 14.0d,
+	x: 0.5d,
+	y: 18.0d,
 	text: [
 		"Gallium and Arsenic do not exist as Ore!",
 		"",
@@ -16,6 +16,7 @@
 		"For §dArsenic§r, you will have to mine and §acentrifuge Realgar§r."
 	],
 	dependencies: [
+		"7ecf0fe2",
 		"3b9fc1a9"
 	],
 	tasks: [{

@@ -1,0 +1,42 @@
+{
+	title: "Sulfuric Acid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "sulfuric_acid"
+		}
+	},
+	x: 23.0d,
+	y: -12.0d,
+	text: [
+		"§oJEI will probably overwhelm you for this, so I'm presenting you the best path for Sulfuric Acid here.§r",
+		"",
+		"",
+		"Making Sulfuric Acid is a three step process. It is used in many important reactions, so you should automate its production soon.",
+		"",
+		"To do so, you will need §3three LV Chemical Reactors§r. I would recommend building an isolated node somewhere with one §3LV Generator§r to power all three machines. And then spaghetti the pipes for input and output (...or simply use AE2).",
+		"",
+		"§9-§r Step 1: React §aSulfur§r with §aOxygen§r, to form §aSulfur Dioxide§r.",
+		"§9-§r Step 2: React §aSulfur Dioxide§r with more §aOxygen§r, to form §aSulfur Trioxide§r.",
+		"§9-§r Step 3: React §aSulfur Trioxide§r with §aWater§r, to form §aSulfuric Acid§r.",
+		"",
+		"Why am I not presenting these steps in the retrieval tasks...? So you don't have to make sure to submit every single one of them, that would be way too tedious if every quest were like that!",
+		"",
+		"",
+		"§cNote:§r We have a bot command on our Discord, called $medicine: \"Do not attempt this in real life, it is not only illegal but also stupidly dangerous\".",
+		"This applies to toying with chemicals. Please don't do it.",
+		"",
+		"",
+		"§bLore:§r GregTech 5's Chemical Reactor only had one Fluid slot. To circumvent that, they would do cell chemistry. Now the way you would automate Sulfuric Acid was by having one cell travel from machine to machine and then looping back. A somewhat fun and interesting challenge, but also a chore!"
+	],
+	dependencies: [
+		"c1e27c23"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0bddf251",
+		type: "fluid",
+		fluid: "sulfuric_acid"
+	}]
+}
