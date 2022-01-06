@@ -49,7 +49,6 @@ for item in ItemsToRemove{
 }
 
 //Удаление рецептов
-recipes.removeByRecipeName("gregtech:sticks_from_bundle_saw");
 recipes.removeByRecipeName("gregtech:cobblestone_hammer");
 recipes.removeByRecipeName("gregtech:piston_iron");
 recipes.removeByRecipeName("gregtech:sticky_resin_torch");
