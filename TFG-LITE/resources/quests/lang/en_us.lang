@@ -321,6 +321,8 @@ tfg.quests.primitive.greenhouseblocks.title=Blocks for the construction of a gre
 tfg.quests.primitive.greenhouseblocks.subtitle=&aThese blocks + the greenhouse controller, which goes further along the quest, you will need to make a greenhouse and grow plants even in winter.
 
 tfg.quests.primitive.Grindstone.subtitle=&aNow, when crushing ores, especially GT ores, you can get a huge resource yield.
+
+tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much faster through the bushes.
 ##################################################################################################################################
 ########################################################## Steam Phase ###########################################################
 ##################################################################################################################################
@@ -393,6 +395,10 @@ tfg.quests.steam.bronzeoven.subtitle=&aMulti-block stove, cool!
 tfg.quests.steam.bigbronzeboiler.subtitle=&aA huge version of bronze/steel steam boilers generates a lot of steam, but be careful, if you put water into an already heated boiler, nothing will remain of your base.
 
 tfg.quests.steam.basiccircuit.subtitle=&aYour first processor, as powerful as some kind of pentium.
+
+tfg.quests.steam.invar.title=Invar Ingot
+
+tfg.quests.steam.mininghammer.subtitle=&aHammer digging 3x3.
 
 tfg.quests.steam.steamturbine.subtitle=&aTURBINE! Yes, and also a steam engine, your first electric car. Your new adventure begins with her!
 ##################################################################################################################################

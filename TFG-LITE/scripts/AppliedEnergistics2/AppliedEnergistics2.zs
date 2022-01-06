@@ -391,6 +391,16 @@ electrolyzer.recipeBuilder()
 	.duration(520)
     .EUt(82)
 	.buildAndRegister();
+//Пустой шаблон
+assembler.recipeBuilder()
+    .inputs(<ore:plateSteel> * 3)
+    .inputs(<ore:platePlastic> * 2)
+    .inputs(<ore:wireFineRedAlloy> * 4)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:52>)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister();
 //Флакс блок
 compressor.recipeBuilder()
 	.inputs(<ore:crystalFluix> * 4)
@@ -669,11 +679,6 @@ recipes.addShaped(<appliedenergistics2:material:25>, [
 	[<ore:plateGold>, <ore:plateAluminium>, null],
 	[<ore:plateRedAlloy>, <appliedenergistics2:material:23>, <ore:plateAluminium>],
 	[<ore:plateGold>, <ore:plateAluminium>, null]]);
-//Пустой шаблон
-recipes.addShaped(<appliedenergistics2:material:52>, [
-	[<appliedenergistics2:quartz_glass>, <ore:plateGlowstone>, <appliedenergistics2:quartz_glass>],
-	[<ore:plateGlowstone>, <ore:gemCertusQuartz> | <ore:crystalCertusQuartz>, <ore:plateGlowstone>],
-	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 //Увеличитель сигнала для беспроводной точки доступа
 recipes.addShaped(<appliedenergistics2:material:42>, [
 	[<ore:dustFluix>, <ore:gemCertusQuartz> | <ore:crystalCertusQuartz>, <ore:plateEnderPearl>],

@@ -170,7 +170,7 @@ recipes.addShaped(<minecraft:enchanting_table>,
 recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
  [<ore:gearSmallIron>, <ore:fenceWood>, <ore:gearSmallIron>],
- [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]]);
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,
