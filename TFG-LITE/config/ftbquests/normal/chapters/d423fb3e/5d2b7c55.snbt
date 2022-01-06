@@ -1,7 +1,6 @@
 {
 	x: -17.5d,
 	y: -16.0d,
-	description: "{tfg.quests.steam.resistor.subtitle}",
 	dependencies: [
 		"c0b5031d"
 	],

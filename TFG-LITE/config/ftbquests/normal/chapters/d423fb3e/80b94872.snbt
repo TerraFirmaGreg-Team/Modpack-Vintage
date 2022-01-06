@@ -1,6 +1,7 @@
 {
 	x: -11.0d,
 	y: 0.5d,
+	description: "{tfg.quests.steam.mininghammer.subtitle}",
 	dependencies: [
 		"d9827d71"
 	],

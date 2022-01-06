@@ -114,8 +114,6 @@ for item in ForestryPropolisArray {
 //Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
-
-
 // --- Deleting OreDictionary
 // --- ProjectRed
 //Copper
@@ -126,7 +124,6 @@ for item in ForestryPropolisArray {
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
 //RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
-
 // --- Forestry
 //Bronze
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
@@ -144,7 +141,9 @@ for item in ForestryPropolisArray {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block
 <ore:blockApatite>.remove(<forestry:resource_storage>);
-
+// --- TFC-Florae
+//Stick
+<ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 // --- Minecraft
 //Lapis
 <ore:dye>.remove(<minecraft:dye:4>);
