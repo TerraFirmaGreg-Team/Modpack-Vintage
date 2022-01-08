@@ -5,7 +5,7 @@
   "min_height": 5,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "diamond"
+    "material": "graphite"
   },
   "generation_predicate":["block:tfc:raw/marble", "block:tfc:raw/quartzite", "block:tfc:raw/gneiss", "block:tfc:raw/schist"],
   "generator": {

@@ -169,7 +169,7 @@ recipes.addShaped(<minecraft:enchanting_table>,
 //Поршень
 recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
- [<ore:gearSmallIron>, <ore:fenceWood>, <ore:gearSmallIron>],
+ [<ore:gearWroughtIron>, <ore:fenceWood>, <ore:gearWroughtIron>],
  [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 
 //Ведро

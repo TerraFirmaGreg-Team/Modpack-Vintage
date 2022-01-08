@@ -386,12 +386,6 @@ Anvil.addRecipe("tfc:iron_barsF", <ore:plateWroughtIron>, <minecraft:iron_bars> 
 Anvil.removeRecipe(<minecraft:iron_bars> * 16);
 Anvil.addRecipe("tfc:iron_bars2F", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
-//Первые способы получить резину
-extractor.recipeBuilder()
-	.inputs(<tfc:wood/log/hevea>)
-	.outputs(<ore:dustRawRubber>.firstItem)
-	.duration(200).EUt(2).buildAndRegister(); 
-
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
 electrolyzer.recipeBuilder()

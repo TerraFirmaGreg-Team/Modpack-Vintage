@@ -71,10 +71,10 @@ tfg.quests.primitive.sugarcane.subtitle=&aCollect the reed, it will be useful to
 tfg.quests.primitive.paper.subtitle=&aMake paper, it will be useful to you, for various transistors and microcircuits.
 
 tfg.quests.primitive.tin.title=Tales of the Tin
-tfg.quests.primitive.tin.subtitle=&aAnd this is tin and you need to dig it up, how? Look for tin stones on the surface, under which break the block to get some dust.
+tfg.quests.primitive.tin.subtitle=&aAnd this is tin and you need to dig it up, how? And then break them. I've already written this somewhere.
 
 tfg.quests.primitive.copper.title=Stories about Copper
-tfg.quests.primitive.copper.subtitle=&aThis is copper and you need to dig it up, how? Look for copper stones on the surface, under which break the block to get some dust.
+tfg.quests.primitive.copper.subtitle=&aThis is copper and you need to dig it up, how? And then break them.
 
 tfg.quests.primitive.fuelNumber1.title=Fuel No. 1
 tfg.quests.primitive.fuelNumber1.subtitle=&aSince TFC is too realistic a mod, it will not be possible to melt the stove with coal, which is logical, so we make wood.

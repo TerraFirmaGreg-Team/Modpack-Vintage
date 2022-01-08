@@ -22,7 +22,7 @@
         "primary": "ore:redstone"
       },
       {
-        "secondary": "ore:redstone"
+        "secondary": "ore:glowstone"
       },
       {
         "between": "ore:ruby"

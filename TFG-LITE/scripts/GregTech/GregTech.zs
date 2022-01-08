@@ -132,13 +132,13 @@ macerator.recipeBuilder()
 
 //Переработка тфкшной гевеи
 centrifuge.recipeBuilder()
-    .inputs(<tfc:wood/log/hevea>)
+    .inputs(<tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>)
     .chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
     .chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
     .chancedOutput(<gregtech:meta_item_1:439>, 3750, 900)
     .chancedOutput(<gregtech:meta_item_1:438>, 5000, 1200)
     .fluidOutputs(<fluid:methane> * 65)
-    .EUt(20).duration(300).buildAndRegister();
+    .EUt(20).duration(200).buildAndRegister();
 
 //Исправление рецепта на бумагу
 //Крафт бумажной пыли

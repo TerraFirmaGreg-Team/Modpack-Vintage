@@ -204,7 +204,7 @@
     "other": {
 		"background": {
 			"image": "",
-			"slideshow": {
+            "slideshow": {
 				"images": [
 					"modpack:mainmenu/backgrounds/bg1.png",
 					"modpack:mainmenu/backgrounds/bg2.png",
