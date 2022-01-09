@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 //Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -147,60 +148,311 @@ recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interf
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
 
+recipes.removeByRecipeName("appliedenergistics2:network/crafting/molecular_assembler");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix_clean");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix_clean");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix_clean");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix_clean");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix_clean");
+recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix");
 //Рецепты
-//Покраска кабелей
-recipes.addShapeless(<appliedenergistics2:part:60>, [<ore:smartCableDenseAny>, <ore:dyeWhite>]);
-recipes.addShapeless(<appliedenergistics2:part:61>, [<ore:smartCableDenseAny>, <ore:dyeOrange>]);
-recipes.addShapeless(<appliedenergistics2:part:62>, [<ore:smartCableDenseAny>, <ore:dyeMagenta>]);
-recipes.addShapeless(<appliedenergistics2:part:63>, [<ore:smartCableDenseAny>, <ore:dyeLightBlue>]);
-recipes.addShapeless(<appliedenergistics2:part:64>, [<ore:smartCableDenseAny>, <ore:dyeYellow>]);
-recipes.addShapeless(<appliedenergistics2:part:65>, [<ore:smartCableDenseAny>, <ore:dyeLime>]);
-recipes.addShapeless(<appliedenergistics2:part:66>, [<ore:smartCableDenseAny>, <ore:dyePink>]);
-recipes.addShapeless(<appliedenergistics2:part:67>, [<ore:smartCableDenseAny>, <ore:dyeGray>]);
-recipes.addShapeless(<appliedenergistics2:part:68>, [<ore:smartCableDenseAny>, <ore:dyeLightGray>]);
-recipes.addShapeless(<appliedenergistics2:part:69>, [<ore:smartCableDenseAny>, <ore:dyeCyan>]);
-recipes.addShapeless(<appliedenergistics2:part:70>, [<ore:smartCableDenseAny>, <ore:dyePurple>]);
-recipes.addShapeless(<appliedenergistics2:part:71>, [<ore:smartCableDenseAny>, <ore:dyeBlue>]);
-recipes.addShapeless(<appliedenergistics2:part:72>, [<ore:smartCableDenseAny>, <ore:dyeBrown>]);
-recipes.addShapeless(<appliedenergistics2:part:73>, [<ore:smartCableDenseAny>, <ore:dyeGreen>]);
-recipes.addShapeless(<appliedenergistics2:part:74>, [<ore:smartCableDenseAny>, <ore:dyeRed>]);
-recipes.addShapeless(<appliedenergistics2:part:75>, [<ore:smartCableDenseAny>, <ore:dyeBlack>]);
-recipes.addShapeless(<appliedenergistics2:part:76>, [<ore:smartCableDenseAny>, <ore:dyeFluix>]);
-//Обесцвечивание
-var coloredFluixGlassCable = [<appliedenergistics2:part>, <appliedenergistics2:part:1>, <appliedenergistics2:part:2>, <appliedenergistics2:part:3>, <appliedenergistics2:part:4>, <appliedenergistics2:part:5>, <appliedenergistics2:part:6>, <appliedenergistics2:part:7>, <appliedenergistics2:part:8>, <appliedenergistics2:part:9>, <appliedenergistics2:part:10>, <appliedenergistics2:part:12>, <appliedenergistics2:part:13>, <appliedenergistics2:part:14>, <appliedenergistics2:part:15>] as IItemStack[];
-var coloredFluixCoveredC = [<appliedenergistics2:part:20>, <appliedenergistics2:part:21>, <appliedenergistics2:part:22>, <appliedenergistics2:part:23>, <appliedenergistics2:part:24>, <appliedenergistics2:part:25>, <appliedenergistics2:part:26>, <appliedenergistics2:part:36>, <appliedenergistics2:part:28>, <appliedenergistics2:part:29>, <appliedenergistics2:part:30>, <appliedenergistics2:part:32>, <appliedenergistics2:part:33>, <appliedenergistics2:part:34>, <appliedenergistics2:part:35>] as IItemStack[];
-var coloredFluixDenseCable = [<appliedenergistics2:part:500>, <appliedenergistics2:part:501>, <appliedenergistics2:part:502>, <appliedenergistics2:part:503>, <appliedenergistics2:part:504>, <appliedenergistics2:part:505>, <appliedenergistics2:part:506>, <appliedenergistics2:part:507>, <appliedenergistics2:part:508>, <appliedenergistics2:part:509>, <appliedenergistics2:part:510>, <appliedenergistics2:part:512>, <appliedenergistics2:part:513>, <appliedenergistics2:part:514>, <appliedenergistics2:part:515>] as IItemStack[];
-var coloredFluixSmartCable = [<appliedenergistics2:part:40>, <appliedenergistics2:part:41>, <appliedenergistics2:part:42>, <appliedenergistics2:part:43>, <appliedenergistics2:part:44>, <appliedenergistics2:part:45>, <appliedenergistics2:part:46>, <appliedenergistics2:part:47>, <appliedenergistics2:part:48>, <appliedenergistics2:part:49>, <appliedenergistics2:part:50>, <appliedenergistics2:part:52>, <appliedenergistics2:part:53>, <appliedenergistics2:part:54>, <appliedenergistics2:part:55>] as IItemStack[];
-for i in 0 to 15 {
-  chemical_bath.recipeBuilder()
-    .inputs(coloredFluixGlassCable[i])
-    .fluidInputs(<liquid:chlorine> * 50)
-    .outputs(<appliedenergistics2:part:16>)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
-  chemical_bath.recipeBuilder()
-    .inputs(coloredFluixCoveredC[i])
-    .fluidInputs(<liquid:chlorine> * 50)
-    .outputs(<appliedenergistics2:part:36>)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
-  chemical_bath.recipeBuilder()
-    .inputs(coloredFluixDenseCable[i])
-    .fluidInputs(<liquid:chlorine> * 50)
-    .outputs(<appliedenergistics2:part:516>)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
-  chemical_bath.recipeBuilder()
-    .inputs(coloredFluixSmartCable[i])
-    .fluidInputs(<liquid:chlorine> * 50)
-    .outputs(<appliedenergistics2:part:56>)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
+
+
+//Покраска и обесвечивание кабелей
+//Жидкая краска
+val dyes = [
+<liquid:dye_white> * 18,
+<liquid:dye_orange> * 18,
+<liquid:dye_magenta> * 18,
+<liquid:dye_light_blue> * 18,
+<liquid:dye_yellow> * 18,
+<liquid:dye_lime> * 18,
+<liquid:dye_pink> * 18,
+<liquid:dye_gray> * 18,
+<liquid:dye_light_gray> * 18,
+<liquid:dye_cyan> * 18,
+<liquid:dye_purple> * 18,
+<liquid:dye_blue> * 18,
+<liquid:dye_brown> * 18,
+<liquid:dye_green> * 18,
+<liquid:dye_red> * 18,
+<liquid:dye_black> * 18
+] as ILiquidStack[];
+// Glass Cables
+var colored_GlassCable = [
+	<appliedenergistics2:part>,
+	<appliedenergistics2:part:1>,
+	<appliedenergistics2:part:2>,
+	<appliedenergistics2:part:3>,
+	<appliedenergistics2:part:4>,
+	<appliedenergistics2:part:5>,
+	<appliedenergistics2:part:6>,
+	<appliedenergistics2:part:7>,
+	<appliedenergistics2:part:8>,
+	<appliedenergistics2:part:9>,
+	<appliedenergistics2:part:10>,
+	<appliedenergistics2:part:11>,
+	<appliedenergistics2:part:12>,
+	<appliedenergistics2:part:13>,
+	<appliedenergistics2:part:14>,
+	<appliedenergistics2:part:15>
+] as IItemStack[];
+
+for i, cable in colored_GlassCable {
+    recipes.remove(cable);
+    chemical_bath.recipeBuilder()
+        .inputs(<appliedenergistics2:part:16>)
+        .fluidInputs([dyes[i]])
+        .outputs(cable)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .inputs(cable)
+        .fluidInputs([<liquid:chlorine> * 10])
+        .outputs(<appliedenergistics2:part:16>)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
 }
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:140> * 2)
+    .inputs(<ore:dustFluix> * 2)
+    .outputs(<appliedenergistics2:part:16> * 3)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+//Covered Cable
+var colored_CoveredCable = [
+	<appliedenergistics2:part:20>,
+	<appliedenergistics2:part:21>,
+	<appliedenergistics2:part:22>,
+	<appliedenergistics2:part:23>,
+	<appliedenergistics2:part:24>,
+	<appliedenergistics2:part:25>,
+	<appliedenergistics2:part:26>,
+	<appliedenergistics2:part:27>,
+	<appliedenergistics2:part:28>,
+	<appliedenergistics2:part:29>,
+	<appliedenergistics2:part:30>,
+	<appliedenergistics2:part:31>,
+	<appliedenergistics2:part:32>,
+	<appliedenergistics2:part:33>,
+	<appliedenergistics2:part:34>,
+	<appliedenergistics2:part:35>
+] as IItemStack[];
+
+for i, cable in colored_CoveredCable {
+    recipes.remove(cable);
+    chemical_bath.recipeBuilder()
+        .inputs(<appliedenergistics2:part:36>)
+        .fluidInputs([dyes[i]])
+        .outputs(cable)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .inputs(cable)
+        .fluidInputs([<liquid:chlorine> * 10])
+        .outputs(<appliedenergistics2:part:36>)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+}
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+    .circuit(24)
+    .fluidInputs([<liquid:rubber> * 144])
+    .outputs(<appliedenergistics2:part:36>)
+    .duration(150)
+    .EUt(8)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+    .circuit(24)
+    .fluidInputs([<liquid:styrene_butadiene_rubber> * 72])
+    .outputs(<appliedenergistics2:part:36>)
+    .duration(150)
+    .EUt(8)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+    .circuit(24)
+    .fluidInputs([<liquid:silicone_rubber> * 36])
+    .outputs(<appliedenergistics2:part:36>)
+    .duration(150)
+    .EUt(8)
+    .buildAndRegister();
+//Smart Cable
+var colored_SmartCable = [
+<appliedenergistics2:part:40>,
+<appliedenergistics2:part:41>,
+<appliedenergistics2:part:42>,
+<appliedenergistics2:part:43>,
+<appliedenergistics2:part:44>,
+<appliedenergistics2:part:45>,
+<appliedenergistics2:part:46>,
+<appliedenergistics2:part:47>,
+<appliedenergistics2:part:48>,
+<appliedenergistics2:part:49>,
+<appliedenergistics2:part:50>,
+<appliedenergistics2:part:51>,
+<appliedenergistics2:part:52>,
+<appliedenergistics2:part:53>,
+<appliedenergistics2:part:54>,
+<appliedenergistics2:part:55>
+] as IItemStack[];
+
+for i, cable in colored_SmartCable {
+    recipes.remove(cable);
+    chemical_bath.recipeBuilder()
+        .inputs(<appliedenergistics2:part:56>)
+        .fluidInputs([dyes[i]])
+        .outputs(cable)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .inputs(cable)
+        .fluidInputs([<liquid:chlorine> * 10])
+        .outputs(<appliedenergistics2:part:56>)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+}
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+		.inputs([<ore:dustRedstone> * 2])
+    .circuit(24)
+    .fluidInputs([<liquid:glowstone> * 144])
+    .outputs(<appliedenergistics2:part:56>)
+    .duration(150)
+    .EUt(8)
+    .buildAndRegister();
+//Dense Smart Cable
+var colored_DenseSmartCable = [
+<appliedenergistics2:part:60>,
+<appliedenergistics2:part:61>,
+<appliedenergistics2:part:62>,
+<appliedenergistics2:part:63>,
+<appliedenergistics2:part:64>,
+<appliedenergistics2:part:65>,
+<appliedenergistics2:part:66>,
+<appliedenergistics2:part:67>,
+<appliedenergistics2:part:68>,
+<appliedenergistics2:part:69>,
+<appliedenergistics2:part:70>,
+<appliedenergistics2:part:71>,
+<appliedenergistics2:part:72>,
+<appliedenergistics2:part:73>,
+<appliedenergistics2:part:74>,
+<appliedenergistics2:part:75>
+] as IItemStack[];
+
+for i, cable in colored_DenseSmartCable {
+    recipes.remove(cable);
+    chemical_bath.recipeBuilder()
+        .inputs(<appliedenergistics2:part:76>)
+        .fluidInputs([dyes[i]])
+        .outputs(cable)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .inputs(cable)
+        .fluidInputs([<liquid:chlorine> * 10])
+        .outputs(<appliedenergistics2:part:76>)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+}
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:516>)
+		.inputs([<ore:dustRedstone> * 2])
+    .circuit(24)
+    .fluidInputs([<liquid:glowstone> * 288])
+    .outputs(<appliedenergistics2:part:76>)
+    .duration(150)
+    .EUt(32)
+    .buildAndRegister();
+
+//Dense Covered Cable
+var colored_DenseCoveredCable = [
+<appliedenergistics2:part:500>,
+<appliedenergistics2:part:501>,
+<appliedenergistics2:part:502>,
+<appliedenergistics2:part:503>,
+<appliedenergistics2:part:504>,
+<appliedenergistics2:part:505>,
+<appliedenergistics2:part:506>,
+<appliedenergistics2:part:507>,
+<appliedenergistics2:part:508>,
+<appliedenergistics2:part:509>,
+<appliedenergistics2:part:510>,
+<appliedenergistics2:part:511>,
+<appliedenergistics2:part:512>,
+<appliedenergistics2:part:513>,
+<appliedenergistics2:part:514>,
+<appliedenergistics2:part:515>
+] as IItemStack[];
+
+for i, cable in colored_DenseCoveredCable {
+    recipes.remove(cable);
+    chemical_bath.recipeBuilder()
+        .inputs(<appliedenergistics2:part:516>)
+        .fluidInputs([dyes[i]])
+        .outputs(cable)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .inputs(cable)
+        .fluidInputs([<liquid:chlorine> * 10])
+        .outputs(<appliedenergistics2:part:516>)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+}
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16> * 4)
+    .circuit(24)
+    .fluidInputs([<liquid:rubber> * 576])
+    .outputs(<appliedenergistics2:part:516>)
+    .duration(150)
+    .EUt(32)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16> * 4)
+    .circuit(24)
+    .fluidInputs([<liquid:styrene_butadiene_rubber> * 288])
+    .outputs(<appliedenergistics2:part:516>)
+    .duration(150)
+    .EUt(32)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16> * 4)
+    .circuit(24)
+    .fluidInputs([<liquid:silicone_rubber> * 144])
+    .outputs(<appliedenergistics2:part:516>)
+    .duration(150)
+    .EUt(32)
+    .buildAndRegister();
+
 //Кварцевая ткань
 wiremill.recipeBuilder()
 	.inputs(<ore:stickCertusQuartz> * 1)
@@ -367,30 +619,45 @@ forming_press.recipeBuilder()
  	.duration(200).EUt(16).buildAndRegister();
 //Процессоры аплайда
 //Логичсекий
-assembler.recipeBuilder()
-	.inputs(<appliedenergistics2:material:18> * 1, <appliedenergistics2:material:20> * 1)
-	.fluidInputs(<liquid:redstone> * 144)
-	.outputs(<appliedenergistics2:material:22> * 1)
-	.duration(60).EUt(32).buildAndRegister();
+circuit_assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:material:20>)
+    .inputs(<appliedenergistics2:material:18>)
+    .inputs(<ore:circuitBasic>)
+    .inputs(<ore:componentResistor>)
+    .inputs(<ore:wireFineTin> * 2)
+    .outputs(<appliedenergistics2:material:22> * 2)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Инженерный
-assembler.recipeBuilder()
-	.inputs(<appliedenergistics2:material:17> * 1, <appliedenergistics2:material:20> * 1)
-	.fluidInputs(<liquid:redstone> * 144)
-	.outputs(<appliedenergistics2:material:24> * 1)
-	.duration(60).EUt(32).buildAndRegister();
+circuit_assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:material:20>)
+    .inputs(<appliedenergistics2:material:17>)
+    .inputs(<ore:circuitBasic>)
+    .inputs(<ore:componentResistor>)
+    .inputs(<ore:wireFineTin> * 2)
+    .outputs(<appliedenergistics2:material:24> * 2)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Вычислительный 
-assembler.recipeBuilder()
-	.inputs(<appliedenergistics2:material:16> * 1, <appliedenergistics2:material:20> * 1)
-	.fluidInputs(<liquid:redstone> * 144)
-	.outputs(<appliedenergistics2:material:23> * 1)
-	.duration(60).EUt(32).buildAndRegister();
+circuit_assembler.recipeBuilder()
+    .inputs(<appliedenergistics2:material:20>)
+    .inputs(<appliedenergistics2:material:16>)
+    .inputs(<ore:circuitBasic>)
+    .inputs(<ore:componentResistor>)
+    .inputs(<ore:wireFineTin> * 2)
+    .outputs(<appliedenergistics2:material:23> * 2)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Заряженный кварц
 electrolyzer.recipeBuilder()
-	.inputs(<ore:crystalCertusQuartz> | <ore:gemCertusQuartz>)
-	.outputs(<appliedenergistics2:material:1>)
-	.duration(520)
-    .EUt(82)
-	.buildAndRegister();
+		.inputs(<ore:crystalCertusQuartz> | <ore:gemCertusQuartz>)
+		.outputs(<appliedenergistics2:material:1>)
+		.duration(520)
+		.EUt(82)
+		.buildAndRegister();
 //Пустой шаблон
 assembler.recipeBuilder()
     .inputs(<ore:plateSteel> * 3)
@@ -400,6 +667,36 @@ assembler.recipeBuilder()
     .outputs(<appliedenergistics2:material:52>)
     .duration(200)
     .EUt(120)
+    .buildAndRegister();
+    
+assembler.recipeBuilder()
+    .inputs(<ore:plateSteel> * 3)
+    .inputs(<ore:platePolyvinylChloride> * 2)
+    .inputs(<ore:wireFineRedAlloy> * 4)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:52> * 4)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister();
+    
+assembler.recipeBuilder()
+    .inputs(<ore:plateSteel> * 3)
+    .inputs(<ore:platePolytetrafluoroethylene> * 2)
+    .inputs(<ore:wireFineRedAlloy> * 4)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:52> * 16)
+    .duration(200)
+    .EUt(480)
+    .buildAndRegister();
+    
+assembler.recipeBuilder()
+    .inputs(<ore:plateSteel> * 3)
+    .inputs(<ore:platePolybenzimidazole> * 2)
+    .inputs(<ore:wireFineRedAlloy> * 4)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:52> * 64)
+    .duration(200)
+    .EUt(480)
     .buildAndRegister();
 //Флакс блок
 compressor.recipeBuilder()
@@ -504,6 +801,7 @@ recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife
 recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotSilver>]);
 recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotBrass>]);
 recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>.firstItem.withEmptyTag(), <ore:ingotInvar>]);
+
 //Жидкостный интерфейс
 recipes.addShaped(<appliedenergistics2:fluid_interface>, [
 	[<ore:plateIron>, <ore:plateLazurite>, <ore:plateIron>],
@@ -520,10 +818,10 @@ recipes.addShaped(<appliedenergistics2:energy_cell>, [
 	[<ore:circuitAdvanced>, <appliedenergistics2:fluix_block>, <ore:circuitAdvanced>],
 	[<ore:stickCertusQuartz>, <ore:cableGtOctalAluminium>, <ore:stickCertusQuartz>]]);
 //Сетевой инструмент
-recipes.addShaped(<appliedenergistics2:network_tool>, [
-	[<gregtech:meta_tool:8>, <ore:stickLongCertusQuartz>, null],
-	[<ore:stickLongCertusQuartz>, <gregtech:meta_tool:34>, <gregtech:meta_item_1:188>],
-	[null, <gregtech:meta_item_1:218>, <appliedenergistics2:part:360>]]);
+recipes.addShaped("network_tool", <appliedenergistics2:network_tool>, [
+    [<ore:itemQuartzWrench>, <ore:circuitBasic>],
+    [<appliedenergistics2:material:23>, <ore:itemIlluminatedPanel>]
+]);
 //Энерго-ячейка 2
 recipes.addShaped(<appliedenergistics2:dense_energy_cell>, [
 	[<appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>],
@@ -544,11 +842,22 @@ recipes.addShaped(<appliedenergistics2:crafting_unit>, [
 	[<ore:plateAluminium>, <appliedenergistics2:material:22>, <ore:plateAluminium>],
 	[<metaitem:circuit.good.regular>, <appliedenergistics2:material:24>, <metaitem:circuit.good.regular>],
 	[<ore:plateAluminium>, <appliedenergistics2:material:23>, <ore:plateAluminium>]]);
-//Молек. сборщик
-recipes.addShaped(<appliedenergistics2:molecular_assembler>, [
-	[<ore:plateTitanium>, <appliedenergistics2:quartz_glass>, <ore:plateTitanium>],
-	[<appliedenergistics2:material:44>, <meta_tile_entity:assembler.mv>, <appliedenergistics2:material:43>],
-	[<ore:plateTitanium>, <appliedenergistics2:quartz_glass>, <ore:plateTitanium>]]);
+// Молекулярный сборщик
+recipes.addShaped("molecular_assembler", <appliedenergistics2:molecular_assembler>, [
+    [<ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>],
+    [<appliedenergistics2:material:44>, <metaitem:robot.arm.hv>, <appliedenergistics2:material:43>],
+    [<ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>]
+]);
+recipes.addShaped("molecular_assembler_ev", <appliedenergistics2:molecular_assembler> * 4, [
+    [<ore:plateTitanium>, <appliedenergistics2:quartz_glass>, <ore:plateTitanium>],
+    [<appliedenergistics2:material:44>, <metaitem:robot.arm.ev>, <appliedenergistics2:material:43>],
+    [<ore:plateTitanium>, <appliedenergistics2:quartz_glass>, <ore:plateTitanium>]
+]);
+recipes.addShaped("molecular_assembler_iv", <appliedenergistics2:molecular_assembler> * 16, [
+    [<ore:plateTungstenSteel>, <appliedenergistics2:quartz_glass>, <ore:plateTungstenSteel>],
+    [<appliedenergistics2:material:44>, <metaitem:robot.arm.iv>, <appliedenergistics2:material:43>],
+    [<ore:plateTungstenSteel>, <appliedenergistics2:quartz_glass>, <ore:plateTungstenSteel>]
+]);
 //Квантовое кольцо
 recipes.addShaped(<appliedenergistics2:quantum_ring>, [
 	[<ore:plateTitanium>, <appliedenergistics2:material:22>, <ore:plateTitanium>],
@@ -599,16 +908,16 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 	[<ore:plateAluminium>, <appliedenergistics2:chest>, <ore:plateAluminium>],
 	[<appliedenergistics2:part:16>, <appliedenergistics2:material:37>, <appliedenergistics2:part:16>],
 	[<ore:plateAluminium>, <appliedenergistics2:material:24>, <ore:plateAluminium>]]);
-//Стеклянный кабель
-recipes.addShaped(<appliedenergistics2:part:16> * 3, [
-	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>],
-	[<appliedenergistics2:part:140>, <appliedenergistics2:part:140>, <appliedenergistics2:part:140>],
-	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>]]);
-//Стеклянный кабель закрытый
-recipes.addShaped(<appliedenergistics2:part:36> * 3, [
-	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>],
-	[<appliedenergistics2:part:16>, <appliedenergistics2:part:16>, <appliedenergistics2:part:16>],
-	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>]]);
+// //Стеклянный кабель
+// recipes.addShaped(<appliedenergistics2:part:16> * 3, [
+// 	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>],
+// 	[<appliedenergistics2:part:140>, <appliedenergistics2:part:140>, <appliedenergistics2:part:140>],
+// 	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>]]);
+// //Стеклянный кабель закрытый
+// recipes.addShaped(<appliedenergistics2:part:36> * 3, [
+// 	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>],
+// 	[<appliedenergistics2:part:16>, <appliedenergistics2:part:16>, <appliedenergistics2:part:16>],
+// 	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>]]);
 //Ядро А
 recipes.addShaped(<appliedenergistics2:material:44>, [
 	[<ore:stickNetherQuartz>, <appliedenergistics2:material:22>, <ore:stickNetherQuartz>],
@@ -725,10 +1034,10 @@ recipes.addShaped(<appliedenergistics2:matter_cannon>, [
 	[<appliedenergistics2:material:38>, <appliedenergistics2:dense_energy_cell>, null],
 	[<ore:plateAluminium>, null, null]]);
 //Карта памяти
-recipes.addShaped(<appliedenergistics2:memory_card>, [
-	[<appliedenergistics2:material:23>, <ore:plateAluminium>, <ore:plateAluminium>],
-	[<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
-	[null, null, null]]);
+recipes.addShaped("network_memory_card", <appliedenergistics2:memory_card>, [
+    [<appliedenergistics2:material:23>, <ore:circuitBasic>],
+    [<ore:wireFineGold>, <ore:plateIron>]
+]);
 //Заряженная палка
 recipes.addShaped(<appliedenergistics2:charged_staff>, [
 	[<appliedenergistics2:material:1>, <appliedenergistics2:material:1>, null],
@@ -745,9 +1054,10 @@ recipes.addShaped(<appliedenergistics2:color_applicator>, [
 	[<appliedenergistics2:material:36>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:36>],
 	[null, <ore:stickSteel>, null]]);
 //Биометрическая карта
-recipes.addShaped(<appliedenergistics2:biometric_card>, [
-	[<appliedenergistics2:material:24>, <ore:plateAluminium>, <ore:plateAluminium>],
-	[<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],[null, null, null]]);
+recipes.addShaped("network_biometric_card", <appliedenergistics2:biometric_card>, [
+    [<appliedenergistics2:material:24>, <ore:circuitPrimitive>],
+    [<ore:wireFineGold>, <ore:plateIron>]
+]);
 //Жидкостный терминал
 recipes.addShaped(<appliedenergistics2:part:520>, [
 	[<ore:stickCertusQuartz>, <ore:screwCobalt>, <ore:stickCertusQuartz>],
@@ -756,72 +1066,181 @@ recipes.addShaped(<appliedenergistics2:part:520>, [
 //Ячейка видимости
 recipes.addShapeless(<appliedenergistics2:view_cell>, [<appliedenergistics2:material:39>, <ore:gemCertusQuartz> | <ore:crystalCertusQuartz>]);
 //1к ячейка
-recipes.addShapeless(<appliedenergistics2:storage_cell_1k>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:35>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:35>)
+    .outputs(<appliedenergistics2:storage_cell_1k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //4к ячейка
-recipes.addShapeless(<appliedenergistics2:storage_cell_4k>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:36>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:36>)
+    .outputs(<appliedenergistics2:storage_cell_4k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //16к ячейка 
-recipes.addShapeless(<appliedenergistics2:storage_cell_16k>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:37>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:37>)
+    .outputs(<appliedenergistics2:storage_cell_16k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //64к ячейка
-recipes.addShapeless(<appliedenergistics2:storage_cell_64k>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:38>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:38>)
+    .outputs(<appliedenergistics2:storage_cell_64k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //1к ячейка жидкость
-recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_1k>, [<aeadditions:storage.casing:1>, <appliedenergistics2:material:54>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:54>)
+    .outputs(<appliedenergistics2:fluid_storage_cell_1k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
+
 //4к ячейка жидкость
-recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_4k>, [<aeadditions:storage.casing:1>, <appliedenergistics2:material:55>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:55>)
+    .outputs(<appliedenergistics2:fluid_storage_cell_4k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //16к ячейка жидкость
-recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_16k>, [<aeadditions:storage.casing:1>, <appliedenergistics2:material:56>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:56>)
+    .outputs(<appliedenergistics2:fluid_storage_cell_16k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //64к ячейка жидкость
-recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_64k>, [<aeadditions:storage.casing:1>, <appliedenergistics2:material:57>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:57>)
+    .outputs(<appliedenergistics2:fluid_storage_cell_64k>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //2к куб ячейка
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_2_cubed>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:32>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:32>)
+    .outputs(<appliedenergistics2:spatial_storage_cell_2_cubed>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //16к куб ячейка
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_16_cubed>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:33>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:33>)
+    .outputs(<appliedenergistics2:spatial_storage_cell_16_cubed>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //128к куб ячейка
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_128_cubed>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:34>]);
+canner.recipeBuilder()
+    .inputs(<appliedenergistics2:material:39>)
+    .inputs(<appliedenergistics2:material:34>)
+    .outputs(<appliedenergistics2:spatial_storage_cell_128_cubed>)
+    .duration(100)
+    .EUt(4)
+    .buildAndRegister();
 //Обшивка универсального хранилища
 recipes.addShaped(<appliedenergistics2:material:39>, [
 	[<ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:dustFluix>, <ore:plateCertusQuartz>],
 	[<ore:plateStainlessSteel>, <ore:plateGlass>, <ore:plateStainlessSteel>],
 	[<ore:plateCertusQuartz>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()]]);
 //Компонент 1к
-recipes.addShaped(<appliedenergistics2:material:35>, [
-	[<ore:circuitBasic>, <ore:dustFluix>, <ore:circuitBasic>],
-	[<ore:dustFluix>, <appliedenergistics2:material:22>, <ore:dustFluix>],
-	[<ore:circuitBasic>, <ore:dustFluix>, <ore:circuitBasic>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.central_processing_unit>)
+    .inputs(<ore:plateCertusQuartz>)
+    .inputs(<ore:circuitBasic>)
+    .outputs(<appliedenergistics2:material:35>)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(<metaitem:component.resistor> * 16)
+    .inputs(<ore:plateCertusQuartz>)
+    .inputs(<ore:circuitBasic> * 2)
+    .fluidInputs([<liquid:red_alloy> * 288])
+    .outputs(<appliedenergistics2:material:35>)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();		
 //Компонент 4к
-recipes.addShaped(<appliedenergistics2:material:36>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:35>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitGood>, <appliedenergistics2:material:22>, <ore:circuitGood>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:35>, <metaitem:plate.random_access_memory>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.random_access_memory>)
+    .inputs(<appliedenergistics2:material:35> * 3)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:36>)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Компонент 16к
-recipes.addShaped(<appliedenergistics2:material:37>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:36>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitAdvanced>, <appliedenergistics2:material:23>, <ore:circuitAdvanced>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:36>, <metaitem:plate.random_access_memory>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.ultra_low_power_integrated_circuit>)
+    .inputs(<appliedenergistics2:material:36> * 3)
+    .inputs(<ore:circuitAdvanced>)
+    .outputs(<appliedenergistics2:material:37>)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister();
 //Компонент 64к
-recipes.addShaped(<appliedenergistics2:material:38>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:37>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitExtreme>, <appliedenergistics2:material:23>, <ore:circuitExtreme>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:37>, <metaitem:plate.random_access_memory>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.power_integrated_circuit>)
+    .inputs(<appliedenergistics2:material:37> * 3)
+    .inputs(<ore:circuitExtreme>)
+    .outputs(<appliedenergistics2:material:38>)
+    .duration(200)
+    .EUt(480)
+    .buildAndRegister();
 //Жидкость компонент ячейки 1к
-recipes.addShaped(<appliedenergistics2:material:54>, [
-	[<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>],
-	[<metaitem:fluid_cell>, <appliedenergistics2:material:22>, <metaitem:fluid_cell>],
-	[<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.central_processing_unit>)
+    .inputs(<ore:plateLapis>)
+    .inputs(<ore:circuitBasic>)
+    .outputs(<appliedenergistics2:material:54>)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Жидкость компонент ячейки 4к
-recipes.addShaped(<appliedenergistics2:material:55>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:54>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitGood>, <appliedenergistics2:material:22>, <ore:circuitGood>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:54>, <metaitem:plate.random_access_memory>]]);  
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.random_access_memory>)
+    .inputs(<appliedenergistics2:material:54> * 3)
+    .inputs(<ore:circuitGood>)
+    .outputs(<appliedenergistics2:material:55>)
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister();
 //Жидкость компонент ячейки 16к
-recipes.addShaped(<appliedenergistics2:material:56>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:55>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitAdvanced>, <appliedenergistics2:material:22>, <ore:circuitAdvanced>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:55>, <metaitem:plate.random_access_memory>]]);    
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.ultra_low_power_integrated_circuit>)
+    .inputs(<appliedenergistics2:material:55> * 3)
+    .inputs(<ore:circuitAdvanced>)
+    .outputs(<appliedenergistics2:material:56>)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister();   
 //Жидкость компонент ячейки 64к
-recipes.addShaped(<appliedenergistics2:material:57>, [
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:56>, <metaitem:plate.random_access_memory>],
-	[<ore:circuitExtreme>, <appliedenergistics2:material:23>, <ore:circuitExtreme>],
-	[<metaitem:plate.random_access_memory>, <appliedenergistics2:material:56>, <metaitem:plate.random_access_memory>]]);
+assembler.recipeBuilder()
+    .inputs(<metaitem:plate.power_integrated_circuit>)
+    .inputs(<appliedenergistics2:material:56> * 3)
+    .inputs(<ore:circuitExtreme>)
+    .outputs(<appliedenergistics2:material:57>)
+    .duration(200)
+    .EUt(480)
+    .buildAndRegister();
 //Кубичсекий компонент 2к
 recipes.addShaped(<appliedenergistics2:material:32>, [
 	[<ore:plateGlowstone>, <appliedenergistics2:material:9>, <ore:plateGlowstone>],
