@@ -74,7 +74,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/ingot/black_steel>,
 	<tfc:metal/ingot/blue_steel>,
 	<tfc:metal/ingot/red_steel>,
-	<tfc:metal/ingot/wrought_iron>,
+	//<tfc:metal/ingot/wrought_iron>,
 	//Plate
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
@@ -385,6 +385,9 @@ Anvil.addRecipe("tfc:iron_barsF", <ore:plateWroughtIron>, <minecraft:iron_bars> 
 //Iron Bars x16
 Anvil.removeRecipe(<minecraft:iron_bars> * 16);
 Anvil.addRecipe("tfc:iron_bars2F", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+
+//600iq fix SHIT FUCKING WROUGHT IRON
+Anvil.addRecipe("tfc:nicefix", <tfc:metal/ingot/wrought_iron>, <ore:ingotWroughtIron>.firstItem, 2, "general", "HIT_ANY", "HIT_ANY", "HIT_ANY");
 
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand>*8], null).remove();
