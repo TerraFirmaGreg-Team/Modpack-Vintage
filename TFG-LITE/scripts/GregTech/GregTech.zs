@@ -4,6 +4,11 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 //Удаление + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
+    //Rubber stuff
+    <gregtech:planks>,
+    <gregtech:rubber_log>,
+    <gregtech:rubber_leaves>,
+    <gregtech:rubber_sapling>,
     //Primitive Blast Furnace
     <gregtech:machine:1000>,
     //Primitive Bricks

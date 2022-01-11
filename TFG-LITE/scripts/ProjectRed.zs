@@ -10,6 +10,9 @@ for item in ItemsToRemove{
     mods.jei.JEI.removeAndHide(item);
 }
 
+furnace.remove(<projectred-core:resource_item> * 2);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:RawIgneousExtrusive>);
+
 //Iron Coil
 recipes.remove(<projectred-core:resource_item:401>);
 recipes.addShaped(<projectred-core:resource_item:401>,
