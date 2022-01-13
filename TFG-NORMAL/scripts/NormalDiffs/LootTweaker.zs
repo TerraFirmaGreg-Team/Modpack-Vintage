@@ -13,8 +13,8 @@ LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_
 //Добавление вещей
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:metal/ingot/gold>, 4);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<ore:ingotCobalt>.firstItem, 3);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<gregtech:meta_item_1:10017>, 5);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<gregtech:meta_item_1:10008>, 2);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<ore:ingotCopper>.firstItem, 5);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<ore:ingotBronze>.firstItem, 2);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/amethyst>, 1);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/jasper>, 1);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/sapphire>, 1);
