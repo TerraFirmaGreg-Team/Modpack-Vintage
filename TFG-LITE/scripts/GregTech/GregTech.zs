@@ -193,11 +193,11 @@ packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({C
 assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
 //Rock breaker fixes
-rock_breaker.findRecipe(30, [<minecraft:stone>], null).remove();
-rock_breaker.findRecipe(30, [<minecraft:cobblestone>], null).remove();
-rock_breaker.findRecipe(120, [<ore:stoneGranite>.firstItem], null).remove();
-rock_breaker.findRecipe(120, [<ore:stoneDiorite>.firstItem], null).remove();
-rock_breaker.findRecipe(120, [<ore:stoneAndesite>.firstItem], null).remove();
+rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
+rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
+rock_breaker.findRecipe(60, [<ore:stoneGranite>.firstItem], null).remove();
+rock_breaker.findRecipe(60, [<ore:stoneDiorite>.firstItem], null).remove();
+rock_breaker.findRecipe(60, [<ore:stoneAndesite>.firstItem], null).remove();
 
 //Фиксы корпусов
 //Удаление
