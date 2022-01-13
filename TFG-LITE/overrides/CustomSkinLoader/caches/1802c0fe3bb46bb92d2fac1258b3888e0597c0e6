@@ -1,8 +1,0 @@
-{
-  "id" : "d622ae4f3f4b42b79e6b17e0fcf21bf8",
-  "name" : "Hash",
-  "properties" : [ {
-    "name" : "textures",
-    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTYzOTA5MjgyMzQwNSwKICAicHJvZmlsZUlkIiA6ICJkNjIyYWU0ZjNmNGI0MmI3OWU2YjE3ZTBmY2YyMWJmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJIYXNoIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZlNmE2ODY0NGQ5ZmQwOGE5ZGI4NmNkMjhhYWU5NjRjMWU4NmFiNWUwMjhhYTQ0MjIwMjliZDNkNjhiZTMzN2EiCiAgICB9CiAgfQp9"
-  } ]
-}

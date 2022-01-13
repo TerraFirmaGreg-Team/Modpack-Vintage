@@ -1,8 +1,0 @@
-{
-  "id" : "044de9d276974b62aa2db471d3e2cd29",
-  "name" : "damodigi",
-  "properties" : [ {
-    "name" : "textures",
-    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTYzOTA5MTgzMzE2MywKICAicHJvZmlsZUlkIiA6ICIwNDRkZTlkMjc2OTc0YjYyYWEyZGI0NzFkM2UyY2QyOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJkYW1vZGlnaSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81NzM5NzQ1YTFkYjI0ZWJjYzFhZWI4YTVkOTJmNzE0ODBhMzM5OTc1N2I0OTQyY2NiNzc4Yzk2ODU4MDIyY2FhIgogICAgfQogIH0KfQ=="
-  } ]
-}
