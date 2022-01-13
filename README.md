@@ -4,7 +4,7 @@ YouTube: https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw
 
 Discord: https://discord.com/invite/TZx8Cfr
 
-Site/Wiki: speeedcraft.ru
+Site/Wiki: https://speeedcraft.ru
 
 ![logotfg](https://user-images.githubusercontent.com/52341158/131987786-bf99e1af-318c-4ed4-a6f8-c4617d692adb.png)
 ![prehead](https://user-images.githubusercontent.com/52341158/131987835-67e5f19f-1dad-4709-a146-68b917d1682f.png)
