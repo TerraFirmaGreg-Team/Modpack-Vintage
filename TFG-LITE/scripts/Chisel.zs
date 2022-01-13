@@ -115,7 +115,7 @@ recipes.addShaped(<chiselsandbits:bit_bag>,
 //Лабораторный блок
 recipes.addShaped(<chisel:laboratory>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <minecraft:quartz>, <ore:stone>],
+ [<ore:stone>, <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 //Храмовый блок
