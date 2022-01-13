@@ -1,0 +1,14 @@
+{
+	x: -8.5d,
+	y: 4.5d,
+	dependencies: [
+		"f70e73db"
+	],
+	tasks: [{
+		uid: "7d58c2a4",
+		type: "item",
+		items: [{
+			item: "gendustry:replicator"
+		}]
+	}]
+}

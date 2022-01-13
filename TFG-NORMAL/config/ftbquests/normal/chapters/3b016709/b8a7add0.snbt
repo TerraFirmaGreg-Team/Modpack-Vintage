@@ -1,0 +1,18 @@
+{
+	x: 4.5d,
+	y: 9.0d,
+	description: "{tfg.quests.lv.unpackager.subtitle}",
+	dependencies: [
+		"b1293e60"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "91ad494d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 400"
+		}],
+		ignore_nbt: 1b
+	}]
+}

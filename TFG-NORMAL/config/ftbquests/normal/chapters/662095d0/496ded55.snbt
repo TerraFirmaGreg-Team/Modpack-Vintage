@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.mv.proccessor.title}",
+	x: -5.0d,
+	y: 0.5d,
+	shape: "square",
+	description: "{tfg.quests.mv.proccessor.subtitle}",
+	text: [
+		""
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"481efd8e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ddf6d0ad",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32201"
+		},
+		{
+			item: "gtadditions:ga_meta_item 1 32200"
+		}]
+	}]
+}

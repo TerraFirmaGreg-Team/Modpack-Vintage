@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: 9.5d,
+	shape: "circle",
+	dependencies: [
+		"ba62aee7"
+	],
+	tasks: [{
+		uid: "17b5443b",
+		type: "item",
+		items: [{
+			id: "wpt:wpt",
+			tag: {
+				InfinityEnergy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

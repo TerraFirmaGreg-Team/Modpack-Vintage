@@ -1,0 +1,15 @@
+{
+	x: 13.5d,
+	y: 3.5d,
+	description: "{tfg.quests.lv.silicone.subtitle}",
+	dependencies: [
+		"28b90e80"
+	],
+	tasks: [{
+		uid: "0fefef88",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32439"
+		}]
+	}]
+}

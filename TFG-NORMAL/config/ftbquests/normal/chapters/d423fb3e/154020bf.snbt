@@ -1,0 +1,18 @@
+{
+	x: -12.0d,
+	y: -12.0d,
+	description: "{tfg.quests.steam.analyzator.subtitle}",
+	dependencies: [
+		"56c53ffc"
+	],
+	hide: true,
+	tasks: [{
+		uid: "50347293",
+		type: "item",
+		items: [{
+			item: "forestry:portable_alyzer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

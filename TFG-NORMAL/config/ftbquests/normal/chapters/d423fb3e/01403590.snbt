@@ -1,0 +1,28 @@
+{
+	x: 1.0d,
+	y: -1.5d,
+	description: "{tfg.quests.steam.blacksteelingot2.subtitle}",
+	dependencies: [
+		"badc22e0",
+		"2d444c7e"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "15cb514d",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBlackSteel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBlackSteel"
+				}
+			}
+		}]
+	}]
+}

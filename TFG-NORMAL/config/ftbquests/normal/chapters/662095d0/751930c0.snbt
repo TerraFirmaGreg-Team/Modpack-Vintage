@@ -1,0 +1,15 @@
+{
+	x: 2.5d,
+	y: 13.5d,
+	description: "{tfg.quests.steam.4lvltank.subtitle}",
+	dependencies: [
+		"3b4e000f"
+	],
+	tasks: [{
+		uid: "b89b886f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 814"
+		}]
+	}]
+}

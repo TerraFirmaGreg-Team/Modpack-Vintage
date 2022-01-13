@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: -7.0d,
+	dependencies: [
+		"f0d8edbf"
+	],
+	tasks: [{
+		uid: "f5b97e1b",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:parachute"
+		}],
+		ignore_nbt: 1b
+	}]
+}

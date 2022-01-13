@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.mv.wafer.title}",
+	icon: "gregtech:meta_item_2 1 32440",
+	x: -7.0d,
+	y: 10.0d,
+	description: "{tfg.quests.mv.wafer.subtitle}",
+	dependencies: [
+		"c1e816f6"
+	],
+	tasks: [{
+		uid: "1617aff4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2061"
+		}],
+		count: 32L
+	},
+	{
+		uid: "ecb239fb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32439"
+		}]
+	},
+	{
+		uid: "371528ad",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32440"
+		}]
+	}]
+}

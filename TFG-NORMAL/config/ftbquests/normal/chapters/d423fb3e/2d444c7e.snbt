@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: -1.5d,
+	description: "{tfg.quests.steam.bronzemacerator.subtitle}",
+	dependencies: [
+		"278e5d30"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ad53dfba",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 9"
+		}]
+	}]
+}

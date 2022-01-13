@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: 3.0d,
+	shape: "square",
+	description: "{tfg.quests.lv.start.subtitle}",
+	dependencies: [
+		"40c4948a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "168f2170",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 1 1"
+		}]
+	}]
+}

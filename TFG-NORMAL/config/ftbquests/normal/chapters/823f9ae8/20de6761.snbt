@@ -1,0 +1,187 @@
+{
+	title: "{tfg.quests.primitive.allTheMoldsButNowFired.title}",
+	icon: {
+		id: "tfc:ceramics/fired/mold/ingot",
+		ForgeCaps: {
+			Parent: {
+				ticks: -1L,
+				heat: 0.0f,
+				Empty: ""
+			}
+		}
+	},
+	x: -25.5d,
+	y: -10.5d,
+	shape: "pentagon",
+	dependencies: [
+		"7f2aa00c"
+	],
+	tasks: [{
+		uid: "dc249ce9",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/saw_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "6b82af4f",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/knife_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "f3e7ba77",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/mace_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "fd6b036b",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/sword_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "0c0d775e",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/scythe_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "1138a0e2",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/ingot",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "7c32003e",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/pick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "5f4a79db",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/shovel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "fafb8d03",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/axe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "1967d5c2",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/hoe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "f26d8435",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/chisel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "9c96fbd9",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/saw_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	}]
+}

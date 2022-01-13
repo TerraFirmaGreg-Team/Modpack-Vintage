@@ -1,0 +1,17 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzebrickedhull.subtitle}",
+	dependencies: [
+		"7d03eeb7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9eee5f62",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 1 11"
+		}]
+	}]
+}

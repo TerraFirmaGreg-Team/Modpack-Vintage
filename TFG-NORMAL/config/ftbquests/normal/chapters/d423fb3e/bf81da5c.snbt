@@ -1,0 +1,23 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzeboiler.subtitle}",
+	dependencies: [
+		"505c5aff"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9dc43297",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1"
+		},
+		{
+			item: "gregtech:machine 1 5"
+		},
+		{
+			item: "gregtech:machine 1 3"
+		}]
+	}]
+}

@@ -1,0 +1,91 @@
+{
+	title: "{tfg.quests.primitive.bismuthbronzeingot.title}",
+	icon: {
+		id: "tfc:metal/ingot/bismuth_bronze",
+		ForgeCaps: {
+			Parent: {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			},
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
+	x: -14.5d,
+	y: -1.0d,
+	description: "{tfg.quests.primitive.bismuthbronzeingot.subtitle}",
+	dependencies: [
+		"fff99863",
+		"c8b0cb86",
+		"57406373"
+	],
+	tasks: [{
+		uid: "ad1c58a3",
+		type: "item",
+		items: [{
+			id: "tfc:metal/ingot/bismuth_bronze",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				},
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		},
+		{
+			id: "gregtech:meta_item_1",
+			Damage: 10230s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}

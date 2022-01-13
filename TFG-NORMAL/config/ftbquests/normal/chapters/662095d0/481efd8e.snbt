@@ -1,0 +1,17 @@
+{
+	title: "{tfg.quests.mv.start.title}",
+	x: -14.0d,
+	y: 0.5d,
+	shape: "hexagon",
+	description: "{tfg.quests.mv.start.subtitle}",
+	dependencies: [
+		"50508181"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8adeaa47",
+		type: "checkmark",
+		title: "Тыкай сюдой!",
+		icon: "gregtech:machine_casing 1 9"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: -2.5d,
+	y: -3.5d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.fluxsmart.subtitle}",
+	dependencies: [
+		"02798f3f"
+	],
+	tasks: [{
+		uid: "c6dd9780",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 56"
+		}]
+	}]
+}

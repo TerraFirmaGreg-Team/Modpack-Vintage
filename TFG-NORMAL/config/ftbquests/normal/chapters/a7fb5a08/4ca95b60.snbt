@@ -1,0 +1,31 @@
+{
+	x: 10.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "087d710f",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 10035s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "9c4d73c7",
+		type: "random",
+		table: 0
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: -4.5d,
+	description: "{tfg.quests.lv.basicpump.subtitle}",
+	dependencies: [
+		"6aeff01a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2cfe4123",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 900"
+		}],
+		ignore_nbt: 1b
+	}]
+}

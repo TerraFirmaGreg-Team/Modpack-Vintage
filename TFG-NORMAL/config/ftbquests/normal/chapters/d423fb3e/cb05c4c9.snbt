@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: -2.5d,
+	dependencies: [
+		"e6318f88"
+	],
+	tasks: [{
+		uid: "aa6e3815",
+		type: "item",
+		items: [{
+			item: "forestry:raintank"
+		}]
+	}]
+}
