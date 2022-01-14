@@ -33,7 +33,7 @@ val ItemsToRemove as IItemStack[] = [
 	//Paper
     <minecraft:paper> * 2,
     //Coke Oven
-    <gregtech:machine:1016>,
+    <gregtech:machine:1017>,
     //LV Casing
     <gregtech:machine_casing:1>,
     //Steam Miner
@@ -45,9 +45,21 @@ val ItemsToRemove as IItemStack[] = [
     //Pump deck
     <gregtech:steam_casing:4>,
     //Pump hatch
-    <gregtech:machine:1648>,
+    <gregtech:machine:1649>,
     //Primitive pump
-    <gregtech:machine:1647>
+    <gregtech:machine:1648>,
+    //Steam Coal Boiler
+    <gregtech:machine:1>,
+    //High Pressure Coal Boiler
+    <gregtech:machine:2>,
+    //Steam Boiler
+    <gregtech:machine:15>,
+    //Steam Alloy Smelter
+    <gregtech:machine:17>,
+    //Blast Furnace
+    <gregtech:machine:1001>,
+    //Multi-Smelter
+    <gregtech:machine:1006>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -66,11 +78,44 @@ recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("gregtech:iron_bars");
 recipes.removeByRecipeName("gregtech:quartz_sand");
 
-//Реплейс всех печек на печь из GT
-recipes.replaceAllOccurences(<minecraft:furnace>, <tfc:blast_furnace>);
+//Small Steam Coal Boiler
+recipes.addShaped(<gregtech:machine:1>,
+[[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+ [<ore:plateBronze>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBronze>],
+ [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
+
+//High Pressure Coal Boiler
+recipes.addShaped(<gregtech:machine:2>,
+[[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+ [<ore:plateSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateSteel>],
+ [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
+
+//Steam Boiler
+recipes.addShaped(<gregtech:machine:15>,
+[[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing:1>,<ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <tfc:blast_furnace>, <ore:pipeSmallFluidBronze>]]);
+
+//Steam Alloy Smelter
+recipes.addShaped(<gregtech:machine:17>,
+[[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
+ [<tfc:blast_furnace>, <gregtech:steam_casing:1>, <tfc:blast_furnace>],
+ [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>]]);
+
+//Blast Furnace
+recipes.addShaped(<gregtech:machine:1001>,
+[[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
+ [<ore:circuitBasic>, <gregtech:metal_casing:2>, <ore:circuitBasic>],
+ [<ore:cableGtSingleTin>, <ore:circuitBasic>, <ore:cableGtSingleTin>]]);
+
+//Multi-Smelter
+recipes.addShaped(<gregtech:machine:1006>,
+[[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
+ [<ore:circuitAdvanced>, <gregtech:metal_casing:2>, <ore:circuitAdvanced>],
+ [<ore:cableGtSingleAnnealedCopper>, <ore:circuitAdvanced>, <ore:cableGtSingleAnnealedCopper>]]);
 
 //Crafting Station
-recipes.addShaped(<gregtech:machine:1646>,
+recipes.addShaped(<gregtech:machine:1647>,
 [[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
  [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
  [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
@@ -87,19 +132,19 @@ recipes.addShaped(<gregtech:steam_casing:4> * 2,
  [<ore:craftingToolScrewdriver>, <ore:slabCobblestone>, <ore:craftingToolHardHammer>]]);
 
 //Pump hatch
-recipes.addShaped(<gregtech:machine:1648>,
+recipes.addShaped(<gregtech:machine:1649>,
 [[<ore:screwIron>, <ore:ringIron>, <ore:craftingToolScrewdriver>],
  [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
  [<ore:slabCobblestone>, <ore:ringIron>, <ore:slabCobblestone>]]);
 
 //Primitive pump
-recipes.addShaped(<gregtech:machine:1647>,
+recipes.addShaped(<gregtech:machine:1648>,
 [[<ore:ringIron>, <ore:pipeNormalFluidWood>, <ore:screwIron>],
  [<ore:rotorIron>, <ore:plankWood>, <ore:craftingToolScrewdriver>],
  [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 //Coke Oven
-recipes.addShaped(<gregtech:machine:1016>,
+recipes.addShaped(<gregtech:machine:1017>,
 [[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
  [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);

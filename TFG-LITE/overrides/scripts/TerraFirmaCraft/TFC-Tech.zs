@@ -2,6 +2,7 @@ import mods.tfctech.WireDrawing;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Barrel;
 
 // --- Removing
 mods.jei.JEI.removeAndHide(<tfctech:powder/potash>);
@@ -47,6 +48,10 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 
 //Резина для примитивного этапа
 recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);
+
+//Нерф крафта резины через бочку
+Barrel.removeRecipe(<tfctech:latex/rubber_mix> * 6);
+Barrel.addRecipe("tfg:rubber_mix", <tfctech:latex/vulcanizing_agents>, <liquid:latex> * 1000, <tfctech:latex/rubber_mix> * 6, 8);
 
 //Draw Plates
 Anvil.removeRecipe(<tfctech:metal/iron_draw_plate>);

@@ -1,8 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
-val QuartzPlates = <ore:plateCertusQuartz> | <ore:plateNetherQuartz> | <ore:plateQuartzite>;
-
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
     //Ores
@@ -117,7 +115,7 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:leather_leggings>,
     <minecraft:leather_boots>,
     <minecraft:bucket>,
-    <minecraft:enchanting_table>
+    <minecraft:enchanting_table>,
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -125,6 +123,9 @@ for item in ItemsToRemove{
 
 //Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
+
+//Remove Furnace
+assembler.findRecipe(7, [<ore:stoneCobble>.firstItem * 8, <minecraft:flint>, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
 //Remove Wooden Pressure Plate
 assembler.findRecipe(7, [<ore:plankWood>.firstItem * 2, <ore:springIron>.firstItem], null).remove();
@@ -181,7 +182,7 @@ recipes.addShaped(<minecraft:bucket>,
 //Observer
 recipes.addShaped(<minecraft:observer>,
 [[<ore:ringIron>, <ore:cobblestone>, <ore:ringIron>],
- [<ore:cobblestone>, QuartzPlates, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:plateCertusQuartz> | <ore:plateNetherQuartz> | <ore:plateQuartzite>, <ore:cobblestone>],
  [<ore:gearSmallIron>, <ore:stickRedAlloy>, <ore:gearSmallIron>]]);
 
 //Водная хрень
@@ -192,5 +193,5 @@ recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
  
 //Рельсовые приколы
-recipes.addShapeless(<minecraft:chest_minecart>,[<minecraft:minecart>,<ore:chestWood>]);
-recipes.addShapeless(<minecraft:furnace_minecart>,[<minecraft:minecart>,<minecraft:furnace>]);
+recipes.addShapeless(<minecraft:chest_minecart>, [<minecraft:minecart>, <ore:chestWood>]);
+recipes.addShapeless(<minecraft:furnace_minecart>, [<minecraft:minecart>, <gregtech:machine:15>]);

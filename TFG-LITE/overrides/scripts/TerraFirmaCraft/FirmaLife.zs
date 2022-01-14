@@ -1,5 +1,4 @@
 import mods.terrafirmacraft.Anvil;
-import mods.terrafirmacraft.Barrel;
 import mods.firmalife.Drying;
 
 // --- Furnace recipes for TFC items
