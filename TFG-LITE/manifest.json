@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "TFG-1.12.2-Lite",
-  "version": "R3.0.1",
+  "version": "R3.0.4",
   "author": "",
   "files": [
     {
@@ -115,13 +115,13 @@
       "required": true
     },
     {
-      "projectID": 564858,
-      "fileID": 3600068,
+      "projectID": 237167,
+      "fileID": 2985811,
       "required": true
     },
     {
-      "projectID": 237167,
-      "fileID": 2985811,
+      "projectID": 564858,
+      "fileID": 3600068,
       "required": true
     },
     {
@@ -475,11 +475,6 @@
       "required": true
     },
     {
-      "projectID": 302973,
-      "fileID": 3406948,
-      "required": true
-    },
-    {
       "projectID": 308240,
       "fileID": 2837800,
       "required": true
@@ -532,11 +527,6 @@
     {
       "projectID": 314904,
       "fileID": 2819669,
-      "required": true
-    },
-    {
-      "projectID": 409087,
-      "fileID": 3568076,
       "required": true
     },
     {
