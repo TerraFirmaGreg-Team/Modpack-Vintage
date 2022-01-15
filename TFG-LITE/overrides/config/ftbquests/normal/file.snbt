@@ -1,15 +1,24 @@
 {
 	version: 9,
-	default_reward_team: false,
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 465s,
+		tag: {
+			terminal: {
+				_hw: {}
+			}
+		}
+	},
+	default_reward_team: true,
 	default_consume_items: false,
 	default_autoclaim_rewards: "disabled",
-	default_quest_shape: "hexagon",
+	default_quest_shape: "circle",
 	default_quest_disable_jei: false,
 	emergency_items: [{
 		id: "tfc:food/cooked_rabbit",
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: -9223372036854775808L,
+				creationDate: 364800000L,
 				traits: []
 			}
 		}
@@ -22,5 +31,5 @@
 		boss: 0
 	},
 	disable_gui: false,
-	grid_scale: 0.5d
+	grid_scale: 1.0d
 }

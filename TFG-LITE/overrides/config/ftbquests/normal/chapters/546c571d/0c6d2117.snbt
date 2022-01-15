@@ -1,6 +1,6 @@
 {
 	title: "Batteries!",
-	x: 9.5d,
+	x: 9.0d,
 	y: 13.0d,
 	shape: "hexagon",
 	text: [

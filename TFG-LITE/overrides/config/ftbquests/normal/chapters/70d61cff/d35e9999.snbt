@@ -1,0 +1,26 @@
+{
+	title: "NOR Gates",
+	icon: "gregtech:meta_item_1 1 576",
+	x: 6.0d,
+	y: 5.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"35a8d9f4"
+	],
+	tasks: [{
+		uid: "1c68615c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 576"
+		}]
+	},
+	{
+		uid: "e97dbacd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 601"
+		}]
+	}]
+}

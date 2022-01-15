@@ -2,7 +2,7 @@
 	title: "Large Cells",
 	icon: "gregtech:meta_item_1 1 81",
 	x: 2.0d,
-	y: -5.5d,
+	y: -6.0d,
 	text: [
 		"Aluminium Cells, a very big upgrade over the Universal Cells.",
 		"",

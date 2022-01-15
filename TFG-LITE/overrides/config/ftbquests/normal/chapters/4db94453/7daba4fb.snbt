@@ -1,7 +1,7 @@
 {
 	title: "Processor",
 	x: 0.0d,
-	y: 6.5d,
+	y: 8.0d,
 	dependencies: [
 		"bec10301",
 		"421d2c91",

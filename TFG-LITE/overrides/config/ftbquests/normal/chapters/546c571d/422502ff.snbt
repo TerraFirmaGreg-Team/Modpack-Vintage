@@ -7,7 +7,7 @@
 			FluidName: "oxygen"
 		}
 	},
-	x: -6.0d,
+	x: -7.0d,
 	y: 18.0d,
 	text: [
 		"§oIf you wanted to be picky, it would be Dioxygen, or Oxygen Gas. But gameplay convention makes it simply Oxygen.§r",

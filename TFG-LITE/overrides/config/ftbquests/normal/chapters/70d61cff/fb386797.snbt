@@ -1,0 +1,20 @@
+{
+	title: "Basic Large Miner",
+	icon: "gregtech:machine 1 1026",
+	x: 8.0d,
+	y: -5.0d,
+	shape: "pentagon",
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"6f2af6e8"
+	],
+	tasks: [{
+		uid: "352b2948",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1026"
+		}]
+	}]
+}

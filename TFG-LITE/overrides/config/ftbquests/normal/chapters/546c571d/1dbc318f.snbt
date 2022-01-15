@@ -1,10 +1,10 @@
 {
-	x: 3.5d,
-	y: 1.0d,
+	x: 3.0d,
+	y: 0.0d,
+	hide_dependency_lines: true,
 	dependencies: [
-		"083b4d00"
+		"16e3bb63"
 	],
-	hide: true,
 	tasks: [{
 		uid: "afab4079",
 		type: "fluid",

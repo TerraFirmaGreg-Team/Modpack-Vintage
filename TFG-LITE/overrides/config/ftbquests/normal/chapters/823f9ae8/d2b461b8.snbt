@@ -1,12 +1,11 @@
 {
 	title: "{tfg.quests.primitive.grains.title}",
-	x: -12.5d,
-	y: 2.5d,
+	x: -14.0d,
+	y: 5.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.grains.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"b320933e"
+		"3e5270be"
 	],
 	tasks: [{
 		uid: "d32f0738",

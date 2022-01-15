@@ -10,7 +10,7 @@
 		}
 	},
 	x: 5.0d,
-	y: -2.0d,
+	y: -3.0d,
 	text: [
 		"Clay is an extremely §mbalanced§r useful material for electrolysis.",
 		"All four output Dusts are great.",

@@ -1,5 +1,5 @@
 {
-	x: -21.5d,
+	x: -22.0d,
 	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeforgehammer.subtitle}",

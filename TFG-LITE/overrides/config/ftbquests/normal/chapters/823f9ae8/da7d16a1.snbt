@@ -1,6 +1,6 @@
 {
-	x: 4.5d,
-	y: -5.0d,
+	x: 0.0d,
+	y: -4.0d,
 	shape: "octagon",
 	description: "{tfg.quests.primitive.steelingot.subtitle}",
 	dependencies: [

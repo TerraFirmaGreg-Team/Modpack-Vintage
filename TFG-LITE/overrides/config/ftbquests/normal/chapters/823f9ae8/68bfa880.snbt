@@ -1,6 +1,6 @@
 {
 	x: -14.0d,
-	y: -5.0d,
+	y: -4.0d,
 	description: "{tfg.quests.primitive.bismuthbronzeingot.subtitle}",
 	dependencies: [
 		"fff99863",

@@ -9,8 +9,8 @@
 			}
 		}
 	},
-	x: -29.5d,
-	y: -11.0d,
+	x: -30.0d,
+	y: -10.0d,
 	description: "{tfg.quests.primitive.allTheMolds.subtitle}",
 	dependencies: [
 		"e4dda908"

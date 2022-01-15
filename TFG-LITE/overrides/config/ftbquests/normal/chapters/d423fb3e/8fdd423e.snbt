@@ -1,6 +1,6 @@
 {
-	x: -11.0d,
-	y: -3.5d,
+	x: -12.0d,
+	y: -3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.maincheck.subtitle}",
 	dependencies: [

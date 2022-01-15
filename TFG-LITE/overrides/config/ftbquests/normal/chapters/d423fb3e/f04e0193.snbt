@@ -1,6 +1,6 @@
 {
-	x: -12.5d,
-	y: -20.5d,
+	x: -12.0d,
+	y: -20.0d,
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
 	dependencies: [
 		"445f79e7",

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.goldpile.title}",
 	x: -10.5d,
-	y: -4.0d,
+	y: -3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.goldpile.subtitle}",
 	hide_dependency_lines: true,

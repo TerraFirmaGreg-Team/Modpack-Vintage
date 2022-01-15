@@ -1,8 +1,8 @@
 {
 	title: "Fluid Rigs (Placeholder)",
 	icon: "gregtech:machine 1 1003",
-	x: 4.5d,
-	y: -7.0d,
+	x: 4.0d,
+	y: -8.0d,
 	text: [
 		"§oFluid Rigs are coming up soon in GTCEu, they will pump \"under bedrock\" virtual fluid veins, typically Oil.§r",
 		"",

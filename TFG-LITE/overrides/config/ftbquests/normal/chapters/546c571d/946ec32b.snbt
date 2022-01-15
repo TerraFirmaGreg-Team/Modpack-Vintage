@@ -1,7 +1,7 @@
 {
 	title: "Basic Chemical Bath",
 	icon: "gregtech:machine 1 200",
-	x: -2.5d,
+	x: -3.0d,
 	y: 14.0d,
 	text: [
 		"§oThe Chemical Bath bathes... You thought this was over didn't you?§r",

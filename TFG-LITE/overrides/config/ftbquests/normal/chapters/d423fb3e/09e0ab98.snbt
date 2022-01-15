@@ -1,6 +1,6 @@
 {
-	x: -14.5d,
-	y: -2.5d,
+	x: -16.0d,
+	y: -3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.cokegem.subtitle}",
 	dependencies: [

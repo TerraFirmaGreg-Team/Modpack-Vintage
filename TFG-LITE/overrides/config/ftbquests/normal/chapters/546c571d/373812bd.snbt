@@ -7,8 +7,8 @@
 			FluidName: "glue"
 		}
 	},
-	x: -2.5d,
-	y: 19.5d,
+	x: -3.0d,
+	y: 20.0d,
 	text: [
 		"§oIt is time to stop processing Resin through the Extractor.§r",
 		"",

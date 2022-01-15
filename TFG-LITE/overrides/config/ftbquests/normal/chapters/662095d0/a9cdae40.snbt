@@ -1,8 +1,8 @@
 {
 	title: "Transistors",
 	icon: "gregtech:meta_item_1 1 518",
-	x: 14.5d,
-	y: -7.5d,
+	x: 14.0d,
+	y: -8.0d,
 	text: [
 		"A Circuit Component, that you can now make thanks the §3MV Assembler§r."
 	],

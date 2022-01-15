@@ -1,14 +1,11 @@
 {
-	x: -23.5d,
-	y: 8.0d,
+	x: -24.0d,
+	y: 11.0d,
 	description: "{tfg.quests.primitive.tannedleather.subtitle}",
-	min_required_dependencies: 2,
 	dependencies: [
-		"2816fe72",
 		"9160e91d",
-		"6df7dbf0"
+		"d7f07413"
 	],
-	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "d48ff754",
 		type: "item",

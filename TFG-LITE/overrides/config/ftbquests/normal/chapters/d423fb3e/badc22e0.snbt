@@ -1,5 +1,5 @@
 {
-	x: -12.5d,
+	x: -14.0d,
 	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzealloysmelter.subtitle}",

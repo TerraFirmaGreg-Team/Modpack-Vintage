@@ -1,8 +1,8 @@
 {
 	title: "Advanced Circuit Assembler",
 	icon: "gregtech:machine 1 636",
-	x: 16.75d,
-	y: -5.0d,
+	x: 16.5d,
+	y: -6.0d,
 	text: [
 		"§oI'm running out of things to say for these quests... I hope you get the gist of it, and don't need too many explanations.§r",
 		"",

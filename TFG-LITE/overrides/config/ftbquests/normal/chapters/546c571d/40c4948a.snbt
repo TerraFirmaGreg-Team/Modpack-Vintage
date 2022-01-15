@@ -1,6 +1,6 @@
 {
 	x: 4.0d,
-	y: 9.0d,
+	y: 8.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.steam.steamturbine.subtitle}",
 	dependencies: [

@@ -1,6 +1,6 @@
 {
-	x: -9.5d,
-	y: -6.5d,
+	x: -10.0d,
+	y: -7.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.steam.steelplates.subtitle}",
 	dependencies: [

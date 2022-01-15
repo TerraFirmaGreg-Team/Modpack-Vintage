@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.tin.title}",
 	x: -12.0d,
-	y: -4.0d,
+	y: -3.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.tin.subtitle}",
 	hide_dependency_lines: true,

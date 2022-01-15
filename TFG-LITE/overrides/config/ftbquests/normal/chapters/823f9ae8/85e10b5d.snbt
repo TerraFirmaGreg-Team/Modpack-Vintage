@@ -17,9 +17,9 @@
 			}
 		}
 	},
-	x: -3.0d,
-	y: -5.0d,
-	shape: "gear",
+	x: -6.0d,
+	y: -4.0d,
+	shape: "octagon",
 	description: "{tfg.quests.primitive.ironingot.subtitle}",
 	dependencies: [
 		"1779861a",

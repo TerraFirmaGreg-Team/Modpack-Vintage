@@ -1,8 +1,8 @@
 {
 	title: "Local Brewery selling Booze",
 	icon: "gregtech:machine 1 155",
-	x: 10.5d,
-	y: -10.5d,
+	x: 8.0d,
+	y: -10.0d,
 	text: [
 		"The Brewery can be used to make §aLubricant§r from §aRedstone§r and §aCreosote§r/§aOil§r.",
 		"",

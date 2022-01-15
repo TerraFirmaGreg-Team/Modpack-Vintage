@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.leafmat.title}",
-	x: -27.5d,
-	y: -3.5d,
+	x: -28.0d,
+	y: -2.0d,
 	description: "{tfg.quests.primitive.leafmat.subtitle}",
 	dependencies: [
 		"8fc0c70f"

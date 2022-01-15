@@ -1,6 +1,6 @@
 {
-	x: -27.5d,
-	y: -1.5d,
+	x: -28.0d,
+	y: 0.0d,
 	description: "{tfg.quests.primitive.smallsalt.subtitle}",
 	dependencies: [
 		"263fdccc"

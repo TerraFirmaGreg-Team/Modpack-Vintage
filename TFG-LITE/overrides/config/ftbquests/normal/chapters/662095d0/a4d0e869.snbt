@@ -1,8 +1,8 @@
 {
 	title: "More MV Circuits",
 	icon: "gregtech:meta_item_1 1 624",
-	x: 14.5d,
-	y: -2.5d,
+	x: 14.0d,
+	y: -3.0d,
 	text: [
 		"The MV Circuit for the Integrated Tier."
 	],

@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.fireplace.title}",
 	icon: "tfc:firepit",
-	x: -29.5d,
-	y: -9.0d,
+	x: -30.0d,
+	y: -8.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.fireplace.subtitle}",
 	dependencies: [

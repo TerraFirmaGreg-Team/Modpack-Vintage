@@ -1,0 +1,13 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"dc367096"
+	],
+	hide: true,
+	tasks: [{
+		uid: "42989653",
+		type: "checkmark",
+		title: "ZPM"
+	}]
+}

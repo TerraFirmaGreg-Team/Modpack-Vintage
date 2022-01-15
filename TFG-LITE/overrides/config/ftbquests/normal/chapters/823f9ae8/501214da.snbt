@@ -1,15 +1,14 @@
 {
 	title: "{tfg.quests.primitive.redbluesteelanvil.title}",
-	x: 15.0d,
-	y: -5.0d,
+	x: 12.0d,
+	y: -12.0d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.redbluesteelanvil.subtitle}",
 	dependencies: [
-		"f1e04348",
-		"f3758d79"
+		"ac39bd3f"
 	],
 	dependency_requirement: "one_completed",
-	size: 1.5d,
+	size: 3.0d,
 	tasks: [{
 		uid: "afe6c466",
 		type: "item",

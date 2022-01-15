@@ -1,12 +1,11 @@
 {
 	title: "{tfg.quests.primitive.fruitsAndBerries.title}",
-	x: -12.5d,
-	y: 3.5d,
+	x: -15.0d,
+	y: 5.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.fruitsAndBerries.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"b320933e"
+		"3e5270be"
 	],
 	tasks: [{
 		uid: "49fda19e",

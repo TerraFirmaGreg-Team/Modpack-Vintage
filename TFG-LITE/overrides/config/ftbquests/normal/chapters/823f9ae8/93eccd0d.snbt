@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.blacksteelanvil.title}",
-	x: 9.0d,
+	x: 6.0d,
 	y: -12.0d,
 	shape: "gear",
 	dependencies: [

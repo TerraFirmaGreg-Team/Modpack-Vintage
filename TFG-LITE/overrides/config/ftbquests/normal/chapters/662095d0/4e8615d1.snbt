@@ -1,7 +1,7 @@
 {
 	title: "Polyethylene",
 	icon: "gregtech:meta_plate 1 1012",
-	x: 14.5d,
+	x: 14.0d,
 	y: -12.0d,
 	text: [
 		"§oYour first polymer! Or if you want to be less fancy, just call it plastic, but hide in a corner first.§r",

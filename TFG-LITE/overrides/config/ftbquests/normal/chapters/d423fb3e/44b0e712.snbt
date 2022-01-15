@@ -1,6 +1,6 @@
 {
-	x: -7.5d,
-	y: -6.5d,
+	x: -8.0d,
+	y: -7.0d,
 	description: "{tfg.quests.steam.steelboiler.subtitle}",
 	dependencies: [
 		"e6318f88"

@@ -1,8 +1,8 @@
 {
 	title: "Advanced Mixer",
 	icon: "gregtech:machine 1 471",
-	x: 8.0d,
-	y: -5.5d,
+	x: 9.0d,
+	y: -6.0d,
 	text: [
 		"§oMore complex Alloys require higher Tier machines to mix the Dusts together.§r",
 		"",

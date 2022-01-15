@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.primitive.start.title}",
 	icon: "tfc:grass/granite",
-	x: -33.10714285714287d,
-	y: -5.023809523809497d,
+	x: -32.0d,
+	y: -4.0d,
 	description: "{tfg.quests.primitive.start.subtitle}",
-	size: 3.0d,
+	size: 2.0d,
 	tasks: [{
 		uid: "3e5270be",
 		type: "checkmark",

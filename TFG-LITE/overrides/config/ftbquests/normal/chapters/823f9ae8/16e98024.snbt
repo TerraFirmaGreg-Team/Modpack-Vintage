@@ -1,6 +1,6 @@
 {
-	x: -1.5d,
-	y: -0.5d,
+	x: -5.0d,
+	y: 5.0d,
 	description: "{tfg.quests.primitive.rubbermix.subtitle}",
 	dependencies: [
 		"6cec6109",

@@ -1,6 +1,6 @@
 {
 	x: -22.0d,
-	y: -1.5d,
+	y: 0.0d,
 	description: "{tfg.quests.primitive.woodenbarrel.subtitle}",
 	dependencies: [
 		"1ccd9dd8"

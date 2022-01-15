@@ -1,7 +1,7 @@
 {
 	title: "More LV Circuits",
 	icon: "gregtech:meta_item_1 1 623",
-	x: 14.5d,
+	x: 14.0d,
 	y: 0.0d,
 	text: [
 		"You have unlocked a new Tier of Circuits!",
@@ -14,7 +14,7 @@
 		"§bLore:§r The circuit progression in GTCEu is mostly based on GT5u's progression. However it has been rebalanced to not be as painful, specifically this circuit tier which was a complete bait!"
 	],
 	dependencies: [
-		"495f6775"
+		"b1f7f431"
 	],
 	tasks: [{
 		uid: "c72fac7d",

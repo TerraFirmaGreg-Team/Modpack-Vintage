@@ -1,13 +1,13 @@
 {
 	icon: "appliedenergistics2:quantum_ring",
-	x: -10.5d,
-	y: 4.5d,
+	x: -10.0d,
+	y: 4.0d,
 	shape: "octagon",
 	description: "{tfg.quests.ae2.quantumring.subtitle}",
 	dependencies: [
 		"4363961b"
 	],
-	size: 3.0d,
+	size: 2.0d,
 	tasks: [{
 		uid: "33165a3f",
 		type: "item",

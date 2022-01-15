@@ -9,8 +9,8 @@
 			}
 		}
 	},
-	x: -27.5d,
-	y: -5.0d,
+	x: -28.0d,
+	y: -4.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.pebbles.subtitle}",
 	dependencies: [

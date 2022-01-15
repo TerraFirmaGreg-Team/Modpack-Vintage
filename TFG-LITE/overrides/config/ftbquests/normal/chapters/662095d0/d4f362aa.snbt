@@ -7,8 +7,8 @@
 			FluidName: "light_fuel"
 		}
 	},
-	x: 4.5d,
-	y: -13.5d,
+	x: 6.0d,
+	y: -14.0d,
 	text: [
 		"§oIf you read the previous Quest, this shouldn't be too bad. If you didn't... What are you waiting for!?§r",
 		"",

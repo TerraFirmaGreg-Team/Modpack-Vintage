@@ -1,8 +1,8 @@
 {
 	title: "Silicon Lottery",
 	icon: "gregtech:meta_item_1 1 361",
-	x: 13.0d,
-	y: 0.0d,
+	x: 10.0d,
+	y: -3.0d,
 	text: [
 		"§oJust kidding, Silicon Wafers in this mod are perfectly fungible.§r",
 		"",

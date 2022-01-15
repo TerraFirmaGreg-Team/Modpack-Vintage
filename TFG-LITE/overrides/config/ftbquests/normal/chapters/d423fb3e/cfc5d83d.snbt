@@ -1,6 +1,6 @@
 {
-	x: -11.0d,
-	y: -6.5d,
+	x: -12.0d,
+	y: -7.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.steam.wroughtironplates.subtitle}",
 	dependencies: [

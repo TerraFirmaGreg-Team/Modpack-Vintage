@@ -1,8 +1,8 @@
 {
 	title: "Capacitors",
 	icon: "gregtech:meta_item_1 1 520",
-	x: 19.0d,
-	y: -7.5d,
+	x: 18.0d,
+	y: -8.0d,
 	text: [
 		"A Circuit Component, that you can now make thanks the §3MV Assembler§r."
 	],

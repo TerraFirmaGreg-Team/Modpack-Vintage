@@ -1,7 +1,7 @@
 {
 	title: "Steel Alloys",
 	icon: "gregtech:meta_ingot 1 2036",
-	x: 8.0d,
+	x: 9.0d,
 	y: 0.0d,
 	text: [
 		"§oSteel can form a lot of Alloys... such as Blue Steel, Red Steel, Black Steel... Fun names?§r",

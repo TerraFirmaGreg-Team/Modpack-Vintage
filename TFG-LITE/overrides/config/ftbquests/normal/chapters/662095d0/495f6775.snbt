@@ -1,8 +1,8 @@
 {
 	title: "Laser Engraving",
 	icon: "gregtech:machine 1 561",
-	x: 13.008333333333333d,
-	y: -3.065476190476218d,
+	x: 12.0d,
+	y: -3.0d,
 	text: [
 		"The §aLaser Engraver§r engraves patterns into §9Silicon Wafers§r based on the type of §9Lens§r it is given. After the wafers are engraved, they must be passed through a §9Cutting Machine§r to turn them into components ready to be put into Circuits. Higher tier Engravers can etch more complex wafers for more efficient Circuits.",
 		"",

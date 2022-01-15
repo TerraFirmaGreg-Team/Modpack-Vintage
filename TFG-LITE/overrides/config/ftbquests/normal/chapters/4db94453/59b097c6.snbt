@@ -1,9 +1,9 @@
 {
-	x: 13.5d,
+	x: 13.0d,
 	y: 0.0d,
 	description: "{tfg.quests.ae2.craftingunit.subtitle}",
 	dependencies: [
-		"2e9735e7"
+		"1fb52d2d"
 	],
 	tasks: [{
 		uid: "efbfbd45",

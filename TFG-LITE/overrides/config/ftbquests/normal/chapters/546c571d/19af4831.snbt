@@ -1,8 +1,8 @@
 {
 	title: "Basic Arc Furnace",
 	icon: "gregtech:machine 1 95",
-	x: -6.0d,
-	y: 19.5d,
+	x: -9.0d,
+	y: 18.0d,
 	text: [
 		"§oThe description of the machine refers to metallurgy where Blast Furnace and Arc Furnace serve a similar purpose, not exactly here though!§r",
 		"",

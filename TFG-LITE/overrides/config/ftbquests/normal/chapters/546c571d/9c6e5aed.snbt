@@ -1,7 +1,7 @@
 {
 	title: "Gallium Arsenide",
 	icon: "gregtech:meta_dust 1 351",
-	x: 0.5d,
+	x: 0.0d,
 	y: 18.0d,
 	text: [
 		"Gallium and Arsenic do not exist as Ore!",

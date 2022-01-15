@@ -1,7 +1,7 @@
 {
 	title: "LV Electric Motora",
-	x: 0.5d,
-	y: 9.0d,
+	x: 0.0d,
+	y: 8.0d,
 	shape: "hexagon",
 	text: [
 		"§oOne of the gatekeepers to the LV Age... You are getting close.§r",
@@ -14,9 +14,8 @@
 		"§6Once you complete this Quest and the Electronic Circuit Quest, you are ready to move on to the LV Age.§r"
 	],
 	dependencies: [
-		"f04e0193"
+		"6c622d78"
 	],
-	hide: true,
 	tasks: [{
 		uid: "0e63b2d9",
 		type: "item",

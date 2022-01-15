@@ -1,12 +1,11 @@
 {
-	x: -4.5d,
-	y: 6.5d,
+	x: -4.0d,
+	y: 4.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mecontroller.subtitle}",
 	dependencies: [
 		"7daba4fb"
 	],
-	hide: true,
 	size: 2.0d,
 	tasks: [{
 		uid: "ac825107",

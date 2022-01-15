@@ -1,5 +1,5 @@
 {
-	x: 3.5d,
+	x: 3.0d,
 	y: 4.0d,
 	dependencies: [
 		"bd3500c5"

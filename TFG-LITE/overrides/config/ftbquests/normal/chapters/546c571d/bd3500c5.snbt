@@ -1,11 +1,11 @@
 {
-	x: 3.5d,
-	y: 7.5d,
+	x: 3.0d,
+	y: 6.0d,
 	shape: "hexagon",
+	hide_dependency_lines: true,
 	dependencies: [
-		"0e63b2d9"
+		"6c622d78"
 	],
-	hide: true,
 	tasks: [{
 		uid: "1a5ea7ec",
 		type: "item",

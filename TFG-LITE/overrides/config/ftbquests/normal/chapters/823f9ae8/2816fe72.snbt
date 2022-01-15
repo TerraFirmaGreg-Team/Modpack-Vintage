@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.leather.title}",
-	x: -23.5d,
-	y: 6.0d,
+	x: -24.0d,
+	y: 10.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.leather.subtitle}",
 	dependencies: [

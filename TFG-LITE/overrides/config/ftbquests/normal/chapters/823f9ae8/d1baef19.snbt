@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.primitiveTools.title}",
 	icon: "tfc:stone/knife/metamorphic",
-	x: -27.5d,
-	y: -7.5d,
+	x: -28.0d,
+	y: -6.0d,
 	shape: "hexagon",
 	description: "{tfg.quests.primitive.primitiveTools.subtitle}",
 	dependencies: [

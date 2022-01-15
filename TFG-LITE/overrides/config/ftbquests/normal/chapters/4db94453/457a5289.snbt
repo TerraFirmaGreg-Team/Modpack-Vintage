@@ -1,6 +1,6 @@
 {
-	x: -2.5d,
-	y: 10.0d,
+	x: -2.0d,
+	y: 11.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.spatialport.subtitle}",
 	dependencies: [

@@ -1,8 +1,8 @@
 {
 	title: "First HV Circuits!",
 	icon: "gregtech:meta_item_1 1 625",
-	x: 14.5d,
-	y: -5.0d,
+	x: 14.0d,
+	y: -6.0d,
 	text: [
 		"§oAlright, technically HV Circuit and Stainless Steel means you can move to HV... but let's not rush things.§r",
 		"",
@@ -10,7 +10,8 @@
 	],
 	dependencies: [
 		"a4d0e869",
-		"a9cdae40"
+		"a9cdae40",
+		"1115e5d0"
 	],
 	tasks: [{
 		uid: "9ca2bc20",

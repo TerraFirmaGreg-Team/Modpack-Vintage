@@ -1,8 +1,9 @@
 {
 	title: "Multiblock Tanks",
 	icon: "gregtech:machine 1 1599",
-	x: 6.5d,
-	y: 10.5d,
+	x: 6.0d,
+	y: 10.0d,
+	shape: "pentagon",
 	text: [
 		"Multiblock Tanks can store a larger amount of fluid, but aren't portable like Drums are. The §6Steel Multiblock Tank§r holds §a1,000,000 mB§r of fluid.",
 		"",
@@ -15,10 +16,10 @@
 		"",
 		"These optional yet fancy Tanks are alternatives to fluid storage until you unlock the greater §9Super Tanks§r."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"0e63b2d9"
+		"6c622d78"
 	],
-	hide: true,
 	tasks: [{
 		uid: "ac069e22",
 		type: "item",

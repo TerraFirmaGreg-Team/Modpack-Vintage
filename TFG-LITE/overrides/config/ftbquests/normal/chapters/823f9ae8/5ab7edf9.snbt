@@ -1,16 +1,12 @@
 {
 	title: "{tfg.quests.primitive.softbucket.title}",
-	x: -20.5d,
-	y: 8.0d,
-	shape: "square",
+	x: -22.0d,
+	y: 13.0d,
 	description: "{tfg.quests.primitive.softbucket.subtitle}",
-	min_required_dependencies: 4,
 	dependencies: [
 		"06da47f2",
-		"2816fe72",
 		"9160e91d",
-		"24382b4f",
-		"6df7dbf0"
+		"a0270355"
 	],
 	tasks: [{
 		uid: "1918b2b6",

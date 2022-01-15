@@ -1,6 +1,6 @@
 {
-	x: -2.5d,
-	y: -5.0d,
+	x: -3.0d,
+	y: -7.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.fluxdense.subtitle}",
 	dependencies: [

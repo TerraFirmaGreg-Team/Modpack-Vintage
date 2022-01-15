@@ -1,8 +1,8 @@
 {
 	title: "Advanced Cutting Machine",
 	icon: "gregtech:machine 1 246",
-	x: 10.913095238095238d,
-	y: -0.017857142857174324d,
+	x: 10.5d,
+	y: 0.0d,
 	text: [
 		"§oMore upgrades...! you will need the MV Cutting Machine, for... MV recipes, duh!§r",
 		"",

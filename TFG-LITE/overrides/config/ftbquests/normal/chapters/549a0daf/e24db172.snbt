@@ -1,0 +1,17 @@
+{
+	title: "Darmstadtium",
+	icon: "gregtech:meta_ingot 1 27",
+	x: 1.5d,
+	y: 0.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"deb9f36d"
+	],
+	tasks: [{
+		uid: "24644284",
+		type: "fluid",
+		fluid: "darmstadtium"
+	}]
+}

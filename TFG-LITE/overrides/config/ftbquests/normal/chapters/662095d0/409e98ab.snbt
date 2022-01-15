@@ -1,8 +1,8 @@
 {
 	title: "Advanced Electrolyzer",
 	icon: "gregtech:machine 1 276",
-	x: 5.5d,
-	y: -3.5d,
+	x: 6.0d,
+	y: -4.0d,
 	text: [
 		"§oRemember the Ore Processing Quest referencing the Electrolyzer? It told you that you had to wait until MV, so here we are.§r",
 		"",

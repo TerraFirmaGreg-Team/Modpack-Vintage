@@ -141,13 +141,10 @@ for item in RemoveItemRecipes{
 //Убирание рецептов
 recipes.removeByRecipeName("appliedenergistics2:decorative/quartz_block_pure");
 recipes.removeByRecipeName("appliedenergistics2:tools/misctools_charged_staff");
-
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
-
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
-
 recipes.removeByRecipeName("appliedenergistics2:network/crafting/molecular_assembler");
 recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix_clean");
 recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix");
@@ -331,13 +328,13 @@ for i, cable in colored_SmartCable {
 }
 
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16>)
+    .inputs(<appliedenergistics2:part:36>)
 		.inputs([<ore:dustRedstone> * 2])
     .circuit(24)
     .fluidInputs([<liquid:glowstone> * 144])
     .outputs(<appliedenergistics2:part:56>)
-    .duration(150)
-    .EUt(8)
+    .duration(100)
+    .EUt(30)
     .buildAndRegister();
 //Dense Smart Cable
 var colored_DenseSmartCable = [
@@ -427,7 +424,7 @@ for i, cable in colored_DenseCoveredCable {
         .buildAndRegister();
 }
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16> * 4)
+    .inputs(<appliedenergistics2:part:36> * 4)
     .circuit(24)
     .fluidInputs([<liquid:rubber> * 576])
     .outputs(<appliedenergistics2:part:516>)
@@ -436,7 +433,7 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16> * 4)
+    .inputs(<appliedenergistics2:part:36> * 4)
     .circuit(24)
     .fluidInputs([<liquid:styrene_butadiene_rubber> * 288])
     .outputs(<appliedenergistics2:part:516>)
@@ -445,7 +442,7 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16> * 4)
+    .inputs(<appliedenergistics2:part:36> * 4)
     .circuit(24)
     .fluidInputs([<liquid:silicone_rubber> * 144])
     .outputs(<appliedenergistics2:part:516>)

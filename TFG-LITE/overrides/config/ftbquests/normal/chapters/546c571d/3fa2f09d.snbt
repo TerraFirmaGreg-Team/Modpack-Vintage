@@ -1,8 +1,8 @@
 {
 	title: "First MV Circuits!",
 	icon: "gregtech:meta_item_1 1 622",
-	x: 7.867857142857119d,
-	y: 19.500000000000057d,
+	x: 6.0d,
+	y: 20.0d,
 	text: [
 		"§oMV Circuits! Does this mean MV Age...? Well, do you have Aluminium?§r",
 		"",

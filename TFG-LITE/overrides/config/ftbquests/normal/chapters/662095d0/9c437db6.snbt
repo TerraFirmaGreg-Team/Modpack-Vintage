@@ -1,7 +1,7 @@
 {
 	title: "Overclocking",
-	x: 5.5d,
-	y: -5.5d,
+	x: 6.0d,
+	y: -6.0d,
 	text: [
 		"§oNow you might wonder, why is every machine duplicated across all tiers? Because you might want them for overclocking.§r",
 		"",
@@ -23,9 +23,8 @@
 		"GTCEu has a config to select the Overclock speed bonus, it is a very sensible value."
 	],
 	dependencies: [
-		"0e6d918f"
+		"40d77c21"
 	],
-	hide: true,
 	tasks: [{
 		uid: "c1e27c23",
 		type: "checkmark"

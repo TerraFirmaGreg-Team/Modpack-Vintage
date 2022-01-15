@@ -1,7 +1,7 @@
 {
 	title: "Plastic Boards",
 	icon: "gregtech:meta_item_1 1 403",
-	x: 19.0d,
+	x: 18.0d,
 	y: -12.0d,
 	text: [
 		"At this point, you have all the tools available to you to make Plastic Boards.",

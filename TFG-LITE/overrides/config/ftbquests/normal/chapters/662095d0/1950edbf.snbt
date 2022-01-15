@@ -1,8 +1,8 @@
 {
 	title: "Pyrolyse Oven",
 	icon: "gregtech:machine 1 1004",
-	x: 5.5d,
-	y: -7.5d,
+	x: 6.0d,
+	y: -8.0d,
 	text: [
 		"§oThe Pyrolyse Oven processes organic products by thermal decomposition in an inert environment.§r",
 		"",

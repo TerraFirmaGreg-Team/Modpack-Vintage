@@ -323,6 +323,7 @@ tfg.quests.primitive.greenhouseblocks.subtitle=&aThese blocks + the greenhouse c
 tfg.quests.primitive.Grindstone.subtitle=&aNow, when crushing ores, especially GT ores, you can get a huge resource yield.
 
 tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much faster through the bushes.
+
 ##################################################################################################################################
 ########################################################## Steam Phase ###########################################################
 ##################################################################################################################################
@@ -359,6 +360,12 @@ tfg.quests.steam.bronzeplates.subtitle=&aWith the help of these plates, you can 
 
 tfg.quests.steam.wroughtironplates.title=Forged iron plates
 tfg.quests.steam.wroughtironplates.subtitle=&aOpen access to improved solar and lava boilers.
+
+tfg.quests.steam.fluidpipe.title=Fluid pipe
+tfg.quests.steam.fluidpipe.disc=§oTo not confound with a certain man. §rThe fluid pipes have been reworked in GTCEu, and they now work really well. The one issue they have is the limited throughput, which you may encounter as you upgrade to more and more boilers. Potin Fluid Pipes have a very §6high Throughput§r, for the material tier and cost, you may use this. §9Note:§r GT6-style Pipes are §denabled§r. It means that placing Pipes connect them only to the block they were placed against. To open more connection, use your §5Wrench§r on the grid.
+
+tfg.quests.steam.itempipe.title=Item Pipes
+tfg.quests.steam.itempipe.desc=Item Pipes are a simple yet very effective way to move items around §dinstantly§r, but with throughput limitations. Higher tier pipes provide ridiculously large throughput, a rare sight in modded Minecraft! Item Pipes §9do not pull§r, but they will push any item inserted into them to other connected inventories, prioritizing §9the closest§r first. The priority mechanics are §omore complicated§r, so skip ahead if you are not interested. A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion. §9Restrictive Pipes§r typically have the lowest Priority for insertion due to their higher Routing Value. Right now, you can use them in combination with §6Hoppers§r, but you will also be able to use them with Conveyor Modules, Output Buses, and machine Auto-Outputs all in the LV age. You can use your Wrench to disconnect a side of a pipe.
 
 tfg.quests.steam.steelplates.title=Steel plates
 tfg.quests.steam.steelplates.subtitle=&aThese plates open access to an improved steam hammer.
@@ -420,6 +427,26 @@ tfg.quests.hv.era.title=&dElectricity HV - Era 5
 ########################################################## EV Phase ##############################################################
 ##################################################################################################################################
 tfg.quests.ev.era.title=&dElectricity EV - Era 6
+
+##################################################################################################################################
+########################################################## IV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.iv.era.title=&dElectricity IV - Era 7
+
+##################################################################################################################################
+########################################################## LuV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.luv.era.title=&dElectricity LuV - Era 8
+
+##################################################################################################################################
+########################################################## ZPM Phase ##############################################################
+##################################################################################################################################
+tfg.quests.zpm.era.title=&dElectricity ZPM - Era 9
+
+##################################################################################################################################
+########################################################## UV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.uv.era.title=&dElectricity UV - Era 10
 
 ##################################################################################################################################
 ########################################################## AE2 Phase #############################################################

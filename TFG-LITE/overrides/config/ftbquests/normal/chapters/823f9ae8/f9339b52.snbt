@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.ironanvil.title}",
-	x: -3.0d,
+	x: -6.0d,
 	y: -12.0d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.ironanvil.subtitle}",

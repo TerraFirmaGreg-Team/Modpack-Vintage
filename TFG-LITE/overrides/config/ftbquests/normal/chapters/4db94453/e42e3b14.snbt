@@ -1,5 +1,5 @@
 {
-	x: 1.5d,
+	x: 2.0d,
 	y: 0.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.fluxseed.subtitle}",

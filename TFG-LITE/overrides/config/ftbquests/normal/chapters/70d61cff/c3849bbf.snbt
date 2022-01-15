@@ -1,0 +1,23 @@
+{
+	title: "Epichlorohydrin",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "epichlorohydrin"
+		}
+	},
+	x: -7.0d,
+	y: 3.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"2f970f5b"
+	],
+	tasks: [{
+		uid: "42e2aeff",
+		type: "fluid",
+		fluid: "epichlorohydrin"
+	}]
+}

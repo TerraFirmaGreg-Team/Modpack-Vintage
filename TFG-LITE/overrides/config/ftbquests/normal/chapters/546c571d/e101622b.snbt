@@ -1,12 +1,11 @@
 {
-	x: 9.5d,
-	y: 9.0d,
+	x: 9.0d,
+	y: 8.0d,
 	dependencies: [
 		"fcfd072d",
 		"0c6d2117",
 		"9571e4b2"
 	],
-	hide: true,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "35b8b22a",

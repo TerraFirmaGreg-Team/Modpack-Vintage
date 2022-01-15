@@ -1,8 +1,8 @@
 {
 	title: "200IQ",
 	icon: "gregtech:meta_item_1 1 293",
-	x: 6.0d,
-	y: -2.0d,
+	x: 7.0d,
+	y: -3.0d,
 	text: [
 		"§oThis quest acts as a small tutorial to automate the Electrolyzer easily!§r",
 		"",

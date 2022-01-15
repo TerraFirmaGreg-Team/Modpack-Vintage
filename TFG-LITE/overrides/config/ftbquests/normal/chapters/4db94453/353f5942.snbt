@@ -1,6 +1,6 @@
 {
 	x: 0.0d,
-	y: 8.5d,
+	y: 10.0d,
 	shape: "square",
 	description: "{tfg.quests.ae2.mestorage.subtitle}",
 	dependencies: [

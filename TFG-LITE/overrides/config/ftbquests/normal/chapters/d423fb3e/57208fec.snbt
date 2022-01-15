@@ -1,6 +1,6 @@
 {
-	x: -12.5d,
-	y: -3.5d,
+	x: -14.0d,
+	y: -4.0d,
 	description: "{tfg.quests.steam.cokeoven.subtitle}",
 	dependencies: [
 		"8fdd423e"

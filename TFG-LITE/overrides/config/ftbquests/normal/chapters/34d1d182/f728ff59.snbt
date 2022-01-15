@@ -6,7 +6,7 @@
 	shape: "rsquare",
 	description: "{tfg.quests.space.start.subtitle}",
 	dependencies: [
-		"e5a309e3"
+		"15905639"
 	],
 	hide: true,
 	size: 2.0d,

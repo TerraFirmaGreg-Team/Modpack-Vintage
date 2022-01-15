@@ -1,7 +1,7 @@
 {
 	title: "Best MV Circuits",
 	icon: "gregtech:meta_item_1 1 628",
-	x: 19.0d,
+	x: 18.0d,
 	y: -4.0d,
 	text: [
 		"§6The best MV Circuits§r! You will be making these for the remainder of the game.",

@@ -7,7 +7,7 @@
 			FluidName: "ethylene"
 		}
 	},
-	x: 10.5d,
+	x: 10.0d,
 	y: -12.0d,
 	text: [
 		"§oOne of many hydrocarbons, congratulations on making it here!§r",

@@ -1,8 +1,8 @@
 {
 	title: "Polyvinyl Chloride",
 	icon: "gregtech:meta_plate 1 1007",
-	x: 16.25d,
-	y: -13.75d,
+	x: 15.0d,
+	y: -14.0d,
 	text: [
 		"§oAlright, you have made a Polymer already, how about you make another one?§r",
 		"",

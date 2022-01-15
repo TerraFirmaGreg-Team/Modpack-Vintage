@@ -3,7 +3,7 @@
 	y: 1.0d,
 	shape: "hexagon",
 	dependencies: [
-		"2e9735e7"
+		"1fb52d2d"
 	],
 	tasks: [{
 		uid: "fdd7cba0",

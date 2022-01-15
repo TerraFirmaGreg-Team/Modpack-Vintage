@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.kaolinitepile.title}",
-	x: 0.5d,
-	y: 2.0d,
+	x: -3.4845238095236937d,
+	y: 6.98214285714279d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
 	hide_dependency_lines: true,

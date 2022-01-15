@@ -1,7 +1,7 @@
 {
 	title: "Basic Electromagnetic Separator",
 	icon: "gregtech:machine 1 290",
-	x: -4.5d,
+	x: -5.0d,
 	y: 16.0d,
 	text: [
 		"A rarely used machine. It uses magnetic fields to separate some Magnetic ores and gain additional §6Byproducts§r you would not obtain otherwise."

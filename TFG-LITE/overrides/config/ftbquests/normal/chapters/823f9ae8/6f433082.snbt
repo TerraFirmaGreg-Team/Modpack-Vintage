@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.fuelNumber1.title}",
-	x: -31.5d,
-	y: -7.5d,
+	x: -32.0d,
+	y: -7.0d,
 	shape: "octagon",
 	description: "{tfg.quests.primitive.fuelNumber1.subtitle}",
 	dependencies: [

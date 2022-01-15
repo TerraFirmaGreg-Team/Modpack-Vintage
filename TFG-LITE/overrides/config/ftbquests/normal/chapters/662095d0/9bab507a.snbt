@@ -1,8 +1,8 @@
 {
 	title: "Biomass",
 	icon: "gregtech:meta_item_1 1 439",
-	x: 5.5d,
-	y: -10.5d,
+	x: 6.0d,
+	y: -10.0d,
 	text: [
 		"§oTurning plant matter into fuel? That doesn't sound industrial enough!§r",
 		"",

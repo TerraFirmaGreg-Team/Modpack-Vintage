@@ -1,7 +1,7 @@
 {
 	title: "Basic Thermal Centrifuge",
 	icon: "gregtech:machine 1 605",
-	x: -4.5d,
+	x: -5.0d,
 	y: 14.0d,
 	text: [
 		"This Thermal Centrifuge is the most energy hungry out of the Ore Processing machines.",

@@ -1,8 +1,8 @@
 {
 	title: "Evil Circuit Board",
 	icon: "gregtech:meta_item_1 1 402",
-	x: 0.5d,
-	y: 19.5d,
+	x: 0.0d,
+	y: 20.0d,
 	text: [
 		"§oI'm not sure why it's called \"Good\" Circuit Board, as I consider it rather evil to craft.§r",
 		"",

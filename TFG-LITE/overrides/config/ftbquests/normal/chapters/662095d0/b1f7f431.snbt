@@ -1,0 +1,35 @@
+{
+	title: "Best ULV Circuits",
+	icon: "gregtech:meta_item_1 1 626",
+	x: 12.0d,
+	y: 0.0d,
+	text: [
+		"You can engrave §9Simple Systems on Chip (SoC)§r to make the cheapest §8ULV§r circuits, as well as §b1k Fluid Storage§r in §5EV§r Age.",
+		"",
+		"§8ULV§r circuits are used in some AE2 recipes, such as the §aAnnihilation Core§r and §aFormation Core§r."
+	],
+	dependencies: [
+		"495f6775"
+	],
+	tasks: [{
+		uid: "45000bde",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 571"
+		}]
+	},
+	{
+		uid: "eae7c6d4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 596"
+		}]
+	},
+	{
+		uid: "ca5fa6ac",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 626"
+		}]
+	}]
+}

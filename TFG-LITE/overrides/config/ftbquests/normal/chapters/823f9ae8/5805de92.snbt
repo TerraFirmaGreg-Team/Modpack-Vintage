@@ -1,12 +1,11 @@
 {
 	title: "{tfg.quests.primitive.redbluesteelpickaxe.title}",
-	x: 12.0d,
-	y: -5.0d,
+	x: 16.0d,
+	y: -4.0d,
 	description: "{tfg.quests.primitive.redbluesteelpickaxe.subtitle}",
 	dependencies: [
 		"f3758d79",
-		"f1e04348",
-		"f7244dc3"
+		"f1e04348"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

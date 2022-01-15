@@ -1,6 +1,7 @@
 {
 	x: 5.0d,
-	y: 10.5d,
+	y: 10.0d,
+	shape: "pentagon",
 	description: "{tfg.quests.steam.bigbronzeboiler.subtitle}",
 	dependencies: [
 		"40c4948a"

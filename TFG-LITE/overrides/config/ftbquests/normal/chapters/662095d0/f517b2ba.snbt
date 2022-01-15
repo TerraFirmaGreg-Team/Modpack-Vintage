@@ -7,8 +7,8 @@
 			FluidName: "severely_steamcracked_light_fuel"
 		}
 	},
-	x: 10.5d,
-	y: -13.5d,
+	x: 10.0d,
+	y: -14.0d,
 	text: [
 		"§oFuel and Oil cracking can get complicated. But let's not get too bothered about it. It's mostly done to get hydrocarbons.§r",
 		"",

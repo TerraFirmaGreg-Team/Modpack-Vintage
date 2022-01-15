@@ -1,8 +1,8 @@
 {
 	title: "Advanced Extruder",
 	icon: "gregtech:machine 1 321",
-	x: 3.5988095238095212d,
-	y: -5.47500000000003d,
+	x: 4.0d,
+	y: -6.0d,
 	text: [
 		"§oI hope at no point you made the LV Extruder, because only the MV Extruder is actually useful. If you did, I suggest you recycle it through the Arc Furnace.§r",
 		"",

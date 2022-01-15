@@ -1,8 +1,8 @@
 {
 	title: "Super Tank",
 	icon: "gregtech:machine 1 1575",
-	x: 12.75d,
-	y: -13.75d,
+	x: 13.0d,
+	y: -14.0d,
 	text: [
 		"§oSuper Tanks are OP!! No but seriously.§r",
 		"",

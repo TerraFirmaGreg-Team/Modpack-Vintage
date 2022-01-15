@@ -1,5 +1,5 @@
 {
-	x: 3.5d,
+	x: 4.0d,
 	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.wirelessbooster.subtitle}",

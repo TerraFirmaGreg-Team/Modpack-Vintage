@@ -1,10 +1,9 @@
 {
-	x: -25.5d,
-	y: 10.0d,
+	x: -26.0d,
+	y: 13.0d,
 	description: "{tfg.quests.primitive.spindle.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"8fc0c70f"
+		"5dd94e80"
 	],
 	tasks: [{
 		uid: "7f7c8e53",
