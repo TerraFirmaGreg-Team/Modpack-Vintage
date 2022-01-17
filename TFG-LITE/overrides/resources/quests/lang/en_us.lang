@@ -320,6 +320,9 @@ tfg.quests.primitive.HorseChoppingBlock.subtitle=&aNow when cutting wood, you ca
 tfg.quests.primitive.greenhouseblocks.title=Blocks for the construction of a greenhouse
 tfg.quests.primitive.greenhouseblocks.subtitle=&aThese blocks + the greenhouse controller, which goes further along the quest, you will need to make a greenhouse and grow plants even in winter.
 
+tfg.quests.primitive.sulfurdust.title=Sulfur
+tfg.quests.primitive.sulfurdust.subtitle=&aIt tastes bitter.
+
 tfg.quests.primitive.Grindstone.subtitle=&aNow, when crushing ores, especially GT ores, you can get a huge resource yield.
 
 tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much faster through the bushes.
@@ -524,7 +527,7 @@ tfg.quests.ae2.quantumring.subtitle=Interplanetary access to the system.
 ##################################################################################################################################
 ########################################################## Space Phase ###########################################################
 ##################################################################################################################################
-tfg.quests.space.era.title=&dSpace - Era 7
+tfg.quests.space.era.title=&dSpace - Era 7.5
 
 tfg.quests.space.start.title=Let's hope there's xenos to purge.
 tfg.quests.space.start.subtitle=The Company denies all claims of using stock planets for system construction. Thinking otherwise is treason. Treason is punishable by death.

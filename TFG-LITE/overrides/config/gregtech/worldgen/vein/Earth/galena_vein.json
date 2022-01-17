@@ -7,6 +7,7 @@
     "type": "surface_rock",
     "material": "galena"
   },
+  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawSedimentary"],
   "generator": {
     "type": "layered",
     "radius": [

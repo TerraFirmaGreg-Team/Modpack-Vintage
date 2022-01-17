@@ -2,6 +2,7 @@
 	x: -5.0d,
 	y: 9.0d,
 	shape: "diamond",
+	description: "{tfg.quests.primitive.sulfurdust.subtitle}",
 	hide_dependency_lines: true,
 	dependencies: [
 		"b320933e"
@@ -9,6 +10,7 @@
 	tasks: [{
 		uid: "14fbc66f",
 		type: "item",
+		title: "{tfg.quests.primitive.sulfurdust.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

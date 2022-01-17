@@ -11,19 +11,9 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "TFG-1.12.2-Lite",
-  "version": "R3.0.4",
+  "version": "R3.0.5",
   "author": "",
   "files": [
-    {
-      "projectID": 240633,
-      "fileID": 2546769,
-      "required": true
-    },
-    {
-      "projectID": 78608,
-      "fileID": 2577310,
-      "required": true
-    },
     {
       "projectID": 228525,
       "fileID": 2836960,
@@ -31,7 +21,7 @@
     },
     {
       "projectID": 408853,
-      "fileID": 3530681,
+      "fileID": 3608582,
       "required": true
     },
     {
@@ -120,11 +110,6 @@
       "required": true
     },
     {
-      "projectID": 238551,
-      "fileID": 2744766,
-      "required": true
-    },
-    {
       "projectID": 237167,
       "fileID": 2985811,
       "required": true
@@ -141,7 +126,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 3582982,
+      "fileID": 3599507,
       "required": true
     },
     {
@@ -440,6 +425,11 @@
       "required": true
     },
     {
+      "projectID": 240633,
+      "fileID": 2546769,
+      "required": true
+    },
+    {
       "projectID": 229002,
       "fileID": 2735197,
       "required": true
@@ -470,11 +460,6 @@
       "required": true
     },
     {
-      "projectID": 296045,
-      "fileID": 3222659,
-      "required": true
-    },
-    {
       "projectID": 373051,
       "fileID": 3302641,
       "required": true
@@ -492,6 +477,11 @@
     {
       "projectID": 284973,
       "fileID": 3421902,
+      "required": true
+    },
+    {
+      "projectID": 78608,
+      "fileID": 2577310,
       "required": true
     },
     {
@@ -517,6 +507,11 @@
     {
       "projectID": 289412,
       "fileID": 3156637,
+      "required": true
+    },
+    {
+      "projectID": 243707,
+      "fileID": 3583688,
       "required": true
     },
     {
@@ -611,7 +606,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 3582970,
+      "fileID": 3599491,
       "required": true
     },
     {

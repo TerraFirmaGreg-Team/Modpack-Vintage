@@ -1,21 +1,4 @@
 {
-	icon: {
-		id: "tfc:metal/tuyere/bismuth_bronze",
-		ForgeCaps: {
-			Parent: {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
 	x: -2.0d,
 	y: -12.0d,
 	description: "{tfg.quests.primitive.tuyere.subtitle}",
@@ -26,23 +9,6 @@
 		uid: "ee51bb6a",
 		type: "item",
 		title: "{tfg.quests.primitive.tuyere.title}",
-		icon: {
-			id: "tfc:metal/tuyere/bismuth_bronze",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
 		items: [{
 			id: "tfc:metal/tuyere/bismuth_bronze",
 			ForgeCaps: {
