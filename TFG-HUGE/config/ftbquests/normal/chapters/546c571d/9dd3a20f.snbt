@@ -1,0 +1,17 @@
+{
+	x: 12.0d,
+	y: 8.0d,
+	shape: "pentagon",
+	dependencies: [
+		"5af91f1c",
+		"65e73e54"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0815241d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1001"
+		}]
+	}]
+}

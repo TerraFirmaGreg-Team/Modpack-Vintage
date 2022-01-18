@@ -1,0 +1,34 @@
+{
+	title: "300IQ",
+	icon: "gregtech:meta_item_1 1 292",
+	x: -1.4476190476190283d,
+	y: -2.8511904761904816d,
+	shape: "circle",
+	text: [
+		"§oThis is a guide on how to automatically route §lall§r§o your Hot Ingots to your Vacuum Freezer while keeping everything automated perfectly fine.§r",
+		"",
+		"The cheap way would be to use filters, and manually add Hot Ingots one by one... That's boring! I don't like being bored, let's do something much better.",
+		"",
+		"",
+		"Install an §aOre Dictionary Filter§r Cover on the §3Input Bus§r of your §3Vacuum Freezer§r, open it and set to §dingotHot*§r whitelist.",
+		"From here, you have the option to route either with §9Item Pipes§r or §9AE2§r.",
+		"",
+		"§9With Item Pipes§r, connect the output of your §3EBF(s)§r to the input of your §3Vacuum Freezer§r and the output dump (Chest, Crate, or ME Interface).",
+		"Make sure the Cover is on the face the pipe is connected. You can also have a §dRestrictive Pipe§r in front of the output dump to ensure the Vacuum Freezer will be prioritized.",
+		"",
+		"§9With AE2§r, place a §3ME Storage Bus§r on top of your Cover and set to very §dhigh priority§r. Any hot ingots entering your ME system will automatically be moved into the Vacuum Freezer.",
+		"",
+		"",
+		"§l§9Note:§r If you wish to know more Ore Dictionaries for more automation setups, you can enable \"§dOre Dictionary Tooltips§r\" in the config options for \"§dJEI Integration§r\", or with admin permissions, use the command §d/ct hand§r."
+	],
+	dependencies: [
+		"b3d40b60"
+	],
+	tasks: [{
+		uid: "665e93a1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 292"
+		}]
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.tin.title}",
+	x: -12.0d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.tin.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "92f4b7cf",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyTin"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinyTin"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "{tfg.quests.primitive.file.title}",
+	x: -15.0d,
+	y: -6.0d,
+	description: "{tfg.quests.primitive.file.subtitle}",
+	dependencies: [
+		"734b42fd"
+	],
+	tasks: [{
+		uid: "9530d4b2",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 9s,
+			tag: {
+				GT.ToolStats: {
+					Material: "copper"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

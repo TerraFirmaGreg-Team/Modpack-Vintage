@@ -1,0 +1,16 @@
+{
+	x: -15.0d,
+	y: 9.0d,
+	description: "{tfg.quests.primitive.Grindstone.subtitle}",
+	dependencies: [
+		"ffb7544a"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "9d043b37",
+		type: "item",
+		items: [{
+			item: "horsepower:grindstone"
+		}]
+	}]
+}

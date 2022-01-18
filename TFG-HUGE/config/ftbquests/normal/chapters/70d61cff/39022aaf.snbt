@@ -1,0 +1,23 @@
+{
+	title: "Gasoline",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "gasoline"
+		}
+	},
+	x: -7.0d,
+	y: 1.0d,
+	text: [
+		"Gasoline is extremely powerful combustion fuel. It's better than Cetane Diesel!"
+	],
+	dependencies: [
+		"1f0de8ce"
+	],
+	tasks: [{
+		uid: "c261e37d",
+		type: "fluid",
+		fluid: "gasoline"
+	}]
+}

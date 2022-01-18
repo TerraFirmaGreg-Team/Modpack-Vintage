@@ -1,0 +1,32 @@
+{
+	title: "Nitric Acid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "nitric_acid"
+		}
+	},
+	x: 6.0d,
+	y: 2.0d,
+	shape: "circle",
+	text: [
+		"§oNitric Acid does not eat your skin unlike most acids, but its fumes are extremely toxic! It is also a very potent oxidizer. Extremely dangerous.§r",
+		"",
+		"Disregarding the §3Large Chemical Reactor§r exclusive recipes, there is one way to make §eNitric Acid§r.",
+		"You will need §aNitrogen Dioxide§r, which is acquired is small §3Chemical Reactor§r and requires §1Ammonia§r, §lor§r obtained in one step in the §3LCR§r.",
+		"",
+		"The direct §3LCR§r recipes are a lot more §4energy hungry§r and enforce §aHydrogen production§r.",
+		"",
+		"What I recommend the most is making §aNitrogen Dioxide§r in the §3LCR§r, thanks to perfect overclocking. This leaves you with one single step of adding water."
+	],
+	dependencies: [
+		"ed948aa4",
+		"7354e826"
+	],
+	tasks: [{
+		uid: "011fee7a",
+		type: "fluid",
+		fluid: "nitric_acid"
+	}]
+}

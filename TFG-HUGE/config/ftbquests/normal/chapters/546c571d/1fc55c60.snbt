@@ -1,0 +1,15 @@
+{
+	x: -1.0d,
+	y: 5.0d,
+	description: "{tfg.quests.steam.honeydrop.subtitle}",
+	dependencies: [
+		"d2b26076"
+	],
+	tasks: [{
+		uid: "9f4d7037",
+		type: "item",
+		items: [{
+			item: "forestry:honey_drop"
+		}]
+	}]
+}

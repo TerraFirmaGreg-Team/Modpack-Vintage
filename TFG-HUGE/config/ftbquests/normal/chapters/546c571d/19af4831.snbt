@@ -1,0 +1,68 @@
+{
+	title: "Basic Arc Furnace",
+	icon: "gregtech:machine 1 95",
+	x: -9.0d,
+	y: 18.0d,
+	text: [
+		"§oThe description of the machine refers to metallurgy where Blast Furnace and Arc Furnace serve a similar purpose, not exactly here though!§r",
+		"",
+		"The Arc Furnace uses a little bit of Oxygen to smelt items in a different fashion than Furnaces.",
+		"",
+		"You can use it to make easier §aWrought Iron§r, §aGlass§r, and gain access to §aAnnealed Copper§r.",
+		"It can also recycle various components and machines back to their original material.",
+		"",
+		"",
+		"§bLore:§r Previous versions had both the Arc Furnace and the Plasma Arc Furnace. But why not use one machine for both? That's what we decided, but then we decided to remove one of the two plasma recipes. And then the other plasma recipe... Enough rambling that just means the Plasma Arc Furnace is gone. RIP."
+	],
+	dependencies: [
+		"422502ff"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "be9f400f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 95"
+		}]
+	},
+	{
+		uid: "87ddf729",
+		type: "item",
+		items: [{
+			item: "minecraft:glass 32"
+		}],
+		count: 32L
+	},
+	{
+		uid: "7d1c33da",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_ingot",
+			Count: 16b,
+			Damage: 335s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "55d4205b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 16 252"
+		}],
+		count: 16L
+	}]
+}

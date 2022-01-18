@@ -1,0 +1,23 @@
+{
+	title: "Best MV Circuits",
+	icon: "gregtech:meta_item_1 1 628",
+	x: 18.0d,
+	y: -4.0d,
+	text: [
+		"§6The best MV Circuits§r! You will be making these for the remainder of the game.",
+		"",
+		"Eventually (in IV Age), they will become even cheaper."
+	],
+	dependencies: [
+		"5ee4ef44",
+		"8a087468",
+		"08970ed3"
+	],
+	tasks: [{
+		uid: "d3db9b05",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 628"
+		}]
+	}]
+}

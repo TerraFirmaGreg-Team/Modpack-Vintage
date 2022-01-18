@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.kaolinitepile.title}",
+	x: -3.4845238095236937d,
+	y: 6.98214285714279d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "ae706ed9",
+		type: "item",
+		items: [{
+			item: "tfc:powder/kaolinite"
+		}]
+	}]
+}

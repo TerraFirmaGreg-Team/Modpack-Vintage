@@ -1,0 +1,27 @@
+{
+	title: "The Church of Diesel",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 78s,
+		tag: {
+			Fluid: {
+				Amount: 1000,
+				FluidName: "diesel"
+			}
+		}
+	},
+	x: 4.0d,
+	y: -14.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"d4f362aa"
+	],
+	tasks: [{
+		uid: "efc645b7",
+		type: "fluid",
+		fluid: "fuel",
+		amount: 30000
+	}]
+}

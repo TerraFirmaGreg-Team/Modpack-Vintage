@@ -1,0 +1,33 @@
+{
+	title: "Acetone",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "acetone"
+		}
+	},
+	x: -5.0d,
+	y: 1.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"2f970f5b"
+	],
+	tasks: [{
+		uid: "57a418ef",
+		type: "fluid",
+		fluid: "acetic_acid"
+	},
+	{
+		uid: "c09ea549",
+		type: "fluid",
+		fluid: "dissolved_calcium_acetate"
+	},
+	{
+		uid: "e78ffa8e",
+		type: "fluid",
+		fluid: "acetone"
+	}]
+}

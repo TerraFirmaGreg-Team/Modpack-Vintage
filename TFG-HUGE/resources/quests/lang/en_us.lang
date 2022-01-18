@@ -1,0 +1,623 @@
+#Quests# Translated by SpeeeDCraft/Xikaro
+##################################################################################################################################
+########################################################## Primitive Phase #######################################################
+##################################################################################################################################
+tfg.quests.primitive.era.title=&dPrimitive - Era 1
+
+tfg.quests.primitive.start.title=Start
+tfg.quests.primitive.start.subtitle=&aThank you for choosing our modpack, because TerraFirmaCraft and GregTech are very closely tied in it, good luck to you young engineer!
+tfg.quests.primitive.start.tasks.clickMe=&aСlick here
+
+tfg.quests.primitive.pebbles.title=Stones on the ground
+tfg.quests.primitive.pebbles.subtitle=&aFind sticks and stones lying on the ground.
+
+tfg.quests.primitive.primitiveTools.title=Your first tools
+tfg.quests.primitive.primitiveTools.subtitle=&aTake a stone in your hand, preferably more than 2, and press the right button, you will open a menu in which you can carve the tool you need from the stone. All recipes can be viewed in the JEI.
+
+tfg.quests.primitive.rockanvil.title=Your first anvil, really a stone one
+tfg.quests.primitive.rockanvil.subtitle=&aTake a stone hammer (or any other) in your hands and hit it (RBM) on the block of stone specified in the quest.
+
+tfg.quests.primitive.leafmat.title=Foliage Dryer
+tfg.quests.primitive.leafmat.subtitle=&aCraft it, then put it, voila, now you can dry or evaporate anything, more useful for salt extraction.
+
+tfg.quests.primitive.smallsalt.subtitle=&aThe salt recipe can be viewed in the JEI.
+
+tfg.quests.primitive.muchNeededStraw.title=Dry grass
+tfg.quests.primitive.muchNeededStraw.subtitle=&aTake a knife in your hands and mow the grass in the neighborhood.
+
+tfg.quests.primitive.farmer3000.title=Farmer - 3000
+tfg.quests.primitive.farmer3000.subtitle=&aMake a stone hoe to plant your first plants. The mechanics are still the same, first you have to plow the ground next to the water, then plant a plant.
+
+tfg.quests.primitive.theHammer.title=Stone Hammer
+tfg.quests.primitive.theHammer.subtitle=&aIt looks aesthetically pleasing, look how gray it is, but seriously, you need it to create a stone anvil.
+
+tfg.quests.primitive.blueClay.title=The mood color is clay
+tfg.quests.primitive.blueClay.subtitle=&aGet clay, to do this, use luck or knowledge in the field of herbology, because interesting bushes grow in places where clay is deposited.
+
+tfg.quests.primitive.allTheMolds.title=Some forms that you will need
+tfg.quests.primitive.allTheMolds.subtitle=&aThere are a lot of forms, you don't have to do them all at once, but I'm sure that as you go through, you will do each of them.
+
+tfg.quests.primitive.jug.title=Cave Glass
+tfg.quests.primitive.jug.subtitle=&aNow by clicking on a liquid that you can drink, such as fresh water, you can fill it with water, and when you need it, then drink it.
+
+tfg.quests.primitive.Vessel.title=A little more than just a glass
+tfg.quests.primitive.vessel.subtitle=&aThis is a jar in which you will burn and melt metals, as well as store various food, so this is a very useful item, I suggest you burn it. The built-in force field does not allow any liquids other than fused metals (as well as any yummy, in the form of food) to penetrate inside.
+
+tfg.quests.primitive.fireplace.title=Firepit
+tfg.quests.primitive.fireplace.subtitle=&aYou need to make a bonfire to warm yourself, and also cook food, by the way, you can also make torches on the campfire.
+tfg.quests.primitive.fireplace.tasks.wood.title=&aLogs
+
+tfg.quests.primitive.meat.title=MYAYAYASO!
+tfg.quests.primitive.meat.subtitle=&aIt's vegan. I'm not lying, let me try the herbivore to confirm.
+tfg.quests.primitive.meat.tasks.meat.title=&aMeat
+
+tfg.quests.primitive.rawHide.title=Raw hide
+tfg.quests.primitive.rawHide.subtitle=&aGet any raw hide, I hope more than one sheep will not suffer.
+
+tfg.quests.primitive.preparedHide.title=Cooked hide
+tfg.quests.primitive.preparedHide.subtitle=&aWet the old one, cut it off, wet it again and finally get this skin.
+
+tfg.quests.primitive.jute.title=Jute
+tfg.quests.primitive.jute.subtitle=&aWhy aren't the ropes made of hemp? I want fun fires!
+
+tfg.quests.primitive.fruitsAndBerries.title=Fruits berries
+tfg.quests.primitive.fruitsAndBerries.subtitle=&aWhere's my lemon vodka? Developers, get engaged.
+
+tfg.quests.primitive.grains.title=Food
+tfg.quests.primitive.grains.subtitle=&aHarvest from a grain plant.
+
+tfg.quests.primitive.sugarcane.subtitle=&aCollect the reed, it will be useful to you to create a PAPER production plant!
+
+tfg.quests.primitive.paper.subtitle=&aMake paper, it will be useful to you, for various transistors and microcircuits.
+
+tfg.quests.primitive.tin.title=Tales of the Tin
+tfg.quests.primitive.tin.subtitle=&aAnd this is tin and you need to dig it up, how? And then break them. I've already written this somewhere.
+
+tfg.quests.primitive.copper.title=Stories about Copper
+tfg.quests.primitive.copper.subtitle=&aThis is copper and you need to dig it up, how? And then break them.
+
+tfg.quests.primitive.fuelNumber1.title=Fuel No. 1
+tfg.quests.primitive.fuelNumber1.subtitle=&aSince TFC is too realistic a mod, it will not be possible to melt the stove with coal, which is logical, so we make wood.
+
+tfg.quests.primitive.greenpeace.title=Greenpeace has already left for you..
+tfg.quests.primitive.greenpeace.subtitle=&aChop the logs, my children! We will need a lot of them.
+tfg.quests.primitive.greenpeace.tasks.logs.title=&aLogs
+
+tfg.quests.primitive.fuelNumber2.title=Fuel No. 2
+tfg.quests.primitive.fuelNumber2.subtitle=&aYou can't melt the furnace with this coal, but for example it's easy to keep burning.
+
+tfg.quests.primitive.saw.title=Copper saw
+tfg.quests.primitive.saw.subtitle=&aMake a copper saw to cut down trees even faster, or use it more rationally, for example, for sawing logs into lumber.
+
+tfg.quests.primitive.planks.title=Lumber
+tfg.quests.primitive.planks.subtitle=&aUsing a saw, we get this tunnel.
+
+tfg.quests.primitive.alloycalc.subtitle=&aThe alloys calculator will allow you to fuse metals easier and more clearly.
+
+tfg.quests.primitive.woodchest.title=Chests
+tfg.quests.primitive.woodchest.subtitle=&aSome moron came up with several crafts for chests, draw conclusions which recipe is more profitable.
+tfg.quests.primitive.woodchest.task.chest.title=&aAny chest
+
+tfg.quests.primitive.woodencrate.subtitle=&aYour first box that can store ores in the form of a block.
+
+tfg.quests.primitive.woodenbarrel.subtitle=&aA wooden barrel, similar to a TFK barrel, but you can't craft anything in it, just a liquid storage compatible with GT cars.
+
+tfg.quests.primitive.file.title=The first copper file
+tfg.quests.primitive.file.subtitle=&aHow many adventures began with him.
+
+tfg.quests.primitive.knifegt.title=The first copper knife
+tfg.quests.primitive.knifegt.subtitle=&aIt is much better than stone, at least because of its strength.
+
+tfg.quests.primitive.leather.title=Skin
+tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.
+
+tfg.quests.primitive.coppergeopick.subtitle=&aA geological hammer, to search for your first block ores.
+
+tfg.quests.primitive.barrel.title=The barrel!
+tfg.quests.primitive.barrel.subtitle=&aThe monkey poured water, the water remained in the barrel.
+
+tfg.quests.primitive.juteropes.title=I'll be a rag!
+tfg.quests.primitive.juteropes.subtitle=&aJute with a crisis of self-perception.
+
+tfg.quests.primitive.supports.title=Supports!
+tfg.quests.primitive.supports.subtitle=&aYou don't want to be buried alive, do you?
+
+tfg.quests.primitive.copperpickaxe.title=The first copper pickaxe
+tfg.quests.primitive.copperpickaxe.subtitle=&aYour first pickaxe. I think this is the best copper investment.
+
+tfg.quests.primitive.bismuthbronzepickaxe.title=Pickaxe made of bismuth bronze
+tfg.quests.primitive.bismuthbronzepickaxe.subtitle=&aThis pickaxe is clearly better than copper, but also worse than bronze.
+
+tfg.quests.primitive.bronzepickaxe.title=Bronze pickaxe
+tfg.quests.primitive.bronzepickaxe.subtitle=&aThe pickaxe is average, bismuth is better but bronze, but black and bronze is worse.
+
+tfg.quests.primitive.blackbronzepickaxe.title=A pickaxe made of black bronze.
+tfg.quests.primitive.blackbronzepickaxe.subtitle=&aThe best pickaxe made of bronze.
+
+tfg.quests.primitive.grinder.title=Hand Mill
+tfg.quests.primitive.grinder.subtitle=&aCreate a hand mill.
+
+tfg.quests.primitive.copperhammer.subtitle=&aIt looks like a plan. And why isn't this in GregTech? Let me remind you that right now you can process ores, so go ahead, dig up as much as possible!
+
+tfg.quests.primitive.copperanvil.title=Anvil No. 1 "Pacification"
+tfg.quests.primitive.copperanvil.subtitle=&aThis is more expensive than any bronze. Have you been sweating for a long time to get it?
+
+tfg.quests.primitive.bronzeanvil.title=Anvil No. 2 "Rebirth"
+tfg.quests.primitive.bronzeanvil.subtitle=&aThere must be bronze.
+
+tfg.quests.primitive.ironanvil.title=Anvil No. 3 "Becoming"
+tfg.quests.primitive.ironanvil.subtitle=&aWhy is there no self-closing iron maiden? Or spikes?
+
+tfg.quests.primitive.steelanvil.title=Anvil No. 4 "Steel Nut"
+tfg.quests.primitive.steelanvil.subtitle=&aAre the anvils falling in tfc? I don't know. Check on the most braking in the group.
+
+tfg.quests.primitive.blacksteelanvil.title=Anvil No. 5 "Steel Nut: tar edition"
+
+tfg.quests.primitive.redbluesteelanvil.title=Anvil No. 6 "Legion"
+tfg.quests.primitive.redbluesteelanvil.subtitle=&aSeriously, why the hell are there so many of them?
+
+tfg.quests.primitive.copperingot.title=Copper ingots
+tfg.quests.primitive.copperingot.subtitle=&aCreate a lot of copper ingots, you will need them with a reserve, as well as bronze.
+
+tfg.quests.primitive.bronzeingot.title=Bronze ingots
+tfg.quests.primitive.bronzeingot.subtitle=&aYou will definitely need a lot of these ingots.
+
+tfg.quests.primitive.bismuthbronzeingot.title=Bismuth Bronze Ingot
+tfg.quests.primitive.bismuthbronzeingot.subtitle=&aAlways at a discount.
+
+tfg.quests.primitive.blackbronzeingot.title=Black Bronze Ingots
+tfg.quests.primitive.blackbronzeingot.subtitle=&aBetter than the other two bronzes, but damn why?
+
+tfg.quests.primitive.bloomery.subtitle=&aA hatch with the power of Thanos is used in the construction of a primitive blast furnace.
+
+tfg.quests.primitive.ironingot.title=Forged Iron Ingot
+tfg.quests.primitive.ironingot.subtitle=&aAnd how long did it take you? In vanilla it's 10 minutes, and here it's already.. hmm.. 40 hours?
+
+tfg.quests.primitive.bellows.subtitle=&aBellows, which are used to increase the temperature in a coal smelter or blast furnace to 9999999 degrees Celsius, there are legends that someone managed to melt Neutronium in this blast furnace.
+
+tfg.quests.primitive.climatestation1.subtitle=&aAdvice for novice gardeners: cover plants with blue paint! They grow better. And if you are already a smesharik, then use this unit as a greenhouse controller.
+
+tfg.quests.primitive.bismuthpile.title=Bismuth dust
+tfg.quests.primitive.bismuthpile.subtitle=&aBismuth dust is used to create a bismuth ingot or a bismuth bronze ingot, quite useful.
+
+tfg.quests.primitive.silverpile.title=Silver Dust
+tfg.quests.primitive.silverpile.subtitle=&aWith the help of this dust, you can make a boiler that will draw energy from the sun.
+
+tfg.quests.primitive.goldpile.title=Gold dust
+tfg.quests.primitive.goldpile.subtitle=&aGold is expensive.
+
+tfg.quests.primitive.graphitepile.title=Graphite dust
+tfg.quests.primitive.graphitepile.subtitle=&aAn important part of the things that are needed for refractory clay, in short, dig a HELL of a lot.
+
+tfg.quests.primitive.kaolinitepile.title=Kaolinite dust
+tfg.quests.primitive.kaolinitepile.subtitle=&aAs important as graphite.
+
+tfg.quests.primitive.ironpile.title=Iron Dust
+tfg.quests.primitive.ironpile.subtitle=&aAs one person said in a chat on the stream, there is not much iron.
+
+tfg.quests.primitive.nickelpile.title=Nickel dust
+tfg.quests.primitive.nickelpile.subtitle=&aSpeeDCraft is still looking for a Nickel vein on TFG R2.8.4.
+
+tfg.quests.primitive.zincpile.title=Zinc dust
+tfg.quests.primitive.zincpile.subtitle=&aZinc is useful and useless at the same time. Make a bucket or something.
+
+tfg.quests.primitive.tuyere.title=Tuyere
+tfg.quests.primitive.tuyere.subtitle=&aA lot of your metal flows through it.
+
+tfg.quests.primitive.tfcblastfurnace.title=Blast furnace!
+tfg.quests.primitive.tfcblastfurnace.subtitle=&aGlory to steel, a new era is coming now.
+
+tfg.quests.primitive.tfccrusible.title=The Iron Witch's Cauldron
+tfg.quests.primitive.tfccrusible.subtitle=&aI want a series with that name.
+
+tfg.quests.primitive.blacksteelingot.title=Black Steel
+tfg.quests.primitive.blacksteelingot.subtitle=&aBlacks don't approve.
+
+tfg.quests.primitive.redsteelingot.title=Red steel
+tfg.quests.primitive.redsteelingot.subtitle=&aRed is not an appr.. what?
+
+tfg.quests.primitive.bluesteelingot.title=Blue Steel
+tfg.quests.primitive.bluesteelingot.subtitle=&aBlue is not an appr..? Stop it!
+
+tfg.quests.primitive.redbluesteelpickaxe.title=Any pickaxe made of non-ferrous metals
+tfg.quests.primitive.redbluesteelpickaxe.subtitle=&aDig up the obsidian and run to HELL!
+
+tfg.quests.primitive.obsidian.title=Hot kebab
+tfg.quests.primitive.obsidian.subtitle=&aYou feel, you feel, it's not the smell of realism, what a HELL, although, wherever there, go for blazes.
+
+tfg.quests.primitive.bluesteelbucket.title=Blue Bucket
+tfg.quests.primitive.bluesteelbucket.subtitle=&aPainted with the tears of everyone who fell into the lava with diamonds in the inventory. Can scoop up lava.
+
+tfg.quests.primitive.redsteelbucket.title=Red Bucket
+tfg.quests.primitive.redsteelbucket.subtitle=&aWe paint with the blood of drowned people. There is a 3% discount for each goat sacrificed. Can scoop up water.
+
+tfg.quests.primitive.bucket.title=I AM A BUCKET!!!
+tfg.quests.primitive.bucket.subtitle=&aA magical Minecraft bucket. Magic washed the paint.
+
+tfg.quests.primitive.tochilka1.subtitle=&aSharpen your items better and faster.
+
+tfg.quests.primitive.tochilka2.subtitle=&aA new level of sharpening.
+
+tfg.quests.primitive.tochilka3.subtitle=&aAutomation of sharpening.
+
+tfg.quests.primitive.tochilka4.subtitle=&aEven steeper sharpened.
+
+tfg.quests.primitive.tochilka5.subtitle=&aSauron would be proud of you!
+
+tfg.quests.primitive.steelingot.title=Steel Ingot
+tfg.quests.primitive.steelingot.subtitle=&aWow, it's sparkling.
+
+tfg.quests.primitive.flux.title=Flux
+tfg.quests.primitive.flux.subtitle=&aFind chalk, dolomite, limestone or marble.
+
+tfg.quests.primitive.povodok.title=Leash.
+tfg.quests.primitive.povodok.subtitle=&aKinky.
+
+tfg.quests.primitive.cheese.title=Cheese
+tfg.quests.primitive.cheese.subtitle=&aNow there is no need to go to the moon. Does everyone know that there is cheese on the moon? No.. a
+
+tfg.quests.primitive.meshokmochi.title=A ball. For Quidditch.
+tfg.quests.primitive.meshokmochi.subtitle=&aИз кого падают мочевые пузыри? Хороший вопрос.
+
+tfg.quests.primitive.softbucket.title=Soft bucket
+tfg.quests.primitive.softbucket.subtitle=&aShoby to drink.
+
+tfg.quests.primitive.backpack.title=School backpack
+tfg.quests.primitive.backpack.subtitle=&aGood portable storage.
+
+tfg.quests.primitive.burlap.title=I AM A RAG
+tfg.quests.primitive.burlap.subtitle=&aThe most useful item in the game. Don't let the crafting menu fool you and translate all the jute into this.
+
+tfg.quests.primitive.harderbucket.title=Cave thermos
+tfg.quests.primitive.harderbucket.subtitle=&aTo drink more.
+
+tfg.quests.primitive.strings.title=Any strings
+tfg.quests.primitive.strings.subtitle=&aWhere the hell can I find them?
+
+tfg.quests.primitive.woolcloth.title=I Am An Expensive Rag
+tfg.quests.primitive.woolcloth.subtitle=&aFrom stinking sheep, or from a spider's ass. To be honest, I would choose jute.
+
+tfg.quests.primitive.bed.title=The Royal Bed
+tfg.quests.primitive.bed.subtitle=&aSteve can only sleep on the surface of the aforementioned smelly sheep and spider bugs.
+
+tfg.quests.primitive.spindle.subtitle=&aWith this mechanism, you will produce your first piece of fabric.
+
+tfg.quests.primitive.tannedleather.subtitle=&aInsulated leather with cool effects, I would say if I were a salesman in a shoe store. But unfortunately it's just leather for a backpack.
+
+tfg.quests.primitive.wiredrawbench.subtitle=&aA strange torture table. However, it also has useful properties. For example, he knows how to make wires from GT.
+
+tfg.quests.primitive.pineappleleather.subtitle=&aAnother interesting type of vegetable skin.
+
+tfg.quests.primitive.ropeladder.subtitle=&aWith these items, you can create suspension bridges.
+
+tfg.quests.primitive.loom.subtitle=&aNow you can make fabric.
+
+tfg.quests.primitive.wheel.subtitle=&aThe first mechanism invented by man, after the thermonuclear reactor.
+
+tfg.quests.primitive.cladding.subtitle=&aThe casing of the blast furnace, take it in your hand and right-click on the blocks of refractory bricks.
+
+tfg.quests.primitive.bowlmount.subtitle=&aPress the RMB on the trunk of the [HEVEA TREE] or [RUBBER FIG TREE] to hang this holder for the vessel.
+
+tfg.quests.primitive.groove.subtitle=&aIn JEI there is a description of how to use this thing, look for it (Press R on the gutter).
+
+tfg.quests.primitive.rubbermix.subtitle=&aIt's very sticky.
+
+tfg.quests.primitive.fireproofclay.subtitle=&aRefractory clay, which will be needed for crafting blocks of refractory bricks for a blast furnace.
+
+tfg.quests.primitive.siliciasand.title=Silica sand
+tfg.quests.primitive.siliciasand.subtitle=&aInteresting sand with a quartzite smell.
+
+tfg.quests.primitive.blowpipe.title=Stick blowing machine
+tfg.quests.primitive.blowpipe.subtitle=&aA new item for glass extraction, feel like a glassblower.
+
+tfg.quests.primitive.glassmolds.title=Glass Molds
+tfg.quests.primitive.glassmolds.subtitle=&aMolds for glass, in TFG even the glass casting is changed!
+
+tfg.quests.primitive.HorsePress.subtitle=&aWith this press, you can get more items for less items, but using a horse that still needs to be tamed.
+
+tfg.quests.primitive.HorseChoppingBlock.subtitle=&aNow when cutting wood, you can get a lot more wood.
+
+tfg.quests.primitive.greenhouseblocks.title=Blocks for the construction of a greenhouse
+tfg.quests.primitive.greenhouseblocks.subtitle=&aThese blocks + the greenhouse controller, which goes further along the quest, you will need to make a greenhouse and grow plants even in winter.
+
+tfg.quests.primitive.sulfurdust.title=Sulfur
+tfg.quests.primitive.sulfurdust.subtitle=&aIt tastes bitter.
+
+tfg.quests.primitive.Grindstone.subtitle=&aNow, when crushing ores, especially GT ores, you can get a huge resource yield.
+
+tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much faster through the bushes.
+
+##################################################################################################################################
+########################################################## Steam Phase ###########################################################
+##################################################################################################################################
+tfg.quests.steam.era.title=&dSteam - Era 2
+
+tfg.quests.steam.maincheck.title=Let's start the steam era!
+tfg.quests.steam.maincheck.subtitle=&aThe steam era begins, here you will finally be able to make a furnace, and an alloy furnace that will save you from the million hours you spent forging.
+
+tfg.quests.steam.primitivewaterpump.subtitle=&aYour first pump. Put it on any water, and it will start to extract water for you.
+
+tfg.quests.steam.primitivewatertank.subtitle=&aRemember Railcraft? Well, now the GT has some kind of the same tanks, but with more functionality.
+
+tfg.quests.steam.safe.subtitle=&aAn interesting safe, I don't know why you might need it. Well, for example, hiding things from friends.
+
+tfg.quests.steam.mortar.title=Mortar
+tfg.quests.steam.mortar.subtitle=&aYou will need it to make it easier to crumble metals, or to create alloys right in your hands.
+
+tfg.quests.steam.tools.title=Tools
+tfg.quests.steam.tools.subtitle=&aThe main tools you will need to start learning GT.
+tfg.quests.steam.tools.task.wirecutter.title=&aWire Cutters
+tfg.quests.steam.tools.task.wrench.title=&aWrench
+tfg.quests.steam.tools.task.screwdriver.title=&aScrewdriver
+
+tfg.quests.steam.craftingstation.subtitle=&aA cool replacement for the vanilla workbench. Allows you to take items from nearby chests, as well as store items in yourself, also saves items in the crafting grid after leaving the workbench.
+
+tfg.quests.steam.raintank.subtitle=&aThe name speaks for itself. Allows you to collect water in the rain.
+
+tfg.quests.steam.cokeoven.subtitle=&aA furnace that will give you access to a more powerful fuel called Coke coal.
+
+tfg.quests.steam.cokegem.subtitle=&aIt works the same as coal, but burns twice as long.
+
+tfg.quests.steam.bronzeplates.title=Bronze plates
+tfg.quests.steam.bronzeplates.subtitle=&aWith the help of these plates, you can craft most of the machines from the steam era, let's say this is the main material of the steam era.
+
+tfg.quests.steam.wroughtironplates.title=Forged iron plates
+tfg.quests.steam.wroughtironplates.subtitle=&aOpen access to improved solar and lava boilers.
+
+tfg.quests.steam.fluidpipe.title=Fluid pipe
+tfg.quests.steam.fluidpipe.disc=§oTo not confound with a certain man. §rThe fluid pipes have been reworked in GTCEu, and they now work really well. The one issue they have is the limited throughput, which you may encounter as you upgrade to more and more boilers. Potin Fluid Pipes have a very §6high Throughput§r, for the material tier and cost, you may use this. §9Note:§r GT6-style Pipes are §denabled§r. It means that placing Pipes connect them only to the block they were placed against. To open more connection, use your §5Wrench§r on the grid.
+
+tfg.quests.steam.itempipe.title=Item Pipes
+tfg.quests.steam.itempipe.desc=Item Pipes are a simple yet very effective way to move items around §dinstantly§r, but with throughput limitations. Higher tier pipes provide ridiculously large throughput, a rare sight in modded Minecraft! Item Pipes §9do not pull§r, but they will push any item inserted into them to other connected inventories, prioritizing §9the closest§r first. The priority mechanics are §omore complicated§r, so skip ahead if you are not interested. A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion. §9Restrictive Pipes§r typically have the lowest Priority for insertion due to their higher Routing Value. Right now, you can use them in combination with §6Hoppers§r, but you will also be able to use them with Conveyor Modules, Output Buses, and machine Auto-Outputs all in the LV age. You can use your Wrench to disconnect a side of a pipe.
+
+tfg.quests.steam.steelplates.title=Steel plates
+tfg.quests.steam.steelplates.subtitle=&aThese plates open access to an improved steam hammer.
+
+tfg.quests.steam.bronzeboiler.subtitle=&aA standard boiler that generates steam for your steam engines. The best solution at the initial stages of the game.
+
+tfg.quests.steam.steelboiler.subtitle=&aImproved boiler, produces more steam than the usual bronze.
+
+tfg.quests.steam.diffboilers.title=Limited edition boilers
+tfg.quests.steam.diffboilers.subtitle=&aInteresting boilers that are quite situational and are not usually used. But if you have the materials for them and fuel, then this is the best solution to the steam problem for you.
+
+tfg.quests.steam.advforgehammer.subtitle=&aImproved steam hammer, better than bronze. Of the functions: allows you to make plates from ingots at a more favorable rate.
+
+tfg.quests.steam.bronzeforgehammer.subtitle=&aA steam hammer that will allow you to make plates from ingots at a more favorable rate.
+
+tfg.quests.steam.miner.subtitle=&aA drilling rig, terribly slow and expensive for a couple. But at the initial stages, at least something. Put it over the vein on the surface and turn it on.
+
+tfg.quests.steam.bronzemacerator.subtitle=&aA crusher that opens the way for you to more productive sources of production of materials from ores.
+
+tfg.quests.steam.bronzerockbreaker.subtitle=&aA very strange mechanism. They say it was invented by the Hilichurls 400 years ago.
+
+tfg.quests.steam.bronzeextractor.subtitle=&aYou will get the first rubber right here, and stop, there is also a path through the gutters from a primitive branch, ehh...
+
+tfg.quests.steam.bronzecompressor.subtitle=&aAllows you to make blocks.
+
+tfg.quests.steam.bronzealloysmelter.subtitle=&aA universal device, you definitely need to do it first, and it will make blocks for you, and plates at a super favorable rate, whatever you want.
+
+tfg.quests.steam.bronzefurnace.subtitle=&aMELT ORES, FORGET ABOUT TFC!
+
+tfg.quests.steam.grinder.subtitle=&aAn even cooler, multi-block crusher.
+
+tfg.quests.steam.bronzeoven.subtitle=&aMulti-block stove, cool!
+
+tfg.quests.steam.bigbronzeboiler.subtitle=&aA huge version of bronze/steel steam boilers generates a lot of steam, but be careful, if you put water into an already heated boiler, nothing will remain of your base.
+
+tfg.quests.steam.basiccircuit.subtitle=&aYour first processor, as powerful as some kind of pentium.
+
+tfg.quests.steam.invar.title=Invar Ingot
+
+tfg.quests.steam.mininghammer.subtitle=&aHammer digging 3x3.
+
+tfg.quests.steam.steamturbine.subtitle=&aTURBINE! Yes, and also a steam engine, your first electric car. Your new adventure begins with her!
+##################################################################################################################################
+########################################################## LV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.lv.era.title=&dElectricity LV - Era 3
+
+##################################################################################################################################
+########################################################## MV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.mv.era.title=&dElectricity MV - Era 4
+
+##################################################################################################################################
+########################################################## HV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.hv.era.title=&dElectricity HV - Era 5
+
+##################################################################################################################################
+########################################################## EV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.ev.era.title=&dElectricity EV - Era 6
+
+##################################################################################################################################
+########################################################## IV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.iv.era.title=&dElectricity IV - Era 7
+
+##################################################################################################################################
+########################################################## LuV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.luv.era.title=&dElectricity LuV - Era 8
+
+##################################################################################################################################
+########################################################## ZPM Phase ##############################################################
+##################################################################################################################################
+tfg.quests.zpm.era.title=&dElectricity ZPM - Era 9
+
+##################################################################################################################################
+########################################################## UV Phase ##############################################################
+##################################################################################################################################
+tfg.quests.uv.era.title=&dElectricity UV - Era 10
+
+##################################################################################################################################
+########################################################## AE2 Phase #############################################################
+##################################################################################################################################
+tfg.quests.ae2.era.title=&dApplied Energistics 2 - Эра 6.5
+
+tfg.quests.ae2.certusquartz.subtitle=Shiny.
+
+tfg.quests.ae2.fluxcrystal.subtitle=Shinier.
+
+tfg.quests.ae2.fluxseed.subtitle=Grows crystals in water.
+
+tfg.quests.ae2.formingpress.subtitle=To make circuits.
+
+tfg.quests.ae2.mecontroller.subtitle=Praise the Omnissiah.
+
+tfg.quests.ae2.mesecurity.subtitle=Gatekeep access to your personal box of everything.
+
+tfg.quests.ae2.fluxpipe.subtitle=It's a wire. The voices in my head suggest you use different ones.
+
+tfg.quests.ae2.mestoragehousing.subtitle=Put cell here, store shit.
+
+tfg.quests.ae2.itemcell.subtitle=A cell used for items.
+
+tfg.quests.ae2.fluidcell.subtitle=A cell used for fluids.
+
+tfg.quests.ae2.fluxcovered.subtitle=Has 8 channels.
+
+tfg.quests.ae2.fluxdensecovered.subtitle=Like the last one, but 32.
+
+tfg.quests.ae2.fluxsmart.subtitle=Shows how much of it is in use. Fancy.
+
+tfg.quests.ae2.fluxdense.subtitle=How much of this thing is used? Come and see.
+
+tfg.quests.ae2.mestorage.subtitle=Here go cells.
+
+tfg.quests.ae2.meterminal.subtitle=Use to get stuff from the system.
+
+tfg.quests.ae2.mecraftingterminal.subtitle=Like the last one, but lets you craft.
+
+tfg.quests.ae2.mepatternterminal.subtitle=All hail autocrafting.
+
+tfg.quests.ae2.mefluidterminal.subtitle=Used to view fluids.
+
+tfg.quests.ae2.accespoint.subtitle=Used for connecting wireless terminals.
+
+tfg.quests.ae2.wirelessbooster.subtitle=Improves the range of wireless access at the cost of power.
+
+tfg.quests.ae2.wirelessboostercard.subtitle=For improved wireless terminals.
+
+tfg.quests.ae2.magnetcard.subtitle=Automatically stores things in the system.
+
+tfg.quests.ae2.ultimateterminal.subtitle=The best one there is.
+
+tfg.quests.ae2.molecular.subtitle=Autocrafting. Again.
+
+tfg.quests.ae2.meinterfaceterminal.subtitle=Allows access to all other terminals in your ME system.
+
+tfg.quests.ae2.craftingunits.subtitle=Used for autocrafting.
+
+tfg.quests.ae2.craftingunit.subtitle=More autocrafting.
+
+tfg.quests.ae2.craftingmonitor.subtitle=Shows which item is being crafted.
+
+tfg.quests.ae2.2p2tunnel.subtitle=Take a guess. I have no clue what this is for.
+
+tfg.quests.ae2.mattercondenser.subtitle=Compresses things.
+
+tfg.quests.ae2.spatialport.subtitle=Move things.
+
+tfg.quests.ae2.dvaVTretyey.subtitle=Store 3D things.
+
+tfg.quests.ae2.quantumring.subtitle=Interplanetary access to the system.
+
+##################################################################################################################################
+########################################################## Space Phase ###########################################################
+##################################################################################################################################
+tfg.quests.space.era.title=&dSpace - Era 7.5
+
+tfg.quests.space.start.title=Let's hope there's xenos to purge.
+tfg.quests.space.start.subtitle=The Company denies all claims of using stock planets for system construction. Thinking otherwise is treason. Treason is punishable by death.
+
+tfg.quests.space.oxygencollector.subtitle=Collects oxygen.
+
+tfg.quests.space.lvl1solarpanel.subtitle=Solar powah.
+
+tfg.quests.space.lvl2solarpanel.subtitle=Better than the last one.
+
+tfg.quests.space.lvl3solarpanel.subtitle=There's more of these.
+
+tfg.quests.space.lvl4solarpanel.subtitle=The power of the Sun. All of it.
+
+tfg.quests.space.painter.title=Art school reject.
+tfg.quests.space.painter.subtitle=If I was german, I'd make a tasteless joke about this.
+
+tfg.quests.space.bubledistributor.subtitle=Breathe without internals, if you have an oxygen collector.
+
+tfg.quests.space.oxygensealer.subtitle=Lets you breathe in enclosed spaces, if combined with an oxygen collector.
+
+tfg.quests.space.compressor.subtitle=Is there not enough oxygen in your cans? This can add more.
+
+tfg.quests.space.terraformer3000.subtitle=Grow grass on Mars.
+
+tfg.quests.space.airlock.title=Fancy door
+tfg.quests.space.airlock.subtitle=Draft-proof
+
+tfg.quests.space.tier1Nspacesuit.title=Unfinished tier 1 space suit
+
+tfg.quests.space.tier2Nspacesuit.title=Unfinished tier 2 space suit
+
+tfg.quests.space.tier3Nspacesuit.title=Unfinished tier 3 space suit
+
+tfg.quests.space.tier4Nspacesuit.title=Unfinished tier 4 space suit
+
+tfg.quests.space.tier1spacesuit.title=Finished tier 1 space suit
+tfg.quests.space.tier1spacesuit.subtitle=Shiny.
+
+tfg.quests.space.tier2spacesuit.title=Finished tier 2 space suit
+tfg.quests.space.tier2spacesuit.subtitle=Space Engineers would be impressed.
+
+tfg.quests.space.tier3spacesuit.title=Finished tier 3 space suit
+tfg.quests.space.tier3spacesuit.subtitle=Even fancier than the last one.
+
+tfg.quests.space.tier4spacesuit.title=Finished tier 4 space suit
+tfg.quests.space.tier4spacesuit.subtitle=I am Iron Man.
+
+tfg.quests.space.tier1termalarmor.title=Tier 1 thermal armour
+tfg.quests.space.tier1termalarmor.subtitle=Store-bought.
+
+tfg.quests.space.tier2termalarmor.title=Tier 2 thermal armour
+tfg.quests.space.tier2termalarmor.subtitle=A christmas gift from granny. 
+
+tfg.quests.space.tier3termalarmor.title=Tier 3 thermal armour
+tfg.quests.space.tier3termalarmor.subtitle=Glowy threads contain radium. It's good for you, trust me.
+
+tfg.quests.space.tier4termalarmor.title=Tier 4 thermal armour
+tfg.quests.space.tier4termalarmor.subtitle=There's more of these.
+
+tfg.quests.space.tier5termalarmor.title=Tier 5 thermal armour
+tfg.quests.space.tier5termalarmor.subtitle=Iron Man probably wears this.
+
+tfg.quests.space.thingsforoxygen.title=Internals
+tfg.quests.space.thingsforoxygen.subtitle=Suffocation is treason. Treason is punishable by death.
+
+tfg.quests.space.cosmicbed.title=Space bed
+tfg.quests.space.cosmicbed.subtitle=In space nobody can hear you sleep.
+
+tfg.quests.space.fuelloader.subtitle=Because a bucket isn't fancy enough.
+
+tfg.quests.space.ethernetIlona.subtitle=The antenna never gets a signal.
+
+tfg.quests.space.decomb.subtitle=The Company does not take responsibility for incidents of spontaneous combustion, xenoparasite infection and carsickness after using the device.
+
+tfg.quests.space.shield.subtitle=Anti-everything shield.
+
+tfg.quests.space.flag.subtitle=The Company presents the best way to lay claim to a new world! Go forth, explorers!
+
+tfg.quests.space.rocket1.subtitle=Rocket number uno.
+tfg.quests.space.rocket2.subtitle=Dos
+tfg.quests.space.rocket3.subtitle=Drei
+tfg.quests.space.rocket4.subtitle=Four
+tfg.quests.space.rocket6.subtitle=Close to the end.
+tfg.quests.space.rocket7.subtitle=The Company does not take responsibility for incompetent use of numbers for stellar vessel designation.
+
+tfg.quests.space.end1.title=The End
+tfg.quests.space.end1.subtitle=You won. Go home.
+
+##################################################################################################################################
+########################################################## MT Phase ##############################################################
+##################################################################################################################################
+tfg.quests.mendeleevtable.era.title=&dХимическая таблица

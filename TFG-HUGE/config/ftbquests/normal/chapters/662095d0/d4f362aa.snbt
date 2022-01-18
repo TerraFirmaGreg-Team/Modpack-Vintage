@@ -1,0 +1,36 @@
+{
+	title: "Light Fuel",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "light_fuel"
+		}
+	},
+	x: 6.0d,
+	y: -14.0d,
+	text: [
+		"§oIf you read the previous Quest, this shouldn't be too bad. If you didn't... What are you waiting for!?§r",
+		"",
+		"Distillating §aOil§r will give you Fuel that you will need to desulfurize.",
+		"",
+		"§aHydrogen Sulfide§r is perfectly §drecycled§r in an §3Electrolyzer§r.",
+		"If you automate this process, simply place your Chemical Reactor and your Electrolyzer next to each other.",
+		"",
+		"",
+		"§aLight Fuel§r is a good §9Power§r option. But there is something even greater in a nearby Quest."
+	],
+	dependencies: [
+		"65405836"
+	],
+	tasks: [{
+		uid: "ab9c6c70",
+		type: "fluid",
+		fluid: "sulfuric_light_fuel"
+	},
+	{
+		uid: "f1049bfa",
+		type: "fluid",
+		fluid: "light_fuel"
+	}]
+}

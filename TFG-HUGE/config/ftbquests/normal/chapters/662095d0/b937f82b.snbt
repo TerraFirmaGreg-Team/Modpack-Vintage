@@ -1,0 +1,21 @@
+{
+	title: "Advanced Mixer",
+	icon: "gregtech:machine 1 471",
+	x: 9.0d,
+	y: -6.0d,
+	text: [
+		"§oMore complex Alloys require higher Tier machines to mix the Dusts together.§r",
+		"",
+		"This is the first step to dive deeper in the MV Age."
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "0aaf006b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 471"
+		}]
+	}]
+}

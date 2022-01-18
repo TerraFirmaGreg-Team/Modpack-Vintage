@@ -1,0 +1,26 @@
+{
+	x: -26.0d,
+	y: -8.0d,
+	description: "{tfg.quests.primitive.theHammer.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "9672083c",
+		type: "item",
+		title: "{tfg.quests.primitive.theHammer.title}",
+		items: [{
+			item: "tfc:stone/hammer/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/hammer/sedimentary"
+		},
+		{
+			item: "tfc:stone/hammer/metamorphic"
+		},
+		{
+			item: "tfc:stone/hammer/igneous_intrusive"
+		}],
+		ignore_nbt: 1b
+	}]
+}

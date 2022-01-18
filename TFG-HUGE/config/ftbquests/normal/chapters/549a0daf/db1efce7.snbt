@@ -1,0 +1,19 @@
+{
+	title: "Wetware Mainframe",
+	icon: "gregtech:meta_item_1 1 647",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"deb9f36d"
+	],
+	tasks: [{
+		uid: "02077328",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 647"
+		}]
+	}]
+}

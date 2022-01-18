@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 5.0d,
+	dependencies: [
+		"31d449ec"
+	],
+	tasks: [{
+		uid: "581dc248",
+		type: "item",
+		items: [{
+			item: "gendustry:industrial_apiary"
+		}]
+	}]
+}

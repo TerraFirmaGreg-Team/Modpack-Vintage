@@ -1,0 +1,39 @@
+{
+	title: "Almost Titanium",
+	icon: "gregtech:meta_dust 1 285",
+	x: 4.0d,
+	y: -3.0d,
+	shape: "circle",
+	text: [
+		"§oRutile, a form of Titanium Dioxide, cannot be electrolyzed directly! What's even better? It has to be obtained from other Ores!§r",
+		"",
+		"Titanium requires a slightly more involved process than the previous materials to process. First you need §aRutile§r, obtained from §aBauxite§r.",
+		"The next steps are described in the next Quest. No need to rush things.",
+		"",
+		"Bauxite is also an §6excellent source of Aluminium§r.",
+		"",
+		"Going to §dThe End§r will give you access to a better Bauxite vein, as well as §9Ilmenite§r, an even better source of Rutile.",
+		"",
+		"",
+		"§9Tip:§r Ore processing for §aBauxite§r is ridiculously good! Doing the §3Thermal Centrifuge§r step will easily §6triple§r your §aRutile§r yield."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "78b7c81b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 15 286"
+		}],
+		count: 15L
+	},
+	{
+		uid: "27ac518c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 285"
+		}]
+	}]
+}

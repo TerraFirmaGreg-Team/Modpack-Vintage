@@ -1,0 +1,16 @@
+{
+	title: "{tfg.quests.primitive.leafmat.title}",
+	x: -28.0d,
+	y: -2.0d,
+	description: "{tfg.quests.primitive.leafmat.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "4ff60083",
+		type: "item",
+		items: [{
+			item: "firmalife:leaf_mat"
+		}]
+	}]
+}

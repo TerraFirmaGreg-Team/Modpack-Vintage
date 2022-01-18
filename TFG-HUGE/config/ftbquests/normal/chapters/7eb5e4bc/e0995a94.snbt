@@ -1,0 +1,13 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"fcad811a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a2e52b29",
+		type: "checkmark",
+		title: "LuV"
+	}]
+}

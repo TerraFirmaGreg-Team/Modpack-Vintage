@@ -1,0 +1,13 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"02077328"
+	],
+	hide: true,
+	tasks: [{
+		uid: "5eb5abd0",
+		type: "checkmark",
+		title: "UV"
+	}]
+}

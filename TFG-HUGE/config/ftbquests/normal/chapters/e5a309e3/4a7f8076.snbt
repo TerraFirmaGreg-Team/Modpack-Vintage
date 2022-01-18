@@ -1,0 +1,35 @@
+{
+	title: "TNT",
+	icon: "minecraft:tnt",
+	x: 0.0d,
+	y: 3.0d,
+	shape: "circle",
+	text: [
+		"§cTNT§r (Trinitrotoluene) can't be prepared with the usual Gunpowder and Sand anymore. Instead, make §aGelled Toluene§r and react it with Sulfuric Acid to make TNT.",
+		"",
+		"I do not have any tips to give you for §aToluene§r. No matter what you do, it will be painful!",
+		"§aToluene§r will also be used in the §5EV Age§r to make §cGasoline§r.",
+		"",
+		"§cTNT§r is used in the §3Implosion Compressor§r to make Gems. It also blows stuff up.",
+		"Technically Dynamite could also be used... but that's extremely inconvenient to obtain."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "a373ebe2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 498"
+		}]
+	},
+	{
+		uid: "62b49b11",
+		type: "item",
+		items: [{
+			item: "minecraft:tnt 32"
+		}],
+		count: 32L
+	}]
+}

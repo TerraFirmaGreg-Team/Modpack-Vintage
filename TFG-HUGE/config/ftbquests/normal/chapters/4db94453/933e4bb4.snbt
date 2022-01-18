@@ -1,0 +1,19 @@
+{
+	x: -8.0d,
+	y: 15.0d,
+	dependencies: [
+		"c6c75a2c"
+	],
+	tasks: [{
+		uid: "cccfde14",
+		type: "item",
+		items: [{
+			id: "aeadditions:storage.fluid",
+			Damage: 2s,
+			tag: {
+				fuzzyMode: "IGNORE_ALL"
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

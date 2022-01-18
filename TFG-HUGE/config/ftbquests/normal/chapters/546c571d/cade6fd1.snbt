@@ -1,0 +1,19 @@
+{
+	x: 7.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	dependencies: [
+		"56c53ffc"
+	],
+	tasks: [{
+		uid: "a1423e95",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			tag: {
+				FarmBlock: 3
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "Tungstic Acid",
+	icon: "gregtech:meta_dust 1 343",
+	x: -3.0d,
+	y: -5.0d,
+	text: [
+		"Use Tungstate or Scheelite from the end to make Tungstic Acid."
+	],
+	dependencies: [
+		"efe6446b"
+	],
+	tasks: [{
+		uid: "73cc220b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 343"
+		}]
+	}]
+}

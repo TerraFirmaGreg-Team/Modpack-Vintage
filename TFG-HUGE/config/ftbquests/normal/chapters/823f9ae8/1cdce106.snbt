@@ -1,0 +1,19 @@
+{
+	title: "{tfg.quests.primitive.bucket.title}",
+	x: 20.0d,
+	y: -4.0d,
+	shape: "gear",
+	description: "{tfg.quests.primitive.bucket.subtitle}",
+	dependencies: [
+		"2b9352d5",
+		"b4eca65b"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "6cba2584",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}]
+}

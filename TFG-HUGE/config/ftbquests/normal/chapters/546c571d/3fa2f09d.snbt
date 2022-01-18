@@ -1,0 +1,28 @@
+{
+	title: "First MV Circuits!",
+	icon: "gregtech:meta_item_1 1 622",
+	x: 6.0d,
+	y: 20.0d,
+	text: [
+		"§oMV Circuits! Does this mean MV Age...? Well, do you have Aluminium?§r",
+		"",
+		"Each Electric Age has Circuits corresponding to its tier. The Good Electronic Circuit is the §dfirst MV Circuit§r you can make, out of three.",
+		"",
+		"The next thing you should probably do is craft a Circuit Assembling Machine to make more circuits! For cheaper!",
+		"",
+		"",
+		"§6Having this and Aluminium will grant access to MV Machines.§r"
+	],
+	dependencies: [
+		"dbcb3e47",
+		"d12bfe84"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "ddc48f54",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 622"
+		}]
+	}]
+}

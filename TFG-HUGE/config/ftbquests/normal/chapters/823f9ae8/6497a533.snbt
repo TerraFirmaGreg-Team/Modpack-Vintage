@@ -1,0 +1,15 @@
+{
+	x: -26.0d,
+	y: 8.0d,
+	description: "{tfg.quests.primitive.wiredrawbench.subtitle}",
+	dependencies: [
+		"bc100163"
+	],
+	tasks: [{
+		uid: "f3460454",
+		type: "item",
+		items: [{
+			item: "tfctech:wire_draw_bench"
+		}]
+	}]
+}

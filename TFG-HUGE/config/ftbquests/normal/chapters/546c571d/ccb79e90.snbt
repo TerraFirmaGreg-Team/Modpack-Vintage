@@ -1,0 +1,22 @@
+{
+	title: "Basic Sifting Machine",
+	icon: "gregtech:machine 1 575",
+	x: -4.0d,
+	y: 13.0d,
+	text: [
+		"The Sifter takes §dGem type§r §aPurified Ores§r to turn them into high grade gems with §6higher yield§r than other means.",
+		"",
+		"",
+		"§9Note:§r If you crushed Gem Ores (such as Diamond), it is primordial you use this machine to recover the actual gems in non dust form. However this is a rather slow process so you may sometimes want to smelt this type of ore directly into the Gem."
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "6c867064",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 575"
+		}]
+	}]
+}

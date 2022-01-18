@@ -1,0 +1,32 @@
+{
+	title: "Batteries!",
+	x: 9.0d,
+	y: 13.0d,
+	shape: "hexagon",
+	text: [
+		"LV Batteries come in three forms, allowing you to pick the one you find the best depending on materials you have.",
+		"",
+		"Be it either §dSodium§r, §dLithium§r or §dCadmium§r, you will need either an Electrolyzer or a Centrifuge to obtain them. They do not exist as ore.",
+		"",
+		"My recommendation is: find a Salt vein, and either §aelectrolyze Salt§r for Sodium, or §aOre wash§r Lepidolite for Lithium.",
+		"",
+		"",
+		"Get §eany§r of the three batteries to complete this quest."
+	],
+	dependencies: [
+		"d62de7c3"
+	],
+	tasks: [{
+		uid: "abb2d48d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 732"
+		},
+		{
+			item: "gregtech:meta_item_1 1 735"
+		},
+		{
+			item: "gregtech:meta_item_1 1 738"
+		}]
+	}]
+}

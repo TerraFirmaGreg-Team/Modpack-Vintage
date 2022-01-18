@@ -1,0 +1,23 @@
+{
+	title: "Nanoprocessors",
+	icon: "gregtech:meta_item_1 1 632",
+	x: 3.0d,
+	y: 0.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"b24185a1",
+		"8feb3049",
+		"bbda149e",
+		"3d3b14ae"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "19203ba7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 632"
+		}]
+	}]
+}
