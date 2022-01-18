@@ -24,6 +24,13 @@ recipes.addShaped(<firmalife:climate_station_1>,
  [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
  [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
+//Климатическая станция уровня 5
+recipes.remove(<firmalife:climate_station_5>);
+recipes.addShaped(<firmalife:climate_station_5>,
+[[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
+ [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
+ [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
+
 //Свечка
 recipes.remove(<firmalife:candle> * 6);
 recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
