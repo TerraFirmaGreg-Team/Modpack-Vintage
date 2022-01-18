@@ -1,0 +1,423 @@
+{
+	title: "{tfg.quests.primitive.allTheMolds.title}",
+	icon: {
+		id: "tfc:ceramics/unfired/mold/ingot",
+		ForgeCaps: {
+			Parent: {
+				ticks: -1L,
+				heat: 0.0f
+			}
+		}
+	},
+	x: -30.0d,
+	y: -10.0d,
+	description: "{tfg.quests.primitive.allTheMolds.subtitle}",
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "311b7834",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/knife_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "36d85a39",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/knife_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "193eeada",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/scythe_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "0e99dda7",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/scythe_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "69fe160c",
+		type: "item",
+		items: [{
+			id: "tfcthings:mold/prospectors_hammer_head",
+			ForgeCaps: {
+				Parent: {
+					heat: 0.0f,
+					ticks: -1L,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "e1e4ab7f",
+		type: "item",
+		items: [{
+			id: "tfcthings:mold/unfired/prospectors_hammer_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "0e5cb0aa",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/ingot",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "bf97f4ff",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/ingot",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "6955f35a",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/pick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "850b0777",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/pick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "2a887ed1",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/shovel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "ffb0e5ce",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/shovel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "1432baae",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/axe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "0a4651d0",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/axe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "5d291fcb",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/hoe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "247d7f4a",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/hoe_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "f2967134",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/chisel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "7eb53766",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/chisel_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "fc862485",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/sword_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "9b7dea4e",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/sword_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "0f4b27e7",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/mace_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "f7723a59",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/mace_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "deaf01db",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/saw_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "46a29614",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/saw_blade",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "8ac68d10",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/javelin_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "61d7c675",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/javelin_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "8e757fb1",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/hammer_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "1be93bdd",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/hammer_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "6275f7b3",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/fired/mold/propick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					Empty: ""
+				}
+			}
+		}]
+	},
+	{
+		uid: "8f00c8d5",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/mold/propick_head",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: -17.0d,
+	y: 9.0d,
+	description: "{tfg.quests.primitive.HorsePress.subtitle}",
+	dependencies: [
+		"ffb7544a"
+	],
+	tasks: [{
+		uid: "57c04075",
+		type: "item",
+		items: [{
+			item: "horsepower:press"
+		}]
+	}]
+}

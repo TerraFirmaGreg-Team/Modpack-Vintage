@@ -1,0 +1,30 @@
+{
+	x: -6.0d,
+	y: 4.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.mattercondenser.subtitle}",
+	dependencies: [
+		"cedc31b8"
+	],
+	tasks: [{
+		uid: "c2ed694f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:condenser"
+		}]
+	},
+	{
+		uid: "7f98c67a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 38"
+		}]
+	},
+	{
+		uid: "f3b9d216",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 47"
+		}]
+	}]
+}

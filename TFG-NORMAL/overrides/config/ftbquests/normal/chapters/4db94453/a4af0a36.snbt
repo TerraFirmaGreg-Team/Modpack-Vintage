@@ -1,0 +1,16 @@
+{
+	x: 16.0d,
+	y: 1.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.craftingunits.subtitle}",
+	dependencies: [
+		"59b097c6"
+	],
+	tasks: [{
+		uid: "c5a99477",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crafting_storage_16k"
+		}]
+	}]
+}

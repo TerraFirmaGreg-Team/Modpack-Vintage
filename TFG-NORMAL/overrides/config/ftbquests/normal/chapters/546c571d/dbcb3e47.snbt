@@ -1,0 +1,23 @@
+{
+	title: "Diodes",
+	icon: "gregtech:meta_item_1 1 521",
+	x: 4.0d,
+	y: 18.0d,
+	text: [
+		"§oDon't let JEI fool you, there's only one available recipe right now for this Primitive Diode.§r",
+		"",
+		"Diode has a inconvenient recipe, but it will get cheaper and more convenient once you can obtain Polyethylene.",
+		"This is required for §dMV Circuits§r."
+	],
+	dependencies: [
+		"89d68b62",
+		"9c6e5aed"
+	],
+	tasks: [{
+		uid: "ebabc7f1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 521"
+		}]
+	}]
+}

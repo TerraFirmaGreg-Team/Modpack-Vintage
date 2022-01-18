@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: 10.0d,
+	shape: "square",
+	description: "{tfg.quests.ae2.mestorage.subtitle}",
+	dependencies: [
+		"7daba4fb"
+	],
+	tasks: [{
+		uid: "e60e6283",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}]
+	}]
+}

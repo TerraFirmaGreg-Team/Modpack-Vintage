@@ -1,0 +1,23 @@
+{
+	x: -16.0d,
+	y: 9.0d,
+	description: "{tfg.quests.primitive.HorseChoppingBlock.subtitle}",
+	dependencies: [
+		"ffb7544a"
+	],
+	tasks: [{
+		uid: "3ca681cb",
+		type: "item",
+		items: [{
+			id: "horsepower:chopper",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

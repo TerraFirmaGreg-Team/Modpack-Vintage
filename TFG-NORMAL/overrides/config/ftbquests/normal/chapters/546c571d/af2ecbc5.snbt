@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	dependencies: [
+		"2179e057"
+	],
+	tasks: [{
+		uid: "55239f87",
+		type: "item",
+		items: [{
+			item: "forestry:alveary.hygro"
+		}]
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.primitive.farmer3000.title}",
+	x: -24.0d,
+	y: -10.0d,
+	description: "{tfg.quests.primitive.farmer3000.subtitle}",
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "82c7783c",
+		type: "item",
+		items: [{
+			item: "tfc:stone/hoe/igneous_intrusive"
+		},
+		{
+			item: "tfc:stone/hoe/igneous_extrusive"
+		},
+		{
+			item: "tfc:stone/hoe/sedimentary"
+		},
+		{
+			item: "tfc:stone/hoe/metamorphic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

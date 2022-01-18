@@ -1,0 +1,22 @@
+{
+	x: -6.0d,
+	y: 0.0d,
+	shape: "circle",
+	dependencies: [
+		"854c4803"
+	],
+	tasks: [{
+		uid: "24539b11",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 400"
+		}]
+	},
+	{
+		uid: "ebf9d293",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 420"
+		}]
+	}]
+}

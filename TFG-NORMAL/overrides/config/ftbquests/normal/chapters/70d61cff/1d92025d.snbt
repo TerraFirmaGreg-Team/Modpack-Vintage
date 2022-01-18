@@ -1,0 +1,24 @@
+{
+	title: "Mainframes",
+	icon: "gregtech:meta_item_1 1 631",
+	x: -5.0d,
+	y: 0.0d,
+	shape: "circle",
+	text: [
+		"The first §1IV§r circuit. Congratulations on making it this far!",
+		"",
+		"This will be used in the §5EV§r tier.",
+		"",
+		"§bLore:§r The texture for the Mainframes is taken from an image of an IBM zEnterprise mainframe. https://www.datacenterknowledge.com/archives/2010/07/22/roundup-ibms-new-zenterprise-mainframe"
+	],
+	dependencies: [
+		"c824edb6"
+	],
+	tasks: [{
+		uid: "0dc8a130",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 631"
+		}]
+	}]
+}

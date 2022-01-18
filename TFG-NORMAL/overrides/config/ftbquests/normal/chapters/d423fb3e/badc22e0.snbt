@@ -1,0 +1,16 @@
+{
+	x: -14.0d,
+	y: -11.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzealloysmelter.subtitle}",
+	dependencies: [
+		"505c5aff"
+	],
+	tasks: [{
+		uid: "8706655a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 17"
+		}]
+	}]
+}

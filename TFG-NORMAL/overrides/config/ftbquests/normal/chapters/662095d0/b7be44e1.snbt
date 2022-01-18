@@ -1,0 +1,39 @@
+{
+	title: "The Church of Natural Farts",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 78s,
+		tag: {
+			Fluid: {
+				Amount: 1000,
+				FluidName: "natural_gas"
+			}
+		}
+	},
+	x: 2.0d,
+	y: -8.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"13e690a9"
+	],
+	tasks: [{
+		uid: "c0d1a49b",
+		type: "fluid",
+		fluid: "refinery_gas",
+		amount: 64000
+	},
+	{
+		uid: "df58ae4c",
+		type: "fluid",
+		fluid: "methane",
+		amount: 32000
+	},
+	{
+		uid: "f6f1cea4",
+		type: "fluid",
+		fluid: "lpg",
+		amount: 32000
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.primitive.rockanvil.title}",
+	x: -20.0d,
+	y: -8.0d,
+	description: "{tfg.quests.primitive.rockanvil.subtitle}",
+	dependencies: [
+		"9f1afc5f",
+		"9eea227d"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "05c38317",
+		type: "item",
+		items: [{
+			item: "tfc:raw/granite"
+		},
+		{
+			item: "tfc:raw/diorite"
+		},
+		{
+			item: "tfc:raw/gabbro"
+		},
+		{
+			item: "tfc:raw/rhyolite"
+		},
+		{
+			item: "tfc:raw/basalt"
+		},
+		{
+			item: "tfc:raw/andesite"
+		},
+		{
+			item: "tfc:raw/dacite"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 11.0d,
+	y: -1.0d,
+	shape: "hexagon",
+	dependencies: [
+		"443016e0",
+		"1fb52d2d"
+	],
+	tasks: [{
+		uid: "b526b440",
+		type: "item",
+		items: [{
+			item: "aeadditions:fluidfiller"
+		}]
+	}]
+}

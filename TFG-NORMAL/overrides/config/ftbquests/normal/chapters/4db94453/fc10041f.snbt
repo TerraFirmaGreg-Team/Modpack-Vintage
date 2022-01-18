@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 10.0d,
+	shape: "circle",
+	dependencies: [
+		"353f5942"
+	],
+	tasks: [{
+		uid: "c2e4f430",
+		type: "item",
+		items: [{
+			id: "aeadditions:storage.fluid.portable",
+			tag: {
+				fuzzyMode: "IGNORE_ALL"
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ce369931",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:portable_cell",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

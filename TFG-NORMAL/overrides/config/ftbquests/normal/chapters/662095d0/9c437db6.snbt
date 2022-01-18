@@ -1,0 +1,32 @@
+{
+	title: "Overclocking",
+	x: 6.0d,
+	y: -6.0d,
+	text: [
+		"§oNow you might wonder, why is every machine duplicated across all tiers? Because you might want them for overclocking.§r",
+		"",
+		"Overclocking is a mechanic that happens when you try to run a recipe in a machine §dthat is higher tier than the recipe itself§r.",
+		"Overclocking implies:",
+		"§9-§r 2x recipe speed",
+		"§9-§r 4x power consumption",
+		"§9-§r 2x total energy cost",
+		"",
+		"As you can see there are upsides and downsides. It is a game of balancing decisions: if you want to cut time duration at the cost of greater consumption.",
+		"You and only you can answer this question.",
+		"§9However I will tell you this:§r for automated setups, overclock as little as possible!",
+		"",
+		"",
+		"Machines have a button to set the Overclocking tier. Click on it to cycle through all the available Voltages, and set it on §dX§r to disable Overclocking.",
+		"",
+		"",
+		"§bLore:§r GTCE overclocking was extremely awkward... If the recipe consumed 8EU/t or below, it would do a classic overclock. However if the recipe consumed more than 8EU/t, every Overclock would be 2.8x faster!",
+		"GTCEu has a config to select the Overclock speed bonus, it is a very sensible value."
+	],
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "c1e27c23",
+		type: "checkmark"
+	}]
+}

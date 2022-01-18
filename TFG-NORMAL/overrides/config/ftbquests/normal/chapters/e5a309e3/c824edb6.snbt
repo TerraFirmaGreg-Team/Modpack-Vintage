@@ -1,0 +1,21 @@
+{
+	title: "HV Circuit Assembling",
+	icon: "gregtech:machine 1 637",
+	x: -3.0d,
+	y: -8.0d,
+	text: [
+		"The next §3Circuit Assembler§r, used to make your first ever §aMainframe§r.",
+		"",
+		"You can put this off until §5EV§r."
+	],
+	dependencies: [
+		"fc8e1322"
+	],
+	tasks: [{
+		uid: "f4a2c390",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 637"
+		}]
+	}]
+}

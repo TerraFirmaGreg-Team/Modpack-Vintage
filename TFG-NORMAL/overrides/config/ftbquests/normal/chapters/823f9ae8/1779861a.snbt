@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.ironpile.title}",
+	x: -4.0d,
+	y: -8.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.ironpile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "613f9740",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustRegularIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustRegularIron"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	shape: "hexagon",
+	dependencies: [
+		"cade6fd1"
+	],
+	tasks: [{
+		uid: "13c31111",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			Damage: 4s,
+			tag: {
+				FarmBlock: 3
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

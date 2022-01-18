@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 4.0d,
+	dependencies: [
+		"56c53ffc",
+		"1dbc318f"
+	],
+	tasks: [{
+		uid: "e871ad80",
+		type: "item",
+		items: [{
+			item: "forestry:escritoire"
+		}]
+	}]
+}

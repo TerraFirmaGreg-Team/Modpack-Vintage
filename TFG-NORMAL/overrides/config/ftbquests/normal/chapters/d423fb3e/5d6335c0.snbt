@@ -1,0 +1,15 @@
+{
+	x: -10.0d,
+	y: -3.0d,
+	description: "{tfg.quests.steam.safe.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "14783ce3",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1646"
+		}]
+	}]
+}

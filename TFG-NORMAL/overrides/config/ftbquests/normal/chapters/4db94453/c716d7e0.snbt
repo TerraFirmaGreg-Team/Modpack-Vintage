@@ -1,0 +1,14 @@
+{
+	x: -7.0d,
+	y: 9.0d,
+	dependencies: [
+		"74286683"
+	],
+	tasks: [{
+		uid: "0c9cbf0d",
+		type: "item",
+		items: [{
+			item: "aeadditions:storage.casing"
+		}]
+	}]
+}

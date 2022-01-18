@@ -1,0 +1,19 @@
+{
+	title: "Nanoprocessor Mainframe",
+	icon: "gregtech:meta_item_1 1 635",
+	x: 3.0d,
+	y: 6.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"f99bfb2b"
+	],
+	tasks: [{
+		uid: "89bfe98e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 635"
+		}]
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Processing Array",
+	icon: "gregtech:machine 1 1030",
+	x: 6.0d,
+	y: 0.0d,
+	shape: "pentagon",
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"3d3b14ae",
+		"442f20c2",
+		"1d92025d",
+		"c96cd6c3"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "548401dc",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1030"
+		}]
+	}]
+}

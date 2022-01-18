@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"56c53ffc"
+	],
+	tasks: [{
+		uid: "24f8ef7f",
+		type: "item",
+		items: [{
+			item: "forestry:habitat_screen"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "Tungstensteel",
+	icon: "gregtech:meta_ingot 1 2013",
+	x: 6.0d,
+	y: -3.0d,
+	text: [
+		"The main IV Material!"
+	],
+	dependencies: [
+		"9f71f795",
+		"6f2af6e8"
+	],
+	tasks: [{
+		uid: "814b51cf",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2013"
+		}]
+	}]
+}

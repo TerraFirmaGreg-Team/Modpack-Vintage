@@ -1,0 +1,22 @@
+{
+	x: -5.0d,
+	y: 5.0d,
+	description: "{tfg.quests.primitive.rubbermix.subtitle}",
+	dependencies: [
+		"6cec6109",
+		"addc1b8a"
+	],
+	tasks: [{
+		uid: "93b291da",
+		type: "item",
+		items: [{
+			id: "tfctech:latex/rubber_mix",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

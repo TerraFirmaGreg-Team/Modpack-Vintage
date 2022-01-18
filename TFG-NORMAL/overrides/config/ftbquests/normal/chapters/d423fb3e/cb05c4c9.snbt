@@ -1,0 +1,15 @@
+{
+	x: -14.0d,
+	y: -3.0d,
+	description: "{tfg.quests.steam.raintank.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "aa6e3815",
+		type: "item",
+		items: [{
+			item: "forestry:raintank"
+		}]
+	}]
+}

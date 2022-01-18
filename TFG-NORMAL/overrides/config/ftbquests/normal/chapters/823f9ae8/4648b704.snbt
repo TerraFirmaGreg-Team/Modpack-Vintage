@@ -1,0 +1,15 @@
+{
+	x: -28.0d,
+	y: 0.0d,
+	description: "{tfg.quests.primitive.smallsalt.subtitle}",
+	dependencies: [
+		"263fdccc"
+	],
+	tasks: [{
+		uid: "c1659a83",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 312"
+		}]
+	}]
+}

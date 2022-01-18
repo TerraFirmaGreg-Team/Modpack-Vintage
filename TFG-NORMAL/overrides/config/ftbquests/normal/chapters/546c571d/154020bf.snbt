@@ -1,0 +1,18 @@
+{
+	x: 5.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.steam.analyzator.subtitle}",
+	dependencies: [
+		"56c53ffc"
+	],
+	tasks: [{
+		uid: "50347293",
+		type: "item",
+		items: [{
+			item: "forestry:portable_alyzer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "Quantum Mainframe",
+	icon: "gregtech:meta_item_1 1 639",
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"b762c221"
+	],
+	tasks: [{
+		uid: "fcad811a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 639"
+		}]
+	}]
+}

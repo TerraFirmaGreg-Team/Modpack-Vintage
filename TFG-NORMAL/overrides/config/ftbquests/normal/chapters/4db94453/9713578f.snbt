@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.fluxpipe.subtitle}",
+	dependencies: [
+		"848cab62"
+	],
+	tasks: [{
+		uid: "aa16b584",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 16"
+		}]
+	}]
+}
