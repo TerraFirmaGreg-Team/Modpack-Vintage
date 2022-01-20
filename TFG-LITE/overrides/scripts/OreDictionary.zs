@@ -145,6 +145,16 @@ for item in ForestryPropolisArray {
 //Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 // --- Minecraft
+//Sand
+<ore:sand>.remove(<minecraft:sand>);
+//Dirt
+<ore:dirt>.remove(<minecraft:dirt>);
+//Stone
+<ore:stone>.remove(<minecraft:stone>);
+//Gravel
+<ore:gravel>.remove(<minecraft:gravel>);
+//Cobblestone
+<ore:cobblestone>.remove(<minecraft:cobblestone>);
 //Lapis
 <ore:dye>.remove(<minecraft:dye:4>);
 <ore:dyeBlue>.remove(<minecraft:dye:4>);

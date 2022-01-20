@@ -731,7 +731,7 @@ macerator.recipeBuilder()
 	.EUt(12)
 	.buildAndRegister();
 //Рецепт сингулярности
-icompressor.recipeBuilder()
+implosion_compressor.recipeBuilder()
 	.inputs(<appliedenergistics2:material:47>)
 	.property("explosives", 16)
 	.outputs(<appliedenergistics2:material:48>)

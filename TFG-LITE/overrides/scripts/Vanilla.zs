@@ -148,6 +148,20 @@ recipes.removeByRecipeName("minecraft:tripwire_hook");
 recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("minecraft:diamond_block");
 
+//Обычное золотое яблоко
+chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_ingot> * 8], null).remove();
+chemical_reactor.recipeBuilder()
+    .inputs(<minecraft:gold_ingot> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
+    .outputs(<minecraft:golden_apple>)
+    .duration(20).EUt(30).buildAndRegister();
+
+//Зачарованное золотое яблоко
+chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_block> * 8], null).remove();
+chemical_reactor.recipeBuilder()
+    .inputs(<minecraft:gold_block> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
+    .outputs(<minecraft:golden_apple:1>)
+    .duration(20).EUt(30).buildAndRegister();
+
 //Создание крафтов
 //Iron Trapdoor
 assembler.recipeBuilder()

@@ -1,5 +1,5 @@
 {
-  "weight": 40,
+  "weight": 45,
   "density": 0.25,
   "max_height": 70,
   "min_height": 5,
@@ -7,7 +7,7 @@
     "type": "surface_rock",
     "material": "graphite"
   },
-  "generation_predicate":["block:tfc:raw/marble", "block:tfc:raw/quartzite", "block:tfc:raw/gneiss", "block:tfc:raw/schist"],
+  "generation_predicate":["ore_dict:RawMetamorphic"],
   "generator": {
     "type": "layered",
     "radius": [

@@ -206,6 +206,9 @@ for item in RemoveItemRecipe{
   recipes.remove(item);
 }
 
+//Удаление странного рецепта стекла
+furnace.remove(<minecraft:glass>);
+
 //Еда из GC
 ItemRegistry.registerFood(<galaxyspace:br_foods>, 4, 0.6, 0.7, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0);
 
@@ -425,7 +428,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 //SSHD-Alloy
-icompressor.recipeBuilder()
+implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateBronze> * 2, <ore:plateBlackSteel> * 3)
 	.property("explosives", 4)
 	.outputs(<galaxyspace:compressed_plates:4> * 2)
