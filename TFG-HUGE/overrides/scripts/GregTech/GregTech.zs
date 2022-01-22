@@ -14,9 +14,9 @@ val ItemsToRemoveFromJEI as IItemStack[] = [
     //Primitive Bricks
     <gregtech:metal_casing:1>,
     //Flour
-    <gregtech:meta_dust:1615>,
-    <gregtech:meta_dust_small:1615>,
-    <gregtech:meta_dust_tiny:1615>,
+    <ore:dustRegularWheat>.firstItem,
+    <ore:dustSmallWheat>.firstItem,
+    <ore:dustTinyWheat>.firstItem,
     //Compressed Clay
     <gregtech:meta_item_1:349>,
     //FireClay
@@ -32,34 +32,24 @@ for item in ItemsToRemoveFromJEI{
 val ItemsToRemove as IItemStack[] = [
 	//Paper
     <minecraft:paper> * 2,
-    //Coke Oven
-    <gregtech:machine:1017>,
     //LV Casing
     <gregtech:machine_casing:1>,
-    //Steam Miner
-    <gregtech:machine:21>,
-    //Steam Macerator
-    <gregtech:machine:9>,
-    //Steam Rock Breaker
-    <gregtech:machine:19>,
-    //Pump deck
+    //Pump casing
     <gregtech:steam_casing:4>,
-    //Pump hatch
-    <gregtech:machine:1649>,
-    //Primitive pump
-    <gregtech:machine:1648>,
-    //Steam Coal Boiler
-    <gregtech:machine:1>,
-    //High Pressure Coal Boiler
-    <gregtech:machine:2>,
-    //Steam Boiler
-    <gregtech:machine:15>,
-    //Steam Alloy Smelter
-    <gregtech:machine:17>,
-    //Blast Furnace
-    <gregtech:machine:1001>,
-    //Multi-Smelter
-    <gregtech:machine:1006>
+    //Other
+    <metaitem:coke_oven>,
+    <metaitem:steam_miner>,
+    <metaitem:steam_macerator_bronze>,
+    <metaitem:steam_rock_breaker_bronze>,
+    <metaitem:pump_hatch>,
+    <metaitem:primitive_water_pump>,
+    <metaitem:steam_boiler_coal_bronze>,
+    <metaitem:steam_boiler_coal_steel>,
+    <metaitem:steam_furnace_bronze>,
+    <metaitem:steam_alloy_smelter_bronze>,
+    <metaitem:electric_blast_furnace>,
+    <metaitem:multi_furnace>,
+    <metaitem:workbench>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -79,43 +69,43 @@ recipes.removeByRecipeName("gregtech:iron_bars");
 recipes.removeByRecipeName("gregtech:quartz_sand");
 
 //Small Steam Coal Boiler
-recipes.addShaped(<gregtech:machine:1>,
+recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
 [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
  [<ore:plateBronze>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBronze>],
  [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 //High Pressure Coal Boiler
-recipes.addShaped(<gregtech:machine:2>,
+recipes.addShaped(<metaitem:steam_boiler_coal_steel>,
 [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateSteel>],
  [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
-//Steam Boiler
-recipes.addShaped(<gregtech:machine:15>,
+//Steam Furnace
+recipes.addShaped(<metaitem:steam_furnace_bronze>,
 [[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
  [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing:1>,<ore:pipeSmallFluidBronze>],
  [<ore:pipeSmallFluidBronze>, <tfc:blast_furnace>, <ore:pipeSmallFluidBronze>]]);
 
 //Steam Alloy Smelter
-recipes.addShaped(<gregtech:machine:17>,
+recipes.addShaped(<metaitem:steam_alloy_smelter_bronze>,
 [[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
  [<tfc:blast_furnace>, <gregtech:steam_casing:1>, <tfc:blast_furnace>],
  [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>]]);
 
 //Blast Furnace
-recipes.addShaped(<gregtech:machine:1001>,
+recipes.addShaped(<metaitem:electric_blast_furnace>,
 [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
  [<ore:circuitBasic>, <gregtech:metal_casing:2>, <ore:circuitBasic>],
  [<ore:cableGtSingleTin>, <ore:circuitBasic>, <ore:cableGtSingleTin>]]);
 
 //Multi-Smelter
-recipes.addShaped(<gregtech:machine:1006>,
+recipes.addShaped(<metaitem:multi_furnace>,
 [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
  [<ore:circuitAdvanced>, <gregtech:metal_casing:2>, <ore:circuitAdvanced>],
  [<ore:cableGtSingleAnnealedCopper>, <ore:circuitAdvanced>, <ore:cableGtSingleAnnealedCopper>]]);
 
 //Crafting Station
-recipes.addShaped(<gregtech:machine:1647>,
+recipes.addShaped(<metaitem:workbench>,
 [[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
  [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
  [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
@@ -126,43 +116,43 @@ recipes.addShaped(<gregtech:machine_casing:1>,
  [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
  [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
 
- //Pump deck
+//Primitive water pump deck
 recipes.addShaped(<gregtech:steam_casing:4> * 2,
 [[<ore:screwIron>, <ore:plankWood>, <ore:screwIron>],
- [<ore:craftingToolScrewdriver>, <ore:slabCobblestone>, <ore:craftingToolHardHammer>]]);
+ [<ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:slabCobblestone>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]]);
 
-//Pump hatch
-recipes.addShaped(<gregtech:machine:1649>,
-[[<ore:screwIron>, <ore:ringIron>, <ore:craftingToolScrewdriver>],
+//Primitive water pump hatch
+recipes.addShaped(<metaitem:pump_hatch>,
+[[<ore:screwIron>, <ore:ringIron>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()],
  [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
  [<ore:slabCobblestone>, <ore:ringIron>, <ore:slabCobblestone>]]);
 
-//Primitive pump
-recipes.addShaped(<gregtech:machine:1648>,
+//Primitive water pump
+recipes.addShaped(<metaitem:primitive_water_pump>,
 [[<ore:ringIron>, <ore:pipeNormalFluidWood>, <ore:screwIron>],
- [<ore:rotorIron>, <ore:plankWood>, <ore:craftingToolScrewdriver>],
+ [<ore:rotorIron>, <ore:plankWood>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()],
  [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 //Coke Oven
-recipes.addShaped(<gregtech:machine:1017>,
+recipes.addShaped(<metaitem:coke_oven>,
 [[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
  [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
 
 //Steam Miner
-recipes.addShaped(<gregtech:machine:9>,
+recipes.addShaped(<metaitem:steam_miner>,
 [[Diamonds, <ore:pipeSmallFluidBronze>, Diamonds],
  [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
  [<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>]]);
 
 //Steam Macerator
-recipes.addShaped(<gregtech:machine:21>,
+recipes.addShaped(<metaitem:steam_macerator_bronze>,
 [[Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
  [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
  [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
 
 //Steam Rock Breaker
-recipes.addShaped(<gregtech:machine:19>,
+recipes.addShaped(<metaitem:steam_rock_breaker_bronze>,
 [[<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>],
  [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
  [Diamonds, <ore:pipeSmallFluidBronze>, Diamonds]]);
@@ -172,6 +162,12 @@ recipes.addShaped(<ore:dustQuartzSand>.firstItem,
 [[null, <ore:sand>, null],
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
  [null, null, null]]);
+
+//Fix Dirt Exploit
+macerator.findRecipe(2, [<gregtech:meta_item_1:440>], null);
+
+//Fix Gravel Exploit
+forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 
 //Quartz Sand - 2
 macerator.findRecipe(2, [<minecraft:sand>], null).remove();
@@ -244,30 +240,6 @@ rock_breaker.findRecipe(60, [<ore:stoneGranite>.firstItem], null).remove();
 rock_breaker.findRecipe(60, [<ore:stoneDiorite>.firstItem], null).remove();
 rock_breaker.findRecipe(60, [<ore:stoneAndesite>.firstItem], null).remove();
 
-//Фиксы корпусов
-//Удаление
-assembler.findRecipe(16, [<ore:plateWroughtIron>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateSteel>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateAluminium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateStainlessSteel>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateTitanium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateTungstenSteel>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateRhodiumPlatedPalladium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateNaquadahAlloy>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateDarmstadtium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-assembler.findRecipe(16, [<ore:plateNeutronium>.firstItem * 8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
-//Создание
-assembler.recipeBuilder().inputs(<ore:plateWroughtIron> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateSteel> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:1>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateAluminium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:2>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateStainlessSteel> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:3>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateTitanium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:4>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateTungstenSteel> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:5>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateRhodiumPlatedPalladium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:6>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateNaquadahAlloy> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:7>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateDarmstadtium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:8>).duration(20).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs(<ore:plateNeutronium> * 6).notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 8})).outputs(<gregtech:machine_casing:14>).duration(20).EUt(16).buildAndRegister();
-
 //Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
@@ -278,7 +250,7 @@ recipes.removeByRecipeName("gregtech:dust_blue_steel");
 mixer.findRecipe(7, [<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
 mixer.recipeBuilder()
     .inputs(<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
-    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+    .circuit(1)
     .outputs(<gregtech:meta_dust:2511> * 8)
     .duration(800).EUt(8).buildAndRegister();
 
@@ -287,7 +259,7 @@ recipes.removeByRecipeName("gregtech:dust_red_steel");
 mixer.findRecipe(7, [<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
 mixer.recipeBuilder()
     .inputs(<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
-    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+    .circuit(1)
     .outputs(<gregtech:meta_dust:2510> * 8)
     .duration(800).EUt(8).buildAndRegister();
 

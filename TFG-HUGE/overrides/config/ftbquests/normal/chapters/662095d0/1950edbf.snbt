@@ -34,10 +34,5 @@
 		items: [{
 			item: "gregtech:machine 1 1004"
 		}]
-	}],
-	rewards: [{
-		uid: "8474a17b",
-		type: "choice",
-		table: 0
 	}]
 }

@@ -24,3 +24,16 @@ TFG-LITE/overrides/config/xaerominimap_entities.json
 TFG-LITE/overrides/config/xaeropatreon.txt
 TFG-LITE/overrides/config/xaeroworldmap.txt
 TFG-LITE/overrides/config/xaerominimap.txt
+TFG-HUGE/overrides/config/AppliedEnergistics2/CustomRecipes.cfg
+TFG-HUGE/overrides/config/AppliedEnergistics2/items.csv
+TFG-HUGE/overrides/config/astralsorcery/amulet_enchantments.cfg
+TFG-HUGE/overrides/config/enderstorage.cfg
+TFG-HUGE/overrides/config/fantasticlib/reference/blocks.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/blockstates.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/enchantments.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/entities.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/items.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/oredict.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/recipes.txt
+TFG-HUGE/overrides/config/fantasticlib/reference/sounds.txt
+TFG-HUGE/overrides/config/jei/worldSettings.cfg

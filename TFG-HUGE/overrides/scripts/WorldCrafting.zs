@@ -32,8 +32,10 @@ FluidToItem.transform(<ore:dustSmallSphalerite>.firstItem * 2, <liquid:fresh_wat
 //Вариации Свинца
 FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureLead>]);
 FluidToItem.transform(<ore:dustSmallGalena>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureGalena>]);
-//Вариации Золото
+//Вариации Золота
 FluidToItem.transform(<ore:dustSmallGold>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureGold>]);
+//Вариации Серебра
+FluidToItem.transform(<ore:dustSmallSilver>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureSilver>]);
 //Вариации Висмута
 FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureBismuth>]);
 //Графит
@@ -75,8 +77,10 @@ FluidToItem.transform(<ore:dustSmallSphalerite>.firstItem * 2, <liquid:salt_wate
 //Вариации Свинца
 FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureLead>]);
 FluidToItem.transform(<ore:dustSmallGalena>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureGalena>]);
-//Вариации Золото
-FluidToItem.transform(<ore:dustSmallGold>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureGold>]);
+//Вариации Золота
+FluidToItem.transform(<ore:dustSmallSilver>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureSilver>]);
+//Вариации Серебра
+FluidToItem.transform(<ore:dustSmallSilver>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureSilver>]);
 //Вариации Висмута
 FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureBismuth>]);
 //Графит

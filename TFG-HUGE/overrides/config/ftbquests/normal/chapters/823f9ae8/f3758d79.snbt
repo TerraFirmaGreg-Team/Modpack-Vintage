@@ -1,5 +1,4 @@
 {
-	title: "{tfg.quests.primitive.redsteelingot.title}",
 	x: 12.0d,
 	y: -3.0d,
 	description: "{tfg.quests.primitive.redsteelingot.subtitle}",
@@ -9,6 +8,7 @@
 	tasks: [{
 		uid: "acb0ea9e",
 		type: "item",
+		title: "{tfg.quests.primitive.redsteelingot.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {

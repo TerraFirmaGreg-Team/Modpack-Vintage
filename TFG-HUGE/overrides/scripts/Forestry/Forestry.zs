@@ -231,7 +231,7 @@ Carpenter.addRecipe(<forestry:escritoire>,
 
 // --- Habitat Screen
 Carpenter.addRecipe(<forestry:habitat_screen>,
-[[null, <gregtech:meta_item_1:799>, null],
+[[null, <metaitem:cover.screen>, null],
  [<ore:plateTin>, <ore:circuitBasic>, <ore:plateTin>],
  [null, <ore:plateTin>, null]], 250, <liquid:water> * 2000);
 
@@ -416,30 +416,32 @@ extractor.recipeBuilder()
 
 // --- Basic Circuit Board
 circuit_assembler.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:217>, <appliedenergistics2:material:17>, <ore:wireGtSingleAluminium>*4)
-	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+	.inputs(<metaitem:board.coated>, <appliedenergistics2:material:17>, <ore:wireGtSingleAluminium>*4)
+	.circuit(1)
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:0>.withTag({T: 0 as short}))
 	.duration(200).EUt(30).buildAndRegister();
 
 // --- Enhanced Circuit Board
 circuit_assembler.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:218>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleAnnealedCopper>*4)
-	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+	.inputs(<metaitem:board.phenolic>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleAnnealedCopper>*4)
+	.circuit(1)
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:1>.withTag({T: 1 as short}))
 	.duration(200).EUt(30).buildAndRegister();
 
 // --- Refined Circuit Board
-circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:219>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleBlackSteel>*4)
-	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+circuit_assembler.recipeBuilder()
+	.inputs(<metaitem:board.plastic>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleBlackSteel>*4)
+	.circuit(1)
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:2>.withTag({T: 2 as short}))
 	.duration(200).EUt(30).buildAndRegister();
 
 // --- Intricate Circuit Board
-circuit_assembler.recipeBuilder().inputs(<gregtech:meta_item_1:220>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleGold>*4)
-	.notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 1}))
+circuit_assembler.recipeBuilder()
+	.inputs(<metaitem:board.epoxy>, <appliedenergistics2:material:17>*2, <ore:wireGtSingleGold>*4)
+	.circuit(1)
 	.fluidInputs([<liquid:soldering_alloy> * 576])
 	.outputs(<forestry:chipsets:3>.withTag({T: 3 as short}))
 	.duration(200).EUt(30).buildAndRegister();
@@ -461,7 +463,7 @@ recipes.addShaped(<forestry:soldering_iron>,
 
 // --- Карпентер
 recipes.addShaped(<forestry:carpenter>, 
-[[<ore:plateCupronickel>, <gregtech:machine:1597>, <ore:plateCupronickel>],
+[[<ore:plateCupronickel>, <metaitem:drum.steel>, <ore:plateCupronickel>],
  [<ore:circuitBasic>, <forestry:sturdy_machine>, <ore:circuitBasic>],
  [<ore:gearSteel>, <ore:circuitBasic>, <ore:gearSteel>]]);
 
@@ -470,13 +472,6 @@ recipes.addShaped(<forestry:sturdy_machine>,
 [[<ore:plateBrass>, <ore:screwSteel>, <ore:plateBrass>],
  [<ore:screwSteel>, null, <ore:screwSteel>],
  [<ore:plateBrass>, <ore:screwSteel>, <ore:plateBrass>]]);
-
-// --- Фабрикатор
-/*
-recipes.addShaped(<forestry:fabricator>,  
-[[<gregtech:meta_item_1:17184>, <gregtech:machine:1502>, <gregtech:meta_item_1:17184>],
- [<gregtech:meta_item_2:32456>, <forestry:sturdy_machine>, <gregtech:meta_item_2:32456>],
- [<gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32601>, <gregtech:meta_item_1:17184>]]);*/
 
 // --- Аналайзер
 recipes.addShaped(<forestry:analyzer>,
@@ -493,7 +488,7 @@ recipes.addShaped(<forestry:bee_house>,
 // --- Определитель окружающей среды
 recipes.addShaped(<forestry:habitat_locator>,
 [[null, <ore:plateCopper>, null],
- [<ore:plateCopper>, <gregtech:meta_item_1:233>, <ore:plateCopper>],
+ [<ore:plateCopper>, <metaitem:sensor.mv>, <ore:plateCopper>],
  [null, <ore:plateCopper>, null]]);
 
 // --- Рамка простая
@@ -517,7 +512,7 @@ recipes.addShaped(<forestry:smoker>,
 // --- Бочка под дождь
 recipes.addShaped(<forestry:raintank>,
 [[<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>],
- [<ore:plateSteel>, <gregtech:machine:1597>, <ore:plateSteel>],
+ [<ore:plateSteel>, <metaitem:drum.bronze>, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:paneGlass>, <ore:plateSteel>]]);
 
 // --- Создаватель окружающей среды
