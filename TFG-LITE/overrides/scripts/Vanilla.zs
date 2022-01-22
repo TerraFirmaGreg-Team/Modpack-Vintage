@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.ItemRegistry;
 
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -174,6 +175,12 @@ recipes.addShaped(<minecraft:redstone_lamp>,
 [[<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>],
  [<ore:stickWroughtIron>, <ore:cableGtSingleRedAlloy>, <ore:stickWroughtIron>],
  [<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>]]);
+
+//Удочка
+recipes.addShaped(<minecraft:fishing_rod>,
+[[null, null, <minecraft:stick>],
+ [null, <minecraft:stick>, <ore:string>],
+ [<minecraft:stick>, null, <ore:string>]]);
 
 //Чар стол
 recipes.addShaped(<minecraft:enchanting_table>,
