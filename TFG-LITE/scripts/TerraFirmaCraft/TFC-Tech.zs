@@ -6,10 +6,6 @@ import mods.terrafirmacraft.Barrel;
 
 // --- Removing
 mods.jei.JEI.removeAndHide(<tfctech:powder/potash>);
-//TODO
-mods.jei.JEI.removeAndHide(<tfctech:electric_forge>);
-mods.jei.JEI.removeAndHide(<tfctech:induction_crucible>);
-mods.jei.JEI.removeAndHide(<tfctech:fridge>);
 
 // --- Furnace recipes for TFC items
 furnace.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>);
