@@ -388,3 +388,65 @@ for item in gemExquisite {
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 //Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
+
+/*
+        //TFG-MOD
+        //Tools
+        OreDictionary.registerOre("saw", MetaItems.SAW.getStackForm());
+        OreDictionary.registerOre("hammer", MetaItems.HARD_HAMMER.getStackForm());
+        OreDictionary.registerOre("knife", MetaItems.KNIFE.getStackForm());
+
+        //Bronze Double Sheets
+        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
+        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
+        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
+
+        //Bronze Single Sheets
+        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
+        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
+        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
+
+        //Single Sheets -> GT plates
+        OreDictionary.registerOre("sheetCopper", OreDictUnifier.get(OrePrefix.plate, Materials.Copper));
+        OreDictionary.registerOre("sheetBismuth", OreDictUnifier.get(OrePrefix.plate, Materials.Bismuth));
+        OreDictionary.registerOre("sheetBrass", OreDictUnifier.get(OrePrefix.plate, Materials.Brass));
+        OreDictionary.registerOre("sheetGold", OreDictUnifier.get(OrePrefix.plate, Materials.Gold));
+        OreDictionary.registerOre("sheetLead", OreDictUnifier.get(OrePrefix.plate, Materials.Lead));
+        OreDictionary.registerOre("sheetNickel", OreDictUnifier.get(OrePrefix.plate, Materials.Nickel));
+        OreDictionary.registerOre("sheetRoseGold", OreDictUnifier.get(OrePrefix.plate, Materials.RoseGold));
+        OreDictionary.registerOre("sheetSilver", OreDictUnifier.get(OrePrefix.plate, Materials.Silver));
+        OreDictionary.registerOre("sheetTin", OreDictUnifier.get(OrePrefix.plate, Materials.Tin));
+        OreDictionary.registerOre("sheetZinc", OreDictUnifier.get(OrePrefix.plate, Materials.Zinc));
+        OreDictionary.registerOre("sheetSterlingSilver", OreDictUnifier.get(OrePrefix.plate, Materials.SterlingSilver));
+        OreDictionary.registerOre("sheetPlatinum", OreDictUnifier.get(OrePrefix.plate, Materials.Platinum));
+        OreDictionary.registerOre("sheetBismuthBronze", OreDictUnifier.get(OrePrefix.plate, Materials.BismuthBronze));
+        OreDictionary.registerOre("sheetBronze", OreDictUnifier.get(OrePrefix.plate, Materials.Bronze));
+        OreDictionary.registerOre("sheetBlackBronze", OreDictUnifier.get(OrePrefix.plate, Materials.BlackBronze));
+        OreDictionary.registerOre("sheetWroughtIron", OreDictUnifier.get(OrePrefix.plate, Materials.WroughtIron));
+        OreDictionary.registerOre("sheetSteel", OreDictUnifier.get(OrePrefix.plate, Materials.Steel));
+        OreDictionary.registerOre("sheetBlackSteel", OreDictUnifier.get(OrePrefix.plate, Materials.BlackSteel));
+        OreDictionary.registerOre("sheetBlueSteel", OreDictUnifier.get(OrePrefix.plate, Materials.BlueSteel));
+        OreDictionary.registerOre("sheetRedSteel", OreDictUnifier.get(OrePrefix.plate, Materials.RedSteel));
+
+        //Double Sheets -> GT plates
+        OreDictionary.registerOre("sheetDoubleCopper", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Copper));
+        OreDictionary.registerOre("sheetDoubleBismuth", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bismuth));
+        OreDictionary.registerOre("sheetDoubleBrass", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Brass));
+        OreDictionary.registerOre("sheetDoubleGold", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Gold));
+        OreDictionary.registerOre("sheetDoubleLead", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Lead));
+        OreDictionary.registerOre("sheetDoubleNickel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Nickel));
+        OreDictionary.registerOre("sheetDoubleRoseGold", OreDictUnifier.get(OrePrefix.plateDouble, Materials.RoseGold));
+        OreDictionary.registerOre("sheetDoubleSilver", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Silver));
+        OreDictionary.registerOre("sheetDoubleTin", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Tin));
+        OreDictionary.registerOre("sheetDoubleZinc", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Zinc));
+        OreDictionary.registerOre("sheetDoubleSterlingSilver", OreDictUnifier.get(OrePrefix.plateDouble, Materials.SterlingSilver));
+        OreDictionary.registerOre("sheetDoublePlatinum", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Platinum));
+        OreDictionary.registerOre("sheetDoubleBismuthBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
+        OreDictionary.registerOre("sheetDoubleBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
+        OreDictionary.registerOre("sheetDoubleBlackBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
+        OreDictionary.registerOre("sheetDoubleWroughtIron", OreDictUnifier.get(OrePrefix.plateDouble, Materials.WroughtIron));
+        OreDictionary.registerOre("sheetDoubleSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Steel));
+        OreDictionary.registerOre("sheetDoubleBlackSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackSteel));
+        OreDictionary.registerOre("sheetDoubleBlueSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlueSteel));
+        OreDictionary.registerOre("sheetDoubleRedSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.RedSteel));
+		*/
