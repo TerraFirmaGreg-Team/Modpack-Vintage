@@ -905,16 +905,7 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 	[<ore:plateAluminium>, <appliedenergistics2:chest>, <ore:plateAluminium>],
 	[<appliedenergistics2:part:16>, <appliedenergistics2:material:37>, <appliedenergistics2:part:16>],
 	[<ore:plateAluminium>, <appliedenergistics2:material:24>, <ore:plateAluminium>]]);
-// //Стеклянный кабель
-// recipes.addShaped(<appliedenergistics2:part:16> * 3, [
-// 	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>],
-// 	[<appliedenergistics2:part:140>, <appliedenergistics2:part:140>, <appliedenergistics2:part:140>],
-// 	[<ore:stickCertusQuartz>, <ore:dustFluix>, <ore:stickCertusQuartz>]]);
-// //Стеклянный кабель закрытый
-// recipes.addShaped(<appliedenergistics2:part:36> * 3, [
-// 	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>],
-// 	[<appliedenergistics2:part:16>, <appliedenergistics2:part:16>, <appliedenergistics2:part:16>],
-// 	[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>]]);
+
 //Ядро А
 recipes.addShaped(<appliedenergistics2:material:44>, [
 	[<ore:stickNetherQuartz>, <appliedenergistics2:material:22>, <ore:stickNetherQuartz>],
