@@ -14,3 +14,11 @@ import mods.gregtech.material.Material;
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
 <material:bismuth>.addOre();
 <material:glowstone>.addOre(1, 1, true);
+
+for material in MaterialRegistry.getAllMaterials()
+{
+    if (material.hasTools())
+    {
+        material.setToolStats(material.toolSpeed * 2, material.toolAttackDamage, material.toolDurability * 7);
+    }
+}

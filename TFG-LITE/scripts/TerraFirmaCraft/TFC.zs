@@ -8,7 +8,7 @@ import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
-import mods.terrafirmacraft.leatherKnapping;
+import mods.terrafirmacraft.LeatherKnapping;
 
 //Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -346,7 +346,7 @@ vacuum_freezer.recipeBuilder().fluidInputs(<liquid:salt_water> * 1000).outputs(<
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
 
 //Различные крафты для лассо
-leatherKnapping.addRecipe("tfg:lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
+LeatherKnapping.addRecipe("tfg:lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
 assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], null).remove();
 assembler.recipeBuilder()
 	.inputs(<ore:string> * 2, <ore:leather>)
@@ -385,12 +385,12 @@ recipes.addShaped(<gregtech:meta_item_1:347>,
 recipes.removeByRecipeName("tfc:paper");
 
 //Новые рецепты для хлеба
-Barrel.addRecipe("tfg:barley_dough", <firmalife:barley_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:barley_dough>, 4);
-Barrel.addRecipe("tfg:corn_dough", <firmalife:corn_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:corn_dough>, 4);
-Barrel.addRecipe("tfg:rice_dough", <firmalife:oat_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:oat_dough>, 4);
-Barrel.addRecipe("tfg:rye_dough", <firmalife:rice_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:rice_dough>, 4);
-Barrel.addRecipe("tfg:wheat_dough", <firmalife:rye_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:rye_dough>, 4);
-Barrel.addRecipe("tfg:wheat_dough", <firmalife:wheat_flatbread_dough>, <liquid:yeast_starter> * 1000, <firmalife:wheat_dough>, 4);
+Barrel.addRecipe("tfg:barley_dough", <firmalife:barley_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/barley_dough>, 4);
+Barrel.addRecipe("tfg:corn_dough", <firmalife:corn_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/cornmeal_dough>, 4);
+Barrel.addRecipe("tfg:oat_dough", <firmalife:oat_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/oat_dough> * 2, 4);
+Barrel.addRecipe("tfg:rice_dough", <firmalife:rice_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/rice_dough> * 2, 4);
+Barrel.addRecipe("tfg:rye_dough", <firmalife:rye_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/rye_dough> * 2, 4);
+Barrel.addRecipe("tfg:wheat_dough", <firmalife:wheat_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfc:food/wheat_dough> * 2, 4);
 Barrel.addRecipe("tfg:amaranth_dough", <tfcflorae:food/amaranth_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfcflorae:food/amaranth_dough>, 4);
 Barrel.addRecipe("tfg:buckwheat_dough", <tfcflorae:food/buckwheat_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfcflorae:food/buckwheat_dough>, 4);
 Barrel.addRecipe("tfg:fonio_dough", <tfcflorae:food/fonio_flatbread_dough>, <liquid:yeast_starter> * 1000, <tfcflorae:food/fonio_dough>, 4);

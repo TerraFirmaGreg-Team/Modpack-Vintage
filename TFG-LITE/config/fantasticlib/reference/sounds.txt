@@ -728,5 +728,6 @@ tfctech:fridge.open
 tfctech:fridge.close
 tfctech:induction_smelter.work
 waterflasks:item.flaskbreak
+charset:block.crank
 portality:portal
 portality:portal_teleport
