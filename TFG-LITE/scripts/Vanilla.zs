@@ -103,7 +103,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:birch_door>,
     <minecraft:jungle_door>,
     <minecraft:acacia_door>,
-    <minecraft:dark_oak_door>
+    <minecraft:dark_oak_door>,
+    <minecraft:reeds>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);

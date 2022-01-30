@@ -14,7 +14,7 @@ val ItemsToRemoveFromJEI as IItemStack[] = [
     //Primitive Bricks
     <gregtech:metal_casing:1>,
     //Flour
-    <ore:dustRegularWheat>.firstItem,
+    <ore:dustWheat>.firstItem,
     <ore:dustSmallWheat>.firstItem,
     <ore:dustTinyWheat>.firstItem,
     //Compressed Clay
@@ -67,6 +67,7 @@ recipes.removeByRecipeName("gregtech:iron_trapdoor");
 recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("gregtech:iron_bars");
 recipes.removeByRecipeName("gregtech:quartz_sand");
+recipes.removeByRecipeName("gregtech:lead");
 
 //Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,

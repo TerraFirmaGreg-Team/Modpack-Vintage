@@ -133,3 +133,28 @@ Anvil.addRecipe("tfg:tfcthings_sling_ammo__steel", <ore:ingotSteel>, <tfcthings:
 recipes.addShaped(<tfcthings:grindstone_base>,
 [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
  [<ore:lumber>, null, <ore:lumber>]]);
+
+//Black Steel Grindstone
+Anvil.removeRecipe(<tfcthings:grindstone_steel>);
+Anvil.addRecipe("tfg:grindstone_steel", <tfcthings:grindstone_quartz>, <ore:plateDoubleBlackSteel>, <tfcthings:grindstone_steel>, 5);
+
+//Исправление крафта молотков
+/*
+Anvil.removeRecipe(<firmalife:bismuth_bronze_mallet_head>);
+Anvil.removeRecipe(<firmalife:black_bronze_mallet_head>);
+Anvil.removeRecipe(<firmalife:bronze_mallet_head>);
+Anvil.removeRecipe(<firmalife:copper_mallet_head>);
+Anvil.removeRecipe(<firmalife:wrought_iron_mallet_head>);
+Anvil.removeRecipe(<firmalife:steel_mallet_head>);
+Anvil.removeRecipe(<firmalife:black_steel_mallet_head>);
+Anvil.removeRecipe(<firmalife:blue_steel_mallet_head>);
+Anvil.removeRecipe(<firmalife:red_steel_mallet_head>);
+Anvil.addRecipe("tfg:firmalife_bismuth_bronze_hammer", <ore:ingotBismuthBronze>, <firmalife:bismuth_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_black_bronze_hammer", <ore:ingotBlackBronze>, <firmalife:black_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_bronze_hammer", <ore:ingotBronze>, <firmalife:bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_copper_hammer", <ore:ingotCopper>, <firmalife:copper_mallet_head>, 1, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_wrought_iron_hammer", <ore:ingotWroughtIron>, <firmalife:wrought_iron_mallet_head>, 3, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_steel_hammer", <ore:ingotSteel>, <firmalife:steel_mallet_head>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_black_steel_hammer", <ore:ingotBlackSteel>, <firmalife:black_steel_mallet_head>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_blue_steel_hammer", <ore:ingotBlueSteel>, <firmalife:blue_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <ore:ingotRedSteel>, <firmalife:red_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");*/

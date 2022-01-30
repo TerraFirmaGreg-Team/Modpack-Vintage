@@ -8,7 +8,7 @@ recipes.remove(<movingelevators:button_block>);
 //Elevator Controller
 recipes.addShaped(<movingelevators:elevator_block>, 
 [[<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>],
- [<gregtech:meta_item_1:173>, <gregtech:machine_casing:1>, <gregtech:meta_item_1:173>],
+ [<metaitem:electric.piston.lv>, <gregtech:machine_casing:1>, <metaitem:electric.piston.lv>],
  [<ore:gearIron>, <ore:circuitBasic>, <ore:gearIron>]]);
  
 //Elevator Screen
@@ -20,5 +20,5 @@ recipes.addShaped(<movingelevators:display_block>,
 //Remote Elevator Panel
 recipes.addShaped(<movingelevators:button_block>, 
 [[null, <appliedenergistics2:material:41>, null],
- [<minecraft:stone_button>, <movingelevators:elevator_block>, <minecraft:stone_button>],
+ [<ore:ButtonStone>, <movingelevators:elevator_block>, <ore:ButtonStone>],
  [null, null, null]]);

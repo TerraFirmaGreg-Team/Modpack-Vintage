@@ -41,7 +41,7 @@ WireDrawing.addRecipe("tfctech:wire_black_steel", <tfctech:metal/black_steel_wir
 
 //Баффнутый крафт поташа
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
-recipes.addShapeless(<ore:dustRegularPotash>.firstItem * 4, [<tfctech:pot_potash>]);
+recipes.addShapeless(<ore:dustPotash>.firstItem * 4, [<tfctech:pot_potash>]);
 //Фикс крафта поташа(резервуар остается)
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
 recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
