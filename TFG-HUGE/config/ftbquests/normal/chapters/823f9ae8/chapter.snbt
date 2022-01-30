@@ -1,7 +1,0 @@
-{
-	title: "{tfg.quests.primitive.era.title}",
-	icon: "gregtech:meta_gear 1 1599",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "circle"
-}
