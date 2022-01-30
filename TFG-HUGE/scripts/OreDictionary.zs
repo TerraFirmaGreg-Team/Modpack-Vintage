@@ -114,6 +114,183 @@ for item in ForestryPropolisArray {
 //Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
+// --- GregTech
+//gemChipped
+var gemChipped = [
+	<metaitem:gemChippedCertusQuartz>,
+	<metaitem:gemChippedGarnetYellow>,
+	<metaitem:gemChippedAlmandine>,
+	<metaitem:gemChippedAndradite>,
+	<metaitem:gemChippedBlueTopaz>,
+	<metaitem:gemChippedCinnabar>,
+	<metaitem:gemChippedCoal>,
+	<metaitem:gemChippedDiamond>,
+	<metaitem:gemChippedEmerald>,
+	<metaitem:gemChippedGreenSapphire>,
+	<metaitem:gemChippedGrossular>,
+	<metaitem:gemChippedRutile>,
+	<metaitem:gemChippedLazurite>,
+	<metaitem:gemChippedPyrope>,
+	<metaitem:gemChippedRockSalt>,
+	<metaitem:gemChippedRuby>,
+	<metaitem:gemChippedSalt>,
+	<metaitem:gemChippedSapphire>,
+	<metaitem:gemChippedSodalite>,
+	<metaitem:gemChippedCoke>,
+	<metaitem:gemChippedSpessartine>,
+	<metaitem:gemChippedTopaz>,
+	<metaitem:gemChippedUvarovite>,
+	<metaitem:gemChippedNetherQuartz>,
+	<metaitem:gemChippedQuartzite>,
+	<metaitem:gemChippedRealgar>,
+	<metaitem:gemChippedMalachite>,
+	<metaitem:gemChippedSugar>,
+	<metaitem:gemChippedGlass>,
+	<metaitem:gemChippedOlivine>,
+	<metaitem:gemChippedOpal>,
+	<metaitem:gemChippedAmethyst>,
+	<metaitem:gemChippedLapis>,
+	<metaitem:gemChippedApatite>,
+	<metaitem:gemChippedGarnetRed>,
+	<metaitem:gemChippedGarnetYellow>,
+	<metaitem:gemChippedMonazite>
+	] as IItemStack[];
+for item in gemChipped {
+	<ore:gemChipped>.add(item);
+}
+
+//gemFlawed
+var gemFlawed = [
+	<metaitem:gemFlawedCertusQuartz>,
+	<metaitem:gemFlawedGarnetYellow>,
+	<metaitem:gemFlawedAlmandine>,
+	<metaitem:gemFlawedAndradite>,
+	<metaitem:gemFlawedBlueTopaz>,
+	<metaitem:gemFlawedCinnabar>,
+	<metaitem:gemFlawedCoal>,
+	<metaitem:gemFlawedDiamond>,
+	<metaitem:gemFlawedEmerald>,
+	<metaitem:gemFlawedGreenSapphire>,
+	<metaitem:gemFlawedGrossular>,
+	<metaitem:gemFlawedRutile>,
+	<metaitem:gemFlawedLazurite>,
+	<metaitem:gemFlawedPyrope>,
+	<metaitem:gemFlawedRockSalt>,
+	<metaitem:gemFlawedRuby>,
+	<metaitem:gemFlawedSalt>,
+	<metaitem:gemFlawedSapphire>,
+	<metaitem:gemFlawedSodalite>,
+	<metaitem:gemFlawedCoke>,
+	<metaitem:gemFlawedSpessartine>,
+	<metaitem:gemFlawedTopaz>,
+	<metaitem:gemFlawedUvarovite>,
+	<metaitem:gemFlawedNetherQuartz>,
+	<metaitem:gemFlawedQuartzite>,
+	<metaitem:gemFlawedRealgar>,
+	<metaitem:gemFlawedMalachite>,
+	<metaitem:gemFlawedSugar>,
+	<metaitem:gemFlawedGlass>,
+	<metaitem:gemFlawedOlivine>,
+	<metaitem:gemFlawedOpal>,
+	<metaitem:gemFlawedAmethyst>,
+	<metaitem:gemFlawedLapis>,
+	<metaitem:gemFlawedApatite>,
+	<metaitem:gemFlawedGarnetRed>,
+	<metaitem:gemFlawedGarnetYellow>,
+	<metaitem:gemFlawedMonazite>
+	] as IItemStack[];
+for item in gemFlawed {
+	<ore:gemFlawed>.add(item);
+}
+
+//gemFlawless
+var gemFlawless = [
+	<metaitem:gemFlawlessGarnetYellow>,
+	<metaitem:gemFlawlessAlmandine>,
+	<metaitem:gemFlawlessAndradite>,
+	<metaitem:gemFlawlessBlueTopaz>,
+	<metaitem:gemFlawlessCinnabar>,
+	<metaitem:gemFlawlessCoal>,
+	<metaitem:gemFlawlessDiamond>,
+	<metaitem:gemFlawlessEmerald>,
+	<metaitem:gemFlawlessGreenSapphire>,
+	<metaitem:gemFlawlessGrossular>,
+	<metaitem:gemFlawlessRutile>,
+	<metaitem:gemFlawlessLazurite>,
+	<metaitem:gemFlawlessPyrope>,
+	<metaitem:gemFlawlessRockSalt>,
+	<metaitem:gemFlawlessRuby>,
+	<metaitem:gemFlawlessSalt>,
+	<metaitem:gemFlawlessSapphire>,
+	<metaitem:gemFlawlessSodalite>,
+	<metaitem:gemFlawlessCoke>,
+	<metaitem:gemFlawlessSpessartine>,
+	<metaitem:gemFlawlessTopaz>,
+	<metaitem:gemFlawlessUvarovite>,
+	<metaitem:gemFlawlessNetherQuartz>,
+	<metaitem:gemFlawlessQuartzite>,
+	<metaitem:gemFlawlessRealgar>,
+	<metaitem:gemFlawlessMalachite>,
+	<metaitem:gemFlawlessSugar>,
+	<metaitem:gemFlawlessGlass>,
+	<metaitem:gemFlawlessOlivine>,
+	<metaitem:gemFlawlessOpal>,
+	<metaitem:gemFlawlessAmethyst>,
+	<metaitem:gemFlawlessLapis>,
+	<metaitem:gemFlawlessApatite>,
+	<metaitem:gemFlawlessGarnetRed>,
+	<metaitem:gemFlawlessGarnetYellow>,
+	<metaitem:gemFlawlessMonazite>
+	] as IItemStack[];
+for item in gemFlawless {
+	<ore:gemFlawless>.add(item);
+}
+
+//gemExquisite
+var gemExquisite = [
+	<metaitem:gemExquisiteGarnetYellow>,
+	<metaitem:gemExquisiteAlmandine>,
+	<metaitem:gemExquisiteAndradite>,
+	<metaitem:gemExquisiteBlueTopaz>,
+	<metaitem:gemExquisiteCinnabar>,
+	<metaitem:gemExquisiteCoal>,
+	<metaitem:gemExquisiteDiamond>,
+	<metaitem:gemExquisiteEmerald>,
+	<metaitem:gemExquisiteGreenSapphire>,
+	<metaitem:gemExquisiteGrossular>,
+	<metaitem:gemExquisiteRutile>,
+	<metaitem:gemExquisiteLazurite>,
+	<metaitem:gemExquisitePyrope>,
+	<metaitem:gemExquisiteRockSalt>,
+	<metaitem:gemExquisiteRuby>,
+	<metaitem:gemExquisiteSalt>,
+	<metaitem:gemExquisiteSapphire>,
+	<metaitem:gemExquisiteSodalite>,
+	<metaitem:gemExquisiteCoke>,
+	<metaitem:gemExquisiteSpessartine>,
+	<metaitem:gemExquisiteTopaz>,
+	<metaitem:gemExquisiteUvarovite>,
+	<metaitem:gemExquisiteNetherQuartz>,
+	<metaitem:gemExquisiteQuartzite>,
+	<metaitem:gemExquisiteRealgar>,
+	<metaitem:gemExquisiteMalachite>,
+	<metaitem:gemExquisiteSugar>,
+	<metaitem:gemExquisiteGlass>,
+	<metaitem:gemExquisiteOlivine>,
+	<metaitem:gemExquisiteOpal>,
+	<metaitem:gemExquisiteAmethyst>,
+	<metaitem:gemExquisiteLapis>,
+	<metaitem:gemExquisiteApatite>,
+	<metaitem:gemExquisiteGarnetRed>,
+	<metaitem:gemExquisiteGarnetYellow>,
+	<metaitem:gemExquisiteMonazite>
+	] as IItemStack[];
+for item in gemExquisite {
+	<ore:gemExquisite>.add(item);
+}
+
+
+
 // --- Deleting OreDictionary
 // --- ProjectRed
 //Copper

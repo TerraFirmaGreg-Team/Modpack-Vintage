@@ -31,6 +31,13 @@ recipes.addShaped(<firmalife:climate_station_5>,
  [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
  [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
 
+//Разбрызгиватель
+recipes.remove(<firmalife:sprinkler>);
+recipes.addShaped(<firmalife:sprinkler>,
+[[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
+ [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
+ [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+
 //Свечка
 recipes.remove(<firmalife:candle> * 6);
 recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
