@@ -127,14 +127,14 @@ recipes.addShaped(<chisel:temple>*8,
 //Тириан блок
 recipes.addShaped(<chisel:tyrian>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:ingotWroughtIron>, <ore:stone>],
+ [<ore:stone>, <ore:ingotWroughtIron> | <ore:ingotIron>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 //Фактори блок
 recipes.addShaped(<chisel:factory>*8,
-[[<ore:ingotWroughtIron>, <ore:stone>, <ore:ingotWroughtIron>],
+[[<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>],
  [<ore:stone>, null, <ore:stone>],
- [<ore:ingotWroughtIron>, <ore:stone>, <ore:ingotWroughtIron>]]);
+ [<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>]]);
  
 //Бровн стоун
 recipes.addShaped(<chisel:brownstone>*8,
