@@ -118,6 +118,7 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:leather_boots>,
     <minecraft:bucket>,
     <minecraft:enchanting_table>,
+    <minecraft:name_tag>
 ] as IItemStack[];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -217,3 +218,9 @@ recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeB
 //Рельсовые приколы
 recipes.addShapeless(<minecraft:chest_minecart>, [<minecraft:minecart>, <ore:chestWood>]);
 recipes.addShapeless(<minecraft:furnace_minecart>, [<minecraft:minecart>, <gregtech:machine:15>]);
+
+//Бирка
+recipes.addShaped(<minecraft:name_tag>,
+[[<ore:string>, <ore:string>, null],
+ [<ore:string>, <minecraft:paper>, null],
+ [<ore:string>, <ore:string>, null]]);
