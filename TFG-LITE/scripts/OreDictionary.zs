@@ -106,190 +106,77 @@ for item in ForestryPropolisArray {
 
 // --- Adding OreDictionary
 // --- TFC
-//Rock Types
+//Rock Types GT = Rock Types TFC
 <ore:stoneBasalt>.add(<tfc:raw/basalt>);
 <ore:stoneMarble>.add(<tfc:raw/marble>);
-
-// --- Forestry
-//Beeswax
-<ore:itemBeeswax>.add(<firmalife:beeswax>);
+//Single Sheets = Single Plates
+<ore:sheetCopper>.add(<metaitem:plateCopper>);
+<ore:sheetBismuth>.add(<metaitem:plateBismuth>);
+<ore:sheetBrass>.add(<metaitem:plateBrass>);
+<ore:sheetGold>.add(<metaitem:plateGold>);
+<ore:sheetLead>.add(<metaitem:plateLead>);
+<ore:sheetNickel>.add(<metaitem:plateNickel>);
+<ore:sheetRoseGold>.add(<metaitem:plateRoseGold>);
+<ore:sheetSilver>.add(<metaitem:plateSilver>);
+<ore:sheetTin>.add(<metaitem:plateTin>);
+<ore:sheetZinc>.add(<metaitem:plateZinc>);
+<ore:sheetSterlingSilver>.add(<metaitem:plateSterlingSilver>);
+<ore:sheetPlatinum>.add(<metaitem:platePlatinum>);
+<ore:sheetBismuthBronze>.add(<metaitem:plateBismuthBronze>);
+<ore:sheetBronze>.add(<metaitem:plateBronze>);
+<ore:sheetBlackBronze>.add(<metaitem:plateBlackBronze>);
+<ore:sheetWroughtIron>.add(<metaitem:plateWroughtIron>);
+<ore:sheetSteel>.add(<metaitem:plateSteel>);
+<ore:sheetBlackSteel>.add(<metaitem:plateBlackSteel>);
+<ore:sheetBlueSteel>.add(<metaitem:plateBlueSteel>);
+<ore:sheetRedSteel>.add(<metaitem:plateRedSteel>);
+//Double Sheets = Double Plates
+<ore:sheetDoubleCopper>.add(<metaitem:plateDoubleCopper>);
+<ore:sheetDoubleBismuth>.add(<metaitem:plateDoubleBismuth>);
+<ore:sheetDoubleBrass>.add(<metaitem:plateDoubleBrass>);
+<ore:sheetDoubleGold>.add(<metaitem:plateDoubleGold>);
+<ore:sheetDoubleLead>.add(<metaitem:plateDoubleLead>);
+<ore:sheetDoubleNickel>.add(<metaitem:plateDoubleNickel>);
+<ore:sheetDoubleRoseGold>.add(<metaitem:plateDoubleRoseGold>);
+<ore:sheetDoubleSilver>.add(<metaitem:plateDoubleSilver>);
+<ore:sheetDoubleTin>.add(<metaitem:plateDoubleTin>);
+<ore:sheetDoubleZinc>.add(<metaitem:plateDoubleZinc>);
+<ore:sheetDoubleSterlingSilver>.add(<metaitem:plateDoubleSterlingSilver>);
+<ore:sheetDoublePlatinum>.add(<metaitem:plateDoublePlatinum>);
+<ore:sheetDoubleBismuthBronze>.add(<metaitem:plateDoubleBismuthBronze>);
+<ore:sheetDoubleBronze>.add(<metaitem:plateDoubleBronze>);
+<ore:sheetDoubleBlackBronze>.add(<metaitem:plateDoubleBlackBronze>);
+<ore:sheetDoubleWroughtIron>.add(<metaitem:plateDoubleWroughtIron>);
+<ore:sheetDoubleSteel>.add(<metaitem:plateDoubleSteel>);
+<ore:sheetDoubleBlackSteel>.add(<metaitem:plateDoubleBlackSteel>);
+<ore:sheetDoubleBlueSteel>.add(<metaitem:plateDoubleBlueSteel>);
+<ore:sheetDoubleRedSteel>.add(<metaitem:plateDoubleRedSteel>);
+//Bronze Single Sheets
+<ore:sheetAnyBronze>.add(<metaitem:plateBronze>, <metaitem:plateBlackBronze>, <metaitem:plateBismuthBronze>);
+//Bronze Double Sheets
+<ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- GregTech
-//gemChipped
-var gemChipped = [
-	<metaitem:gemChippedCertusQuartz>,
-	<metaitem:gemChippedGarnetYellow>,
-	<metaitem:gemChippedAlmandine>,
-	<metaitem:gemChippedAndradite>,
-	<metaitem:gemChippedBlueTopaz>,
-	<metaitem:gemChippedCinnabar>,
-	<metaitem:gemChippedCoal>,
-	<metaitem:gemChippedDiamond>,
-	<metaitem:gemChippedEmerald>,
-	<metaitem:gemChippedGreenSapphire>,
-	<metaitem:gemChippedGrossular>,
-	<metaitem:gemChippedRutile>,
-	<metaitem:gemChippedLazurite>,
-	<metaitem:gemChippedPyrope>,
-	<metaitem:gemChippedRockSalt>,
-	<metaitem:gemChippedRuby>,
-	<metaitem:gemChippedSalt>,
-	<metaitem:gemChippedSapphire>,
-	<metaitem:gemChippedSodalite>,
-	<metaitem:gemChippedCoke>,
-	<metaitem:gemChippedSpessartine>,
-	<metaitem:gemChippedTopaz>,
-	<metaitem:gemChippedUvarovite>,
-	<metaitem:gemChippedNetherQuartz>,
-	<metaitem:gemChippedQuartzite>,
-	<metaitem:gemChippedRealgar>,
-	<metaitem:gemChippedMalachite>,
-	<metaitem:gemChippedSugar>,
-	<metaitem:gemChippedGlass>,
-	<metaitem:gemChippedOlivine>,
-	<metaitem:gemChippedOpal>,
-	<metaitem:gemChippedAmethyst>,
-	<metaitem:gemChippedLapis>,
-	<metaitem:gemChippedApatite>,
-	<metaitem:gemChippedGarnetRed>,
-	<metaitem:gemChippedGarnetYellow>,
-	<metaitem:gemChippedMonazite>
-	] as IItemStack[];
+//gemChipped from GT
 for item in gemChipped {
 	<ore:gemChipped>.add(item);
 }
-
-//gemFlawed
-var gemFlawed = [
-	<metaitem:gemFlawedCertusQuartz>,
-	<metaitem:gemFlawedGarnetYellow>,
-	<metaitem:gemFlawedAlmandine>,
-	<metaitem:gemFlawedAndradite>,
-	<metaitem:gemFlawedBlueTopaz>,
-	<metaitem:gemFlawedCinnabar>,
-	<metaitem:gemFlawedCoal>,
-	<metaitem:gemFlawedDiamond>,
-	<metaitem:gemFlawedEmerald>,
-	<metaitem:gemFlawedGreenSapphire>,
-	<metaitem:gemFlawedGrossular>,
-	<metaitem:gemFlawedRutile>,
-	<metaitem:gemFlawedLazurite>,
-	<metaitem:gemFlawedPyrope>,
-	<metaitem:gemFlawedRockSalt>,
-	<metaitem:gemFlawedRuby>,
-	<metaitem:gemFlawedSalt>,
-	<metaitem:gemFlawedSapphire>,
-	<metaitem:gemFlawedSodalite>,
-	<metaitem:gemFlawedCoke>,
-	<metaitem:gemFlawedSpessartine>,
-	<metaitem:gemFlawedTopaz>,
-	<metaitem:gemFlawedUvarovite>,
-	<metaitem:gemFlawedNetherQuartz>,
-	<metaitem:gemFlawedQuartzite>,
-	<metaitem:gemFlawedRealgar>,
-	<metaitem:gemFlawedMalachite>,
-	<metaitem:gemFlawedSugar>,
-	<metaitem:gemFlawedGlass>,
-	<metaitem:gemFlawedOlivine>,
-	<metaitem:gemFlawedOpal>,
-	<metaitem:gemFlawedAmethyst>,
-	<metaitem:gemFlawedLapis>,
-	<metaitem:gemFlawedApatite>,
-	<metaitem:gemFlawedGarnetRed>,
-	<metaitem:gemFlawedGarnetYellow>,
-	<metaitem:gemFlawedMonazite>
-	] as IItemStack[];
+//gemFlawed from GT
 for item in gemFlawed {
 	<ore:gemFlawed>.add(item);
 }
-
-//gemFlawless
-var gemFlawless = [
-	<metaitem:gemFlawlessGarnetYellow>,
-	<metaitem:gemFlawlessAlmandine>,
-	<metaitem:gemFlawlessAndradite>,
-	<metaitem:gemFlawlessBlueTopaz>,
-	<metaitem:gemFlawlessCinnabar>,
-	<metaitem:gemFlawlessCoal>,
-	<metaitem:gemFlawlessDiamond>,
-	<metaitem:gemFlawlessEmerald>,
-	<metaitem:gemFlawlessGreenSapphire>,
-	<metaitem:gemFlawlessGrossular>,
-	<metaitem:gemFlawlessRutile>,
-	<metaitem:gemFlawlessLazurite>,
-	<metaitem:gemFlawlessPyrope>,
-	<metaitem:gemFlawlessRockSalt>,
-	<metaitem:gemFlawlessRuby>,
-	<metaitem:gemFlawlessSalt>,
-	<metaitem:gemFlawlessSapphire>,
-	<metaitem:gemFlawlessSodalite>,
-	<metaitem:gemFlawlessCoke>,
-	<metaitem:gemFlawlessSpessartine>,
-	<metaitem:gemFlawlessTopaz>,
-	<metaitem:gemFlawlessUvarovite>,
-	<metaitem:gemFlawlessNetherQuartz>,
-	<metaitem:gemFlawlessQuartzite>,
-	<metaitem:gemFlawlessRealgar>,
-	<metaitem:gemFlawlessMalachite>,
-	<metaitem:gemFlawlessSugar>,
-	<metaitem:gemFlawlessGlass>,
-	<metaitem:gemFlawlessOlivine>,
-	<metaitem:gemFlawlessOpal>,
-	<metaitem:gemFlawlessAmethyst>,
-	<metaitem:gemFlawlessLapis>,
-	<metaitem:gemFlawlessApatite>,
-	<metaitem:gemFlawlessGarnetRed>,
-	<metaitem:gemFlawlessGarnetYellow>,
-	<metaitem:gemFlawlessMonazite>
-	] as IItemStack[];
+//gemFlawless from GT
 for item in gemFlawless {
 	<ore:gemFlawless>.add(item);
 }
-
-//gemExquisite
-var gemExquisite = [
-	<metaitem:gemExquisiteGarnetYellow>,
-	<metaitem:gemExquisiteAlmandine>,
-	<metaitem:gemExquisiteAndradite>,
-	<metaitem:gemExquisiteBlueTopaz>,
-	<metaitem:gemExquisiteCinnabar>,
-	<metaitem:gemExquisiteCoal>,
-	<metaitem:gemExquisiteDiamond>,
-	<metaitem:gemExquisiteEmerald>,
-	<metaitem:gemExquisiteGreenSapphire>,
-	<metaitem:gemExquisiteGrossular>,
-	<metaitem:gemExquisiteRutile>,
-	<metaitem:gemExquisiteLazurite>,
-	<metaitem:gemExquisitePyrope>,
-	<metaitem:gemExquisiteRockSalt>,
-	<metaitem:gemExquisiteRuby>,
-	<metaitem:gemExquisiteSalt>,
-	<metaitem:gemExquisiteSapphire>,
-	<metaitem:gemExquisiteSodalite>,
-	<metaitem:gemExquisiteCoke>,
-	<metaitem:gemExquisiteSpessartine>,
-	<metaitem:gemExquisiteTopaz>,
-	<metaitem:gemExquisiteUvarovite>,
-	<metaitem:gemExquisiteNetherQuartz>,
-	<metaitem:gemExquisiteQuartzite>,
-	<metaitem:gemExquisiteRealgar>,
-	<metaitem:gemExquisiteMalachite>,
-	<metaitem:gemExquisiteSugar>,
-	<metaitem:gemExquisiteGlass>,
-	<metaitem:gemExquisiteOlivine>,
-	<metaitem:gemExquisiteOpal>,
-	<metaitem:gemExquisiteAmethyst>,
-	<metaitem:gemExquisiteLapis>,
-	<metaitem:gemExquisiteApatite>,
-	<metaitem:gemExquisiteGarnetRed>,
-	<metaitem:gemExquisiteGarnetYellow>,
-	<metaitem:gemExquisiteMonazite>
-	] as IItemStack[];
+//gemExquisite from GT
 for item in gemExquisite {
 	<ore:gemExquisite>.add(item);
 }
 
-
+// --- Forestry
+//Beeswax
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- Deleting OreDictionary
 // --- ProjectRed
@@ -388,65 +275,3 @@ for item in gemExquisite {
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 //Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
-
-/*
-        //TFG-MOD
-        //Tools
-        OreDictionary.registerOre("saw", MetaItems.SAW.getStackForm());
-        OreDictionary.registerOre("hammer", MetaItems.HARD_HAMMER.getStackForm());
-        OreDictionary.registerOre("knife", MetaItems.KNIFE.getStackForm());
-
-        //Bronze Double Sheets
-        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
-        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
-        OreDictionary.registerOre("sheetAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
-
-        //Bronze Single Sheets
-        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
-        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
-        OreDictionary.registerOre("sheetDoubleAnyBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
-
-        //Single Sheets -> GT plates
-        OreDictionary.registerOre("sheetCopper", OreDictUnifier.get(OrePrefix.plate, Materials.Copper));
-        OreDictionary.registerOre("sheetBismuth", OreDictUnifier.get(OrePrefix.plate, Materials.Bismuth));
-        OreDictionary.registerOre("sheetBrass", OreDictUnifier.get(OrePrefix.plate, Materials.Brass));
-        OreDictionary.registerOre("sheetGold", OreDictUnifier.get(OrePrefix.plate, Materials.Gold));
-        OreDictionary.registerOre("sheetLead", OreDictUnifier.get(OrePrefix.plate, Materials.Lead));
-        OreDictionary.registerOre("sheetNickel", OreDictUnifier.get(OrePrefix.plate, Materials.Nickel));
-        OreDictionary.registerOre("sheetRoseGold", OreDictUnifier.get(OrePrefix.plate, Materials.RoseGold));
-        OreDictionary.registerOre("sheetSilver", OreDictUnifier.get(OrePrefix.plate, Materials.Silver));
-        OreDictionary.registerOre("sheetTin", OreDictUnifier.get(OrePrefix.plate, Materials.Tin));
-        OreDictionary.registerOre("sheetZinc", OreDictUnifier.get(OrePrefix.plate, Materials.Zinc));
-        OreDictionary.registerOre("sheetSterlingSilver", OreDictUnifier.get(OrePrefix.plate, Materials.SterlingSilver));
-        OreDictionary.registerOre("sheetPlatinum", OreDictUnifier.get(OrePrefix.plate, Materials.Platinum));
-        OreDictionary.registerOre("sheetBismuthBronze", OreDictUnifier.get(OrePrefix.plate, Materials.BismuthBronze));
-        OreDictionary.registerOre("sheetBronze", OreDictUnifier.get(OrePrefix.plate, Materials.Bronze));
-        OreDictionary.registerOre("sheetBlackBronze", OreDictUnifier.get(OrePrefix.plate, Materials.BlackBronze));
-        OreDictionary.registerOre("sheetWroughtIron", OreDictUnifier.get(OrePrefix.plate, Materials.WroughtIron));
-        OreDictionary.registerOre("sheetSteel", OreDictUnifier.get(OrePrefix.plate, Materials.Steel));
-        OreDictionary.registerOre("sheetBlackSteel", OreDictUnifier.get(OrePrefix.plate, Materials.BlackSteel));
-        OreDictionary.registerOre("sheetBlueSteel", OreDictUnifier.get(OrePrefix.plate, Materials.BlueSteel));
-        OreDictionary.registerOre("sheetRedSteel", OreDictUnifier.get(OrePrefix.plate, Materials.RedSteel));
-
-        //Double Sheets -> GT plates
-        OreDictionary.registerOre("sheetDoubleCopper", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Copper));
-        OreDictionary.registerOre("sheetDoubleBismuth", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bismuth));
-        OreDictionary.registerOre("sheetDoubleBrass", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Brass));
-        OreDictionary.registerOre("sheetDoubleGold", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Gold));
-        OreDictionary.registerOre("sheetDoubleLead", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Lead));
-        OreDictionary.registerOre("sheetDoubleNickel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Nickel));
-        OreDictionary.registerOre("sheetDoubleRoseGold", OreDictUnifier.get(OrePrefix.plateDouble, Materials.RoseGold));
-        OreDictionary.registerOre("sheetDoubleSilver", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Silver));
-        OreDictionary.registerOre("sheetDoubleTin", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Tin));
-        OreDictionary.registerOre("sheetDoubleZinc", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Zinc));
-        OreDictionary.registerOre("sheetDoubleSterlingSilver", OreDictUnifier.get(OrePrefix.plateDouble, Materials.SterlingSilver));
-        OreDictionary.registerOre("sheetDoublePlatinum", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Platinum));
-        OreDictionary.registerOre("sheetDoubleBismuthBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BismuthBronze));
-        OreDictionary.registerOre("sheetDoubleBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Bronze));
-        OreDictionary.registerOre("sheetDoubleBlackBronze", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackBronze));
-        OreDictionary.registerOre("sheetDoubleWroughtIron", OreDictUnifier.get(OrePrefix.plateDouble, Materials.WroughtIron));
-        OreDictionary.registerOre("sheetDoubleSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.Steel));
-        OreDictionary.registerOre("sheetDoubleBlackSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlackSteel));
-        OreDictionary.registerOre("sheetDoubleBlueSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.BlueSteel));
-        OreDictionary.registerOre("sheetDoubleRedSteel", OreDictUnifier.get(OrePrefix.plateDouble, Materials.RedSteel));
-		*/

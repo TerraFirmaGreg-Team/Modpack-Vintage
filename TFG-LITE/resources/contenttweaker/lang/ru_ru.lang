@@ -1,7 +1,4 @@
 #Content Tweaker#
-
-tile.contenttweaker.aquamarine_andesite_sand.name=Аквамариновый андезитный песок
-
 item.contenttweaker.moonturf.name=Лунный реголит (Пыль)
 item.contenttweaker.moonsoil.name=Лунный грунт (Пыль)
 item.contenttweaker.moonstone.name=Лунный камень (Пыль)
@@ -21,9 +18,37 @@ item.contenttweaker.asteroidstone1.name=Астероидный камень (П�
 item.contenttweaker.asteroidstone2.name=Астероидный камень (Пыль)
 item.contenttweaker.asteroidstone3.name=Астероидный камень (Пыль)
 
-#Фикс перевода листвы
-tile.dynamictreestfc:leaves0.name=Листва
-tile.dynamictreestfc:leaves1.name=Листва
-tile.dynamictreestfc:leaves2.name=Листва
-tile.dynamictreestfc:leaves3.name=Листва
-tile.dynamictreestfc:leaves4.name=Листва
+#Исправления переводов
+item.tfc.metal.sheet.wrought_iron.name=Обшивка из сплава кованного железа для доменной печи
+item.tfc.metal.ingot.wrought_iron.name=Незаконченный слиток кованного железа
+
+material.tfc_andesite=Андезит
+material.tfc_basalt=Базальт
+material.tfc_breccia=Брекчия
+material.tfc_catlinite=Катлинит
+material.tfc_chalk=Мел
+material.tfc_chert=Кремнистый
+material.tfc_claystone=Аргиллит
+material.tfc_conglomerate=Конгломерат
+material.tfc_dacite=Дацит
+material.tfc_diorite=Диорит
+material.tfc_dolomite=Доломит
+material.tfc_gabbro=Габбро
+material.tfc_gneiss=Гнейс
+material.tfc_granite=Гранит
+material.tfc_komatiite=Коматит
+material.tfc_limestone=Известняк
+material.tfc_marble=Мрамор
+material.tfc_mudstone=Селев
+material.tfc_novaculite=Новакулит
+material.tfc_peridotite=Перидотит
+material.tfc_porphyry=Порифий
+material.tfc_quartzite=Кварцит
+material.tfc_rhyolite=Риолит
+material.tfc_rocksalt=Каменная соль
+material.tfc_sandstone=Песчанник
+material.tfc_schist=Аспидный сланец
+material.tfc_shale=Сланец
+material.tfc_siltstone=Алевролит
+material.tfc_slate=Шифер
+material.tfc_soapstone=Тальк

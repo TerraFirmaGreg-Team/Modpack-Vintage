@@ -14,7 +14,7 @@ import mods.gregtech.StoneType;
 <material:nickel>.addFlags("generate_long_rod", "generate_gear");
 <material:glowstone>.addOre(1, 1, true);
 <material:copper>.addFlags("generate_long_rod");
-<material:copper>.addTools(1, 1, 1, 600);
+<material:copper>.addTools(7, 1, 85);
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
 <material:bismuth>.addOre();
 <material:certus_quartz>.addFlags("generate_rod");
@@ -28,6 +28,7 @@ for material in MaterialRegistry.getAllMaterials()
         material.setToolStats(material.toolSpeed * 2, material.toolAttackDamage, material.toolDurability * 7);
     }
 }
+
 
 // --- Custom Stone Type
 // - Andesite
