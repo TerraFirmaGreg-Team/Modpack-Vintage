@@ -1,7 +1,7 @@
 {
 	title: "Nano Supercomputer",
 	icon: "gregtech:meta_item_1 1 634",
-	x: 3.0d,
+	x: 1.5d,
 	y: 5.0d,
 	text: [
 		"No Description"

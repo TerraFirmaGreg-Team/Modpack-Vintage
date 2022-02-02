@@ -1,8 +1,8 @@
 {
 	title: "PTFE",
 	icon: "gregtech:meta_plate 1 1016",
-	x: 2.0d,
-	y: 0.0d,
+	x: 3.0d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
 		"§",

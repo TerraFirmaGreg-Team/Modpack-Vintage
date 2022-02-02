@@ -1,11 +1,15 @@
 {
 	title: "HV Prospector",
 	icon: "gregtech:meta_item_1 1 467",
-	x: -7.0d,
-	y: 0.0d,
+	x: -2.0d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
-		"This prospector has a higher range than the LV one, and can also scan for fluids beneath bedrock!"
+		"This prospector has a §6higher range§r than the §7LV§r one.",
+		"",
+		"Shift right-clicking on it will change the mod to §6Fluid Prospection§r.",
+		"",
+		"§oNot yet implemented: Shift right-click switches the mod to Fluid Prospection, which lets you scan bedrock veins for your Fluid Rigs!§r"
 	],
 	dependencies: [
 		"05af19ec"

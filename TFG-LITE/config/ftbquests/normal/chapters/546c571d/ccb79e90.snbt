@@ -1,7 +1,7 @@
 {
 	title: "Basic Sifting Machine",
 	icon: "gregtech:machine 1 575",
-	x: -4.0d,
+	x: -6.0d,
 	y: 13.0d,
 	text: [
 		"The Sifter takes §dGem type§r §aPurified Ores§r to turn them into high grade gems with §6higher yield§r than other means.",

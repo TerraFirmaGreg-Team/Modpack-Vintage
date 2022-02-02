@@ -1,8 +1,8 @@
 {
 	title: "Basic Gas Collector",
 	icon: "gregtech:machine 1 530",
-	x: -5.0d,
-	y: 20.0d,
+	x: -6.0d,
+	y: 17.0d,
 	text: [
 		"The Gas Collector collects Air, to centrifuge into §aOxygen§r and §aNitrogen§r.",
 		"",

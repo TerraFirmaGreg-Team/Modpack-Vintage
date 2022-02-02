@@ -1,17 +1,14 @@
 {
 	title: "Benzene Nitro",
 	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 78s,
+		id: "forge:bucketfilled",
 		tag: {
-			Fluid: {
-				Amount: 1000,
-				FluidName: "nitrobenzene"
-			}
+			FluidName: "nitrobenzene",
+			Amount: 1000
 		}
 	},
-	x: 6.0d,
-	y: 5.0d,
+	x: 7.5d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
 		"Nitrobenzene is §d3.64 times§r as energy dense as Benzene!"
@@ -20,8 +17,16 @@
 		"8dffcea8"
 	],
 	tasks: [{
-		uid: "4b9227b6",
-		type: "fluid",
-		fluid: "benzene"
+		uid: "862210ae",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "nitrobenzene",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

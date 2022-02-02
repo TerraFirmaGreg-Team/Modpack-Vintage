@@ -7,8 +7,8 @@
 			Charge: 6400000L
 		}
 	},
-	x: -6.0d,
-	y: -1.0d,
+	x: -5.0d,
+	y: 1.0d,
 	shape: "circle",
 	text: [
 		"§oBatteries are cool, but you know what's cooler? Science-fiction Batteries!§r",

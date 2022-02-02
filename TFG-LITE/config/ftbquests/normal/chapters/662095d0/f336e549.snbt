@@ -6,12 +6,13 @@
 	text: [
 		"§oAutocrafting at last!§r",
 		"",
-		"§aPatterns§r are used for AE2 autocrafting. Using §aPolyvinyl Chloride§r increases the yield by §64 times§r."
+		"§aPatterns§r are used for AE2 autocrafting. Using §aPolyvinyl Chloride§r increases the yield by §64 times§r, and higher-tier plastics have higher yields.",
+		"",
+		"§3Molecular Assemblers§r aren't available for a little while more, but you can still automate machines with §9ME Interfaces§r."
 	],
 	dependencies: [
 		"4e8615d1"
 	],
-	hide: true,
 	tasks: [{
 		uid: "c2b36992",
 		type: "item",

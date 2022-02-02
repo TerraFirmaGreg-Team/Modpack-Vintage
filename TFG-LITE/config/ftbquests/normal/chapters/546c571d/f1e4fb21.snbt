@@ -1,8 +1,8 @@
 {
 	title: "Basic Ore Washing Plant",
 	icon: "gregtech:machine 1 485",
-	x: -3.0d,
-	y: 16.0d,
+	x: -4.0d,
+	y: 14.0d,
 	text: [
 		"§oThis machine combines Cauldron washing for simple automation, but also advanced and precise washing for byproducts.§r",
 		"",

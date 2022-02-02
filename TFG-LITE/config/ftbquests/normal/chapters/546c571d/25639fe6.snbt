@@ -1,8 +1,8 @@
 {
 	title: "Basic Thermal Centrifuge",
 	icon: "gregtech:machine 1 605",
-	x: -5.0d,
-	y: 14.0d,
+	x: -7.0d,
+	y: 13.0d,
 	text: [
 		"This Thermal Centrifuge is the most energy hungry out of the Ore Processing machines.",
 		"It takes §aCrushed Ore§r or §aPurified Ore§r to give a different §6Byproduct§r from the Ore Washer, but at the same rate.",

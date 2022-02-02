@@ -2,7 +2,7 @@
 	title: "First EV Circuits!",
 	icon: "gregtech:meta_item_1 1 630",
 	x: -3.0d,
-	y: -6.0d,
+	y: -4.0d,
 	shape: "circle",
 	text: [
 		"This one will be needed during the HV Age."

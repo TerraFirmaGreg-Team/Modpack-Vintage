@@ -12,18 +12,7 @@
 		uid: "1597f4e0",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustRegularGraphite"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustRegularGraphite"
-				}
-			}
+			item: "gregtech:meta_dust 1 341"
 		}]
 	}]
 }

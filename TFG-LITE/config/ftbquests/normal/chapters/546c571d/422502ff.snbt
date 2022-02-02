@@ -7,8 +7,8 @@
 			FluidName: "oxygen"
 		}
 	},
-	x: -7.0d,
-	y: 18.0d,
+	x: -6.0d,
+	y: 20.0d,
 	text: [
 		"§oIf you wanted to be picky, it would be Dioxygen, or Oxygen Gas. But gameplay convention makes it simply Oxygen.§r",
 		"",
@@ -30,8 +30,16 @@
 		"3b9fc1a9"
 	],
 	tasks: [{
-		uid: "21c3ec8b",
-		type: "fluid",
-		fluid: "oxygen"
+		uid: "4cc2da72",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "oxygen",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

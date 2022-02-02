@@ -2,12 +2,12 @@
 	title: "Crystal Mainframe",
 	icon: "gregtech:meta_item_1 1 643",
 	x: -1.5d,
-	y: 0.0d,
+	y: 2.0d,
 	text: [
 		"No Description"
 	],
 	dependencies: [
-		"e0995a94"
+		"0e9ec51b"
 	],
 	tasks: [{
 		uid: "a2aec805",

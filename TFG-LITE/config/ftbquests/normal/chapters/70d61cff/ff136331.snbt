@@ -2,7 +2,7 @@
 	title: "True Distillation",
 	icon: "gregtech:machine 1 1005",
 	x: -3.0d,
-	y: -3.0d,
+	y: 7.5d,
 	text: [
 		"§oTime for a real oil refinery.§r",
 		"",
@@ -16,9 +16,9 @@
 		"§cNote:§r Using the §3Distillation Tower§r for Oil -> Fuel -> Diesel is §cnot§r worth it! You will spend more energy Overclocking the Multiblock, than what the extra outputs will provide. You may instead look at the §3Processing Array§r (late §5EV§r) for large scale Diesel production.",
 		"It is however §6very worth§r for Cracked Fuels and Pyrolyse products."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"fc8e1322",
-		"05af19ec"
+		"14263e77"
 	],
 	size: 1.5d,
 	tasks: [{

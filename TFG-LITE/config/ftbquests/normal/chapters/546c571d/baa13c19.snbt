@@ -1,8 +1,8 @@
 {
 	title: "Basic Electrolyzer",
 	icon: "gregtech:machine 1 275",
-	x: -7.0d,
-	y: 15.0d,
+	x: -8.0d,
+	y: 18.0d,
 	text: [
 		"§lOutside of Ore Processing:§r",
 		"This machine, similarly to the Centrifuge, also does a lot of things...",

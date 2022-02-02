@@ -1,0 +1,23 @@
+{
+	title: "I believe I can fly",
+	x: 11.0d,
+	y: -14.0d,
+	text: [
+		"This Jetpack takes most §aCombustion Fuel§r to enable a primitive form of flight.",
+		"",
+		"Fill it like you would fill a Drum.",
+		"",
+		"Press §4H§r (default) to enable Hover Mode."
+	],
+	dependencies: [
+		"f517b2ba"
+	],
+	tasks: [{
+		uid: "2b774e9c",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,5 +1,6 @@
 {
-	x: -4.0d,
+	icon: "gregtech:meta_gear 1 2013",
+	x: -5.0d,
 	y: 1.0d,
 	dependencies: [
 		"4202b0cf"

@@ -1,8 +1,7 @@
 {
-	title: "Universal Macerator",
 	icon: "gregtech:machine 1 67",
-	x: -1.0d,
-	y: 3.0d,
+	x: -6.0d,
+	y: 0.0d,
 	shape: "square",
 	text: [
 		"§oShredding your Ores with Byproducts§r",

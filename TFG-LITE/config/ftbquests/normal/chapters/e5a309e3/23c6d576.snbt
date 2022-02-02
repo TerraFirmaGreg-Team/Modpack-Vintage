@@ -1,8 +1,8 @@
 {
 	title: "Advanced Maintenance",
 	icon: "gregtech:machine 1 1656",
-	x: -5.0d,
-	y: 0.0d,
+	x: -4.0d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
 		"You now have access to two §3new Maintenance Hatches§r. Both start with §6no Maintenance required§r.",

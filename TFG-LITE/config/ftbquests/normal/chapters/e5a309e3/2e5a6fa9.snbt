@@ -2,7 +2,7 @@
 	title: "Silicone Rubber",
 	icon: "gregtech:meta_plate 1 1000",
 	x: 2.0d,
-	y: -1.0d,
+	y: -1.5d,
 	shape: "circle",
 	text: [
 		"An alternate §aRubber§r, for use in Cable insulation, Conveyor recipes and Wetware (much later on!).",

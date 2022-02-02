@@ -2,7 +2,7 @@
 	title: "Large Combustion",
 	icon: "gregtech:machine 1 1007",
 	x: -5.0d,
-	y: -1.0d,
+	y: -1.5d,
 	shape: "pentagon",
 	text: [
 		"No Description"

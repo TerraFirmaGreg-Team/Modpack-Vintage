@@ -19,8 +19,16 @@
 		"f517b2ba"
 	],
 	tasks: [{
-		uid: "4b74afde",
-		type: "fluid",
-		fluid: "ethylene"
+		uid: "b7fa8634",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ethylene",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

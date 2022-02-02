@@ -21,8 +21,16 @@
 		"d4f362aa"
 	],
 	tasks: [{
-		uid: "39342d87",
-		type: "fluid",
-		fluid: "severely_steamcracked_light_fuel"
+		uid: "84c74f80",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "severely_steamcracked_light_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

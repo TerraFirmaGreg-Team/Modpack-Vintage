@@ -1,0 +1,23 @@
+{
+	title: "I believe I can fly 2",
+	x: 12.0d,
+	y: -10.0d,
+	text: [
+		"This jetpack enables flight, and requires energy. §oWhat do you mean a jetpack is supposed to work off propellants?§r",
+		"",
+		"Charge it like you would charge a Battery.",
+		"",
+		"Press §4H§r (default) to enable Hover Mode."
+	],
+	dependencies: [
+		"76dc4691"
+	],
+	tasks: [{
+		uid: "d2c16653",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 3"
+		}],
+		ignore_nbt: 1b
+	}]
+}

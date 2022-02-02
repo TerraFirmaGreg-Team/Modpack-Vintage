@@ -1,0 +1,22 @@
+{
+	icon: "gregtech:meta_ingot 1 2516",
+	x: 7.5d,
+	y: -1.5d,
+	dependencies: [
+		"2556183b"
+	],
+	tasks: [{
+		uid: "73ea6036",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2516"
+		}]
+	},
+	{
+		uid: "565e6175",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2516"
+		}]
+	}]
+}

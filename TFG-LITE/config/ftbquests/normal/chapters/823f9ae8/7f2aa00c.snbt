@@ -70,33 +70,6 @@
 		}]
 	},
 	{
-		uid: "69fe160c",
-		type: "item",
-		items: [{
-			id: "tfcthings:mold/prospectors_hammer_head",
-			ForgeCaps: {
-				Parent: {
-					heat: 0.0f,
-					ticks: -1L,
-					Empty: ""
-				}
-			}
-		}]
-	},
-	{
-		uid: "e1e4ab7f",
-		type: "item",
-		items: [{
-			id: "tfcthings:mold/unfired/prospectors_hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		}]
-	},
-	{
 		uid: "0e5cb0aa",
 		type: "item",
 		items: [{

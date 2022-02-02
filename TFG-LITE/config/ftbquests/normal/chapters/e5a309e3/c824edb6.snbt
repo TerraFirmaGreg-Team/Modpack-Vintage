@@ -1,8 +1,8 @@
 {
 	title: "HV Circuit Assembling",
 	icon: "gregtech:machine 1 637",
-	x: -3.0d,
-	y: -8.0d,
+	x: -6.0d,
+	y: -4.0d,
 	text: [
 		"The next §3Circuit Assembler§r, used to make your first ever §aMainframe§r.",
 		"",

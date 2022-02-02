@@ -1,9 +1,11 @@
 {
+	icon: "appliedenergistics2:creative_energy_cell",
 	x: -2.0d,
 	y: 0.0d,
 	dependencies: [
 		"a3f5a77d"
 	],
+	hide: true,
 	tasks: [{
 		uid: "a864a0a5",
 		type: "checkmark",

@@ -1,17 +1,15 @@
 {
 	title: "SMD Components",
 	icon: "gregtech:meta_item_1 1 523",
-	x: -4.0d,
-	y: 5.0d,
+	x: -5.0d,
+	y: 4.0d,
 	shape: "circle",
 	text: [
 		"§oAlternate components! Smaller, better, cheaper!§r",
 		"",
-		"The §eSMD§r (surface-mount device) §eComponents§r are required for the next tier of circuits (§5Nano§r). They can also be used in place of their non-SMD counterparts in most recipes.",
+		"The §eSMD§r (surface-mount device) §aComponents§r are required for the next tier of circuits (§5Nano§r). They can also be used in place of their non-SMD counterparts in most Circuit recipes.",
 		"",
-		"Of course they are more complicated to make, this is GregTech! What did you expect?",
-		"",
-		"§aPlatinum§r (needed for SMD Diodes) has its own dedicated quest in the §5EV§r tab."
+		"Of course they are more complicated to make, this is GregTech! What did you expect?"
 	],
 	dependencies: [
 		"2e62dccf"
@@ -35,20 +33,6 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 525"
-		}]
-	},
-	{
-		uid: "5aaae23c",
-		type: "item",
-		items: [{
-			item: "gregtech:meta_item_1 1 526"
-		}]
-	},
-	{
-		uid: "6f1ce9d2",
-		type: "item",
-		items: [{
-			item: "gregtech:meta_item_1 1 527"
 		}]
 	}]
 }

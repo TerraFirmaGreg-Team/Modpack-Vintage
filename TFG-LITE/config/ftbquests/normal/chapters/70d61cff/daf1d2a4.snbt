@@ -1,8 +1,8 @@
 {
 	title: "Multiblock Cracking",
 	icon: "gregtech:machine 1 1009",
-	x: -7.0d,
-	y: -5.0d,
+	x: 0.0d,
+	y: 7.5d,
 	text: [
 		"§oLet's get cracking, shall we?§r",
 		"",
@@ -13,7 +13,7 @@
 		"Higher Coil tiers provide small energy discount, not too important."
 	],
 	dependencies: [
-		"05af19ec"
+		"ff136331"
 	],
 	tasks: [{
 		uid: "f6b594c6",

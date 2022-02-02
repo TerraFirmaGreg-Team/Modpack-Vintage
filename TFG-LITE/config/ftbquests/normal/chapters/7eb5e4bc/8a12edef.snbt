@@ -2,7 +2,7 @@
 	title: "Fusion Reactor I",
 	icon: "gregtech:machine 1 1020",
 	x: 1.5d,
-	y: 0.0d,
+	y: 1.0d,
 	text: [
 		"No Description"
 	],

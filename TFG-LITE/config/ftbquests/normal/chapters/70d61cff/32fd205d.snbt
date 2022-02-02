@@ -1,0 +1,22 @@
+{
+	x: -3.0d,
+	y: 1.5d,
+	text: [
+		"§oQuite a bit of a microcrafting project, but this is worth it!§r",
+		"",
+		"The Advanced Nano Chestplate combines protection, a personal battery and a jetpack, all in one.",
+		"",
+		"To enable charging, shift right-click it when it is in your hand."
+	],
+	dependencies: [
+		"1d92025d"
+	],
+	tasks: [{
+		uid: "a932ced7",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 30"
+		}],
+		ignore_nbt: 1b
+	}]
+}

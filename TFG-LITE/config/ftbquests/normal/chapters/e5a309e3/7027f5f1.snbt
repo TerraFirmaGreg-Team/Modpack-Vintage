@@ -1,8 +1,8 @@
 {
 	title: "Ender Pearls",
 	icon: "minecraft:ender_pearl",
-	x: 0.0d,
-	y: 5.0d,
+	x: -0.5d,
+	y: 6.0d,
 	text: [
 		"If you've killed an Enderman before, you may have noticed it dropped §aEnderpearl Dust§r instead of an Ender Pearl. In order to get §aEnder Pearls§r, you must make them from Enderpearl Dust in the §3Implosion Compressor§r.",
 		"",
@@ -11,7 +11,6 @@
 		"In the long term, §aEnderpearl Dusts§r should be made in an §3HV Mixer§r."
 	],
 	dependencies: [
-		"4a7f8076",
 		"72f18d27"
 	],
 	tasks: [{

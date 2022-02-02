@@ -13,8 +13,7 @@
 		"No Description"
 	],
 	dependencies: [
-		"ff136331",
-		"7354e826"
+		"ff136331"
 	],
 	tasks: [{
 		uid: "c4519699",

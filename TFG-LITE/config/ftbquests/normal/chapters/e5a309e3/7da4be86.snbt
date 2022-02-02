@@ -1,8 +1,8 @@
 {
 	title: "Large Steam Turbine",
 	icon: "gregtech:machine 1 1010",
-	x: -6.0d,
-	y: -5.0d,
+	x: -5.0d,
+	y: -1.0d,
 	text: [
 		"§oIf you're still running off Steam, here is a solution for you!§r",
 		"",
@@ -18,6 +18,13 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 1010"
+		}]
+	},
+	{
+		uid: "4d5a265f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1228"
 		}]
 	}]
 }

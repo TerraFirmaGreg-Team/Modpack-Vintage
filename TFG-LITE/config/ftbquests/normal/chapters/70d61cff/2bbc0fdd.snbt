@@ -1,0 +1,21 @@
+{
+	title: "Extreme Mixing",
+	x: 6.0d,
+	y: -4.0d,
+	text: [
+		"The §5EV§r Mixer is required for §9Tungstensteel§r.",
+		"",
+		"If §6Gregicality: Multiblocks§r is installed, you can now make §3Tantalum Carbide§r and other materials required to make the §3Alloy Blast Smelter§r. This can smelt Dust mixtures into molten alloys, which need to be cooled, essentially swapping the Mixer step with a Vacuum Freezer step. It is required to make the advanced alloys for making the other multiblocks, but those are only available in §1IV§r."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"14263e77"
+	],
+	tasks: [{
+		uid: "9e95c4fb",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 473"
+		}]
+	}]
+}
