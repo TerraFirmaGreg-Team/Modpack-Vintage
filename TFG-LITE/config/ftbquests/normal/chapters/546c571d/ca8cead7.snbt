@@ -1,10 +1,11 @@
 {
-	title: "Basic Electromagnetic Separator",
+	title: "{tfg.quests.lv.separator.title}",
 	icon: "gregtech:machine 1 290",
-	x: -8.0d,
+	x: -8.5d,
 	y: 15.0d,
+	description: "{tfg.quests.lv.separator.subtitle}",
 	text: [
-		"A rarely used machine. It uses magnetic fields to separate some Magnetic ores and gain additional §6Byproducts§r you would not obtain otherwise."
+		""
 	],
 	dependencies: [
 		"3418fbbb"

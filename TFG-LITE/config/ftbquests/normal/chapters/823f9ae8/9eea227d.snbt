@@ -1,6 +1,6 @@
 {
 	x: -26.0d,
-	y: -8.0d,
+	y: -8.5d,
 	description: "{tfg.quests.primitive.theHammer.subtitle}",
 	dependencies: [
 		"d1baef19"

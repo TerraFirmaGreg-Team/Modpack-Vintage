@@ -1,20 +1,19 @@
 {
-	title: "Transformers",
+	title: "{tfg.quests.lv.transformers.title}",
 	icon: "gregtech:machine 1 1286",
 	x: 7.0d,
 	y: 7.0d,
+	description: "{tfg.quests.lv.transformers.subtitle}",
 	text: [
-		"§9§aTransformers§r allow you to step up and down Voltage tiers safely. Transformers change the power they receive into an equivalent amount of power 1 voltage tier above or below the input voltage.",
+		"{tfg.quests.lv.transformers.desc1}",
 		"",
-		"Apart from running machines on different voltage tiers, Transformers are useful for transporting power across longer distances. Cable loss has less of an effect at higher voltages.",
+		"{tfg.quests.lv.transformers.desc2}",
 		"",
-		"Transformers have 5 low voltage sides, and 1 high voltage side.",
+		"{tfg.quests.lv.transformers.desc3}",
 		"",
-		"This quest calls for two different types of Transformers; get §eeither§o§r to complete the quest. The §9normal§r Transformer can only do 1A <-> 4A conversion, but §9Adjustable§r Transformers can be changed between 1A <-> 4A, 2A <-> 8A, 4A <-> 16A, and 16A <-> 64A conversions. ",
+		"{tfg.quests.lv.transformers.desc4}",
 		"",
-		"Use a §aSoft Hammer§r to change between transform up and down, and a §aScrewdriver§r on Adjustable Transformers to change the amperage.",
-		"",
-		"Higher tier Transformers require §9Coils§r."
+		"{tfg.quests.lv.transformers.desc5}"
 	],
 	dependencies: [
 		"bc19757c"

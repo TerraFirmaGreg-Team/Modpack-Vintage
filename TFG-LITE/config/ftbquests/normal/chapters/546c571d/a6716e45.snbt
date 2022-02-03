@@ -1,6 +1,15 @@
 {
+	title: "{tfg.quests.lv.wiremill.title}",
 	x: 0.0d,
 	y: 13.0d,
+	description: "{tfg.quests.lv.wiremill.subtitle}",
+	text: [
+		"{tfg.quests.lv.wiremill.desc1}",
+		"",
+		"{tfg.quests.lv.wiremill.desc2}",
+		"",
+		"{tfg.quests.lv.wiremill.desc3}"
+	],
 	dependencies: [
 		"dd1bc7c8"
 	],

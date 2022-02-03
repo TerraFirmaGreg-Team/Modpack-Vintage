@@ -1,12 +1,11 @@
 {
-	title: "Sapphire",
+	title: "{tfg.quests.lv.sapphire.title}",
 	icon: "gregtech:meta_dust 1 314",
 	x: -8.0d,
 	y: 20.0d,
+	description: "{tfg.quests.lv.sapphire.subtitle}",
 	text: [
-		"With LV power, the only way of getting §aAluminium Dust§r is by electrolyzing §9Sapphire§r or §2Green Sapphire§r. Aluminium is the main §bMV§r material.",
-		"",
-		"I could advise to get enough Sapphire to electrolyze into one full stack of §aAluminium Dust§r, that §lwill§r be helpful. Plus the bonus Oxygen is always nice."
+		"{tfg.quests.lv.sapphire.desc}"
 	],
 	dependencies: [
 		"baa13c19"

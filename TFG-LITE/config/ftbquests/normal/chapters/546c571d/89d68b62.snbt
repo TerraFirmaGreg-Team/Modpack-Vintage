@@ -1,6 +1,18 @@
 {
+	title: "{tfg.quests.lv.assembling.title}",
 	x: 3.0d,
 	y: 17.0d,
+	description: "{tfg.quests.lv.assembling.subtitle}",
+	text: [
+		"{tfg.quests.lv.assembling.desc1}",
+		"",
+		"{tfg.quests.lv.assembling.desc2}",
+		"",
+		"{tfg.quests.lv.assembling.desc3}",
+		"{tfg.quests.lv.assembling.desc4}",
+		"{tfg.quests.lv.assembling.desc5}",
+		"{tfg.quests.lv.assembling.desc6}"
+	],
 	dependencies: [
 		"a02702d7"
 	],

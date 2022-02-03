@@ -1,17 +1,17 @@
 {
-	title: "Batteries!",
+	title: "{tfg.quests.lv.batteries.title}!",
 	x: 9.0d,
 	y: 13.0d,
 	shape: "hexagon",
+	description: "{tfg.quests.lv.batteries.subtitle}",
 	text: [
-		"LV Batteries come in three forms, allowing you to pick the one you find the best depending on materials you have.",
+		"{tfg.quests.lv.batteries.desc1}",
 		"",
-		"Be it either §dSodium§r, §dLithium§r or §dCadmium§r, you will need either an Electrolyzer or a Centrifuge to obtain them. They do not exist as ore.",
+		"{tfg.quests.lv.batteries.desc2}",
 		"",
-		"My recommendation is: find a Salt vein, and either §aelectrolyze Salt§r for Sodium, or §aOre wash§r Lepidolite for Lithium.",
+		"{tfg.quests.lv.batteries.desc3}",
 		"",
-		"",
-		"Get §eany§r of the three batteries to complete this quest."
+		"{tfg.quests.lv.batteries.desc4}"
 	],
 	dependencies: [
 		"d62de7c3"

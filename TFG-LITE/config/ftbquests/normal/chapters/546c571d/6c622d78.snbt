@@ -2,6 +2,9 @@
 	icon: "gregtech:meta_gear 1 51",
 	x: -2.0d,
 	y: 8.0d,
+	text: [
+		""
+	],
 	dependencies: [
 		"f04e0193"
 	],

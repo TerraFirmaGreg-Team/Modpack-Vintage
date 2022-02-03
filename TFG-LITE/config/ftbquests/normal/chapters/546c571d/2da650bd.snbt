@@ -1,13 +1,11 @@
 {
-	title: "Basic Gas Collector",
+	title: "{tfg.quests.lv.gascollector.title}",
 	icon: "gregtech:machine 1 530",
 	x: -6.0d,
 	y: 17.0d,
+	description: "{tfg.quests.lv.gascollector.subtitle}",
 	text: [
-		"The Gas Collector collects Air, to centrifuge into §aOxygen§r and §aNitrogen§r.",
-		"",
-		"",
-		"§bLore:§r GregTech 5 players remember when they had to use a Compressor with IC2 cells to get Compressed Air... In here, cell chemistry is no more."
+		""
 	],
 	dependencies: [
 		"0ca753fa"

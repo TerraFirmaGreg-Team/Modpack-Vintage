@@ -1,6 +1,11 @@
 {
+	title: "{tfg.quests.lv.canning.title}",
 	x: 3.0d,
 	y: 13.0d,
+	description: "{tfg.quests.lv.canning.subtitle}",
+	text: [
+		"{tfg.quests.lv.canning.desc}"
+	],
 	min_required_dependencies: 2,
 	dependencies: [
 		"a02702d7",

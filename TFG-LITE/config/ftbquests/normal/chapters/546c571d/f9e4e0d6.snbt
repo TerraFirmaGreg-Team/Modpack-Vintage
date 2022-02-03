@@ -1,6 +1,11 @@
 {
+	title: "{tfg.quests.lv.polarizer.title}",
 	x: -1.0d,
 	y: 13.0d,
+	description: "{tfg.quests.lv.polarizer.subtitle}",
+	text: [
+		"{tfg.quests.lv.polarizer.desc}"
+	],
 	dependencies: [
 		"a6716e45"
 	],

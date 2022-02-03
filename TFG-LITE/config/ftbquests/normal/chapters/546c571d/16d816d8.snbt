@@ -1,7 +1,15 @@
 {
+	title: "{tfg.quests.lv.robot.title}",
 	x: 0.0d,
-	y: 6.0d,
+	y: 7.0d,
 	shape: "hexagon",
+	description: "{tfg.quests.lv.robot.subtitle}",
+	text: [
+		"{tfg.quests.lv.robot.desc1}",
+		"{tfg.quests.lv.robot.desc2}",
+		"",
+		"{tfg.quests.lv.robot.desc3}"
+	],
 	dependencies: [
 		"43157f5b"
 	],

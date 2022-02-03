@@ -1,13 +1,15 @@
 {
-	title: "Basic Sifting Machine",
+	title: "{tfg.quests.lv.sifting.title}",
 	icon: "gregtech:machine 1 575",
 	x: -6.0d,
-	y: 13.0d,
+	y: 12.5d,
+	description: "{tfg.quests.lv.sifting.subtitle}",
 	text: [
-		"The Sifter takes §dGem type§r §aPurified Ores§r to turn them into high grade gems with §6higher yield§r than other means.",
+		"{tfg.quests.lv.sifting.desc1}",
 		"",
+		"{tfg.quests.lv.sifting.desc2}",
 		"",
-		"§9Note:§r If you crushed Gem Ores (such as Diamond), it is primordial you use this machine to recover the actual gems in non dust form. However this is a rather slow process so you may sometimes want to smelt this type of ore directly into the Gem."
+		"{tfg.quests.lv.sifting.desc3}"
 	],
 	dependencies: [
 		"3418fbbb"
@@ -17,6 +19,29 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 575"
+		}]
+	},
+	{
+		uid: "94c580f8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed_purified 1 278"
+		}],
+		count: 8L
+	},
+	{
+		uid: "1a27e73d",
+		type: "item",
+		items: [{
+			item: "minecraft:emerald"
+		}],
+		count: 4L
+	},
+	{
+		uid: "66cef780",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_gem_flawless 1 278"
 		}]
 	}]
 }

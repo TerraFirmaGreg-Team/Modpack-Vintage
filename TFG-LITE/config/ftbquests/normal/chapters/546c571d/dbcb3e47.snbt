@@ -1,13 +1,12 @@
 {
-	title: "Diodes",
+	title: "{tfg.quests.lv.diodes.title}",
 	icon: "gregtech:meta_item_1 1 521",
-	x: 4.0d,
+	x: 4.5d,
 	y: 18.0d,
+	description: "{tfg.quests.lv.diodes.subtitle}",
 	text: [
-		"§oDon't let JEI fool you, there's only one available recipe right now for this Primitive Diode.§r",
-		"",
-		"Diode has a inconvenient recipe, but it will get cheaper and more convenient once you can obtain Polyethylene.",
-		"This is required for §dMV Circuits§r."
+		"{tfg.quests.lv.diodes.desc1}",
+		"{tfg.quests.lv.diodes.desc2}"
 	],
 	dependencies: [
 		"89d68b62",

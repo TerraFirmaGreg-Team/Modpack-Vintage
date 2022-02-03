@@ -1,19 +1,16 @@
 {
-	title: "Evil Circuit Board",
+	title: "{tfg.quests.lv.board.title}",
 	icon: "gregtech:meta_item_1 1 402",
 	x: 0.0d,
 	y: 20.0d,
+	description: "{tfg.quests.lv.board.subtitle}",
 	text: [
-		"§oI'm not sure why it's called \"Good\" Circuit Board, as I consider it rather evil to craft.§r",
+		"{tfg.quests.lv.board.desc1}",
 		"",
-		"This Circuit Board is used to create §dMV Circuits§r!",
+		"{tfg.quests.lv.board.desc2}",
+		"{tfg.quests.lv.board.desc3}",
 		"",
-		"",
-		"§9Note:§r You have §ltwo§r options to make the Phenolic Circuit Board. Using §aSodium Persulfate§r, making boards takes §6only a quarter of the Silver§r as opposed to the crafting recipe.",
-		"§lHowever§r given how painful it may be for you to obtain these chemicals §oright now§r, you may want to simply use more Silver by mining most of a Galena Vein...",
-		"",
-		"",
-		"The Quest for Sodium Persulfate is in the MV chapter, if you are interested in that."
+		"{tfg.quests.lv.board.desc4}"
 	],
 	dependencies: [
 		"373812bd"

@@ -1,8 +1,21 @@
 {
+	title: "{tfg.quests.lv.lboiler.title}",
 	x: 5.0d,
 	y: 10.0d,
 	shape: "pentagon",
-	description: "{tfg.quests.steam.bigbronzeboiler.subtitle}",
+	description: "{tfg.quests.lv.lboiler.subtitle}",
+	text: [
+		"{tfg.quests.lv.lboiler.desc1}",
+		"",
+		"{tfg.quests.lv.lboiler.desc2}",
+		"{tfg.quests.lv.lboiler.desc3}",
+		"{tfg.quests.lv.lboiler.desc4}",
+		"",
+		"{tfg.quests.lv.lboiler.desc5}",
+		"{tfg.quests.lv.lboiler.desc6}",
+		"",
+		"{tfg.quests.lv.lboiler.desc7}"
+	],
 	dependencies: [
 		"40c4948a"
 	],

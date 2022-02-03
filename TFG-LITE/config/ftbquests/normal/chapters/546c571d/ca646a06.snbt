@@ -1,6 +1,16 @@
 {
+	title: "{tfg.quests.lv.cells.title}",
 	x: 4.0d,
 	y: 14.0d,
+	description: "{tfg.quests.lv.cells.subtitle}",
+	text: [
+		"{tfg.quests.lv.ecellsra.desc1}",
+		"{tfg.quests.lv.ecellsra.desc2}",
+		"{tfg.quests.lv.ecellsra.desc3}",
+		"{tfg.quests.lv.ecellsra.desc4}",
+		"{tfg.quests.lv.ecellsra.desc5}",
+		"{tfg.quests.lv.ecellsra.desc6}"
+	],
 	dependencies: [
 		"202a8ed5"
 	],

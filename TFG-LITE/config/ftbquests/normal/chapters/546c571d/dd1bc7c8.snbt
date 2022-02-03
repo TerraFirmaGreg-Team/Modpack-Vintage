@@ -1,17 +1,15 @@
 {
-	title: "LV Electric Motora",
+	title: "{tfg.quests.lv.motora.title}",
 	x: 0.0d,
 	y: 8.0d,
 	shape: "hexagon",
+	description: "{tfg.quests.lv.motora.subtitle}",
 	text: [
-		"§oOne of the gatekeepers to the LV Age... You are getting close.§r",
+		"{tfg.quests.lv.motora.desc1}",
 		"",
-		"We are cutting down the retrieval task counts as you progress further into the modpack so you don't have to check several times which items to submit. Remember that JEI is your friend if you forgot how to craft things!",
+		"{tfg.quests.lv.motora.desc2}",
 		"",
-		"Craft six §aLV Electric Motors§r! This may seem like a lot, but that's the bare minimum required to get to the good stuff in LV Age.",
-		"",
-		"",
-		"§6Once you complete this Quest and the Electronic Circuit Quest, you are ready to move on to the LV Age.§r"
+		"{tfg.quests.lv.motora.desc3}"
 	],
 	dependencies: [
 		"6c622d78"

@@ -1,6 +1,11 @@
 {
+	title: "{tfg.quests.lv.lathe.title}",
 	x: -1.0d,
 	y: 14.0d,
+	description: "{tfg.quests.lv.lathe.subtitle}",
+	text: [
+		"{tfg.quests.lv.lathe.desc}"
+	],
 	dependencies: [
 		"a6716e45"
 	],

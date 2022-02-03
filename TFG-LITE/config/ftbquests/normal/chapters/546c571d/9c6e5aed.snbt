@@ -1,19 +1,16 @@
 {
-	title: "Gallium Arsenide",
+	title: "{tfg.quests.lv.gallium.title}",
 	icon: "gregtech:meta_dust 1 351",
 	x: 0.0d,
 	y: 18.0d,
+	description: "{tfg.quests.lv.gallium.subtitle}",
 	text: [
-		"Gallium and Arsenic do not exist as Ore!",
+		"{tfg.quests.lv.gallium.desc1}",
+		"{tfg.quests.lv.gallium.desc2}",
+		"{tfg.quests.lv.gallium.desc3}",
+		"{tfg.quests.lv.gallium.desc4}",
 		"",
-		"",
-		"For §dGallium§r, you may:",
-		"§9- §aElectrolyze Sphalerite§r for a low chance of small dust (worst solution).",
-		"§9-§r Put §aCrushed Bauxite in the Chemical Bath§r, but that requires Sodium Persulfate.",
-		"§9-§r Obtain it as a Byproduct of §aSphalerite§r Ore Processing, in the §aThermal Centrifuge§r or Centrifuge (best solution).",
-		"",
-		"",
-		"For §dArsenic§r, you will have to mine and §acentrifuge Realgar§r."
+		"{tfg.quests.lv.gallium.desc5}"
 	],
 	dependencies: [
 		"7ecf0fe2",

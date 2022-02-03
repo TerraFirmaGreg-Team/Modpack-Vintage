@@ -1,5 +1,5 @@
 {
-	title: "We Drillin'",
+	title: "{tfg.quests.lv.drillin.title}",
 	icon: {
 		id: "gregtech:meta_tool",
 		Damage: 20s,
@@ -10,27 +10,20 @@
 			}
 		}
 	},
-	x: -4.0d,
-	y: 9.0d,
+	x: 10.0d,
+	y: 14.0d,
+	description: "{tfg.quests.lv.drillin.subtitle}",
 	text: [
-		"§oThe mining drill is a nice Mining Tool, it comes in different tiers. The LV Drill may not be too appealing, but later drills can mine 3x3x3, 5x5x5, and up to 9x9x9 to make huge holes!§r",
+		"{tfg.quests.lv.drillin.desc1}",
 		"",
-		"This suggested drill is with a Diamond tip, which might be the best material for it right now.",
+		"{tfg.quests.lv.drillin.desc2}",
 		"",
+		"{tfg.quests.lv.drillin.desc3}",
 		"",
-		"§9Note:§r All Electric Tools have a lot more durability than indicated, as they use Energy to prevent damage from being applied! On top of that, they can be enchanted as Pickaxes can.",
-		"",
-		"§9Other note:§r Batteries in your inventory can be shift right-clicked to §denable charging§r your EU items. Don't do it §owhile§r mining though, as your item will be constantly updated and it will keep resetting the mining progress. ",
-		"",
-		"",
-		"You may make hold off and make a MV drill §einstead§r. That one will be completely worth it.",
-		"",
-		"",
-		"§bLore:§r Up until GTCEu, Electric tools required Stainless Steel, which made them locked until almost HV age."
+		"{tfg.quests.lv.drillin.desc4}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
-		"6c622d78"
+		"0c6d2117"
 	],
 	or_tasks: true,
 	tasks: [{

@@ -1,15 +1,13 @@
 {
-	title: "Basic Autoclave",
+	title: "{tfg.quests.lv.autoclave.title}",
 	icon: "gregtech:machine 1 125",
 	x: -8.0d,
 	y: 14.0d,
+	description: "{tfg.quests.lv.autoclave.subtitle}",
 	text: [
-		"The Autoclave typically is the last step of Ore Processing, to turn a few select §aGem Dusts§r back regular Gems.",
+		"{tfg.quests.lv.autoclave.desc1}",
 		"",
-		"It is very slow so in general it is not advised to crush gem ores at all, as the recovery process is too expensive.",
-		"",
-		"",
-		"§9Note:§r In this modpack, the Autoclave is required to make Fluix Crystals to progress in Applied Energistics."
+		"{tfg.quests.lv.autoclave.desc2}"
 	],
 	dependencies: [
 		"3418fbbb"

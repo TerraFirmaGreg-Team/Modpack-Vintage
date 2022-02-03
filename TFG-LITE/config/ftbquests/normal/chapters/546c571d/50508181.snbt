@@ -1,8 +1,16 @@
 {
+	title: "{tfg.quests.lv.aluminiumingot.title}",
 	x: 14.0d,
 	y: 8.0d,
 	shape: "gear",
 	description: "{tfg.quests.lv.aluminiumingot.subtitle}",
+	text: [
+		"{tfg.quests.lv.aluminiumingot.desc1}",
+		"",
+		"{tfg.quests.lv.aluminiumingot.desc2}",
+		"",
+		"{tfg.quests.lv.aluminiumingot.desc3}"
+	],
 	dependencies: [
 		"9dd3a20f"
 	],
