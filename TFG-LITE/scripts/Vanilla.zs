@@ -4,6 +4,20 @@ import mods.terrafirmacraft.ItemRegistry;
 
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
+    //Fence Gates
+    <minecraft:fence_gate>,
+    <minecraft:spruce_fence_gate>,
+    <minecraft:birch_fence_gate>,
+    <minecraft:jungle_fence_gate>,
+    <minecraft:dark_oak_fence_gate>,
+    <minecraft:acacia_fence_gate>,
+    //Gates
+    <minecraft:fence>,
+    <minecraft:spruce_fence>,
+    <minecraft:birch_fence>,
+    <minecraft:jungle_fence>,
+    <minecraft:dark_oak_fence>,
+    <minecraft:acacia_fence>,
     //Ores
     <minecraft:gold_ore>,
     <minecraft:iron_ore>,
@@ -214,13 +228,51 @@ recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>])
 recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
 recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
- 
-//Рельсовые приколы
-recipes.addShapeless(<minecraft:chest_minecart>, [<minecraft:minecart>, <ore:chestWood>]);
-recipes.addShapeless(<minecraft:furnace_minecart>, [<minecraft:minecart>, <gregtech:machine:15>]);
 
 //Бирка
 recipes.addShaped(<minecraft:name_tag>,
 [[<ore:string>, <ore:string>, null],
  [<ore:string>, <minecraft:paper>, null],
  [<ore:string>, <ore:string>, null]]);
+
+//Повторитель
+recipes.addShaped(<minecraft:repeater>,
+[[<ore:screwIron>, null, <ore:screwIron>],
+ [<minecraft:redstone_torch>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <minecraft:redstone_torch>],
+ [<ore:pressurePlateStone>, <ore:stickRedAlloy>,<ore:pressurePlateStone>]]);
+
+//Компаратор - обычный
+recipes.addShaped(<minecraft:comparator>,
+[[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
+ [<minecraft:redstone_torch>, <ore:plateCertusQuartz>, <minecraft:redstone_torch>],
+ [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+
+//Компаратор - кварц
+recipes.addShaped(<minecraft:comparator>,
+[[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
+ [<minecraft:redstone_torch>, <ore:plateNetherQuartz>, <minecraft:redstone_torch>],
+ [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+
+//Компаратор - кварцит
+recipes.addShaped(<minecraft:comparator>,
+[[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
+ [<minecraft:redstone_torch>, <ore:plateQuartzite>, <minecraft:redstone_torch>],
+ [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+
+//Детектор света - обычный
+recipes.addShaped(<minecraft:daylight_detector>,
+[[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+ [<ore:plateCertusQuartz>, <ore:plateCertusQuartz>, <ore:plateCertusQuartz>],
+ [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
+
+//Детектор света - кварц
+recipes.addShaped(<minecraft:daylight_detector>,
+[[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+ [<ore:plateNetherQuartz>, <ore:plateNetherQuartz>, <ore:plateNetherQuartz>],
+ [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
+
+//Детектор света - кварцит
+recipes.addShaped(<minecraft:daylight_detector>,
+[[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+ [<ore:plateQuartzite>, <ore:plateQuartzite>, <ore:plateQuartzite>],
+ [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);

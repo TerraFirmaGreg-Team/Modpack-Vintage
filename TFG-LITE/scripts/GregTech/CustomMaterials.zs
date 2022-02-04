@@ -29,7 +29,7 @@ for material in MaterialRegistry.getAllMaterials()
     }
 }
 
-
+/*
 // --- Custom Stone Type
 // - Andesite
 val TFC_Andesite = MaterialBuilder(32000 ,"tfc_andesite").dust(1).build();
@@ -150,3 +150,4 @@ StoneType.create(44, "tfc_raw_slate", "oreSlateTfc", TFC_Slate, "tfc:raw/slate")
 // - Soapstone
 val TFC_Soapstone = MaterialBuilder(32030 ,"tfc_soapstone").dust(1).build();
 StoneType.create(45, "tfc_raw_soapstone", "oreSoapstoneTfc", TFC_Soapstone, "tfc:raw/soapstone");
+*/

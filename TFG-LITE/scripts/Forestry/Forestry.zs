@@ -103,7 +103,15 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<forestry:ffarm:5>.withTag({FarmBlock: 2}),
 	<forestry:ffarm:5>.withTag({FarmBlock: 4}),
 	<forestry:ffarm:5>.withTag({FarmBlock: 5}),
-	<forestry:ffarm:5>.withTag({FarmBlock: 7})
+	<forestry:ffarm:5>.withTag({FarmBlock: 7}),
+	<forestry:can>,
+	<forestry:can:1>,
+	<forestry:capsule>,
+	<forestry:capsule:1>,
+	<forestry:refractory>,
+	<forestry:refractory:1>,
+	<forestry:ambrosia>,
+	<forestry:honey_pot>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -450,7 +458,7 @@ circuit_assembler.recipeBuilder()
 recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
 
 // --- Хлеб с медом
-recipes.addShapeless(<forestry:honey_drop>, [<forestry:bee_combs>, <ore:craftingToolMortar>.firstItem.withEmptyTag()]);
+recipes.addShapeless(<forestry:honeyed_slice>, [<firmalife:honeycomb>, <ore:categoryBread>]);
 
 // --- Регистрация хлеба с медом
 ItemRegistry.registerFood(<forestry:honeyed_slice>, 4, 0, 0.7, 0.4, 1.0, 0, 0, 0, 0);

@@ -1,115 +1,39 @@
 #priority 1000
 
 import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IItemStack;
 
-//1 - Raw Igneous Intrusive
-var RawIgneousIntrusive = [<tfc:raw/granite>, <tfc:raw/gabbro>, <tfc:raw/rhyolite>, <tfc:raw/diorite>, <tfc:raw/breccia>, <tfc:raw/porphyry>] as IItemStack[];
+// --- Adding OreDictionary
+// --- TFC
+// Rock Categories
+// Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
 	<ore:RawIgneousIntrusive>.add(item);
 }
-//2 - Raw Igneous Extrusive
-var RawIgneousExtrusive = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>, <tfc:raw/peridotite>] as IItemStack[];
+
+// Raw Igneous Extrusive Rocks To One OreDict
 for item in RawIgneousExtrusive {
 	<ore:RawIgneousExtrusive>.add(item);
 }
-//3 - Rock Metamorphic
-var RawMetamorphic = [<tfc:raw/marble>, <tfc:raw/gneiss>, <tfc:raw/schist>, <tfc:raw/quartzite>, <tfc:raw/phyllite>, <tfc:raw/slate>, <tfc:raw/catlinite>, <tfc:raw/novaculite>, <tfc:raw/soapstone>, <tfc:raw/komatiite>] as IItemStack[];
+
+// Rock Metamorphic Rocks To One OreDict
 for item in RawMetamorphic {
 	<ore:RawMetamorphic>.add(item);
 }
-//4 - Rock Sedimentary
-var RawSedimentary = [<tfc:raw/shale>, <tfc:raw/dolomite>, <tfc:raw/conglomerate>, <tfc:raw/limestone>, <tfc:raw/rocksalt>, <tfc:raw/claystone>, <tfc:raw/chert>, <tfc:raw/chalk>, <tfc:raw/mudstone>, <tfc:raw/sandstone>, <tfc:raw/siltstone>] as IItemStack[];
+
+// Rock Sedimentary Rocks To One OreDict
 for item in RawSedimentary {
 	<ore:RawSedimentary>.add(item);
 }
 
-//Seeds
-var AllSeeds = [
-	<tfc:crop/seeds/barley>,
-	<tfc:crop/seeds/maize>,
-	<tfc:crop/seeds/oat>,
-	<tfc:crop/seeds/rice>,
-	<tfc:crop/seeds/rye>,
-	<tfc:crop/seeds/wheat>,
-	<tfc:crop/seeds/beet>,
-	<tfc:crop/seeds/cabbage>,
-	<tfc:crop/seeds/carrot>,
-	<tfc:crop/seeds/garlic>,
-	<tfc:crop/seeds/green_bean>,
-	<tfc:crop/seeds/onion>,
-	<tfc:crop/seeds/potato>,
-	<tfc:crop/seeds/soybean>,
-	<tfc:crop/seeds/squash>,
-	<tfc:crop/seeds/sugarcane>,
-	<tfc:crop/seeds/tomato>,
-	<tfc:crop/seeds/red_bell_pepper>,
-	<tfc:crop/seeds/yellow_bell_pepper>,
-	<tfc:crop/seeds/jute>,
-	<tfcflorae:crop/product/malt_spelt>,
-	<tfcflorae:crop/seeds/amaranth>,
-	<tfcflorae:crop/seeds/buckwheat>,
-	<tfcflorae:crop/seeds/fonio>,
-	<tfcflorae:crop/seeds/millet>,
-	<tfcflorae:crop/seeds/quinoa>,
-	<tfcflorae:crop/seeds/spelt>,
-	<tfcflorae:crop/seeds/black_eyed_peas>,
-	<tfcflorae:crop/seeds/cayenne_pepper>,
-	<tfcflorae:crop/seeds/ginger>,
-	<tfcflorae:crop/seeds/ginseng>,
-	<tfcflorae:crop/seeds/rutabaga>,
-	<tfcflorae:crop/seeds/turnip>,
-	<tfcflorae:crop/seeds/sugar_beet>,
-	<tfcflorae:crop/seeds/purple_grape>,
-	<tfcflorae:crop/seeds/green_grape>,
-	<tfcflorae:crop/seeds/liquorice_root>,
-	<tfcflorae:crop/seeds/coffea>,
-	<tfcflorae:crop/seeds/agave>,
-	<tfcflorae:crop/seeds/coca>,
-	<tfcflorae:crop/seeds/cotton>,
-	<tfcflorae:crop/seeds/flax>,
-	<tfcflorae:crop/seeds/hemp>,
-	<tfcflorae:crop/seeds/hop>,
-	<tfcflorae:crop/seeds/indigo>,
-	<tfcflorae:crop/seeds/madder>,
-	<tfcflorae:crop/seeds/opium_poppy>,
-	<tfcflorae:crop/seeds/rape>,
-	<tfcflorae:crop/seeds/weld>,
-	<tfcflorae:crop/seeds/woad>,
-	<tfcflorae:crop/seeds/tobacco>
-	] as IItemStack[];
+// OreDicionary for all seeds
 for item in AllSeeds {
 	<ore:listAllSeeds>.add(item);
 }
 
-/*             ///Сундуки из форестри в один oredictionary///               */
-var ForestryChestsArray = [
-<forestry:butterfly_chest>,
-<forestry:tree_chest>,
-<forestry:bee_chest>
-] as IItemStack[];
-var ForestryChests1 = <ore:ForestryChests>;
-for item in ForestryChestsArray {
-	ForestryChests1.add(item);
-}
-
-/*             ///Прополис из форестри в один oredictionary///               */
-var ForestryPropolisArray = [
-<forestry:propolis>,
-<forestry:propolis:1>,
-<forestry:propolis:3>
-] as IItemStack[];
-var ForestryPropolis1 = <ore:ForestryPropolis>;
-for item in ForestryPropolisArray {
-	ForestryPropolis1.add(item);
-}
-
-// --- Adding OreDictionary
-// --- TFC
-//Rock Types GT = Rock Types TFC
+// Rock Types GT = Rock Types TFC
 <ore:stoneBasalt>.add(<tfc:raw/basalt>);
 <ore:stoneMarble>.add(<tfc:raw/marble>);
-//Single Sheets = Single Plates
+// Single Sheets = Single Plates
 <ore:sheetCopper>.add(<metaitem:plateCopper>);
 <ore:sheetBismuth>.add(<metaitem:plateBismuth>);
 <ore:sheetBrass>.add(<metaitem:plateBrass>);
@@ -130,7 +54,7 @@ for item in ForestryPropolisArray {
 <ore:sheetBlackSteel>.add(<metaitem:plateBlackSteel>);
 <ore:sheetBlueSteel>.add(<metaitem:plateBlueSteel>);
 <ore:sheetRedSteel>.add(<metaitem:plateRedSteel>);
-//Double Sheets = Double Plates
+// Double Sheets = Double Plates
 <ore:sheetDoubleCopper>.add(<metaitem:plateDoubleCopper>);
 <ore:sheetDoubleBismuth>.add(<metaitem:plateDoubleBismuth>);
 <ore:sheetDoubleBrass>.add(<metaitem:plateDoubleBrass>);
@@ -151,31 +75,40 @@ for item in ForestryPropolisArray {
 <ore:sheetDoubleBlackSteel>.add(<metaitem:plateDoubleBlackSteel>);
 <ore:sheetDoubleBlueSteel>.add(<metaitem:plateDoubleBlueSteel>);
 <ore:sheetDoubleRedSteel>.add(<metaitem:plateDoubleRedSteel>);
-//Bronze Single Sheets
+// BronzeAny Single Sheets
 <ore:sheetAnyBronze>.add(<metaitem:plateBronze>, <metaitem:plateBlackBronze>, <metaitem:plateBismuthBronze>);
-//Bronze Double Sheets
+// BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- GregTech
-//gemChipped from GT
+// Chipped Gems from GT
 for item in gemChipped {
 	<ore:gemChipped>.add(item);
 }
-//gemFlawed from GT
+// Flawed Gems from GT
 for item in gemFlawed {
 	<ore:gemFlawed>.add(item);
 }
-//gemFlawless from GT
+// Flawless Gems from GT
 for item in gemFlawless {
 	<ore:gemFlawless>.add(item);
 }
-//gemExquisite from GT
+// Exquisite Gems from GT
 for item in gemExquisite {
 	<ore:gemExquisite>.add(item);
 }
 
 // --- Forestry
-//Beeswax
+// Forestry Chests To One OreDict
+for item in ForestryChestsArray {
+	<ore:ForestryChests>.add(item);
+}
+
+// All Propolis To One OreDict
+for item in ForestryPropolisArray {
+	<ore:ForestryPropolis>.add(item);
+}
+// Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- Deleting OreDictionary
@@ -205,9 +138,11 @@ for item in gemExquisite {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block
 <ore:blockApatite>.remove(<forestry:resource_storage>);
+
 // --- TFC-Florae
 //Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
+
 // --- Minecraft
 //Sand
 <ore:sand>.remove(<minecraft:sand>);
@@ -235,6 +170,9 @@ for item in gemExquisite {
 <ore:oreGold>.remove(<minecraft:gold_ore>);
 //Iron
 <ore:oreIron>.remove(<minecraft:iron_ore>);
+
+// --- GC/GS
+//Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
 //Copper

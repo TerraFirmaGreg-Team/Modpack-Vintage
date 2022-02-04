@@ -24,7 +24,7 @@ val ItemsToRemoveFromJEI as IItemStack[] = [
     <ore:dustFireclay>.firstItem,
     <ore:dustSmallFireclay>.firstItem,
     <ore:dustTinyFireclay>.firstItem
-] as IItemStack[];
+];
 for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
@@ -50,7 +50,7 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:electric_blast_furnace>,
     <metaitem:multi_furnace>,
     <metaitem:workbench>
-] as IItemStack[];
+];
 for item in ItemsToRemove{
     recipes.remove(item);
 }
@@ -68,6 +68,14 @@ recipes.removeByRecipeName("gregtech:iron_door");
 recipes.removeByRecipeName("gregtech:iron_bars");
 recipes.removeByRecipeName("gregtech:quartz_sand");
 recipes.removeByRecipeName("gregtech:lead");
+recipes.removeByRecipeName("gregtech:redstone_lamp");
+recipes.removeByRecipeName("gregtech:repeater");
+recipes.removeByRecipeName("gregtech:comparator");
+recipes.removeByRecipeName("gregtech:comparator_certus");
+recipes.removeByRecipeName("gregtech:comparator_quartzite");
+recipes.removeByRecipeName("gregtech:daylight_detector");
+recipes.removeByRecipeName("gregtech:daylight_detector_certus");
+recipes.removeByRecipeName("gregtech:daylight_detector_quartzite");
 
 //Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,

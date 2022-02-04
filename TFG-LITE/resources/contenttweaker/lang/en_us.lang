@@ -1,27 +1,6 @@
 #Content tweaker
-item.contenttweaker.moonturf.name=Moon turf (Dust)
-item.contenttweaker.moonsoil.name=Moon soil (Dust)
-item.contenttweaker.moonstone.name=Moon stone (Dust)
 
-item.contenttweaker.marsturf.name=Mars turf (Dust)
-item.contenttweaker.marssoil.name=Mars soil (Dust)
-item.contenttweaker.marsstone.name=Mars stone (Dust)
-
-item.contenttweaker.venusturf.name=Venus smooth stone (Dust)
-item.contenttweaker.venussoil.name=Venus solid stone (Dust)
-
-item.contenttweaker.mercuryturf.name=Mercury turf (Dust)
-item.contenttweaker.mercurysoil.name=Mercury soil (Dust)
-item.contenttweaker.mercurystone.name=Mercury stone (Dust)
-
-item.contenttweaker.asteroidstone1.name=Asteroids stone (Dust)
-item.contenttweaker.asteroidstone2.name=Asteroids stone (Dust)
-item.contenttweaker.asteroidstone3.name=Asteroids stone (Dust)
-
-#Translate fixing
-item.tfc.metal.sheet.wrought_iron.name=Wrought Iron Alloy Cladding For Blast Furnace
-item.tfc.metal.ingot.wrought_iron.name=Unfinished Wrought Iron Ingot
-
+#lang
 material.tfc_andesite=Andesit
 material.tfc_basalt=Basalt
 material.tfc_breccia=Breccia

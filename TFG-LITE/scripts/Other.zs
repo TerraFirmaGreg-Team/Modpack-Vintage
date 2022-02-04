@@ -8,6 +8,7 @@ mods.jei.JEI.hideCategory("jeresources.enchantment");
 mods.jei.JEI.hideCategory("jeresources.dungeon");
 mods.jei.JEI.hideCategory("jeresources.villager");
 mods.jei.JEI.hideCategory("jeresources.worldgen");
+mods.jei.JEI.hideCategory("tfc.rock_layer");
 
 //FTB
 mods.jei.JEI.removeAndHide(<ftbquests:chest>);

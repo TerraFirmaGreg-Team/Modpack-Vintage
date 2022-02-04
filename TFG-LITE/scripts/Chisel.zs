@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 //Удаление групп
+
 //Удаление рецептов
 val RemoveItemsFromJEI as IItemStack[] = [
 	<chisel:chisel_iron>,
@@ -127,7 +128,7 @@ recipes.addShaped(<chisel:temple>*8,
 //Тириан блок
 recipes.addShaped(<chisel:tyrian>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:ingotWroughtIron> | <ore:ingotIron>, <ore:stone>],
+ [<ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 //Фактори блок

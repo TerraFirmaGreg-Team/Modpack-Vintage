@@ -1,27 +1,6 @@
 #Content Tweaker#
-item.contenttweaker.moonturf.name=Лунный реголит (Пыль)
-item.contenttweaker.moonsoil.name=Лунный грунт (Пыль)
-item.contenttweaker.moonstone.name=Лунный камень (Пыль)
 
-item.contenttweaker.marsturf.name=Марсианский мелкодисперный реголит (Пыль)
-item.contenttweaker.marssoil.name=Марсианский реголит (Пыль)
-item.contenttweaker.marsstone.name=Марсианский камень (Пыль)
-
-item.contenttweaker.venusturf.name=Венерианский мягкий камень (Пыль)
-item.contenttweaker.venussoil.name=Венерианский твердый камень (Пыль)
-
-item.contenttweaker.mercuryturf.name=Меркурианский реголит (Пыль)
-item.contenttweaker.mercurysoil.name=Меркурианский грунт (Пыль)
-item.contenttweaker.mercurystone.name=Меркурианский камень (Пыль)
-
-item.contenttweaker.asteroidstone1.name=Астероидный камень (Пыль)
-item.contenttweaker.asteroidstone2.name=Астероидный камень (Пыль)
-item.contenttweaker.asteroidstone3.name=Астероидный камень (Пыль)
-
-#Исправления переводов
-item.tfc.metal.sheet.wrought_iron.name=Обшивка из сплава кованного железа для доменной печи
-item.tfc.metal.ingot.wrought_iron.name=Незаконченный слиток кованного железа
-
+#lang
 material.tfc_andesite=Андезит
 material.tfc_basalt=Базальт
 material.tfc_breccia=Брекчия
