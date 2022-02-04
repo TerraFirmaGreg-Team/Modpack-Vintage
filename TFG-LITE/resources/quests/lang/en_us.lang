@@ -505,7 +505,6 @@ tfg.quests.lv.robot.desc1=The Robot Arm, when placed on a machine, is a more adv
 tfg.quests.lv.robot.desc2=Actual uses for the Robot Arm will be explained in future Quests as tutorial.
 tfg.quests.lv.robot.desc3=§9Note:§r The functionalities provided by the Robot Arm work §lonly§r if it is doing the operation..
 
-
 tfg.quests.lv.amps.title=But what are Amps?
 tfg.quests.lv.amps.subtitle=§oThe concepts presented are for the curious players. Don't read past the TL;DR if you are not interested.§r
 tfg.quests.lv.amps.desc1=TL;DR:§r For safety, match the Amperage limit of your Cables with the max amount of Amps from Energy Producers.
