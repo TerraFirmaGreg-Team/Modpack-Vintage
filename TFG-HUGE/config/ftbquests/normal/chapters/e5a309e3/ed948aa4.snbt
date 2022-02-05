@@ -7,8 +7,8 @@
 			FluidName: "ammonia"
 		}
 	},
-	x: 2.0d,
-	y: 2.0d,
+	x: 5.5d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
 		"The recipe that will give you the least headaches is the one in the §3HV Chemical Reactor§r, but other sources may pick your attention more.",
@@ -22,5 +22,18 @@
 		uid: "ccbcea50",
 		type: "fluid",
 		fluid: "ammonia"
+	},
+	{
+		uid: "7cec66bd",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ammonia",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.ironpile.title}",
 	x: -4.0d,
-	y: -8.0d,
+	y: -6.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.ironpile.subtitle}",
 	hide_dependency_lines: true,
@@ -15,13 +15,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any dustRegularIron"
+					Name: "Any ingotIron"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "dustRegularIron"
+					data: "ingotIron"
 				}
 			}
 		}]

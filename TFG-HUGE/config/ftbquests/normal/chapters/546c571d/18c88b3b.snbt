@@ -1,6 +1,15 @@
 {
+	title: "{tfg.quests.lv.bending.title}",
 	x: -1.0d,
 	y: 12.0d,
+	description: "{tfg.quests.lv.bending.subtitle}",
+	text: [
+		"{tfg.quests.lv.bending.desc1}",
+		"",
+		"{tfg.quests.lv.bending.desc2}",
+		"",
+		"{tfg.quests.lv.bending.desc3}"
+	],
 	dependencies: [
 		"a6716e45"
 	],

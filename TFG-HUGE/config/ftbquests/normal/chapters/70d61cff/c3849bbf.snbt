@@ -12,8 +12,9 @@
 	text: [
 		"No Description"
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"2f970f5b"
+		"14263e77"
 	],
 	tasks: [{
 		uid: "42e2aeff",

@@ -1,8 +1,8 @@
 {
 	title: "Tungstensteel Coils",
 	icon: "gregtech:wire_coil 1 3",
-	x: 3.0d,
-	y: -2.0d,
+	x: 7.5d,
+	y: -3.0d,
 	text: [
 		"No Description"
 	],

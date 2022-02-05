@@ -1,6 +1,18 @@
 {
+	title: "{tfg.quests.lv.batterybuffer.title}",
 	x: 9.0d,
 	y: 8.0d,
+	description: "{tfg.quests.lv.batterybuffer.subtitle}",
+	text: [
+		"{tfg.quests.lv.batterybuffer.desc1}",
+		"{tfg.quests.lv.batterybuffer.desc2}",
+		"",
+		"{tfg.quests.lv.batterybuffer.desc3}",
+		"",
+		"{tfg.quests.lv.batterybuffer.desc4}",
+		"",
+		"{tfg.quests.lv.batterybuffer.desc5}"
+	],
 	dependencies: [
 		"fcfd072d",
 		"0c6d2117",

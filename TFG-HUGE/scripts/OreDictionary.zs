@@ -1,295 +1,115 @@
 #priority 1000
 
 import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IItemStack;
 
-//1 - Raw Igneous Intrusive
-var RawIgneousIntrusive = [<tfc:raw/granite>, <tfc:raw/gabbro>, <tfc:raw/rhyolite>, <tfc:raw/diorite>, <tfc:raw/breccia>, <tfc:raw/porphyry>] as IItemStack[];
+// --- Adding OreDictionary
+// --- TFC
+// Rock Categories
+// Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
 	<ore:RawIgneousIntrusive>.add(item);
 }
-//2 - Raw Igneous Extrusive
-var RawIgneousExtrusive = [<tfc:raw/basalt>, <tfc:raw/dacite>, <tfc:raw/andesite>, <tfc:raw/peridotite>] as IItemStack[];
+
+// Raw Igneous Extrusive Rocks To One OreDict
 for item in RawIgneousExtrusive {
 	<ore:RawIgneousExtrusive>.add(item);
 }
-//3 - Rock Metamorphic
-var RawMetamorphic = [<tfc:raw/marble>, <tfc:raw/gneiss>, <tfc:raw/schist>, <tfc:raw/quartzite>, <tfc:raw/phyllite>, <tfc:raw/slate>, <tfc:raw/catlinite>, <tfc:raw/novaculite>, <tfc:raw/soapstone>, <tfc:raw/komatiite>] as IItemStack[];
+
+// Rock Metamorphic Rocks To One OreDict
 for item in RawMetamorphic {
 	<ore:RawMetamorphic>.add(item);
 }
-//4 - Rock Sedimentary
-var RawSedimentary = [<tfc:raw/shale>, <tfc:raw/dolomite>, <tfc:raw/conglomerate>, <tfc:raw/limestone>, <tfc:raw/rocksalt>, <tfc:raw/claystone>, <tfc:raw/chert>, <tfc:raw/chalk>, <tfc:raw/mudstone>, <tfc:raw/sandstone>, <tfc:raw/siltstone>] as IItemStack[];
+
+// Rock Sedimentary Rocks To One OreDict
 for item in RawSedimentary {
 	<ore:RawSedimentary>.add(item);
 }
 
-//Seeds
-var AllSeeds = [
-	<tfc:crop/seeds/barley>,
-	<tfc:crop/seeds/maize>,
-	<tfc:crop/seeds/oat>,
-	<tfc:crop/seeds/rice>,
-	<tfc:crop/seeds/rye>,
-	<tfc:crop/seeds/wheat>,
-	<tfc:crop/seeds/beet>,
-	<tfc:crop/seeds/cabbage>,
-	<tfc:crop/seeds/carrot>,
-	<tfc:crop/seeds/garlic>,
-	<tfc:crop/seeds/green_bean>,
-	<tfc:crop/seeds/onion>,
-	<tfc:crop/seeds/potato>,
-	<tfc:crop/seeds/soybean>,
-	<tfc:crop/seeds/squash>,
-	<tfc:crop/seeds/sugarcane>,
-	<tfc:crop/seeds/tomato>,
-	<tfc:crop/seeds/red_bell_pepper>,
-	<tfc:crop/seeds/yellow_bell_pepper>,
-	<tfc:crop/seeds/jute>,
-	<tfcflorae:crop/product/malt_spelt>,
-	<tfcflorae:crop/seeds/amaranth>,
-	<tfcflorae:crop/seeds/buckwheat>,
-	<tfcflorae:crop/seeds/fonio>,
-	<tfcflorae:crop/seeds/millet>,
-	<tfcflorae:crop/seeds/quinoa>,
-	<tfcflorae:crop/seeds/spelt>,
-	<tfcflorae:crop/seeds/black_eyed_peas>,
-	<tfcflorae:crop/seeds/cayenne_pepper>,
-	<tfcflorae:crop/seeds/ginger>,
-	<tfcflorae:crop/seeds/ginseng>,
-	<tfcflorae:crop/seeds/rutabaga>,
-	<tfcflorae:crop/seeds/turnip>,
-	<tfcflorae:crop/seeds/sugar_beet>,
-	<tfcflorae:crop/seeds/purple_grape>,
-	<tfcflorae:crop/seeds/green_grape>,
-	<tfcflorae:crop/seeds/liquorice_root>,
-	<tfcflorae:crop/seeds/coffea>,
-	<tfcflorae:crop/seeds/agave>,
-	<tfcflorae:crop/seeds/coca>,
-	<tfcflorae:crop/seeds/cotton>,
-	<tfcflorae:crop/seeds/flax>,
-	<tfcflorae:crop/seeds/hemp>,
-	<tfcflorae:crop/seeds/hop>,
-	<tfcflorae:crop/seeds/indigo>,
-	<tfcflorae:crop/seeds/madder>,
-	<tfcflorae:crop/seeds/opium_poppy>,
-	<tfcflorae:crop/seeds/rape>,
-	<tfcflorae:crop/seeds/weld>,
-	<tfcflorae:crop/seeds/woad>,
-	<tfcflorae:crop/seeds/tobacco>
-	] as IItemStack[];
+// OreDicionary for all seeds
 for item in AllSeeds {
 	<ore:listAllSeeds>.add(item);
 }
 
-/*             ///Сундуки из форестри в один oredictionary///               */
-var ForestryChestsArray = [
-<forestry:butterfly_chest>,
-<forestry:tree_chest>,
-<forestry:bee_chest>
-] as IItemStack[];
-var ForestryChests1 = <ore:ForestryChests>;
-for item in ForestryChestsArray {
-	ForestryChests1.add(item);
-}
-
-/*             ///Прополис из форестри в один oredictionary///               */
-var ForestryPropolisArray = [
-<forestry:propolis>,
-<forestry:propolis:1>,
-<forestry:propolis:3>
-] as IItemStack[];
-var ForestryPropolis1 = <ore:ForestryPropolis>;
-for item in ForestryPropolisArray {
-	ForestryPropolis1.add(item);
-}
-
-// --- Adding OreDictionary
-// --- TFC
-//Rock Types
+// Rock Types GT = Rock Types TFC
 <ore:stoneBasalt>.add(<tfc:raw/basalt>);
 <ore:stoneMarble>.add(<tfc:raw/marble>);
-
-// --- Forestry
-//Beeswax
-<ore:itemBeeswax>.add(<firmalife:beeswax>);
+// Single Sheets = Single Plates
+<ore:sheetCopper>.add(<metaitem:plateCopper>);
+<ore:sheetBismuth>.add(<metaitem:plateBismuth>);
+<ore:sheetBrass>.add(<metaitem:plateBrass>);
+<ore:sheetGold>.add(<metaitem:plateGold>);
+<ore:sheetLead>.add(<metaitem:plateLead>);
+<ore:sheetNickel>.add(<metaitem:plateNickel>);
+<ore:sheetRoseGold>.add(<metaitem:plateRoseGold>);
+<ore:sheetSilver>.add(<metaitem:plateSilver>);
+<ore:sheetTin>.add(<metaitem:plateTin>);
+<ore:sheetZinc>.add(<metaitem:plateZinc>);
+<ore:sheetSterlingSilver>.add(<metaitem:plateSterlingSilver>);
+<ore:sheetPlatinum>.add(<metaitem:platePlatinum>);
+<ore:sheetBismuthBronze>.add(<metaitem:plateBismuthBronze>);
+<ore:sheetBronze>.add(<metaitem:plateBronze>);
+<ore:sheetBlackBronze>.add(<metaitem:plateBlackBronze>);
+<ore:sheetWroughtIron>.add(<metaitem:plateWroughtIron>);
+<ore:sheetSteel>.add(<metaitem:plateSteel>);
+<ore:sheetBlackSteel>.add(<metaitem:plateBlackSteel>);
+<ore:sheetBlueSteel>.add(<metaitem:plateBlueSteel>);
+<ore:sheetRedSteel>.add(<metaitem:plateRedSteel>);
+// Double Sheets = Double Plates
+<ore:sheetDoubleCopper>.add(<metaitem:plateDoubleCopper>);
+<ore:sheetDoubleBismuth>.add(<metaitem:plateDoubleBismuth>);
+<ore:sheetDoubleBrass>.add(<metaitem:plateDoubleBrass>);
+<ore:sheetDoubleGold>.add(<metaitem:plateDoubleGold>);
+<ore:sheetDoubleLead>.add(<metaitem:plateDoubleLead>);
+<ore:sheetDoubleNickel>.add(<metaitem:plateDoubleNickel>);
+<ore:sheetDoubleRoseGold>.add(<metaitem:plateDoubleRoseGold>);
+<ore:sheetDoubleSilver>.add(<metaitem:plateDoubleSilver>);
+<ore:sheetDoubleTin>.add(<metaitem:plateDoubleTin>);
+<ore:sheetDoubleZinc>.add(<metaitem:plateDoubleZinc>);
+<ore:sheetDoubleSterlingSilver>.add(<metaitem:plateDoubleSterlingSilver>);
+<ore:sheetDoublePlatinum>.add(<metaitem:plateDoublePlatinum>);
+<ore:sheetDoubleBismuthBronze>.add(<metaitem:plateDoubleBismuthBronze>);
+<ore:sheetDoubleBronze>.add(<metaitem:plateDoubleBronze>);
+<ore:sheetDoubleBlackBronze>.add(<metaitem:plateDoubleBlackBronze>);
+<ore:sheetDoubleWroughtIron>.add(<metaitem:plateDoubleWroughtIron>);
+<ore:sheetDoubleSteel>.add(<metaitem:plateDoubleSteel>);
+<ore:sheetDoubleBlackSteel>.add(<metaitem:plateDoubleBlackSteel>);
+<ore:sheetDoubleBlueSteel>.add(<metaitem:plateDoubleBlueSteel>);
+<ore:sheetDoubleRedSteel>.add(<metaitem:plateDoubleRedSteel>);
+// BronzeAny Single Sheets
+<ore:sheetAnyBronze>.add(<metaitem:plateBronze>, <metaitem:plateBlackBronze>, <metaitem:plateBismuthBronze>);
+// BronzeAny Double Sheets
+<ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- GregTech
-//gemChipped
-var gemChipped = [
-	<metaitem:gemChippedCertusQuartz>,
-	<metaitem:gemChippedGarnetYellow>,
-	<metaitem:gemChippedAlmandine>,
-	<metaitem:gemChippedAndradite>,
-	<metaitem:gemChippedBlueTopaz>,
-	<metaitem:gemChippedCinnabar>,
-	<metaitem:gemChippedCoal>,
-	<metaitem:gemChippedDiamond>,
-	<metaitem:gemChippedEmerald>,
-	<metaitem:gemChippedGreenSapphire>,
-	<metaitem:gemChippedGrossular>,
-	<metaitem:gemChippedRutile>,
-	<metaitem:gemChippedLazurite>,
-	<metaitem:gemChippedPyrope>,
-	<metaitem:gemChippedRockSalt>,
-	<metaitem:gemChippedRuby>,
-	<metaitem:gemChippedSalt>,
-	<metaitem:gemChippedSapphire>,
-	<metaitem:gemChippedSodalite>,
-	<metaitem:gemChippedCoke>,
-	<metaitem:gemChippedSpessartine>,
-	<metaitem:gemChippedTopaz>,
-	<metaitem:gemChippedUvarovite>,
-	<metaitem:gemChippedNetherQuartz>,
-	<metaitem:gemChippedQuartzite>,
-	<metaitem:gemChippedRealgar>,
-	<metaitem:gemChippedMalachite>,
-	<metaitem:gemChippedSugar>,
-	<metaitem:gemChippedGlass>,
-	<metaitem:gemChippedOlivine>,
-	<metaitem:gemChippedOpal>,
-	<metaitem:gemChippedAmethyst>,
-	<metaitem:gemChippedLapis>,
-	<metaitem:gemChippedApatite>,
-	<metaitem:gemChippedGarnetRed>,
-	<metaitem:gemChippedGarnetYellow>,
-	<metaitem:gemChippedMonazite>
-	] as IItemStack[];
+// Chipped Gems from GT
 for item in gemChipped {
 	<ore:gemChipped>.add(item);
 }
-
-//gemFlawed
-var gemFlawed = [
-	<metaitem:gemFlawedCertusQuartz>,
-	<metaitem:gemFlawedGarnetYellow>,
-	<metaitem:gemFlawedAlmandine>,
-	<metaitem:gemFlawedAndradite>,
-	<metaitem:gemFlawedBlueTopaz>,
-	<metaitem:gemFlawedCinnabar>,
-	<metaitem:gemFlawedCoal>,
-	<metaitem:gemFlawedDiamond>,
-	<metaitem:gemFlawedEmerald>,
-	<metaitem:gemFlawedGreenSapphire>,
-	<metaitem:gemFlawedGrossular>,
-	<metaitem:gemFlawedRutile>,
-	<metaitem:gemFlawedLazurite>,
-	<metaitem:gemFlawedPyrope>,
-	<metaitem:gemFlawedRockSalt>,
-	<metaitem:gemFlawedRuby>,
-	<metaitem:gemFlawedSalt>,
-	<metaitem:gemFlawedSapphire>,
-	<metaitem:gemFlawedSodalite>,
-	<metaitem:gemFlawedCoke>,
-	<metaitem:gemFlawedSpessartine>,
-	<metaitem:gemFlawedTopaz>,
-	<metaitem:gemFlawedUvarovite>,
-	<metaitem:gemFlawedNetherQuartz>,
-	<metaitem:gemFlawedQuartzite>,
-	<metaitem:gemFlawedRealgar>,
-	<metaitem:gemFlawedMalachite>,
-	<metaitem:gemFlawedSugar>,
-	<metaitem:gemFlawedGlass>,
-	<metaitem:gemFlawedOlivine>,
-	<metaitem:gemFlawedOpal>,
-	<metaitem:gemFlawedAmethyst>,
-	<metaitem:gemFlawedLapis>,
-	<metaitem:gemFlawedApatite>,
-	<metaitem:gemFlawedGarnetRed>,
-	<metaitem:gemFlawedGarnetYellow>,
-	<metaitem:gemFlawedMonazite>
-	] as IItemStack[];
+// Flawed Gems from GT
 for item in gemFlawed {
 	<ore:gemFlawed>.add(item);
 }
-
-//gemFlawless
-var gemFlawless = [
-	<metaitem:gemFlawlessGarnetYellow>,
-	<metaitem:gemFlawlessAlmandine>,
-	<metaitem:gemFlawlessAndradite>,
-	<metaitem:gemFlawlessBlueTopaz>,
-	<metaitem:gemFlawlessCinnabar>,
-	<metaitem:gemFlawlessCoal>,
-	<metaitem:gemFlawlessDiamond>,
-	<metaitem:gemFlawlessEmerald>,
-	<metaitem:gemFlawlessGreenSapphire>,
-	<metaitem:gemFlawlessGrossular>,
-	<metaitem:gemFlawlessRutile>,
-	<metaitem:gemFlawlessLazurite>,
-	<metaitem:gemFlawlessPyrope>,
-	<metaitem:gemFlawlessRockSalt>,
-	<metaitem:gemFlawlessRuby>,
-	<metaitem:gemFlawlessSalt>,
-	<metaitem:gemFlawlessSapphire>,
-	<metaitem:gemFlawlessSodalite>,
-	<metaitem:gemFlawlessCoke>,
-	<metaitem:gemFlawlessSpessartine>,
-	<metaitem:gemFlawlessTopaz>,
-	<metaitem:gemFlawlessUvarovite>,
-	<metaitem:gemFlawlessNetherQuartz>,
-	<metaitem:gemFlawlessQuartzite>,
-	<metaitem:gemFlawlessRealgar>,
-	<metaitem:gemFlawlessMalachite>,
-	<metaitem:gemFlawlessSugar>,
-	<metaitem:gemFlawlessGlass>,
-	<metaitem:gemFlawlessOlivine>,
-	<metaitem:gemFlawlessOpal>,
-	<metaitem:gemFlawlessAmethyst>,
-	<metaitem:gemFlawlessLapis>,
-	<metaitem:gemFlawlessApatite>,
-	<metaitem:gemFlawlessGarnetRed>,
-	<metaitem:gemFlawlessGarnetYellow>,
-	<metaitem:gemFlawlessMonazite>
-	] as IItemStack[];
+// Flawless Gems from GT
 for item in gemFlawless {
 	<ore:gemFlawless>.add(item);
 }
-
-//gemExquisite
-var gemExquisite = [
-	<metaitem:gemExquisiteGarnetYellow>,
-	<metaitem:gemExquisiteAlmandine>,
-	<metaitem:gemExquisiteAndradite>,
-	<metaitem:gemExquisiteBlueTopaz>,
-	<metaitem:gemExquisiteCinnabar>,
-	<metaitem:gemExquisiteCoal>,
-	<metaitem:gemExquisiteDiamond>,
-	<metaitem:gemExquisiteEmerald>,
-	<metaitem:gemExquisiteGreenSapphire>,
-	<metaitem:gemExquisiteGrossular>,
-	<metaitem:gemExquisiteRutile>,
-	<metaitem:gemExquisiteLazurite>,
-	<metaitem:gemExquisitePyrope>,
-	<metaitem:gemExquisiteRockSalt>,
-	<metaitem:gemExquisiteRuby>,
-	<metaitem:gemExquisiteSalt>,
-	<metaitem:gemExquisiteSapphire>,
-	<metaitem:gemExquisiteSodalite>,
-	<metaitem:gemExquisiteCoke>,
-	<metaitem:gemExquisiteSpessartine>,
-	<metaitem:gemExquisiteTopaz>,
-	<metaitem:gemExquisiteUvarovite>,
-	<metaitem:gemExquisiteNetherQuartz>,
-	<metaitem:gemExquisiteQuartzite>,
-	<metaitem:gemExquisiteRealgar>,
-	<metaitem:gemExquisiteMalachite>,
-	<metaitem:gemExquisiteSugar>,
-	<metaitem:gemExquisiteGlass>,
-	<metaitem:gemExquisiteOlivine>,
-	<metaitem:gemExquisiteOpal>,
-	<metaitem:gemExquisiteAmethyst>,
-	<metaitem:gemExquisiteLapis>,
-	<metaitem:gemExquisiteApatite>,
-	<metaitem:gemExquisiteGarnetRed>,
-	<metaitem:gemExquisiteGarnetYellow>,
-	<metaitem:gemExquisiteMonazite>
-	] as IItemStack[];
+// Exquisite Gems from GT
 for item in gemExquisite {
 	<ore:gemExquisite>.add(item);
 }
 
+// --- Forestry
+// Forestry Chests To One OreDict
+for item in ForestryChestsArray {
+	<ore:ForestryChests>.add(item);
+}
 
+// All Propolis To One OreDict
+for item in ForestryPropolisArray {
+	<ore:ForestryPropolis>.add(item);
+}
+// Beeswax
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- Deleting OreDictionary
 // --- ProjectRed
@@ -318,9 +138,11 @@ for item in gemExquisite {
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
 //Apatite Block
 <ore:blockApatite>.remove(<forestry:resource_storage>);
+
 // --- TFC-Florae
 //Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
+
 // --- Minecraft
 //Sand
 <ore:sand>.remove(<minecraft:sand>);
@@ -348,6 +170,9 @@ for item in gemExquisite {
 <ore:oreGold>.remove(<minecraft:gold_ore>);
 //Iron
 <ore:oreIron>.remove(<minecraft:iron_ore>);
+
+// --- GC/GS
+//Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
 //Copper

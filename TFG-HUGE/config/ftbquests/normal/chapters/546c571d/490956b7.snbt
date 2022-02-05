@@ -1,6 +1,13 @@
 {
+	title: "{tfg.quests.lv.bus.title}",
 	x: 11.0d,
 	y: 9.0d,
+	description: "{tfg.quests.lv.bus.subtitle}",
+	text: [
+		"{tfg.quests.lv.bus.desc1}",
+		"",
+		"{tfg.quests.lv.bus.desc2}"
+	],
 	dependencies: [
 		"9dd3a20f"
 	],

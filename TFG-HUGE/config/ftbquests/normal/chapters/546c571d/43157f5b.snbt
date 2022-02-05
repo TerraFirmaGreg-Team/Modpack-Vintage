@@ -1,7 +1,12 @@
 {
-	x: 0.0d,
+	title: "{tfg.quests.lv.piston.title}",
+	x: -1.0d,
 	y: 7.0d,
 	shape: "hexagon",
+	description: "{tfg.quests.lv.piston.subtitle}",
+	text: [
+		"{tfg.quests.lv.piston.desc}"
+	],
 	dependencies: [
 		"dd1bc7c8"
 	],

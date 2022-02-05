@@ -1,19 +1,18 @@
 {
-	title: "Basic Chemical Bath",
+	title: "{tfg.quests.lv.bath.title}",
 	icon: "gregtech:machine 1 200",
-	x: -3.0d,
-	y: 14.0d,
+	x: -5.0d,
+	y: 13.0d,
+	description: "{tfg.quests.lv.bath.subtitle}",
 	text: [
-		"§oThe Chemical Bath bathes... You thought this was over didn't you?§r",
+		"{tfg.quests.lv.bath.desc1}",
+		"{tfg.quests.lv.bath.desc2}",
+		"{tfg.quests.lv.bath.desc3}",
 		"",
+		"{tfg.quests.lv.bath.desc4}",
 		"",
-		"§lOutside of Ore Processing:§r",
-		"You can make §6Paper out of Wood§r, to throw away your sugar canes. I know you hate them.",
-		"There are some other less important recipes.",
-		"",
-		"",
-		"§lFor Ore Processing:§r",
-		"Some §aCrushed Ores§r have an alternate recipe on the way to §aPurified Ore§r, involving bathing in either §aMercury§r or §aSodium Persulfate§r. This step is not really important, unless you really want that special §6Byproduct§r. This can be a nice alternate source of Gold."
+		"{tfg.quests.lv.bath.desc5}",
+		"{tfg.quests.lv.bath.desc6}"
 	],
 	dependencies: [
 		"3418fbbb"

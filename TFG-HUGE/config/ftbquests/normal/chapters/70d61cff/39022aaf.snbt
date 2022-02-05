@@ -8,7 +8,7 @@
 		}
 	},
 	x: -7.0d,
-	y: 1.0d,
+	y: 5.0d,
 	text: [
 		"Gasoline is extremely powerful combustion fuel. It's better than Cetane Diesel!"
 	],

@@ -41,18 +41,7 @@
 		uid: "cdfb8c99",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustRegularPotash"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustRegularPotash"
-				}
-			}
+			item: "tfctech:powder/potash"
 		}]
 	}]
 }

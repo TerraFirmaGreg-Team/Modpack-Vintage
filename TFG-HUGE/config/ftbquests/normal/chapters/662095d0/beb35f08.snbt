@@ -6,26 +6,29 @@
 	text: [
 		"§oJust kidding, Silicon Wafers in this mod are perfectly fungible.§r",
 		"",
-		"§9Silicon Boules§r are made in the EBF with lots of §9Silicon Dust§r and a small amount of §9Gallium Arsenide§r. After making the Boule, cut it in the §9Cutting Machine§r to get 16 Silicon Wafers ready for engraving.",
+		"§9Silicon Boules§r are made in the §3EBF§r with lots of §aSilicon Dust§r and a small amount of §aGallium Arsenide§r.",
+		"After making the Boule, cut it in the §3Cutting Machine§r to get 16 Silicon Wafers ready for engraving.",
 		"",
-		"§cWarning:§r Each Silicon Boule takes §c7.5 minutes§r to make at 120 EU/t, or §c1,080,000 EU§r! If the EBF loses power midway, the recipe will start to §close progress§r. Be sure you have enough power before starting."
+		"The best §aSilicon§r source at this point shall be either §dGlass Dust§r, or §dSodalite§r.",
+		"",
+		"§cWarning:§r Each Silicon Boule takes 7.5 minutes to make at 120 EU/t, or 1,080,000 EU! If the EBF loses power midway, the recipe will start to §close progress§r. Be sure you have enough power before starting."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"9c6e5aed"
+		"40d77c21"
 	],
 	tasks: [{
-		uid: "00583148",
-		type: "item",
-		items: [{
-			item: "gregtech:meta_dust 32 99"
-		}],
-		count: 32L
-	},
-	{
 		uid: "aae1b522",
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 361"
+		}]
+	},
+	{
+		uid: "abe42e9d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 371"
 		}]
 	}]
 }

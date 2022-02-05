@@ -1,21 +1,15 @@
 {
-	title: "Forming Multiblocks",
+	title: "{tfg.quests.lv.forming.title}",
 	icon: "gregtech:metal_casing 1 2",
 	x: 12.0d,
 	y: 6.0d,
+	description: "{tfg.quests.lv.forming.subtitle}",
 	text: [
-		"§oThis is a Guide to help you form Multiblocks and troubleshoot issues.§r",
-		"",
-		"There are two really important factors to know when building Multiblocks.",
-		"",
-		"§lCheck the JEI preview:§r This one was probably obvious, but there's more than just a picture of how the Multiblock looks like! Use your mouse to §drotate§r the preview, §9hover over the parts§r to gain additional informations. The JEI page also contains the amount of blocks to build it. You can also §dright-click§r a block in the preview to get a display of all available blocks in that placement.",
-		"",
-		"",
-		"§lThe JEI preview is a suggestion:§r There is no unique way to form the Multiblock. Most of the time, you have complete freedom for the §9tier of Buses/Hatches§r. And you also have the §dfreedom of placement§r.",
-		"",
-		"Taking the EBF as example, any tier of Energy/Bus/Hatch can be used, and they can be placed anywhere replacing a casing. Fluid Hatches are also optional, though you probably want them to handle recipes with fluid.",
-		"",
-		"Additionally, you can §dsneak right-click§r the multiblock controller for an in-world preview, or use the §4Terminal§r's Multiblock Helper."
+		"{tfg.quests.lv.forming.desc1}",
+		"{tfg.quests.lv.forming.desc2}",
+		"{tfg.quests.lv.forming.desc3}",
+		"{tfg.quests.lv.forming.desc4}",
+		"{tfg.quests.lv.forming.desc5}"
 	],
 	dependencies: [
 		"9dd3a20f"

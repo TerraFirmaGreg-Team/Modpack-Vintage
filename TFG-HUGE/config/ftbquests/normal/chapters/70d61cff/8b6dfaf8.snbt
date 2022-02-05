@@ -1,0 +1,16 @@
+{
+	title: "Setting up Ore Processing",
+	icon: "gregtech:meta_crushed_centrifuged 1 250",
+	x: -9.0d,
+	y: -5.0d,
+	text: [
+		"§oThis is a placeholder Quest, this will be a tutorial to setup Ore Processing on large scale.§r"
+	],
+	dependencies: [
+		"2b4c8f8d"
+	],
+	tasks: [{
+		uid: "dd2bdcd7",
+		type: "checkmark"
+	}]
+}

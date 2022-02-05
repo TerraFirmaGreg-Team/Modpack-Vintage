@@ -1,0 +1,28 @@
+{
+	title: "Transformers",
+	x: 2.0d,
+	y: -3.0d,
+	text: [
+		"§3Transformers§r allow you to step up and down Voltage tiers safely. Transformers change the power they receive into an equivalent amount of power 1 voltage tier above or below the input voltage.",
+		"",
+		"Apart from running machines on different voltage tiers, Transformers are useful for transporting power across longer distances. Cable loss has less of an effect at higher voltages.",
+		"",
+		"Transformers have 5 low voltage sides, and 1 high voltage side.",
+		"",
+		"The §9normal§r Transformer can only do 1A <-> 4A conversion, but §9Adjustable§r Transformers can be changed between 1A <-> 4A, 2A <-> 8A, 4A <-> 16A, and 16A <-> 64A conversions. ",
+		"",
+		"Use a §aSoft Hammer§r to change between transform up and down, and a §aScrewdriver§r on Adjustable Transformers to change the amperage.",
+		"",
+		"Higher tier Transformers require §9Coils§r."
+	],
+	dependencies: [
+		"d723748f"
+	],
+	tasks: [{
+		uid: "b0f1ae43",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1271"
+		}]
+	}]
+}

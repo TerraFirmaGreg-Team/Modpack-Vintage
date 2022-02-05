@@ -1,7 +1,7 @@
 {
 	title: "Platinum Group Processing",
 	icon: "gregtech:meta_dust 1 364",
-	x: 0.0d,
+	x: -1.0d,
 	y: 5.0d,
 	text: [
 		"The §eplatinum group metals§r are six rare metals with useful catalytic properties. They are §3Ruthenium§r, §dRhodium§r, §7Palladium§r, §9Osmium§r, §bIridium§r, and §ePlatinum§r.",
@@ -12,8 +12,9 @@
 		"",
 		"§ePlatinum§r and §7Palladium§r can also be obtained from The End or through normal Ore Processing."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"8dffcea8"
+		"14263e77"
 	],
 	tasks: [{
 		uid: "8bda788f",

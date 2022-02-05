@@ -23,6 +23,7 @@
 		"§3Distilleries§r are an essential component for power generation, whether you pick §aDiesel§r or §aBenzene§r.",
 		"You will want many of them, and as low tier as possible to avoid the energy losses from Overclocking."
 	],
+	min_required_dependencies: 3,
 	dependencies: [
 		"9bab507a",
 		"56665807",

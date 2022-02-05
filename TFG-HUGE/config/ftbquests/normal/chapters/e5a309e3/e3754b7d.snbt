@@ -1,17 +1,14 @@
 {
 	title: "Cetane-Boosted Diesel",
 	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 78s,
+		id: "forge:bucketfilled",
 		tag: {
-			Fluid: {
-				Amount: 1000,
-				FluidName: "nitro_fuel"
-			}
+			FluidName: "nitro_fuel",
+			Amount: 1000
 		}
 	},
-	x: 5.0d,
-	y: 5.0d,
+	x: 9.0d,
+	y: 2.5d,
 	shape: "circle",
 	text: [
 		"§aCetane-Boosted Diesel§r is 50% more energy dense than regular §eDiesel§r, and only requires 1 part §9Tetranitromethane (TNM)§r for every 50 parts §eDiesel§r. What a deal, right?",
@@ -22,8 +19,16 @@
 		"8dffcea8"
 	],
 	tasks: [{
-		uid: "4d93a0d4",
-		type: "fluid",
-		fluid: "nitro_fuel"
+		uid: "91b146e1",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "nitro_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

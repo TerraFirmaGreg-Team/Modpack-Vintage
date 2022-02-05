@@ -1,6 +1,20 @@
 {
+	title: "{tfg.quests.lv.chemicalreactor.title}",
+	icon: "gregtech:machine 1 215",
 	x: 3.0d,
 	y: 15.0d,
+	description: "{tfg.quests.lv.chemicalreactor.subtitle}",
+	text: [
+		"{tfg.quests.lv.chemicalreactor.desc1}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc2}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc3}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc4}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc5}"
+	],
 	dependencies: [
 		"a02702d7"
 	],
@@ -10,5 +24,18 @@
 		items: [{
 			item: "gregtech:machine 1 215"
 		}]
+	},
+	{
+		uid: "0c04db7a",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "rubber",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

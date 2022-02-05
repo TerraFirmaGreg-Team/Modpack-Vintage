@@ -1,6 +1,13 @@
 {
+	title: "{tfg.quests.lv.extractor.title}",
 	x: 12.0d,
 	y: 17.0d,
+	description: "{tfg.quests.lv.extractor.subtitle}",
+	text: [
+		"{tfg.quests.lv.extractor.desc1}",
+		"",
+		"{tfg.quests.lv.extractor.desc2}"
+	],
 	dependencies: [
 		"89d68b62",
 		"970a426f"

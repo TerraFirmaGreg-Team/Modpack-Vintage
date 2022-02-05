@@ -7,7 +7,7 @@
 			FluidName: "oil"
 		}
 	},
-	x: 2.0d,
+	x: 6.0d,
 	y: -10.0d,
 	text: [
 		"§oHave you seen the Oil spouts when wandering around, or mined into a deposit of Oil?§, ",
@@ -24,10 +24,10 @@
 		"",
 		"§bLore:§r Oil geysers were originally from Buildcraft. If you played a GregTech 5 modpack without Buildcraft, you needed to use the Fluid Rig and tap randomly to try and get lucky... or wait until HV age to do a rudimentary prospection."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"ae2dbada"
+		"40d77c21"
 	],
-	hide: true,
 	tasks: [{
 		uid: "4ed6001c",
 		type: "item",
@@ -36,9 +36,16 @@
 		}]
 	},
 	{
-		uid: "d0f44615",
-		type: "fluid",
-		fluid: "oil_medium",
-		amount: 32000
+		uid: "2e3def41",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "oil_medium",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

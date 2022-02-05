@@ -1,15 +1,15 @@
 {
 	title: "Glowstone Boules",
 	icon: "gregtech:meta_item_1 1 362",
-	x: 2.0d,
-	y: -8.0d,
+	x: -6.0d,
+	y: -6.0d,
 	shape: "circle",
 	text: [
-		"§cDoping§r is the process of intentionally introducing §cimpurities§r into semiconductors to change their properties. §7Silicon§r can be doped with small amounts of §eGlowstone§r to make a better §eSilicon Boule§r.",
+		"§oDoping is the process of intentionally introducing impurities into semiconductors to change their properties.§r",
 		"",
-		"Glowstone-doped Silicon Boules yield §68 times§r more wafers than their non-doped counterparts. However, they are not strictly needed until the §5EV§r age, where they will be used in more complex wafers.",
+		"§7Silicon§r can be doped with small amounts of §eGlowstone§r to make a better §eSilicon Boule§r.",
 		"",
-		"§cWarning:§r Like the non-doped Boule, this requires a huge amount of energy. 1 Glowstone-doped Boule takes §c10 minutes§r to process at 480 EU/t, totaling §c5,760,000 EU§r for a single boule!"
+		"Glowstone-doped Silicon Boules typically yield §68 times§r more wafers than their non-doped counterparts. However, they are not strictly needed until the §5EV§r age, where they will be used in more complex wafers."
 	],
 	dependencies: [
 		"490b3016"

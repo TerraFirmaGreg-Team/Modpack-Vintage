@@ -1,22 +1,21 @@
 {
-	title: "Universal Macerator",
+	title: "{tfg.quests.lv.macerator.title}",
 	icon: "gregtech:machine 1 67",
-	x: -4.0d,
-	y: 17.0d,
+	x: -8.0d,
+	y: 16.0d,
+	description: "{tfg.quests.lv.macerator.subtitle}",
 	text: [
-		"§5Player:§r §oThat's it, I give up, you are going insane! We are in LV Age but you present me a HV machine!?§r",
+		"{tfg.quests.lv.macerator.desc1}",
 		"",
-		"§5Writer:§r §oHold on... There must have been a reason. Ah! Let me grab my script.§r",
+		"{tfg.quests.lv.macerator.desc2}",
 		"",
+		"{tfg.quests.lv.macerator.desc3}",
 		"",
-		"Yes! This is indeed not completable yet, which is also why this quest appears in the HV Chapter.",
+		"{tfg.quests.lv.macerator.desc4}",
 		"",
-		"Remember the thing about Macerator I told you that made you feel unxtremely sad and disappointed? Well... that disappointment is gonna keep going until then.",
+		"{tfg.quests.lv.macerator.desc5}",
 		"",
-		"§6The Macerator will unlock its second and third slot at HV§r. And this will be great for Ore Processing. In fact if you check the Ore Processing JEI page, you will see that one byproduct is absolutely locked by this, after the Thermal Centrifuge step.",
-		"",
-		"",
-		"§5Writer:§r §oCome back at to when you are stronger, young Padawan.§r"
+		"{tfg.quests.lv.macerator.desc6}"
 	],
 	dependencies: [
 		"3418fbbb"

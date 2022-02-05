@@ -547,6 +547,14 @@ minecraft:ui.toast.out
 minecraft:ui.toast.challenge_complete
 minecraft:weather.rain
 minecraft:weather.rain.above
+chisel:metal_break
+chisel:metal_fall
+chisel:metal_hit
+chisel:metal_place
+chisel:metal_step
+chisel:fallback
+chisel:wood_chisel
+chisel:dirt_chisel
 gregtech:tick.forge_hammer
 gregtech:tick.macerator
 gregtech:tick.chemical_reactor

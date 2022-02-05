@@ -17,7 +17,9 @@
 		"",
 		"You will need §a§ra total of §a416 Clay Dust§r for this quest. You may also want to look into other sources of similar materials, such as §aSodalite§r. Check JEI for some ideas.",
 		"",
-		"You should use Sodium and/or Lithium to make some §6MV Batteries§r."
+		"You should use Sodium and/or Lithium to make some §6MV Batteries§r.",
+		"",
+		"All this useless §dWater§r you are getting... Voiding Covers are soon to be implemented in GTCEu."
 	],
 	dependencies: [
 		"409e98ab"

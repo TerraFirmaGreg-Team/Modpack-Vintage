@@ -1,8 +1,8 @@
 {
 	title: "MV Superconductors",
 	icon: "gregtech:wire_single 1 425",
-	x: 6.0d,
-	y: -6.0d,
+	x: 1.0d,
+	y: -7.0d,
 	shape: "circle",
 	text: [
 		"§a4 Amps§r MV energy transmission may be appealing, but you probably don't need these at this point. The option is there though."

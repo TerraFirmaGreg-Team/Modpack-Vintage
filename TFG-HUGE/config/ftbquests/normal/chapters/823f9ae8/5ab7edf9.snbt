@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.softbucket.title}",
-	x: -22.0d,
+	x: -22.5d,
 	y: 13.0d,
 	description: "{tfg.quests.primitive.softbucket.subtitle}",
 	dependencies: [

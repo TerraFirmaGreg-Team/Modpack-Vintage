@@ -1,0 +1,31 @@
+{
+	x: 20.0d,
+	y: -14.0d,
+	text: [
+		"§oWe can guarantee you have a sample of this with you right now! It's in your stomach as part of gastric acid.§r",
+		"",
+		"Obtain §9Hydrochloric Acid§r by mixing §aHydrogen§r and §aChlorine§r.",
+		"This acid is also obtained from as waste from a lot of reactions involving §aChlorine§r. Depending on your setups, you may never need to produce it directly.",
+		"",
+		"",
+		"§cNote:§r We have a bot command on our Discord, called $medicine: \"Do not attempt this in real life, it is not only illegal but also stupidly dangerous\".",
+		"This applies to toying with chemicals. Please don't do it."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "17c46846",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "hydrochloric_acid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

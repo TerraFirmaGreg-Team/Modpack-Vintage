@@ -1,7 +1,7 @@
 {
 	title: "Advanced Assembling Machine",
 	icon: "gregtech:machine 1 111",
-	x: 8.0d,
+	x: 12.0d,
 	y: -8.0d,
 	text: [
 		"The §3Assembling Machine§r is a staple for every Tier, an important goal to unlock more recipes and progress further into the Age."

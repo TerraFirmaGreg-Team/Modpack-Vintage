@@ -2,12 +2,13 @@
 	title: "NAND Gates",
 	icon: "gregtech:meta_item_1 1 575",
 	x: 6.0d,
-	y: 6.0d,
+	y: 7.5d,
 	text: [
 		"No Description"
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"35a8d9f4"
+		"14263e77"
 	],
 	tasks: [{
 		uid: "7c17c105",

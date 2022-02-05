@@ -1,14 +1,17 @@
 {
-	title: "First MV Power",
+	title: "Actual MV Power Generation",
 	icon: "gregtech:machine 1 951",
 	x: 4.0d,
 	y: -4.0d,
 	text: [
-		"There are a few new power options available for the §9§bMV§r age - check above this quest for the options. But for your initial §bMV§r power, you'll need to make an §bAdvanced §9Steam Turbine§r.",
+		"Higher-tier Generators will increase their fuel consumption proportionally to their Generation rate, keeping the duration of fuels and the specific amount of energy from fuels the same. The §3Advanced Steam Turbine§r will use §d5,120 mB Steam§r per second, equivalent to §d256 mB/t§r.",
 		"",
-		"Higher-tier Generators will increase their fuel consumption proportionally to their Generation rate, keeping the duration of fuels and the specific amount of energy from fuels the same. The Advanced Steam Turbine will use §d5,120 mB Steam§r per second, equivalent to 256 mB/t.",
+		"Get §eany§r of the generators to complete this quest, but you may prefer starting off with the §3Advanced Steam Turbine§r.",
 		"",
-		"Given enough fuel, you could also just continue to run off Steam with §3Large Boilers§r... your choice."
+		"There are a few new power options available for the §9§bMV§r age. Selecting the Generators and pressing §4U§r will let you see which fuels count as §aCombustion§r or §aGas§r.",
+		"Quests in the top left corner of this Chapter are for the valuable Power options.",
+		"",
+		"If you stick to §9Steam§r Power generation, you will probably need a §3Large Boiler§r."
 	],
 	dependencies: [
 		"9c437db6"
@@ -18,6 +21,12 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 951"
+		},
+		{
+			item: "gregtech:machine 1 966"
+		},
+		{
+			item: "gregtech:machine 1 936"
 		}]
 	}]
 }

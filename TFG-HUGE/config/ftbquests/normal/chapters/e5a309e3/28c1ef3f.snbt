@@ -1,8 +1,8 @@
 {
 	title: "Titanium",
 	icon: "gregtech:meta_ingot 1 113",
-	x: 0.0d,
-	y: -3.0d,
+	x: 3.0d,
+	y: -6.0d,
 	shape: "circle",
 	text: [
 		"§oTitanium has the highest corrosion resistance and strength-to-density ratio of any metallic element.§r",

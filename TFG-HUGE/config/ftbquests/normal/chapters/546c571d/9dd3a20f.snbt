@@ -1,7 +1,16 @@
 {
+	title: "{tfg.quests.lv.blast.title}",
 	x: 12.0d,
 	y: 8.0d,
 	shape: "pentagon",
+	description: "{tfg.quests.lv.blast.subtitle}",
+	text: [
+		"{tfg.quests.lv.blast.desc1}",
+		"",
+		"{tfg.quests.lv.blast.desc2}",
+		"",
+		"{tfg.quests.lv.blast.desc3}"
+	],
 	dependencies: [
 		"5af91f1c",
 		"65e73e54"

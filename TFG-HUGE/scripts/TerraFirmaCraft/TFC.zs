@@ -8,6 +8,7 @@ import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
+import mods.terrafirmacraft.LeatherKnapping;
 
 //Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -217,10 +218,25 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:ore/lignite>,
 	<tfc:sluice>,
 	<tfctech:powder/potash>
-] as IItemStack[];
+];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
+
+//Удаление рецептов
+recipes.removeByRecipeName("tfc:vanilla/redstone/observer");
+recipes.removeByRecipeName("tfc:vanilla/tnt");
+recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_lamp");
+recipes.removeByRecipeName("tfc:vanilla/redstone/flawless_daylight_detector");
+recipes.removeByRecipeName("tfc:vanilla/redstone/exquisite_daylight_detector");
+recipes.removeByRecipeName("tfc:vanilla/redstone/daylight_detector");
+recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_repeater");
+recipes.removeByRecipeName("tfc:vanilla/redstone/redstone_comparator");
+recipes.removeByRecipeName("tfc:vanilla/redstone/steel_hopper");
+recipes.removeByRecipeName("tfc:vanilla/redstone/hopper");
+recipes.removeByRecipeName("tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate");
+recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecraft");
+recipes.removeByRecipeName("tfc:vanilla/rail/minecraft");
 
 //Quern - GT ore --> GT crushed ore
 // Copper
@@ -300,7 +316,7 @@ furnace.addRecipe(<tfc:ceramics/fired/jug>, <tfc:ceramics/unfired/jug>);
 furnace.addRecipe(<minecraft:brick>, <tfc:ceramics/unfired/clay_brick>);
 furnace.addRecipe(<minecraft:flower_pot>, <tfc:ceramics/unfired/clay_flower_pot>);
 
-//Цемент из тфк --> бетон разных цветов
+//Цемент из тфк --> цемент разных цветов
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:white_dye> * 125]).outputs(<minecraft:concrete_powder> * 4).duration(15).EUt(7).buildAndRegister();
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:orange_dye> * 125]).outputs(<minecraft:concrete_powder:1> * 4).duration(15).EUt(7).buildAndRegister();
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:magenta_dye> * 125]).outputs(<minecraft:concrete_powder:2> * 4).duration(15).EUt(7).buildAndRegister();
@@ -318,7 +334,16 @@ mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:green_dye
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:red_dye> * 125]).outputs(<minecraft:concrete_powder:14> * 4).duration(15).EUt(7).buildAndRegister();
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:black_dye> * 125]).outputs(<minecraft:concrete_powder:15> * 4).duration(15).EUt(7).buildAndRegister();
 
-//Переработка еды в метан
+//Каменные блоки тфк - автоматизация
+for i, TFC_Bricks in TFC_Bricks {
+    assembler.recipeBuilder()
+    .inputs([TFC_Brick[i]])
+	.fluidInputs([<liquid:concrete> * 300])
+    .outputs(TFC_Bricks)
+    .duration(10).EUt(35).buildAndRegister();
+}
+
+//Переработка тфк еды в метан
 //Мясо
 centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane>*72).duration(40).EUt(5).buildAndRegister();
 centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane>*144).duration(40).EUt(5).buildAndRegister();
@@ -331,10 +356,35 @@ centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:meth
 //Хлеб
 centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane>*26).duration(40).EUt(5).buildAndRegister();
 
+//Переработка слитков
+//Первичная
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).outputs(<ore:ingotWroughtIron>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<ore:ingotUnfinishedHighCarbonSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_steel>).outputs(<ore:ingotSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_blue_steel>).outputs(<ore:ingotBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_red_steel>).outputs(<ore:ingotRedSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_black_steel>).outputs(<ore:ingotBlackSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+//Вторичная
+alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakBlueSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotUnfinishedHighCarbonBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakRedSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotUnfinishedHighCarbonRedSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakSteel>, <ore:ingotUnfinishedPigIron>).outputs(<ore:ingotUnfinishedHighCarbonBlackSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+
 //Рецепты для льда
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 1000).outputs(<minecraft:ice>).duration(1500).EUt(256).buildAndRegister();
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:salt_water> * 1000).outputs(<tfc:sea_ice>).duration(1500).EUt(256).buildAndRegister();
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
+
+//Различные крафты для лассо
+LeatherKnapping.addRecipe("tfg:lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
+assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], null).remove();
+assembler.recipeBuilder()
+	.inputs(<ore:string> * 2, <ore:leather>)
+	.outputs(<minecraft:lead>)
+	.duration(250).EUt(2).buildAndRegister();
+
+//Исправление рецептов ванильных блоков в автоген рецептах GT на тфк
+// Cobblestone * 1
+forge_hammer.findRecipe(16, [<chisel:stonebrick:0>], null).remove();
 
 //Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
@@ -363,12 +413,17 @@ recipes.addShaped(<gregtech:meta_item_1:347>,
 [[null, <ore:lumber>, null],
  [null, <ore:lumber>, null],
  [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>, null]]);
- 
+
 //Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
 
+//Remove rods
+Anvil.removeRecipe(<tfc:metal/rod/gold>);
+Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
+Anvil.removeRecipe(<tfc:metal/rod/steel>);
+
 //Sticky Resin
-Barrel.addRecipe("tfg:sticky_resin", <tfctech:latex/vulcanizing_agents>, <liquid:latex> * 500, <gregtech:meta_item_1:438>, 12);
+Barrel.addRecipe("tfg:sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> * 250, <gregtech:meta_item_1:438>, 6);
 
 //Rum Fix
 Barrel.removeRecipe(<liquid:rum> * 500);
@@ -391,8 +446,8 @@ recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.wit
 //Фикс ведер
 Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
-Anvil.addRecipe("tfc:bucket/BlueSteelF", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfc:bucket/RedSteelF", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:bucket/BlueSteel", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:bucket/RedSteel", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 
 //Фикс гриля
 Anvil.removeRecipe(<tfc:wrought_iron_grill>);
@@ -411,7 +466,7 @@ Anvil.removeRecipe(<minecraft:iron_bars> * 16);
 Anvil.addRecipe("tfc:iron_bars2F", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
 //600iq fix SHIT FUCKING WROUGHT IRON
-Anvil.addRecipe("tfc:nicefix", <tfc:metal/ingot/wrought_iron>, <ore:ingotWroughtIron>.firstItem, 2, "general", "HIT_ANY", "HIT_ANY", "HIT_ANY");
+Anvil.addRecipe("tfc:nicefix", <tfc:metal/ingot/wrought_iron>, <ore:ingotWroughtIron>.firstItem, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 //Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
@@ -491,3 +546,45 @@ Anvil.addRecipe("tfc:file_head/SterlingSilver", <ore:ingotSterlingSilver>, <ore:
 Anvil.addRecipe("tfc:file_head/RoseGold", <ore:ingotRoseGold>, <ore:toolHeadFileRoseGold>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/Brass", <ore:ingotBrass>, <ore:toolHeadFileBrass>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfc:file_head/Cobalt", <ore:ingotCobalt>, <ore:toolHeadFileCobalt>.firstItem, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+
+//Исправление тростника
+//Plant Ball * 1
+compressor.findRecipe(2, [<minecraft:reeds:0> * 8], null).remove();
+compressor.recipeBuilder()
+	.inputs(<ore:sugarcane> * 8)
+	.outputs(<metaitem:plant_ball>)
+	.duration(300).EUt(2).buildAndRegister();
+//Biomass * 20
+brewery.findRecipe(3, [<minecraft:reeds:0>], [<liquid:water> * 20]).remove();
+brewery.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.fluidInputs(<liquid:water> * 20)
+	.fluidOutputs(<liquid:biomass> * 20)
+	.duration(200).EUt(3).buildAndRegister();
+
+//Sugar * 1
+macerator.findRecipe(2, [<minecraft:reeds:0>], null).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.outputs(<minecraft:sugar>)
+	.duration(300).EUt(2).buildAndRegister();
+//Chad * 2
+forge_hammer.findRecipe(4, [<minecraft:reeds:0> * 3], null).remove();
+forge_hammer.recipeBuilder()
+	.inputs(<ore:sugarcane> * 3)
+	.outputs(<ore:dustPaper>.firstItem * 2)
+	.duration(125).EUt(4).buildAndRegister();
+//Paper * 1
+chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:water> * 100]).remove();
+chemical_bath.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.fluidInputs(<liquid:water> * 100)
+	.outputs(<minecraft:paper>)
+	.duration(100).EUt(7).buildAndRegister();
+//Paper * 1
+chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:distilled_water> * 100]).remove();
+chemical_bath.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.fluidInputs(<liquid:distilled_water> * 100)
+	.outputs(<minecraft:paper>)
+	.duration(100).EUt(7).buildAndRegister();

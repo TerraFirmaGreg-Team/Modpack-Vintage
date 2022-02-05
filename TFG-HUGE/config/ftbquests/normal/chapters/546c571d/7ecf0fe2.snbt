@@ -1,6 +1,13 @@
 {
+	title: "{tfg.quests.lv.mixer.title}",
 	x: 0.0d,
 	y: 17.0d,
+	description: "{tfg.quests.lv.mixer.subtitle}",
+	text: [
+		"{tfg.quests.lv.mixer.desc1}",
+		"",
+		"{tfg.quests.lv.mixer.desc2}"
+	],
 	dependencies: [
 		"a02702d7"
 	],

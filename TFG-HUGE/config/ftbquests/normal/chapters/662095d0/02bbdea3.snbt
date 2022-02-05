@@ -25,8 +25,16 @@
 		"65405836"
 	],
 	tasks: [{
-		uid: "a791c9ed",
-		type: "fluid",
-		fluid: "bio.ethanol"
+		uid: "00af4a77",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "bio.ethanol",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "Local Brewery selling Booze",
 	icon: "gregtech:machine 1 155",
-	x: 8.0d,
+	x: 10.0d,
 	y: -10.0d,
 	text: [
 		"The Brewery can be used to make §aLubricant§r from §aRedstone§r and §aCreosote§r/§aOil§r.",
@@ -16,10 +16,10 @@
 		"",
 		"§bLore:§r §oYou can make a Brewery if you want to build up a company and start selling Booze... Oh wait nevermind, wrong GregTech version.§r"
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"c1e27c23"
+		"40d77c21"
 	],
-	hide: true,
 	tasks: [{
 		uid: "56f7749c",
 		type: "item",

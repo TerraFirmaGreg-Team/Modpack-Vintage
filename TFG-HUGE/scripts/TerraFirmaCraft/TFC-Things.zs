@@ -133,3 +133,27 @@ Anvil.addRecipe("tfg:tfcthings_sling_ammo__steel", <ore:ingotSteel>, <tfcthings:
 recipes.addShaped(<tfcthings:grindstone_base>,
 [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
  [<ore:lumber>, null, <ore:lumber>]]);
+
+//Black Steel Grindstone
+Welding.removeRecipe(<tfcthings:grindstone_steel>);
+Welding.addRecipe("tfg:grindstone_steel", <tfcthings:grindstone_quartz>, <ore:plateDoubleBlackSteel>, <tfcthings:grindstone_steel>, 5);
+
+//Исправление крафта молотков
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/bismuth_bronze>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/black_bronze>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/bronze>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/copper>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/wrought_iron>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/steel>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/black_steel>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/blue_steel>);
+Anvil.removeRecipe(<tfcthings:prospectors_hammer_head/red_steel>);
+Anvil.addRecipe("tfg:tfcthings_bismuth_bronze_hammer", <ore:ingotBismuthBronze>, <tfcthings:prospectors_hammer_head/bismuth_bronze>, 2, "general", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_black_bronze_hammer", <ore:ingotBlackBronze>, <tfcthings:prospectors_hammer_head/black_bronze>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_bronze_hammer", <ore:ingotBronze>, <tfcthings:prospectors_hammer_head/bronze>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_copper_hammer", <ore:ingotCopper>, <tfcthings:prospectors_hammer_head/copper>, 1, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_wrought_iron_hammer", <ore:ingotWroughtIron>, <tfcthings:prospectors_hammer_head/wrought_iron>, 3, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_steel_hammer", <ore:ingotSteel>, <tfcthings:prospectors_hammer_head/steel>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_black_steel_hammer", <ore:ingotBlackSteel>, <tfcthings:prospectors_hammer_head/black_steel>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_blue_steel_hammer", <ore:ingotBlueSteel>, <tfcthings:prospectors_hammer_head/blue_steel>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:tfcthings_red_steel_hammer", <ore:ingotRedSteel>, <tfcthings:prospectors_hammer_head/red_steel>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");

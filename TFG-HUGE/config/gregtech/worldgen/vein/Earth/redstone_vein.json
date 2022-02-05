@@ -1,6 +1,6 @@
 {
   "weight": 60,
-  "density": 0.2,
+  "density": 0.5,
   "max_height": 125,
   "min_height": 15,
   "vein_populator": {
@@ -22,7 +22,7 @@
         "primary": "ore:redstone"
       },
       {
-        "secondary": "ore:glowstone"
+        "secondary": "ore:chromite"
       },
       {
         "between": "ore:ruby"

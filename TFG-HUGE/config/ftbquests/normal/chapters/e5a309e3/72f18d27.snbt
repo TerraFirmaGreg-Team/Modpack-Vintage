@@ -1,8 +1,8 @@
 {
 	title: "Implosion Compressor",
 	icon: "gregtech:machine 1 1003",
-	x: 0.0d,
-	y: 7.5d,
+	x: 9.0d,
+	y: 6.0d,
 	text: [
 		"The §3Implosion Compressor§r turns the Dust form of Gems into their Gem form.",
 		"",

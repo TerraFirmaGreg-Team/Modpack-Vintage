@@ -1,7 +1,7 @@
 {
   "weight": 80,
   "density": 0.2,
-  "max_height": 140,
+  "max_height": 150,
   "min_height": 120,
   "vein_populator": {
     "type": "surface_rock",

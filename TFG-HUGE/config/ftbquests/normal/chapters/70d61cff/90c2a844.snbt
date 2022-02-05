@@ -1,7 +1,7 @@
 {
 	title: "Extreme Electrolysis",
 	icon: "gregtech:machine 1 278",
-	x: 0.0d,
+	x: -1.0d,
 	y: -5.0d,
 	text: [
 		"No Description"

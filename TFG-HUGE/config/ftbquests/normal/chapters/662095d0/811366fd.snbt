@@ -1,28 +1,43 @@
 {
 	title: "The Church of Benzene",
 	icon: {
-		id: "gregtech:meta_item_1",
-		Damage: 78s,
+		id: "forge:bucketfilled",
 		tag: {
-			Fluid: {
-				Amount: 1000,
-				FluidName: "benzene"
-			}
+			FluidName: "benzene",
+			Amount: 1000
 		}
 	},
-	x: 2.0d,
+	x: 4.0d,
 	y: -12.0d,
 	text: [
-		"No Description"
+		"§oBenzene causes leukemia even at low concentrations.§r",
+		"",
+		"§aBenzene§r is also a §9Gas Fuel§r. I will present you only the two best ways to obtain it.",
+		"",
+		"This Power option is typically §dWood based§r. Put Logs in the §3Pyrolyse Oven§r for §9Wood Tar§r, and the Charcoal you obtained in §3Extractors§r for more §9Wood Tar§r, which you §3distill§r for §aBenzene§r.",
+		"",
+		"This Power option can also be §dHeavy Oil based§r. Put Heavy Oil in a §3Distillery§r for §9Heavy Fuel§r, which you §aseverely steam-crack§r and §3distill§r it again for §aBenzene§r.",
+		"For information on how to process Oil, check the Light Fuel Quests.",
+		"",
+		"In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.",
+		"",
+		"",
+		"§aBenzene§r is burned in a §3Gas Turbine§r. This power source starts weaker than its §eDiesel§r cousin, but gets a big boost when refined to §6Nitrobenzene§r in §6HV§r Age. Ultimately, your power source is your choice."
 	],
 	dependencies: [
 		"65405836"
 	],
-	hide: true,
 	tasks: [{
-		uid: "e18c4179",
-		type: "fluid",
-		fluid: "benzene",
-		amount: 40000
+		uid: "47abdd8e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "benzene",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

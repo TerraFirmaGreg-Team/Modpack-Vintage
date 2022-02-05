@@ -1,8 +1,8 @@
 {
 	title: "We call this \"Fun\"",
 	icon: "gregtech:meta_item_1 1 129",
-	x: -6.0d,
-	y: 1.0d,
+	x: -3.0d,
+	y: 1.5d,
 	text: [
 		"Just like in §bMV§r, more higher-tier components. At least there's no painful §aFlawless Gems§r here."
 	],

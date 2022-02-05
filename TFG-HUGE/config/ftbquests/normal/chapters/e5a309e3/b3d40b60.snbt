@@ -1,7 +1,7 @@
 {
 	title: "Ice Cold",
 	icon: "gregtech:machine 1 1002",
-	x: 0.0d,
+	x: -3.0d,
 	y: -6.0d,
 	text: [
 		"§oVacuums actually make things hotter... No questions asked.§r",

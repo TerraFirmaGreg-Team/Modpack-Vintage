@@ -22,13 +22,13 @@
         "primary": "ore:tin"
       },
       {
-        "secondary": "ore:tin"
+        "secondary": "ore:bismuth"
       },
       {
         "between": "ore:cassiterite"
       },
       {
-        "sporadic": "ore:bismuth"
+        "sporadic": "ore:cassiterite"
       }
     ]
   }

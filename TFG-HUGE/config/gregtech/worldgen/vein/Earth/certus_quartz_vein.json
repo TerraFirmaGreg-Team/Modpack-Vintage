@@ -25,7 +25,7 @@
         "secondary": "ore:certus_quartz"
       },
       {
-        "between": "ore:certus_quartz"
+        "between": "ore:nether_quartz"
       },
       {
         "sporadic": "ore:barite"

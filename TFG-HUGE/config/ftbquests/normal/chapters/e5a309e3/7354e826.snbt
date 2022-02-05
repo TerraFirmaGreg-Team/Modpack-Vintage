@@ -1,8 +1,8 @@
 {
 	title: "Large Chemical Reactor",
 	icon: "gregtech:machine 1 1023",
-	x: 6.0d,
-	y: 0.0d,
+	x: 3.0d,
+	y: 5.0d,
 	text: [
 		"The §3Large Chemical Reactor (LCR)§r is a multiblock §3Chemical Reactor§r with more input/output slots, which can handle more recipes thanks to Teflon.",
 		"",

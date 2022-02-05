@@ -1,17 +1,15 @@
 {
-	title: "Basic Cutting Machine",
+	title: "{tfg.quests.lv.cutting.title}",
 	icon: "gregtech:machine 1 245",
-	x: -4.0d,
-	y: 20.0d,
+	x: -6.0d,
+	y: 18.0d,
+	description: "{tfg.quests.lv.cutting.subtitle}",
 	text: [
-		"§oThe Cutting Machine... cuts... thanks to lubrification.§r",
+		"{tfg.quests.lv.cutting.desc1}",
 		"",
-		"For now, you may use §9Water§r over trying to acquire Lubricant.",
+		"{tfg.quests.lv.cutting.desc2}",
 		"",
-		"",
-		"This is the only way to obtain §aGem Plates§r, which are needed to craft Filters.",
-		"",
-		"You can also cut §aRods into four Bolts§r."
+		"{tfg.quests.lv.cutting.desc3}"
 	],
 	dependencies: [
 		"3b9fc1a9"

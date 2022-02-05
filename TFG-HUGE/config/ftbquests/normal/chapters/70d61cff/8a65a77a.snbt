@@ -1,13 +1,13 @@
 {
 	title: "EV Assembling Machine",
 	icon: "gregtech:machine 1 638",
-	x: 0.0d,
+	x: -1.0d,
 	y: -3.0d,
 	text: [
 		"No Description"
 	],
 	dependencies: [
-		"2556183b"
+		"14263e77"
 	],
 	tasks: [{
 		uid: "85843db7",

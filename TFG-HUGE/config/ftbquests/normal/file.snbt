@@ -18,7 +18,7 @@
 		id: "tfc:food/cooked_rabbit",
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 364800000L,
+				creationDate: -9223372036854775808L,
 				traits: []
 			}
 		}
@@ -31,5 +31,5 @@
 		boss: 0
 	},
 	disable_gui: false,
-	grid_scale: 1.0d
+	grid_scale: 0.5d
 }

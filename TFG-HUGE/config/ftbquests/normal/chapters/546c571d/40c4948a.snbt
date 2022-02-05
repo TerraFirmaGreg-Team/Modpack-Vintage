@@ -1,8 +1,29 @@
 {
+	title: "{tfg.quests.lv.steamturbine.title}",
 	x: 4.0d,
 	y: 8.0d,
 	shape: "hexagon",
-	description: "{tfg.quests.steam.steamturbine.subtitle}",
+	description: "{tfg.quests.lv.steamturbine.subtitle}",
+	text: [
+		"{tfg.quests.lv.steamturbine.desc1}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc2}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc3}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc4}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc5}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc6}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc7}",
+		"{tfg.quests.lv.steamturbine.desc8}",
+		"{tfg.quests.lv.steamturbine.desc9}",
+		"",
+		"{tfg.quests.lv.steamturbine.desc10}",
+		"{tfg.quests.lv.steamturbine.desc11}"
+	],
 	dependencies: [
 		"dd1bc7c8"
 	],

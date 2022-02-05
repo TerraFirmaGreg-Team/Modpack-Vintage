@@ -4,10 +4,9 @@
 	x: 2.0d,
 	y: -6.0d,
 	text: [
-		"Aluminium Cells, a very big upgrade over the Universal Cells.",
+		"Aluminium Cells, a big upgrade over the Steel Cells or Universal Fluid Cells.",
 		"",
-		"They can hold any fraction of Fluid, up to 32 buckets.",
-		"They are also stackable."
+		"They can hold any fraction of Fluid, up to §d32 buckets§r."
 	],
 	dependencies: [
 		"57b1a5d7"

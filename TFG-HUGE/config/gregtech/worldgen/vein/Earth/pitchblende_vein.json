@@ -1,8 +1,8 @@
 {
   "weight": 20,
   "density": 0.25,
-  "min_height": 75,
-  "max_height": 15,
+  "min_height": 130,
+  "max_height": 10,
   "vein_populator": {
     "type": "surface_rock",
     "material": "uraninite"

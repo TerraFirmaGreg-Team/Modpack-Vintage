@@ -7,8 +7,8 @@
 			FluidName: "sodium_persulfate"
 		}
 	},
-	x: 20.0d,
-	y: -12.0d,
+	x: 18.0d,
+	y: -14.0d,
 	text: [
 		"§oThese acids are used to etch Copper off Circuit Boards... or something like that.§r",
 		"",
@@ -25,17 +25,34 @@
 		"",
 		"This Quest can be completed with §eeither§r Fluid."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"75e24d56"
+		"40d77c21"
 	],
 	tasks: [{
-		uid: "c7774a41",
-		type: "fluid",
-		fluid: "sodium_persulfate"
+		uid: "1909aa35",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sodium_persulfate",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	},
 	{
-		uid: "8539b3d6",
-		type: "fluid",
-		fluid: "iron_iii_chloride"
+		uid: "5c1cb2e5",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "iron_iii_chloride",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

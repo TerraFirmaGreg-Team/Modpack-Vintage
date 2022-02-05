@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.packager.title}",
+	x: -4.0d,
+	y: 16.0d,
+	description: "{tfg.quests.lv.packager.subtitle}",
+	text: [
+		"{tfg.quests.lv.packager.desc1}",
+		"",
+		"{tfg.quests.lv.packager.desc2}",
+		"{tfg.quests.lv.packager.desc3}"
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "28e699e6",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 500"
+		}]
+	}]
+}

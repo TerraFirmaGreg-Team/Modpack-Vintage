@@ -8,7 +8,18 @@
 		uid: "1f816713",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 2517"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotRedAlloy"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotRedAlloy"
+				}
+			}
 		}]
 	}]
 }

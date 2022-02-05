@@ -1,5 +1,5 @@
 {
-	title: "Glued",
+	title: "{tfg.quests.lv.glued.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -7,24 +7,30 @@
 			FluidName: "glue"
 		}
 	},
-	x: -3.0d,
+	x: -4.0d,
 	y: 20.0d,
+	description: "{tfg.quests.lv.glued.subtitle}",
 	text: [
-		"§oIt is time to stop processing Resin through the Extractor.§r",
+		"{tfg.quests.lv.glued.desc1}",
 		"",
-		"You can now centrifuge Resin, which will still give the Raw Rubber, alongside with §aGlue§r (and the less useful Plantball).",
+		"{tfg.quests.lv.glued.desc2}",
 		"",
-		"Make a lot of Glue. You can use for §6cheaper Resistors§r, §6cheaper Circuit Boards§r, an exclusive Name Tag §din the Assembling Machine§r and more... §oin the next quest§r.",
-		"",
-		"",
-		"§9Note:§r Submit a fluid by having it stored in §lany§r tank in your inventory. A bucket will also work."
+		"{tfg.quests.lv.glued.desc3}"
 	],
 	dependencies: [
 		"3b9fc1a9"
 	],
 	tasks: [{
-		uid: "3aa84bef",
-		type: "fluid",
-		fluid: "glue"
+		uid: "1e12f394",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "glue",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

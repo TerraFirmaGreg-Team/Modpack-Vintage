@@ -1,6 +1,11 @@
 {
+	title: "{tfg.quests.lv.prospector.title}",
 	x: 9.0d,
 	y: 15.0d,
+	description: "{tfg.quests.lv.prospector.subtitle}",
+	text: [
+		"{tfg.quests.lv.prospector.desc}"
+	],
 	dependencies: [
 		"970a426f",
 		"0c6d2117",

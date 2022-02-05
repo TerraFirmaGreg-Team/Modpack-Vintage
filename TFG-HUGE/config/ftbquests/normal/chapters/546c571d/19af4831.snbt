@@ -1,18 +1,13 @@
 {
-	title: "Basic Arc Furnace",
+	title: "{tfg.quests.lv.arc.title}",
 	icon: "gregtech:machine 1 95",
-	x: -9.0d,
-	y: 18.0d,
+	x: -6.0d,
+	y: 22.5d,
+	description: "{tfg.quests.lv.arc.subtitle}",
 	text: [
-		"§oThe description of the machine refers to metallurgy where Blast Furnace and Arc Furnace serve a similar purpose, not exactly here though!§r",
-		"",
-		"The Arc Furnace uses a little bit of Oxygen to smelt items in a different fashion than Furnaces.",
-		"",
-		"You can use it to make easier §aWrought Iron§r, §aGlass§r, and gain access to §aAnnealed Copper§r.",
-		"It can also recycle various components and machines back to their original material.",
-		"",
-		"",
-		"§bLore:§r Previous versions had both the Arc Furnace and the Plasma Arc Furnace. But why not use one machine for both? That's what we decided, but then we decided to remove one of the two plasma recipes. And then the other plasma recipe... Enough rambling that just means the Plasma Arc Furnace is gone. RIP."
+		"{tfg.quests.lv.arc.desc1}",
+		"{tfg.quests.lv.arc.desc2}",
+		"{tfg.quests.lv.arc.desc3}"
 	],
 	dependencies: [
 		"422502ff"

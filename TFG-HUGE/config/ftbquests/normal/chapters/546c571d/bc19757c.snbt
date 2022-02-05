@@ -1,26 +1,19 @@
 {
-	title: "The Amperage and Voltage Concept",
+	title: "{tfg.quests.lv.amperage.title}",
 	icon: "gregtech:cable_quadruple 1 252",
 	x: 6.0d,
 	y: 6.0d,
+	description: "{tfg.quests.lv.amperage.subtitle}",
 	text: [
-		"§oYou can put this quest off and come back to it once you hit MV Age. It will appear in both chapters as well as in the \"Tips and Tricks\" tab. §r",
-		"",
-		"This quest will go into the energy mechanics in more detail. If you have a basic understanding of electricity in §ereal life§r, the GTEU system is not too different! An even more in-depth guide can be found on the GTCEu wiki.",
-		"",
-		"Electrical energy in §dGregTech§r is measured in §dEnergy Units (EU)§r. They are transported down connections in §e§dpackets (p)§r. Packet transfer has two parameters: §2Voltage§r is the amount of EU in each packet §2(EU/p, or V)§r, and §2Amperage§r is the number of packets which pass a point per tick §2(p/t, or A)§r.",
-		"",
-		"Think of Cables in a network as a §ehighway§r, with packets being the cars on it: §2voltage§r is analogous to the §aspeed§r of each car, and §2amperage§r is like the §anumber of cars§r which pass through the highway per unit of time. (This applies to real life too!)",
-		"",
-		"§2§rThe product of §2Voltage§r and §2Amperage (V x A, or EU/p x p/t)§r is §dpower§r, or §dEU/t§r. This is what machines list their energy consumption as. For example, the §3EBF §bAluminium§r recipe calls for §d120 EU/t§r, and this can be supplied as §d30V x 4A§r (supplied as 4A of §7LV§r), or §d120V x 1A§r (supplied as 1A of §bMV§r). ",
-		"",
-		"Here comes the §4dangerous§r part: ",
-		"- Cables and Wires which receive higher §2voltage§r than their rating will §cburn§r! Cables and Wires will also §cburn§r if too many §2amps§r pass through them.",
-		"- Machines which receive higher §2voltage§r than their tier will §cexplode§r! Putting extra §3§2amps§r into a machine is §asafe§r, however.",
-		"",
-		"§9§lTL;DR:§r Group up Machines and Generators by §2Voltage§r, and avoid sharing them.",
-		"",
-		"§9Note:§r The Amperage bug, exploit, feature (call it whatever you want!) from GTCE has been §lfixed§r in GTCEu. Now the Energy net works as intended."
+		"{tfg.quests.lv.amperage.desc1}",
+		"{tfg.quests.lv.amperage.desc2}",
+		"{tfg.quests.lv.amperage.desc3}",
+		"{tfg.quests.lv.amperage.desc4}",
+		"{tfg.quests.lv.amperage.desc5}",
+		"{tfg.quests.lv.amperage.desc6}",
+		"{tfg.quests.lv.amperage.desc7}",
+		"{tfg.quests.lv.amperage.desc8}",
+		"{tfg.quests.lv.amperage.desc9}"
 	],
 	dependencies: [
 		"59a7fc12"

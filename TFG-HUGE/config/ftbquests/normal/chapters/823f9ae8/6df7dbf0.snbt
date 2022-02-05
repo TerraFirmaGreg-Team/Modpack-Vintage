@@ -1,5 +1,5 @@
 {
-	x: -20.0d,
+	x: -21.0d,
 	y: 10.0d,
 	description: "{tfg.quests.primitive.pineappleleather.subtitle}",
 	dependencies: [

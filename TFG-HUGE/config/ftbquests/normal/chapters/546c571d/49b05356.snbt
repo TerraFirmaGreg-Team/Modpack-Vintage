@@ -1,21 +1,21 @@
 {
-	title: "Multiblock Troubleshooting",
+	title: "{tfg.quests.lv.troubleshooting.title}",
 	icon: "gregtech:metal_casing 1 7",
 	x: 12.0d,
 	y: 5.0d,
+	description: "{tfg.quests.lv.troubleshooting.subtitle}",
 	text: [
-		"If a multiblock is formed, but you are having troubles figuring out why it does not run:",
-		"§9-§r Check if the Multiblock is properly plugged in (we all make these mistakes!).",
+		"{tfg.quests.lv.troubleshooting.desc1}",
 		"",
-		"§9-§r Do the initial Maintenance fix.",
+		"{tfg.quests.lv.troubleshooting.desc2}",
 		"",
-		"§9-§r Verify the recipe usage, the max EU/t has to be greater than that of the recipe.",
+		"{tfg.quests.lv.troubleshooting.desc3}",
 		"",
-		"§9- §rCheck the special requirements the recipe may have (JEI always has some kind of indication for it)",
+		"{tfg.quests.lv.troubleshooting.desc4}",
 		"",
-		"§9-§r Make sure the recipe is properly input, this is less obvious than in a regular machine because you have to juggle between Input Bus and Input Hatch",
+		"{tfg.quests.lv.troubleshooting.desc5}",
 		"",
-		"§9-§r Make sure there is space for output. The biggest offender is the Output Hatches being too low tier and having too little capacity!"
+		"{tfg.quests.lv.troubleshooting.desc6}"
 	],
 	dependencies: [
 		"b0d6598e"

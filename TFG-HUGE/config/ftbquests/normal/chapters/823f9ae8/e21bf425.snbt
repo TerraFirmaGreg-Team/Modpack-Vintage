@@ -11,13 +11,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any sheetDoubleAnyBronze"
+					Name: "Any plateDoubleBronze"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "sheetDoubleAnyBronze"
+					data: "plateDoubleBronze"
 				}
 			}
 		}],

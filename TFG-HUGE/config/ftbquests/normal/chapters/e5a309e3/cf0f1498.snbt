@@ -1,8 +1,8 @@
 {
 	title: "Almost Titanium",
 	icon: "gregtech:meta_dust 1 285",
-	x: 4.0d,
-	y: -3.0d,
+	x: 3.0d,
+	y: -8.5d,
 	shape: "circle",
 	text: [
 		"§oRutile, a form of Titanium Dioxide, cannot be electrolyzed directly! What's even better? It has to be obtained from other Ores!§r",
