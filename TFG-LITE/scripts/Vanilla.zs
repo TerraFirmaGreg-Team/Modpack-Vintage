@@ -216,18 +216,17 @@ recipes.addShaped(<minecraft:bucket>,
  [<ore:plateWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateWroughtIron>],
  [null, <ore:plateWroughtIron>, null]]);
 
-//Observer
-recipes.addShaped(<minecraft:observer>,
-[[<ore:ringIron>, <ore:cobblestone>, <ore:ringIron>],
- [<ore:cobblestone>, <ore:plateCertusQuartz> | <ore:plateNetherQuartz> | <ore:plateQuartzite>, <ore:cobblestone>],
- [<ore:gearSmallIron>, <ore:stickRedAlloy>, <ore:gearSmallIron>]]);
-
 //Водная хрень
 recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
 recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
 recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
 recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
+
+//Рычаг
+recipes.addShaped(<minecraft:lever>,
+[[null, <ore:buttonStone>, null],
+ [null, <ore:stickWood>, null]]);
 
 //Бирка
 recipes.addShaped(<minecraft:name_tag>,

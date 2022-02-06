@@ -95,7 +95,7 @@ ItemRegistry.registerItemMetal(<ore:dustCassiteriteSand>.firstItem, "TIN", 35, t
 //Железо --- Грязная Кучка
 ItemRegistry.registerItemMetal(<ore:dustImpureIron>.firstItem, "WROUGHT_IRON", 80, false);
 //Железо --- Большая Кучка
-ItemRegistry.registerItemMetal(<ore:dustIron>.firstItem, "WROUGHT_IRON", 100, false);
+ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 100, false);
 //Железо --- Средняя Кучка
 ItemRegistry.registerItemMetal(<ore:dustSmallIron>.firstItem, "WROUGHT_IRON", 25, false);
 //Железо --- Маленькая Кучка

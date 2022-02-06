@@ -418,9 +418,9 @@ recipes.addShaped(<gregtech:meta_item_1:347>,
 recipes.removeByRecipeName("tfc:paper");
 
 //Remove rods
-Anvil.removeRecipe(<tfc:metal/rod/gold>);
-Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
-Anvil.removeRecipe(<tfc:metal/rod/steel>);
+//Anvil.removeRecipe(<tfc:metal/rod/gold>);
+//Anvil.removeRecipe(<tfc:metal/rod/wrought_iron>);
+//Anvil.removeRecipe(<tfc:metal/rod/steel>);
 
 //Sticky Resin
 Barrel.addRecipe("tfg:sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> * 250, <gregtech:meta_item_1:438>, 6);

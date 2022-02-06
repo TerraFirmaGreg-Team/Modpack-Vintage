@@ -76,6 +76,7 @@ recipes.removeByRecipeName("gregtech:comparator_quartzite");
 recipes.removeByRecipeName("gregtech:daylight_detector");
 recipes.removeByRecipeName("gregtech:daylight_detector_certus");
 recipes.removeByRecipeName("gregtech:daylight_detector_quartzite");
+recipes.removeByRecipeName("gregtech:lever");
 
 //Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
