@@ -4,6 +4,51 @@ import mods.terrafirmacraft.ItemRegistry;
 
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
+    //Blocks
+    <minecraft:stone>,
+    <minecraft:grass>,
+    <minecraft:dirt>,
+    <minecraft:dirt:1>,
+    <minecraft:dirt:2>,
+    <minecraft:cobblestone>,
+    <minecraft:sand>,
+    <minecraft:sand:1>,
+    <minecraft:stonebrick>,
+    <minecraft:stonebrick:1>,
+    <minecraft:stonebrick:2>,
+    <minecraft:stonebrick:3>,
+    <minecraft:mossy_cobblestone>,
+    <minecraft:bookshelf>,
+    //Logs
+    <minecraft:log:*>,
+    <minecraft:log2:*>,
+    //Planks
+    <minecraft:planks:*>,
+    //Slabs
+    <minecraft:wooden_slab:*>,
+    <minecraft:stone_slab>,
+    <minecraft:stone_slab:1>,
+    <minecraft:stone_slab:3>,
+    <minecraft:stone_slab:5>,
+    <minecraft:stone_slab2>,
+    //Stairs
+    <minecraft:oak_stairs>,
+    <minecraft:spruce_stairs>,
+    <minecraft:birch_stairs>,
+    <minecraft:jungle_stairs>,
+    <minecraft:acacia_stairs>,
+    <minecraft:dark_oak_stairs>,
+    <minecraft:sandstone_stairs>,
+    <minecraft:stone_brick_stairs>,
+    <minecraft:stone_stairs>,
+    <minecraft:red_sandstone_stairs>,
+    //Doors
+    <minecraft:wooden_door>,
+    <minecraft:spruce_door>,
+    <minecraft:birch_door>,
+    <minecraft:jungle_door>,
+    <minecraft:acacia_door>,
+    <minecraft:dark_oak_door>,
     //Fence Gates
     <minecraft:fence_gate>,
     <minecraft:spruce_fence_gate>,
@@ -112,12 +157,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:wooden_button>,
     <minecraft:stone_button>,
     <minecraft:trapdoor>,
-    <minecraft:wooden_door>,
-    <minecraft:spruce_door>,
-    <minecraft:birch_door>,
-    <minecraft:jungle_door>,
-    <minecraft:acacia_door>,
-    <minecraft:dark_oak_door>,
     <minecraft:reeds>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{

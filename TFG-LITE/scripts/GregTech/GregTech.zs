@@ -173,8 +173,73 @@ recipes.addShaped(<ore:dustQuartzSand>.firstItem,
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
  [null, null, null]]);
 
+//Fix Cactus Recycling
+// Plant Ball * 1
+compressor.findRecipe(2, [<minecraft:cactus:0> * 8], null).remove();
+compressor.recipeBuilder()
+    .inputs([<tfc:plants/barrel_cactus> * 8])
+    .outputs(<metaitem:plant_ball>)
+    .duration(300).EUt(2).buildAndRegister();
+// Biomass * 20
+brewery.findRecipe(3, [<minecraft:cactus:0>], [<liquid:water> * 20]).remove();
+brewery.recipeBuilder()
+    .inputs([<tfc:plants/barrel_cactus>])
+    .fluidInputs([<liquid:water> * 20])
+    .fluidOutputs([<liquid:biomass> * 20])
+    .duration(300).EUt(2).buildAndRegister();
+
+//Fix Plant Ball Recipes
+//From Dirt
+centrifuge.findRecipe(30, [<minecraft:dirt:0>], null).remove();
+//From Grass
+centrifuge.findRecipe(30, [<minecraft:grass:0>], null).remove();
+//From Dirt
+centrifuge.recipeBuilder()
+    .inputs([<ore:dirt>])
+    .chancedOutput(<metaitem:plant_ball>, 1200, 700)
+    .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
+    .chancedOutput(<ore:dustTinyClay>.firstItem, 4000, 900)
+    .duration(275).EUt(30).buildAndRegister();
+//From Grass
+centrifuge.recipeBuilder()
+    .inputs([<ore:grass>])
+    .chancedOutput(<metaitem:plant_ball>, 3000, 1200)
+    .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
+    .chancedOutput(<ore:dustTinyClay>.firstItem, 5000, 900)
+    .duration(275).EUt(30).buildAndRegister();
+
+//Fix Shit Glass Craft
+// Glass * 2
+arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
+arc_furnace.recipeBuilder()
+    .inputs([<ore:sand>])
+    .fluidInputs(<fluid:oxygen> * 20)
+    .outputs(<minecraft:glass> * 2)
+    .duration(175).EUt(7).buildAndRegister();
+
+//Fix Coke Oven Bricks Craft
+// Coke Oven Brick * 2
+alloy_smelter.findRecipe(7, [<minecraft:sand:0>, <minecraft:clay_ball:0>], null).remove();
+alloy_smelter.recipeBuilder()
+    .inputs([<ore:sand>, <minecraft:clay_ball:0>])
+    .outputs(<metaitem:brick.coke>)
+    .duration(175).EUt(7).buildAndRegister();
+
+//Fix Stone Exploit
+// Stone * 1
+compressor.findRecipe(2, [<metaitem:plateStone> * 9], null).remove();
+compressor.recipeBuilder()
+    .inputs([<metaitem:plateStone> * 9])
+    .outputs(<tfc:raw/basalt>)
+    .duration(300).EUt(2).buildAndRegister();
+
 //Fix Dirt Exploit
-macerator.findRecipe(2, [<gregtech:meta_item_1:440>], null);
+// Dirt * 1
+macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
+macerator.recipeBuilder()
+    .inputs([<metaitem:bio_chaff>])
+    .outputs(<tfc:dirt/basalt>)
+    .duration(300).EUt(2).buildAndRegister();
 
 //Fix Gravel Exploit
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
@@ -191,8 +256,8 @@ centrifuge.recipeBuilder()
     .inputs(<tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>)
     .chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
     .chancedOutput(<ore:dustWood>.firstItem, 2500, 700)
-    .chancedOutput(<gregtech:meta_item_1:439>, 3750, 900)
-    .chancedOutput(<gregtech:meta_item_1:438>, 5000, 1200)
+    .chancedOutput(<metaitem:plant_ball>, 3750, 900)
+    .chancedOutput(<metaitem:rubber_drop>, 5000, 1200)
     .fluidOutputs(<fluid:methane> * 65)
     .EUt(20).duration(200).buildAndRegister();
 
