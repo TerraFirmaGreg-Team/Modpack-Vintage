@@ -12,49 +12,67 @@ import mods.terrafirmacraft.LeatherKnapping;
 
 //Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
-	//Small Ores
-	<tfc:ore/native_copper:*>,
-	<tfc:ore/native_gold:*>,
-	<tfc:ore/native_platinum:*>,
-	<tfc:ore/hematite:*>,
-	<tfc:ore/native_silver:*>,
-	<tfc:ore/cassiterite:*>,
-	<tfc:ore/galena:*>,
-	<tfc:ore/bismuthinite:*>,
-	<tfc:ore/garnierite:*>,
-	<tfc:ore/malachite:*>,
-	<tfc:ore/magnetite:*>,
-	<tfc:ore/limonite:*>,
-	<tfc:ore/sphalerite:*>,
-	<tfc:ore/tetrahedrite:*>,
-	<tfc:ore/halite:*>,
-	//Fake Rods
-	<tfc:metal/rod/gold>,
-	<tfc:metal/rod/wrought_iron>,
-	<tfc:metal/rod/steel>,
-	//Dusts
-	<tfc:metal/dust/bismuth>,
-	<tfc:metal/dust/bismuth_bronze>,
-	<tfc:metal/dust/black_bronze>,
-	<tfc:metal/dust/brass>,
-	<tfc:metal/dust/bronze>,
-	<tfc:metal/dust/copper>,
-	<tfc:metal/dust/gold>,
-	<tfc:metal/dust/lead>,
-	<tfc:metal/dust/nickel>,
-	<tfc:metal/dust/rose_gold>,
-	<tfc:metal/dust/silver>,
-	<tfc:metal/dust/tin>,
-	<tfc:metal/dust/zinc>,
-	<tfc:metal/dust/sterling_silver>,
-	<tfc:metal/dust/pig_iron>,
-	<tfc:metal/dust/steel>,
-	<tfc:metal/dust/platinum>,
-	<tfc:metal/dust/black_steel>,
-	<tfc:metal/dust/blue_steel>,
-	<tfc:metal/dust/red_steel>,
-	<tfc:metal/dust/wrought_iron>,
-	//Ingot
+	// Pickaxe
+	<tfc:metal/pick/bismuth_bronze>,
+	<tfc:metal/pick/black_bronze>,
+	<tfc:metal/pick/bronze>,
+	<tfc:metal/pick/copper>,
+	<tfc:metal/pick/wrought_iron>,
+	<tfc:metal/pick/steel>,
+	<tfc:metal/pick/black_steel>,
+	<tfc:metal/pick/blue_steel>,
+	<tfc:metal/pick/red_steel>,
+	// Pickaxe Heads
+	<tfc:metal/pick_head/bismuth_bronze>,
+	<tfc:metal/pick_head/black_bronze>,
+	<tfc:metal/pick_head/bronze>,
+	<tfc:metal/pick_head/copper>,
+	<tfc:metal/pick_head/wrought_iron>,
+	<tfc:metal/pick_head/steel>,
+	<tfc:metal/pick_head/black_steel>,
+	<tfc:metal/pick_head/blue_steel>,
+	<tfc:metal/pick_head/red_steel>,
+	// Axe
+	<tfc:metal/axe/bismuth_bronze>,
+	<tfc:metal/axe/black_bronze>,
+	<tfc:metal/axe/bronze>,
+	<tfc:metal/axe/copper>,
+	<tfc:metal/axe/wrought_iron>,
+	<tfc:metal/axe/steel>,
+	<tfc:metal/axe/black_steel>,
+	<tfc:metal/axe/blue_steel>,
+	<tfc:metal/axe/red_steel>,
+	// Axe Heads
+	<tfc:metal/axe_head/bismuth_bronze>,
+	<tfc:metal/axe_head/black_bronze>,
+	<tfc:metal/axe_head/bronze>,
+	<tfc:metal/axe_head/copper>,
+	<tfc:metal/axe_head/wrought_iron>,
+	<tfc:metal/axe_head/steel>,
+	<tfc:metal/axe_head/black_steel>,
+	<tfc:metal/axe_head/blue_steel>,
+	<tfc:metal/axe_head/red_steel>,
+	// Sword
+	<tfc:metal/sword/bismuth_bronze>,
+	<tfc:metal/sword/black_bronze>,
+	<tfc:metal/sword/bronze>,
+	<tfc:metal/sword/copper>,
+	<tfc:metal/sword/wrought_iron>,
+	<tfc:metal/sword/steel>,
+	<tfc:metal/sword/black_steel>,
+	<tfc:metal/sword/blue_steel>,
+	<tfc:metal/sword/red_steel>,
+	// Sword Blades
+	<tfc:metal/sword_blade/bismuth_bronze>,
+	<tfc:metal/sword_blade/black_bronze>,
+	<tfc:metal/sword_blade/bronze>,
+	<tfc:metal/sword_blade/copper>,
+	<tfc:metal/sword_blade/wrought_iron>,
+	<tfc:metal/sword_blade/steel>,
+	<tfc:metal/sword_blade/black_steel>,
+	<tfc:metal/sword_blade/blue_steel>,
+	<tfc:metal/sword_blade/red_steel>,
+	// Ingot
 	<tfc:metal/ingot/bismuth>,
 	<tfc:metal/ingot/bismuth_bronze>,
 	<tfc:metal/ingot/black_bronze>,
@@ -76,7 +94,49 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/ingot/blue_steel>,
 	<tfc:metal/ingot/red_steel>,
 	//<tfc:metal/ingot/wrought_iron>,
-	//Plate
+	// Small Ores
+	<tfc:ore/native_copper:*>,
+	<tfc:ore/native_gold:*>,
+	<tfc:ore/native_platinum:*>,
+	<tfc:ore/hematite:*>,
+	<tfc:ore/native_silver:*>,
+	<tfc:ore/cassiterite:*>,
+	<tfc:ore/galena:*>,
+	<tfc:ore/bismuthinite:*>,
+	<tfc:ore/garnierite:*>,
+	<tfc:ore/malachite:*>,
+	<tfc:ore/magnetite:*>,
+	<tfc:ore/limonite:*>,
+	<tfc:ore/sphalerite:*>,
+	<tfc:ore/tetrahedrite:*>,
+	<tfc:ore/halite:*>,
+	// Fake Rods
+	<tfc:metal/rod/gold>,
+	<tfc:metal/rod/wrought_iron>,
+	<tfc:metal/rod/steel>,
+	// Dusts
+	<tfc:metal/dust/bismuth>,
+	<tfc:metal/dust/bismuth_bronze>,
+	<tfc:metal/dust/black_bronze>,
+	<tfc:metal/dust/brass>,
+	<tfc:metal/dust/bronze>,
+	<tfc:metal/dust/copper>,
+	<tfc:metal/dust/gold>,
+	<tfc:metal/dust/lead>,
+	<tfc:metal/dust/nickel>,
+	<tfc:metal/dust/rose_gold>,
+	<tfc:metal/dust/silver>,
+	<tfc:metal/dust/tin>,
+	<tfc:metal/dust/zinc>,
+	<tfc:metal/dust/sterling_silver>,
+	<tfc:metal/dust/pig_iron>,
+	<tfc:metal/dust/steel>,
+	<tfc:metal/dust/platinum>,
+	<tfc:metal/dust/black_steel>,
+	<tfc:metal/dust/blue_steel>,
+	<tfc:metal/dust/red_steel>,
+	<tfc:metal/dust/wrought_iron>,
+	// Plate
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
 	<tfc:metal/sheet/black_bronze>,
@@ -98,7 +158,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/sheet/blue_steel>,
 	<tfc:metal/sheet/red_steel>,
 	//<tfc:metal/sheet/wrought_iron>,
-	//Double Plates
+	// Double Plates
 	<tfc:metal/double_sheet/bismuth>,
 	<tfc:metal/double_sheet/bismuth_bronze>,
 	<tfc:metal/double_sheet/black_bronze>,
@@ -120,7 +180,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/double_sheet/black_steel>,
 	<tfc:metal/double_sheet/blue_steel>,
 	<tfc:metal/double_sheet/red_steel>,
-	//Nuggets
+	// Nuggets
 	<tfc:metal/nugget/bismuth>,
 	<tfc:metal/nugget/bismuth_bronze>,
 	<tfc:metal/nugget/black_bronze>,
@@ -142,7 +202,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/nugget/blue_steel>,
 	<tfc:metal/nugget/red_steel>,
 	<tfc:metal/nugget/wrought_iron>,
-	//Hammers
+	// Hammers
 	<tfc:metal/hammer/copper>,
 	<tfc:metal/hammer/bismuth_bronze>,
 	<tfc:metal/hammer/bronze>,
@@ -152,7 +212,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/hammer/black_steel>,
 	<tfc:metal/hammer/blue_steel>,
 	<tfc:metal/hammer/red_steel>,
-	//Hammers Heads
+	// Hammers Heads
 	<tfc:metal/hammer_head/copper>,
 	<tfc:metal/hammer_head/red_steel>,
 	<tfc:metal/hammer_head/blue_steel>,
@@ -162,7 +222,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/hammer_head/bronze>,
 	<tfc:metal/hammer_head/black_bronze>,
 	<tfc:metal/hammer_head/bismuth_bronze>,
-	//Saw
+	// Saw
 	<tfc:metal/saw/copper>,
 	<tfc:metal/saw/bismuth_bronze>,
 	<tfc:metal/saw/bronze>,
@@ -172,7 +232,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/saw/black_steel>,
 	<tfc:metal/saw/blue_steel>,
 	<tfc:metal/saw/red_steel>,
-	//Saw Heads
+	// Saw Heads
 	<tfc:metal/saw_blade/copper>,
 	<tfc:metal/saw_blade/bronze>,
 	<tfc:metal/saw_blade/black_bronze>,
@@ -182,7 +242,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/saw_blade/black_steel>,
 	<tfc:metal/saw_blade/steel>,
 	<tfc:metal/saw_blade/wrought_iron>,
-	//Knife
+	// Knife
 	<tfc:metal/knife/copper>,
 	<tfc:metal/knife/bismuth_bronze>,
 	<tfc:metal/knife/bronze>,
@@ -192,7 +252,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/knife/black_steel>,
 	<tfc:metal/knife/blue_steel>,
 	<tfc:metal/knife/red_steel>,
-	//Knife Heads
+	// Knife Heads
 	<tfc:metal/knife_blade/copper>,
 	<tfc:metal/knife_blade/red_steel>,
 	<tfc:metal/knife_blade/blue_steel>,
@@ -202,7 +262,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/knife_blade/bronze>,
 	<tfc:metal/knife_blade/black_bronze>,
 	<tfc:metal/knife_blade/bismuth_bronze>,
-	//Powder
+	// Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
 	<tfc:powder/graphite>,
@@ -212,7 +272,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:powder/malachite>,
 	<tfc:powder/charcoal>,
 	<tfc:powder/hematite>,
-	//Other
+	// Other
 	<tfc:ore/graphite>,
 	<tfc:ore/bituminous_coal>,
 	<tfc:ore/lignite>,

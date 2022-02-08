@@ -1,83 +1,98 @@
-//Отключение рецептов кремниевых инструментов
-//mods.jei.JEI.removeAndHide(<ore:toolHeadSwordFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadPickaxeFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadShovelFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadAxeFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadHoeFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadDrillFlint>);
-//mods.jei.JEI.removeAndHide(<ore:toolHeadSenseFlint>);
-recipes.removeByRecipeName("gregtech:pickaxe_flint");
-recipes.removeByRecipeName("gregtech:sword_flint");
-recipes.removeByRecipeName("gregtech:axe_flint");
-recipes.removeByRecipeName("gregtech:shovel_flint");
-recipes.removeByRecipeName("gregtech:knife_flint");
-recipes.removeByRecipeName("gregtech:hoe_flint");
-recipes.removeByRecipeName("gregtech:toolheadaxe_flint_wood");
+import crafttweaker.item.IItemStack;
 
-//Отключение крафтов молотков с палкой(62)
-recipes.removeByRecipeName("gregtech:hammer_naquadah_enriched");
-recipes.removeByRecipeName("gregtech:hammer_naquadah_alloy");
-recipes.removeByRecipeName("gregtech:hammer_bronze");
-recipes.removeByRecipeName("gregtech:hammer_sterling_silver");
-recipes.removeByRecipeName("gregtech:hammer_stainless_steel");
-recipes.removeByRecipeName("gregtech:hammer_fluxed_electrum");
-recipes.removeByRecipeName("gregtech:hammer_thorium");
-recipes.removeByRecipeName("gregtech:hammer_duranium");
-recipes.removeByRecipeName("gregtech:hammer_diamericium_titanium");
-recipes.removeByRecipeName("gregtech:hammer_brass");
-recipes.removeByRecipeName("gregtech:hammer_naquadah");
-recipes.removeByRecipeName("gregtech:hammer_osmium");
-recipes.removeByRecipeName("gregtech:hammer_invar");
-recipes.removeByRecipeName("gregtech:hammer_tungsten");
-recipes.removeByRecipeName("gregtech:hammer_neutronium");
-recipes.removeByRecipeName("gregtech:hammer_vanadium_steel");
-recipes.removeByRecipeName("gregtech:hammer_hsse");
-recipes.removeByRecipeName("gregtech:hammer_magnalium");
-recipes.removeByRecipeName("gregtech:hammer_red_steel");
-recipes.removeByRecipeName("gregtech:hammer_neodymium");
-recipes.removeByRecipeName("gregtech:hammer_manganese");
-recipes.removeByRecipeName("gregtech:hammer_pig_iron");
-recipes.removeByRecipeName("gregtech:hammer_copper");
-recipes.removeByRecipeName("gregtech:hammer_wrought_iron");
-recipes.removeByRecipeName("gregtech:hammer_steel");
-recipes.removeByRecipeName("gregtech:hammer_cobalt");
-recipes.removeByRecipeName("gregtech:hammer_iron");
-recipes.removeByRecipeName("gregtech:hammer_tungsten_steel");
-recipes.removeByRecipeName("gregtech:hammer_damascus_steel");
-recipes.removeByRecipeName("gregtech:hammer_chrome");
-recipes.removeByRecipeName("gregtech:hammer_osmiridium");
-recipes.removeByRecipeName("gregtech:hammer_molybdenum");
-recipes.removeByRecipeName("gregtech:hammer_titanium");
-recipes.removeByRecipeName("gregtech:hammer_rhodium_plated_palladium");
-recipes.removeByRecipeName("gregtech:hammer_palladium");
-recipes.removeByRecipeName("gregtech:hammer_rose_gold");
-recipes.removeByRecipeName("gregtech:hammer_tungsten_carbide");
-recipes.removeByRecipeName("gregtech:hammer_uranium");
-recipes.removeByRecipeName("gregtech:hammer_hssg");
-recipes.removeByRecipeName("gregtech:hammer_blue_steel");
-recipes.removeByRecipeName("gregtech:hammer_bismuth_bronze");
-recipes.removeByRecipeName("gregtech:hammer_cobalt_brass");
-recipes.removeByRecipeName("gregtech:hammer_uranium235");
-recipes.removeByRecipeName("gregtech:hammer_black_steel");
-recipes.removeByRecipeName("gregtech:hammer_hsss");
-recipes.removeByRecipeName("gregtech:hammer_tritanium");
-recipes.removeByRecipeName("gregtech:hammer_iridium");
-recipes.removeByRecipeName("gregtech:hammer_aluminium");
-recipes.removeByRecipeName("gregtech:hammer_ultimet");
-recipes.removeByRecipeName("gregtech:hammer_black_bronze");
-recipes.removeByRecipeName("gregtech:hammer_emerald");
-recipes.removeByRecipeName("gregtech:hammer_garnet_red");
-recipes.removeByRecipeName("gregtech:hammer_amethyst");
-recipes.removeByRecipeName("gregtech:hammer_garnet_yellow");
-recipes.removeByRecipeName("gregtech:hammer_topaz");
-recipes.removeByRecipeName("gregtech:hammer_opal");
-recipes.removeByRecipeName("gregtech:hammer_olivine");
-recipes.removeByRecipeName("gregtech:hammer_diamond");
-recipes.removeByRecipeName("gregtech:hammer_green_sapphire");
-recipes.removeByRecipeName("gregtech:hammer_sapphire");
-recipes.removeByRecipeName("gregtech:hammer_blue_topaz");
-recipes.removeByRecipeName("gregtech:hammer_ruby");
+// Скрытие мусора
+val RemoveItemsFromJEI as IItemStack[] = [
+	<metaitem:toolHeadSwordFlint>,
+    <metaitem:toolHeadPickaxeFlint>,
+    <metaitem:toolHeadShovelFlint>,
+    <metaitem:toolHeadAxeFlint>,
+    <metaitem:toolHeadHoeFlint>,
+    <metaitem:toolHeadHammerFlint>,
+    <metaitem:toolHeadFileFlint>,
+    <metaitem:toolHeadSawFlint>,
+    <metaitem:toolHeadSenseFlint>
+];
+for item in RemoveItemFromJEI{
+    mods.jei.JEI.removeAndHide(item);
+}
 
-//TODO
-mods.jei.JEI.removeAndHide(<ore:craftingToolShovel>);
-mods.jei.JEI.removeAndHide(<ore:craftingToolHoe>);
+val RemoveItemRecipesByName = [
+	//Отключение рецептов кремниевых инструментов
+    "gregtech:toolheadsword_flint_wood",
+    "gregtech:toolheadpickaxe_flint_wood",
+    "gregtech:toolheadshovel_flint_wood",
+    "gregtech:toolheadaxe_flint_wood",
+    "gregtech:toolheadhoe_flint_wood",
+    "gregtech:toolheadhammer_flint_wood",
+    "gregtech:toolheadfile_flint_wood",
+    "gregtech:toolheadsaw_flint_wood",
+    "gregtech:toolheadsense_flint_wood",
+    //Отключение крафтов молотков с палкой
+    "gregtech:hammer_naquadah_enriched",
+    "gregtech:hammer_naquadah_alloy",
+    "gregtech:hammer_bronze",
+    "gregtech:hammer_sterling_silver",
+    "gregtech:hammer_stainless_steel",
+    "gregtech:hammer_fluxed_electrum",
+    "gregtech:hammer_thorium",
+    "gregtech:hammer_duranium",
+    "gregtech:hammer_diamericium_titanium",
+    "gregtech:hammer_brass",
+    "gregtech:hammer_naquadah",
+    "gregtech:hammer_osmium",
+    "gregtech:hammer_invar",
+    "gregtech:hammer_tungsten",
+    "gregtech:hammer_neutronium",
+    "gregtech:hammer_vanadium_steel",
+    "gregtech:hammer_hsse",
+    "gregtech:hammer_magnalium",
+    "gregtech:hammer_red_steel",
+    "gregtech:hammer_neodymium",
+    "gregtech:hammer_manganese",
+    "gregtech:hammer_pig_iron",
+    "gregtech:hammer_copper",
+    "gregtech:hammer_wrought_iron",
+    "gregtech:hammer_steel",
+    "gregtech:hammer_cobalt",
+    "gregtech:hammer_iron",
+    "gregtech:hammer_tungsten_steel",
+    "gregtech:hammer_damascus_steel",
+    "gregtech:hammer_chrome",
+    "gregtech:hammer_osmiridium",
+    "gregtech:hammer_molybdenum",
+    "gregtech:hammer_titanium",
+    "gregtech:hammer_rhodium_plated_palladium",
+    "gregtech:hammer_palladium",
+    "gregtech:hammer_rose_gold",
+    "gregtech:hammer_tungsten_carbide",
+    "gregtech:hammer_uranium",
+    "gregtech:hammer_hssg",
+    "gregtech:hammer_blue_steel",
+    "gregtech:hammer_bismuth_bronze",
+    "gregtech:hammer_cobalt_brass",
+    "gregtech:hammer_uranium235",
+    "gregtech:hammer_black_steel",
+    "gregtech:hammer_hsss",
+    "gregtech:hammer_tritanium",
+    "gregtech:hammer_iridium",
+    "gregtech:hammer_aluminium",
+    "gregtech:hammer_ultimet",
+    "gregtech:hammer_black_bronze",
+    "gregtech:hammer_emerald",
+    "gregtech:hammer_garnet_red",
+    "gregtech:hammer_amethyst",
+    "gregtech:hammer_garnet_yellow",
+    "gregtech:hammer_topaz",
+    "gregtech:hammer_opal",
+    "gregtech:hammer_olivine",
+    "gregtech:hammer_diamond",
+    "gregtech:hammer_green_sapphire",
+    "gregtech:hammer_sapphire",
+    "gregtech:hammer_blue_topaz",
+    "gregtech:hammer_ruby",
+    "gregtech:hammer_uranium_235",
+    "gregtech:hammer_flint"
+] as string[];
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
