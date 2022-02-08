@@ -208,6 +208,33 @@ centrifuge.recipeBuilder()
     .chancedOutput(<ore:dustTinyClay>.firstItem, 5000, 900)
     .duration(275).EUt(30).buildAndRegister();
 
+// Fix Meat
+// Small Pile of Mince Meat * 6
+<recipemap:macerator>.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
+// Small Pile of Mince Meat * 6
+<recipemap:macerator>.findRecipe(2, [<minecraft:beef:0>], null).remove();
+// Small Pile of Mince Meat * 6
+<recipemap:macerator>.findRecipe(2, [<minecraft:fish:0>], null).remove();
+// Small Pile of Mince Meat * 6
+<recipemap:macerator>.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
+// Mince Meat * 1
+<recipemap:macerator>.findRecipe(2, [<minecraft:chicken:0>], null).remove();
+// Mince Meat * 1
+<recipemap:macerator>.findRecipe(2, [<minecraft:mutton:0>], null).remove();
+// Mince Meat
+macerator.recipeBuilder()
+    .inputs([<ore:categoryMeat>])
+    .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
+    .duration(105).EUt(2).buildAndRegister();
+
+// Cobble FIx
+// Cobblestone Stairs * 4
+assembler.findRecipe(1, [<tfc:cobble/basalt:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Moss Stone * 1
+assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
+// Gravel * 1
+forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
+
 //Fix Shit Glass Craft
 // Glass * 2
 arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
@@ -252,6 +279,7 @@ macerator.recipeBuilder()
     .duration(50).EUt(2).buildAndRegister();
 
 //Переработка тфкшной гевеи
+centrifuge.findRecipe(20, [<gregtech:rubber_log:0>], null).remove();
 centrifuge.recipeBuilder()
     .inputs(<tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>)
     .chancedOutput(<ore:dustCarbon>.firstItem, 2500, 600)
