@@ -12,7 +12,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <metaitem:toolHeadSawFlint>,
     <metaitem:toolHeadSenseFlint>
 ];
-for item in RemoveItemFromJEI{
+for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 

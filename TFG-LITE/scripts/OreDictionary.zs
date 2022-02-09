@@ -143,7 +143,13 @@ for item in ForestryPropolisArray {
 //Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
+// --- AE2
+//Iron Dust
+<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+
 // --- Minecraft
+//Grass
+<ore:grass>.remove(<minecraft:grass>);
 //Sand
 <ore:sand>.remove(<minecraft:sand>);
 //Dirt

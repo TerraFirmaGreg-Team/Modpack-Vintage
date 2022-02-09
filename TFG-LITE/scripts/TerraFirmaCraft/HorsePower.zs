@@ -3,7 +3,7 @@ import mods.horsepower.Grindstone;
 mods.jei.JEI.removeAndHide(<horsepower:flour>);
 mods.jei.JEI.removeAndHide(<horsepower:dough>);
 
-//GrindStone - GT ore --> GT small pile
+// GrindStone - GT ore --> GT small pile
 // - Copper
 Grindstone.add(<gregtech:ore_copper_0>, <ore:dustImpureCopper>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_malachite_0>, <ore:dustImpureMalachite>.firstItem * 3, 10, false);
@@ -37,3 +37,6 @@ Grindstone.add(<gregtech:ore_sulfur_0>, <ore:dustImpureSulfur>.firstItem * 3, 10
 Grindstone.add(<gregtech:ore_rock_salt_0>, <ore:dustImpureRockSalt>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_graphite_0>, <ore:dustImpureGraphite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_mica_0>, <ore:dustImpureMica>.firstItem * 3, 10, false);
+
+// Other Recipes
+Grindstone.add(<tfc:food/soybean>, <firmalife:ground_soybeans>, 10, false);

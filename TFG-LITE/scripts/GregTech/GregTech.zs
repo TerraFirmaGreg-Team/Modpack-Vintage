@@ -210,22 +210,30 @@ centrifuge.recipeBuilder()
 
 // Fix Meat
 // Small Pile of Mince Meat * 6
-<recipemap:macerator>.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
 // Small Pile of Mince Meat * 6
-<recipemap:macerator>.findRecipe(2, [<minecraft:beef:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
 // Small Pile of Mince Meat * 6
-<recipemap:macerator>.findRecipe(2, [<minecraft:fish:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
 // Small Pile of Mince Meat * 6
-<recipemap:macerator>.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
 // Mince Meat * 1
-<recipemap:macerator>.findRecipe(2, [<minecraft:chicken:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
 // Mince Meat * 1
-<recipemap:macerator>.findRecipe(2, [<minecraft:mutton:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
 // Mince Meat
 macerator.recipeBuilder()
     .inputs([<ore:categoryMeat>])
     .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
     .duration(105).EUt(2).buildAndRegister();
+
+//Armor Stand Fix
+// Armor Stand * 1
+assembler.findRecipe(7, [<minecraft:stone_slab:0>, <minecraft:stick:0> * 6], null).remove();
+assembler.recipeBuilder()
+    .inputs([<ore:slabStonePolished>, <minecraft:stick> * 6])
+    .outputs(<minecraft:armor_stand>)
+    .duration(300).EUt(7).buildAndRegister();
 
 // Cobble FIx
 // Cobblestone Stairs * 4
@@ -270,6 +278,30 @@ macerator.recipeBuilder()
 
 //Fix Gravel Exploit
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
+
+//Fix Sand Exploit
+// Diamond Small Pile * 1
+centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
+centrifuge.recipeBuilder()
+    .inputs([<tfc:sand/quartzite>])
+    .chancedOutput(<ore:dustTinyDiamond>.firstItem, 100, 100)
+    .chancedOutput(<ore:dustIron>.firstItem, 5000, 500)
+    .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
+    .duration(275).EUt(30).buildAndRegister();
+// Oil * 500
+centrifuge.findRecipe(5, [<gregtech:ore_oilsands_0:0>], null).remove();
+centrifuge.recipeBuilder()
+    .inputs([<ore:oreOilsands>])
+    .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
+    .fluidOutputs([<liquid:oil> * 500])
+    .duration(200).EUt(5).buildAndRegister();
+// Oil * 80
+centrifuge.findRecipe(80, [<minecraft:soul_sand:0>], null).remove();
+// Helium Gas * 120
+centrifuge.findRecipe(20, [<metaitem:dustEndstone>], null).remove();
+// Myshroom * 1
+centrifuge.findRecipe(30, [<minecraft:mycelium:0>], null).remove();
+
 
 //Quartz Sand - 2
 macerator.findRecipe(2, [<minecraft:sand>], null).remove();
