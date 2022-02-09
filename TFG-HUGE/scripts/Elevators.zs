@@ -14,8 +14,8 @@ recipes.addShaped(<movingelevators:elevator_block>,
 //Elevator Screen
 recipes.addShaped(<movingelevators:display_block>, 
 [[<ore:plateGlass>, <ore:plateGlass>, <ore:plateGlass>],
- [<ore:plateIronMagnetic>, <gregtech:machine_casing:1>, <ore:plateIronMagnetic>],
- [<ore:circuitBasic>, <ore:plateIronMagnetic>, <ore:circuitBasic>]]);
+ [<ore:stickIronMagnetic>, <gregtech:machine_casing:1>, <ore:stickIronMagnetic>],
+ [<ore:circuitBasic>, <ore:stickIronMagnetic>, <ore:circuitBasic>]]);
  
 //Remote Elevator Panel
 recipes.addShaped(<movingelevators:button_block>, 

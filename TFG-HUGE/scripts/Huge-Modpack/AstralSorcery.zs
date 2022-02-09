@@ -21,14 +21,18 @@ Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lens_break");
 
 LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
 
+//Хто ента такое
+laser_engraver.recipeBuilder()
+    .inputs(<ore:gemFlawless>)
+	.notConsumable(<ore:craftingLensGlass>)
+    .outputs(<astralsorcery:itemcraftingcomponent>)
+    .duration(200).EUt(30).buildAndRegister();
+
 //Мрамор из AstralSorcery
 chemical_bath.recipeBuilder().inputs(<tfc:raw/marble>).fluidInputs([<liquid:hot_water> * 1000]).outputs(<astralsorcery:blockmarble>).duration(20).EUt(2).buildAndRegister();
 
 //Крафт руды звездного металла
 LightTransmutation.addTransmutation(<gregtech:ore_iron_0>, <astralsorcery:blockcustomore:1>, 10);
-
-//Фикс переплавки в печке
-furnace.addRecipe(<astralsorcery:itemcraftingcomponent>*3, <contenttweaker:aquamarine_andesite_sand>);
 
 //Угольный мрамор
 recipes.addShaped(<astralsorcery:blockblackmarble>*8,

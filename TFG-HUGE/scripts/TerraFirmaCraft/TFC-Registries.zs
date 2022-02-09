@@ -23,25 +23,25 @@ ItemRegistry.registerItemMetal(<ore:stickWroughtIron>.firstItem, "WROUGHT_IRON",
 ItemRegistry.registerItemMetal(<ore:stickSteel>.firstItem, "STEEL", 50, true);
 
 //Регистрация металлов для двойных пластин GregTech
-ItemRegistry.registerItemMetal(<ore:plateDoubleBismuth>.firstItem, "BISMUTH", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBrass>.firstItem, "BRASS", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBronze>.firstItem, "BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleCopper>.firstItem, "COPPER", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleGold>.firstItem, "GOLD", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleLead>.firstItem, "LEAD", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleNickel>.firstItem, "NICKEL", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleRoseGold>.firstItem, "ROSE_GOLD", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleSilver>.firstItem, "SILVER", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleTin>.firstItem, "TIN", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBismuthBronze>.firstItem, "BISMUTH_BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBlackBronze>.firstItem, "BLACK_BRONZE", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleSteel>.firstItem, "STEEL", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleWroughtIron>.firstItem, "WROUGHT_IRON", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleSterlingSilver>.firstItem, "STERLING_SILVER", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleZinc>.firstItem, "ZINC", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleRedSteel>.firstItem, "RED_STEEL", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBlueSteel>.firstItem, "BLUE_STEEL", 400, true);
-ItemRegistry.registerItemMetal(<ore:plateDoubleBlackSteel>.firstItem, "BLACK_STEEL", 400, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBismuth>.firstItem, "BISMUTH", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBrass>.firstItem, "BRASS", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBronze>.firstItem, "BRONZE", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleCopper>.firstItem, "COPPER", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleGold>.firstItem, "GOLD", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleLead>.firstItem, "LEAD", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleNickel>.firstItem, "NICKEL", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleRoseGold>.firstItem, "ROSE_GOLD", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleSilver>.firstItem, "SILVER", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleTin>.firstItem, "TIN", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBismuthBronze>.firstItem, "BISMUTH_BRONZE", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBlackBronze>.firstItem, "BLACK_BRONZE", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleSteel>.firstItem, "STEEL", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleWroughtIron>.firstItem, "WROUGHT_IRON", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleSterlingSilver>.firstItem, "STERLING_SILVER", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleZinc>.firstItem, "ZINC", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleRedSteel>.firstItem, "RED_STEEL", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBlueSteel>.firstItem, "BLUE_STEEL", 100, true);
+ItemRegistry.registerItemMetal(<ore:plateDoubleBlackSteel>.firstItem, "BLACK_STEEL", 100, true);
 
 // --- Вариации Меди
 //Медь --- Грязная Кучка
@@ -95,7 +95,7 @@ ItemRegistry.registerItemMetal(<ore:dustCassiteriteSand>.firstItem, "TIN", 35, t
 //Железо --- Грязная Кучка
 ItemRegistry.registerItemMetal(<ore:dustImpureIron>.firstItem, "WROUGHT_IRON", 80, false);
 //Железо --- Большая Кучка
-ItemRegistry.registerItemMetal(<ore:dustIron>.firstItem, "WROUGHT_IRON", 100, false);
+ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 100, false);
 //Железо --- Средняя Кучка
 ItemRegistry.registerItemMetal(<ore:dustSmallIron>.firstItem, "WROUGHT_IRON", 25, false);
 //Железо --- Маленькая Кучка
@@ -303,6 +303,7 @@ var GregtechOres as IItemStack[] = [
         <gregtech:ore_bismuth_0>,
         <gregtech:ore_glowstone_0>
 ];
-for item in GregtechOres {
-	ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
-	}
+for item in GregtechOres 
+{
+        ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
+}

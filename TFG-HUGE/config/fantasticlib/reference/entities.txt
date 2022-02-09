@@ -95,6 +95,7 @@ astralsorcery:entityliquidspark
 astralsorcery:entityobservatoryhelper
 astralsorcery:entityshootingstar
 astralsorcery:entityitemdamageresistant
+gregtech:dynamite
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -139,7 +140,6 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
-gregtech:dynamite
 tfcthings:pigvil
 tfcthings:slingstone
 tfcthings:unknownprojectile
@@ -250,9 +250,9 @@ galacticraftplanets:juicer
 galacticraftplanets:spider_queen
 galacticraftplanets:entry_pod_venus
 galacticraftplanets:web_shot
+forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
-forestry:butterflyge
 galacticraftcore:evolved_boss_blaze
 galacticraftcore:evolved_coldblaze
 galacticraftcore:evolved_boss_ghast

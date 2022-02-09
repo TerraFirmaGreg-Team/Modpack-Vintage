@@ -179,7 +179,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:asteroids_block:7>,
 	<galacticraftplanets:venus:12>,
 	<galacticraftplanets:asteroids_block:6>,
-	<galacticraftplanets:treasure_t2>
+	<galacticraftplanets:treasure_t2>,
+	<galacticraftcore:magnetic_table>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -194,7 +195,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:fuel_loader>,
 	<galacticraftcore:sealer>,
 	<galacticraftcore:oxygen_detector>,
-	<galacticraftcore:magnetic_table>,
 	<galacticraftcore:air_lock_frame>,
 	<galacticraftcore:air_lock_frame:1>,
 	<galacticraftcore:telemetry>,
@@ -361,12 +361,6 @@ recipes.addShaped(<galacticraftcore:fuel_loader>,
 [[<ore:plateAluminium>, <ore:circuitGood>, <ore:plateAluminium>],
  [<metaitem:drum.stainless_steel>, <metaitem:hull.hv>, <metaitem:electric.pump.mv>],
  [<ore:pipeSmallFluidStainlessSteel>, <ore:pipeSmallFluidStainlessSteel>, <ore:pipeSmallFluidStainlessSteel>]]);
-
-//Магнитный верстак
-recipes.addShaped(<galacticraftcore:magnetic_table>,
-[[<ore:plateNickel>, <ore:plateNeodymiumMagnetic>, <ore:plateNickel>],
- [<ore:plateNeodymiumMagnetic>, <ore:craftingTableWood>, <ore:plateNeodymiumMagnetic>],
- [<ore:plateNickel>, <ore:plateNeodymiumMagnetic>, <ore:plateNickel>]]);
 
 //Воздушный шлюз каркас
 recipes.addShaped(<galacticraftcore:air_lock_frame> * 2,
