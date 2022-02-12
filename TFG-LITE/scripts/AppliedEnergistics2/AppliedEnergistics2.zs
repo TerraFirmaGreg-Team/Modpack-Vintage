@@ -162,22 +162,22 @@ recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_flu
 //Покраска и обесвечивание кабелей
 //Жидкая краска
 val dyes = [
-<liquid:dye_white> * 18,
-<liquid:dye_orange> * 18,
-<liquid:dye_magenta> * 18,
-<liquid:dye_light_blue> * 18,
-<liquid:dye_yellow> * 18,
-<liquid:dye_lime> * 18,
-<liquid:dye_pink> * 18,
-<liquid:dye_gray> * 18,
-<liquid:dye_light_gray> * 18,
-<liquid:dye_cyan> * 18,
-<liquid:dye_purple> * 18,
-<liquid:dye_blue> * 18,
-<liquid:dye_brown> * 18,
-<liquid:dye_green> * 18,
-<liquid:dye_red> * 18,
-<liquid:dye_black> * 18
+	<liquid:dye_white> * 18,
+	<liquid:dye_orange> * 18,
+	<liquid:dye_magenta> * 18,
+	<liquid:dye_light_blue> * 18,
+	<liquid:dye_yellow> * 18,
+	<liquid:dye_lime> * 18,
+	<liquid:dye_pink> * 18,
+	<liquid:dye_gray> * 18,
+	<liquid:dye_light_gray> * 18,
+	<liquid:dye_cyan> * 18,
+	<liquid:dye_purple> * 18,
+	<liquid:dye_blue> * 18,
+	<liquid:dye_brown> * 18,
+	<liquid:dye_green> * 18,
+	<liquid:dye_red> * 18,
+	<liquid:dye_black> * 18
 ] as ILiquidStack[];
 // Glass Cables
 var colored_GlassCable = [
@@ -290,22 +290,22 @@ assembler.recipeBuilder()
     .buildAndRegister();
 //Smart Cable
 var colored_SmartCable = [
-<appliedenergistics2:part:40>,
-<appliedenergistics2:part:41>,
-<appliedenergistics2:part:42>,
-<appliedenergistics2:part:43>,
-<appliedenergistics2:part:44>,
-<appliedenergistics2:part:45>,
-<appliedenergistics2:part:46>,
-<appliedenergistics2:part:47>,
-<appliedenergistics2:part:48>,
-<appliedenergistics2:part:49>,
-<appliedenergistics2:part:50>,
-<appliedenergistics2:part:51>,
-<appliedenergistics2:part:52>,
-<appliedenergistics2:part:53>,
-<appliedenergistics2:part:54>,
-<appliedenergistics2:part:55>
+	<appliedenergistics2:part:40>,
+	<appliedenergistics2:part:41>,
+	<appliedenergistics2:part:42>,
+	<appliedenergistics2:part:43>,
+	<appliedenergistics2:part:44>,
+	<appliedenergistics2:part:45>,
+	<appliedenergistics2:part:46>,
+	<appliedenergistics2:part:47>,
+	<appliedenergistics2:part:48>,
+	<appliedenergistics2:part:49>,
+	<appliedenergistics2:part:50>,
+	<appliedenergistics2:part:51>,
+	<appliedenergistics2:part:52>,
+	<appliedenergistics2:part:53>,
+	<appliedenergistics2:part:54>,
+	<appliedenergistics2:part:55>
 ] as IItemStack[];
 
 for i, cable in colored_SmartCable {
@@ -338,22 +338,22 @@ assembler.recipeBuilder()
     .buildAndRegister();
 //Dense Smart Cable
 var colored_DenseSmartCable = [
-<appliedenergistics2:part:60>,
-<appliedenergistics2:part:61>,
-<appliedenergistics2:part:62>,
-<appliedenergistics2:part:63>,
-<appliedenergistics2:part:64>,
-<appliedenergistics2:part:65>,
-<appliedenergistics2:part:66>,
-<appliedenergistics2:part:67>,
-<appliedenergistics2:part:68>,
-<appliedenergistics2:part:69>,
-<appliedenergistics2:part:70>,
-<appliedenergistics2:part:71>,
-<appliedenergistics2:part:72>,
-<appliedenergistics2:part:73>,
-<appliedenergistics2:part:74>,
-<appliedenergistics2:part:75>
+	<appliedenergistics2:part:60>,
+	<appliedenergistics2:part:61>,
+	<appliedenergistics2:part:62>,
+	<appliedenergistics2:part:63>,
+	<appliedenergistics2:part:64>,
+	<appliedenergistics2:part:65>,
+	<appliedenergistics2:part:66>,
+	<appliedenergistics2:part:67>,
+	<appliedenergistics2:part:68>,
+	<appliedenergistics2:part:69>,
+	<appliedenergistics2:part:70>,
+	<appliedenergistics2:part:71>,
+	<appliedenergistics2:part:72>,
+	<appliedenergistics2:part:73>,
+	<appliedenergistics2:part:74>,
+	<appliedenergistics2:part:75>
 ] as IItemStack[];
 
 for i, cable in colored_DenseSmartCable {
@@ -387,22 +387,22 @@ assembler.recipeBuilder()
 
 //Dense Covered Cable
 var colored_DenseCoveredCable = [
-<appliedenergistics2:part:500>,
-<appliedenergistics2:part:501>,
-<appliedenergistics2:part:502>,
-<appliedenergistics2:part:503>,
-<appliedenergistics2:part:504>,
-<appliedenergistics2:part:505>,
-<appliedenergistics2:part:506>,
-<appliedenergistics2:part:507>,
-<appliedenergistics2:part:508>,
-<appliedenergistics2:part:509>,
-<appliedenergistics2:part:510>,
-<appliedenergistics2:part:511>,
-<appliedenergistics2:part:512>,
-<appliedenergistics2:part:513>,
-<appliedenergistics2:part:514>,
-<appliedenergistics2:part:515>
+	<appliedenergistics2:part:500>,
+	<appliedenergistics2:part:501>,
+	<appliedenergistics2:part:502>,
+	<appliedenergistics2:part:503>,
+	<appliedenergistics2:part:504>,
+	<appliedenergistics2:part:505>,
+	<appliedenergistics2:part:506>,
+	<appliedenergistics2:part:507>,
+	<appliedenergistics2:part:508>,
+	<appliedenergistics2:part:509>,
+	<appliedenergistics2:part:510>,
+	<appliedenergistics2:part:511>,
+	<appliedenergistics2:part:512>,
+	<appliedenergistics2:part:513>,
+	<appliedenergistics2:part:514>,
+	<appliedenergistics2:part:515>
 ] as IItemStack[];
 
 for i, cable in colored_DenseCoveredCable {
@@ -939,17 +939,17 @@ recipes.addShaped(<appliedenergistics2:part:380>, [
 //Терминал создания
 recipes.addShaped(<appliedenergistics2:part:360>, [
 	[<ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>.firstItem.withEmptyTag()],
-	[<ore:boltCertusQuartz>, <minecraft:crafting_table>, <ore:boltCertusQuartz>],
+	[<ore:stickCertusQuartz>, <ore:workbench>, <ore:stickCertusQuartz>],
 	[<ore:plateNetherQuartz>, <appliedenergistics2:material:24>, <ore:plateNetherQuartz>]]);
 //Терминал интерфейстов
 recipes.addShaped(<appliedenergistics2:part:480>, [
 	[<ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>.firstItem.withEmptyTag()],
-	[<ore:boltCertusQuartz>, <appliedenergistics2:part:440>, <ore:boltCertusQuartz>],
+	[<ore:stickCertusQuartz>, <appliedenergistics2:part:440>, <ore:stickCertusQuartz>],
 	[<ore:plateNetherQuartz>, <appliedenergistics2:material:24>, <ore:plateNetherQuartz>]]);
 //Терминал шаблонов
 recipes.addShaped(<appliedenergistics2:part:340>, [
 	[<ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>.firstItem.withEmptyTag()],
-	[<ore:boltCertusQuartz>, <appliedenergistics2:material:52>, <ore:boltCertusQuartz>],
+	[<ore:stickCertusQuartz>, <appliedenergistics2:material:52>, <ore:stickCertusQuartz>],
 	[<ore:plateNetherQuartz>, <appliedenergistics2:material:24>, <ore:plateNetherQuartz>]]);
 //Беспроводной терминал
 recipes.addShaped(<appliedenergistics2:wireless_terminal>, [

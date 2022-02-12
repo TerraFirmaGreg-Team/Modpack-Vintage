@@ -180,7 +180,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftplanets:venus:12>,
 	<galacticraftplanets:asteroids_block:6>,
 	<galacticraftplanets:treasure_t2>,
-	<galacticraftcore:magnetic_table>
+	<galacticraftcore:magnetic_table>,
+	<galacticraftcore:rocket_workbench>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);

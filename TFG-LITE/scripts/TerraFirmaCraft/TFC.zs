@@ -298,6 +298,7 @@ recipes.removeByRecipeName("tfc:vanilla/redstone/hopper");
 recipes.removeByRecipeName("tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate");
 recipes.removeByRecipeName("tfc:vanilla/rail/steel_minecraft");
 recipes.removeByRecipeName("tfc:vanilla/rail/minecraft");
+recipes.removeByRecipeName("tfc:vanilla/lapis_lazuli_block");
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
@@ -767,6 +768,27 @@ recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:crafting
 //Фикс крафта ступка+кремний=гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
+
+// Рецепты теплой воды
+fluid_heater.recipeBuilder()
+	.fluidInputs(<liquid:fresh_water> * 100)
+	.fluidOutputs(<liquid:hot_water> * 100)
+	.duration(600).EUt(2).buildAndRegister();
+fluid_heater.recipeBuilder()
+	.fluidInputs(<liquid:water> * 100)
+	.fluidOutputs(<liquid:hot_water> * 100)
+	.duration(600).EUt(2).buildAndRegister();
+
+// Рецепты свежей воды
+vacuum_freezer.recipeBuilder()
+	.fluidInputs(<liquid:hot_water> * 100)
+	.fluidOutputs(<liquid:fresh_water> * 100)
+	.duration(1000).EUt(128).buildAndRegister();
+centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:water> * 100)
+	.circuit(5)
+	.fluidOutputs(<liquid:fresh_water> * 100)
+	.duration(750).EUt(32).buildAndRegister();
 
 //Фикс ведер
 Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);

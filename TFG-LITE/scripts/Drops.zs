@@ -1,10 +1,11 @@
 import mods.dropt.Dropt;
 
 //Фикс луж
+/*
 Dropt.list("Puddles_Fix").add(Dropt.rule()
   .matchDrops([<puddles:puddle>])
   .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop()));
+  .addDrop(Dropt.drop()));*/
 
 //Urns TODO
 Dropt.list("Urn_disables").add(Dropt.rule()

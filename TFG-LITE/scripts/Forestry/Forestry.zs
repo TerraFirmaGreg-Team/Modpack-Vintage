@@ -203,6 +203,8 @@ recipes.removeByRecipeName("forestry:greenhouse_heater");
 recipes.removeByRecipeName("forestry:greenhouse_dehumidifier");
 recipes.removeByRecipeName("forestry:greenhouse_humidifier");
 
+// WTF Furnace Recipes
+furnace.remove(<minecraft:coal:1>);
 
 //Создание рецептов
 // --- Bee Comb Compressing
