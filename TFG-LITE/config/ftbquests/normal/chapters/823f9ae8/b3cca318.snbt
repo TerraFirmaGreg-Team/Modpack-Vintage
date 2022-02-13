@@ -8,26 +8,17 @@
 		"c8b0cb86"
 	],
 	tasks: [{
-		uid: "deab7d56",
+		uid: "8e28ebd8",
 		type: "item",
 		items: [{
-			id: "tfc:metal/pick/bismuth_bronze",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+			id: "gregtech:meta_tool",
+			Damage: 1s,
+			tag: {
+				GT.ToolStats: {
+					Material: "bismuth_bronze"
 				}
 			}
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}]
 }
