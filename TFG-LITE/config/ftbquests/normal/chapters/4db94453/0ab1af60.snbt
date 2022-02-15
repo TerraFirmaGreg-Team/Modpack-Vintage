@@ -11,6 +11,8 @@
 		items: [{
 			id: "appliedenergistics2:energy_cell",
 			tag: {}
-		}]
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

@@ -827,7 +827,7 @@ recipes.addShaped(<appliedenergistics2:dense_energy_cell>, [
 //Сундук
 recipes.addShaped(<appliedenergistics2:chest>, [
 	[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>],
-	[<appliedenergistics2:part:16>, <gregtech:machine:803>, <appliedenergistics2:part:16>],
+	[<appliedenergistics2:part:16>, <metaitem:super_chest.mv>, <appliedenergistics2:part:16>],
 	[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>]]);
 //Дисковод :D
 recipes.addShaped(<appliedenergistics2:drive>, [
@@ -1048,7 +1048,7 @@ recipes.addShaped("network_biometric_card", <appliedenergistics2:biometric_card>
 ]);
 //Жидкостный терминал
 recipes.addShaped(<appliedenergistics2:part:520>, [
-	[<ore:stickCertusQuartz>, <ore:screwCobalt>, <ore:stickCertusQuartz>],
+	[<ore:stickCertusQuartz>, <ore:screwApatite>, <ore:stickCertusQuartz>],
 	[<appliedenergistics2:part:180>, <ore:circuitGood>, <ore:plateNetherQuartz>],
 	[<ore:stickCertusQuartz>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:stickCertusQuartz>]]);
 //Ячейка видимости
