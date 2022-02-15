@@ -1,12 +1,11 @@
 {
-	title: "Large Cells",
+	title: "{tfg.quests.mv.largecells.title}",
 	icon: "gregtech:meta_item_1 1 81",
 	x: 2.0d,
 	y: -6.0d,
+	description: "{tfg.quests.mv.largecells.subtitle}",
 	text: [
-		"Aluminium Cells, a big upgrade over the Steel Cells or Universal Fluid Cells.",
-		"",
-		"They can hold any fraction of Fluid, up to §d32 buckets§r."
+		"{tfg.quests.mv.largecells.desc1}"
 	],
 	dependencies: [
 		"57b1a5d7"

@@ -1,5 +1,5 @@
 {
-	title: "The Church of Benzene",
+	title: "{tfg.quests.mv.benzene.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -9,20 +9,19 @@
 	},
 	x: 4.0d,
 	y: -12.0d,
+	description: "{tfg.quests.mv.benzene.subtitle}",
 	text: [
-		"§oBenzene causes leukemia even at low concentrations.§r",
+		"{tfg.quests.mv.benzene.desc1}",
 		"",
-		"§aBenzene§r is also a §9Gas Fuel§r. I will present you only the two best ways to obtain it.",
+		"tfg.quests.mv.benzene.desc2}",
 		"",
-		"This Power option is typically §dWood based§r. Put Logs in the §3Pyrolyse Oven§r for §9Wood Tar§r, and the Charcoal you obtained in §3Extractors§r for more §9Wood Tar§r, which you §3distill§r for §aBenzene§r.",
+		"tfg.quests.mv.benzene.desc4}",
 		"",
-		"This Power option can also be §dHeavy Oil based§r. Put Heavy Oil in a §3Distillery§r for §9Heavy Fuel§r, which you §aseverely steam-crack§r and §3distill§r it again for §aBenzene§r.",
-		"For information on how to process Oil, check the Light Fuel Quests.",
+		"tfg.quests.mv.benzene.desc5}",
 		"",
-		"In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.",
+		"tfg.quests.mv.benzene.desc6}",
 		"",
-		"",
-		"§aBenzene§r is burned in a §3Gas Turbine§r. This power source starts weaker than its §eDiesel§r cousin, but gets a big boost when refined to §6Nitrobenzene§r in §6HV§r Age. Ultimately, your power source is your choice."
+		"tfg.quests.mv.benzene.desc7}"
 	],
 	dependencies: [
 		"65405836"

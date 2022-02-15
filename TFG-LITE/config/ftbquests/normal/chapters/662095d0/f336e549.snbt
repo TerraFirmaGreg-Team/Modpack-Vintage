@@ -1,7 +1,7 @@
 {
 	title: "Pattern",
 	icon: "appliedenergistics2:material 1 52",
-	x: 14.0d,
+	x: 15.0d,
 	y: -14.0d,
 	text: [
 		"§oAutocrafting at last!§r",

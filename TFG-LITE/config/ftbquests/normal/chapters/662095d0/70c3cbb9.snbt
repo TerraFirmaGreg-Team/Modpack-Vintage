@@ -1,5 +1,5 @@
 {
-	title: "The Church of Diesel",
+	title: "{tfg.quests.mv.diesel.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -9,23 +9,21 @@
 	},
 	x: 4.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.diesel.subtitle}",
 	text: [
-		"§oI was scared of having to explain in details on how to make Diesel, but thankfully you already made Light Fuel... phew.§r",
+		"{tfg.quests.mv.diesel.desc1}",
 		"",
-		"§aDiesel§r is a §9Combustion Fuel§r. It is §dOil based§r.",
+		"{tfg.quests.mv.diesel.desc2}",
+		"{tfg.quests.mv.diesel.desc3}",
+		"{tfg.quests.mv.diesel.desc4}",
 		"",
-		"To mix §aLight Fuel§r and §aHeavy Fuel§r, the right ratio for §3Distilleries§r is §63:2§r from §dOil§r or §dRaw Oil§r.",
-		"3 Distilleries for Light Fuel.",
-		"2 Distilleries for Heavy Fuel.",
+		"{tfg.quests.mv.diesel.desc5}",
+		"{tfg.quests.mv.diesel.desc6}",
 		"",
-		"You may cut the amount of §dOil§r §6drastically§r by using §dHeavy Oil§r for §aHeavy Fuel§r specifically.",
-		"(For the math nerds, you go from 8.33 Oil -> 6 Diesel, to 5 Oil + 0.4 Heavy Oil -> 6 Diesel) ",
+		"{tfg.quests.mv.diesel.desc7}",
+		"{tfg.quests.mv.diesel.desc8}",
 		"",
-		"§cNote: Do §cnot attempt§r to put Oil in the §3Distillation Tower§r, thinking it's a good idea because it gives both Light Fuel and Heavy Fuel. This requires a lot of overclocking and you will lose more energy than what the byproducts are worth.",
-		"In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.",
-		"",
-		"",
-		"§aDiesel§r is burned in a §3Combustion Generator§r. It can be further refined to §6Cetane-Boosted Diesel§r in §6HV§r Age. Compared to the other power sources, it is generally more efficient, but more demanding. If you take the §eOil§r route for §aPolyethylene§r, this can work great with existing infrastructure. Ultimately, your power source is your choice."
+		"{tfg.quests.mv.diesel.desc9}"
 	],
 	dependencies: [
 		"d4f362aa"

@@ -1,13 +1,12 @@
 {
-	title: "I believe I can fly 2",
+	title: "{tfg.quests.mv.believe2.title}",
 	x: 12.0d,
-	y: -10.0d,
+	y: -8.0d,
+	description: "{tfg.quests.mv.believe2.subtitle}",
 	text: [
-		"This jetpack enables flight, and requires energy. §oWhat do you mean a jetpack is supposed to work off propellants?§r",
+		"{tfg.quests.mv.believe2.desc1}",
 		"",
-		"Charge it like you would charge a Battery.",
-		"",
-		"Press §4H§r (default) to enable Hover Mode."
+		"{tfg.quests.mv.believe2.desc2}"
 	],
 	dependencies: [
 		"76dc4691"

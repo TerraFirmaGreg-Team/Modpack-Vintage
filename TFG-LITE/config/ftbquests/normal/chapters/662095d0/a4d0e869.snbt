@@ -1,10 +1,11 @@
 {
-	title: "More MV Circuits",
+	title: "{tfg.quests.mv.MV.title}",
 	icon: "gregtech:meta_item_1 1 624",
-	x: 14.0d,
-	y: -3.0d,
+	x: 15.0d,
+	y: -1.5d,
+	description: "{tfg.quests.mv.MV.subtitle}",
 	text: [
-		"The MV Circuit for the Integrated Tier."
+		""
 	],
 	dependencies: [
 		"d853a3be"

@@ -16,8 +16,10 @@
 	],
 	dependencies: [
 		"02bbdea3",
-		"f517b2ba"
+		"f517b2ba",
+		"65405836"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "b7fa8634",
 		type: "item",

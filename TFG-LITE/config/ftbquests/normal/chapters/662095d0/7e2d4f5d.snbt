@@ -1,19 +1,18 @@
 {
-	title: "Transformers",
-	x: 2.0d,
-	y: -3.0d,
+	title: "{tfg.quests.mv.transformers.title}",
+	x: 10.0d,
+	y: -8.0d,
+	description: "{tfg.quests.mv.transformers.subtitle}",
 	text: [
-		"§3Transformers§r allow you to step up and down Voltage tiers safely. Transformers change the power they receive into an equivalent amount of power 1 voltage tier above or below the input voltage.",
+		"{tfg.quests.mv.transformers.desc1}",
 		"",
-		"Apart from running machines on different voltage tiers, Transformers are useful for transporting power across longer distances. Cable loss has less of an effect at higher voltages.",
+		"{tfg.quests.mv.transformers.desc2}",
 		"",
-		"Transformers have 5 low voltage sides, and 1 high voltage side.",
+		"{tfg.quests.mv.transformers.desc3}",
 		"",
-		"The §9normal§r Transformer can only do 1A <-> 4A conversion, but §9Adjustable§r Transformers can be changed between 1A <-> 4A, 2A <-> 8A, 4A <-> 16A, and 16A <-> 64A conversions. ",
+		"{tfg.quests.mv.transformers.desc4}",
 		"",
-		"Use a §aSoft Hammer§r to change between transform up and down, and a §aScrewdriver§r on Adjustable Transformers to change the amperage.",
-		"",
-		"Higher tier Transformers require §9Coils§r."
+		"{tfg.quests.mv.transformers.desc5}"
 	],
 	dependencies: [
 		"d723748f"

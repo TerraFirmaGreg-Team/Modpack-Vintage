@@ -3,6 +3,7 @@
 ########################################################## Primitive Phase #######################################################
 ############################################################## 823f9ae8   ########################################################
 ##################################################################################################################################
+
 tfg.quests.primitive.era.title=&dEra 1 - Primitive
 
 tfg.quests.primitive.start.title=Start
@@ -332,6 +333,7 @@ tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much fas
 ########################################################## Steam Phase ###########################################################
 ############################################################ d423fb3e ############################################################
 ##################################################################################################################################
+
 tfg.quests.steam.era.title=&dEra 2 - Steam
 
 tfg.quests.steam.maincheck.title=Let's start the steam era!
@@ -414,6 +416,7 @@ tfg.quests.steam.mininghammer.subtitle=&aHammer digging 3x3.
 ########################################################## LV Phase ##############################################################
 ########################################################## 546c571d   ############################################################
 ##################################################################################################################################
+
 tfg.quests.lv.era.title=&dEra 3 - Electricity LV
 
 tfg.quests.lv.200iq.title=200IQ
@@ -864,28 +867,339 @@ tfg.quests.lv.macerator.desc3=Remember the thing about Macerator I told you that
 tfg.quests.lv.macerator.desc4=§6The Macerator will unlock its second and third slot at HV§r. And this will be great for Ore Processing. In fact if you check the Ore Processing JEI page, you will see that one byproduct is absolutely locked by this, after the Thermal Centrifuge step.
 tfg.quests.lv.macerator.desc5=Note:§r Unlike in GTCE, the §bMV§r Macerator in GTCEu does §cnot§r have a second slot!
 tfg.quests.lv.macerator.desc6=§5Writer:§r §oCome back to me when you are stronger, young Padawan.§r
+
 ##################################################################################################################################
 ########################################################## MV Phase ##############################################################
 ########################################################## 662095d0   ############################################################
 ##################################################################################################################################
+
 tfg.quests.mv.era.title=&dEra 4 - Electricity MV
+
+tfg.quests.mv.advelectrolyzer.title=Advanced Electrolyzer
+tfg.quests.mv.advelectrolyzer.subtitle=§oRemember the Ore Processing Quest referencing the Electrolyzer? It told you that you had to wait until MV, so here we are.§r
+tfg.quests.mv.advelectrolyzer.desc1=The Advanced Electrolyzer allows you to decompose §6all§r Dusts. This will make getting materials such as §aAluminium§o§§ a lot easier!
+
+tfg.quests.mv.200IQ.title=200IQ
+tfg.quests.mv.200IQ.subtitle=§oThis quest acts as a small tutorial to automate the Electrolyzer easily!§r
+tfg.quests.mv.200IQ.desc1=The §9Smart Item Filter§r is a filter based on Recipe Maps. Placed on the side of a machine, this Filter can be selected to §3Electrolyzer§r to allow insertion of electrolyzable Items specifically.
+tfg.quests.mv.200IQ.desc2=To circumvent the machine getting stuck with not enough inputs, place a §cRobot Arm with a Smart Item Filter§r on your §3Electrolyzer§r. Configure it to §d§lImport§r and §d§lSupply Exact§r. Now, attach any inventory (a chest will do) on the side where you placed the Robot Arm, and TADAA! You have made automatic smart insertion to handle all Electrolyzer recipes!
+tfg.quests.mv.200IQ.desc3=§9Note:§r The Robot Arm has to do Item transfer itself for its functionality to work! Inserting directly into the machine will ignore the Robot Arm's §dSupply Exact§r.
+tfg.quests.mv.200IQ.desc4=Now, as for the output of the Electrolyzer, you may want to route the Fluids to several Tanks, or even §3Super Tanks§r. I highly recommend §cto not void§r the Fluids, except for Water for obvious reasons.
+
+tfg.quests.mv.balanced.title=A Balanced Quest
+tfg.quests.mv.balanced.subtitle=Clay is an extremely §mbalanced§r useful material for electrolysis.
+tfg.quests.mv.balanced.desc1=All four output Dusts are great.
+tfg.quests.mv.balanced.desc2=You will need §a§ra total of §a416 Clay Dust§r for this quest. You may also want to look into other sources of similar materials, such as §aSodalite§r. Check JEI for some ideas.
+tfg.quests.mv.balanced.desc3=You should use Sodium and/or Lithium to make some §6MV Batteries§r.
+tfg.quests.mv.balanced.desc4=All this useless §dWater§r you are getting... Voiding Covers are soon to be implemented in GTCEu.
+
+tfg.quests.mv.components.title=MV Components
+tfg.quests.mv.components.subtitle=§oDid you hate crafting the components in the previous tier? They're back, and stronger!§r
+tfg.quests.mv.components.desc1=Here is a list of the components you will need in the §bMV§r Age. To alleviate the pain, be sure to autocraft or §dbulk-craft§r these parts, especially §aMotors§r.
+tfg.quests.mv.components.desc2=Note the appearance of the §aEmitter§r? This one requires a §dFlawless Emerald§r which will be only attainable with the §3Sifting Machine§r for now.
+tfg.quests.mv.components.desc3=Conveyors, Pumps and Robot Arms are upgrades to §7LV§r versions if you use them as covers.
+
+tfg.quests.mv.power.title=Actual MV Power Generation
+tfg.quests.mv.power.subtitle=Higher-tier Generators will increase their fuel consumption proportionally to their Generation rate, keeping the duration of fuels and the specific amount of energy from fuels the same. The §3Advanced Steam Turbine§r will use §d5,120 mB Steam§r per second, equivalent to §d256 mB/t§r.
+tfg.quests.mv.power.desc1=Get §eany§r of the generators to complete this quest, but you may prefer starting off with the §3Advanced Steam Turbine§r.
+tfg.quests.mv.power.desc2=There are a few new power options available for the §9§bMV§r age. Selecting the Generators and pressing §4U§r will let you see which fuels count as §aCombustion§r or §aGas§r.
+tfg.quests.mv.power.desc3=Quests in the top left corner of this Chapter are for the valuable Power options.
+tfg.quests.mv.power.desc4=If you stick to §9Steam§r Power generation, you will probably need a §3Large Boiler§r.
+
+tfg.quests.mv.voltage.title=Voltage and more Energy Concepts
+tfg.quests.mv.voltage.subtitle=§oThe concepts presented are for the curious players. Don't read past the TL;DR if you are not interested.§r
+tfg.quests.mv.voltage.desc1=§6§lTL;DR:§r For safety, match the §2Voltage§r for every Consumer and Producer, unless you like §cfireworks§r...
+tfg.quests.mv.voltage.desc2=This Quest will go into the Energy mechanics in more detail. If you have a basic understanding of electricity in §ereal life§r, the GTEU system is not too different! An even more in-depth walkthrough will be found on the GTCEu wiki in Github.
+tfg.quests.mv.voltage.desc3=The laws of physics:
+tfg.quests.mv.voltage.desc4=° §9Power§r = §2Voltage§r * §dAmperage§r
+tfg.quests.mv.voltage.desc5=° §1Energy§r = §9Power§r * §6Time§r
+tfg.quests.mv.voltage.desc6=§8Resistance§r is an excluded concept in GregTech, it is instead simulated partially with cable losses.
+tfg.quests.mv.voltage.desc7=The units:
+tfg.quests.mv.voltage.desc8=- §1EU§r is the §1Energy§r.
+tfg.quests.mv.voltage.desc9=- §9EU/t§r is the §9Power§r.
+tfg.quests.mv.voltage.desc10=- §dA§r or §dAmp§r is the §dAmperage§r.
+tfg.quests.mv.voltage.desc11=- §2V§r would be the §2Voltage§r, but we prefer referring to it as §7LV§r, §bMV§r, §6HV§r... as those are the relevant values for gameplay (technically: §7LV§r = 32V = 32EU/t/A).
+tfg.quests.mv.voltage.desc12=Here comes the §4dangerous§r part:
+tfg.quests.mv.voltage.desc13=§9-§r §aCables§r and §aWires§r which receive §2higher Voltage§r than their rating will §cburn§r, in additions to burning from too many §dAmps§r.
+tfg.quests.mv.voltage.desc14=§9-§r §3Machines§r which receive §2higher Voltage§r than their Tier will §cexplode§r! Extra §dAmps§r are not affecting them, as they consume only what they need.
+tfg.quests.mv.voltage.desc15=Every §6tick§r, §1EU§r §apackets§r are being attempted to be transferred from Energy Producers to Consumers. These §apackets§r have two parameters: §2Voltage§r determined by the tier of the Producer, and §dAmperage§r. This determines how much §9Power§r can actually be transferred. There are no partial Amps, and Energy is transferred only if the full Amp §apacket§r can be received.
+tfg.quests.mv.voltage.desc16=In summary, Energy is transported in §apackets§r of §132EU§r for §7LV§r, §1128EU§r for §bMV§r... Energy that is actually received can be lower with cable loss.
+tfg.quests.mv.voltage.desc17=Machine Energy Input is limited by §2Voltage§r (too high and boom!), and by §dAmperage§r. Thus, a §bMV§r Machine with §d2A§r Input connected to a §7LV§r line will never accept more than §964EU/t§r.
+tfg.quests.mv.voltage.desc18=It is still possible to run §bMV§r Machines on §7LV§r lines, but only if the recipes are low enough §9Power§r, or if you have a §3MV Battery§r in the charging slot. The machine will only accept §d1A§r when idle, and so the §3Battery§r will recharge only at §932EU/t§r.
+
+tfg.quests.mv.overclocking.title=Overclocking
+tfg.quests.mv.overclocking.subtitle=§oNow you might wonder, why is every machine duplicated across all tiers? Because you might want them for overclocking.§r
+tfg.quests.mv.overclocking.desc1=Overclocking is a mechanic that happens when you try to run a recipe in a machine §dthat is higher tier than the recipe itself.§r
+tfg.quests.mv.overclocking.desc2=Each tier above the recipe tier allows one overclock. Each overclock implies:
+tfg.quests.mv.overclocking.desc3=§9-§r 2x recipe speed
+tfg.quests.mv.overclocking.desc4=§9-§r 4x power consumption
+tfg.quests.mv.overclocking.desc5=§9->§r 2x total energy cost
+tfg.quests.mv.overclocking.desc6=As you can see there are upsides and downsides. It is a game of balancing decisions: if you want to cut time duration at the cost of greater consumption.
+tfg.quests.mv.overclocking.desc7=You and only you can answer this question.
+tfg.quests.mv.overclocking.desc8=§9However I will tell you this:§r for automated setups, overclock as little as possible!
+tfg.quests.mv.overclocking.desc9=Machines have a button to set the maximum voltage tier it will Overclock to. Click on it to cycle through all the available Voltages, and set it on §dX§r to disable Overclocking.
+
+tfg.quests.mv.transformers.title=Transformers
+tfg.quests.mv.transformers.subtitle=§3Transformers§r allow you to step up and down Voltage tiers safely. Transformers change the power they receive into an equivalent amount of power 1 voltage tier above or below the input voltage.
+tfg.quests.mv.transformers.desc1=Apart from running machines on different voltage tiers, Transformers are useful for transporting power across longer distances. Cable loss has less of an effect at higher voltages.
+tfg.quests.mv.transformers.desc2=Transformers have 5 low voltage sides, and 1 high voltage side.
+tfg.quests.mv.transformers.desc3=The §9normal§r Transformer can only do 1A <-> 4A conversion, but §9Adjustable§r Transformers can be changed between 1A <-> 4A, 2A <-> 8A, 4A <-> 16A, and 16A <-> 64A conversions. 
+tfg.quests.mv.transformers.desc4=Use a §aSoft Hammer§r to change between transform up and down, and a §aScrewdriver§r on Adjustable Transformers to change the amperage.
+tfg.quests.mv.transformers.desc5=Higher tier Transformers require §9Coils§r.
+
+tfg.quests.mv.advextruder.title=Advanced Extruder
+tfg.quests.mv.advextruder.subtitle=§oI hope at no point you made the LV Extruder, because only the MV Extruder is actually useful. If you did, I suggest you recycle it through the Arc Furnace.§r
+tfg.quests.mv.advextruder.desc1=The Extruder shapes solid materials into (almost!) any form using §aIngots§r. This is a great way to reduce the amount of microcrafting, as well as keeping a high conversion ratio.
+tfg.quests.mv.advextruder.desc2=The Extruder can make §6Bolts§r, §6§6Small Gears§r, §6Gears§r, and §6§6Rings§r at the highest efficiency in a single step!
+tfg.quests.mv.advextruder.desc3=You may also like to use it for §dPipes§r, §dLong Rods§r, and §dRotors§r.
+
+tfg.quests.mv.largecells.title=Large Cells
+tfg.quests.mv.largecells.subtitle=Aluminium Cells, a big upgrade over the Steel Cells or Universal Fluid Cells.
+tfg.quests.mv.largecells.desc1=They can hold any fraction of Fluid, up to §d32 buckets§r.
+
+tfg.quests.mv.advmixer.title=Advanced Mixer
+tfg.quests.mv.advmixer.subtitle=§oMore complex Alloys require higher Tier machines to mix the Dusts together.§r
+tfg.quests.mv.advmixer.desc1=This is the first step to dive deeper in the MV Age.
+
+tfg.quests.mv.steelalloys.title=Steel Alloys
+tfg.quests.mv.steelalloys.subtitle=§oSteel can form a lot of Alloys... such as Blue Steel, Red Steel, Black Steel... Fun names?§r
+tfg.quests.mv.steelalloys.desc1=Vanadiumsteel is required in small quantities in progression. It is §6nearly four time as durable§r as Steel for GregTech tools. The Vanadium comes from §aVanadium Magnetite§r, which you have probably encountered in Magnetite veins.
+tfg.quests.mv.steelalloys.desc2=Take some Blue Steel free of charge, that one is twice as durable as Steel.
+
+tfg.quests.mv.advcutting.title=Advanced Cutting Machine
+tfg.quests.mv.advcutting.subtitle=§oMore upgrades...! §r
+tfg.quests.mv.advcutting.desc1=The §bMV§  §3Cutting Machine§r is required to cut §7Silicon Boules§r to prepare them for §aLaser Engraving§r.
+tfg.quests.mv.advcutting.desc2=I recommend you run this machine with §dLubricant§r, to cut down on the processing time.
+tfg.quests.mv.advcutting.desc3=Lubricant can be §3brewed§r from an Oil and §aTalc§r, §2Soapstone§r or §cRedstone§r.
+
+tfg.quests.mv.ULV.title=Best ULV Circuits
+tfg.quests.mv.ULV.subtitle=You can engrave §9Simple Systems on Chip (SoC)§r to make the cheapest §8ULV§r circuits, as well as §b1k Fluid Storage§r in §5EV§r Age.
+tfg.quests.mv.ULV.desc1=§8ULV§r circuits are used in some AE2 recipes, such as the §aAnnihilation Core§r and §aFormation Core§r.
+
+tfg.quests.mv.LV.title=More LV Circuits
+tfg.quests.mv.LV.subtitle=You have unlocked a new Tier of Circuits!
+tfg.quests.mv.LV.desc1=The Integrated Logic Circuit is an alternate §aLV Circuit§r, which can be upgraded to §aMV§r, and then §aHV§r.
+tfg.quests.mv.LV.desc2=§9Note:§r This is not a strict upgrade to the cost of Circuits, you would need to get to the next Tier for that, just slightly further down in the MV Age. Why would you need this Circuit type then? You need it to get to §6HV circuits§r.
+
+tfg.quests.mv.laserengraving.title=Laser Engraving
+tfg.quests.mv.laserengraving.subtitle=The §aLaser Engraver§r engraves patterns into §9Silicon Wafers§r based on the type of §9Lens§r it is given. After the wafers are engraved, they must be passed through a §9Cutting Machine§r to turn them into components ready to be put into Circuits. Higher tier Engravers can etch more complex wafers for more efficient Circuits.
+tfg.quests.mv.laserengraving.desc1=For now, the §aIntegrated Logic Circuit§r will be the one of interest, but the others will become important for higher tier Circuits.
+
+tfg.quests.mv.siliconlottery.title=Silicon Lottery
+tfg.quests.mv.siliconlottery.subtitle=§oJust kidding, Silicon Wafers in this mod are perfectly fungible.§r
+tfg.quests.mv.siliconlottery.desc1=§9Silicon Boules§r are made in the §3EBF§r with lots of §aSilicon Dust§r and a small amount of §aGallium Arsenide§r.
+tfg.quests.mv.siliconlottery.desc2=After making the Boule, cut it in the §3Cutting Machine§r to get 16 Silicon Wafers ready for engraving.
+tfg.quests.mv.siliconlottery.desc3=The best §aSilicon§r source at this point shall be either §dGlass Dust§r, or §dSodalite§r.
+tfg.quests.mv.siliconlottery.desc4=§cWarning:§r Each Silicon Boule takes 7.5 minutes to make at 120 EU/t, or 1,080,000 EU! If the EBF loses power midway, the recipe will start to §close progress§r. Be sure you have enough power before starting.
+
+tfg.quests.mv.MV.title=More MV Circuits
+tfg.quests.mv.MV.subtitle=The MV Circuit for the Integrated Tier.
+
+tfg.quests.mv.HV.title=First HV Circuits!
+tfg.quests.mv.HV.subtitle=§oAlright, technically HV Circuit and Stainless Steel means you can move to HV... but let's not rush things.§r
+tfg.quests.mv.HV.desc1=The first thing you should probably do is a §3MV Circuit Assembler§r, to unlock the new tier of Circuits right away, as they are the §dreal payoff§r.
+
+tfg.quests.mv.stainless.title=Stainless Steel
+tfg.quests.mv.stainless.subtitle=Stainless Steel is pretty much any Steel you may encounter in everyday's life. It is extremely resilient against corrosion.§r§r
+tfg.quests.mv.stainless.desc1=Stainless Steel is the material for §6HV§r components, like Aluminium for §bMV§r and Steel for §7LV§r. It is also used in the §6Distillation Tower§r.
+tfg.quests.mv.stainless.desc2=It requires §cChrome§r, obtained mainly from §cRuby§r, and §2Manganese§r, obtained from §2Pyrolusite§r and others in its vein.
+tfg.quests.mv.stainless.desc3=Smelting Stainless Steel requires §dHV Power§r, which I highly doubt you have at this point. Scaling Power Production is crucial!
+tfg.quests.mv.stainless.desc4=What I would §9recommend§r would be to get a second EBF going. They can share blocks, so that is only §a10 Cupronickel Coils§r instead of 16.
+tfg.quests.mv.stainless.desc5=Have one EBF run off MV, for Aluminium and any other recipes requiring MV Power, and one running off HV with §32 MV Energy Hatches§r.
+
+tfg.quests.mv.upgradeEBF.title=Upgrade your EBF
+tfg.quests.mv.upgradeEBF.subtitle=§oA LV Battery Buffer and two LV Energy Hatches are not so convenient, let's remedy that!§r
+tfg.quests.mv.upgradeEBF.desc1=Upgrade your Electric Blast Furnace with a §3MV Energy Hatch§r, so you can run it off MV Generators.
+
+tfg.quests.mv.RAM.title=Download more RAM
+tfg.quests.mv.RAM.subtitle=§aRandom Access Memory§r is required for more advanced Electronic Components.
+
+tfg.quests.mv.advcircuitassembler.title=Advanced Circuit Assembler
+tfg.quests.mv.advcircuitassembler.subtitle=§oI'm running out of things to say for these quests... I hope you get the gist of it, and don't need too many explanations.§r
+tfg.quests.mv.advcircuitassembler.desc1=As for every Tier goes, the §3Circuit Assembler§r is an essential part of the Progression, to enable a new Tier of circuits.
+tfg.quests.mv.advcircuitassembler.desc2=At this point you should use an §3Extractor§r next to your Circuit Assembler and send off dozens of stacks of §aSoldering Alloy§r Ingots.
+
+tfg.quests.mv.bestMV.title=Best MV Circuits
+tfg.quests.mv.bestMV.subtitle=§6The best MV Circuits§r! You will be making these for the remainder of the game.
+tfg.quests.mv.bestMV.desc1=Eventually (in IV Age), they will become even cheaper.
+
+tfg.quests.mv.tricorder.title=Tricorder
+tfg.quests.mv.tricorder.subtitle=The §aPortable Scanner§r, or §aTricorder§r, is GTCEu's debug tool. It shows you a block's details, the details of the energy network, its current status and contents, and its load on your CPU. It also shows you the contents of fluid veins below Bedrock for Fluid Rigs.
+
+tfg.quests.mv.bestLV.title=Best LV Circuits
+tfg.quests.mv.bestLV.subtitle=§6The best LV Circuits§r! You will be making these for the remainder of the game.
+tfg.quests.mv.bestLV.desc1=Eventually (in EV Age), they will become even cheaper.
+
+tfg.quests.mv.inductors.title=Inductors
+tfg.quests.mv.inductors.subtitle=A Circuit Component, that you can now make thanks the §3MV Assembler§r.
+tfg.quests.mv.inductors.desc1=If you want to make them cheaper, you may smelt §aNickel-Zinc Ferrite§r.
+
+tfg.quests.mv.capacitors.title=Capacitors
+tfg.quests.mv.capacitors.subtitle=A Circuit Component, that you can now make thanks the §3MV Assembler§r.
+
+tfg.quests.mv.transistors.title=Transistors
+tfg.quests.mv.transistors.subtitle=A Circuit Component, that you can now make thanks the §3MV Assembler§r.
+
+tfg.quests.mv.advassembling.title=Advanced Assembling Machine
+tfg.quests.mv.advassembling.subtitle=The §3Assembling Machine§r is a staple for every Tier, an important goal to unlock more recipes and progress further into the Age.
+
+tfg.quests.mv.pyrolyseoven.title=Pyrolyse Oven
+tfg.quests.mv.pyrolyseoven.subtitle=§oThe Pyrolyse Oven processes organic products by thermal decomposition in an inert environment.§r
+tfg.quests.mv.pyrolyseoven.desc1=The §3Pyrolyse Oven§r is an electric equivalent of the §3Coke Oven§r. It can produce §9Coal Coke§r and §9Charcoal§r with a §9Creosote§r byproduct just as before, but also has additional §6Organic Byproducts§r. The most beneficial of these being §aWood Tar§r.
+tfg.quests.mv.pyrolyseoven.desc2=Another product is §aBiomass§r, which is more pertinent for progression §oright now§r.
+tfg.quests.mv.pyrolyseoven.desc3=Those byproducts can be Distilled for an array of organic resources, with different byproducts giving different ratios of different chemicals.
+tfg.quests.mv.pyrolyseoven.desc4=You will need to read the §9Distillation§r Quest to hopefully understand the full scale..
+tfg.quests.mv.pyrolyseoven.desc5=There are recipes that can accept §bNitrogen§r to double the speed. This is not quite worth right now.
+tfg.quests.mv.pyrolyseoven.desc6=You will be fine with just one §3LV Energy Hatch§r and Superconductors to supply a steady §d64 EU/t§r.
+tfg.quests.mv.pyrolyseoven.desc7=The §3Cupronickel Coils§r are more than enough to get started, but you may want to upgrade eventually.
+tfg.quests.mv.pyrolyseoven.desc8=§9§lNote:§r§l The Plant path is one path towards §9§lEthylene§r§l. The other path involves Oil.§r§r
+tfg.quests.mv.pyrolyseoven.desc9=The Pyrolyse Oven remains §doptional§r. But it is great to have either for Power, or for the various Byproducts.
+
+tfg.quests.mv.fluiddrillingrigs.title=Fluid Drilling Rigs
+tfg.quests.mv.fluiddrillingrigs.subtitle=§oFinally, Fluid Drilling Rigs in GTCEu!§r
+tfg.quests.mv.fluiddrillingrigs.desc1=It is quite an investment to get to run a §3Fluid Drilling Rig§r, but it is by far the most prominent §6source of Oil§r.
+tfg.quests.mv.fluiddrillingrigs.desc2=It pumps fluids from underneath Bedrock. Note that the fluids aren't actually there, instead they are simulated.
+tfg.quests.mv.fluiddrillingrigs.desc3=Fluid veins are stored within regions of §48x8 chunks§r. Each vein has a different fluid, but they are mostly types Oil.
+tfg.quests.mv.fluiddrillingrigs.desc4=You are not able to do prospection for fluid veins §oyet§r, this will come in the §6HV§r Age.
+tfg.quests.mv.fluiddrillingrigs.desc5=Each vein generates with a different base yield. This is typically between §d150L§r to §d300L per second§r.
+tfg.quests.mv.fluiddrillingrigs.desc6=When drained, fluid veins will slowly deplete. This will cause the fluid yield to decrease over time, until it reaches its depletion yield. At that point you should move the Rig to somewhere else.
+tfg.quests.mv.fluiddrillingrigs.desc7=A §3Basic Fluid Drilling Rig§r will last for 100,000 operations (with 1 second per operation) until depletion. This is enough for §6well over 10,000§r buckets of Oil. Higher tier Rigs will massively increase the yield, while also decreasing the depletion rate.
+tfg.quests.mv.fluiddrillingrigs.desc8=What you can find in the §2Overworld§r:
+tfg.quests.mv.fluiddrillingrigs.desc9=§9Oil:§r richer in §aLight Fuel§r, the most appreciated variant.
+tfg.quests.mv.fluiddrillingrigs.desc10=§9Light Oil:§r richer in §aRefinery Gas§r, usable for power.
+tfg.quests.mv.fluiddrillingrigs.desc11=§9Heavy Oil:§r richer in §aHeavy Fuel§r, which has uses that are more niche.
+tfg.quests.mv.fluiddrillingrigs.desc12=§9Raw Oil:§r essentially a less dense version of §aOil§r, the least appreciated.
+tfg.quests.mv.fluiddrillingrigs.desc13=§9Natural Gas:§r grants §aRefinery Gas§r with no distillation required.
+tfg.quests.mv.fluiddrillingrigs.desc14=§l§9Salt Water:§r grants §aSodium§r and §aChlorine§r, useful later.
+tfg.quests.mv.fluiddrillingrigs.desc15=§9Lava:§r you know what this is.
+tfg.quests.mv.fluiddrillingrigs.desc16=For starters you may have to tap randomly until you find something you like. Whatever you pump can be used to refuel your Fluid Rig.
+
+tfg.quests.mv.church.title=The Church of Natural Farts
+tfg.quests.mv.church.subtitle=§oLPG (Liquid Petroleum Gas) is a mix of hydrocarbons typically used in heating appliances.§r
+tfg.quests.mv.church.desc1=§aRefinery Gas§r, §aLPG§r and §aMethane§r are §9Gas Fuels§r.
+tfg.quests.mv.church.desc2=Refinery Gas is obtained either through §dNatural Gas§r or §dLight Oil§r, the latter yielding more yet requiring a distillation step.
+tfg.quests.mv.church.desc3=The §3Centrifuge§r step to separate into §aLPG§r and §aMethane§r should always be done, as it is extremely free.
+tfg.quests.mv.church.desc4=§a§aLPG§r and §aMethane§r are burned in a §3Gas Turbine§r. Among the other fuel options, they are the easier to set up which makes them excellent to get started. However they cannot be refined further.
+tfg.quests.mv.church.desc5=§aMethane§r can also be obtained from a few §anatural sources§r. Between you and me, they are memes, but you can explore them if you wish. Ultimately, your power source is your choice.
+
+tfg.quests.mv.americasimulator.title=America Simulator
+tfg.quests.mv.americasimulator.subtitle=The underground has pure Oilsands veins. You may §aelectrolyze§r the Dust to get §aOil§r.
+tfg.quests.mv.americasimulator.desc1=§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.
+tfg.quests.mv.americasimulator.desc2=This path is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.
+
+tfg.quests.mv.USsimulator.title=US Simulator
+tfg.quests.mv.USsimulator.subtitle=§oHave you seen the Oil spouts when wandering around, or mined into a deposit of Oil?§, 
+tfg.quests.mv.USsimulator.desc1=Get a Pump, place it above an Oil spout and Power it!§r Do §cnot§r pump above an Ocean, as currently there is a flaw in the pump logic, and it will attempt to pull water, resulting in getting the Pump stuck.
+tfg.quests.mv.USsimulator.desc2=I recommend you bring up a §3Battery Buffer§r, and a lot of §3Drums§r. A Super Tank would be better, but that's not quite available yet!
+tfg.quests.mv.USsimulator.desc3=Do not forget to §dchunkload§r with FTB:Utilities (claim the chunk with left-click, and enable force loading with shift-left-click).
+tfg.quests.mv.USsimulator.desc4=§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.
+tfg.quests.mv.USsimulator.desc5=This path is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.
+
+tfg.quests.mv.biomass.title=Biomass
+tfg.quests.mv.biomass.subtitle=§oTurning plant matter into fuel? That doesn't sound industrial enough!§r
+tfg.quests.mv.biomass.desc1=For this route, you will need §9plant matter§r.
+tfg.quests.mv.biomass.desc2=§aSaplings§r work fine in §3Brewery§r for a decent yield, but are slow.
+tfg.quests.mv.biomass.desc3=Othe§rrwise, you may go the §dPlantball§r into §dBio Chaff§r route, and then turn it into Biomass either in the §3Brewery§r or the §3Pyrolyse Oven§r, the latter being more efficient.
+tfg.quests.mv.biomass.desc4=§9Note:§r Only one Bio Chaff can be obtained from the maceration§r step until the §3HV Macerator§r.
+
+tfg.quests.mv.ethanol.title=Ethanol
+tfg.quests.mv.ethanol.subtitle=§oHey! That's Alcohol!§r
+tfg.quests.mv.ethanol.desc1=Put your previously made §aBiomass§r into a §3MV Distillery§r, to make §aEthanol§r.
+tfg.quests.mv.ethanol.desc2=You will need this for §dEthylene§r by reacting it with §aSulfuric Acid§r in a §3Chemical Reactor§r... unless you chose the Oil path.
+tfg.quests.mv.ethanol.desc3=Do not try to use Ethanol as a Power source... You may regret it.
+tfg.quests.mv.ethanol.desc4=If you want plant based §9Power§r, I suggest §dBenzene§r instead!
+
+tfg.quests.mv.multiple.title=Multiple Channel Pipes
+tfg.quests.mv.multiple.subtitle=Regular §o§dGregTech§r Fluid Pipes can only transport one fluid type at a time. But don't cave and install EnderIO yet!
+tfg.quests.mv.multiple.desc1=§3Quadruple Fluid Pipes§r can transfer four different types of fluids. §3Nonuple Fluid Pipes§r can transfer nine different types! Useful for compact setups.
+tfg.quests.mv.multiple.desc2=§3Nonuple Fluid Pipes§r will be useful in §5EV§r Age for handling the many §3Distillation Tower§r outputs.
+tfg.quests.mv.multiple.desc3=Get §eeither§r to finish this quest.
+
+tfg.quests.mv.believe2.title=I believe I can fly 2
+tfg.quests.mv.believe2.subtitle=This jetpack enables flight, and requires energy. §oWhat do you mean a jetpack is supposed to work off propellants?§r
+tfg.quests.mv.believe2.desc1=Charge it like you would charge a Battery.
+tfg.quests.mv.believe2.desc2=Press §4H§r (default) to enable Hover Mode.
+
+tfg.quests.mv.sulfuricacid.title=Sulfuric Acid
+tfg.quests.mv.sulfuricacid.subtitle=§oJEI will probably overwhelm you for this, so I'm presenting you the best path for Sulfuric Acid here.§r
+tfg.quests.mv.sulfuricacid.desc1=Making §eSulfuric Acid§r is a three step process. It is used in many important reactions, so you should automate its production soon.
+tfg.quests.mv.sulfuricacid.desc2=To automate it, you will need §3three LV Chemical Reactors§r. I would recommend building an isolated node somewhere with §3one LV Generator§r to power all three machines. And then spaghetti the pipes for input and output (... or simply use AE2).
+tfg.quests.mv.sulfuricacid.desc3=§9-§r Step 1: React §aSulfur§r with §bOxygen§r, to form §aSulfur Dioxide§r.
+tfg.quests.mv.sulfuricacid.desc4=§9-§r Step 2: React §aSulfur Dioxide§r with more §bOxygen§r, to form §aSulfur Trioxide§r.
+tfg.quests.mv.sulfuricacid.desc5=§9-§r Step 3: React §aSulfur Trioxide§r with §bWater§r, to form §eSulfuric Acid§r.
+tfg.quests.mv.sulfuricacid.desc6=Why am I not presenting these steps in the retrieval tasks...? So you don't have to make sure to submit every single one of them, that would be way too tedious if every quest were like that!
+
+tfg.quests.mv.brewery.title=Local Brewery selling Booze
+tfg.quests.mv.brewery.subtitle=The Brewery can be used to make §aLubricant§r from §aRedstone§r and §aCreosote§r/§aOil§r.
+tfg.quests.mv.brewery.desc1=Lubricant has its uses here and there, but is mostly for the §3Cutting Machine§r. That significantly reduces duration of recipes.
+tfg.quests.mv.brewery.desc2=§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.
+tfg.quests.mv.brewery.desc3=The Brewery makes §aBiomass§r, a path that is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.
+
+
+tfg.quests.mv.benzene.title=The Church of Benzene
+tfg.quests.mv.benzene.subtitle=§oBenzene causes leukemia even at low concentrations.§r
+tfg.quests.mv.benzene.desc1=§aBenzene§r is also a §9Gas Fuel§r. I will present you only the two best ways to obtain it.
+tfg.quests.mv.benzene.desc2=This Power option is typically §dWood based§r. Put Logs in the §3Pyrolyse Oven§r for §9Wood Tar§r, and the Charcoal you obtained in §3Extractors§r for more §9Wood Tar§r, which you §3distill§r for §aBenzene§r.
+tfg.quests.mv.benzene.desc4=This Power option can also be §dHeavy Oil based§r. Put Heavy Oil in a §3Distillery§r for §9Heavy Fuel§r, which you §aseverely steam-crack§r and §3distill§r it again for §aBenzene§r.
+tfg.quests.mv.benzene.desc5=For information on how to process Oil, check the Light Fuel Quests.
+tfg.quests.mv.benzene.desc6=In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.
+tfg.quests.mv.benzene.desc7=§aBenzene§r is burned in a §3Gas Turbine§r. This power source starts weaker than its §eDiesel§r cousin, but gets a big boost when refined to §6Nitrobenzene§r in §6HV§r Age. Ultimately, your power source is your choice.
+
+tfg.quests.mv.diesel.title=The Church of Diesel
+tfg.quests.mv.diesel.subtitle=§oI was scared of having to explain in details on how to make Diesel, but thankfully you already made Light Fuel... phew.§r
+tfg.quests.mv.diesel.desc1=§aDiesel§r is a §9Combustion Fuel§r. It is §dOil based§r.
+tfg.quests.mv.diesel.desc2=To mix §aLight Fuel§r and §aHeavy Fuel§r, the right ratio for §3Distilleries§r is §63:2§r from §dOil§r or §dRaw Oil§r.
+tfg.quests.mv.diesel.desc3=3 Distilleries for Light Fuel.
+tfg.quests.mv.diesel.desc4=2 Distilleries for Heavy Fuel.
+tfg.quests.mv.diesel.desc5=You may cut the amount of §dOil§r §6drastically§r by using §dHeavy Oil§r for §aHeavy Fuel§r specifically.
+tfg.quests.mv.diesel.desc6=(For the math nerds, you go from 8.33 Oil -> 6 Diesel, to 5 Oil + 0.4 Heavy Oil -> 6 Diesel) 
+tfg.quests.mv.diesel.desc7=§cNote: Do §cnot attempt§r to put Oil in the §3Distillation Tower§r, thinking it's a good idea because it gives both Light Fuel and Heavy Fuel. This requires a lot of overclocking and you will lose more energy than what the byproducts are worth.
+tfg.quests.mv.diesel.desc8=In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.
+tfg.quests.mv.diesel.desc9=§aDiesel§r is burned in a §3Combustion Generator§r. It can be further refined to §6Cetane-Boosted Diesel§r in §6HV§r Age. Compared to the other power sources, it is generally more efficient, but more demanding. If you take the §eOil§r route for §aPolyethylene§r, this can work great with existing infrastructure. Ultimately, your power source is your choice.
+
+tfg.quests.mv.benzene.title=
+tfg.quests.mv.benzene.subtitle=
+tfg.quests.mv.benzene.desc1=
+
+tfg.quests.mv.inductors.title=
+tfg.quests.mv.inductors.subtitle=
+tfg.quests.mv.inductors.desc1=
+
+tfg.quests.mv.benzene.title=
+tfg.quests.mv.benzene.subtitle=
+tfg.quests.mv.benzene.desc1=
+
+tfg.quests.mv.inductors.title=
+tfg.quests.mv.inductors.subtitle=
+tfg.quests.mv.inductors.desc1=
+
+tfg.quests.mv.benzene.title=
+tfg.quests.mv.benzene.subtitle=
+tfg.quests.mv.benzene.desc1=
+
+tfg.quests.mv.inductors.title=
+tfg.quests.mv.inductors.subtitle=
+tfg.quests.mv.inductors.desc1=
 
 ##################################################################################################################################
 ########################################################## HV Phase ##############################################################
 ########################################################## e5a309e3   ############################################################
 ##################################################################################################################################
+
 tfg.quests.hv.era.title=&dEra 5 - Electricity HV
 
 ##################################################################################################################################
 ########################################################## EV Phase ##############################################################
 ########################################################## 70d61cff   ############################################################
 ##################################################################################################################################
+
 tfg.quests.ev.era.title=&dEra 6 - Electricity EV
 
 ##################################################################################################################################
 ########################################################## AE2 Phase #############################################################
 ########################################################## 4db94453   ############################################################
 ##################################################################################################################################
+
 tfg.quests.ae2.era.title=&dEra 6.5 - Applied Energistics 2
 
 tfg.quests.ae2.certusquartz.subtitle=Shiny.
@@ -960,12 +1274,14 @@ tfg.quests.ae2.quantumring.subtitle=Interplanetary access to the system.
 ########################################################## IV Phase ##############################################################
 ########################################################## 24ffe56a   ############################################################
 ##################################################################################################################################
+
 tfg.quests.iv.era.title=&dEra 7 - Electricity IV
 
 ##################################################################################################################################
 ########################################################## Space Phase ###########################################################
 ########################################################### 34d1d182  ############################################################
 ##################################################################################################################################
+
 tfg.quests.space.era.title=&dEra 7.5 - Space
 
 tfg.quests.space.start.title=Let's hope there's xenos to purge.
@@ -1060,22 +1376,26 @@ tfg.quests.space.end1.subtitle=You won. Go home.
 ########################################################## LuV Phase #############################################################
 ########################################################## 7eb5e4bc   ############################################################
 ##################################################################################################################################
+
 tfg.quests.luv.era.title=&dEra 8 - Electricity LuV
 
 ##################################################################################################################################
 ########################################################## ZPM Phase #############################################################
 ########################################################## 549a0daf   ############################################################
 ##################################################################################################################################
+
 tfg.quests.zpm.era.title=&dEra 9 - Electricity ZPM
 
 ##################################################################################################################################
 ########################################################## UV Phase ##############################################################
 ########################################################## 8de5462d   ############################################################
 ##################################################################################################################################
+
 tfg.quests.uv.era.title=&dEra 10 - Electricity UV
 
 ##################################################################################################################################
 ########################################################## MT Phase ##############################################################
 ########################################################## 75ea50b0 ##############################################################
 ##################################################################################################################################
+
 tfg.quests.developmenttable.era.title=&dDevelopment table

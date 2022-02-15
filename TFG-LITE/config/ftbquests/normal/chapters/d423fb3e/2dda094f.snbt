@@ -1,0 +1,27 @@
+{
+	x: -13.5d,
+	y: 0.0d,
+	shape: "diamond",
+	dependencies: [
+		"d9827d71"
+	],
+	tasks: [{
+		uid: "c0a48bab",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolBranchCutter"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolBranchCutter"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

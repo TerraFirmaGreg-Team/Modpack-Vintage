@@ -1,5 +1,5 @@
 {
-	title: "The Church of Natural Farts",
+	title: "{tfg.quests.mv.church.title}",
 	icon: {
 		id: "gregtech:meta_item_1",
 		Damage: 78s,
@@ -11,20 +11,14 @@
 		}
 	},
 	x: 4.0d,
-	y: -8.0d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.church.subtitle}",
 	text: [
-		"§oLPG (Liquid Petroleum Gas) is a mix of hydrocarbons typically used in heating appliances.§r",
-		"",
-		"§aRefinery Gas§r, §aLPG§r and §aMethane§r are §9Gas Fuels§r.",
-		"",
-		"Refinery Gas is obtained either through §dNatural Gas§r or §dLight Oil§r, the latter yielding more yet requiring a distillation step.",
-		"",
-		"The §3Centrifuge§r step to separate into §aLPG§r and §aMethane§r should always be done, as it is extremely free.",
-		"",
-		"",
-		"§a§aLPG§r and §aMethane§r are burned in a §3Gas Turbine§r. Among the other fuel options, they are the easier to set up which makes them excellent to get started. However they cannot be refined further.",
-		"",
-		"§aMethane§r can also be obtained from a few §anatural sources§r. Between you and me, they are memes, but you can explore them if you wish. Ultimately, your power source is your choice."
+		"{tfg.quests.mv.church.desc1}",
+		"{tfg.quests.mv.church.desc2}",
+		"{tfg.quests.mv.church.desc3}",
+		"{tfg.quests.mv.church.desc4}",
+		"{tfg.quests.mv.church.desc5}"
 	],
 	dependencies: [
 		"13e690a9"

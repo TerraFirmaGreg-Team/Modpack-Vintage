@@ -1,15 +1,13 @@
 {
-	title: "Advanced Circuit Assembler",
+	title: "{tfg.quests.mv.advcircuitassembler.title}",
 	icon: "gregtech:machine 1 636",
 	x: 16.5d,
-	y: -6.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.advcircuitassembler.subtitle}",
 	text: [
-		"§oI'm running out of things to say for these quests... I hope you get the gist of it, and don't need too many explanations.§r",
+		"{tfg.quests.mv.advcircuitassembler.desc1}",
 		"",
-		"As for every Tier goes, the §3Circuit Assembler§r is an essential part of the Progression, to enable a new Tier of circuits.",
-		"",
-		"",
-		"At this point you should use an §3Extractor§r next to your Circuit Assembler and send off dozens of stacks of §aSoldering Alloy§r Ingots."
+		"{tfg.quests.mv.advcircuitassembler.desc2}"
 	],
 	dependencies: [
 		"03aed214"

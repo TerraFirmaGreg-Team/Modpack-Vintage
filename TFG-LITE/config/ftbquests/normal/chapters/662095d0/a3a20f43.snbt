@@ -1,10 +1,11 @@
 {
-	title: "Tricorder",
+	title: "{tfg.quests.mv.tricorder.title}",
 	icon: "gregtech:meta_item_1 1 470",
-	x: 16.0d,
-	y: -7.0d,
+	x: 16.5d,
+	y: -1.5d,
+	description: "{tfg.quests.mv.tricorder.subtitle}",
 	text: [
-		"The §aPortable Scanner§r, or §aTricorder§r, is GTCEu's debug tool. It shows you a block's details, the details of the energy network, its current status and contents, and its load on your CPU. It also shows you the contents of fluid veins below Bedrock for Fluid Rigs."
+		""
 	],
 	dependencies: [
 		"03aed214"

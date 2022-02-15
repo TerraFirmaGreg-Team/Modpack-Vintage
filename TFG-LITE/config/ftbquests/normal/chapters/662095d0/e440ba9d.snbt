@@ -1,19 +1,17 @@
 {
-	title: "200IQ",
+	title: "{tfg.quests.mv.200IQ.title}",
 	icon: "gregtech:meta_item_1 1 293",
 	x: 7.0d,
 	y: -3.0d,
+	description: "{tfg.quests.mv.200IQ.subtitle}",
 	text: [
-		"§oThis quest acts as a small tutorial to automate the Electrolyzer easily!§r",
+		"{tfg.quests.mv.200IQ.desc1}",
 		"",
-		"The §9Smart Item Filter§r is a filter based on Recipe Maps. Placed on the side of a machine, this Filter can be selected to §3Electrolyzer§r to allow insertion of electrolyzable Items specifically.",
+		"{tfg.quests.mv.200IQ.desc2}",
 		"",
-		"To circumvent the machine getting stuck with not enough inputs, place a §cRobot Arm with a Smart Item Filter§r on your §3Electrolyzer§r. Configure it to §d§lImport§r and §d§lSupply Exact§r. Now, attach any inventory (a chest will do) on the side where you placed the Robot Arm, and TADAA! You have made automatic smart insertion to handle all Electrolyzer recipes!",
+		"{tfg.quests.mv.200IQ.desc3}",
 		"",
-		"§9Note:§r The Robot Arm has to do Item transfer itself for its functionality to work! Inserting directly into the machine will ignore the Robot Arm's §dSupply Exact§r.",
-		"",
-		"",
-		"Now, as for the output of the Electrolyzer, you may want to route the Fluids to several Tanks, or even §3Super Tanks§r. I highly recommend §cto not void§r the Fluids, except for Water for obvious reasons."
+		"{tfg.quests.mv.200IQ.desc4}"
 	],
 	dependencies: [
 		"409e98ab"

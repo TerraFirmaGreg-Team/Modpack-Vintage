@@ -1,12 +1,11 @@
 {
-	title: "First HV Circuits!",
+	title: "{tfg.quests.mv.HV.title}",
 	icon: "gregtech:meta_item_1 1 625",
-	x: 14.0d,
-	y: -6.0d,
+	x: 15.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.HV.subtitle}",
 	text: [
-		"§oAlright, technically HV Circuit and Stainless Steel means you can move to HV... but let's not rush things.§r",
-		"",
-		"The first thing you should probably do is a §3MV Circuit Assembler§r, to unlock the new tier of Circuits right away, as they are the §dreal payoff§r."
+		"{tfg.quests.mv.HV.desc1}"
 	],
 	dependencies: [
 		"a4d0e869",

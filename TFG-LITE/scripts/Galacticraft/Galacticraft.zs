@@ -268,7 +268,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:enclosed:14>,
 	<galacticraftcore:enclosed:15>,
 	<galacticraftcore:enclosed:13>,
-	<galacticraftcore:enclosed:1>
+	<galacticraftcore:enclosed:1>,
+	<galacticraftplanets:grapple>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
     recipes.remove(item);
@@ -578,6 +579,13 @@ recipes.addShaped(<galacticraftplanets:beam_reflector>,
 [[null, <galacticraftplanets:item_basic_asteroids:8>, null],
  [<ore:circuitGood>, <ore:plateTitanium>, <minecraft:lever>],
  [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]]);
+
+//Крюк
+recipes.addShaped(<galacticraftplanets:grapple>,
+[[null, null, <ore:string>],
+ [<ore:ingotIron>, <ore:string>, null],
+ [<ore:ingotIron>, <ore:ingotIron>, null]]);
+
 
 //Антена связи
 recipes.addShaped(<galacticraftcore:dishbase>,

@@ -1,16 +1,15 @@
 {
-	title: "MV Components",
+	title: "{tfg.quests.mv.components.title}",
 	icon: "gregtech:meta_item_1 1 128",
-	x: 8.0d,
-	y: -4.0d,
+	x: 4.0d,
+	y: -8.0d,
+	description: "{tfg.quests.mv.components.subtitle}",
 	text: [
-		"§oDid you hate crafting the components in the previous tier? They're back, and stronger!§r",
+		"{tfg.quests.mv.components.desc1}",
 		"",
-		"Here is a list of the components you will need in the §bMV§r Age. To alleviate the pain, be sure to autocraft or §dbulk-craft§r these parts, especially §aMotors§r.",
+		"{tfg.quests.mv.components.desc2}",
 		"",
-		"Note the appearance of the §aEmitter§r? This one requires a §dFlawless Emerald§r which will be only attainable with the §3Sifting Machine§r for now.",
-		"",
-		"Conveyors, Pumps and Robot Arms are upgrades to §7LV§r versions if you use them as covers."
+		"{tfg.quests.mv.components.desc3}"
 	],
 	dependencies: [
 		"9c437db6"

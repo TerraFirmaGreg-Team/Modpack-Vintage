@@ -1,5 +1,5 @@
 {
-	title: "A Balanced Quest",
+	title: "{tfg.quests.mv.balanced.title}",
 	icon: {
 		id: "minecraft:clay_ball",
 		ForgeCaps: {
@@ -11,15 +11,15 @@
 	},
 	x: 5.0d,
 	y: -3.0d,
+	description: "{tfg.quests.mv.balanced.subtitle}",
 	text: [
-		"Clay is an extremely §mbalanced§r useful material for electrolysis.",
-		"All four output Dusts are great.",
+		"{tfg.quests.mv.balanced.desc1}",
 		"",
-		"You will need §a§ra total of §a416 Clay Dust§r for this quest. You may also want to look into other sources of similar materials, such as §aSodalite§r. Check JEI for some ideas.",
+		"{tfg.quests.mv.balanced.desc2}",
 		"",
-		"You should use Sodium and/or Lithium to make some §6MV Batteries§r.",
+		"{tfg.quests.mv.balanced.desc3}",
 		"",
-		"All this useless §dWater§r you are getting... Voiding Covers are soon to be implemented in GTCEu."
+		"{tfg.quests.mv.balanced.desc4}"
 	],
 	dependencies: [
 		"409e98ab"

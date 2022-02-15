@@ -1,20 +1,14 @@
 {
-	title: "Local Brewery selling Booze",
+	title: "{tfg.quests.mv.brewery.title}",
 	icon: "gregtech:machine 1 155",
-	x: 10.0d,
-	y: -10.0d,
+	x: 7.0d,
+	y: -8.0d,
+	description: "{tfg.quests.mv.brewery.subtitle}",
 	text: [
-		"The Brewery can be used to make §aLubricant§r from §aRedstone§r and §aCreosote§r/§aOil§r.",
+		"{tfg.quests.mv.brewery.desc1}",
 		"",
-		"Lubricant has its uses here and there, but is mostly for the §3Cutting Machine§r. That significantly reduces duration of recipes.",
-		"",
-		"",
-		"",
-		"§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.",
-		"The Brewery makes §aBiomass§r, a path that is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.",
-		"",
-		"",
-		"§bLore:§r §oYou can make a Brewery if you want to build up a company and start selling Booze... Oh wait nevermind, wrong GregTech version.§r"
+		"{tfg.quests.mv.brewery.desc2}",
+		"{tfg.quests.mv.brewery.desc3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

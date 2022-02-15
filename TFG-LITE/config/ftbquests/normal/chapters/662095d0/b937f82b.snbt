@@ -1,12 +1,11 @@
 {
-	title: "Advanced Mixer",
+	title: "{tfg.quests.mv.advmixer.title}",
 	icon: "gregtech:machine 1 471",
 	x: 9.0d,
-	y: -6.0d,
+	y: -4.5d,
+	description: "{tfg.quests.mv.advmixer.subtitle}",
 	text: [
-		"§oMore complex Alloys require higher Tier machines to mix the Dusts together.§r",
-		"",
-		"This is the first step to dive deeper in the MV Age."
+		"{tfg.quests.mv.advmixer.desc1}"
 	],
 	dependencies: [
 		"9c437db6"

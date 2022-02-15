@@ -1,12 +1,11 @@
 {
-	title: "Advanced Electrolyzer",
+	title: "{tfg.quests.mv.advelectrolyzer.title}",
 	icon: "gregtech:machine 1 276",
 	x: 6.0d,
 	y: -4.0d,
+	description: "{tfg.quests.mv.advelectrolyzer.subtitle}",
 	text: [
-		"§oRemember the Ore Processing Quest referencing the Electrolyzer? It told you that you had to wait until MV, so here we are.§r",
-		"",
-		"The Advanced Electrolyzer allows you to decompose §6all§r Dusts. This will make getting materials such as §aAluminium§o§§ a lot easier!"
+		"{tfg.quests.mv.advelectrolyzer.desc1}"
 	],
 	dependencies: [
 		"9c437db6"

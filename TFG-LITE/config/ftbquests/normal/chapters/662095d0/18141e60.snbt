@@ -1,12 +1,11 @@
 {
-	title: "Best LV Circuits",
+	title: "{tfg.quests.mv.bestLV.title}",
 	icon: "gregtech:meta_item_1 1 627",
 	x: 18.0d,
-	y: -6.0d,
+	y: -4.5d,
+	description: "{tfg.quests.mv.bestLV.subtitle}",
 	text: [
-		"§6The best LV Circuits§r! You will be making these for the remainder of the game.",
-		"",
-		"Eventually (in EV Age), they will become even cheaper."
+		"{tfg.quests.mv.bestLV.desc1}"
 	],
 	dependencies: [
 		"5ee4ef44",

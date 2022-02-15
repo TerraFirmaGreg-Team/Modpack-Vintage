@@ -1,12 +1,11 @@
 {
-	title: "Inductors",
+	title: "{tfg.quests.mv.inductors.title}",
 	icon: "gregtech:meta_item_1 1 522",
 	x: 20.0d,
-	y: -8.0d,
+	y: -6.0d,
+	description: "{tfg.quests.mv.inductors.subtitle}",
 	text: [
-		"A Circuit Component, that you can now make thanks the §3MV Assembler§r.",
-		"",
-		"If you want to make them cheaper, you may smelt §aNickel-Zinc Ferrite§r."
+		"{tfg.quests.mv.inductors.desc1}"
 	],
 	dependencies: [
 		"08970ed3"

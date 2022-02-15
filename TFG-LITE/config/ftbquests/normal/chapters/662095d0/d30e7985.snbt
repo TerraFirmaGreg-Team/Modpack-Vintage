@@ -1,12 +1,11 @@
 {
-	title: "Upgrade your EBF",
+	title: "{tfg.quests.mv.upgradeEBF.title}",
 	icon: "gregtech:machine 1 1212",
 	x: 12.0d,
-	y: -6.0d,
+	y: -4.5d,
+	description: "{tfg.quests.mv.upgradeEBF.subtitle}",
 	text: [
-		"§oA LV Battery Buffer and two LV Energy Hatches are not so convenient, let's remedy that!§r",
-		"",
-		"Upgrade your Electric Blast Furnace with a §3MV Energy Hatch§r, so you can run it off MV Generators."
+		"{tfg.quests.mv.upgradeEBF.desc1}"
 	],
 	dependencies: [
 		"76dc4691",

@@ -1,12 +1,11 @@
 {
-	title: "Laser Engraving",
+	title: "{tfg.quests.mv.laserengraving.title}",
 	icon: "gregtech:machine 1 561",
 	x: 12.0d,
 	y: -3.0d,
+	description: "{tfg.quests.mv.laserengraving.subtitle}",
 	text: [
-		"The §aLaser Engraver§r engraves patterns into §9Silicon Wafers§r based on the type of §9Lens§r it is given. After the wafers are engraved, they must be passed through a §9Cutting Machine§r to turn them into components ready to be put into Circuits. Higher tier Engravers can etch more complex wafers for more efficient Circuits.",
-		"",
-		"For now, the §aIntegrated Logic Circuit§r will be the one of interest, but the others will become important for higher tier Circuits."
+		"{tfg.quests.mv.laserengraving.desc1}"
 	],
 	dependencies: [
 		"3ad0895d",
