@@ -77,6 +77,8 @@ recipes.removeByRecipeName("gregtech:daylight_detector");
 recipes.removeByRecipeName("gregtech:daylight_detector_certus");
 recipes.removeByRecipeName("gregtech:daylight_detector_quartzite");
 recipes.removeByRecipeName("gregtech:lever");
+recipes.removeByRecipeName("gregtech:steam_output_bus");
+recipes.removeByRecipeName("gregtech:steam_input_bus");
 
 // Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
@@ -413,6 +415,18 @@ mixer.recipeBuilder()
     .circuit(1)
     .outputs(<gregtech:meta_dust:2510> * 8)
     .duration(800).EUt(8).buildAndRegister();
+
+// Steam import bus
+recipes.addShaped( <metaitem:steam_import_bus>,
+[[null, <ore:chest>, null],
+ [null, <gregtech:steam_casing>, null],
+ [null, null, null]]);
+
+// Steam export bus
+recipes.addShaped( <metaitem:steam_export_bus>,
+[[null, <gregtech:steam_casing>, null],
+ [null, <ore:chest>, null],
+ [null, null, null]]);
 
 //Отключение крафта одинарных пластин в верстаке
 val GTPlates = [
