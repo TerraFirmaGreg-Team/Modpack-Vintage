@@ -422,7 +422,7 @@ tfg.quests.lv.era.title=&dEra 3 - Electricity LV
 tfg.quests.lv.200iq.title=200IQ
 tfg.quests.lv.200iq.subtitle=§oThis quest acts as a small tutorial to automate the Electrolyzer easily!§r
 tfg.quests.lv.200iq.desc1=The §9Smart Item Filter§r is a filter based on Recipe Maps. Placed on the side of a machine, this Filter can be selected to Electrolyzer to allow insertion of only Items that can be electrolyzed. 
-tfg.quests.lv.200iq.desc2=To circumvent the Electrolyzer getting stuck with not enough inputs, place a §cRobot Arm with a Smart Item Filter§r on your Electrolyzer. Configure it to §dImport§r, §dSupply Exact§r. Now, attach any inventory (a chest will do) on the side where you placed the Robot Arm, and TADAA! You have made automatic smart insertion to handle all Electrolyzer recipes!
+tfg.quests.lv.200iq.desc2=To circumvent the Electrolyzer getting stuck with not enough inputs, place a §cRobot Arm with a Smart Item Filter§r on your Electrolyzer. Configure it to §dImport§r, §dFilter Extract§r. Now, attach any inventory (a chest will do) on the side where you placed the Robot Arm, and TADAA! You have made automatic smart insertion to handle all Electrolyzer recipes!
 tfg.quests.lv.200iq.desc3=§9Note:§r The Robot Arm has to do Item transfer itself for its functionality to work! Inserting directly into the machine will ignore the Robot Arm's §dSupply Exact§r. 
 tfg.quests.lv.200iq.desc4=Now, as for the output of the Electrolyzer, you may want to route the Fluids to several Tanks, or even §3Super Tanks§r. I highly recommend §cto not void§r the Fluids, except for Water for obvious reasons."
 
@@ -430,7 +430,7 @@ tfg.quests.lv.terminal.title=Terminal
 tfg.quests.lv.terminal.subtitle=§oThe Tablet device you spawned with is very valuable to do plenty of tasks in GregTech.  This Quest explains how you can use it.§r
 tfg.quests.lv.terminal.desc1=The Terminal runs on §4GregOS™§r (not an actual trademark), an operating system which works with §5Applications§r.
 tfg.quests.lv.terminal.desc2=§9Machines Guides§r, §9Multiblock Guides§r, §9Item Guides§r, §9§9Tutorials§r are what they sound like. Note that they are currently incomplete.
-tfg.quests.lv.terminal.desc3=§9Guide Editor§r is used to write Guides! Just as above. The GTCEu wiki has some small instructions for how to write them. If you are filling like helping us with filling up guides, please go ahead and message us on our §8Discord§r (link is in the Curseforge page) with the work you've put.
+tfg.quests.lv.terminal.desc3=§9Guide Editor§r is used to write Guides! Just as above. The GTCEu wiki has some small instructions for how to write them.
 tfg.quests.lv.terminal.desc4=§9System Settings§r changes... settings (duh) related to the Terminal. You can §bset your own background picture§r, remove the double confirmation on exit, and more. Most of the keybinds apply to the §5Home§r button. Double clicking by default exists the Application.
 tfg.quests.lv.terminal.desc5=§9Multiblock Helper§r is split into two functionalities.  The first one requires a requires a §dLV§r Battery and a §dCamera§r mounted to enable §bVR visualization§r of multiblock structures.  The upgrade unlocked at §6HV§r allows you to §6debug§r and §6auto-build§r.
 tfg.quests.lv.terminal.desc6=§9Battery Manager§r, assuming you have a Battery mounted, checks the Energy level and indicates energy usage of other Apps.
@@ -478,7 +478,6 @@ tfg.quests.lv.motora.title=LV Electric Motora
 tfg.quests.lv.motora.subtitle=§oOne of the gatekeepers to the LV Age... You are getting close.§r
 tfg.quests.lv.motora.desc1=We are cutting down the retrieval task counts as you progress further into the modpack so you don't have to check several times which items to submit. Remember that JEI is your friend if you forgot how to craft things!
 tfg.quests.lv.motora.desc2=Craft six §aLV Electric Motors§r! This may seem like a lot, but that's the bare minimum required to get to the good stuff in LV Age.
-tfg.quests.lv.motora.desс3=§6Once you complete this Quest and the Electronic Circuit Quest, you are ready to move on to the LV Age.§r
 
 tfg.quests.lv.pump.title=LV Electric Pump
 tfg.quests.lv.pump.subtitle=§oA crafting component, but also a cover!§r
@@ -617,14 +616,13 @@ tfg.quests.lv.troubleshooting.desc5=§9-§r Make sure the recipe is properly inp
 tfg.quests.lv.troubleshooting.desc6=§9-§r Make sure there is space for output. Maybe the multiblock formed but you forgot a Hatch. The other biggest offender is the Output Hatches being too low tier and having too little capacity!
 
 tfg.quests.lv.blast.title=Electric Blast Furnace
-tfg.quests.lv.blast.subtitle=Electric Blast Furnace
-tfg.quests.lv.blast.desc1=The §3Electric Blast Furnace (EBF)§r is your first electric multiblock! It is used to process materials at high temperatures.
-tfg.quests.lv.blast.desc2=You will use the EBF to make §aAluminium§r and progress to §d§bMV Age§r. It can also make §7Steel§r faster than a PBF.
-tfg.quests.lv.blast.desc3=The EBF is a beefy boy. The minimum power cost to run a recipe is §9120 EU/t§r! That's slightly under 4 §7LV§r Generators. This is why it was locked behind the Battery Quest. You may wish to consider building a separate power line, with separate Generators and Battery Buffer to run this.
+tfg.quests.lv.blast.subtitle=The §3Electric Blast Furnace (EBF)§r is your first electric multiblock! It is used to process materials at high temperatures.
+tfg.quests.lv.blast.desc1=You will use the EBF to make §aAluminium§r and progress to §d§bMV Age§r. It can also make §7Steel§r faster than a PBF.
+tfg.quests.lv.blast.desc2=The EBF is a beefy boy. The minimum power cost to run a recipe is §9120 EU/t§r! That's slightly under 4 §7LV§r Generators. This is why it was locked behind the Battery Quest. You may wish to consider building a separate power line, with separate Generators and Battery Buffer to run this.
 
 tfg.quests.lv.aluminiumingot.title=Aluminium
 tfg.quests.lv.aluminiumingot.subtitle=Aluminium§r is the main ingredient for §bMV§r machine hulls. Check aaaall the way to the other side for §2Sapphire Quest§r if you haven't acquired §aAluminium Dust§r yet.
-tfg.quests.lv.aluminiumingot.desc1=Once you setup an §3MV Electrolyzer§r, you can get §aAluminium§r through many other ores. All of this quest's rewards bear §aAluminium§r.
+tfg.quests.lv.aluminiumingot.desc1=Once you setup an §3MV Electrolyzer§r, you can get §aAluminium§r through many other ores.
 tfg.quests.lv.aluminiumingot.desc2=The process of smelting Aluminium can be accelerated with §9Nitrogen§r, which is obtained by centrifuging §9Air§r from a §3Gas Collector§r.
 tfg.quests.lv.aluminiumingot.desc3=You will still need MV Circuits in order to make MV machines.§r
 
@@ -641,14 +639,14 @@ tfg.quests.lv.magnet.desc2=§9Note:§r If are you worried about getting overwhel
 tfg.quests.lv.wiremill.title=Basic Wiremill
 tfg.quests.lv.wiremill.subtitle=§oTechnically, you could make more or less any LV Machine, but I specifically want you to make the best one of them all first! I know, I know... You're asking where is your freedom of choice.§r
 tfg.quests.lv.wiremill.desc1=No more painful wires! This machine lets you make §6two Wires from one Ingot§r, that should be three times cheaper than what you were doing up until now!
-tfg.quests.lv.wiremill.desc2=To the right of this Quest are more important machines which will help you a lot to get cheaper intermediates.
+tfg.quests.lv.wiremill.desc2=To the left of this Quest are more important machines which will help you a lot to get cheaper intermediates.
 tfg.quests.lv.wiremill.desc3=§9Note:§r Recipes inside §3LV Machines§r go up to §aUsage: 32 EU/t (LV)§r. Anything higher than that and you will need a MV or even better machine instead. Needless to say that's for later.
 
 tfg.quests.lv.bending.title=Basic Bending Machine
 tfg.quests.lv.bending.subtitle=§oArgueably the second best LV machine to craft, but the choice is yours!§r
 tfg.quests.lv.bending.desc1=This helps converting one §6Ingot into one Plate§r, which is a better ratio than the Forge Hammer.
 tfg.quests.lv.bending.desc2=You will need a §dProgrammed Circuit§r for recipes. That would be nice if the questbook designer gave one for free, wouldn't it?
-tfg.quests.lv.bending.desc3=You can right click the Programmed Circuit in your hand or within the machine's §aConfiguration Slot§r to change the configuration number. Note that at the time of writing, this slot is §cnot detected§r for recipes!
+tfg.quests.lv.bending.desc3=You can right click the Programmed Circuit in your hand or within the machine's §aConfiguration Slot§r to change the configuration number.
 
 tfg.quests.lv.polarizer.title=Basic Polarizer
 tfg.quests.lv.polarizer.subtitle=§oThe Polarizer polarizes... We're doing this again aren't we?§r
@@ -661,7 +659,6 @@ tfg.quests.lv.lathe.desc=An important machine to help shape metals. Thanks to it
 tfg.quests.lv.canning.title=Basic Canning Machine
 tfg.quests.lv.canning.subtitle=This machine does nothing exciting. It puts stuff into stuff.§r
 tfg.quests.lv.canning.desc=Make this machine only when you feel like it's time you invest into Batteries.
-
 
 tfg.quests.lv.batteryingot.title=Battery Preparations!
 tfg.quests.lv.batteryingot.subtitle=Batteries are great! They let you store energy if you have too little or too much power generation.§r
@@ -690,7 +687,6 @@ tfg.quests.lv.solidifier.desc1=Build this machine next to your §3Chemical React
 tfg.quests.lv.solidifier.desc2=Then, §dwrench§r the side of your §3Chemical Reactor§r and enable Fluid §9auto-output§r.
 tfg.quests.lv.solidifier.desc3=There will be more Fluids to solidify, so you may re-purpose your §3Fluid Solidifier§r when not crafting Rubber.
 
-
 tfg.quests.lv.rotor.title=Combo!
 tfg.quests.lv.rotor.subtitle=Time to end the misery of hand crafting rotors!§r
 tfg.quests.lv.rotor.desc1=Use both your machines to turn a material into a Fluid, and solidify it back to a Rotor! This combination makes up for §6four Ingots per Rotor§r.
@@ -715,7 +711,6 @@ tfg.quests.lv.extractor.desc2=The §3Basic Extractor§r gains Fluid capabilities
 
 tfg.quests.lv.circuitassembling.title=Basic Circuit Assembling Machine
 tfg.quests.lv.circuitassembling.subtitle=§oHopefully your first MV Circuit expense.§r
-tfg.quests.lv.circuitassembling.desc=§oHopefully your first MV Circuit expense.§r
 
 tfg.quests.lv.mvcircuits.title=First MV Circuits!
 tfg.quests.lv.mvcircuits.subtitle=MV Circuits! Does this mean MV Age...? Well, do you have Aluminium?§r
@@ -736,8 +731,6 @@ tfg.quests.lv.assembling.desc3=Once you have enough Infrastructure, you will be 
 tfg.quests.lv.assembling.desc4=§9-§r §6Vacuum Tubes§r
 tfg.quests.lv.assembling.desc5=§9-§r §6Resistors§r
 tfg.quests.lv.assembling.desc6=§9-§r §6Circuit Boards§r
-tfg.quests.lv.assembling.desc7=§9-§r §6Resistors§r
-tfg.quests.lv.assembling.desc8=§9-§r §6Circuit Boards§r
 
 tfg.quests.lv.can.title=16 Shades of Gray
 tfg.quests.lv.can.subtitle=Alright, making this is quite involved, this has to be good right?
@@ -811,7 +804,7 @@ tfg.quests.lv.cutting.desc3=This machine is the only way to obtain §dGem Plates
 tfg.quests.lv.gascollector.title=Basic Gas Collector
 tfg.quests.lv.gascollector.subtitle=The Gas Collector collects Air, to centrifuge into §aOxygen§r and §aNitrogen§r.
 
-tfg.quests.lv.what.title=What is this Mess? Part Two
+tfg.quests.lv.what.title=What is this Mess? 
 tfg.quests.lv.what.subtitle=§oHey you! Yes you! HEY!! Why are you running away!?§r
 tfg.quests.lv.what.desc1=This quest is a presentation of the §dFull Scale of regular Ore Processing§r. Why "regular" you may ask? Well... some ores are special but that's for much later. Oh no I'm getting carried away!
 tfg.quests.lv.what.desc2=If you haven't noticed the §aOre Byproduct§r Tab in §aJEI§r, press U on any GT ore, and it should be the second rightmost Tab.
@@ -851,10 +844,9 @@ tfg.quests.lv.thermal.title=Basic Thermal Centrifuge
 tfg.quests.lv.thermal.subtitle=The §3Thermal Centrifuge§r is the most energy hungry out of the Ore Processing machines.
 tfg.quests.lv.thermal.desc=It takes §aCrushed Ore§r or §aPurified Ore§r to give a different §6Byproduct§r from the §3Ore Washer§r, but at the same rate.
 
-tfg.quests.lv.autoclave.title=autoclave
+tfg.quests.lv.autoclave.title=Autoclave
 tfg.quests.lv.autoclave.subtitle=The Autoclave typically is the last step of Ore Processing, to turn a few select §aGem Dusts§r back regular Gems.
 tfg.quests.lv.autoclave.desc1=It is very slow so in general it is not advised to crush gem ores at all, as the recovery process is too expensive.
-tfg.quests.lv.autoclave.desc2=§9Note:§r In this modpack, the Autoclave is required to make Fluix Crystals to progress in Applied Energistics.
 
 tfg.quests.lv.separator.title=Basic Electromagnetic Separator
 tfg.quests.lv.separator.subtitle=A rarely used machine. It uses magnetic fields to separate some Magnetic ores and gain additional §6Byproducts§r you would not obtain otherwise.
@@ -911,14 +903,14 @@ tfg.quests.mv.voltage.subtitle=§oThe concepts presented are for the curious pla
 tfg.quests.mv.voltage.desc1=§6§lTL;DR:§r For safety, match the §2Voltage§r for every Consumer and Producer, unless you like §cfireworks§r...
 tfg.quests.mv.voltage.desc2=This Quest will go into the Energy mechanics in more detail. If you have a basic understanding of electricity in §ereal life§r, the GTEU system is not too different! An even more in-depth walkthrough will be found on the GTCEu wiki in Github.
 tfg.quests.mv.voltage.desc3=The laws of physics:
-tfg.quests.mv.voltage.desc4=° §9Power§r = §2Voltage§r * §dAmperage§r
-tfg.quests.mv.voltage.desc5=° §1Energy§r = §9Power§r * §6Time§r
+tfg.quests.mv.voltage.desc4=° §9Power§r=§2Voltage§r * §dAmperage§r
+tfg.quests.mv.voltage.desc5=° §1Energy§r=§9Power§r * §6Time§r
 tfg.quests.mv.voltage.desc6=§8Resistance§r is an excluded concept in GregTech, it is instead simulated partially with cable losses.
 tfg.quests.mv.voltage.desc7=The units:
 tfg.quests.mv.voltage.desc8=- §1EU§r is the §1Energy§r.
 tfg.quests.mv.voltage.desc9=- §9EU/t§r is the §9Power§r.
 tfg.quests.mv.voltage.desc10=- §dA§r or §dAmp§r is the §dAmperage§r.
-tfg.quests.mv.voltage.desc11=- §2V§r would be the §2Voltage§r, but we prefer referring to it as §7LV§r, §bMV§r, §6HV§r... as those are the relevant values for gameplay (technically: §7LV§r = 32V = 32EU/t/A).
+tfg.quests.mv.voltage.desc11=- §2V§r would be the §2Voltage§r, but we prefer referring to it as §7LV§r, §bMV§r, §6HV§r... as those are the relevant values for gameplay (technically: §7LV§r=32V=32EU/t/A).
 tfg.quests.mv.voltage.desc12=Here comes the §4dangerous§r part:
 tfg.quests.mv.voltage.desc13=§9-§r §aCables§r and §aWires§r which receive §2higher Voltage§r than their rating will §cburn§r, in additions to burning from too many §dAmps§r.
 tfg.quests.mv.voltage.desc14=§9-§r §3Machines§r which receive §2higher Voltage§r than their Tier will §cexplode§r! Extra §dAmps§r are not affecting them, as they consume only what they need.
@@ -1135,7 +1127,6 @@ tfg.quests.mv.brewery.desc1=Lubricant has its uses here and there, but is mostly
 tfg.quests.mv.brewery.desc2=§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.
 tfg.quests.mv.brewery.desc3=The Brewery makes §aBiomass§r, a path that is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.
 
-
 tfg.quests.mv.benzene.title=The Church of Benzene
 tfg.quests.mv.benzene.subtitle=§oBenzene causes leukemia even at low concentrations.§r
 tfg.quests.mv.benzene.desc1=§aBenzene§r is also a §9Gas Fuel§r. I will present you only the two best ways to obtain it.
@@ -1157,29 +1148,78 @@ tfg.quests.mv.diesel.desc7=§cNote: Do §cnot attempt§r to put Oil in the §3Di
 tfg.quests.mv.diesel.desc8=In order to be as Power positive as possible, §4Overclock as little as possible§r. Just use more machines instead.
 tfg.quests.mv.diesel.desc9=§aDiesel§r is burned in a §3Combustion Generator§r. It can be further refined to §6Cetane-Boosted Diesel§r in §6HV§r Age. Compared to the other power sources, it is generally more efficient, but more demanding. If you take the §eOil§r route for §aPolyethylene§r, this can work great with existing infrastructure. Ultimately, your power source is your choice.
 
-tfg.quests.mv.benzene.title=
-tfg.quests.mv.benzene.subtitle=
-tfg.quests.mv.benzene.desc1=
+tfg.quests.mv.distillation.title=Distillation
+tfg.quests.mv.distillation.desc1=Before we start, here's something to consider:
+tfg.quests.mv.distillation.desc2=With the §aOil§r route, you will need a §3LV Distillery§r.
+tfg.quests.mv.distillation.desc3=With the §aBiomass§r route, you will need a §3MV Distillery§r.
+tfg.quests.mv.distillation.desc4=Get §eeither§r to complete this quest.
+tfg.quests.mv.distillation.desc5=Now, let's discuss a complex topic: §9Distillation§r. This guide will help you understand how and why the §aJEI§r recipes are the way they are, so stick with me!
+tfg.quests.mv.distillation.desc6=Nearly all the §3Distillery§r recipes are duplicates from the §3Distillation Tower§r, except that they only have one Fluid output, and void everything else.
+tfg.quests.mv.distillation.desc7=In other words, you could argue the §3Distillery§r is an §dinferior§r §3Distillation Tower§r.
+tfg.quests.mv.distillation.desc8=This doesn't mean that the §3Distillery§r is always inferior though. It is unlocked earlier. It is §dsmaller§r, §dcheaper§r, and §dmore energy efficient§r per recipe.
+tfg.quests.mv.distillation.desc9=In many cases, you won't even mind losing the other Fluids.
+tfg.quests.mv.distillation.desc10=§3Distilleries§r are an essential component for power generation, whether you pick §aDiesel§r or §aBenzene§r.
+tfg.quests.mv.distillation.desc11=You will want many of them, and as low tier as possible to avoid the energy losses from Overclocking.
 
-tfg.quests.mv.inductors.title=
-tfg.quests.mv.inductors.subtitle=
-tfg.quests.mv.inductors.desc1=
+tfg.quests.mv.lightfuel.title=Light Fuel
+tfg.quests.mv.lightfuel.subtitle=§oIf you read the previous Quest, this shouldn't be too bad. If you didn't... What are you waiting for!?§r
+tfg.quests.mv.lightfuel.desc1=Distillating §aOil§r will give you Fuel that you will need to desulfurize.
+tfg.quests.mv.lightfuel.desc2=§aHydrogen Sulfide§r is perfectly §drecycled§r in an §3Electrolyzer§r.
+tfg.quests.mv.lightfuel.desc3=If you automate this process, simply place your Chemical Reactor and your Electrolyzer next to each other.
+tfg.quests.mv.lightfuel.desc4=§aLight Fuel§r is a good §9Power§r option. But there is something even greater in a nearby Quest.
 
-tfg.quests.mv.benzene.title=
-tfg.quests.mv.benzene.subtitle=
-tfg.quests.mv.benzene.desc1=
+tfg.quests.mv.fuelcracking.title=Fuel Cracking
+tfg.quests.mv.fuelcracking.subtitle=§oFuel and Oil cracking can get complicated. But let's not get too bothered about it. It's mostly done to get hydrocarbons.§r
+tfg.quests.mv.fuelcracking.desc1=There are many ways to acquire §dEthylene§r from Oil processing.
+tfg.quests.mv.fuelcracking.desc2=The best way is to steam-crack §aLight Fuel§r in a §3Chemical Reactor§r. Be sure to make the §aSeverely Steam-Cracked§r version for a higher yield of Ethylene. Once in HV Age, you will have the option to do this recipe in the §3Cracking Unit§r.
+tfg.quests.mv.fuelcracking.desc3=The tantalizing §9Distillation Tower§r process for Oil products is sadly not available - yet! You will have to use a §3Distillery§r to get §dEthylene§r.
 
-tfg.quests.mv.inductors.title=
-tfg.quests.mv.inductors.subtitle=
-tfg.quests.mv.inductors.desc1=
+tfg.quests.mv.believe.title=I believe I can fly
+tfg.quests.mv.believe.subtitle=This Jetpack takes most §aCombustion Fuel§r to enable a primitive form of flight.
+tfg.quests.mv.believe.desc1=Fill it like you would fill a Drum.
+tfg.quests.mv.believe.desc2=Press §4H§r (default) to enable Hover Mode
 
-tfg.quests.mv.benzene.title=
-tfg.quests.mv.benzene.subtitle=
-tfg.quests.mv.benzene.desc1=
+tfg.quests.mv.polyethylene.title=Polyethylene
+tfg.quests.mv.polyethylene.subtitle=§oYour first polymer! Or if you want to be less fancy, just call it plastic, but hide in a corner first.§r
+tfg.quests.mv.polyethylene.desc1=For the polymerization process, add §aOxygen§r. That's better than Air.
+tfg.quests.mv.polyethylene.desc2=Then solidify like you would with Rubber.
+tfg.quests.mv.polyethylene.desc3=§aPolyethylene (PE)§r is the key to unlock §6many new things§r. It's used mostly as §dSheets§r or §dFluid§r form.
+tfg.quests.mv.polyethylene.desc4=No spoilers here! Let's have you figure out what it does with all the next Quests, one by one.
 
-tfg.quests.mv.inductors.title=
-tfg.quests.mv.inductors.subtitle=
-tfg.quests.mv.inductors.desc1=
+tfg.quests.mv.polyvinylchloride.title=Polyvinyl Chloride
+tfg.quests.mv.polyvinylchloride.subtitle=§oAlright, you have made a Polymer already, how about you make another one?§r
+tfg.quests.mv.polyvinylchloride.desc1=§aPolyvinyl Chloride (PVC)§r is the 3rd-most produced plastic in real life. Here, it can be used in place of Polyethylene in production of §aPlastic Circuit Boards§r and other items to increase the yield.
+tfg.quests.mv.polyvinylchloride.desc2=PVC item pipes also have the §6highest throughput§r available for a while, if your setups need it.
+tfg.quests.mv.polyvinylchloride.desc3=§9Pro tip:§r the fluid form of PVC is never used in base GTCEu, so feel free to solidify all of it into sheets.
+
+tfg.quests.mv.pattern.title=Pattern
+tfg.quests.mv.pattern.subtitle=§oAutocrafting at last!§r
+tfg.quests.mv.pattern.desc1=§aPatterns§r are used for AE2 autocrafting. Using §aPolyvinyl Chloride§r increases the yield by §64 times§r, and higher-tier plastics have higher yields.
+tfg.quests.mv.pattern.desc2=§3Molecular Assemblers§r aren't available for a little while more, but you can still automate machines with §9ME Interfaces§r.
+
+tfg.quests.mv.supertank.title=Super Tank
+tfg.quests.mv.supertank.subtitle=§oSuper Tanks are OP!! No but seriously.§r
+tfg.quests.mv.supertank.desc1=This is the ultimate portable Fluid storage solution. §64,000 buckets storage§r in one single block! Like Drums, Super Tanks keep their fluids when broken, and can be cleared in the crafting grid.
+tfg.quests.mv.supertank.desc2=For §9even more§r storage, use higher tier Super Tanks or AE2 Fluid Storage Cells.
+
+tfg.quests.mv.plasticboards.title=Plastic Boards
+tfg.quests.mv.plasticboards.subtitle=At this point, you have all the tools available to you to make Plastic Boards.
+tfg.quests.mv.plasticboards.desc1=The recipes are pretty long, so I recommend processing large batches in two dedicated §3Chemical Reactors§r.
+
+tfg.quests.mv.hca.subtitle=§oWe can guarantee you have a sample of this with you right now! It's in your stomach as part of gastric acid.§r
+tfg.quests.mv.hca.desc1=Obtain §9Hydrochloric Acid§r by mixing §aHydrogen§r and §aChlorine§r.
+tfg.quests.mv.hca.desc2=This acid is also obtained from as waste from a lot of reactions involving §aChlorine§r. Depending on your setups, you may never need to produce it directly.
+tfg.quests.mv.hca.desc3=§cNote:§r We have a bot command on our Discord, called $medicine: "Do not attempt this in real life, it is not only illegal but also stupidly dangerous".
+tfg.quests.mv.hca.desc4=This applies to toying with chemicals. Please don't do it.
+
+tfg.quests.mv.persulfate.title=Sodium Persulfate / Iron III Chloride
+tfg.quests.mv.persulfate.subtitle=§oThese acids are used to etch Copper off Circuit Boards... or something like that.§r
+tfg.quests.mv.persulfate.desc1=§aSodium Persulfate§r can be used in §9Ore Processing§r in the §3Chemical Bath§r, to get various bonus outputs you would not normally obtained. It is completely optional, but pretty rewarding.
+tfg.quests.mv.persulfate.desc2=But the real topic of this Quest is here:
+tfg.quests.mv.persulfate.desc3=§aSodium Persulfate§r and §aIron III Chloride§r are used to make cheaper §9Good Circuit Boards§r, as it cuts the Silver amount by a factor of four.
+tfg.quests.mv.persulfate.desc4=They are also §drequired§r to make §9Plastic Circuit Boards§r.
+tfg.quests.mv.persulfate.desc5=Making §aSodium Persulfate§r will yield §aHydrochloric Acid§r as a coproduct, which you may re-use to make §aIron III Chloride§r. This should the best approach line right now, but the decision is entirely yours.
+tfg.quests.mv.persulfate.desc6=With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path.
 
 ##################################################################################################################################
 ########################################################## HV Phase ##############################################################
