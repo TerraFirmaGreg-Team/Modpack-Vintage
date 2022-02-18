@@ -1,16 +1,15 @@
 {
-	title: "Polyvinyl Chloride",
+	title: "{tfg.quests.mv.polyvinylchloride.title}",
 	icon: "gregtech:meta_plate 1 1007",
 	x: 16.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.polyvinylchloride.subtitle}",
 	text: [
-		"§oAlright, you have made a Polymer already, how about you make another one?§r",
+		"{tfg.quests.mv.polyvinylchloride.desc1}",
 		"",
-		"§aPolyvinyl Chloride (PVC)§r is the 3rd-most produced plastic in real life. Here, it can be used in place of Polyethylene in production of §aPlastic Circuit Boards§r and other items to increase the yield.",
+		"{tfg.quests.mv.polyvinylchloride.desc2}",
 		"",
-		"PVC item pipes also have the §6highest throughput§r available for a while, if your setups need it.",
-		"",
-		"§9Pro tip:§r the fluid form of PVC is never used in base GTCEu, so feel free to solidify all of it into sheets."
+		"{tfg.quests.mv.polyvinylchloride.desc3}"
 	],
 	dependencies: [
 		"4e8615d1"

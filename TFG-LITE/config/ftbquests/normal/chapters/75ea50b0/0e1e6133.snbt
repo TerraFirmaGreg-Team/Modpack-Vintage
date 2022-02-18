@@ -1,0 +1,14 @@
+{
+	x: -20.5d,
+	y: -2.0d,
+	text: [
+		"Tungsten at last! The IV Cable material."
+	],
+	tasks: [{
+		uid: "265f87c8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 115"
+		}]
+	}]
+}

@@ -3,5 +3,5 @@
 	icon: "gregtech:meta_item_1 1 749",
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 }

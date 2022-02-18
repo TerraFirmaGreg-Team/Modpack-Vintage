@@ -1,0 +1,23 @@
+{
+	x: -21.5d,
+	y: -4.0d,
+	text: [
+		"Stainless Steel is pretty much any Steel you may encounter in everyday's life. It is extremely resilient against corrosion.§r§r",
+		"",
+		"Stainless Steel is the material for §6HV§r components, like Aluminium for §bMV§r and Steel for §7LV§r. It is also used in high quantities for the §3Distillation Tower§r. It unlocks a lot of §6nice stuff§r as well!",
+		"",
+		"It requires §cChrome§r, obtained mainly from §cRuby§r, and §2Manganese§r, obtained from §2Pyrolusite§r and others in its vein.",
+		"",
+		"Smelting Stainless Steel requires §dHV Power§r, which I highly doubt you have at this point. Scaling Power Production is crucial!",
+		"",
+		"What I would §9recommend§r would be to get a second EBF going. They can share blocks, so that is only §a10 Cupronickel Coils§r instead of 16.",
+		"Have one EBF run off MV, for Aluminium and any other recipes requiring MV Power, and one running off HV with §32 MV Energy Hatches§r."
+	],
+	tasks: [{
+		uid: "6dc1619c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 323"
+		}]
+	}]
+}

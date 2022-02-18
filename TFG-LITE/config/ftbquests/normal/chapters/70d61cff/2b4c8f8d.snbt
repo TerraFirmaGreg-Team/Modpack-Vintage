@@ -1,6 +1,6 @@
 {
 	title: "Shredding your Ores with more Byproducts",
-	x: -7.0d,
+	x: -8.0d,
 	y: -5.0d,
 	text: [
 		"Did you notice the \"chance per tier\" when hovering over the bonus outputs in §aJEI§r? Each overclock above the required tier will add that bonus to the chanced output! This means the §5EV §3Macerator§r yields §6more Byproducts§r!"

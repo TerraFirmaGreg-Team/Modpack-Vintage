@@ -1,5 +1,5 @@
 {
-	title: "Light Fuel",
+	title: "{tfg.quests.mv.lightfuel.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -9,28 +9,42 @@
 	},
 	x: 6.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.lightfuel.subtitle}",
 	text: [
-		"§oIf you read the previous Quest, this shouldn't be too bad. If you didn't... What are you waiting for!?§r",
+		"{tfg.quests.mv.lightfuel.desc1}",
 		"",
-		"Distillating §aOil§r will give you Fuel that you will need to desulfurize.",
+		"{tfg.quests.mv.lightfuel.desc2}",
+		"{tfg.quests.mv.lightfuel.desc3}",
 		"",
-		"§aHydrogen Sulfide§r is perfectly §drecycled§r in an §3Electrolyzer§r.",
-		"If you automate this process, simply place your Chemical Reactor and your Electrolyzer next to each other.",
-		"",
-		"",
-		"§aLight Fuel§r is a good §9Power§r option. But there is something even greater in a nearby Quest."
+		"{tfg.quests.mv.lightfuel.desc4}"
 	],
 	dependencies: [
 		"65405836"
 	],
 	tasks: [{
-		uid: "ab9c6c70",
-		type: "fluid",
-		fluid: "sulfuric_light_fuel"
+		uid: "00edce2f",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sulfuric_light_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	},
 	{
-		uid: "f1049bfa",
-		type: "fluid",
-		fluid: "light_fuel"
+		uid: "e92f4f33",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "light_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.aluminiumingot.title}",
 	x: 12.0d,
 	y: 10.0d,
-	description: "{tfg.quests.lv.aluminiumingot.subtitle}",
+	description: "{tfg.quests.lv.cupronickelcoils.subtitle}",
 	text: [
 		"{tfg.quests.lv.cupronickelcoils.desc1}",
 		"",

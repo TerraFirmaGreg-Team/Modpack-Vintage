@@ -1,6 +1,6 @@
 {
-	x: 13.0d,
-	y: 2.0d,
+	x: 14.0d,
+	y: 0.0d,
 	shape: "square",
 	description: "{tfg.quests.ae2.craftingmonitor.subtitle}",
 	dependencies: [

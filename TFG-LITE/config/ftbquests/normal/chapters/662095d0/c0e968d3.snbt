@@ -1,13 +1,12 @@
 {
-	title: "I believe I can fly",
+	title: "{tfg.quests.mv.believe.title}",
 	x: 12.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.believe.subtitle}",
 	text: [
-		"This Jetpack takes most §aCombustion Fuel§r to enable a primitive form of flight.",
+		"{tfg.quests.mv.believe.desc1}",
 		"",
-		"Fill it like you would fill a Drum.",
-		"",
-		"Press §4H§r (default) to enable Hover Mode."
+		"{tfg.quests.mv.believe.desc2}"
 	],
 	dependencies: [
 		"f517b2ba"

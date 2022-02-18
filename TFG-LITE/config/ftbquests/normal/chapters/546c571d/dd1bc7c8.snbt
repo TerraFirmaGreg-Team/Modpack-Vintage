@@ -7,9 +7,7 @@
 	text: [
 		"{tfg.quests.lv.motora.desc1}",
 		"",
-		"{tfg.quests.lv.motora.desc2}",
-		"",
-		"{tfg.quests.lv.motora.desc3}"
+		"{tfg.quests.lv.motora.desc2}"
 	],
 	dependencies: [
 		"6c622d78"

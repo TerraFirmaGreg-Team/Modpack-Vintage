@@ -19,11 +19,6 @@
 		"2f970f5b"
 	],
 	tasks: [{
-		uid: "ccbcea50",
-		type: "fluid",
-		fluid: "ammonia"
-	},
-	{
 		uid: "7cec66bd",
 		type: "item",
 		items: [{

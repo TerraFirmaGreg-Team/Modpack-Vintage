@@ -5,9 +5,7 @@
 	y: 14.0d,
 	description: "{tfg.quests.lv.autoclave.subtitle}",
 	text: [
-		"{tfg.quests.lv.autoclave.desc1}",
-		"",
-		"{tfg.quests.lv.autoclave.desc2}"
+		"{tfg.quests.lv.autoclave.desc1}"
 	],
 	dependencies: [
 		"3418fbbb"

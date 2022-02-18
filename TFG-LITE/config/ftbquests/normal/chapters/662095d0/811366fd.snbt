@@ -13,15 +13,15 @@
 	text: [
 		"{tfg.quests.mv.benzene.desc1}",
 		"",
-		"tfg.quests.mv.benzene.desc2}",
+		"{tfg.quests.mv.benzene.desc2}",
 		"",
-		"tfg.quests.mv.benzene.desc4}",
+		"{tfg.quests.mv.benzene.desc4}",
 		"",
-		"tfg.quests.mv.benzene.desc5}",
+		"{tfg.quests.mv.benzene.desc5}",
 		"",
-		"tfg.quests.mv.benzene.desc6}",
+		"{tfg.quests.mv.benzene.desc6}",
 		"",
-		"tfg.quests.mv.benzene.desc7}"
+		"{tfg.quests.mv.benzene.desc7}"
 	],
 	dependencies: [
 		"65405836"

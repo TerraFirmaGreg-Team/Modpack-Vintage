@@ -30,13 +30,17 @@
 		uid: "47d75781",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 20s,
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					Material: "diamond"
-				},
-				MaxCharge: 100000L
+				display: {
+					Name: "Any craftingToolMiningDrill"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolMiningDrill"
+				}
 			}
 		}],
 		ignore_nbt: 1b

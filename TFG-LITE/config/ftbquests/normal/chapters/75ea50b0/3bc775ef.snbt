@@ -1,0 +1,16 @@
+{
+	x: -21.5d,
+	y: -2.0d,
+	text: [
+		"The main §1IV§r Material! §9",
+		"",
+		"Tungstensteel§r is used in §1IV§r machines, as a §9Coil§r material, in §aHSS-G§r (which is used in §2HSS-E§r and §4HSS-S§r), in its own tier of §9Crates§r, §9Drums§r, §9Cells§r, in the §3Processing Array§r, §3Extreme Combustion Engine§r, §3Large Plasma Turbine§r... suffice to say you will need §clots§r of this."
+	],
+	tasks: [{
+		uid: "b49348b3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2013"
+		}]
+	}]
+}

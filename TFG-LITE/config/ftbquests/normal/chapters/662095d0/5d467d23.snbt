@@ -1,14 +1,13 @@
 {
-	title: "Super Tank",
+	title: "{tfg.quests.mv.supertank.title}",
 	icon: "gregtech:machine 1 1575",
 	x: 14.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.supertank.subtitle}",
 	text: [
-		"§oSuper Tanks are OP!! No but seriously.§r",
+		"{tfg.quests.mv.supertank.desc1}",
 		"",
-		"This is the ultimate portable Fluid storage solution. §64,000 buckets storage§r in one single block! Like Drums, Super Tanks keep their fluids when broken, and can be cleared in the crafting grid.",
-		"",
-		"For §9even more§r storage, use higher tier Super Tanks or AE2 Fluid Storage Cells."
+		"{tfg.quests.mv.supertank.desc2}"
 	],
 	dependencies: [
 		"4e8615d1"

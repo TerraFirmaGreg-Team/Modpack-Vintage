@@ -1,7 +1,7 @@
 {
 	title: "Epoxy",
 	icon: "gregtech:meta_plate 1 1013",
-	x: -3.0d,
+	x: -4.5d,
 	y: 3.0d,
 	text: [
 		"No Description"

@@ -1,8 +1,8 @@
 {
 	title: "Nanoprocessors",
 	icon: "gregtech:meta_item_1 1 632",
-	x: 1.5d,
-	y: 0.0d,
+	x: 2.5047619047619065d,
+	y: 0.03214285714285836d,
 	text: [
 		"No Description"
 	],

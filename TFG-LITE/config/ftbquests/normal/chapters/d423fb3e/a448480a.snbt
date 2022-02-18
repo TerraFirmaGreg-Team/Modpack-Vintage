@@ -1,0 +1,26 @@
+{
+	x: -14.0d,
+	y: -2.0d,
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "1663c622",
+		type: "item",
+		items: [{
+			item: "projectred-illumination:lamp"
+		},
+		{
+			item: "projectred-illumination:fixture_light"
+		},
+		{
+			item: "projectred-illumination:fallout_lamp"
+		},
+		{
+			item: "projectred-illumination:lantern"
+		},
+		{
+			item: "projectred-illumination:cage_lamp"
+		}]
+	}]
+}

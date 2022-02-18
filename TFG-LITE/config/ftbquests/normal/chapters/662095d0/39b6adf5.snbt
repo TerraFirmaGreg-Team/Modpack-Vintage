@@ -1,15 +1,13 @@
 {
 	x: 20.0d,
 	y: -12.0d,
+	description: "{tfg.quests.mv.hca.subtitle}",
 	text: [
-		"§oWe can guarantee you have a sample of this with you right now! It's in your stomach as part of gastric acid.§r",
+		"{tfg.quests.mv.hca.desc1}",
+		"{tfg.quests.mv.hca.desc2}",
 		"",
-		"Obtain §9Hydrochloric Acid§r by mixing §aHydrogen§r and §aChlorine§r.",
-		"This acid is also obtained from as waste from a lot of reactions involving §aChlorine§r. Depending on your setups, you may never need to produce it directly.",
-		"",
-		"",
-		"§cNote:§r We have a bot command on our Discord, called $medicine: \"Do not attempt this in real life, it is not only illegal but also stupidly dangerous\".",
-		"This applies to toying with chemicals. Please don't do it."
+		"{tfg.quests.mv.hca.desc3}",
+		"{tfg.quests.mv.hca.desc4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

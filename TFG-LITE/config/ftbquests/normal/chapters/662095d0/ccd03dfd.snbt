@@ -1,5 +1,5 @@
 {
-	title: "Sodium Persulfate / Iron III Chloride",
+	title: "{tfg.quests.mv.persulfate.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -9,21 +9,16 @@
 	},
 	x: 18.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.persulfate.subtitle}",
 	text: [
-		"§oThese acids are used to etch Copper off Circuit Boards... or something like that.§r",
+		"{tfg.quests.mv.persulfate.desc1}",
 		"",
-		"§aSodium Persulfate§r can be used in §9Ore Processing§r in the §3Chemical Bath§r, to get various bonus outputs you would not normally obtained. It is completely optional, but pretty rewarding.",
+		"{tfg.quests.mv.persulfate.desc2}",
+		"{tfg.quests.mv.persulfate.desc3}",
+		"{tfg.quests.mv.persulfate.desc4}",
 		"",
-		"",
-		"But the real topic of this Quest is here:",
-		"§aSodium Persulfate§r and §aIron III Chloride§r are used to make cheaper §9Good Circuit Boards§r, as it cuts the Silver amount by a factor of four.",
-		"They are also §drequired§r to make §9Plastic Circuit Boards§r.",
-		"",
-		"Making §aSodium Persulfate§r will yield §aHydrochloric Acid§r as a coproduct, which you may re-use to make §aIron III Chloride§r. This should the best approach line right now, but the decision is entirely yours.",
-		"With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path.",
-		"",
-		"",
-		"This Quest can be completed with §eeither§r Fluid."
+		"{tfg.quests.mv.persulfate.desc5}",
+		"{tfg.quests.mv.persulfate.desc6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

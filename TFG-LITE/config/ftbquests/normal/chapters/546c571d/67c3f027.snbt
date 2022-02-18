@@ -4,7 +4,7 @@
 	y: 20.0d,
 	description: "{tfg.quests.lv.circuitassembling.subtitle}",
 	text: [
-		"{tfg.quests.lv.circuitassembling.desc}"
+		""
 	],
 	dependencies: [
 		"b9ccf07f",
