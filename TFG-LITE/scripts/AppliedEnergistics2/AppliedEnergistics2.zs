@@ -918,14 +918,14 @@ recipes.addShaped(<appliedenergistics2:material:43>, [
 	[<ore:stickCertusQuartz>, <appliedenergistics2:material:22>, <ore:stickCertusQuartz>]]);
 //Флаксовый перл
 recipes.addShaped(<appliedenergistics2:material:9>, [
-	[<appliedenergistics2:material:12>, <ore:plateEnderEye>, <appliedenergistics2:material:12>],
-	[<ore:plateEnderEye>, <minecraft:ender_pearl>, <ore:plateEnderEye>],
-	[<appliedenergistics2:material:12>, <ore:plateEnderEye>, <appliedenergistics2:material:12>]]);
+	[<appliedenergistics2:material:12>, <ore:plateEnderPearl>, <appliedenergistics2:material:12>],
+	[<ore:plateEnderPearl>, <minecraft:ender_pearl>, <ore:plateEnderPearl>],
+	[<appliedenergistics2:material:12>, <ore:plateEnderPearl>, <appliedenergistics2:material:12>]]);
 //Флаксовый перл рецепт 2
 recipes.addShaped(<appliedenergistics2:material:9>, [
-	[<appliedenergistics2:material:7>, <ore:plateEnderEye>, <appliedenergistics2:material:7>],
-	[<ore:plateEnderEye>, <minecraft:ender_pearl>, <ore:plateEnderEye>],
-	[<appliedenergistics2:material:7>, <ore:plateEnderEye>, <appliedenergistics2:material:7>]]);
+	[<appliedenergistics2:material:7>, <ore:plateEnderPearl>, <appliedenergistics2:material:7>],
+	[<ore:plateEnderPearl>, <minecraft:ender_pearl>, <ore:plateEnderPearl>],
+	[<appliedenergistics2:material:7>, <ore:plateEnderPearl>, <appliedenergistics2:material:7>]]);
 //Беспроводной раздатчик сигнала
 recipes.addShaped(<appliedenergistics2:material:41>, [
 	[<appliedenergistics2:part:140>, <appliedenergistics2:material:9>, <appliedenergistics2:part:140>],
