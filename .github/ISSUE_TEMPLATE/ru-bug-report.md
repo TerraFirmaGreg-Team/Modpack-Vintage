@@ -1,8 +1,8 @@
 ---
 name: "[RU] Отчет об ошибке"
 about: Создайте это, чтобы помочь нам исправлять баги.
-title: "[Bug]"
-labels: not confirmed
+title: ""
+labels: [bug, not confirmed]
 assignees: ''
 
 ---
