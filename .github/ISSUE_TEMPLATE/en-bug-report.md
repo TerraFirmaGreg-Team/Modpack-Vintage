@@ -1,8 +1,8 @@
 ---
-name: "[EN] --- Bug report"
+name: "[EN] Bug report"
 about: Create a report to help us improve
-title: "[Bug]"
-labels: not confirmed
+title: ""
+labels: [bug, not confirmed]
 assignees: ''
 
 ---
