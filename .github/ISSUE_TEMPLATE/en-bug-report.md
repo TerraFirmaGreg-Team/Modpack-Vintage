@@ -2,7 +2,7 @@
 name: "[EN] Bug report"
 about: Create a report to help us improve
 title: "[Bug]"
-labels: not confirmed
+labels: [bug, not confirmed]
 assignees: ''
 
 ---
