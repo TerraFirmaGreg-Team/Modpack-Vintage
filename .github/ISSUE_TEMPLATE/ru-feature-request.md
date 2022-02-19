@@ -1,5 +1,5 @@
 ---
-name: "[RU] --- Предложение"
+name: "[RU] Предложение"
 about: Предложите идею для модпака
 title: "[Feature]"
 labels: enhancement
