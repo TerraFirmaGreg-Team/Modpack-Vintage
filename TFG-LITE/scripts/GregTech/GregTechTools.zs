@@ -24,15 +24,6 @@ val RemoveItemRecipesByName = [
     "gregtech:axe_flint",
     "gregtech:hoe_flint",
     "gregtech:knife_flint",
-    /*"gregtech:toolheadsword_flint_wood",
-    "gregtech:toolheadpickaxe_flint_wood",
-    "gregtech:toolheadshovel_flint_wood",
-    "gregtech:toolheadaxe_flint_wood",
-    "gregtech:toolheadhoe_flint_wood",
-    "gregtech:toolheadhammer_flint_wood",
-    "gregtech:toolheadfile_flint_wood",
-    "gregtech:toolheadsaw_flint_wood",
-    "gregtech:toolheadsense_flint_wood",*/
     //Отключение крафтов молотков с палкой
     "gregtech:hammer_naquadah_enriched",
     "gregtech:hammer_naquadah_alloy",

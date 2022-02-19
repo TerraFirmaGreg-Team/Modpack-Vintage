@@ -56,29 +56,34 @@ for item in ItemsToRemove{
 }
 
 // Удаление рецептов
-recipes.removeByRecipeName("gregtech:cobblestone_hammer");
-recipes.removeByRecipeName("gregtech:piston_iron");
-recipes.removeByRecipeName("gregtech:sticky_resin_torch");
-recipes.removeByRecipeName("gregtech:torch_phosphorus");
-recipes.removeByRecipeName("gregtech:torch_coke");
-recipes.removeByRecipeName("gregtech:torch_coke_dust");
-recipes.removeByRecipeName("gregtech:torch_sulfur");
-recipes.removeByRecipeName("gregtech:iron_trapdoor");
-recipes.removeByRecipeName("gregtech:iron_door");
-recipes.removeByRecipeName("gregtech:iron_bars");
-recipes.removeByRecipeName("gregtech:quartz_sand");
-recipes.removeByRecipeName("gregtech:lead");
-recipes.removeByRecipeName("gregtech:redstone_lamp");
-recipes.removeByRecipeName("gregtech:repeater");
-recipes.removeByRecipeName("gregtech:comparator");
-recipes.removeByRecipeName("gregtech:comparator_certus");
-recipes.removeByRecipeName("gregtech:comparator_quartzite");
-recipes.removeByRecipeName("gregtech:daylight_detector");
-recipes.removeByRecipeName("gregtech:daylight_detector_certus");
-recipes.removeByRecipeName("gregtech:daylight_detector_quartzite");
-recipes.removeByRecipeName("gregtech:lever");
-recipes.removeByRecipeName("gregtech:steam_output_bus");
-recipes.removeByRecipeName("gregtech:steam_input_bus");
+val RemoveItemRecipesByName = [
+    "gregtech:cobblestone_hammer",
+    "gregtech:piston_iron",
+    "gregtech:sticky_resin_torch",
+    "gregtech:torch_phosphorus",
+    "gregtech:torch_coke",
+    "gregtech:torch_coke_dust",
+    "gregtech:torch_sulfur",
+    "gregtech:iron_trapdoor",
+    "gregtech:iron_door",
+    "gregtech:iron_bars",
+    "gregtech:quartz_sand",
+    "gregtech:lead",
+    "gregtech:redstone_lamp",
+    "gregtech:repeater",
+    "gregtech:comparator",
+    "gregtech:comparator_certus",
+    "gregtech:comparator_quartzite",
+    "gregtech:daylight_detector",
+    "gregtech:daylight_detector_certus",
+    "gregtech:daylight_detector_quartzite",
+    "gregtech:lever",
+    "gregtech:steam_output_bus",
+    "gregtech:steam_input_bus"
+] as string[];
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
 
 // Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
