@@ -10,7 +10,7 @@
 		"{tfg.quests.mv.LV.desc2}"
 	],
 	dependencies: [
-		"b1f7f431"
+		"495f6775"
 	],
 	tasks: [{
 		uid: "c72fac7d",

@@ -2,7 +2,7 @@
 	title: "{tfg.quests.mv.laserengraving.title}",
 	icon: "gregtech:machine 1 561",
 	x: 12.0d,
-	y: -3.0d,
+	y: 0.0d,
 	description: "{tfg.quests.mv.laserengraving.subtitle}",
 	text: [
 		"{tfg.quests.mv.laserengraving.desc1}"

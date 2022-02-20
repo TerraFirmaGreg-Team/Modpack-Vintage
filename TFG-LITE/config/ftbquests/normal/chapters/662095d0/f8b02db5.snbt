@@ -13,8 +13,6 @@
 				FluidName: "wood_gas",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

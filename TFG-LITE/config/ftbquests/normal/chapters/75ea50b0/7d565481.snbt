@@ -1,7 +1,7 @@
 {
 	title: "We Need More Steel!",
 	x: -21.5d,
-	y: -6.0d,
+	y: -5.0d,
 	text: [
 		"§oSteel, the Shrödinger alloy of all alloys. Made with a very small percentage of carbon in mass, it is significantly tougher than Iron or Wrought Iron.§r",
 		"",

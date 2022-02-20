@@ -22,7 +22,6 @@
 				FluidName: "hydrochloric_acid",
 				Amount: 1000
 			}
-		}],
-		ignore_nbt: 2b
+		}]
 	}]
 }

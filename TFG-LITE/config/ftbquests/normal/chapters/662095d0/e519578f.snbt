@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.mv.multiple.title}",
 	icon: "gregtech:fluid_pipe_nonuple 1 2013",
-	x: 4.0d,
-	y: -7.0d,
+	x: 7.0d,
+	y: -3.0d,
 	description: "{tfg.quests.mv.multiple.subtitle}",
 	text: [
 		"{tfg.quests.mv.multiple.desc1}",

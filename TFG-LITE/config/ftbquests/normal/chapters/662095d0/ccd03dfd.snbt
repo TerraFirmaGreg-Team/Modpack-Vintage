@@ -15,10 +15,7 @@
 		"",
 		"{tfg.quests.mv.persulfate.desc2}",
 		"{tfg.quests.mv.persulfate.desc3}",
-		"{tfg.quests.mv.persulfate.desc4}",
-		"",
-		"{tfg.quests.mv.persulfate.desc5}",
-		"{tfg.quests.mv.persulfate.desc6}"
+		"{tfg.quests.mv.persulfate.desc4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -33,8 +30,7 @@
 				FluidName: "sodium_persulfate",
 				Amount: 1000
 			}
-		}],
-		ignore_nbt: 2b
+		}]
 	},
 	{
 		uid: "5c1cb2e5",
@@ -46,7 +42,6 @@
 				Amount: 1000
 			}
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_damage: true
 	}]
 }

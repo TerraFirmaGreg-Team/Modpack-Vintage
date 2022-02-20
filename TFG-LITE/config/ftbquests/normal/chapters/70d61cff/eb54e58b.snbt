@@ -16,8 +16,14 @@
 		"ff136331"
 	],
 	tasks: [{
-		uid: "c4519699",
-		type: "fluid",
-		fluid: "phenol"
+		uid: "b2e7d677",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "phenol",
+				Amount: 1000
+			}
+		}]
 	}]
 }

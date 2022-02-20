@@ -17,9 +17,7 @@
 		"",
 		"{tfg.quests.mv.balanced.desc2}",
 		"",
-		"{tfg.quests.mv.balanced.desc3}",
-		"",
-		"{tfg.quests.mv.balanced.desc4}"
+		"{tfg.quests.mv.balanced.desc3}"
 	],
 	dependencies: [
 		"409e98ab"

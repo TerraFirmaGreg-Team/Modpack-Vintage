@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.mv.stainless.title}",
 	icon: "gregtech:meta_ingot 1 323",
-	x: 10.5d,
+	x: 9.75d,
 	y: -4.5d,
 	description: "{tfg.quests.mv.stainless.subtitle}",
 	text: [

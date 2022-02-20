@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.cheese.title}",
-	x: -12.0d,
+	x: -14.0d,
 	y: 7.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.cheese.subtitle}",

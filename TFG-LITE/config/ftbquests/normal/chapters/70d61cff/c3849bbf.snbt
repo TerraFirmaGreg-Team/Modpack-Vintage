@@ -17,8 +17,14 @@
 		"14263e77"
 	],
 	tasks: [{
-		uid: "42e2aeff",
-		type: "fluid",
-		fluid: "epichlorohydrin"
+		uid: "5671d315",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "epichlorohydrin",
+				Amount: 1000
+			}
+		}]
 	}]
 }

@@ -2,7 +2,7 @@
 	title: "{tfg.quests.mv.RAM.title}",
 	icon: "gregtech:meta_item_1 1 592",
 	x: 13.5d,
-	y: -4.5d,
+	y: -3.0d,
 	description: "{tfg.quests.mv.RAM.subtitle}",
 	text: [
 		""

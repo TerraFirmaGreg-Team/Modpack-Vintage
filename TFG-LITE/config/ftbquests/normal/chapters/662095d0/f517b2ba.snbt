@@ -28,7 +28,6 @@
 				FluidName: "severely_steamcracked_light_fuel",
 				Amount: 1000
 			}
-		}],
-		ignore_nbt: 2b
+		}]
 	}]
 }
