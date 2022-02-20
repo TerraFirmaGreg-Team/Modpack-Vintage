@@ -1,0 +1,8 @@
+{
+  "parent": "gregtech:item/handheld",
+  "textures": {
+	"layer0": "gregtech:items/void",
+	"layer1": "gregtech:items/tools/drill",
+	"layer2": "gregtech:items/tools/drill_power_unit_iv"
+  }
+}
