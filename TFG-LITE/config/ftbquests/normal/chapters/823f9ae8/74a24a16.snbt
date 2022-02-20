@@ -1,0 +1,14 @@
+{
+	x: -26.0d,
+	y: 11.0d,
+	dependencies: [
+		"d99ac91f"
+	],
+	tasks: [{
+		uid: "cea14bf0",
+		type: "item",
+		items: [{
+			item: "improvedbackpacks:blank_upgrade"
+		}]
+	}]
+}

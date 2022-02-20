@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.steam.itempipe.title}",
+	icon: "gregtech:item_pipe_normal 1 112",
+	x: -18.0d,
+	y: -8.0d,
+	text: [
+		"{tfg.quests.steam.itempipe.desc}"
+	],
+	dependencies: [
+		"5347bf68"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3ab0ae21",
+		type: "item",
+		items: [{
+			item: "gregtech:item_pipe_small 1 112"
+		}]
+	}]
+}

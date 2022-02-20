@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.steam.wrench.title}",
+	x: -10.5d,
+	y: 0.5d,
+	description: "{tfg.quests.steam.wrench.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "a3390c20",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWrench"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolWrench"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

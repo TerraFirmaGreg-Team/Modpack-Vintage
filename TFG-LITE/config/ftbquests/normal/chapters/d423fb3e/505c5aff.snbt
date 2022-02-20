@@ -1,0 +1,15 @@
+{
+	x: -14.0d,
+	y: -9.0d,
+	shape: "octagon",
+	dependencies: [
+		"7d03eeb7"
+	],
+	tasks: [{
+		uid: "417846cd",
+		type: "item",
+		items: [{
+			item: "gregtech:steam_casing 1 1"
+		}]
+	}]
+}

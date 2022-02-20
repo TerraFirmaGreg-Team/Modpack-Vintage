@@ -1,0 +1,36 @@
+{
+	title: "Upgrade your EBF II",
+	icon: "gregtech:machine 1 1213",
+	x: -1.0d,
+	y: 4.0d,
+	shape: "circle",
+	text: [
+		"So you can run off HV Generators."
+	],
+	dependencies: [
+		"2e62dccf",
+		"b381cff0",
+		"490b3016"
+	],
+	tasks: [{
+		uid: "58246d00",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 578"
+		}]
+	},
+	{
+		uid: "f160d792",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 603"
+		}]
+	},
+	{
+		uid: "44348e81",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1213"
+		}]
+	}]
+}

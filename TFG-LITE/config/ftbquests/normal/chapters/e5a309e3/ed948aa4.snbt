@@ -1,0 +1,32 @@
+{
+	title: "Ammonia",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "ammonia"
+		}
+	},
+	x: 5.5d,
+	y: 2.5d,
+	shape: "circle",
+	text: [
+		"The recipe that will give you the least headaches is the one in the §3HV Chemical Reactor§r, but other sources may pick your attention more.",
+		"",
+		"Make sure your §aHydrogen§r production (mostly from §aWater electrolysis§r) is keeping up."
+	],
+	dependencies: [
+		"2f970f5b"
+	],
+	tasks: [{
+		uid: "7cec66bd",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ammonia",
+				Amount: 1000
+			}
+		}]
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	icon: "gregtech:machine 1 67",
+	x: -6.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"§oShredding your Ores with Byproducts§r",
+		"",
+		"The §3HV Macerator§r finally unlocks more of the slots shown in JEI. With this the first §9three§r slots are now available. This allows you to receive the §6unique ore Byproduct§r from macerating §dThermal §dCentrifuged Ore§r.",
+		"",
+		"",
+		"§bLore:§r In GregTech 5u, the HV macerator only gave two slots. Who needed that stone dust anyways?"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "904219e1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 67"
+		}]
+	}]
+}

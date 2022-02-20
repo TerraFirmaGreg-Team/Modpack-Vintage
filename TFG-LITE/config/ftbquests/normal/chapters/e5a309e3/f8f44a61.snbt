@@ -1,0 +1,24 @@
+{
+	title: "More HV Circuits",
+	icon: "gregtech:meta_item_1 1 629",
+	x: -2.0d,
+	y: -4.0d,
+	shape: "circle",
+	text: [
+		"Better HV Circuits, much §6cheaper§r and easier to make than from the previous Tier.",
+		"",
+		"",
+		"§6You should now be ready to move on the HV Chapter§r, unless you still need to scale up Power Production."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "91497bfc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 629"
+		}]
+	}]
+}

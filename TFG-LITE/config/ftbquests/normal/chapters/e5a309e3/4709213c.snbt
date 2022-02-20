@@ -1,0 +1,20 @@
+{
+	title: "Time to throw away your §4Primitive Water Pumps§r. Place this on the side of a machine to give it §616 buckets§o§r§r of Water every second!",
+	x: -6.0d,
+	y: 4.0d,
+	shape: "circle",
+	text: [
+		"Time to throw away your §4Primitive Water Pumps§r.",
+		"Place this on the side of a machine to give it §616 buckets§o§r§r of Water every second!"
+	],
+	dependencies: [
+		"2e62dccf"
+	],
+	tasks: [{
+		uid: "e387d582",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 310"
+		}]
+	}]
+}

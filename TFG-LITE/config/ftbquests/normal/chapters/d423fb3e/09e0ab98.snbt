@@ -1,0 +1,16 @@
+{
+	x: -16.0d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "{tfg.quests.steam.cokegem.subtitle}",
+	dependencies: [
+		"57208fec"
+	],
+	tasks: [{
+		uid: "3beb90d4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_gem 1 319"
+		}]
+	}]
+}

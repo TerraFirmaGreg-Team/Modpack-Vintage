@@ -1,0 +1,32 @@
+{
+	title: "Central Monitor",
+	icon: "gregtech:machine 1 1029",
+	x: -3.0d,
+	y: 6.0d,
+	text: [
+		"The §3Central Monitor§r is an §doptional§r yet extremely charming structure.",
+		"",
+		"It acts as a §6display screen§r for machine information, machine GUI, and more!",
+		"Using it, you can also §9remotely access§r machines, given the right configuration.",
+		"",
+		"Its mechanics are explained in the §4Terminal§r."
+	],
+	dependencies: [
+		"2e62dccf"
+	],
+	tasks: [{
+		uid: "f2d77642",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1029"
+		}]
+	},
+	{
+		uid: "fdaac05d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 9 1667"
+		}],
+		count: 9L
+	}]
+}

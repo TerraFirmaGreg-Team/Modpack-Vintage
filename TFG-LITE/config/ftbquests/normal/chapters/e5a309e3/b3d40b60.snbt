@@ -1,0 +1,26 @@
+{
+	title: "Ice Cold",
+	icon: "gregtech:machine 1 1002",
+	x: -3.0d,
+	y: -6.0d,
+	text: [
+		"§oVacuums actually make things hotter... No questions asked.§r",
+		"",
+		"The §3Vacuum Freezer§r is a multiblock used to cool down §eHot Ingots§r. All ingots made in the EBF with a temperature above §d1750K§r will need it.",
+		"",
+		"Most of the time, your §3Electric Blast Furnace§r will be the bottleneck, so you don't need to worry about overclocking your freezer.",
+		"",
+		"Since §eHot Ingots§r §churt you§r when held, item routing will be very useful. More information on the next quest."
+	],
+	dependencies: [
+		"fc8e1322"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "46f4edb8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1002"
+		}]
+	}]
+}

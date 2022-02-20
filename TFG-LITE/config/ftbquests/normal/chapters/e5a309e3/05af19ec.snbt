@@ -1,0 +1,16 @@
+{
+	title: "HV",
+	icon: "gregtech:meta_gear 1 323",
+	x: -3.0d,
+	y: 0.0d,
+	shape: "circle",
+	dependencies: [
+		"332a369b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "15905639",
+		type: "checkmark",
+		title: "HV"
+	}]
+}

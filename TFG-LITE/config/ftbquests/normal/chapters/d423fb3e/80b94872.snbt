@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.steam.mininghammer.title}",
+	x: -12.5d,
+	y: 3.0d,
+	description: "{tfg.quests.steam.mininghammer.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "b57f2362",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 19s,
+			tag: {
+				GT.ToolStats: {
+					Material: "any"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

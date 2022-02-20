@@ -1,0 +1,19 @@
+{
+	title: "Neutronium",
+	icon: "gregtech:meta_ingot 1 127",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"7a6804de"
+	],
+	tasks: [{
+		uid: "9cb0ded6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 127"
+		}]
+	}]
+}

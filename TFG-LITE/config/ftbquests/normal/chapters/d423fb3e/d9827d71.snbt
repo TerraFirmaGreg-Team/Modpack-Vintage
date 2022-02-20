@@ -1,0 +1,31 @@
+{
+	x: -12.0d,
+	y: -1.5d,
+	shape: "diamond",
+	description: "{tfg.quests.steam.mortar.subtitle}",
+	dependencies: [
+		"8fdd423e"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "655b9ef6",
+		type: "item",
+		title: "{tfg.quests.steam.mortar.title}",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolMortar"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolMortar"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

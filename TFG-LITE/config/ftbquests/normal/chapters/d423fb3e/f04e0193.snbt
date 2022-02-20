@@ -1,0 +1,19 @@
+{
+	x: -12.0d,
+	y: -20.0d,
+	description: "{tfg.quests.steam.basiccircuit.subtitle}",
+	dependencies: [
+		"445f79e7",
+		"031ab2d9",
+		"36338f88",
+		"5d2b7c55"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "badf7c98",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 621"
+		}]
+	}]
+}

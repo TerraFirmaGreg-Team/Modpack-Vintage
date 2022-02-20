@@ -1,0 +1,16 @@
+{
+	icon: "gregtech:meta_gear 1 260",
+	x: -12.0d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "{tfg.quests.steam.maincheck.subtitle}",
+	dependencies: [
+		"106d5c1d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9b2bc011",
+		type: "checkmark",
+		title: "{tfg.quests.steam.maincheck.title}"
+	}]
+}

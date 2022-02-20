@@ -1,0 +1,34 @@
+{
+	title: "{tfg.quests.mv.ULV.title}",
+	icon: "gregtech:meta_item_1 1 626",
+	x: 0.5d,
+	y: -1.5d,
+	description: "{tfg.quests.mv.ULV.subtitle}",
+	text: [
+		"{tfg.quests.mv.ULV.desc1}"
+	],
+	dependencies: [
+		"b381cff0"
+	],
+	tasks: [{
+		uid: "45000bde",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 571"
+		}]
+	},
+	{
+		uid: "eae7c6d4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 596"
+		}]
+	},
+	{
+		uid: "ca5fa6ac",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 626"
+		}]
+	}]
+}

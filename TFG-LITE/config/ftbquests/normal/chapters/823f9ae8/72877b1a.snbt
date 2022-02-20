@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.goldpile.title}",
+	x: -10.5d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.goldpile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "b5cc49c5",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyGold"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinyGold"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	description: "{tfg.quests.primitive.tochilka3.subtitle}",
+	dependencies: [
+		"5bb9fc36"
+	],
+	tasks: [{
+		uid: "1b831b1d",
+		type: "item",
+		items: [{
+			id: "tfcthings:grindstone_quartz",
+			ForgeCaps: {
+				Parent: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db7c8f33",
+		type: "item",
+		items: [{
+			item: "tfcthings:grindstone_base"
+		}]
+	}]
+}

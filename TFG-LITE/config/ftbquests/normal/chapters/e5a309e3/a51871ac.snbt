@@ -1,0 +1,24 @@
+{
+	title: "HV Superconductors",
+	icon: "gregtech:wire_single 1 426",
+	x: 1.0d,
+	y: -8.5d,
+	shape: "circle",
+	text: [
+		"By this point, normal Cables with insulation have a near insignificant loss.",
+		"",
+		"You can use those for good looks!",
+		"",
+		"Superconductors are still required to craft §aField Generators§r."
+	],
+	dependencies: [
+		"9f71f795"
+	],
+	tasks: [{
+		uid: "8ca3b01a",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 426"
+		}]
+	}]
+}

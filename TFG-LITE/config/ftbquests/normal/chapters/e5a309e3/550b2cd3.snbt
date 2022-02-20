@@ -1,0 +1,38 @@
+{
+	title: "Super Battery",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 741s,
+		tag: {
+			Charge: 6400000L
+		}
+	},
+	x: -5.0d,
+	y: 1.0d,
+	shape: "circle",
+	text: [
+		"§oBatteries are cool, but you know what's cooler? Science-fiction Batteries!§r",
+		"",
+		"§aEnergium Crystals§r store a significant amount of §9EU§r, much greater than regular batteries. They are also arguably cheaper!",
+		"",
+		"You will need a §3HV Autoclave§r. For sure we were not gonna give them for free!"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "7851c96c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 127"
+		}]
+	},
+	{
+		uid: "532deb14",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 741"
+		}],
+		ignore_nbt: 1b
+	}]
+}

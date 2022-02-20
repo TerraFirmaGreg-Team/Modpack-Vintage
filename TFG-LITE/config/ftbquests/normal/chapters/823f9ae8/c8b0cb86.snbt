@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.zincpile.title}",
+	x: -13.5d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "{tfg.quests.primitive.zincpile.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "7d24d345",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyZinc"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinyZinc"
+				}
+			}
+		}]
+	}]
+}

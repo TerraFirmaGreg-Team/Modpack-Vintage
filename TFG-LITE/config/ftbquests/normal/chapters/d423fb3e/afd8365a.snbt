@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.steam.wirecutter.title}",
+	x: -11.5d,
+	y: 0.0d,
+	description: "{tfg.quests.steam.wirecutter.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "f0ecef94",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWireCutter"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolWireCutter"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}
