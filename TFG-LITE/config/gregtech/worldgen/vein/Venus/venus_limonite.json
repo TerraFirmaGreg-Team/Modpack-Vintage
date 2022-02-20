@@ -1,34 +1,35 @@
 {
-    "weight": 80,
-    "max_height": 55,
-    "min_height": 15,
-    "density": 0.4,
-    "generator": {"type": "ellipsoid", "radius": [13, 30]},
-    "vein_populator": {"type": "surface_rock", "material": "iron"},
-    "dimension_filter": ["dimension_id:-31"],
-
+    "name": "Venus Limonite Vein",
+    "weight": 50,
+    "density": 0.3,
+    "max_height": 90,
+    "min_height": 5,
+    "generation_predicate":["block:galacticraftplanets:venus:1"],
+    "dimension_filter": [
+      "dimension_id:-31"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
     "filler": {
-        "type": "simple",
-        "value": {
-            "type": "weight_random",
-            "values": [
-                {
-                    "weight": "30",
-                    "value": "ore:yellow_limonite"
-                },
-                {
-                    "weight": "30",
-                    "value": "ore:brown_limonite"
-                },
-                {
-                    "weight": "30",
-                    "value": "ore:banded_iron"
-                },
-                {
-                    "weight": "10",
-                    "value": "ore:malachite"
-                }
-            ]
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:yellow_limonite"
+        },
+        {
+          "secondary": "ore:brown_limonite"
+        },
+        {
+          "between": "ore:banded_iron"
+        },
+        {
+          "sporadic": "ore:malachite"
         }
+      ]
     }
 }

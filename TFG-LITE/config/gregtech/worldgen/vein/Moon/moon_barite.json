@@ -1,26 +1,35 @@
 {
-    "weight": 60,
+    "name": "Moon Barite Vein",
+    "weight": 50,
+    "density": 0.1,
     "max_height": 90,
-    "min_height": 50,
-	"density": 0.4,
-    "generator": {"type": "ellipsoid", "radius": [15, 30]},
-	"vein_populator": {"type": "surface_rock", "material": "barite"},
-    "dimension_filter": ["dimension_id:-28"],
-	
+    "min_height": 5,
+    "generation_predicate":["block:galacticraftcore:basic_block_moon:4"],
+    "dimension_filter": [
+      "dimension_id:-28"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
     "filler": {
-        "type": "simple",
-        "value": {
-            "type": "weight_random",
-            "values": [
-                {
-                    "weight": "70",
-                    "value": "ore:barite"
-                },
-                {
-                    "weight": "30",
-                    "value": "ore:witherite"
-                }
-            ]
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:barite"
+        },
+        {
+          "secondary": "ore:quartzite"
+        },
+        {
+          "between": "ore:barite"
+        },
+        {
+          "sporadic": "ore:quartzite"
         }
+      ]
     }
 }
