@@ -770,10 +770,6 @@ recipes.addShapeless(<appliedenergistics2:part:241>, [<appliedenergistics2:part:
 recipes.addShapeless(<appliedenergistics2:part:261>, [<appliedenergistics2:part:260>, <minecraft:water_bucket>]);
 //Датчик жидкостного уровня
 recipes.addShapeless(<appliedenergistics2:part:281>, [<appliedenergistics2:part:280>, <minecraft:water_bucket>]);
-//Жидкостный аннигиляционный самолет 
-recipes.addShapeless(<appliedenergistics2:part:302>, [<appliedenergistics2:part:300>, <minecraft:water_bucket>]);
-//Формационная жидкостная шина
-recipes.addShapeless(<appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
 //Жидкостный интерфейс
 recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 //Шина P2P тунеля жидкостная
@@ -906,16 +902,20 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 	[<appliedenergistics2:part:16>, <appliedenergistics2:material:37>, <appliedenergistics2:part:16>],
 	[<ore:plateAluminium>, <appliedenergistics2:material:24>, <ore:plateAluminium>]]);
 
-//Ядро А
-recipes.addShaped(<appliedenergistics2:material:44>, [
-	[<ore:stickNetherQuartz>, <appliedenergistics2:material:22>, <ore:stickNetherQuartz>],
-	[<appliedenergistics2:material:22>, <appliedenergistics2:material:12>, <appliedenergistics2:material:22>],
-	[<ore:stickNetherQuartz>, <appliedenergistics2:material:22>, <ore:stickNetherQuartz>]]);
-//Ядро Ф
-recipes.addShaped(<appliedenergistics2:material:43>, [
-	[<ore:stickCertusQuartz>, <appliedenergistics2:material:22>, <ore:stickCertusQuartz>],
-	[<appliedenergistics2:material:22>, <appliedenergistics2:material:12>, <appliedenergistics2:material:22>],
-	[<ore:stickCertusQuartz>, <appliedenergistics2:material:22>, <ore:stickCertusQuartz>]]);
+// Annihilation Core
+recipes.addShaped("annihilationcore", <appliedenergistics2:material:44>, [
+    [<ore:circuitPrimitive>, <appliedenergistics2:material:22>, <ore:boltNetherQuartz>]]);
+// Formation Core
+recipes.addShaped("formationcore", <appliedenergistics2:material:43>, [
+    [<ore:circuitPrimitive>, <appliedenergistics2:material:22>, <ore:boltCertusQuartz>]]);
+// ME Fluid Formation Plane
+recipes.addShaped("planes_formation_fluid", <appliedenergistics2:part:321>, [
+    [<metaitem:electric.pump.lv>, <appliedenergistics2:material:43>, <ore:crystalFluix>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
+// ME Fluid Annihilation Plane
+recipes.addShaped("planes_annihilation_fluid", <appliedenergistics2:part:302>, [
+    [<metaitem:electric.pump.lv>, <appliedenergistics2:material:44>, <ore:crystalFluix>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
 //Флаксовый перл
 recipes.addShaped(<appliedenergistics2:material:9>, [
 	[<appliedenergistics2:material:12>, <ore:plateEnderPearl>, <appliedenergistics2:material:12>],

@@ -314,18 +314,6 @@ centrifuge.findRecipe(80, [<minecraft:soul_sand:0>], null).remove();
 centrifuge.findRecipe(20, [<metaitem:dustEndstone>], null).remove();
 // Myshroom * 1
 centrifuge.findRecipe(30, [<minecraft:mycelium:0>], null).remove();
-
-// Кованое железо (Маленькая кучка пыли) * 1
-centrifuge.findRecipe(900, [<metaitem:dustMetalMixture>], null).remove();
-<recipemap:centrifuge>.recipeBuilder()
-    .inputs(<ore:dustMetalMixture>)
-    .outputs(<ore:dustSmallBandedIron>.firstItem)
-    .outputs(<ore:dustSmallBauxite>.firstItem)
-    .outputs(<ore:dustTinyPyrolusite>.firstItem * 2)
-    .outputs(<ore:dustTinyBarite>.firstItem)
-    .chancedOutput(<ore:dustTinyIlmenite>.firstItem, 5000, 500)
-    .chancedOutput(<ore:dustTinyChromite>.firstItem, 7500, 750)
-    .EUt(120).duration(390).buildAndRegister();
 //Quartz Sand - 2
 macerator.findRecipe(2, [<minecraft:sand>], null).remove();
 macerator.recipeBuilder()
