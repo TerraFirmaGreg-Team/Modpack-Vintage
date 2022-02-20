@@ -350,12 +350,6 @@ tfg.quests.steam.safe.subtitle=&aAn interesting safe, I don't know why you might
 tfg.quests.steam.mortar.title=Mortar
 tfg.quests.steam.mortar.subtitle=&aYou will need it to make it easier to crumble metals, or to create alloys right in your hands.
 
-tfg.quests.steam.tools.title=Tools
-tfg.quests.steam.tools.subtitle=&aThe main tools you will need to start learning GT.
-tfg.quests.steam.tools.task.wirecutter.title=&aWire Cutters
-tfg.quests.steam.tools.task.wrench.title=&aWrench
-tfg.quests.steam.tools.task.screwdriver.title=&aScrewdriver
-
 tfg.quests.steam.craftingstation.subtitle=&aA cool replacement for the vanilla workbench. Allows you to take items from nearby chests, as well as store items in yourself, also saves items in the crafting grid after leaving the workbench.
 
 tfg.quests.steam.raintank.subtitle=&aThe name speaks for itself. Allows you to collect water in the rain.
@@ -412,7 +406,40 @@ tfg.quests.steam.basiccircuit.subtitle=&aYour first processor, as powerful as so
 
 tfg.quests.steam.invar.title=Invar Ingot
 
+tfg.quests.steam.tools.title=Tools
+tfg.quests.steam.tools.subtitle=Here's your Introduction to GregTech tools. Something that may confuse you is how JEI displays Neutronium tools. But in fact you can make the tools off §dmany materials§r. The first one being copper...! Or Wrought Iron if you read that quest.
+tfg.quests.steam.tools.desc1=As an additional on §lall§r GregTech tools. You can §6repair§r them in an §6Anvil§r using the material of the tool itself, like any vanilla tool!
+tfg.quests.steam.tools.desc2=§eNote:§r Any Quest with GregTech tools can be completed with the tool crafted from any material, not just the one displayed.
+
+tfg.quests.steam.mininghammer.title=Mining hammer
 tfg.quests.steam.mininghammer.subtitle=&aHammer digging 3x3.
+
+tfg.quests.steam.crowbar.title=Crowbar
+tfg.quests.steam.crowbar.subtitle=§9§lCrowbar:§r A niche tool to remove Covers from GregTech machines with a right-click.
+
+tfg.quests.steam.screwdriver.title=Screwdriver
+tfg.quests.steam.screwdriver.subtitle=§9§lScrewdriver:§r A crafting tool. It is used for special configuration of machines and Covers.
+
+tfg.quests.steam.wirecutter.title=Wire Cutter
+tfg.quests.steam.wirecutter.subtitle=§9§lWire Cutter:§r A crafting tool. It is needed to connect wires together. Right-clicking on wires will enable or disable connection to other blocks.
+
+tfg.quests.steam.wrench.title=Wrench
+tfg.quests.steam.wrench.subtitle=§9§lWrench:§r A crafting tool. But also a mining tool for GregTech machines (perfect if you think using pickaxes is unethical). Is that it? Certainly not! It has right click functions to double as a Forge §6Wrench for other mods§r. Right Click also allows you to set the output side of GregTech machines. Shift right clicking allows you to rotate GregTech machines.
+
+tfg.quests.steam.hammer.title=Hammer
+tfg.quests.steam.hammer.subtitle=§9§lHammer:§r A crafting tool used to for a lot of early game recipes. It also works as a mining tool for ores to crush them, more information on that later. Its last function is to mute machines by §msmacking§r right-clicking them.
+
+tfg.quests.steam.softmallet.title=Soft Mallet
+tfg.quests.steam.softmallet.subtitle=§9§lSoft Mallet:§r A tool to pause machines from working with right-click. Right-clicking again resumes working.
+
+tfg.quests.steam.file.title=File
+tfg.quests.steam.file.subtitle=§9§lFile:§r A crafting tool. And that's it. Yes.
+
+tfg.quests.steam.knife.title=Knife
+tfg.quests.steam.knife.subtitle=§9§lKnife:§r A mediocre weapon, but also... you guessed it, a crafting tool!
+
+tfg.quests.steam.plunger.title=Plunger
+tfg.quests.steam.plunger.subtitle=§9§lPlunger:§r A tool to clear stuck fluids from GregTech machines.
 
 ##################################################################################################################################
 ########################################################## LV Phase ##############################################################
@@ -1210,6 +1237,12 @@ tfg.quests.mv.persulfate.desc3=§aSodium Persulfate§r and §aIron III Chloride�
 tfg.quests.mv.persulfate.desc4=They are also §drequired§r to make §9Plastic Circuit Boards§r.
 tfg.quests.mv.persulfate.desc5=Making §aSodium Persulfate§r will yield §aHydrochloric Acid§r as a coproduct, which you may re-use to make §aIron III Chloride§r. This should the best approach line right now, but the decision is entirely yours.
 tfg.quests.mv.persulfate.desc6=With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path.
+
+tfg.quests.mv.smelter.title=Ultimate Smelter
+tfg.quests.mv.smelter.subtitle=§oThe §3§oMulti Smelter§o§r§o might be the §6§omost powerful Furnace§r§o in modded Minecraft.§r
+tfg.quests.mv.smelter.desc1=At its lowest power (Cupronickel coils and LV Voltage), it smelts 32 items in just 12 seconds - equivalent to §926.7 Furnaces§r, or 3.3 Steam Ovens!
+tfg.quests.mv.smelter.desc2=Not to mention, standard §aoverclocks§r are in effect.
+tfg.quests.mv.smelter.desc3=And more importantly higher tier §3Coils§r increase the amount of items it can smelt in §dparallel§r!
 
 ##################################################################################################################################
 ########################################################## HV Phase ##############################################################
