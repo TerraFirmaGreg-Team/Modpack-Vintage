@@ -852,15 +852,33 @@ recipes.addShaped("molecular_assembler_iv", <appliedenergistics2:molecular_assem
     [<ore:plateTungstenSteel>, <appliedenergistics2:quartz_glass>, <ore:plateTungstenSteel>]
 ]);
 //Квантовое кольцо
-recipes.addShaped(<appliedenergistics2:quantum_ring>, [
-	[<ore:plateTitanium>, <appliedenergistics2:material:22>, <ore:plateTitanium>],
-	[<appliedenergistics2:material:24>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:16>],
-	[<ore:plateTitanium>, <appliedenergistics2:material:22>, <ore:plateTitanium>]]);
+assembly_line.recipeBuilder()
+   .inputs(<ore:batteryAdvanced> * 3)
+   .inputs(<ore:circuitElite> * 12)
+	 .inputs(<metaitem:emitter.iv> * 16)
+	 .inputs(<appliedenergistics2:material:24> * 8)
+   .inputs(<metaitem:sensor.iv> * 14)
+   .inputs(<appliedenergistics2:dense_energy_cell>)
+	 .inputs(<appliedenergistics2:material:22>)
+   .circuit(12)
+   .fluidInputs([<liquid:titanium> * 1188])
+   .outputs(<appliedenergistics2:quantum_ring>)
+   .duration(900)
+   .EUt(8300)
+   .buildAndRegister();
 //Камера квантового моста
-recipes.addShaped(<appliedenergistics2:quantum_link>, [
-	[<ore:plateTitanium>, <appliedenergistics2:material:9>, <ore:plateTitanium>],
-	[<appliedenergistics2:material:9>, <ore:gemFluix>, <appliedenergistics2:material:9>],
-	[<ore:plateTitanium>, <appliedenergistics2:material:9>, <ore:plateTitanium>]]);
+assembly_line.recipeBuilder()
+   .inputs(<appliedenergistics2:material:9> * 8)
+   .inputs(<appliedenergistics2:quartz_vibrant_glass> * 6)
+	 .inputs(<appliedenergistics2:material:24> * 8)
+   .inputs(<metaitem:sensor.iv> * 14)
+   .inputs(<appliedenergistics2:dense_energy_cell>)
+   .circuit(12)
+   .fluidInputs([<liquid:titanium> * 1088])
+   .outputs(<appliedenergistics2:quantum_link>)
+   .duration(700)
+   .EUt(8300)
+   .buildAndRegister();
 //Пилон
 recipes.addShaped(<appliedenergistics2:spatial_pylon>, [
 	[<ore:plateTitanium>, <appliedenergistics2:part:16>, <ore:plateTitanium>],
