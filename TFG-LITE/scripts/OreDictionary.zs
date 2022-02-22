@@ -85,6 +85,10 @@ for item in AllSeeds {
 <ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
 // remove gemEmerald
 <ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
+// remove dustSalt
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+// remove dustSaltpeter
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
 
 // --- GregTech
 // Chipped Gems from GT

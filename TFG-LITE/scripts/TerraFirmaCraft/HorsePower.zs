@@ -1,35 +1,47 @@
+import crafttweaker.item.IItemStack;
 import mods.horsepower.Grindstone;
 
 mods.jei.JEI.removeAndHide(<horsepower:flour>);
 mods.jei.JEI.removeAndHide(<horsepower:dough>);
 
+// GrindStone Removing
+val RemoveItemsFromQuern as IItemStack[] = [
+	<tfc:powder/flux> * 4,
+    <minecraft:redstone> * 8,
+    <tfc:powder/fertilizer> * 8,
+    <minecraft:glowstone_dust> * 8
+];
+for item in RemoveItemsFromQuern{
+    Grindstone.remove(item);
+}
+
 // GrindStone - GT ore --> GT small pile
-// - Copper
+// Copper
 Grindstone.add(<gregtech:ore_copper_0>, <ore:dustImpureCopper>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_malachite_0>, <ore:dustImpureMalachite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_tetrahedrite_0>, <ore:dustImpureTetrahedrite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_bornite_0>, <ore:dustImpureBornite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_chalcopyrite_0>, <ore:dustImpureChalcopyrite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_chalcocite_0>, <ore:dustImpureChalcocite>.firstItem * 3, 10, false);
-// - Tin
+// Tin
 Grindstone.add(<gregtech:ore_tin_0>, <ore:dustImpureTin>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_cassiterite_0>, <ore:dustImpureCassiterite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_cassiterite_sand_0>, <ore:dustImpureCassiteriteSand>.firstItem * 3, 10, false);
-// - Iron
+// Iron
 Grindstone.add(<gregtech:ore_iron_0>, <ore:dustImpureIron>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_pyrite_0>, <ore:dustImpurePyrite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_yellow_limonite_0>, <ore:dustImpureYellowLimonite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_magnetite_0>, <ore:dustImpureMagnetite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_brown_limonite_0>, <ore:dustImpureBrownLimonite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_banded_iron_0>, <ore:dustImpureBandedIron>.firstItem * 3, 10, false);
-// - Nickel
+// Nickel
 Grindstone.add(<gregtech:ore_nickel_0>, <ore:dustImpureNickel>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_garnierite_0>, <ore:dustImpureGarnierite>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_pentlandite_0>, <ore:dustImpurePentlandite>.firstItem * 3, 10, false);
-// - Lead
+// Lead
 Grindstone.add(<gregtech:ore_galena_0>, <ore:dustImpureGalena>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_lead_0>, <ore:dustImpureLead>.firstItem * 3, 10, false);
-// - Other
+// Other
 Grindstone.add(<gregtech:ore_gold_0>, <ore:dustImpureGold>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_silver_0>, <ore:dustImpureSilver>.firstItem * 3, 10, false);
 Grindstone.add(<gregtech:ore_sphalerite_0>, <ore:dustImpureSphalerite>.firstItem * 3, 10, false);
@@ -41,3 +53,4 @@ Grindstone.add(<gregtech:ore_bismuth_0>, <ore:dustImpureBismuth>.firstItem * 3, 
 
 // Other Recipes
 Grindstone.add(<tfc:food/soybean>, <firmalife:ground_soybeans>, 10, false);
+Grindstone.add(<ore:rockFlux>, <tfc:powder/flux> * 3, 5, false);

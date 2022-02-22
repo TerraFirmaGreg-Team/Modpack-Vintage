@@ -170,18 +170,16 @@ Grindstone.remove(<tfc:powder/charcoal> * 8);
 
 // --- --- Унификация соли
 // --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/salt>*4);
-Quern.removeRecipe(<tfc:powder/salt>*2);
-Grindstone.remove(<tfc:powder/salt>*6);
-Grindstone.remove(<tfc:powder/salt>*8);
-Rack.removeRecipe(<ore:dustSaltpeter>.firstItem);
+Quern.removeRecipe(<tfc:powder/salt>);
+Grindstone.remove(<tfc:powder/salt>);
+Rack.removeRecipe(<tfc:powder/saltpeter>);
 // --- Добавление рецептов
-Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 4);
-Grindstone.add(<tfc:rock/rocksalt>, <ore:dustSalt>.firstItem * 8, 10, false);
-Rack.addRecipe("rack_saltpeter_to_salt", <ore:dustSaltpeter>.firstItem, <ore:dustSalt>.firstItem, 24, 1.0);
+Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <metaitem:dustSalt> * 4);
+Grindstone.add(<tfc:rock/rocksalt>, <metaitem:dustSalt> * 8, 10, false);
+Rack.addRecipe("rack_saltpeter_to_salt", <metaitem:dustSaltpeter>, <metaitem:dustSalt>, 24, 1.0);
 
 // --- --- Унификация сальпетера
 // --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/saltpeter>*4);
-Grindstone.remove(<tfc:powder/saltpeter>*8);
+Quern.removeRecipe(<tfc:powder/saltpeter>);
+Grindstone.remove(<tfc:powder/saltpeter>);
 

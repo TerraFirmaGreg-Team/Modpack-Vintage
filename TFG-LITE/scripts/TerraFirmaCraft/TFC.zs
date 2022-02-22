@@ -282,6 +282,21 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
+// Удаление неиспользуемых рецептов из Quern
+val RemoveItemsFromQuern as IItemStack[] = [
+	<tfc:gem/diamond:2>,
+	<tfc:powder/fertilizer>,
+	<tfc:powder/malachite>,
+	<tfc:powder/limonite>,
+	<tfc:ore/gypsum>,
+	<tfc:powder/hematite>,
+	<minecraft:redstone> * 8,
+	<tfc:powder/flux> * 6,
+];
+for item in RemoveItemsFromQuern{
+    Quern.removeRecipe(item);
+}
+
 // Удаление рецептов
 val RemoveItemRecipesByName = [
     "tfc:vanilla/redstone/observer",
@@ -549,6 +564,17 @@ for i, TFC_Supports in TFC_Supports {
     	.duration(200).EUt(7).buildAndRegister();
 }
 
+// --- Furnace recipes for TFC items
+// Хавка
+for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
+    furnace.addRecipe(TFC_Cooked_Meat, TFC_Raw_Meat[i]);
+}
+
+// Керамика
+for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
+    furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
+}
+
 // Quern - GT ore --> GT crushed ore
 // - Copper
 Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:crushedCopper>.firstItem * 2);
@@ -585,15 +611,12 @@ Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <ore:crushedGr
 Quern.addRecipe("GTOreToTFC_Mica", <gregtech:ore_mica_0>, <ore:crushedMica>.firstItem * 2);
 Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <ore:crushedBismuth>.firstItem * 2);
 
-// --- Furnace recipes for TFC items
-// Хавка
-for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
-    furnace.addRecipe(TFC_Cooked_Meat, TFC_Raw_Meat[i]);
-}
-
-// Керамика
-for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
-    furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
+// Macerator recipes for Quern/Grindstone recipes
+for i, TFC_QuernToMaceratorOutput in TFC_QuernToMaceratorOutput {
+    macerator.recipeBuilder()
+    	.inputs(TFC_QuernToMaceratorInput[i])
+    	.outputs(TFC_QuernToMaceratorOutput * 2)
+    	.duration(50).EUt(2).buildAndRegister();
 }
 
 // Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
@@ -691,6 +714,9 @@ assembler.recipeBuilder()
 // Cobblestone * 1
 forge_hammer.findRecipe(16, [<chisel:stonebrick:0>], null).remove();
 
+// Вернуть рецепт Flux в молотилку
+Quern.addRecipe("tfg:flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
+
 // Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
 recipes.addShaped(<gregtech:machine:13>, 
@@ -723,7 +749,10 @@ recipes.addShaped(<gregtech:meta_item_1:347>,
 recipes.removeByRecipeName("tfc:paper");
 
 // Sticky Resin
-Barrel.addRecipe("tfg:sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> * 250, <gregtech:meta_item_1:438>, 6);
+Barrel.addRecipe("tfg:sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> * 250, <metaitem:rubber_drop>, 6);
+
+// TFC Resin --> Sticky resin
+furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 
 // Rum Fix
 Barrel.removeRecipe(<liquid:rum> * 500);

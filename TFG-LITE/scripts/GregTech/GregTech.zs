@@ -186,6 +186,18 @@ recipes.addShaped(<ore:dustQuartzSand>.firstItem,
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
  [null, null, null]]);
 
+// Steam import bus
+recipes.addShaped( <metaitem:steam_import_bus>,
+[[null, <ore:chest>, null],
+ [null, <gregtech:steam_casing>, null],
+ [null, null, null]]);
+
+// Steam export bus
+recipes.addShaped( <metaitem:steam_export_bus>,
+[[null, <gregtech:steam_casing>, null],
+ [null, <ore:chest>, null],
+ [null, null, null]]);
+
 // Fix Cactus Recycling
 // Plant Ball * 1
 compressor.findRecipe(2, [<minecraft:cactus:0> * 8], null).remove();
@@ -248,6 +260,17 @@ assembler.recipeBuilder()
     .outputs(<minecraft:armor_stand>)
     .duration(300).EUt(7).buildAndRegister();
 
+// Hopper Fix
+// Hopper * 1
+assembler.findRecipe(2, [<minecraft:chest:0>, <metaitem:plateIron> * 5], null).remove();
+// Hopper * 1
+assembler.findRecipe(2, [<minecraft:trapped_chest:0>, <metaitem:plateWroughtIron> * 5], null).remove();
+// Hopper * 1
+assembler.recipeBuilder()
+    .inputs([<ore:chest>, <ore:plateIron> * 5 | <ore:plateWroughtIron> * 5])
+    .outputs(<minecraft:hopper>)
+    .duration(400).EUt(2).buildAndRegister();
+
 // Cobble FIx
 // Cobblestone Stairs * 4
 assembler.findRecipe(1, [<tfc:cobble/basalt:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
@@ -256,16 +279,16 @@ assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remo
 // Gravel * 1
 forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
 
-//Fix Shit Glass Craft
+// Fix Shit Glass Craft
 // Glass * 2
 arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
 arc_furnace.recipeBuilder()
     .inputs([<ore:sand>])
-    .fluidInputs(<fluid:oxygen> * 20)
+    //.fluidInputs(<fluid:oxygen> * 20)
     .outputs(<minecraft:glass> * 2)
     .duration(175).EUt(7).buildAndRegister();
 
-//Fix Coke Oven Bricks Craft
+// Fix Coke Oven Bricks Craft
 // Coke Oven Brick * 2
 alloy_smelter.findRecipe(7, [<minecraft:sand:0>, <minecraft:clay_ball:0>], null).remove();
 alloy_smelter.recipeBuilder()
@@ -273,7 +296,7 @@ alloy_smelter.recipeBuilder()
     .outputs(<metaitem:brick.coke>)
     .duration(175).EUt(7).buildAndRegister();
 
-//Fix Stone Exploit
+// Fix Stone Exploit
 // Stone * 1
 compressor.findRecipe(2, [<metaitem:plateStone> * 9], null).remove();
 compressor.recipeBuilder()
@@ -281,7 +304,7 @@ compressor.recipeBuilder()
     .outputs(<tfc:raw/basalt>)
     .duration(300).EUt(2).buildAndRegister();
 
-//Fix Dirt Exploit
+// Fix Dirt Exploit
 // Dirt * 1
 macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
 macerator.recipeBuilder()
@@ -289,10 +312,10 @@ macerator.recipeBuilder()
     .outputs(<tfc:dirt/basalt>)
     .duration(300).EUt(2).buildAndRegister();
 
-//Fix Gravel Exploit
+// Fix Gravel Exploit
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 
-//Fix Sand Exploit
+// Fix Sand Exploit
 // Diamond Small Pile * 1
 centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
 centrifuge.recipeBuilder()
@@ -314,7 +337,7 @@ centrifuge.findRecipe(80, [<minecraft:soul_sand:0>], null).remove();
 centrifuge.findRecipe(20, [<metaitem:dustEndstone>], null).remove();
 // Myshroom * 1
 centrifuge.findRecipe(30, [<minecraft:mycelium:0>], null).remove();
-//Quartz Sand - 2
+// Quartz Sand - 2
 macerator.findRecipe(2, [<minecraft:sand>], null).remove();
 macerator.recipeBuilder()
     .inputs([<ore:sand>])
@@ -409,17 +432,37 @@ mixer.recipeBuilder()
     .outputs(<gregtech:meta_dust:2510> * 8)
     .duration(800).EUt(8).buildAndRegister();
 
-// Steam import bus
-recipes.addShaped( <metaitem:steam_import_bus>,
-[[null, <ore:chest>, null],
- [null, <gregtech:steam_casing>, null],
- [null, null, null]]);
-
-// Steam export bus
-recipes.addShaped( <metaitem:steam_export_bus>,
-[[null, <gregtech:steam_casing>, null],
- [null, <ore:chest>, null],
- [null, null, null]]);
+// Remove weird recipes
+// Yellow Dye * 3
+extractor.findRecipe(2, [<minecraft:double_plant:0>], null).remove();
+// Yellow Dye * 2
+extractor.findRecipe(2, [<minecraft:yellow_flower:0>], null).remove();
+// Orange Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:5>], null).remove();
+// Red Dye * 3
+extractor.findRecipe(2, [<minecraft:double_plant:4>], null).remove();
+// Red Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:4>], null).remove();
+// Red Dye * 2
+extractor.findRecipe(2, [<minecraft:beetroot:0>], null).remove();
+// Red Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:0>], null).remove();
+// Light Gray Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:3>], null).remove();
+// Light Gray Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:6>], null).remove();
+// Light Gray Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:8>], null).remove();
+// Pink Dye * 3
+extractor.findRecipe(2, [<minecraft:double_plant:5>], null).remove();
+// Pink Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:7>], null).remove();
+// Light Blue Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:1>], null).remove();
+// Magenta Dye * 3
+extractor.findRecipe(2, [<minecraft:double_plant:1>], null).remove();
+// Magenta Dye * 2
+extractor.findRecipe(2, [<minecraft:red_flower:2>], null).remove();
 
 //Отключение крафта одинарных пластин в верстаке
 val GTPlates = [
