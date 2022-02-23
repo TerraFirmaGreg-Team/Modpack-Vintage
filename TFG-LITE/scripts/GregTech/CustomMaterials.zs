@@ -17,8 +17,8 @@ import mods.gregtech.StoneType;
 <material:copper>.addTools(7, 1, 85);
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
 <material:bismuth>.addOre();
-<material:certus_quartz>.addFlags("generate_rod");
-<material:nether_quartz>.addFlags("generate_rod");
+<material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
+<material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
