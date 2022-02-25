@@ -17,39 +17,39 @@ for item in RemoveItemsFromQuern{
 
 // GrindStone - GT ore --> GT small pile
 // Copper
-Grindstone.add(<gregtech:ore_copper_0>, <ore:dustImpureCopper>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_malachite_0>, <ore:dustImpureMalachite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_tetrahedrite_0>, <ore:dustImpureTetrahedrite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_bornite_0>, <ore:dustImpureBornite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_chalcopyrite_0>, <ore:dustImpureChalcopyrite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_chalcocite_0>, <ore:dustImpureChalcocite>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreCopper>, <metaitem:dustImpureCopper> * 3, 10, false);
+Grindstone.add(<ore:oreMalachite>, <metaitem:dustImpureMalachite> * 3, 10, false);
+Grindstone.add(<ore:oreTetrahedrite>, <metaitem:dustImpureTetrahedrite> * 3, 10, false);
+Grindstone.add(<ore:oreBornite>, <metaitem:dustImpureBornite> * 3, 10, false);
+Grindstone.add(<ore:oreChalcopyrite>, <metaitem:dustImpureChalcopyrite> * 3, 10, false);
+Grindstone.add(<ore:oreChalcocite>, <metaitem:dustImpureChalcocite> * 3, 10, false);
 // Tin
-Grindstone.add(<gregtech:ore_tin_0>, <ore:dustImpureTin>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_cassiterite_0>, <ore:dustImpureCassiterite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_cassiterite_sand_0>, <ore:dustImpureCassiteriteSand>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreTin>, <metaitem:dustImpureTin> * 3, 10, false);
+Grindstone.add(<ore:oreCassiterite>, <metaitem:dustImpureCassiterite> * 3, 10, false);
+Grindstone.add(<ore:oreCassiteriteSand>, <metaitem:dustImpureCassiteriteSand> * 3, 10, false);
 // Iron
-Grindstone.add(<gregtech:ore_iron_0>, <ore:dustImpureIron>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_pyrite_0>, <ore:dustImpurePyrite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_yellow_limonite_0>, <ore:dustImpureYellowLimonite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_magnetite_0>, <ore:dustImpureMagnetite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_brown_limonite_0>, <ore:dustImpureBrownLimonite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_banded_iron_0>, <ore:dustImpureBandedIron>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreIron>, <metaitem:dustImpureIron> * 3, 10, false);
+Grindstone.add(<ore:orePyrite>, <metaitem:dustImpurePyrite> * 3, 10, false);
+Grindstone.add(<ore:oreYellowLimonite>, <metaitem:dustImpureYellowLimonite> * 3, 10, false);
+Grindstone.add(<ore:oreMagnetite>, <metaitem:dustImpureMagnetite> * 3, 10, false);
+Grindstone.add(<ore:oreBrownLimonite>, <metaitem:dustImpureBrownLimonite> * 3, 10, false);
+Grindstone.add(<ore:oreBandedIron>, <metaitem:dustImpureBandedIron> * 3, 10, false);
 // Nickel
-Grindstone.add(<gregtech:ore_nickel_0>, <ore:dustImpureNickel>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_garnierite_0>, <ore:dustImpureGarnierite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_pentlandite_0>, <ore:dustImpurePentlandite>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreNickel>, <metaitem:dustImpureNickel> * 3, 10, false);
+Grindstone.add(<ore:oreGarnierite>, <metaitem:dustImpureGarnierite> * 3, 10, false);
+Grindstone.add(<ore:orePentlandite>, <metaitem:dustImpurePentlandite> * 3, 10, false);
 // Lead
-Grindstone.add(<gregtech:ore_galena_0>, <ore:dustImpureGalena>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_lead_0>, <ore:dustImpureLead>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreGalena>, <metaitem:dustImpureGalena> * 3, 10, false);
+Grindstone.add(<ore:oreLead>, <metaitem:dustImpureLead> * 3, 10, false);
 // Other
-Grindstone.add(<gregtech:ore_gold_0>, <ore:dustImpureGold>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_silver_0>, <ore:dustImpureSilver>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_sphalerite_0>, <ore:dustImpureSphalerite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_sulfur_0>, <ore:dustImpureSulfur>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_rock_salt_0>, <ore:dustImpureRockSalt>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_graphite_0>, <ore:dustImpureGraphite>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_mica_0>, <ore:dustImpureMica>.firstItem * 3, 10, false);
-Grindstone.add(<gregtech:ore_bismuth_0>, <ore:dustImpureBismuth>.firstItem * 3, 10, false);
+Grindstone.add(<ore:oreGold>, <metaitem:dustImpureGold> * 3, 10, false);
+Grindstone.add(<ore:oreSilver>, <metaitem:dustImpureSilver> * 3, 10, false);
+Grindstone.add(<ore:oreSphalerite>, <metaitem:dustImpureSphalerite> * 3, 10, false);
+Grindstone.add(<ore:oreSulfur>, <metaitem:dustImpureSulfur> * 3, 10, false);
+Grindstone.add(<ore:oreRockSalt>, <metaitem:dustImpureRockSalt> * 3, 10, false);
+Grindstone.add(<ore:oreGraphite>, <metaitem:dustImpureGraphite> * 3, 10, false);
+Grindstone.add(<ore:oreMica>, <metaitem:dustImpureMica> * 3, 10, false);
+Grindstone.add(<ore:oreBismuth>, <metaitem:dustImpureBismuth> * 3, 10, false);
 
 // Other Recipes
 Grindstone.add(<tfc:food/soybean>, <firmalife:ground_soybeans>, 10, false);
