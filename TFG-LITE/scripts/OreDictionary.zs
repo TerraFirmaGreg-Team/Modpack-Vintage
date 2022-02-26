@@ -108,16 +108,6 @@ for item in gemExquisite {
 	<ore:gemExquisite>.add(item);
 }
 
-// // --- Forestry
-// // Forestry Chests To One OreDict
-// for item in ForestryChestsArray {
-// 	<ore:ForestryChests>.add(item);
-// }
-
-// // All Propolis To One OreDict
-// for item in ForestryPropolisArray {
-// 	<ore:ForestryPropolis>.add(item);
-// }
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
@@ -131,24 +121,6 @@ for item in gemExquisite {
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
 // RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
-// // --- Forestry
-// // Bronze
-// <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
-// // Tin
-// <ore:ingotTin>.remove(<forestry:ingot_tin>);
-// // Copper
-// <ore:ingotCopper>.remove(<forestry:ingot_copper>);
-// // Apatite
-// <ore:gemApatite>.remove(<forestry:apatite>);
-// // Bronze Block
-// <ore:blockBronze>.remove(<forestry:resource_storage:3>);
-// // Tin Block
-// <ore:blockTin>.remove(<forestry:resource_storage:2>);
-// // Copper Block
-// <ore:blockCopper>.remove(<forestry:resource_storage:1>);
-// // Apatite Block
-// <ore:blockApatite>.remove(<forestry:resource_storage>);
-
 // --- TFC-Florae
 // Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
@@ -190,12 +162,10 @@ for item in gemExquisite {
 // Copper
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_moon>);
 <ore:oreCopper>.remove(<galacticraftplanets:mars>);
-// <ore:oreCopper>.remove(<forestry:resources:1>);
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
 <ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
 <ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
 // Tin
-// <ore:oreTin>.remove(<forestry:resources:2>);
 <ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
 <ore:oreTin>.remove(<galacticraftplanets:mars:1>);
 <ore:oreTin>.remove(<galacticraftplanets:venus:11>);
@@ -219,8 +189,6 @@ for item in gemExquisite {
 <ore:oreSilicon>.remove(<galacticraftcore:basic_block_core:8>);
 // Quartz
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
-// Apatite
-// <ore:oreApatite>.remove(<forestry:resources>);
 // Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 // Ilmenite

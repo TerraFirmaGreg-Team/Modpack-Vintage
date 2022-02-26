@@ -774,9 +774,6 @@ furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 Barrel.removeRecipe(<liquid:rum> * 500);
 Barrel.addRecipe("tfg:rum", <minecraft:sugar>, <liquid:hot_water> * 500, <liquid:rum> * 500, 72);
 
-// // Гниль из Forestry в удобрение
-// Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fertilizer>);
-
 // Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);

@@ -2436,17 +2436,3 @@ global AllSeeds as IItemStack[] = [
 	<tfcflorae:crop/seeds/woad>,
 	<tfcflorae:crop/seeds/tobacco>
 ];
-
-// // - Propolis Array
-// global ForestryPropolisArray as IItemStack[] = [
-// 	<forestry:propolis>,
-// 	<forestry:propolis:1>,
-// 	<forestry:propolis:3>
-// ];
-
-// // - Forestry Chests Array
-// global ForestryChestsArray as IItemStack[] = [
-// 	<forestry:butterfly_chest>,
-// 	<forestry:tree_chest>,
-// 	<forestry:bee_chest>
-// ];
