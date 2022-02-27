@@ -1,0 +1,326 @@
+{
+        "biomes":[
+                {
+                        "conditions":"biome.name == 'TerraFirmaCraft Mountains'",
+                        "aurora":true
+                },
+                {
+                        "conditions":"biome.name == 'TerraFirmaCraft Mountains Edge'",
+                        "aurora":true
+                },
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft Mountains'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft Mountains Edge'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft River'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft High Hills'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft Plains'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft Swampland'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft High Hills Edge'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft Rolling Hills'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				},
+				{
+						"conditions":"biome.name == 'TerraFirmaCraft High Plains'",
+						"spotSoundChance": 200,
+						"sounds": [
+								{
+										"sound": "dsurround:forest",
+										"conditions": "weather.isNotRaining && diurnal.isDay"
+								},
+								{
+										"sound": "dsurround:bird",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:woodpecker",
+										"conditions": "weather.isNotRaining && diurnal.isDay",
+										"soundType": "spot"
+								},
+								{
+										"sound": "dsurround:crickets",
+										"conditions": "weather.isNotRaining && diurnal.isNight"
+								},
+								{
+										"sound": "dsurround:owl",
+										"conditions": "weather.isNotRaining && diurnal.isNight",
+										"soundType": "spot"
+								}
+						]
+				}
+		],
+        "blocks":[
+                {
+                        "blocks": [
+                                "minecraft:red_flower",
+                                "minecraft:yellow_flower",
+                                "minecraft:double_plant",
+								"tfc:plants/allium",
+								"tfc:plants/blue_orchid",
+								"tfc:plants/butterfly_milkweed",
+								"tfc:plants/calendula",
+								"tfc:plants/canna",
+								"tfc:plants/dandelion",
+								"tfc:plants/goldenrod",
+								"tfc:plants/grape_hyacinth",
+								"tfc:plants/houstonia",
+								"tfc:plants/meads_milkweed",
+								"tfc:plants/nasturtium",
+								"tfc:plants/oxeye_daisy",
+								"tfc:plants/poppy",
+								"tfc:plants/primrose",
+								"tfc:plants/pulsatilla",
+								"tfc:plants/sacred_datura",
+								"tfc:plants/snapdragon_pink",
+								"tfc:plants/snapdragon_red",
+								"tfc:plants/snapdragon_white",
+								"tfc:plants/snapdragon_yellow",
+								"tfc:plants/strelitzia",
+								"tfc:plants/tropical_milkweed",
+								"tfc:plants/tulip_orange",
+								"tfc:plants/tulip_pink",
+								"tfc:plants/tulip_red",
+								"tfc:plants/tulip_white",
+								"tfc:plants/perovskia",
+								"tfc:plants/yucca",
+								"tfc:plants/sapphire_tower",
+								"tfc:plants/morning_glory",
+								"tfc:plants/guzmania",
+								"tfc:plants/vriesea",
+								"tfc:plants/blood_lily",
+								"tfc:plants/foxglove",
+								"tfc:plants/rose",
+								"tfc:plants/trillium",
+								"tfc:plants/water_canna"
+                        ],
+                        "effects": [
+                                {
+                                        "effect": "firefly",
+                                        "conditions": "weather.isNotRaining && (diurnal.isNight || diurnal.isSunset) && !(biome.isHot || biome.isCold || biome.isSnowy)",
+                                        "chance": 30
+                                }
+                        ]
+                }
+        ]
+}
