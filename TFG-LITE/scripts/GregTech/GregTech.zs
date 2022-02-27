@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 
 val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamond>;
 
@@ -49,7 +50,8 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:steam_alloy_smelter_bronze>,
     <metaitem:electric_blast_furnace>,
     <metaitem:multi_furnace>,
-    <metaitem:workbench>
+    <metaitem:workbench>,
+    <metaitem:energy_hatch.input.mv>
 ];
 for item in ItemsToRemove{
     recipes.remove(item);
