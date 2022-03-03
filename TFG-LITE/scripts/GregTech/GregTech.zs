@@ -420,7 +420,8 @@ compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emera
 recipes.removeByRecipeName("gregtech:dust_blue_steel");
 mixer.findRecipe(7, [<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
 mixer.recipeBuilder()
-    .inputs(<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
+    .inputs(<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
+    
     .circuit(1)
     .outputs(<gregtech:meta_dust:2511> * 8)
     .duration(800).EUt(8).buildAndRegister();
@@ -429,7 +430,7 @@ mixer.recipeBuilder()
 recipes.removeByRecipeName("gregtech:dust_red_steel");
 mixer.findRecipe(7, [<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
 mixer.recipeBuilder()
-    .inputs(<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
+    .inputs(<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
     .circuit(1)
     .outputs(<gregtech:meta_dust:2510> * 8)
     .duration(800).EUt(8).buildAndRegister();

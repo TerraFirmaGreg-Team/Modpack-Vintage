@@ -479,8 +479,8 @@ recipes.addShaped(<galacticraftplanets:walkway>,
 
 //Пеш. дор с проводом
 recipes.addShaped(<galacticraftplanets:walkway:1>,
-[[<galacticraftplanets:walkway>, <ore:cableGtDoubleGold>, null],
- [<ore:cableGtDoubleGold>, null, null],
+[[<galacticraftplanets:walkway>, <ore:cableGtDoubleAluminium>, null],
+ [<ore:cableGtDoubleAluminium>, null, null],
  [null, null, null]]);
 
 //Пеш. дор с жид. трубой

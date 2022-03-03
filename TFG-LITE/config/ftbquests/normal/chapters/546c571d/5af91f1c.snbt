@@ -9,7 +9,6 @@
 		"{tfg.quests.lv.cupronickelcoils.desc2}"
 	],
 	dependencies: [
-		"16e3bb63",
 		"b9ccf07f"
 	],
 	dependency_requirement: "all_started",

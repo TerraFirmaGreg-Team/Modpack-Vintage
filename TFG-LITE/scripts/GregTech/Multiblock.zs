@@ -103,7 +103,7 @@ Builder.start(loc, id)
             .where("S", controller.self())
             .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
             .where("D", CTPredicate.states(<metastate:tfc:peat>))
-            .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:0>).setMinGlobalLimited(42) | controller.autoAbilities())
+            .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>).setMinGlobalLimited(42) | controller.autoAbilities())
 						.where("H", CTPredicate.states(<metastate:gregtech:multiblock_casing:2>))
 						.where("T", CTPredicate.states(<metastate:gregtech:turbine_casing:1>))
 						.where("W", CTPredicate.states(<metastate:gregtech:wire_coil>))
@@ -113,7 +113,7 @@ Builder.start(loc, id)
             .build();
     } as IPatternBuilderFunction)
     .withRecipeMap(greenhouse)
-    .withBaseTexture(<metastate:gregtech:machine_casing:0>)
+    .withBaseTexture(<metastate:gregtech:machine_casing:1>)
     .buildAndRegister();
 
 recipes.addShaped("greenhouse", <metaitem:multiblocktweaker:greenhouse>, [

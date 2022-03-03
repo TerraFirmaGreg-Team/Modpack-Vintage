@@ -26,7 +26,7 @@ for item in RawSedimentary {
 }
 
 // OreDicionary for all seeds
-for item in AllSeeds {
+for item in All_Seeds {
 	<ore:listAllSeeds>.add(item);
 }
 
@@ -92,19 +92,19 @@ for item in AllSeeds {
 
 // --- GregTech
 // Chipped Gems from GT
-for item in gemChipped {
+for item in Gem_Chipped {
 	<ore:gemChipped>.add(item);
 }
 // Flawed Gems from GT
-for item in gemFlawed {
+for item in Gem_Flawed {
 	<ore:gemFlawed>.add(item);
 }
 // Flawless Gems from GT
-for item in gemFlawless {
+for item in Gem_Flawless {
 	<ore:gemFlawless>.add(item);
 }
 // Exquisite Gems from GT
-for item in gemExquisite {
+for item in Gem_Exquisite {
 	<ore:gemExquisite>.add(item);
 }
 

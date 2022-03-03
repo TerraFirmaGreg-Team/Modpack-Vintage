@@ -11,14 +11,15 @@
     "displayed": true,
     "heightBasedFade": true,
     "renderOrder": 0.0,
-    "names": 0.0,
-    "heightLimit": 20.0,
     "color": 13.0,
     "displayNameWhenIconFails": true,
-    "entityNumber": 100.0,
+    "entityNumber": 1000.0,
     "alwaysDisplayNametags": false,
+    "startFadingAt": 0.0,
     "dotSize": 2.0,
     "icons": 1.0,
+    "heightLimit": 20.0,
+    "names": 0.0,
     "iconScale": 1.0
   },
   "subCategories": [
@@ -80,9 +81,7 @@
           "name": "gui.xaero_entity_category_hostile",
           "protection": true,
           "settingOverrides": {
-            "renderOrder": 3.0,
-            "color": 10.0,
-            "icons": 0.0
+            "renderOrder": 3.0
           },
           "subCategories": [
             {
@@ -106,9 +105,7 @@
           "excludeList": [],
           "name": "gui.xaero_entity_category_friendly",
           "protection": true,
-          "settingOverrides": {
-            "icons": 0.0
-          },
+          "settingOverrides": {},
           "subCategories": [
             {
               "hardInclude": "tamed",

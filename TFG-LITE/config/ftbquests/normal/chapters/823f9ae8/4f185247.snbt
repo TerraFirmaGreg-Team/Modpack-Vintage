@@ -1,6 +1,10 @@
 {
 	x: -3.0d,
 	y: 0.0d,
+	description: "{tfg.quests.primitive.bowlmount.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
 		"0e2a1059"
 	],

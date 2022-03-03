@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.terrafirmacraft.ItemRegistry;
 
+#priority 996
+
 // - Регистрация брони
 ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);
 ItemRegistry.registerArmor(<minecraft:leather_chestplate>, 3.0, 6.0, 4.5);

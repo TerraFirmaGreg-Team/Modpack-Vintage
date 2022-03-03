@@ -298,9 +298,7 @@ tfg.quests.primitive.wheel.subtitle=&aThe first mechanism invented by man, after
 
 tfg.quests.primitive.cladding.subtitle=&aThe casing of the blast furnace, take it in your hand and right-click on the blocks of refractory bricks.
 
-tfg.quests.primitive.bowlmount.subtitle=&aPress the RMB on the trunk of the [HEVEA TREE] or [RUBBER FIG TREE] to hang this holder for the vessel.
-
-tfg.quests.primitive.groove.subtitle=&aIn JEI there is a description of how to use this thing, look for it (Press R on the gutter).
+tfg.quests.primitive.groove.subtitle=&aUsed to get latex, right click a hevea or rubber fig tree log with a hammer in your toolbar to place. Complete the latex tapping by placing a bowl mount, an empty bowl and right clicking with a knife to open a vein of flowing latex.
 
 tfg.quests.primitive.rubbermix.subtitle=&aIt's very sticky.
 
@@ -1278,7 +1276,7 @@ tfg.quests.ae2.itemcell.subtitle=A cell used for items.
 
 tfg.quests.ae2.fluidcell.subtitle=A cell used for fluids.
 
-tfg.quests.ae2.fluxcovered.subtitle=Has 8 channels.
+tfg.quests.ae2.fluxcovered.subtitle=The same cable, only now it is braided, the first step in creating smart cables
 
 tfg.quests.ae2.fluxdensecovered.subtitle=Like the last one, but 32.
 
