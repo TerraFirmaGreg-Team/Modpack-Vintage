@@ -980,7 +980,6 @@ fluid_heater.recipeBuilder()
     .EUt(14).duration(200).buildAndRegister();
 
 // Greenhouse logs
-
 	for i, sapling in TFC_Saplings {
     greenhouse.recipeBuilder()
         .circuit(1)
@@ -1007,7 +1006,6 @@ fluid_heater.recipeBuilder()
 }
 
 // Greenhouse Rubber
-
 greenhouse.recipeBuilder()
     .circuit(1)
     .inputs(<tfc:wood/sapling/rubber_fig> * 2)
@@ -1063,7 +1061,6 @@ greenhouse.recipeBuilder()
     .buildAndRegister();		
 
 // Greenhouse Plants
-
 for i, seed in All_Seeds {
     greenhouse.recipeBuilder()
         .circuit(6)

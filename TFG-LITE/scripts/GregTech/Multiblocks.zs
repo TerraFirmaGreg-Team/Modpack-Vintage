@@ -17,8 +17,8 @@ global greenhouse as RecipeMap = FactoryRecipeMap.start("greenhouse")
         .maxInputs(3)
         .minOutputs(1)
         .maxOutputs(4)
-        .maxFluidInputs(1)
-        .maxFluidOutputs(0)
+        .maxFluidInputs(4)
+        .maxFluidOutputs(4)
         .build();
 
 val id = 32000;
