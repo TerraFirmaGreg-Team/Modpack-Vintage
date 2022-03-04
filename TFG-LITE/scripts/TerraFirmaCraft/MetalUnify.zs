@@ -3,7 +3,7 @@ import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.firmalife.Oven;
-import mods.tfcdryingrack.Rack;
+//import mods.tfcdryingrack.Rack;
 import mods.horsepower.Grindstone;
 
 /*
@@ -154,9 +154,9 @@ Grindstone.remove(<tfc:powder/graphite> * 6);
 // --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/sulfur> * 4);
 Grindstone.remove(<tfc:powder/sulfur> * 8);
-Rack.removeRecipe(<tfc:powder/sulfur>);
+//Rack.removeRecipe(<tfc:powder/sulfur>);
 // --- Добавление рецептов
-Rack.addRecipe("rack_sulfurshrooms_to_sulfur", <tfcflorae:plants/sulphur_shroom>, <ore:dustSulfur>.firstItem, 8, 1.0);
+//Rack.addRecipe("rack_sulfurshrooms_to_sulfur", <tfcflorae:plants/sulphur_shroom>, <ore:dustSulfur>.firstItem, 8, 1.0);
 
 // --- --- Унификация ляписа
 // --- Удаление рецептов
@@ -172,11 +172,11 @@ Grindstone.remove(<tfc:powder/charcoal> * 8);
 // --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/salt>);
 Grindstone.remove(<tfc:powder/salt>);
-Rack.removeRecipe(<tfc:powder/saltpeter>);
+//Rack.removeRecipe(<tfc:powder/saltpeter>);
 // --- Добавление рецептов
 Quern.addRecipe("quern_saltrock_to_salt", <tfc:rock/rocksalt>, <metaitem:dustSalt> * 4);
 Grindstone.add(<tfc:rock/rocksalt>, <metaitem:dustSalt> * 8, 10, false);
-Rack.addRecipe("rack_saltpeter_to_salt", <metaitem:dustSaltpeter>, <metaitem:dustSalt>, 24, 1.0);
+//Rack.addRecipe("rack_saltpeter_to_salt", <metaitem:dustSaltpeter>, <metaitem:dustSalt>, 24, 1.0);
 
 // --- --- Унификация сальпетера
 // --- Удаление рецептов

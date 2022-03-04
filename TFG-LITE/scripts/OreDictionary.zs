@@ -111,6 +111,9 @@ for item in Gem_Exquisite {
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
+// --- GC
+<ore:moonRock>.add(<galacticraftcore:basic_block_moon:4>);
+
 // --- Deleting OreDictionary
 // --- ProjectRed
 // Copper
@@ -121,6 +124,7 @@ for item in Gem_Exquisite {
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
 // RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
+
 // --- TFC-Florae
 // Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);

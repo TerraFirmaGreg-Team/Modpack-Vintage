@@ -416,25 +416,6 @@ compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_b
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
 
-//Исправление рецепта синей стали
-recipes.removeByRecipeName("gregtech:dust_blue_steel");
-mixer.findRecipe(7, [<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
-mixer.recipeBuilder()
-    .inputs(<ore:dustSterlingSilver>.firstItem, <ore:dustBismuthBronze>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
-    
-    .circuit(1)
-    .outputs(<gregtech:meta_dust:2511> * 8)
-    .duration(800).EUt(8).buildAndRegister();
-
-//Исправление рецепта красной стали
-recipes.removeByRecipeName("gregtech:dust_red_steel");
-mixer.findRecipe(7, [<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2, <gregtech:meta_item_1:461>.withTag({Configuration: 1})], null).remove();
-mixer.recipeBuilder()
-    .inputs(<ore:dustRoseGold>.firstItem, <ore:dustBrass>.firstItem, <ore:dustBlackSteel>.firstItem * 4, <ore:dustSteel>.firstItem * 2)
-    .circuit(1)
-    .outputs(<gregtech:meta_dust:2510> * 8)
-    .duration(800).EUt(8).buildAndRegister();
-
 // Remove weird recipes
 // Yellow Dye * 3
 extractor.findRecipe(2, [<minecraft:double_plant:0>], null).remove();

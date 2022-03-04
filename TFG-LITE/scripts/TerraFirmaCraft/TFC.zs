@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
+import crafttweaker.liquid.ILiquidStack;
+
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
@@ -9,7 +11,6 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
-import crafttweaker.liquid.ILiquidStack;
 
 // Удаление + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [

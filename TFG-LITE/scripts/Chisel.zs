@@ -4,7 +4,6 @@ import mods.chisel.Carving;
 
 // Удаление групп
 Carving.removeGroup("basalt");
-//Carving.removeGroup("marble");
 
 // Удаление рецептов
 val RemoveItemsFromJEI as IItemStack[] = [
