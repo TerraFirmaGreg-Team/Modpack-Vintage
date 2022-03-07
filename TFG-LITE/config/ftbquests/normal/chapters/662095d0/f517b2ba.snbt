@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.fuelcracking.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "severely_steamcracked_light_fuel"
-		}
-	},
 	x: 10.0d,
 	y: -14.0d,
 	description: "{tfg.quests.mv.fuelcracking.subtitle}",
@@ -20,14 +13,22 @@
 		"d4f362aa"
 	],
 	tasks: [{
-		uid: "84c74f80",
+		uid: "00717a4d",
+		type: "fluid",
+		fluid: "severely_steamcracked_light_fuel"
+	}],
+	rewards: [{
+		uid: "311faaec",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "severely_steamcracked_light_fuel",
-				Amount: 1000
+				Fluid: {
+					FluidName: "severely_steamcracked_light_fuel",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

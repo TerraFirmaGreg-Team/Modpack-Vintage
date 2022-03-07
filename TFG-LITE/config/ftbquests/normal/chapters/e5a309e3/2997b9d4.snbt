@@ -15,5 +15,19 @@
 		uid: "8e25b221",
 		type: "fluid",
 		fluid: "fluorine"
+	}],
+	rewards: [{
+		uid: "af49d4b9",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "fluorine",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.sulfuricacid.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "sulfuric_acid"
-		}
-	},
 	x: 12.0d,
 	y: -10.0d,
 	description: "{tfg.quests.mv.sulfuricacid.subtitle}",
@@ -25,14 +18,22 @@
 		"40d77c21"
 	],
 	tasks: [{
-		uid: "d503294b",
+		uid: "8798f936",
+		type: "fluid",
+		fluid: "sulfuric_acid"
+	}],
+	rewards: [{
+		uid: "47c75f25",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "sulfuric_acid",
-				Amount: 1000
+				Fluid: {
+					FluidName: "sulfuric_acid",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

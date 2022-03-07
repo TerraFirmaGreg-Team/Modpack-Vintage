@@ -32,7 +32,7 @@ for item in ItemsToRemoveFromJEI{
 val ItemsToRemove as IItemStack[] = [
 	// Paper
     <minecraft:paper> * 2,
-    //LV Casing
+    // LV Casing
     <gregtech:machine_casing:1>,
     // Firebrick
     <gregtech:metal_casing:1>,
@@ -216,19 +216,19 @@ brewery.recipeBuilder()
     .fluidOutputs([<liquid:biomass> * 20])
     .duration(300).EUt(2).buildAndRegister();
 
-//Fix Plant Ball Recipes
-//From Dirt
+// Fix Plant Ball Recipes
+// From Dirt
 centrifuge.findRecipe(30, [<minecraft:dirt:0>], null).remove();
-//From Grass
+// From Grass
 centrifuge.findRecipe(30, [<minecraft:grass:0>], null).remove();
-//From Dirt
+// From Dirt
 centrifuge.recipeBuilder()
     .inputs([<ore:dirt>])
     .chancedOutput(<metaitem:plant_ball>, 1200, 700)
     .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
     .chancedOutput(<ore:dustTinyClay>.firstItem, 4000, 900)
     .duration(275).EUt(30).buildAndRegister();
-//From Grass
+// From Grass
 centrifuge.recipeBuilder()
     .inputs([<ore:grass>])
     .chancedOutput(<metaitem:plant_ball>, 3000, 1200)
@@ -255,7 +255,7 @@ macerator.recipeBuilder()
     .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
     .duration(105).EUt(2).buildAndRegister();
 
-//Armor Stand Fix
+// Armor Stand Fix
 // Armor Stand * 1
 assembler.findRecipe(7, [<minecraft:stone_slab:0>, <minecraft:stick:0> * 6], null).remove();
 assembler.recipeBuilder()
@@ -347,7 +347,7 @@ macerator.recipeBuilder()
     .outputs(<ore:dustQuartzSand>.firstItem)
     .duration(50).EUt(2).buildAndRegister();
 
-//Переработка тфкшной гевеи
+// Переработка тфкшной гевеи
 centrifuge.findRecipe(20, [<gregtech:rubber_log:0>], null).remove();
 centrifuge.recipeBuilder()
     .inputs(<tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>)
@@ -358,61 +358,68 @@ centrifuge.recipeBuilder()
     .fluidOutputs(<fluid:methane> * 65)
     .EUt(20).duration(200).buildAndRegister();
 
-//Исправление рецепта на бумагу
-//Крафт бумажной пыли
+// Исправление рецепта на бумагу
+// Крафт бумажной пыли
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
  [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null]]);
-//Крафт бамаги из пыли
+// Крафт бамаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
 [[null, <ore:slabStonePolished>.reuse(), null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
  [null, <ore:slabStonePolished>.reuse(), null]]);
 
-//Лава из незерака
+// Лава из незерака
 extractor.recipeBuilder()
     .inputs(<ore:netherrack>)
     .fluidOutputs(<fluid:lava> * 250)
     .EUt(140).duration(330).buildAndRegister();
 	
-//Лава из магма блока
+// Лава из магма блока
 extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
     .fluidOutputs(<fluid:lava> * 750)
     .EUt(140).duration(220).buildAndRegister();
 	
-//Гравий --> кремень
+// Гравий --> кремень
 forge_hammer.recipeBuilder()
     .inputs([<ore:gravel> * 1])
     .outputs(<minecraft:flint> * 1)
     .duration(45).EUt(5).buildAndRegister();
 
-//Сахарный тростник --> целлюлоза
+// Сахарный тростник --> целлюлоза
 forge_hammer.recipeBuilder()
     .inputs([<ore:sugarcane> * 3])
     .outputs(<ore:dustPaper>.firstItem * 2)
     .duration(105).EUt(4).buildAndRegister();
 
-//Песок+Гравий --> цемент тфк
+// Песок+Гравий --> цемент тфк
 mixer.recipeBuilder()
     .inputs(<ore:sand>*4, <ore:gravel>*4)
     .outputs(<tfc:aggregate>*8)
     .duration(20).EUt(4).buildAndRegister();
 
-//Фикс снопа сена
+// Infinite Water Cover 
+<recipemap:assembler>.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
+assembler.recipeBuilder()
+    .inputs(<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>, <minecraft:ender_pearl>, <metaitem:emitter.hv>)
+    .outputs(<metaitem:cover.infinite_water>)
+    .duration(200).EUt(480).buildAndRegister();
+
+// Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 
-//Фикс сундуков
+// Фикс сундуков
 assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
-//Rock breaker fixes
+// Rock breaker fixes
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
 rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 rock_breaker.findRecipe(60, [<ore:stoneGranite>.firstItem], null).remove();
 rock_breaker.findRecipe(60, [<ore:stoneDiorite>.firstItem], null).remove();
 rock_breaker.findRecipe(60, [<ore:stoneAndesite>.firstItem], null).remove();
 
-//Крафт некоторых блоков в компрессоре
+// Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
@@ -449,7 +456,7 @@ extractor.findRecipe(2, [<minecraft:double_plant:1>], null).remove();
 // Magenta Dye * 2
 extractor.findRecipe(2, [<minecraft:red_flower:2>], null).remove();
 
-//Отключение крафта одинарных пластин в верстаке
+// Отключение крафта одинарных пластин в верстаке
 val GTPlates = [
     "gregtech:plate_livermorium",
     "gregtech:plate_rubber",

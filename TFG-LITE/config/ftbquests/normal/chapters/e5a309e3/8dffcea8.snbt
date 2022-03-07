@@ -1,12 +1,5 @@
 {
 	title: "Nitric Acid",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "nitric_acid"
-		}
-	},
 	x: 7.0d,
 	y: -2.0d,
 	shape: "circle",
@@ -25,14 +18,22 @@
 		"7354e826"
 	],
 	tasks: [{
-		uid: "045a80f2",
+		uid: "ae3dd6a8",
+		type: "fluid",
+		fluid: "nitric_acid"
+	}],
+	rewards: [{
+		uid: "5641b0e0",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "nitric_acid",
-				Amount: 1000
+				Fluid: {
+					FluidName: "nitric_acid",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

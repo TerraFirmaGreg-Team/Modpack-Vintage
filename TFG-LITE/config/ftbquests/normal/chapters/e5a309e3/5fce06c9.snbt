@@ -1,12 +1,5 @@
 {
 	title: "Almost Titanium²",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "titanium_tetrachloride"
-		}
-	},
 	x: 3.0d,
 	y: -6.0d,
 	text: [
@@ -30,5 +23,19 @@
 		uid: "0e8a0700",
 		type: "fluid",
 		fluid: "titanium_tetrachloride"
+	}],
+	rewards: [{
+		uid: "fd4b264f",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "titanium_tetrachloride",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

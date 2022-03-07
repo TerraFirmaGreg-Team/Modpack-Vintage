@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.persulfate.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "sodium_persulfate"
-		}
-	},
 	x: 18.0d,
 	y: -14.0d,
 	description: "{tfg.quests.mv.persulfate.subtitle}",
@@ -22,26 +15,41 @@
 		"40d77c21"
 	],
 	tasks: [{
-		uid: "1909aa35",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "sodium_persulfate",
-				Amount: 1000
-			}
-		}]
+		uid: "eb26c9d6",
+		type: "fluid",
+		fluid: "sodium_persulfate"
 	},
 	{
-		uid: "5c1cb2e5",
+		uid: "85de6d55",
+		type: "fluid",
+		fluid: "iron_iii_chloride"
+	}],
+	rewards: [{
+		uid: "5854f3d4",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "iron_iii_chloride",
-				Amount: 1000
+				Fluid: {
+					FluidName: "sodium_persulfate",
+					Amount: 1000
+				}
 			}
-		}],
-		ignore_damage: true
+		}
+	},
+	{
+		uid: "0132233a",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "iron_iii_chloride",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

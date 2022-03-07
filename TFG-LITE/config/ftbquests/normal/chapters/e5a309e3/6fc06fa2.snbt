@@ -1,12 +1,5 @@
 {
 	title: "Benzene Nitro",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "nitrobenzene",
-			Amount: 1000
-		}
-	},
 	x: 9.0d,
 	y: -1.5d,
 	shape: "circle",
@@ -17,14 +10,22 @@
 		"8dffcea8"
 	],
 	tasks: [{
-		uid: "862210ae",
+		uid: "234f5877",
+		type: "fluid",
+		fluid: "nitrobenzene"
+	}],
+	rewards: [{
+		uid: "5cdd6322",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "nitrobenzene",
-				Amount: 1000
+				Fluid: {
+					FluidName: "nitrobenzene",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

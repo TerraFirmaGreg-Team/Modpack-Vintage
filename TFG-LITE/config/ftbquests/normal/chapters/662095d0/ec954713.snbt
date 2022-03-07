@@ -1,12 +1,6 @@
 {
 	title: "{tfg.quests.mv.USsimulator.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "oil"
-		}
-	},
+	icon: "gregtech:machine 1 1530",
 	x: 4.0d,
 	y: -11.0d,
 	description: "{tfg.quests.mv.USsimulator.subtitle}",
@@ -28,18 +22,28 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 1530"
+		},
+		{
+			item: "gregtech:machine 1 1531"
 		}]
 	},
 	{
-		uid: "2e3def41",
+		uid: "7f949d14",
+		type: "fluid",
+		fluid: "oil_medium"
+	}],
+	rewards: [{
+		uid: "0c7161b0",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "oil_medium",
-				Amount: 1000
+				Fluid: {
+					FluidName: "oil_medium",
+					Amount: 1000
+				}
 			}
-		}],
-		ignore_nbt: 2b
+		}
 	}]
 }
