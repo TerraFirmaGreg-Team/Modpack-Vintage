@@ -1,4 +1,4 @@
-//Скрываем не нужные категории в JEI
+// Скрытие категорий JEI
 mods.jei.JEI.hideCategory("minecraft.anvil");
 mods.jei.JEI.hideCategory("appliedenergistics2.inscriber");
 mods.jei.JEI.hideCategory("tfc.rock_layer");
@@ -8,7 +8,7 @@ mods.jei.JEI.hideCategory("tfcflorae.casting_earthenware_firmalife");
 mods.jei.JEI.hideCategory("tfcflorae.casting_kaolinite_firmalife");
 mods.jei.JEI.hideCategory("tfcflorae.casting_stoneware_firmalife");
 
-//FTB
+// FTB
 mods.jei.JEI.removeAndHide(<ftbquests:chest>);
 mods.jei.JEI.removeAndHide(<ftbquests:barrier>);
 mods.jei.JEI.removeAndHide(<ftbquests:detector:1>);
@@ -17,10 +17,10 @@ mods.jei.JEI.removeAndHide(<ftbquests:reward_collector>);
 mods.jei.JEI.removeAndHide(<ftbquests:loot_crate_opener>);
 mods.jei.JEI.removeAndHide(<ftbquests:loot_crate_storage>);
 
-//B.A.S.E
+// ContentTweaker
 mods.jei.JEI.removeAndHide(<base:wrench>);
 
-//TOP
+// TheOneProbe
 mods.jei.JEI.removeAndHide(<theoneprobe:creativeprobe>);
 mods.jei.JEI.removeAndHide(<theoneprobe:probenote>);
 mods.jei.JEI.removeAndHide(<theoneprobe:diamond_helmet_probe>);
