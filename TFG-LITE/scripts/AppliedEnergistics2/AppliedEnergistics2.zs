@@ -2,7 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-//Удаление рецептов + скрытие
+// Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:material:46>,
 	<appliedenergistics2:material:2>,
@@ -30,7 +30,7 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-//Удаление рецептов
+// Удаление рецептов
 val RemoveItemRecipes as IItemStack[] = [
 	//Блоки
 	<appliedenergistics2:fluix_block>,
@@ -138,29 +138,33 @@ for item in RemoveItemRecipes{
     recipes.remove(item);
 }
 
-//Убирание рецептов
-recipes.removeByRecipeName("appliedenergistics2:decorative/quartz_block_pure");
-recipes.removeByRecipeName("appliedenergistics2:tools/misctools_charged_staff");
-recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");
-recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
-recipes.removeByRecipeName("appliedenergistics2:network/crafting/molecular_assembler");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix");
-//Рецепты
+// Поименное удаление рецептов
+val RemoveItemRecipesByName = [
+    "appliedenergistics2:decorative/quartz_block_pure",
+	"appliedenergistics2:tools/misctools_charged_staff",
+	"appliedenergistics2:network/blocks/fluid_interfaces_interface",
+	"appliedenergistics2:network/blocks/interfaces_interface",
+	"appliedenergistics2:misc/vanilla_comparator",
+	"appliedenergistics2:misc/vanilla_daylight_detector",
+	"appliedenergistics2:network/crafting/molecular_assembler",
+	"appliedenergistics2:network/cables/covered_fluix_clean",
+	"appliedenergistics2:network/cables/covered_fluix",
+	"appliedenergistics2:network/cables/glass_fluix_clean",
+	"appliedenergistics2:network/cables/glass_fluix",
+	"appliedenergistics2:network/cables/smart_fluix_clean",
+	"appliedenergistics2:network/cables/smart_fluix",
+	"appliedenergistics2:network/cables/dense_smart_fluix_clean",
+	"appliedenergistics2:network/cables/dense_smart_fluix",
+	"appliedenergistics2:network/cables/dense_covered_fluix_clean",
+	"appliedenergistics2:network/cables/dense_covered_fluix"
+] as string[];
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
 
+// --- Рецепты
 
-//Покраска и обесвечивание кабелей
-
+// Покраска и обесвечивание кабелей
 // Glass Cables
 var colored_GlassCable = [
 	<appliedenergistics2:part>,

@@ -12,7 +12,7 @@ import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
 
-// Удаление + скрытие
+// Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	// Pickaxe
 	<tfc:metal/pick/bismuth_bronze>,
@@ -284,21 +284,6 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-// Удаление неиспользуемых рецептов из Quern
-val RemoveItemsFromQuern as IItemStack[] = [
-	<tfc:gem/diamond:2>,
-	<tfc:powder/fertilizer>,
-	<tfc:powder/malachite>,
-	<tfc:powder/limonite>,
-	<tfc:ore/gypsum>,
-	<tfc:powder/hematite>,
-	<minecraft:redstone> * 8,
-	<tfc:powder/flux> * 6,
-];
-for item in RemoveItemsFromQuern{
-    Quern.removeRecipe(item);
-}
-
 // Удаление рецептов
 val RemoveItemRecipesByName = [
     "tfc:vanilla/redstone/observer",
@@ -321,6 +306,23 @@ val RemoveItemRecipesByName = [
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
+
+// Удаление неиспользуемых рецептов из Quern
+val RemoveItemsFromQuern as IItemStack[] = [
+	<tfc:gem/diamond:2>,
+	<tfc:powder/fertilizer>,
+	<tfc:powder/malachite>,
+	<tfc:powder/limonite>,
+	<tfc:ore/gypsum>,
+	<tfc:powder/hematite>,
+	<minecraft:redstone> * 8,
+	<tfc:powder/flux> * 6,
+];
+for item in RemoveItemsFromQuern{
+    Quern.removeRecipe(item);
+}
+
+// --- Рецепты
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
@@ -986,7 +988,7 @@ fluid_heater.recipeBuilder()
         .inputs(sapling)
         .fluidInputs([<liquid:fresh_water> * 1000])
         .outputs(TFC_Logs[i].withAmount(10))
-				.chancedOutput(TFC_Logs[i].withAmount(10), 3000, 1000)
+		.chancedOutput(TFC_Logs[i].withAmount(10), 3000, 1000)
         .outputs(sapling.withAmount(6))
         .duration(1200)
         .EUt(40)
@@ -1011,9 +1013,9 @@ greenhouse.recipeBuilder()
     .inputs(<tfc:wood/sapling/rubber_fig> * 2)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<tfc:wood/log/rubber_fig> * 7)
-		.chancedOutput(<tfc:wood/log/rubber_fig> * 14, 2000, 1000)
+	.chancedOutput(<tfc:wood/log/rubber_fig> * 14, 2000, 1000)
     .outputs(<tfc:wood/sapling/rubber_fig> * 3)
-		.chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 3000, 1000)
+	.chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 3000, 1000)
     .outputs(<metaitem:rubber_drop> * 4)
     .duration(1200)
     .EUt(40)
@@ -1025,9 +1027,9 @@ greenhouse.recipeBuilder()
     .inputs(<ore:dustBone> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<tfc:wood/log/rubber_fig> * 14)
-		.chancedOutput(<tfc:wood/log/rubber_fig> * 20, 3000, 1000)
+	.chancedOutput(<tfc:wood/log/rubber_fig> * 20, 3000, 1000)
     .outputs(<tfc:wood/sapling/rubber_fig> * 3)
-		.chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 5000, 1000)
+	.chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 5000, 1000)
     .outputs(<metaitem:rubber_drop> * 8)
     .duration(900)
     .EUt(60)
@@ -1038,9 +1040,9 @@ greenhouse.recipeBuilder()
     .inputs(<tfc:wood/sapling/hevea> * 2)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<tfc:wood/log/hevea> * 7)
-		.chancedOutput(<tfc:wood/log/hevea> * 14, 2000, 1000)
+	.chancedOutput(<tfc:wood/log/hevea> * 14, 2000, 1000)
     .outputs(<tfc:wood/sapling/hevea> * 3)
-		.chancedOutput(<tfc:wood/sapling/hevea> * 5, 3000, 1000)
+	.chancedOutput(<tfc:wood/sapling/hevea> * 5, 3000, 1000)
     .outputs(<metaitem:rubber_drop> * 4)
     .duration(1200)
     .EUt(40)
@@ -1052,9 +1054,9 @@ greenhouse.recipeBuilder()
     .inputs(<ore:dustBone> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<tfc:wood/log/hevea> * 14)
-		.chancedOutput(<tfc:wood/log/hevea> * 20, 2000, 1000)
+	.chancedOutput(<tfc:wood/log/hevea> * 20, 2000, 1000)
     .outputs(<tfc:wood/sapling/hevea> * 4)
-		.chancedOutput(<tfc:wood/sapling/hevea> * 5, 5000, 1000)
+	.chancedOutput(<tfc:wood/sapling/hevea> * 5, 5000, 1000)
     .outputs(<metaitem:rubber_drop> * 8)
     .duration(900)
     .EUt(60)
