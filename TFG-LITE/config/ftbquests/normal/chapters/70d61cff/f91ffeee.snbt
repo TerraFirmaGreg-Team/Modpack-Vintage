@@ -1,0 +1,17 @@
+{
+	x: -11.0d,
+	y: -1.0d,
+	text: [
+		"Amperage goes up, now 6A per Superconductor."
+	],
+	dependencies: [
+		"5928ecb5"
+	],
+	tasks: [{
+		uid: "cb2c0524",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 427"
+		}]
+	}]
+}

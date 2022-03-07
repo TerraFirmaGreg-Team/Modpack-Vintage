@@ -2,7 +2,7 @@
 	title: "Tungstensteel",
 	icon: "gregtech:meta_ingot 1 2013",
 	x: 6.0d,
-	y: -3.0d,
+	y: -5.0d,
 	text: [
 		"The main IV Material!"
 	],

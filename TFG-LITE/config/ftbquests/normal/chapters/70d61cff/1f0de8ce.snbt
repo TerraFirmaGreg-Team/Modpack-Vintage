@@ -7,8 +7,8 @@
 			FluidName: "acetone"
 		}
 	},
-	x: -4.5d,
-	y: 5.0d,
+	x: -1.5d,
+	y: 5.5d,
 	text: [
 		"No Description"
 	],

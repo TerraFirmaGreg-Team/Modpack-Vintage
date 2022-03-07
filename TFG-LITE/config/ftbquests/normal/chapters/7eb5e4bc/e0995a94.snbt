@@ -1,9 +1,9 @@
 {
 	icon: "gregtech:meta_gear 1 2520",
-	x: 0.0d,
-	y: -2.0d,
+	x: -10.5d,
+	y: -4.0d,
 	dependencies: [
-		"fcad811a"
+		"573a84ba"
 	],
 	hide: true,
 	tasks: [{

@@ -1,8 +1,8 @@
 {
 	title: "Tungsten",
 	icon: "gregtech:meta_ingot 1 115",
-	x: 9.0d,
-	y: -5.0d,
+	x: 1.0d,
+	y: -4.0d,
 	text: [
 		"Tungsten at last! The IV Cable material."
 	],

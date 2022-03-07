@@ -1,8 +1,8 @@
 {
 	title: "Ender Fluid Linking",
 	icon: "gregtech:meta_item_1 1 311",
-	x: -2.0d,
-	y: 5.0d,
+	x: -3.0d,
+	y: -2.0d,
 	shape: "circle",
 	text: [
 		"§aEnder Fluid Link Covers§r are §dGregTech§r's §r§3Ender Tanks§r. Each Cover sends their fluids through a frequency defined by an §68-digit hexadecimal number§r (0-9, then A-F for each digit). That gives you §64.29 billion§r channels to work with! Ender Fluid Link Covers work as long as their chunk is loaded - regardless of distance or dimension.",

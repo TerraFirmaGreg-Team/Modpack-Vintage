@@ -3,7 +3,7 @@
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
-			FluidName: "bio.ethanol",
+			FluidName: "ethanol",
 			Amount: 1000
 		}
 	},
@@ -23,14 +23,8 @@
 		"65405836"
 	],
 	tasks: [{
-		uid: "00af4a77",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "bio.ethanol",
-				Amount: 1000
-			}
-		}]
+		uid: "87711ec1",
+		type: "fluid",
+		fluid: "ethanol"
 	}]
 }

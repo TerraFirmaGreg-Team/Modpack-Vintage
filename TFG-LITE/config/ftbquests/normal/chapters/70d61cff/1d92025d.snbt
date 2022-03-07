@@ -1,8 +1,8 @@
 {
 	title: "Mainframes",
 	icon: "gregtech:meta_item_1 1 631",
-	x: -3.0d,
-	y: 0.0d,
+	x: -5.0d,
+	y: -1.0d,
 	shape: "circle",
 	text: [
 		"The first §1IV§r circuit. Congratulations on making it this far!",

@@ -7,8 +7,8 @@
 			FluidName: "epichlorohydrin"
 		}
 	},
-	x: -7.0d,
-	y: 3.0d,
+	x: -3.0d,
+	y: 3.5d,
 	text: [
 		"No Description"
 	],

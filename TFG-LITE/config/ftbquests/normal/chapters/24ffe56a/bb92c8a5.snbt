@@ -1,0 +1,44 @@
+{
+	title: "HSS-G",
+	icon: "gregtech:meta_ingot 1 2516",
+	x: -17.5d,
+	y: -11.5d,
+	text: [
+		"§oHigh-Speed Steels (HSS) are more resistant Steel Alloys typically used in Rails.§r",
+		"",
+		"If you previously made §dUltimet§r for any reason, you have already acquired §aMolybdenum§r. It is found in a Nether vein.",
+		"",
+		"I hope you have a lot of §9TungstenSteel§r, because you're still gonna need more!",
+		"It is used for the creation of §aHSS§r alloys, presently §aHSS-G§r."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "4af90560",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2516"
+		}]
+	},
+	{
+		uid: "349620fd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2516"
+		}]
+	}],
+	rewards: [{
+		uid: "91fb1ffd",
+		type: "item",
+		item: "gregtech:ore_molybdenite_0 1 1",
+		count: 12
+	},
+	{
+		uid: "38c9b988",
+		type: "item",
+		item: "gregtech:ore_vanadium_magnetite_0",
+		count: 24
+	}]
+}

@@ -1,7 +1,7 @@
 {
 	title: "Basic Large Miner",
 	icon: "gregtech:machine 1 1026",
-	x: 9.0d,
+	x: 1.0d,
 	y: -3.0d,
 	shape: "pentagon",
 	text: [

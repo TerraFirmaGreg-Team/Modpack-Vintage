@@ -7,8 +7,8 @@
 			Amount: 1000
 		}
 	},
-	x: 7.5d,
-	y: 2.5d,
+	x: 9.0d,
+	y: -1.5d,
 	shape: "circle",
 	text: [
 		"Nitrobenzene is §d3.64 times§r as energy dense as Benzene!"

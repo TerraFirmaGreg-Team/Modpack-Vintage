@@ -1,0 +1,19 @@
+{
+	title: "More LuV Circuits",
+	icon: "gregtech:meta_item_1 1 638",
+	x: -1.0d,
+	y: -4.0d,
+	text: [
+		"LuV Circuits that aren't mainframes!"
+	],
+	dependencies: [
+		"b79a8fce"
+	],
+	tasks: [{
+		uid: "3382b560",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 638"
+		}]
+	}]
+}

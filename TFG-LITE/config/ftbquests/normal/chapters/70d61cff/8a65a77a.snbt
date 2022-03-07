@@ -1,8 +1,8 @@
 {
 	title: "EV Assembling Machine",
 	icon: "gregtech:machine 1 638",
-	x: -1.0d,
-	y: -3.0d,
+	x: -5.0d,
+	y: -5.0d,
 	text: [
 		"No Description"
 	],

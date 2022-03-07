@@ -8,7 +8,7 @@
 		}
 	},
 	x: 9.0d,
-	y: 2.5d,
+	y: -2.5d,
 	shape: "circle",
 	text: [
 		"§aCetane-Boosted Diesel§r is 50% more energy dense than regular §eDiesel§r, and only requires 1 part §9Tetranitromethane (TNM)§r for every 50 parts §eDiesel§r. What a deal, right?",

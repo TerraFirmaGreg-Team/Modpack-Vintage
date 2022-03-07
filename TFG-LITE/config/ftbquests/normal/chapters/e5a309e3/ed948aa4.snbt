@@ -7,8 +7,8 @@
 			FluidName: "ammonia"
 		}
 	},
-	x: 5.5d,
-	y: 2.5d,
+	x: 7.0d,
+	y: 0.0d,
 	shape: "circle",
 	text: [
 		"The recipe that will give you the least headaches is the one in the §3HV Chemical Reactor§r, but other sources may pick your attention more.",

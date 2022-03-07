@@ -2,7 +2,7 @@
 	title: "HV Superconductors",
 	icon: "gregtech:wire_single 1 426",
 	x: 1.0d,
-	y: -8.5d,
+	y: -9.0d,
 	shape: "circle",
 	text: [
 		"By this point, normal Cables with insulation have a near insignificant loss.",

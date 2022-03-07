@@ -7,8 +7,8 @@
 			FluidName: "nitric_acid"
 		}
 	},
-	x: 5.5d,
-	y: 5.0d,
+	x: 7.0d,
+	y: -2.0d,
 	shape: "circle",
 	text: [
 		"§oNitric Acid does not eat your skin unlike most acids, but its fumes are extremely toxic! It is also a very potent oxidizer. Extremely dangerous.§r",

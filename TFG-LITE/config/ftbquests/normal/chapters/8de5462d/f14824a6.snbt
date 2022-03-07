@@ -2,12 +2,12 @@
 	title: "Ultimate Battery",
 	icon: "gregtech:meta_item_1 1 753",
 	x: 1.5d,
-	y: 0.0d,
+	y: 1.5d,
 	text: [
 		"No Description"
 	],
 	dependencies: [
-		"7a6804de"
+		"e60415a8"
 	],
 	tasks: [{
 		uid: "e7a11e35",

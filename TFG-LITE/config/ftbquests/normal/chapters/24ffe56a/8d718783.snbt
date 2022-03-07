@@ -1,0 +1,41 @@
+{
+	title: "Iridium and Osmium",
+	icon: "gregtech:meta_ingot 1 50",
+	x: -11.5d,
+	y: -8.5d,
+	text: [
+		"This part of the chain starts with §aRarest Metal Residue§r.",
+		"",
+		"You will need an §1§1IV§r powered §3Large Chemical Reactor§r, but the average power is not too bad.",
+		"",
+		"§dChlorine§r is fully looped, and §dHydrogen§r is slightly negative (§ounless you put Acidic Osmium Solution in the Distillation Tower and electrolyze the water back... no, don't do that§r).",
+		"",
+		"",
+		"§aIridium§r is required to progress in the §1IV§r Age, so... automate the PGS line!"
+	],
+	dependencies: [
+		"7a1f5b6a"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c36be670",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2059"
+		}]
+	},
+	{
+		uid: "6a47b9a6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 50"
+		}]
+	},
+	{
+		uid: "861d35fe",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 75"
+		}]
+	}]
+}

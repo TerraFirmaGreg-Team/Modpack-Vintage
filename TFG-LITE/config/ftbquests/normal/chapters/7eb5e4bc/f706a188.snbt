@@ -1,0 +1,19 @@
+{
+	title: "Large Plasma Turbine",
+	icon: "gregtech:machine 1 1012",
+	x: -9.0d,
+	y: -5.5d,
+	text: [
+		"§cWarning§r: §9Plasmas§r are §cextremely hot§r, with temperatures exceeding §d30 kK§r! Only §9Duranium Fluid Pipes§r can transport them."
+	],
+	dependencies: [
+		"e24afdaf"
+	],
+	tasks: [{
+		uid: "735e2aba",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1012"
+		}]
+	}]
+}

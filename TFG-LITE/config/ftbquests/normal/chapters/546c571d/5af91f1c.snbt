@@ -1,5 +1,5 @@
 {
-	title: "{tfg.quests.lv.aluminiumingot.title}",
+	title: "{tfg.quests.lv.cupronickelcoils.title}",
 	x: 12.0d,
 	y: 10.0d,
 	description: "{tfg.quests.lv.cupronickelcoils.subtitle}",

@@ -1,0 +1,17 @@
+{
+	title: "Craftable in MV & HV",
+	icon: "gregtech:machine 1 987",
+	disable_toast: true,
+	x: -28.5d,
+	y: -9.0d,
+	text: [
+		"This Circuit line does not quite have a name. But they are all made off plastic boards, so you may call them that way.",
+		"",
+		"This is where the §3Cleanroom§r starts being required.",
+		"",
+		"The §aMainframe§r requires a §3HV Circuit Assembler§r.",
+		"",
+		"",
+		"§bLore:§r In Omnifactory, and in previous Gregicality, this circuit line was called §9Micro§r and was standardized like further tiers."
+	]
+}

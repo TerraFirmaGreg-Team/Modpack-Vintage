@@ -175,6 +175,8 @@ tfg.quests.primitive.bloomery.subtitle=&aA hatch with the power of Thanos is use
 tfg.quests.primitive.ironingot.title=Forged Iron Ingot
 tfg.quests.primitive.ironingot.subtitle=&aAnd how long did it take you? In vanilla it's 10 minutes, and here it's already.. hmm.. 40 hours?
 
+tfg.quests.primitive.bowlmount.subtitle=Take it in the groove in your hands, put the hammer on the hammer quick access panel, and hit the trunk of the hevea or rubber fig
+
 tfg.quests.primitive.bellows.subtitle=&aBellows, which are used to increase the temperature in a coal smelter or blast furnace to 9999999 degrees Celsius, there are legends that someone managed to melt Neutronium in this blast furnace.
 
 tfg.quests.primitive.climatestation1.subtitle=&aAdvice for novice gardeners: cover plants with blue paint! They grow better. And if you are already a smesharik, then use this unit as a greenhouse controller.
@@ -348,9 +350,9 @@ tfg.quests.steam.safe.subtitle=&aAn interesting safe, I don't know why you might
 tfg.quests.steam.mortar.title=Mortar
 tfg.quests.steam.mortar.subtitle=&aYou will need it to make it easier to crumble metals, or to create alloys right in your hands.
 
-tfg.quests.steam.craftingstation.subtitle=&aA cool replacement for the vanilla workbench. Allows you to take items from nearby chests, as well as store items in yourself, also saves items in the crafting grid after leaving the workbench.
-
-tfg.quests.steam.raintank.subtitle=&aThe name speaks for itself. Allows you to collect water in the rain.
+tfg.quests.steam.craftingstation.subtitle=§oMaybe you thought forcing crafting with tools would make your life painful. I shall present you the solution: the Crafting Station.§r
+tfg.quests.steam.craftingstation.desc1=The §3Crafting Station§r is a highly §9advanced Crafting Table§r, with inventory slots for item and tools. Put the recipes either by dropping ghost items, or using the §a+§r in §2JEI§r. Crafting the items will use the items and tools in the inventory. The 9 slots on the right are saved up recipes so you can re-use them without re-opening §2JEI§r.
+tfg.quests.steam.craftingstation.desc2=What makes the §3Crafting Station§r amazing, is the fact that §6it can use adjacent inventories§r in addition to its own inventory. If you are familiar to playing with Applied Energistics, the Crafting Station is essentially a mini ME Crafting Terminal.
 
 tfg.quests.steam.cokeoven.subtitle=&aA furnace that will give you access to a more powerful fuel called Coke coal.
 
@@ -903,7 +905,7 @@ tfg.quests.mv.era.title=§cEra 4 §4-§4 §bElectricity MV
 
 tfg.quests.mv.advelectrolyzer.title=Advanced Electrolyzer
 tfg.quests.mv.advelectrolyzer.subtitle=§oRemember the Ore Processing Quest referencing the Electrolyzer? It told you that you had to wait until MV, so here we are.§r
-tfg.quests.mv.advelectrolyzer.desc1=The Advanced Electrolyzer allows you to decompose §6all§r Dusts. This will make getting materials such as §aAluminium§o§§ a lot easier!
+tfg.quests.mv.advelectrolyzer.desc1=The Advanced Electrolyzer allows you to decompose §6all§r dusts(except for one). This will make getting materials such as §aAluminium§o§§ a lot easier!
 
 tfg.quests.mv.balanced.title=A Balanced Quest
 tfg.quests.mv.balanced.subtitle=Clay is an extremely §mbalanced§r useful material for electrolysis.

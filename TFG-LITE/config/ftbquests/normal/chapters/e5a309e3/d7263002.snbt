@@ -1,6 +1,6 @@
 {
 	icon: "gregtech:machine 1 67",
-	x: -6.0d,
+	x: -3.0d,
 	y: 0.0d,
 	shape: "square",
 	text: [

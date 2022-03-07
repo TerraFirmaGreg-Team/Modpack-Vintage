@@ -1,0 +1,23 @@
+{
+	title: "HSS-E",
+	icon: "gregtech:meta_ingot 1 2519",
+	x: -20.5d,
+	y: -8.5d,
+	text: [
+		"§oTechnically HSS-E does not have Manganese, but close enough... as some other HSS alloys do have Manganese.§r",
+		"",
+		"§aHSS-E§r has very few niche uses required in progression.",
+		"",
+		"This alloy has great durability and damage property for tools. It has the best Power multiplier (until Neutronium!) as a §dRotor§r for §3Large Turbines§r, though less efficient than §aHSS-S§r."
+	],
+	dependencies: [
+		"c2e36883"
+	],
+	tasks: [{
+		uid: "54c02704",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2519"
+		}]
+	}]
+}

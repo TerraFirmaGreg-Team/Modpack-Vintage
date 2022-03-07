@@ -1,0 +1,29 @@
+{
+	x: -6.0d,
+	y: -4.0d,
+	text: [
+		"The main §dLuV§r material.",
+		"",
+		"Progressing into §dLuV§r Age will require more than simply §aRhodium Plated Palladium§r and §9LuV Circuits§r. You will also need the §3Assembly Line§r.",
+		"",
+		"The §4resource costs§r will also start to increase §4significantly§r as you work towards §eFusion§r.",
+		"If you haven't got automation for nearly everything, now (in §1IV§r Age) is a good time to do it.",
+		"Make use of §3Processing Arrays§r, or all the special Multiblocks from §2Gregicality Multiblocks§r.",
+		"",
+		"If your power generation relies on §3Large Turbines§r, you can still get the §3LuV Rotor Holder§r.",
+		"",
+		"",
+		"§c⚠ Quests in LuV and above are not completed yet! Only rough progression is outlined."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"e0995a94"
+	],
+	tasks: [{
+		uid: "54204d02",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2062"
+		}]
+	}]
+}

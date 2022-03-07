@@ -1,8 +1,8 @@
 {
 	title: "True Distillation",
 	icon: "gregtech:machine 1 1005",
-	x: -3.0d,
-	y: 7.5d,
+	x: 4.5d,
+	y: 0.0d,
 	text: [
 		"§oTime for a real oil refinery.§r",
 		"",

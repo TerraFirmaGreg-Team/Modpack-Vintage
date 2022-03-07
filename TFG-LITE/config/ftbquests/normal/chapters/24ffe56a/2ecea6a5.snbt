@@ -1,0 +1,49 @@
+{
+	title: "Indium",
+	icon: "gregtech:meta_dust 1 48",
+	x: -14.5d,
+	y: -8.5d,
+	text: [
+		"§oIndium has uses as a semiconductor.§r",
+		"",
+		"Getting §aIndium§r requires a lot of §dSulfuric Acid§r, and two different ores: Galena and Sphalerite.",
+		"",
+		"§dSulfuric Acid§r can be produced in large scale in the §3Large Chemical Reactor§r, or obtained as a waste from the §9Platinum Group Sludge§r process.",
+		"",
+		"In §dLuV§r, the mandatory §9Naquadah chain§r will grant §aIndium§r too, which means this setup will have a limited life.",
+		"",
+		"",
+		"§bLore:§r Another small chain inherited from GregTech 5. However this used to yield one tiny Dust instead, which was very painful."
+	],
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "1d46f7fa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed_purified 1 279"
+		}]
+	},
+	{
+		uid: "a61d79a6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed_purified 1 322"
+		}]
+	},
+	{
+		uid: "8b9ec199",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 48"
+		}]
+	},
+	{
+		uid: "2127caa7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 354"
+		}]
+	}]
+}

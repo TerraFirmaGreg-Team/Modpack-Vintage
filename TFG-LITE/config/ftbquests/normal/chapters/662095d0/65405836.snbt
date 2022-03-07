@@ -20,7 +20,7 @@
 		"{tfg.quests.mv.distillation.desc10}",
 		"{tfg.quests.mv.distillation.desc11}"
 	],
-	min_required_dependencies: 3,
+	min_required_dependencies: 2,
 	dependencies: [
 		"9bab507a",
 		"56665807",

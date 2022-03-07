@@ -3,5 +3,5 @@
 	icon: "appliedenergistics2:controller",
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: "pentagon"
+	default_quest_shape: "circle"
 }

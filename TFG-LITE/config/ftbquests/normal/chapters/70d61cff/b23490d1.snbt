@@ -1,11 +1,25 @@
 {
 	title: "Large Combustion",
 	icon: "gregtech:machine 1 1007",
-	x: -5.0d,
-	y: -1.5d,
+	x: -3.0d,
+	y: -1.0d,
 	shape: "pentagon",
 	text: [
-		"No Description"
+		"The §3Large Combustion Engine§r is a multiblock able to burn §dCombustion Fuels§r for even more Power Generation!",
+		"",
+		"It's default production outputs 2048 EU/t, which is simply the same as 4 §3Turbo Combustion Generators§r.",
+		"",
+		"Where it shines is the ability to §6boost§r it with §aOxygen§r.",
+		"This will double the fuel consumption, but §9triple the power generation§r for 6144 EU/t!",
+		"This results in §6150% Fuel efficiency§r.",
+		"",
+		"It also requires a small amount of §aLubricant§r, nothing too crazy.",
+		"",
+		"The §3LCE§r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock.",
+		"",
+		"",
+		"§9Note:§r This Quest requires §eany§r task to be completed, but you should still need all the parts.",
+		"To harness the 6144 EU/t Power output, you will need a §34A EV Dynamo Hatch§r, or an §3IV Dynamo Hatch§r."
 	],
 	dependencies: [
 		"14263e77",

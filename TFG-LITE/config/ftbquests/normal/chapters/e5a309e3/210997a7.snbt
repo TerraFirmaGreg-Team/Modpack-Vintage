@@ -1,8 +1,8 @@
 {
 	title: "Central Monitor",
 	icon: "gregtech:machine 1 1029",
-	x: -3.0d,
-	y: 6.0d,
+	x: -8.0d,
+	y: -4.0d,
 	text: [
 		"The §3Central Monitor§r is an §doptional§r yet extremely charming structure.",
 		"",

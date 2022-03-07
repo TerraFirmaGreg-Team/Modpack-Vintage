@@ -7,8 +7,8 @@
 			FluidName: "phenol"
 		}
 	},
-	x: -3.0d,
-	y: 3.0d,
+	x: -1.5d,
+	y: 4.0d,
 	text: [
 		"No Description"
 	],

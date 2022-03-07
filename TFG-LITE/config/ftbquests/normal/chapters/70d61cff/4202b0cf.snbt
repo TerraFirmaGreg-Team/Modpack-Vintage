@@ -18,8 +18,8 @@
 			}
 		}
 	},
-	x: -1.0d,
-	y: 2.5d,
+	x: -7.0d,
+	y: 3.5d,
 	text: [
 		"How to get Platinum:",
 		"§9-§r From §aNickel Ore§r byproduct, either §3Chemical Bath§r of §3HV Macerator§r (be sure to remember to check the ore byproduct JEI page!)",
@@ -32,8 +32,9 @@
 		"",
 		"§bLore:§r Mekanism's primary material was planned to be Platinum. However GregoriusT complained about it being such a rare material that would be spread all over the world."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
-		"bb4e3d1a"
+		"14263e77"
 	],
 	tasks: [{
 		uid: "f95a92e8",

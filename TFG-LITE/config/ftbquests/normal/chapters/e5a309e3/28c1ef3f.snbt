@@ -1,7 +1,7 @@
 {
 	title: "Titanium",
 	icon: "gregtech:meta_ingot 1 113",
-	x: 3.0d,
+	x: 6.0d,
 	y: -6.0d,
 	shape: "circle",
 	text: [
@@ -20,10 +20,7 @@
 		"§c⚠ Quests EV and above are not completed yet! Only rough progression is outlined in the quests."
 	],
 	dependencies: [
-		"b3d40b60",
-		"2f970f5b",
-		"490b3016",
-		"cf0f1498"
+		"5fce06c9"
 	],
 	size: 1.5d,
 	tasks: [{

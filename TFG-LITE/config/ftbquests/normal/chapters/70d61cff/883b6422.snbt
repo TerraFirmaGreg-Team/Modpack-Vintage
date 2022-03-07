@@ -1,0 +1,42 @@
+{
+	title: "True Distillation: Fuel",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "oil"
+		}
+	},
+	x: 4.5d,
+	y: 1.5d,
+	text: [
+		"Here are the four most relevant §dHydrocarbons§r you will be obtaining §6all at once§r from distilling Steam-Cracked Fuels.",
+		"",
+		"You will §lwant§r to set this up somewhere during the §5EV§r Age.",
+		"",
+		"§aSteam-Cracked Light Fuel§r as input is the most favorable, but you are free to experiment."
+	],
+	dependencies: [
+		"ff136331"
+	],
+	tasks: [{
+		uid: "35dc341e",
+		type: "fluid",
+		fluid: "benzene"
+	},
+	{
+		uid: "15f360ed",
+		type: "fluid",
+		fluid: "butadiene"
+	},
+	{
+		uid: "16de32ac",
+		type: "fluid",
+		fluid: "ethylene"
+	},
+	{
+		uid: "53486106",
+		type: "fluid",
+		fluid: "methane"
+	}]
+}

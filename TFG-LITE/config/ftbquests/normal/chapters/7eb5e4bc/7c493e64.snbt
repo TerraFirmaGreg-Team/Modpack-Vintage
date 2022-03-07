@@ -1,0 +1,19 @@
+{
+	title: "More ZPM Circuits",
+	icon: "gregtech:meta_item_1 1 642",
+	x: -4.5d,
+	y: -5.5d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"bf6518c6"
+	],
+	tasks: [{
+		uid: "342bd35a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 642"
+		}]
+	}]
+}

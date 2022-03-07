@@ -1,0 +1,12 @@
+{
+	title: "Craftable in IV",
+	icon: "gregtech:machine 1 990",
+	disable_toast: true,
+	x: -26.5d,
+	y: -9.0d,
+	text: [
+		"This is the §9Quantum§r Circuit line.",
+		"",
+		"You may want to invest in §aPBI§r at this point, for the §dAdvanced SMDs§r."
+	]
+}

@@ -1,0 +1,32 @@
+{
+	title: "Insane Batteries",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 748s,
+		tag: {
+			Charge: 250000000L
+		}
+	},
+	x: -3.5d,
+	y: -2.0d,
+	text: [
+		"§o250 Million EU in a Battery, 25Min of Power when drained constantly!? That's amazing!§r",
+		"",
+		"The §aLapotronic Energy Orb§r should be the beginning of the end of your energy storage struggles.",
+		"This Energy Storage is perfectly suited if your Power Generation is inconsistent, or if you need to buffer large amounts due to the nature of §3Large Turbines§r.",
+		"",
+		"It does not come quite cheap though. The §dEngraved Lapotron Crystal Chips§r are worth §a8 Lapotron Crystals§r."
+	],
+	dependencies: [
+		"c94cfaf6",
+		"8b616946"
+	],
+	tasks: [{
+		uid: "6daf7bfd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 748"
+		}],
+		ignore_nbt: 1b
+	}]
+}
