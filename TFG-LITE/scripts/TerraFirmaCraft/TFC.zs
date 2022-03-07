@@ -1,6 +1,4 @@
 import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDict;
 import crafttweaker.liquid.ILiquidStack;
 
 import mods.terrafirmacraft.ItemRegistry;
