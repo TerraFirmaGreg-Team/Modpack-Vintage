@@ -190,7 +190,7 @@ ItemRegistry.registerItemSize(<gregtech:meta_plate:*>, "LARGE", "LIGHT");
 
 // - Регистрация блоков руд - Вес + Размер
 var GregtechOres as IItemStack[] = [
-	<gregtech:ore_aluminium_0>,
+        <gregtech:ore_aluminium_0>,
         <gregtech:ore_beryllium_0>,
         <gregtech:ore_cobalt_0>,
         <gregtech:ore_copper_0>,

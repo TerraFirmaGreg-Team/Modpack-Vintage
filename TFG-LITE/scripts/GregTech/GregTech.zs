@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamond>;
 
-//Удаление + скрытие
+// Удаление рецептов + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
     // Rubber stuff
     <gregtech:planks>,
@@ -28,6 +28,7 @@ for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
+// Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
 	// Paper
     <minecraft:paper> * 2,
@@ -57,7 +58,7 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
-// Удаление рецептов
+// Поименное удаление рецептов
 val RemoveItemRecipesByName = [
     "gregtech:cobblestone_hammer",
     "gregtech:piston_iron",
