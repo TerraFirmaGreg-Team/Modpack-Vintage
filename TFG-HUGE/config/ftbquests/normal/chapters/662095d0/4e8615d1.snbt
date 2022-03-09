@@ -1,20 +1,15 @@
 {
-	title: "Polyethylene",
+	title: "{tfg.quests.mv.polyethylene.title}",
 	icon: "gregtech:meta_plate 1 1012",
-	x: 14.0d,
+	x: 15.0d,
 	y: -12.0d,
+	description: "{tfg.quests.mv.polyethylene.subtitle}",
 	text: [
-		"§oYour first polymer! Or if you want to be less fancy, just call it plastic, but hide in a corner first.§r",
+		"{tfg.quests.mv.polyethylene.desc1}",
+		"{tfg.quests.mv.polyethylene.desc2}",
 		"",
-		"For the polymerization process, add §aOxygen§r. That's better than Air.",
-		"Then solidify like you would with Rubber.",
-		"",
-		"",
-		"§aPolyethylene (PE)§r is the key to unlock §6many new things§r. It's used mostly as §dSheets§r or §dFluid§r form.",
-		"No spoilers here! Let's have you figure out what it does with all the next Quests, one by one.",
-		"",
-		"",
-		"§bLore:§r The OreDict and fluid name for Polyethylene is §oplastic§r, for cross-mod compatibility."
+		"{tfg.quests.mv.polyethylene.desc3}",
+		"{tfg.quests.mv.polyethylene.desc4}"
 	],
 	dependencies: [
 		"054e10a4"

@@ -6,8 +6,14 @@
 		"57208fec"
 	],
 	tasks: [{
-		uid: "b440a68b",
-		type: "fluid",
-		fluid: "creosote"
+		uid: "3838bdd1",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "creosote",
+				Amount: 1000
+			}
+		}]
 	}]
 }

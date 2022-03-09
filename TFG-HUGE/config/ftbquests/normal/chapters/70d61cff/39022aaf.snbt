@@ -16,8 +16,14 @@
 		"1f0de8ce"
 	],
 	tasks: [{
-		uid: "c261e37d",
-		type: "fluid",
-		fluid: "gasoline"
+		uid: "88c7f319",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "gasoline",
+				Amount: 1000
+			}
+		}]
 	}]
 }

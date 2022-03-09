@@ -1,16 +1,15 @@
 {
-	title: "Multiple Channel Pipes",
+	title: "{tfg.quests.mv.multiple.title}",
 	icon: "gregtech:fluid_pipe_nonuple 1 2013",
-	x: 4.0d,
-	y: -10.0d,
+	x: 7.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.multiple.subtitle}",
 	text: [
-		"Regular §o§dGregTech§r Fluid Pipes can only transport one fluid type at a time. But don't cave and install EnderIO yet!",
+		"{tfg.quests.mv.multiple.desc1}",
 		"",
-		"§3Quadruple Fluid Pipes§r can transfer four different types of fluids. §3Nonuple Fluid Pipes§r can transfer nine different types! Useful for compact setups.",
+		"{tfg.quests.mv.multiple.desc2}",
 		"",
-		"§3Nonuple Fluid Pipes§r will be useful in §5EV§r Age for handling the many §3Distillation Tower§r outputs.",
-		"",
-		"Get §eeither§r to finish this quest."
+		"{tfg.quests.mv.multiple.desc3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

@@ -127,7 +127,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:gs_basic:6>,
   <galaxyspace:rocket_modules:4>,
   <galaxyspace:rocket_modules:5>,
-  <galaxyspace:rocket_modules:6>,
   <galaxyspace:rocket_modules:7>,
   <galaxyspace:dungeon_keys>,
   <galaxyspace:dungeon_keys:1>,
@@ -161,7 +160,16 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:tauceti_f_watergrass:4>,
   <galaxyspace:tauceti_f_watergrass:5>,
   <galaxyspace:tauceti_f_watergrass:6>,
-  <galaxyspace:tauceti_f_watergrass:7>
+  <galaxyspace:tauceti_f_watergrass:7>,
+  <galaxyspace:rocket_assembler>,
+  <galaxyspace:gs_basic:14>,
+  <galaxyspace:schematics>,
+  <galaxyspace:schematics:1>,
+  <galaxyspace:schematics:2>,
+  <galaxyspace:schematics:3>,
+  <galaxyspace:schematics:6>,
+  <galaxyspace:schematics:5>,
+  <galaxyspace:schematics:4>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
   mods.jei.JEI.removeAndHide(item);
@@ -192,7 +200,6 @@ val RemoveItemRecipe as IItemStack[] = [
   <galaxyspace:panel_controller>,
   <galaxyspace:radiation_stabiliser>,
   <galaxyspace:gravitation_module>,
-  <galaxyspace:rocket_assembler>,
   <galaxyspace:gs_basic:32>,
   <galaxyspace:gs_basic:9>,
   <galaxyspace:rocket_modules>,
@@ -272,12 +279,6 @@ recipes.addShaped(<galaxyspace:gs_basic:1>,
 [[<galacticraftcore:steel_pole>, null, null],
  [<metaitem:carbon.plate>, <galacticraftcore:steel_pole>, null],
  [<metaitem:cover.solar.panel>, <ore:foilStainlessSteel>, <galacticraftcore:steel_pole>]]);
-
-//Сборщик ракет
-recipes.addShaped(<galaxyspace:rocket_assembler>,
-[[<metaitem:robot.arm.hv>, <metaitem:conveyor.module.hv>, <metaitem:robot.arm.hv>],
- [<ore:plateAluminium>, <metaitem:hull.hv>, <ore:plateAluminium>],
- [<ore:wireGtSingleMagnesiumDiboride>, <ore:wireGtSingleMagnesiumDiboride>, <ore:wireGtSingleMagnesiumDiboride>]]);
 
 //Гибридная солнечная панель
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
@@ -375,62 +376,6 @@ recipes.addShaped(<galaxyspace:upgrades:3>,
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateCobalt>, <metaitem:wafer.glowstone>, <ore:plateCobalt>]]);
 
-//High Duty Plates(4-6)
-//Tier 4
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateTitanium>.firstItem * 3, <ore:plateTungstenSteel>.firstItem, <ore:foilOsmiridium>.firstItem * 16])
-	.outputs(<galaxyspace:hdp> * 3)
-	.property("temperature", 7100)
-	.duration(1000)
-	.EUt(520)
-	.buildAndRegister();
-//Tier 5
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateTungstenSteel>.firstItem * 3, <ore:plateHssg>.firstItem, <ore:foilHsss>.firstItem * 16])
-	.outputs(<galaxyspace:hdp:1> * 3)
-	.property("temperature", 8750)
-	.duration(1000)
-	.EUt(580)
-	.buildAndRegister();
-//Tier 6
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateHssg>.firstItem * 3, <ore:foilNaquadria>.firstItem * 16])
-	.outputs(<galaxyspace:hdp:2> * 3)
-	.property("temperature", 10777)
-	.duration(1000)
-	.EUt(640)
-	.buildAndRegister();
-
-//Скафандры
-//Скаф 1лвл тапки
-assembler.recipeBuilder()
-  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitExtreme>*3, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_feet:200>.withTag({modification_count: 2, boots_button: 0 as byte}))
-  .duration(500)
-  .EUt(512)
-  .buildAndRegister();
-//Скаф 1лвл поножи
-assembler.recipeBuilder()
-  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_legs:200>.withTag({legs_button: 0 as byte, modification_count: 2}))
-  .duration(500)
-  .EUt(512)
-  .buildAndRegister();
-//Скаф 1лвл грудак
-assembler.recipeBuilder()
-  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_chest:200>.withTag({modification_count: 2, chest_button: 0 as byte}))
-  .duration(500)
-  .EUt(512)
-  .buildAndRegister();
-//Скаф 1лвл шапка
-assembler.recipeBuilder()
-  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
-  .outputs(<galaxyspace:space_suit_head:200>.withTag({modification_count: 2, helmet_button: 0 as byte}))
-  .duration(500)
-  .EUt(512)
-  .buildAndRegister();
-
 //SSHD-Alloy
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateBronze> * 2, <ore:plateBlackSteel> * 3)
@@ -507,3 +452,718 @@ assembler.recipeBuilder()
   .duration(260)
   .EUt(4)
   .buildAndRegister();
+
+//High Duty Plates(4-6)
+//Tier 4
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateTitanium>.firstItem * 3, <ore:plateTungstenSteel>.firstItem, <ore:foilOsmiridium>.firstItem * 16])
+	.outputs(<galaxyspace:hdp> * 3)
+	.property("temperature", 7100)
+	.duration(1000)
+	.EUt(520)
+	.buildAndRegister();
+//Tier 5
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateTungstenSteel>.firstItem * 3, <ore:plateHssg>.firstItem, <ore:foilHsss>.firstItem * 16])
+	.outputs(<galaxyspace:hdp:1> * 3)
+	.property("temperature", 8750)
+	.duration(1000)
+	.EUt(580)
+	.buildAndRegister();
+//Tier 6
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateHssg>.firstItem * 3, <ore:foilNaquadria>.firstItem * 16])
+	.outputs(<galaxyspace:hdp:2> * 3)
+	.property("temperature", 10777)
+	.duration(1000)
+	.EUt(640)
+	.buildAndRegister();
+
+//Скафандры
+//Скаф 1лвл тапки
+assembler.recipeBuilder()
+  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitExtreme>*3, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_feet:200>.withTag({modification_count: 2, boots_button: 0 as byte}))
+  .duration(500)
+  .EUt(512)
+  .buildAndRegister();
+//Скаф 1лвл поножи
+assembler.recipeBuilder()
+  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_legs:200>.withTag({legs_button: 0 as byte, modification_count: 2}))
+  .duration(500)
+  .EUt(512)
+  .buildAndRegister();
+//Скаф 1лвл грудак
+assembler.recipeBuilder()
+  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_chest:200>.withTag({modification_count: 2, chest_button: 0 as byte}))
+  .duration(500)
+  .EUt(512)
+  .buildAndRegister();
+//Скаф 1лвл шапка
+assembler.recipeBuilder()
+  .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
+  .outputs(<galaxyspace:space_suit_head:200>.withTag({modification_count: 2, helmet_button: 0 as byte}))
+  .duration(500)
+  .EUt(512)
+  .buildAndRegister();
+
+// Nose Cons 3-6 Tiers
+// Tier 3
+assembler.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 4)
+   .inputs(<metaitem:sensor.luv> * 2)
+   .inputs(<minecraft:redstone_torch>)
+   .circuit(7)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts>)
+   .duration(600)
+   .EUt(580)
+   .buildAndRegister();
+
+// Tier 4
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp> * 4)
+   .inputs(<metaitem:sensor.iv> * 2)
+   .inputs(<minecraft:redstone_torch>)
+   .circuit(7)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:5>)
+   .duration(600)
+   .EUt(640)
+   .buildAndRegister();
+
+// Tier 5
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:1> * 4)
+   .inputs(<metaitem:sensor.luv> * 2)
+   .inputs(<minecraft:redstone_torch>)
+   .circuit(7)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:10>)
+   .duration(600)
+   .EUt(680)
+   .buildAndRegister();
+
+// Tier 6
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 4)
+   .inputs(<metaitem:sensor.zpm> * 2)
+   .inputs(<minecraft:redstone_torch>)
+   .circuit(7)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:15>)
+   .duration(600)
+   .EUt(720)
+   .buildAndRegister();
+
+// Rocket Body 3-6 Tiers
+// Tier 3
+assembler.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 2)
+   .inputs(<ore:screwStainlessSteel> * 64)
+   .circuit(12)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:1>)
+   .duration(600)
+   .EUt(580)
+   .buildAndRegister();
+
+// Tier 4
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp> * 2)
+   .inputs(<ore:screwStainlessSteel> * 64)
+   .circuit(12)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:6>)
+   .duration(600)
+   .EUt(640)
+   .buildAndRegister();
+
+// Tier 5
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:1> * 2)
+   .inputs(<ore:screwStainlessSteel> * 64)
+   .circuit(12)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:11>)
+   .duration(600)
+   .EUt(680)
+   .buildAndRegister();
+
+// Tier 6
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 2)
+   .inputs(<ore:screwStainlessSteel> * 64)
+   .circuit(12)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:16>)
+   .duration(600)
+   .EUt(720)
+   .buildAndRegister();
+
+// Heavy Boosters 3-6 Tiers
+// Tier 3
+assembler.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 2)	
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.motor.hv> * 8)
+   .inputs(<metaitem:electric.pump.hv> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 16)
+   .inputs(<ore:circuitAdvanced> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 16)
+   .inputs(<galacticraftcore:air_vent> * 2)
+   .circuit(9)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:3>)
+   .duration(580)
+   .EUt(512)
+   .buildAndRegister();
+
+// Tier 4
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp> * 2)	
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.motor.ev> * 8)
+   .inputs(<metaitem:electric.pump.ev> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 16)
+   .inputs(<ore:circuitAdvanced> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 16)
+   .inputs(<galacticraftcore:air_vent> * 2)
+   .circuit(9)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:8>)
+   .duration(580)
+   .EUt(560)
+   .buildAndRegister();
+
+// Tier 5
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:1> * 2)	
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.motor.iv> * 8)
+   .inputs(<metaitem:electric.pump.iv> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 16)
+   .inputs(<ore:circuitAdvanced> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 16)
+   .inputs(<galacticraftcore:air_vent> * 2)
+   .circuit(9)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:13>)
+   .duration(580)
+   .EUt(620)
+   .buildAndRegister();
+
+// Tier 6
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 2)	
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.motor.luv> * 8)
+   .inputs(<metaitem:electric.pump.luv> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 16)
+   .inputs(<ore:circuitAdvanced> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 16)
+   .inputs(<galacticraftcore:air_vent> * 2)
+   .circuit(9)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:18>)
+   .duration(580)
+   .EUt(672)
+   .buildAndRegister();
+
+// Rocket Engines 3-6 Tiers
+// Tier 3
+assembler.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 6)
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.pump.iv> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
+   .inputs(<ore:circuitElite> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
+   .inputs(<gregtech:multiblock_casing>)
+   .inputs(<gcym:unique_casing:3>)
+   .circuit(8)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:2>)
+   .duration(600)
+   .EUt(512)
+   .buildAndRegister();
+
+// Tier 4
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp> * 6)
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.pump.iv> * 8)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
+   .inputs(<ore:circuitElite> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
+   .inputs(<gregtech:multiblock_casing> * 2)
+   .inputs(<gcym:unique_casing:3> * 2)
+   .circuit(8)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:7>)
+   .duration(600)
+   .EUt(560)
+   .buildAndRegister();
+
+// Tier 5
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:1> * 6)
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.pump.luv> * 4)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
+   .inputs(<ore:circuitElite> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
+   .inputs(<gregtech:multiblock_casing:1>)
+   .inputs(<gcym:unique_casing:3>)
+   .circuit(8)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:12>)
+   .duration(600)
+   .EUt(620)
+   .buildAndRegister();
+
+// Tier 6
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 6)
+   .inputs(<galaxyspace:rocket_modules:3> * 2)
+   .inputs(<metaitem:electric.pump.luv> * 8)
+   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
+   .inputs(<ore:circuitElite> * 4)
+   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
+   .inputs(<gregtech:multiblock_casing:1> * 2)
+   .inputs(<gcym:unique_casing:3> * 2)
+   .circuit(8)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:17>)
+   .duration(600)
+   .EUt(690)
+   .buildAndRegister();
+
+// Rocket Stabilizators 3-6 Tiers
+// Tier 3
+assembler.recipeBuilder()
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 4)
+   .inputs(<ore:screwAluminium> * 64)
+   .circuit(10)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:4>)
+   .duration(600)
+   .EUt(482)
+   .buildAndRegister();
+
+// Tier 4
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp> * 4)
+   .inputs(<ore:screwAluminium> * 64)
+   .circuit(10)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:9>)
+   .duration(600)
+   .EUt(524)
+   .buildAndRegister();
+
+// Tier 5
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:1> * 4)
+   .inputs(<ore:screwAluminium> * 64)
+   .circuit(10)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:14>)
+   .duration(600)
+   .EUt(548)
+   .buildAndRegister();
+
+// Tier 6
+assembler.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 4)
+   .inputs(<ore:screwAluminium> * 64)
+   .circuit(10)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<galaxyspace:rocket_parts:19>)
+   .duration(600)
+   .EUt(566)
+   .buildAndRegister();
+
+// Rockets 3-6 Tiers 
+// Tier 3 - Without Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts>)
+   .inputs(<galaxyspace:rocket_parts:1> * 20)
+   .inputs(<galaxyspace:rocket_parts:3> * 4)
+   .inputs(<galaxyspace:rocket_parts:4> * 4)
+   .inputs(<galaxyspace:rocket_parts:2>)
+   .inputs(<galaxyspace:rocket_modules:3> * 9)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitMaster> * 16)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3>)
+   .duration(1200)
+   .EUt(12000)
+   .buildAndRegister();
+
+// Tier 3 - With 1 Chest
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts>)
+   .inputs(<galaxyspace:rocket_parts:1> * 20)
+   .inputs(<galaxyspace:rocket_parts:3> * 4)
+   .inputs(<galaxyspace:rocket_parts:4> * 4)
+   .inputs(<galaxyspace:rocket_parts:2>)
+   .inputs(<galaxyspace:rocket_modules:3> * 9)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitMaster> * 16)
+   .inputs(<ore:chestWood>)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:1>)
+   .duration(1200)
+   .EUt(12000)
+   .buildAndRegister();
+
+// Tier 3 - With 2 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts>)
+   .inputs(<galaxyspace:rocket_parts:1> * 20)
+   .inputs(<galaxyspace:rocket_parts:3> * 4)
+   .inputs(<galaxyspace:rocket_parts:4> * 4)
+   .inputs(<galaxyspace:rocket_parts:2>)
+   .inputs(<galaxyspace:rocket_modules:3> * 9)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitMaster> * 16)
+   .inputs(<ore:chestWood> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:2>)
+   .duration(1200)
+   .EUt(12000)
+   .buildAndRegister();
+
+// Tier 3 - With 3 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts>)
+   .inputs(<galaxyspace:rocket_parts:1> * 20)
+   .inputs(<galaxyspace:rocket_parts:3> * 4)
+   .inputs(<galaxyspace:rocket_parts:4> * 4)
+   .inputs(<galaxyspace:rocket_parts:2>)
+   .inputs(<galaxyspace:rocket_modules:3> * 9)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitMaster> * 16)
+   .inputs(<ore:chestWood> * 3)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:3>)
+   .duration(1200)
+   .EUt(12000)
+   .buildAndRegister();
+
+// Tier 4 - Without Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:5>)
+   .inputs(<galaxyspace:rocket_parts:6> * 22)
+   .inputs(<galaxyspace:rocket_parts:8> * 4)
+   .inputs(<galaxyspace:rocket_parts:7>)
+   .inputs(<galaxyspace:rocket_parts:9> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 12)
+   .inputs(<ore:wireGtSingleUraniumRhodiumDinaquadide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.zpm> * 4)
+   .inputs(<metaitem:emitter.zpm> * 4)
+   .inputs(<ore:circuitUltimate> * 16)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_4>)
+   .duration(1200)
+   .EUt(15000)
+   .buildAndRegister();
+
+// Tier 4 - With 1 Chest
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:5>)
+   .inputs(<galaxyspace:rocket_parts:6> * 22)
+   .inputs(<galaxyspace:rocket_parts:8> * 4)
+   .inputs(<galaxyspace:rocket_parts:7>)
+   .inputs(<galaxyspace:rocket_parts:9> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 12)
+   .inputs(<ore:wireGtSingleUraniumRhodiumDinaquadide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.zpm> * 4)
+   .inputs(<metaitem:emitter.zpm> * 4)
+   .inputs(<ore:circuitUltimate> * 16)
+   .inputs(<ore:chestWood>)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_4:1>)
+   .duration(1200)
+   .EUt(15000)
+   .buildAndRegister();
+
+// Tier 4 - With 2 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:5>)
+   .inputs(<galaxyspace:rocket_parts:6> * 22)
+   .inputs(<galaxyspace:rocket_parts:8> * 4)
+   .inputs(<galaxyspace:rocket_parts:7>)
+   .inputs(<galaxyspace:rocket_parts:9> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 12)
+   .inputs(<ore:wireGtSingleUraniumRhodiumDinaquadide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.zpm> * 4)
+   .inputs(<metaitem:emitter.zpm> * 4)
+   .inputs(<ore:circuitUltimate> * 16)
+   .inputs(<ore:chestWood> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_4:2>)
+   .duration(1200)
+   .EUt(15000)
+   .buildAndRegister();
+
+// Tier 4 - With 3 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:5>)
+   .inputs(<galaxyspace:rocket_parts:6> * 22)
+   .inputs(<galaxyspace:rocket_parts:8> * 4)
+   .inputs(<galaxyspace:rocket_parts:7>)
+   .inputs(<galaxyspace:rocket_parts:9> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 12)
+   .inputs(<ore:wireGtSingleUraniumRhodiumDinaquadide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.zpm> * 4)
+   .inputs(<metaitem:emitter.zpm> * 4)
+   .inputs(<ore:circuitUltimate> * 16)
+   .inputs(<ore:chestWood> * 3)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_4:3>)
+   .duration(1200)
+   .EUt(15000)
+   .buildAndRegister();
+
+// Tier 5 - Without Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:10>)
+   .inputs(<galaxyspace:rocket_parts:11> * 24)
+   .inputs(<galaxyspace:rocket_parts:13> * 4)
+   .inputs(<galaxyspace:rocket_parts:12>)
+   .inputs(<galaxyspace:rocket_parts:14> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 15)
+   .inputs(<ore:wireGtSingleEnrichedNaquadahTriniumEuropiumDuranide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 4)
+   .inputs(<metaitem:emitter.uv> * 4)
+   .inputs(<ore:circuitSuper> * 16)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_5>)
+   .duration(1200)
+   .EUt(18000)
+   .buildAndRegister();
+
+// Tier 5 - With 1 Chest
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:10>)
+   .inputs(<galaxyspace:rocket_parts:11> * 24)
+   .inputs(<galaxyspace:rocket_parts:13> * 4)
+   .inputs(<galaxyspace:rocket_parts:12>)
+   .inputs(<galaxyspace:rocket_parts:14> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 15)
+   .inputs(<ore:wireGtSingleEnrichedNaquadahTriniumEuropiumDuranide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 4)
+   .inputs(<metaitem:emitter.uv> * 4)
+   .inputs(<ore:circuitSuper> * 16)
+   .inputs(<ore:chestWood>)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_5:1>)
+   .duration(1200)
+   .EUt(18000)
+   .buildAndRegister();
+
+// Tier 5 - With 2 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:10>)
+   .inputs(<galaxyspace:rocket_parts:11> * 24)
+   .inputs(<galaxyspace:rocket_parts:13> * 4)
+   .inputs(<galaxyspace:rocket_parts:12>)
+   .inputs(<galaxyspace:rocket_parts:14> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 15)
+   .inputs(<ore:wireGtSingleEnrichedNaquadahTriniumEuropiumDuranide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 4)
+   .inputs(<metaitem:emitter.uv> * 4)
+   .inputs(<ore:circuitSuper> * 16)
+   .inputs(<ore:chestWood> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_5:2>)
+   .duration(1200)
+   .EUt(18000)
+   .buildAndRegister();
+
+// Tier 5 - With 3 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:10>)
+   .inputs(<galaxyspace:rocket_parts:11> * 24)
+   .inputs(<galaxyspace:rocket_parts:13> * 4)
+   .inputs(<galaxyspace:rocket_parts:12>)
+   .inputs(<galaxyspace:rocket_parts:14> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 15)
+   .inputs(<ore:wireGtSingleEnrichedNaquadahTriniumEuropiumDuranide> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 4)
+   .inputs(<metaitem:emitter.uv> * 4)
+   .inputs(<ore:circuitSuper> * 16)
+   .inputs(<ore:chestWood> * 3)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_5:3>)
+   .duration(1200)
+   .EUt(18000)
+   .buildAndRegister();
+
+// Tier 6 - Without Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:15>)
+   .inputs(<galaxyspace:rocket_parts:16> * 26)
+   .inputs(<galaxyspace:rocket_parts:18> * 4)
+   .inputs(<galaxyspace:rocket_parts:17>)
+   .inputs(<galaxyspace:rocket_parts:19> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 18)
+   .inputs(<ore:wireGtSingleRutheniumTriniumAmericiumNeutronate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 6)
+   .inputs(<metaitem:emitter.uv> * 6)
+   .inputs(<ore:circuitInfinite> * 16)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_6>)
+   .duration(1200)
+   .EUt(21000)
+   .buildAndRegister();
+
+// Tier 6 - With 1 Chest
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:15>)
+   .inputs(<galaxyspace:rocket_parts:16> * 26)
+   .inputs(<galaxyspace:rocket_parts:18> * 4)
+   .inputs(<galaxyspace:rocket_parts:17>)
+   .inputs(<galaxyspace:rocket_parts:19> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 18)
+   .inputs(<ore:wireGtSingleRutheniumTriniumAmericiumNeutronate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 6)
+   .inputs(<metaitem:emitter.uv> * 6)
+   .inputs(<ore:circuitInfinite> * 16)
+   .inputs(<ore:chestWood>)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_6:1>)
+   .duration(1200)
+   .EUt(21000)
+   .buildAndRegister();
+
+// Tier 6 - With 2 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:15>)
+   .inputs(<galaxyspace:rocket_parts:16> * 26)
+   .inputs(<galaxyspace:rocket_parts:18> * 4)
+   .inputs(<galaxyspace:rocket_parts:17>)
+   .inputs(<galaxyspace:rocket_parts:19> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 18)
+   .inputs(<ore:wireGtSingleRutheniumTriniumAmericiumNeutronate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 6)
+   .inputs(<metaitem:emitter.uv> * 6)
+   .inputs(<ore:circuitInfinite> * 16)
+   .inputs(<ore:chestWood> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_6:2>)
+   .duration(1200)
+   .EUt(21000)
+   .buildAndRegister();
+
+// Tier 6 - With 3 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:rocket_parts:15>)
+   .inputs(<galaxyspace:rocket_parts:16> * 26)
+   .inputs(<galaxyspace:rocket_parts:18> * 4)
+   .inputs(<galaxyspace:rocket_parts:17>)
+   .inputs(<galaxyspace:rocket_parts:19> * 4)
+   .inputs(<galaxyspace:rocket_modules:3> * 18)
+   .inputs(<ore:wireGtSingleRutheniumTriniumAmericiumNeutronate> * 16)
+   .inputs(<ore:batteryElite>)
+   .inputs(<galaxyspace:rocket_modules:2>)
+   .inputs(<metaitem:electric.motor.uv> * 6)
+   .inputs(<metaitem:emitter.uv> * 6)
+   .inputs(<ore:circuitInfinite> * 16)
+   .inputs(<ore:chestWood> * 3)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_tier_6:3>)
+   .duration(1200)
+   .EUt(21000)
+   .buildAndRegister();
+
+// SubLight Engine
+assembly_line.recipeBuilder()
+   .inputs(<galaxyspace:hdp:2> * 4)
+   .inputs(<ore:wireGtDoubleRutheniumTriniumAmericiumNeutronate> * 32)
+   .inputs(<ore:batteryInfinite>)
+   .inputs(<ore:batteryInfinite>)
+   .inputs(<metaitem:electric.motor.uv> * 8)
+   .inputs(<metaitem:emitter.uv> * 32)
+   .inputs(<ore:circuitInfinite> * 32)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galaxyspace:rocket_modules:6>)
+   .duration(1200)
+   .EUt(480600)
+   .buildAndRegister();

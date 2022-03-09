@@ -1,5 +1,6 @@
 {
 	title: "Auto-build",
+	icon: "gregtech:meta_item_1 1 504",
 	x: -2.0d,
 	y: -2.5d,
 	text: [

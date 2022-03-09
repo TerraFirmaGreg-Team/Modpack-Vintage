@@ -1,5 +1,5 @@
 {
-	title: "Ethanol",
+	title: "{tfg.quests.mv.ethanol.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -7,17 +7,15 @@
 			Amount: 1000
 		}
 	},
-	x: 8.0d,
-	y: -12.0d,
+	x: 10.0d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.ethanol.subtitle}",
 	text: [
-		"§oHey! That's Alcohol!§r",
+		"{tfg.quests.mv.ethanol.desc1}",
+		"{tfg.quests.mv.ethanol.desc2}",
 		"",
-		"Put your previously made §aBiomass§r into a §3MV Distillery§r, to make §aEthanol§r.",
-		"You will need this for §dEthylene§r by reacting it with §aSulfuric Acid§r in a §3Chemical Reactor§r... unless you chose the Oil path.",
-		"",
-		"",
-		"Do not try to use Ethanol as a Power source... You may regret it.",
-		"If you want plant based §9Power§r, I suggest §dBenzene§r instead!"
+		"{tfg.quests.mv.ethanol.desc3}",
+		"{tfg.quests.mv.ethanol.desc4}"
 	],
 	dependencies: [
 		"75e24d56",
@@ -33,8 +31,6 @@
 				FluidName: "bio.ethanol",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

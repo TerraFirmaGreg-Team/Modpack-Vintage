@@ -1,14 +1,15 @@
 {
-	title: "{tfg.quests.lv.packager.title}",
+	title: "{tfg.quests.lv.washing.title}",
 	icon: "gregtech:machine 1 485",
 	x: -4.0d,
 	y: 14.0d,
-	description: "{tfg.quests.lv.packager.subtitle}",
+	description: "{tfg.quests.lv.washing.subtitle}",
 	text: [
-		"{tfg.quests.lv.packager.desc1}",
-		"{tfg.quests.lv.packager.desc2}",
+		"{tfg.quests.lv.washing.desc1}",
 		"",
-		"{tfg.quests.lv.packager.desc3}"
+		"{tfg.quests.lv.washing.desc2}",
+		"",
+		"{tfg.quests.lv.washing.desc3}"
 	],
 	dependencies: [
 		"3418fbbb"

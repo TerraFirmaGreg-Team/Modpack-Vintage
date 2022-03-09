@@ -8,26 +8,17 @@
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
-		uid: "dab7e5cc",
+		uid: "c8217178",
 		type: "item",
 		items: [{
-			id: "tfc:metal/pick/copper",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+			id: "gregtech:meta_tool",
+			Damage: 1s,
+			tag: {
+				GT.ToolStats: {
+					Material: "copper"
 				}
 			}
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}]
 }

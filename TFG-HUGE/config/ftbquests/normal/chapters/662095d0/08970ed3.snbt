@@ -1,10 +1,11 @@
 {
-	title: "Capacitors",
+	title: "{tfg.quests.mv.capacitors.title}",
 	icon: "gregtech:meta_item_1 1 520",
 	x: 18.0d,
-	y: -8.0d,
+	y: -6.0d,
+	description: "{tfg.quests.mv.capacitors.subtitle}",
 	text: [
-		"A Circuit Component, that you can now make thanks the §3MV Assembler§r."
+		""
 	],
 	dependencies: [
 		"a9cdae40",

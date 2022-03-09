@@ -1,20 +1,16 @@
 {
-	title: "More LV Circuits",
+	title: "{tfg.quests.mv.LV.title}",
 	icon: "gregtech:meta_item_1 1 623",
-	x: 14.0d,
+	x: 15.0d,
 	y: 0.0d,
+	description: "{tfg.quests.mv.LV.subtitle}",
 	text: [
-		"You have unlocked a new Tier of Circuits!",
-		"The Integrated Logic Circuit is an alternate §aLV Circuit§r, which can be upgraded to §aMV§r, and then §aHV§r.",
+		"{tfg.quests.mv.LV.desc1}",
 		"",
-		"",
-		"§9Note:§r This is not a strict upgrade to the cost of Circuits, you would need to get to the next Tier for that, just slightly further down in the MV Age. Why would you need this Circuit type then? You need it to get to §6HV circuits§r.",
-		"",
-		"",
-		"§bLore:§r The circuit progression in GTCEu is mostly based on GT5u's progression. However it has been rebalanced to not be as painful, specifically this circuit tier which was a complete bait!"
+		"{tfg.quests.mv.LV.desc2}"
 	],
 	dependencies: [
-		"b1f7f431"
+		"495f6775"
 	],
 	tasks: [{
 		uid: "c72fac7d",

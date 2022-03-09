@@ -4,12 +4,12 @@
 	y: 14.0d,
 	description: "{tfg.quests.lv.cells.subtitle}",
 	text: [
-		"{tfg.quests.lv.ecellsra.desc1}",
-		"{tfg.quests.lv.ecellsra.desc2}",
-		"{tfg.quests.lv.ecellsra.desc3}",
-		"{tfg.quests.lv.ecellsra.desc4}",
-		"{tfg.quests.lv.ecellsra.desc5}",
-		"{tfg.quests.lv.ecellsra.desc6}"
+		"{tfg.quests.lv.cells.desc1}",
+		"{tfg.quests.lv.cells.desc2}",
+		"{tfg.quests.lv.cells.desc3}",
+		"{tfg.quests.lv.cells.desc4}",
+		"{tfg.quests.lv.cells.desc5}",
+		"{tfg.quests.lv.cells.desc6}"
 	],
 	dependencies: [
 		"202a8ed5"

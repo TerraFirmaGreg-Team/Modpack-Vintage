@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.grains.title}",
-	x: -14.0d,
+	x: -14.5d,
 	y: 5.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.grains.subtitle}",

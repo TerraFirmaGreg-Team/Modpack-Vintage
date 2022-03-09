@@ -1,0 +1,25 @@
+{
+	x: -21.5d,
+	y: -2.0d,
+	text: [
+		"§oTitanium has the highest corrosion resistance and strength-to-density ratio of any metallic element.§r",
+		"",
+		"Like §8§7Stainless Steel§r, §bAluminium§r, and §8Steel§r for their respective tiers, Titanium is the main material for §5EV§r machines.",
+		"",
+		"To get yourself Titanium, §dRutile§r must first be reduced to §aTitanium Tetrachloride§r in an §3HV Chemical Reactor§r, and then reduced again in the §3EBF§r with §dMagnesium§r to finally arrive at the Titanium§r metal.",
+		"",
+		"The §7Carbon§r, §3Chlorine§r, §bOxygen§r, and §dMagnesium§r used in the process can be perfectly recovered from the byproduct §1Carbon Monoxide§r and §5Magnesium Chloride§r with no loss. Setup a system to recover them and you can process an indefinite amount of Rutile in a closed loop!",
+		"",
+		"",
+		"§aTitanium Tetrachloride§r also acts as a catalyst in Plastics production. A small amount of §aTiCl₄ §rin the polymerisation process increases the polymer yield to §6133%§r§r.",
+		"",
+		"§cWarning:§r §aTitanium Tetrachloride§r is a §chot Fluid§r. Transporting it in pipes that do not have enough heat capacity will §cburn§r them."
+	],
+	tasks: [{
+		uid: "4249bb96",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 113"
+		}]
+	}]
+}

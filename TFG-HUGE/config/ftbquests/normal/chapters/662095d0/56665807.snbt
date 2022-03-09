@@ -1,14 +1,12 @@
 {
-	title: "America Simulator",
+	title: "{tfg.quests.mv.americasimulator.title}",
 	icon: "gregtech:ore_oilsands_0",
-	x: 6.0d,
-	y: -9.0d,
+	x: 4.0d,
+	y: -13.0d,
+	description: "{tfg.quests.mv.americasimulator.subtitle}",
 	text: [
-		"The underground has pure Oilsands veins. You may §aelectrolyze§r the Dust to get §aOil§r.",
-		"",
-		"",
-		"§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.",
-		"This path is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r."
+		"{tfg.quests.mv.americasimulator.desc1}",
+		"{tfg.quests.mv.americasimulator.desc2}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -29,9 +27,15 @@
 		}]
 	},
 	{
-		uid: "155cc24a",
-		type: "fluid",
-		fluid: "oil",
-		amount: 16000
+		uid: "a38a3628",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "oil",
+				Amount: 1000
+			}
+		}],
+		ignore_nbt: 2b
 	}]
 }

@@ -1,12 +1,11 @@
 {
-	title: "Best MV Circuits",
+	title: "{tfg.quests.mv.bestMV.title}",
 	icon: "gregtech:meta_item_1 1 628",
 	x: 18.0d,
-	y: -4.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.bestMV.subtitle}",
 	text: [
-		"§6The best MV Circuits§r! You will be making these for the remainder of the game.",
-		"",
-		"Eventually (in IV Age), they will become even cheaper."
+		"{tfg.quests.mv.bestMV.desc1}"
 	],
 	dependencies: [
 		"5ee4ef44",

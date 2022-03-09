@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: -5.0d,
+	dependencies: [
+		"1779861a"
+	],
+	tasks: [{
+		uid: "5b59843c",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:grapple"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

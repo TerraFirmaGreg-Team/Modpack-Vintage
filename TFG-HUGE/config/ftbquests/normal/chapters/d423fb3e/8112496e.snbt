@@ -1,0 +1,53 @@
+{
+	title: "{tfg.quests.steam.light.title}",
+	x: -10.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "780c457d",
+		type: "item",
+		items: [{
+			item: "projectred-illumination:lamp 1 16"
+		},
+		{
+			item: "projectred-illumination:inverted_fixture_light"
+		},
+		{
+			item: "projectred-illumination:inverted_fallout_lamp"
+		},
+		{
+			item: "projectred-illumination:inverted_lantern"
+		},
+		{
+			item: "projectred-illumination:inverted_cage_lamp"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0dd71d35",
+		type: "item",
+		items: [{
+			item: "projectred-illumination:lamp"
+		},
+		{
+			item: "projectred-illumination:fixture_light"
+		},
+		{
+			item: "projectred-illumination:fallout_lamp"
+		},
+		{
+			item: "projectred-illumination:lantern"
+		},
+		{
+			item: "projectred-illumination:cage_lamp"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

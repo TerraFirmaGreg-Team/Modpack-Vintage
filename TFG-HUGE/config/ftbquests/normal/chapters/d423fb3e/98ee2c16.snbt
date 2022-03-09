@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.steam.softmallet.title}",
+	x: -13.5d,
+	y: 1.5d,
+	description: "{tfg.quests.steam.softmallet.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "26d0864a",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolSoftHammer"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolSoftHammer"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

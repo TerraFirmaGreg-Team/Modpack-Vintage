@@ -19,7 +19,7 @@
 		}
 	},
 	x: -1.0d,
-	y: 3.0d,
+	y: 2.5d,
 	text: [
 		"How to get Platinum:",
 		"§9-§r From §aNickel Ore§r byproduct, either §3Chemical Bath§r of §3HV Macerator§r (be sure to remember to check the ore byproduct JEI page!)",

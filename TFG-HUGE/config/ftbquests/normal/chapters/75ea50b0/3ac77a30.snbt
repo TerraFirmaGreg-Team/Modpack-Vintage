@@ -1,0 +1,39 @@
+{
+	title: "Bronze Age, and Steam Age",
+	x: -21.5d,
+	y: -6.0d,
+	text: [
+		"§oHumanity's first Alloy, and yours too!§r",
+		"",
+		"§6Bronze§r is an alloy of §aCopper§r and §aTin§r. Grind down 3 parts Copper and 1 part Tin into dust, then combine and smelt them. You will need a §5Mortar§r from the \"More Tools\" Quest.",
+		"",
+		"Make many more §aBronze Ingots§r than what is called for here. This will be your main material for the Steam Age, and you will need lots of it.",
+		"",
+		"§6The progression now continues in the Steam Age chapter.§r",
+		"",
+		"",
+		"§bLore§r: Bronze in real life is closer to 7 parts Copper and 1 part Tin. Here (and in most of the rest of modded Minecraft) it sadly has to be changed for game balance. Many more such cases!"
+	],
+	tasks: [{
+		uid: "19c39c5e",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_ingot",
+			Damage: 260s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}

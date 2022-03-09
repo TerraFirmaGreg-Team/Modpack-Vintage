@@ -1,12 +1,11 @@
 {
-	title: "Plastic Boards",
+	title: "{tfg.quests.mv.plasticboards.title}",
 	icon: "gregtech:meta_item_1 1 403",
 	x: 18.0d,
 	y: -12.0d,
+	description: "{tfg.quests.mv.plasticboards.subtitle}",
 	text: [
-		"At this point, you have all the tools available to you to make Plastic Boards.",
-		"",
-		"The recipes are pretty long, so I recommend processing large batches in two dedicated §3Chemical Reactors§r."
+		"{tfg.quests.mv.plasticboards.desc1}"
 	],
 	dependencies: [
 		"ccd03dfd",

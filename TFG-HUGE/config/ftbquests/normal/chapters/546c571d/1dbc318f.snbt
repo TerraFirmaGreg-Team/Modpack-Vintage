@@ -6,8 +6,14 @@
 		"16e3bb63"
 	],
 	tasks: [{
-		uid: "afab4079",
-		type: "fluid",
-		fluid: "seed.oil"
+		uid: "78937fc7",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "seed.oil",
+				Amount: 1000
+			}
+		}]
 	}]
 }

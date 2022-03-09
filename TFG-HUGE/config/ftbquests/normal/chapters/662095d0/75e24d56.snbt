@@ -1,5 +1,5 @@
 {
-	title: "Sulfuric Acid",
+	title: "{tfg.quests.mv.sulfuricacid.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -7,24 +7,18 @@
 			FluidName: "sulfuric_acid"
 		}
 	},
-	x: 20.0d,
-	y: -12.0d,
+	x: 12.0d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.sulfuricacid.subtitle}",
 	text: [
-		"§oJEI will probably overwhelm you for this, so I'm presenting you the best path for Sulfuric Acid here.§r",
+		"{tfg.quests.mv.sulfuricacid.desc1}",
 		"",
+		"{tfg.quests.mv.sulfuricacid.desc2}",
+		"{tfg.quests.mv.sulfuricacid.desc3}",
+		"{tfg.quests.mv.sulfuricacid.desc4}",
+		"{tfg.quests.mv.sulfuricacid.desc5}",
 		"",
-		"Making §eSulfuric Acid§r is a three step process. It is used in many important reactions, so you should automate its production soon.",
-		"",
-		"To automate it, you will need §3three LV Chemical Reactors§r. I would recommend building an isolated node somewhere with §3one LV Generator§r to power all three machines. And then spaghetti the pipes for input and output (... or simply use AE2).",
-		"",
-		"§9-§r Step 1: React §aSulfur§r with §bOxygen§r, to form §aSulfur Dioxide§r.",
-		"§9-§r Step 2: React §aSulfur Dioxide§r with more §bOxygen§r, to form §aSulfur Trioxide§r.",
-		"§9-§r Step 3: React §aSulfur Trioxide§r with §bWater§r, to form §eSulfuric Acid§r.",
-		"",
-		"Why am I not presenting these steps in the retrieval tasks...? So you don't have to make sure to submit every single one of them, that would be way too tedious if every quest were like that!",
-		"",
-		"",
-		"§bLore:§r GregTech 5's Chemical Reactor only had one Fluid slot. To circumvent that, they would do cell chemistry. Now the way you would automate Sulfuric Acid was by having one cell travel from machine to machine and then looping back. A somewhat fun and interesting challenge, but also a chore!"
+		"{tfg.quests.mv.sulfuricacid.desc6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -39,8 +33,6 @@
 				FluidName: "sulfuric_acid",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

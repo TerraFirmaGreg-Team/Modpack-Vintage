@@ -1,5 +1,5 @@
 {
-	title: "Fuel Cracking",
+	title: "{tfg.quests.mv.fuelcracking.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -9,13 +9,12 @@
 	},
 	x: 10.0d,
 	y: -14.0d,
+	description: "{tfg.quests.mv.fuelcracking.subtitle}",
 	text: [
-		"§oFuel and Oil cracking can get complicated. But let's not get too bothered about it. It's mostly done to get hydrocarbons.§r",
+		"{tfg.quests.mv.fuelcracking.desc1}",
+		"{tfg.quests.mv.fuelcracking.desc2}",
 		"",
-		"There are many ways to acquire §dEthylene§r from Oil processing.",
-		"The best way is to steam-crack §aLight Fuel§r in a §3Chemical Reactor§r. Be sure to make the §aSeverely Steam-Cracked§r version for a higher yield of Ethylene. Once in HV Age, you will have the option to do this recipe in the §3Cracking Unit§r.",
-		"",
-		"The tantalizing §9Distillation Tower§r process for Oil products is sadly not available - yet! You will have to use a §3Distillery§r to get §dEthylene§r."
+		"{tfg.quests.mv.fuelcracking.desc3}"
 	],
 	dependencies: [
 		"d4f362aa"
@@ -29,8 +28,6 @@
 				FluidName: "severely_steamcracked_light_fuel",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

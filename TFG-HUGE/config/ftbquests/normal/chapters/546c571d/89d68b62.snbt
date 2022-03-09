@@ -9,9 +9,7 @@
 		"{tfg.quests.lv.assembling.desc2}",
 		"",
 		"{tfg.quests.lv.assembling.desc3}",
-		"{tfg.quests.lv.assembling.desc4}",
-		"{tfg.quests.lv.assembling.desc5}",
-		"{tfg.quests.lv.assembling.desc6}"
+		"{tfg.quests.lv.assembling.desc4}"
 	],
 	dependencies: [
 		"a02702d7"

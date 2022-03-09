@@ -1,15 +1,14 @@
 {
-	title: "Advanced Extruder",
+	title: "{tfg.quests.mv.advextruder.title}",
 	icon: "gregtech:machine 1 321",
 	x: 4.0d,
 	y: -6.0d,
+	description: "{tfg.quests.mv.advextruder.subtitle}",
 	text: [
-		"§oI hope at no point you made the LV Extruder, because only the MV Extruder is actually useful. If you did, I suggest you recycle it through the Arc Furnace.§r",
+		"{tfg.quests.mv.advextruder.desc1}",
+		"{tfg.quests.mv.advextruder.desc2}",
 		"",
-		"The Extruder shapes solid materials into (almost!) any form using §aIngots§r. This is a great way to reduce the amount of microcrafting, as well as keeping a high conversion ratio.",
-		"",
-		"The Extruder can make §6Bolts§r, §6§6Small Gears§r, §6Gears§r, and §6§6Rings§r at the highest efficiency in a single step!",
-		"You may also like to use it for §dPipes§r, §dLong Rods§r, and §dRotors§r."
+		"{tfg.quests.mv.advextruder.desc3}"
 	],
 	dependencies: [
 		"9c437db6"

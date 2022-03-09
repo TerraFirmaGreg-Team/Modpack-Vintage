@@ -1,0 +1,1465 @@
+#Quests# Translated by SpeeeDCraft/Xikaro
+##################################################################################################################################
+########################################################## Primitive Phase #######################################################
+############################################################## 823f9ae8   ########################################################
+##################################################################################################################################
+
+tfg.quests.primitive.era.title=§cЭра 1 §4-§4 §2Примитив
+
+tfg.quests.primitive.start.title=Старт
+tfg.quests.primitive.start.subtitle=&aСпасибо, что выбрали нашу сборку модов, ведь в ней очень тесно завязались TerraFirmaCraft и GregTech, удачи тебе молодой инженер!
+tfg.quests.primitive.start.tasks.clickMe=&aТыкай сюды!
+
+tfg.quests.primitive.pebbles.title=Камни на земле
+tfg.quests.primitive.pebbles.subtitle=&aНайди, лежащие на земле, палки и камни.
+
+tfg.quests.primitive.primitiveTools.title=Ваши первые инструменты
+tfg.quests.primitive.primitiveTools.subtitle=&aВозьмите камень в руку, лучше больше 2, и нажмите правую кнопку, у вас откроется меню, в котором вы сможете выточить из камня нужный вам инструмент. Все рецепты можно посмотреть в JEI.
+
+tfg.quests.primitive.rockanvil.title=Ваша первая наковальня, правда каменная
+tfg.quests.primitive.rockanvil.subtitle=&aВозьмите каменный молот(или любой другой) в руки и ударьте им (ПКМ) по блоку камня указанному в квесте.
+
+tfg.quests.primitive.leafmat.title=Сушилка из листвы
+tfg.quests.primitive.leafmat.subtitle=&aСкрафтите это, после поставьте, вуаля, теперь вы можете высушивать или выпаривать что-либо, более полезно для добычи соли.
+
+tfg.quests.primitive.smallsalt.subtitle=&aРецепт соли можно посмотреть в JEI.
+
+tfg.quests.primitive.muchNeededStraw.title=Сухая трава
+tfg.quests.primitive.muchNeededStraw.subtitle=&aВозьмите нож в руки и скосите траву в округе.
+
+tfg.quests.primitive.farmer3000.title=Фермер - 3000
+tfg.quests.primitive.farmer3000.subtitle=&aСделайте каменную мотыгу, чтобы посадить ваши первые растения. Механика все та же, для начала вы должны вспахать землю рядом с водой, после посадить растение.
+
+tfg.quests.primitive.theHammer.title=Каменный молот
+tfg.quests.primitive.theHammer.subtitle=&aВыглядит эстетично, посмотрите какой он серый, ну а если серьезно, то он вам нужен, чтобы создать каменную наковальню.
+
+tfg.quests.primitive.blueClay.title=Цвет настроения глинистый
+tfg.quests.primitive.blueClay.subtitle=&aДобудьте глину, для этого вопспользуйтесь удачей или знаниями в области травоведения, ведь в местах залегания глины растут интересные кусты.
+
+tfg.quests.primitive.allTheMolds.title=Некоторые формы которые вам понадобятся
+tfg.quests.primitive.allTheMolds.subtitle=&aФорм много, их можно не делать все за раз, но я уверен, что по мере прохождения, каждую из них вы сделаете.
+
+tfg.quests.primitive.jug.title=Пещерный стакан
+tfg.quests.primitive.jug.subtitle=&aТеперь нажатием по жидкость, которую можно пить, например свежая вода, вы можете набрать в него воду, и когда вам будет нужно, тогда и выпить.
+
+tfg.quests.primitive.Vessel.title=Чуть больше чем просто стакан
+tfg.quests.primitive.vessel.subtitle=&aЭто банка, в которой вы будете обжигать и расплавлять металлы, а также хранить различную еду, так что это очень полезный предмет, предлагаю вам его обжечь. Встроенное силовое поле не позволяет никаким жидкостям кроме плавленных металлов(а также всякой вкуснятины, в виде еды) проникать внутрь.
+
+tfg.quests.primitive.fireplace.title=Костёр
+tfg.quests.primitive.fireplace.subtitle=&aНужно сделать костер, чтобы согреть себя, а также приготовить еду, кстати, вы также можете сделать факела на костре.
+tfg.quests.primitive.fireplace.tasks.wood.title=Бревна
+
+tfg.quests.primitive.meat.title=МЯЯЯЯСО!
+tfg.quests.primitive.meat.subtitle=&aОно веганское. Я не вру, дай попробовать травоеду для подтверждения.
+tfg.quests.primitive.meat.tasks.meat.title=&aМясо
+
+tfg.quests.primitive.rawHide.title=Сырая шкура
+tfg.quests.primitive.rawHide.subtitle=&aДобудьте любую сырую шкуру, надеюсь не одна овца не пострадает.
+
+tfg.quests.primitive.preparedHide.title=Приготовленная шкура
+tfg.quests.primitive.preparedHide.subtitle=&aОбмочите старую, обрежьте, снова обмочите и получите наконец эту шкуру.
+
+tfg.quests.primitive.jute.title=Джут
+tfg.quests.primitive.jute.subtitle=&aПочему верёвки не из конопли? Я хочу весёлые пожары!
+
+tfg.quests.primitive.fruitsAndBerries.title=Фрукты ягоды
+tfg.quests.primitive.fruitsAndBerries.subtitle=&aГде моя лимонная водка? Разрабы, занимайтесь.
+
+tfg.quests.primitive.grains.title=Корм
+tfg.quests.primitive.grains.subtitle=&aСобрать урожай с зернового растения.
+
+tfg.quests.primitive.sugarcane.subtitle=&aСоберите тростника, он вам пригодится, для создания завода по производству БУМАГИ!
+
+tfg.quests.primitive.paper.subtitle=&aСделайте бумагу, она вам пригодится, для различных транзисторов и микросхем.
+
+tfg.quests.primitive.tin.title=Сказания о Олове
+tfg.quests.primitive.tin.subtitle=&aА это олово и вам нужно его накопать, как? Ищите на поверхности пыли олова, а после сломайте их. Где-то такое я уже писал.
+
+tfg.quests.primitive.copper.title=Истории о Меди
+tfg.quests.primitive.copper.subtitle=&aЭто медь и вам нужно его накопать, как? Ищите на поверхности пыли меди, а после сломайте их.
+
+tfg.quests.primitive.fuelNumber1.title=Топливо №1
+tfg.quests.primitive.fuelNumber1.subtitle=&aТак как TFC слишком реалистичный мод, растопить печку не получится при помощи каменного угля, что логично, поэтому делаем древесный.
+
+tfg.quests.primitive.greenpeace.title=Гринпис уже за вами выехал..
+tfg.quests.primitive.greenpeace.subtitle=&aРубите бревна, дети мои! Их нам понадобится очень много.
+tfg.quests.primitive.greenpeace.tasks.logs.title=&aБревна
+
+tfg.quests.primitive.fuelNumber2.title=Топливо №2
+tfg.quests.primitive.fuelNumber2.subtitle=&aРастопить печь вы не сможете при помощи данного угля, но например поддерживать горение легко.
+
+tfg.quests.primitive.saw.title=Медная пила
+tfg.quests.primitive.saw.subtitle=&aСделайте медную пилу, чтобы рубить деревья еще быстрее, ну или используйте ее более рационально, например для распилки бревен в пиломатериалы.
+
+tfg.quests.primitive.planks.title=Пиломатериалы
+tfg.quests.primitive.planks.subtitle=&aИспользуя пилу получаем этот проходняк.
+
+tfg.quests.primitive.alloycalc.subtitle=&aКалькулятор сплавов, позволит вам проще и нагляднее сплавлять металлы.
+
+tfg.quests.primitive.woodchest.title=Сундуки
+tfg.quests.primitive.woodchest.subtitle=&aКакой-то дебил придумал несколько крафтов для сундуков, делайте выводы какой рецепт выгоднее.
+tfg.quests.primitive.woodchest.task.chest.title=&aЛюбой сундук
+
+tfg.quests.primitive.woodencrate.subtitle=&aВаш первый ящик, который умеет хранить в себе руды в виде блока.
+
+tfg.quests.primitive.woodenbarrel.subtitle=&aДеревянная бочка, похожа на бочку тфк, но в ней нельзя ничего крафтить, просто хранилище жидкости, совместимое с GT машинками.
+
+tfg.quests.primitive.file.title=Первый медный напильник
+tfg.quests.primitive.file.subtitle=&aСколько с него начиналось приключений.
+
+tfg.quests.primitive.knifegt.title=Первый медный ножик
+tfg.quests.primitive.knifegt.subtitle=&aОн намного лучше чем каменный, как минимум из-за прочности.
+
+tfg.quests.primitive.leather.title=Кожа
+tfg.quests.primitive.leather.subtitle=&aСкрафтите кожу, рецепт есть в JEI.
+
+tfg.quests.primitive.coppergeopick.subtitle=&aГеологический молот, для поиска ваших первых блочных руд.
+
+tfg.quests.primitive.barrel.title=Бочка!
+tfg.quests.primitive.barrel.subtitle=&aОбезьянка воду налила, вода в бочке осталась.
+
+tfg.quests.primitive.juteropes.title=Я буду тряпка!
+tfg.quests.primitive.juteropes.subtitle=&aДжут с кризисом самовосприятия.
+
+tfg.quests.primitive.supports.title=Опоры!
+tfg.quests.primitive.supports.subtitle=&aВы же не хотите быть погребенным заживо?
+
+tfg.quests.primitive.copperpickaxe.title=Первая медная кирка
+tfg.quests.primitive.copperpickaxe.subtitle=&aВаша первая кирка. Я считаю, что это лучшее вложение меди.
+
+tfg.quests.primitive.bismuthbronzepickaxe.title=Кирка из висмутной бронзы
+tfg.quests.primitive.bismuthbronzepickaxe.subtitle=&aЭта кирка явно лучше медной, но и хуже бронзовой.
+
+tfg.quests.primitive.bronzepickaxe.title=Кирка из бронзы
+tfg.quests.primitive.bronzepickaxe.subtitle=&aКирка середнячек, лучше висмутно-бронзовой, но хуже черно-бронзовой.
+
+tfg.quests.primitive.blackbronzepickaxe.title=Кирка из черной бронзы.
+tfg.quests.primitive.blackbronzepickaxe.subtitle=&aЛучшая кирка из бронзовых.
+
+tfg.quests.primitive.grinder.title=Ручная мельница
+tfg.quests.primitive.grinder.subtitle=&aСоздайте ручную мельницу.
+
+tfg.quests.primitive.copperhammer.subtitle=&aВыглядит, как план. И почему этого нет в GregTech? Напомню, что уже сейчас вы можете перерабатывать руды, так что дерзайте, накопайте как можно больше!
+
+tfg.quests.primitive.copperanvil.title=Наковальня №1 "Умиротворение"
+tfg.quests.primitive.copperanvil.subtitle=&aЭто дороже любой бронзовой. Вы долго потели, чтобы ее получить?
+
+tfg.quests.primitive.bronzeanvil.title=Наковальня №2 "Возрождение"
+tfg.quests.primitive.bronzeanvil.subtitle=&aТут быть бронза.
+
+tfg.quests.primitive.ironanvil.title=Наковальня №3 "Становление"
+tfg.quests.primitive.ironanvil.subtitle=&aПочему самозакрывающейся железной девы нету? Или шипов?
+
+tfg.quests.primitive.steelanvil.title=Наковальня №4 "Стальной Орешек"
+tfg.quests.primitive.steelanvil.subtitle=&aВ тфк наковальни падают? Я не знаю. Проверьте на самом тормозном в группе.
+
+tfg.quests.primitive.blacksteelanvil.title=Наковальня №5 "Стальной Орешек: гудроновое издание"
+
+tfg.quests.primitive.redbluesteelanvil.title=Наковальня №6 "Легион"
+tfg.quests.primitive.redbluesteelanvil.subtitle=&aСерьёзно, какого фига их так много?
+
+tfg.quests.primitive.copperingot.title=Медные слитки
+tfg.quests.primitive.copperingot.subtitle=&aСоздавайте много медных слитков, их вам понадобится с запасом, как и бронзы.
+
+tfg.quests.primitive.bronzeingot.title=Бронзовые слитки
+tfg.quests.primitive.bronzeingot.subtitle=&aВот этих слитков вам точно понадобится очень много.
+
+tfg.quests.primitive.bismuthbronzeingot.title=Слиток висмутной бронзы
+tfg.quests.primitive.bismuthbronzeingot.subtitle=&aВсегда по скидке.
+
+tfg.quests.primitive.blackbronzeingot.title=Слитки черной бронзы
+tfg.quests.primitive.blackbronzeingot.subtitle=&aЛучше двух остальных бронз, но блин зачем?
+
+tfg.quests.primitive.bloomery.subtitle=&aЛюк обладающий силой Таноса, используется при постройке примитивной доменной печи.
+
+tfg.quests.primitive.ironingot.title=Слиток кованного железа
+tfg.quests.primitive.ironingot.subtitle=&aИ сколько у вас это заняло времени? В ванилле это 10минут, а здесь уже.. хм.. 40 часов?
+
+tfg.quests.primitive.bellows.subtitle=&aКузнечные меха, которые используются, чтобы увеличить температуру в угольной плавильне, или доменной печи до 9999999 градусов по Цельсию, ходят легенды, что кому-то удалось расплавить в данной доменной печи Нейтроний.
+
+tfg.quests.primitive.climatestation1.subtitle=&aСовет для начинающих огородников: покрывайте растения синей краской! Они растут лучше. А если вы уже смешарик, то используйте данный блок, как контроллер теплицы.
+
+tfg.quests.primitive.bismuthpile.title=Висмутная пыль
+tfg.quests.primitive.bismuthpile.subtitle=&aВисмутная пыль используется для создания висмутного слитка или слитка висмутной бронзы, достаточно полезно.
+
+tfg.quests.primitive.silverpile.title=Серебрянная пыль
+tfg.quests.primitive.silverpile.subtitle=&aПри помощи данной пыли вы можете сделать бойлер, который будет черпать энергию из солнца.
+
+tfg.quests.primitive.goldpile.title=Золотая пыль
+tfg.quests.primitive.goldpile.subtitle=&aЗолото это дорого.
+
+tfg.quests.primitive.graphitepile.title=Графитовая пыль
+tfg.quests.primitive.graphitepile.subtitle=&aВажная часть вещей, которые нужны для огнеупорной глины, короче копайте ДОФИГА.
+
+tfg.quests.primitive.kaolinitepile.title=Каолинитовая пыль
+tfg.quests.primitive.kaolinitepile.subtitle=&aТакая же важная как и графит.
+
+tfg.quests.primitive.ironpile.title=Железная пыль
+tfg.quests.primitive.ironpile.subtitle=&aКак сказал один человек в чате на стриме, железа много не бывает.
+
+tfg.quests.primitive.nickelpile.title=Никелиевая пыль
+tfg.quests.primitive.nickelpile.subtitle=&aSpeeeDCraft все еще ищет жилу Никеля на TFG R2.8.4.
+
+tfg.quests.primitive.zincpile.title=Цинковая пыль
+tfg.quests.primitive.zincpile.subtitle=&aЦинк полезен и бесполезен одновременно. Сделайте ведро что-ли.
+
+tfg.quests.primitive.tuyere.title=Фурма
+tfg.quests.primitive.tuyere.subtitle=&aПо ней течет много-много вашего металла.
+
+tfg.quests.primitive.tfcblastfurnace.title=Доменная печь!
+tfg.quests.primitive.tfcblastfurnace.subtitle=&aСлава стали, новая эпоха наступает сейчас.
+
+tfg.quests.primitive.tfccrusible.title=Котёл железной ведьмы
+tfg.quests.primitive.tfccrusible.subtitle=&aЯ хочу сериал с таким названием.
+
+tfg.quests.primitive.blacksteelingot.title=Черная сталь
+tfg.quests.primitive.blacksteelingot.subtitle=&aЧерные не одобряют.
+
+tfg.quests.primitive.redsteelingot.title=Красная сталь
+tfg.quests.primitive.redsteelingot.subtitle=&aКрасные не одоб.. что?
+
+tfg.quests.primitive.bluesteelingot.title=Синяя сталь
+tfg.quests.primitive.bluesteelingot.subtitle=&aГолубые не одо.. хватит!
+
+tfg.quests.primitive.redbluesteelpickaxe.title=Любая кирка из цветных металлов
+tfg.quests.primitive.redbluesteelpickaxe.subtitle=&aВскопните обсидиан и бегите в АД!
+
+tfg.quests.primitive.obsidian.title=Горячий шашлычек.
+tfg.quests.primitive.obsidian.subtitle=&aВы чувствуете, чувствуете, это запах не реалистичности, какой АД, хотя, куда там, отправляйтесь за блейзами.
+
+tfg.quests.primitive.bluesteelbucket.title=Синее ведро
+tfg.quests.primitive.bluesteelbucket.subtitle=&aПокрашено слезами всех, упавших в лаву с алмазами в инвентаре. Может зачерпывать лаву.
+
+tfg.quests.primitive.redsteelbucket.title=Красное ведро
+tfg.quests.primitive.redsteelbucket.subtitle=&aКрасим кровью утопленников. За каждого козла, принесённого в жертву скидка 3%. Может зачерпывать воду.
+
+tfg.quests.primitive.bucket.title=Я ЕСТЬ ВЕДРО!!!
+tfg.quests.primitive.bucket.subtitle=&aВолшебное майнкрафтовское ведро. Магия вымыла краску.
+
+tfg.quests.primitive.tochilka1.subtitle=&aЗатачивайте свои предметы лучше и быстрей.
+
+tfg.quests.primitive.tochilka2.subtitle=&aНовый уровень заточки.
+
+tfg.quests.primitive.tochilka3.subtitle=&aАвтоматизация затачивания.
+
+tfg.quests.primitive.tochilka4.subtitle=&aЕще более крутая затачивалка.
+
+tfg.quests.primitive.tochilka5.subtitle=&aСаурон гордился бы тобой!
+
+tfg.quests.primitive.steelingot.title=Стальной слиток
+tfg.quests.primitive.steelingot.subtitle=&aУхх, ты, он сверкает.
+
+tfg.quests.primitive.flux.title=Флюс
+tfg.quests.primitive.flux.subtitle=&aНайти мел, доломит, известняк или мрамор.
+
+tfg.quests.primitive.povodok.title=Поводок.
+tfg.quests.primitive.povodok.subtitle=&aKinky.
+
+tfg.quests.primitive.cheese.title=Сыр
+tfg.quests.primitive.cheese.subtitle=&aТеперь и на луну не надо. Все же знают, что на луне есть сыр? Нет.. а
+
+tfg.quests.primitive.meshokmochi.title=Мячик. Для квиддича.
+tfg.quests.primitive.meshokmochi.subtitle=&aИз кого падают мочевые пузыри? Хороший вопрос.
+
+tfg.quests.primitive.softbucket.title=Мягкое ведро
+tfg.quests.primitive.softbucket.subtitle=&aШобы пить.
+
+tfg.quests.primitive.backpack.title=Школьный рюкзак
+tfg.quests.primitive.backpack.subtitle=&aХорошее переносное хранилище.
+
+tfg.quests.primitive.burlap.title=Я ЕСТЬ ТРЯПКА
+tfg.quests.primitive.burlap.subtitle=&aСамый полезный предмет в игре. Не давай меню крафтов тебя обмануть и переводи весь джут в это.
+
+tfg.quests.primitive.harderbucket.title=Пещерный термос
+tfg.quests.primitive.harderbucket.subtitle=&aШобы больше пить.
+
+tfg.quests.primitive.strings.title=Любые нитки
+tfg.quests.primitive.strings.subtitle=&aГде же их блин найти?
+
+tfg.quests.primitive.woolcloth.title=Я Есть Дорогая Тряпка
+tfg.quests.primitive.woolcloth.subtitle=&aИз вонючих овец, или из паучьей задницы. Честно говоря, я бы выбрал джут.
+
+tfg.quests.primitive.bed.title=Ложе Царское
+tfg.quests.primitive.bed.subtitle=&aСтив умеет спать только на поверхности из вышеупомянутых вонючих овец и паучьих жоп.
+
+tfg.quests.primitive.spindle.subtitle=&aПри помощи сие механизма вы произведете свой первый кусок ткани.
+
+tfg.quests.primitive.tannedleather.subtitle=&aУтепленная кожа с крутыми эффектами сказал бы я, если я был бы продавцом в обувном магазине. Но к сожалению это просто кожа для рюкзака.
+
+tfg.quests.primitive.wiredrawbench.subtitle=&aСтранный стол для пыток. Правда он имеет и полезные свойства. Например он умеет делать провода из GT.
+
+tfg.quests.primitive.pineappleleather.subtitle=&aЕще один интересный тип растительной кожи.
+
+tfg.quests.primitive.ropeladder.subtitle=&aПри помощи данных предметов вы можете создавать подвесные мосты.
+
+tfg.quests.primitive.loom.subtitle=&aТеперь вы можете делать ткань.
+
+tfg.quests.primitive.wheel.subtitle=&aПервый механизм изобретенный человеком, после термоядерного реактора.
+
+tfg.quests.primitive.cladding.subtitle=&aОбшивка доменной печи, берете в руку и нажимаете правой кнопкой мыши по блокам огнеупорного кирпича.
+
+tfg.quests.primitive.bowlmount.subtitle=&aНажмите ПКМ по стволу гевеи или по резиновому дереву(rubber fig), чтобы повесить сие держатель для сосуда.
+
+tfg.quests.primitive.groove.subtitle=&aВ JEI есть описание как этой штукой пользоваться, поищите(Нажмите R по желобу).
+
+tfg.quests.primitive.rubbermix.subtitle=&aОно очень липкое.
+
+tfg.quests.primitive.fireproofclay.subtitle=&aОгнеупорная глина, которая понадобится для крафта блоков огнеупорных кирпичей для доменной печи.
+
+tfg.quests.primitive.siliciasand.title=Силициевый песок
+tfg.quests.primitive.siliciasand.subtitle=&aИнтересный песок с кварцитовым запахом.
+
+tfg.quests.primitive.blowpipe.title=Палка выдувалка
+tfg.quests.primitive.blowpipe.subtitle=&aНовый предмет для вытяжки стекла, почувствуйте себя стекло-дувом.
+
+tfg.quests.primitive.glassmolds.title=Стеклянные формы
+tfg.quests.primitive.glassmolds.subtitle=&aФормочки для стекла, в TFG даже отливка стекла изменена!
+
+tfg.quests.primitive.HorsePress.subtitle=&aПри помощи данного пресса можно получать больше предметов за меньше предметов, но используя лошадь, которую еще нужно приручить.
+
+tfg.quests.primitive.HorseChoppingBlock.subtitle=&aТеперь при разрубке древесины, вы можете получать намного больше дерева.
+
+tfg.quests.primitive.greenhouseblocks.title=Блоки для постройки теплицы
+tfg.quests.primitive.greenhouseblocks.subtitle=&aДанные блоки + контроллер теплицы, который идет дальше по квесту, понадобятся вам, чтобы сделать теплицу и выращивать растения даже зимой.
+
+tfg.quests.primitive.sulfurdust.title=Сера
+tfg.quests.primitive.sulfurdust.subtitle=&aНа вкус горькая.
+
+tfg.quests.primitive.Grindstone.subtitle=&aТеперь при дроблении руд, в особенности руд GT, вы можете получать огромный выход ресурсов.
+
+tfg.quests.primitive.walkstick.subtitle=&aПри помощи этой палки, вы можете ходить намного быстрее сквозь кусты.
+
+##################################################################################################################################
+########################################################## Steam Phase ###########################################################
+############################################################ d423fb3e ############################################################
+##################################################################################################################################
+
+tfg.quests.steam.era.title=§cЭра 2 §4-§4 §eПар
+
+tfg.quests.steam.maincheck.title=Стартуем паровую эру!
+tfg.quests.steam.maincheck.subtitle=&aНачинается паровая эра, здесь вы наконец-то сможете сделать печь, и печь сплавов, которая избавит вас от миллиона часов, которые вы тратили на ковку.
+
+tfg.quests.steam.light.title=Свет
+
+tfg.quests.steam.primitivewaterpump.subtitle=&aПервая ваша помпа. Поставьте ее на любую воду, и она начнет вам добывать воду.
+
+tfg.quests.steam.primitivewatertank.subtitle=&aПомните Railcraft? Ну вот теперь в GT есть некое подобие таких же баков, но с большим функционалом.
+
+tfg.quests.steam.safe.subtitle=&aИнтересный сейф, не знаю зачем он вам может понадобится. Ну например прятать вещи от друзей.
+
+tfg.quests.steam.mortar.title=Ступка
+tfg.quests.steam.mortar.subtitle=&aОна вам понадобится, чтобы проще крошить металлы, ну или чтобы создавать сплавы прямо у себя в руках.
+
+tfg.quests.steam.craftingstation.subtitle=&aКрутая замена ванильному верстаку. Позволяет брать предметы из рядом стоящих сундуков, а также хранить предметы в себе, также сохраняет предметы в сетке крафта, после выхода из верстака.
+
+tfg.quests.steam.raintank.subtitle=&aНазвание говорит само за себя. Позволяет собирать воду в жождь.
+
+tfg.quests.steam.cokeoven.subtitle=&aПечь, которая откроет вам доступ к более мощному топливу, под названием - Коксовый уголь.
+
+tfg.quests.steam.cokegem.subtitle=&aРаботает также, как и каменный уголь, но горит в два раза дольше.
+
+tfg.quests.steam.bronzeplates.title=Бронзовые пластины
+tfg.quests.steam.bronzeplates.subtitle=&aПри помощи данных пластин вы можете скрафтить большую часть машинок из паровой эры, скажем так, это основной материал паровой эры.
+
+tfg.quests.steam.wroughtironplates.title=Пластины из кованного железа
+tfg.quests.steam.wroughtironplates.subtitle=&aОткрывают доступ к улучшенным солнечным и лавовым бойлерам.
+
+tfg.quests.steam.fluidpipe.title=Жидкостная труба
+tfg.quests.steam.fluidpipe.disc=§oЧтобы не путать с определенным человеком. §rЖидкостные трубы были переработаны в GTCEu, и теперь они работают очень хорошо. Единственная проблема, с которой они сталкиваются, — это ограниченная пропускная способность, с которой вы можете столкнуться при переходе на все большее количество котлов. Трубы для жидкости Potin имеют очень §6высокую пропускную способность§r, для уровня материала и стоимости, вы можете использовать их. §9Примечание.§r Трубы в стиле GT6 §деактивированы§r. Это означает, что размещение труб соединяет их только с блоком, против которого они были размещены. Чтобы открыть больше соединений, используйте свой §5Ключ§r на сетке.
+
+tfg.quests.steam.itempipe.title=Предметная труба
+tfg.quests.steam.itempipe.desc=Трубки с предметами — это простой, но очень эффективный способ перемещения предметов §мгновенно§r, но с ограничениями по пропускной способности. Каналы более высокого уровня обеспечивают смехотворно большую пропускную способность, что редко встречается в модифицированном Minecraft! Трубы с предметами §9не вытягивают§r , но они переместят любой предмет, вставленный в них, в другие подключенные инвентари, отдавая приоритет §9самому близкому§r в первую очередь. Механика приоритета §гораздо сложнее§r, поэтому пропустите ее, если вам это не интересно. Пункт назначения будет иметь рассчитанное значение маршрутизации, которое представляет собой сумму всех значений маршрутизации отдельных труб к данному пункту назначения. Место назначения с наименьшим значением маршрутизации будет выбрано для вставки. §9Ограничительные каналы§r обычно имеют самый низкий приоритет для вставки из-за их более высокого значения маршрутизации. Сейчас вы можете использовать их в комбинации. с §6воронками§r, но вы также сможете использовать их с модулями конвейеров, выходными шинами и автоматическими выходами машин в эру LV. Вы можете использовать свой гаечный ключ, чтобы отсоединить сторону трубы.
+
+tfg.quests.steam.steelplates.title=Стальные пластины
+tfg.quests.steam.steelplates.subtitle=&aДанные пластины октрывают доступ к улучшенному паровому молоту.
+
+tfg.quests.steam.bronzeboiler.subtitle=&aСтандартный бойлер, вырабатывающий пар для ваших паровых машин. Лучшее решение на начальных эатапах игры.
+
+tfg.quests.steam.steelboiler.subtitle=&aУлучшенный бойлер, вырабатывает больше пара, чем обычный бронзовый.
+
+tfg.quests.steam.diffboilers.title=Бойлеры ограниченного тиража
+tfg.quests.steam.diffboilers.subtitle=&aИнтересные бойлеры, которые достаточно ситуативны и обычно не используются. Но если у вас есть материалы для них и топливо, то это лучшее решение паровой пробелмы для вас.
+
+tfg.quests.steam.advforgehammer.subtitle=&aУлучшенный паровой молот, лучше чем бронзовый. Из функций: позволяет делать из слитков пластины по более выгодному курсу.
+
+tfg.quests.steam.bronzeforgehammer.subtitle=&aПаровой молот, который позволит вам делать пластины из слитков по более выгодному курсу.
+
+tfg.quests.steam.miner.subtitle=&aБурильная установка, жутко медленная и затратная по пару. Но на начальных этапах хоть что-то. Поставьте над жилой на поверхности и включите.
+
+tfg.quests.steam.bronzemacerator.subtitle=&aДробитель, который открывает вам дорогу к более продуктивным источникам выработки материалов из руд.
+
+tfg.quests.steam.bronzerockbreaker.subtitle=&aОчень странный механизм. Говорят его придумали хиличурлы еще 400 лет назад.
+
+tfg.quests.steam.bronzeextractor.subtitle=&aПервую резину вы получите именно здесь, а стоп, еще же есть путь через желоба из примитивной ветки, эхх...
+
+tfg.quests.steam.bronzecompressor.subtitle=&aПозволяет сделать блоки.
+
+tfg.quests.steam.bronzealloysmelter.subtitle=&aУниверсальный аппарат, его нужно делать первым определенно, и блоки вам сделает, и пластины по супер выгодному курсу, все что захотите.
+
+tfg.quests.steam.bronzefurnace.subtitle=&aПЛАВЬТЕ РУДЫ, ЗАБУДЬТЕ О TFC!
+
+tfg.quests.steam.grinder.subtitle=&aЕще более крутой, многоблочный дробитель.
+
+tfg.quests.steam.bronzeoven.subtitle=&aМногоблочная печка, крутая!
+
+tfg.quests.steam.basiccircuit.subtitle=&aВаш первый процессор, по мощности как какой-нибудь пентиум.
+
+tfg.quests.steam.invar.title=Инваровый слиток
+
+tfg.quests.steam.tools.title=Инструменты
+tfg.quests.steam.tools.subtitle=Вот ваше введение в инструменты GregTech. Вас может смутить то, как JEI отображает инструменты из нейтрониума. Но на самом деле вы можете сделать инструменты из §dмногих материалов§r. Первым из них является Медь...! Или Кованое железо, если вы читали этот квест.
+tfg.quests.steam.tools.desc1=В качестве дополнения к §lвсем§r инструментам GregTech. Вы можете §6починить§r их в §6Наковальне§r, используя материал самого инструмента, как любой обычный инструмент!
+tfg.quests.steam.tools.desc2=§eПримечание:§r Любой квест с инструментами GregTech можно выполнить с помощью инструмента, созданного из любого материала, а не только из отображаемого.
+
+tfg.quests.steam.mininghammer.title=Майнинг молот
+tfg.quests.steam.mininghammer.subtitle=&aМолоток копающий 3х3.
+
+tfg.quests.steam.crowbar.title=Лом
+tfg.quests.steam.crowbar.subtitle=§9§lЛом:§r специализированный инструмент для удаления обложек с машин GregTech с помощью щелчка правой кнопкой мыши.
+
+tfg.quests.steam.screwdriver.title=Отвертка
+tfg.quests.steam.screwdriver.subtitle=§9§lОтвертка:§r инструмент для крафта. Используется для специальной конфигурации машин и обложек.
+
+tfg.quests.steam.wirecutter.title=Кусачки
+tfg.quests.steam.wirecutter.subtitle=§9§lКусачки:§r инструмент для крафта. Он нужен для соединения проводов между собой. Щелчок правой кнопкой мыши по проводам включает или отключает подключение к другим блокам.
+
+tfg.quests.steam.wrench.title=Гаечный ключ
+tfg.quests.steam.wrench.subtitle=§9§lГаечный ключ:§r инструмент для крафта. Но также инструмент для майнинга для машин GregTech (идеально, если вы считаете, что использование кирок неэтично). Это оно? Конечно нет! У него есть функция щелчка правой кнопкой мыши, которые можно использовать как §6ключ для других модов§r. Правый клик также позволяет вам установить выходную сторону машин GregTech. Щелчок правой кнопкой мыши с Shift позволяет вращать машины GregTech.
+
+tfg.quests.steam.hammer.title=Молот
+tfg.quests.steam.hammer.subtitle=§9§lМолот:§r инструмент для создания многих рецептов на раннем этапе. Он также работает как инструмент для добычи руд, чтобы дробить их, подробнее об этом позже. Его последняя функция заключается в отключении звука на машинах, щелкнув по ним правой кнопкой мыши.
+
+tfg.quests.steam.softmallet.title=Киянка
+tfg.quests.steam.softmallet.subtitle=§9§lКиянка:§r инструмент для приостановки работы машин с помощью щелчка правой кнопкой мыши. Повторный щелчок правой кнопкой мыши возобновляет работу.
+
+tfg.quests.steam.file.title=Напильник
+tfg.quests.steam.file.subtitle=§9§lНапильник:§r инструмент для крафта. Вот и все. да.
+
+tfg.quests.steam.knife.title=Нож
+tfg.quests.steam.knife.subtitle=§9§lНож:§r посредственное оружие, но также... как вы уже догадались, инструмент для крафта!
+
+tfg.quests.steam.plunger.title=Вантуз
+tfg.quests.steam.plunger.subtitle=§9§lВантуз:§r инструмент для удаления застрявшей жидкости из машин GregTech.
+
+##################################################################################################################################
+########################################################## LV Phase ##############################################################
+########################################################## 546c571d   ############################################################
+##################################################################################################################################
+
+tfg.quests.lv.era.title=§cЭра 3 §4-§4 §7Электричество LV
+
+tfg.quests.lv.200iq.title=200IQ
+tfg.quests.lv.200iq.subtitle=§oЭтот квест представляет собой небольшое руководство по легкой автоматизации Электролизера!§r
+tfg.quests.lv.200iq.desc1=§9Умный предметный фильтр§r — это фильтр, основанный на картах рецептов. Этот фильтр, располагается сбоку от машины, можно поставить на Электролизер, чтобы разрешить вставку только предметов, которые можно подвергать электролизу.
+tfg.quests.lv.200iq.desc2=Чтобы избежать зависания Электролизера из-за недостаточного количества входных данных, поместите §cРоботизированый манипулятор с умным предметным фильтром§r на Электролизер. Настройте его на §dImport§r, §dФильтрует извлекаемые предметы§r. Теперь прикрепите любой инвентарь (подойдет сундук) к той стороне, где вы разместили роботизированый манипулятор, и ТАДАА! Вы сделали автоматическую интеллектуальную вставку для обработки всех рецептов Электролизера!
+tfg.quests.lv.200iq.desc3=§9Примечание:§r Роботизированый манипулятор должен сам выполнять передачу предметов, чтобы его функциональность работала! Установка непосредственно в машину игнорирует параметр §dТочное перемещение§r роботизированого манипулятора.
+tfg.quests.lv.200iq.desc4=Теперь, что касается выхода Электролизера, вы можете направить Жидкости в несколько Резервуаров или даже в §3Супер танки§r. Я настоятельно рекомендую §cне аннулировать§r жидкости, за исключением воды по очевидным причинам."
+
+tfg.quests.lv.terminal.title=Терминал
+tfg.quests.lv.terminal.subtitle=§oПланшет, который вы создали, очень ценен для выполнения множества задач в GregTech. Этот квест объясняет, как вы можете его использовать.§r
+tfg.quests.lv.terminal.desc1=Терминал работает на §4GregOS™§r (не является торговой маркой), операционной системе, которая работает с §5Приложениями§r.
+tfg.quests.lv.terminal.desc2=§9Machines Guides§r, §9Multiblock Guides§r, §9Item Guides§r, §9§9Tutorials§r — это то, на что они похожи. Обратите внимание, что в настоящее время они неполные.
+tfg.quests.lv.terminal.desc3=§9Guide Editor§r используется для написания руководств! Как и выше. На вики GTCEu есть небольшие инструкции по их написанию. 
+tfg.quests.lv.terminal.desc4=§9System Settings§r изменяет... настройки (да) связанные с Терминалом. Вы можете §bустановить собственное фоновое изображение§r, убрать двойное подтверждение при выходе и многое другое. Большинство сочетаний клавиш относятся к кнопке §5Главная§r. Двойной щелчок по умолчанию запускает приложение.
+tfg.quests.lv.terminal.desc5=§9Multiblock Helper§r разделен на две функции. Для первого требуется батарея §dLV§r и §dКамера§r, установленная для обеспечения §bVR-визуализации§r многоблочных структур. Обновление, разблокированное в §6HV§r, позволяет выполнять §6отладку§r и §6автоматическую сборку§r.
+tfg.quests.lv.terminal.desc6=§9Battery Manager§r, если у вас установлена ​батарея, проверяет уровень энергии и показывает потребление энергии другими приложениями.
+tfg.quests.lv.terminal.desc7=§9Hardware Manager§r используется для подключения оборудования, например аккумулятора, для включения других приложений.
+tfg.quests.lv.terminal.desc8=§9App Store§r (не совсем магазин) добавляет приложения в вашу коллекцию и позволяет обновлять некоторые из них. Имейте в виду, что для работы приложений могут по-прежнему требоваться определенные установленные устройства.
+tfg.quests.lv.terminal.desc9=§9Pong§r, §9Побег Тесея§r, §9Сапер§r — это приложения для мини-игр. Не забудьте также сыграть в GregTech!
+tfg.quests.lv.terminal.desc10=§9Рудоискатель§r работает так же, как портативный §dПроспектор§r, и его можно обновлять несколько раз.
+tfg.quests.lv.terminal.desc11=§9Таблица рецептов§r — замечательный планировщик диаграмм для построения цепочек рецептов и их визуализации.
+tfg.quests.lv.terminal.desc12=§9GT Console§r настраивает машины так, как если бы вы использовали обычные инструменты, но без их использования! Это аналогично удаленному доступу с §3Центрального монитора§r.
+tfg.quests.lv.terminal.desc13=§9World Prospector§r — это §dX-Ray VR§r для отфильтрованных блоков.
+tfg.quests.lv.terminal.desc14=§9Virtual Tank Viewer§r используется в сочетании с §3Ender Fluid Cover§r. В нем хранится информация обо всех ваших §dВиртуальных резервуарах§r.
+
+tfg.quests.lv.drillin.title=Мы бурим
+tfg.quests.lv.drillin.subtitle=§oШахтерский бур — отличный инструмент для майнинга, он бывает разных уровней. Бур LV может быть не слишком привлекательным, но более поздние буры могут добывать 3x3x3, 5x5x5 и до 9x9x9, чтобы делать огромные отверстия!§r
+tfg.quests.lv.drillin.desc1=Рекомендуемое сверло с алмазным наконечником, который может быть лучшим материалом для него прямо сейчас.
+tfg.quests.lv.drillin.desc2=§9Примечание:§r Прочность всех электроинструментов намного выше, чем указано, поскольку они используют Энергию, чтобы предотвратить нанесение урона! Кроме того, их можно зачаровывать, как кирки.
+tfg.quests.lv.drillin.desc3=§9Другое примечание:§r Аккумуляторы в вашем инвентаре можно активировать, щелкнув правой кнопкой мыши, чтобы §отключить зарядку§r ваших предметов из EU. Не делайте этого §пока§r во время майнинга, так как ваш предмет будет постоянно обновляться и сбрасывать прогресс майнинга.
+tfg.quests.lv.drillin.desc4=Вы можете сделать паузу и сделать дрель MV. Это будет полностью стоить того.
+
+tfg.quests.lv.steamturbine.title=Производство и транспортировка электроэнергии
+tfg.quests.lv.steamturbine.subtitle=&aТУРБИНА! Да еще и паровой двигатель, твой первый электромобиль. Ваше новое приключение начинается с нее!
+tfg.quests.lv.steamturbine.desc1=§oДа, вам понадобится больше пара! Давление пара будет воздействовать на турбины. Их вращение активирует генератор, производящий электричество.§r
+tfg.quests.lv.steamturbine.desc2=§3Паровая турбина§r — единственный генератор, который реально можно использовать в эпоху LV. §2Позже вы разблокируете дополнительные источники питания§r.
+tfg.quests.lv.steamturbine.desc3=§d2 Пара=1 EU§r
+tfg.quests.lv.steamturbine.desc4=§lВведение в §9§lтранспортировку энергии§r§l:§r
+tfg.quests.lv.steamturbine.desc5=§1EU§r - Энергоюнит - транспортируется через прямое соединение, §aПровода§r или §aКабели§r. Провода менее эффективны, так как они §cпоражают вас электрическим током§r и §забирают больше энергии§r, поэтому вам следует использовать кабели.
+tfg.quests.lv.steamturbine.desc6=§cПотеря кабеля§r означает, что вам придется размещать машины рядом с генераторами, но такая проблема возникает только в начале игры. Если вы посмотрите вперед, вы сможете получить §6сверхпроводники§r в будущем.
+tfg.quests.lv.steamturbine.desc7=Если вы используете одну §3паровую турбину§r, вы можете использовать §a1x оловянные кабели§r.
+tfg.quests.lv.steamturbine.desc8=Если вы обновитесь до §32 паровых турбин§r, вам следует использовать §a2x оловянные кабели§r, иначе они могут в конечном итоге §cсгореть§r.
+tfg.quests.lv.steamturbine.desc9=Это связано с механикой §9ампера§r... но это будет объяснено позже, чтобы вы могли наслаждаться игрой.
+tfg.quests.lv.steamturbine.desc10=§9Примечание:§r Кабели в стиле GT6 §отключены§r. Это означает, что размещение кабелей соединяет их только с блоком, против которого они были размещены. Чтобы открыть больше подключений, используйте §5кусачки§r в сети.
+tfg.quests.lv.steamturbine.desc11=§2GTCEu§r Кабели теперь имеют §6встроенную поддержку RF§r! Вы можете подключить любое радиочастотное устройство к источнику EU, и оно автоматически преобразуется. Соотношение §a4 : 1§r (RF : EU).
+
+tfg.quests.lv.covers.title=Обложка
+tfg.quests.lv.covers.subtitle=§oОбложки — это способы придать вашим машинам дополнительное поведение без использования дополнительного блока.§r
+tfg.quests.lv.covers.desc1=Обложка размещаются, щелкая ими правой кнопкой мыши на лицевой стороне машины, и удаляются ломом (или ломанием машины, но это слишком жестоко!).
+tfg.quests.lv.covers.desc2=Практически любой объект GregTech TileEntity будет принимать обложки, даже если они не предоставляют никакой функциональности.
+tfg.quests.lv.covers.desc3=Для обложки, передающие предметы / жидкости, у вас будет кнопка для включения / отключения других форм передачи через обложку:
+tfg.quests.lv.covers.desc4=§9- §rОтключено: только обложка будет разрешена для переноса на эту сторону машины.
+tfg.quests.lv.covers.desc5=§9-§rФильтрует помещаемые предметы (актуально только с фильтром!): другое перемещение будет разрешено, только если оно соответствует фильтру
+tfg.quests.lv.covers.desc6=§9-§rФильтрует извлекаемые предметы: любая другая передача разрешена на этой стороне машины.
+tfg.quests.lv.covers.desc7=Размещение обложкой более низкого уровня напряжения на машине является §безопасной§r.
+
+tfg.quests.lv.motora.title=LV Электрический мотор
+tfg.quests.lv.motora.subtitle=§oОдин из привратников эпохи LV... Вы приближаетесь.§r
+tfg.quests.lv.motora.desc1=Мы сокращаем количество задач по поиску по мере того, как вы продвигаетесь дальше в модпаке, поэтому вам не нужно несколько раз проверять, какие предметы делать. Помните, что JEI — ваш друг, если вы забыли, как создавать вещи!
+tfg.quests.lv.motora.desc2=Создайте шесть электродвигателей §aLV§r! Это может показаться большим, но это минимум, необходимый для того, чтобы добраться до хороших вещей в LV эре.
+
+tfg.quests.lv.pump.title=LV Электрическая помпа
+tfg.quests.lv.pump.subtitle=§oКомпонент для крафта, а также обложка!§r
+tfg.quests.lv.pump.desc1=Насос, установленный на машине, будет перекачивать жидкость. Вы можете настроить его для импорта или экспорта.
+tfg.quests.lv.pump.desc2=Он может принимать §9жидкостный фильтр§r.
+
+tfg.quests.lv.conveyor.title=LV Конвейерный модуль
+tfg.quests.lv.conveyor.subtitle=Компонент для крафта, а также обложка!§r
+tfg.quests.lv.conveyor.desc1=Конвейерный модуль, если его разместить на машине, будет перемещать предметы. Вы можете настроить его для импорта или экспорта.
+tfg.quests.lv.conveyor.desc2=У этого есть специальное взаимодействие с конвейерами предметов, чтобы включить идеальный §dКруговой алгоритм§r.
+tfg.quests.lv.conveyor.desc3=Он также может принимать различные §9Фильтры предметов§r.
+
+tfg.quests.lv.regulator.title=Жидкостный регулятор
+tfg.quests.lv.regulator.subtitle=Обложка!§r
+tfg.quests.lv.regulator.desc1=§aЖидкостный регулятор§r является своего рода эквивалентом §9роботизированного манипулятора§r для жидкостей.
+tfg.quests.lv.regulator.desc2=Он может перекачивать жидкости, но имеет два полезных режима:
+tfg.quests.lv.regulator.desc3=§9-§r §dSupply Exact§r будет передавать указанное количество жидкости за тик, если оно доступно. Ни больше, ни меньше.
+tfg.quests.lv.regulator.desc4=§9-§r §dKeep Exact§r обеспечит сохранение точного количества жидкости в подключенной машине.
+
+tfg.quests.lv.piston.title=LV Электрический поршень
+tfg.quests.lv.piston.subtitle=Крафт компонент, вы ожидали чего-то более необычного?§r
+tfg.quests.lv.piston.desc=Как и мотор LV, он используется для создания машин LV.
+
+tfg.quests.lv.robot.title=LV Роботизированный манипулятор
+tfg.quests.lv.robot.subtitle=Крафт компонент, О БОЖЕ, ЭТО ДОРОГО, но также и обложка!§r
+tfg.quests.lv.robot.desc1=Роботизированный манипулятор, размещенный на машине, представляет собой более продвинутый конвейерный модуль. Он позволяет передавать предметы определенными партиями, по определенным порциям или хранить определенное количество предметов на складе.
+tfg.quests.lv.robot.desc2=Фактическое использование манипулятора робота будет объяснено в будущих квестах в качестве руководства.
+tfg.quests.lv.robot.desc3=§9Примечание:§r Функции, предоставляемые роботизированным манипулятором, работают §только§r, если он выполняет операцию..
+
+tfg.quests.lv.amps.title=Но что такое амперы?
+tfg.quests.lv.amps.subtitle=§oПредставленные концепции предназначены для любознательных игроков. Не читайте дальше ;D, если вам это не интересно.§r
+tfg.quests.lv.amps.desc1=;D:§r В целях безопасности сопоставьте предел тока ваших кабелей с максимальным количеством ампер от производителей энергии.
+tfg.quests.lv.amps.desc2=Вы наверняка уже поняли, что система энергии в §2GregTech§r §cне так проста§r, как §1RF§r, к которой вы, возможно, привыкли использовать в модифицированном Minecraft!
+tfg.quests.lv.amps.desc3=§1EU§r механика имеет глубину и похожа на настоящее электричество. Он также может быть §4опасным§r при неправильном обращении. Но это также дает много §6удовлетворения§r, если его правильно использовать.
+tfg.quests.lv.amps.desc4=Этот квест затрагивает механику §9Ампера§r. Что касается §dВольт§r, это будет объяснено, как только вы достигнете §bMV§r.
+tfg.quests.lv.amps.desc5=Каждый одноблочный генератор в GregTech настроен на производство §91 Ампер§r для своего уровня напряжения. Для §7LV§r это приводит к §232EU/t§r. Если машине требуется 16EU/t, один пакет 32EU отправляется каждые два такта (при условии отсутствия потерь в кабеле).
+tfg.quests.lv.amps.desc6=Буфер батареи с §94§r Батареи могут производить до §94 Ампер§r, для §2128EU/t§r как §7LV§r, что важно для §3Електрической доменной печи§r или для одновременного запуска нескольких машин. Стандартные машины рассчитаны на потребление до §92 ампер§r с учетом потерь в кабеле. Другие машины имеют определенные значения §9в амперах§r, описанные во всплывающей подсказке.
+tfg.quests.lv.amps.desc7=Кабели§r имеют §cлимит§r силы тока §9 . Попытка провести большее количество ампер, чем разрешено, приведет к их §4сгоранию§r.
+tfg.quests.lv.amps.desc8=Амперы§r подаются §cтолько§r через §aКабели§r, напрямую соединяющие производителей и потребителей, и §cтолько§r, если потребители активны. Это означает, что вы можете безопасно отключить свои кабели в определенных местах, не стесняйтесь экспериментировать!
+
+tfg.quests.lv.amperage.title=Концепция силы тока и напряжения
+tfg.quests.lv.amperage.subtitle=§oВы можете отложить этот квест и вернуться к нему, как только достигнете MV Age. §р
+tfg.quests.lv.amperage.desc1=Этот квест более подробно расскажет о механике энергии. Если у вас есть базовые представления об электричестве в §реальной жизни§r, система GTEU не слишком отличается! Еще более подробное руководство можно найти на вики GTCEu.
+tfg.quests.lv.amperage.desc2=Электроэнергия в §dGregTech§r измеряется в §dЕдиницах энергии (EU)§r. Они передаются по соединениям в §e§dпакетах (p)§r. Передача пакетов имеет два параметра: §2Вольты§r — это количество EU в каждом пакете §2(EU/p или V)§r, а §2Ампертраж§r — количество пакетов, проходящих через точку за тик §2( р/т, или А)§r.
+tfg.quests.lv.amperage.desc2=Думайте о кабелях в сети как о §aшоссе§r, где пакеты — это автомобили на ней: §2напряжение§r аналогично §аскорости§r каждого автомобиля, а §2сила тока§r подобен §количеству автомобилей§ r, которые проходят через шоссе в единицу времени. (Это относится и к реальной жизни!)
+tfg.quests.lv.amperage.desc4=§2§rПроизведение §2yапряжения§r и §2Амперации (V x A, или EU/p x p/t)§r равно §dэнергии§r или §dEU/t§r . Это то, что машины перечисляют в своем энергопотреблении. Например, рецепт §3EBF §bАлюминий§r требует §d120 EU/t§r, и это может быть указано как §d30V x 4A§r (поставляется как 4A из §7LV§r) или §d120V x 1A§ r (поставляется как 1A §bMV§r).
+tfg.quests.lv.amperage.desc5=А вот и §4опасная§r часть:
+tfg.quests.lv.amperage.desc6=- Кабели и провода, §2напряжение§r которых превышает их вольтаж, будут сожжены§r! Кабели и провода также §cсгорают§r, если через них проходит слишком много §2ампер§r.
+tfg.quests.lv.amperage.desc7=- Машины, которые получают §2напряжение§r выше их уровня, §cвзорвутся§r! Однако установка дополнительных §3§2 ампер§r в машину §безопасна§r.
+tfg.quests.lv.amperage.desc8=§9§lTL;DR:§r Группируйте машины и генераторы по §2Напряжению§r и не делитесь ими.
+tfg.quests.lv.amperage.desc9=§9Примечание:§r Ошибка ампеража, эксплойт, функция (называйте это как хотите!) из GTCE были §lисправлены§r в GTCEu. Теперь Энергетическая сеть работает по назначению.
+
+tfg.quests.lv.diode.title=Диод
+tfg.quests.lv.diode.subtitle=§oТема этого квеста не является обязательной и менее полезной. Мы поместили его здесь во имя полноты, но если это вам не нужно, не стесняйтесь пропустить это.§r
+tfg.quests.lv.diode.desc1=§aДиод§r (блок, а не компонент предмета) принимает входную энергию с 5 сторон, но выводит только через одну сторону. Его основное назначение — действовать как ретранслятор для повышения уровня энергии до полного в кабелях с потерями, но он также может быть полезен в некоторых компактных установках.
+tfg.quests.lv.diode.desc2=Вы можете использовать §9киянку§r, чтобы изменить ограничение силы тока на выходе.
+
+tfg.quests.lv.transformers.title=Трансформеры
+tfg.quests.lv.transformers.subtitle=§9§aТрансформаторы§r позволяют безопасно повышать и понижать уровни напряжения. Трансформаторы преобразуют мощность, которую они получают, в эквивалентную мощность на 1 уровень напряжения выше или ниже входного напряжения.
+tfg.quests.lv.transformers.desc1=Помимо запуска машин на разных уровнях напряжения, трансформаторы полезны для передачи энергии на большие расстояния. Потери в кабеле меньше влияют на более высокие напряжения.
+tfg.quests.lv.transformers.desc2=Трансформаторы имеют 5 сторон низкого напряжения и 1 сторону высокого напряжения.
+tfg.quests.lv.transformers.desc3=Этот квест требует двух разных типов трансформаторов; получить §eоба§r, чтобы завершить квест. §9Нормальный§r трансформатор может выполнять преобразование только 1A <-> 4A, но §9Регулируемые§r трансформаторы можно переключать между 1A <-> 4A, 2A <-> 8A, 4A <-> 16A и 16A <-> 64A. преобразования.
+tfg.quests.lv.transformers.desc4=Используйте §aкиянку§r для переключения между трансформацией вверх и вниз и §aотвертку§r на регулируемых трансформаторах, для изменения силы тока.
+tfg.quests.lv.transformers.desc5=Трансформаторы более высокого уровня требуют §9катушек§r.
+
+tfg.quests.lv.lboiler.title=Большой бронзовый котел
+tfg.quests.lv.lboiler.subtitle=&a§oЭто задание, обзор Большого бронзового котла.§r
+tfg.quests.lv.lboiler.desc1=Я §lНЕ§r§9 рекомендую§r делать это, пока вы не закончите с большей частью - если не со всей - эпохой LV. Это также §6необязательный§r квест, в зависимости от того, какие параметры питания вы выбрали.
+tfg.quests.lv.lboiler.desc2=§3Большие котлы§r в конечном итоге являются §oдругим§r вариантом для крупномасштабного производства пара. Они будут работать на твердом и жидком топливе.
+tfg.quests.lv.lboiler.desc3=Важно:§r Этот котел также может §cвзорваться§r подобно обычным котлам! Я хотел бы сказать, что взрыв не слабый... но он настроен так, чтобы не повреждать блоки или объекты.
+tfg.quests.lv.lboiler.desc4=§cВодоснабжение имеет решающее значение§r. Но простого обновления §3Выходного люка§r на вашем §3Примитивном насосе§r должно быть достаточно.
+tfg.quests.lv.lboiler.desc5=После полного нагрева §3ББК§r производит 800 пара за тик, что составляет §d400EU/t§r после преобразования или 12,5 базовых паровых турбин! Эта (относительно!) огромная мощность достигается за счет §БОЛЬШОГО§r количества сжигаемого топлива.
+tfg.quests.lv.lboiler.desc6=§5§lНо§r графический интерфейс позволяет вам §9дросселировать§r бойлер до 25% мощности за 200 пара за тик. Это §d100EU/t§r, или чуть больше 3 базовых паровых турбин.
+tfg.quests.lv.lboiler.desc7=Примечание:§r Более подробная информация о мультиблоках будет дана после того, как вы получите электрическую доменную печь в конце эпохи LV. Это один из способов помешать вам получить это слишком рано!
+
+tfg.quests.lv.multiblocktanks.title=Многоблочные танки
+tfg.quests.lv.multiblocktanks.subtitle=Многоблочные резервуары могут хранить большее количество жидкости, но они не переносимы, как бочки. §6Стальной многоблочный резервуар§r вмещает §a1 000 000 мБ§r жидкости.
+tfg.quests.lv.multiblocktanks.desc1=Существует версия §6Деревянного§r§r, которая содержит §a250,000 мБ§r, но не может хранить §cгорячие жидкости§r, например, лаву, или §cгазы§r, например кислород.
+tfg.quests.lv.multiblocktanks.desc2=Передача жидкости осуществляется через блок контроллера или до двух дополнительных блоков клапана.
+tfg.quests.lv.multiblocktanks.desc3=Клапаны могут §автоматически выводить §r, поворачивая их §лицевой стороной вниз§r. Использование крышек насосов также является вариантом.
+tfg.quests.lv.multiblocktanks.desc4=Эти необязательные, но причудливые резервуары являются альтернативой хранилищу жидкости, пока вы не разблокируете большие §9Супертанки§r.
+
+tfg.quests.lv.batterybuffer.title=Батарейный буфер
+tfg.quests.lv.batterybuffer.subtitle=§oСам по себе буфер батареи ничего не делает. Однако он принимает батареи в свой инвентарь, чтобы действовать как... буфер... с... батареями. Надеюсь, вы поняли!§r
+tfg.quests.lv.batterybuffer.desc1=§3Буфер батаре1§r обрабатывает §9два ампера на входе§r и §9один ампер на выходе§r §dна батарею§r. Выходная сторона имеет точку, все остальные стороны являются входными.
+tfg.quests.lv.batterybuffer.desc2=Он также будет заряжать как EU, так и RF инструменты внутри него§r.
+tfg.quests.lv.batterybuffer.desc3=Это необходимо, если у вас нет неограниченной мощности под рукой.
+tfg.quests.lv.batterybuffer.desc4=Получите §либо§r аккумуляторный буфер с четырьмя или восемью слотами. Вариант с шестнадцатью слотами также существует, но сейчас это излишне.
+tfg.quests.lv.batterybuffer.desc5=Примечание:§r Не подключайте кабели с потерями обратно к буферу батареи, иначе вы потеряете энергию!
+
+tfg.quests.lv.hatch.title=Включение мультиблоков
+tfg.quests.lv.hatch.subtitle=Чтобы питать мультиблоки энергией, вам нужны энергетические люки.§r
+tfg.quests.lv.hatch.desc1=Мультиблоки не смотрят на напряжение рецептов, вместо этого они просто проверяют, есть ли у них потребляемая мощность.
+tfg.quests.lv.hatch.desc2=EBF требует как минимум §4120EU/t§r входной мощности для запуска своих рецептов. Это достигается с помощью §3двух энерголюков LV§r. Каждый из них потребляет 2 ампера LV, так что это 4 ампера LV для максимальной мощности 128EU/t.
+tfg.quests.lv.hatch.desc3=Примечание:§r Будьте осторожны с замыканиями кабелей §r, при которых фактическая потребляемая мощность ниже предписанной рецептурой! Я настоятельно рекомендую разместить ваш аккумуляторный буфер §3§rрядом с энергетическими люками§3§r для обеспечения минимальной длины кабеля.
+
+tfg.quests.lv.superconductor.title=LV Сверхпроводник
+tfg.quests.lv.superconductor.subtitle=§oПроверьте рецепт из провода, а затем на странице материалов JEI проверьте рецепт пыли. Удобно, не так ли?§r
+tfg.quests.lv.superconductor.desc1=Сверхпроводники§r - это специальные провода, доступные для каждого уровня напряжения. У них нет аналога кабеля, но у них абсолютно §6нет потери кабеля§r! Они также не причиняют вам вреда, когда вы прикасаетесь к ним.
+tfg.quests.lv.superconductor.desc2=Вариант 1x также рассчитан на 2 ампера! Разве это не мило?
+tfg.quests.lv.superconductor.desc3=Сейчас самое время заменить ваши дрянные §оловянные кабели§r. Утилизируйте их в §3упаковщике§r, чтобы восстановить как олово, так и каучук.
+
+tfg.quests.lv.muffler.title=Это не так страшно, как кажется #2.
+tfg.quests.lv.muffler.subtitle=Для работы §3Электродоменной печи§r требуется §3люк глушителя§r. Этот люк должен быть §cбеспрепятственным§r, чтобы он мог выводить свои красивые частицы дыма.
+tfg.quests.lv.muffler.desc1=При выполнении рецепта есть небольшой шанс, что §3люк глушителя§r даст бонусные предметы, обычно крошечную пыль пепла.
+tfg.quests.lv.muffler.desc2=Примечание:§r Не пытайтесь автоматизировать извлечение предметов из §3Шлюзового люка§r, это не предусмотрено. Когда он заполнен, он удаляет излишки, поэтому не беспокойтесь о том, что он остановит работу машин.
+
+tfg.quests.lv.maintenance.title=Это не так страшно, как кажется #1.
+tfg.quests.lv.maintenance.subtitle=Я знаю, о чем вы думаете! Не думай! Я имею в виду... Обслуживание в GregTech не так плохо, как вы думаете, и глядя на мультиблоки с этим люком, я чувствую себя счастливым.§r
+tfg.quests.lv.maintenance.desc1=Для большинства мультиблоков требуется §3Люк обслуживания§r. Вам нужно будет выполнить техническое обслуживание, чтобы мультиблок начал работать.
+tfg.quests.lv.maintenance.desc2=Для этого необходимо иметь §9гаечный ключ§r, §9отвертку§r, §9киянку§r, §9молот§r, §9кусачки§r и § 9лом§r в вашем инвентаре, откройте люк техобслуживания и §eщелкните один раз по центру§r. §cНет необходимости перемещать инструменты по отдельности§r.
+tfg.quests.lv.maintenance.desc3=В качестве альтернативы вы можете исправить проблемы, поместив §9ленту§r в люк обслуживания, но я хотел бы сказать вам, что это неэтично.
+tfg.quests.lv.maintenance.desc4=Проблемы обслуживания могут возникнуть после §d48 реальных часов работы§r. Излишне говорить, что они очень редки. Каждая проблема увеличивает длительность рецепта на 10%. Устранение неполадок производится так же, как описано выше.
+tfg.quests.lv.maintenance.desc5=В возрасте §6HV§r вы разблокируете другие люки техобслуживания, которые не заставляют решать проблемы вручную.
+
+tfg.quests.lv.bus.title=Многоблочный ввод/вывод
+tfg.quests.lv.bus.subtitle=Подобно паровым мультиблокам (надеюсь, вы их создали!), вам понадобятся §3люк§r для перемещения предметов внутрь и наружу.
+tfg.quests.lv.bus.desc1=Для жидкостей вам понадобятся §3жидкостный люк§r.
+tfg.quests.lv.bus.desc2=Вот оно, ребята!
+
+tfg.quests.lv.forming.title=Формирование мультиблоков
+tfg.quests.lv.forming.subtitle=§oЭто руководство, которое поможет вам формировать мультиблоки и устранять неполадки.§r
+tfg.quests.lv.forming.desc1=Есть два действительно важных фактора, которые нужно знать при строительстве мультиблоков.
+tfg.quests.lv.forming.desc2=§lПроверьте предварительный просмотр JEI:§r Возможно, это было очевидно, но это больше, чем просто изображение того, как выглядит мультиблок! Используйте мышь, чтобы §повернуть§r предварительный просмотр, §9наведите указатель мыши на детали§r, чтобы получить дополнительную информацию. Страница JEI также содержит количество блоков для его сборки. Вы также можете §щелкнуть правой кнопкой мыши§r на блок в предварительном просмотре, чтобы отобразить все доступные блоки в этом месте размещения.
+tfg.quests.lv.forming.desc3=§lПредварительный просмотр JEI является предложением:§r Не существует единого способа формирования мультиблока. В большинстве случаев у вас есть полная свобода выбора §9уровня входов/люков§r. И у вас также есть §dсвобода размещения§r.
+tfg.quests.lv.forming.desc4=Возьмем в качестве примера EBF, можно использовать любой уровень энергии/входа/люка, и их можно разместить в любом месте вместо кожуха. Жидкостные люки также необязательны, хотя вы, вероятно, захотите, чтобы они обрабатывали рецепты с жидкостью.
+tfg.quests.lv.forming.desc5=Кроме того, вы можете §dщелкнуть правой кнопкой мыши§r контроллер мультиблока для предварительного просмотра в мире или использовать Помощник мультиблока в §4Терминале§r.
+
+tfg.quests.lv.troubleshooting.title=Устранение неполадок с несколькими блоками
+tfg.quests.lv.troubleshooting.subtitle=Если мультиблок сформирован, но вы не можете понять, почему он не запускается:
+tfg.quests.lv.troubleshooting.desc1=§9-§r Проверьте, правильно ли подключен мультиблок (мы все делаем это неправильно).
+tfg.quests.lv.troubleshooting.desc2=§9-§r Выполните начальное техническое обслуживание.
+tfg.quests.lv.troubleshooting.desc3=§9-§r Проверьте использование рецепта, максимальное значение EU/t должно быть больше, чем у рецепта.
+tfg.quests.lv.troubleshooting.desc4=§9-§r Проверьте особые требования, которые могут быть у рецепта (у JEI всегда есть какое-то указание на это).
+tfg.quests.lv.troubleshooting.desc5=§9-§r Убедитесь, что рецепт введен правильно, это менее очевидно, чем в обычной машине, потому что вам приходится переключаться между входной шиной и входным люком.
+tfg.quests.lv.troubleshooting.desc6=§9-§r Убедитесь, что есть место для вывода. Возможно, мультиблок сформировался, но вы забыли люк. Другим самым большим нарушителем являются выходные люки, которые слишком низкого уровня и имеют слишком малую вместимость!
+
+tfg.quests.lv.blast.title=Электрическая доменная печь
+tfg.quests.lv.blast.subtitle=§3Электрическая доменная печь (EBF)§r — это ваш первый электрический мультиблок! Используется для обработки материалов при высоких температурах.
+tfg.quests.lv.blast.desc1=Вы будете использовать EBF, чтобы сделать §aАлюминий§r и перейти в §d§bMV эру§r. Он также может сделать §7сталь§r быстрее, чем примитивная доменка.
+tfg.quests.lv.blast.desc2=EBF - крепкий мальчик. Минимальная стоимость энергии для запуска рецепта составляет §9120 EU/t§r! Это чуть меньше 4 генераторов §7LV§r. Вот почему он был заперт за квестом батареи. Возможно, вы захотите рассмотреть вопрос о строительстве отдельной линии электропередач с отдельными генераторами и аккумуляторным буфером для ее работы.
+
+tfg.quests.lv.aluminiumingot.title=Алюминий
+tfg.quests.lv.aluminiumingot.subtitle=Алюминий§r является основным компонентом корпусов машин §bMV§r. Проверьте §2Сапфировый квест§r, если вы еще не получили §aАлюминиевую пыль§r.
+tfg.quests.lv.aluminiumingot.desc1=После того, как вы установите электролизер §3MV§r, вы сможете получать §aАлюминий§r из многих других руд.
+tfg.quests.lv.aluminiumingot.desc2=Процесс выплавки алюминия можно ускорить с помощью §9Азота§r, который получают путем центрифугирования §9Воздуха§r из §3Газового коллектора§r.
+tfg.quests.lv.aluminiumingot.desc3=Вам все равно понадобятся цепи среднего напряжения, чтобы создавать машины среднего напряжения.§r
+
+tfg.quests.lv.cupronickelcoils.title=Купроникилевые катушки
+tfg.quests.lv.cupronickelcoils.subtitle=Подготовьте §a128 купроникеля§r, §a32 Бронза§r и §a16 Оловянного сплава§r для изготовления нагревательных змеевиков для вашей электрической доменной печи.
+tfg.quests.lv.cupronickelcoils.desc1=Это по-прежнему меньше половины стоимости всего EBF в сырье. Вам также понадобится примерно по стаку инвара и стали.
+tfg.quests.lv.cupronickelcoils.desc2=Купроникилевые катушки позволят EBF выполнять рецепты до §d1,800K§r (игнорируя бонусы напряжения). Это довольно жарко, если вы спросите меня.
+
+tfg.quests.lv.magnet.title=Магнит
+tfg.quests.lv.magnet.subtitle=Почему эти предметы, которые я добываю, не могут вести себя прилично и перемещаться в мой инвентарь!? Этот магнит должен решить это, даже если в этом нет никакого смысла!§r
+tfg.quests.lv.magnet.desc1=Зарядите магнит, пока вы используете §9Батареи§r, и §dкрадясь, щелкните правой кнопкой мыши§r, чтобы активировать его. Сделайте это снова, чтобы деактивировать. Он будет работать из любого места в вашем инвентаре.
+tfg.quests.lv.magnet.desc2=§9Примечание:§r Если вы боитесь, что вас перегрузят булыжник или земля, откройте корзину в верхнем левом углу, чтобы удалить их.
+
+tfg.quests.lv.wiremill.title=Базовая волочильный станок
+tfg.quests.lv.wiremill.subtitle=§oТехнически вы можете сделать более или менее любую машину LV, но я хочу, чтобы вы сначала сделали лучшую из них! Я знаю, я знаю.ю. Ты спрашиваешь, где твоя свобода выбора.§r
+tfg.quests.lv.wiremill.desc1=Больше никаких болезненных проводов! Эта машина позволяет вам сделать §6два провода из одного слитка§r, что должно быть в три раза дешевле, чем то, что вы делали до сих пор!
+tfg.quests.lv.wiremill.desc2=Слева от этого квеста находятся более важные машины, которые очень помогут вам получить более дешевые промежуточные продукты.
+tfg.quests.lv.wiremill.desc3=§9Примечание:§r Рецепты внутри §3LV машин§r доходят до §aиспользования: 32 EU/t (LV)§r. Что-нибудь выше, чем это, и вам понадобится MV или даже лучшая машина. Излишне говорить, что это на потом.
+
+tfg.quests.lv.bending.title=Базовый гибочный станок
+tfg.quests.lv.bending.subtitle=§oВозможно, вторая лучшая машина LV для создания, но выбор за вами!§r
+tfg.quests.lv.bending.desc1=Это помогает преобразовать один §6Слиток в одну пластину§r, что лучше, чем кузнечный молот.
+tfg.quests.lv.bending.desc2=Вам понадобится §dинтегральная схема§r для рецептов. Было бы неплохо, если бы дизайнер квестовой дал ее бесплатно, не так ли?
+tfg.quests.lv.bending.desc3=Вы можете щелкнуть правой кнопкой мыши интегральной схемой в руке или в §aслоте конфигурации§r машины, чтобы изменить номер конфигурации.
+
+tfg.quests.lv.polarizer.title=Базовый поляризатор
+tfg.quests.lv.polarizer.subtitle=§oПоляризатор поляризует... Мы снова делаем это, не так ли?§r
+tfg.quests.lv.polarizer.desc=Одна из самых дешевых, если не самая дешевая машина LV. Используйте это, чтобы сделать §6магнитные стержни без редстоуна§r для ваших моторов.
+
+tfg.quests.lv.lathe.title=Базовый токарный станок
+tfg.quests.lv.lathe.subtitle=§oТокарные станки Токарные станки... Вероятно, нам следует переименовать эти станки, чтобы избежать этих ужасных вводных квестов!§r
+tfg.quests.lv.lathe.desc=Важный станок для обработки металлов. Благодаря этому вы можете превратить §6один слиток в два стержня§r, а §6один болт в один винт§r. Это вдвое больше эффективности этих рецептов по сравнению с крафтом.
+
+tfg.quests.lv.canning.title=Базовая консервная машина
+tfg.quests.lv.canning.subtitle=Эта машина не делает ничего интересного. Он помещает вещи в вещи.§r
+tfg.quests.lv.canning.desc=Создавайте эту машину только тогда, когда вы чувствуете, что пришло время инвестировать в батареи.
+
+tfg.quests.lv.batteryingot.title=Подготовка батареи!
+tfg.quests.lv.batteryingot.subtitle=Батарейки отличные! Они позволяют накапливать энергию, если у вас слишком мало или слишком много электроэнергии.§r
+tfg.quests.lv.batteryingot.desc=Сделайте аккумуляторный сплав, используемый для корпусов аккумуляторов.
+
+tfg.quests.lv.chemicalreactor.title=Базовый химический реактор
+tfg.quests.lv.chemicalreactor.subtitle=Это химическая реактор, реалистичная, теоретическая или изобретенная силой видеоигр. Химический реактор создаст условия для этого, и ТАДААА. Вы также можете назвать это волшебным ящиком, если хотите.§r
+tfg.quests.lv.chemicalreactor.desc1=§3Химический реактор§r потребуется для §lмножества§r рецептов.
+tfg.quests.lv.chemicalreactor.desc2=Затем используйте свой свежеприготовленный химический реактор, чтобы открыть новый, §лучший рецепт каучука§r. Это §dнепригодно§r в качестве жидкости, поэтому вам нужно будет сделать другую машину следующим.
+tfg.quests.lv.chemicalreactor.desc3=Создайте §3Отвердитель§r, чтобы он затвердел непосредственно в §aРезиновые листы§r. Вы хотите этого.
+tfg.quests.lv.chemicalreactor.desc4=Создайте §3Сборочную машину§r, чтобы использовать расплавленную резину для §aкабелей§r. Не важно для оловянных кабелей.
+tfg.quests.lv.chemicalreactor.desc5=§eПримечание:§r повторно отправьте жидкость, поместив ее в §lлюбой резервуар§r в вашем инвентаре. Бочка - идеальный кандидат.
+
+tfg.quests.lv.cells.title=Капсулы
+tfg.quests.lv.cells.subtitle=GTCE убил клеточную химию... GTCE убил капсулы!
+tfg.quests.lv.cells.desc1=... Итак, пусть GTCEu оживит их! Нононо, не клеточная химия, §9§oкапсулы§r.§r
+tfg.quests.lv.cells.desc2=Капсулы — это альтернативная форма хранения жидкости. Все типы капсул с одинаковым типом и количеством жидкости внутри §6стакаются§r. Они могут быть автоматически заполнены с помощью §3Консервной машины§r.
+tfg.quests.lv.cells.desc3=Капсулы содержат §dведро§r жидкости.
+tfg.quests.lv.cells.desc4=Универсальные капсулы вмещают до §d одного ведра§r, но также могут хранить §9доли§r ведер. Идеально подходит для хранения оставшейся жидкости, не занимая всю бочку.
+tfg.quests.lv.cells.desc5=Капсулы, сделанные из материалов более высокого уровня, могут вместить еще больше жидкости, но §9бочка§r и §9супертанки§r к тому времени будут вмещать больше.
+tfg.quests.lv.cells.desc6=Как и бочки, капсулы можно поместить в сетку крафта, чтобы очистить их содержимое.
+
+tfg.quests.lv.solidifier.title=Базовый жидкостный отвердитель
+tfg.quests.lv.solidifier.subtitle=§oЖидкостный отвердитель затвердевает... Или можно сказать, что он замораживает вещи, если вам нравится проклятие.§r
+tfg.quests.lv.solidifier.desc1=Постройте эту машину рядом с вашим §3химическим реактором§r, чтобы автоматически превращать резину в §aрезиновые пластины§r.
+tfg.quests.lv.solidifier.desc2=Затем §dгаечным ключем§r сбоку вашего §3Химического реактора§r и включите §9автоматический вывод жидкости§r.
+tfg.quests.lv.solidifier.desc3=Будет больше жидкостей для затвердевания, так что вы можете переназначить свой §3жидкостный отвердитель§r, когда не занимаетесь изготовлением резины.
+
+tfg.quests.lv.rotor.title=Комбо!
+tfg.quests.lv.rotor.subtitle=Пора положить конец мучениям ручного изготовления роторов!§r
+tfg.quests.lv.rotor.desc1=Используйте обе свои машины, чтобы превратить материал в жидкость и затвердеть обратно в ротор! Эта комбинация составляет §6четыре слитка на ротор§r.
+tfg.quests.lv.rotor.desc2=Вы также можете сделать то же самое для §6шестеренок§r и §6малых шестеренок§r, которые затем будут заменены экструдером §3MV§r.
+tfg.quests.lv.rotor.desc3=Примечание:§r Некоторые металлы требуют более высокого напряжения, чем LV для извлечения жидкости, так что имейте это в виду.
+
+tfg.quests.lv.prospector.title=Это взлом
+tfg.quests.lv.prospector.subtitle=Проспектор — отличный инструмент для поиска жил.
+tfg.quests.lv.prospector.desc=Графический интерфейс интерактивен, и... мне больше нечего сказать. §6Это здорово§r.
+
+tfg.quests.lv.batteries.title=Батарейки!
+tfg.quests.lv.batteries.subtitle=§aБатарейки§r для хранения энергии! Их можно поместить в слот для энергии внизу посередине графического интерфейса машины или в §9батарейный буфер§r. Каждая батарея принимает до §двух ампер§r и выдает до §одного ампера§r.
+tfg.quests.lv.batteries.desc1=Батареей в вашем инвентаре можно щелкнуть правой кнопкой мыши, чтобы активировать §dзарядку§r ваших предметов EU.
+tfg.quests.lv.batteries.desc2=LV§r, §bMV§r и §6HV§r Батареи бывают трех видов, что позволяет вам выбрать наиболее подходящую для вас в зависимости от материалов, которые у вас есть. §2Литий§r как наилучшая емкость, затем следует §7Кадмий§r, затем §9Натрий§r. Для их получения вам понадобится либо §3электролизер§r, либо §3центрифуга§r.
+tfg.quests.lv.batteries.desc3=Мой совет: найдите соляную жилу и либо §aэлектролизируйте соль§r, чтобы получить §dНатрий§r, либо §aПромойте измельченный лепидолит§r, чтобы получить §dЛитий§r.
+tfg.quests.lv.batteries.desc4=Соберите §eлюбую§r из трех батарей, чтобы выполнить это задание.
+
+tfg.quests.lv.extractor.title=Базовый экстрактор
+tfg.quests.lv.extractor.subtitle=§oПаровой экстрактор извлекает... Подождите, нет, это было в строке одну главу назад!§r
+tfg.quests.lv.extractor.desc1=Причина, по которой я не представил LV-версии паровых машин, заключается в том, что они не требуются! Возможно, вы не захотите инвестировать в обновление, которое практически ничего не делает. За исключением §этого§r именно потому, что он делает больше.
+tfg.quests.lv.extractor.desc2=§3Базовый экстрактор§r получает возможности жидкости, что позволяет использовать §aизвлекать жидкости§r. Используйте его, чтобы расплавить ранее затвердевшую резину, §dрасплавить припой§r для ваших схем, §dрасплавить красный сплав§r для §6лучшего рецепта электронных ламп§r в §3ассемблере§r!
+
+tfg.quests.lv.circuitassembling.title=Базовая машина для сборки микросхем
+tfg.quests.lv.circuitassembling.subtitle=§oНадеюсь, это ваши первые расходы на MV Circuit.§r
+
+tfg.quests.lv.mvcircuits.title=Первые MV микросхемы!
+tfg.quests.lv.mvcircuits.subtitle=Микросхема MV! Означает ли это, что MV эра...? У вас есть алюминий?§r
+tfg.quests.lv.mvcircuits.desc1=Каждая электрическая эпоха имеет схемы, соответствующие ее уровню. Хорошая электронная схема — это §dпервая схема MV§r, которую вы можете сделать из трех.
+tfg.quests.lv.mvcircuits.desc2=Следующее, что вам, вероятно, следует сделать, это создать §3машину для сборки микросхем§r, чтобы производить больше схем! Что дешевле!
+tfg.quests.lv.mvcircuits.desc3=Наличие этого и Алюминия откроет доступ к MV машинам.§r
+
+tfg.quests.lv.diodes.title=Диоды
+tfg.quests.lv.diodes.subtitle=Не позволяйте JEI одурачить вас, сейчас есть только один доступный рецепт для этого примитивного диода.§r
+tfg.quests.lv.diodes.desc1=У диода неудобный рецепт, но он станет дешевле и удобнее, когда вы сможете получить полиэтилен.
+tfg.quests.lv.diodes.desc2=Это необходимо для §dMV микросхемы§r.
+
+tfg.quests.lv.assembling.title=Базовая сборочная машина
+tfg.quests.lv.assembling.subtitle=Несмотря на то, что это чрезвычайно §9важная§r машина, она §9§lне поможет вам сразу§r, так как стоит дорого. Для большинства рецептов, которые вы хотите разблокировать, требуется §cжидкости§r. Получите немного больше инфраструктуры, прежде чем спешить с этим.
+tfg.quests.lv.assembling.desc1=§3Сборочная машина§r является основой игрового процесса. Считайте, что это так же важно, как верстак, за исключением... ну, это машина.
+tfg.quests.lv.assembling.desc2=Мы, как разработчики модпаков, также любим использовать это, чтобы включать всевозможные пользовательские рецепты. И знаете, в чем хорошая новость? Он позволяет разблокировать §dApplied Energistics§r!
+tfg.quests.lv.assembling.desc3=Как только у вас будет достаточно инфраструктуры, вы сможете создавать лучшие рецепты для:
+tfg.quests.lv.assembling.desc4=§9-§r §6Вакуумной лампы§r
+tfg.quests.lv.assembling.desc5=§9-§r §6Резистора§r
+tfg.quests.lv.assembling.desc6=§9-§r §6Платы§r
+
+tfg.quests.lv.can.title=16 оттенков серого
+tfg.quests.lv.can.subtitle=Хорошо, сделать это довольно сложно, это должно быть хорошо, верно?
+tfg.quests.lv.can.desc1=Кроме того, это всего лишь пустой баллончик, который вы должны заполнить химическим красителем.§r
+tfg.quests.lv.can.desc2=Итак, аэрозольные баллончики не предоставляют никакой функциональности для машин, но весьма §bвизуально привлекательны и полезны§r!
+tfg.quests.lv.can.desc3=Любая (или почти) плитка GregTech может быть §6окрашена§r в один из 16 выбранных вами цветов. Это отлично подходит для скриншотов или для разделения различных настроек для визуализации в многопользовательской базе. Они также помогают различать трубопроводы и кабели.
+
+tfg.quests.lv.board.title=Печатная плата зла
+tfg.quests.lv.board.subtitle=§oЯ не знаю, почему это называется "Хорошая" плата, так как я считаю, что создавать ее довольно зло.§r
+tfg.quests.lv.board.desc1=Эта печатная плата используется для создания §dмикросхем MV§r!
+tfg.quests.lv.board.desc2=§9Примечание:§r У вас есть §lдва§r варианта изготовления фенольной печатной платы. Используя §aПерсульфат натрия§r или §aЖелезо III Хлорид§r, изготовление досок требует §6лишь четверть серебра§r по сравнению с рецептом изготовления.
+tfg.quests.lv.board.desc3=§lОднако§r учитывая, как болезненно для вас может быть получение этих химикатов §прямо сейчас§r, вы можете просто использовать больше Серебра, добыв большую часть жилы галены...
+tfg.quests.lv.board.desc4=Квест на персульфат натрия находится в главе MV, если вам это интересно.
+
+tfg.quests.lv.glued.title=Склеенный
+tfg.quests.lv.glued.subtitle=§oПришло время прекратить обработку смолы через экстрактор.§r
+tfg.quests.lv.glued.desc1=Теперь вы можете §3центрифугировать§r §aсмолу§r, что по-прежнему будет давать сырую резину вместе с §aклеем§r (и менее полезным комком биомасы).
+tfg.quests.lv.glued.desc2=Сделай много клея. Вы можете использовать §6более дешевые резисторы§r, §6более дешевые печатные платы§r в §3сборочном станке§r и многое другое... §в следующем квесте§r.
+tfg.quests.lv.glued.desc3=Примечание:§r Отправьте жидкость, храня ее в §lлюбом§r резервуаре в вашем инвентаре. Ведро тоже подойдет.
+
+tfg.quests.lv.gallium.title=Арсенид галлия
+tfg.quests.lv.gallium.subtitle=Многие материалы в будущем нельзя будет выплавлять напрямую из руды! Вместо этого они получаются как побочные продукты при переработке других руд. Галлий и мышьяк входят в число этих материалов.
+tfg.quests.lv.gallium.desc1=Для §dгаллиума§r вы можете выбрать от худшего к лучшему:
+tfg.quests.lv.gallium.desc2=§9- §3Электролизуйте §aСфалерит§r, чтобы снизить вероятность образования мелкой пыли. Обратите внимание, что вы теряете стоимость прямой плавки.
+tfg.quests.lv.gallium.desc3=§9-§r Поместите §aизмельченный боксит§r в §3химическую ванну§r. Обратите внимание, что для этого требуется §9персульфат натрия§r.
+tfg.quests.lv.gallium.desc4=§9-§r Получите его как побочный продукт §aсфалерита§r переработкой руды в §3термической центрифуге§r или в §3центрифуге§r.
+tfg.quests.lv.gallium.desc5=Чтобы получить §dмышьяк§r, вам нужно будет добыть и §ацентрифугировать реалгар§r.
+
+tfg.quests.lv.centrifuge.title=Базовая центрифуга
+tfg.quests.lv.centrifuge.desc1=За пределами переработки руды::§r О боже, эта машина делает много... Рецепты разложения для разделения типов пыли, разделения воздуха и многого другого... Список слишком длинный, давайте просто скажите §cвам нужна центрифуга§r.
+tfg.quests.lv.centrifuge.desc2=Для обработки руды:§r
+tfg.quests.lv.centrifuge.desc3=Это берет §aгрязную пыль§r или §aочищенную пыль§r и превращает их в чистую пыль плюс добавленную крошечную пыль §6Побочный продукт§r. Это выходит за рамки оптимальной цепочки для побочных продуктов, но это также самая дешевая машина для обработки руды из этого набора для запуска и настройки в небольшом масштабе.
+
+tfg.quests.lv.mixer.title=Базовый миксер
+tfg.quests.lv.mixer.subtitle=§oЭтот миксер микширует... Чего вы ожидали в этот момент?§r
+tfg.quests.lv.mixer.desc1=Отключите эту машину до тех пор, пока она вам действительно не понадобится для приготовления рецептов.
+tfg.quests.lv.mixer.desc2=Некоторые ручные сплавы также могут быть изготовлены в миксере, за исключением более высокого выхода.
+
+tfg.quests.lv.oxygen.title=Глоток свежего кислорода
+tfg.quests.lv.oxygen.subtitle=§oЕсли вы хотите быть придирчивым, то это будет Dioxygen или кислородный газ. Но условность игрового процесса делает его просто кислородом.§r
+tfg.quests.lv.oxygen.desc1=Вы могли бы потратить §oминуту§r в JEI на поиск рецептов кислорода, учитывая множество способов его получения. Различные минералы будут производить его при электролизе.
+tfg.quests.lv.oxygen.desc2=Однако, по моему мнению, лучшим источником (!) является §ацентрифугирование воздуха§r после создания §dгазового коллектора§r, который вы, вероятно, еще не можете сделать. Этот рецепт также дает §aАзот§r, который может ускорить некоторые рецепты §9Электрической доменной печи§r§r.
+tfg.quests.lv.oxygen.desc3=По моему мнению, вторым лучшим источником (!) является §aэлектролиз диоксида кремния§r. Диоксид кремния получают из различных источников, таких как стеклянная пыль, гранитная пыль и черная гранитная пыль.
+tfg.quests.lv.oxygen.desc4=Третий лучший источник, по моему мнению (!) это §aэлектролиз воды§r. Но это больше для §aводорода§r из-за более высокой стоимости энергии.
+tfg.quests.lv.oxygen.desc5=Четвёртый лучший источник, по моему мнению (!) это §чтобы он не был аннулирован§r никогда. Любой кислород, полученный из любого источника, чего-то стоит и должен храниться в резервуарах. §3Стальной многоблочный резервуар§r — хороший кандидат для хранения кислорода... Или вы можете просто сделать больше бочек.
+tfg.quests.lv.oxygen.desc6=§eПримечание:§r Отправьте жидкость, храня ее в §lлюбом§r резервуаре в вашем инвентаре. Ведро тоже подойдет.
+
+tfg.quests.lv.arc.title=Базовая дуговая печь
+tfg.quests.lv.arc.subtitle=Описание машины относится к металлургии, где Доменная печь и Дуговая печь служат аналогичной цели, но не совсем здесь!§r
+tfg.quests.lv.arc.desc1=Дуговая печь §3§r использует немного §9кислорода§r для выплавки предметов способом, отличным от печи.
+tfg.quests.lv.arc.desc2=Вы можете использовать его, чтобы упростить §aкованое железо§r, §aстекло§r и получить доступ к §aобожженной меди §r.
+tfg.quests.lv.arc.desc3=Он также может перерабатывать различные компоненты и машины обратно в исходный материал.
+
+tfg.quests.lv.electrolyzer.title=Базовый электролизер
+tfg.quests.lv.electrolyzer.desc1=Вне обработки руды:§r Эта машина, как и Центрифуга, тоже делает много чего... И я не могу их перечислить! Но, к счастью, он один из самых дешевых, так что делайте его, когда захотите.
+tfg.quests.lv.electrolyzer.desc2=Для обработки руды:§r
+tfg.quests.lv.electrolyzer.desc3=Итак, я солгал, это не §оточно§r в обработке руды, а на самом деле для §aразложение пыли§r. Однако большая часть этого стиля разложения посредством электролиза заблокирована в §bMV§r.
+tfg.quests.lv.electrolyzer.desc4=Вы можете увидеть §молекулярную формулу§r во всплывающих подсказках пыли, чтобы сразу увидеть, что вы можете получить из них.
+tfg.quests.lv.electrolyzer.desc5=Будьте осторожны!§r Из-за того, как работает руда, Пыль, которую можно §dнепосредственно переплавить§r в слитки, может дать более высокий выход металла, чем электролиз. Однако это означает, что вы теряете другие продукты в пыли. Вам придется решать для себя в каждом конкретном случае.
+
+tfg.quests.lv.sapphire.title=Сапфир
+tfg.quests.lv.sapphire.subtitle=При мощности LV единственный способ получить §aалюминиевую пыль§r — электролиз §9сапфира§r или §2зеленого сапфира§r. Алюминий является основным материалом §bMV§r.
+tfg.quests.lv.sapphire.desc=Я могу посоветовать получить достаточное количество сапфира для электролиза в один полный стак §aалюминиевой пыли§r, это §lбудет§r полезно. Плюс бонус кислород, всегда приятно.
+
+tfg.quests.lv.cutting.title=Базовая резочная машина
+tfg.quests.lv.cutting.subtitle=§oМашина для резки... режет... благодаря смазке.§r
+tfg.quests.lv.cutting.desc1=На данный момент вы можете использовать §9воду§r вместо попытки получить смазку.
+tfg.quests.lv.cutting.desc2=§3Резочная машина§r позволяет преобразовывать §6стержни в четыре болта§r.
+tfg.quests.lv.cutting.desc3=Этот станок — единственный способ получить §dплиты с драгоценными камнями§r, необходимые для изготовления фильтров, и, соответственно, §9воздушный коллектор§r.
+
+tfg.quests.lv.gascollector.title=Базовый газосборщик
+tfg.quests.lv.gascollector.subtitle=Сборщик газа собирает воздух для центрифугирования в §aКислород§r и §aАзот§r.
+
+tfg.quests.lv.what.title=Что это за бардак? 
+tfg.quests.lv.what.subtitle=§oПривет! Да ты! ПРИВЕТ!! Почему ты убегаешь!?§r
+tfg.quests.lv.what.desc1=Это задание является презентацией §dПолной шкалы обычной обработки руды§r. Почему «обычный», спросите вы? Ну... некоторые руды особенные, но это уже потом. О нет, я увлекаюсь!
+tfg.quests.lv.what.desc2=Если вы не заметили вкладку §aOre Byproduct§r в §aJEI§r, нажмите U на любой руде GT, и она должна быть второй самой правой вкладкой.
+tfg.quests.lv.what.desc3=В этой вкладке представлены все рецепты обработки руды! Как видите, руды могут дать множество §6Побочных продуктов§r, некоторые из которых не существуют в виде руды.
+tfg.quests.lv.what.desc4=Всякий раз, когда вы хотите получить материал, обратитесь к этой странице, чтобы узнать, можете ли вы его получить, и выберите процесс, который вы считаете наиболее подходящим.
+tfg.quests.lv.what.desc5=Каждый квест, связанный с этим, представляет собой другую машину, имеющую какое-то отношение к обработке руды.
+tfg.quests.lv.what.desc6=§cПримечание:§r Пока не слишком увлекайтесь обработкой руды! Он медленный и несколько энергоемкий. Около 90% руд не настолько важны, чтобы оправдывать попытки получить побочные продукты.
+
+tfg.quests.lv.packager.title=Базовый упаковщик
+tfg.quests.lv.packager.subtitle=Упаковщик §3§r сжимает §aкрошечные пылинки§r и §aмаленькие пылинки§r в §полные пыли§r, а самородки — в слитки. Он также может работать в обратном направлении, изменять размеры проводов и многое другое...
+tfg.quests.lv.packager.desc1=Распаковка кабелей обратно в провода и резину будет оценена после того, как вы переработаете свою энергетическую сеть.
+tfg.quests.lv.packager.desc2=Мы представим руководство позже, как настроить его в середине §dобработки руды§r.
+tfg.quests.lv.packager.desc3=Короткое объяснение: вы можете использовать §9роботизироанный манипулятор§r, установленный на §dSupply Exact§r §59§r, чтобы предотвратить засорение упаковщика нецелым количеством крошечной пыли.
+
+tfg.quests.lv.washing.title=Базовая рудопромывочная машина
+tfg.quests.lv.washing.subtitle=Эта машина сочетает в себе промывку котла для простой автоматизации, а также усовершенствованную и точную промывку побочных продуктов.§r
+tfg.quests.lv.washing.desc1=Промывка §aдробленой руды§r даст §aочищенную руду§r, которую можно очищать дальше, бесполезный камень и, что более важно, первый §6побочный продукт§r.
+tfg.quests.lv.washing.desc2=Любая руда даст §9минимум 2/3 пыли§r этого побочного продукта при промывке! Поэтому уделите этому шагу наибольшее внимание.
+tfg.quests.lv.washing.desc3=Дистиллированная вода поверх воды сокращает продолжительность рецепта вдвое, но также менее удобна в производстве.
+
+tfg.quests.lv.bath.title=Базовая химическая ванна
+tfg.quests.lv.bath.subtitle=Базовая химическая ванна
+tfg.quests.lv.bath.desc1=Вне обработки руды:§r
+tfg.quests.lv.bath.desc2=Вы можете сделать §6бумагу из дерева§r, чтобы выбросить свой §aсахарный тростник§r§9*§r. Я знаю, ты их ненавидишь.
+tfg.quests.lv.bath.desc3=Есть и другие, менее важные рецепты, например окрашивание различных предметов и блоков или их отбеливание.
+tfg.quests.lv.bath.desc4=§9*§r §aСахар§r, к сожалению, по-прежнему будет цениться как часть производства §cTNT§r в эпоху §6HV§r.
+tfg.quests.lv.bath.desc5=§lДля обработки руды:§r
+tfg.quests.lv.bath.desc6=Некоторые §aДробленые руды§r имеют альтернативный рецепт на пути к §aочищенной руде§r, включающий купание либо в §aртути§r, либо в §aперсульфате натрия§r. Этот шаг не очень важен, если только вы действительно не хотите использовать специальный §6побочный продукт§r. Это может быть хорошим альтернативным источником золота.
+
+tfg.quests.lv.sifting.title=Базовая просеивающая машина
+tfg.quests.lv.sifting.subtitle=Просеиватель просеивает §dдрагоценные камни§r §aочищенную руду§r, чтобы найти §aИзысканные§r и §aБезупречные§r самоцветы, которые можно разрезать на обычные самоцветы. Он также находит §aОчищенную пыль§r этого драгоценного камня. В целом это дает §6более высокий доход§r, чем другие средства.
+tfg.quests.lv.sifting.desc1=Небольшое количество §dБезупречного изумруда§r потребуется в эпоху MV, и вы сможете получить их, перерабатывая руды в §3просеивающей машине§r.
+tfg.quests.lv.sifting.desc2=Каждый более высокий уровень §3просеивателя§r увеличивает шанс найти все типы драгоценных камней за счет большего количества энергии. Подробнее о разгоне.
+tfg.quests.lv.sifting.desc3=§9Примечание:§r Если вы дробили драгоценные руды (например, алмазы), очень важно, чтобы вы использовали эту машину для извлечения настоящих драгоценных камней в форме, не содержащей пыли. Однако это довольно медленный процесс, поэтому иногда вам может понадобиться переплавить этот тип руды прямо в драгоценный камень.
+
+tfg.quests.lv.thermal.title=Базовая термальная центрифуга
+tfg.quests.lv.thermal.subtitle=§3Термальная центрифуга§r является самой энергоемкой из машин по переработке руды.
+tfg.quests.lv.thermal.desc=Требуется §aдробленая руда§r или §aочищенная руда§r, чтобы получить §6побочный продукт§r из §3промывочной машина§r, но с той же скоростью.
+
+tfg.quests.lv.autoclave.title=Автоклав
+tfg.quests.lv.autoclave.subtitle=Автоклав обычно является последним этапом обработки руды, чтобы превратить несколько избранных §aпылек от драгоценных камней§r в обычные драгоценные камни.
+tfg.quests.lv.autoclave.desc1=Он очень медленный, поэтому вообще не рекомендуется дробить драгоценные руды, так как процесс восстановления слишком дорог.
+
+tfg.quests.lv.separator.title=Базовый электромагнитный сепаратор
+tfg.quests.lv.separator.subtitle=Редко используемая машина. Он использует магнитные поля для разделения некоторых магнитных руд и получения дополнительных §6побочных продуктов§r, которые вы не получили бы иначе.
+
+tfg.quests.lv.macerator.title=Универсальный измельчитель
+tfg.quests.lv.macerator.subtitle=§5Игрок:§r §oВсе, я сдаюсь, вы сходите с ума! Мы живем в эпоху LV, но вы даете мне машину HV!?§r
+tfg.quests.lv.macerator.desc1=§5Писатель:§r §oПодождите... Должно быть, была причина. Ах! Позвольте мне взять мой сценарий.§r
+tfg.quests.lv.macerator.desc2=Да! Это действительно еще не завершено, поэтому этот квест появляется в главе HV.
+tfg.quests.lv.macerator.desc3=Помните то, что я сказал вам о дробителе, что заставило вас чувствовать себя чрезвычайно грустным и разочарованным? Что ж... это разочарование будет продолжаться до тех пор.
+tfg.quests.lv.macerator.desc4=§6Дробитель разблокирует второй и третий слоты на HV§r. И это будет здорово для обработки руды. На самом деле, если вы посмотрите страницу JEI по переработке руды, вы увидите, что один побочный продукт полностью заблокирован этим после этапа термической центрифуги.
+tfg.quests.lv.macerator.desc5=Примечание:§r В отличие от GTCE, §bMV§r дробитель в GTCEu §cне имеет§r второго слота!
+tfg.quests.lv.macerator.desc6=§5Писатель:§r §oВернись ко мне, когда станешь сильнее, юный падаван.§r
+
+tfg.quests.lv.progression.title=Прогресс LV Эры
+tfg.quests.lv.progression.subtitle=§oТак много вариантов! АААААААААА! Разве я не говорил тебе, что дам тебе свободу!?§r
+tfg.quests.lv.progression.desc1=Эпоха LV заставит вас создавать множество разных машин! Вы заблудились? Вот совет по постановке целей: проверьте предмет поздней игры и начните с него. Итак, скажем, Fusion Controller Mark 3... Неважно, давайте вместо этого проверим более близкую цель. §dЭлектрическая доменная печь§r, главная конечная цель LV эры.
+tfg.quests.lv.progression.desc2=EBF стоит дорого, поэтому вам следует в первую очередь сосредоточиться на машинах, удешевляющих материалы. Квесты будут продолжать помогать вам в этом.
+tfg.quests.lv.progression.desc3=Другими важными целями являются §dМашина для сборки§r и §Схемы MV§r.
+tfg.quests.lv.progression.desc4=Говоря о целях, которые нужно записать, возьмите этот блокнот. Вы оцените это.
+
+##################################################################################################################################
+########################################################## MV Phase ##############################################################
+########################################################## 662095d0   ############################################################
+##################################################################################################################################
+
+tfg.quests.mv.era.title=§cЭра 4 §4-§4 §bЭлектричество MV
+
+tfg.quests.mv.advelectrolyzer.title=Улучшенный электролизер
+tfg.quests.mv.advelectrolyzer.subtitle=§oПомните задание по переработке руды, в котором упоминался электролизер? Он сказал вам, что вам нужно подождать до MV, так что вот мы здесь. §r
+tfg.quests.mv.advelectrolyzer.desc1=Улучшенный электролизер позволяет разлагать §6все§r Пыль. Это значительно упростит получение таких материалов, как §aАлюминий§o§§!
+
+tfg.quests.mv.balanced.title=Сбалансированный квест
+tfg.quests.mv.balanced.subtitle=Глина — чрезвычайно §mсбалансированный§r полезный материал для электролиза.
+tfg.quests.mv.balanced.desc1=Все четыре выходных пыли великолепны.
+tfg.quests.mv.balanced.desc2=Вам понадобится §a§r всего §a416 глиняной пыли§r для этого квеста. Вы также можете изучить другие источники подобных материалов, такие как §aсодалит§r. Проверьте JEI для некоторых деталей.
+tfg.quests.mv.balanced.desc3=Вы должны использовать натрий и/или литий, чтобы сделать несколько батарей §6MV§r.
+
+tfg.quests.mv.components.title=Компоненты MV
+tfg.quests.mv.components.subtitle=§oВы ненавидели создавать компоненты на предыдущем уровне? Они вернулись и стали сложнее!§r
+tfg.quests.mv.components.desc1=Вот список компонентов, которые вам понадобятся в эпоху §bMV§r. Чтобы смягчить боль, обязательно создайте автоматически или §dмассово§r эти детали, особенно §aмоторы§r.
+tfg.quests.mv.components.desc2=Обратите внимание на появление §aэмиттера§r? Для этого требуется §dбезупречный изумруд§r, который на данный момент можно получить только с помощью §3просеивающей машины§r.
+tfg.quests.mv.components.desc3=Конвейеры, насосы и роботизированные манипуляторы являются обновленными версиями §7LV§r, если вы используете их в качестве обложек.
+
+tfg.quests.mv.power.title=Актуальная выработка электроэнергии среднего напряжения.
+tfg.quests.mv.power.subtitle=Генераторы более высокого уровня увеличат потребление топлива пропорционально их скорости генерации, сохраняя продолжительность использования топлива и конкретное количество энергии от топлива одинаковыми. §3улучшеная паровая турбина§r будет использовать §d5 120 мБ пара§r в секунду, что эквивалентно §d256 мБ/т§r.
+tfg.quests.mv.power.desc1=Получите §eлюбой§r из генераторов, чтобы выполнить этот квест, но вы можете начать с §3улучшеная паровой турбины§r.
+tfg.quests.mv.power.desc2=Есть несколько новых вариантов питания, доступных для эпохи §9§bMV§r. Выбрав генераторы и нажав §4U§r, вы увидите, какое топливо подходит.
+tfg.quests.mv.power.desc3=Квесты в левом верхнем углу этой главы предназначены для получения ценных опций силы.
+tfg.quests.mv.power.desc4=Если вы придерживаетесь §9Паровой§r Генерация энергии, вам, вероятно, понадобится §3Большой котел§r.
+
+tfg.quests.mv.voltage.title=Напряжение и другие понятия энергии
+tfg.quests.mv.voltage.subtitle=§oПредставленные концепции предназначены для любопытных игроков. Не читайте дальше, если вам это не интересно.§r
+tfg.quests.mv.voltage.desc1=В целях безопасности сопоставьте §2вольтаж§r для каждого потребителя и производителя, если только вам не нравится §cвзрывы§r...
+tfg.quests.mv.voltage.desc2=Этот квест более подробно расскажет о механике энергии. Если у вас есть базовые представления об электричестве в §реальной жизни§r, система GTEU не слишком отличается! Еще более подробное пошаговое руководство можно найти на вики GTCEu в Github.
+tfg.quests.mv.voltage.desc3=Законы физики:
+tfg.quests.mv.voltage.desc4=° §9Мощность§r=§2Напряжение§r * §dАмперы§r
+tfg.quests.mv.voltage.desc5=° §1Энергия§r=§9Мощность§r * §6Время§r
+tfg.quests.mv.voltage.desc6=§8Сопротивление§r — это исключенное понятие в GregTech, вместо этого оно частично моделируется с потерями в кабеле.
+tfg.quests.mv.voltage.desc7=Единицы:
+tfg.quests.mv.voltage.desc8=- §1EU§r — это §1Энергия§r.
+tfg.quests.mv.voltage.desc9=- §9EU/t§r — это §9Мощность§r.
+tfg.quests.mv.voltage.desc10=- §dA§r или §dАмпер§r.
+tfg.quests.mv.voltage.desc11=- §2V§r будет §2Вольт§r, но мы предпочитаем называть его §7LV§r, §bMV§r, §6HV§r... так как они соответствующие значения для игрового процесса (технически: §7LV§r=32V=32EU/t/A).
+tfg.quests.mv.voltage.desc12=А вот и §4опасная§r часть:
+tfg.quests.mv.voltage.desc13=§9-§r §aКабели§r и §aПровода§r, которые получают §2напряжение выше, чем их номинал, §cсгорают§r, в дополнение к перегоранию от слишком большого количества §dампер§.
+tfg.quests.mv.voltage.desc14=§9-§r §3Машины§r, получающие §2напряжение выше, чем их уровень, §cвзорвутся§r! Дополнительные §dамперы§r не влияют на них, так как они потребляют только то, что им нужно.
+tfg.quests.mv.voltage.desc15=Каждый §6тик§r, §1EU§r §aпакет§r пытаются быть переданы от производителей энергии к потребителям. Эти §aпакет§r имеют два параметра: §2вольтаж§r, определяемый уровнем производителя, и §dамперы§r. Это определяет, сколько §9мощности§r может быть фактически передано. Частичных ампер нет, и Энергия передается только в том случае, если может быть получен полный ампер §aпакет§r.
+tfg.quests.mv.voltage.desc16=Подводя итог, энергия транспортируется в §aпакетах§r из §132EU§r для §7LV§r, §1128EU§r для §bMV§r... Энергия, которая фактически получена, может быть ниже с потерями в кабеле.
+tfg.quests.mv.voltage.desc17=Потребляемая мощность машины ограничена §2напряжением§r (слишком высокое напряжение и бум!), и §dамперами§r. Таким образом, машина §bMV§r с входом §d2A§r, подключенная к линии §7LV§r, никогда не примет более §964EU/t§r.
+tfg.quests.mv.voltage.desc18=Все еще возможно запускать машины §bMV§r на линиях §7LV§r, но только если рецепту достаточно §9мощность§r или если у вас есть батарея §3MV§r в гнезде для зарядки. Машина будет принимать §d1A§r только в режиме ожидания, поэтому §3батареи§r будет перезаряжаться только при §932EU/t§r.
+
+tfg.quests.mv.overclocking.title=Разгон
+tfg.quests.mv.overclocking.subtitle=§oТеперь вы можете задаться вопросом, почему каждая машина дублируется на всех уровнях? Потому что они могут понадобиться для разгона.§r
+tfg.quests.mv.overclocking.desc1=Разгон — это механика, которая происходит, когда вы пытаетесь запустить рецепт на машине, §dуровень которой выше, чем сам рецепт.§r
+tfg.quests.mv.overclocking.desc2=Каждый уровень выше уровня рецепта допускает один разгон. Каждый разгон подразумевает:
+tfg.quests.mv.overclocking.desc3=§9-§r 2x скорость выполнения рецепта
+tfg.quests.mv.overclocking.desc4=§9-§r 4-кратное энергопотребление
+tfg.quests.mv.overclocking.desc5=§9->§r Удвоение общей стоимости энергии
+tfg.quests.mv.overclocking.desc6=Как видите, есть как плюсы, так и минусы. Это игра балансировки решений: если вы хотите сократить продолжительность времени за счет большего потребления.
+tfg.quests.mv.overclocking.desc7=Вы и только вы можете ответить на этот вопрос.
+tfg.quests.mv.overclocking.desc8=§9Однако я вам скажу следующее:§r для автоматической настройки разгонять как можно меньше!
+tfg.quests.mv.overclocking.desc9=У машин есть кнопка для установки максимального уровня напряжения, до которого они будут разгоняться. Нажмите на него, чтобы просмотреть все доступные напряжения, и установите его на §dX§r, чтобы отключить разгон.
+
+tfg.quests.mv.advextruder.title=Улучшенный экструдер
+tfg.quests.mv.advextruder.subtitle=§oЯ надеюсь, что вы никогда не делали экструдер LV, потому что на самом деле полезен только экструдер MV. Если вы это сделали, я предлагаю вам переработать его в дуговой печи.§r
+tfg.quests.mv.advextruder.desc1=Экструдер формирует твердые материалы (почти!) в любую форму, используя §aслитки§r. Это отличный способ уменьшить количество микрокрафтов, а также сохранить высокий коэффициент конверсии.
+tfg.quests.mv.advextruder.desc2=Экструдер может производить §6болты§r, §6§6маленькие шестеренки§r, §6шестерни§r и §6§6кольца§r с максимальной эффективностью за один шаг!
+tfg.quests.mv.advextruder.desc3=Вы также можете использовать его для §dтрубы§r, §dдлинного стержня§r и §dротора§r.
+
+tfg.quests.mv.largecells.title=Большие ячейки
+tfg.quests.mv.largecells.subtitle=Алюминиевые ячейки, большое улучшение по сравнению со стальными ячейками или универсальными жидкостными ячейками.
+tfg.quests.mv.largecells.desc1=Они могут вместить любую жидкость, до §d32 ведер§r.
+
+tfg.quests.mv.advmixer.title=Улучшеный миксер
+tfg.quests.mv.advmixer.subtitle=§oБолее сложные сплавы требуют машин более высокого уровня для смешивания пылек вместе.§r
+tfg.quests.mv.advmixer.desc1=Это первый шаг к более глубокому погружению в эпоху MV.
+
+tfg.quests.mv.steelalloys.title=Стальные сплавы
+tfg.quests.mv.steelalloys.subtitle=§oСталь может образовывать множество сплавов... например, Синяя сталь, Красная сталь, Черная сталь... Забавные названия?§r
+tfg.quests.mv.steelalloys.desc1=Ванадиевая сталь требуется в небольших количествах для развития. Она §6почти в четыре раза прочнее§r по сравнению с инструментами из стали для инструментов GregTech.. Ванадий происходит из §aванадиевого магнетита§r, который вы, вероятно, встречали в магнетитовых жилах.
+
+tfg.quests.mv.advcutting.title=Улучшеная резочная машина
+tfg.quests.mv.advcutting.subtitle=§oБольше обновлений...! §р
+tfg.quests.mv.advcutting.desc1=§bMV§ §3резочная машина§r необходима для резки §7кремниевых монокристалов§r, чтобы подготовить их к §aлазерной гравировке§r.
+tfg.quests.mv.advcutting.desc2=Я рекомендую вам запускать эту машину со §dсмазкой§r, чтобы сократить время обработки.
+tfg.quests.mv.advcutting.desc3=Смазка может быть §3сварена§r из масла и §aталька§r, §2мыльного камня§r или §cредстоуна§r.
+
+tfg.quests.mv.ULV.title=Лучшие схемы ULV
+tfg.quests.mv.ULV.subtitle=Вы можете выгравировать §9простые системы на чипе (SoC)§r, чтобы сделать самые дешевые схемы §8ULV§r.
+tfg.quests.mv.ULV.desc1=§8ULV§r схемы используются в некоторых рецептах AE2, таких как §aЯдро Аннигиляции§r и §aЯдро Формирования§r.
+
+tfg.quests.mv.LV.title=Больше LV микросхем
+tfg.quests.mv.LV.subtitle=Вы открыли новый уровень схем!
+tfg.quests.mv.LV.desc1=Интегральная логическая схема — это альтернативная схема §aLV§r, которую можно улучшить до §aMV§r, а затем до §aHV§r.
+tfg.quests.mv.LV.desc2=§9Примечание:§r Это не строгое повышение стоимости схем, для этого вам нужно будет перейти на следующий уровень, просто немного ниже в эпоху MV. Зачем тогда вам нужен этот тип схемы? Он нужен для доступа к §6HV микросхемам§r.
+
+tfg.quests.mv.laserengraving.title=Лазерная гравировка
+tfg.quests.mv.laserengraving.subtitle=§aЛазерный гравер§r гравирует узоры на §9кремниевых пластинах§r в зависимости от типа §9линзы§r, который ему дали. После того, как пластины выгравированы, их необходимо пропустить через §9машину для резки§r, чтобы превратить их в компоненты, готовые к использованию в схемах. Граверы более высокого уровня могут гравировать более сложные пластины для более эффективных схем.
+tfg.quests.mv.laserengraving.desc1=На данный момент интерес представляет §aинтегрированная схема§r, но другие станут важными для микросхем более высокого уровня.
+
+tfg.quests.mv.siliconlottery.title=Силиконовая лотерея
+tfg.quests.mv.siliconlottery.subtitle=§oШучу, кремниевые пластины в этом моде совершенно взаимозаменяемы.§r
+tfg.quests.mv.siliconlottery.desc1=§9Кремниевые монокристаллы§r производятся в §3EBF§r с большим количеством §aкремниевой пыли§r и небольшим количеством §aарсенида галлия§r.
+tfg.quests.mv.siliconlottery.desc2=После изготовления кристалла, разрежьте его на §3резочной машине§r, чтобы получить 16 кремниевых пластин, готовых к гравировке.
+tfg.quests.mv.siliconlottery.desc3=На данный момент лучшим источником §aкремния§r будет либо §dстеклянная пыль§r, либо §dсодалит§r.
+tfg.quests.mv.siliconlottery.desc4=§cВнимание:§r Изготовление одной кремниевой були занимает 7,5 минут по цене 120 EU/t за тонну, или 1 080 000 EU! Если EBF отключится на полпути, рецепт начнет §cоткатывать прогресс§r. Перед запуском убедитесь, что у вас достаточно энергии.
+
+tfg.quests.mv.MV.title=Больше схем MV
+tfg.quests.mv.MV.subtitle=Микросхемы MV для интегрированного уровня.
+
+tfg.quests.mv.HV.title=Первые HV микросхемы!
+tfg.quests.mv.HV.subtitle=§oХорошо, технически микросхема HV и нержавеющая сталь означают, что вы можете перейти на HV... но не будем торопить события.§r
+tfg.quests.mv.HV.desc1=Первое, что вам, вероятно, следует сделать, это §3улучшеный сборщик схем§r, чтобы сразу разблокировать новый уровень цепей, поскольку они являются §dреальным выйгрышем§r.
+
+tfg.quests.mv.stainless.title=Нержавеющая сталь
+tfg.quests.mv.stainless.subtitle=Нержавеющая сталь — это почти любая сталь, с которой вы можете столкнуться в повседневной жизни. Она чрезвычайно устойчива к коррозии.§r§r
+tfg.quests.mv.stainless.desc1=Нержавеющая сталь — это материал для компонентов §6HV§r, например, алюминий для §bMV§r и сталь для §7LV§r. Она также используется в §6дистиллационной башне§r.
+tfg.quests.mv.stainless.desc2=Для этого требуется §cхром§r, полученный в основном из §cрубина§r, и §2марганец§r, полученный из §2пиролюзита§r и другие в том же духе.
+tfg.quests.mv.stainless.desc3=Выплавка нержавеющей стали требует §dHV энергии§r, который, я очень сомневаюсь, у вас есть на данный момент. Масштабирование производства энергии имеет решающее значение!
+tfg.quests.mv.stainless.desc4=Я бы §9рекомендовал§r запустить второй EBF. Они могут делиться блоками, так что всего §a10 купроникелевых катушек§r вместо 16.
+tfg.quests.mv.stainless.desc5=Сделайте один EBF из MV, для алюминия и любых других рецептов требующих MV, и один работающий от HV с §32 MV энергетическими разьемами§r.
+
+tfg.quests.mv.upgradeEBF.title=Обновите свой EBF
+tfg.quests.mv.upgradeEBF.subtitle=§oБуфер батареи LV и два энерголюка LV не так удобны, давайте это исправим!§r
+tfg.quests.mv.upgradeEBF.desc1=Обновите свою электрическую доменную печь с помощью §3MV энергетических разьема§r, чтобы вы могли запускать ее от генераторов MV.
+
+tfg.quests.mv.RAM.title=Скачать оперативную память
+tfg.quests.mv.RAM.subtitle=§aОперативная память§r требуется для более продвинутых электронных компонентов.
+
+tfg.quests.mv.advcircuitassembler.title=Улучшеный сборщик схем
+tfg.quests.mv.advcircuitassembler.subtitle=§oМне нечего сказать по этим квестам... Надеюсь, вы уловили суть, и вам не нужно слишком много объяснений.§r
+tfg.quests.mv.advcircuitassembler.desc1=Как и на каждом уровне, §3сборщик схем§r является неотъемлемой частью прогрессии, чтобы включить новый уровень схем.
+tfg.quests.mv.advcircuitassembler.desc2=На этом этапе вы должны использовать §3экстрактор§r рядом с вашим сборщиком схем и отправить десятки стопок §aслитков паяльного сплава§r.
+
+tfg.quests.mv.bestMV.title=Лучшие микросхемы MV
+tfg.quests.mv.bestMV.subtitle=§6Лучшие микросхемы MV§r! Вы будете делать их до конца игры.
+tfg.quests.mv.bestMV.desc1=Со временем (в IV эре) они станут еще дешевле.
+
+tfg.quests.mv.tricorder.title=Трикодер
+tfg.quests.mv.tricorder.subtitle=§aПортативный сканер§r или §aТрикодер§r — это инструмент отладки GTCEu. Он показывает вам детали блока, детали энергетической сети, ее текущее состояние и содержимое, а также нагрузку на ваш процессор. Он также показывает содержимое жидких жил ниже бедрока для буровой установки.
+
+tfg.quests.mv.bestLV.title=Лучшие микросхемы LV
+tfg.quests.mv.bestLV.subtitle=§6Лучшие микросхемы LV§r! Вы будете делать их до конца игры.
+tfg.quests.mv.bestLV.desc1=В конце концов (в EV эру) они станут еще дешевле.
+
+tfg.quests.mv.inductors.title=Индукторы
+tfg.quests.mv.inductors.subtitle=Компонент микросхем, который теперь можно изготовить благодаря §3MV сборщику§r.
+tfg.quests.mv.inductors.desc1=Если вы хотите сделать их дешевле, вы можете выплавить §aНикель-цинковый феррит§r.
+
+tfg.quests.mv.capacitors.title=Конденсаторы
+tfg.quests.mv.capacitors.subtitle=Компонент цепи, который теперь можно изготовить благодаря §3MV сборщику§r.
+
+tfg.quests.mv.transistors.title=Транзисторы
+tfg.quests.mv.transistors.subtitle=Компонент микросхем, который теперь можно изготовить благодаря §3MV сборщику§r.
+
+tfg.quests.mv.advassembling.title=Улучшеная сборочная машина
+tfg.quests.mv.advassembling.subtitle=§3Сборочная машина§r является основной машиной для каждого уровня, важной целью, позволяющей разблокировать больше рецептов и продвигаться дальше по эрам.
+
+tfg.quests.mv.pyrolyseoven.title=Пиролизная печь
+tfg.quests.mv.pyrolyseoven.subtitle=§oПиролизная печь перерабатывает органические продукты путем термического разложения в инертной среде.§r
+tfg.quests.mv.pyrolyseoven.desc1=§3Пиролизная печь§r является электрическим эквивалентом §3коксовой печи§r. Она может производить §9угольный кокс§r и §9древесный уголь§r с побочным продуктом §9креозот§r, как и раньше, но также имеет дополнительные §6органические побочные продукты§r. Наиболее полезным из них является §aдревесная смола§r.
+tfg.quests.mv.pyrolyseoven.desc2=Еще один продукт — §aбиомасса§r, который больше подходит для прогресса §oпрямо сейчас§r.
+tfg.quests.mv.pyrolyseoven.desc3=Эти побочные продукты могут быть переработаны для получения множества органических ресурсов, при этом разные побочные продукты дают разные соотношения различных химикатов.
+tfg.quests.mv.pyrolyseoven.desc4=Вам нужно будет прочитать квест §9Дистилляция§r, чтобы, надеюсь, понять весь масштаб..
+tfg.quests.mv.pyrolyseoven.desc5=Есть рецепты, которые могут принимать §bазот§r для удвоения скорости. Это не совсем стоит того, сейчас.
+tfg.quests.mv.pyrolyseoven.desc6=У вас будет достаточно одного §3LV энергетического разьема§r и сверхпроводников, чтобы обеспечить стабильные §d64 EU/t§r.
+tfg.quests.mv.pyrolyseoven.desc7=§3Купроникелевые катушки§r более чем достаточны для начала, но со временем вы можете обновить их.
+tfg.quests.mv.pyrolyseoven.desc8=§9§lПримечание:§r§l Путь растений — это один из путей к §9§lэтилену§r§l. Другой путь связан с нефтью.§r§r
+tfg.quests.mv.pyrolyseoven.desc9=Пиролизная печь остается §dнеобязательной§r. Но это здорово иметь либо для питания, либо для различных побочных продуктов.
+
+tfg.quests.mv.fluiddrillingrigs.title=Буровая установка для жидкости
+tfg.quests.mv.fluiddrillingrigs.subtitle=§oНаконец-то буровые установки для жидкости в GTCEu!§r
+tfg.quests.mv.fluiddrillingrigs.desc1=Запустить §3буровую установку для жидкости§r – это довольно дорогое вложение, но это, безусловно, самый известный §6источник нефти§r.
+tfg.quests.mv.fluiddrillingrigs.desc2=Выкачивает жидкости из-под коренных пород. Обратите внимание, что жидкостей на самом деле нет, вместо этого они смоделированы.
+tfg.quests.mv.fluiddrillingrigs.desc3=Жидкие жилы хранятся в областях размером §48x8 чанков§r. Каждая жила имеет свою жидкость, но в основном это масла.
+tfg.quests.mv.fluiddrillingrigs.desc4=Вы не можете проводить разведку жидких жил §oпока§r, это придет в эпоху §6HV§r.
+tfg.quests.mv.fluiddrillingrigs.desc5=Каждая жила генерирует различную базовую добычу. Обычно это от §d150L§r до §d300L в секунду§r.
+tfg.quests.mv.fluiddrillingrigs.desc6=При осушении жидкие вены будут медленно истощаться. Это приведет к тому, что выход жидкости со временем будет уменьшаться, пока он не достигнет выхода при истощении. В этот момент вы должны переместить буровую установку в другое место.
+tfg.quests.mv.fluiddrillingrigs.desc7=§3Базовая буровая установка для жидкости§r выдержит 100 000 операций (с 1 секундой на операцию) до полного истощения. Этого достаточно для §6для более 10 000 § ведер нефти. Буровые установки более высокого уровня значительно увеличат урожайность, а также снизят скорость истощения.
+tfg.quests.mv.fluiddrillingrigs.desc8=Что вы можете найти на §2Земле§r:
+tfg.quests.mv.fluiddrillingrigs.desc9=§9Нефть:§r богата §aлегким топливом§r, наиболее ценный вариант.
+tfg.quests.mv.fluiddrillingrigs.desc10=§9Легкая нефть:§r богата §aнефтяным газом§r, пригодный для использования в качестве источника энергии.
+tfg.quests.mv.fluiddrillingrigs.desc11=§9Тяжелая нефть:§r богата §aтяжелым топливом§r, у которого более узкое применение.
+tfg.quests.mv.fluiddrillingrigs.desc12=§9Неочищеная нефть:§r менее плотная версия §aнефти§r, наименее ценимая.
+tfg.quests.mv.fluiddrillingrigs.desc13=§9Природный газ:§r дает §aнефтяной газ§r без необходимости дистилляции.
+tfg.quests.mv.fluiddrillingrigs.desc14=§l§9Соленая вода:§r дает §aНатрий§r и §aХлор§r, которые пригодятся позже.
+tfg.quests.mv.fluiddrillingrigs.desc15=§9Лава:§r вы знаете, что это такое.
+tfg.quests.mv.fluiddrillingrigs.desc16=Для начала вам, возможно, придется строить случайным образом, пока вы не найдете то, что вам нравится. Все, что вы выкачаете, может быть использовано для заправки вашей буровая установка.
+
+tfg.quests.mv.church.title=Церковь натуральных газов
+tfg.quests.mv.church.subtitle=§oLPG (жидкий нефтяной газ) — это смесь углеводородов, обычно используемая в отопительных приборах.§r
+tfg.quests.mv.church.desc1=§aНефтяной газ§r, §aСжиженый углеводородный газ§r и §aМетан§r — это §9газовое топливо§r.
+tfg.quests.mv.church.desc2=Нефтяной газ получают либо из §dприродного газа§r, либо из §dлегкой нефти§r, последний дает больше, но требует стадии дистилляции.
+tfg.quests.mv.church.desc3=Этап §3центрифуги§r для разделения на §acжиженый углеводородный газ§r и §avетан§r следует выполнять всегда, так как он абсолютно бесплатный.
+tfg.quests.mv.church.desc4=§a§aСжиженый углеводородный газ§r и §aметан§r сжигаются в §3газовой турбине§r. Среди других вариантов топлива их проще добыть, что делает их отличными для начала.
+tfg.quests.mv.church.desc5=§aМетан§r также можно получить из нескольких §aприродных источников§r. Между нами говоря, это мемы, но вы можете исследовать их, если хотите. В конечном счете, источник энергии — ваш выбор.
+
+tfg.quests.mv.americasimulator.title=Симулятор Америки
+tfg.quests.mv.americasimulator.subtitle=Под землей есть частые жилы нефтеносных песков. Вы можете §электролизеровать Пыль, чтобы получить §aнефть§r.
+tfg.quests.mv.americasimulator.desc1=§9Примечание:§r Этот квест является отправной точкой для достижения §9полиэтилена§r, важной цели MV эры.
+tfg.quests.mv.americasimulator.desc2=Этот путь является §dнеобязательным§r. По сути, у вас есть два варианта перехода к §9полиэтилен§r: §aбиомасса§r или §aнефть§r.
+
+tfg.quests.mv.USsimulator.title=Симулятор США
+tfg.quests.mv.USsimulator.subtitle=§Вы видели, как извергается нефть, когда бродите вокруг, или добываете нефть в залежи нефти?§,
+tfg.quests.mv.USsimulator.desc1=Возьмите насос, поместите его над нефтью и включите его!§r Не §cиспользуйте§r насос над океаном при выкачивании нефти, так как в настоящее время есть ошибка в логике насоса, и он будет пытаться тянуть воду, что приводит к засору насоса.
+tfg.quests.mv.USsimulator.desc2=Я рекомендую вам включить §3буфер батареи§r и много §3бочек§r. Супертанк был бы лучше, но он еще не совсем доступен!
+tfg.quests.mv.USsimulator.desc3=Не забудьте §dзагрузить чанки§r с помощью FTB:Utilities (загрузите чанк, щелкнув левой кнопкой мыши, и включите принудительную загрузку, нажав Shift-лкм).
+tfg.quests.mv.USsimulator.desc4=§9Примечание:§r Этот квест — отправная точка к §9полиэтилену§r, важной цели MV эры.
+tfg.quests.mv.USsimulator.desc5=Этот путь является §dнеобязательным§r. По сути, у вас есть два варианта перехода к §9Полиэтилен§r: §aбиомасса§r или §aнефть§r.
+
+tfg.quests.mv.biomass.title=Биомасса
+tfg.quests.mv.biomass.subtitle=§oПревращать растительную материю в топливо? Звучит недостаточно индустриально!§r
+tfg.quests.mv.biomass.desc1=Для этого пути вам понадобится §9растения§r.
+tfg.quests.mv.biomass.desc2=§aСаженцы§r хорошо работают в §3Пивоварня§r и дают приличный урожай, но медленно.
+tfg.quests.mv.biomass.desc3=Иначе§rr, вы можете перейти из §dРастительного шара§r в маршрут §dБио мякины§r, а затем превратить его в биомассу либо в §3Пивоварне§r, либо в §3Пиролизной печи§r , причем последний более эффективен.
+tfg.quests.mv.biomass.desc4=§9Примечание:§r От этапа мацерации§r до §3HV Macerator§r можно получить только одну биопленку.
+
+tfg.quests.mv.ethanol.title=Этанол
+tfg.quests.mv.ethanol.subtitle=§oЭй! Это алкоголь!§r
+tfg.quests.mv.ethanol.desc1=Поместите полученную ранее §aбиомассe§r в §3MV дистилятор§r, чтобы получить §aэтанол§r.
+tfg.quests.mv.ethanol.desc2=Это вам понадобится для получения §dэтилена§r путем реакции с §aсерной кислотой§r в §3химическом реакторе§r... если только вы не выбрали путь с нефтью.
+tfg.quests.mv.ethanol.desc3=Не пытайтесь использовать этанол в качестве источника энергии... Вы можете пожалеть об этом.
+tfg.quests.mv.ethanol.desc4=Если вам нужна §9Энергия§r на растительной основе, я предлагаю вместо нее §dБензол§r!
+
+tfg.quests.mv.multiple.title=Многоканальные трубы
+tfg.quests.mv.multiple.subtitle=Обычные трубы для жидкости §o§dGregTech§r могут транспортировать только один тип жидкости за раз. 
+tfg.quests.mv.multiple.desc1=§3Четверные трубопроводы для жидкости§r могут передавать четыре различных типа жидкостей. §3Девятерные жидкостные трубы§r могут передавать девять разных типов! Полезно для компактных установок.
+tfg.quests.mv.multiple.desc2=§3Девятерные трубы для жидкости§r будут полезны в §5EV§r эре для обработки множества выходных данных §3дистилляционная башни§r.
+tfg.quests.mv.multiple.desc3=Получите §eлюбую§r, чтобы закончить этот квест.
+
+tfg.quests.mv.believe2.title=I believe I can fly 2
+tfg.quests.mv.believe2.subtitle=Этот реактивный ранец позволяет летать и требует энергии. §oЧто вы имеете в виду, что реактивный ранец должен работать на топливе?§r
+tfg.quests.mv.believe2.desc1=Зарядите его, как если бы вы заряжали аккумулятор.
+tfg.quests.mv.believe2.desc2=Нажмите §4H§r (по умолчанию), чтобы включить режим парения.
+
+tfg.quests.mv.sulfuricacid.title=Серная кислота
+tfg.quests.mv.sulfuricacid.subtitle=§oJEI, вероятно, ошеломит вас из-за этого, поэтому я представляю вам лучший путь получения Серной кислоты здесь.§r
+tfg.quests.mv.sulfuricacid.desc1=Создание §eсерной кислоты§r состоит из трех этапов. Он используется во многих важных реакциях, поэтому в ближайшее время вы должны автоматизировать его производство.
+tfg.quests.mv.sulfuricacid.desc2=Для автоматизации вам понадобятся §3три химических реактора LV§r. Я бы порекомендовал построить где-нибудь изолированный узел с §3одним генератор низкого напряжения§r для питания всех трех машин. А потом спагетить трубы для ввода и вывода (... или просто использовать AE2).
+tfg.quests.mv.sulfuricacid.desc3=§9-§r Шаг 1: Проведите реакцию §aсеры§r с §bкислорода§r, чтобы получить §aдиоксид серы§r.
+tfg.quests.mv.sulfuricacid.desc4=§9-§r Шаг 2: Проведите реакцию §aдвуокиси серы§r с большим количеством §bкислорода§r, чтобы получить §aтриоксид серы§r.
+tfg.quests.mv.sulfuricacid.desc5=§9-§r Шаг 3: Проведите реакцию §aтриоксида серы§r с §bводой§r, чтобы получить §eсерную кислота§r.
+tfg.quests.mv.sulfuricacid.desc6=Почему я не представляю эти шаги в задачах поиска...? Таким образом, вам не нужно обязательно отправлять каждый из них, это было бы слишком утомительно, если бы каждый квест был таким!
+
+tfg.quests.mv.brewery.title=Местная пивоварня, продающая выпивку
+tfg.quests.mv.brewery.subtitle=Пивоварню можно использовать для изготовления §aсмазки§r из §aкрасного камня§r и §aкреозота§r/§aнефти§r.
+tfg.quests.mv.brewery.desc1=Смазка используется здесь и там, но в основном она предназначена для §3резочной машины§r. Что значительно сокращает продолжительность рецептов.
+tfg.quests.mv.brewery.desc2=§9Примечание:§r Этот квест — отправная точка к §9полиэтилену§r, важной цели MV эры.
+tfg.quests.mv.brewery.desc3=Пивоварня производит §aбиомассу§r, путь, который является §dнеобязательным§r. По сути, у вас есть два варианта перехода к §9полиэтилену§r: §aбиомасса§r или §aнефть§r.
+
+tfg.quests.mv.benzene.title=Церковь бензола
+tfg.quests.mv.benzene.subtitle=§oБензол вызывает лейкемию даже в низких концентрациях.§r
+tfg.quests.mv.benzene.desc1=§aБензол§r также является §9газовым топливом§r. Я представлю вам только два лучших способа его получения.
+tfg.quests.mv.benzene.desc2=Этот вариант получения, как правило, на основе §dдревесины§r. Положите поленья в печь §3пиролиза§r для §9древесной смолы§r и древесный уголь, который вы получили в §3экстракторах§r, для получения большего количества §9древесной смолы §r, которую вы §3дистилируете§r для §aбензола§r.
+tfg.quests.mv.benzene.desc4=Еще один вариант получения также может быть основана на §dтяжелой нефти§r. Поместите тяжелую нефть в §3дистилятор§r для получения §9тяжелого топлива§r, которое вы переработаете §3крекингом§r и §3дистилируете§r снова для получения §aбензол§r.
+tfg.quests.mv.benzene.desc5=Для получения информации о том, как перерабатывать нефть, проверьте задания на легкое топливо.
+tfg.quests.mv.benzene.desc6=Для того, чтобы получить максимальное положительное значение мощности, §4разгоняйте как можно меньше§r. Вместо этого используйте больше машин.
+tfg.quests.mv.benzene.desc7=§aБензол§r сжигается в §3Газовой турбине§r. Этот источник энергии изначально слабее, чем его двоюродный брат §eDiesel§r, но получает значительный прирост мощности при очистке до §6Nitrobenzene§r в §6HV§r Age. В конечном счете, источник энергии — ваш выбор.
+
+tfg.quests.mv.diesel.title=Церковь дизеля
+tfg.quests.mv.diesel.subtitle=§oЯ боялся подробно объяснять, как сделать дизельное топливо, но, к счастью, вы уже сделали легкое топливо... уф.§r
+tfg.quests.mv.diesel.desc1=§aДизель§r — это §9топливо для внутреннего сгорания§r. Он основан на §dнефти§r.
+tfg.quests.mv.diesel.desc2=Для смешивания §aлегкого топлива§r и §aтяжелого топлива§r правильное соотношение для §3смесителя§r составляет §65:1§r
+tfg.quests.mv.diesel.desc3=5 легкого топлива.
+tfg.quests.mv.diesel.desc4=1 тяжелого топлива.
+tfg.quests.mv.diesel.desc5=Вы можете сократить количество §dнефти§r §6решительно§r, используя §dтяжелую нефть§r специально для §aтяжелого топлива§r.
+tfg.quests.mv.diesel.desc6=(Для любителей математики вы переходите с 8,33 нефти -> 6 дизеля на 5 нефти + 0,4 тяжелой нефти -> 6 дизеля)
+tfg.quests.mv.diesel.desc7=§cПримечание. §cНе пытайтесь§r заливать нефть в §3Дистилляционную башню§r, думая, что это хорошая идея, поскольку она дает как легкое, так и тяжелое топливо. Это требует большого разгона, и вы потеряете больше энергии, чем стоит побочный продукт.
+tfg.quests.mv.diesel.desc8=Для того, чтобы получить максимальное положительное значение мощности, §4Разгоняйте как можно меньше§r. Вместо этого используйте больше машин.
+tfg.quests.mv.diesel.desc9=§aДизель§r сжигается в §3Генераторе внутреннего сгорания§r. В дальнейшем его можно улучшить до §6нитродизеля§r в эре §6HV§r. По сравнению с другими источниками питания, он, как правило, более эффективен, но более требователен. Если вы выберете путь §eнефти§r для §aполиэтилен§r, это может отлично сработать с существующей инфраструктурой. В конечном счете, источник энергии — ваш выбор.
+
+tfg.quests.mv.distillation.title=Дистилляция
+tfg.quests.mv.distillation.desc1=Прежде чем мы начнем, вот что нужно учесть:
+tfg.quests.mv.distillation.desc2=Для пути §aнефти§r вам понадобится дистилятор §3LV§r.
+tfg.quests.mv.distillation.desc3=С путем §aбиомасса§r вам понадобится §3MV дистилятор§r.
+tfg.quests.mv.distillation.desc4=Получите §eлюбой§r, чтобы выполнить этот квест.
+tfg.quests.mv.distillation.desc5=А теперь давайте обсудим сложную тему: §9Дистилляция§r. Это руководство поможет вам понять, как и почему рецепты §aJEI§r такие, какие они есть, так что оставайтесь со мной!
+tfg.quests.mv.distillation.desc6=Почти все рецепты §3дистилятора§r являются копиями рецептов §3дистиляционной башни§r, за исключением того, что они имеют только один выход жидкости и аннулируют все остальное.
+tfg.quests.mv.distillation.desc7=Другими словами, вы можете утверждать, что §3дистилятор§r является §3лучше§r §3дистиллационной башней§r.
+tfg.quests.mv.distillation.desc8=Это не означает, что §3дистиляторы§r всегда хуже. Он разблокирован раньше. Это §dменьше§r, §dдешевле§r и §dболее энергоэффективно§r по рецепту.
+tfg.quests.mv.distillation.desc9=Во многих случаях вы даже не будете возражать против потери других жидкостей.
+tfg.quests.mv.distillation.desc10=§3Дистиляторы§r являются важным компонентом для производства электроэнергии, независимо от того, выберете ли вы §aдизель§r или §aбензол§r.
+tfg.quests.mv.distillation.desc11=Вам понадобится много из них и как можно более низкий уровень, чтобы избежать потерь энергии при разгоне.
+
+tfg.quests.mv.lightfuel.title=Легкое топливо
+tfg.quests.mv.lightfuel.subtitle=§oЕсли вы читали предыдущий квест, это должно быть не так уж плохо. Если нет... Чего ты ждешь!?§r
+tfg.quests.mv.lightfuel.desc1=Дистилляция §aнефти§r даст вам топливо, которое вам понадобится для десульфурации.
+tfg.quests.mv.lightfuel.desc2=§aСероводород§r идеально §dперерабатывается§r в §3электролизере§r.
+tfg.quests.mv.lightfuel.desc3=Если вы автоматизируете этот процесс, просто поместите химический реактор и электролизер рядом друг с другом.
+tfg.quests.mv.lightfuel.desc4=§aЛегкое топливо§r — хороший вариант §9топлива§r. Но есть что-то еще большее в соседнем квесте.
+
+tfg.quests.mv.fuelcracking.title=Расщепление топлива
+tfg.quests.mv.fuelcracking.subtitle=§oКрекинг топлива и нефти может быть сложным. Но не будем слишком заморачиваться по этому поводу. В основном это делается для добычи углеводородов.§r
+tfg.quests.mv.fuelcracking.desc1=Есть много способов получить §dэтилен§r при переработке нефти.
+tfg.quests.mv.fuelcracking.desc2=Лучший способ — это паровой крекинг §aлегкого топлива§r в §3химическом реакторе§r. Обязательно сделайте версию §aSeverely Steam-Cracked§r для более высокого выхода этилена. Попав в HV эру, у вас будет возможность выполнить этот рецепт в §3Крекинг-блок§r.
+tfg.quests.mv.fuelcracking.desc3=Дразнящий процесс §9дистиляционной башня§r для нефтепродуктов, к сожалению, пока недоступен! Вам придется использовать §3дистилятор§r, чтобы получить §dэтилен§r.
+
+tfg.quests.mv.believe.title=I believe I can fly
+tfg.quests.mv.believe.subtitle=Для этого реактивного ранца требуется больше всего §aТоплива для горения§r, чтобы обеспечить примитивную форму полета.
+tfg.quests.mv.believe.desc1=Заполните его, как если бы вы заполняли Барабан.
+tfg.quests.mv.believe.desc2=Нажмите §4H§r (по умолчанию), чтобы включить режим наведения
+
+tfg.quests.mv.polyэтилен.title=Полиэтилен
+tfg.quests.mv.polyэтилен.subtitle=§oВаш первый полимер! Или, если вы хотите быть менее причудливым, просто назовите это пластиком, но сначала спрячьтесь за угол.§r
+tfg.quests.mv.polyэтилен.desc1=Для процесса полимеризации добавьте §aкислород§r. Это лучше, чем воздух.
+tfg.quests.mv.polyэтилен.desc2=Затем затвердите, как с резиной.
+tfg.quests.mv.polyэтилен.desc3=§aПолиэтилен (PE)§r — это ключ, открывающий §6многие новые вещи§r. Чаще всего он используется в форме §dпластин§r или §dжидкости§r.
+tfg.quests.mv.polyэтилен.desc4=Здесь нет спойлеров! Давайте разберемся, что он делает со всеми следующими квестами, один за другим.
+
+tfg.quests.mv.polyvinylchloride.title=Поливинилхлорид
+tfg.quests.mv.polyvinylchloride.subtitle=§oХорошо, вы уже сделали полимер, как насчет того, чтобы сделать еще один?§r
+tfg.quests.mv.polyvinylchloride.desc1=§aПоливинилхлорид (ПВХ)§r — третий по объемам производства пластик в реальной жизни. Здесь его можно использовать вместо полиэтилена при производстве §aпластиковых печатных плат§r и других изделий для увеличения выхода продукции.
+tfg.quests.mv.polyvinylchloride.desc2=Трубы из ПВХ также имеют §6самую высокую пропускную способность§r, доступную на некоторое время, если это необходимо вашим установкам.
+tfg.quests.mv.polyvinylchloride.desc3=§9Подсказка:§r жидкая форма ПВХ никогда не используется в основе GTCEu, так что не стесняйтесь затвердить их в виде листов.
+
+tfg.quests.mv.pattern.title=Шаблон
+tfg.quests.mv.pattern.subtitle=§oНаконец-то автокрафт!§r
+tfg.quests.mv.pattern.desc1=§aШаблоны§r используются для автокрафта AE2. Использование §aполивинилхлорид§r увеличивает выход в §64 раза§r, а использование пластмасс более высокого уровня обеспечивает более высокий выход.
+tfg.quests.mv.pattern.desc2=§3Молекулярные ассемблеры§r недоступен еще некоторое время, но вы все еще можете автоматизировать машины с помощью §9ME-интерфейсов§r.
+
+tfg.quests.mv.supertank.title=Супер танк
+tfg.quests.mv.supertank.subtitle=§oСупертанки — это OP!! Нет, но серьезно.§r
+tfg.quests.mv.supertank.desc1=Это идеальное портативное решение для хранения жидкости. §64 000 ведер для хранения§r в одном блоке! Как и бочки, супертанки сохраняют свои жидкости, когда они сломаны, и их можно очистить в сетке крафта.
+tfg.quests.mv.supertank.desc2=Для §9ещё большего§r хранилища используйте супер танки более высокого уровня или ячейки для хранения жидкости AE2.
+
+tfg.quests.mv.plasticboards.title=Пластиковые подложки
+tfg.quests.mv.plasticboards.subtitle=На данный момент у вас есть все доступные инструменты для изготовления пластиковых подложек.
+tfg.quests.mv.plasticboards.desc1=Рецепты довольно длинные, поэтому я рекомендую обрабатывать большие партии в двух специальных §3химических реакторах§r.
+
+tfg.quests.mv.hca.subtitle=§oМы можем гарантировать, что прямо сейчас у вас с собой образец! Он находится в вашем желудке как часть желудочного сока.§r
+tfg.quests.mv.hca.desc1=Получите §9соляную кислоту§r, смешав §aводород§r и §aхлор§r.
+tfg.quests.mv.hca.desc2=Эта кислота также получена из отходов множества реакций с участием §aхлора§r. В зависимости от ваших настроек вам, возможно, никогда не понадобится создавать его напрямую.
+
+tfg.quests.mv.persulfate.title=Персульфат натрия / Хлорид железа III
+tfg.quests.mv.persulfate.subtitle=§oЭти кислоты используются для травления меди с печатных плат... или что-то в этом роде.§r
+tfg.quests.mv.persulfate.desc1=§aПерсульфат натрия§r можно использовать в §9Обработка руд§r в §3Химической ванне§r, чтобы получить различные бонусы, которые вы обычно не получаете. Это совершенно необязательно, но довольно полезно.
+tfg.quests.mv.persulfate.desc2=Но настоящая тема этого квеста здесь:
+tfg.quests.mv.persulfate.desc3=§aПерсульфат натрия§r и §aХлорид железа III§r используются для изготовления более дешевых §9Хороших печатных плат§r, так как они сокращают количество серебра в четыре раза.
+tfg.quests.mv.persulfate.desc4=Они также §dтребуются§r для изготовления §9Пластиковых печатных плат§r.
+tfg.quests.mv.persulfate.desc5=При изготовлении §aПерсульфата натрия§r в качестве побочного продукта будет получена §aСоляная кислота§r, которую можно повторно использовать для изготовления §aХлорида железа III§r. Это лучшая линия подхода прямо сейчас, но решение полностью за вами.
+tfg.quests.mv.persulfate.desc6=С большей автоматизацией позже в игре, Iron III Chloride будет более дешевым и прямым путем.
+
+tfg.quests.mv.smelter.title=Мультиплавильный завод
+tfg.quests.mv.smelter.subtitle=§o§3§oМультиплавильный завод§o§r§o может быть §6§самой мощной печью§r§o в модифицированном Minecraft.§r
+tfg.quests.mv.smelter.desc1=При минимальной мощности (купроникелевых катущках и низковольтное напряжение) он плавит 32 предмета всего за 12 секунд, что эквивалентно §926.7 печей§r или 3.3 паровых печки!
+tfg.quests.mv.smelter.desc2=Не говоря уже о том, что действуют стандартный §aразгоны§r.
+tfg.quests.mv.smelter.desc3=И, что более важно, более высокий уровень §3катушки§r увеличивает количество предметов, которые он может плавить в §dпараллель§r!
+
+##################################################################################################################################
+########################################################## HV Phase ##############################################################
+########################################################## e5a309e3   ############################################################
+##################################################################################################################################
+
+tfg.quests.hv.era.title=§cЭра 5 §4-§4 §6Электричество HV
+
+##################################################################################################################################
+########################################################## AE2 Phase #############################################################
+########################################################## 4db94453   ############################################################
+##################################################################################################################################
+
+tfg.quests.ae2.era.title=§cЭра 5.5 §4-§4 §9Applied Energistics 2
+
+tfg.quests.ae2.certusquartz.subtitle=&aТо, без чего вы не начнете дальшее свое продвижение в моде Applied Enegistics 2.
+
+tfg.quests.ae2.fluxcrystal.subtitle=&aУх, ты, оно светится.
+
+tfg.quests.ae2.fluxseed.subtitle=&aСемечко, из которого можно вырастить кристалл, бросив его в воду. Не бойтесь он не пропадет.
+
+tfg.quests.ae2.formingpress.subtitle=&aПозволит вам, используя прессы, делать процессоры :)
+
+tfg.quests.ae2.mecontroller.subtitle=&aГлавный на этой вечеринке. Управляет и заведует всеми. Можно собрать в мультиблок, или оставить одиночным. Максимум 7х7х7.
+
+tfg.quests.ae2.mesecurity.subtitle=&aПозволит вам запретить вашим друзьям открывать и ломать МЕ систему.
+
+tfg.quests.ae2.fluxpipe.subtitle=&aГлавный провод мода, но лучше испоьзуйте другие кабели.
+
+tfg.quests.ae2.mestoragehousing.subtitle=&aКожух, в который вы засовываете ячейку и у вас получается предметная или жидкостная ячейка, которую уже можно использовать в ME хранилище.
+
+tfg.quests.ae2.itemcell.subtitle=&aЭта и последующие ячейки, относятся к типу предметных.
+
+tfg.quests.ae2.fluidcell.subtitle=&aЭта и последующие ячейки, относятся к типу жидкостных.
+
+tfg.quests.ae2.fluxcovered.subtitle=&aТот же кабель, только теперь он проводит 8 каналов, но вы их не увидите визуально.
+
+tfg.quests.ae2.fluxdensecovered.subtitle=&aТакой же, как и прошлый, только расширенный до 32 потоков.
+
+tfg.quests.ae2.fluxsmart.subtitle=&aТоже самое, что и прошлый кабель, только теперь визуально на кабеле вы сможете увидеть сколько используется каналов.
+
+tfg.quests.ae2.fluxdense.subtitle=&aНу вы знаете, теперь вы видите визуально загруженность кабеля.
+
+tfg.quests.ae2.mestorage.subtitle=&aШтука, куда нужно ложить ячейки хранения.
+
+tfg.quests.ae2.meterminal.subtitle=&aДаст вам доступ в вашу МЕ систему.
+
+tfg.quests.ae2.mecraftingterminal.subtitle=&aУлучшенная версия, теперь в ней можно крафтить предметы.
+
+tfg.quests.ae2.mepatternterminal.subtitle=&aТут можно создавать шаблоны автокрафта(лучше посмотрите гайд) :p.
+
+tfg.quests.ae2.mefluidterminal.subtitle=&aТерминал жидкостей, вы сможете увидеть какие жидкости содержит ваша МЕ система.
+
+tfg.quests.ae2.accespoint.subtitle=&aШтука, которую нужно подключить к МЕ системе, после вы подключаете к ней беспроводной терминал и ,вау, теперь у вас есть беспроводной терминал.
+
+tfg.quests.ae2.wirelessbooster.subtitle=&aЕсли положить в точку доступа, то увеличится ее диапазон, но и потребление энергии возрастет.
+
+tfg.quests.ae2.wirelessboostercard.subtitle=&aНужна для улучшенных беспроводных терминалов, если вы хотите пользоваться терминалом даже на других планетах.
+
+tfg.quests.ae2.magnetcard.subtitle=&aПри подбирании предметов, автоматом будет закидывать их в МЕ систему.
+
+tfg.quests.ae2.ultimateterminal.subtitle=&aТерминал в котором есть все?
+
+tfg.quests.ae2.molecular.subtitle=&aКрафтит предметы, которые вы зададите в нем, своеобразный автоверстак.
+
+tfg.quests.ae2.meinterfaceterminal.subtitle=&aОчень полезный терминал, с помощью него вы сможете получить доступ ко всем терминалам вашей МЕ системы.
+
+tfg.quests.ae2.craftingunits.subtitle=&aИменно эти процессоры обрабатывают ваш автокрафт и распределяют предметы по машинам.
+
+tfg.quests.ae2.craftingunit.subtitle=&aКожух для крафтовых процессоров.
+
+tfg.quests.ae2.craftingmonitor.subtitle=&aЕсли поставить на процессор, будет показывать какой предмет сейчас крафтится.
+
+tfg.quests.ae2.2p2tunnel.subtitle=&aДумаете я сам знаю, что эта хрень делает?
+
+tfg.quests.ae2.mattercondenser.subtitle=&aБлок, не использующий энергию, а использующий количетво ваших предметов, чтобы сжать их в сингулярность.
+
+tfg.quests.ae2.spatialport.subtitle=&aПозволит вам переносить целые участки и даже хранить их внутри этого диска. Когда-то я переносил к себе на завод эндовский портал. Да, так можно.
+
+tfg.quests.ae2.dvaVTretyey.subtitle=&aЯчейки для трехмерного хранения.
+
+tfg.quests.ae2.quantumring.subtitle=&aВенец технологий! КВАНТОВЫЙ МОСТ! Умеет передавать МЕ систему между мирами или планетами.
+
+##################################################################################################################################
+########################################################## EV Phase ##############################################################
+########################################################## 70d61cff   ############################################################
+##################################################################################################################################
+
+tfg.quests.ev.era.title=§cЭра 6 §4-§4 §5Электричество EV
+
+
+##################################################################################################################################
+########################################################## IV Phase ##############################################################
+########################################################## 24ffe56a   ############################################################
+##################################################################################################################################
+
+tfg.quests.iv.era.title=§cЭра 7 §4-§4 §1Электричество IV
+
+##################################################################################################################################
+########################################################## Space Phase ###########################################################
+########################################################### 34d1d182  ############################################################
+##################################################################################################################################
+
+tfg.quests.space.era.title=§cЭра 7.5 §4-§4 §0Космос
+
+tfg.quests.space.start.title=Илон Макс одобряет!
+tfg.quests.space.start.subtitle=&aТы готов стать Илоном Маском? Нет, да кому нужно твое мнение, давай делай ракету и лети добывать КУЧУ МЕТАЛЛОВ. Ну как же я мог забыть про исследование данжей, хотя кому я вру, все равно вы будете копать.
+
+tfg.quests.space.oxygencollector.subtitle=&aСобирает кислород вокруг вас.
+
+tfg.quests.space.lvl1solarpanel.subtitle=&aПозволит вам добыть первую энергию из солнца.
+
+tfg.quests.space.lvl2solarpanel.subtitle=&aУлучшенная версия прошлой.
+
+tfg.quests.space.lvl3solarpanel.subtitle=&aБлин, сколько их еще.
+
+tfg.quests.space.lvl4solarpanel.subtitle=&aВырабатывает дохринелион энергии, да и крафт не дешевый.
+
+tfg.quests.space.painter.title=Я у мамы художник
+tfg.quests.space.painter.subtitle=&aНадоели эти серые будни сделай их яркими и насыщеннымию.
+
+tfg.quests.space.bubledistributor.subtitle=&aВ купе с сборщиком кислорода, создает пузырь, в котором вы можете дышать не используя кислородное оборудование.
+
+tfg.quests.space.oxygensealer.subtitle=&aЕсли его подключить к сборщику кислорода и поставить его в закрытом помещении, то вы сможете в нем дышать без кислородного оборудования. Интересная задумка для баз на луне/марсе/других планетах.
+
+tfg.quests.space.compressor.subtitle=&aЗаливает в баки с кислородом, кислород, простите за тавтологию.
+
+tfg.quests.space.terraformer3000.subtitle=&aПо названию понятно, что он терраформирует место неподалеку от него. Звучит и выглядит прикольно. Можно стать Илоном Маском и терраформировать весь Марс. Ну а что, звучит как челлендж.
+
+tfg.quests.space.airlock.title=Создай удобный вход на свою базу
+tfg.quests.space.airlock.subtitle=&aЗато не будет сквозняков.
+
+tfg.quests.space.tier1Nspacesuit.title=Незаконченный скафандр 1-го уровня
+
+tfg.quests.space.tier2Nspacesuit.title=Незаконченный скафандр 2-го уровня
+
+tfg.quests.space.tier3Nspacesuit.title=Незаконченный скафандр 3-го уровня
+
+tfg.quests.space.tier4Nspacesuit.title=Незаконченный скафандр 4-го уровня
+
+tfg.quests.space.tier1spacesuit.title=Готовый скафандр 1-го уровня
+tfg.quests.space.tier1spacesuit.subtitle=&aУх, ты, блестит.
+
+tfg.quests.space.tier2spacesuit.title=Готовый скафандр 2-го уровня
+tfg.quests.space.tier2spacesuit.subtitle=&aSpace Engineers курят в сторонке.
+
+tfg.quests.space.tier3spacesuit.title=Готовый скафандр 3-го уровня
+tfg.quests.space.tier3spacesuit.subtitle=&aКиберпанк завидует тебе.
+
+tfg.quests.space.tier4spacesuit.title=Готовый скафандр 4-го уровня
+tfg.quests.space.tier4spacesuit.subtitle=&aЯ Просто Железный Человек.
+
+tfg.quests.space.tier1termalarmor.title=Теплостойкая броня 1-го уровня
+tfg.quests.space.tier1termalarmor.subtitle=&aБабушка сшила мне классный костюм.
+
+tfg.quests.space.tier2termalarmor.title=Теплостойкая броня 2-го уровня
+tfg.quests.space.tier2termalarmor.subtitle=&aВ этот раз мне мама сшила костюм.
+
+tfg.quests.space.tier3termalarmor.title=Теплостойкая броня 3-го уровня
+tfg.quests.space.tier3termalarmor.subtitle=&aЭм.. Это нормально, что он светится?
+
+tfg.quests.space.tier4termalarmor.title=Теплостойкая броня 4-го уровня
+tfg.quests.space.tier4termalarmor.subtitle=&aМне кажется я задыхаюсь.
+
+tfg.quests.space.tier5termalarmor.title=Теплостойкая броня 5-го уровня
+tfg.quests.space.tier5termalarmor.subtitle=&aПодштанники железного человека.
+
+tfg.quests.space.thingsforoxygen.title=Обородование для дыхания
+tfg.quests.space.thingsforoxygen.subtitle=&aКислородное обородование очень полезное в космосе, ведь там нет воздуха.
+
+tfg.quests.space.cosmicbed.title=Космическая лежанка
+tfg.quests.space.cosmicbed.subtitle=&aСпать сюда.
+
+tfg.quests.space.fuelloader.subtitle=&aПочему нельзя ведрами залить?
+
+tfg.quests.space.ethernetIlona.subtitle=&aАнтенна для приема сигнала со спутников Илона Маска.
+
+tfg.quests.space.decomb.subtitle=&aПутем страшных действий убирает с вас эффект радиации, который будет накапливаться в течении полетов и путешествий на планетах.
+
+tfg.quests.space.shield.subtitle=&aКрафт просто, п****ц сложный, но эта штука защищает вас от всего(давление, радиация и т.д.), да и ванильном галактике ее вообще нельзя скрафтить.
+
+tfg.quests.space.flag.subtitle=&aМаленький захватчик.
+
+tfg.quests.space.rocket1.subtitle=&aПервая ракета!
+tfg.quests.space.rocket2.subtitle=&aВторая ракета!
+tfg.quests.space.rocket3.subtitle=&aДай угадаю, она третья.
+tfg.quests.space.rocket4.subtitle=&aА вы уже были на астероидах?
+tfg.quests.space.rocket6.subtitle=&aВы близки..
+tfg.quests.space.rocket7.subtitle=&aВы думаете я вас не переиграю, я вас не уничтожу? Я вас уничтожу.
+
+tfg.quests.space.end1.title=конец?
+tfg.quests.space.end1.subtitle=&aЯ дажне не знаю кто, бог вы или маг, либо же сидите на стероидах, но с увереностью могу сказать, что вы заработали ачивку - Пройти TerraFirmaGreg, а также выкинуть пол жизни на свалку!
+
+##################################################################################################################################
+########################################################## LuV Phase #############################################################
+########################################################## 7eb5e4bc   ############################################################
+##################################################################################################################################
+
+tfg.quests.luv.era.title=§cЭра 8 §4-§4 §dЭлектричество LuV
+
+##################################################################################################################################
+########################################################## ZPM Phase #############################################################
+########################################################## 549a0daf   ############################################################
+##################################################################################################################################
+
+tfg.quests.zpm.era.title=§cЭра 9 §4-§4 §fЭлектричество ZPM
+
+##################################################################################################################################
+########################################################## UV Phase ##############################################################
+########################################################## 8de5462d   ############################################################
+##################################################################################################################################
+
+tfg.quests.uv.era.title=§cЭра 10 §4-§4 §3Электричество UV
+
+##################################################################################################################################
+########################################################## MT Phase ##############################################################
+########################################################## 75ea50b0 ##############################################################
+##################################################################################################################################
+
+tfg.quests.developmenttable.era.title=&cТаблица развития

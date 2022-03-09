@@ -1,10 +1,10 @@
 {
-	x: -11.0d,
-	y: 1.0d,
+	x: -14.0d,
+	y: -2.0d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.craftingstation.subtitle}",
 	dependencies: [
-		"d9827d71"
+		"8fdd423e"
 	],
 	tasks: [{
 		uid: "dd546826",

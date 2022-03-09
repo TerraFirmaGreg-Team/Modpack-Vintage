@@ -1,9 +1,13 @@
 {
-	x: -12.0d,
-	y: 2.0d,
+	title: "{tfg.quests.steam.mininghammer.title}",
+	x: -12.5d,
+	y: 3.0d,
 	description: "{tfg.quests.steam.mininghammer.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
-		"d9827d71"
+		"9ea61464"
 	],
 	tasks: [{
 		uid: "b57f2362",

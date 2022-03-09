@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.lv.aluminiumingot.title}",
-	x: 14.0d,
+	x: 15.0d,
 	y: 8.0d,
 	shape: "gear",
 	description: "{tfg.quests.lv.aluminiumingot.subtitle}",

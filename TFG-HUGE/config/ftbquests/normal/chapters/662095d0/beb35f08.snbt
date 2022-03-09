@@ -1,17 +1,16 @@
 {
-	title: "Silicon Lottery",
+	title: "{tfg.quests.mv.siliconlottery.title}",
 	icon: "gregtech:meta_item_1 1 361",
-	x: 10.0d,
-	y: -3.0d,
+	x: 13.5d,
+	y: -1.5d,
+	description: "{tfg.quests.mv.siliconlottery.subtitle}",
 	text: [
-		"§oJust kidding, Silicon Wafers in this mod are perfectly fungible.§r",
+		"{tfg.quests.mv.siliconlottery.desc1}",
+		"{tfg.quests.mv.siliconlottery.desc2}",
 		"",
-		"§9Silicon Boules§r are made in the §3EBF§r with lots of §aSilicon Dust§r and a small amount of §aGallium Arsenide§r.",
-		"After making the Boule, cut it in the §3Cutting Machine§r to get 16 Silicon Wafers ready for engraving.",
+		"{tfg.quests.mv.siliconlottery.desc3}",
 		"",
-		"The best §aSilicon§r source at this point shall be either §dGlass Dust§r, or §dSodalite§r.",
-		"",
-		"§cWarning:§r Each Silicon Boule takes 7.5 minutes to make at 120 EU/t, or 1,080,000 EU! If the EBF loses power midway, the recipe will start to §close progress§r. Be sure you have enough power before starting."
+		"{tfg.quests.mv.siliconlottery.desc4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

@@ -79,6 +79,16 @@ for item in AllSeeds {
 <ore:sheetAnyBronze>.add(<metaitem:plateBronze>, <metaitem:plateBlackBronze>, <metaitem:plateBismuthBronze>);
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
+// remove gemDiamond
+<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
+// remove gemLapis
+<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
+// remove gemEmerald
+<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
+// remove dustSalt
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+// remove dustSaltpeter
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
 
 // --- GregTech
 // Chipped Gems from GT
@@ -113,88 +123,84 @@ for item in ForestryPropolisArray {
 
 // --- Deleting OreDictionary
 // --- ProjectRed
-//Copper
+// Copper
 <ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
-//Tin
+// Tin
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
-//Silver
+// Silver
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
-//RedAlloy
+// RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
 // --- Forestry
-//Bronze
+// Bronze
 <ore:ingotBronze>.remove(<forestry:ingot_bronze>);
-//Tin
+// Tin
 <ore:ingotTin>.remove(<forestry:ingot_tin>);
-//Copper
+// Copper
 <ore:ingotCopper>.remove(<forestry:ingot_copper>);
-//Apatite
+// Apatite
 <ore:gemApatite>.remove(<forestry:apatite>);
-//Bronze Block
+// Bronze Block
 <ore:blockBronze>.remove(<forestry:resource_storage:3>);
-//Tin Block
+// Tin Block
 <ore:blockTin>.remove(<forestry:resource_storage:2>);
-//Copper Block
+// Copper Block
 <ore:blockCopper>.remove(<forestry:resource_storage:1>);
-//Apatite Block
+// Apatite Block
 <ore:blockApatite>.remove(<forestry:resource_storage>);
 
 // --- TFC-Florae
-//Stick
+// Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
 // --- AE2
-//Iron Dust
+// Iron Dust
 <ore:dustIron>.remove(<appliedenergistics2:material:49>);
 
 // --- Minecraft
-//Grass
+// Grass
 <ore:grass>.remove(<minecraft:grass>);
-//Sand
+// Sand
 <ore:sand>.remove(<minecraft:sand>);
-//Dirt
+// Dirt
 <ore:dirt>.remove(<minecraft:dirt>);
-//Stone
+// Stone
 <ore:stone>.remove(<minecraft:stone>);
-//Gravel
+// Gravel
 <ore:gravel>.remove(<minecraft:gravel>);
-//Cobblestone
+// Cobblestone
 <ore:cobblestone>.remove(<minecraft:cobblestone>);
-//Lapis
-<ore:dye>.remove(<minecraft:dye:4>);
-<ore:dyeBlue>.remove(<minecraft:dye:4>);
-<ore:gemLapis>.remove(<minecraft:dye:4>);
-//Stone coal
+// Stone coal
 <ore:oreCoal>.remove(<minecraft:coal_ore>);
-//Redstone
+// Redstone
 <ore:oreRedstone>.remove(<minecraft:redstone_ore>);
-//Diamond
+// Diamond
 <ore:oreDiamond>.remove(<minecraft:diamond_ore>);
-//Emerald
+// Emerald
 <ore:oreEmerald>.remove(<minecraft:emerald_ore>);
-//Gold
+// Gold
 <ore:oreGold>.remove(<minecraft:gold_ore>);
-//Iron
+// Iron
 <ore:oreIron>.remove(<minecraft:iron_ore>);
 
 // --- GC/GS
-//Iron
+// Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
-//Copper
+// Copper
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_moon>);
 <ore:oreCopper>.remove(<galacticraftplanets:mars>);
 <ore:oreCopper>.remove(<forestry:resources:1>);
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
 <ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
 <ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
-//Tin
+// Tin
 <ore:oreTin>.remove(<forestry:resources:2>);
 <ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
 <ore:oreTin>.remove(<galacticraftplanets:mars:1>);
 <ore:oreTin>.remove(<galacticraftplanets:venus:11>);
 <ore:oreTin>.remove(<galacticraftcore:basic_block_core:6>);
-//Aluminium/Aluminum etc
+// Aluminium/Aluminum etc
 <ore:oreAluminium>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreAluminium>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreAluminium>.remove(<galacticraftplanets:venus:6>);
@@ -204,18 +210,18 @@ for item in ForestryPropolisArray {
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
-//Nickel
+// Nickel
 <ore:plateNickel>.remove(<galaxyspace:compressed_plates:3>);
-//Solar ore
+// Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
-//Silicon
+// Silicon
 <ore:oreSilicon>.remove(<galacticraftplanets:venus:10>);
 <ore:oreSilicon>.remove(<galacticraftcore:basic_block_core:8>);
-//Quartz
+// Quartz
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
-//Apatite
+// Apatite
 <ore:oreApatite>.remove(<forestry:resources>);
-//Lead
+// Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
-//Ilmenite
+// Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);

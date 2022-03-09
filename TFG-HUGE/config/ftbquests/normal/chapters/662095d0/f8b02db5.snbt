@@ -1,0 +1,18 @@
+{
+	x: 5.5d,
+	y: -10.0d,
+	dependencies: [
+		"1950edbf"
+	],
+	tasks: [{
+		uid: "83901202",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "wood_gas",
+				Amount: 1000
+			}
+		}]
+	}]
+}

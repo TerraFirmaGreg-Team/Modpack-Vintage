@@ -1,10 +1,11 @@
 {
-	title: "Download more RAM",
+	title: "{tfg.quests.mv.RAM.title}",
 	icon: "gregtech:meta_item_1 1 592",
-	x: 13.0d,
-	y: -6.0d,
+	x: 13.5d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.RAM.subtitle}",
 	text: [
-		"§aRandom Access Memory§r is required for more advanced Electronic Components."
+		""
 	],
 	dependencies: [
 		"495f6775"

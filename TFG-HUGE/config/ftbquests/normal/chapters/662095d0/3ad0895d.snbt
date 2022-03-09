@@ -1,15 +1,14 @@
 {
-	title: "Advanced Cutting Machine",
+	title: "{tfg.quests.mv.advcutting.title}",
 	icon: "gregtech:machine 1 246",
-	x: 10.5d,
+	x: 9.75d,
 	y: 0.0d,
+	description: "{tfg.quests.mv.advcutting.subtitle}",
 	text: [
-		"§oMore upgrades...! §r",
+		"{tfg.quests.mv.advcutting.desc1}",
 		"",
-		"The §bMV§  §3Cutting Machine§r is required to cut §7Silicon Boules§r to prepare them for §aLaser Engraving§r.",
-		"",
-		"I recommend you run this machine with §dLubricant§r, to cut down on the processing time.",
-		"Lubricant can be §3brewed§r from an Oil and §aTalc§r, §2Soapstone§r or §cRedstone§r."
+		"{tfg.quests.mv.advcutting.desc2}",
+		"{tfg.quests.mv.advcutting.desc3}"
 	],
 	dependencies: [
 		"abdc5738"

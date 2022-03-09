@@ -1,14 +1,13 @@
 {
-	title: "Pattern",
+	title: "{tfg.quests.mv.pattern.title}",
 	icon: "appliedenergistics2:material 1 52",
-	x: 14.0d,
-	y: -14.0d,
+	x: 15.0d,
+	y: -15.0d,
+	description: "{tfg.quests.mv.pattern.subtitle}",
 	text: [
-		"§oAutocrafting at last!§r",
+		"{tfg.quests.mv.pattern.desc1}",
 		"",
-		"§aPatterns§r are used for AE2 autocrafting. Using §aPolyvinyl Chloride§r increases the yield by §64 times§r, and higher-tier plastics have higher yields.",
-		"",
-		"§3Molecular Assemblers§r aren't available for a little while more, but you can still automate machines with §9ME Interfaces§r."
+		"{tfg.quests.mv.pattern.desc2}"
 	],
 	dependencies: [
 		"4e8615d1"

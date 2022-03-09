@@ -1,5 +1,5 @@
 {
-	title: "US Simulator",
+	title: "{tfg.quests.mv.USsimulator.title}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -7,22 +7,17 @@
 			FluidName: "oil"
 		}
 	},
-	x: 6.0d,
-	y: -10.0d,
+	x: 4.0d,
+	y: -11.0d,
+	description: "{tfg.quests.mv.USsimulator.subtitle}",
 	text: [
-		"§oHave you seen the Oil spouts when wandering around, or mined into a deposit of Oil?§, ",
+		"{tfg.quests.mv.USsimulator.desc1}",
+		"{tfg.quests.mv.USsimulator.desc2}",
 		"",
-		"Get a Pump, place it above an Oil spout and Power it!§r Do §cnot§r pump above an Ocean, as currently there is a flaw in the pump logic, and it will attempt to pull water, resulting in getting the Pump stuck.",
-		"I recommend you bring up a §3Battery Buffer§r, and a lot of §3Drums§r. A Super Tank would be better, but that's not quite available yet!",
+		"{tfg.quests.mv.USsimulator.desc3}",
 		"",
-		"Do not forget to §dchunkload§r with FTB:Utilities (claim the chunk with left-click, and enable force loading with shift-left-click).",
-		"",
-		"",
-		"§9Note:§r This Quest is an entry point towards §9Polyethylene§r, an important goal for the MV Age.",
-		"This path is §doptional§r. Basically, you have two choices to get to §9Polyethylene§r, either §aBiomass§r or §aOil§r.",
-		"",
-		"",
-		"§bLore:§r Oil geysers were originally from Buildcraft. If you played a GregTech 5 modpack without Buildcraft, you needed to use the Fluid Rig and tap randomly to try and get lucky... or wait until HV age to do a rudimentary prospection."
+		"{tfg.quests.mv.USsimulator.desc4}",
+		"{tfg.quests.mv.USsimulator.desc5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -45,7 +40,6 @@
 				Amount: 1000
 			}
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}]
 }

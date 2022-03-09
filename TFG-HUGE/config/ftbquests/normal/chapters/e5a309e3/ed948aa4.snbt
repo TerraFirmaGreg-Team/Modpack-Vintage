@@ -19,11 +19,6 @@
 		"2f970f5b"
 	],
 	tasks: [{
-		uid: "ccbcea50",
-		type: "fluid",
-		fluid: "ammonia"
-	},
-	{
 		uid: "7cec66bd",
 		type: "item",
 		items: [{
@@ -32,8 +27,6 @@
 				FluidName: "ammonia",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

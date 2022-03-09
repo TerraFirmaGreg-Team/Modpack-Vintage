@@ -20,8 +20,14 @@
 		"692e1ee5"
 	],
 	tasks: [{
-		uid: "80703849",
-		type: "fluid",
-		fluid: "polybenzimidazole"
+		uid: "ba3b5473",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "polybenzimidazole",
+				Amount: 1000
+			}
+		}]
 	}]
 }

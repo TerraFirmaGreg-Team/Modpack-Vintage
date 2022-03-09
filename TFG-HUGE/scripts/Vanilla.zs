@@ -157,7 +157,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:wooden_button>,
     <minecraft:stone_button>,
     <minecraft:trapdoor>,
-    <minecraft:reeds>
+    <minecraft:reeds>,
+    <minecraft:book>
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -248,6 +249,12 @@ recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
  [<ore:gearWroughtIron>, <ore:fenceWood>, <ore:gearWroughtIron>],
  [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+
+//Книга
+recipes.addShaped(<minecraft:book>,
+[[<ore:string>, <ore:paper>, <ore:leather>],
+ [<ore:string>, <ore:paper>, <metaitem:rubber_drop>],
+ [<ore:string>, <ore:paper>, <ore:leather>]]);
 
 //Ведро
 recipes.addShaped(<minecraft:bucket>,

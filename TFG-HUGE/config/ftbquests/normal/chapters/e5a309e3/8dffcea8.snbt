@@ -33,8 +33,6 @@
 				FluidName: "nitric_acid",
 				Amount: 1000
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

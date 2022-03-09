@@ -1,12 +1,12 @@
 {
 	x: -12.0d,
-	y: 0.0d,
+	y: -1.5d,
 	shape: "diamond",
 	description: "{tfg.quests.steam.mortar.subtitle}",
 	dependencies: [
 		"8fdd423e"
 	],
-	size: 2.0d,
+	size: 1.5d,
 	tasks: [{
 		uid: "655b9ef6",
 		type: "item",
