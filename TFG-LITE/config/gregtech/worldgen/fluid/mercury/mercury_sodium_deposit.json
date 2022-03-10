@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Mercury Sodium Deposit",
+  "yield": {
+    "min": 150,
+    "max": 200
+  },
+  "dimension_filter": [
+    "dimension_id:-13"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 50,
+    "depleted_yield": 25
+  },
+  "fluid": "sodium"
+}

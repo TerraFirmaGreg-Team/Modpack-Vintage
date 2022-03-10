@@ -1,0 +1,18 @@
+{
+  "weight": 10,
+  "name": "Earth Salt Water Deposit",
+  "yield": {
+    "min": 50,
+    "max": 75
+  },
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 15
+  },
+  "fluid": "salt_water",
+  "biome_modifier": {
+    "type": "biome_map",
+    "ocean": 150
+  }
+}

@@ -112,7 +112,7 @@ for item in Gem_Exquisite {
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- GC
-<ore:moonRock>.add(<galacticraftcore:basic_block_moon:4>);
+<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
 
 // --- Deleting OreDictionary
 // --- ProjectRed
