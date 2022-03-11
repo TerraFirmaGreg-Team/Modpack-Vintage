@@ -126,4 +126,15 @@ StoneType.create(45, "tfc_soapstone", "ore", <material:stone>, "tfc:raw/soapston
 
 // -- Galacticraft/GalaxySpace
 
+// - Mercury
+MaterialBuilder(32100, "mercury_stone").dust().build();
+
+// - Venus
+MaterialBuilder(32101, "venus_stone").dust().build();
+
 // - Moon
+MaterialBuilder(32102, "moon_stone").dust().build();
+
+// - Mars
+MaterialBuilder(32103, "mars_stone").dust().build();
+
