@@ -1,0 +1,19 @@
+{
+	title: "Elite Circuit Boards",
+	icon: "gregtech:meta_item_1 1 406",
+	x: -7.5d,
+	y: -4.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"01696556"
+	],
+	tasks: [{
+		uid: "f4e556d1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 406"
+		}]
+	}]
+}

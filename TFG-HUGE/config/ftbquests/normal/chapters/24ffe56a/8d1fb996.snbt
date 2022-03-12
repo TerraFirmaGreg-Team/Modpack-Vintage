@@ -1,0 +1,24 @@
+{
+	title: "High Power Integration Circuit",
+	icon: "gregtech:meta_item_1 1 605",
+	x: -14.5d,
+	y: -5.5d,
+	text: [
+		"The §aHPIC§r unlocks §3IV Energy Hatches§r and §3Dynamos§r... You know the drill!",
+		"",
+		"Making an §3IV Chemical Reactor§r is §doptional§r. You can craft this with a §3Large Chemical Reactor§r if you wish.",
+		"",
+		"If you wish to automate your LCR with patterns, head back to the P2P Tunnel Quest for more information."
+	],
+	dependencies: [
+		"d313f51b",
+		"2ecea6a5"
+	],
+	tasks: [{
+		uid: "e3824e22",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 605"
+		}]
+	}]
+}

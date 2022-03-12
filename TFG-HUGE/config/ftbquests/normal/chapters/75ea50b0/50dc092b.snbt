@@ -1,0 +1,15 @@
+{
+	title: "Craftable in MV",
+	icon: "gregtech:machine 1 986",
+	disable_toast: true,
+	x: -29.5d,
+	y: -9.0d,
+	text: [
+		"The §9Integrated§r Circuit line is not a strict upgrade in terms of cost, but works as a stepping stone towards the next tier.",
+		"",
+		"They require a MV §3Laser Engraver§r and a MV §3Cutting Machine§r.",
+		"",
+		"",
+		"§bLore:§r In Omnifactory, and in previous Gregicality, this circuit line was called §9Refined§r and was standardized like further tiers."
+	]
+}

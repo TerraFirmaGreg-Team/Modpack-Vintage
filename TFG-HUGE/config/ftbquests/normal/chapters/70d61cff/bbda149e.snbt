@@ -1,8 +1,8 @@
 {
 	title: "EV Circuit Assembling",
 	icon: "gregtech:machine 1 638",
-	x: -1.0d,
-	y: 0.0d,
+	x: -7.0d,
+	y: -1.0d,
 	text: [
 		"No Description"
 	],

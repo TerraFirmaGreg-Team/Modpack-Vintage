@@ -1,6 +1,7 @@
 #priority 1001
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 // - Raw Igneous Intrusive Rocks Array
 global RawIgneousIntrusive as IItemStack[] = [
@@ -17,7 +18,7 @@ global RawIgneousExtrusive as IItemStack[] = [
 	<tfc:raw/basalt>, 
 	<tfc:raw/dacite>, 
 	<tfc:raw/andesite>,
-	 <tfc:raw/peridotite>
+	<tfc:raw/peridotite>
 ];
 
 // - Raw Metamorphic Rocks Array
@@ -1076,92 +1077,212 @@ global TFC_Mud_Bricks_Block as IItemStack[] = [
 	<tfcflorae:mud_bricks/komatiite>
 ];
 
+// - TFC Saplings Array
+global TFC_Saplings as IItemStack[] = [
+	<tfc:wood/sapling/acacia>,
+	<tfc:wood/sapling/african_padauk>,
+	<tfc:wood/sapling/alder>,
+	<tfc:wood/sapling/angelim>,
+	<tfc:wood/sapling/ash>,
+	<tfc:wood/sapling/aspen>,
+	<tfc:wood/sapling/bald_cypress>,
+	<tfc:wood/sapling/baobab>,
+	<tfc:wood/sapling/beech>,
+	<tfc:wood/sapling/birch>,
+	<tfc:wood/sapling/black_walnut>,
+	<tfc:wood/sapling/blackwood>,
+	<tfc:wood/sapling/box>,
+	<tfc:wood/sapling/brazilwood>,
+	<tfc:wood/sapling/butternut>,
+	<tfc:wood/sapling/chestnut>,
+	<tfc:wood/sapling/cocobolo>,
+	<tfc:wood/sapling/cypress>,
+	<tfc:wood/sapling/douglas_fir>,
+	<tfc:wood/sapling/ebony>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfc:wood/sapling/european_oak>,
+	<tfc:wood/sapling/fever>,
+	<tfc:wood/sapling/fruitwood>,
+	<tfc:wood/sapling/ginkgo>,
+	<tfc:wood/sapling/greenheart>,
+	<tfc:wood/sapling/hawthorn>,
+	<tfc:wood/sapling/hazel>,
+	<tfc:wood/sapling/hemlock>,
+	<tfc:wood/sapling/hevea>,
+	<tfc:wood/sapling/hickory>,
+	<tfc:wood/sapling/holly>,
+	<tfc:wood/sapling/hornbeam>,
+	<tfc:wood/sapling/ipe>,
+	<tfc:wood/sapling/iroko>,
+	<tfc:wood/sapling/ironwood>,
+	<tfc:wood/sapling/jacaranda>,
+	<tfc:wood/sapling/joshua_tree>,
+	<tfc:wood/sapling/juniper>,
+	<tfc:wood/sapling/kapok>,
+	<tfc:wood/sapling/kauri>,
+	<tfc:wood/sapling/larch>,
+	<tfc:wood/sapling/limba>,
+	<tfc:wood/sapling/locust>,
+	<tfc:wood/sapling/logwood>,
+	<tfc:wood/sapling/maclura>,
+	<tfc:wood/sapling/mahoe>,
+	<tfc:wood/sapling/mahogany>,
+	<tfc:wood/sapling/mangrove>,
+	<tfc:wood/sapling/maple>,
+	<tfc:wood/sapling/marblewood>,
+	<tfc:wood/sapling/messmate>,
+	<tfc:wood/sapling/mountain_ash>,
+	<tfc:wood/sapling/nordmann_fir>,
+	<tfc:wood/sapling/norway_spruce>,
+	<tfc:wood/sapling/oak>,
+	<tfc:wood/sapling/palm>,
+	<tfc:wood/sapling/pine>,
+	<tfc:wood/sapling/pink_cherry>,
+	<tfc:wood/sapling/pink_ivory>,
+	<tfc:wood/sapling/poplar>,
+	<tfc:wood/sapling/purpleheart>,
+	<tfc:wood/sapling/red_cedar>,
+	<tfc:wood/sapling/red_elm>,
+	<tfc:wood/sapling/redwood>,
+	<tfc:wood/sapling/rosewood>,
+	<tfc:wood/sapling/rowan>,
+	<tfc:wood/sapling/rubber_fig>,
+	<tfc:wood/sapling/sequoia>,
+	<tfc:wood/sapling/spruce>,
+	<tfc:wood/sapling/sweetgum>,
+	<tfc:wood/sapling/sycamore>,
+	<tfc:wood/sapling/syzygium>,
+	<tfc:wood/sapling/teak>,
+	<tfc:wood/sapling/walnut>,
+	<tfc:wood/sapling/wenge>,
+	<tfc:wood/sapling/white_cedar>,
+	<tfc:wood/sapling/white_cherry>,
+	<tfc:wood/sapling/white_elm>,
+	<tfc:wood/sapling/whitebeam>,
+	<tfc:wood/sapling/willow>,
+	<tfc:wood/sapling/yellow_meranti>,
+	<tfc:wood/sapling/yew>,
+	<tfc:wood/sapling/zebrawood>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfcflorae:wood/sapling/arrow_bamboo>,
+	<tfcflorae:wood/sapling/black_bamboo>,
+	<tfcflorae:wood/sapling/blue_bamboo>,
+	<tfcflorae:wood/sapling/dragon_bamboo>,
+	<tfcflorae:wood/sapling/golden_bamboo>,
+	<tfcflorae:wood/sapling/joshua_tree>,
+	<tfcflorae:wood/sapling/narrow_leaf_bamboo>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfcflorae:wood/sapling/red_bamboo>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfcflorae:wood/sapling/temple_bamboo>,
+	<tfcflorae:wood/sapling/thorny_bamboo>,
+	<tfcflorae:wood/sapling/timber_bamboo>,
+	<tfcflorae:wood/sapling/tinwa_bamboo>,
+	<tfcflorae:wood/sapling/weavers_bamboo>
+];
+
 // - TFC Logs Array
 global TFC_Logs as IItemStack[] = [
 	<tfc:wood/log/acacia>,
+	<tfc:wood/log/african_padauk>,
+	<tfc:wood/log/alder>,
+	<tfc:wood/log/angelim>,
 	<tfc:wood/log/ash>,
 	<tfc:wood/log/aspen>,
+	<tfc:wood/log/bald_cypress>,
+	<tfc:wood/log/baobab>,
+	<tfc:wood/log/beech>,
 	<tfc:wood/log/birch>,
+	<tfc:wood/log/black_walnut>,
 	<tfc:wood/log/blackwood>,
-	<tfc:wood/log/chestnut>,
-	<tfc:wood/log/douglas_fir>,
-	<tfc:wood/log/hickory>,
-	<tfc:wood/log/kapok>,
-	<tfc:wood/log/maple>,
-	<tfc:wood/log/oak>,
-	<tfc:wood/log/palm>,
-	<tfc:wood/log/pine>,
-	<tfc:wood/log/rosewood>,
-	<tfc:wood/log/sequoia>,
-	<tfc:wood/log/spruce>,
-	<tfc:wood/log/sycamore>,
-	<tfc:wood/log/white_cedar>,
-	<tfc:wood/log/willow>,
-	<tfc:wood/log/african_padauk>,
-	<tfc:wood/log/angelim>,
 	<tfc:wood/log/box>,
 	<tfc:wood/log/brazilwood>,
+	<tfc:wood/log/butternut>,
+	<tfc:wood/log/chestnut>,
 	<tfc:wood/log/cocobolo>,
+	<tfc:wood/log/cypress>,
+	<tfc:wood/log/douglas_fir>,
 	<tfc:wood/log/ebony>,
+	<tfc:wood/log/eucalyptus>,
+	<tfc:wood/log/european_oak>,
 	<tfc:wood/log/fever>,
 	<tfc:wood/log/fruitwood>,
+	<tfc:wood/log/ginkgo>,
 	<tfc:wood/log/greenheart>,
+	<tfc:wood/log/hawthorn>,
+	<tfc:wood/log/hazel>,
+	<tfc:wood/log/hemlock>,
+	<tfc:wood/log/hevea>,
+	<tfc:wood/log/hickory>,
 	<tfc:wood/log/holly>,
+	<tfc:wood/log/hornbeam>,
+	<tfc:wood/log/ipe>,
 	<tfc:wood/log/iroko>,
 	<tfc:wood/log/ironwood>,
+	<tfc:wood/log/jacaranda>,
+	<tfc:wood/log/joshua_tree>,
+	<tfc:wood/log/juniper>,
+	<tfc:wood/log/kapok>,
 	<tfc:wood/log/kauri>,
+	<tfc:wood/log/larch>,
 	<tfc:wood/log/limba>,
+	<tfc:wood/log/locust>,
 	<tfc:wood/log/logwood>,
+	<tfc:wood/log/maclura>,
 	<tfc:wood/log/mahoe>,
+	<tfc:wood/log/mahogany>,
 	<tfc:wood/log/mangrove>,
+	<tfc:wood/log/maple>,
 	<tfc:wood/log/marblewood>,
 	<tfc:wood/log/messmate>,
 	<tfc:wood/log/mountain_ash>,
-	<tfc:wood/log/purpleheart>,
-	<tfc:wood/log/rubber_fig>,
-	<tfc:wood/log/teak>,
-	<tfc:wood/log/wenge>,
-	<tfc:wood/log/yellow_meranti>,
-	<tfc:wood/log/zebrawood>,
-	<tfc:wood/log/bald_cypress>,
-	<tfc:wood/log/cypress>,
-	<tfc:wood/log/hemlock>,
 	<tfc:wood/log/nordmann_fir>,
 	<tfc:wood/log/norway_spruce>,
-	<tfc:wood/log/redwood>,
-	<tfc:wood/log/joshua_tree>,
-	<tfc:wood/log/baobab>,
-	<tfc:wood/log/eucalyptus>,
-	<tfc:wood/log/hawthorn>,
-	<tfc:wood/log/maclura>,
-	<tfc:wood/log/mahogany>,
-	<tfc:wood/log/pink_ivory>,
-	<tfc:wood/log/red_cedar>,
-	<tfc:wood/log/rowan>,
-	<tfc:wood/log/syzygium>,
-	<tfc:wood/log/yew>,
-	<tfc:wood/log/jacaranda>,
-	<tfc:wood/log/juniper>,
-	<tfc:wood/log/ipe>,
+	<tfc:wood/log/oak>,
+	<tfc:wood/log/palm>,
+	<tfc:wood/log/pine>,
 	<tfc:wood/log/pink_cherry>,
-	<tfc:wood/log/white_cherry>,
-	<tfc:wood/log/sweetgum>,
-	<tfc:wood/log/larch>,
-	<tfc:wood/log/alder>,
-	<tfc:wood/log/beech>,
-	<tfc:wood/log/black_walnut>,
-	<tfc:wood/log/butternut>,
-	<tfc:wood/log/european_oak>,
-	<tfc:wood/log/ginkgo>,
-	<tfc:wood/log/hazel>,
-	<tfc:wood/log/hornbeam>,
-	<tfc:wood/log/locust>,
+	<tfc:wood/log/pink_ivory>,
 	<tfc:wood/log/poplar>,
+	<tfc:wood/log/purpleheart>,
+	<tfc:wood/log/red_cedar>,
 	<tfc:wood/log/red_elm>,
+	<tfc:wood/log/redwood>,
+	<tfc:wood/log/rosewood>,
+	<tfc:wood/log/rowan>,
+	<tfc:wood/log/rubber_fig>,
+	<tfc:wood/log/sequoia>,
+	<tfc:wood/log/spruce>,
+	<tfc:wood/log/sweetgum>,
+	<tfc:wood/log/sycamore>,
+	<tfc:wood/log/syzygium>,
+	<tfc:wood/log/teak>,
 	<tfc:wood/log/walnut>,
+	<tfc:wood/log/wenge>,
+	<tfc:wood/log/white_cedar>,
+	<tfc:wood/log/white_cherry>,
 	<tfc:wood/log/white_elm>,
 	<tfc:wood/log/whitebeam>,
-	<tfc:wood/log/hevea>
+	<tfc:wood/log/willow>,
+	<tfc:wood/log/yellow_meranti>,
+	<tfc:wood/log/yew>,
+	<tfc:wood/log/zebrawood>,
+	<tfcflorae:wood/log/argyle_eucalyptus>,
+	<tfcflorae:wood/log/arrow_bamboo>,
+	<tfcflorae:wood/log/black_bamboo>,
+	<tfcflorae:wood/log/blue_bamboo>,
+	<tfcflorae:wood/log/dragon_bamboo>,
+	<tfcflorae:wood/log/golden_bamboo>,
+	<tfcflorae:wood/log/joshua_tree>,
+	<tfcflorae:wood/log/narrow_leaf_bamboo>,
+	<tfcflorae:wood/log/rainbow_eucalyptus>,
+	<tfcflorae:wood/log/red_bamboo>,
+	<tfcflorae:wood/log/snow_gum_eucalyptus>,
+	<tfcflorae:wood/log/temple_bamboo>,
+	<tfcflorae:wood/log/thorny_bamboo>,
+	<tfcflorae:wood/log/timber_bamboo>,
+	<tfcflorae:wood/log/tinwa_bamboo>,
+	<tfcflorae:wood/log/weavers_bamboo>
 ];
 
 // - TFC Planks Array
@@ -1249,7 +1370,22 @@ global TFC_Planks as IItemStack[] = [
 	<tfc:wood/planks/walnut>,
 	<tfc:wood/planks/white_elm>,
 	<tfc:wood/planks/whitebeam>,
-	<tfc:wood/planks/hevea>
+	<tfc:wood/planks/hevea>,
+	<tfc:wood/planks/eucalyptus>,
+	<tfcflorae:wood/planks/arrow_bamboo>,
+	<tfcflorae:wood/planks/black_bamboo>,
+	<tfcflorae:wood/planks/blue_bamboo>,
+	<tfcflorae:wood/planks/dragon_bamboo>,
+	<tfcflorae:wood/planks/golden_bamboo>,
+	<tfcflorae:wood/planks/narrow_leaf_bamboo>,
+	<tfc:wood/planks/eucalyptus>,
+	<tfcflorae:wood/planks/red_bamboo>,
+	<tfc:wood/planks/eucalyptus>,
+	<tfcflorae:wood/planks/temple_bamboo>,
+	<tfcflorae:wood/planks/thorny_bamboo>,
+	<tfcflorae:wood/planks/timber_bamboo>,
+	<tfcflorae:wood/planks/tinwa_bamboo>,
+	<tfcflorae:wood/planks/weavers_bamboo>
 ];
 
 // - TFC Lumber Array
@@ -1337,7 +1473,22 @@ global TFC_Lumber as IItemStack[] = [
 	<tfc:wood/lumber/walnut>,
 	<tfc:wood/lumber/white_elm>,
 	<tfc:wood/lumber/whitebeam>,
-	<tfc:wood/lumber/hevea>
+	<tfc:wood/lumber/hevea>,
+	<tfc:wood/lumber/eucalyptus>,
+	<tfcflorae:wood/lumber/arrow_bamboo>,
+	<tfcflorae:wood/lumber/black_bamboo>,
+	<tfcflorae:wood/lumber/blue_bamboo>,
+	<tfcflorae:wood/lumber/dragon_bamboo>,
+	<tfcflorae:wood/lumber/golden_bamboo>,
+	<tfcflorae:wood/lumber/narrow_leaf_bamboo>,
+	<tfc:wood/lumber/eucalyptus>,
+	<tfcflorae:wood/lumber/red_bamboo>,
+	<tfc:wood/lumber/eucalyptus>,
+	<tfcflorae:wood/lumber/temple_bamboo>,
+	<tfcflorae:wood/lumber/thorny_bamboo>,
+	<tfcflorae:wood/lumber/timber_bamboo>,
+	<tfcflorae:wood/lumber/tinwa_bamboo>,
+	<tfcflorae:wood/lumber/weavers_bamboo>
 ];
 
 // - TFC Slabs Array
@@ -1425,7 +1576,22 @@ global TFC_Slabs as IItemStack[] = [
 	<tfc:slab/wood/walnut>,
 	<tfc:slab/wood/white_elm>,
 	<tfc:slab/wood/whitebeam>,
-	<tfc:slab/wood/hevea>
+	<tfc:slab/wood/hevea>,
+	<tfc:slab/wood/eucalyptus>,
+	<tfcflorae:wood/slab/arrow_bamboo>,
+	<tfcflorae:wood/slab/black_bamboo>,
+	<tfcflorae:wood/slab/blue_bamboo>,
+	<tfcflorae:wood/slab/dragon_bamboo>,
+	<tfcflorae:wood/slab/golden_bamboo>,
+	<tfcflorae:wood/slab/narrow_leaf_bamboo>,
+	<tfc:slab/wood/eucalyptus>,
+	<tfcflorae:wood/slab/red_bamboo>,
+	<tfc:slab/wood/eucalyptus>,
+	<tfcflorae:wood/slab/temple_bamboo>,
+	<tfcflorae:wood/slab/thorny_bamboo>,
+	<tfcflorae:wood/slab/timber_bamboo>,
+	<tfcflorae:wood/slab/tinwa_bamboo>,
+	<tfcflorae:wood/slab/weavers_bamboo>
 ];
 
 // - TFC Stairs Array
@@ -1513,7 +1679,22 @@ global TFC_Stairs as IItemStack[] = [
 	<tfc:stairs/wood/walnut>,
 	<tfc:stairs/wood/white_elm>,
 	<tfc:stairs/wood/whitebeam>,
-	<tfc:stairs/wood/hevea>
+	<tfc:stairs/wood/hevea>,
+	<tfc:stairs/wood/eucalyptus>,
+	<tfcflorae:wood/stairs/arrow_bamboo>,
+	<tfcflorae:wood/stairs/black_bamboo>,
+	<tfcflorae:wood/stairs/blue_bamboo>,
+	<tfcflorae:wood/stairs/dragon_bamboo>,
+	<tfcflorae:wood/stairs/golden_bamboo>,
+	<tfcflorae:wood/stairs/narrow_leaf_bamboo>,
+	<tfc:stairs/wood/eucalyptus>,
+	<tfcflorae:wood/stairs/red_bamboo>,
+	<tfc:stairs/wood/eucalyptus>,
+	<tfcflorae:wood/stairs/temple_bamboo>,
+	<tfcflorae:wood/stairs/thorny_bamboo>,
+	<tfcflorae:wood/stairs/timber_bamboo>,
+	<tfcflorae:wood/stairs/tinwa_bamboo>,
+	<tfcflorae:wood/stairs/weavers_bamboo>
 ];
 
 // - TFC Pressure Plates Wood Array
@@ -1601,7 +1782,22 @@ global TFC_Pressure_Plates as IItemStack[] = [
 	<tfc:wood/pressure_plate/walnut>,
 	<tfc:wood/pressure_plate/white_elm>,
 	<tfc:wood/pressure_plate/whitebeam>,
-	<tfc:wood/pressure_plate/hevea>
+	<tfc:wood/pressure_plate/hevea>,
+	<tfc:wood/pressure_plate/eucalyptus>,
+	<tfcflorae:wood/pressure_plate/arrow_bamboo>,
+	<tfcflorae:wood/pressure_plate/black_bamboo>,
+	<tfcflorae:wood/pressure_plate/blue_bamboo>,
+	<tfcflorae:wood/pressure_plate/dragon_bamboo>,
+	<tfcflorae:wood/pressure_plate/golden_bamboo>,
+	<tfcflorae:wood/pressure_plate/narrow_leaf_bamboo>,
+	<tfc:wood/pressure_plate/eucalyptus>,
+	<tfcflorae:wood/pressure_plate/red_bamboo>,
+	<tfc:wood/pressure_plate/eucalyptus>,
+	<tfcflorae:wood/pressure_plate/temple_bamboo>,
+	<tfcflorae:wood/pressure_plate/thorny_bamboo>,
+	<tfcflorae:wood/pressure_plate/timber_bamboo>,
+	<tfcflorae:wood/pressure_plate/tinwa_bamboo>,
+	<tfcflorae:wood/pressure_plate/weavers_bamboo>
 ];
 
 // - TFC Buttons Array
@@ -1777,7 +1973,22 @@ global TFC_Doors as IItemStack[] = [
 	<tfc:wood/door/walnut>,
 	<tfc:wood/door/white_elm>,
 	<tfc:wood/door/whitebeam>,
-	<tfc:wood/door/hevea>
+	<tfc:wood/door/hevea>,
+	<tfc:wood/door/eucalyptus>,
+	<tfcflorae:wood/door/arrow_bamboo>,
+	<tfcflorae:wood/door/black_bamboo>,
+	<tfcflorae:wood/door/blue_bamboo>,
+	<tfcflorae:wood/door/dragon_bamboo>,
+	<tfcflorae:wood/door/golden_bamboo>,
+	<tfcflorae:wood/door/narrow_leaf_bamboo>,
+	<tfc:wood/door/eucalyptus>,
+	<tfcflorae:wood/door/red_bamboo>,
+	<tfc:wood/door/eucalyptus>,
+	<tfcflorae:wood/door/temple_bamboo>,
+	<tfcflorae:wood/door/thorny_bamboo>,
+	<tfcflorae:wood/door/timber_bamboo>,
+	<tfcflorae:wood/door/tinwa_bamboo>,
+	<tfcflorae:wood/door/weavers_bamboo>
 ];
 
 // - TFC Trapdoors Array
@@ -1953,7 +2164,22 @@ global TFC_Supports as IItemStack[] = [
 	<tfc:wood/support/walnut>,
 	<tfc:wood/support/white_elm>,
 	<tfc:wood/support/whitebeam>,
-	<tfc:wood/support/hevea>
+	<tfc:wood/support/hevea>,
+	<tfc:wood/support/eucalyptus>,
+	<tfcflorae:wood/support/arrow_bamboo>,
+	<tfcflorae:wood/support/black_bamboo>,
+	<tfcflorae:wood/support/blue_bamboo>,
+	<tfcflorae:wood/support/dragon_bamboo>,
+	<tfcflorae:wood/support/golden_bamboo>,
+	<tfcflorae:wood/support/narrow_leaf_bamboo>,
+	<tfc:wood/support/eucalyptus>,
+	<tfcflorae:wood/support/red_bamboo>,
+	<tfc:wood/support/eucalyptus>,
+	<tfcflorae:wood/support/temple_bamboo>,
+	<tfcflorae:wood/support/thorny_bamboo>,
+	<tfcflorae:wood/support/timber_bamboo>,
+	<tfcflorae:wood/support/tinwa_bamboo>,
+	<tfcflorae:wood/support/weavers_bamboo>
 ];
 
 // - TFC Fences Array
@@ -2220,8 +2446,8 @@ global TFC_Fence_Gates_Log as IItemStack[] = [
 	<tfcflorae:wood/fence_gate_log/hevea>
 ];
 
-// - gemExquisite Array
-global gemExquisite as IItemStack[] = [
+// - Gem Exquisite Array
+global Gem_Exquisite as IItemStack[] = [
 	<metaitem:gemExquisiteGarnetYellow>,
 	<metaitem:gemExquisiteAlmandine>,
 	<metaitem:gemExquisiteAndradite>,
@@ -2260,8 +2486,8 @@ global gemExquisite as IItemStack[] = [
 	<metaitem:gemExquisiteMonazite>
 ];
 
-// - gemFlawless Array
-global gemFlawless as IItemStack[] = [
+// - Gem Flawless Array
+global Gem_Flawless as IItemStack[] = [
 	<metaitem:gemFlawlessGarnetYellow>,
 	<metaitem:gemFlawlessAlmandine>,
 	<metaitem:gemFlawlessAndradite>,
@@ -2300,8 +2526,8 @@ global gemFlawless as IItemStack[] = [
 	<metaitem:gemFlawlessMonazite>
 ];
 
-// - gemFlawed Array
-global gemFlawed as IItemStack[] = [
+// - Gem Flawed Array
+global Gem_Flawed as IItemStack[] = [
 	<metaitem:gemFlawedCertusQuartz>,
 	<metaitem:gemFlawedGarnetYellow>,
 	<metaitem:gemFlawedAlmandine>,
@@ -2341,8 +2567,8 @@ global gemFlawed as IItemStack[] = [
 	<metaitem:gemFlawedMonazite>
 ];
 
-// - gemChipped Array
-global gemChipped as IItemStack[] = [
+// - Gem Chipped Array
+global Gem_Chipped as IItemStack[] = [
 	<metaitem:gemChippedCertusQuartz>,
 	<metaitem:gemChippedGarnetYellow>,
 	<metaitem:gemChippedAlmandine>,
@@ -2383,7 +2609,7 @@ global gemChipped as IItemStack[] = [
 ];
 
 // - All Seeds Array
-global AllSeeds as IItemStack[] = [
+global All_Seeds as IItemStack[] = [
 	<tfc:crop/seeds/barley>,
 	<tfc:crop/seeds/maize>,
 	<tfc:crop/seeds/oat>,
@@ -2437,16 +2663,77 @@ global AllSeeds as IItemStack[] = [
 	<tfcflorae:crop/seeds/tobacco>
 ];
 
-// - Propolis Array
-global ForestryPropolisArray as IItemStack[] = [
-	<forestry:propolis>,
-	<forestry:propolis:1>,
-	<forestry:propolis:3>
+// - All Seeds Array
+global All_Plants as IItemStack[] = [
+	<tfc:food/barley>,
+	<tfc:food/maize>,
+	<tfc:food/oat>,
+	<tfc:food/rice>,
+	<tfc:food/rye>,
+	<tfc:food/wheat>,
+	<tfc:food/beet>,
+	<tfc:food/cabbage>,
+	<tfc:food/carrot>,
+	<tfc:food/garlic>,
+	<tfc:food/green_bean>,
+	<tfc:food/onion>,
+	<tfc:food/potato>,
+	<tfc:food/soybean>,
+	<tfc:food/squash>,
+	<tfc:food/sugarcane>,
+	<tfc:food/tomato>,
+	<tfc:food/red_bell_pepper>,
+	<tfc:food/yellow_bell_pepper>,
+	<tfc:crop/product/jute>,
+	<tfcflorae:crop/product/malt_spelt>,
+	<tfcflorae:food/amaranth>,
+	<tfcflorae:food/buckwheat>,
+	<tfcflorae:food/fonio>,
+	<tfcflorae:food/millet>,
+	<tfcflorae:food/quinoa>,
+	<tfcflorae:food/spelt>,
+	<tfcflorae:food/black_eyed_peas>,
+	<tfcflorae:food/red_cayenne_pepper>,
+	<tfcflorae:food/ginger>,
+	<tfcflorae:food/ginseng>,
+	<tfcflorae:food/rutabaga>,
+	<tfcflorae:food/turnip>,
+	<tfcflorae:food/sugar_beet>,
+	<tfcflorae:food/purple_grape>,
+	<tfcflorae:food/green_grape>,
+	<tfcflorae:food/liquorice_root>,
+	<tfcflorae:food/coffea_cherries>,
+	<tfcflorae:crop/product/agave>,
+	<tfcflorae:food/coca_leaf>,
+	<tfcflorae:crop/product/cotton_boll>,
+	<tfcflorae:crop/product/flax>,
+	<tfcflorae:crop/product/hemp>,
+	<tfcflorae:crop/product/hops>,
+	<tfcflorae:crop/product/indigo>,
+	<tfcflorae:crop/product/madder>,
+	<tfcflorae:food/opium_poppy_seed>,
+	<tfcflorae:crop/product/rape>,
+	<tfcflorae:crop/product/weld>,
+	<tfcflorae:crop/product/woad>,
+	<tfcflorae:food/tobacco_leaf>
 ];
 
-// - Forestry Chests Array
-global ForestryChestsArray as IItemStack[] = [
-	<forestry:butterfly_chest>,
-	<forestry:tree_chest>,
-	<forestry:bee_chest>
+// - All liquid dye Array
+global All_Liquid_Dyes as ILiquidStack[] = [
+	<liquid:dye_white>,
+	<liquid:dye_orange>,
+	<liquid:dye_magenta>,
+	<liquid:dye_light_blue>,
+	<liquid:dye_yellow>,
+	<liquid:dye_lime>,
+	<liquid:dye_pink>,
+	<liquid:dye_gray>,
+	<liquid:dye_light_gray>,
+	<liquid:dye_cyan>,
+	<liquid:dye_purple>,
+	<liquid:dye_blue>,
+	<liquid:dye_brown>,
+	<liquid:dye_green>,
+	<liquid:dye_red>,
+	<liquid:dye_black>
 ];

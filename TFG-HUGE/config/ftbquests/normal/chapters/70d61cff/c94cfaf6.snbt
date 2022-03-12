@@ -1,0 +1,28 @@
+{
+	title: "Extreme Batteries",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 742s,
+		tag: {
+			Charge: 25000000L
+		}
+	},
+	x: -5.0d,
+	y: -6.5d,
+	text: [
+		"The Best Battery-like item, for §5EV§r!",
+		"",
+		"The §aLapotron Crystal§r requires quite a bit of nested crafting, so craft it in bulks or automate it with AE2 patterns."
+	],
+	dependencies: [
+		"8a65a77a"
+	],
+	tasks: [{
+		uid: "5294d703",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 742"
+		}],
+		ignore_nbt: 1b
+	}]
+}

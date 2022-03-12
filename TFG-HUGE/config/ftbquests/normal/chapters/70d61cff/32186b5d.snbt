@@ -1,0 +1,60 @@
+{
+	title: "\"Fun\" never stops",
+	icon: "gregtech:meta_item_1 1 130",
+	x: -5.0d,
+	y: 5.5d,
+	text: [
+		"A lot §dKanthal§r will be required for the §aEV Motors§r. That is painful to start off, but won't be a problem later, trust me.",
+		"",
+		"§dNeodymium§r is the metal used for §aMagnetic Rods§r.",
+		"",
+		"§aAluminium Cables§r require §dPVC§r to be insulated.",
+		"",
+		"Lastly, you will need §4Radon§r for the §dQuantum Eyes§r in the §aEmitter§r recipe."
+	],
+	dependencies: [
+		"14263e77"
+	],
+	tasks: [{
+		uid: "2f505bd0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 130"
+		}]
+	},
+	{
+		uid: "10750a5f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 175"
+		}]
+	},
+	{
+		uid: "b8a4691c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 145"
+		}]
+	},
+	{
+		uid: "d549622e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 160"
+		}]
+	},
+	{
+		uid: "792e22ce",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 190"
+		}]
+	},
+	{
+		uid: "7393cc19",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 220"
+		}]
+	}]
+}

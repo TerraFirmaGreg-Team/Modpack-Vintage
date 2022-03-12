@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1646609270938,
+    "amount": 1,
+    "price": 100,
+    "discount": 0,
+    "itemstack": {
+      "registry_name": "chisel:certus1",
+      "damage": 13,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  }
+]

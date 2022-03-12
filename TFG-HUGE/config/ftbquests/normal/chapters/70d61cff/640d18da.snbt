@@ -1,0 +1,51 @@
+{
+	title: "Power Integration Circuit",
+	icon: "gregtech:meta_item_1 1 604",
+	x: -7.0d,
+	y: -5.0d,
+	text: [
+		"New Cutting Machine? ✓",
+		"",
+		"New Lens? ✓",
+		"",
+		"New Power Circuit? ✓",
+		"",
+		"New EBF Metal required? ✓",
+		"",
+		"New Coil for Energy Hatch? ✓",
+		"",
+		"",
+		"§9Note:§r If you haven't found a Jungle yet, you can §acentrifuge Stone Dust§r for get §dMetal Mixture Mix§r which doubles as a Brown Dye."
+	],
+	dependencies: [
+		"8a65a77a"
+	],
+	tasks: [{
+		uid: "ce83b6a0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 248"
+		}]
+	},
+	{
+		uid: "04216f4f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 832"
+		}]
+	},
+	{
+		uid: "ebd8be3d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 604"
+		}]
+	},
+	{
+		uid: "ef619e3c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 100"
+		}]
+	}]
+}

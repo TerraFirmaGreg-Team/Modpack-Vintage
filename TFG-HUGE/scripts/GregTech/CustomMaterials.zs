@@ -1,4 +1,5 @@
 #loader gregtech
+#priority 998
 
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.MaterialBuilder;
@@ -17,8 +18,8 @@ import mods.gregtech.StoneType;
 <material:copper>.addTools(7, 1, 85);
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
 <material:bismuth>.addOre();
-<material:certus_quartz>.addFlags("generate_rod");
-<material:nether_quartz>.addFlags("generate_rod");
+<material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
+<material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
@@ -29,125 +30,111 @@ for material in MaterialRegistry.getAllMaterials()
     }
 }
 
-/*
 // --- Custom Stone Type
+
+// -- TFC
+
 // - Andesite
-val TFC_Andesite = MaterialBuilder(32000 ,"tfc_andesite").dust(1).build();
-StoneType.create(16, "tfc_raw_andesite", "oreAndesiteTfc", TFC_Andesite, "tfc:raw/andesite");
+StoneType.create(16, "tfc_andesite", "ore", <material:stone>, "tfc:raw/andesite");
 
 // - Basalt
-val TFC_Basalt = MaterialBuilder(32001 ,"tfc_basalt").dust(1).build();
-StoneType.create(17, "tfc_raw_basalt", "oreBasalt", TFC_Basalt, "tfc:raw/basalt");
+StoneType.create(17, "tfc_basalt", "ore", <material:stone>, "tfc:raw/basalt");
 
 // - Breccia
-val TFC_Breccia = MaterialBuilder(32002 ,"tfc_breccia").dust(1).build();
-StoneType.create(18, "tfc_raw_breccia", "oreBrecciaTfc", TFC_Breccia, "tfc:raw/breccia");
+StoneType.create(18, "tfc_breccia", "ore", <material:stone>, "tfc:raw/breccia");
 
 // - Catlinite
-val TFC_Catlinite = MaterialBuilder(32003 ,"tfc_catlinite").dust(1).build();
-StoneType.create(19, "tfc_raw_catlinite", "oreCatliniteTfc", TFC_Catlinite, "tfc:raw/catlinite");
+StoneType.create(19, "tfc_catlinite", "ore", <material:stone>, "tfc:raw/catlinite");
 
 // - Chalk
-val TFC_Chalk = MaterialBuilder(32004 ,"tfc_chalk").dust(1).build();
-StoneType.create(20, "tfc_raw_chalk", "oreChalkTfc", TFC_Chalk, "tfc:raw/chalk");
+StoneType.create(20, "tfc_chalk", "ore", <material:stone>, "tfc:raw/chalk");
 
 // - Chert
-val TFC_Chert = MaterialBuilder(32005 ,"tfc_chert").dust(1).build();
-StoneType.create(21, "tfc_raw_chert", "oreChertTfc", TFC_Chert, "tfc:raw/chert");
+StoneType.create(21, "tfc_chert", "ore", <material:stone>, "tfc:raw/chert");
 
 // - Claystone
-val TFC_Claystone = MaterialBuilder(32006 ,"tfc_claystone").dust(1).build();
-StoneType.create(22, "tfc_raw_claystone", "oreClaystoneTfc", TFC_Claystone, "tfc:raw/claystone");
+StoneType.create(22, "tfc_claystone", "ore", <material:stone>, "tfc:raw/claystone");
 
 // - Conglomerate
-val TFC_Conglomerate = MaterialBuilder(32007 ,"tfc_conglomerate").dust(1).build();
-StoneType.create(23, "tfc_raw_conglomerate", "oreConglomerateTfc", TFC_Conglomerate, "tfc:raw/conglomerate");
+StoneType.create(23, "tfc_conglomerate", "ore", <material:stone>, "tfc:raw/conglomerate");
 
 // - Dacite
-val TFC_Dacite = MaterialBuilder(32008 ,"tfc_dacite").dust(1).build();
-StoneType.create(24, "tfc_raw_dacite", "oreDaciteTfc", TFC_Dacite, "tfc:raw/dacite");
+StoneType.create(24, "tfc_dacite", "ore", <material:stone>, "tfc:raw/dacite");
 
 // - Diorite
-val TFC_Diorite = MaterialBuilder(32009 ,"tfc_diorite").dust(1).build();
-StoneType.create(25, "tfc_raw_diorite", "oreDioriteTfc", TFC_Diorite, "tfc:raw/diorite");
+StoneType.create(25, "tfc_diorite", "ore", <material:stone>, "tfc:raw/diorite");
 
 // - Dolomite
-val TFC_Dolomite = MaterialBuilder(32010 ,"tfc_dolomite").dust(1).build();
-StoneType.create(26, "tfc_raw_dolomite", "oreDolomiteTfc", TFC_Dolomite, "tfc:raw/dolomite");
+StoneType.create(26, "tfc_dolomite", "ore", <material:stone>, "tfc:raw/dolomite");
 
 // - Gabbro
-val TFC_Gabbro = MaterialBuilder(32011 ,"tfc_gabbro").dust(1).build();
-StoneType.create(27, "tfc_raw_gabbro", "oreGabbroTfc", TFC_Gabbro, "tfc:raw/gabbro");
+StoneType.create(27, "tfc_gabbro", "ore", <material:stone>, "tfc:raw/gabbro");
 
 // - Gneiss
-val TFC_Gneiss = MaterialBuilder(32012 ,"tfc_gneiss").dust(1).build();
-StoneType.create(28, "tfc_raw_gneiss", "oreGneissTfc", TFC_Gneiss, "tfc:raw/gneiss");
+StoneType.create(28, "tfc_gneiss", "ore", <material:stone>, "tfc:raw/gneiss");
 
 // - Granite
-val TFC_Granite = MaterialBuilder(32013 ,"tfc_granite").dust(1).build();
-StoneType.create(29, "tfc_raw_granite", "oreGraniteTfc", TFC_Granite, "tfc:raw/granite");
+StoneType.create(29, "tfc_granite", "ore", <material:stone>, "tfc:raw/granite");
 
 // - Komatiite
-val TFC_Komatiite = MaterialBuilder(32014 ,"tfc_komatiite").dust(1).build();
-StoneType.create(30, "tfc_raw_komatiite", "oreKomatiiteTfc", TFC_Komatiite, "tfc:raw/komatiite");
+StoneType.create(30, "tfc_komatiite", "ore", <material:stone>, "tfc:raw/komatiite");
 
 // - Limestone
-val TFC_Limestone = MaterialBuilder(32015 ,"tfc_limestone").dust(1).build();
-StoneType.create(31, "tfc_raw_limestone", "oreLimestoneTfc", TFC_Limestone, "tfc:raw/limestone");
+StoneType.create(31, "tfc_limestone", "ore", <material:stone>, "tfc:raw/limestone");
 
 // - Marble
-val TFC_Marble = MaterialBuilder(32016 ,"tfc_marble").dust(1).build();
-StoneType.create(32, "tfc_raw_marble", "oreMarble", TFC_Marble, "tfc:raw/marble");
+StoneType.create(32, "tfc_marble", "ore", <material:stone>, "tfc:raw/marble");
 
 // - Mudstone
-val TFC_Mudstone = MaterialBuilder(32017 ,"tfc_mudstone").dust(1).build();
-StoneType.create(33, "tfc_raw_mudstone", "oreMudstoneTfc", TFC_Mudstone, "tfc:raw/mudstone");
+StoneType.create(33, "tfc_mudstone", "ore", <material:stone>, "tfc:raw/mudstone");
 
 // - Novaculite
-val TFC_Novaculite = MaterialBuilder(32018 ,"tfc_novaculite").dust(1).build();
-StoneType.create(34, "tfc_raw_novaculite", "oreNovaculiteTfc", TFC_Novaculite, "tfc:raw/novaculite");
+StoneType.create(34, "tfc_novaculite", "ore", <material:stone>, "tfc:raw/novaculite");
 
 // - Peridotite
-val TFC_Peridotite = MaterialBuilder(32019 ,"tfc_peridotite").dust(1).build();
-StoneType.create(35, "tfc_raw_peridotite", "orePeridotiteTfc", TFC_Peridotite, "tfc:raw/peridotite");
+StoneType.create(35, "tfc_peridotite", "ore", <material:stone>, "tfc:raw/peridotite");
 
 // - Porphyry
-val TFC_Porphyry = MaterialBuilder(32020 ,"tfc_porphyry").dust(1).build();
-StoneType.create(36, "tfc_raw_porphyry", "orePorphyryTfc", TFC_Porphyry, "tfc:raw/porphyry");
+StoneType.create(36, "tfc_porphyry", "ore", <material:stone>, "tfc:raw/porphyry");
 
 // - Quartzite
-val TFC_Quartzite = MaterialBuilder(32021 ,"tfc_quartzite").dust(1).build();
-StoneType.create(37, "tfc_raw_quartzite", "oreQuartziteTfc", TFC_Quartzite, "tfc:raw/quartzite");
+StoneType.create(37, "tfc_quartzite", "ore", <material:stone>, "tfc:raw/quartzite");
 
 // - Rhyolite
-val TFC_Rhyolite = MaterialBuilder(32022 ,"tfc_rhyolite").dust(1).build();
-StoneType.create(38, "tfc_raw_rhyolite", "oreRhyoliteTfc", TFC_Rhyolite, "tfc:raw/rhyolite");
+StoneType.create(38, "tfc_rhyolite", "ore", <material:stone>, "tfc:raw/rhyolite");
 
 // - Rocksalt
-val TFC_Rocksalt = MaterialBuilder(32023 ,"tfc_rocksalt").dust(1).build();
-StoneType.create(39, "tfc_raw_rocksalt", "oreRocksaltTfc", TFC_Rocksalt, "tfc:raw/rocksalt");
+StoneType.create(39, "tfc_rocksalt", "ore", <material:stone>, "tfc:raw/rocksalt");
 
 // - Sandstone
-val TFC_Sandstone = MaterialBuilder(32024 ,"tfc_sandstone").dust(1).build();
-StoneType.create(40, "tfc_raw_sandstone", "oreSandstoneTfc", TFC_Sandstone, "tfc:raw/sandstone");
+StoneType.create(40, "tfc_sandstone", "ore", <material:stone>, "tfc:raw/sandstone");
 
 // - Schist
-val TFC_Schist = MaterialBuilder(32026 ,"tfc_schist").dust(1).build();
-StoneType.create(41, "tfc_raw_schist", "oreSchistTfc", TFC_Schist, "tfc:raw/schist");
+StoneType.create(41, "tfc_schist", "ore", <material:stone>, "tfc:raw/schist");
 
 // - Shale
-val TFC_Shale = MaterialBuilder(32027 ,"tfc_shale").dust(1).build();
-StoneType.create(42, "tfc_raw_shale", "oreShaleTfc", TFC_Shale, "tfc:raw/shale");
+StoneType.create(42, "tfc_shale", "ore", <material:stone>, "tfc:raw/shale");
 
 // - Siltstone
-val TFC_Siltstone = MaterialBuilder(32028 ,"tfc_siltstone").dust(1).build();
-StoneType.create(43, "tfc_raw_siltstone", "oreSiltstoneTfc", TFC_Siltstone, "tfc:raw/siltstone");
+StoneType.create(43, "tfc_siltstone", "ore", <material:stone>, "tfc:raw/siltstone");
 
 // - Slate
-val TFC_Slate = MaterialBuilder(32029 ,"tfc_slate").dust(1).build();
-StoneType.create(44, "tfc_raw_slate", "oreSlateTfc", TFC_Slate, "tfc:raw/slate");
+StoneType.create(44, "tfc_slate", "ore", <material:stone>, "tfc:raw/slate");
 
 // - Soapstone
-val TFC_Soapstone = MaterialBuilder(32030 ,"tfc_soapstone").dust(1).build();
-StoneType.create(45, "tfc_raw_soapstone", "oreSoapstoneTfc", TFC_Soapstone, "tfc:raw/soapstone");
-*/
+StoneType.create(45, "tfc_soapstone", "ore", <material:stone>, "tfc:raw/soapstone");
+
+// -- Galacticraft/GalaxySpace
+
+// - Mercury
+MaterialBuilder(32100, "mercury_stone").dust().build();
+
+// - Venus
+MaterialBuilder(32101, "venus_stone").dust().build();
+
+// - Moon
+MaterialBuilder(32102, "moon_stone").dust().build();
+
+// - Mars
+MaterialBuilder(32103, "mars_stone").dust().build();
+

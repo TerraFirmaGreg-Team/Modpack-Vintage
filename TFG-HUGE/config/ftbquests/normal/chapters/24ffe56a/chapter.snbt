@@ -3,5 +3,5 @@
 	icon: "gregtech:meta_gear 1 2013",
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: ""
+	default_quest_shape: "circle"
 }

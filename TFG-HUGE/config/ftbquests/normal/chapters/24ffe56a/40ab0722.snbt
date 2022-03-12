@@ -1,0 +1,20 @@
+{
+	title: "IV Superconductors",
+	icon: "gregtech:wire_single 1 428",
+	x: -23.5d,
+	y: -11.5d,
+	text: [
+		"This Superconductor will be required for progression during §dLuV§r (if you guessed why, congratulations, you are an expert with §2JEI§r!)."
+	],
+	dependencies: [
+		"c2e36883",
+		"cb9637e5"
+	],
+	tasks: [{
+		uid: "09d45037",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 428"
+		}]
+	}]
+}

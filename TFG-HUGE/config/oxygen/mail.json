@@ -1,0 +1,28 @@
+{
+  "version": "0.11.2:beta:0",
+  "client": {
+    "enable_mail_menu_key": true,
+    "mail_menu_key": 26
+  },
+  "server": {
+    "enable_mail_menu_access_clientside": true,
+    "mail_menu_operations_timeout_millis": 240000,
+    "allow_mail_sending": true,
+    "mailbox_size": 30,
+    "letter_expire_time_hours": 240,
+    "remittance_expire_time_hours": 24,
+    "parcel_expire_time_hours": 36,
+    "cod_expire_time_hours": 1,
+    "system_letter_expire_time_hours": 36,
+    "system_remittance_expire_time_hours": 36,
+    "system_parcel_expire_time_hours": 36,
+    "mail_sending_cooldown_seconds": 60,
+    "remittance_max_value": 100000,
+    "parcel_max_amount": 256,
+    "cod_max_value": 50000,
+    "remittance_postage_percent": 3,
+    "parcel_postage_value": 50,
+    "cod_postage_percent": 4,
+    "advanced_logging": false
+  }
+}

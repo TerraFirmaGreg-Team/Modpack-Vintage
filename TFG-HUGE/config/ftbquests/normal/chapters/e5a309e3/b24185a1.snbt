@@ -1,8 +1,8 @@
 {
 	title: "SMD Components",
 	icon: "gregtech:meta_item_1 1 523",
-	x: -4.0d,
-	y: 2.5d,
+	x: -6.5d,
+	y: -2.0d,
 	shape: "circle",
 	text: [
 		"§oAlternate components! Smaller, better, cheaper!§r",

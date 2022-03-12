@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 16.0d,
+	dependencies: [
+		"aac17657"
+	],
+	tasks: [{
+		uid: "3804328b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 462"
+		}],
+		ignore_nbt: 1b
+	}]
+}

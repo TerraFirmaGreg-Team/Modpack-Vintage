@@ -1,0 +1,19 @@
+{
+	title: "First UV Circuits!",
+	icon: "gregtech:meta_item_1 1 643",
+	x: -3.0d,
+	y: -5.5d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"7c493e64"
+	],
+	tasks: [{
+		uid: "26797386",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 643"
+		}]
+	}]
+}

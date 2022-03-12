@@ -14,14 +14,22 @@
 		"40d77c21"
 	],
 	tasks: [{
-		uid: "17c46846",
+		uid: "ac82f744",
+		type: "fluid",
+		fluid: "hydrochloric_acid"
+	}],
+	rewards: [{
+		uid: "6033e781",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "hydrochloric_acid",
-				Amount: 1000
+				Fluid: {
+					FluidName: "hydrochloric_acid",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

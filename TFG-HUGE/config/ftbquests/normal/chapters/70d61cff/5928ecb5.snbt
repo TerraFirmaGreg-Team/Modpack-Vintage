@@ -1,0 +1,41 @@
+{
+	title: "Uranium Refinement",
+	icon: "gregtech:meta_dust 1 116",
+	x: -12.5d,
+	y: -3.0d,
+	text: [
+		"§oDon't worry it's simplified enough, you won't end up on a watch list or anything...§r",
+		"",
+		"§aUranium§r has very few uses in §2GTCEu§r right now, as we have §4not yet§r implemented the §3Nuclear Reactor§r (it is planned!).",
+		"",
+		"Make §dUranium Hexafluoride§r from §aUraninite§r, this will allow you to seperate the isotopes between U238 and U235.",
+		"",
+		"§9Fluorine§r is fully recycled in the reaction, but you will need around maybe 40 buckets to bootstrap.",
+		"§9Hydrogen§r is consumed, you will need quite a lot of it. Either electrolyze a lot of water using several §3LV Electrolyzer§r for the best energy efficiency, or recycle your unused §dhydrocarbons§r such as Methane.",
+		"",
+		"§9Tip:§r You can make this setup compact by having one single §3Centrifuge§r and using a §6Fluid Regulator§r set to §dSupply Exact 1,000§r."
+	],
+	dependencies: [
+		"14263e77"
+	],
+	tasks: [{
+		uid: "9c938d92",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 3 332"
+		}],
+		count: 3L
+	},
+	{
+		uid: "3a115050",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 116"
+		}]
+	},
+	{
+		uid: "c3137587",
+		type: "fluid",
+		fluid: "uranium_hexafluoride"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -18.5d,
+	y: -1.0d,
+	text: [
+		"§oWow, that's hot :flushed:§r",
+		"",
+		"§aTungstenSteel Coils§r bring up the Heat Capacity to §d4,500K§r.",
+		"",
+		"This will be required in the §1IV§r Age, but you should still get this earlier for the §6Coil bonuses§r, as always."
+	],
+	dependencies: [
+		"c382d248"
+	],
+	tasks: [{
+		uid: "35c3099b",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 3"
+		}]
+	}]
+}

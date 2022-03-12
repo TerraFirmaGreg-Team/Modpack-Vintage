@@ -1,8 +1,8 @@
 {
 	title: "Nanoprocessor Mainframe",
 	icon: "gregtech:meta_item_1 1 635",
-	x: 2.5d,
-	y: 7.5d,
+	x: -8.0d,
+	y: 2.5d,
 	text: [
 		"No Description"
 	],

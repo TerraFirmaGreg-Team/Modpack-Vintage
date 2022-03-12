@@ -2,7 +2,7 @@
 	title: "{tfg.quests.mv.voltage.title}",
 	icon: "minecraft:tnt",
 	x: 8.0d,
-	y: -8.0d,
+	y: -7.5d,
 	description: "{tfg.quests.mv.voltage.subtitle}",
 	text: [
 		"{tfg.quests.mv.voltage.desc1}",

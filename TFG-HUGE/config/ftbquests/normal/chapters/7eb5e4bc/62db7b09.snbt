@@ -1,0 +1,21 @@
+{
+	title: "Naquadah Coils",
+	icon: "gregtech:wire_coil 1 5",
+	x: -7.5d,
+	y: -1.0d,
+	text: [
+		"No Description"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"e0995a94"
+	],
+	tasks: [{
+		uid: "b1097736",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 5"
+		}],
+		count: 16L
+	}]
+}

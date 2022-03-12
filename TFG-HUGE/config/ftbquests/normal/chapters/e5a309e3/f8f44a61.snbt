@@ -1,8 +1,8 @@
 {
 	title: "More HV Circuits",
 	icon: "gregtech:meta_item_1 1 629",
-	x: -2.0d,
-	y: -4.0d,
+	x: -4.5d,
+	y: -7.5d,
 	shape: "circle",
 	text: [
 		"Better HV Circuits, much §6cheaper§r and easier to make than from the previous Tier.",

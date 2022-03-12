@@ -1,8 +1,8 @@
 {
 	title: "Upgrading your EBF III",
 	icon: "gregtech:machine 1 1214",
-	x: 3.0d,
-	y: -3.0d,
+	x: -1.5d,
+	y: -5.0d,
 	text: [
 		"No Description"
 	],

@@ -1,0 +1,34 @@
+{
+	title: "Nether Stars",
+	icon: "minecraft:nether_star",
+	x: -8.5d,
+	y: -5.5d,
+	text: [
+		"§oHey look! It's the default icon for BetterQuesting Quests... this time used accordingly.§r",
+		"",
+		"§aNether Stars§r are used for high tier §dSensors§r, §dEmitters§r and §dField Generators§r.",
+		"",
+		"You can also use them for §dBeacons§r, if you desire the permanent potion effects. Vanilla for you!",
+		"",
+		"On the topic of §aNether Air§r which is required in the recipe: you can consider §9Liquid Nether Air§r Distillation if you wish, it's... decent."
+	],
+	dependencies: [
+		"8d718783",
+		"1b3dd762"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "00921c0b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 1602"
+		}]
+	},
+	{
+		uid: "58072c49",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}]
+}

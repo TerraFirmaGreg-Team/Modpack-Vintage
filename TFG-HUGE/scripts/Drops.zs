@@ -1,12 +1,5 @@
 import mods.dropt.Dropt;
 
-//Фикс луж
-/*
-Dropt.list("Puddles_Fix").add(Dropt.rule()
-  .matchDrops([<puddles:puddle>])
-  .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop()));*/
-
 //Urns TODO
 Dropt.list("Urn_disables").add(Dropt.rule()
   .matchBlocks(["tfcflorae:storage/urn_loot"])
@@ -43,6 +36,10 @@ Dropt.list("Sea_Ice").add(Dropt.rule()
   .addDrop(Dropt.drop().items([<cellars:packed_ice_shard>])));
 
 //Исправление GC
+Dropt.list("Cobble").add(Dropt.rule()
+  .matchDrops([<minecraft:cobblestone>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));
 Dropt.list("Dirt")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/basalt>])));

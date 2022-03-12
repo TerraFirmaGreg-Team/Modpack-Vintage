@@ -2,7 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-//Удаление рецептов + скрытие
+// Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:material:46>,
 	<appliedenergistics2:material:2>,
@@ -30,7 +30,7 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-//Удаление рецептов
+// Удаление рецептов
 val RemoveItemRecipes as IItemStack[] = [
 	//Блоки
 	<appliedenergistics2:fluix_block>,
@@ -138,47 +138,33 @@ for item in RemoveItemRecipes{
     recipes.remove(item);
 }
 
-//Убирание рецептов
-recipes.removeByRecipeName("appliedenergistics2:decorative/quartz_block_pure");
-recipes.removeByRecipeName("appliedenergistics2:tools/misctools_charged_staff");
-recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");
-recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_comparator");
-recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
-recipes.removeByRecipeName("appliedenergistics2:network/crafting/molecular_assembler");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/covered_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/smart_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_smart_fluix");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix_clean");
-recipes.removeByRecipeName("appliedenergistics2:network/cables/dense_covered_fluix");
-//Рецепты
+// Поименное удаление рецептов
+val RemoveItemRecipesByName = [
+    "appliedenergistics2:decorative/quartz_block_pure",
+	"appliedenergistics2:tools/misctools_charged_staff",
+	"appliedenergistics2:network/blocks/fluid_interfaces_interface",
+	"appliedenergistics2:network/blocks/interfaces_interface",
+	"appliedenergistics2:misc/vanilla_comparator",
+	"appliedenergistics2:misc/vanilla_daylight_detector",
+	"appliedenergistics2:network/crafting/molecular_assembler",
+	"appliedenergistics2:network/cables/covered_fluix_clean",
+	"appliedenergistics2:network/cables/covered_fluix",
+	"appliedenergistics2:network/cables/glass_fluix_clean",
+	"appliedenergistics2:network/cables/glass_fluix",
+	"appliedenergistics2:network/cables/smart_fluix_clean",
+	"appliedenergistics2:network/cables/smart_fluix",
+	"appliedenergistics2:network/cables/dense_smart_fluix_clean",
+	"appliedenergistics2:network/cables/dense_smart_fluix",
+	"appliedenergistics2:network/cables/dense_covered_fluix_clean",
+	"appliedenergistics2:network/cables/dense_covered_fluix"
+] as string[];
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
 
+// --- Рецепты
 
-//Покраска и обесвечивание кабелей
-//Жидкая краска
-val dyes = [
-	<liquid:dye_white> * 18,
-	<liquid:dye_orange> * 18,
-	<liquid:dye_magenta> * 18,
-	<liquid:dye_light_blue> * 18,
-	<liquid:dye_yellow> * 18,
-	<liquid:dye_lime> * 18,
-	<liquid:dye_pink> * 18,
-	<liquid:dye_gray> * 18,
-	<liquid:dye_light_gray> * 18,
-	<liquid:dye_cyan> * 18,
-	<liquid:dye_purple> * 18,
-	<liquid:dye_blue> * 18,
-	<liquid:dye_brown> * 18,
-	<liquid:dye_green> * 18,
-	<liquid:dye_red> * 18,
-	<liquid:dye_black> * 18
-] as ILiquidStack[];
+// Покраска и обесвечивание кабелей
 // Glass Cables
 var colored_GlassCable = [
 	<appliedenergistics2:part>,
@@ -203,7 +189,7 @@ for i, cable in colored_GlassCable {
     recipes.remove(cable);
     chemical_bath.recipeBuilder()
         .inputs(<appliedenergistics2:part:16>)
-        .fluidInputs([dyes[i]])
+        .fluidInputs([All_Liquid_Dyes[i] * 8])
         .outputs(cable)
         .duration(40)
         .EUt(16)
@@ -248,7 +234,7 @@ for i, cable in colored_CoveredCable {
     recipes.remove(cable);
     chemical_bath.recipeBuilder()
         .inputs(<appliedenergistics2:part:36>)
-        .fluidInputs([dyes[i]])
+        .fluidInputs([All_Liquid_Dyes[i] * 8])
         .outputs(cable)
         .duration(40)
         .EUt(16)
@@ -312,7 +298,7 @@ for i, cable in colored_SmartCable {
     recipes.remove(cable);
     chemical_bath.recipeBuilder()
         .inputs(<appliedenergistics2:part:56>)
-        .fluidInputs([dyes[i]])
+        .fluidInputs([All_Liquid_Dyes[i] * 8])
         .outputs(cable)
         .duration(40)
         .EUt(16)
@@ -360,7 +346,7 @@ for i, cable in colored_DenseSmartCable {
     recipes.remove(cable);
     chemical_bath.recipeBuilder()
         .inputs(<appliedenergistics2:part:76>)
-        .fluidInputs([dyes[i]])
+        .fluidInputs([All_Liquid_Dyes[i] * 8])
         .outputs(cable)
         .duration(40)
         .EUt(16)
@@ -409,7 +395,7 @@ for i, cable in colored_DenseCoveredCable {
     recipes.remove(cable);
     chemical_bath.recipeBuilder()
         .inputs(<appliedenergistics2:part:516>)
-        .fluidInputs([dyes[i]])
+        .fluidInputs([All_Liquid_Dyes[i] * 8])
         .outputs(cable)
         .duration(40)
         .EUt(16)
@@ -858,27 +844,27 @@ assembly_line.recipeBuilder()
 	 .inputs(<metaitem:emitter.iv> * 16)
 	 .inputs(<appliedenergistics2:material:24> * 8)
    .inputs(<metaitem:sensor.iv> * 14)
-   .inputs(<appliedenergistics2:dense_energy_cell>)
-	 .inputs(<appliedenergistics2:material:22>)
-   .circuit(12)
+		.inputs(<appliedenergistics2:dense_energy_cell>)
+		.inputs(<appliedenergistics2:material:22>)
+		.circuit(12)
    .fluidInputs([<liquid:titanium> * 1188])
-   .outputs(<appliedenergistics2:quantum_ring>)
-   .duration(900)
-   .EUt(8300)
-   .buildAndRegister();
+		.outputs(<appliedenergistics2:quantum_ring>)
+		.duration(900)
+		.EUt(8300)
+		.buildAndRegister();
 //Камера квантового моста
 assembly_line.recipeBuilder()
    .inputs(<appliedenergistics2:material:9> * 8)
    .inputs(<appliedenergistics2:quartz_vibrant_glass> * 6)
 	 .inputs(<appliedenergistics2:material:24> * 8)
    .inputs(<metaitem:sensor.iv> * 14)
-   .inputs(<appliedenergistics2:dense_energy_cell>)
-   .circuit(12)
+		.inputs(<appliedenergistics2:dense_energy_cell>)
+		.circuit(12)
    .fluidInputs([<liquid:titanium> * 1088])
-   .outputs(<appliedenergistics2:quantum_link>)
-   .duration(700)
-   .EUt(8300)
-   .buildAndRegister();
+		.outputs(<appliedenergistics2:quantum_link>)
+		.duration(700)
+		.EUt(8300)
+		.buildAndRegister();
 //Пилон
 recipes.addShaped(<appliedenergistics2:spatial_pylon>, [
 	[<ore:plateTitanium>, <appliedenergistics2:part:16>, <ore:plateTitanium>],

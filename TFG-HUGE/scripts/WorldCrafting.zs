@@ -27,7 +27,6 @@ FluidToItem.transform(<ore:dustSmallPentlandite>.firstItem * 2, <liquid:fresh_wa
 FluidToItem.transform(<ore:dustSmallCobalt>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCobalt>]);
 FluidToItem.transform(<ore:dustSmallCobaltite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureCobaltite>]);
 //Вариации Цинка
-FluidToItem.transform(<ore:dustSmallZinc>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureZinc>]);
 FluidToItem.transform(<ore:dustSmallSphalerite>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureSphalerite>]);
 //Вариации Свинца
 FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureLead>]);
@@ -72,7 +71,6 @@ FluidToItem.transform(<ore:dustSmallPentlandite>.firstItem * 2, <liquid:salt_wat
 FluidToItem.transform(<ore:dustSmallCobalt>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureCobalt>]);
 FluidToItem.transform(<ore:dustSmallCobaltite>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureCobaltite>]);
 //Вариации Цинка
-FluidToItem.transform(<ore:dustSmallZinc>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureZinc>]);
 FluidToItem.transform(<ore:dustSmallSphalerite>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureSphalerite>]);
 //Вариации Свинца
 FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureLead>]);

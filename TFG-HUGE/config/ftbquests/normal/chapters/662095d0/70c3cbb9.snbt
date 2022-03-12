@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.diesel.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "fuel",
-			Amount: 1000
-		}
-	},
 	x: 4.0d,
 	y: -14.0d,
 	description: "{tfg.quests.mv.diesel.subtitle}",
@@ -29,14 +22,22 @@
 		"d4f362aa"
 	],
 	tasks: [{
-		uid: "793aec0a",
+		uid: "2e961430",
+		type: "fluid",
+		fluid: "fuel"
+	}],
+	rewards: [{
+		uid: "42518e15",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "fuel",
-				Amount: 1000
+				Fluid: {
+					FluidName: "fuel",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

@@ -1,8 +1,11 @@
 import crafttweaker.item.IItemStack;
 
-//Удаление групп
+import mods.chisel.Carving;
 
-//Удаление рецептов
+// Удаление групп
+Carving.removeGroup("basalt");
+
+// Удаление рецептов
 val RemoveItemsFromJEI as IItemStack[] = [
 	<chisel:chisel_iron>,
 	<chisel:chisel_diamond>,
@@ -58,86 +61,86 @@ for item in RemoveItemsFromJEI{
     recipes.remove(item);
 }
 
-//Создание рецептов
-//Железная стамеска
+// Создание рецептов
+// Железная стамеска
 recipes.addShaped(<chisel:chisel_iron>,
 [[null, <ore:plateWroughtIron>, null],
  [null, <ore:chisel>, null],
  [null, <ore:stickWood>, null]]);
 
-//Алмазная стамеска
+// Алмазная стамеска
 recipes.addShaped(<chisel:chisel_diamond>,
 [[null, <ore:plateDiamond>, null],
  [null, <ore:chisel>, null],
  [null, <ore:stickWood>, null]]);
 
-//Современная стамеска
+// Современная стамеска
 recipes.addShaped(<chisel:chisel_hitech>,
 [[null, <ore:plateBlueSteel>, null],
  [null, <chisel:chisel_diamond>, null],
  [null, <ore:stickWood>, null]]);
  
-//Стамеска каменная
+// Стамеска каменная
 recipes.addShaped(<chiselsandbits:chisel_stone>,
 [[null, null, null],
  [null, <ore:stone>, null],
  [null, <ore:stickWood>, null]]);
  
-//Стамеска железная
+// Стамеска железная
 recipes.addShaped(<chiselsandbits:chisel_iron>,
 [[null, null, null],
  [null, <ore:plateWroughtIron>, null],
  [null, <ore:stickWood>, null]]);
  
-//Стамеска золотая
+// Стамеска золотая
 recipes.addShaped(<chiselsandbits:chisel_gold>,
 [[null, null, null],
  [null, <ore:plateRoseGold>, null],
  [null, <ore:stickWood>, null]]);
  
-//Стамеска алмазная
+// Стамеска алмазная
 recipes.addShaped(<chiselsandbits:chisel_diamond>,
 [[null, null, null],
  [null, <ore:gemExquisiteDiamond>, null],
  [null, <ore:stickWood>, null]]);
  
-//Пила алмазная
+// Пила алмазная
 recipes.addShaped(<chiselsandbits:bitsaw_diamond>,
 [[null, null, null],
  [null, <ore:toolHeadSawDiamond>, null],
  [<ore:stickWood>, null, null]]);
  
-//Мешок для данек
+// Мешок для данек
 recipes.addShaped(<chiselsandbits:bit_bag>,
 [[<ore:leather>, <ore:wool>, <ore:leather>],
  [<ore:wool>, null, <ore:wool>],
  [<ore:leather>, <ore:wool>, <ore:leather>]]);
  
-//Лабораторный блок
+// Лабораторный блок
 recipes.addShaped(<chisel:laboratory>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
  [<ore:stone>, <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
-//Храмовый блок
+// Храмовый блок
 recipes.addShaped(<chisel:temple>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
  [<ore:stone>, <ore:dyeCyan>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
-//Тириан блок
+// Тириан блок
 recipes.addShaped(<chisel:tyrian>*8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
  [<ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
-//Фактори блок
+// Фактори блок
 recipes.addShaped(<chisel:factory>*8,
 [[<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>],
  [<ore:stone>, null, <ore:stone>],
  [<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>]]);
  
-//Бровн стоун
+// Бровн стоун
 recipes.addShaped(<chisel:brownstone>*8,
 [[<ore:sand>, <ore:sand>, <ore:sand>],
  [<ore:sand>, <minecraft:clay_ball>, <ore:sand>],

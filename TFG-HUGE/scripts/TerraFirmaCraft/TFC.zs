@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDict;
+import crafttweaker.liquid.ILiquidStack;
+
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
@@ -10,7 +10,7 @@ import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
 
-// Удаление + скрытие
+// Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	// Pickaxe
 	<tfc:metal/pick/bismuth_bronze>,
@@ -282,21 +282,6 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-// Удаление неиспользуемых рецептов из Quern
-val RemoveItemsFromQuern as IItemStack[] = [
-	<tfc:gem/diamond:2>,
-	<tfc:powder/fertilizer>,
-	<tfc:powder/malachite>,
-	<tfc:powder/limonite>,
-	<tfc:ore/gypsum>,
-	<tfc:powder/hematite>,
-	<minecraft:redstone> * 8,
-	<tfc:powder/flux> * 6,
-];
-for item in RemoveItemsFromQuern{
-    Quern.removeRecipe(item);
-}
-
 // Удаление рецептов
 val RemoveItemRecipesByName = [
     "tfc:vanilla/redstone/observer",
@@ -319,6 +304,23 @@ val RemoveItemRecipesByName = [
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
+
+// Удаление неиспользуемых рецептов из Quern
+val RemoveItemsFromQuern as IItemStack[] = [
+	<tfc:gem/diamond:2>,
+	<tfc:powder/fertilizer>,
+	<tfc:powder/malachite>,
+	<tfc:powder/limonite>,
+	<tfc:ore/gypsum>,
+	<tfc:powder/hematite>,
+	<minecraft:redstone> * 8,
+	<tfc:powder/flux> * 6,
+];
+for item in RemoveItemsFromQuern{
+    Quern.removeRecipe(item);
+}
+
+// --- Рецепты
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
@@ -577,39 +579,39 @@ for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
 
 // Quern - GT ore --> GT crushed ore
 // - Copper
-Quern.addRecipe("GTOreToTFC_Copper", <gregtech:ore_copper_0>, <ore:crushedCopper>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Malachite", <gregtech:ore_malachite_0>, <ore:crushedMalachite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Tetrahedrite", <gregtech:ore_tetrahedrite_0>, <ore:crushedTetrahedrite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Bornite", <gregtech:ore_bornite_0>, <ore:crushedBornite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Chalcopyrite", <gregtech:ore_chalcopyrite_0>, <ore:crushedChalcopyrite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Chalcocite", <gregtech:ore_chalcocite_0>, <ore:crushedChalcocite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Copper", <ore:oreCopper>, <metaitem:crushedCopper> * 2);
+Quern.addRecipe("GTOreToTFC_Malachite", <ore:oreMalachite>, <metaitem:crushedMalachite> * 2);
+Quern.addRecipe("GTOreToTFC_Tetrahedrite", <ore:oreTetrahedrite>, <metaitem:crushedTetrahedrite> * 2);
+Quern.addRecipe("GTOreToTFC_Bornite", <ore:oreBornite>, <metaitem:crushedBornite> * 2);
+Quern.addRecipe("GTOreToTFC_Chalcopyrite", <ore:oreChalcopyrite>, <metaitem:crushedChalcopyrite> * 2);
+Quern.addRecipe("GTOreToTFC_Chalcocite", <ore:oreChalcocite>, <metaitem:crushedChalcocite> * 2);
 // - Tin
-Quern.addRecipe("GTOreToTFC_Tin", <gregtech:ore_tin_0>, <ore:crushedTin>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Cassiterite", <gregtech:ore_cassiterite_0>, <ore:crushedCassiterite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_CassiteriteSand", <gregtech:ore_cassiterite_sand_0>, <ore:crushedCassiteriteSand>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Tin", <ore:oreTin>, <metaitem:crushedTin> * 2);
+Quern.addRecipe("GTOreToTFC_Cassiterite", <ore:oreCassiterite>, <metaitem:crushedCassiterite> * 2);
+Quern.addRecipe("GTOreToTFC_CassiteriteSand", <ore:oreCassiteriteSand>, <metaitem:crushedCassiteriteSand> * 2);
 // - Iron
-Quern.addRecipe("GTOreToTFC_Iron", <gregtech:ore_iron_0>, <ore:crushedIron>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Pyrite", <gregtech:ore_pyrite_0>, <ore:crushedPyrite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_YellowLimonite", <gregtech:ore_yellow_limonite_0>, <ore:crushedYellowLimonite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Magnetite", <gregtech:ore_magnetite_0>, <ore:crushedMagnetite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_BrownLimonite", <gregtech:ore_brown_limonite_0>, <ore:crushedBrownLimonite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_BandedIron", <gregtech:ore_banded_iron_0>, <ore:crushedBandedIron>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Iron", <ore:oreIron>, <metaitem:crushedIron> * 2);
+Quern.addRecipe("GTOreToTFC_Pyrite", <ore:orePyrite>, <metaitem:crushedPyrite> * 2);
+Quern.addRecipe("GTOreToTFC_YellowLimonite", <ore:oreYellowLimonite>, <metaitem:crushedYellowLimonite> * 2);
+Quern.addRecipe("GTOreToTFC_Magnetite", <ore:oreMagnetite>, <metaitem:crushedMagnetite> * 2);
+Quern.addRecipe("GTOreToTFC_BrownLimonite", <ore:oreBrownLimonite>, <metaitem:crushedBrownLimonite> * 2);
+Quern.addRecipe("GTOreToTFC_BandedIron", <ore:oreBandedIron>, <metaitem:crushedBandedIron> * 2);
 // - Nickel
-Quern.addRecipe("GTOreToTFC_Nickel", <gregtech:ore_nickel_0>, <ore:crushedNickel>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Garnierite", <gregtech:ore_garnierite_0>, <ore:crushedGarnierite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Pentlandite", <gregtech:ore_pentlandite_0>, <ore:crushedPentlandite>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Nickel", <ore:oreNickel>, <metaitem:crushedNickel> * 2);
+Quern.addRecipe("GTOreToTFC_Garnierite", <ore:oreGarnierite>, <metaitem:crushedGarnierite> * 2);
+Quern.addRecipe("GTOreToTFC_Pentlandite", <ore:orePentlandite>, <metaitem:crushedPentlandite> * 2);
 // - Galena
-Quern.addRecipe("GTOreToTFC_Galena", <gregtech:ore_galena_0>, <ore:crushedGalena>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Lead", <gregtech:ore_lead_0>, <ore:crushedLead>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Galena", <ore:oreGalena>, <metaitem:crushedGalena> * 2);
+Quern.addRecipe("GTOreToTFC_Lead", <ore:oreLead>, <metaitem:crushedLead> * 2);
 // - Other
-Quern.addRecipe("GTOreToTFC_Gold", <gregtech:ore_gold_0>, <ore:crushedGold>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Silver", <gregtech:ore_silver_0>, <ore:crushedSilver>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Sphalerite", <gregtech:ore_sphalerite_0>, <ore:crushedSphalerite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Sulfur", <gregtech:ore_sulfur_0>, <ore:crushedSulfur>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_RockSalt", <gregtech:ore_rock_salt_0>, <ore:crushedRockSalt>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Graphite", <gregtech:ore_graphite_0>, <ore:crushedGraphite>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Mica", <gregtech:ore_mica_0>, <ore:crushedMica>.firstItem * 2);
-Quern.addRecipe("GTOreToTFC_Bismuth", <gregtech:ore_bismuth_0>, <ore:crushedBismuth>.firstItem * 2);
+Quern.addRecipe("GTOreToTFC_Gold", <ore:oreGold>, <metaitem:crushedGold> * 2);
+Quern.addRecipe("GTOreToTFC_Silver", <ore:oreSilver>, <metaitem:crushedSilver> * 2);
+Quern.addRecipe("GTOreToTFC_Sphalerite", <ore:oreSphalerite>, <metaitem:crushedSphalerite> * 2);
+Quern.addRecipe("GTOreToTFC_Sulfur", <ore:oreSulfur>, <metaitem:crushedSulfur> * 2);
+Quern.addRecipe("GTOreToTFC_RockSalt", <ore:oreRockSalt>, <metaitem:crushedRockSalt> * 2);
+Quern.addRecipe("GTOreToTFC_Graphite", <ore:oreGraphite>, <metaitem:crushedGraphite> * 2);
+Quern.addRecipe("GTOreToTFC_Mica", <ore:oreMica>, <metaitem:crushedMica> * 2);
+Quern.addRecipe("GTOreToTFC_Bismuth", <ore:oreBismuth>, <metaitem:crushedBismuth> * 2);
 
 // Macerator recipes for Quern/Grindstone recipes
 for i, TFC_QuernToMaceratorOutput in TFC_QuernToMaceratorOutput {
@@ -654,21 +656,37 @@ mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid
 mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_black> * 144]).remove();
 
 //Цемент из тфк --> цемент разных цветов
+// White Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_white> * 144]).outputs(<minecraft:concrete_powder> * 4).duration(15).EUt(7).buildAndRegister();
+// Orange Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_orange> * 144]).outputs(<minecraft:concrete_powder:1> * 4).duration(15).EUt(7).buildAndRegister();
+// Magenta Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_magenta> * 144]).outputs(<minecraft:concrete_powder:2> * 4).duration(15).EUt(7).buildAndRegister();
+// Light Blue Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_light_blue> * 144]).outputs(<minecraft:concrete_powder:3> * 4).duration(15).EUt(7).buildAndRegister();	
+// Yellow Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_yellow> * 144]).outputs(<minecraft:concrete_powder:4> * 4).duration(15).EUt(7).buildAndRegister();	
+// Lime Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_lime> * 144]).outputs(<minecraft:concrete_powder:5> * 4).duration(15).EUt(7).buildAndRegister();	
+// Pink Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_pink> * 144]).outputs(<minecraft:concrete_powder:6> * 4).duration(15).EUt(7).buildAndRegister();	
+// Gray Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_gray> * 144]).outputs(<minecraft:concrete_powder:7> * 4).duration(15).EUt(7).buildAndRegister();
+// Light Gray Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_light_gray> * 144]).outputs(<minecraft:concrete_powder:8> * 4).duration(15).EUt(7).buildAndRegister();
+// Cyan Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_cyan> * 144]).outputs(<minecraft:concrete_powder:9> * 4).duration(15).EUt(7).buildAndRegister();
+// Purple Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_purple> * 144]).outputs(<minecraft:concrete_powder:10> * 4).duration(15).EUt(7).buildAndRegister();
+// Blue Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_blue> * 144]).outputs(<minecraft:concrete_powder:11> * 4).duration(15).EUt(7).buildAndRegister();
+// Brown Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_brown> * 144]).outputs(<minecraft:concrete_powder:12> * 4).duration(15).EUt(7).buildAndRegister();
+// Green Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_green> * 144]).outputs(<minecraft:concrete_powder:13> * 4).duration(15).EUt(7).buildAndRegister();
+// Red Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_red> * 144]).outputs(<minecraft:concrete_powder:14> * 4).duration(15).EUt(7).buildAndRegister();
+// Black Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_black> * 144]).outputs(<minecraft:concrete_powder:15> * 4).duration(15).EUt(7).buildAndRegister();
 
 // Переработка тфк еды в метан
@@ -758,9 +776,6 @@ furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 Barrel.removeRecipe(<liquid:rum> * 500);
 Barrel.addRecipe("tfg:rum", <minecraft:sugar>, <liquid:hot_water> * 500, <liquid:rum> * 500, 72);
 
-// Гниль из Forestry в удобрение
-Quern.addRecipe("forestry_mulch_to_fertilizer", <forestry:mulch>, <tfc:powder/fertilizer>);
-
 // Фикс бронзовой пыли
 recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
@@ -772,25 +787,27 @@ recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:crafting
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
 
-// Рецепты теплой воды
-fluid_heater.recipeBuilder()
-	.fluidInputs(<liquid:fresh_water> * 100)
-	.fluidOutputs(<liquid:hot_water> * 100)
-	.duration(600).EUt(2).buildAndRegister();
-fluid_heater.recipeBuilder()
-	.fluidInputs(<liquid:water> * 100)
-	.fluidOutputs(<liquid:hot_water> * 100)
-	.duration(600).EUt(2).buildAndRegister();
+// // Рецепты теплой воды
+// fluid_heater.recipeBuilder()
+// 	.circuit(5)
+// 	.fluidInputs([<liquid:fresh_water> * 100])
+// 	.fluidOutputs([<liquid:hot_water> * 100])
+// 	.duration(600).EUt(2).buildAndRegister();
+// fluid_heater.recipeBuilder()
+// 	.circuit(4)
+// 	.fluidInputs([<liquid:water> * 100])
+// 	.fluidOutputs([<liquid:hot_water> * 100])
+// 	.duration(600).EUt(2).buildAndRegister();
 
 // Рецепты свежей воды
 vacuum_freezer.recipeBuilder()
-	.fluidInputs(<liquid:hot_water> * 100)
-	.fluidOutputs(<liquid:fresh_water> * 100)
+	.fluidInputs([<liquid:hot_water> * 100])
+	.fluidOutputs([<liquid:fresh_water> * 100])
 	.duration(1000).EUt(128).buildAndRegister();
 centrifuge.recipeBuilder()
-	.fluidInputs(<liquid:water> * 100)
+	.fluidInputs([<liquid:water> * 100])
 	.circuit(5)
-	.fluidOutputs(<liquid:fresh_water> * 100)
+	.fluidOutputs([<liquid:fresh_water> * 100])
 	.duration(750).EUt(32).buildAndRegister();
 
 // Фикс ведер
@@ -942,3 +959,115 @@ chemical_bath.recipeBuilder()
 	.fluidInputs(<liquid:distilled_water> * 100)
 	.outputs(<minecraft:paper>)
 	.duration(100).EUt(7).buildAndRegister();
+
+// Fertilizer
+autoclave.recipeBuilder()
+  .inputs(<ore:dustDarkAsh> * 12)
+	.fluidInputs([<liquid:hot_water> * 20])
+  .outputs(<ore:dustFertilizer>.firstItem * 8)
+  .chancedOutput(<ore:dustFertilizer>.firstItem * 6, 3000, 1000)
+  .EUt(20).duration(200).buildAndRegister();
+
+
+// Greenhouse logs
+for i, sapling in TFC_Saplings {
+  greenhouse.recipeBuilder()
+    .circuit(1)
+    .inputs(sapling)
+    .fluidInputs([<liquid:fresh_water> * 1000])
+    .outputs(TFC_Logs[i].withAmount(10))
+		.outputs(sapling.withAmount(6))
+		// .chancedOutput(TFC_Logs[i].withAmount(10), 3000, 1000)
+    .duration(1200)
+    .EUt(40)
+    .buildAndRegister();
+
+  greenhouse.recipeBuilder()
+    .circuit(2)
+    .inputs(sapling)
+    .inputs(<ore:dustBone> * 4)
+    .fluidInputs([<liquid:fresh_water> * 1000])
+    .outputs(TFC_Logs[i].withAmount(15))
+		.outputs(sapling.withAmount(12))
+    // .chancedOutput(TFC_Logs[i].withAmount(20), 5000, 1000)
+    .duration(900)
+    .EUt(60)
+    .buildAndRegister();
+}
+
+// Greenhouse Rubber
+greenhouse.recipeBuilder()
+  .circuit(1)
+  .inputs(<tfc:wood/sapling/rubber_fig> * 2)
+  .fluidInputs([<liquid:fresh_water> * 1000])
+  .outputs(<tfc:wood/log/rubber_fig> * 7)
+	.outputs(<tfc:wood/sapling/rubber_fig> * 3)
+	.outputs(<metaitem:rubber_drop> * 4)
+	// .chancedOutput(<tfc:wood/log/rubber_fig> * 14, 2000, 1000)
+	// .chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 3000, 1000)
+  .duration(1200)
+  .EUt(40)
+  .buildAndRegister();
+
+greenhouse.recipeBuilder()
+  .circuit(2)
+  .inputs(<tfc:wood/sapling/rubber_fig> * 2)
+  .inputs(<ore:dustBone> * 4)
+  .fluidInputs([<liquid:fresh_water> * 1000])
+  .outputs(<tfc:wood/log/rubber_fig> * 14)
+	.outputs(<tfc:wood/sapling/rubber_fig> * 3)
+	.outputs(<metaitem:rubber_drop> * 8)
+	// .chancedOutput(<tfc:wood/log/rubber_fig> * 20, 3000, 1000)
+	// .chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 5000, 1000)
+  .duration(900)
+  .EUt(60)
+  .buildAndRegister();
+
+greenhouse.recipeBuilder()
+  .circuit(3)
+  .inputs(<tfc:wood/sapling/hevea> * 2)
+  .fluidInputs([<liquid:fresh_water> * 1000])
+	.outputs(<tfc:wood/log/hevea> * 7)
+  .outputs(<tfc:wood/sapling/hevea> * 3)
+	.outputs(<metaitem:rubber_drop> * 4)
+	// .chancedOutput(<tfc:wood/sapling/hevea> * 5, 3000, 1000)
+	// .chancedOutput(<tfc:wood/log/hevea> * 14, 2000, 1000)
+  .duration(1200)
+  .EUt(40)
+  .buildAndRegister();
+
+greenhouse.recipeBuilder()
+  .circuit(4)
+  .inputs(<tfc:wood/sapling/hevea> * 2)
+  .inputs(<ore:dustBone> * 4)
+  .fluidInputs([<liquid:fresh_water> * 1000])
+  .outputs(<tfc:wood/log/hevea> * 14)
+	.outputs(<tfc:wood/sapling/hevea> * 4)
+	.outputs(<metaitem:rubber_drop> * 8)
+	// .chancedOutput(<tfc:wood/log/hevea> * 20, 2000, 1000)
+	// .chancedOutput(<tfc:wood/sapling/hevea> * 5, 5000, 1000)
+  .duration(900)
+  .EUt(60)
+  .buildAndRegister();		
+
+// Greenhouse Plants
+for i, seed in All_Seeds {
+  greenhouse.recipeBuilder()
+    .circuit(6)
+    .inputs([seed])
+    .fluidInputs([<liquid:fresh_water> * 1000])
+    .outputs(All_Plants[i])
+    .duration(1200)
+    .EUt(40)
+    .buildAndRegister();
+
+  greenhouse.recipeBuilder()
+    .circuit(7)
+    .inputs([seed])
+    .inputs(<ore:dustBone> * 4)
+    .fluidInputs([<liquid:fresh_water> * 1000])
+    .outputs(All_Plants[i].withAmount(All_Plants[i].amount * 6))
+    .duration(900)
+    .EUt(60)
+    .buildAndRegister();
+}

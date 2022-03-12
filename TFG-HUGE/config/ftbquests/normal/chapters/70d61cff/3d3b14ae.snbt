@@ -1,8 +1,8 @@
 {
 	title: "Advanced Circuit Boards",
 	icon: "gregtech:meta_item_1 1 404",
-	x: -4.5d,
-	y: 0.0d,
+	x: -5.0d,
+	y: 3.5d,
 	text: [
 		"No Description"
 	],

@@ -1,0 +1,19 @@
+{
+	x: -6.0d,
+	y: 10.0d,
+	dependencies: [
+		"74286683"
+	],
+	tasks: [{
+		uid: "91c5489a",
+		type: "item",
+		items: [{
+			id: "aeadditions:storage.fluid.portable",
+			tag: {
+				power: 20000.0d,
+				fuzzyMode: "IGNORE_ALL"
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

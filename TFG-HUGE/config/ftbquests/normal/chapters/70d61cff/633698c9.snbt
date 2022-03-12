@@ -1,8 +1,8 @@
 {
 	title: "NAND Gates",
 	icon: "gregtech:meta_item_1 1 575",
-	x: 6.0d,
-	y: 7.5d,
+	x: -11.0d,
+	y: 3.5d,
 	text: [
 		"No Description"
 	],

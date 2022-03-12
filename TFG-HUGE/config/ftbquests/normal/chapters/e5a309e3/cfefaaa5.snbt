@@ -2,7 +2,7 @@
 	title: "Upgrade your EBF II",
 	icon: "gregtech:machine 1 1213",
 	x: -1.0d,
-	y: 4.0d,
+	y: -4.0d,
 	shape: "circle",
 	text: [
 		"So you can run off HV Generators."

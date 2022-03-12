@@ -1,0 +1,22 @@
+{
+	title: "Shredding your Ores with further more Byproducts",
+	icon: "gregtech:machine 1 69",
+	x: -17.5d,
+	y: 0.0d,
+	text: [
+		"Better Ore Processing for §6chanced Byproducts§r, only at the cost of this §3Macerator§r! A must have.",
+		"",
+		"And now, is it finally time for mass ore processing automation...? §oYes?§r",
+		"The next Quest will help you with that!"
+	],
+	dependencies: [
+		"a4804e63"
+	],
+	tasks: [{
+		uid: "04f07686",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 69"
+		}]
+	}]
+}

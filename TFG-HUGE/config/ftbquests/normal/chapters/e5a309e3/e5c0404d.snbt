@@ -1,8 +1,8 @@
 {
 	title: "Digital Interface Cover",
 	icon: "gregtech:meta_item_1 1 312",
-	x: -5.0d,
-	y: 4.0d,
+	x: -6.5d,
+	y: -3.0d,
 	shape: "circle",
 	text: [
 		"The §9Digital Interface Cover (DIC)§r is a visual Cover. It can show useful things like the status and progress of Machines, or the amount of fluids stored in a Super Tank.",

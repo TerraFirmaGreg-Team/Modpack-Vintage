@@ -7,8 +7,8 @@
 			FluidName: "gasoline"
 		}
 	},
-	x: -7.0d,
-	y: 5.0d,
+	x: 0.5d,
+	y: 5.5d,
 	text: [
 		"Gasoline is extremely powerful combustion fuel. It's better than Cetane Diesel!"
 	],

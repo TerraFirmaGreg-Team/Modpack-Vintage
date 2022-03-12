@@ -1,7 +1,7 @@
 {
 	title: "More SMD Components",
-	x: -6.0d,
-	y: 2.5d,
+	x: -8.0d,
+	y: -2.0d,
 	text: [
 		"§aPlatinum§r (needed for SMD Diodes) has its own dedicated Quest in the §5EV§r tab.",
 		"",

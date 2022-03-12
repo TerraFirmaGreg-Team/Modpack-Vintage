@@ -1,0 +1,53 @@
+{
+	title: "Large Gas Turbine",
+	icon: "gregtech:machine 1 1011",
+	x: -9.0d,
+	y: -5.0d,
+	text: [
+		"The §3Large Gas Turbine§r may not be so impressive in the §5EV§r Age, but it has the ability to scale really well, to §9better production§r than the base 4096 EU/t, and §9greater efficiency§r.",
+		"",
+		"Each Large Turbine will require a §aTurbine Rotor§r and a §3Rotor Holder§r. More on the Turbine mechanics in the §lnext§r Quest.",
+		"",
+		"§9Note:§r This Quest requires §eany§r task to be completed, but you should still need all the parts.",
+		"To harness the Power output when using a Rotor having more than 100% Power stats, you will need a §34A EV Dynamo Hatch§r or an §3IV Dynamo Hatch§r.",
+		"Turbines §cvoid§r energy that they can not output."
+	],
+	dependencies: [
+		"640d18da"
+	],
+	tasks: [{
+		uid: "b9ef7f4a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1011"
+		}]
+	},
+	{
+		uid: "48d8c19f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1641"
+		}]
+	},
+	{
+		uid: "24917907",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1229"
+		}]
+	},
+	{
+		uid: "4e0dc0e7",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 711s,
+			tag: {
+				GT.PartStats: {
+					Material: "chrome"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

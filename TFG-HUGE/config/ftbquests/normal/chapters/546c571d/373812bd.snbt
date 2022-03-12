@@ -21,14 +21,22 @@
 		"3b9fc1a9"
 	],
 	tasks: [{
-		uid: "1e12f394",
+		uid: "72a54d8d",
+		type: "fluid",
+		fluid: "glue"
+	}],
+	rewards: [{
+		uid: "fd9bc4e5",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "glue",
-				Amount: 1000
+				Fluid: {
+					FluidName: "glue",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

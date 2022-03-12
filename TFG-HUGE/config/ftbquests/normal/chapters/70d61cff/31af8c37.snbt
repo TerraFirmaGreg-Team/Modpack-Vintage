@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:meta_ingot 1 2516",
-	x: 7.5d,
-	y: -1.5d,
+	x: 9.0d,
+	y: -5.0d,
 	dependencies: [
 		"2556183b"
 	],

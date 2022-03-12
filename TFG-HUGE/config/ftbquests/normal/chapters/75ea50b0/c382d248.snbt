@@ -1,0 +1,24 @@
+{
+	x: -18.5d,
+	y: -2.0d,
+	text: [
+		"§oTrying to match the heat of the Sun huh? But still a long way to go.§r",
+		"",
+		"§3Nichrome Heating Coils§r increase the temperature of your §3Blast Furnace§r to §d3,600K§r.",
+		"",
+		"Despite not being required §oyet§r, it still is a good idea to upgrade your primary §3EBF§r for the sweet §6Coil bonuses§r.",
+		"",
+		"",
+		"§bLore:§r In original GregTech 5, there were only three types of coils. This was the last tier."
+	],
+	dependencies: [
+		"2464bba8"
+	],
+	tasks: [{
+		uid: "39f2b0f7",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 2"
+		}]
+	}]
+}

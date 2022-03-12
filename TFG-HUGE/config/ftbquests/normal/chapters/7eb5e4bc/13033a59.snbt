@@ -1,0 +1,26 @@
+{
+	title: "Ludicrous Batteries",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 749s,
+		tag: {
+			Charge: 1000000000L
+		}
+	},
+	x: -7.5d,
+	y: -2.5d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"e24afdaf"
+	],
+	tasks: [{
+		uid: "5ee9e2f7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 749"
+		}],
+		ignore_nbt: 1b
+	}]
+}

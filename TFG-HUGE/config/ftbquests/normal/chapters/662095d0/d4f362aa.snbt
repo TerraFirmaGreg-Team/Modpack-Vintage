@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.lightfuel.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "light_fuel"
-		}
-	},
 	x: 6.0d,
 	y: -14.0d,
 	description: "{tfg.quests.mv.lightfuel.subtitle}",
@@ -22,25 +15,41 @@
 		"65405836"
 	],
 	tasks: [{
-		uid: "00edce2f",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "sulfuric_light_fuel",
-				Amount: 1000
-			}
-		}]
+		uid: "3e8c5455",
+		type: "fluid",
+		fluid: "sulfuric_light_fuel"
 	},
 	{
-		uid: "e92f4f33",
+		uid: "2c59acc4",
+		type: "fluid",
+		fluid: "light_fuel"
+	}],
+	rewards: [{
+		uid: "2d0f9765",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "light_fuel",
-				Amount: 1000
+				Fluid: {
+					FluidName: "sulfuric_light_fuel",
+					Amount: 1000
+				}
 			}
-		}]
+		}
+	},
+	{
+		uid: "ee140fc8",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "light_fuel",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

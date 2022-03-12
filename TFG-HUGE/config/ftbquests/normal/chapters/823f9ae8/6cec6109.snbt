@@ -9,6 +9,7 @@
 	tasks: [{
 		uid: "9fc7740f",
 		type: "fluid",
-		fluid: "latex"
+		fluid: "latex",
+		amount: 20
 	}]
 }

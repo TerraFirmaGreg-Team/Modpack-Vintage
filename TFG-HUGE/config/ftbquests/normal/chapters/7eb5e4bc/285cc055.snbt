@@ -1,0 +1,13 @@
+{
+	title: "Naquadah Chain",
+	icon: "gregtech:meta_dust 1 126",
+	x: -3.0d,
+	y: -4.0d,
+	text: [
+		"No Description"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"e0995a94"
+	]
+}

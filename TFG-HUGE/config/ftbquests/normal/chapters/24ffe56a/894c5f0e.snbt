@@ -1,0 +1,57 @@
+{
+	title: "Advanced SMDs",
+	icon: "gregtech:meta_item_1 1 530",
+	x: -20.5d,
+	y: -5.5d,
+	text: [
+		"Better §aSMDs§r to make Circuits more complex, but cheaper.",
+		"",
+		"You will require Alloys that you have not made yet, most of which are used in §dLuV§r Age and onwards.",
+		"",
+		"§aAdvanced SMDs§r are required for the §dCrystal§r Circuit line."
+	],
+	dependencies: [
+		"c2e36883",
+		"6941655f"
+	],
+	tasks: [{
+		uid: "92969a49",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 528"
+		}]
+	},
+	{
+		uid: "aa7292aa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 529"
+		}]
+	},
+	{
+		uid: "e0476603",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 530"
+		}]
+	},
+	{
+		uid: "ba0dfb8e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 531"
+		}]
+	},
+	{
+		uid: "a0fb856f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 532"
+		}]
+	}],
+	rewards: [{
+		uid: "982a2004",
+		type: "choice",
+		table: 20
+	}]
+}

@@ -1,0 +1,74 @@
+{
+	title: "True Distillation: Organic",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			Amount: 1000,
+			FluidName: "wood_tar"
+		}
+	},
+	x: 6.0d,
+	y: 0.0d,
+	text: [
+		"This Quest requires the §3Pyrolyse Oven§r and is §doptional§r, yet convenient.",
+		"",
+		"The upper part are the important products of §aWood Tar§r Distillation:",
+		"§9-§r Phenol: useful for Epoxy and PBI",
+		"§9-§r Benzene: an important hydrocarbon",
+		"§9-§r Toluene: useful for TNT",
+		"§9-§r Dimethylbenzene: useful for PBI",
+		"",
+		"Unlike Oil, putting §aWood Tar§r in the §3Distillation Tower§r for the byproducts, and using §dNitrobenzene§r for power is arguably worth it.",
+		"",
+		"",
+		"The bottom part are the important products from §aWood Vinegar§r Distillation:",
+		"§9-§r Acetic Acid: useful to make more Acetone",
+		"§9-§r Methanol: a moderately important hydrocarbon",
+		"§9-§r Acetone: useful for Epoxy and Gasoline",
+		"",
+		"Complete §eeither§r task to validate this Quest.",
+		"",
+		"",
+		"It is also possible to go for a full combo of 4 §3DTs§r. One for §aCharcoal Byproducts§r as the whole input, splitting into §aWood Tar§r, §aWood Gas§r and §aWood Vinegar§r.",
+		"Not the most efficient cost to production ratio, but an option nonetheless if you are interested in that."
+	],
+	dependencies: [
+		"ff136331"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "47de5aba",
+		type: "fluid",
+		fluid: "phenol"
+	},
+	{
+		uid: "3ddd9c3a",
+		type: "fluid",
+		fluid: "benzene"
+	},
+	{
+		uid: "4787538b",
+		type: "fluid",
+		fluid: "toluene"
+	},
+	{
+		uid: "101790bf",
+		type: "fluid",
+		fluid: "dimethylbenzene"
+	},
+	{
+		uid: "5cb9b262",
+		type: "fluid",
+		fluid: "acetic_acid"
+	},
+	{
+		uid: "7c467a24",
+		type: "fluid",
+		fluid: "methanol"
+	},
+	{
+		uid: "90c51fae",
+		type: "fluid",
+		fluid: "acetone"
+	}]
+}

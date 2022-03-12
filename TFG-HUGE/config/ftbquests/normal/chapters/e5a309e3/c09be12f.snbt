@@ -1,8 +1,8 @@
 {
 	title: "HV Prospector",
 	icon: "gregtech:meta_item_1 1 467",
-	x: -2.0d,
-	y: 2.5d,
+	x: 0.5d,
+	y: 2.0d,
 	shape: "circle",
 	text: [
 		"This prospector has a §6higher range§r than the §7LV§r one.",

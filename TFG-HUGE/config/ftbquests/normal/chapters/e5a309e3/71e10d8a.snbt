@@ -1,7 +1,8 @@
 {
 	title: "Thousands of Pressure Cookers",
-	x: -7.0d,
-	y: -1.0d,
+	x: -1.0d,
+	y: 2.0d,
+	shape: "hexagon",
 	text: [
 		"If you're still running off the §3Large Bronze Boiler§r, you may want to upgrade to the §3Large Steel Boiler§r.",
 		"",
@@ -10,7 +11,7 @@
 		"Other Power options are more advisable at this point, though."
 	],
 	dependencies: [
-		"7da4be86"
+		"05af19ec"
 	],
 	tasks: [{
 		uid: "470ef79b",

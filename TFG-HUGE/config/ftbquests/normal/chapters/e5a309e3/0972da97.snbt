@@ -1,8 +1,8 @@
 {
 	title: "PTFE",
 	icon: "gregtech:meta_plate 1 1016",
-	x: 3.0d,
-	y: 2.5d,
+	x: 4.5d,
+	y: -1.5d,
 	shape: "circle",
 	text: [
 		"§",
@@ -17,7 +17,8 @@
 		"§9Tip:§r From this point onwards, I would recommend solidifying Polymers as §dBar§r (Ingot) form, as they can easily be shaped to whichever shape you will need using the §3Extruder§r."
 	],
 	dependencies: [
-		"2f970f5b"
+		"2f970f5b",
+		"2997b9d4"
 	],
 	tasks: [{
 		uid: "53be87af",

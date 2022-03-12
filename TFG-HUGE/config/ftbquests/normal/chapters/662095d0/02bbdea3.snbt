@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.mv.ethanol.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "bio.ethanol",
-			Amount: 1000
-		}
-	},
 	x: 10.0d,
 	y: -10.0d,
 	description: "{tfg.quests.mv.ethanol.subtitle}",
@@ -23,14 +16,22 @@
 		"65405836"
 	],
 	tasks: [{
-		uid: "00af4a77",
+		uid: "87711ec1",
+		type: "fluid",
+		fluid: "ethanol"
+	}],
+	rewards: [{
+		uid: "237486db",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "bio.ethanol",
-				Amount: 1000
+				Fluid: {
+					FluidName: "ethanol",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }
