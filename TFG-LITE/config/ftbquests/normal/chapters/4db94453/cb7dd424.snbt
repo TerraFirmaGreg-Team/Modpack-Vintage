@@ -1,6 +1,6 @@
 {
-	x: -7.0d,
-	y: 14.0d,
+	x: -6.0d,
+	y: 15.0d,
 	dependencies: [
 		"e1a7d190"
 	],
@@ -8,7 +8,7 @@
 		uid: "3a424f23",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 5"
+			item: "extracells:storage.component 1 9"
 		}]
 	}]
 }

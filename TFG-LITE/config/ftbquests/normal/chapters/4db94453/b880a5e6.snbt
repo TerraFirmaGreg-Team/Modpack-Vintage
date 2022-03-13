@@ -1,0 +1,14 @@
+{
+	x: -11.0d,
+	y: 8.0d,
+	dependencies: [
+		"74286683"
+	],
+	tasks: [{
+		uid: "30bb65c9",
+		type: "item",
+		items: [{
+			item: "extracells:storage.casing"
+		}]
+	}]
+}

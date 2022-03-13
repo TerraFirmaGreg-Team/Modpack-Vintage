@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.lv.oxygen.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "oxygen"
-		}
-	},
 	x: -6.0d,
 	y: 20.0d,
 	description: "{tfg.quests.lv.oxygen.subtitle}",

@@ -1,6 +1,13 @@
 {
+	icon: {
+		id: "extracells:storage.fluid.portable",
+		tag: {
+			power: 20000.0d,
+			fuzzyMode: "IGNORE_ALL"
+		}
+	},
 	x: -6.0d,
-	y: 10.0d,
+	y: 11.0d,
 	dependencies: [
 		"74286683"
 	],
@@ -8,9 +15,8 @@
 		uid: "91c5489a",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.fluid.portable",
+			id: "extracells:storage.fluid.portable",
 			tag: {
-				power: 20000.0d,
 				fuzzyMode: "IGNORE_ALL"
 			}
 		}],

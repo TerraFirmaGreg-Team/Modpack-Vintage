@@ -1,15 +1,14 @@
 {
 	x: 2.0d,
-	y: 8.0d,
-	shape: "circle",
+	y: 9.0d,
 	dependencies: [
 		"353f5942"
 	],
 	tasks: [{
-		uid: "67b87d56",
+		uid: "9bc32017",
 		type: "item",
 		items: [{
-			item: "extracells:hardmedrive"
+			item: "extracells:part.base 1 7"
 		}]
 	}]
 }
