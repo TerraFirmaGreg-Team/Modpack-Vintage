@@ -5,6 +5,12 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.terrafirmacraft.ItemRegistry;
 
+// Регистрация веса и размера руд GT
+for item in GregtechOres 
+{
+        ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
+}
+
 // - Регистрация брони
 ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);
 ItemRegistry.registerArmor(<minecraft:leather_chestplate>, 3.0, 6.0, 4.5);
@@ -188,124 +194,3 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 10, true);
 ItemRegistry.registerItemSize(<gregtech:meta_ingot:*>, "LARGE", "LIGHT");
 // Plates
 ItemRegistry.registerItemSize(<gregtech:meta_plate:*>, "LARGE", "LIGHT");
-
-// - Регистрация блоков руд - Вес + Размер
-var GregtechOres as IOreDictEntry[] = [
-        <ore:oreAluminium>,
-        <ore:oreBeryllium>,
-        <ore:oreCobalt>,
-        <ore:oreCopper>,
-        <ore:oreGold>,
-        <ore:oreIron>,
-        <ore:oreLead>,
-        <ore:oreLithium>,
-        <ore:oreMolybdenum>,
-        <ore:oreNeodymium>,
-        <ore:oreNickel>,
-        <ore:orePalladium>,
-        <ore:orePlatinum>,
-        <ore:orePlutonium>,
-        <ore:oreSilver>,
-        <ore:oreSulfur>,
-        <ore:oreThorium>,
-        <ore:oreTin>,
-        <ore:oreNaquadah>,
-        <ore:oreCertusQuartz>,
-        <ore:oreAlmandine>,
-        <ore:oreAsbestos>,
-        <ore:oreBanded_iron>,
-        <ore:oreBlueTopaz>,
-        <ore:oreBrownLimonite>,
-        <ore:oreCalcite>,
-        <ore:oreCassiterite>,
-        <ore:oreCassiterite_sand>,
-        <ore:oreChalcopyrite>,
-        <ore:oreChromite>,
-        <ore:oreCinnabar>,
-        <ore:oreCoal>,
-        <ore:oreCobaltite>,
-        <ore:oreCooperite>,
-        <ore:oreDiamond>,
-        <ore:oreEmerald>,
-        <ore:oreGalena>,
-        <ore:oreGarnierite>,
-        <ore:oreGreen_sapphire>,
-        <ore:oreGrossular>,
-        <ore:oreIlmenite>,
-        <ore:oreBauxite>,
-        <ore:oreLazurite>,
-        <ore:oreMagnesite>,
-        <ore:oreMagnetite>,
-        <ore:oreMolybdenite>,
-        <ore:orePowellite>,
-        <ore:orePyrite>,
-        <ore:orePyrolusite>,
-        <ore:orePyrope>,
-        <ore:oreRock_salt>,
-        <ore:oreRuby>,
-        <ore:oreSalt>,
-        <ore:oreSaltpeter>,
-        <ore:oreSapphire>,
-        <ore:oreScheelite>,
-        <ore:oreSodalite>,
-        <ore:oreTantalite>,
-        <ore:oreSpessartine>,
-        <ore:oreSphalerite>,
-        <ore:oreStibnite>,
-        <ore:oreTetrahedrite>,
-        <ore:oreTopaz>,
-        <ore:oreTungstate>,
-        <ore:oreUraninite>,
-        <ore:oreWulfenite>,
-        <ore:oreYellowLimonite>,
-        <ore:oreNetherQuartz>,
-        <ore:oreQuartzite>,
-        <ore:oreGraphite>,
-        <ore:oreBornite>,
-        <ore:oreChalcocite>,
-        <ore:oreRealgar>,
-        <ore:oreBastnasite>,
-        <ore:orePentlandite>,
-        <ore:oreSpodumene>,
-        <ore:oreLepidolite>,
-        <ore:oreGlauconite_sand>,
-        <ore:oreMalachite>,
-        <ore:oreMica>,
-        <ore:oreBarite>,
-        <ore:oreAlunite>,
-        <ore:oreTalc>,
-        <ore:oreSoapstone>,
-        <ore:oreKyanite>,
-        <ore:orePyrochlore>,
-        <ore:oreOilsands>,
-        <ore:oreOlivine>,
-        <ore:oreOpal>,
-        <ore:oreAmethyst>,
-        <ore:oreLapis>,
-        <ore:oreApatite>,
-        <ore:oreTricalciumPhosphate>,
-        <ore:oreGarnetRed>,
-        <ore:oreGarnetYellow>,
-        <ore:oreVanadiumMagnetite>,
-        <ore:orePollucite>,
-        <ore:oreBentonite>,
-        <ore:oreFullersEarth>,
-        <ore:orePitchblende>,
-        <ore:oreMonazite>,
-        <ore:oreTrona>,
-        <ore:oreGypsum>,
-        <ore:oreZeolite>,
-        <ore:oreRedstone>,
-        <ore:oreElectrotine>,
-        <ore:oreDiatomite>,
-        <ore:oreGraniticMineralSand>,
-        <ore:oreGarnetSand>,
-        <ore:oreBasalticMineralSand>,
-        //Added Later
-        <ore:oreBismuth>,
-        <ore:oreGlowstone>
-];
-for item in GregtechOres 
-{
-        ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
-}
