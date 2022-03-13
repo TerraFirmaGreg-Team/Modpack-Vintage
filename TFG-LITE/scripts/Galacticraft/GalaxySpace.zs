@@ -76,9 +76,9 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:proxima_b_blocks:6>,
   <galaxyspace:proxima_b_blocks:7>,
   <galaxyspace:proxima_b_blocks:8>,
-  <galaxyspace:plasma_sword>.withTag({plasma_heat: 0.0 as float}),
-  <galaxyspace:plasma_axe>.withTag({plasma_heat: 0.0 as float}),
-  <galaxyspace:plasma_pickaxe>.withTag({plasma_heat: 0.0 as float}),
+  <galaxyspace:plasma_sword>,
+  <galaxyspace:plasma_axe>,
+  <galaxyspace:plasma_pickaxe>,
   <galaxyspace:gs_basic:29>,
   <galaxyspace:gs_basic:30>,
   <galaxyspace:mars_rover>,//WIP in GS

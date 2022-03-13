@@ -24,7 +24,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<appliedenergistics2:smooth_sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_small_brick>,
-	<appliedenergistics2:sky_stone_brick>
+	<appliedenergistics2:sky_stone_brick>,
 ] as IItemStack[];
 for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
@@ -69,7 +69,6 @@ val RemoveItemRecipes as IItemStack[] = [
 	<appliedenergistics2:part:480>,
 	<appliedenergistics2:part:340>,
 	<appliedenergistics2:wireless_terminal>,
-	<wct:wct>,
 	<appliedenergistics2:quartz_glass>,
 	<appliedenergistics2:quartz_vibrant_glass>,
 	<appliedenergistics2:quartz_fixture>,
@@ -84,7 +83,6 @@ val RemoveItemRecipes as IItemStack[] = [
 	<appliedenergistics2:material:29>,
 	<appliedenergistics2:material:31>,
 	<appliedenergistics2:material:30>,
-	<wct:magnet_card>,
 	<appliedenergistics2:material:42>,
 	<appliedenergistics2:part:300>,
 	<appliedenergistics2:part:120>,
@@ -140,7 +138,7 @@ for item in RemoveItemRecipes{
 
 // Поименное удаление рецептов
 val RemoveItemRecipesByName = [
-    "appliedenergistics2:decorative/quartz_block_pure",
+  "appliedenergistics2:decorative/quartz_block_pure",
 	"appliedenergistics2:tools/misctools_charged_staff",
 	"appliedenergistics2:network/blocks/fluid_interfaces_interface",
 	"appliedenergistics2:network/blocks/interfaces_interface",
@@ -210,6 +208,7 @@ assembler.recipeBuilder()
     .duration(100)
     .EUt(30)
     .buildAndRegister();
+
 //Covered Cable
 var colored_CoveredCable = [
 	<appliedenergistics2:part:20>,
@@ -274,6 +273,7 @@ assembler.recipeBuilder()
     .duration(150)
     .EUt(8)
     .buildAndRegister();
+
 //Smart Cable
 var colored_SmartCable = [
 	<appliedenergistics2:part:40>,
@@ -322,6 +322,7 @@ assembler.recipeBuilder()
     .duration(100)
     .EUt(30)
     .buildAndRegister();
+
 //Dense Smart Cable
 var colored_DenseSmartCable = [
 	<appliedenergistics2:part:60>,
@@ -445,7 +446,7 @@ wiremill.recipeBuilder()
 wiremill.recipeBuilder()
  	.inputs(<ore:stickNetherQuartz> * 1)
  	.outputs(<appliedenergistics2:part:140> * 4)
- 	.duration(200).EUt(120).buildAndRegister();
+	.duration(200).EUt(120).buildAndRegister();
 //Кварцевое стекло
 alloy_smelter.recipeBuilder()
     .inputs(<minecraft:glass> * 4, <ore:dustCertusQuartz> * 4)
@@ -457,31 +458,31 @@ autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed:1200> * 1)
  	.fluidInputs(<liquid:water> * 1000)
  	.chancedOutput(<appliedenergistics2:material:12> * 1, 7500, 500)
- 	.duration(2000).EUt(26).buildAndRegister();
+	.duration(2000).EUt(26).buildAndRegister();
 //Чистый флакс кристалл через дистиллированную воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed:1200> * 1)
  	.fluidInputs(<liquid:distilled_water> * 1000)
  	.chancedOutput(<appliedenergistics2:material:12> * 1, 9500, 700)
- 	.duration(1000).EUt(26).buildAndRegister();
+	.duration(1000).EUt(26).buildAndRegister();
 //Чистый кварцевый кристалл через воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed> * 1)
  	.fluidInputs(<liquid:water> * 1000)
  	.chancedOutput(<appliedenergistics2:material:10> * 1, 7500, 500)
- 	.duration(2000).EUt(26).buildAndRegister();
+	.duration(2000).EUt(26).buildAndRegister();
 //Чистый кварцевый кристалл через дистиллированную воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed> * 1)
  	.fluidInputs(<liquid:distilled_water> * 1000)
  	.chancedOutput(<appliedenergistics2:material:10> * 1, 9500, 700)
- 	.duration(1000).EUt(26).buildAndRegister();
+	.duration(1000).EUt(26).buildAndRegister();
 //Чистый незер кварцевый кристалл через воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed:600> * 1)
  	.fluidInputs(<liquid:water> * 1000)
  	.chancedOutput(<appliedenergistics2:material:11> * 1, 7500, 500)
- 	.duration(2000).EUt(26).buildAndRegister();
+	.duration(2000).EUt(26).buildAndRegister();
 //Чистый незер кварцевый кристалл через дистиллированную воду
 autoclave.recipeBuilder()
  	.inputs(<appliedenergistics2:crystal_seed:600> * 1)
@@ -740,8 +741,6 @@ recipes.addShapeless(<appliedenergistics2:material:29>, [<appliedenergistics2:ma
 recipes.addShapeless(<appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, <appliedenergistics2:part:100>, <appliedenergistics2:part:100>, <appliedenergistics2:material:23>]);
 //Карта ускорения
 recipes.addShapeless(<appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, <appliedenergistics2:material:24>, <appliedenergistics2:material:22>, <appliedenergistics2:material:7>]);
-//Карта магнит
-recipes.addShapeless(<wct:magnet_card>, [<appliedenergistics2:material:28>, <appliedenergistics2:material:24>, <appliedenergistics2:material:22>, <ore:craftingLensWhite>]);
 //Заряженная кварцевая фикстура
 recipes.addShapeless(<appliedenergistics2:quartz_fixture>, [<ore:gemCertusQuartz> | <ore:crystalCertusQuartz>, <ore:stickAluminium>]);
 //Легкая фикстура
@@ -959,11 +958,6 @@ recipes.addShaped(<appliedenergistics2:part:340>, [
 recipes.addShaped(<appliedenergistics2:wireless_terminal>, [
 	[<appliedenergistics2:material:41>, <appliedenergistics2:part:380>, <appliedenergistics2:material:41>],
 	[<ore:plateNetherQuartz>, <appliedenergistics2:material:24>, <ore:plateNetherQuartz>],
-	[<ore:plateNetherQuartz>, <appliedenergistics2:dense_energy_cell>, <ore:plateNetherQuartz>]]);
-//Беспроводной терминал крафта
-recipes.addShaped(<wct:wct>, [
-	[<appliedenergistics2:material:41>, <appliedenergistics2:part:360>, <appliedenergistics2:material:41>],
-	[<ore:plateNetherQuartz>, <appliedenergistics2:part:47>, <ore:plateNetherQuartz>],
 	[<ore:plateNetherQuartz>, <appliedenergistics2:dense_energy_cell>, <ore:plateNetherQuartz>]]);
 //Вибрируещее кварцевое стекло
 recipes.addShaped(<appliedenergistics2:quartz_vibrant_glass>, [

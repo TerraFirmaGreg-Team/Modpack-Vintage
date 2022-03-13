@@ -79,7 +79,7 @@ recipes.addShaped("greenhouse", <metaitem:multiblocktweaker:greenhouse>, [
 for i, sapling in TFC_Saplings {
     greenhouse.recipeBuilder()
         .circuit(1)
-        .notConsumable([sapling])
+        .inputs([sapling])
         .fluidInputs([<liquid:fresh_water> * 1000])
         .outputs([TFC_Logs[i] * 32])
         .outputs([sapling.withAmount(6)])
@@ -88,7 +88,7 @@ for i, sapling in TFC_Saplings {
         .buildAndRegister();
     greenhouse.recipeBuilder()
         .circuit(2)
-        .notConsumable([sapling])
+        .inputs([sapling])
         .inputs([<metaitem:fertilizer> * 4])
         .fluidInputs([<liquid:water> * 1000])
         .outputs([TFC_Logs[i] * 32])
@@ -102,7 +102,7 @@ for i, sapling in TFC_Saplings {
 // Greenhouse Rubber
 greenhouse.recipeBuilder()
     .circuit(1)
-    .notConsumable(<tfc:wood/sapling/rubber_fig>)
+    .inputs(<tfc:wood/sapling/rubber_fig>)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs([<tfc:wood/log/rubber_fig> * 8])
     .outputs([<tfc:wood/sapling/rubber_fig>])
@@ -112,7 +112,7 @@ greenhouse.recipeBuilder()
     .buildAndRegister();
 greenhouse.recipeBuilder()
     .circuit(2)
-    .notConsumable(<tfc:wood/sapling/rubber_fig>)
+    .inputs(<tfc:wood/sapling/rubber_fig>)
     .inputs(<metaitem:fertilizer> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs([<tfc:wood/log/rubber_fig> * 16])
@@ -124,7 +124,7 @@ greenhouse.recipeBuilder()
 
 greenhouse.recipeBuilder()
     .circuit(1)
-    .notConsumable(<tfc:wood/sapling/hevea>)
+    .inputs(<tfc:wood/sapling/hevea>)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs([<tfc:wood/log/hevea> * 8])
     .outputs([<tfc:wood/sapling/hevea>])
@@ -134,7 +134,7 @@ greenhouse.recipeBuilder()
     .buildAndRegister();
 greenhouse.recipeBuilder()
     .circuit(2)
-    .notConsumable(<tfc:wood/sapling/hevea>)
+    .inputs(<tfc:wood/sapling/hevea>)
     .inputs(<metaitem:fertilizer> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs([<tfc:wood/log/hevea> * 16])
@@ -166,111 +166,3 @@ for i, seed in All_Seeds {
         .buildAndRegister();
 }
 
-
-########################################
-# Multiblock Builder
-########################################
-global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
-    .minInputs(2)
-    .maxInputs(2)
-    .minOutputs(1)
-    .maxOutputs(4)
-    .minFluidInputs(1)
-    .maxFluidInputs(1)
-    .minFluidOutputs(0)
-    .maxFluidOutputs(0)
-    .build();
-
-var electric_saw_mill = Builder.start("saw_mill", 32001)
-    .withPattern(function(controller as IControllerTile) as IBlockPattern {
-        return FactoryBlockPattern.start()
-            .aisle("CFC", "C C", "C C")
-            .aisle("CFC", "G G", "CCC")
-            .aisle("CFC", "G G", "C C")
-            .aisle("CFC", "G G", "CCC")
-            .aisle("CFC", "S C", "C C")
-            .where('S', controller.self())
-            .where('C', CTPredicate.states(<metastate:gregtech:metal_casing:4>)
-                | CTPredicate.abilities(<mte_ability:IMPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:IMPORT_FLUIDS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:INPUT_ENERGY>).setMinGlobalLimited(1).setMaxGlobalLimited(3).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:EXPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-            )
-            .where('G', CTPredicate.states(<metastate:gregtech:transparent_casing>))
-            .where('F', CTPredicate.states(<metastate:gregtech:meta_block_frame_20:4>))
-            .where('#', CTPredicate.getAir())
-            .build();
-    } as IPatternBuilderFunction)
-    .withRecipeMap(<recipemap:saw_mill>)
-    .withBaseTexture(<metastate:gregtech:metal_casing:4>)
-    .buildAndRegister();
-electric_saw_mill.hasMaintenanceMechanics = false;
-electric_saw_mill.hasMufflerMechanics = false;
-
-recipes.addShaped(<metaitem:multiblocktweaker:saw_mill>, [
-    [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:gtce.tool.screwdrivers>],
-    [<metaitem:electric.motor.mv>, <gregtech:metal_casing:4>, <metaitem:electric.motor.mv>],
-    [<ore:circuitGood>, <metaitem:conveyor.module.mv>, <ore:circuitGood>]
-]);
-
-// Electric_saw_mill logs
-
-// for i, log in TFC_Logs {
-//     saw_mill.recipeBuilder()
-//         .circuit(1)
-//         .inputs([log * 6])
-//         .fluidInputs([<liquid:water> * 1000])
-//         .outputs([TFC_Planks[i] * 48])
-//         .outputs([<metaitem:dustWood> * 12])
-//         .duration(300)
-//         .EUt(7)
-//         .buildAndRegister();
-//     saw_mill.recipeBuilder()
-//         .circuit(2)
-//         .inputs([log * 6])
-//         .fluidInputs([<liquid:water> * 1000])
-//         .outputs([<metaitem:dustWood> * 30])
-//         .outputs([<metaitem:dustSmallWood> * 18])
-//         .duration(400)
-//         .EUt(7)
-//         .buildAndRegister();
-// }
-
-// Electric_saw_mill Rubber
-saw_mill.recipeBuilder()
-    .circuit(1)
-    .inputs([<tfc:wood/log/hevea> * 6])
-    .fluidInputs([<liquid:water> * 1000])
-    .outputs([<gregtech:planks> * 48])
-    .outputs([<metaitem:dustWood> * 12])
-    .duration(300)
-    .EUt(7)
-    .buildAndRegister();
-saw_mill.recipeBuilder()
-    .circuit(2)
-    .inputs([<tfc:wood/log/hevea> * 6])
-    .fluidInputs([<liquid:water> * 1000])
-    .outputs([<metaitem:dustWood> * 30])
-    .outputs([<metaitem:dustSmallWood> * 18])
-    .duration(400)
-    .EUt(7)
-    .buildAndRegister();
-
-saw_mill.recipeBuilder()
-    .circuit(1)
-    .inputs([<tfc:wood/log/rubber_fig> * 6])
-    .fluidInputs([<liquid:water> * 1000])
-    .outputs([<gregtech:planks> * 48])
-    .outputs([<metaitem:dustWood> * 12])
-    .duration(300)
-    .EUt(7)
-    .buildAndRegister();
-saw_mill.recipeBuilder()
-    .circuit(2)
-    .inputs([<tfc:wood/log/rubber_fig> * 6])
-    .fluidInputs([<liquid:water> * 1000])
-    .outputs([<metaitem:dustWood> * 30])
-    .outputs([<metaitem:dustSmallWood> * 18])
-    .duration(400)
-    .EUt(7)
-    .buildAndRegister();

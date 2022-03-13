@@ -1717,6 +1717,7 @@ global TFC_Planks as IItemStack[] = [
 	<tfcflorae:wood/planks/blue_bamboo>,
 	<tfcflorae:wood/planks/dragon_bamboo>,
 	<tfcflorae:wood/planks/golden_bamboo>,
+	<tfc:wood/planks/joshua_tree>,
 	<tfcflorae:wood/planks/narrow_leaf_bamboo>,
 	<tfc:wood/planks/eucalyptus>,
 	<tfcflorae:wood/planks/red_bamboo>,
