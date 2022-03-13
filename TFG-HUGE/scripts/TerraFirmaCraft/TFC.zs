@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+import mods.gregtech.recipe.RecipeMap;
+
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import mods.terrafirmacraft.Anvil;
@@ -9,6 +11,7 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
+
 
 // Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -787,17 +790,17 @@ recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:crafting
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
 recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
 
-// // Рецепты теплой воды
-// fluid_heater.recipeBuilder()
-// 	.circuit(5)
-// 	.fluidInputs([<liquid:fresh_water> * 100])
-// 	.fluidOutputs([<liquid:hot_water> * 100])
-// 	.duration(600).EUt(2).buildAndRegister();
-// fluid_heater.recipeBuilder()
-// 	.circuit(4)
-// 	.fluidInputs([<liquid:water> * 100])
-// 	.fluidOutputs([<liquid:hot_water> * 100])
-// 	.duration(600).EUt(2).buildAndRegister();
+// Рецепты теплой воды
+fluid_heater.recipeBuilder()
+	.circuit(5)
+	.fluidInputs(<liquid:fresh_water> * 100)
+	.fluidOutputs(<liquid:hot_water> * 100)
+	.duration(600).EUt(2).buildAndRegister();
+fluid_heater.recipeBuilder()
+	.circuit(4)
+	.fluidInputs(<liquid:water> * 100)
+	.fluidOutputs(<liquid:hot_water> * 100)
+	.duration(600).EUt(2).buildAndRegister();
 
 // Рецепты свежей воды
 vacuum_freezer.recipeBuilder()
@@ -959,115 +962,3 @@ chemical_bath.recipeBuilder()
 	.fluidInputs(<liquid:distilled_water> * 100)
 	.outputs(<minecraft:paper>)
 	.duration(100).EUt(7).buildAndRegister();
-
-// Fertilizer
-autoclave.recipeBuilder()
-  .inputs(<ore:dustDarkAsh> * 12)
-	.fluidInputs([<liquid:hot_water> * 20])
-  .outputs(<ore:dustFertilizer>.firstItem * 8)
-  .chancedOutput(<ore:dustFertilizer>.firstItem * 6, 3000, 1000)
-  .EUt(20).duration(200).buildAndRegister();
-
-
-// Greenhouse logs
-for i, sapling in TFC_Saplings {
-  greenhouse.recipeBuilder()
-    .circuit(1)
-    .inputs(sapling)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(TFC_Logs[i].withAmount(10))
-		.outputs(sapling.withAmount(6))
-		// .chancedOutput(TFC_Logs[i].withAmount(10), 3000, 1000)
-    .duration(1200)
-    .EUt(40)
-    .buildAndRegister();
-
-  greenhouse.recipeBuilder()
-    .circuit(2)
-    .inputs(sapling)
-    .inputs(<ore:dustBone> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(TFC_Logs[i].withAmount(15))
-		.outputs(sapling.withAmount(12))
-    // .chancedOutput(TFC_Logs[i].withAmount(20), 5000, 1000)
-    .duration(900)
-    .EUt(60)
-    .buildAndRegister();
-}
-
-// Greenhouse Rubber
-greenhouse.recipeBuilder()
-  .circuit(1)
-  .inputs(<tfc:wood/sapling/rubber_fig> * 2)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs(<tfc:wood/log/rubber_fig> * 7)
-	.outputs(<tfc:wood/sapling/rubber_fig> * 3)
-	.outputs(<metaitem:rubber_drop> * 4)
-	// .chancedOutput(<tfc:wood/log/rubber_fig> * 14, 2000, 1000)
-	// .chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 3000, 1000)
-  .duration(1200)
-  .EUt(40)
-  .buildAndRegister();
-
-greenhouse.recipeBuilder()
-  .circuit(2)
-  .inputs(<tfc:wood/sapling/rubber_fig> * 2)
-  .inputs(<ore:dustBone> * 4)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs(<tfc:wood/log/rubber_fig> * 14)
-	.outputs(<tfc:wood/sapling/rubber_fig> * 3)
-	.outputs(<metaitem:rubber_drop> * 8)
-	// .chancedOutput(<tfc:wood/log/rubber_fig> * 20, 3000, 1000)
-	// .chancedOutput(<tfc:wood/sapling/rubber_fig> * 5, 5000, 1000)
-  .duration(900)
-  .EUt(60)
-  .buildAndRegister();
-
-greenhouse.recipeBuilder()
-  .circuit(3)
-  .inputs(<tfc:wood/sapling/hevea> * 2)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-	.outputs(<tfc:wood/log/hevea> * 7)
-  .outputs(<tfc:wood/sapling/hevea> * 3)
-	.outputs(<metaitem:rubber_drop> * 4)
-	// .chancedOutput(<tfc:wood/sapling/hevea> * 5, 3000, 1000)
-	// .chancedOutput(<tfc:wood/log/hevea> * 14, 2000, 1000)
-  .duration(1200)
-  .EUt(40)
-  .buildAndRegister();
-
-greenhouse.recipeBuilder()
-  .circuit(4)
-  .inputs(<tfc:wood/sapling/hevea> * 2)
-  .inputs(<ore:dustBone> * 4)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs(<tfc:wood/log/hevea> * 14)
-	.outputs(<tfc:wood/sapling/hevea> * 4)
-	.outputs(<metaitem:rubber_drop> * 8)
-	// .chancedOutput(<tfc:wood/log/hevea> * 20, 2000, 1000)
-	// .chancedOutput(<tfc:wood/sapling/hevea> * 5, 5000, 1000)
-  .duration(900)
-  .EUt(60)
-  .buildAndRegister();		
-
-// Greenhouse Plants
-for i, seed in All_Seeds {
-  greenhouse.recipeBuilder()
-    .circuit(6)
-    .inputs([seed])
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(All_Plants[i])
-    .duration(1200)
-    .EUt(40)
-    .buildAndRegister();
-
-  greenhouse.recipeBuilder()
-    .circuit(7)
-    .inputs([seed])
-    .inputs(<ore:dustBone> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(All_Plants[i].withAmount(All_Plants[i].amount * 6))
-    .duration(900)
-    .EUt(60)
-    .buildAndRegister();
-}

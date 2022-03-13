@@ -33,7 +33,7 @@ for material in MaterialRegistry.getAllMaterials()
 // --- Custom Stone Type
 
 // -- TFC
-
+/*
 // - Andesite
 StoneType.create(16, "tfc_andesite", "ore", <material:stone>, "tfc:raw/andesite");
 
@@ -123,18 +123,7 @@ StoneType.create(44, "tfc_slate", "ore", <material:stone>, "tfc:raw/slate");
 
 // - Soapstone
 StoneType.create(45, "tfc_soapstone", "ore", <material:stone>, "tfc:raw/soapstone");
-
+*/
 // -- Galacticraft/GalaxySpace
 
-// - Mercury
-MaterialBuilder(32100, "mercury_stone").dust().build();
-
-// - Venus
-MaterialBuilder(32101, "venus_stone").dust().build();
-
 // - Moon
-MaterialBuilder(32102, "moon_stone").dust().build();
-
-// - Mars
-MaterialBuilder(32103, "mars_stone").dust().build();
-

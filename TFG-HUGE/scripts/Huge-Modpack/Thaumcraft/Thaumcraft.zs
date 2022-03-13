@@ -288,7 +288,7 @@ ArcaneWorkbench.registerShapedRecipe("thaumcraft:brain_boxF", "", 50, [<aspect:t
   
 //часовой разум
 ArcaneWorkbench.registerShapedRecipe("thaumcraft:mindF", "", 10, [<aspect:ordo>,<aspect:ignis>], <thaumcraft:mind>, 
-[[null, <forestry:thermionic_tubes>, null],
+[[null, <metaitem:pipeSmallFluidStainlessSteel>, null],
  [<ore:plateBrass>, <thaumcraft:mechanism_simple>, <ore:plateBrass>],
  [<ore:plateBrass>, <minecraft:glass_pane>,<ore:plateBrass>]]);
   
