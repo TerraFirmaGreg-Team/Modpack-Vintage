@@ -1821,6 +1821,7 @@ global TFC_Lumber as IItemStack[] = [
 	<tfcflorae:wood/lumber/blue_bamboo>,
 	<tfcflorae:wood/lumber/dragon_bamboo>,
 	<tfcflorae:wood/lumber/golden_bamboo>,
+	<tfc:wood/lumber/joshua_tree>,
 	<tfcflorae:wood/lumber/narrow_leaf_bamboo>,
 	<tfc:wood/lumber/eucalyptus>,
 	<tfcflorae:wood/lumber/red_bamboo>,
