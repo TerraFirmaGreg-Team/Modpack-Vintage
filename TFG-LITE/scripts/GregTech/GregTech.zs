@@ -406,6 +406,32 @@ assembler.recipeBuilder()
     .outputs(<metaitem:cover.infinite_water>)
     .duration(200).EUt(480).buildAndRegister();
 
+// Fertilizer
+<recipemap:mixer>.findRecipe(30, [<minecraft:dirt:0>, <metaitem:dustWood> * 2, <minecraft:sand:0> * 4], [<liquid:water> * 1000]).remove();
+mixer.recipeBuilder()
+	.inputs(<ore:sand> * 4,<ore:dustWood> * 2, <ore:dirt>)
+    .fluidInputs(<liquid:water> * 1000)
+	.outputs(<metaitem:fertilizer>)
+	.duration(100)
+	.EUt(30)
+	.buildAndRegister();
+
+// Nether Star Dust
+// chemical_reactor.recipeBuilder()
+//     .inputs([
+//         <ore:dustDiamond>,
+//         <ore:dustIridium>
+//     ])
+//     .fluidInputs([
+//         <liquid:nether_air> * 8000,
+//         <liquid:rocket_fuel> * 1000
+//     ])
+//     .outputs([<metaitem:dustNetherStar> * 2])
+//     .duration(200)
+//     .EUt(7680)
+//     .buildAndRegister();
+
+
 // Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 

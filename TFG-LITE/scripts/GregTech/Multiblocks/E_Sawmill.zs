@@ -38,9 +38,9 @@ var electric_saw_mill = Builder.start("saw_mill", 32001)
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")
       .aisle("CFC", "G G", "CCC")
-      .aisle("CFC", "G G", "C C")
-      .aisle("CFC", "G G", "CCC")
-      .aisle("CFC", "S C", "C C")
+      .aisle("CFC", "W W", "C C")
+      .aisle("CFC", "G G", "CSC")
+      .aisle("CFC", "C C", "C C")
       .where("S", controller.self())
       .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>)
           | CTPredicate.abilities(<mte_ability:IMPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
@@ -49,6 +49,7 @@ var electric_saw_mill = Builder.start("saw_mill", 32001)
           | CTPredicate.abilities(<mte_ability:EXPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
       )
       .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
+      .where("W", CTPredicate.states(<metastate:gregtech:wire_coil>))
       .where("F", CTPredicate.states(<metastate:gregtech:meta_block_frame_20:4>))
       .where(" ", CTPredicate.getAir())
       .build();
@@ -56,12 +57,12 @@ var electric_saw_mill = Builder.start("saw_mill", 32001)
   .withRecipeMap(<recipemap:saw_mill>)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
-electric_saw_mill.hasMaintenanceMechanics = true;
-electric_saw_mill.hasMufflerMechanics = true;
+electric_saw_mill.hasMaintenanceMechanics = false;
+electric_saw_mill.hasMufflerMechanics = false;
 
 recipes.addShaped(<metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:gtce.tool.screwdrivers>],
-    [<metaitem:electric.motor.mv>, <gregtech:metal_casing:4>, <metaitem:electric.motor.mv>],
+    [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitGood>, <metaitem:conveyor.module.mv>, <ore:circuitGood>]
 ]);
 
