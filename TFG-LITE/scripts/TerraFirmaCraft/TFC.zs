@@ -350,7 +350,7 @@ for i, TFC_Gravel in TFC_Gravel {
 
 // Гравий -> Песок
 for i, TFC_Sands in TFC_Sands {
-  forge_hammer.recipeBuilder()
+  macerator.recipeBuilder()
     .inputs([TFC_Gravel[i]])
     .outputs(TFC_Sands)
     .duration(200).EUt(7).buildAndRegister();
