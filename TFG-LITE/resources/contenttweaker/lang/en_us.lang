@@ -1,33 +1,10 @@
 #Content tweaker
 
 #lang
-material.tfc_andesite=Andesit
-material.tfc_basalt=Basalt
-material.tfc_breccia=Breccia
-material.tfc_catlinite=Catlinite
-material.tfc_chalk=Chalk
-material.tfc_chert=Chert
-material.tfc_claystone=Claystone
-material.tfc_conglomerate=Conglomerate
-material.tfc_dacite=Dacite
-material.tfc_diorite=Diorite
-material.tfc_dolomite=Dolomite
-material.tfc_gabbro=Gabbro
-material.tfc_gneiss=Gneiss
-material.tfc_granite=Granite
-material.tfc_komatiite=Komatiite
-material.tfc_limestone=Limestone
-material.tfc_marble=Marble
-material.tfc_mudstone=Mudstone
-material.tfc_novaculite=Novaculite
-material.tfc_peridotite=Peridotite
-material.tfc_porphyry=Porphyry
-material.tfc_quartzite=Quartzite
-material.tfc_rhyolite=Rhyolite
-material.tfc_rocksalt=Rocksalt
-material.tfc_sandstone=Sandstone
-material.tfc_schist=Schist
-material.tfc_shale=Shale
-material.tfc_siltstone=Siltstone
-material.tfc_slate=Slate
-material.tfc_soapstone=Soapstone
+material.mercurystone.name=Mercury Stone
+material.venusstone.name=Venus Stone
+material.moonstone.name=Moon Stone
+material.marsstone.name=Mars Stone
+material.asteroidsstoneblack.name=Black Asteroid Stone
+material.asteroidsstonegray.name=Gray Asteroid Stone
+material.asteroidsstonelightgray.name=Light-Gray Asteroid Stone
