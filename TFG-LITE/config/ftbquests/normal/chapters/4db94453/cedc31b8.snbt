@@ -1,6 +1,6 @@
 {
-	x: -4.0d,
-	y: 4.0d,
+	x: -5.0d,
+	y: 12.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mecontroller.subtitle}",
 	dependencies: [

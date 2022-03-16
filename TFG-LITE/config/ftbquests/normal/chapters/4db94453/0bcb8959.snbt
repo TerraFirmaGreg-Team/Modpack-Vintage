@@ -9,8 +9,8 @@
 			fuzzyMode: "IGNORE_ALL"
 		}
 	},
-	x: -7.0d,
-	y: 10.0d,
+	x: -10.5d,
+	y: 8.0d,
 	dependencies: [
 		"74286683"
 	],

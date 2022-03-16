@@ -1,15 +1,14 @@
 {
-	x: -4.5d,
-	y: 6.5d,
+	x: 0.0d,
+	y: 3.0d,
 	dependencies: [
-		"00369990"
+		"abf701dd"
 	],
 	tasks: [{
-		uid: "40cca524",
+		uid: "b839aa2b",
 		type: "item",
 		items: [{
-			id: "appliedenergistics2:storage_cell_1k",
-			tag: {}
+			item: "aenetvistool:net_visualizer"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

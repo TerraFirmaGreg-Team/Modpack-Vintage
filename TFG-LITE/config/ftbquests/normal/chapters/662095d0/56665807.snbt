@@ -16,7 +16,18 @@
 		uid: "07546ba0",
 		type: "item",
 		items: [{
-			item: "gregtech:ore_oilsands_0"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreOilsands"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreOilsands"
+				}
+			}
 		}]
 	},
 	{

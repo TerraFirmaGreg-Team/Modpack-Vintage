@@ -1,9 +1,11 @@
 {
-	x: -7.0d,
-	y: 15.0d,
+	x: -11.5d,
+	y: 12.0d,
 	dependencies: [
-		"cb7dd424"
+		"cb7dd424",
+		"10b6e5fb"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "bf51764f",
 		type: "item",

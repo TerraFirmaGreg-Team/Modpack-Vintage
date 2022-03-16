@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.space.start.title}",
-	icon: "galacticraftcore:basic_block_moon 1 3",
+	icon: "galacticraftcore:sensor_lens",
 	x: -1.0d,
 	y: -6.0d,
 	shape: "rsquare",
