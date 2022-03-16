@@ -36,32 +36,10 @@ for item in ItemsToRemoveFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-// Поименное удалние рецептов
-val RemoveRecipesByRecipeName = [
-	"extracells:storagecells/item/owncasing/256k",
-	"extracells:storagecells/item/extracasing/256k",
-	"extracells:storagecells/item/owncasing/1024k",
-	"extracells:storagecells/item/extracasing/1024k",
-	"extracells:storagecells/item/owncasing/4096k",
-	"extracells:storagecells/item/extracasing/4096k",
-	"extracells:storagecells/item/owncasing/16384k",
-	"extracells:storagecells/item/extracasing/16384k",
-	"extracells:storagecells/fluid/owncasing/256k",
-	"extracells:storagecells/fluid/extracasing/256k",
-	"extracells:storagecells/fluid/owncasing/1024k",
-	"extracells:storagecells/fluid/extracasing/1024k",
-	"extracells:storagecells/fluid/owncasing/4096k",
-	"extracells:storagecells/fluid/extracasing/4096k"
-] as string[];
-for item in RemoveRecipesByRecipeName{
-    recipes.removeByRecipeName(item);
-}
-
 
 ########################################
 # Items
 ########################################
-// --- Рецепты
 // Fluid Storage Housing
 recipes.remove(<extracells:storage.casing:1>);
 assembler.recipeBuilder()
@@ -73,7 +51,6 @@ assembler.recipeBuilder()
 	])
 	.outputs(<extracells:storage.casing:1>)
 	.duration(250).EUt(128).buildAndRegister();
-
 // Advanced Storage Housing
 recipes.remove(<extracells:storage.casing>);
 assembler.recipeBuilder()
@@ -85,7 +62,6 @@ assembler.recipeBuilder()
 	])
 	.outputs(<extracells:storage.casing>)
 	.duration(250).EUt(128).buildAndRegister();
-
 // Recycle - Advanced Storage Housing
 macerator.recipeBuilder()
   .inputs([<extracells:storage.casing>])
@@ -93,7 +69,6 @@ macerator.recipeBuilder()
   .duration(100)
   .EUt(16)
   .buildAndRegister();
-
 // Recycle - Fluid Housing
 macerator.recipeBuilder()
   .inputs([<extracells:storage.casing:1>])
@@ -101,7 +76,6 @@ macerator.recipeBuilder()
   .duration(100)
   .EUt(16)
   .buildAndRegister();
-
 // 256k Storage Component
 recipes.remove(<extracells:storage.component>);
 assembler.recipeBuilder()
@@ -127,7 +101,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
-
 // 1024k Storage Component
 recipes.remove(<extracells:storage.component:1>);
 assembler.recipeBuilder()
@@ -153,7 +126,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
-
 // 4096k Storage Component
 recipes.remove(<extracells:storage.component:2>);
 assembler.recipeBuilder()
@@ -179,7 +151,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(491520)
   .buildAndRegister();
-
 // 16384k Storage Component
 recipes.remove(<extracells:storage.component:3>);
 assembler.recipeBuilder()
@@ -205,7 +176,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(491520)
   .buildAndRegister();
-
 // 256k Fluid Component
 recipes.remove(<extracells:storage.component:8>);
 assembler.recipeBuilder()
@@ -231,7 +201,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
-
 // 1024k Fluid Component
 recipes.remove(<extracells:storage.component:9>);
 assembler.recipeBuilder()
@@ -257,7 +226,6 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
-
 // 4096k Fluid Component
 recipes.remove(<extracells:storage.component:10>);
 assembler.recipeBuilder()
@@ -283,8 +251,9 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(491520)
   .buildAndRegister();
-
 // 256k Storage Cell
+recipes.removeByRecipeName("extracells:storagecells/item/owncasing/256k");
+recipes.removeByRecipeName("extracells:storagecells/item/extracasing/256k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:0>,
@@ -294,8 +263,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 1024k Storage Cell
+recipes.removeByRecipeName("extracells:storagecells/item/owncasing/1024k");
+recipes.removeByRecipeName("extracells:storagecells/item/extracasing/1024k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:0>,
@@ -305,8 +275,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 4096k Storage Cell
+recipes.removeByRecipeName("extracells:storagecells/item/owncasing/4096k");
+recipes.removeByRecipeName("extracells:storagecells/item/extracasing/4096k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:0>,
@@ -316,8 +287,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 16384k Storage Cell
+recipes.removeByRecipeName("extracells:storagecells/item/owncasing/16384k");
+recipes.removeByRecipeName("extracells:storagecells/item/extracasing/16384k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:0>,
@@ -327,8 +299,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 256k Fluid Cell
+recipes.removeByRecipeName("extracells:storagecells/fluid/owncasing/256k");
+recipes.removeByRecipeName("extracells:storagecells/fluid/extracasing/256k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:1>,
@@ -338,8 +311,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 1024k Fluid Cell
+recipes.removeByRecipeName("extracells:storagecells/fluid/owncasing/1024k");
+recipes.removeByRecipeName("extracells:storagecells/fluid/extracasing/1024k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:1>,
@@ -349,8 +323,9 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
 // 4096k Fluid Cell
+recipes.removeByRecipeName("extracells:storagecells/fluid/owncasing/4096k");
+recipes.removeByRecipeName("extracells:storagecells/fluid/extracasing/4096k");
 packer.recipeBuilder()
   .inputs([
     <extracells:storage.casing:1>,
@@ -360,13 +335,15 @@ packer.recipeBuilder()
   .duration(10)
   .EUt(7)
   .buildAndRegister();
-
+// ME Ore Dictionary Storage Bus
+recipes.remove(<extracells:part.base:12>);
+recipes.addShapeless("oredict_storage_bus", <extracells:part.base:12>,
+  [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
 
 ########################################
 # Blocks
 ########################################
-
 // ME Fluid Assembler
 recipes.remove(<extracells:fluidcrafter>);
 assembler.recipeBuilder()
@@ -382,27 +359,21 @@ assembler.recipeBuilder()
   .duration(200)
   .EUt(480)
   .buildAndRegister();
-
 // ME Drive Fixture
 recipes.remove(<extracells:part.base:7>);
 recipes.addShaped(<extracells:part.base:7>, [
   [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
   [<appliedenergistics2:part:120>, <appliedenergistics2:drive>, <appliedenergistics2:part:120>],
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]
-]);
-
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);
 // ME Energy Cell Fixture
 recipes.remove(<extracells:part.base:8>);
 recipes.addShaped(<extracells:part.base:8>, [
   [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
   [<appliedenergistics2:part:120>, <appliedenergistics2:energy_cell>, <appliedenergistics2:part:120>],
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]
-]);
-
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);
 // Obsidian ME Drive
 recipes.remove(<extracells:hardmedrive>);
 recipes.addShaped(<extracells:hardmedrive>, [
   [<ore:plateObsidian>, <ore:ae2.cable.dense.covered>, <ore:plateObsidian>],
   [<ore:plateObsidian>, <appliedenergistics2:drive>, <ore:plateObsidian>],
-  [<ore:plateObsidian>, <minecraft:obsidian>, <ore:plateObsidian>]
-]);
+  [<ore:plateObsidian>, <minecraft:obsidian>, <ore:plateObsidian>]]);

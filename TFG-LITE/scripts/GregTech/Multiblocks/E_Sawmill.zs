@@ -61,7 +61,7 @@ electric_saw_mill.hasMaintenanceMechanics = false;
 electric_saw_mill.hasMufflerMechanics = false;
 
 recipes.addShaped(<metaitem:multiblocktweaker:saw_mill>, [
-    [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:gtce.tool.screwdrivers>],
+    [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitGood>, <metaitem:conveyor.module.mv>, <ore:circuitGood>]
 ]);
