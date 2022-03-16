@@ -417,20 +417,19 @@ mixer.recipeBuilder()
 	.buildAndRegister();
 
 // Nether Star Dust
-// chemical_reactor.recipeBuilder()
-//     .inputs([
-//         <ore:dustDiamond>,
-//         <ore:dustIridium>
-//     ])
-//     .fluidInputs([
-//         <liquid:nether_air> * 8000,
-//         <liquid:rocket_fuel> * 1000
-//     ])
-//     .outputs([<metaitem:dustNetherStar> * 2])
-//     .duration(200)
-//     .EUt(7680)
-//     .buildAndRegister();
-
+chemical_reactor.recipeBuilder()
+    .inputs([
+        <ore:dustDiamond>,
+        <ore:dustIridium>
+    ])
+    .fluidInputs([
+        <liquid:nether_air> * 8000,
+        <liquid:rocket_fuel> * 1000
+    ])
+    .outputs([<metaitem:dustNetherStar> * 2])
+    .duration(200)
+    .EUt(7680)
+    .buildAndRegister();
 
 // Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();

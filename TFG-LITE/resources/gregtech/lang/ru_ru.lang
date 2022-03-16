@@ -1,10 +1,10 @@
 #Content Tweaker#
 
 #lang
-material.mercurystone.name=Камень Меркурия
-material.venusstone.name=Камень Венеры
-material.moonstone.name=Камень Луны
-material.marsstone.name=Камень Марса
-material.asteroidsstoneblack.name=Камень Черного Астероида
-material.asteroidsstonegray.name=Камень Серого Астероида
-material.asteroidsstonelightgray.name=Камень Светло-серого Астероида
+material.mercurystone=Камень Меркурия
+material.venusstone=Камень Венеры
+material.moonstone=Камень Луны
+material.marsstone=Камень Марса
+material.asteroidsstoneblack=Камень Черного Астероида
+material.asteroidsstonegray=Камень Серого Астероида
+material.asteroidsstonelightgray=Камень Светло-серого Астероида

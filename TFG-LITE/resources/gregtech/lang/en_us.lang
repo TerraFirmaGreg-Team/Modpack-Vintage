@@ -1,7 +1,7 @@
-material.mercurystone.name=Mercury Stone
-material.venusstone.name=Venus Stone
-material.moonstone.name=Moon Stone
-material.marsstone.name=Mars Stone
-material.asteroidsstoneblack.name=Black Asteroid Stone
-material.asteroidsstonegray.name=Gray Asteroid Stone
-material.asteroidsstonelightgray.name=Light-Gray Asteroid Stone
+material.mercurystone=Mercury Stone
+material.venusstone=Venus Stone
+material.moonstone=Moon Stone
+material.marsstone=Mars Stone
+material.asteroidsstoneblack=Black Asteroid Stone
+material.asteroidsstonegray=Gray Asteroid Stone
+material.asteroidsstonelightgray=Light-Gray Asteroid Stone
