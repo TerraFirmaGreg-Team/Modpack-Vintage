@@ -1,7 +1,0 @@
-{
-    "parent": "block/util_cube_glow_2_all",
-    "textures": {
-        "all": "blocks/obsidian",
-        "glow": "blocks/obsidian_reflect"
-    }
-}
