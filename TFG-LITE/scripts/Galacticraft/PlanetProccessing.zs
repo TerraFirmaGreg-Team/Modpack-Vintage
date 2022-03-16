@@ -172,78 +172,112 @@ centrifuge.recipeBuilder()
    .duration(1250)
    .EUt(1024)
    .buildAndRegister();
-/*
-//Меркурий
-//Меркурианский реголит --> Азот, Аргон, Углексилый газ, Гелий
-centrifuge.recipeBuilder()
-   .inputs(<contenttweaker:mercuryturf>*4)
-   .chancedOutput(<tfc:gravel/basalt>, 4500, 1500)
-   .fluidOutputs(<liquid:nitrogen> * 15, <liquid:carbon_dioxide>*13, <liquid:argon>*4, <liquid:helium>*1)
-   .duration(180)
-   .EUt(142)
-   .buildAndRegister();
-//Меркурианский грунт
-centrifuge.recipeBuilder()
-   .inputs(<contenttweaker:mercurysoil>)
-   .chancedOutput(<ore:dustTinyIron>.firstItem, 1000, 20)
-   .fluidOutputs(<liquid:argon>*1)
-   .duration(180)
-   .EUt(144)
-   .buildAndRegister();
-//Меркурианский камень --> Пыль
+
+// --- Меркурий
+
+// Поверхность --> Пыль х1
 macerator.recipeBuilder()
    .inputs(<galaxyspace:mercuryblocks:2> * 3)
-   .chancedOutput(<contenttweaker:mercurystone>, 9500, 50)
-   .chancedOutput(<contenttweaker:mercurystone>, 7500, 150)
-   .chancedOutput(<contenttweaker:mercurystone>, 5500, 150)
-   .duration(200)
-   .EUt(38)
+   .chancedOutput(<metaitem:dustMercurystone>, 9000, 100)
+   .chancedOutput(<metaitem:dustMercurystone>, 500, 150)
+   .chancedOutput(<metaitem:dustMercurystone>, 250, 200)
+   .duration(4500)
+   .EUt(1540)
    .buildAndRegister();
+
+// Подповерхность --> х2
+macerator.recipeBuilder()
+   .inputs(<galaxyspace:mercuryblocks:2> * 3)
+   .chancedOutput(<metaitem:dustMercurystone>, 9000, 100)
+   .chancedOutput(<metaitem:dustMercurystone>, 7500, 150)
+   .chancedOutput(<metaitem:dustMercurystone>, 500, 200)
+   .duration(5000)
+   .EUt(1540)
+   .buildAndRegister();
+
+// Порода --> Пыль х3
+macerator.recipeBuilder()
+   .inputs(<galaxyspace:mercuryblocks:2> * 3)
+   .chancedOutput(<metaitem:dustMercurystone>, 9000, 100)
+   .chancedOutput(<metaitem:dustMercurystone>, 9000, 150)
+   .chancedOutput(<metaitem:dustMercurystone>, 9000, 200)
+   .duration(5500)
+   .EUt(1540)
+   .buildAndRegister();
+
 //Меркурианский камень пыль
 centrifuge.recipeBuilder()
-   .inputs(<contenttweaker:mercurystone>*2)
+   .inputs(<metaitem:dustMercurystone> * 2)
    .chancedOutput(<ore:dustTinyVanadiumMagnetite>.firstItem, 4500, 1200)
    .chancedOutput(<ore:dustTinyIron>.firstItem, 4000, 500)
    .fluidOutputs(<liquid:nitrogen> * 1, <liquid:carbon_dioxide>*2)
-   .duration(250)
-   .EUt(146)
+   .duration(1500)
+   .EUt(1536)
    .buildAndRegister();
-*/
-/*
-//Астероидный камень пыль --> Byproduct
-//1
+
+// --- Астероиды(3 типа камня)
+
+// Тип 1
+macerator.recipeBuilder()
+   .inputs(<galacticraftplanets:asteroids_block> * 3)
+   .chancedOutput(<metaitem:dustAsteroidsstoneblack>, 9000, 100)
+   .chancedOutput(<metaitem:dustAsteroidsstoneblack>, 9000, 150)
+   .chancedOutput(<metaitem:dustAsteroidsstoneblack>, 9000, 200)
+   .duration(6500)
+   .EUt(1840)
+   .buildAndRegister();
+
 centrifuge.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block>*2)
+   .inputs(<metaitem:dustAsteroidsstoneblack> * 2)
    .chancedOutput(<ore:dustImpureNickel>.firstItem, 3000, 500)
    .chancedOutput(<ore:dustImpureYellowLimonite>.firstItem, 4500, 100)
    .chancedOutput(<ore:dustImpureBrownLimonite>.firstItem, 4500, 100)
    .chancedOutput(<ore:dustImpureGold>.firstItem, 1100, 100)
    .chancedOutput(<ore:dustTinyRarestMetalResidue>.firstItem, 500, 100)
    .chancedOutput(<ore:dustTinyIndium>.firstItem, 10, 1)
-   .duration(200)
-   .EUt(192)
+   .duration(1600)
+   .EUt(1640)
    .buildAndRegister();
-//2
+
+// Тип 2
+macerator.recipeBuilder()
+   .inputs(<galacticraftplanets:asteroids_block:1> * 3)
+   .chancedOutput(<metaitem:dustAsteroidsstonegray>, 9000, 100)
+   .chancedOutput(<metaitem:dustAsteroidsstonegray>, 9000, 150)
+   .chancedOutput(<metaitem:dustAsteroidsstonegray>, 9000, 200)
+   .duration(6500)
+   .EUt(1840)
+   .buildAndRegister();
+
 centrifuge.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block:1>*2)
+   .inputs(<metaitem:dustAsteroidsstonegray> * 2)
    .chancedOutput(<ore:dustImpureBauxite>.firstItem, 3000, 500)
    .chancedOutput(<ore:dustImpureDiamond>.firstItem, 3500, 100)
    .chancedOutput(<ore:dustImpureRedstone>.firstItem, 1500, 100)
    .chancedOutput(<ore:dustImpureMonazite>.firstItem, 1100, 100)
    .chancedOutput(<ore:dustImpureMolybdenum>.firstItem, 5000, 500)
    .chancedOutput(<ore:dustTinyRareEarth>.firstItem, 500, 500)
-   .duration(200)
-   .EUt(192)
+   .duration(1600)
+   .EUt(1640)
    .buildAndRegister();
-//3
+
+// Тип 3
+macerator.recipeBuilder()
+   .inputs(<galacticraftplanets:asteroids_block:2> * 3)
+   .chancedOutput(<metaitem:dustAsteroidsstonelightgray>, 9000, 100)
+   .chancedOutput(<metaitem:dustAsteroidsstonelightgray>, 9000, 150)
+   .chancedOutput(<metaitem:dustAsteroidsstonelightgray>, 9000, 200)
+   .duration(6500)
+   .EUt(1840)
+   .buildAndRegister();
+
 centrifuge.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block:2>)
+   .inputs(<metaitem:dustAsteroidsstonelightgray> * 3)
    .chancedOutput(<ore:dustTinyCobalt>.firstItem, 7500, 1000)
    .chancedOutput(<ore:dustTinyBeryllium>.firstItem, 5000, 500)
    .chancedOutput(<ore:dustTinyPlatinum>.firstItem, 2500, 250)
    .chancedOutput(<ore:dustTinyBarium>.firstItem, 1100, 100)
    .chancedOutput(<ore:dustTinyHolmium>.firstItem, 100, 100)
-   .duration(200)
-   .EUt(192)
+   .duration(1600)
+   .EUt(1640)
    .buildAndRegister();
-*/
