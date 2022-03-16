@@ -1,0 +1,6 @@
+{
+    "parent": "block/util_cube_heat_all",
+    "textures": {
+        "heat": "tfc:blocks/stonetypes/sand/chalk_hot"
+    }
+}

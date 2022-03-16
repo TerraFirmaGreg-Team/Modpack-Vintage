@@ -1,0 +1,15 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "EDGES_FULL",
+        "textures": [
+            "blocks/sand_damp"
+        ],
+        "extra": {
+            "connect_to": [
+                { "block": "water" },
+                { "block": "flowing_water" }
+            ]
+        }
+    }
+}

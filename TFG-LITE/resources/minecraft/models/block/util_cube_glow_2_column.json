@@ -1,0 +1,19 @@
+{
+    "parent": "block/util_cube_glow_2",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "#side",
+        "down": "#end",
+        "up": "#end",
+        "north": "#side",
+        "east": "#side",
+        "south": "#side",
+        "west": "#side",
+        "glow_down": "#glow_end",
+        "glow_up":   "#glow_end",
+        "glow_north":"#glow_side",
+        "glow_east": "#glow_side",
+        "glow_south":"#glow_side",
+        "glow_west": "#glow_side"
+    }
+}

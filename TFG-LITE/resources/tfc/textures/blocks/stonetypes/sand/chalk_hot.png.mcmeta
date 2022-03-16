@@ -1,0 +1,16 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "EDGES_FULL",
+        "layer": "CUTOUT",
+        "textures": [
+            "tfc:blocks/stonetypes/sand/chalk_hot_ctm"
+        ],
+        "extra": {
+            "connect_to": [
+                { "block": "lava" }
+            ],
+            "light": 12
+        }
+    }
+}
