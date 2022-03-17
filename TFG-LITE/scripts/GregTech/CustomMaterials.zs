@@ -142,4 +142,3 @@ MaterialBuilder(32103, "marsstone").color(0xFF7A5C).dust().build();
 MaterialBuilder(32104, "asteroidsstoneblack").color(0x1C1C1C).dust().build();
 MaterialBuilder(32105, "asteroidsstonegray").color(0x505050).dust().build();
 MaterialBuilder(32106, "asteroidsstonelightgray").color(0xBBBBBB).dust().build();
-
