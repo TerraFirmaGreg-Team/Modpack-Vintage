@@ -419,7 +419,7 @@ implosion_compressor.recipeBuilder()
 	.inputs(<ore:dustIridium> * 3, <ore:dustRhodiumPlatedPalladium> * 2)
 	.property("explosives", 8)
 	.outputs([<metaitem:dustNetherStar> * 2])
-	.duration(350).EUt(2000).buildAndRegister();
+	.duration(650).EUt(2000).buildAndRegister();
 // Mars air
 <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 gas_collector.recipeBuilder()
