@@ -415,11 +415,20 @@ chemical_reactor.recipeBuilder()
     .duration(200)
     .EUt(7680)
     .buildAndRegister();
-implosion_compressor.recipeBuilder()
-	.inputs(<ore:dustIridium> * 3, <ore:dustRhodiumPlatedPalladium> * 2)
-	.property("explosives", 8)
-	.outputs([<metaitem:dustNetherStar> * 2])
-	.duration(650).EUt(2000).buildAndRegister();
+chemical_reactor.recipeBuilder()
+    .inputs([
+        <ore:dustDiamond> * 2,
+        <ore:dustIridium> * 2
+    ])
+    .fluidInputs([
+        <liquid:sulfur_dioxide> * 6000,
+        <liquid:carbon_monoxide> * 8000,
+        <liquid:rocket_fuel> * 1000
+    ])
+    .outputs([<metaitem:dustNetherStar> * 1])
+    .duration(600)
+    .EUt(2000)
+    .buildAndRegister();
 // Mars air
 <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 gas_collector.recipeBuilder()
