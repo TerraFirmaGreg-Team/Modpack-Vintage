@@ -61,7 +61,15 @@ for item in RemoveItemsFromJEI{
     recipes.remove(item);
 }
 
-// Создание рецептов
+// Поименное удаление рецептов
+val RemoveItemRecipesByName = [
+    "chisel:uncraft_blockiron"
+] as string[];
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
+
+// --- Создание рецептов
 // Железная стамеска
 recipes.addShaped(<chisel:chisel_iron>,
 [[null, <ore:plateWroughtIron>, null],

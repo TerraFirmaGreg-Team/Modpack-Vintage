@@ -30,6 +30,16 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
+// Поименное удаление рецептов
+val RemoveItemRecipesByName = [
+  "appliedenergistics2:decorative/quartz_block_pure",
+  "appliedenergistics2:decorative/certuz_quartz_block",
+  "appliedenergistics2:decorative/certuz_quartz_block_pure",
+] as string[];
+for item in RemoveItemRecipesByName{
+  recipes.removeByRecipeName(item);
+}
+
 ########################################
 # Items
 ########################################
@@ -37,102 +47,102 @@ for item in RemoveItemsFromJEI{
 // Покраска, обесвечивание кабелей и присвоение oredict
 // Glass Cable
 var glassCables as IItemStack[] = [
-    <appliedenergistics2:part>,
-    <appliedenergistics2:part:1>,
-    <appliedenergistics2:part:2>,
-    <appliedenergistics2:part:3>,
-    <appliedenergistics2:part:4>,
-    <appliedenergistics2:part:5>,
-    <appliedenergistics2:part:6>,
-    <appliedenergistics2:part:7>,
-    <appliedenergistics2:part:8>,
-    <appliedenergistics2:part:9>,
-    <appliedenergistics2:part:10>,
-    <appliedenergistics2:part:11>,
-    <appliedenergistics2:part:12>,
-    <appliedenergistics2:part:13>,
-    <appliedenergistics2:part:14>,
-    <appliedenergistics2:part:15>,
-    <appliedenergistics2:part:16>
+  <appliedenergistics2:part>,
+  <appliedenergistics2:part:1>,
+  <appliedenergistics2:part:2>,
+  <appliedenergistics2:part:3>,
+  <appliedenergistics2:part:4>,
+  <appliedenergistics2:part:5>,
+  <appliedenergistics2:part:6>,
+  <appliedenergistics2:part:7>,
+  <appliedenergistics2:part:8>,
+  <appliedenergistics2:part:9>,
+  <appliedenergistics2:part:10>,
+  <appliedenergistics2:part:11>,
+  <appliedenergistics2:part:12>,
+  <appliedenergistics2:part:13>,
+  <appliedenergistics2:part:14>,
+  <appliedenergistics2:part:15>,
+  <appliedenergistics2:part:16>
 ];
 for glassCable in glassCables {
-    <ore:ae2.cable.glass>.add(glassCable);
-    if (glassCable.displayName has "Fluix") {}
-    else {
-        <ore:ae2.cable.glass.colors>.add(glassCable);
-    }
+  <ore:ae2.cable.glass>.add(glassCable);
+  if (glassCable.displayName has "Fluix") {}
+  else {
+    <ore:ae2.cable.glass.colors>.add(glassCable);
+  }
 }
 var colored_GlassCables as IItemStack[] = [
-    <appliedenergistics2:part>,
-    <appliedenergistics2:part:1>,
-    <appliedenergistics2:part:2>,
-    <appliedenergistics2:part:3>,
-    <appliedenergistics2:part:4>,
-    <appliedenergistics2:part:5>,
-    <appliedenergistics2:part:6>,
-    <appliedenergistics2:part:7>,
-    <appliedenergistics2:part:8>,
-    <appliedenergistics2:part:9>,
-    <appliedenergistics2:part:10>,
-    <appliedenergistics2:part:11>,
-    <appliedenergistics2:part:12>,
-    <appliedenergistics2:part:13>,
-    <appliedenergistics2:part:14>,
-    <appliedenergistics2:part:15>
+  <appliedenergistics2:part>,
+  <appliedenergistics2:part:1>,
+  <appliedenergistics2:part:2>,
+  <appliedenergistics2:part:3>,
+  <appliedenergistics2:part:4>,
+  <appliedenergistics2:part:5>,
+  <appliedenergistics2:part:6>,
+  <appliedenergistics2:part:7>,
+  <appliedenergistics2:part:8>,
+  <appliedenergistics2:part:9>,
+  <appliedenergistics2:part:10>,
+  <appliedenergistics2:part:11>,
+  <appliedenergistics2:part:12>,
+  <appliedenergistics2:part:13>,
+  <appliedenergistics2:part:14>,
+  <appliedenergistics2:part:15>
 ];
 for i, cable in colored_GlassCables {
-    recipes.remove(cable);
-    chemical_bath.recipeBuilder()
-        .inputs(<appliedenergistics2:part:16>)
-        .fluidInputs([All_Liquid_Dyes[i] * 8])
-        .outputs(cable)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  recipes.remove(cable);
+  chemical_bath.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+    .fluidInputs([All_Liquid_Dyes[i] * 8])
+    .outputs(cable)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 
-    chemical_bath.recipeBuilder()
-        .inputs(cable)
-        .fluidInputs([<liquid:chlorine> * 10])
-        .outputs(<appliedenergistics2:part:16>)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs(cable)
+    .fluidInputs([<liquid:chlorine> * 10])
+    .outputs(<appliedenergistics2:part:16>)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 }
 recipes.remove(<appliedenergistics2:part:16>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:140> * 2)
-    .inputs(<ore:dustFluix> * 2)
-    .outputs(<appliedenergistics2:part:16> * 3)
-    .duration(100)
-    .EUt(30)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:140> * 2)
+  .inputs(<ore:dustFluix> * 2)
+  .outputs(<appliedenergistics2:part:16> * 3)
+  .duration(100)
+  .EUt(30)
+  .buildAndRegister();
 
 // Covered Cable
 var coveredCables as IItemStack[] = [
-    <appliedenergistics2:part:20>,
-    <appliedenergistics2:part:21>,
-    <appliedenergistics2:part:22>,
-    <appliedenergistics2:part:23>,
-    <appliedenergistics2:part:24>,
-    <appliedenergistics2:part:25>,
-    <appliedenergistics2:part:26>,
-    <appliedenergistics2:part:27>,
-    <appliedenergistics2:part:28>,
-    <appliedenergistics2:part:29>,
-    <appliedenergistics2:part:30>,
-    <appliedenergistics2:part:31>,
-    <appliedenergistics2:part:32>,
-    <appliedenergistics2:part:33>,
-    <appliedenergistics2:part:34>,
-    <appliedenergistics2:part:35>,
-    <appliedenergistics2:part:36>
+  <appliedenergistics2:part:20>,
+  <appliedenergistics2:part:21>,
+  <appliedenergistics2:part:22>,
+  <appliedenergistics2:part:23>,
+  <appliedenergistics2:part:24>,
+  <appliedenergistics2:part:25>,
+  <appliedenergistics2:part:26>,
+  <appliedenergistics2:part:27>,
+  <appliedenergistics2:part:28>,
+  <appliedenergistics2:part:29>,
+  <appliedenergistics2:part:30>,
+  <appliedenergistics2:part:31>,
+  <appliedenergistics2:part:32>,
+  <appliedenergistics2:part:33>,
+  <appliedenergistics2:part:34>,
+  <appliedenergistics2:part:35>,
+  <appliedenergistics2:part:36>
 ];
 for coveredCable in coveredCables {
-    <ore:ae2.cable.covered>.add(coveredCable);
-    if (coveredCable.displayName has "Fluix") {}
-    else {
-        <ore:ae2.cable.covered.colors>.add(coveredCable);
-    }
+  <ore:ae2.cable.covered>.add(coveredCable);
+  if (coveredCable.displayName has "Fluix") {}
+  else {
+    <ore:ae2.cable.covered.colors>.add(coveredCable);
+  }
 }
 var colored_CoveredCable as IItemStack[] = [
 	<appliedenergistics2:part:20>,
@@ -154,75 +164,75 @@ var colored_CoveredCable as IItemStack[] = [
 ];
 
 for i, cable in colored_CoveredCable {
-    recipes.remove(cable);
-    chemical_bath.recipeBuilder()
-        .inputs(<appliedenergistics2:part:36>)
-        .fluidInputs([All_Liquid_Dyes[i] * 8])
-        .outputs(cable)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  recipes.remove(cable);
+  chemical_bath.recipeBuilder()
+    .inputs(<appliedenergistics2:part:36>)
+    .fluidInputs([All_Liquid_Dyes[i] * 8])
+    .outputs(cable)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 
-    chemical_bath.recipeBuilder()
-        .inputs(cable)
-        .fluidInputs([<liquid:chlorine> * 10])
-        .outputs(<appliedenergistics2:part:36>)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs(cable)
+    .fluidInputs([<liquid:chlorine> * 10])
+    .outputs(<appliedenergistics2:part:36>)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 }
 recipes.remove(<appliedenergistics2:part:36>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16>)
-    .circuit(24)
-    .fluidInputs([<liquid:rubber> * 144])
-    .outputs(<appliedenergistics2:part:36>)
-    .duration(150)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:16>)
+  .circuit(24)
+  .fluidInputs([<liquid:rubber> * 144])
+  .outputs(<appliedenergistics2:part:36>)
+  .duration(150)
+  .EUt(8)
+  .buildAndRegister();
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16>)
-    .circuit(24)
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 72])
-    .outputs(<appliedenergistics2:part:36>)
-    .duration(150)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:16>)
+  .circuit(24)
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 72])
+  .outputs(<appliedenergistics2:part:36>)
+  .duration(150)
+  .EUt(8)
+  .buildAndRegister();
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16>)
-    .circuit(24)
-    .fluidInputs([<liquid:silicone_rubber> * 36])
-    .outputs(<appliedenergistics2:part:36>)
-    .duration(150)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:16>)
+  .circuit(24)
+  .fluidInputs([<liquid:silicone_rubber> * 36])
+  .outputs(<appliedenergistics2:part:36>)
+  .duration(150)
+  .EUt(8)
+  .buildAndRegister();
 
 // Smart Cable
 var smartCables as IItemStack[] = [
-    <appliedenergistics2:part:40>,
-    <appliedenergistics2:part:41>,
-    <appliedenergistics2:part:42>,
-    <appliedenergistics2:part:43>,
-    <appliedenergistics2:part:44>,
-    <appliedenergistics2:part:45>,
-    <appliedenergistics2:part:46>,
-    <appliedenergistics2:part:47>,
-    <appliedenergistics2:part:48>,
-    <appliedenergistics2:part:49>,
-    <appliedenergistics2:part:50>,
-    <appliedenergistics2:part:51>,
-    <appliedenergistics2:part:52>,
-    <appliedenergistics2:part:53>,
-    <appliedenergistics2:part:54>,
-    <appliedenergistics2:part:55>,
-    <appliedenergistics2:part:56>
+  <appliedenergistics2:part:40>,
+  <appliedenergistics2:part:41>,
+  <appliedenergistics2:part:42>,
+  <appliedenergistics2:part:43>,
+  <appliedenergistics2:part:44>,
+  <appliedenergistics2:part:45>,
+  <appliedenergistics2:part:46>,
+  <appliedenergistics2:part:47>,
+  <appliedenergistics2:part:48>,
+  <appliedenergistics2:part:49>,
+  <appliedenergistics2:part:50>,
+  <appliedenergistics2:part:51>,
+  <appliedenergistics2:part:52>,
+  <appliedenergistics2:part:53>,
+  <appliedenergistics2:part:54>,
+  <appliedenergistics2:part:55>,
+  <appliedenergistics2:part:56>
 ];
 for smartCable in smartCables {
-    <ore:ae2.cable.smart>.add(smartCable);
-    if (smartCable.displayName has "Fluix") {}
-    else {
-        <ore:ae2.cable.smart.colors>.add(smartCable);
-    }
+  <ore:ae2.cable.smart>.add(smartCable);
+  if (smartCable.displayName has "Fluix") {}
+  else {
+    <ore:ae2.cable.smart.colors>.add(smartCable);
+  }
 }
 var colored_SmartCable as IItemStack[] = [
 	<appliedenergistics2:part:40>,
@@ -243,58 +253,58 @@ var colored_SmartCable as IItemStack[] = [
 	<appliedenergistics2:part:55>
 ];
 for i, cable in colored_SmartCable {
-    recipes.remove(cable);
-    chemical_bath.recipeBuilder()
-        .inputs(<appliedenergistics2:part:56>)
-        .fluidInputs([All_Liquid_Dyes[i] * 8])
-        .outputs(cable)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
-    chemical_bath.recipeBuilder()
-        .inputs(cable)
-        .fluidInputs([<liquid:chlorine> * 10])
-        .outputs(<appliedenergistics2:part:56>)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  recipes.remove(cable);
+  chemical_bath.recipeBuilder()
+    .inputs(<appliedenergistics2:part:56>)
+    .fluidInputs([All_Liquid_Dyes[i] * 8])
+    .outputs(cable)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs(cable)
+    .fluidInputs([<liquid:chlorine> * 10])
+    .outputs(<appliedenergistics2:part:56>)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 }
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:36>)
-		.inputs([<ore:dustRedstone> * 2])
-    .circuit(24)
-    .fluidInputs([<liquid:glowstone> * 144])
-    .outputs(<appliedenergistics2:part:56>)
-    .duration(100)
-    .EUt(30)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:36>)
+  .inputs([<ore:dustRedstone> * 2])
+  .circuit(24)
+  .fluidInputs([<liquid:glowstone> * 144])
+  .outputs(<appliedenergistics2:part:56>)
+  .duration(100)
+  .EUt(30)
+  .buildAndRegister();
 
 // Dense Covered Cable
 var denseCoveredCables as IItemStack[] = [
-    <appliedenergistics2:part:500>,
-    <appliedenergistics2:part:501>,
-    <appliedenergistics2:part:502>,
-    <appliedenergistics2:part:503>,
-    <appliedenergistics2:part:504>,
-    <appliedenergistics2:part:505>,
-    <appliedenergistics2:part:506>,
-    <appliedenergistics2:part:507>,
-    <appliedenergistics2:part:508>,
-    <appliedenergistics2:part:509>,
-    <appliedenergistics2:part:510>,
-    <appliedenergistics2:part:511>,
-    <appliedenergistics2:part:512>,
-    <appliedenergistics2:part:513>,
-    <appliedenergistics2:part:514>,
-    <appliedenergistics2:part:515>,
-    <appliedenergistics2:part:516>
+  <appliedenergistics2:part:500>,
+  <appliedenergistics2:part:501>,
+  <appliedenergistics2:part:502>,
+  <appliedenergistics2:part:503>,
+  <appliedenergistics2:part:504>,
+  <appliedenergistics2:part:505>,
+  <appliedenergistics2:part:506>,
+  <appliedenergistics2:part:507>,
+  <appliedenergistics2:part:508>,
+  <appliedenergistics2:part:509>,
+  <appliedenergistics2:part:510>,
+  <appliedenergistics2:part:511>,
+  <appliedenergistics2:part:512>,
+  <appliedenergistics2:part:513>,
+  <appliedenergistics2:part:514>,
+  <appliedenergistics2:part:515>,
+  <appliedenergistics2:part:516>
 ];
 for denseCoveredCable in denseCoveredCables {
-    <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
-    if (denseCoveredCable.displayName has "Fluix") {}
-    else {
-        <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
-    }
+  <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
+  if (denseCoveredCable.displayName has "Fluix") {}
+  else {
+    <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
+  }
 }
 var colored_DenseCoveredCable as IItemStack[] = [
 	<appliedenergistics2:part:500>,
@@ -315,76 +325,76 @@ var colored_DenseCoveredCable as IItemStack[] = [
 	<appliedenergistics2:part:515>
 ];
 for i, cable in colored_DenseCoveredCable {
-    recipes.remove(cable);
-    chemical_bath.recipeBuilder()
-        .inputs(<appliedenergistics2:part:516>)
-        .fluidInputs([All_Liquid_Dyes[i] * 8])
-        .outputs(cable)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  recipes.remove(cable);
+  chemical_bath.recipeBuilder()
+    .inputs(<appliedenergistics2:part:516>)
+    .fluidInputs([All_Liquid_Dyes[i] * 8])
+    .outputs(cable)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 
-    chemical_bath.recipeBuilder()
-        .inputs(cable)
-        .fluidInputs([<liquid:chlorine> * 10])
-        .outputs(<appliedenergistics2:part:516>)
-        .duration(40)
-        .EUt(16)
-        .buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs(cable)
+    .fluidInputs([<liquid:chlorine> * 10])
+    .outputs(<appliedenergistics2:part:516>)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
 }
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:36> * 4)
-    .circuit(24)
-    .fluidInputs([<liquid:rubber> * 576])
-    .outputs(<appliedenergistics2:part:516>)
-    .duration(150)
-    .EUt(32)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:36> * 4)
+  .circuit(24)
+  .fluidInputs([<liquid:rubber> * 576])
+  .outputs(<appliedenergistics2:part:516>)
+  .duration(150)
+  .EUt(32)
+  .buildAndRegister();
 
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:36> * 4)
-    .circuit(24)
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 288])
-    .outputs(<appliedenergistics2:part:516>)
-    .duration(150)
-    .EUt(32)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:36> * 4)
+  .circuit(24)
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 288])
+  .outputs(<appliedenergistics2:part:516>)
+  .duration(150)
+  .EUt(32)
+  .buildAndRegister();
 
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:36> * 4)
-    .circuit(24)
-    .fluidInputs([<liquid:silicone_rubber> * 144])
-    .outputs(<appliedenergistics2:part:516>)
-    .duration(150)
-    .EUt(32)
-    .buildAndRegister();
+  .inputs(<appliedenergistics2:part:36> * 4)
+  .circuit(24)
+  .fluidInputs([<liquid:silicone_rubber> * 144])
+  .outputs(<appliedenergistics2:part:516>)
+  .duration(150)
+  .EUt(32)
+  .buildAndRegister();
 
 // Dense Smart Cable
 var denseSmartCables as IItemStack[] = [
-    <appliedenergistics2:part:60>,
-    <appliedenergistics2:part:61>,
-    <appliedenergistics2:part:62>,
-    <appliedenergistics2:part:63>,
-    <appliedenergistics2:part:64>,
-    <appliedenergistics2:part:65>,
-    <appliedenergistics2:part:66>,
-    <appliedenergistics2:part:67>,
-    <appliedenergistics2:part:68>,
-    <appliedenergistics2:part:69>,
-    <appliedenergistics2:part:70>,
-    <appliedenergistics2:part:71>,
-    <appliedenergistics2:part:72>,
-    <appliedenergistics2:part:73>,
-    <appliedenergistics2:part:74>,
-    <appliedenergistics2:part:75>,
-    <appliedenergistics2:part:76>
+  <appliedenergistics2:part:60>,
+  <appliedenergistics2:part:61>,
+  <appliedenergistics2:part:62>,
+  <appliedenergistics2:part:63>,
+  <appliedenergistics2:part:64>,
+  <appliedenergistics2:part:65>,
+  <appliedenergistics2:part:66>,
+  <appliedenergistics2:part:67>,
+  <appliedenergistics2:part:68>,
+  <appliedenergistics2:part:69>,
+  <appliedenergistics2:part:70>,
+  <appliedenergistics2:part:71>,
+  <appliedenergistics2:part:72>,
+  <appliedenergistics2:part:73>,
+  <appliedenergistics2:part:74>,
+  <appliedenergistics2:part:75>,
+  <appliedenergistics2:part:76>
 ];
 for denseSmartCable in denseSmartCables {
-    <ore:ae2.cable.dense.smart>.add(denseSmartCable);
-    if (denseSmartCable.displayName has "Fluix") {}
-    else {
-        <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
-    }
+  <ore:ae2.cable.dense.smart>.add(denseSmartCable);
+  if (denseSmartCable.displayName has "Fluix") {}
+  else {
+    <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
+  }
 }
 var colored_DenseSmartCable as IItemStack[] = [
 	<appliedenergistics2:part:60>,

@@ -4,7 +4,7 @@ import mods.terrafirmacraft.ItemRegistry;
 
 //Отключение крафтов
 val RemoveItemsFromJEI as IItemStack[] = [
-    //Blocks
+    // Blocks
     <minecraft:stone>,
     <minecraft:grass>,
     <minecraft:dirt>,
@@ -19,19 +19,19 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:stonebrick:3>,
     <minecraft:mossy_cobblestone>,
     <minecraft:bookshelf>,
-    //Logs
+    // Logs
     <minecraft:log:*>,
     <minecraft:log2:*>,
-    //Planks
+    // Planks
     <minecraft:planks:*>,
-    //Slabs
+    // Slabs
     <minecraft:wooden_slab:*>,
     <minecraft:stone_slab>,
     <minecraft:stone_slab:1>,
     <minecraft:stone_slab:3>,
     <minecraft:stone_slab:5>,
     <minecraft:stone_slab2>,
-    //Stairs
+    // Stairs
     <minecraft:oak_stairs>,
     <minecraft:spruce_stairs>,
     <minecraft:birch_stairs>,
@@ -42,28 +42,28 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:stone_brick_stairs>,
     <minecraft:stone_stairs>,
     <minecraft:red_sandstone_stairs>,
-    //Doors
+    // Doors
     <minecraft:wooden_door>,
     <minecraft:spruce_door>,
     <minecraft:birch_door>,
     <minecraft:jungle_door>,
     <minecraft:acacia_door>,
     <minecraft:dark_oak_door>,
-    //Fence Gates
+    // Fence Gates
     <minecraft:fence_gate>,
     <minecraft:spruce_fence_gate>,
     <minecraft:birch_fence_gate>,
     <minecraft:jungle_fence_gate>,
     <minecraft:dark_oak_fence_gate>,
     <minecraft:acacia_fence_gate>,
-    //Gates
+    // Gates
     <minecraft:fence>,
     <minecraft:spruce_fence>,
     <minecraft:birch_fence>,
     <minecraft:jungle_fence>,
     <minecraft:dark_oak_fence>,
     <minecraft:acacia_fence>,
-    //Ores
+    // Ores
     <minecraft:gold_ore>,
     <minecraft:iron_ore>,
     <minecraft:coal_ore>,
@@ -72,7 +72,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:redstone_ore>,
     <minecraft:emerald_ore>,
     <minecraft:quartz_ore>,
-    //Food
+    // Food
     <minecraft:apple>,
     <minecraft:mushroom_stew>,
     <minecraft:bread>,
@@ -104,7 +104,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:beetroot>,
     <minecraft:beetroot_soup>,
     <minecraft:double_plant:2>,
-    //Tools
+    // Tools
     <minecraft:diamond_pickaxe>,
     <minecraft:golden_pickaxe>,
     <minecraft:iron_pickaxe>,
@@ -130,7 +130,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:stone_axe>,
     <minecraft:stone_shovel>,
     <minecraft:stone_hoe>,
-    //Armor
+    <minecraft:shears>,
+    // Armor
     <minecraft:diamond_leggings>,
     <minecraft:diamond_boots>,
     <minecraft:diamond_chestplate>,
@@ -147,7 +148,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:chainmail_chestplate>,
     <minecraft:chainmail_leggings>,
     <minecraft:chainmail_boots>,
-    //Other
+    // Other
     <minecraft:crafting_table>,
     <minecraft:furnace>,
     <minecraft:chest>,
@@ -165,7 +166,7 @@ for item in RemoveItemsFromJEI{
 }
 
 val ItemsToRemove as IItemStack[] = [
-    //Leather Armor
+    // Leather Armor
     <minecraft:leather_helmet>,
     <minecraft:leather_chestplate>,
     <minecraft:leather_leggings>,

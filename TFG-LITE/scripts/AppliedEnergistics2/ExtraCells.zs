@@ -33,7 +33,7 @@ val ItemsToRemoveFromJEI as IItemStack[] = [
 	<extracells:terminal.universal.wireless>
 ];
 for item in ItemsToRemoveFromJEI{
-    mods.jei.JEI.removeAndHide(item);
+  mods.jei.JEI.removeAndHide(item);
 }
 
 
