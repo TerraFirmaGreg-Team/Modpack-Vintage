@@ -1,0 +1,38 @@
+{
+  "version": "0.11.1:beta:0",
+  "client": {
+    "enable_teleportation_menu_key": true,
+    "enable_favorite_camp_key": true,
+    "teleportation_menu_key": 21,
+    "favorite_camp_key": 46
+  },
+  "server": {
+    "image_width": 800,
+    "image_height": 450,
+    "process_teleportation_on_move": true,
+    "enable_cross_dim_teleportation": true,
+    "enable_camps": true,
+    "camps_max_amount": 10,
+    "camp_teleportation_delay_seconds": 0,
+    "camp_cooldown_seconds": 0,
+    "enable_favorite_camp": true,
+    "enable_camp_invitations": true,
+    "max_invited_players_per_camp": 5,
+    "camp_invitation_request_expire_time_seconds": 20,
+    "enable_locations": true,
+    "locations_max_amount": 50,
+    "location_teleportation_delay_seconds": 0,
+    "location_cooldown_seconds": 0,
+    "allow_locations_creation_for_all": false,
+    "enable_player_teleportation": true,
+    "player_teleportation_delay_seconds": 0,
+    "player_teleportation_cooldown_seconds": 0,
+    "default_player_teleportation_profile": 1,
+    "player_teleportation_request_expire_seconds": 20,
+    "fee_mode": 0,
+    "camp_teleportation_fee": 0,
+    "location_teleportation_fee": 0,
+    "teleportation_to_player_fee": 0,
+    "advanced_logging": false
+  }
+}

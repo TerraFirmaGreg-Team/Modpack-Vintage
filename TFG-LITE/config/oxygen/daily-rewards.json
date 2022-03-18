@@ -1,0 +1,14 @@
+{
+  "version": "0.11.2:beta:0",
+  "client": {
+    "daily_rewards_menu_key": 51
+  },
+  "server": {
+    "reward_mode": 0,
+    "reward_time_offset_hours": 0,
+    "daily_reards_access": true,
+    "maximum_rewards_per_month": 31,
+    "debug_scripts": false,
+    "advanced_logging": false
+  }
+}
