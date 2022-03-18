@@ -1,5 +1,6 @@
 #loader gregtech
-#priority 998
+
+#priority 990
 
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.MaterialBuilder;
@@ -7,7 +8,7 @@ import mods.gregtech.material.Material;
 
 import mods.gregtech.StoneType;
 
-//Add Custom Flags
+// --- Custom material settings
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:magnesium>.addFlags("generate_plate");
 <material:titanium>.addFlags("generate_foil");

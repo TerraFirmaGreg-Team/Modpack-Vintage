@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 
-//Удаление и скрытие предметов
+// --- Removing Recipes
+
+// Удаление и скрытие предметов
 val ItemsToRemove as IItemStack[] = [
 	<projectred-core:resource_item:100>,
     <projectred-core:resource_item:101>,
@@ -11,6 +13,9 @@ for item in ItemsToRemove{
 }
 
 furnace.remove(<projectred-core:resource_item> * 2);
+
+// --- Adding Recipes
+
 furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:RawIgneousExtrusive>);
 
 //Iron Coil

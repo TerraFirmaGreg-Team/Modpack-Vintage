@@ -1,4 +1,7 @@
+#priority 985
+
 import crafttweaker.item.IItemStack;
+
 import mods.gregtech.IControllerTile;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;

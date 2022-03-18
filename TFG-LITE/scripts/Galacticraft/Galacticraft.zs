@@ -1,37 +1,40 @@
 import crafttweaker.item.IItemStack;
+
 import mods.terrafirmacraft.ItemRegistry;
 
-//Удаление+скрытие рецептов JEI
+// --- Removing Recipes
+
+// Удаление+скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
-	//Руды
-	//Медь
+	// Руды
+	// Медь
 	<galacticraftcore:basic_block_core:5>,
 	<galacticraftcore:basic_block_moon>,
 	<galacticraftplanets:mars>,
 	<galacticraftplanets:venus:7>,
-	//Олово
+	// Олово
 	<galacticraftcore:basic_block_core:6>,
 	<galacticraftcore:basic_block_moon:1>,
 	<galacticraftplanets:mars:1>,
 	<galacticraftplanets:venus:11>,
-	//Железо
+	// Железо
 	<galacticraftplanets:mars:3>,
 	<galacticraftplanets:asteroids_block:5>,
-	//Алюминиум
+	// Алюминиум
 	<galacticraftcore:basic_block_core:7>,
 	<galacticraftplanets:asteroids_block:3>,
 	<galacticraftplanets:venus:6>,
-	//Силикон
+	// Силикон
 	<galacticraftcore:basic_block_core:8>,
 	<galacticraftplanets:venus:10>,
-	//Остальные руды
+	// Остальные руды
 	<galacticraftcore:basic_block_moon:6>,
 	<galacticraftcore:basic_block_moon:2>,
 	<galacticraftplanets:venus:8>,
 	<galacticraftplanets:venus:9>,
 	<galacticraftplanets:mars:2>,
 	<galacticraftplanets:venus:13>,
-	//Предметы
+	// Предметы
 	<galacticraftplanets:volcanic_pickaxe>,
 	<galacticraftplanets:desh_pick_slime>,
 	<galacticraftcore:steel_pickaxe>,
@@ -126,7 +129,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<galacticraftcore:machine3>,
 	<galacticraftcore:cargo>,
 	<galacticraftcore:cargo:4>,
-	//<galacticraftcore:rocket_workbench>,
 	<galacticraftcore:fluid_pipe>,
 	<galacticraftcore:parachest>,
 	<galacticraftcore:cheese>,
@@ -191,7 +193,7 @@ for item in RemoveItemsFromJEI{
     mods.jei.JEI.removeAndHide(item);
 }
 
-//Удаление рецептов
+// Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:distributor>,
 	<galacticraftcore:collector>,
@@ -289,6 +291,8 @@ recipes.removeByRecipeName("galacticraftcore:slime_ball");
 recipes.removeByRecipeName("galacticraftcore:cobblestone");
 recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
 recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
+
+// --- Adding Recipes
 
 //Еда из GC
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);

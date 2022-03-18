@@ -1,13 +1,12 @@
-//Удаление + скрытие
+// --- Removing Recipes
 mods.jei.JEI.removeAndHide(<enderstorage:ender_pouch>);
 
-//Удаление рецептов
 recipes.remove(<enderstorage:ender_storage>);
 recipes.remove(<enderstorage:ender_storage:1>);
 
-//Добавление рецептов
+// ---- Adding Recipes
+
 // Chest
-recipes.remove(<enderstorage:ender_storage>);
 assembler.recipeBuilder()
   .circuit(1)
   .inputs([
@@ -24,7 +23,6 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 // Tank
-recipes.remove(<enderstorage:ender_storage:1>);
 assembler.recipeBuilder()
   .circuit(2)
   .inputs([

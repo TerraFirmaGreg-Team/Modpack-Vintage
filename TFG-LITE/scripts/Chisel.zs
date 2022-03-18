@@ -2,8 +2,10 @@ import crafttweaker.item.IItemStack;
 
 import mods.chisel.Carving;
 
-// Удаление групп
-Carving.removeGroup("basalt");
+val DefaultAndWroughtIron = <ore:plateIron> | <ore:plateWroughtIron>;
+val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>;
+
+// --- Removing Recipes
 
 // Удаление рецептов
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -69,7 +71,11 @@ for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
 
-// --- Создание рецептов
+// Удаление групп
+Carving.removeGroup("basalt");
+
+// --- Adding Recipes
+
 // Железная стамеска
 recipes.addShaped(<chisel:chisel_iron>,
 [[null, <ore:plateWroughtIron>, null],
@@ -125,31 +131,31 @@ recipes.addShaped(<chiselsandbits:bit_bag>,
  [<ore:leather>, <ore:wool>, <ore:leather>]]);
  
 // Лабораторный блок
-recipes.addShaped(<chisel:laboratory>*8,
+recipes.addShaped(<chisel:laboratory> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>, <ore:stone>],
+ [<ore:stone>, AllQuartzTypes, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Храмовый блок
-recipes.addShaped(<chisel:temple>*8,
+recipes.addShaped(<chisel:temple> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
  [<ore:stone>, <ore:dyeCyan>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Тириан блок
-recipes.addShaped(<chisel:tyrian>*8,
+recipes.addShaped(<chisel:tyrian> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>],
+ [<ore:stone>, DefaultAndWroughtIron, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Фактори блок
-recipes.addShaped(<chisel:factory>*8,
-[[<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>],
+recipes.addShaped(<chisel:factory> * 8,
+[[DefaultAndWroughtIron, <ore:stone>, DefaultAndWroughtIron],
  [<ore:stone>, null, <ore:stone>],
- [<ore:plateIron> | <ore:plateWroughtIron>, <ore:stone>, <ore:plateIron> | <ore:plateWroughtIron>]]);
+ [DefaultAndWroughtIron, <ore:stone>, DefaultAndWroughtIron]]);
  
 // Бровн стоун
-recipes.addShaped(<chisel:brownstone>*8,
+recipes.addShaped(<chisel:brownstone> * 8,
 [[<ore:sand>, <ore:sand>, <ore:sand>],
  [<ore:sand>, <minecraft:clay_ball>, <ore:sand>],
  [<ore:sand>, <ore:sand>, <ore:sand>]]);

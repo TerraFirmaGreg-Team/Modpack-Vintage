@@ -13,8 +13,6 @@ recipes.addShaped(<catwalks:blowtorch>, [
     [<ore:stickLongSteel>, <ore:gtce.tool.wrenches>, null]
 ]);
 
-
-
 ########################################
 # Blocks
 ########################################

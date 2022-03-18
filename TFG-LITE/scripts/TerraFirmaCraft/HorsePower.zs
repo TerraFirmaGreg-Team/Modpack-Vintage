@@ -1,5 +1,8 @@
 import crafttweaker.item.IItemStack;
+
 import mods.horsepower.Grindstone;
+
+// --- Removing Recipes
 
 mods.jei.JEI.removeAndHide(<horsepower:flour>);
 mods.jei.JEI.removeAndHide(<horsepower:dough>);
@@ -14,6 +17,8 @@ val RemoveItemsFromQuern as IItemStack[] = [
 for item in RemoveItemsFromQuern{
     Grindstone.remove(item);
 }
+
+// --- Adding Recipes
 
 // GrindStone - GT ore --> GT small pile
 // Copper

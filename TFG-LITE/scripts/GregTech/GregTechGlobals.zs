@@ -1,4 +1,4 @@
-#priority 999
+#priority 997
 
 import mods.gregtech.recipe.RecipeMap;
 

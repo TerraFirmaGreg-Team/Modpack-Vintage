@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 
+// --- Removing Recipes
+
 // Скрытие мусора
 val RemoveItemsFromJEI as IItemStack[] = [
 	<metaitem:toolHeadSwordFlint>,
@@ -93,3 +95,15 @@ val RemoveItemRecipesByName = [
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
+
+// --- Adding Recipes
+
+// Крафт GT ножей
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "copper"}}), [<tfc:metal/knife_blade/copper>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "bismuth_bronze"}}), [<tfc:metal/knife_blade/bismuth_bronze>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "bronze"}}), [<tfc:metal/knife_blade/black_bronze>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "black_bronze"}}), [<tfc:metal/knife_blade/wrought_iron>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "steel"}}), [<tfc:metal/knife_blade/steel>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "black_steel"}}), [<tfc:metal/knife_blade/black_steel>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), [<tfc:metal/knife_blade/blue_steel>, <ore:stickWood>]);
+recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "red_steel"}}), [<tfc:metal/knife_blade/red_steel>, <ore:stickWood>]);

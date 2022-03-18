@@ -1,4 +1,4 @@
-// GALACTICRAFT-PROCCESSING
+// --- Adding Recipes
 
 // Solid Meteoric Iron --> Meteoric Iron Raw
 macerator.recipeBuilder()

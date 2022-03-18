@@ -9,6 +9,9 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
+import mods.jei.JEI;
+
+// --- Removing Recipes
 
 // Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
@@ -269,7 +272,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:sluice>
 ];
 for item in RemoveItemsFromJEI{
-    mods.jei.JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 // Удаление рецептов
@@ -310,7 +313,7 @@ for item in RemoveItemsFromQuern{
     Quern.removeRecipe(item);
 }
 
-// --- Рецепты
+// --- Adding Recipes
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
@@ -829,16 +832,6 @@ electrolyzer.recipeBuilder()
 	.inputs(<ore:sand> * 8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(26).buildAndRegister();
-
-// Крафт GT ножей
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "copper"}}), [<tfc:metal/knife_blade/copper>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "bismuth_bronze"}}), [<tfc:metal/knife_blade/bismuth_bronze>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "bronze"}}), [<tfc:metal/knife_blade/black_bronze>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "black_bronze"}}), [<tfc:metal/knife_blade/wrought_iron>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "steel"}}), [<tfc:metal/knife_blade/steel>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "black_steel"}}), [<tfc:metal/knife_blade/black_steel>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), [<tfc:metal/knife_blade/blue_steel>, <ore:stickWood>]);
-recipes.addShapeless(<gregtech:meta_tool:15>.withTag({"GT.ToolStats": {Material: "red_steel"}}), [<tfc:metal/knife_blade/red_steel>, <ore:stickWood>]);
 
 // Новые рецепты ковки GT топор
 Anvil.addRecipe("tfg:axe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadAxeCopper>, 1, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
