@@ -782,10 +782,12 @@ recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.wit
 
 // Рецепты теплой воды
 fluid_heater.recipeBuilder()
+	.circuit(5)
 	.fluidInputs(<liquid:fresh_water> * 100)
 	.fluidOutputs(<liquid:hot_water> * 100)
 	.duration(600).EUt(2).buildAndRegister();
 fluid_heater.recipeBuilder()
+	.circuit(6)
 	.fluidInputs(<liquid:water> * 100)
 	.fluidOutputs(<liquid:hot_water> * 100)
 	.duration(600).EUt(2).buildAndRegister();
