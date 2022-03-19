@@ -10,7 +10,7 @@
 		uid: "b526b440",
 		type: "item",
 		items: [{
-			item: "aeadditions:fluidfiller"
+			item: "extracells:fluidfiller"
 		}]
 	}]
 }

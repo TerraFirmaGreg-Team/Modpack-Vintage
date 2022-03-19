@@ -3,12 +3,14 @@
 	y: 8.0d,
 	shape: "square",
 	description: "{tfg.quests.ae2.ultimateterminal.subtitle}",
+	min_required_dependencies: 2,
 	dependencies: [
 		"0da9f2e2",
 		"8b8e798b",
 		"6caf9732",
 		"e0add132"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "31554e3f",
 		type: "item",

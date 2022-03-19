@@ -1,7 +1,7 @@
 {
 	icon: "appliedenergistics2:material 1 47",
-	x: -7.0d,
-	y: 4.0d,
+	x: -5.0d,
+	y: 13.5d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mattercondenser.subtitle}",
 	dependencies: [

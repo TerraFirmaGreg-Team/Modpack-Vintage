@@ -1,14 +1,14 @@
 {
-	x: -6.0d,
-	y: 14.0d,
+	x: -9.5d,
+	y: 11.0d,
 	dependencies: [
-		"d4495a75"
+		"10b6e5fb"
 	],
 	tasks: [{
 		uid: "37469aba",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 4"
+			item: "extracells:storage.component 1 8"
 		}]
 	}]
 }

@@ -1,0 +1,31 @@
+{
+	icon: {
+		id: "extracells:storage.physical",
+		Damage: 4s,
+		tag: {
+			power: 32000.0d,
+			upgrades: {},
+			config: {},
+			fuzzyMode: "IGNORE_ALL"
+		}
+	},
+	x: -10.5d,
+	y: 8.0d,
+	dependencies: [
+		"74286683"
+	],
+	tasks: [{
+		uid: "7225720b",
+		type: "item",
+		items: [{
+			id: "extracells:storage.physical",
+			Damage: 4s,
+			tag: {
+				upgrades: {},
+				config: {},
+				fuzzyMode: "IGNORE_ALL"
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

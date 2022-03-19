@@ -1,6 +1,6 @@
 {
-	x: -6.0d,
-	y: 15.0d,
+	x: -8.5d,
+	y: 11.5d,
 	dependencies: [
 		"e1a7d190"
 	],
@@ -8,7 +8,8 @@
 		uid: "d79f127b",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.fluid",
+			id: "extracells:storage.fluid",
+			Damage: 4s,
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
 			}

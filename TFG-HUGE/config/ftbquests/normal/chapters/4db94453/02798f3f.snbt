@@ -10,7 +10,18 @@
 		uid: "6b4c4f1f",
 		type: "item",
 		items: [{
-			item: "appliedenergistics2:part 1 36"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ae2.cable.covered"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ae2.cable.covered"
+				}
+			}
 		}]
 	}]
 }

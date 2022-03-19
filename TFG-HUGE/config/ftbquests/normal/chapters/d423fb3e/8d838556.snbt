@@ -4,7 +4,7 @@
 	y: 0.5d,
 	description: "{tfg.quests.steam.screwdriver.subtitle}",
 	text: [
-		""
+		"{tfg.quests.steam.screwdriver.desc1}"
 	],
 	dependencies: [
 		"9ea61464"

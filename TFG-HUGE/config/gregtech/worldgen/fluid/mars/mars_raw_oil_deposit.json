@@ -1,10 +1,13 @@
 {
-  "weight": 20,
-  "name": "Overworld Raw Oil Deposit",
+  "weight": 70,
+  "name": "Mars Raw Oil Deposit",
   "yield": {
     "min": 200,
-    "max": 300
+    "max": 400
   },
+  "dimension_filter": [
+    "dimension_id:-29"
+  ],
   "depletion": {
     "amount": 1,
     "chance": 100,

@@ -1,7 +1,7 @@
 {
 	title: "Forming Press",
 	x: 0.0d,
-	y: 3.5d,
+	y: 4.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.formingpress.subtitle}",
 	dependencies: [

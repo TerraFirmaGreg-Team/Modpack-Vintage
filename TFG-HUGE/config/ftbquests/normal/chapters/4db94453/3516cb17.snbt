@@ -1,5 +1,5 @@
 {
-	icon: "appliedenergistics2:creative_energy_cell",
+	icon: "extracells:walrus",
 	x: -2.0d,
 	y: 0.0d,
 	dependencies: [

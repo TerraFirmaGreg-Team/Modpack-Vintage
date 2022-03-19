@@ -1,9 +1,9 @@
 {
-	x: 2.0d,
-	y: 9.5d,
+	x: 0.0d,
+	y: 2.0d,
 	shape: "circle",
 	dependencies: [
-		"353f5942"
+		"848cab62"
 	],
 	tasks: [{
 		uid: "9672c734",

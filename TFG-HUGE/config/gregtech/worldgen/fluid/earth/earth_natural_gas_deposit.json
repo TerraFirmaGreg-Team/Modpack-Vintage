@@ -1,6 +1,6 @@
 {
   "weight": 15,
-  "name": "Overworld Natural Gas Deposit",
+  "name": "Earth Natural Gas Deposit",
   "yield": {
     "min": 100,
     "max": 175

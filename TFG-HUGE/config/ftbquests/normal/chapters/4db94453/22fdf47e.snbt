@@ -1,6 +1,6 @@
 {
-	x: -14.0d,
-	y: 12.0d,
+	x: -11.5d,
+	y: 3.0d,
 	dependencies: [
 		"59857bea"
 	],
@@ -8,7 +8,7 @@
 		uid: "97b2c93f",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.physical",
+			id: "extracells:storage.physical",
 			Damage: 3s,
 			tag: {
 				upgrades: {},

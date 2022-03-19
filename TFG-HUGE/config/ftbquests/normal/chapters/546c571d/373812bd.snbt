@@ -1,12 +1,5 @@
 {
 	title: "{tfg.quests.lv.glued.title}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "glue"
-		}
-	},
 	x: -4.0d,
 	y: 20.0d,
 	description: "{tfg.quests.lv.glued.subtitle}",
