@@ -1349,6 +1349,13 @@ assembler.recipeBuilder()
   .duration(400)
   .EUt(30720)
   .buildAndRegister();
+//Крафт пыли флакса
+macerator.recipeBuilder()
+	.inputs([<ore:crystalFluix> * 1])
+	.outputs(<appliedenergistics2:material:8> * 1)
+	.duration(65)
+	.EUt(12)
+	.buildAndRegister();
 ########################################
 # Blocks
 ########################################
