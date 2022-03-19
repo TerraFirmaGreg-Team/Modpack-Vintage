@@ -13,16 +13,16 @@
 		uid: "a3390c20",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWrench",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolWrench"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolWrench"
 				}
 			}
 		}],

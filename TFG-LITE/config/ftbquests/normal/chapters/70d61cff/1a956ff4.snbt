@@ -3,8 +3,8 @@
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
-			Amount: 1000,
-			FluidName: "wood_tar"
+			FluidName: "wood_tar",
+			Amount: 1000
 		}
 	},
 	x: 6.0d,

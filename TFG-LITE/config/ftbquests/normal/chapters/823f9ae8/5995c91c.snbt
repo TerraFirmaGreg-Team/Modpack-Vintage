@@ -10,52 +10,52 @@
 		uid: "b4f458f5",
 		type: "item",
 		items: [{
-			id: "tfctech:ceramics/unfired/glass_block",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					heat: 0.0f,
+					ticks: -1L
 				}
-			}
+			},
+			id: "tfctech:ceramics/unfired/glass_block"
 		}]
 	},
 	{
 		uid: "a198340b",
 		type: "item",
 		items: [{
-			id: "tfctech:ceramics/unfired/glass_pane",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					heat: 0.0f,
+					ticks: -1L
 				}
-			}
+			},
+			id: "tfctech:ceramics/unfired/glass_pane"
 		}]
 	},
 	{
 		uid: "572c50d4",
 		type: "item",
 		items: [{
-			id: "tfctech:ceramics/mold/glass_block",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					heat: 0.0f,
+					ticks: -1L
 				}
-			}
+			},
+			id: "tfctech:ceramics/mold/glass_block"
 		}]
 	},
 	{
 		uid: "1eb7973f",
 		type: "item",
 		items: [{
-			id: "tfctech:ceramics/mold/glass_pane",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					heat: 0.0f,
+					ticks: -1L
 				}
-			}
+			},
+			id: "tfctech:ceramics/mold/glass_pane"
 		}]
 	}]
 }

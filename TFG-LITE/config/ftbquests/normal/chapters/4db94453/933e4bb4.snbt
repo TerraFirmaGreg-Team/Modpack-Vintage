@@ -9,10 +9,10 @@
 		type: "item",
 		items: [{
 			id: "extracells:storage.fluid",
-			Damage: 6s,
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			}
+			},
+			Damage: 6s
 		}],
 		ignore_nbt: 1b
 	}]

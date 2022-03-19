@@ -12,13 +12,13 @@
 		type: "item",
 		title: "Any categoryFruit",
 		items: [{
-			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "categoryFruit"
+					data: "categoryFruit",
+					id: "ore"
 				}
-			}
+			},
+			id: "itemfilters:filter"
 		}]
 	}]
 }

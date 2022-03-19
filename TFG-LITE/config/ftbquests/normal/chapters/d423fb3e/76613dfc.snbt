@@ -13,16 +13,16 @@
 		uid: "67b3478e",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolCrowbar",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolCrowbar"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolCrowbar"
 				}
 			}
 		}],

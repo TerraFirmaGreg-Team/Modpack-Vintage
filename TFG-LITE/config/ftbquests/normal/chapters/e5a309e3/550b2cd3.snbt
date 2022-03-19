@@ -2,10 +2,10 @@
 	title: "Super Battery",
 	icon: {
 		id: "gregtech:meta_item_1",
-		Damage: 741s,
 		tag: {
 			Charge: 6400000L
-		}
+		},
+		Damage: 741s
 	},
 	x: -6.5d,
 	y: 3.5d,

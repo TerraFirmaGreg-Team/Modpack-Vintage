@@ -1,0 +1,14 @@
+{
+	x: -25.0d,
+	y: 11.0d,
+	dependencies: [
+		"780c7b0a"
+	],
+	tasks: [{
+		uid: "ffc20d2a",
+		type: "item",
+		items: [{
+			item: "toolbelt:pouch"
+		}]
+	}]
+}

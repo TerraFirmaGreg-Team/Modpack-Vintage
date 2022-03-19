@@ -13,16 +13,16 @@
 		uid: "a325e31e",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolHardHammer",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolHardHammer"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolHardHammer"
 				}
 			}
 		}],

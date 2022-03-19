@@ -9,16 +9,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.invar.title}",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotInvar",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ingotInvar"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "ingotInvar"
 				}
 			}
 		}]

@@ -12,13 +12,13 @@
 		type: "item",
 		title: "Any categoryGrain",
 		items: [{
-			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "categoryGrain"
+					data: "categoryGrain",
+					id: "ore"
 				}
-			}
+			},
+			id: "itemfilters:filter"
 		}]
 	}]
 }

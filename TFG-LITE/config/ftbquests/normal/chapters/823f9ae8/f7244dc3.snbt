@@ -12,16 +12,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.blacksteelingot.title}",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotBlackSteel",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ingotBlackSteel"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "ingotBlackSteel"
 				}
 			}
 		}]

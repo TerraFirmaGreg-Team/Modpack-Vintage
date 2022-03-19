@@ -29,13 +29,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
-			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "sodium_persulfate",
 					Amount: 1000
 				}
-			}
+			},
+			Damage: 78s
 		}
 	},
 	{
@@ -43,13 +43,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
-			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "iron_iii_chloride",
 					Amount: 1000
 				}
-			}
+			},
+			Damage: 78s
 		}
 	}]
 }

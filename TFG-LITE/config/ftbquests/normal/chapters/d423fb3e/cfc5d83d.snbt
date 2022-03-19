@@ -11,16 +11,16 @@
 		type: "item",
 		title: "{tfg.quests.steam.wroughtironplates.title}",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "plateWroughtIron",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any plateWroughtIron"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "plateWroughtIron"
 				}
 			}
 		}]

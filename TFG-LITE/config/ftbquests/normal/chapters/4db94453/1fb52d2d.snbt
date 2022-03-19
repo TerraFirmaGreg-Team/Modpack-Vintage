@@ -1,7 +1,7 @@
 {
 	title: "Autocrafting",
 	icon: "appliedenergistics2:molecular_assembler",
-	x: 9.0d,
+	x: 9.5d,
 	y: 0.0d,
 	text: [
 		"§oAutocrafting at last!§r",

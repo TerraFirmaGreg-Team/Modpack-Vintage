@@ -13,16 +13,16 @@
 		uid: "4596dd85",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolKnife",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolKnife"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolKnife"
 				}
 			}
 		}],

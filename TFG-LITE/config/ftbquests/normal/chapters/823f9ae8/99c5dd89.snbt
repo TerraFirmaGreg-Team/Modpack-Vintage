@@ -8,13 +8,13 @@
 		uid: "af3d9584",
 		type: "item",
 		items: [{
-			id: "tfctech:latex/rubber",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					heat: 0.0f,
+					ticks: -1L
 				}
-			}
+			},
+			id: "tfctech:latex/rubber"
 		}]
 	}]
 }

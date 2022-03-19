@@ -10,16 +10,16 @@
 		uid: "c6dd9780",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ae2.cable.smart",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ae2.cable.smart"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "ae2.cable.smart"
 				}
 			}
 		}]

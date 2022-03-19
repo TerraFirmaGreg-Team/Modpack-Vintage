@@ -12,13 +12,13 @@
 		type: "item",
 		title: "{tfg.quests.primitive.greenpeace.tasks.logs.title}",
 		items: [{
-			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "logWood"
+					data: "logWood",
+					id: "ore"
 				}
-			}
+			},
+			id: "itemfilters:filter"
 		}],
 		count: 16L
 	}]

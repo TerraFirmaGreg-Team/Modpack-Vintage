@@ -12,16 +12,16 @@
 		uid: "b5cc49c5",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustTinyGold",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any dustTinyGold"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustTinyGold"
 				}
 			}
 		}]

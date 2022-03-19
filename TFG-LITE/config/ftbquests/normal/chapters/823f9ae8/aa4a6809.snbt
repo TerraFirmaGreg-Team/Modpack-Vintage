@@ -12,16 +12,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.sulfurdust.title}",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustTinySulfur",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any dustTinySulfur"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustTinySulfur"
 				}
 			}
 		}]

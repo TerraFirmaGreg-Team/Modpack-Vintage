@@ -12,13 +12,13 @@
 		type: "item",
 		title: "Опоры",
 		items: [{
-			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "support"
+					data: "support",
+					id: "ore"
 				}
-			}
+			},
+			id: "itemfilters:filter"
 		}],
 		count: 16L
 	}]

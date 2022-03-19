@@ -2,10 +2,10 @@
 	title: "Mega Batteries",
 	icon: {
 		id: "gregtech:meta_item_1",
-		Damage: 750s,
 		tag: {
 			Charge: 4000000000L
-		}
+		},
+		Damage: 750s
 	},
 	x: 1.0d,
 	y: 2.0d,

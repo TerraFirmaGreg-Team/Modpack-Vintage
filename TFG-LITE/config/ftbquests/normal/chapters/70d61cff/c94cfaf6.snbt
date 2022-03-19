@@ -2,10 +2,10 @@
 	title: "Extreme Batteries",
 	icon: {
 		id: "gregtech:meta_item_1",
-		Damage: 742s,
 		tag: {
 			Charge: 25000000L
-		}
+		},
+		Damage: 742s
 	},
 	x: -5.0d,
 	y: -6.5d,

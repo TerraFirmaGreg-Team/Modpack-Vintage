@@ -23,13 +23,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
-			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "glue",
 					Amount: 1000
 				}
-			}
+			},
+			Damage: 78s
 		}
 	}]
 }

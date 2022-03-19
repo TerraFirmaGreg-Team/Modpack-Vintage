@@ -29,13 +29,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
-			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "sulfuric_light_fuel",
 					Amount: 1000
 				}
-			}
+			},
+			Damage: 78s
 		}
 	},
 	{
@@ -43,13 +43,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
-			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "light_fuel",
 					Amount: 1000
 				}
-			}
+			},
+			Damage: 78s
 		}
 	}]
 }

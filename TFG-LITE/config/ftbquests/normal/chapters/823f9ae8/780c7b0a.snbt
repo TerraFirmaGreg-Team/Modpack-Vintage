@@ -1,0 +1,17 @@
+{
+	x: -24.0d,
+	y: 11.0d,
+	dependencies: [
+		"2816fe72"
+	],
+	tasks: [{
+		uid: "080193c2",
+		type: "item",
+		items: [{
+			id: "toolbelt:belt",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

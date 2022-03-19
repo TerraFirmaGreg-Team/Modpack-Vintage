@@ -12,13 +12,13 @@
 		type: "item",
 		title: "{tfg.quests.primitive.strings.title}",
 		items: [{
-			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "string"
+					data: "string",
+					id: "ore"
 				}
-			}
+			},
+			id: "itemfilters:filter"
 		}]
 	}]
 }

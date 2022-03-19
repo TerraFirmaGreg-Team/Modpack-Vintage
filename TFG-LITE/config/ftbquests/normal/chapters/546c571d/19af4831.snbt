@@ -32,23 +32,23 @@
 		uid: "7d1c33da",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_ingot",
-			Count: 16b,
-			Damage: 335s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "gregtech:meta_ingot",
+			Count: 16b,
+			Damage: 335s
 		}],
 		count: 16L
 	},

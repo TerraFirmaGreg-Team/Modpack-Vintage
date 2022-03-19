@@ -12,16 +12,16 @@
 		uid: "7cd97ddc",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "bed",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any bed"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "bed"
 				}
 			}
 		}],

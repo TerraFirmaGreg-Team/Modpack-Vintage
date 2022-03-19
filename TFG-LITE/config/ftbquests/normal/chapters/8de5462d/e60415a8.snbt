@@ -2,10 +2,10 @@
 	title: "Ultimate Batteries?",
 	icon: {
 		id: "gregtech:meta_item_1",
-		Damage: 751s,
 		tag: {
 			Charge: 20000000000L
-		}
+		},
+		Damage: 751s
 	},
 	x: 1.5d,
 	y: 0.0d,

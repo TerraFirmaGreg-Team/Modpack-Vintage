@@ -2,10 +2,10 @@
 	title: "Insane Batteries",
 	icon: {
 		id: "gregtech:meta_item_1",
-		Damage: 748s,
 		tag: {
 			Charge: 250000000L
-		}
+		},
+		Damage: 748s
 	},
 	x: -3.5d,
 	y: -2.0d,

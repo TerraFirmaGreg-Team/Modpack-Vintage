@@ -10,174 +10,174 @@
 		type: "item",
 		title: "{tfg.quests.primitive.tuyere.title}",
 		items: [{
-			id: "tfc:metal/tuyere/bismuth_bronze",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/bismuth_bronze"
 		},
 		{
-			id: "tfc:metal/tuyere/black_bronze",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/black_bronze"
 		},
 		{
-			id: "tfc:metal/tuyere/bronze",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/bronze"
 		},
 		{
-			id: "tfc:metal/tuyere/copper",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/copper"
 		},
 		{
-			id: "tfc:metal/tuyere/bronze",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/bronze"
 		},
 		{
-			id: "tfc:metal/tuyere/wrought_iron",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/wrought_iron"
 		},
 		{
-			id: "tfc:metal/tuyere/steel",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/steel"
 		},
 		{
-			id: "tfc:metal/tuyere/black_steel",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/black_steel"
 		},
 		{
-			id: "tfc:metal/tuyere/blue_steel",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/blue_steel"
 		},
 		{
-			id: "tfc:metal/tuyere/red_steel",
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
 					heat: 0.0f,
+					ticks: -1L,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							second: -1,
-							third: -1
+							third: -1,
+							second: -1
 						}
 					}
 				}
-			}
+			},
+			id: "tfc:metal/tuyere/red_steel"
 		}],
 		ignore_nbt: 1b
 	}]
