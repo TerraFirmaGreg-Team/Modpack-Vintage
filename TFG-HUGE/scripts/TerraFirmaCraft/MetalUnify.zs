@@ -5,12 +5,6 @@ import mods.terrafirmacraft.Heating;
 import mods.firmalife.Oven;
 import mods.horsepower.Grindstone;
 
-/*
- *
- * Файл унификации металлов TFG
- *
- */
-
 // --- Унификация пластин
 Anvil.addRecipe("tfc:TFG_plate_bismuth", <ore:ingotDoubleBismuth>, <ore:plateBismuth>.firstItem, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_bismuth_bronze", <ore:ingotDoubleBismuthBronze>, <ore:plateBismuthBronze>.firstItem, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");

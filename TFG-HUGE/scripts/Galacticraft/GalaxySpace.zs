@@ -1,7 +1,10 @@
 import crafttweaker.item.IItemStack;
+
 import mods.terrafirmacraft.ItemRegistry;
 
-//Удаление+скрытие рецептов JEI
+// --- Removing Recipes
+
+// Удаление + скрытие рецептов JEI
 val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:ingots>,
   <galaxyspace:ingots:1>,
@@ -76,9 +79,9 @@ val RemoveItemsFromJEI as IItemStack[] = [
   <galaxyspace:proxima_b_blocks:6>,
   <galaxyspace:proxima_b_blocks:7>,
   <galaxyspace:proxima_b_blocks:8>,
-  <galaxyspace:plasma_sword>.withTag({plasma_heat: 0.0 as float}),
-  <galaxyspace:plasma_axe>.withTag({plasma_heat: 0.0 as float}),
-  <galaxyspace:plasma_pickaxe>.withTag({plasma_heat: 0.0 as float}),
+  <galaxyspace:plasma_sword>,
+  <galaxyspace:plasma_axe>,
+  <galaxyspace:plasma_pickaxe>,
   <galaxyspace:gs_basic:29>,
   <galaxyspace:gs_basic:30>,
   <galaxyspace:mars_rover>,//WIP in GS
@@ -175,7 +178,7 @@ for item in RemoveItemsFromJEI{
   mods.jei.JEI.removeAndHide(item);
 }
 
-//Удаление рецептов
+// Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
   <galaxyspace:decoblocks>,
   <galaxyspace:decoblocks:1>,
@@ -213,55 +216,57 @@ for item in RemoveItemRecipe{
   recipes.remove(item);
 }
 
-//Удаление странного рецепта стекла
+// Удаление странного рецепта стекла
 furnace.remove(<minecraft:glass>);
 
-//Еда из GC
+// --- Adding Recipes
+
+// Еда из GC
 ItemRegistry.registerFood(<galaxyspace:br_foods>, 4, 0.6, 0.7, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0);
 
-//Деко блоки
+// Деко блоки
 recipes.addShapeless (<galaxyspace:decoblocks>, [<galacticraftcore:basic_block_core:3>, <ore:plateCobalt>]);
 recipes.addShapeless (<galaxyspace:decoblocks:1>, [<galacticraftcore:basic_block_core:3>, <ore:plateMagnesium>]);
 recipes.addShapeless (<galaxyspace:decoblocks:2>, [<galacticraftcore:basic_block_core:3>, <ore:plateNickel>]);
 recipes.addShapeless (<galaxyspace:decoblocks:3>, [<galacticraftcore:basic_block_core:3>, <ore:plateCopper>]);
 
-//Схематика пустая
+// Схематика пустая
 recipes.addShapeless (<galaxyspace:gs_basic:14>, [<ore:paper>, <ore:paper>, <projectred-fabrication:ic_blueprint>]);
 
-//Теплоизолирующая ткань 3
+// Теплоизолирующая ткань 3
 assembler.recipeBuilder()
    .inputs(<ore:dustDolomite> * 4, <galacticraftplanets:basic_item_venus:3> * 2, <galacticraftcore:basic_item:20>)
    .fluidInputs([<liquid:nitrogen> * 400])
    .outputs(<galaxyspace:gs_basic:21> * 2)
    .duration(1000).EUt(512).buildAndRegister();
 
-//Теплоизолирующая ткань 4
+// Теплоизолирующая ткань 4
 assembler.recipeBuilder()
    .inputs(<ore:plateHssg>*4, <galaxyspace:gs_basic:21> * 2, <galacticraftcore:basic_item:20>)
    .fluidInputs([<liquid:nitrogen> * 12000])
    .outputs(<galaxyspace:gs_basic:22> * 2)
    .duration(1000).EUt(512).buildAndRegister();
 
-//Воздушные баки
-//Супер
+// Воздушные баки
+// Супер
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.ev>, <ore:pipeNormalFluidWroughtIron> * 4, <ore:plateLead> * 8, <metaitem:electric.pump.ev> * 2)
    .circuit(6)
    .outputs(<galaxyspace:oxygen_tank_4:3500>)
    .duration(1000).EUt(1024).buildAndRegister();
-//Элитный
+// Элитный
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.iv>, <ore:pipeNormalFluidWroughtIron> * 4, <ore:plateLead> * 10, <metaitem:electric.pump.iv> * 2)
    .circuit(6)
    .outputs(<galaxyspace:oxygen_tank_5:4000>)
    .duration(1000).EUt(2048).buildAndRegister();
-//Омега
+// Омега
 assembler.recipeBuilder()
    .inputs(<metaitem:quantum_tank.iv>, <ore:pipeNormalFluidStainlessSteel> * 4, <ore:plateLead> * 12, <metaitem:electric.pump.luv> * 2)
    .circuit(6)
    .outputs(<galaxyspace:oxygen_tank_6:4500>)
    .duration(1000).EUt(4096).buildAndRegister();
-//Реген
+// Реген
 assembler.recipeBuilder()
    .inputs(<metaitem:quantum_tank.luv>, <ore:pipeNormalFluidStainlessSteel> * 16, <ore:plateLead> * 32, <metaitem:electric.pump.zpm> * 4)
    .circuit(6)
@@ -269,121 +274,121 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:sterilized_growth_medium>*144])
    .duration(1000).EUt(4096).buildAndRegister();
 
-//Взлётка 2 лвл
+// Взлётка 2 лвл
 recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
 [[<ore:plateDenseTitanium>, <ore:plateDenseTitanium>, <ore:plateDenseTitanium>],
  [<ore:blockTitanium>, <ore:blockTitanium>, <ore:blockTitanium>]]);
 
-//Solar Flare Module
+// Solar Flare Module
 recipes.addShaped(<galaxyspace:gs_basic:1>,
 [[<galacticraftcore:steel_pole>, null, null],
  [<metaitem:carbon.plate>, <galacticraftcore:steel_pole>, null],
  [<metaitem:cover.solar.panel>, <ore:foilStainlessSteel>, <galacticraftcore:steel_pole>]]);
 
-//Гибридная солнечная панель
+// Гибридная солнечная панель
 recipes.addShaped(<galaxyspace:modern_solarpanel>,
 [[<metaitem:cover.solar.panel.lv>, <metaitem:cover.solar.panel.lv>, <metaitem:cover.solar.panel.lv>],
  [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
  [<metaitem:electric.piston.iv>, <metaitem:hull.ev>, <ore:cableGtQuadrupleGold>]]);
 
-//Модификационный стол
+// Модификационный стол
 recipes.addShaped(<galaxyspace:modification_table>,
 [[<ore:circuitMaster>, <metaitem:robot.arm.ev>, <metaitem:conveyor.module.ev>],
  [<metaitem:robot.arm.ev>, <metaitem:hull.ev>, <metaitem:robot.arm.ev>],
  [<ore:chestWood>, <metaitem:robot.arm.ev>, <ore:circuitMaster>]]);
 
-//Контроллер мини-панелей
+// Контроллер мини-панелей
 recipes.addShaped(<galaxyspace:panel_controller>,
 [[<ore:plateLead>, <metaitem:emitter.hv>, <ore:plateLead>],
  [<ore:wireGtSingleMagnesiumDiboride>, <metaitem:hull.hv>, <ore:wireGtSingleMagnesiumDiboride>],
  [<ore:plateLead>, <ore:circuitElite>, <ore:plateLead>]]);
 
-//Стабилизатор радиации
+// Стабилизатор радиации
 recipes.addShaped(<galaxyspace:radiation_stabiliser>,
 [[<gregtech:wire_coil:1>, <gregtech:wire_coil:1>, <gregtech:wire_coil:1>],
  [<metaitem:field.generator.iv>, <metaitem:hull.hv>, <metaitem:field.generator.iv>],
  [<ore:cableGtDoublePlatinum>, <metaitem:emitter.mv>, <ore:cableGtDoublePlatinum>]]);
 
-//Солнечный парус
+// Солнечный парус
 recipes.addShaped(<galaxyspace:solarwind_panel>,
 [[<galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>, <galaxyspace:gs_basic:2>],
  [<ore:stickLongAluminium>, <metaitem:hull.hv>, <ore:stickLongAluminium>],
  [<ore:cableGtDoublePlatinum>, <ore:circuitExtreme>, <ore:cableGtDoublePlatinum>]]);
 
-//Планитарный щит
+// Планитарный щит
 recipes.addShaped(<galaxyspace:planet_shield>,
 [[<metaitem:field.generator.mv>, <ore:circuitAdvanced>, <metaitem:field.generator.mv>],
  [<metaitem:field.generator.mv>, <metaitem:hull.ev>, <metaitem:field.generator.mv>],
  [<ore:wireGtSingleMagnesiumDiboride>, <galaxyspace:gravitation_module>, <ore:wireGtSingleMagnesiumDiboride>]]);
 
-//Ветряная мельница
+// Ветряная мельница
 recipes.addShaped(<galaxyspace:wind_generator>,
 [[<ore:rotorStainlessSteel>, <ore:rotorStainlessSteel>, <ore:rotorStainlessSteel>],
  [<ore:circuitExtreme>, <galacticraftcore:steel_pole>, <ore:circuitExtreme>],
  [<ore:wireGtSingleMercuryBariumCalciumCuprate>, <metaitem:hull.hv>, <ore:wireGtSingleMercuryBariumCalciumCuprate>]]);
 
-//Клетка для животных
+// Клетка для животных
 recipes.addShaped(<galaxyspace:gs_basic:32>,
 [[<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>],
  [<galacticraftcore:grating>, <ore:carpet>, <ore:plateBlackSteel>],
  [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
 
-//Тир 1 лэндер
+// Тир 1 лэндер
 recipes.addShaped(<galaxyspace:rocket_modules>,
 [[<galacticraftcore:basic_item:19>, <ore:plateBlackSteel>, <ore:plateBlackSteel>],
  [<ore:plateBlackSteel>, <galacticraftcore:buggymat:1>, <galaxyspace:compressed_plates:4>],
  [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
 
-//Антирад
+// Антирад
 recipes.addShaped(<galaxyspace:gs_basic:9>*3,
 [[<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>],
  [<galacticraftcore:canister>, <minecraft:milk_bucket>, <galacticraftcore:canister>],
  [<ore:plateIronMagnetic>, <ore:plateBlackSteel>, <ore:plateIronMagnetic>]]);
 
-//Тир 3 лэндер
+// Тир 3 лэндер
 recipes.addShaped(<galaxyspace:rocket_modules:2>,
 [[<ore:plateBlackSteel>, <ore:chestWood>, <ore:plateBlackSteel>],
  [<galacticraftcore:steel_pole>, <galacticraftcore:buggymat:1>, <galacticraftcore:steel_pole>],
  [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
 
-//Blank Module
+// Blank Module
 recipes.addShaped(<galaxyspace:gs_basic:11>,
 [[<ore:plateTinAlloy>, <ore:cableGtSingleGold>, <ore:plateTinAlloy>],
  [<ore:cableGtSingleRedAlloy>, <ore:plateCobalt>, <ore:cableGtSingleRedAlloy>],
  [<ore:plateTinAlloy>, <metaitem:wafer.silicon>, <ore:plateTinAlloy>]]);
 
-//Module Stabilization
+// Module Stabilization
 recipes.addShaped(<galaxyspace:upgrades:1>,
 [[null, <galaxyspace:gs_basic:8>, null],
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateMagnesium>, <metaitem:wafer.glowstone>, <ore:plateMagnesium>]]);
 
-//Module Speed
+// Module Speed
 recipes.addShaped(<galaxyspace:upgrades:2>,
 [[null, <galaxyspace:gs_basic:3>, null],
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateNickel>, <metaitem:wafer.glowstone>, <ore:plateNickel>]]);
 
-//Module Expander
+// Module Expander
 recipes.addShaped(<galaxyspace:upgrades>,
 [[null, <galaxyspace:gs_basic:12>, null],
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateCobalt>, <metaitem:wafer.glowstone>, <ore:plateCobalt>]]);
 
-//Module Energy
+// Module Energy
 recipes.addShaped(<galaxyspace:upgrades:3>,
 [[null, <galaxyspace:gs_basic:13>, null],
  [<ore:wireGtSingleManganesePhosphide>, <galaxyspace:gs_basic:11>, <ore:wireGtSingleManganesePhosphide>],
  [<ore:plateCobalt>, <metaitem:wafer.glowstone>, <ore:plateCobalt>]]);
 
-//SSHD-Alloy
+// SSHD-Alloy
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateBronze> * 2, <ore:plateBlackSteel> * 3)
 	.property("explosives", 4)
 	.outputs(<galaxyspace:compressed_plates:4> * 2)
 	.duration(150).EUt(780).buildAndRegister();
 
-//Солнечная мини-панель
+// Солнечная мини-панель
 assembler.recipeBuilder()
   .inputs(<metaitem:hull.hv>, <metaitem:cover.solar.panel.mv> * 8, <ore:cableGtSinglePlatinum> * 8, <ore:plateLead> * 2, <ore:circuitAdvanced>)
   .circuit(5)
@@ -393,7 +398,7 @@ assembler.recipeBuilder()
   .EUt(128)
   .buildAndRegister();
 
-//Солнечная модернизированная мини-панель
+// Солнечная модернизированная мини-панель
 assembler.recipeBuilder()
   .inputs(<metaitem:hull.hv>, <metaitem:cover.solar.panel.hv> * 24, <ore:cableGtSinglePlatinum> * 24, <ore:plateLead> * 8, <ore:circuitAdvanced>)
   .circuit(6)
@@ -403,7 +408,7 @@ assembler.recipeBuilder()
   .EUt(256)
   .buildAndRegister();
 
-//Зарядная панель
+// Зарядная панель
 assembler.recipeBuilder()
   .inputs(<ore:plateAluminium> * 3, <metaitem:voltage_coil.mv>, <ore:circuitAdvanced>, <metaitem:field.generator.lv> * 2)
   .outputs(<galaxyspace:energy_pad>)
@@ -411,7 +416,7 @@ assembler.recipeBuilder()
   .EUt(256)
   .buildAndRegister();
 
-//Гравитационный модуль
+// Гравитационный модуль
 assembler.recipeBuilder()
   .inputs(<ore:plateAluminium> * 3, <ore:circuitElite>, <metaitem:field.generator.hv> * 2, <metaitem:voltage_coil.ev> * 4)
   .outputs(<galaxyspace:gravitation_module>)
@@ -419,7 +424,7 @@ assembler.recipeBuilder()
   .EUt(256)
   .buildAndRegister();
 
-//Основание гидроподной фермы
+// Основание гидроподной фермы
 assembler.recipeBuilder()
   .inputs(<metaitem:hull.ev>, <metaitem:robot.arm.ev> * 2, <metaitem:sensor.lv> * 2, <galacticraftcore:grating> * 6, <ore:cableGtQuadrupleAnnealedCopper> * 4)
   .outputs(<galaxyspace:hydroponic_base>)
@@ -427,7 +432,7 @@ assembler.recipeBuilder()
   .EUt(718)
   .buildAndRegister();
 
-//Стеклянное основание гидроподной фермы
+// Стеклянное основание гидроподной фермы
 assembler.recipeBuilder()
   .inputs(<appliedenergistics2:quartz_vibrant_glass> * 6, <ore:frameGtStainlessSteel> * 3, <ore:gearStainlessSteel> * 2)
   .outputs(<galaxyspace:hydroponic_farm>)
@@ -435,7 +440,7 @@ assembler.recipeBuilder()
   .EUt(560)
   .buildAndRegister();
 
-//Small Fuel Canister
+// Small Fuel Canister
 assembler.recipeBuilder()
   .inputs(<galaxyspace:gs_basic>, <galaxyspace:compressed_plates:4>*2)
   .circuit(3)
@@ -444,7 +449,7 @@ assembler.recipeBuilder()
   .EUt(4)
   .buildAndRegister();
 
-//Blank Fuel Canister
+// Blank Fuel Canister
 assembler.recipeBuilder()
   .inputs(<ore:plateBlackSteel>*8, <ore:paneGlass>)
   .circuit(3)
@@ -453,8 +458,8 @@ assembler.recipeBuilder()
   .EUt(4)
   .buildAndRegister();
 
-//High Duty Plates(4-6)
-//Tier 4
+// High Duty Plates(4-6)
+// Tier 4
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateTitanium>.firstItem * 3, <ore:plateTungstenSteel>.firstItem, <ore:foilOsmiridium>.firstItem * 16])
 	.outputs(<galaxyspace:hdp> * 3)
@@ -462,7 +467,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(520)
 	.buildAndRegister();
-//Tier 5
+// Tier 5
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateTungstenSteel>.firstItem * 3, <ore:plateHssg>.firstItem, <ore:foilHsss>.firstItem * 16])
 	.outputs(<galaxyspace:hdp:1> * 3)
@@ -470,7 +475,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(580)
 	.buildAndRegister();
-//Tier 6
+// Tier 6
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateHssg>.firstItem * 3, <ore:foilNaquadria>.firstItem * 16])
 	.outputs(<galaxyspace:hdp:2> * 3)
@@ -479,29 +484,29 @@ electric_blast_furnace.recipeBuilder()
 	.EUt(640)
 	.buildAndRegister();
 
-//Скафандры
-//Скаф 1лвл тапки
+// Скафандры
+// Скаф 1лвл тапки
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitExtreme>*3, <ore:leather>*5)
   .outputs(<galaxyspace:space_suit_feet:200>.withTag({modification_count: 2, boots_button: 0 as byte}))
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-//Скаф 1лвл поножи
+// Скаф 1лвл поножи
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
   .outputs(<galaxyspace:space_suit_legs:200>.withTag({legs_button: 0 as byte, modification_count: 2}))
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-//Скаф 1лвл грудак
+// Скаф 1лвл грудак
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
   .outputs(<galaxyspace:space_suit_chest:200>.withTag({modification_count: 2, chest_button: 0 as byte}))
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-//Скаф 1лвл шапка
+// Скаф 1лвл шапка
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitExtreme>, <ore:leather>*5)
   .outputs(<galaxyspace:space_suit_head:200>.withTag({modification_count: 2, helmet_button: 0 as byte}))

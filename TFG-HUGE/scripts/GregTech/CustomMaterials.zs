@@ -1,5 +1,6 @@
 #loader gregtech
-#priority 998
+
+#priority 990
 
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.MaterialBuilder;
@@ -7,7 +8,7 @@ import mods.gregtech.material.Material;
 
 import mods.gregtech.StoneType;
 
-//Add Custom Flags
+// --- Custom material settings
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:magnesium>.addFlags("generate_plate");
 <material:titanium>.addFlags("generate_foil");
@@ -126,4 +127,19 @@ StoneType.create(45, "tfc_soapstone", "ore", <material:stone>, "tfc:raw/soapston
 
 // -- Galacticraft/GalaxySpace
 
+// - Mercury
+MaterialBuilder(32100, "mercurystone").color(0xC7FFFB).dust().build();
+
+// - Venus
+MaterialBuilder(32101, "venusstone").color(0xA86540).dust().build();
+
 // - Moon
+MaterialBuilder(32102, "moonstone").color(0xFFFFFF).dust().build();
+
+// - Mars
+MaterialBuilder(32103, "marsstone").color(0xFF7A5C).dust().build();
+
+// - Asteroids
+MaterialBuilder(32104, "asteroidsstoneblack").color(0x1C1C1C).dust().build();
+MaterialBuilder(32105, "asteroidsstonegray").color(0x505050).dust().build();
+MaterialBuilder(32106, "asteroidsstonelightgray").color(0xBBBBBB).dust().build();

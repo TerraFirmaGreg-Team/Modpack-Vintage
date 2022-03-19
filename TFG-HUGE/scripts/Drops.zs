@@ -1,41 +1,40 @@
 import mods.dropt.Dropt;
 
-//Urns TODO
+// Urns TODO
 Dropt.list("Urn_disables").add(Dropt.rule()
   .matchBlocks(["tfcflorae:storage/urn_loot"])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
-//Руда угля GT -> Уголь Гем
+// Руда угля GT -> Уголь Гем
 Dropt.list("GT_Coal_To_TFC_Coal").add(Dropt.rule()
   .matchBlocks(["gregtech:ore_coal_0"])
   .matchDrops([<gregtech:ore_coal_0>])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop().items([<minecraft:coal>])));
 
-//Выпадение кусочков льда, вместо блока льда.
-//Морской лед
+// Морской лед
 Dropt.list("Sea_Ice").add(Dropt.rule()
   .matchBlocks(["tfc:sea_ice"])
   .matchDrops([<tfc:sea_ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:sea_ice_shard>])));
 
-//Обычный лед
+// Обычный лед
 Dropt.list("Sea_Ice").add(Dropt.rule()
   .matchBlocks(["minecraft:ice"])
   .matchDrops([<minecraft:ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:ice_shard>])));
 
-//Плотный лед
+// Плотный лед
 Dropt.list("Sea_Ice").add(Dropt.rule()
   .matchBlocks(["minecraft:packed_ice"])
   .matchDrops([<minecraft:packed_ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:packed_ice_shard>])));
 
-//Исправление GC
+// Исправление GC
 Dropt.list("Cobble").add(Dropt.rule()
   .matchDrops([<minecraft:cobblestone>])
   .replaceStrategy("REPLACE_ITEMS")

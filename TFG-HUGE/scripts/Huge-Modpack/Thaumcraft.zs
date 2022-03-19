@@ -14,6 +14,47 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 
+import mods.jei.JEI;
+
+// Удаление рецептов + скрытие
+val RemoveItemsFromJEI as IItemStack[] = [
+	<tfc:metal/sword/thaumium>,
+    <tfc:metal/pick/thaumium>,
+    <tfc:metal/shovel/thaumium>,
+    <tfc:metal/hoe/thaumium>,
+    <tfc:metal/axe/thaumium>,
+    <tfc:metal/nugget/thaumium>,
+    <tfc:metal/dust/thaumium>,
+    <tfc:metal/scrap/thaumium>,
+    <tfc:metal/ingot/thaumium>,
+    <tfc:metal/sheet/thaumium>,
+    <tfc:metal/helmet/thaumium>,
+    <tfc:metal/chestplate/thaumium>,
+    <tfc:metal/greaves/thaumium>,
+    <tfc:metal/boots/thaumium>,
+    <tfc:metal/anvil/thaumium>,
+    <tfc:metal/saw/thaumium>,
+    <tfc:metal/saw_blade/thaumium>,
+    <tfc:metal/knife/thaumium>,
+    <tfc:metal/knife_blade/thaumium>,
+    <tfc:metal/hammer/thaumium>,
+    <tfc:metal/hammer_head/thaumium>,
+    <tfc:metal/propick/thaumium>,
+    <tfc:metal/propick_head/thaumium>,
+    <firmalife:thaumium_mallet>,
+    <firmalife:thaumium_mallet_head>,
+    <tfctech:metal/thaumium_strip>,
+    <tfctech:metal/thaumium_rackwheel_piece>,
+    <tfctech:metal/thaumium_rackwheel>,
+    <tfctech:metal/thaumium_wire>,
+    <tfctech:metal/thaumium_wire:*>,
+    <tfctech:metal/thaumium_blowpipe>,
+    <tfc:metal/trapdoor/thaumium>
+];
+for item in RemoveItemsFromJEI{
+    JEI.removeAndHide(item);
+}
+
 // Удаление рецептов ArcaneWorkBench
 val RemoveItemsFromArcaneWorkBench as IItemStack[] = [
 	<thaumcraft:goggles>,
@@ -90,6 +131,7 @@ val RemoveItemsFromCrucible as IItemStack[] = [
 	<thaumcraft:amber> * 3,
     <minecraft:cactus>,
     <thaumicbases:rainbowcactus>,
+    <minecraft:web>
 ];
 for item in RemoveItemsFromCrucible{
     Crucible.removeRecipe(item);
@@ -172,85 +214,84 @@ recipes.addShapeless(<thaumcraft:salis_mundus> * 2, [<thaumcraft:crystal_essence
 
 // --- Тигель
 
-// Янтарь+Редкоземельный эелемент
 Crucible.registerRecipe("thaumcraft:amberF0", "TB.EXCHANG", <thaumcraft:amber>, <tfc:wood/sapling/douglas_fir>, [<aspect:vinculum>*14]);
 Crucible.registerRecipe("thaumcraft:amberF1", "TB.EXCHANG", <thaumcraft:amber>*3, <tfc:wood/sapling/spruce>, [<aspect:vinculum>*8]);
 Crucible.registerRecipe("thaumcraft:rareearthF", "TB.EXCHANG", <thaumcraft:nugget:10>, <ore:dustSmallRareEarth>.firstItem, [<aspect:praecantatio>*10, <aspect:ordo>*5, <aspect:alienis>*2]);
-// Варп камень из WS
 Crucible.registerRecipe("thaumcraft:warpstoneF", "", <waystones:warp_stone>, <ore:gemExquisite>, [<aspect:praecantatio>*50]);
-// Кактус TFC
 Crucible.registerRecipe("thaumcraft:cactusF", "TB.EXCHANG", <tfc:plants/barrel_cactus>, <ore:dyeGreen>, [<aspect:victus>*2, <aspect:ordo>, <aspect:terra>]);
 Crucible.registerRecipe("thaumcraft:rainbowcactusF", "TB.CACTUS", <thaumicbases:rainbowcactus>, <tfc:plants/barrel_cactus>, [<aspect:herba>*35, <aspect:praecantatio>*15]);
+Crucible.registerRecipe("thaumcraft:webF", "", <minecraft:web>, <minecraft:string>, [<aspect:praecantatio>*15]);
+
 
 // --- Инфузия
 
 // Синие сапоги путешественника
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:traveller_bootsF", "", <thaumcraft:traveller_boots>, 2, 
-    [<aspect:motus> * 100, <aspect:volatus> * 100], <tfc:metal/boots/blue_steel>, 
-    [<minecraft:fish>, <minecraft:feather>, <thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
+Infusion.registerRecipe("thaumcraft:traveller_bootsBlueF", "", <thaumcraft:traveller_boots>, 5, 
+    [<aspect:volatus> * 100, <aspect:motus> * 100], <tfc:metal/boots/blue_steel>, 
+    [<tfc:food/fish>, <minecraft:feather>, <thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
 
-// Киние сапоги путешественника
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:traveller_bootsD", "", <thaumcraft:traveller_boots>, 2, 
-    [<aspect:motus>*100, <aspect:volatus>*100], <tfc:metal/boots/red_steel>, 
-    [<minecraft:fish>, <minecraft:feather>, <thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
+// Красные сапоги путешественника
+Infusion.registerRecipe("thaumcraft:traveller_bootsRedF", "", <thaumcraft:traveller_boots>, 5, 
+    [<aspect:volatus> * 100, <aspect:motus> * 100], <tfc:metal/boots/red_steel>, 
+    [<tfc:food/fish>, <minecraft:feather>, <thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
 
 // Печать жатва
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:seal:7F", "", <thaumcraft:seal:7>, 1, 
+Infusion.registerRecipe("thaumcraft:seal:7F", "", <thaumcraft:seal:7>, 1, 
     [<aspect:herba>*10, <aspect:sensus>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
     [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/jute>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/beet>, <tfc:crop/seeds/sugarcane>, <tfc:crop/seeds/potato>]);
 
 // Печать разрушение блоков
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:seal:12F", "", <thaumcraft:seal:12>, 1, 
+Infusion.registerRecipe("thaumcraft:seal:12F", "", <thaumcraft:seal:12>, 1, 
     [<aspect:instrumentum>*10, <aspect:perditio>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
     [<tfc:metal/pick/blue_steel>, <tfc:metal/shovel/blue_steel>, <tfc:metal/axe/blue_steel>]);
 
 // Печать забивание
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:seal:8F", "", <thaumcraft:seal:8>, 1, 
+Infusion.registerRecipe("thaumcraft:seal:8F", "", <thaumcraft:seal:8>, 1, 
     [<aspect:bestia>*10, <aspect:sensus>*10, <aspect:humanus>*10], <thaumcraft:seal:9>, 
     [<minecraft:leather>, <ore:wool>, <tfc:hide/raw/small>, <tfc:hide/raw/medium>, <tfc:hide/raw/large>]);
 
 // Штурмовые набедренники из таумиума
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fortress_legsF", "", <thaumcraft:fortress_legs>, 2, 
+Infusion.registerRecipe("thaumcraft:fortress_legsF", "", <thaumcraft:fortress_legs>, 2, 
     [<aspect:metallum>*50, <aspect:praemunio>*25, <aspect:potentia>*25], <thaumcraft:thaumium_legs>, 
     [<tfc:metal/ingot/gold>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Штурмовые латы из таумиума
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fortress_chestF", "", <thaumcraft:fortress_chest>, 2, 
+Infusion.registerRecipe("thaumcraft:fortress_chestF", "", <thaumcraft:fortress_chest>, 2, 
     [<aspect:metallum>*50, <aspect:praemunio>*30, <aspect:potentia>*25], <thaumcraft:thaumium_chest>, 
     [<tfc:metal/ingot/gold>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Штурмовой шлем
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fortress_helmF", "", <thaumcraft:fortress_helm>, 2,
+Infusion.registerRecipe("thaumcraft:fortress_helmF", "", <thaumcraft:fortress_helm>, 2,
     [<aspect:metallum>*50, <aspect:praemunio>*20, <aspect:potentia>*25], <thaumcraft:thaumium_helm>, 
     [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <tfc:gem/emerald:2>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Светильник скрещивания
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:lamp_fertilityF", "", <thaumcraft:lamp_fertility>, 3, 
+Infusion.registerRecipe("thaumcraft:lamp_fertilityF", "", <thaumcraft:lamp_fertility>, 3, 
     [<aspect:bestia>*20,<aspect:lux>*15, <aspect:desiderium>*15, <aspect:victus>*15], <thaumcraft:lamp_arcane>, 
     [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/wheat>, <tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
 
 // Светильник роста
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:lamp_growthF", "", <thaumcraft:lamp_growth>, 3, 
+Infusion.registerRecipe("thaumcraft:lamp_growthF", "", <thaumcraft:lamp_growth>, 3, 
     [<aspect:herba>*20, <aspect:lux>*15, <aspect:victus>*15, <aspect:instrumentum>*15], <thaumcraft:lamp_arcane>, 
     [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <minecraft:dye:15>, <minecraft:dye:15>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})]);
 
 // Волшебное ручное зеркало
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:hand_mirrorF", "", <thaumcraft:hand_mirror>, 3, 
+Infusion.registerRecipe("thaumcraft:hand_mirrorF", "", <thaumcraft:hand_mirror>, 3, 
     [<aspect:instrumentum>*50, <aspect:motus>*50], <thaumcraft:mirror>, 
     [<tfc:glue>, <minecraft:stick>, <minecraft:paper>]);
 
 // Повязка реликвий
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:curiosity_bandF", "", <thaumcraft:curiosity_band>, 4, 
+Infusion.registerRecipe("thaumcraft:curiosity_bandF", "", <thaumcraft:curiosity_band>, 4, 
     [<aspect:cognitio>*150, <aspect:vinculum>*150, <aspect:vacuos>*50], <thaumcraft:baubles:6>, 
     [<tfc:gem/emerald:2>, <minecraft:writable_book>, <tfc:gem/emerald:2>, <thaumcraft:primordial_pearl>]);
 
 // Мистический бур
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:turret:2F", "", <thaumcraft:turret:2>, 4, 
+Infusion.registerRecipe("thaumcraft:turret:2F", "", <thaumcraft:turret:2>, 4, 
     [<aspect:machina>*100, <aspect:potentia>*25, <aspect:terra>*25, <aspect:vacuos>*25, <aspect:motus>*25], <thaumcraft:turret>,
     [<gregtech:meta_item_1:12094>, <gregtech:meta_item_1:12094>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:nugget:10>, <thaumcraft:morphic_resonator>, <tfc:metal/pick/blue_steel>, <tfc:metal/shovel/blue_steel>]);
 
 // Зеркало эссенсий
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:mirror_essentiaF", "", <thaumcraft:mirror_essentia>, 2, 
+Infusion.registerRecipe("thaumcraft:mirror_essentiaF", "", <thaumcraft:mirror_essentia>, 2, 
     [<aspect:motus>*25, <aspect:aqua>*25, <aspect:permutatio>*25], <thaumcraft:mirrored_glass>,
     [<gregtech:meta_item_1:12197>, <gregtech:meta_item_1:12197>, <gregtech:meta_item_1:12197>, <minecraft:ender_pearl>]);
 
@@ -551,37 +592,50 @@ ArcaneWorkbench.registerShapedRecipe("thaumcraft:smelter_auxF", "", 100, [<aspec
 <ore:oreQuartz>.remove(<thaumcraft:ore_quartz>);
 
 // TFC + THAUMCRAFT
-// Броня из таумиума
-Welding.removeRecipe(<tfc:metal/helmet/thaumium>);
-Welding.removeRecipe(<tfc:metal/chestplate/thaumium>);
-Welding.removeRecipe(<tfc:metal/greaves/thaumium>);
-Welding.removeRecipe(<tfc:metal/boots/thaumium>);
-Welding.addRecipe("tfc:thaumcraftthaumiumhelmet", <tfc:metal/unfinished_helmet/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_helm>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumchestplate", <tfc:metal/unfinished_chestplate/thaumium>, <tfc:metal/double_sheet/thaumium>, <thaumcraft:thaumium_chest>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumgreaves", <tfc:metal/unfinished_greaves/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_legs>, 3);
-Welding.addRecipe("tfc:thaumcraftthaumiumboots", <tfc:metal/unfinished_boots/thaumium>, <tfc:metal/sheet/thaumium>, <thaumcraft:thaumium_boots>, 3);
+ItemRegistry.registerItemMetal(<ore:plateThaumium>, "THAUMIUM", 100, true);
 
-// Броня из пустотного металла
-Anvil.addRecipe("tfc:thaumcraftvoidhelmet", <ore:plateVoidMetal>, <thaumcraft:void_helm>, 5, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfc:thaumcraftvoidchestplate", <tfc:metal/double_sheet/void_metal>, <thaumcraft:void_chest>, 5, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfc:thaumcraftvoidgreaves", <ore:plateVoidMetal>, <thaumcraft:void_legs>, 5, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
-Anvil.addRecipe("tfc:thaumcraftvoidboots", <ore:plateVoidMetal>, <thaumcraft:void_boots>, 5, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
-
-// Инструменты из таумиума
-recipes.addShapeless(<tfc:metal/sword/thaumium>, [<tfc:metal/sword_blade/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/pick/thaumium>, [<tfc:metal/pick_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/axe/thaumium>, [<tfc:metal/axe_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/shovel/thaumium>, [<tfc:metal/shovel_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/hoe/thaumium>, [<tfc:metal/hoe_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/chisel/thaumium>, [<tfc:metal/chisel_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/javelin/thaumium>, [<tfc:metal/javelin_head/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/scythe/thaumium>, [<tfc:metal/scythe_blade/thaumium>, <ore:stickWood>]);
-recipes.addShapeless(<tfc:metal/mace/thaumium>, [<tfc:metal/mace_head/thaumium>, <ore:stickWood>]);
-
-//Инструменты из таумиума
+// Удаление рецептов инструментов из таумиума
 Anvil.removeRecipe(<tfc:metal/propick_head/thaumium>);
 Anvil.removeRecipe(<tfc:metal/hammer_head/thaumium>);
 Anvil.removeRecipe(<tfc:metal/saw_blade/thaumium>);
 Anvil.removeRecipe(<tfc:metal/knife_blade/thaumium>);
 Anvil.removeRecipe(<tfctech:metal/thaumium_blowpipe>);
+Anvil.removeRecipe(<firmalife:thaumium_mallet_head>);
+Anvil.removeRecipe(<tfc:metal/trapdoor/thaumium>);
+Anvil.removeRecipe(<tfc:metal/shield/thaumium>);
 
+Welding.removeRecipe(<tfc:metal/shears/thaumium>);
+
+// Крафт пластины из слитков таумиума
+Anvil.addRecipe("tfg:thaumium_plate", <tfc:metal/double_ingot/thaumium>, <thaumcraft:plate:2>, 4, "general", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Welding.addRecipe("tfg:double_thaumium_plate", <thaumcraft:plate:2>, <thaumcraft:plate:2>, <tfc:metal/double_sheet/thaumium>, 4);
+
+// Инструменты из таумиума
+Anvil.addRecipe("tfg:thaumium_pick_head", <thaumcraft:ingot>, <tfc:metal/pick_head/thaumium>, 4, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:thaumium_axe_head", <thaumcraft:ingot>, <tfc:metal/axe_head/thaumium>, 4, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+
+recipes.addShapeless(<thaumcraft:thaumium_sword>, [<tfc:metal/sword_blade/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<thaumcraft:thaumium_pick>, [<tfc:metal/pick_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<thaumcraft:thaumium_axe>, [<tfc:metal/axe_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<thaumcraft:thaumium_shovel>, [<tfc:metal/shovel_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<thaumcraft:thaumium_hoe>, [<tfc:metal/hoe_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<tfc:metal/scythe/thaumium>, [<tfc:metal/scythe_blade/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<tfc:metal/mace/thaumium>, [<tfc:metal/mace_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<tfc:metal/chisel/thaumium>, [<tfc:metal/chisel_head/thaumium>, <ore:stickWood>]);
+recipes.addShapeless(<tfc:metal/javelin/thaumium>, [<tfc:metal/javelin_head/thaumium>, <ore:stickWood>]);
+
+// Броня из таумиума
+Welding.removeRecipe(<tfc:metal/helmet/thaumium>);
+Welding.removeRecipe(<tfc:metal/chestplate/thaumium>);
+Welding.removeRecipe(<tfc:metal/greaves/thaumium>);
+Welding.removeRecipe(<tfc:metal/boots/thaumium>);
+Welding.addRecipe("tfg:thaumcraftthaumiumhelmet", <tfc:metal/unfinished_helmet/thaumium>, <thaumcraft:plate:2>, <thaumcraft:thaumium_helm>, 3);
+Welding.addRecipe("tfg:thaumcraftthaumiumchestplate", <tfc:metal/unfinished_chestplate/thaumium>, <tfc:metal/double_sheet/thaumium>, <thaumcraft:thaumium_chest>, 3);
+Welding.addRecipe("tfg:thaumcraftthaumiumgreaves", <tfc:metal/unfinished_greaves/thaumium>, <thaumcraft:plate:2>, <thaumcraft:thaumium_legs>, 3);
+Welding.addRecipe("tfg:thaumcraftthaumiumboots", <tfc:metal/unfinished_boots/thaumium>, <thaumcraft:plate:2>, <thaumcraft:thaumium_boots>, 3);
+
+// Броня из пустотного металла
+Anvil.addRecipe("tfg:thaumcraftvoidhelmet", <ore:plateVoidMetal>, <thaumcraft:void_helm>, 5, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:thaumcraftvoidchestplate", <tfc:metal/double_sheet/void_metal>, <thaumcraft:void_chest>, 5, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:thaumcraftvoidgreaves", <ore:plateVoidMetal>, <thaumcraft:void_legs>, 5, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
+Anvil.addRecipe("tfg:thaumcraftvoidboots", <ore:plateVoidMetal>, <thaumcraft:void_boots>, 5, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");

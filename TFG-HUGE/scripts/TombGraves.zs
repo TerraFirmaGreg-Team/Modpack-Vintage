@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 
-//Удаление рецептов + скрытие
+// --- Removing Recipes
+
+// Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	<tombstone:dark_marble>,
     <tombstone:dark_marble:1>,

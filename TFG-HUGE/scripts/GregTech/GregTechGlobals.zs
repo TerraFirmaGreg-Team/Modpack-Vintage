@@ -1,7 +1,8 @@
-#priority 999
+#priority 997
 
 import mods.gregtech.recipe.RecipeMap;
 
+// GregTechCEu
 global alloy_smelter as RecipeMap = <recipemap:alloy_smelter>;
 global arc_furnace as RecipeMap = <recipemap:arc_furnace>;
 global assembler as RecipeMap = <recipemap:assembler>;

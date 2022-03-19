@@ -7,6 +7,7 @@ mods.jei.JEI.hideCategory("tfcflorae.casting");
 mods.jei.JEI.hideCategory("tfcflorae.casting_earthenware_firmalife");
 mods.jei.JEI.hideCategory("tfcflorae.casting_kaolinite_firmalife");
 mods.jei.JEI.hideCategory("tfcflorae.casting_stoneware_firmalife");
+mods.jei.JEI.hideCategory("ftbquests.quests");
 
 // FTB
 mods.jei.JEI.removeAndHide(<ftbquests:chest>);

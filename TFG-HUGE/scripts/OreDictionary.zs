@@ -1,4 +1,4 @@
-#priority 1000
+#priority 995
 
 import crafttweaker.oredict.IOreDictEntry;
 
@@ -33,6 +33,7 @@ for item in All_Seeds {
 // Rock Types GT = Rock Types TFC
 <ore:stoneBasalt>.add(<tfc:raw/basalt>);
 <ore:stoneMarble>.add(<tfc:raw/marble>);
+
 // Single Sheets = Single Plates
 <ore:sheetCopper>.add(<metaitem:plateCopper>);
 <ore:sheetBismuth>.add(<metaitem:plateBismuth>);
@@ -54,6 +55,7 @@ for item in All_Seeds {
 <ore:sheetBlackSteel>.add(<metaitem:plateBlackSteel>);
 <ore:sheetBlueSteel>.add(<metaitem:plateBlueSteel>);
 <ore:sheetRedSteel>.add(<metaitem:plateRedSteel>);
+
 // Double Sheets = Double Plates
 <ore:sheetDoubleCopper>.add(<metaitem:plateDoubleCopper>);
 <ore:sheetDoubleBismuth>.add(<metaitem:plateDoubleBismuth>);
@@ -75,20 +77,12 @@ for item in All_Seeds {
 <ore:sheetDoubleBlackSteel>.add(<metaitem:plateDoubleBlackSteel>);
 <ore:sheetDoubleBlueSteel>.add(<metaitem:plateDoubleBlueSteel>);
 <ore:sheetDoubleRedSteel>.add(<metaitem:plateDoubleRedSteel>);
+
 // BronzeAny Single Sheets
 <ore:sheetAnyBronze>.add(<metaitem:plateBronze>, <metaitem:plateBlackBronze>, <metaitem:plateBismuthBronze>);
+
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
-// remove gemDiamond
-<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
-// remove gemLapis
-<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
-// remove gemEmerald
-<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
-// remove dustSalt
-<ore:dustSalt>.remove(<tfc:powder/salt>);
-// remove dustSaltpeter
-<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
 
 // --- GregTech
 // Chipped Gems from GT
@@ -112,7 +106,7 @@ for item in Gem_Exquisite {
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- GC
-<ore:moonRock>.add(<galacticraftcore:basic_block_moon:4>);
+<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
 
 // --- Deleting OreDictionary
 // --- ProjectRed
@@ -158,6 +152,22 @@ for item in Gem_Exquisite {
 <ore:oreGold>.remove(<minecraft:gold_ore>);
 // Iron
 <ore:oreIron>.remove(<minecraft:iron_ore>);
+
+// --- TFC
+// remove gemDiamond
+<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
+
+// remove gemLapis
+<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
+
+// remove gemEmerald
+<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
+
+// remove dustSalt
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+
+// remove dustSaltpeter
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
 
 // --- GC/GS
 // Iron

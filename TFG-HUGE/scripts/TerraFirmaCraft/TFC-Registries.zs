@@ -1,4 +1,4 @@
-#priority 996
+#priority 989
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
