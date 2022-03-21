@@ -337,8 +337,8 @@ packer.recipeBuilder()
   .buildAndRegister();
 // ME Ore Dictionary Storage Bus
 recipes.remove(<extracells:part.base:12>);
-recipes.addShapeless("oredict_storage_bus", <extracells:part.base:12>,
-  [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
+// recipes.addShapeless("oredict_storage_bus", <extracells:part.base:12>,
+//   [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
 
 ########################################
