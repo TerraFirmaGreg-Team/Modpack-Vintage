@@ -3,7 +3,7 @@
     {
         "title":
         {
-            "image" : "modpack:mainmenu/TFG_LOGO.png",
+            "image" : "modpack:mainmenu/tfg_logo.png",
             "posX" : -250,
             "posY" : -35,
             "width" : 500,
@@ -157,7 +157,7 @@
 		
 		"CurrentClientVersionProvider":
         {
-            "text" : "R3.1.3",
+            "text" : "R3.1.5",
             "posX" : 88,
             "posY" : -30,
             "color" : 5897984,
