@@ -4,7 +4,7 @@
     "density": 0.1,
     "max_height": 90,
     "min_height": 5,
-    "generation_predicate":["ore_dict:ore:stoneMoon"],
+    "generation_predicate":["ore_dust:stoneMoon"],
     "dimension_filter": [
       "dimension_id:-28"
   ],
