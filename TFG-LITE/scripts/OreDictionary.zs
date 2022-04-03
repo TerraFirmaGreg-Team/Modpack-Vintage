@@ -1,6 +1,7 @@
 #priority 995
 
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;
 
 // --- Adding OreDictionary
 // --- TFC
@@ -168,6 +169,36 @@ for item in Gem_Exquisite {
 
 // remove dustSaltpeter
 <ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
+
+// remove saw
+val RemoveItemOre as IItemStack[] = [
+<tfc:metal/saw/bismuth_bronze>,
+<tfc:metal/saw/black_bronze>,
+<tfc:metal/saw/black_steel>,
+<tfc:metal/saw/blue_steel>,
+<tfc:metal/saw/bronze>,
+<tfc:metal/saw/copper>,
+<tfc:metal/saw/red_steel>,
+<tfc:metal/saw/steel>,
+<tfc:metal/saw/wrought_iron>,
+<tfc:metal/saw_blade/bismuth_bronze>,
+<tfc:metal/saw_blade/black_bronze>,
+<tfc:metal/saw_blade/black_steel>,
+<tfc:metal/saw_blade/blue_steel>,
+<tfc:metal/saw_blade/bronze>,
+<tfc:metal/saw_blade/copper>,
+<tfc:metal/saw_blade/red_steel>,
+<tfc:metal/saw_blade/steel>,
+<tfc:metal/saw_blade/wrought_iron>
+];
+for item in RemoveItemOre{
+    <ore:saw>.remove(item);
+}
+
+// add loom
+for item in TFC_Loom {
+	<ore:loom>.add(item);
+}
 
 // --- GC/GS
 // Iron

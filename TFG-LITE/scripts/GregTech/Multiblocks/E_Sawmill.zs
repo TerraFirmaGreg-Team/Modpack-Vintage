@@ -36,7 +36,10 @@ global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
   .maxFluidOutputs(0)
   .build();
 
-var electric_saw_mill = Builder.start("saw_mill", 32001)
+val id = 32001;
+val loc = "saw_mill";
+
+var electric_saw_mill = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")
@@ -45,25 +48,20 @@ var electric_saw_mill = Builder.start("saw_mill", 32001)
       .aisle("CFC", "G G", "CSC")
       .aisle("CFC", "C C", "C C")
       .where("S", controller.self())
-      .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>)
-          | CTPredicate.abilities(<mte_ability:IMPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-          | CTPredicate.abilities(<mte_ability:IMPORT_FLUIDS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-          | CTPredicate.abilities(<mte_ability:INPUT_ENERGY>).setMinGlobalLimited(1).setMaxGlobalLimited(3).setPreviewCount(1)
-          | CTPredicate.abilities(<mte_ability:EXPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-      )
+      .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>).setMinGlobalLimited(42) | controller.autoAbilities())
       .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
       .where("W", CTPredicate.states(<metastate:gregtech:wire_coil>))
       .where("F", CTPredicate.states(<metastate:gregtech:meta_block_frame_20:4>))
       .where(" ", CTPredicate.getAir())
       .build();
   } as IPatternBuilderFunction)
-  .withRecipeMap(<recipemap:saw_mill>)
+  .withRecipeMap(saw_mill)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
 electric_saw_mill.hasMaintenanceMechanics = false;
 electric_saw_mill.hasMufflerMechanics = false;
 
-recipes.addShaped(<metaitem:multiblocktweaker:saw_mill>, [
+recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitGood>, <metaitem:conveyor.module.mv>, <ore:circuitGood>]

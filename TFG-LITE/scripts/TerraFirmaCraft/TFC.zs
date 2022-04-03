@@ -277,7 +277,7 @@ for item in RemoveItemsFromJEI{
 
 // Удаление рецептов
 val RemoveItemRecipesByName = [
-    "tfc:vanilla/redstone/observer",
+  "tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
 	"tfc:vanilla/flint_and_steel",
 	"tfc:vanilla/compass",
