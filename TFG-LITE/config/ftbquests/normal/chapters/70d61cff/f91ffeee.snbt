@@ -1,8 +1,9 @@
 {
 	x: -11.0d,
 	y: -1.0d,
+	description: "{tfg.quests.ev.superconductor.subtitle}",
 	text: [
-		"Amperage goes up, now 6A per Superconductor."
+		""
 	],
 	dependencies: [
 		"5928ecb5"

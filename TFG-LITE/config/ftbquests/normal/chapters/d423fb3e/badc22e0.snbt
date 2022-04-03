@@ -2,7 +2,13 @@
 	x: -14.0d,
 	y: -11.0d,
 	shape: "circle",
-	description: "{tfg.quests.steam.bronzealloysmelter.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzealloysmelter.desc1}",
+		"",
+		"{tfg.quests.steam.bronzealloysmelter.desc2}",
+		"",
+		"{tfg.quests.steam.bronzealloysmelter.desc3}"
+	],
 	dependencies: [
 		"505c5aff"
 	],

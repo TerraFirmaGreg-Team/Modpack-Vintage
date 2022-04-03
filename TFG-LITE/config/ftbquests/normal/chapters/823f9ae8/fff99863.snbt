@@ -12,16 +12,30 @@
 		uid: "7de95a3c",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "dustTinyBismuth",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any dustTinyBismuth"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinyBismuth"
+				}
+			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyBismuth"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallBismuth"
 				}
 			}
 		}]

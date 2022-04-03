@@ -1,10 +1,10 @@
 {
-	title: "Tungstic Acid",
+	title: "{tfg.quests.ev.tungsticacid.title}",
 	icon: "gregtech:meta_dust 1 343",
 	x: -1.5d,
 	y: -4.0d,
 	text: [
-		"Use Tungstate or Scheelite from the end to make Tungstic Acid."
+		""
 	],
 	dependencies: [
 		"efe6446b"

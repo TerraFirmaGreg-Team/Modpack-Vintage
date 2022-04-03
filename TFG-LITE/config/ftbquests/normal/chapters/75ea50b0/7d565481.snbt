@@ -1,40 +1,29 @@
 {
-	title: "We Need More Steel!",
-	x: -21.5d,
+	x: -20.5d,
 	y: -5.0d,
 	text: [
-		"§oSteel, the Shrödinger alloy of all alloys. Made with a very small percentage of carbon in mass, it is significantly tougher than Iron or Wrought Iron.§r",
-		"",
-		"One §3PBF§r will most not likely cut it and be too slow. Make another one!",
-		"",
-		"Did you know GregTech multiblocks can §dshare walls§r? This saves you a whole 12 Primitive Bricks for your second PBF.",
-		"",
-		"What you may also do is upgrade to four §3PBFs§r. It just depends on how much of an innate speedrunner you are.",
-		"",
-		"",
-		"§bLore:§r In GregTech 5, one single Ingot of Steel takes 360 seconds in the PBF when using Coal or Charcoal!",
-		"Pollution was also a thing, and four of these bad boys would guarantee your character would periodically get negative effects such as slowness, mining fatigue, or even nausea and poison."
+		""
 	],
 	tasks: [{
 		uid: "1d838f19",
 		type: "item",
 		items: [{
+			id: "gregtech:meta_ingot",
+			Damage: 324s,
 			ForgeCaps: {
 				"tfc:item_forge": {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "gregtech:meta_ingot",
-			Damage: 324s
+			}
 		}]
 	}]
 }

@@ -1,11 +1,12 @@
 {
-	title: "First EV Circuits!",
+	title: "{tfg.quests.hv.firstevcircuits.title}",
 	icon: "gregtech:meta_item_1 1 630",
 	x: -4.5d,
 	y: -6.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.firstevcircuits.subtitle}",
 	text: [
-		"This one will be needed during the HV Age."
+		""
 	],
 	dependencies: [
 		"f8f44a61"

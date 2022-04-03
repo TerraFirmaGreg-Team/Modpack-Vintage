@@ -15,13 +15,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "creosote",
 					Amount: 1000
 				}
-			},
-			Damage: 78s
+			}
 		}
 	}]
 }

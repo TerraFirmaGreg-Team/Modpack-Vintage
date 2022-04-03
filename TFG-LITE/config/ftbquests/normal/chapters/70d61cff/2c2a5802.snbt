@@ -1,21 +1,12 @@
 {
-	title: "True Distillation: Air",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "air",
-			Amount: 1000
-		}
-	},
+	title: "{tfg.quests.ev.truedistillationair.title}",
 	x: 5.5d,
 	y: 1.0d,
+	description: "{tfg.quests.ev.truedistillationair.subtitle}",
 	text: [
-		"§aLiquid Air§r is a great way to get large amounts of §aNitrogen§r and §aOxygen§r, at the cost of using more energy than §3LV Centrifuges§r.",
+		"{tfg.quests.ev.truedistillationair.desc1}",
 		"",
-		"However, this will also give you both §6Helium§r and §6Argon§r which are great to boost smelting in the §3Electric Blast Furnace§r.",
-		"",
-		"",
-		"§cNote:§r You will need at least §3HV Input & Output Hatches§r to be able to run recipes."
+		"{tfg.quests.ev.truedistillationair.desc2}"
 	],
 	dependencies: [
 		"ff136331"

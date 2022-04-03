@@ -1,20 +1,15 @@
 {
-	title: "Advanced Maintenance",
+	title: "{tfg.quests.hv.advancedmaintenance.title}",
 	icon: "gregtech:machine 1 1656",
 	x: -2.0d,
 	y: 3.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.advancedmaintenance.subtitle}",
 	text: [
-		"You now have access to two §3new Maintenance Hatches§r. Both start with §6no Maintenance required§r.",
+		"{tfg.quests.hv.advancedmaintenance.desc1}",
 		"",
-		"The §3Automatic Maintenance Hatch§r is pretty simple, it eliminates the need for Maintenance, §6forever§r.",
-		"",
-		"The §3Configurable Maintenance Hatch§r is more interesting. You can configure it to cut off §a10% duration§r on recipes, at the cost of making Maintenance happen three times as fast. That is §d16 real hours§r of activity.",
-		"§9Reminder:§r You can put Tape in the maintenance Hatch to automatically fix problems. §mBut do not do it, that's very ugly§r.",
-		"",
-		"",
-		"§bLore:§r The Automatic Maintenance Hatch texture and mechanic comes from TecTech, an addon mod originally made for GregTech: New Horizons. I will be honest with you: that mod is excessively cool!",
-		"More TecTech references coming up, if you stick with us with the late game!"
+		"{tfg.quests.hv.advancedmaintenance.desc2}",
+		"{tfg.quests.hv.advancedmaintenance.desc3}"
 	],
 	dependencies: [
 		"05af19ec"

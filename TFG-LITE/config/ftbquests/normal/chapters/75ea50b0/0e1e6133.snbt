@@ -1,8 +1,8 @@
 {
-	x: -20.5d,
+	x: -19.5d,
 	y: -1.0d,
 	text: [
-		"Tungsten at last! The IV Cable material."
+		""
 	],
 	tasks: [{
 		uid: "265f87c8",

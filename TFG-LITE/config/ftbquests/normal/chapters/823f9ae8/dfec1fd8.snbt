@@ -13,13 +13,13 @@
 		type: "item",
 		title: "Any clothHighQuality",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "clothHighQuality",
-					id: "ore"
+					id: "ore",
+					data: "clothHighQuality"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}]
 	}]
 }

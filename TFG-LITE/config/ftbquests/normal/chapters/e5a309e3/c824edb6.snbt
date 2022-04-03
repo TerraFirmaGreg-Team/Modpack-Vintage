@@ -1,12 +1,10 @@
 {
-	title: "HV Circuit Assembling",
 	icon: "gregtech:machine 1 637",
 	x: -6.5d,
 	y: -6.0d,
+	description: "{tfg.quests.hv.hvcircuitassembling.subtitle}",
 	text: [
-		"The next §3Circuit Assembler§r, used to make your first ever §aMainframe§r.",
-		"",
-		"You can put this off until §5EV§r."
+		"{tfg.quests.hv.hvcircuitassembling.desc1}"
 	],
 	dependencies: [
 		"fc8e1322"

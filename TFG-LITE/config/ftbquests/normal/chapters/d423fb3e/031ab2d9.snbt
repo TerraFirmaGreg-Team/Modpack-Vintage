@@ -1,6 +1,11 @@
 {
 	x: -16.0d,
 	y: -15.0d,
+	text: [
+		"{tfg.quests.steam.circuiter.desc1}",
+		"",
+		"{tfg.quests.steam.circuiter.desc2}"
+	],
 	dependencies: [
 		"94cafd40"
 	],

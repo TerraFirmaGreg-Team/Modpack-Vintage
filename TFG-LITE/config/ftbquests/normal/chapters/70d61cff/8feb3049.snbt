@@ -4,7 +4,7 @@
 	x: -1.5d,
 	y: 0.0d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"7354e826",

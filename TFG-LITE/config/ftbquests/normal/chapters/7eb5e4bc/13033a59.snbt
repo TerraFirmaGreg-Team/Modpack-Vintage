@@ -2,10 +2,10 @@
 	title: "Ludicrous Batteries",
 	icon: {
 		id: "gregtech:meta_item_1",
+		Damage: 749s,
 		tag: {
 			Charge: 1000000000L
-		},
-		Damage: 749s
+		}
 	},
 	x: -7.5d,
 	y: -2.5d,

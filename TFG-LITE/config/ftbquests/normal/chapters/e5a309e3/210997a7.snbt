@@ -1,19 +1,20 @@
 {
-	title: "Central Monitor",
+	title: "{tfg.quests.hv.centralmonitor.title}",
 	icon: "gregtech:machine 1 1029",
 	x: -8.0d,
 	y: -4.0d,
+	description: "{tfg.quests.hv.centralmonitor.subtitle}",
 	text: [
-		"The §3Central Monitor§r is an §doptional§r yet extremely charming structure.",
+		"{tfg.quests.hv.centralmonitor.desc1}",
 		"",
-		"It acts as a §6display screen§r for machine information, machine GUI, and more!",
-		"Using it, you can also §9remotely access§r machines, given the right configuration.",
+		"{tfg.quests.hv.centralmonitor.desc2}",
 		"",
-		"Its mechanics are explained in the §4Terminal§r."
+		"{tfg.quests.hv.centralmonitor.desc3}"
 	],
 	dependencies: [
 		"2e62dccf"
 	],
+	optional: true,
 	tasks: [{
 		uid: "f2d77642",
 		type: "item",

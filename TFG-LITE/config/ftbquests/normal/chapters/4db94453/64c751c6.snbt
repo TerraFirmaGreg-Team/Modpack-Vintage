@@ -10,16 +10,16 @@
 		uid: "bf755dcc",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ae2.cable.dense.smart",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ae2.cable.dense.smart"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ae2.cable.dense.smart"
 				}
 			}
 		}]

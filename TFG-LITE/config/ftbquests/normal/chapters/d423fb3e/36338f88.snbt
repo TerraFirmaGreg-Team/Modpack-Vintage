@@ -1,6 +1,12 @@
 {
 	x: -10.0d,
 	y: -16.0d,
+	text: [
+		"{tfg.quests.steam.mold.desc1}",
+		"{tfg.quests.steam.mold.desc2}",
+		"{tfg.quests.steam.mold.desc3}",
+		"{tfg.quests.steam.mold.desc4}"
+	],
 	dependencies: [
 		"93823cf3"
 	],

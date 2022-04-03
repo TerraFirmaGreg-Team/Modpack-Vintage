@@ -13,38 +13,38 @@
 		uid: "afe6c466",
 		type: "item",
 		items: [{
+			id: "tfc:metal/anvil/blue_steel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/anvil/blue_steel"
+			}
 		},
 		{
+			id: "tfc:metal/anvil/red_steel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/anvil/red_steel"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

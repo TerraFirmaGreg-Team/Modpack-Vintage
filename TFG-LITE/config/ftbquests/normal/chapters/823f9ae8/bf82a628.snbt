@@ -13,13 +13,13 @@
 		type: "item",
 		title: "Any barrel",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "barrel",
-					id: "ore"
+					id: "ore",
+					data: "barrel"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

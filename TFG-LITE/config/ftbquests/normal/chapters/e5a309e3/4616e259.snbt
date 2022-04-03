@@ -1,10 +1,10 @@
 {
 	icon: {
 		id: "mechtech:meta_armor",
+		Damage: 1s,
 		tag: {
 			ModuleData: {}
-		},
-		Damage: 1s
+		}
 	},
 	x: -6.5d,
 	y: 1.0d,

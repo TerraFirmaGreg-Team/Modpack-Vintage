@@ -2,13 +2,13 @@
 	title: "{tfg.quests.lv.drillin.title}",
 	icon: {
 		id: "gregtech:meta_tool",
+		Damage: 20s,
 		tag: {
 			Charge: 100000L,
 			GT.ToolStats: {
 				Material: "neutronium"
 			}
-		},
-		Damage: 20s
+		}
 	},
 	x: 10.0d,
 	y: 14.0d,
@@ -30,16 +30,16 @@
 		uid: "47d75781",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "craftingToolMiningDrill",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any craftingToolMiningDrill"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolMiningDrill"
 				}
 			}
 		}],

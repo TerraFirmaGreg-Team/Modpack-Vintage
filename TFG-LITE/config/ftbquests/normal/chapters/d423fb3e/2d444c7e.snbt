@@ -2,6 +2,16 @@
 	x: -21.0d,
 	y: -11.0d,
 	description: "{tfg.quests.steam.bronzemacerator.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzemacerator.desc1}",
+		"",
+		"{tfg.quests.steam.bronzemacerator.desc2}",
+		"",
+		"{tfg.quests.steam.bronzemacerator.desc3}",
+		"{tfg.quests.steam.bronzemacerator.desc4}",
+		"",
+		"{tfg.quests.steam.bronzemacerator.desc5}"
+	],
 	dependencies: [
 		"5347bf68"
 	],

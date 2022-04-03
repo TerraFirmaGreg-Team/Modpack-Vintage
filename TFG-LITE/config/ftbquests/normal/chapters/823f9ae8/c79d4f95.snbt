@@ -12,21 +12,21 @@
 		uid: "548cab83",
 		type: "item",
 		items: [{
+			id: "tfc:metal/anvil/steel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/anvil/steel"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

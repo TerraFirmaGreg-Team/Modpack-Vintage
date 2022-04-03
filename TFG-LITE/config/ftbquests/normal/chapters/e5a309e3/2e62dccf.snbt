@@ -1,11 +1,11 @@
 {
-	title: "HV Assembling Machine",
 	icon: "gregtech:machine 1 112",
 	x: -3.0d,
 	y: -4.0d,
 	shape: "square",
+	description: "{tfg.quests.hv.hvassemblingmachine.subtitle}",
 	text: [
-		"The §3HV Assembling Machine§r is the next step in progression, but it also unlocks a handful of useful utilities."
+		""
 	],
 	dependencies: [
 		"05af19ec"

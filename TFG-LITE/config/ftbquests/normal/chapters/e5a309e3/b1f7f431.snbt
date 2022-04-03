@@ -1,11 +1,11 @@
 {
-	title: "{tfg.quests.mv.ULV.title}",
+	title: "{tfg.quests.hv.ULV.title}",
 	icon: "gregtech:meta_item_1 1 626",
 	x: 1.0d,
 	y: -1.0d,
-	description: "{tfg.quests.mv.ULV.subtitle}",
+	description: "{tfg.quests.hv.ULV.subtitle}",
 	text: [
-		"{tfg.quests.mv.ULV.desc1}"
+		""
 	],
 	dependencies: [
 		"b381cff0"

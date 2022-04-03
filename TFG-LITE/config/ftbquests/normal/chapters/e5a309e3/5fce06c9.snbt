@@ -1,17 +1,15 @@
 {
-	title: "Almost Titanium²",
+	title: "{tfg.quests.hv.almosttitanium2.title}",
 	x: 3.0d,
 	y: -6.0d,
+	description: "{tfg.quests.hv.almosttitanium2.subtitle}",
 	text: [
-		"To get yourself Titanium, §aRutile§r must first be reduced to §aTitanium Tetrachloride§r in an §3HV Chemical Reactor§r, and then reduced again in the §3EBF§r with §dMagnesium§r to finally arrive at the Titanium§r metal.",
+		"{tfg.quests.hv.almosttitanium2.desc1}",
 		"",
-		"The §dCarbon§r, §dChlorine§r, §dOxygen§r, and §dMagnesium§r used in the process can be §6perfectly recovered§r from the byproduct §dCarbon Monoxide§r and §dMagnesium Chloride§r with no loss. Setup a system to recover them and you can process an indefinite amount of Rutile in a closed loop!",
+		"{tfg.quests.hv.almosttitanium2.desc2}",
 		"",
-		"",
-		"§aTitanium Tetrachloride§r also acts as a catalyst in Plastics production. A small amount of §aTiCl₄ §rin the polymerisation process increases the polymer yield to §6133%§r§r. This is totally and completely optional, though.",
-		"",
-		"§cWarning:§r §aTitanium Tetrachloride§r is a §chot Fluid§r. Transporting it in pipes that do not have enough heat capacity will §cburn§r them.",
-		"Touching pipes with them may also instantly §ckill§r you."
+		"{tfg.quests.hv.almosttitanium2.desc3}",
+		"{tfg.quests.hv.almosttitanium2.desc4}"
 	],
 	dependencies: [
 		"2f970f5b",
@@ -29,13 +27,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "titanium_tetrachloride",
 					Amount: 1000
 				}
-			},
-			Damage: 78s
+			}
 		}
 	}]
 }

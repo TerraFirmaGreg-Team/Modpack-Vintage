@@ -1,10 +1,9 @@
 {
-	title: "Nano Supercomputer",
 	icon: "gregtech:meta_item_1 1 634",
 	x: -7.0d,
 	y: 1.5d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"4202b0cf",

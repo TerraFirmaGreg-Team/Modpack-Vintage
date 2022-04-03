@@ -1,6 +1,9 @@
 {
 	x: -10.0d,
 	y: -14.0d,
+	text: [
+		""
+	],
 	dependencies: [
 		"badc22e0"
 	],
@@ -9,6 +12,20 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 17"
+		}]
+	},
+	{
+		uid: "8e4352aa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12"
+		}]
+	},
+	{
+		uid: "272d8d85",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 18"
 		}]
 	}]
 }

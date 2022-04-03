@@ -11,13 +11,18 @@
 		uid: "3f073efb",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
+				display: {
+					Name: "Any saw"
 				}
 			},
-			Damage: 5s
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "saw"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}]

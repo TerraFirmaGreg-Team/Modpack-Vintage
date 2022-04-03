@@ -1,12 +1,11 @@
 {
-	title: "Cetane-Boosted Diesel",
+	title: "{tfg.quests.hv.cetaneboosteddiesel.title}",
 	x: 9.0d,
 	y: -2.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.cetaneboosteddiesel.subtitle}",
 	text: [
-		"§aCetane-Boosted Diesel§r is 50% more energy dense than regular §eDiesel§r, and only requires 1 part §9Tetranitromethane (TNM)§r for every 50 parts §eDiesel§r. What a deal, right?",
-		"",
-		"The catch comes in the complexity of making §9TNM§r. In order to make it, you must react §eNitric Acid§r with either §9Ethenone§r or §6Methyl Acetate§r, both of which have quite an involved process themselves."
+		"{tfg.quests.hv.cetaneboosteddiesel.desc1}"
 	],
 	dependencies: [
 		"8dffcea8"
@@ -21,13 +20,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "nitro_fuel",
 					Amount: 1000
 				}
-			},
-			Damage: 78s
+			}
 		}
 	}]
 }

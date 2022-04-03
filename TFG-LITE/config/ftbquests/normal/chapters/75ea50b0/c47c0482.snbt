@@ -3,7 +3,7 @@
 	icon: "gregtech:machine 1 990",
 	disable_toast: true,
 	x: -26.5d,
-	y: -9.0d,
+	y: -7.5d,
 	text: [
 		"This is the §9Quantum§r Circuit line.",
 		"",

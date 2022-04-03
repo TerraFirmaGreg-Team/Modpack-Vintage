@@ -1,21 +1,20 @@
 {
-	title: "{tfg.quests.lv.multiblocktanks.title}",
+	title: "{tfg.quests.steam.multiblocktanks.title}",
 	icon: "gregtech:machine 1 1599",
-	x: 6.0d,
-	y: 10.0d,
-	shape: "pentagon",
-	description: "{tfg.quests.lv.multiblocktanks.subtitle}",
+	x: -10.0d,
+	y: -4.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.multiblocktanks.subtitle}",
 	text: [
-		"{tfg.quests.lv.multiblocktanks.desc1}",
+		"{tfg.quests.steam.multiblocktanks.desc1}",
 		"",
-		"{tfg.quests.lv.multiblocktanks.desc2}",
-		"{tfg.quests.lv.multiblocktanks.desc3}",
+		"{tfg.quests.steam.multiblocktanks.desc2}",
+		"{tfg.quests.steam.multiblocktanks.desc3}",
 		"",
-		"{tfg.quests.lv.multiblocktanks.desc4}"
+		"{tfg.quests.steam.multiblocktanks.desc4}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
-		"6c622d78"
+		"8fdd423e"
 	],
 	tasks: [{
 		uid: "ac069e22",

@@ -16,16 +16,16 @@
 		uid: "07546ba0",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "oreOilsands",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any oreOilsands"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreOilsands"
 				}
 			}
 		}]
@@ -47,13 +47,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "oil",
 					Amount: 1000
 				}
-			},
-			Damage: 78s
+			}
 		}
 	}]
 }

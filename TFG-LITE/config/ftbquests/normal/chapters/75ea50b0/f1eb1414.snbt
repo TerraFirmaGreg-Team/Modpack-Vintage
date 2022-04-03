@@ -1,15 +1,8 @@
 {
-	x: -21.5d,
+	x: -20.5d,
 	y: -4.0d,
 	text: [
-		"§aAluminium§r is the main ingredient for §bMV§r machine hulls. Check aaaall the way to the other side for §2Sapphire Quest§r if you haven't acquired §aAluminium Dust§r yet.",
-		"",
-		"Once you setup an §3MV Electrolyzer§r, you can get §aAluminium§r through many other ores. All of this quest's rewards bear §aAluminium§r.",
-		"",
-		"The process of smelting Aluminium can be accelerated with §9Nitrogen§r, which is obtained by centrifuging §9Air§r from a §3Gas Collector§r.",
-		"",
-		"",
-		"§6You will still need MV Circuits in order to make MV machines.§r"
+		""
 	],
 	tasks: [{
 		uid: "e0f1799d",

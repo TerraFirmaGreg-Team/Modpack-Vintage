@@ -8,16 +8,16 @@
 		uid: "87930b58",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "plateDoubleBronze",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any plateDoubleBronze"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "plateDoubleBronze"
 				}
 			}
 		}],

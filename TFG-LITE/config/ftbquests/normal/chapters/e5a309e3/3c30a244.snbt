@@ -1,10 +1,11 @@
 {
-	title: "We call this \"Fun\"",
+	title: "{tfg.quests.hv.fun.title}",
 	icon: "gregtech:meta_item_1 1 129",
 	x: 0.0d,
 	y: 3.0d,
+	description: "{tfg.quests.hv.fun.subtitle}",
 	text: [
-		"Just like in §bMV§r, more higher-tier components. At least there's no painful §aFlawless Gems§r here."
+		""
 	],
 	dependencies: [
 		"05af19ec"

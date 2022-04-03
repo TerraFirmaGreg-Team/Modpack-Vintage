@@ -1,40 +1,29 @@
 {
-	title: "True Distillation: Organic",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "wood_tar",
-			Amount: 1000
-		}
-	},
+	title: "{tfg.quests.ev.truedistillationorganic.title}",
 	x: 6.0d,
 	y: 0.0d,
+	description: "{tfg.quests.ev.truedistillationorganic.subtitle}",
 	text: [
-		"This Quest requires the §3Pyrolyse Oven§r and is §doptional§r, yet convenient.",
+		"{tfg.quests.ev.truedistillationorganic.desc1}",
+		"{tfg.quests.ev.truedistillationorganic.desc2}",
+		"{tfg.quests.ev.truedistillationorganic.desc3}",
+		"{tfg.quests.ev.truedistillationorganic.desc4}",
+		"{tfg.quests.ev.truedistillationorganic.desc5}",
 		"",
-		"The upper part are the important products of §aWood Tar§r Distillation:",
-		"§9-§r Phenol: useful for Epoxy and PBI",
-		"§9-§r Benzene: an important hydrocarbon",
-		"§9-§r Toluene: useful for TNT",
-		"§9-§r Dimethylbenzene: useful for PBI",
+		"{tfg.quests.ev.truedistillationorganic.desc6}",
 		"",
-		"Unlike Oil, putting §aWood Tar§r in the §3Distillation Tower§r for the byproducts, and using §dNitrobenzene§r for power is arguably worth it.",
+		"{tfg.quests.ev.truedistillationorganic.desc7}",
+		"{tfg.quests.ev.truedistillationorganic.desc8}",
+		"{tfg.quests.ev.truedistillationorganic.desc9}",
+		"{tfg.quests.ev.truedistillationorganic.desc10}",
 		"",
-		"",
-		"The bottom part are the important products from §aWood Vinegar§r Distillation:",
-		"§9-§r Acetic Acid: useful to make more Acetone",
-		"§9-§r Methanol: a moderately important hydrocarbon",
-		"§9-§r Acetone: useful for Epoxy and Gasoline",
-		"",
-		"Complete §eeither§r task to validate this Quest.",
-		"",
-		"",
-		"It is also possible to go for a full combo of 4 §3DTs§r. One for §aCharcoal Byproducts§r as the whole input, splitting into §aWood Tar§r, §aWood Gas§r and §aWood Vinegar§r.",
-		"Not the most efficient cost to production ratio, but an option nonetheless if you are interested in that."
+		"{tfg.quests.ev.truedistillationorganic.desc11}",
+		"{tfg.quests.ev.truedistillationorganic.desc12}"
 	],
 	dependencies: [
 		"ff136331"
 	],
+	optional: true,
 	or_tasks: true,
 	tasks: [{
 		uid: "47de5aba",

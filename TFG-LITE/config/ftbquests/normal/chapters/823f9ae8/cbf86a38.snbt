@@ -8,21 +8,21 @@
 		uid: "603bd1c6",
 		type: "item",
 		items: [{
+			id: "tfc:metal/double_ingot/bismuth_bronze",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/double_ingot/bismuth_bronze"
+			}
 		}],
 		count: 7L
 	}]

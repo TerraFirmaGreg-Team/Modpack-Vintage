@@ -1,10 +1,9 @@
 {
-	title: "Epoxy",
 	icon: "gregtech:meta_plate 1 1013",
 	x: -3.0d,
 	y: 5.25d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"1f0de8ce",

@@ -11,12 +11,12 @@
 		type: "item",
 		items: [{
 			id: "gregtech:meta_tool",
+			Damage: 6s,
 			tag: {
 				GT.ToolStats: {
 					Material: "copper"
 				}
-			},
-			Damage: 6s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

@@ -1,14 +1,13 @@
 {
-	title: "Large Steam Turbine",
+	title: "{tfg.quests.ev.largesteamturbine.title}",
 	icon: "gregtech:machine 1 1010",
 	x: -11.0d,
 	y: -3.0d,
+	description: "{tfg.quests.ev.largesteamturbine.subtitle}",
 	text: [
-		"§oIf you're still running off Steam, here is a solution for you!§r",
+		"{tfg.quests.ev.largesteamturbine.desc1}",
 		"",
-		"The §aLarge Steam Turbine§r is a multiblock Steam Turbine for §6HV§r power. The power output isn't quite on the level of the other §6HV§r options, but it is relatively cheap and simple to set up. You will probably need many §3Large Boilers§r to keep up with its Steam consumption.",
-		"",
-		"Each Large Turbine will require a §9Turbine Rotor§r and a §9Rotor Holder§r. The type of Rotor can affect the §eefficiency§r and §dpower output§r of the Large Turbine. More details are explained in the Large Turbine Mechanics quest."
+		"{tfg.quests.ev.largesteamturbine.desc2}"
 	],
 	dependencies: [
 		"33373ad5"

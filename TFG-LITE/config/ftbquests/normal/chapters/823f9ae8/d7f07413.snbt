@@ -10,13 +10,13 @@
 		uid: "b0176a1e",
 		type: "item",
 		items: [{
+			id: "improvedbackpacks:bound_leather",
 			ForgeCaps: {
 				"tfc:item_heat": {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "improvedbackpacks:bound_leather"
+			}
 		}]
 	}]
 }

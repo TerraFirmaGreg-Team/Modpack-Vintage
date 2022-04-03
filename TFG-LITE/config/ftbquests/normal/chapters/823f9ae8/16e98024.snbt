@@ -10,13 +10,13 @@
 		uid: "93b291da",
 		type: "item",
 		items: [{
+			id: "tfctech:latex/rubber_mix",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "tfctech:latex/rubber_mix"
+			}
 		}]
 	}]
 }

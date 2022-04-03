@@ -1,16 +1,15 @@
 {
-	title: "I see the world in colours",
+	title: "{tfg.quests.hv.colours.title}",
 	icon: "gregtech:meta_item_1 1 821",
 	x: 1.0d,
 	y: -3.0d,
+	description: "{tfg.quests.hv.colours.subtitle}",
 	text: [
-		"You now have access to all §aLens§r types, to engrave all the wafers!",
+		"{tfg.quests.hv.colours.desc1}",
+		"{tfg.quests.hv.colours.desc2}",
+		"{tfg.quests.hv.colours.desc3}",
 		"",
-		"§eAny§r task will complete this Quest.",
-		"The §aPower Circuit§r will be used for §dEnergy Hatches§r, you will need a §3HV Cutting Machine§r.",
-		"The §aSimple System on Chip§r will be used for either §dME Fluid Storage Components§r, or the best §dULV Circuit§r recipe.",
-		"",
-		"I would also recommend going ahead and making all the other useful colored Lenses ahead of time."
+		"{tfg.quests.hv.colours.desc4}"
 	],
 	dependencies: [
 		"b381cff0"
@@ -20,7 +19,8 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 821"
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "cbc350a9",

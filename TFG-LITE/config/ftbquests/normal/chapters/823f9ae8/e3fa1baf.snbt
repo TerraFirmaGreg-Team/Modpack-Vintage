@@ -8,21 +8,21 @@
 		uid: "dd93d62e",
 		type: "item",
 		items: [{
+			id: "tfc:metal/double_ingot/black_steel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					ticks: -1L,
+					heat: 0.0f,
 					forge: {
 						work: 0,
 						steps: {
 							last: -1,
-							third: -1,
-							second: -1
+							second: -1,
+							third: -1
 						}
 					}
 				}
-			},
-			id: "tfc:metal/double_ingot/black_steel"
+			}
 		}],
 		count: 7L
 	}]

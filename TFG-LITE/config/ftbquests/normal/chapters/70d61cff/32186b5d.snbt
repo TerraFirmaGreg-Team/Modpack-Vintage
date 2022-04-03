@@ -1,16 +1,15 @@
 {
-	title: "\"Fun\" never stops",
+	title: "{tfg.quests.ev.fun.title}",
 	icon: "gregtech:meta_item_1 1 130",
 	x: -5.0d,
 	y: 5.5d,
+	description: "{tfg.quests.ev.fun.subtitle}",
 	text: [
-		"A lot §dKanthal§r will be required for the §aEV Motors§r. That is painful to start off, but won't be a problem later, trust me.",
+		"{tfg.quests.ev.fun.desc1}",
 		"",
-		"§dNeodymium§r is the metal used for §aMagnetic Rods§r.",
+		"{tfg.quests.ev.fun.desc2}",
 		"",
-		"§aAluminium Cables§r require §dPVC§r to be insulated.",
-		"",
-		"Lastly, you will need §4Radon§r for the §dQuantum Eyes§r in the §aEmitter§r recipe."
+		"{tfg.quests.ev.fun.desc3}"
 	],
 	dependencies: [
 		"14263e77"

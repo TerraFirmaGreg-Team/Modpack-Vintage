@@ -1,13 +1,16 @@
 {
 	title: "{tfg.quests.steam.fluidpipe.title}",
 	icon: "gregtech:fluid_pipe_normal 1 2037",
-	x: -18.0d,
+	x: -20.0d,
 	y: -9.0d,
 	text: [
-		"{tfg.quests.steam.fluidpipe.disc}"
+		"{tfg.quests.steam.fluidpipe.disc1}",
+		"{tfg.quests.steam.fluidpipe.disc2}",
+		"",
+		"{tfg.quests.steam.fluidpipe.disc3}"
 	],
 	dependencies: [
-		"5347bf68"
+		"811bc2e7"
 	],
 	or_tasks: true,
 	tasks: [{

@@ -12,16 +12,30 @@
 		uid: "7d24d345",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "dustTinyZinc",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any dustTinyZinc"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustTinyZinc"
+				}
+			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyZinc"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallZinc"
 				}
 			}
 		}]

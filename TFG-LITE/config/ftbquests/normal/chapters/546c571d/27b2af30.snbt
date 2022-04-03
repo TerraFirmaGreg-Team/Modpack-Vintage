@@ -41,12 +41,12 @@
 		type: "item",
 		items: [{
 			id: "gregtech:meta_item_1",
+			Damage: 465s,
 			tag: {
 				terminal: {
 					_hw: {}
 				}
-			},
-			Damage: 465s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

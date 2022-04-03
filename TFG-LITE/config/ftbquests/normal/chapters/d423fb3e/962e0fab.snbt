@@ -2,6 +2,23 @@
 	x: -22.0d,
 	y: -13.0d,
 	description: "{tfg.quests.steam.grinder.subtitle}",
+	text: [
+		"{tfg.quests.steam.grinder.desc1}",
+		"",
+		"{tfg.quests.steam.grinder.desc2}",
+		"",
+		"{tfg.quests.steam.grinder.desc3}",
+		"",
+		"{tfg.quests.steam.grinder.desc4}",
+		"{tfg.quests.steam.grinder.desc5}",
+		"{tfg.quests.steam.grinder.desc6}",
+		"{tfg.quests.steam.grinder.desc7}",
+		"{tfg.quests.steam.grinder.desc8}",
+		"",
+		"{tfg.quests.steam.grinder.desc9}",
+		"",
+		"{tfg.quests.steam.grinder.desc10}"
+	],
 	dependencies: [
 		"2d444c7e"
 	],

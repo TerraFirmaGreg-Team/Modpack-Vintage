@@ -1,15 +1,14 @@
 {
-	title: "SMD Components",
+	title: "{tfg.quests.hv.SMDcomponents.title}",
 	icon: "gregtech:meta_item_1 1 523",
 	x: -6.5d,
 	y: -2.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.SMDcomponents.subtitle}",
 	text: [
-		"§oAlternate components! Smaller, better, cheaper!§r",
+		"{tfg.quests.hv.SMDcomponents.desc1}",
 		"",
-		"The §eSMD§r (surface-mount device) §aComponents§r are required for the next tier of circuits (§5Nano§r). They can also be used in place of their non-SMD counterparts in most Circuit recipes.",
-		"",
-		"Of course they are more complicated to make, this is GregTech! What did you expect?"
+		"{tfg.quests.hv.SMDcomponents.desc2}"
 	],
 	dependencies: [
 		"2e62dccf"

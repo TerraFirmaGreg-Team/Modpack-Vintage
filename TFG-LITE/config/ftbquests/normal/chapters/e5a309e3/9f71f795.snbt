@@ -1,18 +1,14 @@
 {
-	title: "Nichrome Coils",
+	title: "{tfg.quests.hv.nichromecoils.title}",
 	icon: "gregtech:wire_coil 1 2",
 	x: -1.0d,
 	y: -8.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.nichromecoils.subtitle}",
 	text: [
-		"§oTrying to match the heat of the Sun huh? But still a long wayto go.§r",
+		"{tfg.quests.hv.nichromecoils.desc1}",
 		"",
-		"§3Nichrome Heating Coils§r increase the temperature of your §3Blast Furnace§r to §d3,600K§r.",
-		"",
-		"Despite not being required §oyet§r, it still is a good idea to upgrade your primary §3EBF§r for the sweet §6Coils bonuses§r.",
-		"",
-		"",
-		"§bLore:§r In original GregTech 5, there were only three types of coils. This was the last tier."
+		"{tfg.quests.hv.nichromecoils.desc2}"
 	],
 	dependencies: [
 		"490b3016"

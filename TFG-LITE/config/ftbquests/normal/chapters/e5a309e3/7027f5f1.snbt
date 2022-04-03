@@ -1,14 +1,13 @@
 {
-	title: "Ender Pearls",
+	title: "{tfg.quests.hv.enderpearls.title}",
 	icon: "minecraft:ender_pearl",
 	x: -3.0d,
 	y: -1.0d,
+	description: "{tfg.quests.hv.enderpearls.subtitle}",
 	text: [
-		"If you've killed an Enderman before, you may have noticed it dropped §aEnderpearl Dust§r instead of an Ender Pearl. In order to get §aEnder Pearls§r, you must make them from Enderpearl Dust in the §3Implosion Compressor§r.",
+		"{tfg.quests.hv.enderpearls.desc1}",
 		"",
-		"§9Pro tip for non-Peaceful§r: Trapping Endermen in Boats makes them much easier to kill! Use a §dButchery Knife§r to kill Endermen for the Looting 3 bonus.",
-		"",
-		"In the long term, §aEnderpearl Dusts§r should be made in an §3HV Mixer§r."
+		"{tfg.quests.hv.enderpearls.desc2}"
 	],
 	dependencies: [
 		"72f18d27"

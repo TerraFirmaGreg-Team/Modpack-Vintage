@@ -12,16 +12,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.bismuthbronzeingot.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotBismuthBronze",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ingotBismuthBronze"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBismuthBronze"
 				}
 			}
 		}]

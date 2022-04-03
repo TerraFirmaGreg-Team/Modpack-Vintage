@@ -1,11 +1,10 @@
 {
-	title: "Time to throw away your §4Primitive Water Pumps§r. Place this on the side of a machine to give it §616 buckets§o§r§r of Water every second!",
 	x: -6.5d,
 	y: -4.0d,
 	shape: "circle",
+	description: "{tfg.quests.mv.water.subtitle}",
 	text: [
-		"Time to throw away your §4Primitive Water Pumps§r.",
-		"Place this on the side of a machine to give it §616 buckets§o§r§r of Water every second!"
+		"{tfg.quests.mv.water.desc1}"
 	],
 	dependencies: [
 		"2e62dccf"

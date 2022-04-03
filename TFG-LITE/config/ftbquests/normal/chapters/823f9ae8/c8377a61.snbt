@@ -13,13 +13,13 @@
 		type: "item",
 		title: "Доски",
 		items: [{
+			id: "itemfilters:filter",
 			ForgeCaps: {
 				Parent: {
-					data: "lumber",
-					id: "ore"
+					id: "ore",
+					data: "lumber"
 				}
-			},
-			id: "itemfilters:filter"
+			}
 		}],
 		count: 8L
 	}]

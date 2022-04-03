@@ -10,16 +10,16 @@
 		uid: "f901c5ac",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "sandSilica",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any sandSilica"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "sandSilica"
 				}
 			}
 		}]
@@ -28,13 +28,13 @@
 		uid: "a5a07fb6",
 		type: "item",
 		items: [{
+			id: "tfctech:powder/lime",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "tfctech:powder/lime"
+			}
 		}]
 	},
 	{

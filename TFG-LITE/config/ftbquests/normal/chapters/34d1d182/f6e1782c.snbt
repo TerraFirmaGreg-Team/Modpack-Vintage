@@ -11,11 +11,11 @@
 		type: "item",
 		items: [{
 			id: "galaxyspace:space_suit_head",
+			Damage: 200s,
 			tag: {
 				modification_count: 2,
 				helmet_button: 0b
-			},
-			Damage: 200s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -25,11 +25,11 @@
 		type: "item",
 		items: [{
 			id: "galaxyspace:space_suit_chest",
+			Damage: 200s,
 			tag: {
 				modification_count: 2,
 				chest_button: 0b
-			},
-			Damage: 200s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -39,11 +39,11 @@
 		type: "item",
 		items: [{
 			id: "galaxyspace:space_suit_legs",
+			Damage: 200s,
 			tag: {
 				legs_button: 0b,
 				modification_count: 2
-			},
-			Damage: 200s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -53,11 +53,11 @@
 		type: "item",
 		items: [{
 			id: "galaxyspace:space_suit_feet",
+			Damage: 200s,
 			tag: {
 				modification_count: 2,
 				boots_button: 0b
-			},
-			Damage: 200s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

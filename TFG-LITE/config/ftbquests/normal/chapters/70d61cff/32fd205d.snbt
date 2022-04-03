@@ -1,12 +1,11 @@
 {
 	x: -5.0d,
 	y: -2.0d,
+	description: "{tfg.quests.ev.advnanomuscle.subtitle}",
 	text: [
-		"§oQuite a bit of a microcrafting project, but this is worth it!§r",
+		"{tfg.quests.ev.advnanomuscle.desc1}",
 		"",
-		"The Advanced Nano Chestplate combines protection, a personal battery and a jetpack, all in one.",
-		"",
-		"To enable charging, shift right-click it when it is in your hand."
+		"{tfg.quests.ev.advnanomuscle.desc2}"
 	],
 	dependencies: [
 		"1d92025d"

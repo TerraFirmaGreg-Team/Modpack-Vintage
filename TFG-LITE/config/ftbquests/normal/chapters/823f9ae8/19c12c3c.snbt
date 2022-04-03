@@ -3,6 +3,9 @@
 	x: -26.0d,
 	y: -10.0d,
 	description: "{tfg.quests.primitive.vessel.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
 		"e4dda908"
 	],
@@ -10,31 +13,31 @@
 		uid: "2ab3a32a",
 		type: "item",
 		items: [{
+			id: "tfc:ceramics/unfired/vessel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
-					ticks: -1L
+					ticks: -1L,
+					heat: 0.0f
 				}
-			},
-			id: "tfc:ceramics/unfired/vessel"
+			}
 		}]
 	},
 	{
 		uid: "e784ca9d",
 		type: "item",
 		items: [{
+			id: "tfc:ceramics/fired/vessel",
 			ForgeCaps: {
 				Parent: {
-					heat: 0.0f,
 					fluidMode: 0b,
 					ticks: -1L,
+					heat: 0.0f,
 					items: {
-						Size: 4,
-						Items: []
+						Items: [],
+						Size: 4
 					}
 				}
-			},
-			id: "tfc:ceramics/fired/vessel"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

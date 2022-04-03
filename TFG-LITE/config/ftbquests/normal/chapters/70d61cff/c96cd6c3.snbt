@@ -1,10 +1,11 @@
 {
-	title: "Tungstensteel",
+	title: "{tfg.quests.ev.tungstensteel.title}",
 	icon: "gregtech:meta_ingot 1 2013",
 	x: 6.0d,
 	y: -5.0d,
+	description: "{tfg.quests.ev.tungstensteel.subtitle}",
 	text: [
-		"The main IV Material!"
+		""
 	],
 	dependencies: [
 		"db190e6d",

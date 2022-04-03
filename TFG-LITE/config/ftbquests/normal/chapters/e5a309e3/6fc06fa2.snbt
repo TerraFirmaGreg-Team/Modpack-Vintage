@@ -1,10 +1,11 @@
 {
-	title: "Benzene Nitro",
+	title: "{tfg.quests.hv.benzenenitro.title}",
 	x: 9.0d,
 	y: -1.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.benzenenitro.subtitle]",
 	text: [
-		"Nitrobenzene is §d3.64 times§r as energy dense as Benzene!"
+		""
 	],
 	dependencies: [
 		"8dffcea8"
@@ -19,13 +20,13 @@
 		type: "item",
 		item: {
 			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
 				Fluid: {
 					FluidName: "nitrobenzene",
 					Amount: 1000
 				}
-			},
-			Damage: 78s
+			}
 		}
 	}]
 }

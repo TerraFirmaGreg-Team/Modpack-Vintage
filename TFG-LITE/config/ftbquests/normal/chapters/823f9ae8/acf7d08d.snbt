@@ -11,16 +11,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.copperingot.title}",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotCopper",
-					id: "ore"
-				}
-			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any ingotCopper"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotCopper"
 				}
 			}
 		}]
