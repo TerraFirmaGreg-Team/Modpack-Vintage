@@ -442,24 +442,28 @@ chemical_reactor.recipeBuilder()
     .duration(600)
     .EUt(2000)
     .buildAndRegister();
-// Mars air
-<recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
-gas_collector.recipeBuilder()
-    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 2}))
-    .fluidOutputs(<liquid:nether_air> * 10000)
-    .property("dimension", -29)
-    .duration(200)
-    .EUt(64)
-    .buildAndRegister();
-// Moon air
-<recipemap:gas_collector>.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
-gas_collector.recipeBuilder()
-    .notConsumable(<gregtech:meta_item_1:461>.withTag({Configuration: 3}))
-    .fluidOutputs(<liquid:ender_air> * 10000)
-    .property("dimension", -31)
-    .duration(200)
-    .EUt(256)
-    .buildAndRegister();
+
+
+//  Включить при обнове грега
+// // Mars air
+// <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// gas_collector.recipeBuilder()
+//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+//     .fluidOutputs([<liquid:nether_air> * 10000])
+//     .property("dimension", -29)
+//     .duration(200)
+//     .EUt(256)
+//     .buildAndRegister();
+
+// // Venus air
+// <recipemap:gas_collector>.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+// gas_collector.recipeBuilder()
+//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+//     .fluidOutputs([<liquid:ender_air> * 10000])
+//     .property("dimension", -31)
+//     .duration(200)
+//     .EUt(256)
+//     .buildAndRegister();
 // Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 
