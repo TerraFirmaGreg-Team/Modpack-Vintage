@@ -39,7 +39,7 @@ global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
 val id = 32001;
 val loc = "saw_mill";
 
-var electric_saw_mill = Builder.start(loc, id)
+var electric_saw_mill = Builder.start(loc)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")
@@ -48,7 +48,7 @@ var electric_saw_mill = Builder.start(loc, id)
       .aisle("CFC", "G G", "CSC")
       .aisle("CFC", "C C", "C C")
       .where("S", controller.self())
-      .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>).setMinGlobalLimited(42) | controller.autoAbilities())
+      .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>).setMinGlobalLimited(18) | controller.autoAbilities())
       .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
       .where("W", CTPredicate.states(<metastate:gregtech:wire_coil>))
       .where("F", CTPredicate.states(<metastate:gregtech:meta_block_frame_20:4>))

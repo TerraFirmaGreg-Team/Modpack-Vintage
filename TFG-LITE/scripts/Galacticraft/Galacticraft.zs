@@ -677,13 +677,13 @@ recipes.addShaped(<galacticraftcore:panel_lighting:4>,
 //Sealable Alum. Wire
 recipes.addShaped(<galacticraftcore:enclosed:14>,
 [[null, null, null],
- [<galacticraftcore:basic_block_core:4>, <ore:cableGtSingleAnnealedCopper>, <galacticraftcore:basic_block_core:4>],
+ [<galacticraftcore:basic_block_core:4>, <ore:cableGtDoubleAluminium>, <galacticraftcore:basic_block_core:4>],
  [null, null, null]]);
 
 //Sealable Alum. Wire
 recipes.addShaped(<galacticraftcore:enclosed:15>,
 [[null, null, null],
- [<galacticraftcore:basic_block_core:4>, <ore:cableGtSingleGold>, <galacticraftcore:basic_block_core:4>],
+ [<galacticraftcore:basic_block_core:4>, <ore:cableGtOctalAluminium>, <galacticraftcore:basic_block_core:4>],
  [null, null, null]]);
 
 //Sealable Alum. Wire
