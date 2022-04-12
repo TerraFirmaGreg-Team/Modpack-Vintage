@@ -1,0 +1,18 @@
+{
+	x: 3.5d,
+	y: -1.0d,
+	description: "Участвует в создании основных сундуков для вагонеток и огромных панелей.",
+	text: [
+		""
+	],
+	dependencies: [
+		"2d632787"
+	],
+	tasks: [{
+		uid: "edd1900b",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 31"
+		}]
+	}]
+}

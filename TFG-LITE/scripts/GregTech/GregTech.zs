@@ -443,9 +443,7 @@ chemical_reactor.recipeBuilder()
     .EUt(2000)
     .buildAndRegister();
 
-
-//  Включить при обнове грега
-// // Mars air
+// Mars air
 // <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 // gas_collector.recipeBuilder()
 //     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
@@ -455,7 +453,7 @@ chemical_reactor.recipeBuilder()
 //     .EUt(256)
 //     .buildAndRegister();
 
-// // Venus air
+// Venus air
 // <recipemap:gas_collector>.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
 // gas_collector.recipeBuilder()
 //     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
@@ -464,6 +462,7 @@ chemical_reactor.recipeBuilder()
 //     .duration(200)
 //     .EUt(256)
 //     .buildAndRegister();
+
 // Фикс снопа сена
 packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
 

@@ -39,7 +39,7 @@ global greenhouse as RecipeMap = FactoryRecipeMap.start("greenhouse")
 val id = 32000;
 val loc = "greenhouse";
 
-var electric_greenhouse = Builder.start(loc)
+var electric_greenhouse = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
 			.aisle(  "  CFCBCFC  ",  "  CWCCCWC  ",  "  CWCCCWC  ",  "  CFCCCFC  ",  "  GGGGGGG  ",  "           ", "           ")

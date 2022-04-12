@@ -1,0 +1,15 @@
+{
+	x: -3.5d,
+	y: -1.0d,
+	description: "Используется для транспортировки жидкостей из/в вагонетку.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "a165ff80",
+		type: "item",
+		items: [{
+			item: "stevescarts:blockliquidmanager"
+		}]
+	}]
+}

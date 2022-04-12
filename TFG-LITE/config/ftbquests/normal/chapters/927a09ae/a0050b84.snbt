@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: -5.0d,
+	description: "Сундук визуально не виден на вагонетке. Но он есть.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "8583d0c0",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 5"
+		}]
+	}]
+}

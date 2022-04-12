@@ -39,7 +39,7 @@ global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
 val id = 32001;
 val loc = "saw_mill";
 
-var electric_saw_mill = Builder.start(loc)
+var electric_saw_mill = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")

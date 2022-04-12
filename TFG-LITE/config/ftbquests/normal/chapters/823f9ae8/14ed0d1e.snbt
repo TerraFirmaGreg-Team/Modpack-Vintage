@@ -1,8 +1,10 @@
 {
-	title: "Ткацкий станок",
 	x: -18.0d,
 	y: 8.0d,
 	description: "{tfg.quests.primitive.loom.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
 		"3bcc6936"
 	],

@@ -1,0 +1,15 @@
+{
+	x: 11.5d,
+	y: 2.5d,
+	description: "Довольно дешёвый модуль. Позволяет водителю тормозить вагонетку",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "a938c49d",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 26"
+		}]
+	}]
+}

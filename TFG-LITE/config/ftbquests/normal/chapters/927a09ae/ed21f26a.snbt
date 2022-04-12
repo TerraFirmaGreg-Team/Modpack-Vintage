@@ -1,0 +1,15 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	description: "Полезная шахтерская вещь. Позволяет вагонетке с буром копать на одном уровне.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "c34d8de6",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 19"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: -4.5d,
+	y: -4.0d,
+	description: "Участвуют в создании деревянного корпуса и механической свиньи",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "4f69e1e0",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents"
+		}]
+	}]
+}

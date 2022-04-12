@@ -1,0 +1,186 @@
+{
+"__comment":"Made by Know2Good, part of the 'Default 3D™' resource pack || Official download page: http://www.planetminecraft.com/texture_pack/default-3d-2985741/ || © Know2Good. All rights reserved. ",
+"__comment":"No UV-bleed, OK coordinate, OK texture, OK cullface",
+
+"textures": {
+	"block": 	"blocks/rail_normal",
+	"rail": "blocks/rail_detector",
+	"particle":	"blocks/rail_normal"
+},
+"elements":[
+	{
+		"__comment": "Detector north",
+		"from":[5,9,5.17],
+		"to":[11,10,6.17],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"up":{"uv":		[5.01,5.01,10.99,5.99],"texture":"#rail","cullface":"Know2Good"},
+			"north":{"uv":	[5.01,5.01,10.99,5.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[5.01,5.01,10.99,5.99],"texture":"#rail","cullface":"Know2Good"},
+			"west":{"uv":	[5.01,5.01,5.99,5.99],"texture":"#rail","cullface":"Know2Good"},
+			"east":{"uv":	[10.01,5.01,10.99,5.99],"texture":"#rail","cullface":"Know2Good"}
+		}
+	},
+	{
+		"__comment": "Detector east",
+		"from":[10,9,6.17],
+		"to":[11,10,9.83],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[10.01,6.01,10.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[10.01,6.01,10.99,9.99],"texture":"#rail","cullface":"Know2Good"},
+			"west":{"uv":	[10.01,6.01,10.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[10.01,6.01,10.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Detector south",
+		"from":[5,9,9.83],
+		"to":[11,10,10.83],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"up":{"uv":		[5.01,10.01,10.99,10.99],"texture":"#rail","cullface":"Know2Good"},
+			"north":{"uv":	[5.01,10.01,10.99,10.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[5.01,10.01,10.99,10.99],"texture":"#rail","cullface":"Know2Good"},
+			"west":{"uv":	[5.01,10.01,5.99,10.99],"texture":"#rail","cullface":"Know2Good"},
+			"east":{"uv":	[10.01,10.01,10.99,10.99],"texture":"#rail","cullface":"Know2Good"}
+		}
+	},
+	{
+		"__comment": "Detector west",
+		"from":[5,9,6.17],
+		"to":[6,10,9.83],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[5.01,6.01,5.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[5.01,6.01,5.99,9.99],"texture":"#rail","cullface":"Know2Good"},
+			"west":{"uv":	[5.01,6.01,5.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[5.01,6.01,5.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Detector inner",
+		"from":[6,9.5,6.17],
+		"to":[10,10.5,9.83],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[9.99,6.01,6.01,9.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[6.01,6.01,9.99,9.99],"texture":"#rail","cullface":"Know2Good"},
+			"north":{"uv":	[6.01,6.01,9.99,6.99],"texture":"#rail","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[6.01,9.01,9.99,9.99],"texture":"#rail","cullface":"Know2Good"},
+			"west":{"uv":	[6.01,6.01,6.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[9.01,6.01,9.99,9.99],"texture":"#rail","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Left rail outer",
+		"from":[1.975,9,-3.32],
+		"to":[3,9.75,19.32],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[2.01,0.01,2.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[2.01,0.01,2.99,15.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[2.01,0.01,2.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"south":{"uv":	[2.01,0.01,2.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[2.01,0.01,2.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":270}
+		}
+	},
+	{
+		"__comment": "Left rail inner",
+		"from":[2.995,9,-3.32],
+		"to":[4.005,10.5,19.32],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[3.01,0.01,3.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[3.01,0.01,3.99,15.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[3.01,0.01,3.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"south":{"uv":	[3.01,0.01,3.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[3.01,0.01,3.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[3.01,0.01,3.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Right rail outer",
+		"from":[13,9,-3.32],
+		"to":[14.025,9.75,19.32],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[13.01,0.01,13.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[13.01,0.01,13.99,15.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[13.01,0.01,13.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"south":{"uv":	[13.01,0.01,13.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"east":{"uv":	[13.01,0.01,13.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Right rail inner",
+		"from":[11.995,9,-3.32],
+		"to":[13.005,10.5,19.32],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[12.01,0.01,12.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[12.01,0.01,12.99,15.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[12.01,0.01,12.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"south":{"uv":	[12.01,0.01,12.99,0.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[12.01,0.01,12.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[12.01,0.01,12.99,15.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "First tie",
+		"from":[1,8,-1.49],
+		"to":[15,9,0.51],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[14.99,1.01,1.01,2.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[1.01,1.01,14.99,2.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[1.01,1.01,14.99,1.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[1.01,2.01,14.99,2.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[1.01,1.01,1.99,2.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[14.01,1.01,14.99,2.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Second tie",
+		"from":[1,8,4.17],
+		"to":[15,9,6.17],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[14.99,5.01,1.01,6.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[1.01,5.01,14.99,6.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[1.01,5.01,14.99,5.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[1.01,6.01,14.99,6.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[1.01,5.01,1.99,6.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[14.01,5.01,14.99,6.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Third tie",
+		"from":[1,8,9.83],
+		"to":[15,9,11.83],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[14.99,9.01,1.01,10.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[1.01,9.01,14.99,10.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[1.01,9.01,14.99,9.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[1.01,10.01,14.99,10.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[1.01,9.01,1.99,10.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[14.01,9.01,14.99,10.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+		}
+	},
+	{
+		"__comment": "Fourth tie",
+		"from":[1,8,15.49],
+		"to":[15,9,17.49],
+		"rotation": {"origin": [ 8, 9.65, 8 ], "axis": "x", "angle": 45 },
+		"faces": {
+			"down":{"uv":	[14.99,13.01,0.01,14.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"up":{"uv":		[1.01,13.01,14.99,14.99],"texture":"#block","cullface":"Know2Good"},
+			"north":{"uv":	[1.01,13.01,14.99,13.99],"texture":"#block","cullface":"Know2Good","rotation":180},
+			"south":{"uv":	[1.01,14.01,14.99,14.99],"texture":"#block","cullface":"Know2Good"},
+			"west":{"uv":	[1.01,13.01,1.99,14.99],"texture":"#block","cullface":"Know2Good","rotation":270},
+			"east":{"uv":	[14.01,13.01,14.99,14.99],"texture":"#block","cullface":"Know2Good","rotation":90}
+            }
+        }
+    ]
+}

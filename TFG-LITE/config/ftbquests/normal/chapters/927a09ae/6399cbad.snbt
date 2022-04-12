@@ -1,0 +1,15 @@
+{
+	x: 1.5d,
+	y: -5.0d,
+	description: "Сундук располагается в передней части вагонетки.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "23ed011f",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 4"
+		}]
+	}]
+}

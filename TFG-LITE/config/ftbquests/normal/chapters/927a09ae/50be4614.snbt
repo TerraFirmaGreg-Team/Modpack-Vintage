@@ -1,0 +1,15 @@
+{
+	x: 0.5d,
+	y: -5.0d,
+	description: "Сундуки располагаются по бокам вагонетки.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "cb435d4e",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 2"
+		}]
+	}]
+}

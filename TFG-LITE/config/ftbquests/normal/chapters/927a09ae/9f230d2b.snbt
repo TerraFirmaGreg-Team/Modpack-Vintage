@@ -1,0 +1,15 @@
+{
+	x: 8.0d,
+	y: 1.5d,
+	description: "Позволяет стрелку стрелять зельями.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "89e41180",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 51"
+		}]
+	}]
+}

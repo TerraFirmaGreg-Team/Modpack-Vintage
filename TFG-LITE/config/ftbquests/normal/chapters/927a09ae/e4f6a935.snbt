@@ -1,0 +1,11 @@
+{
+	x: 7.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "455f3104",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 101"
+		}]
+	}]
+}

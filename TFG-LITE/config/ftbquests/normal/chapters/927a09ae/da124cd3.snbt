@@ -1,0 +1,15 @@
+{
+	x: 10.5d,
+	y: 1.5d,
+	description: "Эта карта даёт код стрелку стрелять в монстров.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "c97d9bc3",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 24"
+		}]
+	}]
+}

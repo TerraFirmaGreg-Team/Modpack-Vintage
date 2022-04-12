@@ -1,0 +1,15 @@
+{
+	x: 11.5d,
+	y: 3.5d,
+	description: "сжигает ресурсы",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "771a26b4",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 68"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 3.5d,
+	y: -2.0d,
+	description: "Участвует в создании боковых баков и переднего бака",
+	text: [
+		""
+	],
+	dependencies: [
+		"dd608bef"
+	],
+	tasks: [{
+		uid: "bdc8a9d8",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 62"
+		}]
+	}]
+}

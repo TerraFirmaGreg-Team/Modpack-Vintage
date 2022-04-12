@@ -1,0 +1,15 @@
+{
+	x: -3.5d,
+	y: -2.0d,
+	description: "Используется для транспортировки предметов из/в вагонетку.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "54a42641",
+		type: "item",
+		items: [{
+			item: "stevescarts:blockcargomanager"
+		}]
+	}]
+}

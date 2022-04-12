@@ -1,0 +1,14 @@
+#Content Tweaker#
+
+#lang
+material.mercurystone=Камень Меркурия
+material.venusstone=Камень Венеры
+material.moonstone=Камень Луны
+material.marsstone=Камень Марса
+material.asteroidsstoneblack=Камень Черного Астероида
+material.asteroidsstonegray=Камень Серого Астероида
+material.asteroidsstonelightgray=Камень Светло-серого Астероида
+material.nether_air=Воздух Марса
+material.liquid_nether_air=Жидкий воздух Марса
+material.ender_air=Воздух Венеры
+material.liquid_ender_air=Жидкий воздух Венеры

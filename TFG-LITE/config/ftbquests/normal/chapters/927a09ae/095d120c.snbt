@@ -1,0 +1,18 @@
+{
+	x: 4.5d,
+	y: 1.0d,
+	description: "Участвует в создании извлекающихся сундуков",
+	text: [
+		""
+	],
+	dependencies: [
+		"0febb6f5"
+	],
+	tasks: [{
+		uid: "67a2d583",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 39"
+		}]
+	}]
+}
