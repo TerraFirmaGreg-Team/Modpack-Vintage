@@ -3,9 +3,8 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-// --- Adding OreDictionary
 // --- TFC
-// Rock Categories
+
 // Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
 	<ore:RawIgneousIntrusive>.add(item);
@@ -34,6 +33,12 @@ for item in All_Seeds {
 // Rock Types GT = Rock Types TFC
 <ore:stoneBasalt>.add(<tfc:raw/basalt>);
 <ore:stoneMarble>.add(<tfc:raw/marble>);
+
+// Sugarcane
+<ore:sugarcane>.add(<tfc:food/sugarcane>);
+
+// Unfinished Ingots
+<ore:ingotUnfinishedWroughtIron>.add(<tfc:metal/ingot/wrought_iron>);
 
 // Single Sheets = Single Plates
 <ore:sheetCopper>.add(<metaitem:plateCopper>);
@@ -85,7 +90,30 @@ for item in All_Seeds {
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
+// Removing OreDicts from TFC ingots
+<ore:ingotBismuth>.remove(<tfc:metal/ingot/bismuth>);
+<ore:ingotBismuthBronze>.remove(<tfc:metal/ingot/bismuth_bronze>);
+<ore:ingotBlackBronze>.remove(<tfc:metal/ingot/black_bronze>);
+<ore:ingotBrass>.remove(<tfc:metal/ingot/brass>);
+<ore:ingotBronze>.remove(<tfc:metal/ingot/bronze>);
+<ore:ingotCopper>.remove(<tfc:metal/ingot/copper>);
+<ore:ingotGold>.remove(<tfc:metal/ingot/gold>);
+<ore:ingotLead>.remove(<tfc:metal/ingot/lead>);
+<ore:ingotNickel>.remove(<tfc:metal/ingot/nickel>);
+<ore:ingotRoseGold>.remove(<tfc:metal/ingot/rose_gold>);
+<ore:ingotSilver>.remove(<tfc:metal/ingot/silver>);
+<ore:ingotTin>.remove(<tfc:metal/ingot/tin>);
+<ore:ingotZinc>.remove(<tfc:metal/ingot/zinc>);
+<ore:ingotWroughtIron>.remove(<tfc:metal/ingot/wrought_iron>);
+<ore:ingotSterlingSilver>.remove(<tfc:metal/ingot/sterling_silver>);
+<ore:ingotSteel>.remove(<tfc:metal/ingot/steel>);
+<ore:ingotPlatinum>.remove(<tfc:metal/ingot/platinum>);
+<ore:ingotBlackSteel>.remove(<tfc:metal/ingot/black_steel>);
+<ore:ingotBlueSteel>.remove(<tfc:metal/ingot/blue_steel>);
+<ore:ingotRedSteel>.remove(<tfc:metal/ingot/red_steel>);
+
 // --- GregTech
+
 // Chipped Gems from GT
 for item in Gem_Chipped {
 	<ore:gemChipped>.add(item);

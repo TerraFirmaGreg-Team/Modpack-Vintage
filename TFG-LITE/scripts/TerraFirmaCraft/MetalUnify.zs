@@ -98,11 +98,11 @@ Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeve
 
 // --- ---  Унификация высокоуглеродной стали
 Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
-Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotUnfinishedPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // --- --- Унификация высокоуглеродной черной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
-Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotUnfinishedPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
 
 // --- --- Унификация высокоуглеродной красной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);

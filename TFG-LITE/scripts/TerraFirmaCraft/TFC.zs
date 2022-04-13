@@ -698,15 +698,15 @@ centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:meth
 // Переработка слитков
 // Первичная
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/wrought_iron>).outputs(<ore:ingotWroughtIron>.firstItem).duration(100).EUt(2).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<ore:ingotUnfinishedHighCarbonSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/pig_iron>).outputs(<ore:ingotHighCarbonSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_steel>).outputs(<ore:ingotSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_blue_steel>).outputs(<ore:ingotBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_red_steel>).outputs(<ore:ingotRedSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<tfc:metal/ingot/high_carbon_black_steel>).outputs(<ore:ingotBlackSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 // Вторичная
-alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakBlueSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotUnfinishedHighCarbonBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
-alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakRedSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotUnfinishedHighCarbonRedSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
-alloy_smelter.recipeBuilder().inputs(<ore:ingotUnfinishedWeakSteel>, <ore:ingotUnfinishedPigIron>).outputs(<ore:ingotUnfinishedHighCarbonBlackSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs(<ore:ingotWeakBlueSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotHighCarbonBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs(<ore:ingotWeakRedSteel>, <ore:ingotBlackSteel>).outputs(<ore:ingotHighCarbonRedSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs(<ore:ingotWeakSteel>, <ore:ingotPigIron>).outputs(<ore:ingotHighCarbonBlackSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 
 // Рецепты для льда
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 1000).outputs(<minecraft:ice>).duration(1500).EUt(256).buildAndRegister();
