@@ -289,7 +289,9 @@ assembler.recipeBuilder()
 
 // Cobble FIx
 // Cobblestone Stairs * 4
-assembler.findRecipe(1, [<tfc:cobble/basalt:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+assembler.findRecipe(1, [<minecraft:mossy_cobblestone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Cobblestone Wall * 1
+assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
 // Moss Stone * 1
 assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
 // Gravel * 1

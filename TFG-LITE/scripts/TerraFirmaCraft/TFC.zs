@@ -930,13 +930,6 @@ macerator.recipeBuilder()
 	.outputs(<minecraft:sugar>)
 	.duration(300).EUt(2).buildAndRegister();
 
-// Chad * 2
-forge_hammer.findRecipe(4, [<minecraft:reeds:0> * 3], null).remove();
-forge_hammer.recipeBuilder()
-	.inputs(<ore:sugarcane> * 3)
-	.outputs(<ore:dustPaper>.firstItem * 2)
-	.duration(125).EUt(4).buildAndRegister();
-
 // Paper * 1
 chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:water> * 100]).remove();
 chemical_bath.recipeBuilder()
