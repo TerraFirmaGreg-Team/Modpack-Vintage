@@ -126,6 +126,9 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
+stevescarts:cart.0
+stevescarts:egg
+stevescarts:cake
 tfcthings:pigvil
 tfcthings:slingstone
 tfcthings:unknownprojectile
