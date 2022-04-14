@@ -8,13 +8,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any batteryGood"
+					Name: "Any batteryMv"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "batteryGood"
+					data: "batteryMv"
 				}
 			}
 		}]

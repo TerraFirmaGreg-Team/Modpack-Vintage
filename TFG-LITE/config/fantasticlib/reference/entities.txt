@@ -81,7 +81,6 @@ minecraft:llama_spit
 minecraft:parrot
 minecraft:villager
 minecraft:ender_crystal
-gregtech:dynamite
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -126,9 +125,7 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
-stevescarts:cart.0
-stevescarts:egg
-stevescarts:cake
+gregtech:dynamite
 tfcthings:pigvil
 tfcthings:slingstone
 tfcthings:unknownprojectile
@@ -144,6 +141,14 @@ appliedenergistics2:appeng.entity.entitychargedquartz
 astikorcarts:cargocart
 astikorcarts:plowcart
 astikorcarts:mobcart
+immersiverailroading:carfreight
+immersiverailroading:carpassenger
+immersiverailroading:cartank
+immersiverailroading:handcar
+immersiverailroading:locomotivediesel
+immersiverailroading:locomotivesteam
+immersiverailroading:tender
+universalmodcore:seat
 p455w0rdslib:sitting_entity
 galacticraftcore:evolved_spider
 galacticraftcore:evolved_zombie

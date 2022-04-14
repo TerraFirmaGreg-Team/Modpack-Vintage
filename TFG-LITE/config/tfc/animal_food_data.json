@@ -21,15 +21,19 @@
   "tfc:chickentfc": {
     "eat_rotten": true,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:cowtfc": {
     "eat_rotten": false,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:donkeytfc": {
@@ -44,22 +48,28 @@
   "tfc:ducktfc": {
     "eat_rotten": true,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:goattfc": {
     "eat_rotten": false,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:horsetfc": {
     "eat_rotten": false,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:llamatfc": {
@@ -74,8 +84,10 @@
   "tfc:muletfc": {
     "eat_rotten": false,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:ocelottfc": {
@@ -90,15 +102,19 @@
   "tfc:pigtfc": {
     "eat_rotten": true,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:sheeptfc": {
     "eat_rotten": false,
     "foods": {
-      "grain": {"type": "forge:ore_dict","ore": "grain"},
-	  "vegateble": {"type": "forge:ore_dict","ore": "categoryVegetable"}
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
     }
   },
   "tfc:wolftfc": {
@@ -111,6 +127,60 @@
       "bone": {
         "item": "minecraft:bone",
         "data": 0
+      }
+    }
+  },
+  "tfc:yaktfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
+    }
+  },
+  "tfc:muskoxtfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
+    }
+  },
+  "tfc:zebutfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
+    }
+  },
+  "tfc:quailtfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
+    }
+  },
+  "tfc:grousetfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
+      }
+    }
+  },
+  "tfc:parrottfc": {
+    "eat_rotten": false,
+    "foods": {
+      "grain": {
+        "type": "forge:ore_dict",
+        "ore": "grain"
       }
     }
   }

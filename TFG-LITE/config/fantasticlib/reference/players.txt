@@ -1,5 +1,1 @@
-9d9c39ad-4d3a-4e61-91c7-3d327f5dcf51 = SpeeeDCraft
-da876105-e41c-3353-bc81-e77e42ef1bf4 = Ichor_66
-80f670bf-03ce-3328-9333-0937c61eac9e = Sigil
-27b20c1e-c3c7-349d-ae3b-1cb9e8c8846b = Basketbolist
 57b3dfb5-f8a6-49e2-8b54-4e4ffc63256f = Xikaro
