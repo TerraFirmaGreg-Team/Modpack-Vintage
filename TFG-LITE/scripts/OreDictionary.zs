@@ -111,6 +111,53 @@ for item in All_Seeds {
 <ore:ingotBlackSteel>.remove(<tfc:metal/ingot/black_steel>);
 <ore:ingotBlueSteel>.remove(<tfc:metal/ingot/blue_steel>);
 <ore:ingotRedSteel>.remove(<tfc:metal/ingot/red_steel>);
+// PigIron
+
+// Removing OreDicts from TFC sheets
+<ore:sheetCopper>.remove(<tfc:metal/sheet/copper>);
+<ore:sheetBismuth>.remove(<tfc:metal/sheet/bismuth>);
+<ore:sheetBrass>.remove(<tfc:metal/sheet/brass>);
+<ore:sheetGold>.remove(<tfc:metal/sheet/gold>);
+<ore:sheetLead>.remove(<tfc:metal/sheet/lead>);
+<ore:sheetNickel>.remove(<tfc:metal/sheet/nickel>);
+<ore:sheetRoseGold>.remove(<tfc:metal/sheet/rose_gold>);
+<ore:sheetSilver>.remove(<tfc:metal/sheet/silver>);
+<ore:sheetTin>.remove(<tfc:metal/sheet/tin>);
+<ore:sheetZinc>.remove(<tfc:metal/sheet/zinc>);
+<ore:sheetSterlingSilver>.remove(<tfc:metal/sheet/sterling_silver>);
+<ore:sheetPlatinum>.remove(<tfc:metal/sheet/platinum>);
+<ore:sheetBismuthBronze>.remove(<tfc:metal/sheet/bismuth_bronze>);
+<ore:sheetBronze>.remove(<tfc:metal/sheet/bronze>);
+<ore:sheetBlackBronze>.remove(<tfc:metal/sheet/black_bronze>);
+<ore:sheetWroughtIron>.remove(<tfc:metal/sheet/wrought_iron>);
+<ore:sheetSteel>.remove(<tfc:metal/sheet/steel>);
+<ore:sheetBlackSteel>.remove(<tfc:metal/sheet/black_steel>);
+<ore:sheetBlueSteel>.remove(<tfc:metal/sheet/blue_steel>);
+<ore:sheetRedSteel>.remove(<tfc:metal/sheet/red_steel>);
+// PigIron
+
+// Removing OreDicts from TFC double sheets
+<ore:sheetDoubleCopper>.remove(<tfc:metal/double_sheet/copper>);
+<ore:sheetDoubleBismuth>.remove(<tfc:metal/double_sheet/bismuth>);
+<ore:sheetDoubleBrass>.remove(<tfc:metal/double_sheet/brass>);
+<ore:sheetDoubleGold>.remove(<tfc:metal/double_sheet/gold>);
+<ore:sheetDoubleLead>.remove(<tfc:metal/double_sheet/lead>);
+<ore:sheetDoubleNickel>.remove(<tfc:metal/double_sheet/nickel>);
+<ore:sheetDoubleRoseGold>.remove(<tfc:metal/double_sheet/rose_gold>);
+<ore:sheetDoubleSilver>.remove(<tfc:metal/double_sheet/silver>);
+<ore:sheetDoubleTin>.remove(<tfc:metal/double_sheet/tin>);
+<ore:sheetDoubleZinc>.remove(<tfc:metal/double_sheet/zinc>);
+<ore:sheetDoubleSterlingSilver>.remove(<tfc:metal/double_sheet/sterling_silver>);
+<ore:sheetDoublePlatinum>.remove(<tfc:metal/double_sheet/platinum>);
+<ore:sheetDoubleBismuthBronze>.remove(<tfc:metal/double_sheet/bismuth_bronze>);
+<ore:sheetDoubleBronze>.remove(<tfc:metal/double_sheet/bronze>);
+<ore:sheetDoubleBlackBronze>.remove(<tfc:metal/double_sheet/black_bronze>);
+<ore:sheetDoubleWroughtIron>.remove(<tfc:metal/double_sheet/wrought_iron>);
+<ore:sheetDoubleSteel>.remove(<tfc:metal/double_sheet/steel>);
+<ore:sheetDoubleBlackSteel>.remove(<tfc:metal/double_sheet/black_steel>);
+<ore:sheetDoubleBlueSteel>.remove(<tfc:metal/double_sheet/blue_steel>);
+<ore:sheetDoubleRedSteel>.remove(<tfc:metal/double_sheet/red_steel>);
+// PigIron
 
 // --- GregTech
 

@@ -313,6 +313,16 @@ for item in RemoveItemsFromQuern{
     Quern.removeRecipe(item);
 }
 
+// Удаление рецептов ковки пластин
+for item in All_TFC_Sheets {
+    Anvil.removeRecipe(item);
+}
+
+// Удаление рецептов сварки двойных пластин
+for item in All_TFC_Double_Sheets {
+    Welding.removeRecipe(item);
+}
+
 // --- Adding Recipes
 
 // Сырой камень -> Булыжник
