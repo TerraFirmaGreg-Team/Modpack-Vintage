@@ -314,12 +314,12 @@ for item in RemoveItemsFromQuern{
 }
 
 // Удаление рецептов ковки пластин
-for item in All_TFC_Sheets {
+for item in TFC_Sheets {
     Anvil.removeRecipe(item);
 }
 
 // Удаление рецептов сварки двойных пластин
-for item in All_TFC_Double_Sheets {
+for item in TFC_Double_Sheets {
     Welding.removeRecipe(item);
 }
 

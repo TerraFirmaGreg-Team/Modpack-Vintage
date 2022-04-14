@@ -3161,8 +3161,8 @@ global All_Plants as IItemStack[] = [
 	<tfcflorae:food/tobacco_leaf>
 ];
 
-// - All Strips Array
-global All_Strips as IItemStack[] = [
+// - All TFC-Tech Strips Array
+global TFC_Tech_Strips as IItemStack[] = [
 	<tfctech:metal/bismuth_strip>,
 	<tfctech:metal/bismuth_bronze_strip>,
 	<tfctech:metal/black_bronze_strip>,
@@ -3187,8 +3187,34 @@ global All_Strips as IItemStack[] = [
 	
 ];
 
+// - All TFC-Tech Long Rods Array
+global TFC_Tech_Long_Rods as IItemStack[] = [
+	<tfctech:metal/bismuth_long_rod>,
+	<tfctech:metal/bismuth_bronze_long_rod>,
+	<tfctech:metal/black_bronze_long_rod>,
+	<tfctech:metal/brass_long_rod>,
+	<tfctech:metal/bronze_long_rod>,
+	<tfctech:metal/copper_long_rod>,
+	<tfctech:metal/gold_long_rod>,
+	<tfctech:metal/lead_long_rod>,
+	<tfctech:metal/nickel_long_rod>,
+	<tfctech:metal/rose_gold_long_rod>,
+	<tfctech:metal/silver_long_rod>,
+	<tfctech:metal/tin_long_rod>,
+	<tfctech:metal/zinc_long_rod>,
+	<tfctech:metal/sterling_silver_long_rod>,
+	<tfctech:metal/wrought_iron_long_rod>,
+	<tfctech:metal/pig_iron_long_rod>,
+	<tfctech:metal/steel_long_rod>,
+	<tfctech:metal/platinum_long_rod>,
+	<tfctech:metal/black_steel_long_rod>,
+	<tfctech:metal/blue_steel_long_rod>,
+	<tfctech:metal/red_steel_long_rod>
+	
+];
+
 // - All TFC Sheets Array
-global All_TFC_Sheets as IItemStack[] = [
+global TFC_Sheets as IItemStack[] = [
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
 	<tfc:metal/sheet/black_bronze>,
@@ -3213,7 +3239,7 @@ global All_TFC_Sheets as IItemStack[] = [
 ];
 
 // - All TFC Double Sheets Array
-global All_TFC_Double_Sheets as IItemStack[] = [
+global TFC_Double_Sheets as IItemStack[] = [
 	<tfc:metal/double_sheet/bismuth>,
 	<tfc:metal/double_sheet/bismuth_bronze>,
 	<tfc:metal/double_sheet/black_bronze>,

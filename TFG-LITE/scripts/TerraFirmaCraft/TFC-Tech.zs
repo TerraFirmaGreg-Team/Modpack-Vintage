@@ -3,42 +3,95 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Barrel;
+import mods.jei.JEI;
 
 // --- Removing Recipes
 
-recipes.remove(<tfctech:wire_draw_bench>);
-recipes.remove(<tfctech:smeltery_firebox>);
-recipes.remove(<tfctech:smeltery_cauldron>);
-recipes.remove(<tfctech:electric_forge>);
-recipes.remove(<tfctech:metal/copper_inductor>);
-recipes.remove(<tfctech:induction_crucible>);
-recipes.remove(<tfctech:wiredraw/winch>);
+// Удаление рецептов + скрытие
+val RemoveItemsFromJEI as IItemStack[] = [
+	// Long Rods
+    <tfctech:metal/ingot/bismuth>,
+	<tfctech:metal/ingot/bismuth_bronze>,
+	<tfctech:metal/ingot/black_bronze>,
+	<tfctech:metal/ingot/brass>,
+	<tfctech:metal/ingot/bronze>,
+	<tfctech:metal/ingot/copper>,
+	<tfctech:metal/ingot/gold>,
+	<tfctech:metal/ingot/lead>,
+	<tfctech:metal/ingot/nickel>,
+	<tfctech:metal/ingot/rose_gold>,
+	<tfctech:metal/ingot/silver>,
+	<tfctech:metal/ingot/tin>,
+	<tfctech:metal/ingot/zinc>,
+	<tfctech:metal/ingot/sterling_silver>,
+	<tfctech:metal/ingot/pig_iron>,
+	<tfctech:metal/ingot/steel>,
+	<tfctech:metal/ingot/platinum>,
+	<tfctech:metal/ingot/black_steel>,
+	<tfctech:metal/ingot/blue_steel>,
+	<tfctech:metal/ingot/red_steel>,
+    // Other
+    <tfctech:powder/potash>
+];
+for item in RemoveItemsFromJEI {
+    JEI.removeAndHide(item);
+}
 
-mods.jei.JEI.removeAndHide(<tfctech:powder/potash>);
+// Удаление рецептов
+val RemoveItemRecipes as IItemStack[] = [
+	<tfctech:wire_draw_bench>,
+    <tfctech:smeltery_firebox>,
+    <tfctech:smeltery_cauldron>,
+    <tfctech:electric_forge>,
+    <tfctech:metal/copper_inductor>,
+    <tfctech:induction_crucible>,
+    <tfctech:wiredraw/winch>
+];
+for item in RemoveItemRecipes {
+    recipes.remove(item);
+}
 
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
 
-WireDrawing.removeRecipe(<tfctech:metal/zinc_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/copper_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/gold_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/lead_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/nickel_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/silver_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/tin_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/steel_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/platinum_wire>);
-WireDrawing.removeRecipe(<tfctech:metal/black_steel_wire>);
+// Удаление рецептов вытяжки на столе
+val RemoveItemWireDrawingRecipes as IItemStack[] = [
+	<tfctech:metal/zinc_wire>,
+    <tfctech:metal/copper_wire>,
+    <tfctech:metal/gold_wire>,
+    <tfctech:metal/lead_wire>,
+    <tfctech:metal/nickel_wire>,
+    <tfctech:metal/silver_wire>,
+    <tfctech:metal/tin_wire>,
+    <tfctech:metal/steel_wire>,
+    <tfctech:metal/platinum_wire>,
+    <tfctech:metal/black_steel_wire>
+];
+for item in RemoveItemWireDrawingRecipes {
+    Anvil.removeRecipe(item);
+}
 
-Anvil.removeRecipe(<tfctech:metal/iron_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/steel_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/black_steel_draw_plate>);
-Anvil.removeRecipe(<tfctech:metal/iron_tongs>);
-Anvil.removeRecipe(<tfctech:metal/iron_bowl_mount>);
-Anvil.removeRecipe(<tfctech:metal/wrought_iron_blowpipe>);
+// Удаление рецептов ковки
+val RemoveItemAnvilRecipes as IItemStack[] = [
+	<tfctech:metal/iron_draw_plate>,
+    <tfctech:metal/steel_draw_plate>,
+    <tfctech:metal/black_steel_draw_plate>,
+    <tfctech:metal/iron_tongs>,
+    <tfctech:metal/iron_bowl_mount>,
+    <tfctech:metal/wrought_iron_blowpipe>
+];
+for item in RemoveItemAnvilRecipes {
+    Anvil.removeRecipe(item);
+}
 
-for item in All_Strips {
+// Удаление рецептов кусочков шестерни
+for item in TFC_Tech_Strips {
     recipes.remove(item);
+}
+
+// Удаление рецептов длинных палок
+for item in TFC_Tech_Long_Rods {
+    Anvil.removeRecipe(item);
 }
 
 // --- Adding Recipes
