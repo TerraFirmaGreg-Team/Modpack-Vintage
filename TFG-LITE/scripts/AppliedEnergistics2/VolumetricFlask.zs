@@ -67,7 +67,7 @@ recipes.remove(<volumetricflask:filler>);
 assembler.recipeBuilder()
   .inputs([
     <ore:flask> * 2,
-    <ore:circuitAdvanced> * 2,
+    <ore:circuitHv> * 2,
     <ore:plateTitanium> * 4,
     <extracells:fluidcrafter>
   ])

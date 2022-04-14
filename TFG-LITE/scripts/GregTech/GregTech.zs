@@ -128,14 +128,14 @@ recipes.addShaped(<metaitem:steam_alloy_smelter_bronze>,
 // Blast Furnace
 recipes.addShaped(<metaitem:electric_blast_furnace>,
 [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
- [<ore:circuitBasic>, <gregtech:metal_casing:2>, <ore:circuitBasic>],
- [<ore:cableGtSingleTin>, <ore:circuitBasic>, <ore:cableGtSingleTin>]]);
+ [<ore:circuitLv>, <gregtech:metal_casing:2>, <ore:circuitLv>],
+ [<ore:cableGtSingleTin>, <ore:circuitLv>, <ore:cableGtSingleTin>]]);
 
 // Multi-Smelter
 recipes.addShaped(<metaitem:multi_furnace>,
 [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
- [<ore:circuitAdvanced>, <gregtech:metal_casing:2>, <ore:circuitAdvanced>],
- [<ore:cableGtSingleAnnealedCopper>, <ore:circuitAdvanced>, <ore:cableGtSingleAnnealedCopper>]]);
+ [<ore:circuitHv>, <gregtech:metal_casing:2>, <ore:circuitHv>],
+ [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
 
 // Crafting Station
 recipes.addShaped(<metaitem:workbench>,
