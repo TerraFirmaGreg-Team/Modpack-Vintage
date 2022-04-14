@@ -21,6 +21,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfctech:metal/gold_long_rod>,
 	<tfctech:metal/lead_long_rod>,
 	<tfctech:metal/nickel_long_rod>,
+    <tfctech:metal/wrought_iron_long_rod>,
 	<tfctech:metal/rose_gold_long_rod>,
 	<tfctech:metal/silver_long_rod>,
 	<tfctech:metal/tin_long_rod>,
