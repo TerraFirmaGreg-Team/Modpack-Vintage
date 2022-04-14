@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 import mods.tfctech.WireDrawing;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
@@ -10,26 +12,26 @@ import mods.jei.JEI;
 // Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
 	// Long Rods
-    <tfctech:metal/ingot/bismuth>,
-	<tfctech:metal/ingot/bismuth_bronze>,
-	<tfctech:metal/ingot/black_bronze>,
-	<tfctech:metal/ingot/brass>,
-	<tfctech:metal/ingot/bronze>,
-	<tfctech:metal/ingot/copper>,
-	<tfctech:metal/ingot/gold>,
-	<tfctech:metal/ingot/lead>,
-	<tfctech:metal/ingot/nickel>,
-	<tfctech:metal/ingot/rose_gold>,
-	<tfctech:metal/ingot/silver>,
-	<tfctech:metal/ingot/tin>,
-	<tfctech:metal/ingot/zinc>,
-	<tfctech:metal/ingot/sterling_silver>,
-	<tfctech:metal/ingot/pig_iron>,
-	<tfctech:metal/ingot/steel>,
-	<tfctech:metal/ingot/platinum>,
-	<tfctech:metal/ingot/black_steel>,
-	<tfctech:metal/ingot/blue_steel>,
-	<tfctech:metal/ingot/red_steel>,
+    <tfctech:metal/bismuth_long_rod>,
+	<tfctech:metal/bismuth_bronze_long_rod>,
+	<tfctech:metal/black_bronze_long_rod>,
+	<tfctech:metal/brass_long_rod>,
+	<tfctech:metal/bronze_long_rod>,
+	<tfctech:metal/copper_long_rod>,
+	<tfctech:metal/gold_long_rod>,
+	<tfctech:metal/lead_long_rod>,
+	<tfctech:metal/nickel_long_rod>,
+	<tfctech:metal/rose_gold_long_rod>,
+	<tfctech:metal/silver_long_rod>,
+	<tfctech:metal/tin_long_rod>,
+	<tfctech:metal/zinc_long_rod>,
+	<tfctech:metal/sterling_silver_long_rod>,
+	<tfctech:metal/pig_iron_long_rod>,
+	<tfctech:metal/steel_long_rod>,
+	<tfctech:metal/platinum_long_rod>,
+	<tfctech:metal/black_steel_long_rod>,
+	<tfctech:metal/blue_steel_long_rod>,
+	<tfctech:metal/red_steel_long_rod>,
     // Other
     <tfctech:powder/potash>
 ];
@@ -68,7 +70,7 @@ val RemoveItemWireDrawingRecipes as IItemStack[] = [
     <tfctech:metal/black_steel_wire>
 ];
 for item in RemoveItemWireDrawingRecipes {
-    Anvil.removeRecipe(item);
+    WireDrawing.removeRecipe(item);
 }
 
 // Удаление рецептов ковки

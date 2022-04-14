@@ -3184,7 +3184,6 @@ global TFC_Tech_Strips as IItemStack[] = [
 	<tfctech:metal/black_steel_strip>,
 	<tfctech:metal/blue_steel_strip>,
 	<tfctech:metal/red_steel_strip>
-	
 ];
 
 // - All TFC-Tech Long Rods Array
@@ -3210,7 +3209,6 @@ global TFC_Tech_Long_Rods as IItemStack[] = [
 	<tfctech:metal/black_steel_long_rod>,
 	<tfctech:metal/blue_steel_long_rod>,
 	<tfctech:metal/red_steel_long_rod>
-	
 ];
 
 // - All TFC Sheets Array
