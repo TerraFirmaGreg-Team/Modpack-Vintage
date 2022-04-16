@@ -203,32 +203,6 @@ for item in Gem_Exquisite {
 // Iron Dust
 <ore:dustIron>.remove(<appliedenergistics2:material:49>);
 
-// --- Minecraft
-// Grass
-<ore:grass>.remove(<minecraft:grass>);
-// Sand
-<ore:sand>.remove(<minecraft:sand>);
-// Dirt
-<ore:dirt>.remove(<minecraft:dirt>);
-// Stone
-<ore:stone>.remove(<minecraft:stone>);
-// Gravel
-<ore:gravel>.remove(<minecraft:gravel>);
-// Cobblestone
-<ore:cobblestone>.remove(<minecraft:cobblestone>);
-// Stone coal
-<ore:oreCoal>.remove(<minecraft:coal_ore>);
-// Redstone
-<ore:oreRedstone>.remove(<minecraft:redstone_ore>);
-// Diamond
-<ore:oreDiamond>.remove(<minecraft:diamond_ore>);
-// Emerald
-<ore:oreEmerald>.remove(<minecraft:emerald_ore>);
-// Gold
-<ore:oreGold>.remove(<minecraft:gold_ore>);
-// Iron
-<ore:oreIron>.remove(<minecraft:iron_ore>);
-
 // --- TFC
 // remove gemDiamond
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
@@ -313,3 +287,49 @@ for item in TFC_Loom {
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 // Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
+
+// --- Vanilla
+
+// Grass
+<ore:grass>.remove(<minecraft:grass>);
+
+// Sand
+<ore:sand>.remove(<minecraft:sand>);
+
+// Dirt
+<ore:dirt>.remove(<minecraft:dirt>);
+
+// Stone
+<ore:stone>.remove(<minecraft:stone>);
+<ore:stoneSmooth>.remove(<minecraft:stone>);
+
+// Gravel
+<ore:gravel>.remove(<minecraft:gravel>);
+
+// Cobblestone
+<ore:cobblestone>.remove(<minecraft:cobblestone>);
+<ore:stoneCobble>.remove(<minecraft:cobblestone>);
+
+// Stone coal
+<ore:oreCoal>.remove(<minecraft:coal_ore>);
+
+// Redstone
+<ore:oreRedstone>.remove(<minecraft:redstone_ore>);
+
+// Diamond
+<ore:oreDiamond>.remove(<minecraft:diamond_ore>);
+
+// Emerald
+<ore:oreEmerald>.remove(<minecraft:emerald_ore>);
+
+// Gold
+<ore:oreGold>.remove(<minecraft:gold_ore>);
+
+// Iron
+<ore:oreIron>.remove(<minecraft:iron_ore>);
+
+// Remove sugarcane oredict
+<ore:sugarcane>.remove(<minecraft:reeds>);
+
+// Remove bookshelf oredict
+<ore:bookshelf>.remove(<minecraft:bookshelf>);

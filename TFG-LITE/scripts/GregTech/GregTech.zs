@@ -230,6 +230,16 @@ brewery.recipeBuilder()
     .duration(300).EUt(2).buildAndRegister();
 
 // Fix Plant Ball Recipes
+// From Wheat
+compressor.findRecipe(2, [<minecraft:wheat:0> * 8], null).remove();
+// From Another Mushroom
+compressor.findRecipe(2, [<minecraft:brown_mushroom:0> * 8], null).remove();
+// From Carrot
+compressor.findRecipe(2, [<minecraft:carrot:0> * 8], null).remove();
+// From Potato
+compressor.findRecipe(2, [<minecraft:potato:0> * 8], null).remove();
+// From Mushroom
+compressor.findRecipe(2, [<minecraft:red_mushroom:0> * 8], null).remove();
 // From Dirt
 centrifuge.findRecipe(30, [<minecraft:dirt:0>], null).remove();
 // From Grass
@@ -248,6 +258,21 @@ centrifuge.recipeBuilder()
     .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
     .chancedOutput(<ore:dustTinyClay>.firstItem, 5000, 900)
     .duration(275).EUt(30).buildAndRegister();
+// From Grains
+compressor.recipeBuilder()
+    .inputs([<ore:categoryGrain> * 8])
+    .outputs(<metaitem:plant_ball>)
+    .duration(350).EUt(2).buildAndRegister();
+// From Vegetables
+compressor.recipeBuilder()
+    .inputs([<ore:categoryVegetable> * 8])
+    .outputs(<metaitem:plant_ball>)
+    .duration(350).EUt(2).buildAndRegister();
+// From Vegetables
+compressor.recipeBuilder()
+    .inputs([<ore:categoryFruit> * 8])
+    .outputs(<metaitem:plant_ball>)
+    .duration(350).EUt(2).buildAndRegister();
 
 // Fix Meat
 // Small Pile of Mince Meat * 6
@@ -287,7 +312,7 @@ assembler.recipeBuilder()
     .outputs(<minecraft:hopper>)
     .duration(400).EUt(2).buildAndRegister();
 
-// Cobble FIx
+// Cobble Fix
 // Cobblestone Stairs * 4
 assembler.findRecipe(1, [<minecraft:mossy_cobblestone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 // Cobblestone Wall * 1
@@ -296,14 +321,15 @@ assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated
 assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
 // Gravel * 1
 forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
+
 // Fix Shit Glass Craft
 // Glass * 2
 arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
 arc_furnace.recipeBuilder()
     .inputs([<ore:sand>])
-    //.fluidInputs(<fluid:oxygen> * 20)
     .outputs(<minecraft:glass> * 2)
     .duration(175).EUt(7).buildAndRegister();
+
 // Fix Coke Oven Bricks Craft
 // Coke Oven Brick * 2
 alloy_smelter.findRecipe(7, [<minecraft:sand:0>, <minecraft:clay_ball:0>], null).remove();
@@ -311,6 +337,7 @@ alloy_smelter.recipeBuilder()
     .inputs([<ore:sand>, <minecraft:clay_ball:0>])
     .outputs(<metaitem:brick.coke>)
     .duration(175).EUt(7).buildAndRegister();
+
 // Fix Stone Exploit
 // Stone * 1
 compressor.findRecipe(2, [<metaitem:plateStone> * 9], null).remove();
@@ -318,6 +345,7 @@ compressor.recipeBuilder()
     .inputs([<metaitem:plateStone> * 9])
     .outputs(<tfc:raw/basalt>)
     .duration(300).EUt(2).buildAndRegister();
+
 // Fix Dirt Exploit
 // Dirt * 1
 macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
@@ -325,8 +353,17 @@ macerator.recipeBuilder()
     .inputs([<metaitem:bio_chaff>])
     .outputs(<tfc:dirt/basalt>)
     .duration(300).EUt(2).buildAndRegister();
+
 // Fix Gravel Exploit
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
+
+// Fix Boolshelf Exploit
+extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
+extractor.recipeBuilder()
+    .inputs([<ore:bookshelf>])
+    .outputs(<minecraft:book> * 3)
+    .duration(300).EUt(2).buildAndRegister();
+
 // Fix Sand Exploit
 // Diamond Small Pile * 1
 centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
@@ -355,6 +392,7 @@ macerator.recipeBuilder()
     .inputs([<ore:sand>])
     .outputs(<ore:dustQuartzSand>.firstItem)
     .duration(50).EUt(2).buildAndRegister();
+
 // Переработка тфкшной гевеи
 centrifuge.findRecipe(20, [<gregtech:rubber_log:0>], null).remove();
 centrifuge.recipeBuilder()
@@ -365,6 +403,7 @@ centrifuge.recipeBuilder()
     .chancedOutput(<metaitem:rubber_drop>, 5000, 1200)
     .fluidOutputs(<fluid:methane> * 65)
     .EUt(20).duration(200).buildAndRegister();
+
 // Исправление рецепта на бумагу
 // Крафт бумажной пыли
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
@@ -375,6 +414,7 @@ recipes.addShaped(<ore:paper>.firstItem * 2,
 [[null, <ore:slabStonePolished>.reuse(), null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
  [null, <ore:slabStonePolished>.reuse(), null]]);
+
 // Лава из незерака
 extractor.recipeBuilder()
     .inputs(<ore:netherrack>)
@@ -386,29 +426,34 @@ extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
     .fluidOutputs(<fluid:lava> * 750)
     .EUt(140).duration(220).buildAndRegister();
+
 // Гравий --> кремень
 forge_hammer.recipeBuilder()
     .inputs([<ore:gravel> * 1])
     .outputs(<minecraft:flint> * 1)
     .duration(45).EUt(5).buildAndRegister();
+
 // Сахарный тростник --> целлюлоза
 forge_hammer.recipeBuilder()
     .inputs([<ore:sugarcane> * 3])
     .outputs(<ore:dustPaper>.firstItem * 2)
     .duration(105).EUt(4).buildAndRegister();
-// Песок+Гравий --> цемент тфк
+
+// Песок + Гравий --> цемент тфк
 mixer.recipeBuilder()
     .inputs(<ore:sand>*4, <ore:gravel>*4)
     .outputs(<tfc:aggregate>*8)
     .duration(20).EUt(4).buildAndRegister();
+
 // Infinite Water Cover 
-<recipemap:assembler>.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
+assembler.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
 assembler.recipeBuilder()
     .inputs(<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>, <minecraft:ender_pearl>, <metaitem:emitter.hv>)
     .outputs(<metaitem:cover.infinite_water>)
     .duration(200).EUt(480).buildAndRegister();
+
 // Fertilizer
-<recipemap:mixer>.findRecipe(30, [<minecraft:dirt:0>, <metaitem:dustWood> * 2, <minecraft:sand:0> * 4], [<liquid:water> * 1000]).remove();
+mixer.findRecipe(30, [<minecraft:dirt:0>, <metaitem:dustWood> * 2, <minecraft:sand:0> * 4], [<liquid:water> * 1000]).remove();
 mixer.recipeBuilder()
 	.inputs(<ore:sand> * 4,<ore:dustWood> * 2, <ore:dirt>)
     .fluidInputs(<liquid:water> * 1000)
@@ -416,6 +461,7 @@ mixer.recipeBuilder()
 	.duration(100)
 	.EUt(30)
 	.buildAndRegister();
+
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
     .inputs([
