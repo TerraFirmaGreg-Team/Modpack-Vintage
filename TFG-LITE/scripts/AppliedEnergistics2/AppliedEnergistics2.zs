@@ -35,6 +35,8 @@ val RemoveItemRecipesByName = [
   "appliedenergistics2:decorative/quartz_block_pure",
   "appliedenergistics2:decorative/certuz_quartz_block",
   "appliedenergistics2:decorative/certuz_quartz_block_pure",
+  "appliedenergistics2:misc/vanilla_daylight_detector",
+  "appliedenergistics2:misc/vanilla_comparator"
 ] as string[];
 for item in RemoveItemRecipesByName{
   recipes.removeByRecipeName(item);

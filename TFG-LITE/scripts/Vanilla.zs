@@ -150,6 +150,13 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:chainmail_chestplate>,
     <minecraft:chainmail_leggings>,
     <minecraft:chainmail_boots>,
+    // Boats
+    <minecraft:boat>,
+    <minecraft:spruce_boat>,
+    <minecraft:birch_boat>,
+    <minecraft:jungle_boat>,
+    <minecraft:acacia_boat>,
+    <minecraft:dark_oak_boat>,
     // Other
     <minecraft:crafting_table>,
     <minecraft:furnace>,
@@ -181,23 +188,75 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
-//Remove Workbench
+// Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 
-//Remove Furnace
+// Remove Furnace
 assembler.findRecipe(7, [<ore:stoneCobble>.firstItem * 8, <minecraft:flint>, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
 
-//Remove Wooden Pressure Plate
+// Remove Wooden Pressure Plate
 assembler.findRecipe(7, [<ore:plankWood>.firstItem * 2, <ore:springIron>.firstItem], null).remove();
 
-//Remove Stone Pressure Plate
+// Remove Stone Pressure Plate
 assembler.findRecipe(7, [<minecraft:stone_slab> * 2, <ore:springIron>.firstItem], null).remove();
 
-//Remove Wooden Trapdoor
+// Remove Wooden Trapdoor
 assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <gregtech:meta_item_1:461>.withTag({Configuration: 3})], null).remove();
 
-//Remove Wooden Trapdoor
+// Remove Wooden Trapdoor
 assembler.findRecipe(16, [<ore:plateIron>.firstItem * 4, <minecraft:trapdoor>], null).remove();
+
+// Remove Fences
+// Oak Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Spruce Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:1>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Birch Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Jungle Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:3>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Acacia Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:4>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Dark Oak Fence * 1
+assembler.findRecipe(4, [<minecraft:planks:5>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
+// Remove Gates
+// Oak Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:0> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// Spruce Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:1> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// Birch Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:2> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// Jungle Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:3> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// Acacia Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:4> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+// Dark Oak Fence Gate * 1
+assembler.findRecipe(4, [<minecraft:planks:5> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+
+// Remove Stone Buttons
+cutter.findRecipe(7, [<minecraft:stone_pressure_plate:0>], [<liquid:lubricant>]).remove();
+cutter.findRecipe(7, [<minecraft:stone_pressure_plate:0>], [<liquid:distilled_water> * 3]).remove();
+cutter.findRecipe(7, [<minecraft:stone_pressure_plate:0>], [<liquid:water> * 4]).remove();
+
+// Wooden Buttons
+cutter.findRecipe(7, [<minecraft:wooden_pressure_plate:0>], [<liquid:lubricant>]).remove();
+cutter.findRecipe(7, [<minecraft:wooden_pressure_plate:0>], [<liquid:distilled_water> * 3]).remove();
+cutter.findRecipe(7, [<minecraft:wooden_pressure_plate:0>], [<liquid:water> * 4]).remove();
+
+// Remove Doors
+// Oak Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:0> * 4], [<liquid:iron> * 16]).remove();
+// Spruce Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:1> * 4], [<liquid:iron> * 16]).remove();
+// Birch Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:2> * 4], [<liquid:iron> * 16]).remove();
+// Jungle Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:3> * 4], [<liquid:iron> * 16]).remove();
+// Acacia Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:4> * 4], [<liquid:iron> * 16]).remove();
+// Dark Oak Door * 1
+assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:5> * 4], [<liquid:iron> * 16]).remove();
 
 //Другое
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
@@ -210,37 +269,37 @@ recipes.removeByRecipeName("minecraft:diamond_block");
 
 // --- Adding Recipes
 
-//Лампа
+// Лампа
 recipes.addShaped(<minecraft:redstone_lamp>,
 [[<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>],
  [<ore:stickWroughtIron>, <ore:cableGtSingleRedAlloy>, <ore:stickWroughtIron>],
  [<ore:plateBrass>, <ore:stickWroughtIron>, <ore:plateBrass>]]);
 
-//Удочка
+// Удочка
 recipes.addShaped(<minecraft:fishing_rod>,
 [[null, null, <minecraft:stick>],
  [null, <minecraft:stick>, <ore:string>],
  [<minecraft:stick>, null, <ore:string>]]);
 
-//Чар стол
+// Чар стол
 recipes.addShaped(<minecraft:enchanting_table>,
 [[null, <minecraft:book>, null],
  [<ore:gemFlawless>, <ore:obsidian>, <ore:gemFlawless>],
  [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
 
-//Поршень
+// Поршень
 recipes.addShaped(<minecraft:piston>,
 [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
- [<ore:gearWroughtIron>, <ore:fenceWood>, <ore:gearWroughtIron>],
+ [<ore:gearWroughtIron>, <ore:stickLongWroughtIron>, <ore:gearWroughtIron>],
  [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 
-//Книга
+// Книга
 recipes.addShaped(<minecraft:book>,
 [[<ore:string>, <ore:paper>, <ore:leather>],
  [<ore:string>, <ore:paper>, <metaitem:rubber_drop>],
  [<ore:string>, <ore:paper>, <ore:leather>]]);
 
-//Ведро
+// Ведро
 recipes.addShaped(<minecraft:bucket>,
 [[<ore:plateWroughtIron>, <tfc:metal/bucket/blue_steel>.noReturn(), <ore:plateWroughtIron>],
  [<ore:plateWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateWroughtIron>],

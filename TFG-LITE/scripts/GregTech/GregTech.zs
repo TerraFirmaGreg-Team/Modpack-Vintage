@@ -214,6 +214,14 @@ recipes.addShaped( <metaitem:steam_export_bus>,
  [null, <ore:chest>, null],
  [null, null, null]]);
 
+// Fix Dispenser Recipe
+// Dispenser * 1
+assembler.findRecipe(30, [<minecraft:cobblestone:0> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <minecraft:string:0>], null).remove();
+assembler.recipeBuilder()
+    .inputs([<ore:stoneCobble> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <ore:string>])
+    .outputs(<minecraft:dispenser>)
+    .duration(100).EUt(30).buildAndRegister();
+
 // Fix Cactus Recycling
 // Plant Ball * 1
 compressor.findRecipe(2, [<minecraft:cactus:0> * 8], null).remove();
@@ -321,6 +329,7 @@ assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated
 assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
 // Gravel * 1
 forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
+
 
 // Fix Shit Glass Craft
 // Glass * 2
@@ -464,28 +473,15 @@ mixer.recipeBuilder()
 
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
-    .inputs([
-        <ore:dustDiamond>,
-        <ore:dustIridium>
-    ])
-    .fluidInputs([
-        <liquid:nether_air> * 8000,
-        <liquid:rocket_fuel> * 1000
-    ])
+    .inputs([<ore:dustDiamond>, <ore:dustIridium>])
+    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 2])
     .duration(200)
     .EUt(7680)
     .buildAndRegister();
 chemical_reactor.recipeBuilder()
-    .inputs([
-        <ore:dustDiamond> * 2,
-        <ore:dustIridium> * 2
-    ])
-    .fluidInputs([
-        <liquid:sulfur_dioxide> * 6000,
-        <liquid:carbon_monoxide> * 8000,
-        <liquid:rocket_fuel> * 1000
-    ])
+    .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
+    .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 1])
     .duration(600)
     .EUt(2000)
@@ -512,17 +508,22 @@ chemical_reactor.recipeBuilder()
 //     .buildAndRegister();
 
 // Фикс снопа сена
-packer.findRecipe(2, [<minecraft:wheat>*9, <gregtech:meta_item_1:461>.withTag({Configuration: 9})], null).remove();
+packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
 
 // Фикс сундуков
-assembler.findRecipe(4, [<minecraft:planks>*8, <gregtech:meta_item_1:461>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(4, [<minecraft:planks> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
 
-// Rock breaker fixes
+// Fix RockBreaker Exploit
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
 rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
-rock_breaker.findRecipe(60, [<ore:stoneGranite>.firstItem], null).remove();
-rock_breaker.findRecipe(60, [<ore:stoneDiorite>.firstItem], null).remove();
-rock_breaker.findRecipe(60, [<ore:stoneAndesite>.firstItem], null).remove();
+// Рецепты для всех сырых камней
+for item in TFC_Cobbles {
+    rock_breaker.recipeBuilder()
+    	.notConsumable(item)
+    	.outputs(item)
+    	.duration(16).EUt(240).buildAndRegister();
+}
+
 
 // Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();

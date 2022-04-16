@@ -30,9 +30,54 @@ for item in All_Seeds {
 	<ore:listAllSeeds>.add(item);
 }
 
+// remove gemDiamond
+<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
+
+// remove gemLapis
+<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
+
+// remove gemEmerald
+<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
+
+// remove dustSalt
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+
+// remove dustSaltpeter
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
+
+// Remove OreDict from saws
+val RemoveItemOre as IItemStack[] = [
+	<tfc:metal/saw/bismuth_bronze>,
+	<tfc:metal/saw/black_bronze>,
+	<tfc:metal/saw/black_steel>,
+	<tfc:metal/saw/blue_steel>,
+	<tfc:metal/saw/bronze>,
+	<tfc:metal/saw/copper>,
+	<tfc:metal/saw/red_steel>,
+	<tfc:metal/saw/steel>,
+	<tfc:metal/saw/wrought_iron>,
+	<tfc:metal/saw_blade/bismuth_bronze>,
+	<tfc:metal/saw_blade/black_bronze>,
+	<tfc:metal/saw_blade/black_steel>,
+	<tfc:metal/saw_blade/blue_steel>,
+	<tfc:metal/saw_blade/bronze>,
+	<tfc:metal/saw_blade/copper>,
+	<tfc:metal/saw_blade/red_steel>,
+	<tfc:metal/saw_blade/steel>,
+	<tfc:metal/saw_blade/wrought_iron>
+];
+for item in RemoveItemOre{
+    <ore:saw>.remove(item);
+}
+
+// add loom
+for item in TFC_Loom {
+	<ore:loom>.add(item);
+}
+
 // Rock Types GT = Rock Types TFC
-<ore:stoneBasalt>.add(<tfc:raw/basalt>);
-<ore:stoneMarble>.add(<tfc:raw/marble>);
+//<ore:stoneBasalt>.add(<tfc:raw/basalt>);
+//<ore:stoneMarble>.add(<tfc:raw/marble>);
 
 // Sugarcane
 <ore:sugarcane>.add(<tfc:food/sugarcane>);
@@ -159,6 +204,9 @@ for item in All_Seeds {
 <ore:sheetDoubleRedSteel>.remove(<tfc:metal/double_sheet/red_steel>);
 // PigIron
 
+// Beeswax
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
+
 // --- GregTech
 
 // Chipped Gems from GT
@@ -178,8 +226,11 @@ for item in Gem_Exquisite {
 	<ore:gemExquisite>.add(item);
 }
 
-// Beeswax
-<ore:itemBeeswax>.add(<firmalife:beeswax>);
+// Basalt
+<ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
+
+// Marble
+<ore:stoneMarble>.remove(<gregtech:stone_smooth:2>);
 
 // --- GC
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
@@ -202,52 +253,6 @@ for item in Gem_Exquisite {
 // --- AE2
 // Iron Dust
 <ore:dustIron>.remove(<appliedenergistics2:material:49>);
-
-// --- TFC
-// remove gemDiamond
-<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
-
-// remove gemLapis
-<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
-
-// remove gemEmerald
-<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
-
-// remove dustSalt
-<ore:dustSalt>.remove(<tfc:powder/salt>);
-
-// remove dustSaltpeter
-<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
-
-// remove saw
-val RemoveItemOre as IItemStack[] = [
-<tfc:metal/saw/bismuth_bronze>,
-<tfc:metal/saw/black_bronze>,
-<tfc:metal/saw/black_steel>,
-<tfc:metal/saw/blue_steel>,
-<tfc:metal/saw/bronze>,
-<tfc:metal/saw/copper>,
-<tfc:metal/saw/red_steel>,
-<tfc:metal/saw/steel>,
-<tfc:metal/saw/wrought_iron>,
-<tfc:metal/saw_blade/bismuth_bronze>,
-<tfc:metal/saw_blade/black_bronze>,
-<tfc:metal/saw_blade/black_steel>,
-<tfc:metal/saw_blade/blue_steel>,
-<tfc:metal/saw_blade/bronze>,
-<tfc:metal/saw_blade/copper>,
-<tfc:metal/saw_blade/red_steel>,
-<tfc:metal/saw_blade/steel>,
-<tfc:metal/saw_blade/wrought_iron>
-];
-for item in RemoveItemOre{
-    <ore:saw>.remove(item);
-}
-
-// add loom
-for item in TFC_Loom {
-	<ore:loom>.add(item);
-}
 
 // --- GC/GS
 // Iron
@@ -309,6 +314,27 @@ for item in TFC_Loom {
 // Cobblestone
 <ore:cobblestone>.remove(<minecraft:cobblestone>);
 <ore:stoneCobble>.remove(<minecraft:cobblestone>);
+
+// Granite
+<ore:stoneGranite>.remove(<minecraft:stone:1>);
+
+// Polished Granite
+<ore:stoneGranite>.remove(<minecraft:stone:2>);
+<ore:stoneGranitePolished>.remove(<minecraft:stone:2>);
+
+// Diorite
+<ore:stoneDiorite>.remove(<minecraft:stone:3>);
+
+// Polished Diorite
+<ore:stoneDiorite>.remove(<minecraft:stone:4>);
+<ore:stoneDioritePolished>.remove(<minecraft:stone:4>);
+
+// Andesite
+<ore:stoneAndesite>.remove(<minecraft:stone:5>);
+
+// Polished Andesite
+<ore:stoneAndesite>.remove(<minecraft:stone:6>);
+<ore:stoneAndesitePolished>.remove(<minecraft:stone:6>);
 
 // Stone coal
 <ore:oreCoal>.remove(<minecraft:coal_ore>);

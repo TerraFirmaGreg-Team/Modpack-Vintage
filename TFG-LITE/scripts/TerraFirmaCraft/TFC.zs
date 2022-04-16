@@ -292,7 +292,19 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate",
 	"tfc:vanilla/rail/steel_minecraft",
 	"tfc:vanilla/rail/minecraft",
-	"tfc:vanilla/lapis_lazuli_block"
+	"tfc:vanilla/lapis_lazuli_block",
+	"tfc:vanilla/ladder",
+	"tfc:vanilla/painting",
+	"tfc:vanilla/item_frame",
+	"tfc:vanilla/piston",
+	"tfc:vanilla/rail/powered_rail",
+	"tfc:vanilla/rail/steel_detector_rail",
+	"tfc:vanilla/rail/rail",
+	"tfc:vanilla/rail/steel_rail",
+	"tfc:vanilla/rail/activator_rail",
+	"tfc:vanilla/rail/steel_activator_rail",
+	"tfc:vanilla/rail/minecart",
+	"tfc:vanilla/rail/steel_minecart"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -737,6 +749,11 @@ forge_hammer.findRecipe(16, [<chisel:stonebrick:0>], null).remove();
 
 // Вернуть рецепт Flux в молотилку
 Quern.addRecipe("tfg:flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
+
+// Удаление TFC металлических палок
+Anvil.removeRecipe(<tfc:metal/rod/gold> * 2);
+Anvil.removeRecipe(<tfc:metal/rod/wrought_iron> * 2);
+Anvil.removeRecipe(<tfc:metal/rod/steel> * 2);
 
 // Крафт бронзового парового молотка
 recipes.remove(<gregtech:machine:13>);
