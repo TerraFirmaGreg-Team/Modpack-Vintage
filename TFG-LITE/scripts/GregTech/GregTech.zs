@@ -218,7 +218,7 @@ recipes.addShaped( <metaitem:steam_export_bus>,
 // Dispenser * 1
 assembler.findRecipe(30, [<minecraft:cobblestone:0> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <minecraft:string:0>], null).remove();
 assembler.recipeBuilder()
-    .inputs([<ore:stoneCobble> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <ore:string>])
+    .inputs([<ore:cobblestone> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <ore:string>])
     .outputs(<minecraft:dispenser>)
     .duration(100).EUt(30).buildAndRegister();
 
@@ -517,13 +517,12 @@ assembler.findRecipe(4, [<minecraft:planks> * 8, <metaitem:circuit.integrated>.w
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
 rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 // Рецепты для всех сырых камней
-for item in TFC_Cobbles {
+for item in TFC_Raws {
     rock_breaker.recipeBuilder()
     	.notConsumable(item)
     	.outputs(item)
     	.duration(16).EUt(240).buildAndRegister();
 }
-
 
 // Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();

@@ -299,6 +299,7 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/piston",
 	"tfc:vanilla/rail/powered_rail",
 	"tfc:vanilla/rail/steel_detector_rail",
+	"tfc:vanilla/rail/detector_rail",
 	"tfc:vanilla/rail/rail",
 	"tfc:vanilla/rail/steel_rail",
 	"tfc:vanilla/rail/activator_rail",
