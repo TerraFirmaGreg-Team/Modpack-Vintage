@@ -501,7 +501,7 @@ macerator.findRecipe(2, [<minecraft:stone_slab:1>], null).remove();
 // Small Pile of Stone Dust * 6
 macerator.findRecipe(2, [<minecraft:stone_brick_stairs:0>], null).remove();
 // Small Pile of Stone Dust * 6
-macerator.findRecipe(2, [<minecraft:red_sandstone_stairs:0>], null).eeremove();
+macerator.findRecipe(2, [<minecraft:red_sandstone_stairs:0>], null).remove();
 // Small Pile of Stone Dust * 2
 macerator.findRecipe(2, [<minecraft:stone_slab:2>], null).remove();
 // Small Pile of Stone Dust * 2
