@@ -461,6 +461,130 @@ for item in TFC_Raws {
     	.duration(16).EUt(240).buildAndRegister();
 }
 
+// Remove weird granite recipes
+// Polished Granite * 1
+autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:water> * 200]).remove();
+// Polished Granite * 1
+autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:distilled_water> * 36]).remove();
+
+// Remove weird andesite recipes
+// Polished Andesite * 1
+autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:water> * 200]).remove();
+// Polished Andesite * 1
+autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:distilled_water> * 36]).remove();
+
+// Remove weird diorite recipes
+// Polished Diorite * 1
+autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:distilled_water> * 36]).remove();
+// Polished Diorite * 1
+autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:water> * 200]).remove();
+
+
+// Remove weird stone dust recipes
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:stonebrick:0>], null).remove();
+// Stone Dust * 8
+macerator.findRecipe(2, [<minecraft:furnace:0>], null).remove();
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:cobblestone:0>], null).remove();
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:cobblestone_wall:0>], null).remove();
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:mossy_cobblestone:0>], null).remove();
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:stone_pressure_plate:0>], null).remove();
+
+
+// Remove weird stone small dust recipes
+// Small Pile of Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_slab:1>], null).remove();
+// Small Pile of Stone Dust * 6
+macerator.findRecipe(2, [<minecraft:stone_brick_stairs:0>], null).remove();
+// Small Pile of Stone Dust * 6
+macerator.findRecipe(2, [<minecraft:red_sandstone_stairs:0>], null).eeremove();
+// Small Pile of Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_slab:2>], null).remove();
+// Small Pile of Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_slab:5>], null).remove();
+// Small Pile of Stone Dust * 6
+macerator.findRecipe(2, [<minecraft:sandstone_stairs:0>], null).remove();
+// Small Pile of Stone Dust * 6
+macerator.findRecipe(2, [<minecraft:stone_stairs:0>], null).remove();
+// Small Pile of Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_slab:0>], null).remove();
+// Small Pile of Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_slab:3>], null).remove();
+
+// Remove weird stone tiny dust recipes
+// Tiny Pile of Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:stone_button:0>], null).remove();
+
+// Remove weird wood pulp recipes
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:oak_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 14
+macerator.findRecipe(2, [<minecraft:wooden_pickaxe:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:wooden_shovel:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:spruce_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 2
+macerator.findRecipe(2, [<minecraft:wooden_slab:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:acacia_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:dark_oak_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 14
+macerator.findRecipe(2, [<minecraft:wooden_axe:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:birch_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 10
+macerator.findRecipe(2, [<minecraft:wooden_hoe:0>], null).remove();
+// Small Pile of Wood Pulp * 6
+macerator.findRecipe(2, [<minecraft:jungle_stairs:0>], null).remove();
+// Small Pile of Wood Pulp * 9
+macerator.findRecipe(2, [<minecraft:wooden_sword:0>], null).remove();
+// Diamond Dust * 2
+macerator.findRecipe(2, [<minecraft:diamond_hoe:0>], null).remove();
+// Diamond Dust * 2
+macerator.findRecipe(2, [<minecraft:diamond_sword:0>], null).remove();
+// Diamond Dust * 3
+macerator.findRecipe(2, [<minecraft:diamond_axe:0>], null).remove();
+// Diamond Dust * 1
+macerator.findRecipe(2, [<minecraft:diamond_shovel:0>], null).remove();
+// Diamond Dust * 3
+macerator.findRecipe(2, [<minecraft:diamond_pickaxe:0>], null).remove();
+// Iron Dust * 2
+macerator.findRecipe(2, [<minecraft:iron_hoe:0>], null).remove();
+// Iron Dust * 2
+macerator.findRecipe(2, [<minecraft:iron_sword:0>], null).remove();
+// Iron Dust * 1
+macerator.findRecipe(2, [<minecraft:iron_shovel:0>], null).remove();
+// Iron Dust * 3
+macerator.findRecipe(2, [<minecraft:iron_pickaxe:0>], null).remove();
+// Iron Dust * 3
+macerator.findRecipe(2, [<minecraft:iron_axe:0>], null).remove();
+// Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_sword:0>], null).remove();
+// Stone Dust * 2
+macerator.findRecipe(2, [<minecraft:stone_hoe:0>], null).remove();
+// Stone Dust * 3
+macerator.findRecipe(2, [<minecraft:stone_pickaxe:0>], null).remove();
+// Stone Dust * 3
+macerator.findRecipe(2, [<minecraft:stone_axe:0>], null).remove();
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:stone_shovel:0>], null).remove();
+// Gold Dust * 2
+macerator.findRecipe(2, [<minecraft:golden_sword:0>], null).remove();
+// Gold Dust * 1
+macerator.findRecipe(2, [<minecraft:golden_shovel:0>], null).remove();
+// Gold Dust * 3
+macerator.findRecipe(2, [<minecraft:golden_axe:0>], null).remove();
+// Gold Dust * 2
+macerator.findRecipe(2, [<minecraft:golden_hoe:0>], null).remove();
+// Gold Dust * 3
+macerator.findRecipe(2, [<minecraft:golden_pickaxe:0>], null).remove();
+
 // Remove weird dye recipes
 // Yellow Dye * 3
 extractor.findRecipe(2, [<minecraft:double_plant:0>], null).remove();

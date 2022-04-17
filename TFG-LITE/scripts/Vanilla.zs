@@ -212,17 +212,52 @@ packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withT
 // Фикс сундуков
 assembler.findRecipe(4, [<minecraft:planks> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
 
-// Удаление рецепта замшелых камней
+// Remove Coarse Dirt 
+mixer.findRecipe(4, [<minecraft:gravel:0>, <minecraft:dirt:0>], null).remove();
+
+// Удаление рецептов замшелых камней
 // Mossy Stone Bricks * 1
 assembler.findRecipe(1, [<minecraft:stonebrick:0>, <minecraft:vine:0>], null).remove();
 // Moss Stone * 1
 assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
 
-// Remove Walls
+// Удаление рецептов стен
 // Cobblestone Wall * 1
 assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
 // Mossy Cobblestone Wall * 1
 assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
+
+// Удаление рецептов полублоков
+// Stone Slab * 2
+cutter.findRecipe(7, [<minecraft:stone:0>], [<liquid:lubricant>]).remove();
+// Stone Slab * 2
+cutter.findRecipe(7, [<minecraft:stone:0>], [<liquid:distilled_water> * 3]).remove();
+// Stone Slab * 2
+cutter.findRecipe(7, [<minecraft:stone:0>], [<liquid:water> * 4]).remove();
+// Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:sandstone:0>], [<liquid:lubricant>]).remove();
+// Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:sandstone:0>], [<liquid:distilled_water> * 3]).remove();
+// Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:sandstone:0>], [<liquid:water> * 4]).remove();
+// Cobblestone Slab * 2
+cutter.findRecipe(7, [<minecraft:cobblestone:0>], [<liquid:lubricant>]).remove();
+// Cobblestone Slab * 2
+cutter.findRecipe(7, [<minecraft:cobblestone:0>], [<liquid:distilled_water> * 3]).remove();
+// Cobblestone Slab * 2
+cutter.findRecipe(7, [<minecraft:cobblestone:0>], [<liquid:water> * 4]).remove();
+// Stone Bricks Slab * 2
+cutter.findRecipe(7, [<minecraft:stonebrick:0>], [<liquid:lubricant>]).remove();
+// Stone Bricks Slab * 2
+cutter.findRecipe(7, [<minecraft:stonebrick:0>], [<liquid:distilled_water> * 3]).remove();
+// Stone Bricks Slab * 2
+cutter.findRecipe(7, [<minecraft:stonebrick:0>], [<liquid:water> * 4]).remove();
+// Red Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:red_sandstone:0>], [<liquid:lubricant>]).remove();
+// Red Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:red_sandstone:0>], [<liquid:distilled_water> * 3]).remove();
+// Red Sandstone Slab * 2
+cutter.findRecipe(7, [<minecraft:red_sandstone:0>], [<liquid:water> * 4]).remove();
 
 // Remove Fences
 // Oak Fence * 1
@@ -306,6 +341,15 @@ macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
 // Mince Meat * 1
 macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
 // Mince Meat
+macerator.recipeBuilder()
+    .inputs([<ore:categoryMeat>])
+    .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
+    .duration(105).EUt(2).buildAndRegister();
+
+// Исправление гравия и кремния
+// Stone Dust * 1
+macerator.findRecipe(2, [<minecraft:gravel:0>], null).remove();
+// Stone Dust * 1, Flint * 1 - 10%
 macerator.recipeBuilder()
     .inputs([<ore:categoryMeat>])
     .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
@@ -422,13 +466,22 @@ mixer.recipeBuilder()
     .outputs(<minecraft:fermented_spider_eye>)
     .duration(300).EUt(2).buildAndRegister();
 
-// Исправление Saplings -> Sticks
+// Исправление Саженцы -> Палки
 // Stick * 1
 lathe.findRecipe(7, [<minecraft:sapling:0>], null).remove();
 // Stick * 1
 lathe.recipeBuilder()
     .inputs([<ore:treeSapling>])
     .outputs(<minecraft:stick>, <metaitem:dustTinyWood>)
+    .duration(16).EUt(7).buildAndRegister();
+
+// Исправление Полублок -> Миска
+// Bowl * 1
+lathe.findRecipe(7, [<minecraft:wooden_slab:0>], null).remove();
+// Bowl * 1
+lathe.recipeBuilder()
+    .inputs([<ore:slabWood>])
+    .outputs(<minecraft:bowl>, <metaitem:dustTinyWood>)
     .duration(16).EUt(7).buildAndRegister();
 
 // Другое

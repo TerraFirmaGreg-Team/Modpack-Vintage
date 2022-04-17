@@ -30,11 +30,6 @@ for item in All_Seeds {
 	<ore:listAllSeeds>.add(item);
 }
 
-// OreDicionary for all slab
-for item in TFC_Slabs_Smooth {
-	<ore:slabStone>.add(item);
-}
-
 // remove gemDiamond
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
 
@@ -83,6 +78,11 @@ for item in TFC_Loom {
 // Rock Types GT = Rock Types TFC
 //<ore:stoneBasalt>.add(<tfc:raw/basalt>);
 //<ore:stoneMarble>.add(<tfc:raw/marble>);
+
+// OreDicionary for all slab
+for item in TFC_Slabs_Smooth {
+	<ore:slabStone>.add(item);
+}
 
 // Sugarcane
 <ore:sugarcane>.add(<tfc:food/sugarcane>);
@@ -367,3 +367,6 @@ for item in Gem_Exquisite {
 
 // Remove treeSapling OreDict
 <ore:treeSapling>.remove(<minecraft:sapling:*>);
+
+// Remove slabWood
+<ore:slabWood>.remove(<minecraft:wooden_slab:*>);
