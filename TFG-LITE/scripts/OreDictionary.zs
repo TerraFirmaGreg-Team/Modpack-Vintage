@@ -357,5 +357,8 @@ for item in Gem_Exquisite {
 // Remove sugarcane oredict
 <ore:sugarcane>.remove(<minecraft:reeds>);
 
-// Remove bookshelf oredict
+// Remove Bookshelf oredict
 <ore:bookshelf>.remove(<minecraft:bookshelf>);
+
+// Remove treeSapling OreDict
+<ore:treeSapling>.remove(<minecraft:sapling:*>);

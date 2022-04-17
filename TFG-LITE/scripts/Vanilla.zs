@@ -206,6 +206,24 @@ assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <gregtech:meta_item_1:46
 // Remove Wooden Trapdoor
 assembler.findRecipe(16, [<ore:plateIron>.firstItem * 4, <minecraft:trapdoor>], null).remove();
 
+// Фикс снопа сена
+packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
+
+// Фикс сундуков
+assembler.findRecipe(4, [<minecraft:planks> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
+
+// Удаление рецепта замшелых камней
+// Mossy Stone Bricks * 1
+assembler.findRecipe(1, [<minecraft:stonebrick:0>, <minecraft:vine:0>], null).remove();
+// Moss Stone * 1
+assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
+
+// Remove Walls
+// Cobblestone Wall * 1
+assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
+// Mossy Cobblestone Wall * 1
+assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
+
 // Remove Fences
 // Oak Fence * 1
 assembler.findRecipe(4, [<minecraft:planks:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
@@ -234,6 +252,14 @@ assembler.findRecipe(4, [<minecraft:planks:4> * 2, <minecraft:stick:0> * 2, <met
 // Dark Oak Fence Gate * 1
 assembler.findRecipe(4, [<minecraft:planks:5> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 
+// Remove StoneBricks
+// Stone Bricks * 1
+assembler.findRecipe(4, [<minecraft:stone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 4})], null).remove();
+// Cracked Stone Bricks * 1
+forge_hammer.findRecipe(2, [<minecraft:stonebrick:0>], null).remove();
+// Chiseled Stone Bricks * 1
+laser_engraver.findRecipe(16, [<minecraft:stone:0>, <metaitem:lensGlass>], null).remove();
+
 // Remove Stone Buttons
 cutter.findRecipe(7, [<minecraft:stone_pressure_plate:0>], [<liquid:lubricant>]).remove();
 cutter.findRecipe(7, [<minecraft:stone_pressure_plate:0>], [<liquid:distilled_water> * 3]).remove();
@@ -258,7 +284,154 @@ assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:4> * 4], [<li
 // Dark Oak Door * 1
 assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:5> * 4], [<liquid:iron> * 16]).remove();
 
-//Другое
+// Исправление рецепта диспенсера
+// Dispenser * 1
+assembler.findRecipe(30, [<minecraft:cobblestone:0> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <minecraft:string:0>], null).remove();
+assembler.recipeBuilder()
+    .inputs([<ore:cobblestone> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <ore:string>])
+    .outputs(<minecraft:dispenser>)
+    .duration(100).EUt(30).buildAndRegister();
+
+// Исправление переработки мяса
+// Small Pile of Mince Meat * 6
+macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
+// Small Pile of Mince Meat * 6
+macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
+// Small Pile of Mince Meat * 6
+macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
+// Small Pile of Mince Meat * 6
+macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
+// Mince Meat * 1
+macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
+// Mince Meat * 1
+macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
+// Mince Meat
+macerator.recipeBuilder()
+    .inputs([<ore:categoryMeat>])
+    .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
+    .duration(105).EUt(2).buildAndRegister();
+
+// Исправление рецепта стойки для брони
+// Armor Stand * 1
+assembler.findRecipe(7, [<minecraft:stone_slab:0>, <minecraft:stick:0> * 6], null).remove();
+assembler.recipeBuilder()
+    .inputs([<ore:slabStonePolished>, <minecraft:stick> * 6])
+    .outputs(<minecraft:armor_stand>)
+    .duration(300).EUt(7).buildAndRegister();
+
+// Исправлние рецепта воронки
+// Hopper * 1
+assembler.findRecipe(2, [<minecraft:chest:0>, <metaitem:plateIron> * 5], null).remove();
+assembler.findRecipe(2, [<minecraft:trapped_chest:0>, <metaitem:plateWroughtIron> * 5], null).remove();
+// Hopper * 1
+assembler.recipeBuilder()
+    .inputs([<ore:chest>, <ore:plateIron> * 5 | <ore:plateWroughtIron> * 5])
+    .outputs(<minecraft:hopper>)
+    .duration(400).EUt(2).buildAndRegister();
+
+// Удаление переработки булыжника
+// Cobblestone Stairs * 4
+assembler.findRecipe(1, [<minecraft:mossy_cobblestone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Gravel * 1
+forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
+
+// Fix Stone Exploit
+// Stone * 1
+compressor.findRecipe(2, [<metaitem:plateStone> * 9], null).remove();
+compressor.recipeBuilder()
+    .inputs([<metaitem:plateStone> * 9])
+    .outputs(<tfc:raw/basalt>)
+    .duration(300).EUt(2).buildAndRegister();
+
+// Fix Dirt Exploit
+// Dirt * 1
+macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
+macerator.recipeBuilder()
+    .inputs([<metaitem:bio_chaff>])
+    .outputs(<tfc:dirt/basalt>)
+    .duration(300).EUt(2).buildAndRegister();
+
+// Fix Gravel Exploit
+forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
+
+// Fix Boolshelf Exploit
+extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
+extractor.recipeBuilder()
+    .inputs([<ore:bookshelf>])
+    .outputs(<minecraft:book> * 3)
+    .duration(300).EUt(2).buildAndRegister();
+
+// Удаление переработки ванильного песка
+// Diamond Small Pile * 1
+centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
+centrifuge.recipeBuilder()
+    .inputs([<tfc:sand/quartzite>])
+    .chancedOutput(<ore:dustTinyDiamond>.firstItem, 100, 100)
+    .chancedOutput(<ore:dustIron>.firstItem, 5000, 500)
+    .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
+    .duration(275).EUt(30).buildAndRegister();
+// Oil * 500
+centrifuge.findRecipe(5, [<gregtech:ore_oilsands_0:0>], null).remove();
+centrifuge.recipeBuilder()
+    .inputs([<ore:oreOilsands>])
+    .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
+    .fluidOutputs([<liquid:oil> * 500])
+    .duration(200).EUt(5).buildAndRegister();
+// Oil * 80
+centrifuge.findRecipe(80, [<minecraft:soul_sand:0>], null).remove();
+// Helium Gas * 120
+centrifuge.findRecipe(20, [<metaitem:dustEndstone>], null).remove();
+// Myshroom * 1
+centrifuge.findRecipe(30, [<minecraft:mycelium:0>], null).remove();
+// Quartz Sand - 2
+macerator.findRecipe(2, [<minecraft:sand>], null).remove();
+macerator.recipeBuilder()
+    .inputs([<ore:sand>])
+    .outputs(<ore:dustQuartzSand>.firstItem)
+    .duration(50).EUt(2).buildAndRegister();
+
+// Исправление переработки коричневого гриба
+// Methane Gas * 18
+centrifuge.findRecipe(5, [<minecraft:brown_mushroom:0>], null).remove();
+// Fermented Spider Eye * 1
+mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
+// Methane Gas * 18
+centrifuge.recipeBuilder()
+    .inputs([<ore:mushroombrown>])
+    .fluidOutputs([<liquid:methane> * 18])
+    .duration(150).EUt(5).buildAndRegister();
+// Fermented Spider Eye * 1
+mixer.recipeBuilder()
+    .inputs([<ore:dustSugar>, <ore:mushroombrown>, <minecraft:spider_eye>])
+    .outputs(<minecraft:fermented_spider_eye>)
+    .duration(300).EUt(2).buildAndRegister();
+
+// Исправление переработки красного гриба
+// Methane Gas * 18
+centrifuge.findRecipe(5, [<minecraft:red_mushroom:0>], null).remove();
+// Fermented Spider Eye * 1
+mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:red_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
+// Methane Gas * 18
+centrifuge.recipeBuilder()
+    .inputs([<ore:mushroomRed>])
+    .fluidOutputs([<liquid:methane> * 18])
+    .duration(150).EUt(5).buildAndRegister();
+// Fermented Spider Eye * 1
+mixer.recipeBuilder()
+    .inputs([<ore:dustSugar>, <ore:mushroomRed>, <minecraft:spider_eye>])
+    .outputs(<minecraft:fermented_spider_eye>)
+    .duration(300).EUt(2).buildAndRegister();
+
+// Исправление Saplings -> Sticks
+// Stick * 1
+lathe.findRecipe(7, [<minecraft:sapling:0>], null).remove();
+// Stick * 1
+lathe.recipeBuilder()
+    .inputs([<ore:treeSapling>])
+    .outputs(<minecraft:stick>, <metaitem:dustTinyWood>)
+    .duration(16).EUt(7).buildAndRegister();
+
+// Другое
 recipes.removeByRecipeName("minecraft:stone_pressure_plate");
 recipes.removeByRecipeName("minecraft:light_weighted_pressure_plate");
 recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
@@ -268,6 +441,11 @@ recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("minecraft:diamond_block");
 
 // --- Adding Recipes
+
+// Крафт некоторых блоков в компрессоре
+compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
+compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
+compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
 
 // Лампа
 recipes.addShaped(<minecraft:redstone_lamp>,
