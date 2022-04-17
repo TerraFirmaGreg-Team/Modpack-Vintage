@@ -10,23 +10,9 @@
 	tasks: [{
 		uid: "5466dcd7",
 		type: "item",
-		icon: {
-			id: "tfc:food/sugarcane",
-			ForgeCaps: {
-				"tfc:food": {
-					creationDate: -9223372036854775808L,
-					traits: []
-				}
-			}
-		},
+		icon: "tfc:food/sugarcane",
 		items: [{
-			id: "tfc:food/sugarcane",
-			ForgeCaps: {
-				"tfc:food": {
-					creationDate: -9223372036854775808L,
-					traits: []
-				}
-			}
+			item: "tfc:food/sugarcane"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

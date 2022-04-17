@@ -3,7 +3,7 @@
 	icon: "gregtech:machine 1 986",
 	disable_toast: true,
 	x: -29.5d,
-	y: -7.5d,
+	y: -8.0d,
 	text: [
 		"The §9Integrated§r Circuit line is not a strict upgrade in terms of cost, but works as a stepping stone towards the next tier.",
 		"",

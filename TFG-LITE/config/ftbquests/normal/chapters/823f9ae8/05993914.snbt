@@ -31,6 +31,8 @@
 		},
 		{
 			item: "tfc:raw/dacite"
-		}]
+		}],
+		consume_items: false,
+		only_from_crafting: false
 	}]
 }

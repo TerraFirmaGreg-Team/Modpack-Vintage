@@ -26,13 +26,7 @@
 		uid: "b5353036",
 		type: "item",
 		items: [{
-			id: "minecraft:stick",
-			ForgeCaps: {
-				"tfc:item_size": {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
+			item: "minecraft:stick"
 		}],
 		count: 3L
 	},

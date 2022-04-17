@@ -3,7 +3,7 @@
 	icon: "gregtech:machine 1 989",
 	disable_toast: true,
 	x: -27.5d,
-	y: -7.5d,
+	y: -8.0d,
 	text: [
 		"This is the §9Nano§r Circuit line.",
 		"",

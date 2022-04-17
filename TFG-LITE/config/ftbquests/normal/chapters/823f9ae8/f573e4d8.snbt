@@ -28,13 +28,7 @@
 		uid: "a5a07fb6",
 		type: "item",
 		items: [{
-			id: "tfctech:powder/lime",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
+			item: "tfctech:powder/lime"
 		}]
 	},
 	{

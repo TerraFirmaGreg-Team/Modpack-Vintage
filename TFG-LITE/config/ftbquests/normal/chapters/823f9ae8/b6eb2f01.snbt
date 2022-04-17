@@ -10,17 +10,7 @@
 		uid: "48f2af17",
 		type: "item",
 		items: [{
-			id: "tfcthings:diamond_grit",
-			ForgeCaps: {
-				Parent: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
+			item: "tfcthings:diamond_grit"
 		}]
 	}]
 }

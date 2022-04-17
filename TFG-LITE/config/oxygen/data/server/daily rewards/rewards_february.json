@@ -1,0 +1,379 @@
+[
+  {
+    "day": 1,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 2,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 3,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 4,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 5,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 6,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 7,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 8,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 9,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 10,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 11,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 12,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 13,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 14,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 15,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 16,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 17,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 18,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 19,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 20,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 21,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 22,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 23,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 24,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 25,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 26,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 27,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 28,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "day": 29,
+    "type": "ITEM",
+    "description": "oxygen_dailyrewards.description.item",
+    "amount": 1,
+    "special": false,
+    "itemstack": {
+      "registry_name": "minecraft:emerald",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  }
+]

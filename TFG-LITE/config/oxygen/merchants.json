@@ -1,0 +1,8 @@
+{
+  "version": "0.11.1:beta:0",
+  "server": {
+    "merchant_menu_operations_timeout_millis": 120000,
+    "allow_management_ingame": true,
+    "advanced_logging": false
+  }
+}

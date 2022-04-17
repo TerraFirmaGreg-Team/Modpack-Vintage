@@ -3,7 +3,7 @@
 	icon: "gregtech:machine 1 992",
 	disable_toast: true,
 	x: -24.5d,
-	y: -7.5d,
+	y: -8.0d,
 	text: [
 		"This is the §9Wetware§r Circuit line.",
 		"",

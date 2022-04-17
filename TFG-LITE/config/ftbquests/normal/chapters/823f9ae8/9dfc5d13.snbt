@@ -8,33 +8,7 @@
 		uid: "9dcfbf42",
 		type: "item",
 		items: [{
-			id: "tfc:metal/sheet/wrought_iron",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				},
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "tfc:metal/sheet/wrought_iron"
 		}],
 		count: 24L
 	}]

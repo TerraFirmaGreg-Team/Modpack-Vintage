@@ -30,6 +30,11 @@ for item in All_Seeds {
 	<ore:listAllSeeds>.add(item);
 }
 
+// OreDicionary for all slab
+for item in TFC_Slabs_Smooth {
+	<ore:slabStone>.add(item);
+}
+
 // remove gemDiamond
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
 

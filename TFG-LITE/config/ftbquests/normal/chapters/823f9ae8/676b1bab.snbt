@@ -1,14 +1,6 @@
 {
 	title: "{tfg.quests.primitive.meat.title}",
-	icon: {
-		id: "tfc:food/cooked_venison",
-		ForgeCaps: {
-			"tfc:food": {
-				creationDate: -9223372036854775808L,
-				traits: []
-			}
-		}
-	},
+	icon: "tfc:food/cooked_venison",
 	x: -32.0d,
 	y: -8.5d,
 	shape: "circle",

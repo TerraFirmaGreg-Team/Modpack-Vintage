@@ -11,21 +11,7 @@
 		uid: "a1a68b0d",
 		type: "item",
 		items: [{
-			id: "tfctech:metal/iron_bowl_mount",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "tfctech:metal/iron_bowl_mount"
 		}]
 	}]
 }

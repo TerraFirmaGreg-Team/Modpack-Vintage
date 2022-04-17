@@ -12,21 +12,7 @@
 		uid: "15ff69e6",
 		type: "item",
 		items: [{
-			id: "tfctech:metal/iron_groove",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "tfctech:metal/iron_groove"
 		}]
 	}]
 }
