@@ -365,7 +365,7 @@ for i, TFC_Gravel in TFC_Gravel {
 
 // Гравий -> Песок
 for i, TFC_Sands in TFC_Sands {
-    macerator.recipeBuilder()
+    forge_hammer.recipeBuilder()
     	.inputs([TFC_Gravel[i]])
     	.outputs(TFC_Sands)
     	.duration(200).EUt(7).buildAndRegister();
@@ -859,7 +859,7 @@ Anvil.addRecipe("tfc:nicefix", <tfc:metal/ingot/wrought_iron>, <ore:ingotWrought
 // Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 electrolyzer.recipeBuilder()
-	.inputs(<ore:sand> * 8)
+	.inputs(<ore:sandSilica> * 8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(26).buildAndRegister();
 

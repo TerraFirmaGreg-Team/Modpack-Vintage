@@ -393,8 +393,8 @@ forge_hammer.recipeBuilder()
 
 // Песок + Гравий --> цемент тфк
 mixer.recipeBuilder()
-    .inputs(<ore:sand>*4, <ore:gravel>*4)
-    .outputs(<tfc:aggregate>*8)
+    .inputs(<ore:sand> * 4, <ore:gravel> * 4)
+    .outputs(<tfc:aggregate> * 8)
     .duration(20).EUt(4).buildAndRegister();
 
 // Infinite Water Cover 
@@ -458,31 +458,14 @@ for item in TFC_Raws {
     rock_breaker.recipeBuilder()
     	.notConsumable(item)
     	.outputs(item)
-    	.duration(16).EUt(240).buildAndRegister();
+    	.duration(16).EUt(32).buildAndRegister();
 }
-
-// Remove weird granite recipes
-// Polished Granite * 1
-autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:water> * 200]).remove();
-// Polished Granite * 1
-autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:distilled_water> * 36]).remove();
-
-// Remove weird andesite recipes
-// Polished Andesite * 1
-autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:water> * 200]).remove();
-// Polished Andesite * 1
-autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:distilled_water> * 36]).remove();
-
-// Remove weird diorite recipes
-// Polished Diorite * 1
-autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:distilled_water> * 36]).remove();
-// Polished Diorite * 1
-autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:water> * 200]).remove();
-
 
 // Remove weird stone dust recipes
 // Stone Dust * 1
 macerator.findRecipe(2, [<minecraft:stonebrick:0>], null).remove();
+// Stone Dust * 1
+thermal_centrifuge.findRecipe(48, [<minecraft:cobblestone:0>], null).remove();
 // Stone Dust * 8
 macerator.findRecipe(2, [<minecraft:furnace:0>], null).remove();
 // Stone Dust * 1
@@ -493,7 +476,6 @@ macerator.findRecipe(2, [<minecraft:cobblestone_wall:0>], null).remove();
 macerator.findRecipe(2, [<minecraft:mossy_cobblestone:0>], null).remove();
 // Stone Dust * 1
 macerator.findRecipe(2, [<minecraft:stone_pressure_plate:0>], null).remove();
-
 
 // Remove weird stone small dust recipes
 // Small Pile of Stone Dust * 2

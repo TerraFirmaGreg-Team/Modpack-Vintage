@@ -9,6 +9,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     // Blocks
     <minecraft:stone>,
     <minecraft:grass>,
+    <minecraft:gravel>,
     <minecraft:dirt>,
     <minecraft:dirt:1>,
     <minecraft:dirt:2>,
@@ -188,6 +189,9 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
+// Удаление рецепта зеленого красителя
+furnace.remove(<minecraft:dye:2>);
+
 // Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 
@@ -226,6 +230,18 @@ assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remo
 assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
 // Mossy Cobblestone Wall * 1
 assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
+
+// Удаление рецептов красного песка
+// Red Sandstone * 1
+compressor.findRecipe(2, [<minecraft:sand:1> * 4], null).remove();
+// Smooth Red Sandstone * 1
+assembler.findRecipe(4, [<minecraft:red_sandstone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Red Sand * 1
+forge_hammer.findRecipe(2, [<minecraft:red_sandstone:0>], null).remove();
+// Chiseled Red Sandstone * 1
+laser_engraver.findRecipe(16, [<minecraft:red_sandstone:2>, <metaitem:lensGlass>], null).remove();
+// Red Sandstone * 1
+assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Удаление рецептов полублоков
 // Stone Slab * 2
@@ -272,6 +288,24 @@ assembler.findRecipe(4, [<minecraft:planks:3>, <metaitem:circuit.integrated>.wit
 assembler.findRecipe(4, [<minecraft:planks:4>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 // Dark Oak Fence * 1
 assembler.findRecipe(4, [<minecraft:planks:5>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
+// Remove weird granite recipes
+// Polished Granite * 1
+autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:water> * 200]).remove();
+// Polished Granite * 1
+autoclave.findRecipe(7, [<minecraft:stone:1>], [<liquid:distilled_water> * 36]).remove();
+
+// Remove weird andesite recipes
+// Polished Andesite * 1
+autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:water> * 200]).remove();
+// Polished Andesite * 1
+autoclave.findRecipe(7, [<minecraft:stone:5>], [<liquid:distilled_water> * 36]).remove();
+
+// Remove weird diorite recipes
+// Polished Diorite * 1
+autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:distilled_water> * 36]).remove();
+// Polished Diorite * 1
+autoclave.findRecipe(7, [<minecraft:stone:3>], [<liquid:water> * 200]).remove();
 
 // Remove Gates
 // Oak Fence Gate * 1
@@ -346,14 +380,39 @@ macerator.recipeBuilder()
     .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
     .duration(105).EUt(2).buildAndRegister();
 
+// Исправление песка
+// Sandstone * 1
+compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
+// Sand * 1
+forge_hammer.findRecipe(16, [<minecraft:gravel:0>], null).remove();
+// Sand * 1
+forge_hammer.findRecipe(2, [<minecraft:sandstone:0>], null).remove();
+// Smooth Sandstone * 1
+assembler.findRecipe(4, [<minecraft:sandstone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Sandstone Stairs * 4
+assembler.findRecipe(1, [<minecraft:sandstone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+
 // Исправление гравия и кремния
 // Stone Dust * 1
 macerator.findRecipe(2, [<minecraft:gravel:0>], null).remove();
 // Stone Dust * 1, Flint * 1 - 10%
 macerator.recipeBuilder()
-    .inputs([<ore:categoryMeat>])
-    .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
+    .inputs([<ore:gravel>])
+    .outputs(<metaitem:dustStone>)
+    .chancedOutput(<minecraft:flint>, 100, 100)
     .duration(105).EUt(2).buildAndRegister();
+// Flint * 1
+sifter.findRecipe(16, [<minecraft:gravel:0>], null).remove();
+// Flint * 1 - 100%, 25%, 33%, 60%, 80%, 90%
+sifter.recipeBuilder()
+    .inputs([<ore:gravel>])
+    .outputs(<minecraft:flint>)
+    .chancedOutput(<minecraft:flint>, 2500, 0)
+    .chancedOutput(<minecraft:flint>, 3300, 0)
+    .chancedOutput(<minecraft:flint>, 6300, 0)
+    .chancedOutput(<minecraft:flint>, 8300, 0)
+    .chancedOutput(<minecraft:flint>, 9300, 0)
+    .duration(275).EUt(16).buildAndRegister();
 
 // Исправление рецепта стойки для брони
 // Armor Stand * 1
@@ -378,6 +437,10 @@ assembler.recipeBuilder()
 assembler.findRecipe(1, [<minecraft:mossy_cobblestone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 // Gravel * 1
 forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
+
+// Удаление переработки кирпичей
+// Stone Brick Stairs * 4
+assembler.findRecipe(1, [<minecraft:stonebrick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
 // Fix Stone Exploit
 // Stone * 1
