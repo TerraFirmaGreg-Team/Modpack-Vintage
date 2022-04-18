@@ -732,4 +732,3 @@ waterflasks:item.flaskbreak
 charset:block.crank
 portality:portal
 portality:portal_teleport
-signal_stuff:whistle
