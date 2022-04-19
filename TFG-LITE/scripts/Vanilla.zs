@@ -189,8 +189,16 @@ for item in ItemsToRemove{
     recipes.remove(item);
 }
 
-// Удаление рецепта зеленого красителя
-furnace.remove(<minecraft:dye:2>);
+// Удаление рецептов печи
+val ItemsToRemoveFromFurnace as IItemStack[] = [
+    <minecraft:dye:2>,
+    <minecraft:stone>,
+
+
+] as IItemStack[];
+for item in ItemsToRemoveFromFurnace {
+    furnace.remove(item);
+}
 
 // Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
@@ -214,7 +222,7 @@ assembler.findRecipe(16, [<ore:plateIron>.firstItem * 4, <minecraft:trapdoor>], 
 packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
 
 // Фикс сундуков
-assembler.findRecipe(4, [<minecraft:planks> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
+assembler.findRecipe(4, [<metaitem:plateWood> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
 
 // Remove Coarse Dirt 
 mixer.findRecipe(4, [<minecraft:gravel:0>, <minecraft:dirt:0>], null).remove();
@@ -231,6 +239,22 @@ assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated
 // Mossy Cobblestone Wall * 1
 assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
 
+// Удаление рецептов обычного песка
+// Chiseled Sandstone * 1
+laser_engraver.findRecipe(16, [<minecraft:sandstone:2>, <metaitem:lensGlass>], null).remove();
+// Sandstone * 1
+assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Sandstone * 1
+compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
+// Sand * 1
+forge_hammer.findRecipe(16, [<minecraft:gravel:0>], null).remove();
+// Sand * 1
+forge_hammer.findRecipe(2, [<minecraft:sandstone:0>], null).remove();
+// Smooth Sandstone * 1
+assembler.findRecipe(4, [<minecraft:sandstone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Sandstone Stairs * 4
+assembler.findRecipe(1, [<minecraft:sandstone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+
 // Удаление рецептов красного песка
 // Red Sandstone * 1
 compressor.findRecipe(2, [<minecraft:sand:1> * 4], null).remove();
@@ -242,6 +266,20 @@ forge_hammer.findRecipe(2, [<minecraft:red_sandstone:0>], null).remove();
 laser_engraver.findRecipe(16, [<minecraft:red_sandstone:2>, <metaitem:lensGlass>], null).remove();
 // Red Sandstone * 1
 assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
+// Удаление рецептов деревянных ступеней
+// Oak Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Spruce Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:1> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Birch Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:2> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Jungle Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:3> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Acacia Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:4> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+// Dark Oak Wood Stairs * 4
+assembler.findRecipe(1, [<minecraft:planks:5> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
 // Удаление рецептов полублоков
 // Stone Slab * 2
@@ -379,18 +417,6 @@ macerator.recipeBuilder()
     .inputs([<ore:categoryMeat>])
     .outputs(<ore:dustMeat>.firstItem, <ore:dustTinyBone>.firstItem)
     .duration(105).EUt(2).buildAndRegister();
-
-// Исправление песка
-// Sandstone * 1
-compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
-// Sand * 1
-forge_hammer.findRecipe(16, [<minecraft:gravel:0>], null).remove();
-// Sand * 1
-forge_hammer.findRecipe(2, [<minecraft:sandstone:0>], null).remove();
-// Smooth Sandstone * 1
-assembler.findRecipe(4, [<minecraft:sandstone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
-// Sandstone Stairs * 4
-assembler.findRecipe(1, [<minecraft:sandstone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
 // Исправление гравия и кремния
 // Stone Dust * 1

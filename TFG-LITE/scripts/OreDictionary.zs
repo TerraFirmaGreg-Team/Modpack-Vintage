@@ -359,14 +359,23 @@ for item in Gem_Exquisite {
 // Iron
 <ore:oreIron>.remove(<minecraft:iron_ore>);
 
-// Remove sugarcane oredict
+// Remove sugarcane OreDict
 <ore:sugarcane>.remove(<minecraft:reeds>);
 
-// Remove Bookshelf oredict
+// Remove Bookshelf OreDict
 <ore:bookshelf>.remove(<minecraft:bookshelf>);
 
 // Remove treeSapling OreDict
 <ore:treeSapling>.remove(<minecraft:sapling:*>);
 
-// Remove slabWood
+// Remove slabWood OreDict
 <ore:slabWood>.remove(<minecraft:wooden_slab:*>);
+
+// Remove plankWood OreDict
+<ore:plankWood>.remove(<minecraft:planks:*>);
+
+// Remove logWood OreDict
+<ore:logWood>.remove(<minecraft:log:*>);
+
+// Remove stairWood
+<ore:stairWood>.remove(<minecraft:oak_stairs>, <minecraft:spruce_stairs>, <minecraft:birch_stairs>, <minecraft:jungle_stairs>, <minecraft:acacia_stairs>, <minecraft:dark_oak_stairs>);

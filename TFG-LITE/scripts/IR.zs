@@ -14,11 +14,20 @@ val ItemsToRemove as IItemStack[] = [
 		<signal_stuff:controlswitches>,
 		<immersiverailroading:item_hook>,
 		<signal_stuff:crossinglamps>,
-        <signal_stuff:buffericon>
+        <signal_stuff:buffericon>,
+        <signal_stuff:ballastsand>,
+        <signal_stuff:ballastdirt>
 ];
 for item in ItemsToRemove{
     recipes.remove(item);
 }
+
+// Ballast Sand
+recipes.addShapeless(<signal_stuff:ballastsand>, [<ore:railBed>, <ore:sand>]);
+
+// Ballast Dirt
+recipes.addShapeless(<signal_stuff:ballastdirt>, [<ore:railBed>, <ore:dirt>]);
+
 // Переключающейся фонарь
 assembler.recipeBuilder()
     .inputs([<signal_stuff:post>, <projectred-illumination:inverted_fixture_light:14> * 2, <ore:circuitUlv>])
