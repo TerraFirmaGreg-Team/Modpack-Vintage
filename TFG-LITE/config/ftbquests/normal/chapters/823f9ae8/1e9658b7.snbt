@@ -15,13 +15,55 @@
 		uid: "41ff969f",
 		type: "item",
 		items: [{
-			item: "tfc:metal/anvil/bismuth_bronze"
+			id: "tfc:metal/anvil/bismuth_bronze",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "tfc:metal/anvil/black_bronze"
+			id: "tfc:metal/anvil/black_bronze",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "tfc:metal/anvil/bronze"
+			id: "tfc:metal/anvil/bronze",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

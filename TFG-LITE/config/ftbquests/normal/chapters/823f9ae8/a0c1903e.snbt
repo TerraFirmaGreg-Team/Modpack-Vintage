@@ -11,7 +11,13 @@
 		uid: "0358cf6b",
 		type: "item",
 		items: [{
-			item: "tfc:straw"
+			id: "tfc:straw",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		}],
 		count: 8L
 	}]

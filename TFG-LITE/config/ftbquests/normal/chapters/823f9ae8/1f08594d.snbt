@@ -10,7 +10,13 @@
 		uid: "d48ff754",
 		type: "item",
 		items: [{
-			item: "improvedbackpacks:tanned_leather"
+			id: "improvedbackpacks:tanned_leather",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		}]
 	}]
 }

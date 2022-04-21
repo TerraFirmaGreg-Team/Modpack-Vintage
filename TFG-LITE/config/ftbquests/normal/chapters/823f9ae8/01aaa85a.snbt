@@ -1,6 +1,14 @@
 {
 	title: "{tfg.quests.primitive.flux.title}",
-	icon: "tfc:rock/granite",
+	icon: {
+		id: "tfc:rock/granite",
+		ForgeCaps: {
+			"tfc:item_heat": {
+				ticks: -1L,
+				heat: 0.0f
+			}
+		}
+	},
 	x: -26.0d,
 	y: 0.0d,
 	shape: "hexagon",
@@ -13,16 +21,40 @@
 		uid: "0b0a99ad",
 		type: "item",
 		items: [{
-			item: "tfc:rock/chalk"
+			id: "tfc:rock/chalk",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfc:rock/dolomite"
+			id: "tfc:rock/dolomite",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfc:rock/marble"
+			id: "tfc:rock/marble",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfc:rock/limestone"
+			id: "tfc:rock/limestone",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		}],
 		count: 10L
 	}]

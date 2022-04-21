@@ -9,7 +9,17 @@
 		uid: "1b831b1d",
 		type: "item",
 		items: [{
-			item: "tfcthings:grindstone_quartz"
+			id: "tfcthings:grindstone_quartz",
+			ForgeCaps: {
+				Parent: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

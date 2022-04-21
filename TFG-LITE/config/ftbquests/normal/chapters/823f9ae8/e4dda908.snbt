@@ -11,16 +11,40 @@
 		uid: "f9b15d44",
 		type: "item",
 		items: [{
-			item: "minecraft:clay_ball"
+			id: "minecraft:clay_ball",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfcflorae:ceramics/stoneware/stoneware_clay"
+			id: "tfcflorae:ceramics/stoneware/stoneware_clay",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfcflorae:ceramics/kaolinite/kaolinite_clay"
+			id: "tfcflorae:ceramics/kaolinite/kaolinite_clay",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		},
 		{
-			item: "tfcflorae:ceramics/earthenware/earthenware_clay"
+			id: "tfcflorae:ceramics/earthenware/earthenware_clay",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
 		}]
 	}]
 }

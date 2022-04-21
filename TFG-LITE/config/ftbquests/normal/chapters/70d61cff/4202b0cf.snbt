@@ -1,6 +1,23 @@
 {
 	title: "{tfg.quests.ev.platinum.title}",
-	icon: "gregtech:meta_ingot 1 80",
+	icon: {
+		id: "gregtech:meta_ingot",
+		Damage: 80s,
+		ForgeCaps: {
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
 	x: -7.0d,
 	y: 3.5d,
 	description: "{tfg.quests.ev.platinum.subtitle}",
@@ -19,14 +36,44 @@
 		uid: "f95a92e8",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 80"
+			id: "gregtech:meta_dust",
+			Damage: 80s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}]
 	},
 	{
 		uid: "3ee7f1ea",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ingot 1 80"
+			id: "gregtech:meta_ingot",
+			Damage: 80s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}]
 	}]
 }
