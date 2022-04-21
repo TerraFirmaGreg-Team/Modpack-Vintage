@@ -52,7 +52,7 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 10
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 100, true);
 
 // --- Вариации Меди
-//Медь --- Грязная Кучка
+// Медь --- Грязная Кучка
 //ItemRegistry.registerItemMetal(<metaitem:dustImpureCopper>, "COPPER", 80, true);
 //Медь --- Средняя Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustSmallCopper>, "COPPER", 25, true);

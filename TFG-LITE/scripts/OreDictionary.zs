@@ -231,6 +231,15 @@ for item in Gem_Exquisite {
 	<ore:gemExquisite>.add(item);
 }
 
+// Knife
+<ore:knife>.add(<metaitem:tool.knife>);
+
+// Hammer
+<ore:hammer>.add(<metaitem:tool.hard_hammer>);
+
+// Saw
+<ore:saw>.add(<metaitem:tool.saw>);
+
 // Basalt
 <ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
 
@@ -379,3 +388,8 @@ for item in Gem_Exquisite {
 
 // Remove stairWood
 <ore:stairWood>.remove(<minecraft:oak_stairs>, <minecraft:spruce_stairs>, <minecraft:birch_stairs>, <minecraft:jungle_stairs>, <minecraft:acacia_stairs>, <minecraft:dark_oak_stairs>);
+
+// Remove chest and chestWood and chestTrapped
+<ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
+<ore:chestTrapped>.remove(<minecraft:trapped_chest>);
