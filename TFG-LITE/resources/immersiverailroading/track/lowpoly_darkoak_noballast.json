@@ -1,0 +1,16 @@
+{
+  "name": "Lowpoly Dark Oak No Ballast",
+  "models": {
+    ">0": "immersiverailroading:models/track/lowpoly/darkoak/darkoak_noballast.obj"
+  },
+  "materials": {
+    "TIE": [{
+      "item": "ore:irTie",
+      "cost": 1
+    }],
+    "RAIL": [{
+      "item": "ore:irRail",
+      "cost": 2
+    }]
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"era": "diesel",
+	"name": "V100",
+	"works": "LKM Babelsberg",
+	"model": "immersiverailroading:models/rolling_stock/locomotives/v100/v100.obj",
+	"darken_model": -0.2,
+	"properties": {
+		"fuel_efficiency_%": 70,
+		"fuel_capacity_l": 2500,
+		"horsepower": 1350,
+		"tractive_effort_lbf": 51031,
+		"max_speed_kmh": 100,
+		"weight_kg": 64000
+	},
+	"passenger": {
+		"slots": 2,
+		"center_x": 0,
+		"center_y": 2.2,
+		"length": 0.6,
+		"width": 2
+	},
+	"trucks": {
+		"front": 3.65,
+		"rear": -3.65
+	},
+	"couplers": {
+		"front_offset": 0,
+		"rear_offset": 0
+	}
+}
