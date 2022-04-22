@@ -1,5 +1,7 @@
 #Content tweaker
 
+tfg.warningaboutimpuredusts.name=This dust cannot be processed into TFC metal, otherwise it will not be processed in GTCEu mechanisms, this should be fixed by GTCEu developers in the future.
+
 #lang
 material.mercurystone=Mercury Stone
 material.venusstone=Venus Stone
