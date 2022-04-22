@@ -95,7 +95,7 @@ for item in GTPlates{
     recipes.removeByRecipeName(item);
 }
 
-//Отключение крафта двойных пластин в верстаке
+// Отключение крафта двойных пластин в верстаке
 for item in GTDoublePlates{
     recipes.removeByRecipeName(item);
 }
@@ -404,18 +404,13 @@ assembler.recipeBuilder()
     .outputs(<metaitem:cover.infinite_water>)
     .duration(200).EUt(480).buildAndRegister();
 
-
 // Voiding Cover (Fluid)
-recipes.removeByRecipeName("gregtech:cover_fluid_voiding");
 arc_furnace.findRecipe(30, [<metaitem:cover.fluid.voiding>], [<liquid:oxygen> * 83]).remove();
 macerator.findRecipe(8, [<metaitem:cover.fluid.voiding>], null).remove();
 
-
 // Voiding Cover (Item)
-recipes.removeByRecipeName("gregtech:cover_item_voiding");
 arc_furnace.findRecipe(30, [<metaitem:cover.item.voiding>], [<liquid:oxygen> * 70]).remove();
 macerator.findRecipe(8, [<metaitem:cover.item.voiding>], null).remove();
-
 
 // Fertilizer
 mixer.findRecipe(30, [<minecraft:dirt:0>, <metaitem:dustWood> * 2, <minecraft:sand:0> * 4], [<liquid:water> * 1000]).remove();

@@ -3261,6 +3261,46 @@ global TFC_Double_Sheets as IItemStack[] = [
 	<tfc:metal/double_sheet/red_steel>
 ];
 
+// All Glass Panes Array
+global Glass_Panes_Array as IItemStack[] = [
+    <minecraft:stained_glass_pane>,
+    <minecraft:stained_glass_pane:1>,
+    <minecraft:stained_glass_pane:2>,
+    <minecraft:stained_glass_pane:3>,
+    <minecraft:stained_glass_pane:4>,
+    <minecraft:stained_glass_pane:5>,
+    <minecraft:stained_glass_pane:6>,
+    <minecraft:stained_glass_pane:7>,
+    <minecraft:stained_glass_pane:8>,
+    <minecraft:stained_glass_pane:9>,
+    <minecraft:stained_glass_pane:10>,
+    <minecraft:stained_glass_pane:11>,
+    <minecraft:stained_glass_pane:12>,
+    <minecraft:stained_glass_pane:13>,
+    <minecraft:stained_glass_pane:14>,
+    <minecraft:stained_glass_pane:15>
+];
+
+// All Horizontal Glass Panes Array
+global Horizontal_Glass_Panes_Array as IItemStack[] = [
+    <hgp:hgpcoloredpane>,
+    <hgp:hgpcoloredpane:1>,
+    <hgp:hgpcoloredpane:2>,
+    <hgp:hgpcoloredpane:3>,
+    <hgp:hgpcoloredpane:4>,
+    <hgp:hgpcoloredpane:5>,
+    <hgp:hgpcoloredpane:6>,
+    <hgp:hgpcoloredpane:7>,
+    <hgp:hgpcoloredpane:8>,
+    <hgp:hgpcoloredpane:9>,
+    <hgp:hgpcoloredpane:10>,
+    <hgp:hgpcoloredpane:11>,
+    <hgp:hgpcoloredpane:12>,
+    <hgp:hgpcoloredpane:13>,
+    <hgp:hgpcoloredpane:14>,
+    <hgp:hgpcoloredpane:15>
+];
+
 // - All liquid dye Array
 global All_Liquid_Dyes as ILiquidStack[] = [
 	<liquid:dye_white>,
@@ -3554,4 +3594,35 @@ global GTDoublePlates as string[] = [
     "gregtech:plate_double_silicon",
     "gregtech:plate_double_polyphenylene_sulfide",
     "gregtech:plate_double_vanadium_steel"
+];
+
+// An array in order to explain 
+// to the user that the processing of dust data 
+// into TFC metal is not possible due to the GTCEu bug, 
+// which they should fix later.
+global Bad_Dusts_Array as IItemStack[] = [
+	<metaitem:dustImpureCopper>,
+	<metaitem:dustImpureBornite>,
+	<metaitem:dustImpureTetrahedrite>,
+	<metaitem:dustImpureChalcopyrite>,
+	<metaitem:dustImpureChalcocite>,
+	<metaitem:dustImpureMalachite>,
+	<metaitem:dustImpureTin>,
+	<metaitem:dustImpureCassiterite>,
+	<metaitem:dustImpureCassiteriteSand>,
+	<metaitem:dustImpureIron>,
+	<metaitem:dustImpurePyrite>,
+	<metaitem:dustImpureMagnetite>,
+	<metaitem:dustImpureBrownLimonite>,
+	<metaitem:dustImpureYellowLimonite>,
+	<metaitem:dustImpureBandedIron>,
+	<metaitem:dustImpureNickel>,
+	<metaitem:dustImpureGarnierite>,
+	<metaitem:dustImpurePentlandite>,
+	<metaitem:dustImpureSphalerite>,
+	<metaitem:dustImpureLead>,
+	<metaitem:dustImpureGalena>,
+	<metaitem:dustImpureGold>,
+	<metaitem:dustImpureBismuth>,
+	<metaitem:dustImpureSilver>
 ];
