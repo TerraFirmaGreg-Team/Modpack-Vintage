@@ -1,0 +1,16 @@
+{
+  "name": "Lowpoly Jungle Ballast Wide",
+  "models": {
+    ">0": "immersiverailroading:models/track/lowpoly/jungle/jungle_ballast_wide.obj"
+  },
+  "materials": {
+    "TIE": [{
+      "item": "ore:irTie",
+      "cost": 1
+    }],
+    "RAIL": [{
+      "item": "ore:irRail",
+      "cost": 2
+    }]
+  }
+}

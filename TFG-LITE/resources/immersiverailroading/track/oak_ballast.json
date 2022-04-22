@@ -1,0 +1,16 @@
+{
+  "name": "Highpoly Oak Ballast",
+  "models": {
+    ">0": "immersiverailroading:models/track/highpoly/oak/oak_ballast.obj"
+  },
+  "materials": {
+    "TIE": [{
+      "item": "ore:irTie",
+      "cost": 1
+    }],
+    "RAIL": [{
+      "item": "ore:irRail",
+      "cost": 2
+    }]
+  }
+}
