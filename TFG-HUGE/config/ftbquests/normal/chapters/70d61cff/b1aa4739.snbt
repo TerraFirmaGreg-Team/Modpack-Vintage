@@ -1,24 +1,12 @@
 {
-	title: "Radon",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "radon"
-		}
-	},
+	title: "{tfg.quests.ev.radon.title}",
 	x: -11.0d,
 	y: -2.0d,
+	description: "{tfg.quests.ev.radon.subtitle}",
 	text: [
-		"§o200 seconds what!? Don't worry this is nothing compared to running an EBF.§r",
+		"{tfg.quests.ev.radon.desc1}",
 		"",
-		"Hopefully for you, the §3LCR§r recipe in §2JEI§r for §aRadon§r should be self explanatory on how to set it up.",
-		"",
-		"Input some §aUranium§r, loop back the §dPlutonium§r using a §3Electric Furnace§r, and let the magic happen.",
-		"",
-		"",
-		"§bLore:§r This cursed, yet charming \"chain\" is inherited from GregTech 5.",
-		"Plutonium 239 existing as an ore is a sort of a placeholder to avoid having to obtain it through complicated means."
+		"{tfg.quests.ev.radon.desc2}"
 	],
 	dependencies: [
 		"5928ecb5"
@@ -30,5 +18,24 @@
 			item: "gregtech:meta_ingot 8 81"
 		}],
 		count: 8L
+	},
+	{
+		uid: "9e0fcfc2",
+		type: "fluid",
+		fluid: "radon"
+	}],
+	rewards: [{
+		uid: "826c6fd2",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "radon",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

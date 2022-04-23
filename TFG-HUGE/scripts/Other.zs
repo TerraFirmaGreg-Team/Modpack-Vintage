@@ -17,6 +17,7 @@ mods.jei.JEI.removeAndHide(<ftbquests:detector>);
 mods.jei.JEI.removeAndHide(<ftbquests:reward_collector>);
 mods.jei.JEI.removeAndHide(<ftbquests:loot_crate_opener>);
 mods.jei.JEI.removeAndHide(<ftbquests:loot_crate_storage>);
+mods.jei.JEI.removeAndHide(<itemfilters:filter>);
 
 // ContentTweaker
 mods.jei.JEI.removeAndHide(<base:wrench>);

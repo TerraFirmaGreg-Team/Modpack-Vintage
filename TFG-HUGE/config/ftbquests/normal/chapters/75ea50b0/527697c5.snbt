@@ -1,0 +1,22 @@
+{
+	x: -16.5d,
+	y: -5.0d,
+	tasks: [{
+		uid: "f17a7cca",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any batteryLv"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "batteryLv"
+				}
+			}
+		}]
+	}]
+}

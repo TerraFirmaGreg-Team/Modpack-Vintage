@@ -1,20 +1,20 @@
 {
-	title: "Multiblock Cracking",
+	title: "{tfg.quests.ev.multiblockcracking.title}",
 	icon: "gregtech:machine 1 1009",
 	x: 4.5d,
 	y: -2.0d,
+	description: "{tfg.quests.ev.multiblockcracking.subtitle}",
 	text: [
-		"§oLet's get cracking, shall we?§r",
+		"{tfg.quests.ev.multiblockcracking.desc1}",
 		"",
-		"The §3Oil Cracking Unit§r is a multiblock meant to make cracked fluids. It has all the recipes of §3Chemical Reactor§r Cracking, but it is §6lossless§r.",
+		"{tfg.quests.ev.multiblockcracking.desc2}",
 		"",
-		"This multiblock is §doptional§r, but it saves a lot of Fuel in the long term!",
-		"",
-		"Higher Coil tiers provide small energy discount, not too important."
+		"{tfg.quests.ev.multiblockcracking.desc3}"
 	],
 	dependencies: [
 		"ff136331"
 	],
+	optional: true,
 	tasks: [{
 		uid: "f6b594c6",
 		type: "item",

@@ -1,11 +1,10 @@
 {
-	title: "More SMD Components",
+	title: "{tfg.quests.hv.moreSMDcomponents.title}",
 	x: -8.0d,
 	y: -2.0d,
+	description: "{tfg.quests.hv.moreSMDcomponents.subtitle}",
 	text: [
-		"§aPlatinum§r (needed for SMD Diodes) has its own dedicated Quest in the §5EV§r tab.",
-		"",
-		"§bLore:§r The SMD Inductors make an appearance in GTCEu for the first time. It's more consistent and convenient to have all Circuit components get a SMD counterpart."
+		""
 	],
 	dependencies: [
 		"b24185a1"

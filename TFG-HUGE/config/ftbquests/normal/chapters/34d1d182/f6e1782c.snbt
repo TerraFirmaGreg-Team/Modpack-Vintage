@@ -41,8 +41,8 @@
 			id: "galaxyspace:space_suit_legs",
 			Damage: 200s,
 			tag: {
-				modification_count: 2,
-				legs_button: 0b
+				legs_button: 0b,
+				modification_count: 2
 			}
 		}],
 		ignore_damage: true,

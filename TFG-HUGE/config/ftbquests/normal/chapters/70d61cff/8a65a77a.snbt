@@ -1,10 +1,9 @@
 {
-	title: "EV Assembling Machine",
 	icon: "gregtech:machine 1 638",
 	x: -5.0d,
 	y: -5.0d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"14263e77"

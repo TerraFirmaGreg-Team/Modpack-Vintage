@@ -4,7 +4,17 @@
 	x: -18.0d,
 	y: -8.0d,
 	text: [
-		"{tfg.quests.steam.itempipe.desc}"
+		"{tfg.quests.steam.itempipe.desc1}",
+		"{tfg.quests.steam.itempipe.desc2}",
+		"{tfg.quests.steam.itempipe.desc3}",
+		"{tfg.quests.steam.itempipe.desc4}",
+		"",
+		"{tfg.quests.steam.itempipe.desc5}",
+		"",
+		"{tfg.quests.steam.itempipe.desc6}",
+		"",
+		"{tfg.quests.steam.itempipe.desc7}",
+		"{tfg.quests.steam.itempipe.desc8}"
 	],
 	dependencies: [
 		"5347bf68"

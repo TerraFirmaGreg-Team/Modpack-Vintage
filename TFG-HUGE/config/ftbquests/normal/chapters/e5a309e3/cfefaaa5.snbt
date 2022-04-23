@@ -1,11 +1,12 @@
 {
-	title: "Upgrade your EBF II",
+	title: "{tfg.quests.hv.upgradeyourEBFII.title}",
 	icon: "gregtech:machine 1 1213",
 	x: -1.0d,
 	y: -4.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.upgradeyourEBFII.subtitle}",
 	text: [
-		"So you can run off HV Generators."
+		""
 	],
 	dependencies: [
 		"2e62dccf",

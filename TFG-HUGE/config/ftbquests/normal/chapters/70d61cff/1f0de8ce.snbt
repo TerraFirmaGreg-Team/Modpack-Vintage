@@ -1,52 +1,69 @@
 {
-	title: "Acetone",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "acetone"
-		}
-	},
+	title: "{tfg.quests.ev.acetone.title}",
 	x: -1.5d,
 	y: 5.5d,
 	text: [
-		"No Description"
+		""
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"14263e77"
 	],
 	tasks: [{
-		uid: "81854f86",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "acetic_acid",
-				Amount: 1000
-			}
-		}]
+		uid: "ec289995",
+		type: "fluid",
+		fluid: "acetic_acid"
 	},
 	{
-		uid: "3d167edc",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "dissolved_calcium_acetate",
-				Amount: 1000
-			}
-		}]
+		uid: "f75e48ea",
+		type: "fluid",
+		fluid: "dissolved_calcium_acetate"
 	},
 	{
-		uid: "69e6adb7",
+		uid: "d170254c",
+		type: "fluid",
+		fluid: "acetone"
+	}],
+	rewards: [{
+		uid: "22540142",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "acetone",
-				Amount: 1000
+				Fluid: {
+					FluidName: "acetic_acid",
+					Amount: 1000
+				}
 			}
-		}]
+		}
+	},
+	{
+		uid: "2b9cc810",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "dissolved_calcium_acetate",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "d356853d",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "acetone",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

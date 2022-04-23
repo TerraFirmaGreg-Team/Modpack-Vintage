@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.steam.multiblocktanks.title}",
+	icon: "gregtech:machine 1 1599",
+	x: -10.0d,
+	y: -4.0d,
+	shape: "circle",
+	description: "{tfg.quests.steam.multiblocktanks.subtitle}",
+	text: [
+		"{tfg.quests.steam.multiblocktanks.desc1}",
+		"",
+		"{tfg.quests.steam.multiblocktanks.desc2}",
+		"{tfg.quests.steam.multiblocktanks.desc3}",
+		"",
+		"{tfg.quests.steam.multiblocktanks.desc4}"
+	],
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "ac069e22",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1599"
+		}]
+	},
+	{
+		uid: "b2ed7b31",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 24 4"
+		}],
+		count: 24L
+	},
+	{
+		uid: "74a9d54c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1598"
+		}]
+	}]
+}

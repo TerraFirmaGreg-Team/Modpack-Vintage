@@ -1,29 +1,29 @@
 {
-	title: "Phenol",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "phenol"
-		}
-	},
 	x: -1.5d,
 	y: 4.0d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"ff136331"
 	],
 	tasks: [{
-		uid: "b2e7d677",
+		uid: "4aec21de",
+		type: "fluid",
+		fluid: "phenol"
+	}],
+	rewards: [{
+		uid: "864efe12",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "phenol",
-				Amount: 1000
+				Fluid: {
+					FluidName: "phenol",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

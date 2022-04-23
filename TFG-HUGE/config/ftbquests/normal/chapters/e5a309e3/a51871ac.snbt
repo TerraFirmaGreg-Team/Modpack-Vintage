@@ -1,15 +1,14 @@
 {
-	title: "HV Superconductors",
+	title: "{tfg.quests.hv.superconductors.title}",
 	icon: "gregtech:wire_single 1 426",
 	x: 1.0d,
 	y: -9.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.superconductors.subtitle}",
 	text: [
-		"By this point, normal Cables with insulation have a near insignificant loss.",
+		"{tfg.quests.hv.superconductors.desc1}",
 		"",
-		"You can use those for good looks!",
-		"",
-		"Superconductors are still required to craft §aField Generators§r."
+		"{tfg.quests.hv.superconductors.desc2}"
 	],
 	dependencies: [
 		"9f71f795"

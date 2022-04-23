@@ -1,20 +1,18 @@
 {
-	title: "PTFE",
+	title: "{tfg.quests.hv.PTFE.title}",
 	icon: "gregtech:meta_plate 1 1016",
 	x: 4.5d,
 	y: -1.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.PTFE.subtitle}",
 	text: [
-		"§",
-		"§oThis is what you may know as Teflon!§r",
+		"{tfg.quests.hv.PTFE.desc1}",
 		"",
-		"§aPolytetrafluoroethylene (PTFE)§r is a §7Carbon§r-§bFluorine§r polymer. Similarly to PVC, PTFE can be used to increase the yield of Plastic Circuit Boards and other crafts. It is also used to make §dPackage Holders§r. Most presently though, it is used to make the walls of §3Large Chemical Reactors§r.",
+		"{tfg.quests.hv.PTFE.desc2}",
 		"",
-		"§3Chlorine§r is required in the process, which is recycled if you electrolyze the §aHydrochloric Acid§r waste.",
+		"{tfg.quests.hv.PTFE.desc3}",
 		"",
-		"You may check the Ore tab to see which ores are valuable for §bFluorine§r. §bFluorine§r will also be used in §aUranium§r and §7Naquadah§r refinement processes.",
-		"",
-		"§9Tip:§r From this point onwards, I would recommend solidifying Polymers as §dBar§r (Ingot) form, as they can easily be shaped to whichever shape you will need using the §3Extruder§r."
+		"{tfg.quests.hv.PTFE.desc4}"
 	],
 	dependencies: [
 		"2f970f5b",

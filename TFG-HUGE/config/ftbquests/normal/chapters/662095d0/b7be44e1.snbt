@@ -5,8 +5,8 @@
 		Damage: 78s,
 		tag: {
 			Fluid: {
-				Amount: 1000,
-				FluidName: "natural_gas"
+				FluidName: "natural_gas",
+				Amount: 1000
 			}
 		}
 	},

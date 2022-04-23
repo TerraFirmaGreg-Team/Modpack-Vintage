@@ -1,13 +1,12 @@
 {
-	title: "Implosion Compressor",
+	title: "{tfg.quests.hv.implosioncompressor.title}",
 	icon: "gregtech:machine 1 1003",
 	x: -4.5d,
 	y: 0.0d,
 	shape: "hexagon",
+	description: "{tfg.quests.hv.implosioncompressor.subtitle}",
 	text: [
-		"The §3Implosion Compressor§r turns the Dust form of Gems into their Gem form.",
-		"",
-		"§cTNT§r or §cDynamite§r can be used. It is required to get §3Ender Pearls§r."
+		"{tfg.quests.hv.implosioncompressor.desc1}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

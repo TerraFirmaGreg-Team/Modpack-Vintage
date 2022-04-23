@@ -1,9 +1,10 @@
 {
-	title: "Shredding your Ores with more Byproducts",
+	title: "{tfg.quests.ev.oreswithmorebyproducts.title}",
 	x: -7.0d,
 	y: -4.0d,
+	description: "{tfg.quests.ev.oreswithmorebyproducts.subtitle}",
 	text: [
-		"Did you notice the \"chance per tier\" when hovering over the bonus outputs in §aJEI§r? Each overclock above the required tier will add that bonus to the chanced output! This means the §5EV §3Macerator§r yields §6more Byproducts§r!"
+		""
 	],
 	dependencies: [
 		"14263e77"

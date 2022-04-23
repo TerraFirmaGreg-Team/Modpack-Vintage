@@ -2,6 +2,12 @@
 	x: -12.0d,
 	y: -20.0d,
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
+	text: [
+		"{tfg.quests.steam.basiccircuit.desc1}",
+		"",
+		"{tfg.quests.steam.basiccircuit.desc2}",
+		"{tfg.quests.steam.basiccircuit.desc3}"
+	],
 	dependencies: [
 		"445f79e7",
 		"031ab2d9",

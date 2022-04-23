@@ -16,7 +16,7 @@ recipes.remove(<portality:module_interdimensional>);
 
 // Контроллер
 assembler.recipeBuilder()
-	.inputs(<portality:frame> * 4, <ore:boltDiamond> * 12, <ore:blockQuartzite> * 1, <ore:circuitElite> * 1, <metaitem:sensor.ev> * 12)
+	.inputs(<portality:frame> * 4, <ore:boltDiamond> * 12, <ore:blockQuartzite> * 1, <ore:circuitIv> * 1, <metaitem:sensor.ev> * 12)
 	.outputs(<portality:controller>)
 	.duration(960)
 	.EUt(912)

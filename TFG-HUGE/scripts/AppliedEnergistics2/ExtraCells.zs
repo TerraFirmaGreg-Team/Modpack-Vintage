@@ -80,7 +80,7 @@ macerator.recipeBuilder()
 recipes.remove(<extracells:storage.component>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <ore:plateNaquadahAlloy> * 4,
     <ore:dustCertusQuartz> * 16,
     <appliedenergistics2:material:24>
@@ -93,7 +93,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <appliedenergistics2:material:38> * 4
   ])
   .fluidInputs(<liquid:steel> * 144)
@@ -105,7 +105,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:1>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <ore:plateAmericium> * 4,
     <ore:dustCertusQuartz> * 16,
     <appliedenergistics2:material:24>
@@ -118,7 +118,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <extracells:storage.component> * 4
   ])
   .fluidInputs(<liquid:steel> * 144)
@@ -130,7 +130,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:2>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <ore:plateDarmstadtium> * 4,
     <ore:dustCertusQuartz> * 32,
     <appliedenergistics2:material:23>
@@ -143,7 +143,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:23>,
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <extracells:storage.component:1> * 4
   ])
   .fluidInputs(<liquid:steel> * 144)
@@ -155,7 +155,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:3>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <ore:plateNeutronium> * 4,
     <ore:dustCertusQuartz> * 32,
     <appliedenergistics2:material:23>
@@ -168,7 +168,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:23>,
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <extracells:storage.component:2> * 4
   ])
   .fluidInputs(<liquid:steel> * 144)
@@ -180,7 +180,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:8>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <ore:plateNaquadahAlloy> * 4,
     <ore:dustNetherQuartz> * 16,
     <appliedenergistics2:material:24>
@@ -193,7 +193,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <appliedenergistics2:material:57> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -205,7 +205,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:9>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <ore:plateAmericium> * 4,
     <ore:dustNetherQuartz> * 16,
     <appliedenergistics2:material:24>
@@ -218,7 +218,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitUltimate> * 4,
+    <ore:circuitZpm> * 4,
     <extracells:storage.component:8> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -230,7 +230,7 @@ assembler.recipeBuilder()
 recipes.remove(<extracells:storage.component:10>);
 assembler.recipeBuilder()
   .inputs([
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <ore:plateDarmstadtium> * 4,
     <ore:dustNetherQuartz> * 32,
     <appliedenergistics2:material:23>
@@ -243,7 +243,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:23>,
-    <ore:circuitSuper> * 4,
+    <ore:circuitUv> * 4,
     <extracells:storage.component:9> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -337,8 +337,8 @@ packer.recipeBuilder()
   .buildAndRegister();
 // ME Ore Dictionary Storage Bus
 recipes.remove(<extracells:part.base:12>);
-recipes.addShapeless("oredict_storage_bus", <extracells:part.base:12>,
-  [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
+// recipes.addShapeless("oredict_storage_bus", <extracells:part.base:12>,
+//   [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
 
 ########################################
@@ -349,7 +349,7 @@ recipes.remove(<extracells:fluidcrafter>);
 assembler.recipeBuilder()
   .inputs([
     <ore:paneGlassColorless> * 2,
-    <ore:circuitAdvanced> * 2,
+    <ore:circuitHv> * 2,
     <metaitem:conveyor.module.hv> * 2,
     <metaitem:fluid.regulator.hv> * 2,
     <ore:plateSteel> * 4

@@ -3,7 +3,7 @@
 	icon: "gregtech:machine 1 987",
 	disable_toast: true,
 	x: -28.5d,
-	y: -9.0d,
+	y: -8.0d,
 	text: [
 		"This Circuit line does not quite have a name. But they are all made off plastic boards, so you may call them that way.",
 		"",

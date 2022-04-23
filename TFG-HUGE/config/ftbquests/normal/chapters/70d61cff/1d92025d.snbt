@@ -1,15 +1,12 @@
 {
-	title: "Mainframes",
+	title: "{tfg.quests.ev.mainframes.title}",
 	icon: "gregtech:meta_item_1 1 631",
 	x: -5.0d,
 	y: -1.0d,
 	shape: "circle",
+	description: "{tfg.quests.ev.mainframes.subtitle]",
 	text: [
-		"The first §1IV§r circuit. Congratulations on making it this far!",
-		"",
-		"This will be used in the §5EV§r tier.",
-		"",
-		"§bLore:§r The texture for the Mainframes is taken from an image of an IBM zEnterprise mainframe. "
+		"{tfg.quests.ev.mainframes.desc1}"
 	],
 	dependencies: [
 		"c824edb6"

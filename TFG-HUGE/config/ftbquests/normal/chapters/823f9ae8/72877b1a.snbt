@@ -24,6 +24,20 @@
 					data: "dustTinyGold"
 				}
 			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyGold"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallGold"
+				}
+			}
 		}]
 	}]
 }

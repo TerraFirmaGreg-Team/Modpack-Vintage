@@ -1,15 +1,14 @@
 {
-	title: "Kanthal Coils",
+	title: "{tfg.quests.hv.kanthalcoils.title}",
 	icon: "gregtech:wire_coil 1 1",
 	x: -1.0d,
 	y: -6.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.kanthalcoils.subtitle}",
 	text: [
-		"§oIs it getting hot in here?§r",
+		"{tfg.quests.hv.kanthalcoils.desc1}",
 		"",
-		"§3Kanthal Heating Coils§r are the next major step in progression. This increases the temperature of your §3Blast Furnace§r to §d2,700K§r, allowing you to process new materials. They may also §eaccelerate§r less hot recipes - check the next quest for details.",
-		"",
-		"You will need §a128 Ingots§r, which will take easily over an hour. You can move on to other projects while your §3EBF§r is hard at work."
+		"{tfg.quests.hv.kanthalcoils.desc2}"
 	],
 	dependencies: [
 		"b3d40b60"

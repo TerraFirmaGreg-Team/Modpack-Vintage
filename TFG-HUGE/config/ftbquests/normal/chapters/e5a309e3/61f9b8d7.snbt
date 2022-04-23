@@ -1,23 +1,22 @@
 {
-	title: "Auto-build",
+	title: "{tfg.quests.hv.autobuild.title}",
 	icon: "gregtech:meta_item_1 1 504",
 	x: -2.5d,
 	y: 2.0d,
+	description: "{tfg.quests.hv.autobuild.subtitle}",
 	text: [
-		"§oPlacing Blocks manually for Multiblocks is tedious? We got something for ya!§r",
+		"{tfg.quests.hv.autobuild.desc1}",
 		"",
-		"Hopefully you made use of the §4Terminal§r for a few things there and there, but it's about to get better!",
+		"{tfg.quests.hv.autobuild.desc2}",
 		"",
-		"The §dMulitblock Helper§r app will enable you to §6auto-build§r Multiblocks!",
+		"{tfg.quests.hv.autobuild.desc3}",
+		"{tfg.quests.hv.autobuild.desc4}",
 		"",
-		"First, you need a §aBattery§r (LV or higher) and a §aCamera§r to be mounted in your Terminal. Open the §9Hardware§r app to do so.",
-		"Then, you need to go in the §9App Store§r, and scroll down to the §5upgrade button§r for the §dMultiblock Helper§r. Be sure to have §a4 HV Emitters§r and §a2 Workstations§r in your inventory.",
+		"{tfg.quests.hv.autobuild.desc5}",
 		"",
-		"Congratulations, now you can §6auto-build§r Multiblocks thanks to the Blocks present in your inventory.",
+		"{tfg.quests.hv.autobuild.desc6}",
 		"",
-		"§9How to auto-build:§r With your §4Terminal§r in hand, shift-right-clock the Mulitblock Controller that you placed in World, this will bring up the menu. Then, open the §dMultiblock Helper§r app, click on the §93D Builder§r, and finally on the §9Automatic Build§r button.",
-		"",
-		"Note that the Hatches may not always end up being on the positions you wanted, but at least it placed all the other Blocks for you!"
+		"{tfg.quests.hv.autobuild.desc7}"
 	],
 	dependencies: [
 		"05af19ec"

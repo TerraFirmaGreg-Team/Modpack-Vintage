@@ -24,6 +24,20 @@
 					data: "dustTinySulfur"
 				}
 			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinySulfur"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallSulfur"
+				}
+			}
 		}]
 	}]
 }

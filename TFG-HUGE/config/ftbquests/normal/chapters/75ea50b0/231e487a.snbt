@@ -3,7 +3,7 @@
 	icon: "gregtech:steam_casing",
 	disable_toast: true,
 	x: -30.5d,
-	y: -9.0d,
+	y: -8.0d,
 	text: [
 		"Early game Circuits are hand craftable.",
 		"",

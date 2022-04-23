@@ -1,30 +1,30 @@
 {
-	title: "Epichlorohydrin",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "epichlorohydrin"
-		}
-	},
 	x: -3.0d,
 	y: 3.5d,
 	text: [
-		"No Description"
+		""
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"14263e77"
 	],
 	tasks: [{
-		uid: "5671d315",
+		uid: "f6b6f628",
+		type: "fluid",
+		fluid: "epichlorohydrin"
+	}],
+	rewards: [{
+		uid: "3b04b554",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "epichlorohydrin",
-				Amount: 1000
+				Fluid: {
+					FluidName: "epichlorohydrin",
+					Amount: 1000
+				}
 			}
-		}]
+		}
 	}]
 }

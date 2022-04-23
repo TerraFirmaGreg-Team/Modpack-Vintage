@@ -1,23 +1,19 @@
 {
-	title: "NanoMuscle™",
+	title: "{tfg.quests.hv.nanomuscle.title}",
 	icon: "gregtech:gt_armor 1 21",
 	x: -8.0d,
 	y: 3.5d,
+	description: "{tfg.quests.hv.nanomuscle.subtitle}",
 	text: [
-		"§oNot an actual TradeMark.§r",
+		"{tfg.quests.hv.nanomuscle.desc1}",
 		"",
-		"You probably don't have mobs to fight, but this armor provides nice QoL that you may enjoy!",
+		"{tfg.quests.hv.nanomuscle.desc2}",
 		"",
-		"§9Helmet:§r Provides §dNight vision§r (default keybind §4M§r but check for conflicts)",
+		"{tfg.quests.hv.nanomuscle.desc3}",
 		"",
-		"§9Chestplate:§r Provides nothing interesting, but can be further upgraded into the §aAdvanced§r version at the end of §6HV§r Age.",
+		"{tfg.quests.hv.nanomuscle.desc4}",
 		"",
-		"§9Leggings:§r Provides nothing special, perhaps we should have given it a small speed boost?",
-		"",
-		"§9Boots:§r Provides §dStep Assist§r. You read that right!",
-		"",
-		"",
-		"§bLore:§r This armor is originally inspired by IndustrialCraft, but its first implementation within the GTCE environment came with Nuke Powered Utils, an addon mod to GTCE."
+		"{tfg.quests.hv.nanomuscle.desc5}"
 	],
 	dependencies: [
 		"550b2cd3"

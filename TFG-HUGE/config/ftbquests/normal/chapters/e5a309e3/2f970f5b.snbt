@@ -1,11 +1,11 @@
 {
-	title: "High Voltage Chemistry",
 	icon: "gregtech:machine 1 217",
 	x: 3.0d,
 	y: 0.0d,
 	shape: "square",
+	description: "{tfg.quests.hv.highvoltagechemistry.subtitle}",
 	text: [
-		"The §3HV Chemical Reactor§r unlocks new recipes, for always more advanced Chemistry!"
+		""
 	],
 	dependencies: [
 		"05af19ec"

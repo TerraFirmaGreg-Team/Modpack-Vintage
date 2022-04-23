@@ -1,7 +1,17 @@
 {
 	x: -10.0d,
-	y: -4.0d,
+	y: -2.0d,
 	description: "{tfg.quests.steam.primitivewaterpump.subtitle}",
+	text: [
+		"{tfg.quests.steam.primitivewaterpump.desc1}",
+		"{tfg.quests.steam.primitivewaterpump.desc2}",
+		"{tfg.quests.steam.primitivewaterpump.desc3}",
+		"{tfg.quests.steam.primitivewaterpump.desc4}",
+		"",
+		"{tfg.quests.steam.primitivewaterpump.desc5}",
+		"",
+		"{tfg.quests.steam.primitivewaterpump.desc6}"
+	],
 	dependencies: [
 		"8fdd423e"
 	],

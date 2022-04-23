@@ -1,22 +1,21 @@
 {
-	title: "Extreme Fluid Drilling",
+	title: "{tfg.quests.ev.extremefluiddrilling.title}",
 	icon: "gregtech:machine 1 1033",
 	x: -7.0d,
 	y: -6.5d,
+	description: "{tfg.quests.ev.extremefluiddrilling.subtitle}",
 	text: [
-		"§oExtreme is very apprioriate this time around, and you will see why.§r",
+		"{tfg.quests.ev.extremefluiddrilling.desc1}",
+		"{tfg.quests.ev.extremefluiddrilling.desc2}",
 		"",
-		"At the cost of 4x the drilling Power, the §3Advanced Fluid Drilling Rig§r will be gaining §616x the output§r in Fluid.",
-		"The depletion of veins is also halved. This means you will get a total of §632x§r as much Oil (or whatever fluid) from a bedrock fluid vein until depletion!",
+		"{tfg.quests.ev.extremefluiddrilling.desc3}",
 		"",
-		"Even when depleted, you can still use this and be very power positive.",
+		"{tfg.quests.ev.extremefluiddrilling.desc4}",
 		"",
-		"One single §3Advanced Fluid Drilling Rig§r should be enough to supply Power for a base up to §dLuV§r Age and possibly beyond!",
-		"",
-		"As a §9reminder§r from the Quests that appeared in §bMV§r:",
-		"§9-§r §aLight Oil§r can be used for §dLPG§r and §dMethane§r, to run in §3Large Gas Turbines§r.",
-		"§9-§r §aOil§r can be used for §dDiesel§r and §dCetane-Boosted Diesel§r, to run in §3Large Combustion Engines§r.",
-		"§9-§r §aHeavy Oil§r can be used for §dNitrobenzene§r, to run in §3Large Gas Turbines§r."
+		"{tfg.quests.ev.extremefluiddrilling.desc5}",
+		"{tfg.quests.ev.extremefluiddrilling.desc6}",
+		"{tfg.quests.ev.extremefluiddrilling.desc7}",
+		"{tfg.quests.ev.extremefluiddrilling.desc8}"
 	],
 	dependencies: [
 		"8a65a77a"

@@ -1,11 +1,12 @@
 {
-	title: "Styrene-Butadiene Rubber",
+	title: "{tfg.quests.hv.styrenebutadienerubber.title}",
 	icon: "gregtech:meta_plate 1 1004",
 	x: 3.0d,
 	y: 1.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.styrenebutadienerubber.subtitle}",
 	text: [
-		"§7Styrene-Butadiene Rubber (SBR)§r is an enhanced type of Rubber. It can be used in place of Rubber in most recipes, and is §dfour times§r more efficient at insulating Cables. It is also strictly required for certain higher-tier recipes."
+		""
 	],
 	dependencies: [
 		"2f970f5b"

@@ -1,13 +1,12 @@
 {
-	title: "Silicone Rubber",
+	title: "{tfg.quests.hv.siliconerubber.title}",
 	icon: "gregtech:meta_plate 1 1000",
 	x: 4.5d,
 	y: 1.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.siliconerubber.subtitle}",
 	text: [
-		"An alternate §aRubber§r, for use in Cable insulation, Conveyor recipes and Wetware (much later on!).",
-		"",
-		"I can hardly recommend this, as you may notice the pain it feels to make."
+		"{tfg.quests.hv.siliconerubber.desc1}"
 	],
 	dependencies: [
 		"2f970f5b"

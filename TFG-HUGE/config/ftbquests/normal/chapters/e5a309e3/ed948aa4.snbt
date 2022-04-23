@@ -1,12 +1,11 @@
 {
-	title: "Ammonia",
+	title: "{tfg.quests.hv.ammonia.title}",
 	x: 7.0d,
 	y: 0.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.ammonia.subtitle}",
 	text: [
-		"The recipe that will give you the least headaches is the one in the §3HV Chemical Reactor§r, but other sources may pick your attention more.",
-		"",
-		"Make sure your §aHydrogen§r production (mostly from §aWater electrolysis§r) is keeping up."
+		"{tfg.quests.hv.ammonia.desc1}"
 	],
 	dependencies: [
 		"2f970f5b"

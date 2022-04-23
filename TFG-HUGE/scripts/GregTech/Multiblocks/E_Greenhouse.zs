@@ -1,4 +1,4 @@
-#priority 985
+#priority 980
 
 import crafttweaker.item.IItemStack;
 
@@ -36,45 +36,42 @@ global greenhouse as RecipeMap = FactoryRecipeMap.start("greenhouse")
     .maxFluidOutputs(0)
     .build();
 
-var electro_greenhouse = Builder.start("greenhouse", 32000)
-    .withPattern(function(controller as IControllerTile) as IBlockPattern {
-        return FactoryBlockPattern.start()
-						.aisle(  "  CFCBCFC  ",  "  CWCCCWC  ",  "  CWCCCWC  ",  "  CFCCCFC  ",  "  GGGGGGG  ",  "           ", "           ")
-						.aisle(  " HCCCBCCCH ",  " TDDDDDDDT ",  " T       T ",  " H       H ",  " GG     GG ",  "  GGGGGGG  ", "           ")
-						.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " GG     GG ", "  GGGGGGG  ")
-						.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ", "  GGGGGGG  ")
-						.aisle(  "CCCCBBBCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ", "  GGGGGGG  ")
-						.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ",	"  GGGGGGG  ")
-						.aisle(  "CCCCCCCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " GG     GG ",	"  GGGGGGG  ")	
-						.aisle(  " HCCCCCCCH ",  " TDDDDDDDT ",  " T       T ",  " H       H ",  " GG     GG ",  "  GGGGGGG  ",	"           ")
-						.aisle(  "  CCCCCCC  ",  "  CCCSCCC  ",  "  CCCCCCC  ",  "  CCCCCCC  ",  "  GGGGGGG  ",  "           ",	"           ")																															
-            .where("S", controller.self())
-            .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
-            .where("D", CTPredicate.states(<metastate:tfc:peat>))
-            .where('C', CTPredicate.states(<metastate:gregtech:machine_casing:1>)
-                | CTPredicate.abilities(<mte_ability:IMPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:IMPORT_FLUIDS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:INPUT_ENERGY>).setMinGlobalLimited(1).setMaxGlobalLimited(3).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:EXPORT_ITEMS>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-                | CTPredicate.abilities(<mte_ability:MAINTENANCE_HATCH>).setMinGlobalLimited(1).setMaxGlobalLimited(1).setPreviewCount(1)
-            )
+val id = 32000;
+val loc = "greenhouse";
+
+var electric_greenhouse = Builder.start(loc, id)
+  .withPattern(function(controller as IControllerTile) as IBlockPattern {
+    return FactoryBlockPattern.start()
+			.aisle(  "  CFCBCFC  ",  "  CWCCCWC  ",  "  CWCCCWC  ",  "  CFCCCFC  ",  "  GGGGGGG  ",  "           ", "           ")
+			.aisle(  " HCCCBCCCH ",  " TDDDDDDDT ",  " T       T ",  " H       H ",  " GG     GG ",  "  GGGGGGG  ", "           ")
+			.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " GG     GG ", "  GGGGGGG  ")
+			.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ", "  GGGGGGG  ")
+			.aisle(  "CCCCBBBCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ", "  GGGGGGG  ")
+			.aisle(  "CCCCCBCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " G       G ",	"  GGGGGGG  ")
+			.aisle(  "CCCCCCCCCCC",  "CDDDDDDDDDC",  "C         C",  "C         C",  "G         G",  " GG     GG ",	"  GGGGGGG  ")	
+			.aisle(  " HCCCCCCCH ",  " TDDDDDDDT ",  " T       T ",  " H       H ",  " GG     GG ",  "  GGGGGGG  ",	"           ")
+			.aisle(  "  CCCCCCC  ",  "  CCCSCCC  ",  "  CCCCCCC  ",  "  CCCCCCC  ",  "  GGGGGGG  ",  "           ",	"           ")																												
+      .where("S", controller.self())
+      .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
+      .where("D", CTPredicate.states(<metastate:tfc:peat>))
+      .where("C", CTPredicate.states(<metastate:gregtech:machine_casing:1>).setMinGlobalLimited(42) | controller.autoAbilities())
 			.where("F", CTPredicate.states(<metastate:gregtech:multiblock_casing:2>))
 			.where("W", CTPredicate.states(<metastate:gregtech:turbine_casing:1>))
 			.where("T", CTPredicate.states(<metastate:gregtech:wire_coil>))
 			.where("H", CTPredicate.states(<metastate:gregtech:boiler_firebox_casing:1>))
 			.where("B", CTPredicate.states(<metastate:gregtech:boiler_casing:1>))
-            .where(" ", CTPredicate.getAir())
-            .build();
-    } as IPatternBuilderFunction)
-    .withRecipeMap(<recipemap:greenhouse>)
-    .withBaseTexture(<metastate:gregtech:machine_casing:1>)
-    .buildAndRegister();
-electro_greenhouse.hasMaintenanceMechanics = true;
-electro_greenhouse.hasMufflerMechanics = false;
+      .where(" ", CTPredicate.getAir())
+      .build();
+  } as IPatternBuilderFunction)
+  .withRecipeMap(greenhouse)
+  .withBaseTexture(<metastate:gregtech:machine_casing:1>)
+  .buildAndRegister();
+electric_greenhouse.hasMaintenanceMechanics = true;
+electric_greenhouse.hasMufflerMechanics = false;
 
 recipes.addShaped("greenhouse", <metaitem:multiblocktweaker:greenhouse>, [
     [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
-    [<ore:circuitGood>, <metaitem:hull.mv>, <ore:circuitGood>],
+    [<ore:circuitMv>, <metaitem:hull.mv>, <ore:circuitMv>],
     [<metaitem:electric.piston.mv>, <metaitem:electric.pump.mv>, <metaitem:electric.piston.mv>]]);
 
 
@@ -84,8 +81,8 @@ for i, sapling in TFC_Saplings {
         .circuit(1)
         .inputs([sapling])
         .fluidInputs([<liquid:fresh_water> * 1000])
-        .outputs([TFC_Logs[i] * 32])
-        .outputs([sapling.withAmount(6)])
+        .outputs([TFC_Logs[i] * 16])
+        .outputs([sapling.withAmount(3)])
         .duration(1200)
         .EUt(40)
         .buildAndRegister();
@@ -94,9 +91,9 @@ for i, sapling in TFC_Saplings {
         .inputs([sapling])
         .inputs([<metaitem:fertilizer> * 4])
         .fluidInputs([<liquid:water> * 1000])
-        .outputs([TFC_Logs[i] * 32])
-        .outputs([TFC_Logs[i] * 32])
-        .outputs([sapling.withAmount(12)])
+        .outputs([TFC_Logs[i] * 16])
+        .outputs([TFC_Logs[i] * 16])
+        .outputs([sapling.withAmount(4)])
         .duration(900)
         .EUt(60)
         .buildAndRegister();
@@ -107,7 +104,7 @@ greenhouse.recipeBuilder()
     .circuit(1)
     .inputs(<tfc:wood/sapling/rubber_fig>)
     .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([<tfc:wood/log/rubber_fig> * 8])
+    .outputs([<tfc:wood/log/rubber_fig> * 4])
     .outputs([<tfc:wood/sapling/rubber_fig>])
     .outputs([<metaitem:rubber_drop>])
     .duration(1200)
@@ -118,8 +115,8 @@ greenhouse.recipeBuilder()
     .inputs(<tfc:wood/sapling/rubber_fig>)
     .inputs(<metaitem:fertilizer> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([<tfc:wood/log/rubber_fig> * 16])
-    .outputs([<tfc:wood/sapling/rubber_fig> * 3])
+    .outputs([<tfc:wood/log/rubber_fig> * 8])
+    .outputs([<tfc:wood/sapling/rubber_fig> * 2])
     .outputs([<metaitem:rubber_drop> * 4])
     .duration(900)
     .EUt(60)
@@ -129,7 +126,7 @@ greenhouse.recipeBuilder()
     .circuit(1)
     .inputs(<tfc:wood/sapling/hevea>)
     .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([<tfc:wood/log/hevea> * 8])
+    .outputs([<tfc:wood/log/hevea> * 4])
     .outputs([<tfc:wood/sapling/hevea>])
     .outputs([<metaitem:rubber_drop>])
     .duration(1200)
@@ -140,8 +137,8 @@ greenhouse.recipeBuilder()
     .inputs(<tfc:wood/sapling/hevea>)
     .inputs(<metaitem:fertilizer> * 4)
     .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([<tfc:wood/log/hevea> * 16])
-    .outputs([<tfc:wood/sapling/hevea> * 3])
+    .outputs([<tfc:wood/log/hevea> * 8])
+    .outputs([<tfc:wood/sapling/hevea> * 2])
     .outputs([<metaitem:rubber_drop> * 4])
     .duration(900)
     .EUt(60)

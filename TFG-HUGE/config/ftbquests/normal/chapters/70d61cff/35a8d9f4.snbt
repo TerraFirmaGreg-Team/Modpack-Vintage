@@ -1,15 +1,14 @@
 {
-	title: "Glowstone Boules",
+	title: "{tfg.quests.ev.glowstoneboules.title}",
 	icon: "gregtech:meta_item_1 1 362",
 	x: -9.0d,
 	y: -3.0d,
 	shape: "circle",
+	description: "{tfg.quests.ev.glowstoneboules.subtitle}",
 	text: [
-		"§oDoping is the process of intentionally introducing impurities into semiconductors to change their properties.§r",
+		"{tfg.quests.ev.glowstoneboules.desc1}",
 		"",
-		"§7Silicon§r can be doped with small amounts of §eGlowstone§r to make a better §eSilicon Boule§r.",
-		"",
-		"Glowstone-doped Silicon Boules typically yield §68 times§r more wafers than their non-doped counterparts. However, they are not strictly needed until the §5EV§r age, where they will be used in more complex wafers."
+		"{tfg.quests.ev.glowstoneboules.desc2}"
 	],
 	dependencies: [
 		"14263e77"

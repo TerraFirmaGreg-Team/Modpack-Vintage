@@ -71,9 +71,6 @@ for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
 
-// Удаление групп
-Carving.removeGroup("basalt");
-
 // --- Adding Recipes
 
 // Железная стамеска

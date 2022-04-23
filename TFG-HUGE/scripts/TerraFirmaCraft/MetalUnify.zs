@@ -75,34 +75,23 @@ Anvil.addRecipe("tfctech:TFG_long_rod_zinc", <ore:ingotZinc>, <gregtech:meta_sti
 
 // --- Унификация шестеренок
 Welding.addRecipe("tfc:TFG_gear_bismuth", <ore:rackwheelBismuth>, <ore:sleeveTin>, <gregtech:meta_gear:11>, 1);
-Welding.addRecipe("tfc:TFG_gear_bismuth_bronze", <ore:rackwheelBismuthBronze>, <ore:sleeveTin>, <gregtech:meta_gear:303>, 2);
 Welding.addRecipe("tfc:TFG_gear_black_bronze", <ore:rackwheelBlackBronze>, <ore:sleeveTin>, <gregtech:meta_gear:302>, 2);
-Welding.addRecipe("tfc:TFG_gear_brass", <ore:rackwheelBrass>, <ore:sleeveTin>, <gregtech:meta_gear:259>, 1);
 Welding.addRecipe("tfc:TFG_gear_bronze", <ore:rackwheelBronze>, <ore:sleeveTin>, <gregtech:meta_gear:260>, 2);
-Welding.addRecipe("tfc:TFG_gear_copper", <ore:rackwheelCopper>, <ore:sleeveTin>, <gregtech:meta_gear:25>, 1);
-Welding.addRecipe("tfc:TFG_gear_gold", <ore:rackwheelGold>, <ore:sleeveTin>, <gregtech:meta_gear:41>, 1);
-Welding.addRecipe("tfc:TFG_gear_lead", <ore:rackwheelLead>, <ore:sleeveTin>, <gregtech:meta_gear:55>, 1);
-Welding.addRecipe("tfc:TFG_gear_nickel", <ore:rackwheelNickel>, <ore:plateNickel>, <gregtech:meta_gear:69>, 1);
-Welding.addRecipe("tfc:TFG_gear_rose_gold", <ore:rackwheelRoseGold>, <ore:sleeveTin>, <gregtech:meta_gear:301>, 1);
-Welding.addRecipe("tfc:TFG_gear_silver", <ore:rackwheelSilver>, <ore:sleeveTin>, <gregtech:meta_gear:100>, 1);
-Welding.addRecipe("tfc:TFG_gear_tin", <ore:rackwheelTin>, <ore:sleeveTin>, <gregtech:meta_gear:112>, 1);
+Welding.addRecipe("tfc:TFG_gear_nickel", <ore:rackwheelNickel>, <ore:sleeveTin>, <gregtech:meta_gear:69>, 1);
 Welding.addRecipe("tfc:TFG_gear_zinc", <ore:rackwheelZinc>, <ore:sleeveTin>, <gregtech:meta_gear:122>, 1);
-Welding.addRecipe("tfc:TFG_gear_sterling_silver", <ore:rackwheelSterlingSilver>, <ore:sleeveTin>, <gregtech:meta_gear:300>, 1);
 Welding.addRecipe("tfc:TFG_gear_wrought_iron", <ore:rackwheelWroughtIron>, <ore:sleeveBrass>, <gregtech:meta_gear:335>, 3);
-Welding.addRecipe("tfc:TFG_gear_pig_iron", <ore:rackwheelPigIron>, <ore:sleeveBrass>, <gregtech:meta_gear:299>, 3);
 Welding.addRecipe("tfc:TFG_gear_steel", <ore:rackwheelSteel>, <ore:sleeveBrass>, <gregtech:meta_gear:324>, 4);
-Welding.addRecipe("tfc:TFG_gear_platinum", <ore:rackwheelPlatinum>, <ore:sleeveSteel>, <gregtech:meta_gear:80>, 5);
 Welding.addRecipe("tfc:TFG_gear_black_steel", <ore:rackwheelBlackSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2011>, 5);
 Welding.addRecipe("tfc:TFG_gear_blue_steel", <ore:rackwheelBlueSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2511>, 6);
 Welding.addRecipe("tfc:TFG_gear_red_steel", <ore:rackwheelRedSteel>, <ore:sleeveSteel>, <gregtech:meta_gear:2510>, 6);
 
 // --- ---  Унификация высокоуглеродной стали
 Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
-Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotUnfinishedPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Anvil.addRecipe("tfc:TFG_high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // --- --- Унификация высокоуглеродной черной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
-Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotUnfinishedPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
+Welding.addRecipe("tfc:TFG_high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
 
 // --- --- Унификация высокоуглеродной красной стали
 Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);

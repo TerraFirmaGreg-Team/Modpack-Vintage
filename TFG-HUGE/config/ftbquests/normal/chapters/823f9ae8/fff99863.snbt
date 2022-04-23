@@ -24,6 +24,20 @@
 					data: "dustTinyBismuth"
 				}
 			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyBismuth"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallBismuth"
+				}
+			}
 		}]
 	}]
 }

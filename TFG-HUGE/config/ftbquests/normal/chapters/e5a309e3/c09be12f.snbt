@@ -1,15 +1,14 @@
 {
-	title: "HV Prospector",
+	title: "{tfg.quests.hv.prospector.title}",
 	icon: "gregtech:meta_item_1 1 467",
 	x: 0.5d,
 	y: 2.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.prospector.subtitle}",
 	text: [
-		"This prospector has a §6higher range§r than the §7LV§r one.",
+		"{tfg.quests.hv.prospector.desc1}",
 		"",
-		"Shift right-clicking on it will change the mod to §6Fluid Prospection§r.",
-		"",
-		"§oNot yet implemented: Shift right-click switches the mod to Fluid Prospection, which lets you scan bedrock veins for your Fluid Rigs!§r"
+		"{tfg.quests.hv.prospector.desc2}"
 	],
 	dependencies: [
 		"05af19ec"

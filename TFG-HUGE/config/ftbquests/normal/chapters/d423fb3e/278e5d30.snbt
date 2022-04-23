@@ -3,6 +3,12 @@
 	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeextractor.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzeextractor.desc1}",
+		"{tfg.quests.steam.bronzeextractor.desc2}",
+		"",
+		"{tfg.quests.steam.bronzeextractor.desc3}"
+	],
 	dependencies: [
 		"5347bf68"
 	],

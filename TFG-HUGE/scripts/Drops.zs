@@ -6,10 +6,30 @@ Dropt.list("Urn_disables").add(Dropt.rule()
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
+// Исправление выпадения луж
+Dropt.list("Puddles_Fix").add(Dropt.rule()
+  .matchDrops([<puddles:puddle>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop()));
+
 // Руда угля GT -> Уголь Гем
-Dropt.list("GT_Coal_To_TFC_Coal").add(Dropt.rule()
+Dropt.list("GT_Coal_To_TFC_Coal_0").add(Dropt.rule()
   .matchBlocks(["gregtech:ore_coal_0"])
-  .matchDrops([<gregtech:ore_coal_0>])
+  .matchDrops([<gregtech:ore_coal_0:*>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop().items([<minecraft:coal>])));
+
+// Руда угля GT -> Уголь Гем
+Dropt.list("GT_Coal_To_TFC_Coal_1").add(Dropt.rule()
+  .matchBlocks(["gregtech:ore_coal_1"])
+  .matchDrops([<gregtech:ore_coal_1:*>])
+  .replaceStrategy("REPLACE_ITEMS")
+  .addDrop(Dropt.drop().items([<minecraft:coal>])));
+
+// Руда угля GT -> Уголь Гем
+Dropt.list("GT_Coal_To_TFC_Coal_2").add(Dropt.rule()
+  .matchBlocks(["gregtech:ore_coal_2"])
+  .matchDrops([<gregtech:ore_coal_2:*>])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop().items([<minecraft:coal>])));
 

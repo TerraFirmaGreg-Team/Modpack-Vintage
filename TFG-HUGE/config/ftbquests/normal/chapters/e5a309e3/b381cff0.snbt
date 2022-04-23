@@ -1,13 +1,13 @@
 {
 	x: -1.0d,
 	y: -2.0d,
+	description: "{tfg.quests.hv.chemicalbath.subtitle}",
 	text: [
-		"§oThe name of the quest implies nothing dangerous with bathing and electricity... (it does)§r",
+		"{tfg.quests.hv.chemicalbath.desc1}",
 		"",
-		"The §3HV Chemical Bath§r is used to §ddye Lenses§r using §aChemical Dye§r.",
-		"This will let you engrave more types of Wafers!",
+		"{tfg.quests.hv.chemicalbath.desc2}",
 		"",
-		"This is also required for §aEyes of Ender§r."
+		"{tfg.quests.hv.chemicalbath.desc3}"
 	],
 	dependencies: [
 		"05af19ec"

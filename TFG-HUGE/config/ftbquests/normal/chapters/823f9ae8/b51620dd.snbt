@@ -24,6 +24,20 @@
 					data: "dustTinyTin"
 				}
 			}
+		},
+		{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTinyTin"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustSmallTin"
+				}
+			}
 		}]
 	}]
 }

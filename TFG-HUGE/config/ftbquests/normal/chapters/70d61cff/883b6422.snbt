@@ -1,20 +1,12 @@
 {
-	title: "True Distillation: Fuel",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			Amount: 1000,
-			FluidName: "oil"
-		}
-	},
+	title: "{tfg.quests.ev.truedistillationfuel.title}",
 	x: 4.5d,
 	y: 1.5d,
+	description: "{tfg.quests.ev.truedistillationfuel.subtitle}",
 	text: [
-		"Here are the four most relevant §dHydrocarbons§r you will be obtaining §6all at once§r from distilling Steam-Cracked Fuels.",
+		"{tfg.quests.ev.truedistillationfuel.desc1}",
 		"",
-		"You will §lwant§r to set this up somewhere during the §5EV§r Age.",
-		"",
-		"§aSteam-Cracked Light Fuel§r as input is the most favorable, but you are free to experiment."
+		"{tfg.quests.ev.truedistillationfuel.desc2}"
 	],
 	dependencies: [
 		"ff136331"

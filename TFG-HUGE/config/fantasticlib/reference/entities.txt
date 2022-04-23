@@ -95,7 +95,6 @@ astralsorcery:entityliquidspark
 astralsorcery:entityobservatoryhelper
 astralsorcery:entityshootingstar
 astralsorcery:entityitemdamageresistant
-gregtech:dynamite
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -140,6 +139,7 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
+gregtech:dynamite
 tfcthings:pigvil
 tfcthings:slingstone
 tfcthings:unknownprojectile
@@ -202,6 +202,14 @@ thaumcraft:taintseedprime
 astikorcarts:cargocart
 astikorcarts:plowcart
 astikorcarts:mobcart
+immersiverailroading:carfreight
+immersiverailroading:carpassenger
+immersiverailroading:cartank
+immersiverailroading:handcar
+immersiverailroading:locomotivediesel
+immersiverailroading:locomotivesteam
+immersiverailroading:tender
+universalmodcore:seat
 thaumicaugmentation:dimensional_fracture
 thaumicaugmentation:item_rift_jar
 thaumicaugmentation:item_indestructible
@@ -250,9 +258,6 @@ galacticraftplanets:juicer
 galacticraftplanets:spider_queen
 galacticraftplanets:entry_pod_venus
 galacticraftplanets:web_shot
-forestry:butterflyge
-forestry:cart.beehouse
-forestry:cart.apiary
 galacticraftcore:evolved_boss_blaze
 galacticraftcore:evolved_coldblaze
 galacticraftcore:evolved_boss_ghast

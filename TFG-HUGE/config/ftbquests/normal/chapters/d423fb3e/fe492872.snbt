@@ -1,6 +1,16 @@
 {
 	x: -15.0d,
 	y: -6.0d,
+	description: "{tfg.quests.steam.drum.subtitle}",
+	text: [
+		"{tfg.quests.steam.drum.desc1}",
+		"{tfg.quests.steam.drum.desc2}",
+		"{tfg.quests.steam.drum.desc3}",
+		"",
+		"{tfg.quests.steam.drum.desc4}",
+		"",
+		"{tfg.quests.steam.drum.desc5}"
+	],
 	dependencies: [
 		"7d03eeb7"
 	],

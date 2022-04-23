@@ -1,8 +1,19 @@
 {
-	x: -22.0d,
+	x: -21.0d,
 	y: -11.0d,
 	shape: "circle",
 	description: "{tfg.quests.steam.bronzeforgehammer.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzeforgehammer.desc1}",
+		"",
+		"{tfg.quests.steam.bronzeforgehammer.desc2}",
+		"",
+		"{tfg.quests.steam.bronzeforgehammer.desc3}",
+		"",
+		"{tfg.quests.steam.bronzeforgehammer.desc4}",
+		"",
+		"{tfg.quests.steam.bronzeforgehammer.desc5}"
+	],
 	dependencies: [
 		"5347bf68"
 	],

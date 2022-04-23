@@ -1,5 +1,5 @@
 {
-	title: "Super Battery",
+	title: "{tfg.quests.hv.superbattery.title}",
 	icon: {
 		id: "gregtech:meta_item_1",
 		Damage: 741s,
@@ -10,12 +10,11 @@
 	x: -6.5d,
 	y: 3.5d,
 	shape: "circle",
+	description: "{tfg.quests.hv.superbattery.subtitle}",
 	text: [
-		"§oBatteries are cool, but you know what's cooler? Science-fiction Batteries!§r",
+		"{tfg.quests.hv.superbattery.desc1}",
 		"",
-		"§aEnergium Crystals§r store a significant amount of §9EU§r, much greater than regular batteries. They are also arguably cheaper!",
-		"",
-		"You will need a §3HV Autoclave§r. For sure we were not gonna give them for free!"
+		"{tfg.quests.hv.superbattery.desc2}"
 	],
 	dependencies: [
 		"05af19ec"

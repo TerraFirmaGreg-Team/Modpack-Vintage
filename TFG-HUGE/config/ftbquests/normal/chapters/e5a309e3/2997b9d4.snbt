@@ -2,10 +2,9 @@
 	x: 4.5d,
 	y: -4.0d,
 	shape: "circle",
+	description: "{tfg.quests.hv.fluorine.subtitle}",
 	text: [
-		"§oFluorine is the most rare gas to obtain from electrolysis in this game.§r",
-		"",
-		"You may obtain it from §aLepidolite§r, §aBastnatite§r, §aMica§r, but the best source is from §aTopaz§r."
+		"{tfg.quests.hv.fluorine.desc1}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

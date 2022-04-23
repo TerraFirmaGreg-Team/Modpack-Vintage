@@ -1,10 +1,9 @@
 {
-	title: "Extreme Chemical Reactions",
 	icon: "gregtech:machine 1 218",
 	x: -1.5d,
 	y: -3.0d,
 	text: [
-		"No Description"
+		""
 	],
 	dependencies: [
 		"14263e77"

@@ -1,5 +1,5 @@
 {
-	title: "Extreme Batteries",
+	title: "{tfg.quests.ev.extremebatteries.title}",
 	icon: {
 		id: "gregtech:meta_item_1",
 		Damage: 742s,
@@ -9,10 +9,9 @@
 	},
 	x: -5.0d,
 	y: -6.5d,
+	description: "{tfg.quests.ev.extremebatteries.subtitle}",
 	text: [
-		"The Best Battery-like item, for §5EV§r!",
-		"",
-		"The §aLapotron Crystal§r requires quite a bit of nested crafting, so craft it in bulks or automate it with AE2 patterns."
+		"{tfg.quests.ev.extremebatteries.desc1}"
 	],
 	dependencies: [
 		"8a65a77a"
