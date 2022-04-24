@@ -10,6 +10,7 @@ import mods.gregtech.StoneType;
 
 // --- Custom material settings
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
+<material:red_steel>.addFlags("generate_long_rod");
 <material:magnesium>.addFlags("generate_plate");
 <material:titanium>.addFlags("generate_foil");
 <material:zinc>.addFlags("generate_long_rod", "generate_gear");

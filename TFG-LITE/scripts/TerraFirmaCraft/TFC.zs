@@ -936,22 +936,13 @@ Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileS
 Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfg:file_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadFileCobalt>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
-/*
+
 // Исправление тростника
 // Plant Ball * 1
 compressor.findRecipe(2, [<minecraft:reeds:0> * 8], null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:sugarcane> * 8)
-	.outputs(<metaitem:plant_ball>)
-	.duration(300).EUt(2).buildAndRegister();
 
 // Biomass * 20
 brewery.findRecipe(3, [<minecraft:reeds:0>], [<liquid:water> * 20]).remove();
-brewery.recipeBuilder()
-	.inputs(<ore:sugarcane>)
-	.fluidInputs(<liquid:water> * 20)
-	.fluidOutputs(<liquid:biomass> * 20)
-	.duration(200).EUt(3).buildAndRegister();
 
 // Sugar * 1
 macerator.findRecipe(2, [<minecraft:reeds:0>], null).remove();
@@ -974,4 +965,4 @@ chemical_bath.recipeBuilder()
 	.inputs(<ore:sugarcane>)
 	.fluidInputs(<liquid:distilled_water> * 100)
 	.outputs(<minecraft:paper>)
-	.duration(100).EUt(7).buildAndRegister();*/
+	.duration(100).EUt(7).buildAndRegister();

@@ -3561,6 +3561,28 @@ global Activated_Cage_Lamps_Array as IItemStack[] = [
     <projectred-illumination:inverted_cage_lamp:15>,
 ];
 
+// All Transmissions Wires
+global Transmission_Wires_Array as IItemStack[] = [
+	<projectred-transmission:wire:1>,
+    <projectred-transmission:wire:1:1>,
+    <projectred-transmission:wire:1:2>,
+    <projectred-transmission:wire:1:3>,
+    <projectred-transmission:wire:1:4>,
+    <projectred-transmission:wire:1:5>,
+    <projectred-transmission:wire:1:6>,
+    <projectred-transmission:wire:1:7>,
+    <projectred-transmission:wire:1:8>,
+    <projectred-transmission:wire:1:9>,
+    <projectred-transmission:wire:1:10>,
+    <projectred-transmission:wire:1:11>,
+    <projectred-transmission:wire:1:12>,
+    <projectred-transmission:wire:1:13>,
+    <projectred-transmission:wire:1:14>,
+    <projectred-transmission:wire:1:15>,
+	<projectred-transmission:wire:1:16>,
+];
+
+
 // - All liquid dye Array
 global All_Liquid_Dyes as ILiquidStack[] = [
 	<liquid:dye_white>,

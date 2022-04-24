@@ -35,6 +35,17 @@ for item in ItemsToRemove{
     mods.jei.JEI.removeAndHide(item);
 }
 
+// Удаление и скрытие предметов
+val RemoveRecipes as IItemStack[] = [
+	<projectred-core:resource_item:20>,
+    <projectred-core:resource_item:21>,
+    <projectred-transmission:wire>,
+    <projectred-fabrication:ic_chip>
+] as IItemStack[];
+for item in RemoveRecipes {
+    recipes.remove(item);
+}
+
 // Удаление рецептов иллюмаров
 for item in Illuminars_Array {
     recipes.remove(item);
@@ -97,6 +108,11 @@ for item in Deactivated_Cage_Lamps_Array {
 
 // Удаление рецептов активированных кейдж ламп
 for item in Activated_Cage_Lamps_Array {
+    recipes.remove(item);
+}
+
+// Удаление рецептов проводов из редстоуна
+for item in Transmission_Wires_Array {
     recipes.remove(item);
 }
 
@@ -236,3 +252,40 @@ for i,Activated_Cage_Lamps_Array in Activated_Cage_Lamps_Array {
     	.outputs(Activated_Cage_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
 }
+
+// Silicon Chip
+circuit_assembler.recipeBuilder()
+    .inputs(<projectred-core:resource_item>, <metaitem:wafer.integrated_logic_circuit>)
+    .circuit(4)
+    .fluidInputs([<liquid:soldering_alloy> * 288])
+    .outputs(<projectred-core:resource_item:20>)
+    .duration(400).EUt(32).buildAndRegister();
+
+// Energized Silicon Chip
+polarizer.recipeBuilder()
+    .inputs(<projectred-core:resource_item:20>)
+    .outputs(<projectred-core:resource_item:21>)
+    .duration(200).EUt(32).buildAndRegister();
+
+// Red Alloy Wire
+assembler.recipeBuilder()
+    .inputs(<ore:wireGtSingleRedAlloy> * 2)
+    .circuit(2)
+    .fluidInputs([<liquid:redstone> * 144])
+    .outputs(<projectred-transmission:wire> * 12)
+    .duration(180).EUt(32).buildAndRegister();
+
+// Покраска проводов
+for i, Transmission_Wires_Array in Transmission_Wires_Array {
+    chemical_bath.recipeBuilder()
+    	.inputs([<projectred-transmission:wire>])
+        .fluidInputs([All_Liquid_Dyes[i] * 18])
+    	.outputs(Transmission_Wires_Array)
+    	.duration(100).EUt(16).buildAndRegister();
+}
+
+// IC Chip
+recipes.addShaped(<projectred-fabrication:ic_chip>, 
+[[<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>],
+ [<appliedenergistics2:material:16>, <projectred-core:resource_item>, <appliedenergistics2:material:16>],
+ [<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>]]);
