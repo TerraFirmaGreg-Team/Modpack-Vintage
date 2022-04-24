@@ -282,6 +282,7 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/flint_and_steel",
 	"tfc:vanilla/compass",
 	"tfc:vanilla/redstone/redstone_lamp",
+	"tfc:vanilla/redstone/piston",
 	"tfc:vanilla/redstone/flawless_daylight_detector",
 	"tfc:vanilla/redstone/exquisite_daylight_detector",
 	"tfc:vanilla/redstone/daylight_detector",
@@ -935,6 +936,7 @@ Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileS
 Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfg:file_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadFileCobalt>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
+/*
 // Исправление тростника
 // Plant Ball * 1
 compressor.findRecipe(2, [<minecraft:reeds:0> * 8], null).remove();
@@ -972,4 +974,4 @@ chemical_bath.recipeBuilder()
 	.inputs(<ore:sugarcane>)
 	.fluidInputs(<liquid:distilled_water> * 100)
 	.outputs(<minecraft:paper>)
-	.duration(100).EUt(7).buildAndRegister();
+	.duration(100).EUt(7).buildAndRegister();*/

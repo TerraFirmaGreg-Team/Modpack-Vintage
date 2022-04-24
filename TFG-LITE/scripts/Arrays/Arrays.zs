@@ -3301,6 +3301,266 @@ global Horizontal_Glass_Panes_Array as IItemStack[] = [
     <hgp:hgpcoloredpane:15>
 ];
 
+// All Illuminars
+global Illuminars_Array as IItemStack[] = [
+    <projectred-core:resource_item:500>,
+    <projectred-core:resource_item:501>,
+    <projectred-core:resource_item:502>,
+    <projectred-core:resource_item:503>,
+    <projectred-core:resource_item:504>,
+    <projectred-core:resource_item:505>,
+    <projectred-core:resource_item:506>,
+    <projectred-core:resource_item:507>,
+    <projectred-core:resource_item:508>,
+    <projectred-core:resource_item:509>,
+    <projectred-core:resource_item:510>,
+    <projectred-core:resource_item:511>,
+    <projectred-core:resource_item:512>,
+    <projectred-core:resource_item:513>,
+    <projectred-core:resource_item:514>,
+    <projectred-core:resource_item:515>,
+];
+
+// All Deactivated Lamps
+global Deactivated_Lamps_Array as IItemStack[] = [
+    <projectred-illumination:lamp>,
+    <projectred-illumination:lamp:1>,
+    <projectred-illumination:lamp:2>,
+    <projectred-illumination:lamp:3>,
+    <projectred-illumination:lamp:4>,
+    <projectred-illumination:lamp:5>,
+    <projectred-illumination:lamp:6>,
+    <projectred-illumination:lamp:7>,
+    <projectred-illumination:lamp:8>,
+    <projectred-illumination:lamp:9>,
+    <projectred-illumination:lamp:10>,
+    <projectred-illumination:lamp:11>,
+    <projectred-illumination:lamp:12>,
+    <projectred-illumination:lamp:13>,
+    <projectred-illumination:lamp:14>,
+    <projectred-illumination:lamp:15>,
+];
+
+// All Activated Lamps
+global Activated_Lamps_Array as IItemStack[] = [
+    <projectred-illumination:lamp:16>,
+    <projectred-illumination:lamp:17>,
+    <projectred-illumination:lamp:18>,
+    <projectred-illumination:lamp:19>,
+    <projectred-illumination:lamp:20>,
+    <projectred-illumination:lamp:21>,
+    <projectred-illumination:lamp:22>,
+    <projectred-illumination:lamp:23>,
+    <projectred-illumination:lamp:24>,
+    <projectred-illumination:lamp:25>,
+    <projectred-illumination:lamp:26>,
+    <projectred-illumination:lamp:27>,
+    <projectred-illumination:lamp:28>,
+    <projectred-illumination:lamp:29>,
+    <projectred-illumination:lamp:30>,
+    <projectred-illumination:lamp:31>,
+];
+
+// All Button Lamps
+global Button_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:light_button>,
+    <projectred-illumination:light_button:1>,
+    <projectred-illumination:light_button:2>,
+    <projectred-illumination:light_button:3>,
+    <projectred-illumination:light_button:4>,
+    <projectred-illumination:light_button:5>,
+    <projectred-illumination:light_button:6>,
+    <projectred-illumination:light_button:7>,
+    <projectred-illumination:light_button:8>,
+    <projectred-illumination:light_button:9>,
+    <projectred-illumination:light_button:10>,
+    <projectred-illumination:light_button:11>,
+    <projectred-illumination:light_button:12>,
+    <projectred-illumination:light_button:13>,
+    <projectred-illumination:light_button:14>,
+    <projectred-illumination:light_button:15>,
+];
+
+// All Feedback Lamps
+global Feedback_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:feedback_light_button>,
+    <projectred-illumination:feedback_light_button:1>,
+    <projectred-illumination:feedback_light_button:2>,
+    <projectred-illumination:feedback_light_button:3>,
+    <projectred-illumination:feedback_light_button:4>,
+    <projectred-illumination:feedback_light_button:5>,
+    <projectred-illumination:feedback_light_button:6>,
+    <projectred-illumination:feedback_light_button:7>,
+    <projectred-illumination:feedback_light_button:8>,
+    <projectred-illumination:feedback_light_button:9>,
+    <projectred-illumination:feedback_light_button:10>,
+    <projectred-illumination:feedback_light_button:11>,
+    <projectred-illumination:feedback_light_button:12>,
+    <projectred-illumination:feedback_light_button:13>,
+    <projectred-illumination:feedback_light_button:14>,
+    <projectred-illumination:feedback_light_button:15>,
+];
+
+// All Deactivated Lantern Lamps
+global Deactivated_Lantern_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:lantern>,
+    <projectred-illumination:lantern:1>,
+    <projectred-illumination:lantern:2>,
+    <projectred-illumination:lantern:3>,
+    <projectred-illumination:lantern:4>,
+    <projectred-illumination:lantern:5>,
+    <projectred-illumination:lantern:6>,
+    <projectred-illumination:lantern:7>,
+    <projectred-illumination:lantern:8>,
+    <projectred-illumination:lantern:9>,
+    <projectred-illumination:lantern:10>,
+    <projectred-illumination:lantern:11>,
+    <projectred-illumination:lantern:12>,
+    <projectred-illumination:lantern:13>,
+    <projectred-illumination:lantern:14>,
+    <projectred-illumination:lantern:15>,
+];
+
+// All Activated Lantern Lamps
+global Activated_Lantern_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:inverted_lantern>,
+    <projectred-illumination:inverted_lantern:1>,
+    <projectred-illumination:inverted_lantern:2>,
+    <projectred-illumination:inverted_lantern:3>,
+    <projectred-illumination:inverted_lantern:4>,
+    <projectred-illumination:inverted_lantern:5>,
+    <projectred-illumination:inverted_lantern:6>,
+    <projectred-illumination:inverted_lantern:7>,
+    <projectred-illumination:inverted_lantern:8>,
+    <projectred-illumination:inverted_lantern:9>,
+    <projectred-illumination:inverted_lantern:10>,
+    <projectred-illumination:inverted_lantern:11>,
+    <projectred-illumination:inverted_lantern:12>,
+    <projectred-illumination:inverted_lantern:13>,
+    <projectred-illumination:inverted_lantern:14>,
+    <projectred-illumination:inverted_lantern:15>,
+];
+
+// All Deactivated Fixture Lamps
+global Deactivated_Fixture_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:fixture_light>,
+    <projectred-illumination:fixture_light:1>,
+    <projectred-illumination:fixture_light:2>,
+    <projectred-illumination:fixture_light:3>,
+    <projectred-illumination:fixture_light:4>,
+    <projectred-illumination:fixture_light:5>,
+    <projectred-illumination:fixture_light:6>,
+    <projectred-illumination:fixture_light:7>,
+    <projectred-illumination:fixture_light:8>,
+    <projectred-illumination:fixture_light:9>,
+    <projectred-illumination:fixture_light:10>,
+    <projectred-illumination:fixture_light:11>,
+    <projectred-illumination:fixture_light:12>,
+    <projectred-illumination:fixture_light:13>,
+    <projectred-illumination:fixture_light:14>,
+    <projectred-illumination:fixture_light:15>,
+];
+
+// All Activated Fixture Lamps
+global Activated_Fixture_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:inverted_fixture_light>,
+    <projectred-illumination:inverted_fixture_light:1>,
+    <projectred-illumination:inverted_fixture_light:2>,
+    <projectred-illumination:inverted_fixture_light:3>,
+    <projectred-illumination:inverted_fixture_light:4>,
+    <projectred-illumination:inverted_fixture_light:5>,
+    <projectred-illumination:inverted_fixture_light:6>,
+    <projectred-illumination:inverted_fixture_light:7>,
+    <projectred-illumination:inverted_fixture_light:8>,
+    <projectred-illumination:inverted_fixture_light:9>,
+    <projectred-illumination:inverted_fixture_light:10>,
+    <projectred-illumination:inverted_fixture_light:11>,
+    <projectred-illumination:inverted_fixture_light:12>,
+    <projectred-illumination:inverted_fixture_light:13>,
+    <projectred-illumination:inverted_fixture_light:14>,
+    <projectred-illumination:inverted_fixture_light:15>,
+];
+
+// All Deactivated Fallout Lamps
+global Deactivated_Fallout_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:fallout_lamp>,
+    <projectred-illumination:fallout_lamp:1>,
+    <projectred-illumination:fallout_lamp:2>,
+    <projectred-illumination:fallout_lamp:3>,
+    <projectred-illumination:fallout_lamp:4>,
+    <projectred-illumination:fallout_lamp:5>,
+    <projectred-illumination:fallout_lamp:6>,
+    <projectred-illumination:fallout_lamp:7>,
+    <projectred-illumination:fallout_lamp:8>,
+    <projectred-illumination:fallout_lamp:9>,
+    <projectred-illumination:fallout_lamp:10>,
+    <projectred-illumination:fallout_lamp:11>,
+    <projectred-illumination:fallout_lamp:12>,
+    <projectred-illumination:fallout_lamp:13>,
+    <projectred-illumination:fallout_lamp:14>,
+    <projectred-illumination:fallout_lamp:15>,
+];
+
+// All Activated Fallout Lamps
+global Activated_Fallout_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:inverted_fallout_lamp>,
+    <projectred-illumination:inverted_fallout_lamp:1>,
+    <projectred-illumination:inverted_fallout_lamp:2>,
+    <projectred-illumination:inverted_fallout_lamp:3>,
+    <projectred-illumination:inverted_fallout_lamp:4>,
+    <projectred-illumination:inverted_fallout_lamp:5>,
+    <projectred-illumination:inverted_fallout_lamp:6>,
+    <projectred-illumination:inverted_fallout_lamp:7>,
+    <projectred-illumination:inverted_fallout_lamp:8>,
+    <projectred-illumination:inverted_fallout_lamp:9>,
+    <projectred-illumination:inverted_fallout_lamp:10>,
+    <projectred-illumination:inverted_fallout_lamp:11>,
+    <projectred-illumination:inverted_fallout_lamp:12>,
+    <projectred-illumination:inverted_fallout_lamp:13>,
+    <projectred-illumination:inverted_fallout_lamp:14>,
+    <projectred-illumination:inverted_fallout_lamp:15>,
+];
+
+// All Deactivated Cage Lamps
+global Deactivated_Cage_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:cage_lamp>,
+    <projectred-illumination:cage_lamp:1>,
+    <projectred-illumination:cage_lamp:2>,
+    <projectred-illumination:cage_lamp:3>,
+    <projectred-illumination:cage_lamp:4>,
+    <projectred-illumination:cage_lamp:5>,
+    <projectred-illumination:cage_lamp:6>,
+    <projectred-illumination:cage_lamp:7>,
+    <projectred-illumination:cage_lamp:8>,
+    <projectred-illumination:cage_lamp:9>,
+    <projectred-illumination:cage_lamp:10>,
+    <projectred-illumination:cage_lamp:11>,
+    <projectred-illumination:cage_lamp:12>,
+    <projectred-illumination:cage_lamp:13>,
+    <projectred-illumination:cage_lamp:14>,
+    <projectred-illumination:cage_lamp:15>,
+];
+
+// All Activated Cage Lamps
+global Activated_Cage_Lamps_Array as IItemStack[] = [
+	<projectred-illumination:inverted_cage_lamp>,
+    <projectred-illumination:inverted_cage_lamp:1>,
+    <projectred-illumination:inverted_cage_lamp:2>,
+    <projectred-illumination:inverted_cage_lamp:3>,
+    <projectred-illumination:inverted_cage_lamp:4>,
+    <projectred-illumination:inverted_cage_lamp:5>,
+    <projectred-illumination:inverted_cage_lamp:6>,
+    <projectred-illumination:inverted_cage_lamp:7>,
+    <projectred-illumination:inverted_cage_lamp:8>,
+    <projectred-illumination:inverted_cage_lamp:9>,
+    <projectred-illumination:inverted_cage_lamp:10>,
+    <projectred-illumination:inverted_cage_lamp:11>,
+    <projectred-illumination:inverted_cage_lamp:12>,
+    <projectred-illumination:inverted_cage_lamp:13>,
+    <projectred-illumination:inverted_cage_lamp:14>,
+    <projectred-illumination:inverted_cage_lamp:15>,
+];
+
 // - All liquid dye Array
 global All_Liquid_Dyes as ILiquidStack[] = [
 	<liquid:dye_white>,

@@ -1,12 +1,7 @@
 // Скрытие категорий JEI
 mods.jei.JEI.hideCategory("minecraft.anvil");
 mods.jei.JEI.hideCategory("appliedenergistics2.inscriber");
-mods.jei.JEI.hideCategory("tfc.rock_layer");
-mods.jei.JEI.hideCategory("tfc.vein");
 mods.jei.JEI.hideCategory("tfcflorae.casting");
-mods.jei.JEI.hideCategory("tfcflorae.casting_earthenware_firmalife");
-mods.jei.JEI.hideCategory("tfcflorae.casting_kaolinite_firmalife");
-mods.jei.JEI.hideCategory("tfcflorae.casting_stoneware_firmalife");
 mods.jei.JEI.hideCategory("ftbquests.quests");
 
 // FTB
