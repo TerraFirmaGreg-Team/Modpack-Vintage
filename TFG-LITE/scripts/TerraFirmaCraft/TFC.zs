@@ -323,8 +323,13 @@ val RemoveItemsFromQuern as IItemStack[] = [
 	<minecraft:redstone> * 8,
 	<tfc:powder/flux> * 6,
 ];
-for item in RemoveItemsFromQuern{
+for item in RemoveItemsFromQuern {
     Quern.removeRecipe(item);
+}
+
+// Удаление рецептов ковки голов
+for item in All_Metal_Heads_From_TFC {
+    Anvil.removeRecipe(item);
 }
 
 // Удаление рецептов ковки пластин

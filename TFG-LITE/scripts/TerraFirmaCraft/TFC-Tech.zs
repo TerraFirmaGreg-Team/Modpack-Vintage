@@ -32,14 +32,12 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <tfctech:metal/black_bronze_long_rod>,
     <tfctech:metal/black_bronze_rod>,
     <tfctech:metal/black_bronze_screw>,
-    <tfctech:metal/black_steel_blowpipe>,
     <tfctech:metal/black_steel_bolt>,
     <tfctech:metal/black_steel_draw_plate>,
     <tfctech:metal/black_steel_gear>,
     <tfctech:metal/black_steel_long_rod>,
     <tfctech:metal/black_steel_rod>,
     <tfctech:metal/black_steel_screw>,
-    <tfctech:metal/blue_steel_blowpipe>,
     <tfctech:metal/blue_steel_bolt>,
     <tfctech:metal/blue_steel_gear>,
     <tfctech:metal/blue_steel_long_rod>,
@@ -91,7 +89,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <tfctech:metal/platinum_long_rod>,
     <tfctech:metal/platinum_rod>,
     <tfctech:metal/platinum_screw>,
-    <tfctech:metal/red_steel_blowpipe>,
     <tfctech:metal/red_steel_bolt>,
     <tfctech:metal/red_steel_gear>,
     <tfctech:metal/red_steel_long_rod>,
@@ -107,7 +104,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <tfctech:metal/silver_long_rod>,
     <tfctech:metal/silver_rod>,
     <tfctech:metal/silver_screw>,
-    <tfctech:metal/steel_blowpipe>,
     <tfctech:metal/steel_bolt>,
     <tfctech:metal/steel_draw_plate>,
     <tfctech:metal/steel_gear>,
@@ -131,7 +127,6 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <tfctech:metal/tin_rod>,
     <tfctech:metal/tin_screw>,
     <tfctech:metal/tin_sleeve>,
-    <tfctech:metal/wrought_iron_blowpipe>,
     <tfctech:metal/wrought_iron_bolt>,
     <tfctech:metal/wrought_iron_gear>,
     <tfctech:metal/wrought_iron_long_rod>,
@@ -183,12 +178,18 @@ for item in RemoveItemWireDrawingRecipes {
 
 // Удаление рецептов ковки
 val RemoveItemAnvilRecipes as IItemStack[] = [
-	<tfctech:metal/iron_draw_plate>,
-    <tfctech:metal/steel_draw_plate>,
-    <tfctech:metal/black_steel_draw_plate>,
     <tfctech:metal/iron_tongs>,
     <tfctech:metal/iron_bowl_mount>,
-    <tfctech:metal/wrought_iron_blowpipe>
+    // Draw Plates
+    <tfctech:metal/iron_draw_plate>,
+    <tfctech:metal/steel_draw_plate>,
+    <tfctech:metal/black_steel_draw_plate>,
+    // Blowpipes
+    <tfctech:metal/wrought_iron_blowpipe>,
+    <tfctech:metal/steel_blowpipe>,
+    <tfctech:metal/black_steel_blowpipe>,
+    <tfctech:metal/blue_steel_blowpipe>,
+    <tfctech:metal/red_steel_blowpipe>
 ];
 for item in RemoveItemAnvilRecipes {
     Anvil.removeRecipe(item);
@@ -270,8 +271,12 @@ Anvil.addRecipe("tfg:tfctech/tongs", <ore:ingotWroughtIron>, <tfctech:metal/iron
 // Bowl Mount
 Anvil.addRecipe("tfg:tfctech/bowl_mount", <ore:ingotWroughtIron>, <tfctech:metal/iron_bowl_mount>, 3, "general", "BEND_LAST", "DRAW_SECOND_LAST", "BEND_NOT_LAST");
 
-// Blowpipe
-Anvil.addRecipe("tfg:tfctech/wrought_iron_blowpipe", <ore:plateWroughtIron>, <tfctech:metal/wrought_iron_blowpipe>, 3, "general", "BEND_LAST", "BEND_SECOND_LAST");
+// Blowpipes
+Anvil.addRecipe("tfg:tfctech/blowpipe/wrought_iron", <ore:plateWroughtIron>, <tfctech:metal/wrought_iron_blowpipe>, 3, "general", "BEND_LAST", "BEND_SECOND_LAST");
+Anvil.addRecipe("tfg:tfctech/blowpipe/steel", <ore:plateSteel>, <tfctech:metal/steel_blowpipe>, 4, "general", "BEND_LAST", "BEND_SECOND_LAST");
+Anvil.addRecipe("tfg:tfctech/blowpipe/black_steel", <ore:plateBlackSteel>, <tfctech:metal/black_steel_blowpipe>, 5, "general", "BEND_LAST", "BEND_SECOND_LAST");
+Anvil.addRecipe("tfg:tfctech/blowpipe/blue_steel", <ore:plateBlueSteel>, <tfctech:metal/blue_steel_blowpipe>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST");
+Anvil.addRecipe("tfg:tfctech/blowpipe/red_steel", <ore:plateRedSteel>, <tfctech:metal/red_steel_blowpipe>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST");
 
 // Winch
 recipes.addShaped(<tfctech:wiredraw/winch>,
