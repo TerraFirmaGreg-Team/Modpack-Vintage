@@ -153,18 +153,18 @@ recipes.addShaped(<gregtech:machine_casing:1>,
 // Primitive water pump deck
 recipes.addShaped(<gregtech:steam_casing:4> * 2,
 [[<ore:screwIron>, <ore:plankWood>, <ore:screwIron>],
- [<ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag(), <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
+ [<ore:gtce.tool.screwdrivers>, <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
 
 // Primitive water pump hatch
 recipes.addShaped(<metaitem:pump_hatch>,
-[[<ore:screwIron>, <ore:ringIron>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag()],
+[[<ore:screwIron>, <ore:ringIron>, <ore:gtce.tool.screwdrivers>],
  [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
  [<ore:slabCobblestone>, <ore:ringIron>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped(<metaitem:primitive_water_pump>,
 [[<ore:ringIron>, <ore:pipeNormalFluidWood>, <ore:screwIron>],
- [<ore:rotorIron>, <ore:plankWood>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag()],
+ [<ore:rotorIron>, <ore:plankWood>, <ore:gtce.tool.screwdrivers>],
  [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven

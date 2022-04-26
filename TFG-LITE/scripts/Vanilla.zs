@@ -646,26 +646,26 @@ recipes.addShaped(<minecraft:name_tag>,
 //Повторитель
 recipes.addShaped(<minecraft:repeater>,
 [[<ore:screwIron>, null, <ore:screwIron>],
- [<minecraft:redstone_torch>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag(), <minecraft:redstone_torch>],
+ [<minecraft:redstone_torch>, <ore:gtce.tool.screwdrivers>, <minecraft:redstone_torch>],
  [<ore:pressurePlateStone>, <ore:stickRedAlloy>,<ore:pressurePlateStone>]]);
 
 //Компаратор - обычный
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateCertusQuartz>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 //Компаратор - кварц
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateNetherQuartz>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 //Компаратор - кварцит
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateQuartzite>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 //Детектор света - обычный
 recipes.addShaped(<minecraft:daylight_detector>,
