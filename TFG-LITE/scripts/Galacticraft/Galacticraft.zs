@@ -302,7 +302,7 @@ ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0
 ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0);
 
 //Шест
-recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]);
+recipes.addShapeless(<galacticraftcore:steel_pole>*2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:gtce.tool.hard.hammers>]);
 
 //Светофакел
 recipes.addShapeless(<galacticraftcore:glowstone_torch>*2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
@@ -562,7 +562,7 @@ recipes.addShaped(<galacticraftcore:oil_canister_partial:1001>,
 //Канистра из олова
 recipes.addShaped(<galacticraftcore:canister>,
 [[<ore:plateTin>, null, <ore:plateTin>],
- [<ore:plateTin>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:plateTin>],
+ [<ore:plateTin>, <ore:gtce.tool.hard.hammers>, <ore:plateTin>],
  [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
 
 //Дуговая лампа

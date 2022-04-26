@@ -788,7 +788,7 @@ recipes.removeByRecipeName("gregtech:plank_to_wooden_shape");
 recipes.addShaped(<gregtech:meta_item_1:347>,
 [[null, <ore:lumber>, null],
  [null, <ore:lumber>, null],
- [<ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:lumber>, null]]);
+ [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
 
 // Исправление крафта бумаги
 recipes.removeByRecipeName("tfc:paper");
@@ -808,11 +808,11 @@ recipes.removeByRecipeName("gregtech:dust_bronze");
 recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 // Фикс палок из люмбера
-recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:craftingToolSaw>.firstItem.withEmptyTag()]);
+recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
 
 // Фикс крафта ступка + кремний = гравий
 recipes.removeByRecipeName("gregtech:gravel_to_flint");
-recipes.addShapeless (<minecraft:flint>, [<ore:craftingToolMortar>.firstItem.withEmptyTag(), <ore:gravel>]);
+recipes.addShapeless (<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
 
 // Рецепты теплой воды
 fluid_heater.recipeBuilder()
