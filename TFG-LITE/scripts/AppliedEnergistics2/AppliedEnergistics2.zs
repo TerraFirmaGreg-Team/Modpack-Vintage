@@ -446,7 +446,7 @@ assembler.recipeBuilder()
 // Сетевой инструмент
 recipes.removeByRecipeName("appliedenergistics2:tools/network_tool");
 recipes.addShaped("network_tool", <appliedenergistics2:network_tool>, [
-  [<ore:craftingToolWrench>, <ore:circuitLv>],
+  [<ore:gtce.tool.wrenches>, <ore:circuitLv>],
   [<appliedenergistics2:material:23>, <ore:itemIlluminatedPanel>]]);
 // Беспроводной раздатчик сигнала
 recipes.removeByRecipeName("appliedenergistics2:network/wireless_part");
@@ -897,7 +897,7 @@ assembler.recipeBuilder()
 // Wireless Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/wireless_terminal");
 recipes.addShaped("wireless_terminal", <appliedenergistics2:wireless_terminal>, [
-  [<ore:craftingToolWrench>, <appliedenergistics2:material:41>, <ore:craftingToolScrewdriver>],
+  [<ore:gtce.tool.wrenches>, <appliedenergistics2:material:41>, <ore:gtce.tool.screwdrivers>],
   [<ore:circuitHv>, <appliedenergistics2:part:380>, <ore:circuitHv>],
   [<ore:ae2.cable.glass>, <metaitem:lapotron_crystal>, <ore:ae2.cable.glass>]]);
 // Basic Card
@@ -1717,33 +1717,33 @@ recipes.addShaped("planes_formation", <appliedenergistics2:part:320>, [
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals");
 recipes.addShaped("terminals", <appliedenergistics2:part:380>, [
   [<ore:boltNetherQuartz>, <ore:circuitLv>, <ore:boltNetherQuartz>],
-  [<ore:craftingToolWireCutter>, <ore:itemIlluminatedPanel>, <ore:craftingToolScrewdriver>],
+  [<ore:gtce.tool.cutters>, <ore:itemIlluminatedPanel>, <ore:gtce.tool.screwdrivers>],
   [<ore:circuitLv>, <ore:plateDoubleSteel>, <ore:circuitLv>]]);
 recipes.addShaped("terminals_simple", <appliedenergistics2:part:380>, [
   [<ore:itemIlluminatedPanel>, <appliedenergistics2:material:23>],
-  [<appliedenergistics2:material:22>, <ore:craftingToolScrewdriver>]]);
+  [<appliedenergistics2:material:22>, <ore:gtce.tool.screwdrivers>]]);
 // ME Crafting Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_crafting");
 recipes.addShaped("terminals_crafting", <appliedenergistics2:part:360>, [
   [<appliedenergistics2:part:380>, <metaitem:cover.crafting>],
-  [<appliedenergistics2:material:23>, <ore:craftingToolScrewdriver>]]);
+  [<appliedenergistics2:material:23>, <ore:gtce.tool.screwdrivers>]]);
 // ME Interface Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_interface");
 recipes.addShaped("terminals_interface", <appliedenergistics2:part:480>, [
   [<appliedenergistics2:part:380>, <appliedenergistics2:part:440>],
-  [<appliedenergistics2:material:24>, <ore:craftingToolScrewdriver>]]);
+  [<appliedenergistics2:material:24>, <ore:gtce.tool.screwdrivers>]]);
 // ME Pattern Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_pattern");
 recipes.addShaped("terminals_pattern", <appliedenergistics2:part:340>, [
   [<appliedenergistics2:part:380>, <appliedenergistics2:material:52>],
-  [<appliedenergistics2:material:24>, <ore:craftingToolScrewdriver>]]);
+  [<appliedenergistics2:material:24>, <ore:gtce.tool.screwdrivers>]]);
 // ME Extanded Pattern Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminal_expanded_processing");
 recipes.addShaped("terminals_extended_pattern", <appliedenergistics2:part:341>, [
   [<appliedenergistics2:part:340>, <metaitem:sensor.luv>],
-  [<metaitem:emitter.luv>, <ore:craftingToolScrewdriver>]]);
+  [<metaitem:emitter.luv>, <ore:gtce.tool.screwdrivers>]]);
 // ME Fluid Terminal
 recipes.removeByRecipeName("appliedenergistics2:network/parts/terminals_fluid");
 recipes.addShaped("terminals_fluid", <appliedenergistics2:part:520>, [
   [<appliedenergistics2:part:380>, <ore:pipeSmallFluidPlastic>],
-  [<appliedenergistics2:material:22>, <ore:craftingToolScrewdriver>]]);
+  [<appliedenergistics2:material:22>, <ore:gtce.tool.screwdrivers>]]);

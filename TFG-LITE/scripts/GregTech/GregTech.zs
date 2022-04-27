@@ -105,13 +105,13 @@ for item in GTDoublePlates{
 // Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
 [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
- [<ore:plateBronze>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBronze>],
+ [<ore:plateBronze>, <ore:gtce.tool.wrenches>, <ore:plateBronze>],
  [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // High Pressure Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_steel>,
 [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
- [<ore:plateSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateSteel>],
+ [<ore:plateSteel>, <ore:gtce.tool.wrenches>, <ore:plateSteel>],
  [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Steam Furnace
@@ -142,35 +142,35 @@ recipes.addShaped(<metaitem:multi_furnace>,
 recipes.addShaped(<metaitem:workbench>,
 [[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
  [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
- [<ore:plankWood>, <ore:craftingToolSaw>.firstItem.withEmptyTag(), <ore:plankWood>]]);
+ [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
 // LV Machine Casing
 recipes.addShaped(<gregtech:machine_casing:1>,
 [[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
- [<ore:plateBlueSteel>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateBlueSteel>],
+ [<ore:plateBlueSteel>, <ore:gtce.tool.wrenches>, <ore:plateBlueSteel>],
  [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
 
 // Primitive water pump deck
 recipes.addShaped(<gregtech:steam_casing:4> * 2,
 [[<ore:screwIron>, <ore:plankWood>, <ore:screwIron>],
- [<ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:slabCobblestone>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag()]]);
+ [<ore:gtce.tool.screwdrivers>, <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
 
 // Primitive water pump hatch
 recipes.addShaped(<metaitem:pump_hatch>,
-[[<ore:screwIron>, <ore:ringIron>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()],
+[[<ore:screwIron>, <ore:ringIron>, <ore:gtce.tool.screwdrivers>],
  [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
  [<ore:slabCobblestone>, <ore:ringIron>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped(<metaitem:primitive_water_pump>,
 [[<ore:ringIron>, <ore:pipeNormalFluidWood>, <ore:screwIron>],
- [<ore:rotorIron>, <ore:plankWood>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag()],
+ [<ore:rotorIron>, <ore:plankWood>, <ore:gtce.tool.screwdrivers>],
  [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
 recipes.addShaped(<metaitem:coke_oven>,
 [[<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>],
- [<ore:plateWroughtIron>, <ore:craftingToolWrench>.firstItem.withEmptyTag(), <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, <ore:gtce.tool.wrenches>, <ore:plateWroughtIron>],
  [<gregtech:metal_casing:8>, <ore:plateWroughtIron>, <gregtech:metal_casing:8>]]);
 
 // Steam Miner
@@ -200,7 +200,7 @@ recipes.addShaped(<gregtech:metal_casing:1>,
 // Quartz Sand - 1
 recipes.addShaped(<ore:dustQuartzSand>.firstItem,
 [[null, <ore:sand>, null],
- [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null],
+ [null, <ore:gtce.tool.mortars>, null],
  [null, null, null]]);
 
 // Steam import bus
@@ -219,7 +219,7 @@ recipes.addShaped( <metaitem:steam_export_bus>,
 // Крафт бумажной пыли
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
- [null, <ore:craftingToolMortar>.firstItem.withEmptyTag(), null]]);
+ [null, <ore:gtce.tool.mortars>, null]]);
 // Крафт бамаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
 [[null, <ore:slabStonePolished>.reuse(), null],

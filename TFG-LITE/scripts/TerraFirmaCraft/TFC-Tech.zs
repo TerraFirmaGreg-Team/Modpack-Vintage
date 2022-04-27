@@ -254,7 +254,7 @@ recipes.addShapeless(<ore:dustPotash>.firstItem * 4, [<tfctech:pot_potash>]);
 recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
 
 // Резина для первых этапов
-recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:craftingToolKnife>.firstItem.withEmptyTag()]);
+recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
 
 // Уменьшение выхода рецепта с резиной
 Barrel.removeRecipe(<tfctech:latex/rubber_mix> * 6);
@@ -287,7 +287,7 @@ recipes.addShaped(<tfctech:wiredraw/winch>,
 // Медный индуктор
 recipes.addShaped(<tfctech:metal/copper_inductor>,
 [[null, <ore:wireGtSingleCopper>, null],
- [<ore:wireGtSingleCopper>, <ore:craftingToolHardHammer>.firstItem.withEmptyTag(), <ore:wireGtSingleCopper>],
+ [<ore:wireGtSingleCopper>, <ore:gtce.tool.hard.hammers>, <ore:wireGtSingleCopper>],
  [null, <ore:wireGtSingleCopper>, null]]);
 
 // Тигель
