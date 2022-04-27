@@ -240,7 +240,7 @@ recipes.addShapeless(<tfctech:metal/tin_strip> * 4, [<ore:chisel>, <ore:plateTin
 recipes.addShapeless(<tfctech:metal/zinc_strip> * 4, [<ore:chisel>, <ore:plateZinc>]);
 recipes.addShapeless(<tfctech:metal/sterling_silver_strip> * 4, [<ore:chisel>, <ore:plateSterlingSilver>]);
 recipes.addShapeless(<tfctech:metal/wrought_iron_strip> * 4, [<ore:chisel>, <ore:plateWroughtIron>]);
-recipes.addShapeless(<tfctech:metal/pig_iron_strip> * 4, [<ore:chisel>, <ore:platePigIron>]);
+recipes.addShapeless(<tfctech:metal/pig_iron_strip> * 4, [<ore:chisel>, <ore:sheetPigIron>]);
 recipes.addShapeless(<tfctech:metal/steel_strip> * 4, [<ore:chisel>, <ore:plateSteel>]);
 recipes.addShapeless(<tfctech:metal/platinum_strip> * 4, [<ore:chisel>, <ore:platePlatinum>]);
 recipes.addShapeless(<tfctech:metal/black_steel_strip> * 4, [<ore:chisel>, <ore:plateBlackSteel>]);

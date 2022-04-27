@@ -220,7 +220,7 @@ recipes.addShaped( <metaitem:steam_export_bus>,
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
 [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
  [null, <ore:gtce.tool.mortars>, null]]);
-// Крафт бамаги из пыли
+// Крафт бумаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
 [[null, <ore:slabStonePolished>.reuse(), null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
@@ -229,6 +229,8 @@ recipes.addShaped(<ore:paper>.firstItem * 2,
 // Fix Plant Ball Recipes
 // Remove From Cactus
 compressor.findRecipe(2, [<minecraft:cactus:0> * 8], null).remove();
+// Remove From Reeds
+compressor.findRecipe(2, [<minecraft:reeds:0> * 8], null).remove();
 // Remove From Wheat
 compressor.findRecipe(2, [<minecraft:wheat:0> * 8], null).remove();
 // Remove From Another Mushroom
@@ -293,6 +295,8 @@ compressor.recipeBuilder()
 // Fix Biomass Recipes
 // Remove From Cactus
 brewery.findRecipe(3, [<minecraft:cactus:0>], [<liquid:water> * 20]).remove();
+// Remove From Reeds
+brewery.findRecipe(3, [<minecraft:reeds:0>], [<liquid:water> * 20]).remove();
 // Remove From Carrot
 brewery.findRecipe(3, [<minecraft:carrot:0>], [<liquid:water> * 20]).remove();
 // Remove From Brownmushroom

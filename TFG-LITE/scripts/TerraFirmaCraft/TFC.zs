@@ -309,7 +309,8 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:ore/graphite>,
 	<tfc:ore/bituminous_coal>,
 	<tfc:ore/lignite>,
-	<tfc:sluice>
+	<tfc:sluice>,
+	<tfc:powder/coke>
 ];
 for item in RemoveItemsFromJEI{
     JEI.removeAndHide(item);
@@ -693,7 +694,6 @@ Anvil.addRecipe("tfg:sword_blade/Steel", <ore:ingotDoubleSteel>, <metaitem:toolH
 Anvil.addRecipe("tfg:sword_blade/BlackSteel", <ore:ingotDoubleBlackSteel>, <metaitem:toolHeadSwordBlackSteel>, 5, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 Anvil.addRecipe("tfg:sword_blade/BlueSteel", <ore:ingotDoubleBlueSteel>, <metaitem:toolHeadSwordBlueSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 Anvil.addRecipe("tfg:sword_blade/RedSteel", <ore:ingotDoubleRedSteel>, <metaitem:toolHeadSwordRedSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/Cobalt", <ore:ingotDoubleCobalt>, <metaitem:toolHeadSwordCobalt>, 3, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 
 // Новые рецепты ковки GT кирок
 Anvil.addRecipe("tfg:pick_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadPickaxeCopper>, 1, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
@@ -705,7 +705,6 @@ Anvil.addRecipe("tfg:pick_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadPicka
 Anvil.addRecipe("tfg:pick_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadPickaxeBlackSteel>, 5, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
 Anvil.addRecipe("tfg:pick_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadPickaxeBlueSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
 Anvil.addRecipe("tfg:pick_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadPickaxeRedSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadPickaxeCobalt>, 3, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
 
 // Новые рецепты ковки GT топоров
 Anvil.addRecipe("tfg:axe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadAxeCopper>, 1, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
@@ -717,7 +716,6 @@ Anvil.addRecipe("tfg:axe_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadAxeSte
 Anvil.addRecipe("tfg:axe_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadAxeBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
 Anvil.addRecipe("tfg:axe_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadAxeBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
 Anvil.addRecipe("tfg:axe_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadAxeRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadAxeCobalt>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
 
 // Новые рецепты ковки GT лопат
 Anvil.addRecipe("tfg:shovel_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadShovelCopper>, 1, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
@@ -729,7 +727,6 @@ Anvil.addRecipe("tfg:shovel_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadSho
 Anvil.addRecipe("tfg:shovel_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadShovelBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
 Anvil.addRecipe("tfg:shovel_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadShovelBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
 Anvil.addRecipe("tfg:shovel_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadShovelRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
-Anvil.addRecipe("tfg:shovel_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadShovelCobalt>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
 
 // Новые рецепты ковки GT мотыг
 Anvil.addRecipe("tfg:hoe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadHoeCopper>, 1, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
@@ -741,7 +738,6 @@ Anvil.addRecipe("tfg:hoe_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHoeSte
 Anvil.addRecipe("tfg:hoe_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHoeBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
 Anvil.addRecipe("tfg:hoe_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHoeBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
 Anvil.addRecipe("tfg:hoe_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHoeRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
-Anvil.addRecipe("tfg:hoe_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHoeCobalt>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
 
 // Новые рецепты ковки GT пил
 Anvil.addRecipe("tfg:saw_blade/Copper", <ore:ingotCopper>, <metaitem:toolHeadSawCopper>, 1, "tools", "HIT_LAST", "HIT_SECOND_LAST");
@@ -753,7 +749,6 @@ Anvil.addRecipe("tfg:saw_blade/Steel", <ore:ingotSteel>, <metaitem:toolHeadHamme
 Anvil.addRecipe("tfg:saw_blade/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "HIT_LAST", "HIT_SECOND_LAST");
 Anvil.addRecipe("tfg:saw_blade/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
 Anvil.addRecipe("tfg:saw_blade/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
 
 // Новые рецепты ковки GT молотков
 Anvil.addRecipe("tfg:hammer_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadHammerCopper>, 1, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
@@ -765,7 +760,6 @@ Anvil.addRecipe("tfg:hammer_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHam
 Anvil.addRecipe("tfg:hammer_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfg:hammer_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("tfg:hammer_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 
 // Крафт голов напильков GT
 Anvil.addRecipe("tfg:file_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadFileCopper>, 1, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
@@ -777,7 +771,6 @@ Anvil.addRecipe("tfg:file_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHea
 Anvil.addRecipe("tfg:file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:file_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadFileCobalt>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
 // Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
 // White Concrete Powder * 8
@@ -1004,33 +997,3 @@ electrolyzer.recipeBuilder()
 	.inputs(<ore:sandSilica> * 8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(26).buildAndRegister();
-
-// Исправление тростника
-// Plant Ball * 1
-compressor.findRecipe(2, [<minecraft:reeds:0> * 8], null).remove();
-
-// Biomass * 20
-brewery.findRecipe(3, [<minecraft:reeds:0>], [<liquid:water> * 20]).remove();
-
-// Sugar * 1
-macerator.findRecipe(2, [<minecraft:reeds:0>], null).remove();
-macerator.recipeBuilder()
-	.inputs(<ore:sugarcane>)
-	.outputs(<minecraft:sugar>)
-	.duration(300).EUt(2).buildAndRegister();
-
-// Paper * 1
-chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:water> * 100]).remove();
-chemical_bath.recipeBuilder()
-	.inputs(<ore:sugarcane>)
-	.fluidInputs(<liquid:water> * 100)
-	.outputs(<minecraft:paper>)
-	.duration(100).EUt(7).buildAndRegister();
-
-// Paper * 1
-chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:distilled_water> * 100]).remove();
-chemical_bath.recipeBuilder()
-	.inputs(<ore:sugarcane>)
-	.fluidInputs(<liquid:distilled_water> * 100)
-	.outputs(<minecraft:paper>)
-	.duration(100).EUt(7).buildAndRegister();

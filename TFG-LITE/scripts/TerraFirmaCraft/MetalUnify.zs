@@ -26,6 +26,9 @@ Anvil.addRecipe("tfc:TFG_plate_platinum", <ore:ingotDoublePlatinum>, <ore:plateP
 Anvil.addRecipe("tfc:TFG_plate_black_steel", <ore:ingotDoubleBlackSteel>, <ore:plateBlackSteel>.firstItem, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_blue_steel", <ore:ingotDoubleBlueSteel>, <ore:plateBlueSteel>.firstItem, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfc:TFG_plate_red_steel", <ore:ingotDoubleRedSteel>, <ore:plateRedSteel>.firstItem, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+//
+Anvil.addRecipe("tfc:TFG_plate_pig_iron", <ore:ingotDoublePigIron>, <tfc:metal/sheet/pig_iron>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+Welding.addRecipe("tfc:TFG_plate_wrought_iron", <ore:plateWroughtIron>, <ore:plateCopper>, <tfc:metal/sheet/wrought_iron>, 3);
 
 // --- Унификация двойных пластин
 Welding.addRecipe("tfc:TFG_double_plate_bismuth", <ore:plateBismuth>, <ore:plateBismuth>, <ore:plateDoubleBismuth>.firstItem, 1);
@@ -48,8 +51,6 @@ Welding.addRecipe("tfc:TFG_double_plate_platinum", <ore:platePlatinum>, <ore:pla
 Welding.addRecipe("tfc:TFG_double_plate_black_steel", <ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateDoubleBlackSteel>.firstItem, 5);
 Welding.addRecipe("tfc:TFG_double_plate_blue_steel", <ore:plateBlueSteel>, <ore:plateBlueSteel>, <ore:plateDoubleBlueSteel>.firstItem, 6);
 Welding.addRecipe("tfc:TFG_double_plate_red_steel", <ore:plateRedSteel>, <ore:plateRedSteel>, <ore:plateDoubleRedSteel>.firstItem, 6);
-//
-Welding.addRecipe("tfc:TFG_plate_wrought_iron", <ore:plateWroughtIron>, <ore:plateCopper>, <tfc:metal/sheet/wrought_iron>, 3);
 
 // --- Унификация длинных палок
 Anvil.addRecipe("tfctech:TFG_long_rod_brass", <ore:ingotBrass>, <metaitem:stickLongBrass>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
