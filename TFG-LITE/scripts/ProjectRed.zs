@@ -29,7 +29,8 @@ val ItemsToRemove as IItemStack[] = [
     <projectred-core:resource_item:103>,
     <projectred-core:resource_item:104>,
     <projectred-core:drawplate>,
-    <projectred-fabrication:ic_chip:1>
+    <projectred-fabrication:ic_chip:1>,
+    <projectred-core:screwdriver>
 ] as IItemStack[];
 for item in ItemsToRemove{
     mods.jei.JEI.removeAndHide(item);
@@ -40,7 +41,10 @@ val RemoveRecipes as IItemStack[] = [
 	<projectred-core:resource_item:20>,
     <projectred-core:resource_item:21>,
     <projectred-transmission:wire>,
-    <projectred-fabrication:ic_chip>
+    <projectred-fabrication:ic_chip>,
+    <projectred-fabrication:ic_blueprint>,
+    <projectred-fabrication:ic_machine:1>,
+    <projectred-core:multimeter>
 ] as IItemStack[];
 for item in RemoveRecipes {
     recipes.remove(item);
@@ -284,8 +288,37 @@ for i, Transmission_Wires_Array in Transmission_Wires_Array {
     	.duration(100).EUt(16).buildAndRegister();
 }
 
+// IC Bluerprint
+circuit_assembler.recipeBuilder()
+    .inputs(<ore:circuitLv> * 2, <ore:dustLapis> * 4, <ore:wireGtSingleRedAlloy> * 6)
+    .circuit(10)
+    .fluidInputs([<liquid:soldering_alloy> * 144])
+    .outputs(<projectred-fabrication:ic_blueprint>)
+    .duration(200).EUt(32).buildAndRegister();
+
+// Null-Logic Routing Chip
+circuit_assembler.recipeBuilder()
+    .inputs(<ore:circuitUlv> * 4, <ore:wireGtSingleRedAlloy> * 2, <projectred-core:resource_item:4>)
+    .circuit(11)
+    .fluidInputs([<liquid:soldering_alloy> * 144])
+    .outputs(<projectred-core:resource_item:600>)
+    .duration(200).EUt(32).buildAndRegister();
+
 // IC Chip
 recipes.addShaped(<projectred-fabrication:ic_chip>, 
 [[<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>],
  [<appliedenergistics2:material:16>, <projectred-core:resource_item>, <appliedenergistics2:material:16>],
  [<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>]]);
+
+// IC Printer
+recipes.addShaped(<projectred-fabrication:ic_machine:1>, 
+[[<metaitem:robot.arm.lv>, <metaitem:sensor.lv>, <metaitem:robot.arm.lv>],
+ [<ore:blockSteel>, <ore:workbench>, <ore:blockSteel>],
+ [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
+// Multimeter
+recipes.addShaped(<projectred-core:multimeter>, 
+[[<ore:wireGtSingleGold>, null, <ore:wireGtSingleRedAlloy>],
+ [<ore:wireGtSingleGold>, <metaitem:cover.screen>, <ore:wireGtSingleRedAlloy>],
+ [<ore:circuitLv>, <ore:plateIron>, <ore:circuitLv>]]);
+

@@ -200,6 +200,14 @@ for item in ItemsToRemoveFromFurnace {
     furnace.remove(item);
 }
 
+// Remove Ore Recipes
+furnace.remove(<minecraft:coal>, <minecraft:coal_ore>);
+furnace.remove(<minecraft:iron_ingot>, <minecraft:iron_ore>);
+furnace.remove(<minecraft:gold_ingot>, <minecraft:gold_ore>);
+furnace.remove(<minecraft:redstone>, <minecraft:redstone_ore>);
+furnace.remove(<minecraft:diamond>, <minecraft:diamond_ore>);
+furnace.remove(<minecraft:emerald>, <minecraft:emerald_ore>);
+
 // Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 

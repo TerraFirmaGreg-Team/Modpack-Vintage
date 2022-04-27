@@ -15,108 +15,28 @@ import mods.jei.JEI;
 
 // Удаление рецептов + скрытие
 val RemoveItemsFromJEI as IItemStack[] = [
-	// Pickaxe
-	<tfc:metal/pick/bismuth_bronze>,
-	<tfc:metal/pick/black_bronze>,
-	<tfc:metal/pick/bronze>,
-	<tfc:metal/pick/copper>,
-	<tfc:metal/pick/wrought_iron>,
-	<tfc:metal/pick/steel>,
-	<tfc:metal/pick/black_steel>,
-	<tfc:metal/pick/blue_steel>,
-	<tfc:metal/pick/red_steel>,
-	// Pickaxe Heads
-	<tfc:metal/pick_head/bismuth_bronze>,
-	<tfc:metal/pick_head/black_bronze>,
-	<tfc:metal/pick_head/bronze>,
-	<tfc:metal/pick_head/copper>,
-	<tfc:metal/pick_head/wrought_iron>,
-	<tfc:metal/pick_head/steel>,
-	<tfc:metal/pick_head/black_steel>,
-	<tfc:metal/pick_head/blue_steel>,
-	<tfc:metal/pick_head/red_steel>,
-	// Axe
-	<tfc:metal/axe/bismuth_bronze>,
-	<tfc:metal/axe/black_bronze>,
-	<tfc:metal/axe/bronze>,
-	<tfc:metal/axe/copper>,
-	<tfc:metal/axe/wrought_iron>,
-	<tfc:metal/axe/steel>,
-	<tfc:metal/axe/black_steel>,
-	<tfc:metal/axe/blue_steel>,
-	<tfc:metal/axe/red_steel>,
-	// Axe Heads
-	<tfc:metal/axe_head/bismuth_bronze>,
-	<tfc:metal/axe_head/black_bronze>,
-	<tfc:metal/axe_head/bronze>,
-	<tfc:metal/axe_head/copper>,
-	<tfc:metal/axe_head/wrought_iron>,
-	<tfc:metal/axe_head/steel>,
-	<tfc:metal/axe_head/black_steel>,
-	<tfc:metal/axe_head/blue_steel>,
-	<tfc:metal/axe_head/red_steel>,
-	// Sword
-	<tfc:metal/sword/bismuth_bronze>,
-	<tfc:metal/sword/black_bronze>,
-	<tfc:metal/sword/bronze>,
-	<tfc:metal/sword/copper>,
-	<tfc:metal/sword/wrought_iron>,
-	<tfc:metal/sword/steel>,
-	<tfc:metal/sword/black_steel>,
-	<tfc:metal/sword/blue_steel>,
-	<tfc:metal/sword/red_steel>,
-	// Sword Blades
-	<tfc:metal/sword_blade/bismuth_bronze>,
-	<tfc:metal/sword_blade/black_bronze>,
-	<tfc:metal/sword_blade/bronze>,
-	<tfc:metal/sword_blade/copper>,
-	<tfc:metal/sword_blade/wrought_iron>,
-	<tfc:metal/sword_blade/steel>,
-	<tfc:metal/sword_blade/black_steel>,
-	<tfc:metal/sword_blade/blue_steel>,
-	<tfc:metal/sword_blade/red_steel>,
-	// Ingot
-	<tfc:metal/ingot/bismuth>,
-	<tfc:metal/ingot/bismuth_bronze>,
-	<tfc:metal/ingot/black_bronze>,
-	<tfc:metal/ingot/brass>,
-	<tfc:metal/ingot/bronze>,
-	<tfc:metal/ingot/copper>,
-	<tfc:metal/ingot/gold>,
-	<tfc:metal/ingot/lead>,
-	<tfc:metal/ingot/nickel>,
-	<tfc:metal/ingot/rose_gold>,
-	<tfc:metal/ingot/silver>,
-	<tfc:metal/ingot/tin>,
-	<tfc:metal/ingot/zinc>,
-	<tfc:metal/ingot/sterling_silver>,
-	//<tfc:metal/ingot/pig_iron>,
-	<tfc:metal/ingot/steel>,
-	<tfc:metal/ingot/platinum>,
-	<tfc:metal/ingot/black_steel>,
-	<tfc:metal/ingot/blue_steel>,
-	<tfc:metal/ingot/red_steel>,
-	//<tfc:metal/ingot/wrought_iron>,
-	// Small Ores
-	<tfc:ore/native_copper:*>,
-	<tfc:ore/native_gold:*>,
-	<tfc:ore/native_platinum:*>,
-	<tfc:ore/hematite:*>,
-	<tfc:ore/native_silver:*>,
-	<tfc:ore/cassiterite:*>,
-	<tfc:ore/galena:*>,
-	<tfc:ore/bismuthinite:*>,
-	<tfc:ore/garnierite:*>,
-	<tfc:ore/malachite:*>,
-	<tfc:ore/magnetite:*>,
-	<tfc:ore/limonite:*>,
-	<tfc:ore/sphalerite:*>,
-	<tfc:ore/tetrahedrite:*>,
-	<tfc:ore/halite:*>,
-	// Fake Rods
-	<tfc:metal/rod/gold>,
-	<tfc:metal/rod/wrought_iron>,
-	<tfc:metal/rod/steel>,
+	// Nuggets
+	<tfc:metal/nugget/bismuth>,
+	<tfc:metal/nugget/bismuth_bronze>,
+	<tfc:metal/nugget/black_bronze>,
+	<tfc:metal/nugget/brass>,
+	<tfc:metal/nugget/bronze>,
+	<tfc:metal/nugget/copper>,
+	<tfc:metal/nugget/gold>,
+	<tfc:metal/nugget/lead>,
+	<tfc:metal/nugget/nickel>,
+	<tfc:metal/nugget/rose_gold>,
+	<tfc:metal/nugget/silver>,
+	<tfc:metal/nugget/tin>,
+	<tfc:metal/nugget/zinc>,
+	<tfc:metal/nugget/sterling_silver>,
+	<tfc:metal/nugget/pig_iron>,
+	<tfc:metal/nugget/steel>,
+	<tfc:metal/nugget/platinum>,
+	<tfc:metal/nugget/black_steel>,
+	<tfc:metal/nugget/blue_steel>,
+	<tfc:metal/nugget/red_steel>,
+	<tfc:metal/nugget/wrought_iron>,
 	// Dusts
 	<tfc:metal/dust/bismuth>,
 	<tfc:metal/dust/bismuth_bronze>,
@@ -139,6 +59,28 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/dust/blue_steel>,
 	<tfc:metal/dust/red_steel>,
 	<tfc:metal/dust/wrought_iron>,
+	// Ingot
+	<tfc:metal/ingot/bismuth>,
+	<tfc:metal/ingot/bismuth_bronze>,
+	<tfc:metal/ingot/black_bronze>,
+	<tfc:metal/ingot/brass>,
+	<tfc:metal/ingot/bronze>,
+	<tfc:metal/ingot/copper>,
+	<tfc:metal/ingot/gold>,
+	<tfc:metal/ingot/lead>,
+	<tfc:metal/ingot/nickel>,
+	<tfc:metal/ingot/rose_gold>,
+	<tfc:metal/ingot/silver>,
+	<tfc:metal/ingot/tin>,
+	<tfc:metal/ingot/zinc>,
+	<tfc:metal/ingot/sterling_silver>,
+	//<tfc:metal/ingot/pig_iron>,
+	<tfc:metal/ingot/steel>,
+	<tfc:metal/ingot/platinum>,
+	<tfc:metal/ingot/black_steel>,
+	<tfc:metal/ingot/blue_steel>,
+	<tfc:metal/ingot/red_steel>,
+	//<tfc:metal/ingot/wrought_iron>,
 	// Plate
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
@@ -183,28 +125,126 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<tfc:metal/double_sheet/black_steel>,
 	<tfc:metal/double_sheet/blue_steel>,
 	<tfc:metal/double_sheet/red_steel>,
-	// Nuggets
-	<tfc:metal/nugget/bismuth>,
-	<tfc:metal/nugget/bismuth_bronze>,
-	<tfc:metal/nugget/black_bronze>,
-	<tfc:metal/nugget/brass>,
-	<tfc:metal/nugget/bronze>,
-	<tfc:metal/nugget/copper>,
-	<tfc:metal/nugget/gold>,
-	<tfc:metal/nugget/lead>,
-	<tfc:metal/nugget/nickel>,
-	<tfc:metal/nugget/rose_gold>,
-	<tfc:metal/nugget/silver>,
-	<tfc:metal/nugget/tin>,
-	<tfc:metal/nugget/zinc>,
-	<tfc:metal/nugget/sterling_silver>,
-	<tfc:metal/nugget/pig_iron>,
-	<tfc:metal/nugget/steel>,
-	<tfc:metal/nugget/platinum>,
-	<tfc:metal/nugget/black_steel>,
-	<tfc:metal/nugget/blue_steel>,
-	<tfc:metal/nugget/red_steel>,
-	<tfc:metal/nugget/wrought_iron>,
+	// Small Ores
+	<tfc:ore/native_copper:*>,
+	<tfc:ore/native_gold:*>,
+	<tfc:ore/native_platinum:*>,
+	<tfc:ore/hematite:*>,
+	<tfc:ore/native_silver:*>,
+	<tfc:ore/cassiterite:*>,
+	<tfc:ore/galena:*>,
+	<tfc:ore/bismuthinite:*>,
+	<tfc:ore/garnierite:*>,
+	<tfc:ore/malachite:*>,
+	<tfc:ore/magnetite:*>,
+	<tfc:ore/limonite:*>,
+	<tfc:ore/sphalerite:*>,
+	<tfc:ore/tetrahedrite:*>,
+	<tfc:ore/halite:*>,
+	// Fake Rods
+	<tfc:metal/rod/gold>,
+	<tfc:metal/rod/wrought_iron>,
+	<tfc:metal/rod/steel>,
+	// Pickaxe
+	<tfc:metal/pick/bismuth_bronze>,
+	<tfc:metal/pick/black_bronze>,
+	<tfc:metal/pick/bronze>,
+	<tfc:metal/pick/copper>,
+	<tfc:metal/pick/wrought_iron>,
+	<tfc:metal/pick/steel>,
+	<tfc:metal/pick/black_steel>,
+	<tfc:metal/pick/blue_steel>,
+	<tfc:metal/pick/red_steel>,
+	// Pickaxe Heads
+	<tfc:metal/pick_head/bismuth_bronze>,
+	<tfc:metal/pick_head/black_bronze>,
+	<tfc:metal/pick_head/bronze>,
+	<tfc:metal/pick_head/copper>,
+	<tfc:metal/pick_head/wrought_iron>,
+	<tfc:metal/pick_head/steel>,
+	<tfc:metal/pick_head/black_steel>,
+	<tfc:metal/pick_head/blue_steel>,
+	<tfc:metal/pick_head/red_steel>,
+	// Axe
+	<tfc:metal/axe/bismuth_bronze>,
+	<tfc:metal/axe/black_bronze>,
+	<tfc:metal/axe/bronze>,
+	<tfc:metal/axe/copper>,
+	<tfc:metal/axe/wrought_iron>,
+	<tfc:metal/axe/steel>,
+	<tfc:metal/axe/black_steel>,
+	<tfc:metal/axe/blue_steel>,
+	<tfc:metal/axe/red_steel>,
+	// Axe Heads
+	<tfc:metal/axe_head/bismuth_bronze>,
+	<tfc:metal/axe_head/black_bronze>,
+	<tfc:metal/axe_head/bronze>,
+	<tfc:metal/axe_head/copper>,
+	<tfc:metal/axe_head/wrought_iron>,
+	<tfc:metal/axe_head/steel>,
+	<tfc:metal/axe_head/black_steel>,
+	<tfc:metal/axe_head/blue_steel>,
+	<tfc:metal/axe_head/red_steel>,
+	// Shovel
+	<tfc:metal/shovel/bismuth_bronze>,
+	<tfc:metal/shovel/black_bronze>,
+	<tfc:metal/shovel/bronze>,
+	<tfc:metal/shovel/copper>,
+	<tfc:metal/shovel/wrought_iron>,
+	<tfc:metal/shovel/steel>,
+	<tfc:metal/shovel/black_steel>,
+	<tfc:metal/shovel/blue_steel>,
+	<tfc:metal/shovel/red_steel>,
+	// Shovel Heads
+	<tfc:metal/shovel_head/bismuth_bronze>,
+	<tfc:metal/shovel_head/black_bronze>,
+	<tfc:metal/shovel_head/bronze>,
+	<tfc:metal/shovel_head/copper>,
+	<tfc:metal/shovel_head/wrought_iron>,
+	<tfc:metal/shovel_head/steel>,
+	<tfc:metal/shovel_head/black_steel>,
+	<tfc:metal/shovel_head/blue_steel>,
+	<tfc:metal/shovel_head/red_steel>,
+	// Hoe
+	<tfc:metal/hoe/bismuth_bronze>,
+	<tfc:metal/hoe/black_bronze>,
+	<tfc:metal/hoe/bronze>,
+	<tfc:metal/hoe/copper>,
+	<tfc:metal/hoe/wrought_iron>,
+	<tfc:metal/hoe/steel>,
+	<tfc:metal/hoe/black_steel>,
+	<tfc:metal/hoe/blue_steel>,
+	<tfc:metal/hoe/red_steel>,
+	// Hoe Heads
+	<tfc:metal/hoe_head/bismuth_bronze>,
+	<tfc:metal/hoe_head/black_bronze>,
+	<tfc:metal/hoe_head/bronze>,
+	<tfc:metal/hoe_head/copper>,
+	<tfc:metal/hoe_head/wrought_iron>,
+	<tfc:metal/hoe_head/steel>,
+	<tfc:metal/hoe_head/black_steel>,
+	<tfc:metal/hoe_head/blue_steel>,
+	<tfc:metal/hoe_head/red_steel>,
+	// Sword
+	<tfc:metal/sword/bismuth_bronze>,
+	<tfc:metal/sword/black_bronze>,
+	<tfc:metal/sword/bronze>,
+	<tfc:metal/sword/copper>,
+	<tfc:metal/sword/wrought_iron>,
+	<tfc:metal/sword/steel>,
+	<tfc:metal/sword/black_steel>,
+	<tfc:metal/sword/blue_steel>,
+	<tfc:metal/sword/red_steel>,
+	// Sword Blades
+	<tfc:metal/sword_blade/bismuth_bronze>,
+	<tfc:metal/sword_blade/black_bronze>,
+	<tfc:metal/sword_blade/bronze>,
+	<tfc:metal/sword_blade/copper>,
+	<tfc:metal/sword_blade/wrought_iron>,
+	<tfc:metal/sword_blade/steel>,
+	<tfc:metal/sword_blade/black_steel>,
+	<tfc:metal/sword_blade/blue_steel>,
+	<tfc:metal/sword_blade/red_steel>,
 	// Hammers
 	<tfc:metal/hammer/copper>,
 	<tfc:metal/hammer/bismuth_bronze>,
@@ -643,6 +683,102 @@ for i, TFC_QuernToMaceratorOutput in TFC_QuernToMaceratorOutput {
     	.duration(50).EUt(2).buildAndRegister();
 }
 
+// Новые рецепты ковки GT мечей
+Anvil.addRecipe("tfg:sword_blade/Copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/BismuthBronze", <ore:ingotDoubleBismuthBronze>, <metaitem:toolHeadSwordBismuthBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/BlackBronze", <ore:ingotDoubleBlackBronze>, <metaitem:toolHeadSwordBlackBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/Bronze", <ore:ingotDoubleBronze>, <metaitem:toolHeadSwordBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/WroughtIron", <ore:ingotDoubleWroughtIron>, <metaitem:toolHeadSwordWroughtIron>, 3, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/Steel", <ore:ingotDoubleSteel>, <metaitem:toolHeadSwordSteel>, 4, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/BlackSteel", <ore:ingotDoubleBlackSteel>, <metaitem:toolHeadSwordBlackSteel>, 5, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/BlueSteel", <ore:ingotDoubleBlueSteel>, <metaitem:toolHeadSwordBlueSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/RedSteel", <ore:ingotDoubleRedSteel>, <metaitem:toolHeadSwordRedSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("tfg:sword_blade/Cobalt", <ore:ingotDoubleCobalt>, <metaitem:toolHeadSwordCobalt>, 3, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+
+// Новые рецепты ковки GT кирок
+Anvil.addRecipe("tfg:pick_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadPickaxeCopper>, 1, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadPickaxeBismuthBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadPickaxeBlackBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadPickaxeBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadPickaxeWroughtIron>, 3, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadPickaxeSteel>, 4, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadPickaxeBlackSteel>, 5, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadPickaxeBlueSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadPickaxeRedSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+Anvil.addRecipe("tfg:pick_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadPickaxeCobalt>, 3, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
+
+// Новые рецепты ковки GT топоров
+Anvil.addRecipe("tfg:axe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadAxeCopper>, 1, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadAxeBismuthBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadAxeBlackBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadAxeBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadAxeWroughtIron>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadAxeSteel>, 4, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadAxeBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadAxeBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadAxeRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+Anvil.addRecipe("tfg:axe_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadAxeCobalt>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+
+// Новые рецепты ковки GT лопат
+Anvil.addRecipe("tfg:shovel_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadShovelCopper>, 1, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadShovelBismuthBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadShovelBlackBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadShovelBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadShovelWroughtIron>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadShovelSteel>, 4, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadShovelBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadShovelBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadShovelRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+Anvil.addRecipe("tfg:shovel_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadShovelCobalt>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST");
+
+// Новые рецепты ковки GT мотыг
+Anvil.addRecipe("tfg:hoe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadHoeCopper>, 1, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadHoeBismuthBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadHoeBlackBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadHoeBronze>, 2, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadHoeWroughtIron>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHoeSteel>, 4, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHoeBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHoeBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHoeRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg:hoe_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHoeCobalt>, 3, "tools", "PUNCH_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
+
+// Новые рецепты ковки GT пил
+Anvil.addRecipe("tfg:saw_blade/Copper", <ore:ingotCopper>, <metaitem:toolHeadSawCopper>, 1, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadHammerBismuthBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadHammerBlackBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/Bronze", <ore:ingotBronze>, <metaitem:toolHeadHammerBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadHammerWroughtIron>, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/Steel", <ore:ingotSteel>, <metaitem:toolHeadHammerSteel>, 4, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+Anvil.addRecipe("tfg:saw_blade/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
+
+// Новые рецепты ковки GT молотков
+Anvil.addRecipe("tfg:hammer_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadHammerCopper>, 1, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadHammerBismuthBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadHammerBlackBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadHammerBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadHammerWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHammerSteel>, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:hammer_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+
+// Крафт голов напильков GT
+Anvil.addRecipe("tfg:file_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadFileCopper>, 1, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadFileBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadFileBismuthBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadFileBlackBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadFileBlackSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadFileRedSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg:file_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadFileCobalt>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+
 // Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
 // White Concrete Powder * 8
 mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_white> * 144]).remove();
@@ -868,79 +1004,6 @@ electrolyzer.recipeBuilder()
 	.inputs(<ore:sandSilica> * 8)
 	.outputs(<ore:dustSiliconDioxide>.firstItem)
 	.duration(150).EUt(26).buildAndRegister();
-
-// Новые рецепты ковки GT топор
-Anvil.addRecipe("tfg:axe_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadAxeCopper>, 1, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadAxeBismuthBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadAxeBlackBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadAxeBronze>, 2, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadAxeWroughtIron>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadAxeSteel>, 4, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadAxeBlackSteel>, 5, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadAxeBlueSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadAxeRedSteel>, 6, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-Anvil.addRecipe("tfg:axe_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadAxeCobalt>, 3, "tools", "PUNCH_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
-
-// Новые рецепты ковки GT кирок
-Anvil.addRecipe("tfg:pick_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadPickaxeCopper>, 1, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadPickaxeBismuthBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadPickaxeBlackBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadPickaxeBronze>, 2, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadPickaxeWroughtIron>, 3, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadPickaxeSteel>, 4, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadPickaxeBlackSteel>, 5, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadPickaxeBlueSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadPickaxeRedSteel>, 6, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-Anvil.addRecipe("tfg:pick_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadPickaxeCobalt>, 3, "tools", "PUNCH_LAST", "BEND_NOT_LAST", "DRAW_NOT_LAST");
-
-// Новые рецепты ковки GT мечей
-Anvil.addRecipe("tfg:sword_blade/Copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/BismuthBronze", <ore:ingotDoubleBismuthBronze>, <metaitem:toolHeadSwordBismuthBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/BlackBronze", <ore:ingotDoubleBlackBronze>, <metaitem:toolHeadSwordBlackBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/Bronze", <ore:ingotDoubleBronze>, <metaitem:toolHeadSwordBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/WroughtIron", <ore:ingotDoubleWroughtIron>, <metaitem:toolHeadSwordWroughtIron>, 3, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/Steel", <ore:ingotDoubleSteel>, <metaitem:toolHeadSwordSteel>, 4, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/BlackSteel", <ore:ingotDoubleBlackSteel>, <metaitem:toolHeadSwordBlackSteel>, 5, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/BlueSteel", <ore:ingotDoubleBlueSteel>, <metaitem:toolHeadSwordBlueSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/RedSteel", <ore:ingotDoubleRedSteel>, <metaitem:toolHeadSwordRedSteel>, 6, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("tfg:sword_blade/Cobalt", <ore:ingotDoubleCobalt>, <metaitem:toolHeadSwordCobalt>, 3, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-
-// Новые рецепты ковки GT пил
-Anvil.addRecipe("tfg:saw_blade/Copper", <ore:ingotCopper>, <metaitem:toolHeadSawCopper>, 1, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadHammerBismuthBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadHammerBlackBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/Bronze", <ore:ingotBronze>, <metaitem:toolHeadHammerBronze>, 2, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadHammerWroughtIron>, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/Steel", <ore:ingotSteel>, <metaitem:toolHeadHammerSteel>, 4, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-Anvil.addRecipe("tfg:saw_blade/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "HIT_LAST", "HIT_SECOND_LAST");
-
-// Новые рецепты ковки GT молотков
-Anvil.addRecipe("tfg:hammer_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadHammerCopper>, 1, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadHammerBismuthBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadHammerBlackBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadHammerBronze>, 2, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadHammerWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHammerSteel>, 4, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:hammer_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadHammerCobalt>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-
-// Крафт голов напильков GT
-Anvil.addRecipe("tfg:file_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadFileCopper>, 1, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadFileBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadFileBismuthBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadFileBlackBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadFileBlackSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadFileRedSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg:file_head/Cobalt", <ore:ingotCobalt>, <metaitem:toolHeadFileCobalt>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-
 
 // Исправление тростника
 // Plant Ball * 1

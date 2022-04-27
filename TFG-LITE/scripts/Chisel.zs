@@ -23,7 +23,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<chisel:temple>,
 	<chisel:factory>,
 	<chisel:brownstone>,
-	//glass
+	// Glass
 	<chisel:glasspane>,
 	<chisel:glasspane:1>,
 	<chisel:glasspane:2>,
@@ -65,7 +65,12 @@ for item in RemoveItemsFromJEI{
 
 // Поименное удаление рецептов
 val RemoveItemRecipesByName = [
-    "chisel:uncraft_blockiron"
+    "chisel:uncraft_blockiron",
+	"chisel:uncraft_blockgold",
+	"chisel:emerald",
+	"chisel:diamond",
+	"chisel:redstone",
+	"chisel:coal"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);

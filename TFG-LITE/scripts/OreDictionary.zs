@@ -240,6 +240,9 @@ for item in Gem_Exquisite {
 // Saw
 <ore:saw>.add(<metaitem:tool.saw>);
 
+// Shovel
+<ore:shovel>.add(<metaitem:tool.shovel>);
+
 // Basalt
 <ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
 
