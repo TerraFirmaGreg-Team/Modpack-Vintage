@@ -24,6 +24,7 @@ import mods.gregtech.StoneType;
 <material:bismuth>.addOre();
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
+<material:steel>.addFlags("generate_dense");
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
