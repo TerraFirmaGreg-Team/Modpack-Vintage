@@ -6,7 +6,7 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 // Удаление рецептов + скрытие
 val ItemsToRemoveFromJEI as IItemStack[] = [
-    // Rubber stuff
+    // Rubber Stuff
     <gregtech:planks>,
     <gregtech:rubber_log>,
     <gregtech:rubber_leaves>,

@@ -1,10 +1,26 @@
 import mods.dropt.Dropt;
 
-// Urns TODO
-Dropt.list("Urn_disables").add(Dropt.rule()
+// Urns
+Dropt.list("Urn_Fixes").add(Dropt.rule()
   .matchBlocks(["tfcflorae:storage/urn_loot"])
   .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop()));
+  .addDrop(Dropt.drop()
+    .selector(Dropt.weight(30))
+    .items([<metaitem:dustSmallCopper> * 2, <metaitem:dustSmallTin> * 4, <metaitem:dustSmallGold>])
+  )
+  .addDrop(Dropt.drop()
+    .selector(Dropt.weight(30))
+    .items([<metaitem:ingotCopper> * 2, <metaitem:ingotTin> * 4])
+  )
+  .addDrop(Dropt.drop()
+    .selector(Dropt.weight(30))
+    .items([<tfc:crop/seeds/oat>, <tfc:crop/seeds/rice>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/carrot>, <tfc:crop/seeds/tomato>])
+  )
+  .addDrop(Dropt.drop()
+    .selector(Dropt.weight(10))
+    .items([<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "diamond"}})])
+  )
+);
 
 // Исправление выпадения луж
 Dropt.list("Puddles_Fix").add(Dropt.rule()

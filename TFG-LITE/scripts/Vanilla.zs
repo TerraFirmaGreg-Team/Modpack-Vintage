@@ -22,6 +22,12 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:stonebrick:3>,
     <minecraft:mossy_cobblestone>,
     <minecraft:bookshelf>,
+    <minecraft:sandstone>,
+    <minecraft:sandstone:1>,
+    <minecraft:sandstone:2>,
+    <minecraft:red_sandstone>,
+    <minecraft:red_sandstone:1>,
+    <minecraft:red_sandstone:2>,
     // Logs
     <minecraft:log:*>,
     <minecraft:log2:*>,

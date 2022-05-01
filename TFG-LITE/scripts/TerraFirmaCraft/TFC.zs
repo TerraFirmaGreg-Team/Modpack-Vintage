@@ -772,6 +772,201 @@ Anvil.addRecipe("tfg:file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolH
 Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 
+// Переработка TFC камня в ресурсы
+// Breccia
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustBreccia> * 3)
+	.chancedOutput(<metaitem:dustSmallSilicon>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyLithium>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 16)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Catlinite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustCatlinite> * 3)
+	.chancedOutput(<metaitem:dustSmallSodium>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinySilicon>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 24)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Chalk
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustChalk> * 3)
+	.chancedOutput(<metaitem:dustSmallCalcium>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallCarbon>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 24)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Chert
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustChert> * 3)
+	.chancedOutput(<metaitem:dustSmallSilicon>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 5700, 700)
+	.fluidOutputs(<liquid:oxygen> * 24)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Claystone
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustClaystone> * 3)
+	.chancedOutput(<metaitem:dustTinyAluminium>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinySilicon>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyBandedIron>, 6700, 700)
+	.fluidOutputs(<liquid:oxygen> * 5)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Conglomerate
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustConglomerate> * 3)
+	.chancedOutput(<metaitem:dustSmallBandedIron>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallSilicon>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallTricalciumPhosphate>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 5)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Dacite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustDacite> * 3)
+	.chancedOutput(<metaitem:dustSodium>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallCalcium>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallSiliconDioxide>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallAluminium>, 3700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 12)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Dolomite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustDolomite> * 3)
+	.chancedOutput(<metaitem:dustSmallMagnesium>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallCalcium>, 5700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 16)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Gabbro
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustGabbro> * 3)
+	.chancedOutput(<metaitem:dustSmallTitanium>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallIron>, 3700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 24)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Gneiss
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustGneiss> * 3)
+	.chancedOutput(<metaitem:dustSmallQuartzite>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallBiotite>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 2)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Komatiite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustKomatiite> * 3)
+	.chancedOutput(<metaitem:dustSmallManganese>, 8700, 700)
+	.fluidOutputs(<liquid:oxygen> * 12)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Limestone
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustLimestone> * 3)
+	.chancedOutput(<metaitem:dustSmallCalcium>, 8700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 36)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Mudstone
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustMudstone> * 3)
+	.chancedOutput(<metaitem:dustSmallClay>, 8700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 46)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Novaculite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustNovaculite> * 3)
+	.chancedOutput(<metaitem:dustSmallSiliconDioxide>, 8700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 46)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Peridotite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustPeridotite> * 3)
+	.chancedOutput(<metaitem:dustOlivine>, 5700, 700)
+	.chancedOutput(<metaitem:dustTinyAluminium>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 12)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Phyllite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustPhyllite> * 3)
+	.chancedOutput(<metaitem:dustSmallQuartzite>, 5700, 700)
+	.chancedOutput(<metaitem:dustSmallCalciumChloride>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 2)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Porphyry
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustPorphyry> * 3)
+	.chancedOutput(<metaitem:dustSmallSodium>, 9500, 700)
+	.chancedOutput(<metaitem:dustSmallQuartzite>, 8700, 700)
+	.chancedOutput(<metaitem:dustSmallCalcium>, 1700, 700)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Rhyolite
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustRhyolite> * 3)
+	.chancedOutput(<metaitem:dustSiliconDioxide>, 8700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 100, 100)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Sandstone
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustSandstone> * 3)
+	.chancedOutput(<metaitem:dustTinyCalcium>, 6700, 700)
+	.chancedOutput(<metaitem:dustTinyAluminium>, 3700, 700)
+	.chancedOutput(<metaitem:dustTinySilicon>, 1700, 700)
+	.fluidOutputs(<liquid:oxygen> * 6)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Schist
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustSchist> * 3)
+	.chancedOutput(<metaitem:dustSmallMica>, 6700, 700)
+	.chancedOutput(<metaitem:dustSmallTalc>, 5700, 700)
+	.chancedOutput(<metaitem:dustSmallGraphite>, 3700, 700)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 3700, 700)
+	.fluidOutputs(<liquid:oxygen> * 12)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Shale
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustShale> * 3)
+	.chancedOutput(<metaitem:dustSodium>, 9500, 500)
+	.chancedOutput(<metaitem:dustTinyMetalMixture>, 1500, 500)
+	.fluidOutputs(<liquid:oxygen> * 16)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Siltstone
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustSiltstone> * 3)
+	.chancedOutput(<metaitem:dustCertusQuartz>, 6700, 700)
+	.chancedOutput(<metaitem:dustQuartzite>, 5700, 700)
+	.fluidOutputs(<liquid:oxygen> * 2)
+	.duration(450).EUt(64).buildAndRegister();
+
+// - Slate
+electrolyzer.recipeBuilder()
+	.inputs(<metaitem:dustSlate> * 3)
+	.chancedOutput(<metaitem:dustSmallMetalMixture>, 6700, 700)
+	.fluidOutputs(<liquid:oxygen> * 4)
+	.duration(450).EUt(64).buildAndRegister();
+
 // Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
 // White Concrete Powder * 8
 mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_white> * 144]).remove();
