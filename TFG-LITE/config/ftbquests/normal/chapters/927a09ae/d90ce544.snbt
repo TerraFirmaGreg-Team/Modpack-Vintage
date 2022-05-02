@@ -1,0 +1,15 @@
+{
+	x: -2.5d,
+	y: 1.0d,
+	description: "Срабатывает в зависимости от указанных параметров.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "c796c629",
+		type: "item",
+		items: [{
+			item: "stevescarts:blockdetector"
+		}]
+	}]
+}

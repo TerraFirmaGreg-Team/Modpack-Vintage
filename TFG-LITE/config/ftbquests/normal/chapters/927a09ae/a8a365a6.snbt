@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	description: "Регулирует размер подкопа бура",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "e43a184d",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 75"
+		}]
+	}]
+}

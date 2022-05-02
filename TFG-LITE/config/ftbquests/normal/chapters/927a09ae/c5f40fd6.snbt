@@ -1,0 +1,15 @@
+{
+	x: 8.0d,
+	y: 3.5d,
+	description: "Верстак, крафтит предметы мгновенно.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "66a7f94b",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 92"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: -3.5d,
+	y: -4.0d,
+	description: "Участвуют в создании стандартного корпуса",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "2987c101",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 1"
+		}]
+	}]
+}

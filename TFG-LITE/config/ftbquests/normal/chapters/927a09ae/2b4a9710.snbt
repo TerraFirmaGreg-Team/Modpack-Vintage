@@ -1,0 +1,15 @@
+{
+	x: 4.5d,
+	y: -1.0d,
+	description: "Участвует в создании сундуков для вагонеток.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "5327fa52",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 32"
+		}]
+	}]
+}

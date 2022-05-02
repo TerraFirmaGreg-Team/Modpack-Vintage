@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 1.5d,
+	description: "Позволяет стрелку стрелять яйцами.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "eae5d255",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 53"
+		}]
+	}]
+}

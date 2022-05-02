@@ -1,0 +1,15 @@
+{
+	x: 2.5d,
+	y: -2.0d,
+	description: "Участвует в создании большой и огромной панели, а также большинства баков",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "0d4600f3",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 61"
+		}]
+	}]
+}

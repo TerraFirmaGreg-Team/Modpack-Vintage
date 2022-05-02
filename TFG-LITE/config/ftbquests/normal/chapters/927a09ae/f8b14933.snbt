@@ -1,0 +1,15 @@
+{
+	x: 2.5d,
+	y: 2.0d,
+	description: "Участвует в создании лопасти винта.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "6f5159b9",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 83"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 0.5d,
+	y: -2.0d,
+	description: "Необходима для создания большинства механизмов и апгрейдов",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "6110a661",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 9"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 11.5d,
+	y: 1.5d,
+	description: "Эта карта даёт код стрелку стрелять в игроков.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "53d63f86",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 22"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: 2.0d,
+	description: "Участвует в создании газонокосилки.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "a18a5b71",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 84"
+		}]
+	}]
+}

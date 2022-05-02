@@ -1,0 +1,15 @@
+{
+	x: -2.5d,
+	y: -4.0d,
+	description: "Участвуют в создании укрепленного корпуса",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "2595e0b8",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 23"
+		}]
+	}]
+}

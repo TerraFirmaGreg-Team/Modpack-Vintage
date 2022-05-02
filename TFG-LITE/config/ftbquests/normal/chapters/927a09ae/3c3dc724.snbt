@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: 0.0d,
+	description: "Делает вагонетку невидимой",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "d08364a6",
+		type: "item",
+		items: [{
+			item: "stevescarts:cartmodule 1 36"
+		}]
+	}]
+}

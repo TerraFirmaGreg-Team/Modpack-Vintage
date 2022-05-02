@@ -1,0 +1,15 @@
+{
+	x: 4.5d,
+	y: -2.0d,
+	description: "Участвует в создании боковых баков, верхнего, открытого и улучшенного бака",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "c5f2876b",
+		type: "item",
+		items: [{
+			item: "stevescarts:modulecomponents 1 63"
+		}]
+	}]
+}

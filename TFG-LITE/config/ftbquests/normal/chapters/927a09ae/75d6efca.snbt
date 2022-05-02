@@ -1,0 +1,15 @@
+{
+	x: -4.5d,
+	y: -2.0d,
+	description: "Используется для проектирования и создания вашей вагонетки.",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "d0eb3738",
+		type: "item",
+		items: [{
+			item: "stevescarts:blockcartassembler"
+		}]
+	}]
+}
