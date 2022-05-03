@@ -773,6 +773,7 @@ Anvil.addRecipe("tfg:file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileS
 Anvil.addRecipe("tfg:file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 
 // Переработка TFC камня в ресурсы
+/*
 // Breccia
 electrolyzer.recipeBuilder()
 	.inputs(<metaitem:dustBreccia> * 3)
@@ -966,6 +967,7 @@ electrolyzer.recipeBuilder()
 	.chancedOutput(<metaitem:dustSmallMetalMixture>, 6700, 700)
 	.fluidOutputs(<liquid:oxygen> * 4)
 	.duration(450).EUt(64).buildAndRegister();
+*/
 
 // Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
 // White Concrete Powder * 8
