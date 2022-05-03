@@ -78,7 +78,7 @@ StoneType.create(39, "tfc_rocksalt", "ore", <material:stone>, "tfc:raw/rocksalt"
 // val oreBreccia as OrePrefix = OrePrefix.registerOrePrefix("oreBreccia", 1);
 // oreBreccia.addSecondaryMaterial(<material:breccia>, 1);
 // StoneType.create(18, "tfc_breccia", "oreBreccia", <material:breccia>, "tfc:raw/breccia");
-StoneType.create(39, "tfc_rocksalt", "ore", <material:stone>, "tfc:raw/rocksalt");
+StoneType.create(18, "tfc_breccia", "ore", <material:stone>, "tfc:raw/rocksalt");
 
 // - Catlinite
 // MaterialBuilder(32101, "catlinite").dust().color(0xB46C62).build();
