@@ -41,19 +41,19 @@ for material in MaterialRegistry.getAllMaterials()
 // -- TFC
 
 // - Marble
-StoneType.create(32, "tfc_marble", "oreMarble", <material:marble>, "tfc:raw/marble");
+StoneType.create(32, "tfc_marble", "ore", <material:marble>, "tfc:raw/marble");
 
 // - Basalt
-StoneType.create(17, "tfc_basalt", "oreBasalt", <material:basalt>, "tfc:raw/basalt");
+StoneType.create(17, "tfc_basalt", "ore", <material:basalt>, "tfc:raw/basalt");
 
 // - Andesite
-StoneType.create(16, "tfc_andesite", "oreAndesite", <material:andesite>, "tfc:raw/andesite");
+StoneType.create(16, "tfc_andesite", "ore", <material:andesite>, "tfc:raw/andesite");
 
 // - Diorite
-StoneType.create(25, "tfc_diorite", "oreDiorite", <material:diorite>, "tfc:raw/diorite");
+StoneType.create(25, "tfc_diorite", "ore", <material:diorite>, "tfc:raw/diorite");
 
 // - Granite
-StoneType.create(29, "tfc_granite", "oreGranite", <material:granite>, "tfc:raw/granite");
+StoneType.create(29, "tfc_granite", "ore", <material:granite>, "tfc:raw/granite");
 
 // - Quartzite
 // val oreQuartzite as OrePrefix = OrePrefix.registerOrePrefix("oreQuartzite", 1);
