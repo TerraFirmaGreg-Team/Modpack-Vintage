@@ -6,7 +6,7 @@
     "max": 15
   },
   "dimension_filter": [
-    "dimension_id:-13"
+    "dimension_id:-1005"
   ],
   "depletion": {
     "amount": 1,

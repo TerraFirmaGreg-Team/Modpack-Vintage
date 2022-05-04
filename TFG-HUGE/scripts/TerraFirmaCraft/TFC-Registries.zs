@@ -33,9 +33,9 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
 // --- Регистрация металлов для палок GT
-ItemRegistry.registerItemMetal(<metaitem:stickGold>, "GOLD", 50, true);
-ItemRegistry.registerItemMetal(<metaitem:stickWroughtIron>, "WROUGHT_IRON", 50, true);
-ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
+// ItemRegistry.registerItemMetal(<metaitem:stickGold>, "GOLD", 50, true);
+// ItemRegistry.registerItemMetal(<metaitem:stickWroughtIron>, "WROUGHT_IRON", 50, true);
+// ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
 
 // --- Регистрация металлов для двойных пластин GregTech
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 100, true);
@@ -336,6 +336,5 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallSilver>, "SILVER", 25, true);
 ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 10, true);
 
 for item in Bad_Dusts_Array {
-        //item.addTooltip(format.red("This dust cannot be processed into TFC metal, otherwise it will not be processed in GTCEu mechanisms, this should be fixed by GTCEu developers in the future."));
         item.addTooltip(format.red(game.localize("tfg.warningaboutimpuredusts.name")));
 }

@@ -22,6 +22,12 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <minecraft:stonebrick:3>,
     <minecraft:mossy_cobblestone>,
     <minecraft:bookshelf>,
+    <minecraft:sandstone>,
+    <minecraft:sandstone:1>,
+    <minecraft:sandstone:2>,
+    <minecraft:red_sandstone>,
+    <minecraft:red_sandstone:1>,
+    <minecraft:red_sandstone:2>,
     // Logs
     <minecraft:log:*>,
     <minecraft:log2:*>,
@@ -199,6 +205,14 @@ val ItemsToRemoveFromFurnace as IItemStack[] = [
 for item in ItemsToRemoveFromFurnace {
     furnace.remove(item);
 }
+
+// Remove Ore Recipes
+furnace.remove(<minecraft:coal>, <minecraft:coal_ore>);
+furnace.remove(<minecraft:iron_ingot>, <minecraft:iron_ore>);
+furnace.remove(<minecraft:gold_ingot>, <minecraft:gold_ore>);
+furnace.remove(<minecraft:redstone>, <minecraft:redstone_ore>);
+furnace.remove(<minecraft:diamond>, <minecraft:diamond_ore>);
+furnace.remove(<minecraft:emerald>, <minecraft:emerald_ore>);
 
 // Remove Workbench
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
@@ -555,6 +569,31 @@ mixer.recipeBuilder()
     .outputs(<minecraft:fermented_spider_eye>)
     .duration(300).EUt(2).buildAndRegister();
 
+// Исправление рецепта сахара
+macerator.findRecipe(2, [<minecraft:reeds:0>], null).remove();
+macerator.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.outputs(<minecraft:sugar>)
+	.duration(300).EUt(2).buildAndRegister();
+
+// Исправление рецептов бумаги
+// Вода
+chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:water> * 100]).remove();
+// Дистилированная вода
+chemical_bath.findRecipe(7, [<minecraft:reeds:0>], [<liquid:distilled_water> * 100]).remove();
+// Вода
+chemical_bath.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.fluidInputs(<liquid:water> * 100)
+	.outputs(<minecraft:paper>)
+	.duration(100).EUt(7).buildAndRegister();
+// Дистилированная вода
+chemical_bath.recipeBuilder()
+	.inputs(<ore:sugarcane>)
+	.fluidInputs(<liquid:distilled_water> * 100)
+	.outputs(<minecraft:paper>)
+	.duration(100).EUt(7).buildAndRegister();
+
 // Исправление Саженцы -> Палки
 // Stick * 1
 lathe.findRecipe(7, [<minecraft:sapling:0>], null).remove();
@@ -643,64 +682,63 @@ recipes.addShaped(<minecraft:name_tag>,
  [<ore:string>, <minecraft:paper>, null],
  [<ore:string>, <ore:string>, null]]);
 
-//Повторитель
+// Повторитель
 recipes.addShaped(<minecraft:repeater>,
 [[<ore:screwIron>, null, <ore:screwIron>],
- [<minecraft:redstone_torch>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <minecraft:redstone_torch>],
+ [<minecraft:redstone_torch>, <ore:gtce.tool.screwdrivers>, <minecraft:redstone_torch>],
  [<ore:pressurePlateStone>, <ore:stickRedAlloy>,<ore:pressurePlateStone>]]);
 
-//Компаратор - обычный
+// Компаратор - обычный
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateCertusQuartz>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
-//Компаратор - кварц
+// Компаратор - кварц
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateNetherQuartz>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
-//Компаратор - кварцит
+// Компаратор - кварцит
 recipes.addShaped(<minecraft:comparator>,
 [[<ore:screwIron>, <minecraft:redstone_torch>, <ore:screwIron>],
  [<minecraft:redstone_torch>, <ore:plateQuartzite>, <minecraft:redstone_torch>],
- [<ore:pressurePlateStone>, <ore:craftingToolScrewdriver>.firstItem.withEmptyTag(), <ore:pressurePlateStone>]]);
+ [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
-//Детектор света - обычный
+// Детектор света - обычный
 recipes.addShaped(<minecraft:daylight_detector>,
 [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
  [<ore:plateCertusQuartz>, <ore:plateCertusQuartz>, <ore:plateCertusQuartz>],
  [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
-//Детектор света - кварц
+// Детектор света - кварц
 recipes.addShaped(<minecraft:daylight_detector>,
 [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
  [<ore:plateNetherQuartz>, <ore:plateNetherQuartz>, <ore:plateNetherQuartz>],
  [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
-//Детектор света - кварцит
+// Детектор света - кварцит
 recipes.addShaped(<minecraft:daylight_detector>,
 [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
  [<ore:plateQuartzite>, <ore:plateQuartzite>, <ore:plateQuartzite>],
  [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
-//Обычное золотое яблоко
+// Обычное золотое яблоко
 chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_ingot> * 8], null).remove();
 chemical_reactor.recipeBuilder()
     .inputs(<minecraft:gold_ingot> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
     .outputs(<minecraft:golden_apple>)
     .duration(20).EUt(30).buildAndRegister();
 
-//Зачарованное золотое яблоко
+// Зачарованное золотое яблоко
 chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_block> * 8], null).remove();
 chemical_reactor.recipeBuilder()
     .inputs(<minecraft:gold_block> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
     .outputs(<minecraft:golden_apple:1>)
     .duration(20).EUt(30).buildAndRegister();
 
-//Создание крафтов
-//Iron Trapdoor
+// Iron Trapdoor
 assembler.recipeBuilder()
     .inputs(<ore:plateIron>.firstItem * 4, <ore:trapdoorWood>)
     .outputs(<minecraft:iron_trapdoor>)
