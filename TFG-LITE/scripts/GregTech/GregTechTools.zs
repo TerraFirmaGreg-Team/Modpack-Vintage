@@ -2,22 +2,6 @@ import crafttweaker.item.IItemStack;
 
 // --- Removing Recipes
 
-// Скрытие мусора
-val RemoveItemsFromJEI as IItemStack[] = [
-	<metaitem:toolHeadSwordFlint>,
-    <metaitem:toolHeadPickaxeFlint>,
-    <metaitem:toolHeadShovelFlint>,
-    <metaitem:toolHeadAxeFlint>,
-    <metaitem:toolHeadHoeFlint>,
-    <metaitem:toolHeadHammerFlint>,
-    <metaitem:toolHeadFileFlint>,
-    <metaitem:toolHeadSawFlint>,
-    <metaitem:toolHeadSenseFlint>
-];
-for item in RemoveItemsFromJEI{
-    mods.jei.JEI.removeAndHide(item);
-}
-
 val RemoveItemRecipesByName = [
 	//Отключение рецептов кремниевых инструментов
     "gregtech:sword_flint",

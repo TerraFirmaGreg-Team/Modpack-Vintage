@@ -8,7 +8,7 @@ val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNether
 // --- Removing Recipes
 
 // Удаление рецептов
-val RemoveItemsFromJEI as IItemStack[] = [
+val RemoveWorkbenchRecipes as IItemStack[] = [
 	<chisel:chisel_iron>,
 	<chisel:chisel_diamond>,
 	<chisel:chisel_hitech>,
@@ -59,7 +59,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
 	<chisel:glasspanedyedlime:*>,
 	<chisel:glasspanedyedmagenta:*>
 ] as IItemStack[];
-for item in RemoveItemsFromJEI{
+for item in RemoveWorkbenchRecipes {
     recipes.remove(item);
 }
 

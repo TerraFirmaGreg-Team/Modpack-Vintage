@@ -4,9 +4,6 @@ import mods.horsepower.Grindstone;
 
 // --- Removing Recipes
 
-mods.jei.JEI.removeAndHide(<horsepower:flour>);
-mods.jei.JEI.removeAndHide(<horsepower:dough>);
-
 // GrindStone Removing
 val RemoveItemsFromQuern as IItemStack[] = [
 	<tfc:powder/flux> * 4,

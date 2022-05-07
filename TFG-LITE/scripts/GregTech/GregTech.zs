@@ -4,31 +4,6 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 
 // --- Removing Recipes
 
-// Удаление рецептов + скрытие
-val ItemsToRemoveFromJEI as IItemStack[] = [
-    // Rubber Stuff
-    <gregtech:planks>,
-    <gregtech:rubber_log>,
-    <gregtech:rubber_leaves>,
-    <gregtech:rubber_sapling>,
-    // Primitive Blast Furnace
-    <metaitem:primitive_blast_furnace.bronze>,
-    // Flour
-    <metaitem:dustWheat>,
-    <metaitem:dustSmallWheat>,
-    <metaitem:dustTinyWheat>,
-    // Compressed Clay
-    <metaitem:compressed.fireclay>,
-    // Compressed FireClay
-    <metaitem:compressed.fireclay>,
-    <metaitem:dustFireclay>,
-    <metaitem:dustSmallFireclay>,
-    <metaitem:dustTinyFireclay>
-];
-for item in ItemsToRemoveFromJEI{
-    mods.jei.JEI.removeAndHide(item);
-}
-
 // Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
 	// Paper
@@ -53,7 +28,10 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:electric_blast_furnace>,
     <metaitem:multi_furnace>,
     <metaitem:workbench>,
-    <metaitem:energy_hatch.input.mv>
+    <metaitem:energy_hatch.input.mv>,
+    <metaitem:compressed.coke_clay>,
+    <metaitem:steam_hammer_bronze>,
+    <metaitem:steam_hammer_steel>
 ];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -84,7 +62,9 @@ val RemoveItemRecipesByName = [
     "gregtech:lever",
     "gregtech:steam_output_bus",
     "gregtech:steam_input_bus",
-    "gregtech:glass_pane"
+    "gregtech:glass_pane",
+    "gregtech:plank_to_wooden_shape",
+    "gregtech:sticks_from_bundle_saw"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -101,6 +81,30 @@ for item in GTDoublePlates{
 }
 
 // --- Adding Recipes
+
+// Bronze Forge Hammer
+recipes.addShaped(<metaitem:steam_hammer_bronze>, 
+[[<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
+ [<ore:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallFluidBronze>]]);
+ 
+// Steam Forge Hammer
+recipes.addShaped(<metaitem:steam_hammer_steel>,
+[[<ore:pipeSmallFluidSteel>, <ore:craftingPiston>, <ore:pipeSmallFluidSteel>],
+ [<ore:pipeSmallFluidSteel>, <gregtech:steam_casing:2>, <ore:pipeSmallFluidSteel>],
+ [<ore:pipeSmallFluidSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallFluidSteel>]]);
+
+// Compressed coke clay
+recipes.addShaped(<metaitem:compressed.coke_clay> * 3,
+[[<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
+ [<ore:sand>, <gregtech:meta_item_1:348>, <ore:sand>],
+ [<ore:sand>, <ore:sand>, <ore:sand>]]);
+
+// Wooden Form
+recipes.addShaped(<metaitem:wooden_form.empty>,
+[[null, <ore:lumber>, null],
+ [null, <ore:lumber>, null],
+ [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
 
 // Small Steam Coal Boiler
 recipes.addShaped(<metaitem:steam_boiler_coal_bronze>,
@@ -215,6 +219,9 @@ recipes.addShaped( <metaitem:steam_export_bus>,
  [null, <ore:chest>, null],
  [null, null, null]]);
 
+// Исправление дюпа палок
+// cutter.findRecipe(7, [<tfc:stick_bundle>], [<liquid:lubricant>]).remove();
+
 // Исправление рецепта на бумагу
 // Крафт бумажной пыли
 recipes.addShaped( <ore:dustPaper>.firstItem * 2,
@@ -225,6 +232,44 @@ recipes.addShaped(<ore:paper>.firstItem * 2,
 [[null, <ore:slabStonePolished>.reuse(), null],
  [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
  [null, <ore:slabStonePolished>.reuse(), null]]);
+
+// Удаление базальта GT
+furnace.remove(<gregtech:stone_smooth:3>);
+extruder.findRecipe(8, [<gregtech:stone_cobble:3>, <metaitem:shape.extruder.block>], null).remove();
+forge_hammer.findRecipe(4, [<gregtech:stone_smooth:3>], null).remove();
+chemical_bath.findRecipe(16, [<gregtech:stone_cobble:3>], [<liquid:water> * 100]).remove();
+furnace.remove(<gregtech:stone_polished:3>);
+extruder.findRecipe(8, [<gregtech:stone_smooth:3>, <metaitem:shape.extruder.block>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.light_blue>], null).remove();
+extruder.findRecipe(8, [<gregtech:stone_smooth:3>, <metaitem:shape.extruder.ingot>], null).remove();
+forge_hammer.findRecipe(4, [<gregtech:stone_bricks:3>], null).remove();
+chemical_bath.findRecipe(16, [<gregtech:stone_bricks:3>], [<liquid:water> * 100]).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:lensGlass>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.red>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_tiled:3>, <metaitem:glass_lens.red>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.pink>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.blue>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.yellow>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:3>, <metaitem:glass_lens.green>], null).remove();
+
+// Удаление мрамора GT
+furnace.remove(<gregtech:stone_smooth:2>);
+extruder.findRecipe(8, [<gregtech:stone_cobble:2>, <metaitem:shape.extruder.block>], null).remove();
+forge_hammer.findRecipe(4, [<gregtech:stone_smooth:2>], null).remove();
+chemical_bath.findRecipe(16, [<gregtech:stone_cobble:2>], [<liquid:water> * 100]).remove();
+furnace.remove(<gregtech:stone_polished:2>);
+extruder.findRecipe(8, [<gregtech:stone_smooth:2>, <metaitem:shape.extruder.block>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.light_blue>], null).remove();
+extruder.findRecipe(8, [<gregtech:stone_smooth:2>, <metaitem:shape.extruder.ingot>], null).remove();
+forge_hammer.findRecipe(4, [<gregtech:stone_bricks:2>], null).remove();
+chemical_bath.findRecipe(16, [<gregtech:stone_bricks:2>], [<liquid:water> * 100]).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:lensGlass>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.red>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_tiled:2>, <metaitem:glass_lens.red>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.pink>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.blue>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.yellow>], null).remove();
+laser_engraver.findRecipe(16, [<gregtech:stone_polished:2>, <metaitem:glass_lens.green>], null).remove();
 
 // Fix Plant Ball Recipes
 // Remove From Cactus

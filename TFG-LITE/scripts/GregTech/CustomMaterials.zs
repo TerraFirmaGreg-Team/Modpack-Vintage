@@ -238,22 +238,109 @@ StoneType.create(44, "tfc_slate", "ore", <material:stone>, "tfc:raw/slate");
 // -- Galacticraft/GalaxySpace
 
 // - Mercury
-MaterialBuilder(32123, "mercurystone").dust().color(0xC7FFFB).build();
+MaterialBuilder(32123, "mercury_stone").dust().color(0xC7FFFB).build();
 // val oreMercurystone as OrePrefix = OrePrefix.registerOrePrefix("oreMercurystone", 1);
 // oreMercurystone.addSecondaryMaterial(<material:mercurystone>, 1);
 // val blockState = "galaxyspace:mercuryblocks:type=mercury_stone";
 // StoneType.create(47, "gc_mercurystone", "oreMercurystone", <material:mercurystone>, blockState);
 
 // - Venus
-MaterialBuilder(32124, "venusstone").dust().color(0xA86540).build();
+MaterialBuilder(32124, "venus_stone").dust().color(0xA86540).build();
 
 // - Moon
-MaterialBuilder(32125, "moonstone").dust().color(0xFFFFFF).build();
+MaterialBuilder(32125, "moon_stone").dust().color(0xFFFFFF).build();
 
 // - Mars
-MaterialBuilder(32126, "marsstone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32126, "mars_stone").dust().color(0xFF7A5C).build();
+
+// - Phobos
+MaterialBuilder(32127, "phobos_stone").dust().color(0xFF7A5C).build();
+
+// - Ceres
+MaterialBuilder(32128, "ceres_stone").dust().color(0xFF7A5C).build();
 
 // - Asteroids
-MaterialBuilder(32127, "asteroidsstoneblack").dust().color(0x1C1C1C).build();
-MaterialBuilder(32128, "asteroidsstonegray").dust().color(0x505050).build();
-MaterialBuilder(32139, "asteroidsstonelightgray").dust().color(0xBBBBBB).build();
+MaterialBuilder(32129, "asteroid_stone_black").dust().color(0x1C1C1C).build();
+MaterialBuilder(32130, "asteroid_stone_gray").dust().color(0x505050).build();
+MaterialBuilder(32131, "asteroid_stone_lightgray").dust().color(0xBBBBBB).build();
+
+// - IO
+MaterialBuilder(32132, "io_stone").dust().color(0xFF7A5C).build();
+
+// - Europa
+MaterialBuilder(32133, "europa_stone").dust().color(0xFF7A5C).build();
+
+// - Ganumede
+MaterialBuilder(32134, "ganumede").dust().color(0xFF7A5C).build();
+
+// - Callisto
+MaterialBuilder(32135, "callisto").dust().color(0xFF7A5C).build();
+
+// - Enceladus
+MaterialBuilder(32136, "enceladus_stone").dust().color(0xFF7A5C).build();
+
+// - Titan
+MaterialBuilder(32137, "titan_stone").dust().color(0xFF7A5C).build();
+
+// - Miranda
+MaterialBuilder(32138, "miranda_stone").dust().color(0xFF7A5C).build();
+
+// - Triton
+MaterialBuilder(32139, "triton_stone").dust().color(0xFF7A5C).build();
+
+// - Pluto
+MaterialBuilder(32140, "pluto_stone").dust().color(0xFF7A5C).build();
+
+// - Kuiper Belt
+MaterialBuilder(32141, "kuiperbelt_stone").dust().color(0xFF7A5C).build();
+
+// - Haumea
+MaterialBuilder(32142, "haumea_stone").dust().color(0xFF7A5C).build();
+
+// - ...
+
+// --- Planet Atmospheres
+
+// - Mercury
+MaterialBuilder(32200, "mercury_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Venus
+MaterialBuilder(32201, "venus_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Moon
+MaterialBuilder(32202, "moon_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Mars
+MaterialBuilder(32203, "mars_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Phobos
+MaterialBuilder(32204, "phobos_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - IO
+MaterialBuilder(32205, "io_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Europa
+MaterialBuilder(32206, "europa_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Ganymede
+MaterialBuilder(32207, "ganymede_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Callisto
+MaterialBuilder(32208, "callisto_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Enceladus
+MaterialBuilder(32209, "enceladus_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Titan
+MaterialBuilder(32210, "titan_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Miranda
+MaterialBuilder(32211, "miranda_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Triton
+MaterialBuilder(32212, "triton_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - Pluto
+MaterialBuilder(32213, "pluto_air").fluid("gas", false).color(0xA4A39F).build();
+
+// - ...

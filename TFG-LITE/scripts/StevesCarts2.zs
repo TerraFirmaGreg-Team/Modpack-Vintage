@@ -1,22 +1,6 @@
 import crafttweaker.item.IItemStack;
 
-// Удаление рецептов + скрытие
-val ItemsToRemoveFromJEI as IItemStack[] = [
-	<stevescarts:cartmodule:97>,
-	<stevescarts:cartmodule:72>,
-	<stevescarts:cartmodule:61>,
-	<stevescarts:cartmodule:76>,
-	<stevescarts:cartmodule:96>,
-	<stevescarts:cartmodule:23>,
-	<stevescarts:cartmodule:58>,
-	<stevescarts:cartmodule:91>,
-	<stevescarts:cartmodule:93>,
-	<stevescarts:upgrade:14>,
-	<stevescarts:cartmodule:62>
-];
-for item in ItemsToRemoveFromJEI{
-    mods.jei.JEI.removeAndHide(item);
-}
+// --- Recipes Removing
 
 // Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
@@ -55,6 +39,8 @@ val ItemsToRemove as IItemStack[] = [
 for item in ItemsToRemove{
     recipes.remove(item);
 }
+
+// --- Recipes Adding
 
 // Простая печатная плата
 circuit_assembler.recipeBuilder()

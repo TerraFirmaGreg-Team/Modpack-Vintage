@@ -1,7 +1,16 @@
+import crafttweaker.item.IItemStack;
+
 // --- Removing Recipes
-recipes.remove(<movingelevators:elevator_block>);
-recipes.remove(<movingelevators:display_block>);
-recipes.remove(<movingelevators:button_block>);
+
+// Удаление рецептов
+val RemoveWorkbenchRecipes as IItemStack[] = [
+	<movingelevators:elevator_block>,
+    <movingelevators:display_block>,
+    <movingelevators:button_block>
+] as IItemStack[];
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
 
 // --- Adding Recipes
 

@@ -1,8 +1,15 @@
-// --- Removing Recipes
-mods.jei.JEI.removeAndHide(<enderstorage:ender_pouch>);
+import crafttweaker.item.IItemStack;
 
-recipes.remove(<enderstorage:ender_storage>);
-recipes.remove(<enderstorage:ender_storage:1>);
+// --- Removing Recipes
+
+// Удаление рецептов
+val RemoveWorkbenchRecipes as IItemStack[] = [
+	<enderstorage:ender_storage>,
+  <enderstorage:ender_storage:1>,
+] as IItemStack[];
+for item in RemoveWorkbenchRecipes {
+  recipes.remove(item);
+}
 
 // ---- Adding Recipes
 

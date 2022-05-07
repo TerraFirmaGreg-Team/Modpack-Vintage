@@ -75,55 +75,6 @@ for item in TFC_Loom {
 	<ore:loom>.add(item);
 }
 
-// Tools
-<ore:gtce.tool.wrenches>.addItems([
-    <gregtech:meta_tool:8>.withEmptyTag(),
-    <gregtech:meta_tool:28>.withEmptyTag(),
-    <gregtech:meta_tool:29>.withEmptyTag(),
-    <gregtech:meta_tool:30>.withEmptyTag()
-]);
-
-<ore:gtce.tool.screwdrivers>.addItems([
-    <gregtech:meta_tool:11>.withEmptyTag(),
-    <gregtech:meta_tool:31>.withEmptyTag()
-]);
-
-<ore:gtce.tool.hard.hammers>.addItems([
-    <gregtech:meta_tool:6>.withEmptyTag()
-]);
-
-<ore:gtce.tool.saws>.addItems([
-    <gregtech:meta_tool:5>.withEmptyTag(),
-    <gregtech:meta_tool:25>.withEmptyTag(),
-    <gregtech:meta_tool:26>.withEmptyTag(),
-    <gregtech:meta_tool:27>.withEmptyTag(),
-    <gregtech:meta_tool:32>.withEmptyTag()
-]);
-
-<ore:gtce.tool.files>.addItems([
-    <gregtech:meta_tool:9>.withEmptyTag()
-]);
-
-<ore:gtce.tool.cutters>.addItems([
-    <gregtech:meta_tool:13>.withEmptyTag()
-]);
-
-<ore:gtce.tool.soft.hammers>.addItems([
-    <gregtech:meta_tool:7>.withEmptyTag()
-]);
-
-<ore:gtce.tool.mortars>.addItems([
-    <gregtech:meta_tool:12>.withEmptyTag()
-]);
-
-<ore:gtce.tool.shovels>.addItems([
-    <gregtech:meta_tool:2>.withEmptyTag()
-]);
-
-<ore:gtce.tool.knife>.addItems([
-    <gregtech:meta_tool:15>.withEmptyTag(),
-]);
-
 // Rock Types GT = Rock Types TFC
 //<ore:stoneBasalt>.add(<tfc:raw/basalt>);
 //<ore:stoneMarble>.add(<tfc:raw/marble>);
@@ -132,6 +83,9 @@ for item in TFC_Loom {
 for item in TFC_Slabs_Smooth {
 	<ore:slabStone>.add(item);
 }
+
+// StickBundle
+<ore:logWood>.remove(<tfc:stick_bundle>);
 
 // Sugarcane
 <ore:sugarcane>.add(<tfc:food/sugarcane>);
@@ -262,6 +216,56 @@ for item in TFC_Slabs_Smooth {
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
 // --- GregTech
+
+// Tools
+<ore:gtce.tool.wrenches>.addItems([
+    <gregtech:meta_tool:8>.withEmptyTag(),
+    <gregtech:meta_tool:28>.withEmptyTag(),
+    <gregtech:meta_tool:29>.withEmptyTag(),
+    <gregtech:meta_tool:30>.withEmptyTag()
+]);
+
+<ore:gtce.tool.screwdrivers>.addItems([
+    <gregtech:meta_tool:11>.withEmptyTag(),
+    <gregtech:meta_tool:31>.withEmptyTag()
+]);
+
+<ore:gtce.tool.hard.hammers>.addItems([
+    <gregtech:meta_tool:6>.withEmptyTag()
+]);
+
+<ore:gtce.tool.saws>.addItems([
+    <gregtech:meta_tool:5>.withEmptyTag(),
+    <gregtech:meta_tool:25>.withEmptyTag(),
+    <gregtech:meta_tool:26>.withEmptyTag(),
+    <gregtech:meta_tool:27>.withEmptyTag(),
+    <gregtech:meta_tool:32>.withEmptyTag()
+]);
+
+<ore:gtce.tool.files>.addItems([
+    <gregtech:meta_tool:9>.withEmptyTag()
+]);
+
+<ore:gtce.tool.cutters>.addItems([
+    <gregtech:meta_tool:13>.withEmptyTag()
+]);
+
+<ore:gtce.tool.soft.hammers>.addItems([
+    <gregtech:meta_tool:7>.withEmptyTag()
+]);
+
+<ore:gtce.tool.mortars>.addItems([
+    <gregtech:meta_tool:12>.withEmptyTag()
+]);
+
+<ore:gtce.tool.shovels>.addItems([
+    <gregtech:meta_tool:2>.withEmptyTag()
+]);
+
+<ore:gtce.tool.knife>.addItems([
+    <gregtech:meta_tool:15>.withEmptyTag(),
+]);
+
 
 // Chipped Gems from GT
 for item in Gem_Chipped {

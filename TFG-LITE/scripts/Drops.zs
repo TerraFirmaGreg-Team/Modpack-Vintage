@@ -5,19 +5,19 @@ Dropt.list("Urn_Fixes").add(Dropt.rule()
   .matchBlocks(["tfcflorae:storage/urn_loot"])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()
-    .selector(Dropt.weight(30))
+    .selector(Dropt.weight(33))
     .items([<metaitem:dustSmallCopper> * 2, <metaitem:dustSmallTin> * 4, <metaitem:dustSmallGold>])
   )
   .addDrop(Dropt.drop()
-    .selector(Dropt.weight(30))
+    .selector(Dropt.weight(33))
     .items([<metaitem:ingotCopper> * 2, <metaitem:ingotTin> * 4])
   )
   .addDrop(Dropt.drop()
-    .selector(Dropt.weight(30))
+    .selector(Dropt.weight(33))
     .items([<tfc:crop/seeds/oat>, <tfc:crop/seeds/rice>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/carrot>, <tfc:crop/seeds/tomato>])
   )
   .addDrop(Dropt.drop()
-    .selector(Dropt.weight(10))
+    .selector(Dropt.weight(1))
     .items([<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "diamond"}})])
   )
 );
@@ -29,23 +29,8 @@ Dropt.list("Puddles_Fix").add(Dropt.rule()
   .addDrop(Dropt.drop()));
 
 // Руда угля GT -> Уголь Гем
-Dropt.list("GT_Coal_To_TFC_Coal_0").add(Dropt.rule()
-  .matchBlocks(["gregtech:ore_coal_0"])
-  .matchDrops([<gregtech:ore_coal_0:*>])
-  .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop().items([<minecraft:coal>])));
-
-// Руда угля GT -> Уголь Гем
-Dropt.list("GT_Coal_To_TFC_Coal_1").add(Dropt.rule()
-  .matchBlocks(["gregtech:ore_coal_1"])
-  .matchDrops([<gregtech:ore_coal_1:*>])
-  .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop().items([<minecraft:coal>])));
-
-// Руда угля GT -> Уголь Гем
-Dropt.list("GT_Coal_To_TFC_Coal_2").add(Dropt.rule()
-  .matchBlocks(["gregtech:ore_coal_2"])
-  .matchDrops([<gregtech:ore_coal_2:*>])
+Dropt.list("GT_Coal_To_TFC_Coal").add(Dropt.rule()
+  .matchDrops([<gregtech:ore_coal_0:*>, <gregtech:ore_coal_1:*>, <gregtech:ore_coal_2:*>])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop().items([<minecraft:coal>])));
 
