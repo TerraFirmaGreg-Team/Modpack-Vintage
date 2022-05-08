@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer1": "gregtech:items/metaitems/battery.iv.vanadium/1",
+    "layer0": "gregtech:items/metaitems/battery.hull.iv"
+    }
+}

@@ -1,0 +1,39 @@
+// Предметы
+item.ae2wtlib:infinity_booster_card.name=Буст-карта бесконечности
+item.ae2wtlib:wut.name=Беспроводной универсальный терминал
+item.ae2wtlib:wut_creative.name=Креативный беспроводный максимальный терминал
+
+// Вкладка "Креатив"
+itemGroup.ae2wtlib=Беспроводные терминалы AE2 (AE2WTLib)
+
+// Подсказки
+tooltip.infinite_range.desc=Бесконечный диапазон
+tooltip.infinity_energy.desc=Энергия бесконечности
+tooltip.installed.desc=Установлено
+tooltip.in_wap_range.desc=(В диапазоне WAP)
+tooltip.out_of.desc=Нет
+tooltip.infinity_energy_low.desc=Мало энергии бесконечности!
+tooltip.creative.desc=Креативный
+tooltip.infinite.desc=Бесконечный
+tooltip.press_shift.desc=<Нажмите Shift>
+tooltip.or_press.desc=или нажмите
+tooltip.press.desc=Нажмите
+tooltip.active.desc=Активный
+tooltip.inactive.desc=Неактивный
+tooltip.not.desc=Нет
+tooltip.units.desc=Единицы
+tooltip.link_status=Статус ссылки
+
+// Графический интерфейс
+gui.emptytrash=Очистить корзину
+gui.emptytrash.desc=Удалить содержимое ячейки корзины
+gui.consumeboosters=Автопотребление буст-карт
+gui.dontconsumeboosters.desc=Бесконечность буст-карт не расходуется
+gui.consumeboosters.desc=Автоматически использовать буст-карт бесконечности
+gui.consumeboosters.desc2=Карты при подборе или в инвентаре
+
+// JEI
+jei.wt_bauble.desc=Можно носить как безделушку
+jei.wt_booster_old.desc=Вставьте буст-карта бесконечности в соответствующий слот в графическом интерфейсе WCT, чтобы дать WCT бесконечный радиус действия.
+jei.wt_booster.desc=Вставьте до 2,14 миллиарда из них в соответствующий слот в WCT, чтобы добавить внутреннюю Энергию Бесконечности, которая позволяет использовать WCT за пределами диапазона WAP и в разных измерениях.
+jei.wut.desc=Терминал, созданный путем объединения других терминалов, который затем получает функциональность добавленных терминалов.

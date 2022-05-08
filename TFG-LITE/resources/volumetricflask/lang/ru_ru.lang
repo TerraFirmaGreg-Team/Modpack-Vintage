@@ -1,0 +1,6 @@
+itemGroup.volumetricflask=Объемная колба
+item.volumetricflask.volumetric_flask.name=Объемная колба
+item.volumetricflask.part_o_interface.name=Объемный интерфейс
+tile.volumetricflask.o_interface.name=Объемный интерфейс
+tile.volumetricflask.buffer.name=Буфер
+tile.volumetricflask.filler.name=Наполнитель
