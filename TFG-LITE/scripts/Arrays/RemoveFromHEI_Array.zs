@@ -1101,24 +1101,6 @@ for item in Array17{
     JEI.removeAndHide(item);
 }
 
-// Steve's Carts 2
-val Array18 as IItemStack[] = [
-	<stevescarts:cartmodule:97>,
-	<stevescarts:cartmodule:72>,
-	<stevescarts:cartmodule:61>,
-	<stevescarts:cartmodule:76>,
-	<stevescarts:cartmodule:96>,
-	<stevescarts:cartmodule:23>,
-	<stevescarts:cartmodule:58>,
-	<stevescarts:cartmodule:91>,
-	<stevescarts:cartmodule:93>,
-	<stevescarts:upgrade:14>,
-	<stevescarts:cartmodule:62>
-];
-for item in Array18 {
-    JEI.removeAndHide(item);
-}
-
 // TombStone
 val Array19 as IItemStack[] = [
 	<tombstone:dark_marble>,
