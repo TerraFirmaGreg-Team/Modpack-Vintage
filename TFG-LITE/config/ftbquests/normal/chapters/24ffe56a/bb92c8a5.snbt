@@ -28,17 +28,5 @@
 		items: [{
 			item: "gregtech:meta_ingot 1 2516"
 		}]
-	}],
-	rewards: [{
-		uid: "91fb1ffd",
-		type: "item",
-		item: "gregtech:ore_molybdenite_0 1 1",
-		count: 12
-	},
-	{
-		uid: "38c9b988",
-		type: "item",
-		item: "gregtech:ore_vanadium_magnetite_0",
-		count: 24
 	}]
 }

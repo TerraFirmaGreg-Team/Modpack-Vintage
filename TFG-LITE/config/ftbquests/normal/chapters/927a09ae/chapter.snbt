@@ -1,7 +1,0 @@
-{
-	title: "{tfg.quests.StevesCarts.era.title}",
-	icon: "stevescarts:cartmodule 1 11",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}
