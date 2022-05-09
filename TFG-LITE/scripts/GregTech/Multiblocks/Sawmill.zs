@@ -52,7 +52,7 @@ var electric_saw_mill = Builder.start(loc, id)
       .where("G", CTPredicate.states(<metastate:gregtech:transparent_casing>))
       .where("W", CTPredicate.states(<metastate:gregtech:wire_coil>))
       .where("F", CTPredicate.states(<metastate:gregtech:meta_block_frame_20:4>))
-      .where(" ", CTPredicate.getAir())
+      .where(" ", CTPredicate.getAny())
       .build();
   } as IPatternBuilderFunction)
   .withRecipeMap(saw_mill)
@@ -90,43 +90,3 @@ for i, log in TFC_Logs {
     .buildAndRegister();
 }
 
-// Electric_saw_mill Rubber
-saw_mill.recipeBuilder()
-  .circuit(1)
-  .inputs([<tfc:wood/log/hevea> * 6])
-  .fluidInputs([<liquid:water> * 1000])
-  .outputs([<gregtech:planks> * 48])
-  .outputs([<metaitem:dustWood> * 12])
-  .duration(300)
-  .EUt(7)
-  .buildAndRegister();
-
-saw_mill.recipeBuilder()
-  .circuit(2)
-  .inputs([<tfc:wood/log/hevea> * 6])
-  .fluidInputs([<liquid:water> * 1000])
-  .outputs([<metaitem:dustWood> * 30])
-  .outputs([<metaitem:dustSmallWood> * 18])
-  .duration(400)
-  .EUt(7)
-  .buildAndRegister();
-
-saw_mill.recipeBuilder()
-  .circuit(1)
-  .inputs([<tfc:wood/log/rubber_fig> * 6])
-  .fluidInputs([<liquid:water> * 1000])
-  .outputs([<gregtech:planks> * 48])
-  .outputs([<metaitem:dustWood> * 12])
-  .duration(300)
-  .EUt(7)
-  .buildAndRegister();
-
-saw_mill.recipeBuilder()
-  .circuit(2)
-  .inputs([<tfc:wood/log/rubber_fig> * 6])
-  .fluidInputs([<liquid:water> * 1000])
-  .outputs([<metaitem:dustWood> * 30])
-  .outputs([<metaitem:dustSmallWood> * 18])
-  .duration(400)
-  .EUt(7)
-  .buildAndRegister();

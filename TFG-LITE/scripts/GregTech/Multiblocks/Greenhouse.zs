@@ -60,7 +60,7 @@ var electric_greenhouse = Builder.start(loc, id)
 			.where("T", CTPredicate.states(<metastate:gregtech:wire_coil>))
 			.where("H", CTPredicate.states(<metastate:gregtech:boiler_firebox_casing:1>))
 			.where("B", CTPredicate.states(<metastate:gregtech:boiler_casing:1>))
-      .where(" ", CTPredicate.getAir())
+      .where(" ", CTPredicate.getAny())
       .build();
   } as IPatternBuilderFunction)
   .withRecipeMap(greenhouse)
