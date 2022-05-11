@@ -54,17 +54,17 @@ for item in Array2 {
 
 // ExtraCells 2
 val Array3 as IItemStack[] = [
-	# Fluid Storage Cells(deprecated)
+	// Fluid Storage Cells(deprecated)
   	<extracells:storage.fluid>,
 	<extracells:storage.fluid:1>,
 	<extracells:storage.fluid:2>,
 	<extracells:storage.fluid:3>,
-	# Fluid Storage Component(deprecated)
+	// Fluid Storage Component(deprecated)
 	<extracells:storage.component:4>,
 	<extracells:storage.component:5>,
 	<extracells:storage.component:6>,
 	<extracells:storage.component:7>,
-	# Deprecated panels
+	// Deprecated panels
 	<extracells:part.base>,
 	<extracells:part.base:1>,
 	<extracells:part.base:2>,
@@ -73,15 +73,15 @@ val Array3 as IItemStack[] = [
 	<extracells:part.base:5>,
 	<extracells:part.base:6>,
 	<extracells:part.base:9>,
-	# Fluid Interface
+	// Fluid Interface
 	<extracells:ecbaseblock>,
-	# Certus Quartz Tank
+	// Certus Quartz Tank
 	<extracells:certustank>,
-	# Fluid Vibration Chamber
+	// Fluid Vibration Chamber
 	<extracells:vibrantchamberfluid>,
-	# Wireless Fluid Terminal
+	// Wireless Fluid Terminal
 	<extracells:terminal.fluid.wireless>,
-	# Wireless Universal Terminal
+	// Wireless Universal Terminal
 	<extracells:terminal.universal.wireless>
 ];
 for item in Array3 {
@@ -613,8 +613,6 @@ val Array10 as IItemStack[] = [
     <tfctech:metal/gold_screw>,
     <tfctech:metal/iron_bowl_mount>,
     <tfctech:metal/iron_draw_plate>,
-    <tfctech:metal/iron_groove>,
-    <tfctech:metal/iron_tongs>,
     <tfctech:metal/lead_bolt>,
     <tfctech:metal/lead_gear>,
     <tfctech:metal/lead_long_rod>,
