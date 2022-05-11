@@ -91,27 +91,27 @@ WireDrawing.addRecipe("tfg:tfctech/wire_platinum", <tfctech:metal/platinum_wire:
 WireDrawing.addRecipe("tfg:tfctech/wire_black_steel", <tfctech:metal/black_steel_wire:1>, 3, <ore:wireGtSingleBlackSteel>.firstItem, 0xFF292929);
 
 // Рецепты Strips
-recipes.addShapeless(<tfctech:metal/bismuth_strip> * 2, [<ore:chisel>, <ore:plateBismuth>]);
-recipes.addShapeless(<tfctech:metal/bismuth_bronze_strip> * 2, [<ore:chisel>, <ore:plateBismuthBronze>]);
-recipes.addShapeless(<tfctech:metal/black_bronze_strip> * 2, [<ore:chisel>, <ore:plateBlackBronze>]);
-recipes.addShapeless(<tfctech:metal/brass_strip> * 2, [<ore:chisel>, <ore:plateBrass>]);
-recipes.addShapeless(<tfctech:metal/bronze_strip> * 2, [<ore:chisel>, <ore:plateBronze>]);
-recipes.addShapeless(<tfctech:metal/copper_strip> * 2, [<ore:chisel>, <ore:plateCopper>]);
-recipes.addShapeless(<tfctech:metal/gold_strip> * 2, [<ore:chisel>, <ore:plateGold>]);
-recipes.addShapeless(<tfctech:metal/lead_strip> * 2, [<ore:chisel>, <ore:plateLead>]);
-recipes.addShapeless(<tfctech:metal/nickel_strip> * 2, [<ore:chisel>, <ore:plateNickel>]);
-recipes.addShapeless(<tfctech:metal/rose_gold_strip> * 2, [<ore:chisel>, <ore:plateRoseGold>]);
-recipes.addShapeless(<tfctech:metal/silver_strip> * 2, [<ore:chisel>, <ore:plateSilver>]);
-recipes.addShapeless(<tfctech:metal/tin_strip> * 2, [<ore:chisel>, <ore:plateTin>]);
-recipes.addShapeless(<tfctech:metal/zinc_strip> * 2, [<ore:chisel>, <ore:plateZinc>]);
-recipes.addShapeless(<tfctech:metal/sterling_silver_strip> * 2, [<ore:chisel>, <ore:plateSterlingSilver>]);
-recipes.addShapeless(<tfctech:metal/wrought_iron_strip> * 2, [<ore:chisel>, <ore:plateWroughtIron>]);
-recipes.addShapeless(<tfctech:metal/pig_iron_strip> * 2, [<ore:chisel>, <ore:sheetPigIron>]);
-recipes.addShapeless(<tfctech:metal/steel_strip> * 2, [<ore:chisel>, <ore:plateSteel>]);
-recipes.addShapeless(<tfctech:metal/platinum_strip> * 2, [<ore:chisel>, <ore:platePlatinum>]);
-recipes.addShapeless(<tfctech:metal/black_steel_strip> * 2, [<ore:chisel>, <ore:plateBlackSteel>]);
-recipes.addShapeless(<tfctech:metal/blue_steel_strip> * 2, [<ore:chisel>, <ore:plateBlueSteel>]);
-recipes.addShapeless(<tfctech:metal/red_steel_strip> * 2, [<ore:chisel>, <ore:plateRedSteel>]);
+recipes.addShapeless(<tfctech:metal/bismuth_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBismuth>]);
+recipes.addShapeless(<tfctech:metal/bismuth_bronze_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBismuthBronze>]);
+recipes.addShapeless(<tfctech:metal/black_bronze_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBlackBronze>]);
+recipes.addShapeless(<tfctech:metal/brass_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBrass>]);
+recipes.addShapeless(<tfctech:metal/bronze_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBronze>]);
+recipes.addShapeless(<tfctech:metal/copper_strip> * 2, [<ore:gtce.tool.files>, <ore:plateCopper>]);
+recipes.addShapeless(<tfctech:metal/gold_strip> * 2, [<ore:gtce.tool.files>, <ore:plateGold>]);
+recipes.addShapeless(<tfctech:metal/lead_strip> * 2, [<ore:gtce.tool.files>, <ore:plateLead>]);
+recipes.addShapeless(<tfctech:metal/nickel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateNickel>]);
+recipes.addShapeless(<tfctech:metal/rose_gold_strip> * 2, [<ore:gtce.tool.files>, <ore:plateRoseGold>]);
+recipes.addShapeless(<tfctech:metal/silver_strip> * 2, [<ore:gtce.tool.files>, <ore:plateSilver>]);
+recipes.addShapeless(<tfctech:metal/tin_strip> * 2, [<ore:gtce.tool.files>, <ore:plateTin>]);
+recipes.addShapeless(<tfctech:metal/zinc_strip> * 2, [<ore:gtce.tool.files>, <ore:plateZinc>]);
+recipes.addShapeless(<tfctech:metal/sterling_silver_strip> * 2, [<ore:gtce.tool.files>, <ore:plateSterlingSilver>]);
+recipes.addShapeless(<tfctech:metal/wrought_iron_strip> * 2, [<ore:gtce.tool.files>, <ore:plateWroughtIron>]);
+recipes.addShapeless(<tfctech:metal/pig_iron_strip> * 2, [<ore:gtce.tool.files>, <ore:sheetPigIron>]);
+recipes.addShapeless(<tfctech:metal/steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateSteel>]);
+recipes.addShapeless(<tfctech:metal/platinum_strip> * 2, [<ore:gtce.tool.files>, <ore:platePlatinum>]);
+recipes.addShapeless(<tfctech:metal/black_steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBlackSteel>]);
+recipes.addShapeless(<tfctech:metal/blue_steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBlueSteel>]);
+recipes.addShapeless(<tfctech:metal/red_steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateRedSteel>]);
 
 // Крафт поташа с увеличенным выходом
 recipes.addShapeless(<ore:dustPotash>.firstItem * 4, [<tfctech:pot_potash>]);
