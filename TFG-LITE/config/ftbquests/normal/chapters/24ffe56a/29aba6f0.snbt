@@ -1,8 +1,8 @@
 {
 	title: "Fiber-Reinforced Epoxy",
 	icon: "gregtech:meta_plate 1 1006",
-	x: -3.5d,
-	y: -6.0d,
+	x: -4.0d,
+	y: -7.5d,
 	text: [
 		"The next board material as easy as §aEpoxy§r, plus an added extra step in the §3Chemical Bath§r.",
 		"",

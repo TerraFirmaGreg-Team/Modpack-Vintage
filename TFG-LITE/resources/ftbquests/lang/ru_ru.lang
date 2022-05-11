@@ -1983,12 +1983,12 @@ tfg.quests.space.shield.subtitle=&aКрафт просто, п****ц сложн�
 
 tfg.quests.space.flag.subtitle=&aМаленький захватчик.
 
-tfg.quests.space.rocket1.subtitle=&aПервая ракета!
-tfg.quests.space.rocket2.subtitle=&aВторая ракета!
-tfg.quests.space.rocket3.subtitle=&aДай угадаю, она третья.
-tfg.quests.space.rocket4.subtitle=&aА вы уже были на астероидах?
-tfg.quests.space.rocket6.subtitle=&aВы близки..
-tfg.quests.space.rocket7.subtitle=&aВы думаете я вас не переиграю, я вас не уничтожу? Я вас уничтожу.
+tfg.quests.space.rocket1.title=&aПервая ракета!
+tfg.quests.space.rocket2.title=&aВторая ракета!
+tfg.quests.space.rocket3.title=&aДай угадаю, она третья.
+tfg.quests.space.rocket4.title=&aА вы уже были на астероидах?
+tfg.quests.space.rocket6.title=&aВы близки..
+tfg.quests.space.rocket7.title=&aВы думаете я вас не переиграю, я вас не уничтожу? Я вас уничтожу.
 
 tfg.quests.space.end1.title=конец?
 tfg.quests.space.end1.subtitle=&aЯ дажне не знаю кто, бог вы или маг, либо же сидите на стероидах, но с увереностью могу сказать, что вы заработали ачивку - Пройти TerraFirmaGreg, а также выкинуть пол жизни на свалку!

@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: -4.5d,
+	x: 7.0d,
+	y: -10.0d,
 	description: "{tfg.quests.space.lvl2solarpanel.subtitle}",
 	dependencies: [
 		"9588dff3"

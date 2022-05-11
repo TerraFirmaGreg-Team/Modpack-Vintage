@@ -1,8 +1,8 @@
 {
 	title: "Extreme Circuit Boards",
 	icon: "gregtech:meta_item_1 1 405",
-	x: -3.5d,
-	y: -8.5d,
+	x: -2.5d,
+	y: -7.5d,
 	text: [
 		"The next Board for the §1Quantum§r Circuit line.",
 		"",

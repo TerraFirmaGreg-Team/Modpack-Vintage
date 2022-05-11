@@ -1,0 +1,14 @@
+{
+	x: 0.5d,
+	y: 0.5d,
+	dependencies: [
+		"ec24610c"
+	],
+	tasks: [{
+		uid: "6eb77c30",
+		type: "item",
+		items: [{
+			item: "planetprogression:satellite_launcher"
+		}]
+	}]
+}

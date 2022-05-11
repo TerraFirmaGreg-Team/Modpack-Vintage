@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:meta_gear 1 2013",
-	x: -14.5d,
-	y: 0.0d,
+	x: -15.5d,
+	y: -0.5d,
 	text: [
 		"§oIV Age is truly the Age of automation, and finally this should be worth to automate all the ores... if you wish, that is.§r",
 		"",

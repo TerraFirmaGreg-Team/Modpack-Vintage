@@ -719,15 +719,6 @@ tfc:animal.jackal.say
 tfc:animal.jackal.hurt
 tfc:animal.jackal.death
 tfc:animal.feline.step
-powersuits:glider
-powersuits:gui_install
-powersuits:gui_select
-powersuits:jet_boots
-powersuits:jetpack
-powersuits:jump_assist
-powersuits:mmmps_boop
-powersuits:swim_assist
-powersuits:water_electrolyzer
 tfcthings:sharpen
 tfctech:rubbertapping.groove.fit
 tfctech:rubbertapping.mount.fit

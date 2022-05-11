@@ -153,7 +153,7 @@ config.tfctech.devices.acceptFE.tooltip=Должны ли механизмы TFC
 
 ### Electric Forge
 config.tfctech.devices.electricForgeSpeed=Скорость электро-кузницы
-config.tfctech.devices.electricForgeSpeed.tooltip=Модификатор скорости нагрева электро-кузницы. Меньшее число = более медленные изменения температуры. Примечание: На это влияет глобальный модификатор TFC.
+config.tfctech.devices.electricForgeSpeed.tooltip=Модификатор скорости нагрева электро-кузницы. Меньшее число=более медленные изменения температуры. Примечание: На это влияет глобальный модификатор TFC.
 
 config.tfctech.devices.electricForgeMaxTemperature=Максимальная температура электрической кузницы
 config.tfctech.devices.electricForgeMaxTemperature.tooltip=Максимальное количество тепла, получаемое электрической кузницей.

@@ -1,8 +1,8 @@
 {
 	title: "IV Circuit Assembling",
 	icon: "gregtech:machine 1 639",
-	x: -5.5d,
-	y: -8.5d,
+	x: -4.5d,
+	y: -9.0d,
 	text: [
 		"§oWoah! Let's be honest, this was tough to get here, I'm sure you thought the same! You will appreciate not having to make a new polymer for Circuits Boards.§r",
 		"",

@@ -1983,12 +1983,12 @@ tfg.quests.space.shield.subtitle=Anti-everything shield.
 
 tfg.quests.space.flag.subtitle=The Company presents the best way to lay claim to a new world! Go forth, explorers!
 
-tfg.quests.space.rocket1.subtitle=Rocket number uno.
-tfg.quests.space.rocket2.subtitle=Dos
-tfg.quests.space.rocket3.subtitle=Drei
-tfg.quests.space.rocket4.subtitle=Four
-tfg.quests.space.rocket6.subtitle=Close to the end.
-tfg.quests.space.rocket7.subtitle=The Company does not take responsibility for incompetent use of numbers for stellar vessel designation.
+tfg.quests.space.rocket1.title=Rocket number uno.
+tfg.quests.space.rocket2.title=Dos
+tfg.quests.space.rocket3.title=Drei
+tfg.quests.space.rocket4.title=Four
+tfg.quests.space.rocket6.title=Close to the end.
+tfg.quests.space.rocket7.title=The Company does not take responsibility for incompetent use of numbers for stellar vessel designation.
 
 tfg.quests.space.end1.title=The End?
 tfg.quests.space.end1.subtitle=You won. Go home.

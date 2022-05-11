@@ -1,7 +1,7 @@
 {
 	title: "Upgrading your EBF for the millionth time",
 	icon: "gregtech:machine 1 1215",
-	x: -11.5d,
+	x: -12.0d,
 	y: -5.5d,
 	text: [
 		"This Quest will be completed with §eeither§r an §3IV Energy Hatch§r§r... or an §3IV Dynamo Hatch§r for your Multiblock Generators.",

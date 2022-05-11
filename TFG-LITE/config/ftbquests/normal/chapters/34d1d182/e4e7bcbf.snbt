@@ -1,16 +1,27 @@
 {
-	x: 15.0d,
-	y: -15.0d,
-	description: "{tfg.quests.space.rocket2.subtitle}",
+	title: "{tfg.quests.space.rocket2.title}",
+	x: 12.0d,
+	y: -3.0d,
 	dependencies: [
-		"b9fc65e4"
+		"b9fc65e4",
+		"411b712c"
 	],
-	size: 2.0d,
+	size: 1.5d,
 	tasks: [{
 		uid: "6df00f2e",
 		type: "item",
 		items: [{
+			item: "galacticraftplanets:rocket_t2"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 1"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 2"
+		},
+		{
 			item: "galacticraftplanets:rocket_t2 1 3"
-		}]
+		}],
+		ignore_damage: true
 	}]
 }

@@ -7,7 +7,7 @@ categories.conflicts=Конфликтующие клавиши
 categories.unbound=Не назначенные клавиши
 
 gui.openKeyWiz=Мастер ключей
-gui.done = Готово
+gui.done=Готово
 gui.resetBinding=Сбросить
 gui.clearBinding=Очистить
 gui.activeModifier=Модификатор

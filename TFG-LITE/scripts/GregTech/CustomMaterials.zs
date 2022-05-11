@@ -13,19 +13,29 @@ import mods.gregtech.StoneType;
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:red_steel>.addFlags("generate_long_rod");
 <material:blue_steel>.addFlags("generate_long_rod");
-<material:black_steel>.addFlags("generate_long_rod");
+<material:black_steel>.addFlags("generate_long_rod", "generate_dense");
 <material:magnesium>.addFlags("generate_plate");
-<material:titanium>.addFlags("generate_foil");
+<material:titanium>.addFlags("generate_foil", "generate_dense");
 <material:zinc>.addFlags("generate_long_rod", "generate_gear");
 <material:nickel>.addFlags("generate_long_rod", "generate_gear");
 <material:glowstone>.addOre(1, 1, true);
-<material:copper>.addFlags("generate_long_rod");
+<material:copper>.addFlags("generate_long_rod", "generate_dense");
 <material:copper>.addTools(7, 1, 85);
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
 <material:bismuth>.addOre();
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:steel>.addFlags("generate_dense");
+<material:iron>.addFlags("generate_dense");
+<material:tin>.addFlags("generate_dense");
+<material:aluminium>.addFlags("generate_dense");
+<material:bronze>.addFlags("generate_dense");
+<material:osmiridium>.addFlags("generate_dense");
+<material:hsss>.addFlags("generate_dense");
+<material:stainless_steel>.addFlags("generate_dense");
+<material:platinum>.addFlags("generate_dense");
+
+
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
@@ -35,6 +45,7 @@ for material in MaterialRegistry.getAllMaterials()
         material.setToolStats(material.toolSpeed * 2, material.toolAttackDamage, material.toolDurability * 7);
     }
 }
+
 
 // --- Custom Stone Type
 

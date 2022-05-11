@@ -310,46 +310,46 @@ recipes.addShaped(<galacticraftplanets:beam_receiver>,
  [<ore:plateSilver>, <galacticraftplanets:item_basic_asteroids:8>, <ore:plateSilver>],
  [<ore:plateBeryllium>, <ore:circuitIv>, <ore:plateBeryllium>]]);
 
-//Лучевое ядро
+// Лучевое ядро
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids:8>,
 [[<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>],
  [<ore:platePlatinum>, <galacticraftplanets:basic_item_venus:2>, <ore:platePlatinum>],
  [<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>]]);
 
-//Радиоизотопное ядро
+// Радиоизотопное ядро
 recipes.addShaped(<galacticraftplanets:basic_item_venus:2>,
 [[<ore:dustGraphite>, <metaitem:neutron_reflector>, <ore:dustGraphite>],
  [<ore:stickUranium235>, <metaitem:neutron_reflector>, <ore:stickUranium235>],
  [<ore:dustGraphite>, <metaitem:neutron_reflector>, <ore:dustGraphite>]]);
 
-//Атомная батарейка
+// Атомная батарейка
 recipes.addShaped(<galacticraftplanets:atomic_battery>,
 [[null, <ore:plateInvar>, null],
  [null, <galacticraftplanets:basic_item_venus:2>, null],
  [null, <metaitem:large_fluid_cell.tungstensteel>, null]]);
 
-//Площадка телепортации
+// Площадка телепортации
 recipes.addShaped(<galacticraftplanets:telepad_short>,
 [[<ore:plateDoubleTrinaquadalloy>, <ore:circuitIv>, <ore:plateDoubleTrinaquadalloy>],
  [<metaitem:magic_energy_absorber>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:magic_energy_absorber>],
  [<ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>]]);
 
-//Спасательная коробка
+// Спасательная коробка
 recipes.addShaped(<galacticraftcore:emergency_box>,
 [[<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
  [<ore:plateTin>, <ore:chestWood>, <ore:plateTin>],
  [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>]]);
 
-//Спасат коробка с самоспасателем
-recipes.addShaped(<galacticraftcore:landing_pad>*9,
-[[null, null, null],
- [<ore:plateDoubleBlackSteel>, <ore:plateDoubleBlackSteel>, <ore:plateDoubleBlackSteel>],
- [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]]);
-
-//Площадка для багги
+// Площадка для багги
 recipes.addShaped(<galacticraftcore:landing_pad:1>*9,
 [[null, null, null],
- [<ore:plateDoubleIron>, <ore:plateDoubleIron>, <ore:plateDoubleIron>],
+ [<ore:plateDenseBlackSteel>, <ore:plateDenseBlackSteel>, <ore:plateDenseBlackSteel>],
+ [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]]);
+
+// Взлетная площадка 
+recipes.addShaped(<galacticraftcore:landing_pad>*9,
+[[null, null, null],
+ [<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
  [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 
 //Основания астрономического шахтера
@@ -411,7 +411,7 @@ recipes.addShaped(<galacticraftplanets:grapple>,
 recipes.addShaped(<galacticraftcore:dishbase>,
 [[<ore:plateStainlessSteel>, <galacticraftcore:basic_item:19>, <ore:plateStainlessSteel>],
  [null, <ore:plateStainlessSteel>, null],
- [<ore:circuitLuv>, <ore:blockSteel>, <ore:circuitLuv>]]);
+ [<ore:circuitIv>, <ore:blockSteel>, <ore:circuitIv>]]);
 
 //Тепловой контроллер
 recipes.addShaped(<galacticraftcore:basic_item:20>,
@@ -553,7 +553,8 @@ canner.recipeBuilder()
 // High Duty Plates(1-3)
 // Tier 1
 electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateBlackSteel>.firstItem * 3, <ore:plateAluminium>.firstItem, <ore:foilStainlessSteel>.firstItem * 16])
+	.inputs([<ore:plateDenseBlackSteel>.firstItem * 3, <ore:plateDenseAluminium>.firstItem * 2, <ore:plateDenseBronze> * 16])
+   .fluidInputs([<liquid:stainless_steel> * 800])
 	.outputs(<galacticraftcore:heavy_plating> * 3)
 	.property("temperature", 3500)
 	.duration(1000)
@@ -561,25 +562,27 @@ electric_blast_furnace.recipeBuilder()
 	.buildAndRegister();
 // Tier 2
 electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateAluminium>.firstItem * 3, <ore:plateStainlessSteel>.firstItem, <ore:foilTitanium>.firstItem * 16])
+	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
+   .fluidInputs([<liquid:titanium> * 800])
 	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
 	.property("temperature", 4400)
 	.duration(1000)
-	.EUt(580)
+	.EUt(620)
 	.buildAndRegister();
 // Tier 3
 electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateStainlessSteel>.firstItem * 3, <ore:plateTitanium>.firstItem, <ore:foilTungstenSteel>.firstItem * 16])
+	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
+   .fluidInputs([<liquid:tungsten_steel> * 800])
 	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
 	.property("temperature", 5300)
 	.duration(1000)
-	.EUt(640)
+	.EUt(720)
 	.buildAndRegister();
 
 // Баллоны
 // Легкий
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> *4 , <ore:plateLead>*2, <metaitem:electric.pump.lv> * 2)
+   .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateLead> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
    .duration(1000).EUt(128).buildAndRegister();
@@ -727,7 +730,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.ev> * 4)
    .inputs(<metaitem:emitter.ev> * 4)
    .inputs(<ore:circuitIv> * 16)
-   .inputs(<ore:chestWood>)
+   .inputs(<metaitem:crate.steel>)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
@@ -749,7 +752,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.ev> * 4)
    .inputs(<metaitem:emitter.ev> * 4)
    .inputs(<ore:circuitIv> * 16)
-   .inputs(<ore:chestWood> * 2)
+   .inputs(<metaitem:crate.stainless_steel> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
@@ -771,7 +774,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.ev> * 4)
    .inputs(<metaitem:emitter.ev> * 4)
    .inputs(<ore:circuitIv> * 16)
-   .inputs(<ore:chestWood> * 3)
+   .inputs(<metaitem:crate.titanium> * 3)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
@@ -816,7 +819,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.iv> * 4)
    .inputs(<metaitem:emitter.iv> * 4)
    .inputs(<ore:circuitIv> * 22)
-   .inputs(<ore:chestWood>)
+   .inputs(<metaitem:crate.steel>)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
@@ -839,7 +842,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.iv> * 4)
    .inputs(<metaitem:emitter.iv> * 4)
    .inputs(<ore:circuitIv> * 22)
-   .inputs(<ore:chestWood> * 2)
+   .inputs(<metaitem:crate.stainless_steel> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
@@ -862,7 +865,7 @@ assembly_line.recipeBuilder()
    .inputs(<metaitem:electric.motor.iv> * 4)
    .inputs(<metaitem:emitter.iv> * 4)
    .inputs(<ore:circuitIv> * 22)
-   .inputs(<ore:chestWood> * 3)
+   .inputs(<metaitem:crate.titanium> * 3)
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])

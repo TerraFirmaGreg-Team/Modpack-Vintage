@@ -1,8 +1,8 @@
 {
 	title: "Platinum Group Processing",
 	icon: "gregtech:meta_dust 1 364",
-	x: -11.5d,
-	y: -11.5d,
+	x: -12.0d,
+	y: -11.25d,
 	text: [
 		"The §aPlatinum Group Metals§r are six rare metals with useful catalytic properties. They are §3Ruthenium§r, §dRhodium§r, §7Palladium§r, §9Osmium§r, §bIridium§r, and §ePlatinum§r.",
 		"You will need to §4automate§r this entire process, as all these metals are used extensively in the late game.",

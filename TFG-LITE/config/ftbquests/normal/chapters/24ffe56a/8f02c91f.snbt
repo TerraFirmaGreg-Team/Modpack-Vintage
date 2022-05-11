@@ -1,8 +1,8 @@
 {
 	title: "Qubit CPUs",
 	icon: "gregtech:meta_item_1 1 595",
-	x: -8.5d,
-	y: -8.5d,
+	x: -4.5d,
+	y: -10.5d,
 	text: [
 		"§oNot much of these CPUs is Quantum related... you know. The name is just fancy.§r",
 		"",

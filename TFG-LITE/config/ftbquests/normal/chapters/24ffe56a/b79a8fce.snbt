@@ -1,8 +1,8 @@
 {
 	title: "Even More IV Circuits",
 	icon: "gregtech:meta_item_1 1 637",
-	x: -1.0d,
-	y: -6.25d,
+	x: 0.5d,
+	y: -9.0d,
 	text: [
 		"Better IV Circuits, so progressing within the IV Age doesn't feel as painful."
 	],

@@ -1,8 +1,8 @@
 {
 	title: "Nether Stars",
 	icon: "minecraft:nether_star",
-	x: -8.5d,
-	y: -5.5d,
+	x: -8.25d,
+	y: -6.0d,
 	text: [
 		"§oHey look! It's the default icon for BetterQuesting Quests... this time used accordingly.§r",
 		"",

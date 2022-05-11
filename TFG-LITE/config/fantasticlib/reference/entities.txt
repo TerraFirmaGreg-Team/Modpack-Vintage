@@ -176,9 +176,6 @@ galacticraftplanets:juicer
 galacticraftplanets:spider_queen
 galacticraftplanets:entry_pod_venus
 galacticraftplanets:web_shot
-powersuits:entityplasmabolt
-powersuits:entityspinningblade
-powersuits:luxcapacitor
 extraplanets:extraplanets.entitytier4rocket
 extraplanets:extraplanets.entitymercurylander
 extraplanets:extraplanets.entitytier5rocket
@@ -204,6 +201,7 @@ extraplanets:extraplanets.evolvediceslimeboss
 extraplanets:extraplanets.evolvedsnowmanboss
 extraplanets:extraplanets.evolvedspacemanboss
 extraplanets:extraplanets.evolvedgiantzombieboss
+planetprogression:entitysatelliterocket
 galacticraftcore:evolved_boss_blaze
 galacticraftcore:evolved_coldblaze
 galacticraftcore:evolved_boss_ghast
