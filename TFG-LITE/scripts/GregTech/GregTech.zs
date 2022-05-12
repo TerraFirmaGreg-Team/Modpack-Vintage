@@ -64,7 +64,9 @@ val RemoveItemRecipesByName = [
     "gregtech:steam_input_bus",
     "gregtech:glass_pane",
     "gregtech:plank_to_wooden_shape",
-    "gregtech:sticks_from_bundle_saw"
+    "gregtech:sticks_from_bundle_saw",
+    "gregtech:gravel_to_flint",
+    "gregtech:dust_bronze"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -219,8 +221,14 @@ recipes.addShaped( <metaitem:steam_export_bus>,
  [null, <ore:chest>, null],
  [null, null, null]]);
 
+// Фикс крафта ступка + кремний = гравий
+recipes.addShapeless (<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
+
+// Фикс бронзовой пыли
+recipes.addShapeless(<ore:dustBronze>.firstItem * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+
 // Исправление дюпа палок
-// cutter.findRecipe(7, [<tfc:stick_bundle>], [<liquid:lubricant>]).remove();
+// cutter.findRecipe(7, [<tfc:stick_bundle:0>], [<liquid:lubricant>]).remove();
 
 // Исправление рецепта на бумагу
 // Крафт бумажной пыли
@@ -470,42 +478,6 @@ mixer.recipeBuilder()
 	.duration(100)
 	.EUt(30)
 	.buildAndRegister();
-
-// Nether Star Dust
-chemical_reactor.recipeBuilder()
-    .inputs([<ore:dustDiamond>, <ore:dustIridium>])
-    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
-    .outputs([<metaitem:dustNetherStar> * 2])
-    .duration(200)
-    .EUt(7680)
-    .buildAndRegister();
-chemical_reactor.recipeBuilder()
-    .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
-    .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
-    .outputs([<metaitem:dustNetherStar> * 1])
-    .duration(600)
-    .EUt(2000)
-    .buildAndRegister();
-
-// Mars air
-// <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
-// gas_collector.recipeBuilder()
-//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
-//     .fluidOutputs([<liquid:nether_air> * 10000])
-//     .property("dimension", -29)
-//     .duration(200)
-//     .EUt(256)
-//     .buildAndRegister();
-
-// Venus air
-// <recipemap:gas_collector>.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
-// gas_collector.recipeBuilder()
-//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
-//     .fluidOutputs([<liquid:ender_air> * 10000])
-//     .property("dimension", -31)
-//     .duration(200)
-//     .EUt(256)
-//     .buildAndRegister();
 
 // Fix RockBreaker Exploit
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
