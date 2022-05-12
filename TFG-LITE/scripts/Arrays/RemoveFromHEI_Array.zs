@@ -661,8 +661,6 @@ val Array10 as IItemStack[] = [
     <tfctech:metal/sterling_silver_rod>,
     <tfctech:metal/sterling_silver_screw>,
     <tfctech:metal/sterling_silver_strip>,
-    <tfctech:metal/sterling_silver_wire>,
-    <tfctech:metal/sterling_silver_wire:4>,
     <tfctech:metal/tin_bolt>,
     <tfctech:metal/tin_gear>,
     <tfctech:metal/tin_long_rod>,
@@ -681,6 +679,19 @@ val Array10 as IItemStack[] = [
     <tfctech:metal/zinc_long_rod>,
     <tfctech:metal/zinc_rod>,
     <tfctech:metal/zinc_screw>,
+	// Wires
+	<tfctech:metal/bismuth_wire:*>,
+    <tfctech:metal/bismuth_bronze_wire:*>,
+    <tfctech:metal/black_bronze_wire:*>,
+    <tfctech:metal/brass_wire:*>,
+    <tfctech:metal/rose_gold_wire:*>,
+    <tfctech:metal/wrought_iron_wire:*>,
+    <tfctech:metal/pig_iron_wire:*>,
+    <tfctech:metal/blue_steel_wire:*>,
+    <tfctech:metal/red_steel_wire:*>,
+    <tfctech:metal/zinc_wire:*>,
+	<tfctech:metal/bronze_wire:*>,
+    <tfctech:metal/sterling_silver_wire:*>,
 	// Other
     <tfctech:powder/potash>
 ];
