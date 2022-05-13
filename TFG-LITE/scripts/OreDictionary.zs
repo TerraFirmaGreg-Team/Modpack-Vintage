@@ -84,6 +84,9 @@ for item in TFC_Slabs_Smooth {
 	<ore:slabStone>.add(item);
 }
 
+// dustGraphite
+<ore:dustGraphite>.remove(<tfc:powder/graphite>);
+
 // StickBundle
 <ore:logWood>.remove(<tfc:stick_bundle>);
 
