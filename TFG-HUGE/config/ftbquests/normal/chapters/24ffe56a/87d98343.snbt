@@ -1,7 +1,7 @@
 {
 	title: "There is not limit to \"fun\"",
 	icon: "gregtech:meta_item_1 1 131",
-	x: -14.5d,
+	x: -19.5d,
 	y: -2.5d,
 	text: [
 		"§1IV§r Components - fortunately for you - are not a big step up in terms of complexity.",

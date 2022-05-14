@@ -589,6 +589,8 @@ gregtech:use.spray_can
 gregtech:use.tricorder
 gregtech:use.mortar
 gregtech:record.sus
+gregtech:entity.portal_opening
+gregtech:entity.portal_closing
 mechtech:player.tesla_coil
 thaumadditions:rune_set
 thaumadditions:popen
@@ -834,4 +836,3 @@ astralsorcery:bookflip
 charset:block.crank
 portality:portal
 portality:portal_teleport
-signal_stuff:whistle

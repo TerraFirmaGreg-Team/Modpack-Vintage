@@ -1,13 +1,6 @@
 {
 	title: "Rocket Fuel",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "rocket_fuel",
-			Amount: 1000
-		}
-	},
-	x: -5.5d,
+	x: -4.5d,
 	y: -2.5d,
 	text: [
 		"§oRocket Fuel mostly exists for compatibility with other mods. Modpack devs love it!",
@@ -25,5 +18,19 @@
 		uid: "50184934",
 		type: "fluid",
 		fluid: "rocket_fuel"
+	}],
+	rewards: [{
+		uid: "dbe10241",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "rocket_fuel",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

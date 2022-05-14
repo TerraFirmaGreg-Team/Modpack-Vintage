@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 0.5d,
+	dependencies: [
+		"89651623"
+	],
+	tasks: [{
+		uid: "47825ac6",
+		type: "item",
+		items: [{
+			item: "planetprogression:advanced_launch_pad"
+		}]
+	}]
+}

@@ -14,7 +14,7 @@
 			id: "tfc:food/sugarcane",
 			ForgeCaps: {
 				"tfc:food": {
-					creationDate: 7038000L,
+					creationDate: -9223372036854775808L,
 					traits: []
 				}
 			}
@@ -23,7 +23,7 @@
 			id: "tfc:food/sugarcane",
 			ForgeCaps: {
 				"tfc:food": {
-					creationDate: 7038000L,
+					creationDate: -9223372036854775808L,
 					traits: []
 				}
 			}

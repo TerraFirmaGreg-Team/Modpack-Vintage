@@ -1,8 +1,8 @@
 {
 	title: "HSS-S",
 	icon: "gregtech:meta_ingot 1 2520",
-	x: -14.5d,
-	y: -11.5d,
+	x: -14.0d,
+	y: -9.0d,
 	text: [
 		"§oAnother High Speed Steel, completely fictional, alloyed with Iridium and Osmium.§r",
 		"",

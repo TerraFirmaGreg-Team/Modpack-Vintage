@@ -2,7 +2,7 @@
 	title: "Shredding your Ores with further more Byproducts",
 	icon: "gregtech:machine 1 69",
 	x: -17.5d,
-	y: 0.0d,
+	y: -1.0d,
 	text: [
 		"Better Ore Processing for §6chanced Byproducts§r, only at the cost of this §3Macerator§r! A must have.",
 		"",

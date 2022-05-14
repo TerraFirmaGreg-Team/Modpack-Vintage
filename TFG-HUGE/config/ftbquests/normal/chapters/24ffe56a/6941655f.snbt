@@ -1,8 +1,8 @@
 {
 	title: "Polybenzimidazole",
 	icon: "gregtech:meta_ingot 1 1010",
-	x: -20.5d,
-	y: -2.5d,
+	x: -22.5d,
+	y: -3.0d,
 	text: [
 		"§oThe toughest Polymer to make in GTCEu!§r",
 		"",

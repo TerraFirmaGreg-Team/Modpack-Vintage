@@ -1,23 +1,30 @@
-import mods.jei.JEI;
+import crafttweaker.item.IItemStack;
 
-JEI.removeAndHide(<catwalks:stair>);
+// --- Recipes Removing
 
-########################################
-# Items
-########################################
+// Удаление рецептов
+val RemoveWorkbenchRecipes as IItemStack[] = [
+	<catwalks:blowtorch>,
+    <catwalks:catwalk>,
+    <catwalks:catwalk>.withTag({material: "glass"}),
+    <catwalks:catwalk>.withTag({material: "treated_wood"}),
+    <catwalks:ladder>,
+    <catwalks:cable>
+] as IItemStack[];
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
+
+// --- Recipes Adding
+
 // Blowtorch
-recipes.remove(<catwalks:blowtorch>);
 recipes.addShaped(<catwalks:blowtorch>, [
     [null, <ore:screwSteel>, <minecraft:flint_and_steel>],
     [<ore:gtce.tool.screwdrivers>, <ore:stickLongSteel>, <ore:screwSteel>],
     [<ore:stickLongSteel>, <ore:gtce.tool.wrenches>, null]
 ]);
 
-########################################
-# Blocks
-########################################
 // Classic Catwalk
-recipes.remove(<catwalks:catwalk>);
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
@@ -50,7 +57,6 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 // Glass Catwalk
-recipes.remove(<catwalks:catwalk>.withTag({material: "glass"}));
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
@@ -75,7 +81,6 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 // Wood Catwalk
-recipes.remove(<catwalks:catwalk>.withTag({material: "treated_wood"}));
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
@@ -102,7 +107,6 @@ recipes.addShapeless(<catwalks:catwalk>.withTag({material: "treated_wood"}), [<c
 recipes.addShapeless(<catwalks:catwalk>.withTag({material: "custom_0"}), [<catwalks:catwalk>.withTag({material: "treated_wood"})]);
 
 // Classic Ladder
-recipes.remove(<catwalks:ladder>);
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
@@ -115,7 +119,6 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 // Classic Support Cables
-recipes.remove(<catwalks:cable>);
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([<ore:stickLongSteel> * 3])

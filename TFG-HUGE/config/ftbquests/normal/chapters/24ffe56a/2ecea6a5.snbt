@@ -1,8 +1,8 @@
 {
 	title: "Indium",
 	icon: "gregtech:meta_dust 1 48",
-	x: -14.5d,
-	y: -8.5d,
+	x: -15.5d,
+	y: -10.5d,
 	text: [
 		"§oIndium has uses as a semiconductor.§r",
 		"",

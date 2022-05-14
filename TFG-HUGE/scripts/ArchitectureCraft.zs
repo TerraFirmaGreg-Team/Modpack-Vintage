@@ -1,11 +1,16 @@
+import crafttweaker.item.IItemStack;
+
 // --- Removing Recipes
 
-mods.jei.JEI.removeAndHide(<architecturecraft:sawblade>);
-mods.jei.JEI.removeAndHide(<architecturecraft:largepulley>);
-
-recipes.remove(<architecturecraft:sawbench>);
-recipes.remove(<architecturecraft:hammer>);
-recipes.remove(<architecturecraft:chisel>);
+// Удаление рецептов
+val RemoveWorkbenchRecipes as IItemStack[] = [
+	<architecturecraft:sawbench>,
+    <architecturecraft:hammer>,
+    <architecturecraft:chisel>
+] as IItemStack[];
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
 
 // --- Adding Recipes
 

@@ -7,8 +7,8 @@
 			Charge: 250000000L
 		}
 	},
-	x: -3.5d,
-	y: -2.0d,
+	x: -2.5d,
+	y: -6.0d,
 	text: [
 		"§o250 Million EU in a Battery, 25Min of Power when drained constantly!? That's amazing!§r",
 		"",

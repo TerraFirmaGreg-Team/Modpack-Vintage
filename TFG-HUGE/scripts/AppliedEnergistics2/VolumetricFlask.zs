@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 
-########################################
-# Items
-########################################
+// --- Recipes Removing
+
 // Flask
 var flasks as IItemStack[] = [
     <volumetricflask:volumetric_flask_16>.withEmptyTag(),
@@ -28,6 +27,9 @@ var flasks as IItemStack[] = [
 for flask in flasks {
     recipes.remove(flask);
 }
+
+// --- Recipes Adding
+
 for i, flask in flasks {
     <ore:flask>.addItems([flasks[i]]);
     assembler.recipeBuilder()
@@ -40,11 +42,6 @@ for i, flask in flasks {
         .buildAndRegister();
 }
 
-
-
-########################################
-# Blocks
-########################################
 // Interface
 recipes.remove(<volumetricflask:o_interface>);
 recipes.addShapeless(<volumetricflask:o_interface>, [<volumetricflask:part_o_interface>]);

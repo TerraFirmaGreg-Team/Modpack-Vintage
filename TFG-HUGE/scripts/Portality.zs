@@ -1,16 +1,16 @@
+import crafttweaker.item.IItemStack;
+
 // --- Removing Recipes
 
-mods.jei.JEI.removeAndHide(<portality:module_energy:1>);
-mods.jei.JEI.removeAndHide(<portality:module_fluids:1>);
-mods.jei.JEI.removeAndHide(<portality:module_items:1>);
-mods.jei.JEI.removeAndHide(<portality:module_fluids>);
-mods.jei.JEI.removeAndHide(<portality:module_items>);
-mods.jei.JEI.removeAndHide(<portality:module_energy>);
-
-recipes.remove(<portality:controller>);
-recipes.remove(<portality:frame>);
-recipes.remove(<portality:module_interdimensional>);
-
+// Удаление рецептов
+val RemoveWorkbenchRecipes as IItemStack[] = [
+	<portality:controller>,
+	<portality:frame>,
+	<portality:module_interdimensional>
+] as IItemStack[];
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
 
 // --- Adding Recipes
 
@@ -21,6 +21,7 @@ assembler.recipeBuilder()
 	.duration(960)
 	.EUt(912)
 	.buildAndRegister();
+
 // Структурный блок
 assembler.recipeBuilder()
 	.inputs(<ore:plateAluminium> * 8, <ore:plateNeodymium> * 4, <metaitem:sensor.ev> * 8)
@@ -28,6 +29,7 @@ assembler.recipeBuilder()
 	.duration(490)
 	.EUt(650)
 	.buildAndRegister();
+
 // Меж-мировой модуль
 assembler.recipeBuilder()
 	.inputs(<portality:frame> * 4, <gregtech:meta_item_1:148> * 4, <appliedenergistics2:material:47>, <ore:blockQuartzite> * 1, <metaitem:sensor.ev> * 8)

@@ -8,24 +8,6 @@ import mods.terrafirmacraft.ClayKnapping;
 
 // --- Removing Recipes
 
-// Удаление + скрытие рецептов
-val RemoveItemsFromJEI as IItemStack[] = [
-    <tfcthings:pigvil>,
-    <tfcthings:pigvil_black_steel>,
-    <tfcthings:pigvil_blue_steel>,
-    <tfcthings:pigvil_red_steel>,
-    <tfcthings:pigvil_purple_steel>,
-    <tfcthings:mold/unfired/prospectors_hammer_head>,
-    <tfcthings:mold/prospectors_hammer_head>,
-    <tfcthings:pig_iron_carrot>,
-    <tfcthings:black_steel_carrot>,
-    <tfcthings:blue_steel_carrot>,
-    <tfcthings:red_steel_carrot>
-] as IItemStack[];
-for item in RemoveItemsFromJEI{
-    mods.jei.JEI.removeAndHide(item);
-}
-
 // Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
 	// Платиновые короны

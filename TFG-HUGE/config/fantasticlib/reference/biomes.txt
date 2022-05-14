@@ -67,6 +67,16 @@ thaumcraft:eldritch
 galacticraftcore:outer space
 galacticraftplanets:outer space 1
 galacticraftplanets:outer space 2
+extraplanets:outer space 3
+extraplanets:outer space 4
+extraplanets:outer space 5
+extraplanets:outer space 6
+extraplanets:outer space 7
+extraplanets:outer space 8
+extraplanets:outer space 9
+extraplanets:outer space 10
+extraplanets:outer space 11
+extraplanets:outer space 12
 galaxyspace:space
 galaxyspace:spacelowplains
 galaxyspace:spacemidplains

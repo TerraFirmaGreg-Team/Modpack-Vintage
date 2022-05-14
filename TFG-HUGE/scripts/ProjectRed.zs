@@ -3,40 +3,6 @@ import crafttweaker.item.IItemStack;
 // --- Removing Recipes
 
 // Удаление и скрытие предметов
-val ItemsToRemove as IItemStack[] = [
-	<projectred-core:resource_item:100>,
-    <projectred-core:resource_item:101>,
-    <projectred-core:resource_item:102>,
-    <projectred-core:resource_item:251>,
-    <projectred-core:resource_item:410>,
-    <projectred-core:resource_item:342>,
-    <projectred-core:resource_item:320>,
-    <projectred-core:resource_item:341>,
-    <projectred-core:resource_item:300>,
-    <projectred-core:resource_item:312>,
-    <projectred-core:resource_item:310>,
-    <projectred-core:resource_item:311>,
-    <projectred-core:resource_item:301>,
-    <projectred-core:resource_item:200>,
-    <projectred-core:resource_item:201>,
-    <projectred-core:resource_item:202>,
-    <projectred-core:resource_item:105>,
-    <projectred-core:resource_item:252>,
-    <projectred-core:resource_item:250>,
-    <projectred-core:resource_item:400>,
-    <projectred-core:resource_item:401>,
-    <projectred-core:resource_item:402>,
-    <projectred-core:resource_item:103>,
-    <projectred-core:resource_item:104>,
-    <projectred-core:drawplate>,
-    <projectred-fabrication:ic_chip:1>,
-    <projectred-core:screwdriver>
-] as IItemStack[];
-for item in ItemsToRemove{
-    mods.jei.JEI.removeAndHide(item);
-}
-
-// Удаление и скрытие предметов
 val RemoveRecipes as IItemStack[] = [
 	<projectred-core:resource_item:20>,
     <projectred-core:resource_item:21>,

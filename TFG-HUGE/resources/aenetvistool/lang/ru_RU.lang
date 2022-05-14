@@ -1,0 +1,53 @@
+item.aenetvistool:net_visualizer.name=Инструмент визуализации сети
+
+gui.netvistool.title=Расширенный инструмент визуализации сети
+
+gui.netvistool.button.colour=Конфигурация цвета
+gui.netvistool.button.render=Параметры рендеринга
+
+gui.netvistool.cfg.cable_node_colour8=Цвет кабеля
+gui.netvistool.cfg.cable_node_colour8.info=Устанавливает цвет основных кабельных узлов (8-канальные кабели)
+gui.netvistool.cfg.cable_node_colour32=Плотный цвет кабеля
+gui.netvistool.cfg.cable_node_colour32.info=Устанавливает цвет плотных кабельных узлов (32-канальные кабели)
+gui.netvistool.cfg.machine_node_colour8=Базовый цвет машины
+gui.netvistool.cfg.machine_node_colour8.info=Устанавливает цвет узлов машины, где машина поддерживает только 8-канальные соединения.
+gui.netvistool.cfg.machine_node_colour32=Расширенный цвет машины
+gui.netvistool.cfg.machine_node_colour32.info=Устанавливает цвет узлов машины, где машина поддерживает 32-канальные соединения.
+
+gui.netvistool.cfg.p2p_colour_0=ME P2P цвет
+gui.netvistool.cfg.p2p_colour_0.info=Установите цвет, используемый при отображении ссылок между шинами ME P2P.
+gui.netvistool.cfg.p2p_colour_1=Цвет предмета P2P
+gui.netvistool.cfg.p2p_colour_1.info=Установите цвет, используемый при отображении ссылок между шинами P2P предметов.
+gui.netvistool.cfg.p2p_colour_2=Цвет P2P из красного камня
+gui.netvistool.cfg.p2p_colour_2.info=Установите цвет, используемый при отображении ссылок между автобусами Redstone P2P.
+gui.netvistool.cfg.p2p_colour_3=Цвет P2P ЕС
+gui.netvistool.cfg.p2p_colour_3.info=Установите цвет, используемый при отображении ссылок между шинами P2P ЕС (IC2).
+gui.netvistool.cfg.p2p_colour_4=Цвет FE P2P
+gui.netvistool.cfg.p2p_colour_4.info=Установите цвет, используемый при отображении ссылок между шинами FE (Forge Energy/Redstone Flux) P2P.
+gui.netvistool.cfg.p2p_colour_5=Гибкий цвет P2P
+gui.netvistool.cfg.p2p_colour_5.info=Установите цвет, используемый при отображении ссылок между гибкими шинами P2P.
+gui.netvistool.cfg.p2p_colour_6=Светлый цвет P2P
+gui.netvistool.cfg.p2p_colour_6.info=Установите цвет, используемый при отображении ссылок между легкими шинами P2P.
+
+gui.netvistool.cfg.rand_p2p_colours=Случайные цвета P2P
+gui.netvistool.cfg.rand_p2p_colours.info=Включено. Каждой шине P2P будет присвоен случайный цвет при отображении ее ссылок.
+gui.netvistool.cfg.rand_p2p_colour_offset=Смещения цвета P2P
+gui.netvistool.cfg.rand_p2p_colour_offset.info=Если включено, при рендеринге p2p-ссылок будет применяться случайное небольшое смещение цвета. Это может облегчить понимание того, какие ссылки куда ведут в сложном беспорядке p2p-ссылок.
+gui.netvistool.cfg.render_no_depth=Визуализация узлов через блоки
+gui.netvistool.cfg.render_no_depth.info=При включении все сетевые узлы и кабели будут видны сквозь блоки.
+gui.netvistool.cfg.render_p2p_no_depth=Визуализировать P2P через блоки
+gui.netvistool.cfg.render_p2p_no_depth.info=Если включено, все ссылки P2P будут видны через блоки.
+gui.netvistool.cfg.enable_p2p=Показать P2P-ссылки
+gui.netvistool.cfg.enable_p2p.info=При включении будут отображаться ссылки между туннелями P2P.
+gui.netvistool.cfg.enable_chanel_labels=Показать метки каналов
+gui.netvistool.cfg.enable_chanel_labels.info=При включении метка, показывающая используемые каналы, будет отображаться между сетевыми узлами, где используется 1 или более каналов.
+gui.netvistool.cfg.enable_cable_connections=Показать кабельные соединения
+gui.netvistool.cfg.enable_cable_connections.info=Если включено, вы увидите представление кабельных соединений между сетевыми узлами.
+gui.netvistool.cfg.enable_cable_nodes=Показать кабельные узлы
+gui.netvistool.cfg.enable_cable_nodes.info=При включении будут отображаться узлы кабельной сети.
+gui.netvistool.cfg.enable_machine_nodes=Показать узлы машины
+gui.netvistool.cfg.enable_machine_nodes.info=При включенной машине будут отображаться сетевые узлы. (Сетевой узел машины — это любая машина, поддерживающая соединение AE.)
+gui.netvistool.cfg.highlight_inactive_buses=Выделить неактивные автобусы
+gui.netvistool.cfg.highlight_inactive_buses.info=При включении все неактивные шины будут подсвечены красным. (Полезно для поиска шин, в которых отсутствуют каналы или нет питания)
+gui.netvistool.cfg.small_chanel_labels=Маленькие метки каналов
+gui.netvistool.cfg.small_chanel_labels.info=При включении размер используемых меток каналов будет уменьшен.

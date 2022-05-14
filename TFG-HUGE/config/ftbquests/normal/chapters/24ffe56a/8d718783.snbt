@@ -1,8 +1,8 @@
 {
 	title: "Iridium and Osmium",
 	icon: "gregtech:meta_ingot 1 50",
-	x: -11.5d,
-	y: -8.5d,
+	x: -12.0d,
+	y: -9.0d,
 	text: [
 		"This part of the chain starts with §aRarest Metal Residue§r.",
 		"",

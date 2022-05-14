@@ -125,13 +125,16 @@ Heating.removeRecipe(<tfc:powder/kaolinite>);
 Oven.removeRecipe(<tfc:powder/kaolinite>);
 Grindstone.remove(<tfc:powder/kaolinite> * 6);
 // --- --- Добавление рецептов
-Quern.addRecipe("quern_mica_to_kaolinite", <ore:dustMica>, <tfc:powder/kaolinite> * 2);
+Quern.addRecipe("tfc:TFG_quern_mica_to_kaolinite", <ore:dustMica>, <tfc:powder/kaolinite> * 2);
 Grindstone.add(<ore:dustMica>, <tfc:powder/kaolinite> * 4, 10, false);
 
 // --- --- Унификация графита
 // --- Удаление рецептов
 Quern.removeRecipe(<tfc:powder/graphite> * 4);
 Grindstone.remove(<tfc:powder/graphite> * 6);
+// --- --- Добавление рецептов
+Quern.addRecipe("tfc:TFG_quern_graphite_to_graphite", <ore:dustGraphite>, <tfc:powder/graphite> * 2);
+Grindstone.add(<ore:dustGraphite>, <tfc:powder/graphite> * 4, 10, false);
 
 // --- --- Унификация серы
 // --- Удаление рецептов

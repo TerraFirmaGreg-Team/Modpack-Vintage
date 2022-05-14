@@ -1,0 +1,15 @@
+{
+	x: 0.5d,
+	y: -1.5d,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "606b7271",
+		type: "item",
+		items: [{
+			item: "planetprogression:item_satellite_rocket 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

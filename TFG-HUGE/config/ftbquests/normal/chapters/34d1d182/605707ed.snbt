@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -0.5d,
+	dependencies: [
+		"cda42b27"
+	],
+	tasks: [{
+		uid: "0f6e6e64",
+		type: "item",
+		items: [{
+			item: "planetprogression:dish_keycard"
+		}]
+	}]
+}

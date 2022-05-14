@@ -1,0 +1,209 @@
+## Hevea
+tile.tfc.wood.pressure_plate.hevea.name=Нажимная пластина из гевеи
+tile.tfc.wood.bookshelf.hevea.name=Книжная полка из гевеи
+tile.tfc.wood.workbench.hevea.name=Верстак из гевеи
+tile.tfc.wood.planks.hevea.name=Доски из гевеи
+tile.tfc.wood.leaves.hevea.name=Листья гевеи
+tile.tfc.wood.chest.hevea.name=Сундук из гевеи
+tile.tfc.wood.chest_trap.hevea.name=Сундук-ловушка из гевеи
+tile.tfc.wood.tool_rack.hevea.name=Стеллаж для инструментов из гевеи
+tile.tfc.wood.loom.hevea.name=Ткацкий станок из гевеи
+tile.tfc.wood.support.hevea.name=Опора из гевеи
+tile.tfc.stairs.wood.hevea.name=Ступени из гевеи
+tile.tfc.wood.fence.hevea.name=Забор из гевеи
+tile.tfc.wood.button.hevea.name=Кнопка из гевеи
+tile.tfc.wood.fence_gate.hevea.name=Ворота из гевеи
+tile.tfc.wood.sapling.hevea.name=Саженец гевеи
+tile.tfc.wood.trapdoor.hevea.name=Люк из гевеи
+tile.tfc.wood.barrel.hevea.name=Бочка из гевеи
+tile.tfc.wood.log.hevea.name=Гевея
+tile.tfc.slab.wood.hevea.name=Полублок из гевеи
+item.tfc.wood.lumber.hevea.name=Пиломатериалы из гевеи
+item.tfc.wood.door.hevea.name=Дверь из гевеи
+item.tfc.wood.boat.hevea.name=Лодка из гевеи
+
+### TFC Storage's Hevea
+tile.wood/food_shelf/hevea.name=Полка для еды из гевеи
+tile.wood/hanger/hevea.name=Вешалка из гевеи
+
+## Devices
+tile.tfctech.electric_forge.name=Электрическая кузня
+tile.tfctech.induction_crucible.name=Индукционный тигель
+tile.tfctech.wire_draw_bench.name=Станок для волочения проволоки
+tile.tfctech.fridge.name=Холодильник
+tile.tfctech.latex_extractor.name=Латексный экстрактор
+tile.tfctech.smeltery_cauldron.name=Плавильный котёл
+tile.tfctech.smeltery_firebox.name=Плавильная печь
+
+# Items
+## Ceramics
+item.tfctech.ceramics.fluid_bowl.name=Пустой горшок
+item.tfctech.ceramics.fluid_bowl.filled=%s в горшке
+item.tfctech.ceramics.unfired.rackwheel_piece.name=Необожженная форма для зубца
+item.tfctech.ceramics.mold.rackwheel_piece.name=Форма для зубца
+item.tfctech.ceramics.mold.rackwheel_piece.filled=%s в форме для зубца
+item.tfctech.ceramics.unfired.sleeve.name=Форма необожженной муфты
+item.tfctech.ceramics.mold.sleeve.name=Форма муфты
+item.tfctech.ceramics.mold.sleeve.filled=Форма %s муфты 
+
+## Latex
+item.tfctech.latex.vulcanizing_agents.name=Вулканизирующие агенты
+item.tfctech.latex.rubber_mix.name=Резиновая смесь
+item.tfctech.latex.rubber.name=Резина
+
+## Glass
+item.tfctech.ceramics.unfired.glass_block.name=Необожженная форма для стекла
+item.tfctech.ceramics.mold.glass_block.name=Форма для стекла
+item.tfctech.ceramics.unfired.glass_pane.name=Необожженная форма для стеклянной панели
+item.tfctech.ceramics.mold.glass_pane.name=Форма для стеклянной панели
+item.tfctech.powder.lime.name=Известь
+item.tfctech.powder.potash.name=Поташ
+item.tfctech.powder.wood.name=Опилки
+item.tfctech.powder.ash.name=Зола
+item.tfctech.pot_potash.name=Горшок с поташем
+item.tfctech.pot_ash.name=Горшок с золой
+
+## Wiredraw
+item.tfctech.wiredraw.leather_belt.name=Кожаный ремень
+item.tfctech.wiredraw.winch.name=Ворот
+
+## Metal
+item.tfctech.metalitem.blowpipe.name=%s паяльная трубка
+item.tfctech.metalitem.bowl_mount.name=%s держатель горшка
+item.tfctech.metalitem.draw_plate.name=%s протяжная форма
+item.tfctech.metalitem.groove.name=%s желоб
+item.tfctech.metalitem.inductor.name=%s индуктор
+item.tfctech.metalitem.tongs.name=%s щипцы
+item.tfctech.metalitem.strip.name=%s полоска металла
+item.tfctech.metalitem.sleeve.name=%s муфта
+item.tfctech.metalitem.long_rod.name=Длинный %s прут
+item.tfctech.metalitem.rod.name=%s прут
+item.tfctech.metalitem.bolt.name=%s болт
+item.tfctech.metalitem.screw.name=%s винт
+item.tfctech.metalitem.rackwheel_piece.name=%s зубец
+item.tfctech.metalitem.rackwheel.name=%s зубчатое колесо
+item.tfctech.metalitem.gear.name=%s шестерня
+item.tfctech.metalitem.wire.name=%s провод
+item.tfctech.metalitem.wire.unfinished=Незаконченный %s провод
+
+## Fluids
+fluid.latex=Латекс
+fluid.glass=Стекло
+
+# Tooltips
+## Itemstack Info
+tooltip.tfctech.ceramics.fluid_bowl.fluid=Содержит %smB %s
+tooltip.tfctech.metalitem.wire.stage=Этап %s
+
+## Smeltery info
+tooltip.tfctech.smeltery.molten=Жидкое
+tooltip.tfctech.smeltery.solid=Твёрдое
+tooltip.tfctech.smeltery.invalid=Строение плавильни не сформировано
+
+## Status
+tooltip.tfctech.wiredraw.low_tier=Протяжная форма слишком низкого уровня!
+
+## GUIs
+tooltip.tfctech.gui.energy_format=%s RF/%s RF
+tooltip.tfctech.gui.electric_forge.temperature_format=%s ºC
+
+##
+tfc.food_traits.cold=§bХолодный
+tfc.food_traits.frozen=§fЗамороженный
+
+#Config
+config.tfctech=TFCTech
+config.tfctech.tooltip=Настройки TFCTech
+
+##Devices
+config.tfctech.devices=Настройки устройств
+config.tfctech.devices.tooltip=Основные настройки устройств
+
+config.tfctech.tweaks=Настройки
+config.tfctech.tweaks.tooltip=Основные настройки для модов/ванили
+
+### Tweaks
+config.tfctech.tweaks.removeGlassRecipes=Убрать рецепты стекла
+config.tfctech.tweaks.removeGlassRecipes.tooltip=Должен ли TFC tech убрать рецепты стекла из TFC и ванили?
+
+config.tfctech.tweaks.rubberTrees=Резиновые деревья
+config.tfctech.tweaks.rubberTrees.tooltip=Какие блоки считаются подходящими для постукивания по резине?
+
+### Compatibility
+config.tfctech.devices.acceptIc2EU=Принять энергию из IC2
+config.tfctech.devices.acceptIc2EU.tooltip=Должны ли механизмы TFCTech использовать стандартную EU энергию IC2?
+
+config.tfctech.devices.ratioIc2=Соотношение EU в IC2
+config.tfctech.devices.ratioIc2.tooltip=Как много энергии 1 EU из IC2 передаёт машинам?
+
+config.tfctech.devices.ic2Voltage=Входное напряжение в IC2
+config.tfctech.devices.ic2Voltage.tooltip=На какой уровень напряжения машины должны настраиваться?
+
+config.tfctech.devices.acceptGTCEEU=Принять энергию из GTCE
+config.tfctech.devices.acceptGTCEEU.tooltip=Должны ли механизмы TFCTech использовать стандартную EU энергию GTCE?
+
+config.tfctech.devices.ratioGTCE=Соотношение EU в GTCE
+config.tfctech.devices.ratioGTCE.tooltip=Как много энергии 1 EU из GTCE передаёт машинам?
+
+config.tfctech.devices.gtceVoltage=Входное напряжение в GTCE
+config.tfctech.devices.gtceVoltage.tooltip=На какой уровень напряжения машины должны настраиваться?
+
+config.tfctech.devices.acceptFE=Принять энергию из FE
+config.tfctech.devices.acceptFE.tooltip=Должны ли механизмы TFCTech использовать стандартную FE энергию?
+
+### Electric Forge
+config.tfctech.devices.electricForgeSpeed=Скорость электро-кузницы
+config.tfctech.devices.electricForgeSpeed.tooltip=Модификатор скорости нагрева электро-кузницы. Меньшее число=более медленные изменения температуры. Примечание: На это влияет глобальный модификатор TFC.
+
+config.tfctech.devices.electricForgeMaxTemperature=Максимальная температура электрической кузницы
+config.tfctech.devices.electricForgeMaxTemperature.tooltip=Максимальное количество тепла, получаемое электрической кузницей.
+
+config.tfctech.devices.electricForgeEnergyConsumption=Потребление энергии электро-кузницей
+config.tfctech.devices.electricForgeEnergyConsumption.tooltip=Модификатор энергопотребления электро-кузницы.
+
+config.tfctech.devices.electricForgeEnergyCapacity=Энергетическая мощность электро-кузницы
+config.tfctech.devices.electricForgeEnergyCapacity.tooltip=Энергетическая мощность электро-кузницы.
+
+
+### Induction Crucible
+config.tfctech.devices.inductionCrucibleEnergyConsumption=Потребление энергии индукционным тиглем
+config.tfctech.devices.inductionCrucibleEnergyConsumption.tooltip=Потребление энергии индукционным тиглем, в RF/тик.
+
+config.tfctech.devices.inductionCrucibleEnergyCapacity=Потребление энергии индукционным тиглем
+config.tfctech.devices.inductionCrucibleEnergyCapacity.tooltip=Потребление энергии индукционным тиглем.
+
+config.tfctech.devices.inductionCrucibleTargetTemperature=Induction Crucible Target Temperature
+config.tfctech.devices.inductionCrucibleTargetTemperature.tooltip=Temperature at which the induction crucible heats.
+
+
+### Fridge
+config.tfctech.devices.fridgeEnergyConsumption=Потребление энергии холодильником
+config.tfctech.devices.fridgeEnergyConsumption.tooltip=Модификатор энергопотребления холодильника.
+
+config.tfctech.devices.fridgeEnergyCapacity=Энергоемкость холодильника
+config.tfctech.devices.fridgeEnergyCapacity.tooltip=Энергоемкость холодильника.
+
+config.tfctech.devices.fridgeEfficiency=Эффективность холодильника
+config.tfctech.devices.fridgeEfficiency.tooltip=Как быстро холодильник достигает замороженного состояния.
+
+config.tfctech.devices.fridgeLoseEfficiency=Потеря эффективности холодильника
+config.tfctech.devices.fridgeLoseEfficiency.tooltip=Скорость потери эффективности холодильника, когда дверь открыта.
+
+# JEI
+jei.category.tfctech.wire_drawing=Волочение проволоки
+jei.category.tfctech.smeltery=Плавление
+jei.category.tfctech.glassworking=Работа по стеклу
+
+# JEI Information
+jei.information.tfctech.groove=Чтобы получить латекс, с молотом на тул-баре и желобом в руках щелкните правой кнопкой мыши по любому бревну целого дерева гевеи, чтобы разместить желоб на нём. Поместите держатель горшка и пустой горшок в него, щелкните правой кнопкой мыши ножом, чтобы открыть вену жидкого латекса.
+jei.information.tfctech.latex=Чтобы получить латекс, с молотом на тул-баре и желобом в руках щелкните правой кнопкой мыши по любому бревну целого дерева гевеи, чтобы разместить желоб на нём. Поместите держатель горшка и пустой горшок в него, щелкните правой кнопкой мыши ножом, чтобы открыть вену жидкого латекса.
+jei.information.tfctech.fridge=Потребляет энергию для охлаждения ваших продуктов, эффективно замедляя гниение. Эффективность повышается, когда дверь остается закрытой и имеется достаточно энергии. При 80% - эффект разложения 0.25 При 90% - эффект разложения 0.10
+jei.information.tfctech.wiredraw=Используется для волочения проволоки(проводов). Щелкните правой кнопкой мыши, чтобы протягивать проволоку через протяжную форму. Уровень протяжной формы не должен быть ниже уровня самой проволоки.
+jei.information.tfctech.crucible=Плавьте и смешивайте металл, используя силу электричества!
+jei.information.tfctech.forge=Нагревайте металл, используя силу электричества!
+jei.information.tfctech.fill_mold=Щелкните правой кнопкой мыши с пустой формой в руках по любому контейнеру с расплавленным стеклом.
+
+# Waila/Hwyla/TOP
+waila.tfctech.wiredraw.progress=Прогресс: %d%%
+waila.tfctech.fridge.efficiency=Эффективность: %d%%
+waila.tfctech.latex.quantity=Латекс: %dmB

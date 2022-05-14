@@ -30,5 +30,61 @@
 		uid: "53486106",
 		type: "fluid",
 		fluid: "methane"
+	}],
+	rewards: [{
+		uid: "e10270a8",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "benzene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "dad93177",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "butadiene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "efbce13c",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "ethylene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "23470165",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "methane",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }
