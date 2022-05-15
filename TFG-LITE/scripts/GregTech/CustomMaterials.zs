@@ -35,8 +35,6 @@ import mods.gregtech.StoneType;
 <material:stainless_steel>.addFlags("generate_dense");
 <material:platinum>.addFlags("generate_dense");
 
-
-
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
 {

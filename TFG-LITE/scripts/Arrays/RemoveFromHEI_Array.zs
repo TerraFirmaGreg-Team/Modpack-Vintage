@@ -1002,7 +1002,6 @@ val Array12 as IItemStack[] = [
 	// Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
-	<tfc:powder/graphite>,
 	<tfc:powder/sulfur>,
 	<tfc:powder/lapis_lazuli>,
 	<tfc:powder/limonite>,
