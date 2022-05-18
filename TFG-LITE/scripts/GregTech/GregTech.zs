@@ -772,3 +772,19 @@ assembly_line.recipeBuilder()
     .duration(5120)
     .EUt(491520)
     .buildAndRegister();
+
+// Nether Star Dust
+chemical_reactor.recipeBuilder()
+    .inputs([<ore:dustDiamond>, <ore:dustIridium>])
+    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
+    .outputs([<metaitem:dustNetherStar> * 2])
+    .duration(200)
+    .EUt(7680)
+    .buildAndRegister();
+chemical_reactor.recipeBuilder()
+    .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
+    .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
+    .outputs([<metaitem:dustNetherStar> * 1])
+    .duration(600)
+    .EUt(2000)
+    .buildAndRegister();
