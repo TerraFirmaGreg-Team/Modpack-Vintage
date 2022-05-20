@@ -213,7 +213,15 @@ for item in TFC_Slabs_Smooth {
 <ore:sheetDoubleBlackSteel>.remove(<tfc:metal/double_sheet/black_steel>);
 <ore:sheetDoubleBlueSteel>.remove(<tfc:metal/double_sheet/blue_steel>);
 <ore:sheetDoubleRedSteel>.remove(<tfc:metal/double_sheet/red_steel>);
-// PigIron
+
+// gemSulfur
+<ore:gemSulfur>.remove(<tfc:ore/sulfur>);
+
+// gemSaltpeter
+<ore:gemSaltpeter.remove(<tfc:ore/saltpeter>);
+
+// gemGraphite
+<ore:gemGraphite.remove(<tfc:ore/graphite>);
 
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);

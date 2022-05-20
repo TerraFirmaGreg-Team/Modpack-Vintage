@@ -38,6 +38,7 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 // ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
 
 // --- Регистрация металлов для двойных пластин GregTech
+/*
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 165, true);
@@ -57,6 +58,7 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 165, true);
+*/
 
 // ---//--- Вариации Меди
 

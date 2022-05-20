@@ -832,6 +832,8 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/double_sheet/black_steel>,
 	<tfc:metal/double_sheet/blue_steel>,
 	<tfc:metal/double_sheet/red_steel>,
+	// Scrap
+	
 	// Trapdoors
 	<tfc:metal/trapdoor/pig_iron>,
 	// Small Ores
