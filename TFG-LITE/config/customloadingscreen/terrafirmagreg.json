@@ -16,7 +16,7 @@
         {
             "image": {
                 "parent": "builtin/slideshow",
-                "image": "config:slideshow_#.png",
+                "image": "modpack:backgrounds_load/slideshow_#.png",
                 "frame": "slideshow_frame(transition_duration, frame_count)",
                 "position_type": "CENTER",
                 "offset_pos": "CENTER",
@@ -38,7 +38,7 @@
         {
             "image": {
                 "parent": "builtin/slideshow",
-                "image": "config:slideshow_#.png",
+                "image": "modpack:backgrounds_load/slideshow_#.png",
                 "frame": "slideshow_frame(0, frame_count)",
                 "position_type": "CENTER",
                 "offset_pos": "CENTER",
@@ -60,7 +60,7 @@
 		{
             "image": {
                 "parent": "builtin/image",
-                "image": "modpack:mainmenu/TFG_LOGO.png",
+                "image": "modpack:tfg_logo.png",
                 "position_type": "TOP_CENTER",
                 "offset_pos": "TOP_CENTER",
                 "colour": "0xFF_FF_FF_FF",
@@ -70,7 +70,7 @@
 		{
             "image": {
                 "parent": "builtin/image",
-                "image": "config:panel_bottom.png",
+                "image": "modpack:panel_bottom.png",
                 "position_type": "BOTTOM_CENTER",
                 "offset_pos": "BOTTOM_CENTER",
                 "colour": "0xFF_FF_FF_FF",
@@ -83,7 +83,7 @@
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
                 "colour": "0xFF_00_00_00",
-                "position": {"width": "screen_width", "y": "-35"}
+                "position": {"width": "screen_width", "height": "2", "y": "-29"}
             }
         },
 		{
@@ -91,8 +91,8 @@
                 "parent": "sample/bottom_bar",
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
-                "colour": "0xFF_33_55_FF",
-                "position": {"y": "-35"}
+                "colour": "0xFF_B3_00_00",
+                "position": {"height": "2","y": "-29"}
             }
         },
 		{
@@ -109,18 +109,20 @@
             "image": {
                 "parent": "builtin/text",
                 "text": "status",
+                "scale": 0.6,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
-                "position": { "x": 10, "y": -16 }
+                "position": { "x": 5, "y": -7 }
             }
         },
         {
             "image": {
                 "parent": "builtin/text",
                 "text": "sub_status",
+                "scale": 0.6,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
-                "position": { "x": 10, "y": -4 }
+                "position": { "x": 5, "y": -2 }
             }
         },
 		{

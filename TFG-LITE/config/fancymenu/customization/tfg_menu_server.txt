@@ -1,0 +1,110 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMultiplayer
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/slideshows/tfg_slideshows_world/images/bg_6.png
+  action = texturizebackground
+}
+
+customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = resources/modpack/sidebar_full_left.png
+  orientation = top-centered
+  x = 170
+  width = 29
+  actionid = bd301e43-d401-4835-9f52-095aa9f1370e1652987388314
+  action = addtexture
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  path = resources/modpack/sidebar_full_right.png
+  orientation = top-centered
+  x = -200
+  width = 33
+  actionid = e815be3d-8332-4ffd-a68e-ff3c71f851691652987394420
+  action = addtexture
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  identifier = %id=346948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=450948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=580972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=426972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=554948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
