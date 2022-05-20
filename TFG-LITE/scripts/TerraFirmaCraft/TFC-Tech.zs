@@ -155,7 +155,6 @@ recipes.addShapeless(<tfctech:metal/tin_strip> * 2, [<ore:gtce.tool.files>, <ore
 recipes.addShapeless(<tfctech:metal/zinc_strip> * 2, [<ore:gtce.tool.files>, <ore:plateZinc>]);
 recipes.addShapeless(<tfctech:metal/sterling_silver_strip> * 2, [<ore:gtce.tool.files>, <ore:plateSterlingSilver>]);
 recipes.addShapeless(<tfctech:metal/wrought_iron_strip> * 2, [<ore:gtce.tool.files>, <ore:plateWroughtIron>]);
-recipes.addShapeless(<tfctech:metal/pig_iron_strip> * 2, [<ore:gtce.tool.files>, <ore:sheetPigIron>]);
 recipes.addShapeless(<tfctech:metal/steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateSteel>]);
 recipes.addShapeless(<tfctech:metal/platinum_strip> * 2, [<ore:gtce.tool.files>, <ore:platePlatinum>]);
 recipes.addShapeless(<tfctech:metal/black_steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBlackSteel>]);

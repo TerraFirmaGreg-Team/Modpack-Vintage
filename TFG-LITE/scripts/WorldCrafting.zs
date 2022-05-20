@@ -43,6 +43,8 @@ FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:fresh_water
 FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMica>]);
 // Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureDiamond>]);
+// Уголь
+FluidToItem.transform(<minecraft:coal>, <liquid:fresh_water>, [<metaitem:oreChunkCoal>]);
 
 // Соленая вода
 // Вариации меди
@@ -87,3 +89,5 @@ FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:salt_water>
 FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureMica>]);
 // Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureDiamond>]);
+// Уголь
+FluidToItem.transform(<minecraft:coal>, <liquid:salt_water>, [<metaitem:oreChunkCoal>]);

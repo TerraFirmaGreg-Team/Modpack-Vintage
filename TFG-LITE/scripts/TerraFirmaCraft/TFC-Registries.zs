@@ -62,6 +62,8 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 
 
 // --- Чистая Медь
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkCopper>, "COPPER", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureCopper>, "COPPER", 80, true);
 // Средняя Кучка
@@ -71,6 +73,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCopper>, "COPPER", 10, true);
 
 // --- Борнит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBornite>, "COPPER", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustBornite>, "COPPER", 50, true);
 // Грязная Кучка
@@ -82,6 +86,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyBornite>, "COPPER", 5, true);
 
 // --- Тетраэдрит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkTetrahedrite>, "COPPER", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustTetrahedrite>, "COPPER", 40, true);
 // Грязная Кучка
@@ -93,6 +99,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyTetrahedrite>, "COPPER", 4, tru
 
 // --- Халькопирит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkChalcopyrite>, "COPPER", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustChalcopyrite>, "COPPER", 30, true);
 // Грязная Кучка
@@ -104,6 +112,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyChalcopyrite>, "COPPER", 3, tru
 
 // --- Халькозин
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkChalcocite>, "COPPER", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustChalcocite>, "COPPER", 70, true);
 // Грязная Кучка
@@ -115,6 +125,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyChalcocite>, "COPPER", 7, true)
 
 // --- Малахит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkMalachite>, "COPPER", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustMalachite>, "COPPER", 30, true);
 // Грязная Кучка
@@ -128,6 +140,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyMalachite>, "COPPER", 1, true);
 
 // --- Чистое Олово
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkTin>, "TIN", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureTin>, "TIN", 80, true);
 // Средняя Кучка
@@ -137,6 +151,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyTin>, "TIN", 10, true);
 
 // --- Касситерит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkCassiterite>, "TIN", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustCassiterite>, "TIN", 200, true);
 // Грязная Кучка
@@ -148,6 +164,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiterite>, "TIN", 22, true);
 
 // --- Касситеритный песок
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkCassiteriteSand>, "TIN", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustCassiteriteSand>, "TIN", 35, true);
 // Грязная Кучка
@@ -162,6 +180,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiteriteSand>, "TIN", 3, tru
 
 // --- Чистое железо
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkIron>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 100, false);
 // Грязная Кучка
@@ -173,6 +193,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyIron>, "WROUGHT_IRON", 10, fals
 
 // --- Пирит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkPyrite>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustPyrite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -184,6 +206,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyPyrite>, "WROUGHT_IRON", 3, fal
 
 // --- Магнетит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkMagnetite>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustMagnetite>, "WROUGHT_IRON", 40, false);
 // Грязная Кучка
@@ -193,8 +217,10 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallMagnetite>, "WROUGHT_IRON", 10
 // Маленькая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustTinyMagnetite>, "WROUGHT_IRON", 4, false);
 
-// --- Желтый лимонит
+// --- Коричневый лимонит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBrownLimonite>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustBrownLimonite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -204,8 +230,10 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallBrownLimonite>, "WROUGHT_IRON"
 // Маленькая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustTinyBrownLimonite>, "WROUGHT_IRON", 3, false);
 
-// --- Коричневый лимонит
+// --- Желтый лимонит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkYellowLimonite>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustYellowLimonite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -215,8 +243,10 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallYellowLimonite>, "WROUGHT_IRON
 // Маленькая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustTinyYellowLimonite>, "WROUGHT_IRON", 3, false);
 
-// --- Кованное железо
+// --- Гематит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBandedIron>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustBandedIron>, "WROUGHT_IRON", 50, false);
 // Грязная Кучка
@@ -231,6 +261,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyBandedIron>, "WROUGHT_IRON", 5,
 
 // --- Чистый никель
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkNickel>, "NICKEL", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureNickel>, "NICKEL", 80, true);
 // Средняя Кучка
@@ -240,6 +272,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyNickel>, "NICKEL", 10, true);
 
 // --- Гарниерит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkGarnierite>, "NICKEL", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustGarnierite>, "NICKEL", 50, true);
 // Грязная Кучка
@@ -251,6 +285,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyGarnierite>, "NICKEL", 5, true)
 
 // --- Пентландит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkPentlandite>, "NICKEL", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustPentlandite>, "NICKEL", 40, true);
 // Грязная Кучка
@@ -271,6 +307,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyZinc>, "ZINC", 10, true);
 
 // --- Сфалерит
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkSphalerite>, "ZINC", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustSphalerite>, "ZINC", 60, true);
 // Грязная Кучка
@@ -284,6 +322,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinySphalerite>, "ZINC", 6, true);
 
 // --- Чистый свинец
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkLead>, "LEAD", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureLead>, "LEAD", 80, true);
 // Средняя Кучка
@@ -293,6 +333,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyLead>, "LEAD", 10, true);
 
 // --- Галена
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkGalena>, "LEAD", 25, true);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustGalena>, "LEAD", 40, true);
 // Грязная Кучка
@@ -306,6 +348,8 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyGalena>, "LEAD", 4, true);
 
 // --- Чистое золото
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkGold>, "GOLD", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureGold>, "GOLD", 80, true);
 // Средняя Кучка
@@ -317,17 +361,21 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyGold>, "GOLD", 10, true);
 
 // --- Чистый висмут
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBismuth>, "BISMUTH", 25, true);
 // Грязная Кучка
-// ItemRegistry.registerItemMetal(<metaitem:dustImpureBismuth>, "Bismuth", 25, true);
+// ItemRegistry.registerItemMetal(<metaitem:dustImpureBismuth>, "BISMUTH", 25, true);
 // Средняя Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustSmallBismuth>, "Bismuth", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:dustSmallBismuth>, "BISMUTH", 25, true);
 // Маленькая Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustTinyBismuth>, "Bismuth", 10, true);
+ItemRegistry.registerItemMetal(<metaitem:dustTinyBismuth>, "BISMUTH", 10, true);
 
 // ---//--- Вариации серебра
 
 // --- Чистое серебро
 
+// Кусок руды
+ItemRegistry.registerItemMetal(<metaitem:oreChunkSilver>, "SILVER", 25, true);
 // Грязная Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustImpureSilver>, "SILVER", 80, true);
 // Средняя Кучка

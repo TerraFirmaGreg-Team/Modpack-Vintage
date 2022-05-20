@@ -28,12 +28,6 @@ Dropt.list("Puddles_Fix").add(Dropt.rule()
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
-// Руда угля GT -> Уголь Гем
-Dropt.list("GT_Coal_To_TFC_Coal").add(Dropt.rule()
-  .matchDrops([<gregtech:ore_coal_0:*>, <gregtech:ore_coal_1:*>, <gregtech:ore_coal_2:*>])
-  .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop().items([<minecraft:coal>])));
-
 // Морской лед
 Dropt.list("Sea_Ice").add(Dropt.rule()
   .matchBlocks(["tfc:sea_ice"])
