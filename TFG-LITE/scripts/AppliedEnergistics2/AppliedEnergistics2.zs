@@ -1649,19 +1649,41 @@ assembler.recipeBuilder()
 
 // Energy Cell
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/energy_energy_cell");
-recipes.addShaped("energy_energy_cell", <appliedenergistics2:energy_cell>, [
-  [<ore:screwCertusQuartz>, <ore:plateCertusQuartz>, <ore:screwCertusQuartz>],
-  [<metaitem:voltage_coil.lv>, <appliedenergistics2:quartz_vibrant_glass>, <metaitem:voltage_coil.lv>],
-  [<ore:screwCertusQuartz>, <ore:plateCertusQuartz>, <ore:screwCertusQuartz>]]);
+recipes.addShaped(<appliedenergistics2:energy_cell>, [
+    [<metaitem:plateCertusQuartz>, <ore:circuitHv>, <metaitem:plateCertusQuartz>],
+    [<ore:ae2.cable.covered>, <ore:batteryHv>, <ore:ae2.cable.covered>],
+    [<metaitem:plateCertusQuartz>, <ore:cableGtOctalAluminium>, <metaitem:plateCertusQuartz>]
+]);
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <metaitem:plateCertusQuartz> * 2,
+        <ore:batteryHv>,
+        <ore:circuitHv>,
+        <ore:ae2.cable.covered>
+    ])
+    .fluidInputs([<liquid:plastic> * 144])
+    .outputs([<appliedenergistics2:energy_cell>])
+    .duration(200)
+    .EUt(500)
+    .buildAndRegister();
 
 // Dense Energy Cell
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/energy_dense_energy_cell");
-compressor.recipeBuilder()
-  .inputs(<appliedenergistics2:energy_cell> * 8)
-  .outputs(<appliedenergistics2:dense_energy_cell>)
-  .duration(100)
-  .EUt(30)
-  .buildAndRegister();
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <appliedenergistics2:energy_cell> * 4,
+        <metaitem:battery_buffer.ev.16>,
+        <contenttweaker:matrixcore>,
+        <ore:circuitEv>,
+        <ore:ae2.cable.dense.covered>
+    ])
+    .fluidInputs([<liquid:plastic> * 144])
+    .outputs([<appliedenergistics2:dense_energy_cell>])
+    .duration(20)
+    .EUt(7680)
+    .buildAndRegister();
 
 // ME Chest
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/storage_chest");

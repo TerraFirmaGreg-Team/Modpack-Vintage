@@ -17,9 +17,9 @@ toolHeadKnife.generateRecipes(function(orePrefix as OrePrefix, material as Mater
 
     if (material.hasIngot())
     {
-        extruder.recipeBuilder()
+        alloy_smelter.recipeBuilder()
             .inputs(Utils.ore("ingot", material))
-            .notConsumable(<contenttweaker:shape_extruder_knife>)
+            .notConsumable(<contenttweaker:shape_mold_knife>)
             .outputs(Utils.item(orePrefix, material))
             .duration(340).EUt(14).buildAndRegister();
     }

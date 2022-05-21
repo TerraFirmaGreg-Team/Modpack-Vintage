@@ -223,28 +223,28 @@ recipes.addShaped(<metaitem:steam_export_bus>,
 
 // Extruder Shape (Knife Head)
 // Workbench
-recipes.addShaped(<contenttweaker:shape_extruder_knife>,
+recipes.addShaped(<contenttweaker:shape_mold_knife>,
 [[null, null, null],
  [<ore:craftingToolWireCutter>, <metaitem:shape.extruder.plate>, null],
  [null, null, null]]);
 // Forming Press 
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
-    .notConsumable(<contenttweaker:shape_extruder_knife>)
-    .outputs(<contenttweaker:shape_extruder_knife>)
+    .notConsumable(<contenttweaker:shape_mold_knife>)
+    .outputs(<contenttweaker:shape_mold_knife>)
     .duration(120)
     .EUt(22)
     .buildAndRegister();
 // Macerator
 macerator.recipeBuilder()
-    .inputs(<contenttweaker:shape_extruder_knife>)
+    .inputs(<contenttweaker:shape_mold_knife>)
     .outputs(<metaitem:dustSteel> * 4)
     .duration(56)
     .EUt(8)
     .buildAndRegister();
 // Arc Furnace
 arc_furnace.recipeBuilder()
-    .inputs(<contenttweaker:shape_extruder_knife>)
+    .inputs(<contenttweaker:shape_mold_knife>)
     .fluidInputs(<liquid:oxygen> * 56)
     .outputs(<metaitem:ingotSteel> * 4)
     .duration(56)
@@ -398,7 +398,7 @@ chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
     .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 1])
-    .duration(600)
+    .duration(700)
     .EUt(2000)
     .buildAndRegister(); 
 

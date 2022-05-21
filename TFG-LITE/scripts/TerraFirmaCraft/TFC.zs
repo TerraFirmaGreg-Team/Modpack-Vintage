@@ -16,7 +16,7 @@ val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenwa
 
 // Удаление рецептов
 val RemoveItemRecipesByName = [
-  	"tfc:vanilla/redstone/observer",
+  "tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
 	"tfc:vanilla/flint_and_steel",
 	"tfc:vanilla/compass",
@@ -55,7 +55,7 @@ for item in RemoveItemRecipesByName{
 
 // Удаление рецептов из бочки
 val RemoveRecipesInBarrel = [
-  	"tfc:concrete_white",
+	"tfc:concrete_white",
 	"tfc:concrete_orange",
 	"tfc:concrete_magenta",
 	"tfc:concrete_light_blue",

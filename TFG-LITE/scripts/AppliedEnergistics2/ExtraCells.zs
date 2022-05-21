@@ -14,7 +14,7 @@ assembler.recipeBuilder()
 		<ore:screwStainlessSteel> * 2
 	])
 	.outputs(<extracells:storage.casing:1>)
-	.duration(250).EUt(128).buildAndRegister();
+	.duration(20).EUt(480).buildAndRegister();
 
 // Advanced Storage Housing
 recipes.remove(<extracells:storage.casing>);
@@ -26,7 +26,7 @@ assembler.recipeBuilder()
 		<ore:screwTungstenSteel> * 2
 	])
 	.outputs(<extracells:storage.casing>)
-	.duration(250).EUt(128).buildAndRegister();
+	.duration(20).EUt(480).buildAndRegister();
 
 // Recycle - Advanced Storage Housing
 macerator.recipeBuilder()
