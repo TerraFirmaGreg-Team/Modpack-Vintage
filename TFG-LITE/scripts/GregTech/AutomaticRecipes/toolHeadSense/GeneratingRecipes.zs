@@ -12,10 +12,10 @@ toolHeadSense.generateRecipes(function(orePrefix as OrePrefix, material as Mater
     if (material.hasIngot())
     {
         extruder.recipeBuilder()
-            .inputs(Utils.ore("ingot", material))
+            .inputs(Utils.ore("ingot", material) * 3)
             .notConsumable(<contenttweaker:shape_extruder_sense>)
             .outputs(Utils.item(orePrefix, material))
-            .duration(340).EUt(240).buildAndRegister();
+            .duration(340).EUt(14).buildAndRegister();
     }
 
 } as IOreRecipeHandler);

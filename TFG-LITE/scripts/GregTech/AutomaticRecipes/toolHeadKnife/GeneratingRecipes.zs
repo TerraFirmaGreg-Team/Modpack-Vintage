@@ -21,7 +21,7 @@ toolHeadKnife.generateRecipes(function(orePrefix as OrePrefix, material as Mater
             .inputs(Utils.ore("ingot", material))
             .notConsumable(<contenttweaker:shape_extruder_knife>)
             .outputs(Utils.item(orePrefix, material))
-            .duration(340).EUt(240).buildAndRegister();
+            .duration(340).EUt(14).buildAndRegister();
     }
 
 } as IOreRecipeHandler);

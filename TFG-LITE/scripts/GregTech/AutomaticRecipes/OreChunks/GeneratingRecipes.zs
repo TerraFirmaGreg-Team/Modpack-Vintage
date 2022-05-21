@@ -38,7 +38,7 @@ function GenerateRecipes (item_input as IItemStack, item_output as IItemStack, i
 }
 
 // Создание рецептов для кусков, ведь разработчики GTCEu не могут исправить баг с рецептами
-GenerateRecipes(<metaitem:oreChunkZeolite>, <metaitem:crushedZeolite> * 3, <metaitem:dustCalcium>);
+GenerateRecipes(<metaitem:oreChunkZeolite>, <metaitem:crushedZeolite>, <metaitem:dustCalcium>);
 GenerateRecipes(<metaitem:oreChunkTantalite>, <metaitem:crushedTantalite>, <metaitem:dustManganese>);
 GenerateRecipes(<metaitem:oreChunkBornite>, <metaitem:crushedBornite>, <metaitem:dustPyrite>);
 GenerateRecipes(<metaitem:oreChunkLapis>, <metaitem:crushedLapis>, <metaitem:gemLazurite>);
