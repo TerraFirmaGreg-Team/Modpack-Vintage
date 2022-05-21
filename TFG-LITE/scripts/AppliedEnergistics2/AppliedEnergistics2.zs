@@ -1675,7 +1675,7 @@ assembler.recipeBuilder()
     .inputs([
         <appliedenergistics2:energy_cell> * 4,
         <metaitem:battery_buffer.ev.16>,
-        <contenttweaker:matrixcore>,
+        <appliedenergistics2:material:43> * 3,
         <ore:circuitEv>,
         <ore:ae2.cable.dense.covered>
     ])
