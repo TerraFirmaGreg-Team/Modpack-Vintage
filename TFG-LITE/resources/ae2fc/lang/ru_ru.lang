@@ -13,7 +13,7 @@ item.ae2fc:fluid_packet.name=Жидкостный пакет
 item.ae2fc:dense_encoded_pattern.name=Закодированный жидкостный шаблон
 item.ae2fc:part_dual_interface.name=ME Двойной интерфейс 
 item.ae2fc:part_fluid_pattern_terminal.name=ME Терминал жидкостных шаблонов
-item.ae2fc:part_fluid_pattern_ex_terminal.name=ME Терминал жидкостных шаблонов
+item.ae2fc:part_fluid_pattern_ex_terminal.name=ME Терминал расширенных жидкостных шаблонов
 
 ae2fc.gui.fluid_pattern_encoder=ME Кодировщик жидкостных шаблонов
 ae2fc.gui.fluid_packet_decoder=ME Декодер жидкостных пакетов
