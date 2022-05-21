@@ -31,7 +31,17 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:energy_hatch.input.mv>,
     <metaitem:compressed.coke_clay>,
     <metaitem:steam_hammer_bronze>,
-    <metaitem:steam_hammer_steel>
+    <metaitem:steam_hammer_steel>,
+    // Solar Panels
+    <metaitem:cover.solar.panel.ulv>,
+    <metaitem:cover.solar.panel.lv>,
+    <metaitem:cover.solar.panel.mv>,
+    <metaitem:cover.solar.panel.hv>,
+    <metaitem:cover.solar.panel.ev>,
+    <metaitem:cover.solar.panel.iv>,
+    <metaitem:cover.solar.panel.luv>,
+    <metaitem:cover.solar.panel.zpm>,
+    <metaitem:cover.solar.panel.uv>
 ];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -69,16 +79,6 @@ val RemoveItemRecipesByName = [
     "gregtech:dust_bronze"
 ] as string[];
 for item in RemoveItemRecipesByName{
-    recipes.removeByRecipeName(item);
-}
-
-// Отключение крафта одинарных пластин в верстаке
-for item in GTPlates{
-    recipes.removeByRecipeName(item);
-}
-
-// Отключение крафта двойных пластин в верстаке
-for item in GTDoublePlates{
     recipes.removeByRecipeName(item);
 }
 
@@ -210,16 +210,197 @@ recipes.addShaped(<ore:dustQuartzSand>.firstItem,
  [null, null, null]]);
 
 // Steam import bus
-recipes.addShaped( <metaitem:steam_import_bus>,
+recipes.addShaped(<metaitem:steam_import_bus>,
 [[null, <ore:chest>, null],
  [null, <gregtech:steam_casing>, null],
  [null, null, null]]);
 
 // Steam export bus
-recipes.addShaped( <metaitem:steam_export_bus>,
+recipes.addShaped(<metaitem:steam_export_bus>,
 [[null, <gregtech:steam_casing>, null],
  [null, <ore:chest>, null],
  [null, null, null]]);
+
+// Extruder Shape (Knife Head)
+// Workbench
+recipes.addShaped(<contenttweaker:shape_extruder_knife>,
+[[null, null, null],
+ [<ore:craftingToolWireCutter>, <metaitem:shape.extruder.plate>, null],
+ [null, null, null]]);
+// Forming Press 
+forming_press.recipeBuilder()
+    .inputs(<metaitem:shape.empty>)
+    .notConsumable(<contenttweaker:shape_extruder_knife>)
+    .outputs(<contenttweaker:shape_extruder_knife>)
+    .duration(120)
+    .EUt(22)
+    .buildAndRegister();
+// Macerator
+macerator.recipeBuilder()
+    .inputs(<contenttweaker:shape_extruder_knife>)
+    .outputs(<metaitem:dustSteel> * 4)
+    .duration(56)
+    .EUt(8)
+    .buildAndRegister();
+// Arc Furnace
+arc_furnace.recipeBuilder()
+    .inputs(<contenttweaker:shape_extruder_knife>)
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotSteel> * 4)
+    .duration(56)
+    .EUt(30)
+    .buildAndRegister();
+
+// Solar Panel (ULV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel> * 8])
+    .inputs([<minecraft:daylight_detector> * 8])
+    .inputs([<ore:circuitUlv> * 4])
+    .inputs([<metaitem:plate.ultra_low_power_integrated_circuit> * 4])
+    .inputs([<minecraft:glass>])
+    .inputs([<metaitem:transformer.ulv>])
+    .fluidInputs(<liquid:silicon> * 2304)
+    .fluidInputs(<liquid:soldering_alloy> * 144)
+    .outputs([<metaitem:cover.solar.panel.ulv>])
+    .duration(20)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (LV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.ulv> * 4])
+    .inputs([<metaitem:sensor.lv> * 8])
+    .inputs([<metaitem:circuit.electronic> * 4])
+    .inputs([<metaitem:plate.ultra_low_power_integrated_circuit> * 16])
+    .inputs([<appliedenergistics2:quartz_glass>])
+    .inputs([<metaitem:transformer.lv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 288)
+    .outputs([<metaitem:cover.solar.panel.lv>])
+    .duration(40)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (MV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.lv> * 4])
+    .inputs([<metaitem:sensor.mv> * 8])
+    .inputs([<metaitem:circuit.good_electronic> * 4])
+    .inputs([<metaitem:plate.low_power_integrated_circuit> * 4])
+    .inputs([<appliedenergistics2:quartz_vibrant_glass>])
+    .inputs([<metaitem:transformer.mv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 576)
+    .outputs([<metaitem:cover.solar.panel.mv>])
+    .duration(80)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (HV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.mv> * 4])
+    .inputs([<metaitem:sensor.hv> * 8])
+    .inputs([<metaitem:circuit.advanced_integrated> * 4])
+    .inputs([<metaitem:plate.low_power_integrated_circuit> * 16])
+    .inputs([<appliedenergistics2:quartz_vibrant_glass>])
+    .inputs([<metaitem:transformer.hv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 1152)
+    .outputs([<metaitem:cover.solar.panel.hv>])
+    .duration(160)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (EV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.hv> * 4])
+    .inputs([<metaitem:sensor.ev> * 8])
+    .inputs([<metaitem:circuit.workstation> * 4])
+    .inputs([<metaitem:plate.power_integrated_circuit> * 4])
+    .inputs([<gregtech:transparent_casing>])
+    .inputs([<metaitem:transformer.ev>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 2304)
+    .outputs([<metaitem:cover.solar.panel.ev>])
+    .duration(320)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (IV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.ev> * 4])
+    .inputs([<metaitem:sensor.iv> * 8])
+    .inputs([<metaitem:circuit.mainframe> * 4])
+    .inputs([<metaitem:plate.power_integrated_circuit> * 16])
+    .inputs([<gregtech:transparent_casing>])
+    .inputs([<metaitem:transformer.iv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 4608)
+    .outputs([<metaitem:cover.solar.panel.iv>])
+    .duration(640)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (LuV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.iv> * 4])
+    .inputs([<metaitem:sensor.luv> * 8])
+    .inputs([<metaitem:circuit.nano_mainframe> * 4])
+    .inputs([<metaitem:plate.high_power_integrated_circuit> * 8])
+    .inputs([<gregtech:transparent_casing:1>])
+    .inputs([<metaitem:transformer.luv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 9216)
+    .outputs([<metaitem:cover.solar.panel.luv>])
+    .duration(1280)
+    .EUt(30720)
+    .buildAndRegister();
+
+// Solar Panel (ZPM)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.luv> * 4])
+    .inputs([<metaitem:sensor.zpm> * 8])
+    .inputs([<metaitem:circuit.quantum_mainframe> * 4])
+    .inputs([<metaitem:plate.high_power_integrated_circuit> * 32])
+    .inputs([<gregtech:transparent_casing:1>])
+    .inputs([<metaitem:transformer.zpm>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 18432)
+    .outputs([<metaitem:cover.solar.panel.zpm>])
+    .duration(2560)
+    .EUt(122880)
+    .buildAndRegister();
+
+// Solar Panel (UV)
+assembly_line.recipeBuilder()
+    .inputs([<metaitem:cover.solar.panel.zpm> * 4])
+    .inputs([<metaitem:sensor.uv> * 8])
+    .inputs([<metaitem:circuit.crystal_mainframe> * 4])
+    .inputs([<metaitem:plate.ultra_high_power_integrated_circuit> * 64])
+    .inputs([<gregtech:transparent_casing:1>])
+    .inputs([<metaitem:transformer.uv>])
+    .fluidInputs(<liquid:silicon> * 1152)
+    .fluidInputs(<liquid:soldering_alloy> * 36864)
+    .outputs([<metaitem:cover.solar.panel.uv>])
+    .duration(5120)
+    .EUt(491520)
+    .buildAndRegister();
+
+// Nether Star Dust
+chemical_reactor.recipeBuilder()
+    .inputs([<ore:dustDiamond>, <ore:dustIridium>])
+    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
+    .outputs([<metaitem:dustNetherStar> * 2])
+    .duration(200)
+    .EUt(7680)
+    .buildAndRegister();
+chemical_reactor.recipeBuilder()
+    .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
+    .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
+    .outputs([<metaitem:dustNetherStar> * 1])
+    .duration(600)
+    .EUt(2000)
+    .buildAndRegister(); 
 
 // Фикс крафта ступка + кремний = гравий
 recipes.addShapeless (<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);

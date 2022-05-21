@@ -218,10 +218,10 @@ for item in TFC_Slabs_Smooth {
 <ore:gemSulfur>.remove(<tfc:ore/sulfur>);
 
 // gemSaltpeter
-<ore:gemSaltpeter.remove(<tfc:ore/saltpeter>);
+<ore:gemSaltpeter>.remove(<tfc:ore/saltpeter>);
 
 // gemGraphite
-<ore:gemGraphite.remove(<tfc:ore/graphite>);
+<ore:gemGraphite>.remove(<tfc:ore/graphite>);
 
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);

@@ -48,6 +48,14 @@ for item in RemoveItemRecipe{
 	recipes.remove(item);
 }
 
+// --- Adding Recipes
+
+// Тултипы для новых вещей
+<contenttweaker:rocketparts_tier7>.addTooltip("Tier 7");
+<contenttweaker:rocketparts_tier8>.addTooltip("Tier 8");
+<contenttweaker:rocketparts_tier9>.addTooltip("Tier 9");
+<contenttweaker:rocketparts_tier10>.addTooltip("Tier 10");
+
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
    .inputs(<galacticraftcore:landing_pad> * 3, <ore:plateDenseTitanium> * 6)
