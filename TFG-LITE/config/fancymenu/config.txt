@@ -4,15 +4,15 @@
 B:stopworldmusicwhencustomizable = 'false';
 [If menu background sounds added by FancyMenu should be played when a world is loaded.]
 B:playbackgroundsoundsinworld = 'false';
-B:forcefullscreen = 'true';
+B:forcefullscreen = 'false';
 [If menu background sounds added by FancyMenu should be played or not.]
 B:playbackgroundsounds = 'false';
 [A minecraft restart is required after changing this value.]
-B:enablehotkeys = 'false';
+B:enablehotkeys = 'true';
 B:playmenumusic = 'false';
 B:showdebugwarnings = 'false';
 [Sets the default GUI scale on first launch. Useful for modpacks. Cache data is saved in '/mods/fancymenu/'.]
-I:defaultguiscale = '2';
+I:defaultguiscale = '1';
 
 
 ##[customization]
@@ -27,7 +27,7 @@ S:copyrightposition = 'bottom-left';
 B:hidebranding = 'true';
 S:copyrightcolor = '#ff2e2e';
 B:hidelogo = 'true';
-B:hiderealmsnotifications = 'true';
+B:hiderealmsnotifications = 'false';
 B:hideforgenotifications = 'true';
 
 
@@ -55,7 +55,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'TerraFirmaGreg';
+S:customwindowtitle = 'TerraFirmaGreg 1.12.2 by SpeeeDCraft and Xikaro';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'true';
 
@@ -81,4 +81,4 @@ B:showvanillamovewarning = 'true';
 
 ##[ui]
 
-F:uiscale = '1.0';
+F:uiscale = '1.5';

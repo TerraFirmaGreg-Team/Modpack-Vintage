@@ -3,9 +3,11 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
+  biggerthanwidth = 1900
   renderorder = background
-  randommode = true
+  randommode = false
   randomonlyfirsttime = false
+  biggerthanheight = 1000
 }
 
 customization {
@@ -145,7 +147,7 @@ customization {
 customization {
   path = resources/modpack/sidebar_full_left.png
   orientation = top-left
-  x = 0
+  x = -2
   width = 229
   actionid = 128d1cdb-f37f-46e2-a7ce-b5e681b646131652985763920
   action = addtexture
@@ -309,23 +311,24 @@ customization {
 }
 
 customization {
-  orientation = bottom-left
+  orientation = element
   shadow = true
-  multiline = true
-  x = 128
+  orientation_element = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
+  multiline = false
+  x = 139
   action = addwebtext
   actionid = 6a698154-d1a7-40f8-a568-ed3045a256991652923603187
-  y = -22
+  y = 0
   scale = 1.0
-  alignment = left
+  alignment = centered
   url = https://pastebin.com/raw/pPyKeYzA
 }
 
 customization {
   path = resources/modpack/tfg_logo.png
   orientation = top-centered
-  x = -190
-  width = 573
+  x = -233
+  width = 627
   actionid = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
   action = addtexture
   y = 10
@@ -345,5 +348,22 @@ customization {
   scale = 1.0
   refresh = true
   bouncing = true
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu
+  backgroundhovered = resources\modpack\reload_h.png
+  label = 
+  loopbackgroundanimations = true
+  x = 90
+  width = 21
+  actionid = 43057e03-8ce2-475a-9f7c-eb50414a54bf1653164876156
+  action = addbutton
+  y = 20
+  backgroundnormal = resources\modpack\reload.png
+  value = 
+  height = 21
 }
 

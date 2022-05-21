@@ -1,0 +1,369 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  smallerthanheight = 999
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+  smallerthanwidth = 1899
+}
+
+customization {
+  name = tfg_slideshowse_menu
+  action = setbackgroundslideshow
+}
+
+customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 5
+  action = movebutton
+  y = 139
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 180
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 14
+  action = movebutton
+  y = 199
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 94
+  action = movebutton
+  y = 199
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 95
+  action = movebutton
+  y = 240
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 4
+  action = movebutton
+  y = 108
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 181
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  path = resources/modpack/sidebar_full_left.png
+  orientation = top-left
+  x = 0
+  width = 217
+  actionid = 128d1cdb-f37f-46e2-a7ce-b5e681b646131652985763920
+  action = addtexture
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\discord_h.png
+  description = Join Our discord server!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = 44
+  width = 21
+  actionid = 167c782a-1c64-4d7f-ba41-d6e9f34b48e61626554305606
+  action = addbutton
+  y = 229
+  backgroundnormal = resources\modpack\icons\discord.png
+  value = https://discord.gg/TZx8Cfr
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = joinserver
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %serverplayercount:146.59.61.230%
+  label = %local:tfg.menu.server%
+  loopbackgroundanimations = true
+  x = 5
+  width = 180
+  actionid = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  action = addbutton
+  y = 169
+  backgroundnormal = resources\modpack\longbutton.png
+  value = tfg.terrafirmagreg.su
+  height = 21
+}
+
+customization {
+  showname = false
+  orientation = top-left
+  skinpath = resources/modpack/skins/xikaro.png
+  crouching = false
+  x = 28
+  slim = false
+  actionid = 391dfb3e-cfa3-485a-8f81-b299140346bd1625506599349
+  action = addentity
+  y = 90
+  scale = 30
+  playername = Xikaro
+  parrot = false
+}
+
+customization {
+  showname = true
+  orientation = top-left
+  skinpath = config/fancymenu/modpack/syber.png
+  crouching = false
+  x = 957
+  slim = false
+  actionid = f82cd154-8929-42e4-8e1a-fb5976426ec01625508134345
+  action = addentity
+  y = 581
+  scale = 1
+  parrot = false
+}
+
+customization {
+  showname = false
+  orientation = top-left
+  skinpath = resources/modpack/skins/speeedcraft.png
+  crouching = false
+  x = 169
+  slim = false
+  actionid = 9e74612c-c1f7-4ff3-af1d-33b4e4cd32f81625508163945
+  action = addentity
+  y = 90
+  scale = 30
+  playername = SpeeeDCraft
+  parrot = false
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\youtube_h.png
+  label = 
+  loopbackgroundanimations = true
+  x = 84
+  width = 21
+  actionid = 718c66a7-f383-4edc-8af2-b922071f2fa81626554305607
+  action = addbutton
+  y = 229
+  backgroundnormal = resources\modpack\icons\youtube.png
+  value = https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw
+  height = 21
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\github_h.png
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = 124
+  width = 21
+  actionid = 27fbec64-026d-4106-b1d5-60c8038bd1691652772654043
+  action = addbutton
+  y = 229
+  backgroundnormal = resources\modpack\icons\github.png
+  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
+  height = 21
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  actionid = 36fbbd7c-3a93-4b73-9ad8-5143fc9603471652922878931
+  action = addtext
+  y = -44
+  scale = 1.0
+  alignment = left
+  value = Modpack Version: §cR3.3.0
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  actionid = 377a769d-d758-4403-958b-a9eb46f5fb5d1652923208938
+  action = addtext
+  y = -34
+  scale = 1.0
+  alignment = left
+  value = Modpack Type: §b[Lite]
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 62
+  actionid = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
+  action = addtext
+  y = -23
+  scale = 1.0
+  alignment = centered
+  value = Latest Modpack Version: 
+}
+
+customization {
+  orientation = element
+  shadow = true
+  orientation_element = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
+  multiline = false
+  x = 127
+  action = addwebtext
+  actionid = 6a698154-d1a7-40f8-a568-ed3045a256991652923603187
+  y = 0
+  scale = 1.0
+  alignment = left
+  url = https://pastebin.com/raw/pPyKeYzA
+}
+
+customization {
+  path = resources/modpack/tfg_logo.png
+  orientation = top-centered
+  x = -47
+  width = 321
+  actionid = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
+  action = addtexture
+  y = 29
+  height = 132
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ff0000
+  shadow = true
+  splashfilepath = resources\modpack\words.txt
+  rotation = 0.0
+  x = 101
+  actionid = 732d4530-bd95-48b6-805b-ee7f535088ac1652985574162
+  action = addsplash
+  y = 124
+  scale = 1.0
+  refresh = true
+  bouncing = true
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu
+  backgroundhovered = resources\modpack\reload_h.png
+  label = 
+  loopbackgroundanimations = true
+  x = 85
+  width = 21
+  actionid = c6afa261-6393-41b9-b513-bead8dc01a251653164545814
+  action = addbutton
+  y = -354
+  backgroundnormal = resources\modpack\reload.png
+  value = 
+  height = 21
+}
+

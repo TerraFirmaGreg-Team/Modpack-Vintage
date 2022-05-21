@@ -41,28 +41,6 @@ customization {
 }
 
 customization {
-  path = resources/modpack/sidebar_full_left.png
-  orientation = top-centered
-  x = 171
-  width = 28
-  actionid = 909353a2-7e76-4c1c-8e25-b0624cbfeb151652986976770
-  action = addtexture
-  y = 0
-  height = %guiheight%
-}
-
-customization {
-  path = resources/modpack/sidebar_full_right.png
-  orientation = top-centered
-  x = -192
-  width = 32
-  actionid = 35d8d85f-77eb-4ba4-b8b1-b18d3e964f0b1652987015011
-  action = addtexture
-  y = 0
-  height = %guiheight%
-}
-
-customization {
   identifier = %id=346948%
   loopbackgroundanimations = true
   restartbackgroundanimations = true

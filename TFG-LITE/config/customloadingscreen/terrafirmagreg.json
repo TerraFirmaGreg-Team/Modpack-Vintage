@@ -63,8 +63,9 @@
                 "image": "modpack:tfg_logo.png",
                 "position_type": "TOP_CENTER",
                 "offset_pos": "TOP_CENTER",
-                "colour": "0xFF_FF_FF_FF",
-                "position": {"x": "0", "y": "-40", "width": "480", "height": "180"}
+				"position":{
+					"x": "0", "y": "-40", "width": "400", "height": "180"
+				}
             }
         },
 		{
@@ -131,7 +132,7 @@
                 "text": "has_tips() ? tip(floor(time / 8)) : ''",
                 "position_type": "BOTTOM_CENTER",
                 "offset_pos": "BOTTOM_CENTER",
-                "position": { "x": 0, "y": -10 }
+                "position": { "x": 0, "y": -12 }
             }
         }
     ],
