@@ -11,3 +11,6 @@ VanillaFactory.createItem("rocketparts_tier10").register();
 
 // Knife Mold
 VanillaFactory.createItem("shape_extruder_knife").register();
+
+// Sense Mold
+VanillaFactory.createItem("shape_extruder_sense").register();

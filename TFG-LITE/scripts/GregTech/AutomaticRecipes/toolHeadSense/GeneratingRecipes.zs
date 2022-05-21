@@ -7,10 +7,19 @@ val toolHeadSense as OrePrefix = OrePrefix.getPrefix("toolHeadSense");
 
 toolHeadSense.generateRecipes(function(orePrefix as OrePrefix, material as Material) {
 
-    //recipes.removeByRecipeName("gregtech:head_toolheadsense_" + material.name);
+    recipes.removeByRecipeName("gregtech:head_toolheadsense_" + material.name);
+    
+    if (material.hasIngot())
+    {
+        extruder.recipeBuilder()
+            .inputs(Utils.ore("ingot", material))
+            .notConsumable(<contenttweaker:shape_extruder_sense>)
+            .outputs(Utils.item(orePrefix, material))
+            .duration(340).EUt(240).buildAndRegister();
+    }
 
 } as IOreRecipeHandler);
-/*
+
 // Blue Topaz
 laser_engraver.recipeBuilder()
     .inputs(<metaitem:gemBlueTopaz> * 3)
@@ -94,4 +103,3 @@ laser_engraver.recipeBuilder()
     .notConsumable(<metaitem:glass_lens.magenta>)
     .outputs(<metaitem:toolHeadSenseOpal>)
     .duration(200).EUt(2).buildAndRegister();
-*/
