@@ -1,15 +1,15 @@
 {
-	x: 6.5d,
-	y: -1.5d,
+	x: 5.0d,
+	y: 0.0d,
 	dependencies: [
 		"cf75cf39",
 		"b790a9a5"
 	],
 	tasks: [{
-		uid: "f27690a0",
+		uid: "72e1be30",
 		type: "item",
 		items: [{
-			item: "appliedenergistics2:interface"
+			item: "ae2fc:ingredient_buffer"
 		}]
 	}]
 }

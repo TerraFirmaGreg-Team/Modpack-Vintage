@@ -351,17 +351,17 @@ customization {
 }
 
 customization {
-  orientation = bottom-left
+  orientation = top-left
   restartbackgroundanimations = true
   buttonaction = reloadmenu
   backgroundhovered = resources\modpack\reload_h.png
   label = 
   loopbackgroundanimations = true
-  x = 85
+  x = 84
   width = 21
   actionid = c6afa261-6393-41b9-b513-bead8dc01a251653164545814
   action = addbutton
-  y = -354
+  y = 32
   backgroundnormal = resources\modpack\reload.png
   value = 
   height = 21
