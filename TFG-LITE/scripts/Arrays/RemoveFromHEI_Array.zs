@@ -552,7 +552,9 @@ for item in Array8 {
 // Florae
 val Array9 as IItemStack[] = [
     <tfcflorae:tools/flint/hammer/flint>,
-	<tfcflorae:tools/flint/hammer_head/flint> 
+	<tfcflorae:tools/flint/hammer_head/flint>,
+	// Gems
+	<tfcflorae:gem/amber:*>,
 ] as IItemStack[];
 for item in Array9 {
     JEI.removeAndHide(item);
@@ -712,7 +714,18 @@ val Array11 as IItemStack[] = [
     <tfcthings:pig_iron_carrot>,
     <tfcthings:black_steel_carrot>,
     <tfcthings:blue_steel_carrot>,
-    <tfcthings:red_steel_carrot>
+    <tfcthings:red_steel_carrot>,
+	// Crowns
+	<tfcthings:crown/gold_beryl>,
+	<tfcthings:crown/gold_agate>,
+	<tfcthings:crown/gold_jade>,
+	<tfcthings:crown/gold_jasper>,
+	<tfcthings:crown/gold_tourmaline>,
+	<tfcthings:crown/platinum_jasper>,
+	<tfcthings:crown/platinum_jade>,
+	<tfcthings:crown/platinum_agate>,
+	<tfcthings:crown/platinum_beryl>,
+	<tfcthings:crown/platinum_tourmaline>,
 ] as IItemStack[];
 for item in Array11 {
     JEI.removeAndHide(item);
@@ -1036,6 +1049,12 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/scythe_blade/black_steel>,
 	<tfc:metal/scythe_blade/blue_steel>,
 	<tfc:metal/scythe_blade/red_steel>,
+	// Gems
+	<tfc:gem/beryl:*>,
+	<tfc:gem/agate:*>,
+	<tfc:gem/tourmaline:*>,
+	<tfc:gem/jade:*>,
+	<tfc:gem/jasper:*>,
 	// Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
