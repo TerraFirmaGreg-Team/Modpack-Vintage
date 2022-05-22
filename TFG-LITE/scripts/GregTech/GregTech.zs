@@ -221,11 +221,41 @@ recipes.addShaped(<metaitem:steam_export_bus>,
  [null, <ore:chest>, null],
  [null, null, null]]);
 
-// Extruder Shape (Knife Head)
+// Extruder Shape (Sense Head)
+// Workbench
+recipes.addShaped(<contenttweaker:shape_extruder_sense>,
+[[null, null, null],
+ [<ore:craftingToolHardHammer>, <metaitem:shape.extruder.plate>, null],
+ [null, null, null]]);
+// Forming Press 
+forming_press.recipeBuilder()
+    .inputs(<metaitem:shape.empty>)
+    .notConsumable(<contenttweaker:shape_extruder_sense>)
+    .outputs(<contenttweaker:shape_extruder_sense>)
+    .duration(120)
+    .EUt(22)
+    .buildAndRegister();
+// Macerator
+macerator.recipeBuilder()
+    .inputs(<contenttweaker:shape_extruder_sense>)
+    .outputs(<metaitem:dustSteel> * 4)
+    .duration(56)
+    .EUt(8)
+    .buildAndRegister();
+// Arc Furnace
+arc_furnace.recipeBuilder()
+    .inputs(<contenttweaker:shape_extruder_sense>)
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotSteel> * 4)
+    .duration(56)
+    .EUt(30)
+    .buildAndRegister();
+
+// Mold (Knife Head)
 // Workbench
 recipes.addShaped(<contenttweaker:shape_mold_knife>,
 [[null, null, null],
- [<ore:craftingToolWireCutter>, <metaitem:shape.extruder.plate>, null],
+ [<ore:craftingToolHardHammer>, <metaitem:shape.empty>, null],
  [null, null, null]]);
 // Forming Press 
 forming_press.recipeBuilder()

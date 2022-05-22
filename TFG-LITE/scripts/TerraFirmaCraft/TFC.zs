@@ -16,7 +16,7 @@ val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenwa
 
 // Удаление рецептов
 val RemoveItemRecipesByName = [
-  "tfc:vanilla/redstone/observer",
+  	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
 	"tfc:vanilla/flint_and_steel",
 	"tfc:vanilla/compass",
@@ -234,6 +234,28 @@ Anvil.addRecipe("TFG_hammer_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadHam
 Anvil.addRecipe("TFG_hammer_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadHammerBlackSteel>, 5, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("TFG_hammer_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("TFG_hammer_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+
+// Новые рецепты ковки GT ножей
+Anvil.addRecipe("TFG_knife_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadKnifeCopper>, 1, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadKnifeBismuthBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadKnifeBlackBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadKnifeBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadKnifeWroughtIron>, 3, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadKnifeSteel>, 4, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadKnifeBlackSteel>, 5, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadKnifeBlueSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadKnifeRedSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+
+// Новые рецепты ковки GT кос
+Anvil.addRecipe("TFG_sense_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadSenseCopper>, 1, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadSenseBismuthBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadSenseBlackBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadSenseBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadSenseWroughtIron>, 3, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadSenseSteel>, 4, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadSenseBlackSteel>, 5, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadSenseBlueSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadSenseRedSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
 
 // Крафт голов напильков GT
 Anvil.addRecipe("TFG_file_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadFileCopper>, 1, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
