@@ -1,0 +1,18 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/ganymede.png"
+		}
+	},
+	x: 14.5d,
+	y: 8.75d,
+	size: 0.5d,
+	tasks: [{
+		uid: "e3878609",
+		type: "item",
+		items: [{
+			item: "extraplanets:ganymede"
+		}]
+	}]
+}

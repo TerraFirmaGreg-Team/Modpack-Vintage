@@ -157,7 +157,7 @@ for i, cable in colored_CoveredCable {
 }
 recipes.remove(<appliedenergistics2:part:36>);
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:16>)
+  .inputs(<ore:ae2.cable.glass>)
   .circuit(24)
   .fluidInputs([<liquid:rubber> * 144])
   .outputs(<appliedenergistics2:part:36>)
@@ -165,7 +165,7 @@ assembler.recipeBuilder()
   .EUt(8)
   .buildAndRegister();
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:16>)
+  .inputs(<ore:ae2.cable.glass>)
   .circuit(24)
   .fluidInputs([<liquid:styrene_butadiene_rubber> * 72])
   .outputs(<appliedenergistics2:part:36>)
@@ -173,7 +173,7 @@ assembler.recipeBuilder()
   .EUt(8)
   .buildAndRegister();
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:16>)
+  .inputs(<ore:ae2.cable.glass>)
   .circuit(24)
   .fluidInputs([<liquid:silicone_rubber> * 36])
   .outputs(<appliedenergistics2:part:36>)
@@ -244,7 +244,7 @@ for i, cable in colored_SmartCable {
     .buildAndRegister();
 }
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:36>)
+  .inputs(<ore:ae2.cable.covered>)
   .inputs([<ore:dustRedstone> * 2])
   .circuit(24)
   .fluidInputs([<liquid:glowstone> * 144])
@@ -317,7 +317,7 @@ for i, cable in colored_DenseCoveredCable {
     .buildAndRegister();
 }
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:36> * 4)
+  .inputs(<ore:ae2.cable.covered> * 4)
   .circuit(24)
   .fluidInputs([<liquid:rubber> * 576])
   .outputs(<appliedenergistics2:part:516>)
@@ -326,7 +326,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:36> * 4)
+  .inputs(<ore:ae2.cable.covered> * 4)
   .circuit(24)
   .fluidInputs([<liquid:styrene_butadiene_rubber> * 288])
   .outputs(<appliedenergistics2:part:516>)
@@ -335,7 +335,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:36> * 4)
+  .inputs(<ore:ae2.cable.covered> * 4)
   .circuit(24)
   .fluidInputs([<liquid:silicone_rubber> * 144])
   .outputs(<appliedenergistics2:part:516>)
@@ -406,7 +406,7 @@ for i, cable in colored_DenseSmartCable {
     .buildAndRegister();
 }
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:516>)
+  .inputs(<ore:ae2.cable.dense.covered>)
 	.inputs([<ore:dustRedstone> * 2])
   .circuit(24)
   .fluidInputs([<liquid:glowstone> * 288])
@@ -1561,12 +1561,12 @@ assembler.recipeBuilder()
 // ME Import Bus
 recipes.removeByRecipeName("appliedenergistics2:network/parts/import_bus");
 recipes.addShaped("import_bus", <appliedenergistics2:part:240>, [
-  [<appliedenergistics2:material:44>, <metaitem:robot.arm.lv>, <appliedenergistics2:part:16>]]);
+  [<appliedenergistics2:material:44>, <metaitem:robot.arm.lv>, <ore:ae2.cable.glass>]]);
 
 // ME Export Bus
 recipes.removeByRecipeName("appliedenergistics2:network/parts/export_bus");
 recipes.addShaped("export_bus", <appliedenergistics2:part:260>, [
-  [<appliedenergistics2:material:43>, <metaitem:robot.arm.lv>, <appliedenergistics2:part:16>]]);
+  [<appliedenergistics2:material:43>, <metaitem:robot.arm.lv>, <ore:ae2.cable.glass>]]);
 
 // ME Fluid Storage Bus
 recipes.removeByRecipeName("appliedenergistics2:network/parts/storage_bus_fluid");

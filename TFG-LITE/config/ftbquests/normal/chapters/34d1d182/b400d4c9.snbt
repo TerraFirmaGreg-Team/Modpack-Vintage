@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/mercury.png"
+		}
+	},
+	x: 1.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "18a04bee",
+		type: "item",
+		items: [{
+			item: "extraplanets:mercury"
+		}]
+	}]
+}

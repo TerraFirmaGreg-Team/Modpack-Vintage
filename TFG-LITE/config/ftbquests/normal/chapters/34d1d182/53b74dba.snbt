@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/ceres.png"
+		}
+	},
+	x: 9.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "7aa8cf10",
+		type: "item",
+		items: [{
+			item: "extraplanets:ceres"
+		}]
+	}]
+}

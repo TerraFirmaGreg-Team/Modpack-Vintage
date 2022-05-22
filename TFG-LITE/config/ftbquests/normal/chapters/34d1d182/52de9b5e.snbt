@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/venus.png"
+		}
+	},
+	x: 3.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "dba29476",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:venus"
+		}]
+	}]
+}

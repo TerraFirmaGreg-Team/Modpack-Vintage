@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/pluto.png"
+		}
+	},
+	x: 21.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "bb2e8309",
+		type: "item",
+		items: [{
+			item: "extraplanets:pluto"
+		}]
+	}]
+}

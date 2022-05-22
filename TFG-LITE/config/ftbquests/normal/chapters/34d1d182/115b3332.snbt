@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/saturn.png"
+		}
+	},
+	x: 15.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "ff3a2337",
+		type: "item",
+		items: [{
+			item: "extraplanets:saturn"
+		}]
+	}]
+}

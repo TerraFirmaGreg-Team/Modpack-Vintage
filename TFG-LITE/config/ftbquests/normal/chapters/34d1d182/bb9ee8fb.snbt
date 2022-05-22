@@ -1,6 +1,6 @@
 {
-	x: 7.0d,
-	y: -4.0d,
+	x: 5.0d,
+	y: 20.5d,
 	description: "{tfg.quests.space.flag.subtitle}",
 	dependencies: [
 		"9e9cab41"

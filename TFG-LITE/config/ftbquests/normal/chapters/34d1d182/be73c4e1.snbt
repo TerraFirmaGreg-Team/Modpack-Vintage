@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/uranus.png"
+		}
+	},
+	x: 17.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "32caed00",
+		type: "item",
+		items: [{
+			item: "extraplanets:uranus"
+		}]
+	}]
+}

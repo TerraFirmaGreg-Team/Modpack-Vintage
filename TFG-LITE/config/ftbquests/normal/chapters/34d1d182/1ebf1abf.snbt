@@ -1,0 +1,18 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/sun.png"
+		}
+	},
+	x: -1.009183673469387d,
+	y: 7.076870748299292d,
+	size: 3.0d,
+	tasks: [{
+		uid: "4236af45",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}]
+	}]
+}

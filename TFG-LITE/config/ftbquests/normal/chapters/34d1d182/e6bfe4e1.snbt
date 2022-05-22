@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/neptune.png"
+		}
+	},
+	x: 19.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "544ac885",
+		type: "item",
+		items: [{
+			item: "extraplanets:neptune"
+		}]
+	}]
+}

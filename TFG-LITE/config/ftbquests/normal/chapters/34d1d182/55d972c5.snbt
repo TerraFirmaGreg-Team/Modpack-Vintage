@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.tier4termalarmor.title}",
-	x: 16.5d,
-	y: -3.0d,
+	x: 7.0d,
+	y: 14.0d,
 	description: "{tfg.quests.space.tier4termalarmor.subtitle}",
 	dependencies: [
 		"e43ffe37"

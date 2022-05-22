@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/asteroid.png"
+		}
+	},
+	x: 11.5d,
+	y: 7.0d,
+	tasks: [{
+		uid: "73f9e958",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:asteroids_block"
+		}]
+	}]
+}

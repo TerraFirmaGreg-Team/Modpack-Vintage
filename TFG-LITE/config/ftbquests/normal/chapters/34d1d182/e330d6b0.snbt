@@ -1,0 +1,18 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/phobos.png"
+		}
+	},
+	x: 8.0d,
+	y: 7.75d,
+	size: 0.5d,
+	tasks: [{
+		uid: "c8941e70",
+		type: "item",
+		items: [{
+			item: "galaxyspace:phobosblocks 1 1"
+		}]
+	}]
+}

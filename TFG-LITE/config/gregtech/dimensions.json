@@ -1,6 +1,14 @@
 {
   "dims": [
     {
+      "dimID": -1005,
+      "dimName": "Mercury"
+    },
+    {
+      "dimID": -1006,
+      "dimName": "Venus"
+    },
+    {
       "dimID": 0,
       "dimName": "Earth"
     },
@@ -12,89 +20,118 @@
       "dimID": -1,
       "dimName": "Nether"
     },
-	  {
+    {
       "dimID": -28,
       "dimName": "Moon"
     },
-	  {
+    {
       "dimID": -29,
       "dimName": "Mars"
-    },
-	  {
-      "dimID": -30,
-      "dimName": "Asteroids"
-    },
-	  {
-      "dimID": -31,
-      "dimName": "Venus"
-    },
-    {
-      "dimID": -1021,
-      "dimName": "Triton"
-    },
-    {
-      "dimID": -1015,
-      "dimName": "Europa"
-    },
-    {
-      "dimID": -1014,
-      "dimName": "IO"
-    },
-    {
-      "dimID": -1024,
-      "dimName": "Miranda"
-    },
-    {
-      "dimID": -1022,
-      "dimName": "Callisto"
-    },
-    {
-      "dimID": -1016,
-      "dimName": "Ganymede"
-    },
-    {
-      "dimID": -1023,
-      "dimName": "Haumea"
-    },
-    {
-      "dimID": -1030,
-      "dimName": "Barnarda C"
-    },
-    {
-      "dimID": -1009,
-      "dimName": "Kuiperbelt"
-    },
-    {
-      "dimID": -1338,
-      "dimName": "Tauceti F"
-    },
-    {
-      "dimID": -1005,
-      "dimName": "Mercury"
-    },
-    {
-      "dimID": -1008,
-      "dimName": "Pluto"
-    },
-    {
-      "dimID": -1017,
-      "dimName": "Enceladus"
-    },
-    {
-      "dimID": -1007,
-      "dimName": "Ceres"
     },
     {
       "dimID": -1012,
       "dimName": "Phobos"
     },
     {
-      "dimID": -1018,
+      "dimID": -1503,
+      "dimName": "Deimos"
+    },
+    {
+      "dimID": -20,
+      "dimName": "Ceres"
+    },
+    {
+      "dimID": -30,
+      "dimName": "Asteroids"
+    },
+    {
+      "dimID": -1026,
+      "dimName": "Jupiter"
+    },
+    {
+      "dimID": -1500,
+      "dimName": "IO"
+    },
+    {
+      "dimID": -1501,
+      "dimName": "Europa"
+    },
+    {
+      "dimID": -1506,
+      "dimName": "Ganymede"
+    },
+    {
+      "dimID": -1505,
+      "dimName": "Callisto"
+    },
+    {
+      "dimID": -16,
+      "dimName": "Saturn"
+    },
+    {
+      "dimID": -1507,
+      "dimName": "Rhea"
+    },
+    {
+      "dimID": -1508,
       "dimName": "Titan"
     },
     {
+      "dimID": -1511,
+      "dimName": "Iapetus"
+    },
+    {
+      "dimID": -17,
+      "dimName": "Uranus"
+    },
+    {
+      "dimID": -1510,
+      "dimName": "Titania"
+    },
+    {
+      "dimID": -1509,
+      "dimName": "Oberon"
+    },
+    {
+      "dimID": -18,
+      "dimName": "Neptune"
+    },
+    {
+      "dimID": -1504,
+      "dimName": "Triton"
+    },
+    {
+      "dimID": -19,
+      "dimName": "Pluto"
+    },
+    {
+      "dimID": -1009,
+      "dimName": "KuiperBelt"
+    },
+    {
+      "dimID": -21,
+      "dimName": "Eris"
+    },
+    {
+      "dimID": -18,
+      "dimName": "Haumea"
+    },
+    {
+      "dimID": -1030,
+      "dimName": "BarnardaC"
+    }
+    ,
+    {
+      "dimID": -1031,
+      "dimName": "BarnardaC1"
+    },
+    {
+      "dimID": -22,
+      "dimName": "Kepler22b"
+    },
+    {
       "dimID": -1025,
-      "dimName": "Proxima B"
+      "dimName": "Proxima_B"
     }
   ]
 }

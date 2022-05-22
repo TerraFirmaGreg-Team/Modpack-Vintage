@@ -1,0 +1,14 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/kuiperbelt.png"
+		}
+	},
+	x: 23.0d,
+	y: 7.0d,
+	tasks: [{
+		uid: "e20472e0",
+		type: "checkmark"
+	}]
+}

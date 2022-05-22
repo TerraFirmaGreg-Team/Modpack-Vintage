@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.painter.title}",
-	x: -1.0d,
-	y: -8.5d,
+	x: 3.5d,
+	y: 5.0d,
 	description: "{tfg.quests.space.painter.subtitle}",
 	dependencies: [
 		"f728ff59"

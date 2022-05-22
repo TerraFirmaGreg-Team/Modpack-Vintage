@@ -1,0 +1,18 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/europa.png"
+		}
+	},
+	x: 14.25d,
+	y: 8.25d,
+	size: 0.5d,
+	tasks: [{
+		uid: "f7f4c484",
+		type: "item",
+		items: [{
+			item: "extraplanets:europa"
+		}]
+	}]
+}
