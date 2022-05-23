@@ -846,7 +846,27 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/double_sheet/blue_steel>,
 	<tfc:metal/double_sheet/red_steel>,
 	// Scrap
-	
+	<tfc:metal/scrap/bismuth>,
+	<tfc:metal/scrap/bismuth_bronze>,
+	<tfc:metal/scrap/black_bronze>,
+	<tfc:metal/scrap/brass>,
+	<tfc:metal/scrap/bronze>,
+	<tfc:metal/scrap/copper>,
+	<tfc:metal/scrap/gold>,
+	<tfc:metal/scrap/lead>,
+	<tfc:metal/scrap/nickel>,
+	<tfc:metal/scrap/rose_gold>,
+	<tfc:metal/scrap/silver>,
+	<tfc:metal/scrap/tin>,
+	<tfc:metal/scrap/zinc>,
+	<tfc:metal/scrap/sterling_silver>,
+	<tfc:metal/scrap/wrought_iron>,
+	<tfc:metal/scrap/pig_iron>,
+	<tfc:metal/scrap/steel>,
+	<tfc:metal/scrap/platinum>,
+	<tfc:metal/scrap/black_steel>,
+	<tfc:metal/scrap/blue_steel>,
+	<tfc:metal/scrap/red_steel>,
 	// Trapdoors
 	<tfc:metal/trapdoor/pig_iron>,
 	// Small Ores
@@ -1049,12 +1069,21 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/scythe_blade/black_steel>,
 	<tfc:metal/scythe_blade/blue_steel>,
 	<tfc:metal/scythe_blade/red_steel>,
-	// Gems
+	// Gems [Hidden]
 	<tfc:gem/beryl:*>,
 	<tfc:gem/agate:*>,
 	<tfc:gem/tourmaline:*>,
 	<tfc:gem/jade:*>,
 	<tfc:gem/jasper:*>,
+	// Gems [Unhidden]
+	<tfc:gem/amethyst:*>,
+	<tfc:gem/emerald:*>,
+	<tfc:gem/diamond:*>,
+	<tfc:gem/garnet:*>,
+	<tfc:gem/opal:*>,
+	<tfc:gem/ruby:*>,
+	<tfc:gem/sapphire:*>,
+	<tfc:gem/topaz:*>,
 	// Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
