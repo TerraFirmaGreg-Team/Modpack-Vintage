@@ -7,7 +7,6 @@ customization-meta {
   renderorder = background
   randommode = false
   randomonlyfirsttime = false
-  biggerthanheight = 1000
 }
 
 customization {
@@ -21,7 +20,7 @@ customization {
 }
 
 customization {
-  keepaspectratio = false
+  keepaspectratio = true
   action = backgroundoptions
 }
 
@@ -147,7 +146,7 @@ customization {
 customization {
   path = resources/modpack/sidebar_full_left.png
   orientation = top-left
-  x = -2
+  x = -3
   width = 229
   actionid = 128d1cdb-f37f-46e2-a7ce-b5e681b646131652985763920
   action = addtexture

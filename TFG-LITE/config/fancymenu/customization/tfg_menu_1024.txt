@@ -3,7 +3,6 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
-  smallerthanheight = 999
   renderorder = background
   randommode = false
   randomonlyfirsttime = false
@@ -21,7 +20,7 @@ customization {
 }
 
 customization {
-  keepaspectratio = false
+  keepaspectratio = true
   action = backgroundoptions
 }
 
