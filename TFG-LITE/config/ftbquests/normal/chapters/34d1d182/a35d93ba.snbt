@@ -1,12 +1,17 @@
 {
+	title: "Луна",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galacticraftcore:textures/gui/celestialbodies/moon.png"
 		}
 	},
-	x: 6.25d,
-	y: 7.5d,
+	x: 6.0d,
+	y: 6.625d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"79111811"
+	],
 	size: 0.5d,
 	tasks: [{
 		uid: "104d8b4d",

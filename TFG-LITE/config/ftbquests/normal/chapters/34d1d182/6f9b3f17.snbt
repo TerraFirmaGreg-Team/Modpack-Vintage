@@ -1,12 +1,17 @@
 {
+	title: "Ганимед",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/ganymede.png"
 		}
 	},
-	x: 14.5d,
-	y: 8.75d,
+	x: 14.0d,
+	y: 7.75d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
 	size: 0.5d,
 	tasks: [{
 		uid: "e3878609",

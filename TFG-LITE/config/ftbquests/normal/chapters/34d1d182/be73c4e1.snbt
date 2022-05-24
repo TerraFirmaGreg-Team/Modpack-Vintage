@@ -1,12 +1,17 @@
 {
+	title: "Уран",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galaxyspace:textures/gui/celestialbodies/sol/uranus.png"
 		}
 	},
-	x: 17.5d,
-	y: 7.0d,
+	x: 18.75d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a62ca553"
+	],
 	tasks: [{
 		uid: "32caed00",
 		type: "item",

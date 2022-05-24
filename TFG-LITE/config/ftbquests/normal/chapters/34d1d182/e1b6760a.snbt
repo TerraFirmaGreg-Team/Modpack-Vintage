@@ -1,12 +1,17 @@
 {
+	title: "Европа",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/europa.png"
 		}
 	},
-	x: 14.25d,
-	y: 8.25d,
+	x: 13.75d,
+	y: 7.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
 	size: 0.5d,
 	tasks: [{
 		uid: "f7f4c484",

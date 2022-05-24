@@ -1,12 +1,17 @@
 {
+	title: "Плутон",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galaxyspace:textures/gui/celestialbodies/sol/pluto.png"
 		}
 	},
-	x: 21.5d,
-	y: 7.0d,
+	x: 24.0d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"7b517356"
+	],
 	tasks: [{
 		uid: "bb2e8309",
 		type: "item",

@@ -7,7 +7,7 @@
 		}
 	},
 	x: 5.5d,
-	y: 7.0d,
+	y: 6.0d,
 	description: "{tfg.quests.space.start.subtitle}",
 	dependencies: [
 		"692e1ee5"

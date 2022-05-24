@@ -1,12 +1,17 @@
 {
+	title: "Нептун",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galaxyspace:textures/gui/celestialbodies/sol/neptune.png"
 		}
 	},
-	x: 19.5d,
-	y: 7.0d,
+	x: 21.25d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"285bd9fc"
+	],
 	tasks: [{
 		uid: "544ac885",
 		type: "item",

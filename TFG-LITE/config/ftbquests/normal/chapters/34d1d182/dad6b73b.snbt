@@ -1,11 +1,12 @@
 {
 	title: "{tfg.quests.space.tier3termalarmor.title}",
-	x: 7.0d,
-	y: 12.0d,
+	x: 6.35d,
+	y: 10.55d,
 	description: "{tfg.quests.space.tier3termalarmor.subtitle}",
 	dependencies: [
 		"e4e7bcbf"
 	],
+	size: 0.8d,
 	tasks: [{
 		uid: "57d31b08",
 		type: "item",

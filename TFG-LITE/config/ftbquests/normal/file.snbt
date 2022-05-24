@@ -11,14 +11,14 @@
 	},
 	default_reward_team: true,
 	default_consume_items: false,
-	default_autoclaim_rewards: "disabled",
+	default_autoclaim_rewards: "enabled",
 	default_quest_shape: "circle",
 	default_quest_disable_jei: false,
 	emergency_items: [{
 		id: "tfc:food/cooked_rabbit",
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: -9223372036854775808L,
+				creationDate: 12996000L,
 				traits: []
 			}
 		}
@@ -31,5 +31,5 @@
 		boss: 0
 	},
 	disable_gui: false,
-	grid_scale: 0.5d
+	grid_scale: 0.25d
 }

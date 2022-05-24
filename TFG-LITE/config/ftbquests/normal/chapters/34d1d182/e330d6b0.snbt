@@ -1,4 +1,5 @@
 {
+	title: "Фобос",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -6,7 +7,11 @@
 		}
 	},
 	x: 8.0d,
-	y: 7.75d,
+	y: 6.75d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e4e7bcbf"
+	],
 	size: 0.5d,
 	tasks: [{
 		uid: "c8941e70",

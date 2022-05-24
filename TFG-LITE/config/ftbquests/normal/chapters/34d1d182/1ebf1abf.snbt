@@ -1,18 +1,16 @@
 {
+	title: "Солнце",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "galacticraftcore:textures/gui/celestialbodies/sun.png"
 		}
 	},
-	x: -1.009183673469387d,
-	y: 7.076870748299292d,
-	size: 3.0d,
-	tasks: [{
-		uid: "4236af45",
-		type: "item",
-		items: [{
-			item: "minecraft:dirt"
-		}]
-	}]
+	x: -1.5d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f728ff59"
+	],
+	size: 3.0d
 }

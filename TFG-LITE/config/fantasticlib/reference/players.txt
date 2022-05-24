@@ -1,2 +1,0 @@
-57b3dfb5-f8a6-49e2-8b54-4e4ffc63256f = Xikaro
-9d9c39ad-4d3a-4e61-91c7-3d327f5dcf51 = SpeeeDCraft
