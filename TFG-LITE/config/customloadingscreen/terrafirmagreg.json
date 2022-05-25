@@ -64,7 +64,7 @@
                 "position_type": "TOP_CENTER",
                 "offset_pos": "TOP_CENTER",
 				"position":{
-					"x": "0", "y": "-40", "width": "400", "height": "180"
+					"x": "0", "y": "-40", "width": "400", "height": "160"
 				}
             }
         },
