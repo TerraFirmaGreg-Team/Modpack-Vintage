@@ -18,7 +18,7 @@
 		id: "tfc:food/cooked_rabbit",
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 12996000L,
+				creationDate: -9223372036854775808L,
 				traits: []
 			}
 		}
