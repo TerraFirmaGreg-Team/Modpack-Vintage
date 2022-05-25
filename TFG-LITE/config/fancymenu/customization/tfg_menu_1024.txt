@@ -146,7 +146,7 @@ customization {
 customization {
   path = resources/modpack/sidebar_full_left.png
   orientation = top-left
-  x = 1
+  x = 0
   width = 217
   actionid = 128d1cdb-f37f-46e2-a7ce-b5e681b646131652985763920
   action = addtexture
