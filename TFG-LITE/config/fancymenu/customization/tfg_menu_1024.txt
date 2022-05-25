@@ -301,10 +301,10 @@ customization {
 customization {
   orientation = bottom-left
   shadow = true
-  x = 53
+  x = 65
   actionid = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
   action = addtext
-  y = -23
+  y = -25
   scale = 1.0
   alignment = centered
   value = Latest Modpack Version: 
@@ -315,7 +315,7 @@ customization {
   shadow = true
   orientation_element = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
   multiline = false
-  x = 109
+  x = 124
   action = addwebtext
   actionid = 6a698154-d1a7-40f8-a568-ed3045a256991652923603187
   y = 0
