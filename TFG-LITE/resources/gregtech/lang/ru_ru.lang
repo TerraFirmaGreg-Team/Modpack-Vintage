@@ -17,7 +17,7 @@ gregtech.multiblock.steam.steam_stored=Пар: %s / %s mB
 gregtech.machine.steam_hatch.name=Паровой люк
 gregtech.machine.steam.steam_hatch.tooltip=Принимает жидкости: §eПар
 gregtech.machine.steam_import_bus.name=Предметный входной люк (Пар)
-gregtech.machine.steam_export_bus.name=Предметный входной люк (Пар)
+gregtech.machine.steam_export_bus.name=Предметный выходной люк (Пар)
 gregtech.machine.steam_bus.tooltip=Не работает с электрическими мультиблочными структурами
 gregtech.machine.steam_oven.name=Паровая мультиплавильня
 gregtech.machine.steam_oven.tooltip=Плавит до 8 предметов за раз. Работает в полтора раза медленнее по сравнению с обычной паровой печью, не зависимо от числа предметов. Требует §eпаровые люки
@@ -4608,7 +4608,7 @@ gregtech.machine.muffler_hatch.max.name=Люк глушителя (Макс...)
 
 gregtech.muffler.recovery_tooltip=Восстанавливает §b%d%%§7 предметов!
 
-gregtech.machine.pump_hatch.name=Ждикостный выходной люк насоса
+gregtech.machine.pump_hatch.name=Жидкостный выходной люк насоса
 gregtech.machine.pump_hatch.tooltip=Примитивный жидкостный выход для водяного насоса
 
 gregtech.machine.machine_hatch.name=Лбк доступа к машинам
@@ -4686,10 +4686,10 @@ gregtech.gui.silktouch.enabled=Шёлковое касание включенн�
 gregtech.gui.silktouch.disabled=Шёлковое касание выключенно: Нажмите, чтобы включить./n§7Для переключения требуется выключить механизм.
 gregtech.gui.chunkmode.enabled=Chunk Mode Enabled: Click to Disable./n§7Switching requires an idle machine.
 gregtech.gui.chunkmode.disabled=Chunk Mode Disabled: Click to Enable./n§7Switching requires an idle machine.
-gregtech.gui.multiblock_item_voiding=Режим очистики/n§7Удаление §6предметов
-gregtech.gui.multiblock_fluid_voiding=Режим очистики/n§7Удаление §9жидксотей
-gregtech.gui.multiblock_item_fluid_voiding=Режим очистики/n§7Удаление §6предметов §7и §9жидкостей
-gregtech.gui.multiblock_no_voiding=Режим очистики/n§7Не назначен
+gregtech.gui.multiblock_item_voiding=Режим очистки/n§7Удаление §6предметов
+gregtech.gui.multiblock_fluid_voiding=Режим очистки/n§7Удаление §9жидксотей
+gregtech.gui.multiblock_item_fluid_voiding=Режим очистки/n§7Удаление §6предметов §7и §9жидкостей
+gregtech.gui.multiblock_no_voiding=Режим очистки/n§7Не назначен
 
 ore.spawnlocation.name=Информация о появлении руды
 gregtech.jei.ore.surface_rock_1=Surface Rocks with this material denote vein spawn locations.
