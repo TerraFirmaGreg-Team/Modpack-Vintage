@@ -1,0 +1,7 @@
+minecraft:farmer
+minecraft:librarian
+minecraft:priest
+minecraft:smith
+minecraft:butcher
+minecraft:nitwit
+sgcraft:tokra

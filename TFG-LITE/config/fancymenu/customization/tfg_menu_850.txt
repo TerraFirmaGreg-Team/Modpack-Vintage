@@ -314,7 +314,7 @@ customization {
   shadow = true
   orientation_element = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
   multiline = false
-  x = 127
+  x = 124
   action = addwebtext
   actionid = 6a698154-d1a7-40f8-a568-ed3045a256991652923603187
   y = 0
@@ -325,25 +325,25 @@ customization {
 
 customization {
   path = resources/modpack/tfg_logo.png
-  orientation = top-right
-  x = -230
+  orientation = top-centered
+  x = -8
   width = 232
   actionid = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
   action = addtexture
-  y = 0
-  height = 107
+  y = 5
+  height = 94
 }
 
 customization {
-  orientation = top-right
+  orientation = top-centered
   basecolor = #ff0000
   shadow = true
   splashfilepath = resources\modpack\words.txt
   rotation = 0.0
-  x = -140
+  x = 81
   actionid = 732d4530-bd95-48b6-805b-ee7f535088ac1652985574162
   action = addsplash
-  y = 69
+  y = 68
   scale = 1.0
   refresh = true
   bouncing = true
