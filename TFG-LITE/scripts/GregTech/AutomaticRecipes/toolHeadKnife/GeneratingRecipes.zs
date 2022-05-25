@@ -9,11 +9,13 @@ toolHeadKnife.generateRecipes(function(orePrefix as OrePrefix, material as Mater
 
     recipes.removeByRecipeName("gregtech:knife_" + material.name);
 
-    recipes.addShaped(<metaitem:tool.knife>.withTag({"GT.ToolStats": {Material: material.name}}), [
+    if (material != <material:flint>)
+    {
+       recipes.addShaped(<metaitem:tool.knife>.withTag({"GT.ToolStats": {Material: material.name}}), [
         [Utils.ore(orePrefix, material), <minecraft:stick>, null],
         [null, null, null],
-        [null, null, null]
-    ]);
+        [null, null, null]]); 
+    }
 
     if (material.hasIngot())
     {

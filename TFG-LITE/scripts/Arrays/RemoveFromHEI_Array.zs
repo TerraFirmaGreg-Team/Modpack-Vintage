@@ -512,7 +512,7 @@ val Array6 as IItemStack[] = [
     <metaitem:dustTinyFireclay>
 ];
 for item in Array6 {
-    // JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 // CellarAddon
