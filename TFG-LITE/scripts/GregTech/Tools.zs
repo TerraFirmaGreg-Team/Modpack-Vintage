@@ -17,8 +17,8 @@ val RemoveItemRecipesByName = [
     "gregtech:toolheadhoe_flint_wood",
     "gregtech:toolheadhammer_flint_wood",
     "gregtech:toolheadfile_flint_wood",
-    "gregtech:toolheadsawflint_wood",
-    "gregtech:toolheadsawsense_wood"
+    "gregtech:toolheadsaw_flint_wood",
+    "gregtech:toolheadsawsense_flint_wood"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -33,6 +33,7 @@ macerator.findRecipe(2, [<metaitem:toolHeadHoeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadHammerFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
+macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
 
 // --- Adding Recipes
