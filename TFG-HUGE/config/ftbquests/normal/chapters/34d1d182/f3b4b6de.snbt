@@ -1,0 +1,23 @@
+{
+	title: "Каллисто",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/callisto.png"
+		}
+	},
+	x: 14.25d,
+	y: 8.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "78599738",
+		type: "item",
+		items: [{
+			item: "extraplanets:callisto"
+		}]
+	}]
+}

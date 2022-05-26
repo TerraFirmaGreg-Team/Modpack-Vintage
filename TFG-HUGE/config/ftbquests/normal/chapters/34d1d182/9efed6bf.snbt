@@ -1,6 +1,6 @@
 {
-	x: 9.0d,
-	y: 0.75d,
+	x: 6.75d,
+	y: 18.0d,
 	dependencies: [
 		"411b712c"
 	],
@@ -12,7 +12,6 @@
 		items: [{
 			item: "galacticraftplanets:rocket_t2 1 11"
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}]
 }

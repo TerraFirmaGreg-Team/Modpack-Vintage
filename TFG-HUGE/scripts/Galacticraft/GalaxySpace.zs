@@ -36,6 +36,7 @@ val RemoveItemRecipe as IItemStack[] = [
   <galaxyspace:upgrades:2>,
   <galaxyspace:upgrades>,
   <galaxyspace:upgrades:3>,
+  <galaxyspace:advanced_battery:100>,
   <galaxyspace:gs_basic:11>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
@@ -99,6 +100,14 @@ assembler.recipeBuilder()
    .outputs(<galaxyspace:oxygen_tank_epp_1:2500> * 2)
    .fluidInputs([<liquid:sterilized_growth_medium>*144])
    .duration(1000).EUt(4096).buildAndRegister();
+
+// Батарейка
+canner.recipeBuilder()
+   .inputs(<ore:batteryEv>, <ore:plateDenseTin> * 3)
+   .outputs(<galaxyspace:advanced_battery:100>)
+   .duration(460)
+   .EUt(110)
+   .buildAndRegister();
 
 // Взлётка 2 лвл
 recipes.addShaped(<galaxyspace:advanced_landing_pad> * 25,
@@ -285,7 +294,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 // Скафандры
-// Скаф 1лвл тапки
+// Скаф 1 лвл тапки
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitEv>*3, <ore:leather>*5)
    .circuit(6)
@@ -293,7 +302,7 @@ assembler.recipeBuilder()
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-// Скаф 1лвл поножи
+// Скаф 1 лвл поножи
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(5)
@@ -301,7 +310,7 @@ assembler.recipeBuilder()
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-// Скаф 1лвл грудак
+// Скаф 1 лвл грудак
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(4)
@@ -309,7 +318,7 @@ assembler.recipeBuilder()
   .duration(500)
   .EUt(512)
   .buildAndRegister();
-// Скаф 1лвл шапка
+// Скаф 1 лвл шапка
 assembler.recipeBuilder()
   .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(3)

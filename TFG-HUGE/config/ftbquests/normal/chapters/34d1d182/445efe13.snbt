@@ -1,0 +1,23 @@
+{
+	title: "Тритон",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/triton.png"
+		}
+	},
+	x: 21.75d,
+	y: 6.75d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"285bd9fc"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "dcd9b078",
+		type: "item",
+		items: [{
+			item: "extraplanets:triton"
+		}]
+	}]
+}

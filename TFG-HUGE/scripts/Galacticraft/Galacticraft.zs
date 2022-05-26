@@ -500,7 +500,7 @@ recipes.addShaped(<galacticraftcore:enclosed:15>,
 //Sealable Alum. Wire
 recipes.addShaped(<galacticraftcore:enclosed:13>,
 [[null, null, null],
- [<galacticraftcore:basic_block_core:4>, <appliedenergistics2:part:16>, <galacticraftcore:basic_block_core:4>],
+ [<galacticraftcore:basic_block_core:4>, <ore:ae2.cable.glass>, <galacticraftcore:basic_block_core:4>],
  [null, null, null]]);
 
 //Sealable Alum. Wire

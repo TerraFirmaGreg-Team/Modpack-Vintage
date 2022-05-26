@@ -45,10 +45,5 @@
 		items: [{
 			item: "gregtech:meta_dust 1 2058"
 		}]
-	}],
-	rewards: [{
-		uid: "6e806246",
-		type: "choice",
-		table: 19
 	}]
 }

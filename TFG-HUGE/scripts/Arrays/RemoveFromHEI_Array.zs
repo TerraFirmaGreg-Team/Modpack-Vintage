@@ -512,7 +512,7 @@ val Array6 as IItemStack[] = [
     <metaitem:dustTinyFireclay>
 ];
 for item in Array6 {
-    // JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 // CellarAddon
@@ -552,7 +552,9 @@ for item in Array8 {
 // Florae
 val Array9 as IItemStack[] = [
     <tfcflorae:tools/flint/hammer/flint>,
-	<tfcflorae:tools/flint/hammer_head/flint> 
+	<tfcflorae:tools/flint/hammer_head/flint>,
+	// Gems
+	<tfcflorae:gem/amber:*>,
 ] as IItemStack[];
 for item in Array9 {
     JEI.removeAndHide(item);
@@ -628,6 +630,7 @@ val Array10 as IItemStack[] = [
     <tfctech:metal/pig_iron_long_rod>,
     <tfctech:metal/pig_iron_rod>,
     <tfctech:metal/pig_iron_screw>,
+	<tfctech:metal/pig_iron_rackwheel>,
     <tfctech:metal/platinum_bolt>,
     <tfctech:metal/platinum_gear>,
     <tfctech:metal/platinum_long_rod>,
@@ -711,7 +714,18 @@ val Array11 as IItemStack[] = [
     <tfcthings:pig_iron_carrot>,
     <tfcthings:black_steel_carrot>,
     <tfcthings:blue_steel_carrot>,
-    <tfcthings:red_steel_carrot>
+    <tfcthings:red_steel_carrot>,
+	// Crowns
+	<tfcthings:crown/gold_beryl>,
+	<tfcthings:crown/gold_agate>,
+	<tfcthings:crown/gold_jade>,
+	<tfcthings:crown/gold_jasper>,
+	<tfcthings:crown/gold_tourmaline>,
+	<tfcthings:crown/platinum_jasper>,
+	<tfcthings:crown/platinum_jade>,
+	<tfcthings:crown/platinum_agate>,
+	<tfcthings:crown/platinum_beryl>,
+	<tfcthings:crown/platinum_tourmaline>,
 ] as IItemStack[];
 for item in Array11 {
     JEI.removeAndHide(item);
@@ -778,13 +792,13 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/ingot/tin>,
 	<tfc:metal/ingot/zinc>,
 	<tfc:metal/ingot/sterling_silver>,
-	//<tfc:metal/ingot/pig_iron>,
+	// <tfc:metal/ingot/pig_iron>,
 	<tfc:metal/ingot/steel>,
 	<tfc:metal/ingot/platinum>,
 	<tfc:metal/ingot/black_steel>,
 	<tfc:metal/ingot/blue_steel>,
 	<tfc:metal/ingot/red_steel>,
-	//<tfc:metal/ingot/wrought_iron>,
+	// <tfc:metal/ingot/wrought_iron>,
 	// Plate
 	<tfc:metal/sheet/bismuth>,
 	<tfc:metal/sheet/bismuth_bronze>,
@@ -800,13 +814,15 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/sheet/tin>,
 	<tfc:metal/sheet/zinc>,
 	<tfc:metal/sheet/sterling_silver>,
-	//<tfc:metal/sheet/pig_iron>,
+	<tfc:metal/sheet/pig_iron>,
 	<tfc:metal/sheet/steel>,
 	<tfc:metal/sheet/platinum>,
 	<tfc:metal/sheet/black_steel>,
 	<tfc:metal/sheet/blue_steel>,
 	<tfc:metal/sheet/red_steel>,
-	//<tfc:metal/sheet/wrought_iron>,
+	// <tfc:metal/sheet/wrought_iron>,
+	// Double Ingots
+	<tfc:metal/double_ingot/pig_iron>,
 	// Double Plates
 	<tfc:metal/double_sheet/bismuth>,
 	<tfc:metal/double_sheet/bismuth_bronze>,
@@ -829,6 +845,30 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/double_sheet/black_steel>,
 	<tfc:metal/double_sheet/blue_steel>,
 	<tfc:metal/double_sheet/red_steel>,
+	// Scrap
+	<tfc:metal/scrap/bismuth>,
+	<tfc:metal/scrap/bismuth_bronze>,
+	<tfc:metal/scrap/black_bronze>,
+	<tfc:metal/scrap/brass>,
+	<tfc:metal/scrap/bronze>,
+	<tfc:metal/scrap/copper>,
+	<tfc:metal/scrap/gold>,
+	<tfc:metal/scrap/lead>,
+	<tfc:metal/scrap/nickel>,
+	<tfc:metal/scrap/rose_gold>,
+	<tfc:metal/scrap/silver>,
+	<tfc:metal/scrap/tin>,
+	<tfc:metal/scrap/zinc>,
+	<tfc:metal/scrap/sterling_silver>,
+	<tfc:metal/scrap/wrought_iron>,
+	<tfc:metal/scrap/pig_iron>,
+	<tfc:metal/scrap/steel>,
+	<tfc:metal/scrap/platinum>,
+	<tfc:metal/scrap/black_steel>,
+	<tfc:metal/scrap/blue_steel>,
+	<tfc:metal/scrap/red_steel>,
+	// Trapdoors
+	<tfc:metal/trapdoor/pig_iron>,
 	// Small Ores
 	<tfc:ore/native_copper:*>,
 	<tfc:ore/native_gold:*>,
@@ -999,10 +1039,54 @@ val Array12 as IItemStack[] = [
 	<tfc:metal/knife/black_steel>,
 	<tfc:metal/knife/blue_steel>,
 	<tfc:metal/knife/red_steel>,
+	// Knife Heads
+	<tfc:metal/knife_blade/bismuth_bronze>,
+	<tfc:metal/knife_blade/black_bronze>,
+	<tfc:metal/knife_blade/bronze>,
+	<tfc:metal/knife_blade/copper>,
+	<tfc:metal/knife_blade/wrought_iron>,
+	<tfc:metal/knife_blade/steel>,
+	<tfc:metal/knife_blade/black_steel>,
+	<tfc:metal/knife_blade/blue_steel>,
+	<tfc:metal/knife_blade/red_steel>,
+	// Scythe
+	<tfc:metal/scythe/bismuth_bronze>,
+	<tfc:metal/scythe/black_bronze>,
+	<tfc:metal/scythe/bronze>,
+	<tfc:metal/scythe/copper>,
+	<tfc:metal/scythe/wrought_iron>,
+	<tfc:metal/scythe/steel>,
+	<tfc:metal/scythe/black_steel>,
+	<tfc:metal/scythe/blue_steel>,
+	<tfc:metal/scythe/red_steel>,
+	// Scythe Heads
+	<tfc:metal/scythe_blade/bismuth_bronze>,
+	<tfc:metal/scythe_blade/black_bronze>,
+	<tfc:metal/scythe_blade/bronze>,
+	<tfc:metal/scythe_blade/copper>,
+	<tfc:metal/scythe_blade/wrought_iron>,
+	<tfc:metal/scythe_blade/steel>,
+	<tfc:metal/scythe_blade/black_steel>,
+	<tfc:metal/scythe_blade/blue_steel>,
+	<tfc:metal/scythe_blade/red_steel>,
+	// Gems [Hidden]
+	<tfc:gem/beryl:*>,
+	<tfc:gem/agate:*>,
+	<tfc:gem/tourmaline:*>,
+	<tfc:gem/jade:*>,
+	<tfc:gem/jasper:*>,
+	// Gems [Unhidden]
+	<tfc:gem/amethyst:*>,
+	<tfc:gem/emerald:*>,
+	<tfc:gem/diamond:*>,
+	<tfc:gem/garnet:*>,
+	<tfc:gem/opal:*>,
+	<tfc:gem/ruby:*>,
+	<tfc:gem/sapphire:*>,
+	<tfc:gem/topaz:*>,
 	// Powder
 	<tfc:powder/saltpeter>,
 	<tfc:powder/salt>,
-	<tfc:powder/graphite>,
 	<tfc:powder/sulfur>,
 	<tfc:powder/lapis_lazuli>,
 	<tfc:powder/limonite>,

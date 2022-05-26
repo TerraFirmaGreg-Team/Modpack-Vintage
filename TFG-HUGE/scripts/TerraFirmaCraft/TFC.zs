@@ -55,7 +55,7 @@ for item in RemoveItemRecipesByName{
 
 // Удаление рецептов из бочки
 val RemoveRecipesInBarrel = [
-  	"tfc:concrete_white",
+	"tfc:concrete_white",
 	"tfc:concrete_orange",
 	"tfc:concrete_magenta",
 	"tfc:concrete_light_blue",
@@ -101,6 +101,22 @@ for item in TFC_Rods {
     Anvil.removeRecipe(item);
 }
 
+// Удаление рецептов сварки ножниц
+val TFC_Shears as IItemStack[] = [
+	<tfc:metal/shears/steel>,
+	<tfc:metal/shears/wrought_iron>,
+	<tfc:metal/shears/black_steel>,
+	<tfc:metal/shears/red_steel>,
+	<tfc:metal/shears/blue_steel>,
+	<tfc:metal/shears/copper>,
+	<tfc:metal/shears/bismuth_bronze>,
+	<tfc:metal/shears/black_bronze>,
+	<tfc:metal/shears/bronze>
+];
+for item in TFC_Shears {
+    Welding.removeRecipe(item);
+}
+
 // Удаление рецептов ковки голов
 for item in All_Metal_Heads_From_TFC {
     Anvil.removeRecipe(item);
@@ -116,99 +132,47 @@ for item in TFC_Double_Sheets {
     Welding.removeRecipe(item);
 }
 
+// Удаление некоторых рецептов PigIron
+Welding.removeRecipe(<tfc:metal/double_ingot/pig_iron>);
+Anvil.removeRecipe(<tfc:metal/trapdoor/pig_iron>);
+
 // --- Adding Recipes
 
 // Quern - GT ore --> GT crushed ore
 // - Copper
-Quern.addRecipe("TFG_GTOreToTFC_Copper_0", <gregtech:ore_copper_0:*>, <metaitem:crushedCopper> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Copper_1", <gregtech:ore_copper_1:*>, <metaitem:crushedCopper> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Copper_2", <gregtech:ore_copper_2:*>, <metaitem:crushedCopper> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Malachite_0", <gregtech:ore_malachite_0:*>, <metaitem:crushedMalachite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Malachite_1", <gregtech:ore_malachite_1:*>, <metaitem:crushedMalachite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Malachite_2", <gregtech:ore_malachite_2:*>, <metaitem:crushedMalachite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Tetrahedrite_0", <gregtech:ore_tetrahedrite_0:*>, <metaitem:crushedTetrahedrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Tetrahedrite_1", <gregtech:ore_tetrahedrite_1:*>, <metaitem:crushedTetrahedrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Tetrahedrite_2", <gregtech:ore_tetrahedrite_2:*>, <metaitem:crushedTetrahedrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bornite_0", <gregtech:ore_bornite_0:*>, <metaitem:crushedBornite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bornite_1", <gregtech:ore_bornite_1:*>, <metaitem:crushedBornite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bornite_2", <gregtech:ore_bornite_2:*>, <metaitem:crushedBornite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcopyrite_0", <gregtech:ore_chalcopyrite_0:*>, <metaitem:crushedChalcopyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcopyrite_1", <gregtech:ore_chalcopyrite_1:*>, <metaitem:crushedChalcopyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcopyrite_2", <gregtech:ore_chalcopyrite_2:*>, <metaitem:crushedChalcopyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcocite_0", <gregtech:ore_chalcocite_0:*>, <metaitem:crushedChalcocite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcocite_1", <gregtech:ore_chalcocite_1:*>, <metaitem:crushedChalcocite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Chalcocite_2", <gregtech:ore_chalcocite_2:*>, <metaitem:crushedChalcocite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Copper", <metaitem:oreChunkCopper>, <metaitem:crushedCopper> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Malachite", <metaitem:oreChunkMalachite>, <metaitem:crushedMalachite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Tetrahedrite", <metaitem:oreChunkTetrahedrite>, <metaitem:crushedTetrahedrite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Bornite", <metaitem:oreChunkBornite>, <metaitem:crushedBornite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Chalcopyrite", <metaitem:oreChunkChalcopyrite>, <metaitem:crushedChalcopyrite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Chalcocite", <metaitem:oreChunkChalcocite>, <metaitem:crushedChalcocite> * 2);
 // - Tin
-Quern.addRecipe("TFG_GTOreToTFC_Tin_0", <gregtech:ore_tin_0:*>, <metaitem:crushedTin> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Tin_1", <gregtech:ore_tin_1:*>, <metaitem:crushedTin> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Tin_2", <gregtech:ore_tin_2:*>, <metaitem:crushedTin> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Cassiterite_0", <gregtech:ore_cassiterite_0:*>, <metaitem:crushedCassiterite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Cassiterite_1", <gregtech:ore_cassiterite_1:*>, <metaitem:crushedCassiterite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Cassiterite_2", <gregtech:ore_cassiterite_2:*>, <metaitem:crushedCassiterite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_CassiteriteSand_0", <gregtech:ore_cassiterite_sand_0:*>, <metaitem:crushedCassiteriteSand> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_CassiteriteSand_1", <gregtech:ore_cassiterite_sand_1:*>, <metaitem:crushedCassiteriteSand> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_CassiteriteSand_2", <gregtech:ore_cassiterite_sand_2:*>, <metaitem:crushedCassiteriteSand> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Tin", <metaitem:oreChunkTin>, <metaitem:crushedTin> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Cassiterite", <metaitem:oreChunkCassiterite>, <metaitem:crushedCassiterite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_CassiteriteSand", <metaitem:oreChunkCassiteriteSand>, <metaitem:crushedCassiteriteSand> * 2);
 // - Iron
-Quern.addRecipe("TFG_GTOreToTFC_Iron_0", <gregtech:ore_iron_0:*>, <metaitem:crushedIron> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Iron_1", <gregtech:ore_iron_1:*>, <metaitem:crushedIron> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Iron_2", <gregtech:ore_iron_2:*>, <metaitem:crushedIron> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pyrite_0", <gregtech:ore_pyrite_0:*>, <metaitem:crushedPyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pyrite_1", <gregtech:ore_pyrite_1:*>, <metaitem:crushedPyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pyrite_2", <gregtech:ore_pyrite_2:*>, <metaitem:crushedPyrite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_YellowLimonite_0", <gregtech:ore_yellow_limonite_0:*>, <metaitem:crushedYellowLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_YellowLimonite_1", <gregtech:ore_yellow_limonite_1:*>, <metaitem:crushedYellowLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_YellowLimonite_2", <gregtech:ore_yellow_limonite_2:*>, <metaitem:crushedYellowLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Magnetite_0", <gregtech:ore_magnetite_0:*>, <metaitem:crushedMagnetite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Magnetite_1", <gregtech:ore_magnetite_1:*>, <metaitem:crushedMagnetite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Magnetite_2", <gregtech:ore_magnetite_2:*>, <metaitem:crushedMagnetite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BrownLimonite_0", <gregtech:ore_brown_limonite_0:*>, <metaitem:crushedBrownLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BrownLimonite_1", <gregtech:ore_brown_limonite_1:*>, <metaitem:crushedBrownLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BrownLimonite_2", <gregtech:ore_brown_limonite_2:*>, <metaitem:crushedBrownLimonite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BandedIron_0", <gregtech:ore_banded_iron_0:*>, <metaitem:crushedBandedIron> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BandedIron_1", <gregtech:ore_banded_iron_1:*>, <metaitem:crushedBandedIron> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_BandedIron_2", <gregtech:ore_banded_iron_2:*>, <metaitem:crushedBandedIron> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Iron", <metaitem:oreChunkIron>, <metaitem:crushedIron> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Pyrite", <metaitem:oreChunkPyrite>, <metaitem:crushedPyrite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_YellowLimonite", <metaitem:oreChunkYellowLimonite>, <metaitem:crushedYellowLimonite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Magnetite", <metaitem:oreChunkMagnetite>, <metaitem:crushedMagnetite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_BrownLimonite", <metaitem:oreChunkBrownLimonite>, <metaitem:crushedBrownLimonite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_BandedIron", <metaitem:oreChunkBandedIron>, <metaitem:crushedBandedIron> * 2);
 // - Nickel
-Quern.addRecipe("TFG_GTOreToTFC_Nickel_0", <gregtech:ore_nickel_0:*>, <metaitem:crushedNickel> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Nickel_1", <gregtech:ore_nickel_1:*>, <metaitem:crushedNickel> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Nickel_2", <gregtech:ore_nickel_2:*>, <metaitem:crushedNickel> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Garnierite_0", <gregtech:ore_garnierite_0:*>, <metaitem:crushedGarnierite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Garnierite_1", <gregtech:ore_garnierite_1:*>, <metaitem:crushedGarnierite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Garnierite_2", <gregtech:ore_garnierite_2:*>, <metaitem:crushedGarnierite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pentlandite_0", <gregtech:ore_pentlandite_0:*>, <metaitem:crushedPentlandite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pentlandite_1", <gregtech:ore_pentlandite_1:*>, <metaitem:crushedPentlandite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Pentlandite_2", <gregtech:ore_pentlandite_2:*>, <metaitem:crushedPentlandite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Nickel", <metaitem:oreChunkNickel>, <metaitem:crushedNickel> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Garnierite", <metaitem:oreChunkGarnierite>, <metaitem:crushedGarnierite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Pentlandite", <metaitem:oreChunkPentlandite>, <metaitem:crushedPentlandite> * 2);
 // - Galena
-Quern.addRecipe("TFG_GTOreToTFC_Galena_0", <gregtech:ore_galena_0:*>, <metaitem:crushedGalena> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Galena_1", <gregtech:ore_galena_1:*>, <metaitem:crushedGalena> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Galena_2", <gregtech:ore_galena_2:*>, <metaitem:crushedGalena> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Lead_0", <gregtech:ore_lead_0:*>, <metaitem:crushedLead> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Lead_1", <gregtech:ore_lead_1:*>, <metaitem:crushedLead> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Lead_2", <gregtech:ore_lead_2:*>, <metaitem:crushedLead> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Galena", <metaitem:oreChunkGalena>, <metaitem:crushedGalena> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Lead", <metaitem:oreChunkLead>, <metaitem:crushedLead> * 2);
 // - Other
-Quern.addRecipe("TFG_GTOreToTFC_Gold_0", <gregtech:ore_gold_0:*>, <metaitem:crushedGold> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Gold_1", <gregtech:ore_gold_1:*>, <metaitem:crushedGold> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Gold_2", <gregtech:ore_gold_2:*>, <metaitem:crushedGold> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Silver_0", <gregtech:ore_silver_0:*>, <metaitem:crushedSilver> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Silver_1", <gregtech:ore_silver_1:*>, <metaitem:crushedSilver> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Silver_2", <gregtech:ore_silver_2:*>, <metaitem:crushedSilver> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sphalerite_0", <gregtech:ore_sphalerite_0:*>, <metaitem:crushedSphalerite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sphalerite_1", <gregtech:ore_sphalerite_1:*>, <metaitem:crushedSphalerite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sphalerite_2", <gregtech:ore_sphalerite_2:*>, <metaitem:crushedSphalerite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sulfur_0", <gregtech:ore_sulfur_0:*>, <metaitem:crushedSulfur> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sulfur_1", <gregtech:ore_sulfur_1:*>, <metaitem:crushedSulfur> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Sulfur_2", <gregtech:ore_sulfur_2:*>, <metaitem:crushedSulfur> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_RockSalt_0", <gregtech:ore_rock_salt_0:*>, <metaitem:crushedRockSalt> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_RockSalt_1", <gregtech:ore_rock_salt_1:*>, <metaitem:crushedRockSalt> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_RockSalt_2", <gregtech:ore_rock_salt_2:*>, <metaitem:crushedRockSalt> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Graphite_0", <gregtech:ore_graphite_0:*>, <metaitem:crushedGraphite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Graphite_1", <gregtech:ore_graphite_1:*>, <metaitem:crushedGraphite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Graphite_2", <gregtech:ore_graphite_2:*>, <metaitem:crushedGraphite> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Mica_0", <gregtech:ore_mica_0:*>, <metaitem:crushedMica> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Mica_1", <gregtech:ore_mica_1:*>, <metaitem:crushedMica> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Mica_2", <gregtech:ore_mica_2:*>, <metaitem:crushedMica> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bismuth_0", <gregtech:ore_bismuth_0:*>, <metaitem:crushedBismuth> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bismuth_1", <gregtech:ore_bismuth_1:*>, <metaitem:crushedBismuth> * 2);
-Quern.addRecipe("TFG_GTOreToTFC_Bismuth_2", <gregtech:ore_bismuth_2:*>, <metaitem:crushedBismuth> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Gold", <metaitem:oreChunkGold>, <metaitem:crushedGold> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Silver", <metaitem:oreChunkSilver>, <metaitem:crushedSilver> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Sphalerite", <metaitem:oreChunkSphalerite>, <metaitem:crushedSphalerite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Sulfur", <metaitem:oreChunkSulfur>, <metaitem:crushedSulfur> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_RockSalt", <metaitem:oreChunkRockSalt>, <metaitem:crushedRockSalt> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Graphite", <metaitem:oreChunkGraphite>, <metaitem:crushedGraphite> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Mica", <metaitem:oreChunkMica>, <metaitem:crushedMica> * 2);
+Quern.addRecipe("TFG_ChunkToCrushedOre_Bismuth", <metaitem:oreChunkBismuth>, <metaitem:crushedBismuth> * 2);
 
 // Новые рецепты ковки GT мечей
 Anvil.addRecipe("TFG_sword_blade/Copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
@@ -287,16 +251,49 @@ Anvil.addRecipe("TFG_hammer_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:t
 Anvil.addRecipe("TFG_hammer_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadHammerBlueSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 Anvil.addRecipe("TFG_hammer_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadHammerRedSteel>, 6, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
 
+// Новые рецепты ковки GT ножей
+Anvil.addRecipe("TFG_knife_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadKnifeCopper>, 1, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadKnifeBismuthBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadKnifeBlackBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadKnifeBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadKnifeWroughtIron>, 3, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadKnifeSteel>, 4, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadKnifeBlackSteel>, 5, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadKnifeBlueSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+Anvil.addRecipe("TFG_knife_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadKnifeRedSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "DRAW_THIRD_LAST");
+
+// Новые рецепты ковки GT кос
+Anvil.addRecipe("TFG_sense_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadSenseCopper>, 1, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadSenseBismuthBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadSenseBlackBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadSenseBronze>, 2, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadSenseWroughtIron>, 3, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadSenseSteel>, 4, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadSenseBlackSteel>, 5, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadSenseBlueSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_sense_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadSenseRedSteel>, 6, "tools", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
+
 // Крафт голов напильков GT
 Anvil.addRecipe("TFG_file_head/Copper", <ore:ingotCopper>, <metaitem:toolHeadFileCopper>, 1, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("TFG_file_head/Bronze", <ore:ingotBronze>, <metaitem:toolHeadFileBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("TFG_file_head/BismuthBronze", <ore:ingotBismuthBronze>, <metaitem:toolHeadFileBismuthBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("TFG_file_head/BlackBronze", <ore:ingotBlackBronze>, <metaitem:toolHeadFileBlackBronze>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("TFG_file_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadFileBlackSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("TFG_file_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadFileRedSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("TFG_file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
-Anvil.addRecipe("TFG_file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 2, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("TFG_file_head/BlackSteel", <ore:ingotBlackSteel>, <metaitem:toolHeadFileBlackSteel>, 5, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("TFG_file_head/RedSteel", <ore:ingotRedSteel>, <metaitem:toolHeadFileRedSteel>, 6, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("TFG_file_head/BlueSteel", <ore:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 6, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("TFG_file_head/Steel", <ore:ingotSteel>, <metaitem:toolHeadFileSteel>, 4, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 Anvil.addRecipe("TFG_file_head/WroughtIron", <ore:ingotWroughtIron>, <metaitem:toolHeadFileWroughtIron>, 3, "tools", "PUNCH_LAST", "SHRINK_NOT_LAST");
+
+// Крафт ножниц
+Welding.addRecipe("TFG_shears/Copper", <metaitem:toolHeadKnifeCopper>, <metaitem:toolHeadKnifeCopper>, <tfc:metal/shears/copper>, 1);
+Welding.addRecipe("TFG_shears/Bronze", <metaitem:toolHeadKnifeBronze>, <metaitem:toolHeadKnifeBronze>, <tfc:metal/shears/bronze>, 2);
+Welding.addRecipe("TFG_shears/BismuthBronze", <metaitem:toolHeadKnifeBismuthBronze>, <metaitem:toolHeadKnifeBismuthBronze>, <tfc:metal/shears/bismuth_bronze>, 2);
+Welding.addRecipe("TFG_shears/BlackBronze", <metaitem:toolHeadKnifeBlackBronze>, <metaitem:toolHeadKnifeBlackBronze>, <tfc:metal/shears/black_bronze>, 2);
+Welding.addRecipe("TFG_shears/BlackSteel", <metaitem:toolHeadKnifeBlackSteel>, <metaitem:toolHeadKnifeBlackSteel>, <tfc:metal/shears/black_steel>, 5);
+Welding.addRecipe("TFG_shears/RedSteel", <metaitem:toolHeadKnifeRedSteel>, <metaitem:toolHeadKnifeRedSteel>, <tfc:metal/shears/red_steel>, 6);
+Welding.addRecipe("TFG_shears/BlueSteel", <metaitem:toolHeadKnifeBlueSteel>, <metaitem:toolHeadKnifeBlueSteel>, <tfc:metal/shears/blue_steel>, 6);
+Welding.addRecipe("TFG_shears/Steel", <metaitem:toolHeadKnifeSteel>, <metaitem:toolHeadKnifeSteel>, <tfc:metal/shears/steel>, 4);
+Welding.addRecipe("TFG_shears/WroughtIron", <metaitem:toolHeadKnifeWroughtIron>, <metaitem:toolHeadKnifeWroughtIron>, <tfc:metal/shears/wrought_iron>, 3);
 
 // Ведра и красной и синей стали
 Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);

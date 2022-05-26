@@ -1,6 +1,6 @@
 {
-	x: 12.0d,
-	y: -5.0d,
+	x: 0.25d,
+	y: 20.5d,
 	description: "{tfg.quests.space.fuelloader.subtitle}",
 	dependencies: [
 		"f6e1782c",

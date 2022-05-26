@@ -36,17 +36,17 @@ jei.chat.error.no.cheat.permission.1=У вас нет разрешения на 
 jei.chat.error.no.cheat.permission.2=Разрешение выдаётся игрокам, которые могут использовать /give или находятся в творческом режиме.
 
 # Key Bindings
-key.jei.toggleOverlay=Переключить оверлей предметов
+key.jei.toggleOverlay=Показать/скрыть HEI
 key.jei.focusSearch=Выбрать строку поиска
 key.jei.showRecipe=Показывать рецепты предметов
 key.jei.showUses=Показывать применения предметов
 key.jei.recipeBack=Показать предыдущую страницу рецептов
-key.jei.toggleCheatMode=Переключить режим жульничества
+key.jei.toggleCheatMode=Переключить чит режим
+key.jei.toggleEditMode=Переключить режим скрытия/редактирования
 key.jei.previousPage=Предыдущая
 key.jei.nextPage=Следующая
 key.jei.bookmark=Управление закладками
 key.jei.toggleBookmarkOverlay=Переключить оверлей закладок
-key.jei.toggleBookmarkOverlay=Показать/скрыть отмеченные ингредиенты
 
 # Config
 config.jei.default=По-умолчанию
@@ -127,19 +127,25 @@ gui.jei.category.brewing=Варка
 gui.jei.category.brewing.steps=Шаги: %s
 gui.jei.category.itemInformation=Описание
 
-# DEBUG (for debug mode, do not need translation)
+# DEBUG (для режима отладки перевод не нужен)
 description.jei.wooden.door.1=Деревянные двери позволяют блокировать проникновение монстров в ваше здание.\nПроверка предложений.
 description.jei.wooden.door.2=Нажатие на дверь меняет ее состояние с открытого на закрытое и наоборот.
-description.jei.wooden.door.3=Деревянные двери можно открывать/закрывать с помощью Редстоуна.
+description.jei.wooden.door.3=Деревянные двери можно открывать/закрывать с помощью цепей Редстоуна.
 
 # New HEI lang keys
-config.jei.rendering=Рендеринг
+config.jei.rendering=Визуализация
 config.jei.rendering.comment=Параметры конфигурации рендеринга
 config.jei.misc=Разное
 config.jei.misc.comment=Разные параметры конфигурации
 
+config.jei.search.searchAdvancedTooltips=Поиск расширенных всплывающих подсказок
+config.jei.search.searchAdvancedTooltips.comment=Включает расширенные всплывающие подсказки в деревьях поиска [БУДЕТ ПЕРЕЗАГРУЖЕНО ДЕРЕВА ПОИСКА]
+
+config.jei.search.searchStrippedDiacritics=Поиск удаленных диакритических знаков
+config.jei.search.searchStrippedDiacritics.comment=Включает версию строк с удаленными диакритическими знаками в деревьях поиска [БУДЕТ ПЕРЕЗАГРУЖЕНО ДЕРЕВА ПОИСКА]
+
 config.jei.advanced.asyncSearchTreeBuilding=Асинхронное построение дерева поиска
-config.jei.advanced.asyncSearchTreeBuilding.comment=Построение деревьев поиска в нескольких потоках одновременно, отключите эту функцию, если вы испытываете чрезвычайно высокую нагрузку на свой процессор при загрузке HEI
+config.jei.advanced.asyncSearchTreeBuilding.comment=Построение деревьев поиска в нескольких потоках одновременно, отключите эту функцию, если вы испытываете чрезвычайно высокую нагрузку на свой процессор при загрузке JEI
 
 config.jei.advanced.addBookmarksToFront=Добавлять новые закладки в начало
 config.jei.advanced.addBookmarksToFront.comment=Если включено, новые закладки добавляются в начало списка закладок

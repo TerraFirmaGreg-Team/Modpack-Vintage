@@ -1,0 +1,41 @@
+type = customizablemenus
+
+net.minecraft.client.gui.GuiWorldSelection {
+}
+
+net.minecraft.client.gui.GuiCreateWorld {
+}
+
+net.minecraft.client.gui.GuiCustomizeWorldScreen {
+}
+
+net.minecraft.client.gui.GuiCreateFlatWorld {
+}
+
+net.minecraft.client.gui.GuiFlatPresets {
+}
+
+net.minecraftforge.fml.client.GuiModList {
+}
+
+net.minecraft.client.gui.inventory.GuiContainerCreative {
+}
+
+net.minecraft.client.gui.GuiDisconnected {
+}
+
+net.minecraft.client.multiplayer.GuiConnecting {
+}
+
+net.minecraft.client.gui.GuiVideoSettings {
+}
+
+net.minecraft.client.gui.GuiMultiplayer {
+}
+
+net.minecraft.client.gui.GuiIngameMenu {
+}
+
+net.minecraft.client.gui.GuiMainMenu {
+}
+

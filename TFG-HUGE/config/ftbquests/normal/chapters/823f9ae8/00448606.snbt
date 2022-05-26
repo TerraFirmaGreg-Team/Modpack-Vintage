@@ -1,0 +1,22 @@
+{
+	x: -25.0d,
+	y: 11.0d,
+	dependencies: [
+		"2816fe72"
+	],
+	tasks: [{
+		uid: "44764b9b",
+		type: "item",
+		items: [{
+			id: "tfc:quiver",
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 8
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

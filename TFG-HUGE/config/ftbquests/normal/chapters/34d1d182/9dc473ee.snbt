@@ -1,6 +1,7 @@
 {
-	x: 20.0d,
-	y: -3.0d,
+	x: 15.75d,
+	y: 10.125d,
+	shape: "octagon",
 	dependencies: [
 		"da0f3c78"
 	],

@@ -1,0 +1,23 @@
+{
+	title: "Оберон",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/oberon.png"
+		}
+	},
+	x: 19.5d,
+	y: 7.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a62ca553"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "ea2ac527",
+		type: "item",
+		items: [{
+			item: "extraplanets:oberon"
+		}]
+	}]
+}
