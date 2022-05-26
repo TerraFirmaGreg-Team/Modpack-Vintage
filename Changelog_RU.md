@@ -16,7 +16,7 @@
 - Изменен крафт Dense Energy Cell и  Energy Cell из ae2
 - Изменен крафт продвинутого и жидкостного корпуса хранилища из Extra Cells 2
 - Исправлены некоторые ошибки перевода
-Добавлен крафт для Nether Star
+- Добавлен крафт для Nether Star
 Обновлены моды:
 - Appliedenergistics2
 - loliasm
@@ -32,7 +32,6 @@
 - konkrete
 - fancymenu
 - tfctowerheat
-- ...
 ```
 Версия R3.2.6 - 14.05.2022
 ```
