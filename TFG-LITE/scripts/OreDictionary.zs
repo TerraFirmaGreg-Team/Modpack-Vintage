@@ -214,6 +214,9 @@ for item in TFC_Slabs_Smooth {
 <ore:sheetDoubleBlueSteel>.remove(<tfc:metal/double_sheet/blue_steel>);
 <ore:sheetDoubleRedSteel>.remove(<tfc:metal/double_sheet/red_steel>);
 
+// sheetDoubleAnyBronze
+<ore:sheetDoubleAnyBronze>.remove(<tfc:metal/double_sheet/bismuth_bronze>, <tfc:metal/double_sheet/bronze>, <tfc:metal/double_sheet/black_bronze>);
+
 // gemSulfur
 <ore:gemSulfur>.remove(<tfc:ore/sulfur>);
 
