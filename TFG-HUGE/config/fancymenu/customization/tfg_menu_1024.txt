@@ -295,7 +295,7 @@ customization {
   y = -34
   scale = 1.0
   alignment = left
-  value = Modpack Type: §b[Lite]
+  value = Modpack Type: §b[Huge]
 }
 
 customization {
