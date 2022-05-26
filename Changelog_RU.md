@@ -1,5 +1,4 @@
 Версия R3.3.0 - Ожидается 29.05.2021
-https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
 ```
 [Lite, Huge]
 - Порошок из графита теперь виден в HEI.
