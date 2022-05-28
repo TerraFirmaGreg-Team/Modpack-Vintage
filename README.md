@@ -12,7 +12,4 @@ Discord: https://discord.com/invite/TZx8Cfr
 ![logo1](https://user-images.githubusercontent.com/52341158/170833134-e87acd9c-ae5b-476f-811e-2c363f2facf2.png)
 ![prehead2](https://user-images.githubusercontent.com/52341158/131987908-26511634-94cb-4db5-830e-5e9c44d03f9b.png)
 ![logo3](https://user-images.githubusercontent.com/52341158/131987918-3398055a-1b8d-499e-8bfe-aa8a791e9aa8.png)
-![logo4](https://user-images.githubusercontent.com/52341158/131987975-d574ae23-9de0-464f-9007-c8eccd0e1d09.png)
-
-
-
+![logo4](https://user-images.githubusercontent.com/52341158/170833176-7f822369-8743-4c02-a43c-dff9a70e60e2.png)
