@@ -274,56 +274,6 @@ customization {
 }
 
 customization {
-  orientation = bottom-left
-  shadow = true
-  x = 3
-  actionid = 36fbbd7c-3a93-4b73-9ad8-5143fc9603471652922878931
-  action = addtext
-  y = -43
-  scale = 1.0
-  alignment = left
-  value = Modpack Version: §cR3.3.0
-}
-
-customization {
-  orientation = bottom-left
-  shadow = true
-  x = 3
-  actionid = 377a769d-d758-4403-958b-a9eb46f5fb5d1652923208938
-  action = addtext
-  y = -34
-  scale = 1.0
-  alignment = left
-  value = Modpack Type: §b[Lite]
-}
-
-customization {
-  orientation = bottom-left
-  shadow = true
-  x = 65
-  actionid = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
-  action = addtext
-  y = -25
-  scale = 1.0
-  alignment = centered
-  value = Latest Modpack Version: 
-}
-
-customization {
-  orientation = element
-  shadow = true
-  orientation_element = 9e2bd21d-5515-458c-8fb1-abaa478429481652923478285
-  multiline = false
-  x = 123
-  action = addwebtext
-  actionid = 6a698154-d1a7-40f8-a568-ed3045a256991652923603187
-  y = 0
-  scale = 1.0
-  alignment = left
-  url = https://pastebin.com/raw/pPyKeYzA
-}
-
-customization {
   path = resources/modpack/tfg_logo.png
   orientation = top-centered
   x = -8
