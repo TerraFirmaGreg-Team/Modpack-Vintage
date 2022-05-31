@@ -3324,56 +3324,6 @@ global TFC_Tech_Long_Rods as IItemStack[] = [
 	<tfctech:metal/red_steel_long_rod>
 ];
 
-// - All TFC Sheets Array
-global TFC_Sheets as IItemStack[] = [
-	<tfc:metal/sheet/bismuth>,
-	<tfc:metal/sheet/bismuth_bronze>,
-	<tfc:metal/sheet/black_bronze>,
-	<tfc:metal/sheet/brass>,
-	<tfc:metal/sheet/bronze>,
-	<tfc:metal/sheet/copper>,
-	<tfc:metal/sheet/gold>,
-	<tfc:metal/sheet/lead>,
-	<tfc:metal/sheet/nickel>,
-	<tfc:metal/sheet/black_steel>,
-	<tfc:metal/sheet/rose_gold>,
-	<tfc:metal/sheet/silver>,
-	<tfc:metal/sheet/tin>,
-	<tfc:metal/sheet/zinc>,
-	<tfc:metal/sheet/sterling_silver>,
-	<tfc:metal/sheet/wrought_iron>,
-	<tfc:metal/sheet/pig_iron>,
-	<tfc:metal/sheet/steel>,
-	<tfc:metal/sheet/platinum>,
-	<tfc:metal/sheet/blue_steel>,
-	<tfc:metal/sheet/red_steel>
-];
-
-// - All TFC Double Sheets Array
-global TFC_Double_Sheets as IItemStack[] = [
-	<tfc:metal/double_sheet/bismuth>,
-	<tfc:metal/double_sheet/bismuth_bronze>,
-	<tfc:metal/double_sheet/black_bronze>,
-	<tfc:metal/double_sheet/brass>,
-	<tfc:metal/double_sheet/bronze>,
-	<tfc:metal/double_sheet/copper>,
-	<tfc:metal/double_sheet/gold>,
-	<tfc:metal/double_sheet/lead>,
-	<tfc:metal/double_sheet/nickel>,
-	<tfc:metal/double_sheet/black_steel>,
-	<tfc:metal/double_sheet/rose_gold>,
-	<tfc:metal/double_sheet/silver>,
-	<tfc:metal/double_sheet/tin>,
-	<tfc:metal/double_sheet/zinc>,
-	<tfc:metal/double_sheet/sterling_silver>,
-	<tfc:metal/double_sheet/wrought_iron>,
-	<tfc:metal/double_sheet/pig_iron>,
-	<tfc:metal/double_sheet/steel>,
-	<tfc:metal/double_sheet/platinum>,
-	<tfc:metal/double_sheet/blue_steel>,
-	<tfc:metal/double_sheet/red_steel>
-];
-
 // All Glass Panes Array
 global Glass_Panes_Array as IItemStack[] = [
     <minecraft:stained_glass_pane>,

@@ -91,47 +91,6 @@ for item in RemoveItemsFromQuern {
     Quern.removeRecipe(item);
 }
 
-// Удаление рецептов ковки палок TFC
-val TFC_Rods as IItemStack[] = [
-	<tfc:metal/rod/gold> * 2,
-	<tfc:metal/rod/wrought_iron> * 2,
-	<tfc:metal/rod/steel> * 2
-];
-for item in TFC_Rods {
-    Anvil.removeRecipe(item);
-}
-
-// Удаление рецептов сварки ножниц
-val TFC_Shears as IItemStack[] = [
-	<tfc:metal/shears/steel>,
-	<tfc:metal/shears/wrought_iron>,
-	<tfc:metal/shears/black_steel>,
-	<tfc:metal/shears/red_steel>,
-	<tfc:metal/shears/blue_steel>,
-	<tfc:metal/shears/copper>,
-	<tfc:metal/shears/bismuth_bronze>,
-	<tfc:metal/shears/black_bronze>,
-	<tfc:metal/shears/bronze>
-];
-for item in TFC_Shears {
-    Welding.removeRecipe(item);
-}
-
-// Удаление рецептов ковки голов
-for item in All_Metal_Heads_From_TFC {
-    Anvil.removeRecipe(item);
-}
-
-// Удаление рецептов ковки пластин
-for item in TFC_Sheets {
-    Anvil.removeRecipe(item);
-}
-
-// Удаление рецептов сварки двойных пластин
-for item in TFC_Double_Sheets {
-    Welding.removeRecipe(item);
-}
-
 // Удаление некоторых рецептов PigIron
 Welding.removeRecipe(<tfc:metal/double_ingot/pig_iron>);
 Anvil.removeRecipe(<tfc:metal/trapdoor/pig_iron>);
@@ -296,26 +255,20 @@ Welding.addRecipe("TFG_shears/Steel", <metaitem:toolHeadKnifeSteel>, <metaitem:t
 Welding.addRecipe("TFG_shears/WroughtIron", <metaitem:toolHeadKnifeWroughtIron>, <metaitem:toolHeadKnifeWroughtIron>, <tfc:metal/shears/wrought_iron>, 3);
 
 // Ведра и красной и синей стали
-Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
-Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
-Anvil.addRecipe("TFG_bucket/BlueSteel", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
-Anvil.addRecipe("TFG_bucket/RedSteel", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_bucket/blue_steel", <ore:plateBlueSteel>, <tfc:metal/bucket/blue_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+Anvil.addRecipe("TFG_bucket/red_steel", <ore:plateRedSteel>, <tfc:metal/bucket/red_steel>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 
 // Гриль
-Anvil.removeRecipe(<tfc:wrought_iron_grill>);
-Anvil.addRecipe("TFG_Grill", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
+Anvil.addRecipe("TFG_grill", <ore:plateDoubleWroughtIron>, <tfc:wrought_iron_grill>, 3, "general", "DRAW_ANY", "PUNCH_LAST", "PUNCH_NOT_LAST");
 
 // Железная дверь
-Anvil.removeRecipe(<minecraft:iron_door>);
-Anvil.addRecipe("TFG_Iron_Door", <ore:plateDoubleWroughtIron>, <minecraft:iron_door>, 3, "general", "HIT_LAST", "DRAW_NOT_LAST", "PUNCH_NOT_LAST");
+Anvil.addRecipe("TFG_iron_door", <ore:plateDoubleWroughtIron>, <minecraft:iron_door>, 3, "general", "HIT_LAST", "DRAW_NOT_LAST", "PUNCH_NOT_LAST");
 
 // Iron Bars x8
-Anvil.removeRecipe(<minecraft:iron_bars> * 8);
-Anvil.addRecipe("TFG_Iron_Bars_1", <ore:plateWroughtIron>, <minecraft:iron_bars> * 8, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+Anvil.addRecipe("TFG_iron_bars", <ore:plateWroughtIron>, <minecraft:iron_bars> * 8, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
 // Iron Bars x16
-Anvil.removeRecipe(<minecraft:iron_bars> * 16);
-Anvil.addRecipe("TFG_Iron_Bars_2", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+Anvil.addRecipe("TFG_iron_bars_double", <ore:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
 // Unfinished Wrought Iron Ingot -> Wrought Iron Ingot
 Anvil.addRecipe("TFG_WroughtIron_To_WroughtIron", <tfc:metal/ingot/wrought_iron>, <metaitem:ingotWroughtIron>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");

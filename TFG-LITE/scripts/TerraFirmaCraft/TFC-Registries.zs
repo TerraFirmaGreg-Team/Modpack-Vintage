@@ -38,7 +38,6 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 // ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
 
 // --- Регистрация металлов для двойных пластин GregTech
-/*
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 165, true);
@@ -58,7 +57,7 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 165, true);
-*/
+
 
 // ---//--- Вариации Меди
 
@@ -185,7 +184,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiteriteSand>, "TIN", 3, tru
 // Кусок руды
 ItemRegistry.registerItemMetal(<metaitem:oreChunkIron>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 100, false);
+ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 144, false);
 // Грязная Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustImpureIron>, "WROUGHT_IRON", 80, false);
 // Средняя Кучка
