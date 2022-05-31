@@ -1,7 +1,7 @@
 type = menu
 
 customization-meta {
-  identifier = %fancymenu:universal_layout%
+  identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
   renderorder = foreground
   randommode = false
@@ -15,8 +15,8 @@ customization {
 
 customization {
   orientation = bottom-left
-  shadow = false
-  x = 5
+  shadow = true
+  x = 4
   actionid = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
   action = addtext
   y = -44
