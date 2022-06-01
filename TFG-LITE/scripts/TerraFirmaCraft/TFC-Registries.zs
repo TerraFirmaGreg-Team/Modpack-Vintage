@@ -58,7 +58,6 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 165,
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 165, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 165, true);
 
-
 // ---//--- Вариации Меди
 
 // --- Чистая Медь
