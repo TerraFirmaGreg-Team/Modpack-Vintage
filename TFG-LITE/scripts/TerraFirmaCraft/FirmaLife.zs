@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.Anvil;
 import mods.firmalife.Drying;
+import mods.terrafirmacraft.ItemRegistry;
 
 // --- Removing Recipes
 
@@ -19,6 +20,28 @@ for item in ItemsToRemove{
 }
 
 // --- Adding Recipes
+
+// Присвоение единиц металла
+// Mallet Heads
+ItemRegistry.registerItemMetal(<firmalife:bismuth_bronze_mallet_head>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:black_bronze_mallet_head>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:bronze_mallet_head>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:copper_mallet_head>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:wrought_iron_mallet_head>, "WROUGHT_IRON", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:steel_mallet_head>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:black_steel_mallet_head>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:blue_steel_mallet_head>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet_head>, "RED_STEEL", 144, true);
+// Mallets
+ItemRegistry.registerItemMetal(<firmalife:bismuth_bronze_mallet>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:black_bronze_mallet>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:bronze_mallet>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:copper_mallet>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:wrought_iron_mallet>, "WROUGHT_IRON", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:steel_mallet>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:black_steel_mallet>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:blue_steel_mallet>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, true);
 
 // Климатическая станция уровня 0
 recipes.addShaped(<firmalife:climate_station>,

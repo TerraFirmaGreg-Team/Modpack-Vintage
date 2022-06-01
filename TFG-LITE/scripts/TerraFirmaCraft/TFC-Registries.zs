@@ -38,25 +38,25 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 // ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
 
 // --- Регистрация металлов для двойных пластин GregTech
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 165, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 200, true);
 
 // ---//--- Вариации Меди
 
