@@ -173,9 +173,9 @@ ItemRegistry.registerItemMetal(<tfctech:metal/iron_groove>, "WROUGHT_IRON", 72, 
 // Bowl Mount
 ItemRegistry.registerItemMetal(<tfctech:metal/iron_bowl_mount>, "WROUGHT_IRON", 144, true);
 // Draw Plates
-ItemRegistry.registerItemMetal(<tfctech:metal/iron_bowl_mount>, "WROUGHT_IRON", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_bowl_mount>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_bowl_mount>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/iron_draw_plate>, "WROUGHT_IRON", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/steel_draw_plate>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_draw_plate>, "BLACK_STEEL", 144, true);
 // Tongs
 ItemRegistry.registerItemMetal(<tfctech:metal/iron_tongs>, "WROUGHT_IRON", 144, true);
 // Inductor
