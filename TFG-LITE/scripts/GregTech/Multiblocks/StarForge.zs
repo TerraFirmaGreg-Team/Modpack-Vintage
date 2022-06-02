@@ -42,47 +42,51 @@ val loc = "star_forge";
 var star_forge = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
-      .aisle("AAAAAAA", "ABBBBBA", "ABBBBBA", "ABBBBBA", "ABBBBBA", "ABBBBBA", "AAAAAAA")
-      .aisle("AAAAAAA", "B     B", "B     B", "C     C", "B     B", "B     B", "ABBBBBA")
-      .aisle("AAAAAAA", "B EEE B", "C E E C", "CDE EDC", "C E E C", "B EEE B", "ABBBBBA")
-      .aisle("AAAAAAA", "C EEE C", "CD   DC", "CDFGFDC", "CD   DC", "C EEE C", "ABBBBBA")
-      .aisle("AAAAAAA", "B EEE B", "C E E C", "CDE EDC", "C E E C", "B EEE B", "ABBBBBA")
-      .aisle("AAAAAAA", "B     B", "B     B", "C     C", "B     B", "B     B", "ABBBBBA")
-      .aisle("ARRRRRA", "ABBSBBA", "ABBBBBA", "ABBBBBA", "ABBBBBA", "ABBBBBA", "AAAAAAA")																											
-    .where('S', controller.self())
-    .where(' ', CTPredicate.getAir())
-    .where('C', CTPredicate.states(<metastate:gregtech:meta_block_frame_157:8>))
-    .where('B', CTPredicate.states(<metastate:gregtech:transparent_casing>))
-    .where('D', CTPredicate.states(<metastate:gregtech:multiblock_casing:2>))
-    .where('E', CTPredicate.states(<metastate:gregtech:turbine_casing:4>))
-    .where('F', CTPredicate.states(<metastate:gregtech:turbine_casing:4>))
-    .where('G', CTPredicate.states(<metastate:gcym:unique_casing:4>))
-    .where('A', CTPredicate.states(<metastate:gregtech:metal_casing:5>))
-    .where('R', CTPredicate.states(<metastate:gregtech:fusion_casing>) | controller.autoAbilities())
-      .build();
+                .aisle("###############", "######CCC######", "######C#C######", "######C#C######", "######C#C######", "######C#C######", "######C#C######", "######CCC######", "###############")
+                .aisle("######C#C######", "#####FFFFF#####", "###############", "###############", "###############", "###############", "###############", "#####FFFFF#####", "######C#C######")
+                .aisle("######C#C######", "###FF#####FF###", "###############", "###############", "###############", "###############", "###############", "###FF#####FF###", "######C#C######")
+                .aisle("######C#C######", "##F#########F##", "#####FFFFF#####", "###############", "###############", "###############", "#####FFFFF#####", "##F#########F##", "######C#C######")
+                .aisle("######C#C######", "##F#########F##", "####F#XXX#F####", "######XXX######", "######XXX######", "######XXX######", "####F#XXX#F####", "##F#########F##", "######C#C######")
+                .aisle("######C#C######", "#F###########F#", "###F#X###X#F###", "#####X###X#####", "#####X###X#####", "#####X###X#####", "###F#X###X#F###", "#F###########F#", "######C#C######")
+                .aisle("#CCCCCCMCCCCCC#", "CF####XXX####FC", "C##FX#####XF##C", "C###X#####X###C", "C###X#####X###C", "C###X#####X###C", "C##FX#####XF##C", "CF####XXX####FC", "#CCCCCCMCCCCCC#")
+                .aisle("######MMM######", "CF####XXX####FC", "###FX#####XF###", "####X#####X####", "####X#####X####", "####X#####X####", "###FX#####XF###", "CF####XXX####FC", "######MMM######")
+                .aisle("#CCCCCCMCCCCCC#", "CF####XXX####FC", "C##FX#####XF##C", "C###X#####X###C", "C###X#####X###C", "C###X#####X###C", "C##FX#####XF##C", "CF####XXX####FC", "#CCCCCCMCCCCCC#")
+                .aisle("######C#C######", "#F###########F#", "###F#X###X#F###", "#####X###X#####", "#####X###X#####", "#####X###X#####", "###F#X###X#F###", "#F###########F#", "######C#C######")
+                .aisle("######C#C######", "##F#########F##", "####F#XXX#F####", "######XXX######", "######XXX######", "######XXX######", "####F#XXX#F####", "##F#########F##", "######C#C######")
+                .aisle("######C#C######", "##F#########F##", "#####FFFFF#####", "###############", "###############", "###############", "#####FFFFF#####", "##F#########F##", "######C#C######")
+                .aisle("######C#C######", "###FF#####FF###", "###############", "###############", "###############", "###############", "###############", "###FF#####FF###", "######C#C######")
+                .aisle("######C#C######", "#####FFFFF#####", "###############", "###############", "###############", "###############", "###############", "#####FFFFF#####", "######C#C######")
+                .aisle("###############", "######CSC######", "######C#C######", "######C#C######", "######C#C######", "######C#C######", "######C#C######", "######CCC######", "###############")
+                .where('M', CTPredicate.states(<metastate:gregtech:fusion_casing:3>))
+                .where('C', CTPredicate.states(<blockstate:htmltech:casing>) | controller.autoAbilities())
+                .where('X', CTPredicate.states(<metastate:gregtech:wire_coil:5>))
+                .where('F', CTPredicate.states(<metastate:gregtech:fusion_casing>))
+                .where('S', controller.self())
+                .where('#', CTPredicate.getAny())
+                .build();
   } as IPatternBuilderFunction)
   .withRecipeMap(star_forge)
-  .withBaseTexture(<metastate:gregtech:fusion_casing>)
+  .withBaseTexture(<metastate:htmltech:casing>)
   .buildAndRegister();
 star_forge.hasMaintenanceMechanics = true;
 star_forge.hasMufflerMechanics = false;
 
-assembly_line.recipeBuilder()
-    .inputs(
-      <ore:batteryIv> * 4,  
-      <ore:circuitIv> * 9, 
-      <metaitem:robot.arm.iv> * 14, 
-      <metaitem:tool.dataorb> * 4, 
-      <gcym:unique_casing:4> * 5, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <ore:plateDoubleNaquadah> * 3, 
-      <ore:plateDoubleNaquadah> * 3)
-    .fluidInputs(
-      <liquid:molten.titanium_carbide> * 6864, 
-      <liquid:molten.hssg> * 4432)
-    .outputs(<metaitem:multiblocktweaker:star_forge>)
-    .duration(1300).EUt(8100).buildAndRegister();
+// assembly_line.recipeBuilder()
+//     .inputs(
+//       <ore:batteryIv> * 4,  
+//       <ore:circuitIv> * 9, 
+//       <metaitem:robot.arm.iv> * 14, 
+//       <metaitem:tool.dataorb> * 4, 
+//       <gcym:unique_casing:4> * 5, 
+//       <metaitem:conveyor.module.ev> * 3, 
+//       <metaitem:conveyor.module.ev> * 3, 
+//       <ore:plateDoubleNaquadah> * 3, 
+//       <ore:plateDoubleNaquadah> * 3)
+//     .fluidInputs(
+//       <liquid:molten.titanium_carbide> * 6864, 
+//       <liquid:molten.hssg> * 4432)
+//     .outputs(<metaitem:multiblocktweaker:star_forge>)
+//     .duration(1300).EUt(8100).buildAndRegister();
 
 
 // // // Шлем
