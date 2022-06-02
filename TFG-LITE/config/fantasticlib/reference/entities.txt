@@ -81,6 +81,8 @@ minecraft:llama_spit
 minecraft:parrot
 minecraft:villager
 minecraft:ender_crystal
+gregtech:dynamite
+gregtech:gtportal
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -125,9 +127,6 @@ tfc:yaktfc
 tfc:blackbeartfc
 tfc:cougartfc
 tfc:coyotetfc
-gregtech:dynamite
-gregtech:gtportal
-sgcraft:stargate_iris
 tfcthings:pigvil
 tfcthings:slingstone
 tfcthings:unknownprojectile
@@ -177,6 +176,9 @@ galacticraftplanets:juicer
 galacticraftplanets:spider_queen
 galacticraftplanets:entry_pod_venus
 galacticraftplanets:web_shot
+powersuits:entityplasmabolt
+powersuits:entityspinningblade
+powersuits:luxcapacitor
 extraplanets:extraplanets.entitytier4rocket
 extraplanets:extraplanets.entitymercurylander
 extraplanets:extraplanets.entitytier5rocket
