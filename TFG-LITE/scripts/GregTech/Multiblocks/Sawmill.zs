@@ -23,7 +23,7 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Multiblock Builder
 ########################################
-# Multiblock Builder
+# Saw mill
 ########################################
 global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
   .minInputs(2)

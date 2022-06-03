@@ -26,15 +26,15 @@ import mods.gregtech.render.MoveType;
 # Greenhouse
 ########################################
 global greenhouse as RecipeMap = FactoryRecipeMap.start("greenhouse")
-    .minInputs(2)
-    .maxInputs(3)
-    .minOutputs(1)
-    .maxOutputs(4)
-    .minFluidInputs(1)
-    .maxFluidInputs(1)
-    .minFluidOutputs(0)
-    .maxFluidOutputs(0)
-    .build();
+  .minInputs(2)
+  .maxInputs(3)
+  .minOutputs(1)
+  .maxOutputs(4)
+  .minFluidInputs(1)
+  .maxFluidInputs(1)
+  .minFluidOutputs(0)
+  .maxFluidOutputs(0)
+  .build();
 
 val id = 32000;
 val loc = "greenhouse";

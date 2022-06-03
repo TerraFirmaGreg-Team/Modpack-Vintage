@@ -1,4 +1,4 @@
-#priority 981
+#priority 980
 
 import crafttweaker.item.IItemStack;
 
@@ -23,18 +23,18 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Multiblock Builder
 ########################################
-# Star_forge
+# Star forge
 ########################################
 global star_forge as RecipeMap = FactoryRecipeMap.start("star_forge")
-    .minInputs(1)
-    .maxInputs(2)
-    .minOutputs(1)
-    .maxOutputs(1)
-    .minFluidInputs(1)
-    .maxFluidInputs(1)
-    .minFluidOutputs(0)
-    .maxFluidOutputs(0)
-    .build();
+  .minInputs(1)
+  .maxInputs(2)
+  .minOutputs(1)
+  .maxOutputs(1)
+  .minFluidInputs(1)
+  .maxFluidInputs(1)
+  .minFluidOutputs(0)
+  .maxFluidOutputs(0)
+  .build();
 
 val id = 32002;
 val loc = "star_forge";
@@ -88,15 +88,6 @@ star_forge.hasMufflerMechanics = false;
 //     .outputs(<metaitem:multiblocktweaker:star_forge>)
 //     .duration(1300).EUt(8100).buildAndRegister();
 
-
-// // // Шлем
-// star_forge.recipeBuilder()
-//     .circuit(1)
-//     .inputs(<metaitem:qts.helmet>)
-//     .outputs(<powersuits:powerarmor_head>)
-//     .duration(29300)
-//     .EUt(8700)
-//     .buildAndRegister();
 
 // // Кираса
 // star_forge.recipeBuilder()
