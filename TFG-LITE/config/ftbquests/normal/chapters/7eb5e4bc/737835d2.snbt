@@ -1,0 +1,29 @@
+{
+	x: 5.5d,
+	y: -4.0d,
+	text: [
+		"Doping §9Silicon§r with §9Naquadah§r will give a better §aSilicon Boule§r.",
+		"",
+		"Use it for higher yield on §dWafers§r.",
+		"",
+		"This will also unlock the §6best recipe§r for §6HV§r Circuits in the §3LuV Circuit Assembler§r, which you will most likely want to mass produce for §dLapotronic Energy Orbs§r."
+	],
+	dependencies: [
+		"ba473ac0"
+	],
+	tasks: [{
+		uid: "f3669b48",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 363"
+		}]
+	},
+	{
+		uid: "e4e37cc2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 373"
+		}],
+		count: 64L
+	}]
+}

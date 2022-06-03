@@ -1,0 +1,2 @@
+Textures are only present for easier modling as blockbench doesn't like textures stored elsewhere from the model.
+Don't zip the texture assets with everything else as they are the defaults

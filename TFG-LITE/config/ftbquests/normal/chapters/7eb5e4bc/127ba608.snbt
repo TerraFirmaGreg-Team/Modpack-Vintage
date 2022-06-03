@@ -1,0 +1,27 @@
+{
+	x: 4.5d,
+	y: -0.25d,
+	dependencies: [
+		"f32cc030"
+	],
+	tasks: [{
+		uid: "de549c0a",
+		type: "fluid",
+		fluid: "lutetium",
+		amount: 64000
+	}],
+	rewards: [{
+		uid: "ed59c88a",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 82s,
+			tag: {
+				Fluid: {
+					FluidName: "lutetium",
+					Amount: 64000
+				}
+			}
+		}
+	}]
+}

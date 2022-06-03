@@ -1,8 +1,8 @@
 {
 	title: "Processing Array",
 	icon: "gregtech:machine 1 1030",
-	x: -8.25d,
-	y: -2.25d,
+	x: -8.5d,
+	y: -6.0d,
 	text: [
 		"§oThe Processing Array does nothing... except that it does a lot!§r",
 		"",
@@ -30,7 +30,7 @@
 	dependencies: [
 		"6ad8d6e2"
 	],
-	size: 1.5d,
+	size: 2.0d,
 	tasks: [{
 		uid: "d5d9102d",
 		type: "item",

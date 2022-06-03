@@ -43,6 +43,8 @@ FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:fresh_water
 FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureMica>]);
 // Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureDiamond>]);
+// Сера
+FluidToItem.transform(<ore:dustSmallSulfur>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureSulfur>]);
 // Уголь
 FluidToItem.transform(<minecraft:coal>, <liquid:fresh_water>, [<metaitem:oreChunkCoal>]);
 
@@ -79,8 +81,6 @@ FluidToItem.transform(<ore:dustSmallLead>.firstItem * 2, <liquid:salt_water>, [<
 FluidToItem.transform(<ore:dustSmallGalena>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureGalena>]);
 // Вариации Золота
 FluidToItem.transform(<ore:dustSmallSilver>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureSilver>]);
-// Вариации Серебра
-FluidToItem.transform(<ore:dustSmallSilver>.firstItem * 2, <liquid:fresh_water>, [<ore:dustImpureSilver>]);
 // Вариации Висмута
 FluidToItem.transform(<ore:dustSmallBismuth>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureBismuth>]);
 // Графит
@@ -89,5 +89,7 @@ FluidToItem.transform(<ore:dustSmallGraphite>.firstItem * 2, <liquid:salt_water>
 FluidToItem.transform(<ore:dustSmallMica>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureMica>]);
 // Алмазы занерфленные
 FluidToItem.transform(<ore:dustTinyDiamond>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureDiamond>]);
+// Сера
+FluidToItem.transform(<ore:dustSmallSulfur>.firstItem * 2, <liquid:salt_water>, [<ore:dustImpureSulfur>]);
 // Уголь
 FluidToItem.transform(<minecraft:coal>, <liquid:salt_water>, [<metaitem:oreChunkCoal>]);

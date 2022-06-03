@@ -2,7 +2,7 @@
 	title: "HSS-G Coils",
 	icon: "gregtech:wire_coil 1 4",
 	x: -19.5d,
-	y: -9.0d,
+	y: -7.75d,
 	text: [
 		"§oAlmost as hot as the surface temperature of the Sun!§r",
 		"",
@@ -17,7 +17,6 @@
 		"d313f51b",
 		"bb92c8a5"
 	],
-	size: 1.5d,
 	tasks: [{
 		uid: "fe9e2603",
 		type: "item",

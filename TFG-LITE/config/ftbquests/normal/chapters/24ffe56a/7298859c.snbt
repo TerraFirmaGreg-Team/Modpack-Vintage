@@ -1,8 +1,8 @@
 {
 	title: "Ruthenium and Rhodium",
 	icon: "gregtech:meta_ingot 1 93",
-	x: -12.0d,
-	y: -13.0d,
+	x: -11.25d,
+	y: -11.5d,
 	text: [
 		"This part of the chain starts with §aInert Metal Mixture§r.",
 		"",

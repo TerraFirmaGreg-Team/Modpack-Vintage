@@ -1,8 +1,8 @@
 {
 	title: "Best EV Circuits!",
 	icon: "gregtech:meta_item_1 1 636",
-	x: -0.75d,
-	y: -9.0d,
+	x: -7.0d,
+	y: -4.75d,
 	text: [
 		"The first Circuit of the §1Quantum§r line.",
 		"",
@@ -14,7 +14,6 @@
 		"69b73149",
 		"8b616946"
 	],
-	size: 1.5d,
 	tasks: [{
 		uid: "67a3cc92",
 		type: "item",

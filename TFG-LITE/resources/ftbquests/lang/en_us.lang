@@ -438,8 +438,7 @@ tfg.quests.steam.bronzeforgehammer.subtitle=&aA steam hammer that will allow you
 tfg.quests.steam.bronzeforgehammer.desc1=§oThe Forge Hammer hammers... That's fascinating!§r
 tfg.quests.steam.bronzeforgehammer.desc2=A lot of recipes are the same as your hand crafting recipes using a §5Hammer§r, but instead uses this machine!
 tfg.quests.steam.bronzeforgehammer.desc3=It can process §aCobblestone in Gravel§r, and §aGravel into Sand§r. And it's fast at that too!
-tfg.quests.steam.bronzeforgehammer.desc4=Last but not least, it makes Plates at a better ratio: §6three Ingots for two Plates§r. A worthwhile investment!
-tfg.quests.steam.bronzeforgehammer.desc5=You know what? Bonus! Get an anvil back from crafting it. This is a small reminder that you can repair GregTech tools using an Anvil.
+tfg.quests.steam.bronzeforgehammer.desc4=Last but not least, it makes Plates at a better ratio: §6three Ingots for two Plates§r.
 
 tfg.quests.steam.miner.subtitle=&aA drilling rig, terribly slow and expensive for a couple. But at the initial stages, at least something. Put it over the vein on the surface and turn it on.
 

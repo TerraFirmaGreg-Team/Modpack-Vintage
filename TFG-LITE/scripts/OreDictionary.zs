@@ -532,6 +532,8 @@ for item in Gem_Exquisite {
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 // Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
+// Sulfur
+<ore:oreSulfur>.remove(<galaxyspace:ioblocks:4>);
 
 // --- Vanilla
 

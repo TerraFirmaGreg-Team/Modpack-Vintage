@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: -5.0d,
+	dependencies: [
+		"5d89817b",
+		"2a6ec695",
+		"283a8b85",
+		"31bf9868"
+	],
+	tasks: [{
+		uid: "ce8ea334",
+		type: "item",
+		items: [{
+			item: "gregtech:fusion_casing"
+		}]
+	}]
+}

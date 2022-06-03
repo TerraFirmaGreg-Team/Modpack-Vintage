@@ -1,8 +1,8 @@
 {
 	title: "IV Machinery",
 	icon: "gregtech:machine 1 114",
-	x: -19.5d,
-	y: -5.625d,
+	x: -17.5d,
+	y: -5.25d,
 	text: [
 		"Nothing special here... §3IV Assembler§r and §3IV Cutting Machine§r are required to unlock §3IV Energy & Dynamo Hatches§r, you know you do.",
 		"",
@@ -11,7 +11,6 @@
 	dependencies: [
 		"a4804e63"
 	],
-	size: 1.5d,
 	or_tasks: true,
 	tasks: [{
 		uid: "274e2adc",

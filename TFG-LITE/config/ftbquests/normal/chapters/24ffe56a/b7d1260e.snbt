@@ -2,7 +2,7 @@
 	title: "HSS-E",
 	icon: "gregtech:meta_ingot 1 2519",
 	x: -19.5d,
-	y: -10.5d,
+	y: -9.0d,
 	text: [
 		"§oTechnically HSS-E does not have Manganese, but close enough... as some other HSS alloys do have Manganese.§r",
 		"",

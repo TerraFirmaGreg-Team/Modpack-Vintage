@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/sequoia"
+    },
+    "facing=south,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 270
+    },
+    "facing=south,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/sequoia"
+    },
+    "facing=west,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 90
+    },
+    "facing=north,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/sequoia",
+      "y": 180
+    },
+    "facing=east,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/sequoia_rh"
+    },
+    "facing=south,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/sequoia_rh",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/sequoia_rh"
+    },
+    "facing=east,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/sequoia"
+    },
+    "facing=south,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 270
+    },
+    "facing=south,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/sequoia"
+    },
+    "facing=west,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 90
+    },
+    "facing=north,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/sequoia",
+      "y": 180
+    },
+    "facing=east,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/sequoia_rh"
+    },
+    "facing=south,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/sequoia_rh",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/sequoia_rh"
+    }
+  }
+}

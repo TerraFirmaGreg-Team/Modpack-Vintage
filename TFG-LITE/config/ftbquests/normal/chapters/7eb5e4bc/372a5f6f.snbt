@@ -1,8 +1,8 @@
 {
 	title: "Naquadah Alloy",
 	icon: "gregtech:meta_ingot 1 2042",
-	x: -3.0d,
-	y: -2.5d,
+	x: -7.5d,
+	y: -1.25d,
 	text: [
 		"No Description"
 	],
