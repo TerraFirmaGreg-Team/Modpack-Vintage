@@ -176,6 +176,12 @@ ItemRegistry.registerItemMetal(<tfctech:metal/iron_bowl_mount>, "WROUGHT_IRON", 
 ItemRegistry.registerItemMetal(<tfctech:metal/iron_draw_plate>, "WROUGHT_IRON", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/steel_draw_plate>, "STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_draw_plate>, "BLACK_STEEL", 144, true);
+// BlowPipes
+ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_blowpipe>, "WROUGHT_IRON", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/steel_blowpipe>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_blowpipe>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_blowpipe>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_blowpipe>, "RED_STEEL", 144, true);
 // Tongs
 ItemRegistry.registerItemMetal(<tfctech:metal/iron_tongs>, "WROUGHT_IRON", 144, true);
 // Inductor

@@ -27,6 +27,7 @@ ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
 // --- Регистрация топлива
 ItemRegistry.registerFuel(<metaitem:gemCoke>, 3200, 1450, true, true);
 ItemRegistry.registerFuel(<minecraft:coal>, 1600, 1400, true, true);
+ItemRegistry.registerFuel(<metaitem:oreChunkCoal>, 1600, 1400, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
 // --- Регистрация инструментов

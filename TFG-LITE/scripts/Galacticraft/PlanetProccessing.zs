@@ -1,4 +1,81 @@
+import mods.gregtech.recipe.Utils;
+
 // --- Adding Recipes
+
+// --- Atmospheres
+
+function GenerateRecipesForAir(input as string, dimension as int, EUMulti as int, CircuitConfig as int) {
+   
+   // Gas Collector
+   gas_collector.recipeBuilder()
+      .circuit(CircuitConfig)
+      .fluidOutputs(Utils.fluid(input + "_air")  * 10000)
+      .property("dimension", dimension)
+      .duration(200).EUt(256 * (4 * EUMulti)).buildAndRegister();
+
+   // Vacuum Freezer
+   vacuum_freezer.recipeBuilder()
+      .fluidInputs(Utils.fluid(input + "_air") * 4000)
+      .fluidOutputs(Utils.fluid(input + "_liquid_air")  * 4000)
+      .duration(80).EUt(7680 * (4 * EUMulti)).buildAndRegister();
+
+}
+
+// Mercury
+GenerateRecipesForAir("mercury", -13, 3, 4);
+
+// Venus
+GenerateRecipesForAir("venus", -31, 2, 5);
+
+// Moon
+GenerateRecipesForAir("moon", -28, 1, 6);
+
+// Mars
+GenerateRecipesForAir("mars", -29, 2, 7);
+
+// Jupiter
+GenerateRecipesForAir("jupiter", -1026, 3, 8);
+
+// IO
+GenerateRecipesForAir("io", -1500, 4, 9);
+
+// Europa
+GenerateRecipesForAir("europa", -1501, 5, 10);
+
+// Callisto
+GenerateRecipesForAir("callisto", -1505, 6, 11);
+
+// Saturn
+GenerateRecipesForAir("saturn", -16, 7, 12);
+
+// Titan
+GenerateRecipesForAir("titan", -1508, 8, 13);
+
+// Uran
+GenerateRecipesForAir("uranus", -17, 9, 14);
+
+// Neptune
+GenerateRecipesForAir("neptune", -18, 10, 15);
+
+// Triton
+GenerateRecipesForAir("triton", -1504, 11, 16);
+
+// Pluto
+GenerateRecipesForAir("pluto", -19, 12, 17);
+
+// Barnard C
+GenerateRecipesForAir("barnard_c", -1030, 13, 18);
+
+// Kepler 22b
+GenerateRecipesForAir("kepler_22_b", -22, 14, 19);
+
+// Proxima B
+GenerateRecipesForAir("proxima_b", -1025, 15, 20);
+
+// Tau Ceti F
+GenerateRecipesForAir("tau_ceti_f", -1338, 16, 21);
+
+// --- Rocks
 
 // Solid Meteoric Iron --> Meteoric Iron Raw
 macerator.recipeBuilder()
