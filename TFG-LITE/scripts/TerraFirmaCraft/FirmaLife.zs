@@ -80,7 +80,8 @@ furnace.addRecipe(<firmalife:unfired_mallet_mold>, <firmalife:mallet_mold>);
 Drying.addRecipe("tfg:wood_ash_to_fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
 
 // Высушивание соли
-Drying.addRecipe("tfg:saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <ore:dustSmallSalt>.firstItem * 2, 24000);
+Drying.addRecipe("tfg:saltwatertosalt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <contenttweaker:wooden_bucket_with_salt>, 24000);
+recipes.addShapeless(<metaitem:dustSmallSalt> * 2, [<contenttweaker:wooden_bucket_with_salt>.giveBack(<tfc:wooden_bucket>)]);
 
 // Greenhouse Door
 Anvil.removeRecipe(<firmalife:greenhouse_door>);
