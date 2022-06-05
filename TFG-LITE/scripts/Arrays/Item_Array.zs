@@ -3669,6 +3669,7 @@ global All_Liquid_Dyes as ILiquidStack[] = [
 // into TFC metal is not possible due to the GTCEu bug, 
 // which they should fix later.
 global Bad_Dusts_Array as IItemStack[] = [
+	// Impure
 	<metaitem:dustImpureCopper>,
 	<metaitem:dustImpureBornite>,
 	<metaitem:dustImpureTetrahedrite>,
@@ -3692,5 +3693,22 @@ global Bad_Dusts_Array as IItemStack[] = [
 	<metaitem:dustImpureGalena>,
 	<metaitem:dustImpureGold>,
 	<metaitem:dustImpureBismuth>,
-	<metaitem:dustImpureSilver>
+	<metaitem:dustImpureSilver>,
+
+	// Pure
+	<metaitem:dustBornite>,
+	<metaitem:dustTetrahedrite>,
+	<metaitem:dustChalcopyrite>,
+	<metaitem:dustChalcocite>,
+	<metaitem:dustMalachite>,
+	<metaitem:dustCassiteriteSand>,
+	<metaitem:dustPyrite>,
+	<metaitem:dustMagnetite>,
+	<metaitem:dustBrownLimonite>,
+	<metaitem:dustYellowLimonite>,
+	<metaitem:dustBandedIron>,
+	<metaitem:dustGarnierite>,
+	<metaitem:dustPentlandite>,
+	<metaitem:dustSphalerite>,
+	<metaitem:dustGalena>
 ];
