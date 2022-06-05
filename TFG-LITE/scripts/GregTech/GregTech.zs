@@ -221,6 +221,15 @@ recipes.addShaped(<metaitem:steam_export_bus>,
  [null, <ore:chest>, null],
  [null, null, null]]);
 
+// Fix EnchantTable dup
+macerator.findRecipe(2, [<minecraft:enchanting_table:0>], null).remove();
+macerator.recipeBuilder()
+    .inputs(<minecraft:enchanting_table>)
+    .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
+    .duration(135)
+    .EUt(2)
+    .buildAndRegister();
+
 // Extruder Shape (Sense Head)
 // Workbench
 recipes.addShaped(<contenttweaker:shape_extruder_sense>,
