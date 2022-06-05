@@ -284,13 +284,13 @@ recipes.addShapeless(<tfctech:metal/platinum_strip> * 2, [<ore:gtce.tool.files>,
 recipes.addShapeless(<tfctech:metal/black_steel_strip> * 2, [<ore:gtce.tool.files>, <ore:plateBlackSteel>]);
 
 // Крафт поташа с увеличенным выходом
-recipes.addShapeless(<ore:dustPotash>.firstItem * 4, [<tfctech:pot_potash>]);
+recipes.addShapeless(<metaitem:dustPotash> * 4, [<tfctech:pot_potash>]);
 
 // Исправление рецепта емкости с поташем
 recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
 
 // Резина для первых этапов
-recipes.addShapeless(<ore:plateRubber>.firstItem * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
+recipes.addShapeless(<metaitem:plateRubber> * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
 
 // Уменьшение выхода рецепта с резиной
 Barrel.removeRecipe(<tfctech:latex/rubber_mix> * 6);
