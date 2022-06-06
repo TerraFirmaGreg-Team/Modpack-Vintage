@@ -1,6 +1,5 @@
 #loader gregtech
-
-#priority 990
+#priority 10000
 
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.MaterialBuilder;

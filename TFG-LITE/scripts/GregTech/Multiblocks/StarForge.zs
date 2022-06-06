@@ -1,9 +1,11 @@
+#priority 980
 
 import crafttweaker.item.IItemStack;
 
 import mods.gregtech.IControllerTile;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
+import mods.gregtech.recipe.FactoryRecipeMap;
 import mods.gregtech.recipe.RecipeMapBuilder;
 import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.IRecipe;
@@ -24,7 +26,21 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Star forge
 ########################################
-var star_forge = Builder.start("star_forge", 32002)
+global starforge as RecipeMap = FactoryRecipeMap.start("starforge")
+  .minInputs(1)
+  .maxInputs(9)
+  .minOutputs(1)
+  .maxOutputs(4)
+  .minFluidInputs(0)
+  .maxFluidInputs(3)
+  .minFluidOutputs(0)
+  .maxFluidOutputs(0)
+  .build();
+
+val id = 32002;
+val loc = "starforge";
+
+var starforge = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
                 .aisle("               ", "      CCC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
@@ -43,81 +59,32 @@ var star_forge = Builder.start("star_forge", 32002)
                 .aisle("      C C      ", "     FFFFF     ", "               ", "               ", "               ", "               ", "               ", "     FFFFF     ", "      C C      ")
                 .aisle("               ", "      CSC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
                 .where('M', CTPredicate.states(<metastate:gregtech:fusion_casing:3>))
-                .where('C', CTPredicate.states(<blockstate:htmltech:casing>) | controller.autoAbilities())
+                .where('C', CTPredicate.states(<blockstate:htmltech:casing>).setMinGlobalLimited(130) | controller.autoAbilities())
                 .where('X', CTPredicate.states(<metastate:gregtech:wire_coil:5>))
                 .where('F', CTPredicate.states(<metastate:gregtech:fusion_casing>))
                 .where('S', controller.self())
                 .where(' ', CTPredicate.getAny())
                 .build();
   } as IPatternBuilderFunction)
-    .withRecipeMap(RecipeMapBuilder.create("star_forge")
-        .setInputs(1, 4)
-        .setOutputs(1, 1)
-        .setFluidInputs(2, 4)
-        .setFluidOutputs(0, 0)
-        .build()
-    )
+    .withRecipeMap(starforge)
   .withBaseTexture(<metastate:gregtech:fusion_casing:1>)
   .buildAndRegister();
-star_forge.hasMaintenanceMechanics = true;
-star_forge.hasMufflerMechanics = false;
+starforge.hasMaintenanceMechanics = true;
+starforge.hasMufflerMechanics = false;
 
-// assembly_line.recipeBuilder()
-//     .inputs(
-//       <ore:batteryIv> * 4,  
-//       <ore:circuitIv> * 9, 
-//       <metaitem:robot.arm.iv> * 14, 
-//       <metaitem:tool.dataorb> * 4, 
-//       <gcym:unique_casing:4> * 5, 
-//       <metaitem:conveyor.module.ev> * 3, 
-//       <metaitem:conveyor.module.ev> * 3, 
-//       <ore:plateDoubleNaquadah> * 3, 
-//       <ore:plateDoubleNaquadah> * 3)
-//     .fluidInputs(
-//       <liquid:molten.titanium_carbide> * 6864, 
-//       <liquid:molten.hssg> * 4432)
-//     .outputs(<metaitem:multiblocktweaker:star_forge>)
-//     .duration(1300).EUt(8100).buildAndRegister();
-// Шлем
-// star_forge.recipeMap.recipeBuilder()
-//       .inputs(<metaitem:qts.chestplate>)
-//       .fluidInputs([<liquid:fresh_water> * 1000])
-//       .outputs(<powersuits:powerarmor_head>)
-//       .duration(20000)
-//       .EUt(122880)
-//       .buildAndRegister();
-// // Кираса
-// star_forge.recipeMap.recipeBuilder()
-//     .inputs(<metaitem:qts.chestplate>, <galaxyspace:space_suit_chest:200>, <galacticraftplanets:orion_drive> * 2)
-//     .fluidInputs([<liquid:fresh_water> * 1000])
-//     .outputs(<powersuits:powerarmor_torso>)
-//     .duration(29300)
-//     .EUt(8700)
-//     .buildAndRegister();
-
-// // Поножи
-// star_forge.recipeMap.recipeBuilder()
-//     .inputs(<metaitem:qts.leggings>, <galaxyspace:space_suit_legs:200>, <galacticraftplanets:orion_drive> * 4)
-//     .fluidInputs([<liquid:fresh_water> * 1000])
-//     .outputs(<powersuits:powerarmor_legs>)
-//     .duration(29300)
-//     .EUt(8700)
-//     .buildAndRegister();
-
-// // Ботинки
-// star_forge.recipeMap.recipeBuilder()
-//     .inputs(<metaitem:qts.boots>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4)
-//     .fluidInputs([<liquid:fresh_water> * 1000])
-//     .outputs(<powersuits:powerarmor_feet>)
-//     .duration(29300)
-//     .EUt(8700)
-//     .buildAndRegister();
-
-// // Рука
-// star_forge.recipeMap.recipeBuilder()
-//     .inputs(<metaitem:tool.drill.iv>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4)
-//     .fluidInputs([<liquid:fresh_water> * 1000])
-//     .outputs(<powersuits:power_fist>)
-//     .duration(29300)
-//     .EUt(8700)
-//     .buildAndRegister();
+assembly_line.recipeBuilder()
+    .inputs(
+      <ore:batteryIv> * 4,  
+      <ore:circuitIv> * 9, 
+      <metaitem:robot.arm.iv> * 14, 
+      <metaitem:tool.dataorb> * 4, 
+      <gcym:unique_casing:4> * 5, 
+      <metaitem:conveyor.module.ev> * 3, 
+      <metaitem:conveyor.module.ev> * 3, 
+      <ore:plateDoubleNaquadah> * 3, 
+      <ore:plateDoubleNaquadah> * 3)
+    .fluidInputs(
+      <liquid:molten.titanium_carbide> * 6864, 
+      <liquid:molten.hssg> * 4432)
+    .outputs(<metaitem:multiblocktweaker:starforge>)
+    .duration(1300).EUt(8100).buildAndRegister();

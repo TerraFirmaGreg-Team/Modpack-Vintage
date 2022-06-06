@@ -1,4 +1,4 @@
-#priority 997
+#priority 999
 
 import mods.gregtech.recipe.RecipeMap;
 
@@ -55,6 +55,3 @@ global sifter                    as RecipeMap = RecipeMap.getByName("sifter");
 global thermal_centrifuge        as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 global vacuum_freezer            as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global wiremill                  as RecipeMap = RecipeMap.getByName("wiremill");
-global greenhouse                as RecipeMap = RecipeMap.getByName("greenhouse");
-global saw_mill                  as RecipeMap = RecipeMap.getByName("saw_mill");
-global star_forge                as RecipeMap = RecipeMap.getByName("star_forge");

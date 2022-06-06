@@ -1,7 +1,9 @@
-#priority 995
+#priority 998
 
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
+
+print("-------------- Ore Dictionary Start --------------");
 
 // --- TFC
 
@@ -621,3 +623,5 @@ for item in Gem_Exquisite {
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
 <ore:chestWood>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
 <ore:chestTrapped>.remove(<minecraft:trapped_chest>);
+
+print("-------------- Ore Dictionary End --------------");

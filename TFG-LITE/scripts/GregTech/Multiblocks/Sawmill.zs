@@ -1,9 +1,11 @@
+#priority 980
 
 import crafttweaker.item.IItemStack;
 
 import mods.gregtech.IControllerTile;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
+import mods.gregtech.recipe.FactoryRecipeMap;
 import mods.gregtech.recipe.RecipeMapBuilder;
 import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.IRecipe;
@@ -24,7 +26,21 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Saw mill
 ########################################
-var saw_mill = Builder.start("saw_mill", 32001)
+global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
+  .minInputs(2)
+  .maxInputs(2)
+  .minOutputs(1)
+  .maxOutputs(4)
+  .minFluidInputs(1)
+  .maxFluidInputs(1)
+  .minFluidOutputs(0)
+  .maxFluidOutputs(0)
+  .build();
+
+val id = 32001;
+val loc = "saw_mill";
+
+var electric_saw_mill = Builder.start(loc, id)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")
@@ -40,17 +56,11 @@ var saw_mill = Builder.start("saw_mill", 32001)
       .where(" ", CTPredicate.getAny())
       .build();
   } as IPatternBuilderFunction)
-    .withRecipeMap(RecipeMapBuilder.create("saw_mill")
-      .setInputs(2, 2)
-      .setOutputs(4, 1)
-      .setFluidInputs(1, 1)
-      .setFluidOutputs(0, 0)
-      .build()
-    )
+  .withRecipeMap(saw_mill)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
-saw_mill.hasMaintenanceMechanics = false;
-saw_mill.hasMufflerMechanics = true;
+electric_saw_mill.hasMaintenanceMechanics = false;
+electric_saw_mill.hasMufflerMechanics = true;
 
 recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
@@ -60,7 +70,7 @@ recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
 
 // Electric_saw_mill logs
 for i, log in TFC_Logs {
-  saw_mill.recipeMap.recipeBuilder()
+  saw_mill.recipeBuilder()
     .circuit(1)
     .inputs([log * 6])
 		.fluidInputs([<liquid:water> * 1000])
@@ -70,7 +80,7 @@ for i, log in TFC_Logs {
     .EUt(7)
     .buildAndRegister();
 
-  saw_mill.recipeMap.recipeBuilder()
+  saw_mill.recipeBuilder()
     .circuit(2)
     .inputs([log * 6])
 		.fluidInputs([<liquid:water> * 1000])
