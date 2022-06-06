@@ -76,7 +76,8 @@ val RemoveItemRecipesByName = [
     "gregtech:plank_to_wooden_shape",
     "gregtech:sticks_from_bundle_saw",
     "gregtech:gravel_to_flint",
-    "gregtech:dust_bronze"
+    "gregtech:dust_bronze",
+    "gregtech:bow"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -220,6 +221,21 @@ recipes.addShaped(<metaitem:steam_export_bus>,
 [[null, <gregtech:steam_casing>, null],
  [null, <ore:chest>, null],
  [null, null, null]]);
+
+// Bow
+recipes.addShaped(<minecraft:bow>,
+[[<ore:gtce.tool.hard.hammers>, <metaitem:stickLongWood>, <ore:string>],
+ [<metaitem:stickLongWood>, <metaitem:ringWroughtIron>, <ore:string>],
+ [<ore:gtce.tool.files>, <metaitem:stickLongWood>, <ore:string>]]);
+
+// Fix EnchantTable dup
+macerator.findRecipe(2, [<minecraft:enchanting_table:0>], null).remove();
+macerator.recipeBuilder()
+    .inputs(<minecraft:enchanting_table>)
+    .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
+    .duration(135)
+    .EUt(2)
+    .buildAndRegister();
 
 // Extruder Shape (Sense Head)
 // Workbench
