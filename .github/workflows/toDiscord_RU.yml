@@ -11,9 +11,9 @@ jobs:
     - name: Discord notification
       uses: SpeeeDCraft/github-to-discord@main
       env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RU }}
         DISCORD_USERNAME: GitHub
-        DISCORD_AVATAR: https://raw.githubusercontent.com/LeGitHubDeTai/github-to-discord/main/icon.png
+        DISCORD_AVATAR: https://cdn.discordapp.com/attachments/932122658219360287/983200453938511892/8a9134c7d8e6b822.jpg
         MESSAGE_TITLE: New Version
         MESSAGE_DESCRIPTION: Нажмите на голубой номер версии выше, чтобы увидеть список изменений!
         MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/TFG-Lite-R3.0/Changelog_RU.md
