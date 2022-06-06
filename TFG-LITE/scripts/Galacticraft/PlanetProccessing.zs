@@ -315,7 +315,7 @@ distillation_tower.recipeBuilder()
    .circuit(18)
    .fluidOutputs(<liquid:air>  * 10000)
    .property("dimension", -1030)
-   .duration(200).EUt(256).buildAndRegister();*/
+   .duration(200).EUt(256).buildAndRegister();
 
 // Kepler 22b
 gas_collector.recipeBuilder()
@@ -336,7 +336,7 @@ gas_collector.recipeBuilder()
    .circuit(21)
    .fluidOutputs(<liquid:air>  * 10000)
    .property("dimension", -1338)
-   .duration(200).EUt(256).buildAndRegister();
+   .duration(200).EUt(256).buildAndRegister();*/
 
 // --- Rocks
 
@@ -621,23 +621,3 @@ centrifuge.recipeBuilder()
    .duration(1600)
    .EUt(1640)
    .buildAndRegister();
-
-// Mars air
-// <recipemap:gas_collector>.findRecipe(64, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
-// gas_collector.recipeBuilder()
-//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
-//     .fluidOutputs([<liquid:nether_air> * 10000])
-//     .property("dimension", -29)
-//     .duration(200)
-//     .EUt(256)
-//     .buildAndRegister();
-
-// Venus air
-// <recipemap:gas_collector>.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
-// gas_collector.recipeBuilder()
-//     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
-//     .fluidOutputs([<liquid:ender_air> * 10000])
-//     .property("dimension", -31)
-//     .duration(200)
-//     .EUt(256)
-//     .buildAndRegister();

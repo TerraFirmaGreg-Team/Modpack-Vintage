@@ -245,7 +245,7 @@ starforge.recipeBuilder()
 canner.recipeBuilder()
   .inputs(<aunis:capacitor_block_empty>)
   .fluidInputs(<liquid:silicon_molten_red> * 6440)
- 	.chancedOutput(<aunis:capacitor_block> * 1)
+ 	.outputs(<aunis:capacitor_block> * 1)
   .duration(1000)
   .EUt(1290)
   .buildAndRegister();

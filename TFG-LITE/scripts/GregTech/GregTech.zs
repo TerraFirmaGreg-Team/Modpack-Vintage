@@ -237,6 +237,21 @@ macerator.recipeBuilder()
     .EUt(2)
     .buildAndRegister();
 
+// Fix Seed Oil Recipes
+// From Beetroot
+extractor.findRecipe(2, [<minecraft:beetroot_seeds:0>], null).remove();
+// From Pumpkin
+extractor.findRecipe(2, [<minecraft:pumpkin_seeds:0>], null).remove();
+// From Melon
+extractor.findRecipe(2, [<minecraft:melon_seeds:0>], null).remove();
+// From Wheat
+extractor.findRecipe(2, [<minecraft:wheat_seeds:0>], null).remove();
+// From All Seeds
+extractor.recipeBuilder()
+    .inputs(<ore:listAllSeeds>)
+    .fluidOutputs(<liquid:seed_oil> * 10)
+    .EUt(2).duration(32).buildAndRegister();
+
 // Extruder Shape (Sense Head)
 // Workbench
 recipes.addShaped(<contenttweaker:shape_extruder_sense>,
