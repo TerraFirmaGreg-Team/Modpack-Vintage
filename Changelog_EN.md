@@ -3,10 +3,46 @@
 ## Version R3.3.1
 [Lite, Huge]
 
-### Modpack fix
-* Tweaked GC energy alignment with GT
+### Modpack fixes
+* Tweaked the alignment of GC energy with GT.
+* Changed ME Drive model.
+* Changed gui ae2wtlib .
+* Changed the texture of the Tool belt.
+* Changed Better p2p texture.
+* Implemented sharpening GT items.
+* Fixed liquid in firmalife, tfctech, tfcthings forms.
+* Fixed tfcthings config.
+* Optimization of the crafttweaker code by disabling recipes in TFC itself using our mod.
+* Dust iron again has 144mb ​​of metal.
+* Iron spit now has 144mb ​​of iron in itself and in its copies (up to 4 pieces), crafting is the same, in 144mb ​​processed.
+* Complicated and fixed the Infinity Water Cover recipe.
+* Fixed the description of the Forge Hammer quest (Getting lower output for plates is the norm, as this is the only way to automate the production of plates to LV).
+* Fixed work of double plates in the anvil.
+* Fixed possible crash due to AstralSorcery.
+* Added a new multi-block, the Star Forge.
+* Rewrote Aunis mod recipes (stargate), and Modular Powersuits (to be completed)
+* Applied optimization of TFCFlorae models
+* Changed the texture of pieces of ores
+* Changed TFC door models
+* Changed the textures of some logs and chests to fix a display bug
+* Changed liquid terminal recipe
+* Improved LuV quest line (thanks to TheGalax)
+* Fixed sound for TFC armor
+* Greenhouse recipes are slightly more expensive
 ### Update mods
-* TFC Compat
+* Fluid Craft for AE2
+* Corail Tombstone
+* AE2 Unofficial Extended Life
+* GregTech CE: Unofficial
+### Removing mods
+* Phosphorus
+* Portality
+### New mods
+* Hesperus
+* Performant
+* Aunis
+* Modular Powersuits
+* Numina
 
 ## Version R3.3.0 - 26.05.2021
 [Lite, Huge]
