@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "betterp2p:items/advanced_memory_card"
-    }
-}
