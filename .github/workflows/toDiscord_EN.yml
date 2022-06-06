@@ -15,6 +15,6 @@ jobs:
         DISCORD_USERNAME: GitHub
         DISCORD_AVATAR: https://cdn.discordapp.com/attachments/932122658219360287/983200453938511892/8a9134c7d8e6b822.jpg
         MESSAGE_TITLE: New Version
-        MESSAGE_DESCRIPTION: Нажмите на голубой номер версии выше, чтобы увидеть список изменений!
-        MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/TFG-Lite-R3.0/Changelog_RU.md
+        MESSAGE_DESCRIPTION: Click on the blue version number above to see Changelog!
+        MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/TFG-Lite-R3.0/Changelog_EN.md
         MESSAGE_COLOR: 5814783
