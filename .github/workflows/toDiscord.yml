@@ -12,9 +12,9 @@ jobs:
       uses: SpeeeDCraft/github-to-discord@main
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        DISCORD_USERNAME: TFG Release
+        DISCORD_USERNAME: GitHub
         DISCORD_AVATAR: https://raw.githubusercontent.com/LeGitHubDeTai/github-to-discord/main/icon.png
-        MESSAGE_TITLE: New Version - 
-        MESSAGE_DESCRIPTION: TerraFirmaGreg Changelog
-        MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
+        MESSAGE_TITLE: New Version
+        MESSAGE_DESCRIPTION: Список изменений в файле.
+        MESSAGE_URL: https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/TFG-Lite-R3.0/Changelog_RU.md
         MESSAGE_COLOR: 5814783
