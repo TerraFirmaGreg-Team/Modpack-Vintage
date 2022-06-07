@@ -106,7 +106,7 @@
     },
     {
       "dimID": -1009,
-      "dimName": "KuiperBelt"
+      "dimName": "Kuiper Belt"
     },
     {
       "dimID": -21,
@@ -118,20 +118,19 @@
     },
     {
       "dimID": -1030,
-      "dimName": "BarnardaC"
-    }
-    ,
-    {
-      "dimID": -1031,
-      "dimName": "BarnardaC1"
+      "dimName": "Barnarda C"
     },
     {
       "dimID": -22,
-      "dimName": "Kepler22b"
+      "dimName": "Kepler 22B"
     },
     {
       "dimID": -1025,
-      "dimName": "Proxima_B"
+      "dimName": "Proxima B"
+    },
+    {
+      "dimID": -1338,
+      "dimName": "Tau Ceti F"
     }
   ]
 }

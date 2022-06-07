@@ -869,3 +869,9 @@ extractor.findRecipe(2, [<minecraft:red_flower:1>], null).remove();
 extractor.findRecipe(2, [<minecraft:double_plant:1>], null).remove();
 // Magenta Dye * 2
 extractor.findRecipe(2, [<minecraft:red_flower:2>], null).remove();
+
+// Remove Ender Airs
+gas_collector.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+centrifuge.findRecipe(480, null, [<liquid:ender_air> * 10000]).remove();
+vacuum_freezer.findRecipe(7680, null, [<liquid:ender_air> * 4000]).remove();
+distillation_tower.findRecipe(7680, null, [<liquid:liquid_ender_air> * 200000]).remove();
