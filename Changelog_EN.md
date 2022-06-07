@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 3.3.2 - 06/07/2022
+[Lite, Huge]
+### Modpack Fixes
+* Fixed a bug with chicken
+* Temporarily disabled Powersuite Armor crafting
+* Fixed a bug with displaying blocks in the world and the world itself
+### Updating mods
+* TFG-mod
+### Removing Mods
+* Removed Oxygen-players-list
+
 ## Version R3.3.1
 [Lite, Huge]
 
