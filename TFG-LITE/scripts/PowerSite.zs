@@ -38,46 +38,46 @@ for item in RemoveWorkbenchRecipes {
     recipes.remove(item);
 }
 
-// Шлем
-starforge.recipeBuilder()
-      .inputs(<metaitem:qts.helmet>)
-      .fluidInputs([<liquid:fresh_water> * 1000])
-      .outputs(<powersuits:powerarmor_head>)
-      .duration(20000)
-      .EUt(122880)
-      .buildAndRegister();
-// Кираса
-starforge.recipeBuilder()
-    .inputs(<metaitem:qts.chestplate>, <galaxyspace:space_suit_chest:200>, <galacticraftplanets:orion_drive> * 2)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(<powersuits:powerarmor_torso>)
-    .duration(28000)
-    .EUt(8700)
-    .buildAndRegister();
+// // Шлем
+// starforge.recipeBuilder()
+//       .inputs(<metaitem:qts.helmet>)
+//       .fluidInputs([<liquid:fresh_water> * 1000])
+//       .outputs(<powersuits:powerarmor_head>)
+//       .duration(20000)
+//       .EUt(122880)
+//       .buildAndRegister();
+// // Кираса
+// starforge.recipeBuilder()
+//     .inputs(<metaitem:qts.chestplate>, <galaxyspace:space_suit_chest:200>, <galacticraftplanets:orion_drive> * 2)
+//     .fluidInputs([<liquid:fresh_water> * 1000])
+//     .outputs(<powersuits:powerarmor_torso>)
+//     .duration(28000)
+//     .EUt(8700)
+//     .buildAndRegister();
 
-// Поножи
-starforge.recipeBuilder()
-    .inputs(<metaitem:qts.leggings>, <galaxyspace:space_suit_legs:200>, <galacticraftplanets:orion_drive> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(<powersuits:powerarmor_legs>)
-    .duration(28000)
-    .EUt(8700)
-    .buildAndRegister();
+// // Поножи
+// starforge.recipeBuilder()
+//     .inputs(<metaitem:qts.leggings>, <galaxyspace:space_suit_legs:200>, <galacticraftplanets:orion_drive> * 4)
+//     .fluidInputs([<liquid:fresh_water> * 1000])
+//     .outputs(<powersuits:powerarmor_legs>)
+//     .duration(28000)
+//     .EUt(8700)
+//     .buildAndRegister();
 
-// Ботинки
-starforge.recipeBuilder()
-    .inputs(<metaitem:qts.boots>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(<powersuits:powerarmor_feet>)
-    .duration(28000)
-    .EUt(8700)
-    .buildAndRegister();
+// // Ботинки
+// starforge.recipeBuilder()
+//     .inputs(<metaitem:qts.boots>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4)
+//     .fluidInputs([<liquid:fresh_water> * 1000])
+//     .outputs(<powersuits:powerarmor_feet>)
+//     .duration(28000)
+//     .EUt(8700)
+//     .buildAndRegister();
 
-// Рука
-starforge.recipeBuilder()
-    .inputs(<metaitem:tool.drill.iv>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4, <metaitem:nano_saber>)
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(<powersuits:power_fist>)
-    .duration(28000)
-    .EUt(8700)
-    .buildAndRegister();
+// // Рука
+// starforge.recipeBuilder()
+//     .inputs(<metaitem:tool.drill.iv>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4, <metaitem:nano_saber>)
+//     .fluidInputs([<liquid:fresh_water> * 1000])
+//     .outputs(<powersuits:power_fist>)
+//     .duration(28000)
+//     .EUt(8700)
+//     .buildAndRegister();
