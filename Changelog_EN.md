@@ -29,7 +29,6 @@
 * Improved LuV quest line (thanks to TheGalax)
 * Fixed sound for TFC armor
 * Greenhouse recipes are slightly more expensive
-* The Infinity Water Cover recipe has been complicated and corrected.
 * The description of the Forge Hammer quest has been corrected (Getting a lower output for plates is the norm, because this is the only way to automate the production of plates up to LV).
 * Fixed the operation of double plates in the anvil.
 * Fixed possible crash due to AstralSorcery.
@@ -43,7 +42,6 @@
 * The LuV quest line has been finalized (thanks to TheGalax).
 * Fixed sound for TFC armor.
 * Recipes in the greenhouse have become slightly more expensive.
-* Infinite Water Cover recipe is complicated.
 * Now all TFC addons now have a 144mb metal system.
 * The recipe generation system for oreChunk has been rewritten and optimized.
 * Removed the recipe for washing coal and diamonds.
@@ -71,7 +69,6 @@
 * AE2 Unofficial Extended Life
 * GregTech CE: Unofficial
 * Betterp2p-extended_life
-* Supermartijn642configlib
 * Xaeros Minimap
 * Xaeros World Map
 * Sledgehammer

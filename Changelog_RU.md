@@ -55,7 +55,6 @@
 * AE2 Unofficial Extended Life
 * GregTech CE: Unofficial
 * Betterp2p-extended_life
-* Supermartijn642configlib
 * Xaeros Minimap
 * Xaeros World Map
 * Sledgehammer
