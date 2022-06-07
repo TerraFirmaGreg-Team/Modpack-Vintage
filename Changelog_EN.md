@@ -60,9 +60,9 @@
 * All TombStone items are hidden (Thanks to FDAapproved).
 * Added descriptions of some more items that cannot be recycled in GT machines (Thanks to FDAapproved).
 * Fixed tool belt recipes (Thanks to FDAapproved).
-* Fixed onion recipe (Thanks to FDAapproved).
-* Fixed sunflower oil recipes (Thanks to FDAapproved).
-* Fixed recipe for inverted llamas ProjectRed (Thanks AtelierAmber).
+* Fixed bow recipe (Thanks to FDAapproved).
+* Fixed seed oil recipes (Thanks to FDAapproved).
+* Fixed recipe for inverted lamps from ProjectRed (Thanks AtelierAmber).
 * Fixed dimension names in the GT config.
 * Maybe something else that we forgot.
 ### Update mods
