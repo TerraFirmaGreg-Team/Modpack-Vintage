@@ -699,9 +699,9 @@ mixer.recipeBuilder()
 // Infinite Water Cover 
 assembler.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
 assembler.recipeBuilder()
-    .inputs(<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>, <minecraft:ender_pearl>, <metaitem:emitter.hv>)
+    .inputs(<metaitem:electric.pump.iv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated> * 2, <minecraft:ender_pearl> * 2, <metaitem:emitter.iv>)
     .outputs(<metaitem:cover.infinite_water>)
-    .duration(200).EUt(480).buildAndRegister();
+    .duration(200).EUt(1280).buildAndRegister();
 
 // Voiding Cover (Fluid)
 recipes.removeByRecipeName("gregtech:cover_fluid_voiding");
