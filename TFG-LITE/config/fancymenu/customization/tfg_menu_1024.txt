@@ -179,15 +179,18 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = joinserver
+  vr:showif:modloaded = false
   backgroundhovered = resources\modpack\longbutton_h.png
   description = %serverplayercount:146.59.61.230%
   label = %local:tfg.menu.server%
   loopbackgroundanimations = true
+  hoverlabel = %serverplayercount:tfg.terrafirmagreg.su%
   x = 5
   width = 180
   actionid = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
   action = addbutton
   y = 169
+  vr:value:modloaded = thaumcraft
   backgroundnormal = resources\modpack\longbutton.png
   value = tfg.terrafirmagreg.su
   height = 21
@@ -313,6 +316,27 @@ customization {
   action = addbutton
   y = 32
   backgroundnormal = resources\modpack\reload.png
+  value = 
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  vr:showif:modloaded = true
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %serverplayercount:146.59.61.230%
+  label = %local:tfg.menu.server%
+  loopbackgroundanimations = true
+  hoverlabel = %local:tfg.menu.server.huge%
+  x = 5
+  width = 180
+  actionid = cea8af90-d229-4005-92bc-729e951a32d61654574095802
+  action = addbutton
+  y = 169
+  vr:value:modloaded = thaumcraft
+  backgroundnormal = resources\modpack\longbutton.png
   value = 
   height = 21
 }
