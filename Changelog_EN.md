@@ -13,8 +13,8 @@
 * Fixed liquid in firmalife, tfctech, tfcthings forms.
 * Fixed tfcthings config.
 * Optimization of the crafttweaker code by disabling recipes in TFC itself using our mod.
-* Dust iron again has 144mb ​​of metal.
-* Iron spit now has 144mb ​​of iron in itself and in its copies (up to 4 pieces), crafting is the same, in 144mb ​​processed.
+* Dust iron again has 144mb of metal.
+* Iron spit now has 144mb of iron in itself and in its copies (up to 4 pieces), crafting is the same, in 144mb ​​processed.
 * Complicated and fixed the Infinity Water Cover recipe.
 * Fixed the description of the Forge Hammer quest (Getting lower output for plates is the norm, as this is the only way to automate the production of plates to LV).
 * Fixed work of double plates in the anvil.
@@ -29,7 +29,42 @@
 * Improved LuV quest line (thanks to TheGalax)
 * Fixed sound for TFC armor
 * Greenhouse recipes are slightly more expensive
-* Усложнен рецепт Infinite Water Cover 
+* The Infinity Water Cover recipe has been complicated and corrected.
+* The description of the Forge Hammer quest has been corrected (Getting a lower output for plates is the norm, because this is the only way to automate the production of plates up to LV).
+* Fixed the operation of double plates in the anvil.
+* Fixed possible crash due to AstralSorcery.
+* Added a new multiblock, Star Forge.
+* Recipes of the Aunis (Stargate) mod and ModularPowersuits (will be rewritten)
+* Optimization of TFCFlorae models has been applied.
+* The texture of ore pieces has been changed.
+* TFC door models have been changed.
+* Changed the textures of some logs and chests to eliminate the display bug.
+* The liquid terminal recipe has been changed.
+* The LuV quest line has been finalized (thanks to TheGalax).
+* Fixed sound for TFC armor.
+* Recipes in the greenhouse have become slightly more expensive.
+* Infinite Water Cover recipe is complicated.
+* Now all TFC addons now have a 144mb metal system.
+* The recipe generation system for oreChunk has been rewritten and optimized.
+* Removed the recipe for washing coal and diamonds.
+* Implemented a system of dropping pieces of crystals (diamonds, emeralds), well, as in the usual TFK, only now there are no options.
+* Coal in the form of Chunk can now be used as fuel in TFC.
+* Some ExtraPlanets changes.
+* Improved the menu on Huge (now shows that it is impossible to connect to the server of.server) and Lite.
+* Added airs for planets that have them, as well as recipes for recycling and creation.
+* Now the TFC-Tech liquid jug can be made from TFC-Florae jugs.
+* Fixed the recipe for saw headbands (Thanks FDAapproved).
+* Fixed a duplicate of diamonds from the enchant table (Thanks to FDAapproved).
+* There are a lot of significant optimizations of TFG-Mod.
+* Fixed salt recipe when drying (Thanks to FDAapproved).
+* All TombStone items are hidden (Thanks to FDAapproved).
+* Added descriptions of some more items that cannot be recycled in GT machines (Thanks to FDAapproved).
+* Fixed tool belt recipes (Thanks to FDAapproved).
+* Fixed onion recipe (Thanks to FDAapproved).
+* Fixed sunflower oil recipes (Thanks to FDAapproved).
+* Fixed recipe for inverted llamas ProjectRed (Thanks AtelierAmber).
+* Fixed dimension names in the GT config.
+* Maybe something else that we forgot.
 ### Update mods
 * Fluid Craft for AE2
 * Corail Tombstone
