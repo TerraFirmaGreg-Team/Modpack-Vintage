@@ -84,7 +84,7 @@
 * Aunis
 * Modular Powersuits
 * Numina
-[Huge]
+#### [Huge]
 
 * Downgraded version of TFC Compatible
 * Downgraded version of Rocksalt
@@ -174,7 +174,7 @@
 * Hidden and removed useless recipes in the drafting machine from TFC-Tech.
 * Changed fireclay recipe (thanks to BayerHeroine).
 * And something else that we forgot.
-[Huge]
+#### [Huge]
 
 * Fixed AstralSorcery config.
 * Fixed recipe with crystal and workbench from AstralSorcery (presumably).
@@ -230,7 +230,7 @@
 * Updated LoliASM.
 
 ## Version R3.2a - 23.04.2022
-[Huge]
+#### [Huge]
 
 * Removed JEI.
 
@@ -369,7 +369,7 @@
 * Added a fertilizer recipe from TFC.
 * In addition to a custom greenhouse, a sawmill has been added, allowing you to get billions of wood.
 * Fixed knife recipes. Now from the casting blade from TFC. You can make an adequate knife from GT.
-[Huge]
+#### [Huge]
 
 * Added ThaumicJEI (the craft of the traveler's boots was, just not displayed).
 * Added vanilla block recipes (for the first time, for Thaumcraft, since most likely you will have to rewrite the mod code in order for everything to work with TFC).
@@ -476,7 +476,7 @@
 * Added Sound Filters mod.
 * DynamicSurr settings have been reset...
 * Fixed a bug in quests with liquids when a quest was counted without the right liquid.
-[Huge]
+#### [Huge]
 
 * Fixed the Astral Sorcery curve script.
 
@@ -486,7 +486,7 @@
 * Fixed iron dust processing in TFC blast furnace.
 * Fixed forging of plates, double plates.
 * Fixed some problems with ore dictionaries.
-[Huge]
+#### [Huge]
 
 * Fixed crash due to incorrect mod
 
@@ -531,7 +531,7 @@
 ## Version of the fish, fry and eat, it will be useful in winter
 
 * AE2 has been replaced by AE2 from Prototype Troussers, finally!
-[Huge]
+#### [Huge]
 
 * Fixed a strange loot in astral sorcery dungeon.
 
