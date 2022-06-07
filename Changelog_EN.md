@@ -29,6 +29,7 @@
 * Improved LuV quest line (thanks to TheGalax)
 * Fixed sound for TFC armor
 * Greenhouse recipes are slightly more expensive
+* Усложнен рецепт Infinite Water Cover 
 ### Update mods
 * Fluid Craft for AE2
 * Corail Tombstone

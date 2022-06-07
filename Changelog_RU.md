@@ -28,6 +28,7 @@
 * Доработана линейка квестов LuV(спасибо TheGalax)
 * Исправлен звук для брони TFC
 * Рецепты в теплице, стали слегка дороже
+* Усложнен рецепт Infinite Water Cover 
 ### Обновление модов
 * Fluid Craft for AE2
 * Corail Tombstone
