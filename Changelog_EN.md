@@ -84,6 +84,10 @@
 * Aunis
 * Modular Powersuits
 * Numina
+[Huge]
+
+* Downgraded version of TFC Compatible
+* Downgraded version of Rocksalt
 
 ## Version R3.3.0 - 26.05.2021
 [Lite, Huge]
