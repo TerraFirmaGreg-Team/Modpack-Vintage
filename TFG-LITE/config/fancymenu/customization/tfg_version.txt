@@ -29,11 +29,13 @@ customization {
   orientation = element
   shadow = false
   orientation_element = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
+  vr:showif:modloaded = false
   x = 0
   actionid = d7e78918-0328-4ddb-9751-2fb640691e3a1653954106814
   action = addtext
   y = 10
   scale = 1.0
+  vr:value:modloaded = thaumcraft
   alignment = left
   value = Modpack Type: §b[Lite]
 }
@@ -56,12 +58,27 @@ customization {
   shadow = false
   orientation_element = 1ad922f9-7a2a-46f5-aff0-dedcf563852e1653954119314
   multiline = false
-  x = 126
+  x = 125
   action = addwebtext
   actionid = a39c9bc9-7b66-4d97-ae52-c15395e2b2da1653954132402
-  y = 1
+  y = 0
   scale = 1.0
   alignment = left
   url = https://pastebin.com/raw/pPyKeYzA
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
+  vr:showif:modloaded = true
+  x = 0
+  actionid = 1662bc37-3dbc-4f8d-92bc-17a2530128b01654570169697
+  action = addtext
+  y = 10
+  scale = 1.0
+  vr:value:modloaded = thaumcraft
+  alignment = left
+  value = Modpack Type: §b[Huge]
 }
 
