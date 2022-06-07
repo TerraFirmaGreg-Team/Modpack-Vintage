@@ -1,4 +1,4 @@
-name: Notification on push
+name: Notification on push EN
 
 on:
   release:
