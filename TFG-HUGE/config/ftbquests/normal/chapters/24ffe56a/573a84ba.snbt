@@ -1,8 +1,8 @@
 {
 	title: "First ZPM Circuits!",
 	icon: "gregtech:meta_item_1 1 639",
-	x: 0.5d,
-	y: -6.0d,
+	x: -9.0d,
+	y: -3.75d,
 	text: [
 		"The §aZPM Mainframe§r is used to make the §3LuV Circuit Assembler§r (of course), but also §3Fusion§r."
 	],

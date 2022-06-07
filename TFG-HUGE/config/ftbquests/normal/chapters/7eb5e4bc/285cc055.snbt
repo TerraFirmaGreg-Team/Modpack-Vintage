@@ -1,8 +1,8 @@
 {
 	title: "Naquadah Chain",
 	icon: "gregtech:meta_dust 1 126",
-	x: -3.0d,
-	y: -4.0d,
+	x: -7.5d,
+	y: -2.5d,
 	text: [
 		"No Description"
 	],

@@ -66,7 +66,7 @@ assembler.recipeBuilder()
 
 // Fluid pattern ex terminal
 assembler.recipeBuilder()
-  .inputs(<ae2fc:part_fluid_pattern_terminal> * 2, <metaitem:sensor.luv> * 4, <metaitem:emitter.luv> , <metaitem:electric.pump.iv>)
+  .inputs(<ae2fc:part_fluid_pattern_terminal> * 2, <metaitem:sensor.iv> * 4, <metaitem:emitter.iv> , <metaitem:electric.pump.ev>)
   .circuit(24)
   .outputs(<ae2fc:part_fluid_pattern_ex_terminal>)
   .duration(10)
@@ -75,7 +75,7 @@ assembler.recipeBuilder()
 
 // Fluid pattern terminal
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:340>, <metaitem:sensor.luv> * 4, <metaitem:emitter.luv> , <metaitem:electric.pump.iv>)
+  .inputs(<appliedenergistics2:part:340>, <metaitem:sensor.ev> * 4, <metaitem:emitter.ev> , <metaitem:electric.pump.hv>)
   .circuit(24)
   .outputs(<ae2fc:part_fluid_pattern_terminal>)
   .duration(10)

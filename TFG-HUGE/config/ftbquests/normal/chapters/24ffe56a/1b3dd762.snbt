@@ -1,7 +1,7 @@
 {
 	title: "Rocket Fuel",
-	x: -4.5d,
-	y: -2.5d,
+	x: -10.25d,
+	y: -8.0d,
 	text: [
 		"§oRocket Fuel mostly exists for compatibility with other mods. Modpack devs love it!",
 		"As an actual fuel for power though? Terrible!§r",

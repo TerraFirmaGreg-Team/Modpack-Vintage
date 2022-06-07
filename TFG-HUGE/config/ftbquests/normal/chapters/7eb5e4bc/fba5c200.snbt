@@ -1,8 +1,8 @@
 {
 	title: "Combatting Lag",
 	icon: "gregtech:warning_sign 1 5",
-	x: -6.0d,
-	y: -2.5d,
+	x: -5.0d,
+	y: -1.25d,
 	text: [
 		"§oThe chances you are having TPS issues playing this modpack are slim, this Quest is more suited for late game bases with GregTech and AE2, and the tips apply to other modpacks.§r",
 		"",

@@ -1,8 +1,8 @@
 {
 	title: "Advanced SMDs",
 	icon: "gregtech:meta_item_1 1 530",
-	x: -22.0d,
-	y: -6.0d,
+	x: -19.5d,
+	y: -5.25d,
 	text: [
 		"Better §aSMDs§r to make Circuits more complex, but cheaper.",
 		"",

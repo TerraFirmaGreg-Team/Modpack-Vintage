@@ -10,9 +10,7 @@
 		"",
 		"{tfg.quests.steam.bronzeforgehammer.desc3}",
 		"",
-		"{tfg.quests.steam.bronzeforgehammer.desc4}",
-		"",
-		"{tfg.quests.steam.bronzeforgehammer.desc5}"
+		"{tfg.quests.steam.bronzeforgehammer.desc4}"
 	],
 	dependencies: [
 		"5347bf68"

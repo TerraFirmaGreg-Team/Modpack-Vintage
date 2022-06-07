@@ -5,6 +5,7 @@ import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ClayKnapping;
+import mods.terrafirmacraft.ItemRegistry;
 
 // --- Removing Recipes
 
@@ -62,6 +63,54 @@ Anvil.removeRecipe(<tfcthings:blue_steel_carrot>);
 Anvil.removeRecipe(<tfcthings:red_steel_carrot>);
 
 // --- Adding Recipes
+
+// Присвоение единиц металла
+// Honing Heads
+ItemRegistry.registerItemMetal(<tfcthings:honing_steel_head>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:honing_steel_head_diamond>, "BLACK_STEEL", 288, true);
+// Honing Tools
+ItemRegistry.registerItemMetal(<tfcthings:honing_steel>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:honing_steel_diamond>, "BLACK_STEEL", 288, true);
+// Hook Javelin Heads
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin_head/steel>, "STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin_head/black_steel>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin_head/blue_steel>, "BLUE_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin_head/red_steel>, "RED_STEEL", 288, true);
+// Hook Javelins
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin/steel>, "STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin/black_steel>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin/blue_steel>, "BLUE_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<tfcthings:hook_javelin/red_steel>, "RED_STEEL", 288, true);
+// Prospector Hammer Heads
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/bismuth_bronze>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/black_bronze>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/black_steel>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/blue_steel>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/bronze>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/copper>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/red_steel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/steel>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer_head/wrought_iron>, "WROUGHT_IRON", 144, true);
+// Prospector Hammers
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/bismuth_bronze>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/black_bronze>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/black_steel>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/blue_steel>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/bronze>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/copper>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/red_steel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/steel>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:prospectors_hammer/wrought_iron>, "WROUGHT_IRON", 144, true);
+// Rope Javelins
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/bismuth_bronze>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/black_bronze>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/black_steel>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/blue_steel>, "BLUE_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/bronze>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/copper>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/red_steel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/steel>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/wrought_iron>, "WROUGHT_IRON", 144, true);
 
 // Серебрянные короны
 recipes.addShapeless(<tfcthings:crown/platinum_garnet>, [<ore:gtce.tool.hard.hammers>, <tfcthings:crown/platinum_empty>, <ore:gemExquisiteGarnetRed>]);

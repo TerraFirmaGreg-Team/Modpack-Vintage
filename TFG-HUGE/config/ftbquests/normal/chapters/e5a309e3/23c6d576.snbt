@@ -20,6 +20,9 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 1655"
+		},
+		{
+			item: "gregtech:machine 1 1656"
 		}]
 	}]
 }

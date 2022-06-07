@@ -76,7 +76,8 @@ val RemoveItemRecipesByName = [
     "gregtech:plank_to_wooden_shape",
     "gregtech:sticks_from_bundle_saw",
     "gregtech:gravel_to_flint",
-    "gregtech:dust_bronze"
+    "gregtech:dust_bronze",
+    "gregtech:bow"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -220,6 +221,36 @@ recipes.addShaped(<metaitem:steam_export_bus>,
 [[null, <gregtech:steam_casing>, null],
  [null, <ore:chest>, null],
  [null, null, null]]);
+
+// Bow
+recipes.addShaped(<minecraft:bow>,
+[[<ore:gtce.tool.hard.hammers>, <metaitem:stickLongWood>, <ore:string>],
+ [<metaitem:stickLongWood>, <metaitem:ringWroughtIron>, <ore:string>],
+ [<ore:gtce.tool.files>, <metaitem:stickLongWood>, <ore:string>]]);
+
+// Fix EnchantTable dup
+macerator.findRecipe(2, [<minecraft:enchanting_table:0>], null).remove();
+macerator.recipeBuilder()
+    .inputs(<minecraft:enchanting_table>)
+    .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
+    .duration(135)
+    .EUt(2)
+    .buildAndRegister();
+
+// Fix Seed Oil Recipes
+// From Beetroot
+extractor.findRecipe(2, [<minecraft:beetroot_seeds:0>], null).remove();
+// From Pumpkin
+extractor.findRecipe(2, [<minecraft:pumpkin_seeds:0>], null).remove();
+// From Melon
+extractor.findRecipe(2, [<minecraft:melon_seeds:0>], null).remove();
+// From Wheat
+extractor.findRecipe(2, [<minecraft:wheat_seeds:0>], null).remove();
+// From All Seeds
+extractor.recipeBuilder()
+    .inputs(<ore:listAllSeeds>)
+    .fluidOutputs(<liquid:seed_oil> * 10)
+    .EUt(2).duration(32).buildAndRegister();
 
 // Extruder Shape (Sense Head)
 // Workbench
@@ -668,9 +699,9 @@ mixer.recipeBuilder()
 // Infinite Water Cover 
 assembler.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
 assembler.recipeBuilder()
-    .inputs(<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>, <minecraft:ender_pearl>, <metaitem:emitter.hv>)
+    .inputs(<metaitem:electric.pump.iv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated> * 2, <minecraft:ender_pearl> * 2, <metaitem:emitter.iv>)
     .outputs(<metaitem:cover.infinite_water>)
-    .duration(200).EUt(480).buildAndRegister();
+    .duration(200).EUt(1280).buildAndRegister();
 
 // Voiding Cover (Fluid)
 recipes.removeByRecipeName("gregtech:cover_fluid_voiding");
@@ -838,3 +869,9 @@ extractor.findRecipe(2, [<minecraft:red_flower:1>], null).remove();
 extractor.findRecipe(2, [<minecraft:double_plant:1>], null).remove();
 // Magenta Dye * 2
 extractor.findRecipe(2, [<minecraft:red_flower:2>], null).remove();
+
+// Remove Ender Airs
+gas_collector.findRecipe(256, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+centrifuge.findRecipe(480, null, [<liquid:ender_air> * 10000]).remove();
+vacuum_freezer.findRecipe(7680, null, [<liquid:ender_air> * 4000]).remove();
+distillation_tower.findRecipe(7680, null, [<liquid:liquid_ender_air> * 200000]).remove();

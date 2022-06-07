@@ -1,8 +1,8 @@
 {
 	title: "Polyphenylene Sulfide",
 	icon: "gregtech:meta_foil 1 1008",
-	x: -9.0d,
-	y: -1.0d,
+	x: -6.25d,
+	y: -1.25d,
 	text: [
 		"Required for §dLuV§r+ cables."
 	],

@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/oak"
+    },
+    "facing=south,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=left,open=false": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 270
+    },
+    "facing=south,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/oak"
+    },
+    "facing=west,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 90
+    },
+    "facing=north,half=lower,hinge=right,open=true": {
+      "model": "tfc:wood/door/lower/oak",
+      "y": 180
+    },
+    "facing=east,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/oak_rh"
+    },
+    "facing=south,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=false": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/oak_rh",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true": {
+      "model": "tfc:wood/door/lower/oak_rh"
+    },
+    "facing=east,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/oak"
+    },
+    "facing=south,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 270
+    },
+    "facing=south,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/oak"
+    },
+    "facing=west,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 90
+    },
+    "facing=north,half=upper,hinge=right,open=true": {
+      "model": "tfc:wood/door/upper/oak",
+      "y": 180
+    },
+    "facing=east,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/oak_rh"
+    },
+    "facing=south,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=false": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/oak_rh",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true": {
+      "model": "tfc:wood/door/upper/oak_rh"
+    }
+  }
+}

@@ -29,15 +29,6 @@ asmodeuscore:radiation
 asmodeuscore:overheat
 asmodeuscore:hypothermia
 galaxyspace:antiradiation
-thaumcraft:fluxtaint
-thaumcraft:visexhaust
-thaumcraft:infectiousvisexhaust
-thaumcraft:unnaturalhunger
-thaumcraft:warpward
-thaumcraft:deathgaze
-thaumcraft:blurredvision
-thaumcraft:sunscorned
-thaumcraft:thaumarhia
 tfc:overburdened
 tfc:thirst
 tfc:food_poison
@@ -99,11 +90,6 @@ tombstone:frost_resistance
 tombstone:bone_shield
 tombstone:bait
 tombstone:aquatic_life
-astralsorcery:potioncheatdeath
-astralsorcery:potionbleed
-astralsorcery:potionspellplague
-astralsorcery:potiondropmodifier
-astralsorcery:potiontimefreeze
 xaerominimap:no_minimap
 xaerominimap:no_minimap_harmful
 xaerominimap:no_minimap_beneficial
@@ -119,5 +105,3 @@ xaerominimap:no_cave_maps_beneficial
 xaeroworldmap:no_world_map
 xaeroworldmap:no_world_map_harmful
 xaeroworldmap:no_world_map_beneficial
-thaumadditions:sonus
-thaumadditions:sanity_checker

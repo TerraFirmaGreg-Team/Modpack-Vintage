@@ -21,219 +21,297 @@ oreChunk.generateRecipes(function(orePrefix as OrePrefix, material as Material) 
 
 } as IOreRecipeHandler);
 
-function GenerateRecipes (item_input as IItemStack, item_output as IItemStack, item_byproduct as IItemStack, mode as string) {
+function GenerateRecipes(material_input as string, item_byproduct as IItemStack, oreMultip as int) {
 	
-    if (mode == "1")
+    if (oreMultip == 1)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)), Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input)), Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input)), Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 2)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * 2)
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)))
             .duration(10).EUt(16).buildAndRegister();
     }
-    else if (mode == "2")
+    else if (oreMultip == 2)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)) * 2, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input))  * 2, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input))  * 2, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 4)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * (oreMultip * 2))
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 2)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * oreMultip)
             .duration(10).EUt(16).buildAndRegister();
     }
-    else if (mode == "3")
+    else if (oreMultip == 3)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)) * 3, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input)) * 3, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input)) * 3, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 6)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * (oreMultip * 2))
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 3)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * oreMultip)
             .duration(10).EUt(16).buildAndRegister();
     }
-    else if (mode == "4")
+    else if (oreMultip == 4)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)) * 4, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input)) * 4, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input)) * 4, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 8)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * (oreMultip * 2))
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 4)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * oreMultip)
             .duration(10).EUt(16).buildAndRegister();
     }
-    else if (mode == "5")
+    else if (oreMultip == 5)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)) * 5, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input)) * 5, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input)) * 5, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 10)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * (oreMultip * 2))
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 5)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * oreMultip)
             .duration(10).EUt(16).buildAndRegister();
     }
-    else if (mode == "6")
+    else if (oreMultip == 6)
     {
+        // Furnace
+        if (Utils.material(material_input).hasIngot()) {
+            if (!Utils.material(material_input).hasBlastTemp()) {
+                furnace.addRecipe(Utils.item(OrePrefix.getPrefix("ingot"), Utils.material(material_input)) * 6, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+            }
+        }
+        else if (Utils.material(material_input).hasGem()) {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("gem"), Utils.material(material_input)) * 6, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        else {
+            furnace.addRecipe(Utils.item(OrePrefix.getPrefix("dust"), Utils.material(material_input)) * 6, Utils.item(OrePrefix.getPrefix("oreChunk"), Utils.material(material_input)));
+        }
+        
         // Centrifuge
         macerator.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 12)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * (oreMultip * 2))
             .chancedOutput(item_byproduct, 1400, 850)
             .chancedOutput(<metaitem:dustStone>, 6700, 800)
             .duration(400).EUt(2).buildAndRegister();
 
         // Forge Hammer
         forge_hammer.recipeBuilder()
-            .inputs(item_input)
-            .outputs(item_output * 6)
+            .inputs(Utils.item("oreChunk", Utils.material(material_input)))
+            .outputs(Utils.item(OrePrefix.getPrefix("crushed"), Utils.material(material_input)) * oreMultip)
             .duration(10).EUt(16).buildAndRegister();
     }
 }
 
 // Создание рецептов для кусков, ведь разработчики GTCEu не могут исправить баг с рецептами
-GenerateRecipes(<metaitem:oreChunkZeolite>, <metaitem:crushedZeolite>, <metaitem:dustCalcium>, "3");
-GenerateRecipes(<metaitem:oreChunkTantalite>, <metaitem:crushedTantalite>, <metaitem:dustManganese>, "1");
-GenerateRecipes(<metaitem:oreChunkBornite>, <metaitem:crushedBornite>, <metaitem:dustPyrite>, "1");
-GenerateRecipes(<metaitem:oreChunkLapis>, <metaitem:crushedLapis>, <metaitem:gemLazurite>, "1");
-GenerateRecipes(<metaitem:oreChunkAlmandine>, <metaitem:crushedAlmandine>, <metaitem:gemGarnetRed>, "3");
-GenerateRecipes(<metaitem:oreChunkStibnite>, <metaitem:crushedStibnite>, <metaitem:dustAntimonyTrioxide>, "1");
-GenerateRecipes(<metaitem:oreChunkBarite>, <metaitem:crushedBarite>, <metaitem:dustBarite>, "1");
-GenerateRecipes(<metaitem:oreChunkPyrochlore>, <metaitem:crushedPyrochlore>, <metaitem:gemApatite>, "1");
-GenerateRecipes(<metaitem:oreChunkScheelite>, <metaitem:crushedScheelite>, <metaitem:dustManganese>, "1");
-GenerateRecipes(<metaitem:oreChunkPowellite>, <metaitem:crushedPowellite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkCobaltite>, <metaitem:crushedCobaltite>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkCassiterite>, <metaitem:crushedCassiterite>, <metaitem:dustTin>, "2");
-GenerateRecipes(<metaitem:oreChunkGarnetRed>, <metaitem:crushedGarnetRed>, <metaitem:gemSpessartine>, "4");
-GenerateRecipes(<metaitem:oreChunkChromite>, <metaitem:crushedChromite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkTrona>, <metaitem:crushedTrona>, <metaitem:dustSodium>, "2");
-GenerateRecipes(<metaitem:oreChunkGarnierite>, <metaitem:crushedGarnierite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkGlauconiteSand>, <metaitem:crushedGlauconiteSand>, <metaitem:dustSodium>, "3");
-GenerateRecipes(<metaitem:oreChunkMica>, <metaitem:crushedMica>, <metaitem:dustPotassium>, "2");
-GenerateRecipes(<metaitem:oreChunkPyrite>, <metaitem:crushedPyrite>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkPentlandite>, <metaitem:crushedPentlandite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkUraninite>, <metaitem:crushedUraninite>, <metaitem:dustUraninite>, "1");
-GenerateRecipes(<metaitem:oreChunkCobalt>, <metaitem:crushedCobalt>, <metaitem:dustCobaltOxide>, "1");
-GenerateRecipes(<metaitem:oreChunkSodalite>, <metaitem:crushedSodalite>, <metaitem:gemLazurite>, "6");
-GenerateRecipes(<metaitem:oreChunkMolybdenum>, <metaitem:crushedMolybdenum>, <metaitem:dustMolybdenum>, "1");
-GenerateRecipes(<metaitem:oreChunkSalt>, <metaitem:crushedSalt>, <metaitem:gemRockSalt>, "2");
-GenerateRecipes(<metaitem:oreChunkThorium>, <metaitem:crushedThorium>, <metaitem:dustUraninite>, "1");
-GenerateRecipes(<metaitem:oreChunkBandedIron>, <metaitem:crushedBandedIron>, <metaitem:dustMagnetite>, "1");
-GenerateRecipes(<metaitem:oreChunkSpessartine>, <metaitem:crushedSpessartine>, <metaitem:gemGarnetRed>, "3");
-GenerateRecipes(<metaitem:oreChunkOlivine>, <metaitem:crushedOlivine>, <metaitem:gemPyrope>, "2");
-GenerateRecipes(<metaitem:oreChunkPollucite>, <metaitem:crushedPollucite>, <metaitem:dustCaesium>, "1");
-GenerateRecipes(<metaitem:oreChunkLead>, <metaitem:crushedLead>, <metaitem:dustSilver>, "1");
-GenerateRecipes(<metaitem:oreChunkTricalciumPhosphate>, <metaitem:crushedTricalciumPhosphate>, <metaitem:gemApatite>, "3");
-GenerateRecipes(<metaitem:oreChunkPlutonium>, <metaitem:crushedPlutonium>, <metaitem:dustUraninite>, "1");
-GenerateRecipes(<metaitem:oreChunkTopaz>, <metaitem:crushedTopaz>, <metaitem:gemBlueTopaz>, "1");
-GenerateRecipes(<metaitem:oreChunkGarnetYellow>, <metaitem:crushedGarnetYellow>, <metaitem:gemAndradite>, "4");
-GenerateRecipes(<metaitem:oreChunkBlueTopaz>, <metaitem:crushedBlueTopaz>, <metaitem:gemTopaz>, "2");
-GenerateRecipes(<metaitem:oreChunkBauxite>, <metaitem:crushedBauxite>, <metaitem:gemGrossular>, "1");
-GenerateRecipes(<metaitem:oreChunkGold>, <metaitem:crushedGold>, <metaitem:dustCopper>, "1");
-GenerateRecipes(<metaitem:oreChunkIron>, <metaitem:crushedIron>, <metaitem:dustNickel>, "1");
-GenerateRecipes(<metaitem:oreChunkYellowLimonite>, <metaitem:crushedYellowLimonite>, <metaitem:dustNickel>, "1");
-GenerateRecipes(<metaitem:oreChunkOpal>, <metaitem:crushedOpal>, <metaitem:gemOpal>, "1");
-GenerateRecipes(<metaitem:oreChunkEmerald>, <metaitem:crushedEmerald>, <metaitem:dustBeryllium>, "2");
-GenerateRecipes(<metaitem:oreChunkLithium>, <metaitem:crushedLithium>, <metaitem:dustLithium>, "1");
-GenerateRecipes(<metaitem:oreChunkTetrahedrite>, <metaitem:crushedTetrahedrite>, <metaitem:dustAntimony>, "1");
-GenerateRecipes(<metaitem:oreChunkElectrotine>, <metaitem:crushedElectrotine>, <minecraft:redstone>, "5");
-GenerateRecipes(<metaitem:oreChunkBasalticMineralSand>, <metaitem:crushedBasalticMineralSand>, <metaitem:dustBasalt>, "1");
-GenerateRecipes(<metaitem:oreChunkNetherQuartz>, <metaitem:crushedNetherQuartz>, <metaitem:gemQuartzite>, "2");
-GenerateRecipes(<metaitem:oreChunkGreenSapphire>, <metaitem:crushedGreenSapphire>, <metaitem:dustAluminium>, "1");
-GenerateRecipes(<metaitem:oreChunkSphalerite>, <metaitem:crushedSphalerite>, <metaitem:gemGarnetYellow>, "1");
-GenerateRecipes(<metaitem:oreChunkCinnabar>, <metaitem:crushedCinnabar>, <minecraft:redstone>, "1");
-GenerateRecipes(<metaitem:oreChunkNaquadah>, <metaitem:crushedNaquadah>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkBastnasite>, <metaitem:crushedBastnasite>, <metaitem:dustNeodymium>, "2");
-GenerateRecipes(<metaitem:oreChunkPlatinum>, <metaitem:crushedPlatinum>, <metaitem:dustNickel>, "1");
-GenerateRecipes(<metaitem:oreChunkMagnetite>, <metaitem:crushedMagnetite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkQuartzite>, <metaitem:crushedQuartzite>, <metaitem:gemCertusQuartz>, "1");
-GenerateRecipes(<metaitem:oreChunkTalc>, <metaitem:crushedTalc>, <metaitem:dustClay>, "2");
-GenerateRecipes(<metaitem:oreChunkGraniticMineralSand>, <metaitem:crushedGraniticMineralSand>, <metaitem:dustGraniteBlack>, "1");
-GenerateRecipes(<metaitem:oreChunkCertusQuartz>, <metaitem:crushedCertusQuartz>, <minecraft:quartz>, "2");
-GenerateRecipes(<metaitem:oreChunkMonazite>, <metaitem:crushedMonazite>, <metaitem:dustThorium>, "4");
-GenerateRecipes(<metaitem:oreChunkChalcopyrite>, <metaitem:crushedChalcopyrite>, <metaitem:dustPyrite>, "1");
-GenerateRecipes(<metaitem:oreChunkSilver>, <metaitem:crushedSilver>, <metaitem:dustLead>, "1");
-GenerateRecipes(<metaitem:oreChunkAlunite>, <metaitem:crushedAlunite>, <metaitem:dustAlunite>, "3");
-GenerateRecipes(<metaitem:oreChunkAsbestos>, <metaitem:crushedAsbestos>, <metaitem:dustDiatomite>, "3");
-GenerateRecipes(<metaitem:oreChunkSapphire>, <metaitem:crushedSapphire>, <metaitem:dustAluminium>, "1");
-GenerateRecipes(<metaitem:oreChunkNickel>, <metaitem:crushedNickel>, <metaitem:dustCobalt>, "1");
-GenerateRecipes(<metaitem:oreChunkKyanite>, <metaitem:crushedKyanite>, <metaitem:dustTalc>, "1");
-GenerateRecipes(<metaitem:oreChunkVanadiumMagnetite>, <metaitem:crushedVanadiumMagnetite>, <metaitem:dustMagnetite>, "1");
-GenerateRecipes(<metaitem:oreChunkPyrope>, <metaitem:crushedPyrope>, <metaitem:gemGarnetRed>, "3");
-GenerateRecipes(<metaitem:oreChunkSulfur>, <metaitem:crushedSulfur>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkMagnesite>, <metaitem:crushedMagnesite>, <metaitem:dustMagnesium>, "1");
-GenerateRecipes(<metaitem:oreChunkBentonite>, <metaitem:crushedBentonite>, <metaitem:dustAluminium>, "3");
-GenerateRecipes(<metaitem:oreChunkPalladium>, <metaitem:crushedPalladium>, <metaitem:dustPalladium>, "1");
-GenerateRecipes(<metaitem:oreChunkGlowstone>, <metaitem:crushedGlowstone>, <minecraft:glowstone_dust>, "1");
-GenerateRecipes(<metaitem:oreChunkBeryllium>, <metaitem:crushedBeryllium>, <minecraft:emerald>, "1");
-GenerateRecipes(<metaitem:oreChunkMalachite>, <metaitem:crushedMalachite>, <metaitem:dustBrownLimonite>, "1");
-GenerateRecipes(<metaitem:oreChunkRockSalt>, <metaitem:crushedRockSalt>, <metaitem:gemSalt>, "2");
-GenerateRecipes(<metaitem:oreChunkIlmenite>, <metaitem:crushedIlmenite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkCalcite>, <metaitem:crushedCalcite>, <metaitem:dustCalcium>, "1");
-GenerateRecipes(<metaitem:oreChunkGraphite>, <metaitem:crushedGraphite>, <metaitem:dustCarbon>, "1");
-GenerateRecipes(<metaitem:oreChunkPitchblende>, <metaitem:crushedPitchblende>, <metaitem:dustThorium>, "1");
-GenerateRecipes(<metaitem:oreChunkAluminium>, <metaitem:crushedAluminium>, <metaitem:dustThorium>, "1");
-GenerateRecipes(<metaitem:oreChunkAmethyst>, <metaitem:crushedAmethyst>, <metaitem:gemAmethyst>, "1");
-GenerateRecipes(<metaitem:oreChunkRedstone>, <metaitem:crushedRedstone>, <metaitem:gemCinnabar>, "5");
-GenerateRecipes(<metaitem:oreChunkSpodumene>, <metaitem:crushedSpodumene>, <metaitem:dustAluminium>, "1");
-GenerateRecipes(<metaitem:oreChunkCooperite>, <metaitem:crushedCooperite>, <metaitem:dustNickel>, "1");
-GenerateRecipes(<metaitem:oreChunkRealgar>, <metaitem:crushedRealgar>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkDiatomite>, <metaitem:crushedDiatomite>, <metaitem:dustBandedIron>, "1");
-GenerateRecipes(<metaitem:oreChunkBismuth>, <metaitem:crushedBismuth>, <metaitem:dustBismuth>, "1");
-GenerateRecipes(<metaitem:oreChunkLepidolite>, <metaitem:crushedLepidolite>, <metaitem:dustLithium>, "2");
-GenerateRecipes(<metaitem:oreChunkBrownLimonite>, <metaitem:crushedBrownLimonite>, <metaitem:gemMalachite>, "1");
-GenerateRecipes(<metaitem:oreChunkWulfenite>, <metaitem:crushedWulfenite>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkGypsum>, <metaitem:crushedGypsum>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkSoapstone>, <metaitem:crushedSoapstone>, <metaitem:dustSiliconDioxide>, "1");
-GenerateRecipes(<metaitem:oreChunkApatite>, <metaitem:crushedApatite>, <metaitem:dustTricalciumPhosphate>, "4");
-GenerateRecipes(<metaitem:oreChunkCopper>, <metaitem:crushedCopper>, <metaitem:dustCobalt>, "1");
-GenerateRecipes(<metaitem:oreChunkGalena>, <metaitem:crushedGalena>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkNeodymium>, <metaitem:crushedNeodymium>, <metaitem:dustRareEarth>, "1");
-GenerateRecipes(<metaitem:oreChunkTin>, <metaitem:crushedTin>, <metaitem:dustIron>, "1");
-GenerateRecipes(<metaitem:oreChunkCoal>, <metaitem:crushedCoal>, <minecraft:coal>, "2");
-GenerateRecipes(<metaitem:oreChunkFullersEarth>, <metaitem:crushedFullersEarth>, <metaitem:dustAluminium>, "2");
-GenerateRecipes(<metaitem:oreChunkPyrolusite>, <metaitem:crushedPyrolusite>, <metaitem:dustManganese>, "1");
-GenerateRecipes(<metaitem:oreChunkMolybdenite>, <metaitem:crushedMolybdenite>, <metaitem:dustMolybdenum>, "1");
-GenerateRecipes(<metaitem:oreChunkSaltpeter>, <metaitem:crushedSaltpeter>, <metaitem:dustSaltpeter>, "2"); //
-GenerateRecipes(<metaitem:oreChunkTungstate>, <metaitem:crushedTungstate>, <metaitem:dustManganese>, "1");
-GenerateRecipes(<metaitem:oreChunkGarnetSand>, <metaitem:crushedGarnetSand>, <metaitem:gemGarnetRed>, "1");
-GenerateRecipes(<metaitem:oreChunkGrossular>, <metaitem:crushedGrossular>, <metaitem:gemGarnetYellow>, "3");
-GenerateRecipes(<metaitem:oreChunkRuby>, <metaitem:crushedRuby>, <metaitem:dustChrome>, "1");
-GenerateRecipes(<metaitem:oreChunkCassiteriteSand>, <metaitem:crushedCassiteriteSand>, <metaitem:dustTin>, "2");
-GenerateRecipes(<metaitem:oreChunkOilsands>, <metaitem:crushedOilsands>, <metaitem:dustOilsands>, "1");
-GenerateRecipes(<metaitem:oreChunkLazurite>, <metaitem:crushedLazurite>, <metaitem:gemSodalite>, "6");
-GenerateRecipes(<metaitem:oreChunkChalcocite>, <metaitem:crushedChalcocite>, <metaitem:dustSulfur>, "1"); //
-GenerateRecipes(<metaitem:oreChunkDiamond>, <metaitem:crushedDiamond>, <metaitem:dustGraphite>, "1"); //
+GenerateRecipes("zeolite", <metaitem:dustCalcium>, "3");
+GenerateRecipes("tantalite", <metaitem:dustManganese>, "1");
+GenerateRecipes("bornite", <metaitem:dustPyrite>, "1");
+GenerateRecipes("lapis", <metaitem:gemLazurite>, "1");
+GenerateRecipes("almandine", <metaitem:gemGarnetRed>, "3");
+GenerateRecipes("stibnite", <metaitem:dustAntimonyTrioxide>, "1");
+GenerateRecipes("barite", <metaitem:dustBarite>, "1");
+GenerateRecipes("pyrochlore", <metaitem:gemApatite>, "1");
+GenerateRecipes("scheelite", <metaitem:dustManganese>, "1");
+GenerateRecipes("powellite", <metaitem:dustIron>, "1");
+GenerateRecipes("cobaltite", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("cassiterite", <metaitem:dustTin>, "2");
+GenerateRecipes("garnet_red", <metaitem:gemSpessartine>, "4");
+GenerateRecipes("chromite", <metaitem:dustIron>, "1");
+GenerateRecipes("trona", <metaitem:dustSodium>, "2");
+GenerateRecipes("garnierite", <metaitem:dustIron>, "1");
+GenerateRecipes("glauconite_sand", <metaitem:dustSodium>, "3");
+GenerateRecipes("mica", <metaitem:dustPotassium>, "2");
+GenerateRecipes("pyrite", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("pentlandite", <metaitem:dustIron>, "1");
+GenerateRecipes("uraninite", <metaitem:dustUraninite>, "1");
+GenerateRecipes("cobalt", <metaitem:dustCobaltOxide>, "1");
+GenerateRecipes("sodalite", <metaitem:gemLazurite>, "6");
+GenerateRecipes("molybdenum", <metaitem:dustMolybdenum>, "1");
+GenerateRecipes("salt", <metaitem:gemRockSalt>, "2");
+GenerateRecipes("thorium", <metaitem:dustUraninite>, "1");
+GenerateRecipes("banded_iron", <metaitem:dustMagnetite>, "1");
+GenerateRecipes("spessartine", <metaitem:gemGarnetRed>, "3");
+GenerateRecipes("olivine", <metaitem:gemPyrope>, "2");
+GenerateRecipes("pollucite", <metaitem:dustCaesium>, "1");
+GenerateRecipes("lead", <metaitem:dustSilver>, "1");
+GenerateRecipes("tricalcium_phosphate", <metaitem:gemApatite>, "3");
+GenerateRecipes("plutonium", <metaitem:dustUraninite>, "1");
+GenerateRecipes("topaz", <metaitem:gemBlueTopaz>, "1");
+GenerateRecipes("garnet_yellow", <metaitem:gemAndradite>, "4");
+GenerateRecipes("blue_topaz", <metaitem:gemTopaz>, "2");
+GenerateRecipes("bauxite", <metaitem:gemGrossular>, "1");
+GenerateRecipes("gold",  <metaitem:dustCopper>, "1");
+GenerateRecipes("iron", <metaitem:dustNickel>, "1");
+GenerateRecipes("yellow_limonite", <metaitem:dustNickel>, "1");
+GenerateRecipes("opal", <metaitem:gemOpal>, "1");
+GenerateRecipes("emerald", <metaitem:dustBeryllium>, "2");
+GenerateRecipes("lithium", <metaitem:dustLithium>, "1");
+GenerateRecipes("tetrahedrite", <metaitem:dustAntimony>, "1");
+GenerateRecipes("electrotine", <minecraft:redstone>, "5");
+GenerateRecipes("basaltic_mineral_sand", <metaitem:dustBasalt>, "1");
+GenerateRecipes("nether_quartz", <metaitem:gemQuartzite>, "2");
+GenerateRecipes("green_sapphire", <metaitem:dustAluminium>, "1");
+GenerateRecipes("sphalerite", <metaitem:gemGarnetYellow>, "1");
+GenerateRecipes("cinnabar", <minecraft:redstone>, "1");
+GenerateRecipes("naquadah", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("bastnasite", <metaitem:dustNeodymium>, "2");
+GenerateRecipes("platinum", <metaitem:dustNickel>, "1");
+GenerateRecipes("magnetite", <metaitem:dustIron>, "1");
+GenerateRecipes("quartzite", <metaitem:gemCertusQuartz>, "1");
+GenerateRecipes("talc", <metaitem:dustClay>, "2");
+GenerateRecipes("granitic_mineral_sand", <metaitem:dustGraniteBlack>, "1");
+GenerateRecipes("certus_quartz", <minecraft:quartz>, "2");
+GenerateRecipes("monazite", <metaitem:dustThorium>, "4");
+GenerateRecipes("chalcopyrite", <metaitem:dustPyrite>, "1");
+GenerateRecipes("silver", <metaitem:dustLead>, "1");
+GenerateRecipes("alunite", <metaitem:dustAlunite>, "3");
+GenerateRecipes("asbestos", <metaitem:dustDiatomite>, "3");
+GenerateRecipes("sapphire", <metaitem:dustAluminium>, "1");
+GenerateRecipes("nickel", <metaitem:dustCobalt>, "1");
+GenerateRecipes("kyanite", <metaitem:dustTalc>, "1");
+GenerateRecipes("vanadium_magnetite", <metaitem:dustMagnetite>, "1");
+GenerateRecipes("pyrope", <metaitem:gemGarnetRed>, "3");
+GenerateRecipes("sulfur", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("magnesite", <metaitem:dustMagnesium>, "1");
+GenerateRecipes("bentonite", <metaitem:dustAluminium>, "3");
+GenerateRecipes("palladium", <metaitem:dustPalladium>, "1");
+GenerateRecipes("glowstone", <minecraft:glowstone_dust>, "1");
+GenerateRecipes("beryllium", <minecraft:emerald>, "1");
+GenerateRecipes("malachite", <metaitem:dustBrownLimonite>, "1");
+GenerateRecipes("rock_salt", <metaitem:gemSalt>, "2");
+GenerateRecipes("ilmenite", <metaitem:dustIron>, "1");
+GenerateRecipes("calcite", <metaitem:dustCalcium>, "1");
+GenerateRecipes("graphite", <metaitem:dustCarbon>, "1");
+GenerateRecipes("pitchblende", <metaitem:dustThorium>, "1");
+GenerateRecipes("aluminium", <metaitem:dustThorium>, "1");
+GenerateRecipes("amethyst", <metaitem:gemAmethyst>, "1");
+GenerateRecipes("redstone", <metaitem:gemCinnabar>, "5");
+GenerateRecipes("spodumene", <metaitem:dustAluminium>, "1");
+GenerateRecipes("cooperite",  <metaitem:dustNickel>, "1");
+GenerateRecipes("realgar", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("diatomite", <metaitem:dustBandedIron>, "1");
+GenerateRecipes("bismuth", <metaitem:dustBismuth>, "1");
+GenerateRecipes("lepidolite", <metaitem:dustLithium>, "2");
+GenerateRecipes("brown_limonite", <metaitem:gemMalachite>, "1");
+GenerateRecipes("wulfenite", <metaitem:dustIron>, "1");
+GenerateRecipes("gypsum",  <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("soapstone", <metaitem:dustSiliconDioxide>, "1");
+GenerateRecipes("apatite", <metaitem:dustTricalciumPhosphate>, "4");
+GenerateRecipes("copper", <metaitem:dustCobalt>, "1");
+GenerateRecipes("galena", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("neodymium", <metaitem:dustRareEarth>, "1");
+GenerateRecipes("tin", <metaitem:dustIron>, "1");
+GenerateRecipes("coal", <minecraft:coal>, "2");
+GenerateRecipes("fullers_earth", <metaitem:dustAluminium>, "2");
+GenerateRecipes("pyrolusite", <metaitem:dustManganese>, "1");
+GenerateRecipes("molybdenite", <metaitem:dustMolybdenum>, "1");
+GenerateRecipes("saltpeter", <metaitem:dustSaltpeter>, "2"); //
+GenerateRecipes("tungstate", <metaitem:dustManganese>, "1");
+GenerateRecipes("garnet_sand", <metaitem:gemGarnetRed>, "1");
+GenerateRecipes("grossular", <metaitem:gemGarnetYellow>, "3");
+GenerateRecipes("ruby", <metaitem:dustChrome>, "1");
+GenerateRecipes("cassiterite_sand", <metaitem:dustTin>, "2");
+GenerateRecipes("oilsands", <metaitem:dustOilsands>, "1");
+GenerateRecipes("lazurite", <metaitem:gemSodalite>, "6");
+GenerateRecipes("chalcocite", <metaitem:dustSulfur>, "1"); //
+GenerateRecipes("diamond", <metaitem:dustGraphite>, "1"); //
 
 // Fix strange bug with oreQuartzite
 // Centrifuge

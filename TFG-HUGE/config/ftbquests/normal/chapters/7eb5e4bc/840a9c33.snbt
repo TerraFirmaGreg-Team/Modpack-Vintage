@@ -1,0 +1,54 @@
+{
+	title: "Funny content",
+	icon: "gregtech:meta_item_1 1 132",
+	x: -1.0d,
+	y: -2.25d,
+	text: [
+		""
+	],
+	dependencies: [
+		"bc63adef"
+	],
+	tasks: [{
+		uid: "89c59c8b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 132"
+		}]
+	},
+	{
+		uid: "d479f138",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 147"
+		}]
+	},
+	{
+		uid: "629f8f50",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 177"
+		}]
+	},
+	{
+		uid: "9151e4c6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 162"
+		}]
+	},
+	{
+		uid: "4cd7e8a6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 222"
+		}]
+	},
+	{
+		uid: "db73d673",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 237"
+		}]
+	}]
+}

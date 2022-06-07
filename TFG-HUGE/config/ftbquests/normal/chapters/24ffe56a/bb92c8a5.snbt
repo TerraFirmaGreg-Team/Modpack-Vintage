@@ -1,8 +1,8 @@
 {
 	title: "HSS-G",
 	icon: "gregtech:meta_ingot 1 2516",
-	x: -18.0d,
-	y: -7.5d,
+	x: -17.5d,
+	y: -7.75d,
 	text: [
 		"§oHigh-Speed Steels (HSS) are more resistant Steel Alloys typically used in Rails.§r",
 		"",

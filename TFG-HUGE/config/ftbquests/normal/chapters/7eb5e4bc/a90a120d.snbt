@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	dependencies: [
+		"695b189a"
+	],
+	tasks: [{
+		uid: "674454fe",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 749"
+		}]
+	}]
+}

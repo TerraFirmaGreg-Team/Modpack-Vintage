@@ -61,9 +61,6 @@ minecraft:mutated_mesa
 minecraft:mutated_mesa_rock
 minecraft:mutated_mesa_clear_rock
 appliedenergistics2:storage_biome
-thaumcraft:magical_forest
-thaumcraft:eerie
-thaumcraft:eldritch
 galacticraftcore:outer space
 galacticraftplanets:outer space 1
 galacticraftplanets:outer space 2
@@ -109,6 +106,3 @@ tfc:mesa
 tfc:mesa_plateau
 tfc:mesa_bryce
 tfc:mesa_plateau_m
-thaumicaugmentation:emptiness
-thaumicaugmentation:tainted_lands
-thaumicaugmentation:emptiness_highlands

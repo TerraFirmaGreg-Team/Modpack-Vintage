@@ -6,6 +6,7 @@ import mods.gregtech.IControllerTile;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.FactoryRecipeMap;
+import mods.gregtech.recipe.RecipeMapBuilder;
 import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
 import mods.gregtech.recipe.IRecipe;
 import mods.gregtech.recipe.IRecipeLogic;
@@ -23,7 +24,7 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Multiblock Builder
 ########################################
-# Multiblock Builder
+# Saw mill
 ########################################
 global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
   .minInputs(2)
@@ -59,7 +60,7 @@ var electric_saw_mill = Builder.start(loc, id)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
 electric_saw_mill.hasMaintenanceMechanics = false;
-electric_saw_mill.hasMufflerMechanics = false;
+electric_saw_mill.hasMufflerMechanics = true;
 
 recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],

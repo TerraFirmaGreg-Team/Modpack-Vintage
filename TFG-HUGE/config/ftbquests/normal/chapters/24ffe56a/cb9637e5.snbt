@@ -1,8 +1,8 @@
 {
 	title: "Rare Earth",
 	icon: "gregtech:meta_dust 1 1598",
-	x: -22.0d,
-	y: -7.5d,
+	x: -21.25d,
+	y: -6.75d,
 	text: [
 		"If you already made and centrifuged §aRare Earth§r, that's great! If you did not, obtain it as §9Byproduct§r from various ores, or from centrifuging §dMonazite§r.",
 		"",

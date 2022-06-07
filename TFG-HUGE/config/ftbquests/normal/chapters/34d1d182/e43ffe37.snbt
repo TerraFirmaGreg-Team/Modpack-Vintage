@@ -4,7 +4,6 @@
 	y: 10.125d,
 	shape: "octagon",
 	dependencies: [
-		"dad6b73b",
 		"411b712c"
 	],
 	size: 1.5d,

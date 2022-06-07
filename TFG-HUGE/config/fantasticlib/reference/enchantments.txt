@@ -28,9 +28,6 @@ minecraft:luck_of_the_sea
 minecraft:lure
 minecraft:mending
 minecraft:vanishing_curse
-minecraft:thaumicbases.eldritchbane
-minecraft:thaumicbases.elderknowledge
-minecraft:thaumicbases.tainted
 gregtech:disjunction
 gregtech:hard_hammer
 parry:parry
@@ -40,5 +37,3 @@ tombstone:magic_siphon
 tombstone:plague_bringer
 tombstone:blessing
 tombstone:curse_of_bones
-astralsorcery:enchantment.as.nightvision
-astralsorcery:enchantment.as.smelting

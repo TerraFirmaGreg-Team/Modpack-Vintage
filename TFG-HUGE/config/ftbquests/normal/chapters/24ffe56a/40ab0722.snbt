@@ -1,8 +1,8 @@
 {
 	title: "IV Superconductors",
 	icon: "gregtech:wire_single 1 428",
-	x: -22.0d,
-	y: -9.0d,
+	x: -21.25d,
+	y: -7.75d,
 	text: [
 		"This Superconductor will be required for progression during §dLuV§r (if you guessed why, congratulations, you are an expert with §2JEI§r!)."
 	],

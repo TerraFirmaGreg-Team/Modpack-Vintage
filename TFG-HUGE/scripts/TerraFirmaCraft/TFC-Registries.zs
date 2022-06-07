@@ -27,6 +27,7 @@ ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
 // --- Регистрация топлива
 ItemRegistry.registerFuel(<metaitem:gemCoke>, 3200, 1450, true, true);
 ItemRegistry.registerFuel(<minecraft:coal>, 1600, 1400, true, true);
+ItemRegistry.registerFuel(<metaitem:oreChunkCoal>, 1600, 1400, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 
 // --- Регистрация инструментов
@@ -38,27 +39,25 @@ ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
 // ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 50, true);
 
 // --- Регистрация металлов для двойных пластин GregTech
-/*
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 165, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 165, true);
-*/
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 200, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 200, true);
 
 // ---//--- Вариации Меди
 
@@ -185,7 +184,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiteriteSand>, "TIN", 3, tru
 // Кусок руды
 ItemRegistry.registerItemMetal(<metaitem:oreChunkIron>, "WROUGHT_IRON", 25, true);
 // Чистая Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 100, false);
+ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 144, false);
 // Грязная Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustImpureIron>, "WROUGHT_IRON", 80, false);
 // Средняя Кучка

@@ -10,8 +10,11 @@
 	y: 6.625d,
 	hide_dependency_lines: true,
 	dependencies: [
-		"79111811"
+		"79111811",
+		"e4e7bcbf",
+		"e43ffe37"
 	],
+	dependency_requirement: "one_completed",
 	size: 0.5d,
 	tasks: [{
 		uid: "104d8b4d",
