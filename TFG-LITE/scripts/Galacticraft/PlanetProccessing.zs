@@ -4,6 +4,14 @@ import mods.gregtech.recipe.Utils;
 
 // --- Atmospheres
 
+function GenerateGasCollectorRecipes(dimension as int, CircuitConfig as int) {
+   gas_collector.recipeBuilder()
+      .circuit(CircuitConfig)
+      .fluidOutputs(<liquid:air>  * 10000)
+      .property("dimension", dimension)
+      .duration(200).EUt(256).buildAndRegister();
+}
+
 function GenerateRecipesForAir(input as string, dimension as int, EUMulti as int, CircuitConfig as int) {
    
    // Gas Collector
@@ -311,32 +319,10 @@ distillation_tower.recipeBuilder()
    .buildAndRegister();
 
 // Barnard C
-/*gas_collector.recipeBuilder()
-   .circuit(18)
-   .fluidOutputs(<liquid:air>  * 10000)
-   .property("dimension", -1030)
-   .duration(200).EUt(256).buildAndRegister();
-
-// Kepler 22b
-gas_collector.recipeBuilder()
-   .circuit(19)
-   .fluidOutputs(<liquid:air>  * 10000)
-   .property("dimension", -22)
-   .duration(200).EUt(256).buildAndRegister();
-
-// Proxima B
-gas_collector.recipeBuilder()
-   .circuit(20)
-   .fluidOutputs(<liquid:air>  * 10000)
-   .property("dimension", -1025)
-   .duration(200).EUt(256).buildAndRegister();
-
-// Tau Ceti F
-gas_collector.recipeBuilder()
-   .circuit(21)
-   .fluidOutputs(<liquid:air>  * 10000)
-   .property("dimension", -1338)
-   .duration(200).EUt(256).buildAndRegister();*/
+GenerateGasCollectorRecipes(-1030, 18);
+GenerateGasCollectorRecipes(-22, 19);
+GenerateGasCollectorRecipes(-1025, 20);
+GenerateGasCollectorRecipes(-1338, 21);
 
 // --- Rocks
 
