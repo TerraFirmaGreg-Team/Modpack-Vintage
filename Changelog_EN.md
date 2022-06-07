@@ -38,6 +38,7 @@
 * Supermartijn642configlib
 * Xaeros Minimap
 * Xaeros World Map
+* Sledgehammer
 ### Removing mods
 * Phosphorus
 * Portality
