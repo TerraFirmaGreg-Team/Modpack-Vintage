@@ -127,7 +127,7 @@ for i, Deactivated_Lamps_Array in Deactivated_Lamps_Array {
 // Activated Lamps
 for i, Activated_Lamps_Array in Activated_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(Deactivated_Lamps_Array[i], <ore:redstoneTorch>)
+    	.inputs(Deactivated_Lamps_Array[i], <ore:craftingRedstoneTorch>)
         .circuit(13)
     	.outputs(Activated_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
@@ -145,7 +145,7 @@ for i, Button_Lamps_Array in Button_Lamps_Array {
 // Feedback Lamps
 for i, Feedback_Lamps_Array in Feedback_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(<ore:redstoneTorch>, Button_Lamps_Array[i] * 2)
+    	.inputs(<ore:craftingRedstoneTorch>, Button_Lamps_Array[i] * 2)
         .circuit(15)
     	.outputs(Feedback_Lamps_Array)
     	.duration(180).EUt(32).buildAndRegister();
@@ -163,7 +163,7 @@ for i, Deactivated_Lantern_Lamps_Array in Deactivated_Lantern_Lamps_Array {
 // Activated Lantern Lamps
 for i, Activated_Lantern_Lamps_Array in Activated_Lantern_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(Deactivated_Lamps_Array[i], <ore:redstoneTorch>)
+    	.inputs(Deactivated_Lamps_Array[i], <ore:craftingRedstoneTorch>)
         .circuit(17)
     	.outputs(Activated_Lantern_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
@@ -181,7 +181,7 @@ for i, Deactivated_Fixture_Lamps_Array in Deactivated_Fixture_Lamps_Array {
 // Activated Fixture Lamps
 for i, Activated_Fixture_Lamps_Array in Activated_Fixture_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(Deactivated_Fixture_Lamps_Array[i], <ore:redstoneTorch>)
+    	.inputs(Deactivated_Fixture_Lamps_Array[i], <ore:craftingRedstoneTorch>)
         .circuit(19)
     	.outputs(Activated_Fixture_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
@@ -199,7 +199,7 @@ for i, Deactivated_Fallout_Lamps_Array in Deactivated_Fallout_Lamps_Array {
 // Activated Fallout Lamps
 for i,Activated_Fallout_Lamps_Array in Activated_Fallout_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(Deactivated_Fallout_Lamps_Array[i], <ore:redstoneTorch>)
+    	.inputs(Deactivated_Fallout_Lamps_Array[i], <ore:craftingRedstoneTorch>)
         .circuit(21)
     	.outputs(Activated_Fallout_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
@@ -217,7 +217,7 @@ for i, Deactivated_Cage_Lamps_Array in Deactivated_Cage_Lamps_Array {
 // Activated Cage Lamps
 for i,Activated_Cage_Lamps_Array in Activated_Cage_Lamps_Array {
     assembler.recipeBuilder()
-    	.inputs(Deactivated_Cage_Lamps_Array[i], <ore:redstoneTorch>)
+    	.inputs(Deactivated_Cage_Lamps_Array[i], <ore:craftingRedstoneTorch>)
         .circuit(23)
     	.outputs(Activated_Cage_Lamps_Array)
     	.duration(16).EUt(2).buildAndRegister();
