@@ -934,6 +934,3 @@ helper.creator.custombutton.config.actiontype.copytoclipboard.desc.value.example
 
 fancymenu.config.forcefullscreen = Включить полноэкранный режим
 fancymenu.config.forcefullscreen.desc = Принудительно переводит окно в полноэкранный режим при запуске.%n%Пользователи по-прежнему смогут%n%выйти из полноэкранного режима позже.
-
-
-tfg.menu.server = Оффициальный сервер TFG
