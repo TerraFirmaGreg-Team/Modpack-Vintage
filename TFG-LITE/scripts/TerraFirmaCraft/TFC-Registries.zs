@@ -182,7 +182,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiteriteSand>, "TIN", 3, tru
 // --- Чистое железо
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkIron>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkIron>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustIron>, "WROUGHT_IRON", 144, false);
 // Грязная Кучка
@@ -195,7 +195,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyIron>, "WROUGHT_IRON", 10, fals
 // --- Пирит
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkPyrite>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkPyrite>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustPyrite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -208,7 +208,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyPyrite>, "WROUGHT_IRON", 3, fal
 // --- Магнетит
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkMagnetite>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkMagnetite>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustMagnetite>, "WROUGHT_IRON", 40, false);
 // Грязная Кучка
@@ -221,7 +221,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyMagnetite>, "WROUGHT_IRON", 4, 
 // --- Коричневый лимонит
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkBrownLimonite>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBrownLimonite>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustBrownLimonite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -234,7 +234,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyBrownLimonite>, "WROUGHT_IRON",
 // --- Желтый лимонит
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkYellowLimonite>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkYellowLimonite>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustYellowLimonite>, "WROUGHT_IRON", 30, false);
 // Грязная Кучка
@@ -247,7 +247,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyYellowLimonite>, "WROUGHT_IRON"
 // --- Гематит
 
 // Кусок руды
-ItemRegistry.registerItemMetal(<metaitem:oreChunkBandedIron>, "WROUGHT_IRON", 25, true);
+ItemRegistry.registerItemMetal(<metaitem:oreChunkBandedIron>, "WROUGHT_IRON", 25, false);
 // Чистая Кучка
 // ItemRegistry.registerItemMetal(<metaitem:dustBandedIron>, "WROUGHT_IRON", 50, false);
 // Грязная Кучка
