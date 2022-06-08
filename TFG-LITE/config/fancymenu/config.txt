@@ -27,7 +27,7 @@ S:copyrightposition = 'bottom-left';
 B:hidebranding = 'true';
 S:copyrightcolor = '#ff2e2e';
 B:hidelogo = 'true';
-B:hiderealmsnotifications = 'true';
+B:hiderealmsnotifications = 'false';
 B:hideforgenotifications = 'true';
 
 
@@ -73,7 +73,7 @@ B:show_world_icons = 'true';
 ##[layouteditor]
 
 I:gridsize = '10';
-B:editordeleteconfirmation = 'false';
+B:editordeleteconfirmation = 'true';
 B:showgrid = 'true';
 [If the warning when trying to move an vanilla button without an orientation should be displayed or not.]
 B:showvanillamovewarning = 'true';
