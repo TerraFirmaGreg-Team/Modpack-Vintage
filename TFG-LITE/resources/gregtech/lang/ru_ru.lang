@@ -1843,9 +1843,9 @@ gregtech.machine.packer.mv.name=Улучшенный упаковщик
 gregtech.machine.packer.hv.name=Улучшенный упаковщик II
 gregtech.machine.packer.ev.name=Улучшенный упаковщик III
 gregtech.machine.unpacker.lv.name=Базовый распаковщик
-gregtech.machine.unpacker.mv.name=Улучшеный распаковщик
-gregtech.machine.unpacker.hv.name=Улучшеный распаковщик II
-gregtech.machine.unpacker.ev.name=Улучшеный распаковщик III
+gregtech.machine.unpacker.mv.name=Улучшенный распаковщик
+gregtech.machine.unpacker.hv.name=Улучшенный распаковщик II
+gregtech.machine.unpacker.ev.name=Улучшенный распаковщик III
 gregtech.machine.polarizer.tooltip=Биполяризация ваших магнитов
 gregtech.machine.polarizer.lv.name=Обычный поляризатор
 gregtech.machine.polarizer.mv.name=Улучшенный поляризатор
@@ -1980,8 +1980,8 @@ gregtech.machine.quantum_tank.iv.name=Квантовый резервуар I
 
 # Воздухосборники
 gregtech.machine.air_collector.lv.name=Базовый воздухосборник
-gregtech.machine.air_collector.mv.name=Улучшеный воздухосборник
-gregtech.machine.air_collector.hv.name=Улучшеный воздухосборник II
+gregtech.machine.air_collector.mv.name=Улучшенный воздухосборник
+gregtech.machine.air_collector.hv.name=Улучшенный воздухосборник II
 gregtech.machine.air_collector.ev.name=Атмосферный коллектор
 gregtech.machine.air_collector.tooltip=Собирает воздух из соседних блоков
 
