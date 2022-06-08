@@ -58,7 +58,7 @@ customization {
   shadow = false
   orientation_element = 1ad922f9-7a2a-46f5-aff0-dedcf563852e1653954119314
   multiline = false
-  x = 125
+  x = 124
   action = addwebtext
   actionid = a39c9bc9-7b66-4d97-ae52-c15395e2b2da1653954132402
   y = 0
