@@ -22,7 +22,7 @@ customization {
   y = -44
   scale = 1.0
   alignment = left
-  value = Modpack Version: §cR3.3.1
+  value = Modpack Version: §cR3.3.3
 }
 
 customization {
