@@ -7,6 +7,8 @@
 * Fixed quests
 * Added an Optifine installation button to the menu
 * Fixed Gemstone File recipes
+* Fixed recipes for double ingots
+* Fixed iron bloom recipes
 ### Updating mods
 * TFG-mod
 * Supermartijn642configlib
