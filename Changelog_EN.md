@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 3.3.3 - 08.06.2022
+[Lite, Huge]
+### Modpack Fixes
+* Fixed the translation of GregTech
+* Fixed quests
+* Added an Optifine installation button to the menu
+* Fixed Gemstone File recipes
+### Updating mods
+* TFG-mod
+* Supermartijn642configlib
+
 ## Version 3.3.2 - 06/07/2022
 [Lite, Huge]
 ### Modpack Fixes
