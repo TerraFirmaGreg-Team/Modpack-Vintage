@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 3.3.4 - 09.06.2022
+[Lite, Huge]
+### Modpack Fixes
+* Menu fixes.
+* Correction of the bucket recipe with salt.
+* Remelting of pieces of iron has been fixed.
+* Correction of the white screen at the first start and entry into the world.
+* The Phosphor version has been downgraded.
+* Localization fixes.
+* Quest fixes.
+
 ## Version 3.3.3 - 08.06.2022
 [Lite, Huge]
 ### Modpack Fixes
