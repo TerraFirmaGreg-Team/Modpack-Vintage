@@ -145,67 +145,15 @@ customization {
 }
 
 customization {
-  path = resources/modpack/sidebar_full_left.png
-  orientation = top-left
-  x = 0
-  width = 217
-  actionid = 128d1cdb-f37f-46e2-a7ce-b5e681b646131652985763920
-  action = addtexture
-  y = 0
-  height = %guiheight%
-}
-
-customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = openlink
-  backgroundhovered = resources\modpack\icons\discord_h.png
-  description = Join Our discord server!
-  label = 
-  loopbackgroundanimations = true
-  hoverlabel = 
-  x = 44
-  width = 21
-  actionid = 167c782a-1c64-4d7f-ba41-d6e9f34b48e61626554305606
-  action = addbutton
-  y = 229
-  backgroundnormal = resources\modpack\icons\discord.png
-  value = https://discord.gg/TZx8Cfr
-  height = 21
-}
-
-customization {
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = joinserver
-  vr:showif:modloaded = false
-  backgroundhovered = resources\modpack\longbutton_h.png
-  description = %serverplayercount:146.59.61.230%
-  label = %local:tfg.menu.server%
-  loopbackgroundanimations = true
-  hoverlabel = %serverplayercount:tfg.terrafirmagreg.su%
-  x = 5
-  width = 180
-  actionid = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
-  action = addbutton
-  y = 169
-  vr:value:modloaded = thaumcraft
-  backgroundnormal = resources\modpack\longbutton.png
-  value = tfg.terrafirmagreg.su
-  height = 21
-}
-
-customization {
   showname = false
   orientation = top-left
   skinpath = resources/modpack/skins/xikaro.png
   crouching = false
-  x = 28
+  x = 27
   slim = false
   actionid = 391dfb3e-cfa3-485a-8f81-b299140346bd1625506599349
   action = addentity
-  y = 90
+  y = 91
   scale = 30
   playername = Xikaro
   parrot = false
@@ -230,51 +178,14 @@ customization {
   orientation = top-left
   skinpath = resources/modpack/skins/speeedcraft.png
   crouching = false
-  x = 169
+  x = 163
   slim = false
   actionid = 9e74612c-c1f7-4ff3-af1d-33b4e4cd32f81625508163945
   action = addentity
-  y = 90
+  y = 91
   scale = 30
   playername = SpeeeDCraft
   parrot = false
-}
-
-customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = openlink
-  backgroundhovered = resources\modpack\icons\youtube_h.png
-  label = 
-  loopbackgroundanimations = true
-  x = 84
-  width = 21
-  actionid = 718c66a7-f383-4edc-8af2-b922071f2fa81626554305607
-  action = addbutton
-  y = 229
-  backgroundnormal = resources\modpack\icons\youtube.png
-  value = https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw
-  height = 21
-}
-
-customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = openlink
-  backgroundhovered = resources\modpack\icons\github_h.png
-  label = 
-  loopbackgroundanimations = true
-  hoverlabel = 
-  x = 124
-  width = 21
-  actionid = 27fbec64-026d-4106-b1d5-60c8038bd1691652772654043
-  action = addbutton
-  y = 229
-  backgroundnormal = resources\modpack\icons\github.png
-  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
-  height = 21
 }
 
 customization {
@@ -301,43 +212,5 @@ customization {
   scale = 1.0
   refresh = true
   bouncing = true
-}
-
-customization {
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = reloadmenu
-  backgroundhovered = resources\modpack\reload_h.png
-  label = 
-  loopbackgroundanimations = true
-  x = 84
-  width = 21
-  actionid = c6afa261-6393-41b9-b513-bead8dc01a251653164545814
-  action = addbutton
-  y = 32
-  backgroundnormal = resources\modpack\reload.png
-  value = 
-  height = 21
-}
-
-customization {
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = openlink
-  vr:showif:modloaded = true
-  backgroundhovered = resources\modpack\longbutton_h.png
-  description = %serverplayercount:146.59.61.230%
-  label = %local:tfg.menu.server%
-  loopbackgroundanimations = true
-  hoverlabel = %local:tfg.menu.server.huge%
-  x = 5
-  width = 180
-  actionid = cea8af90-d229-4005-92bc-729e951a32d61654574095802
-  action = addbutton
-  y = 169
-  vr:value:modloaded = thaumcraft
-  backgroundnormal = resources\modpack\longbutton.png
-  value = 
-  height = 21
 }
 

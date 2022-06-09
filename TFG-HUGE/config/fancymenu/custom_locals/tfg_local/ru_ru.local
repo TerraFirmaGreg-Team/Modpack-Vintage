@@ -1,3 +1,10 @@
 tfg.menu.server = Официальный сервер TFG
 tfg.menu.server.huge = Доступен только для lite
 tfg.menu.mod = Настройки модов
+
+tfg.menu.github = Об ошибках писать сюда
+tfg.menu.youtube = Здесь есть на что посмотреть
+tfg.menu.discord = Присоединяйтесь к нашему серверу discord!
+
+tfg.menu.optifine.download = Установить Optifine
+tfg.menu.optifine.hover = Optifine автоматически установится в директорию игры, вам нужно будет перезапусть игру

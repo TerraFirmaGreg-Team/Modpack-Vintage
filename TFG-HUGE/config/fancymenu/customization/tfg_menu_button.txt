@@ -1,0 +1,305 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = tfg_slideshowse_menu
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = element
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 0
+  action = movebutton
+  y = -30
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 181
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = element
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 0
+  action = movebutton
+  y = 30
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = element
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 100
+  action = movebutton
+  y = 30
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 95
+  action = movebutton
+  y = 240
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = element
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 0
+  action = movebutton
+  y = -60
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 181
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  path = resources/modpack/sidebar_full_left.png
+  orientation = top-left
+  x = 0
+  width = 210
+  actionid = 90426e29-221b-4b42-b23a-b5d1d31913fc1654657382355
+  action = addtexture
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  vr:showif:modloaded = true
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %serverplayercount:146.59.61.230%
+  label = %local:tfg.menu.server%
+  loopbackgroundanimations = true
+  hoverlabel = %local:tfg.menu.server.huge%
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_multiplayer_button
+  x = 0
+  width = 180
+  actionid = dcd4bb39-49d2-47e9-96d7-655bc9ecfd301654573793443
+  action = addbutton
+  y = 30
+  vr:value:modloaded = thaumcraft
+  backgroundnormal = resources\modpack\longbutton.png
+  value = 
+  height = 21
+}
+
+customization {
+  showname = true
+  orientation = top-left
+  skinpath = config/fancymenu/modpack/syber.png
+  crouching = false
+  x = 957
+  slim = false
+  actionid = f82cd154-8929-42e4-8e1a-fb5976426ec01625508134345
+  action = addentity
+  y = 581
+  scale = 1
+  parrot = false
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = joinserver
+  vr:showif:modloaded = false
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %serverplayercount:146.59.61.230%
+  label = %local:tfg.menu.server%
+  loopbackgroundanimations = true
+  x = 9
+  width = 181
+  actionid = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  action = addbutton
+  y = 170
+  vr:value:modloaded = thaumcraft
+  backgroundnormal = resources\modpack\longbutton.png
+  value = tfg.terrafirmagreg.su
+  height = 21
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\discord_h.png
+  description = %local:tfg.menu.discord%
+  label = 
+  loopbackgroundanimations = true
+  x = 60
+  width = 21
+  actionid = 620c506e-ecea-47bc-80c7-23e90fa1c7aa1654658496753
+  action = addbutton
+  y = 71
+  backgroundnormal = resources\modpack\icons\discord.png
+  value = https://discord.gg/TZx8Cfr
+  height = 21
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\youtube_h.png
+  description = %local:tfg.menu.youtube%
+  label = 
+  loopbackgroundanimations = true
+  x = 90
+  width = 21
+  actionid = 52766a5d-3995-4b0a-913e-7c54080fbe2e1654658496753
+  action = addbutton
+  y = 71
+  backgroundnormal = resources\modpack\icons\youtube.png
+  value = https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu
+  backgroundhovered = resources\modpack\reload_h.png
+  label = 
+  loopbackgroundanimations = true
+  x = 91
+  width = 21
+  actionid = e619f052-0ce5-46b6-befa-f4452bb94dad1654658496753
+  action = addbutton
+  y = 20
+  backgroundnormal = resources\modpack\reload.png
+  value = 
+  height = 21
+}
+
+customization {
+  hoversound = config/fancymenu/modpack/sounds/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources\modpack\icons\github_h.png
+  description = %local:tfg.menu.github%
+  label = 
+  loopbackgroundanimations = true
+  x = 120
+  width = 21
+  actionid = 427e95c3-6bb6-40d3-b741-710cd8ed21261654658496753
+  action = addbutton
+  y = 71
+  backgroundnormal = resources\modpack\icons\github.png
+  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
+  height = 21
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = downloadfile
+  vr:showif:modloaded = false
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %local:tfg.menu.optifine.hover%
+  label = %local:tfg.menu.optifine.download%
+  loopbackgroundanimations = true
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 0
+  width = 180
+  actionid = 25fd4361-96e8-42f5-b31f-473b4ec77c2b1654658998837
+  action = addbutton
+  y = 60
+  vr:value:modloaded = optifine
+  backgroundnormal = resources\modpack\longbutton.png
+  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/raw/TFG-Lite-R3.0/TFG-LITE/mods/OptiFine_1.12.2_HD_U_G5.jar;mods/OptiFine_1.12.2_HD_U_G5.jar
+  height = 21
+}
+

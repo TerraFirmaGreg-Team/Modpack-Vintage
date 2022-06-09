@@ -72,13 +72,13 @@ gcym.machine.parallel_hatch.zpm.name=Превосходный люк контр�
 gcym.machine.parallel_hatch.tooltip=Позволяет запараллелить до §b%s§7 рецептов.
 gcym.machine.parallel_hatch.iv.name=Превосходный люк контроля параллелей
 gcym.multiblock.large_sifter.description=Мультиблочная просеивающая машина для фильтрования материалов.
-gcym.machine.tiered_hatch.ev.name=Блок управления напряжением (EV)
-gcym.machine.tiered_hatch.iv.name=Блок управления напряжением (IV)
-gcym.machine.tiered_hatch.luv.name=Блок управления напряжением (LUV)
-gcym.machine.tiered_hatch.uv.name=Блок управления напряжением (UV)
-gcym.machine.tiered_hatch.uhv.name=Блок управления напряжением (UHV)
-gcym.machine.tiered_hatch.uev.name=Блок управления напряжением (UEV)
-gcym.machine.tiered_hatch.umv.name=Блок управления напряжением (UMV)
+gcym.machine.tiered_hatch.ev.name=Блок управления напряжением (§5EV§r)
+gcym.machine.tiered_hatch.iv.name=Блок управления напряжением (§1IV§r)
+gcym.machine.tiered_hatch.luv.name=Блок управления напряжением (§dLuV§r)
+gcym.machine.tiered_hatch.uv.name=Блок управления напряжением (§3UV§r)
+gcym.machine.tiered_hatch.uhv.name=Блок управления напряжением (§4UHV§R)
+gcym.machine.tiered_hatch.uev.name=Блок управления напряжением (§aUEV§r)
+gcym.machine.tiered_hatch.umv.name=Блок управления напряжением (§9OpV§r)
 
 
 # casings
@@ -105,14 +105,14 @@ gcym.multiblock.mega_vacuum_freezer.description=Большой вакуумны�
 gcym.machine.parallel_hatch.luv.name=Улучшенный люк контроля параллелей
 tile.unique_casing.molybdenum_disilicide_coil.name=Катушка из дисилицида молибдена
 gcym.multiblock.large_replicator.description=Мультиблочный репликатор для преобразования элементарных частиц в материю.
-gcym.machine.tiered_hatch.max.name=Блок управления напряжением (MAX)
-gcym.machine.tiered_hatch.uxv.name=Блок управления напряжением (UXV)
-gcym.machine.tiered_hatch.ulv.name=Блок управления напряжением (ULV)
-gcym.machine.tiered_hatch.lv.name=Блок управления напряжением (LV)
-gcym.machine.tiered_hatch.mv.name=Блок управления напряжением (MV)
-gcym.machine.tiered_hatch.hv.name=Блок управления напряжением (HV)
-gcym.machine.tiered_hatch.zpm.name=Блок управления напряжением (ZPM)
-gcym.machine.tiered_hatch.uiv.name=Блок управления напряжением (UIV)
+gcym.machine.tiered_hatch.max.name=Блок управления напряжением (§cMAX§r)
+gcym.machine.tiered_hatch.uxv.name=Блок управления напряжением (§eUXV§r)
+gcym.machine.tiered_hatch.ulv.name=Блок управления напряжением (§8ULV§r)
+gcym.machine.tiered_hatch.lv.name=Блок управления напряжением (§7LV§r)
+gcym.machine.tiered_hatch.mv.name=Блок управления напряжением (§bMV§r)
+gcym.machine.tiered_hatch.hv.name=Блок управления напряжением (§6HV§r)
+gcym.machine.tiered_hatch.zpm.name=Блок управления напряжением (§fZPM§r)
+gcym.machine.tiered_hatch.uiv.name=Блок управления напряжением (§2UIV§r)
 gcym.machine.large_cutter.name=Большая резочная машина
 recipemap.alloy_blast_smelter.name=Доменная плавильня сплавов
 gcym.machine.large_extractor.name=Большая экстракционная машина
@@ -122,7 +122,7 @@ tile.large_multiblock_casing.atomic_casing.name=Атомный корпус
 gcym.multiblock.large_extractor.description=Мультиблочный экстрактор и консервирующая машина для переноса материалов.
 tile.large_multiblock_casing.assembler_casing.name=Корпус большого сборщика
 gcym.multiblock.large_brewer.description=Мультиблочный Ферментатор и Варочная машина для производства жидкостей.
-material.trinaquadalloy=Тринаквадросплав
+material.trinaquadalloy=Тринаквадосплав
 tile.large_multiblock_casing.blast_casing.name=Корпус для высокотемпературной плавки
 tile.large_multiblock_casing.mixer_casing.name=Химически устойчивый корпус
 gcym.multiblock.chemical_plant.description=Химический завод для продвинутой химии.
@@ -147,3 +147,12 @@ gcym.multiblock.tiered_hatch.tooltip=Максимальный EU/t: §a%s (%s§r
 gcym.multiblock.large_circuit_assembler.description=Мультиблочный станок по сборке микросхем для производства микросхем.
 gcym.machine.large_circuit_assembler.name=Большой завод по сборке микросхем
 gcym.machine.chemical_plant.tooltip.1=Параллельно запускает только большие химические рецепты
+gcym.machine.mega_blast_furnace.tooltip.1=Может запускать до §b%s§7 рецептов параллельно.
+gcym.machine.mega_vacuum_freezer.tooltip.1=Может запускать до §b%s§7 рецептов параллельно.
+gcym.machine.parallel_hatch.display=Регулирует максимальное количество параллелей у мультиблочной структуры
+
+# fluids
+gcym.fluid.molten=Расплав (%s)
+
+# deprecation
+gcym.deprecation.tooltip=§cЭта машина УСТАРЕЛА! В следующем обновлении она будет УДАЛЕНА! Разбейте блок контроллера, чтобы вернуть материалы для крафта!
