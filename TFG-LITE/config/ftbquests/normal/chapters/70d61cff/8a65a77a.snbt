@@ -9,10 +9,10 @@
 		"14263e77"
 	],
 	tasks: [{
-		uid: "85843db7",
+		uid: "a2a05a3f",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 638"
+			item: "gregtech:machine 1 113"
 		}]
 	}]
 }
