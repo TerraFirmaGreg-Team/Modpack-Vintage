@@ -16,4 +16,6 @@ VanillaFactory.createItem("shape_mold_knife").register();
 VanillaFactory.createItem("shape_extruder_sense").register();
 
 // TFC Wooden Bucket With Salt
-VanillaFactory.createItem("wooden_bucket_with_salt").setMaxStackSize(1).register();
+var wooden_bucket_with_salt = VanillaFactory.createItem("wooden_bucket_with_salt");
+wooden_bucket_with_salt.maxStackSize = 1;
+wooden_bucket_with_salt.register();
