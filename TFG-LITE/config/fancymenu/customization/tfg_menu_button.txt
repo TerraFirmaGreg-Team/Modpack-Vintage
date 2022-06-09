@@ -209,21 +209,6 @@ customization {
 }
 
 customization {
-  showname = false
-  orientation = top-left
-  skinpath = resources/modpack/skins/xikaro.png
-  crouching = false
-  x = 29
-  slim = false
-  actionid = 347d1291-0b07-4ff8-9d4e-6a94c907c68a1654658496753
-  action = addentity
-  y = 90
-  scale = 30
-  playername = Xikaro
-  parrot = false
-}
-
-customization {
   hoversound = config/fancymenu/modpack/sounds/hover.wav
   orientation = top-left
   restartbackgroundanimations = true
@@ -276,21 +261,6 @@ customization {
   backgroundnormal = resources\modpack\reload.png
   value = 
   height = 21
-}
-
-customization {
-  showname = false
-  orientation = top-left
-  skinpath = resources/modpack/skins/speeedcraft.png
-  crouching = false
-  x = 168
-  slim = false
-  actionid = 84614950-84cd-42e5-a23b-3a207a7ff3491654658496753
-  action = addentity
-  y = 90
-  scale = 30
-  playername = SpeeeDCraft
-  parrot = false
 }
 
 customization {

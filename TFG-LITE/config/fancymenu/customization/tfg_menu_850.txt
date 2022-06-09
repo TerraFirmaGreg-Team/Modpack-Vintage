@@ -10,11 +10,6 @@ customization-meta {
 }
 
 customization {
-  name = tfg_slideshowse_menu
-  action = setbackgroundslideshow
-}
-
-customization {
   action = setscale
   scale = 2
 }
@@ -148,11 +143,11 @@ customization {
   orientation = top-left
   skinpath = resources/modpack/skins/xikaro.png
   crouching = false
-  x = 26
+  x = 27
   slim = false
   actionid = 391dfb3e-cfa3-485a-8f81-b299140346bd1625506599349
   action = addentity
-  y = 72
+  y = 71
   scale = 30
   playername = Xikaro
   parrot = false
@@ -177,7 +172,7 @@ customization {
   orientation = top-left
   skinpath = resources/modpack/skins/speeedcraft.png
   crouching = false
-  x = 168
+  x = 163
   slim = false
   actionid = 9e74612c-c1f7-4ff3-af1d-33b4e4cd32f81625508163945
   action = addentity
