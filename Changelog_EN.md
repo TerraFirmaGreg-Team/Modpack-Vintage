@@ -10,6 +10,14 @@
 * The Phosphor version has been downgraded.
 * Localization fixes.
 * Quest fixes.
+* Config correction
+### Updating mods
+* * Custom Skin Loader
+### New mods
+* * Phosphor
+### Removing Mods
+* Hesperus
+* Performant
 
 ## Version 3.3.3 - 08.06.2022
 [Lite, Huge]
