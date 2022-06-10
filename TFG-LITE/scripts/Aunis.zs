@@ -45,25 +45,6 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 for item in RemoveWorkbenchRecipes {
     recipes.remove(item);
 }
-// Aunis
-val Array1 as IItemStack[] = [
-	<aunis:naquadah_ore>,
-	<aunis:naquadah_ore_stone>,
-	// Universe wip
-	<aunis:invisible_block>,
-	<aunis:stargate_universe_base_block>,
-	<aunis:stargate_universe_member_block:6>,
-	<aunis:stargate_universe_member_block:14>,
-	<aunis:universe_dialer>,
-	<aunis:universe_ring_fragment>,
-	<aunis:crystal_white>,
-
-	<aunis:naquadah_alloy_raw>,
-	<aunis:naquadah_alloy>
-] as IItemStack[];
-for item in Array1 {
-		mods.jei.JEI.removeAndHide(item);
-}
 
 // Transportrings_block
 starforge.recipeBuilder()

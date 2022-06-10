@@ -2231,27 +2231,20 @@ for item in Array22 {
     JEI.removeAndHide(item);
 }
 val Array23 as IItemStack[] = [
+	<aunis:naquadah_ore>,
 	<aunis:naquadah_ore_stone>,
-  <aunis:naquadah_ore>,
-  <aunis:titanium_ore>,
-  <aunis:trinium_ore>,
-  <aunis:trinium_block>,
-  <aunis:naquadah_block>,
-  <aunis:naquadah_block_raw>,
-  <aunis:titanium_block>,
+	// Universe wip
+	<aunis:invisible_block>,
+	<aunis:stargate_universe_base_block>,
+	<aunis:stargate_universe_member_block:6>,
+	<aunis:stargate_universe_member_block:14>,
+	<aunis:universe_dialer>,
+	<aunis:universe_ring_fragment>,
+	<aunis:crystal_white>,
 
-  <aunis:capacitor_block>.withTag({energy: 17820000}),
-  <aunis:zat>.withTag({}),
-  <aunis:zat>.withTag({energy: 500000}),
-  <aunis:staff>.withTag({}),
-  <aunis:staff>.withTag({energy: 10000000}),
-
-	<aunis:naquadah_alloy>,
 	<aunis:naquadah_alloy_raw>,
-	<aunis:trinium_ingot>,
-	<aunis:titanium_ingot>,
-	<aunis:naquadah_shard>
+	<aunis:naquadah_alloy>
 ] as IItemStack[];
 for item in Array23 {
-		mods.jei.JEI.removeAndHide(item);
+		JEI.removeAndHide(item);
 }
