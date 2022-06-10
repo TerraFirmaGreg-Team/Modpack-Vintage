@@ -74,47 +74,47 @@ for item in RemoveItemRecipesByName{
 // Железная стамеска
 recipes.addShaped(<chisel:chisel_iron>,
 [[null, <ore:plateWroughtIron>, null],
- [null, <ore:chisel>, null],
- [null, <ore:stickWood>, null]]);
+	[null, <ore:chisel>, null],
+  [null, <ore:stickWood>, null]]);
 
 // Алмазная стамеска
 recipes.addShaped(<chisel:chisel_diamond>,
 [[null, <ore:plateDiamond>, null],
- [null, <ore:chisel>, null],
- [null, <ore:stickWood>, null]]);
+  [null, <ore:chisel>, null],
+  [null, <ore:stickWood>, null]]);
 
 // Современная стамеска
 recipes.addShaped(<chisel:chisel_hitech>,
 [[null, <ore:plateBlueSteel>, null],
- [null, <chisel:chisel_diamond>, null],
- [null, <ore:stickWood>, null]]);
- 
+  [null, <chisel:chisel_diamond>, null],
+  [null, <ore:stickWood>, null]]);
+
 // Лабораторный блок
 recipes.addShaped(<chisel:laboratory> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, AllQuartzTypes, <ore:stone>],
- [<ore:stone>, <ore:stone>, <ore:stone>]]);
- 
+  [<ore:stone>, AllQuartzTypes, <ore:stone>],
+  [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
 // Храмовый блок
 recipes.addShaped(<chisel:temple> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:dyeCyan>, <ore:stone>],
- [<ore:stone>, <ore:stone>, <ore:stone>]]);
- 
+  [<ore:stone>, <ore:dyeCyan>, <ore:stone>],
+  [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
 // Тириан блок
 recipes.addShaped(<chisel:tyrian> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, <ore:plateAnyIron>, <ore:stone>],
- [<ore:stone>, <ore:stone>, <ore:stone>]]);
- 
+  [<ore:stone>, <ore:plateAnyIron>, <ore:stone>],
+  [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
 // Фактори блок
 recipes.addShaped(<chisel:factory> * 8,
 [[<ore:plateAnyIron>, <ore:stone>, <ore:plateAnyIron>],
- [<ore:stone>, null, <ore:stone>],
- [<ore:plateAnyIron>, <ore:stone>, <ore:plateAnyIron>]]);
- 
+  [<ore:stone>, null, <ore:stone>],
+  [<ore:plateAnyIron>, <ore:stone>, <ore:plateAnyIron>]]);
+
 // Бровн стоун
 recipes.addShaped(<chisel:brownstone> * 8,
 [[<ore:sand>, <ore:sand>, <ore:sand>],
- [<ore:sand>, <minecraft:clay_ball>, <ore:sand>],
- [<ore:sand>, <ore:sand>, <ore:sand>]]);
+  [<ore:sand>, <minecraft:clay_ball>, <ore:sand>],
+  [<ore:sand>, <ore:sand>, <ore:sand>]]);

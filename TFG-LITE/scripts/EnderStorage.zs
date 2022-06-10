@@ -16,31 +16,15 @@ for item in RemoveWorkbenchRecipes {
 // Chest
 assembler.recipeBuilder()
   .circuit(1)
-  .inputs([
-    <ore:plateBronze> * 4,
-    <ore:plateObsidian> * 32,
-    <ore:wool> | <ore:blockWool>,
-    <metaitem:cover.ender_fluid_link>,
-    <metaitem:super_chest.hv>
-  ])
+  .inputs([<ore:plateBronze> * 4, <ore:plateObsidian> * 32, <ore:wool> | <ore:blockWool>, <metaitem:cover.ender_fluid_link>, <metaitem:super_chest.ev>])
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage>])
-  .duration(980)
-  .EUt(480)
-  .buildAndRegister();
+  .duration(980).EUt(780).buildAndRegister();
 
 // Tank
 assembler.recipeBuilder()
   .circuit(2)
-  .inputs([
-    <ore:plateBronze> * 4,
-    <ore:plateObsidian> * 32,
-    <ore:wool> | <ore:blockWool>,
-    <metaitem:cover.ender_fluid_link>,
-    <metaitem:super_tank.hv>
-  ])
+  .inputs([<ore:plateBronze> * 4, <ore:plateObsidian> * 32, <ore:wool> | <ore:blockWool>, <metaitem:cover.ender_fluid_link>, <metaitem:super_tank.ev>])
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage:1>])
-  .duration(980)
-  .EUt(480)
-  .buildAndRegister();
+  .duration(980).EUt(780).buildAndRegister();

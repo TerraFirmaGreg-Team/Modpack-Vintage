@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 // Удаление и скрытие предметов
 val RemoveRecipes as IItemStack[] = [
 	<toolbelt:belt>,
-    <toolbelt:pouch>
+  <toolbelt:pouch>
 ] as IItemStack[];
 for item in RemoveRecipes {
     recipes.remove(item);
@@ -16,11 +16,11 @@ for item in RemoveRecipes {
 // Belt Pouch
 recipes.addShaped(<toolbelt:pouch>, 
 [[<ore:string>, <metaitem:ringGold>, <ore:string>],
- [<ore:leather>, null, <ore:leather>],
- [<ore:string>, <ore:leather>, <ore:string>]]);
+	[<ore:leather>, null, <ore:leather>],
+	[<ore:string>, <ore:leather>, <ore:string>]]);
 
 // Belt
 recipes.addShaped(<toolbelt:belt>, 
 [[<ore:string>, <ore:leather>, <ore:string>],
- [<ore:leather>, null, <ore:leather>],
- [<ore:leather>, <metaitem:ringWroughtIron>, <ore:leather>]]);
+	[<ore:leather>, null, <ore:leather>],
+	[<ore:leather>, <metaitem:ringWroughtIron>, <ore:leather>]]);

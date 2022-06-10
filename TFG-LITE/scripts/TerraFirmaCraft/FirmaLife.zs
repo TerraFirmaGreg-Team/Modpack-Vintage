@@ -46,26 +46,26 @@ ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, t
 // Климатическая станция уровня 0
 recipes.addShaped(<firmalife:climate_station>,
 [[<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
- [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
- [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
+  [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
+  [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 1
 recipes.addShaped(<firmalife:climate_station_1>,
 [[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
- [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
- [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
+  [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
+  [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 5
 recipes.addShaped(<firmalife:climate_station_5>,
 [[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
- [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
- [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
+  [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
+  [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
 
 // Разбрызгиватель
 recipes.addShaped(<firmalife:sprinkler>,
 [[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
- [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
- [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+  [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
+  [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
 
 // Свечка
 recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);

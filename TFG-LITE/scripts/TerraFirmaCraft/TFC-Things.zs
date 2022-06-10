@@ -159,7 +159,7 @@ Anvil.addRecipe("tfg_tfcthings_sling_ammo__steel", <ore:ingotSteel>, <tfcthings:
 // Минус точильный камень
 recipes.addShaped(<tfcthings:grindstone_base>,
 [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
- [<ore:lumber>, null, <ore:lumber>]]);
+	[<ore:lumber>, null, <ore:lumber>]]);
 
 //Black Steel Grindstone
 Welding.removeRecipe(<tfcthings:grindstone_steel>);
