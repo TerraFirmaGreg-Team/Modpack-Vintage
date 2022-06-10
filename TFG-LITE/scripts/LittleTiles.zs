@@ -28,16 +28,6 @@ for item in RemoveWorkbenchRecipes {
 
 // --- Adding Recipes
 
-/*
-
-// Little
-recipes.addShaped(null,
-[[null, null, null],
- [null, null, null],
- [null, null, null]]);
-
-*/
-
 // Little Blueprint
 recipes.addShaped(<littletiles:recipeadvanced>,
 [[<ore:paper>, <ore:paper>, <ore:paper>],
