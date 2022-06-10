@@ -8,6 +8,7 @@
 * Chisel And Bits заменен на Litte Tiles.
 * Переписаны рецепты GregTech Food Option.
 * Переписаны рецепты Little Tiles.
+* Добавлен Item Physics Lite.
 #### [Huge]
 * Удален Pam's HarvestCraft (Разраб аддона забросил мод, а нам не нужен мертвый груз).
 * Удален аддон TFC + Pam's HarvestCraft.
