@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack;
 
 import mods.chisel.Carving;
 
-val DefaultAndWroughtIron = <ore:plateIron> | <ore:plateWroughtIron>;
 val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>;
 
 // --- Removing Recipes
@@ -105,14 +104,14 @@ recipes.addShaped(<chisel:temple> * 8,
 // Тириан блок
 recipes.addShaped(<chisel:tyrian> * 8,
 [[<ore:stone>, <ore:stone>, <ore:stone>],
- [<ore:stone>, DefaultAndWroughtIron, <ore:stone>],
+ [<ore:stone>, <ore:plateAnyIron>, <ore:stone>],
  [<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Фактори блок
 recipes.addShaped(<chisel:factory> * 8,
-[[DefaultAndWroughtIron, <ore:stone>, DefaultAndWroughtIron],
+[[<ore:plateAnyIron>, <ore:stone>, <ore:plateAnyIron>],
  [<ore:stone>, null, <ore:stone>],
- [DefaultAndWroughtIron, <ore:stone>, DefaultAndWroughtIron]]);
+ [<ore:plateAnyIron>, <ore:stone>, <ore:plateAnyIron>]]);
  
 // Бровн стоун
 recipes.addShaped(<chisel:brownstone> * 8,

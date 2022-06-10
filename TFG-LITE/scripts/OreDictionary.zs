@@ -146,6 +146,9 @@ for item in TFC_Slabs_Smooth {
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
+// IronAny Single Sheets
+<ore:plateAnyIron>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);
+
 // Removing OreDicts from TFC ingots
 <ore:ingotBismuth>.remove(<tfc:metal/ingot/bismuth>);
 <ore:ingotBismuthBronze>.remove(<tfc:metal/ingot/bismuth_bronze>);

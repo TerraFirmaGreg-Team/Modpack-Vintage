@@ -548,20 +548,6 @@ recipes.addShaped(<minecraft:daylight_detector>,
  [<ore:plateQuartzite>, <ore:plateQuartzite>, <ore:plateQuartzite>],
  [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
-// Обычное золотое яблоко
-// chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_ingot> * 8], null).remove();
-chemical_reactor.recipeBuilder()
-    .inputs(<minecraft:gold_ingot> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
-    .outputs(<minecraft:golden_apple>)
-    .duration(20).EUt(30).buildAndRegister();
-
-// Зачарованное золотое яблоко
-// chemical_reactor.findRecipe(30, [<minecraft:apple>, <minecraft:gold_block> * 8], null).remove();
-chemical_reactor.recipeBuilder()
-    .inputs(<minecraft:gold_block> * 8, <tfc:food/green_apple> | <tfc:food/red_apple>)
-    .outputs(<minecraft:golden_apple:1>)
-    .duration(20).EUt(30).buildAndRegister();
-
 // Iron Trapdoor
 assembler.recipeBuilder()
     .inputs(<ore:plateIron>.firstItem * 4, <ore:trapdoorWood>)
