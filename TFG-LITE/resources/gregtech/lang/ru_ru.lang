@@ -2172,11 +2172,11 @@ gregtech.machine.circuit_assembler.opv.tooltip=Высокотехнологич�
 gregtech.machine.mass_fabricator.lv.name=Обычный генератор материи
 gregtech.machine.mass_fabricator.lv.tooltip=Материя * Фабрикация в квадрате
 gregtech.machine.mass_fabricator.mv.name=Улучшенный генератор материи
-gregtech.machine.mass_fabricator.mv.tooltip=UUM = Материя * Фабрикация в квадрате
+gregtech.machine.mass_fabricator.mv.tooltip=UUM=Материя * Фабрикация в квадрате
 gregtech.machine.mass_fabricator.hv.name=Улучшенный генератор материи II
-gregtech.machine.mass_fabricator.hv.tooltip=UUM = Материя * Фабрикация в квадрате
+gregtech.machine.mass_fabricator.hv.tooltip=UUM=Материя * Фабрикация в квадрате
 gregtech.machine.mass_fabricator.ev.name=Улучшенный генератор материи III
-gregtech.machine.mass_fabricator.ev.tooltip=UUM = Материя * Фабрикация в квадрате
+gregtech.machine.mass_fabricator.ev.tooltip=UUM=Материя * Фабрикация в квадрате
 gregtech.machine.mass_fabricator.iv.name=Превосходный генератор материи
 gregtech.machine.mass_fabricator.iv.tooltip=Завод "Генезис"
 gregtech.machine.mass_fabricator.luv.name=Превосходный генератор материи II
@@ -4302,7 +4302,7 @@ gui.widget.incrementButton.default_tooltip=Удерживайте Shift, Ctrl и
 cover.ore_dictionary_filter.test_slot.info=Вставьте элемент, чтобы проверить, соответствует ли он выражению фильтра
 cover.ore_dictionary_filter.matches=Предмет соответствует
 cover.ore_dictionary_filter.matches_not=Предмет не соответствует
-cover.ore_dictionary_filter.info=§bПринимает сложные выражения/n& = AND/n| = OR/n^ = XOR/n! = NOT/n( ) для приоритета/n* для подстановочного знака/n§bПример:/n§6dust*Gold | (plate* & !*Double*)/nПодходит для всех золотых пылек всех размеров или всех плат, но не для двойных плат
+cover.ore_dictionary_filter.info=§bПринимает сложные выражения/n&=AND/n|=OR/n^=XOR/n!=NOT/n( ) для приоритета/n* для подстановочного знака/n§bПример:/n§6dust*Gold | (plate* & !*Double*)/nПодходит для всех золотых пылек всех размеров или всех плат, но не для двойных плат
 cover.conveyor.distribution.round_robin_enhanced=Режим распределения/n§bРасширенный круговой алгоритм§r/n§7Распределяет элементы поровну по всем инвентарям
 cover.conveyor.distribution.round_robin=Режим распределения/n§bКруговой алгоритм§r/n§7Распределяет элементы поровну по всем инвентарям
 cover.conveyor.distribution.first_insert=Режим распространения/n§bПервая вставка§r/n§7Будет вставлен в первый найденный инвентарь
@@ -4803,7 +4803,7 @@ gregtech.machine.extruder.ev.tooltip=Универсальная машина д�
 gregtech.machine.extruder.iv.tooltip=Рассеиватель материалов
 gregtech.machine.extruder.luv.tooltip=Рассеиватель материалов
 gregtech.machine.extruder.zpm.tooltip=Рассеиватель материалов
-gregtech.machine.mass_fabricator.mv.tooltip=UUM = Материя * Изготовление в квадрате
+gregtech.machine.mass_fabricator.mv.tooltip=UUM=Материя * Изготовление в квадрате
 gregtech.machine.mass_fabricator.hv.name=Улучшенный фабрикатор материи II
 gregtech.machine.mass_fabricator.iv.name=Превосходный фабрикатор материи
 gregtech.machine.mass_fabricator.zpm.name=Превосходный фабрикатор материи III
@@ -4978,11 +4978,11 @@ gregtech.machine.circuit_assembler.opv.tooltip=Фабрика вычислени
 
 # Mass Fabricator
 gregtech.machine.mass_fabricator.lv.name=Обычный фабрикатор материи
-gregtech.machine.mass_fabricator.lv.tooltip=UUM = Материя * Изготовление в квадрате
+gregtech.machine.mass_fabricator.lv.tooltip=UUM=Материя * Изготовление в квадрате
 gregtech.machine.mass_fabricator.mv.name=Улучшенный фабрикатор материи
-gregtech.machine.mass_fabricator.hv.tooltip=UUM = Материя * Изготовление в квадрате
+gregtech.machine.mass_fabricator.hv.tooltip=UUM=Материя * Изготовление в квадрате
 gregtech.machine.mass_fabricator.ev.name=Улучшенный фабрикатор материи III
-gregtech.machine.mass_fabricator.ev.tooltip=UUM = Материя * Изготовление в квадрате
+gregtech.machine.mass_fabricator.ev.tooltip=UUM=Материя * Изготовление в квадрате
 gregtech.machine.mass_fabricator.iv.tooltip=Фабрика генезиса
 gregtech.machine.mass_fabricator.luv.name=Превосходный фабрикатор материи II
 gregtech.machine.mass_fabricator.luv.tooltip=Фабрика генезиса
