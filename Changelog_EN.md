@@ -1,7 +1,29 @@
 # Changelog
 
+## Version 3.3.5 - Expected 12.06.2022
+#### [Lite, Huge]
+### Modpack Fixes
+* Added RFTools to the Lite version of the modpack.
+* A well-developed GregTech Food Option is installed to replace Pam's HarvestCraft.
+* Greg Tech Food Option recipes have been rewritten.
+* Little Tikes recipes have been rewritten.
+* Fixed a display error in TheOneProbe when hovering
+### Updating mods
+* Supermartijn642configlib
+### New mods
+* Item Physics Lite
+* RF Tools
+* GregTech Food Option
+* Little Tiles
+### Removing Mods
+* Chisel And Bits
+#### [Huge]
+### Removing Mods
+* Pam's HarvestCraft (The addon developer abandoned the mod, and we don't need dead weight).
+* TFC + Pam's HarvestCraft addon.
+
 ## Version 3.3.4 - 09.06.2022
-[Lite, Huge]
+#### [Lite, Huge]
 ### Modpack Fixes
 * Menu fixes.
 * Correction of the bucket recipe with salt.
@@ -20,7 +42,7 @@
 * Performant
 
 ## Version 3.3.3 - 08.06.2022
-[Lite, Huge]
+#### [Lite, Huge]
 ### Modpack Fixes
 * Fixed the translation of GregTech
 * Fixed quests
@@ -33,7 +55,7 @@
 * Supermartijn642configlib
 
 ## Version 3.3.2 - 06/07/2022
-[Lite, Huge]
+#### [Lite, Huge]
 ### Modpack Fixes
 * Fixed a bug with chicken
 * Temporarily disabled Powersuite Armor crafting
@@ -44,7 +66,7 @@
 * Removed Oxygen-players-list
 
 ## Version R3.3.1
-[Lite, Huge]
+#### [Lite, Huge]
 
 ### Modpack fixes
 * Tweaked the alignment of GC energy with GT.
@@ -130,7 +152,7 @@
 * Downgraded version of Rocksalt
 
 ## Version R3.3.0 - 26.05.2021
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Graphite powder is now visible in HEI.
 * Ores, when dug up, drop pieces of ore that can be smelted into TFC metal, as well as processed in GT machines.
@@ -165,13 +187,13 @@
   * tfctowerheat
 
 ## Version R3.2.6 - 14.05.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Updated AE2EL.
 * Recipes for ores in the horse threshing machine have been returned.
 
 ## Version R3.2.5 - 13.05.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed ore processing.
 * Fixed graphite dust recipe from TFC.
@@ -182,7 +204,7 @@
 * Updated textures from GT.
 
 ## Version R3.2.4 - 12.05.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Added Oxygen: PlayerLists
 * Added FindMe.
@@ -220,7 +242,7 @@
 * Fixed recipe with crystal and workbench from AstralSorcery (presumably).
 
 ## Version R3.2.3d - 05.05.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * ImmersiveRailroading was removed due to the lags and unloaded chunks that appeared because of it, as well as the colossal use of RAM (That's who knew that this piece of you know what is so not optimized).
 * Added Steve's Carts 2 and rewritten recipes for it.
@@ -239,7 +261,7 @@
 * Updated XaeroMinimap.
 
 ## Version R3.2.2 - 27.04.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Removed duplicate recipes between TFC in the anvil.
 * Added the latest ProjectRed recipes.
@@ -257,7 +279,7 @@
 * Updated LoliASM.
 
 ## Version R3.2.1 - 24.04.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Recipes for the ProjectRed mod.
 * Fixed crash when chopping a tree from Florae with a GTCEu axe.
@@ -275,7 +297,7 @@
 * Removed JEI.
 
 ## Version R3.2 - 23.04.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * mods:
   * GregicProbe.
@@ -351,12 +373,12 @@
 * All resources (translations and textures) have been moved to our mod.
 
 ## Version R3.1.5 - 19.03.2021
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed Fluix Dust recipe.
 
 ## Version R3.1.4 - 18.03.2021
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Corrected liquid and ordinary veins on the Moon:
   * Stone-ore veins:
@@ -417,7 +439,7 @@
 * Fixed a lot of crafting related to thaumium ingots, plates and the like.
 
 ## Version R3.1.3 - 07.03.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Added a feature -> GT ores take the texture of the stone in which they were generated, now it looks beautiful.
 * Added ores to the Moon, Mars, Venus, Mercury.
@@ -440,7 +462,7 @@
 * And a lot more, but I forgot, and Xikaro forgot too.
 
 ## Version R3.1.2 - 22.02.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Recipes have been created for rockets in the assembly line.
 * Created/rewritten recipes for rocket components in assembler.
@@ -465,12 +487,12 @@
 * Added a new texture for the anvil gui
 
 ## Version R3.1.1v2 - 13.02.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed CurseForge mod duplicate bug.
 
 ## Version R3.1.1 - 13.02.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed crafting blocks from some materials, mainly those that are duplicated between TFC and GT.
 * Fixed some recipe errors in AE2 related to the non-existence of some items in the crafting grid due to a missing ore dictionary.
@@ -490,7 +512,7 @@
 * Updated Craft Tweaker.
 
 ## Version R3.1 - 09.02.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed energy consumption/duration when crafting brick blocks in assembler.
 * Added a bunch of recipes to cutting_saw -> Logs to lumber (with a huge bonus to the exit of the tree).
@@ -521,7 +543,7 @@
 * Fixed the Astral Sorcery curve script.
 
 ## Version R3.0.10 - 06.02.2022
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed iron dust processing in TFC blast furnace.
 * Fixed forging of plates, double plates.
@@ -563,7 +585,7 @@
 * And other changes that I certainly forgot about.
 
 ## Version - R3.0.8
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed many recipes in the build related to changing the id of GT items. Now they use unique names that are static.
 * Added fishing -> added a fishing rod recipe + fixed the loss of vanilla fish, you can catch the TFC
@@ -578,13 +600,13 @@
 Important information: If the modpack does not start, delete the TerraFirmaCraft-MC1.12.2-1.7.21.179-patched(Just don't delete it in the name of which there is TFG*144) file in the mods folder, or TerraFirmaCraft*MC1.12.2*1.7.21.179. Because the CURSEFORGE does not know how to delete a file with a different name when changing the main mod. It is important. If nothing works for you anyway, delete the modpack completely and download it again.
 
 ## Version - R3.0.6
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Release 3.0.6 on Huge (not stable, report bugs) and Normal versions.
 * Fixed recipe with climate station 5 lvl.
 
 ## Version - R3.0.5
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed incorrect forging level of some materials.
 * Removed the mod for voice chat, tk on 1.12.2, apparently people did not know how to make mods.
@@ -595,21 +617,21 @@ Important information: If the modpack does not start, delete the TerraFirmaCraft
 * Other changes I forgot about-_-.
 
 ## Version - R3.0.4
-[Lite, Huge]
+#### [Lite, Huge]
 Fixed low FPS bug
 Fixed high RAM consumption
 
 ## Version - R3.0.1
-[Lite, Huge]
+#### [Lite, Huge]
 fix crash with Cellar addon
 changed DiscordRP status
 
 ## Version - R3.0.0
-[Lite, Huge]
+#### [Lite, Huge]
 There are too many changes to describe them here. Therefore, you can read them in the channel in my discord channel releases-ru
 
 ## Version - R2.9.1
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Farm blocks from Forestry are now crafted in Carpenter.
 * Updated Xaeros Minimap / WorldMap.
@@ -623,7 +645,7 @@ There are too many changes to describe them here. Therefore, you can read them i
 * Fixed a recipe with a clay plate / vessel, when, when crafting, she / he was not picked up / picked up.
 
 ## Version - R2.9
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Meteoric iron can now be recycled into something useful.
 * Fixed a bug when two doors dropped out of CellarsAddon when breaking a door.
@@ -634,7 +656,7 @@ There are too many changes to describe them here. Therefore, you can read them i
 * Updated HorsePower mod (fixed bugs with recipes).
 
 ## Version - R2.8.9
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Unification diamonds. TFC diamonds are now used everywhere.
 * Removed the deletion of recipes for Frost and Temperature resistant hulls, since in the new
@@ -651,7 +673,7 @@ There are too many changes to describe them here. Therefore, you can read them i
 * Other fixes I forgot about.
 
 ## Version - R2.8.8
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Added Forestry quests.
 * Added Gendustry quests.
@@ -676,7 +698,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * The Normal and Huge versions were already released with this fix.
 
 ## Version - R2.8.7
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Correction of a million recipes related to Forestry.
 * The progression with Forestry is complicated(because it was possible to get high-end materials from bees too quickly).
@@ -690,7 +712,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Other fixes that you can look at on the git.
 
 ## Version - R2.8.6
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed the crafting of the grill.
 * Fixed crafting of iron bars.
@@ -709,7 +731,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * There is now a changed status in the discord.
 
 ## Version - R2.8.5
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Replaced in most Iron recipes with WroughtIron.
 * The recipe for drying salt has been removed(it does not work due to the curve of the Drying Rack mod).
@@ -721,7 +743,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Other fixes that I forgot about, you can see them on the git.
 
 ## Version - R2.8.4
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Changed the crafting of GC and GS cylinders.
 * Changed the crafting of the diamond sharpening tool.
@@ -730,7 +752,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Removed old iron hammer recipes from default iron.
 
 ## Version - R2.8.3
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Multiple quest fixes.
 * The AE2 quest line has been completely redesigned.
@@ -742,7 +764,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Fixed the name of the quest line with the periodic table.
 
 ## Version - R2.8.2
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed the crafting of cheese from FirmaLife.
 * Fixed the interface recipe from AE2.
@@ -750,7 +772,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Bituminous coal from TFC is now dropped when digging up ordinary GT coal. But when digging with a hammer, dust still falls.
 
 ## Version - R2.8.1
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed most of the recipes of Wrought Iron.
 * Fixed FirmaLife recipes.
@@ -764,13 +786,13 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Added Elevators.
 
 ## Version - R2.7.5
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fix crusible craft.
 * Fix bronze craft, SHIT AGAIN.
 
 ## Version - R2.7.4
-[Lite, Huge]
+#### [Lite, Huge]
 
 * TFC update(Many bugfixes and optimization improvements).
 * Improved quartz_vein (now appears in the Sedimentary stone type).
@@ -779,7 +801,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Other changes.
 
 ## Version - R2.7.3
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Forestry improvements.
 * Gendustry improvements.
@@ -787,7 +809,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * other tweaks
 
 ## Version - R2.7.2
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixes for some quests in the GC branch.
 * Quest fixes in the Primitive branch.
@@ -795,17 +817,17 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Fixes of GC recipes.
 
 ## Version - R2.7.1hotfix
-[Lite, Huge]
+#### [Lite, Huge]
 
 * fix all old bugs(recipes and etc)
 
 ## Version - R2.7.1
-[Lite, Huge]
+#### [Lite, Huge]
 
 * all bugs with worldgen fixed, install from curseforge launcher.
 
 ## Version - R2.7
-[Lite, Huge]
+#### [Lite, Huge]
 
 * COMPLETE deleting of WarpDrive. To be honest, I thought the mod would be quite interesting and, as the authors of the mod say, compatible with GC, but as we have already understood, all this does not really converge with reality. Therefore, it is better to build on a clean GC than with crutches from WarpDrive.
 * Fixed a lot of GC recipes.
@@ -816,7 +838,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * The entire line of GC quests has been redesigned.
 
 ## Version - R2.6.12
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed warpdrive logging(+fps)
 * Fixed ExtraPlanets Space Suit crafting
@@ -826,7 +848,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Some tweaks
 
 ## Version - R2.6.11
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed remelting of iron dust into iron ingot(again).
 * Fixed the recipes of the parser associated with the oven(can not be fixed, I looked in the documentation for access to the parser, but it is not there. Therefore, I will add a recipe that makes a stove block from the stove).
@@ -839,7 +861,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 * Fixed Bronze Quest(HUGE ver)
 
 ## Version - R2.6.10
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Fixed some Thaumcraft recipes at the initial stage.
 * Fixed the crafting of the greenhouse pot.
@@ -858,7 +880,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 ew
 
 ## Version - R2.6.9
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Removed repetitions of items, such as red steel swords from GT and TFC, now only one is left.
 * Now there are two options for creating a pickaxe or, for example, a shovel. Either you forge and suffer, or you spend 2*3 times more resources, but you do not forge, but you suffer.
@@ -871,7 +893,7 @@ ew
 * Various fixes for Forestry recipes.
 
 ## Version - R2.6.8
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Updated 11 mods (sort of).
 * Removed ASM (FIXED CRASH BUG).
@@ -880,7 +902,7 @@ ew
 * Now the tetrahedral dust has copper units again. -_-
 
 ## Version - R2.6.7
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Updated mods.
 * Added EnderStorage.
@@ -893,11 +915,11 @@ ew
 * Returned taumkraft quests for the Huge
 
 ## Version - R2.6.6
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Potentially fixed the bronze quest.
 * Potentially fixed all crafting related to some bug that people had(A crooked recipe for blast furnaces and barrels).
-* Updated mods.[Lite, Huge]
+* Updated mods.#### [Lite, Huge]
 * Fixed Seed Oil
 * Fixed paper quest
 
@@ -910,7 +932,7 @@ ew
 * Updated GT, Gregicality, Xaero, and etc.
 
 ## Version - R2.6.4d
-[Lite, Huge]
+#### [Lite, Huge]
 
 * Added EnderIO
 * Added Blur
