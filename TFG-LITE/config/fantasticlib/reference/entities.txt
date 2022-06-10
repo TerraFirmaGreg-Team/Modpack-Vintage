@@ -83,6 +83,7 @@ minecraft:villager
 minecraft:ender_crystal
 gregtech:dynamite
 gregtech:gtportal
+aunis:tokra
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -142,6 +143,7 @@ appliedenergistics2:appeng.entity.entitychargedquartz
 astikorcarts:cargocart
 astikorcarts:plowcart
 astikorcarts:mobcart
+gregtechfoodoption:italian_buffalo
 p455w0rdslib:sitting_entity
 galacticraftcore:evolved_spider
 galacticraftcore:evolved_zombie
@@ -216,3 +218,6 @@ galacticraftcore:rocket_fluid_cargo
 galacticraftcore:ice_spike
 galacticraftcore:mars_rover
 galacticraftcore:laser_beam
+littletiles:sizetnt
+littletiles:sit
+littletiles:animation
