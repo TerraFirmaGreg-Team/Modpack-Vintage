@@ -7,9 +7,22 @@
 * A well-developed GregTech Food Option is installed to replace Pam's HarvestCraft.
 * Greg Tech Food Option recipes have been rewritten.
 * Little Tikes recipes have been rewritten.
-* Fixed a display error in TheOneProbe when hovering
+* Fixed a display error in TheOneProbe when hovering on items.
+* Fixed recipes using Wrought Iron and Ordinary Iron, now almost all workbench recipes can use both iron, but not all, for logical reasons. Also, wrought iron cannot be used to craft the same items in GT cars, since wrought iron is still worse in quality than pure (a small convention that will add to your modpack performance :D).
+* Disabled drop from mobs from the TombStone mod (in HEI some items of this mod are still displayed, for some reason HEI cannot hide them, so this cannot be fixed yet).
+* Fixed display in HEI that 100mb of metal could be poured into the form of TFC or its addon, now 144mb is displayed there.
+* Fixed a bug where it was impossible to craft the ring and gear parts for primitive gear crafting.
+* TFC javelin heads now has 144mb as intended.
+* Fixed some metal values for TFC-Tech items.
+* Fixed the metal value of the metal grate.
+* Removed diamond and gold horse armor.
+* Completely rewritten script Vanilla.zs.
+* Hidden and removed HammerCore mod items.
+* Hidden and removed items from the ForgeMicroblocksCBE mod.
 ### Updating mods
 * Supermartijn642configlib
+* UnlimitedChiselWorks (Reason: does not have TFC support).
+* UnlimitedChiselWorksTFC (Reason: although it adds partial support for TFC, but not complete, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).
 ### New mods
 * Item Physics Lite
 * RF Tools
