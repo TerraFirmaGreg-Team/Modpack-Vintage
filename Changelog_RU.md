@@ -19,7 +19,6 @@
 * Полностью переписан скрипт Vanilla.zs.
 * Скрыты и удалены предметы мода HammerCore.
 * Скрыты и удалены предметы мода ForgeMicroblocksCBE.
-* 
 ### Обновление модов
 * Supermartijn642configlib
 ### Новые моды
