@@ -13,7 +13,8 @@ val ItemsToRemove as IItemStack[] = [
     <firmalife:climate_station_5>,
     <firmalife:sprinkler>,
     <firmalife:candle> * 6,
-    <firmalife:treated_lumber>
+    <firmalife:treated_lumber>,
+    <firmalife:jar>
 ];
 for item in ItemsToRemove{
     recipes.remove(item);
@@ -45,27 +46,33 @@ ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, t
 
 // Климатическая станция уровня 0
 recipes.addShaped(<firmalife:climate_station>,
-[[<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
-  [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
-  [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
+    [[<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
+    [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
+    [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 1
 recipes.addShaped(<firmalife:climate_station_1>,
-[[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
-  [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
-  [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
+    [[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
+    [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
+    [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 5
 recipes.addShaped(<firmalife:climate_station_5>,
-[[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
-  [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
-  [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
+    [[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
+    [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
+    [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
 
 // Разбрызгиватель
 recipes.addShaped(<firmalife:sprinkler>,
-[[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
-  [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
-  [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+    [[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
+    [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
+    [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+
+// Jar
+recipes.addShaped(<firmalife:jar>,
+    [[null, <ore:plateIronAny>, null],
+    [<ore:paneGlass>, null, <ore:paneGlass>],
+    [null, <ore:paneGlass>, null]]);
 
 // Свечка
 recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
@@ -88,11 +95,11 @@ Anvil.removeRecipe(<firmalife:greenhouse_door>);
 Anvil.addRecipe("firmalife:greenhouse_door_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
 
 // Бафф крафта стен теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_wall>*2);
+Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
 Anvil.addRecipe("firmalife:greenhouse_wall_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
 
 // Бафф крафта крыши теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_roof>*2);
+Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
 Anvil.addRecipe("firmalife:greenhouse_roof_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
 
 // Исправление крафта молотков

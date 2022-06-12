@@ -13,12 +13,12 @@ import mods.terrafirmacraft.ItemRegistry;
 // Удаление рецептов
 val RemoveItemRecipes as IItemStack[] = [
 	<tfctech:wire_draw_bench>,
-  <tfctech:smeltery_firebox>,
-  <tfctech:smeltery_cauldron>,
-  <tfctech:electric_forge>,
-  <tfctech:metal/copper_inductor>,
-  <tfctech:induction_crucible>,
-  <tfctech:wiredraw/winch>
+    <tfctech:smeltery_firebox>,
+    <tfctech:smeltery_cauldron>,
+    <tfctech:electric_forge>,
+    <tfctech:metal/copper_inductor>,
+    <tfctech:induction_crucible>,
+    <tfctech:wiredraw/winch>
 ];
 for item in RemoveItemRecipes {
     recipes.remove(item);
@@ -26,68 +26,69 @@ for item in RemoveItemRecipes {
 
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
+recipes.removeByRecipeName("tfctech:devices/fridge");
 
 // Удаление рецептов вытяжки на столе
 val RemoveItemWireDrawingRecipes as IItemStack[] = [
 	// Wires, no GT
-  <tfctech:metal/bismuth_wire:0>,
-  <tfctech:metal/bismuth_wire:1>,
-  <tfctech:metal/bismuth_wire:2>,
-  <tfctech:metal/bismuth_wire:3>,
-  <tfctech:metal/bismuth_bronze_wire:0>,
-  <tfctech:metal/bismuth_bronze_wire:1>,
-  <tfctech:metal/bismuth_bronze_wire:2>,
-  <tfctech:metal/bismuth_bronze_wire:3>,
-  <tfctech:metal/black_bronze_wire:0>,
-  <tfctech:metal/black_bronze_wire:1>,
-  <tfctech:metal/black_bronze_wire:2>,
-  <tfctech:metal/black_bronze_wire:3>,
-  <tfctech:metal/brass_wire:0>,
-  <tfctech:metal/brass_wire:1>,
-  <tfctech:metal/brass_wire:2>,
-  <tfctech:metal/brass_wire:3>,
-  <tfctech:metal/bronze_wire:0>,
-  <tfctech:metal/bronze_wire:1>,
-  <tfctech:metal/bronze_wire:2>,
-  <tfctech:metal/bronze_wire:3>,
-  <tfctech:metal/rose_gold_wire:0>,
-  <tfctech:metal/rose_gold_wire:1>,
-  <tfctech:metal/rose_gold_wire:2>,
-  <tfctech:metal/rose_gold_wire:3>,
-  <tfctech:metal/wrought_iron_wire:0>,
-  <tfctech:metal/wrought_iron_wire:1>,
-  <tfctech:metal/wrought_iron_wire:2>,
-  <tfctech:metal/wrought_iron_wire:3>,
-  <tfctech:metal/pig_iron_wire:0>,
-  <tfctech:metal/pig_iron_wire:1>,
-  <tfctech:metal/pig_iron_wire:2>,
-  <tfctech:metal/pig_iron_wire:3>,
-  <tfctech:metal/blue_steel_wire:0>,
-  <tfctech:metal/blue_steel_wire:1>,
-  <tfctech:metal/blue_steel_wire:2>,
-  <tfctech:metal/blue_steel_wire:3>,
-  <tfctech:metal/red_steel_wire:0>,
-  <tfctech:metal/red_steel_wire:1>,
-  <tfctech:metal/red_steel_wire:2>,
-  <tfctech:metal/red_steel_wire:3>,
-  <tfctech:metal/zinc_wire:0>,
-  <tfctech:metal/zinc_wire:1>,
-  <tfctech:metal/zinc_wire:2>,
-  <tfctech:metal/zinc_wire:3>,
-  <tfctech:metal/sterling_silver_wire:0>,
-  <tfctech:metal/sterling_silver_wire:1>,
-  <tfctech:metal/sterling_silver_wire:2>,
-  <tfctech:metal/sterling_silver_wire:3>,
-  // Wires, GT
-  <tfctech:metal/copper_wire>,
-  <tfctech:metal/gold_wire>,
-  <tfctech:metal/lead_wire>,
-  <tfctech:metal/nickel_wire>,
-  <tfctech:metal/silver_wire>,
-  <tfctech:metal/tin_wire>,
-  <tfctech:metal/steel_wire>,
-  <tfctech:metal/platinum_wire>,
-  <tfctech:metal/black_steel_wire>
+    <tfctech:metal/bismuth_wire:0>,
+    <tfctech:metal/bismuth_wire:1>,
+    <tfctech:metal/bismuth_wire:2>,
+    <tfctech:metal/bismuth_wire:3>,
+    <tfctech:metal/bismuth_bronze_wire:0>,
+    <tfctech:metal/bismuth_bronze_wire:1>,
+    <tfctech:metal/bismuth_bronze_wire:2>,
+    <tfctech:metal/bismuth_bronze_wire:3>,
+    <tfctech:metal/black_bronze_wire:0>,
+    <tfctech:metal/black_bronze_wire:1>,
+    <tfctech:metal/black_bronze_wire:2>,
+    <tfctech:metal/black_bronze_wire:3>,
+    <tfctech:metal/brass_wire:0>,
+    <tfctech:metal/brass_wire:1>,
+    <tfctech:metal/brass_wire:2>,
+    <tfctech:metal/brass_wire:3>,
+    <tfctech:metal/bronze_wire:0>,
+    <tfctech:metal/bronze_wire:1>,
+    <tfctech:metal/bronze_wire:2>,
+    <tfctech:metal/bronze_wire:3>,
+    <tfctech:metal/rose_gold_wire:0>,
+    <tfctech:metal/rose_gold_wire:1>,
+    <tfctech:metal/rose_gold_wire:2>,
+    <tfctech:metal/rose_gold_wire:3>,
+    <tfctech:metal/wrought_iron_wire:0>,
+    <tfctech:metal/wrought_iron_wire:1>,
+    <tfctech:metal/wrought_iron_wire:2>,
+    <tfctech:metal/wrought_iron_wire:3>,
+    <tfctech:metal/pig_iron_wire:0>,
+    <tfctech:metal/pig_iron_wire:1>,
+    <tfctech:metal/pig_iron_wire:2>,
+    <tfctech:metal/pig_iron_wire:3>,
+    <tfctech:metal/blue_steel_wire:0>,
+    <tfctech:metal/blue_steel_wire:1>,
+    <tfctech:metal/blue_steel_wire:2>,
+    <tfctech:metal/blue_steel_wire:3>,
+    <tfctech:metal/red_steel_wire:0>,
+    <tfctech:metal/red_steel_wire:1>,
+    <tfctech:metal/red_steel_wire:2>,
+    <tfctech:metal/red_steel_wire:3>,
+    <tfctech:metal/zinc_wire:0>,
+    <tfctech:metal/zinc_wire:1>,
+    <tfctech:metal/zinc_wire:2>,
+    <tfctech:metal/zinc_wire:3>,
+    <tfctech:metal/sterling_silver_wire:0>,
+    <tfctech:metal/sterling_silver_wire:1>,
+    <tfctech:metal/sterling_silver_wire:2>,
+    <tfctech:metal/sterling_silver_wire:3>,
+    // Wires, GT
+    <tfctech:metal/copper_wire>,
+    <tfctech:metal/gold_wire>,
+    <tfctech:metal/lead_wire>,
+    <tfctech:metal/nickel_wire>,
+    <tfctech:metal/silver_wire>,
+    <tfctech:metal/tin_wire>,
+    <tfctech:metal/steel_wire>,
+    <tfctech:metal/platinum_wire>,
+    <tfctech:metal/black_steel_wire>
 ];
 for item in RemoveItemWireDrawingRecipes {
     WireDrawing.removeRecipe(item);
@@ -95,32 +96,32 @@ for item in RemoveItemWireDrawingRecipes {
 
 // Удаление рецептов ковки
 val RemoveItemAnvilRecipes as IItemStack[] = [
-  // Wires - Stage 1
-  <tfctech:metal/bismuth_wire:4>,
-  <tfctech:metal/bismuth_bronze_wire:4>,
-  <tfctech:metal/black_bronze_wire:4>,
-  <tfctech:metal/brass_wire:4>,
-  <tfctech:metal/bronze_wire:4>,
-  <tfctech:metal/rose_gold_wire:4>,
-  <tfctech:metal/zinc_wire:4>,
-  <tfctech:metal/sterling_silver_wire:4>,
-  <tfctech:metal/wrought_iron_wire:4>,
-  <tfctech:metal/pig_iron_wire:4>,
-  <tfctech:metal/blue_steel_wire:4>,
-  <tfctech:metal/red_steel_wire:4>,
-  // Draw Plates
-  <tfctech:metal/iron_draw_plate>,
-  <tfctech:metal/steel_draw_plate>,
-  <tfctech:metal/black_steel_draw_plate>,
-  // Blowpipes
-  <tfctech:metal/wrought_iron_blowpipe>,
-  <tfctech:metal/steel_blowpipe>,
-  <tfctech:metal/black_steel_blowpipe>,
-  <tfctech:metal/blue_steel_blowpipe>,
-  <tfctech:metal/red_steel_blowpipe>,
-  // Other
-  <tfctech:metal/iron_tongs>,
-  <tfctech:metal/iron_bowl_mount>
+    // Wires - Stage 1
+    <tfctech:metal/bismuth_wire:4>,
+    <tfctech:metal/bismuth_bronze_wire:4>,
+    <tfctech:metal/black_bronze_wire:4>,
+    <tfctech:metal/brass_wire:4>,
+    <tfctech:metal/bronze_wire:4>,
+    <tfctech:metal/rose_gold_wire:4>,
+    <tfctech:metal/zinc_wire:4>,
+    <tfctech:metal/sterling_silver_wire:4>,
+    <tfctech:metal/wrought_iron_wire:4>,
+    <tfctech:metal/pig_iron_wire:4>,
+    <tfctech:metal/blue_steel_wire:4>,
+    <tfctech:metal/red_steel_wire:4>,
+    // Draw Plates
+    <tfctech:metal/iron_draw_plate>,
+    <tfctech:metal/steel_draw_plate>,
+    <tfctech:metal/black_steel_draw_plate>,
+    // Blowpipes
+    <tfctech:metal/wrought_iron_blowpipe>,
+    <tfctech:metal/steel_blowpipe>,
+    <tfctech:metal/black_steel_blowpipe>,
+    <tfctech:metal/blue_steel_blowpipe>,
+    <tfctech:metal/red_steel_blowpipe>,
+    // Other
+    <tfctech:metal/iron_tongs>,
+    <tfctech:metal/iron_bowl_mount>
 ];
 for item in RemoveItemAnvilRecipes {
     Anvil.removeRecipe(item);
@@ -128,28 +129,28 @@ for item in RemoveItemAnvilRecipes {
 
 // Удаление рецептов сварки
 val RemoveItemWeldingRecipes as IItemStack[] = [
-  // Gears
-  <tfctech:metal/sterling_silver_gear>,
-  <tfctech:metal/tin_gear>,
-  <tfctech:metal/silver_gear>,
-  <tfctech:metal/rose_gold_gear>,
-  <tfctech:metal/lead_gear>,
-  <tfctech:metal/gold_gear>,
-  <tfctech:metal/copper_gear>,
-  <tfctech:metal/brass_gear>,
-  <tfctech:metal/bismuth_bronze_gear>,
-  <tfctech:metal/steel_gear>,
-  <tfctech:metal/wrought_iron_gear>,
-  <tfctech:metal/zinc_gear>,
-  <tfctech:metal/nickel_gear>,
-  <tfctech:metal/bronze_gear>,
-  <tfctech:metal/black_bronze_gear>,
-  <tfctech:metal/bismuth_gear>,
-  <tfctech:metal/black_steel_gear>,
-  <tfctech:metal/blue_steel_gear>,
-  <tfctech:metal/platinum_gear>,
-  <tfctech:metal/pig_iron_gear>,
-  <tfctech:metal/red_steel_gear>
+    // Gears
+    <tfctech:metal/sterling_silver_gear>,
+    <tfctech:metal/tin_gear>,
+    <tfctech:metal/silver_gear>,
+    <tfctech:metal/rose_gold_gear>,
+    <tfctech:metal/lead_gear>,
+    <tfctech:metal/gold_gear>,
+    <tfctech:metal/copper_gear>,
+    <tfctech:metal/brass_gear>,
+    <tfctech:metal/bismuth_bronze_gear>,
+    <tfctech:metal/steel_gear>,
+    <tfctech:metal/wrought_iron_gear>,
+    <tfctech:metal/zinc_gear>,
+    <tfctech:metal/nickel_gear>,
+    <tfctech:metal/bronze_gear>,
+    <tfctech:metal/black_bronze_gear>,
+    <tfctech:metal/bismuth_gear>,
+    <tfctech:metal/black_steel_gear>,
+    <tfctech:metal/blue_steel_gear>,
+    <tfctech:metal/platinum_gear>,
+    <tfctech:metal/pig_iron_gear>,
+    <tfctech:metal/red_steel_gear>
 ];
 for item in RemoveItemWeldingRecipes {
     Welding.removeRecipe(item);
@@ -195,19 +196,23 @@ ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel_piece>, "BISMUTH
 ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel_piece>, "BLACK_BRONZE", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel_piece>, "BRONZE", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel_piece>, "NICKEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel_piece>, "ZINC", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel_piece>, "WROUGHT_IRON", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel_piece>, "STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel_piece>, "BLACK_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel_piece>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel_piece>, "RED_STEEL", 144, true);
 // Rackwheels
-ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel>, "BISMUTH", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel>, "BLACK_BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel>, "BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel>, "NICKEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel>, "BLACK_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel>, "BLUE_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel>, "BISMUTH", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel>, "BLACK_BRONZE", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel>, "BRONZE", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel>, "NICKEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel>, "ZINC", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel>, "WROUGHT_IRON", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel>, "STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel>, "BLACK_STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel>, "BLUE_STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel>, "RED_STEEL", 576, true);
 // Strips
 ItemRegistry.registerItemMetal(<tfctech:metal/copper_strip>, "COPPER", 72, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/gold_strip>, "GOLD", 72, true);
@@ -292,6 +297,12 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 // Резина для первых этапов
 recipes.addShapeless(<metaitem:plateRubber> * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
 
+// Холодильник
+recipes.addShaped(<tfctech:fridge>,
+    [[<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <ore:plateDoubleIronAny>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>]]);
+
 // Уменьшение выхода рецепта с резиной
 Barrel.removeRecipe(<tfctech:latex/rubber_mix> * 6);
 Barrel.addRecipe("tfg:tfctech/rubber_mix", <tfctech:latex/vulcanizing_agents>, <liquid:latex> * 1000, <tfctech:latex/rubber_mix> * 6, 8);
@@ -317,41 +328,41 @@ Anvil.addRecipe("tfg:tfctech/blowpipe/red_steel", <ore:plateRedSteel>, <tfctech:
 // Winch
 recipes.addShaped(<tfctech:wiredraw/winch>,
 [[<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
-  [null, <ore:stickLongWroughtIron>, null],
-  [<ore:stickWroughtIron>, null, <ore:stickWroughtIron>]]);
+ [null, <ore:stickLongWroughtIron>, null],
+ [<ore:stickWroughtIron>, null, <ore:stickWroughtIron>]]);
 
 // Медный индуктор
 recipes.addShaped(<tfctech:metal/copper_inductor>,
 [[null, <ore:wireGtSingleCopper>, null],
-  [<ore:wireGtSingleCopper>, <ore:gtce.tool.hard.hammers>, <ore:wireGtSingleCopper>],
-  [null, <ore:wireGtSingleCopper>, null]]);
+ [<ore:wireGtSingleCopper>, <ore:gtce.tool.hard.hammers>, <ore:wireGtSingleCopper>],
+ [null, <ore:wireGtSingleCopper>, null]]);
 
 // Тигель
 recipes.addShaped(<tfctech:induction_crucible>,
 [[<ore:plateSteel>, null, <ore:plateSteel>],
-  [<tfctech:metal/copper_inductor>, <tfc:crucible>, <tfctech:metal/copper_inductor>],
-  [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
-
+ [<tfctech:metal/copper_inductor>, <tfc:crucible>, <tfctech:metal/copper_inductor>],
+ [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
+ 
 // Электро наковальня
 recipes.addShaped(<tfctech:electric_forge>,
 [[<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>],
-  [<tfctech:metal/copper_inductor>, <tfc:fire_bricks>, <tfctech:metal/copper_inductor>],
-  [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
+ [<tfctech:metal/copper_inductor>, <tfc:fire_bricks>, <tfctech:metal/copper_inductor>],
+ [<ore:plateSteel>, <ore:wireGtSingleCopper>, <ore:plateSteel>]]);
 
 // Smeltery Cauldron
 recipes.addShaped(<tfctech:smeltery_cauldron>,
 [[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
-  [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
-  [<ore:stickLongWroughtIron>, null, <ore:stickLongWroughtIron>]]);
+ [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>],
+ [<ore:stickLongWroughtIron>, null, <ore:stickLongWroughtIron>]]);
 
 // Smeltery Firebox
 recipes.addShaped(<tfctech:smeltery_firebox>,
 [[<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>],
-  [<ore:plateWroughtIron>, <tfc:fire_bricks>, <ore:plateWroughtIron>],
-  [<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>]]);
+ [<ore:plateWroughtIron>, <tfc:fire_bricks>, <ore:plateWroughtIron>],
+ [<ore:stickWroughtIron>, <ore:plateWroughtIron>, <ore:stickWroughtIron>]]);
 
 // Wire Draw Bench
 recipes.addShaped(<tfctech:wire_draw_bench>,
 [[<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <tfctech:metal/iron_tongs>],
-  [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
-  [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>]]);
+ [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
+ [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>]]);

@@ -7,9 +7,9 @@ import mods.horsepower.Grindstone;
 // GrindStone Removing
 val RemoveItemsFromQuern as IItemStack[] = [
 	<tfc:powder/flux> * 4,
-  <minecraft:redstone> * 8,
-  <tfc:powder/fertilizer> * 8,
-  <minecraft:glowstone_dust> * 8
+    <minecraft:redstone> * 8,
+    <tfc:powder/fertilizer> * 8,
+    <minecraft:glowstone_dust> * 8
 ];
 for item in RemoveItemsFromQuern{
     Grindstone.remove(item);

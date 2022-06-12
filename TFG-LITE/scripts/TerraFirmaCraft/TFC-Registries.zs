@@ -9,7 +9,7 @@ import mods.terrafirmacraft.ItemRegistry;
 
 // Руда
 for item in GregtechOres {
-		ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
+        ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
 }
 
 // Слитки
@@ -385,5 +385,5 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallSilver>, "SILVER", 25, true);
 ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 10, true);
 
 for item in Bad_Dusts_Array {
-    item.addTooltip(format.red(game.localize("tfg.warningaboutimpuredusts.name")));
+        item.addTooltip(format.red(game.localize("tfg.warningaboutimpuredusts.name")));
 }

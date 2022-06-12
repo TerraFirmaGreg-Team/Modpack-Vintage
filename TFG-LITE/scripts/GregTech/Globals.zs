@@ -55,3 +55,4 @@ global sifter                    as RecipeMap = RecipeMap.getByName("sifter");
 global thermal_centrifuge        as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 global vacuum_freezer            as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global wiremill                  as RecipeMap = RecipeMap.getByName("wiremill");
+global slicer                    as RecipeMap = RecipeMap.getByName("slicer");

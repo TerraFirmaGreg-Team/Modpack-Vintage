@@ -20,7 +20,7 @@ val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenwa
 
 // Удаление рецептов
 val RemoveItemRecipesByName = [
-  "tfc:vanilla/redstone/observer",
+  	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
 	"tfc:vanilla/flint_and_steel",
 	"tfc:vanilla/compass",
@@ -51,7 +51,8 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/rail/minecart",
 	"tfc:vanilla/rail/steel_minecart",
 	"tfc:paper",
-	"tfc:fire_clay"
+	"tfc:fire_clay",
+	"tfc:vanilla/cauldron"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -74,7 +75,8 @@ val RemoveRecipesInBarrel = [
 	"tfc:concrete_brown",
 	"tfc:concrete_green",
 	"tfc:concrete_red",
-	"tfc:concrete_black"
+	"tfc:concrete_black",
+	"tfc:blast_furnace"
 ] as string[];
 for item in RemoveRecipesInBarrel {
     recipes.removeByRecipeName(item);
@@ -413,7 +415,13 @@ Barrel.addRecipe("TFG_sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> 
 Quern.addRecipe("TFG_flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
-recipes.addShapeless(<ore:stickWood>.firstItem * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
+recipes.addShapeless(<minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
+
+// Исправление рецепта Blast Furnace
+recipes.addShaped(<tfc:blast_furnace>,
+    [[<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>],
+    [<ore:plateDoubleIronAny>, <tfc:crucible>, <ore:plateDoubleIronAny>],
+    [<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>]]);
 
 // Огнеупорная глина
 recipes.addShaped(<tfc:ceramics/fire_clay>,

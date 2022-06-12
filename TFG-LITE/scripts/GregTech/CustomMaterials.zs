@@ -31,6 +31,7 @@ import mods.gregtech.material.Material;
 <material:hsss>.addFlags("generate_dense");
 <material:stainless_steel>.addFlags("generate_dense");
 <material:platinum>.addFlags("generate_dense");
+<material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()

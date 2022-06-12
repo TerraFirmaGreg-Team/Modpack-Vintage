@@ -10,7 +10,9 @@ val RemoveItemRecipesByName = [
   "appliedenergistics2:decorative/certuz_quartz_block",
   "appliedenergistics2:decorative/certuz_quartz_block_pure",
   "appliedenergistics2:misc/vanilla_daylight_detector",
-  "appliedenergistics2:misc/vanilla_comparator"
+  "appliedenergistics2:misc/vanilla_comparator",
+  "appliedenergistics2:tools/misctools_charged_staff",
+  "appliedenergistics2:tools/network_memory_card"
 ] as string[];
 for item in RemoveItemRecipesByName{
   recipes.removeByRecipeName(item);
@@ -822,7 +824,6 @@ recipes.addShaped(<appliedenergistics2:matter_cannon>, [
   [<ore:plateSteel>, null, null]]);
 
 // Memory Card
-recipes.removeByRecipeName("appliedenergistics2:tools/network_memory_card");
 recipes.addShaped("network_memory_card", <appliedenergistics2:memory_card>, [
   [<appliedenergistics2:material:23>, <ore:circuitLv>],
   [<ore:wireFineGold>, <ore:plateIron>]]);
@@ -1452,6 +1453,12 @@ recipes.addShaped("import_bus_fluid", <appliedenergistics2:part:241>, [
 recipes.removeByRecipeName("appliedenergistics2:network/parts/export_bus_fluid");
 recipes.addShaped("export_bus_fluid", <appliedenergistics2:part:261>, [
   [<appliedenergistics2:material:43>, <metaitem:electric.pump.lv>, <ore:ae2.cable.glass>]]);
+
+// Charged Stuff
+recipes.addShaped(<appliedenergistics2:charged_staff>, [
+  [<appliedenergistics2:material:1>, <ore:gtce.tool.hard.hammers>, null],
+  [<ore:gtce.tool.files>, <ore:stickIronAny>, null],
+  [null, null, <ore:stickIronAny>]]);
 
 // Fluid Interface
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");

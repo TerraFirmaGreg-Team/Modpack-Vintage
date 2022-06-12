@@ -3,7 +3,9 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-// --- TFC
+////////////////////////////////////////////////////////
+// --- TFC --- /////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 // Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
@@ -146,9 +148,6 @@ for item in TFC_Slabs_Smooth {
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
-// IronAny Single Sheets
-<ore:plateAnyIron>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);
-
 // Removing OreDicts from TFC ingots
 <ore:ingotBismuth>.remove(<tfc:metal/ingot/bismuth>);
 <ore:ingotBismuthBronze>.remove(<tfc:metal/ingot/bismuth_bronze>);
@@ -232,213 +231,74 @@ for item in TFC_Slabs_Smooth {
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
-// --- GregTech
+////////////////////////////////////////////////////////
+// --- GREGTECH --- ////////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Tools
 <ore:gtce.tool.wrenches>.addItems([
-  <gregtech:meta_tool:8>.withEmptyTag(),
-  <gregtech:meta_tool:28>.withEmptyTag(),
-  <gregtech:meta_tool:29>.withEmptyTag(),
-  <gregtech:meta_tool:30>.withEmptyTag()
+    <gregtech:meta_tool:8>.withEmptyTag(),
+    <gregtech:meta_tool:28>.withEmptyTag(),
+    <gregtech:meta_tool:29>.withEmptyTag(),
+    <gregtech:meta_tool:30>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.screwdrivers>.addItems([
-  <gregtech:meta_tool:11>.withEmptyTag(),
-  <gregtech:meta_tool:31>.withEmptyTag()
+    <gregtech:meta_tool:11>.withEmptyTag(),
+    <gregtech:meta_tool:31>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.hard.hammers>.addItems([
-  <gregtech:meta_tool:6>.withEmptyTag()
+    <gregtech:meta_tool:6>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.saws>.addItems([
-  <gregtech:meta_tool:5>.withEmptyTag(),
-  <gregtech:meta_tool:25>.withEmptyTag(),
-  <gregtech:meta_tool:26>.withEmptyTag(),
-  <gregtech:meta_tool:27>.withEmptyTag(),
-  <gregtech:meta_tool:32>.withEmptyTag()
+    <gregtech:meta_tool:5>.withEmptyTag(),
+    <gregtech:meta_tool:25>.withEmptyTag(),
+    <gregtech:meta_tool:26>.withEmptyTag(),
+    <gregtech:meta_tool:27>.withEmptyTag(),
+    <gregtech:meta_tool:32>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.files>.addItems([
-  <gregtech:meta_tool:9>.withEmptyTag()
+    <gregtech:meta_tool:9>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.cutters>.addItems([
-  <gregtech:meta_tool:13>.withEmptyTag()
+    <gregtech:meta_tool:13>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.soft.hammers>.addItems([
-  <gregtech:meta_tool:7>.withEmptyTag()
+    <gregtech:meta_tool:7>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.mortars>.addItems([
-  <gregtech:meta_tool:12>.withEmptyTag()
+    <gregtech:meta_tool:12>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.shovels>.addItems([
-  <gregtech:meta_tool:2>.withEmptyTag()
+    <gregtech:meta_tool:2>.withEmptyTag()
 ]);
 
 <ore:gtce.tool.knife>.addItems([
-  <gregtech:meta_tool:15>.withEmptyTag(),
+    <gregtech:meta_tool:15>.withEmptyTag(),
+    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 
-// --- Applied Energistics 2
-// Interface
-<ore:ae2.interface.item>.addItems([
-  <appliedenergistics2:interface>,
-  <appliedenergistics2:part:440>
-]);
-
-// Fluid Interface
-<ore:ae2.interface.fluid>.addItems([
-  <appliedenergistics2:fluid_interface>,
-  <appliedenergistics2:part:441>
-]);
-
-// Glass Cable
-global glassCables as IItemStack[] = [
-  <appliedenergistics2:part>,
-  <appliedenergistics2:part:1>,
-  <appliedenergistics2:part:2>,
-  <appliedenergistics2:part:3>,
-  <appliedenergistics2:part:4>,
-  <appliedenergistics2:part:5>,
-  <appliedenergistics2:part:6>,
-  <appliedenergistics2:part:7>,
-  <appliedenergistics2:part:8>,
-  <appliedenergistics2:part:9>,
-  <appliedenergistics2:part:10>,
-  <appliedenergistics2:part:11>,
-  <appliedenergistics2:part:12>,
-  <appliedenergistics2:part:13>,
-  <appliedenergistics2:part:14>,
-  <appliedenergistics2:part:15>,
-  <appliedenergistics2:part:16>
-];
-for glassCable in glassCables {
-  <ore:ae2.cable.glass>.add(glassCable);
-  if (glassCable.displayName has "Fluix") {}
-  else {
-    recipes.remove(glassCable);
-    <ore:ae2.cable.glass.colors>.add(glassCable);
-  }
-}
-
-// Covered Cable
-global coveredCables as IItemStack[] = [
-  <appliedenergistics2:part:20>,
-  <appliedenergistics2:part:21>,
-  <appliedenergistics2:part:22>,
-  <appliedenergistics2:part:23>,
-  <appliedenergistics2:part:24>,
-  <appliedenergistics2:part:25>,
-  <appliedenergistics2:part:26>,
-  <appliedenergistics2:part:27>,
-  <appliedenergistics2:part:28>,
-  <appliedenergistics2:part:29>,
-  <appliedenergistics2:part:30>,
-  <appliedenergistics2:part:31>,
-  <appliedenergistics2:part:32>,
-  <appliedenergistics2:part:33>,
-  <appliedenergistics2:part:34>,
-  <appliedenergistics2:part:35>,
-  <appliedenergistics2:part:36>
-];
-for coveredCable in coveredCables {
-  <ore:ae2.cable.covered>.add(coveredCable);
-  if (coveredCable.displayName has "Fluix") {}
-  else {
-    recipes.remove(coveredCable);
-    <ore:ae2.cable.covered.colors>.add(coveredCable);
-  }
-}
-
-// Smart Cable
-global smartCables as IItemStack[] = [
-  <appliedenergistics2:part:40>,
-  <appliedenergistics2:part:41>,
-  <appliedenergistics2:part:42>,
-  <appliedenergistics2:part:43>,
-  <appliedenergistics2:part:44>,
-  <appliedenergistics2:part:45>,
-  <appliedenergistics2:part:46>,
-  <appliedenergistics2:part:47>,
-  <appliedenergistics2:part:48>,
-  <appliedenergistics2:part:49>,
-  <appliedenergistics2:part:50>,
-  <appliedenergistics2:part:51>,
-  <appliedenergistics2:part:52>,
-  <appliedenergistics2:part:53>,
-  <appliedenergistics2:part:54>,
-  <appliedenergistics2:part:55>,
-  <appliedenergistics2:part:56>
-];
-for smartCable in smartCables {
-  <ore:ae2.cable.smart>.add(smartCable);
-  if (smartCable.displayName has "Fluix") {}
-  else {
-    recipes.remove(smartCable);
-    <ore:ae2.cable.smart.colors>.add(smartCable);
-  }
-}
-
-// Dense Covered Cable
-global denseCoveredCables as IItemStack[] = [
-  <appliedenergistics2:part:500>,
-  <appliedenergistics2:part:501>,
-  <appliedenergistics2:part:502>,
-  <appliedenergistics2:part:503>,
-  <appliedenergistics2:part:504>,
-  <appliedenergistics2:part:505>,
-  <appliedenergistics2:part:506>,
-  <appliedenergistics2:part:507>,
-  <appliedenergistics2:part:508>,
-  <appliedenergistics2:part:509>,
-  <appliedenergistics2:part:510>,
-  <appliedenergistics2:part:511>,
-  <appliedenergistics2:part:512>,
-  <appliedenergistics2:part:513>,
-  <appliedenergistics2:part:514>,
-  <appliedenergistics2:part:515>,
-  <appliedenergistics2:part:516>
-];
-for denseCoveredCable in denseCoveredCables {
-  <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
-  if (denseCoveredCable.displayName has "Fluix") {}
-  else {
-    recipes.remove(denseCoveredCable);
-    <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
-  }
-}
-
-// Dense Smart Cable
-global denseSmartCables as IItemStack[] = [
-  <appliedenergistics2:part:60>,
-  <appliedenergistics2:part:61>,
-  <appliedenergistics2:part:62>,
-  <appliedenergistics2:part:63>,
-  <appliedenergistics2:part:64>,
-  <appliedenergistics2:part:65>,
-  <appliedenergistics2:part:66>,
-  <appliedenergistics2:part:67>,
-  <appliedenergistics2:part:68>,
-  <appliedenergistics2:part:69>,
-  <appliedenergistics2:part:70>,
-  <appliedenergistics2:part:71>,
-  <appliedenergistics2:part:72>,
-  <appliedenergistics2:part:73>,
-  <appliedenergistics2:part:74>,
-  <appliedenergistics2:part:75>,
-  <appliedenergistics2:part:76>
-];
-for denseSmartCable in denseSmartCables {
-  <ore:ae2.cable.dense.smart>.add(denseSmartCable);
-  if (denseSmartCable.displayName has "Fluix") {}
-  else {
-    recipes.remove(denseSmartCable);
-    <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
-  }
-}
+// Wrought Iron + Iron
+<ore:blockIronAny>.add(<minecraft:iron_block>, <metaitem:blockWroughtIron>);
+<ore:plateIronAny>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);
+<ore:plateDoubleIronAny>.add(<metaitem:plateDoubleIron>, <metaitem:plateDoubleWroughtIron>);
+<ore:gearIronAny>.add(<metaitem:gearIron>, <metaitem:gearWroughtIron>);
+<ore:gearSmallIronAny>.add(<metaitem:gearSmallIron>, <metaitem:gearSmallWroughtIron>);
+<ore:springIronAny>.add(<metaitem:springIron>, <metaitem:springWroughtIron>);
+<ore:springSmallIronAny>.add(<metaitem:springSmallIron>, <metaitem:springSmallWroughtIron>);
+<ore:ringIronAny>.add(<metaitem:ringIron>, <metaitem:ringWroughtIron>);
+<ore:stickIronAny>.add(<metaitem:stickIron>, <metaitem:stickWroughtIron>);
+<ore:stickLongIronAny>.add(<metaitem:stickLongIron>, <metaitem:stickLongWroughtIron>);
+<ore:boltIronAny>.add(<metaitem:boltIron>, <metaitem:boltWroughtIron>);
+<ore:screwIronAny>.add(<metaitem:screwIron>, <metaitem:screwWroughtIron>);
+<ore:rotorIronAny>.add(<metaitem:rotorIron>, <metaitem:rotorWroughtIron>);
 
 // Chipped Gems from GT
 for item in Gem_Chipped {
@@ -475,11 +335,174 @@ for item in Gem_Exquisite {
 // Marble
 <ore:stoneMarble>.remove(<gregtech:stone_smooth:2>);
 
-// --- GC
-<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+////////////////////////////////////////////////////////
+// --- AE2 --- /////////////////////////////////////////
+////////////////////////////////////////////////////////
 
-// --- Deleting OreDictionary
-// --- ProjectRed
+// Interface
+<ore:ae2.interface.item>.addItems([
+    <appliedenergistics2:interface>,
+    <appliedenergistics2:part:440>
+]);
+
+// Fluid Interface
+<ore:ae2.interface.fluid>.addItems([
+    <appliedenergistics2:fluid_interface>,
+    <appliedenergistics2:part:441>
+]);
+
+// Glass Cable
+global glassCables as IItemStack[] = [
+    <appliedenergistics2:part>,
+    <appliedenergistics2:part:1>,
+    <appliedenergistics2:part:2>,
+    <appliedenergistics2:part:3>,
+    <appliedenergistics2:part:4>,
+    <appliedenergistics2:part:5>,
+    <appliedenergistics2:part:6>,
+    <appliedenergistics2:part:7>,
+    <appliedenergistics2:part:8>,
+    <appliedenergistics2:part:9>,
+    <appliedenergistics2:part:10>,
+    <appliedenergistics2:part:11>,
+    <appliedenergistics2:part:12>,
+    <appliedenergistics2:part:13>,
+    <appliedenergistics2:part:14>,
+    <appliedenergistics2:part:15>,
+    <appliedenergistics2:part:16>
+];
+for glassCable in glassCables {
+    <ore:ae2.cable.glass>.add(glassCable);
+    if (glassCable.displayName has "Fluix") {}
+    else {
+        recipes.remove(glassCable);
+        <ore:ae2.cable.glass.colors>.add(glassCable);
+    }
+}
+
+// Covered Cable
+global coveredCables as IItemStack[] = [
+    <appliedenergistics2:part:20>,
+    <appliedenergistics2:part:21>,
+    <appliedenergistics2:part:22>,
+    <appliedenergistics2:part:23>,
+    <appliedenergistics2:part:24>,
+    <appliedenergistics2:part:25>,
+    <appliedenergistics2:part:26>,
+    <appliedenergistics2:part:27>,
+    <appliedenergistics2:part:28>,
+    <appliedenergistics2:part:29>,
+    <appliedenergistics2:part:30>,
+    <appliedenergistics2:part:31>,
+    <appliedenergistics2:part:32>,
+    <appliedenergistics2:part:33>,
+    <appliedenergistics2:part:34>,
+    <appliedenergistics2:part:35>,
+    <appliedenergistics2:part:36>
+];
+for coveredCable in coveredCables {
+    <ore:ae2.cable.covered>.add(coveredCable);
+    if (coveredCable.displayName has "Fluix") {}
+    else {
+        recipes.remove(coveredCable);
+        <ore:ae2.cable.covered.colors>.add(coveredCable);
+    }
+}
+
+// Smart Cable
+global smartCables as IItemStack[] = [
+    <appliedenergistics2:part:40>,
+    <appliedenergistics2:part:41>,
+    <appliedenergistics2:part:42>,
+    <appliedenergistics2:part:43>,
+    <appliedenergistics2:part:44>,
+    <appliedenergistics2:part:45>,
+    <appliedenergistics2:part:46>,
+    <appliedenergistics2:part:47>,
+    <appliedenergistics2:part:48>,
+    <appliedenergistics2:part:49>,
+    <appliedenergistics2:part:50>,
+    <appliedenergistics2:part:51>,
+    <appliedenergistics2:part:52>,
+    <appliedenergistics2:part:53>,
+    <appliedenergistics2:part:54>,
+    <appliedenergistics2:part:55>,
+    <appliedenergistics2:part:56>
+];
+for smartCable in smartCables {
+    <ore:ae2.cable.smart>.add(smartCable);
+    if (smartCable.displayName has "Fluix") {}
+    else {
+        recipes.remove(smartCable);
+        <ore:ae2.cable.smart.colors>.add(smartCable);
+    }
+}
+
+// Dense Covered Cable
+global denseCoveredCables as IItemStack[] = [
+    <appliedenergistics2:part:500>,
+    <appliedenergistics2:part:501>,
+    <appliedenergistics2:part:502>,
+    <appliedenergistics2:part:503>,
+    <appliedenergistics2:part:504>,
+    <appliedenergistics2:part:505>,
+    <appliedenergistics2:part:506>,
+    <appliedenergistics2:part:507>,
+    <appliedenergistics2:part:508>,
+    <appliedenergistics2:part:509>,
+    <appliedenergistics2:part:510>,
+    <appliedenergistics2:part:511>,
+    <appliedenergistics2:part:512>,
+    <appliedenergistics2:part:513>,
+    <appliedenergistics2:part:514>,
+    <appliedenergistics2:part:515>,
+    <appliedenergistics2:part:516>
+];
+for denseCoveredCable in denseCoveredCables {
+    <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
+    if (denseCoveredCable.displayName has "Fluix") {}
+    else {
+        recipes.remove(denseCoveredCable);
+        <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
+    }
+}
+
+// Dense Smart Cable
+global denseSmartCables as IItemStack[] = [
+    <appliedenergistics2:part:60>,
+    <appliedenergistics2:part:61>,
+    <appliedenergistics2:part:62>,
+    <appliedenergistics2:part:63>,
+    <appliedenergistics2:part:64>,
+    <appliedenergistics2:part:65>,
+    <appliedenergistics2:part:66>,
+    <appliedenergistics2:part:67>,
+    <appliedenergistics2:part:68>,
+    <appliedenergistics2:part:69>,
+    <appliedenergistics2:part:70>,
+    <appliedenergistics2:part:71>,
+    <appliedenergistics2:part:72>,
+    <appliedenergistics2:part:73>,
+    <appliedenergistics2:part:74>,
+    <appliedenergistics2:part:75>,
+    <appliedenergistics2:part:76>
+];
+for denseSmartCable in denseSmartCables {
+    <ore:ae2.cable.dense.smart>.add(denseSmartCable);
+    if (denseSmartCable.displayName has "Fluix") {}
+    else {
+        recipes.remove(denseSmartCable);
+        <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
+    }
+}
+
+// Iron Dust
+<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+
+////////////////////////////////////////////////////////
+// --- PROJECTRED --- //////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Copper
 <ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
 // Tin
@@ -489,15 +512,19 @@ for item in Gem_Exquisite {
 // RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
 
-// --- TFC-Florae
+////////////////////////////////////////////////////////
+// --- TFC-Florae --- //////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
-// --- AE2
-// Iron Dust
-<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+////////////////////////////////////////////////////////
+// --- GC/GS --- ///////////////////////////////////////
+////////////////////////////////////////////////////////
 
-// --- GC/GS
+<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
@@ -538,7 +565,9 @@ for item in Gem_Exquisite {
 // Sulfur
 <ore:oreSulfur>.remove(<galaxyspace:ioblocks:4>);
 
-// --- Vanilla
+////////////////////////////////////////////////////////
+// --- Vanilla --- /////////////////////////////////////
+////////////////////////////////////////////////////////
 
 // Grass
 <ore:grass>.remove(<minecraft:grass>);
@@ -622,5 +651,6 @@ for item in Gem_Exquisite {
 
 // Remove chest and chestWood and chestTrapped
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:chest>);
 <ore:chestTrapped>.remove(<minecraft:trapped_chest>);
