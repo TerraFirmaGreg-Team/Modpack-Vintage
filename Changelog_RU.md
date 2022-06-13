@@ -1,6 +1,6 @@
 # Список изменений
 
-## Версия R3.3.5 - Ожидается 15.06.2022
+## Версия R3.3.5 - Ожидается 18.06.2022
 #### [Lite, Huge]
 ### Исправления модпака
 * Добавлен RFTools в версию модпака Lite.
@@ -19,8 +19,11 @@
 * Полностью переписан скрипт Vanilla.zs.
 * Скрыты и удалены предметы мода HammerCore.
 * Скрыты и удалены предметы мода ForgeMicroblocksCBE.
+* Исправлено отсутсвие изображение при загрузке игры
 ### Обновление модов
-* Supermartijn642configlib
+* Fluid Craft for AE2
+* Xaeros Minimap
+* Xaeros World Map
 ### Новые моды
 * Item Physics Lite
 * RFTools
@@ -30,6 +33,11 @@
 * Chisel And Bits
 * UnlimitedChiselWorks (Причина: не имеет поддержку TFC).
 * UnlimitedChiselWorksTFC (Причина: хоть и добавляет частичную поддержку TFC, но не полную, поэтому чуть позже мы представим собственный мод, который будет работать с TFC, TFC-Florae и другими аддонами).
+* Supermartijn642configlib
+* Supermartijn642corelib
+* Movingelevators(Причина: есть алтернатива в RFTools)
+### Понижена версия
+* CustomSkinLoader(до стабильной)
 #### [Huge]
 ### Удаление модов
 * Pam's HarvestCraft (Разраб аддона забросил мод, а нам не нужен мертвый груз).

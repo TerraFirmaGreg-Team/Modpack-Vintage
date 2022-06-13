@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 3.3.5 - Expected 15.06.2022
+## Version 3.3.5 - Expected 18.06.2022
 #### [Lite, Huge]
 ### Modpack Fixes
 * Added RFTools to the Lite version of the modpack.
@@ -19,10 +19,11 @@
 * Completely rewritten script Vanilla.zs.
 * Hidden and removed HammerCore mod items.
 * Hidden and removed items from the ForgeMicroblocksCBE mod.
+* Fixed missing image when loading the game
 ### Updating mods
-* Supermartijn642configlib
-* UnlimitedChiselWorks (Reason: does not have TFC support).
-* UnlimitedChiselWorksTFC (Reason: although it adds partial support for TFC, but not complete, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).
+* Fluid Craft for AE2
+* Xaero's Minimap
+* Xaeros World Map
 ### New mods
 * Item Physics Lite
 * RF Tools
@@ -30,6 +31,13 @@
 * Little Tiles
 ### Removing Mods
 * Chisel And Bits
+* Unlimited Chiselworks (Reason: does not have TFC support).
+* Unlimited Chiselworkstfc (Reason: although it adds partial support for TFC, but not full, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).
+* Supermartijn642configlib
+* Supermartijn642corelib
+* Movingelevators(Reason: there is an alternative in RFTools)
+### Downgraded version
+* Custom Skin Loader(up to Stable)
 #### [Huge]
 ### Removing Mods
 * Pam's HarvestCraft (The addon developer abandoned the mod, and we don't need dead weight).
