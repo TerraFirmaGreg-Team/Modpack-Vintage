@@ -28,6 +28,8 @@
 ### New mods
 * Item Physics Lite
 * RF Tools
+* RFTools Control [Unofficial Maintance]
+* mcjtylib
 * GregTech Food Option
 * Little Tiles
 ### Removing Mods
