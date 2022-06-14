@@ -509,7 +509,9 @@ val Array6 as IItemStack[] = [
     <metaitem:compressed.fireclay>,
     <metaitem:dustFireclay>,
     <metaitem:dustSmallFireclay>,
-    <metaitem:dustTinyFireclay>
+    <metaitem:dustTinyFireclay>,
+	// Wooden Barrel
+	<metaitem:drum.wood>
 ];
 for item in Array6 {
     JEI.removeAndHide(item);
@@ -1465,7 +1467,8 @@ val Array20 as IItemStack[] = [
 	<minecraft:vine>,
 	<minecraft:waterlily>,
 	<minecraft:golden_horse_armor>,
-	<minecraft:diamond_horse_armor>
+	<minecraft:diamond_horse_armor>,
+	<minecraft:iron_trapdoor>
 ] as IItemStack[];
 for item in Array20 {
     JEI.removeAndHide(item);
@@ -1474,7 +1477,7 @@ for item in Array20 {
 // Vanilla
 val Array21 as IItemStack[] = [
 	<planetprogression:telescope_fake_block>,
-  <planetprogression:block_multi>,
+  	<planetprogression:block_multi>,
 	<planetprogression:satellite_builder>,
 	<planetprogression:advanced_launch_pad_full>
 ] as IItemStack[];

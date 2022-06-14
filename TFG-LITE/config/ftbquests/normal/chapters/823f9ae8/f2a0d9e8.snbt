@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	dependencies: [
+		"85e10b5d"
+	],
+	tasks: [{
+		uid: "c19862fb",
+		type: "item",
+		items: [{
+			item: "tfc:metal/bucket/red_steel"
+		}],
+		ignore_nbt: 1b
+	}]
+}

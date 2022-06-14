@@ -323,6 +323,37 @@ lathe.findRecipe(7, [<minecraft:sapling:0>], null).remove();
 // Полублок -> Миска
 lathe.findRecipe(7, [<minecraft:wooden_slab:0>], null).remove();
 
+// Крюк
+assembler.findRecipe(4, [<minecraft:stick:0> * 2, <metaitem:ringWroughtIron> * 2], null).remove();
+assembler.findRecipe(4, [<minecraft:stick:0> * 2, <metaitem:ringIron> * 2], null).remove();
+
+// Проигрыватель
+assembler.findRecipe(16, [<metaitem:boltDiamond>, <metaitem:gearIron>, <metaitem:ringIron>, <metaitem:plateWood> * 4, <minecraft:noteblock:0> * 2], null).remove();
+
+// Котёл
+assembler.findRecipe(4, [<metaitem:plateIron> * 7, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
+
+// Компал
+assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4], null).remove();
+
+// Нажимная пластина из железа
+assembler.findRecipe(16, [<metaitem:springSteel>, <metaitem:plateIron>], null).remove();
+
+// Вагонетка
+assembler.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:ringIron> * 4], null).remove();
+
+// Железные прутья
+assembler.findRecipe(4, [<metaitem:stickIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+
+// Железная дверь
+assembler.findRecipe(7, [<minecraft:iron_bars:0>, <metaitem:plateIron> * 4], [<liquid:steel> * 16]).remove();
+
+// Ведро
+bender.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 12})], null).remove();
+
+// Поршень
+assembler.findRecipe(7, [<metaitem:stickIron>, <metaitem:gearSmallIron>, <tfc:slab/wood/maclura:0>, <chisel:cobblestone:0>], [<liquid:red_alloy> * 144]).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металла
@@ -456,9 +487,9 @@ recipes.addShaped("tfg/vanilla/book", <minecraft:book>,
 
 // Ведро
 recipes.addShaped("tfg/vanilla/iron_bucket", <minecraft:bucket>,
-    [[<ore:plateWroughtIron>, <tfc:metal/bucket/blue_steel>.noReturn(), <ore:plateWroughtIron>],
-    [<ore:plateWroughtIron>, <tfc:metal/bucket/red_steel>.noReturn(), <ore:plateWroughtIron>],
-    [null, <ore:plateWroughtIron>, null]]);
+    [[null, <ore:gtce.tool.hard.hammers>, null],
+    [<metaitem:plateBlueSteel>, <tfc:metal/bucket/red_steel>.noReturn(), <metaitem:plateBlueSteel>],
+    [null, <metaitem:plateBlueSteel>, null]]);
 
 // Рычаг
 recipes.addShaped("tfg/vanilla/lever", <minecraft:lever>,
@@ -519,15 +550,9 @@ recipes.addShaped("tfg/vanilla/horse_armor/iron", <minecraft:iron_horse_armor>,
     [<ore:plateIronAny>, <tfc:metal/chestplate/wrought_iron>, <ore:plateIronAny>],
     [<tfc:metal/greaves/wrought_iron>, <ore:screwIronAny>, <tfc:metal/boots/wrought_iron>]]);
 
-// Железный люк
-assembler.recipeBuilder()
-    .inputs(<metaitem:plateIron> * 4, <ore:trapdoorWood>)
-    .outputs(<minecraft:iron_trapdoor>)
-    .duration(100).EUt(16).buildAndRegister();
-
 // Ферментированный паучий глаз
 mixer.recipeBuilder()
-    .inputs([<ore:dustSugar>, <ore:mushroomRed>, <minecraft:spider_eye>])
+    .inputs(<ore:dustSugar>, <ore:mushroomRed>, <minecraft:spider_eye>)
     .outputs(<minecraft:fermented_spider_eye>)
     .duration(300).EUt(2).buildAndRegister();
 
@@ -553,32 +578,32 @@ chemical_bath.recipeBuilder()
 
 // Саженцы -> Палки
 lathe.recipeBuilder()
-    .inputs([<ore:treeSapling>])
+    .inputs(<ore:treeSapling>)
     .outputs(<minecraft:stick>, <metaitem:dustTinyWood>)
     .duration(16).EUt(7).buildAndRegister();
 
 // Полублок -> Миска
 lathe.recipeBuilder()
-    .inputs([<ore:slabWood>])
+    .inputs(<ore:slabWood>)
     .outputs(<minecraft:bowl>, <metaitem:dustTinyWood>)
     .duration(16).EUt(7).buildAndRegister();
 
 // Раздатчик
 assembler.recipeBuilder()
-    .inputs([<ore:cobblestone> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <ore:string>])
+    .inputs(<ore:cobblestone> * 2, <ore:ringIronAny>, <ore:springIronAny> * 2, <ore:gearSmallIronAny> * 2, <metaitem:stickRedAlloy>, <ore:string>)
     .outputs(<minecraft:dispenser>)
     .duration(100).EUt(30).buildAndRegister();
 
 // Гравий -> Каменная пыль, Кремний
 macerator.recipeBuilder()
-    .inputs([<ore:gravel>])
+    .inputs(<ore:gravel>)
     .outputs(<metaitem:dustStone>)
     .chancedOutput(<minecraft:flint>, 100, 100)
     .duration(105).EUt(2).buildAndRegister();
 
 // Гравий -> Каменная пыль, Кремний
 sifter.recipeBuilder()
-    .inputs([<ore:gravel>])
+    .inputs(<ore:gravel>)
     .outputs(<minecraft:flint>)
     .chancedOutput(<minecraft:flint>, 2500, 0)
     .chancedOutput(<minecraft:flint>, 3300, 0)
@@ -589,55 +614,55 @@ sifter.recipeBuilder()
 
 // Кусочки мяса
 macerator.recipeBuilder()
-    .inputs([<ore:categoryMeat>])
+    .inputs(<ore:categoryMeat>)
     .outputs(<metaitem:dustMeat>, <metaitem:dustTinyBone>)
     .duration(105).EUt(2).buildAndRegister();
 
 // Коричневый гриб -> Метан
 centrifuge.recipeBuilder()
-    .inputs([<ore:mushroombrown>])
+    .inputs(<ore:mushroombrown>)
     .fluidOutputs([<liquid:methane> * 18])
     .duration(150).EUt(5).buildAndRegister();
 
 // Красный гриб -> Метан
 centrifuge.recipeBuilder()
-    .inputs([<ore:mushroomRed>])
+    .inputs(<ore:mushroomRed>)
     .fluidOutputs([<liquid:methane> * 18])
     .duration(150).EUt(5).buildAndRegister();
 
 // Стойка для брони
 assembler.recipeBuilder()
-    .inputs([<ore:slabStonePolished>, <minecraft:stick> * 6])
+    .inputs(<ore:slabStonePolished>, <minecraft:stick> * 6)
     .outputs(<minecraft:armor_stand>)
     .duration(300).EUt(7).buildAndRegister();
 
 // Воронка
 assembler.recipeBuilder()
-    .inputs([<ore:chest>, <ore:plateIronAny> * 5])
+    .inputs(<ore:chest>, <ore:plateIronAny> * 5)
     .outputs(<minecraft:hopper>)
     .duration(400).EUt(2).buildAndRegister();
 
 // Базальтовый камень
 compressor.recipeBuilder()
-    .inputs([<metaitem:plateStone> * 9])
+    .inputs(<metaitem:plateStone> * 9)
     .outputs(<tfc:raw/basalt>)
     .duration(300).EUt(2).buildAndRegister();
 
 // Базальтовая земля
 macerator.recipeBuilder()
-    .inputs([<metaitem:bio_chaff>])
+    .inputs(<metaitem:bio_chaff>)
     .outputs(<tfc:dirt/basalt>)
     .duration(300).EUt(2).buildAndRegister();
 
 // Книжные полки
 extractor.recipeBuilder()
-    .inputs([<ore:bookshelf>])
+    .inputs(<ore:bookshelf>)
     .outputs(<minecraft:book> * 3)
     .duration(300).EUt(2).buildAndRegister();
 
 // Кварцитовый песок -> Алмазы и тд.
 centrifuge.recipeBuilder()
-    .inputs([<tfc:sand/quartzite>])
+    .inputs(<tfc:sand/quartzite>)
     .chancedOutput(<metaitem:dustTinyDiamond>, 100, 100)
     .chancedOutput(<metaitem:dustIron>, 5000, 500)
     .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
@@ -645,13 +670,78 @@ centrifuge.recipeBuilder()
 
 // Нефтеносные пески -> Базальтовый песок, Нефть 
 centrifuge.recipeBuilder()
-    .inputs([<ore:oreOilsands>])
+    .inputs(<ore:oreOilsands>)
     .chancedOutput(<tfc:sand/basalt>, 5000, 5000)
     .fluidOutputs([<liquid:oil> * 500])
     .duration(200).EUt(5).buildAndRegister();
 
 // Песок -> Кварцитовая пыль
 macerator.recipeBuilder()
-    .inputs([<ore:sand>])
+    .inputs(<ore:sand>)
     .outputs(<metaitem:dustQuartzSand>)
     .duration(50).EUt(2).buildAndRegister();
+
+// Крюк
+assembler.recipeBuilder()
+    .inputs(<ore:stickWood> * 2, <ore:ringIronAny> * 2)
+    .outputs(<minecraft:tripwire_hook>)
+    .duration(400).EUt(4).buildAndRegister();
+
+// Проигрыватель
+assembler.recipeBuilder()
+    .inputs(<metaitem:boltDiamond>, <ore:gearIronAny>, <ore:ringIronAny>, <metaitem:plateWood> * 4, <minecraft:noteblock> * 2)
+    .outputs(<minecraft:jukebox>)
+    .duration(100).EUt(16).buildAndRegister();
+
+// Поршень
+assembler.recipeBuilder()
+    .inputs(<ore:cobblestone>, <ore:slabWood>, <ore:gearSmallIronAny>, <ore:stickIronAny>)
+    .fluidInputs([<liquid:red_alloy> * 144])
+    .outputs(<minecraft:piston>)
+    .duration(240).EUt(7).buildAndRegister();
+
+// Котёл
+assembler.recipeBuilder()
+    .inputs(<ore:plateIronAny> * 7)
+    .circuit(7)
+    .outputs(<minecraft:cauldron>)
+    .duration(700).EUt(4).buildAndRegister();
+
+// Компас
+assembler.recipeBuilder()
+    .inputs(<metaitem:stickIronMagnetic>, <ore:plateIronAny> * 4)
+    .outputs(<minecraft:compass>)
+    .duration(400).EUt(4).buildAndRegister();
+
+// Нажимная пластина из железа
+assembler.recipeBuilder()
+    .inputs(<metaitem:springSteel>, <ore:plateIronAny>)
+    .outputs(<minecraft:heavy_weighted_pressure_plate>)
+    .duration(200).EUt(16).buildAndRegister();
+
+// Вагонетка
+assembler.recipeBuilder()
+    .inputs(<ore:plateIronAny> * 3, <ore:ringIronAny> * 4)
+    .outputs(<minecraft:minecart>)
+    .duration(200).EUt(4).buildAndRegister();
+
+// Железные прутья
+assembler.recipeBuilder()
+    .inputs(<ore:stickIronAny> * 3)
+    .circuit(3)
+    .outputs(<minecraft:iron_bars> * 4)
+    .duration(300).EUt(4).buildAndRegister();
+
+// Железная дверь
+assembler.recipeBuilder()
+    .inputs(<minecraft:iron_bars>, <ore:plateIronAny> * 4)
+    .fluidInputs([<liquid:steel> * 16])
+    .outputs(<minecraft:iron_door>)
+    .duration(400).EUt(7).buildAndRegister();
+
+// Ведро
+bender.recipeBuilder()
+    .inputs(<metaitem:plateBlueSteel> * 3)
+    .circuit(12)
+    .outputs(<minecraft:bucket>)
+    .duration(400).EUt(7).buildAndRegister();
