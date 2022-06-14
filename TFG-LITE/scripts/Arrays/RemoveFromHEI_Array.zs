@@ -2223,3 +2223,21 @@ val Array25 as IItemStack[] = [
 for item in Array25 {
     JEI.removeAndHide(item);
 }
+// Aunis
+val Array26 as IItemStack[] = [
+	<aunis:naquadah_ore>,
+	<aunis:naquadah_ore_stone>,
+	// Universe wip
+	<aunis:invisible_block>,
+	<aunis:stargate_universe_base_block>,
+	<aunis:stargate_universe_member_block:6>,
+	<aunis:stargate_universe_member_block:14>,
+	<aunis:universe_dialer>,
+	<aunis:universe_ring_fragment>,
+	<aunis:crystal_white>,
+	<aunis:naquadah_alloy_raw>,
+	<aunis:naquadah_alloy>
+];
+for item in Array26 {
+    JEI.removeAndHide(item);
+}
