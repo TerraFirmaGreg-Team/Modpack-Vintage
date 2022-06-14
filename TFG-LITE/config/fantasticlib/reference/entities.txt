@@ -83,7 +83,6 @@ minecraft:villager
 minecraft:ender_crystal
 gregtech:dynamite
 gregtech:gtportal
-aunis:tokra
 tfc:sitblock
 tfc:falling_block
 tfc:thrown_javelin
@@ -181,6 +180,8 @@ galacticraftplanets:web_shot
 powersuits:entityplasmabolt
 powersuits:entityspinningblade
 powersuits:luxcapacitor
+extraplanets:extraplanets.nuclearbombprimed
+extraplanets:extraplanets.firebombprimed
 extraplanets:extraplanets.entitytier4rocket
 extraplanets:extraplanets.entitymercurylander
 extraplanets:extraplanets.entitytier5rocket

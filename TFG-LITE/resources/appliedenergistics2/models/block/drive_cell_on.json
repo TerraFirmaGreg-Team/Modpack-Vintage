@@ -41,6 +41,25 @@
                 "north": {"uv": [0, 2, 5, 4], "texture": "#top_front"},
                 "down": {"uv": [5, 4, 0, 3], "texture": "#top_front"}
             }
+            
+        },
+        {
+            "name": "Cell Light_em",
+            "shade": false,
+            "from": [
+                9.0,
+                13.0,
+                1.0
+            ],
+            "to": [
+                14.0,
+                15.0,
+                2.0
+            ],
+            "faces": {
+                "north": {"uv": [0, 2, 5, 4], "texture": "#top_front"},
+                "down": {"uv": [5, 4, 0, 3], "texture": "#top_front"}
+            }
         }
     ]
 }
