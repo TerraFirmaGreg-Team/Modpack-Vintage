@@ -41,7 +41,7 @@
             "image": {
                 "parent": "builtin/slideshow",
                 "image": "modpack:backgrounds_load/slideshow_#.png",
-                "frame": "slideshow_frame(0, frame_count)",
+                "frame": "slideshow_frame(0, 37)",
                 "position_type": "CENTER",
                 "offset_pos": "CENTER",
                 "colour": "0xFF_FF_FF | (0xFF_00_00_00 & (0x01_00_00_00 * floor(0xFF * min(1, ((transition_duration <= 0.01) ? (0) : (time/transition_duration)) % image_interval  ))))",
