@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: -2.75d,
+	tasks: [{
+		uid: "54ba7507",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier3_space_suit_chest",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

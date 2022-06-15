@@ -1,0 +1,11 @@
+{
+	x: 4.5d,
+	y: -0.5d,
+	tasks: [{
+		uid: "c20d879c",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier3_un_prepared_space_suit_boots"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -11.75d,
+	y: 0.25d,
+	tasks: [{
+		uid: "6c9276ec",
+		type: "item",
+		items: [{
+			id: "powersuits:powerarmor_head",
+			tag: {
+				MMModItem: {
+					commonValues: {}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

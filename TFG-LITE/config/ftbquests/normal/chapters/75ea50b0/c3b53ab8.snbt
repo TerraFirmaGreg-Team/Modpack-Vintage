@@ -1,0 +1,12 @@
+{
+	x: -6.5d,
+	y: -1.0d,
+	tasks: [{
+		uid: "58bd1947",
+		type: "item",
+		items: [{
+			item: "mechtech:meta_armor 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

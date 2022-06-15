@@ -1,0 +1,11 @@
+{
+	x: 1.5d,
+	y: -3.5d,
+	tasks: [{
+		uid: "fb5301dd",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier2_un_prepared_space_suit_chest"
+		}]
+	}]
+}

@@ -28,11 +28,16 @@
 		uid: "a5a07fb6",
 		type: "item",
 		items: [{
-			id: "tfctech:powder/lime",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustLime"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f
+					id: "ore",
+					data: "dustLime"
 				}
 			}
 		}]
@@ -41,7 +46,18 @@
 		uid: "cdfb8c99",
 		type: "item",
 		items: [{
-			item: "tfctech:powder/potash"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustPotash"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustPotash"
+				}
+			}
 		}]
 	}]
 }

@@ -1,0 +1,18 @@
+{
+	x: -9.75d,
+	y: 0.25d,
+	tasks: [{
+		uid: "6e33d3c2",
+		type: "item",
+		items: [{
+			id: "powersuits:powerarmor_legs",
+			tag: {
+				MMModItem: {
+					commonValues: {}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

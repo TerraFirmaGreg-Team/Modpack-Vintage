@@ -1,0 +1,18 @@
+{
+	x: -8.75d,
+	y: 0.25d,
+	tasks: [{
+		uid: "ba87bff0",
+		type: "item",
+		items: [{
+			id: "powersuits:powerarmor_feet",
+			tag: {
+				MMModItem: {
+					commonValues: {}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
