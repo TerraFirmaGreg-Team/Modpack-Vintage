@@ -53,6 +53,8 @@
 * Supermartijn642configlib
 * Supermartijn642corelib
 * Movingelevators (Причина: есть алтернатива в RFTools)
+* FantasticLib
+* NoAdvancements
 ### Понижена версия
 * CustomSkinLoader(до стабильной)
 #### [Huge]
