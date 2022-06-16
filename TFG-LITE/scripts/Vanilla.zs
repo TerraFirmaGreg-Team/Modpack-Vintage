@@ -27,7 +27,8 @@ val RemoveItemRecipesByName = [
     "minecraft:iron_door",
     "minecraft:tripwire_hook",
     "minecraft:stick",
-    "minecraft:diamond_block"
+    "minecraft:diamond_block",
+    "minecraft:sign"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -288,6 +289,8 @@ forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 
 // Книжные полки
 extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
+arc_furnace.findRecipe(30, [<minecraft:bookshelf:0>], [<liquid:oxygen>]).remove();
+macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
 
 // Песок
 centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
@@ -353,6 +356,10 @@ bender.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:circuit.integrated>.wi
 
 // Поршень
 assembler.findRecipe(7, [<metaitem:stickIron>, <metaitem:gearSmallIron>, <tfc:slab/wood/maclura:0>, <chisel:cobblestone:0>], [<liquid:red_alloy> * 144]).remove();
+
+// Разбор железного люка
+arc_furnace.findRecipe(30, [<minecraft:iron_trapdoor:0>], [<liquid:oxygen> * 56]).remove();
+macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
 // --- Добавление рецептов
 
@@ -652,12 +659,6 @@ compressor.recipeBuilder()
 macerator.recipeBuilder()
     .inputs(<metaitem:bio_chaff>)
     .outputs(<tfc:dirt/basalt>)
-    .duration(300).EUt(2).buildAndRegister();
-
-// Книжные полки
-extractor.recipeBuilder()
-    .inputs(<ore:bookshelf>)
-    .outputs(<minecraft:book> * 3)
     .duration(300).EUt(2).buildAndRegister();
 
 // Кварцитовый песок -> Алмазы и тд.

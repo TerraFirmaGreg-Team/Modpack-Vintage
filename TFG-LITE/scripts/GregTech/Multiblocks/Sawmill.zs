@@ -69,6 +69,7 @@ recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
 ]);
 
 // Electric_saw_mill logs
+/*
 for i, log in TFC_Logs {
   saw_mill.recipeBuilder()
     .circuit(1)
@@ -89,5 +90,5 @@ for i, log in TFC_Logs {
     .duration(400)
     .EUt(7)
     .buildAndRegister();
-}
+}*/
 
