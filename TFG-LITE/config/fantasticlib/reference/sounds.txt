@@ -752,12 +752,12 @@ tfc:animal.jackal.say
 tfc:animal.jackal.hurt
 tfc:animal.jackal.death
 tfc:animal.feline.step
+rftools:teleport_whoosh
+rftools:teleport_error
 rftools:elevator_start
 rftools:elevator_loop
 rftools:elevator_stop
 rftools:scan
-rftools:teleport_whoosh
-rftools:teleport_error
 tfcthings:sharpen
 tfctech:rubbertapping.groove.fit
 tfctech:rubbertapping.mount.fit
