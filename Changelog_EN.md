@@ -21,10 +21,16 @@
 * Hidden and removed items from the ForgeMicroblocksCBE mod.
 * Fixed missing image when loading the game.
 * Now the ore chunks have 36, instead of 25 units of metal.
+* Fixed funnel texture
+* Changed font
+* CraftingTweaks replaced with dan's Crafting Tweaks
+* Corrections of the Russian translation GregTech
 ### Updating mods
 * Fluid Craft for AE2
 * Xaero's Minimap
 * Xaeros World Map
+* Fancy menu
+* TFG mod
 ### New mods
 * Item Physics Lite
 * RF Tools
@@ -32,7 +38,9 @@
 * mcjtylib
 * GregTech Food Option
 * Little Tiles
+* dan's Crafting Tweaks
 ### Removing Mods
+* CraftingTweaks
 * Chisel And Bits
 * Unlimited Chiselworks (Reason: does not have TFC support).
 * Unlimited Chiselworkstfc (Reason: although it adds partial support for TFC, but not full, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).

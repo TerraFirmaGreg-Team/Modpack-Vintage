@@ -27,10 +27,16 @@
 * Исправлена установка носика для латекса на Rubber Fig дерево.
 * Исправлены все рецепты связанные с деревом (в том числе исправление рецепта сундуков из досок и из пиломатериалов), а также добавлено больше рецептов для TFC деревянных предметов в ассемблере.
 * Теперь все куски руды можно переработать в пыли, в Horse Grindstone и Quern.
+* Исправлена текстура воронки
+* Изменен шрифт
+* CraftingTweaks заменен на dan's Crafting Tweaks
+* Корректировки русского перевода GregTech
 ### Обновление модов
 * Fluid Craft for AE2
 * Xaeros Minimap
 * Xaeros World Map
+* Fancymenu
+* TFG-mod
 ### Новые моды
 * Item Physics Lite
 * RFTools
@@ -38,7 +44,9 @@
 * mcjtylib
 * GregTech Food Option
 * Litte Tiles
+* dan's Crafting Tweaks
 ### Удаление модов
+* CraftingTweaks
 * Chisel And Bits
 * UnlimitedChiselWorks (Причина: не имеет поддержку TFC).
 * UnlimitedChiselWorksTFC (Причина: хоть и добавляет частичную поддержку TFC, но не полную, поэтому чуть позже мы представим собственный мод, который будет работать с TFC, TFC-Florae и другими аддонами).
