@@ -52,7 +52,8 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/rail/steel_minecart",
 	"tfc:paper",
 	"tfc:fire_clay",
-	"tfc:vanilla/cauldron"
+	"tfc:vanilla/cauldron",
+	"tfc:blast_furnace"
 ] as string[];
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
@@ -75,8 +76,7 @@ val RemoveRecipesInBarrel = [
 	"tfc:concrete_brown",
 	"tfc:concrete_green",
 	"tfc:concrete_red",
-	"tfc:concrete_black",
-	"tfc:blast_furnace"
+	"tfc:concrete_black"
 ] as string[];
 for item in RemoveRecipesInBarrel {
     recipes.removeByRecipeName(item);
@@ -470,7 +470,7 @@ for i, TFC_Slabs_Cobble in TFC_Slabs_Cobble {
     	.duration(200).EUt(7).buildAndRegister();
 }
 
-//Булыжник -> Ступенька
+// Булыжник -> Ступенька
 for i, TFC_Stairs_Cobble in TFC_Stairs_Cobble {
     assembler.recipeBuilder()
     	.inputs([TFC_Cobbles[i] * 6])

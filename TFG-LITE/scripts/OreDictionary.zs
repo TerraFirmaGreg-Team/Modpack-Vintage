@@ -73,13 +73,13 @@ for item in RemoveItemOre{
 }
 
 // add loom
-for item in TFC_Loom {
+for item in TFC_Looms {
 	<ore:loom>.add(item);
 }
 
 // Rock Types GT = Rock Types TFC
-//<ore:stoneBasalt>.add(<tfc:raw/basalt>);
-//<ore:stoneMarble>.add(<tfc:raw/marble>);
+// <ore:stoneBasalt>.add(<tfc:raw/basalt>);
+// <ore:stoneMarble>.add(<tfc:raw/marble>);
 
 // OreDicionary for all slab
 for item in TFC_Slabs_Smooth {
@@ -299,6 +299,9 @@ for item in TFC_Slabs_Smooth {
 <ore:boltIronAny>.add(<metaitem:boltIron>, <metaitem:boltWroughtIron>);
 <ore:screwIronAny>.add(<metaitem:screwIron>, <metaitem:screwWroughtIron>);
 <ore:rotorIronAny>.add(<metaitem:rotorIron>, <metaitem:rotorWroughtIron>);
+
+// BronzeAny Screws
+<ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
 
 // Chipped Gems from GT
 for item in Gem_Chipped {
@@ -520,7 +523,7 @@ for denseSmartCable in denseSmartCables {
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
 ////////////////////////////////////////////////////////
-// --- GC/GS/EP --- ////////////////////////////////////
+// --- GC/GS/EP --- ///////////////////////////////////////
 ////////////////////////////////////////////////////////
 
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
@@ -537,10 +540,10 @@ for denseSmartCable in denseSmartCables {
 <ore:oreCopper>.remove(<galacticraftplanets:mars>);
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
 <ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
+<ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
 <ore:oreCopper>.remove(<galaxyspace:barnarda_c_ores:7>);
 <ore:oreCopper>.remove(<galaxyspace:ioblocks:3>);
 <ore:oreCopper>.remove(<galaxyspace:proxima_b_blocks:7>);
-<ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
 
 // Tin
 <ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
@@ -557,13 +560,13 @@ for denseSmartCable in denseSmartCables {
 <ore:oreAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreAluminum>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreAluminum>.remove(<galacticraftplanets:venus:6>);
+<ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
+<ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
+<ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
 <ore:oreAluminum>.remove(<galaxyspace:barnarda_c_ores:9>);
 <ore:oreAluminum>.remove(<galaxyspace:marsores:5>);
 <ore:oreAluminum>.remove(<galaxyspace:haumeablocks:3>);
 <ore:oreAluminum>.remove(<galaxyspace:europablocks:5>);
-<ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
-<ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
-<ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
 
 // Nickel
 <ore:plateNickel>.remove(<galaxyspace:compressed_plates:3>);
@@ -583,6 +586,7 @@ for denseSmartCable in denseSmartCables {
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
 <ore:oreQuartz>.remove(<galaxyspace:barnarda_c_ores:10>);
 <ore:oreQuartz>.remove(<galaxyspace:mirandablocks:6>);
+
 
 // Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
@@ -648,6 +652,7 @@ for denseSmartCable in denseSmartCables {
 
 // Dolomite
 <ore:oreDolomite>.remove(<galaxyspace:mirandablocks:4>);
+
 
 ////////////////////////////////////////////////////////
 // --- Vanilla --- /////////////////////////////////////
