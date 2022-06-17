@@ -28,36 +28,20 @@
 		uid: "a5a07fb6",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustLime"
-				}
-			},
+			id: "tfctech:powder/lime",
 			ForgeCaps: {
 				Parent: {
-					id: "ore",
-					data: "dustLime"
+					ticks: -1L,
+					heat: 0.0f
 				}
 			}
 		}]
 	},
 	{
-		uid: "cdfb8c99",
+		uid: "56e754af",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustPotash"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustPotash"
-				}
-			}
+			item: "gregtech:meta_dust 1 352"
 		}]
 	}]
 }
