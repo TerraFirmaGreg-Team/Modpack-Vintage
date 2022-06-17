@@ -47,10 +47,8 @@ val AE2EL as IItemStack[] = [
 	<appliedenergistics2:smooth_sky_stone_slab>,
 	<appliedenergistics2:sky_stone_brick_slab>,
 	<appliedenergistics2:sky_stone_small_brick_slab>,
-	<appliedenergistics2:creative_storage_cell>,
 	<appliedenergistics2:encoded_pattern>,
 	<appliedenergistics2:material:45>,
-	<appliedenergistics2:creative_energy_cell>,
 	<appliedenergistics2:sky_stone_slab>,
 	<appliedenergistics2:sky_stone_small_brick_stairs>,
 	<appliedenergistics2:sky_stone_brick_stairs>,
@@ -64,35 +62,18 @@ for item in AE2EL {
 }
 
 val ExtraCells as IItemStack[] = [
-	// Fluid Storage Cells(deprecated)
-  	<extracells:storage.fluid>,
-	<extracells:storage.fluid:1>,
-	<extracells:storage.fluid:2>,
-	<extracells:storage.fluid:3>,
-	// Fluid Storage Component(deprecated)
-	<extracells:storage.component:4>,
-	<extracells:storage.component:5>,
-	<extracells:storage.component:6>,
-	<extracells:storage.component:7>,
-	// Deprecated panels
-	<extracells:part.base>,
-	<extracells:part.base:1>,
-	<extracells:part.base:2>,
-	<extracells:part.base:3>,
-	<extracells:part.base:4>,
-	<extracells:part.base:5>,
-	<extracells:part.base:6>,
-	<extracells:part.base:9>,
 	// Fluid Interface
-	<extracells:ecbaseblock>,
+	<aeadditions:ecbaseblock>,
 	// Certus Quartz Tank
-	<extracells:certustank>,
+	<aeadditions:certustank>,
 	// Fluid Vibration Chamber
-	<extracells:vibrantchamberfluid>,
+	<aeadditions:vibrantchamberfluid>,
 	// Wireless Fluid Terminal
-	<extracells:terminal.fluid.wireless>,
+	<aeadditions:terminal.fluid.wireless>,
 	// Wireless Universal Terminal
-	<extracells:terminal.universal.wireless>
+	<aeadditions:terminal.universal.wireless>,
+	// Gas Interface
+	<aeadditions:gas_interface>
 ];
 for item in ExtraCells {
   	JEI.removeAndHide(item);
@@ -2181,23 +2162,23 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier10_items:4>
 ] as IItemStack[];
 for item in ExtraPlanets {
-    JEI.removeAndHide(item);
+    // JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [
-    <metaitem:brick.adobe_fired>,
-    <metaitem:brick.adobe>,
+	<metaitem:brick.adobe_fired>,
+	<metaitem:brick.adobe>
 ];
 for item in GTFO {
     JEI.removeAndHide(item);
 }
 
 val MicroblocksCBE as IItemStack[] = [
-    <microblockcbe:microblock:1>,
+	<microblockcbe:microblock:1>,
 	<microblockcbe:saw_stone>,
 	<microblockcbe:saw_iron>,
 	<microblockcbe:saw_diamond>,
-    <microblockcbe:stone_rod>
+	<microblockcbe:stone_rod>
 ];
 for item in MicroblocksCBE {
     JEI.removeAndHide(item);

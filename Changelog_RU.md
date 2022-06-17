@@ -34,12 +34,16 @@
 * Исправлены невероятно тупые рецепты деревянных предметов из FirmaLife.
 * Все рецепты лодок были усложнены, чтобы выглядеть реалистичными.
 * Добавлены все типы дерева для распила в ChopperBlock из HorsePower.
+* Устранены навязчивые сообщения об ошибках, не приводящие к сбою
+* Увеличена дистанция поиска предмета и жидкости по кнопке из HEI
+* Исправлена текстура ДВС при активации
 ### Обновление модов
 * Fluid Craft for AE2
 * Xaeros Minimap
 * Xaeros World Map
 * Fancymenu
 * TFG-mod
+* LoliASM
 ### Новые моды
 * Item Physics Lite
 * RFTools
@@ -48,6 +52,8 @@
 * GregTech Food Option
 * Litte Tiles
 * dan's Crafting Tweaks
+* AEAdditions
+* DefaultOptions
 ### Удаление модов
 * CraftingTweaks
 * Chisel And Bits
@@ -58,6 +64,7 @@
 * Movingelevators (Причина: есть алтернатива в RFTools)
 * FantasticLib
 * NoAdvancements
+* ExtraCells (Причина: мод заменен на AEAdditions, такой же форк, но обновляется, если у вас есть ячейки выше 64К(ExtraCells), рекомендую вытащить все из них, перед обновлением)
 ### Понижена версия
 * CustomSkinLoader(до стабильной)
 #### [Huge]
