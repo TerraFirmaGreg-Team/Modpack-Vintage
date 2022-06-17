@@ -1,8 +1,10 @@
 import crafttweaker.item.IItemStack;
 
+import mods.terrafirmacraft.ItemRegistry;
+
 val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamond>;
 
-// --- Removing Recipes
+// --- Удаление рецептов
 
 // Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
@@ -118,75 +120,89 @@ arc_furnace.findRecipe(30, [<minecraft:golden_horse_armor:0>], [<liquid:oxygen> 
 // Деревянный ящик
 assembler.findRecipe(16, [<metaitem:plateWood> * 4, <metaitem:screwIron> * 4, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
-// --- Adding Recipes
+// --- Добавление рецептов
 
-// Bronze Forge Hammer
+// Регистрация металлов
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeCopper>, "COPPER", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBismuthBronze>, "BISMUTH_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBronze>, "BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlackBronze>, "BLACK_BRONZE", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeWroughtIron>, "WROUGHT_IRON", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeSteel>, "STEEL", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlackSteel>, "BLACK_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeRedSteel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 144, true);
+
+// Люк коксовой печи
+recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
+
+// Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, 
     [[<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallFluidBronze>]]);
  
-// Steam Forge Hammer
+// Стальной паровой молот
 recipes.addShaped("tfg/gregtech/steam_forge_hammer", <metaitem:steam_hammer_steel>,
     [[<ore:pipeSmallFluidSteel>, <ore:craftingPiston>, <ore:pipeSmallFluidSteel>],
     [<ore:pipeSmallFluidSteel>, <gregtech:steam_casing:2>, <ore:pipeSmallFluidSteel>],
     [<ore:pipeSmallFluidSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallFluidSteel>]]);
 
-// Compressed coke clay
+// Скомпрессированная глина
 recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke_clay> * 3,
     [[<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
     [<ore:sand>, <gregtech:meta_item_1:348>, <ore:sand>],
     [<ore:sand>, <ore:sand>, <ore:sand>]]);
 
-// Wooden Form
+// Деревянная форма
 recipes.addShaped("tfg/gregtech/wooden_form", <metaitem:wooden_form.empty>,
     [[null, <ore:lumber>, null],
     [null, <ore:lumber>, null],
     [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
 
-// Small Steam Coal Boiler
+// Бронзовый малый бойлер
 recipes.addShaped("tfg/gregtech/small_steam_coal_boiler", <metaitem:steam_boiler_coal_bronze>,
     [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
     [<ore:plateBronze>, <ore:gtce.tool.wrenches>, <ore:plateBronze>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
-// High Pressure Coal Boiler
+// Стальной малый бойлер
 recipes.addShaped("tfg/gregtech/high_pressure_coal_boiler", <metaitem:steam_boiler_coal_steel>,
     [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:gtce.tool.wrenches>, <ore:plateSteel>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
-// Steam Furnace
+// Бронзовая паровая печь
 recipes.addShaped("tfg/gregtech/steam_furnace", <metaitem:steam_furnace_bronze>,
     [[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing:1>,<ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <tfc:blast_furnace>, <ore:pipeSmallFluidBronze>]]);
 
-// Steam Alloy Smelter
+// Бронзовый паровой сплавщик
 recipes.addShaped("tfg/gregtech/steam_alloy_smelter", <metaitem:steam_alloy_smelter_bronze>,
     [[<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
     [<tfc:blast_furnace>, <gregtech:steam_casing:1>, <tfc:blast_furnace>],
     [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>]]);
 
-// Blast Furnace
+// Доменная печь
 recipes.addShaped("tfg/gregtech/ebf", <metaitem:electric_blast_furnace>,
     [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
     [<ore:circuitLv>, <gregtech:metal_casing:2>, <ore:circuitLv>],
     [<ore:cableGtSingleTin>, <ore:circuitLv>, <ore:cableGtSingleTin>]]);
 
-// Multi-Smelter
+// Мульти-печь
 recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>,
     [[<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
     [<ore:circuitHv>, <gregtech:metal_casing:2>, <ore:circuitHv>],
     [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
 
-// Crafting Station
+// Стацния создания
 recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>,
     [[<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
-// LV Machine Casing
+// LV Корпус машины
 recipes.addShaped("tfg/gregtech/lv_machine_casing", <gregtech:machine_casing:1>,
     [[<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
     [<ore:plateBlueSteel>, <ore:gtce.tool.wrenches>, <ore:plateBlueSteel>],
@@ -262,16 +278,6 @@ recipes.addShaped("tfg/gregtech/wooden_crate", <metaitem:crate.wood>,
     [[<ore:screwIronAny>, <ore:planks>, <ore:screwIronAny>],
     [<ore:planks>, <ore:gtce.tool.saws>, <ore:planks>],
     [<ore:screwIronAny>, <ore:planks>, <ore:screwIronAny>]]);
-/*
-// 
-recipes.addShaped("tfg/gregtech/", null,
-    [[null, null, null],
-    [null, null, null],
-    [null, null, null]]);
-*/
-
-// Люк коксовой печи
-recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
 // Блокнот
 recipes.addShaped("tfg/gregtech/clipboard", <metaitem:clipboard>,

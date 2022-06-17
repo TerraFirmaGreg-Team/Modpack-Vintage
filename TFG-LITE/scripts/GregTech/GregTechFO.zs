@@ -77,8 +77,6 @@ forming_press.findRecipe(30, [<tfc:sand/diorite:0> * 3, <tfc:gravel/phyllite:0> 
 // Register Food Stats for TFC
 // ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 
-ItemRegistry.registerFood(<metaitem:food.sandwich.bacon>, 5, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0);
-
 // Adobe Bricks
 recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
     [[<ore:mudBrick>, <ore:mudBrick>, null],
@@ -88,7 +86,7 @@ recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
 // Baking Oven
 recipes.addShaped("tfg/gtfo/baking_oven", <metaitem:gregtechfoodoption:baking_oven>,
     [[<ore:gtce.tool.screwdrivers>, <ore:screwIronAny>, <ore:screwIronAny>],
-    [<ore:sticktIronAny>, <ore:sticktIronAny>, <gregtechfoodoption:gtfo_casing>],
+    [<ore:stickIronAny>, <ore:stickIronAny>, <gregtechfoodoption:gtfo_casing>],
     [<ore:gtce.tool.files>, <ore:screwIronAny>, <ore:screwIronAny>]]);
 
 // --- Apple Slice

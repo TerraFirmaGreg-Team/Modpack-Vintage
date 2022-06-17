@@ -2,11 +2,9 @@ import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.ItemRegistry;
 
-// --- Удаление рецептов
+// --- Массивы
 
-// Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
-    // Leather Armor
     <minecraft:leather_helmet>,
     <minecraft:leather_chestplate>,
     <minecraft:leather_leggings>,
@@ -15,11 +13,7 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:enchanting_table>,
     <minecraft:name_tag>
 ] as IItemStack[];
-for item in ItemsToRemove{
-    recipes.remove(item);
-}
 
-// Поименное удаление рецептов
 val RemoveItemRecipesByName = [
     "minecraft:stone_pressure_plate",
     "minecraft:light_weighted_pressure_plate",
@@ -30,16 +24,26 @@ val RemoveItemRecipesByName = [
     "minecraft:diamond_block",
     "minecraft:sign"
 ] as string[];
-for item in RemoveItemRecipesByName{
-    recipes.removeByRecipeName(item);
-}
 
-// Удаление рецептов печи
 val ItemsToRemoveFromFurnace as IItemStack[] = [
     <minecraft:dye:2>,
     <minecraft:stone>,
     <minecraft:gold_nugget>
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
+for item in ItemsToRemove{
+    recipes.remove(item);
+}
+
+// Поименное удаление рецептов
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
+
+// Удаление рецептов печи
 for item in ItemsToRemoveFromFurnace {
     furnace.remove(item);
 }
@@ -372,11 +376,11 @@ compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamo
 compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
 
 // Водная хрень
-recipes.addShapeless(<minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
-recipes.addShapeless(<minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
-recipes.addShapeless(<minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
-recipes.addShapeless(<minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
+recipes.addShapeless("tfg/vanilla/prismarine/block_raw_0", <minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
+recipes.addShapeless("tfg/vanilla/prismarine/block_raw_1", <minecraft:prismarine>, [<ore:blockQuartz>, <ore:dyeCyan>]);
+recipes.addShapeless("tfg/vanilla/prismarine/bricks", <minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
+recipes.addShapeless("tfg/vanilla/prismarine/sea_lantern", <minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
+recipes.addShapeless("tfg/vanilla/prismarine/dark", <minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
 
 // Раздатчик
 recipes.addShaped("tfg/vanilla/dispenser", <minecraft:dispenser>,
