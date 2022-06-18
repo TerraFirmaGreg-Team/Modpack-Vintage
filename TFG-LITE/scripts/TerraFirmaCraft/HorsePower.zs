@@ -18,6 +18,8 @@ for item in RemoveRecipesFromGrindstone {
     Grindstone.remove(item);
 }
 
+furnace.remove(<minecraft:bread>);
+
 // --- Добавление рецептов
 
 // Дерево -> Пиломатериалы

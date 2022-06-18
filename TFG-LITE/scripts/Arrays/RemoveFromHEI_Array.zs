@@ -47,8 +47,10 @@ val AE2EL as IItemStack[] = [
 	<appliedenergistics2:smooth_sky_stone_slab>,
 	<appliedenergistics2:sky_stone_brick_slab>,
 	<appliedenergistics2:sky_stone_small_brick_slab>,
+	<appliedenergistics2:creative_storage_cell>,
 	<appliedenergistics2:encoded_pattern>,
 	<appliedenergistics2:material:45>,
+	<appliedenergistics2:creative_energy_cell>,
 	<appliedenergistics2:sky_stone_slab>,
 	<appliedenergistics2:sky_stone_small_brick_stairs>,
 	<appliedenergistics2:sky_stone_brick_stairs>,
@@ -56,8 +58,6 @@ val AE2EL as IItemStack[] = [
 	<appliedenergistics2:sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_small_brick>,
 	<appliedenergistics2:sky_stone_brick>,
-	<appliedenergistics2:creative_energy_cell>,
-	<appliedenergistics2:creative_storage_cell>
 ] as IItemStack[];
 for item in AE2EL {
     JEI.removeAndHide(item);
@@ -80,7 +80,7 @@ val AEAdditions as IItemStack[] = [
 	<aeadditions:pattern.fluid>.withTag({})
 ];
 for item in AEAdditions {
-		JEI.removeAndHide(item);
+  	JEI.removeAndHide(item);
 }
 
 val Galacticraft as IItemStack[] = [
@@ -1345,7 +1345,6 @@ val Vanilla as IItemStack[] = [
     <minecraft:emerald_ore>,
     <minecraft:quartz_ore>,
     // Food
-	/*
     <minecraft:apple>,
     <minecraft:mushroom_stew>,
     <minecraft:bread>,
@@ -1376,7 +1375,7 @@ val Vanilla as IItemStack[] = [
     <minecraft:cooked_mutton>,
     <minecraft:beetroot>,
     <minecraft:beetroot_soup>,
-    <minecraft:double_plant:2>,*/
+    <minecraft:double_plant:2>,
     // Tools
     <minecraft:diamond_pickaxe>,
     <minecraft:golden_pickaxe>,
@@ -2166,23 +2165,24 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier10_items:4>
 ] as IItemStack[];
 for item in ExtraPlanets {
-    // JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [
-	<metaitem:brick.adobe_fired>,
-	<metaitem:brick.adobe>
+    <metaitem:brick.adobe_fired>,
+    <metaitem:brick.adobe>,
+	<metaitem:food.potato_on_a_stick>
 ];
 for item in GTFO {
     JEI.removeAndHide(item);
 }
 
 val MicroblocksCBE as IItemStack[] = [
-	<microblockcbe:microblock:1>,
+    <microblockcbe:microblock:1>,
 	<microblockcbe:saw_stone>,
 	<microblockcbe:saw_iron>,
 	<microblockcbe:saw_diamond>,
-	<microblockcbe:stone_rod>
+    <microblockcbe:stone_rod>
 ];
 for item in MicroblocksCBE {
     JEI.removeAndHide(item);
