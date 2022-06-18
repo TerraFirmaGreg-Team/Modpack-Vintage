@@ -930,7 +930,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_1k_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <extracells:storage.casing:1>,
     <appliedenergistics2:material:54>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_1k>])
@@ -943,7 +943,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_4k_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <extracells:storage.casing:1>,
     <appliedenergistics2:material:55>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_4k>])
@@ -956,7 +956,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_16k_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <extracells:storage.casing:1>,
     <appliedenergistics2:material:56>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_16k>])
@@ -969,7 +969,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_64k_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <extracells:storage.casing:1>,
     <appliedenergistics2:material:57>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_64k>])
@@ -982,7 +982,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_2_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:0>,
+    <extracells:storage.casing:0>,
     <appliedenergistics2:material:32>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_2_cubed>])
@@ -995,7 +995,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_16_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:0>,
+    <extracells:storage.casing:0>,
     <appliedenergistics2:material:33>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_16_cubed>])
@@ -1008,7 +1008,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_128_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:0>,
+    <extracells:storage.casing:0>,
     <appliedenergistics2:material:34>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_128_cubed>])
