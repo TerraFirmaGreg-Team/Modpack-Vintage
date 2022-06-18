@@ -45,6 +45,7 @@
 * Fancymenu
 * TFG-mod
 * LoliASM
+* HadEnoughItems
 ### Новые моды
 * Item Physics Lite
 * RFTools
@@ -63,8 +64,6 @@
 * Supermartijn642configlib
 * Supermartijn642corelib
 * Movingelevators (Причина: есть алтернатива в RFTools)
-* FantasticLib
-* NoAdvancements
 * ExtraCells (Причина: мод заменен на AEAdditions, такой же форк, но обновляется, если у вас есть ячейки выше 64К(ExtraCells), рекомендую вытащить все из них, перед обновлением)
 ### Понижена версия
 * CustomSkinLoader(до стабильной)

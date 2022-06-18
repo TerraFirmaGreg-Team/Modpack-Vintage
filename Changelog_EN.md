@@ -4,33 +4,48 @@
 #### [Lite, Huge]
 ### Modpack Fixes
 * Added RFTools to the Lite version of the modpack.
-* A well-developed GregTech Food Option is installed to replace Pam's HarvestCraft.
-* Greg Tech Food Option recipes have been rewritten.
-* Little Tikes recipes have been rewritten.
-* Fixed a display error in TheOneProbe when hovering on items.
-* Now the recipes in which wrought or pure iron was used are combined, it is logical that only those that logically can be interchangeable, this is done both in the workbench and in GT machines.
+* Pam's HarvestCraft has been replaced with the elaborate GregTech Food Option.
+* Rewritten GregTech Food Option recipes.
+* Little Tiles recipes have been rewritten.
+* Fixed display error in TheOneProbe when hovering over items.
+* Now recipes that used wrought iron or bare iron are merged, it makes sense that only those that can logically be interchangeable are made in both the workbench and GT machines.
 * Disabled drop from mobs from the TombStone mod (in HEI some items of this mod are still displayed, for some reason HEI cannot hide them, so this cannot be fixed yet).
-* Fixed display in HEI that 100mb of metal could be poured into the form of TFC or its addon, now 144mb is displayed there.
-* Fixed a bug where it was impossible to craft the ring and gear parts for primitive gear crafting.
-* TFC javelin heads now has 144mb as intended.
-* Fixed some metal values for TFC-Tech items.
+* Fixed display in HEI that 100mb of metal could be poured into the form of TFC or its addon, now 144 is displayed there.
+* Fixed a bug where it was impossible to scrape the ring and gear parts for primitive gear crafting.
+* TFC spear headband now has 144mb ​​as intended.
+* Fixed some metal values ​​for TFC-Tech items.
 * Fixed the metal value of the metal grate.
 * Removed diamond and gold horse armor.
 * Completely rewritten script Vanilla.zs.
 * Hidden and removed HammerCore mod items.
 * Hidden and removed items from the ForgeMicroblocksCBE mod.
 * Fixed missing image when loading the game.
-* Now the ore chunks have 36, instead of 25 units of metal.
+* Ore pieces now have 36 metal instead of 25.
+* Complicated compass recipe.
+* Disabled item color display in HEI.
+* Changed bucket system. Previously, you could not make a bucket from ordinary iron, but why? That's what the TFC developers wanted. But we have our own modpack and our own recipes, from now on you can make a bucket that can carry any liquid except lava, for lava you still need a blue steel bucket that will not melt from lava.
+* Fixed installation of a spout for latex on the Rubber Fig tree.
+* Fixed all recipes related to wood (including fixing the recipe for chests made of planks and lumber), and added more recipes for TFC wooden items in assembler.
+* All ores can now be processed into Dust, Horse Grindstone and Quern.
 * Fixed funnel texture
-* Changed font
-* CraftingTweaks replaced with dan's Crafting Tweaks
-* Corrections of the Russian translation GregTech
+* Changed the font.
+* CraftingTweaks replaced with dan's Crafting Tweaks.
+* Adjustments to the Russian translation of GregTech.
+* Fixed incredibly stupid recipes for wooden items from FirmaLife.
+* All boat recipes have been complicated to look realistic.
+* Added all types of wood for sawing in ChopperBlock from HorsePower.
+* Fixed annoying non-crash error messages
+* Increased the search distance for the item and liquid on the button from HEI
+* Fixed ICE texture when activated.
+* Now coking coal cannot be used in the TFC forge, but only in the TFC blast furnace, it also has an increased temperature to which it can heat the metal (1510).
 ### Updating mods
 * Fluid Craft for AE2
 * Xaero's Minimap
 * Xaeros World Map
 * Fancy menu
 * TFG mod
+* LoliASM
+* HadEnoughItems
 ### New mods
 * Item Physics Lite
 * RF Tools
@@ -39,6 +54,8 @@
 * GregTech Food Option
 * Little Tiles
 * dan's Crafting Tweaks
+* AEAdditions
+* DefaultOptions
 ### Removing Mods
 * CraftingTweaks
 * Chisel And Bits
@@ -47,8 +64,7 @@
 * Supermartijn642configlib
 * Supermartijn642corelib
 * Movingelevators (Reason: there is an alternative in RFTools)
-* FantasticLib
-* NoAdvancements
+* ExtraCells (Reason: the mod has been replaced with Additions, the same fork, but updated, if you have cells above 64K (ExtraCells), I recommend pulling all of them before updating)
 ### Downgraded version
 * Custom Skin Loader(up to Stable)
 #### [Huge]
