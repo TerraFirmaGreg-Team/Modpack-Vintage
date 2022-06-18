@@ -217,7 +217,6 @@ var certusQuartz =  <ore:gemCertusQuartz>;
 var fluixCrystal = <ore:crystalFluix>;
 
 //Удаление + скрытие
-mods.jei.JEI.removeAndHide(<rftools:coalgenerator>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:graphics_card>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:network_card>);
 mods.jei.JEI.removeAndHide(<rftoolscontrol:ram_chip>);
