@@ -1,28 +1,46 @@
 import crafttweaker.item.IItemStack;
 
-// --- Recipes Removing
+// --- Массивы
 
-// Удаление рецептов
-val RemoveItemRecipes as IItemStack[] = [
-  <aeadditions:storage.casing>,
-  <aeadditions:storage.casing:1>,
-  <aeadditions:storage.component>,
-  <aeadditions:storage.component:1>,
-  <aeadditions:storage.component:2>,
-  <aeadditions:storage.component:3>,
-  <aeadditions:storage.component:8>,
-  <aeadditions:storage.component:9>,
-  <aeadditions:storage.component:10>,
-  <aeadditions:part.base:12>,
-  <aeadditions:fluidcrafter>,
-  <aeadditions:part.base:7>,
-  <aeadditions:part.base:8>,
-  <aeadditions:hardmedrive>
-];
-for item in RemoveItemRecipes {
-    recipes.remove(item);
+val RemoveItemRecipesByName = [
+  "aeadditions:parts/oredictexportbus",
+  "aeadditions:misc/hardmedrive",
+  "aeadditions:misc/fluidcrafter",
+  "aeadditions:storagecells/fluid/e2acasing",
+  "aeadditions:storagecells/case/fluid",
+  "aeadditions:storagecells/case/item",
+  "aeadditions:storagecomponent/item/256k",
+  "aeadditions:storagecomponent/item/1024k",
+  "aeadditions:storagecomponent/item/4096k",
+  "aeadditions:storagecomponent/item/16384k",
+  "aeadditions:storagecells/case/item",
+  "aeadditions:storagecomponent/fluid/256k",
+  "aeadditions:storagecomponent/fluid/1024k",
+  "aeadditions:storagecomponent/fluid/4096k",
+  "aeadditions:storagecells/item/owncasing/256k",
+  "aeadditions:storagecells/item/extracasing/256k",
+  "aeadditions:storagecells/item/owncasing/1024k",
+  "aeadditions:storagecells/item/extracasing/1024k",
+  "aeadditions:storagecells/item/owncasing/4096k",
+  "aeadditions:storagecells/item/extracasing/4096k",
+  "aeadditions:storagecells/item/owncasing/16384k",
+  "aeadditions:storagecells/item/extracasing/16384k",
+  "aeadditions:storagecells/fluid/owncasing/256k",
+  "aeadditions:storagecells/fluid/extracasing/256k",
+  "aeadditions:storagecells/fluid/owncasing/1024k",
+  "aeadditions:storagecells/fluid/extracasing/1024k",
+  "aeadditions:storagecells/fluid/owncasing/4096k",
+  "aeadditions:storagecells/fluid/extracasing/4096k"
+] as string[];
+
+// --- Удаление рецептов
+
+// Поименное удаление рецептов
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
 }
-// --- Recipes Adding
+
+// --- Добавление рецептов
 
 // Fluid Storage Housing
 assembler.recipeBuilder()
@@ -34,6 +52,14 @@ assembler.recipeBuilder()
 	])
 	.outputs(<aeadditions:storage.casing:1>)
 	.duration(20).EUt(480).buildAndRegister();
+
+// Recycle - Fluid Storage Housing
+macerator.recipeBuilder()
+  .inputs([<aeadditions:storage.casing:1>])
+  .outputs([<metaitem:dustStainlessSteel>])
+  .duration(100)
+  .EUt(16)
+  .buildAndRegister();
 
 // Advanced Storage Housing
 assembler.recipeBuilder()
@@ -50,14 +76,6 @@ assembler.recipeBuilder()
 macerator.recipeBuilder()
   .inputs([<aeadditions:storage.casing>])
   .outputs([<metaitem:dustTungstenSteel>])
-  .duration(100)
-  .EUt(16)
-  .buildAndRegister();
-
-// Recycle - Fluid Housing
-macerator.recipeBuilder()
-  .inputs([<aeadditions:storage.casing:1>])
-  .outputs([<metaitem:dustStainlessSteel>])
   .duration(100)
   .EUt(16)
   .buildAndRegister();
@@ -171,7 +189,7 @@ assembler.recipeBuilder()
     <appliedenergistics2:material:24>
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:8>])
+  .outputs([<aeadditions:storage.component:4>])
   .duration(200)
   .EUt(122880)
   .buildAndRegister();
@@ -182,7 +200,7 @@ assembler.recipeBuilder()
     <appliedenergistics2:material:57> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:8>])
+  .outputs([<aeadditions:storage.component:4>])
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
@@ -207,7 +225,7 @@ assembler.recipeBuilder()
     <aeadditions:storage.component:8> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:9>])
+  .outputs([<aeadditions:storage.component:5>])
   .duration(400)
   .EUt(122880)
   .buildAndRegister();
@@ -221,7 +239,7 @@ assembler.recipeBuilder()
     <appliedenergistics2:material:23>
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:10>])
+  .outputs([<aeadditions:storage.component:6>])
   .duration(200)
   .EUt(491520)
   .buildAndRegister();
@@ -232,14 +250,12 @@ assembler.recipeBuilder()
     <aeadditions:storage.component:9> * 4
   ])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:10>])
+  .outputs([<aeadditions:storage.component:6>])
   .duration(400)
   .EUt(491520)
   .buildAndRegister();
 
 // 256k Storage Cell
-recipes.removeByRecipeName("aeadditions:storagecells/item/owncasing/256k");
-recipes.removeByRecipeName("aeadditions:storagecells/item/extracasing/256k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:0>,
@@ -251,8 +267,6 @@ packer.recipeBuilder()
   .buildAndRegister();
 
 // 1024k Storage Cell
-recipes.removeByRecipeName("aeadditions:storagecells/item/owncasing/1024k");
-recipes.removeByRecipeName("aeadditions:storagecells/item/extracasing/1024k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:0>,
@@ -264,8 +278,6 @@ packer.recipeBuilder()
   .buildAndRegister();
 
 // 4096k Storage Cell
-recipes.removeByRecipeName("aeadditions:storagecells/item/owncasing/4096k");
-recipes.removeByRecipeName("aeadditions:storagecells/item/extracasing/4096k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:0>,
@@ -277,8 +289,6 @@ packer.recipeBuilder()
   .buildAndRegister();
 
 // 16384k Storage Cell
-recipes.removeByRecipeName("aeadditions:storagecells/item/owncasing/16384k");
-recipes.removeByRecipeName("aeadditions:storagecells/item/extracasing/16384k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:0>,
@@ -290,40 +300,34 @@ packer.recipeBuilder()
   .buildAndRegister();
 
 // 256k Fluid Cell
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/owncasing/256k");
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/extracasing/256k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:1>,
-    <aeadditions:storage.component:8>
+    <aeadditions:storage.component:5>
   ])
-  .outputs([<aeadditions:storage.fluid:4>])
+  .outputs([<aeadditions:storage.fluid:0>])
   .duration(10)
   .EUt(7)
   .buildAndRegister();
 
 // 1024k Fluid Cell
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/owncasing/1024k");
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/extracasing/1024k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:1>,
-    <aeadditions:storage.component:9>
+    <aeadditions:storage.component:6>
   ])
-  .outputs([<aeadditions:storage.fluid:5>])
+  .outputs([<aeadditions:storage.fluid:1>])
   .duration(10)
   .EUt(7)
   .buildAndRegister();
 
 // 4096k Fluid Cell
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/owncasing/4096k");
-recipes.removeByRecipeName("aeadditions:storagecells/fluid/extracasing/4096k");
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:1>,
-    <aeadditions:storage.component:10>
+    <aeadditions:storage.component:6>
   ])
-  .outputs([<aeadditions:storage.fluid:6>])
+  .outputs([<aeadditions:storage.fluid:2>])
   .duration(10)
   .EUt(7)
   .buildAndRegister();

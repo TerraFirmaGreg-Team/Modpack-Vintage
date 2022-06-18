@@ -56,6 +56,8 @@ furnace.remove(<minecraft:redstone>, <minecraft:redstone_ore>);
 furnace.remove(<minecraft:diamond>, <minecraft:diamond_ore>);
 furnace.remove(<minecraft:emerald>, <minecraft:emerald_ore>);
 
+// --- Добавление рецептов
+
 // Верстак
 assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 

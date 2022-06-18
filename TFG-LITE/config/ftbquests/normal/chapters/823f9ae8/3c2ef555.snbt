@@ -1,20 +1,25 @@
 {
 	title: "{tfg.quests.primitive.file.title}",
-	x: -15.0d,
+	x: -16.0d,
 	y: -6.5d,
 	description: "{tfg.quests.primitive.file.subtitle}",
 	dependencies: [
-		"734b42fd"
+		"acf7d08d"
 	],
 	tasks: [{
 		uid: "9530d4b2",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 9s,
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
+				display: {
+					Name: "Any gtce.tool.files"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "gtce.tool.files"
 				}
 			}
 		}],

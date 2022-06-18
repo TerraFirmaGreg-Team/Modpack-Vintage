@@ -144,7 +144,7 @@
                 "text": "has_tips() ? tip(floor(time / 8)) : ''",
                 "position_type": "BOTTOM_CENTER",
                 "offset_pos": "BOTTOM_CENTER",
-                "position": { "x": 0, "y": -12 }
+                "position": { "x": 0, "y": -14 }
             }
         }
     ],

@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.primitive.knifegt.title}",
-	x: -17.0d,
-	y: -6.5d,
+	x: -22.0d,
+	y: -5.5d,
 	description: "{tfg.quests.primitive.knifegt.subtitle}",
 	dependencies: [
-		"734b42fd"
+		"57406373"
 	],
 	tasks: [{
 		uid: "b0371eaa",

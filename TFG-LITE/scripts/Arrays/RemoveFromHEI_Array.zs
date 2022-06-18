@@ -56,27 +56,31 @@ val AE2EL as IItemStack[] = [
 	<appliedenergistics2:sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_small_brick>,
 	<appliedenergistics2:sky_stone_brick>,
+	<appliedenergistics2:creative_energy_cell>,
+	<appliedenergistics2:creative_storage_cell>
 ] as IItemStack[];
 for item in AE2EL {
     JEI.removeAndHide(item);
 }
 
-val ExtraCells as IItemStack[] = [
+val AEAdditions as IItemStack[] = [
 	// Fluid Interface
-	<aeadditions:ecbaseblock>,
+	<aeadditions:part.base:2>,
 	// Certus Quartz Tank
 	<aeadditions:certustank>,
 	// Fluid Vibration Chamber
 	<aeadditions:vibrantchamberfluid>,
 	// Wireless Fluid Terminal
-	<aeadditions:terminal.fluid.wireless>,
+	<aeadditions:terminal.fluid.wireless>.withTag({}),
 	// Wireless Universal Terminal
-	<aeadditions:terminal.universal.wireless>,
+	<aeadditions:terminal.universal.wireless>.withTag({}),
 	// Gas Interface
-	<aeadditions:gas_interface>
+	<aeadditions:gas_interface>,
+	// Паттерн
+	<aeadditions:pattern.fluid>.withTag({})
 ];
-for item in ExtraCells {
-  	JEI.removeAndHide(item);
+for item in AEAdditions {
+		JEI.removeAndHide(item);
 }
 
 val Galacticraft as IItemStack[] = [

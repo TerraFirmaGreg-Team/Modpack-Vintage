@@ -9,7 +9,7 @@
 		uid: "aa46b21b",
 		type: "item",
 		items: [{
-			item: "extracells:part.base 1 8"
+			item: "aeadditions:part.base 1 1"
 		}]
 	}]
 }

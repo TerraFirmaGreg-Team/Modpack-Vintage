@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.space.era.title}",
-	icon: "galacticraftcore:rocket_t1",
+	icon: "planetprogression:satellite_basic",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"
