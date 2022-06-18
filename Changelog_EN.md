@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 3.3.5 - Expected 18.06.2022
+## Version 3.3.5 - 18.06.2022
 #### [Lite, Huge]
 ### Modpack Fixes
 * Added RFTools to the Lite version of the modpack.
