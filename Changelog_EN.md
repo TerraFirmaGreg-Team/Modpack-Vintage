@@ -30,7 +30,6 @@
 * All ores can now be processed into Dust, Horse Grindstone and Quern.
 * Fixed funnel texture
 * Changed the font.
-* CraftingTweaks replaced with dan's Crafting Tweaks.
 * Adjustments to the Russian translation of GregTech.
 * Fixed incredibly stupid recipes for wooden items from FirmaLife.
 * All boat recipes have been complicated to look realistic.
@@ -60,11 +59,9 @@
 * mcjtylib
 * GregTech Food Option
 * Little Tiles
-* dan's Crafting Tweaks
 * AEAdditions
 * DefaultOptions
 ### Removing Mods
-* CraftingTweaks
 * Chisel And Bits
 * Unlimited Chiselworks (Reason: does not have TFC support).
 * Unlimited Chiselworkstfc (Reason: although it adds partial support for TFC, but not full, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).

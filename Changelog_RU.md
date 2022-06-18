@@ -29,7 +29,6 @@
 * Теперь все куски руды можно переработать в пыли, в Horse Grindstone и Quern.
 * Исправлена текстура воронки
 * Изменен шрифт.
-* CraftingTweaks заменен на dan's Crafting Tweaks.
 * Корректировки русского перевода GregTech.
 * Исправлены невероятно тупые рецепты деревянных предметов из FirmaLife.
 * Все рецепты лодок были усложнены, чтобы выглядеть реалистичными.
@@ -59,11 +58,9 @@
 * mcjtylib
 * GregTech Food Option
 * Litte Tiles
-* dan's Crafting Tweaks
 * AEAdditions
 * DefaultOptions
 ### Удаление модов
-* CraftingTweaks
 * Chisel And Bits
 * UnlimitedChiselWorks (Причина: не имеет поддержку TFC).
 * UnlimitedChiselWorksTFC (Причина: хоть и добавляет частичную поддержку TFC, но не полную, поэтому чуть позже мы представим собственный мод, который будет работать с TFC, TFC-Florae и другими аддонами).
