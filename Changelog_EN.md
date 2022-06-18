@@ -1,5 +1,5 @@
 # Changelog
-## Version R3.3.5-HotFix - 06/18/2022
+## Version R3.3.5b-HotFix - 06/18/2022
 #### [Lite, Huge]
 ### Modpack fixes
 * AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
