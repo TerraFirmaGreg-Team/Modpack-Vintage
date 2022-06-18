@@ -39,7 +39,6 @@
 * Increased the search distance for the item and liquid on the button from HEI
 * Fixed ICE texture when activated.
 * Now coking coal cannot be used in the TFC forge, but only in the TFC blast furnace, it also has an increased temperature to which it can heat the metal (1510).
-* Changed the recipe of space stations.
 * Crafting Aunis transport rings has become cheaper, commensurate with the benefits.
 * You can craft PowerSuite armor, modules will be available in the next update.
 * Craft ender tank and backpack has become more expensive.
