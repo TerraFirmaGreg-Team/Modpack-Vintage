@@ -1,7 +1,8 @@
 import mods.inworldcrafting.FluidToItem;
 import crafttweaker.item.IItemStack;
 
-// Удаление рецептов
+// --- Массивы
+
 val RemoveWorkbenchRecipes as IItemStack[] = [
 	<powersuits:power_fist>,
 	<powersuits:powerarmor_feet>,
@@ -34,50 +35,56 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<powersuits:powerarmorcomponent:21>,
 	<powersuits:tinkertable>
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in RemoveWorkbenchRecipes {
     recipes.remove(item);
 }
 
+// --- Добавление рецептов
+
 // Шлем
 starforge.recipeBuilder()
-      .inputs(<metaitem:qts.helmet>)
-      .fluidInputs([<liquid:fresh_water> * 1000])
-      .outputs(<powersuits:powerarmor_head>)
-      .duration(20000)
-      .EUt(122880)
-      .buildAndRegister();
+	.inputs(<metaitem:qts.helmet>, <extraplanets:tier4_space_suit_helmet:100>, <galacticraftplanets:orion_drive> * 2, <ore:circuitZpm> * 4)
+	.fluidInputs([<liquid:molten.hastelloy_c_276> * 18000])
+	.outputs(<powersuits:powerarmor_head>)
+	.duration(20000)
+	.EUt(122880)
+	.buildAndRegister();
 // Кираса
 starforge.recipeBuilder()
-    .inputs(<metaitem:qts.advanced_chestplate>, <galaxyspace:space_suit_chest:200>, <galacticraftplanets:orion_drive> * 2)
-    .fluidInputs([<liquid:fresh_water> * 1000])
+    .inputs(<metaitem:qts.advanced_chestplate>, <extraplanets:tier4_space_suit_chest:100>, <galacticraftplanets:orion_drive> * 4, <ore:circuitZpm> * 6)
+    .fluidInputs([<liquid:molten.hastelloy_c_276> * 42000])
     .outputs(<powersuits:powerarmor_torso>)
     .duration(28000)
-    .EUt(8700)
+    .EUt(122880)
     .buildAndRegister();
 
 // Поножи
 starforge.recipeBuilder()
-    .inputs(<metaitem:qts.leggings>, <galaxyspace:space_suit_legs:200>, <galacticraftplanets:orion_drive> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
+    .inputs(<metaitem:qts.leggings>, <extraplanets:tier4_space_suit_legings:100>, <galacticraftplanets:orion_drive> * 8, <ore:circuitZpm> * 6)
+    .fluidInputs([<liquid:molten.hastelloy_c_276> * 20000])
     .outputs(<powersuits:powerarmor_legs>)
-    .duration(28000)
-    .EUt(8700)
+    .duration(19000)
+    .EUt(122880)
     .buildAndRegister();
 
 // Ботинки
 starforge.recipeBuilder()
-    .inputs(<metaitem:qts.boots>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4)
-    .fluidInputs([<liquid:fresh_water> * 1000])
+    .inputs(<metaitem:qts.boots>, <extraplanets:tier4_space_suit_boots:100>, <galacticraftplanets:orion_drive> * 4, <ore:circuitZpm> * 4)
+    .fluidInputs([<liquid:molten.hastelloy_c_276> * 16000])
     .outputs(<powersuits:powerarmor_feet>)
     .duration(28000)
-    .EUt(8700)
+    .EUt(122880)
     .buildAndRegister();
 
 // Рука
 starforge.recipeBuilder()
-    .inputs(<metaitem:tool.drill.iv>, <galaxyspace:space_suit_feet:200>, <galacticraftplanets:orion_drive> * 4, <metaitem:nano_saber>)
-    .fluidInputs([<liquid:fresh_water> * 1000])
+    .inputs(<metaitem:tool.drill.iv>, <galacticraftplanets:orion_drive> * 4, <metaitem:nano_saber>, <metaitem:tool.chainsaw.hv>, <metaitem:tool.wrench.hv>)
+    .fluidInputs([<liquid:molten.hastelloy_c_276> * 8000])
     .outputs(<powersuits:power_fist>)
     .duration(28000)
-    .EUt(8700)
+    .EUt(122880)
     .buildAndRegister();

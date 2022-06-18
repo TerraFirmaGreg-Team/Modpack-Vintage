@@ -48,7 +48,7 @@ for item in RemoveWorkbenchRecipes {
 
 // Transportrings_block
 starforge.recipeBuilder()
-  .inputs(<ore:blockNaquadahAlloy> * 4, <aunis:crystal_red> * 12, <aunis:crystal_ender> * 12, <aunis:crystal_yellow> * 12, <aunis:crystal_blue> * 12, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
+  .inputs(<ore:blockNaquadahAlloy> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
   .fluidInputs([<liquid:naquadah_alloy> * 1000])
   .outputs(<aunis:transportrings_block>)
   .duration(200).EUt(2800).buildAndRegister();

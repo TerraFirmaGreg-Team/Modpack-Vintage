@@ -5,7 +5,7 @@ fov:0.0
 gamma:1.0
 saturation:0.0
 renderDistance:8
-guiScale:2
+guiScale:4
 particles:0
 bobView:true
 anaglyph3d:false
@@ -18,7 +18,7 @@ renderClouds:true
 resourcePacks:["MinecraftFont.zip"]
 incompatibleResourcePacks:[]
 lastServer:
-lang:ru_ru
+lang:en_us
 chatVisibility:0
 chatColors:true
 chatLinks:true
@@ -49,7 +49,7 @@ attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:true
+autoJump:false
 narrator:0
 tutorialStep:none
 soundCategory_master:0.0
