@@ -5,15 +5,16 @@
 ### Modpack Fixes
 * Added RFTools to the Lite version of the modpack.
 * Pam's HarvestCraft has been replaced with the elaborate GregTech Food Option.
-* Rewritten GregTech Food Option recipes.
+* Rewritten GregTech Food Option recipes 
+(not all because there are too many of them, there is no need to report errors in the recipes of this mod, we already know about them).
 * Little Tiles recipes have been rewritten.
 * Fixed display error in TheOneProbe when hovering over items.
 * Now recipes that used wrought iron or bare iron are merged, it makes sense that only those that can logically be interchangeable are made in both the workbench and GT machines.
 * Disabled drop from mobs from the TombStone mod (in HEI some items of this mod are still displayed, for some reason HEI cannot hide them, so this cannot be fixed yet).
 * Fixed display in HEI that 100mb of metal could be poured into the form of TFC or its addon, now 144 is displayed there.
 * Fixed a bug where it was impossible to scrape the ring and gear parts for primitive gear crafting.
-* TFC spear headband now has 144mb ​​as intended.
-* Fixed some metal values ​​for TFC-Tech items.
+* TFC spear headband now has 144mb as intended.
+* Fixed some metal values for TFC-Tech items.
 * Fixed the metal value of the metal grate.
 * Removed diamond and gold horse armor.
 * Completely rewritten script Vanilla.zs.
