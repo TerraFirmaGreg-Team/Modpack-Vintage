@@ -63,23 +63,39 @@ for item in AE2EL {
     JEI.removeAndHide(item);
 }
 
-val AEAdditions as IItemStack[] = [
+// ExtraCells 2
+val ExtraCells as IItemStack[] = [
+	// Fluid Storage Cells(deprecated)
+  	<extracells:storage.fluid>,
+	<extracells:storage.fluid:1>,
+	<extracells:storage.fluid:2>,
+	<extracells:storage.fluid:3>,
+	// Fluid Storage Component(deprecated)
+	<extracells:storage.component:4>,
+	<extracells:storage.component:5>,
+	<extracells:storage.component:6>,
+	<extracells:storage.component:7>,
+	// Deprecated panels
+	<extracells:part.base>,
+	<extracells:part.base:1>,
+	<extracells:part.base:2>,
+	<extracells:part.base:3>,
+	<extracells:part.base:4>,
+	<extracells:part.base:5>,
+	<extracells:part.base:6>,
+	<extracells:part.base:9>,
 	// Fluid Interface
-	<aeadditions:part.base:2>,
+	<extracells:ecbaseblock>,
 	// Certus Quartz Tank
-	<aeadditions:certustank>,
+	<extracells:certustank>,
 	// Fluid Vibration Chamber
-	<aeadditions:vibrantchamberfluid>,
+	<extracells:vibrantchamberfluid>,
 	// Wireless Fluid Terminal
-	<aeadditions:terminal.fluid.wireless>.withTag({}),
+	<extracells:terminal.fluid.wireless>,
 	// Wireless Universal Terminal
-	<aeadditions:terminal.universal.wireless>.withTag({}),
-	// Gas Interface
-	<aeadditions:gas_interface>,
-	// Паттерн
-	<aeadditions:pattern.fluid>.withTag({})
+	<extracells:terminal.universal.wireless>
 ];
-for item in AEAdditions {
+for item in ExtraCells {
   	JEI.removeAndHide(item);
 }
 
