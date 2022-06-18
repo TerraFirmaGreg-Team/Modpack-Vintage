@@ -4,6 +4,9 @@
 	y: -6.5d,
 	shape: "pentagon",
 	description: "{tfg.quests.primitive.tfcblastfurnace.subtitle}",
+	text: [
+		"{tfg.quests.primitive.tfcblastfurnace.desc1}"
+	],
 	dependencies: [
 		"a10d12a0",
 		"2afa953f",

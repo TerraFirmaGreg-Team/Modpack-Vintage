@@ -13,6 +13,7 @@
 		items: [{
 			item: "galacticraftplanets:rocket_t3"
 		}],
-		ignore_damage: true
+		ignore_damage: true,
+		ignore_nbt: 2b
 	}]
 }

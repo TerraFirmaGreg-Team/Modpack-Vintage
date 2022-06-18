@@ -13,6 +13,7 @@
 		items: [{
 			item: "galacticraftcore:rocket_t1"
 		}],
-		ignore_damage: true
+		ignore_damage: true,
+		ignore_nbt: 2b
 	}]
 }
