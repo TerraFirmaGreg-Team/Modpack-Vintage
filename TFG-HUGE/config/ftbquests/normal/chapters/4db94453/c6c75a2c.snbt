@@ -10,7 +10,7 @@
 		uid: "bf51764f",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 6"
+			item: "extracells:storage.component 1 10"
 		}]
 	}]
 }

@@ -8,7 +8,7 @@
 		uid: "37469aba",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 4"
+			item: "extracells:storage.component 1 8"
 		}]
 	}]
 }

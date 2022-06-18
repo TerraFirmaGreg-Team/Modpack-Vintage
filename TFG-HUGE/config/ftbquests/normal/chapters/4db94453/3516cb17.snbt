@@ -1,5 +1,5 @@
 {
-	icon: "chisel:futura 1 2",
+	icon: "extracells:walrus",
 	x: -2.0d,
 	y: 0.0d,
 	dependencies: [

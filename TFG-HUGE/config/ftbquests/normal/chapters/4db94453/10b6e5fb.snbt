@@ -8,7 +8,7 @@
 		uid: "7fb22acd",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.casing 1 1"
+			item: "extracells:storage.casing 1 1"
 		}]
 	}]
 }
