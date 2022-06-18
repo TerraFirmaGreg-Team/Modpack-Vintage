@@ -1,0 +1,15 @@
+{
+	x: -8.5d,
+	y: 4.0d,
+	tasks: [{
+		uid: "c075d956",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier2_space_suit_legings",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

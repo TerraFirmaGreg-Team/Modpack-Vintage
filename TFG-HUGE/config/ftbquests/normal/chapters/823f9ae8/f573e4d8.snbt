@@ -38,10 +38,10 @@
 		}]
 	},
 	{
-		uid: "cdfb8c99",
+		uid: "56e754af",
 		type: "item",
 		items: [{
-			item: "tfctech:powder/potash"
+			item: "gregtech:meta_dust 1 352"
 		}]
 	}]
 }

@@ -142,6 +142,7 @@ appliedenergistics2:appeng.entity.entitychargedquartz
 astikorcarts:cargocart
 astikorcarts:plowcart
 astikorcarts:mobcart
+gregtechfoodoption:italian_buffalo
 p455w0rdslib:sitting_entity
 galacticraftcore:evolved_spider
 galacticraftcore:evolved_zombie
@@ -179,6 +180,8 @@ galacticraftplanets:web_shot
 powersuits:entityplasmabolt
 powersuits:entityspinningblade
 powersuits:luxcapacitor
+extraplanets:extraplanets.nuclearbombprimed
+extraplanets:extraplanets.firebombprimed
 extraplanets:extraplanets.entitytier4rocket
 extraplanets:extraplanets.entitymercurylander
 extraplanets:extraplanets.entitytier5rocket
@@ -216,3 +219,6 @@ galacticraftcore:rocket_fluid_cargo
 galacticraftcore:ice_spike
 galacticraftcore:mars_rover
 galacticraftcore:laser_beam
+littletiles:sizetnt
+littletiles:sit
+littletiles:animation

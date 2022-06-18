@@ -15,6 +15,9 @@
 		type: "item",
 		items: [{
 			item: "minecraft:coal"
+		},
+		{
+			item: "gregtech:meta_ore_chunk 1 271"
 		}]
 	}]
 }

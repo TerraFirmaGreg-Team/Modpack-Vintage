@@ -17,6 +17,7 @@
 					data: "batteryMv"
 				}
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

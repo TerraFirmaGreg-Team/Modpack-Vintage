@@ -1,0 +1,18 @@
+{
+	x: -10.75d,
+	y: 0.0d,
+	tasks: [{
+		uid: "6b86409f",
+		type: "item",
+		items: [{
+			id: "powersuits:powerarmor_torso",
+			tag: {
+				MMModItem: {
+					commonValues: {}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

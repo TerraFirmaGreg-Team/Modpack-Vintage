@@ -1,0 +1,12 @@
+{
+	x: -0.75d,
+	y: 1.0d,
+	tasks: [{
+		uid: "02beea6c",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier4_thermal_padding"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -10,7 +10,9 @@ val RemoveItemRecipesByName = [
   "appliedenergistics2:decorative/certuz_quartz_block",
   "appliedenergistics2:decorative/certuz_quartz_block_pure",
   "appliedenergistics2:misc/vanilla_daylight_detector",
-  "appliedenergistics2:misc/vanilla_comparator"
+  "appliedenergistics2:misc/vanilla_comparator",
+  "appliedenergistics2:tools/misctools_charged_staff",
+  "appliedenergistics2:tools/network_memory_card"
 ] as string[];
 for item in RemoveItemRecipesByName{
   recipes.removeByRecipeName(item);
@@ -822,7 +824,6 @@ recipes.addShaped(<appliedenergistics2:matter_cannon>, [
   [<ore:plateSteel>, null, null]]);
 
 // Memory Card
-recipes.removeByRecipeName("appliedenergistics2:tools/network_memory_card");
 recipes.addShaped("network_memory_card", <appliedenergistics2:memory_card>, [
   [<appliedenergistics2:material:23>, <ore:circuitLv>],
   [<ore:wireFineGold>, <ore:plateIron>]]);
@@ -929,7 +930,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_1k_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:54>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_1k>])
@@ -942,7 +943,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_4k_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:55>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_4k>])
@@ -955,7 +956,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_16k_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:56>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_16k>])
@@ -968,7 +969,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell
 recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_64k_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:57>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_64k>])
@@ -981,7 +982,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_2_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:32>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_2_cubed>])
@@ -994,7 +995,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_16_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:33>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_16_cubed>])
@@ -1007,7 +1008,7 @@ recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_ce
 recipes.removeByRecipeName("appliedenergistics2:network/cells/spatial_storage_cell_128_cubed_storage");
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:34>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_128_cubed>])
@@ -1452,6 +1453,12 @@ recipes.addShaped("import_bus_fluid", <appliedenergistics2:part:241>, [
 recipes.removeByRecipeName("appliedenergistics2:network/parts/export_bus_fluid");
 recipes.addShaped("export_bus_fluid", <appliedenergistics2:part:261>, [
   [<appliedenergistics2:material:43>, <metaitem:electric.pump.lv>, <ore:ae2.cable.glass>]]);
+
+// Charged Stuff
+recipes.addShaped(<appliedenergistics2:charged_staff>, [
+  [<appliedenergistics2:material:1>, <ore:gtce.tool.hard.hammers>, null],
+  [<ore:gtce.tool.files>, <ore:stickIronAny>, null],
+  [null, null, <ore:stickIronAny>]]);
 
 // Fluid Interface
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/fluid_interfaces_interface");

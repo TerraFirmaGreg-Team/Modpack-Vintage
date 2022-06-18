@@ -1,0 +1,11 @@
+{
+	x: -1.25d,
+	y: 3.25d,
+	tasks: [{
+		uid: "5e35bd51",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier4_un_prepared_space_suit_legings"
+		}]
+	}]
+}

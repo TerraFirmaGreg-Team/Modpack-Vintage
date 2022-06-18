@@ -13,9 +13,82 @@ val ItemsToRemove as IItemStack[] = [
     <firmalife:climate_station_5>,
     <firmalife:sprinkler>,
     <firmalife:candle> * 6,
-    <firmalife:treated_lumber>
+    <firmalife:treated_lumber>,
+    <firmalife:jar>
 ];
 for item in ItemsToRemove{
+    recipes.remove(item);
+}
+
+// Удаление рецептов
+val RemoveFences as IItemStack[] = [
+    <firmalife:cinnamon_fence>,
+	<firmalife:cocoa_fence>,
+	<firmalife:banana_fence>,
+	<firmalife:cherry_fence>,
+	<firmalife:green_apple_fence>,
+	<firmalife:lemon_fence>,
+	<firmalife:olive_fence>,
+	<firmalife:orange_fence>,
+	<firmalife:peach_fence>,
+	<firmalife:plum_fence>,
+	<firmalife:red_apple_fence>
+];
+for item in RemoveFences {
+    recipes.remove(item);
+}
+
+// Удаление рецептов
+val RemoveFenceGates as IItemStack[] = [
+    <firmalife:cinnamon_fence_gate>,
+	<firmalife:cocoa_fence_gate>,
+	<firmalife:banana_fence_gate>,
+	<firmalife:cherry_fence_gate>,
+	<firmalife:green_apple_fence_gate>,
+	<firmalife:lemon_fence_gate>,
+	<firmalife:olive_fence_gate>,
+	<firmalife:orange_fence_gate>,
+	<firmalife:peach_fence_gate>,
+	<firmalife:plum_fence_gate>,
+	<firmalife:red_apple_fence_gate>
+];
+for item in RemoveFenceGates {
+    recipes.remove(item);
+}
+
+// Удаление рецептов
+val RemoveDoors as IItemStack[] = [
+    <firmalife:cinnamon_door>,
+	<firmalife:cocoa_door>,
+	<firmalife:banana_door>,
+	<firmalife:cherry_door>,
+	<firmalife:green_apple_door>,
+	<firmalife:lemon_door>,
+	<firmalife:olive_door>,
+	<firmalife:orange_door>,
+	<firmalife:peach_door>,
+	<firmalife:plum_door>,
+	<firmalife:red_apple_door>
+];
+for item in RemoveDoors {
+    recipes.remove(item);
+}
+
+// Удаление рецептов
+val RemoveTrapdoors as IItemStack[] = [
+    <firmalife:cinnamon_trapdoor>,
+	<firmalife:cocoa_trapdoor>,
+	<firmalife:banana_trapdoor>,
+	<firmalife:cherry_trapdoor>,
+	<firmalife:green_apple_trapdoor>,
+	<firmalife:lemon_trapdoor>,
+	<firmalife:olive_trapdoor>,
+	<firmalife:orange_trapdoor>,
+	<firmalife:peach_trapdoor>,
+	<firmalife:plum_trapdoor>,
+	<firmalife:red_apple_trapdoor>
+];
+for item in RemoveTrapdoors {
     recipes.remove(item);
 }
 
@@ -43,29 +116,67 @@ ItemRegistry.registerItemMetal(<firmalife:black_steel_mallet>, "BLACK_STEEL", 14
 ItemRegistry.registerItemMetal(<firmalife:blue_steel_mallet>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, true);
 
+// Забор
+for i, RemoveFences in RemoveFences {
+    recipes.addShaped("tfg/firmalife/fence_" + i, RemoveFences * 8,
+        [[null, null, null],
+        [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]],
+        [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]]]);
+}
+
+// Калитки
+for i, RemoveFenceGates in RemoveFenceGates {
+    recipes.addShaped("tfg/firmalife/fencegate_" + i, RemoveFenceGates * 2,
+        [[null, null, null],
+        [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]],
+        [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]]]);
+}
+
+// Двери
+for i, RemoveDoors in RemoveDoors {
+    recipes.addShaped("tfg/firmalife/door_" + i, RemoveDoors * 2,
+        [[TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
+        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
+        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null]]);
+}
+
+// Люки
+for i, RemoveTrapdoors in RemoveTrapdoors {
+    recipes.addShaped("tfg/firmalife/trapdoor_" + i, RemoveTrapdoors * 3,
+        [[null, null, null],
+        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]],
+        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]]]);
+}
+
 // Климатическая станция уровня 0
 recipes.addShaped(<firmalife:climate_station>,
-[[<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
- [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
- [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
+    [[<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
+    [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
+    [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 1
 recipes.addShaped(<firmalife:climate_station_1>,
-[[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
- [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
- [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
+    [[<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
+    [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
+    [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
 
 // Климатическая станция уровня 5
 recipes.addShaped(<firmalife:climate_station_5>,
-[[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
- [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
- [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
+    [[<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
+    [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
+    [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
 
 // Разбрызгиватель
 recipes.addShaped(<firmalife:sprinkler>,
-[[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
- [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
- [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+    [[<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
+    [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
+    [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+
+// Jar
+recipes.addShaped(<firmalife:jar>,
+    [[null, <ore:plateIronAny>, null],
+    [<ore:paneGlass>, null, <ore:paneGlass>],
+    [null, <ore:paneGlass>, null]]);
 
 // Свечка
 recipes.addShapeless(<firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
@@ -88,11 +199,11 @@ Anvil.removeRecipe(<firmalife:greenhouse_door>);
 Anvil.addRecipe("firmalife:greenhouse_door_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
 
 // Бафф крафта стен теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_wall>*2);
+Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
 Anvil.addRecipe("firmalife:greenhouse_wall_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
 
 // Бафф крафта крыши теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_roof>*2);
+Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
 Anvil.addRecipe("firmalife:greenhouse_roof_fix", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
 
 // Исправление крафта молотков

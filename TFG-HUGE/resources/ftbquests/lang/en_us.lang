@@ -210,6 +210,8 @@ tfg.quests.primitive.tuyere.subtitle=&aA lot of your metal flows through it.
 
 tfg.quests.primitive.tfcblastfurnace.title=Blast furnace!
 tfg.quests.primitive.tfcblastfurnace.subtitle=&aGlory to steel, a new era is coming now.
+tfg.quests.primitive.tfcblastfurnace.desc1=There is such coal, it is called coke, and it can heat up to 1510 degrees,
+which allows you not to control the furnace, but it cannot be used in a normal forge.
 
 tfg.quests.primitive.tfccrusible.title=The Iron Witch's Cauldron
 tfg.quests.primitive.tfccrusible.subtitle=&aI want a series with that name.
@@ -339,7 +341,7 @@ tfg.quests.steam.era.title=§cEra 2 §4-§4 §6Steam
 tfg.quests.steam.maincheck.title=Let's start the steam era!
 tfg.quests.steam.maincheck.subtitle=&aThe steam era begins, here you will finally be able to make a furnace, and an alloy furnace that will save you from the million hours you spent forging.
 
-tfg.quests.steam.light.title=Light
+tfg.quests.steam.deco.title=Decorative materials
 
 tfg.quests.steam.primitivewaterpump.subtitle=&aYour first pump.
 tfg.quests.steam.primitivewaterpump.desc1=The §3Primitive Water Pump§r is your first way to automatically generate water for your boilers. It does not pump water from the world, instead it just creates it.
@@ -1570,7 +1572,7 @@ tfg.quests.hv.cookers.desc2=Other Power options are more advisable at this point
 tfg.quests.hv.prospector.title=HV Prospector
 tfg.quests.hv.prospector.subtitle=This prospector has a §6higher range§r than the §7LV§r one.
 tfg.quests.hv.prospector.desc1=Shift right-clicking on it will change the mod to §6Fluid Prospection§r.
-tfg.quests.hv.prospector.desc2=§oNot yet implemented: Shift right-click switches the mod to Fluid Prospection, which lets you scan bedrock veins for your Fluid Rigs!§r
+tfg.quests.hv.prospector.desc2=Shift right-click switches the mod to Fluid Prospection, which lets you scan bedrock veins for your Fluid Rigs!§r
 
 tfg.quests.hv.advancedmaintenance.title=Advanced Maintenance
 tfg.quests.hv.advancedmaintenance.subtitle=You now have access to two §3new Maintenance Hatches§r. Both start with §6no Maintenance required§r.

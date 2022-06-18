@@ -1,0 +1,11 @@
+{
+	x: -0.25d,
+	y: 1.75d,
+	tasks: [{
+		uid: "b7aa9fbb",
+		type: "item",
+		items: [{
+			item: "extraplanets:tier4_un_prepared_space_suit_helmet"
+		}]
+	}]
+}

@@ -1,6 +1,6 @@
 {
 	icon: {
-		id: "extracells:storage.fluid.portable",
+		id: "aeadditions:storage.fluid.portable",
 		tag: {
 			power: 20000.0d,
 			fuzzyMode: "IGNORE_ALL"
@@ -15,7 +15,7 @@
 		uid: "91c5489a",
 		type: "item",
 		items: [{
-			id: "extracells:storage.fluid.portable",
+			id: "aeadditions:storage.fluid.portable",
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
 			}

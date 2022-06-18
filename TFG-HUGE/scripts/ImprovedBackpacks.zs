@@ -16,18 +16,18 @@ for item in RemoveWorkbenchRecipes {
 
 // Iron Upgrade
 recipes.addShaped(<improvedbackpacks:upgrade:2>,
-[[null, <improvedbackpacks:tanned_leather>, null],
- [<ore:plateWroughtIron>, <improvedbackpacks:blank_upgrade>, <ore:plateWroughtIron>],
- [null, <ore:plateWroughtIron>, null]]);
+    [[null, <improvedbackpacks:tanned_leather>, null],
+    [<ore:plateIronAny>, <improvedbackpacks:blank_upgrade>, <ore:plateIronAny>],
+    [null, <ore:plateIronAny>, null]]);
  
 // Gold Upgrade
 recipes.addShaped(<improvedbackpacks:upgrade:3>,
-[[null, <improvedbackpacks:tanned_leather>, null],
- [<ore:plateGold>, <improvedbackpacks:blank_upgrade>, <ore:plateGold>],
- [null, <ore:plateGold>, null]]);
+    [[null, <improvedbackpacks:tanned_leather>, null],
+    [<ore:plateGold>, <improvedbackpacks:blank_upgrade>, <ore:plateGold>],
+    [null, <ore:plateGold>, null]]);
  
 // Diamond Upgrade
 recipes.addShaped(<improvedbackpacks:upgrade:4>,
-[[null, <improvedbackpacks:tanned_leather>, null],
- [<ore:plateDiamond>, <improvedbackpacks:blank_upgrade>, <ore:plateDiamond>],
- [null, <ore:plateDiamond>, null]]);
+    [[null, <improvedbackpacks:tanned_leather>, null],
+    [<ore:plateDiamond>, <improvedbackpacks:blank_upgrade>, <ore:plateDiamond>],
+    [null, <ore:plateDiamond>, null]]);

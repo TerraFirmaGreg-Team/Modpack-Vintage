@@ -16,19 +16,19 @@ for item in RemoveWorkbenchRecipes {
 
 // Arch Table
 recipes.addShaped(<architecturecraft:sawbench>,
-[[<ore:plateIron>, <ore:toolHeadBuzzSawIron>, <ore:plateIron>],
- [<ore:plankWood>, <ore:gearIron>, <ore:plankWood>],
- [<ore:stickWood>, <ore:pressurePlateWood>, <ore:stickWood>]]);
+    [[<ore:plateIronAny>, <ore:toolHeadBuzzSawIron>, <ore:plateIronAny>],
+    [<ore:plankWood>, <ore:gearIronAny>, <ore:plankWood>],
+    [<ore:stickWood>, <ore:pressurePlateWood>, <ore:stickWood>]]);
 
 // Hammer
 recipes.addShaped(<architecturecraft:hammer>,
-[[<ore:plateIron>, <ore:plateIron>, null],
- [<ore:dyeOrange>, <ore:stickWood>, <ore:plateIron>],
- [<ore:dyeOrange>, <ore:stickWood>, null]]);
+    [[<ore:plateIronAny>, <ore:plateIronAny>, null],
+    [<ore:dyeOrange>, <ore:stickWood>, <ore:plateIronAny>],
+    [<ore:dyeOrange>, <ore:stickWood>, null]]);
 
 // Chisel
 recipes.addShaped(<architecturecraft:chisel>,
-[[<ore:plateIron>, null, null],
- [<ore:dyeOrange>, <ore:stickWood>, null],
- [null, null, null]]);
+    [[<ore:plateIronAny>, null, null],
+    [<ore:dyeOrange>, <ore:stickWood>, null],
+    [null, null, null]]);
  

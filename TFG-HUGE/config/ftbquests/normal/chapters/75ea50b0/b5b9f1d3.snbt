@@ -1,0 +1,15 @@
+{
+	x: -11.25d,
+	y: 4.0d,
+	tasks: [{
+		uid: "f2bf733a",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_jetpack_chest",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

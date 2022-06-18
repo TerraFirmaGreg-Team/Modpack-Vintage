@@ -37,7 +37,6 @@ global forming_press             as RecipeMap = RecipeMap.getByName("forming_pre
 global fusion_reactor            as RecipeMap = RecipeMap.getByName("fusion_reactor");
 global gas_collector             as RecipeMap = RecipeMap.getByName("gas_collector");
 global implosion_compressor      as RecipeMap = RecipeMap.getByName("implosion_compressor");
-global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
 global laser_engraver            as RecipeMap = RecipeMap.getByName("laser_engraver");
 global lathe                     as RecipeMap = RecipeMap.getByName("lathe");
 global macerator                 as RecipeMap = RecipeMap.getByName("macerator");
@@ -55,3 +54,10 @@ global sifter                    as RecipeMap = RecipeMap.getByName("sifter");
 global thermal_centrifuge        as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 global vacuum_freezer            as RecipeMap = RecipeMap.getByName("vacuum_freezer");
 global wiremill                  as RecipeMap = RecipeMap.getByName("wiremill");
+// GTFO
+global slicer                    as RecipeMap = RecipeMap.getByName("slicer");
+global cuisine_assembler         as RecipeMap = RecipeMap.getByName("cuisine_assembler");
+global baking_oven               as RecipeMap = RecipeMap.getByName("baking_oven");
+global electric_baking_oven      as RecipeMap = RecipeMap.getByName("electric_baking_oven");
+// GM
+global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");

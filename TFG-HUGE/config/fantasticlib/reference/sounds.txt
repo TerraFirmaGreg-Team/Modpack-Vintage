@@ -591,6 +591,7 @@ gregtech:use.mortar
 gregtech:record.sus
 gregtech:entity.portal_opening
 gregtech:entity.portal_closing
+gregtechfoodoption:microwave.finish
 mechtech:player.tesla_coil
 tombstone:magic_use01
 tombstone:ghost_laugh
@@ -751,6 +752,12 @@ tfc:animal.jackal.say
 tfc:animal.jackal.hurt
 tfc:animal.jackal.death
 tfc:animal.feline.step
+rftools:elevator_start
+rftools:elevator_loop
+rftools:elevator_stop
+rftools:scan
+rftools:teleport_whoosh
+rftools:teleport_error
 tfcthings:sharpen
 tfctech:rubbertapping.groove.fit
 tfctech:rubbertapping.mount.fit

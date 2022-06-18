@@ -26,7 +26,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage>])
   .duration(980)
-  .EUt(480)
+  .EUt(2080)
   .buildAndRegister();
 
 // Tank
@@ -42,5 +42,5 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage:1>])
   .duration(980)
-  .EUt(480)
+  .EUt(2080)
   .buildAndRegister();

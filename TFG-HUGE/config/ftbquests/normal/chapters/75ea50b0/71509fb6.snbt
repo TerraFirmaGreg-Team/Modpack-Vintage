@@ -9,6 +9,7 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 753"
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

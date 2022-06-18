@@ -13,13 +13,7 @@
 		"",
 		"Don't forge to keep it supplied with a small amount of §aLubricant§r.",
 		"",
-		"The §3ECE§r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock.",
-		"",
-		"",
-		"§bLore:§r The ECE comes from GT:NH. However... the story is not so great. The stats on the tooltip looked similar to this one, so far so good.",
-		"However if you made calculations, you ended up realizing you needed to run around 16 whole HV Vacuum Freezers to keep up with Liquid Oxygen...",
-		"The one and only fuel it would accept is High Octane Gasoline, which was stated to be burned at 300% efficiency when boosted, but it was a lie! The efficiency remained 100%!",
-		"The GT:NH team recently decided to rework the ECE among other power options, phew!"
+		"The §3ECE§r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
 	],
 	dependencies: [
 		"8d1fb996",

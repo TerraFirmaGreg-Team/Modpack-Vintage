@@ -48,10 +48,5 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 532"
 		}]
-	}],
-	rewards: [{
-		uid: "982a2004",
-		type: "choice",
-		table: 20
 	}]
 }

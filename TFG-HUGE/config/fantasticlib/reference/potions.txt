@@ -33,6 +33,8 @@ tfc:overburdened
 tfc:thirst
 tfc:food_poison
 firmalife:swarm
+gregtechfoodoption:creativity
+gregtechfoodoption:stepassist
 potioncore:love
 potioncore:repair
 potioncore:flight

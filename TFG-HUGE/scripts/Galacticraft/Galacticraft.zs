@@ -90,22 +90,27 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:nose_cone>
 ] as IItemStack[];
 for item in RemoveItemRecipe{
-    recipes.remove(item);
+   recipes.remove(item);
 }
 
-//Другие рецепты которые удалены
+// Другие рецепты которые удалены
 furnace.remove(<galacticraftcore:item_basic_moon>);
+furnace.remove(<galacticraftcore:basic_item:4>);
 furnace.remove(<galacticraftplanets:item_basic_mars:2>);
 
-//Именованное удаление
+// Именованное удаление
 recipes.removeByRecipeName("galacticraftcore:slime_ball");
 recipes.removeByRecipeName("galacticraftcore:cobblestone");
 recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
 recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
+recipes.removeByRecipeName("galacticraftcore:basic_item_18");
+recipes.removeByRecipeName("galacticraftcore:basic_item_17");
+recipes.removeByRecipeName("galacticraftcore:basic_item_16");
+recipes.removeByRecipeName("galacticraftcore:basic_item_15");
 
 // --- Adding Recipes
 
-//Еда из GC
+// Еда из GC
 ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
@@ -403,9 +408,8 @@ recipes.addShaped(<galacticraftplanets:beam_reflector>,
 //Крюк
 recipes.addShaped(<galacticraftplanets:grapple>,
 [[null, null, <ore:string>],
- [<ore:ingotIron>, <ore:string>, null],
- [<ore:ingotIron>, <ore:ingotIron>, null]]);
-
+ [<ore:stickIronAny>, <ore:string>, null],
+ [<ore:gearIronAny>, <ore:stickIronAny>, null]]);
 
 //Антена связи
 recipes.addShaped(<galacticraftcore:dishbase>,

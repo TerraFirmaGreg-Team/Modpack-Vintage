@@ -26,6 +26,7 @@ for item in RemoveItemRecipes {
 
 recipes.removeByRecipeName("tfctech:glassworking/pot_potash");
 recipes.removeByRecipeName("tfctech:glassworking/pot_ash");
+recipes.removeByRecipeName("tfctech:devices/fridge");
 
 // Удаление рецептов вытяжки на столе
 val RemoveItemWireDrawingRecipes as IItemStack[] = [
@@ -195,19 +196,23 @@ ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel_piece>, "BISMUTH
 ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel_piece>, "BLACK_BRONZE", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel_piece>, "BRONZE", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel_piece>, "NICKEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel_piece>, "ZINC", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel_piece>, "WROUGHT_IRON", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel_piece>, "STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel_piece>, "BLACK_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel_piece>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel_piece>, "RED_STEEL", 144, true);
 // Rackwheels
-ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel>, "BISMUTH", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel>, "BLACK_BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel>, "BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel>, "NICKEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel>, "BLACK_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel>, "BLUE_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel>, "RED_STEEL", 144, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel>, "BISMUTH", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel>, "BLACK_BRONZE", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel>, "BRONZE", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel>, "NICKEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel>, "ZINC", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel>, "WROUGHT_IRON", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel>, "STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel>, "BLACK_STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel>, "BLUE_STEEL", 576, true);
+ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel>, "RED_STEEL", 576, true);
 // Strips
 ItemRegistry.registerItemMetal(<tfctech:metal/copper_strip>, "COPPER", 72, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/gold_strip>, "GOLD", 72, true);
@@ -291,6 +296,12 @@ recipes.addShapeless(<tfctech:pot_ash>, [<ore:dustAsh>, <ore:dustAsh>, <ore:dust
 
 // Резина для первых этапов
 recipes.addShapeless(<metaitem:plateRubber> * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
+
+// Холодильник
+recipes.addShaped(<tfctech:fridge>,
+    [[<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <ore:plateDoubleIronAny>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>]]);
 
 // Уменьшение выхода рецепта с резиной
 Barrel.removeRecipe(<tfctech:latex/rubber_mix> * 6);

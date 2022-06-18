@@ -3,7 +3,9 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-// --- TFC
+////////////////////////////////////////////////////////
+// --- TFC --- /////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 // Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
@@ -71,13 +73,13 @@ for item in RemoveItemOre{
 }
 
 // add loom
-for item in TFC_Loom {
+for item in TFC_Looms {
 	<ore:loom>.add(item);
 }
 
 // Rock Types GT = Rock Types TFC
-//<ore:stoneBasalt>.add(<tfc:raw/basalt>);
-//<ore:stoneMarble>.add(<tfc:raw/marble>);
+// <ore:stoneBasalt>.add(<tfc:raw/basalt>);
+// <ore:stoneMarble>.add(<tfc:raw/marble>);
 
 // OreDicionary for all slab
 for item in TFC_Slabs_Smooth {
@@ -229,7 +231,10 @@ for item in TFC_Slabs_Smooth {
 // Beeswax
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 
-// --- GregTech
+////////////////////////////////////////////////////////
+// --- GREGTECH --- ////////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Tools
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),
@@ -277,9 +282,66 @@ for item in TFC_Slabs_Smooth {
 
 <ore:gtce.tool.knife>.addItems([
     <gregtech:meta_tool:15>.withEmptyTag(),
+    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 
-// --- Applied Energistics 2
+// Wrought Iron + Iron
+<ore:blockIronAny>.add(<minecraft:iron_block>, <metaitem:blockWroughtIron>);
+<ore:plateIronAny>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);
+<ore:plateDoubleIronAny>.add(<metaitem:plateDoubleIron>, <metaitem:plateDoubleWroughtIron>);
+<ore:gearIronAny>.add(<metaitem:gearIron>, <metaitem:gearWroughtIron>);
+<ore:gearSmallIronAny>.add(<metaitem:gearSmallIron>, <metaitem:gearSmallWroughtIron>);
+<ore:springIronAny>.add(<metaitem:springIron>, <metaitem:springWroughtIron>);
+<ore:springSmallIronAny>.add(<metaitem:springSmallIron>, <metaitem:springSmallWroughtIron>);
+<ore:ringIronAny>.add(<metaitem:ringIron>, <metaitem:ringWroughtIron>);
+<ore:stickIronAny>.add(<metaitem:stickIron>, <metaitem:stickWroughtIron>);
+<ore:stickLongIronAny>.add(<metaitem:stickLongIron>, <metaitem:stickLongWroughtIron>);
+<ore:boltIronAny>.add(<metaitem:boltIron>, <metaitem:boltWroughtIron>);
+<ore:screwIronAny>.add(<metaitem:screwIron>, <metaitem:screwWroughtIron>);
+<ore:rotorIronAny>.add(<metaitem:rotorIron>, <metaitem:rotorWroughtIron>);
+
+// BronzeAny Screws
+<ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
+
+// Chipped Gems from GT
+for item in Gem_Chipped {
+	<ore:gemChipped>.add(item);
+}
+// Flawed Gems from GT
+for item in Gem_Flawed {
+	<ore:gemFlawed>.add(item);
+}
+// Flawless Gems from GT
+for item in Gem_Flawless {
+	<ore:gemFlawless>.add(item);
+}
+// Exquisite Gems from GT
+for item in Gem_Exquisite {
+	<ore:gemExquisite>.add(item);
+}
+
+// Knife
+<ore:knife>.add(<metaitem:tool.knife>);
+
+// Hammer
+<ore:hammer>.add(<metaitem:tool.hard_hammer>);
+
+// Saw
+<ore:saw>.add(<metaitem:tool.saw>);
+
+// Shovel
+<ore:shovel>.add(<metaitem:tool.shovel>);
+
+// Basalt
+<ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
+
+// Marble
+<ore:stoneMarble>.remove(<gregtech:stone_smooth:2>);
+
+////////////////////////////////////////////////////////
+// --- AE2 --- /////////////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Interface
 <ore:ae2.interface.item>.addItems([
     <appliedenergistics2:interface>,
@@ -437,46 +499,13 @@ for denseSmartCable in denseSmartCables {
     }
 }
 
-// Chipped Gems from GT
-for item in Gem_Chipped {
-	<ore:gemChipped>.add(item);
-}
-// Flawed Gems from GT
-for item in Gem_Flawed {
-	<ore:gemFlawed>.add(item);
-}
-// Flawless Gems from GT
-for item in Gem_Flawless {
-	<ore:gemFlawless>.add(item);
-}
-// Exquisite Gems from GT
-for item in Gem_Exquisite {
-	<ore:gemExquisite>.add(item);
-}
+// Iron Dust
+<ore:dustIron>.remove(<appliedenergistics2:material:49>);
 
-// Knife
-<ore:knife>.add(<metaitem:tool.knife>);
+////////////////////////////////////////////////////////
+// --- PROJECTRED --- //////////////////////////////////
+////////////////////////////////////////////////////////
 
-// Hammer
-<ore:hammer>.add(<metaitem:tool.hard_hammer>);
-
-// Saw
-<ore:saw>.add(<metaitem:tool.saw>);
-
-// Shovel
-<ore:shovel>.add(<metaitem:tool.shovel>);
-
-// Basalt
-<ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
-
-// Marble
-<ore:stoneMarble>.remove(<gregtech:stone_smooth:2>);
-
-// --- GC
-<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
-
-// --- Deleting OreDictionary
-// --- ProjectRed
 // Copper
 <ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
 // Tin
@@ -486,29 +515,44 @@ for item in Gem_Exquisite {
 // RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
 
-// --- TFC-Florae
+////////////////////////////////////////////////////////
+// --- TFC-Florae --- //////////////////////////////////
+////////////////////////////////////////////////////////
+
 // Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
-// --- AE2
-// Iron Dust
-<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+////////////////////////////////////////////////////////
+// --- GC/GS/EP --- ///////////////////////////////////////
+////////////////////////////////////////////////////////
 
-// --- GC/GS
+<ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
+<ore:oreIron>.remove(<galaxyspace:barnarda_c_ores:1>);
+<ore:oreIron>.remove(<galaxyspace:mirandablocks:3>);
+<ore:oreIron>.remove(<galaxyspace:mercuryblocks:4>);
+
 // Copper
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_moon>);
 <ore:oreCopper>.remove(<galacticraftplanets:mars>);
 <ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
 <ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
 <ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
+<ore:oreCopper>.remove(<galaxyspace:barnarda_c_ores:7>);
+<ore:oreCopper>.remove(<galaxyspace:ioblocks:3>);
+<ore:oreCopper>.remove(<galaxyspace:proxima_b_blocks:7>);
+
 // Tin
 <ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
 <ore:oreTin>.remove(<galacticraftplanets:mars:1>);
 <ore:oreTin>.remove(<galacticraftplanets:venus:11>);
 <ore:oreTin>.remove(<galacticraftcore:basic_block_core:6>);
+<ore:oreTin>.remove(<galaxyspace:barnarda_c_ores:8>);
+<ore:oreTin>.remove(<galaxyspace:proxima_b_blocks:6>);
+
 // Aluminium/Aluminum etc
 <ore:oreAluminium>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreAluminium>.remove(<galacticraftcore:basic_block_core:7>);
@@ -519,23 +563,100 @@ for item in Gem_Exquisite {
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
 <ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
+<ore:oreAluminum>.remove(<galaxyspace:barnarda_c_ores:9>);
+<ore:oreAluminum>.remove(<galaxyspace:marsores:5>);
+<ore:oreAluminum>.remove(<galaxyspace:haumeablocks:3>);
+<ore:oreAluminum>.remove(<galaxyspace:europablocks:5>);
+
 // Nickel
 <ore:plateNickel>.remove(<galaxyspace:compressed_plates:3>);
+
 // Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
+
 // Silicon
 <ore:oreSilicon>.remove(<galacticraftplanets:venus:10>);
 <ore:oreSilicon>.remove(<galacticraftcore:basic_block_core:8>);
+<ore:oreSilicon>.remove(<galaxyspace:barnarda_c_ores:6>);
+<ore:oreSilicon>.remove(<galaxyspace:marsores:4>);
+<ore:oreSilicon>.remove(<galaxyspace:proxima_b_blocks:9>);
+<ore:oreSilicon>.remove(<galaxyspace:europablocks:4>);
+
 // Quartz
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
+<ore:oreQuartz>.remove(<galaxyspace:barnarda_c_ores:10>);
+<ore:oreQuartz>.remove(<galaxyspace:mirandablocks:6>);
+
+
 // Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
+
 // Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
+<ore:oreIlmenite>.remove(<galaxyspace:ganymedeblocks:3>);
+
 // Sulfur
 <ore:oreSulfur>.remove(<galaxyspace:ioblocks:4>);
 
-// --- Vanilla
+// Coal
+<ore:oreCoal>.remove(<galaxyspace:proxima_b_blocks:8>);
+<ore:oreCoal>.remove(<galaxyspace:marsores:2>);
+<ore:oreCoal>.remove(<galaxyspace:barnarda_c_ores>);
+<ore:oreCoal>.remove(<galaxyspace:enceladusblocks:2>);
+<ore:oreCoal>.remove(<galaxyspace:titanblocks:6>);
+
+// Gold
+<ore:oreGold>.remove(<galaxyspace:barnarda_c_ores:2>);
+<ore:oreGold>.remove(<galaxyspace:marsores:1>);
+<ore:oreGold>.remove(<galaxyspace:proxima_b_blocks:5>);
+
+// Redstone
+<ore:oreRedstone>.remove(<galaxyspace:barnarda_c_ores:3>);
+<ore:oreRedstone>.remove(<galaxyspace:marsores:3>);
+<ore:oreRedstone>.remove(<galaxyspace:titanblocks:8>);
+
+// Diamond
+<ore:oreDiamond>.remove(<galaxyspace:barnarda_c_ores:5>);
+<ore:oreDiamond>.remove(<galaxyspace:marsores>);
+<ore:oreDiamond>.remove(<galaxyspace:proxima_b_blocks:10>);
+<ore:oreDiamond>.remove(<galaxyspace:titanblocks:5>);
+<ore:oreDiamond>.remove(<galaxyspace:mirandablocks:5>);
+
+// Nickel
+<ore:oreNickel>.remove(<galaxyspace:barnarda_c_ores:12>);
+<ore:oreNickel>.remove(<galaxyspace:gsores:1>);
+<ore:oreNickel>.remove(<galaxyspace:mercuryblocks:3>);
+
+// Lapis
+<ore:oreLapis>.remove(<galaxyspace:barnarda_c_ores:4>);
+<ore:oreLapis>.remove(<galaxyspace:titanblocks:7>);
+
+// Cobalt
+<ore:oreCobalt>.remove(<galaxyspace:barnarda_c_ores:11>);
+<ore:oreCobalt>.remove(<galaxyspace:gsores>);
+<ore:oreCobalt>.remove(<galaxyspace:mirandablocks:7>);
+
+// Uranium
+<ore:oreUranium>.remove(<galaxyspace:gsores:2>);
+
+// Magnesium
+<ore:oreMagnesium>.remove(<galaxyspace:mercuryblocks:5>);
+<ore:oreMagnesium>.remove(<galaxyspace:ganymedeblocks:2>);
+
+// Sapphire
+<ore:oreSapphire>.remove(<galaxyspace:titanblocks:3>);
+
+// Emerald
+<ore:oreEmerald>.remove(<galaxyspace:titanblocks:4>);
+<ore:oreEmerald>.remove(<galaxyspace:europablocks:3>);
+
+// Dolomite
+<ore:oreDolomite>.remove(<galaxyspace:mirandablocks:4>);
+
+
+////////////////////////////////////////////////////////
+// --- Vanilla --- /////////////////////////////////////
+////////////////////////////////////////////////////////
 
 // Grass
 <ore:grass>.remove(<minecraft:grass>);
@@ -619,5 +740,6 @@ for item in Gem_Exquisite {
 
 // Remove chest and chestWood and chestTrapped
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:chest>);
 <ore:chestTrapped>.remove(<minecraft:trapped_chest>);
