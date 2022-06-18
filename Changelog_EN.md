@@ -1,4 +1,10 @@
 # Changelog
+## Version R3.3.5-HotFix - 06/18/2022
+#### [Lite, Huge]
+### Modpack fixes
+* AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
+* Removed texture pack TFC Lite, saved RAM, but slowed down the launch of the game (you can optionally install)
+* Fixed a bug in AE2 recipes
 
 ## Version 3.3.5 - 18.06.2022
 #### [Lite, Huge]
