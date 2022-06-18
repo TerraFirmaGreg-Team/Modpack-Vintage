@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: -3.0d,
+	dependencies: [
+		"854c4803"
+	],
+	tasks: [{
+		uid: "ffe80321",
+		type: "item",
+		items: [{
+			item: "extracells:part.base 1 10"
+		}]
+	}]
+}

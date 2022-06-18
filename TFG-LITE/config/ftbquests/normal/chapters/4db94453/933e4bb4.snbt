@@ -8,8 +8,8 @@
 		uid: "cccfde14",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.fluid",
-			Damage: 2s,
+			id: "extracells:storage.fluid",
+			Damage: 6s,
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
 			}

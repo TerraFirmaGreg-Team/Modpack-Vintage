@@ -8,7 +8,7 @@
 		uid: "3708f405",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.physical",
+			id: "extracells:storage.physical",
 			Damage: 1s,
 			tag: {
 				upgrades: {},

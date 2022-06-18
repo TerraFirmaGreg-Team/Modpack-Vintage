@@ -1,6 +1,6 @@
 {
 	icon: {
-		id: "aeadditions:storage.physical",
+		id: "extracells:storage.physical",
 		Damage: 4s,
 		tag: {
 			power: 32000.0d,
@@ -18,7 +18,7 @@
 		uid: "7225720b",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.physical",
+			id: "extracells:storage.physical",
 			Damage: 4s,
 			tag: {
 				upgrades: {},
