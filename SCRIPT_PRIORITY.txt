@@ -23,3 +23,5 @@ MultiBlocks/GreenHouse - 970
 MultiBlocks/SawMill - 970
 
 MultiBlocks/StarForge - 970
+
+TFC-Registries - 960
