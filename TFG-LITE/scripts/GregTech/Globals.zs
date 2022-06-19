@@ -1,8 +1,8 @@
-#priority 997
+#priority 989
 
 import mods.gregtech.recipe.RecipeMap;
 
-// GregTechCEu
+// GTCEu
 global alloy_smelter             as RecipeMap = RecipeMap.getByName("alloy_smelter");
 global alloy_blast_smelter       as RecipeMap = RecipeMap.getByName("alloy_blast_smelter");
 global arc_furnace               as RecipeMap = RecipeMap.getByName("arc_furnace");
@@ -61,3 +61,7 @@ global baking_oven               as RecipeMap = RecipeMap.getByName("baking_oven
 global electric_baking_oven      as RecipeMap = RecipeMap.getByName("electric_baking_oven");
 // GM
 global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
+// Custom
+global greenhouse                as RecipeMap = RecipeMap.getByName("greenhouse");
+global saw_mill                  as RecipeMap = RecipeMap.getByName("saw_mill");
+global star_forge                as RecipeMap = RecipeMap.getByName("star_forge");

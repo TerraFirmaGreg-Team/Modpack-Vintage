@@ -2,9 +2,7 @@ import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.Anvil;
 
-// --- Removing Recipes
-
-// Removing recipes from Anvil
+// --- Массивы
 val RemoveItemsFromAnvil as IItemStack[] = [
     <cellars:bronze_ice_saw_head>,
     <cellars:bismuth_bronze_ice_saw_head>,
@@ -15,6 +13,10 @@ val RemoveItemsFromAnvil as IItemStack[] = [
     <cellars:red_steel_ice_saw_head>,
     <cellars:blue_steel_ice_saw_head>
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов наковальни
 for item in RemoveItemsFromAnvil{
     Anvil.removeRecipe(item);
 }

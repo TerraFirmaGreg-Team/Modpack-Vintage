@@ -1,15 +1,16 @@
 import crafttweaker.item.IItemStack;
 
-// --- Removing Recipes
+// --- Массивы
+
 val RemoveItemRecipesByName = [
-	//Отключение рецептов кремниевых инструментов
+	// Кремниевые инструменты
     "gregtech:sword_flint",
     "gregtech:pickaxe_flint",
     "gregtech:shovel_flint",
     "gregtech:axe_flint",
     "gregtech:hoe_flint",
     "gregtech:knife_flint",
-    // Отключение рецептов оголовье + палка
+    // Оголовье + Палка
     "gregtech:toolheadsword_flint_wood",
     "gregtech:toolheadpickaxe_flint_wood",
     "gregtech:toolheadshovel_flint_wood",
@@ -20,11 +21,15 @@ val RemoveItemRecipesByName = [
     "gregtech:toolheadsaw_flint_wood",
     "gregtech:toolheadsawsense_flint_wood"
 ] as string[];
+
+// --- Removing Recipes
+
+// Поименное удаление рецептов
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
 
-// Отключение переработки флинтовых инструментов
+// Отключение переработки кремниевых инструментов
 macerator.findRecipe(2, [<metaitem:toolHeadSwordFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadPickaxeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadShovelFlint>], null).remove();
@@ -35,5 +40,3 @@ macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
-
-// --- Adding Recipes

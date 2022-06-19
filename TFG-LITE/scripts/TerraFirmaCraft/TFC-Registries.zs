@@ -1,4 +1,4 @@
-#priority 989
+#priority 960
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -384,6 +384,7 @@ ItemRegistry.registerItemMetal(<metaitem:dustSmallSilver>, "SILVER", 25, true);
 // Маленькая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 10, true);
 
+// Описание #666
 for item in Bad_Dusts_Array {
         item.addTooltip(format.red(game.localize("tfg.warningaboutimpuredusts.name")));
 }

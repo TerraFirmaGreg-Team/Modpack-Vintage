@@ -1,19 +1,20 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//Облегчаем жизнь прописыванием коротких имен
-var quarry_shape_card = <rftools:shape_card:2>;
-//Модули хранения
+// --- Переназначение имен
+
+// Модули хранения
 var tier1StorageModule = <rftools:storage_module>;
 var tier2StorageModule = <rftools:storage_module:1>;
 var tier3StorageModule = <rftools:storage_module:2>;
-//Щиты
+// Щиты
 var shieldProjector1 = <rftools:shield_block1>;
 var shieldProjector2 = <rftools:shield_block2>;
 var shieldProjector3 = <rftools:shield_block3>;
 var shieldProjector4 = <rftools:shield_block4>;
-//Все предметы RFTools'a
+// Все предметы RFTools'a
 var matterTransmitter = <rftools:matter_transmitter>;
+var quarry_shape_card = <rftools:shape_card:2>;
 var matterReceiver = <rftools:matter_receiver>;
 var dialingDevice = <rftools:dialing_device>;
 var simpleDialingDevice = <rftools:simple_dialer>;
@@ -78,7 +79,7 @@ var modularStorage = <rftools:modular_storage>;
 var screen = <rftools:screen>;
 var levelEmitter = <rftools:level_emitter>;
 var remoteStorage = <rftools:remote_storage>;
-//Шприцы
+// Шприцы
 var n_syringeOcelot = <rftools:syringe>.withTag({mobName: "Ocelot", level: 10, mobId: "minecraft:ocelot"});
 var n_syringeGuardian = <rftools:syringe>.withTag({mobName: "Guardian", level: 10, mobId: "minecraft:guardian"});
 var n_syringeDonkey = <rftools:syringe>.withTag({mobName: "Donkey", level: 10, mobId: "minecraft:donkey"});
@@ -106,7 +107,7 @@ var n_syringeGhast = <rftools:syringe>.withTag({mobName: "Ghast", level: 10, mob
 var n_syringeButterfly = <rftools:syringe>.withTag({mobName: "Butterfly", level: 10, mobId: "biomesoplenty:butterfly"});
 var n_syringeSnowman = <rftools:syringe>.withTag({mobName: "Snow Golem", level: 10, mobId: "minecraft:snowman"});
 var n_syringeMooshroom = <rftools:syringe>.withTag({mobName: "Mooshroom", level: 10, mobId: "minecraft:mooshroom"});
-//Из обычного майна
+// Из обычного майна
 var n_goldPickaxeEff3 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 3 as short, id: 32 as short}]});
 var n_goldPickaxeEff5 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]});
 var o_goldBlock = <ore:blockGold>;
@@ -139,13 +140,13 @@ var chest = <ore:chest>;
 var netherQuartz = <ore:gemNetherQuartz>;
 var enderPearl = <minecraft:ender_pearl>;
 var enderChest = <minecraft:ender_chest>;
-//Книги с чарами
+// Книги с чарами
 var n_enchantedBookEff1 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 32 as short}]});
 var n_enchantedBookEff3 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 32 as short}]});
 var n_enchantedBookFF1 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 2 as short}]});
 var n_enchantedBookFF4 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]});
 var n_enchantedBookLotS2 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 61 as short}]});
-//Зельки
+// Зельки
 var n_splashRegen = <minecraft:splash_potion>.withTag({Potion: "minecraft:long_regeneration"});
 var n_splashRegen2 = <minecraft:splash_potion>.withTag({Potion: "minecraft:strong_regeneration"});
 var n_splashSpeed = <minecraft:splash_potion>.withTag({Potion: "minecraft:long_swiftness"});
@@ -156,7 +157,7 @@ var n_splashSlowness = <minecraft:splash_potion>.withTag({Potion: "minecraft:lon
 var n_splashPoison = <minecraft:splash_potion>.withTag({Potion: "minecraft:long_poison"});
 var n_splashWeakness = <minecraft:splash_potion>.withTag({Potion: "minecraft:long_weakness"});
 var n_splashNausea = <minecraft:splash_potion>.withTag({Potion: "minecraft:confusionLong"});
-//Предметы из гречки
+// Предметы из гречки
 var o_tinySteelPipe = <ore:pipeTinySteel>;
 var lvMachineCasing = <gregtech:machine_casing:1>;
 var o_plateSteel = <ore:plateSteel>;
@@ -216,22 +217,7 @@ var blockNetherQuartz = <minecraft:quartz_block>;
 var certusQuartz =  <ore:gemCertusQuartz>;
 var fluixCrystal = <ore:crystalFluix>;
 
-//Удаление + скрытие
-mods.jei.JEI.removeAndHide(<rftoolscontrol:graphics_card>);
-mods.jei.JEI.removeAndHide(<rftoolscontrol:network_card>);
-mods.jei.JEI.removeAndHide(<rftoolscontrol:ram_chip>);
-mods.jei.JEI.removeAndHide(<rftoolscontrol:advanced_network_card>);
-
-//Удаление рецептов
-recipes.removeByRecipeName("rftools:storage_control_module");
-recipes.removeByRecipeName("rftools:button_module");
-recipes.removeByRecipeName("rftools:storage_module_tablet");
-recipes.removeByRecipeName("rftools:shape_card_pump_dirt");
-recipes.removeByRecipeName("rftools:shape_card_quarry_dirt");
-recipes.removeByRecipeName("rftools:shape_card_quarry_fortune_dirt");
-recipes.removeByRecipeName("rftools:shape_card_quarry_silk_dirt");
-
-//Удаление рецептов 2
+// --- Массивы
 val ItemsToRemove as IItemStack[] = [
 	<rftools:builder>,
 	<rftools:spawner>,
@@ -349,771 +335,789 @@ val ItemsToRemove as IItemStack[] = [
   shieldProjector3,
   shieldProjector4,
 ] as IItemStack[];
+
+val RemoveItemRecipesByName = [
+    "rftools:storage_control_module",
+    "rftools:button_module",
+    "rftools:storage_module_tablet",
+    "rftools:shape_card_pump_dirt",
+    "rftools:shape_card_quarry_dirt",
+    "rftools:shape_card_quarry_fortune_dirt",
+    "rftools:shape_card_quarry_silk_dirt",
+    "rftools:shape_card_quarry"
+] as string[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in ItemsToRemove{
-    recipes.remove(item);
+  recipes.remove(item);
 }
 
-//Удаление по названию рецепта
-recipes.removeByRecipeName("rftools:shape_card_quarry");
+// Поименное удаление рецептов
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
 
-//Базовая карточка из RFTools
+// --- Добавление рецептов
+
+// Базовая карточка из RFTools
 assembler.recipeBuilder()
   .inputs(<ore:circuitBasic> * 2, <gregtech:meta_item_1:382> * 1)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<rftoolscontrol:card_base>)
   .duration(1250).EUt(56).buildAndRegister(); 
 
-//Шард из RFTC
+// Шард из RFTC
 chemical_reactor.recipeBuilder()
 	.inputs([<minecraft:prismarine_crystals>, <minecraft:chorus_fruit_popped> * 2])
 	.fluidInputs([<liquid:neodymium> * 750])
 	.outputs(<rftools:dimensional_shard> * 4)
 	.duration(80).EUt(30).buildAndRegister();
 
-//Крутой алмаз из RFTC
+// Крутой алмаз из RFTC
 chemical_reactor.recipeBuilder()
 	.inputs([<rftools:dimensional_shard> * 8, <ore:gemDiamond>])
 	.fluidInputs([<liquid:radon> * 50])
 	.outputs(<rftools:infused_diamond>)
 	.duration(100).EUt(30).buildAndRegister();
 
-//Крутой эндерперл из RFTC
+// Крутой эндерперл из RFTC
 chemical_reactor.recipeBuilder()
 	.inputs([<rftools:dimensional_shard> * 8, <ore:gemEnderPearl>])
 	.fluidInputs([<liquid:radon> * 50])
 	.outputs(<rftools:infused_enderpearl>)
 	.duration(100).EUt(30).buildAndRegister();
 
-//Краснокаменный провод из RFTC
+// Краснокаменный провод из RFTC
 assembler.recipeBuilder()
 	.inputs(<minecraft:redstone> * 3, <minecraft:stone_slab> * 3)
 	.outputs(<rftools:wire_block> * 4)
 	.duration(600).EUt(4).buildAndRegister();
 
-//Процессор 1 лвл
+// Процессор 1 лвл
 assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:382>, <ore:circuitBasic> * 2, <ore:wireGtSingleRedAlloy> * 4, <ore:componentResistor> * 16)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<rftoolscontrol:cpu_core_500>)
 	.duration(500).EUt(32).buildAndRegister();
 
-//Процессор 2 лвл
+// Процессор 2 лвл
 assembler.recipeBuilder()
 	.inputs(<rftoolscontrol:cpu_core_500>, <ore:circuitGood> * 2, <ore:wireGtSingleAnnealedCopper> * 8, <ore:componentResistor> * 32)
    	.fluidInputs([<liquid:soldering_alloy> * 486])
 	.outputs(<rftoolscontrol:cpu_core_1000>)
 	.duration(400).EUt(128).buildAndRegister();
 
-//Процессор 3 лвл
+// Процессор 3 лвл
 assembler.recipeBuilder()
 	.inputs(<rftoolscontrol:cpu_core_1000>, <ore:circuitAdvanced> * 2, <ore:wireGtSingleElectrum> * 4, <ore:componentResistor> * 48)
   .fluidInputs([<liquid:soldering_alloy> * 624])
 	.outputs(<rftoolscontrol:cpu_core_2000>)
 	.duration(300).EUt(256).buildAndRegister();
 
-//Рецепты
-//2x2 крафты
-//Ключ
+// Умный ключ
 recipes.addShaped(smartWrench, [[null, <ore:craftingToolWrench>], [o_lapis, null]]);
+
+// Редстоун ресивер
 recipes.addShapeless(redstoneReceiver, [redstoneReceiver]);
 
-//3х3
-//Хранилище 1 уровня модуль
-recipes.addShaped(tier1StorageModule, [
+// Хранилище 1 уровня модуль
+recipes.addShaped("tfg/rftools/storage_module/tier1", tier1StorageModule, [
   [null, <ore:chest>, null], 
   [o_plateSteel, o_plateWroughtIron, o_plateSteel], 
   [netherQuartz, o_basicCircuit, netherQuartz]]);
 
-//Хранилище 2 уровня модуль
-recipes.addShaped(tier2StorageModule, [
+// Хранилище 2 уровня модуль
+recipes.addShaped("tfg/rftools/storage_module/tier2", tier2StorageModule, [
   [null, <ore:chest>, null], 
   [plateAluminium, tier1StorageModule.marked("module"), plateAluminium], 
   [certusQuartz, o_goodCircuit, certusQuartz]]);
 
-//Хранилище 3 уровня модуль
-recipes.addShaped(tier3StorageModule, [
-[null, <ore:chest>, null], 
-[o_plateStainlessSteel, tier2StorageModule.marked("module"), o_plateStainlessSteel], 
-[fluixCrystal, <ore:circuitAdvanced>, fluixCrystal]]);
+// Хранилище 3 уровня модуль
+recipes.addShaped("tfg/rftools/storage_module/tier3", tier3StorageModule, [
+  [null, <ore:chest>, null], 
+  [o_plateStainlessSteel, tier2StorageModule.marked("module"), o_plateStainlessSteel], 
+  [fluixCrystal, <ore:circuitAdvanced>, fluixCrystal]]);
 
-//Шприц
-recipes.addShaped(syringe, [
+// Шприц
+recipes.addShaped("tfg/rftools/syringe", syringe, [
 	[o_smallSteelPipe, null, null],
 	[null, o_smallSteelPipe, null],
 	[null, null, glass_bottle]]);
 
-//Основной блок
-recipes.addShaped(machineFrame, [
+// Основной блок
+recipes.addShaped("tfg/rftools/machine_frame", machineFrame, [
 	[o_plateWroughtIron, <ore:plateGold>, o_plateWroughtIron],
 	[<ore:wireGtSingleCopper>, lvMachineCasing, <ore:wireGtSingleCopper>]]);
 
-//Основная база
-recipes.addShaped(machineBase, [
+// Основная база
+recipes.addShaped("tfg/rftools/machine_base", machineBase, [
 	[o_plateWroughtIron, <ore:craftingToolHardHammer>, o_plateWroughtIron],
 	[slabStone, slabStone, slabStone]]);
 
-//Создатель 1
-recipes.addShaped(crafter1, [
+// Создатель 1
+recipes.addShaped("tfg/rftools/crafter1", crafter1, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, machineFrame, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
 
-//Создатель 2
-recipes.addShaped(crafter2, [
+// Создатель 2
+recipes.addShaped("tfg/rftools/crafter2", crafter2, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, crafter1, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
 
-//Создатель 3
-recipes.addShaped(crafter3, [
+// Создатель 3
+recipes.addShaped("tfg/rftools/crafter3", crafter3, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, crafter2, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
   
-//Ресивер материи
-recipes.addShaped(matterReceiver, [
+// Ресивер материи
+recipes.addShaped("tfg/rftools/matter_receiver", matterReceiver, [
 	[o_plateNaquadahAlloy, evFieldGenerator, o_plateNaquadahAlloy],
 	[evSensor, machineFrame, evSensor],
 	[o_eliteCircuit, evEmitter, o_eliteCircuit]]);
 
-//Трансмитер материи	
-recipes.addShaped(matterTransmitter, [
+// Трансмитер материи	
+recipes.addShaped("tfg/rftools/matter_transmitter", matterTransmitter, [
 	[o_plateNaquadahAlloy, evFieldGenerator, o_plateNaquadahAlloy],
 	[evEmitter, machineFrame, evEmitter],
 	[o_eliteCircuit, evSensor, o_eliteCircuit]]);
 
-//Заряженный портер
-recipes.addShaped(chargedPorter, [
+// Заряженный портер
+recipes.addShaped("tfg/rftools/charged_porter", chargedPorter, [
 	[o_plateNaquadahAlloy, o_lapotron, o_plateNaquadahAlloy],
 	[evFieldGenerator, infusedDiamond, evFieldGenerator],
 	[ivSensor, o_lapotron, ivEmitter]]);
   
-//Улучшенный заряженный портер	
-recipes.addShaped(advChargedPorter, [
+// Улучшенный заряженный портер	
+recipes.addShaped("tfg/rftools/advanced_charged_porter", advChargedPorter, [
 	[o_masterCircuit, lapotronOrb, o_masterCircuit],
 	[ivFieldGenerator, chargedPorter, ivFieldGenerator],
 	[o_masterCircuit, lapotronOrb, o_masterCircuit]]);
 
-//Устройство набора номера
-recipes.addShaped(dialingDevice, [
+// Устройство набора номера
+recipes.addShaped("tfg/rftools/dialing_device", dialingDevice, [
 	[o_plateTitanium, evEmitter, o_plateTitanium],
 	[evSensor, machineFrame, evSensor],
 	[o_plateTitanium, o_masterCircuit, o_plateTitanium]]);
 
-//Простое устройство набора номера	
-recipes.addShaped(simpleDialingDevice, [
+// Простое устройство набора номера	
+recipes.addShaped("tfg/rftools/simple_dialing_device", simpleDialingDevice, [
 	[o_plateTitanium, evEmitter, o_plateTitanium],
 	[comparator, machineBase, o_eliteCircuit]]);
 
-//Анализатор места назначения	
-recipes.addShaped(destinationAnalyzer, [
+// Анализатор места назначения	
+recipes.addShaped("tfg/rftools/destination_analyzer", destinationAnalyzer, [
 	[o_plateTitanium, o_eliteCircuit, o_plateTitanium],
 	[o_eliteCircuit, machineFrame, o_eliteCircuit],
 	[o_plateTitanium, evSensor, o_plateTitanium]]);
 
-//Ускоритель материи	
-recipes.addShaped(matterBooster, [
+// Ускоритель материи	
+recipes.addShaped("tfg/rftools/matter_booster", matterBooster, [
 	[o_plateTitanium, ivFieldGenerator, o_plateTitanium],
 	[ivEmitter, machineFrame, ivEmitter],
 	[o_plateTitanium, lapotronOrb, o_plateTitanium]]);
 
-//Простая ячейка
-recipes.addShaped(simpleCell, [
+// Простая ячейка
+recipes.addShaped("tfg/rftools/simple_cell", simpleCell, [
 	[o_redstoneBlock, batterySodiumLV, o_redstoneBlock],
 	[o_netherQuartz, machineFrame, o_netherQuartz],
 	[o_redstoneBlock, diamond, o_redstoneBlock]]);
 
-//Средняя ячейка	
-recipes.addShaped(mediumCell, [
+// Средняя ячейка	
+recipes.addShaped("tfg/rftools/medium_cell_0", mediumCell, [
 	[o_redstone, batterySodiumMV, o_redstone],
 	[o_prismarine, simpleCell, o_prismarine],
 	[o_redstone, emerald, o_redstone]]);
 
-//Средняя ячейка 2	
-recipes.addShaped(mediumCell, [
+// Средняя ячейка 2	
+recipes.addShaped("tfg/rftools/medium_cell_1", mediumCell, [
 	[o_redstoneBlock, batterySodiumMV, o_redstoneBlock],
 	[o_prismarine, machineFrame, o_prismarine],
 	[o_redstoneBlock, emerald, o_redstoneBlock]]);
 
-//Улучшенная ячейка	
-recipes.addShaped(advCell, [
+// Улучшенная ячейка	
+recipes.addShaped("tfg/rftools/advanced_cell", advCell, [
 	[o_redstoneBlock, batterySodiumHV, o_redstoneBlock],
 	[infusedDiamond, mediumCell, infusedDiamond],
 	[o_redstoneBlock, infusedDiamond, o_redstoneBlock]]);
 
-//Ячеечная карта	
-recipes.addShaped(cellCard, [
+// Ячеечная карта	
+recipes.addShaped("tfg/rftools/cell_card", cellCard, [
 	[o_quartzite, o_rodBrass, o_quartzite],
 	[o_rodBrass, o_basicCircuit, o_rodBrass],
 	[o_quartzite, o_rodBrass, o_quartzite]]);
 
-//Лифт
-recipes.addShaped(elevator, [
+// Лифт
+recipes.addShaped("tfg/rftools/elevator", elevator, [
 	[o_ironGear, o_basicCircuit, o_ironGear],
 	[lvMotor, machineFrame, lvMotor],
 	[o_ironGear, o_basicCircuit, o_ironGear]]);
 
-//Мировой контроллер
-recipes.addShaped(environmentalController, [
+//  Мировой контроллер
+recipes.addShaped("tfg/rftools/enviromental_controller", environmentalController, [
 	[evEmitter, evFieldGenerator, evEmitter],
 	[infusedDiamond, machineFrame, infusedDiamond],
 	[o_plateTitanium, o_plateTitanium, o_plateTitanium]]);
 
-//Ускоритель
-recipes.addShaped(booster, [
+// Ускоритель
+recipes.addShaped("tfg/rftools/booster", booster, [
 	[lvEmitter, emeraldLens, lvEmitter],
 	[dimensionalShard, machineFrame, dimensionalShard],
 	[o_plateStainlessSteel, o_plateStainlessSteel, o_plateStainlessSteel]]);
 
-//Модуль регенерации 1
-recipes.addShaped(ecRegeneration, [
+// Модуль регенерации 1
+recipes.addShaped("tfg/rftools/ec_generation", ecRegeneration, [
 	[null, n_syringeIronGolem.giveBack(syringe), null],
 	[n_splashRegen.giveBack(<minecraft:glass_bottle>), <ore:plateGold>, n_splashRegen.giveBack(<minecraft:glass_bottle>)],
 	[null, o_goodCircuit, null]]);
 
-//Модуль регенерации 3
-recipes.addShaped(ecRegeneration3, [
+// Модуль регенерации 3
+recipes.addShaped("tfg/rftools/ec_generation_3", ecRegeneration3, [
 	[n_syringePolarBear.giveBack(syringe), n_syringeIronGolem.giveBack(syringe), n_syringePolarBear.giveBack(syringe)],
 	[n_splashRegen2.giveBack(<minecraft:glass_bottle>), ecRegeneration, n_splashRegen2.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль скорости 1	
-recipes.addShaped(ecSpeed, [
+// Модуль скорости 1	
+recipes.addShaped("tfg/rftoolsec_speed", ecSpeed, [
 	[null, n_syringeHorse.giveBack(syringe), null],
 	[n_splashSpeed.giveBack(<minecraft:glass_bottle>), <ore:plateGold>, n_splashSpeed.giveBack(<minecraft:glass_bottle>)],
 	[null, o_goodCircuit, null]]);
 
-//Модуль скорости 3		
-recipes.addShaped(ecSpeed3, [
+// Модуль скорости 3		
+recipes.addShaped("tfg/rftools/ec_speed_3", ecSpeed3, [
 	[n_syringeZombieHorse.giveBack(syringe), n_syringeHorse.giveBack(syringe), n_syringeZombieHorse.giveBack(syringe)],
 	[n_splashSpeed2.giveBack(<minecraft:glass_bottle>), ecSpeed, n_splashSpeed2.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль скорость копания 1	
-recipes.addShaped(ecHaste, [
+// Модуль скорость копания 1	
+recipes.addShaped("tfg/rftools/ec_haste", ecHaste, [
 	[null, n_goldPickaxeEff3, null],
 	[n_enchantedBookEff1, <ore:plateGold>, n_enchantedBookEff1],
 	[null, o_goodCircuit, null]]);
 
-//Модуль скорость копания 3	
-recipes.addShaped(ecHaste3, [
+// Модуль скорость копания 3	
+recipes.addShaped("tfg/rftools/ec_haste_3", ecHaste3, [
 	[n_syringeRabbit.giveBack(syringe), n_goldPickaxeEff5, n_syringeRabbit.giveBack(syringe)],
 	[n_enchantedBookEff3, ecHaste, n_enchantedBookEff3],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль сопротивление 1	
-recipes.addShaped(ecSaturation, [
+// Модуль сопротивление 1	
+recipes.addShaped("tfg/rftools/ec_saturation", ecSaturation, [
 	[null, n_syringeZombie.giveBack(syringe), null],
 	[<ore:foodPizza>, <ore:plateGold>, <ore:foodPizza>],
 	[null, o_goodCircuit, null]]);
 
-//Модуль сопротивление 2	
-recipes.addShaped(ecSaturation3, [
+// Модуль сопротивление 2	
+recipes.addShaped("tfg/rftools/ec_saturation_3", ecSaturation3, [
 	[n_syringeAngryZombie.giveBack(syringe), n_syringeZombie.giveBack(syringe), n_syringeAngryZombie.giveBack(syringe)],
 	[<ore:foodMeatfeastpizza>, ecSaturation, <ore:foodMeatfeastpizza>],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль легкого подения 1	
-recipes.addShaped(ecFeatherFalling, [
+// Модуль легкого подения 1	
+recipes.addShaped("tfg/rftools/ec_feather_falling", ecFeatherFalling, [
 	[null, n_syringeChicken.giveBack(syringe), null],
 	[n_enchantedBookFF1, <ore:plateGold>, n_enchantedBookFF1],
 	[null, o_goodCircuit, null]]);
 
-//Модуль легкого подения 3		
-recipes.addShaped(ecFeatherFallingPlus, [
+// Модуль легкого подения 3		
+recipes.addShaped("tfg/rftools/ec_feather_falling_plus", ecFeatherFallingPlus, [
 	[n_syringeBat.giveBack(syringe), n_syringeChicken.giveBack(syringe), n_syringeBat.giveBack(syringe)],
 	[n_enchantedBookFF4, ecFeatherFalling, n_enchantedBookFF4],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль полет	
-recipes.addShaped(ecFlight, [
+// Модуль полет	
+recipes.addShaped("tfg/rftools/ec_flight", ecFlight, [
 	[n_syringeBat.giveBack(syringe), n_syringeGhast.giveBack(syringe), n_syringeParrot.giveBack(syringe)],
 	[dragonBreath, <ore:plateGold>, dragonBreath],
 	[n_syringeWasp.giveBack(syringe), o_eliteCircuit, n_syringeButterfly.giveBack(syringe)]]);
 
-//Модуль полета 3	
-recipes.addShaped(peaceEssence, [
+// Модуль полета 3	
+recipes.addShaped("tfg/rftools/peace_essence", peaceEssence, [
 	[n_syringeIronGolem.giveBack(syringe), n_syringeSnowman.giveBack(syringe), n_syringeMooshroom.giveBack(syringe)],
 	[n_syringeWolf.giveBack(syringe), infusedDiamond, n_syringeOcelot.giveBack(syringe)],
 	[n_syringeDonkey.giveBack(syringe), n_syringeGuardian.giveBack(syringe), n_syringeBat.giveBack(syringe)]]);
 
-//Модуль мирности
-recipes.addShaped(ecPeaceful, [
+// Модуль мирности
+recipes.addShaped("tfg/rftools/ec_peaceful", ecPeaceful, [
 	[null, peaceEssence, null],
 	[<ore:itemSkull>, <ore:plateGold>, <ore:itemSkull>],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль свячения
-recipes.addShaped(ecGlowing, [
+// Модуль свячения
+recipes.addShaped("tfg/rftools/ec_glowing", ecGlowing, [
 	[spectralArrow, n_syringeBlaze, spectralArrow],
 	[spectralArrow, <ore:plateGold>, spectralArrow],
 	[spectralArrow, o_goodCircuit, spectralArrow]]);
 
-//Модуль везения	
-recipes.addShaped(ecLuck, [
+// Модуль везения	
+recipes.addShaped("tfg/rftools/ec_luck", ecLuck, [
 	[null, n_syringeShulker, null],
 	[n_enchantedBookLotS2, <ore:plateGold>, n_enchantedBookLotS2],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль отмены телепортации	
-recipes.addShaped(ecNoTeleport, [
+// Модуль отмены телепортации	
+recipes.addShaped("tfg/rftools/ec_no_teleport", ecNoTeleport, [
 	[n_syringeEnderman, n_syringeEndermite, n_syringeEnderman],
 	[cobweb, <minecraft:obsidian>, cobweb],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Монитор сети
-recipes.addShaped(networkMonitor, [
+// Монитор сети
+recipes.addShaped("tfg/rftools/network_monitor", networkMonitor, [
 	[<ore:plateIron>, lvSensor, <ore:plateIron>],
 	[<ore:plateIron>, o_redstone, <ore:plateIron>],
 	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 
-//Монитор энергии
-recipes.addShaped(rfMonitor, [
+// Монитор энергии
+recipes.addShaped("tfg/rftools/rf_monitor", rfMonitor, [
 	[null, lvSensor, null],
 	[o_redstone, machineFrame, o_redstone],
 	[null, o_basicCircuit, null]]);
 
-//Жидкостный монитор
-recipes.addShaped(liquidMonitor, [
+// Жидкостный монитор
+recipes.addShaped("tfg/rftools/liquid_monitor", liquidMonitor, [
 	[null, lvSensor, null],
 	[bucket, machineFrame, bucket],
 	[null, o_basicCircuit, null]]);
 
-//Редстоуновые провода
-recipes.addShaped(redstoneWire * 4, [
+// Редстоуновые провода
+recipes.addShaped("tfg/rftools/redstone_wire", redstoneWire * 4, [
 	[null, <ore:craftingToolHardHammer>, null],
 	[o_redstone, o_redstone, o_redstone],
 	[slabStone, slabStone, slabStone]]);
 
-//Редстоуновый ресивер
-recipes.addShaped(redstoneReceiver, [
+// Редстоуновый ресивер
+recipes.addShaped("tfg/rftools/redstone_receiver", redstoneReceiver, [
 	[null, mvSensor, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
 
-//Редстоуновый трансмиттер
-recipes.addShaped(redstoneTransmitter, [
+// Редстоуновый трансмиттер
+recipes.addShaped("tfg/rftools/redstone_transmitter", redstoneTransmitter, [
 	[null, mvEmitter, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
 
-//Редстоуновый указатель
-recipes.addShaped(redstoneCounter, [
+// Редстоуновый указатель
+recipes.addShaped("tfg/rftools/redstone_counter", redstoneCounter, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstone, null]]);
 
-//Редстоуновый таймер
-recipes.addShaped(redstoneTimer, [
+// Редстоуновый таймер
+recipes.addShaped("tfg/rftools/redstone_timer", redstoneTimer, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_goldNugget, null]]);
 
-//Красная логика
-recipes.addShaped(redstoneLogic, [
+// Красная логика
+recipes.addShaped("tfg/rftools/redstone_logic", redstoneLogic, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_anyQuartz, null]]);
 
-//Еще сенсор красного камня
-recipes.addShaped(redstoneSequencer, [
+// Еще сенсор красного камня
+recipes.addShaped("tfg/rftools/redstone_sequencer", redstoneSequencer, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstoneTorch, null]]);
 
-//Сенсор красного камня
-recipes.addShaped(redstoneSensor, [
+// Сенсор красного камня
+recipes.addShaped("tfg/rftools/redstone_sensor", redstoneSensor, [
 	[null, lvSensor, null],
 	[null, redstoneWire, null],
 	[null, o_basicCircuit, null]]);
 
-//Проверка красного камня
-recipes.addShaped(redstoneInvChecker, [
+// Проверка красного камня
+recipes.addShaped("tfg/rftools/redstone_inv_checker", redstoneInvChecker, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
-//Модульное хранилище
-recipes.addShaped(modularStorage, [
+// Модульное хранилище
+recipes.addShaped("tfg/rftools/modular_storage", modularStorage, [
 	[plateAluminium, chest, plateAluminium], 
 	[netherQuartz, machineFrame, netherQuartz], 
 	[plateAluminium, circuitAdvanced, plateAluminium]]);
 
-//Удаленное хранилище
-recipes.addShaped(remoteStorage, [
+// Удаленное хранилище
+recipes.addShaped("tfg/rftools/remote_storage", remoteStorage, [
 	[plateEnderium, enderChest, plateEnderium], 
 	[netherQuartz, machineFrame, netherQuartz], 
 	[plateEnderium, circuitData, plateEnderium]]);
 
-//Переключатель уровня
-recipes.addShaped(levelEmitter, [
+// Переключатель уровня
+recipes.addShaped("tfg/rftools/level_emitter", levelEmitter, [
 	[null, enderPearl, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
-//Экран
-recipes.addShaped(screen, [
+// Экран
+recipes.addShaped("tfg/rftools/screen", screen, [
 	[plateGlass, plateGlass, plateGlass],
 	[plateIron, machineBase, plateIron],
 	[circuitBasic, plateIron, circuitBasic]]);
 
-//Строитель
-recipes.addShaped(<rftools:builder>, [
+// Строитель
+recipes.addShaped("tfg/rftools/builer", <rftools:builder>, [
   [hvRobotArm, <minecraft:ender_pearl>, hvRobotArm], 
   [hvSensor, <rftools:machine_frame>, hvSensor], 
   [hvConveyor, <ore:craftingToolWrench>, hvConveyor]]);
 
-//Генератор щита 1
-recipes.addShaped(shieldProjector1, [
+// Генератор щита 1
+recipes.addShaped("tfg/rftools/shield_projector_1", shieldProjector1, [
   [<minecraft:gold_ingot>, hvEmitter, <minecraft:gold_ingot>], 
   [<minecraft:redstone>, <rftools:machine_frame>, <minecraft:redstone>], 
   [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
-//Генератор щита 2
-recipes.addShaped(shieldProjector2, [
+// Генератор щита 2
+recipes.addShaped("tfg/rftools/shield_projector_2", shieldProjector2, [
   [<minecraft:redstone_block>, evEmitter, <minecraft:redstone_block>], 
   [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
   [<minecraft:redstone_block>, <minecraft:obsidian>, <minecraft:redstone_block>]]);
 
-//Генератор щита 3
-recipes.addShaped(shieldProjector3, [
+// Генератор щита 3
+recipes.addShaped("tfg/rftools/shield_projector_3", shieldProjector3, [
   [<rftools:dimensional_shard>, ivEmitter, <rftools:dimensional_shard>], 
   [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
   [<rftools:dimensional_shard>, <minecraft:obsidian>, <rftools:dimensional_shard>]]);
 
-//Генератор щита 4
-recipes.addShaped(shieldProjector4, [
+// Генератор щита 4
+recipes.addShaped("tfg/rftools/shield_projector_4", shieldProjector4, [
   [<minecraft:nether_star>, luvEmitter, <rftools:dimensional_shard>], 
   [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
   [<rftools:dimensional_shard>, <minecraft:obsidian>, <minecraft:nether_star>]]);
 
-//Спавнер
-recipes.addShaped(<rftools:spawner>, [
+// Спавнер
+recipes.addShaped("tfg/rftools/spawner", <rftools:spawner>, [
   [<minecraft:redstone>, mvEmitter, <minecraft:redstone>], 
   [<minecraft:ender_pearl>, <rftools:machine_frame>, emeraldLens], 
   [<minecraft:redstone>, mvEmitter, <minecraft:redstone>]]);
 
-//Метка материи
-recipes.addShaped(<rftools:matter_beamer>, [
+// Метка материи
+recipes.addShaped("tfg/rftools/matter_beamer", <rftools:matter_beamer>, [
   [<minecraft:redstone_block>, lvEmitter, <minecraft:redstone_block>], 
   [<minecraft:glowstone>, <rftools:machine_frame>, <minecraft:glowstone>], 
   [<minecraft:redstone_block>, <minecraft:glowstone>, <minecraft:redstone_block>]]);
 
-//Защита блоков  
-recipes.addShaped(<rftools:block_protector>, [
+// Защита блоков  
+recipes.addShaped("tfg/rftools/block_protector", <rftools:block_protector>, [
   [hvEmitter, <rftools:shield_template_block>, hvEmitter], 
   [<rftools:shield_template_block>, <rftools:machine_frame>, <rftools:shield_template_block>], 
   [hvSensor, <rftools:shield_template_block>, hvSensor]]);
 
-//Фильтр предметов
-recipes.addShaped(<rftools:item_filter>, [
+// Фильтр предметов
+recipes.addShaped("tfg/rftools/item_filter", <rftools:item_filter>, [
   [<minecraft:paper>, <ore:chest>, <minecraft:paper>], 
   [lvConveyor, <rftools:machine_base>, lvMotor], 
   [<minecraft:paper>, <minecraft:redstone_torch>, <minecraft:paper>]]);
 
 
-//Энерго-фигня
-recipes.addShaped(<rftools:endergenic>, [
+// Энерго-фигня
+recipes.addShaped("tfg/rftools/endergenic", <rftools:endergenic>, [
   [<minecraft:diamond>, <minecraft:ender_pearl>, <minecraft:diamond>], 
   [<minecraft:ender_pearl>, <rftools:machine_frame>, <minecraft:ender_pearl>], 
   [<minecraft:diamond>, lvEmitter, <minecraft:diamond>]]);
 
-//Сканер хранения
-recipes.addShaped(<rftools:storage_scanner>, [
+// Сканер хранения
+recipes.addShaped("tfg/rftools/storage_scanner", <rftools:storage_scanner>, [
   [<ore:cableGtDoubleRedAlloy>, mvSensor, <ore:cableGtSingleGold>], 
   [<ore:plateGold>, <rftools:machine_frame>, <ore:plateGold>], 
   [<ore:cableGtSingleGold>, <minecraft:ender_pearl>, <ore:cableGtDoubleRedAlloy>]]);
 
-//Карьерный шаблон карты
-recipes.addShaped(quarry_shape_card, [
+// Карьерный шаблон карты
+recipes.addShaped("tfg/rftools/quarry_shape_card", quarry_shape_card, [
   [<minecraft:redstone>, <ore:toolHeadPickaxeDiamond>, <minecraft:redstone>], 
   [<ore:plateIron>, <rftools:shape_card>, <ore:plateIron>], 
   [<minecraft:redstone>, <ore:toolHeadShovelDiamond>, <minecraft:redstone>]]);
 
-//Модуль подводного дыхания	
-recipes.addShaped(ecWaterBreathing, [
+// Модуль подводного дыхания	
+recipes.addShaped("tfg/rftools/ec_water_breathing", ecWaterBreathing, [
 	[null, n_syringeGuardian.giveBack(syringe), null],
 	[n_splashWaterBreathing.giveBack(<minecraft:glass_bottle>), <ore:plateGold>, n_splashWaterBreathing.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль ночного зрения	
-recipes.addShaped(ecNightVision, [
+// Модуль ночного зрения	
+recipes.addShaped("tfg/rftools/ec_night_vision", ecNightVision, [
 	[null, n_syringeWitch.giveBack(syringe), null],
 	[n_splashNightVision.giveBack(<minecraft:glass_bottle>), <ore:plateGold>, n_splashNightVision.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль слепоты	
-recipes.addShaped(ecBlindness, [
+// Модуль слепоты	
+recipes.addShaped("tfg/rftools/ec_blindness", ecBlindness, [
 	[null, n_syringeSquid.giveBack(syringe), null],
 	[n_splashNausea.giveBack(<minecraft:glass_bottle>), <minecraft:obsidian>, n_splashNausea.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль слабости	
-recipes.addShaped(ecWeakness, [
+// Модуль слабости	
+recipes.addShaped("tfg/rftools/ec_weakness", ecWeakness, [
 	[null, n_syringeBat.giveBack(syringe), null],
 	[n_splashWeakness.giveBack(<minecraft:glass_bottle>), <minecraft:obsidian>, n_splashWeakness.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль отправления	
-recipes.addShaped(ecPoison, [
+// Модуль отправления	
+recipes.addShaped("tfg/rftools/ec_poison", ecPoison, [
 	[null, n_syringeCaveSpider.giveBack(syringe), null],
 	[n_splashPoison.giveBack(<minecraft:glass_bottle>), <minecraft:obsidian>, n_splashPoison.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Модуль медлительности	
-recipes.addShaped(ecSlowness, [
+// Модуль медлительности	
+recipes.addShaped("tfg/rftools/ec_slowness", ecSlowness, [
 	[null, n_syringeSlime.giveBack(syringe), null],
 	[n_splashSlowness.giveBack(<minecraft:glass_bottle>), <minecraft:obsidian>, n_splashNightVision.giveBack(<minecraft:glass_bottle>)],
 	[null, <ore:circuitAdvanced>, null]]);
 
-//Рэле
-recipes.addShaped(<rftools:relay>, [
+// Рэле
+recipes.addShaped("tfg/rftools/relay", <rftools:relay>, [
   [<ore:plateGold>, <ore:cableGtSingleGold>, <ore:plateGold>], 
   [<ore:plateGold>, <rftools:machine_frame>, <ore:plateGold>], 
   [<ore:plateGold>, <ore:cableGtSingleGold>, <ore:plateGold>]]);
 
-//Процессор
-recipes.addShaped(<rftoolscontrol:processor>, [
+// Процессор
+recipes.addShaped("tfg/rftools/processor", <rftoolscontrol:processor>, [
   [<ore:plateTitanium>, <ore:cableGtDoubleRedAlloy>, <ore:plateTitanium>], 
   [<rftoolscontrol:card_base>, <rftools:machine_frame>, <rftoolscontrol:card_base>], 
   [<ore:plateTitanium>, <ore:cableGtDoubleRedAlloy>, <ore:plateTitanium>]]);
 
-//Бак
-recipes.addShaped(<rftoolscontrol:tank>, [
+// Бак
+recipes.addShaped("tfg/rftools/tank", <rftoolscontrol:tank>, [
   [<rftools:machine_frame>, <ore:plateSteel>, <ore:plateSteel>], 
   [<ore:plateSteel>, <gregtech:machine:814>, <gregtech:machine:814>], 
   [<ore:plateSteel>, <gregtech:machine:814>, <ore:plateSteel>]]);
 
-//Программист
-recipes.addShaped(<rftoolscontrol:programmer>, [
+// Программист
+recipes.addShaped("tfg/rftools/programmer", <rftoolscontrol:programmer>, [
   [<ore:plateSteel>, <rftools:screen>, <ore:plateSteel>], 
   [<ore:cableGtSingleGold>, <rftools:machine_frame>, <ore:cableGtSingleGold>], 
   [<ore:circuitAdvanced>, <rftoolscontrol:cpu_core_2000>, <ore:circuitAdvanced>]]);
 
-//Нода
-recipes.addShaped(<rftoolscontrol:node>, [
+// Нода
+recipes.addShaped("tfg/rftools/node", <rftoolscontrol:node>, [
   [<appliedenergistics2:wireless_access_point>, <ore:cableGtSingleGold>, <gregtech:meta_item_1:32691>], 
   [<ore:cableGtDoubleRedAlloy>, <rftools:machine_frame>, <ore:cableGtDoubleRedAlloy>], 
   [<ore:plateGold>, <rftoolscontrol:card_base>, <ore:plateGold>]]);
 
-//Верстак
-recipes.addShaped(<rftoolscontrol:workbench>, [
+// Верстак
+recipes.addShaped("tfg/rftools/workbench", <rftoolscontrol:workbench>, [
   [<ore:plateVanadiumSteel>, <ore:craftingTableWood>, <ore:plateVanadiumSteel>], 
   [<ore:plateVanadiumSteel>, <rftools:machine_frame>, <ore:plateVanadiumSteel>], 
   [<ore:plateVanadiumSteel>, <ore:chestWood>, <ore:plateVanadiumSteel>]]);
 
-//Верстак
-recipes.addShaped(<rftoolscontrol:craftingstation>, [
+// Верстак
+recipes.addShaped("tfg/rftools/crafting_station", <rftoolscontrol:craftingstation>, [
   [<ore:cableGtSingleGold>, <rftoolscontrol:card_base>, <ore:cableGtSingleGold>], 
   [<rftoolscontrol:workbench>, <rftools:machine_frame>, <rftoolscontrol:workbench>], 
   [<ore:cableGtSingleGold>, <rftoolscontrol:card_base>, <ore:cableGtSingleGold>]]);
 
-//Редстоун модуль
-recipes.addShaped(<rftools:redstone_module>, [
+// Редстоун модуль
+recipes.addShaped("tfg/rftools/redstone_module", <rftools:redstone_module>, [
   [null, <minecraft:repeater>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Часовой модуль
-recipes.addShaped(<rftools:clock_module>, [
+// Часовой модуль
+recipes.addShaped("tfg/rftools/clock_module", <rftools:clock_module>, [
   [null, <minecraft:clock>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Указатель плюса модуль
-recipes.addShaped(<rftools:counterplus_module>, [
+// Указатель плюса модуль
+recipes.addShaped("tfg/rftools/counterplus_module", <rftools:counterplus_module>, [
   [null, <appliedenergistics2:material:9>, null], 
   [<ore:plateGold>, <rftools:counter_module>, <ore:plateGold>], 
   [null, <appliedenergistics2:material:9>, null]]);
 
-//Указательный модуль
-recipes.addShaped(<rftools:counter_module>, [
+// Указательный модуль
+recipes.addShaped("tfg/rftools/counter_module", <rftools:counter_module>, [
   [null, <minecraft:comparator>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль дампа
-recipes.addShaped(<rftools:dump_module>, [
+// Модуль дампа
+recipes.addShaped("tfg/rftools/dump_module", <rftools:dump_module>, [
   [null, <ore:ButtonWood>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль лифта
-recipes.addShaped(<rftools:elevator_button_module>, [
+// Модуль лифта
+recipes.addShaped("tfg/rftools/elevator_button_module", <rftools:elevator_button_module>, [
   [<ore:ButtonStone>, <ore:ButtonStone>, <ore:ButtonStone>], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Компьютерный модуль
-recipes.addShaped(<rftools:computer_module>, [
+// Компьютерный модуль
+recipes.addShaped("tfg/rftools/computer_module", <rftools:computer_module>, [
   [null, <ore:plateCertusQuartz>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Жидкостный модуль
-recipes.addShaped(<rftools:fluid_module>, [
+// Жидкостный модуль
+recipes.addShaped("tfg/rftools/fluid_module", <rftools:fluid_module>, [
   [null, <minecraft:bucket>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Текстовый модуль
-recipes.addShaped(<rftools:text_module>, [
+// Текстовый модуль
+recipes.addShaped("tfg/rftools/text_module", <rftools:text_module>, [
   [null, <ore:paper>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Информация о машине модуль
-recipes.addShaped(<rftools:machineinformation_module>, [
+// Информация о машине модуль
+recipes.addShaped("tfg/rftools/machineinformation_module", <rftools:machineinformation_module>, [
   [null, <gregtech:machine:2>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Энерго модуль
-recipes.addShaped(<rftools:energy_module>, [
+// Энерго модуль
+recipes.addShaped("tfg/rftools/energy_module", <rftools:energy_module>, [
   [null, <ore:cableGtSingleRedAlloy>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль инвентаря
-recipes.addShaped(<rftools:inventory_module>, [
+// Модуль инвентаря
+recipes.addShaped("tfg/rftools/inventory_module", <rftools:inventory_module>, [
   [null, <ore:chestWood>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль безопасности
-recipes.addShaped(<rftools:security_card>, [
+// Модуль безопасности
+recipes.addShaped("tfg/rftools/security_module", <rftools:security_card>, [
   [null, <ore:plateSilicon>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:paper>, null]]);
 
-//Модуль контроля пространства
-recipes.addShaped(<rftools:storage_control_module>, [
+// Модуль контроля пространства
+recipes.addShaped("tfg/rftools/storage_control_module", <rftools:storage_control_module>, [
   [null, <ore:craftingTableWood>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль кнопки
-recipes.addShaped(<rftools:button_module>, [
+// Модуль кнопки
+recipes.addShaped("tfg/rftools/button_module", <rftools:button_module>, [
   [null, <ore:ButtonStone>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль жикости+
-recipes.addShaped(<rftools:fluidplus_module>, [
+// Модуль жикости+
+recipes.addShaped("tfg/rftools/fluidplus_module", <rftools:fluidplus_module>, [
   [null, <appliedenergistics2:material:9>, null], 
   [<ore:plateGold>, <rftools:fluid_module>, <ore:plateGold>], 
   [null, <appliedenergistics2:material:9>, null]]);
 
-//Модуль инвернтарь+
-recipes.addShaped(<rftools:inventoryplus_module>, [
+// Модуль инвернтарь+
+recipes.addShaped("tfg/rftools/inventoryplus_module", <rftools:inventoryplus_module>, [
   [null, <appliedenergistics2:material:9>, null], 
   [<ore:plateGold>, <rftools:inventory_module>, <ore:plateGold>], 
   [null, <appliedenergistics2:material:9>, null]]);
 
-//Модуль энергия+
-recipes.addShaped(<rftools:energyplus_module>, [
+// Модуль энергия+
+recipes.addShaped("tfg/rftools/energyplus_module", <rftools:energyplus_module>, [
   [null, <appliedenergistics2:material:9>, null], 
   [<ore:plateGold>, <rftools:energy_module>, <ore:plateGold>], 
   [null, <appliedenergistics2:material:9>, null]]);
 
-//Модуль вариативность
-recipes.addShaped(<rftoolscontrol:variable_module>, [
+// Модуль вариативность
+recipes.addShaped("tfg/rftools/vatiable_module", <rftoolscontrol:variable_module>, [
   [null, <rftoolscontrol:card_base>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль генерик
-recipes.addShaped(<rftools:generic_module>, [
+// Модуль генерик
+recipes.addShaped("tfg/rftools/generic_module", <rftools:generic_module>, [
   [null, <ore:paper>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:paper>, null]]);
 
-//Модуль фильтра
-recipes.addShaped(<rftools:filter_module>, [
+// Модуль фильтра
+recipes.addShaped("tfg/rftools/filter_module", <rftools:filter_module>, [
   [null, <ore:hopper>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:paper>, null]]);
 
-//Модуль ордикта
-recipes.addShaped(<rftools:oredict_module>, [
+// Модуль ордикта
+recipes.addShaped("tfg/rftools/oredict_module", <rftools:oredict_module>, [
   [null, <ore:oreIron>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:paper>, null]]);
 
-//Модуль ?
-recipes.addShaped(<rftools:orphaning_card>, [
+// Модуль ?
+recipes.addShaped("tfg/rftools/orphaning_card", <rftools:orphaning_card>, [
   [null, <minecraft:book>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:paper>, null]]);
 
-//Модуль хранения
-recipes.addShaped(<rftools:storage_module:6>, [
+// Модуль хранения
+recipes.addShaped("tfg/rftools/storage_module_6", <rftools:storage_module:6>, [
   [<minecraft:ender_pearl>, <ore:chestWood>, <minecraft:ender_pearl>], 
   [<ore:plateGold>, <ore:plateIron>, <ore:plateGold>], 
   [<ore:plateCertusQuartz>, <ore:cableGtSingleRedAlloy>, <ore:plateCertusQuartz>]]);
 
-//Модуль хранения таблет
-recipes.addShaped(<rftools:storage_module_tablet>, [
+// Модуль хранения таблет
+recipes.addShaped("tfg/rftools/storage_module_tablet", <rftools:storage_module_tablet>, [
   [<ore:plateGold>, <ore:plateEmerald>, <ore:plateGold>], 
   [<ore:cableGtQuadrupleRedAlloy>, <ore:gemExquisiteCertusQuartz>, <ore:cableGtQuadrupleRedAlloy>], 
   [<ore:plateGold>, <ore:cableGtQuadrupleRedAlloy>, <ore:plateGold>]]);
 
-//Модуль космической комнаты карта
-recipes.addShaped(<rftools:space_chamber_card>, [
+// Модуль космической комнаты карта
+recipes.addShaped("tfg/rftools/space_chamber_card", <rftools:space_chamber_card>, [
   [null, <ore:ingotBrick>, null], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:ingotBrick>, null]]);
 
-//Модуль взаимодействия
-recipes.addShaped(<rftoolscontrol:interaction_module>, [
+// Модуль взаимодействия
+recipes.addShaped("tfg/rftools/interaction_module", <rftoolscontrol:interaction_module>, [
   [<minecraft:stone_pressure_plate>, <rftoolscontrol:card_base>, <minecraft:stone_pressure_plate>], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [null, <ore:dyeBlack>, null]]);
 
-//Модуль вектора
-recipes.addShaped(<rftoolscontrol:vectorart_module>, [
+// Модуль вектора
+recipes.addShaped("tfg/rftools/vectorart_module", <rftoolscontrol:vectorart_module>, [
   [<ore:paneGlass>, <rftoolscontrol:card_base>, <ore:paneGlass>], 
   [<ore:plateGlowstone>, <ore:plateGold>, <ore:plateGlowstone>], 
   [<ore:paneGlass>, <ore:dyeBlack>, <ore:paneGlass>]]);
 
-//Модуль контроля
-recipes.addShaped(<rftoolscontrol:console_module>, [
+// Модуль контроля
+recipes.addShaped("tfg/rftools/console_module", <rftoolscontrol:console_module>, [
   [<ore:paneGlass>, <rftoolscontrol:card_base>, <ore:paneGlass>], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [<ore:paneGlass>, <ore:dyeBlack>, <ore:paneGlass>]]);
 
-//Модуль какой-то карты-10
-recipes.addShaped(<rftools:shape_card:10>, [
+// Модуль какой-то карты-10
+recipes.addShaped("tfg/rftools/shape_card_10", <rftools:shape_card:10>, [
   [<ore:cableGtSingleRedAlloy>, <minecraft:water_bucket>, <ore:cableGtSingleRedAlloy>], 
   [<ore:plateIron>, <rftools:shape_card>, <ore:plateIron>], 
   [<ore:cableGtSingleRedAlloy>, <minecraft:lava_bucket>, <ore:cableGtSingleRedAlloy>]]);
 
-//Модуль какой-то карты
-recipes.addShaped(<rftools:shape_card>, [
+// Модуль какой-то карты
+recipes.addShaped("tfg/rftools/shape_card", <rftools:shape_card>, [
   [<ore:paper>, <ore:ingotBrick>, <ore:paper>], 
   [<ore:cableGtSingleRedAlloy>, <ore:plateIron>, <ore:cableGtSingleRedAlloy>], 
   [<ore:paper>, <ore:ingotBrick>, <ore:paper>]]);
 
-//Модуль какой-то карты-8
-recipes.addShaped(<rftools:shape_card:8>, [
+// Модуль какой-то карты-8
+recipes.addShaped("tfg/rftools/shape_card_8", <rftools:shape_card:8>, [
   [<ore:dirt>, <ore:dirt>, <ore:dirt>], 
   [<ore:dirt>, <rftools:shape_card:9>, <ore:dirt>], 
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
-//Модуль какой-то карты-2
-recipes.addShaped(<rftools:shape_card:2>, [
+// Модуль какой-то карты-2
+recipes.addShaped("tfg/rftools/shape_card_2", <rftools:shape_card:2>, [
   [<ore:dirt>, <ore:dirt>, <ore:dirt>], 
   [<ore:dirt>, <rftools:shape_card:5>, <ore:dirt>], 
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
-//Модуль какой-то карты-4
-recipes.addShaped(<rftools:shape_card:4>, [
+// Модуль какой-то карты-4
+recipes.addShaped("tfg/rftools/shape_card_4", <rftools:shape_card:4>, [
   [<ore:dirt>, <ore:dirt>, <ore:dirt>], 
   [<ore:dirt>, <rftools:shape_card:7>, <ore:dirt>], 
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
-//Модуль какой-то карты-3
-recipes.addShaped(<rftools:shape_card:3>, [
+// Модуль какой-то карты-3
+recipes.addShaped("tfg/rftools/shape_card_3", <rftools:shape_card:3>, [
   [<ore:dirt>, <ore:dirt>, <ore:dirt>], 
   [<ore:dirt>, <rftools:shape_card:3>, <ore:dirt>], 
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);

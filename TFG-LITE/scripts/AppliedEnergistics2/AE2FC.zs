@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 
-// --- Recipes Removing
-// Поименное удаление рецептов
-// Удаление рецептов
+// --- Массивы
+
 val ItemsToRemove as IItemStack[] = [
 	<ae2fc:fluid_pattern_encoder>,
 	<ae2fc:fluid_discretizer>,
@@ -12,11 +11,15 @@ val ItemsToRemove as IItemStack[] = [
 	<ae2fc:part_fluid_pattern_ex_terminal>,
 	<ae2fc:part_fluid_pattern_terminal>
 ];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in ItemsToRemove{
-    recipes.remove(item);
+  recipes.remove(item);
 }
 
-// --- Recipes Adding
+// --- Добавление рецептов
 
 // Fluid pattern encoder
 assembler.recipeBuilder()

@@ -2,11 +2,10 @@ import crafttweaker.item.IItemStack;
 
 import mods.chisel.Carving;
 
+// --- Массивы
+
 val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>;
 
-// --- Removing Recipes
-
-// Удаление рецептов
 val RemoveWorkbenchRecipes as IItemStack[] = [
 	<chisel:auto_chisel>,
 	<chisel:offsettool>,
@@ -54,11 +53,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<chisel:glasspanedyedlime:*>,
 	<chisel:glasspanedyedmagenta:*>
 ] as IItemStack[];
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
 
-// Поименное удаление рецептов
 val RemoveItemRecipesByName = [
     "chisel:uncraft_blockiron",
 	"chisel:uncraft_blockgold",
@@ -67,68 +62,77 @@ val RemoveItemRecipesByName = [
 	"chisel:redstone",
 	"chisel:coal"
 ] as string[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
+
+// Поименное удаление рецептов
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
 
-// --- Adding Recipes
+// --- Добавление рецептов
 
 // Авто Стамеска
-recipes.addShaped(<chisel:auto_chisel>,
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
+recipes.addShaped("tfg/chisel/auto_chisel", <chisel:auto_chisel>, [
+	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
 	[<ore:blockGlass>, <metaitem:wireGtSingleRedAlloy>, <ore:blockGlass>],
 	[<ore:plateIronAny>, <ore:plateIronAny>, <ore:plateIronAny>]]);
 
 // Эндер палка смещения
-recipes.addShaped(<chisel:offsettool>,
-	[[<metaitem:plateIron>, <ore:gemEnderEye>, <ore:gtce.tool.knife>],
+recipes.addShaped("tfg/chisel/offsettool", <chisel:offsettool>, [
+	[<metaitem:plateIron>, <ore:gemEnderEye>, <ore:gtce.tool.knife>],
 	[<minecraft:stick>, <metaitem:plateIron>, null],
 	[<ore:gtce.tool.hard.hammers>, null, null]]);
 
 // Железная стамеска
-recipes.addShaped(<chisel:chisel_iron>,
-	[[<ore:gtce.tool.hard.hammers>, <ore:plateWroughtIron>, <ore:gtce.tool.knife>],
+recipes.addShaped("tfg/chisel/chisel_iron", <chisel:chisel_iron>, [
+	[<ore:gtce.tool.hard.hammers>, <ore:plateWroughtIron>, <ore:gtce.tool.knife>],
 	[null, <ore:chisel>, null],
 	[null, <ore:stickWood>, null]]);
 
 // Алмазная стамеска
-recipes.addShaped(<chisel:chisel_diamond>,
-	[[<ore:gtce.tool.hard.hammers>, <ore:plateDiamond>, <ore:gtce.tool.knife>],
+recipes.addShaped("tfg/chisel/chisel_diamond", <chisel:chisel_diamond>, [
+	[<ore:gtce.tool.hard.hammers>, <ore:plateDiamond>, <ore:gtce.tool.knife>],
 	[null, <ore:chisel>, null],
 	[null, <ore:stickWood>, null]]);
 
 // Современная стамеска
-recipes.addShaped(<chisel:chisel_hitech>,
-	[[<ore:gtce.tool.hard.hammers>, <ore:plateBlueSteel>, <ore:gtce.tool.knife>],
+recipes.addShaped("tfg/chisel/chisel_hitech", <chisel:chisel_hitech>, [
+	[<ore:gtce.tool.hard.hammers>, <ore:plateBlueSteel>, <ore:gtce.tool.knife>],
 	[null, <chisel:chisel_diamond>, null],
 	[null, <ore:stickWood>, null]]);
  
 // Лабораторный блок
-recipes.addShaped(<chisel:laboratory> * 8,
-	[[<ore:stone>, <ore:stone>, <ore:stone>],
+recipes.addShaped("tfg/chisel/laboratory_block", <chisel:laboratory> * 8, [
+	[<ore:stone>, <ore:stone>, <ore:stone>],
 	[<ore:stone>, AllQuartzTypes, <ore:stone>],
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Храмовый блок
-recipes.addShaped(<chisel:temple> * 8,
-	[[<ore:stone>, <ore:stone>, <ore:stone>],
+recipes.addShaped("tfg/chisel/temple_block", <chisel:temple> * 8, [
+	[<ore:stone>, <ore:stone>, <ore:stone>],
 	[<ore:stone>, <ore:dyeCyan>, <ore:stone>],
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
  
 // Тириан блок
-recipes.addShaped(<chisel:tyrian> * 8,
-	[[<ore:stone>, <ore:stone>, <ore:stone>],
+recipes.addShaped("tfg/chisel/tyrian_block", <chisel:tyrian> * 8, [
+	[<ore:stone>, <ore:stone>, <ore:stone>],
 	[<ore:stone>, <ore:plateIronAny>, <ore:stone>],
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
  
-// Фактори блок
-recipes.addShaped(<chisel:factory> * 8,
-	[[<ore:plateIronAny>, <ore:stone>, <ore:plateIronAny>],
+// Заводской блок
+recipes.addShaped("tfg/chisel/factory_block", <chisel:factory> * 8, [
+	[<ore:plateIronAny>, <ore:stone>, <ore:plateIronAny>],
 	[<ore:stone>, null, <ore:stone>],
 	[<ore:plateIronAny>, <ore:stone>, <ore:plateIronAny>]]);
  
-// Бровн стоун
-recipes.addShaped(<chisel:brownstone> * 8,
-	[[<ore:sand>, <ore:sand>, <ore:sand>],
+// Коричневый камень
+recipes.addShaped("tfg/chisel/brownstone", <chisel:brownstone> * 8, [
+	[<ore:sand>, <ore:sand>, <ore:sand>],
 	[<ore:sand>, <minecraft:clay_ball>, <ore:sand>],
 	[<ore:sand>, <ore:sand>, <ore:sand>]]);

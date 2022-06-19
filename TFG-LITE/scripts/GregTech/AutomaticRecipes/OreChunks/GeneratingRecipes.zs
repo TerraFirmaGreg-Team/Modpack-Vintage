@@ -16,13 +16,13 @@ val oreChunk as OrePrefix = OrePrefix.getPrefix("oreChunk");
 oreChunk.generateRecipes(function(orePrefix as OrePrefix, material as Material) {
 
     // Дробилка TFC
-    Quern.addRecipe("tfg/ore_chunk/" + material.name, Utils.item(orePrefix, material), Utils.item("crushed", material) * 2);
+    Quern.addRecipe("tfg/gregtech/ore_chunk/" + material.name, Utils.item(orePrefix, material), Utils.item("crushed", material) * 2);
 
     // Конская дробилка
     Grindstone.add(Utils.item(orePrefix, material), Utils.item("dustImpure", material) * 3, 10, false);
 
     // Руды в их куски при выкапывании
-    Dropt.list("Ore_To_oreChunks_" + material.name).add(Dropt.rule()
+    Dropt.list("tfg/gregtech/ore_chunk/" + material.name).add(Dropt.rule()
         .matchBlocks(["gregtech:ore_" + material.name + "_0:*", "gregtech:ore_" + material.name + "_1:*", "gregtech:ore_" + material.name + "_2:*"])
         .addDrop(Dropt.drop().force().items([Utils.item(orePrefix, material)]))    
         .addDrop(Dropt.drop().selector(Dropt.weight(70)))

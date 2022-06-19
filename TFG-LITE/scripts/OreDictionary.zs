@@ -1,4 +1,4 @@
-#priority 995
+#priority 975
 
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
@@ -6,6 +6,8 @@ import crafttweaker.item.IItemStack;
 ////////////////////////////////////////////////////////
 // --- TFC --- /////////////////////////////////////////
 ////////////////////////////////////////////////////////
+
+// --- Добавление
 
 // Raw Igneous Intrusive Rocks To One OreDict
 for item in RawIgneousIntrusive {
@@ -32,70 +34,17 @@ for item in All_Seeds {
 	<ore:listAllSeeds>.add(item);
 }
 
-// remove gemDiamond
-<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
-
-// remove gemLapis
-<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
-
-// remove gemEmerald
-<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
-
-// remove dustSalt
-<ore:dustSalt>.remove(<tfc:powder/salt>);
-
-// remove dustSaltpeter
-<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
-
-// Remove OreDict from saws
-val RemoveItemOre as IItemStack[] = [
-	<tfc:metal/saw/bismuth_bronze>,
-	<tfc:metal/saw/black_bronze>,
-	<tfc:metal/saw/black_steel>,
-	<tfc:metal/saw/blue_steel>,
-	<tfc:metal/saw/bronze>,
-	<tfc:metal/saw/copper>,
-	<tfc:metal/saw/red_steel>,
-	<tfc:metal/saw/steel>,
-	<tfc:metal/saw/wrought_iron>,
-	<tfc:metal/saw_blade/bismuth_bronze>,
-	<tfc:metal/saw_blade/black_bronze>,
-	<tfc:metal/saw_blade/black_steel>,
-	<tfc:metal/saw_blade/blue_steel>,
-	<tfc:metal/saw_blade/bronze>,
-	<tfc:metal/saw_blade/copper>,
-	<tfc:metal/saw_blade/red_steel>,
-	<tfc:metal/saw_blade/steel>,
-	<tfc:metal/saw_blade/wrought_iron>
-];
-for item in RemoveItemOre{
-    <ore:saw>.remove(item);
-}
-
-// add loom
 for item in TFC_Looms {
 	<ore:loom>.add(item);
 }
-
-// Rock Types GT = Rock Types TFC
-// <ore:stoneBasalt>.add(<tfc:raw/basalt>);
-// <ore:stoneMarble>.add(<tfc:raw/marble>);
 
 // OreDicionary for all slab
 for item in TFC_Slabs_Smooth {
 	<ore:slabStone>.add(item);
 }
 
-// dustGraphite
-<ore:dustGraphite>.remove(<tfc:powder/graphite>);
-
-// StickBundle
-<ore:logWood>.remove(<tfc:stick_bundle>);
-
-// Sugarcane
+<ore:itemBeeswax>.add(<firmalife:beeswax>);
 <ore:sugarcane>.add(<tfc:food/sugarcane>);
-
-// Unfinished Ingots
 <ore:ingotUnfinishedWroughtIron>.add(<tfc:metal/ingot/wrought_iron>);
 
 // Single Sheets = Single Plates
@@ -148,6 +97,19 @@ for item in TFC_Slabs_Smooth {
 // BronzeAny Double Sheets
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
+// --- Удаление
+<ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
+<ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
+<ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
+<ore:dustSalt>.remove(<tfc:powder/salt>);
+<ore:dustSaltpeter>.remove(<tfc:powder/saltpeter>);
+<ore:dustGraphite>.remove(<tfc:powder/graphite>);
+<ore:logWood>.remove(<tfc:stick_bundle>);
+<ore:sheetDoubleAnyBronze>.remove(<tfc:metal/double_sheet/bismuth_bronze>, <tfc:metal/double_sheet/bronze>, <tfc:metal/double_sheet/black_bronze>);
+<ore:gemSulfur>.remove(<tfc:ore/sulfur>);
+<ore:gemSaltpeter>.remove(<tfc:ore/saltpeter>);
+<ore:gemGraphite>.remove(<tfc:ore/graphite>);
+
 // Removing OreDicts from TFC ingots
 <ore:ingotBismuth>.remove(<tfc:metal/ingot/bismuth>);
 <ore:ingotBismuthBronze>.remove(<tfc:metal/ingot/bismuth_bronze>);
@@ -169,7 +131,6 @@ for item in TFC_Slabs_Smooth {
 <ore:ingotBlackSteel>.remove(<tfc:metal/ingot/black_steel>);
 <ore:ingotBlueSteel>.remove(<tfc:metal/ingot/blue_steel>);
 <ore:ingotRedSteel>.remove(<tfc:metal/ingot/red_steel>);
-// PigIron
 
 // Removing OreDicts from TFC sheets
 <ore:sheetCopper>.remove(<tfc:metal/sheet/copper>);
@@ -192,7 +153,6 @@ for item in TFC_Slabs_Smooth {
 <ore:sheetBlackSteel>.remove(<tfc:metal/sheet/black_steel>);
 <ore:sheetBlueSteel>.remove(<tfc:metal/sheet/blue_steel>);
 <ore:sheetRedSteel>.remove(<tfc:metal/sheet/red_steel>);
-// PigIron
 
 // Removing OreDicts from TFC double sheets
 <ore:sheetDoubleCopper>.remove(<tfc:metal/double_sheet/copper>);
@@ -216,26 +176,16 @@ for item in TFC_Slabs_Smooth {
 <ore:sheetDoubleBlueSteel>.remove(<tfc:metal/double_sheet/blue_steel>);
 <ore:sheetDoubleRedSteel>.remove(<tfc:metal/double_sheet/red_steel>);
 
-// sheetDoubleAnyBronze
-<ore:sheetDoubleAnyBronze>.remove(<tfc:metal/double_sheet/bismuth_bronze>, <tfc:metal/double_sheet/bronze>, <tfc:metal/double_sheet/black_bronze>);
-
-// gemSulfur
-<ore:gemSulfur>.remove(<tfc:ore/sulfur>);
-
-// gemSaltpeter
-<ore:gemSaltpeter>.remove(<tfc:ore/saltpeter>);
-
-// gemGraphite
-<ore:gemGraphite>.remove(<tfc:ore/graphite>);
-
-// Beeswax
-<ore:itemBeeswax>.add(<firmalife:beeswax>);
+for item in TFC_Saws {
+    <ore:saw>.remove(item);
+}
 
 ////////////////////////////////////////////////////////
 // --- GREGTECH --- ////////////////////////////////////
 ////////////////////////////////////////////////////////
 
-// Tools
+// --- Добавление
+
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),
     <gregtech:meta_tool:28>.withEmptyTag(),
@@ -320,27 +270,21 @@ for item in Gem_Exquisite {
 	<ore:gemExquisite>.add(item);
 }
 
-// Knife
 <ore:knife>.add(<metaitem:tool.knife>);
-
-// Hammer
 <ore:hammer>.add(<metaitem:tool.hard_hammer>);
-
-// Saw
 <ore:saw>.add(<metaitem:tool.saw>);
-
-// Shovel
 <ore:shovel>.add(<metaitem:tool.shovel>);
 
-// Basalt
-<ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
+// --- Удаление
 
-// Marble
+<ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
 <ore:stoneMarble>.remove(<gregtech:stone_smooth:2>);
 
 ////////////////////////////////////////////////////////
 // --- AE2 --- /////////////////////////////////////////
 ////////////////////////////////////////////////////////
+
+// --- Добавление
 
 // Interface
 <ore:ae2.interface.item>.addItems([
@@ -355,146 +299,46 @@ for item in Gem_Exquisite {
 ]);
 
 // Glass Cable
-global glassCables as IItemStack[] = [
-    <appliedenergistics2:part>,
-    <appliedenergistics2:part:1>,
-    <appliedenergistics2:part:2>,
-    <appliedenergistics2:part:3>,
-    <appliedenergistics2:part:4>,
-    <appliedenergistics2:part:5>,
-    <appliedenergistics2:part:6>,
-    <appliedenergistics2:part:7>,
-    <appliedenergistics2:part:8>,
-    <appliedenergistics2:part:9>,
-    <appliedenergistics2:part:10>,
-    <appliedenergistics2:part:11>,
-    <appliedenergistics2:part:12>,
-    <appliedenergistics2:part:13>,
-    <appliedenergistics2:part:14>,
-    <appliedenergistics2:part:15>,
-    <appliedenergistics2:part:16>
-];
 for glassCable in glassCables {
     <ore:ae2.cable.glass>.add(glassCable);
     if (glassCable.displayName has "Fluix") {}
     else {
-        recipes.remove(glassCable);
         <ore:ae2.cable.glass.colors>.add(glassCable);
     }
 }
 
 // Covered Cable
-global coveredCables as IItemStack[] = [
-    <appliedenergistics2:part:20>,
-    <appliedenergistics2:part:21>,
-    <appliedenergistics2:part:22>,
-    <appliedenergistics2:part:23>,
-    <appliedenergistics2:part:24>,
-    <appliedenergistics2:part:25>,
-    <appliedenergistics2:part:26>,
-    <appliedenergistics2:part:27>,
-    <appliedenergistics2:part:28>,
-    <appliedenergistics2:part:29>,
-    <appliedenergistics2:part:30>,
-    <appliedenergistics2:part:31>,
-    <appliedenergistics2:part:32>,
-    <appliedenergistics2:part:33>,
-    <appliedenergistics2:part:34>,
-    <appliedenergistics2:part:35>,
-    <appliedenergistics2:part:36>
-];
 for coveredCable in coveredCables {
     <ore:ae2.cable.covered>.add(coveredCable);
     if (coveredCable.displayName has "Fluix") {}
     else {
-        recipes.remove(coveredCable);
         <ore:ae2.cable.covered.colors>.add(coveredCable);
     }
 }
 
 // Smart Cable
-global smartCables as IItemStack[] = [
-    <appliedenergistics2:part:40>,
-    <appliedenergistics2:part:41>,
-    <appliedenergistics2:part:42>,
-    <appliedenergistics2:part:43>,
-    <appliedenergistics2:part:44>,
-    <appliedenergistics2:part:45>,
-    <appliedenergistics2:part:46>,
-    <appliedenergistics2:part:47>,
-    <appliedenergistics2:part:48>,
-    <appliedenergistics2:part:49>,
-    <appliedenergistics2:part:50>,
-    <appliedenergistics2:part:51>,
-    <appliedenergistics2:part:52>,
-    <appliedenergistics2:part:53>,
-    <appliedenergistics2:part:54>,
-    <appliedenergistics2:part:55>,
-    <appliedenergistics2:part:56>
-];
 for smartCable in smartCables {
     <ore:ae2.cable.smart>.add(smartCable);
     if (smartCable.displayName has "Fluix") {}
     else {
-        recipes.remove(smartCable);
         <ore:ae2.cable.smart.colors>.add(smartCable);
     }
 }
 
 // Dense Covered Cable
-global denseCoveredCables as IItemStack[] = [
-    <appliedenergistics2:part:500>,
-    <appliedenergistics2:part:501>,
-    <appliedenergistics2:part:502>,
-    <appliedenergistics2:part:503>,
-    <appliedenergistics2:part:504>,
-    <appliedenergistics2:part:505>,
-    <appliedenergistics2:part:506>,
-    <appliedenergistics2:part:507>,
-    <appliedenergistics2:part:508>,
-    <appliedenergistics2:part:509>,
-    <appliedenergistics2:part:510>,
-    <appliedenergistics2:part:511>,
-    <appliedenergistics2:part:512>,
-    <appliedenergistics2:part:513>,
-    <appliedenergistics2:part:514>,
-    <appliedenergistics2:part:515>,
-    <appliedenergistics2:part:516>
-];
 for denseCoveredCable in denseCoveredCables {
     <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
     if (denseCoveredCable.displayName has "Fluix") {}
     else {
-        recipes.remove(denseCoveredCable);
         <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
     }
 }
 
 // Dense Smart Cable
-global denseSmartCables as IItemStack[] = [
-    <appliedenergistics2:part:60>,
-    <appliedenergistics2:part:61>,
-    <appliedenergistics2:part:62>,
-    <appliedenergistics2:part:63>,
-    <appliedenergistics2:part:64>,
-    <appliedenergistics2:part:65>,
-    <appliedenergistics2:part:66>,
-    <appliedenergistics2:part:67>,
-    <appliedenergistics2:part:68>,
-    <appliedenergistics2:part:69>,
-    <appliedenergistics2:part:70>,
-    <appliedenergistics2:part:71>,
-    <appliedenergistics2:part:72>,
-    <appliedenergistics2:part:73>,
-    <appliedenergistics2:part:74>,
-    <appliedenergistics2:part:75>,
-    <appliedenergistics2:part:76>
-];
 for denseSmartCable in denseSmartCables {
     <ore:ae2.cable.dense.smart>.add(denseSmartCable);
     if (denseSmartCable.displayName has "Fluix") {}
     else {
-        recipes.remove(denseSmartCable);
         <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
     }
 }
@@ -506,27 +350,26 @@ for denseSmartCable in denseSmartCables {
 // --- PROJECTRED --- //////////////////////////////////
 ////////////////////////////////////////////////////////
 
-// Copper
 <ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
-// Tin
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
-// Silver
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
-// RedAlloy
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
 
 ////////////////////////////////////////////////////////
 // --- TFC-Florae --- //////////////////////////////////
 ////////////////////////////////////////////////////////
 
-// Stick
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
 ////////////////////////////////////////////////////////
 // --- GC/GS/EP --- ///////////////////////////////////////
 ////////////////////////////////////////////////////////
 
+// --- Добавление
+
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+
+// --- Удаление
 
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
@@ -586,7 +429,6 @@ for denseSmartCable in denseSmartCables {
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
 <ore:oreQuartz>.remove(<galaxyspace:barnarda_c_ores:10>);
 <ore:oreQuartz>.remove(<galaxyspace:mirandablocks:6>);
-
 
 // Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
@@ -658,88 +500,46 @@ for denseSmartCable in denseSmartCables {
 // --- Vanilla --- /////////////////////////////////////
 ////////////////////////////////////////////////////////
 
-// Grass
 <ore:grass>.remove(<minecraft:grass>);
-
-// Sand
 <ore:sand>.remove(<minecraft:sand>);
-
-// Dirt
 <ore:dirt>.remove(<minecraft:dirt>);
-
-// Stone
 <ore:stone>.remove(<minecraft:stone>);
 <ore:stoneSmooth>.remove(<minecraft:stone>);
-
-// Gravel
 <ore:gravel>.remove(<minecraft:gravel>);
+<ore:stoneGranite>.remove(<minecraft:stone:1>);
+<ore:stoneDiorite>.remove(<minecraft:stone:3>);
+<ore:stoneAndesite>.remove(<minecraft:stone:5>);
+<ore:oreCoal>.remove(<minecraft:coal_ore>);
+<ore:oreRedstone>.remove(<minecraft:redstone_ore>);
+<ore:oreDiamond>.remove(<minecraft:diamond_ore>);
+<ore:oreEmerald>.remove(<minecraft:emerald_ore>);
+<ore:oreGold>.remove(<minecraft:gold_ore>);
+<ore:oreIron>.remove(<minecraft:iron_ore>);
+<ore:sugarcane>.remove(<minecraft:reeds>);
+<ore:bookshelf>.remove(<minecraft:bookshelf>);
+<ore:treeSapling>.remove(<minecraft:sapling:*>);
+<ore:slabWood>.remove(<minecraft:wooden_slab:*>);
+<ore:plankWood>.remove(<minecraft:planks:*>);
+<ore:logWood>.remove(<minecraft:log:*>);
+<ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:trapped_chest>);
+<ore:chestWood>.remove(<minecraft:chest>);
+<ore:chestTrapped>.remove(<minecraft:trapped_chest>);
+<ore:stairWood>.remove(<minecraft:oak_stairs>, <minecraft:spruce_stairs>, <minecraft:birch_stairs>, <minecraft:jungle_stairs>, <minecraft:acacia_stairs>, <minecraft:dark_oak_stairs>);
 
 // Cobblestone
 <ore:cobblestone>.remove(<minecraft:cobblestone>);
 <ore:stoneCobble>.remove(<minecraft:cobblestone>);
 
-// Granite
-<ore:stoneGranite>.remove(<minecraft:stone:1>);
-
 // Polished Granite
 <ore:stoneGranite>.remove(<minecraft:stone:2>);
 <ore:stoneGranitePolished>.remove(<minecraft:stone:2>);
-
-// Diorite
-<ore:stoneDiorite>.remove(<minecraft:stone:3>);
 
 // Polished Diorite
 <ore:stoneDiorite>.remove(<minecraft:stone:4>);
 <ore:stoneDioritePolished>.remove(<minecraft:stone:4>);
 
-// Andesite
-<ore:stoneAndesite>.remove(<minecraft:stone:5>);
-
 // Polished Andesite
 <ore:stoneAndesite>.remove(<minecraft:stone:6>);
 <ore:stoneAndesitePolished>.remove(<minecraft:stone:6>);
 
-// Stone coal
-<ore:oreCoal>.remove(<minecraft:coal_ore>);
-
-// Redstone
-<ore:oreRedstone>.remove(<minecraft:redstone_ore>);
-
-// Diamond
-<ore:oreDiamond>.remove(<minecraft:diamond_ore>);
-
-// Emerald
-<ore:oreEmerald>.remove(<minecraft:emerald_ore>);
-
-// Gold
-<ore:oreGold>.remove(<minecraft:gold_ore>);
-
-// Iron
-<ore:oreIron>.remove(<minecraft:iron_ore>);
-
-// Remove sugarcane OreDict
-<ore:sugarcane>.remove(<minecraft:reeds>);
-
-// Remove Bookshelf OreDict
-<ore:bookshelf>.remove(<minecraft:bookshelf>);
-
-// Remove treeSapling OreDict
-<ore:treeSapling>.remove(<minecraft:sapling:*>);
-
-// Remove slabWood OreDict
-<ore:slabWood>.remove(<minecraft:wooden_slab:*>);
-
-// Remove plankWood OreDict
-<ore:plankWood>.remove(<minecraft:planks:*>);
-
-// Remove logWood OreDict
-<ore:logWood>.remove(<minecraft:log:*>);
-
-// Remove stairWood
-<ore:stairWood>.remove(<minecraft:oak_stairs>, <minecraft:spruce_stairs>, <minecraft:birch_stairs>, <minecraft:jungle_stairs>, <minecraft:acacia_stairs>, <minecraft:dark_oak_stairs>);
-
-// Remove chest and chestWood and chestTrapped
-<ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:chest>);
-<ore:chestTrapped>.remove(<minecraft:trapped_chest>);

@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 
-// --- Recipes Removing
+// --- Массивы
 
-// Удаление рецептов
 val ItemsToRemove as IItemStack[] = [
 	<wct:wct>,
   <wft:wft>,
@@ -12,11 +11,15 @@ val ItemsToRemove as IItemStack[] = [
   <wct:magnet_card>,
   <aenetvistool:net_visualizer>
 ];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in ItemsToRemove{
   recipes.remove(item);
 }
 
-// --- Recipes Adding
+// --- Добавление рецептов
 
 // Wireless Crafting Terminal
 assembler.recipeBuilder()
@@ -107,8 +110,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 // Network Visualization Tool
-recipes.addShaped(<aenetvistool:net_visualizer>, [
+recipes.addShaped("tfg/aenetvistool/net_visualizer", <aenetvistool:net_visualizer>, [
     [<ore:plateAluminium>, <appliedenergistics2:material:43>, <ore:plateAluminium>],
     [<appliedenergistics2:network_tool>, <metaitem:wireless>, <appliedenergistics2:entropy_manipulator>],
-    [<ore:plateAluminium>, <appliedenergistics2:material:44>, <ore:plateAluminium>]
-]);
+    [<ore:plateAluminium>, <appliedenergistics2:material:44>, <ore:plateAluminium>]]);

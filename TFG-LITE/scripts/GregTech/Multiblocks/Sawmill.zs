@@ -1,4 +1,4 @@
-#priority 980
+#priority 970
 
 import crafttweaker.item.IItemStack;
 
@@ -24,23 +24,9 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Multiblock Builder
 ########################################
-# Saw mill
+# Saw Mill
 ########################################
-global saw_mill as RecipeMap = FactoryRecipeMap.start("saw_mill")
-  .minInputs(2)
-  .maxInputs(2)
-  .minOutputs(1)
-  .maxOutputs(4)
-  .minFluidInputs(1)
-  .maxFluidInputs(1)
-  .minFluidOutputs(0)
-  .maxFluidOutputs(0)
-  .build();
-
-val id = 32001;
-val loc = "saw_mill";
-
-var electric_saw_mill = Builder.start(loc, id)
+var saw_mill = Builder.start("saw_mill", 32001)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
       .aisle("CFC", "C C", "C C")
@@ -59,36 +45,6 @@ var electric_saw_mill = Builder.start(loc, id)
   .withRecipeMap(saw_mill)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
-electric_saw_mill.hasMaintenanceMechanics = false;
-electric_saw_mill.hasMufflerMechanics = true;
-
-recipes.addShaped("saw_mill", <metaitem:multiblocktweaker:saw_mill>, [
-    [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
-    [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
-    [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]
-]);
-
-// Electric_saw_mill logs
-/*
-for i, log in TFC_Logs {
-  saw_mill.recipeBuilder()
-    .circuit(1)
-    .inputs([log * 6])
-		.fluidInputs([<liquid:water> * 1000])
-    .outputs([TFC_Planks[i] * 48])
-    .outputs([<metaitem:dustWood> * 12])
-    .duration(300)
-    .EUt(7)
-    .buildAndRegister();
-
-  saw_mill.recipeBuilder()
-    .circuit(2)
-    .inputs([log * 6])
-		.fluidInputs([<liquid:water> * 1000])
-    .outputs([<metaitem:dustWood> * 30])
-    .outputs([<metaitem:dustSmallWood> * 18])
-    .duration(400)
-    .EUt(7)
-    .buildAndRegister();
-}*/
+saw_mill.hasMaintenanceMechanics = false;
+saw_mill.hasMufflerMechanics = true;
 

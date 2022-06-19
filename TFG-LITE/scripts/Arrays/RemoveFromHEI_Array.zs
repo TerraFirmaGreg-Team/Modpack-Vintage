@@ -1,4 +1,4 @@
-#priority 999
+#priority 980
 
 import crafttweaker.item.IItemStack;
 
@@ -1183,6 +1183,7 @@ val TFC as IItemStack[] = [
 	<tfc:ore/lignite>,
 	<tfc:sluice>,
 	<tfc:powder/coke>,
+	<tfc:metal/bucket/blue_steel>,
 	// Dups
 	<tfc:wood/sapling/joshua_tree>,
 	<tfc:wood/log/joshua_tree>
@@ -2222,9 +2223,12 @@ for item in Aunis {
     JEI.removeAndHide(item);
 }
 
-val FirmaLife as IItemStack[] = [
-	
+val RFTools as IItemStack[] = [
+	<rftoolscontrol:graphics_card>,
+	<rftoolscontrol:network_card>,
+	<rftoolscontrol:ram_chip>,
+	<rftoolscontrol:advanced_network_card>
 ];
-for item in FirmaLife {
-    // JEI.removeAndHide(item);
+for item in RFTools {
+    JEI.removeAndHide(item);
 }

@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 
-// --- Removing Recipes
+// --- Массивы
 
-// Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
 	<planetprogression:satellite_controller>,
 	<planetprogression:satellite_launcher>,
@@ -11,16 +10,21 @@ val RemoveItemRecipe as IItemStack[] = [
 	<planetprogression:satellite_module_basic>,
    <planetprogression:advanced_launch_pad>
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in RemoveItemRecipe{
    recipes.remove(item);
 }
 
 // Спутник
 mods.PlanetProgression.removeSatelliteBuilderRecipe(<planetprogression:satellite_basic>);
+
 // Ракета со спутником
 mods.PlanetProgression.removeSatelliteRocketRecipe();
 
-// --- Adding Recipes
+// --- Создание рецептов
 
 // Satellite controller
 assembler.recipeBuilder()
@@ -58,10 +62,10 @@ assembler.recipeBuilder()
    .duration(200).EUt(1700).buildAndRegister();
 
 // Advanced launch pad
-recipes.addShaped(<planetprogression:advanced_launch_pad> * 5,
-[[<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
- [<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
- [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
+recipes.addShaped(<planetprogression:advanced_launch_pad> * 5, [
+   [<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
+   [<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
+   [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 
 // Спутник
 assembly_line.recipeBuilder()
