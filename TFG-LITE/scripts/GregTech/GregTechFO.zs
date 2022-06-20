@@ -30,6 +30,10 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:gtfo_cookie",
     "gregtechfoodoption:gtfo_slice_bread",
     "gregtechfoodoption:bread_dough",
+    "gregtechfoodoption:gtfo_hand_carrot_kebab",
+    "gregtechfoodoption:gtfo_flat_dough",
+    "gregtechfoodoption:dough_2",
+    "gregtechfoodoption:dough_4",
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -82,24 +86,64 @@ val TFC_Cooked_Meat as IItemStack[] = [
     <tfcflorae:food/cooked_worm>
 ];
 
+val TFC_Flour as IItemStack[] = [
+    <tfcflorae:food/fonio_flour>,
+    <tfcflorae:food/buckwheat_flour>,
+    <tfcflorae:food/amaranth_flour>,
+    <tfc:food/wheat_flour>,
+    <tfc:food/rye_flour>,
+    <tfc:food/rice_flour>,
+    <tfc:food/oat_flour>,
+    <tfc:food/cornmeal_flour>,
+    <tfc:food/barley_flour>,
+    <tfcflorae:food/spelt_flour>,
+    <tfcflorae:food/quinoa_flour>,
+    <tfcflorae:food/millet_flour>
+];
+
+val TFC_Flat_Doughs as IItemStack[] = [
+    <tfcflorae:food/fonio_flatbread_dough>,
+    <tfcflorae:food/buckwheat_flatbread_dough>,
+    <tfcflorae:food/amaranth_flatbread_dough>,
+    <firmalife:wheat_flatbread_dough>,
+    <firmalife:rye_flatbread_dough>,
+    <firmalife:rice_flatbread_dough>,
+    <firmalife:oat_flatbread_dough>,
+    <firmalife:corn_flatbread_dough>,
+    <firmalife:barley_flatbread_dough>,
+    <tfcflorae:food/spelt_flatbread_dough>,
+    <tfcflorae:food/quinoa_flatbread_dough>,
+    <tfcflorae:food/millet_flatbread_dough>
+];
+
 val TFC_Doughs as IItemStack[] = [
-    <tfc:food/barley_dough>,
-    <tfc:food/cornmeal_dough>,
-    <tfc:food/oat_dough>,
-    <tfc:food/rice_dough>,
-    <tfc:food/rye_dough>,
+    <tfcflorae:food/fonio_dough>,
+    <tfcflorae:food/buckwheat_flatbread_dough>,
+    <tfcflorae:food/amaranth_dough>,
     <tfc:food/wheat_dough>,
-    <firmalife:chestnut_dough>
+    <tfc:food/rye_dough>,
+    <tfc:food/rice_dough>,
+    <tfc:food/oat_dough>,
+    <tfc:food/cornmeal_dough>,
+    <tfc:food/barley_dough>,
+    <tfcflorae:food/spelt_dough>,
+    <tfcflorae:food/quinoa_dough>,
+    <tfcflorae:food/millet_dough>
 ];
 
 val TFC_Breads as IItemStack[] = [
-    <tfc:food/barley_bread>,
-    <tfc:food/cornbread>,
-    <tfc:food/oat_bread>,
-    <tfc:food/rice_bread>,
-    <tfc:food/rye_bread>,
+    <tfcflorae:food/fonio_bread>,
+    <tfcflorae:food/buckwheat_bread>,
+    <tfcflorae:food/amaranth_bread>,
     <tfc:food/wheat_bread>,
-    <firmalife:chestnut_bread>
+    <tfc:food/rye_bread>,
+    <tfc:food/rice_bread>,
+    <tfc:food/oat_bread>,
+    <tfc:food/cornbread>,
+    <tfc:food/barley_bread>,
+    <tfcflorae:food/spelt_bread>,
+    <tfcflorae:food/quinoa_bread>,
+    <tfcflorae:food/millet_bread>
 ];
 
 // --- Удаление рецептов
@@ -343,10 +387,36 @@ electric_baking_oven.findRecipe(1, [<minecraft:potato:0>], null).remove();
 // Roasted Potato
 assembler.findRecipe(4, [<minecraft:stick:0>, <minecraft:baked_potato:0>], null).remove();
 
-// --- Добавление рецептов
+// Carrot Structural Mesh
+extractor.findRecipe(1920, [<minecraft:carrot:0>], null).remove();
 
-// Register Food Stats for TFC
-// ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+// Beetroot Soup
+mixer.findRecipe(8, [<minecraft:beetroot:0> * 2, <metaitem:dustWheat>], [<liquid:water> * 100]).remove();
+
+// Chum
+mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100]).remove();
+mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
+mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100]).remove();
+mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
+
+// Flat Dough
+forge_hammer.findRecipe(60, [<metaitem:component.dough>], null).remove();
+
+// Dough
+mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaitem:circuit.integrated>.withTag({Configuration: 0})], [<liquid:water> * 1000]).remove();
+mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaitem:dustTinySodaAsh>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:water> * 1000]).remove();
+
+// Raw Olive and Mushroom Pizza
+cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 3, <metaitem:component.mushroom_slice> * 8, <metaitem:component.olive_slice> * 8], [<liquid:gtfo_tomato_sauce> * 300]).remove();
+
+// Raw Cheese Pizza
+cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 8, <metaitem:circuit.integrated>], [<liquid:gtfo_tomato_sauce> * 600]).remove();
+
+// Raw Mince Meat Pizza
+cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10], [<liquid:gtfo_tomato_sauce> * 450]).remove();
+
+
+// --- Добавление рецептов
 
 // УДАЛИТЬ ПОСЛЕ ФИКСА #666
 recipes.addShaped("tfg/fuck", <metaitem:dustMeat> * 2,
@@ -691,3 +761,89 @@ macerator.recipeBuilder()
     .duration(40)
     .EUt(4)
     .buildAndRegister();
+
+// Carrot Structural Mesh
+extractor.recipeBuilder()
+    .inputs(<tfc:food/carrot>)
+    .outputs(<metaitem:mashed_potato_dust>)
+    .duration(200)
+    .EUt(1920)
+    .buildAndRegister();
+
+// Carrots on a Skewel Kebab
+recipes.addShapeless("tfg/gtfo/kebab_carrot", <metaitem:component.kebab.carrot> * 2, [<ore:gtce.tool.knife>, <metaitem:dustSalt>, <tfc:food/carrot>, <tfc:food/carrot>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
+
+// Beetroot Soup
+mixer.recipeBuilder()
+    .inputs(<tfc:food/beet> * 2, <ore:flour>)
+    .fluidInputs([<liquid:water> * 100])
+    .fluidOutputs([<liquid:gtfo_beetroot_soup> * 125])
+    .duration(100)
+    .EUt(8)
+    .buildAndRegister();
+
+// Chum * 3
+mixer.recipeBuilder()
+    .inputs(<metaitem:food.meat_rotten>, <minecraft:fermented_spider_eye>, <tfc:plants/amanita>)
+    .fluidInputs([<liquid:gtfo_sludge> * 100])
+    .outputs(<metaitem:food.chum> * 3)
+    .duration(100)
+    .EUt(24)
+    .buildAndRegister();
+
+// Chum * 6
+mixer.recipeBuilder()
+    .inputs(<metaitem:food.meat_rotten>, <minecraft:fermented_spider_eye>, <tfc:plants/amanita>)
+    .fluidInputs([<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100])
+    .outputs(<metaitem:food.chum> * 6)
+    .duration(100)
+    .EUt(24)
+    .buildAndRegister();
+
+// Flour -> Flat Dough
+for i, TFC_Flat_Doughs in TFC_Flat_Doughs {
+    mixer.recipeBuilder()
+    	.inputs([TFC_Flour[i], <metaitem:dustSmallSalt>])
+        .fluidInputs([<liquid:fresh_water> * 1000])
+    	.outputs(TFC_Flat_Doughs)
+    	.duration(400).EUt(2).buildAndRegister();
+}
+
+// Flat Dough -> Dough
+for i, TFC_Doughs in TFC_Doughs {
+    mixer.recipeBuilder()
+    	.inputs([TFC_Flat_Doughs[i], <ore:sweetener>])
+        .fluidInputs([<liquid:yeast_starter> * 1000])
+    	.outputs(TFC_Doughs)
+    	.duration(400).EUt(2).buildAndRegister();
+}
+
+// Raw Olive and Mushroom Pizza
+cuisine_assembler.recipeBuilder()
+    .inputs(<firmalife:pizza_dough>, <metaitem:component.mozzarella_slice> * 3, <metaitem:component.mushroom_slice> * 8, <metaitem:component.olive_slice> * 8)
+    .fluidInputs([<liquid:gtfo_tomato_sauce> * 300])
+    .outputs(<metaitem:component.pizza.veggie>)
+    .duration(400)
+    .EUt(180)
+    .buildAndRegister();
+
+// Raw Cheese Pizza
+cuisine_assembler.recipeBuilder()
+    .inputs(<firmalife:pizza_dough>, <metaitem:component.mozzarella_slice> * 8)
+    .circuit(0)
+    .fluidInputs([<liquid:gtfo_tomato_sauce> * 600])
+    .outputs(<metaitem:component.pizza.cheese>)
+    .duration(400)
+    .EUt(180)
+    .buildAndRegister();
+
+// Raw Mince Meat Pizza
+cuisine_assembler.recipeBuilder()
+    .inputs(<firmalife:pizza_dough>, <metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10)
+    .fluidInputs([<liquid:gtfo_tomato_sauce> * 450])
+    .outputs(<metaitem:component.pizza.mince_meat>)
+    .duration(400)
+    .EUt(180)
+    .buildAndRegister();
+
+

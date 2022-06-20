@@ -235,6 +235,10 @@ for item in TFC_Saws {
     <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 
+<ore:gtce.tool.rolling.pins>.addItems([
+    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag(),
+]);
+
 // Wrought Iron + Iron
 <ore:blockIronAny>.add(<minecraft:iron_block>, <metaitem:blockWroughtIron>);
 <ore:plateIronAny>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);

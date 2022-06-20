@@ -1,8 +1,10 @@
 import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.Anvil;
-import mods.firmalife.Drying;
 import mods.terrafirmacraft.ItemRegistry;
+
+import mods.firmalife.Oven;
+import mods.firmalife.Drying;
 
 // --- Массивы
 
@@ -13,7 +15,8 @@ val ItemsToRemove as IItemStack[] = [
     <firmalife:sprinkler>,
     <firmalife:candle> * 6,
     <firmalife:treated_lumber>,
-    <firmalife:jar>
+    <firmalife:jar>,
+    <firmalife:pizza_dough>
 ];
 
 val RemoveFences as IItemStack[] = [
@@ -110,6 +113,9 @@ Anvil.removeRecipe(<firmalife:black_steel_mallet_head>);
 Anvil.removeRecipe(<firmalife:blue_steel_mallet_head>);
 Anvil.removeRecipe(<firmalife:red_steel_mallet_head>);
 
+// Cooked Pizza
+Oven.removeRecipe(<firmalife:cooked_pizza>);
+
 // --- Добавление рецептов
 
 // Присвоение единиц металла
@@ -195,6 +201,9 @@ recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
     [null, <ore:plateIronAny>, null],
     [<ore:paneGlass>, null, <ore:paneGlass>],
     [null, <ore:paneGlass>, null]]);
+
+// Pizza Dough
+recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:gtce.tool.knife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
 
 // Свечка
 recipes.addShapeless("tfg/firmalife/candle", <firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);

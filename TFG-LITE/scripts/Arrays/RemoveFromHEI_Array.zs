@@ -1363,7 +1363,6 @@ val Vanilla as IItemStack[] = [
     <minecraft:quartz_ore>,
     // Food
     <minecraft:apple>,
-    <minecraft:mushroom_stew>,
     <minecraft:bread>,
     <minecraft:porkchop>,
     <minecraft:cooked_porkchop>,
@@ -1387,11 +1386,9 @@ val Vanilla as IItemStack[] = [
     <minecraft:pumpkin_pie>,
     <minecraft:rabbit>,
     <minecraft:cooked_rabbit>,
-    <minecraft:rabbit_stew>,
     <minecraft:mutton>,
     <minecraft:cooked_mutton>,
     <minecraft:beetroot>,
-    <minecraft:beetroot_soup>,
     <minecraft:double_plant:2>,
     // Tools
     <minecraft:diamond_pickaxe>,
@@ -2188,9 +2185,22 @@ for item in ExtraPlanets {
 val GTFO as IItemStack[] = [
     <metaitem:brick.adobe_fired>,
     <metaitem:brick.adobe>,
-	<metaitem:food.potato_on_a_stick>
+	<metaitem:food.potato_on_a_stick>,
+	<metaitem:food.fish_rotten>,
+	<metaitem:component.dough>,
+	<metaitem:component.flat_dough>,
+	<metaitem:component.bread>,
+	<metaitem:wooden_form.bread>
 ];
 for item in GTFO {
+    JEI.removeAndHide(item);
+}
+
+val FirmaLife as IItemStack[] = [
+    <firmalife:finished_pizza>,
+	<firmalife:cooked_pizza>
+];
+for item in FirmaLife {
     JEI.removeAndHide(item);
 }
 
