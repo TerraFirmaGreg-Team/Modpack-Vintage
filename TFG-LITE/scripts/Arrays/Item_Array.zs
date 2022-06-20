@@ -2682,6 +2682,31 @@ global TFC_Trapdoors as IItemStack[] = [
 	<tfc:wood/trapdoor/eucalyptus>
 ];
 
+// - TFC Metal Trapdoors
+global TFC_Metal_Trapdoors as IItemStack[] = [
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/gold>,
+	<tfc:metal/trapdoor/lead>,
+	<tfc:metal/trapdoor/nickel>,
+	<tfc:metal/trapdoor/rose_gold>,
+	<tfc:metal/trapdoor/silver>,
+	<tfc:metal/trapdoor/tin>,
+	<tfc:metal/trapdoor/zinc>,
+	<tfc:metal/trapdoor/sterling_silver>,
+	<tfc:metal/trapdoor/copper>,
+	<tfc:metal/trapdoor/bismuth>,
+	<tfc:metal/trapdoor/brass>,
+	<tfc:metal/trapdoor/bismuth_bronze>,
+	<tfc:metal/trapdoor/bronze>,
+	<tfc:metal/trapdoor/black_bronze>,
+	<tfc:metal/trapdoor/wrought_iron>,
+	<tfc:metal/trapdoor/steel>,
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/black_steel>,
+	<tfc:metal/trapdoor/blue_steel>,
+	<tfc:metal/trapdoor/red_steel>
+];
+
 // - TFC Supports Array
 global TFC_Supports as IItemStack[] = [
 	<tfc:wood/support/acacia>,
@@ -4145,6 +4170,31 @@ global Gem_Chipped as IItemStack[] = [
 	<metaitem:gemChippedGarnetRed>,
 	<metaitem:gemChippedGarnetYellow>,
 	<metaitem:gemChippedMonazite>
+];
+
+// - GT Metals, which are double TFC
+global GT_TFC_Doubled_Plates as IItemStack[] = [
+	<metaitem:platePlatinum>,
+	<metaitem:plateGold>,
+	<metaitem:plateLead>,
+	<metaitem:plateNickel>,
+	<metaitem:plateRoseGold>,
+	<metaitem:plateSilver>,
+	<metaitem:plateTin>,
+	<metaitem:plateZinc>,
+	<metaitem:plateSterlingSilver>,
+	<metaitem:plateCopper>,
+	<metaitem:plateBismuth>,
+	<metaitem:plateBrass>,
+	<metaitem:plateBismuthBronze>,
+	<metaitem:plateBronze>,
+	<metaitem:plateBlackBronze>,
+	<metaitem:plateWroughtIron>,
+	<metaitem:plateSteel>,
+	<metaitem:platePlatinum>,
+	<metaitem:plateBlackSteel>,
+	<metaitem:plateBlueSteel>,
+	<metaitem:plateRedSteel>
 ];
 
 global All_Metal_Heads_From_TFC as IItemStack[] = [

@@ -731,9 +731,9 @@ for i, TFC_Fence_Gates_Log in TFC_Fence_Gates_Log {
 
 // Бревна -> Опоры
 for i, TFC_Supports in TFC_Supports {
-    cutter.recipeBuilder()
+    assembler.recipeBuilder()
     	.inputs([TFC_Logs[i] * 2])
-		.fluidInputs([<liquid:lubricant> * 1])
+		.circuit(7)
     	.outputs(TFC_Supports * 16)
     	.duration(200).EUt(7).buildAndRegister();
 }
@@ -754,6 +754,15 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
 		.circuit(9)
     	.outputs(TFC_Trapdoors * 3)
     	.duration(320).EUt(4).buildAndRegister();
+}
+
+// Железные люки
+for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
+    assembler.recipeBuilder()
+    	.inputs([GT_TFC_Doubled_Plates[i]])
+		.circuit(9)
+    	.outputs(TFC_Metal_Trapdoors)
+    	.duration(205).EUt(8).buildAndRegister();
 }
 
 // Книжные полки
@@ -838,6 +847,8 @@ for i, TFC_Boats in TFC_Boats  {
     	.outputs(TFC_Boats)
     	.duration(270).EUt(4).buildAndRegister();
 }
+
+
 
 // --- Furnace recipes for TFC items
 // Хавка
