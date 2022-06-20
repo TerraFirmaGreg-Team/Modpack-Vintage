@@ -486,9 +486,9 @@ recipes.addShaped("tfg/gregtech/steam_export_bus", <metaitem:steam_export_bus>, 
 
 // Wooden Crate
 recipes.addShaped("tfg/gregtech/wooden_crate", <metaitem:crate.wood>, [
-    [<ore:screwIronAny>, <ore:planks>, <ore:screwIronAny>],
-    [<ore:planks>, <ore:gtce.tool.saws>, <ore:planks>],
-    [<ore:screwIronAny>, <ore:planks>, <ore:screwIronAny>]]);
+    [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
+    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>],
+    [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>]]);
 
 // Блокнот
 recipes.addShaped("tfg/gregtech/clipboard", <metaitem:clipboard>, [
@@ -948,7 +948,7 @@ mixer.recipeBuilder()
 
 // Деревянный ящик
 assembler.recipeBuilder()
-    .inputs(<ore:screwIronAny> * 4, <ore:planks> * 4)
+    .inputs(<ore:screwIronAny> * 4, <ore:plankWood> * 4)
     .circuit(1)
     .outputs(<metaitem:crate.wood>)
     .duration(100).EUt(16).buildAndRegister();
