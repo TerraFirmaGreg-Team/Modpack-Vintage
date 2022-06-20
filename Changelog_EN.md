@@ -1,4 +1,17 @@
 # Changelog
+
+## Version R3.3.6 - 06/20/2022
+#### [Lite, Huge]
+### Modpack fixes
+* Fixed wooden crate recipe
+* Correction of metal units in double plates
+* Fixed Whetstone Base Recipe
+* Added recipe for iron hatches in GT machines
+* Fixed prop recipe
+* New corrected GTFO recipes
+### Update mods
+* Modtweaker
+
 ## Version R3.3.5b-HotFix - 06/18/2022
 #### [Lite, Huge]
 ### Modpack fixes
