@@ -2,9 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-// --- Recipes Removing
+// --- Массивы
 
-// Поименное удаление рецептов
 val RemoveItemRecipesByName = [
   "appliedenergistics2:decorative/quartz_block_pure",
   "appliedenergistics2:decorative/certuz_quartz_block",
@@ -14,14 +13,7 @@ val RemoveItemRecipesByName = [
   "appliedenergistics2:tools/misctools_charged_staff",
   "appliedenergistics2:tools/network_memory_card"
 ] as string[];
-for item in RemoveItemRecipesByName{
-  recipes.removeByRecipeName(item);
-}
 
-// --- Recipes Adding
-
-// Покраска, обесвечивание кабелей
-// Glass Cable
 var colored_GlassCables as IItemStack[] = [
   <appliedenergistics2:part>,
   <appliedenergistics2:part:1>,
@@ -40,34 +32,7 @@ var colored_GlassCables as IItemStack[] = [
   <appliedenergistics2:part:14>,
   <appliedenergistics2:part:15>
 ];
-for i, cable in colored_GlassCables {
-  recipes.remove(cable);
-  chemical_bath.recipeBuilder()
-    .inputs(<appliedenergistics2:part:16>)
-    .fluidInputs([All_Liquid_Dyes[i] * 8])
-    .outputs(cable)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
 
-  chemical_bath.recipeBuilder()
-    .inputs(cable)
-    .fluidInputs([<liquid:chlorine> * 10])
-    .outputs(<appliedenergistics2:part:16>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-}
-recipes.remove(<appliedenergistics2:part:16>);
-assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:part:140> * 2)
-  .inputs(<ore:dustFluix> * 2)
-  .outputs(<appliedenergistics2:part:16> * 3)
-  .duration(100)
-  .EUt(30)
-  .buildAndRegister();
-
-// Covered Cable
 var colored_CoveredCable as IItemStack[] = [
 	<appliedenergistics2:part:20>,
 	<appliedenergistics2:part:21>,
@@ -87,6 +52,136 @@ var colored_CoveredCable as IItemStack[] = [
 	<appliedenergistics2:part:35>
 ];
 
+var colored_SmartCable as IItemStack[] = [
+	<appliedenergistics2:part:40>,
+	<appliedenergistics2:part:41>,
+	<appliedenergistics2:part:42>,
+	<appliedenergistics2:part:43>,
+	<appliedenergistics2:part:44>,
+	<appliedenergistics2:part:45>,
+	<appliedenergistics2:part:46>,
+	<appliedenergistics2:part:47>,
+	<appliedenergistics2:part:48>,
+	<appliedenergistics2:part:49>,
+	<appliedenergistics2:part:50>,
+	<appliedenergistics2:part:51>,
+	<appliedenergistics2:part:52>,
+	<appliedenergistics2:part:53>,
+	<appliedenergistics2:part:54>,
+	<appliedenergistics2:part:55>
+];
+
+// Dense Covered Cable
+var colored_DenseCoveredCable as IItemStack[] = [
+	<appliedenergistics2:part:500>,
+	<appliedenergistics2:part:501>,
+	<appliedenergistics2:part:502>,
+	<appliedenergistics2:part:503>,
+	<appliedenergistics2:part:504>,
+	<appliedenergistics2:part:505>,
+	<appliedenergistics2:part:506>,
+	<appliedenergistics2:part:507>,
+	<appliedenergistics2:part:508>,
+	<appliedenergistics2:part:509>,
+	<appliedenergistics2:part:510>,
+	<appliedenergistics2:part:511>,
+	<appliedenergistics2:part:512>,
+	<appliedenergistics2:part:513>,
+	<appliedenergistics2:part:514>,
+	<appliedenergistics2:part:515>
+];
+
+// --- Удаление рецептов
+
+// Поименное удаление рецептов
+for item in RemoveItemRecipesByName{
+  recipes.removeByRecipeName(item);
+}
+
+for i, cable in colored_SmartCable {
+  recipes.remove(cable);
+}
+
+for i, cable in colored_DenseCoveredCable {
+  recipes.remove(cable);
+}
+
+// Glass Cable
+for glassCable in glassCables {
+  if (glassCable.displayName has "Fluix") {}
+  else {
+    recipes.remove(glassCable);
+  }
+}
+
+// Covered Cable
+for coveredCable in coveredCables {
+  if (coveredCable.displayName has "Fluix") {}
+  else {
+    recipes.remove(coveredCable);
+  }
+}
+
+// Smart Cable
+for smartCable in smartCables {
+  if (smartCable.displayName has "Fluix") {}
+  else {
+    recipes.remove(smartCable);
+  }
+}
+
+// Dense Covered Cable
+for denseCoveredCable in denseCoveredCables {
+  if (denseCoveredCable.displayName has "Fluix") {}
+  else {
+    recipes.remove(denseCoveredCable);
+  }
+}
+
+// Dense Smart Cable
+for denseSmartCable in denseSmartCables {
+  if (denseSmartCable.displayName has "Fluix") {}
+  else {
+    recipes.remove(denseSmartCable);
+  }
+}
+
+recipes.remove(<appliedenergistics2:part:16>);
+recipes.remove(<appliedenergistics2:part:36>);
+
+// --- Добавление рецептов
+
+// Покраска, обесвечивание кабелей
+// Glass Cable
+for i, cable in colored_GlassCables {
+  recipes.remove(cable);
+  chemical_bath.recipeBuilder()
+    .inputs(<appliedenergistics2:part:16>)
+    .fluidInputs([All_Liquid_Dyes[i] * 8])
+    .outputs(cable)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
+
+  chemical_bath.recipeBuilder()
+    .inputs(cable)
+    .fluidInputs([<liquid:chlorine> * 10])
+    .outputs(<appliedenergistics2:part:16>)
+    .duration(40)
+    .EUt(16)
+    .buildAndRegister();
+}
+
+// ME Cable Fluix
+assembler.recipeBuilder()
+  .inputs(<appliedenergistics2:part:140> * 2)
+  .inputs(<ore:dustFluix> * 2)
+  .outputs(<appliedenergistics2:part:16> * 3)
+  .duration(100)
+  .EUt(30)
+  .buildAndRegister();
+
+// Covered Cable
 for i, cable in colored_CoveredCable {
   recipes.remove(cable);
   chemical_bath.recipeBuilder()
@@ -105,7 +200,7 @@ for i, cable in colored_CoveredCable {
     .EUt(16)
     .buildAndRegister();
 }
-recipes.remove(<appliedenergistics2:part:36>);
+// ME Covered Fluix Cable
 assembler.recipeBuilder()
   .inputs(<ore:ae2.cable.glass>)
   .circuit(24)
@@ -132,26 +227,7 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 // Smart Cable
-var colored_SmartCable as IItemStack[] = [
-	<appliedenergistics2:part:40>,
-	<appliedenergistics2:part:41>,
-	<appliedenergistics2:part:42>,
-	<appliedenergistics2:part:43>,
-	<appliedenergistics2:part:44>,
-	<appliedenergistics2:part:45>,
-	<appliedenergistics2:part:46>,
-	<appliedenergistics2:part:47>,
-	<appliedenergistics2:part:48>,
-	<appliedenergistics2:part:49>,
-	<appliedenergistics2:part:50>,
-	<appliedenergistics2:part:51>,
-	<appliedenergistics2:part:52>,
-	<appliedenergistics2:part:53>,
-	<appliedenergistics2:part:54>,
-	<appliedenergistics2:part:55>
-];
 for i, cable in colored_SmartCable {
-  recipes.remove(cable);
   chemical_bath.recipeBuilder()
     .inputs(<appliedenergistics2:part:56>)
     .fluidInputs([All_Liquid_Dyes[i] * 8])
@@ -177,27 +253,7 @@ assembler.recipeBuilder()
   .EUt(30)
   .buildAndRegister();
 
-// Dense Covered Cable
-var colored_DenseCoveredCable as IItemStack[] = [
-	<appliedenergistics2:part:500>,
-	<appliedenergistics2:part:501>,
-	<appliedenergistics2:part:502>,
-	<appliedenergistics2:part:503>,
-	<appliedenergistics2:part:504>,
-	<appliedenergistics2:part:505>,
-	<appliedenergistics2:part:506>,
-	<appliedenergistics2:part:507>,
-	<appliedenergistics2:part:508>,
-	<appliedenergistics2:part:509>,
-	<appliedenergistics2:part:510>,
-	<appliedenergistics2:part:511>,
-	<appliedenergistics2:part:512>,
-	<appliedenergistics2:part:513>,
-	<appliedenergistics2:part:514>,
-	<appliedenergistics2:part:515>
-];
 for i, cable in colored_DenseCoveredCable {
-  recipes.remove(cable);
   chemical_bath.recipeBuilder()
     .inputs(<appliedenergistics2:part:516>)
     .fluidInputs([All_Liquid_Dyes[i] * 8])

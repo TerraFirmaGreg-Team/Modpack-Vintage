@@ -324,7 +324,7 @@ GenerateGasCollectorRecipes(-22, 19);
 GenerateGasCollectorRecipes(-1025, 20);
 GenerateGasCollectorRecipes(-1338, 21);
 
-// --- Rocks
+// --- Породы
 
 // Solid Meteoric Iron --> Meteoric Iron Raw
 macerator.recipeBuilder()
@@ -531,7 +531,7 @@ macerator.recipeBuilder()
    .EUt(1540)
    .buildAndRegister();
 
-//Меркурианский камень пыль
+// Меркурианский камень пыль
 centrifuge.recipeBuilder()
    .inputs(<metaitem:dustMercuryStone> * 2)
    .chancedOutput(<ore:dustTinyVanadiumMagnetite>.firstItem, 4500, 1200)
@@ -541,7 +541,7 @@ centrifuge.recipeBuilder()
    .EUt(1536)
    .buildAndRegister();
 
-// --- Астероиды(3 типа камня)
+// --- Астероиды (3 типа камня)
 
 // Тип 1
 macerator.recipeBuilder()

@@ -216,6 +216,7 @@ assembler.findRecipe(4, [<minecraft:planks:4> * 2, <minecraft:stick:0> * 2, <met
 assembler.findRecipe(4, [<minecraft:planks:5> * 2, <minecraft:stick:0> * 2, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 
 // Каменные кирпичи
+forge_hammer.findRecipe(16, [<chisel:stonebrick:0>], null).remove();
 // Stone Bricks
 assembler.findRecipe(4, [<minecraft:stone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 4})], null).remove();
 // Cracked Stone Bricks
@@ -370,6 +371,11 @@ macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 // Регистрация металла
 ItemRegistry.registerItemMetal(<minecraft:iron_bars>, "WROUGHT_IRON", 18, true);
 
+// Register Food Stats for TFC
+ItemRegistry.registerFood(<minecraft:mushroom_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 0, 0);
+ItemRegistry.registerFood(<minecraft:rabbit_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 1.0, 0);
+ItemRegistry.registerFood(<minecraft:beetroot_soup>, 4, 22, 2.0, 2.0, 0, 3.0, 0, 0, 0);
+
 // Крафт некоторых блоков в компрессоре
 compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
 compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
@@ -383,181 +389,181 @@ recipes.addShapeless("tfg/vanilla/prismarine/sea_lantern", <minecraft:sea_lanter
 recipes.addShapeless("tfg/vanilla/prismarine/dark", <minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
 
 // Раздатчик
-recipes.addShaped("tfg/vanilla/dispenser", <minecraft:dispenser>,
-    [[<ore:cobblestone>, <ore:ringIronAny>, <ore:cobblestone>],
+recipes.addShaped("tfg/vanilla/dispenser", <minecraft:dispenser>, [
+    [<ore:cobblestone>, <ore:ringIronAny>, <ore:cobblestone>],
     [<ore:springIronAny>, <ore:string>, <ore:springIronAny>],
     [<ore:gearSmallIronAny>, <metaitem:stickRedAlloy>, <ore:gearSmallIronAny>]]);
 
 // Выбрасыватель
-recipes.addShaped("tfg/vanilla/dropper", <minecraft:dropper>,
-    [[<ore:cobblestone>, <ore:ringIronAny>, <ore:cobblestone>],
+recipes.addShaped("tfg/vanilla/dropper", <minecraft:dropper>, [
+    [<ore:cobblestone>, <ore:ringIronAny>, <ore:cobblestone>],
     [<ore:springSmallIronAny>, <ore:string>, <ore:springSmallIronAny>],
     [<ore:gearSmallIronAny>, <metaitem:stickRedAlloy>, <ore:gearSmallIronAny>]]);
 
 // Наблюдатель - истинный кварц
-recipes.addShaped("tfg/vanilla/observer/certus_quartz", <minecraft:observer>,
-    [[<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
+recipes.addShaped("tfg/vanilla/observer/certus_quartz", <minecraft:observer>, [
+    [<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
     [<ore:cobblestone>, <metaitem:plateCertusQuartz>, <ore:cobblestone>],
     [<ore:ringIronAny>, <metaitem:stickRedAlloy>, <ore:ringIronAny>]]);
 
 // Наблюдатель - адский кварц
-recipes.addShaped("tfg/vanilla/observer/nether_quartz", <minecraft:observer>,
-    [[<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
+recipes.addShaped("tfg/vanilla/observer/nether_quartz", <minecraft:observer>, [
+    [<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
     [<ore:cobblestone>, <metaitem:plateNetherQuartz>, <ore:cobblestone>],
     [<ore:ringIronAny>, <metaitem:stickRedAlloy>, <ore:ringIronAny>]]);
 
 // Наблюдатель - кварцит
-recipes.addShaped("tfg/vanilla/observer/quartzite", <minecraft:observer>,
-    [[<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
+recipes.addShaped("tfg/vanilla/observer/quartzite", <minecraft:observer>, [
+    [<ore:ringIronAny>, <ore:cobblestone>, <ore:ringIronAny>],
     [<ore:cobblestone>, <metaitem:plateQuartzite>, <ore:cobblestone>],
     [<ore:ringIronAny>, <metaitem:stickRedAlloy>, <ore:ringIronAny>]]);
 
 // Железная нажимная плита
-recipes.addShaped("tfg/vanilla/light_weighted_pressure_plate", <minecraft:heavy_weighted_pressure_plate>,
-    [[<metaitem:screwSteel>, <ore:gtce.tool.hard.hammers>, <metaitem:screwSteel>],
+recipes.addShaped("tfg/vanilla/light_weighted_pressure_plate", <minecraft:heavy_weighted_pressure_plate>, [
+    [<metaitem:screwSteel>, <ore:gtce.tool.hard.hammers>, <metaitem:screwSteel>],
     [<ore:plateIronAny>, <metaitem:springSteel>, <ore:plateIronAny>],
     [<metaitem:screwSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:screwSteel>]]);
 
 // Котёл
-recipes.addShaped("tfg/vanilla/cauldron", <minecraft:cauldron>,
-    [[<ore:plateIronAny>, null, <ore:plateIronAny>],
+recipes.addShaped("tfg/vanilla/cauldron", <minecraft:cauldron>, [
+    [<ore:plateIronAny>, null, <ore:plateIronAny>],
     [<ore:plateIronAny>, <ore:gtce.tool.hard.hammers>, <ore:plateIronAny>],
     [<ore:plateIronAny>, <ore:plateIronAny>, <ore:plateIronAny>]]);
 
 // Воронка
-recipes.addShaped("tfg/vanilla/hopper", <minecraft:hopper>,
-    [[<ore:plateIronAny>, <ore:chest>, <ore:plateIronAny>],
+recipes.addShaped("tfg/vanilla/hopper", <minecraft:hopper>, [
+    [<ore:plateIronAny>, <ore:chest>, <ore:plateIronAny>],
     [<ore:plateIronAny>, <ore:gearIronAny>, <ore:plateIronAny>],
     [<ore:gtce.tool.wrenches>, <ore:plateIronAny>, <ore:gtce.tool.hard.hammers>]]);
 
 // Наковальня
-recipes.addShaped("tfg/vanilla/anvil", <minecraft:anvil>,
-    [[<ore:blockIronAny>, <ore:blockIronAny>, <ore:blockIronAny>],
+recipes.addShaped("tfg/vanilla/anvil", <minecraft:anvil>, [
+    [<ore:blockIronAny>, <ore:blockIronAny>, <ore:blockIronAny>],
     [<ore:screwIronAny>, <ore:blockIronAny>, <ore:screwIronAny>],
     [<ore:plateIronAny>, <ore:blockIronAny>, <ore:plateIronAny>]]);
 
 // Вагонетка
-recipes.addShaped("tfg/vanilla/minecart", <minecraft:minecart>,
-    [[<ore:ringIronAny>, <ore:gtce.tool.hard.hammers>, <ore:ringIronAny>],
+recipes.addShaped("tfg/vanilla/minecart", <minecraft:minecart>, [
+    [<ore:ringIronAny>, <ore:gtce.tool.hard.hammers>, <ore:ringIronAny>],
     [<ore:plateIronAny>, <ore:gtce.tool.wrenches>, <ore:plateIronAny>],
     [<ore:ringIronAny>, <ore:plateIronAny>, <ore:ringIronAny>]]);
 
 // Проигрыватель
-recipes.addShaped("tfg/vanilla/jukebox", <minecraft:jukebox>,
-    [[<ore:logWood>, <metaitem:screwDiamond>, <ore:logWood>],
+recipes.addShaped("tfg/vanilla/jukebox", <minecraft:jukebox>, [
+    [<ore:logWood>, <metaitem:screwDiamond>, <ore:logWood>],
     [<minecraft:noteblock>, <ore:ringIronAny>, <minecraft:noteblock>],
     [<ore:logWood>, <ore:gearIronAny>, <ore:logWood>]]);
 
 // Хук
-recipes.addShaped("tfg/vanilla/tripwire_hook", <minecraft:tripwire_hook>,
-    [[<ore:ringIronAny>, <ore:stickWood>, <ore:ringIronAny>],
+recipes.addShaped("tfg/vanilla/tripwire_hook", <minecraft:tripwire_hook>, [
+    [<ore:ringIronAny>, <ore:stickWood>, <ore:ringIronAny>],
     [<ore:string>, <ore:stickWood>, <ore:string>],
     [null, <ore:string>, null]]);
 
 // Картина
-recipes.addShaped("tfg/vanilla/painting", <minecraft:painting>,
-    [[<ore:string>, <ore:ringIronAny>, <ore:string>],
+recipes.addShaped("tfg/vanilla/painting", <minecraft:painting>, [
+    [<ore:string>, <ore:ringIronAny>, <ore:string>],
     [<ore:stickWood>, <ore:carpet>, <ore:stickWood>],
     [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 
 // Рамка
-recipes.addShaped("tfg/vanilla/item_frame", <minecraft:item_frame>,
-    [[<ore:string>, <ore:ringIronAny>, <ore:string>],
+recipes.addShaped("tfg/vanilla/item_frame", <minecraft:item_frame>, [
+    [<ore:string>, <ore:ringIronAny>, <ore:string>],
     [<ore:stickWood>, <ore:leather>, <ore:stickWood>],
     [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 
 // Лампа
-recipes.addShaped("tfg/vanilla/redstone_lamp", <minecraft:redstone_lamp>,
-    [[<ore:plateBrass>, <ore:stickIronAny>, <ore:plateBrass>],
+recipes.addShaped("tfg/vanilla/redstone_lamp", <minecraft:redstone_lamp>, [
+    [<ore:plateBrass>, <ore:stickIronAny>, <ore:plateBrass>],
     [<ore:stickIronAny>, <ore:cableGtSingleRedAlloy>, <ore:stickIronAny>],
     [<ore:plateBrass>, <ore:stickIronAny>, <ore:plateBrass>]]);
 
 // Удочка
-recipes.addShaped("tfg/vanilla/fishing_rod", <minecraft:fishing_rod>,
-    [[null, null, <minecraft:stick>],
+recipes.addShaped("tfg/vanilla/fishing_rod", <minecraft:fishing_rod>, [
+    [null, null, <minecraft:stick>],
     [null, <minecraft:stick>, <ore:string>],
     [<minecraft:stick>, null, <ore:string>]]);
 
 // Чар стол
-recipes.addShaped("tfg/vanilla/enchanting_table", <minecraft:enchanting_table>,
-    [[null, <minecraft:book>, null],
+recipes.addShaped("tfg/vanilla/enchanting_table", <minecraft:enchanting_table>, [
+    [null, <minecraft:book>, null],
     [<ore:gemFlawless>, <ore:obsidian>, <ore:gemFlawless>],
     [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
 
 // Поршень
-recipes.addShaped("tfg/vanilla/piston", <minecraft:piston>,
-    [[<ore:lumber>, <ore:lumber>, <ore:lumber>],
+recipes.addShaped("tfg/vanilla/piston", <minecraft:piston>, [
+    [<ore:lumber>, <ore:lumber>, <ore:lumber>],
     [<ore:gearIronAny>, <ore:stickLongIronAny>, <ore:gearIronAny>],
     [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 
 // Книга
-recipes.addShaped("tfg/vanilla/book", <minecraft:book>,
-    [[<ore:string>, <ore:paper>, <ore:leather>],
+recipes.addShaped("tfg/vanilla/book", <minecraft:book>, [
+    [<ore:string>, <ore:paper>, <ore:leather>],
     [<ore:string>, <ore:paper>, <metaitem:rubber_drop>],
     [<ore:string>, <ore:paper>, <ore:leather>]]);
 
 // Ведро
-recipes.addShaped("tfg/vanilla/iron_bucket", <minecraft:bucket>,
-    [[null, <ore:gtce.tool.hard.hammers>, null],
+recipes.addShaped("tfg/vanilla/iron_bucket", <minecraft:bucket>, [
+    [null, <ore:gtce.tool.hard.hammers>, null],
     [<metaitem:plateBlueSteel>, <tfc:metal/bucket/red_steel>.noReturn(), <metaitem:plateBlueSteel>],
     [null, <metaitem:plateBlueSteel>, null]]);
 
 // Рычаг
-recipes.addShaped("tfg/vanilla/lever", <minecraft:lever>,
-    [[null, <ore:buttonStone>, null],
+recipes.addShaped("tfg/vanilla/lever", <minecraft:lever>, [
+    [null, <ore:buttonStone>, null],
     [null, <ore:stickWood>, null]]);
 
 // Бирка
-recipes.addShaped("tfg/vanilla/name_tag", <minecraft:name_tag>,
-    [[<ore:string>, <ore:string>, null],
+recipes.addShaped("tfg/vanilla/name_tag", <minecraft:name_tag>, [
+    [<ore:string>, <ore:string>, null],
     [<ore:string>, <minecraft:paper>, null],
     [<ore:string>, <ore:string>, null]]);
 
 // Повторитель
-recipes.addShaped("tfg/vanilla/repeater", <minecraft:repeater>,
-    [[<ore:screwIronAny>, null, <ore:screwIronAny>],
+recipes.addShaped("tfg/vanilla/repeater", <minecraft:repeater>, [
+    [<ore:screwIronAny>, null, <ore:screwIronAny>],
     [<minecraft:redstone_torch>, <ore:gtce.tool.screwdrivers>, <minecraft:redstone_torch>],
     [<ore:pressurePlateStone>, <ore:stickRedAlloy>,<ore:pressurePlateStone>]]);
 
 // Компаратор - истинный кварц
-recipes.addShaped("tfg/vanilla/comparator/certus_quartz", <minecraft:comparator>,
-    [[<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
+recipes.addShaped("tfg/vanilla/comparator/certus_quartz", <minecraft:comparator>, [
+    [<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
     [<minecraft:redstone_torch>, <ore:plateCertusQuartz>, <minecraft:redstone_torch>],
     [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 // Компаратор - адский кварц
-recipes.addShaped("tfg/vanilla/comparator/nether_quartz", <minecraft:comparator>,
-    [[<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
+recipes.addShaped("tfg/vanilla/comparator/nether_quartz", <minecraft:comparator>, [
+    [<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
     [<minecraft:redstone_torch>, <ore:plateNetherQuartz>, <minecraft:redstone_torch>],
     [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 // Компаратор - кварцит
-recipes.addShaped("tfg/vanilla/comparator/quartzite", <minecraft:comparator>,
-    [[<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
+recipes.addShaped("tfg/vanilla/comparator/quartzite", <minecraft:comparator>, [
+    [<ore:screwIronAny>, <minecraft:redstone_torch>, <ore:screwIronAny>],
     [<minecraft:redstone_torch>, <ore:plateQuartzite>, <minecraft:redstone_torch>],
     [<ore:pressurePlateStone>, <ore:gtce.tool.screwdrivers>, <ore:pressurePlateStone>]]);
 
 // Детектор света - истинный кварц
-recipes.addShaped("tfg/vanilla/daylight_detector/certus_quartz", <minecraft:daylight_detector>,
-    [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+recipes.addShaped("tfg/vanilla/daylight_detector/certus_quartz", <minecraft:daylight_detector>, [
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
     [<ore:plateCertusQuartz>, <ore:plateCertusQuartz>, <ore:plateCertusQuartz>],
     [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
 // Детектор света - адский кварц
-recipes.addShaped("tfg/vanilla/daylight_detector/nether_quartz", <minecraft:daylight_detector>,
-    [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+recipes.addShaped("tfg/vanilla/daylight_detector/nether_quartz", <minecraft:daylight_detector>, [
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
     [<ore:plateNetherQuartz>, <ore:plateNetherQuartz>, <ore:plateNetherQuartz>],
     [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
 // Детектор света - кварцит
-recipes.addShaped("tfg/vanilla/daylight_detector/quartzite", <minecraft:daylight_detector>,
-    [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+recipes.addShaped("tfg/vanilla/daylight_detector/quartzite", <minecraft:daylight_detector>, [
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
     [<ore:plateQuartzite>, <ore:plateQuartzite>, <ore:plateQuartzite>],
     [<ore:slabWood>, <ore:stickRedAlloy>, <ore:slabWood>]]);
 
 // Конская броня - железо
-recipes.addShaped("tfg/vanilla/horse_armor/iron", <minecraft:iron_horse_armor>,
-    [[<ore:gtce.tool.hard.hammers>, <ore:gtce.tool.screwdrivers>, <tfc:metal/helmet/wrought_iron>],
+recipes.addShaped("tfg/vanilla/horse_armor/iron", <minecraft:iron_horse_armor>, [
+    [<ore:gtce.tool.hard.hammers>, <ore:gtce.tool.screwdrivers>, <tfc:metal/helmet/wrought_iron>],
     [<ore:plateIronAny>, <tfc:metal/chestplate/wrought_iron>, <ore:plateIronAny>],
     [<tfc:metal/greaves/wrought_iron>, <ore:screwIronAny>, <tfc:metal/boots/wrought_iron>]]);
 

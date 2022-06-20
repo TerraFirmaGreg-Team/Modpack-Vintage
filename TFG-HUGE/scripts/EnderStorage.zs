@@ -1,28 +1,24 @@
 import crafttweaker.item.IItemStack;
 
-// --- Removing Recipes
-
-// Удаление рецептов
+// --- Массивы
 val RemoveWorkbenchRecipes as IItemStack[] = [
 	<enderstorage:ender_storage>,
   <enderstorage:ender_storage:1>,
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in RemoveWorkbenchRecipes {
   recipes.remove(item);
 }
 
-// ---- Adding Recipes
+// ---- Добавление рецептов
 
 // Chest
 assembler.recipeBuilder()
   .circuit(1)
-  .inputs([
-    <ore:plateBronze> * 4,
-    <ore:plateObsidian> * 32,
-    <ore:wool> | <ore:blockWool>,
-    <metaitem:cover.ender_fluid_link>,
-    <metaitem:super_chest.hv>
-  ])
+  .inputs([<ore:plateBronze> * 4,<ore:plateObsidian> * 32, <ore:wool>, <metaitem:cover.ender_fluid_link>, <metaitem:super_chest.hv>])
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage>])
   .duration(980)
@@ -32,13 +28,7 @@ assembler.recipeBuilder()
 // Tank
 assembler.recipeBuilder()
   .circuit(2)
-  .inputs([
-    <ore:plateBronze> * 4,
-    <ore:plateObsidian> * 32,
-    <ore:wool> | <ore:blockWool>,
-    <metaitem:cover.ender_fluid_link>,
-    <metaitem:super_tank.hv>
-  ])
+  .inputs([<ore:plateBronze> * 4, <ore:plateObsidian> * 32, <ore:wool>, <metaitem:cover.ender_fluid_link>, <metaitem:super_tank.hv>])
 	.fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs([<enderstorage:ender_storage:1>])
   .duration(980)

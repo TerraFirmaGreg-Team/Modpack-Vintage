@@ -1,4 +1,4 @@
-#priority 980
+#priority 970
 
 import crafttweaker.item.IItemStack;
 
@@ -26,21 +26,7 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Star forge
 ########################################
-global starforge as RecipeMap = FactoryRecipeMap.start("starforge")
-  .minInputs(1)
-  .maxInputs(9)
-  .minOutputs(1)
-  .maxOutputs(4)
-  .minFluidInputs(0)
-  .maxFluidInputs(3)
-  .minFluidOutputs(0)
-  .maxFluidOutputs(0)
-  .build();
-
-val id = 32002;
-val loc = "starforge";
-
-var starforge = Builder.start(loc, id)
+var star_forge = Builder.start("star_forge", 32002)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
                 .aisle("               ", "      CCC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
@@ -66,25 +52,8 @@ var starforge = Builder.start(loc, id)
                 .where(' ', CTPredicate.getAny())
                 .build();
   } as IPatternBuilderFunction)
-    .withRecipeMap(starforge)
+  .withRecipeMap(star_forge)
   .withBaseTexture(<metastate:gregtech:fusion_casing:1>)
   .buildAndRegister();
-starforge.hasMaintenanceMechanics = true;
-starforge.hasMufflerMechanics = false;
-
-assembly_line.recipeBuilder()
-    .inputs(
-      <ore:batteryIv> * 4,  
-      <ore:circuitIv> * 9, 
-      <metaitem:robot.arm.iv> * 14, 
-      <metaitem:tool.dataorb> * 4, 
-      <gcym:unique_casing:4> * 5, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <ore:plateDoubleNaquadah> * 3, 
-      <ore:plateDoubleNaquadah> * 3)
-    .fluidInputs(
-      <liquid:molten.titanium_carbide> * 6864, 
-      <liquid:molten.hssg> * 4432)
-    .outputs(<metaitem:multiblocktweaker:starforge>)
-    .duration(1300).EUt(8100).buildAndRegister();
+star_forge.hasMaintenanceMechanics = true;
+star_forge.hasMufflerMechanics = false;

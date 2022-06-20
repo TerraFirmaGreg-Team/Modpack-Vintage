@@ -1,4 +1,4 @@
-#priority 980
+#priority 970
 
 import crafttweaker.item.IItemStack;
 
@@ -26,21 +26,7 @@ import mods.gregtech.render.MoveType;
 ########################################
 # Greenhouse
 ########################################
-global greenhouse as RecipeMap = FactoryRecipeMap.start("greenhouse")
-    .minInputs(2)
-    .maxInputs(3)
-    .minOutputs(1)
-    .maxOutputs(4)
-    .minFluidInputs(1)
-    .maxFluidInputs(1)
-    .minFluidOutputs(0)
-    .maxFluidOutputs(0)
-    .build();
-
-val id = 32000;
-val loc = "greenhouse";
-
-var electric_greenhouse = Builder.start(loc, id)
+var greenhouse = Builder.start("greenhouse", 32000)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
 			.aisle(  "  CFCBCFC  ",  "  CWCCCWC  ",  "  CWCCCWC  ",  "  CFCCCFC  ",  "  GGGGGGG  ",  "           ", "           ")
@@ -67,104 +53,5 @@ var electric_greenhouse = Builder.start(loc, id)
     .withRecipeMap(greenhouse)
   .withBaseTexture(<metastate:gregtech:machine_casing:1>)
   .buildAndRegister();
-electric_greenhouse.hasMaintenanceMechanics = true;
-electric_greenhouse.hasMufflerMechanics = false;
-
-recipes.addShaped("greenhouse", <metaitem:multiblocktweaker:greenhouse>, [
-  [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
-  [<ore:circuitMv>, <metaitem:hull.mv>, <ore:circuitMv>],
-  [<metaitem:electric.piston.mv>, <metaitem:electric.pump.mv>, <metaitem:electric.piston.mv>]]);
-
-
-// Greenhouse logs
-/*
-for i, sapling in TFC_Saplings {
-  greenhouse.recipeBuilder()
-    .circuit(1)
-    .inputs([sapling])
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([TFC_Logs[i] * 16])
-    .outputs([sapling.withAmount(3)])
-    .duration(1300)
-    .EUt(60)
-    .buildAndRegister();
-  greenhouse.recipeBuilder()
-    .circuit(2)
-    .inputs([sapling])
-    .inputs([<metaitem:fertilizer> * 4])
-    .fluidInputs([<liquid:water> * 1000])
-    .outputs([TFC_Logs[i] * 16])
-    .outputs([TFC_Logs[i] * 16])
-    .outputs([sapling.withAmount(4)])
-    .duration(1000)
-    .EUt(80)
-    .buildAndRegister();
-}
-
-// Greenhouse Rubber
-greenhouse.recipeBuilder()
-  .circuit(1)
-  .inputs(<tfc:wood/sapling/rubber_fig>)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs([<tfc:wood/log/rubber_fig> * 4])
-  .outputs([<tfc:wood/sapling/rubber_fig>])
-  .outputs([<metaitem:rubber_drop>])
-  .duration(1300)
-  .EUt(60)
-  .buildAndRegister();
-greenhouse.recipeBuilder()
-  .circuit(2)
-  .inputs(<tfc:wood/sapling/rubber_fig>)
-  .inputs(<metaitem:fertilizer> * 4)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs([<tfc:wood/log/rubber_fig> * 8])
-  .outputs([<tfc:wood/sapling/rubber_fig> * 2])
-  .outputs([<metaitem:rubber_drop> * 4])
-  .duration(1000)
-  .EUt(80)
-  .buildAndRegister();
-
-greenhouse.recipeBuilder()
-  .circuit(1)
-  .inputs(<tfc:wood/sapling/hevea>)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs([<tfc:wood/log/hevea> * 4])
-  .outputs([<tfc:wood/sapling/hevea>])
-  .outputs([<metaitem:rubber_drop>])
-  .duration(1300)
-  .EUt(60)
-  .buildAndRegister();
-greenhouse.recipeBuilder()
-  .circuit(2)
-  .inputs(<tfc:wood/sapling/hevea>)
-  .inputs(<metaitem:fertilizer> * 4)
-  .fluidInputs([<liquid:fresh_water> * 1000])
-  .outputs([<tfc:wood/log/hevea> * 8])
-  .outputs([<tfc:wood/sapling/hevea> * 2])
-  .outputs([<metaitem:rubber_drop> * 4])
-  .duration(1000)
-  .EUt(80)
-  .buildAndRegister();
-
-
-// Greenhouse Plants
-for i, seed in All_Seeds {
-  greenhouse.recipeBuilder()
-    .circuit(1)
-    .notConsumable([seed])
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([All_Plants[i]])
-    .duration(1300)
-    .EUt(60)
-    .buildAndRegister();
-  greenhouse.recipeBuilder()
-    .circuit(2)
-    .notConsumable([seed])
-    .inputs([<metaitem:fertilizer> * 4])
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs([All_Plants[i].withAmount(All_Plants[i].amount * 2)])
-    .duration(1000)
-    .EUt(80)
-    .buildAndRegister();
-}
-*/
+greenhouse.hasMaintenanceMechanics = true;
+greenhouse.hasMufflerMechanics = false;

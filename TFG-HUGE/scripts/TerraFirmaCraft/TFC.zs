@@ -14,11 +14,10 @@ import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
 
+// --- Массивы
+
 val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenware_clay> | <tfcflorae:ceramics/kaolinite/kaolinite_clay> | <tfcflorae:ceramics/stoneware/stoneware_clay>;
 
-// --- Removing Recipes
-
-// Удаление рецептов
 val RemoveItemRecipesByName = [
   	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
@@ -55,11 +54,7 @@ val RemoveItemRecipesByName = [
 	"tfc:vanilla/cauldron",
 	"tfc:blast_furnace"
 ] as string[];
-for item in RemoveItemRecipesByName{
-    recipes.removeByRecipeName(item);
-}
 
-// Удаление рецептов из бочки
 val RemoveRecipesInBarrel = [
 	"tfc:concrete_white",
 	"tfc:concrete_orange",
@@ -78,11 +73,7 @@ val RemoveRecipesInBarrel = [
 	"tfc:concrete_red",
 	"tfc:concrete_black"
 ] as string[];
-for item in RemoveRecipesInBarrel {
-    recipes.removeByRecipeName(item);
-}
 
-// Удаление неиспользуемых рецептов из Quern
 val RemoveItemsFromQuern as IItemStack[] = [
 	<tfc:gem/diamond:2>,
 	<tfc:powder/fertilizer>,
@@ -93,6 +84,20 @@ val RemoveItemsFromQuern as IItemStack[] = [
 	<minecraft:redstone> * 8,
 	<tfc:powder/flux> * 6,
 ];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
+for item in RemoveItemRecipesByName{
+    recipes.removeByRecipeName(item);
+}
+
+// Удаление рецептов цемента из бочки
+for item in RemoveRecipesInBarrel {
+    recipes.removeByRecipeName(item);
+}
+
+// Удаление неиспользуемых рецептов из Quern
 for item in RemoveItemsFromQuern {
     Quern.removeRecipe(item);
 }
@@ -111,7 +116,104 @@ for item in TFC_Boats {
     recipes.remove(item);
 }
 
-// --- Adding Recipes
+// Унификация высокоуглеродной стали
+Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
+
+// Унификация высокоуглеродной черной стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
+
+// Унификация высокоуглеродной красной стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
+
+// Унификация высокоуглеродной синей стали
+Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
+
+// Унификация стали
+Anvil.removeRecipe(<tfc:metal/ingot/steel>);
+
+// Унификация черной стали
+Anvil.removeRecipe(<tfc:metal/ingot/black_steel>);
+
+// Унификация красной стали
+Anvil.removeRecipe(<tfc:metal/ingot/red_steel>);
+
+// Унификация синей стали
+Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
+
+// Унификация каолинита(Mica)
+Quern.removeRecipe(<tfc:powder/kaolinite> * 4);
+Heating.removeRecipe(<tfc:powder/kaolinite>);
+Oven.removeRecipe(<tfc:powder/kaolinite>);
+Grindstone.remove(<tfc:powder/kaolinite> * 6);
+
+// Унификация графита
+Quern.removeRecipe(<tfc:powder/graphite> * 4);
+Grindstone.remove(<tfc:powder/graphite> * 6);
+
+// Унификация серы
+Quern.removeRecipe(<tfc:powder/sulfur> * 4);
+Grindstone.remove(<tfc:powder/sulfur> * 8);
+
+// Унификация ляписа
+Quern.removeRecipe(<tfc:powder/lapis_lazuli> * 4);
+Grindstone.remove(<tfc:powder/lapis_lazuli> * 8);
+
+// Унификация древесный уголь
+Quern.removeRecipe(<tfc:powder/charcoal> * 4);
+Grindstone.remove(<tfc:powder/charcoal> * 8);
+
+// Унификация соли
+Quern.removeRecipe(<tfc:powder/salt>);
+Grindstone.remove(<tfc:powder/salt>);
+
+// Унификация сальпетера
+Quern.removeRecipe(<tfc:powder/saltpeter>);
+Grindstone.remove(<tfc:powder/saltpeter>);
+
+// Ром
+Barrel.removeRecipe(<liquid:rum> * 500);
+
+// Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
+// White Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_white> * 144]).remove();
+// Orange Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_orange> * 144]).remove();
+// Magenta Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_magenta> * 144]).remove();
+// Light Blue Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_blue> * 144]).remove();
+// Yellow Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_yellow> * 144]).remove();
+// Lime Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_lime> * 144]).remove();
+// Pink Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_pink> * 144]).remove();
+// Gray Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_gray> * 144]).remove();
+// Light Gray Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_gray> * 144]).remove();
+// Cyan Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_cyan> * 144]).remove();
+// Purple Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_purple> * 144]).remove();
+// Blue Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_blue> * 144]).remove();
+// Brown Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_brown> * 144]).remove();
+// Green Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_green> * 144]).remove();
+// Red Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_red> * 144]).remove();
+// Black Concrete Powder * 8
+mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_black> * 144]).remove();
+
+// Лассо
+assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], null).remove();
+
+// Песок --> Диоксид кремния
+electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
+
+// --- Добавление рецептов
 
 // Регистрация металла
 ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "WROUGHT_IRON", 144, true);
@@ -281,84 +383,41 @@ Welding.addRecipe("tfg/tfc/double_plate/black_steel", <metaitem:plateBlackSteel>
 Welding.addRecipe("tfg/tfc/double_plate/blue_steel", <metaitem:plateBlueSteel>, <metaitem:plateBlueSteel>, <metaitem:plateDoubleBlueSteel>, 6);
 Welding.addRecipe("tfg/tfc/double_plate/red_steel", <metaitem:plateRedSteel>, <metaitem:plateRedSteel>, <metaitem:plateDoubleRedSteel>, 6);
 
-// --- ---  Унификация высокоуглеродной стали
-Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
+//  Унификация высокоуглеродной стали
 Anvil.addRecipe("tfg/tfc/high_carbon_steel", <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_steel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация высокоуглеродной черной стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
+// Унификация высокоуглеродной черной стали
 Welding.addRecipe("tfg/tfc/high_carbon_black_steel", <tfc:metal/ingot/weak_steel>, <ore:ingotPigIron>, <tfc:metal/ingot/high_carbon_black_steel>, 3);
 
-// --- --- Унификация высокоуглеродной красной стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
+// Унификация высокоуглеродной красной стали
 Welding.addRecipe("tfg/tfc/high_carbon_red_steel", <tfc:metal/ingot/weak_red_steel>, <metaitem:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_red_steel>, 4);
 
-// --- --- Унификация высокоуглеродной синей стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
+// Унификация высокоуглеродной синей стали
 Welding.addRecipe("tfg/tfc/high_carbon_blue_steel", <tfc:metal/ingot/weak_blue_steel>, <metaitem:ingotBlackSteel>, <tfc:metal/ingot/high_carbon_blue_steel>, 4);
 
-// --- --- Унификация стали
-Anvil.removeRecipe(<tfc:metal/ingot/steel>);
+// Унификация стали
 Anvil.addRecipe("tfg/tfc/steel_ingot", <tfc:metal/ingot/high_carbon_steel>, <metaitem:ingotSteel>, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация черной стали
-Anvil.removeRecipe(<tfc:metal/ingot/black_steel>);
+// Унификация черной стали
 Anvil.addRecipe("tfg/tfc/black_steel_ingot", <tfc:metal/ingot/high_carbon_black_steel>, <metaitem:ingotBlackSteel>, 4, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация красной стали
-Anvil.removeRecipe(<tfc:metal/ingot/red_steel>);
+// Унификация красной стали
 Anvil.addRecipe("tfg/tfc/red_steel_ingot", <tfc:metal/ingot/high_carbon_red_steel>, <metaitem:ingotRedSteel>, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация синей стали
-Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
+// Унификация синей стали
 Anvil.addRecipe("tfg/tfc/blue_steel_ingot", <tfc:metal/ingot/high_carbon_blue_steel>, <metaitem:ingotBlueSteel>, 5, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// --- --- Унификация каолинита(Mica)
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/kaolinite> * 4);
-Heating.removeRecipe(<tfc:powder/kaolinite>);
-Oven.removeRecipe(<tfc:powder/kaolinite>);
-Grindstone.remove(<tfc:powder/kaolinite> * 6);
-// --- --- Добавление рецептов
+// Унификация каолинита(Mica)
 Quern.addRecipe("tfg/tfc/quern_mica_to_kaolinite", <metaitem:dustMica>, <tfc:powder/kaolinite> * 2);
 Grindstone.add(<metaitem:dustMica>, <tfc:powder/kaolinite> * 4, 10, false);
 
-// --- --- Унификация графита
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/graphite> * 4);
-Grindstone.remove(<tfc:powder/graphite> * 6);
-// --- --- Добавление рецептов
+// Унификация графита
 Quern.addRecipe("tfg/tfc/quern_graphite_to_graphite", <metaitem:dustGraphite>, <tfc:powder/graphite> * 2);
 Grindstone.add(<metaitem:dustGraphite>, <tfc:powder/graphite> * 4, 10, false);
 
-// --- --- Унификация серы
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/sulfur> * 4);
-Grindstone.remove(<tfc:powder/sulfur> * 8);
-// --- Добавление рецептов
-
-// --- --- Унификация ляписа
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/lapis_lazuli> * 4);
-Grindstone.remove(<tfc:powder/lapis_lazuli> * 8);
-
-// --- --- Унификация древесный уголь
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/charcoal> * 4);
-Grindstone.remove(<tfc:powder/charcoal> * 8);
-
-// --- --- Унификация соли
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/salt>);
-Grindstone.remove(<tfc:powder/salt>);
-// --- Добавление рецептов
+// Унификация соли
 Quern.addRecipe("tfg/tfc/quern_saltrock_to_salt", <tfc:rock/rocksalt>, <metaitem:dustSalt> * 4);
 Grindstone.add(<tfc:rock/rocksalt>, <metaitem:dustSalt> * 8, 10, false);
-
-// --- --- Унификация сальпетера
-// --- Удаление рецептов
-Quern.removeRecipe(<tfc:powder/saltpeter>);
-Grindstone.remove(<tfc:powder/saltpeter>);
 
 // Обшивка доменной печи
 Welding.addRecipe("tfg/tfc/blast_furnace_cladding", <metaitem:plateWroughtIron>, <metaitem:plateCopper>, <tfc:metal/sheet/wrought_iron>, 3);
@@ -382,7 +441,6 @@ Anvil.addRecipe("tfg/tfc/iron_bars_double", <metaitem:plateDoubleWroughtIron>, <
 Anvil.addRecipe("tfg/tfc/wrought_iron_to_wrought_iron", <tfc:metal/ingot/wrought_iron>, <metaitem:ingotWroughtIron>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 // Ром
-Barrel.removeRecipe(<liquid:rum> * 500);
 Barrel.addRecipe("tfg/tfc/rum", <minecraft:sugar>, <liquid:hot_water> * 500, <liquid:rum> * 500, 72);
 
 // Липкая резина
@@ -392,22 +450,30 @@ Barrel.addRecipe("tfg/tfc/sticky_resin", <tfctech:latex/rubber_mix>, <liquid:lat
 Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
-recipes.addShapeless(<minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
+recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
 
 // Контроллер доменной печи
-recipes.addShaped(<tfc:blast_furnace>,
-    [[<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>],
+recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
+	[<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>],
     [<ore:plateDoubleIronAny>, <tfc:crucible>, <ore:plateDoubleIronAny>],
     [<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>]]);
 
 // Огнеупорная глина
-recipes.addShaped(<tfc:ceramics/fire_clay>,
-	[[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>],
+recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
+	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>],
 	[<tfc:powder/graphite>, AllClays, <tfc:powder/graphite>],
 	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>]]);
 
 // TFC Resin --> Sticky resin
 furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
+
+// Рецепты для всех сырых камней
+for item in TFC_Raws {
+    rock_breaker.recipeBuilder()
+    	.notConsumable(item)
+    	.outputs(item)
+    	.duration(16).EUt(32).buildAndRegister();
+}
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
@@ -665,9 +731,9 @@ for i, TFC_Fence_Gates_Log in TFC_Fence_Gates_Log {
 
 // Бревна -> Опоры
 for i, TFC_Supports in TFC_Supports {
-    cutter.recipeBuilder()
+    assembler.recipeBuilder()
     	.inputs([TFC_Logs[i] * 2])
-		.fluidInputs([<liquid:lubricant> * 1])
+		.circuit(7)
     	.outputs(TFC_Supports * 16)
     	.duration(200).EUt(7).buildAndRegister();
 }
@@ -690,6 +756,15 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
     	.duration(320).EUt(4).buildAndRegister();
 }
 
+// Железные люки
+for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
+    assembler.recipeBuilder()
+    	.inputs([GT_TFC_Doubled_Plates[i]])
+		.circuit(9)
+    	.outputs(TFC_Metal_Trapdoors)
+    	.duration(205).EUt(8).buildAndRegister();
+}
+
 // Книжные полки
 for i, TFC_Bookshelfs in TFC_Bookshelfs {
     assembler.recipeBuilder()
@@ -710,8 +785,8 @@ for i, TFC_Workbenchs in TFC_Workbenchs {
 
 // Сундуки
 for i, TFC_Chests in TFC_Chests {
-	recipes.addShaped("tfg/tfc/chest_" + i, TFC_Chests,
-		[[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]],
+	recipes.addShaped("tfg/tfc/chest_" + i, TFC_Chests, [
+		[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]],
 		[TFC_Lumber[i], null, TFC_Lumber[i]],
 		[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]]]);
 	
@@ -751,18 +826,18 @@ for i, TFC_Barrels in TFC_Barrels  {
 	{
 		if (i != j) {
 			assembler.recipeBuilder()
-			.inputs([TFC_Lumber[i] * 7])
-			.circuit(15)
-			.outputs(TFC_Barrels)
-			.duration(205).EUt(4).buildAndRegister();
+				.inputs([TFC_Lumber[i] * 7])
+				.circuit(15)
+				.outputs(TFC_Barrels)
+				.duration(205).EUt(4).buildAndRegister();
 		}
 	}
 }
 
 // Лодки
 for i, TFC_Boats in TFC_Boats  {
-    recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats,
-		[[<gregtech:meta_screw:*>, <gregtech:meta_screw:*>, <gregtech:meta_screw:*>],
+    recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats, [
+		[<gregtech:meta_screw:*>, <gregtech:meta_screw:*>, <gregtech:meta_screw:*>],
 		[TFC_Lumber[i], <metaitem:rubber_drop>, TFC_Lumber[i]],
 		[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]]]);
 	
@@ -772,6 +847,8 @@ for i, TFC_Boats in TFC_Boats  {
     	.outputs(TFC_Boats)
     	.duration(270).EUt(4).buildAndRegister();
 }
+
+
 
 // --- Furnace recipes for TFC items
 // Хавка
@@ -988,41 +1065,7 @@ electrolyzer.recipeBuilder()
 	.fluidOutputs(<liquid:oxygen> * 4)
 	.duration(450).EUt(64).buildAndRegister();
 
-// Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
-// White Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_white> * 144]).remove();
-// Orange Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_orange> * 144]).remove();
-// Magenta Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_magenta> * 144]).remove();
-// Light Blue Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_blue> * 144]).remove();
-// Yellow Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_yellow> * 144]).remove();
-// Lime Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_lime> * 144]).remove();
-// Pink Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_pink> * 144]).remove();
-// Gray Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_gray> * 144]).remove();
-// Light Gray Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_gray> * 144]).remove();
-// Cyan Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_cyan> * 144]).remove();
-// Purple Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_purple> * 144]).remove();
-// Blue Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_blue> * 144]).remove();
-// Brown Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_brown> * 144]).remove();
-// Green Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_green> * 144]).remove();
-// Red Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_red> * 144]).remove();
-// Black Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_black> * 144]).remove();
-
-//Цемент из тфк --> цемент разных цветов
+// Цемент из тфк --> цемент разных цветов
 // White Concrete Powder * 8
 mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_white> * 144]).outputs(<minecraft:concrete_powder> * 4).duration(15).EUt(7).buildAndRegister();
 // Orange Concrete Powder * 8
@@ -1089,14 +1132,12 @@ vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(
 
 // Различные крафты для лассо
 LeatherKnapping.addRecipe("tfg/tfc/lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
-assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], null).remove();
 assembler.recipeBuilder()
 	.inputs(<ore:string> * 2, <ore:leather>)
 	.outputs(<minecraft:lead>)
 	.duration(250).EUt(2).buildAndRegister();
 
 // Песок --> Диоксид кремния
-electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 electrolyzer.recipeBuilder()
 	.inputs(<ore:sandSilica> * 8)
 	.outputs(<metaitem:dustSiliconDioxide>)
@@ -1135,6 +1176,77 @@ centrifuge.recipeBuilder()
 	.fluidOutputs(<liquid:fresh_water> * 100)
 	.duration(750).EUt(32).buildAndRegister();
 
-// Исправление рецептов ванильных блоков в автоген рецептах GT на тфк
-// Cobblestone * 1
-forge_hammer.findRecipe(16, [<chisel:stonebrick:0>], null).remove();
+// Saplings -> Logs + Saplings (Greenhouse)
+
+for i, TFC_Saplings in TFC_Saplings {
+  
+	greenhouse.recipeBuilder()
+		.inputs([TFC_Saplings, <metaitem:fertilizer> * 4])
+		.circuit(1)
+		.fluidInputs([<liquid:fresh_water> * 1000])
+		.outputs([TFC_Logs[i] * 16, TFC_Saplings])
+		.chancedOutput(TFC_Saplings, 5000, 0)
+		.duration(2000)
+		.EUt(80)
+		.buildAndRegister();
+
+	greenhouse.recipeBuilder()
+		.inputs([TFC_Saplings, <metaitem:fertilizer> * 4])
+		.circuit(2)
+		.fluidInputs([<liquid:distilled_water> * 1000])
+		.outputs([TFC_Logs[i] * 16, TFC_Saplings])
+		.chancedOutput(TFC_Saplings.withAmount(2), 5000, 0)
+		.duration(1500)
+		.EUt(80)
+		.buildAndRegister();
+
+}
+
+// Seeds -> AnyPlant (Greenhouse)
+for i, All_Seeds in All_Seeds {
+  
+	greenhouse.recipeBuilder()
+		.notConsumable([All_Seeds])
+		.circuit(1)
+		.inputs([<metaitem:fertilizer> * 2])
+		.fluidInputs([<liquid:fresh_water> * 1000])
+		.outputs([All_Plants[i] * 2])
+		.duration(1500)
+		.EUt(80)
+		.buildAndRegister();
+  
+	greenhouse.recipeBuilder()
+		.notConsumable([All_Seeds])
+		.circuit(2)
+		.inputs([<metaitem:fertilizer> * 2])
+		.fluidInputs([<liquid:distilled_water> * 1000])
+		.outputs([All_Plants[i] * 2])
+		.chancedOutput(All_Plants[i].withAmount(2), 7500, 0)
+		.duration(1000)
+		.EUt(80)
+		.buildAndRegister();
+}
+
+
+// Log -> Lumber (Saw Mill) + Lumber -> dustWood
+for i, TFC_Logs in TFC_Logs {
+  
+	saw_mill.recipeBuilder()
+		.inputs([TFC_Logs])
+		.circuit(1)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([TFC_Lumber[i] * 64, <metaitem:dustWood> * 8])
+		.duration(450)
+		.EUt(32)
+		.buildAndRegister();
+
+	saw_mill.recipeBuilder()
+		.inputs([TFC_Lumber[i]])
+		.circuit(2)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([<metaitem:dustWood> * 48])
+		.outputs([<metaitem:dustSmallWood> * 32])
+		.duration(400)
+		.EUt(12)
+		.buildAndRegister();
+}

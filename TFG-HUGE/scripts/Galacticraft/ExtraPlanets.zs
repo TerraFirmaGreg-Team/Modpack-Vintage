@@ -1,9 +1,7 @@
 import crafttweaker.item.IItemStack;
 
+// --- Массивы
 
-// --- Removing Recipes
-
-// Удаление рецептов
 val RemoveItemRecipe as IItemStack[] = [
 	<extraplanets:advanced_launch_pad>,
 	<extraplanets:advanced_launch_pad:1>,
@@ -44,6 +42,10 @@ val RemoveItemRecipe as IItemStack[] = [
 	<extraplanets:tier9_items:2>,
 	<extraplanets:tier10_items:2>,
 ] as IItemStack[];
+
+// --- Удаление рецептов
+
+// Удаление рецептов
 for item in RemoveItemRecipe{
 	recipes.remove(item);
 }
@@ -79,6 +81,7 @@ assembler.recipeBuilder()
 
 
 // Сверх прочные пластины 4-10 Tiers
+
 // Tier 4
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTitanium>.firstItem * 3, <ore:plateDenseTungstenSteel>.firstItem * 2, <galacticraftplanets:item_basic_asteroids:5> * 2])
@@ -88,6 +91,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(810)
 	.buildAndRegister();
+
 // Tier 5
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier4_items:3> * 2])
@@ -97,6 +101,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(910)
 	.buildAndRegister();
+
 // Tier 6
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseOsmiridium>.firstItem * 3, <ore:plateDenseHsss>.firstItem * 2, <extraplanets:tier5_items:3> * 2])
@@ -106,6 +111,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(1010)
 	.buildAndRegister();
+
 // Tier 7
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTitanium>.firstItem * 3, <ore:plateDenseTungstenSteel>.firstItem * 2, <extraplanets:tier6_items:3> * 2])
@@ -115,6 +121,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(1110)
 	.buildAndRegister();
+
 // Tier 8
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier7_items:3> * 2])
@@ -124,6 +131,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(1210)
 	.buildAndRegister();
+
 // Tier 9
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseOsmiridium>.firstItem * 3, <ore:plateDenseHsss>.firstItem * 2, <extraplanets:tier8_items:3> * 2])
@@ -133,6 +141,7 @@ electric_blast_furnace.recipeBuilder()
 	.duration(1000)
 	.EUt(1310)
 	.buildAndRegister();
+
 // Tier 10
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier9_items:3> * 2])
@@ -143,7 +152,8 @@ electric_blast_furnace.recipeBuilder()
 	.EUt(1410)
 	.buildAndRegister();
 
-// Головоной оптекатель 4-10 Tiers
+// Головоной обтекатель 4-10 Tiers
+
 // Tier 4
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier4_items:3> * 11)
@@ -160,6 +170,7 @@ assembler.recipeBuilder()
 	.duration(600)
 	.EUt(820)
 	.buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier5_items:3> * 4)
@@ -176,6 +187,7 @@ assembler.recipeBuilder()
 	.duration(600)
 	.EUt(920)
 	.buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier6_items:3> * 4)
@@ -192,6 +204,7 @@ assembler.recipeBuilder()
 	.duration(600)
 	.EUt(1020)
 	.buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier7_items:3> * 4)
@@ -208,6 +221,7 @@ assembler.recipeBuilder()
 	.duration(600)
 	.EUt(1120)
 	.buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier8_items:3> * 4)
@@ -224,6 +238,7 @@ assembler.recipeBuilder()
 	.duration(600)
 	.EUt(1220)
 	.buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 4)
@@ -240,6 +255,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1320)
    .buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 4)
@@ -258,6 +274,7 @@ assembler.recipeBuilder()
    .buildAndRegister();
 
 // Ракетный корпус 4-10 Tiers
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 12)
@@ -273,6 +290,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(830)
    .buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 12)
@@ -288,6 +306,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(930)
    .buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 12)
@@ -303,6 +322,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1030)
    .buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 12)
@@ -318,6 +338,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1130)
    .buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 12)
@@ -333,6 +354,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1230)
    .buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 12)
@@ -348,6 +370,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1330)
    .buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 12)
@@ -365,6 +388,7 @@ assembler.recipeBuilder()
    .buildAndRegister();
 
 // Ускорители 4-10 Tiers
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 7)	
@@ -380,6 +404,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(840)
    .buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 7)	
@@ -395,6 +420,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(940)
    .buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 7)	
@@ -410,6 +436,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(1040)
    .buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 7)	
@@ -425,6 +452,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(1140)
    .buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 7)	
@@ -440,6 +468,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(1250)
    .buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 7)	
@@ -455,6 +484,7 @@ assembler.recipeBuilder()
    .duration(580)
    .EUt(1340)
    .buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 7)	
@@ -472,6 +502,7 @@ assembler.recipeBuilder()
    .buildAndRegister();
 
 // Ракетные двигатели 4-10 Tiers
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 7)
@@ -488,6 +519,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(850)
    .buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 7)
@@ -504,6 +536,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(950)
    .buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 7)
@@ -520,6 +553,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1050)
    .buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 7)
@@ -536,6 +570,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1150)
    .buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 7)
@@ -552,6 +587,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1250)
    .buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 7)
@@ -568,6 +604,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1350)
    .buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 7)
@@ -586,6 +623,7 @@ assembler.recipeBuilder()
    .buildAndRegister();
 
 // Ракетные стабилизаторы 4-10 Tiers
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 12)
@@ -595,6 +633,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(560)
    .buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 12)
@@ -604,6 +643,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(660)
    .buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 12)
@@ -613,6 +653,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(760)
    .buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 12)
@@ -622,6 +663,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(860)
    .buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 12)
@@ -631,6 +673,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(960)
    .buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 12)
@@ -640,6 +683,7 @@ assembler.recipeBuilder()
    .duration(600)
    .EUt(1060)
    .buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 12)
@@ -651,6 +695,7 @@ assembler.recipeBuilder()
    .buildAndRegister();
 
 // Rockets 4-10 Tiers 
+
 // Tier 4 - Without Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier4>)
@@ -672,6 +717,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(15000)
    .buildAndRegister();
+
 // Tier 4 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier4>)
@@ -694,6 +740,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(15000)
    .buildAndRegister();
+
 // Tier 4 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier4>)
@@ -716,6 +763,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(15000)
    .buildAndRegister();
+
 // Tier 4 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier4>)
@@ -739,6 +787,7 @@ assembly_line.recipeBuilder()
    .EUt(15000)
    .buildAndRegister();
 
+
 // Tier 5 - Without Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier5>)
@@ -760,6 +809,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(18000)
    .buildAndRegister();
+
 // Tier 5 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier5>)
@@ -782,6 +832,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(18000)
    .buildAndRegister();
+
 // Tier 5 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier5>)
@@ -804,6 +855,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(18000)
    .buildAndRegister();
+
 // Tier 5 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier5>)
@@ -848,6 +900,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(21000)
    .buildAndRegister();
+
 // Tier 6 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -870,6 +923,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(21000)
    .buildAndRegister();
+
 // Tier 6 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -892,6 +946,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(21000)
    .buildAndRegister();
+
 // Tier 6 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -936,6 +991,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(26000)
    .buildAndRegister();
+
 // Tier 7 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -958,6 +1014,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(26000)
    .buildAndRegister();
+
 // Tier 7 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier7>)
@@ -980,6 +1037,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(26000)
    .buildAndRegister();
+
 // Tier 7 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier7>)
@@ -1024,6 +1082,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(42000)
    .buildAndRegister();
+
 // Tier 8 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -1046,6 +1105,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(42000)
    .buildAndRegister();
+
 // Tier 8 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier8>)
@@ -1068,6 +1128,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(42000)
    .buildAndRegister();
+
 // Tier 8 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier8>)
@@ -1112,6 +1173,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(51000)
    .buildAndRegister();
+
 // Tier 9 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -1134,6 +1196,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(51000)
    .buildAndRegister();
+
 // Tier 9 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier9>)
@@ -1156,6 +1219,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(51000)
    .buildAndRegister();
+
 // Tier 9 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier9>)
@@ -1200,6 +1264,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(91000)
    .buildAndRegister();
+
 // Tier 10 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier6>)
@@ -1222,6 +1287,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(91000)
    .buildAndRegister();
+
 // Tier 10 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier10>)
@@ -1244,6 +1310,7 @@ assembly_line.recipeBuilder()
    .duration(1200)
    .EUt(91000)
    .buildAndRegister();
+
 // Tier 10 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier10>)

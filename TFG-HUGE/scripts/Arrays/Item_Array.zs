@@ -1,7 +1,110 @@
-#priority 1000
+#priority 980
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+
+// Glass Cable
+global glassCables as IItemStack[] = [
+    <appliedenergistics2:part>,
+    <appliedenergistics2:part:1>,
+    <appliedenergistics2:part:2>,
+    <appliedenergistics2:part:3>,
+    <appliedenergistics2:part:4>,
+    <appliedenergistics2:part:5>,
+    <appliedenergistics2:part:6>,
+    <appliedenergistics2:part:7>,
+    <appliedenergistics2:part:8>,
+    <appliedenergistics2:part:9>,
+    <appliedenergistics2:part:10>,
+    <appliedenergistics2:part:11>,
+    <appliedenergistics2:part:12>,
+    <appliedenergistics2:part:13>,
+    <appliedenergistics2:part:14>,
+    <appliedenergistics2:part:15>,
+    <appliedenergistics2:part:16>
+];
+
+// Covered Cable
+global coveredCables as IItemStack[] = [
+    <appliedenergistics2:part:20>,
+    <appliedenergistics2:part:21>,
+    <appliedenergistics2:part:22>,
+    <appliedenergistics2:part:23>,
+    <appliedenergistics2:part:24>,
+    <appliedenergistics2:part:25>,
+    <appliedenergistics2:part:26>,
+    <appliedenergistics2:part:27>,
+    <appliedenergistics2:part:28>,
+    <appliedenergistics2:part:29>,
+    <appliedenergistics2:part:30>,
+    <appliedenergistics2:part:31>,
+    <appliedenergistics2:part:32>,
+    <appliedenergistics2:part:33>,
+    <appliedenergistics2:part:34>,
+    <appliedenergistics2:part:35>,
+    <appliedenergistics2:part:36>
+];
+
+// Smart Cable
+global smartCables as IItemStack[] = [
+    <appliedenergistics2:part:40>,
+    <appliedenergistics2:part:41>,
+    <appliedenergistics2:part:42>,
+    <appliedenergistics2:part:43>,
+    <appliedenergistics2:part:44>,
+    <appliedenergistics2:part:45>,
+    <appliedenergistics2:part:46>,
+    <appliedenergistics2:part:47>,
+    <appliedenergistics2:part:48>,
+    <appliedenergistics2:part:49>,
+    <appliedenergistics2:part:50>,
+    <appliedenergistics2:part:51>,
+    <appliedenergistics2:part:52>,
+    <appliedenergistics2:part:53>,
+    <appliedenergistics2:part:54>,
+    <appliedenergistics2:part:55>,
+    <appliedenergistics2:part:56>
+];
+
+global denseCoveredCables as IItemStack[] = [
+    <appliedenergistics2:part:500>,
+    <appliedenergistics2:part:501>,
+    <appliedenergistics2:part:502>,
+    <appliedenergistics2:part:503>,
+    <appliedenergistics2:part:504>,
+    <appliedenergistics2:part:505>,
+    <appliedenergistics2:part:506>,
+    <appliedenergistics2:part:507>,
+    <appliedenergistics2:part:508>,
+    <appliedenergistics2:part:509>,
+    <appliedenergistics2:part:510>,
+    <appliedenergistics2:part:511>,
+    <appliedenergistics2:part:512>,
+    <appliedenergistics2:part:513>,
+    <appliedenergistics2:part:514>,
+    <appliedenergistics2:part:515>,
+    <appliedenergistics2:part:516>
+];
+
+global denseSmartCables as IItemStack[] = [
+    <appliedenergistics2:part:60>,
+    <appliedenergistics2:part:61>,
+    <appliedenergistics2:part:62>,
+    <appliedenergistics2:part:63>,
+    <appliedenergistics2:part:64>,
+    <appliedenergistics2:part:65>,
+    <appliedenergistics2:part:66>,
+    <appliedenergistics2:part:67>,
+    <appliedenergistics2:part:68>,
+    <appliedenergistics2:part:69>,
+    <appliedenergistics2:part:70>,
+    <appliedenergistics2:part:71>,
+    <appliedenergistics2:part:72>,
+    <appliedenergistics2:part:73>,
+    <appliedenergistics2:part:74>,
+    <appliedenergistics2:part:75>,
+    <appliedenergistics2:part:76>
+];
 
 // - All GT Ores Array
 global GregtechOres as IItemStack[] = [
@@ -1441,7 +1544,6 @@ global TFC_Saplings as IItemStack[] = [
 	<tfc:wood/sapling/cypress>,
 	<tfc:wood/sapling/douglas_fir>,
 	<tfc:wood/sapling/ebony>,
-	<tfc:wood/sapling/eucalyptus>,
 	<tfc:wood/sapling/european_oak>,
 	<tfc:wood/sapling/fever>,
 	<tfc:wood/sapling/fruitwood>,
@@ -1458,7 +1560,6 @@ global TFC_Saplings as IItemStack[] = [
 	<tfc:wood/sapling/iroko>,
 	<tfc:wood/sapling/ironwood>,
 	<tfc:wood/sapling/jacaranda>,
-	<tfc:wood/sapling/joshua_tree>,
 	<tfc:wood/sapling/juniper>,
 	<tfc:wood/sapling/kapok>,
 	<tfc:wood/sapling/kauri>,
@@ -1505,22 +1606,36 @@ global TFC_Saplings as IItemStack[] = [
 	<tfc:wood/sapling/yellow_meranti>,
 	<tfc:wood/sapling/yew>,
 	<tfc:wood/sapling/zebrawood>,
-	<tfc:wood/sapling/eucalyptus>,
+	<tfcflorae:wood/sapling/joshua_tree>,
 	<tfcflorae:wood/sapling/arrow_bamboo>,
 	<tfcflorae:wood/sapling/black_bamboo>,
 	<tfcflorae:wood/sapling/blue_bamboo>,
 	<tfcflorae:wood/sapling/dragon_bamboo>,
 	<tfcflorae:wood/sapling/golden_bamboo>,
-	<tfcflorae:wood/sapling/joshua_tree>,
 	<tfcflorae:wood/sapling/narrow_leaf_bamboo>,
-	<tfc:wood/sapling/eucalyptus>,
 	<tfcflorae:wood/sapling/red_bamboo>,
-	<tfc:wood/sapling/eucalyptus>,
 	<tfcflorae:wood/sapling/temple_bamboo>,
 	<tfcflorae:wood/sapling/thorny_bamboo>,
 	<tfcflorae:wood/sapling/timber_bamboo>,
 	<tfcflorae:wood/sapling/tinwa_bamboo>,
-	<tfcflorae:wood/sapling/weavers_bamboo>
+	<tfcflorae:wood/sapling/weavers_bamboo>,
+	<firmalife:cinnamon_sapling>,
+	<firmalife:cocoa_sapling>,
+	<tfc:fruit_trees/sapling/banana>,
+	<tfc:fruit_trees/sapling/cherry>,
+	<tfc:fruit_trees/sapling/green_apple>,
+	<tfc:fruit_trees/sapling/lemon>,
+	<tfc:fruit_trees/sapling/olive>,
+	<tfc:fruit_trees/sapling/orange>,
+	<tfc:fruit_trees/sapling/peach>,
+	<tfc:fruit_trees/sapling/plum>,
+	<tfc:fruit_trees/sapling/red_apple>,
+	<tfcflorae:wood/fruit_tree/sapling/cassia_cinnamon>,
+	<tfcflorae:wood/fruit_tree/sapling/ceylon_cinnamon>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfc:wood/sapling/eucalyptus>,
+	<tfc:wood/sapling/eucalyptus>
 ];
 
 // - Бревна
@@ -2565,6 +2680,31 @@ global TFC_Trapdoors as IItemStack[] = [
 	<tfc:wood/trapdoor/eucalyptus>,
 	<tfc:wood/trapdoor/eucalyptus>,
 	<tfc:wood/trapdoor/eucalyptus>
+];
+
+// - TFC Metal Trapdoors
+global TFC_Metal_Trapdoors as IItemStack[] = [
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/gold>,
+	<tfc:metal/trapdoor/lead>,
+	<tfc:metal/trapdoor/nickel>,
+	<tfc:metal/trapdoor/rose_gold>,
+	<tfc:metal/trapdoor/silver>,
+	<tfc:metal/trapdoor/tin>,
+	<tfc:metal/trapdoor/zinc>,
+	<tfc:metal/trapdoor/sterling_silver>,
+	<tfc:metal/trapdoor/copper>,
+	<tfc:metal/trapdoor/bismuth>,
+	<tfc:metal/trapdoor/brass>,
+	<tfc:metal/trapdoor/bismuth_bronze>,
+	<tfc:metal/trapdoor/bronze>,
+	<tfc:metal/trapdoor/black_bronze>,
+	<tfc:metal/trapdoor/wrought_iron>,
+	<tfc:metal/trapdoor/steel>,
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/black_steel>,
+	<tfc:metal/trapdoor/blue_steel>,
+	<tfc:metal/trapdoor/red_steel>
 ];
 
 // - TFC Supports Array
@@ -4032,6 +4172,31 @@ global Gem_Chipped as IItemStack[] = [
 	<metaitem:gemChippedMonazite>
 ];
 
+// - GT Metals, which are double TFC
+global GT_TFC_Doubled_Plates as IItemStack[] = [
+	<metaitem:platePlatinum>,
+	<metaitem:plateGold>,
+	<metaitem:plateLead>,
+	<metaitem:plateNickel>,
+	<metaitem:plateRoseGold>,
+	<metaitem:plateSilver>,
+	<metaitem:plateTin>,
+	<metaitem:plateZinc>,
+	<metaitem:plateSterlingSilver>,
+	<metaitem:plateCopper>,
+	<metaitem:plateBismuth>,
+	<metaitem:plateBrass>,
+	<metaitem:plateBismuthBronze>,
+	<metaitem:plateBronze>,
+	<metaitem:plateBlackBronze>,
+	<metaitem:plateWroughtIron>,
+	<metaitem:plateSteel>,
+	<metaitem:platePlatinum>,
+	<metaitem:plateBlackSteel>,
+	<metaitem:plateBlueSteel>,
+	<metaitem:plateRedSteel>
+];
+
 global All_Metal_Heads_From_TFC as IItemStack[] = [
     // Pickaxe Heads
 	<tfc:metal/pick_head/bismuth_bronze>,
@@ -4307,6 +4472,27 @@ global TFC_Tech_Long_Rods as IItemStack[] = [
 	<tfctech:metal/red_steel_long_rod>
 ];
 
+global TFC_Saws as IItemStack[] = [
+	<tfc:metal/saw/bismuth_bronze>,
+	<tfc:metal/saw/black_bronze>,
+	<tfc:metal/saw/black_steel>,
+	<tfc:metal/saw/blue_steel>,
+	<tfc:metal/saw/bronze>,
+	<tfc:metal/saw/copper>,
+	<tfc:metal/saw/red_steel>,
+	<tfc:metal/saw/steel>,
+	<tfc:metal/saw/wrought_iron>,
+	<tfc:metal/saw_blade/bismuth_bronze>,
+	<tfc:metal/saw_blade/black_bronze>,
+	<tfc:metal/saw_blade/black_steel>,
+	<tfc:metal/saw_blade/blue_steel>,
+	<tfc:metal/saw_blade/bronze>,
+	<tfc:metal/saw_blade/copper>,
+	<tfc:metal/saw_blade/red_steel>,
+	<tfc:metal/saw_blade/steel>,
+	<tfc:metal/saw_blade/wrought_iron>
+];
+
 // All Glass Panes Array
 global Glass_Panes_Array as IItemStack[] = [
     <minecraft:stained_glass_pane>,
@@ -4325,306 +4511,6 @@ global Glass_Panes_Array as IItemStack[] = [
     <minecraft:stained_glass_pane:13>,
     <minecraft:stained_glass_pane:14>,
     <minecraft:stained_glass_pane:15>
-];
-
-// All Horizontal Glass Panes Array
-global Horizontal_Glass_Panes_Array as IItemStack[] = [
-    <hgp:hgpcoloredpane>,
-    <hgp:hgpcoloredpane:1>,
-    <hgp:hgpcoloredpane:2>,
-    <hgp:hgpcoloredpane:3>,
-    <hgp:hgpcoloredpane:4>,
-    <hgp:hgpcoloredpane:5>,
-    <hgp:hgpcoloredpane:6>,
-    <hgp:hgpcoloredpane:7>,
-    <hgp:hgpcoloredpane:8>,
-    <hgp:hgpcoloredpane:9>,
-    <hgp:hgpcoloredpane:10>,
-    <hgp:hgpcoloredpane:11>,
-    <hgp:hgpcoloredpane:12>,
-    <hgp:hgpcoloredpane:13>,
-    <hgp:hgpcoloredpane:14>,
-    <hgp:hgpcoloredpane:15>
-];
-
-// All Illuminars
-global Illuminars_Array as IItemStack[] = [
-    <projectred-core:resource_item:500>,
-    <projectred-core:resource_item:501>,
-    <projectred-core:resource_item:502>,
-    <projectred-core:resource_item:503>,
-    <projectred-core:resource_item:504>,
-    <projectred-core:resource_item:505>,
-    <projectred-core:resource_item:506>,
-    <projectred-core:resource_item:507>,
-    <projectred-core:resource_item:508>,
-    <projectred-core:resource_item:509>,
-    <projectred-core:resource_item:510>,
-    <projectred-core:resource_item:511>,
-    <projectred-core:resource_item:512>,
-    <projectred-core:resource_item:513>,
-    <projectred-core:resource_item:514>,
-    <projectred-core:resource_item:515>,
-];
-
-// All Deactivated Lamps
-global Deactivated_Lamps_Array as IItemStack[] = [
-    <projectred-illumination:lamp>,
-    <projectred-illumination:lamp:1>,
-    <projectred-illumination:lamp:2>,
-    <projectred-illumination:lamp:3>,
-    <projectred-illumination:lamp:4>,
-    <projectred-illumination:lamp:5>,
-    <projectred-illumination:lamp:6>,
-    <projectred-illumination:lamp:7>,
-    <projectred-illumination:lamp:8>,
-    <projectred-illumination:lamp:9>,
-    <projectred-illumination:lamp:10>,
-    <projectred-illumination:lamp:11>,
-    <projectred-illumination:lamp:12>,
-    <projectred-illumination:lamp:13>,
-    <projectred-illumination:lamp:14>,
-    <projectred-illumination:lamp:15>,
-];
-
-// All Activated Lamps
-global Activated_Lamps_Array as IItemStack[] = [
-    <projectred-illumination:lamp:16>,
-    <projectred-illumination:lamp:17>,
-    <projectred-illumination:lamp:18>,
-    <projectred-illumination:lamp:19>,
-    <projectred-illumination:lamp:20>,
-    <projectred-illumination:lamp:21>,
-    <projectred-illumination:lamp:22>,
-    <projectred-illumination:lamp:23>,
-    <projectred-illumination:lamp:24>,
-    <projectred-illumination:lamp:25>,
-    <projectred-illumination:lamp:26>,
-    <projectred-illumination:lamp:27>,
-    <projectred-illumination:lamp:28>,
-    <projectred-illumination:lamp:29>,
-    <projectred-illumination:lamp:30>,
-    <projectred-illumination:lamp:31>,
-];
-
-// All Button Lamps
-global Button_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:light_button>,
-    <projectred-illumination:light_button:1>,
-    <projectred-illumination:light_button:2>,
-    <projectred-illumination:light_button:3>,
-    <projectred-illumination:light_button:4>,
-    <projectred-illumination:light_button:5>,
-    <projectred-illumination:light_button:6>,
-    <projectred-illumination:light_button:7>,
-    <projectred-illumination:light_button:8>,
-    <projectred-illumination:light_button:9>,
-    <projectred-illumination:light_button:10>,
-    <projectred-illumination:light_button:11>,
-    <projectred-illumination:light_button:12>,
-    <projectred-illumination:light_button:13>,
-    <projectred-illumination:light_button:14>,
-    <projectred-illumination:light_button:15>,
-];
-
-// All Feedback Lamps
-global Feedback_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:feedback_light_button>,
-    <projectred-illumination:feedback_light_button:1>,
-    <projectred-illumination:feedback_light_button:2>,
-    <projectred-illumination:feedback_light_button:3>,
-    <projectred-illumination:feedback_light_button:4>,
-    <projectred-illumination:feedback_light_button:5>,
-    <projectred-illumination:feedback_light_button:6>,
-    <projectred-illumination:feedback_light_button:7>,
-    <projectred-illumination:feedback_light_button:8>,
-    <projectred-illumination:feedback_light_button:9>,
-    <projectred-illumination:feedback_light_button:10>,
-    <projectred-illumination:feedback_light_button:11>,
-    <projectred-illumination:feedback_light_button:12>,
-    <projectred-illumination:feedback_light_button:13>,
-    <projectred-illumination:feedback_light_button:14>,
-    <projectred-illumination:feedback_light_button:15>,
-];
-
-// All Deactivated Lantern Lamps
-global Deactivated_Lantern_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:lantern>,
-    <projectred-illumination:lantern:1>,
-    <projectred-illumination:lantern:2>,
-    <projectred-illumination:lantern:3>,
-    <projectred-illumination:lantern:4>,
-    <projectred-illumination:lantern:5>,
-    <projectred-illumination:lantern:6>,
-    <projectred-illumination:lantern:7>,
-    <projectred-illumination:lantern:8>,
-    <projectred-illumination:lantern:9>,
-    <projectred-illumination:lantern:10>,
-    <projectred-illumination:lantern:11>,
-    <projectred-illumination:lantern:12>,
-    <projectred-illumination:lantern:13>,
-    <projectred-illumination:lantern:14>,
-    <projectred-illumination:lantern:15>,
-];
-
-// All Activated Lantern Lamps
-global Activated_Lantern_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:inverted_lantern>,
-    <projectred-illumination:inverted_lantern:1>,
-    <projectred-illumination:inverted_lantern:2>,
-    <projectred-illumination:inverted_lantern:3>,
-    <projectred-illumination:inverted_lantern:4>,
-    <projectred-illumination:inverted_lantern:5>,
-    <projectred-illumination:inverted_lantern:6>,
-    <projectred-illumination:inverted_lantern:7>,
-    <projectred-illumination:inverted_lantern:8>,
-    <projectred-illumination:inverted_lantern:9>,
-    <projectred-illumination:inverted_lantern:10>,
-    <projectred-illumination:inverted_lantern:11>,
-    <projectred-illumination:inverted_lantern:12>,
-    <projectred-illumination:inverted_lantern:13>,
-    <projectred-illumination:inverted_lantern:14>,
-    <projectred-illumination:inverted_lantern:15>,
-];
-
-// All Deactivated Fixture Lamps
-global Deactivated_Fixture_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:fixture_light>,
-    <projectred-illumination:fixture_light:1>,
-    <projectred-illumination:fixture_light:2>,
-    <projectred-illumination:fixture_light:3>,
-    <projectred-illumination:fixture_light:4>,
-    <projectred-illumination:fixture_light:5>,
-    <projectred-illumination:fixture_light:6>,
-    <projectred-illumination:fixture_light:7>,
-    <projectred-illumination:fixture_light:8>,
-    <projectred-illumination:fixture_light:9>,
-    <projectred-illumination:fixture_light:10>,
-    <projectred-illumination:fixture_light:11>,
-    <projectred-illumination:fixture_light:12>,
-    <projectred-illumination:fixture_light:13>,
-    <projectred-illumination:fixture_light:14>,
-    <projectred-illumination:fixture_light:15>,
-];
-
-// All Activated Fixture Lamps
-global Activated_Fixture_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:inverted_fixture_light>,
-    <projectred-illumination:inverted_fixture_light:1>,
-    <projectred-illumination:inverted_fixture_light:2>,
-    <projectred-illumination:inverted_fixture_light:3>,
-    <projectred-illumination:inverted_fixture_light:4>,
-    <projectred-illumination:inverted_fixture_light:5>,
-    <projectred-illumination:inverted_fixture_light:6>,
-    <projectred-illumination:inverted_fixture_light:7>,
-    <projectred-illumination:inverted_fixture_light:8>,
-    <projectred-illumination:inverted_fixture_light:9>,
-    <projectred-illumination:inverted_fixture_light:10>,
-    <projectred-illumination:inverted_fixture_light:11>,
-    <projectred-illumination:inverted_fixture_light:12>,
-    <projectred-illumination:inverted_fixture_light:13>,
-    <projectred-illumination:inverted_fixture_light:14>,
-    <projectred-illumination:inverted_fixture_light:15>,
-];
-
-// All Deactivated Fallout Lamps
-global Deactivated_Fallout_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:fallout_lamp>,
-    <projectred-illumination:fallout_lamp:1>,
-    <projectred-illumination:fallout_lamp:2>,
-    <projectred-illumination:fallout_lamp:3>,
-    <projectred-illumination:fallout_lamp:4>,
-    <projectred-illumination:fallout_lamp:5>,
-    <projectred-illumination:fallout_lamp:6>,
-    <projectred-illumination:fallout_lamp:7>,
-    <projectred-illumination:fallout_lamp:8>,
-    <projectred-illumination:fallout_lamp:9>,
-    <projectred-illumination:fallout_lamp:10>,
-    <projectred-illumination:fallout_lamp:11>,
-    <projectred-illumination:fallout_lamp:12>,
-    <projectred-illumination:fallout_lamp:13>,
-    <projectred-illumination:fallout_lamp:14>,
-    <projectred-illumination:fallout_lamp:15>,
-];
-
-// All Activated Fallout Lamps
-global Activated_Fallout_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:inverted_fallout_lamp>,
-    <projectred-illumination:inverted_fallout_lamp:1>,
-    <projectred-illumination:inverted_fallout_lamp:2>,
-    <projectred-illumination:inverted_fallout_lamp:3>,
-    <projectred-illumination:inverted_fallout_lamp:4>,
-    <projectred-illumination:inverted_fallout_lamp:5>,
-    <projectred-illumination:inverted_fallout_lamp:6>,
-    <projectred-illumination:inverted_fallout_lamp:7>,
-    <projectred-illumination:inverted_fallout_lamp:8>,
-    <projectred-illumination:inverted_fallout_lamp:9>,
-    <projectred-illumination:inverted_fallout_lamp:10>,
-    <projectred-illumination:inverted_fallout_lamp:11>,
-    <projectred-illumination:inverted_fallout_lamp:12>,
-    <projectred-illumination:inverted_fallout_lamp:13>,
-    <projectred-illumination:inverted_fallout_lamp:14>,
-    <projectred-illumination:inverted_fallout_lamp:15>,
-];
-
-// All Deactivated Cage Lamps
-global Deactivated_Cage_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:cage_lamp>,
-    <projectred-illumination:cage_lamp:1>,
-    <projectred-illumination:cage_lamp:2>,
-    <projectred-illumination:cage_lamp:3>,
-    <projectred-illumination:cage_lamp:4>,
-    <projectred-illumination:cage_lamp:5>,
-    <projectred-illumination:cage_lamp:6>,
-    <projectred-illumination:cage_lamp:7>,
-    <projectred-illumination:cage_lamp:8>,
-    <projectred-illumination:cage_lamp:9>,
-    <projectred-illumination:cage_lamp:10>,
-    <projectred-illumination:cage_lamp:11>,
-    <projectred-illumination:cage_lamp:12>,
-    <projectred-illumination:cage_lamp:13>,
-    <projectred-illumination:cage_lamp:14>,
-    <projectred-illumination:cage_lamp:15>,
-];
-
-// All Activated Cage Lamps
-global Activated_Cage_Lamps_Array as IItemStack[] = [
-	<projectred-illumination:inverted_cage_lamp>,
-    <projectred-illumination:inverted_cage_lamp:1>,
-    <projectred-illumination:inverted_cage_lamp:2>,
-    <projectred-illumination:inverted_cage_lamp:3>,
-    <projectred-illumination:inverted_cage_lamp:4>,
-    <projectred-illumination:inverted_cage_lamp:5>,
-    <projectred-illumination:inverted_cage_lamp:6>,
-    <projectred-illumination:inverted_cage_lamp:7>,
-    <projectred-illumination:inverted_cage_lamp:8>,
-    <projectred-illumination:inverted_cage_lamp:9>,
-    <projectred-illumination:inverted_cage_lamp:10>,
-    <projectred-illumination:inverted_cage_lamp:11>,
-    <projectred-illumination:inverted_cage_lamp:12>,
-    <projectred-illumination:inverted_cage_lamp:13>,
-    <projectred-illumination:inverted_cage_lamp:14>,
-    <projectred-illumination:inverted_cage_lamp:15>,
-];
-
-// All Transmissions Wires
-global Transmission_Wires_Array as IItemStack[] = [
-    <projectred-transmission:wire:1>,
-    <projectred-transmission:wire:2>,
-    <projectred-transmission:wire:3>,
-    <projectred-transmission:wire:4>,
-    <projectred-transmission:wire:5>,
-    <projectred-transmission:wire:6>,
-    <projectred-transmission:wire:7>,
-    <projectred-transmission:wire:8>,
-    <projectred-transmission:wire:9>,
-    <projectred-transmission:wire:10>,
-    <projectred-transmission:wire:11>,
-    <projectred-transmission:wire:12>,
-    <projectred-transmission:wire:13>,
-    <projectred-transmission:wire:14>,
-    <projectred-transmission:wire:15>,
-	<projectred-transmission:wire:16>,
 ];
 
 // - All liquid dye Array

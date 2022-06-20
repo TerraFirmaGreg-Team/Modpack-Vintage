@@ -1,4 +1,3 @@
-import mods.inworldcrafting.FluidToItem;
 import crafttweaker.item.IItemStack;
 
 // --- Массивы
@@ -10,7 +9,6 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<powersuits:powerarmor_legs>,
 	<powersuits:powerarmor_torso>,
 	<powersuits:powerarmorcomponent>,
-
 	<powersuits:luxcapacitor>,
 	<powersuits:powerarmorcomponent:1>,
 	<powersuits:powerarmorcomponent:2>,
@@ -46,7 +44,7 @@ for item in RemoveWorkbenchRecipes {
 // --- Добавление рецептов
 
 // Шлем
-starforge.recipeBuilder()
+star_forge.recipeBuilder()
 	.inputs(<metaitem:qts.helmet>, <extraplanets:tier4_space_suit_helmet:100>, <galacticraftplanets:orion_drive> * 2, <ore:circuitZpm> * 4)
 	.fluidInputs([<liquid:molten.hastelloy_c_276> * 18000])
 	.outputs(<powersuits:powerarmor_head>)
@@ -54,7 +52,7 @@ starforge.recipeBuilder()
 	.EUt(122880)
 	.buildAndRegister();
 // Кираса
-starforge.recipeBuilder()
+star_forge.recipeBuilder()
     .inputs(<metaitem:qts.advanced_chestplate>, <extraplanets:tier4_space_suit_chest:100>, <galacticraftplanets:orion_drive> * 4, <ore:circuitZpm> * 6)
     .fluidInputs([<liquid:molten.hastelloy_c_276> * 42000])
     .outputs(<powersuits:powerarmor_torso>)
@@ -63,7 +61,7 @@ starforge.recipeBuilder()
     .buildAndRegister();
 
 // Поножи
-starforge.recipeBuilder()
+star_forge.recipeBuilder()
     .inputs(<metaitem:qts.leggings>, <extraplanets:tier4_space_suit_legings:100>, <galacticraftplanets:orion_drive> * 8, <ore:circuitZpm> * 6)
     .fluidInputs([<liquid:molten.hastelloy_c_276> * 20000])
     .outputs(<powersuits:powerarmor_legs>)
@@ -72,7 +70,7 @@ starforge.recipeBuilder()
     .buildAndRegister();
 
 // Ботинки
-starforge.recipeBuilder()
+star_forge.recipeBuilder()
     .inputs(<metaitem:qts.boots>, <extraplanets:tier4_space_suit_boots:100>, <galacticraftplanets:orion_drive> * 4, <ore:circuitZpm> * 4)
     .fluidInputs([<liquid:molten.hastelloy_c_276> * 16000])
     .outputs(<powersuits:powerarmor_feet>)
@@ -81,7 +79,7 @@ starforge.recipeBuilder()
     .buildAndRegister();
 
 // Рука
-starforge.recipeBuilder()
+star_forge.recipeBuilder()
     .inputs(<metaitem:tool.drill.iv>, <galacticraftplanets:orion_drive> * 4, <metaitem:nano_saber>, <metaitem:tool.chainsaw.hv>, <metaitem:tool.wrench.hv>)
     .fluidInputs([<liquid:molten.hastelloy_c_276> * 8000])
     .outputs(<powersuits:power_fist>)

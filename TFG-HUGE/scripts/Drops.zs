@@ -1,7 +1,7 @@
 import mods.dropt.Dropt;
 
-// Urns
-Dropt.list("Urn_Fixes").add(Dropt.rule()
+// Рандомный дроп с урны Florae
+Dropt.list("tfg/dropt/florae_urn").add(Dropt.rule()
   .matchBlocks(["tfcflorae:storage/urn_loot"])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()
@@ -23,73 +23,86 @@ Dropt.list("Urn_Fixes").add(Dropt.rule()
 );
 
 // Исправление выпадения луж
-Dropt.list("Puddles_Fix").add(Dropt.rule()
+Dropt.list("tfg/dropt/puddles").add(Dropt.rule()
   .matchDrops([<puddles:puddle>])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
 // Морской лед
-Dropt.list("Sea_Ice").add(Dropt.rule()
+Dropt.list("tfg/dropt/sea_ice").add(Dropt.rule()
   .matchBlocks(["tfc:sea_ice"])
   .matchDrops([<tfc:sea_ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:sea_ice_shard>])));
 
 // Обычный лед
-Dropt.list("Sea_Ice").add(Dropt.rule()
+Dropt.list("tfg/dropt/ice").add(Dropt.rule()
   .matchBlocks(["minecraft:ice"])
   .matchDrops([<minecraft:ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:ice_shard>])));
 
 // Плотный лед
-Dropt.list("Sea_Ice").add(Dropt.rule()
+Dropt.list("tfg/dropt/packed_ice").add(Dropt.rule()
   .matchBlocks(["minecraft:packed_ice"])
   .matchDrops([<minecraft:packed_ice>])
   .matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], "craftingToolSaw"))
   .addDrop(Dropt.drop().items([<cellars:packed_ice_shard>])));
 
-// Исправление GC
-Dropt.list("Cobble").add(Dropt.rule()
+// При копке ванильных блоков выпадают TFC варианты
+
+Dropt.list("tfg/dropt/gc_fix/cobblestone").add(Dropt.rule()
   .matchDrops([<minecraft:cobblestone>])
-  .replaceStrategy("REPLACE_ITEMS")
-  .addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));
-Dropt.list("Dirt")
+  .replaceStrategy("REPLACE_ITEMS").addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));
+
+Dropt.list("tfg/dropt/gc_fix/dirt")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/basalt>])));
-Dropt.list("Gravel")
+
+Dropt.list("tfg/dropt/gc_fix/gravel")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:gravel"]).addDrop(Dropt.drop().items([<tfc:gravel/basalt>])));
-Dropt.list("Chest")
+
+Dropt.list("tfg/dropt/gc_fix/cobblestone")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:chest:*"]).addDrop(Dropt.drop().items([<tfc:wood/chest/oak>])));
-Dropt.list("Spruce_Wood_Planks")
+
+Dropt.list("tfg/dropt/gc_fix/spruce_wooden_planks")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:planks:1"]).addDrop(Dropt.drop().items([<tfc:wood/planks/spruce>])));
-Dropt.list("Oak_Log")
+
+Dropt.list("tfg/dropt/gc_fix/oak_log")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:log"]).addDrop(Dropt.drop().items([<tfc:wood/log/oak>])));
-Dropt.list("Dark_Oak_Fence")
+
+Dropt.list("tfg/dropt/gc_fix/dark_oak_fence")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:dark_oak_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence/blackwood>])));
-Dropt.list("Birch_Sapling")
+
+Dropt.list("tfg/dropt/gc_fix/birch_sapling")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:sapling"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-Dropt.list("Oak_Sapling")
+
+Dropt.list("tfg/dropt/gc_fix/oak_sapling")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:sapling:1"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-Dropt.list("Spruce_Sapling")
+
+Dropt.list("tfg/dropt/gc_fix/spruce_sapling")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:sapling:2"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-Dropt.list("Farmland")
+
+Dropt.list("tfg/dropt/gc_fix/farmland")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:farmland:*"]).addDrop(Dropt.drop().items([<tfc:dirt/granite>])));
-Dropt.list("Potatoes")
+
+Dropt.list("tfg/dropt/gc_fix/seeds/potato")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:potatoes:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-Dropt.list("Wheat")
+
+Dropt.list("tfg/dropt/gc_fix/seeds/wheat")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:wheat"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-Dropt.list("Carrot")
+
+Dropt.list("tfg/dropt/gc_fix/seeds/carrot")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:carrots:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
