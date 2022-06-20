@@ -158,7 +158,7 @@ recipes.addShapeless("tfg/tfcthings/gold_crown/opal", <tfcthings:crown/gold_opal
 
 // Минус точильный камень
 recipes.addShaped("tfg/tfcthings/grindstone_base", <tfcthings:grindstone_base>, [
-    [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+    [<ore:stickIronAny>, <ore:stickIronAny>, <ore:stickIronAny>],
     [<ore:lumber>, null, <ore:lumber>]]);
 
 // Fix Bracing recipe
