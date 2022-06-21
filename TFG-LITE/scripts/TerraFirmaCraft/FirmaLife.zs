@@ -244,3 +244,32 @@ Anvil.addRecipe("tfg:firmalife_black_steel_hammer", <ore:ingotBlackSteel>, <firm
 Anvil.addRecipe("tfg:firmalife_blue_steel_hammer", <ore:ingotBlueSteel>, <firmalife:blue_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
 Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <ore:ingotRedSteel>, <firmalife:red_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
 
+// Chestnut Dough
+mixer.recipeBuilder()
+    .inputs([<ore:chestnutFlour>, <metaitem:dustSmallSalt>, <ore:fruitDry>])
+    .fluidInputs([<liquid:fresh_water> * 1000])
+    .outputs(<firmalife:chestnut_dough> * 2)
+    .duration(400).EUt(2).buildAndRegister();
+
+// Chestnut Bread
+baking_oven.recipeBuilder()
+    	.inputs([<firmalife:chestnut_dough>])
+    	.outputs(<firmalife:chestnut_bread>)
+    	.duration(400).EUt(1).buildAndRegister();
+
+baking_oven.recipeBuilder()
+    .inputs([<firmalife:chestnut_dough>])
+    .outputs(<firmalife:chestnut_bread>)
+    .duration(400).EUt(1).buildAndRegister();
+
+baking_oven.recipeBuilder()
+    .inputs([<firmalife:chestnut_dough>])
+    .outputs(<firmalife:chestnut_bread>)
+    .duration(400).EUt(1).buildAndRegister();
+
+/*electric_baking_oven.recipeBuilder()
+    .inputs([<firmalife:chestnut_dough>])
+    .outputs(<firmalife:chestnut_bread>)
+    //.property("temperature", 500)
+    .duration(225).EUt(1).buildAndRegister();*/
+

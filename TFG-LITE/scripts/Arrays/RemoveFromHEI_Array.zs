@@ -281,7 +281,8 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftcore:schematic>,
 	<galacticraftcore:schematic:1>,
 	<galacticraftplanets:schematic:1>,
-	<galacticraftplanets:schematic:2>
+	<galacticraftplanets:schematic:2>,
+	<galacticraftplanets:telepad_short>
 ] as IItemStack[];
 for item in Galacticraft {
     JEI.removeAndHide(item);
@@ -2190,7 +2191,8 @@ val GTFO as IItemStack[] = [
 	<metaitem:component.dough>,
 	<metaitem:component.flat_dough>,
 	<metaitem:component.bread>,
-	<metaitem:wooden_form.bread>
+	<metaitem:wooden_form.bread>,
+	<metaitem:component.sugary_dough>
 ];
 for item in GTFO {
     JEI.removeAndHide(item);

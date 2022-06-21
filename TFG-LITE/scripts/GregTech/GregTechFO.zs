@@ -34,6 +34,10 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:gtfo_flat_dough",
     "gregtechfoodoption:dough_2",
     "gregtechfoodoption:dough_4",
+    "gregtechfoodoption:sugary_dough",
+    "gregtechfoodoption:gtfo_pie_crust",
+    "gregtechfoodoption:baguette_dough",
+    "gregtechfoodoption:bun_dough"
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -415,6 +419,17 @@ cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:co
 // Raw Mince Meat Pizza
 cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10], [<liquid:gtfo_tomato_sauce> * 450]).remove();
 
+// Sugary Dough
+mixer.findRecipe(7, [<minecraft:sugar:0>, <metaitem:component.dough>], null).remove();
+
+// Unbaked Baguette
+forming_press.findRecipe(20, [<metaitem:component.dough> * 2, <metaitem:wooden_form.baguette>], null).remove();
+
+// Unbaked Bun
+forming_press.findRecipe(20, [<metaitem:component.dough> * 2, <metaitem:wooden_form.bun>], null).remove();
+
+// Mushroom Stew
+mixer.findRecipe(8, [<minecraft:brown_mushroom:0>, <minecraft:red_mushroom:0>, <metaitem:dustWheat>], [<liquid:milk> * 25]).remove();
 
 // --- Добавление рецептов
 
@@ -839,11 +854,49 @@ cuisine_assembler.recipeBuilder()
 
 // Raw Mince Meat Pizza
 cuisine_assembler.recipeBuilder()
-    .inputs(<firmalife:pizza_dough>, <metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10)
+    .inputs(<firmalife:pizza_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10)
     .fluidInputs([<liquid:gtfo_tomato_sauce> * 450])
     .outputs(<metaitem:component.pizza.mince_meat>)
     .duration(400)
     .EUt(180)
     .buildAndRegister();
 
+// Pie Crust
+recipes.addShapeless("tfg/gtfo/pie_crust", <metaitem:component.pie_crust>, [<ore:doughYeast>, <ore:gtce.tool.rolling.pins>]);
 
+// Unbaked Baguette
+recipes.addShaped("tfg/gtfo/unbaked_baguette", <metaitem:component.baguette>,
+    [[null, null, null],
+    [<ore:dough>, <ore:dough>, <ore:dough>],
+    [null, <metaitem:wooden_form.baguette>.reuse(), null]]);
+
+forming_press.recipeBuilder()
+    .inputs(<ore:dough> * 2)
+    .notConsumable(<metaitem:wooden_form.baguette>)
+    .outputs(<metaitem:component.baguette>)
+    .duration(100)
+    .EUt(20)
+    .buildAndRegister();
+
+// Unbaked Bun
+recipes.addShaped("tfg/gtfo/unbaked_bun", <metaitem:component.bun>,
+    [[null, null, null],
+    [null, <ore:dough>, null],
+    [null, <metaitem:wooden_form.baguette>.reuse(), null]]);
+
+forming_press.recipeBuilder()
+    .inputs(<ore:dough> * 2)
+    .notConsumable(<metaitem:wooden_form.bun>)
+    .outputs(<metaitem:component.bun>)
+    .duration(100)
+    .EUt(20)
+    .buildAndRegister();
+
+forming_press.findRecipe(20, [<metaitem:component.dough> * 2, <metaitem:wooden_form.bun>], null).remove();
+
+// Mushroom Stew
+mixer.recipeBuilder()
+    .inputs([<ore:mushroombrown>, <tfc:plants/amanita>, <ore:flour>])
+    .fluidInputs([<liquid:milk> * 25])
+    .fluidOutputs([<liquid:gtfo_mushroom_soup> * 50])
+    .duration(100).EUt(8).buildAndRegister();
