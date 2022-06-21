@@ -892,8 +892,6 @@ forming_press.recipeBuilder()
     .EUt(20)
     .buildAndRegister();
 
-forming_press.findRecipe(20, [<metaitem:component.dough> * 2, <metaitem:wooden_form.bun>], null).remove();
-
 // Mushroom Stew
 mixer.recipeBuilder()
     .inputs([<ore:mushroombrown>, <tfc:plants/amanita>, <ore:flour>])
