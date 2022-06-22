@@ -1,0 +1,36 @@
+Storage Cell: {2}
+planet.Mercury: {-13}
+planet.venus: {-31}
+overworld: {0}
+    moon.moon: {-28}
+the_nether: {-1}
+the_end: {1}
+planet.mars: {-29}
+    moon.deimos: {-1503}
+    moon.phobos: {-1012}
+planet.asteroids: {-30}
+planet.Ceres: {-20}
+planet.Jupiter: {-1026}
+    moon.ganymede: {-1506}
+    moon.io: {-1500}
+    moon.callisto: {-1505}
+    moon.europa: {-1501}
+planet.Saturn: {-16}
+    moon.rhea: {-1507}
+    moon.titan: {-1508}
+    moon.iapetus: {-1511}
+planet.Uranus: {-17}
+    moon.titania: {-1510}
+    moon.oberon: {-1509}
+planet.Neptune: {-18}
+    moon.triton: {-1504}
+planet.Pluto: {-19}
+planet.Eris: {-21}
+planet.proxima_b: {-1025}
+planet.tauceti_f: {-1338}
+planet.kepler22b: {-22}
+planet.barnarda_c: {-1030}
+
+// WTF
+moon.miranda: {-1024}
+moon.enceladus: {-1017}
