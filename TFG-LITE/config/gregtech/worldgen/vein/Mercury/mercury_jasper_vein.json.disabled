@@ -3,7 +3,7 @@
   "density": 0.2,
   "max_height": 30,
   "vein_populator": {"type": "surface_rock", "material": "jasper"},
-  "dimension_filter": ["dimension_id:-1005"],
+  "dimension_filter": ["dimension_id:-13"],
 
   "generator": {
     "type": "ellipsoid",

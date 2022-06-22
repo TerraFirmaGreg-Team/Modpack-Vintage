@@ -6,7 +6,7 @@
   "min_height": 5,
   "generation_predicate":["block:galaxyspace:mercuryblocks:2"],
   "dimension_filter": [
-    "dimension_id:-1005"
+    "dimension_id:-13"
 ],
   "generator": {
     "type": "layered",
