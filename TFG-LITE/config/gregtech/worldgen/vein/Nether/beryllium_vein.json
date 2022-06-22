@@ -1,5 +1,6 @@
 {
-  "weight": 30,
+  "name" : "Nether Beryllium",
+  "weight": 5,
   "density": 0.25,
   "min_height": 5,
   "max_height": 30,

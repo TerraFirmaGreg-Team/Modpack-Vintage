@@ -1,4 +1,5 @@
 {
+  "name" : "Nether Quartz",
   "weight": 80,
   "density": 0.2,
   "min_height": 40,

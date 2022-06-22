@@ -1,6 +1,7 @@
 {
+  "name" : "Earth Redstone",
   "weight": 60,
-  "density": 0.5,
+  "density": 0.25,
   "max_height": 125,
   "min_height": 15,
   "vein_populator": {

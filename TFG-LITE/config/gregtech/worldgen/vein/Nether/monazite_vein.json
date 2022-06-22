@@ -1,6 +1,7 @@
 {
-  "weight": 30,
-  "density": 0.25,
+  "name" : "Nether Monazite",
+  "weight": 5,
+  "density": 0.05,
   "min_height": 20,
   "max_height": 40,
   "vein_populator": {

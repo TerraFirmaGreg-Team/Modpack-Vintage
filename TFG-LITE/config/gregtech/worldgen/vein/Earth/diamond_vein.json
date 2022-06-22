@@ -1,4 +1,5 @@
 {
+  "name" : "Earth Diamond",
   "weight": 45,
   "density": 0.25,
   "max_height": 135,

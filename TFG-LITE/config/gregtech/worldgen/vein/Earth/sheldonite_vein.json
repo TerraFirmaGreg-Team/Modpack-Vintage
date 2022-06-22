@@ -1,8 +1,9 @@
 {
+  "name" : "Earth Cooperite",
   "weight": 10,
-  "density": 0.2,
-  "max_height": 125,
-  "min_height": 35,
+  "density": 0.05,
+  "max_height": 105,
+  "min_height": 15,
   "vein_populator": {
     "type": "surface_rock",
     "material": "platinum"

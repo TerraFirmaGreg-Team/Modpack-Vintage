@@ -1,6 +1,7 @@
 {
-  "weight": 100,
-  "density": 0.2,
+  "name" : "Earth Sulfur",
+  "weight": 75,
+  "density": 0.35,
   "max_height": 115,
   "min_height": 10,
   "vein_populator": {

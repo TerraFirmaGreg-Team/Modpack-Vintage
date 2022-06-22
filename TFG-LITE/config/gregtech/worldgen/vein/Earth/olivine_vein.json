@@ -1,5 +1,6 @@
 {
-  "weight": 20,
+  "name" : "Earth Olivine",
+  "weight": 15,
   "density": 0.25,
   "max_height": 95,
   "min_height": 15,

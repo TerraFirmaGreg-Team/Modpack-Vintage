@@ -1,6 +1,7 @@
 {
+  "name" : "Earth Scheelite",
   "weight": 20,
-  "density": 0.2,
+  "density": 0.15,
   "max_height": 75,
   "min_height": 20,
   "vein_populator": {
