@@ -30,9 +30,9 @@ planet.haumea:              {-1023}
 planet.eris:                {-21}
 planet.proxima_b:           {-1025}
 planet.tauceti_f:           {-1338}
-planet.kepler22b:           {-22}
 planet.barnarda_c:          {-1030}
 
 // WTF
+planet.kepler22b:           {-22}
 moon.miranda:               {-1024}
 moon.enceladus:             {-1017}
