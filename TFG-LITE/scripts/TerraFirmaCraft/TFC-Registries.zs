@@ -58,6 +58,7 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 288, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 288, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 288, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, true);
 
 // ---//--- Вариации Меди
 

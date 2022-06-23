@@ -1,6 +1,8 @@
+import crafttweaker.item.IItemStack;
+
 import mods.gregtech.recipe.Utils;
 
-// --- Adding Recipes
+// --- Добавление рецептов
 
 // --- Atmospheres
 
@@ -326,6 +328,75 @@ GenerateGasCollectorRecipes(-1338, 21);
 
 // --- Породы
 
+function GenerateRecipesForSurfaceStones3(surface as IItemStack, sub_surface as IItemStack, stone as IItemStack, output as IItemStack, DurationMulti as int, EUMulti as int) {
+
+   // Поверхность --> Пыль х1
+   macerator.recipeBuilder()
+      .inputs(surface * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 500, 150)
+      .chancedOutput(output, 250, 200)
+      .duration(200 * DurationMulti)
+      .EUt(240 * EUMulti)
+      .buildAndRegister();
+
+   // Подповерхность --> х2
+   macerator.recipeBuilder()
+      .inputs(sub_surface * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 7500, 150)
+      .chancedOutput(output, 500, 200)
+      .duration(600 * DurationMulti)
+      .EUt(240 * EUMulti)
+      .buildAndRegister();
+
+   // Порода --> Пыль х3
+   macerator.recipeBuilder()
+      .inputs(stone  * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 9000, 150)
+      .chancedOutput(output, 9000, 200)
+      .duration(1800 * DurationMulti)
+      .EUt(240  * EUMulti)
+      .buildAndRegister();
+}
+
+function GenerateRecipesForSurfaceStones2(surface as IItemStack, sub_surface as IItemStack, output as IItemStack, DurationMulti as int, EUMulti as int) {
+
+   // Поверхность --> Пыль х1
+   macerator.recipeBuilder()
+      .inputs(surface * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 500, 150)
+      .chancedOutput(output, 250, 200)
+      .duration(200 * DurationMulti)
+      .EUt(240 * EUMulti)
+      .buildAndRegister();
+
+   // Подповерхность --> х2
+   macerator.recipeBuilder()
+      .inputs(sub_surface * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 7500, 150)
+      .chancedOutput(output, 500, 200)
+      .duration(600 * DurationMulti)
+      .EUt(240 * EUMulti)
+      .buildAndRegister();
+}
+
+function GenerateRecipesForSurfaceStones1(surface as IItemStack, output as IItemStack, DurationMulti as int, EUMulti as int) {
+
+   // Поверхность --> Пыль х1
+   macerator.recipeBuilder()
+      .inputs(surface * 3)
+      .chancedOutput(output, 9000, 100)
+      .chancedOutput(output, 500, 150)
+      .chancedOutput(output, 250, 200)
+      .duration(200 * DurationMulti)
+      .EUt(240 * EUMulti)
+      .buildAndRegister();
+}
+
 // Solid Meteoric Iron --> Meteoric Iron Raw
 macerator.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:12>)
@@ -372,41 +443,47 @@ centrifuge.recipeBuilder()
    .EUt(1750)
    .buildAndRegister();
 
+// --- Меркурий
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galaxyspace:mercuryblocks:0>, <galaxyspace:mercuryblocks:1>, <galaxyspace:mercuryblocks:2>, <metaitem:dustStoneMercury>, 4, 4);
+
+// Меркурианский камень пыль
+centrifuge.recipeBuilder()
+   .inputs(<metaitem:dustStoneMercury> * 2)
+   .chancedOutput(<metaitem:dustTinyVanadiumMagnetite>, 4500, 1200)
+   .chancedOutput(<metaitem:dustTinyIron>, 4000, 500)
+   .fluidOutputs(<liquid:nitrogen> * 1, <liquid:carbon_dioxide>*2)
+   .duration(1500)
+   .EUt(1536)
+   .buildAndRegister();
+
+// --- Венера
+
+// Поверхности
+GenerateRecipesForSurfaceStones2(<galacticraftplanets:venus>, <galacticraftplanets:venus:1>, <metaitem:dustStoneVenus>, 3, 3);
+
+// Венерианская порода пыль --> ByProducts
+centrifuge.recipeBuilder()
+   .inputs(<metaitem:dustStoneVenus>)
+   .chancedOutput(<metaitem:dustSmallManganese>, 3700, 1200)
+   .chancedOutput(<metaitem:dustSmallTitanium>, 1100, 500)
+   .chancedOutput(<metaitem:dustSmallMagnesium>, 1150, 500)
+   .chancedOutput(<metaitem:dustSmallChalcopyrite>, 950, 500)
+   .chancedOutput(<metaitem:dustSmallBismuth>, 750, 350)
+   .chancedOutput(<metaitem:dustTinySulfur>, 650, 250)
+   .duration(1250)
+   .EUt(1024)
+   .buildAndRegister();
+
 // --- ЛУНА
 
-// Поверхность --> Пыль х1
-macerator.recipeBuilder()
-   .inputs(<galacticraftcore:basic_block_moon:5> * 3)
-   .chancedOutput(<metaitem:dustMoonStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMoonStone>, 500, 150)
-   .chancedOutput(<metaitem:dustMoonStone>, 250, 200)
-   .duration(200)
-   .EUt(240)
-   .buildAndRegister();
-
-// Подповерхность --> х2
-macerator.recipeBuilder()
-   .inputs(<galacticraftcore:basic_block_moon:3> * 3)
-   .chancedOutput(<metaitem:dustMoonStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMoonStone>, 7500, 150)
-   .chancedOutput(<metaitem:dustMoonStone>, 500, 200)
-   .duration(600)
-   .EUt(240)
-   .buildAndRegister();
-
-// Порода --> Пыль х3
-macerator.recipeBuilder()
-   .inputs(<galacticraftcore:basic_block_moon:4> * 3)
-   .chancedOutput(<metaitem:dustMoonStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMoonStone>, 9000, 150)
-   .chancedOutput(<metaitem:dustMoonStone>, 9000, 200)
-   .duration(1800)
-   .EUt(240)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galacticraftcore:basic_block_moon:5>, <galacticraftcore:basic_block_moon:3>, <galacticraftcore:basic_block_moon:4>, <metaitem:dustStoneMoon>, 1, 1);
 
 // Лунная порода пыль --> ByProducts
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustMoonStone> * 3)
+   .inputs(<metaitem:dustStoneMoon> * 3)
    .chancedOutput(<metaitem:dustSilicon>, 1200, 1200)
    .chancedOutput(<metaitem:dustSmallAluminium>, 1100, 500)
    .chancedOutput(<metaitem:dustSmallMagnesium>, 1150, 500)
@@ -420,39 +497,12 @@ centrifuge.recipeBuilder()
 
 // --- Марс
 
-// Поверхность --> Пыль х1
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:mars:5> * 3)
-   .chancedOutput(<metaitem:dustMarsStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMarsStone>, 500, 150)
-   .chancedOutput(<metaitem:dustMarsStone>, 250, 200)
-   .duration(300)
-   .EUt(480)
-   .buildAndRegister();
-
-// Подповерхность --> х2
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:mars:6> * 3)
-   .chancedOutput(<metaitem:dustMarsStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMarsStone>, 7500, 150)
-   .chancedOutput(<metaitem:dustMarsStone>, 500, 200)
-   .duration(900)
-   .EUt(480)
-   .buildAndRegister();
-
-// Порода --> Пыль х3
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:mars:9> * 3)
-   .chancedOutput(<metaitem:dustMarsStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMarsStone>, 9000, 150)
-   .chancedOutput(<metaitem:dustMarsStone>, 9000, 200)
-   .duration(2700)
-   .EUt(480)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galacticraftplanets:mars:5>, <galacticraftplanets:mars:6>, <galacticraftplanets:mars:9>, <metaitem:dustStoneMars>, 2, 2);
 
 // Марсианская порода пыль --> ByProducts
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustMarsStone>)
+   .inputs(<metaitem:dustStoneMars>)
    .chancedOutput(<metaitem:dustMagnetite>, 3700, 1200)
    .chancedOutput(<metaitem:dustSmallTungsten>, 1100, 500)
    .chancedOutput(<metaitem:dustSmallAluminium>, 1150, 500)
@@ -463,147 +513,153 @@ centrifuge.recipeBuilder()
    .EUt(512)
    .buildAndRegister();
 
+// --- Фобос
 
-// --- Венера
+// Поверхности
+GenerateRecipesForSurfaceStones2(<galaxyspace:phobosblocks>, <galaxyspace:phobosblocks:1>, <metaitem:dustStonePhobos>, 2, 2);
 
-// Поверхность/Подповерхность --> х2
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:venus> * 3)
-   .chancedOutput(<metaitem:dustVenusStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustVenusStone>, 7500, 150)
-   .chancedOutput(<metaitem:dustVenusStone>, 500, 200)
-   .duration(1350)
-   .EUt(960)
-   .buildAndRegister();
+// --- Деймос
 
-// Порода --> Пыль х3
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:venus:1> * 3)
-   .chancedOutput(<metaitem:dustVenusStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustVenusStone>, 9000, 150)
-   .chancedOutput(<metaitem:dustVenusStone>, 9000, 200)
-   .duration(4050)
-   .EUt(960)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:deimos>, <extraplanets:deimos:1>, <extraplanets:deimos:2>, <metaitem:dustStoneDeimos>, 2, 2);
 
-// Венерианская порода пыль --> ByProducts
-centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustVenusStone>)
-   .chancedOutput(<metaitem:dustSmallManganese>, 3700, 1200)
-   .chancedOutput(<metaitem:dustSmallTitanium>, 1100, 500)
-   .chancedOutput(<metaitem:dustSmallMagnesium>, 1150, 500)
-   .chancedOutput(<metaitem:dustSmallChalcopyrite>, 950, 500)
-   .chancedOutput(<metaitem:dustSmallBismuth>, 750, 350)
-   .chancedOutput(<metaitem:dustTinySulfur>, 650, 250)
-   .duration(1250)
-   .EUt(1024)
-   .buildAndRegister();
+// --- Церера
 
-// --- Меркурий
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:ceres>, <extraplanets:ceres:1>, <extraplanets:ceres:2>, <metaitem:dustStoneCeres>, 3, 3);
 
-// Поверхность --> Пыль х1
-macerator.recipeBuilder()
-   .inputs(<galaxyspace:mercuryblocks:2> * 3)
-   .chancedOutput(<metaitem:dustMercuryStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMercuryStone>, 500, 150)
-   .chancedOutput(<metaitem:dustMercuryStone>, 250, 200)
-   .duration(4500)
-   .EUt(1540)
-   .buildAndRegister();
+// --- Астероиды
 
-// Подповерхность --> х2
-macerator.recipeBuilder()
-   .inputs(<galaxyspace:mercuryblocks:2> * 3)
-   .chancedOutput(<metaitem:dustMercuryStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMercuryStone>, 7500, 150)
-   .chancedOutput(<metaitem:dustMercuryStone>, 500, 200)
-   .duration(5000)
-   .EUt(1540)
-   .buildAndRegister();
-
-// Порода --> Пыль х3
-macerator.recipeBuilder()
-   .inputs(<galaxyspace:mercuryblocks:2> * 3)
-   .chancedOutput(<metaitem:dustMercuryStone>, 9000, 100)
-   .chancedOutput(<metaitem:dustMercuryStone>, 9000, 150)
-   .chancedOutput(<metaitem:dustMercuryStone>, 9000, 200)
-   .duration(5500)
-   .EUt(1540)
-   .buildAndRegister();
-
-// Меркурианский камень пыль
-centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustMercuryStone> * 2)
-   .chancedOutput(<ore:dustTinyVanadiumMagnetite>.firstItem, 4500, 1200)
-   .chancedOutput(<ore:dustTinyIron>.firstItem, 4000, 500)
-   .fluidOutputs(<liquid:nitrogen> * 1, <liquid:carbon_dioxide>*2)
-   .duration(1500)
-   .EUt(1536)
-   .buildAndRegister();
-
-// --- Астероиды (3 типа камня)
-
-// Тип 1
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block> * 3)
-   .chancedOutput(<metaitem:dustAsteroidStoneBlack>, 9000, 100)
-   .chancedOutput(<metaitem:dustAsteroidStoneBlack>, 9000, 150)
-   .chancedOutput(<metaitem:dustAsteroidStoneBlack>, 9000, 200)
-   .duration(6500)
-   .EUt(1840)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones1(<galacticraftplanets:asteroids_block>, <metaitem:dustStoneAsteroidBlack>, 3, 3);
 
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustAsteroidStoneBlack> * 2)
-   .chancedOutput(<ore:dustImpureNickel>.firstItem, 3000, 500)
-   .chancedOutput(<ore:dustImpureYellowLimonite>.firstItem, 4500, 100)
-   .chancedOutput(<ore:dustImpureBrownLimonite>.firstItem, 4500, 100)
-   .chancedOutput(<ore:dustImpureGold>.firstItem, 1100, 100)
-   .chancedOutput(<ore:dustTinyRarestMetalResidue>.firstItem, 500, 100)
-   .chancedOutput(<ore:dustTinyIndium>.firstItem, 10, 1)
+   .inputs(<metaitem:dustStoneAsteroidBlack> * 2)
+   .chancedOutput(<metaitem:dustImpureNickel>, 3000, 500)
+   .chancedOutput(<metaitem:dustImpureYellowLimonite>, 4500, 100)
+   .chancedOutput(<metaitem:dustImpureBrownLimonite>, 4500, 100)
+   .chancedOutput(<metaitem:dustImpureGold>, 1100, 100)
+   .chancedOutput(<metaitem:dustTinyIridiumMetalResidue>, 500, 100)
+   .chancedOutput(<metaitem:dustTinyIndium>, 10, 1)
    .duration(1600)
    .EUt(1640)
    .buildAndRegister();
 
-// Тип 2
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block:1> * 3)
-   .chancedOutput(<metaitem:dustAsteroidStoneGray>, 9000, 100)
-   .chancedOutput(<metaitem:dustAsteroidStoneGray>, 9000, 150)
-   .chancedOutput(<metaitem:dustAsteroidStoneGray>, 9000, 200)
-   .duration(6500)
-   .EUt(1840)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones1(<galacticraftplanets:asteroids_block:1>, <metaitem:dustStoneAsteroidGray>, 3, 3);
 
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustAsteroidStoneGray> * 2)
-   .chancedOutput(<ore:dustImpureBauxite>.firstItem, 3000, 500)
-   .chancedOutput(<ore:dustImpureDiamond>.firstItem, 3500, 100)
-   .chancedOutput(<ore:dustImpureRedstone>.firstItem, 1500, 100)
-   .chancedOutput(<ore:dustImpureMonazite>.firstItem, 1100, 100)
-   .chancedOutput(<ore:dustImpureMolybdenum>.firstItem, 5000, 500)
-   .chancedOutput(<ore:dustTinyRareEarth>.firstItem, 500, 500)
+   .inputs(<metaitem:dustStoneAsteroidGray> * 2)
+   .chancedOutput(<metaitem:dustImpureBauxite>, 3000, 500)
+   .chancedOutput(<metaitem:dustImpureDiamond>, 3500, 100)
+   .chancedOutput(<metaitem:dustImpureRedstone>, 1500, 100)
+   .chancedOutput(<metaitem:dustImpureMonazite>, 1100, 100)
+   .chancedOutput(<metaitem:dustImpureMolybdenum>, 5000, 500)
+   .chancedOutput(<metaitem:dustTinyRareEarth>, 500, 500)
    .duration(1600)
    .EUt(1640)
    .buildAndRegister();
 
-// Тип 3
-macerator.recipeBuilder()
-   .inputs(<galacticraftplanets:asteroids_block:2> * 3)
-   .chancedOutput(<metaitem:dustAsteroidStoneLightgray>, 9000, 100)
-   .chancedOutput(<metaitem:dustAsteroidStoneLightgray>, 9000, 150)
-   .chancedOutput(<metaitem:dustAsteroidStoneLightgray>, 9000, 200)
-   .duration(6500)
-   .EUt(1840)
-   .buildAndRegister();
+// Поверхности
+GenerateRecipesForSurfaceStones1(<galacticraftplanets:asteroids_block:2>, <metaitem:dustStoneAsteroidBlack>, 3, 3);
 
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustAsteroidStoneLightgray> * 3)
-   .chancedOutput(<ore:dustTinyCobalt>.firstItem, 7500, 1000)
-   .chancedOutput(<ore:dustTinyBeryllium>.firstItem, 5000, 500)
-   .chancedOutput(<ore:dustTinyPlatinum>.firstItem, 2500, 250)
-   .chancedOutput(<ore:dustTinyBarium>.firstItem, 1100, 100)
-   .chancedOutput(<ore:dustTinyHolmium>.firstItem, 100, 100)
+   .inputs(<metaitem:dustStoneAsteroidLightgray> * 3)
+   .chancedOutput(<metaitem:dustTinyCobalt>, 7500, 1000)
+   .chancedOutput(<metaitem:dustTinyBeryllium>, 5000, 500)
+   .chancedOutput(<metaitem:dustTinyPlatinum>, 2500, 250)
+   .chancedOutput(<metaitem:dustTinyBarium>, 1100, 100)
+   .chancedOutput(<metaitem:dustTinyNaquadah>, 100, 100)
    .duration(1600)
    .EUt(1640)
    .buildAndRegister();
+
+// --- Юпитер
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:jupiter>, <extraplanets:jupiter:1>, <extraplanets:jupiter:2>, <metaitem:dustStoneJupiter>, 4, 4);
+
+// --- ИО
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:io>, <extraplanets:io:1>, <extraplanets:io:2>, <metaitem:dustStoneIo>, 4, 4);
+
+// --- Европа
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:europa>, <extraplanets:europa:1>, <extraplanets:europa:2>, <metaitem:dustStoneEuropa>, 4, 4);
+
+// --- Ганнимед
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:ganymede>, <extraplanets:ganymede:1>, <extraplanets:ganymede:2>, <metaitem:dustStoneGanymede>, 4, 4);
+
+// --- Каллисто
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:callisto>, <extraplanets:callisto:1>, <extraplanets:callisto:2>, <metaitem:dustStoneCallisto>, 4, 4);
+
+// --- Сатурн
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:saturn>, <extraplanets:saturn:1>, <extraplanets:saturn:2>, <metaitem:dustStoneSaturn>, 5, 5);
+
+// --- Рея
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:rhea>, <extraplanets:rhea:1>, <extraplanets:rhea:2>, <metaitem:dustStoneRhea>, 5, 5);
+
+// --- Титан
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:titan>, <extraplanets:titan:1>, <extraplanets:titan:2>, <metaitem:dustStoneTitan>, 5, 5);
+
+// --- Япет
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:iapetus>, <extraplanets:iapetus:1>, <extraplanets:iapetus:2>, <metaitem:dustStoneIapetus>, 5, 5);
+
+// --- Уран
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:uranus>, <extraplanets:uranus:1>, <extraplanets:uranus:2>, <metaitem:dustStoneUranus>, 6, 6);
+
+// --- Оберон
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:oberon>, <extraplanets:oberon:1>, <extraplanets:oberon:2>, <metaitem:dustStoneOberon>, 6, 6);
+
+// --- Нептун
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:neptune>, <extraplanets:neptune:1>, <extraplanets:neptune:2>, <metaitem:dustStoneNeptune>, 7, 7);
+
+// --- Тритон
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:triton>, <extraplanets:triton:1>, <extraplanets:triton:2>, <metaitem:dustStoneTriton>, 7, 7);
+
+// --- Плутон
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:pluto>, <extraplanets:pluto:1>, <extraplanets:pluto:2>, <metaitem:dustStonePluto>, 8, 8);
+
+// --- Эрида
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<extraplanets:eris>, <extraplanets:eris:1>, <extraplanets:eris:2>, <metaitem:dustStoneEris>, 9, 9);
+
+// --- Proxima B
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galaxyspace:proxima_b_blocks>, <galaxyspace:proxima_b_blocks:1>, <galaxyspace:proxima_b_blocks:2>, <metaitem:dustStoneProximaB>, 10, 10);
+
+// --- Tauceti F
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galaxyspace:tauceti_f_blocks:1>, <galaxyspace:tauceti_f_blocks>, <galaxyspace:tauceti_f_blocks:2>, <metaitem:dustStoneTaucetiF>, 10, 10);
+
+// --- Barnarda C
+
+// Поверхности
+GenerateRecipesForSurfaceStones3(<galaxyspace:barnarda_c_grasses>, <galaxyspace:barnarda_c_blocks:3>, <galaxyspace:barnarda_c_blocks:1>, <metaitem:dustStoneBarnardaC>, 10, 10);
