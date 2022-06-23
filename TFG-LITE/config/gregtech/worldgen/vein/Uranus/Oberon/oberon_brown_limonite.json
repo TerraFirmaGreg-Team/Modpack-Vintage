@@ -1,0 +1,35 @@
+{
+    "name": "Oberon Brown Limonite",
+    "weight": 120,
+    "density": 0.25,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:oberon:2"],
+    "dimension_filter": [
+      "dimension_id:-1509"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:brown_limonite"
+        },
+        {
+          "secondary": "ore:yellow_limonite"
+        },
+        {
+          "between": "ore:banded_iron"
+        },
+        {
+          "sporadic": "ore:malachite"
+        }
+      ]
+    }
+}
