@@ -114,9 +114,3 @@ recipes.addShaped("tfg/littletiles/premade/signal_converter", <littletiles:signa
 	[null, <ore:dustRedstone>, null],
 	[null, <ore:cobblestone>, null],
 	[null, null, null]]);
-
-// Little Storage Block
-recipes.addShaped("tfg/littletiles/ltstorageblocktile", <littletiles:ltstorageblocktile>, [
-	[null, null, null],
-	[null, <ore:chestWood>, null],
-	[null, null, null]]);
