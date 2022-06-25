@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Neptune Nitrogen Deposit",
+  "yield": {
+    "min": 5,
+    "max": 27
+  },
+  "dimension_filter": [
+    "dimension_id:-18"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "nitrogen_fluid"
+}
