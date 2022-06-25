@@ -9,15 +9,10 @@ val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamo
 val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
 val ItemsToRemove as IItemStack[] = [
-	// Paper
     <minecraft:paper> * 2,
-    // LV Casing
     <gregtech:machine_casing:1>,
-    // Firebrick
     <gregtech:metal_casing:1>,
-    // Pump casing
     <gregtech:steam_casing:4>,
-    // Other
     <metaitem:coke_oven>,
     <metaitem:steam_miner>,
     <metaitem:steam_macerator_bronze>,
@@ -35,7 +30,6 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:compressed.coke_clay>,
     <metaitem:steam_hammer_bronze>,
     <metaitem:steam_hammer_steel>,
-    // Solar Panels
     <metaitem:cover.solar.panel.ulv>,
     <metaitem:cover.solar.panel.lv>,
     <metaitem:cover.solar.panel.mv>,
@@ -352,7 +346,7 @@ recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bro
     [<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
     [<ore:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallFluidBronze>]]);
- 
+
 // Стальной паровой молот
 recipes.addShaped("tfg/gregtech/steam_forge_hammer", <metaitem:steam_hammer_steel>, [
     [<ore:pipeSmallFluidSteel>, <ore:craftingPiston>, <ore:pipeSmallFluidSteel>],
@@ -506,9 +500,7 @@ recipes.addShaped(<minecraft:bow>, [
 macerator.recipeBuilder()
     .inputs(<minecraft:enchanting_table>)
     .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
-    .duration(135)
-    .EUt(2)
-    .buildAndRegister();
+    .duration(135).EUt(2).buildAndRegister();
 
 // Extruder Shape (Sense Head)
 
@@ -521,24 +513,18 @@ forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
     .notConsumable(<contenttweaker:shape_extruder_sense>)
     .outputs(<contenttweaker:shape_extruder_sense>)
-    .duration(120)
-    .EUt(22)
-    .buildAndRegister();
+    .duration(120).EUt(22).buildAndRegister();
 
 macerator.recipeBuilder()
     .inputs(<contenttweaker:shape_extruder_sense>)
     .outputs(<metaitem:dustSteel> * 4)
-    .duration(56)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(56).EUt(8).buildAndRegister();
 
 arc_furnace.recipeBuilder()
     .inputs(<contenttweaker:shape_extruder_sense>)
     .fluidInputs(<liquid:oxygen> * 56)
     .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(56).EUt(30).buildAndRegister();
 
 // Mold (Knife Head)
 
@@ -551,30 +537,23 @@ forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
     .notConsumable(<contenttweaker:shape_mold_knife>)
     .outputs(<contenttweaker:shape_mold_knife>)
-    .duration(120)
-    .EUt(22)
-    .buildAndRegister();
+    .duration(120).EUt(22).buildAndRegister();
 
 macerator.recipeBuilder()
     .inputs(<contenttweaker:shape_mold_knife>)
     .outputs(<metaitem:dustSteel> * 4)
-    .duration(56)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(56).EUt(8).buildAndRegister();
 
 arc_furnace.recipeBuilder()
     .inputs(<contenttweaker:shape_mold_knife>)
     .fluidInputs(<liquid:oxygen> * 56)
     .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(56).EUt(30).buildAndRegister();
 
 // Растительное масло
 extractor.recipeBuilder()
     .inputs(<ore:listAllSeeds>)
-    .fluidOutputs(<liquid:seed_oil> * 10)
-    .EUt(2).duration(32).buildAndRegister();
+    .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
 
 // Контроллер звездной кузни
 assembly_line.recipeBuilder()
@@ -606,9 +585,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 2304)
     .fluidInputs(<liquid:soldering_alloy> * 144)
     .outputs([<metaitem:cover.solar.panel.ulv>])
-    .duration(20)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(20).EUt(30720).buildAndRegister();
 
 // Solar Panel (LV)
 assembly_line.recipeBuilder()
@@ -623,9 +600,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 288)
     .outputs([<metaitem:cover.solar.panel.lv>])
-    .duration(40)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(40).EUt(30720).buildAndRegister();
 
 // Solar Panel (MV)
 assembly_line.recipeBuilder()
@@ -640,9 +615,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 576)
     .outputs([<metaitem:cover.solar.panel.mv>])
-    .duration(80)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(80).EUt(30720).buildAndRegister();
 
 // Solar Panel (HV)
 assembly_line.recipeBuilder()
@@ -657,9 +630,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 1152)
     .outputs([<metaitem:cover.solar.panel.hv>])
-    .duration(160)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(160).EUt(30720).buildAndRegister();
 
 // Solar Panel (EV)
 assembly_line.recipeBuilder()
@@ -674,9 +645,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 2304)
     .outputs([<metaitem:cover.solar.panel.ev>])
-    .duration(320)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(320).EUt(30720).buildAndRegister();
 
 // Solar Panel (IV)
 assembly_line.recipeBuilder()
@@ -691,9 +660,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 4608)
     .outputs([<metaitem:cover.solar.panel.iv>])
-    .duration(640)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(640).EUt(30720).buildAndRegister();
 
 // Solar Panel (LuV)
 assembly_line.recipeBuilder()
@@ -708,9 +675,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 9216)
     .outputs([<metaitem:cover.solar.panel.luv>])
-    .duration(1280)
-    .EUt(30720)
-    .buildAndRegister();
+    .duration(1280).EUt(30720).buildAndRegister();
 
 // Solar Panel (ZPM)
 assembly_line.recipeBuilder()
@@ -725,9 +690,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 18432)
     .outputs([<metaitem:cover.solar.panel.zpm>])
-    .duration(2560)
-    .EUt(122880)
-    .buildAndRegister();
+    .duration(2560).EUt(122880).buildAndRegister();
 
 // Solar Panel (UV)
 assembly_line.recipeBuilder()
@@ -742,34 +705,26 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 36864)
     .outputs([<metaitem:cover.solar.panel.uv>])
-    .duration(5120)
-    .EUt(491520)
-    .buildAndRegister();
+    .duration(5120).EUt(491520).buildAndRegister();
 
 // Dry Ice -> Carbon + Oxygen
 electrolyzer.recipeBuilder()
     .fluidInputs([<liquid:dry_ice> * 1000])
     .fluidOutputs([<liquid:oxygen> * 2000])
     .outputs([<metaitem:dustCarbon>])
-    .duration(200)
-    .EUt(7680)
-    .buildAndRegister();
+    .duration(200).EUt(7680).buildAndRegister();
 
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond>, <ore:dustIridium>])
     .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 2])
-    .duration(200)
-    .EUt(7680)
-    .buildAndRegister();
+    .duration(200).EUt(7680).buildAndRegister();
 chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
     .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 1])
-    .duration(700)
-    .EUt(2000)
-    .buildAndRegister(); 
+    .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
 recipes.addShapeless (<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
@@ -907,20 +862,17 @@ centrifuge.recipeBuilder()
     .chancedOutput(<metaitem:dustWood>, 2500, 700)
     .chancedOutput(<metaitem:plant_ball>, 3750, 900)
     .chancedOutput(<metaitem:rubber_drop>, 5000, 1200)
-    .fluidOutputs(<fluid:methane> * 65)
-    .EUt(20).duration(200).buildAndRegister();
+    .fluidOutputs(<fluid:methane> * 65).EUt(20).duration(200).buildAndRegister();
 
 // Лава из незерака
 extractor.recipeBuilder()
     .inputs(<ore:netherrack>)
-    .fluidOutputs(<fluid:lava> * 250)
-    .EUt(140).duration(330).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();
 	
 // Лава из магма блока
 extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
-    .fluidOutputs(<fluid:lava> * 750)
-    .EUt(140).duration(220).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 750).EUt(140).duration(220).buildAndRegister();
 
 // Гравий --> кремень
 forge_hammer.recipeBuilder()
@@ -951,9 +903,7 @@ mixer.recipeBuilder()
 	.inputs(<ore:sand> * 4,<ore:dustWood> * 2, <ore:dirt>)
     .fluidInputs(<liquid:water> * 1000)
 	.outputs(<metaitem:fertilizer>)
-	.duration(100)
-	.EUt(30)
-	.buildAndRegister();
+	.duration(100).EUt(30).buildAndRegister();
 
 // Деревянный ящик
 assembler.recipeBuilder()

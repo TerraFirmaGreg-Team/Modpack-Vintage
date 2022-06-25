@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 // --- Массивы
 
 val RemoveItemRecipe as IItemStack[] = [
-   <extraplanets:nuclear_bomb>,
 	<extraplanets:advanced_launch_pad>,
 	<extraplanets:advanced_launch_pad:1>,
 	<extraplanets:advanced_launch_pad:3>,
@@ -62,15 +61,6 @@ recipes.removeByRecipeName("extraplanets:ice");
 <contenttweaker:rocketparts_tier9>.addTooltip("Tier 9");
 <contenttweaker:rocketparts_tier10>.addTooltip("Tier 10");
 
-// Ядерная бомба
-assembler.recipeBuilder()
-   .inputs(<metaitem:neutron_reflector> * 4, <metaitem:plateSteel> * 32, <metaitem:dustPlutonium> * 16, <metaitem:dustUranium235> * 16, <ore:circuitLuv> * 2)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<extraplanets:nuclear_bomb>)
-   .duration(7000)
-   .EUt(960)
-   .buildAndRegister();
-
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
    .inputs(<galacticraftcore:landing_pad> * 3, <ore:plateDenseTitanium> * 6)
@@ -101,9 +91,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:osmiridium> * 800])
 	.outputs(<extraplanets:tier4_items:3> * 3)
 	.property("temperature", 7100)
-	.duration(1000)
-	.EUt(810)
-	.buildAndRegister();
+	.duration(1000).EUt(810).buildAndRegister();
 
 // Tier 5
 electric_blast_furnace.recipeBuilder()
@@ -111,9 +99,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:hsss> * 800])
 	.outputs(<extraplanets:tier5_items:3> * 3)
 	.property("temperature", 8750)
-	.duration(1000)
-	.EUt(910)
-	.buildAndRegister();
+	.duration(1000).EUt(910).buildAndRegister();
 
 // Tier 6
 electric_blast_furnace.recipeBuilder()
@@ -121,9 +107,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:naquadria> * 800])
 	.outputs(<extraplanets:tier6_items:3> * 3)
 	.property("temperature", 10777)
-	.duration(1000)
-	.EUt(1010)
-	.buildAndRegister();
+	.duration(1000).EUt(1010).buildAndRegister();
 
 // Tier 7
 electric_blast_furnace.recipeBuilder()
@@ -131,9 +115,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:osmiridium> * 800])
 	.outputs(<extraplanets:tier7_items:3> * 3)
 	.property("temperature", 7100)
-	.duration(1000)
-	.EUt(1110)
-	.buildAndRegister();
+	.duration(1000).EUt(1110).buildAndRegister();
 
 // Tier 8
 electric_blast_furnace.recipeBuilder()
@@ -141,9 +123,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:hsss> * 800])
 	.outputs(<extraplanets:tier8_items:3> * 3)
 	.property("temperature", 8750)
-	.duration(1000)
-	.EUt(1210)
-	.buildAndRegister();
+	.duration(1000).EUt(1210).buildAndRegister();
 
 // Tier 9
 electric_blast_furnace.recipeBuilder()
@@ -151,9 +131,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:naquadria> * 800])
 	.outputs(<extraplanets:tier9_items:3> * 3)
 	.property("temperature", 10777)
-	.duration(1000)
-	.EUt(1310)
-	.buildAndRegister();
+	.duration(1000).EUt(1310).buildAndRegister();
 
 // Tier 10
 electric_blast_furnace.recipeBuilder()
@@ -161,9 +139,7 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:hsss> * 800])
 	.outputs(<extraplanets:tier10_items:3> * 3)
 	.property("temperature", 8750)
-	.duration(1000)
-	.EUt(1410)
-	.buildAndRegister();
+	.duration(1000).EUt(1410).buildAndRegister();
 
 // Головоной обтекатель 4-10 Tiers
 
@@ -180,9 +156,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.iv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier4>)
-	.duration(600)
-	.EUt(820)
-	.buildAndRegister();
+	.duration(600).EUt(820).buildAndRegister();
 
 // Tier 5
 assembler.recipeBuilder()
@@ -197,9 +171,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.iv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier5>)
-	.duration(600)
-	.EUt(920)
-	.buildAndRegister();
+	.duration(600).EUt(920).buildAndRegister();
 
 // Tier 6
 assembler.recipeBuilder()
@@ -214,9 +186,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier6>)
-	.duration(600)
-	.EUt(1020)
-	.buildAndRegister();
+	.duration(600).EUt(1020).buildAndRegister();
 
 // Tier 7
 assembler.recipeBuilder()
@@ -231,9 +201,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier7>)
-	.duration(600)
-	.EUt(1120)
-	.buildAndRegister();
+	.duration(600).EUt(1120).buildAndRegister();
 
 // Tier 8
 assembler.recipeBuilder()
@@ -248,9 +216,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier8>)
-	.duration(600)
-	.EUt(1220)
-	.buildAndRegister();
+	.duration(600).EUt(1220).buildAndRegister();
 
 // Tier 9
 assembler.recipeBuilder()

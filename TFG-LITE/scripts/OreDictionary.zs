@@ -347,6 +347,8 @@ for denseSmartCable in denseSmartCables {
     }
 }
 
+// --- Удаление
+
 // Iron Dust
 <ore:dustIron>.remove(<appliedenergistics2:material:49>);
 

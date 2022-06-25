@@ -32,9 +32,7 @@ assembler.recipeBuilder()
     <ore:stickOsmiridium> * 2
   ])
   .outputs(<wct:wct>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Wireless Fluid Terminal
 assembler.recipeBuilder()
@@ -47,9 +45,7 @@ assembler.recipeBuilder()
     <ore:stickOsmiridium> * 2
   ])
   .outputs(<wft:wft>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Wireless Interface Terminal
 assembler.recipeBuilder()
@@ -62,9 +58,7 @@ assembler.recipeBuilder()
     <ore:stickOsmiridium> * 2
   ])
   .outputs(<wit:wit>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Wireless Pattern Terminal
 assembler.recipeBuilder()
@@ -77,9 +71,7 @@ assembler.recipeBuilder()
     <ore:stickOsmiridium> * 2
   ])
   .outputs(<wpt:wpt>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Wireless Booster Card
 assembler.recipeBuilder()
@@ -90,9 +82,7 @@ assembler.recipeBuilder()
     <metaitem:cover.digital.wireless>,
   ])
   .outputs(<ae2wtlib:infinity_booster_card>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Magnet Card
 assembler.recipeBuilder()
@@ -105,9 +95,7 @@ assembler.recipeBuilder()
     <appliedenergistics2:material:28>
   ])
   .outputs(<wct:magnet_card>)
-  .duration(30)
-  .EUt(250)
-  .buildAndRegister();
+  .duration(30).EUt(250).buildAndRegister();
 
 // Network Visualization Tool
 recipes.addShaped("tfg/aenetvistool/net_visualizer", <aenetvistool:net_visualizer>, [

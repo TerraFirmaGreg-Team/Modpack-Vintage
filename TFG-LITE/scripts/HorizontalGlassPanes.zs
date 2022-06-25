@@ -57,7 +57,7 @@ for i, Horizontal_Glass_Panes_Array in Horizontal_Glass_Panes_Array {
 for i, Horizontal_Glass_Panes_Array in Horizontal_Glass_Panes_Array {
     chemical_bath.recipeBuilder()
     	.inputs([<hgp:hgppane>])
-        .fluidInputs([All_Liquid_Dyes[i] * 18])
+        .fluidInputs([colorLiquid[i] * 18])
     	.outputs(Horizontal_Glass_Panes_Array)
     	.duration(20).EUt(7).buildAndRegister();
 }

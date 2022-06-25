@@ -380,7 +380,7 @@ for i, Illuminars_Array in Illuminars_Array {
     mixer.recipeBuilder()
     	.inputs(<ore:dustGlowstone>)
         .circuit(24)
-        .fluidInputs([All_Liquid_Dyes[i] * 18])
+        .fluidInputs([colorLiquid[i] * 18])
     	.outputs(Illuminars_Array)
     	.duration(20).EUt(7).buildAndRegister();
 }
@@ -519,7 +519,7 @@ assembler.recipeBuilder()
 for i, Transmission_Wires_Array in Transmission_Wires_Array {
     chemical_bath.recipeBuilder()
     	.inputs([<projectred-transmission:wire>])
-        .fluidInputs([All_Liquid_Dyes[i] * 18])
+        .fluidInputs([colorLiquid[i] * 18])
     	.outputs(Transmission_Wires_Array)
     	.duration(100).EUt(16).buildAndRegister();
 }

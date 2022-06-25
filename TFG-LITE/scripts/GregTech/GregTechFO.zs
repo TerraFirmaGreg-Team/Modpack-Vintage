@@ -464,9 +464,7 @@ slicer.recipeBuilder()
     .inputs(<ore:apple>)
     .notConsumable(<metaitem:config.slicer_blade.octagonal>)
     .outputs(<metaitem:component.apple_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Mushroom Slice
 recipes.addShapeless("tfg/gtfo/myshroom_slice", <metaitem:component.mushroom_slice>, [<ore:gtce.tool.knife>, <tfc:plants/porcini>]);
@@ -475,17 +473,13 @@ slicer.recipeBuilder()
     .inputs(<tfc:plants/porcini>)
     .notConsumable(<metaitem:config.slicer_blade.octagonal>)
     .outputs(<metaitem:component.mushroom_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Apple Structural Mesh
 extractor.recipeBuilder()
     .inputs(<ore:apple>)
     .outputs(<metaitem:component.structural_mesh.apple>)
-    .duration(200)
-    .EUt(1920)
-    .buildAndRegister();
+    .duration(200).EUt(1920).buildAndRegister();
 
 // Kebab Meat Raw
 recipes.addShapeless("tfg/gtfo/kebab_meat_raw", <metaitem:component.kebab.meat> * 2, [<ore:craftingToolRollingPin>, <metaitem:component.skewer>, <metaitem:component.skewer>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <metaitem:dustSmallSalt>]);
@@ -493,9 +487,7 @@ recipes.addShapeless("tfg/gtfo/kebab_meat_raw", <metaitem:component.kebab.meat> 
 cuisine_assembler.recipeBuilder()
     .inputs(<ore:categoryMeat> * 4, <metaitem:component.skewer> * 4, <metaitem:dustTinySalt> * 4)
     .outputs(<metaitem:component.kebab.meat> * 4)
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
+    .duration(50).EUt(16).buildAndRegister();
 
 // Mince Meat
 large_chemical_reactor.recipeBuilder()
@@ -503,9 +495,7 @@ large_chemical_reactor.recipeBuilder()
     .fluidInputs([<liquid:methanol> * 4000, <liquid:chloroform> * 4000])
     .outputs(<metaitem:dustMeat> * 40, <minecraft:dye:15> * 16)
     .fluidOutputs([<liquid:gtfo_stearin> * 32000, <liquid:gtfo_sludge> * 12000, <liquid:chlorine> * 12000])
-    .duration(1000)
-    .EUt(256)
-    .buildAndRegister();
+    .duration(1000).EUt(256).buildAndRegister();
 
 // Mince Meat + BoneMeal + Animal Fat
 centrifuge.recipeBuilder()
@@ -513,43 +503,33 @@ centrifuge.recipeBuilder()
     .circuit(0)
     .outputs(<metaitem:dustMeat> * 13, <metaitem:dustSmallBone> * 8, <metaitem:fat_ingot> * 8)
     .chancedOutput(<metaitem:fat_ingot> * 4, 5000, 2000)
-    .duration(400)
-    .EUt(20)
-    .buildAndRegister();
+    .duration(400).EUt(20).buildAndRegister();
 
 // Fish Oil
 extractor.recipeBuilder()
     .inputs(<tfc:food/fish>)
     .fluidOutputs([<liquid:fish_oil> * 70])
-    .duration(16)
-    .EUt(4)
-    .buildAndRegister();
+    .duration(16).EUt(4).buildAndRegister();
 
 // Sludge
 mixer.recipeBuilder()
     .inputs(<ore:categoryMeat>)
     .fluidInputs([<liquid:sulfuric_acid> * 200])
     .fluidOutputs([<liquid:gtfo_sludge> * 200])
-    .duration(250)
-    .EUt(16)
-    .buildAndRegister();
+    .duration(250).EUt(16).buildAndRegister();
 
 mixer.recipeBuilder()
     .inputs(<ore:categoryMeat>)
     .fluidInputs([<liquid:water> * 400])
     .fluidOutputs([<liquid:gtfo_sludge> * 100])
-    .duration(500)
-    .EUt(16)
-    .buildAndRegister();
+    .duration(500).EUt(16).buildAndRegister();
 
 // Potato Juice
 fermenter.recipeBuilder()
     .inputs(<tfc:food/potato>)
     .fluidInputs([<liquid:water> * 1000])
     .fluidOutputs([<liquid:gtfo_potato_juice> * 1000])
-    .duration(1000)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(1000).EUt(8).buildAndRegister();
 
 // Rotten Food
 fermenter.recipeBuilder()
@@ -557,9 +537,7 @@ fermenter.recipeBuilder()
     .fluidInputs([<liquid:water> * 100])
     .outputs(<metaitem:food.meat_rotten>)
     .fluidOutputs([<liquid:water> * 100])
-    .duration(100)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(100).EUt(8).buildAndRegister();
 
 // Cooked Meat
 for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
@@ -593,18 +571,14 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/pork>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.bacon> * 6)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Beef Slice
 slicer.recipeBuilder()
     .inputs(<tfc:food/beef>)
     .notConsumable(<metaitem:config.slicer_blade.stripes>)
     .outputs(<metaitem:component.beef_slice> * 9)
-    .duration(80)
-    .EUt(24)
-    .buildAndRegister();
+    .duration(80).EUt(24).buildAndRegister();
 
 // Meat Sandwich
 recipes.addShapeless("tfg/gtfo/meat_sandwich", <metaitem:food.sandwich.steak>, [<metaitem:component.breads>, <ore:categoryCookedMeat>]);
@@ -612,66 +586,50 @@ recipes.addShapeless("tfg/gtfo/meat_sandwich", <metaitem:food.sandwich.steak>, [
 cuisine_assembler.recipeBuilder()
     .inputs(<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <ore:categoryCookedMeat>)
     .outputs(<metaitem:food.sandwich.steak> * 3)
-    .duration(120)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(120).EUt(30).buildAndRegister();
 
 // Large Meat Sandwich
 cuisine_assembler.recipeBuilder()
     .inputs(<metaitem:component.baguettes> * 3, <metaitem:food.cheddar_slice> * 3, <ore:categoryCookedMeat> * 3)
     .outputs(<metaitem:food.sandwich.steak.large> * 3)
-    .duration(240)
-    .EUt(75)
-    .buildAndRegister();
+    .duration(240).EUt(75).buildAndRegister();
 
 // Rabbit Stew
 mixer.recipeBuilder()
     .inputs(<tfc:food/cooked_rabbit>, <tfc:food/carrot>, <tfc:plants/porcini>, <metaitem:mashed_potato_dust>, <ore:flour>)
     .fluidInputs([<liquid:water> * 50])
     .fluidOutputs([<liquid:gtfo_rabbit_stew> * 125])
-    .duration(100)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(100).EUt(8).buildAndRegister();
 
 // Melon Seeds
 macerator.recipeBuilder()
     .inputs(<firmalife:melon>)
     .outputs(<firmalife:crop/seeds/melon>)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
+    .duration(400).EUt(2).buildAndRegister();
 
 macerator.recipeBuilder()
     .inputs(<firmalife:melon_fruit>)
     .outputs(<firmalife:melon> * 8)
     .chancedOutput(<firmalife:crop/seeds/melon>, 8000, 500)
-    .duration(400)
-    .EUt(2)
-    .buildAndRegister();
+    .duration(400).EUt(2).buildAndRegister();
 
 // Melon Block
 packer.recipeBuilder()
     .inputs(<firmalife:melon> * 9)
     .circuit(9)
     .outputs(<firmalife:melon_fruit>)
-    .duration(200)
-    .EUt(2)
-    .buildAndRegister();
+    .duration(200).EUt(2).buildAndRegister();
 
 // Glistering Melon
 chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
-    .duration(50)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(50).EUt(30).buildAndRegister();
 
 large_chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
-    .duration(50)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(50).EUt(30).buildAndRegister();
 
 // Pre-Sliced Bread
 recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:gtce.tool.knife>]);
@@ -680,9 +638,7 @@ slicer.recipeBuilder()
     .inputs(<ore:categoryBread>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.breads>)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Bread
 for i, TFC_Breads in TFC_Breads {
@@ -716,9 +672,7 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/carrot>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.carrot_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Onion Slice
 recipes.addShapeless("tfg/gtfo/onion_slice", <metaitem:component.onion_slice> * 4, [<tfc:food/onion>, <ore:gtce.tool.knife>]);
@@ -727,9 +681,7 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/onion>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.onion_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Olive Slice
 recipes.addShapeless("tfg/gtfo/olive_slice", <metaitem:component.olive_slice> * 4, [<tfc:food/olive>, <ore:gtce.tool.knife>]);
@@ -738,9 +690,7 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/olive>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.olive_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Tomato Slice
 recipes.addShapeless("tfg/gtfo/tomato_slice", <metaitem:component.tomato_slice> * 4, [<tfc:food/tomato>, <ore:gtce.tool.knife>]);
@@ -749,9 +699,7 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/tomato>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.tomato_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Cabbage Slice
 recipes.addShapeless("tfg/gtfo/cabbage_slice", <metaitem:component.cucumber_slice> * 4, [<tfc:food/cabbage>, <ore:gtce.tool.knife>]);
@@ -760,9 +708,7 @@ slicer.recipeBuilder()
     .inputs(<tfc:food/cabbage>)
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.cucumber_slice> * 8)
-    .duration(30)
-    .EUt(18)
-    .buildAndRegister();
+    .duration(30).EUt(18).buildAndRegister();
 
 // Peeled Potato
 slicer.recipeBuilder()
@@ -771,25 +717,19 @@ slicer.recipeBuilder()
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.potato.peeled>)
     .fluidOutputs([<liquid:gtfo_starch_filled_water> * 500])
-    .duration(40)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(40).EUt(8).buildAndRegister();
 
 // Mashed Potato
 macerator.recipeBuilder()
     .inputs(<tfc:food/potato>)
     .outputs(<metaitem:mashed_potato_dust>)
-    .duration(40)
-    .EUt(4)
-    .buildAndRegister();
+    .duration(40).EUt(4).buildAndRegister();
 
 // Carrot Structural Mesh
 extractor.recipeBuilder()
     .inputs(<tfc:food/carrot>)
     .outputs(<metaitem:mashed_potato_dust>)
-    .duration(200)
-    .EUt(1920)
-    .buildAndRegister();
+    .duration(200).EUt(1920).buildAndRegister();
 
 // Carrots on a Skewel Kebab
 recipes.addShapeless("tfg/gtfo/kebab_carrot", <metaitem:component.kebab.carrot> * 2, [<ore:gtce.tool.knife>, <metaitem:dustSalt>, <tfc:food/carrot>, <tfc:food/carrot>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
@@ -799,27 +739,21 @@ mixer.recipeBuilder()
     .inputs(<tfc:food/beet> * 2, <ore:flour>)
     .fluidInputs([<liquid:water> * 100])
     .fluidOutputs([<liquid:gtfo_beetroot_soup> * 125])
-    .duration(100)
-    .EUt(8)
-    .buildAndRegister();
+    .duration(100).EUt(8).buildAndRegister();
 
 // Chum * 3
 mixer.recipeBuilder()
     .inputs(<metaitem:food.meat_rotten>, <minecraft:fermented_spider_eye>, <tfc:plants/amanita>)
     .fluidInputs([<liquid:gtfo_sludge> * 100])
     .outputs(<metaitem:food.chum> * 3)
-    .duration(100)
-    .EUt(24)
-    .buildAndRegister();
+    .duration(100).EUt(24).buildAndRegister();
 
 // Chum * 6
 mixer.recipeBuilder()
     .inputs(<metaitem:food.meat_rotten>, <minecraft:fermented_spider_eye>, <tfc:plants/amanita>)
     .fluidInputs([<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100])
     .outputs(<metaitem:food.chum> * 6)
-    .duration(100)
-    .EUt(24)
-    .buildAndRegister();
+    .duration(100).EUt(24).buildAndRegister();
 
 // Flour -> Flat Dough
 for i, TFC_Flat_Doughs in TFC_Flat_Doughs {
@@ -844,9 +778,7 @@ cuisine_assembler.recipeBuilder()
     .inputs(<firmalife:pizza_dough>, <metaitem:component.mozzarella_slice> * 3, <metaitem:component.mushroom_slice> * 8, <metaitem:component.olive_slice> * 8)
     .fluidInputs([<liquid:gtfo_tomato_sauce> * 300])
     .outputs(<metaitem:component.pizza.veggie>)
-    .duration(400)
-    .EUt(180)
-    .buildAndRegister();
+    .duration(400).EUt(180).buildAndRegister();
 
 // Raw Cheese Pizza
 cuisine_assembler.recipeBuilder()
@@ -854,18 +786,14 @@ cuisine_assembler.recipeBuilder()
     .circuit(0)
     .fluidInputs([<liquid:gtfo_tomato_sauce> * 600])
     .outputs(<metaitem:component.pizza.cheese>)
-    .duration(400)
-    .EUt(180)
-    .buildAndRegister();
+    .duration(400).EUt(180).buildAndRegister();
 
 // Raw Mince Meat Pizza
 cuisine_assembler.recipeBuilder()
     .inputs(<firmalife:pizza_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10)
     .fluidInputs([<liquid:gtfo_tomato_sauce> * 450])
     .outputs(<metaitem:component.pizza.mince_meat>)
-    .duration(400)
-    .EUt(180)
-    .buildAndRegister();
+    .duration(400).EUt(180).buildAndRegister();
 
 // Pie Crust
 recipes.addShapeless("tfg/gtfo/pie_crust", <metaitem:component.pie_crust>, [<ore:doughYeast>, <ore:gtce.tool.rolling.pins>]);
@@ -880,9 +808,7 @@ forming_press.recipeBuilder()
     .inputs(<ore:dough> * 2)
     .notConsumable(<metaitem:wooden_form.baguette>)
     .outputs(<metaitem:component.baguette>)
-    .duration(100)
-    .EUt(20)
-    .buildAndRegister();
+    .duration(100).EUt(20).buildAndRegister();
 
 // Unbaked Bun
 recipes.addShaped("tfg/gtfo/unbaked_bun", <metaitem:component.bun>,
@@ -894,9 +820,7 @@ forming_press.recipeBuilder()
     .inputs(<ore:dough> * 2)
     .notConsumable(<metaitem:wooden_form.bun>)
     .outputs(<metaitem:component.bun>)
-    .duration(100)
-    .EUt(20)
-    .buildAndRegister();
+    .duration(100).EUt(20).buildAndRegister();
 
 // Mushroom Stew
 mixer.recipeBuilder()

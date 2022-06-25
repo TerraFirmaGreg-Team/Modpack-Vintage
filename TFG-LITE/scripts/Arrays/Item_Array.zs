@@ -66,26 +66,7 @@ global smartCables as IItemStack[] = [
     <appliedenergistics2:part:56>
 ];
 
-global denseCoveredCables as IItemStack[] = [
-    <appliedenergistics2:part:500>,
-    <appliedenergistics2:part:501>,
-    <appliedenergistics2:part:502>,
-    <appliedenergistics2:part:503>,
-    <appliedenergistics2:part:504>,
-    <appliedenergistics2:part:505>,
-    <appliedenergistics2:part:506>,
-    <appliedenergistics2:part:507>,
-    <appliedenergistics2:part:508>,
-    <appliedenergistics2:part:509>,
-    <appliedenergistics2:part:510>,
-    <appliedenergistics2:part:511>,
-    <appliedenergistics2:part:512>,
-    <appliedenergistics2:part:513>,
-    <appliedenergistics2:part:514>,
-    <appliedenergistics2:part:515>,
-    <appliedenergistics2:part:516>
-];
-
+// Dense Smart Cable
 global denseSmartCables as IItemStack[] = [
     <appliedenergistics2:part:60>,
     <appliedenergistics2:part:61>,
@@ -104,6 +85,27 @@ global denseSmartCables as IItemStack[] = [
     <appliedenergistics2:part:74>,
     <appliedenergistics2:part:75>,
     <appliedenergistics2:part:76>
+];
+
+// Dense Covered Cable
+global denseCoveredCables as IItemStack[] = [
+    <appliedenergistics2:part:500>,
+    <appliedenergistics2:part:501>,
+    <appliedenergistics2:part:502>,
+    <appliedenergistics2:part:503>,
+    <appliedenergistics2:part:504>,
+    <appliedenergistics2:part:505>,
+    <appliedenergistics2:part:506>,
+    <appliedenergistics2:part:507>,
+    <appliedenergistics2:part:508>,
+    <appliedenergistics2:part:509>,
+    <appliedenergistics2:part:510>,
+    <appliedenergistics2:part:511>,
+    <appliedenergistics2:part:512>,
+    <appliedenergistics2:part:513>,
+    <appliedenergistics2:part:514>,
+    <appliedenergistics2:part:515>,
+    <appliedenergistics2:part:516>
 ];
 
 // - All GT Ores Array
@@ -4514,7 +4516,7 @@ global Glass_Panes_Array as IItemStack[] = [
 ];
 
 // - All liquid dye Array
-global All_Liquid_Dyes as ILiquidStack[] = [
+global colorLiquid as ILiquidStack[] = [
 	<liquid:dye_white>,
 	<liquid:dye_orange>,
 	<liquid:dye_magenta>,
