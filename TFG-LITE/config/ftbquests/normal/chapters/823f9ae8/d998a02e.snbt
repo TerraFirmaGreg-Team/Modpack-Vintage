@@ -1,14 +1,14 @@
 {
-	x: -5.0d,
-	y: -7.25d,
+	x: -13.0d,
+	y: -5.0d,
 	dependencies: [
-		"1779861a"
+		"68bfa880"
 	],
 	tasks: [{
-		uid: "5b59843c",
+		uid: "8c938b0e",
 		type: "item",
 		items: [{
-			item: "galacticraftplanets:grapple"
+			item: "hotornot:bismuth_bronze_tongs"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -1,14 +1,14 @@
 {
-	x: -5.0d,
-	y: -7.25d,
+	x: -4.5d,
+	y: -5.0d,
 	dependencies: [
-		"1779861a"
+		"85e10b5d"
 	],
 	tasks: [{
-		uid: "5b59843c",
+		uid: "79e65eb1",
 		type: "item",
 		items: [{
-			item: "galacticraftplanets:grapple"
+			item: "hotornot:wrought_iron_tongs"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

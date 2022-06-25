@@ -1,4 +1,5 @@
 {
+	icon: "gregtech:meta_dust 1 103",
 	x: -5.0d,
 	y: 9.0d,
 	shape: "diamond",
@@ -12,32 +13,16 @@
 		type: "item",
 		title: "{tfg.quests.primitive.sulfurdust.title}",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustTinySulfur"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustTinySulfur"
-				}
-			}
+			item: "gregtech:meta_ore_chunk 1 103"
 		},
 		{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustTinySulfur"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustSmallSulfur"
-				}
-			}
+			item: "gregtech:meta_dust_tiny 1 103"
+		},
+		{
+			item: "gregtech:meta_dust_small 1 103"
+		},
+		{
+			item: "gregtech:meta_dust 1 103"
 		}]
 	}]
 }
