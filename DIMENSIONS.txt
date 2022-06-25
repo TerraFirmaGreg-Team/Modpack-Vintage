@@ -20,7 +20,6 @@ planet.saturn:              {-16}
     moon.titan:             {-1508}
     moon.iapetus:           {-1511}
 planet.uranus:              {-17}
-    moon.titania:           {-1510}
     moon.oberon:            {-1509}
 planet.neptune:             {-18}
     moon.triton:            {-1504}
@@ -34,5 +33,6 @@ planet.barnarda_c:          {-1030}
 
 // WTF
 planet.kepler22b:           {-22}
+moon.titania:           {-1510}
 moon.miranda:               {-1024}
 moon.enceladus:             {-1017}
