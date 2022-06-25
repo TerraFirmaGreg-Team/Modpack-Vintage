@@ -16,8 +16,6 @@ import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
 
-val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenware_clay> | <tfcflorae:ceramics/kaolinite/kaolinite_clay> | <tfcflorae:ceramics/stoneware/stoneware_clay>;
-
 val RemoveItemRecipesByName = [
   	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
@@ -461,7 +459,7 @@ recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
 // Огнеупорная глина
 recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
 	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>],
-	[<tfc:powder/graphite>, AllClays, <tfc:powder/graphite>],
+	[<tfc:powder/graphite>, <ore:clay>, <tfc:powder/graphite>],
 	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>]]);
 
 // TFC Resin --> Sticky resin

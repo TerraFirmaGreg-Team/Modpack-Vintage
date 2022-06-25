@@ -363,6 +363,15 @@ for denseSmartCable in denseSmartCables {
 // --- TFC-Florae --- //////////////////////////////////
 ////////////////////////////////////////////////////////
 
+// --- Добавление
+
+<ore:clay>.add(<tfcflorae:ceramics/stoneware/stoneware_clay>);
+<ore:clay>.add(<tfcflorae:ceramics/kaolinite/kaolinite_clay>);
+<ore:clay>.add(<tfcflorae:ceramics/earthenware/earthenware_clay>);
+
+
+// --- Удаление
+
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
 ////////////////////////////////////////////////////////
