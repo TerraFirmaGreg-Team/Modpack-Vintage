@@ -462,7 +462,7 @@ extractor.recipeBuilder()
 // Dry Ice hard -> DryIce
 extractor.recipeBuilder()
    .inputs(<galaxyspace:gs_basic:27>)
-   .fluidOutputs(<liquid:dryIce> * 170)
+   .fluidOutputs(<liquid:dry_ice> * 170)
    .duration(150)
    .EUt(1750)
    .buildAndRegister();
