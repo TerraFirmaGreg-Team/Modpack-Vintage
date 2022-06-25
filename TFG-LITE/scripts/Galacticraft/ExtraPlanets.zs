@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 // --- Массивы
 
 val RemoveItemRecipe as IItemStack[] = [
+   <extraplanets:nuclear_bomb>,
 	<extraplanets:advanced_launch_pad>,
 	<extraplanets:advanced_launch_pad:1>,
 	<extraplanets:advanced_launch_pad:3>,
@@ -50,13 +51,25 @@ for item in RemoveItemRecipe{
 	recipes.remove(item);
 }
 
-// --- Adding Recipes
+// Именнованное удаление
+recipes.removeByRecipeName("extraplanets:ice");
+
+// --- Добавление рецептов
 
 // Тултипы для новых вещей
 <contenttweaker:rocketparts_tier7>.addTooltip("Tier 7");
 <contenttweaker:rocketparts_tier8>.addTooltip("Tier 8");
 <contenttweaker:rocketparts_tier9>.addTooltip("Tier 9");
 <contenttweaker:rocketparts_tier10>.addTooltip("Tier 10");
+
+// Ядерная бомба
+assembler.recipeBuilder()
+   .inputs(<metaitem:neutron_reflector> * 4, <metaitem:plateSteel> * 32, <metaitem:dustPlutonium> * 16, <metaitem:dustUranium235> * 16, <ore:circuitLuv> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<extraplanets:nuclear_bomb>)
+   .duration(7000)
+   .EUt(960)
+   .buildAndRegister();
 
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()

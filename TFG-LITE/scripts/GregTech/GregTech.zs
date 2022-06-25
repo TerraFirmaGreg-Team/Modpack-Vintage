@@ -746,6 +746,15 @@ assembly_line.recipeBuilder()
     .EUt(491520)
     .buildAndRegister();
 
+// Dry Ice -> Carbon + Oxygen
+electrolyzer.recipeBuilder()
+    .fluidInputs([<liquid:dry_ice> * 1000])
+    .fluidOutputs([<liquid:oxygen> * 2000])
+    .outputs([<metaitem:dustCarbon>])
+    .duration(200)
+    .EUt(7680)
+    .buildAndRegister();
+
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond>, <ore:dustIridium>])

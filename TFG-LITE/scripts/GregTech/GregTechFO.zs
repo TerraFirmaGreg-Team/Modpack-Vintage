@@ -37,7 +37,8 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:sugary_dough",
     "gregtechfoodoption:gtfo_pie_crust",
     "gregtechfoodoption:baguette_dough",
-    "gregtechfoodoption:bun_dough"
+    "gregtechfoodoption:bun_dough",
+    "gregtechfoodoption:gtfo_hand_kubide_kebab",
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -430,6 +431,11 @@ forming_press.findRecipe(20, [<metaitem:component.dough> * 2, <metaitem:wooden_f
 
 // Mushroom Stew
 mixer.findRecipe(8, [<minecraft:brown_mushroom:0>, <minecraft:red_mushroom:0>, <metaitem:dustWheat>], [<liquid:milk> * 25]).remove();
+
+// Zest
+extractor.findRecipe(5, [<metaitem:food.lemon>], null).remove();
+
+
 
 // --- Добавление рецептов
 
@@ -898,3 +904,16 @@ mixer.recipeBuilder()
     .fluidInputs([<liquid:milk> * 25])
     .fluidOutputs([<liquid:gtfo_mushroom_soup> * 50])
     .duration(100).EUt(8).buildAndRegister();
+
+// Zest
+extractor.recipeBuilder()
+    .inputs([<tfc:food/lemon>])
+    .outputs(<metaitem:zest_dust>)
+    .fluidOutputs([<liquid:gtfo_mushroom_soup> * 50])
+    .duration(200).EUt(5).buildAndRegister();
+
+// Raw Koobideh Kebab
+recipes.addShaped("tfg/gtfo/raw_koobideh_kebab", <metaitem:component.kebab.kubide>, [
+    [<ore:gtce.tool.rolling.pins>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
+    [<metaitem:dustSmallSalt>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
+    [<metaitem:component.skewer>, <tfc:food/tomato>, <metaitem:dustSmallSalt>]]);

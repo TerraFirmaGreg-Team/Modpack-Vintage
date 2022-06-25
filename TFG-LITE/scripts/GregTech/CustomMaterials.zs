@@ -58,6 +58,13 @@ import mods.gregtech.material.Material;
 <material:platinum>.addFlags("generate_dense");
 <material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
 
+// Dry Ice
+var dry_ice = MaterialBuilder(32050, "dry_ice")
+    .fluid("liquid", false)
+    .dust()
+    .color(0xB4CAD6)
+    .build();
+
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()
 {
