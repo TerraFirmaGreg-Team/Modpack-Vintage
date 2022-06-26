@@ -32,7 +32,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<powersuits:powerarmorcomponent:20>,
 	<powersuits:powerarmorcomponent:21>,
 	<powersuits:tinkertable>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

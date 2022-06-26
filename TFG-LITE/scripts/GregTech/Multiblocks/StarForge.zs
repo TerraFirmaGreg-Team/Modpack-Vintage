@@ -29,7 +29,7 @@ import mods.gregtech.render.MoveType;
 var star_forge = Builder.start("star_forge", 32002)
   .withPattern(function(controller as IControllerTile) as IBlockPattern {
     return FactoryBlockPattern.start()
-                .aisle("               ", "      CCC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
+                .aisle("               ", "      VVV      ", "      V V      ", "      V V      ", "      V V      ", "      V V      ", "      V V      ", "      CCC      ", "               ")
                 .aisle("      C C      ", "     FFFFF     ", "               ", "               ", "               ", "               ", "               ", "     FFFFF     ", "      C C      ")
                 .aisle("      C C      ", "   FF     FF   ", "               ", "               ", "               ", "               ", "               ", "   FF     FF   ", "      C C      ")
                 .aisle("      C C      ", "  F         F  ", "     FFFFF     ", "               ", "               ", "               ", "     FFFFF     ", "  F         F  ", "      C C      ")
@@ -45,7 +45,8 @@ var star_forge = Builder.start("star_forge", 32002)
                 .aisle("      C C      ", "     FFFFF     ", "               ", "               ", "               ", "               ", "               ", "     FFFFF     ", "      C C      ")
                 .aisle("               ", "      CSC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
                 .where('M', CTPredicate.states(<metastate:gregtech:fusion_casing:3>))
-                .where('C', CTPredicate.states(<blockstate:htmltech:casing>).setMinGlobalLimited(136) | controller.autoAbilities())
+                .where('C', CTPredicate.states(<blockstate:htmltech:casing>).setMinGlobalLimited(136))
+                .where('V', CTPredicate.states(<blockstate:htmltech:casing>) | controller.autoAbilities())
                 .where('X', CTPredicate.states(<metastate:gregtech:wire_coil:5>))
                 .where('F', CTPredicate.states(<metastate:gregtech:fusion_casing>))
                 .where('S', controller.self())
@@ -53,7 +54,6 @@ var star_forge = Builder.start("star_forge", 32002)
                 .build();
   } as IPatternBuilderFunction)
   .withRecipeMap(star_forge)
-  .withBaseTexture(<metastate:gregtech:fusion_casing:1>)
-  .buildAndRegister();
+  .withBaseTexture(<metastate:gregtech:fusion_casing:1>).buildAndRegister();
 star_forge.hasMaintenanceMechanics = true;
 star_forge.hasMufflerMechanics = false;
