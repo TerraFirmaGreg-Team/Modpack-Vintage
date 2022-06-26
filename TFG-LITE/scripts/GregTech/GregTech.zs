@@ -914,7 +914,7 @@ assembler.recipeBuilder()
     .duration(100).EUt(16).buildAndRegister();
 
 // Телепорт
-TerminalRegistry.registerDevice(<charset:icon>.firstItem, "disabled");
+TerminalRegistry.registerDevice(<charset:icon>, "disabled");
 TerminalRegistry.createAppRegistryBuilder("teleport")
     .isDefaultApp(false)
     .device(0, "disabled")
