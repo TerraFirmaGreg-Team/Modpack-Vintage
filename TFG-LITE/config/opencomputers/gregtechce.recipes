@@ -56,6 +56,7 @@ wrench = false
 ingotiron = false
 chipdiamond = false
 cuttingwire = false
+chunkloaderupgrade = false
 
 #transistor {
 #  type: gtce_multiple
@@ -512,13 +513,13 @@ batteryupgrade3 {
   ]
 }
 
-chunkloaderupgrade {
-  input: [
-    ["wireGtSingleNiobiumTitanium", "blockGlass", "wireGtSingleNiobiumTitanium"]
-    ["oc:circuitChip3", {block="chickenchunks:chunk_loader", subID=1}, "oc:circuitChip3"]
-    ["obsidian", {oreDict: "circuitLv"}, "obsidian"]
-  ]
-}
+#chunkloaderupgrade {
+#  input: [
+#    ["wireGtSingleNiobiumTitanium", "blockGlass", "wireGtSingleNiobiumTitanium"]
+#    ["oc:circuitChip3", {block="chickenchunks:chunk_loader", subID=1}, "oc:circuitChip3"]
+#    ["obsidian", {oreDict: "circuitLv"}, "obsidian"]
+#  ]
+#}
 
 craftingupgrade {
   input: [

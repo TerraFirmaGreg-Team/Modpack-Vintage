@@ -11,7 +11,8 @@ val RemoveRecipes as IItemStack[] = [
 <opencomputers:material:7>,
 <opencomputers:material:6>,
 <opencomputers:component:6>,
-<opencomputers:wrench>
+<opencomputers:wrench>,
+<opencomputers:upgrade:4>
 ];
 
 // --- Удаление рецептов
