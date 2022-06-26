@@ -1,6 +1,6 @@
 # Changelog
 
-## Version R3.4.0 - Expected 06/26/2022
+## Version R3.4.0 - 06/26/2022
 #### [Lite, Huge]
 ### Modpack fixes
 * Added a recipe for tablets in the workbench.
