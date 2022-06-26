@@ -4,6 +4,8 @@ import mods.terrafirmacraft.ItemRegistry;
 
 // --- Массивы
 
+val TFCMushrooms = <tfc:plants/amanita> | <tfc:plants/porcini>;
+
 val ItemsToRemove as IItemStack[] = [
     <minecraft:leather_helmet>,
     <minecraft:leather_chestplate>,
@@ -366,6 +368,9 @@ assembler.findRecipe(7, [<metaitem:stickIron>, <metaitem:gearSmallIron>, <tfc:sl
 arc_furnace.findRecipe(30, [<minecraft:iron_trapdoor:0>], [<liquid:oxygen> * 56]).remove();
 macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
+// Fermented Spider Eye
+mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металла
@@ -387,6 +392,12 @@ recipes.addShapeless("tfg/vanilla/prismarine/block_raw_1", <minecraft:prismarine
 recipes.addShapeless("tfg/vanilla/prismarine/bricks", <minecraft:prismarine:1> * 4, [<ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>]);
 recipes.addShapeless("tfg/vanilla/prismarine/sea_lantern", <minecraft:sea_lantern>, [<ore:glowstone>, <ore:dyeCyan>]);
 recipes.addShapeless("tfg/vanilla/prismarine/dark", <minecraft:prismarine:2>, [<ore:blockPrismarine>, <ore:dyeBlack>]);
+
+// Табличка
+recipes.addShaped("tfg/vanilla/sign", <minecraft:sign>, [
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [null, <ore:stickWood>, null]]);
 
 // Раздатчик
 recipes.addShaped("tfg/vanilla/dispenser", <minecraft:dispenser>, [
@@ -569,7 +580,7 @@ recipes.addShaped("tfg/vanilla/horse_armor/iron", <minecraft:iron_horse_armor>, 
 
 // Ферментированный паучий глаз
 mixer.recipeBuilder()
-    .inputs(<ore:dustSugar>, <ore:mushroomRed>, <minecraft:spider_eye>)
+    .inputs(<ore:dustSugar>, TFCMushrooms, <minecraft:spider_eye>)
     .outputs(<minecraft:fermented_spider_eye>)
     .duration(300).EUt(2).buildAndRegister();
 

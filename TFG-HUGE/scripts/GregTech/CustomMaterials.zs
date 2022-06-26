@@ -5,7 +5,37 @@ import mods.gregtech.material.MaterialBuilder;
 import mods.gregtech.material.Material;
 
 // --- Custom material settings
+// Add Ore
+<material:bismuth>.addOre();
+<material:perlite>.addOre();
+<material:uvarovite>.addOre();
+<material:manganese>.addOre();
+<material:arsenic>.addOre();
+<material:iridium>.addOre();
+<material:osmium>.addOre();
+<material:chrome>.addOre();
+<material:vanadium>.addOre();
+<material:antimony>.addOre();
+<material:rutile>.addOre();
+<material:silicon>.addOre();
+<material:uranium>.addOre();
+<material:uranium_235>.addOre();
+<material:niobium>.addOre();
+<material:yttrium>.addOre();
+<material:gallium>.addOre();
+<material:titanium>.addOre();
+<material:borax>.addOre();
+<material:cadmium>.addOre();
+<material:caesium>.addOre();
+<material:samarium>.addOre();
+<material:cerium>.addOre();
+<material:lanthanum>.addOre();
+<material:tungsten>.addOre();
+<material:naquadah_enriched>.addOre();
+<material:glowstone>.addOre(1, 1, true);
+// Other
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
+<material:copper>.addTools(7, 1, 85);
 <material:red_steel>.addFlags("generate_long_rod");
 <material:blue_steel>.addFlags("generate_long_rod");
 <material:black_steel>.addFlags("generate_long_rod", "generate_dense");
@@ -13,11 +43,8 @@ import mods.gregtech.material.Material;
 <material:titanium>.addFlags("generate_foil", "generate_dense");
 <material:zinc>.addFlags("generate_long_rod", "generate_gear");
 <material:nickel>.addFlags("generate_long_rod", "generate_gear");
-<material:glowstone>.addOre(1, 1, true);
 <material:copper>.addFlags("generate_long_rod", "generate_dense");
-<material:copper>.addTools(7, 1, 85);
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
-<material:bismuth>.addOre();
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:steel>.addFlags("generate_dense");
@@ -30,6 +57,13 @@ import mods.gregtech.material.Material;
 <material:stainless_steel>.addFlags("generate_dense");
 <material:platinum>.addFlags("generate_dense");
 <material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
+
+// Dry Ice
+var dry_ice = MaterialBuilder(32050, "dry_ice")
+    .fluid("liquid", false)
+    .dust()
+    .color(0xB4CAD6)
+    .build();
 
 // --- Fix toolSpeed and toolDurability
 for material in MaterialRegistry.getAllMaterials()

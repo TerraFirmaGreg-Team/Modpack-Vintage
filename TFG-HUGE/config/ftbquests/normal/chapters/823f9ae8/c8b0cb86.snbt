@@ -1,5 +1,23 @@
 {
 	title: "{tfg.quests.primitive.zincpile.title}",
+	icon: {
+		id: "gregtech:meta_dust_small",
+		Damage: 322s,
+		ForgeCaps: {
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
 	x: -13.5d,
 	y: -3.0d,
 	shape: "diamond",
@@ -12,30 +30,92 @@
 		uid: "7d24d345",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustTinyZinc"
-				}
-			},
+			id: "gregtech:meta_ore_chunk",
+			Damage: 322s,
 			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustTinyZinc"
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
 				}
 			}
 		},
 		{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustTinyZinc"
-				}
-			},
+			id: "gregtech:meta_dust_tiny",
+			Damage: 322s,
 			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "dustSmallZinc"
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		},
+		{
+			id: "gregtech:meta_dust_tiny",
+			Damage: 122s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		},
+		{
+			id: "gregtech:meta_dust_small",
+			Damage: 322s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		},
+		{
+			id: "gregtech:meta_dust_small",
+			Damage: 122s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
 				}
 			}
 		}]

@@ -40,7 +40,6 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:item_basic_asteroids:8>,
 	<galacticraftplanets:basic_item_venus:2>,
 	<galacticraftplanets:atomic_battery>,
-	<galacticraftplanets:telepad_short>,
 	<galacticraftcore:landing_pad>,
 	<galacticraftcore:landing_pad:1>,
 	<galacticraftplanets:miner_base>,
@@ -342,6 +341,7 @@ recipes.addShaped("tfg/gc/telepad_short", <galacticraftplanets:telepad_short>, [
    [<metaitem:magic_energy_absorber>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:magic_energy_absorber>],
    [<ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>]]);
 
+
 // Спасательная коробка
 recipes.addShaped("tfg/gc/emergency_box", <galacticraftcore:emergency_box>, [
    [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
@@ -564,27 +564,21 @@ electric_blast_furnace.recipeBuilder()
    .fluidInputs([<liquid:stainless_steel> * 800])
 	.outputs(<galacticraftcore:heavy_plating> * 3)
 	.property("temperature", 3500)
-	.duration(1000)
-	.EUt(520)
-	.buildAndRegister();
+	.duration(1000).EUt(520).buildAndRegister();
 // Tier 2
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
    .fluidInputs([<liquid:titanium> * 800])
 	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
 	.property("temperature", 4400)
-	.duration(1000)
-	.EUt(620)
-	.buildAndRegister();
+	.duration(1000).EUt(620).buildAndRegister();
 // Tier 3
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
    .fluidInputs([<liquid:tungsten_steel> * 800])
 	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
 	.property("temperature", 5300)
-	.duration(1000)
-	.EUt(720)
-	.buildAndRegister();
+	.duration(1000).EUt(720).buildAndRegister();
 
 // Баллоны
 // Легкий

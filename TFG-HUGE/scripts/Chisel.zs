@@ -134,5 +134,5 @@ recipes.addShaped("tfg/chisel/factory_block", <chisel:factory> * 8, [
 // Коричневый камень
 recipes.addShaped("tfg/chisel/brownstone", <chisel:brownstone> * 8, [
 	[<ore:sand>, <ore:sand>, <ore:sand>],
-	[<ore:sand>, <minecraft:clay_ball>, <ore:sand>],
+	[<ore:sand>, <ore:clay>, <ore:sand>],
 	[<ore:sand>, <ore:sand>, <ore:sand>]]);

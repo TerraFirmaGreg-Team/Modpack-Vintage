@@ -1,13 +1,17 @@
 {
-  "moon.triton": {
-    "energyToOpen": 0,
-    "keepAlive": 0
+  "the_end": {
+    "energyToOpen": 5529600,
+    "keepAlive": 2400
   },
   "moon.io": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "moon.titania": {
+  "moon.enceladus": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Jupiter Space Station": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -15,85 +19,7 @@
     "energyToOpen": 11059200,
     "keepAlive": 4800
   },
-  "the_nether": {
-    "energyToOpen": 3686400,
-    "keepAlive": 1600,
-    "group": "netherOv"
-  },
-  "moon.phobos": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.proxima_b": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.iapetus": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.venus": {
-    "energyToOpen": 12288000,
-    "keepAlive": 5334
-  },
-  "planet.Uranus": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.Ceres": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.kepler22b": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "emptiness": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.callisto": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.Saturn": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.Mercury": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.asteroids": {
-    "energyToOpen": 14745600,
-    "keepAlive": 6400
-  },
-  "moon.enceladus": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.barnarda_c": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.deimos": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "overworld": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "group": "netherOv"
-  },
-  "moon.moon": {
-    "energyToOpen": 7372800,
-    "keepAlive": 3200
-  },
-  "planet.tauceti_f": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.Jupiter": {
+  "moon.oberon": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -105,19 +31,25 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "moon.europa": {
+  "the_nether": {
+    "energyToOpen": 3686400,
+    "keepAlive": 1600,
+    "group": "netherOv"
+  },
+  "planet.Pluto": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "the_end": {
-    "energyToOpen": 5529600,
-    "keepAlive": 2400
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "group": "netherOv"
   },
-  "moon.rhea": {
+  "moon.miranda": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Space Station": {
+  "moon.triton": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -125,11 +57,59 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "planet.Eris": {
+  "planet.Uranus": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "moon.oberon": {
+  "planet.kepler22b": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.Saturn": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.phobos": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.asteroids": {
+    "energyToOpen": 14745600,
+    "keepAlive": 6400
+  },
+  "moon.moon": {
+    "energyToOpen": 7372800,
+    "keepAlive": 3200
+  },
+  "moon.rhea": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.venus": {
+    "energyToOpen": 12288000,
+    "keepAlive": 5334
+  },
+  "planet.Ceres": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.Jupiter": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.Mercury": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.proxima_b": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.barnarda_c": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Space Station": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -137,11 +117,31 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "moon.miranda": {
+  "moon.callisto": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "planet.Pluto": {
+  "moon.europa": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.tauceti_f": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.iapetus": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.deimos": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.Eris": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Pluto Space Station": {
     "energyToOpen": 0,
     "keepAlive": 0
   }

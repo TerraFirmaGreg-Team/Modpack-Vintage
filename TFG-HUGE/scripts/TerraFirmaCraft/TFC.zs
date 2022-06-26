@@ -16,8 +16,6 @@ import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
 
-val AllClays = <minecraft:clay_ball> | <tfcflorae:ceramics/earthenware/earthenware_clay> | <tfcflorae:ceramics/kaolinite/kaolinite_clay> | <tfcflorae:ceramics/stoneware/stoneware_clay>;
-
 val RemoveItemRecipesByName = [
   	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
@@ -461,7 +459,7 @@ recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
 // Огнеупорная глина
 recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
 	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>],
-	[<tfc:powder/graphite>, AllClays, <tfc:powder/graphite>],
+	[<tfc:powder/graphite>, <ore:clay>, <tfc:powder/graphite>],
 	[<tfc:powder/kaolinite>, <tfc:powder/graphite>, <tfc:powder/kaolinite>]]);
 
 // TFC Resin --> Sticky resin
@@ -1186,9 +1184,7 @@ for i, TFC_Saplings in TFC_Saplings {
 		.fluidInputs([<liquid:fresh_water> * 1000])
 		.outputs([TFC_Logs[i] * 16, TFC_Saplings])
 		.chancedOutput(TFC_Saplings, 5000, 0)
-		.duration(2000)
-		.EUt(80)
-		.buildAndRegister();
+		.duration(2000).EUt(80).buildAndRegister();
 
 	greenhouse.recipeBuilder()
 		.inputs([TFC_Saplings, <metaitem:fertilizer> * 4])
@@ -1196,9 +1192,7 @@ for i, TFC_Saplings in TFC_Saplings {
 		.fluidInputs([<liquid:distilled_water> * 1000])
 		.outputs([TFC_Logs[i] * 16, TFC_Saplings])
 		.chancedOutput(TFC_Saplings.withAmount(2), 5000, 0)
-		.duration(1500)
-		.EUt(80)
-		.buildAndRegister();
+		.duration(1500).EUt(80).buildAndRegister();
 
 }
 
@@ -1211,9 +1205,7 @@ for i, All_Seeds in All_Seeds {
 		.inputs([<metaitem:fertilizer> * 2])
 		.fluidInputs([<liquid:fresh_water> * 1000])
 		.outputs([All_Plants[i] * 2])
-		.duration(1500)
-		.EUt(80)
-		.buildAndRegister();
+		.duration(1500).EUt(80).buildAndRegister();
   
 	greenhouse.recipeBuilder()
 		.notConsumable([All_Seeds])
@@ -1222,9 +1214,7 @@ for i, All_Seeds in All_Seeds {
 		.fluidInputs([<liquid:distilled_water> * 1000])
 		.outputs([All_Plants[i] * 2])
 		.chancedOutput(All_Plants[i].withAmount(2), 7500, 0)
-		.duration(1000)
-		.EUt(80)
-		.buildAndRegister();
+		.duration(1000).EUt(80).buildAndRegister();
 }
 
 
@@ -1246,7 +1236,5 @@ for i, TFC_Logs in TFC_Logs {
 		.fluidInputs([<liquid:lubricant> * 1000])
 		.outputs([<metaitem:dustWood> * 48])
 		.outputs([<metaitem:dustSmallWood> * 32])
-		.duration(400)
-		.EUt(12)
-		.buildAndRegister();
+		.duration(400).EUt(12).buildAndRegister();
 }

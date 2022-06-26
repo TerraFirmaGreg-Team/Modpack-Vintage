@@ -182,63 +182,85 @@ StoneType.create(44, "tfc_slate", "oreSlate", <material:slate>, "tfc:raw/slate")
 // -- Galacticraft/GalaxySpace
 
 // - Mercury
-MaterialBuilder(32123, "mercury_stone").dust().color(0xC7FFFB).build();
+MaterialBuilder(32123, "stone_mercury").dust().color(0xC7FFFB).build();
 // val oreMercurystone as OrePrefix = OrePrefix.registerOrePrefix("oreMercurystone", 1);
 // oreMercurystone.addSecondaryMaterial(<material:mercurystone>, 1);
 // val blockState = "galaxyspace:mercuryblocks:type=mercury_stone";
 // StoneType.create(47, "gc_mercurystone", "oreMercurystone", <material:mercurystone>, blockState);
 
 // - Venus
-MaterialBuilder(32124, "venus_stone").dust().color(0xA86540).build();
+MaterialBuilder(32124, "stone_venus").dust().color(0xA86540).build();
 
 // - Moon
-MaterialBuilder(32125, "moon_stone").dust().color(0xFFFFFF).build();
+MaterialBuilder(32125, "stone_moon").dust().color(0xFFFFFF).build();
 
 // - Mars
-MaterialBuilder(32126, "mars_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32126, "stone_mars").dust().color(0xFF7A5C).build();
 
 // - Phobos
-MaterialBuilder(32127, "phobos_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32127, "stone_phobos").dust().color(0xFF7A5C).build();
+
+// - Deimos
+MaterialBuilder(32128, "stone_deimos").dust().color(0xFF7A5A).build();
 
 // - Ceres
-MaterialBuilder(32128, "ceres_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32129, "stone_ceres").dust().color(0xFF7A5C).build();
 
 // - Asteroids
-MaterialBuilder(32129, "asteroid_stone_black").dust().color(0x1C1C1C).build();
-MaterialBuilder(32130, "asteroid_stone_gray").dust().color(0x505050).build();
-MaterialBuilder(32131, "asteroid_stone_lightgray").dust().color(0xBBBBBB).build();
+MaterialBuilder(32130, "stone_asteroid_black").dust().color(0x1C1C1C).build();
+MaterialBuilder(32131, "stone_asteroid_gray").dust().color(0x505050).build();
+MaterialBuilder(32132, "stone_asteroid_lightgray").dust().color(0xBBBBBB).build();
+
+// - Jupiter
+MaterialBuilder(32133, "stone_jupiter").dust().color(0xFF7A5C).build();
 
 // - IO
-MaterialBuilder(32132, "io_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32134, "stone_io").dust().color(0xFF7A5C).build();
 
 // - Europa
-MaterialBuilder(32133, "europa_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32135, "stone_europa").dust().color(0xFF7A5C).build();
 
-// - Ganumede
-MaterialBuilder(32134, "ganumede").dust().color(0xFF7A5C).build();
+// - Ganymede
+MaterialBuilder(32136, "stone_ganymede").dust().color(0xFF7A5C).build();
 
 // - Callisto
-MaterialBuilder(32135, "callisto").dust().color(0xFF7A5C).build();
+MaterialBuilder(32137, "stone_callisto").dust().color(0xFF7A5C).build();
 
-// - Enceladus
-MaterialBuilder(32136, "enceladus_stone").dust().color(0xFF7A5C).build();
+// - Saturn
+MaterialBuilder(32138, "stone_saturn").dust().color(0xFF7A5C).build();
+
+// - Rhea
+MaterialBuilder(32139, "stone_rhea").dust().color(0xFF7A5C).build();
 
 // - Titan
-MaterialBuilder(32137, "titan_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32140, "stone_titan").dust().color(0xFF7A5C).build();
 
-// - Miranda
-MaterialBuilder(32138, "miranda_stone").dust().color(0xFF7A5C).build();
+// - Iapetus
+MaterialBuilder(32141, "stone_iapetus").dust().color(0xFF7A5C).build();
+
+// - Uranus
+MaterialBuilder(32142, "stone_uranus").dust().color(0xFF7A5C).build();
+
+// - Oberon
+MaterialBuilder(32143, "stone_oberon").dust().color(0xFF7A5C).build();
+
+// - Neptune
+MaterialBuilder(32144, "stone_neptune").dust().color(0xFF7A5C).build();
 
 // - Triton
-MaterialBuilder(32139, "triton_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32145, "stone_triton").dust().color(0xFF7A5C).build();
 
 // - Pluto
-MaterialBuilder(32140, "pluto_stone").dust().color(0xFF7A5C).build();
+MaterialBuilder(32146, "stone_pluto").dust().color(0xFF7A5C).build();
 
-// - Kuiper Belt
-MaterialBuilder(32141, "kuiperbelt_stone").dust().color(0xFF7A5C).build();
+// - Eris
+MaterialBuilder(32147, "stone_eris").dust().color(0xFF7A5C).build();
 
-// - Haumea
-MaterialBuilder(32142, "haumea_stone").dust().color(0xFF7A5C).build();
+// - Proxima B
+MaterialBuilder(32148, "stone_proxima_b").dust().color(0xFF7A5C).build();
 
-// - ...
+// - Tauceti F
+MaterialBuilder(32149, "stone_tauceti_f").dust().color(0xFF7A5C).build();
+
+// - Barnarda C
+MaterialBuilder(32150, "stone_barnarda_c").dust().color(0xFF7A5C).build();

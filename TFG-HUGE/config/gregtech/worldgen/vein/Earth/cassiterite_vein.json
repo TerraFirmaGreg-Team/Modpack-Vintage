@@ -1,5 +1,6 @@
 {
-  "weight": 70,
+  "name" : "Earth Cassiterite",
+  "weight": 90,
   "density": 0.2,
   "max_height": 220,
   "min_height": 75,

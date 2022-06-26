@@ -1,0 +1,18 @@
+{
+	x: -22.5d,
+	y: 9.0d,
+	dependencies: [
+		"2816fe72",
+		"6df7dbf0"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "78e2a488",
+		type: "item",
+		items: [{
+			item: "hotornot:mitts"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

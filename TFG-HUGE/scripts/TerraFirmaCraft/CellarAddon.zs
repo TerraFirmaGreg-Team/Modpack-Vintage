@@ -14,9 +14,33 @@ val RemoveItemsFromAnvil as IItemStack[] = [
     <cellars:blue_steel_ice_saw_head>
 ] as IItemStack[];
 
+val RemoveWorkbenchRecipes as IItemStack[] = [
+    <cellars:cellar_wall>,
+    <cellars:cellar_door>
+] as IItemStack[];
+
 // --- Удаление рецептов
 
 // Удаление рецептов наковальни
 for item in RemoveItemsFromAnvil{
     Anvil.removeRecipe(item);
 }
+
+// Удаление рецептов верстака
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
+
+// --- Добавление рецептов
+
+// Стенка подвала
+recipes.addShaped("tfg/cellars/cellar_wall", <cellars:cellar_wall>, [
+    [<ore:lumber>, <ore:straw>, <ore:lumber>],
+    [<ore:clay>, null, <ore:clay>],
+    [<ore:lumber>, <ore:straw>, <ore:lumber>]]);
+
+// Дверь подвала
+recipes.addShaped("tfg/cellars/cellar_door", <cellars:cellar_door>, [
+    [<ore:lumber>, <ore:clay>, <ore:lumber>],
+    [<ore:lumber>, <ore:straw>, <ore:lumber>],
+    [<ore:lumber>, <ore:clay>, <ore:lumber>]]);

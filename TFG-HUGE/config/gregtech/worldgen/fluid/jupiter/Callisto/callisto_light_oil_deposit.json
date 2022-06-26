@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Callisto Light Oil Deposit",
+  "yield": {
+    "min": 5,
+    "max": 27
+  },
+  "dimension_filter": [
+    "dimension_id:-1505"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "oil_light"
+}

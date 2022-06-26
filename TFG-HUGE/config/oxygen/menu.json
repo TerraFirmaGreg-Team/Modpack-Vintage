@@ -1,0 +1,7 @@
+{
+  "version": "0.11.1:beta:0",
+  "client": {
+    "enable_oxygen_menu_key": true,
+    "oxygen_menu_key": 15
+  }
+}

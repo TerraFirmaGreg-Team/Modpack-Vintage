@@ -1,4 +1,5 @@
 {
+  "name" : "Earth Glowstone",
   "weight": 60,
   "density": 0.2,
   "max_height": 125,

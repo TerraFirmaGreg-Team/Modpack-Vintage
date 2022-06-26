@@ -1,0 +1,35 @@
+{
+    "name": "Rhea Desh",
+    "weight": 30,
+    "density": 0.25,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:rhea:2"],
+    "dimension_filter": [
+      "dimension_id:-1507"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "block:galacticraftplanets:mars:8"
+        },
+        {
+          "secondary": "block:galacticraftplanets:mars:8"
+        },
+        {
+          "between": "ore:scheelite"
+        },
+        {
+          "sporadic": "ore:tungstate"
+        }
+      ]
+    }
+}

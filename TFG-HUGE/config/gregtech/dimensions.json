@@ -1,11 +1,11 @@
 {
   "dims": [
     {
-      "dimID": -1005,
+      "dimID": -13,
       "dimName": "Mercury"
     },
     {
-      "dimID": -1006,
+      "dimID": -31,
       "dimName": "Venus"
     },
     {
@@ -113,7 +113,7 @@
       "dimName": "Eris"
     },
     {
-      "dimID": -18,
+      "dimID": -1023,
       "dimName": "Haumea"
     },
     {

@@ -25,6 +25,9 @@ JEI.removeAndHide(<base:wrench>);
 // HammerCore
 JEI.removeAndHide(<hammercore:manual>);
 
+// OpenComputers
+JEI.removeAndHide(<opencomputers:disassembler>);
+
 val AE2WTLib as IItemStack[] = [
 	<wpt:wpt_creative>,
 	<wit:wit_creative>,
@@ -281,7 +284,8 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftcore:schematic>,
 	<galacticraftcore:schematic:1>,
 	<galacticraftplanets:schematic:1>,
-	<galacticraftplanets:schematic:2>
+	<galacticraftplanets:schematic:2>,
+	<galacticraftplanets:telepad_short>
 ] as IItemStack[];
 for item in Galacticraft {
     JEI.removeAndHide(item);
@@ -2096,13 +2100,6 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:titan:7>,
 	<extraplanets:titan:8>,
 	<extraplanets:titan_gravel>,
-	<extraplanets:titania>,
-	<extraplanets:titania:1>,
-	<extraplanets:titania:2>,
-	<extraplanets:titania:3>,
-	<extraplanets:titania:4>,
-	<extraplanets:titania:5>,
-	<extraplanets:titania_gravel>,
 	<extraplanets:tools>,
 	<extraplanets:tools:1>,
 	<extraplanets:tools:2>,
@@ -2190,7 +2187,8 @@ val GTFO as IItemStack[] = [
 	<metaitem:component.dough>,
 	<metaitem:component.flat_dough>,
 	<metaitem:component.bread>,
-	<metaitem:wooden_form.bread>
+	<metaitem:wooden_form.bread>,
+	<metaitem:component.sugary_dough>
 ];
 for item in GTFO {
     JEI.removeAndHide(item);
@@ -2230,15 +2228,5 @@ val Aunis as IItemStack[] = [
 	<aunis:naquadah_alloy>
 ];
 for item in Aunis {
-    JEI.removeAndHide(item);
-}
-
-val RFTools as IItemStack[] = [
-	<rftoolscontrol:graphics_card>,
-	<rftoolscontrol:network_card>,
-	<rftoolscontrol:ram_chip>,
-	<rftoolscontrol:advanced_network_card>
-];
-for item in RFTools {
     JEI.removeAndHide(item);
 }
