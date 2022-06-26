@@ -61,6 +61,15 @@ recipes.removeByRecipeName("extraplanets:ice");
 <contenttweaker:rocketparts_tier9>.addTooltip("Tier 9");
 <contenttweaker:rocketparts_tier10>.addTooltip("Tier 10");
 
+// Ядерная бомба
+assembler.recipeBuilder()
+   .inputs(<metaitem:neutron_reflector> * 4, <metaitem:plateSteel> * 32, <metaitem:dustPlutonium> * 16, <metaitem:dustUranium235> * 16, <ore:circuitLuv> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 288])
+   .outputs(<extraplanets:nuclear_bomb>)
+   .duration(7000)
+   .EUt(960)
+   .buildAndRegister();
+
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
    .inputs(<galacticraftcore:landing_pad> * 3, <ore:plateDenseTitanium> * 6)
