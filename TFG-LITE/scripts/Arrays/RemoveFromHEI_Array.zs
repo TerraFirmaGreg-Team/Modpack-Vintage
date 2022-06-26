@@ -25,6 +25,9 @@ JEI.removeAndHide(<base:wrench>);
 // HammerCore
 JEI.removeAndHide(<hammercore:manual>);
 
+// OpenComputers
+JEI.removeAndHide(<opencomputers:disassembler>);
+
 val AE2WTLib as IItemStack[] = [
 	<wpt:wpt_creative>,
 	<wit:wit_creative>,
@@ -2225,15 +2228,5 @@ val Aunis as IItemStack[] = [
 	<aunis:naquadah_alloy>
 ];
 for item in Aunis {
-    JEI.removeAndHide(item);
-}
-
-val RFTools as IItemStack[] = [
-	<rftoolscontrol:graphics_card>,
-	<rftoolscontrol:network_card>,
-	<rftoolscontrol:ram_chip>,
-	<rftoolscontrol:advanced_network_card>
-];
-for item in RFTools {
     JEI.removeAndHide(item);
 }
