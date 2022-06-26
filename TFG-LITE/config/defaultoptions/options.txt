@@ -4,8 +4,8 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:8
-guiScale:4
+renderDistance:13
+guiScale:2
 particles:0
 bobView:true
 anaglyph3d:false
@@ -15,7 +15,7 @@ difficulty:0
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["MinecraftFont.zip"]
+resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -27,7 +27,7 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:false
-useVbo:true
+useVbo:false
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
@@ -45,11 +45,11 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:1
+attackIndicator:2
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:false
+autoJump:true
 narrator:0
 tutorialStep:none
 soundCategory_master:0.0
