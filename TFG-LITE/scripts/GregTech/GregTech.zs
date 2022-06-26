@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.ItemRegistry;
+import mods.gregtech.TerminalRegistry;
 
 // --- Массивы
 
@@ -911,3 +912,10 @@ assembler.recipeBuilder()
     .circuit(1)
     .outputs(<metaitem:crate.wood>)
     .duration(100).EUt(16).buildAndRegister();
+
+// Телепорт
+TerminalRegistry.registerDevice(<charset:icon>.firstItem, "disabled");
+TerminalRegistry.createAppRegistryBuilder("teleport")
+    .isDefaultApp(false)
+    .device(0, "disabled")
+    .build();
