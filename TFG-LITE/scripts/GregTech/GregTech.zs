@@ -918,4 +918,5 @@ TerminalRegistry.registerDevice(<charset:icon>, "disabled");
 TerminalRegistry.createAppRegistryBuilder("teleport")
     .isDefaultApp(false)
     .device(0, "disabled")
+    .upgrade(<charset:icon>)
     .build();
