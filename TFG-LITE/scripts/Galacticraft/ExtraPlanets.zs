@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 // --- Массивы
 
 val RemoveItemRecipe as IItemStack[] = [
+   <extraplanets:nuclear_bomb>,
 	<extraplanets:advanced_launch_pad>,
 	<extraplanets:advanced_launch_pad:1>,
 	<extraplanets:advanced_launch_pad:3>,
