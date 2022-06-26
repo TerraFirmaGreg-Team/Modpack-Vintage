@@ -335,6 +335,13 @@ recipes.addShaped("tfg/gc/atom_battery", <galacticraftplanets:atomic_battery>, [
    [null, <galacticraftplanets:basic_item_venus:2>, null],
    [null, <metaitem:large_fluid_cell.tungstensteel>, null]]);
 
+// Площадка телепортации
+recipes.addShaped("tfg/gc/telepad_short", <galacticraftplanets:telepad_short>, [
+   [<ore:plateDoubleTrinaquadalloy>, <ore:circuitIv>, <ore:plateDoubleTrinaquadalloy>],
+   [<metaitem:magic_energy_absorber>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:magic_energy_absorber>],
+   [<ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>]]);
+
+
 // Спасательная коробка
 recipes.addShaped("tfg/gc/emergency_box", <galacticraftcore:emergency_box>, [
    [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
