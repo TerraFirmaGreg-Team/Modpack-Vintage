@@ -1,5 +1,82 @@
 # Changelog
 
+## Version R3.4.0 - Expected 06/26/2022
+#### [Lite, Huge]
+### Modpack fixes
+* Added a recipe for tablets in the workbench.
+* It seems that all GTFO recipes have been rewritten, but I'm not sure.
+* Fixed conflicting recipe for gravel.
+* Fixed recipe for fermented spider eye.
+* Added nutritional units for rabbit soup, beetroot soup, mushroom soup.
+* Added generation of ores on all planets and satellites, except for gas giants.
+* Added some recipes for food items from FirmaLife in GT cars.
+* Disabled hell, once and for all.
+* Added rock dust for all planets and added their processing.
+* Added processing for any liquids that are on the planets GS / EP.
+* Fixed EP nuclear bomb recipe.
+* Removed the recipe for very dense ice in the workbench from the EP.
+* Optimized planetary dust recycling recipes.
+* Added names for earth veins.
+* Removed endovskie and infernal ores.
+* Reduced chance of spawning at the Berrilius vein.
+* Increased chance of spawning at the vein of Cassiterite.
+* Increased the spawn rate at the Black Granite vein.
+* Increased spawn chance at the Red Granite vein.
+* Reduced chance of spawning at a vein of Cassiterite sand.
+* Increased the chance of spawning at Miki's vein.
+* Increased the spawn chance at the Molybdenum vein, but reduced the density of the vein.
+* Reduced the chance of spawning at the vein of Monazite, also reduced its density.
+* Greatly reduced the spawn chance of Naquadah vein, reduced the size of the vein, reduced the density, now can only spawn in Metamorphic breed.
+* Other not very important corrections of cores (density and size).
+* Fixed Lemon Extract recipe.
+* Fixed recipe for Cassia Fence/Fence Gate and Cinnamon Fence.
+* Added new Dry Ice material.
+* Added metal units for double platinum plate.
+* Added generation of liquid veins on some planets (which are logically possible).
+* Optimized code related to puddles.
+* Optimized scripts.
+* Fixed incorrect grill interface.
+* The wall and door recipe from CellarsAddon now accepts any clay.
+* Now the primitive pump pumps not vanilla water, but salty water.
+* The cauldron is now even more cauldron, now you can pour any liquid into it and clean dirty dust from GTCEu.
+* Removed Little Storage Block recipe.
+* Added HotOrNotTFC, now items are too hot, can not be worn with bare hands, quests have also been added, for items from the mod.
+* Armor will now pull you down! Be careful swimming in rivers, oceans and beaches! Use charms, potions, or trinkets to keep you afloat!
+* Now it will be possible to sand logs, to do this, hold down shift + right-click with an ax in your hands, the same can be done by putting a log and an ax in the crafting cell.
+* Fixed the translation key for the star forge.
+* Disabled the ability to put backpacks in the belt.
+* Disabled inventory HUD by default.
+* Disabled teleport in the GT terminal, it can no longer be used.
+* Reduced the weight of images for the loading screen.
+* Adjusted 3D model icons for HEI.
+* Completely removed RFTools and RFTools Control [Unofficial Maintance], a decision was made to abandon it in favor of OpenComputers.
+* Added OpenComputers and rewritten crafts for it.
+* Return of MovingElevators.
+* On Kepler22b, the generation of candies, lollipops and diamond blocks is disabled.
+### Update mods
+* Xaeros Minimap
+* Xaeros World Map
+* TFG mod
+### New mods
+* Sink
+* Supermartijn642configlib
+* Supermartijn642corelib
+* Moving elevators
+* Hesperus
+* Performant
+* OpenComputers
+* HotOrNotTFC
+* FpsReducer
+* Debark
+* dan's CraftingTweaks
+* Charset-Crafting
+### Removing mods
+* RFTools
+* RFTools Control [Unofficial Maintance]
+* mcjtylib
+* CraftingTweaks
+* Phospor
+
 ## Version R3.3.6 - 06.20.2022
 #### [Lite, Huge]
 ### Modpack fixes
