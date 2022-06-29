@@ -145,6 +145,74 @@ customization {
 }
 
 customization {
+  orientation = top-left
+  hidden = true
+  x = 510
+  width = 260
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 936972a1-db27-4585-94f4-a126c0dd21c51656498175944
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 163
+  action = deep_customization_element:title_screen_branding
+  actionid = b95c3000-daec-40db-94d8-ad0e1febdbba1656498175951
+  y = 322
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 1057
+  width = 222
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = a76f232f-16bd-4a14-87e7-4e3d552b576e1656498175951
+  y = 665
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 743
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = d8f6f693-0c95-4ca8-be0e-aedbf2df9f401656498175952
+  y = 271
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 503
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 66b44c61-9c74-481b-883f-06178fa43b6d1656498175953
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 1e733c25-c89a-4942-aa88-efdb98c0044a1656498175954
+  y = 0
+  height = 30
+}
+
+customization {
   showname = false
   orientation = top-left
   skinpath = resources/modpack/skins/xikaro.png
@@ -195,7 +263,7 @@ customization {
   width = 321
   actionid = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
   action = addtexture
-  y = 39
+  y = 44
   height = 122
 }
 
