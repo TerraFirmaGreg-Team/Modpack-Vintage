@@ -1,23 +1,6 @@
 {
 	title: "{tfg.quests.primitive.tin.title}",
-	icon: {
-		id: "gregtech:meta_dust_small",
-		Damage: 264s,
-		ForgeCaps: {
-			"tfc:item_forge": {
-				ticks: -1L,
-				heat: 0.0f,
-				forge: {
-					work: 0,
-					steps: {
-						last: -1,
-						second: -1,
-						third: -1
-					}
-				}
-			}
-		}
-	},
+	icon: "gregtech:meta_dust_small 1 264",
 	x: -12.0d,
 	y: -3.0d,
 	shape: "diamond",
@@ -30,166 +13,31 @@
 		uid: "92f4b7cf",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_ore_chunk",
-			Damage: 264s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_ore_chunk 1 264"
 		},
 		{
-			id: "gregtech:meta_ore_chunk",
-			Damage: 263s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_ore_chunk 1 263"
 		},
 		{
-			id: "gregtech:meta_ore_chunk",
-			Damage: 112s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_ore_chunk 1 112"
 		},
 		{
-			id: "gregtech:meta_dust_tiny",
-			Damage: 264s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_tiny 1 264"
 		},
 		{
-			id: "gregtech:meta_dust_tiny",
-			Damage: 263s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_tiny 1 263"
 		},
 		{
-			id: "gregtech:meta_dust_tiny",
-			Damage: 112s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_tiny 1 112"
 		},
 		{
-			id: "gregtech:meta_dust_small",
-			Damage: 264s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_small 1 264"
 		},
 		{
-			id: "gregtech:meta_dust_small",
-			Damage: 263s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_small 1 263"
 		},
 		{
-			id: "gregtech:meta_dust_small",
-			Damage: 112s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
+			item: "gregtech:meta_dust_small 1 112"
 		}]
 	}]
 }
