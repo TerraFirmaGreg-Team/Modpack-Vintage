@@ -99,6 +99,7 @@ for item in RemoveItemRecipe{
 furnace.remove(<galacticraftcore:item_basic_moon>);
 furnace.remove(<galacticraftcore:basic_item:4>);
 furnace.remove(<galacticraftplanets:item_basic_mars:2>);
+furnace.remove(<galacticraftplanets:carbon_fragments>);
 
 // Именованное удаление
 recipes.removeByRecipeName("galacticraftcore:slime_ball");

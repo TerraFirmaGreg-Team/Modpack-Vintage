@@ -343,8 +343,8 @@ assembler.findRecipe(16, [<metaitem:boltDiamond>, <metaitem:gearIron>, <metaitem
 // Котёл
 assembler.findRecipe(4, [<metaitem:plateIron> * 7, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
-// Компал
-assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4], null).remove();
+// Компас
+assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Нажимная пластина из железа
 assembler.findRecipe(16, [<metaitem:springSteel>, <metaitem:plateIron>], null).remove();
@@ -662,13 +662,13 @@ centrifuge.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:slabStonePolished>, <minecraft:stick> * 6)
     .outputs(<minecraft:armor_stand>)
-    .duration(300).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Воронка
 assembler.recipeBuilder()
     .inputs(<ore:chest>, <ore:plateIronAny> * 5)
     .outputs(<minecraft:hopper>)
-    .duration(400).EUt(2).buildAndRegister();
+    .duration(100).EUt(2).buildAndRegister();
 
 // Базальтовый камень
 compressor.recipeBuilder()
@@ -707,7 +707,7 @@ macerator.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:stickWood> * 2, <ore:ringIronAny> * 2)
     .outputs(<minecraft:tripwire_hook>)
-    .duration(400).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Проигрыватель
 assembler.recipeBuilder()
@@ -720,50 +720,50 @@ assembler.recipeBuilder()
     .inputs(<ore:cobblestone>, <ore:slabWood>, <ore:gearSmallIronAny>, <ore:stickIronAny>)
     .fluidInputs([<liquid:red_alloy> * 144])
     .outputs(<minecraft:piston>)
-    .duration(240).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Котёл
 assembler.recipeBuilder()
     .inputs(<ore:plateIronAny> * 7)
     .circuit(7)
     .outputs(<minecraft:cauldron>)
-    .duration(700).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Компас
 assembler.recipeBuilder()
     .inputs(<metaitem:stickIronMagnetic>, <ore:plateIronAny> * 4)
     .outputs(<minecraft:compass>)
-    .duration(400).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Нажимная пластина из железа
 assembler.recipeBuilder()
     .inputs(<metaitem:springSteel>, <ore:plateIronAny>)
     .outputs(<minecraft:heavy_weighted_pressure_plate>)
-    .duration(200).EUt(16).buildAndRegister();
+    .duration(100).EUt(16).buildAndRegister();
 
 // Вагонетка
 assembler.recipeBuilder()
     .inputs(<ore:plateIronAny> * 3, <ore:ringIronAny> * 4)
     .outputs(<minecraft:minecart>)
-    .duration(200).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Железные прутья
 assembler.recipeBuilder()
     .inputs(<ore:stickIronAny> * 3)
     .circuit(3)
     .outputs(<minecraft:iron_bars> * 4)
-    .duration(300).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Железная дверь
 assembler.recipeBuilder()
     .inputs(<minecraft:iron_bars>, <ore:plateIronAny> * 4)
     .fluidInputs([<liquid:steel> * 16])
     .outputs(<minecraft:iron_door>)
-    .duration(400).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Ведро
 bender.recipeBuilder()
     .inputs(<metaitem:plateBlueSteel> * 3)
     .circuit(12)
     .outputs(<minecraft:bucket>)
-    .duration(400).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();

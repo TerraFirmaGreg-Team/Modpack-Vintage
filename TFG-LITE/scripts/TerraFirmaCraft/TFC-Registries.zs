@@ -60,17 +60,6 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 28
 ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 288, true);
 ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, true);
 
-// --- Регистрация металлов для щипцов
-ItemRegistry.registerItemMetal(<hotornot:copper_tongs>, "COPPER", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:bismuth_bronze_tongs>, "BISMUTH", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:black_bronze_tongs>, "BLACK_BRONZE", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:bronze_tongs>, "BRONZE", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:wrought_iron_tongs>, "WROUGHT_IRON", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:steel_tongs>, "STEEL", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:black_steel_tongs>, "BLACK_STEEL", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:blue_steel_tongs>, "BLUE_STEEL", 288, true);
-ItemRegistry.registerItemMetal(<hotornot:red_steel_tongs>, "RED_STEEL", 288, true);
-
 // ---//--- Вариации Меди
 
 val oreChunkUnits = 36;
