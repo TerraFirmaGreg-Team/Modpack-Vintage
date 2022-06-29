@@ -1,0 +1,92 @@
+# GTCEu
+
+# Локализация материалов
+material.breccia=Breccia
+material.catlinite=Catlinite
+material.chalk=Chalk
+material.chert=Chert
+material.claystone=Claystone
+material.conglomerate=Conglomerate
+material.dacite=Dacite
+material.dolomite=Dolomite
+material.gabbro=Gabbro
+material.gneiss=Gneiss
+material.komatiite=Komatiite
+material.limestone=Limestone
+material.mudstone=Mudstone
+material.novaculite=Novaculite
+material.peridotite=Peridotite
+material.phyllite=Phyllite
+material.porphyry=Porphyry
+material.quartzite=Quartzite
+material.rhyolite=Rhyolite
+material.rocksalt=Rocksalt
+material.sandstone=Sandstone
+material.schist=Schist
+material.shale=Shale
+material.siltstone=Siltstone
+material.slate=Slate
+material.soapstone=Soapstone
+
+material.mercury_air=Воздух Меркурия
+material.mercury_liquid_air=Жидкий воздух Меркурия
+material.venus_air=Воздух Венеры
+material.venus_liquid_air=Жидкий воздух Венеры
+material.moon_air=Воздух Луны
+material.moon_liquid_air=Жидкий воздух Луны
+material.mars_air=Воздух Марса
+material.mars_liquid_air=Жидкий воздух Марса
+material.jupiter_air=Воздух Юпитера
+material.jupiter_liquid_air=Жидкий воздух Юпитера
+material.io_air=Воздух ИО
+material.io_liquid_air=Жидкий воздух ИО
+material.europa_air=Воздух Европы
+material.europa_liquid_air=Жидкий воздух Европы
+material.callisto_air=Воздух Каллисто
+material.callisto_liquid_air=Жидкий воздух Каллисто
+material.saturn_air=Воздух Сатурна
+material.saturn_liquid_air=Жидкий воздух Сатурна
+material.titan_air=Воздух Титана
+material.titan_liquid_air=Жидкий воздух Титана
+material.uranus_air=Воздух Урана
+material.uranus_liquid_air=Жидкий воздух Урана
+material.neptune_air=Воздух Нептуна
+material.neptune_liquid_air=Жидкий воздух Нептуна
+material.triton_air=Воздух Тритона
+material.triton_liquid_air=Жидкий воздух Тритона
+material.pluto_air=Воздух Плутона
+material.pluto_liquid_air=Жидкий воздух Плутона
+
+# Локализация руды
+item.material.oreprefix.oreBreccia=%s (Брекчиевая руда)
+item.material.oreprefix.oreCatlinite=%s (Катлинитовая руда)
+item.material.oreprefix.oreChalk=%s (Меловая руда)
+item.material.oreprefix.oreChert=%s (Кремнистый известняк руда)
+item.material.oreprefix.oreClaystone=%s (Аргиллитовая руда)
+item.material.oreprefix.oreConglomerate=%s (Конгломератовая руда)
+item.material.oreprefix.oreDacite=%s (Дацитовая руда)
+item.material.oreprefix.oreDolomite=%s (Доломитовая руда)
+item.material.oreprefix.oreGabbro=%s (Габбровая руда)
+item.material.oreprefix.oreGneiss=%s (Гнейсовая руда)
+item.material.oreprefix.oreKomatiite=%s (Коматиитовая руда)
+item.material.oreprefix.oreLimestone=%s (Известняковая руда)
+item.material.oreprefix.oreMudstone=%s (Грязнокаменная руда)
+item.material.oreprefix.oreNovaculite=%s (Новакулитовая руда)
+item.material.oreprefix.orePeridotite=%s (Перидотитовая руда)
+item.material.oreprefix.orePhyllite=%s (Филлитовая руда)
+item.material.oreprefix.orePorphyry=%s (Порфировая руда)
+item.material.oreprefix.oreQuartzite=%s (Кварцитовая руда)
+item.material.oreprefix.oreRhyolite=%s (Риолитовая руда)
+item.material.oreprefix.oreRocksalt=%s (Каменно-соленая руда)
+item.material.oreprefix.oreSandstone=%s (Песченная руда)
+item.material.oreprefix.oreSchist=%s (Аспидно сланцевая руда)
+item.material.oreprefix.oreShale=%s (Сланцевая руда)
+item.material.oreprefix.oreSiltstone=%s (Алевролитовая руда)
+item.material.oreprefix.oreSlate=%s (Шиферная руда)
+item.material.oreprefix.oreSoapstone=%s (Мыльно-каменная руда)
+
+# Локализация кусков руды
+item.material.oreprefix.oreChunk=%s (Кусок руды)
+
+# Локализация ножей
+item.material.oreprefix.toolHeadKnife=%s (Оголовье ножа)
