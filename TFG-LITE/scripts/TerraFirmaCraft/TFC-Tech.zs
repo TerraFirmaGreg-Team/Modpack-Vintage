@@ -192,8 +192,6 @@ ItemRegistry.registerItemMetal(<tfctech:metal/steel_blowpipe>, "STEEL", 144, tru
 ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_blowpipe>, "BLACK_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_blowpipe>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_blowpipe>, "RED_STEEL", 144, true);
-// Tongs
-ItemRegistry.registerItemMetal(<tfctech:metal/iron_tongs>, "WROUGHT_IRON", 144, true);
 // Inductor
 ItemRegistry.registerItemMetal(<tfctech:metal/copper_inductor>, "COPPER", 288, true);
 // Sleeves
@@ -314,9 +312,6 @@ Anvil.addRecipe("tfg:tfctech/iron_draw_plate", <ore:ingotWroughtIron>, <tfctech:
 Anvil.addRecipe("tfg:tfctech/steel_draw_plate", <ore:ingotSteel>, <tfctech:metal/steel_draw_plate>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "HIT_ANY");
 Anvil.addRecipe("tfg:tfctech/black_steel_draw_plate", <ore:ingotBlackSteel>, <tfctech:metal/black_steel_draw_plate>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "HIT_ANY");
 
-// Tongs
-Anvil.addRecipe("tfg:tfctech/tongs", <ore:ingotWroughtIron>, <tfctech:metal/iron_tongs>, 3, "general", "HIT_LAST", "DRAW_SECOND_LAST", "BEND_THIRD_LAST");
-
 // Bowl Mount
 Anvil.addRecipe("tfg:tfctech/bowl_mount", <ore:ingotWroughtIron>, <tfctech:metal/iron_bowl_mount>, 3, "general", "BEND_LAST", "DRAW_SECOND_LAST", "BEND_NOT_LAST");
 
@@ -335,9 +330,9 @@ recipes.addShaped("tfg/tfctech/fridge", <tfctech:fridge>, [
 
 // Winch
 recipes.addShaped("tfg/tfctech/winch", <tfctech:wiredraw/winch>, [
-    [<ore:stickWroughtIron>, null, <ore:stickWroughtIron>],
-    [null, <ore:stickLongWroughtIron>, null],
-    [<ore:stickWroughtIron>, null, <ore:stickWroughtIron>]]);
+    [<ore:stickIronAny>, null, <ore:stickIronAny>],
+    [null, <ore:stickIronAny>, null],
+    [<ore:stickIronAny>, null, <ore:stickIronAny>]]);
 
 // Медный индуктор
 recipes.addShaped("tfg/tfctech/copper_inductor", <tfctech:metal/copper_inductor>, [
@@ -371,6 +366,6 @@ recipes.addShaped("tfg/tfctech/smeltery_firebox", <tfctech:smeltery_firebox>, [
 
 // Wire Draw Bench
 recipes.addShaped("tfg/tfctech/wire_draw_bench", <tfctech:wire_draw_bench>, [
-    [<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <tfctech:metal/iron_tongs>],
+    [<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <ore:gtce.tool.tongs>],
     [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
     [<ore:plateWroughtIron>, null, <ore:plateWroughtIron>]]);

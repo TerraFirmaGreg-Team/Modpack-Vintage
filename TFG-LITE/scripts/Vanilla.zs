@@ -30,7 +30,8 @@ val RemoveItemRecipesByName = [
 val ItemsToRemoveFromFurnace as IItemStack[] = [
     <minecraft:dye:2>,
     <minecraft:stone>,
-    <minecraft:gold_nugget>
+    <minecraft:gold_nugget>,
+    <minecraft:netherbrick>
 ] as IItemStack[];
 
 // --- Удаление рецептов
@@ -370,6 +371,38 @@ macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
 // Fermented Spider Eye
 mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
+
+// Red Nether Brick
+alloy_smelter.findRecipe(4, [<minecraft:netherbrick:0> * 2, <minecraft:nether_wart:0> * 2], null).remove();
+
+// Nether Wart Block
+packer.findRecipe(2, [<minecraft:nether_wart:0> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
+
+// Nether Brick
+alloy_smelter.findRecipe(2, [<metaitem:dustNetherrack>, <metaitem:shape.mold.ingot>], null).remove();
+extractor.findRecipe(2, [<minecraft:nether_brick:0>], null).remove();
+
+// Nether Brick Slab
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:lubricant>]).remove();
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:distilled_water> * 3]).remove();
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:water> * 4]).remove();
+
+// Lava * 250
+extractor.findRecipe(140, [<minecraft:netherrack:0>], null).remove();
+
+// Netherrack Dust
+macerator.findRecipe(2, [<minecraft:netherrack:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:nether_brick_stairs:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:stone_slab:6>], null).remove();
+
+// Nether Brick
+compressor.findRecipe(2, [<minecraft:netherbrick:0> * 4], null).remove();
+
+// Nether Brick Fence
+assembler.findRecipe(4, [<minecraft:nether_brick:0>, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+
+// Nether Brick Stairs
+assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
 // --- Добавление рецептов
 

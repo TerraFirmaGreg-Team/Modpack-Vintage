@@ -465,7 +465,7 @@ recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
 // TFC Resin --> Sticky resin
 furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 
-// Рецепты для всех сырых камней
+// Сырой камень -> Сырой камень
 for item in TFC_Raws {
     rock_breaker.recipeBuilder()
     	.notConsumable(item)
@@ -626,6 +626,63 @@ for i, TFC_Stone_Buttons in TFC_Stone_Buttons {
 		.fluidInputs([<liquid:lubricant> * 1])
     	.outputs(TFC_Stone_Buttons * 12)
     	.duration(200).EUt(7).buildAndRegister();
+}
+
+// 
+for i, GT_Dusts_For_Raw_Stones in GT_Dusts_For_Raw_Stones {
+    // Raw Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raws[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Raw Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raw_Stairs[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Raw Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raw_Slabs[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Smooths[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Stairs_Smooth[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Slabs_Smooth[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Cobbles[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Stairs_Cobble[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Slabs_Cobble[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
 }
 
 // Дерево -> Пиломатериалы

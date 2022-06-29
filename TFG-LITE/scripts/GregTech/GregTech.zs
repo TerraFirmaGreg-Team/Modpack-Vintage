@@ -314,6 +314,9 @@ distillation_tower.findRecipe(7680, null, [<liquid:liquid_ender_air> * 200000]).
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
 rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 
+// Nether Dust decomp
+centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металлов
@@ -718,7 +721,7 @@ electrolyzer.recipeBuilder()
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond>, <ore:dustIridium>])
-    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
+    .fluidInputs([<liquid:mars_air> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 2])
     .duration(200).EUt(7680).buildAndRegister();
 chemical_reactor.recipeBuilder()

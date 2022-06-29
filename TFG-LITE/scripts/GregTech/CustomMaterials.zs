@@ -36,9 +36,10 @@ import mods.gregtech.material.Material;
 // Other
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:copper>.addTools(7, 1, 85);
-<material:red_steel>.addFlags("generate_long_rod");
-<material:blue_steel>.addFlags("generate_long_rod");
-<material:black_steel>.addFlags("generate_long_rod", "generate_dense");
+<material:copper>.addFlags("generate_bolt_screw");
+<material:red_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
+<material:blue_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
+<material:black_steel>.addFlags("generate_long_rod", "generate_dense", "generate_bolt_screw");
 <material:magnesium>.addFlags("generate_plate");
 <material:titanium>.addFlags("generate_foil", "generate_dense");
 <material:zinc>.addFlags("generate_long_rod", "generate_gear");
@@ -57,6 +58,8 @@ import mods.gregtech.material.Material;
 <material:stainless_steel>.addFlags("generate_dense");
 <material:platinum>.addFlags("generate_dense");
 <material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
+<material:netherrack>.addFlags("no_unification");
+<material:wheat>.addFlags("no_unification");
 
 // Dry Ice
 var dry_ice = MaterialBuilder(32050, "dry_ice")

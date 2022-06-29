@@ -523,7 +523,11 @@ val GregTech as IItemStack[] = [
     <metaitem:dustSmallFireclay>,
     <metaitem:dustTinyFireclay>,
 	// Wooden Barrel
-	<metaitem:drum.wood>
+	<metaitem:drum.wood>,
+	// Nether dust
+	<metaitem:dustNetherrack>,
+	<metaitem:dustSmallNetherrack>,
+	<metaitem:dustTinyNetherrack>
 ];
 for item in GregTech {
     JEI.removeAndHide(item);
@@ -753,7 +757,8 @@ val TFCTech as IItemStack[] = [
 	<tfctech:metal/blue_steel_wire:4>,
 	<tfctech:metal/red_steel_wire:4>,
 	// Other
-    <tfctech:powder/potash>
+    <tfctech:powder/potash>,
+	<tfctech:metal/iron_tongs>
 ];
 for item in TFCTech {
     JEI.removeAndHide(item);
@@ -1461,7 +1466,17 @@ val Vanilla as IItemStack[] = [
 	<minecraft:waterlily>,
 	<minecraft:golden_horse_armor>,
 	<minecraft:diamond_horse_armor>,
-	<minecraft:iron_trapdoor>
+	<minecraft:iron_trapdoor>,
+	// Nether
+	<minecraft:nether_wart>,
+	<minecraft:netherrack>,
+	<minecraft:nether_brick>,
+	<minecraft:nether_brick_stairs>,
+	<minecraft:stone_slab:6>,
+	<minecraft:nether_wart_block>,
+	<minecraft:red_nether_brick>,
+	<minecraft:nether_brick_fence>,
+	<minecraft:netherbrick>
 ] as IItemStack[];
 for item in Vanilla {
     JEI.removeAndHide(item);

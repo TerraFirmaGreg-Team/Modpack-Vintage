@@ -39,6 +39,7 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:baguette_dough",
     "gregtechfoodoption:bun_dough",
     "gregtechfoodoption:gtfo_hand_kubide_kebab",
+    "gregtechfoodoption:meat_hand_recipe",
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -206,6 +207,7 @@ centrifuge.findRecipe(5, [<minecraft:poisonous_potato:0>], null).remove();
 centrifuge.findRecipe(5, [<minecraft:porkchop:0>], null).remove();
 centrifuge.findRecipe(5, [<minecraft:mushroom_stew:0>], null).remove();
 centrifuge.findRecipe(5, [<minecraft:cooked_fish:1>], null).remove();
+centrifuge.findRecipe(5, [<minecraft:nether_wart:0>], null).remove();
 
 // GT Mud Bricks
 forming_press.findRecipe(30, [<tfc:sand/diorite:0> * 3, <tfc:gravel/phyllite:0> * 2, <metaitem:dustBentonite>, <metaitem:dustTalc>, <minecraft:wheat:0>, <metaitem:wooden_form.brick>], null).remove();
@@ -435,7 +437,8 @@ mixer.findRecipe(8, [<minecraft:brown_mushroom:0>, <minecraft:red_mushroom:0>, <
 // Zest
 extractor.findRecipe(5, [<metaitem:food.lemon>], null).remove();
 
-
+// Toughened Meat
+mixer.findRecipe(16, [<metaitem:dustWheat>, <metaitem:dustMeat>], [<liquid:water> * 500]).remove();
 
 // --- Добавление рецептов
 
@@ -841,3 +844,12 @@ recipes.addShaped("tfg/gtfo/raw_koobideh_kebab", <metaitem:component.kebab.kubid
     [<ore:gtce.tool.rolling.pins>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
     [<metaitem:dustSmallSalt>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
     [<metaitem:component.skewer>, <tfc:food/tomato>, <metaitem:dustSmallSalt>]]);
+
+// Toughened Meat
+recipes.addShapeless("tfg/gtfo/toughende_meat", <metaitem:tough_meat_dust>, [<ore:flour>, <metaitem:dustMeat>, <metaitem:dustMeat>, <minecraft:water_bucket>]);
+
+mixer.recipeBuilder()
+    .inputs([<ore:flour>, <metaitem:dustMeat>])
+    .fluidInputs([<liquid:water> * 500])
+    .outputs(<metaitem:tough_meat_dust>)
+    .duration(90).EUt(16).buildAndRegister();

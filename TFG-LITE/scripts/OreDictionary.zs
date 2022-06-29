@@ -236,7 +236,11 @@ for item in TFC_Saws {
 ]);
 
 <ore:gtce.tool.rolling.pins>.addItems([
-    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag(),
+    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+]);
+
+<ore:gtce.tool.tongs>.addItems([
+    <tfgmod:meta_tool>.withEmptyTag()
 ]);
 
 // Wrought Iron + Iron
