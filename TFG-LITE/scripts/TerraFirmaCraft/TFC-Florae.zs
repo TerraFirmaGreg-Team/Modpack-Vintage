@@ -717,7 +717,7 @@ mixer.recipeBuilder()
 	.inputs(<tfcflorae:crop/product/malt_amaranth>)
 	.fluidInputs(<liquid:wort> * 500)
 	.circuit(23)
-	.fluidOutputs(<liquid:amaranth_beer> * 500)
+	.fluidOutputs(<liquid:beer_amaranth> * 500)
 	.duration(150).EUt(2).buildAndRegister();
 
 // Buckwheat Corn -> Buckwheat Beer

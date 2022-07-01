@@ -4059,7 +4059,7 @@ global TFC_Boats as IItemStack[] = [
 	// <tfc:wood/boat/eucalyptus>
 ];
 
-val TFC_EucaliptusLogs as IItemStack[] = [
+global TFC_EucaliptusLogs as IItemStack[] = [
 	<tfcflorae:wood/log/argyle_eucalyptus>,
 	<tfcflorae:wood/log/rainbow_eucalyptus>,
 	<tfcflorae:wood/log/snow_gum_eucalyptus>
