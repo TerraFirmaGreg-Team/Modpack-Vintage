@@ -754,11 +754,40 @@ for i, GT_Dusts_For_Raw_Stones in GT_Dusts_For_Raw_Stones {
 
 // Дерево -> Пиломатериалы
 for i, TFC_Lumber in TFC_Lumber {
-    cutter.recipeBuilder()
+	
+	cutter.recipeBuilder()
     	.inputs([TFC_Logs[i]])
 		.fluidInputs([<liquid:lubricant> * 1])
     	.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
+
+	saw_mill.recipeBuilder()
+		.inputs([TFC_Logs[i]])
+		.circuit(1)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([TFC_Lumber * 64, <metaitem:dustWood> * 8])
+		.duration(450)
+		.EUt(32)
+		.buildAndRegister();
+}
+
+// Дерево -> Пиломатериалы (Для эвкалипта)
+for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
+	
+	cutter.recipeBuilder()
+    	.inputs([TFC_EucaliptusLogs])
+		.fluidInputs([<liquid:lubricant> * 1])
+    	.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
+    	.duration(200).EUt(7).buildAndRegister();
+
+	saw_mill.recipeBuilder()
+		.inputs([TFC_EucaliptusLogs])
+		.circuit(1)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([<tfc:wood/lumber/eucalyptus> * 64, <metaitem:dustWood> * 8])
+		.duration(450)
+		.EUt(32)
+		.buildAndRegister();
 }
 
 // Доски -> Пиломатериалы
@@ -1342,18 +1371,8 @@ for i, All_Seeds in All_Seeds {
 }
 
 
-// Log -> Lumber (Saw Mill) + Lumber -> dustWood
+// Lumber -> dustWood
 for i, TFC_Logs in TFC_Logs {
-  
-	saw_mill.recipeBuilder()
-		.inputs([TFC_Logs])
-		.circuit(1)
-		.fluidInputs([<liquid:lubricant> * 1000])
-		.outputs([TFC_Lumber[i] * 64, <metaitem:dustWood> * 8])
-		.duration(450)
-		.EUt(32)
-		.buildAndRegister();
-
 	saw_mill.recipeBuilder()
 		.inputs([TFC_Lumber[i]])
 		.circuit(2)
@@ -1656,16 +1675,3 @@ mixer.recipeBuilder()
 	.circuit(16)
 	.outputs(<firmalife:shosha_wheel>)
 	.duration(150).EUt(2).buildAndRegister();
-
-/*
-
-// 
-mixer.recipeBuilder()
-	.inputs()
-	.fluidInputs(<liquid:> * )
-	.circuit(16)
-	.outputs()
-	.fluidOutputs(<liquid:> * )
-	.duration(150).EUt(2).buildAndRegister();
-
-*/ 

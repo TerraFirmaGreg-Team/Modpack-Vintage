@@ -1705,9 +1705,9 @@ global TFC_Saplings as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/sapling/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/sapling/ceylon_cinnamon>,
 	<tfc:wood/sapling/eucalyptus>,
-	<tfc:wood/sapling/eucalyptus>,
-	<tfc:wood/sapling/eucalyptus>,
-	<tfc:wood/sapling/eucalyptus>
+	// <tfc:wood/sapling/eucalyptus>,
+	// <tfc:wood/sapling/eucalyptus>,
+	// <tfc:wood/sapling/eucalyptus>
 ];
 
 // - Бревна
@@ -1821,9 +1821,9 @@ global TFC_Logs as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/pole/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/pole/ceylon_cinnamon>,
 	<tfc:wood/log/eucalyptus>,
-	<tfcflorae:wood/log/argyle_eucalyptus>,
-	<tfcflorae:wood/log/rainbow_eucalyptus>,
-	<tfcflorae:wood/log/snow_gum_eucalyptus>
+	// <tfcflorae:wood/log/argyle_eucalyptus>,
+	// <tfcflorae:wood/log/rainbow_eucalyptus>,
+	// <tfcflorae:wood/log/snow_gum_eucalyptus>
 ];
 
 // - TFC Planks Array
@@ -1937,9 +1937,9 @@ global TFC_Planks as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/planks/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/planks/ceylon_cinnamon>,
 	<tfc:wood/planks/eucalyptus>,
-	<tfc:wood/planks/eucalyptus>,
-	<tfc:wood/planks/eucalyptus>,
-	<tfc:wood/planks/eucalyptus>
+	// <tfc:wood/planks/eucalyptus>,
+	// <tfc:wood/planks/eucalyptus>,
+	// <tfc:wood/planks/eucalyptus>
 ];
 
 // - TFC Lumber Array
@@ -2053,9 +2053,9 @@ global TFC_Lumber as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/lumber/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/lumber/ceylon_cinnamon>,
 	<tfc:wood/lumber/eucalyptus>,
-	<tfc:wood/lumber/eucalyptus>,
-	<tfc:wood/lumber/eucalyptus>,
-	<tfc:wood/lumber/eucalyptus>
+	// <tfc:wood/lumber/eucalyptus>,
+	// <tfc:wood/lumber/eucalyptus>,
+	// <tfc:wood/lumber/eucalyptus>
 ];
 
 // - TFC Slabs Array
@@ -2169,9 +2169,9 @@ global TFC_Slabs as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/slab/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/slab/ceylon_cinnamon>,
 	<tfc:slab/wood/eucalyptus>,
-	<tfc:slab/wood/eucalyptus>,
-	<tfc:slab/wood/eucalyptus>,
-	<tfc:slab/wood/eucalyptus>
+	// <tfc:slab/wood/eucalyptus>,
+	// <tfc:slab/wood/eucalyptus>,
+	// <tfc:slab/wood/eucalyptus>
 ];
 
 // - TFC Stairs Array
@@ -2285,9 +2285,9 @@ global TFC_Stairs as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/stairs/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/stairs/ceylon_cinnamon>,
 	<tfc:stairs/wood/eucalyptus>,
-	<tfc:stairs/wood/eucalyptus>,
-	<tfc:stairs/wood/eucalyptus>,
-	<tfc:stairs/wood/eucalyptus>
+	// <tfc:stairs/wood/eucalyptus>,
+	// <tfc:stairs/wood/eucalyptus>,
+	// <tfc:stairs/wood/eucalyptus>
 ];
 
 // - TFC Pressure Plates Wood Array
@@ -2401,9 +2401,9 @@ global TFC_Pressure_Plates as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/pressure_plate/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/pressure_plate/ceylon_cinnamon>,
 	<tfc:wood/pressure_plate/eucalyptus>,
-	<tfc:wood/pressure_plate/eucalyptus>,
-	<tfc:wood/pressure_plate/eucalyptus>,
-	<tfc:wood/pressure_plate/eucalyptus>
+	// <tfc:wood/pressure_plate/eucalyptus>,
+	// <tfc:wood/pressure_plate/eucalyptus>,
+	// <tfc:wood/pressure_plate/eucalyptus>
 ];
 
 // - TFC Buttons Array
@@ -2517,9 +2517,9 @@ global TFC_Buttons as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/button/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/button/ceylon_cinnamon>,
 	<tfc:wood/button/eucalyptus>,
-	<tfc:wood/button/eucalyptus>,
-	<tfc:wood/button/eucalyptus>,
-	<tfc:wood/button/eucalyptus>
+	// <tfc:wood/button/eucalyptus>,
+	// <tfc:wood/button/eucalyptus>,
+	// <tfc:wood/button/eucalyptus>
 ];
 
 // - TFC Doors Array
@@ -2633,9 +2633,9 @@ global TFC_Doors as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/door/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/door/ceylon_cinnamon>,
 	<tfc:wood/door/eucalyptus>,
-	<tfc:wood/door/eucalyptus>,
-	<tfc:wood/door/eucalyptus>,
-	<tfc:wood/door/eucalyptus>
+	// <tfc:wood/door/eucalyptus>,
+	// <tfc:wood/door/eucalyptus>,
+	// <tfc:wood/door/eucalyptus>
 ];
 
 // - Люки
@@ -2749,34 +2749,9 @@ global TFC_Trapdoors as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/trapdoor/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/trapdoor/ceylon_cinnamon>,
 	<tfc:wood/trapdoor/eucalyptus>,
-	<tfc:wood/trapdoor/eucalyptus>,
-	<tfc:wood/trapdoor/eucalyptus>,
-	<tfc:wood/trapdoor/eucalyptus>
-];
-
-// - TFC Metal Trapdoors
-global TFC_Metal_Trapdoors as IItemStack[] = [
-	<tfc:metal/trapdoor/platinum>,
-	<tfc:metal/trapdoor/gold>,
-	<tfc:metal/trapdoor/lead>,
-	<tfc:metal/trapdoor/nickel>,
-	<tfc:metal/trapdoor/rose_gold>,
-	<tfc:metal/trapdoor/silver>,
-	<tfc:metal/trapdoor/tin>,
-	<tfc:metal/trapdoor/zinc>,
-	<tfc:metal/trapdoor/sterling_silver>,
-	<tfc:metal/trapdoor/copper>,
-	<tfc:metal/trapdoor/bismuth>,
-	<tfc:metal/trapdoor/brass>,
-	<tfc:metal/trapdoor/bismuth_bronze>,
-	<tfc:metal/trapdoor/bronze>,
-	<tfc:metal/trapdoor/black_bronze>,
-	<tfc:metal/trapdoor/wrought_iron>,
-	<tfc:metal/trapdoor/steel>,
-	<tfc:metal/trapdoor/platinum>,
-	<tfc:metal/trapdoor/black_steel>,
-	<tfc:metal/trapdoor/blue_steel>,
-	<tfc:metal/trapdoor/red_steel>
+	// <tfc:wood/trapdoor/eucalyptus>,
+	// <tfc:wood/trapdoor/eucalyptus>,
+	// <tfc:wood/trapdoor/eucalyptus>
 ];
 
 // - TFC Supports Array
@@ -2890,9 +2865,9 @@ global TFC_Supports as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/support/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/support/ceylon_cinnamon>,
 	<tfc:wood/support/eucalyptus>,
-	<tfc:wood/support/eucalyptus>,
-	<tfc:wood/support/eucalyptus>,
-	<tfc:wood/support/eucalyptus>
+	// <tfc:wood/support/eucalyptus>,
+	// <tfc:wood/support/eucalyptus>,
+	// <tfc:wood/support/eucalyptus>
 ];
 
 // - TFC Fences Array
@@ -3006,9 +2981,9 @@ global TFC_Fences as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/fence/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/fence/ceylon_cinnamon>,
 	<tfc:wood/fence/eucalyptus>,
-	<tfc:wood/fence/eucalyptus>,
-	<tfc:wood/fence/eucalyptus>,
-	<tfc:wood/fence/eucalyptus>
+	// <tfc:wood/fence/eucalyptus>,
+	// <tfc:wood/fence/eucalyptus>,
+	// <tfc:wood/fence/eucalyptus>
 ];
 
 // - TFC Fence Gates Array
@@ -3122,9 +3097,9 @@ global TFC_Fence_Gates as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/fence_gate/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/fence_gate/ceylon_cinnamon>,
 	<tfc:wood/fence_gate/eucalyptus>,
-	<tfc:wood/fence_gate/eucalyptus>,
-	<tfc:wood/fence_gate/eucalyptus>,
-	<tfc:wood/fence_gate/eucalyptus>
+	// <tfc:wood/fence_gate/eucalyptus>,
+	// <tfc:wood/fence_gate/eucalyptus>,
+	// <tfc:wood/fence_gate/eucalyptus>
 ];
 
 // - TFC Fence Log Array
@@ -3267,9 +3242,9 @@ global TFC_Fence_Gates_Log as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/fence_gate_log/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/fence_gate_log/ceylon_cinnamon>,
 	<tfcflorae:wood/fence_gate_log/eucalyptus>,
-	<tfcflorae:wood/fence_gate_log/eucalyptus>,
-	<tfcflorae:wood/fence_gate_log/eucalyptus>,
-	<tfcflorae:wood/fence_gate_log/eucalyptus>
+	// <tfcflorae:wood/fence_gate_log/eucalyptus>,
+	// <tfcflorae:wood/fence_gate_log/eucalyptus>,
+	// <tfcflorae:wood/fence_gate_log/eucalyptus>
 ];
 
 // - TFC Loom Array
@@ -3383,9 +3358,9 @@ global TFC_Looms as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/loom/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/loom/ceylon_cinnamon>,
 	<tfc:wood/loom/eucalyptus>,
-	<tfc:wood/loom/eucalyptus>,
-	<tfc:wood/loom/eucalyptus>,
-	<tfc:wood/loom/eucalyptus>
+	// <tfc:wood/loom/eucalyptus>,
+	// <tfc:wood/loom/eucalyptus>,
+	// <tfc:wood/loom/eucalyptus>
 ];
 
 // - Список книжных полок
@@ -3499,9 +3474,9 @@ global TFC_Bookshelfs as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/bookshelf/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/bookshelf/ceylon_cinnamon>,
 	<tfc:wood/bookshelf/eucalyptus>,
-	<tfc:wood/bookshelf/eucalyptus>,
-	<tfc:wood/bookshelf/eucalyptus>,
-	<tfc:wood/bookshelf/eucalyptus>
+	// <tfc:wood/bookshelf/eucalyptus>,
+	// <tfc:wood/bookshelf/eucalyptus>,
+	// <tfc:wood/bookshelf/eucalyptus>
 ];
 
 // - Список верстаков
@@ -3615,9 +3590,9 @@ global TFC_Workbenchs as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/workbench/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/workbench/ceylon_cinnamon>,
 	<tfc:wood/workbench/eucalyptus>,
-	<tfc:wood/workbench/eucalyptus>,
-	<tfc:wood/workbench/eucalyptus>,
-	<tfc:wood/workbench/eucalyptus>
+	// <tfc:wood/workbench/eucalyptus>,
+	// <tfc:wood/workbench/eucalyptus>,
+	// <tfc:wood/workbench/eucalyptus>
 ];
 
 // - Список сундуков
@@ -3731,9 +3706,9 @@ global TFC_Chests as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/chest/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/chest/ceylon_cinnamon>,
 	<tfc:wood/chest/eucalyptus>,
-	<tfc:wood/chest/eucalyptus>,
-	<tfc:wood/chest/eucalyptus>,
-	<tfc:wood/chest/eucalyptus>
+	// <tfc:wood/chest/eucalyptus>,
+	// <tfc:wood/chest/eucalyptus>,
+	// <tfc:wood/chest/eucalyptus>
 ];
 
 // - Список полок для инструментов
@@ -3847,9 +3822,9 @@ global TFC_ToolRacks as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/tool_rack/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/tool_rack/ceylon_cinnamon>,
 	<tfc:wood/tool_rack/eucalyptus>,
-	<tfc:wood/tool_rack/eucalyptus>,
-	<tfc:wood/tool_rack/eucalyptus>,
-	<tfc:wood/tool_rack/eucalyptus>
+	// <tfc:wood/tool_rack/eucalyptus>,
+	// <tfc:wood/tool_rack/eucalyptus>,
+	// <tfc:wood/tool_rack/eucalyptus>
 ];
 
 // - Список Бочек
@@ -3963,9 +3938,9 @@ global TFC_Barrels as IItemStack[] = [
 	<minecraft:stick>,
 	<minecraft:stick>,
 	<tfc:wood/barrel/eucalyptus>,
-	<tfc:wood/barrel/eucalyptus>,
-	<tfc:wood/barrel/eucalyptus>,
-	<tfc:wood/barrel/eucalyptus>
+	// <tfc:wood/barrel/eucalyptus>,
+	// <tfc:wood/barrel/eucalyptus>,
+	// <tfc:wood/barrel/eucalyptus>
 ];
 
 // - Список Лодок
@@ -4079,9 +4054,40 @@ global TFC_Boats as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/boat/cassia_cinnamon>,
 	<tfcflorae:wood/fruit_tree/boat/ceylon_cinnamon>,
 	<tfc:wood/boat/eucalyptus>,
-	<tfc:wood/boat/eucalyptus>,
-	<tfc:wood/boat/eucalyptus>,
-	<tfc:wood/boat/eucalyptus>
+	// <tfc:wood/boat/eucalyptus>,
+	// <tfc:wood/boat/eucalyptus>,
+	// <tfc:wood/boat/eucalyptus>
+];
+
+val TFC_EucaliptusLogs as IItemStack[] = [
+	<tfcflorae:wood/log/argyle_eucalyptus>,
+	<tfcflorae:wood/log/rainbow_eucalyptus>,
+	<tfcflorae:wood/log/snow_gum_eucalyptus>
+];
+
+// - TFC Metal Trapdoors
+global TFC_Metal_Trapdoors as IItemStack[] = [
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/gold>,
+	<tfc:metal/trapdoor/lead>,
+	<tfc:metal/trapdoor/nickel>,
+	<tfc:metal/trapdoor/rose_gold>,
+	<tfc:metal/trapdoor/silver>,
+	<tfc:metal/trapdoor/tin>,
+	<tfc:metal/trapdoor/zinc>,
+	<tfc:metal/trapdoor/sterling_silver>,
+	<tfc:metal/trapdoor/copper>,
+	<tfc:metal/trapdoor/bismuth>,
+	<tfc:metal/trapdoor/brass>,
+	<tfc:metal/trapdoor/bismuth_bronze>,
+	<tfc:metal/trapdoor/bronze>,
+	<tfc:metal/trapdoor/black_bronze>,
+	<tfc:metal/trapdoor/wrought_iron>,
+	<tfc:metal/trapdoor/steel>,
+	<tfc:metal/trapdoor/platinum>,
+	<tfc:metal/trapdoor/black_steel>,
+	<tfc:metal/trapdoor/blue_steel>,
+	<tfc:metal/trapdoor/red_steel>
 ];
 
 // - Gem Exquisite Array
