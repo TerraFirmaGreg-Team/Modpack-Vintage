@@ -824,6 +824,41 @@ global TFC_Raws as IItemStack[] = [
 	<tfc:raw/komatiite>
 ];
 
+// - TFC Raw Mossy Array
+global TFC_Raw_Mossy as IItemStack[] = [
+	<tfcflorae:mossy_raw/granite>,
+	<tfcflorae:mossy_raw/diorite>,
+	<tfcflorae:mossy_raw/gabbro>,
+	<tfcflorae:mossy_raw/shale>,
+	<tfcflorae:mossy_raw/claystone>,
+	<tfcflorae:mossy_raw/rocksalt>,
+	<tfcflorae:mossy_raw/limestone>,
+	<tfcflorae:mossy_raw/conglomerate>,
+	<tfcflorae:mossy_raw/dolomite>,
+	<tfcflorae:mossy_raw/chert>,
+	<tfcflorae:mossy_raw/chalk>,
+	<tfcflorae:mossy_raw/rhyolite>,
+	<tfcflorae:mossy_raw/basalt>,
+	<tfcflorae:mossy_raw/andesite>,
+	<tfcflorae:mossy_raw/dacite>,
+	<tfcflorae:mossy_raw/quartzite>,
+	<tfcflorae:mossy_raw/slate>,
+	<tfcflorae:mossy_raw/phyllite>,
+	<tfcflorae:mossy_raw/schist>,
+	<tfcflorae:mossy_raw/gneiss>,
+	<tfcflorae:mossy_raw/marble>,
+	<tfcflorae:mossy_raw/breccia>,
+	<tfcflorae:mossy_raw/porphyry>,
+	<tfcflorae:mossy_raw/peridotite>,
+	<tfcflorae:mossy_raw/mudstone>,
+	<tfcflorae:mossy_raw/sandstone>,
+	<tfcflorae:mossy_raw/siltstone>,
+	<tfcflorae:mossy_raw/catlinite>,
+	<tfcflorae:mossy_raw/novaculite>,
+	<tfcflorae:mossy_raw/soapstone>,
+	<tfcflorae:mossy_raw/komatiite>
+];
+
 // - GT Dusts for Raw Stones Array
 global GT_Dusts_For_Raw_Stones as IItemStack[] = [
 	<metaitem:dustGranite>,

@@ -22,7 +22,7 @@ val RemoveItemRecipesByName = [
     "gregtech:toolheadsawsense_flint_wood"
 ] as string[];
 
-// --- Removing Recipes
+// --- Удаление рецептов
 
 // Поименное удаление рецептов
 for item in RemoveItemRecipesByName{
@@ -40,3 +40,12 @@ macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
+
+// --- Добавление рецептов
+
+// Щипцы из дерева
+recipes.addShaped("tfg/gt/tongs_wood", <tfgmod:meta_tool>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), [
+    [<ore:stickWood>, null, <ore:stickWood>],
+    [null, <metaitem:screwWood>, null],
+    [<ore:stickWood>, null, <ore:stickWood>]]);
+

@@ -440,6 +440,9 @@ extractor.findRecipe(5, [<metaitem:food.lemon>], null).remove();
 // Toughened Meat
 mixer.findRecipe(16, [<metaitem:dustWheat>, <metaitem:dustMeat>], [<liquid:water> * 500]).remove();
 
+// Olive Oil
+extractor.findRecipe(27, [<metaitem:crop.olive>], null).remove();
+
 // --- Добавление рецептов
 
 // УДАЛИТЬ ПОСЛЕ ФИКСА #666
@@ -853,3 +856,9 @@ mixer.recipeBuilder()
     .fluidInputs([<liquid:water> * 500])
     .outputs(<metaitem:tough_meat_dust>)
     .duration(90).EUt(16).buildAndRegister();
+
+// Olive Oil
+extractor.recipeBuilder()
+    .inputs([<tfc:food/olive>])
+    .fluidOutputs([<liquid:gtfo_olive_oil> * 100])
+    .duration(60).EUt(27).buildAndRegister();

@@ -273,7 +273,7 @@ for item in TFC_Saws {
 <ore:stickLongRedSteel>.remove(<tfctech:metal/red_steel_long_rod>);
 
 // Удаление OreDicts у TFCTech стержней
-<ore:stickBismuth>.remove(<tfctech:metal/bismuth_stick>);
+<ore:stickBismuth>.remove(<tfctech:metal/bismuth_rod>);
 <ore:stickBismuthBronze>.remove(<tfctech:metal/bismuth_bronze_rod>);
 <ore:stickBlackBronze>.remove(<tfctech:metal/black_bronze_rod>);
 <ore:stickBrass>.remove(<tfctech:metal/brass_rod>);
@@ -294,6 +294,9 @@ for item in TFC_Saws {
 <ore:stickBlackSteel>.remove(<tfctech:metal/black_steel_rod>);
 <ore:stickBlueSteel>.remove(<tfctech:metal/blue_steel_rod>);
 <ore:stickRedSteel>.remove(<tfctech:metal/red_steel_rod>);
+
+// Removing OreDicts from Gypsum
+<ore:gemGypsum>.remove(<tfc:ore/gypsum>);
 
 ////////////////////////////////////////////////////////
 // --- GREGTECH --- ////////////////////////////////////
