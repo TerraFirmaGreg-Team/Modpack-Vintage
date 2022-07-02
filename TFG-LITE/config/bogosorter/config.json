@@ -1,0 +1,17 @@
+{
+  "ItemSortRules": [
+    "mod",
+    "material",
+    "ore_prefix",
+    "id",
+    "meta",
+    "nbt_has",
+    "nbt_rules"
+  ],
+  "NbtSortRules": [
+    "enchantment",
+    "gt_circ_config",
+    "enchantment_book",
+    "potion"
+  ]
+}

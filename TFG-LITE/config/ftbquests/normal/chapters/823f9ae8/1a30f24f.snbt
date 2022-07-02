@@ -1,0 +1,21 @@
+{
+	x: -22.0d,
+	y: -2.0d,
+	dependencies: [
+		"57406373"
+	],
+	tasks: [{
+		uid: "3a219f78",
+		type: "item",
+		items: [{
+			id: "tfgmod:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "copper"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
