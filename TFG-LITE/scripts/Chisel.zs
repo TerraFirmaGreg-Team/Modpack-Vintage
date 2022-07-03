@@ -52,7 +52,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<chisel:glasspanedyedpurple:*>,
 	<chisel:glasspanedyedlime:*>,
 	<chisel:glasspanedyedmagenta:*>
-] as IItemStack[];
+];
 
 val RemoveItemRecipesByName = [
     "chisel:uncraft_blockiron",

@@ -14,7 +14,7 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:bucket>,
     <minecraft:enchanting_table>,
     <minecraft:name_tag>
-] as IItemStack[];
+];
 
 val RemoveItemRecipesByName = [
     "minecraft:stone_pressure_plate",
@@ -32,7 +32,7 @@ val ItemsToRemoveFromFurnace as IItemStack[] = [
     <minecraft:stone>,
     <minecraft:gold_nugget>,
     <minecraft:netherbrick>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

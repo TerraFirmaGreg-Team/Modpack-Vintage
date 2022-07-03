@@ -445,7 +445,7 @@ global GregtechOres as IItemStack[] = [
 	<gregtech:ore_garnet_sand_2>,
 	<gregtech:ore_basaltic_mineral_sand_0>,
 	<gregtech:ore_basaltic_mineral_sand_1>,
-	<gregtech:ore_basaltic_mineral_sand_2>,
+	<gregtech:ore_basaltic_mineral_sand_2>
 ];
 
 // - Raw Igneous Intrusive Rocks Array
@@ -658,7 +658,7 @@ global TFC_QuernToMaceratorOutput as IItemStack[] = [
 	<minecraft:dye:2>,
 	<minecraft:dye:2>,
 	<minecraft:dye:2>,
-	<minecraft:dye:2>,
+	<minecraft:dye:2>
 ];
 
 // - TFC Cooked Meat Array
@@ -3128,7 +3128,7 @@ global TFC_Fence_Log as IItemStack[] = [
 	<tfcflorae:wood/fruit_tree/fence_log/plum>,
 	<tfcflorae:wood/fruit_tree/fence_log/red_apple>,
 	<tfcflorae:wood/fruit_tree/fence_log/cassia_cinnamon>,
-	<tfcflorae:wood/fruit_tree/fence_log/ceylon_cinnamon>,
+	<tfcflorae:wood/fruit_tree/fence_log/ceylon_cinnamon>
 ];
 
 // - TFC Fence Gates Log Array

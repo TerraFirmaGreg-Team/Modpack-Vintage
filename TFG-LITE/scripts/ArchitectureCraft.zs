@@ -6,7 +6,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<architecturecraft:sawbench>,
     <architecturecraft:hammer>,
     <architecturecraft:chisel>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

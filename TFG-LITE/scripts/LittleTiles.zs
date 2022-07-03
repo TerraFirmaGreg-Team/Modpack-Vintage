@@ -20,7 +20,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 	<littletiles:lttransparentcoloredblock:5>,
 	<littletiles:ltcoloredblock:12>,
 	<littletiles:ltstorageblocktile>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

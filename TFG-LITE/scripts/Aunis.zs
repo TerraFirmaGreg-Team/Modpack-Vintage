@@ -41,7 +41,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
     <aunis:transportrings_block>,
     <aunis:transportrings_controller_block>,
     <aunis:transportrings_ring_fragment>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 
@@ -54,6 +54,7 @@ for item in RemoveWorkbenchRecipes {
 
 // Transportrings_block
 star_forge.recipeBuilder()
+  .circuit(1)
   .inputs(<ore:blockNaquadahAlloy> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
   .fluidInputs([<liquid:naquadah_alloy> * 1000])
   .outputs(<aunis:transportrings_block>)
@@ -61,6 +62,7 @@ star_forge.recipeBuilder()
 
 // Transportrings_controller_block
 star_forge.recipeBuilder()
+  .circuit(2)
   .inputs(<ore:ingotNaquadahAlloy> * 6, <aunis:crystal_ender>, <aunis:circuit_control_naquadah>, <projectred-illumination:light_button> * 9)
 	.fluidInputs([<liquid:gold> * 2000])
   .outputs(<aunis:transportrings_controller_block>)
@@ -68,6 +70,7 @@ star_forge.recipeBuilder()
 
 // Transportrings_ring_fragment>
 star_forge.recipeBuilder()
+  .circuit(3)
   .inputs(<ore:ingotNaquadahAlloy> * 2, <aunis:crystal_ender>, <aunis:crystal_blue>, <aunis:circuit_control_naquadah>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:transportrings_ring_fragment>)
@@ -75,6 +78,7 @@ star_forge.recipeBuilder()
 
 // Circuit_control_base
 circuit_assembler.recipeBuilder()
+  .circuit(1)
   .inputs(<aunis:crystal_ender>, <aunis:crystal_red>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:circuit_control_base>)
@@ -108,12 +112,14 @@ assembly_line.recipeBuilder()
 
 // Holder_crystal
 star_forge.recipeBuilder()
+  .circuit(4)
   .inputs(<ore:ingotNaquadahAlloy> * 6, <aunis:crystal_red> * 3)
   .outputs(<aunis:holder_crystal>)
   .duration(200).EUt(1880).buildAndRegister();
 
 // Dhd_brb
 star_forge.recipeBuilder()
+  .circuit(5)
   .inputs(<ore:ingotNaquadahAlloy> * 6, <ore:circuitLuv>, <aunis:crystal_red> * 3)
 	.fluidInputs([<liquid:glass> * 18000])
   .outputs(<aunis:dhd_brb>)
@@ -182,34 +188,40 @@ fusion_reactor.recipeBuilder()
 
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()
+  .circuit(6)
   .inputs(<ore:ingotNaquadahAlloy> * 6, <aunis:stargate_ring_fragment> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_blue>, <aunis:circuit_control_naquadah>)
   .outputs(<aunis:stargate_milkyway_base_block>)
   .duration(4000).EUt(130880).buildAndRegister();
 
 star_forge.recipeBuilder()
+  .circuit(7)
   .inputs(<ore:ingotNaquadahAlloy> * 2, <aunis:stargate_ring_fragment> * 2, <aunis:crystal_red>)
   .outputs(<aunis:stargate_milkyway_member_block:6>)
   .duration(2000).EUt(120880).buildAndRegister();
 
 star_forge.recipeBuilder()
+  .circuit(8)
   .inputs(<ore:ingotNaquadahAlloy> * 4, <aunis:stargate_ring_fragment> * 2, <aunis:crystal_ender>, <aunis:crystal_yellow>, <gregtech:transparent_casing> * 4)
   .outputs(<aunis:stargate_milkyway_member_block:14>)
   .duration(2000).EUt(130880).buildAndRegister();
 
 // stargate_ring_fragment
 star_forge.recipeBuilder()
+  .circuit(9)
   .inputs(<ore:plateDenseNaquadahAlloy> * 9, <ore:batteryIv>)
   .outputs(<aunis:stargate_ring_fragment> * 2)
   .duration(2000).EUt(12880).buildAndRegister();
 
 // capacitor_block_empty
 star_forge.recipeBuilder()
+  .circuit(10)
   .inputs(<ore:plateDenseNaquadahAlloy> * 4, <aunis:crystal_red> * 4, <ore:batteryLuv> * 6)
   .outputs(<aunis:capacitor_block_empty>)
   .duration(2000).EUt(130880).buildAndRegister();
 
 // capacitor_block
 canner.recipeBuilder()
+  .circuit(11)
   .inputs(<aunis:capacitor_block_empty>)
   .fluidInputs(<liquid:silicon_molten_red> * 6440)
  	.outputs(<aunis:capacitor_block> * 1)
@@ -217,6 +229,7 @@ canner.recipeBuilder()
 
 // crystal_control_dhd
 star_forge.recipeBuilder()
+  .circuit(12)
   .inputs(<aunis:crystal_red> * 4, <ore:batteryLuv> * 2)
 	.fluidInputs(<liquid:silicon_molten_red> * 144)
   .outputs(<aunis:crystal_control_dhd>)

@@ -9,7 +9,7 @@ val RemoveItemRecipe as IItemStack[] = [
 	<planetprogression:telescope>,
 	<planetprogression:satellite_module_basic>,
    <planetprogression:advanced_launch_pad>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 
@@ -80,9 +80,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .outputs(<planetprogression:satellite_basic>)
-   .duration(200)
-   .EUt(2000)
-   .buildAndRegister();
+   .duration(200).EUt(2000).buildAndRegister();
 
 
 // Ракета со спутником
@@ -98,6 +96,4 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 9216])
    .fluidInputs([<liquid:lead> * 4608])
    .outputs(<planetprogression:item_satellite_rocket:1>)
-   .duration(300)
-   .EUt(4000)
-   .buildAndRegister();
+   .duration(300).EUt(4000).buildAndRegister();

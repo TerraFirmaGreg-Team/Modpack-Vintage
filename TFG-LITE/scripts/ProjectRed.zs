@@ -10,7 +10,7 @@ val RemoveRecipes as IItemStack[] = [
     <projectred-fabrication:ic_blueprint>,
     <projectred-fabrication:ic_machine:1>,
     <projectred-core:multimeter>
-] as IItemStack[];
+];
 
 val RecipesToRemoveFromFurnace as IItemStack[] = [
 	<projectred-core:resource_item> * 2,
@@ -20,7 +20,7 @@ val RecipesToRemoveFromFurnace as IItemStack[] = [
     <projectred-core:resource_item:341>,
     <projectred-core:resource_item:300>,
     <projectred-core:resource_item:104>
-] as IItemStack[];
+];
 
 val Illuminars_Array as IItemStack[] = [
     <projectred-core:resource_item:500>,
@@ -38,7 +38,7 @@ val Illuminars_Array as IItemStack[] = [
     <projectred-core:resource_item:512>,
     <projectred-core:resource_item:513>,
     <projectred-core:resource_item:514>,
-    <projectred-core:resource_item:515>,
+    <projectred-core:resource_item:515>
 ];
 
 val Deactivated_Lamps_Array as IItemStack[] = [
@@ -57,7 +57,7 @@ val Deactivated_Lamps_Array as IItemStack[] = [
     <projectred-illumination:lamp:12>,
     <projectred-illumination:lamp:13>,
     <projectred-illumination:lamp:14>,
-    <projectred-illumination:lamp:15>,
+    <projectred-illumination:lamp:15>
 ];
 
 val Activated_Lamps_Array as IItemStack[] = [
@@ -76,7 +76,7 @@ val Activated_Lamps_Array as IItemStack[] = [
     <projectred-illumination:lamp:28>,
     <projectred-illumination:lamp:29>,
     <projectred-illumination:lamp:30>,
-    <projectred-illumination:lamp:31>,
+    <projectred-illumination:lamp:31>
 ];
 
 val Button_Lamps_Array as IItemStack[] = [
@@ -95,7 +95,7 @@ val Button_Lamps_Array as IItemStack[] = [
     <projectred-illumination:light_button:12>,
     <projectred-illumination:light_button:13>,
     <projectred-illumination:light_button:14>,
-    <projectred-illumination:light_button:15>,
+    <projectred-illumination:light_button:15>
 ];
 
 val Feedback_Lamps_Array as IItemStack[] = [
@@ -114,7 +114,7 @@ val Feedback_Lamps_Array as IItemStack[] = [
     <projectred-illumination:feedback_light_button:12>,
     <projectred-illumination:feedback_light_button:13>,
     <projectred-illumination:feedback_light_button:14>,
-    <projectred-illumination:feedback_light_button:15>,
+    <projectred-illumination:feedback_light_button:15>
 ];
 
 val Deactivated_Lantern_Lamps_Array as IItemStack[] = [
@@ -133,7 +133,7 @@ val Deactivated_Lantern_Lamps_Array as IItemStack[] = [
     <projectred-illumination:lantern:12>,
     <projectred-illumination:lantern:13>,
     <projectred-illumination:lantern:14>,
-    <projectred-illumination:lantern:15>,
+    <projectred-illumination:lantern:15>
 ];
 
 val Activated_Lantern_Lamps_Array as IItemStack[] = [
@@ -152,7 +152,7 @@ val Activated_Lantern_Lamps_Array as IItemStack[] = [
     <projectred-illumination:inverted_lantern:12>,
     <projectred-illumination:inverted_lantern:13>,
     <projectred-illumination:inverted_lantern:14>,
-    <projectred-illumination:inverted_lantern:15>,
+    <projectred-illumination:inverted_lantern:15>
 ];
 
 val Deactivated_Fixture_Lamps_Array as IItemStack[] = [
@@ -171,7 +171,7 @@ val Deactivated_Fixture_Lamps_Array as IItemStack[] = [
     <projectred-illumination:fixture_light:12>,
     <projectred-illumination:fixture_light:13>,
     <projectred-illumination:fixture_light:14>,
-    <projectred-illumination:fixture_light:15>,
+    <projectred-illumination:fixture_light:15>
 ];
 
 val Activated_Fixture_Lamps_Array as IItemStack[] = [
@@ -190,7 +190,7 @@ val Activated_Fixture_Lamps_Array as IItemStack[] = [
     <projectred-illumination:inverted_fixture_light:12>,
     <projectred-illumination:inverted_fixture_light:13>,
     <projectred-illumination:inverted_fixture_light:14>,
-    <projectred-illumination:inverted_fixture_light:15>,
+    <projectred-illumination:inverted_fixture_light:15>
 ];
 
 val Deactivated_Fallout_Lamps_Array as IItemStack[] = [
@@ -209,7 +209,7 @@ val Deactivated_Fallout_Lamps_Array as IItemStack[] = [
     <projectred-illumination:fallout_lamp:12>,
     <projectred-illumination:fallout_lamp:13>,
     <projectred-illumination:fallout_lamp:14>,
-    <projectred-illumination:fallout_lamp:15>,
+    <projectred-illumination:fallout_lamp:15>
 ];
 
 val Activated_Fallout_Lamps_Array as IItemStack[] = [
@@ -228,7 +228,7 @@ val Activated_Fallout_Lamps_Array as IItemStack[] = [
     <projectred-illumination:inverted_fallout_lamp:12>,
     <projectred-illumination:inverted_fallout_lamp:13>,
     <projectred-illumination:inverted_fallout_lamp:14>,
-    <projectred-illumination:inverted_fallout_lamp:15>,
+    <projectred-illumination:inverted_fallout_lamp:15>
 ];
 
 val Deactivated_Cage_Lamps_Array as IItemStack[] = [
@@ -247,7 +247,7 @@ val Deactivated_Cage_Lamps_Array as IItemStack[] = [
     <projectred-illumination:cage_lamp:12>,
     <projectred-illumination:cage_lamp:13>,
     <projectred-illumination:cage_lamp:14>,
-    <projectred-illumination:cage_lamp:15>,
+    <projectred-illumination:cage_lamp:15>
 ];
 
 val Activated_Cage_Lamps_Array as IItemStack[] = [
@@ -266,7 +266,7 @@ val Activated_Cage_Lamps_Array as IItemStack[] = [
     <projectred-illumination:inverted_cage_lamp:12>,
     <projectred-illumination:inverted_cage_lamp:13>,
     <projectred-illumination:inverted_cage_lamp:14>,
-    <projectred-illumination:inverted_cage_lamp:15>,
+    <projectred-illumination:inverted_cage_lamp:15>
 ];
 
 val Transmission_Wires_Array as IItemStack[] = [
@@ -285,7 +285,7 @@ val Transmission_Wires_Array as IItemStack[] = [
     <projectred-transmission:wire:13>,
     <projectred-transmission:wire:14>,
     <projectred-transmission:wire:15>,
-	<projectred-transmission:wire:16>,
+	<projectred-transmission:wire:16>
 ];
 
 // --- Удаление рецептов

@@ -866,17 +866,20 @@ centrifuge.recipeBuilder()
     .chancedOutput(<metaitem:dustWood>, 2500, 700)
     .chancedOutput(<metaitem:plant_ball>, 3750, 900)
     .chancedOutput(<metaitem:rubber_drop>, 5000, 1200)
-    .fluidOutputs(<fluid:methane> * 65).EUt(20).duration(200).buildAndRegister();
+    .fluidOutputs(<fluid:methane> * 65)
+    .duration(200).EUt(20).buildAndRegister();
 
 // Лава из незерака
 extractor.recipeBuilder()
     .inputs(<ore:netherrack>)
-    .fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 250)
+    .duration(330).EUt(140).buildAndRegister();
 	
 // Лава из магма блока
 extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
-    .fluidOutputs(<fluid:lava> * 750).EUt(140).duration(220).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 750)
+    .duration(220).EUt(140).buildAndRegister();
 
 // Гравий --> кремень
 forge_hammer.recipeBuilder()

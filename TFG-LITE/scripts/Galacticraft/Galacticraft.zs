@@ -86,7 +86,7 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:enclosed:1>,
 	<galacticraftplanets:grapple>,
 	<galacticraftcore:nose_cone>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 
@@ -522,41 +522,31 @@ recipes.addShaped("tfg/gc/sealable_something_4", <galacticraftcore:enclosed:1>, 
 canner.recipeBuilder()
    .inputs(<galacticraftcore:canister>, <ore:categoryFruit> * 2)
    .outputs(<galacticraftcore:food>)
-   .duration(460)
-   .EUt(2)
-   .buildAndRegister();
+   .duration(460).EUt(2).buildAndRegister();
 
 // Морковная канистра
 canner.recipeBuilder()
    .inputs(<galacticraftcore:canister>, <tfc:food/carrot> * 2)
    .outputs(<galacticraftcore:food:1>)
-   .duration(460)
-   .EUt(2)
-   .buildAndRegister();
+   .duration(460).EUt(2).buildAndRegister();
 
 // Арбузная канистра
 canner.recipeBuilder()
    .inputs(<galacticraftcore:canister>, <firmalife:melon> * 2)
    .outputs(<galacticraftcore:food:2>)
-   .duration(460)
-   .EUt(2)
-   .buildAndRegister();
+   .duration(460).EUt(2).buildAndRegister();
 
 // Картофельная канистра
 canner.recipeBuilder()
    .inputs(<galacticraftcore:canister>, <tfc:food/potato> * 2)
    .outputs(<galacticraftcore:food:3>)
-   .duration(460)
-   .EUt(2)
-   .buildAndRegister();
+   .duration(460).EUt(2).buildAndRegister();
 
 // Мясная канистра
 canner.recipeBuilder()
    .inputs(<galacticraftcore:canister>, <ore:categoryMeat> * 2)
    .outputs(<galacticraftcore:food:9>)
-   .duration(460)
-   .EUt(2)
-   .buildAndRegister();
+   .duration(460).EUt(2).buildAndRegister();
 
 // High Duty Plates(1-3)
 // Tier 1
@@ -610,9 +600,7 @@ assembler.recipeBuilder()
    .circuit(7)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:nose_cone>)
-   .duration(600)
-   .EUt(480)
-   .buildAndRegister();
+   .duration(600).EUt(480).buildAndRegister();
 // Tier 2
 assembler.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
@@ -621,9 +609,7 @@ assembler.recipeBuilder()
    .circuit(7)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftplanets:heavy_nose_cone>)
-   .duration(600)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(600).EUt(512).buildAndRegister();
 
 // Rocket Engines 1-2 Tiers
 // Tier 1
@@ -638,9 +624,7 @@ assembler.recipeBuilder()
    .circuit(8)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:engine>)
-   .duration(600)
-   .EUt(480)
-   .buildAndRegister();
+   .duration(600).EUt(480).buildAndRegister();
 // Tier 2
 assembler.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars:3> * 6)
@@ -653,9 +637,7 @@ assembler.recipeBuilder()
    .circuit(8)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .duration(600)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(600).EUt(512).buildAndRegister();
 
 // Rocket Booster
 // Tier 1
@@ -671,9 +653,7 @@ assembler.recipeBuilder()
    .circuit(9)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:engine:1>)
-   .duration(600)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(600).EUt(512).buildAndRegister();
 
 // Stabilizators 1-2 Tiers
 // Tier 1
@@ -683,9 +663,7 @@ assembler.recipeBuilder()
    .circuit(10)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:rocket_fins>)
-   .duration(600)
-   .EUt(482)
-   .buildAndRegister();
+   .duration(600).EUt(482).buildAndRegister();
 // Tier 2
 assembler.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
@@ -693,9 +671,7 @@ assembler.recipeBuilder()
    .circuit(10)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftplanets:item_basic_asteroids:2>)
-   .duration(600)
-   .EUt(482)
-   .buildAndRegister();
+   .duration(600).EUt(482).buildAndRegister();
 
 // Rockets 1-2 Tiers
 // Tier 1 - Without Chests
@@ -715,9 +691,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1>)
-   .duration(1200)
-   .EUt(6000)
-   .buildAndRegister();
+   .duration(1200).EUt(6000).buildAndRegister();
 
 // Tier 1 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -737,9 +711,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1:1>)
-   .duration(1200)
-   .EUt(6000)
-   .buildAndRegister();
+   .duration(1200).EUt(6000).buildAndRegister();
 
 // Tier 1 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -759,9 +731,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1:2>)
-   .duration(1200)
-   .EUt(6000)
-   .buildAndRegister();
+   .duration(1200).EUt(6000).buildAndRegister();
 
 // Tier 1 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -781,9 +751,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1:3>)
-   .duration(1200)
-   .EUt(6000)
-   .buildAndRegister();
+   .duration(1200).EUt(6000).buildAndRegister();
 
 // Tier 2 - Without Chests
 assembly_line.recipeBuilder()
@@ -803,9 +771,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2>)
-   .duration(1200)
-   .EUt(9000)
-   .buildAndRegister();
+   .duration(1200).EUt(9000).buildAndRegister();
 
 // Tier 2 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -826,9 +792,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2:1>)
-   .duration(1200)
-   .EUt(9000)
-   .buildAndRegister();
+   .duration(1200).EUt(9000).buildAndRegister();
 
 // Tier 2 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -849,9 +813,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2:2>)
-   .duration(1200)
-   .EUt(9000)
-   .buildAndRegister();
+   .duration(1200).EUt(9000).buildAndRegister();
 
 // Tier 2 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -872,6 +834,4 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2:3>)
-   .duration(1200)
-   .EUt(9000)
-   .buildAndRegister();
+   .duration(1200).EUt(9000).buildAndRegister();

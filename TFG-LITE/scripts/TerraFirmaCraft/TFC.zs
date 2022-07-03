@@ -84,7 +84,7 @@ val RemoveItemsFromQuern as IItemStack[] = [
 	<tfc:ore/gypsum>,
 	<tfc:powder/hematite>,
 	<minecraft:redstone> * 8,
-	<tfc:powder/flux> * 6,
+	<tfc:powder/flux> * 6
 ];
 
 val Alabaster as IItemStack[] = [

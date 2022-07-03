@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 val RemoveRecipes as IItemStack[] = [
 	<toolbelt:belt>,
     <toolbelt:pouch>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 
