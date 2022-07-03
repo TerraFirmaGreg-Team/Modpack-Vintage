@@ -1,5 +1,66 @@
 # Changelog
 
+## Version R3.4.1 - Expected 07/03/2022
+#### [Lite, Huge]
+### Modpack fixes
+* Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
+* Renamed wrought iron to hematite to avoid confusion + the developers themselves will change it to this name in the future.
+* Fixed a bug where Quantum Armor tried to feed you but failed and destroyed all your food.
+* Added custom HotOrNot mod with liquid dupe fix and support for tongs from TFGMod.
+* Added tongs to TFGMod to hold things/liquids that are too light/hot/cold, logically there are more of them and they also have more strength.
+* Optimized everything possible to the maximum in TFGMod.
+* Now wood from GC/EP/GS can be cut in GTCEu machines.
+* Added recipes for crushing blocks, steps, semi-blocks, into the corresponding type of stone.
+* Fixed recipes using flour from GTCEu.
+* Hidden and removed all Nether items.
+* Changed the Nether Star recipe to use Mars air in its recipe.
+* Reduced crafting time for most vanilla items in assembler.
+* Fixed compass recipe.
+* Now all GTCEu ores have their own block (Fixes when only andesite ores were displayed in the prospectus).
+* Hidden in HEI nether and end ores.
+* Fixed recipe for Yeast Wooden Bucket to Yeast Dust.
+* Fixed a bug with recipes when it was impossible to create tongs from copper, red/black/blue steel.
+* Fixed Winch recipe.
+* The wire drawing table now uses TFGMod Forceps in the recipe.
+* Added crushing recipes for raw/cobblestone/smooth steps/semi-blocks/blocks to their dust variant from GTCEu. (Closing [#177](https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/issues/177))
+* Now the blast furnace can pour metal not only into a conventional crucible, but also into an electric crucible from TFC-Tech.
+* Now all screws, bolts, gears, etc. from TFCTech are not used, their counterparts from GregTech are used.
+* Replaced the InventoryTweaks mod with an inventory sorter, from GT developers, many times more sorting functionality, and works in all inventories.
+* GregicProbe has been replaced by TOPExtras since the former is no longer supported by GT.
+* In GregTech5u, cars outside explode in rainy weather. Now this nice feature is finally implemented in GTCEu! You don't hope you built your base outdoors thinking it wouldn't explode, did you?
+* Fixed drop from stones of pieces of salt, glass and other debris, now only adequate pieces of valuable crystals fall.
+* Now, after death, your scale of health, food, water, will be reduced to 25% so that geniuses die less and engage in breeding animals and growing food.
+* A lot of barrel recipes have been moved to the GTCEu mixer.
+* Almost every GCYM multiblock now requires a block that sets their maximum voltage.
+* Added weather, storms and tornadoes. You can see rain and more nasty storms coming from afar. Sandstorms! They appear in the desert. The recipes for items from the mod have also been changed.
+* Added wood recipes from EP/GS to GregTech vehicles.
+* Added modified recipes for all space stations.
+* Fixed conflicting Stargate recipes.
+* Adjusted the energy cost of opening and maintaining the Stargate.
+* Fixed a bug when at night, when opening the inventory, the background is completely black.
+### Update mods
+* Обновлен GTCEu.
+* Обновлен TFGMod.
+* CraftingTweaks
+* Fancymenu
+* ChunkAnimator
+* GregTech
+### New mods
+* HotOrNot (version from my favorite).
+* TFC-Ambientnal.
+* Modularui
+* Bogosorter
+* TOPExtras
+* Weather2
+* CoroUtil
+* FastWorkbench
+* FastFurnace
+### Removing mods
+* HorOrNot versions from some developer.
+* InventoryTweaks
+* GregicProbe 
+* GalacticraftTweaker
+
 ## Version R3.4.0 - 06/26/2022
 #### [Lite, Huge]
 ### Modpack fixes
