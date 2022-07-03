@@ -1,6 +1,6 @@
 # Changelog
 
-## Version R3.4.1 - Expected 07/03/2022
+## Version R3.4.1 - 07/03/2022
 #### [Lite, Huge]
 ### Modpack fixes
 * Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
