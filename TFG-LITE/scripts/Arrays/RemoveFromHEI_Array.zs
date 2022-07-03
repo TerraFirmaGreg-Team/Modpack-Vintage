@@ -288,7 +288,7 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftplanets:telepad_short>
 ];
 for item in Galacticraft {
-    //JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 val GalaxySpace as IItemStack[] = [
@@ -461,7 +461,7 @@ val GalaxySpace as IItemStack[] = [
 	<galaxyspace:schematics:4>
 ];
 for item in GalaxySpace {
-  	//JEI.removeAndHide(item);
+  	JEI.removeAndHide(item);
 }
 
 val GregTech as IItemStack[] = [
@@ -2191,7 +2191,7 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier10_items:4>
 ];
 for item in ExtraPlanets {
-    //JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [

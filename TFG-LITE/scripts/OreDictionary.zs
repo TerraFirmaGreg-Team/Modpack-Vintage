@@ -506,6 +506,25 @@ for denseSmartCable in denseSmartCables {
 
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
 
+<ore:logWood>.addItems([
+    <extraplanets:kepler22b_maple_logs:2>,
+    <extraplanets:kepler22b_maple_logs:3>,
+    <extraplanets:kepler22b_maple_logs:1>,
+    <extraplanets:kepler22b_maple_logs>,
+    <extraplanets:kepler22b_maple_logs2:1>,
+    <extraplanets:kepler22b_maple_logs2>
+]);
+
+<ore:plankWood>.addItems([
+    <extraplanets:kepler22b_planks:4>,
+    <extraplanets:kepler22b_planks:1>,
+    <extraplanets:kepler22b_planks:3>,
+    <extraplanets:kepler22b_planks:2>,
+    <extraplanets:kepler22b_planks>,
+    <extraplanets:kepler22b_planks:5>
+]);
+
+
 // --- Удаление
 
 // Iron
@@ -679,4 +698,3 @@ for denseSmartCable in denseSmartCables {
 // Polished Andesite
 <ore:stoneAndesite>.remove(<minecraft:stone:6>);
 <ore:stoneAndesitePolished>.remove(<minecraft:stone:6>);
-

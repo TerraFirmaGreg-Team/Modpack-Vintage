@@ -82,14 +82,14 @@ circuit_assembler.recipeBuilder()
   .inputs(<aunis:crystal_ender>, <aunis:crystal_red>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:circuit_control_base>)
-  .duration(200).EUt(1880).buildAndRegister();
+  .duration(200).EUt(15880).buildAndRegister();
 
 // Circuit_control_naquadah
 circuit_assembler.recipeBuilder()
   .inputs(<aunis:circuit_control_base> * 2, <aunis:crystal_ender>, <aunis:crystal_red>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <ore:circuitLuv> * 4)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:circuit_control_naquadah>)
-  .duration(250).EUt(2080).buildAndRegister();
+  .duration(250).EUt(22080).buildAndRegister();
 
 // DHD
 assembly_line.recipeBuilder()
@@ -108,7 +108,7 @@ assembly_line.recipeBuilder()
     <liquid:molten.titanium_carbide> * 6864, 
     <liquid:molten.hssg> * 4432)
   .outputs(<aunis:dhd_block>)
-  .duration(1800).EUt(8100).buildAndRegister();
+  .duration(1800).EUt(81100).buildAndRegister();
 
 // Holder_crystal
 star_forge.recipeBuilder()
@@ -130,25 +130,25 @@ autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_ender> * 2440])
  	.chancedOutput(<aunis:crystal_ender> * 1, 8000, 500)
-  .duration(1000).EUt(1290).buildAndRegister();
+  .duration(1000).EUt(13290).buildAndRegister();
 
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_yellow> * 2440])
  	.chancedOutput(<aunis:crystal_yellow> * 1, 8000, 500)
-  .duration(1000).EUt(1290).buildAndRegister();
+  .duration(1000).EUt(13290).buildAndRegister();
 
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_blue> * 2440])
  	.chancedOutput(<aunis:crystal_blue> * 1, 8000, 500)
-  .duration(1000).EUt(1290).buildAndRegister();
+  .duration(1000).EUt(13290).buildAndRegister();
 
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_red> * 2440])
  	.chancedOutput(<aunis:crystal_red> * 1, 8000, 500)
-  .duration(1000).EUt(1290).buildAndRegister();
+  .duration(1000).EUt(13290).buildAndRegister();
 
 // Crystal seed
 autoclave.recipeBuilder()
