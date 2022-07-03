@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.200iq.title}",
 	icon: "gregtech:meta_item_1 1 293",
 	x: -3.0d,
-	y: 8.0d,
+	y: 8.5d,
 	description: "{tfg.quests.lv.200iq.subtitle}",
 	text: [
 		"{tfg.quests.lv.200iq.desc1}",

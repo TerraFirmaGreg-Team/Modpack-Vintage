@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: -5.0d,
+	text: [
+		"- Флюгер, чтобы увидеть направление ветра"
+	],
+	dependencies: [
+		"85e10b5d"
+	],
+	tasks: [{
+		uid: "55264a1b",
+		type: "item",
+		items: [{
+			item: "weather2:wind_vane"
+		}]
+	}]
+}
