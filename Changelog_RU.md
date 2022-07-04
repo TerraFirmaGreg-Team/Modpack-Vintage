@@ -17,6 +17,7 @@
 * InventoryTweaks
 ### Удаление модов
 * Bogosorter
+* NetherPortalFix
 
 ## Version R3.4.1 - 03.07.2022
 #### [Lite, Huge]
