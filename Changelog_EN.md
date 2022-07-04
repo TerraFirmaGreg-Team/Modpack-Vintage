@@ -1,5 +1,24 @@
 # Changelog
 
+## Version R3.4.2 - 07/04/2022
+#### [Lite, Huge]
+### Modpack fixes
+* Fixed bug when using geologist. hammer, minecraft crashed or kicked you from the server.
+* Fixed dupe in refrigerator.
+* Disabled Imission textures in GT to fix a bug with machines that run on multiple ticks. (Will be fixed by the GT developers in the next update).
+* Fixed blue steel bucket crafting recipe.
+* Returned InventoryTweaks, since Bogosorter does not work with tfk chests, it was reported to the developers, as soon as they fix it, we will return it.
+* Turned on the temperature display, above the health bar.
+### Update mods
+* Xaeros Minimap
+* Xaeros World Map
+* TFG mod
+### New mods
+* InventoryTweaks
+### Removing mods
+* Bogosorter
+* Nether Portal Fix
+
 ## Version R3.4.1 - 07/03/2022
 #### [Lite, Huge]
 ### Modpack fixes
