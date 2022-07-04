@@ -113,6 +113,11 @@ for item in RemoveItemRecipesByName {
 macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
 arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
 
+// Разбор ведра из синей стали
+<recipemap:macerator>.findRecipe(2, [<minecraft:bucket:0>], null).remove();
+<recipemap:arc_furnace>.findRecipe(30, [<minecraft:bucket:0>], [<liquid:oxygen> * 56]).remove();
+
+
 // Diamond Horse Armor -> 8x Diamond Dust
 macerator.findRecipe(2, [<minecraft:diamond_horse_armor:0>], null).remove();
 // Gold Horse Armor -> 8x Gold Dust
@@ -918,6 +923,28 @@ assembler.recipeBuilder()
     .circuit(1)
     .outputs(<metaitem:crate.wood>)
     .duration(100).EUt(16).buildAndRegister();
+
+// Разбор ведра из синей стали
+arc_furnace.recipeBuilder()
+    .inputs([<minecraft:bucket:0>])
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotBlueSteel> * 3)
+    .duration(56).EUt(30).buildAndRegister();
+macerator.recipeBuilder()
+    .inputs(<minecraft:bucket:0>)
+    .outputs(<metaitem:dustBlueSteel> * 3)
+    .duration(56).EUt(2).buildAndRegister();
+
+// Разбор ведра из кованого стали
+arc_furnace.recipeBuilder()
+    .inputs([<tfc:metal/bucket/red_steel>])
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotWroughtIron> * 3)
+    .duration(56).EUt(30).buildAndRegister();
+macerator.recipeBuilder()
+    .inputs(<tfc:metal/bucket/red_steel>)
+    .outputs(<metaitem:dustWroughtIron> * 3)
+    .duration(56).EUt(2).buildAndRegister();
 
 // Телепорт
 TerminalRegistry.registerDevice(<charset:icon>, "disabled");

@@ -6,7 +6,11 @@
     "id",
     "meta",
     "nbt_has",
-    "nbt_rules"
+    "nbt_rules",
+    "nbt_all_values",
+    "count",
+    "ore_dict",
+    "nbt_size"
   ],
   "NbtSortRules": [
     "enchantment",
