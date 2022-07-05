@@ -1,28 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val ItemsToRemove as IItemStack[] = [
-  <weather2:tornado_sensor>,
-  <weather2:tornado_siren>,
-  <weather2:tornado_siren_manual>,
-  <weather2:weather_forecast>,
-  <weather2:weather_deflector>,
-  <weather2:sand_layer_placeable>,
-  <weather2:pocket_sand>,
-  <weather2:weather_item>,
-  <weather2:weather_machine>,
-  <weather2:anemometer>,
-  <weather2:wind_vane>
-];
-
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in ItemsToRemove{
-    recipes.remove(item);
-}
-
 // --- Добавление рецептов
 
 // Анемометр

@@ -2244,7 +2244,9 @@ val Aunis as IItemStack[] = [
 	<aunis:universe_ring_fragment>,
 	<aunis:crystal_white>,
 	<aunis:naquadah_alloy_raw>,
-	<aunis:naquadah_alloy>
+	<aunis:naquadah_alloy>,
+	<aunis:crystal_glyph_universe>,
+	<aunis:crystal_glyph_pegasus>
 ];
 for item in Aunis {
     JEI.removeAndHide(item);

@@ -591,6 +591,13 @@ assembler.recipeBuilder()
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .duration(1000).EUt(512).buildAndRegister();
 
+// Гидравлический подьемник
+assembler.recipeBuilder()
+   .inputs(<ore:plateDenseTungstenSteel> * 16, <metaitem:electric.piston.iv> * 4, <ore:plateLead> * 6)
+   .circuit(7)
+   .outputs(<galacticraftcore:platform>)
+   .duration(1000).EUt(1012).buildAndRegister();
+
 // Nose Cones 1-2 Tiers
 // Tier 1
 assembler.recipeBuilder()

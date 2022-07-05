@@ -93,7 +93,7 @@ assembler.recipeBuilder()
 
 // CU
 assembler.recipeBuilder()
-    .circuit(1)
+    .circuit(2)
     .inputs([
         <opencomputers:material:6> * 6,
         <ore:circuitLv>

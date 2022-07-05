@@ -4,9 +4,6 @@ import crafttweaker.item.IItemStack;
 
 val RemoveWorkbenchRecipes as IItemStack[] = [
     <aunis:beamer_block>,
-    <aunis:beamer_crystal_fluid>,
-    <aunis:beamer_crystal_items>,
-    <aunis:beamer_crystal_power>,
     <aunis:capacitor_block>,
     <aunis:capacitor_block>,
     <aunis:capacitor_block_empty>,
@@ -17,10 +14,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
     <aunis:crystal_control_dhd>,
     <aunis:crystal_ender>,
     <aunis:crystal_fragment>,
-    <aunis:crystal_glyph_dhd>,
-    <aunis:crystal_glyph_milkyway>,
     <aunis:crystal_glyph_pegasus>,
-    <aunis:crystal_glyph_stargate>,
     <aunis:crystal_glyph_universe>,
     <aunis:crystal_red>,
     <aunis:crystal_yellow>,
@@ -31,7 +25,6 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
     <aunis:naquadah_shard>,
     <aunis:notebook>,
     <aunis:page_mysterious>,
-    <aunis:page_notebook>,
     <aunis:stargate_milkyway_base_block>,
     <aunis:stargate_milkyway_member_block:6>,
     <aunis:stargate_milkyway_member_block:14>,
@@ -47,7 +40,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 
 // Удаление рецептов
 for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
+    //recipes.remove(item);
 }
 
 // --- Добавление рецептов
@@ -105,10 +98,10 @@ assembly_line.recipeBuilder()
     <ore:plateDenseNaquadahAlloy> * 3, 
     <ore:plateDenseNaquadahAlloy> * 3)
   .fluidInputs(
-    <liquid:molten.titanium_carbide> * 6864, 
+    <liquid:molten.incoloy_ma_956> * 6864, 
     <liquid:molten.hssg> * 4432)
   .outputs(<aunis:dhd_block>)
-  .duration(1800).EUt(81100).buildAndRegister();
+  .duration(1800).EUt(83100).buildAndRegister();
 
 // Holder_crystal
 star_forge.recipeBuilder()
@@ -234,3 +227,19 @@ star_forge.recipeBuilder()
 	.fluidInputs(<liquid:silicon_molten_red> * 144)
   .outputs(<aunis:crystal_control_dhd>)
   .duration(2000).EUt(10880).buildAndRegister();
+
+// circuit_control_crystal>
+star_forge.recipeBuilder()
+  .circuit(13)
+  .inputs(<ore:foilNaquadahAlloy> * 9, <aunis:circuit_control_naquadah> * 4, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
+  .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
+  .outputs(<aunis:circuit_control_crystal>)
+  .duration(200).EUt(280000).buildAndRegister();
+
+// beamer_block
+star_forge.recipeBuilder()
+  .circuit(14)
+  .inputs(<ore:plateDenseNaquadahAlloy> * 2, <aunis:circuit_control_naquadah>, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
+  .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
+  .outputs(<aunis:beamer_block>)
+  .duration(200).EUt(282000).buildAndRegister();

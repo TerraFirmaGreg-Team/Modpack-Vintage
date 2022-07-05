@@ -1,5 +1,24 @@
 # Changelog
 
+## Version R3.4.3 - 07/06/2022
+#### [Lite, Huge]
+### Modpack fixes
+* Fixed a bug where the gouishka could stay open when casting metal into molds or the like, now it closes, at least it should.
+* Now the strength consumption of tongs does not depend on the number of hot items in the inventory.
+* Fixed a bug where cutting wood for latex could be done with a pickaxe, but not with a knife (WTF).\
+* Included back Imission textures in GT.
+* Vanilla recipes for Weather2 are hidden.
+* Fixed CU recipe in OpenComputers.
+* Added recipe for hydraulic lifters from Galacticraft.
+* Added recipes for crystal glyphs for stargates.
+* Added a recipe for a beam transmitter and crystals for it, from Aunis.
+* Added deconstruction recipes for Advanced Storage Housing and Fluid Housing from AE2 and ExtraCells.
+### Update mods
+* TFG mod
+* HotNot
+* Gregtech
+* GregTech Food Option
+
 ## Version R3.4.2 - 07/04/2022
 #### [Lite, Huge]
 ### Modpack fixes
