@@ -1,5 +1,10 @@
 # Changelog
 
+## Version R3.4.3a - 07/06/2022
+#### [Lite, Huge]
+### Modpack fixes
+* The version of GregTech Food Option has been rolled back, as it causes crashes on servers, the developer has been informed, we are waiting for a fix.
+
 ## Version R3.4.3 - 07/06/2022
 #### [Lite, Huge]
 ### Modpack fixes
