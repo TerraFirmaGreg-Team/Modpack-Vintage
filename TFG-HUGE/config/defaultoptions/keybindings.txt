@@ -33,7 +33,7 @@ key_key.hotbar.8:9:NONE
 key_key.hotbar.9:10:NONE
 key_of.key.zoom:46:NONE
 key_Reload Menu | CTRL + ALT + :51:NONE
-key_Toggle Customization Overlay | CTRL + ALT + :0:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :40:NONE
 key_keybind.baublesinventory:48:NONE
 key_key.toggle_shaders:0:NONE
 key_[GC] Galaxy Map:50:NONE
@@ -48,16 +48,16 @@ key_Go Down (MPS Flight Control):0:NONE
 key_Cycle Tool Backward (MPS):0:NONE
 key_Cycle Tool Forward (MPS):0:NONE
 key_Cosmetic (MPS):0:NONE
-key_config.aunis.mode_scroll:29:NONE
-key_config.aunis.address_scroll:42:NONE
+key_config.aunis.mode_scroll:0:NONE
+key_config.aunis.address_scroll:0:NONE
 key_config.aunis.mode_up:0:NONE
 key_config.aunis.mode_down:0:NONE
 key_config.aunis.address_up:0:NONE
 key_config.aunis.address_down:0:NONE
-key_config.aunis.address_remove:211:NONE
-key_config.aunis.universe_dialer.abort:37:NONE
-key_config.aunis.universe_dialer.oc_program:24:NONE
-key_config.aunis.page_notebook.rename:19:NONE
+key_config.aunis.address_remove:0:NONE
+key_config.aunis.universe_dialer.abort:0:NONE
+key_config.aunis.universe_dialer.oc_program:0:NONE
+key_config.aunis.page_notebook.rename:0:NONE
 key_key.betterfoliage.gui:66:NONE
 key_key.findme.search:21:NONE
 key_key.ftbutilities.nbt:0:NONE
@@ -96,6 +96,7 @@ key_Open Module Manager:35:NONE
 key_Open Pre Launch Checklist GUI:25:NONE
 key_Open Portable NASA Workbench GUI:24:NONE
 key_key.astikorcarts.desc:19:NONE
+key_key.clipboardPaste:210:NONE
 key_key.carry.desc:42:NONE
 key_tfc.key.craft:0:NONE
 key_tfc.key.placeblock:47:NONE
@@ -118,6 +119,8 @@ key_key.craftingtweaks.decompressStack:0:NONE
 key_key.craftingtweaks.decompressAll:0:NONE
 key_key.craftingtweaks.refill_last:0:NONE
 key_key.craftingtweaks.refill_last_stack:0:NONE
+key_FpsReducer.key.guiOpen:0:NONE
+key_FpsReducer.key.forceIdle:0:NONE
 key_key.toggleLiquids:0:NONE
 key_key.toggleVisible:0:NONE
 key_Open Backpack:48:NONE
@@ -126,7 +129,6 @@ key_key.inventoryhud.openconfig:0:NONE
 key_key.inventoryhud.togglepot:0:NONE
 key_key.inventoryhud.togglearm:0:NONE
 key_key.inventoryhud.toggleall:0:NONE
-key_invtweaks.key.sort:19:NONE
 key_Open Key Wizard:65:NONE
 key_key.rotateup:0:NONE
 key_key.rotatedown:0:NONE
@@ -137,12 +139,8 @@ key_key.little.mark:0:NONE
 key_key.little.config.item:0:NONE
 key_key.little.undo:0:NONE
 key_key.little.redo:0:NONE
-key_key.oxygen_menu.openMenu:41:NONE
+key_key.oxygen_menu.openMenu:15:NONE
 key_key.teleportation.moveToFavCamp:0:NONE
-key_key.porterNextDestination:27:NONE
-key_key.porterPrevDestination:26:NONE
-key_key.debugDumpNBTItem:0:NONE
-key_key.debugDumpNBTBlock:0:NONE
 key_tombstone.message.knowledge_of_death:0:NONE
 key_key.toolbelt.open:157:NONE
 key_key.toolbelt.cycle.left:0:NONE
@@ -172,4 +170,5 @@ key_gui.xaero_map_zoom_in:0:NONE
 key_gui.xaero_map_zoom_out:0:NONE
 key_gui.xaero_quick_confirm:54:NONE
 key_gui.xaero_wm_toggle_minimap_radar:0:NONE
+key_key.sort_config:43:NONE
 key_key.control:29:NONE

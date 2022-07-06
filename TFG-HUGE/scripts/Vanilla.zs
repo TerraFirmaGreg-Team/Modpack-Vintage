@@ -14,7 +14,7 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:bucket>,
     <minecraft:enchanting_table>,
     <minecraft:name_tag>
-] as IItemStack[];
+];
 
 val RemoveItemRecipesByName = [
     "minecraft:stone_pressure_plate",
@@ -30,8 +30,9 @@ val RemoveItemRecipesByName = [
 val ItemsToRemoveFromFurnace as IItemStack[] = [
     <minecraft:dye:2>,
     <minecraft:stone>,
-    <minecraft:gold_nugget>
-] as IItemStack[];
+    <minecraft:gold_nugget>,
+    <minecraft:netherbrick>
+];
 
 // --- Удаление рецептов
 
@@ -343,8 +344,8 @@ assembler.findRecipe(16, [<metaitem:boltDiamond>, <metaitem:gearIron>, <metaitem
 // Котёл
 assembler.findRecipe(4, [<metaitem:plateIron> * 7, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
-// Компал
-assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4], null).remove();
+// Компас
+assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Нажимная пластина из железа
 assembler.findRecipe(16, [<metaitem:springSteel>, <metaitem:plateIron>], null).remove();
@@ -370,6 +371,38 @@ macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
 // Fermented Spider Eye
 mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
+
+// Red Nether Brick
+alloy_smelter.findRecipe(4, [<minecraft:netherbrick:0> * 2, <minecraft:nether_wart:0> * 2], null).remove();
+
+// Nether Wart Block
+packer.findRecipe(2, [<minecraft:nether_wart:0> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
+
+// Nether Brick
+alloy_smelter.findRecipe(2, [<metaitem:dustNetherrack>, <metaitem:shape.mold.ingot>], null).remove();
+extractor.findRecipe(2, [<minecraft:nether_brick:0>], null).remove();
+
+// Nether Brick Slab
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:lubricant>]).remove();
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:distilled_water> * 3]).remove();
+cutter.findRecipe(7, [<minecraft:nether_brick:0>], [<liquid:water> * 4]).remove();
+
+// Lava * 250
+extractor.findRecipe(140, [<minecraft:netherrack:0>], null).remove();
+
+// Netherrack Dust
+macerator.findRecipe(2, [<minecraft:netherrack:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:nether_brick_stairs:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:stone_slab:6>], null).remove();
+
+// Nether Brick
+compressor.findRecipe(2, [<minecraft:netherbrick:0> * 4], null).remove();
+
+// Nether Brick Fence
+assembler.findRecipe(4, [<minecraft:nether_brick:0>, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+
+// Nether Brick Stairs
+assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
 // --- Добавление рецептов
 
@@ -662,13 +695,13 @@ centrifuge.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:slabStonePolished>, <minecraft:stick> * 6)
     .outputs(<minecraft:armor_stand>)
-    .duration(300).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Воронка
 assembler.recipeBuilder()
     .inputs(<ore:chest>, <ore:plateIronAny> * 5)
     .outputs(<minecraft:hopper>)
-    .duration(400).EUt(2).buildAndRegister();
+    .duration(100).EUt(2).buildAndRegister();
 
 // Базальтовый камень
 compressor.recipeBuilder()
@@ -707,7 +740,7 @@ macerator.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:stickWood> * 2, <ore:ringIronAny> * 2)
     .outputs(<minecraft:tripwire_hook>)
-    .duration(400).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Проигрыватель
 assembler.recipeBuilder()
@@ -720,50 +753,50 @@ assembler.recipeBuilder()
     .inputs(<ore:cobblestone>, <ore:slabWood>, <ore:gearSmallIronAny>, <ore:stickIronAny>)
     .fluidInputs([<liquid:red_alloy> * 144])
     .outputs(<minecraft:piston>)
-    .duration(240).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Котёл
 assembler.recipeBuilder()
     .inputs(<ore:plateIronAny> * 7)
     .circuit(7)
     .outputs(<minecraft:cauldron>)
-    .duration(700).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Компас
 assembler.recipeBuilder()
     .inputs(<metaitem:stickIronMagnetic>, <ore:plateIronAny> * 4)
     .outputs(<minecraft:compass>)
-    .duration(400).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Нажимная пластина из железа
 assembler.recipeBuilder()
     .inputs(<metaitem:springSteel>, <ore:plateIronAny>)
     .outputs(<minecraft:heavy_weighted_pressure_plate>)
-    .duration(200).EUt(16).buildAndRegister();
+    .duration(100).EUt(16).buildAndRegister();
 
 // Вагонетка
 assembler.recipeBuilder()
     .inputs(<ore:plateIronAny> * 3, <ore:ringIronAny> * 4)
     .outputs(<minecraft:minecart>)
-    .duration(200).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Железные прутья
 assembler.recipeBuilder()
     .inputs(<ore:stickIronAny> * 3)
     .circuit(3)
     .outputs(<minecraft:iron_bars> * 4)
-    .duration(300).EUt(4).buildAndRegister();
+    .duration(100).EUt(4).buildAndRegister();
 
 // Железная дверь
 assembler.recipeBuilder()
     .inputs(<minecraft:iron_bars>, <ore:plateIronAny> * 4)
     .fluidInputs([<liquid:steel> * 16])
     .outputs(<minecraft:iron_door>)
-    .duration(400).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();
 
 // Ведро
 bender.recipeBuilder()
     .inputs(<metaitem:plateBlueSteel> * 3)
     .circuit(12)
     .outputs(<minecraft:bucket>)
-    .duration(400).EUt(7).buildAndRegister();
+    .duration(100).EUt(7).buildAndRegister();

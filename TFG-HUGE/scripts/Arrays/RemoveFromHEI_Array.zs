@@ -34,7 +34,7 @@ val AE2WTLib as IItemStack[] = [
 	<wft:wft_creative>,
 	<wct:wct_creative>,
 	<ae2wtlib:wut_creative>
-] as IItemStack[];
+];
 for item in AE2WTLib {
   	JEI.removeAndHide(item);
 }
@@ -60,8 +60,8 @@ val AE2EL as IItemStack[] = [
 	<appliedenergistics2:smooth_sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_stairs>,
 	<appliedenergistics2:sky_stone_small_brick>,
-	<appliedenergistics2:sky_stone_brick>,
-] as IItemStack[];
+	<appliedenergistics2:sky_stone_brick>
+];
 for item in AE2EL {
     JEI.removeAndHide(item);
 }
@@ -286,7 +286,7 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftplanets:schematic:1>,
 	<galacticraftplanets:schematic:2>,
 	<galacticraftplanets:telepad_short>
-] as IItemStack[];
+];
 for item in Galacticraft {
     JEI.removeAndHide(item);
 }
@@ -459,7 +459,7 @@ val GalaxySpace as IItemStack[] = [
 	<galaxyspace:schematics:6>,
 	<galaxyspace:schematics:5>,
 	<galaxyspace:schematics:4>
-] as IItemStack[];
+];
 for item in GalaxySpace {
   	JEI.removeAndHide(item);
 }
@@ -523,7 +523,11 @@ val GregTech as IItemStack[] = [
     <metaitem:dustSmallFireclay>,
     <metaitem:dustTinyFireclay>,
 	// Wooden Barrel
-	<metaitem:drum.wood>
+	<metaitem:drum.wood>,
+	// Nether dust
+	<metaitem:dustNetherrack>,
+	<metaitem:dustSmallNetherrack>,
+	<metaitem:dustTinyNetherrack>
 ];
 for item in GregTech {
     JEI.removeAndHide(item);
@@ -548,7 +552,7 @@ val CellarAddon as IItemStack[] = [
     <cellars:black_steel_ice_saw_head>,
     <cellars:red_steel_ice_saw_head>,
     <cellars:blue_steel_ice_saw_head>
-] as IItemStack[];
+];
 for item in CellarAddon {
     JEI.removeAndHide(item);
 }
@@ -556,7 +560,7 @@ for item in CellarAddon {
 val HorsePower as IItemStack[] = [
     <horsepower:flour>,
 	<horsepower:dough> 
-] as IItemStack[];
+];
 for item in HorsePower {
     JEI.removeAndHide(item);
 }
@@ -565,8 +569,8 @@ val TFCFlorae as IItemStack[] = [
     <tfcflorae:tools/flint/hammer/flint>,
 	<tfcflorae:tools/flint/hammer_head/flint>,
 	// Gems
-	<tfcflorae:gem/amber:*>,
-] as IItemStack[];
+	<tfcflorae:gem/amber:*>
+];
 for item in TFCFlorae {
     JEI.removeAndHide(item);
 }
@@ -753,7 +757,8 @@ val TFCTech as IItemStack[] = [
 	<tfctech:metal/blue_steel_wire:4>,
 	<tfctech:metal/red_steel_wire:4>,
 	// Other
-    <tfctech:powder/potash>
+    <tfctech:powder/potash>,
+	<tfctech:metal/iron_tongs>
 ];
 for item in TFCTech {
     JEI.removeAndHide(item);
@@ -781,8 +786,8 @@ val TFCThings as IItemStack[] = [
 	<tfcthings:crown/platinum_jade>,
 	<tfcthings:crown/platinum_agate>,
 	<tfcthings:crown/platinum_beryl>,
-	<tfcthings:crown/platinum_tourmaline>,
-] as IItemStack[];
+	<tfcthings:crown/platinum_tourmaline>
+];
 for item in TFCThings {
     JEI.removeAndHide(item);
 }
@@ -1200,7 +1205,7 @@ for item in TFC {
 val ArchitectureCraft as IItemStack[] = [
     <architecturecraft:sawblade>,
 	<architecturecraft:largepulley> 
-] as IItemStack[];
+];
 for item in ArchitectureCraft {
     JEI.removeAndHide(item);
 }
@@ -1215,7 +1220,7 @@ val FTB as IItemStack[] = [
 	<ftbquests:loot_crate_opener>,
 	<ftbquests:loot_crate_storage>,
 	<itemfilters:filter>
-] as IItemStack[];
+];
 for item in FTB {
     JEI.removeAndHide(item);
 }
@@ -1226,7 +1231,7 @@ val TheOneProbe as IItemStack[] = [
 	<theoneprobe:diamond_helmet_probe>,
 	<theoneprobe:gold_helmet_probe>,
 	<theoneprobe:iron_helmet_probe>
-] as IItemStack[];
+];
 for item in TheOneProbe {
     JEI.removeAndHide(item);
 }
@@ -1259,7 +1264,7 @@ val ProjectRed as IItemStack[] = [
     <projectred-core:drawplate>,
     <projectred-fabrication:ic_chip:1>,
     <projectred-core:screwdriver>
-] as IItemStack[];
+];
 for item in ProjectRed {
     JEI.removeAndHide(item);
 }
@@ -1283,8 +1288,8 @@ val TombStone as IItemStack[] = [
     <tombstone:ankh_of_pray>,
     <tombstone:crafting_ingredient:*>,
     <tombstone:bone_needle>,
-    <tombstone:impregnated_diamond>,
-] as IItemStack[];
+    <tombstone:impregnated_diamond>
+];
 for item in TombStone {
     JEI.removeAndHide(item);
 }
@@ -1461,8 +1466,18 @@ val Vanilla as IItemStack[] = [
 	<minecraft:waterlily>,
 	<minecraft:golden_horse_armor>,
 	<minecraft:diamond_horse_armor>,
-	<minecraft:iron_trapdoor>
-] as IItemStack[];
+	<minecraft:iron_trapdoor>,
+	// Nether
+	<minecraft:nether_wart>,
+	<minecraft:netherrack>,
+	<minecraft:nether_brick>,
+	<minecraft:nether_brick_stairs>,
+	<minecraft:stone_slab:6>,
+	<minecraft:nether_wart_block>,
+	<minecraft:red_nether_brick>,
+	<minecraft:nether_brick_fence>,
+	<minecraft:netherbrick>
+];
 for item in Vanilla {
     JEI.removeAndHide(item);
 }
@@ -1472,7 +1487,7 @@ val PlanetProgression as IItemStack[] = [
   	<planetprogression:block_multi>,
 	<planetprogression:satellite_builder>,
 	<planetprogression:advanced_launch_pad_full>
-] as IItemStack[];
+];
 for item in PlanetProgression {
     JEI.removeAndHide(item);
 }
@@ -2174,14 +2189,14 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier9_items:5>,
 	<extraplanets:tier10_items:5>,
 	<extraplanets:tier10_items:4>
-] as IItemStack[];
+];
 for item in ExtraPlanets {
     JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [
-    <metaitem:brick.adobe_fired>,
-    <metaitem:brick.adobe>,
+	<metaitem:brick.adobe_fired>,
+	<metaitem:brick.adobe>,
 	<metaitem:food.potato_on_a_stick>,
 	<metaitem:food.fish_rotten>,
 	<metaitem:component.dough>,
@@ -2195,7 +2210,7 @@ for item in GTFO {
 }
 
 val FirmaLife as IItemStack[] = [
-    <firmalife:finished_pizza>,
+	<firmalife:finished_pizza>,
 	<firmalife:cooked_pizza>
 ];
 for item in FirmaLife {
@@ -2203,11 +2218,11 @@ for item in FirmaLife {
 }
 
 val MicroblocksCBE as IItemStack[] = [
-    <microblockcbe:microblock:1>,
+	<microblockcbe:microblock:1>,
 	<microblockcbe:saw_stone>,
 	<microblockcbe:saw_iron>,
 	<microblockcbe:saw_diamond>,
-    <microblockcbe:stone_rod>
+	<microblockcbe:stone_rod>
 ];
 for item in MicroblocksCBE {
     JEI.removeAndHide(item);
@@ -2216,17 +2231,33 @@ for item in MicroblocksCBE {
 val Aunis as IItemStack[] = [
 	<aunis:naquadah_ore>,
 	<aunis:naquadah_ore_stone>,
+	<aunis:naquadah_shard>,
+	<aunis:naquadah_block>,
 	// Universe wip
 	<aunis:invisible_block>,
 	<aunis:stargate_universe_base_block>,
 	<aunis:stargate_universe_member_block:6>,
 	<aunis:stargate_universe_member_block:14>,
+	<aunis:stargate_orlin_member_block>,
+	<aunis:stargate_orlin_base_block>,
 	<aunis:universe_dialer>,
 	<aunis:universe_ring_fragment>,
 	<aunis:crystal_white>,
 	<aunis:naquadah_alloy_raw>,
-	<aunis:naquadah_alloy>
+	<aunis:naquadah_alloy>,
+	<aunis:crystal_glyph_universe>,
+	<aunis:crystal_glyph_pegasus>
 ];
 for item in Aunis {
+    JEI.removeAndHide(item);
+}
+
+val Weather2 as IItemStack[] = [
+	<weather2:sand_layer_placeable>,
+	<weather2:weather_machine>,
+	<weather2:pocket_sand>,
+	<weather2:weather_item>
+];
+for item in Weather2 {
     JEI.removeAndHide(item);
 }

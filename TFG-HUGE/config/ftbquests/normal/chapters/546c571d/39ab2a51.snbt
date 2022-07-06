@@ -2,7 +2,7 @@
 	title: "300IQ",
 	icon: "gregtech:meta_item_1 1 292",
 	x: -3.0d,
-	y: 7.0d,
+	y: 7.5d,
 	text: [
 		"§oThis is a guide on how to automatically route §lall§r§o your Hot Ingots to your Vacuum Freezer while keeping everything automated perfectly fine.§r",
 		"",
@@ -24,6 +24,7 @@
 		"",
 		"§9Other Note:§r The Ore Dictionary Filter partially supports §dregex§r, hover over the info icon for more information."
 	],
+	hide_dependency_lines: true,
 	dependencies: [
 		"6c622d78"
 	],

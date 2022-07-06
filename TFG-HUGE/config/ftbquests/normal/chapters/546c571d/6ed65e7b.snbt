@@ -1,0 +1,18 @@
+{
+	x: -3.0d,
+	y: 6.5d,
+	text: [
+		"- Погодная сирена, чтобы предупредить вас о смертоносных штормах"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "268eba94",
+		type: "item",
+		items: [{
+			item: "weather2:tornado_siren"
+		}]
+	}]
+}

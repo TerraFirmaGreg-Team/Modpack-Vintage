@@ -36,27 +36,37 @@ import mods.gregtech.material.Material;
 // Other
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:copper>.addTools(7, 1, 85);
-<material:red_steel>.addFlags("generate_long_rod");
-<material:blue_steel>.addFlags("generate_long_rod");
-<material:black_steel>.addFlags("generate_long_rod", "generate_dense");
+<material:copper>.addFlags("generate_bolt_screw");
+<material:red_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
+<material:blue_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
+<material:black_steel>.addFlags("generate_long_rod", "generate_dense", "generate_bolt_screw");
 <material:magnesium>.addFlags("generate_plate");
 <material:titanium>.addFlags("generate_foil", "generate_dense");
-<material:zinc>.addFlags("generate_long_rod", "generate_gear");
-<material:nickel>.addFlags("generate_long_rod", "generate_gear");
-<material:copper>.addFlags("generate_long_rod", "generate_dense");
-<material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate");
+<material:zinc>.addFlags("generate_long_rod", "generate_gear", "generate_bolt_screw", "generate_bolt");
+<material:nickel>.addFlags("generate_long_rod", "generate_gear", "generate_bolt_screw", "generate_bolt");
+<material:copper>.addFlags("generate_long_rod", "generate_dense", "generate_gear");
+<material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate", "generate_bolt_screw", "generate_bolt");
+<material:bismuth_bronze>.addFlags("generate_gear");
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:steel>.addFlags("generate_dense");
 <material:iron>.addFlags("generate_dense");
-<material:tin>.addFlags("generate_dense");
+<material:tin>.addFlags("generate_dense", "generate_gear");
 <material:aluminium>.addFlags("generate_dense");
 <material:bronze>.addFlags("generate_dense");
 <material:osmiridium>.addFlags("generate_dense");
 <material:hsss>.addFlags("generate_dense");
 <material:stainless_steel>.addFlags("generate_dense");
-<material:platinum>.addFlags("generate_dense");
+<material:platinum>.addFlags("generate_dense", "generate_gear");
+<material:gold>.addFlags("generate_gear");
+<material:brass>.addFlags("generate_gear");
+<material:lead>.addFlags("generate_gear");
+<material:rose_gold>.addFlags("generate_gear");
+<material:silver>.addFlags("generate_gear");
+<material:sterling_silver>.addFlags("generate_gear");
 <material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
+<material:netherrack>.addFlags("no_unification");
+<material:wheat>.addFlags("no_unification");
 
 // Dry Ice
 var dry_ice = MaterialBuilder(32050, "dry_ice")

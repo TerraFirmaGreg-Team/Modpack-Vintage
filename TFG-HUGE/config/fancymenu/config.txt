@@ -24,22 +24,7 @@ B:showcustomizationbuttons = 'false';
 ##[mainmenu]
 
 S:copyrightposition = 'bottom-left';
-B:hidebranding = 'true';
 S:copyrightcolor = '#ff2e2e';
-B:hidelogo = 'true';
-B:hiderealmsnotifications = 'true';
-B:hideforgenotifications = 'true';
-
-
-##[mainmenu_splash]
-
-S:splashcolor = '#ffff00';
-I:splashrotation = '-20';
-I:splashy = '0';
-I:splashx = '0';
-B:hidesplashtext = 'true';
-S:splashtextfile = '';
-S:splashorientation = 'original';
 
 
 ##[loading]
@@ -76,7 +61,7 @@ I:gridsize = '10';
 B:editordeleteconfirmation = 'false';
 B:showgrid = 'true';
 [If the warning when trying to move an vanilla button without an orientation should be displayed or not.]
-B:showvanillamovewarning = 'true';
+B:showvanillamovewarning = 'false';
 
 
 ##[ui]

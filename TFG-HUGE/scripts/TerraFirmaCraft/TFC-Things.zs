@@ -42,7 +42,7 @@ val ItemsToRemove as IItemStack[] = [
     <tfcthings:sling_ammo_light>,
     <tfcthings:sling_ammo_spread>,
     <tfcthings:diamond_grit>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

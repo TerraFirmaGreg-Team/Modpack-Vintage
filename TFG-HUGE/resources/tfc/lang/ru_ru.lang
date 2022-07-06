@@ -1,0 +1,7 @@
+# TFC
+item.tfc.metal.sheet.wrought_iron.name=Обшивка из сплава кованного железа для доменной печи
+item.tfc.metal.ingot.wrought_iron.name=Незаконченный слиток кованного железа
+item.tfc.wooden_bucket.name=Деревянное ведро
+item.tfc.wooden_bucket.filled.name=Деревянное ведро с %s
+item.tfc.metal.bucket.red_steel.name=Ведро из кованного железа
+item.tfc.metal.bucket.red_steel.filled.name=Ведро из кованного железа с %s

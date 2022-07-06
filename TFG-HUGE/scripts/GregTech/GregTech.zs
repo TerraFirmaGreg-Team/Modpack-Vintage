@@ -113,6 +113,11 @@ for item in RemoveItemRecipesByName {
 macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
 arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
 
+// Разбор ведра из синей стали
+<recipemap:macerator>.findRecipe(2, [<minecraft:bucket:0>], null).remove();
+<recipemap:arc_furnace>.findRecipe(30, [<minecraft:bucket:0>], [<liquid:oxygen> * 56]).remove();
+
+
 // Diamond Horse Armor -> 8x Diamond Dust
 macerator.findRecipe(2, [<minecraft:diamond_horse_armor:0>], null).remove();
 // Gold Horse Armor -> 8x Gold Dust
@@ -313,6 +318,9 @@ distillation_tower.findRecipe(7680, null, [<liquid:liquid_ender_air> * 200000]).
 // Stone Dup
 rock_breaker.findRecipe(7, [<minecraft:stone>], null).remove();
 rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
+
+// Nether Dust decomp
+centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 
 // --- Добавление рецептов
 
@@ -718,7 +726,7 @@ electrolyzer.recipeBuilder()
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
     .inputs([<ore:dustDiamond>, <ore:dustIridium>])
-    .fluidInputs([<liquid:nether_air> * 8000, <liquid:rocket_fuel> * 1000])
+    .fluidInputs([<liquid:mars_air> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 2])
     .duration(200).EUt(7680).buildAndRegister();
 chemical_reactor.recipeBuilder()
@@ -863,17 +871,20 @@ centrifuge.recipeBuilder()
     .chancedOutput(<metaitem:dustWood>, 2500, 700)
     .chancedOutput(<metaitem:plant_ball>, 3750, 900)
     .chancedOutput(<metaitem:rubber_drop>, 5000, 1200)
-    .fluidOutputs(<fluid:methane> * 65).EUt(20).duration(200).buildAndRegister();
+    .fluidOutputs(<fluid:methane> * 65)
+    .duration(200).EUt(20).buildAndRegister();
 
 // Лава из незерака
 extractor.recipeBuilder()
     .inputs(<ore:netherrack>)
-    .fluidOutputs(<fluid:lava> * 250).EUt(140).duration(330).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 250)
+    .duration(330).EUt(140).buildAndRegister();
 	
 // Лава из магма блока
 extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
-    .fluidOutputs(<fluid:lava> * 750).EUt(140).duration(220).buildAndRegister();
+    .fluidOutputs(<fluid:lava> * 750)
+    .duration(220).EUt(140).buildAndRegister();
 
 // Гравий --> кремень
 forge_hammer.recipeBuilder()
@@ -912,6 +923,28 @@ assembler.recipeBuilder()
     .circuit(1)
     .outputs(<metaitem:crate.wood>)
     .duration(100).EUt(16).buildAndRegister();
+
+// Разбор ведра из синей стали
+arc_furnace.recipeBuilder()
+    .inputs([<minecraft:bucket:0>])
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotBlueSteel> * 3)
+    .duration(56).EUt(30).buildAndRegister();
+macerator.recipeBuilder()
+    .inputs(<minecraft:bucket:0>)
+    .outputs(<metaitem:dustBlueSteel> * 3)
+    .duration(56).EUt(2).buildAndRegister();
+
+// Разбор ведра из кованого стали
+arc_furnace.recipeBuilder()
+    .inputs([<tfc:metal/bucket/red_steel>])
+    .fluidInputs(<liquid:oxygen> * 56)
+    .outputs(<metaitem:ingotWroughtIron> * 3)
+    .duration(56).EUt(30).buildAndRegister();
+macerator.recipeBuilder()
+    .inputs(<tfc:metal/bucket/red_steel>)
+    .outputs(<metaitem:dustWroughtIron> * 3)
+    .duration(56).EUt(2).buildAndRegister();
 
 // Телепорт
 TerminalRegistry.registerDevice(<charset:icon>, "disabled");

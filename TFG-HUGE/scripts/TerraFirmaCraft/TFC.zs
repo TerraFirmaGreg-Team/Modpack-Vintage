@@ -50,10 +50,12 @@ val RemoveItemRecipesByName = [
 	"tfc:paper",
 	"tfc:fire_clay",
 	"tfc:vanilla/cauldron",
-	"tfc:blast_furnace"
+	"tfc:blast_furnace",
+	"tfc:alabaster_brick"
 ] as string[];
 
 val RemoveRecipesInBarrel = [
+	// Concrete
 	"tfc:concrete_white",
 	"tfc:concrete_orange",
 	"tfc:concrete_magenta",
@@ -69,7 +71,9 @@ val RemoveRecipesInBarrel = [
 	"tfc:concrete_brown",
 	"tfc:concrete_green",
 	"tfc:concrete_red",
-	"tfc:concrete_black"
+	"tfc:concrete_black",
+	// Alabaster
+	"tfc:plain_alabaster"
 ] as string[];
 
 val RemoveItemsFromQuern as IItemStack[] = [
@@ -80,7 +84,64 @@ val RemoveItemsFromQuern as IItemStack[] = [
 	<tfc:ore/gypsum>,
 	<tfc:powder/hematite>,
 	<minecraft:redstone> * 8,
-	<tfc:powder/flux> * 6,
+	<tfc:powder/flux> * 6
+];
+
+val Alabaster as IItemStack[] = [
+	<tfc:alabaster/raw/white>,
+	<tfc:alabaster/raw/orange>,
+	<tfc:alabaster/raw/magenta>,
+	<tfc:alabaster/raw/light_blue>,
+	<tfc:alabaster/raw/yellow>,
+	<tfc:alabaster/raw/lime>,
+	<tfc:alabaster/raw/pink>,
+	<tfc:alabaster/raw/gray>,
+	<tfc:alabaster/raw/silver>,
+	<tfc:alabaster/raw/cyan>,
+	<tfc:alabaster/raw/purple>,
+	<tfc:alabaster/raw/blue>,
+	<tfc:alabaster/raw/brown>,
+	<tfc:alabaster/raw/green>,
+	<tfc:alabaster/raw/red>,
+	<tfc:alabaster/raw/black>
+];
+
+val AlabasterBricks as IItemStack[] = [
+	<tfc:alabaster/bricks/white>,
+	<tfc:alabaster/bricks/orange>,
+	<tfc:alabaster/bricks/magenta>,
+	<tfc:alabaster/bricks/light_blue>,
+	<tfc:alabaster/bricks/yellow>,
+	<tfc:alabaster/bricks/lime>,
+	<tfc:alabaster/bricks/pink>,
+	<tfc:alabaster/bricks/gray>,
+	<tfc:alabaster/bricks/silver>,
+	<tfc:alabaster/bricks/cyan>,
+	<tfc:alabaster/bricks/purple>,
+	<tfc:alabaster/bricks/blue>,
+	<tfc:alabaster/bricks/brown>,
+	<tfc:alabaster/bricks/green>,
+	<tfc:alabaster/bricks/red>,
+	<tfc:alabaster/bricks/black>
+];
+
+val AlabasterPolished as IItemStack[] = [
+	<tfc:alabaster/polished/white>,
+	<tfc:alabaster/polished/orange>,
+	<tfc:alabaster/polished/magenta>,
+	<tfc:alabaster/polished/light_blue>,
+	<tfc:alabaster/polished/yellow>,
+	<tfc:alabaster/polished/lime>,
+	<tfc:alabaster/polished/pink>,
+	<tfc:alabaster/polished/gray>,
+	<tfc:alabaster/polished/silver>,
+	<tfc:alabaster/polished/cyan>,
+	<tfc:alabaster/polished/purple>,
+	<tfc:alabaster/polished/blue>,
+	<tfc:alabaster/polished/brown>,
+	<tfc:alabaster/polished/green>,
+	<tfc:alabaster/polished/red>,
+	<tfc:alabaster/polished/black>
 ];
 
 // --- Удаление рецептов
@@ -444,11 +505,17 @@ Barrel.addRecipe("tfg/tfc/rum", <minecraft:sugar>, <liquid:hot_water> * 500, <li
 // Липкая резина
 Barrel.addRecipe("tfg/tfc/sticky_resin", <tfctech:latex/rubber_mix>, <liquid:latex> * 250, <metaitem:rubber_drop>, 6);
 
+// Алабастер
+Barrel.addRecipe("tfg/tfc/alabaster", <metaitem:dustGypsum> * 2, <liquid:limewater> * 250, <tfc:alabaster/raw/plain>, 6);
+
 // Flux в молотилке
 Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
 recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
+
+// Alabaster Bricks
+recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:gtce.tool.files>]);
 
 // Контроллер доменной печи
 recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
@@ -465,7 +532,7 @@ recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
 // TFC Resin --> Sticky resin
 furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 
-// Рецепты для всех сырых камней
+// Сырой камень -> Сырой камень
 for item in TFC_Raws {
     rock_breaker.recipeBuilder()
     	.notConsumable(item)
@@ -628,13 +695,99 @@ for i, TFC_Stone_Buttons in TFC_Stone_Buttons {
     	.duration(200).EUt(7).buildAndRegister();
 }
 
+// 
+for i, GT_Dusts_For_Raw_Stones in GT_Dusts_For_Raw_Stones {
+    // Raw Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raws[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Raw Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raw_Stairs[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Raw Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Raw_Slabs[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Smooths[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Stairs_Smooth[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Smooth Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Slabs_Smooth[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Block
+	macerator.recipeBuilder()
+    	.inputs(TFC_Cobbles[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 3)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Stairs
+	macerator.recipeBuilder()
+    	.inputs(TFC_Stairs_Cobble[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 2)
+    	.duration(100).EUt(4).buildAndRegister();
+
+	// Cobble Slab
+	macerator.recipeBuilder()
+    	.inputs(TFC_Slabs_Cobble[i])
+    	.outputs(GT_Dusts_For_Raw_Stones * 1)
+    	.duration(100).EUt(4).buildAndRegister();
+}
+
 // Дерево -> Пиломатериалы
 for i, TFC_Lumber in TFC_Lumber {
-    cutter.recipeBuilder()
+	
+	cutter.recipeBuilder()
     	.inputs([TFC_Logs[i]])
 		.fluidInputs([<liquid:lubricant> * 1])
     	.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
+
+	saw_mill.recipeBuilder()
+		.inputs([TFC_Logs[i]])
+		.circuit(1)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([TFC_Lumber * 64, <metaitem:dustWood> * 8])
+		.duration(450)
+		.EUt(32)
+		.buildAndRegister();
+}
+
+// Дерево -> Пиломатериалы (Для эвкалипта)
+for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
+	
+	cutter.recipeBuilder()
+    	.inputs([TFC_EucaliptusLogs])
+		.fluidInputs([<liquid:lubricant> * 1])
+    	.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
+    	.duration(200).EUt(7).buildAndRegister();
+
+	saw_mill.recipeBuilder()
+		.inputs([TFC_EucaliptusLogs])
+		.circuit(1)
+		.fluidInputs([<liquid:lubricant> * 1000])
+		.outputs([<tfc:wood/lumber/eucalyptus> * 64, <metaitem:dustWood> * 8])
+		.duration(450)
+		.EUt(32)
+		.buildAndRegister();
 }
 
 // Доски -> Пиломатериалы
@@ -1218,18 +1371,8 @@ for i, All_Seeds in All_Seeds {
 }
 
 
-// Log -> Lumber (Saw Mill) + Lumber -> dustWood
+// Lumber -> dustWood
 for i, TFC_Logs in TFC_Logs {
-  
-	saw_mill.recipeBuilder()
-		.inputs([TFC_Logs])
-		.circuit(1)
-		.fluidInputs([<liquid:lubricant> * 1000])
-		.outputs([TFC_Lumber[i] * 64, <metaitem:dustWood> * 8])
-		.duration(450)
-		.EUt(32)
-		.buildAndRegister();
-
 	saw_mill.recipeBuilder()
 		.inputs([TFC_Lumber[i]])
 		.circuit(2)
@@ -1238,3 +1381,297 @@ for i, TFC_Logs in TFC_Logs {
 		.outputs([<metaitem:dustSmallWood> * 32])
 		.duration(400).EUt(12).buildAndRegister();
 }
+
+// Hide Raw Small -> Hide Soaked Small
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/raw/small>)
+	.fluidInputs(<liquid:limewater> * 100)
+	.circuit(16)
+	.outputs(<tfc:hide/soaked/small>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Raw Medium -> Hide Soaked Medium
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/raw/medium>)
+	.fluidInputs(<liquid:limewater> * 200)
+	.circuit(16)
+	.outputs(<tfc:hide/soaked/medium>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Raw Large -> Hide Soaked Large
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/raw/large>)
+	.fluidInputs(<liquid:limewater> * 300)
+	.circuit(16)
+	.outputs(<tfc:hide/soaked/large>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Soaked Small -> Hide Scraped Small
+assembler.recipeBuilder()
+	.inputs(<tfc:hide/soaked/small>)
+	.circuit(16)
+	.outputs(<tfc:hide/scraped/small>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Soaked Medium -> Hide Scraped Medium
+assembler.recipeBuilder()
+	.inputs(<tfc:hide/soaked/medium>)
+	.circuit(16)
+	.outputs(<tfc:hide/scraped/medium>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Soaked Large -> Hide Scraped Large
+assembler.recipeBuilder()
+	.inputs(<tfc:hide/soaked/large>)
+	.circuit(16)
+	.outputs(<tfc:hide/scraped/large>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Scrapped Small -> Hide Prepared Small
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/small>)
+	.fluidInputs(<liquid:fresh_water> * 100)
+	.circuit(16)
+	.outputs(<tfc:hide/prepared/small>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Scrapped Medium -> Hide Prepared Medium
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/medium>)
+	.fluidInputs(<liquid:fresh_water> * 200)
+	.circuit(16)
+	.outputs(<tfc:hide/prepared/medium>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Scrapped Large -> Hide Prepared Large
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/large>)
+	.fluidInputs(<liquid:fresh_water> * 300)
+	.circuit(16)
+	.outputs(<tfc:hide/prepared/large>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Prepared Small -> Leather
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/small>)
+	.fluidInputs(<liquid:tannin> * 100)
+	.circuit(16)
+	.outputs(<minecraft:leather>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Prepared Medium -> Leather
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/medium>)
+	.fluidInputs(<liquid:tannin> * 200)
+	.circuit(16)
+	.outputs(<minecraft:leather>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Hide Prepared Large -> Leather
+mixer.recipeBuilder()
+	.inputs(<tfc:hide/scraped/large>)
+	.fluidInputs(<liquid:tannin> * 300)
+	.circuit(16)
+	.outputs(<minecraft:leather>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// WoodTannin -> Liquid Tanin
+mixer.recipeBuilder()
+	.inputs(<ore:logWoodTannin>)
+	.fluidInputs(<liquid:fresh_water> * 1000)
+	.circuit(16)
+	.fluidOutputs(<liquid:tannin> * 16000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// BoneMeal -> Primitive Glue
+mixer.recipeBuilder()
+	.inputs(<minecraft:dye:15>)
+	.fluidInputs(<liquid:limewater> * 500)
+	.circuit(16)
+	.outputs(<tfc:glue>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Primitive Glue -> GT Glue
+centrifuge.recipeBuilder()
+	.inputs(<tfc:glue>)
+	.fluidOutputs(<liquid:glue> * 10)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Jute -> Jute Fiber
+mixer.recipeBuilder()
+	.inputs(<tfc:crop/product/jute>)
+	.fluidInputs(<liquid:fresh_water> * 100)
+	.circuit(16)
+	.outputs(<tfc:crop/product/jute_fiber> * 2)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Sand -> Mortar
+mixer.recipeBuilder()
+	.inputs(<ore:sand>)
+	.fluidInputs(<liquid:limewater> * 50)
+	.circuit(16)
+	.outputs(<tfc:mortar> * 32)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Wood Ash - > Lye
+mixer.recipeBuilder()
+	.inputs(<tfc:wood_ash>)
+	.fluidInputs(<liquid:hot_water> * 125)
+	.circuit(16)
+	.fluidOutputs(<liquid:lye> * 125)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Salt Water -> Brine
+mixer.recipeBuilder()
+	.fluidInputs([<liquid:salt_water> * 9000, <liquid:vinegar> * 1000])
+	.circuit(16)
+	.fluidOutputs(<liquid:brine> * 10000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Soy Milk -> Vinegar Milk
+mixer.recipeBuilder()
+	.fluidInputs([<liquid:soy_milk> * 9000, <liquid:vinegar> * 1000])
+	.circuit(16)
+	.fluidOutputs(<liquid:milk_vinegar> * 10000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Flux -> Limewater
+mixer.recipeBuilder()
+	.inputs(<tfc:powder/flux>)
+	.fluidInputs(<liquid:fresh_water> * 500)
+	.circuit(16)
+	.fluidOutputs(<liquid:limewater> * 500)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Gypsum -> Alabaster
+mixer.recipeBuilder()
+	.inputs(<metaitem:dustGypsum> * 2)
+	.fluidInputs(<liquid:limewater> * 100)
+	.circuit(16)
+	.outputs(<tfc:alabaster/raw/plain>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Powderkeg
+assembler.recipeBuilder()
+	.inputs(<minecraft:gunpowder>, <ore:barrel>, <ore:dyeRed>)
+	.circuit(16)
+	.outputs(<tfc:powderkeg>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Kaolinite Dust
+macerator.recipeBuilder()
+	.inputs(<metaitem:dustMica>)
+	.outputs(<tfc:powder/kaolinite> * 6)
+	.duration(100).EUt(2).buildAndRegister();
+
+// Alabaster -> Colored Alabaster
+for i, Alabaster in Alabaster {
+	chemical_bath.recipeBuilder()
+    	.inputs(<tfc:alabaster/raw/plain>)
+        .fluidInputs([colorLiquid[i] * 18])
+    	.outputs(Alabaster)
+    	.duration(20).EUt(7).buildAndRegister();
+}
+
+// Smooth Alabaster -> Colored Smooth Alabaster
+for i, AlabasterPolished in AlabasterPolished {
+	chemical_bath.recipeBuilder()
+    	.inputs(<tfc:alabaster/polished/plain>)
+        .fluidInputs([colorLiquid[i] * 18])
+    	.outputs(AlabasterPolished)
+    	.duration(20).EUt(7).buildAndRegister();
+}
+
+// Bricks Alabaster -> Colored Bricks Alabaster
+for i, AlabasterBricks in AlabasterBricks {
+	chemical_bath.recipeBuilder()
+    	.inputs(<tfc:alabaster/bricks/plain>)
+        .fluidInputs([colorLiquid[i] * 18])
+    	.outputs(AlabasterBricks)
+    	.duration(20).EUt(7).buildAndRegister();
+}
+
+// Any Alabaster Raw -> Alabaster Plain
+chemical_bath.recipeBuilder()
+    	.inputs(<ore:alabasterRaw>)
+        .fluidInputs([<liquid:chlorine> * 20])
+    	.outputs(<tfc:alabaster/raw/plain>)
+    	.duration(20).EUt(7).buildAndRegister();
+
+// Any Alabaster Polished -> Alabaster Polished
+chemical_bath.recipeBuilder()
+    	.inputs(<ore:alabasterPolished>)
+        .fluidInputs([<liquid:chlorine> * 20])
+    	.outputs(<tfc:alabaster/polished/plain>)
+    	.duration(20).EUt(7).buildAndRegister();
+
+// Any Alabaster Bricks -> Alabaster Bricks
+chemical_bath.recipeBuilder()
+    	.inputs(<ore:alabasterBricks>)
+        .fluidInputs([<liquid:chlorine> * 20])
+    	.outputs(<tfc:alabaster/bricks/plain>)
+    	.duration(20).EUt(7).buildAndRegister();
+
+// Milk -> Curdled Milk
+mixer.recipeBuilder()
+	.inputs(<firmalife:rennet>)
+	.fluidInputs(<liquid:milk> * 2000)
+	.circuit(16)
+	.fluidOutputs(<liquid:milk_curdled> * 2000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Yak Milk -> Curdled Yak Milk
+mixer.recipeBuilder()
+	.inputs(<firmalife:rennet>)
+	.fluidInputs(<liquid:yak_milk> * 2000)
+	.circuit(16)
+	.fluidOutputs(<liquid:curdled_yak_milk> * 2000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Goat Milk -> Curdled Goat Milk
+mixer.recipeBuilder()
+	.inputs(<firmalife:rennet>)
+	.fluidInputs(<liquid:goat_milk> * 2000)
+	.circuit(16)
+	.fluidOutputs(<liquid:curdled_goat_milk> * 2000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Zebu Milk -> Curdled Milk
+mixer.recipeBuilder()
+	.inputs(<firmalife:rennet>)
+	.fluidInputs(<liquid:zebu_milk> * 2000)
+	.circuit(16)
+	.fluidOutputs(<liquid:milk_curdled> * 2000)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Kaolinite -> Kaolinite Clay
+mixer.recipeBuilder()
+	.inputs(<tfc:powder/kaolinite>)
+	.fluidInputs(<liquid:fresh_water> * 100)
+	.circuit(16)
+	.outputs(<tfcflorae:ceramics/kaolinite/kaolinite_clay>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Milk Curd -> Gouda Wheel
+mixer.recipeBuilder()
+	.inputs(<firmalife:milk_curd> * 3)
+	.fluidInputs(<liquid:salt_water> * 750)
+	.circuit(16)
+	.outputs(<firmalife:gouda_wheel>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Goat Curd -> Feta Wheel
+mixer.recipeBuilder()
+	.inputs(<firmalife:goat_curd> * 3)
+	.fluidInputs(<liquid:salt_water> * 750)
+	.circuit(16)
+	.outputs(<firmalife:feta_wheel>)
+	.duration(150).EUt(2).buildAndRegister();
+
+// Yak Curd -> Shosha Wheel
+mixer.recipeBuilder()
+	.inputs(<firmalife:yak_curd> * 3)
+	.fluidInputs(<liquid:salt_water> * 750)
+	.circuit(16)
+	.outputs(<firmalife:shosha_wheel>)
+	.duration(150).EUt(2).buildAndRegister();

@@ -41,8 +41,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<extraplanets:tier7_items:2>,
 	<extraplanets:tier8_items:2>,
 	<extraplanets:tier9_items:2>,
-	<extraplanets:tier10_items:2>,
-] as IItemStack[];
+	<extraplanets:tier10_items:2>
+];
 
 // --- Удаление рецептов
 
@@ -67,9 +67,7 @@ assembler.recipeBuilder()
    .inputs(<metaitem:neutron_reflector> * 4, <metaitem:plateSteel> * 32, <metaitem:dustPlutonium> * 16, <metaitem:dustUranium235> * 16, <ore:circuitLuv> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:nuclear_bomb>)
-   .duration(7000)
-   .EUt(960)
-   .buildAndRegister();
+   .duration(7000).EUt(960).buildAndRegister();
 
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
@@ -241,9 +239,7 @@ assembler.recipeBuilder()
    .inputs(<metaitem:sensor.zpm> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:nose_cone_tier9>)
-   .duration(600)
-   .EUt(1320)
-   .buildAndRegister();
+   .duration(600).EUt(1320).buildAndRegister();
 
 // Tier 10
 assembler.recipeBuilder()
@@ -258,9 +254,7 @@ assembler.recipeBuilder()
    .inputs(<metaitem:sensor.zpm> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:nose_cone_tier10>)
-   .duration(600)
-   .EUt(1420)
-   .buildAndRegister();
+   .duration(600).EUt(1420).buildAndRegister();
 
 // Ракетный корпус 4-10 Tiers
 
@@ -276,9 +270,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:6>)
-   .duration(600)
-   .EUt(830)
-   .buildAndRegister();
+   .duration(600).EUt(830).buildAndRegister();
 
 // Tier 5
 assembler.recipeBuilder()
@@ -292,9 +284,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:11>)
-   .duration(600)
-   .EUt(930)
-   .buildAndRegister();
+   .duration(600).EUt(930).buildAndRegister();
 
 // Tier 6
 assembler.recipeBuilder()
@@ -308,9 +298,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:16>)
-   .duration(600)
-   .EUt(1030)
-   .buildAndRegister();
+   .duration(600).EUt(1030).buildAndRegister();
 
 // Tier 7
 assembler.recipeBuilder()
@@ -324,9 +312,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<contenttweaker:rocketparts_tier7>)
-   .duration(600)
-   .EUt(1130)
-   .buildAndRegister();
+   .duration(600).EUt(1130).buildAndRegister();
 
 // Tier 8
 assembler.recipeBuilder()
@@ -340,9 +326,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<contenttweaker:rocketparts_tier8>)
-   .duration(600)
-   .EUt(1230)
-   .buildAndRegister();
+   .duration(600).EUt(1230).buildAndRegister();
 
 // Tier 9
 assembler.recipeBuilder()
@@ -356,9 +340,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<contenttweaker:rocketparts_tier9>)
-   .duration(600)
-   .EUt(1330)
-   .buildAndRegister();
+   .duration(600).EUt(1330).buildAndRegister();
 
 // Tier 10
 assembler.recipeBuilder()
@@ -372,9 +354,7 @@ assembler.recipeBuilder()
 	.inputs(<galaxyspace:rocket_modules:3> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<contenttweaker:rocketparts_tier10>)
-   .duration(600)
-   .EUt(1430)
-   .buildAndRegister();
+   .duration(600).EUt(1430).buildAndRegister();
 
 // Ускорители 4-10 Tiers
 
@@ -390,9 +370,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:1>)
-   .duration(580)
-   .EUt(840)
-   .buildAndRegister();
+   .duration(580).EUt(840).buildAndRegister();
 
 // Tier 5
 assembler.recipeBuilder()
@@ -406,9 +384,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:1>)
-   .duration(580)
-   .EUt(940)
-   .buildAndRegister();
+   .duration(580).EUt(940).buildAndRegister();
 
 // Tier 6
 assembler.recipeBuilder()
@@ -422,9 +398,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items:1>)
-   .duration(580)
-   .EUt(1040)
-   .buildAndRegister();
+   .duration(580).EUt(1040).buildAndRegister();
 
 // Tier 7
 assembler.recipeBuilder()
@@ -438,9 +412,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:1>)
-   .duration(580)
-   .EUt(1140)
-   .buildAndRegister();
+   .duration(580).EUt(1140).buildAndRegister();
 
 // Tier 8
 assembler.recipeBuilder()
@@ -454,9 +426,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:1>)
-   .duration(580)
-   .EUt(1250)
-   .buildAndRegister();
+   .duration(580).EUt(1250).buildAndRegister();
 
 // Tier 9
 assembler.recipeBuilder()
@@ -470,9 +440,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:1>)
-   .duration(580)
-   .EUt(1340)
-   .buildAndRegister();
+   .duration(580).EUt(1340).buildAndRegister();
 
 // Tier 10
 assembler.recipeBuilder()
@@ -486,9 +454,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier10_items:1>)
-   .duration(580)
-   .EUt(1440)
-   .buildAndRegister();
+   .duration(580).EUt(1440).buildAndRegister();
 
 // Ракетные двигатели 4-10 Tiers
 
@@ -505,9 +471,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items>)
-   .duration(600)
-   .EUt(850)
-   .buildAndRegister();
+   .duration(600).EUt(850).buildAndRegister();
 
 // Tier 5
 assembler.recipeBuilder()
@@ -522,9 +486,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items>)
-   .duration(600)
-   .EUt(950)
-   .buildAndRegister();
+   .duration(600).EUt(950).buildAndRegister();
 
 // Tier 6
 assembler.recipeBuilder()
@@ -539,9 +501,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items>)
-   .duration(600)
-   .EUt(1050)
-   .buildAndRegister();
+   .duration(600).EUt(1050).buildAndRegister();
 
 // Tier 7
 assembler.recipeBuilder()
@@ -556,9 +516,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items>)
-   .duration(600)
-   .EUt(1150)
-   .buildAndRegister();
+   .duration(600).EUt(1150).buildAndRegister();
 
 // Tier 8
 assembler.recipeBuilder()
@@ -573,9 +531,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items>)
-   .duration(600)
-   .EUt(1250)
-   .buildAndRegister();
+   .duration(600).EUt(1250).buildAndRegister();
 
 // Tier 9
 assembler.recipeBuilder()
@@ -590,9 +546,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items>)
-   .duration(600)
-   .EUt(1350)
-   .buildAndRegister();
+   .duration(600).EUt(1350).buildAndRegister();
 
 // Tier 10
 assembler.recipeBuilder()
@@ -607,9 +561,7 @@ assembler.recipeBuilder()
    .inputs(<gcym:unique_casing:3> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier10_items>)
-   .duration(600)
-   .EUt(1450)
-   .buildAndRegister();
+   .duration(600).EUt(1450).buildAndRegister();
 
 // Ракетные стабилизаторы 4-10 Tiers
 
@@ -619,9 +571,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:2>)
-   .duration(600)
-   .EUt(560)
-   .buildAndRegister();
+   .duration(600).EUt(560).buildAndRegister();
 
 // Tier 5
 assembler.recipeBuilder()
@@ -629,9 +579,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:2>)
-   .duration(600)
-   .EUt(660)
-   .buildAndRegister();
+   .duration(600).EUt(660).buildAndRegister();
 
 // Tier 6
 assembler.recipeBuilder()
@@ -639,9 +587,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items:2>)
-   .duration(600)
-   .EUt(760)
-   .buildAndRegister();
+   .duration(600).EUt(760).buildAndRegister();
 
 // Tier 7
 assembler.recipeBuilder()
@@ -649,9 +595,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:2>)
-   .duration(600)
-   .EUt(860)
-   .buildAndRegister();
+   .duration(600).EUt(860).buildAndRegister();
 
 // Tier 8
 assembler.recipeBuilder()
@@ -659,9 +603,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:2>)
-   .duration(600)
-   .EUt(960)
-   .buildAndRegister();
+   .duration(600).EUt(960).buildAndRegister();
 
 // Tier 9
 assembler.recipeBuilder()
@@ -669,9 +611,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:2>)
-   .duration(600)
-   .EUt(1060)
-   .buildAndRegister();
+   .duration(600).EUt(1060).buildAndRegister();
 
 // Tier 10
 assembler.recipeBuilder()
@@ -679,9 +619,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier10_items:2>)
-   .duration(600)
-   .EUt(1160)
-   .buildAndRegister();
+   .duration(600).EUt(1160).buildAndRegister();
 
 // Rockets 4-10 Tiers 
 
@@ -703,9 +641,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier4_rocket>)
-   .duration(1200)
-   .EUt(15000)
-   .buildAndRegister();
+   .duration(1200).EUt(15000).buildAndRegister();
 
 // Tier 4 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -726,9 +662,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier4_rocket:1>)
-   .duration(1200)
-   .EUt(15000)
-   .buildAndRegister();
+   .duration(1200).EUt(15000).buildAndRegister();
 
 // Tier 4 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -749,9 +683,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier4_rocket:2>)
-   .duration(1200)
-   .EUt(15000)
-   .buildAndRegister();
+   .duration(1200).EUt(15000).buildAndRegister();
 
 // Tier 4 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -772,9 +704,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier4_rocket:3>)
-   .duration(1200)
-   .EUt(15000)
-   .buildAndRegister();
+   .duration(1200).EUt(15000).buildAndRegister();
 
 
 // Tier 5 - Without Chests
@@ -795,9 +725,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier5_rocket>)
-   .duration(1200)
-   .EUt(18000)
-   .buildAndRegister();
+   .duration(1200).EUt(18000).buildAndRegister();
 
 // Tier 5 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -818,9 +746,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier5_rocket:1>)
-   .duration(1200)
-   .EUt(18000)
-   .buildAndRegister();
+   .duration(1200).EUt(18000).buildAndRegister();
 
 // Tier 5 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -841,9 +767,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier5_rocket:2>)
-   .duration(1200)
-   .EUt(18000)
-   .buildAndRegister();
+   .duration(1200).EUt(18000).buildAndRegister();
 
 // Tier 5 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -864,9 +788,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier5_rocket:3>)
-   .duration(1200)
-   .EUt(18000)
-   .buildAndRegister();
+   .duration(1200).EUt(18000).buildAndRegister();
 
 // Tier 6 - Without Chests
 assembly_line.recipeBuilder()
@@ -886,9 +808,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier6_rocket>)
-   .duration(1200)
-   .EUt(21000)
-   .buildAndRegister();
+   .duration(1200).EUt(21000).buildAndRegister();
 
 // Tier 6 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -909,9 +829,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier6_rocket:1>)
-   .duration(1200)
-   .EUt(21000)
-   .buildAndRegister();
+   .duration(1200).EUt(21000).buildAndRegister();
 
 // Tier 6 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -932,9 +850,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier6_rocket:2>)
-   .duration(1200)
-   .EUt(21000)
-   .buildAndRegister();
+   .duration(1200).EUt(21000).buildAndRegister();
 
 // Tier 6 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -955,9 +871,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier6_rocket:3>)
-   .duration(1200)
-   .EUt(21000)
-   .buildAndRegister();
+   .duration(1200).EUt(21000).buildAndRegister();
 
 // Tier 7 - Without Chests
 assembly_line.recipeBuilder()
@@ -977,9 +891,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier7_rocket>)
-   .duration(1200)
-   .EUt(26000)
-   .buildAndRegister();
+   .duration(1200).EUt(26000).buildAndRegister();
 
 // Tier 7 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -1000,9 +912,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier7_rocket:1>)
-   .duration(1200)
-   .EUt(26000)
-   .buildAndRegister();
+   .duration(1200).EUt(26000).buildAndRegister();
 
 // Tier 7 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -1023,9 +933,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier7_rocket:2>)
-   .duration(1200)
-   .EUt(26000)
-   .buildAndRegister();
+   .duration(1200).EUt(26000).buildAndRegister();
 
 // Tier 7 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -1046,9 +954,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier7_rocket:3>)
-   .duration(1200)
-   .EUt(26000)
-   .buildAndRegister();
+   .duration(1200).EUt(26000).buildAndRegister();
 
 // Tier 8 - Without Chests
 assembly_line.recipeBuilder()
@@ -1068,9 +974,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier8_rocket>)
-   .duration(1200)
-   .EUt(42000)
-   .buildAndRegister();
+   .duration(1200).EUt(42000).buildAndRegister();
 
 // Tier 8 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -1091,9 +995,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier8_rocket:1>)
-   .duration(1200)
-   .EUt(42000)
-   .buildAndRegister();
+   .duration(1200).EUt(42000).buildAndRegister();
 
 // Tier 8 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -1114,9 +1016,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier8_rocket:2>)
-   .duration(1200)
-   .EUt(42000)
-   .buildAndRegister();
+   .duration(1200).EUt(42000).buildAndRegister();
 
 // Tier 8 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -1137,9 +1037,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier8_rocket:3>)
-   .duration(1200)
-   .EUt(42000)
-   .buildAndRegister();
+   .duration(1200).EUt(42000).buildAndRegister();
 
 // Tier 9 - Without Chests
 assembly_line.recipeBuilder()
@@ -1159,9 +1057,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier9_rocket>)
-   .duration(1200)
-   .EUt(51000)
-   .buildAndRegister();
+   .duration(1200).EUt(51000).buildAndRegister();
 
 // Tier 9 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -1182,9 +1078,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier9_rocket:1>)
-   .duration(1200)
-   .EUt(51000)
-   .buildAndRegister();
+   .duration(1200).EUt(51000).buildAndRegister();
 
 // Tier 9 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -1205,9 +1099,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier9_rocket:2>)
-   .duration(1200)
-   .EUt(51000)
-   .buildAndRegister();
+   .duration(1200).EUt(51000).buildAndRegister();
 
 // Tier 9 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -1228,9 +1120,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier9_rocket:3>)
-   .duration(1200)
-   .EUt(51000)
-   .buildAndRegister();
+   .duration(1200).EUt(51000).buildAndRegister();
 
 // Tier 10 - Without Chests
 assembly_line.recipeBuilder()
@@ -1250,9 +1140,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier10_rocket>)
-   .duration(1200)
-   .EUt(91000)
-   .buildAndRegister();
+   .duration(1200).EUt(91000).buildAndRegister();
 
 // Tier 10 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -1273,9 +1161,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier10_rocket:1>)
-   .duration(1200)
-   .EUt(91000)
-   .buildAndRegister();
+   .duration(1200).EUt(91000).buildAndRegister();
 
 // Tier 10 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -1296,9 +1182,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier10_rocket:2>)
-   .duration(1200)
-   .EUt(91000)
-   .buildAndRegister();
+   .duration(1200).EUt(91000).buildAndRegister();
 
 // Tier 10 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -1319,6 +1203,4 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<extraplanets:item_tier10_rocket:3>)
-   .duration(1200)
-   .EUt(91000)
-   .buildAndRegister();
+   .duration(1200).EUt(91000).buildAndRegister();

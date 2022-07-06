@@ -1,7 +1,8 @@
 import crafttweaker.item.IItemStack;
 
-import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.ItemRegistry;
+import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Barrel;
 
 import mods.firmalife.Oven;
 import mods.firmalife.Drying;
@@ -116,6 +117,18 @@ Anvil.removeRecipe(<firmalife:red_steel_mallet_head>);
 // Cooked Pizza
 Oven.removeRecipe(<firmalife:cooked_pizza>);
 
+// Treated Lumber
+Barrel.removeRecipe(<firmalife:treated_lumber>);
+
+// Бафф крафта крыши теплицы
+Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
+
+// Бафф крафта стен теплицы
+Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
+
+// Greenhouse Door
+Anvil.removeRecipe(<firmalife:greenhouse_door>);
+
 // --- Добавление рецептов
 
 // Присвоение единиц металла
@@ -202,6 +215,7 @@ recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
     [<ore:paneGlass>, null, <ore:paneGlass>],
     [null, <ore:paneGlass>, null]]);
 
+
 // Pizza Dough
 recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:gtce.tool.knife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
 
@@ -222,16 +236,16 @@ Drying.addRecipe("tfg/firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {Flui
 recipes.addShapeless(<metaitem:dustSmallSalt> * 2, [<contenttweaker:wooden_bucket_with_salt>.giveBack(<tfc:wooden_bucket>)]);
 
 // Greenhouse Door
-Anvil.removeRecipe(<firmalife:greenhouse_door>);
 Anvil.addRecipe("tfg/firmalife/greenhouse_door", <ore:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
 
 // Бафф крафта стен теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
 Anvil.addRecipe("tfg/firmalife/greenhouse_wall", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
 
 // Бафф крафта крыши теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
 Anvil.addRecipe("tfg/firmalife/greenhouse_roof", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
+
+// Treated Lumber
+Barrel.addRecipe("tfg/firmalife/treated_lumber", <ore:lumber>, <liquid:gtfo_olive_oil> * 500, <firmalife:treated_lumber>, 8);
 
 // Молотки
 Anvil.addRecipe("tfg:firmalife_bismuth_bronze_hammer", <ore:ingotBismuthBronze>, <firmalife:bismuth_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
@@ -253,9 +267,9 @@ mixer.recipeBuilder()
 
 // Chestnut Bread
 baking_oven.recipeBuilder()
-    	.inputs([<firmalife:chestnut_dough>])
-    	.outputs(<firmalife:chestnut_bread>)
-    	.duration(400).EUt(1).buildAndRegister();
+    .inputs([<firmalife:chestnut_dough>])
+    .outputs(<firmalife:chestnut_bread>)
+    .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
     .inputs([<firmalife:chestnut_dough>])

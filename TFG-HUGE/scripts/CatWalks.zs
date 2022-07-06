@@ -9,7 +9,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
     <catwalks:catwalk>.withTag({material: "treated_wood"}),
     <catwalks:ladder>,
     <catwalks:cable>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

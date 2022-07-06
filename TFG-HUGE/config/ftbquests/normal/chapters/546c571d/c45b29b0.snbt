@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 7.5d,
+	text: [
+		"- Датчик погоды, который активирует красный камень, когда смертоносные штормы находятся рядом"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "d51c35ec",
+		type: "item",
+		items: [{
+			item: "weather2:tornado_sensor"
+		}]
+	}]
+}

@@ -494,9 +494,24 @@ mixer.recipeBuilder()
 
 // Recycle - Storage Housing
 macerator.recipeBuilder()
-  .inputs([<appliedenergistics2:material:39>])
-  .outputs([<metaitem:dustSteel>])
-  .duration(20).EUt(16).buildAndRegister();
+    .inputs([<appliedenergistics2:material:39>])
+    .outputs([
+        <metaitem:dustSteel> * 2,
+        <metaitem:dustTinySteel> * 2
+    ])
+    .duration(100)
+    .EUt(16)
+    .buildAndRegister();
+arc_furnace.recipeBuilder()
+    .inputs([<appliedenergistics2:material:39>])
+    .fluidInputs([<liquid:oxygen> * 56])
+    .outputs([
+        <metaitem:ingotSteel> * 2,
+        <metaitem:nuggetSteel> * 2
+    ])
+    .duration(56)
+    .EUt(30)
+    .buildAndRegister();
 
 // Inscriber Silicon Press
 laser_engraver.recipeBuilder()

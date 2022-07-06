@@ -142,6 +142,74 @@ customization {
 }
 
 customization {
+  orientation = top-left
+  hidden = true
+  x = 510
+  width = 260
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 228b2981-494f-4e46-bc91-10776b35ab671656498429261
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 163
+  action = deep_customization_element:title_screen_branding
+  actionid = 81c4f84e-a97e-4724-815a-4dc62ae623a01656498429261
+  y = 623
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 1057
+  width = 222
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 5c7c6c45-3b75-4653-b249-1361ccc22fee1656498429261
+  y = 665
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 743
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 18445b65-725a-4cba-a1ac-f637846e5d6f1656498429261
+  y = 271
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 503
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = e17a3e77-7259-4d9b-8282-ae7dfb0c9b0f1656498429261
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 43391b31-62db-4ad4-91f9-0cf5870112d01656498429261
+  y = 0
+  height = 30
+}
+
+customization {
   path = resources/modpack/sidebar_full_left.png
   orientation = top-left
   x = 0

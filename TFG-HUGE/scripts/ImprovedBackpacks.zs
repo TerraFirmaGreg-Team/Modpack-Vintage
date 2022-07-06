@@ -6,7 +6,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
     <improvedbackpacks:upgrade:2>,
     <improvedbackpacks:upgrade:3>,
     <improvedbackpacks:upgrade:4>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

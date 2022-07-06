@@ -12,12 +12,12 @@ val RemoveItemsFromAnvil as IItemStack[] = [
     <cellars:black_steel_ice_saw_head>,
     <cellars:red_steel_ice_saw_head>,
     <cellars:blue_steel_ice_saw_head>
-] as IItemStack[];
+];
 
 val RemoveWorkbenchRecipes as IItemStack[] = [
     <cellars:cellar_wall>,
     <cellars:cellar_door>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 

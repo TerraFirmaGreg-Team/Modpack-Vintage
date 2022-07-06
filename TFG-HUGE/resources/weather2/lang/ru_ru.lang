@@ -1,0 +1,13 @@
+itemGroup.Weather2=Weather2 предметы
+tile.weather2.tornado_sensor.name=Датчик торнадо
+tile.weather2.tornado_siren.name=Сирена торнадо
+tile.weather2.tornado_siren_manual.name=Ручная редстоун сирена
+tile.weather2.wind_vane.name=Флюгер
+tile.weather2.weather_forecast.name=Погодо-радар
+tile.weather2.weather_machine.name=Машина погоды (щелкните правой кнопкой мыши, чтобы переключиться)
+tile.weather2.weather_deflector.name=Отражатель погоды
+tile.weather2.anemometer.name=Анемометр
+tile.weather2.sand_layer.name=Размещаемый слой песка
+item.weather2.weather_item.name=Погодный предмет
+item.weather2.sand_layer_placeable.name=Размещаемый слой песка
+item.weather2.pocket_sand.name=Карманный песок!

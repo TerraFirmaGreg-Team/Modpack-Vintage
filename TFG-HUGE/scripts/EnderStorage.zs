@@ -3,8 +3,8 @@ import crafttweaker.item.IItemStack;
 // --- Массивы
 val RemoveWorkbenchRecipes as IItemStack[] = [
 	<enderstorage:ender_storage>,
-  <enderstorage:ender_storage:1>,
-] as IItemStack[];
+  <enderstorage:ender_storage:1>
+];
 
 // --- Удаление рецептов
 

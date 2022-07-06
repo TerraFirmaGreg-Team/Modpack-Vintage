@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.ironpile.title}",
-	x: -3.75d,
+	x: -4.0d,
 	y: -7.25d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.ironpile.subtitle}",

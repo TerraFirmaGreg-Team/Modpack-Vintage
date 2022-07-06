@@ -37,7 +37,7 @@ val RemoveItemRecipe as IItemStack[] = [
    <galaxyspace:upgrades:3>,
    <galaxyspace:advanced_battery:100>,
    <galaxyspace:gs_basic:11>
-] as IItemStack[];
+];
 
 // --- Удаление рецептов
 
@@ -108,9 +108,7 @@ assembler.recipeBuilder()
 canner.recipeBuilder()
    .inputs(<ore:batteryEv>, <ore:plateDenseTin> * 3)
    .outputs(<galaxyspace:advanced_battery:100>)
-   .duration(460)
-   .EUt(110)
-   .buildAndRegister();
+   .duration(460).EUt(110).buildAndRegister();
 
 // Взлётка 2 лвл
 recipes.addShaped("tfg/galaxyspace/advanced_landing_pad", <galaxyspace:advanced_landing_pad> * 25,
@@ -232,9 +230,7 @@ assembler.recipeBuilder()
    .circuit(5)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:single_solarpanel> * 2)
-   .duration(500)
-   .EUt(128)
-   .buildAndRegister();
+   .duration(500).EUt(128).buildAndRegister();
 
 // Солнечная модернизированная мини-панель
 assembler.recipeBuilder()
@@ -242,59 +238,45 @@ assembler.recipeBuilder()
    .circuit(6)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:modern_single_solarpanel> * 2)
-   .duration(500)
-   .EUt(256)
-   .buildAndRegister();
+   .duration(500).EUt(256).buildAndRegister();
 
 // Зарядная панель
 assembler.recipeBuilder()
    .inputs(<ore:plateAluminium> * 3, <metaitem:voltage_coil.mv>, <ore:circuitHv>, <metaitem:field.generator.lv> * 2)
    .outputs(<galaxyspace:energy_pad>)
-   .duration(500)
-   .EUt(256)
-   .buildAndRegister();
+   .duration(500).EUt(256).buildAndRegister();
 
 // Гравитационный модуль
 assembler.recipeBuilder()
    .inputs(<ore:plateAluminium> * 3, <ore:circuitIv>, <metaitem:field.generator.hv> * 2, <metaitem:voltage_coil.ev> * 4)
    .outputs(<galaxyspace:gravitation_module>)
-   .duration(500)
-   .EUt(256)
-   .buildAndRegister();
+   .duration(500).EUt(256).buildAndRegister();
 
 // Основание гидроподной фермы
 assembler.recipeBuilder()
    .inputs(<metaitem:hull.ev>, <metaitem:robot.arm.ev> * 2, <metaitem:sensor.lv> * 2, <galacticraftcore:grating> * 6, <ore:cableGtQuadrupleAnnealedCopper> * 4)
    .outputs(<galaxyspace:hydroponic_base>)
-   .duration(260)
-   .EUt(718)
-   .buildAndRegister();
+   .duration(260).EUt(718).buildAndRegister();
 
 // Стеклянное основание гидроподной фермы
 assembler.recipeBuilder()
    .inputs(<appliedenergistics2:quartz_vibrant_glass> * 6, <ore:frameGtStainlessSteel> * 3, <ore:gearStainlessSteel> * 2)
    .outputs(<galaxyspace:hydroponic_farm>)
-   .duration(260)
-   .EUt(560)
-   .buildAndRegister();
+   .duration(260).EUt(560).buildAndRegister();
 
 // Small Fuel Canister
 assembler.recipeBuilder()
    .inputs(<galaxyspace:gs_basic>, <galaxyspace:compressed_plates:4>*2)
    .circuit(3)
    .outputs(<galaxyspace:rocket_modules:3>)
-   .duration(260)
-   .EUt(4)
-   .buildAndRegister();
+   .duration(260).EUt(4).buildAndRegister();
 
 // Blank Fuel Canister
 assembler.recipeBuilder()
    .inputs(<ore:plateBlackSteel>*8, <ore:paneGlass>)
    .circuit(3)
    .outputs(<galaxyspace:gs_basic>)
-   .duration(260)
-   .EUt(4)
-   .buildAndRegister();
+   .duration(260).EUt(4).buildAndRegister();
 
 // Скафандры
 
@@ -303,36 +285,28 @@ assembler.recipeBuilder()
    .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*4, <ore:plateNickel>*2, <ore:circuitEv>*3, <ore:leather>*5)
    .circuit(6)
    .outputs(<galaxyspace:space_suit_feet:200>)
-   .duration(500)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(500).EUt(512).buildAndRegister();
 
 // Скаф 1 лвл поножи
 assembler.recipeBuilder()
    .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*7, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(5)
    .outputs(<galaxyspace:space_suit_legs:200>)
-   .duration(500)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(500).EUt(512).buildAndRegister();
 
 // Скаф 1 лвл грудак
 assembler.recipeBuilder()
    .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*8, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(4)
    .outputs(<galaxyspace:space_suit_chest:200>)
-   .duration(500)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(500).EUt(512).buildAndRegister();
 
 // Скаф 1 лвл шапка
 assembler.recipeBuilder()
    .inputs(<metaitem:voltage_coil.lv>, <galaxyspace:compressed_plates:4>*5, <ore:plateNickel>*2, <ore:circuitEv>, <ore:leather>*5)
    .circuit(3)
    .outputs(<galaxyspace:space_suit_head:200>)
-   .duration(500)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(500).EUt(512).buildAndRegister();
 
 // Nose Cons 3 Tiers
 // Tier 3
@@ -343,9 +317,7 @@ assembler.recipeBuilder()
    .circuit(7)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts>)
-   .duration(600)
-   .EUt(580)
-   .buildAndRegister();
+   .duration(600).EUt(580).buildAndRegister();
 
 // Rocket Body 3 Tiers
 // Tier 3
@@ -355,9 +327,7 @@ assembler.recipeBuilder()
    .circuit(12)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:1>)
-   .duration(600)
-   .EUt(580)
-   .buildAndRegister();
+   .duration(600).EUt(580).buildAndRegister();
 
 // Heavy Boosters 3 Tiers
 // Tier 3
@@ -373,9 +343,7 @@ assembler.recipeBuilder()
    .circuit(9)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:3>)
-   .duration(580)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(580).EUt(512).buildAndRegister();
 
 
 // Rocket Engines 3 Tiers
@@ -392,9 +360,7 @@ assembler.recipeBuilder()
    .circuit(8)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:2>)
-   .duration(600)
-   .EUt(512)
-   .buildAndRegister();
+   .duration(600).EUt(512).buildAndRegister();
 
 // Rocket Stabilizators 3 Tiers
 // Tier 3
@@ -404,9 +370,7 @@ assembler.recipeBuilder()
    .circuit(10)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galaxyspace:rocket_parts:4>)
-   .duration(600)
-   .EUt(482)
-   .buildAndRegister();
+   .duration(600).EUt(482).buildAndRegister();
 
 // Rockets 3 Tiers 
 // Tier 3 - Without Chests
@@ -427,9 +391,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t3>)
-   .duration(1200)
-   .EUt(12000)
-   .buildAndRegister();
+   .duration(1200).EUt(12000).buildAndRegister();
 
 // Tier 3 - With 1 Chest
 assembly_line.recipeBuilder()
@@ -450,9 +412,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t3:1>)
-   .duration(1200)
-   .EUt(12000)
-   .buildAndRegister();
+   .duration(1200).EUt(12000).buildAndRegister();
 
 // Tier 3 - With 2 Chests
 assembly_line.recipeBuilder()
@@ -473,9 +433,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t3:2>)
-   .duration(1200)
-   .EUt(12000)
-   .buildAndRegister();
+   .duration(1200).EUt(12000).buildAndRegister();
 
 // Tier 3 - With 3 Chests
 assembly_line.recipeBuilder()
@@ -496,9 +454,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t3:3>)
-   .duration(1200)
-   .EUt(12000)
-   .buildAndRegister();
+   .duration(1200).EUt(12000).buildAndRegister();
 
 // SubLight Engine
 assembly_line.recipeBuilder()
@@ -513,6 +469,4 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:lead> * 4608])
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galaxyspace:rocket_modules:6>)
-   .duration(1200)
-   .EUt(480600)
-   .buildAndRegister();
+   .duration(1200).EUt(480600).buildAndRegister();
