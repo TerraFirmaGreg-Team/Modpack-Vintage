@@ -40,6 +40,12 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:bun_dough",
     "gregtechfoodoption:gtfo_hand_kubide_kebab",
     "gregtechfoodoption:meat_hand_recipe",
+    "gregtechfoodoption:gtfo_hand_kubide_kebab_meat",
+    "gregtechfoodoption:gtfo_hand_barg_kebab_meat",
+    "gregtechfoodoption:gtfo_hand_onion_kebab",
+    "gregtechfoodoption:gtfo_hand_zest1",
+    "gregtechfoodoption:gtfo_hand_zest2",
+    "gregtechfoodoption:gtfo_hand_zest3",
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -167,6 +173,15 @@ for item in RemoveItemRecipesByName{
 furnace.remove(<metaitem:brick.adobe_fired>);
 
 // Удаление рецептов метана
+centrifuge.findRecipe(5, [<metaitem:crop.onion>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.grapes>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:crop.tomato>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.apricot>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.mango>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.banana>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.orange>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.lime>], null).remove();
+centrifuge.findRecipe(5, [<metaitem:food.lemon>], null).remove();
 centrifuge.findRecipe(5, [<galacticraftcore:food:6>], null).remove();
 centrifuge.findRecipe(5, [<galacticraftcore:food:7>], null).remove();
 centrifuge.findRecipe(5, [<extraplanets:chocolate_bar:0>], null).remove();
@@ -443,10 +458,52 @@ mixer.findRecipe(16, [<metaitem:dustWheat>, <metaitem:dustMeat>], [<liquid:water
 // Olive Oil
 extractor.findRecipe(27, [<metaitem:crop.olive>], null).remove();
 
+// Orange, Lemon and etc
+centrifuge.findRecipe(6, [<minecraft:leaves:3>], null).remove();
+
+// Apricot
+centrifuge.findRecipe(6, [<minecraft:leaves2:0>], null).remove();
+
+// Olive
+centrifuge.findRecipe(6, [<minecraft:leaves:0>], null).remove();
+
+// Kebab e Soltani!
+cuisine_assembler.findRecipe(120, [<metaitem:food.kebab.barg> * 2, <metaitem:food.kebab.kubide>, <metaitem:crop.tomato> * 3, <metaitem:crop.onion> * 2, <metaitem:food.lemon>], [<liquid:gtfo_stearin> * 1000, <liquid:gtfo_lemon_extract> * 250]).remove();
+
+// Chum on Skewel Kebab
+cuisine_assembler.findRecipe(16, [<metaitem:food.chum> * 8, <metaitem:component.banana_peel> * 2, <metaitem:crop.onion>, <metaitem:mashed_potato_dust> * 4, <metaitem:component.skewer> * 4], [<liquid:gtfo_yolk> * 200, <liquid:gtfo_stearin> * 400]).remove();
+
+// Banana Peel
+canner.findRecipe(32, [<metaitem:food.banana>], null).remove();
+
+// Растительное масло
+extractor.findRecipe(2, [<metaitem:seed.soy>], null).remove();
+
+// Маленькая кучка древесных опилок
+compressor.findRecipe(64, [<metaitem:seed.soy>], null).remove();
+
+// Цедра
+extractor.findRecipe(5, [<metaitem:food.lime>], null).remove();
+
+// Цедра
+extractor.findRecipe(5, [<metaitem:food.orange>], null).remove();
+
+// Комок биомассы
+distillation_tower.findRecipe(120, null, [<liquid:gtfo_lime_extract> * 1000]).remove();
+
+// Комок биомассы
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:gtfo_lime_extract> * 1000]).remove();
+
+// Комок биомассы
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:gtfo_lime_extract> * 1000]).remove();
+
+// Комок биомассы
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], [<liquid:gtfo_lime_extract> * 1000]).remove();
+
 // --- Добавление рецептов
 
 // УДАЛИТЬ ПОСЛЕ ФИКСА #666
-recipes.addShaped("tfg/fuck", <metaitem:dustMeat> * 2,
+recipes.addShaped("tfg/gtfo/fuck", <metaitem:dustMeat> * 2,
     [[null,  null, null],
     [null, null, null],
     [null, <ore:categoryMeat>, <ore:gtce.tool.knife>]]);
@@ -862,3 +919,58 @@ extractor.recipeBuilder()
     .inputs([<tfc:food/olive>])
     .fluidOutputs([<liquid:gtfo_olive_oil> * 100])
     .duration(60).EUt(27).buildAndRegister();
+
+// Koobideh Ingredients
+recipes.addShaped("tfg/gtfo/koobideh_ingredients", <metaitem:kubide_meat_dust> * 4, [
+    [<metaitem:dustSalt>, <tfc:food/tomato>, <tfc:food/onion>],
+    [<metaitem:dustMeat>, <metaitem:dustMeat>, <metaitem:dustMeat>],
+    [<metaitem:fat_ingot>, <metaitem:dustMeat>, <metaitem:fat_ingot>]]);
+
+// Barg Ingredients
+recipes.addShaped("tfg/gtfo/barg_ingredients", <metaitem:barg_meat_dust> * 4, [
+    [<metaitem:dustSalt>, <metaitem:dustMeat>, <firmalife:dried_olive>],
+    [<metaitem:dustMeat>, <tfc:food/onion>, <metaitem:dustMeat>],
+    [<metaitem:zest_dust>, <metaitem:dustMeat>, <metaitem:zest_dust>]]);
+
+// Nailed Onions Kebab
+recipes.addShapeless("tfg/gtfo/nailed_onions_kebab", <metaitem:component.kebab.onion> * 2, [<ore:gtce.tool.knife>, <metaitem:dustSalt>, <tfc:food/onion>, <tfc:food/onion>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
+
+// Kebab e Soltani!
+cuisine_assembler.recipeBuilder()
+    .inputs(<metaitem:food.kebab.barg> * 2, <metaitem:food.kebab.kubide>, <tfc:food/tomato> * 3, <tfc:food/onion> * 2, <tfc:food/lemon>)
+    .fluidInputs([<liquid:gtfo_lemon_extract> * 250, <liquid:gtfo_stearin> * 1000])
+    .outputs(<metaitem:food.kebab.soltani> * 2, <metaitem:component.skewer>)
+    .duration(200).EUt(120).buildAndRegister();
+
+// Chum on Skewel
+cuisine_assembler.recipeBuilder()
+    .inputs(<metaitem:food.chum> * 8, <metaitem:component.banana_peel> * 2, <tfc:food/onion>, <metaitem:mashed_potato_dust> * 4, <metaitem:component.skewer> * 4)
+    .fluidInputs([<liquid:gtfo_lemon_extract> * 200, <liquid:gtfo_stearin> * 400])
+    .outputs(<metaitem:component.kebab.chum> * 4)
+    .duration(200).EUt(16).buildAndRegister();
+
+// Banana Peel
+canner.recipeBuilder()
+    .inputs(<tfc:food/banana>)
+    .outputs(<metaitem:component.banana_peel>, <metaitem:food.peeled_banana>)
+    .duration(35).EUt(32).buildAndRegister();
+
+// Seed Oil
+compressor.recipeBuilder()
+    .inputs(<tfc:crop/seeds/soybean>)
+    .outputs(<metaitem:dustSmallWood>)
+    .fluidOutputs([<liquid:seed_oil> * 28])
+    .duration(200).EUt(16).buildAndRegister();
+
+// Zest From Lemon
+recipes.addShapeless("tfg/gtfo/zest_from_lemon", <metaitem:zest_dust>, [<tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <ore:gtce.tool.mortars>]);
+
+// Zest From Orange
+recipes.addShapeless("tfg/gtfo/zest_from_orange", <metaitem:zest_dust>, [<tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <ore:gtce.tool.mortars>]);
+
+// Zest + Orange Juice
+extractor.recipeBuilder()
+    .inputs(<tfc:food/orange>)
+    .outputs(<metaitem:zest_dust>)
+    .fluidOutputs([<liquid:gtfo_orange_extract> * 100])
+    .duration(100).EUt(5).buildAndRegister();
