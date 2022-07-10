@@ -568,6 +568,10 @@ for item in HorsePower {
 val TFCFlorae as IItemStack[] = [
     <tfcflorae:tools/flint/hammer/flint>,
 	<tfcflorae:tools/flint/hammer_head/flint>,
+	<tfcflorae:container/leather_bag_piece>,
+	<tfcflorae:container/leather_bag>,
+	<tfcflorae:container/pineapple_leather_bag_piece>,
+	<tfcflorae:container/pineapple_leather_bag>,
 	// Gems
 	<tfcflorae:gem/amber:*>
 ];
