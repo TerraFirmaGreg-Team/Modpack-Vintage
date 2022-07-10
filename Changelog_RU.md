@@ -7,6 +7,14 @@
 * Исправлен краш после открытия в HEI рецептов с железной крицей.
 * Исправлено множество рецептов GTFO снова.
 * Исправлены баги с HotOrNot их было много, все не перечислить, но теперь они все исправлены (вроде).
+### Обновление модов
+* TFG-mod
+* HotorNot
+* Fancymenu
+* HadEnoughItems
+* supermartijn642configlib
+* supermartijn642corelib
+* GregTech Food Option
 
 ## Version R3.4.3a - 06.07.2022
 #### [Lite, Huge]
