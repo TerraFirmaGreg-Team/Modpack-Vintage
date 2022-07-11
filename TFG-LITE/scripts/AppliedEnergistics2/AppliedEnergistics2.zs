@@ -1182,52 +1182,111 @@ compressor.recipeBuilder()
 	.duration(400).EUt(4).buildAndRegister();
 
 // Crafting Co-Processing Unit
-canner.recipeBuilder()
+  packer.recipeBuilder()
   .inputs(<appliedenergistics2:crafting_unit>)
   .inputs(<appliedenergistics2:material:24>)
   .outputs(<appliedenergistics2:crafting_accelerator>)
   .duration(100).EUt(4).buildAndRegister();
 
-// 1k Crafting Storage
-canner.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_unit>)
-  .inputs(<appliedenergistics2:material:35>)
-  .outputs(<appliedenergistics2:crafting_storage_1k>)
-  .duration(100).EUt(4).buildAndRegister();
-
-// 4k Crafting Storage
-canner.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_unit>)
-  .inputs(<appliedenergistics2:material:36>)
-  .outputs(<appliedenergistics2:crafting_storage_4k>)
-  .duration(100).EUt(4).buildAndRegister();
-
-// 16k Crafting Storage
-canner.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_unit>)
-  .inputs(<appliedenergistics2:material:37>)
-  .outputs(<appliedenergistics2:crafting_storage_16k>)
-  .duration(100).EUt(4).buildAndRegister();
-
-// 64k Crafting Storage
-canner.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_unit>)
-  .inputs(<appliedenergistics2:material:38>)
-  .outputs(<appliedenergistics2:crafting_storage_64k>)
-  .duration(100).EUt(4).buildAndRegister();
-
 // Crafting Monitor
-canner.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_unit>)
-  .inputs(<appliedenergistics2:part:400>)
-  .outputs(<appliedenergistics2:crafting_monitor>)
-  .duration(100).EUt(4).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:part:400>
+    ])
+    .outputs([<appliedenergistics2:crafting_monitor>])
+    .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([<appliedenergistics2:crafting_monitor>])
+    .outputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:part:400>
+    ])
+    .duration(10).EUt(7).buildAndRegister();
+
+// Crafting Storage 1k
+packer.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:35>
+    ])
+    .outputs([<appliedenergistics2:crafting_storage_1k>])
+    .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([<appliedenergistics2:crafting_storage_1k>])
+    .outputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:35>
+    ])
+    .duration(10).EUt(7).buildAndRegister();
+
+// Crafting Storage 4k
+packer.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:36>
+    ])
+    .outputs([<appliedenergistics2:crafting_storage_4k>])
+    .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([<appliedenergistics2:crafting_storage_4k>])
+    .outputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:36>
+    ])
+    .duration(10).EUt(7).buildAndRegister();
+
+// Crafting Storage 16k
+packer.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:37>
+    ])
+    .outputs([<appliedenergistics2:crafting_storage_16k>])
+    .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([<appliedenergistics2:crafting_storage_16k>])
+    .outputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:37>
+    ])
+    .duration(10).EUt(7).buildAndRegister();
+
+// Crafting Storage 64k
+packer.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:38>
+    ])
+    .outputs([<appliedenergistics2:crafting_storage_64k>])
+    .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+    .inputs([<appliedenergistics2:crafting_storage_64k>])
+    .outputs([
+        <appliedenergistics2:crafting_unit>,
+        <appliedenergistics2:material:38>
+    ])
+    .duration(10).EUt(7).buildAndRegister();
 
 // Crafting Unit
-recipes.addShaped("cpu_crafting_unit", <appliedenergistics2:crafting_unit>, [
-  [<ore:plateAluminium>, <appliedenergistics2:material:23>, <ore:plateAluminium>],
-  [<ore:ae2.cable.glass>, <ore:circuitMv>, <ore:ae2.cable.glass>],
-  [<ore:plateAluminium>, <appliedenergistics2:material:22>, <ore:plateAluminium>]]);
+recipes.addShaped("tfg/ae2/cpu_crafting_unit",<appliedenergistics2:crafting_unit>, [
+    [<metaitem:plateSteel>, <appliedenergistics2:material:22>, <metaitem:plateSteel>],
+    [<ore:circuitHv>, <appliedenergistics2:material:24>, <ore:circuitHv>],
+    [<metaitem:plateSteel>, <appliedenergistics2:material:23>, <metaitem:plateSteel>]
+]);
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <appliedenergistics2:material:22>,
+        <appliedenergistics2:material:24>,
+        <appliedenergistics2:material:23>,
+        <ore:circuitHv>,
+        <metaitem:plateSteel> * 2
+    ])
+    .outputs([<appliedenergistics2:crafting_unit>])
+    .duration(20)
+    .EUt(7680)
+    .buildAndRegister();
 
 // Molecular Assembler
 // 1

@@ -1,17 +1,9 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-val RemoveWorkbenchRecipes as IItemStack[] = [
-	<enderstorage:ender_storage>,
-  <enderstorage:ender_storage:1>
-];
-
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-  recipes.remove(item);
-}
+recipes.removeByMod("enderstorage");
 
 // ---- Добавление рецептов
 

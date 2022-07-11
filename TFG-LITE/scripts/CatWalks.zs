@@ -1,22 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-	<catwalks:blowtorch>,
-    <catwalks:catwalk>,
-    <catwalks:catwalk>.withTag({material: "glass"}),
-    <catwalks:catwalk>.withTag({material: "treated_wood"}),
-    <catwalks:ladder>,
-    <catwalks:cable>
-];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("catwalks");
 
 // --- Добавление рецептов
 

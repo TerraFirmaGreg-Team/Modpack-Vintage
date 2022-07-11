@@ -1,19 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-	<architecturecraft:sawbench>,
-    <architecturecraft:hammer>,
-    <architecturecraft:chisel>
-];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("architecturecraft");
 
 // --- Добавление рецептов
 
@@ -34,4 +25,3 @@ recipes.addShaped("tfg/architecturecraft/chisel", <architecturecraft:chisel>,
     [[<ore:plateIronAny>, null, null],
     [<ore:dyeOrange>, <ore:stickWood>, null],
     [null, null, null]]);
- 

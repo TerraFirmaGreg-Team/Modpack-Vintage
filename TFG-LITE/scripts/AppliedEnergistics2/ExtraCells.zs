@@ -1,51 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val ItemsToRemove as IItemStack[] = [
-	<extracells:storage.casing:1>,
-  <extracells:storage.casing>,
-  <extracells:storage.component>,
-  <extracells:storage.component:1>,
-  <extracells:storage.component:2>,
-  <extracells:storage.component:3>,
-  <extracells:storage.component:8>,
-  <extracells:storage.component:9>,
-  <extracells:storage.component:10>,
-  <extracells:part.base:12>,
-  <extracells:part.base:7>,
-  <extracells:part.base:8>,
-  <extracells:hardmedrive>
-];
-
-val RemoveItemRecipesByName = [
-  "extracells:storagecells/item/owncasing/256k",
-  "extracells:storagecells/item/extracasing/256k",
-  "extracells:storagecells/item/owncasing/1024k",
-  "extracells:storagecells/item/extracasing/1024k",
-  "extracells:storagecells/item/owncasing/4096k",
-  "extracells:storagecells/item/extracasing/4096k",
-  "extracells:storagecells/item/owncasing/16384k",
-  "extracells:storagecells/item/extracasing/16384k",
-  "extracells:storagecells/fluid/owncasing/256k",
-  "extracells:storagecells/fluid/extracasing/256k",
-  "extracells:storagecells/fluid/owncasing/1024k",
-  "extracells:storagecells/fluid/extracasing/1024k",
-  "extracells:storagecells/fluid/owncasing/4096k",
-  "extracells:storagecells/fluid/extracasing/4096k"
-] as string[];
-
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in ItemsToRemove{
-  recipes.remove(item);
-}
+recipes.removeByMod("extracells");
 
-// Поименное удаление рецептов
-for item in RemoveItemRecipesByName{
-  recipes.removeByRecipeName(item);
-}
 
 // --- Добавление рецептов
 

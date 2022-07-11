@@ -60,7 +60,7 @@ import mods.gregtech.material.Material;
 <material:platinum>.addFlags("generate_dense", "generate_gear");
 <material:gold>.addFlags("generate_gear");
 <material:brass>.addFlags("generate_gear");
-<material:lead>.addFlags("generate_gear");
+<material:lead>.addFlags("generate_gear", "generate_dense");
 <material:rose_gold>.addFlags("generate_gear");
 <material:silver>.addFlags("generate_gear");
 <material:sterling_silver>.addFlags("generate_gear");

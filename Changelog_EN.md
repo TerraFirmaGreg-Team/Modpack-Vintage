@@ -1,5 +1,36 @@
 # Changelog
 
+## Version R3.4.4 - 11.07.2022
+#### [Lite, Huge]
+### Modpack fixes
+* Fixed a crash after right-clicking on the ground with a shovel in hand.
+* Fixed a crash after opening recipes with an iron flare in HEI.
+* Fixed many GTFO recipes again.
+* Fixed bugs with HotOrNot, there were a lot of them, not to list them all, but now they are all fixed (sort of).
+* Fixed recipe for wooden tongs, now they can be made in a 2x2 grid.
+* Reinforced Adobe Bricks recipe changed to use TFC bricks.
+* Changed the recipe for the controller of the electric greenhouse.
+* Fixed the recipe for the elevator controller, as well as the remote control panel for the elevator.
+* Changed ExtraCPUs recipes.
+* Fixed crafting recipes Crafting Storage, now they are all made in the packer.
+* Disabled the effect of weightlessness HotorNot, when taking containers with gases in your hand.
+* Fixed a bug when it was not possible to get through the gate to another planet, still on completion, also included auto-closing after 900 seconds, in the absence of a player, this can be stopped if you use a beamer and transport something through the wormhole.
+* Disabled sharpening for GT items.
+* Hidden all buckets, except for their usual variants without liquid.
+* Vanilla bucket is given 144mb of metal.
+* Bags from Florae are disabled, as the author of the mod is not a very good person.
+### Update mods
+* TFG mod
+* HotNot
+* fancy menu
+* HadEnoughItems
+* Moving elevators
+* supermartijn642configlib
+* supermartijn642corelib
+* GregTech Food Option
+### New mods
+* Extra CPUs
+
 ## Version R3.4.3a - 07/06/2022
 #### [Lite, Huge]
 ### Modpack fixes

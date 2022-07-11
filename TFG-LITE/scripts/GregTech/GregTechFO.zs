@@ -16,6 +16,7 @@ val ItemsToRemove as IItemStack[] = [
 
 val RemoveItemRecipesByName = [
     "gregtechfoodoption:casing_adobe_bricks",
+    "gregtechfoodoption:casing_reinforced_adobe_bricks",
     "gregtechfoodoption:baking_oven",
     "gregtechfoodoption:gtfo_hand_meat_kebab_0",
     "gregtechfoodoption:gtfo_hand_meat_kebab_1",
@@ -45,7 +46,7 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:gtfo_hand_onion_kebab",
     "gregtechfoodoption:gtfo_hand_zest1",
     "gregtechfoodoption:gtfo_hand_zest2",
-    "gregtechfoodoption:gtfo_hand_zest3",
+    "gregtechfoodoption:gtfo_hand_zest3"
 ] as string[];
 
 val TFC_Raw_Meat as IItemStack[] = [
@@ -500,6 +501,14 @@ distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration:
 // Комок биомассы
 distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], [<liquid:gtfo_lime_extract> * 1000]).remove();
 
+// Reinforced Adobe Bricks * 1
+assembler.findRecipe(28, [<metaitem:plateBronze>, <metaitem:brick.adobe_fired> * 2, <gregtechfoodoption:gtfo_casing:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
+// Reinforced Adobe Bricks * 3
+assembler.findRecipe(28, [<gregtechfoodoption:gtfo_casing:0> * 3, <metaitem:plateBronze> * 3, <metaitem:brick.adobe_fired> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
+
+
+
 // --- Добавление рецептов
 
 // УДАЛИТЬ ПОСЛЕ ФИКСА #666
@@ -513,6 +522,24 @@ recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
     [[<ore:mudBrick>, <ore:mudBrick>, null],
     [<ore:mudBrick>, <ore:mudBrick>, null],
     [null, null, null]]);
+
+// Reinforced Adobe Bricks
+recipes.addShaped("tfg/gtfo/reinforced_adobe_bricks", <gregtechfoodoption:gtfo_casing:1>,
+    [[null, <ore:gtce.tool.hard.hammers>, null],
+    [<ore:mudBrick>, <ore:plateBronze>, <ore:mudBrick>],
+    [null, <gregtechfoodoption:gtfo_casing>, null]]);
+
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs(<gregtechfoodoption:gtfo_casing:0>, <ore:mudBrick> * 2, <ore:plateBronze>)
+    .outputs(<gregtechfoodoption:gtfo_casing:1>)
+    .duration(20).EUt(28).buildAndRegister();
+
+assembler.recipeBuilder()
+    .circuit(3)
+    .inputs(<gregtechfoodoption:gtfo_casing:0> * 3, <ore:mudBrick> * 6, <ore:plateBronze> * 3)
+    .outputs(<gregtechfoodoption:gtfo_casing:1> * 3)
+    .duration(80).EUt(28).buildAndRegister();
 
 // Baking Oven
 recipes.addShaped("tfg/gtfo/baking_oven", <metaitem:gregtechfoodoption:baking_oven>,

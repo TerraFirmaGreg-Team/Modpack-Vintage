@@ -1,23 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val ItemsToRemove as IItemStack[] = [
-	<ae2fc:fluid_pattern_encoder>,
-	<ae2fc:fluid_discretizer>,
-	<ae2fc:fluid_packet_decoder>,
-	<ae2fc:ingredient_buffer>,
-	<ae2fc:burette>,
-	<ae2fc:part_fluid_pattern_ex_terminal>,
-	<ae2fc:part_fluid_pattern_terminal>
-];
-
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in ItemsToRemove{
-  recipes.remove(item);
-}
+recipes.removeByMod("ae2fc");
+
 
 // --- Добавление рецептов
 
