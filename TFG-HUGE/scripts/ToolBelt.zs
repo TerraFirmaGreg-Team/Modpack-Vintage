@@ -1,18 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveRecipes as IItemStack[] = [
-	<toolbelt:belt>,
-    <toolbelt:pouch>
-];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("toolbelt");
 
 // --- Добавление рецептов
 

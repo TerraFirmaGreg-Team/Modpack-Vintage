@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.Barrel;
+import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
 
@@ -47,6 +48,9 @@ Barrel.removeRecipe(<tfcflorae:crop/product/dirty_silk_net>, <liquid:olive_oil> 
 Barrel.removeRecipe(<tfcflorae:crop/product/dirty_cotton_net>, <liquid:olive_oil> * 50);
 Barrel.removeRecipe(<tfcflorae:crop/product/dirty_linen_net>, <liquid:olive_oil> * 50);
 Barrel.removeRecipe(<tfcflorae:crop/product/dirty_hemp_net>, <liquid:olive_oil> * 50);
+
+LeatherKnapping.removeRecipe(<tfcflorae:container/leather_bag>);
+LeatherKnapping.removeRecipe(<tfcflorae:container/pineapple_leather_bag>);
 
 // --- Добавление рецептов
 

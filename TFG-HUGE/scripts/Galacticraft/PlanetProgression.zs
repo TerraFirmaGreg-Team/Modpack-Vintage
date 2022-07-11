@@ -1,22 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveItemRecipe as IItemStack[] = [
-	<planetprogression:satellite_controller>,
-	<planetprogression:satellite_launcher>,
-	<planetprogression:dish_keycard>,
-	<planetprogression:telescope>,
-	<planetprogression:satellite_module_basic>,
-   <planetprogression:advanced_launch_pad>
-];
-
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveItemRecipe{
-   recipes.remove(item);
-}
+recipes.removeByMod("planetprogression");
+
 
 // Спутник
 mods.PlanetProgression.removeSatelliteBuilderRecipe(<planetprogression:satellite_basic>);

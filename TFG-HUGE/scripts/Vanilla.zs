@@ -408,6 +408,7 @@ assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integ
 
 // Регистрация металла
 ItemRegistry.registerItemMetal(<minecraft:iron_bars>, "WROUGHT_IRON", 18, true);
+ItemRegistry.registerItemMetal(<minecraft:bucket>, "BLUE_STEEL", 144, true);
 
 // Register Food Stats for TFC
 ItemRegistry.registerFood(<minecraft:mushroom_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 0, 0);

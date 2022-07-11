@@ -1,19 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-	<movingelevators:elevator_block>,
-    <movingelevators:display_block>,
-    <movingelevators:button_block>
-];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("movingelevators");
 
 // --- Добавление рецептов
 
@@ -32,5 +23,5 @@ recipes.addShaped(<movingelevators:display_block>,
 // Remote Elevator Panel
 recipes.addShaped(<movingelevators:button_block>, 
 [[null, <appliedenergistics2:material:41>, null],
- [<ore:ButtonStone>, <movingelevators:elevator_block>, <ore:ButtonStone>],
+ [<projectred-illumination:light_button>, <movingelevators:elevator_block>, <projectred-illumination:light_button>],
  [null, null, null]]);

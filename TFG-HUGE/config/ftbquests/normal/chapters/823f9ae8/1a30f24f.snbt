@@ -11,7 +11,8 @@
 			id: "tfgmod:meta_tool",
 			tag: {
 				GT.ToolStats: {
-					Material: "copper"
+					MaxDurability: 460,
+					Material: "wood"
 				}
 			}
 		}],

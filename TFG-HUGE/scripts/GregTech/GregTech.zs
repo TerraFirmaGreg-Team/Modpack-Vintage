@@ -114,8 +114,8 @@ macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
 arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
 
 // Разбор ведра из синей стали
-<recipemap:macerator>.findRecipe(2, [<minecraft:bucket:0>], null).remove();
-<recipemap:arc_furnace>.findRecipe(30, [<minecraft:bucket:0>], [<liquid:oxygen> * 56]).remove();
+macerator.findRecipe(2, [<minecraft:bucket:0>], null).remove();
+arc_furnace.findRecipe(30, [<minecraft:bucket:0>], [<liquid:oxygen> * 56]).remove();
 
 
 // Diamond Horse Armor -> 8x Diamond Dust
@@ -340,9 +340,9 @@ recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>,
 
 // Контроллер теплицы
 recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
-  [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
-  [<ore:circuitMv>, <metaitem:hull.mv>, <ore:circuitMv>],
-  [<metaitem:electric.piston.mv>, <metaitem:electric.pump.mv>, <metaitem:electric.piston.mv>]]);
+    [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
+    [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
+    [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
 
 // Контроллер распилки
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
