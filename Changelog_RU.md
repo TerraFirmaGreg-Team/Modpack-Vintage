@@ -1,5 +1,20 @@
 # Список изменений
 
+## Version R3.4.5 - 24.07.2022
+#### [Lite, Huge]
+### Исправления модпака
+
+### Обновление модов
+* Appliedenergistics2
+* AsmodeusCore
+* Fancymenu
+* Fluid Craft for AE2
+* GalaxySpace
+* Modularui
+* Movingelevators
+* Xaeros Minimap
+* Xaeros World Map
+
 ## Version R3.4.4 - 11.07.2022
 #### [Lite, Huge]
 ### Исправления модпака
