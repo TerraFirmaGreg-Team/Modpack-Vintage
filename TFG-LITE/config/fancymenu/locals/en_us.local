@@ -931,8 +931,8 @@ helper.creator.custombutton.config.actiontype.copytoclipboard.desc.value.example
 fancymenu.config.forcefullscreen = Force Fullscreen
 fancymenu.config.forcefullscreen.desc = Forces the window to fullscreen on start.%n%Users will still be able to%n%go out of fullscreen later.
 
-helper.creator.custombutton.config.actiontype.mimicbutton.desc = Execute the button action%n%of a vanilla button.
-helper.creator.custombutton.config.actiontype.mimicbutton.desc.value = menu_identifier:button_id
+helper.creator.custombutton.config.actiontype.mimicbutton.desc = Mimic the click behaviour/action%n%of a vanilla/mod button.%n%%n%You need the §lbutton locator §rof%n%the button you want to mimic.%n%%n%How to get the §llocator §rof a button:%n%%n%§l1. §rLeave the editor%n%§l2. §rEnable §lTools -> Button Info%n%§l3. §rHover over the target button%n%§l4. §rRight-click the button
+helper.creator.custombutton.config.actiontype.mimicbutton.desc.value = Button Locator
 helper.creator.custombutton.config.actiontype.mimicbutton.desc.value.example = some.menu.identifier:505280
 
 fancymenu.custombutton.action.mimicbutton.unabletoexecute = §c§lError!%n%%n%Unable to execute button action!%n%%n%Invalid button locator or unable to%n%open parent screen of button.%n% %n% %n% %n%
@@ -1138,19 +1138,23 @@ fancymenu.commands.variable.get.success = §a[FancyMenu] Variable Value: §6{}
 fancymenu.commands.variable.set.success = §a[FancyMenu] Variable value set to: §6{}
 fancymenu.commands.variable.not_found = §c[FancyMenu] Variable not found!
 
+fancymenu.helper.editor.items.vanilla_button.copy_locator = Copy Button Locator
+fancymenu.helper.editor.items.vanilla_button.copy_locator.desc = The button locator is a combination%n%of the menu identifier this%n%button is a part of and its button ID.%n%%n%The button locator is used for%n%button actions like §o'mimicbutton'§r.
 
+fancymenu.helper.button_info.copy_locator = §lRIGHT-CLICK TO COPY BUTTON LOCATOR!
+fancymenu.helper.button_info.copy_locator.copied = §a§lBUTTON LOCATOR COPIED TO CLIPBOARD!
 
+fancymenu.helper.editor.edit_menu_title = Edit Menu Title
+fancymenu.helper.editor.edit_menu_title.desc = You know that annoying little%n%text at the top some menus%n%like the pause menu?%n%This feature allows you to edit it!%n%%n%§cDue to how menus work, it is%n%§cpossible that you can't edit%n%§cthe title of some menus.%n%§cIf that's the case, there's%n%§cnot much you or I can do.
+fancymenu.helper.editor.edit_menu_title.reset = Reset Menu Title
+fancymenu.helper.editor.edit_menu_title.reset.desc = Resets the menu title to the default.
 
+fancymenu.helper.editor.items.visibilityrequirements.realtimeweekday = Is Real Time Week Day
+fancymenu.helper.editor.items.visibilityrequirements.realtimeweekday.desc = Check if the real time's current week day is X.%n%%n%First day of the week is sunday!%n%%n%You can separate multiple values by comma,%n%to check for more than one day%n%at once.
+fancymenu.helper.editor.items.visibilityrequirements.realtimeweekday.valuename = Real Time Week Day(s) (Separate Values By Comma)
 
-
-
-
-
-
-
-
-
-
-
+fancymenu.helper.editor.backgrounds.animation.restart_on_load.on = Restart Animation On Load: §aOn
+fancymenu.helper.editor.backgrounds.animation.restart_on_load.off = Restart Animation On Load: §cOff
+fancymenu.helper.editor.backgrounds.animation.restart_on_load.desc = If the animation should restart%n%every time the menu gets opened.
 
 

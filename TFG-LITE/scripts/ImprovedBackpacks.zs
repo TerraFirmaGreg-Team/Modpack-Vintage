@@ -1,10 +1,19 @@
 import crafttweaker.item.IItemStack;
 
+// --- Массивы
+
+val RemoveWorkbenchRecipes as IItemStack[] = [
+    <improvedbackpacks:upgrade:2>,
+    <improvedbackpacks:upgrade:3>,
+    <improvedbackpacks:upgrade:4>
+];
+
 // --- Удаление рецептов
 
 // Удаление рецептов
-recipes.removeByMod("improvedbackpacks");
-
+for item in RemoveWorkbenchRecipes {
+    recipes.remove(item);
+}
 
 // --- Добавление рецептов
 

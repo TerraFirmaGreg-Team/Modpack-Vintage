@@ -1,32 +1,34 @@
 # GTCEu
 
 # Локализация материалов
-material.breccia=Breccia
-material.catlinite=Catlinite
-material.chalk=Chalk
-material.chert=Chert
-material.claystone=Claystone
-material.conglomerate=Conglomerate
-material.dacite=Dacite
-material.dolomite=Dolomite
-material.gabbro=Gabbro
-material.gneiss=Gneiss
-material.komatiite=Komatiite
-material.limestone=Limestone
-material.mudstone=Mudstone
-material.novaculite=Novaculite
-material.peridotite=Peridotite
-material.phyllite=Phyllite
-material.porphyry=Porphyry
-material.quartzite=Quartzite
-material.rhyolite=Rhyolite
-material.rocksalt=Rocksalt
-material.sandstone=Sandstone
-material.schist=Schist
-material.shale=Shale
-material.siltstone=Siltstone
-material.slate=Slate
-material.soapstone=Soapstone
+material.breccia=Брекчия
+material.catlinite=Катлинит
+material.chalk=Мел
+material.chert=черт
+material.claystone=Глиняный камень
+material.conglomerate=Конгломерат
+material.dacite=Дацит
+material.dolomite=Доломит
+material.gabbro=Габбро
+material.gneiss=Гнейс
+material.komatiite=Коматиит
+material.limestone=Известняк
+material.mudstone=Аргиллит
+material.novaculite=Новакулит
+material.peridotite=Перидотит
+material.phyllite=Филлит
+material.porphyry=Порфир
+material.quartzite=Кварцит
+material.rhyolite=Риолит
+material.rocksalt=Каменная соль
+material.sandstone=Песчаник
+material.schist=Сланец
+material.shale=Глинистый сланец
+material.siltstone=Алевролит
+material.slate=Сланцевый шифер
+material.soapstone=Мыльный камень
+
+material.banded_iron=Оксид железа (III)
 
 material.mercury_air=Воздух Меркурия
 material.mercury_liquid_air=Жидкий воздух Меркурия

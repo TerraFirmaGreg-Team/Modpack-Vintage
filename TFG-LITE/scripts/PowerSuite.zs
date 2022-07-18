@@ -1,45 +1,9 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-	<powersuits:power_fist>,
-	<powersuits:powerarmor_feet>,
-	<powersuits:powerarmor_head>,
-	<powersuits:powerarmor_legs>,
-	<powersuits:powerarmor_torso>,
-	<powersuits:powerarmorcomponent>,
-	<powersuits:luxcapacitor>,
-	<powersuits:powerarmorcomponent:1>,
-	<powersuits:powerarmorcomponent:2>,
-	<powersuits:powerarmorcomponent:3>,
-	<powersuits:powerarmorcomponent:4>,
-	<powersuits:powerarmorcomponent:5>,
-	<powersuits:powerarmorcomponent:6>,
-	<powersuits:powerarmorcomponent:7>,
-	<powersuits:powerarmorcomponent:8>,
-	<powersuits:powerarmorcomponent:9>,
-	<powersuits:powerarmorcomponent:10>,
-	<powersuits:powerarmorcomponent:11>,
-	<powersuits:powerarmorcomponent:12>,
-	<powersuits:powerarmorcomponent:13>,
-	<powersuits:powerarmorcomponent:14>,
-	<powersuits:powerarmorcomponent:15>,
-	<powersuits:powerarmorcomponent:16>,
-	<powersuits:powerarmorcomponent:17>,
-	<powersuits:powerarmorcomponent:18>,
-	<powersuits:powerarmorcomponent:19>,
-	<powersuits:powerarmorcomponent:20>,
-	<powersuits:powerarmorcomponent:21>,
-	<powersuits:tinkertable>
-];
-
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("powersuits");
 
 // --- Добавление рецептов
 

@@ -1,3 +1,5 @@
+import mods.jei.JEI;
+import crafttweaker.mods.IMod;
 import crafttweaker.item.IItemStack;
 
 // --- Удаление рецептов
@@ -5,6 +7,17 @@ import crafttweaker.item.IItemStack;
 // Удаление рецептов
 recipes.removeByMod("extracells");
 
+// Скрытие паттернов
+val ec as IMod = loadedMods["extracells"];
+if (!isNull(ec)) {
+    val ecItems as IItemStack[] = ec.items;
+
+    for item in ecItems {
+        if(item.displayName has "ME Fluid Pattern") {
+            JEI.hide(item);
+        }
+    }
+}
 
 // --- Добавление рецептов
 
@@ -13,6 +26,27 @@ assembler.recipeBuilder()
 	.inputs([<ore:plateCertusQuartz> * 2, <ore:gemQuartzite> * 2, <ore:plateStainlessSteel> * 4, <ore:screwStainlessSteel> * 2])
 	.outputs(<extracells:storage.casing:1>)
 	.duration(20).EUt(480).buildAndRegister();
+
+// Recycle - Fluid Housing
+macerator.recipeBuilder()
+    .inputs([<extracells:storage.casing:1>])
+    .outputs([
+        <metaitem:dustStainlessSteel> * 2,
+        <metaitem:dustTinyStainlessSteel> * 2
+    ])
+    .duration(100)
+    .EUt(16)
+    .buildAndRegister();
+arc_furnace.recipeBuilder()
+    .inputs([<extracells:storage.casing:1>])
+    .fluidInputs([<liquid:oxygen> * 56])
+    .outputs([
+        <metaitem:ingotStainlessSteel> * 2,
+        <metaitem:nuggetStainlessSteel> * 2
+    ])
+    .duration(56)
+    .EUt(30)
+    .buildAndRegister();
 
 // Advanced Storage Housing
 assembler.recipeBuilder()
@@ -41,35 +75,12 @@ arc_furnace.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-// Recycle - Fluid Housing
-macerator.recipeBuilder()
-    .inputs([<extracells:storage.casing:1>])
-    .outputs([
-        <metaitem:dustStainlessSteel> * 2,
-        <metaitem:dustTinyStainlessSteel> * 2
-    ])
-    .duration(100)
-    .EUt(16)
-    .buildAndRegister();
-arc_furnace.recipeBuilder()
-    .inputs([<extracells:storage.casing:1>])
-    .fluidInputs([<liquid:oxygen> * 56])
-    .outputs([
-        <metaitem:ingotStainlessSteel> * 2,
-        <metaitem:nuggetStainlessSteel> * 2
-    ])
-    .duration(56)
-    .EUt(30)
-    .buildAndRegister();
-
 // 256k Storage Component
-
 assembler.recipeBuilder()
   .inputs([<ore:circuitZpm> * 4, <ore:plateNaquadahAlloy> * 4, <ore:dustCertusQuartz> * 16, <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<extracells:storage.component>])
   .duration(200).EUt(122880).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>, <ore:circuitZpm> * 4, <appliedenergistics2:material:38> * 4
   ])
@@ -83,7 +94,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<extracells:storage.component:1>])
   .duration(200).EUt(122880).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>, <ore:circuitZpm> * 4, <extracells:storage.component> * 4])
   .fluidInputs(<liquid:steel> * 144)
@@ -96,7 +106,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<extracells:storage.component:2>])
   .duration(200).EUt(491520).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:23>, <ore:circuitUv> * 4, <extracells:storage.component:1> * 4])
   .fluidInputs(<liquid:steel> * 144)
@@ -109,7 +118,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<extracells:storage.component:3>])
   .duration(200).EUt(491520).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:23>, <ore:circuitUv> * 4, <extracells:storage.component:2> * 4])
   .fluidInputs(<liquid:steel> * 144)
@@ -122,7 +130,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<extracells:storage.component:8>])
   .duration(200).EUt(122880).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>, <ore:circuitZpm> * 4, <appliedenergistics2:material:57> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -135,7 +142,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<extracells:storage.component:9>])
   .duration(200).EUt(122880).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>,<ore:circuitZpm> * 4,<extracells:storage.component:8> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -148,7 +154,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<extracells:storage.component:10>])
   .duration(200).EUt(491520).buildAndRegister();
-
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:23>, <ore:circuitUv> * 4, <extracells:storage.component:9> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
@@ -180,7 +185,6 @@ packer.recipeBuilder()
   .duration(10).EUt(7).buildAndRegister();
 
 // 256k Fluid Cell
-
 packer.recipeBuilder()
   .inputs([<extracells:storage.casing:1>, <extracells:storage.component:8>])
   .outputs([<extracells:storage.fluid:4>])

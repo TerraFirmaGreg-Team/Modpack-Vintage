@@ -1,6 +1,6 @@
 {
-	x: 14.0d,
-	y: 1.0d,
+	x: 15.0d,
+	y: -2.25d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.craftingunits.subtitle}",
 	dependencies: [

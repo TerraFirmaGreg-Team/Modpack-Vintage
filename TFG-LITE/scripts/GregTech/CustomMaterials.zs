@@ -67,6 +67,7 @@ import mods.gregtech.material.Material;
 <material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
 <material:netherrack>.addFlags("no_unification");
 <material:wheat>.addFlags("no_unification");
+<material:electrotine>.addFlags("generate_plate");
 
 // Dry Ice
 var dry_ice = MaterialBuilder(32050, "dry_ice")

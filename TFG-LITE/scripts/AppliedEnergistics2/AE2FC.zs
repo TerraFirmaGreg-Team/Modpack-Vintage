@@ -57,3 +57,26 @@ assembler.recipeBuilder()
   .circuit(24)
   .outputs(<ae2fc:part_fluid_pattern_terminal>)
   .duration(10).EUt(480).buildAndRegister();
+
+// Fluid level maintainer
+assembler.recipeBuilder()
+  .inputs(<appliedenergistics2:crafting_monitor>, <appliedenergistics2:material:24> * 4, <ore:dustFluix> * 8, <appliedenergistics2:part:281>, <ore:plateLapis> * 2)
+  .circuit(24)
+  .outputs(<ae2fc:fluid_level_maintainer>)
+  .duration(10).EUt(480).buildAndRegister();
+
+// Large ingredient buffer
+assembler.recipeBuilder()
+  .inputs(<ae2fc:ingredient_buffer> * 4, <appliedenergistics2:quartz_glass> * 4, <appliedenergistics2:material:24> * 8)
+  .circuit(24)
+  .outputs(<ae2fc:large_ingredient_buffer>)
+  .duration(10).EUt(980).buildAndRegister();
+
+// Dual interface
+recipes.addShapeless("tfg/ae2fc/dual_interface", <ae2fc:dual_interface>, [<ae2fc:part_dual_interface>]);
+recipes.addShapeless("tfg/ae2fc/part_dual_interface", <ae2fc:part_dual_interface>, [<ae2fc:dual_interface>]);
+assembler.recipeBuilder()
+  .inputs(<appliedenergistics2:fluid_interface>, <appliedenergistics2:interface>)
+  .circuit(24)
+  .outputs(<ae2fc:dual_interface>)
+  .duration(10).EUt(480).buildAndRegister();

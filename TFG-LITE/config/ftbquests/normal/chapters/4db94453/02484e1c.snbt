@@ -1,7 +1,7 @@
 {
-	x: 14.0d,
-	y: 0.0d,
-	shape: "square",
+	x: 13.75d,
+	y: 1.5d,
+	shape: "rsquare",
 	description: "{tfg.quests.ae2.craftingmonitor.subtitle}",
 	dependencies: [
 		"59b097c6"

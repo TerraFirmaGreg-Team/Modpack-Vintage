@@ -40,7 +40,7 @@ val RemoveWorkbenchRecipes as IItemStack[] = [
 
 // Удаление рецептов
 for item in RemoveWorkbenchRecipes {
-    //recipes.remove(item);
+    recipes.remove(item);
 }
 
 // --- Добавление рецептов

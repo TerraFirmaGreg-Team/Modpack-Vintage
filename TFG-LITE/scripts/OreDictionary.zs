@@ -482,6 +482,11 @@ for denseSmartCable in denseSmartCables {
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
+<ore:ingotElectrotineAlloy>.remove(<projectred-core:resource_item:104>);
+<ore:gemRuby>.remove(<projectred-core:resource_item:200>);
+<ore:gemSapphire>.remove(<projectred-core:resource_item:201>);
+<ore:gemPeridot>.remove(<projectred-core:resource_item:202>);
+<ore:dustElectrotine>.remove(<projectred-core:resource_item:105>);
 
 ////////////////////////////////////////////////////////
 // --- TFC-Florae --- //////////////////////////////////
