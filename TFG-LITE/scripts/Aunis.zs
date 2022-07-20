@@ -1,47 +1,8 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-    <aunis:beamer_block>,
-    <aunis:capacitor_block>,
-    <aunis:capacitor_block>,
-    <aunis:capacitor_block_empty>,
-    <aunis:circuit_control_base>,
-    <aunis:circuit_control_crystal>,
-    <aunis:circuit_control_naquadah>,
-    <aunis:crystal_blue>,
-    <aunis:crystal_control_dhd>,
-    <aunis:crystal_ender>,
-    <aunis:crystal_fragment>,
-    <aunis:crystal_glyph_pegasus>,
-    <aunis:crystal_glyph_universe>,
-    <aunis:crystal_red>,
-    <aunis:crystal_yellow>,
-    <aunis:dhd_block>,
-    <aunis:dhd_brb>,
-    <aunis:holder_crystal>,
-    <aunis:naquadah_block>,
-    <aunis:naquadah_shard>,
-    <aunis:notebook>,
-    <aunis:page_mysterious>,
-    <aunis:stargate_milkyway_base_block>,
-    <aunis:stargate_milkyway_member_block:6>,
-    <aunis:stargate_milkyway_member_block:14>,
-    <aunis:stargate_orlin_base_block>,
-    <aunis:stargate_orlin_member_block>,
-    <aunis:stargate_ring_fragment>,
-    <aunis:transportrings_block>,
-    <aunis:transportrings_controller_block>,
-    <aunis:transportrings_ring_fragment>
-];
-
-// --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
+recipes.removeByMod("aunis");
 
 // --- Добавление рецептов
 
@@ -50,7 +11,15 @@ star_forge.recipeBuilder()
   .circuit(1)
   .inputs(<ore:blockNaquadahAlloy> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
   .fluidInputs([<liquid:naquadah_alloy> * 1000])
-  .outputs(<aunis:transportrings_block>)
+  .outputs(<aunis:transportrings_goauld_block>)
+  .duration(200).EUt(2800).buildAndRegister();
+
+// Transportrings_block
+star_forge.recipeBuilder()
+  .circuit(1)
+  .inputs(<ore:blockTrinium> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
+  .fluidInputs([<liquid:naquadah_alloy> * 1000])
+  .outputs(<aunis:transportrings_ori_block>)
   .duration(200).EUt(2800).buildAndRegister();
 
 // Transportrings_controller_block
@@ -58,7 +27,7 @@ star_forge.recipeBuilder()
   .circuit(2)
   .inputs(<ore:ingotNaquadahAlloy> * 6, <aunis:crystal_ender>, <aunis:circuit_control_naquadah>, <projectred-illumination:light_button> * 9)
 	.fluidInputs([<liquid:gold> * 2000])
-  .outputs(<aunis:transportrings_controller_block>)
+  .outputs(<aunis:transportrings_controller_goauld_block>)
   .duration(200).EUt(980).buildAndRegister();
 
 // Transportrings_ring_fragment>

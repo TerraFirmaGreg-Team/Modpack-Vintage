@@ -4,7 +4,8 @@
 		tag: {
 			power: 20000.0d,
 			fuzzyMode: "IGNORE_ALL"
-		}
+		},
+		Count: 1b
 	},
 	x: -9.5d,
 	y: 8.5d,
@@ -18,7 +19,8 @@
 			id: "extracells:storage.fluid.portable",
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

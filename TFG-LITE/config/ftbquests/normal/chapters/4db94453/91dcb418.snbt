@@ -12,7 +12,8 @@
 			Damage: 4s,
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

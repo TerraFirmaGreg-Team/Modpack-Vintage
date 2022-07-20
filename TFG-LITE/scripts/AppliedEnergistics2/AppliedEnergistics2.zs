@@ -1,6 +1,8 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.mods.IMod;
+import mods.jei.JEI;
 
 // --- Массивы
 
@@ -155,6 +157,7 @@ for item in denseSmartCables {
 for item in denseCoveredCables {
     recipes.remove(item);
 }
+
 // --- Добавление рецептов
 
 // Покраска, обесвечивание кабелей
@@ -890,7 +893,7 @@ packer.recipeBuilder()
 // 1k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:54>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_1k>])
@@ -899,7 +902,7 @@ packer.recipeBuilder()
 // 4k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:55>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_4k>])
@@ -908,7 +911,7 @@ packer.recipeBuilder()
 // 16k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:56>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_16k>])
@@ -917,7 +920,7 @@ packer.recipeBuilder()
 // 64k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:1>,
+    <aeadditions:storage.casing:1>,
     <appliedenergistics2:material:57>
   ])
   .outputs([<appliedenergistics2:fluid_storage_cell_64k>])
@@ -926,7 +929,7 @@ packer.recipeBuilder()
 // 2³ Spatial Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:32>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_2_cubed>])
@@ -935,7 +938,7 @@ packer.recipeBuilder()
 // 16³ Spatial Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:33>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_16_cubed>])
@@ -944,7 +947,7 @@ packer.recipeBuilder()
 // 128³ Spatial Cell
 packer.recipeBuilder()
   .inputs([
-    <extracells:storage.casing:0>,
+    <aeadditions:storage.casing:0>,
     <appliedenergistics2:material:34>
   ])
   .outputs([<appliedenergistics2:spatial_storage_cell_128_cubed>])

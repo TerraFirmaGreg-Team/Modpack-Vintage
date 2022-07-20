@@ -264,12 +264,6 @@ distillation_tower.recipeBuilder()
    .fluidOutputs(<liquid:xenon> * 26000)
    .duration(2000).EUt(1900520).buildAndRegister();
 
-// Barnard C
-GenerateGasCollectorRecipes(-1030, 18);
-GenerateGasCollectorRecipes(-22, 19);
-GenerateGasCollectorRecipes(-1025, 20);
-GenerateGasCollectorRecipes(-1338, 21);
-
 // --- Породы
 
 function GenerateRecipesForSurfaceStones3(surface as IItemStack, sub_surface as IItemStack, stone as IItemStack, output as IItemStack, DurationMulti as int, EUMulti as int) {
@@ -379,40 +373,10 @@ centrifuge.recipeBuilder()
    .fluidOutputs(<liquid:water> * 50)
    .duration(150).EUt(1750).buildAndRegister();
 
-// Oxygen Ice Shard -> Oxygen
-extractor.recipeBuilder()
-   .inputs(<galaxyspace:gs_basic:23>)
-   .fluidOutputs(<liquid:oxygen> * 170)
-   .duration(150).EUt(1750).buildAndRegister();
-
-// Nitrogen Ice Shard -> Nitrogen
-extractor.recipeBuilder()
-   .inputs(<galaxyspace:gs_basic:24>)
-   .fluidOutputs(<liquid:nitrogen> * 170)
-   .duration(150).EUt(1750).buildAndRegister();
-
-// Dry Ice hard -> DryIce
-extractor.recipeBuilder()
-   .inputs(<galaxyspace:gs_basic:27>)
-   .fluidOutputs(<liquid:dry_ice> * 170)
-   .duration(150).EUt(1750).buildAndRegister();
-
-// Hydrogen Ice Shard -> Hydrogen
-extractor.recipeBuilder()
-   .inputs(<galaxyspace:gs_basic:26>)
-   .fluidOutputs(<liquid:hydrogen> * 170)
-   .duration(150).EUt(1750).buildAndRegister();
-
-// Methane Ice Shard -> Methane
-extractor.recipeBuilder()
-   .inputs(<galaxyspace:gs_basic:25>)
-   .fluidOutputs(<liquid:methane> * 170)
-   .duration(150).EUt(1750).buildAndRegister();
-
 // --- Меркурий
 
 // Поверхности
-GenerateRecipesForSurfaceStones3(<galaxyspace:mercuryblocks:0>, <galaxyspace:mercuryblocks:1>, <galaxyspace:mercuryblocks:2>, <metaitem:dustStoneMercury>, 4, 4);
+GenerateRecipesForSurfaceStones3(<extraplanets:mercury>, <extraplanets:mercury:1>, <extraplanets:mercury:2> <metaitem:dustStoneMercury>, 4, 4);
 
 // Пыль меркурия
 centrifuge.recipeBuilder()
@@ -474,7 +438,7 @@ centrifuge.recipeBuilder()
 // --- Фобос
 
 // Поверхности
-GenerateRecipesForSurfaceStones2(<galaxyspace:phobosblocks>, <galaxyspace:phobosblocks:1>, <metaitem:dustStonePhobos>, 2, 2);
+GenerateRecipesForSurfaceStones2(<extraplanets:phobos>, <extraplanets:phobos:1>, <extraplanets:phobos:2>, <metaitem:dustStonePhobos>, 2, 2);
 
 // Пыль фобоса
 centrifuge.recipeBuilder()
@@ -484,12 +448,6 @@ centrifuge.recipeBuilder()
    .chancedOutput(<metaitem:dustMagnetite>, 1150, 500)
    .chancedOutput(<metaitem:dustSulfur>, 950, 500)
    .duration(1250).EUt(512).buildAndRegister();
-
-// Dry Ice
-macerator.recipeBuilder()
-   .inputs(<galaxyspace:surface_ice:4>)
-   .outputs(<metaitem:dustDryIce>)
-   .duration(160).EUt(512).buildAndRegister();
 
 // --- Деймос
 
@@ -914,17 +872,3 @@ centrifuge.recipeBuilder()
    .chancedOutput(<metaitem:dustPlutonium>, 950, 500)
    .duration(1250).EUt(1640).buildAndRegister();
 
-// --- Proxima B
-
-// Поверхности
-GenerateRecipesForSurfaceStones3(<galaxyspace:proxima_b_blocks>, <galaxyspace:proxima_b_blocks:1>, <galaxyspace:proxima_b_blocks:2>, <metaitem:dustStoneProximaB>, 10, 10);
-
-// --- Tauceti F
-
-// Поверхности
-GenerateRecipesForSurfaceStones3(<galaxyspace:tauceti_f_blocks:1>, <galaxyspace:tauceti_f_blocks>, <galaxyspace:tauceti_f_blocks:2>, <metaitem:dustStoneTaucetiF>, 10, 10);
-
-// --- Barnarda C
-
-// Поверхности
-GenerateRecipesForSurfaceStones3(<galaxyspace:barnarda_c_grasses>, <galaxyspace:barnarda_c_blocks:3>, <galaxyspace:barnarda_c_blocks:1>, <metaitem:dustStoneBarnardaC>, 10, 10);

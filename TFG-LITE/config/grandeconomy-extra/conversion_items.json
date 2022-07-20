@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "item": "minecraft:command_block",
+      "meta": 0,
+      "value": 50.0
+    },
+    {
+      "item": "minecraft:bedrock",
+      "meta": 0,
+      "value": 30.0
+    }
+  ]
+}

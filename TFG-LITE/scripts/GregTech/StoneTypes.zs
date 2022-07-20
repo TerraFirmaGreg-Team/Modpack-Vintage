@@ -179,13 +179,13 @@ val oreSlate as OrePrefix = OrePrefix.registerOrePrefix("oreSlate", 1);
 oreSlate.addSecondaryMaterial(<material:slate>, 1);
 StoneType.create(44, "tfc_slate", "oreSlate", <material:slate>, "tfc:raw/slate");
 
-// -- Galacticraft/GalaxySpace
+// -- Galacticraft/ExtraPlanet
 
 // - Mercury
 MaterialBuilder(32123, "stone_mercury").dust().color(0xC7FFFB).build();
 // val oreMercurystone as OrePrefix = OrePrefix.registerOrePrefix("oreMercurystone", 1);
 // oreMercurystone.addSecondaryMaterial(<material:mercurystone>, 1);
-// val blockState = "galaxyspace:mercuryblocks:type=mercury_stone";
+// val blockState = "extraplanets:mercuryblocks:type=mercury_stone";
 // StoneType.create(47, "gc_mercurystone", "oreMercurystone", <material:mercurystone>, blockState);
 
 // - Venus
@@ -255,12 +255,3 @@ MaterialBuilder(32146, "stone_pluto").dust().color(0xFF7A5C).build();
 
 // - Eris
 MaterialBuilder(32147, "stone_eris").dust().color(0xFF7A5C).build();
-
-// - Proxima B
-MaterialBuilder(32148, "stone_proxima_b").dust().color(0xFF7A5C).build();
-
-// - Tauceti F
-MaterialBuilder(32149, "stone_tauceti_f").dust().color(0xFF7A5C).build();
-
-// - Barnarda C
-MaterialBuilder(32150, "stone_barnarda_c").dust().color(0xFF7A5C).build();

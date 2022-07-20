@@ -13,7 +13,8 @@
 				upgrades: {},
 				config: {},
 				fuzzyMode: "IGNORE_ALL"
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

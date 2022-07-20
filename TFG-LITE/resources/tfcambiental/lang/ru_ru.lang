@@ -1,0 +1,6 @@
+# TFC death messages
+death.attack.hypothermia=%1$s замер.
+death.attack.hyperthermia=%1$s умер от сердечного приступа.
+
+effect.tfcambiental.cool.name=Остываете
+effect.tfcambiental.warm.name=Нагреваетесь

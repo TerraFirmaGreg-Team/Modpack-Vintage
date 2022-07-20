@@ -15,7 +15,8 @@
 			tag: {
 				modification_count: 2,
 				helmet_button: 0b
-			}
+			},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -29,7 +30,8 @@
 			tag: {
 				modification_count: 2,
 				chest_button: 0b
-			}
+			},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -43,7 +45,8 @@
 			tag: {
 				legs_button: 0b,
 				modification_count: 2
-			}
+			},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -57,7 +60,8 @@
 			tag: {
 				modification_count: 2,
 				boots_button: 0b
-			}
+			},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

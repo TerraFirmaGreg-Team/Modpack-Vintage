@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "extraplanets:items/tier8_nose_cone"
+        "layer0": "extraplanets:items/tier8_nose_cone.0"
     },
     "display": {
         "thirdperson": {

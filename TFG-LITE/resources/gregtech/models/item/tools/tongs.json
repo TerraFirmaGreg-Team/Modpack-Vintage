@@ -1,0 +1,46 @@
+{
+  "textures": {
+    "layer0": "gregtech:items/tools/tongs_base",
+    "layer1": "gregtech:items/tools/tongs"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -115,
+        88,
+        55
+      ],
+      "translation": [
+        0,
+        3.5,
+        -0.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -115,
+        -88,
+        -55
+      ],
+      "translation": [
+        0,
+        3.5,
+        -0.25
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -84,
+        90,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        3.5,
+        -0.25
+      ]
+    }
+  }
+}

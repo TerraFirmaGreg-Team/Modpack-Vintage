@@ -1,0 +1,6 @@
+# TFC death messages
+death.attack.hypothermia=%1$s froze to death.
+death.attack.hyperthermia=%1$s died of heatstroke.
+
+effect.tfcambiental.cool.name=Cooling Down
+effect.tfcambiental.warm.name=Warming Up
