@@ -376,7 +376,7 @@ centrifuge.recipeBuilder()
 // --- Меркурий
 
 // Поверхности
-GenerateRecipesForSurfaceStones3(<extraplanets:mercury>, <extraplanets:mercury:1>, <extraplanets:mercury:2> <metaitem:dustStoneMercury>, 4, 4);
+GenerateRecipesForSurfaceStones3(<extraplanets:mercury>, <extraplanets:mercury:1>, <extraplanets:mercury:2>, <metaitem:dustStoneMercury>, 4, 4);
 
 // Пыль меркурия
 centrifuge.recipeBuilder()
@@ -438,7 +438,7 @@ centrifuge.recipeBuilder()
 // --- Фобос
 
 // Поверхности
-GenerateRecipesForSurfaceStones2(<extraplanets:phobos>, <extraplanets:phobos:1>, <extraplanets:phobos:2>, <metaitem:dustStonePhobos>, 2, 2);
+GenerateRecipesForSurfaceStones3(<extraplanets:phobos>, <extraplanets:phobos:1>, <extraplanets:phobos:2>, <metaitem:dustStonePhobos>, 2, 2);
 
 // Пыль фобоса
 centrifuge.recipeBuilder()

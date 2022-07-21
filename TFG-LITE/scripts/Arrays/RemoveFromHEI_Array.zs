@@ -1986,7 +1986,7 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier10_items:4>
 ];
 for item in ExtraPlanets {
-    JEI.removeAndHide(item);
+    // JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [

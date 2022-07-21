@@ -28,7 +28,9 @@ material.siltstone=Siltstone
 material.slate=Slate
 material.soapstone=Soapstone
 
-material.banded_iron=Oxide Iron(III)
+material.banded_iron=Oxide Iron (III)
+
+material.dry_ice=Dry Ice
 
 material.mercury_air=Mercury Air
 material.mercury_liquid_air=Liquid Mercury Air
