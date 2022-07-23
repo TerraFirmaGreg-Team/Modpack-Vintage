@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/rheya.png"
+			icon: "extraplanets:textures/gui/celestialbodies/rheya.png"
 		}
 	},
 	x: 16.25d,

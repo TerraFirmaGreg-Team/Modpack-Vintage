@@ -1,11 +1,10 @@
 {
 	icon: {
-		id: "extracells:storage.fluid.portable",
+		id: "aeadditions:storage.fluid.portable",
 		tag: {
 			power: 20000.0d,
 			fuzzyMode: "IGNORE_ALL"
-		},
-		Count: 1b
+		}
 	},
 	x: -9.5d,
 	y: 8.5d,
@@ -16,11 +15,10 @@
 		uid: "91c5489a",
 		type: "item",
 		items: [{
-			id: "extracells:storage.fluid.portable",
+			id: "aeadditions:storage.fluid.portable",
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			},
-			Count: 1b
+			}
 		}],
 		ignore_nbt: 1b
 	}]

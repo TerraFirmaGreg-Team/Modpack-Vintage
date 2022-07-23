@@ -1,5 +1,3 @@
-import mods.jei.JEI;
-import crafttweaker.mods.IMod;
 import crafttweaker.item.IItemStack;
 
 // --- Удаление рецептов
@@ -121,19 +119,19 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>, <ore:circuitZpm> * 4, <appliedenergistics2:material:57> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:8>])
+  .outputs([<aeadditions:storage.component:4>])
   .duration(400).EUt(122880).buildAndRegister();
 
 // 1024k Fluid Component
 assembler.recipeBuilder()
   .inputs([<ore:circuitZpm> * 4, <ore:plateAmericium> * 4, <ore:dustNetherQuartz> * 16, <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:9>])
+  .outputs([<aeadditions:storage.component:5>])
   .duration(200).EUt(122880).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>,<ore:circuitZpm> * 4,<aeadditions:storage.component:8> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:9>])
+  .outputs([<aeadditions:storage.component:6>])
   .duration(400).EUt(122880).buildAndRegister();
 
 // 4096k Fluid Component
@@ -175,26 +173,26 @@ packer.recipeBuilder()
 // 256k Fluid Cell
 packer.recipeBuilder()
   .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:8>])
-  .outputs([<aeadditions:storage.fluid:4>])
+  .outputs([<aeadditions:storage.fluid>])
   .duration(10).EUt(7).buildAndRegister();
 
 // 1024k Fluid Cell
 packer.recipeBuilder()
   .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:9>])
-  .outputs([<aeadditions:storage.fluid:5>])
+  .outputs([<aeadditions:storage.fluid:1>])
   .duration(10).EUt(7).buildAndRegister();
 
 // 4096k Fluid Cell
 packer.recipeBuilder()
   .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:10>])
-  .outputs([<aeadditions:storage.fluid:6>])
+  .outputs([<aeadditions:storage.fluid:2>])
   .duration(10).EUt(7).buildAndRegister();
 
 // ME Ore Dictionary Storage Bus
 // recipes.addShapeless("oredict_storage_bus", <aeadditions:part.base:12>,
 //   [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
-// ME Fluid Assembler
+// ME Жидкостный сборщик
 recipes.remove(<aeadditions:fluidcrafter>);
 assembler.recipeBuilder()
   .inputs([
@@ -208,20 +206,42 @@ assembler.recipeBuilder()
   .outputs([<aeadditions:fluidcrafter>])
   .duration(200).EUt(480).buildAndRegister();
 
-// ME Drive Fixture
-recipes.addShaped("tfg/aeadditions/me_drive_fixture", <aeadditions:part.base:7>, [
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
-  [<appliedenergistics2:part:120>, <appliedenergistics2:drive>, <appliedenergistics2:part:120>],
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);
+// Жидкостный автозаполнитель
+assembler.recipeBuilder()
+  .inputs([
+    <aeadditions:fluidcrafter>,
+    <appliedenergistics2:part:520>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<aeadditions:fluidfiller>])
+  .duration(200).EUt(480).buildAndRegister();
 
-// ME Energy Cell Fixture
-recipes.addShaped("tfg/aeadditions/me_energy_cell_fixture", <aeadditions:part.base:8>, [
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
-  [<appliedenergistics2:part:120>, <appliedenergistics2:energy_cell>, <appliedenergistics2:part:120>],
-  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);
+// Переносное жидкостное хранилище
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:material:54>,
+    <appliedenergistics2:chest>,
+    <appliedenergistics2:energy_cell>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<aeadditions:storage.fluid.portable>])
+  .duration(200).EUt(480).buildAndRegister();
+
 
 // Obsidian ME Drive
 recipes.addShaped("tfg/aeadditions/obsidian_me_drive", <aeadditions:hardmedrive>, [
   [<ore:plateObsidian>, <ore:ae2.cable.dense.covered>, <ore:plateObsidian>],
   [<ore:plateObsidian>, <appliedenergistics2:drive>, <ore:plateObsidian>],
   [<ore:plateObsidian>, <minecraft:obsidian>, <ore:plateObsidian>]]);
+
+// ME Drive Fixture
+recipes.addShaped("tfg/aeadditions/me_drive_fixture", <aeadditions:part.base>, [
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
+  [<appliedenergistics2:part:120>, <appliedenergistics2:drive>, <appliedenergistics2:part:120>],
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);
+
+// ME Energy Cell Fixture
+recipes.addShaped("tfg/aeadditions/me_energy_cell_fixture", <aeadditions:part.base:1>, [
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>],
+  [<appliedenergistics2:part:120>, <appliedenergistics2:energy_cell>, <appliedenergistics2:part:120>],
+  [<ore:ae2.cable.glass>, <appliedenergistics2:part:120>, <ore:ae2.cable.glass>]]);

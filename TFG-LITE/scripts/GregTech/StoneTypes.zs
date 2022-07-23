@@ -182,7 +182,7 @@ StoneType.create(44, "tfc_slate", "oreSlate", <material:slate>, "tfc:raw/slate")
 // -- Galacticraft/ExtraPlanet
 
 // - Mercury
-MaterialBuilder(32123, "stone_mercury").dust().color(0xC7FFFB).build();
+MaterialBuilder(32123, "stone_mercury").dust().color(0x727272).build();
 // val oreMercurystone as OrePrefix = OrePrefix.registerOrePrefix("oreMercurystone", 1);
 // oreMercurystone.addSecondaryMaterial(<material:mercurystone>, 1);
 // val blockState = "extraplanets:mercuryblocks:type=mercury_stone";
@@ -195,63 +195,63 @@ MaterialBuilder(32124, "stone_venus").dust().color(0xA86540).build();
 MaterialBuilder(32125, "stone_moon").dust().color(0xFFFFFF).build();
 
 // - Mars
-MaterialBuilder(32126, "stone_mars").dust().color(0xFF7A5C).build();
+MaterialBuilder(32126, "stone_mars").dust().color(0x431401).build();
 
 // - Phobos
-MaterialBuilder(32127, "stone_phobos").dust().color(0xFF7A5C).build();
+MaterialBuilder(32127, "stone_phobos").dust().color(0x8c7965).build();
 
 // - Deimos
-MaterialBuilder(32128, "stone_deimos").dust().color(0xFF7A5A).build();
+MaterialBuilder(32128, "stone_deimos").dust().color(0xcbb48c).build();
 
 // - Ceres
-MaterialBuilder(32129, "stone_ceres").dust().color(0xFF7A5C).build();
+MaterialBuilder(32129, "stone_ceres").dust().color(0x757573).build();
 
 // - Asteroids
-MaterialBuilder(32130, "stone_asteroid_black").dust().color(0x1C1C1C).build();
-MaterialBuilder(32131, "stone_asteroid_gray").dust().color(0x505050).build();
-MaterialBuilder(32132, "stone_asteroid_lightgray").dust().color(0xBBBBBB).build();
+MaterialBuilder(32130, "stone_asteroid_black").dust().color(0x2f2d2a).build();
+MaterialBuilder(32131, "stone_asteroid_gray").dust().color(0x3a3a3a).build();
+MaterialBuilder(32132, "stone_asteroid_lightgray").dust().color(0x535250).build();
 
 // - Jupiter
-MaterialBuilder(32133, "stone_jupiter").dust().color(0xFF7A5C).build();
+MaterialBuilder(32133, "stone_jupiter").dust().color(0xfdc890).build();
 
 // - IO
-MaterialBuilder(32134, "stone_io").dust().color(0xFF7A5C).build();
+MaterialBuilder(32134, "stone_io").dust().color(0xac8033).build();
 
 // - Europa
-MaterialBuilder(32135, "stone_europa").dust().color(0xFF7A5C).build();
+MaterialBuilder(32135, "stone_europa").dust().color(0x767069).build();
 
 // - Ganymede
-MaterialBuilder(32136, "stone_ganymede").dust().color(0xFF7A5C).build();
+MaterialBuilder(32136, "stone_ganymede").dust().color(0x5d5851).build();
 
 // - Callisto
-MaterialBuilder(32137, "stone_callisto").dust().color(0xFF7A5C).build();
+MaterialBuilder(32137, "stone_callisto").dust().color(0x6a5447).build();
 
 // - Saturn
-MaterialBuilder(32138, "stone_saturn").dust().color(0xFF7A5C).build();
+MaterialBuilder(32138, "stone_saturn").dust().color(0xb57b51).build();
 
 // - Rhea
-MaterialBuilder(32139, "stone_rhea").dust().color(0xFF7A5C).build();
+MaterialBuilder(32139, "stone_rhea").dust().color(0x6c6c6c).build();
 
 // - Titan
-MaterialBuilder(32140, "stone_titan").dust().color(0xFF7A5C).build();
+MaterialBuilder(32140, "stone_titan").dust().color(0x584737).build();
 
 // - Iapetus
-MaterialBuilder(32141, "stone_iapetus").dust().color(0xFF7A5C).build();
+MaterialBuilder(32141, "stone_iapetus").dust().color(0x4c371f).build();
 
 // - Uranus
-MaterialBuilder(32142, "stone_uranus").dust().color(0xFF7A5C).build();
+MaterialBuilder(32142, "stone_uranus").dust().color(0xa7c6f6).build();
 
 // - Oberon
-MaterialBuilder(32143, "stone_oberon").dust().color(0xFF7A5C).build();
+MaterialBuilder(32143, "stone_oberon").dust().color(0x78667b).build();
 
 // - Neptune
-MaterialBuilder(32144, "stone_neptune").dust().color(0xFF7A5C).build();
+MaterialBuilder(32144, "stone_neptune").dust().color(0x226ea1).build();
 
 // - Triton
-MaterialBuilder(32145, "stone_triton").dust().color(0xFF7A5C).build();
+MaterialBuilder(32145, "stone_triton").dust().color(0x807a80).build();
 
 // - Pluto
-MaterialBuilder(32146, "stone_pluto").dust().color(0xFF7A5C).build();
+MaterialBuilder(32146, "stone_pluto").dust().color(0x757674).build();
 
 // - Eris
-MaterialBuilder(32147, "stone_eris").dust().color(0xFF7A5C).build();
+MaterialBuilder(32147, "stone_eris").dust().color(0xc1c1bd).build();

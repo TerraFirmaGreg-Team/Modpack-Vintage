@@ -36,7 +36,17 @@ val AE2WTLib as IItemStack[] = [
 	<ae2wtlib:wut_creative>
 ];
 for item in AE2WTLib {
-  	JEI.removeAndHide(item);
+		JEI.removeAndHide(item);
+}
+
+val aeadditions as IItemStack[] = [
+	<aeadditions:certustank>,
+	<aeadditions:vibrantchamberfluid>,
+	<aeadditions:terminal.universal.wireless>,
+	<aeadditions:part.base:2>
+];
+for item in aeadditions {
+		JEI.removeAndHide(item);
 }
 
 val AE2EL as IItemStack[] = [

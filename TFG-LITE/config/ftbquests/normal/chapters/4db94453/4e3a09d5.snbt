@@ -8,13 +8,12 @@
 		uid: "a8817f69",
 		type: "item",
 		items: [{
-			id: "extracells:storage.physical",
+			id: "aeadditions:storage.physical",
 			tag: {
 				upgrades: {},
 				config: {},
 				fuzzyMode: "IGNORE_ALL"
-			},
-			Count: 1b
+			}
 		}],
 		ignore_nbt: 1b
 	}]

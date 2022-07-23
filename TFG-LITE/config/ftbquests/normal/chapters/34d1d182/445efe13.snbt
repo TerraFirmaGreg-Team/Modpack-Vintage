@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/triton.png"
+			icon: "extraplanets:textures/gui/celestialbodies/triton.png"
 		}
 	},
 	x: 21.75d,

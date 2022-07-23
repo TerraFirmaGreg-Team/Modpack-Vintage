@@ -1,6 +1,23 @@
 {
 	title: "{tfg.quests.primitive.copper.title}",
-	icon: "gregtech:meta_dust_small 1 25",
+	icon: {
+		id: "gregtech:meta_dust_small",
+		Damage: 25s,
+		ForgeCaps: {
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
 	x: -20.0d,
 	y: -4.0d,
 	shape: "diamond",
@@ -12,58 +29,328 @@
 		uid: "ce3df0e4",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ore_chunk 1 385"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 385s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_ore_chunk 1 348"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 348s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_ore_chunk 1 347"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 347s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_ore_chunk 1 327"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 327s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_ore_chunk 1 265"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 265s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_ore_chunk 1 25"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 25s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 385"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 385s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 348"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 348s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 347"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 347s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 327"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 327s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 265"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 265s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 25"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 25s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 385"
+			id: "gregtech:meta_dust_small",
+			Damage: 385s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 348"
+			id: "gregtech:meta_dust_small",
+			Damage: 348s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 347"
+			id: "gregtech:meta_dust_small",
+			Damage: 347s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 327"
+			id: "gregtech:meta_dust_small",
+			Damage: 327s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 265"
+			id: "gregtech:meta_dust_small",
+			Damage: 265s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 25"
+			id: "gregtech:meta_dust_small",
+			Damage: 25s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}],
 		count: 10L
 	}]

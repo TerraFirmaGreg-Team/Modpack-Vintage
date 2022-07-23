@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/jupiter.png"
+			icon: "extraplanets:textures/gui/celestialbodies/jupiter.png"
 		}
 	},
 	x: 13.0d,

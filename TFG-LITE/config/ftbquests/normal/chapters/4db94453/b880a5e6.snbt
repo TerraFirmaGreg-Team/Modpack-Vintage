@@ -8,7 +8,7 @@
 		uid: "30bb65c9",
 		type: "item",
 		items: [{
-			item: "extracells:storage.casing"
+			item: "aeadditions:storage.casing"
 		}]
 	}]
 }

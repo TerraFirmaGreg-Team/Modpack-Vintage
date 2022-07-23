@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/titan.png"
+			icon: "extraplanets:textures/gui/celestialbodies/titan.png"
 		}
 	},
 	x: 16.5d,

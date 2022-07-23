@@ -9,7 +9,7 @@
 		uid: "85d5617e",
 		type: "item",
 		items: [{
-			item: "extracells:storage.component"
+			item: "aeadditions:storage.component"
 		}]
 	}]
 }

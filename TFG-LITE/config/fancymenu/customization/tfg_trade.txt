@@ -1,0 +1,35 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.inventory.GuiContainerCreative
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  vr:value:serveronline = tfg.terrafirmagreg.su
+  buttonaction = sendmessage
+  backgroundhovered = resources\modpack\icons\money_bags_h.png
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  vr:showif:serveronline = true
+  x = 52
+  width = 16
+  actionid = 53869ae9-489d-4cd1-8ea6-d2b3f86afe1d1658530522788
+  action = addbutton
+  y = 35
+  backgroundnormal = resources\modpack\icons\money_bags.png
+  value = /oxygenop merchants -open-menu @s 2 false
+  height = 16
+}
+

@@ -1,14 +1,44 @@
 {
   "items": [
     {
-      "item": "minecraft:command_block",
+      "item": "gregtech:meta_item_1",
       "meta": 0,
-      "value": 50.0
+      "value": 0.125
     },
     {
-      "item": "minecraft:bedrock",
-      "meta": 0,
-      "value": 30.0
+      "item": "gregtech:meta_item_1",
+      "meta": 1,
+      "value": 1.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 2,
+      "value": 8.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 3,
+      "value": 64.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 4,
+      "value": 512.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 5,
+      "value": 4096.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 6,
+      "value": 32768.0
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "meta": 7,
+      "value": 262144.0
     }
   ]
 }

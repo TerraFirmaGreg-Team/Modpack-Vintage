@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/ganymede.png"
+			icon: "extraplanets:textures/gui/celestialbodies/ganymede.png"
 		}
 	},
 	x: 14.0d,

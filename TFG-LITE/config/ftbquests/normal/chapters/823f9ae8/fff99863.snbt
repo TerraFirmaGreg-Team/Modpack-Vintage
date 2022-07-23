@@ -1,6 +1,23 @@
 {
 	title: "{tfg.quests.primitive.bismuthpile.title}",
-	icon: "gregtech:meta_dust_small 1 11",
+	icon: {
+		id: "gregtech:meta_dust_small",
+		Damage: 11s,
+		ForgeCaps: {
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
 	x: -14.5d,
 	y: -3.0d,
 	shape: "diamond",
@@ -13,13 +30,58 @@
 		uid: "7de95a3c",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_ore_chunk 1 11"
+			id: "gregtech:meta_ore_chunk",
+			Damage: 11s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_tiny 1 11"
+			id: "gregtech:meta_dust_tiny",
+			Damage: 11s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		},
 		{
-			item: "gregtech:meta_dust_small 1 11"
+			id: "gregtech:meta_dust_small",
+			Damage: 11s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
 		}]
 	}]
 }

@@ -1,14 +1,13 @@
 {
 	icon: {
-		id: "extracells:storage.physical",
+		id: "aeadditions:storage.physical",
 		Damage: 4s,
 		tag: {
 			power: 32000.0d,
 			upgrades: {},
 			config: {},
 			fuzzyMode: "IGNORE_ALL"
-		},
-		Count: 1b
+		}
 	},
 	x: -10.5d,
 	y: 8.0d,
@@ -19,14 +18,13 @@
 		uid: "7225720b",
 		type: "item",
 		items: [{
-			id: "extracells:storage.physical",
+			id: "aeadditions:storage.physical",
 			Damage: 4s,
 			tag: {
 				upgrades: {},
 				config: {},
 				fuzzyMode: "IGNORE_ALL"
-			},
-			Count: 1b
+			}
 		}],
 		ignore_nbt: 1b
 	}]

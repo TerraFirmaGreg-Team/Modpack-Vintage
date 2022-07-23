@@ -8,12 +8,11 @@
 		uid: "cccfde14",
 		type: "item",
 		items: [{
-			id: "extracells:storage.fluid",
-			Damage: 6s,
+			id: "aeadditions:storage.fluid",
+			Damage: 2s,
 			tag: {
 				fuzzyMode: "IGNORE_ALL"
-			},
-			Count: 1b
+			}
 		}],
 		ignore_nbt: 1b
 	}]

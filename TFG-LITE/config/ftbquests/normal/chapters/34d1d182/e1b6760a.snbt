@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/europa.png"
+			icon: "extraplanets:textures/gui/celestialbodies/europa.png"
 		}
 	},
 	x: 13.75d,

@@ -9,7 +9,7 @@
 		uid: "fdd7cba0",
 		type: "item",
 		items: [{
-			item: "extracells:fluidcrafter"
+			item: "aeadditions:fluidcrafter"
 		}]
 	}]
 }

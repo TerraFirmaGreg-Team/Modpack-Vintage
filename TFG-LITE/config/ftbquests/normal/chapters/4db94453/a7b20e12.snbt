@@ -9,7 +9,7 @@
 		uid: "67b87d56",
 		type: "item",
 		items: [{
-			item: "extracells:hardmedrive"
+			item: "aeadditions:hardmedrive"
 		}]
 	}]
 }

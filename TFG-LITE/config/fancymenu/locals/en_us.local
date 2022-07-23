@@ -138,9 +138,6 @@ helper.creator.items.button.editlabel = Edit Label
 helper.creator.items.vanillabutton.resetorientation = Reset Orientation
 helper.creator.items.vanillabutton.hide = Hide Button
 
-helper.creator.items.vanillabutton.noorientation.title = Special care required!
-helper.creator.items.vanillabutton.noorientation.desc = §oDefault buttons need some head pats before they listen to you.%n%%n%%n%To §lresize or move §rthem, you have to give them an §lorientation §rfirst!%n%%n%You can do that by §lright-clicking §rthe button.
-
 helper.creator.items.string.setscale = Set Scale
 helper.creator.items.string.setshadow = Shadow: §cOff
 helper.creator.items.string.setnoshadow = Shadow: §aOn
@@ -233,7 +230,7 @@ helper.creator.items.button.delayappearance.invalidvalue = §c§lInvalid Value!%
 
 custombuttons.action.opengui.cannotopengui = §c§lUnable To Open GUI!%n%%n%%n%The GUI you want to open either does not exist or isn't supported!%n%%n%If this is an existing GUI, please contact the developer of FancyMenu to add support for it.
 
-helper.creator.custombutton.config.actiontype.opengui.desc = Opens a GUI by its menu identifier.
+helper.creator.custombutton.config.actiontype.opengui.desc = Opens a GUI by its menu identifier.%n%%n%Supports vanilla/mod GUIs and%n%custom GUIs made with FancyMenu.
 helper.creator.custombutton.config.actiontype.opengui.desc.value = Menu Identifier
 
 helper.creator.popup.hidefor.delayeverytime = Delay Everytime
@@ -534,7 +531,7 @@ fancymenu.config.customwindowicon = Custom Window Icon
 
 fancymenu.config.categories.layouteditor = LAYOUT EDITOR
 
-fancymenu.config.showvanillamovewarning = Button Move Warning
+fancymenu.config.showvanillamovewarning = Element Move Warning
 fancymenu.config.editordeleteconfirmation = Delete Confirmation
 
 fancymenu.config.categories.ui = FANCYMENU UI
@@ -583,7 +580,7 @@ fancymenu.config.preloadanimations.desc = Will pre-load animation textures%n%whe
 fancymenu.config.customwindowtitle.desc = Specify a custom minecraft window title.
 fancymenu.config.customwindowicon.desc = Enable custom Minecraft window icons.%n%For more information,%n%take a look at the Wiki:%n%§lfm.keksuccino.com
 
-fancymenu.config.showvanillamovewarning.desc = Enable the warning notification%n%when trying to move an%n%orientation-less vanilla button%n%in the layout editor.
+fancymenu.config.showvanillamovewarning.desc = Enable the warning notification%n%when trying to move a%n%vanilla/mod element without an%n%orientation in the layout editor.
 fancymenu.config.editordeleteconfirmation.desc = If a confirmation popup should%n%be displayed when deleting an element.
 
 fancymenu.config.uiscale.desc = The scale of the FancyMenu customization UI.
@@ -774,19 +771,19 @@ fancymenu.helper.editor.items.visibilityrequirements.realtimesecond.desc = Check
 fancymenu.helper.editor.items.visibilityrequirements.realtimesecond.valuename = Real Time Second(s) (Separate Values By Comma)
 
 fancymenu.helper.editor.items.visibilityrequirements.windowwidth = Is Window Width
-fancymenu.helper.editor.items.visibilityrequirements.windowwidth.desc = Check if the window width is X.%n%%n%You can separate multiple values by comma,%n%to check for more than one width%n%at once.
+fancymenu.helper.editor.items.visibilityrequirements.windowwidth.desc = Check if the window width is X.%n%%n%You can separate multiple values by comma,%n%to check for more than one width%n%at once.%n%%n%§cCurrent Width: {}%n%§cCurrent Height: {}
 fancymenu.helper.editor.items.visibilityrequirements.windowwidth.valuename = Window Width(s) (Separate Values By Comma)
 
 fancymenu.helper.editor.items.visibilityrequirements.windowheight = Is Window Height
-fancymenu.helper.editor.items.visibilityrequirements.windowheight.desc = Check if the window height is X.%n%%n%You can separate multiple values by comma,%n%to check for more than one height%n%at once.
+fancymenu.helper.editor.items.visibilityrequirements.windowheight.desc = Check if the window height is X.%n%%n%You can separate multiple values by comma,%n%to check for more than one height%n%at once.%n%%n%§cCurrent Width: {}%n%§cCurrent Height: {}
 fancymenu.helper.editor.items.visibilityrequirements.windowheight.valuename = Window Height(s) (Separate Values By Comma)
 
 fancymenu.helper.editor.items.visibilityrequirements.windowwidthbiggerthan = Is Window Width Bigger Than
-fancymenu.helper.editor.items.visibilityrequirements.windowwidthbiggerthan.desc = Check if the window width is bigger than X.
+fancymenu.helper.editor.items.visibilityrequirements.windowwidthbiggerthan.desc = Check if the window width is bigger than X.%n%%n%§cCurrent Width: {}%n%§cCurrent Height: {}
 fancymenu.helper.editor.items.visibilityrequirements.windowwidthbiggerthan.valuename = Window Width
 
 fancymenu.helper.editor.items.visibilityrequirements.windowheightbiggerthan = Is Window Height Bigger Than
-fancymenu.helper.editor.items.visibilityrequirements.windowheightbiggerthan.desc = Check if the window height is bigger than X.
+fancymenu.helper.editor.items.visibilityrequirements.windowheightbiggerthan.desc = Check if the window height is bigger than X.%n%%n%§cCurrent Width: {}%n%§cCurrent Height: {}
 fancymenu.helper.editor.items.visibilityrequirements.windowheightbiggerthan.valuename = Window Height
 
 fancymenu.helper.editor.items.visibilityrequirements.buttonhovered = Is Button Hovered
@@ -1156,5 +1153,9 @@ fancymenu.helper.editor.items.visibilityrequirements.realtimeweekday.valuename =
 fancymenu.helper.editor.backgrounds.animation.restart_on_load.on = Restart Animation On Load: §aOn
 fancymenu.helper.editor.backgrounds.animation.restart_on_load.off = Restart Animation On Load: §cOff
 fancymenu.helper.editor.backgrounds.animation.restart_on_load.desc = If the animation should restart%n%every time the menu gets opened.
+
+fancymenu.helper.editor.element.vanilla.orientation_needed = §c§lMissing Orientation!%n%%n%To resize or move vanilla/mod elements, you have to%n%give them an §lorientation §rfirst!%n%%n%You can do that by §lright-clicking §rthe element.%n% %n% %n% %n%
+
+fancymenu.helper.editor.element.moving_not_allowed = §c§lMoving Not Allowed!%n%%n%This element can not be moved!%n%%n%It is recommended to delete it and%n%replace it with a custom element.%n% %n% %n% %n%
 
 

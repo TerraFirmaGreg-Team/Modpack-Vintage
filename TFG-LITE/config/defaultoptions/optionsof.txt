@@ -32,14 +32,14 @@ ofShowFps:false
 ofAutoSaveTicks:4000
 ofBetterGrass:3
 ofConnectedTextures:2
-ofWeather:true
+ofWeather:false
 ofSky:true
 ofStars:true
 ofSunMoon:true
 ofVignette:0
 ofChunkUpdates:1
 ofChunkUpdatesDynamic:true
-ofTime:0
+ofTime:1
 ofClearWater:false
 ofAaLevel:0
 ofAfLevel:1
@@ -58,7 +58,7 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:true
-ofDynamicFov:true
+ofDynamicFov:false
 ofAlternateBlocks:true
 ofDynamicLights:2
 ofScreenshotSize:1

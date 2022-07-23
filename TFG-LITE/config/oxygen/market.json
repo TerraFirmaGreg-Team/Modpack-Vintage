@@ -13,7 +13,7 @@
     "price_max_value": 1000000,
     "offer_expire_time_hours": 240,
     "enable_sales_history": true,
-    "enable_sales_history_sync": false,
+    "enable_sales_history_sync": true,
     "sales_history_expire_time_hours": 240,
     "offer_creation_fee_percent": 1,
     "offer_sale_fee_percent": 5,
