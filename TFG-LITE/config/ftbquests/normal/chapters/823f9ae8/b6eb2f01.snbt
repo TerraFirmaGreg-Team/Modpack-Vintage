@@ -1,5 +1,5 @@
 {
-	x: 8.0d,
+	x: 4.0d,
 	y: 1.75d,
 	shape: "circle",
 	hide_dependency_lines: true,

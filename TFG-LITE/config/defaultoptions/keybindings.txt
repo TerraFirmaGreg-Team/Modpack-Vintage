@@ -70,17 +70,17 @@ key_key.open_wit.desc:0:NONE
 key_key.open_wpt.desc:0:NONE
 key_key.dismount:0:NONE
 key_key.narrator:0:NONE
-key_key.toggle_focus.desc:15:NONE
+key_key.toggle_focus.desc:0:NONE
 key_key.jei.toggleOverlay:0:NONE
 key_key.jei.focusSearch:0:NONE
 key_key.jei.toggleCheatMode:0:NONE
 key_key.jei.toggleEditMode:0:NONE
-key_key.jei.showRecipe:19:ALT
+key_key.jei.showRecipe:19:NONE
 key_key.jei.showUses:22:NONE
 key_key.jei.recipeBack:14:NONE
 key_key.jei.previousPage:201:NONE
 key_key.jei.nextPage:209:NONE
-key_key.jei.bookmark:30:CONTROL
+key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_keybind.fovfixtoggle:0:NONE
 key_Открыть инвентарь заряженного транспорта:34:NONE
@@ -132,7 +132,7 @@ key_key.little.mark:0:NONE
 key_key.little.config.item:0:NONE
 key_key.little.undo:0:NONE
 key_key.little.redo:0:NONE
-key_key.oxygen_menu.openMenu:41:NONE
+key_key.oxygen_menu.openMenu:15:NONE
 key_key.teleportation.moveToFavCamp:0:NONE
 key_tombstone.message.knowledge_of_death:0:NONE
 key_key.toolbelt.open:157:NONE

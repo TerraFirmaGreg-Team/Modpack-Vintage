@@ -2,9 +2,17 @@
 	title: "{tfg.quests.primitive.fireplace.title}",
 	icon: "tfc:firepit",
 	x: -30.0d,
-	y: -8.5d,
+	y: -7.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.fireplace.subtitle}",
+	text: [
+		"{tfg.quests.primitive.fireplace.desc1}",
+		"{tfg.quests.primitive.fireplace.desc2}",
+		"{tfg.quests.primitive.fireplace.desc3}",
+		"{tfg.quests.primitive.fireplace.desc4}",
+		"{tfg.quests.primitive.fireplace.desc5}",
+		"{tfg.quests.primitive.fireplace.desc6}"
+	],
 	dependencies: [
 		"d1baef19"
 	],

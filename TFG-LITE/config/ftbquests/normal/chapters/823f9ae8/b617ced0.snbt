@@ -1,0 +1,21 @@
+{
+	x: 8.0d,
+	y: 12.5d,
+	dependencies: [
+		"74422436"
+	],
+	tasks: [{
+		uid: "54f8b4c5",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "base_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

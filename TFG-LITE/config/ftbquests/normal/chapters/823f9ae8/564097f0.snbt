@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.farmer3000.title}",
-	x: -24.0d,
-	y: -10.5d,
+	x: -24.5d,
+	y: -10.0d,
 	description: "{tfg.quests.primitive.farmer3000.subtitle}",
 	dependencies: [
 		"d1baef19"

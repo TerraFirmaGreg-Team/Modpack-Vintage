@@ -4,6 +4,11 @@
 	x: -32.0d,
 	y: -4.0d,
 	description: "{tfg.quests.primitive.start.subtitle}",
+	text: [
+		"{tfg.quests.primitive.start.desc1}",
+		"{tfg.quests.primitive.start.desc2}",
+		"{tfg.quests.primitive.start.desc3}"
+	],
 	size: 2.0d,
 	tasks: [{
 		uid: "3e5270be",

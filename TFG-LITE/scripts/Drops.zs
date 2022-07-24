@@ -50,7 +50,6 @@ Dropt.list("tfg/dropt/packed_ice").add(Dropt.rule()
   .addDrop(Dropt.drop().items([<cellars:packed_ice_shard>])));
 
 // При копке ванильных блоков выпадают TFC варианты
-
 Dropt.list("tfg/dropt/gc_fix/cobblestone").add(Dropt.rule()
   .matchDrops([<minecraft:cobblestone>])
   .replaceStrategy("REPLACE_ITEMS").addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));

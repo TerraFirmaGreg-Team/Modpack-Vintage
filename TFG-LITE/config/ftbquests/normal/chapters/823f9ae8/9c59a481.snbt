@@ -1,0 +1,34 @@
+{
+	title: "{tfg.quests.primitive.tfcmedicinal.title}",
+	x: 2.25d,
+	y: 7.0d,
+	shape: "pentagon",
+	description: "{tfg.quests.primitive.tfcmedicinal.subtitle}",
+	text: [
+		"{tfg.quests.primitive.tfcmedicinal.desc1}",
+		"{tfg.quests.primitive.tfcmedicinal.desc2}",
+		"{tfg.quests.primitive.tfcmedicinal.desc3}",
+		"{tfg.quests.primitive.tfcmedicinal.desc4}",
+		"{tfg.quests.primitive.tfcmedicinal.desc5}",
+		"",
+		"{tfg.quests.primitive.tfcmedicinal.desc6}",
+		"{tfg.quests.primitive.tfcmedicinal.desc7}",
+		"{tfg.quests.primitive.tfcmedicinal.desc8}",
+		"{tfg.quests.primitive.tfcmedicinal.desc9}",
+		"{tfg.quests.primitive.tfcmedicinal.desc10}",
+		"{tfg.quests.primitive.tfcmedicinal.desc11}",
+		"{tfg.quests.primitive.tfcmedicinal.desc12}",
+		"{tfg.quests.primitive.tfcmedicinal.desc13}"
+	],
+	dependencies: [
+		"ccccbec4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "d6401073",
+		type: "item",
+		items: [{
+			item: "tfcmedicinal:vial_heater"
+		}]
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 6.5d,
+	description: "{tfg.quests.primitive.concoction.desc2}",
+	text: [
+		""
+	],
+	dependencies: [
+		"2fe7cce5"
+	],
+	tasks: [{
+		uid: "cd08926f",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "acuity_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

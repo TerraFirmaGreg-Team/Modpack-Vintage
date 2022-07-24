@@ -1,0 +1,25 @@
+{
+	x: 8.0d,
+	y: 4.5d,
+	dependencies: [
+		"2a41b9e1",
+		"83ebe4b7",
+		"8b8b0136",
+		"55e3785e",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "e23c1294",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "rejuvenating_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

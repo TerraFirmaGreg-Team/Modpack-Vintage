@@ -1,0 +1,14 @@
+{
+	x: -20.0d,
+	y: 6.0d,
+	dependencies: [
+		"3bcc6936"
+	],
+	tasks: [{
+		uid: "9262b701",
+		type: "item",
+		items: [{
+			item: "tfcthings:snare"
+		}]
+	}]
+}

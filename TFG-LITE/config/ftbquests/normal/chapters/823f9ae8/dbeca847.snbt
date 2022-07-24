@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 4.5d,
+	description: "{tfg.quests.primitive.concoction.desc6}",
+	text: [
+		""
+	],
+	dependencies: [
+		"495453a0"
+	],
+	tasks: [{
+		uid: "c4f5c13a",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "rejuvenating_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

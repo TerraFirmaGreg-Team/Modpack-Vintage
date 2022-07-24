@@ -1,0 +1,24 @@
+{
+	x: 8.0d,
+	y: 9.5d,
+	dependencies: [
+		"83ebe4b7",
+		"8b8b0136",
+		"55e3785e",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "aea2127f",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "health_boost_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

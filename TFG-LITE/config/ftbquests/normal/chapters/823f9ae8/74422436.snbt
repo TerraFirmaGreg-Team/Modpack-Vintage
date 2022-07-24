@@ -1,0 +1,21 @@
+{
+	x: 5.5d,
+	y: 12.5d,
+	dependencies: [
+		"6ddcdbdb"
+	],
+	tasks: [{
+		uid: "82d12c8f",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "salt_water",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

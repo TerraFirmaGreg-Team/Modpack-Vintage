@@ -518,8 +518,11 @@ assembler.recipeBuilder()
   .outputs(<appliedenergistics2:material:52> * 64)
   .duration(200).EUt(480).buildAndRegister();
 
+recipes.addShapeless("tfg/ae2/crystal_certus_quartz", <appliedenergistics2:material>, [<appliedenergistics2:quartz_block>]);
+
 // Illuminated Panel
-recipes.addShapeless("tfg/ae2/illuminated_panel_alt", <appliedenergistics2:part:180>, [<appliedenergistics2:part:200>]);
+recipes.addShapeless("tfg/ae2/illuminated_panel_alt", <appliedenergistics2:part:200>, [<appliedenergistics2:part:160>]);
+recipes.addShapeless("tfg/ae2/illuminated_panel_alt2", <appliedenergistics2:part:160>, [<appliedenergistics2:part:180>]);
 recipes.addShaped("tfg/ae2/illuminated_panel", <appliedenergistics2:part:180>, [
 	[null, <ore:plateGlowstone>, null],
 	[<ore:plateAluminium>, <ore:plateRedAlloy>, <ore:dustRedstone>],
@@ -1033,6 +1036,71 @@ compressor.recipeBuilder()
   .outputs(<appliedenergistics2:crafting_accelerator>)
   .duration(100).EUt(4).buildAndRegister();
 
+// Монитор хранения
+assembler.recipeBuilder()
+  .inputs([
+    <ore:itemIlluminatedPanel>,
+    <appliedenergistics2:part:280>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:400>])
+  .duration(200).EUt(480).buildAndRegister();
+
+// Монитор преобразования
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:material:44> * 2,
+    <appliedenergistics2:material:43> * 2,
+    <appliedenergistics2:part:400>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:420>])
+  .duration(200).EUt(480).buildAndRegister();
+
+// Плоскость истребления ID
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:part:300>,
+    <ore:pearlFluix>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:301>])
+  .duration(200).EUt(480).buildAndRegister();
+
+// Излучатель уровня
+assembler.recipeBuilder()
+  .inputs([
+    <minecraft:redstone_torch>,
+    <appliedenergistics2:material:23>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:280>])
+  .duration(200).EUt(480).buildAndRegister();
+
+// Шина хранения по словарю руд
+recipes.addShapeless("tfg/ae/oredict_storage_bus", <appliedenergistics2:part:222>, [<appliedenergistics2:part:220>, <ore:craftingBook>]);
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([
+    <ore:ae2.interface.item>,
+    <ore:craftingBook>,
+    <ore:craftingPiston> * 2
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:222>])
+  .duration(200).EUt(480).buildAndRegister();
+
+// Шина хранения
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <ore:ae2.interface.item>,
+    <ore:craftingPiston> * 2
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<appliedenergistics2:part:220>])
+  .duration(200).EUt(480).buildAndRegister();
+
 // Crafting Monitor
 packer.recipeBuilder()
     .inputs([
@@ -1201,6 +1269,7 @@ recipes.addShaped("tfg/ae2/charged_staff", <appliedenergistics2:charged_staff>, 
   [null, null, <ore:stickIronAny>]]);
 
 // Fluid Interface
+recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 recipes.addShaped("tfg/ae2/fluid_interfaces_interface", <appliedenergistics2:fluid_interface>, [
   [<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>],
   [<appliedenergistics2:material:43>, <metaitem:electric.pump.lv>, <appliedenergistics2:material:44>],
@@ -1341,6 +1410,7 @@ recipes.addShaped("tfg/ae2/spatial_io_port",<appliedenergistics2:spatial_io_port
   [<ore:plateTitanium>, <appliedenergistics2:material:24>, <ore:plateTitanium>]]);
 
 // Interface
+recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 recipes.addShaped("tfg/ae2/interfaces", <appliedenergistics2:interface>, [
   [<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>],
   [<appliedenergistics2:material:44>, <metaitem:conveyor.module.lv>, <appliedenergistics2:material:43>],

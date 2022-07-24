@@ -1,0 +1,23 @@
+{
+	x: 8.0d,
+	y: 10.5d,
+	dependencies: [
+		"2a41b9e1",
+		"355d098f",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "862a70cd",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "keen_sight_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

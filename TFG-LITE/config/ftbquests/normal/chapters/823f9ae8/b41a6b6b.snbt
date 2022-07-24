@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 10.5d,
+	description: "{tfg.quests.primitive.concoction.desc7}",
+	text: [
+		""
+	],
+	dependencies: [
+		"dce74472"
+	],
+	tasks: [{
+		uid: "e9b8b115",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "keen_sight_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

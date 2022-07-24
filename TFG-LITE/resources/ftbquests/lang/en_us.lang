@@ -9,12 +9,18 @@ tfg.quests.primitive.era.title=§cEra 1 §4-§4 §8Primitive
 tfg.quests.primitive.start.title=Start
 tfg.quests.primitive.start.subtitle=&aThank you for choosing our modpack, because TerraFirmaCraft and GregTech are very closely tied in it, good luck to you young engineer!
 tfg.quests.primitive.start.tasks.clickMe=&aСlick here
+tfg.quests.primitive.start.desc1=In Vanilla, you might expect to start by punching a tree. Not in TFC! Scattered all over the ground are rocks and sticks. You will need both. 
+tfg.quests.primitive.start.desc2=Pick them up by right-clicking. Once you have at least two rocks, hold them in your hand.
+tfg.quests.primitive.start.desc3=Right-clicking will open the knapping interface. Left-click to chip bits of rock off to make an axe and some knives.
 
 tfg.quests.primitive.pebbles.title=Stones on the ground
 tfg.quests.primitive.pebbles.subtitle=&aFind sticks and stones lying on the ground.
 
 tfg.quests.primitive.primitiveTools.title=Your first tools
 tfg.quests.primitive.primitiveTools.subtitle=&aTake a stone in your hand, preferably more than 2, and press the right button, you will open a menu in which you can carve the tool you need from the stone. All recipes can be viewed in the JEI.
+
+tfg.quests.primitive.javelin.title=Javelin
+tfg.quests.primitive.javelin.subtitle=Fire it the same way you would a trident or bow.
 
 tfg.quests.primitive.rockanvil.title=Your first anvil, really a stone one
 tfg.quests.primitive.rockanvil.subtitle=&aTake a stone hammer (or any other) in your hands and hit it (RBM) on the block of stone specified in the quest.
@@ -25,7 +31,8 @@ tfg.quests.primitive.leafmat.subtitle=&aCraft it, then put it, voila, now you ca
 tfg.quests.primitive.smallsalt.subtitle=&aThe salt recipe can be viewed in the JEI.
 
 tfg.quests.primitive.muchNeededStraw.title=Dry grass
-tfg.quests.primitive.muchNeededStraw.subtitle=&aTake a knife in your hands and mow the grass in the neighborhood.
+tfg.quests.primitive.muchNeededStraw.subtitle=&aAlmost everything in the world in TFC is useful to us. Use your knife to destroy some tall grass, and get some Straw. Spend some time gathering a stack or two. You'll want a lot of it!
+tfg.quests.primitive.muchNeededStraw.desc=Straw can be crafted into thatch, your most basic construction block. Don't build your whole house out of it, though, as predators can walk right through it!
 
 tfg.quests.primitive.farmer3000.title=Farmer - 3000
 tfg.quests.primitive.farmer3000.subtitle=&aMake a stone hoe to plant your first plants. The mechanics are still the same, first you have to plow the ground next to the water, then plant a plant.
@@ -35,6 +42,16 @@ tfg.quests.primitive.theHammer.subtitle=&aIt looks aesthetically pleasing, look 
 
 tfg.quests.primitive.blueClay.title=The mood color is clay
 tfg.quests.primitive.blueClay.subtitle=&aGet clay, to do this, use luck or knowledge in the field of herbology, because interesting bushes grow in places where clay is deposited.
+tfg.quests.primitive.blueClay.desc1=You'll also want to look for clay dirt. Clay spawns in areas with moderate to heavy rainfall, and you'll want your shovel to dig it up.Since the world is covered in grass, it's easiest to look for clay indicator plants. At the temperature of where you spawn, the clay indicator is the Athyrium Fern.
+tfg.quests.primitive.blueClay.desc2=The following is a list of clay indicator plants:
+tfg.quests.primitive.blueClay.desc3=- Athyrium Fern
+tfg.quests.primitive.blueClay.desc4=- Canna Lily
+tfg.quests.primitive.blueClay.desc5=- Goldenrod
+tfg.quests.primitive.blueClay.desc6=- Pampas Grass
+tfg.quests.primitive.blueClay.desc7=- Russian Sage
+tfg.quests.primitive.blueClay.desc8=- Rose
+tfg.quests.primitive.blueClay.desc9=- Water Canna
+tfg.quests.primitive.blueClay.desc10=Note: Flowers bloom only at certain times of year, so searching for the plant you're looking for may be frustrating in the winter.
 
 tfg.quests.primitive.allTheMolds.title=Some forms that you will need
 tfg.quests.primitive.allTheMolds.subtitle=&aThere are a lot of forms, you don't have to do them all at once, but I'm sure that as you go through, you will do each of them.
@@ -42,16 +59,24 @@ tfg.quests.primitive.allTheMolds.subtitle=&aThere are a lot of forms, you don't 
 tfg.quests.primitive.jug.title=Cave Glass
 tfg.quests.primitive.jug.subtitle=&aNow by clicking on a liquid that you can drink, such as fresh water, you can fill it with water, and when you need it, then drink it.
 
+tfg.quests.primitive.hotornot.subtitle=If you are carrying hot liquids you will be set on fire, if you are carrying cold liquids you will be slowed down. To neutralize these effects, make tongs.
+
 tfg.quests.primitive.vessel.title=A little more than just a glass
 tfg.quests.primitive.vessel.subtitle=&aThis is a jar in which you will burn and melt metals, as well as store various food, so this is a very useful item, I suggest you burn it. The built-in force field does not allow any liquids other than fused metals (as well as any yummy, in the form of food) to penetrate inside.
 
 tfg.quests.primitive.fireplace.title=Firepit
 tfg.quests.primitive.fireplace.subtitle=&aYou need to make a bonfire to warm yourself, and also cook food, by the way, you can also make torches on the campfire.
 tfg.quests.primitive.fireplace.tasks.wood.title=&aLogs
+tfg.quests.primitive.fireplace.desc1=To build a fire, drop at least one log, three sticks, and up to three straw on the ground. Straw is optional, but increases your chances of ignition. To start a fire, right-click to start a fire.
+tfg.quests.primitive.fireplace.desc2=This may take several tries. The campfire can be used to cook food and make torches out of branches, but you must feed its magazines or it will go out.
+tfg.quests.primitive.fireplace.desc3=You can cook food in the fireplace, but you will get burned if you step on it.
+tfg.quests.primitive.fireplace.desc4=The bonfire works with heating recipes, which are essentially TFC's version of smelting recipes. Since a device such as a fire pit is heated with fuel, it can turn its ingredient into a product at a certain temperature.
+tfg.quests.primitive.fireplace.desc5=Fireplaces don't get very hot, but they can be used to make torches and also cook meat.
 
 tfg.quests.primitive.meat.title=MYAYAYASO!
 tfg.quests.primitive.meat.subtitle=&aIt's vegan. I'm not lying, let me try the herbivore to confirm.
 tfg.quests.primitive.meat.tasks.meat.title=&aMeat
+tfg.quests.primitive.meat.tasks.desc1=The first way you'll be getting food is by hunting animals. Your knife will work fine, but for bigger things, you may want to knap a javelin, your basic ranged weapon.
 
 tfg.quests.primitive.rawHide.title=Raw hide
 tfg.quests.primitive.rawHide.subtitle=&aGet any raw hide, I hope more than one sheep will not suffer.
@@ -61,6 +86,49 @@ tfg.quests.primitive.preparedHide.subtitle=&aWet the old one, cut it off, wet it
 
 tfg.quests.primitive.jute.title=Jute
 tfg.quests.primitive.jute.subtitle=&aWhy aren't the ropes made of hemp? I want fun fires!
+
+tfg.quests.primitive.tfcmedicinal.title=This world is hard to live except for hunger and thirst, danger lurks everywhere and you should be afraid because death is terrible.
+tfg.quests.primitive.tfcmedicinal.subtitle=These are some of the things you need to look out for when surviving TFC with Medicinal, and each will have a specific medicine to combat it:
+tfg.quests.primitive.tfcmedicinal.desc1=When you die, your health will be at 20% and your hunger at half.
+tfg.quests.primitive.tfcmedicinal.desc2=When you die, your nutrition stats will not be half but close to 0.
+tfg.quests.primitive.tfcmedicinal.desc3=After you respawn, you will be afflicted with a disease, a fatal disease that will keep you from mining, building, or fighting for an entire day of Minecraft.
+tfg.quests.primitive.tfcmedicinal.desc4=The dust in the mines strains your lungs, making movement and mining difficult.
+tfg.quests.primitive.tfcmedicinal.desc5=Raw meat, as well as cooked meat that is not wood-roasted (on an iron grate), can give you parasites that drain your energy and hunger.
+tfg.quests.primitive.tfcmedicinal.desc6=Flowers and plants in the world now have active modifiers:
+tfg.quests.primitive.tfcmedicinal.desc7=* The bright red flowers are vibrant and have healing properties .
+tfg.quests.primitive.tfcmedicinal.desc8=* Blue flowers have mental properties
+tfg.quests.primitive.tfcmedicinal.desc9=* Yellow flowers have energetic properties
+tfg.quests.primitive.tfcmedicinal.desc10=* Green plants (not grass) have calming properties.
+tfg.quests.primitive.tfcmedicinal.desc11=* Brown plants are rich in vitamins and minerals
+tfg.quests.primitive.tfcmedicinal.desc12=* Purple and pink flowers have a strong fragrance.
+tfg.quests.primitive.tfcmedicinal.desc13=* White flowers have powerful mixing properties and are used in all medicines.
+
+tfg.quests.primitive.mpestle.title=Making the Real Medicine:
+tfg.quests.primitive.mpestle.subtitle=Get yourself a Mortar and Pestle by crafting a Ceramic Bowl with a Stick and Flint.
+tfg.quests.primitive.mpestle.desc1=Collect a variety of flowers, go explore the new world if needed, and bring them home.
+tfg.quests.primitive.mpestle.desc2=Crush the flowers with the mortar and pestle by clicking on it, placing the flower, and then right-clicking a few times.
+tfg.quests.primitive.mpestle.desc3=Flowers will give you extracts, which when crafted in 3x3 will give you concentrates.
+tfg.quests.primitive.mpestle.desc4=There are many catalysts to choose from that can be added to the base drink mix.
+tfg.quests.primitive.mpestle.desc5=Catalysts have different crafting recipes from different types of concentrates, use JEI for this.
+tfg.quests.primitive.mpestle.desc6=Once you have the catalyst you need, you'll need a Vial Heater, which is crafted with a few Firebricks and an Alabaster Filter.
+tfg.quests.primitive.mpestle.desc7=Place the heater over the burning fire pit on the wall.
+tfg.quests.primitive.mpestle.desc8=Create yourself a glass flask from a single piece of glass at a workbench.
+tfg.quests.primitive.mpestle.desc9=Find yourself underground spiders, take their eyes and ferment them in a little vinegar throughout the day.
+tfg.quests.primitive.mpestle.desc10=Fill your flask with ocean salt water, place it in the flask warmer and wait for it to boil (bubbles will form over it) .
+tfg.quests.primitive.mpestle.desc11=When the solution boils, add the fermented spider eye, at which point the solution will begin to boil more and more.
+tfg.quests.primitive.mpestle.desc12=Your base mix will be ready after one in-game hour.
+tfg.quests.primitive.mpestle.desc13=Place any catalyst in it and boil it as in the last few steps to get a drinking mix to use .
+
+tfg.quests.primitive.concoction.desc1=Antidote for a Deadly Disease - Cures a deadly disease when consumed
+tfg.quests.primitive.concoction.desc2=Visual Acuity Blend - When you die while this effect is active, your items will not be destroyed and you will be respawned in your comfortable bed.
+tfg.quests.primitive.concoction.desc3=Nutritious Concoction - Resets your nutritional values ​​to half across the board.
+tfg.quests.primitive.concoction.desc4=Concoction to strengthen the stomach - Turns you on for meat parasites, hunger and nausea from aged pills.
+tfg.quests.primitive.concoction.desc5=Lung Concoction - Turns on dust from lungs, digs freely in caves, holds breath underwater and swims faster.
+tfg.quests.primitive.concoction.desc6=Rejuvenating Blend - Fully heals you in a minute
+tfg.quests.primitive.concoction.desc7=Decoction of Sharp Vision - Allows you to see in the dark
+tfg.quests.primitive.concoction.desc8=Health Concoction - Increases health by 40% for a limited time.
+tfg.quests.primitive.concoction.desc9=Cooling Panacea (TFC Ambiental) - Temporarily cools you by 10 degrees.
+tfg.quests.primitive.concoction.desc10=Warming Concoction (TFC Ambiental) - Warms you up by 10 degrees for a while
 
 tfg.quests.primitive.fruitsAndBerries.title=Fruits berries
 tfg.quests.primitive.fruitsAndBerries.subtitle=&aWhere's my lemon vodka? Developers, get engaged.
@@ -84,6 +152,7 @@ tfg.quests.primitive.fuelNumber1.subtitle=&aSince TFC is too realistic a mod, it
 tfg.quests.primitive.greenpeace.title=Greenpeace has already left for you..
 tfg.quests.primitive.greenpeace.subtitle=&aChop the logs, my children! We will need a lot of them.
 tfg.quests.primitive.greenpeace.tasks.logs.title=&aLogs
+tfg.quests.primitive.greenpeace.desk=By making an axe out of loose rocks and sticks, we've removed the need to punch a tree. Go ahead and chop down a tree, starting at the base. It might take a bit longer than you're used to, but in the end the whole tree will fall down! The next thing we'll want to create is a shovel.
 
 tfg.quests.primitive.fuelNumber2.title=Fuel No. 2
 tfg.quests.primitive.fuelNumber2.subtitle=&aYou can't melt the furnace with this coal, but for example it's easy to keep burning.

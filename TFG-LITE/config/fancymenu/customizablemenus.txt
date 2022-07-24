@@ -39,6 +39,3 @@ net.minecraft.client.gui.GuiIngameMenu {
 net.minecraft.client.gui.GuiMainMenu {
 }
 
-austeretony.oxygen_menu.client.gui.menu.OxygenMenuScreen {
-}
-

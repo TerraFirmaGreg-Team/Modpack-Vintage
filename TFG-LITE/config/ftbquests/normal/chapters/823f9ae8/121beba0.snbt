@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 8.5d,
+	description: "{tfg.quests.primitive.concoction.desc5}",
+	text: [
+		""
+	],
+	dependencies: [
+		"591aff29"
+	],
+	tasks: [{
+		uid: "28c382ba",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "lung_strength_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

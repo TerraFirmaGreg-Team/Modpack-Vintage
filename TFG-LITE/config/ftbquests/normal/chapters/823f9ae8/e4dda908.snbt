@@ -4,6 +4,20 @@
 	y: -8.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.blueClay.subtitle}",
+	text: [
+		"{tfg.quests.primitive.blueClay.desc1}",
+		"",
+		"{tfg.quests.primitive.blueClay.desc2}",
+		"{tfg.quests.primitive.blueClay.desc3}",
+		"{tfg.quests.primitive.blueClay.desc4}",
+		"{tfg.quests.primitive.blueClay.desc5}",
+		"{tfg.quests.primitive.blueClay.desc6}",
+		"{tfg.quests.primitive.blueClay.desc7}",
+		"{tfg.quests.primitive.blueClay.desc8}",
+		"{tfg.quests.primitive.blueClay.desc9}",
+		"",
+		"{tfg.quests.primitive.blueClay.desc10}"
+	],
 	dependencies: [
 		"d1baef19"
 	],

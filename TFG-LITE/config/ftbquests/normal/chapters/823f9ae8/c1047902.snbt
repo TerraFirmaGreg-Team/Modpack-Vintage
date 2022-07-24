@@ -1,0 +1,24 @@
+{
+	x: 8.0d,
+	y: 2.5d,
+	dependencies: [
+		"2a41b9e1",
+		"355d098f",
+		"4c521f7f",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "dc26ed59",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "cooling_panacea",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

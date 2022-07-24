@@ -1,0 +1,23 @@
+{
+	x: 8.0d,
+	y: 5.5d,
+	dependencies: [
+		"4c521f7f",
+		"55e3785e",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "ea75d583",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "stomach_strength_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

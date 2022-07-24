@@ -24,7 +24,7 @@ ofPortalParticles:true
 ofPotionParticles:true
 ofFireworkParticles:true
 ofDrippingWaterLava:true
-ofAnimatedTerrain:true
+ofAnimatedTerrain:false
 ofAnimatedTextures:true
 ofRainSplash:true
 ofLagometer:false
@@ -39,7 +39,7 @@ ofSunMoon:true
 ofVignette:0
 ofChunkUpdates:1
 ofChunkUpdatesDynamic:true
-ofTime:1
+ofTime:0
 ofClearWater:false
 ofAaLevel:0
 ofAfLevel:1

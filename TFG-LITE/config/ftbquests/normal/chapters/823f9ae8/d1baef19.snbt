@@ -61,23 +61,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	},
-	{
-		uid: "290f4243",
-		type: "item",
-		items: [{
-			item: "tfc:stone/javelin/igneous_intrusive"
-		},
-		{
-			item: "tfc:stone/javelin/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/javelin/sedimentary"
-		},
-		{
-			item: "tfc:stone/javelin/metamorphic"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
 	}]
 }
