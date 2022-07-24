@@ -1,7 +1,10 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
+
+import mods.horsepower.Press;
 
 // --- Массивы
 
@@ -23,6 +26,56 @@ val DirtyNets as IItemStack[] = [
     <tfcflorae:crop/product/dirty_hemp_net>
 ];
 
+val ItemsForJuices as IItemStack[] = [
+	<tfc:food/snow_berry>,
+	<tfc:food/raspberry>,
+	<tfc:food/gooseberry>,
+	<tfc:food/elderberry>,
+	<tfc:food/cranberry>,
+	<tfc:food/cloud_berry>,
+	<tfc:food/bunch_berry>,
+	<tfc:food/blueberry>,
+	<tfc:food/blackberry>,
+	<tfcflorae:food/green_cayenne_pepper>,
+	<tfc:food/banana>,
+	<tfc:food/lemon>,
+	<tfcflorae:food/juniper>,
+	<tfc:food/cherry>,
+	<tfcflorae:crop/product/agave>,
+	<tfc:food/wintergreen_berry>,
+	<tfc:food/strawberry>,
+	<tfc:plants/barrel_cactus>,
+	<tfcflorae:food/purple_grape>,
+	<tfc:food/plum>,
+	<tfc:food/peach>,
+	<tfc:food/orange>
+];
+
+val FluidsForJuices as ILiquidStack[] = [
+	<liquid:juice_snow_berry>,
+	<liquid:juice_raspberry>,
+	<liquid:juice_gooseberry>,
+	<liquid:juice_elderberry>,
+	<liquid:juice_cranberry>,
+	<liquid:juice_cloud_berry>,
+	<liquid:juice_bunch_berry>,
+	<liquid:juice_blueberry>,
+	<liquid:juice_blackberry>,
+	<liquid:juice_green_grape>,
+	<liquid:juice_banana>,
+	<liquid:juice_lemon>,
+	<liquid:juice_juniper>,
+	<liquid:juice_cherry>,
+	<liquid:juice_agave>,
+	<liquid:juice_wintergreen_berry>,
+	<liquid:juice_strawberry>,
+	<liquid:juice_barrel_cactus>,
+	<liquid:juice_purple_grape>,
+	<liquid:juice_plum>,
+	<liquid:juice_peach>,
+	<liquid:gtfo_orange_extract>
+];
+
 val RemoveItemRecipesByName = [
   	"tfcflorae:wood/joshua_tree2/joshua_tree_log",
     "tfcflorae:wood/joshua_tree/joshua_tree_log_reverse",
@@ -39,6 +92,17 @@ val RemoveItemRecipesByName = [
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
+
+// Недоработанные рецепты вина из Pear
+Barrel.removeRecipe(<liquid:pear_wine> * 500);
+Barrel.removeRecipe(<liquid:pear_brandy> * 500);
+
+// Недоработанные рецепты вина из Papaya
+Barrel.removeRecipe(<liquid:papaya_wine> * 500);
+Barrel.removeRecipe(<liquid:papaya_brandy> * 500);
+
+// Недоработанные рецепты вина из Orange
+Barrel.removeRecipe(<liquid:orange_wine> * 500);
 
 Barrel.removeRecipe(<minecraft:clay_ball>);
 
@@ -61,6 +125,31 @@ recipes.addShapeless(<tfctech:ceramics/fluid_bowl>, [<tfcflorae:ceramics/earthen
 
 // Yeast
 recipes.addShapeless(<tfcflorae:yeast> * 3, [<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "yeast_starter", Amount: 1000}})]);
+
+// Сок из ...
+for i, FluidsForJuices in FluidsForJuices {
+    // Конский пресс
+	Press.add(ItemsForJuices[i], FluidsForJuices * 10);
+    
+	// Центрифуга
+	centrifuge.recipeBuilder()
+        .inputs(ItemsForJuices[i])
+        .circuit(30)
+        .fluidOutputs(FluidsForJuices * 25)
+        .duration(300).EUt(2).buildAndRegister();
+}
+
+// Сок из яблок
+
+// Конский пресс
+Press.add(<ore:apple>, <liquid:juice_apple> * 10);
+
+// Центрифуга
+centrifuge.recipeBuilder()
+	.inputs(<ore:apple>)
+	.circuit(30)
+	.fluidOutputs(<liquid:juice_apple> * 25)
+	.duration(300).EUt(2).buildAndRegister();
 
 // Dirty Net -> Net
 for i, CleanNets in CleanNets {
@@ -377,12 +466,14 @@ mixer.recipeBuilder()
 	.duration(150).EUt(2).buildAndRegister();
 
 // Papaya Wine -> Papaya Brandy
+/*
 mixer.recipeBuilder()
 	.inputs(<minecraft:sugar>)
 	.fluidInputs(<liquid:papaya_wine> * 500)
 	.circuit(19)
 	.fluidOutputs(<liquid:papaya_brandy> * 500)
 	.duration(150).EUt(2).buildAndRegister();
+*/
 
 // Peach Wine -> Peach Brandy
 mixer.recipeBuilder()
@@ -393,12 +484,14 @@ mixer.recipeBuilder()
 	.duration(150).EUt(2).buildAndRegister();
 
 // Pear Wine -> Pear Brandy
+/*
 mixer.recipeBuilder()
 	.inputs(<minecraft:sugar>)
 	.fluidInputs(<liquid:pear_wine> * 500)
 	.circuit(19)
 	.fluidOutputs(<liquid:pear_brandy> * 500)
 	.duration(150).EUt(2).buildAndRegister();
+*/
 
 // Plum Wine -> Plum Brandy
 mixer.recipeBuilder()
@@ -763,3 +856,6 @@ mixer.recipeBuilder()
 	.circuit(23)
 	.fluidOutputs(<liquid:beer_spelt> * 500)
 	.duration(150).EUt(2).buildAndRegister();
+
+// GT Orange Juice -> Orange Vine
+Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:gtfo_orange_extract> * 500, <liquid:orange_wine> * 500, 72);
