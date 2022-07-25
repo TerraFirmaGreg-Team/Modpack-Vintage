@@ -1,5 +1,95 @@
 # Changelog
 
+## Version R4.0.0 - 07/25/2022
+#### [Normal, Huge]
+### New mods
+* REID - A mod that increases the id limit of minecraft blocks, is made much cleaner and has support from developers, which will allow it to be used with other mods in the future, fix strange generation and strange crashes associated with the absence of some classes in the game, also increase fps and reduce CPU load. **THIS MOD WILL DESTROY YOUR OLD WORLDS IN 95% OF THE CASES. IF YOU WANT TO CONTINUE PLAYING THE OLD WORLDS PLEASE REMOVE THIS MOD AND INSTALL BACK** [NEID](https://www.curseforge.com/minecraft/mc-mods/notenoughids?page=2).
+
+
+## Version R3.5 - 07/25/2022
+######⚠ WARNUNG ⚠ ######
+REID - A mod that increases the id limit of minecraft blocks, is made much cleaner and has support from developers, which will allow it to be used with other mods in the future, fix strange generation and strange crashes associated with the absence of some classes in the game, also increase fps and reduce load on the CPU. **THIS MOD WILL DESTROY YOUR OLD WORLDS IN 95% OF THE CASES. IF YOU WANT TO CONTINUE PLAYING THE OLD WORLDS PLEASE REMOVE THIS MOD AND INSTALL BACK** [NEID](https://www.curseforge.com/minecraft/mc-mods/notenoughids?page=2).
+#### [Lite, Huge]
+### Modpack fixes
+* Now furnaces, forges, etc. from TFC-Tech give off heat, and the refrigerator can even cool you down. Also, a FirmaLife stove will help you in winter. And the highlight of the program is the coils from GTCEu at the blast furnace and not only will burn you if you stand nearby, protect yourself by wearing leather, nano, or quantum armor.
+* Fixed juice recipes for making wine, also added recipes to GTCEu machines.
+* Hidden bows from Florae.
+* Fixed some inconsistencies in GTFO and Florae (applies to wines, juices and other garbage).
+* Changed recipes for Fluid level maintainer, Large ingredient buffer, Dual interface from AE2FC mod.
+* Hidden patterns from ExtraCells.
+* Hidden unnecessary recipes from Aunis.
+* Changed recipes for all Chisel chisels.
+* Fixed a bug with crafting leather for backpacks.
+* Fixed recipe for ProjectRed inverter lamps.
+* Fixed description for some quests.
+* Added Russian translation for custom materials.
+* Fixed translation of duplicate name for wrought iron, to Iron Oxide (III).
+* Enabled cloud optimization in Weather2.
+* Enabled OC integration with Appliedenergistics2 and GalacticCraft.
+* Removed nuclear bomb recipe from ExtraPlanets.
+* GalaxySpace was removed in favor of ExtraPlanets, the planet Phobos changed, if you had something there, it's better to transfer it before updating.
+* Slightly increased plant growth rate.
+* Optimization of the configs of the Weather2 mod has been carried out.
+* Changed design of ToolTips and TheOneProbe tips.
+* Changed the color of the dust, which are obtained from the stones of other planets.
+* Changed the texture of the overlay when you freeze or overheat.
+* You no longer take cold or heat damage, but depending on the cold or heat, your hunger or thirst quickly decreases, and you take damage from this. The normal temperature is 17 degrees, stay close to this value.
+* Added quests to familiarize yourself with the TFCMedinal mod.
+* Heavy metal armor pulls you down when swimming, when wearing leather armor and GT armor, this does not happen, also you can enchant any armor for Depth Strider and Respiration or get Water Breathing or levitation to not drown as well.
+* Fixed quests due to removal of ExtraCells2 and GalaxySpace mods.
+* Changed tombstone model.
+* Added Russian translation for tfcmedicinal.
+* Fixed model of tongs to look correct in hands.
+* Added quests for tfcmedicinal.
+* Moved part of the description for quests from the TFC book.
+* Disabled auto-closing gates.
+* Reworked the crafting of lighting panels, storage monitor, transformation monitor, plane of destruction ID, level emitter, ore dictionary storage tires, ae2 storage tires.
+### Server fixes that don't affect solo play
+* Fixed crash on Magma server with FastWorkbench mod.
+* GT Coins can be converted to virtual currency (/convert) to buy goodies in the game store.
+### New mods
+* AE2Additions - mod, the same as ExtraCells2, but with many fixes and optimizations, before updating it is better to disassemble or remove items from the mod, this applies to high-level cells and some terminals.
+*TFCMedical
+* When you die, your health will be at 20% and your hunger at half. Nutrient Blend - Drops your nutritional values ​​by up to half across the board.
+* When you die, your nutrition stats will not be half but close to 0.
+* After you respawn, you will be afflicted with a disease, a fatal disease that will prevent you from mining, building, or fighting for an entire day of TFC. Deadly disease antidote - cures a deadly disease when consumed.
+* The dust in the mines puts a strain on your lungs, making it difficult to move and mine.
+* Raw meat, as well as cooked meat that is not wood-fired (on an iron grate), can give you parasites that deplete your energy and hunger. Stomach Strength Concoction - Protects you from meat parasites, hunger and nausea from aged drinks.
+* Rejuvenating Blend - Heals you completely in a minute.
+* Decoction of acute vision - allows you to see in the dark.
+* Health Boost Concoction - Increases health by 40% for a limited time.
+* Cooling panacea (TFC Ambiental) - temporarily cools you by 10 degrees.
+* Warming panacea (TFC Ambiental) - warms you up to 10 degrees for a while.
+* Aunis: Resurrection is a revised version of the regular Aunis that is still in development today.
+* JourneyMap
+*ColoredTooltips
+* GalacticComputers
+* Oxygen-Players-list
+* Oxygen-cp
+* Grandeconomy
+### Update mods
+*Hot Or Not
+* Fluid Craft for AE2
+*Appliedenergistics2
+* AsmodeusCore
+*CraftTweaker2
+* fancy menu
+* Konkrete
+*Mixinbooter
+*ModularUI
+* Moving Elevators
+* TFC TowerHeat - fixed server crash when installing a mod.
+* TFCAmbiental - replaced by a fork from TFG.
+*loliasm
+*CustomSkinLoader
+### Removed Mods
+* Aunis Beta - had too many bugs and shortcomings.
+*NotEnoughIDs
+*ExtraCells2
+*Xaeros Minimap
+*Xaeros World Map
+*GalaxySpace
+
 ## Version R3.4.4 - 11.07.2022
 #### [Lite, Huge]
 ### Modpack fixes
