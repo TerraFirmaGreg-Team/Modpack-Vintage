@@ -2,7 +2,7 @@
   "version": "0.11.4:beta:0",
   "client": {
     "region_id": "",
-    "data_save_peroid_seconds": 300,
+    "data_save_peroid_seconds": 400,
     "enable_notifications_key": true,
     "enable_accept_key": true,
     "enable_reject_key": true,
@@ -20,7 +20,7 @@
     "io_threads_amount": 1,
     "routine_threads_amount": 1,
     "scheduler_threads_amount": 1,
-    "data_save_period_seconds": 300,
+    "data_save_period_seconds": 400,
     "sync_configs": true,
     "enable_privileges": true,
     "enable_pvp_manager": false,

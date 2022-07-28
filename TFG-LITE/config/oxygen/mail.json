@@ -16,12 +16,12 @@
     "system_letter_expire_time_hours": -1,
     "system_remittance_expire_time_hours": -1,
     "system_parcel_expire_time_hours": -1,
-    "mail_sending_cooldown_seconds": 30,
+    "mail_sending_cooldown_seconds": -1,
     "remittance_max_value": 100000,
     "parcel_max_amount": -1,
     "cod_max_value": 50000,
-    "remittance_postage_percent": 2,
-    "parcel_postage_value": 100,
+    "remittance_postage_percent": 1,
+    "parcel_postage_value": 1,
     "cod_postage_percent": 3,
     "advanced_logging": false
   }
