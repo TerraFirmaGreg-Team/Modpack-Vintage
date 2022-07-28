@@ -2078,3 +2078,12 @@ val Weather2 as IItemStack[] = [
 for item in Weather2 {
     JEI.removeAndHide(item);
 }
+
+val TFCMedicinal as IItemStack[] = [
+	<tfcmedicinal:catalyst>,
+	<tfcmedicinal:medicine_vial>
+
+];
+for item in TFCMedicinal {
+    JEI.removeAndHide(item);
+}

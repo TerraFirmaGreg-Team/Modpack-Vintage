@@ -4,7 +4,7 @@
 		id: "tfc:food/cooked_venison",
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 24000L,
+				creationDate: -9223372036854775808L,
 				traits: []
 			}
 		}

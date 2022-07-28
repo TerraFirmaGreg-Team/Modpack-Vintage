@@ -1,6 +1,6 @@
 {
 	x: 9.75d,
-	y: 11.5d,
+	y: 11.0d,
 	description: "{tfg.quests.primitive.concoction.desc1}",
 	text: [
 		""

@@ -1,8 +1,8 @@
 {
-	title: "(tfg.quests.primitive.mpestle.title)",
+	title: "{tfg.quests.primitive.mpestle.title}",
 	x: 4.0d,
 	y: 7.0d,
-	description: "(tfg.quests.primitive.mpestle.subtitle)",
+	description: "{tfg.quests.primitive.mpestle.subtitle}",
 	text: [
 		"{tfg.quests.primitive.mpestle.desc1}",
 		"{tfg.quests.primitive.mpestle.desc2}",

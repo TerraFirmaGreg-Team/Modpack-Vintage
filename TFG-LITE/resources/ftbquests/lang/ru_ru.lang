@@ -296,7 +296,7 @@ tfg.quests.primitive.blacksteelingot.subtitle=&aЧерные не одобряю
 tfg.quests.primitive.redsteelingot.title=Красная сталь
 tfg.quests.primitive.redsteelingot.subtitle=&aКрасные не одоб.. что?
 
-tfg.quests.primitive.bluesteelingot.title=Синяя сталь
+tfg.quests.primitive.bluesteelingot.title=Голубая сталь
 tfg.quests.primitive.bluesteelingot.subtitle=&aГолубые не одо.. хватит!
 
 tfg.quests.primitive.redbluesteelpickaxe.title=Любая кирка из цветных металлов
@@ -1154,7 +1154,7 @@ tfg.quests.mv.advmixer.subtitle=§oБолее сложные сплавы тре
 tfg.quests.mv.advmixer.desc1=Это первый шаг к более глубокому погружению в эпоху MV.
 
 tfg.quests.mv.steelalloys.title=Стальные сплавы
-tfg.quests.mv.steelalloys.subtitle=§oСталь может образовывать множество сплавов... например, Синяя сталь, Красная сталь, Черная сталь... Забавные названия?§r
+tfg.quests.mv.steelalloys.subtitle=§oСталь может образовывать множество сплавов... например, Голубая сталь, Красная сталь, Черная сталь... Забавные названия?§r
 tfg.quests.mv.steelalloys.desc1=Ванадиевая сталь требуется в небольших количествах для развития. Она §6почти в четыре раза прочнее§r по сравнению с инструментами из стали для инструментов GregTech.. Ванадий происходит из §aванадиевого магнетита§r, который вы, вероятно, встречали в магнетитовых жилах.
 
 tfg.quests.mv.advcutting.title=Улучшеная резочная машина
