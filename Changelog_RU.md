@@ -12,10 +12,10 @@
 * Отключена загрузка чанков контроллером AE2, загрузите вашу сеть FTBUtilities.
 * Новые квесты и корректировки старых.
 * Балансировка температуры:
-        * Burning Temperature=47.0
-        * Cold Temperature=3.0
-        * Freezing Temperature=-5.0
-        * Hot Temperature=40.0
+        * Burning Temperature=40.0 -> 47.0
+        * Cold Temperature=0.0 -> 3.0
+        * Freezing Temperature=5.0 -> -5.0
+        * Hot Temperature=27.0 -> 40.0
 * Увеличена вместимость crucible до 4608.
 ### Обновление модов
 * Loliasm
