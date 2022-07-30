@@ -7,8 +7,6 @@
 
 
 ## Version R3.5 - 07/25/2022
-######⚠ WARNUNG ⚠ ######
-REID - A mod that increases the id limit of minecraft blocks, is made much cleaner and has support from developers, which will allow it to be used with other mods in the future, fix strange generation and strange crashes associated with the absence of some classes in the game, also increase fps and reduce load on the CPU. **THIS MOD WILL DESTROY YOUR OLD WORLDS IN 95% OF THE CASES. IF YOU WANT TO CONTINUE PLAYING THE OLD WORLDS PLEASE REMOVE THIS MOD AND INSTALL BACK** [NEID](https://www.curseforge.com/minecraft/mc-mods/notenoughids?page=2).
 #### [Lite, Huge]
 ### Modpack fixes
 * Now furnaces, forges, etc. from TFC-Tech give off heat, and the refrigerator can even cool you down. Also, a FirmaLife stove will help you in winter. And the highlight of the program is the coils from GTCEu at the blast furnace and not only will burn you if you stand nearby, protect yourself by wearing leather, nano, or quantum armor.
