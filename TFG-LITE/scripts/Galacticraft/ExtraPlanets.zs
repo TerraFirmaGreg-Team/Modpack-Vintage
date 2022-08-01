@@ -1,57 +1,10 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveItemRecipe as IItemStack[] = [
-	<extraplanets:advanced_launch_pad>,
-	<extraplanets:advanced_launch_pad:1>,
-	<extraplanets:advanced_launch_pad:3>,
-	<extraplanets:tier4_items:3>,
-	<extraplanets:tier5_items:3>,
-	<extraplanets:tier6_items:3>,
-	<extraplanets:tier7_items:3>,
-	<extraplanets:tier8_items:3>,
-	<extraplanets:tier9_items:3>,
-	<extraplanets:tier10_items:3>,
-	<extraplanets:nose_cone_tier4>,
-	<extraplanets:nose_cone_tier5>,
-	<extraplanets:nose_cone_tier6>,
-	<extraplanets:nose_cone_tier7>,
-	<extraplanets:nose_cone_tier8>,
-	<extraplanets:nose_cone_tier9>,
-	<extraplanets:nose_cone_tier10>,
-	<extraplanets:tier4_items:1>,
-	<extraplanets:tier5_items:1>,
-	<extraplanets:tier6_items:1>,
-	<extraplanets:tier7_items:1>,
-	<extraplanets:tier8_items:1>,
-	<extraplanets:tier9_items:1>,
-	<extraplanets:tier10_items:1>,
-	<extraplanets:tier4_items>,
-	<extraplanets:tier5_items>,
-	<extraplanets:tier6_items>,
-	<extraplanets:tier7_items>,
-	<extraplanets:tier8_items>,
-	<extraplanets:tier9_items>,
-	<extraplanets:tier10_items>,
-	<extraplanets:tier4_items:2>,
-	<extraplanets:tier5_items:2>,
-	<extraplanets:tier6_items:2>,
-	<extraplanets:tier7_items:2>,
-	<extraplanets:tier8_items:2>,
-	<extraplanets:tier9_items:2>,
-	<extraplanets:tier10_items:2>
-];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-for item in RemoveItemRecipe{
-	recipes.remove(item);
-}
-
-// Именнованное удаление
-recipes.removeByRecipeName("extraplanets:ice");
+recipes.removeByMod("extraplanets");
 
 // --- Добавление рецептов
 

@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.lv.washing.title}",
 	icon: "gregtech:machine 1 485",
-	x: -4.0d,
-	y: 14.0d,
+	x: -4.5d,
+	y: 14.25d,
 	description: "{tfg.quests.lv.washing.subtitle}",
 	text: [
 		"{tfg.quests.lv.washing.desc1}",

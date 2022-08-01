@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.bath.title}",
 	icon: "gregtech:machine 1 200",
 	x: -5.0d,
-	y: 13.0d,
+	y: 13.5d,
 	description: "{tfg.quests.lv.bath.subtitle}",
 	text: [
 		"{tfg.quests.lv.bath.desc1}",

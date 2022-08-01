@@ -227,6 +227,17 @@ assembler.recipeBuilder()
   .outputs([<aeadditions:storage.fluid.portable>])
   .duration(200).EUt(480).buildAndRegister();
 
+// Переносное предметное хранилище
+assembler.recipeBuilder()
+  .inputs([
+    <aeadditions:storage.component>,
+    <appliedenergistics2:chest>,
+    <appliedenergistics2:energy_cell>
+  ])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<aeadditions:storage.physical:4>])
+  .duration(200).EUt(480).buildAndRegister();
+
 
 // Obsidian ME Drive
 recipes.addShaped("tfg/aeadditions/obsidian_me_drive", <aeadditions:hardmedrive>, [

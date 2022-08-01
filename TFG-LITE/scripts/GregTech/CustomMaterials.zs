@@ -36,7 +36,6 @@ import mods.gregtech.material.Material;
 // Other
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:copper>.addTools(7, 1, 85);
-<material:copper>.addFlags("generate_bolt_screw");
 <material:red_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
 <material:blue_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
 <material:black_steel>.addFlags("generate_long_rod", "generate_dense", "generate_bolt_screw");
@@ -44,7 +43,7 @@ import mods.gregtech.material.Material;
 <material:titanium>.addFlags("generate_foil", "generate_dense");
 <material:zinc>.addFlags("generate_long_rod", "generate_gear", "generate_bolt_screw", "generate_bolt");
 <material:nickel>.addFlags("generate_long_rod", "generate_gear", "generate_bolt_screw", "generate_bolt");
-<material:copper>.addFlags("generate_long_rod", "generate_dense", "generate_gear");
+<material:copper>.addFlags("generate_long_rod", "generate_dense", "generate_gear", "generate_bolt_screw");
 <material:bismuth>.addFlags("generate_long_rod", "generate_gear", "generate_plate", "generate_bolt_screw", "generate_bolt");
 <material:bismuth_bronze>.addFlags("generate_gear");
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");

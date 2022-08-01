@@ -2,114 +2,27 @@ import crafttweaker.item.IItemStack;
 
 import mods.terrafirmacraft.ItemRegistry;
 
-// --- Массивы
-
-val RemoveItemRecipe as IItemStack[] = [
-	<galacticraftcore:distributor>,
-	<galacticraftcore:collector>,
-	<galacticraftcore:oxygen_compressor>,
-	<galacticraftcore:oxygen_compressor:4>,
-	<galacticraftcore:fuel_loader>,
-	<galacticraftcore:sealer>,
-	<galacticraftcore:oxygen_detector>,
-	<galacticraftcore:air_lock_frame>,
-	<galacticraftcore:air_lock_frame:1>,
-	<galacticraftcore:telemetry>,
-	<galacticraftplanets:mars_machine:8>,
-	<galacticraftplanets:mars_machine:4>,
-	<galacticraftplanets:mars_machine>,
-	<galacticraftplanets:basic_item_venus>,
-	<galacticraftcore:solar>,
-	<galacticraftcore:solar:4>,
-	<galacticraftcore:air_vent>,
-	<galacticraftcore:oxygen_tank_light_full:900>,
-	<galacticraftcore:oxygen_tank_med_full:1800>,
-	<galacticraftcore:oxygen_tank_heavy_full:2700>,
-	<galacticraftcore:oxygen_mask>,
-	<galacticraftcore:oxygen_gear>,
-	<galacticraftplanets:thermal_padding>,
-	<galacticraftplanets:thermal_padding:1>,
-	<galacticraftplanets:thermal_padding:2>,
-	<galacticraftplanets:thermal_padding:3>,
-	<galacticraftplanets:item_basic_asteroids:7>,
-	<galacticraftplanets:basic_item_venus:3>,
-	<galacticraftplanets:walkway>,
-	<galacticraftplanets:walkway:1>,
-	<galacticraftplanets:walkway:2>,
-	<galacticraftplanets:beam_receiver>,
-	<galacticraftplanets:item_basic_asteroids:8>,
-	<galacticraftplanets:basic_item_venus:2>,
-	<galacticraftplanets:atomic_battery>,
-	<galacticraftcore:landing_pad>,
-	<galacticraftcore:landing_pad:1>,
-	<galacticraftplanets:miner_base>,
-	<galacticraftcore:spin_thruster>,
-	<galacticraftcore:oil_canister_partial:1001>,
-	<galacticraftcore:canister>,
-	<galacticraftcore:arclamp>,
-	<galacticraftcore:buggymat:1>,
-	<galacticraftcore:buggymat:2>,
-	<galacticraftplanets:beam_reflector>,
-	<galacticraftcore:dishbase>,
-	<galacticraftcore:basic_item:20>,
-	<galacticraftcore:oxygen_concentrator>,
-	<galacticraftplanets:orion_drive>,
-	<galacticraftcore:buggymat>,
-	<galacticraftcore:view_screen>,
-	<galacticraftcore:basic_block_core:4>,
-	<galacticraftcore:basic_block_core:3>,
-	<galacticraftcore:panel_lighting>,
-	<galacticraftcore:panel_lighting:1>,
-	<galacticraftcore:panel_lighting:2>,
-	<galacticraftcore:panel_lighting:3>,
-	<galacticraftcore:panel_lighting:4>,
-	<galacticraftcore:engine>,
-	<galacticraftplanets:item_basic_asteroids:1>,
-	<galacticraftcore:engine:1>,
-	<galacticraftcore:rocket_fins>,
-	<galacticraftplanets:item_basic_asteroids:2>,
-	<galacticraftplanets:item_basic_asteroids:2>,
-	<galacticraftcore:basic_item:19>,
-	<galacticraftcore:food>,
-	<galacticraftcore:food:1>,
-	<galacticraftcore:food:2>,
-	<galacticraftcore:food:3>,
-	<galacticraftcore:food:9>,
-	<galacticraftplanets:item_basic_mars:4>,
-	<galacticraftcore:basic_block_core:12>,
-	<galacticraftcore:item_basic_moon>,
-	<galacticraftcore:steel_pole>,
-	<galacticraftplanets:mars:8>,
-	<galacticraftcore:enclosed:14>,
-	<galacticraftcore:enclosed:15>,
-	<galacticraftcore:enclosed:13>,
-	<galacticraftcore:enclosed:1>,
-	<galacticraftplanets:grapple>,
-	<galacticraftcore:nose_cone>
-];
 
 // --- Удаление рецептов
-
 // Удаление рецептов
-for item in RemoveItemRecipe{
-   recipes.remove(item);
-}
+recipes.removeByMod("galacticraftcore");
+recipes.removeByMod("galacticraftplanets");
 
 // Другие рецепты которые удалены
-furnace.remove(<galacticraftcore:item_basic_moon>);
-furnace.remove(<galacticraftcore:basic_item:4>);
-furnace.remove(<galacticraftplanets:item_basic_mars:2>);
-furnace.remove(<galacticraftplanets:carbon_fragments>);
+// furnace.remove(<galacticraftcore:item_basic_moon>);
+// furnace.remove(<galacticraftcore:basic_item:4>);
+// furnace.remove(<galacticraftplanets:item_basic_mars:2>);
+// furnace.remove(<galacticraftplanets:carbon_fragments>);
 
 // Именованное удаление
-recipes.removeByRecipeName("galacticraftcore:slime_ball");
-recipes.removeByRecipeName("galacticraftcore:cobblestone");
-recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
-recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
-recipes.removeByRecipeName("galacticraftcore:basic_item_18");
-recipes.removeByRecipeName("galacticraftcore:basic_item_17");
-recipes.removeByRecipeName("galacticraftcore:basic_item_16");
-recipes.removeByRecipeName("galacticraftcore:basic_item_15");
+// recipes.removeByRecipeName("galacticraftcore:slime_ball");
+// recipes.removeByRecipeName("galacticraftcore:cobblestone");
+// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
+// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
+// recipes.removeByRecipeName("galacticraftcore:basic_item_18");
+// recipes.removeByRecipeName("galacticraftcore:basic_item_17");
+// recipes.removeByRecipeName("galacticraftcore:basic_item_16");
+// recipes.removeByRecipeName("galacticraftcore:basic_item_15");
 
 // --- Добавление рецептов
 
@@ -121,7 +34,10 @@ ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0
 ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0);
 
 // Шест
-recipes.addShapeless("tfg/gc/steel_pole", <galacticraftcore:steel_pole> * 2, [<ore:stickLongSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>, <ore:gtce.tool.hard.hammers>]);
+recipes.addShaped("tfg/gc/steel_pole", <galacticraftcore:steel_pole> * 2, [
+   [null, <ore:plateDenseSteel>, null],
+   [null, <ore:plateDenseSteel>, <ore:gtce.tool.hard.hammers>],
+   [null, <ore:plateDenseSteel>, null]]);
 
 // Светофакел
 recipes.addShapeless("tfg/gc/glowstone_torch", <galacticraftcore:glowstone_torch> * 2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
@@ -208,7 +124,7 @@ recipes.addShaped("tfg/gc/airlock_frame_controller", <galacticraftcore:air_lock_
 recipes.addShaped("tfg/gc/telemetry", <galacticraftcore:telemetry>, [
    [<metaitem:sensor.hv>, <ore:cableGtDoubleGold>, <ore:circuitHv>],
    [<appliedenergistics2:wireless_access_point>, <metaitem:hull.hv>, <appliedenergistics2:wireless_access_point>],
-   [<ore:plateStainlessSteel>, <appliedenergistics2:part:480>, <ore:plateStainlessSteel>]]);
+   [<ore:plateDenseStainlessSteel>, <appliedenergistics2:part:480>, <ore:plateDenseStainlessSteel>]]);
 
 // Контроллер запуска
 recipes.addShaped("tfg/gc/start_controller", <galacticraftplanets:mars_machine:8>, [
@@ -248,9 +164,9 @@ recipes.addShaped("tfg/gc/solar_panel/advanced", <galacticraftcore:solar:4>, [
 
 // Клапан
 recipes.addShaped("tfg/gc/air_vent", <galacticraftcore:air_vent>, [
-   [<minecraft:iron_bars>, <ore:stickLongSteel>, <minecraft:iron_bars>],
    [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickSteel>],
-   [<minecraft:iron_bars>, <ore:stickLongSteel>, <minecraft:iron_bars>]]);
+   [<ore:stickLongSteel>, <galacticraftcore:grating>, <ore:stickLongSteel>],
+   [<ore:stickSteel>, <ore:stickLongSteel>, <ore:stickLongSteel>]]);
 
 // Частотный модуль
 recipes.addShaped("tfg/gc/freq_module", <galacticraftcore:basic_item:19>, [
@@ -345,9 +261,9 @@ recipes.addShaped("tfg/gc/telepad_short", <galacticraftplanets:telepad_short>, [
 
 // Спасательная коробка
 recipes.addShaped("tfg/gc/emergency_box", <galacticraftcore:emergency_box>, [
-   [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>],
-   [<ore:plateTin>, <ore:chestWood>, <ore:plateTin>],
-   [<ore:glowstone>, <ore:plateTin>, <ore:glowstone>]]);
+   [<ore:glowstone>, <ore:plateDenseTin>, <ore:glowstone>],
+   [<ore:plateDenseTin>, <ore:chestWood>, <ore:plateDenseTin>],
+   [<ore:glowstone>, <ore:plateDenseTin>, <ore:glowstone>]]);
 
 // Площадка для багги
 recipes.addShaped("tfg/gc/landing_pad/buggy", <galacticraftcore:landing_pad:1> * 9, [
@@ -369,21 +285,21 @@ recipes.addShaped("tfg/gc/miner_base", <galacticraftplanets:miner_base>, [
 
 // Вращательный движок
 recipes.addShaped("tfg/gc/spin_thruster", <galacticraftcore:spin_thruster>, [
-   [<galacticraftcore:oil_canister_partial:1001>, <ore:circuitIv>, <galacticraftplanets:item_basic_asteroids:1>],
-   [<ore:plateDoubleStainlessSteel>, <gregtech:metal_casing:7>, <ore:plateDoubleStainlessSteel>],
+   [<galacticraftcore:oil_canister_partial:1>, <ore:circuitIv>, <galacticraftplanets:item_basic_asteroids:1>],
+   [<ore:plateDenseStainlessSteel>, <gregtech:metal_casing:7>, <ore:plateDenseStainlessSteel>],
    [<ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>]]);
 
 // Капсула из галактики под жидкости
 recipes.addShaped("tfg/gc/oil_canister", <galacticraftcore:oil_canister_partial:1001>, [
-   [<ore:plateAluminium>, <ore:plateBlackSteel>, <ore:plateAluminium>],
-   [<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>],
-   [<ore:plateAluminium>, <galacticraftcore:canister>, <ore:plateAluminium>]]);
+   [<ore:plateDenseAluminium>, <ore:plateDenseBlackSteel>, <ore:plateDenseAluminium>],
+   [<ore:plateDenseAluminium>, <ore:blockGlass>, <ore:plateDenseAluminium>],
+   [<ore:plateDenseAluminium>, <galacticraftcore:canister>, <ore:plateDenseAluminium>]]);
 
 // Канистра из олова
 recipes.addShaped("tfg/gc/canister", <galacticraftcore:canister>, [
-   [<ore:plateTin>, null, <ore:plateTin>],
-   [<ore:plateTin>, <ore:gtce.tool.hard.hammers>, <ore:plateTin>],
-   [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
+   [<ore:plateDenseTin>, null, <ore:plateDenseTin>],
+   [<ore:plateDenseTin>, <ore:gtce.tool.hard.hammers>, <ore:plateDenseTin>],
+   [<ore:plateDenseTin>, <ore:plateDenseTin>, <ore:plateDenseTin>]]);
 
 // Дуговая лампа
 recipes.addShaped("tfg/gc/arclamp", <galacticraftcore:arclamp>, [
@@ -417,8 +333,8 @@ recipes.addShaped("tfg/gc/grapple", <galacticraftplanets:grapple>, [
 
 // Антена связи
 recipes.addShaped("tfg/gc/dishbase", <galacticraftcore:dishbase>, [
-   [<ore:plateStainlessSteel>, <galacticraftcore:basic_item:19>, <ore:plateStainlessSteel>],
-   [null, <ore:plateStainlessSteel>, null],
+   [<ore:plateDenseStainlessSteel>, <galacticraftcore:basic_item:19>, <ore:plateDenseStainlessSteel>],
+   [null, <ore:plateDenseStainlessSteel>, null],
    [<ore:circuitIv>, <ore:blockSteel>, <ore:circuitIv>]]);
 
 // Тепловой контроллер
@@ -429,9 +345,9 @@ recipes.addShaped("tfg/gc/thermal_controller", <galacticraftcore:basic_item:20>,
 
 // Концентратор
 recipes.addShaped("tfg/gc/oxygen_concentrator", <galacticraftcore:oxygen_concentrator>, [
-   [<ore:plateBlackSteel>, <ore:circuitMv>, <ore:plateBlackSteel>],
-   [<ore:plateTin>, <galacticraftcore:canister>, <ore:plateTin>],
-   [<ore:plateBlackSteel>, <galacticraftcore:air_vent>, <ore:plateBlackSteel>]]);
+   [<ore:plateDenseBlackSteel>, <ore:circuitMv>, <ore:plateDenseBlackSteel>],
+   [<ore:plateDenseTin>, <galacticraftcore:canister>, <ore:plateDenseTin>],
+   [<ore:plateDenseBlackSteel>, <galacticraftcore:air_vent>, <ore:plateDenseBlackSteel>]]);
 
 // Привод ориона
 recipes.addShaped("tfg/gc/orion_drive", <galacticraftplanets:orion_drive>, [
@@ -447,21 +363,21 @@ recipes.addShaped("tfg/gc/buggy_wheal", <galacticraftcore:buggymat>, [
 
 // Экран просмотра
 recipes.addShaped("tfg/gc/view_screen", <galacticraftcore:view_screen>, [
-   [<ore:plateBlackSteel>, <ore:circuitLv>, <ore:plateBlackSteel>],
+   [<ore:plateDenseBlackSteel>, <ore:circuitLv>, <ore:plateDenseBlackSteel>],
    [<ore:circuitLv>, <ore:paneGlass>, <ore:circuitLv>],
-   [<ore:plateBlackSteel>, <ore:circuitLv>, <ore:plateBlackSteel>]]);
+   [<ore:plateDenseBlackSteel>, <ore:circuitLv>, <ore:plateDenseBlackSteel>]]);
 
 // ДО 1
 recipes.addShaped("tfg/gc/decor_block_tin_1", <galacticraftcore:basic_block_core:4>, [
    [<ore:stone>, <ore:stone>, null],
-   [<ore:stone>, <ore:stone>, <ore:plateTin>],
+   [<ore:stone>, <ore:stone>, <ore:plateDenseTin>],
    [null, null, null]]);
 
 // ДО 2
 recipes.addShaped("tfg/gc/decor_block_tin_2", <galacticraftcore:basic_block_core:3>, [
    [<ore:stone>, <ore:stone>, null],
    [<ore:stone>, <ore:stone>, null],
-   [null, <ore:plateTin>, null]]);
+   [null, <ore:plateDenseTin>, null]]);
 
 // Свет панель 1
 recipes.addShaped("tfg/gc/lighting_panel_1", <galacticraftcore:panel_lighting>, [
@@ -489,7 +405,7 @@ recipes.addShaped("tfg/gc/lighting_panel_4", <galacticraftcore:panel_lighting:3>
 
 // Свет панель 5
 recipes.addShaped("tfg/gc/lighting_panel_5", <galacticraftcore:panel_lighting:4>, [
-   [null, null, null],
+   [null, <ore:paneGlass>, null],
    [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, null],
    [null, <ore:plateBlackSteel>, null]]);
 
@@ -516,7 +432,7 @@ recipes.addShaped("tfg/gc/sealable_something_4", <galacticraftcore:enclosed:1>, 
    [null, null, null],
    [<galacticraftcore:basic_block_core:4>, <ore:pipeSmallFluidStainlessSteel>, <galacticraftcore:basic_block_core:4>],
    [null, null, null]]);
- 
+
 // Еда
 // Фруктовая канистра
 canner.recipeBuilder()
@@ -548,45 +464,22 @@ canner.recipeBuilder()
    .outputs(<galacticraftcore:food:9>)
    .duration(460).EUt(2).buildAndRegister();
 
-// High Duty Plates(1-3)
-// Tier 1
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseBlackSteel>.firstItem * 3, <ore:plateDenseAluminium>.firstItem * 2, <ore:plateDenseBronze> * 16])
-   .fluidInputs([<liquid:stainless_steel> * 800])
-	.outputs(<galacticraftcore:heavy_plating> * 3)
-	.property("temperature", 3500)
-	.duration(1000).EUt(520).buildAndRegister();
-// Tier 2
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
-   .fluidInputs([<liquid:titanium> * 800])
-	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
-	.property("temperature", 4400)
-	.duration(1000).EUt(620).buildAndRegister();
-// Tier 3
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
-   .fluidInputs([<liquid:tungsten_steel> * 800])
-	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
-	.property("temperature", 5300)
-	.duration(1000).EUt(720).buildAndRegister();
-
 // Баллоны
 // Легкий
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateLead> * 2, <metaitem:electric.pump.lv> * 2)
+   .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateDenseTin> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
    .duration(1000).EUt(128).buildAndRegister();
 // Средний
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.mv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateLead> * 4, <metaitem:electric.pump.mv> * 2)
+   .inputs(<metaitem:super_tank.mv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 4, <metaitem:electric.pump.mv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
    .duration(1000).EUt(256).buildAndRegister();
 // Тяжелый
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.hv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateLead> * 6, <metaitem:electric.pump.hv> * 2)
+   .inputs(<metaitem:super_tank.hv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 6, <metaitem:electric.pump.hv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .duration(1000).EUt(512).buildAndRegister();
@@ -597,6 +490,69 @@ assembler.recipeBuilder()
    .circuit(7)
    .outputs(<galacticraftcore:platform>)
    .duration(1000).EUt(1012).buildAndRegister();
+
+// Вакумное стекло
+forming_press.recipeBuilder()
+   .inputs(<ore:plateDenseAluminium> * 4, <ore:blockGlass> * 5)
+   .outputs(<galacticraftcore:space_glass_strong> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+forming_press.recipeBuilder()
+   .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_strong> * 5)
+   .outputs(<galacticraftcore:space_glass_strong:1> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+
+forming_press.recipeBuilder()
+   .inputs(<ore:ingotTin> * 4, <ore:blockGlass> * 5)
+   .outputs(<galacticraftcore:space_glass_vanilla> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+forming_press.recipeBuilder()
+   .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_vanilla> * 5)
+   .outputs(<galacticraftcore:space_glass_vanilla:1> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+
+forming_press.recipeBuilder()
+   .inputs(<ore:ingotAluminum> * 4, <ore:blockGlass> * 5)
+   .outputs(<galacticraftcore:space_glass_clear> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+forming_press.recipeBuilder()
+   .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_clear> * 5)
+   .outputs(<galacticraftcore:space_glass_clear:1> * 5)
+   .duration(300).EUt(480).buildAndRegister();
+
+// Грузовой загрузчик
+assembler.recipeBuilder()
+   .inputs(<ore:plateDenseAluminium> * 2, <ore:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
+   .circuit(7)
+   .outputs(<galacticraftcore:cargo>)
+   .duration(1000).EUt(512).buildAndRegister();
+// Грузовой разгрузчик
+assembler.recipeBuilder()
+   .inputs(<ore:plateDenseAluminium> * 2, <ore:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
+   .circuit(8)
+   .outputs(<galacticraftcore:cargo:4>)
+   .duration(1000).EUt(512).buildAndRegister();
+
+// Парашуты
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs([
+      <galacticraftcore:canvas> * 6,
+      <ore:string> * 4
+   ])
+   .outputs([<galacticraftcore:parachute>])
+   .duration(20).EUt(480).buildAndRegister();
+chemical_bath.recipeBuilder()
+   .inputs([<ore:gc.parachute.colors>])
+   .fluidInputs([<liquid:chlorine> * 144])
+   .outputs([<galacticraftcore:parachute>])
+   .duration(8).EUt(480).buildAndRegister();
+for i in 0 .. 16 {
+   chemical_bath.recipeBuilder()
+      .inputs([<ore:gc.parachute.colors>])
+      .fluidInputs([colorLiquid[i] * 18])
+      .outputs([gcParachute[i]])
+      .duration(20).EUt(7).buildAndRegister();
+}
 
 // Nose Cones 1-2 Tiers
 // Tier 1
@@ -842,3 +798,26 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2:3>)
    .duration(1200).EUt(9000).buildAndRegister();
+
+// High Duty Plates(1-3)
+// Tier 1
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateDenseBlackSteel>.firstItem * 3, <ore:plateDenseAluminium>.firstItem * 2, <ore:plateDenseBronze> * 16])
+   .fluidInputs([<liquid:stainless_steel> * 800])
+	.outputs(<galacticraftcore:heavy_plating> * 3)
+	.property("temperature", 3500)
+	.duration(1000).EUt(520).buildAndRegister();
+// Tier 2
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
+   .fluidInputs([<liquid:titanium> * 800])
+	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
+	.property("temperature", 4400)
+	.duration(1000).EUt(620).buildAndRegister();
+// Tier 3
+electric_blast_furnace.recipeBuilder()
+	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
+   .fluidInputs([<liquid:tungsten_steel> * 800])
+	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
+	.property("temperature", 5300)
+	.duration(1000).EUt(720).buildAndRegister();

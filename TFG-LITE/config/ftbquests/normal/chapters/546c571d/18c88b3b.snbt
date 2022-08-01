@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.lv.bending.title}",
-	x: -1.0d,
-	y: 12.0d,
+	x: 1.0d,
+	y: 11.5d,
 	description: "{tfg.quests.lv.bending.subtitle}",
 	text: [
 		"{tfg.quests.lv.bending.desc1}",

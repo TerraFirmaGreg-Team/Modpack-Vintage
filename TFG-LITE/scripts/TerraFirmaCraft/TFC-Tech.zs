@@ -17,7 +17,8 @@ val RemoveItemRecipes as IItemStack[] = [
     <tfctech:electric_forge>,
     <tfctech:metal/copper_inductor>,
     <tfctech:induction_crucible>,
-    <tfctech:wiredraw/winch>
+    <tfctech:wiredraw/winch>,
+    <tfctech:latex/vulcanizing_agents>
 ];
 
 val RemoveItemWireDrawingRecipes as IItemStack[] = [
@@ -303,6 +304,9 @@ recipes.addShapeless("tfg/tfctech/pot_ash", <tfctech:pot_ash>, [<ore:dustAsh>, <
 
 // Резина для первых этапов
 recipes.addShapeless("tfg/tfctech/plate_rubber", <metaitem:plateRubber> * 2, [<tfctech:latex/rubber>, <ore:gtce.tool.knife>]);
+
+// Вулканизирующие агенты
+recipes.addShapeless("tfg/tfctech/vulcanizing_agents", <tfctech:latex/vulcanizing_agents> * 4, [<tfc:powder/graphite>, <ore:dustKaolinite>, <ore:dustFlux>, <ore:dustSulfur>]);
 
 // Уменьшение выхода рецепта с резиной
 Barrel.addRecipe("tfg:tfctech/rubber_mix", <tfctech:latex/vulcanizing_agents>, <liquid:latex> * 1000, <tfctech:latex/rubber_mix> * 6, 8);

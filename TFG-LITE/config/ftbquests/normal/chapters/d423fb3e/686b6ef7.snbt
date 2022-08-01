@@ -1,0 +1,14 @@
+{
+	x: -14.25d,
+	y: -5.0d,
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "a866b719",
+		type: "item",
+		items: [{
+			item: "gregtechfoodoption:gtfo_casing"
+		}]
+	}]
+}

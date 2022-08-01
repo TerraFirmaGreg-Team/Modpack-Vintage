@@ -277,6 +277,12 @@ electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 // Регистрация металла
 ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "WROUGHT_IRON", 144, true);
 
+// Ковка монет
+Anvil.addRecipe("tfg/gt/copper_coin", <ore:plateCopper>, <metaitem:credit.copper>, 1, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/gold_coin", <ore:plateGold>, <metaitem:credit.gold>, 2, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/silver_coin", <ore:plateSilver>, <metaitem:credit.silver>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/cupronickel_coin", <ore:plateCupronickel>, <metaitem:credit.cupronickel>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+
 // Новые рецепты ковки GT мечей
 Anvil.addRecipe("tfg/tfc/sword_blade/copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
 Anvil.addRecipe("tfg/tfc/sword_blade/bismuth_bronze", <ore:ingotDoubleBismuthBronze>, <metaitem:toolHeadSwordBismuthBronze>, 2, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");

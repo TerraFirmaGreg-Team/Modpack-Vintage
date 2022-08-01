@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.sifting.title}",
 	icon: "gregtech:machine 1 575",
 	x: -6.0d,
-	y: 12.5d,
+	y: 13.25d,
 	description: "{tfg.quests.lv.sifting.subtitle}",
 	text: [
 		"{tfg.quests.lv.sifting.desc1}",

@@ -1019,16 +1019,6 @@ compressor.recipeBuilder()
   .outputs([<appliedenergistics2:fluix_block>])
   .duration(300).EUt(480).buildAndRegister();
 
-// Quartz block
-compressor.recipeBuilder()
-	.inputs(<ore:crystalCertusQuartz> * 4)
-	.outputs(<appliedenergistics2:quartz_block>)
-	.duration(400).EUt(4).buildAndRegister();
-compressor.recipeBuilder()
-	.inputs(<ore:crystalPureCertusQuartz> * 16)
-	.outputs(<appliedenergistics2:quartz_block>)
-	.duration(400).EUt(4).buildAndRegister();
-
 // Crafting Co-Processing Unit
   packer.recipeBuilder()
   .inputs(<appliedenergistics2:crafting_unit>)
@@ -1270,6 +1260,7 @@ recipes.addShaped("tfg/ae2/charged_staff", <appliedenergistics2:charged_staff>, 
 
 // Fluid Interface
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
+recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 recipes.addShaped("tfg/ae2/fluid_interfaces_interface", <appliedenergistics2:fluid_interface>, [
   [<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>],
   [<appliedenergistics2:material:43>, <metaitem:electric.pump.lv>, <appliedenergistics2:material:44>],
@@ -1289,6 +1280,9 @@ recipes.addShaped("tfg/ae2/fluid_interfaces_interface_ev", <appliedenergistics2:
 
 // Датчик жидкостного уровня
 recipes.addShapeless(<appliedenergistics2:part:281>, [<appliedenergistics2:part:280>, <minecraft:water_bucket>]);
+
+// Очистка шаблона
+recipes.addShapeless(<appliedenergistics2:material:52>, [<appliedenergistics2:encoded_pattern>]);
 
 // P2P Tunnel
 recipes.addShaped("tfg/ae2/tunnels_p2p", <appliedenergistics2:part:460> * 2, [
@@ -1411,6 +1405,7 @@ recipes.addShaped("tfg/ae2/spatial_io_port",<appliedenergistics2:spatial_io_port
 
 // Interface
 recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
+recipes.addShapeless(<appliedenergistics2:part:440>, [<appliedenergistics2:interface>]);
 recipes.addShaped("tfg/ae2/interfaces", <appliedenergistics2:interface>, [
   [<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>],
   [<appliedenergistics2:material:44>, <metaitem:conveyor.module.lv>, <appliedenergistics2:material:43>],

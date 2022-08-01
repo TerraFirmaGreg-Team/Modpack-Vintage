@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.thermal.title}",
 	icon: "gregtech:machine 1 605",
 	x: -7.0d,
-	y: 13.0d,
+	y: 13.5d,
 	description: "{tfg.quests.lv.thermal.subtitle}",
 	text: [
 		"{tfg.quests.lv.thermal.desc}"

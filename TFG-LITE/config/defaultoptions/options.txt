@@ -4,7 +4,7 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:7
+renderDistance:8
 guiScale:2
 particles:0
 bobView:true
@@ -18,7 +18,7 @@ renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
-lang:ru_ru
+lang:en_us
 chatVisibility:0
 chatColors:true
 chatLinks:true
