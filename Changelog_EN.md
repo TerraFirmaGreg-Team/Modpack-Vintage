@@ -1,5 +1,56 @@
 # Changelog
 
+## Version R4.0.1 - 08/02/2022
+#### [Normal, Huge]
+### Modpack fixes
+* Firmalife oven no longer produces heat when turned off. In the on state, the amount of heat is reduced.
+* Added support for Cellars Addon, now going into the refrigerator (basement) you will be cooled, if it's cold there of course.
+* Plants suitable for making medicines have been added, including now medicines can also be made from algae and carals.
+* Changed the mechanics of preparing extracts for medicines, since the old method did not work on servers.
+* Deadly disease time reduced from 24 -> to 8 minutes.
+* Minor balancing for tornadoes, reduced chance of spawning destructive tornadoes.
+* Disabled chunk loading by AE2 controller, load chunks with FTBUtilities.
+* New quests and adjustments to old ones.
+* Temperature balancing:
+        * Burning Temperature = 40.0 -> 47.0
+        * Cold Temperature = 0.0 -> 3.0
+        * Freezing Temperature = 5.0 -> -5.0
+        * Hot Temperature = 27.0 -> 40.0
+* Increased crucible capacity to 4608.
+* Added medicine recipes for electric eras.
+* Added part of Russian translation for TFC Florae. Thanks to Nemo48, SerinatR.
+* Added Russian translation for littletiles.
+* Added description for AE2 quests. Thanks to Nemo48 for the help.
+* Disabled the GT engineering workbench recipe as there are a lot of bugs, dups and crashes, once these deficiencies are fixed, it will be returned.
+* With snowshoes, hiking boots, a crown and a backpack, you no longer drown.
+* Added a recipe for forging and minting some coins.
+* Increased rocket fuel consumption.
+* Increased HP for GC bosses.
+* Fixed a bug with GT armor, now it sets and keeps your temperature at 20 degrees.
+* The number of heat and cold modifiers you have increased from 3 -> 10
+* Fixed display of the texture of the object, the nose of the rocket.
+* Added portable item storage craft, AEadditions.
+* Removed duplicate Quartz block recipe.
+* Changed the crafting of GC parachutes and their coloring.
+* Hidden unused catalyst and TFCMedinal medicine.
+* Changed crafting of Pole, Telemetry Unit, Valve, Rescue Box, Thruster, Tin Canister, Fluid Capsule, Communications Antenna, Hub, View Screen, Lightbar, Tanks, Added Recipe to all Vacuum Glasses, Cargo Loader/Unloader, GC.
+* Fixed knife mold GT recipe.
+* Added rubber sheet recipe to GT car.
+* Added ordicts for GC parachutes.
+* Added ordicts for GT crates.
+* Removed duplicate orders from non-GT materials.
+* Fixed crafting of vulcanizing agent, now it uses graphite powder.
+* Fixed recipe for converting AE interfaces to their flat versions.
+* Fixed a bug with cleaning the AE template.
+### Update mods
+* Loliasms
+* TFCAmbiental
+* CustomSkinLoader
+* Tombstone
+* Phosphorus
+* TFG mod
+* Fluid Craft for AE2
+
 ## Version R4.0.0 - 07/25/2022
 #### [Normal, Huge]
 ### New mods
