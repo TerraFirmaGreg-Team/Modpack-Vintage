@@ -1740,7 +1740,19 @@ tfg.quests.ae2.meinterfaceterminal.subtitle=&aОчень полезный тер
 
 tfg.quests.ae2.craftingunits.subtitle=&aИменно эти процессоры обрабатывают ваш автокрафт и распределяют предметы по машинам.
 
-tfg.quests.ae2.craftingunit.subtitle=&aКожух для крафтовых процессоров.
+tfg.quests.ae2.craftingunit.title=Лёгкие МЕ системы
+tfg.quests.ae2.craftingunit.subtitle=&aБлок для автокрафта
+tfg.quests.ae2.craftingunit.desc1=Вместилище для ваших вычислительных процессоров и ячеек от 1kb, до 16384kb!
+tfg.quests.ae2.craftingunit.desc2=При соединении с ячейками и подключении к сети - позволяет заказывать предметы, настроенные через шаблоны. 
+tfg.quests.ae2.craftingunit.desc3=Соединив этот блок с вычислительным процессором - вы получите дополнительный поток, при выполнении задач!
+tfg.quests.ae2.craftingunit.desc4=То есть без "обвесов" будет выполнять одну операцию. Один такой "субпроцессор" позволяет добавить ещё одну параллельную операцию.
+
+tfg.quests.ae2.craftingmonitor.title=Крафт-монитор
+tfg.quests.ae2.craftingmonitor.subtitle=&aЕсли поставить на процессор, будет показывать какой предмет сейчас крафтится.
+tfg.quests.ae2.craftingmonitor.desc1=Позволяет вам наглядно видеть какие предметы у вас крафтятся в процессорах.
+tfg.quests.ae2.craftingmonitor.desc2=Полную информацию можете получить либо через молоточек в терминале, либо вручную влезть (ПКМ на процессор).
+
+tfg.quests.ae2.2p2tunnel.subtitle=&aВаши помощники в развлетвлении, оптимизации и миниатюризации вашей МЕ сети.
 
 tfg.quests.ae2.craftingmonitor.subtitle=&aЕсли поставить на процессор, будет показывать какой предмет сейчас крафтится.
 
