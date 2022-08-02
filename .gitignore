@@ -1,7 +1,6 @@
 
 TFG-LITE/mods/replaymod-1.12.2-2.6.3.jar
-TFG-LITE/config/jei/itemBlacklist.cfg
 TFG-LITE/config/jei/bookmarks.ini
 TFG-LITE/config/jei/worldSettings.cfg
-TFG-LITE/config/oxygen/data/*
 TFG-LITE/config/fantasticlib/*
+TFG-LITE/config/oxygen/data/client/*

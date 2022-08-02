@@ -1,0 +1,13 @@
+{
+  "persistent_id": 3,
+  "version_id": 3,
+  "display_name": "шахтер",
+  "currency_index": 0,
+  "currency_itemstack": {
+    "registry_name": "minecraft:air",
+    "damage": 0,
+    "itemstack_nbt": "",
+    "capabilities_nbt": ""
+  },
+  "offers": []
+}
