@@ -49,6 +49,7 @@
 * Tombstone
 * Phosphor
 * TFG-mod
+* Fluid Craft for AE2
 
 ## Version R4.0.0 - 25.07.2022
 #### [Normal, Huge]
