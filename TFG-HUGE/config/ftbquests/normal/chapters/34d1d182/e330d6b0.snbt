@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/phobos.png"
+			icon: "extraplanets:textures/gui/celestialbodies/phobos.png"
 		}
 	},
 	x: 8.0d,

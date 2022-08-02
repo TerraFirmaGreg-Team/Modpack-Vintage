@@ -12,7 +12,7 @@
 		uid: "1597f4e0",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_dust 1 341"
+			item: "tfc:powder/graphite"
 		}]
 	}]
 }

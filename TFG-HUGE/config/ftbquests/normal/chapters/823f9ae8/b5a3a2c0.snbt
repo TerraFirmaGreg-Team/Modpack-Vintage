@@ -1,0 +1,14 @@
+{
+	x: -18.0d,
+	y: 4.0d,
+	dependencies: [
+		"3bcc6936"
+	],
+	tasks: [{
+		uid: "a1af1690",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/bales/jute/jute_fiber_bale"
+		}]
+	}]
+}

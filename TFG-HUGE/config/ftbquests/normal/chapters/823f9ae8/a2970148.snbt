@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: 0.0d,
+	dependencies: [
+		"85e10b5d"
+	],
+	tasks: [{
+		uid: "541ebafb",
+		type: "item",
+		items: [{
+			item: "architecturecraft:sawbench"
+		}]
+	}]
+}

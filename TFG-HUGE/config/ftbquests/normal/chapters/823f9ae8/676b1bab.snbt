@@ -10,11 +10,14 @@
 		}
 	},
 	x: -32.0d,
-	y: -8.5d,
+	y: -7.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.meat.subtitle}",
 	text: [
-		"Приготовить любое мясо на костре."
+		"{tfg.quests.primitive.meat.tasks.desc1}",
+		"{tfg.quests.primitive.meat.tasks.desc2}",
+		"{tfg.quests.primitive.meat.tasks.desc3}",
+		"{tfg.quests.primitive.meat.tasks.desc4}"
 	],
 	dependencies: [
 		"0bb92590"

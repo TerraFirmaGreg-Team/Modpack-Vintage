@@ -1,0 +1,43 @@
+{
+	x: -25.0d,
+	y: 9.0d,
+	dependencies: [
+		"2816fe72"
+	],
+	tasks: [{
+		uid: "e7b77c32",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5e5b8c7e",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3aff11fe",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "57762ba3",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

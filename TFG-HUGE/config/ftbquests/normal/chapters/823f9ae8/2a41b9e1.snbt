@@ -1,0 +1,21 @@
+{
+	x: 5.5d,
+	y: 10.0d,
+	dependencies: [
+		"c73303fb"
+	],
+	tasks: [{
+		uid: "f287e287",
+		type: "item",
+		items: [{
+			item: "tfcmedicinal:extract/fragrant"
+		}]
+	},
+	{
+		uid: "5a64394e",
+		type: "item",
+		items: [{
+			item: "tfcmedicinal:concentrate/fragrant"
+		}]
+	}]
+}

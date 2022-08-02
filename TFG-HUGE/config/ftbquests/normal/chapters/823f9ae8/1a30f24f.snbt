@@ -1,6 +1,10 @@
 {
 	x: -22.0d,
 	y: -2.0d,
+	description: "{tfg.quests.primitive.hotornot.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
 		"57406373"
 	],

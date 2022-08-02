@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/pluto.png"
+			icon: "extraplanets:textures/gui/celestialbodies/pluto.png"
 		}
 	},
 	x: 24.0d,

@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.mv.americasimulator.title}",
-	icon: "gregtech:ore_oilsands_0",
+	icon: "gregtech:meta_ore_chunk 1 1597",
 	x: 4.0d,
 	y: -13.0d,
 	description: "{tfg.quests.mv.americasimulator.subtitle}",
@@ -19,13 +19,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any oreOilsands"
+					Name: "Any oreChunkOilsands"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "oreOilsands"
+					data: "oreChunkOilsands"
 				}
 			}
 		}]

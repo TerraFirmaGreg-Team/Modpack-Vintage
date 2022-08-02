@@ -12,25 +12,32 @@
 		uid: "05c38317",
 		type: "item",
 		items: [{
-			item: "tfc:raw/granite"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any RawIgneousExtrusive"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "RawIgneousExtrusive"
+				}
+			}
 		},
 		{
-			item: "tfc:raw/diorite"
-		},
-		{
-			item: "tfc:raw/gabbro"
-		},
-		{
-			item: "tfc:raw/rhyolite"
-		},
-		{
-			item: "tfc:raw/basalt"
-		},
-		{
-			item: "tfc:raw/andesite"
-		},
-		{
-			item: "tfc:raw/dacite"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any RawIgneousIntrusive"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "RawIgneousIntrusive"
+				}
+			}
 		}],
 		consume_items: false,
 		only_from_crafting: false

@@ -1,7 +1,7 @@
 {
 	title: "Vacuum Hopper",
 	icon: "gregtech:machine 1 980",
-	x: -1.0d,
+	x: 1.0d,
 	y: 10.5d,
 	text: [
 		"§oThis quest's subject is optional and less useful. We have put it here in the name of completeness, but if this is not useful to you, feel free to skip it.§r",

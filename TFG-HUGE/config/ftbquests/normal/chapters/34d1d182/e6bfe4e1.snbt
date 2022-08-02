@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/neptune.png"
+			icon: "extraplanets:textures/gui/celestialbodies/neptune.png"
 		}
 	},
 	x: 21.25d,

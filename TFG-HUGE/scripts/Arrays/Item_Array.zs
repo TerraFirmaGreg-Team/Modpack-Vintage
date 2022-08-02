@@ -4611,6 +4611,26 @@ global colorLiquid as ILiquidStack[] = [
 	<liquid:dye_black>
 ];
 
+// - All GC Parachute Array
+global gcParachute as IItemStack[] = [
+	<galacticraftcore:parachute>,
+	<galacticraftcore:parachute:10>,
+	<galacticraftcore:parachute:9>,
+	<galacticraftcore:parachute:2>,
+	<galacticraftcore:parachute:15>,
+	<galacticraftcore:parachute:3>,
+	<galacticraftcore:parachute:11>,
+	<galacticraftcore:parachute:6>,
+	<galacticraftcore:parachute:8>,
+	<galacticraftcore:parachute:14>,
+	<galacticraftcore:parachute:12>,
+	<galacticraftcore:parachute:5>,
+	<galacticraftcore:parachute:4>,
+	<galacticraftcore:parachute:7>,
+	<galacticraftcore:parachute:13>,
+	<galacticraftcore:parachute:1>
+];
+
 // An array in order to explain 
 // to the user that the processing of dust data 
 // into TFC metal is not possible due to the GTCEu bug, 

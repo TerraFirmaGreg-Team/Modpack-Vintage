@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.lv.lathe.title}",
-	x: -1.0d,
-	y: 14.0d,
+	x: 1.0d,
+	y: 13.5d,
 	description: "{tfg.quests.lv.lathe.subtitle}",
 	text: [
 		"{tfg.quests.lv.lathe.desc}"

@@ -84,13 +84,13 @@ customization {
 customization {
   orientation = bottom-left
   shadow = true
-  x = 4
+  x = 2
   actionid = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
   action = addtext
   y = -44
   scale = 1.0
   alignment = left
-  value = Modpack Version: §cR3.4.4
+  value = Modpack Version: §cR4.0.1
 }
 
 customization {
@@ -105,7 +105,7 @@ customization {
   scale = 1.0
   vr:value:modloaded = thaumcraft
   alignment = left
-  value = Modpack Type: §b[Lite]
+  value = Modpack Type: §b[Normal]
 }
 
 customization {

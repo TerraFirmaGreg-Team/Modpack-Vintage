@@ -1,0 +1,16 @@
+{
+	x: -9.0d,
+	y: 3.0d,
+	dependencies: [
+		"a2970148"
+	],
+	tasks: [{
+		uid: "785f921c",
+		type: "item",
+		items: [{
+			item: "architecturecraft:chisel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

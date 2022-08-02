@@ -1,0 +1,21 @@
+{
+	x: 5.5d,
+	y: 7.0d,
+	dependencies: [
+		"c73303fb"
+	],
+	tasks: [{
+		uid: "b6d3a08a",
+		type: "item",
+		items: [{
+			item: "tfcmedicinal:extract/focused"
+		}]
+	},
+	{
+		uid: "70cae211",
+		type: "item",
+		items: [{
+			item: "tfcmedicinal:concentrate/focused"
+		}]
+	}]
+}

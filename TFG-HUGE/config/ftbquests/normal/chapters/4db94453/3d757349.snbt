@@ -8,7 +8,7 @@
 		uid: "9bc32017",
 		type: "item",
 		items: [{
-			item: "extracells:part.base 1 7"
+			item: "aeadditions:part.base"
 		}]
 	}]
 }

@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/uranus.png"
+			icon: "extraplanets:textures/gui/celestialbodies/uranus.png"
 		}
 	},
 	x: 18.75d,

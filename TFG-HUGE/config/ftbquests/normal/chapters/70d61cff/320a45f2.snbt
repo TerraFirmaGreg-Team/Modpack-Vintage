@@ -8,6 +8,7 @@
 		"{tfg.quests.ev.largegasturbine.desc1}",
 		"",
 		"{tfg.quests.ev.largegasturbine.desc2}",
+		"",
 		"{tfg.quests.ev.largegasturbine.desc3}"
 	],
 	dependencies: [

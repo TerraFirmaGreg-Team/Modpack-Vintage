@@ -1,8 +1,17 @@
 # ContentTweaker
-item.contenttweaker.rocketparts_tier7.name=Durable Rocket Body
-item.contenttweaker.rocketparts_tier8.name=Durable Rocket Body
-item.contenttweaker.rocketparts_tier9.name=Durable Rocket Body
-item.contenttweaker.rocketparts_tier10.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier2.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier3.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier4.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier5.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier6.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier7.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier8.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier9.name=Durable Rocket Body
+item.contenttweaker.rocketbody_tier10.name=Durable Rocket Body
+
+item.contenttweaker.lander_tier1.name=Lander
+item.contenttweaker.lander_tier2.name=Lander
+item.contenttweaker.lander_tier3.name=Lander
 
 item.contenttweaker.shape_mold_knife.name=Shape (Knife Head)
 item.contenttweaker.shape_extruder_sense.name=Extruder Shape (Sense Head)

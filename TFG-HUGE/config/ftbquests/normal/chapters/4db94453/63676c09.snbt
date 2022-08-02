@@ -1,12 +1,16 @@
 {
-	x: 17.0d,
-	y: 0.0d,
-	shape: "square",
+	x: 16.25d,
+	y: 1.5d,
+	shape: "rsquare",
 	dependencies: [
 		"35e5bc75",
+		"f48f034a",
+		"c2517bf4",
+		"26f2259a",
 		"a4af0a36",
 		"587d7e11",
-		"f48f034a"
+		"9ba7b82b",
+		"e851e43f"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

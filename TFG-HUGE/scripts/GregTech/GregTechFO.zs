@@ -507,6 +507,26 @@ assembler.findRecipe(28, [<metaitem:plateBronze>, <metaitem:brick.adobe_fired> *
 // Reinforced Adobe Bricks * 3
 assembler.findRecipe(28, [<gregtechfoodoption:gtfo_casing:0> * 3, <metaitem:plateBronze> * 3, <metaitem:brick.adobe_fired> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
 
+// Leninade * 1100
+mixer.findRecipe(12, null, [<liquid:gtfo_vodka> * 1000, <liquid:gtfo_lemon_extract> * 100]).remove();
+
+// Vodka * 1
+canner.findRecipe(12, [<minecraft:glass_bottle:0>], [<liquid:gtfo_vodka> * 100]).remove();
+
+// Vodka
+fermenter.findRecipe(8, null, [<liquid:gtfo_potato_juice> * 2000]).remove();
+
+// Apple Cider * 100
+fermenter.findRecipe(2, null, [<liquid:gtfo_apple_extract> * 100]).remove();
+
+// Раскрафт сидра
+distillation_tower.findRecipe(120, null, [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 4})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 6})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 5})], [<liquid:gtfo_apple_cider> * 1000]).remove();
 
 
 // --- Добавление рецептов
@@ -1001,3 +1021,36 @@ extractor.recipeBuilder()
     .outputs(<metaitem:zest_dust>)
     .fluidOutputs([<liquid:gtfo_orange_extract> * 100])
     .duration(100).EUt(5).buildAndRegister();
+
+// Leninade
+mixer.recipeBuilder()
+    .inputs([<ore:flour>, <metaitem:dustMeat>])
+    .fluidInputs([<liquid:vodka> * 1000, <liquid:gtfo_lemon_extract> * 100])
+    .fluidOutputs([<liquid:gtfo_leninade> * 1100])
+    .duration(30).EUt(12).buildAndRegister();
+
+// Vodka Jar
+canner.recipeBuilder()
+    .inputs(<minecraft:glass_bottle>)
+    .fluidInputs([<liquid:vodka> * 100])
+    .outputs(<metaitem:food.vodka>)
+    .duration(30).EUt(12).buildAndRegister();
+
+// Vodka Liquid
+fermenter.recipeBuilder()
+    .fluidInputs([<liquid:gtfo_potato_juice> * 2000])
+    .fluidOutputs([<liquid:vodka> * 2000])
+    .duration(3000).EUt(8).buildAndRegister();
+
+// Cider Liquid
+fermenter.recipeBuilder()
+    .fluidInputs([<liquid:gtfo_apple_extract> * 100])
+    .fluidOutputs([<liquid:cider> * 100])
+    .duration(150).EUt(2).buildAndRegister();
+
+// Cider -> Plant Ball
+distillation_tower.recipeBuilder()
+    .fluidInputs([<liquid:cider> * 1000])
+    .outputs(<metaitem:plant_ball>)
+    .fluidOutputs([<liquid:methanol> * 100, <liquid:carbon_dioxide> * 400, <liquid:methane> * 500, <liquid:acetic_acid> * 80, <liquid:ethanol> * 210, <liquid:water> * 400])
+    .duration(40).EUt(120).buildAndRegister();

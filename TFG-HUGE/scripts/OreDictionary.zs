@@ -361,6 +361,16 @@ for item in TFC_Saws {
     <tfgmod:meta_tool>.withEmptyTag()
 ]);
 
+<ore:gtce.block.crate>.addItems([
+    <gregtech:machine:1625>,
+    <gregtech:machine:1626>,
+    <gregtech:machine:1627>,
+    <gregtech:machine:1628>,
+    <gregtech:machine:1629>,
+    <gregtech:machine:1630>,
+    <gregtech:machine:1631>
+]);
+
 // Wrought Iron + Iron
 <ore:blockIronAny>.add(<minecraft:iron_block>, <metaitem:blockWroughtIron>);
 <ore:plateIronAny>.add(<metaitem:plateIron>, <metaitem:plateWroughtIron>);
@@ -482,6 +492,11 @@ for denseSmartCable in denseSmartCables {
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>);
+<ore:ingotElectrotineAlloy>.remove(<projectred-core:resource_item:104>);
+<ore:gemRuby>.remove(<projectred-core:resource_item:200>);
+<ore:gemSapphire>.remove(<projectred-core:resource_item:201>);
+<ore:gemPeridot>.remove(<projectred-core:resource_item:202>);
+<ore:dustElectrotine>.remove(<projectred-core:resource_item:105>);
 
 ////////////////////////////////////////////////////////
 // --- TFC-Florae --- //////////////////////////////////
@@ -499,12 +514,185 @@ for denseSmartCable in denseSmartCables {
 <ore:stickWood>.remove(<tfcflorae:tools/walking_stick>);
 
 ////////////////////////////////////////////////////////
-// --- GC/GS/EP --- ///////////////////////////////////////
+// --- TFC-Medicinal --- ///////////////////////////////
+////////////////////////////////////////////////////////
+
+// --- Добавление
+
+    <ore:herbalExtractHolder>.add([
+        <tfc:plants/raddia_grass>,
+        <tfc:plants/bromegrass>,
+        <tfc:plants/woolly_bush>,
+        <tfc:plants/prairie_junegrass>,
+        <tfc:plants/timothy_grass>,
+        <tfc:plants/tall_fescue_grass>,
+        <tfc:plants/orchard_grass>,
+        <tfc:plants/winged_kelp>,
+        <tfc:plants/turtle_grass>,
+        <tfc:plants/star_grass>,
+        <tfc:plants/seaweed>,
+        <tfc:plants/seagrass>,
+        <tfc:plants/pondweed>,
+        <tfc:plants/manatee_grass>,
+        <tfc:plants/leafy_kelp>,
+        <tfc:plants/giant_kelp>,
+        <tfc:plants/eel_grass>,
+        <tfc:plants/coontail>,
+        <tfc:plants/silvervein_creeper>,
+        <tfc:plants/jungle_vine>,
+        <tfc:plants/japanese_ivy>,
+        <tfc:plants/rattan>,
+        <tfc:plants/lipstick_palm>,
+        <tfc:plants/summer_asphodel>,
+        <tfc:plants/red_sealing_wax_palm>,
+        <tfc:plants/queen_sago>,
+        <tfc:plants/giant_feather_grass>,
+        <tfc:plants/giant_elephant_ear>,
+        <tfc:plants/dwarf_sugar_palm>,
+        <tfc:plants/drakensberg_cycad>,
+        <tfc:plants/climbing_cactus>,
+        <tfc:plants/takakia>,
+        <tfc:plants/tackweed>,
+        <tfc:plants/reed_mannagrass>,
+        <tfcflorae:coral/fan/tube/green>,
+        <tfcflorae:coral/fan/fire/green>,
+        <tfcflorae:coral/fan/bubble/green>,
+        <tfcflorae:coral/fan/brain/green>,
+        <tfcflorae:coral/fan/bubble/cyan>,
+        <tfcflorae:coral/fan/tube/lime>,
+        <tfcflorae:coral/tube/green>,
+        <tfcflorae:coral/fire/green>,
+        <tfcflorae:coral/bubble/green>,
+        <tfcflorae:coral/bubble/cyan>,
+        <tfcflorae:coral/fire/cyan>,
+        <tfcflorae:coral/tube/lime>,
+        <tfcflorae:coral/fire/lime>,
+        <tfcflorae:plants/coontail>,
+        <tfcflorae:plants/eel_grass>,
+        <tfcflorae:plants/giant_kelp>,
+        <tfcflorae:plants/leafy_kelp>,
+        <tfcflorae:plants/hanging_vine>,
+        <tfcflorae:plants/jungle_vine>,
+        <tfcflorae:plants/jungle_vine_creeping>,
+        <tfcflorae:plants/takakia>,
+        <tfcflorae:plants/leafy_kelp>
+    ]);
+
+    <ore:livelyExtractHolder>.add([
+        <tfc:plants/bromelia_laciniosa>,
+        <tfc:plants/pygmy_date_palm>,
+        <tfc:plants/zimbabwe_aloe>
+    ]);
+
+    <ore:energeticExtractHolder>.add([
+        <tfcflorae:plants/glowshroom>,
+        <tfcflorae:plants/glowing_sea_banana>,
+        <tfcflorae:coral/fan/horn/lime>,
+        <tfcflorae:coral/fan/bubble/lime>,
+        <tfcflorae:coral/fan/brain/lime>,
+        <tfcflorae:coral/brain/green>,
+        <tfcflorae:coral/horn/lime>,
+        <tfcflorae:coral/brain/lime>,
+        <tfcflorae:coral/bubble/lime>
+    ]);
+
+    <ore:focusedExtractHolder>.add([
+        <tfcflorae:crop/product/indigo>,
+        <tfcflorae:coral/bubble/magenta>,
+        <tfcflorae:coral/fire/magenta>,
+        <tfcflorae:coral/tube/magenta>,
+        <tfcflorae:coral/fire/purple>,
+        <tfcflorae:coral/tube/purple>,
+        <tfcflorae:coral/fan/fire/magenta>,
+        <tfcflorae:coral/fan/tube/magenta>,
+        <tfcflorae:coral/fan/bubble/pink>,
+        <tfcflorae:coral/fan/fire/purple>
+    ]);
+
+    <ore:earthyExtractHolder>.add([
+        <tfc:plants/bunch_grass_floating>,
+        <tfc:plants/cattail>,
+        <tfc:plants/milfoil>,
+        <tfc:plants/liana>,
+        <tfc:plants/bunch_grass_reed>,
+        <tfcflorae:plants/liana_creeping>,
+        <tfcflorae:plants/liana>,
+        <tfcflorae:plants/milfoil>,
+        <tfcflorae:plants/tackweed>,
+        <tfcflorae:plants/badderlocks>,
+        <tfcflorae:food/dried/cannabis_leaf>,
+        <tfcflorae:food/dried/coca_leaf>,
+        <tfcflorae:food/dried/tobacco_leaf>,
+        <tfcflorae:food/dried/cannabis_bud>,
+        <tfcflorae:live_starfish>,
+        <tfcflorae:coral/bubble/yellow>,
+        <tfcflorae:food/clove>,
+        <tfcflorae:food/roasted/parasol_mushroom>,
+        <tfcflorae:food/roasted/black_powderpuff>,
+        <tfcflorae:food/roasted/stinkhorn>,
+        <tfcflorae:food/roasted/weeping_milk_cap>,
+        <tfcflorae:food/roasted/turkey_tail>,
+        <tfcflorae:food/roasted/sulphur_shelf>,
+        <tfcflorae:food/roasted/artists_conk>,
+        <tfcflorae:food/butternut>,
+        <tfcflorae:food/black_walnut>,
+        <tfcflorae:food/beechnut>,
+        <tfcflorae:food/dried/barrel_cactus_fruit>
+    ]);
+
+    <ore:pureExtractHolder>.add([
+        <tfcflorae:coral/fan/horn/black>,
+        <tfcflorae:coral/fan/horn/blue>,
+        <tfcflorae:coral/fan/tube/silver>,
+        <tfcflorae:coral/fan/horn/silver>,
+        <tfcflorae:coral/fan/fire/silver>,
+        <tfcflorae:coral/fan/bubble/silver>,
+        <tfcflorae:coral/fan/brain/silver>,
+        <tfcflorae:coral/fan/horn/gray>,
+        <tfcflorae:coral/fan/horn/white>,
+        <tfcflorae:coral/fan/bubble/dead>,
+        <tfcflorae:coral/horn/black>,
+        <tfcflorae:coral/brain/black>,
+        <tfcflorae:coral/tube/silver>,
+        <tfcflorae:coral/horn/silver>,
+        <tfcflorae:coral/fire/silver>,
+        <tfcflorae:coral/bubble/silver>,
+        <tfcflorae:coral/brain/silver>,
+        <tfcflorae:coral/brain/gray>,
+        <tfcflorae:coral/horn/white>,
+        <tfcflorae:coral/brain/white>,
+        <tfcflorae:coral/tube/dead>,
+        <tfcflorae:plants/glowing_sea_banana>,
+        <tfcflorae:plants/blueshroom>,
+        <tfcflorae:plants/sulphur_shroom>
+    ]);
+
+    <ore:fragrantExtractHolder>.add([
+        <tfcflorae:coral/fire/magenta>,
+        <tfcflorae:coral/bubble/purple>,
+        <tfcflorae:coral/fan/bubble/magenta>,
+        <tfcflorae:coral/fan/fire/magenta>,
+        <tfcflorae:coral/fan/tube/magenta>,
+        <tfcflorae:coral/fan/bubble/pink>,
+        <tfcflorae:coral/fan/bubble/purple>,
+        <tfcflorae:coral/fan/tube/purple>
+    ]);
+
+////////////////////////////////////////////////////////
+// --- GC/EP --- ///////////////////////////////////////
 ////////////////////////////////////////////////////////
 
 // --- Добавление
 
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+// Парашеты
+for gcParachute in gcParachute {
+    <ore:gc.parachute>.add(gcParachute);
+    if (gcParachute has <galacticraftcore:parachute>) {}
+    else {
+        <ore:gc.parachute.colors>.add(gcParachute);
+    }
+}
 
 <ore:logWood>.addItems([
     <extraplanets:kepler22b_maple_logs:2>,
@@ -526,131 +714,75 @@ for denseSmartCable in denseSmartCables {
 
 
 // --- Удаление
-
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
-<ore:oreIron>.remove(<galaxyspace:barnarda_c_ores:1>);
-<ore:oreIron>.remove(<galaxyspace:mirandablocks:3>);
-<ore:oreIron>.remove(<galaxyspace:mercuryblocks:4>);
 
 // Copper
-<ore:oreCopper>.remove(<galacticraftcore:basic_block_moon>);
-<ore:oreCopper>.remove(<galacticraftplanets:mars>);
-<ore:oreCopper>.remove(<galacticraftcore:basic_block_core:5>);
-<ore:oreCopper>.remove(<galacticraftplanets:venus:7>);
+<ore:oreCopper>.remove([
+    <galacticraftcore:basic_block_moon>,
+    <galacticraftplanets:mars>,
+    <galacticraftcore:basic_block_core:5>,
+    <galacticraftplanets:venus:7>
+    ]);
 <ore:ingotCopper>.remove(<galacticraftcore:basic_item:3>);
-<ore:oreCopper>.remove(<galaxyspace:barnarda_c_ores:7>);
-<ore:oreCopper>.remove(<galaxyspace:ioblocks:3>);
-<ore:oreCopper>.remove(<galaxyspace:proxima_b_blocks:7>);
+<ore:blockCopper>.remove(<galacticraftcore:basic_block_core:9>);
 
 // Tin
-<ore:oreTin>.remove(<galacticraftcore:basic_block_moon:1>);
-<ore:oreTin>.remove(<galacticraftplanets:mars:1>);
-<ore:oreTin>.remove(<galacticraftplanets:venus:11>);
-<ore:oreTin>.remove(<galacticraftcore:basic_block_core:6>);
-<ore:oreTin>.remove(<galaxyspace:barnarda_c_ores:8>);
-<ore:oreTin>.remove(<galaxyspace:proxima_b_blocks:6>);
+<ore:oreTin>.remove([
+    <galacticraftcore:basic_block_moon:1>,
+    <galacticraftplanets:mars:1>,
+    <galacticraftplanets:venus:11>,
+    <galacticraftcore:basic_block_core:6>
+    ]);
+<ore:ingotTin>.remove(<galacticraftcore:basic_item:4>);
+<ore:blockTin>.remove(<galacticraftcore:basic_block_core:10>);
 
 // Aluminium/Aluminum etc
-<ore:oreAluminium>.remove(<galacticraftplanets:asteroids_block:3>);
-<ore:oreAluminium>.remove(<galacticraftcore:basic_block_core:7>);
-<ore:oreAluminium>.remove(<galacticraftplanets:venus:6>);
-<ore:oreAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
-<ore:oreAluminum>.remove(<galacticraftcore:basic_block_core:7>);
-<ore:oreAluminum>.remove(<galacticraftplanets:venus:6>);
-<ore:oreNaturalAluminum>.remove(<galacticraftplanets:asteroids_block:3>);
-<ore:oreNaturalAluminum>.remove(<galacticraftcore:basic_block_core:7>);
-<ore:oreNaturalAluminum>.remove(<galacticraftplanets:venus:6>);
-<ore:oreAluminum>.remove(<galaxyspace:barnarda_c_ores:9>);
-<ore:oreAluminum>.remove(<galaxyspace:marsores:5>);
-<ore:oreAluminum>.remove(<galaxyspace:haumeablocks:3>);
-<ore:oreAluminum>.remove(<galaxyspace:europablocks:5>);
-
-// Nickel
-<ore:plateNickel>.remove(<galaxyspace:compressed_plates:3>);
+<ore:oreAluminium>.remove([
+    <galacticraftplanets:asteroids_block:3>,
+    <galacticraftcore:basic_block_core:7>,
+    <galacticraftplanets:venus:6>
+    ]);
+<ore:oreAluminum>.remove([
+    <galacticraftplanets:asteroids_block:3>,
+    <galacticraftcore:basic_block_core:7>,
+    <galacticraftplanets:venus:6>
+    ]);
+<ore:oreNaturalAluminum>.remove([
+    <galacticraftplanets:asteroids_block:3>,
+    <galacticraftcore:basic_block_core:7>,
+    <galacticraftplanets:venus:6>
+    ]);
+<ore:ingotAluminum>.remove(<galacticraftcore:basic_item:5>);
+<ore:blockAluminum>.remove(<galacticraftcore:basic_block_core:11>);
+<ore:blockAluminium>.remove(<galacticraftcore:basic_block_core:11>);
 
 // Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
 
 // Silicon
-<ore:oreSilicon>.remove(<galacticraftplanets:venus:10>);
-<ore:oreSilicon>.remove(<galacticraftcore:basic_block_core:8>);
-<ore:oreSilicon>.remove(<galaxyspace:barnarda_c_ores:6>);
-<ore:oreSilicon>.remove(<galaxyspace:marsores:4>);
-<ore:oreSilicon>.remove(<galaxyspace:proxima_b_blocks:9>);
-<ore:oreSilicon>.remove(<galaxyspace:europablocks:4>);
+<ore:oreSilicon>.remove([
+    <galacticraftplanets:venus:10>,
+    <galacticraftcore:basic_block_core:8>
+    ]);
+<ore:blockSilicon>.remove(<galacticraftcore:basic_block_core:13>);
 
 // Quartz
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
-<ore:oreQuartz>.remove(<galaxyspace:barnarda_c_ores:10>);
-<ore:oreQuartz>.remove(<galaxyspace:mirandablocks:6>);
 
 // Lead
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
+<ore:ingotLead>.remove(<galacticraftplanets:basic_item_venus:1>);
+<ore:blockLead>.remove(<galacticraftplanets:venus:12>);
 
 // Ilmenite
 <ore:oreIlmenite>.remove(<galacticraftplanets:asteroids_block:4>);
-<ore:oreIlmenite>.remove(<galaxyspace:ganymedeblocks:3>);
 
-// Sulfur
-<ore:oreSulfur>.remove(<galaxyspace:ioblocks:4>);
-
-// Coal
-<ore:oreCoal>.remove(<galaxyspace:proxima_b_blocks:8>);
-<ore:oreCoal>.remove(<galaxyspace:marsores:2>);
-<ore:oreCoal>.remove(<galaxyspace:barnarda_c_ores>);
-<ore:oreCoal>.remove(<galaxyspace:enceladusblocks:2>);
-<ore:oreCoal>.remove(<galaxyspace:titanblocks:6>);
-
-// Gold
-<ore:oreGold>.remove(<galaxyspace:barnarda_c_ores:2>);
-<ore:oreGold>.remove(<galaxyspace:marsores:1>);
-<ore:oreGold>.remove(<galaxyspace:proxima_b_blocks:5>);
-
-// Redstone
-<ore:oreRedstone>.remove(<galaxyspace:barnarda_c_ores:3>);
-<ore:oreRedstone>.remove(<galaxyspace:marsores:3>);
-<ore:oreRedstone>.remove(<galaxyspace:titanblocks:8>);
-
-// Diamond
-<ore:oreDiamond>.remove(<galaxyspace:barnarda_c_ores:5>);
-<ore:oreDiamond>.remove(<galaxyspace:marsores>);
-<ore:oreDiamond>.remove(<galaxyspace:proxima_b_blocks:10>);
-<ore:oreDiamond>.remove(<galaxyspace:titanblocks:5>);
-<ore:oreDiamond>.remove(<galaxyspace:mirandablocks:5>);
-
-// Nickel
-<ore:oreNickel>.remove(<galaxyspace:barnarda_c_ores:12>);
-<ore:oreNickel>.remove(<galaxyspace:gsores:1>);
-<ore:oreNickel>.remove(<galaxyspace:mercuryblocks:3>);
-
-// Lapis
-<ore:oreLapis>.remove(<galaxyspace:barnarda_c_ores:4>);
-<ore:oreLapis>.remove(<galaxyspace:titanblocks:7>);
-
-// Cobalt
-<ore:oreCobalt>.remove(<galaxyspace:barnarda_c_ores:11>);
-<ore:oreCobalt>.remove(<galaxyspace:gsores>);
-<ore:oreCobalt>.remove(<galaxyspace:mirandablocks:7>);
-
-// Uranium
-<ore:oreUranium>.remove(<galaxyspace:gsores:2>);
-
-// Magnesium
-<ore:oreMagnesium>.remove(<galaxyspace:mercuryblocks:5>);
-<ore:oreMagnesium>.remove(<galaxyspace:ganymedeblocks:2>);
-
-// Sapphire
-<ore:oreSapphire>.remove(<galaxyspace:titanblocks:3>);
-
-// Emerald
-<ore:oreEmerald>.remove(<galaxyspace:titanblocks:4>);
-<ore:oreEmerald>.remove(<galaxyspace:europablocks:3>);
-
-// Dolomite
-<ore:oreDolomite>.remove(<galaxyspace:mirandablocks:4>);
-
+// Титан
+<ore:dustTitanium>.remove(<galacticraftplanets:item_basic_asteroids:9>);
+<ore:ingotTitanium>.remove(<galacticraftplanets:item_basic_asteroids>);
+<ore:blockTitanium>.remove(<galacticraftplanets:asteroids_block:7>);
 
 ////////////////////////////////////////////////////////
 // --- Vanilla --- /////////////////////////////////////
@@ -698,3 +830,26 @@ for denseSmartCable in denseSmartCables {
 // Polished Andesite
 <ore:stoneAndesite>.remove(<minecraft:stone:6>);
 <ore:stoneAndesitePolished>.remove(<minecraft:stone:6>);
+
+////////////////////////////////////////////////////////
+// --- Aunis --- ///////////////////////////////////////
+////////////////////////////////////////////////////////
+
+// --- Удаление
+// Титан
+<ore:ingotTitanium>.remove(<aunis:titanium_ingot>);
+<ore:blockTitanium>.remove(<aunis:titanium_block>);
+// Триниум
+<ore:ingotTrinium>.remove(<aunis:trinium_ingot>);
+<ore:blockTrinium>.remove(<aunis:trinium_block>);
+<ore:oreTrinium>.remove(<aunis:trinium_ore>);
+// Наквадах
+<ore:ingotNaquadahRefined>.remove(<aunis:naquadah_alloy>);
+<ore:blockNaquadahRefined>.remove(<aunis:naquadah_block>);
+// Необработаный наквадах
+<ore:ingotNaquadahRaw>.remove(<aunis:naquadah_alloy_raw>);
+<ore:blockNaquadahRaw>.remove(<aunis:naquadah_block_raw>);
+<ore:oreNaquadahRaw>.remove(<aunis:naquadah_ore_stone>);
+<ore:oreNaquadahRaw>.remove(<aunis:naquadah_ore>);
+
+

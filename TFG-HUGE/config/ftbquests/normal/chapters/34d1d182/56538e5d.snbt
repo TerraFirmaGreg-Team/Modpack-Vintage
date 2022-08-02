@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/iapetus.png"
+			icon: "extraplanets:textures/gui/celestialbodies/iapetus.png"
 		}
 	},
 	x: 16.75d,

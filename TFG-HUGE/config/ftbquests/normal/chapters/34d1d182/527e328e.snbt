@@ -3,7 +3,7 @@
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
-			icon: "galaxyspace:textures/gui/celestialbodies/sol/moons/deimos.png"
+			icon: "extraplanets:textures/gui/celestialbodies/deimos.png"
 		}
 	},
 	x: 8.25d,

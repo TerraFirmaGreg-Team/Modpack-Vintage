@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -5.0d,
+	dependencies: [
+		"da7d16a1"
+	],
+	tasks: [{
+		uid: "06655615",
+		type: "item",
+		items: [{
+			item: "tfcthings:bear_trap"
+		}]
+	}]
+}

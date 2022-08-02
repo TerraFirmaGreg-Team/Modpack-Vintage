@@ -1,0 +1,45 @@
+{
+	title: "{tfg.quests.primitive.mpestle.title}",
+	x: 4.0d,
+	y: 7.0d,
+	description: "{tfg.quests.primitive.mpestle.subtitle}",
+	text: [
+		"{tfg.quests.primitive.mpestle.desc1}",
+		"{tfg.quests.primitive.mpestle.desc2}",
+		"{tfg.quests.primitive.mpestle.desc3}",
+		"{tfg.quests.primitive.mpestle.desc4}",
+		"{tfg.quests.primitive.mpestle.desc5}",
+		"{tfg.quests.primitive.mpestle.desc6}",
+		"{tfg.quests.primitive.mpestle.desc7}",
+		"{tfg.quests.primitive.mpestle.desc8}",
+		"{tfg.quests.primitive.mpestle.desc9}",
+		"{tfg.quests.primitive.mpestle.desc10}",
+		"{tfg.quests.primitive.mpestle.desc11}",
+		"{tfg.quests.primitive.mpestle.desc12}",
+		"{tfg.quests.primitive.mpestle.desc13}"
+	],
+	dependencies: [
+		"9c59a481"
+	],
+	tasks: [{
+		uid: "baa008f4",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:mpestle",
+			ForgeCaps: {
+				Parent: {
+					input: {
+						id: "minecraft:air",
+						Count: 1b,
+						Damage: 0s
+					},
+					output: {
+						id: "minecraft:air",
+						Count: 1b,
+						Damage: 0s
+					}
+				}
+			}
+		}]
+	}]
+}

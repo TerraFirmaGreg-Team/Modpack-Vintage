@@ -109,6 +109,18 @@ for item in RemoveItemRecipesByName {
     recipes.removeByRecipeName(item);
 }
 
+// Временный фикс проблемы совместимости и дублей рецепта
+// Свинец (Прут) * 2
+<recipemap:extruder>.findRecipe(42, [<metaitem:ingotLead>, <metaitem:shape.extruder.rod>], null).remove();
+// Свинец (Пластина) * 1
+<recipemap:bender>.findRecipe(24, [<metaitem:ingotLead>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// Свинец (Пластина) * 2
+<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
+// Свинец (Пластина) * 2
+<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
+// Свинец (Пластина) * 1
+<recipemap:extruder>.findRecipe(56, [<metaitem:ingotLead>, <metaitem:shape.extruder.plate>], null).remove();
+
 // Разбор бочки
 macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
 arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
@@ -198,6 +210,9 @@ brewery.findRecipe(3, [<minecraft:brown_mushroom:0>], [<liquid:water> * 20]).rem
 brewery.findRecipe(3, [<minecraft:red_mushroom:0>], [<liquid:water> * 20]).remove();
 brewery.findRecipe(3, [<minecraft:potato:0>], [<liquid:water> * 20]).remove();
 brewery.findRecipe(3, [<minecraft:beetroot:0>], [<liquid:water> * 20]).remove();
+
+// Кремень * 1
+// forge_hammer.findRecipe(5, [<tfc:gravel/phyllite:0>], null).remove();
 
 // Glass
 arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
@@ -410,11 +425,11 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
     [<ore:circuitHv>, <gregtech:metal_casing:2>, <ore:circuitHv>],
     [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
 
-// Стацния создания
-recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
-    [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
-    [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
-    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
+// // Стацния создания
+// recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
+//     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
+//     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
+//     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
 // LV Корпус машины
 recipes.addShaped("tfg/gregtech/lv_machine_casing", <gregtech:machine_casing:1>, [
@@ -536,10 +551,9 @@ arc_furnace.recipeBuilder()
     .duration(56).EUt(30).buildAndRegister();
 
 // Mold (Knife Head)
-
 recipes.addShaped(<contenttweaker:shape_mold_knife>, [
+    [null, <ore:craftingToolHardHammer>, <metaitem:shape.empty>],
     [null, null, null],
-    [<ore:craftingToolHardHammer>, <metaitem:shape.empty>, null],
     [null, null, null]]);
 
 forming_press.recipeBuilder()
@@ -576,7 +590,7 @@ assembly_line.recipeBuilder()
       <metaitem:conveyor.module.ev> * 3, 
       <ore:plateDoubleNaquadah> * 3, 
       <ore:plateDoubleNaquadah> * 3
-      ])
+    ])
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
     .duration(1300).EUt(8100).buildAndRegister();
@@ -736,7 +750,7 @@ chemical_reactor.recipeBuilder()
     .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
-recipes.addShapeless (<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
+recipes.addShapeless(<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
 
 // Бронзовая пыль в TFC стиле
 recipes.addShapeless(<metaitem:dustBronze> * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
@@ -953,3 +967,26 @@ TerminalRegistry.createAppRegistryBuilder("teleport")
     .device(0, "disabled")
     .upgrade(<charset:icon>)
     .build();
+
+// Монеты
+forming_press.recipeBuilder()
+    .inputs(<ore:plateCopper>)
+    .notConsumable(<metaitem:shape.mold.credit>)
+    .outputs(<metaitem:credit.copper>)
+    .duration(40).EUt(480).buildAndRegister();
+forming_press.recipeBuilder()
+    .inputs(<ore:plateGold>)
+    .notConsumable(<metaitem:shape.mold.credit>)
+    .outputs(<metaitem:credit.gold>)
+    .duration(40).EUt(480).buildAndRegister();
+forming_press.recipeBuilder()
+    .inputs(<ore:plateSilver>)
+    .notConsumable(<metaitem:shape.mold.credit>)
+    .outputs(<metaitem:credit.silver>)
+    .duration(40).EUt(480).buildAndRegister();
+
+// Резина
+electric_furnace.recipeBuilder()
+    .inputs(<tfctech:latex/rubber_mix>)
+    .outputs(<tfctech:latex/rubber>)
+    .duration(40).EUt(7).buildAndRegister();

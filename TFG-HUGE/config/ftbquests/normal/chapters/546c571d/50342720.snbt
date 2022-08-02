@@ -2,7 +2,7 @@
 	title: "{tfg.quests.lv.covers.title}",
 	icon: "gregtech:meta_item_1 1 308",
 	x: -3.0d,
-	y: 9.5d,
+	y: 9.0d,
 	description: "{tfg.quests.lv.covers.subtitle}",
 	text: [
 		"{tfg.quests.lv.covers.desc1}",

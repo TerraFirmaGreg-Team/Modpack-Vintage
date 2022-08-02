@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.lv.autoclave.title}",
 	icon: "gregtech:machine 1 125",
-	x: -8.0d,
-	y: 14.0d,
+	x: -7.5d,
+	y: 14.25d,
 	description: "{tfg.quests.lv.autoclave.subtitle}",
 	text: [
 		"{tfg.quests.lv.autoclave.desc1}"

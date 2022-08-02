@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 11.0d,
+	description: "{tfg.quests.primitive.concoction.desc1}",
+	text: [
+		""
+	],
+	dependencies: [
+		"e1cf9096"
+	],
+	tasks: [{
+		uid: "5409a09b",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "death_sickness_antidote",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

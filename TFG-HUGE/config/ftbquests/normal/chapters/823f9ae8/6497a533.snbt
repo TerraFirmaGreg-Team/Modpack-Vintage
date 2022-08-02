@@ -1,6 +1,6 @@
 {
-	x: -26.0d,
-	y: 8.0d,
+	x: -26.25d,
+	y: 10.0d,
 	description: "{tfg.quests.primitive.wiredrawbench.subtitle}",
 	dependencies: [
 		"bc100163"
