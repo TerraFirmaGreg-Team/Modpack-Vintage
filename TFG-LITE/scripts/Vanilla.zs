@@ -404,6 +404,9 @@ assembler.findRecipe(4, [<minecraft:nether_brick:0>, <metaitem:circuit.integrate
 // Nether Brick Stairs
 assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
+// Раскрафт ванильного верстака
+macerator.findRecipe(2, [<minecraft:crafting_table:0>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металла

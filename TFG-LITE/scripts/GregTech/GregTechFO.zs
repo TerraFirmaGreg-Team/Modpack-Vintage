@@ -531,12 +531,6 @@ distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration:
 
 // --- Добавление рецептов
 
-// УДАЛИТЬ ПОСЛЕ ФИКСА #666
-recipes.addShaped("tfg/gtfo/fuck", <metaitem:dustMeat> * 2,
-    [[null,  null, null],
-    [null, null, null],
-    [null, <ore:categoryMeat>, <ore:gtce.tool.knife>]]);
-
 // Adobe Bricks
 recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
     [[<ore:mudBrick>, <ore:mudBrick>, null],

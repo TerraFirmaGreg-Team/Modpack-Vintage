@@ -337,6 +337,9 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 // Nether Dust decomp
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 
+// Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
+assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металлов
@@ -526,8 +529,13 @@ macerator.recipeBuilder()
     .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
     .duration(135).EUt(2).buildAndRegister();
 
-// Extruder Shape (Sense Head)
+// Crafting Table Cover
+assembler.recipeBuilder()
+    .inputs(<ore:plateIronAny>, <ore:workbench>)
+    .outputs(<metaitem:cover.crafting>)
+    .duration(400).EUt(16).buildAndRegister();
 
+// Extruder Shape (Sense Head)
 recipes.addShaped(<contenttweaker:shape_extruder_sense>, [
     [null, null, null],
     [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
