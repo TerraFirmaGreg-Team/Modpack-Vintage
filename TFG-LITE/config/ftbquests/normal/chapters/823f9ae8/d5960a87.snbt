@@ -4,9 +4,6 @@
 	y: 5.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.fruitsAndBerries.subtitle}",
-	dependencies: [
-		"3e5270be"
-	],
 	tasks: [{
 		uid: "49fda19e",
 		type: "item",

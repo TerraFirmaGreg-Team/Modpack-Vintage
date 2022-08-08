@@ -4,9 +4,6 @@
 	shape: "diamond",
 	description: "{tfg.quests.primitive.sugarcane.subtitle}",
 	hide_dependency_lines: true,
-	dependencies: [
-		"b320933e"
-	],
 	tasks: [{
 		uid: "5466dcd7",
 		type: "item",

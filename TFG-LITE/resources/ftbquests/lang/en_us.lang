@@ -20,7 +20,10 @@ tfg.quests.primitive.primitiveTools.title=Your first tools
 tfg.quests.primitive.primitiveTools.subtitle=&aTake a stone in your hand, preferably more than 2, and press the right button, you will open a menu in which you can carve the tool you need from the stone. All recipes can be viewed in the JEI.
 
 tfg.quests.primitive.javelin.title=Javelin
-tfg.quests.primitive.javelin.subtitle=Fire it the same way you would a trident or bow.
+tfg.quests.primitive.javelin.subtitle=&aFire it the same way you would a trident or bow.
+
+tfg.quests.primitive.firmalife_oven.title=Oven from FirmaLife
+tfg.quests.primitive.firmalife_oven.subtitle=In this oven you can make bread and bricks out of mud. It is built simply. In the center is the main block, on the left and right along the wall of the oven and on top of 3 blocks of the oven chimney. Then put straw and two logs in the oven, then set fire to it and wait.
 
 tfg.quests.primitive.rockanvil.title=Your first anvil, really a stone one
 tfg.quests.primitive.rockanvil.subtitle=&aTake a stone hammer (or any other) in your hands and hit it (RBM) on the block of stone specified in the quest.
@@ -281,8 +284,7 @@ tfg.quests.primitive.tuyere.subtitle=&aA lot of your metal flows through it.
 
 tfg.quests.primitive.tfcblastfurnace.title=Blast furnace!
 tfg.quests.primitive.tfcblastfurnace.subtitle=&aGlory to steel, a new era is coming now.
-tfg.quests.primitive.tfcblastfurnace.desc1=There is such coal, it is called coke, and it can heat up to 1510 degrees,
-which allows you not to control the furnace, but it cannot be used in a normal forge.
+tfg.quests.primitive.tfcblastfurnace.desc1=There is such coal, it is called coke, and it can heat up to 1510 degrees, which allows you not to control the furnace, but it cannot be used in a normal forge. How to build this structure, you can look at the Wiki TFC:TNG.
 
 tfg.quests.primitive.tfccrusible.title=The Iron Witch's Cauldron
 tfg.quests.primitive.tfccrusible.subtitle=&aI want a series with that name.
