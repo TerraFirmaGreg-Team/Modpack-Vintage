@@ -1,0 +1,15 @@
+{
+	icon: "gregtech:meta_dust_small 1 341",
+	x: -3.0d,
+	y: 10.75d,
+	tasks: [{
+		uid: "d4462c40",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ore_chunk 1 341"
+		},
+		{
+			item: "gregtech:meta_dust_tiny 1 341"
+		}]
+	}]
+}

@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: 0.25d,
+	x: 3.5d,
+	y: -0.75d,
 	description: "{tfg.quests.primitive.tochilka3.subtitle}",
 	dependencies: [
 		"5bb9fc36"

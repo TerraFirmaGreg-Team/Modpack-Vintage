@@ -1,5 +1,5 @@
 {
-	x: -26.25d,
+	x: -26.5d,
 	y: 10.0d,
 	description: "{tfg.quests.primitive.wiredrawbench.subtitle}",
 	dependencies: [

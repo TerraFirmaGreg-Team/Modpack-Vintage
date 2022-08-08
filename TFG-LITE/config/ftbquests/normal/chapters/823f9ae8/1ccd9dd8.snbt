@@ -5,25 +5,19 @@
 	shape: "octagon",
 	description: "{tfg.quests.primitive.saw.subtitle}",
 	dependencies: [
-		"57406373"
+		"16563035"
 	],
 	tasks: [{
-		uid: "3f073efb",
+		uid: "826458f4",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:meta_tool",
+			Damage: 5s,
 			tag: {
-				display: {
-					Name: "Any saw"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "saw"
+				GT.ToolStats: {
+					Material: "copper"
 				}
 			}
-		}],
-		ignore_nbt: 1b
+		}]
 	}]
 }

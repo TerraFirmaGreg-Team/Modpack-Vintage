@@ -4,7 +4,8 @@
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperingot.subtitle}",
 	dependencies: [
-		"57406373"
+		"57406373",
+		"1a30f24f"
 	],
 	tasks: [{
 		uid: "ebbeb70e",

@@ -1,6 +1,6 @@
 {
 	icon: "minecraft:string",
-	x: -24.0d,
+	x: -22.0d,
 	y: 13.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.strings.subtitle}",

@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.backpack.title}",
-	x: -26.0d,
+	x: -25.25d,
 	y: 12.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.backpack.subtitle}",

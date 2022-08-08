@@ -4,6 +4,7 @@
 	shape: "hexagon",
 	description: "{tfg.quests.steam.wroughtironplates.subtitle}",
 	dependencies: [
+		"f9339b52",
 		"8fdd423e"
 	],
 	tasks: [{

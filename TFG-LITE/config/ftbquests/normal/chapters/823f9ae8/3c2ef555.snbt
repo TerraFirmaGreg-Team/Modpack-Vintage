@@ -1,28 +1,17 @@
 {
 	title: "{tfg.quests.primitive.file.title}",
-	x: -19.0d,
-	y: -5.0d,
+	x: -17.0d,
+	y: -5.5d,
 	description: "{tfg.quests.primitive.file.subtitle}",
 	dependencies: [
-		"acf7d08d"
+		"acf7d08d",
+		"1a30f24f"
 	],
 	tasks: [{
-		uid: "9530d4b2",
+		uid: "6fc9ffa2",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any gtce.tool.files"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "gtce.tool.files"
-				}
-			}
-		}],
-		ignore_nbt: 1b
+			item: "gregtech:meta_tool_head_file 1 25"
+		}]
 	}]
 }

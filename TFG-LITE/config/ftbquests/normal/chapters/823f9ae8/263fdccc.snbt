@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.leafmat.title}",
-	x: -28.0d,
+	x: -30.0d,
 	y: -2.0d,
 	description: "{tfg.quests.primitive.leafmat.subtitle}",
 	dependencies: [

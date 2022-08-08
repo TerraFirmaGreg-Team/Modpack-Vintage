@@ -1,14 +1,15 @@
 {
-	x: -18.0d,
-	y: -15.25d,
+	x: -21.0d,
+	y: -5.5d,
 	dependencies: [
-		"734b42fd"
+		"57406373",
+		"1a30f24f"
 	],
 	tasks: [{
-		uid: "85271f27",
+		uid: "e58aa9b4",
 		type: "item",
 		items: [{
-			id: "tfc:metal/unfinished_helmet/copper",
+			id: "tfc:metal/propick_head/copper",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -23,8 +24,6 @@
 					}
 				}
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

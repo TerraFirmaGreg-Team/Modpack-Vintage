@@ -1,17 +1,15 @@
 {
-	title: "{tfg.quests.primitive.knifegt.title}",
-	x: -19.0d,
+	x: -17.0d,
 	y: -7.25d,
-	description: "{tfg.quests.primitive.knifegt.subtitle}",
 	dependencies: [
-		"7a1a087e"
+		"3c2ef555"
 	],
 	tasks: [{
-		uid: "b0371eaa",
+		uid: "c3d97cc4",
 		type: "item",
 		items: [{
 			id: "gregtech:meta_tool",
-			Damage: 15s,
+			Damage: 9s,
 			tag: {
 				GT.ToolStats: {
 					Material: "copper"

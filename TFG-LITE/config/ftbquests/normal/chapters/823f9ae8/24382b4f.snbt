@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.burlap.title}",
 	x: -18.0d,
-	y: 11.0d,
+	y: 10.5d,
 	description: "{tfg.quests.primitive.burlap.subtitle}",
 	dependencies: [
 		"69e1f22f",

@@ -19,13 +19,10 @@
 		}
 	},
 	x: -12.0d,
-	y: -3.0d,
+	y: -2.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.tin.subtitle}",
 	hide_dependency_lines: true,
-	dependencies: [
-		"8fc0c70f"
-	],
 	tasks: [{
 		uid: "92f4b7cf",
 		type: "item",
@@ -121,60 +118,6 @@
 		},
 		{
 			id: "gregtech:meta_dust_tiny",
-			Damage: 112s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_dust_small",
-			Damage: 264s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_dust_small",
-			Damage: 263s,
-			ForgeCaps: {
-				"tfc:item_forge": {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
-				}
-			}
-		},
-		{
-			id: "gregtech:meta_dust_small",
 			Damage: 112s,
 			ForgeCaps: {
 				"tfc:item_forge": {

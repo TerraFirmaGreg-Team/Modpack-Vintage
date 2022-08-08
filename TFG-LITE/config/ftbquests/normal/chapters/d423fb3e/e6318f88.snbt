@@ -4,6 +4,7 @@
 	shape: "hexagon",
 	description: "{tfg.quests.steam.steelplates.subtitle}",
 	dependencies: [
+		"c79d4f95",
 		"8fdd423e"
 	],
 	tasks: [{

@@ -1,9 +1,9 @@
 {
-	x: -22.0d,
-	y: -6.5d,
+	x: -21.0d,
+	y: -7.25d,
 	description: "{tfg.quests.primitive.coppergeopick.subtitle}",
 	dependencies: [
-		"57406373"
+		"a56b176d"
 	],
 	tasks: [{
 		uid: "2d8031a3",

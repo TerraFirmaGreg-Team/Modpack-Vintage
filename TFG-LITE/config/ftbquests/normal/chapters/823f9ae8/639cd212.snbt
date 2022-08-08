@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.primitive.copperpickaxe.title}",
-	x: -18.0d,
+	x: -16.0d,
 	y: -2.0d,
 	description: "{tfg.quests.primitive.copperpickaxe.subtitle}",
 	dependencies: [
-		"57406373"
+		"66e3b88a"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

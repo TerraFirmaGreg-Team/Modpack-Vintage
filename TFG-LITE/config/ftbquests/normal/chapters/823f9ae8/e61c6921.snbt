@@ -1,0 +1,18 @@
+{
+	x: -26.0d,
+	y: -2.0d,
+	dependencies: [
+		"01aaa85a",
+		"9f1afc5f",
+		"9eea227d",
+		"3aac6d33"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "44403353",
+		type: "item",
+		items: [{
+			item: "tfc:powder/flux"
+		}]
+	}]
+}
