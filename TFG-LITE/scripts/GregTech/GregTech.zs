@@ -338,7 +338,7 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 
 // Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
-assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
+assembler.findRecipe(16, [<ore:workbench>, <metaitem:plateIron>], null).remove();
 
 // --- Добавление рецептов
 
@@ -429,7 +429,7 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
     [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
 
 // // Стацния создания
-// recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
+// recipes.addShaped("tfg/gregtech/crafting_station", <ore:workbench>, [
 //     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
 //     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
 //     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);

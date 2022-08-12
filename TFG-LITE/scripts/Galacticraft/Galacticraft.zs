@@ -3,26 +3,114 @@ import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 
 
+// --- Массивы
+
+val RemoveItemRecipe as IItemStack[] = [
+	<galacticraftcore:distributor>,
+	<galacticraftcore:collector>,
+	<galacticraftcore:oxygen_compressor>,
+	<galacticraftcore:oxygen_compressor:4>,
+	<galacticraftcore:fuel_loader>,
+	<galacticraftcore:sealer>,
+	<galacticraftcore:oxygen_detector>,
+	<galacticraftcore:air_lock_frame>,
+	<galacticraftcore:air_lock_frame:1>,
+	<galacticraftcore:telemetry>,
+	<galacticraftplanets:mars_machine:8>,
+	<galacticraftplanets:mars_machine:4>,
+	<galacticraftplanets:mars_machine>,
+	<galacticraftplanets:basic_item_venus>,
+	<galacticraftcore:solar>,
+	<galacticraftcore:solar:4>,
+	<galacticraftcore:air_vent>,
+	<galacticraftcore:oxygen_tank_light_full:900>,
+	<galacticraftcore:oxygen_tank_med_full:1800>,
+	<galacticraftcore:oxygen_tank_heavy_full:2700>,
+	<galacticraftcore:oxygen_mask>,
+	<galacticraftcore:oxygen_gear>,
+	<galacticraftplanets:thermal_padding>,
+	<galacticraftplanets:thermal_padding:1>,
+	<galacticraftplanets:thermal_padding:2>,
+	<galacticraftplanets:thermal_padding:3>,
+	<galacticraftplanets:item_basic_asteroids:7>,
+	<galacticraftplanets:basic_item_venus:3>,
+	<galacticraftplanets:walkway>,
+	<galacticraftplanets:walkway:1>,
+	<galacticraftplanets:walkway:2>,
+	<galacticraftplanets:beam_receiver>,
+	<galacticraftplanets:item_basic_asteroids:8>,
+	<galacticraftplanets:basic_item_venus:2>,
+	<galacticraftplanets:atomic_battery>,
+	<galacticraftcore:landing_pad>,
+	<galacticraftcore:landing_pad:1>,
+	<galacticraftplanets:miner_base>,
+	<galacticraftcore:spin_thruster>,
+	<galacticraftcore:oil_canister_partial:1001>,
+	<galacticraftcore:canister>,
+	<galacticraftcore:arclamp>,
+	<galacticraftcore:buggymat:1>,
+	<galacticraftcore:buggymat:2>,
+	<galacticraftplanets:beam_reflector>,
+	<galacticraftcore:dishbase>,
+	<galacticraftcore:basic_item:20>,
+	<galacticraftcore:oxygen_concentrator>,
+	<galacticraftplanets:orion_drive>,
+	<galacticraftcore:buggymat>,
+	<galacticraftcore:view_screen>,
+	<galacticraftcore:basic_block_core:4>,
+	<galacticraftcore:basic_block_core:3>,
+	<galacticraftcore:panel_lighting>,
+	<galacticraftcore:panel_lighting:1>,
+	<galacticraftcore:panel_lighting:2>,
+	<galacticraftcore:panel_lighting:3>,
+	<galacticraftcore:panel_lighting:4>,
+	<galacticraftcore:engine>,
+	<galacticraftplanets:item_basic_asteroids:1>,
+	<galacticraftcore:engine:1>,
+	<galacticraftcore:rocket_fins>,
+	<galacticraftplanets:item_basic_asteroids:2>,
+	<galacticraftplanets:item_basic_asteroids:2>,
+	<galacticraftcore:basic_item:19>,
+	<galacticraftcore:food>,
+	<galacticraftcore:food:1>,
+	<galacticraftcore:food:2>,
+	<galacticraftcore:food:3>,
+	<galacticraftcore:food:9>,
+	<galacticraftplanets:item_basic_mars:4>,
+	<galacticraftcore:basic_block_core:12>,
+	<galacticraftcore:item_basic_moon>,
+	<galacticraftcore:steel_pole>,
+	<galacticraftplanets:mars:8>,
+	<galacticraftcore:enclosed:14>,
+	<galacticraftcore:enclosed:15>,
+	<galacticraftcore:enclosed:13>,
+	<galacticraftcore:enclosed:1>,
+	<galacticraftplanets:grapple>,
+	<galacticraftcore:nose_cone>
+];
+
 // --- Удаление рецептов
+
 // Удаление рецептов
-recipes.removeByMod("galacticraftcore");
-recipes.removeByMod("galacticraftplanets");
+for item in RemoveItemRecipe{
+   recipes.remove(item);
+}
 
 // Другие рецепты которые удалены
-// furnace.remove(<galacticraftcore:item_basic_moon>);
-// furnace.remove(<galacticraftcore:basic_item:4>);
-// furnace.remove(<galacticraftplanets:item_basic_mars:2>);
-// furnace.remove(<galacticraftplanets:carbon_fragments>);
+furnace.remove(<galacticraftcore:item_basic_moon>);
+furnace.remove(<galacticraftcore:basic_item:4>);
+furnace.remove(<galacticraftplanets:item_basic_mars:2>);
+furnace.remove(<galacticraftplanets:carbon_fragments>);
 
 // Именованное удаление
-// recipes.removeByRecipeName("galacticraftcore:slime_ball");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_18");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_17");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_16");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_15");
+recipes.removeByRecipeName("galacticraftcore:slime_ball");
+recipes.removeByRecipeName("galacticraftcore:cobblestone");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
+recipes.removeByRecipeName("galacticraftcore:basic_item_18");
+recipes.removeByRecipeName("galacticraftcore:basic_item_17");
+recipes.removeByRecipeName("galacticraftcore:basic_item_16");
+recipes.removeByRecipeName("galacticraftcore:basic_item_15");
 
 // --- Добавление рецептов
 
