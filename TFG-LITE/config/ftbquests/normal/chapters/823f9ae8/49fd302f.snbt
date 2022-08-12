@@ -1,0 +1,20 @@
+{
+	x: -28.0d,
+	y: 15.25d,
+	dependencies: [
+		"d1baef19"
+	],
+	tasks: [{
+		uid: "0e25a682",
+		type: "item",
+		items: [{
+			item: "tfc:hide/sheepskin/small"
+		},
+		{
+			item: "tfc:hide/sheepskin/medium"
+		},
+		{
+			item: "tfc:hide/sheepskin/large"
+		}]
+	}]
+}

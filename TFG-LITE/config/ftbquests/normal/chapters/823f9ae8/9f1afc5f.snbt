@@ -1,5 +1,5 @@
 {
-	x: -20.0d,
+	x: -21.0d,
 	y: -7.25d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperhammer.subtitle}",

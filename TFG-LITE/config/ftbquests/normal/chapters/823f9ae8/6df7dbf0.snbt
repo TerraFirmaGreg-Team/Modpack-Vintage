@@ -1,9 +1,10 @@
 {
-	x: -20.0d,
-	y: 10.0d,
+	x: -22.5d,
+	y: 8.5d,
 	description: "{tfg.quests.primitive.pineappleleather.subtitle}",
 	dependencies: [
-		"14ed0d1e"
+		"14ed0d1e",
+		"263fdccc"
 	],
 	tasks: [{
 		uid: "0d9b7518",

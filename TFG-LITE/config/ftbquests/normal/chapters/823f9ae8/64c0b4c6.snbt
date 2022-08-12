@@ -1,6 +1,6 @@
 {
-	x: -23.0d,
-	y: 5.0d,
+	x: -16.5d,
+	y: 6.5d,
 	description: "{tfg.quests.primitive.walkstick.subtitle}",
 	dependencies: [
 		"bf82a628"

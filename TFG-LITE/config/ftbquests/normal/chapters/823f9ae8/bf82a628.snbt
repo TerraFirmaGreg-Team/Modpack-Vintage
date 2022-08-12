@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.barrel.title}",
 	icon: "tfc:wood/barrel/oak",
-	x: -20.0d,
-	y: 5.0d,
+	x: -18.0d,
+	y: 6.5d,
 	shape: "square",
 	description: "{tfg.quests.primitive.barrel.subtitle}",
 	dependencies: [
-		"c8377a61"
+		"4a3aaaad"
 	],
 	tasks: [{
 		uid: "fe54c5f5",

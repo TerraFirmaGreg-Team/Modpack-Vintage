@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.firmalife_oven.title}",
 	x: -30.0d,
-	y: -8.5d,
+	y: -10.0d,
 	description: "{tfg.quests.primitive.firmalife_oven.subtitle}",
 	dependencies: [
 		"e4dda908"

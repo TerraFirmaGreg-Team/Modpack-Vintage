@@ -1,15 +1,15 @@
 {
 	title: "{tfg.quests.primitive.pebbles.title}",
 	icon: {
-		id: "tfc:rock/chert",
+		id: "minecraft:stick",
 		ForgeCaps: {
-			"tfc:item_heat": {
+			"tfc:item_size": {
 				ticks: -1L,
 				heat: 0.0f
 			}
 		}
 	},
-	x: -28.0d,
+	x: -30.0d,
 	y: -4.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.pebbles.subtitle}",

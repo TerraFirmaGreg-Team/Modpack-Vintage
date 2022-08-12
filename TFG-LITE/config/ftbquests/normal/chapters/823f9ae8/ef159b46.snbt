@@ -1,6 +1,6 @@
 {
-	x: -16.0d,
-	y: 9.0d,
+	x: -21.0d,
+	y: 13.5d,
 	description: "{tfg.quests.primitive.HorseChoppingBlock.subtitle}",
 	dependencies: [
 		"ffb7544a"

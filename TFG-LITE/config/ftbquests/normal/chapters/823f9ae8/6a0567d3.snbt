@@ -1,14 +1,14 @@
 {
 	x: -25.75d,
-	y: 9.0d,
+	y: 15.25d,
 	dependencies: [
-		"2816fe72"
+		"49fd302f"
 	],
 	tasks: [{
-		uid: "88a9eae5",
+		uid: "5f5e264d",
 		type: "item",
 		items: [{
-			item: "tfctech:wiredraw/leather_belt"
+			item: "tfc:animal/product/wool_yarn"
 		}]
 	}]
 }

@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.supports.title}",
 	icon: "tfc:wood/support/douglas_fir",
-	x: -18.0d,
-	y: 0.0d,
+	x: -22.5d,
+	y: 0.5d,
 	description: "{tfg.quests.primitive.supports.subtitle}",
 	dependencies: [
 		"1ccd9dd8"

@@ -13,6 +13,7 @@
 		"{tfg.quests.steam.primitivewaterpump.desc6}"
 	],
 	dependencies: [
+		"f2a0d9e8",
 		"8fdd423e"
 	],
 	tasks: [{

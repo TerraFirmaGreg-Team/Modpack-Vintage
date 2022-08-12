@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.rockanvil.title}",
-	x: -20.0d,
+	x: -21.0d,
 	y: -8.5d,
 	description: "{tfg.quests.primitive.rockanvil.subtitle}",
 	dependencies: [

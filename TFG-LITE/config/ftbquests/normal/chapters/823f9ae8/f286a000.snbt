@@ -1,6 +1,6 @@
 {
-	x: -19.0d,
-	y: 4.0d,
+	x: -18.75d,
+	y: 10.75d,
 	description: "{tfg.quests.primitive.ropeladder.subtitle}",
 	dependencies: [
 		"3bcc6936"

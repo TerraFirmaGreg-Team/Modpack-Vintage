@@ -3,8 +3,8 @@
 	y: -4.0d,
 	description: "{tfg.quests.primitive.blackbronzeingot.subtitle}",
 	dependencies: [
-		"72877b1a",
 		"57406373",
+		"72877b1a",
 		"517eb449"
 	],
 	tasks: [{

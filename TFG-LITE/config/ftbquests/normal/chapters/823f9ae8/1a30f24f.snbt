@@ -1,12 +1,13 @@
 {
-	x: -22.0d,
-	y: -2.0d,
+	x: -19.5d,
+	y: -4.0d,
 	description: "{tfg.quests.primitive.hotornot.subtitle}",
 	text: [
 		""
 	],
 	dependencies: [
-		"9160e91d"
+		"9160e91d",
+		"57406373"
 	],
 	tasks: [{
 		uid: "3a219f78",
@@ -19,8 +20,6 @@
 					Material: "wood"
 				}
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}]
 	}]
 }

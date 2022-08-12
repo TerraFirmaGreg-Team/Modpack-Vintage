@@ -1,0 +1,25 @@
+{
+	x: -21.0d,
+	y: 5.0d,
+	dependencies: [
+		"fbdff2ba"
+	],
+	tasks: [{
+		uid: "6faddcea",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingTableWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingTableWood"
+				}
+			}
+		}]
+	}]
+}

@@ -1,11 +1,10 @@
 {
 	title: "{tfg.quests.primitive.file.title}",
-	x: -17.0d,
+	x: -16.0d,
 	y: -5.5d,
 	description: "{tfg.quests.primitive.file.subtitle}",
 	dependencies: [
-		"acf7d08d",
-		"1a30f24f"
+		"acf7d08d"
 	],
 	tasks: [{
 		uid: "6fc9ffa2",

@@ -1,10 +1,9 @@
 {
-	x: -18.0d,
+	x: -17.0d,
 	y: -4.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperingot.subtitle}",
 	dependencies: [
-		"57406373",
 		"1a30f24f"
 	],
 	tasks: [{

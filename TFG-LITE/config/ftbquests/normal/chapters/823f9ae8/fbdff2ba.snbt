@@ -1,0 +1,25 @@
+{
+	x: -21.0d,
+	y: 3.5d,
+	dependencies: [
+		"c8377a61"
+	],
+	tasks: [{
+		uid: "8084463b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any plankWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "plankWood"
+				}
+			}
+		}]
+	}]
+}
