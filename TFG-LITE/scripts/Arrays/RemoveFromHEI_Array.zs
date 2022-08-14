@@ -563,7 +563,19 @@ val TFCThings as IItemStack[] = [
 	<tfcthings:crown/platinum_jade>,
 	<tfcthings:crown/platinum_agate>,
 	<tfcthings:crown/platinum_beryl>,
-	<tfcthings:crown/platinum_tourmaline>
+	<tfcthings:crown/platinum_tourmaline>,
+	// Затачивалки (Временно)
+	<tfcthings:honing_steel>,
+	<tfcthings:honing_steel_diamond>,
+	<tfcthings:honing_steel_head>,
+	<tfcthings:honing_steel_head_diamond>,
+	<tfcthings:grindstone_quartz>,
+	<tfcthings:grindstone_steel>,
+	<tfcthings:grindstone_diamond>,
+	<tfcthings:diamond_grit>,
+	<tfcthings:grindstone_base>,
+	<tfcthings:whetstone>
+
 ];
 for item in TFCThings {
     JEI.removeAndHide(item);

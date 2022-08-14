@@ -87,6 +87,12 @@ Welding.removeRecipe(<tfcthings:grindstone_steel>);
 Anvil.removeRecipe(<tfcthings:sling_ammo> * 8);
 Anvil.removeRecipe(<tfcthings:sling_ammo> * 16);
 
+// Отключение затачивалок всех типов (Временно)
+Welding.removeRecipe(<tfcthings:honing_steel_diamond>);
+Welding.removeRecipe(<tfcthings:honing_steel_head_diamond>);
+Anvil.removeRecipe(<tfcthings:honing_steel_head>);
+Quern.removeRecipe(<tfcthings:whetstone>);
+
 // --- Добавление рецептов
 
 // Присвоение единиц металла
@@ -157,9 +163,9 @@ recipes.addShapeless("tfg/tfcthings/gold_crown/ruby", <tfcthings:crown/gold_ruby
 recipes.addShapeless("tfg/tfcthings/gold_crown/opal", <tfcthings:crown/gold_opal>, [<ore:gtce.tool.hard.hammers>, <tfcthings:crown/gold_empty>, <ore:gemExquisiteOpal>]);
 
 // Минус точильный камень
-recipes.addShaped("tfg/tfcthings/grindstone_base", <tfcthings:grindstone_base>, [
-    [<ore:stickIronAny>, <ore:stickIronAny>, <ore:stickIronAny>],
-    [<ore:lumber>, null, <ore:lumber>]]);
+// recipes.addShaped("tfg/tfcthings/grindstone_base", <tfcthings:grindstone_base>, [
+//    [<ore:stickIronAny>, <ore:stickIronAny>, <ore:stickIronAny>],
+//    [<ore:lumber>, null, <ore:lumber>]]);
 
 // Fix Bracing recipe
 Anvil.addRecipe("tfg/tfcthings/bracing/wrought_iron", <ore:ingotWroughtIron>, <tfcthings:metal_bracing>, 3, "general", "BEND_LAST", "HIT_NOT_LAST", "DRAW_NOT_LAST");
@@ -170,7 +176,7 @@ recipes.addShapeless("tfg/tfcthings/sling_ammo/spread", <tfcthings:sling_ammo_sp
 recipes.addShapeless("tfg/tfcthings/sling_ammo/light", <tfcthings:sling_ammo_light>, [<ore:gtce.tool.hard.hammers>, <tfcthings:sling_ammo>, <ore:gtce.tool.files>]);
 
 // Алмазная пыль --> крошка TFC
-Quern.addRecipe("tfg/tfcthings/diamond_grit", <ore:dustDiamond>, <tfcthings:diamond_grit>);
+// Quern.addRecipe("tfg/tfcthings/diamond_grit", <ore:dustDiamond>, <tfcthings:diamond_grit>);
 
 // Fix Bear Trap
 Anvil.removeRecipe(<tfcthings:bear_trap_half>);
@@ -181,7 +187,7 @@ Anvil.addRecipe("tfg/tfcthings/sling_ammo/wrought_iron",  <ore:ingotWroughtIron>
 Anvil.addRecipe("tfg/tfcthings/sling_ammo/steel",  <ore:ingotSteel>, <tfcthings:sling_ammo> * 16, 4, "general", "HIT_LAST", "HIT_NOT_LAST", "BEND_NOT_LAST");
 
 // Black Steel Grindstone
-Welding.addRecipe("tfg/tfcthings/grindstone/steel",  <tfcthings:grindstone_quartz>, <ore:plateDoubleBlackSteel>, <tfcthings:grindstone_steel>, 5);
+// Welding.addRecipe("tfg/tfcthings/grindstone/steel",  <tfcthings:grindstone_quartz>, <ore:plateDoubleBlackSteel>, <tfcthings:grindstone_steel>, 5);
 
 // Молотки
 Anvil.addRecipe("tfg/tfcthings/bismuth_bronze_hammer", <ore:ingotBismuthBronze>, <tfcthings:prospectors_hammer_head/bismuth_bronze>, 2, "general", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_THIRD_LAST");
