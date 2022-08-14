@@ -1,6 +1,7 @@
 {
 	x: -29.0d,
 	y: -3.0d,
+	description: "{tfg.quests.primitive.firestarter.subtitle}",
 	dependencies: [
 		"8fc0c70f"
 	],

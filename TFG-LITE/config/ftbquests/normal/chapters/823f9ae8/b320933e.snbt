@@ -5,16 +5,5 @@
 	y: -4.0d,
 	shape: "rsquare",
 	description: "{tfg.quests.primitive.start.subtitle}",
-	text: [
-		"{tfg.quests.primitive.start.desc1}",
-		"{tfg.quests.primitive.start.desc2}",
-		"{tfg.quests.primitive.start.desc3}"
-	],
-	size: 2.0d,
-	tasks: [{
-		uid: "3e5270be",
-		type: "checkmark",
-		title: "{tfg.quests.primitive.start.tasks.clickMe}",
-		icon: "minecraft:grass"
-	}]
+	size: 2.0d
 }

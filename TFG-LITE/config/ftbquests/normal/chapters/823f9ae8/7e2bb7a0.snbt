@@ -1,11 +1,12 @@
 {
-	title: "{tfg.quests.primitive.preparedHide.title}",
+	title: "{tfg.quests.primitive.prepared_hide.title}",
 	x: -24.0d,
 	y: -2.5d,
 	shape: "diamond",
-	description: "{tfg.quests.primitive.preparedHide.subtitle}",
+	description: "{tfg.quests.primitive.prepared_hide.subtitle}",
 	dependencies: [
 		"e61c6921",
+		"bf82a628",
 		"66bbd2ac"
 	],
 	tasks: [{

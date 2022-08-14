@@ -1,0 +1,14 @@
+{
+	x: -22.5d,
+	y: 2.0d,
+	dependencies: [
+		"c8377a61"
+	],
+	tasks: [{
+		uid: "a49d2d13",
+		type: "item",
+		items: [{
+			item: "tfc:wooden_bucket"
+		}]
+	}]
+}

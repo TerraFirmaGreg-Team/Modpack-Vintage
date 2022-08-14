@@ -1,8 +1,8 @@
 {
-	title: "{tfg.quests.primitive.primitiveTools.title}",
+	title: "{tfg.quests.primitive.primitive_tools.title}",
 	x: -28.0d,
 	y: -6.5d,
-	description: "{tfg.quests.primitive.primitiveTools.subtitle}",
+	description: "{tfg.quests.primitive.primitive_tools.subtitle}",
 	dependencies: [
 		"8fc0c70f"
 	],

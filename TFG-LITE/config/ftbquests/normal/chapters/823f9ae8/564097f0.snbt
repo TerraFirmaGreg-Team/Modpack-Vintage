@@ -1,8 +1,8 @@
 {
-	title: "{tfg.quests.primitive.farmer3000.title}",
+	title: "{tfg.quests.primitive.stone_hoe.title}",
 	x: -24.75d,
 	y: -7.5d,
-	description: "{tfg.quests.primitive.farmer3000.subtitle}",
+	description: "{tfg.quests.primitive.stone_hoe.subtitle}",
 	dependencies: [
 		"d1baef19"
 	],

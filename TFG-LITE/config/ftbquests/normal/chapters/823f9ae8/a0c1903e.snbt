@@ -1,8 +1,8 @@
 {
-	title: "{tfg.quests.primitive.muchNeededStraw.title}",
+	title: "{tfg.quests.primitive.straw.title}",
 	x: -30.0d,
 	y: -5.25d,
-	description: "{tfg.quests.primitive.muchNeededStraw.subtitle}",
+	description: "{tfg.quests.primitive.straw.subtitle}",
 	text: [
 		"{tfg.quests.primitive.muchNeededStraw.desc}"
 	],

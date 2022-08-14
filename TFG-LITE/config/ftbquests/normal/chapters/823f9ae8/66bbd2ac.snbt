@@ -1,9 +1,9 @@
 {
-	title: "{tfg.quests.primitive.rawHide.title}",
+	title: "{tfg.quests.primitive.raw_hide.title}",
 	icon: "tfc:hide/prepared/large",
 	x: -24.0d,
 	y: -6.5d,
-	description: "{tfg.quests.primitive.rawHide.subtitle}",
+	description: "{tfg.quests.primitive.raw_hide.subtitle}",
 	text: [
 		""
 	],
