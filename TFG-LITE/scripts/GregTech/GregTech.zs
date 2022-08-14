@@ -11,7 +11,6 @@ val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
 val ItemsToRemove as IItemStack[] = [
     <minecraft:paper> * 2,
-    <gregtech:machine_casing:1>,
     <gregtech:metal_casing:1>,
     <gregtech:steam_casing:4>,
     <metaitem:coke_oven>,
@@ -326,7 +325,7 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 
 // Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
-assembler.findRecipe(16, [<ore:workbench>, <metaitem:plateIron>], null).remove();
+assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
 
 // --- Добавление рецептов
 
@@ -371,7 +370,7 @@ recipes.addShaped("tfg/gregtech/steam_forge_hammer", <metaitem:steam_hammer_stee
 // Скомпрессированная глина
 recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke_clay> * 3, [
     [<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
-    [<ore:sand>, <gregtech:meta_item_1:348>, <ore:sand>],
+    [<ore:sand>, <metaitem:wooden_form.brick>, <ore:sand>],
     [<ore:sand>, <ore:sand>, <ore:sand>]]);
 
 // Деревянная форма
@@ -417,16 +416,16 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
     [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
 
 // // Стацния создания
-// recipes.addShaped("tfg/gregtech/crafting_station", <ore:workbench>, [
+// recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
 //     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
 //     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
 //     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
-// LV Корпус машины
-recipes.addShaped("tfg/gregtech/lv_machine_casing", <gregtech:machine_casing:1>, [
-    [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
-    [<ore:plateBlueSteel>, <ore:gtce.tool.wrenches>, <ore:plateBlueSteel>],
-    [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
+// Обработанные доски
+recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}), <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 
 // Primitive water pump deck
 recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casing:4> * 2, [
@@ -436,13 +435,13 @@ recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casi
 // Primitive water pump hatch
 recipes.addShaped("tfg/gregtech/primitive_water_pump_hatch", <metaitem:pump_hatch>, [
     [<ore:screwIronAny>, <ore:ringIronAny>, <ore:gtce.tool.screwdrivers>],
-    [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
+    [<ore:plankTreatedWood>, <ore:pipeLargeFluidWood>, <ore:plankTreatedWood>],
     [<ore:slabCobblestone>, <ore:ringIronAny>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped("tfg/gregtech/primitive_water_pump", <metaitem:primitive_water_pump>, [
     [<ore:ringIronAny>, <ore:pipeNormalFluidWood>, <ore:screwIronAny>],
-    [<ore:rotorIronAny>, <ore:plankWood>, <ore:gtce.tool.screwdrivers>],
+    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:gtce.tool.screwdrivers>],
     [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
