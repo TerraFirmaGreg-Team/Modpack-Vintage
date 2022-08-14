@@ -1,11 +1,12 @@
 {
-	x: -12.0d,
-	y: 4.0d,
+	x: -2.0d,
+	y: 10.25d,
 	dependencies: [
-		"9ea61464"
+		"6c622d78"
 	],
+	optional: true,
 	tasks: [{
-		uid: "0fab5ab6",
+		uid: "24850bbe",
 		type: "item",
 		items: [{
 			item: "theoneprobe:probe"

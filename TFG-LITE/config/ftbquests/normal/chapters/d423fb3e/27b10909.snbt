@@ -1,6 +1,6 @@
 {
-	x: -18.0d,
-	y: -11.0d,
+	x: -19.5d,
+	y: -10.25d,
 	description: "{tfg.quests.steam.miner.subtitle}",
 	dependencies: [
 		"5347bf68"

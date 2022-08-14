@@ -1,6 +1,6 @@
 {
-	x: -16.0d,
-	y: -13.0d,
+	x: -16.5d,
+	y: -10.25d,
 	description: "{tfg.quests.steam.bronzeoven.subtitle}",
 	text: [
 		"{tfg.quests.steam.bronzeoven.desc1}",

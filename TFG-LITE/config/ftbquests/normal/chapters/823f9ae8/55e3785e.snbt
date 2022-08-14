@@ -1,6 +1,6 @@
 {
 	x: 5.5d,
-	y: 8.0d,
+	y: 7.0d,
 	dependencies: [
 		"c73303fb"
 	],

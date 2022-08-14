@@ -18,8 +18,8 @@
 			}
 		}
 	},
-	x: -4.0d,
-	y: -3.0d,
+	x: -6.0d,
+	y: -2.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.ironpile.subtitle}",
 	hide_dependency_lines: true,

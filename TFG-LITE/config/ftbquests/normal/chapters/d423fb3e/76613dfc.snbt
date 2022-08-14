@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.steam.crowbar.title}",
-	x: -12.5d,
-	y: 0.0d,
+	x: -13.5d,
+	y: -1.0d,
 	description: "{tfg.quests.steam.crowbar.subtitle}",
 	text: [
 		""

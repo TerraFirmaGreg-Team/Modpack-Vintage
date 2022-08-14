@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.steam.knife.title}",
-	x: -11.5d,
-	y: 3.0d,
+	x: -10.5d,
+	y: 2.0d,
 	description: "{tfg.quests.steam.knife.subtitle}",
 	text: [
 		""

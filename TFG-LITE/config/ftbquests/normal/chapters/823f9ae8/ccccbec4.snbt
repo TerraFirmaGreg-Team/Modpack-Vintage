@@ -1,7 +1,6 @@
 {
-	x: -2.0d,
-	y: 7.0d,
-	shape: "square",
+	x: -1.5d,
+	y: 5.5d,
 	description: "{tfg.quests.primitive.fireproofclay.subtitle}",
 	dependencies: [
 		"514c2665",

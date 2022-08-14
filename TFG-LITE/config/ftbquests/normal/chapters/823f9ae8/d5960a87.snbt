@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.fruitsAndBerries.title}",
-	x: -13.5d,
+	x: -13.25d,
 	y: 16.75d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.fruitsAndBerries.subtitle}",

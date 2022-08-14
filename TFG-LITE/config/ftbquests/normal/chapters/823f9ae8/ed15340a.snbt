@@ -1,8 +1,7 @@
 {
 	title: "{tfg.quests.primitive.graphitepile.title}",
-	x: -3.0d,
-	y: 8.0d,
-	shape: "diamond",
+	x: -1.75d,
+	y: 7.0d,
 	description: "{tfg.quests.primitive.graphitepile.subtitle}",
 	dependencies: [
 		"2cc65911"

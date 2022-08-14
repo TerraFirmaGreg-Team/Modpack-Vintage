@@ -1,6 +1,6 @@
 {
-	x: -21.0d,
-	y: -13.0d,
+	x: -22.5d,
+	y: -11.75d,
 	description: "{tfg.quests.steam.grinder.subtitle}",
 	text: [
 		"{tfg.quests.steam.grinder.desc1}",

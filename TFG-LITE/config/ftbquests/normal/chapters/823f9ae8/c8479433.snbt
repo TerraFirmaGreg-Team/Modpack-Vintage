@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -18.75d,
+	dependencies: [
+		"2fcbeaf6"
+	],
+	tasks: [{
+		uid: "0350192a",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}]
+	}]
+}

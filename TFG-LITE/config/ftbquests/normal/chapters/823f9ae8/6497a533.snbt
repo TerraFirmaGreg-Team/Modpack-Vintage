@@ -1,9 +1,9 @@
 {
-	x: -27.25d,
-	y: 9.0d,
+	x: -3.5d,
+	y: -12.0d,
 	description: "{tfg.quests.primitive.wiredrawbench.subtitle}",
 	dependencies: [
-		"bc100163"
+		"d2850e1d"
 	],
 	tasks: [{
 		uid: "f3460454",

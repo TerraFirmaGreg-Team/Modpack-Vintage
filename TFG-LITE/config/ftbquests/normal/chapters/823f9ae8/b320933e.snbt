@@ -3,6 +3,7 @@
 	icon: "gregtech:meta_gear 1 1617",
 	x: -32.0d,
 	y: -4.0d,
+	shape: "rsquare",
 	description: "{tfg.quests.primitive.start.subtitle}",
 	text: [
 		"{tfg.quests.primitive.start.desc1}",

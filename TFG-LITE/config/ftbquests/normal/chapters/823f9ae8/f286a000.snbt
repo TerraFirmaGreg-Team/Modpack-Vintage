@@ -1,5 +1,5 @@
 {
-	x: -18.75d,
+	x: -17.25d,
 	y: 10.75d,
 	description: "{tfg.quests.primitive.ropeladder.subtitle}",
 	dependencies: [

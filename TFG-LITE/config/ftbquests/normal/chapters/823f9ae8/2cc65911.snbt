@@ -1,7 +1,8 @@
 {
 	icon: "gregtech:meta_dust_small 1 341",
-	x: -3.0d,
-	y: 10.75d,
+	x: -1.75d,
+	y: 8.5d,
+	shape: "diamond",
 	tasks: [{
 		uid: "d4462c40",
 		type: "item",

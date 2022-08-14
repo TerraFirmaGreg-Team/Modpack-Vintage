@@ -1,9 +1,10 @@
 {
-	x: -11.0d,
-	y: 0.0d,
+	x: -1.5d,
+	y: -14.25d,
 	description: "{tfg.quests.primitive.climatestation1.subtitle}",
 	dependencies: [
-		"d5001736"
+		"d5001736",
+		"5d07cc95"
 	],
 	tasks: [{
 		uid: "3b8caa12",

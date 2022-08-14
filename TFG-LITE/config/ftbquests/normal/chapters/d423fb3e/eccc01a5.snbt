@@ -1,10 +1,10 @@
 {
-	x: -10.0d,
-	y: -9.0d,
-	shape: "octagon",
+	x: -12.0d,
+	y: -7.25d,
 	dependencies: [
 		"e6318f88"
 	],
+	optional: true,
 	tasks: [{
 		uid: "8cd860ee",
 		type: "item",

@@ -1,6 +1,6 @@
 {
-	x: -8.0d,
-	y: -12.0d,
+	x: -9.5d,
+	y: -8.25d,
 	dependencies: [
 		"1e9658b7"
 	],
@@ -11,13 +11,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any plateDoubleBronze"
+					Name: "Any sheetDoubleAnyBronze"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "plateDoubleBronze"
+					data: "sheetDoubleAnyBronze"
 				}
 			}
 		}],

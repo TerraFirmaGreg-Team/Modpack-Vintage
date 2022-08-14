@@ -1,0 +1,213 @@
+{
+	x: 3.0d,
+	y: 19.0d,
+	dependencies: [
+		"89d68b62"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f08cca72",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampBlockDeactivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampBlockDeactivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "5060af70",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampBlockActivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampBlockActivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "de78d3bf",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampButton"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampButton"
+				}
+			}
+		}]
+	},
+	{
+		uid: "2615eccd",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampButtonFeedback"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampButtonFeedback"
+				}
+			}
+		}]
+	},
+	{
+		uid: "2f7a074b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampLanternDeactivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampLanternDeactivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "162b66dc",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampLanternActivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampLanternActivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "b1decfb4",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampFixtureDeactivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampFixtureDeactivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "077a775a",
+		type: "item",
+		items: [{
+			item: "projectred-illumination:inverted_fixture_light"
+		}]
+	},
+	{
+		uid: "7e0ac7de",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampFalloutDeactivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampFalloutDeactivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "a7783235",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampFalloutActivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampFalloutActivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "9634919a",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampCageDeactivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampCageDeactivated"
+				}
+			}
+		}]
+	},
+	{
+		uid: "8dc88b0c",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lampCageActivated"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "lampCageActivated"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	x: -13.5d,
+	y: 6.5d,
+	dependencies: [
+		"bf82a628"
+	],
+	tasks: [{
+		uid: "45f44192",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/yucca_fiber"
+		},
+		{
+			item: "tfcflorae:crop/product/sisal_fiber"
+		},
+		{
+			item: "tfcflorae:crop/product/papyrus_fiber"
+		},
+		{
+			item: "tfcflorae:crop/product/flax_fiber"
+		},
+		{
+			item: "tfcflorae:crop/product/hemp_fiber"
+		}]
+	}]
+}

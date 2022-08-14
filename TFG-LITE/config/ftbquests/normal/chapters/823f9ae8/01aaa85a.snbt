@@ -11,7 +11,6 @@
 	},
 	x: -27.0d,
 	y: -2.5d,
-	shape: "hexagon",
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,
 	tasks: [{

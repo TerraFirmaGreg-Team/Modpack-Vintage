@@ -1,6 +1,6 @@
 {
-	x: -14.0d,
-	y: -11.0d,
+	x: -13.5d,
+	y: -8.75d,
 	shape: "circle",
 	text: [
 		"{tfg.quests.steam.bronzealloysmelter.desc1}",

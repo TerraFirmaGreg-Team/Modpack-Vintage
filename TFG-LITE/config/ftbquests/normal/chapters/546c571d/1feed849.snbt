@@ -1,11 +1,12 @@
 {
-	x: -12.0d,
-	y: 5.0d,
+	x: -4.0d,
+	y: 10.25d,
 	dependencies: [
-		"ae17edb8"
+		"c93a08ee"
 	],
+	optional: true,
 	tasks: [{
-		uid: "7fec79c4",
+		uid: "a1b2fb9a",
 		type: "item",
 		items: [{
 			item: "theoneprobe:probe_goggles"

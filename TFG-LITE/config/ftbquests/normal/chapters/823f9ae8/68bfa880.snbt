@@ -4,8 +4,8 @@
 	description: "{tfg.quests.primitive.bismuthbronzeingot.subtitle}",
 	dependencies: [
 		"fff99863",
-		"57406373",
-		"c8b0cb86"
+		"c8b0cb86",
+		"57406373"
 	],
 	tasks: [{
 		uid: "ad1c58a3",

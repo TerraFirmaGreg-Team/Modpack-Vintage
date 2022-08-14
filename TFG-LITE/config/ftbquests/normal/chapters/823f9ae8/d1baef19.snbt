@@ -2,7 +2,6 @@
 	title: "{tfg.quests.primitive.primitiveTools.title}",
 	x: -28.0d,
 	y: -6.5d,
-	shape: "hexagon",
 	description: "{tfg.quests.primitive.primitiveTools.subtitle}",
 	dependencies: [
 		"8fc0c70f"

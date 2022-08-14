@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:meta_dust_small 1 103",
-	x: -7.0d,
-	y: 7.0d,
+	x: -6.0d,
+	y: 5.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.sulfurdust.subtitle}",
 	hide_dependency_lines: true,

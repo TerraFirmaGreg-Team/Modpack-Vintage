@@ -1,29 +1,13 @@
 {
-	x: -10.0d,
-	y: -7.0d,
-	shape: "hexagon",
+	x: -12.0d,
+	y: -5.75d,
 	description: "{tfg.quests.steam.steelplates.subtitle}",
 	dependencies: [
-		"c79d4f95",
+		"08d78f26",
 		"8fdd423e"
 	],
 	tasks: [{
-		uid: "810c7486",
-		type: "item",
-		title: "{tfg.quests.steam.steelplates.title}",
-		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any plateSteel"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "plateSteel"
-				}
-			}
-		}]
+		uid: "8bb91144",
+		type: "checkmark"
 	}]
 }

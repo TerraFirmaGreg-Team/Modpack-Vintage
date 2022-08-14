@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.steam.itempipe.title}",
 	icon: "gregtech:item_pipe_normal 1 112",
-	x: -18.0d,
-	y: -8.0d,
+	x: -8.25d,
+	y: -3.5d,
 	text: [
 		"{tfg.quests.steam.itempipe.desc1}",
 		"{tfg.quests.steam.itempipe.desc2}",
@@ -17,7 +17,7 @@
 		"{tfg.quests.steam.itempipe.desc8}"
 	],
 	dependencies: [
-		"5347bf68"
+		"8fdd423e"
 	],
 	or_tasks: true,
 	tasks: [{

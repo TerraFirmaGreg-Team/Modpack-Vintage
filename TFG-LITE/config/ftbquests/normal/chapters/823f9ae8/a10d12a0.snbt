@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: -12.0d,
+	x: -3.75d,
+	y: -8.5d,
 	description: "{tfg.quests.primitive.tuyere.subtitle}",
 	dependencies: [
 		"f9339b52"

@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:machine 1 8516",
-	x: -16.0d,
-	y: -5.0d,
+	x: -13.5d,
+	y: -3.0d,
 	dependencies: [
 		"686b6ef7"
 	],
