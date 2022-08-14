@@ -1,6 +1,6 @@
 {
-	x: -15.0d,
-	y: -5.75d,
+	x: -18.0d,
+	y: -5.5d,
 	description: "{tfg.quests.steam.bronzeplates.subtitle}",
 	dependencies: [
 		"1e9658b7",

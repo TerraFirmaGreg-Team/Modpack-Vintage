@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.bed.title}",
 	icon: "minecraft:bed",
-	x: -19.5d,
-	y: 20.0d,
+	x: -17.0d,
+	y: 5.0d,
 	description: "{tfg.quests.primitive.bed.subtitle}",
 	dependencies: [
 		"dfec1fd8"

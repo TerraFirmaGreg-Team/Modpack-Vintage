@@ -1,0 +1,20 @@
+{
+	x: -25.75d,
+	y: -3.0d,
+	dependencies: [
+		"ddb8daa8"
+	],
+	tasks: [{
+		uid: "c38a32fb",
+		type: "item",
+		items: [{
+			item: "tfc:hide/raw/small"
+		},
+		{
+			item: "tfc:hide/raw/medium"
+		},
+		{
+			item: "tfc:hide/raw/large"
+		}]
+	}]
+}

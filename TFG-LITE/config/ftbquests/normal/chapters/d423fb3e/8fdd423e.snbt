@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:meta_gear 1 260",
-	x: -12.0d,
-	y: -3.0d,
+	x: -15.0d,
+	y: -2.5d,
 	shape: "rsquare",
 	description: "{tfg.quests.steam.maincheck.subtitle}",
 	dependencies: [

@@ -1,6 +1,6 @@
 {
-	x: 12.0d,
-	y: -5.0d,
+	x: 11.25d,
+	y: -4.25d,
 	description: "{tfg.quests.primitive.redsteelingot.subtitle}",
 	dependencies: [
 		"f7244dc3"

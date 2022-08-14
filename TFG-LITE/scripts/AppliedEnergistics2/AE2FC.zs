@@ -82,4 +82,4 @@ assembler.recipeBuilder()
   .duration(10).EUt(480).buildAndRegister();
 
 // Очистка шаблона
-// recipes.addShapeless(<appliedenergistics2:material:52>, [<appliedenergistics2:encoded_pattern>]);
+  recipes.addShapeless(<appliedenergistics2:material:52>, [<ae2fc:dense_encoded_pattern>]);

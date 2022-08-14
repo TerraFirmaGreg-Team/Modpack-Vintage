@@ -1,5 +1,5 @@
 {
-	x: -5.5d,
+	x: -14.0d,
 	y: -7.25d,
 	description: "{tfg.quests.steam.cokegem.subtitle}",
 	dependencies: [

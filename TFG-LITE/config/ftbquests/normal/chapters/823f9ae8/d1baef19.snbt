@@ -1,61 +1,27 @@
 {
 	title: "{tfg.quests.primitive.primitive_tools.title}",
-	x: -28.0d,
-	y: -6.5d,
+	x: -29.0d,
+	y: -6.0d,
 	description: "{tfg.quests.primitive.primitive_tools.subtitle}",
 	dependencies: [
 		"8fc0c70f"
 	],
 	tasks: [{
-		uid: "3d0ccea3",
-		type: "item",
-		items: [{
-			item: "tfc:stone/knife/igneous_intrusive"
-		},
-		{
-			item: "tfc:stone/knife/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/knife/sedimentary"
-		},
-		{
-			item: "tfc:stone/knife/metamorphic"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
 		uid: "0c4901ad",
 		type: "item",
 		items: [{
-			item: "tfc:stone/shovel/igneous_intrusive"
-		},
-		{
-			item: "tfc:stone/shovel/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/shovel/sedimentary"
-		},
-		{
-			item: "tfc:stone/shovel/metamorphic"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
-		uid: "93c5f1c0",
-		type: "item",
-		items: [{
-			item: "tfc:stone/axe/igneous_intrusive"
-		},
-		{
-			item: "tfc:stone/axe/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/axe/sedimentary"
-		},
-		{
-			item: "tfc:stone/axe/metamorphic"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any shovelStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "shovelStone"
+				}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

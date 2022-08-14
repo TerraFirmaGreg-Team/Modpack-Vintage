@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.jug.title}",
-	x: -28.0d,
+	x: -29.0d,
 	y: -11.75d,
 	description: "{tfg.quests.primitive.jug.subtitle}",
 	dependencies: [

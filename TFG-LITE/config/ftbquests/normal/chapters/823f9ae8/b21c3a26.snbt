@@ -1,6 +1,6 @@
 {
-	x: -21.0d,
-	y: 14.5d,
+	x: -20.75d,
+	y: 9.0d,
 	description: "{tfg.quests.primitive.Grindstone.subtitle}",
 	dependencies: [
 		"ffb7544a"

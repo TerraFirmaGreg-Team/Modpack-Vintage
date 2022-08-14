@@ -46,6 +46,7 @@ val aeadditions as IItemStack[] = [
 	<aeadditions:certustank>,
 	<aeadditions:vibrantchamberfluid>,
 	<aeadditions:terminal.universal.wireless>,
+	<aeadditions:terminal.fluid.wireless>,
 	<aeadditions:part.base:2>
 ];
 for item in aeadditions {

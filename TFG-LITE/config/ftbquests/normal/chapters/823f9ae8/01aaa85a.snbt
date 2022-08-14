@@ -9,8 +9,8 @@
 			}
 		}
 	},
-	x: -27.0d,
-	y: -2.5d,
+	x: -22.5d,
+	y: -6.0d,
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,
 	tasks: [{

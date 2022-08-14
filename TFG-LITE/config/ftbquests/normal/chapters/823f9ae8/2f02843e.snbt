@@ -1,6 +1,6 @@
 {
-	x: -22.5d,
-	y: 5.0d,
+	x: -14.0d,
+	y: 4.0d,
 	description: "{tfg.quests.primitive.alloycalc.subtitle}",
 	dependencies: [
 		"4a3aaaad"

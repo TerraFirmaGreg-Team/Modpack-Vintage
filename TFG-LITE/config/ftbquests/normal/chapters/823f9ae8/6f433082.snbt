@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.fuelNumber1.title}",
-	x: -32.0d,
-	y: -6.5d,
+	x: -31.0d,
+	y: -7.0d,
 	description: "{tfg.quests.primitive.fuelNumber1.subtitle}",
 	dependencies: [
 		"a03af80a"

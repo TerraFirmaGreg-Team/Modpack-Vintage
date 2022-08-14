@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.file.title}",
-	x: -16.0d,
+	x: -17.0d,
 	y: -5.5d,
 	description: "{tfg.quests.primitive.file.subtitle}",
 	dependencies: [

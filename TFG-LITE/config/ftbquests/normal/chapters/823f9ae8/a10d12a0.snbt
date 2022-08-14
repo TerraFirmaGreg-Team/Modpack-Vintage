@@ -1,5 +1,5 @@
 {
-	x: -3.75d,
+	x: -1.5d,
 	y: -8.5d,
 	description: "{tfg.quests.primitive.tuyere.subtitle}",
 	dependencies: [

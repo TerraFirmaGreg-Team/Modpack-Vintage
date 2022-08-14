@@ -788,6 +788,7 @@ for gcParachute in gcParachute {
 // --- Vanilla --- /////////////////////////////////////
 ////////////////////////////////////////////////////////
 
+// --- Удаление
 <ore:grass>.remove(<minecraft:grass>);
 <ore:sand>.remove(<minecraft:sand>);
 <ore:dirt>.remove(<minecraft:dirt>);
@@ -808,7 +809,7 @@ for gcParachute in gcParachute {
 <ore:treeSapling>.remove(<minecraft:sapling:*>);
 <ore:slabWood>.remove(<minecraft:wooden_slab:*>);
 <ore:plankWood>.remove(<minecraft:planks:*>);
-<ore:logWood>.remove(<minecraft:log:*>);
+<ore:logWood>.remove(<minecraft:log:*>, <minecraft:log2:*>);
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
 <ore:chestWood>.remove(<minecraft:trapped_chest>);
 <ore:chestWood>.remove(<minecraft:chest>);

@@ -1,6 +1,6 @@
 {
-	x: -5.5d,
-	y: -10.25d,
+	x: -13.0d,
+	y: -11.25d,
 	description: "{tfg.quests.steam.primitivewatertank.subtitle}",
 	text: [
 		"{tfg.quests.steam.primitivewatertank.desc1}",

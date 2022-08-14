@@ -1,5 +1,5 @@
 {
-	x: -12.5d,
+	x: -15.5d,
 	y: -1.0d,
 	description: "{tfg.quests.steam.mortar.subtitle}",
 	dependencies: [

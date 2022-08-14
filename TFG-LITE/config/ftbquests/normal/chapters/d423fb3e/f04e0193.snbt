@@ -1,6 +1,7 @@
 {
-	x: -12.75d,
-	y: -14.75d,
+	x: -15.0d,
+	y: -15.0d,
+	shape: "gear",
 	description: "{tfg.quests.steam.basiccircuit.subtitle}",
 	text: [
 		"{tfg.quests.steam.basiccircuit.desc1}",

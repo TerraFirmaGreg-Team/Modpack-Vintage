@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.bucket.title}",
-	x: 9.0d,
+	x: 9.5d,
 	y: -8.5d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.bucket.subtitle}",

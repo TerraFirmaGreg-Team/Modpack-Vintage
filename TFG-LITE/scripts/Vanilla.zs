@@ -703,7 +703,7 @@ assembler.recipeBuilder()
 
 // Воронка
 assembler.recipeBuilder()
-    .inputs(<ore:chest>, <ore:plateIronAny> * 5)
+    .inputs(<ore:chest>, <ore:plateIronAny> * 5, <ore:gearIronAny>)
     .outputs(<minecraft:hopper>)
     .duration(100).EUt(2).buildAndRegister();
 

@@ -2,7 +2,7 @@
 	title: "{tfg.quests.primitive.fireplace.title}",
 	icon: "tfc:firepit",
 	x: -30.0d,
-	y: -7.5d,
+	y: -8.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.fireplace.subtitle}",
 	text: [
@@ -14,7 +14,7 @@
 		"{tfg.quests.primitive.fireplace.desc6}"
 	],
 	dependencies: [
-		"d1baef19"
+		"a03af80a"
 	],
 	tasks: [{
 		uid: "ee89c644",

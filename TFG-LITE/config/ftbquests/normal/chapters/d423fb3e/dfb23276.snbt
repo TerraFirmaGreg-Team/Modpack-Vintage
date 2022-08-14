@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.steam.hammer.title}",
-	x: -10.5d,
+	x: -13.5d,
 	y: 0.0d,
 	description: "{tfg.quests.steam.hammer.subtitle}",
 	text: [

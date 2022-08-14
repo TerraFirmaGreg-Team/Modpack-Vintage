@@ -1,0 +1,14 @@
+{
+	x: -27.0d,
+	y: 0.0d,
+	dependencies: [
+		"153d69e0"
+	],
+	tasks: [{
+		uid: "0f3c19c8",
+		type: "item",
+		items: [{
+			item: "firmalife:pineapple_fiber"
+		}]
+	}]
+}

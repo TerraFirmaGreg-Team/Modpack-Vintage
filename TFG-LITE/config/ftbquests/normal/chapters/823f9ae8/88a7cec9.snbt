@@ -1,26 +1,27 @@
 {
-	x: -18.0d,
-	y: -7.25d,
+	x: -31.0d,
+	y: -6.0d,
 	dependencies: [
-		"badc22e0"
+		"8fc0c70f"
 	],
 	tasks: [{
-		uid: "65139727",
+		uid: "3ce16c52",
 		type: "item",
-		title: "{tfg.quests.steam.invar.title}",
 		items: [{
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any ingotInvar"
+					Name: "Any hoeStone"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "ingotInvar"
+					data: "hoeStone"
 				}
 			}
-		}]
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

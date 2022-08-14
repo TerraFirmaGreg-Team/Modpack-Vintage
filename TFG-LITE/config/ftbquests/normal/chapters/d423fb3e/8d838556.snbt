@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.steam.screwdriver.title}",
-	x: -13.5d,
+	x: -16.5d,
 	y: 0.0d,
 	description: "{tfg.quests.steam.screwdriver.subtitle}",
 	text: [

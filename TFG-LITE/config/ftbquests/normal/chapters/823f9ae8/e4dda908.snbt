@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.clay.title}",
-	x: -28.0d,
+	x: -29.0d,
 	y: -10.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.clay.subtitle}",

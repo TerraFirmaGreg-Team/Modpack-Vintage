@@ -1,6 +1,6 @@
 {
-	x: -22.5d,
-	y: -10.25d,
+	x: -23.0d,
+	y: -9.25d,
 	description: "{tfg.quests.steam.bronzemacerator.subtitle}",
 	text: [
 		"{tfg.quests.steam.bronzemacerator.desc1}",

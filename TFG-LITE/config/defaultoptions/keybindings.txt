@@ -10,6 +10,7 @@ key_key.sprint:29:NONE
 key_key.drop:16:NONE
 key_key.inventory:18:NONE
 key_key.chat:20:NONE
+key_key.playerlist:15:NONE
 key_key.pickItem:-98:NONE
 key_key.command:53:NONE
 key_key.screenshot:60:NONE
@@ -19,8 +20,8 @@ key_key.fullscreen:87:NONE
 key_key.spectatorOutlines:0:NONE
 key_key.swapHands:33:NONE
 key_key.saveToolbarActivator:0:NONE
-key_key.loadToolbarActivator:0:NONE
-key_key.advancements:0:NONE
+key_key.loadToolbarActivator:45:NONE
+key_key.advancements:38:NONE
 key_key.hotbar.1:2:NONE
 key_key.hotbar.2:3:NONE
 key_key.hotbar.3:4:NONE
@@ -33,46 +34,45 @@ key_key.hotbar.9:10:NONE
 key_of.key.zoom:46:NONE
 key_Reload Menu | CTRL + ALT + :0:NONE
 key_Toggle Customization Overlay | CTRL + ALT + :40:NONE
-key_keybind.baublesinventory:48:ALT
+key_keybind.baublesinventory:48:NONE
 key_key.toggle_shaders:0:NONE
 key_[GC] Galaxy Map:50:NONE
 key_[GC] Open Spaceship Inventory:33:NONE
 key_[GC] Toggle Sensor Goggles Mode:37:NONE
-key_gregtech.key.armor_mode_switch:50:CONTROL
+key_gregtech.key.armor_mode_switch:39:NONE
 key_gregtech.key.armor_hover:35:NONE
 key_gregtech.key.armor_charging:49:NONE
-key_gregtech.key.tool_aoe_change:25:NONE
+key_gregtech.key.tool_aoe_change:47:NONE
 key_Open MPS Keybind GUI:0:NONE
-key_Go Down (MPS Flight Control):0:NONE
+key_Go Down (MPS Flight Control):44:NONE
 key_Cycle Tool Backward (MPS):0:NONE
 key_Cycle Tool Forward (MPS):0:NONE
 key_Cosmetic (MPS):0:NONE
-key_config.aunis.mode_scroll:2:ALT
-key_config.aunis.address_scroll:3:ALT
-key_config.aunis.mode_up:4:ALT
-key_config.aunis.mode_down:5:ALT
-key_config.aunis.address_up:6:ALT
-key_config.aunis.address_down:7:ALT
+key_config.aunis.mode_scroll:29:NONE
+key_config.aunis.address_scroll:42:NONE
+key_config.aunis.mode_up:0:NONE
+key_config.aunis.mode_down:0:NONE
+key_config.aunis.address_up:0:NONE
+key_config.aunis.address_down:0:NONE
 key_config.aunis.address_edit:210:NONE
-key_key.betterfoliage.gui:66:NONE
 key_key.findme.search:21:NONE
-key_key.ftbutilities.nbt:0:NONE
-key_key.ftbutilities.trash:0:NONE
+key_key.ftbutilities.nbt:49:ALT
+key_key.ftbutilities.trash:211:NONE
 key_key.ftbquests.quests:0:NONE
-key_keybind.hammercorerenderstack:0:NONE
+key_keybind.hammercorerenderstack:77:NONE
 key_key.moreoverlays.lightoverlay.desc:65:NONE
 key_key.moreoverlays.chunkbounds.desc:67:NONE
-key_key.toastcontrol.clear:0:NONE
+key_key.toastcontrol.clear:36:NONE
 key_key.open_wct.desc:0:NONE
 key_key.cycle_magnet_mode.desc:0:NONE
 key_key.open_wft.desc:0:NONE
 key_key.open_wit.desc:0:NONE
 key_key.open_wpt.desc:0:NONE
-key_key.dismount:0:NONE
-key_key.narrator:0:NONE
+key_key.dismount:42:NONE
+key_key.narrator:48:CONTROL
 key_key.toggle_focus.desc:0:NONE
-key_key.jei.toggleOverlay:0:NONE
-key_key.jei.focusSearch:0:NONE
+key_key.jei.toggleOverlay:24:CONTROL
+key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
 key_key.jei.toggleEditMode:0:NONE
 key_key.jei.showRecipe:19:NONE
@@ -88,11 +88,11 @@ key_Open Module Manager:35:NONE
 key_Open Pre Launch Checklist GUI:25:NONE
 key_Open Portable NASA Workbench GUI:24:NONE
 key_key.astikorcarts.desc:19:NONE
-key_key.clipboardPaste:47:CONTROL
-key_key.carry.desc:41:NONE
+key_key.clipboardPaste:210:NONE
+key_key.carry.desc:42:NONE
 key_tfc.key.craft:0:NONE
 key_tfc.key.placeblock:47:NONE
-key_tfc.key.itemmode:49:CONTROL
+key_tfc.key.itemmode:50:NONE
 key_tfc.key.stack:45:NONE
 key_key.clienttweaks.disable_step_assist:0:NONE
 key_key.clienttweaks.hide_offhand_item:0:NONE
@@ -103,52 +103,44 @@ key_key.craftingtweaks.spread:0:NONE
 key_key.craftingtweaks.clear:0:NONE
 key_key.craftingtweaks.force_clear:0:NONE
 key_key.craftingtweaks.toggleButtons:0:NONE
-key_key.craftingtweaks.compressOne:0:NONE
-key_key.craftingtweaks.compressStack:0:NONE
-key_key.craftingtweaks.compressAll:0:NONE
+key_key.craftingtweaks.compressOne:37:CONTROL
+key_key.craftingtweaks.compressStack:37:NONE
+key_key.craftingtweaks.compressAll:37:SHIFT
 key_key.craftingtweaks.decompressOne:0:NONE
 key_key.craftingtweaks.decompressStack:0:NONE
 key_key.craftingtweaks.decompressAll:0:NONE
-key_key.craftingtweaks.refill_last:0:NONE
-key_key.craftingtweaks.refill_last_stack:0:NONE
-key_FpsReducer.key.guiOpen:0:NONE
-key_FpsReducer.key.forceIdle:0:NONE
-key_key.toggleLiquids:0:NONE
+key_key.craftingtweaks.refill_last:15:NONE
+key_key.craftingtweaks.refill_last_stack:15:NONE
+key_FpsReducer.key.guiOpen:207:NONE
+key_FpsReducer.key.forceIdle:197:NONE
+key_key.toggleLiquids:38:NONE
 key_key.toggleVisible:0:NONE
-key_Open Backpack:48:SHIFT
-key_key.inventoryhud.toggle:0:NONE
-key_key.inventoryhud.openconfig:0:NONE
-key_key.inventoryhud.togglepot:0:NONE
-key_key.inventoryhud.togglearm:0:NONE
-key_key.inventoryhud.toggleall:0:NONE
-key_invtweaks.key.sort:19:SHIFT
+key_invtweaks.key.sort:19:NONE
 key_Open Key Wizard:65:NONE
-key_key.rotateup:0:NONE
-key_key.rotatedown:0:NONE
-key_key.rotateright:0:NONE
-key_key.rotateleft:0:NONE
-key_key.little.flip:0:NONE
-key_key.little.mark:0:NONE
+key_key.rotateup:200:NONE
+key_key.rotatedown:208:NONE
+key_key.rotateright:205:NONE
+key_key.rotateleft:203:NONE
+key_key.little.flip:34:NONE
+key_key.little.mark:50:NONE
 key_key.little.config.item:0:NONE
-key_key.little.undo:0:NONE
-key_key.little.redo:0:NONE
-key_key.oxygen_core.accept:19:NONE
-key_key.oxygen_core.reject:45:NONE
-key_key.oxygen_core.interact:33:NONE
-key_key.oxygen_menu.openMenu:15:NONE
-key_key.teleportation.moveToFavCamp:0:NONE
+key_key.little.undo:44:CONTROL
+key_key.little.redo:21:CONTROL
 key_tombstone.message.knowledge_of_death:0:NONE
-key_key.toolbelt.open:157:NONE
+key_key.toolbelt.open:19:NONE
 key_key.toolbelt.cycle.left:0:NONE
 key_key.toolbelt.cycle.right:0:NONE
-key_key.toolbelt.slot:52:NONE
+key_key.toolbelt.slot:47:NONE
+key_key.travelersbackpack.inventory:48:NONE
+key_key.travelersbackpack.toggle_tank:49:NONE
+key_key.travelersbackpack.cycle_tool:44:NONE
 key_key.journeymap.zoom_in:13:NONE
 key_key.journeymap.zoom_out:12:NONE
 key_key.journeymap.minimap_type:26:NONE
 key_key.journeymap.minimap_preset:43:NONE
 key_key.journeymap.create_waypoint:48:NONE
 key_key.journeymap.toggle_waypoints:44:NONE
-key_key.journeymap.fullscreen_create_waypoint:51:NONE
+key_key.journeymap.fullscreen_create_waypoint:48:NONE
 key_key.journeymap.fullscreen_chat_position:0:NONE
 key_key.journeymap.map_toggle_alt:36:NONE
 key_key.journeymap.fullscreen_waypoints:48:CONTROL
@@ -158,4 +150,4 @@ key_key.journeymap.fullscreen.north:200:NONE
 key_key.journeymap.fullscreen.south:208:NONE
 key_key.journeymap.fullscreen.east:205:NONE
 key_key.journeymap.fullscreen.west:203:NONE
-key_key.control:0:NONE
+key_key.control:29:NONE

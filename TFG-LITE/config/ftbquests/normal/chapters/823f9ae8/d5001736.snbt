@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.greenhouseblocks.title}",
-	x: -3.5d,
-	y: -14.25d,
+	x: -4.25d,
+	y: -16.25d,
 	description: "{tfg.quests.primitive.greenhouseblocks.subtitle}",
 	dependencies: [
 		"d2850e1d"

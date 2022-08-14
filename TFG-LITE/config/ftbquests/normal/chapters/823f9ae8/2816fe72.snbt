@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.leather.title}",
-	x: -24.0d,
-	y: 10.0d,
+	x: -24.75d,
+	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.leather.subtitle}",
 	dependencies: [
-		"bf82a628",
-		"7e2bb7a0"
+		"df6ac7ce",
+		"755f0c3c"
 	],
 	tasks: [{
 		uid: "d79c858a",

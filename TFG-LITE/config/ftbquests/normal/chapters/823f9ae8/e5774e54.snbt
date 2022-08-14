@@ -1,6 +1,6 @@
 {
-	x: -7.75d,
-	y: -8.25d,
+	x: -8.75d,
+	y: -5.75d,
 	description: "{tfg.quests.primitive.bloomery.subtitle}",
 	dependencies: [
 		"e21bf425"

@@ -1,6 +1,6 @@
 {
-	x: -21.0d,
-	y: 6.5d,
+	x: -16.0d,
+	y: 12.0d,
 	description: "{tfg.quests.primitive.loom.subtitle}",
 	text: [
 		""

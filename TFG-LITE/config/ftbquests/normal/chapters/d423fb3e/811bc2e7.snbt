@@ -1,6 +1,6 @@
 {
-	x: -8.25d,
-	y: -2.5d,
+	x: -12.0d,
+	y: -2.0d,
 	description: "{tfg.quests.steam.smallfluidpipe.subtitle}",
 	text: [
 		"{tfg.quests.steam.smallfluidpipe.desc1}",
