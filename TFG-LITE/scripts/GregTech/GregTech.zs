@@ -109,18 +109,6 @@ for item in RemoveItemRecipesByName {
     recipes.removeByRecipeName(item);
 }
 
-// Временный фикс проблемы совместимости и дублей рецепта
-// Свинец (Прут) * 2
-<recipemap:extruder>.findRecipe(42, [<metaitem:ingotLead>, <metaitem:shape.extruder.rod>], null).remove();
-// Свинец (Пластина) * 1
-<recipemap:bender>.findRecipe(24, [<metaitem:ingotLead>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
-// Свинец (Пластина) * 2
-<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
-// Свинец (Пластина) * 2
-<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
-// Свинец (Пластина) * 1
-<recipemap:extruder>.findRecipe(56, [<metaitem:ingotLead>, <metaitem:shape.extruder.plate>], null).remove();
-
 // Разбор бочки
 macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
 arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
