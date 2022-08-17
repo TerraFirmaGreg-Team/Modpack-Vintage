@@ -1,8 +1,8 @@
 {
-	title: "{tfg.quests.primitive.file.title}",
+	title: "{tfg.quests.primitive.copper_file_head.title}",
 	x: -17.0d,
 	y: -5.5d,
-	description: "{tfg.quests.primitive.file.subtitle}",
+	description: "{tfg.quests.primitive.copper_knife_head.subtitle}",
 	dependencies: [
 		"acf7d08d"
 	],

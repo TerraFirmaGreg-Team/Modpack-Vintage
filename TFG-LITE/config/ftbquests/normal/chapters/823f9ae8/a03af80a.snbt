@@ -1,11 +1,11 @@
 {
-	title: "{tfg.quests.primitive.greenpeace.title}",
+	title: "{tfg.quests.primitive.logs.title}",
 	icon: "tfc:wood/log/oak",
 	x: -30.0d,
 	y: -7.0d,
-	description: "{tfg.quests.primitive.greenpeace.subtitle}",
+	description: "{tfg.quests.primitive.logs.subtitle}",
 	text: [
-		"{tfg.quests.primitive.greenpeace.desk}"
+		"{tfg.quests.primitive.logs.desc}"
 	],
 	dependencies: [
 		"ea2bbdf5"
@@ -13,7 +13,7 @@
 	tasks: [{
 		uid: "c87b32e7",
 		type: "item",
-		title: "{tfg.quests.primitive.greenpeace.tasks.logs.title}",
+		title: "{tfg.quests.primitive.logs.tasks.logs.title}",
 		items: [{
 			id: "itemfilters:filter",
 			ForgeCaps: {

@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.copper_saw_head.title}",
 	x: -18.0d,
 	y: -2.5d,
+	description: "{tfg.quests.primitive.copper_saw_head.subtitle}",
 	dependencies: [
 		"1a30f24f"
 	],

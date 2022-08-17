@@ -1,8 +1,8 @@
 {
   "name" : "Earth Naquadah",
-  "weight": 1,
+  "weight": 20,
   "density": 0.05,
-  "max_height": 50,
+  "max_height": 75,
   "min_height": 5,
   "vein_populator": {
     "type": "surface_rock",

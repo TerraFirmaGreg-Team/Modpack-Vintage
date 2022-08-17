@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.scrapped_hide.title}",
 	x: -25.75d,
 	y: 2.5d,
+	description: "{tfg.quests.primitive.scrapped_hide.subtitle}",
 	dependencies: [
 		"18099684"
 	],

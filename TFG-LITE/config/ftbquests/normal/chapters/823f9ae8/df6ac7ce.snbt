@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.prepared_hide.title}",
 	x: -25.75d,
 	y: 6.25d,
+	description: "{tfg.quests.primitive.prepared_hide.subtitle}",
 	dependencies: [
 		"520f15f6"
 	],

@@ -1,6 +1,8 @@
 {
+	title: "{tfg.quests.primitive.soaked_hide.title}",
 	x: -25.75d,
 	y: -1.0d,
+	description: "{tfg.quests.primitive.soaked_hide.subtitle}",
 	dependencies: [
 		"e61c6921",
 		"bf82a628",
