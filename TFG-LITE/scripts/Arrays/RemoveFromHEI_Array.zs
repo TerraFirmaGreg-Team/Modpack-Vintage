@@ -46,7 +46,6 @@ val aeadditions as IItemStack[] = [
 	<aeadditions:certustank>,
 	<aeadditions:vibrantchamberfluid>,
 	<aeadditions:terminal.universal.wireless>,
-	<aeadditions:terminal.fluid.wireless>,
 	<aeadditions:part.base:2>
 ];
 for item in aeadditions {
@@ -1985,18 +1984,18 @@ for item in ExtraPlanets {
 }
 
 val GTFO as IItemStack[] = [
-	<metaitem:brick.adobe_fired>,
-	<metaitem:brick.adobe>,
-	<metaitem:food.potato_on_a_stick>,
-	<metaitem:food.fish_rotten>,
-	<metaitem:component.dough>,
-	<metaitem:component.flat_dough>,
-	<metaitem:component.bread>,
-	<metaitem:wooden_form.bread>,
-	<metaitem:component.sugary_dough>
+	//<metaitem:brick.adobe_fired>,
+	//<metaitem:brick.adobe>,
+	//<metaitem:food.potato_on_a_stick>,
+	//<metaitem:food.fish_rotten>,
+	//<metaitem:component.dough>,
+	//<metaitem:component.flat_dough>,
+	//<metaitem:component.bread>,
+	//<metaitem:wooden_form.bread>,
+	//<metaitem:component.sugary_dough>
 ];
 for item in GTFO {
-    JEI.removeAndHide(item);
+    //JEI.removeAndHide(item);
 }
 
 val FirmaLife as IItemStack[] = [
