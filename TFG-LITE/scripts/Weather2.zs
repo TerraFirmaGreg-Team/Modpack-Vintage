@@ -35,10 +35,10 @@ assembler.recipeBuilder()
     .outputs(<weather2:weather_forecast>)
     .duration(300).EUt(30).buildAndRegister();
 
-// Отражатель погоды
+// Отражатель погоды (TODO Исправить рецепт)
 assembler.recipeBuilder()
     .circuit(4)
-    .inputs(<ore:rotorIronAny> * 2, <ore:circuitEv>, <metaitem:rotorTitanium> * 2, <metaitem:laserCarbonDioxide> * 2, <metaitem:stickRedAlloy>)
+    .inputs(<ore:rotorIronAny> * 2, <ore:circuitEv>, <metaitem:rotorTitanium> * 2, <metaitem:stickLongNickel> * 2, <metaitem:stickRedAlloy>)
     .outputs(<weather2:weather_deflector>)
     .duration(100).EUt(1900).buildAndRegister();
 

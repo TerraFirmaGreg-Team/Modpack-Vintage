@@ -10,7 +10,7 @@ recipes.removeByMod("architecturecraft");
 
 // Arch Table
 recipes.addShaped("tfg/architecturecraft/sawbench", <architecturecraft:sawbench>,
-    [[<ore:plateIronAny>, <ore:toolHeadBuzzSawIron>, <ore:plateIronAny>],
+    [[<ore:plateIronAny>, <ore:toolHeadBuzzSawIronAny>, <ore:plateIronAny>],
     [<ore:plankWood>, <ore:gearIronAny>, <ore:plankWood>],
     [<ore:stickWood>, <ore:pressurePlateWood>, <ore:stickWood>]]);
 

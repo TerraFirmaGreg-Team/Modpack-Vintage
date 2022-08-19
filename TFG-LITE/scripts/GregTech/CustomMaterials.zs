@@ -63,7 +63,7 @@ import mods.gregtech.material.Material;
 <material:rose_gold>.addFlags("generate_gear");
 <material:silver>.addFlags("generate_gear");
 <material:sterling_silver>.addFlags("generate_gear");
-<material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small");
+<material:wrought_iron>.addFlags("generate_small_gear", "generate_rotor", "generate_spring", "generate_spring_small", "generate_round");
 <material:netherrack>.addFlags("no_unification");
 <material:wheat>.addFlags("no_unification");
 <material:electrotine>.addFlags("generate_plate");

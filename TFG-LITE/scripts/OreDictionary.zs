@@ -350,12 +350,12 @@ for item in TFC_Saws {
 
 <ore:gtce.tool.knife>.addItems([
     <gregtech:meta_tool:15>.withEmptyTag(),
-    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
+    //<gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 
-<ore:gtce.tool.rolling.pins>.addItems([
-    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
-]);
+//<ore:gtce.tool.rolling.pins>.addItems([
+    //<gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+//]);
 
 <ore:gtce.tool.tongs>.addItems([
     <tfgmod:meta_tool>.withEmptyTag()
@@ -385,6 +385,7 @@ for item in TFC_Saws {
 <ore:boltIronAny>.add(<metaitem:boltIron>, <metaitem:boltWroughtIron>);
 <ore:screwIronAny>.add(<metaitem:screwIron>, <metaitem:screwWroughtIron>);
 <ore:rotorIronAny>.add(<metaitem:rotorIron>, <metaitem:rotorWroughtIron>);
+<ore:toolHeadBuzzSawIronAny>.add(<metaitem:toolHeadBuzzSawIron>, <metaitem:toolHeadBuzzSawWroughtIron>);
 
 // BronzeAny Screws
 <ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
@@ -788,7 +789,6 @@ for gcParachute in gcParachute {
 // --- Vanilla --- /////////////////////////////////////
 ////////////////////////////////////////////////////////
 
-// --- Удаление
 <ore:grass>.remove(<minecraft:grass>);
 <ore:sand>.remove(<minecraft:sand>);
 <ore:dirt>.remove(<minecraft:dirt>);

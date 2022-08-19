@@ -766,7 +766,7 @@ for i, TFC_Lumber in TFC_Lumber {
 		.fluidInputs([<liquid:lubricant> * 1])
     	.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
-
+	/*
 	saw_mill.recipeBuilder()
 		.inputs([TFC_Logs[i]])
 		.circuit(1)
@@ -774,7 +774,7 @@ for i, TFC_Lumber in TFC_Lumber {
 		.outputs([TFC_Lumber * 64, <metaitem:dustWood> * 8])
 		.duration(450)
 		.EUt(32)
-		.buildAndRegister();
+		.buildAndRegister();*/
 }
 
 // Дерево -> Пиломатериалы (Для эвкалипта)
@@ -786,14 +786,14 @@ for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
     	.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
 
-	saw_mill.recipeBuilder()
+	/*saw_mill.recipeBuilder()
 		.inputs([TFC_EucaliptusLogs])
 		.circuit(1)
 		.fluidInputs([<liquid:lubricant> * 1000])
 		.outputs([<tfc:wood/lumber/eucalyptus> * 64, <metaitem:dustWood> * 8])
 		.duration(450)
 		.EUt(32)
-		.buildAndRegister();
+		.buildAndRegister();*/
 }
 
 // Доски -> Пиломатериалы
@@ -977,7 +977,7 @@ var NumArray as int[] = [];
 for i in 83 .. 107 {
 	NumArray += i;
 }
-
+/*
 for i, TFC_Barrels in TFC_Barrels  {
     for j in NumArray
 	{
@@ -990,7 +990,7 @@ for i, TFC_Barrels in TFC_Barrels  {
 		}
 	}
 }
-
+*/
 // Лодки
 for i, TFC_Boats in TFC_Boats  {
     recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats, [
@@ -1334,7 +1334,7 @@ centrifuge.recipeBuilder()
 	.duration(750).EUt(32).buildAndRegister();
 
 // Saplings -> Logs + Saplings (Greenhouse)
-
+/*
 for i, TFC_Saplings in TFC_Saplings {
   
 	greenhouse.recipeBuilder()
@@ -1387,7 +1387,7 @@ for i, TFC_Logs in TFC_Logs {
 		.outputs([<metaitem:dustSmallWood> * 32])
 		.duration(400).EUt(12).buildAndRegister();
 }
-
+*/
 // Hide Raw Small -> Hide Soaked Small
 mixer.recipeBuilder()
 	.inputs(<tfc:hide/raw/small>)

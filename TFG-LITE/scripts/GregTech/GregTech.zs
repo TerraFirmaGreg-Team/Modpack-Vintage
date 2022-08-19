@@ -574,6 +574,7 @@ extractor.recipeBuilder()
     .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
 
 // Контроллер звездной кузни
+/*
 assembly_line.recipeBuilder()
     .inputs([
       <ore:batteryIv> * 4,  
@@ -589,7 +590,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
     .duration(1300).EUt(8100).buildAndRegister();
-
+*/
 // Solar Panel (ULV)
 assembly_line.recipeBuilder()
     .inputs([
