@@ -1,5 +1,5 @@
 #priority 970
-
+/*
 import crafttweaker.item.IItemStack;
 
 import mods.gregtech.IControllerTile;
@@ -57,3 +57,4 @@ var star_forge = Builder.start("star_forge", 32002)
   .withBaseTexture(<metastate:gregtech:fusion_casing:1>).buildAndRegister();
 star_forge.hasMaintenanceMechanics = true;
 star_forge.hasMufflerMechanics = false;
+*/

@@ -1,5 +1,6 @@
 #priority 970
 
+/*
 import crafttweaker.item.IItemStack;
 
 import mods.gregtech.IControllerTile;
@@ -47,5 +48,6 @@ var saw_mill = Builder.start("saw_mill", 32001)
   .buildAndRegister();
 saw_mill.hasMaintenanceMechanics = false;
 saw_mill.hasMufflerMechanics = true;
+*/
 
 

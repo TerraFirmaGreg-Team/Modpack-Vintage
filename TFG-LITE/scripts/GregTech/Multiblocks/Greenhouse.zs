@@ -1,5 +1,5 @@
 #priority 970
-
+/*
 import crafttweaker.item.IItemStack;
 
 import mods.gregtech.IControllerTile;
@@ -55,3 +55,4 @@ var greenhouse = Builder.start("greenhouse", 32000)
   .buildAndRegister();
 greenhouse.hasMaintenanceMechanics = true;
 greenhouse.hasMufflerMechanics = false;
+*/

@@ -973,20 +973,13 @@ for i, TFC_ToolRacks in TFC_ToolRacks  {
 }
 
 // Бочки
-// Этот говнокод нужно исправить
-global NumArray as int[] = [];
+var NumArray as int[] = [];
 for i in 83 .. 107 {
 	NumArray += i;
 }
 
-function containArray(iterator as int) as bool {
-   	for j in NumArray {
-		return (j != iterator);
-	}
-}
-
 for i, TFC_Barrels in TFC_Barrels  {
-	if (containArray(i)) {
+	if (!(NumArray has i)) {
 		assembler.recipeBuilder()
 			.inputs([TFC_Lumber[i] * 7])
 			.circuit(15)
