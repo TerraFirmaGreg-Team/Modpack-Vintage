@@ -80,9 +80,7 @@ for item in AE2EL {
     JEI.removeAndHide(item);
 }
 
-
 val Galacticraft as IItemStack[] = [
-	// Руды
 	// Медь
 	<galacticraftcore:basic_block_core:5>,
 	<galacticraftcore:basic_block_moon>,
@@ -220,7 +218,10 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftplanets:mars_machine_t2:4>,
 	<galacticraftplanets:mars_machine_t2:8>,
 	<galacticraftcore:machine2:12>,
-	<galacticraftplanets:geothermal_generator>
+	<galacticraftplanets:geothermal_generator>,
+	// Другое
+	<galacticraftcore:food:6>,
+	<galacticraftcore:food:7>
 ];
 for item in Galacticraft {
     JEI.removeAndHide(item);
@@ -1240,7 +1241,34 @@ val Vanilla as IItemStack[] = [
     <minecraft:jungle_boat>,
     <minecraft:acacia_boat>,
     <minecraft:dark_oak_boat>,
-    // Other
+	// Nether
+	<minecraft:nether_wart>,
+	<minecraft:netherrack>,
+	<minecraft:nether_brick>,
+	<minecraft:nether_brick_stairs>,
+	<minecraft:stone_slab:6>,
+	<minecraft:nether_wart_block>,
+	<minecraft:red_nether_brick>,
+	<minecraft:nether_brick_fence>,
+	<minecraft:netherbrick>,
+	// End
+	<minecraft:white_shulker_box>,
+	<minecraft:orange_shulker_box>,
+	<minecraft:magenta_shulker_box>,
+	<minecraft:light_blue_shulker_box>,
+	<minecraft:yellow_shulker_box>,
+	<minecraft:lime_shulker_box>,
+	<minecraft:pink_shulker_box>,
+	<minecraft:gray_shulker_box>,
+	<minecraft:silver_shulker_box>,
+	<minecraft:cyan_shulker_box>,
+	<minecraft:purple_shulker_box>,
+	<minecraft:blue_shulker_box>,
+	<minecraft:brown_shulker_box>,
+	<minecraft:green_shulker_box>,
+	<minecraft:red_shulker_box>,
+	<minecraft:black_shulker_box>,
+	// Other
     <minecraft:crafting_table>,
     <minecraft:furnace>,
     <minecraft:chest>,
@@ -1256,17 +1284,7 @@ val Vanilla as IItemStack[] = [
 	<minecraft:waterlily>,
 	<minecraft:golden_horse_armor>,
 	<minecraft:diamond_horse_armor>,
-	<minecraft:iron_trapdoor>,
-	// Nether
-	<minecraft:nether_wart>,
-	<minecraft:netherrack>,
-	<minecraft:nether_brick>,
-	<minecraft:nether_brick_stairs>,
-	<minecraft:stone_slab:6>,
-	<minecraft:nether_wart_block>,
-	<minecraft:red_nether_brick>,
-	<minecraft:nether_brick_fence>,
-	<minecraft:netherbrick>
+	<minecraft:iron_trapdoor>
 ];
 for item in Vanilla {
     JEI.removeAndHide(item);
@@ -1984,20 +2002,20 @@ for item in ExtraPlanets {
     JEI.removeAndHide(item);
 }
 
-// val GTFO as IItemStack[] = [
-// 	<metaitem:brick.adobe_fired>,
-// 	<metaitem:brick.adobe>,
-// 	<metaitem:food.potato_on_a_stick>,
-// 	<metaitem:food.fish_rotten>,
-// 	<metaitem:component.dough>,
-// 	<metaitem:component.flat_dough>,
-// 	<metaitem:component.bread>,
-// 	<metaitem:wooden_form.bread>,
-// 	<metaitem:component.sugary_dough>
-// ];
-// for item in GTFO {
-//     JEI.removeAndHide(item);
-// }
+val GTFO as IItemStack[] = [
+	<metaitem:brick.adobe_fired>,
+ 	<metaitem:brick.adobe>,
+ 	<metaitem:food.potato_on_a_stick>,
+ 	<metaitem:food.fish_rotten>,
+ 	<metaitem:component.dough>,
+ 	<metaitem:component.flat_dough>,
+ 	<metaitem:component.bread>,
+ 	<metaitem:wooden_form.bread>,
+ 	<metaitem:component.sugary_dough>
+];
+for item in GTFO {
+    JEI.removeAndHide(item);
+}
 
 val FirmaLife as IItemStack[] = [
 	<firmalife:finished_pizza>,
@@ -2057,5 +2075,89 @@ val TFCMedicinal as IItemStack[] = [
 	<tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "acuity_concoction", Amount: 100}})
 ];
 for item in TFCMedicinal {
+    JEI.removeAndHide(item);
+}
+
+val TravelersBackpacks as IItemStack[] = [
+	<travelersbackpack:travelers_backpack:76>,
+	<travelersbackpack:travelers_backpack:75>,
+	<travelersbackpack:travelers_backpack:74>,
+	<travelersbackpack:travelers_backpack:73>,
+	<travelersbackpack:travelers_backpack:72>,
+	<travelersbackpack:travelers_backpack:71>,
+	<travelersbackpack:travelers_backpack:70>,
+	<travelersbackpack:travelers_backpack:69>,
+	<travelersbackpack:travelers_backpack:68>,
+	<travelersbackpack:travelers_backpack:67>,
+	<travelersbackpack:travelers_backpack:66>,
+	<travelersbackpack:travelers_backpack:65>,
+	<travelersbackpack:travelers_backpack:64>,
+	<travelersbackpack:travelers_backpack:63>,
+	<travelersbackpack:travelers_backpack:62>,
+	<travelersbackpack:travelers_backpack:61>,
+	<travelersbackpack:travelers_backpack:60>,
+	<travelersbackpack:travelers_backpack:59>,
+	<travelersbackpack:travelers_backpack:58>,
+	<travelersbackpack:travelers_backpack:57>,
+	<travelersbackpack:travelers_backpack:56>,
+	<travelersbackpack:travelers_backpack:55>,
+	<travelersbackpack:travelers_backpack:54>,
+	<travelersbackpack:travelers_backpack:53>,
+	<travelersbackpack:travelers_backpack:52>,
+	<travelersbackpack:travelers_backpack:51>,
+	<travelersbackpack:travelers_backpack:50>,
+	<travelersbackpack:travelers_backpack:49>,
+	<travelersbackpack:travelers_backpack:48>,
+	<travelersbackpack:travelers_backpack:47>,
+	<travelersbackpack:travelers_backpack:46>,
+	<travelersbackpack:travelers_backpack:45>,
+	<travelersbackpack:travelers_backpack:44>,
+	<travelersbackpack:travelers_backpack:43>,
+	<travelersbackpack:travelers_backpack:42>,
+	<travelersbackpack:travelers_backpack:41>,
+	<travelersbackpack:travelers_backpack:40>,
+	<travelersbackpack:travelers_backpack:39>,
+	<travelersbackpack:travelers_backpack:38>,
+	<travelersbackpack:travelers_backpack:37>,
+	<travelersbackpack:travelers_backpack:36>,
+	<travelersbackpack:travelers_backpack:35>,
+	<travelersbackpack:travelers_backpack:34>,
+	<travelersbackpack:travelers_backpack:33>,
+	<travelersbackpack:travelers_backpack:32>,
+	<travelersbackpack:travelers_backpack:31>,
+	<travelersbackpack:travelers_backpack:30>,
+	<travelersbackpack:travelers_backpack:29>,
+	<travelersbackpack:travelers_backpack:28>,
+	<travelersbackpack:travelers_backpack:27>,
+	<travelersbackpack:travelers_backpack:26>,
+	<travelersbackpack:travelers_backpack:25>,
+	<travelersbackpack:travelers_backpack:24>,
+	<travelersbackpack:travelers_backpack:23>,
+	<travelersbackpack:travelers_backpack:22>,
+	<travelersbackpack:travelers_backpack:21>,
+	<travelersbackpack:travelers_backpack:20>,
+	<travelersbackpack:travelers_backpack:19>,
+	<travelersbackpack:travelers_backpack:18>,
+	<travelersbackpack:travelers_backpack:17>,
+	<travelersbackpack:travelers_backpack:16>,
+	<travelersbackpack:travelers_backpack:15>,
+	<travelersbackpack:travelers_backpack:14>,
+	<travelersbackpack:travelers_backpack:13>,
+	<travelersbackpack:travelers_backpack:12>,
+	<travelersbackpack:travelers_backpack:11>,
+	<travelersbackpack:travelers_backpack:10>,
+	<travelersbackpack:travelers_backpack:9>,
+	<travelersbackpack:travelers_backpack:8>,
+	<travelersbackpack:travelers_backpack:7>,
+	<travelersbackpack:travelers_backpack:6>,
+	<travelersbackpack:travelers_backpack:5>,
+	<travelersbackpack:travelers_backpack:4>,
+	<travelersbackpack:travelers_backpack:3>,
+	<travelersbackpack:travelers_backpack:2>,
+	<travelersbackpack:travelers_backpack:1>,
+	<travelersbackpack:backpack_tank>,
+	<travelersbackpack:sleeping_bag_bottom>,
+];
+for item in TravelersBackpacks {
     JEI.removeAndHide(item);
 }

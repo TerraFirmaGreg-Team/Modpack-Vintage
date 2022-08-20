@@ -97,6 +97,7 @@ for item in RemoveItemRecipe{
 }
 
 // Другие рецепты которые удалены
+furnace.remove(<galacticraftcore:food:7>);
 furnace.remove(<galacticraftcore:item_basic_moon>);
 furnace.remove(<galacticraftcore:basic_item:4>);
 furnace.remove(<galacticraftplanets:item_basic_mars:2>);

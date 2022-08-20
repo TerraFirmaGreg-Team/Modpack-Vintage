@@ -296,6 +296,7 @@ macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 
 // Книжные полки
+assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();
 extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
 arc_furnace.findRecipe(30, [<minecraft:bookshelf:0>], [<liquid:oxygen>]).remove();
 macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
