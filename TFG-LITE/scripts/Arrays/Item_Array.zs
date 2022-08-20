@@ -4250,27 +4250,27 @@ global Gem_Chipped as IItemStack[] = [
 ];
 
 // - GT Metals, which are double TFC
-global GT_TFC_Doubled_Plates as IItemStack[] = [
-	<metaitem:plateDoubleGold>,
-	<metaitem:plateDoubleLead>,
-	<metaitem:plateDoubleNickel>,
-	<metaitem:plateDoubleRoseGold>,
-	<metaitem:plateDoubleSilver>,
-	<metaitem:plateDoubleTin>,
-	<metaitem:plateDoubleZinc>,
-	<metaitem:plateDoubleSterlingSilver>,
-	<metaitem:plateDoubleCopper>,
-	<metaitem:plateDoubleBismuth>,
-	<metaitem:plateDoubleBrass>,
-	<metaitem:plateDoubleBismuthBronze>,
-	<metaitem:plateDoubleBronze>,
-	<metaitem:plateDoubleBlackBronze>,
-	<metaitem:plateDoubleWroughtIron>,
-	<metaitem:plateDoubleSteel>,
-	<metaitem:plateDoublePlatinum>,
-	<metaitem:plateDoubleBlackSteel>,
-	<metaitem:plateDoubleBlueSteel>,
-	<metaitem:plateDoubleRedSteel>
+global GT_TFC_Plates as IItemStack[] = [
+	<metaitem:plateGold>,
+	<metaitem:plateLead>,
+	<metaitem:plateNickel>,
+	<metaitem:plateRoseGold>,
+	<metaitem:plateSilver>,
+	<metaitem:plateTin>,
+	<metaitem:plateZinc>,
+	<metaitem:plateSterlingSilver>,
+	<metaitem:plateCopper>,
+	<metaitem:plateBismuth>,
+	<metaitem:plateBrass>,
+	<metaitem:plateBismuthBronze>,
+	<metaitem:plateBronze>,
+	<metaitem:plateBlackBronze>,
+	<metaitem:plateWroughtIron>,
+	<metaitem:plateSteel>,
+	<metaitem:platePlatinum>,
+	<metaitem:plateBlackSteel>,
+	<metaitem:plateBlueSteel>,
+	<metaitem:plateRedSteel>
 ];
 
 global All_Metal_Heads_From_TFC as IItemStack[] = [

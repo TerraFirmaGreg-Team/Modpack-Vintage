@@ -916,7 +916,7 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
 // Железные люки
 for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
     assembler.recipeBuilder()
-    	.inputs([GT_TFC_Doubled_Plates[i]])
+    	.inputs([GT_TFC_Plates[i]])
 		.circuit(1)
     	.outputs(TFC_Metal_Trapdoors)
     	.duration(205).EUt(8).buildAndRegister();
@@ -973,24 +973,28 @@ for i, TFC_ToolRacks in TFC_ToolRacks  {
 }
 
 // Бочки
-var NumArray as int[] = [];
+// Этот говнокод нужно исправить
+global NumArray as int[] = [];
 for i in 83 .. 107 {
 	NumArray += i;
 }
-/*
-for i, TFC_Barrels in TFC_Barrels  {
-    for j in NumArray
-	{
-		if (i != j) {
-			assembler.recipeBuilder()
-				.inputs([TFC_Lumber[i] * 7])
-				.circuit(15)
-				.outputs(TFC_Barrels)
-				.duration(205).EUt(4).buildAndRegister();
-		}
+
+function containArray(iterator as int) as bool {
+   	for j in NumArray {
+		return (j != iterator);
 	}
 }
-*/
+
+for i, TFC_Barrels in TFC_Barrels  {
+	if (containArray(i)) {
+		assembler.recipeBuilder()
+			.inputs([TFC_Lumber[i] * 7])
+			.circuit(15)
+			.outputs(TFC_Barrels)
+			.duration(205).EUt(4).buildAndRegister();
+	}
+}
+
 // Лодки
 for i, TFC_Boats in TFC_Boats  {
     recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats, [
