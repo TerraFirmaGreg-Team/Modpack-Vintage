@@ -729,12 +729,12 @@ chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
     .duration(50).EUt(30).buildAndRegister();
-
+/*
 large_chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
     .duration(50).EUt(30).buildAndRegister();
-
+*/
 // Pre-Sliced Bread
 recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:gtce.tool.knife>]);
 

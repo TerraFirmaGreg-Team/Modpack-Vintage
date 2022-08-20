@@ -344,17 +344,19 @@ ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
 // Контроллер теплицы
+/*
 recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
     [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
     [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
     [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
-
+*/
 // Контроллер распилки
+/*
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);
-
+*/
 // Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, [
     [<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
@@ -895,12 +897,6 @@ extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
     .fluidOutputs(<fluid:lava> * 750)
     .duration(220).EUt(140).buildAndRegister();
-
-// Гравий --> кремень
-forge_hammer.recipeBuilder()
-    .inputs([<ore:gravel> * 1])
-    .outputs(<minecraft:flint> * 1)
-    .duration(45).EUt(5).buildAndRegister();
 
 // Сахарный тростник --> целлюлоза
 forge_hammer.recipeBuilder()

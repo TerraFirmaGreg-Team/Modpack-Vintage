@@ -470,7 +470,7 @@ GenerateRecipesForSurfaceStones3(<extraplanets:ceres>, <extraplanets:ceres:1>, <
 
 // Пыль цереры
 centrifuge.recipeBuilder()
-   .inputs(<metaitem:dustStoneDeimos> * 3)
+   .inputs(<metaitem:dustStoneCeres> * 3)
    .chancedOutput(<metaitem:dustBentonite>, 3700, 1200)
    .chancedOutput(<metaitem:dustBeryllium>, 1100, 500)
    .chancedOutput(<metaitem:dustBrownLimonite>, 1150, 500)
@@ -532,7 +532,7 @@ GenerateRecipesForSurfaceStones3(<extraplanets:jupiter>, <extraplanets:jupiter:1
 GenerateRecipesForSurfaceStones1(<extraplanets:orange_sand>, <metaitem:dustStoneJupiter>, 4, 4);
 
 // Красный песок
-GenerateRecipesForSurfaceStones1(<extraplanets:orange_sand>, <metaitem:dustStoneJupiter>, 4, 4);
+GenerateRecipesForSurfaceStones1(<extraplanets:red_sand>, <metaitem:dustStoneJupiter>, 4, 4);
 
 // Оранжевый песчанник
 GenerateRecipesForSurfaceStones1(<extraplanets:orange_sandstone>, <metaitem:dustStoneJupiter>, 4, 4);

@@ -917,7 +917,7 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
 for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
     assembler.recipeBuilder()
     	.inputs([GT_TFC_Doubled_Plates[i]])
-		.circuit(9)
+		.circuit(1)
     	.outputs(TFC_Metal_Trapdoors)
     	.duration(205).EUt(8).buildAndRegister();
 }
@@ -1285,7 +1285,7 @@ alloy_smelter.recipeBuilder().inputs(<ore:ingotWeakSteel>, <ore:ingotPigIron>).o
 // Рецепты для льда
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 1000).outputs(<minecraft:ice>).duration(1500).EUt(256).buildAndRegister();
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:salt_water> * 1000).outputs(<tfc:sea_ice>).duration(1500).EUt(256).buildAndRegister();
-vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
+// vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
 
 // Различные крафты для лассо
 LeatherKnapping.addRecipe("tfg/tfc/lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");

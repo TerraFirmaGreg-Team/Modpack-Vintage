@@ -4067,7 +4067,6 @@ global TFC_EucaliptusLogs as IItemStack[] = [
 
 // - TFC Metal Trapdoors
 global TFC_Metal_Trapdoors as IItemStack[] = [
-	<tfc:metal/trapdoor/platinum>,
 	<tfc:metal/trapdoor/gold>,
 	<tfc:metal/trapdoor/lead>,
 	<tfc:metal/trapdoor/nickel>,
@@ -4252,27 +4251,26 @@ global Gem_Chipped as IItemStack[] = [
 
 // - GT Metals, which are double TFC
 global GT_TFC_Doubled_Plates as IItemStack[] = [
-	<metaitem:platePlatinum>,
-	<metaitem:plateGold>,
-	<metaitem:plateLead>,
-	<metaitem:plateNickel>,
-	<metaitem:plateRoseGold>,
-	<metaitem:plateSilver>,
-	<metaitem:plateTin>,
-	<metaitem:plateZinc>,
-	<metaitem:plateSterlingSilver>,
-	<metaitem:plateCopper>,
-	<metaitem:plateBismuth>,
-	<metaitem:plateBrass>,
-	<metaitem:plateBismuthBronze>,
-	<metaitem:plateBronze>,
-	<metaitem:plateBlackBronze>,
-	<metaitem:plateWroughtIron>,
-	<metaitem:plateSteel>,
-	<metaitem:platePlatinum>,
-	<metaitem:plateBlackSteel>,
-	<metaitem:plateBlueSteel>,
-	<metaitem:plateRedSteel>
+	<metaitem:plateDoubleGold>,
+	<metaitem:plateDoubleLead>,
+	<metaitem:plateDoubleNickel>,
+	<metaitem:plateDoubleRoseGold>,
+	<metaitem:plateDoubleSilver>,
+	<metaitem:plateDoubleTin>,
+	<metaitem:plateDoubleZinc>,
+	<metaitem:plateDoubleSterlingSilver>,
+	<metaitem:plateDoubleCopper>,
+	<metaitem:plateDoubleBismuth>,
+	<metaitem:plateDoubleBrass>,
+	<metaitem:plateDoubleBismuthBronze>,
+	<metaitem:plateDoubleBronze>,
+	<metaitem:plateDoubleBlackBronze>,
+	<metaitem:plateDoubleWroughtIron>,
+	<metaitem:plateDoubleSteel>,
+	<metaitem:plateDoublePlatinum>,
+	<metaitem:plateDoubleBlackSteel>,
+	<metaitem:plateDoubleBlueSteel>,
+	<metaitem:plateDoubleRedSteel>
 ];
 
 global All_Metal_Heads_From_TFC as IItemStack[] = [

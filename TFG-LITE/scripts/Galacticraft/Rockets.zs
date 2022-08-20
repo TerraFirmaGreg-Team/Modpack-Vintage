@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 // Головоной обтекатель
+
 // Tier 1
 assembler.recipeBuilder()
   .inputs(<galacticraftcore:heavy_plating> * 4)
@@ -10,6 +11,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:nose_cone>)
   .duration(600).EUt(480).buildAndRegister();
+
 // Tier 2
 assembler.recipeBuilder()
   .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
@@ -19,6 +21,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:heavy_nose_cone>)
   .duration(600).EUt(512).buildAndRegister();
+
 // Tier 4
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier4_items:3> * 11)
@@ -33,6 +36,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier4>)
 	.duration(600).EUt(820).buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier5_items:3> * 4)
@@ -47,6 +51,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier5>)
 	.duration(600).EUt(920).buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier6_items:3> * 4)
@@ -61,6 +66,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier6>)
 	.duration(600).EUt(1020).buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier7_items:3> * 4)
@@ -75,6 +81,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier7>)
 	.duration(600).EUt(1120).buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
 	.inputs(<extraplanets:tier8_items:3> * 4)
@@ -89,6 +96,7 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier8>)
 	.duration(600).EUt(1220).buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier9_items:3> * 4)
@@ -103,6 +111,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:nose_cone_tier9>)
   .duration(600).EUt(1320).buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier10_items:3> * 4)
@@ -119,6 +128,7 @@ assembler.recipeBuilder()
   .duration(600).EUt(1420).buildAndRegister();
 
 // Ракетный корпус
+
 // Tier 4
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier4_items:3> * 12)
@@ -132,6 +142,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items:3>)
   .duration(600).EUt(830).buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 12)
@@ -145,6 +156,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items:3>)
   .duration(600).EUt(930).buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier6_items:3> * 12)
@@ -158,6 +170,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier6_items:3>)
   .duration(600).EUt(1030).buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier7_items:3> * 12)
@@ -171,6 +184,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier7>)
   .duration(600).EUt(1130).buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier8_items:3> * 12)
@@ -184,6 +198,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier8>)
   .duration(600).EUt(1230).buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier9_items:3> * 12)
@@ -197,6 +212,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier9>)
   .duration(600).EUt(1330).buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier10_items:3> * 12)
@@ -212,6 +228,7 @@ assembler.recipeBuilder()
   .duration(600).EUt(1430).buildAndRegister();
 
 // Ракетные двигатели
+
 // Tier 1
 assembler.recipeBuilder()
   .inputs(<galacticraftcore:heavy_plating> * 6)
@@ -225,6 +242,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine>)
   .duration(600).EUt(480).buildAndRegister();
+
 // Tier 2
 assembler.recipeBuilder()
   .inputs(<galacticraftplanets:item_basic_mars:3> * 6)
@@ -238,6 +256,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
   .duration(600).EUt(512).buildAndRegister();
+
 // Tier 4
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier4_items:3> * 7)
@@ -252,6 +271,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items>)
   .duration(600).EUt(850).buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier5_items:3> * 7)
@@ -266,6 +286,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items>)
   .duration(600).EUt(950).buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier6_items:3> * 7)
@@ -280,6 +301,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier6_items>)
   .duration(600).EUt(1050).buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier7_items:3> * 7)
@@ -294,6 +316,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier7_items>)
   .duration(600).EUt(1150).buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier8_items:3> * 7)
@@ -308,6 +331,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier8_items>)
   .duration(600).EUt(1250).buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier9_items:3> * 7)
@@ -322,6 +346,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier9_items>)
   .duration(600).EUt(1350).buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
   .inputs(<extraplanets:tier10_items:3> * 7)
@@ -338,6 +363,7 @@ assembler.recipeBuilder()
   .duration(600).EUt(1450).buildAndRegister();
 
 // Ракетные стабилизаторы
+
 // Tier 1
 assembler.recipeBuilder()
    .inputs(<galacticraftcore:heavy_plating> * 4)
@@ -346,6 +372,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:rocket_fins>)
    .duration(600).EUt(482).buildAndRegister();
+
 // Tier 2
 assembler.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
@@ -354,6 +381,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftplanets:item_basic_asteroids:2>)
    .duration(600).EUt(482).buildAndRegister();
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 12)
@@ -361,6 +389,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:2>)
    .duration(600).EUt(560).buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 12)
@@ -368,6 +397,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:2>)
    .duration(600).EUt(660).buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 12)
@@ -375,6 +405,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items:2>)
    .duration(600).EUt(760).buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 12)
@@ -382,6 +413,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:2>)
    .duration(600).EUt(860).buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 12)
@@ -389,6 +421,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:2>)
    .duration(600).EUt(960).buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 12)
@@ -396,6 +429,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:2>)
    .duration(600).EUt(1060).buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 12)
@@ -405,6 +439,7 @@ assembler.recipeBuilder()
    .duration(600).EUt(1160).buildAndRegister();
 
 // Ускорители
+
 // Tier 1
 assembler.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars:3> * 2)	
@@ -419,6 +454,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:engine:1>)
    .duration(600).EUt(512).buildAndRegister();
+
 // Tier 4
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier4_items:3> * 7)	
@@ -432,6 +468,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:1>)
    .duration(580).EUt(840).buildAndRegister();
+
 // Tier 5
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier5_items:3> * 7)	
@@ -445,6 +482,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:1>)
    .duration(580).EUt(940).buildAndRegister();
+
 // Tier 6
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier6_items:3> * 7)	
@@ -458,6 +496,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items:1>)
    .duration(580).EUt(1040).buildAndRegister();
+
 // Tier 7
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier7_items:3> * 7)	
@@ -471,6 +510,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:1>)
    .duration(580).EUt(1140).buildAndRegister();
+
 // Tier 8
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier8_items:3> * 7)	
@@ -484,6 +524,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:1>)
    .duration(580).EUt(1250).buildAndRegister();
+
 // Tier 9
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier9_items:3> * 7)	
@@ -497,6 +538,7 @@ assembler.recipeBuilder()
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:1>)
    .duration(580).EUt(1340).buildAndRegister();
+
 // Tier 10
 assembler.recipeBuilder()
    .inputs(<extraplanets:tier10_items:3> * 7)	
@@ -512,6 +554,7 @@ assembler.recipeBuilder()
    .duration(580).EUt(1440).buildAndRegister();
 
 // Сверх прочные пластины
+
 // Tier 1
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseBlackSteel>.firstItem * 3, <ore:plateDenseAluminium>.firstItem * 2, <ore:plateDenseBronze> * 16])
@@ -519,6 +562,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<galacticraftcore:heavy_plating> * 3)
 	.property("temperature", 3500)
 	.duration(1000).EUt(520).buildAndRegister();
+
 // Tier 2
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
@@ -526,6 +570,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
 	.property("temperature", 4400)
 	.duration(1000).EUt(620).buildAndRegister();
+
 // Tier 3
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
@@ -533,6 +578,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
 	.property("temperature", 5300)
 	.duration(1000).EUt(720).buildAndRegister();
+
 // Tier 4
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTitanium>.firstItem * 3, <ore:plateDenseTungstenSteel>.firstItem * 2, <galacticraftplanets:item_basic_asteroids:5> * 2])
@@ -540,6 +586,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier4_items:3> * 3)
 	.property("temperature", 7100)
 	.duration(1000).EUt(810).buildAndRegister();
+
 // Tier 5
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier4_items:3> * 2])
@@ -547,6 +594,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier5_items:3> * 3)
 	.property("temperature", 8750)
 	.duration(1000).EUt(910).buildAndRegister();
+
 // Tier 6
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseOsmiridium>.firstItem * 3, <ore:plateDenseHsss>.firstItem * 2, <extraplanets:tier5_items:3> * 2])
@@ -554,6 +602,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier6_items:3> * 3)
 	.property("temperature", 10777)
 	.duration(1000).EUt(1010).buildAndRegister();
+
 // Tier 7
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTitanium>.firstItem * 3, <ore:plateDenseTungstenSteel>.firstItem * 2, <extraplanets:tier6_items:3> * 2])
@@ -561,6 +610,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier7_items:3> * 3)
 	.property("temperature", 7100)
 	.duration(1000).EUt(1110).buildAndRegister();
+
 // Tier 8
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier7_items:3> * 2])
@@ -568,6 +618,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier8_items:3> * 3)
 	.property("temperature", 8750)
 	.duration(1000).EUt(1210).buildAndRegister();
+
 // Tier 9
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseOsmiridium>.firstItem * 3, <ore:plateDenseHsss>.firstItem * 2, <extraplanets:tier8_items:3> * 2])
@@ -575,6 +626,7 @@ electric_blast_furnace.recipeBuilder()
 	.outputs(<extraplanets:tier9_items:3> * 3)
 	.property("temperature", 10777)
 	.duration(1000).EUt(1310).buildAndRegister();
+
 // Tier 10
 electric_blast_furnace.recipeBuilder()
 	.inputs([<ore:plateDenseTungstenSteel>.firstItem * 3, <ore:plateDenseOsmiridium>.firstItem * 2, <extraplanets:tier9_items:3> * 2])
@@ -585,6 +637,7 @@ electric_blast_furnace.recipeBuilder()
 
 
 // Ракеты
+
 // Tier 1 - Without Chests
 assembly_line.recipeBuilder()
    .inputs(<galacticraftcore:nose_cone>)
@@ -603,6 +656,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1>)
    .duration(1200).EUt(6000).buildAndRegister();
+
 // Tier 1 - With 1 Chest
 assembly_line.recipeBuilder()
    .inputs(<galacticraftcore:nose_cone>)
@@ -622,6 +676,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1:1>)
    .duration(1200).EUt(6000).buildAndRegister();
+
 // Tier 1 - With 2 Chests
 assembly_line.recipeBuilder()
    .inputs(<galacticraftcore:nose_cone>)
@@ -641,6 +696,7 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftcore:rocket_t1:2>)
    .duration(1200).EUt(6000).buildAndRegister();
+
 // Tier 1 - With 3 Chests
 assembly_line.recipeBuilder()
    .inputs(<galacticraftcore:nose_cone>)
