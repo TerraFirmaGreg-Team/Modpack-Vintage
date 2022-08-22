@@ -267,15 +267,7 @@ mixer.recipeBuilder()
 	.fluidOutputs(<liquid:base_potash_liquor> * 500)
 	.duration(150).EUt(2).buildAndRegister();
 
-// Wild Sugar Cane -> Sugar
-/*
-mixer.recipeBuilder()
-	.inputs(<tfc:plants/sugar_cane> * 5)
-	.fluidInputs(<liquid:fresh_water> * 500)
-	.circuit(19)
-	.outputs(<minecraft:sugar>)
-	.duration(150).EUt(2).buildAndRegister();
-*/
+
 // Wild Sugar Cane -> Cellulose Fibers
 mixer.recipeBuilder()
 	.inputs(<tfc:plants/sugar_cane>)
