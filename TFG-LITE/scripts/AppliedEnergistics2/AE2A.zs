@@ -15,24 +15,18 @@ assembler.recipeBuilder()
 
 // Recycle - Fluid Housing
 macerator.recipeBuilder()
-    .inputs([<aeadditions:storage.casing:1>])
-    .outputs([
-        <metaitem:dustStainlessSteel> * 2,
-        <metaitem:dustTinyStainlessSteel> * 2
-    ])
-    .duration(100)
-    .EUt(16)
-    .buildAndRegister();
+  .inputs([<aeadditions:storage.casing:1>])
+  .outputs([
+    <metaitem:dustStainlessSteel> * 2,
+    <metaitem:dustTinyStainlessSteel> * 2])
+  .duration(100).EUt(16).buildAndRegister();
 arc_furnace.recipeBuilder()
-    .inputs([<aeadditions:storage.casing:1>])
-    .fluidInputs([<liquid:oxygen> * 56])
-    .outputs([
-        <metaitem:ingotStainlessSteel> * 2,
-        <metaitem:nuggetStainlessSteel> * 2
-    ])
-    .duration(56)
-    .EUt(30)
-    .buildAndRegister();
+  .inputs([<aeadditions:storage.casing:1>])
+  .fluidInputs([<liquid:oxygen> * 56])
+  .outputs([
+    <metaitem:ingotStainlessSteel> * 2,
+    <metaitem:nuggetStainlessSteel> * 2])
+  .duration(56).EUt(30).buildAndRegister();
 
 // Advanced Storage Housing
 assembler.recipeBuilder()
@@ -42,24 +36,18 @@ assembler.recipeBuilder()
 
 // Recycle - Advanced Storage Housing
 macerator.recipeBuilder()
-    .inputs([<aeadditions:storage.casing>])
-    .outputs([
-        <metaitem:dustTungstenSteel> * 2,
-        <metaitem:dustTinyTungstenSteel> * 2
-    ])
-    .duration(100)
-    .EUt(16)
-    .buildAndRegister();
+  .inputs([<aeadditions:storage.casing>])
+  .outputs([
+    <metaitem:dustTungstenSteel> * 2,
+    <metaitem:dustTinyTungstenSteel> * 2])
+  .duration(100).EUt(16).buildAndRegister();
 arc_furnace.recipeBuilder()
-    .inputs([<aeadditions:storage.casing>])
-    .fluidInputs([<liquid:oxygen> * 56])
-    .outputs([
-        <metaitem:ingotTungstenSteel> * 2,
-        <metaitem:nuggetTungstenSteel> * 2
-    ])
-    .duration(56)
-    .EUt(30)
-    .buildAndRegister();
+  .inputs([<aeadditions:storage.casing>])
+  .fluidInputs([<liquid:oxygen> * 56])
+  .outputs([
+    <metaitem:ingotTungstenSteel> * 2,
+    <metaitem:nuggetTungstenSteel> * 2])
+  .duration(56).EUt(30).buildAndRegister();
 
 // 256k Storage Component
 assembler.recipeBuilder()
@@ -172,19 +160,19 @@ packer.recipeBuilder()
 
 // 256k Fluid Cell
 packer.recipeBuilder()
-  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:8>])
+  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:4>])
   .outputs([<aeadditions:storage.fluid>])
   .duration(10).EUt(7).buildAndRegister();
 
 // 1024k Fluid Cell
 packer.recipeBuilder()
-  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:9>])
+  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:5>])
   .outputs([<aeadditions:storage.fluid:1>])
   .duration(10).EUt(7).buildAndRegister();
 
 // 4096k Fluid Cell
 packer.recipeBuilder()
-  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:10>])
+  .inputs([<aeadditions:storage.casing:1>, <aeadditions:storage.component:6>])
   .outputs([<aeadditions:storage.fluid:2>])
   .duration(10).EUt(7).buildAndRegister();
 
@@ -192,7 +180,7 @@ packer.recipeBuilder()
 // recipes.addShapeless("oredict_storage_bus", <aeadditions:part.base:12>,
 //   [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
-// ME Жидкостный сборщик
+// Жидкостный сборщик
 recipes.remove(<aeadditions:fluidcrafter>);
 assembler.recipeBuilder()
   .inputs([
