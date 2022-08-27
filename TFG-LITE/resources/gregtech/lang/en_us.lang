@@ -32,6 +32,9 @@ material.banded_iron=Oxide Iron (III)
 
 material.dry_ice=Dry Ice
 
+material.fluix=Fluix
+material.charged_certus_quartz=Charged Certus Quartz
+
 material.mercury_air=Mercury Air
 material.mercury_liquid_air=Liquid Mercury Air
 material.venus_air=Venus Air

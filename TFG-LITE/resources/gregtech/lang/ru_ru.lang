@@ -32,6 +32,9 @@ material.banded_iron=Оксид железа (III)
 
 material.dry_ice=Сухой лёд
 
+material.fluix=Изменчивый кварц
+material.charged_certus_quartz=Заряженный истинный кварц
+
 material.mercury_air=Воздух Меркурия
 material.mercury_liquid_air=Жидкий воздух Меркурия
 material.venus_air=Воздух Венеры
@@ -94,3 +97,6 @@ item.material.oreprefix.oreChunk=%s (Кусок руды)
 
 # Локализация ножей
 item.material.oreprefix.toolHeadKnife=%s (Оголовье ножа)
+
+# Правки до обновы GTCE
+material.lapis=Лазурь
