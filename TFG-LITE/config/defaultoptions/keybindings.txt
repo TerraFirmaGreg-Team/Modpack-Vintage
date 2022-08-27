@@ -10,7 +10,6 @@ key_key.sprint:29:NONE
 key_key.drop:16:NONE
 key_key.inventory:18:NONE
 key_key.chat:20:NONE
-key_key.playerlist:15:NONE
 key_key.pickItem:-98:NONE
 key_key.command:53:NONE
 key_key.screenshot:60:NONE
@@ -32,14 +31,14 @@ key_key.hotbar.7:8:NONE
 key_key.hotbar.8:9:NONE
 key_key.hotbar.9:10:NONE
 key_of.key.zoom:46:NONE
-key_Reload Menu | CTRL + ALT + :0:NONE
-key_Toggle Customization Overlay | CTRL + ALT + :40:NONE
+key_Reload Menu | CTRL + ALT + :19:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :0:NONE
 key_keybind.baublesinventory:48:NONE
 key_key.toggle_shaders:0:NONE
 key_[GC] Galaxy Map:50:NONE
 key_[GC] Open Spaceship Inventory:33:NONE
 key_[GC] Toggle Sensor Goggles Mode:37:NONE
-key_gregtech.key.armor_mode_switch:39:NONE
+key_gregtech.key.armor_mode_switch:50:NONE
 key_gregtech.key.armor_hover:35:NONE
 key_gregtech.key.armor_charging:49:NONE
 key_gregtech.key.tool_aoe_change:47:NONE
@@ -55,6 +54,7 @@ key_config.aunis.mode_down:0:NONE
 key_config.aunis.address_up:0:NONE
 key_config.aunis.address_down:0:NONE
 key_config.aunis.address_edit:210:NONE
+key_key.betterfoliage.gui:66:NONE
 key_key.findme.search:21:NONE
 key_key.ftbutilities.nbt:49:ALT
 key_key.ftbutilities.trash:211:NONE
@@ -70,7 +70,7 @@ key_key.open_wit.desc:0:NONE
 key_key.open_wpt.desc:0:NONE
 key_key.dismount:42:NONE
 key_key.narrator:48:CONTROL
-key_key.toggle_focus.desc:0:NONE
+key_key.toggle_focus.desc:15:NONE
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -115,7 +115,14 @@ key_FpsReducer.key.guiOpen:207:NONE
 key_FpsReducer.key.forceIdle:197:NONE
 key_key.toggleLiquids:38:NONE
 key_key.toggleVisible:0:NONE
+key_key.inventoryhud.toggle:23:NONE
+key_key.inventoryhud.openconfig:24:NONE
+key_key.inventoryhud.togglepot:-1:NONE
+key_key.inventoryhud.togglearm:-1:NONE
+key_key.inventoryhud.toggleall:-1:NONE
 key_invtweaks.key.sort:19:NONE
+key_jecalculation.key.gui_craft:0:NONE
+key_jecalculation.key.gui_math:0:NONE
 key_Open Key Wizard:65:NONE
 key_key.rotateup:200:NONE
 key_key.rotatedown:208:NONE
@@ -126,6 +133,11 @@ key_key.little.mark:50:NONE
 key_key.little.config.item:0:NONE
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
+key_key.oxygen_core.accept:19:NONE
+key_key.oxygen_core.reject:45:NONE
+key_key.oxygen_core.interact:33:NONE
+key_key.oxygen_menu.openMenu:15:NONE
+key_key.teleportation.moveToFavCamp:0:NONE
 key_tombstone.message.knowledge_of_death:0:NONE
 key_key.toolbelt.open:19:NONE
 key_key.toolbelt.cycle.left:0:NONE

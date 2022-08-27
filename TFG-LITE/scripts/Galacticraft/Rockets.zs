@@ -10,6 +10,7 @@ assembler.recipeBuilder()
   .circuit(7)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:nose_cone>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(480).buildAndRegister();
 
 // Tier 2
@@ -20,6 +21,7 @@ assembler.recipeBuilder()
   .circuit(7)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:heavy_nose_cone>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(512).buildAndRegister();
 
 // Tier 4
@@ -35,6 +37,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.iv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier4>)
+   .property("cleanroom", "cleanroom")
 	.duration(600).EUt(820).buildAndRegister();
 
 // Tier 5
@@ -50,6 +53,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.iv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier5>)
+   .property("cleanroom", "cleanroom")
 	.duration(600).EUt(920).buildAndRegister();
 
 // Tier 6
@@ -65,6 +69,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier6>)
+   .property("cleanroom", "cleanroom")
 	.duration(600).EUt(1020).buildAndRegister();
 
 // Tier 7
@@ -80,6 +85,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier7>)
+   .property("cleanroom", "cleanroom")
 	.duration(600).EUt(1120).buildAndRegister();
 
 // Tier 8
@@ -95,6 +101,7 @@ assembler.recipeBuilder()
 	.inputs(<metaitem:sensor.luv> * 2)
 	.fluidInputs([<liquid:soldering_alloy> * 288])
 	.outputs(<extraplanets:nose_cone_tier8>)
+   .property("cleanroom", "cleanroom")
 	.duration(600).EUt(1220).buildAndRegister();
 
 // Tier 9
@@ -110,6 +117,7 @@ assembler.recipeBuilder()
   .inputs(<metaitem:sensor.zpm> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:nose_cone_tier9>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1320).buildAndRegister();
 
 // Tier 10
@@ -125,6 +133,7 @@ assembler.recipeBuilder()
   .inputs(<metaitem:sensor.zpm> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:nose_cone_tier10>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1420).buildAndRegister();
 
 // Ракетный корпус
@@ -141,6 +150,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items:3>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(830).buildAndRegister();
 
 // Tier 5
@@ -155,6 +165,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
    .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items:3>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(930).buildAndRegister();
 
 // Tier 6
@@ -169,6 +180,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier6_items:3>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1030).buildAndRegister();
 
 // Tier 7
@@ -183,6 +195,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier7>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1130).buildAndRegister();
 
 // Tier 8
@@ -197,6 +210,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier8>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1230).buildAndRegister();
 
 // Tier 9
@@ -211,6 +225,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier9>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1330).buildAndRegister();
 
 // Tier 10
@@ -225,6 +240,7 @@ assembler.recipeBuilder()
 	.inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<contenttweaker:rocketbody_tier10>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1430).buildAndRegister();
 
 // Ракетные двигатели
@@ -241,6 +257,7 @@ assembler.recipeBuilder()
   .circuit(8)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(480).buildAndRegister();
 
 // Tier 2
@@ -255,6 +272,7 @@ assembler.recipeBuilder()
   .circuit(8)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(512).buildAndRegister();
 
 // Tier 4
@@ -270,6 +288,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(850).buildAndRegister();
 
 // Tier 5
@@ -285,6 +304,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(950).buildAndRegister();
 
 // Tier 6
@@ -300,6 +320,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier6_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1050).buildAndRegister();
 
 // Tier 7
@@ -315,6 +336,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier7_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1150).buildAndRegister();
 
 // Tier 8
@@ -330,6 +352,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier8_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1250).buildAndRegister();
 
 // Tier 9
@@ -345,6 +368,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier9_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1350).buildAndRegister();
 
 // Tier 10
@@ -360,6 +384,7 @@ assembler.recipeBuilder()
   .inputs(<gcym:unique_casing:3> * 2)
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier10_items>)
+  .property("cleanroom", "cleanroom")
   .duration(600).EUt(1450).buildAndRegister();
 
 // Ракетные стабилизаторы
@@ -371,6 +396,7 @@ assembler.recipeBuilder()
    .circuit(10)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:rocket_fins>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(482).buildAndRegister();
 
 // Tier 2
@@ -380,6 +406,7 @@ assembler.recipeBuilder()
    .circuit(10)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftplanets:item_basic_asteroids:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(482).buildAndRegister();
 
 // Tier 4
@@ -388,6 +415,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(560).buildAndRegister();
 
 // Tier 5
@@ -396,6 +424,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(660).buildAndRegister();
 
 // Tier 6
@@ -412,6 +441,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(860).buildAndRegister();
 
 // Tier 8
@@ -420,6 +450,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(960).buildAndRegister();
 
 // Tier 9
@@ -428,6 +459,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(1060).buildAndRegister();
 
 // Tier 10
@@ -436,6 +468,7 @@ assembler.recipeBuilder()
    .inputs(<ore:screwAluminium> * 64)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier10_items:2>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(1160).buildAndRegister();
 
 // Ускорители
@@ -453,6 +486,7 @@ assembler.recipeBuilder()
    .circuit(9)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<galacticraftcore:engine:1>)
+   .property("cleanroom", "cleanroom")
    .duration(600).EUt(512).buildAndRegister();
 
 // Tier 4
@@ -467,6 +501,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier4_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(840).buildAndRegister();
 
 // Tier 5
@@ -481,6 +516,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier5_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(940).buildAndRegister();
 
 // Tier 6
@@ -495,6 +531,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier6_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(1040).buildAndRegister();
 
 // Tier 7
@@ -509,6 +546,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier7_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(1140).buildAndRegister();
 
 // Tier 8
@@ -523,6 +561,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier8_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(1250).buildAndRegister();
 
 // Tier 9
@@ -537,6 +576,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier9_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(1340).buildAndRegister();
 
 // Tier 10
@@ -551,6 +591,7 @@ assembler.recipeBuilder()
    .inputs(<galacticraftcore:air_vent> * 2)
    .fluidInputs([<liquid:soldering_alloy> * 288])
    .outputs(<extraplanets:tier10_items:1>)
+   .property("cleanroom", "cleanroom")
    .duration(580).EUt(1440).buildAndRegister();
 
 // Сверх прочные пластины
@@ -796,7 +837,82 @@ assembly_line.recipeBuilder()
    .fluidInputs([<liquid:copper> * 4608])
    .outputs(<galacticraftplanets:rocket_t2:3>)
    .duration(1200).EUt(9000).buildAndRegister();
-
+// Rockets 3 Tiers 
+// Tier 3 - Without Chests
+assembly_line.recipeBuilder()
+   .inputs(<galacticraftplanets:heavy_nose_cone>)
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 36)
+   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
+   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
+   .inputs(<galacticraftcore:oil_canister_partial:1001> * 12)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryIv>)
+   .inputs(<contenttweaker:lander_tier2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitLuv> * 16)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3>)
+   .duration(1200).EUt(12000).buildAndRegister();
+// Tier 3 - With 1 Chest
+assembly_line.recipeBuilder()
+   .inputs(<galacticraftplanets:heavy_nose_cone>)
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 36)
+   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
+   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
+   .inputs(<galacticraftcore:oil_canister_partial:1001> * 12)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryIv>)
+   .inputs(<contenttweaker:lander_tier2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitLuv> * 16)
+   .inputs(<metaitem:crate.steel>)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:1>)
+   .duration(1200).EUt(12000).buildAndRegister();
+// Tier 3 - With 2 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galacticraftplanets:heavy_nose_cone>)
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 36)
+   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
+   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
+   .inputs(<galacticraftcore:oil_canister_partial:1001> * 12)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryIv>)
+   .inputs(<contenttweaker:lander_tier2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitLuv> * 16)
+   .inputs(<metaitem:crate.stainless_steel> * 2)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:2>)
+   .duration(1200).EUt(12000).buildAndRegister();
+// Tier 3 - With 3 Chests
+assembly_line.recipeBuilder()
+   .inputs(<galacticraftplanets:heavy_nose_cone>)
+   .inputs(<galacticraftplanets:item_basic_asteroids:5> * 36)
+   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
+   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
+   .inputs(<galacticraftcore:oil_canister_partial:1001> * 12)
+   .inputs(<ore:wireGtSingleIndiumTinBariumTitaniumCuprate> * 16)
+   .inputs(<ore:batteryIv>)
+   .inputs(<contenttweaker:lander_tier2>)
+   .inputs(<metaitem:electric.motor.luv> * 4)
+   .inputs(<metaitem:emitter.luv> * 4)
+   .inputs(<ore:circuitLuv> * 16)
+   .inputs(<metaitem:crate.titanium> * 3)
+   .fluidInputs([<liquid:soldering_alloy> * 9216])
+   .fluidInputs([<liquid:lead> * 4608])
+   .fluidInputs([<liquid:copper> * 4608])
+   .outputs(<galacticraftplanets:rocket_t3:3>)
+   .duration(1200).EUt(12000).buildAndRegister();
 // Tier 4 - Without Chests
 assembly_line.recipeBuilder()
    .inputs(<extraplanets:nose_cone_tier4>)

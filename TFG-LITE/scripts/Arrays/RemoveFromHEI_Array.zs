@@ -5,14 +5,33 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 // Categories
-JEI.hideCategory("minecraft.anvil");
-JEI.hideCategory("appliedenergistics2.inscriber");
-JEI.hideCategory("tfcflorae.casting");
-JEI.hideCategory("ftbquests.quests");
-JEI.hideCategory("planetprogression.satellite.builder");
-JEI.hideCategory("mpestle");
-JEI.hideCategory("galacticraft.ingotcompressor");
+// JEI.hideCategory("minecraft.anvil");
+// JEI.hideCategory("appliedenergistics2.inscriber");
+// JEI.hideCategory("tfcflorae.casting");
+// JEI.hideCategory("ftbquests.quests");
+// JEI.hideCategory("planetprogression.satellite.builder");
+// JEI.hideCategory("mpestle");
+// JEI.hideCategory("galacticraft.ingotcompressor");
 
+val hideCategory as string[] = [
+	"galacticraft.rocketT1",
+	"galacticraft.buggy",
+	"galacticraft.oxygencompressor",
+	"minecraft.anvil",
+	"appliedenergistics2.inscriber",
+	"tfcflorae.casting",
+	"ftbquests.quests",
+	"planetprogression.satellite.builder",
+	"mpestle",
+	"galacticraft.ingotcompressor",
+	"galacticraft.rocketT3",
+	"galacticraft.astroMiner",
+	"galacticraft.rocketT2",
+	"galacticraft.cargoRocket"
+];
+for item in hideCategory {
+	JEI.hideCategory(item);
+}
 
 // Скрытие предметов и удаление рецептов верстака
 
@@ -1992,7 +2011,7 @@ val ExtraPlanets as IItemStack[] = [
 	<extraplanets:tier10_items:4>
 ];
 for item in ExtraPlanets {
-    //JEI.removeAndHide(item);
+    JEI.removeAndHide(item);
 }
 
 val GTFO as IItemStack[] = [

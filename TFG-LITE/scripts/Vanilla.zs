@@ -13,7 +13,9 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:leather_boots>,
     <minecraft:bucket>,
     <minecraft:enchanting_table>,
-    <minecraft:name_tag>
+    <minecraft:name_tag>,
+    <minecraft:daylight_detector>,
+    <minecraft:comparator>
 ];
 
 val RemoveItemRecipesByName = [

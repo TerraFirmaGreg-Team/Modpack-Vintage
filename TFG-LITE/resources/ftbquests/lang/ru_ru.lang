@@ -40,7 +40,7 @@ tfg.quests.primitive.stone_axe.title=Каменная топор!
 tfg.quests.primitive.stone_axe.subtitle=&aУстройте геноцид деревьев!
 
 tfg.quests.primitive.stone_knife.title=Каменный нож!
-tfg.quests.primitive.stone_knife.subtitle=&aРезня!
+tfg.quests.primitive.stone_knife.subtitle=При грамотном обращении с камнем можно сделать сразу два лезвия ножа. Изготовьте обе новые головки инструментов с помощью палок, чтобы сделать правильные каменные инструменты.
 
 tfg.quests.primitive.stone_hammer.title=Каменный молот!
 tfg.quests.primitive.stone_hammer.subtitle=&aЭто молот не может копать руду в отличие от металлического молота. Данный молот используется только для создания вашей первой каменной наковальни. Вы можете не выполнять данный квест, а сразу же сделать металлический молот и сделать наковальню при помощи его.
@@ -64,7 +64,7 @@ tfg.quests.primitive.molds.subtitle=&aНачнем с того, что вам м
 tfg.quests.primitive.jug.title=Пещерный стакан!
 tfg.quests.primitive.jug.subtitle=&aЭта штука обжаривается также в яме, как и формы. Если вы не знаете как обжарить форму, смотрите квест о формах. Нажмите кувшином по воде, чтобы набрать немного воды. Отлично. Теперь вы сможете уйти от пресного источника чуть дальше, чтобы исследовать мир.
 
-tfg.quests.primitive.tongs.subtitle=Если вы несете горячие жидкости или предметы, вас поджгёт, если вы несете холодные жидкости, вы замедляетесь. Чтоб нейтрализовать эти эффекты, сделайте щипцы. И положите их в слот для щита (левая рука). And put them in the shield slot (left hand).
+tfg.quests.primitive.tongs.subtitle=Если вы несете горячие жидкости или предметы, вас поджгёт, если вы несете холодные жидкости, вы замедляетесь. Чтоб нейтрализовать эти эффекты, сделайте щипцы. И положите их в слот для щита (левая рука).
 
 tfg.quests.primitive.vessel.title=Чуть больше чем просто стакан!
 tfg.quests.primitive.vessel.subtitle=&aЭто банка, в которой вы будете обжигать и расплавлять металлы, а также хранить различную еду, так что это очень полезный предмет, предлагаю вам его обжечь. Встроенное силовое поле не позволяет никаким жидкостям кроме плавленных металлов(а также всякой вкуснятины, в виде еды) проникать внутрь.
@@ -131,47 +131,65 @@ tfg.quests.primitive.logs.desc=Сделав топор из разбросанн
 tfg.quests.primitive.coal.title=Обычный уголь!
 tfg.quests.primitive.coal.subtitle=&aУголь в виде куска с камнем имеет более низкое время горения, по понятным причинам, очищенный от камня, имеет дефолтное время плавление в 1600 тиков. Оба этих углей можете использовать также как и древесный.
 
-tfg.quests.primitive.copper_saw_head.title=
-tfg.quests.primitive.copper_saw_head.subtitle=
+tfg.quests.primitive.knifegt.title=Первый медный нож
+tfg.quests.primitive.knifegt.subtitle=&aОн намного лучше камня, по крайней мере, из-за его прочности.
 
-tfg.quests.primitive.copper_hammer_head.title=
-tfg.quests.primitive.copper_hammer_head.subtitle=
+tfg.quests.primitive.copper_saw_head.title=Оголовье пилы
+tfg.quests.primitive.copper_saw_head.subtitle=Теперь, когда у вас есть металл, вы сможете превращать бревна в более полезные вещи, например, в доски! Во-первых, вам нужно литье или наковальня для пилы. Она в основном используется в крафте, но он может срубить деревья, если вы этого захотите.
 
-tfg.quests.primitive.copper_pick_head.title=
-tfg.quests.primitive.copper_pick_head.subtitle=
+tfg.quests.primitive.copper_hammer_head.title=Оголовье молота
+tfg.quests.primitive.copper_hammer_head.subtitle=Чтобы сделать флюс или использовать наковальню, вам понадобится молоток.
 
-tfg.quests.primitive.copper_prospect_head.title=
-tfg.quests.primitive.copper_prospect_head.subtitle=
+tfg.quests.primitive.copper_pick_head.title=Оголовье кирки
+tfg.quests.primitive.copper_pick_head.subtitle=Чтобы вынуть инструмент из формы, подождите, пока он остынет, и поместите его в сетку крафта, чтобы достать его, или щелкните правой кнопкой мыши. Затем возьмите инструментальную головку и положите с палкой в крафте, чтобы получить свою первую кирку!
 
-tfg.quests.primitive.copper_chisel_head.title=
-tfg.quests.primitive.copper_chisel_head.subtitle=
+tfg.quests.primitive.copper_prospect_head.title=Оголовье геологического молота
+tfg.quests.primitive.copper_prospect_head.subtitle=Самородки земли хорошо указывают жилы, но вам нужно что-то более точное. Поработайте на наковальне или отлейте геологический молоток, чтобы начать разведку. Требуется всего 144 единиц любого инструментального металла, и все они одинаково полезно.
 
-tfg.quests.primitive.copper_knife_head.title=
-tfg.quests.primitive.copper_knife_head.subtitle=
+tfg.quests.primitive.copper_chisel_head.title=Оголовье стамески
+tfg.quests.primitive.copper_chisel_head.subtitle=Высекать — это простой способ получить лестницы и плиты, и единственный способ получить гладкие блоки. Чтобы что-то выдолбить, вам понадобится стамеска, которая должна быть сделана из металла, и молоток, который можно сделать из камня.
 
-tfg.quests.primitive.copper_file_head.title=
-tfg.quests.primitive.copper_file_head.subtitle=
+tfg.quests.primitive.copper_knife_head.title=Оголовье ножа
+tfg.quests.primitive.copper_knife_head.subtitle=&aРезня!
 
-tfg.quests.primitive.saw.title=Медная пила
+tfg.quests.primitive.copper_file_head.title=Оголовье напильника
+tfg.quests.primitive.copper_file_head.subtitle=§9§lНапильник:§r инструмент для крафта. Вот и все. да.
+
+tfg.quests.primitive.saw.title=Первая медная пила
 tfg.quests.primitive.saw.subtitle=&aСделайте медную пилу, чтобы рубить деревья еще быстрее, ну или используйте ее более рационально, например для распилки бревен в пиломатериалы.
 
-tfg.quests.primitive.copper_hammer.title=
+tfg.quests.primitive.copper_hammer.title=Первый медный молот
 tfg.quests.primitive.copper_hammer.subtitle=&aВыглядит, как план. И почему этого нет в GregTech? Напомню, что уже сейчас вы можете перерабатывать руды, так что дерзайте, накопайте как можно больше!
 
 tfg.quests.primitive.copper_pick.title=Первая медная кирка
 tfg.quests.primitive.copper_pick.subtitle=&aВаша первая кирка. Я считаю, что это лучшее вложение меди.
 
-tfg.quests.primitive.copper_prospect.title=
-tfg.quests.primitive.copper_prospect.subtitle=&aГеологический молот, для поиска ваших первых блочных руд.
+tfg.quests.primitive.copper_prospect.title=Первый геологический молот
+tfg.quests.primitive.copper_prospect.subtitle=&aЩелкните правой кнопкой мыши на Земле, чтобы использовать геологический молот. Она проверяет наличие руды в кубе из 25 блоков и сообщает, что находит и в какой концентрации.
+tfg.quests.primitive.copper_prospect.desk1=Примечание: кирка никогда не обманывает о существовании рудной жилы, но иногда она не может обнаружить находящуюся там жилу. Чтобы бороться с этим, просто щелкните другой блок поблизости».
+tfg.quests.primitive.copper_prospect.desk2=Метод разведки
+tfg.quests.primitive.copper_prospect.desk3=1. Щелкайте киркой старателя, пока не обнаружите следы руды.
+tfg.quests.primitive.copper_prospect.desk4=2. Пройдитесь, пока не обнаружите очень много образцов.
+tfg.quests.primitive.copper_prospect.desk5=3. Идите в одном направлении, нажимая на землю, пока не исчезнет надпись "очень большая выборка". Отметьте это место. 
+tfg.quests.primitive.copper_prospect.desk6=4. Вернитесь на середину и проделайте то же самое в другом направлении.
+tfg.quests.primitive.copper_prospect.desk7=5 ... Центр двух линий, образованных вашими отметинами, должен быть центром вены».
 
-tfg.quests.primitive.copper_chisel.title=
-tfg.quests.primitive.copper_chisel.subtitle=
+tfg.quests.primitive.copper_chisel.title=Первая медная стамеска
+tfg.quests.primitive.copper_chisel.subtitle=Режимы стамески 
+tfg.quests.primitive.copper_chisel.desk1=Нажмите §4M§4 для переключения режимов долота.
+tfg.quests.primitive.copper_chisel.desk2=Сглаживание: Этот параметр позволяет необработанный камень в гладкий камень.
+tfg.quests.primitive.copper_chisel.desk3=Лестница: Щелкните правой кнопкой мыши по полному блоку, чтобы превратить его в лестницу.
+tfg.quests.primitive.copper_chisel.desk4=Плиты: Превратите полные блоки в плиты.
+tfg.quests.primitive.copper_chisel.desk5=Примечание: можно точить только блоки с лестницами/плитами."
 
-tfg.quests.primitive.copper_knife.title=Первый медный ножик
+tfg.quests.primitive.copper_knife.title=Первый медный нож
 tfg.quests.primitive.copper_knife.subtitle=&aОн намного лучше чем каменный, как минимум из-за прочности.
 
-tfg.quests.primitive.copper_file.title=
-tfg.quests.primitive.copper_file.subtitle=
+tfg.quests.primitive.copper_file.title=Первый медный напильник!
+tfg.quests.primitive.copper_file.subtitle=&aСколько с него начиналось приключений.
+
+tfg.quests.primitive.leather.title=Кожа!
+tfg.quests.primitive.leather.subtitle=&aСкрафтите кожу, рецепт есть в JEI.
 
 tfg.quests.primitive.planks.title=Пиломатериалы!
 tfg.quests.primitive.planks.subtitle=&aИспользуя пилу получаем этот проходняк.
@@ -185,12 +203,6 @@ tfg.quests.primitive.woodchest.task.chest.title=&aЛюбой сундук
 tfg.quests.primitive.woodencrate.subtitle=&aВаш первый ящик, который умеет хранить в себе руды в виде блока.
 
 tfg.quests.primitive.woodenbarrel.subtitle=&aДеревянная бочка, похожа на бочку тфк, но в ней нельзя ничего крафтить, просто хранилище жидкости, совместимое с GT машинками.
-
-tfg.quests.primitive.file.title=Первый медный напильник!
-tfg.quests.primitive.file.subtitle=&aСколько с него начиналось приключений.
-
-tfg.quests.primitive.leather.title=Кожа!
-tfg.quests.primitive.leather.subtitle=&aСкрафтите кожу, рецепт есть в JEI.
 
 tfg.quests.primitive.barrel.title=Бочка!
 tfg.quests.primitive.barrel.subtitle=&aОбезьянка воду налила, вода в бочке осталась.
@@ -238,9 +250,9 @@ tfg.quests.primitive.bloomery.subtitle=&aЛюк обладающий силой 
 tfg.quests.primitive.ironingot.title=Слиток кованного железа
 tfg.quests.primitive.ironingot.subtitle=&aИ сколько у вас это заняло времени? В ванилле это 10минут, а здесь уже.. хм.. 40 часов?
 
-tfg.quests.primitive.bellows.subtitle=&aКузнечные меха, которые используются, чтобы увеличить температуру в угольной плавильне, или доменной печи до 9999999 градусов по Цельсию, ходят легенды, что кому-то удалось расплавить в данной доменной печи Нейтроний.
-
 tfg.quests.primitive.bowlmount.subtitle=Возмите жёлоб в руки, положите молот на панель быстрого доступа, и ударьте по стволу гевеи или резиновому дерева(Rubber fig)
+
+tfg.quests.primitive.bellows.subtitle=&aКузнечные меха, которые используются, чтобы увеличить температуру в угольной плавильне, или доменной печи до 9999999 градусов по Цельсию, ходят легенды, что кому-то удалось расплавить в данной доменной печи Нейтроний.
 
 tfg.quests.primitive.climatestation1.subtitle=&aСовет для начинающих огородников: покрывайте растения синей краской! Они растут лучше. А если вы уже смешарик, то используйте данный блок, как контроллер теплицы.
 
@@ -1385,12 +1397,12 @@ tfg.quests.mv.believe.subtitle=Для этого реактивного ранц
 tfg.quests.mv.believe.desc1=Заполните его, как если бы вы заполняли Барабан.
 tfg.quests.mv.believe.desc2=Нажмите §4H§r (по умолчанию), чтобы включить режим наведения
 
-tfg.quests.mv.polyэтилен.title=Полиэтилен
-tfg.quests.mv.polyэтилен.subtitle=§oВаш первый полимер! Или, если вы хотите быть менее причудливым, просто назовите это пластиком, но сначала спрячьтесь за угол.§r
-tfg.quests.mv.polyэтилен.desc1=Для процесса полимеризации добавьте §aкислород§r. Это лучше, чем воздух.
-tfg.quests.mv.polyэтилен.desc2=Затем затвердите, как с резиной.
-tfg.quests.mv.polyэтилен.desc3=§aПолиэтилен (PE)§r — это ключ, открывающий §6многие новые вещи§r. Чаще всего он используется в форме §dпластин§r или §dжидкости§r.
-tfg.quests.mv.polyэтилен.desc4=Здесь нет спойлеров! Давайте разберемся, что он делает со всеми следующими квестами, один за другим.
+tfg.quests.mv.polyethylene.title=Полиэтилен
+tfg.quests.mv.polyethylene.subtitle=§oВаш первый полимер! Или, если вы хотите быть менее причудливым, просто назовите это пластиком, но сначала спрячьтесь за угол.§r
+tfg.quests.mv.polyethylene.desc1=Для процесса полимеризации добавьте §aкислород§r. Это лучше, чем воздух.
+tfg.quests.mv.polyethylene.desc2=Затем затвердите, как с резиной.
+tfg.quests.mv.polyethylene.desc3=§aПолиэтилен (PE)§r — это ключ, открывающий §6многие новые вещи§r. Чаще всего он используется в форме §dпластин§r или §dжидкости§r.
+tfg.quests.mv.polyethylene.desc4=Здесь нет спойлеров! Давайте разберемся, что он делает со всеми следующими квестами, один за другим.
 
 tfg.quests.mv.polyvinylchloride.title=Поливинилхлорид
 tfg.quests.mv.polyvinylchloride.subtitle=§oХорошо, вы уже сделали полимер, как насчет того, чтобы сделать еще один?§r

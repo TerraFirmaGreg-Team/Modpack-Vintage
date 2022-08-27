@@ -109,7 +109,8 @@ val RemoveItemRecipes as IItemStack[] = [
   <appliedenergistics2:part:460>,
   <appliedenergistics2:part:140>,
   <appliedenergistics2:interface>,
-  <appliedenergistics2:fluid_interface>
+  <appliedenergistics2:fluid_interface>,
+  <appliedenergistics2:fluix_block>
 ];
 
 // --- Удаление рецептов
@@ -710,10 +711,6 @@ extruder.recipeBuilder()
   .duration(20).EUt(16).buildAndRegister();
 
 // Annihilation Core
-recipes.addShaped("tfg/ae2/annihilation_core", <appliedenergistics2:material:44>, [
-  [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>],
-  [<appliedenergistics2:material:24>, <ore:gemCertusQuartz>, <appliedenergistics2:material:24>],
-  [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>]]);
 recipes.addShaped("tfg/ae2/annihilation_core_alt", <appliedenergistics2:material:44> * 2, [
   [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>],
   [<appliedenergistics2:material:24>, <ore:crystalPureCertusQuartz>, <appliedenergistics2:material:24>],
@@ -723,7 +720,7 @@ assembler.recipeBuilder()
   .inputs([
 		<ore:stickAluminium> * 2,
 		<appliedenergistics2:material:24> * 2,
-		<ore:gemCertusQuartz> | <ore:crystalPureCertusQuartz>
+		<ore:crystalPureCertusQuartz>
   ])
   .fluidInputs([<liquid:plastic> * 144])
   .outputs([<appliedenergistics2:material:44> * 4])
@@ -731,10 +728,6 @@ assembler.recipeBuilder()
   .duration(20).EUt(7680).buildAndRegister();
 
 // Formation Core
-recipes.addShaped("tfg/ae2/formation_core", <appliedenergistics2:material:43>, [
-  [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>],
-  [<appliedenergistics2:material:24>, <ore:gemNetherQuartz>, <appliedenergistics2:material:24>],
-  [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>]]);
 recipes.addShaped("tfg/ae2/formation_core_alt", <appliedenergistics2:material:43> * 2, [
   [<ore:stickAluminium>, <appliedenergistics2:material:24>, <ore:stickAluminium>],
   [<appliedenergistics2:material:24>, <ore:crystalPureNetherQuartz>, <appliedenergistics2:material:24>],
@@ -744,7 +737,7 @@ assembler.recipeBuilder()
   .inputs([
     <ore:stickAluminium> * 2,
     <appliedenergistics2:material:24> * 2,
-    <ore:gemNetherQuartz> | <ore:crystalPureNetherQuartz>
+    <ore:crystalPureNetherQuartz>
   ])
   .fluidInputs([<liquid:plastic> * 144])
   .outputs([<appliedenergistics2:material:43> * 4])
@@ -782,7 +775,7 @@ recipes.addShaped("tfg/ae2/wireless_booster", <appliedenergistics2:material:42>,
 
 // Fluix Pearl
 chemical_reactor.recipeBuilder()
-  .inputs(<ore:gemFluix> * 4)
+  .inputs(<ore:crystalPureFluix> * 4)
   .inputs(<minecraft:ender_eye>)
   .fluidInputs([<liquid:fluix> * 400])
   .outputs(<appliedenergistics2:material:9>)
@@ -1796,3 +1789,85 @@ assembler.recipeBuilder()
   .outputs([<appliedenergistics2:portable_cell>])
   .property("cleanroom", "cleanroom")
   .duration(200).EUt(480).buildAndRegister();
+// Флакс блок
+compressor.recipeBuilder()
+    .inputs([<ore:crystalFluix> * 4])
+    .outputs([<appliedenergistics2:fluix_block>])
+    .duration(300).EUt(480).buildAndRegister();
+compressor.recipeBuilder()
+    .inputs([<ore:crystalPureFluix> * 8])
+    .outputs([<appliedenergistics2:fluix_block>])
+    .duration(300).EUt(480).buildAndRegister();
+// Флакс линза
+lathe.recipeBuilder()
+    .inputs([<metaitem:plateFluix>])
+    .outputs([
+        <metaitem:lensFluix>,
+        <metaitem:dustSmallFluix>])
+    .duration(1200).EUt(120).buildAndRegister();
+// Флакс жидкость
+mixer.recipeBuilder()
+    .inputs([
+        <minecraft:redstone>,
+        <metaitem:dustNetherQuartz>
+    ])
+    .fluidInputs([<liquid:charged_certus_quartz> * 144])
+    .fluidOutputs([<liquid:fluix> * 144])
+    .duration(20).EUt(480).buildAndRegister();
+mixer.recipeBuilder()
+    .inputs([
+        <minecraft:redstone>,
+        <metaitem:dustChargedCertusQuartz>
+    ])
+    .fluidInputs([<liquid:nether_quartz> * 144])
+    .fluidOutputs([<liquid:fluix> * 144])
+    .duration(20).EUt(480).buildAndRegister();
+mixer.recipeBuilder()
+    .inputs([
+        <metaitem:dustNetherQuartz>,
+        <metaitem:dustChargedCertusQuartz>
+    ])
+    .fluidInputs([<liquid:redstone> * 144])
+    .fluidOutputs([<liquid:fluix> * 144])
+    .duration(20).EUt(480).buildAndRegister();
+extractor.recipeBuilder()
+    .inputs([<ore:crystalPureFluix>])
+    .fluidOutputs([<liquid:fluix> * 72])
+    .duration(20).EUt(30).buildAndRegister();
+extractor.recipeBuilder()
+    .inputs([<ore:crystalFluix>])
+    .fluidOutputs([<liquid:fluix> * 144])
+    .duration(20).EUt(7).buildAndRegister();
+extractor.recipeBuilder()
+    .inputs([<appliedenergistics2:fluix_block>])
+    .fluidOutputs([<liquid:fluix> * 576])
+    .duration(80).EUt(30).buildAndRegister();
+
+// Certus Quartz (Override)
+extractor.findRecipe(30, [<metaitem:blockCertusQuartz>], null).remove();
+extractor.recipeBuilder()
+    .inputs([<metaitem:blockCertusQuartz>])
+    .fluidOutputs([<liquid:certus_quartz> * 576])
+    .duration(80)
+    .EUt(30)
+    .buildAndRegister();
+extractor.recipeBuilder()
+    .inputs([<ore:crystalPureCertusQuartz>])
+    .fluidOutputs([<liquid:certus_quartz> * 72])
+    .duration(20)
+    .EUt(30)
+    .buildAndRegister();
+
+// Charged Certus Quartz Crystal
+electrolyzer.recipeBuilder()
+    .fluidInputs([<liquid:certus_quartz> * 144])
+    .fluidOutputs([<liquid:charged_certus_quartz> * 144])
+    .duration(100)
+    .EUt(480)
+    .buildAndRegister();
+extractor.recipeBuilder()
+    .inputs([<appliedenergistics2:material:1>])
+    .fluidOutputs([<liquid:charged_certus_quartz> * 144])
+    .duration(20)
+    .EUt(7)
+    .buildAndRegister();

@@ -278,10 +278,10 @@ customization {
   bouncing = true
   vanilla-like = false
   orientation_element = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
-  x = 140
+  x = 279
   actionid = dfe9da8d-e635-4473-9bca-9f30ff0e15a41661549675641
   action = addsplash
-  y = 95
+  y = 177
   vr:showif:language = true
 }
 
@@ -297,9 +297,10 @@ customization {
   bouncing = true
   vanilla-like = false
   orientation_element = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
-  x = 140
+  x = 279
   actionid = 399bfb88-eed1-409e-8586-9ada544886ea1661549525291
   action = addsplash
-  y = 95
+  y = 177
   vr:showif:language = true
 }
+

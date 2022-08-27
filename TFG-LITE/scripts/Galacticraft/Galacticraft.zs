@@ -86,7 +86,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:enclosed:13>,
 	<galacticraftcore:enclosed:1>,
 	<galacticraftplanets:grapple>,
-	<galacticraftcore:nose_cone>
+	<galacticraftcore:nose_cone>,
+   <galacticraftcore:compact_workbench>
 ];
 
 // --- Удаление рецептов
@@ -559,18 +560,21 @@ assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateDenseTin> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(128).buildAndRegister();
 // Средний
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.mv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 4, <metaitem:electric.pump.mv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(256).buildAndRegister();
 // Тяжелый
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.hv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 6, <metaitem:electric.pump.hv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(512).buildAndRegister();
 
 // Гидравлический подьемник
@@ -584,28 +588,34 @@ assembler.recipeBuilder()
 forming_press.recipeBuilder()
    .inputs(<ore:plateDenseAluminium> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_strong> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_strong> * 5)
    .outputs(<galacticraftcore:space_glass_strong:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
    .inputs(<ore:ingotTin> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_vanilla> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_vanilla> * 5)
    .outputs(<galacticraftcore:space_glass_vanilla:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
    .inputs(<ore:ingotAluminum> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_clear> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_clear> * 5)
    .outputs(<galacticraftcore:space_glass_clear:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 // Грузовой загрузчик
@@ -642,3 +652,21 @@ for i in 0 .. 16 {
       .outputs([gcParachute[i]])
       .duration(20).EUt(7).buildAndRegister();
 }
+
+// Тир 1 лэндер
+recipes.addShaped("tfg/galacticraft/rocket_modules", <contenttweaker:lander_tier1>,
+   [[<galacticraftcore:basic_item:19>, <ore:plateBlackSteel>, <ore:plateBlackSteel>],
+   [<ore:plateBlackSteel>, <galacticraftcore:buggymat:1>, <galacticraftcore:heavy_plating>],
+   [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
+
+// Тир 3 лэндер
+recipes.addShaped("tfg/galacticraft/lander_tier_2", <contenttweaker:lander_tier2>,
+   [[<galacticraftcore:canvas>, <ore:gc.parachute>, <galacticraftcore:canvas>],
+   [<ore:string>, <contenttweaker:lander_tier1>, <ore:string>],
+   [<galacticraftcore:canvas>, <ore:string>, <galacticraftcore:canvas>]]);
+
+// Тир 3 лэндер
+recipes.addShaped("tfg/galacticraft/lander_tier_3", <contenttweaker:lander_tier3>,
+   [[<ore:plateBlackSteel>, <ore:chestWood>, <ore:plateBlackSteel>],
+   [<galacticraftcore:steel_pole>, <contenttweaker:lander_tier2>, <galacticraftcore:steel_pole>],
+   [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);

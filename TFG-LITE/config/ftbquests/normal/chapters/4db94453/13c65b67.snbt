@@ -3,8 +3,8 @@
 	icon: {
 		id: "appliedenergistics2:portable_cell",
 		tag: {
-			internalMaxPower: 200000.0d,
-			internalCurrentPower: 200000.0d
+			internalCurrentPower: 20000.0d,
+			internalMaxPower: 20000.0d
 		}
 	},
 	x: -9.5d,

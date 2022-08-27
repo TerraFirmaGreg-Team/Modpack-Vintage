@@ -4,7 +4,7 @@
 ############################################################## 823f9ae8 ##########################################################
 ##################################################################################################################################
 
-tfg.quests.primitive.era.title=§cEra 1 §4-§4 §8Primitive
+tfg.quests.primitive.era.title=§cEra 1 §4-§4 §2Primitive
 
 tfg.quests.primitive.start.title=The beginning of the journey!
 tfg.quests.primitive.start.subtitle=&aThank you for choosing TerraFirmaGreg, one of the coolest modpacks! In regular minecraft, you start with tree mining, but not in TFC! Here, you will have to collect pebbles, sticks and make your first tools out of them.
@@ -40,7 +40,7 @@ tfg.quests.primitive.stone_axe.title=Stone Axe!
 tfg.quests.primitive.stone_axe.subtitle=&aArrange a genocide of trees!
 
 tfg.quests.primitive.stone_knife.title=Stone Knife!
-tfg.quests.primitive.stone_knife.subtitle=&aMassacre!
+tfg.quests.primitive.stone_knife.subtitle=With clever handling of the rock, you can make two knife blades at once. Craft both your new tool heads with sticks in order to make proper stone tools.
 
 tfg.quests.primitive.stone_hammer.title=Stone Hammer!
 tfg.quests.primitive.stone_hammer.subtitle=&aThis hammer cannot dig ore unlike a metal hammer. This hammer is only used to create your first stone anvil. You can not perform this quest, but immediately make a metal hammer and make an anvil with it.
@@ -64,7 +64,7 @@ tfg.quests.primitive.molds.subtitle=&aTo begin with, you may not need all the fo
 tfg.quests.primitive.jug.title=Cave Glass!
 tfg.quests.primitive.jug.subtitle=&aThis thing is also fried in a pit, as well as molds. If you don't know how to fry a mold, see the quest about molds. Tap the jug on the water to get some water. Excellent. Now you can get away from the fresh spring a little further to explore the world.
 
-tfg.quests.primitive.hotornot.subtitle=If you are carrying hot liquids you will be set on fire, if you are carrying cold liquids you will be slowed down. To neutralize these effects, make tongs.
+tfg.quests.primitive.tongs.subtitle=If you are carrying hot liquids or objects you will be set on fire, if you are carrying cold liquids you will be slowed down. To neutralize these effects, make tongs. And put them in the shield slot (left hand).
 
 tfg.quests.primitive.vessel.title=A little more than just a glass
 tfg.quests.primitive.vessel.subtitle=&aThis is a jar in which you will burn and melt metals, as well as store various food, so this is a very useful item, I suggest you burn it. The built-in force field does not allow any liquids other than fused metals (as well as any yummy, in the form of food) to penetrate inside.
@@ -77,6 +77,7 @@ tfg.quests.primitive.fireplace.desc2=This may take several tries. The campfire c
 tfg.quests.primitive.fireplace.desc3=You can cook food in the fireplace, but you will get burned if you step on it.
 tfg.quests.primitive.fireplace.desc4=The bonfire works with heating recipes, which are essentially TFC's version of smelting recipes. Since a device such as a fire pit is heated with fuel, it can turn its ingredient into a product at a certain temperature.
 tfg.quests.primitive.fireplace.desc5=Fireplaces don't get very hot, but they can be used to make torches and also cook meat.
+tfg.quests.primitive.fireplace.desc6=Eating raw meat is bad, so it should be cooked.
 
 tfg.quests.primitive.meat.title=MEAT!
 tfg.quests.primitive.meat.subtitle=&aIt's vegan. I'm not lying, let me try the herbivore to confirm.
@@ -130,53 +131,62 @@ tfg.quests.primitive.logs.desc=By making an axe out of loose rocks and sticks, w
 tfg.quests.primitive.coal.title=Coal!
 tfg.quests.primitive.coal.subtitle=&aCoal in the form of a piece with a stone has a lower gorenje time, for obvious reasons, cleaned of stone, has a default melting time of 1600 ticks. Both of these coals can be used as well as charcoal.
 
-tfg.quests.primitive.file.title=The first copper file
-tfg.quests.primitive.file.subtitle=&aHow many adventures began with him.
-
 tfg.quests.primitive.knifegt.title=The first copper knife
 tfg.quests.primitive.knifegt.subtitle=&aIt is much better than stone, at least because of its strength.
 
-tfg.quests.primitive.copper_saw_head.title=
-tfg.quests.primitive.copper_saw_head.subtitle=
+tfg.quests.primitive.copper_saw_head.title=Saw head
+tfg.quests.primitive.copper_saw_head.subtitle=Now that you have metal, you can turn logs into more useful things, like planks! First, you need a casting or saw anvil. It is mainly used in crafting, but it can chop down trees if you so choose.
 
-tfg.quests.primitive.copper_hammer_head.title=
-tfg.quests.primitive.copper_hammer_head.subtitle=
+tfg.quests.primitive.copper_hammer_head.title=Hammer Head
+tfg.quests.primitive.copper_hammer_head.subtitle=In order to make flux or use an anvil, you'll need a hammer.
 
-tfg.quests.primitive.copper_pick_head.title=
-tfg.quests.primitive.copper_pick_head.subtitle=
+tfg.quests.primitive.copper_pick_head.title=Pickaxe Head
+tfg.quests.primitive.copper_pick_head.subtitle=To take your tool out of the mold, wait for it to cool and place it in a crafting grid to take it out or right-click. Then, take your tool head and craft it with a stick to get your first pickaxe!
 
-tfg.quests.primitive.copper_prospect_head.title=
-tfg.quests.primitive.copper_prospect_head.subtitle=
+tfg.quests.primitive.copper_prospect_head.title=Prospect Pickaxe Head
+tfg.quests.primitive.copper_prospect_head.subtitle=Earth nuggets indicate veins well, but you need something more precise. Work on an anvil or cast a geological hammer to start exploration. It only takes 144 units of any tool metal, and they are all equally useful.
 
-tfg.quests.primitive.copper_chisel_head.title=
-tfg.quests.primitive.copper_chisel_head.subtitle=
+tfg.quests.primitive.copper_chisel_head.title=Chisel Head
+tfg.quests.primitive.copper_chisel_head.subtitle=Cutting is an easy way to get stairs and slabs, and the only way to get smooth blocks. To gouge something, you will need a chisel, which must be made of metal, and a hammer, which can be made of stone.
 
-tfg.quests.primitive.copper_knife_head.title=
-tfg.quests.primitive.copper_knife_head.subtitle=
+tfg.quests.primitive.copper_knife_head.title=Knife head
+tfg.quests.primitive.copper_knife_head.subtitle=&aMassacre!
 
-tfg.quests.primitive.copper_file_head.title=
-tfg.quests.primitive.copper_file_head.subtitle=
+tfg.quests.primitive.copper_file_head.title=File head
+tfg.quests.primitive.copper_file_head.subtitle=§9§lFile:§r A crafting tool. And that's it. Yes.
 
-tfg.quests.primitive.saw.title=Медная пила
-tfg.quests.primitive.saw.subtitle=&aСделайте медную пилу, чтобы рубить деревья еще быстрее, ну или используйте ее более рационально, например для распилки бревен в пиломатериалы.
+tfg.quests.primitive.saw.title=Copper Saw
+tfg.quests.primitive.saw.subtitle=&aMake a copper saw to cut trees even faster, or use it more efficiently, such as sawing logs into lumber.
 
-tfg.quests.primitive.copper_hammer.title=
-tfg.quests.primitive.copper_hammer.subtitle=&aВыглядит, как план. И почему этого нет в GregTech? Напомню, что уже сейчас вы можете перерабатывать руды, так что дерзайте, накопайте как можно больше!
+tfg.quests.primitive.copper_hammer.title=First Copper Hammer
+tfg.quests.primitive.copper_hammer.subtitle=&aLooks like a blueprint. And why is this not in GregTech? Let me remind you that already now you can process ores, so go ahead, dig up as much as possible!
 
-tfg.quests.primitive.copper_pick.title=Первая медная кирка
-tfg.quests.primitive.copper_pick.subtitle=&aВаша первая кирка. Я считаю, что это лучшее вложение меди.
+tfg.quests.primitive.copper_pick.title=First Copper Pick
+tfg.quests.primitive.copper_pick.subtitle=&aYour first pick. I believe this is the best copper investment.
 
-tfg.quests.primitive.copper_prospect.title=
-tfg.quests.primitive.copper_prospect.subtitle=&aГеологический молот, для поиска ваших первых блочных руд.
+tfg.quests.primitive.copper_prospect.title=First Geological Hammer
+tfg.quests.primitive.copper_prospect.subtitle=&aRight click on Earth to use Geological Hammer. She checks for the presence of ore in a cube of 25 blocks and reports what she finds and in what concentration.
+tfg.quests.primitive.copper_prospect.desk1=Note: A pickaxe never deceives about the existence of an ore vein, but sometimes it cannot detect a vein located there. To combat this, simply click on another block nearby."
+tfg.quests.primitive.copper_prospect.desk2=Prospect Method
+tfg.quests.primitive.copper_prospect.desk3=1. Click the miner's pick until you find traces of ore.
+tfg.quests.primitive.copper_prospect.desk4=2. Walk until you find a lot of samples.
+tfg.quests.primitive.copper_prospect.desk5=3. Go in one direction by clicking on the ground until the words "very large sample" disappear. Mark this place.
+tfg.quests.primitive.copper_prospect.desk6=4. Return to the middle and do the same in the other direction.
+tfg.quests.primitive.copper_prospect.desk7=5 ... The center of the two lines formed by your marks should be the center of the vein."
 
-tfg.quests.primitive.copper_chisel.title=
-tfg.quests.primitive.copper_chisel.subtitle=
+tfg.quests.primitive.copper_chisel.title=First Copper Chisel
+tfg.quests.primitive.copper_chisel.subtitle=Chisel Modes
+tfg.quests.primitive.copper_chisel.desk1=Press §4M§4 to switch chisel modes.
+tfg.quests.primitive.copper_chisel.desk2=Smoothing: This setting turns raw stone into smooth stone.
+tfg.quests.primitive.copper_chisel.desk3=Ladder: Right click on a complete block to turn it into a ladder.
+tfg.quests.primitive.copper_chisel.desk4=Slabs: Turn solid blocks into slabs.
+tfg.quests.primitive.copper_chisel.desk5=Note: You can only sharpen blocks with stairs/slabs."
 
-tfg.quests.primitive.copper_knife.title=Первый медный ножик
-tfg.quests.primitive.copper_knife.subtitle=&aОн намного лучше чем каменный, как минимум из-за прочности.
+tfg.quests.primitive.copper_knife.title=The First Copper Knife
+tfg.quests.primitive.copper_knife.subtitle=&aIt's much better than the stone one, at least in terms of durability.
 
-tfg.quests.primitive.copper_file.title=
-tfg.quests.primitive.copper_file.subtitle=
+tfg.quests.primitive.copper_file.title=The First Copper File
+tfg.quests.primitive.copper_file.subtitle=&aHow many adventures began with him.
 
 tfg.quests.primitive.leather.title=Skin
 tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.
@@ -289,30 +299,8 @@ tfg.quests.primitive.redsteelingot.subtitle=&aRed is not an appr.. what?
 tfg.quests.primitive.bluesteelingot.title=Blue Steel
 tfg.quests.primitive.bluesteelingot.subtitle=&aBlue is not an appr..? Stop it!
 
-tfg.quests.primitive.redbluesteelpickaxe.title=Any pickaxe made of non-ferrous metals
-tfg.quests.primitive.redbluesteelpickaxe.subtitle=&aDig up the obsidian and run to HELL!
-
-tfg.quests.primitive.obsidian.title=Hot kebab
-tfg.quests.primitive.obsidian.subtitle=&aYou feel, you feel, it's not the smell of realism, what a HELL, although, wherever there, go for blazes.
-
-tfg.quests.primitive.bluesteelbucket.title=Blue Bucket
-tfg.quests.primitive.bluesteelbucket.subtitle=&aPainted with the tears of everyone who fell into the lava with diamonds in the inventory. Can scoop up lava.
-
-tfg.quests.primitive.redsteelbucket.title=Red Bucket
-tfg.quests.primitive.redsteelbucket.subtitle=&aWe paint with the blood of drowned people. There is a 3% discount for each goat sacrificed. Can scoop up water.
-
 tfg.quests.primitive.bucket.title=I AM A BUCKET!!!
 tfg.quests.primitive.bucket.subtitle=&aA magical Minecraft bucket. Magic washed the paint.
-
-tfg.quests.primitive.tochilka1.subtitle=&aSharpen your items better and faster.
-
-tfg.quests.primitive.tochilka2.subtitle=&aA new level of sharpening.
-
-tfg.quests.primitive.tochilka3.subtitle=&aAutomation of sharpening.
-
-tfg.quests.primitive.tochilka4.subtitle=&aEven steeper sharpened.
-
-tfg.quests.primitive.tochilka5.subtitle=&aSauron would be proud of you!
 
 tfg.quests.primitive.steelingot.title=Steel Ingot
 tfg.quests.primitive.steelingot.subtitle=&aWow, it's sparkling.

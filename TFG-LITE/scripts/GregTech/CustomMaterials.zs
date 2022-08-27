@@ -51,6 +51,8 @@ import mods.gregtech.material.Material;
 <material:bismuth_bronze>.addFlags("generate_gear");
 <material:certus_quartz>.addFlags("generate_rod", "generate_bolt_screw");
 <material:nether_quartz>.addFlags("generate_rod", "generate_bolt_screw");
+<material:certus_quartz>.addFluid("liquid", false);
+<material:nether_quartz>.addFluid("liquid", false);
 <material:steel>.addFlags("generate_dense");
 <material:iron>.addFlags("generate_dense");
 <material:tin>.addFlags("generate_dense", "generate_gear");

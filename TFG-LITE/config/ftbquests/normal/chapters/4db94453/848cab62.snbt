@@ -4,7 +4,7 @@
 	shape: "circle",
 	description: "{tfg.quests.ae2.fluxcrystal.subtitle}",
 	dependencies: [
-		"3516cb17"
+		"eab2df13"
 	],
 	tasks: [{
 		uid: "0f38556b",

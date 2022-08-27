@@ -1,8 +1,11 @@
 {
-	title: "{tfg.quests.primitive.fuelNumber2.title}",
+	title: "{tfg.quests.primitive.coal.title}",
 	x: -21.0d,
 	y: 0.0d,
-	description: "{tfg.quests.primitive.fuelNumber2.subtitle}",
+	description: "{tfg.quests.primitive.coal.subtitle}",
+	text: [
+		""
+	],
 	dependencies: [
 		"639cd212"
 	],
