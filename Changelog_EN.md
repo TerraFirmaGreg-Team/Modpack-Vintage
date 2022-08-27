@@ -1,5 +1,83 @@
 # Changelog
 
+## Version R4.1.0 - Expected ?
+#### [Normal, Huge]
+### Modpack fixes
+* Replaced mod for bags (due to a bug when things were lost in it). If you have items in your bags, please take them out, as they will disappear after the update.
+* Large dust from GTCEu can now be processed into TFC metal.
+* Now rods from GTCEu can be processed into TFC metal.
+* For large dust, dirty, medium, small, pieces, the values ​​of the number of metal units have been changed. All their values ​​are increased by 60-90%.
+* Fixed crafting terminal ME recipe.
+* Fixed a bug when it was impossible to craft a knife in the inventory.
+* Completely rewritten quests for the primitive era (All descriptions changed to be not rofly, but instructive).
+* Completely removed recipes for sharpening items from TFC-Things, as this mechanic does not work with GTCEu tools.
+* Creosote can now be poured into an iron bucket.
+* It is now possible to make crafted planks through a bucket of iron creosote.
+* Changed the recipes at the bases of the primitive pump, now they use the processed boards as they should.
+* Completely changed Steam Age quests to be instructive and convenient.
+* Since our modpack is getting more logical, now you can make LV car body from regular steel instead of red or blue steel, this limitation was removed due to the change in the policy of buckets and the adequacy of red and blue steel in TFC (I'll tell you a secret that it is useless).
+* Changed Baubles and AE2WTLib mods to supported forks.
+* Added fanny pack upgrade recipes as an alternative to vanilla anvil upgrades using experience.
+* Fixed duplicate recipe from Saturn's red sand.
+* Fixed duplicate recipe from Deimos dust.
+* Fixed craft barrels through assembler, now it is optimized.
+* Removed all recipes for ore chunks from CT and implemented it now in TFGMod. (Mega optimization).
+* Fixed block recipe from Weather2 that used a laser. It now uses a shield generator.
+* Changed all the recipes of the TravelersBackpacks mod.
+* Fixed duplicate sugar recipe.
+* Fixed duplicate dense ice recipe.
+* Multiple fixes for GTFO recipes.
+* Since Florae is no longer being developed on 1.12, all useless items are hidden in HEI, those left with a [WIP] texture will get a texture later.
+* AE2 meteorites can now be found on the moon.
+* Fixed liquid cell recipes 256k - 4096k.
+* Reduced chances of cyclones and tornadoes spawning.
+* In gas stations, explosions are enabled by default so that GT cars explode, and I also think you need to take care of lighting your base.
+* Adjusted the capabilities of littletiles
+          "maxEditBlocks": 10 -> 128
+          "maxPlaceBlocks": 10 -> 128
+          "minimumTransparency": 255 -> 50
+* Reduced Portable Cell capacity 200000 -> 20000
+* Disabled EnableAutocraftinSubstitutes, previously solves the problem of items in my network with ingredients that contain tfc metals.
+* Changed power consumption AE PowerUnit= EU -> GTEU, gives better compatibility, consumption occurs in GTEU 1k1, especially noticeable in large networks.
+* Removed duplicate recipes from Lapis, Diamond, Emerald.
+* Minor loading screen changes.
+* Fixed yellowness in the night vision effect.
+* Added re-craft of the AE2FC pattern, in an empty one.
+* Removal of OreDict from vanilla tree.
+* Reduction in the number of temperature modifiers, in the direction not of their quantity, but of quality, so that 10 torches do not fry your ass.
+* Reduced the modifier of the temperature area in order to bring the initial temperature closer to the F3 (Region) temperature.
+* Many AE2 recipes have been rewritten, a lot of fixes and improvements, and some of the recipes now need a clean room.
+* AE2 charged and flux crystals have been added to the material tree, as well as liquids for them, they are also used in recipes.
+* In recipes where only GT dye was used, vanilla is also suitable, if this does not conflict with the recipe.
+* Sequoia saplings now have a 15% chance to drop their saplings.
+* Fixed a bug due to which some players walked and ran slowly.
+* Added JustEnoughCalculation, you can call the calculator by pressing the key.
+* Fixed generation on some planets due to EP migration with GS.
+### Update mods
+* GTCEu - Correction of all previously not working recipes that you wrote about in the discord.
+* fancy menu
+* Konkrete
+* Galacticraft
+* Appliedenergistics2
+* FCAE2
+* Sledgehammer
+* TFG mod
+### New mods
+* Travelers&Backpacks
+* Baubles-LTS
+* AE2WTLib-LTS
+* Darkness
+* Spatialservermod
+### Removed Mods
+* ImprovedBackpacks
+* Cherished worlds
+* Baubles - replaced by a fork
+* AE2WTLib - replaced by a fork
+* TFCcompat - removed in normal version as ImprovedBackpacks is no longer used
+* Debark - removed due to the fact that when cutting gt with an ax, the block that you cut did not fall out
+* Parry - does not work with TFC shields
+* HardcoreDarkness
+
 ## Version R4.0.1 - 08/02/2022
 #### [Normal, Huge]
 ### Modpack fixes
