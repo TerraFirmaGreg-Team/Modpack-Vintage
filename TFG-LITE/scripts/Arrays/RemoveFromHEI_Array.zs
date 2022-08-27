@@ -5,14 +5,6 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 // Categories
-// JEI.hideCategory("minecraft.anvil");
-// JEI.hideCategory("appliedenergistics2.inscriber");
-// JEI.hideCategory("tfcflorae.casting");
-// JEI.hideCategory("ftbquests.quests");
-// JEI.hideCategory("planetprogression.satellite.builder");
-// JEI.hideCategory("mpestle");
-// JEI.hideCategory("galacticraft.ingotcompressor");
-
 val hideCategory as string[] = [
 	"galacticraft.rocketT1",
 	"galacticraft.buggy",
