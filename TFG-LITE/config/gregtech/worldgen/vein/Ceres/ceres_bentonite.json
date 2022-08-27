@@ -1,35 +1,37 @@
 {
-    "name": "Ceres Bentonite",
-    "weight": 80,
-    "density": 0.35,
-    "max_height": 55,
-    "min_height": 5,
-    "generation_predicate":["block:galaxyspace:ceresblocks:1"],
-    "dimension_filter": [
-      "dimension_id:-20"
+  "name": "Ceres Bentonite",
+  "weight": 80,
+  "density": 0.35,
+  "max_height": 55,
+  "min_height": 5,
+  "generation_predicate": [
+    "block:extraplanets:ceres:2"
   ],
-    "generator": {
-      "type": "layered",
-      "radius": [
-        14,
-        32
-      ]
-    },
-    "filler": {
-      "type": "layered",
-      "values": [
-        {
-          "primary": "ore:bentonite"
-        },
-        {
-          "secondary": "ore:magnesite"
-        },
-        {
-          "between": "ore:olivine"
-        },
-        {
-          "sporadic": "ore:glauconite_sand"
-        }
-      ]
-    }
+  "dimension_filter": [
+    "dimension_id:-20"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:bentonite"
+      },
+      {
+        "secondary": "ore:magnesite"
+      },
+      {
+        "between": "ore:olivine"
+      },
+      {
+        "sporadic": "ore:glauconite_sand"
+      }
+    ]
+  }
 }
