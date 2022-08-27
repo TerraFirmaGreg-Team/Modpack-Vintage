@@ -37,6 +37,7 @@ import mods.gregtech.material.Material;
 
 // Другое
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
+<material:glowstone>.setFormula("Au(Si(FeS2)5(CrAl2O3)Hg3)", true);
 <material:copper>.addTools(7, 1, 85);
 <material:red_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
 <material:blue_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
@@ -81,8 +82,14 @@ for material in MaterialRegistry.getAllMaterials() {
 
 // - Без категории
 
-// Dry Ice
+// Сухой лед
 MaterialBuilder(32050, "dry_ice").fluid("liquid", false).dust().color(0xB4CAD6).build();
+
+// Изменчивый кристал
+MaterialBuilder(32051, "fluix").dust().fluid("fluid", false).fluidTemp(1200).color(0x846994).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 2, <material:oxygen> * 4, <material:redstone> * 1]).build();
+
+// Заряженный изменчивый кристал
+MaterialBuilder(32052, "charged_certus_quartz").dust().fluid("fluid", false).fluidTemp(1200).color(0xCFDAFF).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 1,<material:oxygen> * 2]).build();
 
 // - Породы Земли
 
@@ -143,16 +150,16 @@ MaterialBuilder(32117, "rhyolite").dust().color(0x726D69).build();
 // Sandstone
 MaterialBuilder(32118, "sandstone").dust().color(0xBAAE90).build();
 
-// - Schist
+// Schist
 MaterialBuilder(32119, "schist").dust().color(0x6E735C).build();
 
-// - Shale
+// Shale
 MaterialBuilder(32120, "shale").dust().color(0x686567).build();
 
-// - Siltstone
+// Siltstone
 MaterialBuilder(32121, "siltstone").dust().color(0xA98D79).build();
 
-// - Slate
+// Slate
 MaterialBuilder(32122, "slate").dust().color(0x989287).build();
 
 // - Породы планет
@@ -216,7 +223,7 @@ MaterialBuilder(32142, "stone_uranus").dust().color(0xa7c6f6).build();
 // Oberon
 MaterialBuilder(32143, "stone_oberon").dust().color(0x78667b).build();
 
-// - Neptune
+// Neptune
 MaterialBuilder(32144, "stone_neptune").dust().color(0x226ea1).build();
 
 // Triton

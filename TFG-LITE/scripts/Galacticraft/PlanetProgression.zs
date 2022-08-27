@@ -24,7 +24,7 @@ assembler.recipeBuilder()
 // Satellite launcher
 assembler.recipeBuilder()
    .circuit(7)
-   .inputs(<galacticraftcore:basic_item:19> * 2, <ore:plateDenseSteel> * 8 , <metaitem:wafer.glowstone> * 2, <metaitem:wireGtQuadrupleAluminium> * 2)
+   .inputs(<galacticraftcore:basic_item:19> * 2, <ore:plateDenseSteel> * 8 , <metaitem:wafer.glowstone> * 2, <ore:wireGtQuadrupleAluminium> * 2)
    .outputs(<planetprogression:satellite_launcher>)
    .duration(150).EUt(2000).buildAndRegister();
 

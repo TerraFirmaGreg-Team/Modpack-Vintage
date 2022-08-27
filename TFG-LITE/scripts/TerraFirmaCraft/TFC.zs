@@ -1255,16 +1255,16 @@ mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_black
 
 // Переработка тфк еды в метан
 // Мясо
-centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane>*72).duration(40).EUt(5).buildAndRegister();
-centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane>*144).duration(40).EUt(5).buildAndRegister();
+// centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane> * 72).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane> * 144).duration(40).EUt(5).buildAndRegister();
 // Фрукты
-centrifuge.recipeBuilder().inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane>*48).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane> * 48).duration(40).EUt(5).buildAndRegister();
 // Овощи
-centrifuge.recipeBuilder().inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane>*62).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane> * 62).duration(40).EUt(5).buildAndRegister();
 // Крупы
-centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane>*44).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane> * 44).duration(40).EUt(5).buildAndRegister();
 // Хлеб
-centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane>*26).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane> * 26).duration(40).EUt(5).buildAndRegister();
 
 // Переработка слитков
 // Первичная

@@ -390,7 +390,7 @@ for i, Illuminars_Array in Illuminars_Array {
 for i, Deactivated_Lamps_Array in Deactivated_Lamps_Array {
     <ore:lampBlockDeactivated>.add(Deactivated_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<metaitem:wireGtSingleRedAlloy>, <ore:paneGlass> * 6, <metaitem:stickSteel> * 12, Illuminars_Array[i] * 2)
+        .inputs(<ore:wireGtSingleRedAlloy>, <ore:paneGlass> * 6, <ore:stickSteel> * 12, Illuminars_Array[i] * 2)
         .circuit(12)
         .outputs(Deactivated_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -430,7 +430,7 @@ for i, Feedback_Lamps_Array in Feedback_Lamps_Array {
 for i, Deactivated_Lantern_Lamps_Array in Deactivated_Lantern_Lamps_Array {
     <ore:lampLanternDeactivated>.add(Deactivated_Lantern_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<metaitem:wireGtSingleRedAlloy>, <ore:paneGlass> * 2, <metaitem:stickSteel> * 3, <ore:plateIron> * 4, Illuminars_Array[i])
+        .inputs(<ore:wireGtSingleRedAlloy>, <ore:paneGlass> * 2, <ore:stickSteel> * 3, <ore:plateIron> * 4, Illuminars_Array[i])
         .circuit(16)
         .outputs(Deactivated_Lantern_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -450,7 +450,7 @@ for i, Activated_Lantern_Lamps_Array in Activated_Lantern_Lamps_Array {
 for i, Deactivated_Fixture_Lamps_Array in Deactivated_Fixture_Lamps_Array {
     <ore:lampFixtureDeactivated>.add(Deactivated_Fixture_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <metaitem:stickSteel> * 6, <ore:plateIron> * 4, <ore:paneGlass> * 5, Illuminars_Array[i] * 2)
+        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 6, <ore:plateIron> * 4, <ore:paneGlass> * 5, Illuminars_Array[i] * 2)
         .circuit(18)
         .outputs(Deactivated_Fixture_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -490,7 +490,7 @@ for i, Activated_Fallout_Lamps_Array in Activated_Fallout_Lamps_Array {
 for i, Deactivated_Cage_Lamps_Array in Deactivated_Cage_Lamps_Array {
     <ore:lampCageDeactivated>.add(Deactivated_Cage_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <metaitem:stickSteel> * 2, <minecraft:iron_bars> * 4, Illuminars_Array[i])
+        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 2, <minecraft:iron_bars> * 4, Illuminars_Array[i])
         .circuit(22)
         .outputs(Deactivated_Cage_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();

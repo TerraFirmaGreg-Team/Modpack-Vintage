@@ -28,7 +28,7 @@ assembler.recipeBuilder()
 // Classic Catwalk * 16
 assembler.recipeBuilder()
     .circuit(16)
-    .inputs(<metaitem:frameBlackSteel>, <metaitem:screwBlackSteel> * 2, <metaitem:stickLongBlackSteel> * 4)
+    .inputs(<metaitem:frameBlackSteel>, <ore:screwBlackSteel> * 2, <ore:stickLongBlackSteel> * 4)
     .outputs(<catwalks:catwalk>.withTag({material: "classic"}) * 16)
     .duration(40).EUt(7).buildAndRegister();
 
@@ -42,7 +42,7 @@ assembler.recipeBuilder()
 // Glass Catwalk * 16
 assembler.recipeBuilder()
     .circuit(16)
-    .inputs(<metaitem:frameBlackSteel>, <ore:paneGlass> * 3, <metaitem:stickLongBlackSteel> * 4)
+    .inputs(<metaitem:frameBlackSteel>, <ore:paneGlass> * 3, <ore:stickLongBlackSteel> * 4)
     .outputs(<catwalks:catwalk>.withTag({material: "glass"}) * 16)
     .duration(40).EUt(7).buildAndRegister();
 
@@ -56,7 +56,7 @@ assembler.recipeBuilder()
 // Wood Catwalk * 16
 assembler.recipeBuilder()
     .circuit(16)
-    .inputs(<ore:frameGtTreatedWood>, <ore:plateTreatedWood> * 3, <metaitem:stickLongBlackSteel> * 4)
+    .inputs(<ore:frameGtTreatedWood>, <ore:plateTreatedWood> * 3, <ore:stickLongBlackSteel> * 4)
     .outputs(<catwalks:catwalk>.withTag({material: "treated_wood"}) * 16)
     .duration(40).EUt(7).buildAndRegister();
 
@@ -77,6 +77,6 @@ assembler.recipeBuilder()
 // Classic Support Cables * 32
 assembler.recipeBuilder()
     .circuit(18)
-    .inputs(<metaitem:stickLongBlackSteel> * 3)
+    .inputs(<ore:stickLongBlackSteel> * 3)
     .outputs(<catwalks:cable> * 32)
     .duration(45).EUt(7).buildAndRegister();

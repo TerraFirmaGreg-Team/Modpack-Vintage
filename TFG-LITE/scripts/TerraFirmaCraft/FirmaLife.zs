@@ -260,7 +260,7 @@ Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <ore:ingotRedSteel>, <firmalif
 
 // Chestnut Dough
 mixer.recipeBuilder()
-    .inputs([<ore:chestnutFlour>, <metaitem:dustSmallSalt>, <ore:fruitDry>])
+    .inputs([<ore:chestnutFlour>, <ore:dustSmallSalt>, <ore:fruitDry>])
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<firmalife:chestnut_dough> * 2)
     .duration(400).EUt(2).buildAndRegister();
@@ -277,7 +277,7 @@ baking_oven.recipeBuilder()
     .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <metaitem:gemCoke>])
+    .inputs([<firmalife:chestnut_dough>, <ore:gemCoke>])
     .outputs(<firmalife:chestnut_bread>)
     .duration(400).EUt(1).buildAndRegister();
 

@@ -1,8 +1,10 @@
 #loader gregtech
 
-import mods.gregtech.StoneType;
+import mods.gregtech.material.MaterialRegistry;
+import mods.gregtech.material.MaterialBuilder;
+import mods.gregtech.material.Material;
 
-import mods.devtech.IBlockStateMatcher;
+import mods.gregtech.StoneType;
 
 // --- Custom Stone Type
 

@@ -28,6 +28,16 @@ Dropt.list("tfg/dropt/puddles").add(Dropt.rule()
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
+// Выпадение секвои
+Dropt.list("tfg/dropt/sequoia").add(Dropt.rule()
+  .matchBlocks(["tfc:wood/leaves/sequoia"])
+  .replaceStrategy("ADD")
+  .addDrop(Dropt.drop()
+      .selector(Dropt.weight(85))) // шанс, что ничего не выпадет
+  .addDrop(Dropt.drop()
+      .selector(Dropt.weight(15))
+      .items([<tfc:wood/sapling/sequoia>])));
+
 // Морской лед
 Dropt.list("tfg/dropt/sea_ice").add(Dropt.rule()
   .matchBlocks(["tfc:sea_ice"])

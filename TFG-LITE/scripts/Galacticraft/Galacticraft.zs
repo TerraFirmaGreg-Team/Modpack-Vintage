@@ -637,7 +637,7 @@ chemical_bath.recipeBuilder()
    .duration(8).EUt(480).buildAndRegister();
 for i in 0 .. 16 {
    chemical_bath.recipeBuilder()
-      .inputs([<ore:gc.parachute.colors>])
+      .inputs([<ore:gc.parachute>])
       .fluidInputs([colorLiquid[i] * 18])
       .outputs([gcParachute[i]])
       .duration(20).EUt(7).buildAndRegister();

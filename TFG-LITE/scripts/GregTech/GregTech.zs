@@ -982,3 +982,10 @@ electric_furnace.recipeBuilder()
     .inputs(<tfctech:latex/rubber_mix>)
     .outputs(<tfctech:latex/rubber>)
     .duration(40).EUt(7).buildAndRegister();
+// Флакс линза
+lathe.recipeBuilder()
+    .inputs([<metaitem:plateFluix>])
+    .outputs([
+        <metaitem:lensFluix>,
+        <metaitem:dustSmallFluix>])
+    .duration(1200).EUt(120).buildAndRegister();
