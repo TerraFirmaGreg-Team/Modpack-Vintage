@@ -104,8 +104,8 @@ assembler.recipeBuilder()
 // Cable
 assembler.recipeBuilder()
     .inputs([
-        <metaitem:wireGtSingleCopper> * 8,
-        <metaitem:dustEmerald>
+        <ore:wireGtSingleCopper> * 8,
+        <ore:dustEmerald>
     ])
     .outputs([<opencomputers:cable>])
     .duration(200).EUt(30).buildAndRegister();

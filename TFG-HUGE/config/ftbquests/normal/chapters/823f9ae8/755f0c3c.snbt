@@ -1,0 +1,25 @@
+{
+	x: -24.0d,
+	y: 6.25d,
+	dependencies: [
+		"bf82a628"
+	],
+	tasks: [{
+		uid: "7c5f3cf4",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWoodTannin"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWoodTannin"
+				}
+			}
+		}]
+	}]
+}

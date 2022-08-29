@@ -4067,7 +4067,6 @@ global TFC_EucaliptusLogs as IItemStack[] = [
 
 // - TFC Metal Trapdoors
 global TFC_Metal_Trapdoors as IItemStack[] = [
-	<tfc:metal/trapdoor/platinum>,
 	<tfc:metal/trapdoor/gold>,
 	<tfc:metal/trapdoor/lead>,
 	<tfc:metal/trapdoor/nickel>,
@@ -4251,8 +4250,7 @@ global Gem_Chipped as IItemStack[] = [
 ];
 
 // - GT Metals, which are double TFC
-global GT_TFC_Doubled_Plates as IItemStack[] = [
-	<metaitem:platePlatinum>,
+global GT_TFC_Plates as IItemStack[] = [
 	<metaitem:plateGold>,
 	<metaitem:plateLead>,
 	<metaitem:plateNickel>,
@@ -4629,52 +4627,4 @@ global gcParachute as IItemStack[] = [
 	<galacticraftcore:parachute:7>,
 	<galacticraftcore:parachute:13>,
 	<galacticraftcore:parachute:1>
-];
-
-// An array in order to explain 
-// to the user that the processing of dust data 
-// into TFC metal is not possible due to the GTCEu bug, 
-// which they should fix later.
-global Bad_Dusts_Array as IItemStack[] = [
-	// Impure
-	<metaitem:dustImpureCopper>,
-	<metaitem:dustImpureBornite>,
-	<metaitem:dustImpureTetrahedrite>,
-	<metaitem:dustImpureChalcopyrite>,
-	<metaitem:dustImpureChalcocite>,
-	<metaitem:dustImpureMalachite>,
-	<metaitem:dustImpureTin>,
-	<metaitem:dustImpureCassiterite>,
-	<metaitem:dustImpureCassiteriteSand>,
-	<metaitem:dustImpureIron>,
-	<metaitem:dustImpurePyrite>,
-	<metaitem:dustImpureMagnetite>,
-	<metaitem:dustImpureBrownLimonite>,
-	<metaitem:dustImpureYellowLimonite>,
-	<metaitem:dustImpureBandedIron>,
-	<metaitem:dustImpureNickel>,
-	<metaitem:dustImpureGarnierite>,
-	<metaitem:dustImpurePentlandite>,
-	<metaitem:dustImpureSphalerite>,
-	<metaitem:dustImpureLead>,
-	<metaitem:dustImpureGalena>,
-	<metaitem:dustImpureGold>,
-	<metaitem:dustImpureBismuth>,
-	<metaitem:dustImpureSilver>,
-	// Pure
-	<metaitem:dustBornite>,
-	<metaitem:dustTetrahedrite>,
-	<metaitem:dustChalcopyrite>,
-	<metaitem:dustChalcocite>,
-	<metaitem:dustMalachite>,
-	<metaitem:dustCassiteriteSand>,
-	<metaitem:dustPyrite>,
-	<metaitem:dustMagnetite>,
-	<metaitem:dustBrownLimonite>,
-	<metaitem:dustYellowLimonite>,
-	<metaitem:dustBandedIron>,
-	<metaitem:dustGarnierite>,
-	<metaitem:dustPentlandite>,
-	<metaitem:dustSphalerite>,
-	<metaitem:dustGalena>
 ];

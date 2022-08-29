@@ -766,7 +766,7 @@ for i, TFC_Lumber in TFC_Lumber {
 		.fluidInputs([<liquid:lubricant> * 1])
     	.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
-
+	/*
 	saw_mill.recipeBuilder()
 		.inputs([TFC_Logs[i]])
 		.circuit(1)
@@ -774,7 +774,7 @@ for i, TFC_Lumber in TFC_Lumber {
 		.outputs([TFC_Lumber * 64, <metaitem:dustWood> * 8])
 		.duration(450)
 		.EUt(32)
-		.buildAndRegister();
+		.buildAndRegister();*/
 }
 
 // Дерево -> Пиломатериалы (Для эвкалипта)
@@ -786,14 +786,14 @@ for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
     	.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
     	.duration(200).EUt(7).buildAndRegister();
 
-	saw_mill.recipeBuilder()
+	/*saw_mill.recipeBuilder()
 		.inputs([TFC_EucaliptusLogs])
 		.circuit(1)
 		.fluidInputs([<liquid:lubricant> * 1000])
 		.outputs([<tfc:wood/lumber/eucalyptus> * 64, <metaitem:dustWood> * 8])
 		.duration(450)
 		.EUt(32)
-		.buildAndRegister();
+		.buildAndRegister();*/
 }
 
 // Доски -> Пиломатериалы
@@ -916,8 +916,8 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
 // Железные люки
 for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
     assembler.recipeBuilder()
-    	.inputs([GT_TFC_Doubled_Plates[i]])
-		.circuit(9)
+    	.inputs([GT_TFC_Plates[i]])
+		.circuit(1)
     	.outputs(TFC_Metal_Trapdoors)
     	.duration(205).EUt(8).buildAndRegister();
 }
@@ -979,15 +979,12 @@ for i in 83 .. 107 {
 }
 
 for i, TFC_Barrels in TFC_Barrels  {
-    for j in NumArray
-	{
-		if (i != j) {
-			assembler.recipeBuilder()
-				.inputs([TFC_Lumber[i] * 7])
-				.circuit(15)
-				.outputs(TFC_Barrels)
-				.duration(205).EUt(4).buildAndRegister();
-		}
+	if (!(NumArray has i)) {
+		assembler.recipeBuilder()
+			.inputs([TFC_Lumber[i] * 7])
+			.circuit(15)
+			.outputs(TFC_Barrels)
+			.duration(205).EUt(4).buildAndRegister();
 	}
 }
 
@@ -1258,16 +1255,16 @@ mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_black
 
 // Переработка тфк еды в метан
 // Мясо
-centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane>*72).duration(40).EUt(5).buildAndRegister();
-centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane>*144).duration(40).EUt(5).buildAndRegister();
+// centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane> * 72).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane> * 144).duration(40).EUt(5).buildAndRegister();
 // Фрукты
-centrifuge.recipeBuilder().inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane>*48).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane> * 48).duration(40).EUt(5).buildAndRegister();
 // Овощи
-centrifuge.recipeBuilder().inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane>*62).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane> * 62).duration(40).EUt(5).buildAndRegister();
 // Крупы
-centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane>*44).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane> * 44).duration(40).EUt(5).buildAndRegister();
 // Хлеб
-centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane>*26).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane> * 26).duration(40).EUt(5).buildAndRegister();
 
 // Переработка слитков
 // Первичная
@@ -1285,7 +1282,7 @@ alloy_smelter.recipeBuilder().inputs(<ore:ingotWeakSteel>, <ore:ingotPigIron>).o
 // Рецепты для льда
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 1000).outputs(<minecraft:ice>).duration(1500).EUt(256).buildAndRegister();
 vacuum_freezer.recipeBuilder().fluidInputs(<liquid:salt_water> * 1000).outputs(<tfc:sea_ice>).duration(1500).EUt(256).buildAndRegister();
-vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
+// vacuum_freezer.recipeBuilder().fluidInputs(<liquid:fresh_water> * 2000).outputs(<minecraft:packed_ice>).duration(1500).EUt(512).buildAndRegister();
 
 // Различные крафты для лассо
 LeatherKnapping.addRecipe("tfg/tfc/lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
@@ -1334,7 +1331,7 @@ centrifuge.recipeBuilder()
 	.duration(750).EUt(32).buildAndRegister();
 
 // Saplings -> Logs + Saplings (Greenhouse)
-
+/*
 for i, TFC_Saplings in TFC_Saplings {
   
 	greenhouse.recipeBuilder()
@@ -1387,7 +1384,7 @@ for i, TFC_Logs in TFC_Logs {
 		.outputs([<metaitem:dustSmallWood> * 32])
 		.duration(400).EUt(12).buildAndRegister();
 }
-
+*/
 // Hide Raw Small -> Hide Soaked Small
 mixer.recipeBuilder()
 	.inputs(<tfc:hide/raw/small>)

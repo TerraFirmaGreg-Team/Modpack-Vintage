@@ -3,26 +3,116 @@ import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 
 
+// --- Массивы
+
+val RemoveItemRecipe as IItemStack[] = [
+	<galacticraftcore:distributor>,
+	<galacticraftcore:collector>,
+	<galacticraftcore:oxygen_compressor>,
+	<galacticraftcore:oxygen_compressor:4>,
+	<galacticraftcore:fuel_loader>,
+	<galacticraftcore:sealer>,
+	<galacticraftcore:oxygen_detector>,
+	<galacticraftcore:air_lock_frame>,
+	<galacticraftcore:air_lock_frame:1>,
+	<galacticraftcore:telemetry>,
+	<galacticraftplanets:mars_machine:8>,
+	<galacticraftplanets:mars_machine:4>,
+	<galacticraftplanets:mars_machine>,
+	<galacticraftplanets:basic_item_venus>,
+	<galacticraftcore:solar>,
+	<galacticraftcore:solar:4>,
+	<galacticraftcore:air_vent>,
+	<galacticraftcore:oxygen_tank_light_full:900>,
+	<galacticraftcore:oxygen_tank_med_full:1800>,
+	<galacticraftcore:oxygen_tank_heavy_full:2700>,
+	<galacticraftcore:oxygen_mask>,
+	<galacticraftcore:oxygen_gear>,
+	<galacticraftplanets:thermal_padding>,
+	<galacticraftplanets:thermal_padding:1>,
+	<galacticraftplanets:thermal_padding:2>,
+	<galacticraftplanets:thermal_padding:3>,
+	<galacticraftplanets:item_basic_asteroids:7>,
+	<galacticraftplanets:basic_item_venus:3>,
+	<galacticraftplanets:walkway>,
+	<galacticraftplanets:walkway:1>,
+	<galacticraftplanets:walkway:2>,
+	<galacticraftplanets:beam_receiver>,
+	<galacticraftplanets:item_basic_asteroids:8>,
+	<galacticraftplanets:basic_item_venus:2>,
+	<galacticraftplanets:atomic_battery>,
+	<galacticraftcore:landing_pad>,
+	<galacticraftcore:landing_pad:1>,
+	<galacticraftplanets:miner_base>,
+	<galacticraftcore:spin_thruster>,
+	<galacticraftcore:oil_canister_partial:1001>,
+	<galacticraftcore:canister>,
+	<galacticraftcore:arclamp>,
+	<galacticraftcore:buggymat:1>,
+	<galacticraftcore:buggymat:2>,
+	<galacticraftplanets:beam_reflector>,
+	<galacticraftcore:dishbase>,
+	<galacticraftcore:basic_item:20>,
+	<galacticraftcore:oxygen_concentrator>,
+	<galacticraftplanets:orion_drive>,
+	<galacticraftcore:buggymat>,
+	<galacticraftcore:view_screen>,
+	<galacticraftcore:basic_block_core:4>,
+	<galacticraftcore:basic_block_core:3>,
+	<galacticraftcore:panel_lighting>,
+	<galacticraftcore:panel_lighting:1>,
+	<galacticraftcore:panel_lighting:2>,
+	<galacticraftcore:panel_lighting:3>,
+	<galacticraftcore:panel_lighting:4>,
+	<galacticraftcore:engine>,
+	<galacticraftplanets:item_basic_asteroids:1>,
+	<galacticraftcore:engine:1>,
+	<galacticraftcore:rocket_fins>,
+	<galacticraftplanets:item_basic_asteroids:2>,
+	<galacticraftplanets:item_basic_asteroids:2>,
+	<galacticraftcore:basic_item:19>,
+	<galacticraftcore:food>,
+	<galacticraftcore:food:1>,
+	<galacticraftcore:food:2>,
+	<galacticraftcore:food:3>,
+	<galacticraftcore:food:9>,
+	<galacticraftplanets:item_basic_mars:4>,
+	<galacticraftcore:basic_block_core:12>,
+	<galacticraftcore:item_basic_moon>,
+	<galacticraftcore:steel_pole>,
+	<galacticraftplanets:mars:8>,
+	<galacticraftcore:enclosed:14>,
+	<galacticraftcore:enclosed:15>,
+	<galacticraftcore:enclosed:13>,
+	<galacticraftcore:enclosed:1>,
+	<galacticraftplanets:grapple>,
+	<galacticraftcore:nose_cone>,
+   <galacticraftcore:compact_workbench>
+];
+
 // --- Удаление рецептов
+
 // Удаление рецептов
-recipes.removeByMod("galacticraftcore");
-recipes.removeByMod("galacticraftplanets");
+for item in RemoveItemRecipe{
+   recipes.remove(item);
+}
 
 // Другие рецепты которые удалены
-// furnace.remove(<galacticraftcore:item_basic_moon>);
-// furnace.remove(<galacticraftcore:basic_item:4>);
-// furnace.remove(<galacticraftplanets:item_basic_mars:2>);
-// furnace.remove(<galacticraftplanets:carbon_fragments>);
+furnace.remove(<galacticraftcore:food:7>);
+furnace.remove(<galacticraftcore:item_basic_moon>);
+furnace.remove(<galacticraftcore:basic_item:4>);
+furnace.remove(<galacticraftplanets:item_basic_mars:2>);
+furnace.remove(<galacticraftplanets:carbon_fragments>);
 
 // Именованное удаление
-// recipes.removeByRecipeName("galacticraftcore:slime_ball");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
-// recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_18");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_17");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_16");
-// recipes.removeByRecipeName("galacticraftcore:basic_item_15");
+recipes.removeByRecipeName("galacticraftcore:slime_ball");
+recipes.removeByRecipeName("galacticraftcore:cobblestone");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt");
+recipes.removeByRecipeName("galacticraftcore:cobblestone_alt_alt");
+recipes.removeByRecipeName("galacticraftcore:basic_item_18");
+recipes.removeByRecipeName("galacticraftcore:basic_item_17");
+recipes.removeByRecipeName("galacticraftcore:basic_item_16");
+recipes.removeByRecipeName("galacticraftcore:basic_item_15");
 
 // --- Добавление рецептов
 
@@ -470,18 +560,21 @@ assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateDenseTin> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(128).buildAndRegister();
 // Средний
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.mv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 4, <metaitem:electric.pump.mv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(256).buildAndRegister();
 // Тяжелый
 assembler.recipeBuilder()
    .inputs(<metaitem:super_tank.hv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 6, <metaitem:electric.pump.hv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
+   .property("cleanroom", "cleanroom")
    .duration(1000).EUt(512).buildAndRegister();
 
 // Гидравлический подьемник
@@ -495,28 +588,34 @@ assembler.recipeBuilder()
 forming_press.recipeBuilder()
    .inputs(<ore:plateDenseAluminium> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_strong> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_strong> * 5)
    .outputs(<galacticraftcore:space_glass_strong:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
    .inputs(<ore:ingotTin> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_vanilla> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_vanilla> * 5)
    .outputs(<galacticraftcore:space_glass_vanilla:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
    .inputs(<ore:ingotAluminum> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_clear> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
    .inputs(<galacticraftcore:basic_block_core:4> * 4, <galacticraftcore:space_glass_clear> * 5)
    .outputs(<galacticraftcore:space_glass_clear:1> * 5)
+   .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
 
 // Грузовой загрузчик
@@ -548,276 +647,26 @@ chemical_bath.recipeBuilder()
    .duration(8).EUt(480).buildAndRegister();
 for i in 0 .. 16 {
    chemical_bath.recipeBuilder()
-      .inputs([<ore:gc.parachute.colors>])
+      .inputs([<ore:gc.parachute>])
       .fluidInputs([colorLiquid[i] * 18])
       .outputs([gcParachute[i]])
       .duration(20).EUt(7).buildAndRegister();
 }
 
-// Nose Cones 1-2 Tiers
-// Tier 1
-assembler.recipeBuilder()
-   .inputs(<galacticraftcore:heavy_plating> * 4)
-   .inputs(<metaitem:sensor.ev> * 2)
-   .inputs(<minecraft:redstone_torch>)
-   .circuit(7)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftcore:nose_cone>)
-   .duration(600).EUt(480).buildAndRegister();
-// Tier 2
-assembler.recipeBuilder()
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
-   .inputs(<metaitem:sensor.iv> * 2)
-   .inputs(<minecraft:redstone_torch>)
-   .circuit(7)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftplanets:heavy_nose_cone>)
-   .duration(600).EUt(512).buildAndRegister();
+// Тир 1 лэндер
+recipes.addShaped("tfg/galacticraft/rocket_modules", <contenttweaker:lander_tier1>,
+   [[<galacticraftcore:basic_item:19>, <ore:plateBlackSteel>, <ore:plateBlackSteel>],
+   [<ore:plateBlackSteel>, <galacticraftcore:buggymat:1>, <galacticraftcore:heavy_plating>],
+   [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
 
-// Rocket Engines 1-2 Tiers
-// Tier 1
-assembler.recipeBuilder()
-   .inputs(<galacticraftcore:heavy_plating> * 6)
-   .inputs(<galacticraftcore:oil_canister_partial:1001>)
-   .inputs(<metaitem:electric.motor.ev> * 8)
-   .inputs(<metaitem:electric.pump.ev> * 4)
-   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
-   .inputs(<ore:circuitEv> * 4)
-   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
-   .circuit(8)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftcore:engine>)
-   .duration(600).EUt(480).buildAndRegister();
-// Tier 2
-assembler.recipeBuilder()
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 6)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 2)
-   .inputs(<metaitem:electric.motor.iv> * 8)
-   .inputs(<metaitem:electric.pump.iv> * 4)
-   .inputs(<ore:cableGtSingleAnnealedCopper> * 48)
-   .inputs(<ore:circuitIv> * 4)
-   .inputs(<ore:pipeSmallFluidStainlessSteel> * 32)
-   .circuit(8)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .duration(600).EUt(512).buildAndRegister();
+// Тир 3 лэндер
+recipes.addShaped("tfg/galacticraft/lander_tier_2", <contenttweaker:lander_tier2>,
+   [[<galacticraftcore:canvas>, <ore:gc.parachute>, <galacticraftcore:canvas>],
+   [<ore:string>, <contenttweaker:lander_tier1>, <ore:string>],
+   [<galacticraftcore:canvas>, <ore:string>, <galacticraftcore:canvas>]]);
 
-// Rocket Booster
-// Tier 1
-assembler.recipeBuilder()
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 2)	
-   .inputs(<galacticraftcore:oil_canister_partial:1001>)
-   .inputs(<metaitem:electric.motor.mv> * 8)
-   .inputs(<metaitem:electric.pump.mv> * 4)
-   .inputs(<ore:cableGtSingleAnnealedCopper> * 16)
-   .inputs(<ore:circuitMv> * 4)
-   .inputs(<ore:pipeSmallFluidStainlessSteel> * 16)
-   .inputs(<galacticraftcore:air_vent> * 2)
-   .circuit(9)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftcore:engine:1>)
-   .duration(600).EUt(512).buildAndRegister();
-
-// Stabilizators 1-2 Tiers
-// Tier 1
-assembler.recipeBuilder()
-   .inputs(<galacticraftcore:heavy_plating> * 4)
-   .inputs(<ore:screwAluminium> * 64)
-   .circuit(10)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftcore:rocket_fins>)
-   .duration(600).EUt(482).buildAndRegister();
-// Tier 2
-assembler.recipeBuilder()
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 4)
-   .inputs(<ore:screwAluminium> * 64)
-   .circuit(10)
-   .fluidInputs([<liquid:soldering_alloy> * 288])
-   .outputs(<galacticraftplanets:item_basic_asteroids:2>)
-   .duration(600).EUt(482).buildAndRegister();
-
-// Rockets 1-2 Tiers
-// Tier 1 - Without Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftcore:nose_cone>)
-   .inputs(<galacticraftcore:heavy_plating> * 32)
-   .inputs(<galacticraftcore:rocket_fins> * 4)
-   .inputs(<galacticraftcore:engine>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 3)
-   .inputs(<ore:wireGtSingleUraniumTriplatinum> * 16)
-   .inputs(<contenttweaker:lander_tier1>)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<metaitem:electric.motor.ev> * 4)
-   .inputs(<metaitem:emitter.ev> * 4)
-   .inputs(<ore:circuitIv> * 16)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftcore:rocket_t1>)
-   .duration(1200).EUt(6000).buildAndRegister();
-
-// Tier 1 - With 1 Chest
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftcore:nose_cone>)
-   .inputs(<galacticraftcore:heavy_plating> * 32)
-   .inputs(<galacticraftcore:rocket_fins> * 4)
-   .inputs(<galacticraftcore:engine>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 3)
-   .inputs(<ore:wireGtSingleUraniumTriplatinum> * 16)
-   .inputs(<contenttweaker:lander_tier1>)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<metaitem:electric.motor.ev> * 4)
-   .inputs(<metaitem:emitter.ev> * 4)
-   .inputs(<ore:circuitIv> * 16)
-   .inputs(<metaitem:crate.steel>)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftcore:rocket_t1:1>)
-   .duration(1200).EUt(6000).buildAndRegister();
-
-// Tier 1 - With 2 Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftcore:nose_cone>)
-   .inputs(<galacticraftcore:heavy_plating> * 32)
-   .inputs(<galacticraftcore:rocket_fins> * 4)
-   .inputs(<galacticraftcore:engine>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 3)
-   .inputs(<ore:wireGtSingleUraniumTriplatinum> * 16)
-   .inputs(<contenttweaker:lander_tier1>)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<metaitem:electric.motor.ev> * 4)
-   .inputs(<metaitem:emitter.ev> * 4)
-   .inputs(<ore:circuitIv> * 16)
-   .inputs(<metaitem:crate.stainless_steel> * 2)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftcore:rocket_t1:2>)
-   .duration(1200).EUt(6000).buildAndRegister();
-
-// Tier 1 - With 3 Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftcore:nose_cone>)
-   .inputs(<galacticraftcore:heavy_plating> * 32)
-   .inputs(<galacticraftcore:rocket_fins> * 4)
-   .inputs(<galacticraftcore:engine>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 3)
-   .inputs(<ore:wireGtSingleUraniumTriplatinum> * 16)
-   .inputs(<contenttweaker:lander_tier1>)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<metaitem:electric.motor.ev> * 4)
-   .inputs(<metaitem:emitter.ev> * 4)
-   .inputs(<ore:circuitIv> * 16)
-   .inputs(<metaitem:crate.titanium> * 3)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftcore:rocket_t1:3>)
-   .duration(1200).EUt(6000).buildAndRegister();
-
-// Tier 2 - Without Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftplanets:heavy_nose_cone>)
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 36)
-   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
-   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 6)
-   .inputs(<ore:wireGtSingleSamariumIronArsenicOxide> * 16)
-   .inputs(<galacticraftcore:engine:1> * 4)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<contenttweaker:lander_tier2>)
-   .inputs(<metaitem:electric.motor.iv> * 4)
-   .inputs(<metaitem:emitter.iv> * 4)
-   .inputs(<ore:circuitIv> * 22)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftplanets:rocket_t2>)
-   .duration(1200).EUt(9000).buildAndRegister();
-
-// Tier 2 - With 1 Chest
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftplanets:heavy_nose_cone>)
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 36)
-   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
-   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 6)
-   .inputs(<ore:wireGtSingleSamariumIronArsenicOxide> * 16)
-   .inputs(<galacticraftcore:engine:1> * 4)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<contenttweaker:lander_tier2>)
-   .inputs(<metaitem:electric.motor.iv> * 4)
-   .inputs(<metaitem:emitter.iv> * 4)
-   .inputs(<ore:circuitIv> * 22)
-   .inputs(<metaitem:crate.steel>)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftplanets:rocket_t2:1>)
-   .duration(1200).EUt(9000).buildAndRegister();
-
-// Tier 2 - With 2 Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftplanets:heavy_nose_cone>)
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 36)
-   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
-   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 6)
-   .inputs(<ore:wireGtSingleSamariumIronArsenicOxide> * 16)
-   .inputs(<galacticraftcore:engine:1> * 4)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<contenttweaker:lander_tier2>)
-   .inputs(<metaitem:electric.motor.iv> * 4)
-   .inputs(<metaitem:emitter.iv> * 4)
-   .inputs(<ore:circuitIv> * 22)
-   .inputs(<metaitem:crate.stainless_steel> * 2)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftplanets:rocket_t2:2>)
-   .duration(1200).EUt(9000).buildAndRegister();
-
-// Tier 2 - With 3 Chests
-assembly_line.recipeBuilder()
-   .inputs(<galacticraftplanets:heavy_nose_cone>)
-   .inputs(<galacticraftplanets:item_basic_mars:3> * 36)
-   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
-   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
-   .inputs(<galacticraftcore:oil_canister_partial:1001> * 6)
-   .inputs(<ore:wireGtSingleSamariumIronArsenicOxide> * 16)
-   .inputs(<galacticraftcore:engine:1> * 4)
-   .inputs(<ore:batteryHv> * 3)
-   .inputs(<contenttweaker:lander_tier2>)
-   .inputs(<metaitem:electric.motor.iv> * 4)
-   .inputs(<metaitem:emitter.iv> * 4)
-   .inputs(<ore:circuitIv> * 22)
-   .inputs(<metaitem:crate.titanium> * 3)
-   .fluidInputs([<liquid:soldering_alloy> * 9216])
-   .fluidInputs([<liquid:lead> * 4608])
-   .fluidInputs([<liquid:copper> * 4608])
-   .outputs(<galacticraftplanets:rocket_t2:3>)
-   .duration(1200).EUt(9000).buildAndRegister();
-
-// High Duty Plates(1-3)
-// Tier 1
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseBlackSteel>.firstItem * 3, <ore:plateDenseAluminium>.firstItem * 2, <ore:plateDenseBronze> * 16])
-   .fluidInputs([<liquid:stainless_steel> * 800])
-	.outputs(<galacticraftcore:heavy_plating> * 3)
-	.property("temperature", 3500)
-	.duration(1000).EUt(520).buildAndRegister();
-// Tier 2
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseAluminium>.firstItem * 3, <ore:plateDenseStainlessSteel>.firstItem * 2, <galacticraftcore:heavy_plating> * 2])
-   .fluidInputs([<liquid:titanium> * 800])
-	.outputs(<galacticraftplanets:item_basic_mars:3> * 3)
-	.property("temperature", 4400)
-	.duration(1000).EUt(620).buildAndRegister();
-// Tier 3
-electric_blast_furnace.recipeBuilder()
-	.inputs([<ore:plateDenseStainlessSteel>.firstItem * 3, <ore:plateDenseTitanium>.firstItem * 2, <galacticraftplanets:item_basic_mars:3> * 2])
-   .fluidInputs([<liquid:tungsten_steel> * 800])
-	.outputs(<galacticraftplanets:item_basic_asteroids:5> * 3)
-	.property("temperature", 5300)
-	.duration(1000).EUt(720).buildAndRegister();
+// Тир 3 лэндер
+recipes.addShaped("tfg/galacticraft/lander_tier_3", <contenttweaker:lander_tier3>,
+   [[<ore:plateBlackSteel>, <ore:chestWood>, <ore:plateBlackSteel>],
+   [<galacticraftcore:steel_pole>, <contenttweaker:lander_tier2>, <galacticraftcore:steel_pole>],
+   [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);

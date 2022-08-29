@@ -1,0 +1,31 @@
+{
+	icon: "gregtech:machine 1 8544",
+	x: 8.0d,
+	y: 7.0d,
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "5bd082c0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 8544"
+		}]
+	},
+	{
+		uid: "655da0dd",
+		type: "item",
+		items: [{
+			item: "gregtechfoodoption:gtfo_casing 1 1"
+		}],
+		count: 36L
+	},
+	{
+		uid: "f2ecd1e5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_block_frame_20 1 4"
+		}],
+		count: 8L
+	}]
+}

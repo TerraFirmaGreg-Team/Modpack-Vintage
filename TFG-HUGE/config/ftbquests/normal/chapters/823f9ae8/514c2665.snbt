@@ -1,12 +1,10 @@
 {
 	title: "{tfg.quests.primitive.kaolinitepile.title}",
-	x: -3.4845238095236937d,
-	y: 6.98214285714279d,
-	shape: "diamond",
+	x: -3.25d,
+	y: 7.0d,
 	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"b320933e"
+		"fc770141"
 	],
 	tasks: [{
 		uid: "ae706ed9",

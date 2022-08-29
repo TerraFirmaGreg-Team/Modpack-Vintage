@@ -303,19 +303,19 @@ for item in TFC_Saws {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
-
+// Ключи
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),
     <gregtech:meta_tool:28>.withEmptyTag(),
     <gregtech:meta_tool:29>.withEmptyTag(),
     <gregtech:meta_tool:30>.withEmptyTag()
 ]);
-
+// Отвертки
 <ore:gtce.tool.screwdrivers>.addItems([
     <gregtech:meta_tool:11>.withEmptyTag(),
     <gregtech:meta_tool:31>.withEmptyTag()
 ]);
-
+// Молоты
 <ore:gtce.tool.hard.hammers>.addItems([
     <gregtech:meta_tool:6>.withEmptyTag()
 ]);
@@ -350,12 +350,12 @@ for item in TFC_Saws {
 
 <ore:gtce.tool.knife>.addItems([
     <gregtech:meta_tool:15>.withEmptyTag(),
-    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
+    //<gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 
-<ore:gtce.tool.rolling.pins>.addItems([
-    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
-]);
+//<ore:gtce.tool.rolling.pins>.addItems([
+    //<gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+//]);
 
 <ore:gtce.tool.tongs>.addItems([
     <tfgmod:meta_tool>.withEmptyTag()
@@ -385,6 +385,7 @@ for item in TFC_Saws {
 <ore:boltIronAny>.add(<metaitem:boltIron>, <metaitem:boltWroughtIron>);
 <ore:screwIronAny>.add(<metaitem:screwIron>, <metaitem:screwWroughtIron>);
 <ore:rotorIronAny>.add(<metaitem:rotorIron>, <metaitem:rotorWroughtIron>);
+<ore:toolHeadBuzzSawIronAny>.add(<metaitem:toolHeadBuzzSawIron>, <metaitem:toolHeadBuzzSawWroughtIron>);
 
 // BronzeAny Screws
 <ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
@@ -421,20 +422,17 @@ for item in Gem_Exquisite {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
-
-// Interface
+// Интерфейсы
 <ore:ae2.interface.item>.addItems([
     <appliedenergistics2:interface>,
     <appliedenergistics2:part:440>
 ]);
-
-// Fluid Interface
+// Жидкостные интерфейсы
 <ore:ae2.interface.fluid>.addItems([
     <appliedenergistics2:fluid_interface>,
     <appliedenergistics2:part:441>
 ]);
-
-// Glass Cable
+// Стеклянный кабель
 for glassCable in glassCables {
     <ore:ae2.cable.glass>.add(glassCable);
     if (glassCable.displayName has "Fluix") {}
@@ -442,8 +440,7 @@ for glassCable in glassCables {
         <ore:ae2.cable.glass.colors>.add(glassCable);
     }
 }
-
-// Covered Cable
+// Закрытый кабель
 for coveredCable in coveredCables {
     <ore:ae2.cable.covered>.add(coveredCable);
     if (coveredCable.displayName has "Fluix") {}
@@ -451,8 +448,7 @@ for coveredCable in coveredCables {
         <ore:ae2.cable.covered.colors>.add(coveredCable);
     }
 }
-
-// Smart Cable
+// Умный кабель
 for smartCable in smartCables {
     <ore:ae2.cable.smart>.add(smartCable);
     if (smartCable.displayName has "Fluix") {}
@@ -460,8 +456,7 @@ for smartCable in smartCables {
         <ore:ae2.cable.smart.colors>.add(smartCable);
     }
 }
-
-// Dense Covered Cable
+// Плотный закрытый кабель
 for denseCoveredCable in denseCoveredCables {
     <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
     if (denseCoveredCable.displayName has "Fluix") {}
@@ -469,8 +464,7 @@ for denseCoveredCable in denseCoveredCables {
         <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
     }
 }
-
-// Dense Smart Cable
+// Плотный умный кабель
 for denseSmartCable in denseSmartCables {
     <ore:ae2.cable.dense.smart>.add(denseSmartCable);
     if (denseSmartCable.displayName has "Fluix") {}
@@ -478,11 +472,20 @@ for denseSmartCable in denseSmartCables {
         <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
     }
 }
+// Изменчивый кристал
+<ore:gemFluix>.addItems([<appliedenergistics2:material:7>]);
+<ore:blockFluix>.addItems([<appliedenergistics2:fluix_block>]);
+// Заряженный изменчивый кристал
+<ore:gemChargedCertusQuartz>.addItems([<appliedenergistics2:material:1>]);
 
 // --- Удаление
-
-// Iron Dust
-<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+// Пыль жемчуга эндера
+<ore:dustEnder>.remove(<appliedenergistics2:material:46>);
+<ore:dustEnderPearl>.remove(<appliedenergistics2:material:46>);
+// Истинный кварц
+<ore:crystalCertusQuartz>.remove(<appliedenergistics2:material>);
+// Силикон
+<ore:itemSilicon>.remove(<appliedenergistics2:material:5>);
 
 ////////////////////////////////////////////////////////
 // --- PROJECTRED --- //////////////////////////////////
@@ -683,9 +686,9 @@ for denseSmartCable in denseSmartCables {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
-
+//
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
-// Парашеты
+// Парашуты
 for gcParachute in gcParachute {
     <ore:gc.parachute>.add(gcParachute);
     if (gcParachute has <galacticraftcore:parachute>) {}
@@ -808,7 +811,7 @@ for gcParachute in gcParachute {
 <ore:treeSapling>.remove(<minecraft:sapling:*>);
 <ore:slabWood>.remove(<minecraft:wooden_slab:*>);
 <ore:plankWood>.remove(<minecraft:planks:*>);
-<ore:logWood>.remove(<minecraft:log:*>);
+<ore:logWood>.remove(<minecraft:log:*>, <minecraft:log2:*>);
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
 <ore:chestWood>.remove(<minecraft:trapped_chest>);
 <ore:chestWood>.remove(<minecraft:chest>);

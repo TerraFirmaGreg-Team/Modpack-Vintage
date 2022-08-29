@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.blowpipe.title}",
-	x: -8.0d,
-	y: 5.0d,
+	x: -7.5d,
+	y: -20.25d,
 	description: "{tfg.quests.primitive.blowpipe.subtitle}",
 	dependencies: [
 		"f573e4d8"

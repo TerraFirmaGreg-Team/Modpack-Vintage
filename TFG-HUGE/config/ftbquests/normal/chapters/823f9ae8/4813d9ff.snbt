@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.woodchest.title}",
 	icon: "minecraft:chest",
-	x: -22.0d,
-	y: 3.0d,
+	x: -14.0d,
+	y: 2.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.woodchest.subtitle}",
 	dependencies: [
-		"c8377a61"
+		"4a3aaaad"
 	],
 	tasks: [{
 		uid: "5abd577a",

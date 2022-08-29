@@ -1,6 +1,6 @@
 {
-	x: -18.0d,
-	y: -9.0d,
+	x: -12.0d,
+	y: -2.0d,
 	description: "{tfg.quests.steam.smallfluidpipe.subtitle}",
 	text: [
 		"{tfg.quests.steam.smallfluidpipe.desc1}",
@@ -14,7 +14,7 @@
 		"{tfg.quests.steam.smallfluidpipe.desc7}"
 	],
 	dependencies: [
-		"5347bf68"
+		"8fdd423e"
 	],
 	tasks: [{
 		uid: "77a923d7",

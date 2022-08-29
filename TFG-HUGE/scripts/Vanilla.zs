@@ -13,7 +13,9 @@ val ItemsToRemove as IItemStack[] = [
     <minecraft:leather_boots>,
     <minecraft:bucket>,
     <minecraft:enchanting_table>,
-    <minecraft:name_tag>
+    <minecraft:name_tag>,
+    <minecraft:daylight_detector>,
+    <minecraft:comparator>
 ];
 
 val RemoveItemRecipesByName = [
@@ -296,6 +298,7 @@ macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 
 // Книжные полки
+assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();
 extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
 arc_furnace.findRecipe(30, [<minecraft:bookshelf:0>], [<liquid:oxygen>]).remove();
 macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
@@ -404,6 +407,9 @@ assembler.findRecipe(4, [<minecraft:nether_brick:0>, <metaitem:circuit.integrate
 // Nether Brick Stairs
 assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
+// Раскрафт ванильного верстака
+macerator.findRecipe(2, [<minecraft:crafting_table:0>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металла
@@ -414,11 +420,6 @@ ItemRegistry.registerItemMetal(<minecraft:bucket>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerFood(<minecraft:mushroom_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 0, 0);
 ItemRegistry.registerFood(<minecraft:rabbit_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 1.0, 0);
 ItemRegistry.registerFood(<minecraft:beetroot_soup>, 4, 22, 2.0, 2.0, 0, 3.0, 0, 0, 0);
-
-// Крафт некоторых блоков в компрессоре
-compressor.recipeBuilder().inputs(<ore:gemLapis> * 9).outputs(<minecraft:lapis_block>).duration(400).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemDiamond> * 9).outputs(<minecraft:diamond_block>).duration(400).EUt(2).buildAndRegister();
-compressor.recipeBuilder().inputs(<ore:gemEmerald> * 9).outputs(<minecraft:emerald_block>).duration(400).EUt(2).buildAndRegister();
 
 // Водная хрень
 recipes.addShapeless("tfg/vanilla/prismarine/block_raw_0", <minecraft:prismarine>, [<ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>, <ore:gemPrismarine>]);
@@ -700,7 +701,7 @@ assembler.recipeBuilder()
 
 // Воронка
 assembler.recipeBuilder()
-    .inputs(<ore:chest>, <ore:plateIronAny> * 5)
+    .inputs(<ore:chest>, <ore:plateIronAny> * 5, <ore:gearIronAny>)
     .outputs(<minecraft:hopper>)
     .duration(100).EUt(2).buildAndRegister();
 

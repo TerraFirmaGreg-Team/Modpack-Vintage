@@ -11,7 +11,6 @@ val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
 val ItemsToRemove as IItemStack[] = [
     <minecraft:paper> * 2,
-    <gregtech:machine_casing:1>,
     <gregtech:metal_casing:1>,
     <gregtech:steam_casing:4>,
     <metaitem:coke_oven>,
@@ -108,18 +107,6 @@ for item in ItemsToRemove {
 for item in RemoveItemRecipesByName {
     recipes.removeByRecipeName(item);
 }
-
-// Временный фикс проблемы совместимости и дублей рецепта
-// Свинец (Прут) * 2
-<recipemap:extruder>.findRecipe(42, [<metaitem:ingotLead>, <metaitem:shape.extruder.rod>], null).remove();
-// Свинец (Пластина) * 1
-<recipemap:bender>.findRecipe(24, [<metaitem:ingotLead>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
-// Свинец (Пластина) * 2
-<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
-// Свинец (Пластина) * 2
-<recipemap:forge_hammer>.findRecipe(16, [<metaitem:ingotLead> * 3], null).remove();
-// Свинец (Пластина) * 1
-<recipemap:extruder>.findRecipe(56, [<metaitem:ingotLead>, <metaitem:shape.extruder.plate>], null).remove();
 
 // Разбор бочки
 macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
@@ -337,6 +324,9 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 // Nether Dust decomp
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 
+// Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
+assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
+
 // --- Добавление рецептов
 
 // Регистрация металлов
@@ -354,17 +344,19 @@ ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
 // Контроллер теплицы
+/*
 recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
     [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
     [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
     [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
-
+*/
 // Контроллер распилки
+/*
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);
-
+*/
 // Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, [
     [<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
@@ -380,7 +372,7 @@ recipes.addShaped("tfg/gregtech/steam_forge_hammer", <metaitem:steam_hammer_stee
 // Скомпрессированная глина
 recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke_clay> * 3, [
     [<tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>, <tfc:ceramics/unfired/clay_brick>],
-    [<ore:sand>, <gregtech:meta_item_1:348>, <ore:sand>],
+    [<ore:sand>, <metaitem:wooden_form.brick>, <ore:sand>],
     [<ore:sand>, <ore:sand>, <ore:sand>]]);
 
 // Деревянная форма
@@ -431,11 +423,11 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
 //     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
 //     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
-// LV Корпус машины
-recipes.addShaped("tfg/gregtech/lv_machine_casing", <gregtech:machine_casing:1>, [
-    [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>],
-    [<ore:plateBlueSteel>, <ore:gtce.tool.wrenches>, <ore:plateBlueSteel>],
-    [<ore:plateRedSteel>, <ore:plateBlueSteel>, <ore:plateRedSteel>]]);
+// Обработанные доски
+recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}), <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 
 // Primitive water pump deck
 recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casing:4> * 2, [
@@ -445,13 +437,13 @@ recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casi
 // Primitive water pump hatch
 recipes.addShaped("tfg/gregtech/primitive_water_pump_hatch", <metaitem:pump_hatch>, [
     [<ore:screwIronAny>, <ore:ringIronAny>, <ore:gtce.tool.screwdrivers>],
-    [<ore:plankWood>, <ore:pipeLargeFluidWood>, <ore:plankWood>],
+    [<ore:plankTreatedWood>, <ore:pipeLargeFluidWood>, <ore:plankTreatedWood>],
     [<ore:slabCobblestone>, <ore:ringIronAny>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped("tfg/gregtech/primitive_water_pump", <metaitem:primitive_water_pump>, [
     [<ore:ringIronAny>, <ore:pipeNormalFluidWood>, <ore:screwIronAny>],
-    [<ore:rotorIronAny>, <ore:plankWood>, <ore:gtce.tool.screwdrivers>],
+    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:gtce.tool.screwdrivers>],
     [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
@@ -526,8 +518,13 @@ macerator.recipeBuilder()
     .outputs(<metaitem:dustPaper> * 9, <metaitem:dustObsidian> * 3)
     .duration(135).EUt(2).buildAndRegister();
 
-// Extruder Shape (Sense Head)
+// Crafting Table Cover
+assembler.recipeBuilder()
+    .inputs(<ore:plateIronAny>, <ore:workbench>)
+    .outputs(<metaitem:cover.crafting>)
+    .duration(400).EUt(16).buildAndRegister();
 
+// Extruder Shape (Sense Head)
 recipes.addShaped(<contenttweaker:shape_extruder_sense>, [
     [null, null, null],
     [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
@@ -579,6 +576,7 @@ extractor.recipeBuilder()
     .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
 
 // Контроллер звездной кузни
+/*
 assembly_line.recipeBuilder()
     .inputs([
       <ore:batteryIv> * 4,  
@@ -594,7 +592,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
     .duration(1300).EUt(8100).buildAndRegister();
-
+*/
 // Solar Panel (ULV)
 assembly_line.recipeBuilder()
     .inputs([
@@ -899,12 +897,6 @@ extractor.recipeBuilder()
     .inputs(<minecraft:magma>)
     .fluidOutputs(<fluid:lava> * 750)
     .duration(220).EUt(140).buildAndRegister();
-
-// Гравий --> кремень
-forge_hammer.recipeBuilder()
-    .inputs([<ore:gravel> * 1])
-    .outputs(<minecraft:flint> * 1)
-    .duration(45).EUt(5).buildAndRegister();
 
 // Сахарный тростник --> целлюлоза
 forge_hammer.recipeBuilder()

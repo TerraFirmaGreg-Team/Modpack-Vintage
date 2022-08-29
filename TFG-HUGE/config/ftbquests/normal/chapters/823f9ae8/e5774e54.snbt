@@ -1,7 +1,6 @@
 {
-	x: -8.0d,
-	y: -7.25d,
-	shape: "pentagon",
+	x: -8.75d,
+	y: -5.75d,
 	description: "{tfg.quests.primitive.bloomery.subtitle}",
 	dependencies: [
 		"e21bf425"

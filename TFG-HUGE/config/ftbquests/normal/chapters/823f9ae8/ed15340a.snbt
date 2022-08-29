@@ -1,12 +1,10 @@
 {
 	title: "{tfg.quests.primitive.graphitepile.title}",
-	x: -3.4845238095236937d,
-	y: 8.017857142857082d,
-	shape: "diamond",
+	x: -1.75d,
+	y: 7.0d,
 	description: "{tfg.quests.primitive.graphitepile.subtitle}",
-	hide_dependency_lines: true,
 	dependencies: [
-		"b320933e"
+		"2cc65911"
 	],
 	tasks: [{
 		uid: "1597f4e0",

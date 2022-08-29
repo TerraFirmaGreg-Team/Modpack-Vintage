@@ -80,3 +80,6 @@ assembler.recipeBuilder()
   .circuit(24)
   .outputs(<ae2fc:dual_interface>)
   .duration(10).EUt(480).buildAndRegister();
+
+// Очистка шаблона
+  recipes.addShapeless(<appliedenergistics2:material:52>, [<ae2fc:dense_encoded_pattern>]);

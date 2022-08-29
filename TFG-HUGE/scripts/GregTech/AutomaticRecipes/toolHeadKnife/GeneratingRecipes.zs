@@ -9,16 +9,12 @@ toolHeadKnife.generateRecipes(function(orePrefix as OrePrefix, material as Mater
 
     recipes.removeByRecipeName("gregtech:knife_" + material.name);
 
-    if (material.name != "flint")
-    {
+    if (material.name != "flint") {
        recipes.addShaped("tfg/gregtech/knife/" + material.name, <metaitem:tool.knife>.withTag({"GT.ToolStats": {Material: material.name}}), [
-        [Utils.ore(orePrefix, material), <minecraft:stick>, null],
-        [null, null, null],
-        [null, null, null]]); 
+        [Utils.ore(orePrefix, material), <minecraft:stick>, null]]); 
     }
 
-    if (material.hasIngot())
-    {
+    if (material.hasIngot()) {
         alloy_smelter.recipeBuilder()
             .inputs(Utils.ore("ingot", material))
             .notConsumable(<contenttweaker:shape_mold_knife>)

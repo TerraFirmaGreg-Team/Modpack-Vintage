@@ -1,35 +1,37 @@
 {
-    "name": "Phobos Magnetite",
-    "weight": 160,
-    "density": 0.25,
-    "max_height": 55,
-    "min_height": 5,
-    "generation_predicate":["block:galaxyspace:phobosblocks:1"],
-    "dimension_filter": [
-      "dimension_id:-1012"
+  "name": "Phobos Magnetite",
+  "weight": 160,
+  "density": 0.25,
+  "max_height": 55,
+  "min_height": 5,
+  "generation_predicate": [
+    "block:extraplanets:phobos:2"
   ],
-    "generator": {
-      "type": "layered",
-      "radius": [
-        14,
-        32
-      ]
-    },
-    "filler": {
-      "type": "layered",
-      "values": [
-        {
-          "primary": "ore:magnetite"
-        },
-        {
-          "secondary": "ore:magnetite"
-        },
-        {
-          "between": "ore:vanadium_magnetite"
-        },
-        {
-          "sporadic": "ore:gold"
-        }
-      ]
-    }
+  "dimension_filter": [
+    "dimension_id:-1012"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:magnetite"
+      },
+      {
+        "secondary": "ore:magnetite"
+      },
+      {
+        "between": "ore:vanadium_magnetite"
+      },
+      {
+        "sporadic": "ore:gold"
+      }
+    ]
+  }
 }

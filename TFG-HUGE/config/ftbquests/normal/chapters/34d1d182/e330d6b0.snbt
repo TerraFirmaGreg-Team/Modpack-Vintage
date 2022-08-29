@@ -17,7 +17,7 @@
 		uid: "c8941e70",
 		type: "item",
 		items: [{
-			item: "galaxyspace:phobosblocks 1 1"
+			item: "extraplanets:mercury 1 1"
 		}]
 	}]
 }

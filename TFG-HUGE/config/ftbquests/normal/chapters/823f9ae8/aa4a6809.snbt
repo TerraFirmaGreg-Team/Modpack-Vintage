@@ -1,13 +1,10 @@
 {
-	icon: "gregtech:meta_dust 1 103",
-	x: -5.0d,
-	y: 9.0d,
+	icon: "gregtech:meta_dust_small 1 103",
+	x: -6.0d,
+	y: 5.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.sulfurdust.subtitle}",
 	hide_dependency_lines: true,
-	dependencies: [
-		"b320933e"
-	],
 	tasks: [{
 		uid: "14fbc66f",
 		type: "item",

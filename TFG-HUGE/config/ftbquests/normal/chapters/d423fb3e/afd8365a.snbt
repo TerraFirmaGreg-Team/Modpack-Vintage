@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.steam.wirecutter.title}",
-	x: -11.5d,
-	y: 0.0d,
+	x: -14.5d,
+	y: -1.0d,
 	description: "{tfg.quests.steam.wirecutter.subtitle}",
 	text: [
 		""

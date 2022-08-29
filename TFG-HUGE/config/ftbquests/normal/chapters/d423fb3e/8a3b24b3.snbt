@@ -1,10 +1,11 @@
 {
-	x: -10.0d,
-	y: -11.0d,
+	x: -12.0d,
+	y: -9.25d,
 	description: "{tfg.quests.steam.advforgehammer.subtitle}",
 	dependencies: [
 		"eccc01a5"
 	],
+	optional: true,
 	tasks: [{
 		uid: "5c5b17ba",
 		type: "item",

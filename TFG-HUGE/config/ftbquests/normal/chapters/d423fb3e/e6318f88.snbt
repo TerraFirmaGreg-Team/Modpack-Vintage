@@ -1,28 +1,30 @@
 {
-	x: -10.0d,
-	y: -7.0d,
-	shape: "hexagon",
+	icon: {
+		id: "gregtech:meta_plate",
+		Damage: 324s,
+		ForgeCaps: {
+			"tfc:item_forge": {
+				ticks: -1L,
+				heat: 0.0f,
+				forge: {
+					work: 0,
+					steps: {
+						last: -1,
+						second: -1,
+						third: -1
+					}
+				}
+			}
+		}
+	},
+	x: -12.0d,
+	y: -5.5d,
 	description: "{tfg.quests.steam.steelplates.subtitle}",
 	dependencies: [
 		"8fdd423e"
 	],
 	tasks: [{
-		uid: "810c7486",
-		type: "item",
-		title: "{tfg.quests.steam.steelplates.title}",
-		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any plateSteel"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "plateSteel"
-				}
-			}
-		}]
+		uid: "8bb91144",
+		type: "checkmark"
 	}]
 }

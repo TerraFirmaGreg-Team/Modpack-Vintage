@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.stone_knife.title}",
+	x: -28.0d,
+	y: -3.0d,
+	description: "{tfg.quests.primitive.stone_knife.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "6fc034bc",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any knifeStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "knifeStone"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

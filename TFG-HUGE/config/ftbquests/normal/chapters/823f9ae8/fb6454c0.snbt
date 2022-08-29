@@ -1,9 +1,10 @@
 {
-	x: -18.0d,
-	y: 2.0d,
+	x: -14.0d,
+	y: 1.0d,
 	description: "{tfg.quests.primitive.wheel.subtitle}",
 	dependencies: [
-		"c8377a61"
+		"fbdff2ba",
+		"4a3aaaad"
 	],
 	tasks: [{
 		uid: "200afdc6",

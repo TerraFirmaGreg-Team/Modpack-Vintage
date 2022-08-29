@@ -1,6 +1,6 @@
 {
-	x: -16.0d,
-	y: -16.0d,
+	x: -18.0d,
+	y: -15.0d,
 	description: "{tfg.quests.steam.component.subtitle}",
 	text: [
 		"{tfg.quests.steam.component.desc1}",

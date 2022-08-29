@@ -1,9 +1,19 @@
 {
-	x: -22.0d,
-	y: -6.5d,
-	description: "{tfg.quests.primitive.coppergeopick.subtitle}",
+	title: "{tfg.quests.primitive.copper_prospect.title}",
+	x: -20.0d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.copper_prospect.subtitle}",
+	text: [
+		"{tfg.quests.primitive.copper_prospect.desk1}",
+		"{tfg.quests.primitive.copper_prospect.desk2}",
+		"{tfg.quests.primitive.copper_prospect.desk3}",
+		"{tfg.quests.primitive.copper_prospect.desk4}",
+		"{tfg.quests.primitive.copper_prospect.desk5}",
+		"{tfg.quests.primitive.copper_prospect.desk6}",
+		"{tfg.quests.primitive.copper_prospect.desk7}"
+	],
 	dependencies: [
-		"57406373"
+		"a56b176d"
 	],
 	tasks: [{
 		uid: "2d8031a3",

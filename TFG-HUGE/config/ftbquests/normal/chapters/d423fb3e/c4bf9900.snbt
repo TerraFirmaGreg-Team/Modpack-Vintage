@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.steam.steelboilers.title}",
-	x: -12.0d,
-	y: -11.0d,
+	x: -13.0d,
+	y: -9.25d,
 	text: [
 		"{tfg.quests.steam.steelboilers.desc1}",
 		"",
@@ -26,9 +26,6 @@
 		},
 		{
 			item: "gregtech:machine 1 4"
-		},
-		{
-			item: "gregtech:machine 1 2"
 		}]
 	}]
 }

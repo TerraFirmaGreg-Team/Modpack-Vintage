@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.bucket.title}",
-	x: 12.0d,
-	y: -1.5d,
+	x: 9.5d,
+	y: -8.5d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.bucket.subtitle}",
 	dependencies: [

@@ -1,0 +1,14 @@
+{
+	x: -21.0d,
+	y: 2.0d,
+	dependencies: [
+		"8495b921"
+	],
+	tasks: [{
+		uid: "ed642411",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/papyrus_paper"
+		}]
+	}]
+}

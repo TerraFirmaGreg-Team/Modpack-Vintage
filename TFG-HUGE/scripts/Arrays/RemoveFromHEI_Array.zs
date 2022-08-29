@@ -5,14 +5,25 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 // Categories
-JEI.hideCategory("minecraft.anvil");
-JEI.hideCategory("appliedenergistics2.inscriber");
-JEI.hideCategory("tfcflorae.casting");
-JEI.hideCategory("ftbquests.quests");
-JEI.hideCategory("planetprogression.satellite.builder");
-JEI.hideCategory("mpestle");
-JEI.hideCategory("galacticraft.ingotcompressor");
-
+val hideCategory as string[] = [
+	"galacticraft.rocketT1",
+	"galacticraft.buggy",
+	"galacticraft.oxygencompressor",
+	"minecraft.anvil",
+	"appliedenergistics2.inscriber",
+	"tfcflorae.casting",
+	"ftbquests.quests",
+	"planetprogression.satellite.builder",
+	"mpestle",
+	"galacticraft.ingotcompressor",
+	"galacticraft.rocketT3",
+	"galacticraft.astroMiner",
+	"galacticraft.rocketT2",
+	"galacticraft.cargoRocket"
+];
+for item in hideCategory {
+	JEI.hideCategory(item);
+}
 
 // Скрытие предметов и удаление рецептов верстака
 
@@ -39,49 +50,41 @@ val AE2WTLib as IItemStack[] = [
 	<ae2wtlib:wut_creative>
 ];
 for item in AE2WTLib {
-		JEI.removeAndHide(item);
+	JEI.removeAndHide(item);
 }
 
 val aeadditions as IItemStack[] = [
 	<aeadditions:certustank>,
 	<aeadditions:vibrantchamberfluid>,
 	<aeadditions:terminal.universal.wireless>,
+	<aeadditions:terminal.fluid.wireless>,
 	<aeadditions:part.base:2>
 ];
 for item in aeadditions {
-		JEI.removeAndHide(item);
+	JEI.removeAndHide(item);
 }
 
 val AE2EL as IItemStack[] = [
+	<appliedenergistics2:quartz_block>,
+	<appliedenergistics2:quartz_stairs>,
+	<appliedenergistics2:quartz_slab>,
+	<appliedenergistics2:quartz_pillar>,
+	<appliedenergistics2:quartz_pillar_stairs>,
+	<appliedenergistics2:quartz_pillar_slab>,
+	<appliedenergistics2:chiseled_quartz_block>,
+	<appliedenergistics2:chiseled_quartz_stairs>,
+	<appliedenergistics2:chiseled_quartz_slab>,
+	<appliedenergistics2:material>,
+	<appliedenergistics2:material:5>,
 	<appliedenergistics2:material:46>,
-	<appliedenergistics2:material:2>,
-	<appliedenergistics2:material:49>,
-	<appliedenergistics2:material:51>,
-	<appliedenergistics2:material:3>,
-	<appliedenergistics2:smooth_sky_stone_block>,
-	<appliedenergistics2:sky_stone_block>,
-	<appliedenergistics2:smooth_sky_stone_slab>,
-	<appliedenergistics2:sky_stone_brick_slab>,
-	<appliedenergistics2:sky_stone_small_brick_slab>,
-	<appliedenergistics2:creative_storage_cell>,
 	<appliedenergistics2:encoded_pattern>,
-	<appliedenergistics2:material:45>,
-	<appliedenergistics2:creative_energy_cell>,
-	<appliedenergistics2:sky_stone_slab>,
-	<appliedenergistics2:sky_stone_small_brick_stairs>,
-	<appliedenergistics2:sky_stone_brick_stairs>,
-	<appliedenergistics2:smooth_sky_stone_stairs>,
-	<appliedenergistics2:sky_stone_stairs>,
-	<appliedenergistics2:sky_stone_small_brick>,
-	<appliedenergistics2:sky_stone_brick>
+	<appliedenergistics2:material:21>
 ];
 for item in AE2EL {
     JEI.removeAndHide(item);
 }
 
-
 val Galacticraft as IItemStack[] = [
-	// Руды
 	// Медь
 	<galacticraftcore:basic_block_core:5>,
 	<galacticraftcore:basic_block_moon>,
@@ -219,42 +222,45 @@ val Galacticraft as IItemStack[] = [
 	<galacticraftplanets:mars_machine_t2:4>,
 	<galacticraftplanets:mars_machine_t2:8>,
 	<galacticraftcore:machine2:12>,
-	<galacticraftplanets:geothermal_generator>
+	<galacticraftplanets:geothermal_generator>,
+	// Другое
+	<galacticraftcore:food:6>,
+	<galacticraftcore:food:7>
 ];
 for item in Galacticraft {
     JEI.removeAndHide(item);
 }
 
 val GregTech as IItemStack[] = [
-    // Marble and Basalt
-    <gregtech:stone_tiled_small:2>,
-    <gregtech:stone_bricks_small:2>,
-    <gregtech:stone_windmill_a:2>,
-    <gregtech:stone_windmill_b:2>,
-    <gregtech:stone_bricks_square:2>,
-    <gregtech:stone_smooth:3>,
-    <gregtech:stone_cobble:3>,
-    <gregtech:stone_cobble_mossy:3>,
-    <gregtech:stone_polished:3>,
-    <gregtech:stone_bricks:3>,
-    <gregtech:stone_bricks_cracked:3>,
-    <gregtech:stone_bricks_mossy:3>,
-    <gregtech:stone_chiseled:3>,
-    <gregtech:stone_tiled:3>,
-    <gregtech:stone_tiled_small:3>,
-    <gregtech:stone_bricks_small:3>,
-    <gregtech:stone_windmill_a:3>,
-    <gregtech:stone_windmill_b:3>,
-    <gregtech:stone_bricks_square:3>,
-    <gregtech:stone_smooth:2>,
-    <gregtech:stone_cobble:2>,
-    <gregtech:stone_cobble_mossy:2>,
-    <gregtech:stone_polished:2>,
-    <gregtech:stone_bricks:2>,
-    <gregtech:stone_bricks_cracked:2>,
-    <gregtech:stone_bricks_mossy:2>,
-    <gregtech:stone_chiseled:2>,
-    <gregtech:stone_tiled:2>,
+  // Marble and Basalt
+  <gregtech:stone_tiled_small:2>,
+  <gregtech:stone_bricks_small:2>,
+  <gregtech:stone_windmill_a:2>,
+  <gregtech:stone_windmill_b:2>,
+  <gregtech:stone_bricks_square:2>,
+  <gregtech:stone_smooth:3>,
+  <gregtech:stone_cobble:3>,
+  <gregtech:stone_cobble_mossy:3>,
+  <gregtech:stone_polished:3>,
+  <gregtech:stone_bricks:3>,
+  <gregtech:stone_bricks_cracked:3>,
+  <gregtech:stone_bricks_mossy:3>,
+  <gregtech:stone_chiseled:3>,
+  <gregtech:stone_tiled:3>,
+  <gregtech:stone_tiled_small:3>,
+  <gregtech:stone_bricks_small:3>,
+  <gregtech:stone_windmill_a:3>,
+  <gregtech:stone_windmill_b:3>,
+  <gregtech:stone_bricks_square:3>,
+  <gregtech:stone_smooth:2>,
+  <gregtech:stone_cobble:2>,
+  <gregtech:stone_cobble_mossy:2>,
+  <gregtech:stone_polished:2>,
+  <gregtech:stone_bricks:2>,
+  <gregtech:stone_bricks_cracked:2>,
+  <gregtech:stone_bricks_mossy:2>,
+  <gregtech:stone_chiseled:2>,
+  <gregtech:stone_tiled:2>,
 	// Tools
 	<metaitem:toolHeadSwordFlint>,
     <metaitem:toolHeadPickaxeFlint>,
@@ -466,26 +472,26 @@ val TFCTech as IItemStack[] = [
 	<tfctech:metal/bismuth_bronze_rackwheel_piece>,
 	<tfctech:metal/brass_rackwheel_piece>,
 	// Gears
-    <tfctech:metal/sterling_silver_gear>,
-    <tfctech:metal/tin_gear>,
-    <tfctech:metal/silver_gear>,
-    <tfctech:metal/rose_gold_gear>,
-    <tfctech:metal/lead_gear>,
-    <tfctech:metal/gold_gear>,
-    <tfctech:metal/copper_gear>,
-    <tfctech:metal/brass_gear>,
-    <tfctech:metal/bismuth_bronze_gear>,
-    <tfctech:metal/steel_gear>,
-    <tfctech:metal/wrought_iron_gear>,
-    <tfctech:metal/zinc_gear>,
-    <tfctech:metal/nickel_gear>,
-    <tfctech:metal/bronze_gear>,
-    <tfctech:metal/black_bronze_gear>,
-    <tfctech:metal/bismuth_gear>,
-    <tfctech:metal/black_steel_gear>,
-    <tfctech:metal/blue_steel_gear>,
-    <tfctech:metal/platinum_gear>,
-    <tfctech:metal/pig_iron_gear>,
+  <tfctech:metal/sterling_silver_gear>,
+  <tfctech:metal/tin_gear>,
+  <tfctech:metal/silver_gear>,
+  <tfctech:metal/rose_gold_gear>,
+  <tfctech:metal/lead_gear>,
+  <tfctech:metal/gold_gear>,
+  <tfctech:metal/copper_gear>,
+  <tfctech:metal/brass_gear>,
+  <tfctech:metal/bismuth_bronze_gear>,
+  <tfctech:metal/steel_gear>,
+  <tfctech:metal/wrought_iron_gear>,
+  <tfctech:metal/zinc_gear>,
+  <tfctech:metal/nickel_gear>,
+  <tfctech:metal/bronze_gear>,
+  <tfctech:metal/black_bronze_gear>,
+  <tfctech:metal/bismuth_gear>,
+  <tfctech:metal/black_steel_gear>,
+  <tfctech:metal/blue_steel_gear>,
+  <tfctech:metal/platinum_gear>,
+  <tfctech:metal/pig_iron_gear>,
 	<tfctech:metal/red_steel_gear>,
 	// Strips
 	<tfctech:metal/bismuth_strip>,
@@ -542,17 +548,17 @@ for item in TFCTech {
 }
 
 val TFCThings as IItemStack[] = [
-    <tfcthings:pigvil>,
-    <tfcthings:pigvil_black_steel>,
-    <tfcthings:pigvil_blue_steel>,
-    <tfcthings:pigvil_red_steel>,
-    <tfcthings:pigvil_purple_steel>,
-    <tfcthings:mold/unfired/prospectors_hammer_head>,
-    <tfcthings:mold/prospectors_hammer_head>,
-    <tfcthings:pig_iron_carrot>,
-    <tfcthings:black_steel_carrot>,
-    <tfcthings:blue_steel_carrot>,
-    <tfcthings:red_steel_carrot>,
+  <tfcthings:pigvil>,
+  <tfcthings:pigvil_black_steel>,
+  <tfcthings:pigvil_blue_steel>,
+  <tfcthings:pigvil_red_steel>,
+  <tfcthings:pigvil_purple_steel>,
+  <tfcthings:mold/unfired/prospectors_hammer_head>,
+  <tfcthings:mold/prospectors_hammer_head>,
+  <tfcthings:pig_iron_carrot>,
+  <tfcthings:black_steel_carrot>,
+  <tfcthings:blue_steel_carrot>,
+  <tfcthings:red_steel_carrot>,
 	// Crowns
 	<tfcthings:crown/gold_beryl>,
 	<tfcthings:crown/gold_agate>,
@@ -563,7 +569,19 @@ val TFCThings as IItemStack[] = [
 	<tfcthings:crown/platinum_jade>,
 	<tfcthings:crown/platinum_agate>,
 	<tfcthings:crown/platinum_beryl>,
-	<tfcthings:crown/platinum_tourmaline>
+	<tfcthings:crown/platinum_tourmaline>,
+	// Затачивалки (Временно)
+	<tfcthings:honing_steel>,
+	<tfcthings:honing_steel_diamond>,
+	<tfcthings:honing_steel_head>,
+	<tfcthings:honing_steel_head_diamond>,
+	<tfcthings:grindstone_quartz>,
+	<tfcthings:grindstone_steel>,
+	<tfcthings:grindstone_diamond>,
+	<tfcthings:diamond_grit>,
+	<tfcthings:grindstone_base>,
+	<tfcthings:whetstone>
+
 ];
 for item in TFCThings {
     JEI.removeAndHide(item);
@@ -980,7 +998,7 @@ for item in TFC {
 
 // ArchitectureCraft
 val ArchitectureCraft as IItemStack[] = [
-    <architecturecraft:sawblade>,
+  <architecturecraft:sawblade>,
 	<architecturecraft:largepulley> 
 ];
 for item in ArchitectureCraft {
@@ -989,7 +1007,7 @@ for item in ArchitectureCraft {
 
 // FTB
 val FTB as IItemStack[] = [
-    <ftbquests:chest>,
+  <ftbquests:chest>,
 	<ftbquests:barrier>,
 	<ftbquests:detector:1>,
 	<ftbquests:detector>,
@@ -1003,7 +1021,7 @@ for item in FTB {
 }
 
 val TheOneProbe as IItemStack[] = [
-    <theoneprobe:creativeprobe>,
+  <theoneprobe:creativeprobe>,
 	<theoneprobe:probenote>,
 	<theoneprobe:diamond_helmet_probe>,
 	<theoneprobe:gold_helmet_probe>,
@@ -1072,178 +1090,161 @@ for item in TombStone {
 }
 
 val Vanilla as IItemStack[] = [
-    // Blocks
-    <minecraft:stone>,
-    <minecraft:grass>,
-    <minecraft:gravel>,
-    <minecraft:dirt>,
-    <minecraft:dirt:1>,
-    <minecraft:dirt:2>,
-    <minecraft:cobblestone>,
-    <minecraft:sand>,
-    <minecraft:sand:1>,
-    <minecraft:stonebrick>,
-    <minecraft:stonebrick:1>,
-    <minecraft:stonebrick:2>,
-    <minecraft:stonebrick:3>,
-    <minecraft:mossy_cobblestone>,
-    <minecraft:bookshelf>,
-    <minecraft:sandstone>,
-    <minecraft:sandstone:1>,
-    <minecraft:sandstone:2>,
-    <minecraft:red_sandstone>,
-    <minecraft:red_sandstone:1>,
-    <minecraft:red_sandstone:2>,
-    // Logs
-    <minecraft:log:*>,
-    <minecraft:log2:*>,
-    // Planks
-    <minecraft:planks:*>,
-    // Slabs
-    <minecraft:wooden_slab:*>,
-    <minecraft:stone_slab>,
-    <minecraft:stone_slab:1>,
-    <minecraft:stone_slab:3>,
-    <minecraft:stone_slab:5>,
-    <minecraft:stone_slab2>,
-    // Stairs
-    <minecraft:oak_stairs>,
-    <minecraft:spruce_stairs>,
-    <minecraft:birch_stairs>,
-    <minecraft:jungle_stairs>,
-    <minecraft:acacia_stairs>,
-    <minecraft:dark_oak_stairs>,
-    <minecraft:sandstone_stairs>,
-    <minecraft:stone_brick_stairs>,
-    <minecraft:stone_stairs>,
-    <minecraft:red_sandstone_stairs>,
-    // Doors
-    <minecraft:wooden_door>,
-    <minecraft:spruce_door>,
-    <minecraft:birch_door>,
-    <minecraft:jungle_door>,
-    <minecraft:acacia_door>,
-    <minecraft:dark_oak_door>,
-    // Fence Gates
-    <minecraft:fence_gate>,
-    <minecraft:spruce_fence_gate>,
-    <minecraft:birch_fence_gate>,
-    <minecraft:jungle_fence_gate>,
-    <minecraft:dark_oak_fence_gate>,
-    <minecraft:acacia_fence_gate>,
-    // Gates
-    <minecraft:fence>,
-    <minecraft:spruce_fence>,
-    <minecraft:birch_fence>,
-    <minecraft:jungle_fence>,
-    <minecraft:dark_oak_fence>,
-    <minecraft:acacia_fence>,
-    // Ores
-    <minecraft:gold_ore>,
-    <minecraft:iron_ore>,
-    <minecraft:coal_ore>,
-    <minecraft:lapis_ore>,
-    <minecraft:diamond_ore>,
-    <minecraft:redstone_ore>,
-    <minecraft:emerald_ore>,
-    <minecraft:quartz_ore>,
-    // Food
-    <minecraft:apple>,
-    <minecraft:bread>,
-    <minecraft:porkchop>,
-    <minecraft:cooked_porkchop>,
-    <minecraft:fish>,
-    <minecraft:fish:1>,
-    <minecraft:fish:2>,
-    <minecraft:fish:3>,
-    <minecraft:cooked_fish>,
-    <minecraft:cooked_fish:1>,
-    <minecraft:cake>,
-    <minecraft:cookie>,
-    <minecraft:melon>,
-    <minecraft:beef>,
-    <minecraft:cooked_beef>,
-    <minecraft:chicken>,
-    <minecraft:cooked_chicken>,
-    <minecraft:carrot>,
-    <minecraft:potato>,
-    <minecraft:baked_potato>,
-    <minecraft:poisonous_potato>,
-    <minecraft:pumpkin_pie>,
-    <minecraft:rabbit>,
-    <minecraft:cooked_rabbit>,
-    <minecraft:mutton>,
-    <minecraft:cooked_mutton>,
-    <minecraft:beetroot>,
-    <minecraft:double_plant:2>,
-    // Tools
-    <minecraft:diamond_pickaxe>,
-    <minecraft:golden_pickaxe>,
-    <minecraft:iron_pickaxe>,
-    <minecraft:diamond_shovel>,
-    <minecraft:golden_shovel>,
-    <minecraft:iron_shovel>,
-    <minecraft:diamond_sword>,
-    <minecraft:golden_sword>,
-    <minecraft:iron_sword>,
-    <minecraft:diamond_axe>,
-    <minecraft:golden_axe>,
-    <minecraft:iron_axe>,
-    <minecraft:iron_hoe>,
-    <minecraft:diamond_hoe>,
-    <minecraft:golden_hoe>,
-    <minecraft:wooden_sword>,
-    <minecraft:wooden_pickaxe>,
-    <minecraft:wooden_axe>,
-    <minecraft:wooden_shovel>,
-    <minecraft:wooden_hoe>,
-    <minecraft:stone_sword>,
-    <minecraft:stone_pickaxe>,
-    <minecraft:stone_axe>,
-    <minecraft:stone_shovel>,
-    <minecraft:stone_hoe>,
-    <minecraft:shears>,
-    // Armor
-    <minecraft:diamond_leggings>,
-    <minecraft:diamond_boots>,
-    <minecraft:diamond_chestplate>,
-    <minecraft:diamond_helmet>,
-    <minecraft:golden_helmet>,
-    <minecraft:golden_chestplate>,
-    <minecraft:golden_leggings>,
-    <minecraft:golden_boots>,
-    <minecraft:iron_helmet>,
-    <minecraft:iron_chestplate>,
-    <minecraft:iron_leggings>,
-    <minecraft:iron_boots>,
-    <minecraft:chainmail_helmet>,
-    <minecraft:chainmail_chestplate>,
-    <minecraft:chainmail_leggings>,
-    <minecraft:chainmail_boots>,
-    // Boats
-    <minecraft:boat>,
-    <minecraft:spruce_boat>,
-    <minecraft:birch_boat>,
-    <minecraft:jungle_boat>,
-    <minecraft:acacia_boat>,
-    <minecraft:dark_oak_boat>,
-    // Other
-    <minecraft:crafting_table>,
-    <minecraft:furnace>,
-    <minecraft:chest>,
-    <minecraft:trapped_chest>,
-    <minecraft:stone_pressure_plate>,
-    <minecraft:wooden_pressure_plate>,
-    <minecraft:wooden_button>,
-    <minecraft:stone_button>,
-    <minecraft:trapdoor>,
-    <minecraft:reeds>,
-    <minecraft:book>,
-	<minecraft:vine>,
-	<minecraft:waterlily>,
-	<minecraft:golden_horse_armor>,
-	<minecraft:diamond_horse_armor>,
-	<minecraft:iron_trapdoor>,
+  // Blocks
+  <minecraft:stone>,
+  <minecraft:grass>,
+  <minecraft:gravel>,
+  <minecraft:dirt>,
+  <minecraft:dirt:1>,
+  <minecraft:dirt:2>,
+  <minecraft:cobblestone>,
+  <minecraft:sand>,
+  <minecraft:sand:1>,
+  <minecraft:stonebrick>,
+  <minecraft:stonebrick:1>,
+  <minecraft:stonebrick:2>,
+  <minecraft:stonebrick:3>,
+  <minecraft:mossy_cobblestone>,
+  <minecraft:bookshelf>,
+  <minecraft:sandstone>,
+  <minecraft:sandstone:1>,
+  <minecraft:sandstone:2>,
+  <minecraft:red_sandstone>,
+  <minecraft:red_sandstone:1>,
+  <minecraft:red_sandstone:2>,
+  // Logs
+  <minecraft:log:*>,
+  <minecraft:log2:*>,
+  // Planks
+  <minecraft:planks:*>,
+  // Slabs
+  <minecraft:wooden_slab:*>,
+  <minecraft:stone_slab>,
+  <minecraft:stone_slab:1>,
+  <minecraft:stone_slab:3>,
+  <minecraft:stone_slab:5>,
+  <minecraft:stone_slab2>,
+  // Stairs
+  <minecraft:oak_stairs>,
+  <minecraft:spruce_stairs>,
+  <minecraft:birch_stairs>,
+  <minecraft:jungle_stairs>,
+  <minecraft:acacia_stairs>,
+  <minecraft:dark_oak_stairs>,
+  <minecraft:sandstone_stairs>,
+  <minecraft:stone_brick_stairs>,
+  <minecraft:stone_stairs>,
+  <minecraft:red_sandstone_stairs>,
+  // Doors
+  <minecraft:wooden_door>,
+  <minecraft:spruce_door>,
+  <minecraft:birch_door>,
+  <minecraft:jungle_door>,
+  <minecraft:acacia_door>,
+  <minecraft:dark_oak_door>,
+  // Fence Gates
+  <minecraft:fence_gate>,
+  <minecraft:spruce_fence_gate>,
+  <minecraft:birch_fence_gate>,
+  <minecraft:jungle_fence_gate>,
+  <minecraft:dark_oak_fence_gate>,
+  <minecraft:acacia_fence_gate>,
+  // Gates
+  <minecraft:fence>,
+  <minecraft:spruce_fence>,
+  <minecraft:birch_fence>,
+  <minecraft:jungle_fence>,
+  <minecraft:dark_oak_fence>,
+  <minecraft:acacia_fence>,
+  // Ores
+  <minecraft:gold_ore>,
+  <minecraft:iron_ore>,
+  <minecraft:coal_ore>,
+  <minecraft:lapis_ore>,
+  <minecraft:diamond_ore>,
+  <minecraft:redstone_ore>,
+  <minecraft:emerald_ore>,
+  <minecraft:quartz_ore>,
+  // Food
+  <minecraft:apple>,
+  <minecraft:bread>,
+  <minecraft:porkchop>,
+  <minecraft:cooked_porkchop>,
+  <minecraft:fish>,
+  <minecraft:fish:1>,
+  <minecraft:fish:2>,
+  <minecraft:fish:3>,
+  <minecraft:cooked_fish>,
+  <minecraft:cooked_fish:1>,
+  <minecraft:cake>,
+  <minecraft:cookie>,
+  <minecraft:melon>,
+  <minecraft:beef>,
+  <minecraft:cooked_beef>,
+  <minecraft:chicken>,
+  <minecraft:cooked_chicken>,
+  <minecraft:carrot>,
+  <minecraft:potato>,
+  <minecraft:baked_potato>,
+  <minecraft:poisonous_potato>,
+  <minecraft:pumpkin_pie>,
+  <minecraft:rabbit>,
+  <minecraft:cooked_rabbit>,
+  <minecraft:mutton>,
+  <minecraft:cooked_mutton>,
+  <minecraft:beetroot>,
+  <minecraft:double_plant:2>,
+  // Tools
+  <minecraft:diamond_pickaxe>,
+  <minecraft:golden_pickaxe>,
+  <minecraft:iron_pickaxe>,
+  <minecraft:diamond_shovel>,
+  <minecraft:golden_shovel>,
+  <minecraft:iron_shovel>,
+  <minecraft:diamond_sword>,
+  <minecraft:golden_sword>,
+  <minecraft:iron_sword>,
+  <minecraft:diamond_axe>,
+  <minecraft:golden_axe>,
+  <minecraft:iron_axe>,
+  <minecraft:iron_hoe>,
+  <minecraft:diamond_hoe>,
+  <minecraft:golden_hoe>,
+  <minecraft:wooden_sword>,
+  <minecraft:wooden_pickaxe>,
+  <minecraft:wooden_axe>,
+  <minecraft:wooden_shovel>,
+  <minecraft:wooden_hoe>,
+  <minecraft:stone_sword>,
+  <minecraft:stone_pickaxe>,
+  <minecraft:stone_axe>,
+  <minecraft:stone_shovel>,
+  <minecraft:stone_hoe>,
+  <minecraft:shears>,
+  // Armor
+  <minecraft:diamond_leggings>,
+  <minecraft:diamond_boots>,
+  <minecraft:diamond_chestplate>,
+  <minecraft:diamond_helmet>,
+  <minecraft:golden_helmet>,
+  <minecraft:golden_chestplate>,
+  <minecraft:golden_leggings>,
+  <minecraft:golden_boots>,
+  <minecraft:iron_helmet>,
+  <minecraft:iron_chestplate>,
+  <minecraft:iron_leggings>,
+  <minecraft:iron_boots>,
+  <minecraft:chainmail_helmet>,
+  <minecraft:chainmail_chestplate>,
+  <minecraft:chainmail_leggings>,
+  <minecraft:chainmail_boots>,
+  // Boats
+  <minecraft:boat>,
+  <minecraft:spruce_boat>,
+  <minecraft:birch_boat>,
+  <minecraft:jungle_boat>,
+  <minecraft:acacia_boat>,
+  <minecraft:dark_oak_boat>,
 	// Nether
 	<minecraft:nether_wart>,
 	<minecraft:netherrack>,
@@ -1253,7 +1254,41 @@ val Vanilla as IItemStack[] = [
 	<minecraft:nether_wart_block>,
 	<minecraft:red_nether_brick>,
 	<minecraft:nether_brick_fence>,
-	<minecraft:netherbrick>
+	<minecraft:netherbrick>,
+	// End
+	<minecraft:white_shulker_box>,
+	<minecraft:orange_shulker_box>,
+	<minecraft:magenta_shulker_box>,
+	<minecraft:light_blue_shulker_box>,
+	<minecraft:yellow_shulker_box>,
+	<minecraft:lime_shulker_box>,
+	<minecraft:pink_shulker_box>,
+	<minecraft:gray_shulker_box>,
+	<minecraft:silver_shulker_box>,
+	<minecraft:cyan_shulker_box>,
+	<minecraft:purple_shulker_box>,
+	<minecraft:blue_shulker_box>,
+	<minecraft:brown_shulker_box>,
+	<minecraft:green_shulker_box>,
+	<minecraft:red_shulker_box>,
+	<minecraft:black_shulker_box>,
+	// Other
+  <minecraft:crafting_table>,
+  <minecraft:furnace>,
+  <minecraft:chest>,
+  <minecraft:trapped_chest>,
+  <minecraft:stone_pressure_plate>,
+  <minecraft:wooden_pressure_plate>,
+  <minecraft:wooden_button>,
+  <minecraft:stone_button>,
+  <minecraft:trapdoor>,
+  <minecraft:reeds>,
+  <minecraft:book>,
+	<minecraft:vine>,
+	<minecraft:waterlily>,
+	<minecraft:golden_horse_armor>,
+	<minecraft:diamond_horse_armor>,
+	<minecraft:iron_trapdoor>
 ];
 for item in Vanilla {
     JEI.removeAndHide(item);
@@ -1261,7 +1296,7 @@ for item in Vanilla {
 
 val PlanetProgression as IItemStack[] = [
 	<planetprogression:telescope_fake_block>,
-  	<planetprogression:block_multi>,
+  <planetprogression:block_multi>,
 	<planetprogression:satellite_builder>,
 	<planetprogression:advanced_launch_pad_full>
 ];
@@ -2026,7 +2061,7 @@ val Aunis as IItemStack[] = [
 	<aunis:crystal_glyph_pegasus>
 ];
 for item in Aunis {
-    JEI.removeAndHide(item);
+    //JEI.removeAndHide(item);
 }
 
 val Weather2 as IItemStack[] = [
@@ -2044,5 +2079,89 @@ val TFCMedicinal as IItemStack[] = [
 	<tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "acuity_concoction", Amount: 100}})
 ];
 for item in TFCMedicinal {
+    JEI.removeAndHide(item);
+}
+
+val TravelersBackpacks as IItemStack[] = [
+	<travelersbackpack:travelers_backpack:76>,
+	<travelersbackpack:travelers_backpack:75>,
+	<travelersbackpack:travelers_backpack:74>,
+	<travelersbackpack:travelers_backpack:73>,
+	<travelersbackpack:travelers_backpack:72>,
+	<travelersbackpack:travelers_backpack:71>,
+	<travelersbackpack:travelers_backpack:70>,
+	<travelersbackpack:travelers_backpack:69>,
+	<travelersbackpack:travelers_backpack:68>,
+	<travelersbackpack:travelers_backpack:67>,
+	<travelersbackpack:travelers_backpack:66>,
+	<travelersbackpack:travelers_backpack:65>,
+	<travelersbackpack:travelers_backpack:64>,
+	<travelersbackpack:travelers_backpack:63>,
+	<travelersbackpack:travelers_backpack:62>,
+	<travelersbackpack:travelers_backpack:61>,
+	<travelersbackpack:travelers_backpack:60>,
+	<travelersbackpack:travelers_backpack:59>,
+	<travelersbackpack:travelers_backpack:58>,
+	<travelersbackpack:travelers_backpack:57>,
+	<travelersbackpack:travelers_backpack:56>,
+	<travelersbackpack:travelers_backpack:55>,
+	<travelersbackpack:travelers_backpack:54>,
+	<travelersbackpack:travelers_backpack:53>,
+	<travelersbackpack:travelers_backpack:52>,
+	<travelersbackpack:travelers_backpack:51>,
+	<travelersbackpack:travelers_backpack:50>,
+	<travelersbackpack:travelers_backpack:49>,
+	<travelersbackpack:travelers_backpack:48>,
+	<travelersbackpack:travelers_backpack:47>,
+	<travelersbackpack:travelers_backpack:46>,
+	<travelersbackpack:travelers_backpack:45>,
+	<travelersbackpack:travelers_backpack:44>,
+	<travelersbackpack:travelers_backpack:43>,
+	<travelersbackpack:travelers_backpack:42>,
+	<travelersbackpack:travelers_backpack:41>,
+	<travelersbackpack:travelers_backpack:40>,
+	<travelersbackpack:travelers_backpack:39>,
+	<travelersbackpack:travelers_backpack:38>,
+	<travelersbackpack:travelers_backpack:37>,
+	<travelersbackpack:travelers_backpack:36>,
+	<travelersbackpack:travelers_backpack:35>,
+	<travelersbackpack:travelers_backpack:34>,
+	<travelersbackpack:travelers_backpack:33>,
+	<travelersbackpack:travelers_backpack:32>,
+	<travelersbackpack:travelers_backpack:31>,
+	<travelersbackpack:travelers_backpack:30>,
+	<travelersbackpack:travelers_backpack:29>,
+	<travelersbackpack:travelers_backpack:28>,
+	<travelersbackpack:travelers_backpack:27>,
+	<travelersbackpack:travelers_backpack:26>,
+	<travelersbackpack:travelers_backpack:25>,
+	<travelersbackpack:travelers_backpack:24>,
+	<travelersbackpack:travelers_backpack:23>,
+	<travelersbackpack:travelers_backpack:22>,
+	<travelersbackpack:travelers_backpack:21>,
+	<travelersbackpack:travelers_backpack:20>,
+	<travelersbackpack:travelers_backpack:19>,
+	<travelersbackpack:travelers_backpack:18>,
+	<travelersbackpack:travelers_backpack:17>,
+	<travelersbackpack:travelers_backpack:16>,
+	<travelersbackpack:travelers_backpack:15>,
+	<travelersbackpack:travelers_backpack:14>,
+	<travelersbackpack:travelers_backpack:13>,
+	<travelersbackpack:travelers_backpack:12>,
+	<travelersbackpack:travelers_backpack:11>,
+	<travelersbackpack:travelers_backpack:10>,
+	<travelersbackpack:travelers_backpack:9>,
+	<travelersbackpack:travelers_backpack:8>,
+	<travelersbackpack:travelers_backpack:7>,
+	<travelersbackpack:travelers_backpack:6>,
+	<travelersbackpack:travelers_backpack:5>,
+	<travelersbackpack:travelers_backpack:4>,
+	<travelersbackpack:travelers_backpack:3>,
+	<travelersbackpack:travelers_backpack:2>,
+	<travelersbackpack:travelers_backpack:1>,
+	<travelersbackpack:backpack_tank>,
+	<travelersbackpack:sleeping_bag_bottom>,
+];
+for item in TravelersBackpacks {
     JEI.removeAndHide(item);
 }

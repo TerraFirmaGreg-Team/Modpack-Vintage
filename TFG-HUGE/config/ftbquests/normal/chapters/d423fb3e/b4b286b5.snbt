@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.steam.fluidpipe.title}",
 	icon: "gregtech:fluid_pipe_normal 1 2037",
-	x: -20.0d,
-	y: -9.0d,
+	x: -11.0d,
+	y: -2.5d,
 	text: [
 		"{tfg.quests.steam.fluidpipe.disc1}",
 		"{tfg.quests.steam.fluidpipe.disc2}",

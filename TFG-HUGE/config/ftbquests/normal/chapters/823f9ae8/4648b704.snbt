@@ -1,9 +1,10 @@
 {
-	x: -28.0d,
-	y: 0.0d,
-	description: "{tfg.quests.primitive.smallsalt.subtitle}",
+	x: -30.0d,
+	y: 1.0d,
+	description: "{tfg.quests.primitive.salt.subtitle}",
 	dependencies: [
-		"263fdccc"
+		"263fdccc",
+		"4fb3e2d0"
 	],
 	tasks: [{
 		uid: "c1659a83",

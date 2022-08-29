@@ -1,9 +1,9 @@
 {
-	x: -22.0d,
-	y: 0.0d,
+	x: -6.0d,
+	y: -16.0d,
 	description: "{tfg.quests.primitive.woodencrate.subtitle}",
 	dependencies: [
-		"1ccd9dd8"
+		"242ce5c1"
 	],
 	tasks: [{
 		uid: "a9340f97",

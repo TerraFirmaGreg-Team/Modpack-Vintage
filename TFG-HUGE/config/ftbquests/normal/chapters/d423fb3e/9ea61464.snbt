@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.steam.tools.title}",
 	icon: "hammercore:manual",
-	x: -12.0d,
-	y: 1.5d,
+	x: -15.0d,
+	y: 0.5d,
 	description: "{tfg.quests.steam.tools.subtitle}",
 	text: [
 		"{tfg.quests.steam.tools.desc1}",

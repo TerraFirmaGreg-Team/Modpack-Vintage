@@ -1,166 +1,195 @@
-#Quests# Translated by SpeeeDCraft/Xikaro
+# Quests translated by SpeeeDCraft / Xikaro / Google Translator
 ##################################################################################################################################
 ########################################################## Primitive Phase #######################################################
-############################################################## 823f9ae8   ########################################################
+############################################################## 823f9ae8 ##########################################################
 ##################################################################################################################################
 
-tfg.quests.primitive.era.title=§cEra 1 §4-§4 §8Primitive
+tfg.quests.primitive.era.title=§cEra 1 §4-§4 §2Primitive
 
-tfg.quests.primitive.start.title=Start
-tfg.quests.primitive.start.subtitle=&aThank you for choosing our modpack, because TerraFirmaCraft and GregTech are very closely tied in it, good luck to you young engineer!
-tfg.quests.primitive.start.tasks.clickMe=&aСlick here
-tfg.quests.primitive.start.desc1=In Vanilla, you might expect to start by punching a tree. Not in TFC! Scattered all over the ground are rocks and sticks. You will need both. 
-tfg.quests.primitive.start.desc2=Pick them up by right-clicking. Once you have at least two rocks, hold them in your hand.
-tfg.quests.primitive.start.desc3=Right-clicking will open the knapping interface. Left-click to chip bits of rock off to make an axe and some knives.
+tfg.quests.primitive.start.title=The beginning of the journey!
+tfg.quests.primitive.start.subtitle=&aThank you for choosing TerraFirmaGreg, one of the coolest modpacks! In regular minecraft, you start with tree mining, but not in TFC! Here, you will have to collect pebbles, sticks and make your first tools out of them.
 
-tfg.quests.primitive.pebbles.title=Stones on the ground
-tfg.quests.primitive.pebbles.subtitle=&aFind sticks and stones lying on the ground.
+tfg.quests.primitive.pebbles.title=Rocks and sticks!
+tfg.quests.primitive.pebbles.subtitle=&aFind stones and sticks on the ground and pick them up with a knife with the right mouse button.
 
-tfg.quests.primitive.primitiveTools.title=Your first tools
-tfg.quests.primitive.primitiveTools.subtitle=&aTake a stone in your hand, preferably more than 2, and press the right button, you will open a menu in which you can carve the tool you need from the stone. All recipes can be viewed in the JEI.
+tfg.quests.primitive.primitive_tools.title=Your first tools made of stone!
+tfg.quests.primitive.primitive_tools.subtitle=&aTake a stone in your hand, there should be 2 or more of them and click the right mouse button, you will open a menu in which you can carve the tool you need from the stone. All recipes can be viewed in the JEI.
 
-tfg.quests.primitive.javelin.title=Javelin
-tfg.quests.primitive.javelin.subtitle=Fire it the same way you would a trident or bow.
+tfg.quests.primitive.javelin.title=Stone Javelin!
+tfg.quests.primitive.javelin.subtitle=&aA pathetic analogue of the trident from 1.13.
 
-tfg.quests.primitive.rockanvil.title=Your first anvil, really a stone one
-tfg.quests.primitive.rockanvil.subtitle=&aTake a stone hammer (or any other) in your hands and hit it (RBM) on the block of stone specified in the quest.
+tfg.quests.primitive.firmalife_oven.title=Oven from FirmaLife!
+tfg.quests.primitive.firmalife_oven.subtitle=&aIn this oven you can make bread and bricks out of mud. It is built simply. In the center is the main block, on the left and right along the wall of the oven and on top of 3 blocks of the oven chimney. Then put straw and two logs in the oven, then set fire to it and wait. If you have difficulties with setting up or using, you can open our discord channel and go to the channel &3firmalife-info&a.
 
-tfg.quests.primitive.leafmat.title=Foliage Dryer
-tfg.quests.primitive.leafmat.subtitle=&aCraft it, then put it, voila, now you can dry or evaporate anything, more useful for salt extraction.
+tfg.quests.primitive.rock_anvil.title=Your first anvil, really a stone one!
+tfg.quests.primitive.rock_anvil.subtitle=&aTake a stone hammer (or any other) in your hands and press the RBM on the block of stone specified in the quest, note that you need a certain type of stone to create an anvil, the necessary types of stones are specified in the quest. It is quite easy to get a whole stone, just dig it from all sides and it will fall out in the form of a whole block that you can place at home.
 
-tfg.quests.primitive.smallsalt.subtitle=&aThe salt recipe can be viewed in the JEI.
+tfg.quests.primitive.leaf_mat.subtitle=&aAn interesting block that allows you to dry something, the quest suggests using this block to get salt if you can't find it.
 
-tfg.quests.primitive.muchNeededStraw.title=Dry grass
-tfg.quests.primitive.muchNeededStraw.subtitle=&aAlmost everything in the world in TFC is useful to us. Use your knife to destroy some tall grass, and get some Straw. Spend some time gathering a stack or two. You'll want a lot of it!
-tfg.quests.primitive.muchNeededStraw.desc=Straw can be crafted into thatch, your most basic construction block. Don't build your whole house out of it, though, as predators can walk right through it!
+tfg.quests.primitive.salt.subtitle=&aFirst you need to make a wooden bucket, then pour salt water into it, then put it on the dryer and wait. You will receive a wooden bucket with salt, which can be disassembled into pieces of salt.
 
-tfg.quests.primitive.farmer3000.title=Farmer - 3000
-tfg.quests.primitive.farmer3000.subtitle=&aMake a stone hoe to plant your first plants. The mechanics are still the same, first you have to plow the ground next to the water, then plant a plant.
+tfg.quests.primitive.straw.title=Straw!
+tfg.quests.primitive.straw.subtitle=&aAlmost everything in the world in TFC is useful to us. Use your knife to destroy some tall grass, and get some Straw. Spend some time gathering a stack or two. You'll want a lot of it!
 
-tfg.quests.primitive.theHammer.title=Stone Hammer
-tfg.quests.primitive.theHammer.subtitle=&aIt looks aesthetically pleasing, look how gray it is, but seriously, you need it to create a stone anvil.
+tfg.quests.primitive.firestarter.subtitle=&aYour primitive lighter. Hold down the right mouse button on the block you want to ignite and release it at maximum tension. It may not work the first time!
 
-tfg.quests.primitive.blueClay.title=The mood color is clay
-tfg.quests.primitive.blueClay.subtitle=&aGet clay, to do this, use luck or knowledge in the field of herbology, because interesting bushes grow in places where clay is deposited.
-tfg.quests.primitive.blueClay.desc1=You'll also want to look for clay dirt. Clay spawns in areas with moderate to heavy rainfall, and you'll want your shovel to dig it up.Since the world is covered in grass, it's easiest to look for clay indicator plants. At the temperature of where you spawn, the clay indicator is the Athyrium Fern.
-tfg.quests.primitive.blueClay.desc2=The following is a list of clay indicator plants:
-tfg.quests.primitive.blueClay.desc3=- Athyrium Fern
-tfg.quests.primitive.blueClay.desc4=- Canna Lily
-tfg.quests.primitive.blueClay.desc5=- Goldenrod
-tfg.quests.primitive.blueClay.desc6=- Pampas Grass
-tfg.quests.primitive.blueClay.desc7=- Russian Sage
-tfg.quests.primitive.blueClay.desc8=- Rose
-tfg.quests.primitive.blueClay.desc9=- Water Canna
-tfg.quests.primitive.blueClay.desc10=Note: Flowers bloom only at certain times of year, so searching for the plant you're looking for may be frustrating in the winter.
+tfg.quests.primitive.stone_hoe.title=Stone Hoe!
+tfg.quests.primitive.stone_hoe.subtitle=&aMake a stone hoe to plant your first plants. The mechanics are still the same, first you have to plow the ground next to the water, then plant a plant.
 
-tfg.quests.primitive.allTheMolds.title=Some forms that you will need
-tfg.quests.primitive.allTheMolds.subtitle=&aThere are a lot of forms, you don't have to do them all at once, but I'm sure that as you go through, you will do each of them.
+tfg.quests.primitive.stone_axe.title=Stone Axe!
+tfg.quests.primitive.stone_axe.subtitle=&aArrange a genocide of trees!
 
-tfg.quests.primitive.jug.title=Cave Glass
-tfg.quests.primitive.jug.subtitle=&aNow by clicking on a liquid that you can drink, such as fresh water, you can fill it with water, and when you need it, then drink it.
+tfg.quests.primitive.stone_knife.title=Stone Knife!
+tfg.quests.primitive.stone_knife.subtitle=With clever handling of the rock, you can make two knife blades at once. Craft both your new tool heads with sticks in order to make proper stone tools.
 
-tfg.quests.primitive.hotornot.subtitle=If you are carrying hot liquids you will be set on fire, if you are carrying cold liquids you will be slowed down. To neutralize these effects, make tongs.
+tfg.quests.primitive.stone_hammer.title=Stone Hammer!
+tfg.quests.primitive.stone_hammer.subtitle=&aThis hammer cannot dig ore unlike a metal hammer. This hammer is only used to create your first stone anvil. You can not perform this quest, but immediately make a metal hammer and make an anvil with it.
+
+tfg.quests.primitive.clay.title=The mood color is clay
+tfg.quests.primitive.clay.subtitle=&aGet clay, to do this, use luck or knowledge in the field of herbology, because interesting bushes grow in places where clay is deposited. Open the quest completely to see more information!
+tfg.quests.primitive.clay.desc1=You'll also want to look for clay dirt. Clay spawns in areas with moderate to heavy rainfall, and you'll want your shovel to dig it up.Since the world is covered in grass, it's easiest to look for clay indicator plants. At the temperature of where you spawn, the clay indicator is the Athyrium Fern.
+tfg.quests.primitive.clay.desc2=The following is a list of clay indicator plants:
+tfg.quests.primitive.clay.desc3=- Athyrium Fern
+tfg.quests.primitive.clay.desc4=- Canna Lily
+tfg.quests.primitive.clay.desc5=- Goldenrod
+tfg.quests.primitive.clay.desc6=- Pampas Grass
+tfg.quests.primitive.clay.desc7=- Russian Sage
+tfg.quests.primitive.clay.desc8=- Rose
+tfg.quests.primitive.clay.desc9=- Water Canna
+tfg.quests.primitive.clay.desc10=Note: Flowers bloom only at certain times of year, so searching for the plant you're looking for may be frustrating in the winter.
+
+tfg.quests.primitive.molds.title=All tool molds!
+tfg.quests.primitive.molds.subtitle=&aTo begin with, you may not need all the forms. In order to fry the mold, dig a hole in 1 block, then put up to 4 molds in it, using the V key (If you do not put objects on the floor, remove other binds from this key, leaving only [installing TFC objects]), then right-click 8 straw and 8 logs, then ignite with a primitive lighter. Once everything is ready, let the molds cool down for a couple of minutes, or you will take damage. If you want to protect yourself from this, watch the quest with forceps, with their help you can hold hot objects in your hands without consequences.
+
+tfg.quests.primitive.jug.title=Cave Glass!
+tfg.quests.primitive.jug.subtitle=&aThis thing is also fried in a pit, as well as molds. If you don't know how to fry a mold, see the quest about molds. Tap the jug on the water to get some water. Excellent. Now you can get away from the fresh spring a little further to explore the world.
+
+tfg.quests.primitive.tongs.subtitle=If you are carrying hot liquids or objects you will be set on fire, if you are carrying cold liquids you will be slowed down. To neutralize these effects, make tongs. And put them in the shield slot (left hand).
 
 tfg.quests.primitive.vessel.title=A little more than just a glass
 tfg.quests.primitive.vessel.subtitle=&aThis is a jar in which you will burn and melt metals, as well as store various food, so this is a very useful item, I suggest you burn it. The built-in force field does not allow any liquids other than fused metals (as well as any yummy, in the form of food) to penetrate inside.
 
 tfg.quests.primitive.fireplace.title=Firepit
-tfg.quests.primitive.fireplace.subtitle=&aYou need to make a bonfire to warm yourself, and also cook food, by the way, you can also make torches on the campfire.
-tfg.quests.primitive.fireplace.tasks.wood.title=&aLogs
+tfg.quests.primitive.fireplace.subtitle=&aYou need to make a firepit to warm yourself, and also cook food, by the way, you can also make torches on the campfire. Open the quest to find out more!
+tfg.quests.primitive.fireplace.tasks.wood.title=Log
 tfg.quests.primitive.fireplace.desc1=To build a fire, drop at least one log, three sticks, and up to three straw on the ground. Straw is optional, but increases your chances of ignition. To start a fire, right-click to start a fire.
 tfg.quests.primitive.fireplace.desc2=This may take several tries. The campfire can be used to cook food and make torches out of branches, but you must feed its magazines or it will go out.
 tfg.quests.primitive.fireplace.desc3=You can cook food in the fireplace, but you will get burned if you step on it.
 tfg.quests.primitive.fireplace.desc4=The bonfire works with heating recipes, which are essentially TFC's version of smelting recipes. Since a device such as a fire pit is heated with fuel, it can turn its ingredient into a product at a certain temperature.
 tfg.quests.primitive.fireplace.desc5=Fireplaces don't get very hot, but they can be used to make torches and also cook meat.
+tfg.quests.primitive.fireplace.desc6=Eating raw meat is bad, so it should be cooked.
 
-tfg.quests.primitive.meat.title=MYAYAYASO!
+tfg.quests.primitive.meat.title=MEAT!
 tfg.quests.primitive.meat.subtitle=&aIt's vegan. I'm not lying, let me try the herbivore to confirm.
 tfg.quests.primitive.meat.tasks.meat.title=&aMeat
 tfg.quests.primitive.meat.tasks.desc1=The first way you'll be getting food is by hunting animals. Your knife will work fine, but for bigger things, you may want to knap a javelin, your basic ranged weapon.
+tfg.quests.primitive.meat.tasks.desc2=Predatory animals are not available for breeding, they are useful only for what falls out after death. They also respawn, which means they are best hunted.
+tfg.quests.primitive.meat.tasks.desc3=A lot of meat will fall from the deer, and it is a peaceful creature that will not resist.
+tfg.quests.primitive.meat.tasks.desc4=The pheasant doesn't drop much meat, but it will give you feathers to make arrows.
 
-tfg.quests.primitive.rawHide.title=Raw hide
-tfg.quests.primitive.rawHide.subtitle=&aGet any raw hide, I hope more than one sheep will not suffer.
+tfg.quests.primitive.raw_hide.title=Raw hide!
+tfg.quests.primitive.raw_hide.subtitle=&aKill any animal except a sheep, since it is the sheep's skin that falls from the sheep, and you don't need it yet.
 
-tfg.quests.primitive.preparedHide.title=Cooked hide
-tfg.quests.primitive.preparedHide.subtitle=&aWet the old one, cut it off, wet it again and finally get this skin.
+tfg.quests.primitive.soaked_hide.title=Soaked hide!
+tfg.quests.primitive.soaked_hide.subtitle=&aUsing a barrel and a flux, get this type of skin.
 
-tfg.quests.primitive.jute.title=Jute
-tfg.quests.primitive.jute.subtitle=&aWhy aren't the ropes made of hemp? I want fun fires!
+tfg.quests.primitive.scrapped_hide.title=Scrapped hide!
+tfg.quests.primitive.scrapped_hide.subtitle=&aPut the log on the ground and using the RMB set the skin on the log, take a knife and press the RMB on the skin, so you have to clean it all.
 
-tfg.quests.primitive.tfcmedicinal.title=This world is hard to live except for hunger and thirst, danger lurks everywhere and you should be afraid because death is terrible.
-tfg.quests.primitive.tfcmedicinal.subtitle=These are some of the things you need to look out for when surviving TFC with Medicinal, and each will have a specific medicine to combat it:
-tfg.quests.primitive.tfcmedicinal.desc1= - When you die, your health will be at 20% and your hunger at half.
-tfg.quests.primitive.tfcmedicinal.desc2= - When you die, your nutrition stats will not be half but close to 0.
-tfg.quests.primitive.tfcmedicinal.desc3= - After you respawn, you will be afflicted with a disease, 
-tfg.quests.primitive.tfcmedicinal.desc3.1=a fatal disease that will keep you from mining, building, or fighting for an entire day of Minecraft.
-tfg.quests.primitive.tfcmedicinal.desc4= - The dust in the mines strains your lungs, making movement and mining difficult.
-tfg.quests.primitive.tfcmedicinal.desc5= - Raw meat, as well as cooked meat that is not wood-roasted 
-tfg.quests.primitive.tfcmedicinal.desc5.1=(on an iron grate), can give you parasites that drain your energy and hunger.
-tfg.quests.primitive.tfcmedicinal.desc6= - Flowers and plants in the world now have active modifiers:
-tfg.quests.primitive.tfcmedicinal.desc7=* The bright red flowers are vibrant and have healing properties .
-tfg.quests.primitive.tfcmedicinal.desc8=* Blue flowers have mental properties
-tfg.quests.primitive.tfcmedicinal.desc9=* Yellow flowers have energetic properties
-tfg.quests.primitive.tfcmedicinal.desc10=* Green plants (not grass) have calming properties.
-tfg.quests.primitive.tfcmedicinal.desc11=* Brown plants are rich in vitamins and minerals
-tfg.quests.primitive.tfcmedicinal.desc12=* Purple and pink flowers have a strong fragrance.
-tfg.quests.primitive.tfcmedicinal.desc13=* White flowers have powerful mixing properties and are used in all medicines.
+tfg.quests.primitive.prepared_hide.title=Prepared hide!
+tfg.quests.primitive.prepared_hide.subtitle=&aUsing a barrel and fresh water, get this one from the scraped skin.
 
-tfg.quests.primitive.mpestle.title=Making the Real Medicine:
-tfg.quests.primitive.mpestle.subtitle=Get yourself a Mortar and Pestle by crafting a Ceramic Bowl with a Stick and Flint.
-tfg.quests.primitive.mpestle.desc1=Collect a variety of flowers, go explore the new world if needed, and bring them home.
-tfg.quests.primitive.mpestle.desc2=Crush the flowers with the mortar and pestle by clicking on it, placing the flower, and then right-clicking a few times.
-tfg.quests.primitive.mpestle.desc3=Flowers will give you extracts, which when crafted in 3x3 will give you concentrates.
-tfg.quests.primitive.mpestle.desc4=There are many catalysts to choose from that can be added to the base drink mix.
-tfg.quests.primitive.mpestle.desc5=Catalysts have different crafting recipes from different types of concentrates, use JEI for this.
-tfg.quests.primitive.mpestle.desc6=Once you have the catalyst you need, you'll need a Vial Heater, which is crafted with a few Firebricks and an Alabaster Filter.
-tfg.quests.primitive.mpestle.desc7=Place the heater over the burning fire pit on the wall.
-tfg.quests.primitive.mpestle.desc8=Create yourself a glass flask from a single piece of glass at a workbench.
-tfg.quests.primitive.mpestle.desc9=Find yourself underground spiders, take their eyes and ferment them in a little vinegar throughout the day.
-tfg.quests.primitive.mpestle.desc10=Fill your flask with ocean salt water, place it in the flask warmer and wait for it to boil (bubbles will form over it) .
-tfg.quests.primitive.mpestle.desc11=When the solution boils, add the fermented spider eye, at which point the solution will begin to boil more and more.
-tfg.quests.primitive.mpestle.desc12=Your base mix will be ready after one in-game hour.
-tfg.quests.primitive.mpestle.desc13=Place any catalyst in it and boil it as in the last few steps to get a drinking mix to use .
+tfg.quests.primitive.jute.title=Jute!
+tfg.quests.primitive.jute.subtitle=&aA very useful and rare plant. Required to create a rope.
 
-tfg.quests.primitive.concoction.desc1=Antidote for a Deadly Disease - Cures a deadly disease when consumed
-tfg.quests.primitive.concoction.desc2=Visual Acuity Blend - When you die while this effect is active, your items will not be destroyed and you will be respawned in your comfortable bed.
-tfg.quests.primitive.concoction.desc3=Nutritious Concoction - Resets your nutritional values ​​to half across the board.
-tfg.quests.primitive.concoction.desc4=Concoction to strengthen the stomach - Turns you on for meat parasites, hunger and nausea from aged pills.
-tfg.quests.primitive.concoction.desc5=Lung Concoction - Turns on dust from lungs, digs freely in caves, holds breath underwater and swims faster.
-tfg.quests.primitive.concoction.desc6=Rejuvenating Blend - Fully heals you in a minute
-tfg.quests.primitive.concoction.desc7=Decoction of Sharp Vision - Allows you to see in the dark
-tfg.quests.primitive.concoction.desc8=Health Concoction - Increases health by 40% for a limited time.
-tfg.quests.primitive.concoction.desc9=Cooling Panacea (TFC Ambiental) - Temporarily cools you by 10 degrees.
-tfg.quests.primitive.concoction.desc10=Warming Concoction (TFC Ambiental) - Warms you up by 10 degrees for a while
+tfg.quests.primitive.flux_dust.subtitle=&aThis is flux dust, a very important item. Which is used for welding metals, creating iron, steel, leather and much more.
 
-tfg.quests.primitive.fruitsAndBerries.title=Fruits berries
-tfg.quests.primitive.fruitsAndBerries.subtitle=&aWhere's my lemon vodka? Developers, get engaged.
+tfg.quests.primitive.fruits_and_berries.title=Fruits and berries
+tfg.quests.primitive.fruits_and_berries.subtitle=&aFruits and berries can be used to make alcoholic beverages and cheese. Berry bushes and fruit trees appear quite rarely, so if you find them, consider yourself lucky.
 
-tfg.quests.primitive.grains.title=Food
-tfg.quests.primitive.grains.subtitle=&aHarvest from a grain plant.
+tfg.quests.primitive.grains.title=Food for yourself and animals
+tfg.quests.primitive.grains.subtitle=&aHarvest any grain plant. This food can be fed to your favorite sheep, cows, pigs and other game.
 
 tfg.quests.primitive.sugarcane.subtitle=&aCollect the reed, it will be useful to you to create a PAPER production plant!
 
 tfg.quests.primitive.paper.subtitle=&aMake paper, it will be useful to you, for various transistors and microcircuits.
 
-tfg.quests.primitive.tin.title=Tales of the Tin
+tfg.quests.primitive.tin.title=Tin chunks!
 tfg.quests.primitive.tin.subtitle=&aAnd this is tin and you need to dig it up, how? And then break them. I've already written this somewhere.
 
-tfg.quests.primitive.copper.title=Stories about Copper
+tfg.quests.primitive.copper.title=Copper chunks!
 tfg.quests.primitive.copper.subtitle=&aThis is copper and you need to dig it up, how? And then break them.
 
-tfg.quests.primitive.fuelNumber1.title=Fuel No. 1
-tfg.quests.primitive.fuelNumber1.subtitle=&aSince TFC is too realistic a mod, it will not be possible to melt the stove with coal, which is logical, so we make wood.
+tfg.quests.primitive.charcoal.title=Charcoal!
+tfg.quests.primitive.charcoal.subtitle=&aTo make charcoal, you need to dig a hole, 1 block deep, wide and long, as much as you want, now make the empty blocks in the pit with logs stuffed with wood. After forcing the blocks of logs from above with earth, sand, gravel, leave one block and set it on fire, as soon as the fire appears, immediately put the block there. Done, now your pit is smoking, you just have to wait.
 
-tfg.quests.primitive.greenpeace.title=Greenpeace has already left for you..
-tfg.quests.primitive.greenpeace.subtitle=&aChop the logs, my children! We will need a lot of them.
-tfg.quests.primitive.greenpeace.tasks.logs.title=&aLogs
-tfg.quests.primitive.greenpeace.desk=By making an axe out of loose rocks and sticks, we've removed the need to punch a tree. Go ahead and chop down a tree, starting at the base. It might take a bit longer than you're used to, but in the end the whole tree will fall down! The next thing we'll want to create is a shovel.
+tfg.quests.primitive.logs.title=Greenpeace has already left for you..
+tfg.quests.primitive.logs.subtitle=&aChop the logs, my children! We will need a lot of them.
+tfg.quests.primitive.logs.tasks.logs.title=&aLogs
+tfg.quests.primitive.logs.desc=By making an axe out of loose rocks and sticks, we've removed the need to punch a tree. Go ahead and chop down a tree, starting at the base. It might take a bit longer than you're used to, but in the end the whole tree will fall down! The next thing we'll want to create is a shovel.
 
-tfg.quests.primitive.fuelNumber2.title=Fuel No. 2
-tfg.quests.primitive.fuelNumber2.subtitle=&aYou can't melt the furnace with this coal, but for example it's easy to keep burning.
+tfg.quests.primitive.coal.title=Coal!
+tfg.quests.primitive.coal.subtitle=&aCoal in the form of a piece with a stone has a lower gorenje time, for obvious reasons, cleaned of stone, has a default melting time of 1600 ticks. Both of these coals can be used as well as charcoal.
 
-tfg.quests.primitive.saw.title=Copper saw
-tfg.quests.primitive.saw.subtitle=&aMake a copper saw to cut down trees even faster, or use it more rationally, for example, for sawing logs into lumber.
+tfg.quests.primitive.knifegt.title=The first copper knife
+tfg.quests.primitive.knifegt.subtitle=&aIt is much better than stone, at least because of its strength.
+
+tfg.quests.primitive.copper_saw_head.title=Saw head
+tfg.quests.primitive.copper_saw_head.subtitle=Now that you have metal, you can turn logs into more useful things, like planks! First, you need a casting or saw anvil. It is mainly used in crafting, but it can chop down trees if you so choose.
+
+tfg.quests.primitive.copper_hammer_head.title=Hammer Head
+tfg.quests.primitive.copper_hammer_head.subtitle=In order to make flux or use an anvil, you'll need a hammer.
+
+tfg.quests.primitive.copper_pick_head.title=Pickaxe Head
+tfg.quests.primitive.copper_pick_head.subtitle=To take your tool out of the mold, wait for it to cool and place it in a crafting grid to take it out or right-click. Then, take your tool head and craft it with a stick to get your first pickaxe!
+
+tfg.quests.primitive.copper_prospect_head.title=Prospect Pickaxe Head
+tfg.quests.primitive.copper_prospect_head.subtitle=Earth nuggets indicate veins well, but you need something more precise. Work on an anvil or cast a geological hammer to start exploration. It only takes 144 units of any tool metal, and they are all equally useful.
+
+tfg.quests.primitive.copper_chisel_head.title=Chisel Head
+tfg.quests.primitive.copper_chisel_head.subtitle=Cutting is an easy way to get stairs and slabs, and the only way to get smooth blocks. To gouge something, you will need a chisel, which must be made of metal, and a hammer, which can be made of stone.
+
+tfg.quests.primitive.copper_knife_head.title=Knife head
+tfg.quests.primitive.copper_knife_head.subtitle=&aMassacre!
+
+tfg.quests.primitive.copper_file_head.title=File head
+tfg.quests.primitive.copper_file_head.subtitle=§9§lFile:§r A crafting tool. And that's it. Yes.
+
+tfg.quests.primitive.saw.title=Copper Saw
+tfg.quests.primitive.saw.subtitle=&aMake a copper saw to cut trees even faster, or use it more efficiently, such as sawing logs into lumber.
+
+tfg.quests.primitive.copper_hammer.title=First Copper Hammer
+tfg.quests.primitive.copper_hammer.subtitle=&aLooks like a blueprint. And why is this not in GregTech? Let me remind you that already now you can process ores, so go ahead, dig up as much as possible!
+
+tfg.quests.primitive.copper_pick.title=First Copper Pick
+tfg.quests.primitive.copper_pick.subtitle=&aYour first pick. I believe this is the best copper investment.
+
+tfg.quests.primitive.copper_prospect.title=First Geological Hammer
+tfg.quests.primitive.copper_prospect.subtitle=&aRight click on Earth to use Geological Hammer. She checks for the presence of ore in a cube of 25 blocks and reports what she finds and in what concentration.
+tfg.quests.primitive.copper_prospect.desk1=Note: A pickaxe never deceives about the existence of an ore vein, but sometimes it cannot detect a vein located there. To combat this, simply click on another block nearby."
+tfg.quests.primitive.copper_prospect.desk2=Prospect Method
+tfg.quests.primitive.copper_prospect.desk3=1. Click the miner's pick until you find traces of ore.
+tfg.quests.primitive.copper_prospect.desk4=2. Walk until you find a lot of samples.
+tfg.quests.primitive.copper_prospect.desk5=3. Go in one direction by clicking on the ground until the words "very large sample" disappear. Mark this place.
+tfg.quests.primitive.copper_prospect.desk6=4. Return to the middle and do the same in the other direction.
+tfg.quests.primitive.copper_prospect.desk7=5 ... The center of the two lines formed by your marks should be the center of the vein."
+
+tfg.quests.primitive.copper_chisel.title=First Copper Chisel
+tfg.quests.primitive.copper_chisel.subtitle=Chisel Modes
+tfg.quests.primitive.copper_chisel.desk1=Press §4M§4 to switch chisel modes.
+tfg.quests.primitive.copper_chisel.desk2=Smoothing: This setting turns raw stone into smooth stone.
+tfg.quests.primitive.copper_chisel.desk3=Ladder: Right click on a complete block to turn it into a ladder.
+tfg.quests.primitive.copper_chisel.desk4=Slabs: Turn solid blocks into slabs.
+tfg.quests.primitive.copper_chisel.desk5=Note: You can only sharpen blocks with stairs/slabs."
+
+tfg.quests.primitive.copper_knife.title=The First Copper Knife
+tfg.quests.primitive.copper_knife.subtitle=&aIt's much better than the stone one, at least in terms of durability.
+
+tfg.quests.primitive.copper_file.title=The First Copper File
+tfg.quests.primitive.copper_file.subtitle=&aHow many adventures began with him.
+
+tfg.quests.primitive.leather.title=Skin
+tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.
 
 tfg.quests.primitive.planks.title=Lumber
 tfg.quests.primitive.planks.subtitle=&aUsing a saw, we get this tunnel.
@@ -175,17 +204,6 @@ tfg.quests.primitive.woodencrate.subtitle=&aYour first box that can store ores i
 
 tfg.quests.primitive.woodenbarrel.subtitle=&aA wooden barrel, similar to a TFK barrel, but you can't craft anything in it, just a liquid storage compatible with GT cars.
 
-tfg.quests.primitive.file.title=The first copper file
-tfg.quests.primitive.file.subtitle=&aHow many adventures began with him.
-
-tfg.quests.primitive.knifegt.title=The first copper knife
-tfg.quests.primitive.knifegt.subtitle=&aIt is much better than stone, at least because of its strength.
-
-tfg.quests.primitive.leather.title=Skin
-tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.
-
-tfg.quests.primitive.coppergeopick.subtitle=&aA geological hammer, to search for your first block ores.
-
 tfg.quests.primitive.barrel.title=The barrel!
 tfg.quests.primitive.barrel.subtitle=&aThe monkey poured water, the water remained in the barrel.
 
@@ -195,22 +213,8 @@ tfg.quests.primitive.juteropes.subtitle=&aJute with a crisis of self-perception.
 tfg.quests.primitive.supports.title=Supports!
 tfg.quests.primitive.supports.subtitle=&aYou don't want to be buried alive, do you?
 
-tfg.quests.primitive.copperpickaxe.title=The first copper pickaxe
-tfg.quests.primitive.copperpickaxe.subtitle=&aYour first pickaxe. I think this is the best copper investment.
-
-tfg.quests.primitive.bismuthbronzepickaxe.title=Pickaxe made of bismuth bronze
-tfg.quests.primitive.bismuthbronzepickaxe.subtitle=&aThis pickaxe is clearly better than copper, but also worse than bronze.
-
-tfg.quests.primitive.bronzepickaxe.title=Bronze pickaxe
-tfg.quests.primitive.bronzepickaxe.subtitle=&aThe pickaxe is average, bismuth is better but bronze, but black and bronze is worse.
-
-tfg.quests.primitive.blackbronzepickaxe.title=A pickaxe made of black bronze.
-tfg.quests.primitive.blackbronzepickaxe.subtitle=&aThe best pickaxe made of bronze.
-
 tfg.quests.primitive.grinder.title=Hand Mill
 tfg.quests.primitive.grinder.subtitle=&aCreate a hand mill.
-
-tfg.quests.primitive.copperhammer.subtitle=&aIt looks like a plan. And why isn't this in GregTech? Let me remind you that right now you can process ores, so go ahead, dig up as much as possible!
 
 tfg.quests.primitive.copperanvil.title=Anvil No. 1 "Pacification"
 tfg.quests.primitive.copperanvil.subtitle=&aThis is more expensive than any bronze. Have you been sweating for a long time to get it?
@@ -281,8 +285,7 @@ tfg.quests.primitive.tuyere.subtitle=&aA lot of your metal flows through it.
 
 tfg.quests.primitive.tfcblastfurnace.title=Blast furnace!
 tfg.quests.primitive.tfcblastfurnace.subtitle=&aGlory to steel, a new era is coming now.
-tfg.quests.primitive.tfcblastfurnace.desc1=There is such coal, it is called coke, and it can heat up to 1510 degrees,
-which allows you not to control the furnace, but it cannot be used in a normal forge.
+tfg.quests.primitive.tfcblastfurnace.desc1=There is such coal, it is called coke, and it can heat up to 1510 degrees, which allows you not to control the furnace, but it cannot be used in a normal forge. How to build this structure, you can look at the Wiki TFC:TNG.
 
 tfg.quests.primitive.tfccrusible.title=The Iron Witch's Cauldron
 tfg.quests.primitive.tfccrusible.subtitle=&aI want a series with that name.
@@ -296,30 +299,8 @@ tfg.quests.primitive.redsteelingot.subtitle=&aRed is not an appr.. what?
 tfg.quests.primitive.bluesteelingot.title=Blue Steel
 tfg.quests.primitive.bluesteelingot.subtitle=&aBlue is not an appr..? Stop it!
 
-tfg.quests.primitive.redbluesteelpickaxe.title=Any pickaxe made of non-ferrous metals
-tfg.quests.primitive.redbluesteelpickaxe.subtitle=&aDig up the obsidian and run to HELL!
-
-tfg.quests.primitive.obsidian.title=Hot kebab
-tfg.quests.primitive.obsidian.subtitle=&aYou feel, you feel, it's not the smell of realism, what a HELL, although, wherever there, go for blazes.
-
-tfg.quests.primitive.bluesteelbucket.title=Blue Bucket
-tfg.quests.primitive.bluesteelbucket.subtitle=&aPainted with the tears of everyone who fell into the lava with diamonds in the inventory. Can scoop up lava.
-
-tfg.quests.primitive.redsteelbucket.title=Red Bucket
-tfg.quests.primitive.redsteelbucket.subtitle=&aWe paint with the blood of drowned people. There is a 3% discount for each goat sacrificed. Can scoop up water.
-
 tfg.quests.primitive.bucket.title=I AM A BUCKET!!!
 tfg.quests.primitive.bucket.subtitle=&aA magical Minecraft bucket. Magic washed the paint.
-
-tfg.quests.primitive.tochilka1.subtitle=&aSharpen your items better and faster.
-
-tfg.quests.primitive.tochilka2.subtitle=&aA new level of sharpening.
-
-tfg.quests.primitive.tochilka3.subtitle=&aAutomation of sharpening.
-
-tfg.quests.primitive.tochilka4.subtitle=&aEven steeper sharpened.
-
-tfg.quests.primitive.tochilka5.subtitle=&aSauron would be proud of you!
 
 tfg.quests.primitive.steelingot.title=Steel Ingot
 tfg.quests.primitive.steelingot.subtitle=&aWow, it's sparkling.
@@ -378,6 +359,51 @@ tfg.quests.primitive.groove.subtitle=&aUsed to get latex, right click a hevea or
 tfg.quests.primitive.rubbermix.subtitle=&aIt's very sticky.
 
 tfg.quests.primitive.fireproofclay.subtitle=&aRefractory clay, which will be needed for crafting blocks of refractory bricks for a blast furnace.
+
+tfg.quests.primitive.tfcmedicinal.title=This world is hard to live except for hunger and thirst, danger lurks everywhere and you should be afraid because death is terrible.
+tfg.quests.primitive.tfcmedicinal.subtitle=These are some of the things you need to look out for when surviving TFC with Medicinal, and each will have a specific medicine to combat it:
+tfg.quests.primitive.tfcmedicinal.desc1= - When you die, your health will be at 20% and your hunger at half.
+tfg.quests.primitive.tfcmedicinal.desc2= - When you die, your nutrition stats will not be half but close to 0.
+tfg.quests.primitive.tfcmedicinal.desc3= - After you respawn, you will be afflicted with a disease, 
+tfg.quests.primitive.tfcmedicinal.desc3.1=a fatal disease that will keep you from mining, building, or fighting for an entire day of Minecraft.
+tfg.quests.primitive.tfcmedicinal.desc4= - The dust in the mines strains your lungs, making movement and mining difficult.
+tfg.quests.primitive.tfcmedicinal.desc5= - Raw meat, as well as cooked meat that is not wood-roasted 
+tfg.quests.primitive.tfcmedicinal.desc5.1=(on an iron grate), can give you parasites that drain your energy and hunger.
+tfg.quests.primitive.tfcmedicinal.desc6= - Flowers and plants in the world now have active modifiers:
+tfg.quests.primitive.tfcmedicinal.desc7=* The bright red flowers are vibrant and have healing properties .
+tfg.quests.primitive.tfcmedicinal.desc8=* Blue flowers have mental properties
+tfg.quests.primitive.tfcmedicinal.desc9=* Yellow flowers have energetic properties
+tfg.quests.primitive.tfcmedicinal.desc10=* Green plants (not grass) have calming properties.
+tfg.quests.primitive.tfcmedicinal.desc11=* Brown plants are rich in vitamins and minerals
+tfg.quests.primitive.tfcmedicinal.desc12=* Purple and pink flowers have a strong fragrance.
+tfg.quests.primitive.tfcmedicinal.desc13=* White flowers have powerful mixing properties and are used in all medicines.
+
+tfg.quests.primitive.mpestle.title=Making the Real Medicine:
+tfg.quests.primitive.mpestle.subtitle=Get yourself a Mortar and Pestle by crafting a Ceramic Bowl with a Stick and Flint.
+tfg.quests.primitive.mpestle.desc1=Collect a variety of flowers, go explore the new world if needed, and bring them home.
+tfg.quests.primitive.mpestle.desc2=Crush the flowers with the mortar and pestle by clicking on it, placing the flower, and then right-clicking a few times.
+tfg.quests.primitive.mpestle.desc3=Flowers will give you extracts, which when crafted in 3x3 will give you concentrates.
+tfg.quests.primitive.mpestle.desc4=There are many catalysts to choose from that can be added to the base drink mix.
+tfg.quests.primitive.mpestle.desc5=Catalysts have different crafting recipes from different types of concentrates, use JEI for this.
+tfg.quests.primitive.mpestle.desc6=Once you have the catalyst you need, you'll need a Vial Heater, which is crafted with a few Firebricks and an Alabaster Filter.
+tfg.quests.primitive.mpestle.desc7=Place the heater over the burning fire pit on the wall.
+tfg.quests.primitive.mpestle.desc8=Create yourself a glass flask from a single piece of glass at a workbench.
+tfg.quests.primitive.mpestle.desc9=Find yourself underground spiders, take their eyes and ferment them in a little vinegar throughout the day.
+tfg.quests.primitive.mpestle.desc10=Fill your flask with ocean salt water, place it in the flask warmer and wait for it to boil (bubbles will form over it) .
+tfg.quests.primitive.mpestle.desc11=When the solution boils, add the fermented spider eye, at which point the solution will begin to boil more and more.
+tfg.quests.primitive.mpestle.desc12=Your base mix will be ready after one in-game hour.
+tfg.quests.primitive.mpestle.desc13=Place any catalyst in it and boil it as in the last few steps to get a drinking mix to use .
+
+tfg.quests.primitive.concoction.desc1=Antidote for a Deadly Disease - Cures a deadly disease when consumed
+tfg.quests.primitive.concoction.desc2=Visual Acuity Blend - When you die while this effect is active, your items will not be destroyed and you will be respawned in your comfortable bed.
+tfg.quests.primitive.concoction.desc3=Nutritious Concoction - Resets your nutritional values ​​to half across the board.
+tfg.quests.primitive.concoction.desc4=Concoction to strengthen the stomach - Turns you on for meat parasites, hunger and nausea from aged pills.
+tfg.quests.primitive.concoction.desc5=Lung Concoction - Turns on dust from lungs, digs freely in caves, holds breath underwater and swims faster.
+tfg.quests.primitive.concoction.desc6=Rejuvenating Blend - Fully heals you in a minute
+tfg.quests.primitive.concoction.desc7=Decoction of Sharp Vision - Allows you to see in the dark
+tfg.quests.primitive.concoction.desc8=Health Concoction - Increases health by 40% for a limited time.
+tfg.quests.primitive.concoction.desc9=Cooling Panacea (TFC Ambiental) - Temporarily cools you by 10 degrees.
+tfg.quests.primitive.concoction.desc10=Warming Concoction (TFC Ambiental) - Warms you up by 10 degrees for a while
 
 tfg.quests.primitive.siliciasand.title=Silica sand
 tfg.quests.primitive.siliciasand.subtitle=&aInteresting sand with a quartzite smell.

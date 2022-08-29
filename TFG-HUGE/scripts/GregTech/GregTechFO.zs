@@ -252,11 +252,11 @@ large_chemical_reactor.findRecipe(256, [<minecraft:mutton:0> * 32], [<liquid:met
 large_chemical_reactor.findRecipe(256, [<minecraft:beef:0> * 32], [<liquid:methanol> * 4000, <liquid:chloroform> * 4000]).remove();
 
 // Mince Meat + BoneMeal + Animal Fat
-centrifuge.findRecipe(20, [<minecraft:rabbit:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
-centrifuge.findRecipe(20, [<minecraft:porkchop:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
-centrifuge.findRecipe(20, [<minecraft:beef:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
-centrifuge.findRecipe(20, [<minecraft:mutton:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
-centrifuge.findRecipe(20, [<minecraft:chicken:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
+// centrifuge.findRecipe(20, [<minecraft:rabbit:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
+// centrifuge.findRecipe(20, [<minecraft:porkchop:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
+// centrifuge.findRecipe(20, [<minecraft:beef:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
+// centrifuge.findRecipe(20, [<minecraft:mutton:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
+// centrifuge.findRecipe(20, [<minecraft:chicken:0> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 0})], null).remove();
 
 // Fish Oil
 extractor.findRecipe(4, [<minecraft:fish:2>], null).remove();
@@ -318,13 +318,13 @@ baking_oven.findRecipe(1, [<minecraft:fish:0>, <minecraft:coal:1> * 2], null).re
 baking_oven.findRecipe(1, [<minecraft:fish:1>, <minecraft:coal:1> * 2], null).remove();
 baking_oven.findRecipe(1, [<minecraft:fish:1>, <tfc:ore/bituminous_coal:0> * 2], null).remove();
 baking_oven.findRecipe(1, [<minecraft:fish:1>, <metaitem:gemCoke>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:mutton:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:rabbit:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:chicken:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:beef:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:porkchop:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:fish:0>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:fish:1>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:mutton:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:rabbit:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:chicken:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:beef:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:porkchop:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:fish:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:fish:1>], null).remove();
 
 // Uncooked Bacon
 slicer.findRecipe(18, [<minecraft:porkchop:0>, <metaitem:config.slicer_blade.flat>], null).remove();
@@ -348,7 +348,7 @@ cuisine_assembler.findRecipe(7, [<minecraft:sugar:0>, <minecraft:egg:0>, <metait
 baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <tfc:ore/bituminous_coal:0> * 3], null).remove();
 baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <metaitem:gemCoke>], null).remove();
 baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <minecraft:coal:1> * 3], null).remove();
-electric_baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>], null).remove();
+// electric_baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>], null).remove();
 
 // Cake Bottom
 forming_press.findRecipe(30, [<metaitem:component.sugary_dough> * 4, <metaitem:shape.mold.cylinder>], null).remove();
@@ -371,7 +371,7 @@ slicer.findRecipe(18, [<minecraft:bread:0>, <metaitem:config.slicer_blade.flat>]
 baking_oven.findRecipe(1, [<metaitem:component.bread>, <metaitem:gemCoke>], null).remove();
 baking_oven.findRecipe(1, [<metaitem:component.bread>, <tfc:ore/bituminous_coal:0> * 2], null).remove();
 baking_oven.findRecipe(1, [<metaitem:component.bread>, <minecraft:coal:1> * 2], null).remove();
-electric_baking_oven.findRecipe(1, [<metaitem:component.bread>], null).remove();
+// electric_baking_oven.findRecipe(1, [<metaitem:component.bread>], null).remove();
 
 // Unbaked Bread
 forming_press.findRecipe(20, [<metaitem:component.dough> * 3, <metaitem:wooden_form.bread>], null).remove();
@@ -405,7 +405,7 @@ macerator.findRecipe(4, [<minecraft:potato:0>], null).remove();
 baking_oven.findRecipe(1, [<minecraft:potato:0>, <minecraft:coal:1>], null).remove();
 baking_oven.findRecipe(1, [<minecraft:potato:0>, <tfc:ore/bituminous_coal:0>], null).remove();
 baking_oven.findRecipe(1, [<minecraft:potato:0>, <metaitem:gemCoke>], null).remove();
-electric_baking_oven.findRecipe(1, [<minecraft:potato:0>], null).remove();
+// electric_baking_oven.findRecipe(1, [<minecraft:potato:0>], null).remove();
 
 // Roasted Potato
 assembler.findRecipe(4, [<minecraft:stick:0>, <minecraft:baked_potato:0>], null).remove();
@@ -418,9 +418,9 @@ mixer.findRecipe(8, [<minecraft:beetroot:0> * 2, <metaitem:dustWheat>], [<liquid
 
 // Chum
 mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100]).remove();
-mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
-mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100]).remove();
-mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
+// mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
+// mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100]).remove();
+// mixer.findRecipe(24, [<metaitem:food.fish_rotten>, <minecraft:red_mushroom:0>, <minecraft:poisonous_potato:0>, <minecraft:fermented_spider_eye:0>], [<liquid:gtfo_sludge> * 100, <liquid:gtfo_purple_drink> * 100]).remove();
 
 // Flat Dough
 forge_hammer.findRecipe(60, [<metaitem:component.dough>], null).remove();
@@ -460,13 +460,13 @@ mixer.findRecipe(16, [<metaitem:dustWheat>, <metaitem:dustMeat>], [<liquid:water
 extractor.findRecipe(27, [<metaitem:crop.olive>], null).remove();
 
 // Orange, Lemon and etc
-centrifuge.findRecipe(6, [<minecraft:leaves:3>], null).remove();
+// centrifuge.findRecipe(6, [<minecraft:leaves:3>], null).remove();
 
 // Apricot
-centrifuge.findRecipe(6, [<minecraft:leaves2:0>], null).remove();
+// centrifuge.findRecipe(6, [<minecraft:leaves2:0>], null).remove();
 
 // Olive
-centrifuge.findRecipe(6, [<minecraft:leaves:0>], null).remove();
+// centrifuge.findRecipe(6, [<minecraft:leaves:0>], null).remove();
 
 // Kebab e Soltani!
 cuisine_assembler.findRecipe(120, [<metaitem:food.kebab.barg> * 2, <metaitem:food.kebab.kubide>, <metaitem:crop.tomato> * 3, <metaitem:crop.onion> * 2, <metaitem:food.lemon>], [<liquid:gtfo_stearin> * 1000, <liquid:gtfo_lemon_extract> * 250]).remove();
@@ -530,12 +530,6 @@ distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration:
 
 
 // --- Добавление рецептов
-
-// УДАЛИТЬ ПОСЛЕ ФИКСА #666
-recipes.addShaped("tfg/gtfo/fuck", <metaitem:dustMeat> * 2,
-    [[null,  null, null],
-    [null, null, null],
-    [null, <ore:categoryMeat>, <ore:gtce.tool.knife>]]);
 
 // Adobe Bricks
 recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
@@ -735,12 +729,12 @@ chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
     .duration(50).EUt(30).buildAndRegister();
-
+/*
 large_chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
     .duration(50).EUt(30).buildAndRegister();
-
+*/
 // Pre-Sliced Bread
 recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:gtce.tool.knife>]);
 

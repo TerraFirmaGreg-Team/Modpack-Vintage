@@ -121,7 +121,7 @@
         {
             "image": {
                 "parent": "builtin/text",
-                "text": "status",
+                "text": "is_reloading ? status : (status  + ': ' + sub_status)",
                 "scale": 0.7,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
@@ -131,7 +131,7 @@
         {
             "image": {
                 "parent": "builtin/text",
-                "text": "sub_status",
+                "text": "is_reloading ? sub_status : ''",
                 "scale": 0.6,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",

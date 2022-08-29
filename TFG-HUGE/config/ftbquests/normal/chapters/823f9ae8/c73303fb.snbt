@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.mpestle.title}",
 	x: 4.0d,
-	y: 7.0d,
+	y: 5.5d,
 	description: "{tfg.quests.primitive.mpestle.subtitle}",
 	text: [
 		"{tfg.quests.primitive.mpestle.desc1}",

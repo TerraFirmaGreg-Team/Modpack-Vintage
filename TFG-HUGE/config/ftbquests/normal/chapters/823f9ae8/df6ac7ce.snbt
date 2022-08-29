@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.primitive.prepared_hide.title}",
+	x: -25.75d,
+	y: 6.25d,
+	description: "{tfg.quests.primitive.prepared_hide.subtitle}",
+	dependencies: [
+		"520f15f6"
+	],
+	tasks: [{
+		uid: "f28a99aa",
+		type: "item",
+		items: [{
+			item: "tfc:hide/prepared/small"
+		},
+		{
+			item: "tfc:hide/prepared/medium"
+		},
+		{
+			item: "tfc:hide/prepared/large"
+		}]
+	}]
+}

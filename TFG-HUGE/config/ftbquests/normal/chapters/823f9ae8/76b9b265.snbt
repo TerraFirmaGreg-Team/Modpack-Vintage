@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.copper_chisel_head.title}",
+	x: -19.0d,
+	y: -5.5d,
+	description: "{tfg.quests.primitive.copper_chisel_head.subtitle}",
+	dependencies: [
+		"1a30f24f"
+	],
+	tasks: [{
+		uid: "100e12ef",
+		type: "item",
+		items: [{
+			id: "tfc:metal/chisel_head/copper",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}

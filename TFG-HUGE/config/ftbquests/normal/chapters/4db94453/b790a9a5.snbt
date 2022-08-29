@@ -3,7 +3,7 @@
 	y: -1.0d,
 	shape: "circle",
 	dependencies: [
-		"4c8b7ee6"
+		"0d675c7f"
 	],
 	tasks: [{
 		uid: "2a4351f6",

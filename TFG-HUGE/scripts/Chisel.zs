@@ -85,31 +85,31 @@ for item in RemoveItemRecipesByName{
 recipes.addShaped("tfg/chisel/auto_chisel", <chisel:auto_chisel>, [
 	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
 	[<ore:blockGlass>, <chisel:chisel_iron> | <chisel:chisel_diamond> | <chisel:chisel_hitech>, <ore:blockGlass>],
-	[<ore:plateIronAny>, <metaitem:wireGtSingleRedAlloy>, <ore:plateIronAny>]]);
+	[<ore:plateIronAny>, <ore:wireGtSingleRedAlloy>, <ore:plateIronAny>]]);
 
 // Эндер палка смещения
 recipes.addShaped("tfg/chisel/offsettool", <chisel:offsettool>, [
-	[<metaitem:plateIron>, <ore:gemEnderEye>, <ore:gtce.tool.knife>],
-	[<minecraft:stick>, <metaitem:plateIron>, null],
+	[<ore:plateIron>, <ore:gemEnderEye>, <ore:gtce.tool.knife>],
+	[<minecraft:stick>, <ore:plateIron>, null],
 	[<ore:gtce.tool.hard.hammers>, null, null]]);
 
 // Железная стамеска
 recipes.addShaped("tfg/chisel/chisel_iron", <chisel:chisel_iron>, [
   [<ore:gtce.tool.files>, <ore:plateIronAny>, <ore:plateIronAny>],
-  [null, <metaitem:screwSteel>, <ore:plateIronAny>],
-  [<metaitem:stickBronze>, null, <ore:gtce.tool.hard.hammers>]]);
+  [null, <ore:screwSteel>, <ore:plateIronAny>],
+  [<ore:stickBronze>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Алмазная стамеска
 recipes.addShaped("tfg/chisel/chisel_diamond", <chisel:chisel_diamond>, [
-  [<ore:gtce.tool.files>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
-  [null, <chisel:chisel_iron>, <metaitem:plateDiamond>],
-  [<metaitem:stickRoseGold>, null, <ore:gtce.tool.hard.hammers>]]);
+  [<ore:gtce.tool.files>, <ore:plateDiamond>, <ore:plateDiamond>],
+  [null, <chisel:chisel_iron>, <ore:plateDiamond>],
+  [<ore:stickRoseGold>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Современная стамеска
 recipes.addShaped("tfg/chisel/chisel_hitech", <chisel:chisel_hitech>, [
-  [<ore:gtce.tool.files>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
-  [null, <chisel:chisel_diamond>, <metaitem:plateDiamond>],
-  [<metaitem:stickStainlessSteel>, null, <ore:gtce.tool.hard.hammers>]]);
+  [<ore:gtce.tool.files>, <ore:plateDiamond>, <ore:plateDiamond>],
+  [null, <chisel:chisel_diamond>, <ore:plateDiamond>],
+  [<ore:stickStainlessSteel>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Лабораторный блок
 recipes.addShaped("tfg/chisel/laboratory_block", <chisel:laboratory> * 8, [

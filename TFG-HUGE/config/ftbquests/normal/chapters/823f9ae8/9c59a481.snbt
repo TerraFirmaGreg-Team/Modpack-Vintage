@@ -1,8 +1,7 @@
 {
 	title: "{tfg.quests.primitive.tfcmedicinal.title}",
-	x: 2.25d,
-	y: 7.0d,
-	shape: "pentagon",
+	x: 2.0d,
+	y: 5.5d,
 	description: "{tfg.quests.primitive.tfcmedicinal.subtitle}",
 	text: [
 		"{tfg.quests.primitive.tfcmedicinal.desc1}",

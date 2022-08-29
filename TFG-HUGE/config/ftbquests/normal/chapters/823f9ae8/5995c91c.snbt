@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.glassmolds.title}",
-	x: -8.0d,
-	y: 0.0d,
+	x: -6.0d,
+	y: -18.75d,
 	description: "{tfg.quests.primitive.glassmolds.subtitle}",
 	dependencies: [
 		"5c797ee7"

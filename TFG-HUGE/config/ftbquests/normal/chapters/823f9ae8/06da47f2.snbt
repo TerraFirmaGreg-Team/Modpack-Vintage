@@ -1,10 +1,11 @@
 {
 	title: "{tfg.quests.primitive.meshokmochi.title}",
-	x: -18.0d,
-	y: 13.0d,
+	x: -10.25d,
+	y: 8.0d,
 	description: "{tfg.quests.primitive.meshokmochi.subtitle}",
+	hide_dependency_lines: true,
 	dependencies: [
-		"3e5270be"
+		"d1baef19"
 	],
 	tasks: [{
 		uid: "b7002116",

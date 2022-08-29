@@ -1,6 +1,6 @@
 {
-	x: -10.0d,
-	y: -2.0d,
+	x: -14.0d,
+	y: -11.25d,
 	description: "{tfg.quests.steam.primitivewaterpump.subtitle}",
 	text: [
 		"{tfg.quests.steam.primitivewaterpump.desc1}",
@@ -13,7 +13,7 @@
 		"{tfg.quests.steam.primitivewaterpump.desc6}"
 	],
 	dependencies: [
-		"8fdd423e"
+		"47b2f0d9"
 	],
 	tasks: [{
 		uid: "7553d3a7",

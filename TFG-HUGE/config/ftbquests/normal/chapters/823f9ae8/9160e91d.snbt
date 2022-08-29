@@ -1,24 +1,17 @@
 {
 	icon: "minecraft:string",
-	x: -24.0d,
-	y: 13.0d,
+	x: -19.5d,
+	y: 7.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.strings.subtitle}",
 	dependencies: [
-		"91df744a"
+		"6a0567d3"
 	],
 	tasks: [{
-		uid: "6e91620e",
+		uid: "06728fc9",
 		type: "item",
-		title: "{tfg.quests.primitive.strings.title}",
 		items: [{
-			id: "itemfilters:filter",
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "string"
-				}
-			}
+			item: "tfc:animal/product/wool_yarn"
 		}]
 	}]
 }

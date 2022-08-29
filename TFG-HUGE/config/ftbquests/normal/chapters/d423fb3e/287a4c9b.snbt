@@ -1,6 +1,6 @@
 {
-	x: -10.0d,
-	y: -3.0d,
+	x: -13.0d,
+	y: -11.25d,
 	description: "{tfg.quests.steam.primitivewatertank.subtitle}",
 	text: [
 		"{tfg.quests.steam.primitivewatertank.desc1}",
@@ -11,7 +11,7 @@
 		"{tfg.quests.steam.primitivewatertank.desc6}"
 	],
 	dependencies: [
-		"8fdd423e"
+		"47b2f0d9"
 	],
 	tasks: [{
 		uid: "a43d02e1",

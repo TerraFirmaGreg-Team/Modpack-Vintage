@@ -262,17 +262,40 @@ customization {
 }
 
 customization {
-  orientation = top-centered
-  basecolor = #ff0000
+  orientation = element
+  basecolor = #ff1500
+  vr:value:language = ru_ru
   shadow = true
-  splashfilepath = resources\modpack\words.txt
+  splashfilepath = resources\modpack\words\en_us.txt
   rotation = 0.0
-  x = 81
-  actionid = 732d4530-bd95-48b6-805b-ee7f535088ac1652985574162
-  action = addsplash
-  y = 68
-  scale = 1.0
+  scale = 0.7
   refresh = true
   bouncing = true
+  vanilla-like = false
+  orientation_element = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
+  x = 93
+  actionid = dfe9da8d-e635-4473-9bca-9f30ff0e15a41661549675641
+  action = addsplash
+  y = 75
+  vr:showif:language = true
+}
+
+customization {
+  orientation = element
+  basecolor = #ff1500
+  vr:value:language = en_us
+  shadow = true
+  splashfilepath = resources\modpack\words\en_us.txt
+  rotation = 0.0
+  scale = 0.7
+  refresh = false
+  bouncing = true
+  vanilla-like = false
+  orientation_element = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
+  x = 93
+  actionid = 399bfb88-eed1-409e-8586-9ada544886ea1661549525291
+  action = addsplash
+  y = 74
+  vr:showif:language = true
 }
 

@@ -9,14 +9,10 @@
 			}
 		}
 	},
-	x: -26.0d,
-	y: 0.0d,
-	shape: "hexagon",
+	x: -22.5d,
+	y: -5.5d,
 	description: "{tfg.quests.primitive.flux.subtitle}",
 	hide_dependency_lines: true,
-	dependencies: [
-		"b320933e"
-	],
 	tasks: [{
 		uid: "0b0a99ad",
 		type: "item",

@@ -1,9 +1,9 @@
 {
-	x: -14.0d,
-	y: -4.0d,
+	x: -15.0d,
+	y: -7.25d,
 	description: "{tfg.quests.steam.cokeoven.subtitle}",
 	dependencies: [
-		"8fdd423e"
+		"cfc5d83d"
 	],
 	tasks: [{
 		uid: "4cb6f69d",

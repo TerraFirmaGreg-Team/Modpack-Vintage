@@ -267,19 +267,12 @@ mixer.recipeBuilder()
 	.fluidOutputs(<liquid:base_potash_liquor> * 500)
 	.duration(150).EUt(2).buildAndRegister();
 
-// Wild Sugar Cane -> Sugar
-mixer.recipeBuilder()
-	.inputs(<tfc:plants/sugar_cane> * 5)
-	.fluidInputs(<liquid:fresh_water> * 500)
-	.circuit(19)
-	.outputs(<minecraft:sugar>)
-	.duration(150).EUt(2).buildAndRegister();
 
 // Wild Sugar Cane -> Cellulose Fibers
 mixer.recipeBuilder()
 	.inputs(<tfc:plants/sugar_cane>)
 	.fluidInputs(<liquid:base_potash_liquor> * 150)
-	.circuit(19)
+	.circuit(20)
 	.outputs(<tfcflorae:cellulose_fibers>)
     .fluidOutputs(<liquid:waste> * 150)
 	.duration(150).EUt(2).buildAndRegister();
@@ -723,10 +716,10 @@ mixer.recipeBuilder()
 
 // Amaranth Grain -> Amaranth Malt
 mixer.recipeBuilder()
-	.inputs(<tfc:food/wheat_grain>)
+	.inputs(<tfcflorae:food/amaranth_grain>)
 	.fluidInputs(<liquid:fresh_water> * 200)
 	.circuit(22)
-	.outputs(<tfcflorae:crop/product/malt_wheat>)
+	.outputs(<tfcflorae:crop/product/malt_amaranth>)
 	.duration(150).EUt(2).buildAndRegister();
 
 // BuckWheat Grain -> BuckWheat Malt
@@ -775,14 +768,6 @@ mixer.recipeBuilder()
 	.fluidInputs(<liquid:wort> * 500)
 	.circuit(23)
 	.fluidOutputs(<liquid:beer_barley> * 500)
-	.duration(150).EUt(2).buildAndRegister();
-
-// Malt Corn -> Corn Beer
-mixer.recipeBuilder()
-	.inputs(<tfcflorae:crop/product/malt_corn>)
-	.fluidInputs(<liquid:wort> * 500)
-	.circuit(23)
-	.fluidOutputs(<liquid:beer_corn> * 500)
 	.duration(150).EUt(2).buildAndRegister();
 
 // Malt Corn -> Corn Beer
@@ -843,7 +828,7 @@ mixer.recipeBuilder()
 
 // Quinoa Corn -> Quinoa Beer
 mixer.recipeBuilder()
-	.inputs(<tfcflorae:crop/product/malt_millet>)
+	.inputs(<tfcflorae:crop/product/malt_quinoa>)
 	.fluidInputs(<liquid:wort> * 500)
 	.circuit(23)
 	.fluidOutputs(<liquid:beer_quinoa> * 500)
@@ -851,7 +836,7 @@ mixer.recipeBuilder()
 
 // Spelt Corn -> Spelt Beer
 mixer.recipeBuilder()
-	.inputs(<tfcflorae:crop/product/malt_millet>)
+	.inputs(<tfcflorae:crop/product/malt_spelt>)
 	.fluidInputs(<liquid:wort> * 500)
 	.circuit(23)
 	.fluidOutputs(<liquid:beer_spelt> * 500)

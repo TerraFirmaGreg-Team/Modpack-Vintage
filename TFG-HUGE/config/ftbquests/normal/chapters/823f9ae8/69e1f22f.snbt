@@ -1,8 +1,9 @@
 {
-	x: -17.0d,
-	y: 9.0d,
+	x: -2.5d,
+	y: 10.0d,
 	description: "{tfg.quests.primitive.HorsePress.subtitle}",
 	dependencies: [
+		"c8479433",
 		"ffb7544a"
 	],
 	tasks: [{

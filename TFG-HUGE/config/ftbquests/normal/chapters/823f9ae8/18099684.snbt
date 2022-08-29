@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.primitive.soaked_hide.title}",
+	x: -25.75d,
+	y: -1.0d,
+	description: "{tfg.quests.primitive.soaked_hide.subtitle}",
+	dependencies: [
+		"e61c6921",
+		"bf82a628",
+		"b34ad5dc"
+	],
+	tasks: [{
+		uid: "57159ff8",
+		type: "item",
+		items: [{
+			item: "tfc:hide/soaked/small"
+		},
+		{
+			item: "tfc:hide/soaked/medium"
+		},
+		{
+			item: "tfc:hide/soaked/large"
+		}]
+	}]
+}

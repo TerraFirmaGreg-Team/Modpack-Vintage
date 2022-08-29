@@ -1,6 +1,6 @@
 {
-	x: -15.0d,
-	y: -6.0d,
+	x: -17.0d,
+	y: -5.5d,
 	description: "{tfg.quests.steam.drum.subtitle}",
 	text: [
 		"{tfg.quests.steam.drum.desc1}",
@@ -14,6 +14,7 @@
 	dependencies: [
 		"7d03eeb7"
 	],
+	optional: true,
 	tasks: [{
 		uid: "be292c05",
 		type: "item",

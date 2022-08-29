@@ -1,6 +1,6 @@
 {
-	x: -3.0d,
-	y: 0.0d,
+	x: -3.5d,
+	y: -0.5d,
 	description: "{tfg.quests.primitive.bowlmount.subtitle}",
 	text: [
 		""

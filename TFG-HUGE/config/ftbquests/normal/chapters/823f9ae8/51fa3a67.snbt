@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.javelin.title}",
+	x: -32.0d,
+	y: -6.0d,
+	description: "{tfg.quests.primitive.javelin.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "f29ec11b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any javelinStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "javelinStone"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.primitive.greenhouseblocks.title}",
-	x: -10.0d,
-	y: 0.0d,
+	x: -4.25d,
+	y: -16.25d,
 	description: "{tfg.quests.primitive.greenhouseblocks.subtitle}",
 	dependencies: [
-		"85e10b5d"
+		"d2850e1d"
 	],
 	tasks: [{
 		uid: "362351ef",

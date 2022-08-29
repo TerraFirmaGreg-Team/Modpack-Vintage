@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.primitive.scrapped_hide.title}",
+	x: -25.75d,
+	y: 2.5d,
+	description: "{tfg.quests.primitive.scrapped_hide.subtitle}",
+	dependencies: [
+		"18099684"
+	],
+	tasks: [{
+		uid: "15b3caa4",
+		type: "item",
+		items: [{
+			item: "tfc:hide/scraped/small"
+		},
+		{
+			item: "tfc:hide/scraped/medium"
+		},
+		{
+			item: "tfc:hide/scraped/large"
+		}]
+	}]
+}

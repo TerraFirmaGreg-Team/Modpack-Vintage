@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.steam.multiblocktanks.title}",
 	icon: "gregtech:machine 1 1599",
-	x: -10.0d,
-	y: -4.0d,
+	x: -11.0d,
+	y: -5.5d,
 	shape: "circle",
 	description: "{tfg.quests.steam.multiblocktanks.subtitle}",
 	text: [
@@ -14,8 +14,9 @@
 		"{tfg.quests.steam.multiblocktanks.desc4}"
 	],
 	dependencies: [
-		"8fdd423e"
+		"e6318f88"
 	],
+	optional: true,
 	tasks: [{
 		uid: "ac069e22",
 		type: "item",

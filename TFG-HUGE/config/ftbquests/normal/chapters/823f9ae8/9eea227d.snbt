@@ -1,25 +1,28 @@
 {
-	x: -26.0d,
-	y: -8.5d,
-	description: "{tfg.quests.primitive.theHammer.subtitle}",
+	title: "{tfg.quests.primitive.stone_hammer.title}",
+	x: -28.0d,
+	y: -6.0d,
+	description: "{tfg.quests.primitive.stone_hammer.subtitle}",
 	dependencies: [
-		"d1baef19"
+		"8fc0c70f"
 	],
+	optional: true,
 	tasks: [{
 		uid: "9672083c",
 		type: "item",
-		title: "{tfg.quests.primitive.theHammer.title}",
 		items: [{
-			item: "tfc:stone/hammer/igneous_extrusive"
-		},
-		{
-			item: "tfc:stone/hammer/sedimentary"
-		},
-		{
-			item: "tfc:stone/hammer/metamorphic"
-		},
-		{
-			item: "tfc:stone/hammer/igneous_intrusive"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any hammerStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "hammerStone"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}]
