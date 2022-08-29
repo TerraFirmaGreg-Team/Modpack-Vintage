@@ -39,7 +39,7 @@ assembler.recipeBuilder()
 
 // Fluid packet decoder
 assembler.recipeBuilder()
-  .inputs(<gregtech:meta_item_1:290> * 2, <appliedenergistics2:material:23> * 4, <gregtech:machine:1612> , <ore:plateDenseTitanium> * 4, <appliedenergistics2:quartz_glass> * 4)
+  .inputs(<metaitem:fluid_filter> * 2, <appliedenergistics2:material:23> * 4, <gregtech:machine:1612> , <ore:plateDenseTitanium> * 4, <appliedenergistics2:quartz_glass> * 4)
   .circuit(24)
   .outputs(<ae2fc:burette>)
   .duration(100).EUt(480).buildAndRegister();

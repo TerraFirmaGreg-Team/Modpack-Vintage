@@ -1809,24 +1809,21 @@ lathe.recipeBuilder()
 mixer.recipeBuilder()
     .inputs([
         <minecraft:redstone>,
-        <metaitem:dustNetherQuartz>
-    ])
+        <metaitem:dustNetherQuartz>])
     .fluidInputs([<liquid:charged_certus_quartz> * 144])
     .fluidOutputs([<liquid:fluix> * 144])
     .duration(20).EUt(480).buildAndRegister();
 mixer.recipeBuilder()
     .inputs([
         <minecraft:redstone>,
-        <metaitem:dustChargedCertusQuartz>
-    ])
+        <metaitem:dustChargedCertusQuartz>])
     .fluidInputs([<liquid:nether_quartz> * 144])
     .fluidOutputs([<liquid:fluix> * 144])
     .duration(20).EUt(480).buildAndRegister();
 mixer.recipeBuilder()
     .inputs([
         <metaitem:dustNetherQuartz>,
-        <metaitem:dustChargedCertusQuartz>
-    ])
+        <metaitem:dustChargedCertusQuartz>])
     .fluidInputs([<liquid:redstone> * 144])
     .fluidOutputs([<liquid:fluix> * 144])
     .duration(20).EUt(480).buildAndRegister();

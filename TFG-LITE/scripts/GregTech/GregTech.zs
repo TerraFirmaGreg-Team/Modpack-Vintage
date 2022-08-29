@@ -38,7 +38,8 @@ val ItemsToRemove as IItemStack[] = [
     <metaitem:cover.solar.panel.iv>,
     <metaitem:cover.solar.panel.luv>,
     <metaitem:cover.solar.panel.zpm>,
-    <metaitem:cover.solar.panel.uv>
+    <metaitem:cover.solar.panel.uv>,
+    <metaitem:passthrough_hatch_item>
 ];
 
 val RemoveItemRecipesByName = [
@@ -93,7 +94,10 @@ val RemoveItemRecipesByName = [
     "gregtech:clipboard",
     "gregtech:coke_oven_hatch",
     "gregtech:cover_fluid_voiding",
-    "gregtech:cover_item_voiding"
+    "gregtech:cover_item_voiding",
+    // Удалить после исправления дюпа капсул
+    "gregtech:universal_fluid_cell_revert",
+    "gregtech:universal_fluid_cell"
 ] as string[];
 
 // --- Удаление рецептов
@@ -197,9 +201,6 @@ brewery.findRecipe(3, [<minecraft:brown_mushroom:0>], [<liquid:water> * 20]).rem
 brewery.findRecipe(3, [<minecraft:red_mushroom:0>], [<liquid:water> * 20]).remove();
 brewery.findRecipe(3, [<minecraft:potato:0>], [<liquid:water> * 20]).remove();
 brewery.findRecipe(3, [<minecraft:beetroot:0>], [<liquid:water> * 20]).remove();
-
-// Кремень * 1
-// forge_hammer.findRecipe(5, [<tfc:gravel/phyllite:0>], null).remove();
 
 // Glass
 arc_furnace.findRecipe(30, [<minecraft:sand:0>], [<liquid:oxygen> * 20]).remove();
@@ -328,6 +329,12 @@ centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
 
 // --- Добавление рецептов
+// Удалить после исправления дюпа капсул
+bender.recipeBuilder()
+    .inputs(<gregtech:meta_plate:324>)
+    .circuit(13)
+    .outputs(<gregtech:meta_item_1:79>)
+    .duration(100).EUt(7).buildAndRegister();
 
 // Регистрация металлов
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeCopper>, "COPPER", 144, true);
@@ -344,19 +351,19 @@ ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
 // Контроллер теплицы
-/*
+
 recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
     [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
     [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
     [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
-*/
+
 // Контроллер распилки
-/*
+
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);
-*/
+
 // Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, [
     [<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
@@ -576,7 +583,7 @@ extractor.recipeBuilder()
     .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
 
 // Контроллер звездной кузни
-/*
+
 assembly_line.recipeBuilder()
     .inputs([
       <ore:batteryIv> * 4,  
@@ -592,7 +599,7 @@ assembly_line.recipeBuilder()
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
     .duration(1300).EUt(8100).buildAndRegister();
-*/
+
 // Solar Panel (ULV)
 assembly_line.recipeBuilder()
     .inputs([
@@ -982,3 +989,9 @@ electric_furnace.recipeBuilder()
     .inputs(<tfctech:latex/rubber_mix>)
     .outputs(<tfctech:latex/rubber>)
     .duration(40).EUt(7).buildAndRegister();
+
+// Passthrough hatch item
+recipes.addShaped("tfg/gregtech/passthrough_hatch_item", <metaitem:passthrough_hatch_item>, [
+    [null,<metaitem:conveyor.module.hv>, null],
+    [<metaitem:gearSmallSteel>, <metaitem:hull.hv>, <metaitem:gearSmallSteel>],
+    [null, <ore:chestWood>, null]]);

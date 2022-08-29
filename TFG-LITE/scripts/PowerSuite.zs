@@ -6,7 +6,6 @@ import crafttweaker.item.IItemStack;
 recipes.removeByMod("powersuits");
 
 // --- Добавление рецептов
-/*
 // Шлем
 star_forge.recipeBuilder()
 	.inputs(<metaitem:qts.helmet>, <extraplanets:tier4_space_suit_helmet:100>, <galacticraftplanets:orion_drive> * 2, <ore:circuitZpm> * 4)
@@ -40,4 +39,4 @@ star_forge.recipeBuilder()
     .fluidInputs([<liquid:molten.hastelloy_c_276> * 8000])
     .outputs(<powersuits:power_fist>)
     .duration(28000).EUt(122880).buildAndRegister();
-*/
+
