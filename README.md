@@ -17,7 +17,7 @@ Discord: https://discord.com/invite/TZx8Cfr
 
 **Модпак имеет две версии:**
 
-Normal - Основная и приоритетная версия модпака. В ней только то, что отвечает канону модпака.
+Lite - Основная и приоритетная версия модпака. В ней только то, что отвечает канону модпака.
 
 Huge - Основной модпак с добавлением магических модов, например таких как Thaumcraft и AstralSorcery и аддонов к ним.
 
@@ -29,5 +29,5 @@ Of course, there are other mods in the modpack, such as AE2EL, GC, OpenComputers
 
 **The modpack has two versions:**
 
-Normal - The main and priority version of the modpack. It contains only what meets the modpack canon.
+Lite - The main and priority version of the modpack. It contains only what meets the modpack canon.
 Huge - The main modpack with the addition of magic mods, such as Thaumcraft and AstralSorcery and addons to them.
