@@ -715,7 +715,7 @@ for gcParachute in gcParachute {
     <extraplanets:kepler22b_planks:5>
 ]);
 
-
+<ore:stickDesh>.addItems([<galacticraftplanets:item_basic_mars:1>]);
 // --- Удаление
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
