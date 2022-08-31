@@ -1,0 +1,19 @@
+[
+{
+  "modid": "chisel",
+  "name": "Chisel",
+  "description": "Adds in tons of fancy blocks for decoration, crafted using the Chisel.",
+  "version": "MC1.12.2-1.0.2.45-gte",
+  "mcversion": "1.12.2",
+  "url": "https://minecraft.curseforge.com/projects/chisel",
+  "updateUrl": "",
+  "authorList": [ "tterrag", "Drullkus", "minecreatr" ],
+  "credits": "AUTOMATIC_MAIDEN for the original mod,
+asie for porting to 1.7.2,
+and Pokenfenn/Cricket for continuing it in 1.7.
+This mod uses textures from the Painterly Pack: http://painterlypack.net/.",
+  "logoFile": "/banner.jpg",
+  "screenshots": [],
+  "dependencies": []
+}
+]
