@@ -140,8 +140,7 @@ assembler.recipeBuilder()
     .circuit(1)
     .inputs([
         <ore:stickAluminium> * 2,
-        <appliedenergistics2:part:140> * 3,
-    ])
+        <appliedenergistics2:part:140> * 3,])
     .fluidInputs([<liquid:fluix> * 144])
     .outputs([<appliedenergistics2:part:16> * 6])
     .duration(20)
@@ -152,8 +151,7 @@ assembler.recipeBuilder()
     .inputs([
         <ore:stickAluminium> * 2,
         <appliedenergistics2:part:140> * 3,
-        <ore:dustFluix>
-    ])
+        <ore:dustFluix>])
     .outputs([<appliedenergistics2:part:16> * 6])
     .duration(20).EUt(480).buildAndRegister();
 chemical_bath.recipeBuilder()
