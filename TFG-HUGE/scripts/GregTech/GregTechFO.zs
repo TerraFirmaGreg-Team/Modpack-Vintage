@@ -661,11 +661,11 @@ for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
     	.outputs(TFC_Cooked_Meat)
     	.duration(400).EUt(1).buildAndRegister();
     
-    /*electric_baking_oven.recipeBuilder()
+    electric_baking_oven.recipeBuilder()
     	.inputs([TFC_Raw_Meat[i]])
     	.outputs(TFC_Cooked_Meat)
         //.property("temperature", 500)
-    	.duration(225).EUt(1).buildAndRegister();*/
+    	.duration(225).EUt(1).buildAndRegister();
 }
 
 // Uncooked Bacon
@@ -729,12 +729,7 @@ chemical_reactor.recipeBuilder()
     .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
     .outputs(<minecraft:speckled_melon>)
     .duration(50).EUt(30).buildAndRegister();
-/*
-large_chemical_reactor.recipeBuilder()
-    .inputs(<firmalife:melon>, <ore:nuggetGold> * 8)
-    .outputs(<minecraft:speckled_melon>)
-    .duration(50).EUt(30).buildAndRegister();
-*/
+
 // Pre-Sliced Bread
 recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:gtce.tool.knife>]);
 
@@ -762,11 +757,11 @@ for i, TFC_Breads in TFC_Breads {
     	.outputs(TFC_Breads)
     	.duration(400).EUt(1).buildAndRegister();
     
-    /*electric_baking_oven.recipeBuilder()
+    electric_baking_oven.recipeBuilder()
     	.inputs([TFC_Doughs[i]])
     	.outputs(TFC_Breads)
         //.property("temperature", 500)
-    	.duration(225).EUt(1).buildAndRegister();*/
+    	.duration(225).EUt(1).buildAndRegister();
 }
 
 // Carrot Slice

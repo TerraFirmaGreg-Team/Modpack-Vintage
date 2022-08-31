@@ -1,0 +1,15 @@
+{
+	x: 5.25d,
+	y: 12.25d,
+	dependencies: [
+		"411b712c"
+	],
+	tasks: [{
+		uid: "faca4eb3",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:schematic 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

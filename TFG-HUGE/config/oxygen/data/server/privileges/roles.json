@@ -1,0 +1,219 @@
+[
+  {
+    "id": 50,
+    "name": "Спонсор",
+    "name_color": "gold",
+    "prefix": "",
+    "username_color": "gold",
+    "prefix_color": "gold",
+    "chat_color": "gold",
+    "privileges": [
+      {
+        "id": 104,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 110,
+        "type": 3,
+        "value": 5
+      },
+      {
+        "id": 112,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 140,
+        "type": 4,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Operator",
+    "name_color": "aqua",
+    "prefix": "",
+    "username_color": "gray",
+    "prefix_color": "gray",
+    "chat_color": "gray",
+    "privileges": [
+      {
+        "id": 10,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 100,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 101,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 102,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 103,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 104,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 105,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 106,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 111,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 112,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 120,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 122,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 123,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 130,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 131,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 140,
+        "type": 4,
+        "value": 0
+      },
+      {
+        "id": 141,
+        "type": 4,
+        "value": 0
+      },
+      {
+        "id": 142,
+        "type": 4,
+        "value": 0
+      },
+      {
+        "id": 300,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 600,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 800,
+        "type": 3,
+        "value": 150
+      },
+      {
+        "id": 802,
+        "type": 3,
+        "value": 10
+      },
+      {
+        "id": 820,
+        "type": 4,
+        "value": 1000000
+      },
+      {
+        "id": 822,
+        "type": 4,
+        "value": 1000000
+      },
+      {
+        "id": 830,
+        "type": 4,
+        "value": 0
+      },
+      {
+        "id": 831,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 832,
+        "type": 4,
+        "value": 0
+      },
+      {
+        "id": 833,
+        "type": 3,
+        "value": 0
+      },
+      {
+        "id": 1002,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 1003,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 1400,
+        "type": 0,
+        "value": true
+      },
+      {
+        "id": 1401,
+        "type": 3,
+        "value": 31
+      },
+      {
+        "id": 1500,
+        "type": 0,
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Админ",
+    "name_color": "dark_red",
+    "prefix": "",
+    "username_color": "dark_red",
+    "prefix_color": "dark_red",
+    "chat_color": "dark_red",
+    "privileges": []
+  }
+]

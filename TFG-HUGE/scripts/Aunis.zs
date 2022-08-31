@@ -5,7 +5,6 @@ import crafttweaker.item.IItemStack;
 recipes.removeByMod("aunis");
 
 // --- Добавление рецептов
-/*
 // Transportrings_block
 star_forge.recipeBuilder()
   .circuit(1)
@@ -37,7 +36,7 @@ star_forge.recipeBuilder()
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:transportrings_ring_fragment>)
   .duration(200).EUt(1880).buildAndRegister();
-*/
+
 // Circuit_control_base
 circuit_assembler.recipeBuilder()
   .circuit(1)
@@ -70,8 +69,8 @@ assembly_line.recipeBuilder()
     <liquid:molten.incoloy_ma_956> * 6864, 
     <liquid:molten.hssg> * 4432)
   .outputs(<aunis:dhd_block>)
-  .duration(1800).EUt(83100).buildAndRegister();
-/*
+  .duration(1800).EUt(183100).buildAndRegister();
+
 // Holder_crystal
 star_forge.recipeBuilder()
   .circuit(4)
@@ -86,7 +85,7 @@ star_forge.recipeBuilder()
 	.fluidInputs([<liquid:glass> * 18000])
   .outputs(<aunis:dhd_brb>)
   .duration(300).EUt(1880).buildAndRegister();
-*/
+
 // Выращивание кристалов
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
@@ -124,30 +123,30 @@ fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:americium> * 32])
  	.fluidOutputs(<liquid:silicon_molten_ender> * 32)
-	.property("eu_to_start", 30000000)
-  .duration(1000).EUt(4290).buildAndRegister();
+	.property("eu_to_start", 32000000)
+  .duration(1000).EUt(42290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:glowstone> * 32])
  	.fluidOutputs(<liquid:silicon_molten_yellow> * 32)
-	.property("eu_to_start", 30000000)
-  .duration(1000).EUt(4290).buildAndRegister();
+	.property("eu_to_start", 32000000)
+  .duration(1000).EUt(42290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:blue_alloy> * 32])
  	.fluidOutputs(<liquid:silicon_molten_blue> * 32)
-	.property("eu_to_start", 30000000)
-  .duration(1000).EUt(4290).buildAndRegister();
+	.property("eu_to_start", 32000000)
+  .duration(1000).EUt(42290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:redstone> * 32])
  	.fluidOutputs(<liquid:silicon_molten_red> * 32)
-	.property("eu_to_start", 30000000)
-  .duration(1000).EUt(4290).buildAndRegister();
-/*
+	.property("eu_to_start", 32000000)
+  .duration(1000).EUt(42290).buildAndRegister();
+
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()
   .circuit(6)
@@ -170,9 +169,9 @@ star_forge.recipeBuilder()
 // stargate_ring_fragment
 star_forge.recipeBuilder()
   .circuit(9)
-  .inputs(<ore:plateDenseNaquadahAlloy> * 9, <ore:batteryIv>)
+  .inputs(<ore:plateDenseNaquadahAlloy> * 9, <ore:batteryUv>)
   .outputs(<aunis:stargate_ring_fragment> * 2)
-  .duration(2000).EUt(12880).buildAndRegister();
+  .duration(2000).EUt(121880).buildAndRegister();
 
 // capacitor_block_empty
 star_forge.recipeBuilder()
@@ -180,22 +179,22 @@ star_forge.recipeBuilder()
   .inputs(<ore:plateDenseNaquadahAlloy> * 4, <aunis:crystal_red> * 4, <ore:batteryLuv> * 6)
   .outputs(<aunis:capacitor_block_empty>)
   .duration(2000).EUt(130880).buildAndRegister();
-*/
+
 // capacitor_block
 canner.recipeBuilder()
   .circuit(11)
   .inputs(<aunis:capacitor_block_empty>)
   .fluidInputs(<liquid:silicon_molten_red> * 6440)
  	.outputs(<aunis:capacitor_block> * 1)
-  .duration(1000).EUt(1290).buildAndRegister();
-/*
+  .duration(1000).EUt(12290).buildAndRegister();
+
 // crystal_control_dhd
 star_forge.recipeBuilder()
   .circuit(12)
   .inputs(<aunis:crystal_red> * 4, <ore:batteryLuv> * 2)
 	.fluidInputs(<liquid:silicon_molten_red> * 144)
   .outputs(<aunis:crystal_control_dhd>)
-  .duration(2000).EUt(10880).buildAndRegister();
+  .duration(2000).EUt(130880).buildAndRegister();
 
 // circuit_control_crystal>
 star_forge.recipeBuilder()
@@ -212,4 +211,3 @@ star_forge.recipeBuilder()
   .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
   .outputs(<aunis:beamer_block>)
   .duration(200).EUt(282000).buildAndRegister();
-*/

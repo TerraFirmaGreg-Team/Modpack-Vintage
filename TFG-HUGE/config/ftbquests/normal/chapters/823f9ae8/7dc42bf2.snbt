@@ -1,0 +1,14 @@
+{
+	x: -3.5d,
+	y: -13.25d,
+	dependencies: [
+		"d2850e1d"
+	],
+	tasks: [{
+		uid: "7a722c73",
+		type: "item",
+		items: [{
+			item: "workbenchplus:workbenchplus"
+		}]
+	}]
+}

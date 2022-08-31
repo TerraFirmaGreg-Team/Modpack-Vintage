@@ -1,19 +1,45 @@
 # ContentTweaker
-item.contenttweaker.rocketbody_tier2.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier3.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier4.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier5.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier6.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier7.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier8.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier9.name=Прочный ракетный корпус
-item.contenttweaker.rocketbody_tier10.name=Прочный ракетный корпус
+item.contenttweaker.rocketbody_tier1.name=Прочный ракетный корпус T1
+item.contenttweaker.rocketbody_tier2.name=Прочный ракетный корпус T2
+item.contenttweaker.rocketbody_tier3.name=Прочный ракетный корпус T3
+item.contenttweaker.rocketbody_tier4.name=Прочный ракетный корпус T4
+item.contenttweaker.rocketbody_tier5.name=Прочный ракетный корпус T5
+item.contenttweaker.rocketbody_tier6.name=Прочный ракетный корпус T6
+item.contenttweaker.rocketbody_tier7.name=Прочный ракетный корпус T7
+item.contenttweaker.rocketbody_tier8.name=Прочный ракетный корпус T8
+item.contenttweaker.rocketbody_tier9.name=Прочный ракетный корпус T9
+item.contenttweaker.rocketbody_tier10.name=Прочный ракетный корпус T10
+item.contenttweaker.rocketbody_tier11.name=Прочный ракетный корпус T11
 
-item.contenttweaker.lander_tier1.name=Посадочный модуль
-item.contenttweaker.lander_tier2.name=Посадочный модуль
-item.contenttweaker.lander_tier3.name=Посадочный модуль
+item.contenttweaker.lander_tier1.name=Посадочный модуль T1
+item.contenttweaker.lander_tier2.name=Посадочный модуль T2
+item.contenttweaker.lander_tier3.name=Посадочный модуль T3
 
+item.contenttweaker.alloyingot_tier1.name=Прочный сплав корпуса ракеты T1
+item.contenttweaker.alloyingot_tier2.name=Прочный сплав корпуса ракеты T2
+item.contenttweaker.alloyingot_tier3.name=Прочный сплав корпуса ракеты T3
+item.contenttweaker.alloyingot_tier4.name=Прочный сплав корпуса ракеты T4
+item.contenttweaker.alloyingot_tier5.name=Прочный сплав корпуса ракеты T5
+item.contenttweaker.alloyingot_tier6.name=Прочный сплав корпуса ракеты T6
+item.contenttweaker.alloyingot_tier7.name=Прочный сплав корпуса ракеты T7
+item.contenttweaker.alloyingot_tier8.name=Прочный сплав корпуса ракеты T8
+item.contenttweaker.alloyingot_tier9.name=Прочный сплав корпуса ракеты T9
+item.contenttweaker.alloyingot_tier10.name=Прочный сплав корпуса ракеты T10
+item.contenttweaker.alloyingot_tier11.name=Прочный сплав корпуса ракеты T11
 
+item.contenttweaker.rocketcontrolcomputer_tier1.name=Контролер комьютера ракеты T1
+item.contenttweaker.rocketcontrolcomputer_tier2.name=Контролер комьютера ракеты T2
+item.contenttweaker.rocketcontrolcomputer_tier3.name=Контролер комьютера ракеты T3
+item.contenttweaker.rocketcontrolcomputer_tier4.name=Контролер комьютера ракеты T4
+item.contenttweaker.rocketcontrolcomputer_tier5.name=Контролер комьютера ракеты T5
+item.contenttweaker.rocketcontrolcomputer_tier6.name=Контролер комьютера ракеты T6
+item.contenttweaker.rocketcontrolcomputer_tier7.name=Контролер комьютера ракеты T7
+item.contenttweaker.rocketcontrolcomputer_tier8.name=Контролер комьютера ракеты T8
+item.contenttweaker.rocketcontrolcomputer_tier9.name=Контролер комьютера ракеты T9
+item.contenttweaker.rocketcontrolcomputer_tier10.name=Контролер комьютера ракеты T10
+item.contenttweaker.rocketcontrolcomputer_tier11.name=Контролер комьютера ракеты T11
+
+item.contenttweaker.schematic_blank.name=Пустой бланк схемы
 
 item.contenttweaker.shape_mold_knife.name=Форма (Оголовье ножа)
 item.contenttweaker.shape_extruder_sense.name=Форма экструдера (Оголовье косы)

@@ -11,6 +11,8 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_tool_head_saw 1 25"
-		}]
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

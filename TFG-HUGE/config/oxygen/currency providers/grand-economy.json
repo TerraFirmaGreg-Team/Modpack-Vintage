@@ -1,0 +1,7 @@
+{
+  "version": "0.11.1:beta:0",
+  "server": {
+    "provider_index": 0,
+    "force_balance_sync": true
+  }
+}
