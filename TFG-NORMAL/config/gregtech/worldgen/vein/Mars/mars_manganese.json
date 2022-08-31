@@ -2,7 +2,7 @@
     "name": "Mars Manganese Vein",
     "weight": 40,
     "density": 0.4,
-    "max_height": 90,
+    "max_height": 60,
     "min_height": 5,
     "generation_predicate":["block:galacticraftplanets:mars:9"],
     "dimension_filter": [
@@ -22,7 +22,7 @@
           "primary": "ore:pyrolusite"
         },
         {
-          "secondary": "ore:grossular"
+          "secondary": "ore:desh"
         },
         {
           "between": "ore:grossular"
