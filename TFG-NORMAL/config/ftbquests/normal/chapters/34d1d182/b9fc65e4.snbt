@@ -1,10 +1,10 @@
 {
 	title: "{tfg.quests.space.tier2termalarmor.title}",
-	x: 4.15d,
-	y: 10.55d,
+	x: 6.2d,
+	y: 10.8d,
 	description: "{tfg.quests.space.tier2termalarmor.subtitle}",
 	dependencies: [
-		"79111811"
+		"e4e7bcbf"
 	],
 	size: 0.8d,
 	tasks: [{

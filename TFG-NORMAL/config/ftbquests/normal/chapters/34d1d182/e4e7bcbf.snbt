@@ -4,7 +4,7 @@
 	y: 10.0d,
 	shape: "octagon",
 	dependencies: [
-		"411b712c"
+		"d03e8070"
 	],
 	size: 1.5d,
 	tasks: [{

@@ -21,7 +21,6 @@
 	y: -5.5d,
 	description: "{tfg.quests.steam.steelplates.subtitle}",
 	dependencies: [
-		"08d78f26",
 		"8fdd423e"
 	],
 	tasks: [{

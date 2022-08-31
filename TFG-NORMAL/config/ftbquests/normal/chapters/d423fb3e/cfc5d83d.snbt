@@ -21,7 +21,6 @@
 	y: -5.5d,
 	description: "{tfg.quests.steam.wroughtironplates.subtitle}",
 	dependencies: [
-		"d2850e1d",
 		"8fdd423e"
 	],
 	tasks: [{
