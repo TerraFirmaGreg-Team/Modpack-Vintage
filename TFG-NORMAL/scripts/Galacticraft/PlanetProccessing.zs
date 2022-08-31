@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack;
-
 import mods.gregtech.recipe.Utils;
 
 // --- Добавление рецептов
@@ -372,6 +371,12 @@ centrifuge.recipeBuilder()
    .chancedOutput(<metaitem:dustRareEarth>, 1500, 1500)
    .fluidOutputs(<liquid:water> * 50)
    .duration(150).EUt(1750).buildAndRegister();
+
+// Дэш блок
+compressor.recipeBuilder()
+   .inputs([<ore:ingotDesh> * 9])
+   .outputs([<galacticraftplanets:mars:8>])
+   .duration(300).EUt(480).buildAndRegister();
 
 // --- Меркурий
 
