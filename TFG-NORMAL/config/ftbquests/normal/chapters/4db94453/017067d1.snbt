@@ -1,14 +1,14 @@
 {
-	x: 1.5d,
-	y: 7.0d,
+	x: -4.5d,
+	y: 8.75d,
 	dependencies: [
 		"7daba4fb"
 	],
 	tasks: [{
-		uid: "a06a04fb",
+		uid: "529969a0",
 		type: "item",
 		items: [{
-			item: "ae2fc:fluid_pattern_encoder"
+			item: "minecraft:stone"
 		}]
 	}]
 }
