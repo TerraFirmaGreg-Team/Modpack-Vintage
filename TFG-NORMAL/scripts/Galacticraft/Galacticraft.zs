@@ -774,8 +774,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
    .circuit(3)
    .inputs([
-      <galacticraftplanets:item_basic_mars:3>//<ore:plateDenseDesh> * 4
-      ])
+      <galacticraftplanets:item_basic_mars:3>,
+      <ore:plateDenseDesh> * 4])
    .fluidInputs([<liquid:platinum> * 72])
    .outputs(<contenttweaker:alloyingot_tier3>)
    .duration(600).EUt(1920).buildAndRegister();
