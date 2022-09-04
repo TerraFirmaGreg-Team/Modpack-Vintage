@@ -81,7 +81,7 @@ recipes.addShaped("tfg/littletiles/grabber", <littletiles:grabber>, [
 
 // Little Exporter
 recipes.addShaped("tfg/littletiles/premade/exporter", <littletiles:premade>.withTag({structure: {id: "exporter"}}), [
-	[<ore:lumber>, <minecraft:iron_bars>, <ore:lumber>],
+	[<ore:lumber>, <galacticraftcore:grating>, <ore:lumber>],
 	[<ore:plateIronAny>, <littletiles:recipeadvanced>, <ore:plateIronAny>],
 	[<ore:plateIronAny>, <ore:wireGtSingleRedAlloy>, <ore:plateIronAny>]]);
 
