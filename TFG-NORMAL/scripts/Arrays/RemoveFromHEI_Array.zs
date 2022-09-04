@@ -36,9 +36,6 @@ JEI.removeAndHide(<enderstorage:ender_pouch>);
 // ContentTweaker
 JEI.removeAndHide(<base:wrench>);
 
-// HammerCore
-JEI.removeAndHide(<hammercore:manual>);
-
 // OpenComputers
 JEI.removeAndHide(<opencomputers:disassembler>);
 
