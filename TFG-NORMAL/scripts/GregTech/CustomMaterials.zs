@@ -93,7 +93,7 @@ MaterialBuilder(32051, "fluix").dust().fluid("fluid", false).fluidTemp(1200).col
 // Заряженный изменчивый кристал
 MaterialBuilder(32052, "charged_certus_quartz").dust().fluid("fluid", false).fluidTemp(1200).color(0xCFDAFF).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 1,<material:oxygen> * 2]).build();
 // Дэш
-MaterialBuilder(32053, "desh").dust().fluid("fluid", false).fluidTemp(1200).color(0x140000).iconSet("FLINT").ore().flags(["generate_plate", "crystallizable"]).build();
+MaterialBuilder(32053, "desh").dust().fluid("fluid", false).fluidTemp(2200).color(0x140000).iconSet("FLINT").ore().flags(["generate_plate", "generate_dense"]).build();
 
 // - Породы Земли
 
