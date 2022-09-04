@@ -764,6 +764,9 @@ for gcParachute in gcParachute {
 // Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
 
+// Desh
+<ore:oreDesh>.remove(<galacticraftplanets:mars:2>);
+
 // Silicon
 <ore:oreSilicon>.remove([
     <galacticraftplanets:venus:10>,
