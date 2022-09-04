@@ -49,6 +49,9 @@ VanillaFactory.createItem("lander_tier3").register();
 // Knife Mold
 VanillaFactory.createItem("shape_mold_knife").register();
 
+// AE Жидкостный корпус
+VanillaFactory.createItem("fluid_housing").register();
+
 // Sense Mold
 VanillaFactory.createItem("shape_extruder_sense").register();
 

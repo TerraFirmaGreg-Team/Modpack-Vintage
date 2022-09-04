@@ -887,21 +887,21 @@ packer.recipeBuilder()
 // 1k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <contenttweaker:fluid_housing>,
     <appliedenergistics2:material:54>])
   .outputs([<appliedenergistics2:fluid_storage_cell_1k>])
   .duration(10).EUt(7).buildAndRegister();
 packer.recipeBuilder()
     .inputs([<appliedenergistics2:fluid_storage_cell_1k>])
     .outputs([
-        <aeadditions:storage.casing:1>,
+        <contenttweaker:fluid_housing>,
         <appliedenergistics2:material:54>])
     .duration(10).EUt(7).buildAndRegister();
 
 // 4k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <contenttweaker:fluid_housing>,
     <appliedenergistics2:material:55>])
   .outputs([<appliedenergistics2:fluid_storage_cell_4k>])
   .property("cleanroom", "cleanroom")
@@ -909,14 +909,14 @@ packer.recipeBuilder()
 packer.recipeBuilder()
     .inputs([<appliedenergistics2:fluid_storage_cell_4k>])
     .outputs([
-        <aeadditions:storage.casing:1>,
+        <contenttweaker:fluid_housing>,
         <appliedenergistics2:material:55>])
     .duration(10).EUt(7).buildAndRegister();
 
 // 16k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <contenttweaker:fluid_housing>,
     <appliedenergistics2:material:56>])
   .outputs([<appliedenergistics2:fluid_storage_cell_16k>])
   .property("cleanroom", "cleanroom")
@@ -924,14 +924,14 @@ packer.recipeBuilder()
 packer.recipeBuilder()
     .inputs([<appliedenergistics2:fluid_storage_cell_16k>])
     .outputs([
-        <aeadditions:storage.casing:1>,
+        <contenttweaker:fluid_housing>,
         <appliedenergistics2:material:56>])
     .duration(10).EUt(7).buildAndRegister();
 
 // 64k Fluid Cell
 packer.recipeBuilder()
   .inputs([
-    <aeadditions:storage.casing:1>,
+    <contenttweaker:fluid_housing>,
     <appliedenergistics2:material:57>])
   .outputs([<appliedenergistics2:fluid_storage_cell_64k>])
   .property("cleanroom", "cleanroom")
@@ -939,7 +939,7 @@ packer.recipeBuilder()
 packer.recipeBuilder()
     .inputs([<appliedenergistics2:fluid_storage_cell_64k>])
     .outputs([
-        <aeadditions:storage.casing:1>,
+        <contenttweaker:fluid_housing>,
         <appliedenergistics2:material:57>])
     .duration(10).EUt(7).buildAndRegister();
 
@@ -1288,7 +1288,7 @@ assembler.recipeBuilder()
 
 // Жидкостная шина импорта
 assembler.recipeBuilder()
-  .circuit(2)
+  .circuit(20)
   .inputs([
     <ore:plateIronAny>,
     <appliedenergistics2:material:44>,
@@ -1843,15 +1843,11 @@ extractor.findRecipe(30, [<metaitem:blockCertusQuartz>], null).remove();
 extractor.recipeBuilder()
     .inputs([<metaitem:blockCertusQuartz>])
     .fluidOutputs([<liquid:certus_quartz> * 576])
-    .duration(80)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(80).EUt(30).buildAndRegister();
 extractor.recipeBuilder()
     .inputs([<ore:crystalPureCertusQuartz>])
     .fluidOutputs([<liquid:certus_quartz> * 72])
-    .duration(20)
-    .EUt(30)
-    .buildAndRegister();
+    .duration(20).EUt(30).buildAndRegister();
 
 // Charged Certus Quartz Crystal
 electrolyzer.recipeBuilder()
@@ -1863,6 +1859,4 @@ electrolyzer.recipeBuilder()
 extractor.recipeBuilder()
     .inputs([<appliedenergistics2:material:1>])
     .fluidOutputs([<liquid:charged_certus_quartz> * 144])
-    .duration(20)
-    .EUt(7)
-    .buildAndRegister();
+    .duration(20).EUt(7).buildAndRegister();
