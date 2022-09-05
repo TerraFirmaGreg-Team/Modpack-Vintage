@@ -38,8 +38,7 @@
                               F4_Tornado= 2   -> 4
                               F5_Tornado= 1   -> 2
 * Уменьшена скорость роста травы, 0.2 -> 0.08
-* Смен мод сортировки.
-* Смене мод на скины.
+* Сменен мод сортировки.
 ### Обновление модов
 * CharsetCrafting
 * CraftTweaker2
@@ -47,7 +46,6 @@
 * OpenComputers
 ### Новые моды
 * Bogosorter
-* DynamicSkin
 ### Удаленные моды
 * BetterFPS
 * WorkbenchPlus
@@ -55,7 +53,6 @@
 * Korgelin
 * HammerCore
 * InventoryTweaks
-* CustomSkinLoader
 
 ## Version R4.1.1 - 31.08.2022
 #### [Normal, Huge]

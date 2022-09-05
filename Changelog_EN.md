@@ -38,8 +38,7 @@
                               F4_Tornado= 2 -> 4
                               F5_Tornado= 1 -> 2
 * Reduced grass growth rate, 0.2 -> 0.08
-* Change sorting mod.
-* Changing mods to skins.
+* Changing sorting mod.
 ### Update mods
 * Charset Crafting
 * CraftTweaker2
@@ -47,7 +46,6 @@
 * OpenComputers
 ### New mods
 * Bogosorter
-* DynamicSkin
 ### Removed mods
 * Better FPS
 * Workbench Plus
@@ -55,7 +53,6 @@
 * Korgelin
 * HammerCore
 * InventoryTweaks
-* CustomSkinLoader
 
 ## Version R4.1.0 - Expected ?
 #### [Normal, Huge]
