@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.steam.tools.title}",
-	icon: "hammercore:manual",
+	icon: "architecturecraft:hammer",
 	x: -15.0d,
 	y: 0.5d,
 	description: "{tfg.quests.steam.tools.subtitle}",

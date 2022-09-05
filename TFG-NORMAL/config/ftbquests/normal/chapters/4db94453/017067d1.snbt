@@ -8,7 +8,7 @@
 		uid: "529969a0",
 		type: "item",
 		items: [{
-			item: "minecraft:stone"
+			item: "contenttweaker:fluid_housing"
 		}]
 	}]
 }
