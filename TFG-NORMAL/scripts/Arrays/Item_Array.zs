@@ -180,7 +180,7 @@ global LargeItems as IItemStack[] = [
 	<gregtech:steam_casing:*>,
 	<gregtech:multiblock_casing:*>,
 	<gregtech:transparent_casing:*>,
-	<gregtech:wire_coi:*>,
+	<gregtech:wire_coil:*>,
 	<gregtech:fusion_casing:*>,
 	<gregtech:warning_sign:*>,
 	<gregtech:warning_sign_1:*>,
