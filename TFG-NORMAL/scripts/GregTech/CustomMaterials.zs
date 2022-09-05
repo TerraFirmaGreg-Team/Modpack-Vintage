@@ -72,6 +72,11 @@ import mods.gregtech.material.Material;
 <material:netherrack>.addFlags("no_unification");
 <material:wheat>.addFlags("no_unification");
 <material:electrotine>.addFlags("generate_plate");
+<material:ruridit>.addFlags( "generate_bolt_screw");
+<material:europium>.addFlags( "generate_bolt_screw");
+<material:americium>.addFlags("generate_dense");
+<material:naquadria>.addFlags("generate_dense");
+
 
 // --- Исправление прочности и скорости копки для большего соответствия TFC
 for material in MaterialRegistry.getAllMaterials() {
@@ -85,15 +90,19 @@ for material in MaterialRegistry.getAllMaterials() {
 // - Без категории
 
 // Сухой лед
-MaterialBuilder(32050, "dry_ice").fluid("liquid", false).dust().color(0xB4CAD6).build();
+MaterialBuilder(32050, "dry_ice").dust().fluid("liquid", false).fluidTemp(293).color(0xB4CAD6).build();
 
 // Изменчивый кристал
 MaterialBuilder(32051, "fluix").dust().fluid("fluid", false).fluidTemp(1200).color(0x846994).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 2, <material:oxygen> * 4, <material:redstone> * 1]).build();
 
 // Заряженный изменчивый кристал
 MaterialBuilder(32052, "charged_certus_quartz").dust().fluid("fluid", false).fluidTemp(1200).color(0xCFDAFF).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 1,<material:oxygen> * 2]).build();
+
 // Дэш
-MaterialBuilder(32053, "desh").dust().fluid("fluid", false).fluidTemp(2200).color(0x140000).iconSet("FLINT").ore().flags(["generate_plate", "generate_dense"]).build();
+MaterialBuilder(32053, "desh").dust().fluid("fluid", false).fluidTemp(2200).color(0x2b2d31).iconSet("FLINT").ore().flags(["generate_plate", "generate_dense"]).build();
+
+// Плотный лед
+MaterialBuilder(32054, "dense_ice").dust().fluid("fluid", false).fluidTemp(0).color(0x52688d).flags(["generate_plate"]).build();
 
 // - Породы Земли
 
