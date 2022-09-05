@@ -27,7 +27,6 @@ item.contenttweaker.alloyingot_tier9.name=Durable Alloy Rocket Body T9
 item.contenttweaker.alloyingot_tier10.name=Durable Alloy Rocket Body T10
 item.contenttweaker.alloyingot_tier11.name=Durable Alloy Rocket Body T11
 
-
 item.contenttweaker.rocketcontrolcomputer_tier1.name=Rocket computer controller T1
 item.contenttweaker.rocketcontrolcomputer_tier2.name=Rocket computer controller T2
 item.contenttweaker.rocketcontrolcomputer_tier3.name=Rocket computer controller T3
@@ -45,3 +44,4 @@ item.contenttweaker.schematic_blank.name=Blank chart template
 item.contenttweaker.shape_mold_knife.name=Shape (Knife Head)
 item.contenttweaker.shape_extruder_sense.name=Extruder Shape (Sense Head)
 item.contenttweaker.wooden_bucket_with_salt.name=Wooden Bucket With Salt
+item.contenttweaker.fluid_housing.name=ME Fluid Storage Housing
