@@ -494,6 +494,23 @@ arc_furnace.recipeBuilder()
     ])
     .duration(56).EUt(30).buildAndRegister();
 
+// Recycle - Fluid Storage Housing
+macerator.recipeBuilder()
+    .inputs([<contenttweaker:fluid_housing>])
+    .outputs([
+        <metaitem:dustStainlessSteel> * 2,
+        <metaitem:dustTinyStainlessSteel> * 2
+    ])
+    .duration(100).EUt(16).buildAndRegister();
+arc_furnace.recipeBuilder()
+    .inputs([<contenttweaker:fluid_housing>])
+    .fluidInputs([<liquid:oxygen> * 56])
+    .outputs([
+        <metaitem:ingotStainlessSteel> * 2,
+        <metaitem:nuggetStainlessSteel> * 2
+    ])
+    .duration(56).EUt(30).buildAndRegister();
+
 // Inscriber Silicon Press
 laser_engraver.recipeBuilder()
 	.inputs(<ore:plateIron>)
@@ -822,6 +839,12 @@ recipes.addShaped("tfg/ae2/me_storage_housing", <appliedenergistics2:material:39
   [<appliedenergistics2:quartz_glass>, <ore:plateSteel>, <appliedenergistics2:quartz_glass>],
   [<ore:wireFineRedAlloy>, <ore:circuitLv>, <ore:wireFineRedAlloy>],
   [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
+
+// ME Fluid Storage Housing
+recipes.addShaped("tfg/ae2/me_fluid_storage_housing", <contenttweaker:fluid_housing>, [
+  [<appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>],
+  [<ore:wireFineRedAlloy>, <ore:circuitLv>, <ore:wireFineRedAlloy>],
+  [<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>]]);
 
 // 1k Storage Cell
 packer.recipeBuilder()
