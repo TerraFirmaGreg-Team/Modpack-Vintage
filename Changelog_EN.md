@@ -1,4 +1,61 @@
 # Changelog
+## Version R4.1.2 - 09/05/2022
+#### [Normal, Huge]
+### Modpack fixes
+* Recipe for protected ProjectRed lamps now uses GC mesh.
+* The crafting of Little Exporter uses the GC mesh.
+* Entry-level fluid cells now use their own case.
+* Changed the color of AE2 cells to quickly distinguish them between subject and liquid.
+* Added Flux and Graphite recipe to crusher.
+* Fixed OptiFine download button.
+* Reduced the chance of trails appearing, disabled the ability to break crops.
+                    "Grass -> Dirt" = 30.0 -> 5.0
+                    "Dirt -> Path" = 10.0 -> 7.0
+                    "Path -> Gravel"= 2.0 -> 0.0
+* Enabled the generation of meteorites on the moon, again.
+* When you die on the planet, you are reborn there, so now if you sleep in the creochamber, you will be reborn in it.
+* Added a recipe for a regular fluid body and its disassembly.
+* Fixed a bug in the recipes of liquid components for cells, high level.
+* Increased Sequoia Sapling drop rate 15 -> 35.
+* Added recipes for missiles and its components T4-T6.
+* Added weight and size for most GT items and missiles.
+* Craft mixes for Stargate, requires 350M to start a fusion reactor.
+* Added a material tree for dense ice that can be found on asteroids.
+* Added craft block UV voltage controller.
+* Included loading chunks, ME controller.
+* Increased the chance of tornadoes and cyclones spawning:
+                              C0_Cyclone= 15 -> 20
+                              C1_Cyclone= 7 -> 14
+                              C2_Cyclone= 4 -> 8
+                              C3_Cyclone= 3 -> 6
+                              C4_Cyclone= 2 -> 4
+                              C5_Cyclone= 1 -> 3
+
+                              F0_Tornado= 6 -> 15
+                              F1_Tornado= 5 -> 10
+                              F2_Tornado= 4 -> 8
+                              F3_Tornado= 3 -> 6
+                              F4_Tornado= 2 -> 4
+                              F5_Tornado= 1 -> 2
+* Reduced grass growth rate, 0.2 -> 0.08
+* Change sorting mod.
+* Changing mods to skins.
+### Update mods
+* Charset Crafting
+* CraftTweaker2
+* MouseTweaks
+* OpenComputers
+### New mods
+* Bogosorter
+* DynamicSkin
+### Removed mods
+* Better FPS
+* Workbench Plus
+* QuickStore
+* Korgelin
+* HammerCore
+* InventoryTweaks
+* CustomSkinLoader
 
 ## Version R4.1.0 - Expected ?
 #### [Normal, Huge]
