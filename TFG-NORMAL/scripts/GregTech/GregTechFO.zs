@@ -376,7 +376,6 @@ mixer.findRecipe(24, [<metaitem:food.meat_rotten>, <minecraft:red_mushroom:0>, <
 forge_hammer.findRecipe(60, [<metaitem:component.dough>], null).remove();
 
 // Dough
-mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaitem:circuit.integrated>.withTag({Configuration: 0})], [<liquid:water> * 1000]).remove();
 mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaitem:dustTinySodaAsh>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:water> * 1000]).remove();
 
 // Raw Olive and Mushroom Pizza
