@@ -470,7 +470,7 @@ for i, Activated_Fixture_Lamps_Array in Activated_Fixture_Lamps_Array {
 for i, Deactivated_Fallout_Lamps_Array in Deactivated_Fallout_Lamps_Array {
     <ore:lampFalloutDeactivated>.add(Deactivated_Fallout_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 6, <ore:plateIron> * 2, <minecraft:iron_bars> * 6, Illuminars_Array[i] * 2)
+        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 6, <ore:plateIron> * 2, <galacticraftcore:grating> * 6, Illuminars_Array[i] * 2)
         .circuit(20)
         .outputs(Deactivated_Fallout_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -490,7 +490,7 @@ for i, Activated_Fallout_Lamps_Array in Activated_Fallout_Lamps_Array {
 for i, Deactivated_Cage_Lamps_Array in Deactivated_Cage_Lamps_Array {
     <ore:lampCageDeactivated>.add(Deactivated_Cage_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 2, <minecraft:iron_bars> * 4, Illuminars_Array[i])
+        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 2, <galacticraftcore:grating> * 4, Illuminars_Array[i])
         .circuit(22)
         .outputs(Deactivated_Cage_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();

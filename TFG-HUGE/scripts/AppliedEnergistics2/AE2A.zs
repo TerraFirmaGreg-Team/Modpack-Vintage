@@ -9,7 +9,7 @@ recipes.removeByMod("aeadditions");
 
 // Fluid Storage Housing
 assembler.recipeBuilder()
-	.inputs([<ore:plateCertusQuartz> * 2, <ore:gemQuartzite> * 2, <ore:plateStainlessSteel> * 4, <ore:screwStainlessSteel> * 2])
+	.inputs([<contenttweaker:fluid_housing> * 2, <ore:gemQuartzite> * 2, <ore:plateStainlessSteel> * 4, <ore:screwStainlessSteel> * 2])
 	.outputs(<aeadditions:storage.casing:1>)
 	.duration(20).EUt(480).buildAndRegister();
 
@@ -102,7 +102,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([<ore:circuitZpm> * 4, <ore:plateNaquadahAlloy> * 4, <ore:dustNetherQuartz> * 16, <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:8>])
+  .outputs([<aeadditions:storage.component:4>])
   .duration(200).EUt(122880).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>, <ore:circuitZpm> * 4, <appliedenergistics2:material:57> * 4])
@@ -119,19 +119,19 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:24>,<ore:circuitZpm> * 4,<aeadditions:storage.component:8> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:6>])
+  .outputs([<aeadditions:storage.component:5>])
   .duration(400).EUt(122880).buildAndRegister();
 
 // 4096k Fluid Component
 assembler.recipeBuilder()
   .inputs([<ore:circuitUv> * 4, <ore:plateDarmstadtium> * 4, <ore:dustNetherQuartz> * 32, <appliedenergistics2:material:23>])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:10>])
+  .outputs([<aeadditions:storage.component:6>])
   .duration(200).EUt(491520).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([<appliedenergistics2:material:23>, <ore:circuitUv> * 4, <aeadditions:storage.component:9> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
-  .outputs([<aeadditions:storage.component:10>])
+  .outputs([<aeadditions:storage.component:6>])
   .duration(400).EUt(491520).buildAndRegister();
 
 // 256k Storage Cell

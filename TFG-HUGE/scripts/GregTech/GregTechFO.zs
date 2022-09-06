@@ -49,56 +49,6 @@ val RemoveItemRecipesByName = [
     "gregtechfoodoption:gtfo_hand_zest3"
 ] as string[];
 
-val TFC_Raw_Meat as IItemStack[] = [
-    <tfc:food/beef>,
-    <tfc:food/pork>,
-    <tfc:food/chicken>,
-    <tfc:food/mutton>,
-    <tfc:food/fish>,
-    <tfc:food/bear>,
-    <tfc:food/calamari>,
-    <tfc:food/horse_meat>,
-    <tfc:food/pheasant>,
-    <tfc:food/venison>,
-    <tfc:food/wolf>,
-    <tfc:food/rabbit>,
-    <tfc:food/mongoose>,
-    <tfc:food/gran_feline>,
-    <tfc:food/camelidae>,
-    <tfcflorae:food/raw_eel>,
-    <tfcflorae:food/raw_crab>,
-    <tfcflorae:food/raw_clam>,
-    <tfcflorae:food/raw_scallop>,
-    <tfcflorae:food/raw_starfish>,
-    <tfcflorae:food/raw_snail>,
-    <tfcflorae:food/raw_worm>
-];
-
-val TFC_Cooked_Meat as IItemStack[] = [
-    <tfc:food/cooked_beef>,
-    <tfc:food/cooked_pork>,
-    <tfc:food/cooked_chicken>,
-    <tfc:food/cooked_mutton>,
-    <tfc:food/cooked_fish>,
-    <tfc:food/cooked_bear>,
-    <tfc:food/cooked_calamari>,
-    <tfc:food/cooked_horse_meat>,
-    <tfc:food/cooked_pheasant>,
-    <tfc:food/cooked_venison>,
-    <tfc:food/cooked_wolf>,
-    <tfc:food/cooked_rabbit>,
-    <tfc:food/cooked_mongoose>,
-    <tfc:food/cooked_gran_feline>,
-    <tfc:food/cooked_camelidae>,
-    <tfcflorae:food/cooked_eel>,
-    <tfcflorae:food/cooked_crab>,
-    <tfcflorae:food/cooked_clam>,
-    <tfcflorae:food/cooked_scallop>,
-    <tfcflorae:food/cooked_starfish>,
-    <tfcflorae:food/cooked_snail>,
-    <tfcflorae:food/cooked_worm>
-];
-
 val TFC_Flour as IItemStack[] = [
     <tfcflorae:food/fonio_flour>,
     <tfcflorae:food/buckwheat_flour>,
@@ -645,27 +595,57 @@ fermenter.recipeBuilder()
 
 // Cooked Meat
 for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
+    baking_oven.recipeBuilder()
+        .inputs([TFC_Raw_Meat[i], <ore:gemCharcoal> * 2])
+        .outputs(TFC_Cooked_Meat)
+        .property("temperature", 500)
+        .duration(400).EUt(1).buildAndRegister();
+
+    baking_oven.recipeBuilder()
+        .inputs([TFC_Raw_Meat[i], <ore:gemCoal> * 2])
+        .outputs(TFC_Cooked_Meat)
+        .property("temperature", 500)
+        .duration(400).EUt(1).buildAndRegister();
+
+    baking_oven.recipeBuilder()
+        .inputs([TFC_Raw_Meat[i], <ore:gemCoke>])
+        .outputs(TFC_Cooked_Meat)
+        .property("temperature", 500)
+        .duration(400).EUt(1).buildAndRegister();
+
+    // electric_baking_oven.recipeBuilder()
+    //     .inputs([TFC_Raw_Meat[i]])
+    //     .outputs(TFC_Cooked_Meat)
+    //     .property("temperature", 400)
+    //     .duration(225).EUt(1).buildAndRegister();
+}
+
+// Bread
+for i, TFC_Breads in TFC_Breads {
     
     baking_oven.recipeBuilder()
-    	.inputs([TFC_Raw_Meat[i], <ore:gemCharcoal> * 2])
-    	.outputs(TFC_Cooked_Meat)
+    	.inputs([TFC_Doughs[i], <ore:gemCharcoal> * 2])
+    	.outputs(TFC_Breads)
+        .property("temperature", 500)
     	.duration(400).EUt(1).buildAndRegister();
 
     baking_oven.recipeBuilder()
-    	.inputs([TFC_Raw_Meat[i], <ore:gemCoal> * 2])
-    	.outputs(TFC_Cooked_Meat)
+    	.inputs([TFC_Doughs[i], <ore:gemCoal> * 2])
+    	.outputs(TFC_Breads)
+        .property("temperature", 500)
     	.duration(400).EUt(1).buildAndRegister();
     
     baking_oven.recipeBuilder()
-    	.inputs([TFC_Raw_Meat[i], <metaitem:gemCoke>])
-    	.outputs(TFC_Cooked_Meat)
+    	.inputs([TFC_Doughs[i], <metaitem:gemCoke>])
+    	.outputs(TFC_Breads)
+        .property("temperature", 500)
     	.duration(400).EUt(1).buildAndRegister();
     
-    electric_baking_oven.recipeBuilder()
-    	.inputs([TFC_Raw_Meat[i]])
-    	.outputs(TFC_Cooked_Meat)
-        //.property("temperature", 500)
-    	.duration(225).EUt(1).buildAndRegister();
+    // electric_baking_oven.recipeBuilder()
+    // 	.inputs([TFC_Doughs[i]])
+    // 	.outputs(TFC_Breads)
+    //     .property("temperature", 500)
+    // 	.duration(225).EUt(1).buildAndRegister();
 }
 
 // Uncooked Bacon
@@ -738,31 +718,6 @@ slicer.recipeBuilder()
     .notConsumable(<metaitem:config.slicer_blade.flat>)
     .outputs(<metaitem:component.breads>)
     .duration(30).EUt(18).buildAndRegister();
-
-// Bread
-for i, TFC_Breads in TFC_Breads {
-    
-    baking_oven.recipeBuilder()
-    	.inputs([TFC_Doughs[i], <ore:gemCharcoal> * 2])
-    	.outputs(TFC_Breads)
-    	.duration(400).EUt(1).buildAndRegister();
-
-    baking_oven.recipeBuilder()
-    	.inputs([TFC_Doughs[i], <ore:gemCoal> * 2])
-    	.outputs(TFC_Breads)
-    	.duration(400).EUt(1).buildAndRegister();
-    
-    baking_oven.recipeBuilder()
-    	.inputs([TFC_Doughs[i], <metaitem:gemCoke>])
-    	.outputs(TFC_Breads)
-    	.duration(400).EUt(1).buildAndRegister();
-    
-    electric_baking_oven.recipeBuilder()
-    	.inputs([TFC_Doughs[i]])
-    	.outputs(TFC_Breads)
-        //.property("temperature", 500)
-    	.duration(225).EUt(1).buildAndRegister();
-}
 
 // Carrot Slice
 recipes.addShapeless("tfg/gtfo/carrot_slice", <metaitem:component.carrot_slice> * 4, [<tfc:food/carrot>, <ore:gtce.tool.knife>]);

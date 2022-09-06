@@ -1,6 +1,6 @@
 {
 	x: -4.5d,
-	y: 8.0d,
+	y: 7.25d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mestoragehousing.subtitle}",
 	dependencies: [

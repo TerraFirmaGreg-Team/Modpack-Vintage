@@ -915,13 +915,12 @@ for i, TFC_Trapdoors in TFC_Trapdoors {
 
 // Железные люки
 for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
-    assembler.recipeBuilder()
-    	.inputs([GT_TFC_Plates[i]])
-		.circuit(2)
-    	.outputs(TFC_Metal_Trapdoors)
-    	.duration(205).EUt(8).buildAndRegister();
+	assembler.recipeBuilder()
+		.inputs([GT_TFC_Plates[i]])
+		.circuit(22)
+		.outputs(TFC_Metal_Trapdoors)
+		.duration(205).EUt(8).buildAndRegister();	
 }
-
 // Книжные полки
 for i, TFC_Bookshelfs in TFC_Bookshelfs {
     assembler.recipeBuilder()
@@ -1563,8 +1562,20 @@ assembler.recipeBuilder()
 
 // Kaolinite Dust
 macerator.recipeBuilder()
-	.inputs(<metaitem:dustMica>)
+	.inputs(<ore:dustMica>)
 	.outputs(<tfc:powder/kaolinite> * 6)
+	.duration(100).EUt(2).buildAndRegister();
+
+// Flux Dust
+macerator.recipeBuilder()
+	.inputs(<ore:rockFlux>)
+	.outputs(<tfc:powder/flux> * 6)
+	.duration(100).EUt(2).buildAndRegister();
+
+// Graphite Dust
+macerator.recipeBuilder()
+	.inputs(<ore:dustGraphite>)
+	.outputs(<tfc:powder/graphite> * 6)
 	.duration(100).EUt(2).buildAndRegister();
 
 // Alabaster -> Colored Alabaster

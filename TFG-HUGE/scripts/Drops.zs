@@ -33,9 +33,9 @@ Dropt.list("tfg/dropt/sequoia").add(Dropt.rule()
   .matchBlocks(["tfc:wood/leaves/sequoia"])
   .replaceStrategy("ADD")
   .addDrop(Dropt.drop()
-      .selector(Dropt.weight(85))) // шанс, что ничего не выпадет
+      .selector(Dropt.weight(65))) // шанс, что ничего не выпадет
   .addDrop(Dropt.drop()
-      .selector(Dropt.weight(15))
+      .selector(Dropt.weight(35))
       .items([<tfc:wood/sapling/sequoia>])));
 
 // Морской лед

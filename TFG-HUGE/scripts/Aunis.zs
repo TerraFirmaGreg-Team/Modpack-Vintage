@@ -123,29 +123,29 @@ fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:americium> * 32])
  	.fluidOutputs(<liquid:silicon_molten_ender> * 32)
-	.property("eu_to_start", 32000000)
-  .duration(1000).EUt(42290).buildAndRegister();
+	.property("eu_to_start", 350000000)
+  .duration(1000).EUt(420290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:glowstone> * 32])
  	.fluidOutputs(<liquid:silicon_molten_yellow> * 32)
-	.property("eu_to_start", 32000000)
-  .duration(1000).EUt(42290).buildAndRegister();
+	.property("eu_to_start", 350000000)
+  .duration(1000).EUt(420290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:blue_alloy> * 32])
  	.fluidOutputs(<liquid:silicon_molten_blue> * 32)
-	.property("eu_to_start", 32000000)
-  .duration(1000).EUt(42290).buildAndRegister();
+	.property("eu_to_start", 350000000)
+  .duration(1000).EUt(420290).buildAndRegister();
 
 fusion_reactor.recipeBuilder()
   .fluidInputs([<liquid:silicon> * 32])
 	.fluidInputs([<liquid:redstone> * 32])
  	.fluidOutputs(<liquid:silicon_molten_red> * 32)
-	.property("eu_to_start", 32000000)
-  .duration(1000).EUt(42290).buildAndRegister();
+	.property("eu_to_start", 350000000)
+  .duration(1000).EUt(420290).buildAndRegister();
 
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()

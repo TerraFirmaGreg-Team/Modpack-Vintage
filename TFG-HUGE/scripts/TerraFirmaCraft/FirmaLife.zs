@@ -269,21 +269,18 @@ mixer.recipeBuilder()
 baking_oven.recipeBuilder()
     .inputs([<firmalife:chestnut_dough>, <ore:gemCharcoal> * 2])
     .outputs(<firmalife:chestnut_bread>)
+    .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
     .inputs([<firmalife:chestnut_dough>, <ore:gemCoal> * 2])
     .outputs(<firmalife:chestnut_bread>)
+    .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
     .inputs([<firmalife:chestnut_dough>, <ore:gemCoke>])
     .outputs(<firmalife:chestnut_bread>)
+    .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
-
-electric_baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>])
-    .outputs(<firmalife:chestnut_bread>)
-    //.property("temperature", 500)
-    .duration(225).EUt(1).buildAndRegister();
 

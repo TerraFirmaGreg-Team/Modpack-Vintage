@@ -1,9 +1,9 @@
 {
 	x: -5.5d,
-	y: 9.0d,
+	y: 9.25d,
 	description: "{tfg.quests.ae2.fluidcell.subtitle}",
 	dependencies: [
-		"74286683"
+		"017067d1"
 	],
 	tasks: [{
 		uid: "db908d1c",

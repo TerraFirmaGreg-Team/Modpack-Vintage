@@ -715,7 +715,10 @@ for gcParachute in gcParachute {
     <extraplanets:kepler22b_planks:5>
 ]);
 
+// Дэш
 <ore:stickDesh>.addItems([<galacticraftplanets:item_basic_mars:1>]);
+
+<ore:blockDenseIce>.addItems([<galacticraftplanets:dense_ice>]);
 // --- Удаление
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
@@ -763,6 +766,9 @@ for gcParachute in gcParachute {
 
 // Solar ore
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
+
+// Desh
+<ore:oreDesh>.remove(<galacticraftplanets:mars:2>);
 
 // Silicon
 <ore:oreSilicon>.remove([

@@ -12,11 +12,24 @@ for item in GregtechOres {
         ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
 }
 
-// Слитки
-ItemRegistry.registerItemSize(<gregtech:meta_ingot:*>, "LARGE", "LIGHT");
+// Большие предметы
+for item in LargeItems {
+	ItemRegistry.registerItemSize(item, "LARGE", "LIGHT");
+}
 
-// Пластины
-ItemRegistry.registerItemSize(<gregtech:meta_plate:*>, "LARGE", "LIGHT");
+// Ракеты
+ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");
+
 
 // --- Регистрация брони
 ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);

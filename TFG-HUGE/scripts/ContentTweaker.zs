@@ -7,9 +7,9 @@ import mods.contenttweaker.VanillaFactory;
 VanillaFactory.createItem("rocketbody_tier1").register();
 VanillaFactory.createItem("rocketbody_tier2").register();
 VanillaFactory.createItem("rocketbody_tier3").register();
-// VanillaFactory.createItem("rocketbody_tier4").register();
-// VanillaFactory.createItem("rocketbody_tier5").register();
-// VanillaFactory.createItem("rocketbody_tier6").register();
+VanillaFactory.createItem("rocketbody_tier4").register();
+VanillaFactory.createItem("rocketbody_tier5").register();
+VanillaFactory.createItem("rocketbody_tier6").register();
 // VanillaFactory.createItem("rocketbody_tier7").register();
 // VanillaFactory.createItem("rocketbody_tier8").register();
 // VanillaFactory.createItem("rocketbody_tier9").register();
@@ -19,9 +19,9 @@ VanillaFactory.createItem("rocketbody_tier3").register();
 VanillaFactory.createItem("alloyingot_tier1").register();
 VanillaFactory.createItem("alloyingot_tier2").register();
 VanillaFactory.createItem("alloyingot_tier3").register();
-// VanillaFactory.createItem("alloyingot_tier4").register();
-// VanillaFactory.createItem("alloyingot_tier5").register();
-// VanillaFactory.createItem("alloyingot_tier6").register();
+VanillaFactory.createItem("alloyingot_tier4").register();
+VanillaFactory.createItem("alloyingot_tier5").register();
+VanillaFactory.createItem("alloyingot_tier6").register();
 // VanillaFactory.createItem("alloyingot_tier7").register();
 // VanillaFactory.createItem("alloyingot_tier8").register();
 // VanillaFactory.createItem("alloyingot_tier9").register();
@@ -31,9 +31,9 @@ VanillaFactory.createItem("alloyingot_tier3").register();
 VanillaFactory.createItem("rocketcontrolcomputer_tier1").register();
 VanillaFactory.createItem("rocketcontrolcomputer_tier2").register();
 VanillaFactory.createItem("rocketcontrolcomputer_tier3").register();
-// VanillaFactory.createItem("rocketcontrolcomputer_tier4").register();
-// VanillaFactory.createItem("rocketcontrolcomputer_tier5").register();
-// VanillaFactory.createItem("rocketcontrolcomputer_tier6").register();
+VanillaFactory.createItem("rocketcontrolcomputer_tier4").register();
+VanillaFactory.createItem("rocketcontrolcomputer_tier5").register();
+VanillaFactory.createItem("rocketcontrolcomputer_tier6").register();
 // VanillaFactory.createItem("rocketcontrolcomputer_tier7").register();
 // VanillaFactory.createItem("rocketcontrolcomputer_tier8").register();
 // VanillaFactory.createItem("rocketcontrolcomputer_tier9").register();
@@ -48,6 +48,9 @@ VanillaFactory.createItem("lander_tier3").register();
 
 // Knife Mold
 VanillaFactory.createItem("shape_mold_knife").register();
+
+// AE Жидкостный корпус
+VanillaFactory.createItem("fluid_housing").register();
 
 // Sense Mold
 VanillaFactory.createItem("shape_extruder_sense").register();

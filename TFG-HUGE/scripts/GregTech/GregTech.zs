@@ -335,6 +335,13 @@ bender.recipeBuilder()
     .circuit(13)
     .outputs(<gregtech:meta_item_1:79>)
     .duration(100).EUt(7).buildAndRegister();
+// Удалить после исправления Контролера напряжения
+recipes.remove(<metaitem:gcym:tiered_hatch.uhv>);
+recipes.addShaped("tfg/gregtech/tiered_hatch_uv", <metaitem:gcym:tiered_hatch.uv>, [
+    [<ore:plateDarmstadtium>, <ore:plateDarmstadtium>, <ore:plateDarmstadtium>],
+    [<ore:plateDarmstadtium>, <ore:circuitUhv>, <ore:plateDarmstadtium>],
+    [<ore:plateDarmstadtium>, <ore:plateDarmstadtium>, <ore:plateDarmstadtium>]]);
+
 
 // Регистрация металлов
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeCopper>, "COPPER", 144, true);
@@ -351,14 +358,12 @@ ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
 // Контроллер теплицы
-
 recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
     [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
     [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
     [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
 
-// Контроллер распилки
-
+// Контроллер пилорамы
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
     [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
