@@ -1,7 +1,5 @@
 # TerraFirmaGreg - 1.12.2 - GitHub
 
-[![Curseforge](http://cf.way2muchnoise.eu/full_557242_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg)  [![Curseforge](http://cf.way2muchnoise.eu/versions/For%20MC_557242_all.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg) <a title="Join us on Discord!" href="https://discord.gg/TZx8Cfr"></a>
-
 YouTube: https://www.youtube.com/channel/UCuDptAueJ7YoIYMGafrH-Mw
 
 Discord: https://discord.com/invite/TZx8Cfr
