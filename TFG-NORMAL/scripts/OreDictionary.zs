@@ -303,6 +303,8 @@ for item in TFC_Saws {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
+<ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
+
 // Ключи
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),

@@ -5,11 +5,63 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.terrafirmacraft.ItemRegistry;
 
+import mods.gregtech.ore.OrePrefix;
+import mods.gregtech.ore.IOreRecipeHandler;
+import mods.gregtech.recipe.Utils;
+import mods.gregtech.material.Material;
+
+// --- Массивы 
+
+// Список префиксов руд
+val stoneTypeStrings = [
+    "ore",
+    "oreGranite",
+    "oreDiorite",
+    "oreAndesite",
+    "oreBlackgranite",
+    "oreRedgranite",
+    "oreMarble",
+    "oreBasalt",
+    "oreBreccia",
+    "oreQuartzite",
+    "oreSoapstone",
+    "oreRocksalt",
+    "oreCatlinite",
+    "oreChalk",
+    "oreChert",
+    "oreClaystone",
+    "oreConglomerate",
+    "oreDacite",
+    "oreDolomite",
+    "oreGabbro",
+    "oreGneiss",
+    "oreKomatiite",
+    "oreLimestone",
+    "oreMudstone",
+    "oreNovaculite",
+    "orePeridotite",
+    "orePhyllite",
+    "orePorphyry",
+    "oreRhyolite",
+    "oreSandstone",
+    "oreSchist",
+    "oreShale",
+    "oreSiltstone",
+    "oreSlate"
+] as string[];
+
 // --- Регистрация веса и размера
 
 // Руда
-for item in GregtechOres {
-        ItemRegistry.registerItemSize(item, "HUGE", "MEDIUM");
+for item in stoneTypeStrings {
+        
+        val stoneType as OrePrefix = OrePrefix.getPrefix(item);
+
+        stoneType.generateRecipes(function(orePrefix as OrePrefix, material as Material) {
+
+                ItemRegistry.registerItemSize(Utils.ore(stoneType, material), "HUGE", "MEDIUM");
+
+        } as IOreRecipeHandler);
 }
 
 // Большие предметы
@@ -17,61 +69,11 @@ for item in LargeItems {
 	ItemRegistry.registerItemSize(item, "LARGE", "LIGHT");
 }
 
-// Ракеты
-ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");
-
-
-// --- Регистрация брони
-ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_chestplate>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_leggings>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
-
 // --- Регистрация топлива
 ItemRegistry.registerFuel(<metaitem:gemCoke>, 3200, 1510, false, true);
 ItemRegistry.registerFuel(<minecraft:coal>, 1600, 1400, true, true);
 ItemRegistry.registerFuel(<metaitem:oreChunkCoal>, 1400, 1400, true, true);
 ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
-
-// --- Регистрация инструментов
-<ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
-
-// --- Регистрация металлов для палок GT
-ItemRegistry.registerItemMetal(<metaitem:stickGold>, "GOLD", 72, true);
-ItemRegistry.registerItemMetal(<metaitem:stickWroughtIron>, "WROUGHT_IRON", 72, true);
-ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 72, true);
-
-// --- Регистрация металлов для двойных пластин GregTech
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 288, true);
-ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, true);
 
 // ---//--- Вариации Меди
 
