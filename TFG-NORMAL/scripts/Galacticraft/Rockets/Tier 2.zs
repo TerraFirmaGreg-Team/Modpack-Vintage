@@ -86,3 +86,27 @@ assembler.recipeBuilder()// метеоритоное железо
   .outputs(<galacticraftcore:engine:1>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(1920).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <galacticraftcore:heavy_plating>,
+    <ore:plateDenseTitanium> * 2])
+  .fluidInputs([<liquid:tungsten_steel> * 72])
+  .outputs(<contenttweaker:alloyingot_tier2>)
+  .duration(300).EUt(1920).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<contenttweaker:alloyingot_tier2>])
+	.outputs(
+      <galacticraftplanets:item_basic_mars:3>,
+      <metaitem:dustTinyTungstenSteel> * 2)
+	.property("explosives", <minecraft:tnt> * 12)
+	.duration(20).EUt(30).buildAndRegister();
+// Схема ракеты
+laser_engraver.recipeBuilder()
+	.inputs([<contenttweaker:schematic_blank>])
+  .notConsumable([<metaitem:glass_lens.orange>])
+	.outputs(<galacticraftcore:schematic:1>)
+  .property("cleanroom", "cleanroom")
+	.duration(9000).EUt(1920).buildAndRegister();

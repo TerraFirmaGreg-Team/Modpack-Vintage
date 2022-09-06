@@ -106,3 +106,28 @@ assembler.recipeBuilder()
   .outputs(<extraplanets:tier5_items:1>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(122880).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembly_line.recipeBuilder()
+  .inputs([
+    <extraplanets:tier4_items:3>,
+    <ore:plateDenseAmericium> * 4,
+    <ore:plateDenseAmericium> * 4,
+    <ore:boltEuropium> * 8])
+  .fluidInputs([<liquid:soldering_alloy> * 36])
+  .outputs(<contenttweaker:alloyingot_tier5>)
+  .duration(300).EUt(122880).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<contenttweaker:alloyingot_tier5>])
+	.outputs(
+      <extraplanets:tier5_items:3>,
+      <metaitem:dustTinyEuropium> * 5)
+	.property("explosives", <minecraft:tnt> * 30)
+	.duration(20).EUt(30).buildAndRegister();
+// Схема ракеты
+laser_engraver.recipeBuilder()
+  .inputs([<contenttweaker:schematic_blank>])
+  .notConsumable([<metaitem:glass_lens.yellow>])
+  .outputs(<extraplanets:schematic_tier5>)
+  .property("cleanroom", "cleanroom")
+  .duration(9000).EUt(122880).buildAndRegister();

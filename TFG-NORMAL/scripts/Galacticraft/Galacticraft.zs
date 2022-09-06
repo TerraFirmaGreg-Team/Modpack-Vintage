@@ -708,48 +708,13 @@ recipes.addShaped("tfg/gc/lander_tier3", <contenttweaker:lander_tier3>,
    [<ore:plateDenseBlackSteel>, <ore:plateBlackSteel>, <ore:plateDenseBlackSteel>]]);
 
 // Схема ракеты
-// T2
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.orange>])
-	.outputs(<galacticraftcore:schematic:1>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(480).buildAndRegister();
-// T3
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.magenta>])
-	.outputs(<galacticraftplanets:schematic>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(1920).buildAndRegister();
-// T4
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.light_blue>])
-	.outputs(<extraplanets:schematic_tier4>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(7680).buildAndRegister();
-// T5
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.yellow>])
-	.outputs(<extraplanets:schematic_tier5>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(30720).buildAndRegister();
-// T6
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.lime>])
-	.outputs(<extraplanets:schematic_tier6>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(122880).buildAndRegister();
-// T7
-laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
-   .notConsumable([<metaitem:glass_lens.pink>])
-	.outputs(<extraplanets:schematic_tier7>)
-   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(491520).buildAndRegister();
+// // T7
+// laser_engraver.recipeBuilder()
+// 	.inputs([<contenttweaker:schematic_blank>])
+//    .notConsumable([<metaitem:glass_lens.pink>])
+// 	.outputs(<extraplanets:schematic_tier7>)
+//    .property("cleanroom", "cleanroom")
+// 	.duration(9000).EUt(491520).buildAndRegister();
 // // T8
 // laser_engraver.recipeBuilder()
 // 	.inputs([<contenttweaker:schematic_blank>])
@@ -778,112 +743,15 @@ laser_engraver.recipeBuilder()
 // 	.outputs(<extraplanets:schematic_tier10_electric_rocket>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(122880).buildAndRegister();
-// Сверх-прочные пластины
-// T1
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier1>])
-	.outputs(
-      <galacticraftcore:heavy_plating>,
-      <metaitem:dustTinyStainlessSteel>)
-	.property("explosives", <minecraft:tnt> * 6)
-	.duration(20).EUt(30).buildAndRegister();
-// T2
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier2>])
-	.outputs(
-      <galacticraftplanets:item_basic_mars:3>,
-      <metaitem:dustTinyTungstenSteel> * 2)
-	.property("explosives", <minecraft:tnt> * 12)
-	.duration(20).EUt(30).buildAndRegister();
-// T3
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier3>])
-	.outputs(
-      <galacticraftplanets:item_basic_asteroids:5>,
-      <metaitem:dustTinyPlatinum> * 3)
-	.property("explosives", <minecraft:tnt> * 18)
-	.duration(20).EUt(30).buildAndRegister();
-// T4
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier4>])
-	.outputs(
-      <extraplanets:tier4_items:3>,
-      <metaitem:dustTinyRuridit> * 4)
-	.property("explosives", <minecraft:tnt> * 24)
-	.duration(20).EUt(30).buildAndRegister();
-// T5
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier5>])
-	.outputs(
-      <extraplanets:tier5_items:3>,
-      <metaitem:dustTinyEuropium> * 5)
-	.property("explosives", <minecraft:tnt> * 30)
-	.duration(20).EUt(30).buildAndRegister();
-// T6
-implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier6>])
-	.outputs(
-      <extraplanets:tier6_items:3>,
-      <metaitem:dustTinyTritanium> * 6)
-	.property("explosives", <minecraft:tnt> * 36)
-	.duration(20).EUt(30).buildAndRegister();
 
-// Сплав сверх-прочных пластин
-// T1
-assembler.recipeBuilder()
-   .circuit(1)
-   .inputs([
-      <ore:plateDenseBlackSteel>,
-      <ore:plateDenseAluminium>,
-      <ore:plateDenseBronze>])
-   .fluidInputs([<liquid:stainless_steel> * 72])
-   .outputs(<contenttweaker:alloyingot_tier1>)
-   .duration(300).EUt(480).buildAndRegister();
-// T2
-assembler.recipeBuilder()
-   .circuit(2)
-   .inputs([
-      <galacticraftcore:heavy_plating>,
-      <ore:plateDenseTitanium> * 2])
-   .fluidInputs([<liquid:tungsten_steel> * 72])
-   .outputs(<contenttweaker:alloyingot_tier2>)
-   .duration(300).EUt(1920).buildAndRegister();
-// T3
-assembler.recipeBuilder()
-   .circuit(3)
-   .inputs([
-      <galacticraftplanets:item_basic_mars:3>,
-      <ore:plateDenseDesh> * 4])
-   .fluidInputs([<liquid:platinum> * 72])
-   .outputs(<contenttweaker:alloyingot_tier3>)
-   .duration(600).EUt(1920).buildAndRegister();
-// T4
-assembly_line.recipeBuilder()
-   .inputs([
-      <galacticraftplanets:item_basic_asteroids:5>,
-      <ore:plateDenseIce> * 3,
-      <ore:plateDenseIce> * 3,
-      <ore:boltRuridit> * 4])
-   .fluidInputs([<liquid:soldering_alloy> * 36])
-   .outputs(<contenttweaker:alloyingot_tier4>)
-   .duration(300).EUt(30720).buildAndRegister();
-// T5
-assembly_line.recipeBuilder()
-   .inputs([
-      <extraplanets:tier4_items:3>,
-      <ore:plateDenseAmericium> * 4,
-      <ore:plateDenseAmericium> * 4,
-      <ore:boltEuropium> * 8])
-   .fluidInputs([<liquid:soldering_alloy> * 36])
-   .outputs(<contenttweaker:alloyingot_tier5>)
-   .duration(300).EUt(122880).buildAndRegister();
-// T6
-assembly_line.recipeBuilder()
-   .inputs([
-      <extraplanets:tier5_items:3>,
-      <ore:plateDenseNaquadria> * 4,
-      <ore:plateDenseNaquadria> * 4,
-      <ore:boltTritanium> * 8])
-   .fluidInputs([<liquid:soldering_alloy> * 144])
-   .outputs(<contenttweaker:alloyingot_tier5>)
-   .duration(300).EUt(500000).buildAndRegister();
+
+
+
+
+
+
+
+
+
+
+

@@ -94,3 +94,21 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine>)
   .duration(300).EUt(480).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([
+    <ore:plateDenseBlackSteel>,
+    <ore:plateDenseAluminium>,
+    <ore:plateDenseBronze>])
+  .fluidInputs([<liquid:stainless_steel> * 72])
+  .outputs(<contenttweaker:alloyingot_tier1>)
+  .duration(300).EUt(480).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<contenttweaker:alloyingot_tier1>])
+	.outputs(
+      <galacticraftcore:heavy_plating>,
+      <metaitem:dustTinyStainlessSteel>)
+	.property("explosives", <minecraft:tnt> * 6)
+	.duration(20).EUt(30).buildAndRegister();
