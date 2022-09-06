@@ -1,13 +1,91 @@
 {
+  "planet.saturn": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.eris": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "group": "netherOv"
+  },
   "moon.rhea": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "planet.uranus": {
+  "Storage Cell": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
+  "moon.deimos": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.titan": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.ganymede": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.mars": {
+    "energyToOpen": 11059200,
+    "keepAlive": 4800
+  },
   "planet.kepler22b": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "emptiness": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.iapetus": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.io": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.neptune": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.triton": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.asteroids": {
+    "energyToOpen": 14745600,
+    "keepAlive": 6400
+  },
+  "the_nether": {
+    "energyToOpen": 3686400,
+    "keepAlive": 1600,
+    "group": "netherOv"
+  },
+  "planet.pluto": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "the_end": {
+    "energyToOpen": 5529600,
+    "keepAlive": 2400
+  },
+  "planet.venus": {
+    "energyToOpen": 12288000,
+    "keepAlive": 5334
+  },
+  "planet.jupiter": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon.phobos": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -19,53 +97,21 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "planet.saturn": {
+  "moon.callisto": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Storage Cell": {
+  "moon.titania": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet.uranus": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
   "moon.moon": {
     "energyToOpen": 7372800,
     "keepAlive": 3200
-  },
-  "moon.callisto": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.iapetus": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.asteroids": {
-    "energyToOpen": 14745600,
-    "keepAlive": 6400
-  },
-  "moon.triton": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.venus": {
-    "energyToOpen": 12288000,
-    "keepAlive": 5334
-  },
-  "moon.io": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.phobos": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.neptune": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.ganymede": {
-    "energyToOpen": 0,
-    "keepAlive": 0
   },
   "planet.ceres": {
     "energyToOpen": 0,
@@ -74,47 +120,5 @@
   "moon.oberon": {
     "energyToOpen": 0,
     "keepAlive": 0
-  },
-  "planet.eris": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon.titan": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "overworld": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "group": "netherOv"
-  },
-  "moon.deimos": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "the_end": {
-    "energyToOpen": 5529600,
-    "keepAlive": 2400
-  },
-  "moon.titania": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.jupiter": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.pluto": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet.mars": {
-    "energyToOpen": 11059200,
-    "keepAlive": 4800
-  },
-  "the_nether": {
-    "energyToOpen": 3686400,
-    "keepAlive": 1600,
-    "group": "netherOv"
   }
 }
