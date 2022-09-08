@@ -1,0 +1,51 @@
+name: Deploy modpack
+on:
+  push:
+    tags:
+      - 'R*-Normal'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
+
+      - name: Set the version
+        run: |
+          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
+          echo "TFG New Horizons-${MODPACKVERSION}-Normal" > ./overrides/version.txt
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" manifest.json
+
+      - name: Archive Release Client
+        uses: TheDoctor0/zip-release@0.6.2
+        with:
+          type: zip
+          filename: ${{ github.workspace }}/TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal.zip
+          exclusions: '*.git* LICENSE *.md */.github/* GT_ID_USAGE.txt SCRIPT_PRIORITY.txt'
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: false
+          files: ${{ github.workspace }}/TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal.zip
+          generate_release_notes: false
+      
+      - name: Upload Curseforge
+        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+        with: 
+          api-token: ${{ secrets.CF_API_TOKEN }}
+          project-id: '385053'
+          modpack-path: ${{ github.workspace }}/TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal.zip
+          # modpack-server-path: ${{ github.workspace }}/TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal-server.zip
+          changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/Normal/Changelog_RU.md "")' 
+          changelog-format: markdown
+          game-version: '1.12.2'
+          display-name: TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal
+          server-display-name: TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-Normal-server
+          release-type: 'release'
