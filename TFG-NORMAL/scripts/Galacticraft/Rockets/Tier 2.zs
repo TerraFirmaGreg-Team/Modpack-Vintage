@@ -60,17 +60,6 @@ assembler.recipeBuilder()
   .outputs(<contenttweaker:rocketbody_tier2>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(1920).buildAndRegister();
-// Стабилизаторы
-assembler.recipeBuilder()
-  .circuit(2)
-  .inputs([
-    <galacticraftcore:heavy_plating> * 4,
-    <ore:plateDenseSteel> * 2,
-    <ore:screwStainlessSteel> * 4])
-  .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<galacticraftcore:rocket_fins>)
-  .property("cleanroom", "cleanroom")
-  .duration(600).EUt(1920).buildAndRegister();
 // Ускорители
 assembler.recipeBuilder()// метеоритоное железо
   .circuit(2)
