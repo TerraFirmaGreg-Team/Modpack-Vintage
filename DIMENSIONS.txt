@@ -24,9 +24,6 @@ planet.neptune:             {-18}      {-75}
 planet.pluto:               {-19}      {-77}
 planet.eris:                {-21}      {-79}
 planet.kepler22b:           {-22}      {-81}
-planet.proxima_b:           {-1025}
-planet.tauceti_f:           {-1338}
-planet.barnarda_c:          {-1030}
 
 // WTF
 moon.titania:               {-1510}
