@@ -1061,31 +1061,6 @@ for item in ProjectRed {
     JEI.removeAndHide(item);
 }
 
-val TombStone as IItemStack[] = [
-  <tombstone:dark_marble:*>,
-  <tombstone:grave_plate>,
-  <tombstone:scroll_of_knowledge>,
-  <tombstone:scroll_buff:*>,
-  <tombstone:tablet_of_recall>,
-  <tombstone:tablet_of_home>,
-  <tombstone:tablet_of_assistance>,
-  <tombstone:tablet_of_cupidity>,
-  <tombstone:fishing_rod_of_misadventure>,
-  <tombstone:lost_tablet>,
-  <tombstone:dust_of_vanishing>,
-  <tombstone:soul_receptacle>,
-  <tombstone:familiar_receptacle>,
-  <tombstone:voodoo_poppet>,
-  <tombstone:book_of_disenchantment>,
-  <tombstone:ankh_of_pray>,
-  <tombstone:crafting_ingredient:*>,
-  <tombstone:bone_needle>,
-  <tombstone:impregnated_diamond>
-];
-for item in TombStone {
-    JEI.removeAndHide(item);
-}
-
 val Vanilla as IItemStack[] = [
   // Blocks
   <minecraft:stone>,
