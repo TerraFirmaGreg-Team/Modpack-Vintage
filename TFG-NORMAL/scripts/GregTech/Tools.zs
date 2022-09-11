@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 // --- Массивы
 
 val RemoveItemRecipesByName = [
+    /*
 	// Кремниевые инструменты
     "gregtech:sword_flint",
     "gregtech:pickaxe_flint",
@@ -20,6 +21,7 @@ val RemoveItemRecipesByName = [
     "gregtech:toolheadfile_flint_wood",
     "gregtech:toolheadsaw_flint_wood",
     "gregtech:toolheadsawsense_flint_wood"
+    */
 ] as string[];
 
 // --- Удаление рецептов
@@ -45,6 +47,5 @@ macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
 
 // Щипцы из дерева
 recipes.addShaped("tfg/gt/tongs_wood", <tfgmod:meta_tool>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), 
-[[<ore:stickWood>, null], 
-[<ore:string>, <ore:stickWood>]]);
+    [[<ore:stickWood>, null], [<ore:string>, <ore:stickWood>]]);
 
