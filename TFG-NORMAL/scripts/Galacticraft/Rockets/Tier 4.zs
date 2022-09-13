@@ -17,17 +17,17 @@ for i, RocketT4 in RocketT4 {
 // Tier 4 - Ракета
 assembly_line.recipeBuilder()
   .inputs(<extraplanets:nose_cone_tier4>) // Обтекатель
-  .inputs(<contenttweaker:rocketbody_tier4> * 12) // Корпус
+  .inputs(<metaitem:rocket.body.tier.4> * 12) // Корпус
   .inputs(<extraplanets:tier4_items:2> * 6)  // Стабилизаторы
   .inputs(<extraplanets:tier4_items:1> * 4) // Ускорители
   .inputs(<extraplanets:tier4_items> * 2) // Двигатели
   .inputs(<galacticraftcore:oil_canister_partial:1001> * 16)
-  .inputs(<contenttweaker:lander_tier3>)
+  .inputs(<metaitem:lander.tier.3>)
   .inputs(<metaitem:electric.motor.luv> * 4)
   .inputs(<metaitem:emitter.luv> * 4)
   .inputs(<ore:circuitLuv> * 8)
   .inputs([CrateT4[i] * 12])
-  .inputs(<contenttweaker:rocketcontrolcomputer_tier4>)
+  .inputs(<metaitem:rocket.control.computer.tier.4>)
   .inputs(<extraplanets:schematic_tier4>)
   .fluidInputs([<liquid:dense_ice> * 9216])
   .fluidInputs([<liquid:soldering_alloy> * 4608])
@@ -46,7 +46,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.luv>,
     <extraplanets:tier4_items:3>])
   .fluidInputs([<liquid:soldering_alloy> * 1728])
-  .outputs(<contenttweaker:rocketcontrolcomputer_tier4>)
+  .outputs(<metaitem:rocket.control.computer.tier.4>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(30720).buildAndRegister();
 // Головоной обтекатель
@@ -69,7 +69,7 @@ assembler.recipeBuilder()
     <metaitem:voltage_coil.luv> * 2,
     <metaitem:field.generator.luv>])
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<contenttweaker:rocketbody_tier4>)
+  .outputs(<metaitem:rocket.body.tier.4>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(30720).buildAndRegister();
 // Стабилизаторы
@@ -114,11 +114,11 @@ assembly_line.recipeBuilder()
     <ore:plateDenseIce> * 3,
     <ore:boltRuridit> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 36])
-  .outputs(<contenttweaker:alloyingot_tier4>)
+  .outputs(<metaitem:alloy.ingot.tier.4>)
   .duration(300).EUt(30720).buildAndRegister();
 // Сверх-прочные пластины
 implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier4>])
+	.inputs([<metaitem:alloy.ingot.tier.4>])
 	.outputs(
       <extraplanets:tier4_items:3>,
       <metaitem:dustTinyRuridit> * 4)
@@ -126,7 +126,7 @@ implosion_compressor.recipeBuilder()
 	.duration(20).EUt(30).buildAndRegister();
 // Схема ракеты
 laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
+	.inputs([<metaitem:schematic.blank>])
   .notConsumable([<metaitem:glass_lens.light_blue>])
 	.outputs(<extraplanets:schematic_tier4>)
   .property("cleanroom", "cleanroom")

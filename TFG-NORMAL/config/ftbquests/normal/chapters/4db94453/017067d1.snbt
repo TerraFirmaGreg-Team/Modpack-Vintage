@@ -8,7 +8,7 @@
 		uid: "529969a0",
 		type: "item",
 		items: [{
-			item: "contenttweaker:fluid_housing"
+			item: "tfgmod:meta_item 1 40"
 		}]
 	}]
 }

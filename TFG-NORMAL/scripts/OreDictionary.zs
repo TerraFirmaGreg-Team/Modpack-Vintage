@@ -360,7 +360,7 @@ for item in TFC_Saws {
 //]);
 
 <ore:gtce.tool.tongs>.addItems([
-    <tfgmod:meta_tool>.withEmptyTag()
+    <metaitem:tool.tongs>
 ]);
 
 <ore:gtce.block.crate>.addItems([

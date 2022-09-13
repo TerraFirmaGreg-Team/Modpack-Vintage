@@ -1,8 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer1": "gregtech:items/metaitems/battery.uv.naquadria/7",
-    "layer0": "gregtech:items/metaitems/battery.hull.uv"
-  }
-}
-

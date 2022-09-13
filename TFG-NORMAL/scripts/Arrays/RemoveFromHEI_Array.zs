@@ -33,9 +33,6 @@ JEI.removeAndHide(<catwalks:stair>);
 // EnderStorage
 JEI.removeAndHide(<enderstorage:ender_pouch>);
 
-// ContentTweaker
-JEI.removeAndHide(<base:wrench>);
-
 // OpenComputers
 JEI.removeAndHide(<opencomputers:disassembler>);
 

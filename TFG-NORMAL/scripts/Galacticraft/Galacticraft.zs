@@ -148,7 +148,7 @@ macerator.recipeBuilder()
 	.outputs(<metaitem:dustDenseIce> * 9)
 	.duration(300).EUt(2).buildAndRegister();
 // Пустая схема
-recipes.addShaped("tfg/gc/schematic_blank", <contenttweaker:schematic_blank>, [
+recipes.addShaped("tfg/gc/schematic_blank", <metaitem:schematic.blank>, [
    [null, <ore:paper>, null],
    [null, <littletiles:recipeadvanced>, <ore:gtce.tool.hard.hammers>],
    [null, <ore:paper>, null]]);
@@ -692,53 +692,53 @@ for i in 0 .. 16 {
 }
 // Посадочный модуль
 // T1
-recipes.addShaped("tfg/gc/lander_tier1", <contenttweaker:lander_tier1>,
+recipes.addShaped("tfg/gc/lander_tier1", <metaitem:lander.tier.1>,
    [[<galacticraftcore:basic_item:19>, <ore:plateDenseSteel>, <ore:plateDenseSteel>],
    [<ore:plateDenseSteel>, <galacticraftcore:buggymat:1>, <ore:plateDenseCopper>],
    [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
 // Т2
-recipes.addShaped("tfg/gc/lander_tier2", <contenttweaker:lander_tier2>,
+recipes.addShaped("tfg/gc/lander_tier2", <metaitem:lander.tier.2>,
    [[<ore:foilGold>, <ore:gc.parachute>, <ore:foilGold>],
-   [<galacticraftcore:canvas>, <contenttweaker:lander_tier1>, <galacticraftcore:canvas>],
+   [<galacticraftcore:canvas>, <metaitem:lander.tier.1>, <galacticraftcore:canvas>],
    [<ore:foilGold>, <galacticraftcore:canvas>, <ore:foilGold>]]);
 // T3
-recipes.addShaped("tfg/gc/lander_tier3", <contenttweaker:lander_tier3>,
+recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
    [[<ore:plateDenseBlackSteel>, <ore:chestWood>, <ore:plateDenseBlackSteel>],
-   [<galacticraftcore:steel_pole>, <contenttweaker:lander_tier2>, <galacticraftcore:steel_pole>],
+   [<galacticraftcore:steel_pole>, <metaitem:lander.tier.2>, <galacticraftcore:steel_pole>],
    [<ore:plateDenseBlackSteel>, <ore:plateBlackSteel>, <ore:plateDenseBlackSteel>]]);
 
 // Схема ракеты
 // // T7
 // laser_engraver.recipeBuilder()
-// 	.inputs([<contenttweaker:schematic_blank>])
+// 	.inputs([<metaitem:schematic.blank>])
 //    .notConsumable([<metaitem:glass_lens.pink>])
 // 	.outputs(<extraplanets:schematic_tier7>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(491520).buildAndRegister();
 // // T8
 // laser_engraver.recipeBuilder()
-// 	.inputs([<contenttweaker:schematic_blank>])
+// 	.inputs([<metaitem:schematic.blank>])
 //    .notConsumable([<metaitem:glass_lens.gray>])
 // 	.outputs(<extraplanets:schematic_tier8>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(491520).buildAndRegister();
 // // T9
 // laser_engraver.recipeBuilder()
-// 	.inputs([<contenttweaker:schematic_blank>])
+// 	.inputs([<metaitem:schematic.blank>])
 //    .notConsumable([<metaitem:glass_lens.light_gray>])
 // 	.outputs(<extraplanets:schematic_tier9>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(122880).buildAndRegister();
 // // T10
 // laser_engraver.recipeBuilder()
-// 	.inputs([<contenttweaker:schematic_blank>])
+// 	.inputs([<metaitem:schematic.blank>])
 //    .notConsumable([<metaitem:glass_lens.cyan>])
 // 	.outputs(<extraplanets:schematic_tier10>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(30720).buildAndRegister();
 // // T10 - Элекстрическая ракета
 // laser_engraver.recipeBuilder()
-// 	.inputs([<contenttweaker:schematic_blank>])
+// 	.inputs([<metaitem:schematic.blank>])
 //    .notConsumable([<metaitem:glass_lens.light_blue>])
 // 	.outputs(<extraplanets:schematic_tier10_electric_rocket>)
 //    .property("cleanroom", "cleanroom")

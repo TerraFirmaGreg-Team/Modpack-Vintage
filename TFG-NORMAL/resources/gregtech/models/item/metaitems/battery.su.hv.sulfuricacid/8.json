@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "gregtech:items/metaitems/battery.hull.hv.su",
-	"layer1": "gregtech:items/metaitems/battery.su.hv.sulfuricacid/8"
-  }
-}

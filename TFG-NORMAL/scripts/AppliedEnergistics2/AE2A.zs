@@ -9,7 +9,7 @@ recipes.removeByMod("aeadditions");
 
 // Fluid Storage Housing
 assembler.recipeBuilder()
-	.inputs([<contenttweaker:fluid_housing> * 2, <ore:gemQuartzite> * 2, <ore:plateStainlessSteel> * 4, <ore:screwStainlessSteel> * 2])
+	.inputs([<metaitem:fluid.housing> * 2, <ore:gemQuartzite> * 2, <ore:plateStainlessSteel> * 4, <ore:screwStainlessSteel> * 2])
 	.outputs(<aeadditions:storage.casing:1>)
 	.duration(20).EUt(480).buildAndRegister();
 

@@ -17,16 +17,16 @@ for i, RocketT2 in RocketT2 {
 // Tier 2 - Ракета
 assembly_line.recipeBuilder()
   .inputs(<galacticraftcore:nose_cone>)
-  .inputs(<contenttweaker:rocketbody_tier2> * 10)
+  .inputs(<metaitem:rocket.body.tier.2> * 10)
   .inputs(<galacticraftcore:rocket_fins> * 4)
   .inputs(<galacticraftcore:engine> * 2)
   .inputs(<galacticraftcore:engine:1> * 2)
   .inputs(<galacticraftcore:oil_canister_partial:1001> * 4)
-  .inputs(<contenttweaker:lander_tier2>)
+  .inputs(<metaitem:lander.tier.2>)
   .inputs(<metaitem:electric.motor.ev> * 4)
   .inputs(<metaitem:emitter.ev> * 4)
   .inputs(<ore:circuitEv> * 8)
-  .inputs(<contenttweaker:rocketcontrolcomputer_tier2>)
+  .inputs(<metaitem:rocket.control.computer.tier.2>)
   .inputs(<galacticraftcore:schematic:1>)
   .inputs([CrateT2[i] * 6])
   .fluidInputs([<liquid:soldering_alloy> * 9216])
@@ -46,7 +46,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.ev>,
     <galacticraftplanets:item_basic_mars:3>])
   .fluidInputs([<liquid:soldering_alloy> * 864])
-  .outputs(<contenttweaker:rocketcontrolcomputer_tier2>)
+  .outputs(<metaitem:rocket.control.computer.tier.2>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(1920).buildAndRegister();
 // Корпус
@@ -57,7 +57,7 @@ assembler.recipeBuilder()
     <metaitem:voltage_coil.ev> * 2,
     <metaitem:field.generator.ev> * 2])
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<contenttweaker:rocketbody_tier2>)
+  .outputs(<metaitem:rocket.body.tier.2>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(1920).buildAndRegister();
 // Ускорители
@@ -82,11 +82,11 @@ assembler.recipeBuilder()
     <galacticraftcore:heavy_plating>,
     <ore:plateDenseTitanium> * 2])
   .fluidInputs([<liquid:tungsten_steel> * 72])
-  .outputs(<contenttweaker:alloyingot_tier2>)
+  .outputs(<metaitem:alloy.ingot.tier.2>)
   .duration(300).EUt(1920).buildAndRegister();
 // Сверх-прочные пластины
 implosion_compressor.recipeBuilder()
-	.inputs([<contenttweaker:alloyingot_tier2>])
+	.inputs([<metaitem:alloy.ingot.tier.2>])
 	.outputs(
       <galacticraftplanets:item_basic_mars:3>,
       <metaitem:dustTinyTungstenSteel> * 2)
@@ -94,7 +94,7 @@ implosion_compressor.recipeBuilder()
 	.duration(20).EUt(30).buildAndRegister();
 // Схема ракеты
 laser_engraver.recipeBuilder()
-	.inputs([<contenttweaker:schematic_blank>])
+	.inputs([<metaitem:schematic.blank>])
   .notConsumable([<metaitem:glass_lens.orange>])
 	.outputs(<galacticraftcore:schematic:1>)
   .property("cleanroom", "cleanroom")
