@@ -53,14 +53,10 @@ val stoneTypeStrings = [
 // --- Регистрация веса и размера
 
 // Руда
-for item in stoneTypeStrings {
-        
+for item in stoneTypeStrings {       
         val stoneType as OrePrefix = OrePrefix.getPrefix(item);
-
         stoneType.generateRecipes(function(orePrefix as OrePrefix, material as Material) {
-
                 ItemRegistry.registerItemSize(Utils.ore(stoneType, material), "HUGE", "MEDIUM");
-
         } as IOreRecipeHandler);
 }
 

@@ -10,20 +10,20 @@ import mods.horsepower.Press;
 
 val CleanNets as IItemStack[] = [
 	<tfc:crop/product/jute_net>,
-    <tfcflorae:crop/product/sisal_net>,
-    <tfcflorae:crop/product/silk_net>,
-    <tfcflorae:crop/product/cotton_net>,
-    <tfcflorae:crop/product/linen_net>,
-    <tfcflorae:crop/product/hemp_net>
+  <tfcflorae:crop/product/sisal_net>,
+  <tfcflorae:crop/product/silk_net>,
+  <tfcflorae:crop/product/cotton_net>,
+  <tfcflorae:crop/product/linen_net>,
+  <tfcflorae:crop/product/hemp_net>
 ];
 
 val DirtyNets as IItemStack[] = [
 	<tfc:crop/product/dirty_jute_net>,
-    <tfcflorae:crop/product/dirty_sisal_net>,
-    <tfcflorae:crop/product/dirty_silk_net>,
-    <tfcflorae:crop/product/dirty_cotton_net>,
-    <tfcflorae:crop/product/dirty_linen_net>,
-    <tfcflorae:crop/product/dirty_hemp_net>
+  <tfcflorae:crop/product/dirty_sisal_net>,
+  <tfcflorae:crop/product/dirty_silk_net>,
+  <tfcflorae:crop/product/dirty_cotton_net>,
+  <tfcflorae:crop/product/dirty_linen_net>,
+  <tfcflorae:crop/product/dirty_hemp_net>
 ];
 
 val ItemsForJuices as IItemStack[] = [
@@ -77,13 +77,13 @@ val FluidsForJuices as ILiquidStack[] = [
 ];
 
 val RemoveItemRecipesByName = [
-  	"tfcflorae:wood/joshua_tree2/joshua_tree_log",
-    "tfcflorae:wood/joshua_tree/joshua_tree_log_reverse",
-    "tfcflorae:wood/fruit_tree/firmalife/fence/cassia_cinnamon",
-    "tfcflorae:wood/fruit_tree/firmalife/fence/ceylon_cinnamon",
-    "tfcflorae:wood/fruit_tree/firmalife/fence_gate/cassia_cinnamon",
-    "tfcflorae:wood/fruit_tree/firmalife/fence_gate/ceylon_cinnamon",
-    "tfcflorae:yeast"
+	"tfcflorae:wood/joshua_tree2/joshua_tree_log",
+	"tfcflorae:wood/joshua_tree/joshua_tree_log_reverse",
+	"tfcflorae:wood/fruit_tree/firmalife/fence/cassia_cinnamon",
+	"tfcflorae:wood/fruit_tree/firmalife/fence/ceylon_cinnamon",
+	"tfcflorae:wood/fruit_tree/firmalife/fence_gate/cassia_cinnamon",
+	"tfcflorae:wood/fruit_tree/firmalife/fence_gate/ceylon_cinnamon",
+	"tfcflorae:yeast"
 ] as string[];
 
 // --- Удаление рецептов

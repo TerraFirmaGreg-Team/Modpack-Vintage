@@ -393,21 +393,14 @@ for item in TFC_Saws {
 <ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
 
 // Chipped Gems from GT
-for item in Gem_Chipped {
-	<ore:gemChipped>.add(item);
-}
+<ore:gemChipped>.add(<gregtech:meta_gem_chipped:*>);
 // Flawed Gems from GT
-for item in Gem_Flawed {
-	<ore:gemFlawed>.add(item);
-}
+<ore:gemFlawed>.add(<gregtech:meta_gem_flawed:*>);
 // Flawless Gems from GT
-for item in Gem_Flawless {
-	<ore:gemFlawless>.add(item);
-}
+<ore:gemFlawless>.add(<gregtech:meta_gem_flawless:*>);
 // Exquisite Gems from GT
-for item in Gem_Exquisite {
-	<ore:gemExquisite>.add(item);
-}
+<ore:gemExquisite>.add(<gregtech:meta_gem_exquisite:*>);
+
 
 <ore:knife>.add(<metaitem:tool.knife>);
 <ore:hammer>.add(<metaitem:tool.hard_hammer>);
