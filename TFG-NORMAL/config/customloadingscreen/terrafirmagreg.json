@@ -127,7 +127,8 @@
         {
             "image": {
                 "parent": "builtin/text",
-                "text": "time + 's'",
+                "image": "textures/font/ascii.png",
+                "text": "floor(time * 10) / 10.0 + ' seconds'",
                 "scale": 0.6,
                 "position_type": "BOTTOM_RIGHT",
                 "offset_pos": "BOTTOM_RIGHT",
