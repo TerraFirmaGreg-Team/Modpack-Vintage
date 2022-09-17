@@ -12,59 +12,6 @@ import mods.gregtech.material.Material;
 
 // --- Массивы 
 
-// Список префиксов руд
-val stoneTypeStrings = [
-    "ore",
-    "oreGranite",
-    "oreDiorite",
-    "oreAndesite",
-    "oreBlackgranite",
-    "oreRedgranite",
-    "oreMarble",
-    "oreBasalt",
-    "oreBreccia",
-    "oreQuartzite",
-    "oreSoapstone",
-    "oreRocksalt",
-    "oreCatlinite",
-    "oreChalk",
-    "oreChert",
-    "oreClaystone",
-    "oreConglomerate",
-    "oreDacite",
-    "oreDolomite",
-    "oreGabbro",
-    "oreGneiss",
-    "oreKomatiite",
-    "oreLimestone",
-    "oreMudstone",
-    "oreNovaculite",
-    "orePeridotite",
-    "orePhyllite",
-    "orePorphyry",
-    "oreRhyolite",
-    "oreSandstone",
-    "oreSchist",
-    "oreShale",
-    "oreSiltstone",
-    "oreSlate"
-] as string[];
-
-// --- Регистрация веса и размера
-
-// Руда
-for item in stoneTypeStrings {       
-        val stoneType as OrePrefix = OrePrefix.getPrefix(item);
-        stoneType.generateRecipes(function(orePrefix as OrePrefix, material as Material) {
-                ItemRegistry.registerItemSize(Utils.ore(stoneType, material), "HUGE", "MEDIUM");
-        } as IOreRecipeHandler);
-}
-
-// Большие предметы
-for item in LargeItems {
-	ItemRegistry.registerItemSize(item, "LARGE", "LIGHT");
-}
-
 // --- Регистрация топлива
 ItemRegistry.registerFuel(<metaitem:gemCoke>, 3200, 1510, false, true);
 ItemRegistry.registerFuel(<minecraft:coal>, 1600, 1400, true, true);
