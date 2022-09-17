@@ -2,9 +2,10 @@ import crafttweaker.item.IItemStack;
 
 
 // Удаление рецептов
-recipes.removeByMod("aunis");
+//recipes.removeByMod("aunis");
 
 // --- Добавление рецептов
+
 // Transportrings_block
 star_forge.recipeBuilder()
   .circuit(1)
@@ -86,6 +87,43 @@ star_forge.recipeBuilder()
   .outputs(<aunis:dhd_brb>)
   .duration(300).EUt(1880).buildAndRegister();
 
+// Смеси
+// Эндер смесь
+fusion_reactor.recipeBuilder()
+  .fluidInputs([<liquid:silicon> * 32])
+	.fluidInputs([<liquid:americium> * 32])
+ 	.fluidOutputs(<liquid:silicon_molten_ender> * 32)
+	.property("eu_to_start", 350000000)
+  .duration(100).EUt(420290).buildAndRegister();
+// Световая смесь
+fusion_reactor.recipeBuilder()
+  .fluidInputs([<liquid:silicon> * 32])
+	.fluidInputs([<liquid:glowstone> * 32])
+ 	.fluidOutputs(<liquid:silicon_molten_yellow> * 32)
+	.property("eu_to_start", 350000000)
+  .duration(100).EUt(420290).buildAndRegister();
+// Телепортационная смесь
+fusion_reactor.recipeBuilder()
+  .fluidInputs([<liquid:silicon> * 32])
+	.fluidInputs([<liquid:blue_alloy> * 32])
+ 	.fluidOutputs(<liquid:silicon_molten_blue> * 32)
+	.property("eu_to_start", 350000000)
+  .duration(100).EUt(420290).buildAndRegister();
+// Энергетическа смесь
+fusion_reactor.recipeBuilder()
+  .fluidInputs([<liquid:silicon> * 32])
+	.fluidInputs([<liquid:redstone> * 32])
+ 	.fluidOutputs(<liquid:silicon_molten_red> * 32)
+	.property("eu_to_start", 350000000)
+  .duration(100).EUt(420290).buildAndRegister();
+
+// Семя кристалла
+autoclave.recipeBuilder()
+  .inputs([<appliedenergistics2:crystal_seed:1200>])
+  .fluidInputs([<liquid:silicon> * 2440])
+ 	.chancedOutput(<aunis:crystal_fragment> * 1, 7000, 500)
+  .duration(1000).EUt(1090).buildAndRegister();
+
 // Выращивание кристалов
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
@@ -110,43 +148,6 @@ autoclave.recipeBuilder()
   .fluidInputs([<liquid:silicon_molten_red> * 2440])
  	.chancedOutput(<aunis:crystal_red> * 1, 8000, 500)
   .duration(1000).EUt(13290).buildAndRegister();
-
-// Crystal seed
-autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed:1200>])
-  .fluidInputs([<liquid:silicon> * 2440])
- 	.chancedOutput(<aunis:crystal_fragment> * 1, 7000, 500)
-  .duration(1000).EUt(1090).buildAndRegister();
-
-// Blend
-fusion_reactor.recipeBuilder()
-  .fluidInputs([<liquid:silicon> * 32])
-	.fluidInputs([<liquid:americium> * 32])
- 	.fluidOutputs(<liquid:silicon_molten_ender> * 32)
-	.property("eu_to_start", 350000000)
-  .duration(1000).EUt(420290).buildAndRegister();
-
-fusion_reactor.recipeBuilder()
-  .fluidInputs([<liquid:silicon> * 32])
-	.fluidInputs([<liquid:glowstone> * 32])
- 	.fluidOutputs(<liquid:silicon_molten_yellow> * 32)
-	.property("eu_to_start", 350000000)
-  .duration(1000).EUt(420290).buildAndRegister();
-
-fusion_reactor.recipeBuilder()
-  .fluidInputs([<liquid:silicon> * 32])
-	.fluidInputs([<liquid:blue_alloy> * 32])
- 	.fluidOutputs(<liquid:silicon_molten_blue> * 32)
-	.property("eu_to_start", 350000000)
-  .duration(1000).EUt(420290).buildAndRegister();
-
-fusion_reactor.recipeBuilder()
-  .fluidInputs([<liquid:silicon> * 32])
-	.fluidInputs([<liquid:redstone> * 32])
- 	.fluidOutputs(<liquid:silicon_molten_red> * 32)
-	.property("eu_to_start", 350000000)
-  .duration(1000).EUt(420290).buildAndRegister();
-
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()
   .circuit(6)

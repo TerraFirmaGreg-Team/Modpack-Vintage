@@ -1716,20 +1716,32 @@ val Aunis as IItemStack[] = [
 	<aunis:naquadah_ore_stone>,
 	<aunis:naquadah_shard>,
 	<aunis:naquadah_block>,
-	// Universe wip
-	<aunis:invisible_block>,
-	<aunis:stargate_universe_base_block>,
-	<aunis:stargate_universe_member_block:6>,
-	<aunis:stargate_universe_member_block:14>,
+	<aunis:naquadah_block_raw>,
+	<aunis:naquadah_alloy>,
+	<aunis:naquadah_alloy_raw>,
+	<aunis:trinium_ore>,
+	<aunis:trinium_block>,
+	<aunis:trinium_ingot>,
+	<aunis:titanium_ore>,
+	<aunis:titanium_block>,
+	<aunis:titanium_ingot>,
+	// Врата (Орлин)
 	<aunis:stargate_orlin_member_block>,
 	<aunis:stargate_orlin_base_block>,
-	<aunis:universe_dialer>,
-	<aunis:universe_ring_fragment>,
-	<aunis:crystal_white>,
-	<aunis:naquadah_alloy_raw>,
-	<aunis:naquadah_alloy>,
-	<aunis:crystal_glyph_universe>,
-	<aunis:crystal_glyph_pegasus>
+	// Universe wip
+	// <aunis:invisible_block>,
+	// <aunis:stargate_universe_base_block>,
+	// <aunis:stargate_universe_member_block:6>,
+	// <aunis:stargate_universe_member_block:14>,
+	// <aunis:stargate_orlin_member_block>,
+	// <aunis:stargate_orlin_base_block>,
+	// <aunis:universe_dialer>,
+	// <aunis:universe_ring_fragment>,
+	// <aunis:crystal_white>,
+	// <aunis:naquadah_alloy_raw>,
+	// <aunis:naquadah_alloy>,
+	// <aunis:crystal_glyph_universe>,
+	// <aunis:crystal_glyph_pegasus>
 ];
 for item in Aunis {
     JEI.removeAndHide(item);
