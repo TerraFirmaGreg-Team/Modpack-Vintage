@@ -27,8 +27,6 @@ planet.kepler22b:           {-22}      {-81}
 
 // WTF
 moon.titania:               {-1510}
-moon.miranda:               {-1024}
-moon.enceladus:             {-1017}
 planet.kuiperbelt:          {-1009}
 planet.haumea:              {-1023}
 the_nether:                 {-1}

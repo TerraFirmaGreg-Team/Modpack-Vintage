@@ -108,6 +108,45 @@ global denseCoveredCables as IItemStack[] = [
     <appliedenergistics2:part:516>
 ];
 
+// Paint ball
+global paintBalls as IItemStack[] = [
+	<appliedenergistics2:paint_ball:0>,
+	<appliedenergistics2:paint_ball:1>,
+	<appliedenergistics2:paint_ball:2>,
+	<appliedenergistics2:paint_ball:3>,
+	<appliedenergistics2:paint_ball:4>,
+	<appliedenergistics2:paint_ball:5>,
+	<appliedenergistics2:paint_ball:6>,
+	<appliedenergistics2:paint_ball:7>,
+	<appliedenergistics2:paint_ball:8>,
+	<appliedenergistics2:paint_ball:9>,
+	<appliedenergistics2:paint_ball:10>,
+	<appliedenergistics2:paint_ball:11>,
+	<appliedenergistics2:paint_ball:12>,
+	<appliedenergistics2:paint_ball:13>,
+	<appliedenergistics2:paint_ball:14>,
+	<appliedenergistics2:paint_ball:15>
+];
+// Lumen paint ball
+global paintBallsLumen as IItemStack[] = [
+	<appliedenergistics2:paint_ball:20>,
+	<appliedenergistics2:paint_ball:21>,
+	<appliedenergistics2:paint_ball:22>,
+	<appliedenergistics2:paint_ball:23>,
+	<appliedenergistics2:paint_ball:24>,
+	<appliedenergistics2:paint_ball:25>,
+	<appliedenergistics2:paint_ball:26>,
+	<appliedenergistics2:paint_ball:27>,
+	<appliedenergistics2:paint_ball:28>,
+	<appliedenergistics2:paint_ball:29>,
+	<appliedenergistics2:paint_ball:30>,
+	<appliedenergistics2:paint_ball:31>,
+	<appliedenergistics2:paint_ball:32>,
+	<appliedenergistics2:paint_ball:33>,
+	<appliedenergistics2:paint_ball:34>,
+	<appliedenergistics2:paint_ball:35>
+];
+
 // - Raw Igneous Intrusive Rocks Array
 global RawIgneousIntrusive as IItemStack[] = [
 	<tfc:raw/granite>, 
@@ -4083,7 +4122,7 @@ global TFC_Saws as IItemStack[] = [
 	<tfc:metal/saw_blade/wrought_iron>
 ];
 
-// All Glass Panes Array
+// - All Glass Panes Array
 global Glass_Panes_Array as IItemStack[] = [
     <minecraft:stained_glass_pane>,
     <minecraft:stained_glass_pane:1>,
@@ -4141,4 +4180,58 @@ global gcParachute as IItemStack[] = [
 	<galacticraftcore:parachute:7>,
 	<galacticraftcore:parachute:13>,
 	<galacticraftcore:parachute:1>
+];
+// - All ME Storage component
+global storageComponents as IItemStack[] = [
+	<appliedenergistics2:material:35>,
+	<appliedenergistics2:material:36>,
+	<appliedenergistics2:material:37>,
+	<appliedenergistics2:material:38>,
+	<aeadditions:storage.component>,
+	<aeadditions:storage.component:1>,
+	<aeadditions:storage.component:2>,
+	<aeadditions:storage.component:3>
+];
+// - All ME Storage cell
+global storageCells as IItemStack[] = [
+	<appliedenergistics2:storage_cell_1k>,
+	<appliedenergistics2:storage_cell_4k>,
+	<appliedenergistics2:storage_cell_16k>,
+	<appliedenergistics2:storage_cell_64k>,
+	<aeadditions:storage.physical>,
+	<aeadditions:storage.physical:1>,
+	<aeadditions:storage.physical:2>,
+	<aeadditions:storage.physical:3>
+];
+// - All ME Fluid Storage component
+global fluidStorageComponents as IItemStack[] = [
+	<appliedenergistics2:material:54>,
+	<appliedenergistics2:material:55>,
+	<appliedenergistics2:material:56>,
+	<appliedenergistics2:material:57>,
+	<aeadditions:storage.component:4>,
+	<aeadditions:storage.component:5>,
+	<aeadditions:storage.component:6>
+];
+// - All ME Fluid Storage cell
+global fluidStorageCells as IItemStack[] = [
+	<appliedenergistics2:fluid_storage_cell_1k>,
+	<appliedenergistics2:fluid_storage_cell_4k>,
+	<appliedenergistics2:fluid_storage_cell_16k>,
+	<appliedenergistics2:fluid_storage_cell_64k>,
+	<aeadditions:storage.fluid>,
+	<aeadditions:storage.fluid:1>,
+	<aeadditions:storage.fluid:2>
+];
+
+// - All ME Crafting Storage
+global craftingStorage as IItemStack[] = [
+	<appliedenergistics2:crafting_storage_1k>,
+	<appliedenergistics2:crafting_storage_4k>,
+	<appliedenergistics2:crafting_storage_16k>,
+	<appliedenergistics2:crafting_storage_64k>,
+	<extracpus:crafting_storage_256k>,
+	<extracpus:crafting_storage_1024k>,
+	<extracpus:crafting_storage_4096k>,
+	<extracpus:crafting_storage_16384k>
 ];

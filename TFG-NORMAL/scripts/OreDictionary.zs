@@ -467,6 +467,15 @@ for denseSmartCable in denseSmartCables {
         <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
     }
 }
+// Шарик с краской
+for paintBall in paintBalls {
+  <ore:ae2.paint.ball.colors>.add(paintBall);
+}
+// Люмен шарик с краской
+for paintBallLumen in paintBallsLumen {
+	<ore:ae2.paint.ball.colors>.add(paintBallLumen);
+  <ore:ae2.paint.ball.colors.lumen>.add(paintBallLumen);
+}
 // Изменчивый кристал
 <ore:gemFluix>.addItems([<appliedenergistics2:material:7>]);
 <ore:blockFluix>.addItems([<appliedenergistics2:fluix_block>]);

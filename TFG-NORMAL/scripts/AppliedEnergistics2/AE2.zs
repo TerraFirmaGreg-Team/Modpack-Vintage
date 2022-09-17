@@ -110,10 +110,14 @@ val RemoveItemRecipes as IItemStack[] = [
   <appliedenergistics2:part:140>,
   <appliedenergistics2:interface>,
   <appliedenergistics2:fluid_interface>,
-  <appliedenergistics2:fluix_block>
+  <appliedenergistics2:fluix_block>,
+  <appliedenergistics2:paint_ball:*>
 ];
 
 // --- Удаление рецептов
+
+recipes.removeByMod("extracpus");
+
 for item in RemoveItemRecipes {
     recipes.remove(item);
 }
@@ -135,225 +139,277 @@ for item in denseCoveredCables{
 // --- Добавление рецептов
 
 // Покраска, обесвечивание кабелей
-// Glass Cable
+// Стеклянные кабеля
 assembler.recipeBuilder()
-    .circuit(1)
-    .inputs([
-        <ore:stickAluminium> * 2,
-        <appliedenergistics2:part:140> * 3,])
-    .fluidInputs([<liquid:fluix> * 144])
-    .outputs([<appliedenergistics2:part:16> * 6])
-    .duration(20)
-    .EUt(480)
-    .buildAndRegister();
+  .circuit(1)
+  .inputs([
+    <ore:stickAluminium> * 2,
+    <appliedenergistics2:part:140> * 3,])
+  .fluidInputs([<liquid:fluix> * 144])
+  .outputs([<appliedenergistics2:part:16> * 6])
+  .duration(20)
+  .EUt(480)
+  .buildAndRegister();
 assembler.recipeBuilder()
-    .circuit(1)
-    .inputs([
-        <ore:stickAluminium> * 2,
-        <appliedenergistics2:part:140> * 3,
-        <ore:dustFluix>])
-    .outputs([<appliedenergistics2:part:16> * 6])
-    .duration(20).EUt(480).buildAndRegister();
+  .circuit(1)
+  .inputs([
+    <ore:stickAluminium> * 2,
+    <appliedenergistics2:part:140> * 3,
+    <ore:dustFluix>])
+  .outputs([<appliedenergistics2:part:16> * 6])
+  .duration(20).EUt(480).buildAndRegister();
 chemical_bath.recipeBuilder()
-    .inputs([<ore:ae2.cable.glass.colors>])
-    .fluidInputs([<liquid:chlorine> * 144])
-    .outputs([<appliedenergistics2:part:16>])
-    .duration(8).EUt(480).buildAndRegister();
+  .inputs([<ore:ae2.cable.glass.colors>])
+  .fluidInputs([<liquid:chlorine> * 144])
+  .outputs([<appliedenergistics2:part:16>])
+  .duration(8).EUt(480).buildAndRegister();
 for i in 0 .. 16 {
-    chemical_bath.recipeBuilder()
-        .inputs([<ore:ae2.cable.glass>])
-        .fluidInputs([colorLiquid[i] * 18])
-        .outputs([glassCables[i]])
-        .duration(20).EUt(7).buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs([<ore:ae2.cable.glass>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([glassCables[i]])
+    .duration(20).EUt(7).buildAndRegister();
+}
+// Закрытый кабель
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([<appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 108])
+  .outputs([<appliedenergistics2:part:36>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([<appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:silicone_rubber> * 216])
+  .outputs([<appliedenergistics2:part:36>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([<appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:rubber> * 432])
+  .outputs([<appliedenergistics2:part:36>])
+  .duration(20).EUt(480).buildAndRegister();
+chemical_bath.recipeBuilder()
+  .inputs([<ore:ae2.cable.covered.colors>])
+  .fluidInputs([<liquid:chlorine> * 144])
+  .outputs([<appliedenergistics2:part:36>])
+  .duration(8).EUt(480).buildAndRegister();
+for i in 0 .. 16 {
+  chemical_bath.recipeBuilder()
+    .inputs([<ore:ae2.cable.covered>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([coveredCables[i]])
+    .duration(20).EUt(7).buildAndRegister();
+}
+// Умный кабель
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:36>])
+  .outputs([<appliedenergistics2:part:56>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 108])
+  .outputs([<appliedenergistics2:part:56>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:silicone_rubber> * 216])
+  .outputs([<appliedenergistics2:part:56>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(2)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 3])
+  .fluidInputs([<liquid:rubber> * 432])
+  .outputs([<appliedenergistics2:part:56>])
+  .duration(20).EUt(480).buildAndRegister();
+chemical_bath.recipeBuilder()
+  .inputs([<ore:ae2.cable.smart.colors>])
+  .fluidInputs([<liquid:chlorine> * 144])
+  .outputs([<appliedenergistics2:part:56>])
+  .duration(8).EUt(480).buildAndRegister();
+for i in 0 .. 16 {
+  chemical_bath.recipeBuilder()
+    .inputs([<ore:ae2.cable.smart>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([smartCables[i]])
+    .duration(20).EUt(7).buildAndRegister();
+}
+// Плотный закрытый кабель
+assembler.recipeBuilder()
+  .circuit(3)
+  .inputs([<appliedenergistics2:part:36> * 4])
+  .outputs([<appliedenergistics2:part:516>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(3)
+  .inputs([<appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 432])
+  .outputs([<appliedenergistics2:part:516>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(3)
+  .inputs([<appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:silicone_rubber> * 864])
+  .outputs([<appliedenergistics2:part:516>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(3)
+  .inputs([<appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:rubber> * 1728])
+  .outputs([<appliedenergistics2:part:516>])
+  .duration(20).EUt(480).buildAndRegister();
+chemical_bath.recipeBuilder()
+  .inputs([<ore:ae2.cable.dense.covered.colors>])
+  .fluidInputs([<liquid:chlorine> * 144])
+  .outputs([<appliedenergistics2:part:516>])
+  .duration(8).EUt(480).buildAndRegister();
+for i in 0 .. 16 {
+  chemical_bath.recipeBuilder()
+    .inputs([<ore:ae2.cable.dense.covered>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([denseCoveredCables[i]])
+    .duration(20).EUt(7).buildAndRegister();
+}
+// Плотный умный кабель
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([<appliedenergistics2:part:56> * 4])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:516>])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:36> * 4])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:styrene_butadiene_rubber> * 432])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:silicone_rubber> * 864])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+assembler.recipeBuilder()
+  .circuit(4)
+  .inputs([
+    <minecraft:redstone>,
+    <minecraft:glowstone_dust>,
+    <appliedenergistics2:part:16> * 12])
+  .fluidInputs([<liquid:rubber> * 1728])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(20).EUt(480).buildAndRegister();
+chemical_bath.recipeBuilder()
+  .inputs([<ore:ae2.cable.dense.smart.colors>])
+  .fluidInputs([<liquid:chlorine> * 144])
+  .outputs([<appliedenergistics2:part:76>])
+  .duration(8).EUt(480).buildAndRegister();
+for i in 0 .. 16 {
+  chemical_bath.recipeBuilder()
+    .inputs([<ore:ae2.cable.dense.smart>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([denseSmartCables[i]])
+    .duration(20).EUt(7).buildAndRegister();
 }
 
-// Covered Cable
-assembler.recipeBuilder()
-    .circuit(1)
-    .inputs([<appliedenergistics2:part:16> * 3])
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 108])
-    .outputs([<appliedenergistics2:part:36>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(1)
-    .inputs([<appliedenergistics2:part:16> * 3])
-    .fluidInputs([<liquid:silicone_rubber> * 216])
-    .outputs([<appliedenergistics2:part:36>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(1)
-    .inputs([<appliedenergistics2:part:16> * 3])
-    .fluidInputs([<liquid:rubber> * 432])
-    .outputs([<appliedenergistics2:part:36>])
-    .duration(20).EUt(480).buildAndRegister();
-chemical_bath.recipeBuilder()
-    .inputs([<ore:ae2.cable.covered.colors>])
-    .fluidInputs([<liquid:chlorine> * 144])
-    .outputs([<appliedenergistics2:part:36>])
-    .duration(8).EUt(480).buildAndRegister();
+// Шарик с краской
 for i in 0 .. 16 {
-    chemical_bath.recipeBuilder()
-        .inputs([<ore:ae2.cable.covered>])
-        .fluidInputs([colorLiquid[i] * 18])
-        .outputs([coveredCables[i]])
-        .duration(20).EUt(7).buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs([<appliedenergistics2:material:6>])
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([paintBalls[i]])
+    .duration(20).EUt(7).buildAndRegister();
+  chemical_bath.recipeBuilder()
+    .inputs(<ore:ae2.paint.ball.colors>)
+    .fluidInputs([colorLiquid[i] * 18])
+    .outputs([paintBallsLumen[i]])
+    .duration(20).EUt(7).buildAndRegister();
+}
+for i in 0 .. 3 {
+  // Предметные ячейки
+  // Сбор
+  packer.recipeBuilder()
+    .inputs([
+      <appliedenergistics2:material:39>,
+      storageComponents[i]])
+    .outputs([storageCells[i]])
+    .property("cleanroom", "cleanroom")
+    .duration(10).EUt(7).buildAndRegister();
+  // Разбор
+  packer.recipeBuilder()
+    .inputs([storageCells[i]])
+    .outputs([
+      <appliedenergistics2:material:39>,
+      storageComponents[i]])
+    .duration(10).EUt(7).buildAndRegister();
+  // Жидкостные ячейки
+  // Сбор
+  packer.recipeBuilder()
+    .inputs([
+      <metaitem:fluid.housing>,
+      fluidStorageComponents[i]])
+    .outputs([fluidStorageCells[i]])
+    .property("cleanroom", "cleanroom")
+    .duration(10).EUt(7).buildAndRegister();
+  // Разбор
+  packer.recipeBuilder()
+    .inputs([fluidStorageCells[i]])
+    .outputs([
+      <metaitem:fluid.housing>,
+      fluidStorageComponents[i]])
+    .duration(10).EUt(7).buildAndRegister();
 }
 
-// Smart Cable
-assembler.recipeBuilder()
-    .circuit(2)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:36>
-    ])
-    .outputs([<appliedenergistics2:part:56>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(2)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 3
-    ])
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 108])
-    .outputs([<appliedenergistics2:part:56>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(2)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 3
-    ])
-    .fluidInputs([<liquid:silicone_rubber> * 216])
-    .outputs([<appliedenergistics2:part:56>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(2)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 3
-    ])
-    .fluidInputs([<liquid:rubber> * 432])
-    .outputs([<appliedenergistics2:part:56>])
-    .duration(20).EUt(480).buildAndRegister();
-chemical_bath.recipeBuilder()
-    .inputs([<ore:ae2.cable.smart.colors>])
-    .fluidInputs([<liquid:chlorine> * 144])
-    .outputs([<appliedenergistics2:part:56>])
-    .duration(8).EUt(480).buildAndRegister();
-for i in 0 .. 16 {
-    chemical_bath.recipeBuilder()
-        .inputs([<ore:ae2.cable.smart>])
-        .fluidInputs([colorLiquid[i] * 18])
-        .outputs([smartCables[i]])
-        .duration(20).EUt(7).buildAndRegister();
-}
-
-// Dense Smart Cable
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([<appliedenergistics2:part:56> * 4])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:516>
-    ])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:36> * 4
-    ])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 12
-    ])
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 432])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 12
-    ])
-    .fluidInputs([<liquid:silicone_rubber> * 864])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(4)
-    .inputs([
-        <minecraft:redstone>,
-        <minecraft:glowstone_dust>,
-        <appliedenergistics2:part:16> * 12
-    ])
-    .fluidInputs([<liquid:rubber> * 1728])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(20).EUt(480).buildAndRegister();
-chemical_bath.recipeBuilder()
-    .inputs([<ore:ae2.cable.dense.smart.colors>])
-    .fluidInputs([<liquid:chlorine> * 144])
-    .outputs([<appliedenergistics2:part:76>])
-    .duration(8).EUt(480).buildAndRegister();
-for i in 0 .. 16 {
-    chemical_bath.recipeBuilder()
-        .inputs([<ore:ae2.cable.dense.smart>])
-        .fluidInputs([colorLiquid[i] * 18])
-        .outputs([denseSmartCables[i]])
-        .duration(20).EUt(7).buildAndRegister();
-}
-
-// Dense Covered Cable
-assembler.recipeBuilder()
-    .circuit(3)
-    .inputs([<appliedenergistics2:part:36> * 4])
-    .outputs([<appliedenergistics2:part:516>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(3)
-    .inputs([<appliedenergistics2:part:16> * 12])
-    .fluidInputs([<liquid:styrene_butadiene_rubber> * 432])
-    .outputs([<appliedenergistics2:part:516>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(3)
-    .inputs([<appliedenergistics2:part:16> * 12])
-    .fluidInputs([<liquid:silicone_rubber> * 864])
-    .outputs([<appliedenergistics2:part:516>])
-    .duration(20).EUt(480).buildAndRegister();
-assembler.recipeBuilder()
-    .circuit(3)
-    .inputs([<appliedenergistics2:part:16> * 12])
-    .fluidInputs([<liquid:rubber> * 1728])
-    .outputs([<appliedenergistics2:part:516>])
-    .duration(20).EUt(480).buildAndRegister();
-chemical_bath.recipeBuilder()
-    .inputs([<ore:ae2.cable.dense.covered.colors>])
-    .fluidInputs([<liquid:chlorine> * 144])
-    .outputs([<appliedenergistics2:part:516>])
-    .duration(8).EUt(480).buildAndRegister();
-for i in 0 .. 16 {
-    chemical_bath.recipeBuilder()
-      .inputs([<ore:ae2.cable.dense.covered>])
-      .fluidInputs([colorLiquid[i] * 18])
-      .outputs([denseCoveredCables[i]])
-      .duration(20).EUt(7).buildAndRegister();
+// Хранилища крафта
+for i in 0 .. 7 {
+packer.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:crafting_unit>,
+    storageComponents[i]])
+  .outputs([craftingStorage[i]])
+  .property("cleanroom", "cleanroom")
+  .duration(10).EUt(7).buildAndRegister();
+packer.recipeBuilder()
+  .inputs([craftingStorage[i]])
+  .outputs([
+    <appliedenergistics2:crafting_unit>,
+    storageComponents[i]])
+  .duration(10).EUt(7).buildAndRegister();
 }
 
 // Сетевой инструмент
@@ -363,10 +419,9 @@ recipes.addShaped("tfg/ae2/network_tool", <appliedenergistics2:network_tool>, [
 
 // Wireless Access Point
 recipes.addShaped(<appliedenergistics2:wireless_access_point>, [
-    [null, <appliedenergistics2:material:41>, null],
-    [null, <appliedenergistics2:material:23>, null],
-    [null, <ore:ae2.cable.glass>, null]
-]);
+  [null, <appliedenergistics2:material:41>, null],
+  [null, <appliedenergistics2:material:23>, null],
+  [null, <ore:ae2.cable.glass>, null]]);
 
 // Беспроводной раздатчик сигнала
 recipes.addShaped("tfg/ae2/wireless_part", <appliedenergistics2:material:41>, [
@@ -384,26 +439,23 @@ wiremill.recipeBuilder()
 alloy_smelter.recipeBuilder()
   .inputs([
     <ore:blockGlass> * 4,
-    <ore:dustCertusQuartz> * 5
-  ])
+    <ore:dustCertusQuartz> * 5])
   .outputs([<appliedenergistics2:quartz_glass> * 4])
   .duration(20).EUt(480).buildAndRegister();
 
 // Vibrant Quartz Glass
 alloy_smelter.recipeBuilder()
-    .inputs([
-        <appliedenergistics2:quartz_glass>,
-        <minecraft:glowstone_dust> * 8
-    ])
-    .outputs([<appliedenergistics2:quartz_vibrant_glass>])
-    .duration(20).EUt(480).buildAndRegister();
+  .inputs([
+    <appliedenergistics2:quartz_glass>,
+    <minecraft:glowstone_dust> * 8])
+  .outputs([<appliedenergistics2:quartz_vibrant_glass>])
+  .duration(20).EUt(480).buildAndRegister();
 alloy_smelter.recipeBuilder()
-    .inputs([
-        <minecraft:glowstone>,
-        <ore:dustAluminium> * 8
-    ])
-    .outputs([<appliedenergistics2:quartz_vibrant_glass>])
-    .duration(20).EUt(480).buildAndRegister();
+  .inputs([
+    <minecraft:glowstone>,
+    <ore:dustAluminium> * 8])
+  .outputs([<appliedenergistics2:quartz_vibrant_glass>])
+  .duration(20).EUt(480).buildAndRegister();
 
 // Pure Fluix Crystal
 mixer.recipeBuilder()
@@ -476,40 +528,6 @@ mixer.recipeBuilder()
 	.inputs(<ore:gemExquisiteNetherQuartz>, <ore:gemExquisiteRuby>, <ore:gemChargedCertusQuartz>)
  	.outputs(<appliedenergistics2:material:7> * 12)
 	.duration(40).EUt(18).buildAndRegister();
-
-// Recycle - Storage Housing
-macerator.recipeBuilder()
-    .inputs([<appliedenergistics2:material:39>])
-    .outputs([
-        <metaitem:dustSteel> * 2,
-        <metaitem:dustTinySteel> * 2
-    ])
-    .duration(100).EUt(16).buildAndRegister();
-arc_furnace.recipeBuilder()
-    .inputs([<appliedenergistics2:material:39>])
-    .fluidInputs([<liquid:oxygen> * 56])
-    .outputs([
-        <metaitem:ingotSteel> * 2,
-        <metaitem:nuggetSteel> * 2
-    ])
-    .duration(56).EUt(30).buildAndRegister();
-
-// Recycle - Fluid Storage Housing
-macerator.recipeBuilder()
-    .inputs([<metaitem:fluid.housing>])
-    .outputs([
-        <metaitem:dustStainlessSteel> * 2,
-        <metaitem:dustTinyStainlessSteel> * 2
-    ])
-    .duration(100).EUt(16).buildAndRegister();
-arc_furnace.recipeBuilder()
-    .inputs([<metaitem:fluid.housing>])
-    .fluidInputs([<liquid:oxygen> * 56])
-    .outputs([
-        <metaitem:ingotStainlessSteel> * 2,
-        <metaitem:nuggetStainlessSteel> * 2
-    ])
-    .duration(56).EUt(30).buildAndRegister();
 
 // Inscriber Silicon Press
 laser_engraver.recipeBuilder()
@@ -590,11 +608,11 @@ forming_press.recipeBuilder()
 // Logic Processor
 circuit_assembler.recipeBuilder()
   .inputs([
-      <appliedenergistics2:material:20>,
-      <appliedenergistics2:material:18>,
-      <ore:circuitLv>,
-      <ore:componentResistor>,
-      <ore:wireFineTin> * 2])
+    <appliedenergistics2:material:20>,
+    <appliedenergistics2:material:18>,
+    <ore:circuitLv>,
+    <ore:componentResistor>,
+    <ore:wireFineTin> * 2])
 	.fluidInputs([<liquid:redstone> * 144])
   .outputs(<appliedenergistics2:material:22> * 2)
   .property("cleanroom", "cleanroom")
@@ -735,8 +753,7 @@ assembler.recipeBuilder()
   .inputs([
 		<ore:stickAluminium> * 2,
 		<appliedenergistics2:material:24> * 2,
-		<ore:crystalPureCertusQuartz>
-  ])
+		<ore:crystalPureCertusQuartz>])
   .fluidInputs([<liquid:plastic> * 144])
   .outputs([<appliedenergistics2:material:44> * 4])
   .property("cleanroom", "cleanroom")
@@ -752,8 +769,7 @@ assembler.recipeBuilder()
   .inputs([
     <ore:stickAluminium> * 2,
     <appliedenergistics2:material:24> * 2,
-    <ore:crystalPureNetherQuartz>
-  ])
+    <ore:crystalPureNetherQuartz>])
   .fluidInputs([<liquid:plastic> * 144])
   .outputs([<appliedenergistics2:material:43> * 4])
   .property("cleanroom", "cleanroom")
@@ -779,14 +795,14 @@ recipes.addShaped("tfg/ae2/advanced_card", <appliedenergistics2:material:28> * 2
 
 // Pattern Expansion Card
 recipes.addShapeless("tfg/ae2/pattern_expansion_card", <appliedenergistics2:material:58>, [
-    <appliedenergistics2:material:28>, <ore:ae2.interface.item>, 
-    <ore:ae2.interface.fluid>, <appliedenergistics2:material:23>]);
+  <appliedenergistics2:material:28>, <ore:ae2.interface.item>, 
+  <ore:ae2.interface.fluid>, <appliedenergistics2:material:23>]);
 
 // Wireless Booster
 recipes.addShaped("tfg/ae2/wireless_booster", <appliedenergistics2:material:42>, [
-    [<ore:dustFluix>, <ore:gemCertusQuartz>, <ore:plateEnderPearl>],
-    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
-    [null, null, null]]);
+  [<ore:dustFluix>, <ore:gemCertusQuartz>, <ore:plateEnderPearl>],
+  [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+  [null, null, null]]);
 
 // Fluix Pearl
 chemical_reactor.recipeBuilder()
@@ -839,132 +855,40 @@ recipes.addShaped("tfg/ae2/me_storage_housing", <appliedenergistics2:material:39
   [<appliedenergistics2:quartz_glass>, <ore:plateSteel>, <appliedenergistics2:quartz_glass>],
   [<ore:wireFineRedAlloy>, <ore:circuitLv>, <ore:wireFineRedAlloy>],
   [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
+// Recycle - Storage Housing
+macerator.recipeBuilder()
+  .inputs([<appliedenergistics2:material:39>])
+  .outputs([
+    <metaitem:dustSteel> * 2,
+    <metaitem:dustTinySteel> * 2])
+  .duration(100).EUt(16).buildAndRegister();
+arc_furnace.recipeBuilder()
+  .inputs([<appliedenergistics2:material:39>])
+  .fluidInputs([<liquid:oxygen> * 56])
+  .outputs([
+    <metaitem:ingotSteel> * 2,
+    <metaitem:nuggetSteel> * 2])
+  .duration(56).EUt(30).buildAndRegister();
 
 // ME Fluid Storage Housing
 recipes.addShaped("tfg/ae2/me_fluid_storage_housing", <metaitem:fluid.housing>, [
   [<appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>],
   [<ore:wireFineRedAlloy>, <ore:circuitLv>, <ore:wireFineRedAlloy>],
   [<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>]]);
-
-// 1k Storage Cell
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:material:39>,
-    <appliedenergistics2:material:35>
-  ])
-  .outputs([<appliedenergistics2:storage_cell_1k>])
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:storage_cell_1k>])
-    .outputs([
-        <appliedenergistics2:material:39>,
-        <appliedenergistics2:material:35>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 4k Storage Cell
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:material:39>,
-    <appliedenergistics2:material:36>
-  ])
-  .outputs([<appliedenergistics2:storage_cell_4k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:storage_cell_4k>])
-    .outputs([
-        <appliedenergistics2:material:39>,
-        <appliedenergistics2:material:36>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 16k Storage Cell
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:material:39>,
-    <appliedenergistics2:material:37>])
-  .outputs([<appliedenergistics2:storage_cell_16k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:storage_cell_16k>])
-    .outputs([
-        <appliedenergistics2:material:39>,
-        <appliedenergistics2:material:37>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 64k Storage Cell
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:material:39>,
-    <appliedenergistics2:material:38>])
-  .outputs([<appliedenergistics2:storage_cell_64k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:storage_cell_64k>])
-    .outputs([
-        <appliedenergistics2:material:39>,
-        <appliedenergistics2:material:38>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 1k Fluid Cell
-packer.recipeBuilder()
-  .inputs([
-    <metaitem:fluid.housing>,
-    <appliedenergistics2:material:54>])
-  .outputs([<appliedenergistics2:fluid_storage_cell_1k>])
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:fluid_storage_cell_1k>])
-    .outputs([
-        <metaitem:fluid.housing>,
-        <appliedenergistics2:material:54>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 4k Fluid Cell
-packer.recipeBuilder()
-  .inputs([
-    <metaitem:fluid.housing>,
-    <appliedenergistics2:material:55>])
-  .outputs([<appliedenergistics2:fluid_storage_cell_4k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:fluid_storage_cell_4k>])
-    .outputs([
-        <metaitem:fluid.housing>,
-        <appliedenergistics2:material:55>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 16k Fluid Cell
-packer.recipeBuilder()
-  .inputs([
-    <metaitem:fluid.housing>,
-    <appliedenergistics2:material:56>])
-  .outputs([<appliedenergistics2:fluid_storage_cell_16k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:fluid_storage_cell_16k>])
-    .outputs([
-        <metaitem:fluid.housing>,
-        <appliedenergistics2:material:56>])
-    .duration(10).EUt(7).buildAndRegister();
-
-// 64k Fluid Cell
-packer.recipeBuilder()
-  .inputs([
-    <metaitem:fluid.housing>,
-    <appliedenergistics2:material:57>])
-  .outputs([<appliedenergistics2:fluid_storage_cell_64k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-    .inputs([<appliedenergistics2:fluid_storage_cell_64k>])
-    .outputs([
-        <metaitem:fluid.housing>,
-        <appliedenergistics2:material:57>])
-    .duration(10).EUt(7).buildAndRegister();
+// Recycle - Fluid Storage Housing
+macerator.recipeBuilder()
+  .inputs([<metaitem:fluid.housing>])
+  .outputs([
+    <metaitem:dustStainlessSteel> * 2,
+    <metaitem:dustTinyStainlessSteel> * 2])
+  .duration(100).EUt(16).buildAndRegister();
+arc_furnace.recipeBuilder()
+  .inputs([<metaitem:fluid.housing>])
+  .fluidInputs([<liquid:oxygen> * 56])
+  .outputs([
+    <metaitem:ingotStainlessSteel> * 2,
+    <metaitem:nuggetStainlessSteel> * 2])
+  .duration(56).EUt(30).buildAndRegister();
 
 // 2³ Spatial Cell
 packer.recipeBuilder()
@@ -980,7 +904,6 @@ packer.recipeBuilder()
         <aeadditions:storage.casing:0>,
         <appliedenergistics2:material:32>])
     .duration(10).EUt(7).buildAndRegister();
-
 // 16³ Spatial Cell
 packer.recipeBuilder()
   .inputs([
@@ -995,13 +918,11 @@ packer.recipeBuilder()
         <aeadditions:storage.casing:0>,
         <appliedenergistics2:material:33>])
     .duration(10).EUt(7).buildAndRegister();
-
 // 128³ Spatial Cell
 packer.recipeBuilder()
   .inputs([
     <aeadditions:storage.casing:0>,
-    <appliedenergistics2:material:34>
-  ])
+    <appliedenergistics2:material:34>])
   .outputs([<appliedenergistics2:spatial_storage_cell_128_cubed>])
   .property("cleanroom", "cleanroom")
   .duration(10).EUt(7).buildAndRegister();
@@ -1011,6 +932,7 @@ packer.recipeBuilder()
         <aeadditions:storage.casing:0>,
         <appliedenergistics2:material:34>])
     .duration(10).EUt(7).buildAndRegister();
+
 // 1k Storage Component
 assembler.recipeBuilder()
   .inputs([
@@ -1021,7 +943,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<appliedenergistics2:material:35>])
   .duration(200).EUt(480).buildAndRegister();
-
 // 4k Storage Component
 assembler.recipeBuilder()
   .inputs([
@@ -1036,13 +957,12 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:22>,
-    <ore:circuitEv> * 4,
+    <ore:circuitEv> * 2,
     <appliedenergistics2:material:35> * 4])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<appliedenergistics2:material:36>])
   .property("cleanroom", "cleanroom")
   .duration(400).EUt(1920).buildAndRegister();
-
 // 16k Storage Component
 assembler.recipeBuilder()
   .inputs([
@@ -1057,13 +977,12 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitIv> * 4,
+    <ore:circuitIv> * 2,
     <appliedenergistics2:material:36> * 4])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<appliedenergistics2:material:37>])
   .property("cleanroom", "cleanroom")
   .duration(400).EUt(7680).buildAndRegister();
-
 // 64k Storage Component
 assembler.recipeBuilder()
   .inputs([
@@ -1079,7 +998,7 @@ assembler.recipeBuilder()
   .circuit(1)
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitLuv> * 4,
+    <ore:circuitLuv> * 2,
     <appliedenergistics2:material:37> * 4])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<appliedenergistics2:material:38>])
@@ -1096,7 +1015,6 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:54>])
   .duration(200).EUt(480).buildAndRegister();
-
 // 4k Fluid Component
 assembler.recipeBuilder()
   .inputs([
@@ -1107,17 +1025,16 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:55>])
   .property("cleanroom", "cleanroom")
-  .duration(200).EUt(1920).buildAndRegister();
+  .duration(400).EUt(1920).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:22>,
-    <ore:circuitEv> * 4,
+    <ore:circuitEv> * 2,
     <appliedenergistics2:material:54> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:55>])
   .property("cleanroom", "cleanroom")
-  .duration(400).EUt(1920).buildAndRegister();
-
+  .duration(200).EUt(1920).buildAndRegister();
 // 16k Fluid Component
 assembler.recipeBuilder()
   .inputs([
@@ -1128,17 +1045,16 @@ assembler.recipeBuilder()
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:56>])
   .property("cleanroom", "cleanroom")
-  .duration(200).EUt(480).buildAndRegister();
+  .duration(400).EUt(480).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitIv> * 4,
+    <ore:circuitIv> * 2,
     <appliedenergistics2:material:55> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:56>])
   .property("cleanroom", "cleanroom")
-  .duration(400).EUt(7680).buildAndRegister();
-
+  .duration(200).EUt(7680).buildAndRegister();
 // 64k Fluid Component
 assembler.recipeBuilder()
   .inputs([
@@ -1148,16 +1064,16 @@ assembler.recipeBuilder()
     <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:57>])
-  .duration(200).EUt(30720).buildAndRegister();
+  .duration(400).EUt(30720).buildAndRegister();
 assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
-    <ore:circuitLuv> * 4,
+    <ore:circuitLuv> * 2,
     <appliedenergistics2:material:56> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<appliedenergistics2:material:57>])
   .property("cleanroom", "cleanroom")
-  .duration(400).EUt(30720).buildAndRegister();
+  .duration(200).EUt(30720).buildAndRegister();
 
 // 2³ Spatial Component
 assembler.recipeBuilder()
@@ -1170,7 +1086,6 @@ assembler.recipeBuilder()
   .outputs([<appliedenergistics2:material:32>])
   .property("cleanroom", "cleanroom")
   .duration(200).EUt(1920).buildAndRegister();
-
 // 16³ Spatial Component
 assembler.recipeBuilder()
   .inputs([
@@ -1191,7 +1106,6 @@ assembler.recipeBuilder()
   .outputs([<appliedenergistics2:material:33>])
   .property("cleanroom", "cleanroom")
   .duration(400).EUt(7680).buildAndRegister();
-
 // 128³ Spatial Component
 assembler.recipeBuilder()
   .inputs([
@@ -1212,7 +1126,6 @@ assembler.recipeBuilder()
   .outputs([<appliedenergistics2:material:34>])
   .property("cleanroom", "cleanroom")
   .duration(400).EUt(30720).buildAndRegister();
-
 
 // Crafting Co-Processing Unit
 packer.recipeBuilder()
@@ -1357,65 +1270,6 @@ packer.recipeBuilder()
   .outputs([
     <appliedenergistics2:crafting_unit>,
     <appliedenergistics2:part:400>])
-  .duration(10).EUt(7).buildAndRegister();
-
-// Crafting Storage 1k
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:35>])
-  .outputs([<appliedenergistics2:crafting_storage_1k>])
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-  .inputs([<appliedenergistics2:crafting_storage_1k>])
-  .outputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:35>])
-  .duration(10).EUt(7).buildAndRegister();
-
-// Crafting Storage 4k
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:36>])
-  .outputs([<appliedenergistics2:crafting_storage_4k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-  .inputs([<appliedenergistics2:crafting_storage_4k>])
-  .outputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:36>])
-  .duration(10).EUt(7).buildAndRegister();
-
-// Crafting Storage 16k
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:37>])
-  .outputs([<appliedenergistics2:crafting_storage_16k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-  .inputs([<appliedenergistics2:crafting_storage_16k>])
-  .outputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:37>])
-  .duration(10).EUt(7).buildAndRegister();
-
-// Crafting Storage 64k
-packer.recipeBuilder()
-  .inputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:38>])
-  .outputs([<appliedenergistics2:crafting_storage_64k>])
-  .property("cleanroom", "cleanroom")
-  .duration(10).EUt(7).buildAndRegister();
-packer.recipeBuilder()
-  .inputs([<appliedenergistics2:crafting_storage_64k>])
-  .outputs([
-    <appliedenergistics2:crafting_unit>,
-    <appliedenergistics2:material:38>])
   .duration(10).EUt(7).buildAndRegister();
 
 // CPU Crafting Unit
