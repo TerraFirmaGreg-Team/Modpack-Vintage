@@ -128,15 +128,14 @@ recipes.addShapeless(<tfcflorae:yeast> * 3, [<tfc:wooden_bucket>.withTag({Fluid:
 
 // Сок из ...
 for i, FluidsForJuices in FluidsForJuices {
-    // Конский пресс
+  // Конский пресс
 	Press.add(ItemsForJuices[i], FluidsForJuices * 10);
-    
 	// Центрифуга
 	centrifuge.recipeBuilder()
-        .inputs(ItemsForJuices[i])
-        .circuit(30)
-        .fluidOutputs(FluidsForJuices * 25)
-        .duration(300).EUt(2).buildAndRegister();
+    .inputs(ItemsForJuices[i])
+    .circuit(30)
+    .fluidOutputs(FluidsForJuices * 25)
+    .duration(300).EUt(2).buildAndRegister();
 }
 
 // Сок из яблок
@@ -153,13 +152,12 @@ centrifuge.recipeBuilder()
 
 // Dirty Net -> Net
 for i, CleanNets in CleanNets {
-    
-    mixer.recipeBuilder()
-        .inputs(DirtyNets[i])
-        .fluidInputs(<liquid:fresh_water> * 50)
-        .circuit(17)
-        .outputs(CleanNets)
-        .duration(150).EUt(2).buildAndRegister();
+  mixer.recipeBuilder()
+    .inputs(DirtyNets[i])
+    .fluidInputs(<liquid:fresh_water> * 50)
+    .circuit(17)
+    .outputs(CleanNets)
+    .duration(150).EUt(2).buildAndRegister();
 }
 
 // Net -> Dirty Net
@@ -844,3 +842,6 @@ mixer.recipeBuilder()
 
 // GT Orange Juice -> Orange Vine
 Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:gtfo_orange_extract> * 500, <liquid:orange_wine> * 500, 72);
+
+// Ящик
+recipes.addShapeless("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:storage/crate>, [<tfc:stick_bundle>, <ore:clay>, <ore:clay>, <tfc:stick_bundle> ]);
