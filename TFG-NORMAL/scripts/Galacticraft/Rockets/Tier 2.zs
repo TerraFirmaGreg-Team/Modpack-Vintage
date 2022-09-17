@@ -29,7 +29,7 @@ assembly_line.recipeBuilder()
   .inputs(<metaitem:rocket.control.computer.tier.2>)
   .inputs(<galacticraftcore:schematic:1>)
   .inputs([CrateT2[i] * 6])
-  .fluidInputs([<liquid:soldering_alloy> * 9216])
+  .fluidInputs([<liquid:moon_liquid_air> * 9216])
   .fluidInputs([<liquid:tungsten_steel> * 4608])
   .fluidInputs([<liquid:titanium> * 4608])
   .outputs([RocketT2])
@@ -90,7 +90,7 @@ implosion_compressor.recipeBuilder()
 	.outputs(
       <galacticraftplanets:item_basic_mars:3>,
       <metaitem:dustTinyTungstenSteel> * 2)
-	.property("explosives", <minecraft:tnt> * 12)
+	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 12)
 	.duration(20).EUt(30).buildAndRegister();
 // Схема ракеты
 laser_engraver.recipeBuilder()
