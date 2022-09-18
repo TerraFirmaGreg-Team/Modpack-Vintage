@@ -27,7 +27,7 @@ customization {
   action = addbutton
   y = 1
   backgroundnormal = resources\modpack\icons\money_bags.png
-  value = /convert
+  value = /oxygenop merchants -open-menu @s 2 false
   height = 16
 }
 

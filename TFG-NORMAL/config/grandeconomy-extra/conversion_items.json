@@ -39,11 +39,6 @@
       "item": "gregtech:meta_item_1",
       "meta": 7,
       "value": 262144.0
-    },
-    {
-      "item": "tfc:wood/log/spruce",
-      "meta": 0,
-      "value": 2.0
     }
   ]
 }
