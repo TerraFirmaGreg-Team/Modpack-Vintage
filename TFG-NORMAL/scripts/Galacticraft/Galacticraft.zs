@@ -690,6 +690,21 @@ for i in 0 .. 16 {
       .outputs([gcParachute[i]])
       .duration(20).EUt(7).buildAndRegister();
 }
+assembly_line.recipeBuilder()
+   .inputs(
+      <metaitem:laserKrypton>,  
+      <metaitem:laserKrypton>,
+      <htmltech:laser_pipe_normal>,
+      <galacticraftcore:space_glass_clear> * 6, 
+      <metaitem:hull.luv>,
+      <metaitem:sensor.luv> * 2,
+      <metaitem:emitter.luv> * 4)
+   .fluidInputs(
+      <liquid:molten.incoloy_ma_956> * 1264, 
+      <liquid:molten.hssg> * 1432)
+   .outputs(<galacticraftplanets:laser_turret>)
+   .duration(1800).EUt(18100).buildAndRegister();
+
 // Посадочный модуль
 // T1
 recipes.addShaped("tfg/gc/lander_tier1", <metaitem:lander.tier.1>,
@@ -743,15 +758,3 @@ recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
 // 	.outputs(<extraplanets:schematic_tier10_electric_rocket>)
 //    .property("cleanroom", "cleanroom")
 // 	.duration(9000).EUt(122880).buildAndRegister();
-
-
-
-
-
-
-
-
-
-
-
-
