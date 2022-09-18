@@ -1,5 +1,9 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.ItemRegistry;
+
+ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
+
 
 val RocketT1 as IItemStack[] = [
   <galacticraftcore:rocket_t1>,

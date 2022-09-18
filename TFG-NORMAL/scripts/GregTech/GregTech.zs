@@ -1005,3 +1005,9 @@ recipes.addShaped("tfg/gregtech/passthrough_hatch_item", <metaitem:passthrough_h
     [null,<metaitem:conveyor.module.hv>, null],
     [<metaitem:gearSmallSteel>, <metaitem:hull.hv>, <metaitem:gearSmallSteel>],
     [null, <ore:chestWood>, null]]);
+
+// Сжатая пластина углерода
+compressor.recipeBuilder()
+    .inputs([<metaitem:plateCarbon> * 9])
+    .outputs([<metaitem:plateDenseCarbon>])
+    .duration(504).EUt(96).buildAndRegister();

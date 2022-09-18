@@ -76,6 +76,7 @@ import mods.gregtech.material.Material;
 <material:europium>.addFlags( "generate_bolt_screw");
 <material:americium>.addFlags("generate_dense");
 <material:naquadria>.addFlags("generate_dense");
+<material:carbon>.addFlags("generate_dense");
 
 
 // --- Исправление прочности и скорости копки для большего соответствия TFC

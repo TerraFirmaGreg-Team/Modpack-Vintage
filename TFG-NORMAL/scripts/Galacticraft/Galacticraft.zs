@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+
 import mods.terrafirmacraft.ItemRegistry;
 
 // --- Массивы
@@ -27,10 +28,8 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftcore:oxygen_tank_heavy_full:2700>,
 	<galacticraftcore:oxygen_mask>,
 	<galacticraftcore:oxygen_gear>,
-	<galacticraftplanets:thermal_padding>,
-	<galacticraftplanets:thermal_padding:1>,
-	<galacticraftplanets:thermal_padding:2>,
-	<galacticraftplanets:thermal_padding:3>,
+	<galacticraftplanets:thermal_padding:*>,
+   <galacticraftplanets:thermal_padding_t2:*>,
 	<galacticraftplanets:item_basic_asteroids:7>,
 	<galacticraftplanets:basic_item_venus:3>,
 	<galacticraftplanets:walkway>,
@@ -87,7 +86,12 @@ val RemoveItemRecipe as IItemStack[] = [
 	<galacticraftplanets:grapple>,
 	<galacticraftcore:nose_cone>,
    <galacticraftcore:compact_workbench>,
-   <galacticraftplanets:heavy_nose_cone>
+   <galacticraftplanets:heavy_nose_cone>,
+   <galacticraftcore:parachute:*>,
+   <galacticraftcore:cargo>,
+   <galacticraftcore:cargo:4>,
+   <galacticraftplanets:solar_array_controller>,
+   <galacticraftplanets:telepad_short>
 ];
 
 // --- Удаление рецептов
@@ -124,11 +128,6 @@ ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0
 ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
 ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0);
-
-// Размеры ракет
-ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
 
 // Плотная пластина Дэш
 bender.recipeBuilder()
@@ -293,42 +292,6 @@ recipes.addShaped("tfg/gc/freq_module", <galacticraftcore:basic_item:19>, [
    [<ore:plateLead>, <metaitem:emitter.hv>, <ore:plateLead>],
    [<metaitem:sensor.hv>, <ore:cableGtSingleRedAlloy>, <ore:circuitLv>],
    [<ore:componentResistor>, <metaitem:wireless>, <ore:componentResistor>]]);
-
-// Тепло-шлем
-recipes.addShaped("tfg/gc/thermal_helmet", <galacticraftplanets:thermal_padding>, [
-   [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_helmet>, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
-   [null, null, null]]);
-
-// Тепло-нагрудник
-recipes.addShaped("tfg/gc/thermal_chestplate", <galacticraftplanets:thermal_padding:1>, [
-   [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_chestplate>, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, <galacticraftplanets:item_basic_asteroids:7>, <galacticraftplanets:item_basic_asteroids:7>]]);
-
-// Тепло-поножи
-recipes.addShaped("tfg/gc/thermal_leggings", <galacticraftplanets:thermal_padding:2>, [
-   [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_leggings>, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>]]);
-
-// Тепло-ботинки
-recipes.addShaped("tfg/gc/thermal_boots", <galacticraftplanets:thermal_padding:3>, [
-   [null, null, null],
-   [<galacticraftplanets:item_basic_asteroids:7>, null, <galacticraftplanets:item_basic_asteroids:7>],
-   [<galacticraftplanets:item_basic_asteroids:7>, <minecraft:leather_boots>, <galacticraftplanets:item_basic_asteroids:7>]]);
-
-// Тепло-ткань 1
-recipes.addShaped("tfg/gc/thermal_material_1", <galacticraftplanets:item_basic_asteroids:7> * 2, [
-   [<ore:wool>, <ore:wool>, <ore:wool>],
-   [<extraplanets:cloth>, <extraplanets:cloth>, <extraplanets:cloth>],
-   [<ore:wool>, <ore:wool>, <ore:wool>]]);
-
-// Тепло-ткань 2
-recipes.addShaped("tfg/gc/thermal_material_2", <galacticraftplanets:basic_item_venus:3> * 2, [
-   [null, <galacticraftplanets:item_basic_asteroids:7>, null],
-   [<galacticraftplanets:item_basic_asteroids:7>, <ore:plateLead>, <galacticraftplanets:item_basic_asteroids:7>],
-   [null, <galacticraftplanets:item_basic_asteroids:7>, null]]);
 
 // Пешеходная дорожка
 recipes.addShaped("tfg/gc/walkway", <galacticraftplanets:walkway>, [
@@ -588,7 +551,7 @@ canner.recipeBuilder()
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:dustDesh> * 4)
 	.outputs(<galacticraftplanets:item_basic_mars:2>)
-	.property("explosives", <minecraft:tnt> * 2)
+	.property("explosives", 2)
 	.duration(20).EUt(380).buildAndRegister();
 
 // Баллоны

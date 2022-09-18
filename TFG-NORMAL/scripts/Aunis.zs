@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 
 
 // Удаление рецептов
-//recipes.removeByMod("aunis");
+recipes.removeByMod("aunis");
 
 // --- Добавление рецептов
 

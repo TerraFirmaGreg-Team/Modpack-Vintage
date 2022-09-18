@@ -70,24 +70,57 @@ val unSpaceSuitBoots as IItemStack[] = [
    <extraplanets:tier3_un_prepared_space_suit_boots>,
    <extraplanets:tier4_un_prepared_space_suit_boots>
 ];
+val thermalPaddingHelmet as IItemStack[] = [
+   <galacticraftplanets:thermal_padding>,
+   <galacticraftplanets:thermal_padding_t2>,
+   <extraplanets:tier3_thermal_padding>,
+   <extraplanets:tier4_thermal_padding>
+];
+val thermalPaddingChest as IItemStack[] = [
+   <galacticraftplanets:thermal_padding:1>,
+   <galacticraftplanets:thermal_padding_t2:1>,
+   <extraplanets:tier3_thermal_padding:1>,
+   <extraplanets:tier4_thermal_padding:1>
+];
+val thermalPaddingLegings as IItemStack[] = [
+   <galacticraftplanets:thermal_padding:2>,
+   <galacticraftplanets:thermal_padding_t2:2>,
+   <extraplanets:tier3_thermal_padding:2>,
+   <extraplanets:tier4_thermal_padding:2>
+];
+val thermalPaddingBoots as IItemStack[] = [
+   <galacticraftplanets:thermal_padding:3>,
+   <galacticraftplanets:thermal_padding_t2:3>,
+   <extraplanets:tier3_thermal_padding:3>,
+   <extraplanets:tier4_thermal_padding:3>
+];
 val materialSpace as IOreDictEntry[] = [
    <ore:plateDenseTitanium>,
    <ore:plateDenseTungstenSteel>,
    <ore:plateDenseRhodiumPlatedPalladium>,
    <ore:plateDenseNaquadahAlloy>
 ];
+val thermalCloth as IItemStack[] = [
+   <galacticraftplanets:item_basic_asteroids:7>,
+   <galacticraftplanets:basic_item_venus:3>,
+   <extraplanets:thermal_cloth>,
+   <extraplanets:thermal_cloth:1>
+];
+val materialThermal as IOreDictEntry[] = [
+   <ore:plateRedAlloy>,
+   <ore:plateLead>,
+   <ore:plateDesh>,
+   <ore:plateCarbon>
+];
 
 // --- Удаление рецептов
 
 // Удаление рецептов
-//recipes.removeByMod("extraplanets");
+recipes.removeByMod("extraplanets");
 
 // --- Добавление рецептов
 
 // Размеры ракет
-ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
-ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
 ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
 ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
 ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
@@ -119,7 +152,7 @@ assembler.recipeBuilder()
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:wool> * 4)
 	.outputs(<extraplanets:cloth>)
-	.property("explosives", <minecraft:tnt> * 12)
+	.property("explosives", 12)
 	.duration(20).EUt(380).buildAndRegister();
 
 // Защитные пластины
@@ -127,27 +160,26 @@ implosion_compressor.recipeBuilder()
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseTitanium> * 4)
 	.outputs(<extraplanets:tier1_armor_layer>)
-	.property("explosives", <minecraft:tnt> * 12)
+	.property("explosives", 12)
 	.duration(20).EUt(2280).buildAndRegister();
 // T2
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseTungstenSteel> * 8)
 	.outputs(<extraplanets:tier2_armor_layer>)
-	.property("explosives", <minecraft:tnt> * 24)
+	.property("explosives", 24)
 	.duration(20).EUt(8680).buildAndRegister();
 // T3
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseRhodiumPlatedPalladium> * 16)
 	.outputs(<extraplanets:tier3_armor_layer>)
-	.property("explosives", <minecraft:tnt> * 36)
+	.property("explosives", 36)
 	.duration(20).EUt(38480).buildAndRegister();
 // T4
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseNaquadahAlloy> * 32)
 	.outputs(<extraplanets:tier4_armor_layer>)
-	.property("explosives", <minecraft:tnt> * 48)
+	.property("explosives", 48)
 	.duration(20).EUt(139480).buildAndRegister();
-
 // Антирадиоционные пластины
 // T1
 assembler.recipeBuilder()
@@ -173,7 +205,6 @@ assembler.recipeBuilder()
    .inputs(<ore:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier3_radiation_layer>)
    .outputs(<extraplanets:tier4_radiation_layer>)
    .duration(1000).EUt(139480).buildAndRegister();
-
 // Пластины давления
 // T1
 assembler.recipeBuilder()
@@ -198,6 +229,32 @@ assembler.recipeBuilder()
    .circuit(4)
    .inputs(<galacticraftcore:oxygen_concentrator> * 10, <extraplanets:cloth> * 32, <extraplanets:tier3_pressure_layer>)
    .outputs(<extraplanets:tier4_pressure_layer>)
+   .duration(1000).EUt(139480).buildAndRegister();
+// Теплоизолирующая ткань
+// T1
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs(<extraplanets:cloth> * 6, <ore:wireFineBorosilicateGlass> * 4, <ore:wireFineRedAlloy> * 9)
+   .fluidInputs(<liquid:red_alloy> * 516)
+   .outputs(<galacticraftplanets:item_basic_asteroids:7>)
+   .duration(100).EUt(2280).buildAndRegister();
+// T2
+assembler.recipeBuilder()
+   .circuit(2)
+   .inputs(<extraplanets:cloth> * 12, <ore:plateDenseLead>, <galacticraftplanets:item_basic_asteroids:7> * 8)
+   .outputs(<galacticraftplanets:basic_item_venus:3>)
+   .duration(1000).EUt(8680).buildAndRegister();
+// T3
+assembler.recipeBuilder()
+   .circuit(3)
+   .inputs(<extraplanets:cloth> * 18, <ore:plateDenseDesh>, <galacticraftplanets:item_basic_asteroids:7> * 16)
+   .outputs(<extraplanets:thermal_cloth>)
+   .duration(1000).EUt(38480).buildAndRegister();
+// T4
+assembler.recipeBuilder()
+   .circuit(4)
+   .inputs(<extraplanets:cloth> * 24, <ore:plateDenseCarbon>, <galacticraftplanets:item_basic_asteroids:7> * 32)
+   .outputs(<extraplanets:thermal_cloth:1>)
    .duration(1000).EUt(139480).buildAndRegister();
 // Заготовки под скафандры
 // Шлем
@@ -276,4 +333,41 @@ assembler.recipeBuilder()
    .inputs([unSpaceSuitBoots[i]])
    .outputs(spaceSuitBoots)
    .duration(1000).EUt(8002).buildAndRegister();
+}
+//  Теплоустойчивая подкладка
+// Шлем
+for i, thermalPaddingHelmet in thermalPaddingHelmet {
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs([thermalCloth[i] * 5])
+   .inputs([materialThermal[i] * 2])
+   .outputs(thermalPaddingHelmet)
+   .duration(500).EUt(2000).buildAndRegister();
+}
+// Нагрудник
+for i, thermalPaddingChest in thermalPaddingChest {
+assembler.recipeBuilder()
+   .circuit(2)
+   .inputs([thermalCloth[i] * 8])
+   .inputs([materialThermal[i] * 2])
+   .outputs(thermalPaddingChest)
+   .duration(500).EUt(2000).buildAndRegister();
+}
+// Штаны
+for i, thermalPaddingLegings in thermalPaddingLegings {
+assembler.recipeBuilder()
+   .circuit(3)
+   .inputs([thermalCloth[i] * 7])
+   .inputs([materialThermal[i] * 2])
+   .outputs(thermalPaddingLegings)
+   .duration(500).EUt(2000).buildAndRegister();
+}
+// Ботинки
+for i, thermalPaddingBoots in thermalPaddingBoots {
+assembler.recipeBuilder()
+   .circuit(4)
+   .inputs([thermalCloth[i] * 4])
+   .inputs([materialThermal[i] * 2])
+   .outputs(thermalPaddingBoots)
+   .duration(500).EUt(2000).buildAndRegister();
 }
