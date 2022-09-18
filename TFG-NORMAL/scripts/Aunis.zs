@@ -37,6 +37,34 @@ star_forge.recipeBuilder()
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:transportrings_ring_fragment>)
   .duration(200).EUt(1880).buildAndRegister();
+// Символьный кристалл наборного устройства
+star_forge.recipeBuilder()
+  .circuit(4)
+  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>)
+	.fluidInputs([<liquid:glass> * 4000])
+  .outputs(<aunis:crystal_glyph_dhd>)
+  .duration(1000).EUt(15880).buildAndRegister();
+// Символьный кристалл звездных врат
+star_forge.recipeBuilder()
+  .circuit(5)
+  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>, <aunis:crystal_blue>)
+	.fluidInputs([<liquid:glass> * 4000])
+  .outputs(<aunis:crystal_glyph_stargate>)
+  .duration(1000).EUt(15880).buildAndRegister();
+// Символьный кристалл млечного пути
+star_forge.recipeBuilder()
+  .circuit(5)
+  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>, <aunis:crystal_red>, <aunis:crystal_blue>)
+	.fluidInputs([<liquid:glass> * 4000])
+  .outputs(<aunis:crystal_glyph_milkyway>)
+  .duration(1000).EUt(15880).buildAndRegister();
+// Символьный кристалл колец
+star_forge.recipeBuilder()
+  .circuit(6)
+  .inputs(<aunis:crystal_yellow>, <aunis:circuit_control_crystal>, <aunis:crystal_red>, <aunis:crystal_white>)
+	.fluidInputs([<liquid:glass> * 4000])
+  .outputs(<aunis:crystal_glyph_goauld>)
+  .duration(100).EUt(10880).buildAndRegister();
 
 // Circuit_control_base
 circuit_assembler.recipeBuilder()
@@ -130,23 +158,25 @@ autoclave.recipeBuilder()
   .fluidInputs([<liquid:silicon_molten_ender> * 2440])
  	.chancedOutput(<aunis:crystal_ender> * 1, 8000, 500)
   .duration(1000).EUt(13290).buildAndRegister();
-
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_yellow> * 2440])
  	.chancedOutput(<aunis:crystal_yellow> * 1, 8000, 500)
   .duration(1000).EUt(13290).buildAndRegister();
-
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_blue> * 2440])
  	.chancedOutput(<aunis:crystal_blue> * 1, 8000, 500)
   .duration(1000).EUt(13290).buildAndRegister();
-
 autoclave.recipeBuilder()
   .inputs([<aunis:crystal_fragment>])
   .fluidInputs([<liquid:silicon_molten_red> * 2440])
  	.chancedOutput(<aunis:crystal_red> * 1, 8000, 500)
+  .duration(1000).EUt(13290).buildAndRegister();
+autoclave.recipeBuilder()
+  .inputs([<aunis:crystal_fragment>])
+  .fluidInputs([<liquid:molten.stellite_100> * 2440])
+ 	.chancedOutput(<aunis:crystal_white> * 1, 8000, 500)
   .duration(1000).EUt(13290).buildAndRegister();
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()
@@ -212,3 +242,18 @@ star_forge.recipeBuilder()
   .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
   .outputs(<aunis:beamer_block>)
   .duration(200).EUt(282000).buildAndRegister();
+
+// Портативное устройство древних
+recipes.addShapeless("tfg/aunis/universe_dialer", <aunis:universe_dialer>, [<aunis:universe_dialer:1>, <galacticraftcore:space_glass_clear>]);
+assembly_line.recipeBuilder()
+  .inputs(
+    <aunis:crystal_yellow>,  
+    <ore:circuitLuv> * 9,
+		<aunis:circuit_control_naquadah>,
+    <galacticraftcore:space_glass_clear>, 
+    <ore:plateNaquadahAlloy> * 5)
+  .fluidInputs(
+    <liquid:molten.incoloy_ma_956> * 164, 
+    <liquid:molten.hssg> * 432)
+  .outputs(<aunis:universe_dialer>)
+  .duration(1800).EUt(18100).buildAndRegister();
