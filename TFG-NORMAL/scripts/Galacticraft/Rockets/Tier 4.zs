@@ -122,7 +122,7 @@ implosion_compressor.recipeBuilder()
 	.outputs(
       <extraplanets:tier4_items:3>,
       <metaitem:dustTinyRuridit> * 4)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 24)
+	.property("explosives", 24)
 	.duration(20).EUt(30).buildAndRegister();
 // Схема ракеты
 laser_engraver.recipeBuilder()

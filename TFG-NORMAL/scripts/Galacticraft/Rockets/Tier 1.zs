@@ -110,5 +110,5 @@ implosion_compressor.recipeBuilder()
 	.outputs(
       <galacticraftcore:heavy_plating>,
       <metaitem:dustTinyStainlessSteel>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 6)
+	.property("explosives", 6)
 	.duration(20).EUt(30).buildAndRegister();

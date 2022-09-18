@@ -80,7 +80,7 @@ val materialSpace as IOreDictEntry[] = [
 // --- Удаление рецептов
 
 // Удаление рецептов
-recipes.removeByMod("extraplanets");
+//recipes.removeByMod("extraplanets");
 
 // --- Добавление рецептов
 
@@ -119,7 +119,7 @@ assembler.recipeBuilder()
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:wool> * 4)
 	.outputs(<extraplanets:cloth>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 12)
+	.property("explosives", <minecraft:tnt> * 12)
 	.duration(20).EUt(380).buildAndRegister();
 
 // Защитные пластины
@@ -127,25 +127,25 @@ implosion_compressor.recipeBuilder()
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseTitanium> * 4)
 	.outputs(<extraplanets:tier1_armor_layer>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 12)
+	.property("explosives", <minecraft:tnt> * 12)
 	.duration(20).EUt(2280).buildAndRegister();
 // T2
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseTungstenSteel> * 8)
 	.outputs(<extraplanets:tier2_armor_layer>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 24)
+	.property("explosives", <minecraft:tnt> * 24)
 	.duration(20).EUt(8680).buildAndRegister();
 // T3
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseRhodiumPlatedPalladium> * 16)
 	.outputs(<extraplanets:tier3_armor_layer>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 36)
+	.property("explosives", <minecraft:tnt> * 36)
 	.duration(20).EUt(38480).buildAndRegister();
 // T4
 implosion_compressor.recipeBuilder()
 	.inputs(<ore:plateDenseNaquadahAlloy> * 32)
 	.outputs(<extraplanets:tier4_armor_layer>)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 48)
+	.property("explosives", <minecraft:tnt> * 48)
 	.duration(20).EUt(139480).buildAndRegister();
 
 // Антирадиоционные пластины

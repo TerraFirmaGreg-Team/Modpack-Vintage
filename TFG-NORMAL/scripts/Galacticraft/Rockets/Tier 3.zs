@@ -111,7 +111,7 @@ implosion_compressor.recipeBuilder()
 	.outputs(
       <galacticraftplanets:item_basic_asteroids:5>,
       <metaitem:dustTinyPlatinum> * 3)
-	.property("explosives", <minecraft:tnt> | <metaitem:dynamite> * 18)
+	.property("explosives", 18)
 	.duration(20).EUt(30).buildAndRegister();
 // Схема ракеты
 laser_engraver.recipeBuilder()

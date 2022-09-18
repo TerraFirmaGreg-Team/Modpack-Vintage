@@ -36,9 +36,9 @@ net.minecraft.client.gui.GuiMultiplayer {
 net.minecraft.client.gui.GuiIngameMenu {
 }
 
-net.minecraft.client.gui.GuiMainMenu {
+net.minecraft.client.gui.inventory.GuiInventory {
 }
 
-net.minecraft.client.gui.inventory.GuiInventory {
+net.minecraft.client.gui.GuiMainMenu {
 }
 
