@@ -1,4 +1,4 @@
-ofFogType:1
+ofFogType:3
 ofFogStart:0.8
 ofMipmapType:0
 ofOcclusionFancy:false
@@ -39,7 +39,7 @@ ofSunMoon:true
 ofVignette:0
 ofChunkUpdates:1
 ofChunkUpdatesDynamic:true
-ofTime:0
+ofTime:2
 ofClearWater:false
 ofAaLevel:0
 ofAfLevel:1
