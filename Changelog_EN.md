@@ -1,4 +1,13 @@
 # Changelog
+## Version R4.1.4 - 09/19/2022
+** Build type is now divided simply by TerraFirmaGreg: New Horizons, and prefixed with Huge
+* Fixed crash with Hot or Not.
+* Stargates are now medium in size.
+* Fixed crafting of the space suit where the same schemes were used.
+* Horizontal travel for transport rings is now 25 -> 56.
+### Update mods
+* Hot or Not
+* GTFO
 ## Version R4.1.3 - 09/19/2022
 #### [Normal, Huge]
 ### Modpack fixes
