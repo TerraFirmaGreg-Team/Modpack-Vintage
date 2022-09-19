@@ -573,15 +573,6 @@ forming_press.recipeBuilder()
     .notConsumable(<metaitem:shape.extruder.sense>)
     .outputs(<metaitem:shape.extruder.sense>)
     .duration(120).EUt(22).buildAndRegister();
-macerator.recipeBuilder()
-    .inputs(<metaitem:shape.extruder.sense>)
-    .outputs(<metaitem:dustSteel> * 4)
-    .duration(56).EUt(8).buildAndRegister();
-arc_furnace.recipeBuilder()
-    .inputs(<metaitem:shape.extruder.sense>)
-    .fluidInputs(<liquid:oxygen> * 56)
-    .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56).EUt(30).buildAndRegister();
 
 // Mold (Knife Head)
 recipes.addShaped(<metaitem:shape.extruder.knife>, [
@@ -593,15 +584,6 @@ forming_press.recipeBuilder()
     .notConsumable(<metaitem:shape.extruder.knife>)
     .outputs(<metaitem:shape.extruder.knife>)
     .duration(120).EUt(22).buildAndRegister();
-macerator.recipeBuilder()
-    .inputs(<metaitem:shape.extruder.knife>)
-    .outputs(<metaitem:dustSteel> * 4)
-    .duration(56).EUt(8).buildAndRegister();
-arc_furnace.recipeBuilder()
-    .inputs(<metaitem:shape.extruder.knife>)
-    .fluidInputs(<liquid:oxygen> * 56)
-    .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56).EUt(30).buildAndRegister();
 
 // Растительное масло
 extractor.recipeBuilder()
