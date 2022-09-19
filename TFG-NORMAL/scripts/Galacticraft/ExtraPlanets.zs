@@ -260,7 +260,7 @@ assembler.recipeBuilder()
 // Шлем
 for i, unSpaceSuitHelmet in unSpaceSuitHelmet {
 assembler.recipeBuilder()
-   .circuit(1)
+   .circuit(5)
    .inputs([materialSpace[i] * 5])
    .outputs(unSpaceSuitHelmet)
    .duration(500).EUt(2000).buildAndRegister();
@@ -268,7 +268,7 @@ assembler.recipeBuilder()
 // Нагрудник
 for i, unSpaceSuitChest in unSpaceSuitChest {
 assembler.recipeBuilder()
-   .circuit(2)
+   .circuit(6)
    .inputs([materialSpace[i] * 8])
    .outputs(unSpaceSuitChest)
    .duration(500).EUt(2000).buildAndRegister();
@@ -276,7 +276,7 @@ assembler.recipeBuilder()
 // Штаны
 for i, unSpaceSuitLegings in unSpaceSuitLegings {
 assembler.recipeBuilder()
-   .circuit(3)
+   .circuit(7)
    .inputs([materialSpace[i] * 7])
    .outputs(unSpaceSuitLegings)
    .duration(500).EUt(2000).buildAndRegister();
@@ -284,7 +284,7 @@ assembler.recipeBuilder()
 // Ботинки
 for i, unSpaceSuitBoots in unSpaceSuitBoots {
 assembler.recipeBuilder()
-   .circuit(4)
+   .circuit(8)
    .inputs([materialSpace[i] * 4])
    .outputs(unSpaceSuitBoots)
    .duration(500).EUt(2000).buildAndRegister();
@@ -293,7 +293,7 @@ assembler.recipeBuilder()
 // Шлем
 for i, spaceSuitHelmet in spaceSuitHelmet {
 assembler.recipeBuilder()
-   .circuit(1)
+   .circuit(5)
    .inputs([armorLayer[i] * 2])
    .inputs([radiationLayer[i] * 3])
    .inputs([pressureLayer[i] * 3])
@@ -304,7 +304,7 @@ assembler.recipeBuilder()
 // Нагрудник
 for i, spaceSuitChest in spaceSuitChest {
 assembler.recipeBuilder()
-   .circuit(2)
+   .circuit(6)
    .inputs([armorLayer[i] * 2])
    .inputs([radiationLayer[i] * 3])
    .inputs([pressureLayer[i] * 3])
@@ -315,7 +315,7 @@ assembler.recipeBuilder()
 // Штаны
 for i, spaceSuitLegings in spaceSuitLegings {
 assembler.recipeBuilder()
-   .circuit(3)
+   .circuit(7)
    .inputs([armorLayer[i] * 2])
    .inputs([radiationLayer[i] * 3])
    .inputs([pressureLayer[i] * 3])
@@ -326,7 +326,7 @@ assembler.recipeBuilder()
 // Ботинки
 for i, spaceSuitBoots in spaceSuitBoots {
 assembler.recipeBuilder()
-   .circuit(4)
+   .circuit(8)
    .inputs([armorLayer[i] * 2])
    .inputs([radiationLayer[i] * 3])
    .inputs([pressureLayer[i] * 3])
@@ -338,7 +338,7 @@ assembler.recipeBuilder()
 // Шлем
 for i, thermalPaddingHelmet in thermalPaddingHelmet {
 assembler.recipeBuilder()
-   .circuit(1)
+   .circuit(5)
    .inputs([thermalCloth[i] * 5])
    .inputs([materialThermal[i] * 2])
    .outputs(thermalPaddingHelmet)
@@ -347,7 +347,7 @@ assembler.recipeBuilder()
 // Нагрудник
 for i, thermalPaddingChest in thermalPaddingChest {
 assembler.recipeBuilder()
-   .circuit(2)
+   .circuit(6)
    .inputs([thermalCloth[i] * 8])
    .inputs([materialThermal[i] * 2])
    .outputs(thermalPaddingChest)
@@ -356,7 +356,7 @@ assembler.recipeBuilder()
 // Штаны
 for i, thermalPaddingLegings in thermalPaddingLegings {
 assembler.recipeBuilder()
-   .circuit(3)
+   .circuit(7)
    .inputs([thermalCloth[i] * 7])
    .inputs([materialThermal[i] * 2])
    .outputs(thermalPaddingLegings)
@@ -365,7 +365,7 @@ assembler.recipeBuilder()
 // Ботинки
 for i, thermalPaddingBoots in thermalPaddingBoots {
 assembler.recipeBuilder()
-   .circuit(4)
+   .circuit(8)
    .inputs([thermalCloth[i] * 4])
    .inputs([materialThermal[i] * 2])
    .outputs(thermalPaddingBoots)
