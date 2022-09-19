@@ -1,4 +1,84 @@
 # Changelog
+## Version R4.1.3 - 09/19/2022
+#### [Normal, Huge]
+### Modpack fixes
+* Now the primitive pump produces fresh water, not salty.
+* Some code from TFGMod associated with TFCAmbiental has been moved to TFCAmbiental itself due to a fork
+* Now copper items are generated using TFGMod.
+* Huge TFGMod optimization of UnmoldRecipe recipes, same done with TFCFlorae recipes.
+* Changed the system for generating items using TFGMod.
+* Changed the system for generating tools using TFGMod.
+* Now you immediately get a wrought iron ingot from GTCEu from the bloom (now you do not need to reforge the ingots 3 times).
+* Generation of recipes x2 ingot + hammer = plate, disabled using TFGMod.
+* Replaced mod on graves, on a fork of the same, but without any magical things that had to be turned off, just a grave and a key.
+* Now OptiFine is loaded automatically before the game starts loading.
+* The patched version of Chisel is no longer needed, you may need to remove the patched version after the update.
+* Fixed a bug where some types of LT doors would not open.
+* Fixed duplicate recipes when the same herb was used for the same TFC-Medicinal extract.
+* Now for crafting xtones zoea, any stone bricks are used.
+* All items created by ContentTweaker have been moved to TFG-mod.
+* Fixed T6 alloy recipe for missiles.
+* Removed duplicate missile stabilizer recipe.
+* Slightly lowered clouds, up to height 255, wind speed made lower.
+* Teleport to the magic is now only possible within a radius of 64 blocks. Without the use of edge pearls.
+* Almost all resource files have been moved to TFG-mod, this made loading with Curseforge faster.
+* Many TFC texture changes, they were carried over from version 1.18.
+* Changed quests, in connection with the transfer of items from ContentTweaker to TFG-mod.
+* Changed AE cell recipes due to moving items from ContentTweaker to TFG-mod.
+* Changed recipes for landers, ultra-durable plates, rocket parts, due to the transfer of items from ContentTweaker to TFG-mod.
+* Changed the extruder shape recipes for the scythe head and knife head, due to the transfer of items from ContentTweaker to TFG-mod.
+* Changed salt drying recipe due to moving items from ContentTweaker to TFG-mod.
+* The items below will disappear due to being moved from ContentTweaker to TFG-mod.
+    Bucket with salt
+    Extruder Shape (Spit)
+    Extruder Shape (Knife)
+    Landers 1-3 level
+    Rocket Corps tiers 1-6
+    Strong alloys 1-6 levels
+    Rocket computers levels 1-6
+    Blank scheme for missiles
+    Fluid body
+* Added loading seconds indicator to the loading screen.
+* The board for projectred is made from any stone.
+* Stargate mixes now take 5s instead of 50s.
+* Changed the crafting of AE paint balls, now they are made by analogy with wires.
+* Cell crafting using 4 components from the previous tier is now 2x faster and uses 2 CPUs instead of 4.
+* Added craft box TFCFlorae, also added to quests.
+* In the vessel, now you can put only food, and items that can be melted there.
+* Correction of the Little Backpack recipe.
+* The moon is now explored by default.
+* Removed TFCPaths, worked crookedly.
+* Increased chance to regenerate stones and sticks on the ground, there was a problem with this.
+* Hidden ores, in different rocks, left one by one.
+* Fixed recipe for air extraction on Jupiter.
+* Added craft turret GC.
+* Added to the list of replacement drops when breaking from vanilla items.
+* Added crafting for symbolic Aunis crystals.
+* Added crafting for the portable device of the ancient Aunis.
+* Added craft for growing white crystal Aunis.
+* Added crafting for a heat-resistant substrate from level 1-4.
+* Added/changed crafting for heat resistant fabric from level 1-4.
+* Removed duplicate parachute recipe.
+* Removed duplicate recipes for GC loaders and unloaders.
+### Update mods
+* Applied Energistics 2
+* fancy menu
+* Foamfix
+* GregTech Food Option
+* Bogosorter
+* Little Tiles
+* TFGmod
+* OpenComputers
+### New mods
+* Simple tomb
+* Mod director
+* StuffASockInIt
+### Removed mods
+* Tombstone
+* Base
+* ContentTweaker
+* TFC Paths
+
 ## Version R4.1.2 - 09/05/2022
 #### [Normal, Huge]
 ### Modpack fixes
