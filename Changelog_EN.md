@@ -20,12 +20,12 @@
 * Fixed T6 alloy recipe for missiles.
 * Removed duplicate missile stabilizer recipe.
 * Slightly lowered clouds, up to height 255, wind speed made lower.
-* Teleport to the magic is now only possible within a radius of 64 blocks. Without the use of edge pearls.
+* Teleport to the grave is now only possible within a radius of 64 blocks. Without the use of edge pearls.
 * Almost all resource files have been moved to TFG-mod, this made loading with Curseforge faster.
 * Many TFC texture changes, they were carried over from version 1.18.
 * Changed quests, in connection with the transfer of items from ContentTweaker to TFG-mod.
 * Changed AE cell recipes due to moving items from ContentTweaker to TFG-mod.
-* Changed recipes for landers, ultra-durable plates, rocket parts, due to the transfer of items from ContentTweaker to TFG-mod.
+* Changed recipes for landing modules, heavy-duty plates, rocket parts, in connection with the transfer of items from ContentTweaker to TFG-mod.
 * Changed the extruder shape recipes for the scythe head and knife head, due to the transfer of items from ContentTweaker to TFG-mod.
 * Changed salt drying recipe due to moving items from ContentTweaker to TFG-mod.
 * The items below will disappear due to being moved from ContentTweaker to TFG-mod.
@@ -55,7 +55,7 @@
 * Added to the list of replacement drops when breaking from vanilla items.
 * Added crafting for symbolic Aunis crystals.
 * Added crafting for the portable device of the ancient Aunis.
-* Added craft for growing white crystal Aunis.
+* Added craft for growing white Aunis crystal.
 * Added crafting for a heat-resistant substrate from level 1-4.
 * Added/changed crafting for heat resistant fabric from level 1-4.
 * Removed duplicate parachute recipe.
@@ -65,19 +65,19 @@
 * fancy menu
 * Foamfix
 * GregTech Food Option
-* Bogosorter
+*Bogosorter
 * Little Tiles
-* TFGmod
-* OpenComputers
+*TFGmod
+*OpenComputers
 ### New mods
 * Simple tomb
 * Mod director
 * StuffASockInIt
 ### Removed mods
 * Tombstone
-* Base
+*Base
 * ContentTweaker
-* TFC Paths
+*TFC Paths
 
 ## Version R4.1.2 - 09/05/2022
 #### [Normal, Huge]
