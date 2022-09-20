@@ -1,9 +1,0 @@
-{
-    "ctm": {
-        "ctm_version": 1,
-        "type": "CTM",
-        "layer": "CUTOUT",
-        "textures": [ "gregtech:blocks/casings/signs/machine_casing_containment_field_ctm" ],
-        "extra": { "connect_inside": true }
-    }
-}

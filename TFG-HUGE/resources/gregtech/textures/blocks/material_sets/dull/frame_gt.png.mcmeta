@@ -1,9 +1,0 @@
-{
-    "ctm": {
-        "ctm_version": 1,
-        "type": "CTM",
-        "layer": "CUTOUT",
-        "textures": [ "gregtech:blocks/material_sets/dull/frame_gt_ctm" ],
-        "extra": { "connect_inside": true }
-    }
-}

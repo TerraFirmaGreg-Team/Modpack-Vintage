@@ -11,6 +11,6 @@ recipes.addShaped(<waystones:waystone>,
 
 //Варп камушек
 recipes.addShaped(<waystones:warp_stone>,
-[[<tfc:ore/lapis_lazuli>, <ore:plateIron>|<ore:plateWroughtIron>, <tfc:ore/lapis_lazuli>],
+[[<metaitem:gemFlawedLapis>, <ore:plateIron>|<ore:plateWroughtIron>, <metaitem:gemFlawedLapis>],
  [<ore:plateIron>|<ore:plateWroughtIron>, <ore:gemExquisite>, <ore:plateIron>|<ore:plateWroughtIron>],
- [<tfc:ore/lapis_lazuli>, <ore:plateIron>|<ore:plateWroughtIron>, <tfc:ore/lapis_lazuli>]]);
+ [<metaitem:gemFlawedLapis>, <ore:plateIron>|<ore:plateWroughtIron>, <metaitem:gemFlawedLapis>]]);

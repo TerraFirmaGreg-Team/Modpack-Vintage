@@ -373,7 +373,7 @@ for item in RecipesToRemoveFromFurnace {
 // --- Добавление рецептов
 
 // Circuit Plate
-furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:RawIgneousExtrusive>);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stone>);
 
 // Illuminar dusts
 for i, Illuminars_Array in Illuminars_Array {

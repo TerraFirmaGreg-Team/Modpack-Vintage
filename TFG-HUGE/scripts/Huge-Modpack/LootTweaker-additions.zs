@@ -15,8 +15,8 @@ LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:ingotCopper>, 3);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:ingotCobalt>, 1);
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:ingotTin>, 3);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/amethyst>, 10);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/jasper>, 10);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/sapphire>, 10);
-LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<tfc:gem/topaz>, 10);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:gemAmethyst>, 10);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:gemSapphire>, 10);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:gemGreenSapphire>, 10);
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<metaitem:gemTopaz>, 10);
 

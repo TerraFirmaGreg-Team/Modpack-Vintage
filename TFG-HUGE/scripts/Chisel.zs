@@ -1,7 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-import mods.chisel.Carving;
-
 // --- Массивы
 
 val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>;

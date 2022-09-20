@@ -46,7 +46,7 @@ recipes.addShaped("tfg/littletiles/saw", <littletiles:saw>, [
 // Little Backpack
 recipes.addShaped("tfg/littletiles/container", <littletiles:container>, [
 	[null, <ore:gemLapis>, null],
-	[<ore:leather>, <ore:backpack>, <ore:leather>],
+	[<ore:leather>, <travelersbackpack:travelers_backpack>, <ore:leather>],
 	[null, <ore:leather>, null]]);
 
 // Little Wrench

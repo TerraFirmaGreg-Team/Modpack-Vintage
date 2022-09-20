@@ -1,9 +1,0 @@
-{
-    "variants": {
-        "facing=up": { "model": "torch/torch_standing" },
-        "facing=east": { "model": "torch/torch_wall" },
-        "facing=south": { "model": "torch/torch_wall", "y": 90 },
-        "facing=west": { "model": "torch/torch_wall", "y": 180 },
-        "facing=north": { "model": "torch/torch_wall", "y": 270 }
-    }
-}

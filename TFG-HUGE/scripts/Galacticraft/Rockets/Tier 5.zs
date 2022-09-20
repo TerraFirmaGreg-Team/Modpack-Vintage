@@ -1,5 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.ItemRegistry;
+
+ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
 
 val RocketT5 as IItemStack[] = [
   <extraplanets:item_tier5_rocket>,
@@ -17,17 +20,17 @@ for i, RocketT5 in RocketT5 {
 // Tier 4 - Ракета
 assembly_line.recipeBuilder()
   .inputs(<extraplanets:nose_cone_tier5>) // Обтекатель
-  .inputs(<contenttweaker:rocketbody_tier5> * 12) // Корпус
+  .inputs(<metaitem:rocket.body.tier.5> * 12) // Корпус
   .inputs(<extraplanets:tier5_items:2> * 6)  // Стабилизаторы
   .inputs(<extraplanets:tier5_items:1> * 4) // Ускорители
   .inputs(<extraplanets:tier5_items> * 4) // Двигатели
   .inputs(<galacticraftcore:oil_canister_partial:1001> * 32)
-  .inputs(<contenttweaker:lander_tier3>)
+  .inputs(<metaitem:lander.tier.3>)
   .inputs(<metaitem:electric.motor.zpm> * 4)
   .inputs(<metaitem:emitter.zpm> * 4)
   .inputs(<ore:circuitZpm> * 8)
   .inputs([CrateT5[i] * 15])
-  .inputs(<contenttweaker:rocketcontrolcomputer_tier5>)
+  .inputs(<metaitem:rocket.control.computer.tier.5>)
   .inputs(<extraplanets:schematic_tier5>)
   .fluidInputs([<liquid:americium> * 9216])
   .fluidInputs([<liquid:soldering_alloy> * 4608])
@@ -46,7 +49,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.zpm>,
     <extraplanets:tier5_items:3>])
   .fluidInputs([<liquid:soldering_alloy> * 1728])
-  .outputs(<contenttweaker:rocketcontrolcomputer_tier5>)
+  .outputs(<metaitem:rocket.control.computer.tier.5>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(122880).buildAndRegister();
 // Головоной обтекатель
@@ -69,7 +72,7 @@ assembler.recipeBuilder()
     <metaitem:voltage_coil.zpm> * 2,
     <metaitem:field.generator.zpm>])
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<contenttweaker:rocketbody_tier5>)
+  .outputs(<metaitem:rocket.body.tier.5>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(122880).buildAndRegister();
 // Стабилизаторы
@@ -106,3 +109,28 @@ assembler.recipeBuilder()
   .outputs(<extraplanets:tier5_items:1>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(122880).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembly_line.recipeBuilder()
+  .inputs([
+    <extraplanets:tier4_items:3>,
+    <ore:plateDenseAmericium> * 4,
+    <ore:plateDenseAmericium> * 4,
+    <ore:boltEuropium> * 8])
+  .fluidInputs([<liquid:soldering_alloy> * 36])
+  .outputs(<metaitem:alloy.ingot.tier.5>)
+  .duration(300).EUt(122880).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<metaitem:alloy.ingot.tier.5>])
+	.outputs(
+      <extraplanets:tier5_items:3>,
+      <metaitem:dustTinyEuropium> * 5)
+	.property("explosives", 30)
+	.duration(20).EUt(30).buildAndRegister();
+// Схема ракеты
+laser_engraver.recipeBuilder()
+  .inputs([<metaitem:schematic.blank>])
+  .notConsumable([<metaitem:glass_lens.yellow>])
+  .outputs(<extraplanets:schematic_tier5>)
+  .property("cleanroom", "cleanroom")
+  .duration(9000).EUt(122880).buildAndRegister();

@@ -1,5 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.ItemRegistry;
+
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
 
 val RocketT3 as IItemStack[] = [
   <galacticraftplanets:rocket_t3>,
@@ -18,16 +21,16 @@ for i, RocketT3 in RocketT3 {
 assembly_line.recipeBuilder()
   .inputs(<galacticraftplanets:heavy_nose_cone>)
   .inputs(<galacticraftcore:heavy_plating> * 2)
-  .inputs(<contenttweaker:rocketbody_tier3> * 12)
+  .inputs(<metaitem:rocket.body.tier.3> * 12)
   .inputs(<galacticraftplanets:item_basic_asteroids:2> * 4)
   .inputs(<galacticraftplanets:item_basic_asteroids:1>)
   .inputs(<galacticraftcore:engine:1> * 2)
   .inputs(<galacticraftcore:oil_canister_partial:1001> * 8)
-  .inputs(<contenttweaker:lander_tier3>)
+  .inputs(<metaitem:lander.tier.3>)
   .inputs(<metaitem:electric.motor.iv> * 4)
   .inputs(<metaitem:emitter.iv> * 4)
   .inputs(<ore:circuitIv> * 8)
-  .inputs(<contenttweaker:rocketcontrolcomputer_tier3>)
+  .inputs(<metaitem:rocket.control.computer.tier.3>)
   .inputs(<galacticraftplanets:schematic>)
   .inputs([CrateT3[i] * 9])
   .fluidInputs([<liquid:soldering_alloy> * 9216])
@@ -47,7 +50,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.iv>,
     <galacticraftplanets:item_basic_asteroids:5>])
   .fluidInputs([<liquid:soldering_alloy> * 1152])
-  .outputs(<contenttweaker:rocketcontrolcomputer_tier3>)
+  .outputs(<metaitem:rocket.control.computer.tier.3>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(7680).buildAndRegister();
 // Головоной обтекатель
@@ -70,7 +73,7 @@ assembler.recipeBuilder()
     <metaitem:voltage_coil.iv> * 2,
     <metaitem:field.generator.iv> * 3])
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<contenttweaker:rocketbody_tier3>)
+  .outputs(<metaitem:rocket.body.tier.3>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(7680).buildAndRegister();
 // Стабилизаторы
@@ -96,3 +99,27 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
   .duration(600).EUt(7680).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembler.recipeBuilder()
+  .circuit(3)
+  .inputs([
+    <galacticraftplanets:item_basic_mars:3>,
+    <ore:plateDenseDesh> * 4])
+  .fluidInputs([<liquid:platinum> * 72])
+  .outputs(<metaitem:alloy.ingot.tier.3>)
+  .duration(600).EUt(7680).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<metaitem:alloy.ingot.tier.3>])
+	.outputs(
+      <galacticraftplanets:item_basic_asteroids:5>,
+      <metaitem:dustTinyPlatinum> * 3)
+	.property("explosives", 18)
+	.duration(20).EUt(30).buildAndRegister();
+// Схема ракеты
+laser_engraver.recipeBuilder()
+	.inputs([<metaitem:schematic.blank>])
+  .notConsumable([<metaitem:glass_lens.magenta>])
+	.outputs(<galacticraftplanets:schematic>)
+  .property("cleanroom", "cleanroom")
+	.duration(9000).EUt(7680).buildAndRegister();

@@ -29,7 +29,7 @@
       "dimName": "Mars"
     },
     {
-      "dimID": -1012,
+      "dimID": -1502,
       "dimName": "Phobos"
     },
     {
@@ -45,7 +45,7 @@
       "dimName": "Asteroids"
     },
     {
-      "dimID": -1026,
+      "dimID": -15,
       "dimName": "Jupiter"
     },
     {
@@ -117,20 +117,8 @@
       "dimName": "Haumea"
     },
     {
-      "dimID": -1030,
-      "dimName": "Barnarda C"
-    },
-    {
       "dimID": -22,
       "dimName": "Kepler 22B"
-    },
-    {
-      "dimID": -1025,
-      "dimName": "Proxima B"
-    },
-    {
-      "dimID": -1338,
-      "dimName": "Tau Ceti F"
     }
   ]
 }

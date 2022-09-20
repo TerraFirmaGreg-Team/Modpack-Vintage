@@ -303,6 +303,8 @@ for item in TFC_Saws {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
+<ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
+
 // Ключи
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),
@@ -358,7 +360,7 @@ for item in TFC_Saws {
 //]);
 
 <ore:gtce.tool.tongs>.addItems([
-    <tfgmod:meta_tool>.withEmptyTag()
+    <metaitem:tool.tongs>
 ]);
 
 <ore:gtce.block.crate>.addItems([
@@ -391,21 +393,14 @@ for item in TFC_Saws {
 <ore:screwBronzeAny>.add(<metaitem:screwBismuthBronze>, <metaitem:screwBronze>, <metaitem:screwBlackBronze>);
 
 // Chipped Gems from GT
-for item in Gem_Chipped {
-	<ore:gemChipped>.add(item);
-}
+<ore:gemChipped>.add(<gregtech:meta_gem_chipped:*>);
 // Flawed Gems from GT
-for item in Gem_Flawed {
-	<ore:gemFlawed>.add(item);
-}
+<ore:gemFlawed>.add(<gregtech:meta_gem_flawed:*>);
 // Flawless Gems from GT
-for item in Gem_Flawless {
-	<ore:gemFlawless>.add(item);
-}
+<ore:gemFlawless>.add(<gregtech:meta_gem_flawless:*>);
 // Exquisite Gems from GT
-for item in Gem_Exquisite {
-	<ore:gemExquisite>.add(item);
-}
+<ore:gemExquisite>.add(<gregtech:meta_gem_exquisite:*>);
+
 
 <ore:knife>.add(<metaitem:tool.knife>);
 <ore:hammer>.add(<metaitem:tool.hard_hammer>);
@@ -471,6 +466,15 @@ for denseSmartCable in denseSmartCables {
     else {
         <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
     }
+}
+// Шарик с краской
+for paintBall in paintBalls {
+  <ore:ae2.paint.ball.colors>.add(paintBall);
+}
+// Люмен шарик с краской
+for paintBallLumen in paintBallsLumen {
+	<ore:ae2.paint.ball.colors>.add(paintBallLumen);
+  <ore:ae2.paint.ball.colors.lumen>.add(paintBallLumen);
 }
 // Изменчивый кристал
 <ore:gemFluix>.addItems([<appliedenergistics2:material:7>]);
@@ -602,12 +606,9 @@ for denseSmartCable in denseSmartCables {
     <ore:focusedExtractHolder>.add([
         <tfcflorae:crop/product/indigo>,
         <tfcflorae:coral/bubble/magenta>,
-        <tfcflorae:coral/fire/magenta>,
         <tfcflorae:coral/tube/magenta>,
         <tfcflorae:coral/fire/purple>,
         <tfcflorae:coral/tube/purple>,
-        <tfcflorae:coral/fan/fire/magenta>,
-        <tfcflorae:coral/fan/tube/magenta>,
         <tfcflorae:coral/fan/bubble/pink>,
         <tfcflorae:coral/fan/fire/purple>
     ]);
@@ -665,7 +666,6 @@ for denseSmartCable in denseSmartCables {
         <tfcflorae:coral/horn/white>,
         <tfcflorae:coral/brain/white>,
         <tfcflorae:coral/tube/dead>,
-        <tfcflorae:plants/glowing_sea_banana>,
         <tfcflorae:plants/blueshroom>,
         <tfcflorae:plants/sulphur_shroom>
     ]);
@@ -676,7 +676,6 @@ for denseSmartCable in denseSmartCables {
         <tfcflorae:coral/fan/bubble/magenta>,
         <tfcflorae:coral/fan/fire/magenta>,
         <tfcflorae:coral/fan/tube/magenta>,
-        <tfcflorae:coral/fan/bubble/pink>,
         <tfcflorae:coral/fan/bubble/purple>,
         <tfcflorae:coral/fan/tube/purple>
     ]);

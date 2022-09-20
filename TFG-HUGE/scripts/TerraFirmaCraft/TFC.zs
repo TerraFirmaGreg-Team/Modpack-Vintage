@@ -502,9 +502,6 @@ Anvil.addRecipe("tfg/tfc/iron_bars", <metaitem:plateWroughtIron>, <minecraft:iro
 // Iron Bars x16
 Anvil.addRecipe("tfg/tfc/iron_bars_double", <metaitem:plateDoubleWroughtIron>, <minecraft:iron_bars> * 16, 3, "general", "UPSET_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 
-// Unfinished Wrought Iron Ingot -> Wrought Iron Ingot
-Anvil.addRecipe("tfg/tfc/wrought_iron_to_wrought_iron", <tfc:metal/ingot/wrought_iron>, <metaitem:ingotWroughtIron>, 2, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
-
 // Ром
 Barrel.addRecipe("tfg/tfc/rum", <minecraft:sugar>, <liquid:hot_water> * 500, <liquid:rum> * 500, 72);
 
@@ -1254,20 +1251,19 @@ mixer.recipeBuilder().inputs(<tfc:aggregate> * 4).fluidInputs([<liquid:dye_black
 
 // Переработка тфк еды в метан
 // Мясо
-// centrifuge.recipeBuilder().inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane> * 72).duration(40).EUt(5).buildAndRegister();
-centrifuge.recipeBuilder().inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane> * 144).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(1).inputs(<ore:categoryMeat>).fluidOutputs(<liquid:methane> * 72).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(2).inputs(<ore:categoryCookedMeat>).fluidOutputs(<liquid:methane> * 144).duration(40).EUt(5).buildAndRegister();
 // Фрукты
-centrifuge.recipeBuilder().inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane> * 48).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(3).inputs(<ore:categoryFruit>).fluidOutputs(<liquid:methane> * 48).duration(40).EUt(5).buildAndRegister();
 // Овощи
-centrifuge.recipeBuilder().inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane> * 62).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(4).inputs(<ore:categoryVegetable>).fluidOutputs(<liquid:methane> * 62).duration(40).EUt(5).buildAndRegister();
 // Крупы
-centrifuge.recipeBuilder().inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane> * 44).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(5).inputs(<ore:categoryGrain>).fluidOutputs(<liquid:methane> * 44).duration(40).EUt(5).buildAndRegister();
 // Хлеб
-centrifuge.recipeBuilder().inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane> * 26).duration(40).EUt(5).buildAndRegister();
+centrifuge.recipeBuilder().circuit(6).inputs(<ore:categoryBread>).fluidOutputs(<liquid:methane> * 26).duration(40).EUt(5).buildAndRegister();
 
 // Переработка слитков
 // Первичная
-forge_hammer.recipeBuilder().inputs(<ore:ingotUnfinishedWroughtIron>).outputs(<ore:ingotWroughtIron>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<ore:ingotPigIron>).outputs(<ore:ingotHighCarbonSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<ore:ingotHighCarbonSteel>).outputs(<ore:ingotSteel>.firstItem).duration(100).EUt(2).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<ore:ingotHighCarbonBlueSteel>).outputs(<ore:ingotBlueSteel>.firstItem).duration(100).EUt(2).buildAndRegister();

@@ -1,9 +1,0 @@
-{
-    "ctm": {
-        "ctm_version": 1,
-        "type": "CTM",
-        "layer": "CUTOUT",
-        "textures": [ "gregtech:blocks/casings/gearbox/machine_casing_gearbox_stainless_steel_ctm" ],
-        "extra": { "connect_inside": true }
-    }
-}

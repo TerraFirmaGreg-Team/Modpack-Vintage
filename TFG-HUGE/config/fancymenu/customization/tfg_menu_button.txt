@@ -277,7 +277,6 @@ customization {
 }
 
 customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
@@ -296,7 +295,6 @@ customization {
 }
 
 customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
@@ -332,7 +330,6 @@ customization {
 }
 
 customization {
-  hoversound = config/fancymenu/modpack/sounds/hover.wav
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
@@ -367,7 +364,7 @@ customization {
   y = 60
   vr:value:modloaded = optifine
   backgroundnormal = resources\modpack\longbutton.png
-  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/Normal/TFG-NORMAL/mods/OptiFine_1.12.2_HD_U_G5.jar;mods/OptiFine_1.12.2_HD_U_G5.jar
+  value = http://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar;mods/OptiFine_1.12.2_HD_U_G5.jar
   height = 21
 }
 

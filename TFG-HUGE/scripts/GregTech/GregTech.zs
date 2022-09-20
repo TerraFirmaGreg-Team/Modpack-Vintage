@@ -329,6 +329,7 @@ centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
 assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();
 
 // --- Добавление рецептов
+
 // Удалить после исправления дюпа капсул
 bender.recipeBuilder()
     .inputs(<gregtech:meta_plate:324>)
@@ -342,8 +343,7 @@ recipes.addShaped("tfg/gregtech/tiered_hatch_uv", <metaitem:gcym:tiered_hatch.uv
     [<ore:plateDarmstadtium>, <ore:circuitUhv>, <ore:plateDarmstadtium>],
     [<ore:plateDarmstadtium>, <ore:plateDarmstadtium>, <ore:plateDarmstadtium>]]);
 
-
-// Регистрация металлов
+// Регистрация металлов для голов ножей
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeCopper>, "COPPER", 144, true);
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBismuthBronze>, "BISMUTH_BRONZE", 144, true);
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBronze>, "BRONZE", 144, true);
@@ -353,6 +353,33 @@ ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeSteel>, "STEEL", 144, true
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlackSteel>, "BLACK_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeRedSteel>, "RED_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeBlueSteel>, "BLUE_STEEL", 144, true);
+
+// Регистрация металлов для палок GT
+ItemRegistry.registerItemMetal(<metaitem:stickGold>, "GOLD", 72, true);
+ItemRegistry.registerItemMetal(<metaitem:stickWroughtIron>, "WROUGHT_IRON", 72, true);
+ItemRegistry.registerItemMetal(<metaitem:stickSteel>, "STEEL", 72, true);
+
+// Регистрация металлов для двойных пластин GregTech
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuth>, "BISMUTH", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBrass>, "BRASS", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBronze>, "BRONZE", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleCopper>, "COPPER", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleGold>, "GOLD", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleLead>, "LEAD", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleNickel>, "NICKEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRoseGold>, "ROSE_GOLD", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSilver>, "SILVER", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleTin>, "TIN", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBismuthBronze>, "BISMUTH_BRONZE", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackBronze>, "BLACK_BRONZE", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSteel>, "STEEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleWroughtIron>, "WROUGHT_IRON", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleSterlingSilver>, "STERLING_SILVER", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleZinc>, "ZINC", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleRedSteel>, "RED_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlueSteel>, "BLUE_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoubleBlackSteel>, "BLACK_STEEL", 288, true);
+ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, true);
 
 // Люк коксовой печи
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
@@ -537,50 +564,26 @@ assembler.recipeBuilder()
     .duration(400).EUt(16).buildAndRegister();
 
 // Extruder Shape (Sense Head)
-recipes.addShaped(<contenttweaker:shape_extruder_sense>, [
+recipes.addShaped(<metaitem:shape.extruder.sense>, [
     [null, null, null],
     [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
-
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
-    .notConsumable(<contenttweaker:shape_extruder_sense>)
-    .outputs(<contenttweaker:shape_extruder_sense>)
+    .notConsumable(<metaitem:shape.extruder.sense>)
+    .outputs(<metaitem:shape.extruder.sense>)
     .duration(120).EUt(22).buildAndRegister();
 
-macerator.recipeBuilder()
-    .inputs(<contenttweaker:shape_extruder_sense>)
-    .outputs(<metaitem:dustSteel> * 4)
-    .duration(56).EUt(8).buildAndRegister();
-
-arc_furnace.recipeBuilder()
-    .inputs(<contenttweaker:shape_extruder_sense>)
-    .fluidInputs(<liquid:oxygen> * 56)
-    .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56).EUt(30).buildAndRegister();
-
 // Mold (Knife Head)
-recipes.addShaped(<contenttweaker:shape_mold_knife>, [
+recipes.addShaped(<metaitem:shape.extruder.knife>, [
     [null, <ore:craftingToolHardHammer>, <metaitem:shape.empty>],
     [null, null, null],
     [null, null, null]]);
-
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
-    .notConsumable(<contenttweaker:shape_mold_knife>)
-    .outputs(<contenttweaker:shape_mold_knife>)
+    .notConsumable(<metaitem:shape.extruder.knife>)
+    .outputs(<metaitem:shape.extruder.knife>)
     .duration(120).EUt(22).buildAndRegister();
-
-macerator.recipeBuilder()
-    .inputs(<contenttweaker:shape_mold_knife>)
-    .outputs(<metaitem:dustSteel> * 4)
-    .duration(56).EUt(8).buildAndRegister();
-
-arc_furnace.recipeBuilder()
-    .inputs(<contenttweaker:shape_mold_knife>)
-    .fluidInputs(<liquid:oxygen> * 56)
-    .outputs(<metaitem:ingotSteel> * 4)
-    .duration(56).EUt(30).buildAndRegister();
 
 // Растительное масло
 extractor.recipeBuilder()
@@ -1000,3 +1003,9 @@ recipes.addShaped("tfg/gregtech/passthrough_hatch_item", <metaitem:passthrough_h
     [null,<metaitem:conveyor.module.hv>, null],
     [<metaitem:gearSmallSteel>, <metaitem:hull.hv>, <metaitem:gearSmallSteel>],
     [null, <ore:chestWood>, null]]);
+
+// Сжатая пластина углерода
+compressor.recipeBuilder()
+    .inputs([<metaitem:plateCarbon> * 9])
+    .outputs([<metaitem:plateDenseCarbon>])
+    .duration(504).EUt(96).buildAndRegister();

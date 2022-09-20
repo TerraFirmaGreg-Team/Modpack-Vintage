@@ -243,7 +243,7 @@ Infusion.registerRecipe("thaumcraft:seal:7F", "", <thaumcraft:seal:7>, 1,
 // Печать разрушение блоков
 Infusion.registerRecipe("thaumcraft:seal:12F", "", <thaumcraft:seal:12>, 1, 
     [<aspect:instrumentum>*10, <aspect:perditio>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
-    [<tfc:metal/pick/blue_steel>, <tfc:metal/shovel/blue_steel>, <tfc:metal/axe/blue_steel>]);
+    [<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
 
 // Печать забивание
 Infusion.registerRecipe("thaumcraft:seal:8F", "", <thaumcraft:seal:8>, 1, 
@@ -253,27 +253,27 @@ Infusion.registerRecipe("thaumcraft:seal:8F", "", <thaumcraft:seal:8>, 1,
 // Штурмовые набедренники из таумиума
 Infusion.registerRecipe("thaumcraft:fortress_legsF", "", <thaumcraft:fortress_legs>, 2, 
     [<aspect:metallum>*50, <aspect:praemunio>*25, <aspect:potentia>*25], <thaumcraft:thaumium_legs>, 
-    [<tfc:metal/ingot/gold>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
+    [<minecraft:gold_ingot>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Штурмовые латы из таумиума
 Infusion.registerRecipe("thaumcraft:fortress_chestF", "", <thaumcraft:fortress_chest>, 2, 
     [<aspect:metallum>*50, <aspect:praemunio>*30, <aspect:potentia>*25], <thaumcraft:thaumium_chest>, 
-    [<tfc:metal/ingot/gold>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
+    [<minecraft:gold_ingot>, <minecraft:leather>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Штурмовой шлем
 Infusion.registerRecipe("thaumcraft:fortress_helmF", "", <thaumcraft:fortress_helm>, 2,
     [<aspect:metallum>*50, <aspect:praemunio>*20, <aspect:potentia>*25], <thaumcraft:thaumium_helm>, 
-    [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <tfc:gem/emerald:2>, <ore:plateThaumium>, <ore:plateThaumium>]);
+    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:emerald>, <ore:plateThaumium>, <ore:plateThaumium>]);
 
 // Светильник скрещивания
 Infusion.registerRecipe("thaumcraft:lamp_fertilityF", "", <thaumcraft:lamp_fertility>, 3, 
     [<aspect:bestia>*20,<aspect:lux>*15, <aspect:desiderium>*15, <aspect:victus>*15], <thaumcraft:lamp_arcane>, 
-    [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/wheat>, <tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
+    [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/wheat>, <minecraft:gold_ingot>, <minecraft:gold_ingot>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
 
 // Светильник роста
 Infusion.registerRecipe("thaumcraft:lamp_growthF", "", <thaumcraft:lamp_growth>, 3, 
     [<aspect:herba>*20, <aspect:lux>*15, <aspect:victus>*15, <aspect:instrumentum>*15], <thaumcraft:lamp_arcane>, 
-    [<tfc:metal/ingot/gold>, <tfc:metal/ingot/gold>, <minecraft:dye:15>, <minecraft:dye:15>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})]);
+    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:dye:15>, <minecraft:dye:15>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})]);
 
 // Волшебное ручное зеркало
 Infusion.registerRecipe("thaumcraft:hand_mirrorF", "", <thaumcraft:hand_mirror>, 3, 
@@ -283,12 +283,12 @@ Infusion.registerRecipe("thaumcraft:hand_mirrorF", "", <thaumcraft:hand_mirror>,
 // Повязка реликвий
 Infusion.registerRecipe("thaumcraft:curiosity_bandF", "", <thaumcraft:curiosity_band>, 4, 
     [<aspect:cognitio>*150, <aspect:vinculum>*150, <aspect:vacuos>*50], <thaumcraft:baubles:6>, 
-    [<tfc:gem/emerald:2>, <minecraft:writable_book>, <tfc:gem/emerald:2>, <thaumcraft:primordial_pearl>]);
+    [<minecraft:emerald>, <minecraft:writable_book>, <minecraft:emerald>, <thaumcraft:primordial_pearl>]);
 
 // Мистический бур
 Infusion.registerRecipe("thaumcraft:turret:2F", "", <thaumcraft:turret:2>, 4, 
     [<aspect:machina>*100, <aspect:potentia>*25, <aspect:terra>*25, <aspect:vacuos>*25, <aspect:motus>*25], <thaumcraft:turret>,
-    [<gregtech:meta_item_1:12094>, <gregtech:meta_item_1:12094>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:nugget:10>, <thaumcraft:morphic_resonator>, <tfc:metal/pick/blue_steel>, <tfc:metal/shovel/blue_steel>]);
+    [<gregtech:meta_item_1:12094>, <gregtech:meta_item_1:12094>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:nugget:10>, <thaumcraft:morphic_resonator>, <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
 
 // Зеркало эссенсий
 Infusion.registerRecipe("thaumcraft:mirror_essentiaF", "", <thaumcraft:mirror_essentia>, 2, 
@@ -379,7 +379,7 @@ ArcaneWorkbench.registerShapedRecipe("thaumcraft:mechanism_complexF", "", 50, [<
 // Пьедистал подзарядки
 ArcaneWorkbench.registerShapedRecipe("thaumcraft:recharge_pedestalF", "", 111, [<aspect:ordo>*6, <aspect:aer>*2], <thaumcraft:recharge_pedestal>, 
 [[<ore:plateGold>, <thaumcraft:vis_resonator>, <ore:plateGold>],
- [<tfc:gem/diamond:2>, <thaumcraft:stone_arcane>, <tfc:gem/diamond:2>],
+ [<metaitem:gemFlawlessDiamond>, <thaumcraft:stone_arcane>, <metaitem:gemFlawlessDiamond>],
  [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
  
 // Заряжатель мистического верстака
@@ -463,7 +463,7 @@ ArcaneWorkbench.registerShapedRecipe("thaumcraft:essentia_inputF", "", 100, [<as
 // Шикарный пояс	
 ArcaneWorkbench.registerShapedRecipe("thaumcraft:baubles:6F", "", 1, [<aspect:terra>], <thaumcraft:baubles:6>, 
 [[null, <minecraft:leather>, null],
- [<minecraft:leather>, <tfc:gem/diamond:2>, <minecraft:leather>],
+ [<minecraft:leather>, <metaitem:gemFlawlessDiamond>, <minecraft:leather>],
  [null, <ore:plateGold>, null]]);
  
 // Обычный пояс
@@ -487,12 +487,12 @@ ArcaneWorkbench.registerShapedRecipe("thaumcraft:baubles:1F", "", 15, [<aspect:t
 // Шикарный амулет
 ArcaneWorkbench.registerShapedRecipe("thaumcraft:baubles:4F", "", 15, [<aspect:terra>], <thaumcraft:baubles:4>, 
 [[null, <tfc:animal/product/wool_yarn>, null],
- [<tfc:animal/product/wool_yarn>, <tfc:gem/diamond:2>, <tfc:animal/product/wool_yarn>],
+ [<tfc:animal/product/wool_yarn>, <metaitem:gemFlawlessDiamond>, <tfc:animal/product/wool_yarn>],
  [null, <ore:plateGold>, null]]);
  
 // Шикарное кольцо	
 ArcaneWorkbench.registerShapedRecipe("thaumcraft:baubles:5F", "", 15, [<aspect:terra>], <thaumcraft:baubles:5>, 
-[[null, <tfc:gem/diamond:2>, null],
+[[null, <metaitem:gemFlawlessDiamond>, null],
  [null, <ore:plateGold>, null],
  [null, <ore:craftingToolFile>.firstItem.withEmptyTag(), null]]);
  

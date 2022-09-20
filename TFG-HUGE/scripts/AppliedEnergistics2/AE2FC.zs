@@ -2,9 +2,7 @@ import crafttweaker.item.IItemStack;
 
 // --- Удаление рецептов
 
-// Удаление рецептов
 recipes.removeByMod("ae2fc");
-
 
 // --- Добавление рецептов
 

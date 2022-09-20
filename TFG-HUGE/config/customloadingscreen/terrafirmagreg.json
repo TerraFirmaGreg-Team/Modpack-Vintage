@@ -4,7 +4,6 @@
         "transition_duration": 0.5,
         "tip_interval": 8.0,
         "random_slide_order": false,
-
         "tip_seed": "generate_seed()",
         "slideshow_seed": "generate_seed()"
     },
@@ -12,9 +11,8 @@
         "slideshow_frame_inner(float timeSub)": "floor((time - timeSub) / image_interval)",
         "slideshow_frame(float timeSub, int count)": "random_slide_order ? ( random_int( slideshow_seed, slideshow_frame_inner(timeSub), count ) ) : slideshow_frame_inner(timeSub)"
     },
-    "variables": {
-    },
-	"renders": [
+    "variables": {},
+    "renders": [
         {
             "image": {
                 "parent": "builtin/slideshow",
@@ -59,63 +57,85 @@
                 }
             }
         },
-		{
+        {
             "image": {
                 "parent": "builtin/image",
                 "image": "modpack:tfg_logo.png",
                 "position_type": "TOP_CENTER",
                 "offset_pos": "TOP_CENTER",
-				"position":{
-					"x": "0", "y": "-40", "width": "400", "height": "160"
-				}
+                "position": {
+                    "x": "0",
+                    "y": "-40",
+                    "width": "400",
+                    "height": "160"
+                }
             }
         },
-		{
+        {
             "image": {
                 "parent": "builtin/image",
                 "image": "modpack:panel_bottom.png",
                 "position_type": "BOTTOM_CENTER",
                 "offset_pos": "BOTTOM_CENTER",
                 "colour": "0xFF_FF_FF_FF",
-                "position": {"x": "0", "y": "0", "width": "screen_width", "height": "31"}
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width",
+                    "height": "31"
+                }
             }
         },
-		{
+        {
             "image": {
                 "parent": "sample/bottom_bar",
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
                 "colour": "0xFF_00_00_00",
-                "position": {"width": "screen_width", "height": "2", "y": "-29"}
+                "position": {
+                    "width": "screen_width",
+                    "height": "2",
+                    "y": "-29"
+                }
             }
         },
-		{
+        {
             "image": {
                 "parent": "sample/bottom_bar",
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
                 "colour": "0xFF_B3_00_00",
-                "position": {"height": "2","y": "-29"}
+                "position": {
+                    "height": "2",
+                    "y": "-29"
+                }
             }
         },
-		{
+        {
             "image": {
                 "parent": "builtin/text",
                 "text": "(floor(percentage * 100)) + '%'",
                 "scale": 2,
                 "position_type": "BOTTOM_RIGHT",
                 "offset_pos": "BOTTOM_RIGHT",
-                "position": { "x": -10, "y": -5 }
+                "position": {
+                    "x": -10,
+                    "y": -5
+                }
             }
         },
         {
             "image": {
                 "parent": "builtin/text",
-                "text": "time",
+                "image": "textures/font/ascii.png",
+                "text": "floor(time * 10) / 10.0 + ' seconds'",
                 "scale": 0.6,
                 "position_type": "BOTTOM_RIGHT",
                 "offset_pos": "BOTTOM_RIGHT",
-                "position": { "x": -10, "y": -2 }
+                "position": {
+                    "x": -10,
+                    "y": -2
+                }
             }
         },
         {
@@ -125,7 +145,10 @@
                 "scale": 0.7,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
-                "position": { "x": 5, "y": -8 }
+                "position": {
+                    "x": 5,
+                    "y": -8
+                }
             }
         },
         {
@@ -135,21 +158,25 @@
                 "scale": 0.6,
                 "position_type": "BOTTOM_LEFT",
                 "offset_pos": "BOTTOM_LEFT",
-                "position": { "x": 5, "y": -2 }
+                "position": {
+                    "x": 5,
+                    "y": -2
+                }
             }
         },
-		{
+        {
             "image": {
                 "parent": "builtin/text",
                 "text": "has_tips() ? tip(floor(time / 8)) : ''",
                 "position_type": "BOTTOM_CENTER",
                 "offset_pos": "BOTTOM_CENTER",
-                "position": { "x": 0, "y": -14 }
+                "position": {
+                    "x": 0,
+                    "y": -14
+                }
             }
         }
     ],
-    "factories": [
-    ],
-    "actions": [
-    ]
+    "factories": [],
+    "actions": []
 }

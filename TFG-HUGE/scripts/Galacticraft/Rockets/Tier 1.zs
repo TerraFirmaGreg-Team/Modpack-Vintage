@@ -1,5 +1,9 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.ItemRegistry;
+
+ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
+
 
 val RocketT1 as IItemStack[] = [
   <galacticraftcore:rocket_t1>,
@@ -17,15 +21,15 @@ for i, RocketT1 in RocketT1 {
 // Tier 1 - Ракета
 assembly_line.recipeBuilder()
   .inputs(<galacticraftcore:nose_cone>)
-  .inputs(<contenttweaker:rocketbody_tier1> * 8)
+  .inputs(<metaitem:rocket.body.tier.1> * 8)
   .inputs(<galacticraftcore:rocket_fins> * 4)
   .inputs(<galacticraftcore:engine>)
   .inputs(<galacticraftcore:oil_canister_partial:1001> * 2)
-  .inputs(<contenttweaker:lander_tier1>)
+  .inputs(<metaitem:lander.tier.1>)
   .inputs(<metaitem:electric.motor.hv> * 4)
   .inputs(<metaitem:emitter.hv> * 4)
   .inputs(<ore:circuitHv> * 8)
-  .inputs(<contenttweaker:rocketcontrolcomputer_tier1>)
+  .inputs(<metaitem:rocket.control.computer.tier.1>)
   .inputs([CrateT1[i] * 3])
   .fluidInputs([<liquid:black_steel> * 9216])
   .fluidInputs([<liquid:aluminium> * 4608])
@@ -44,7 +48,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.hv>,
     <galacticraftcore:heavy_plating>])
   .fluidInputs([<liquid:soldering_alloy> * 576])
-  .outputs(<contenttweaker:rocketcontrolcomputer_tier1>)
+  .outputs(<metaitem:rocket.control.computer.tier.1>)
   .property("cleanroom", "cleanroom")
   .duration(600).EUt(480).buildAndRegister();
 // Головоной обтекатель
@@ -67,7 +71,7 @@ assembler.recipeBuilder()
     <metaitem:voltage_coil.hv> * 2,
     <metaitem:field.generator.hv>])
   .fluidInputs([<liquid:soldering_alloy> * 288])
-  .outputs(<contenttweaker:rocketbody_tier1>)
+  .outputs(<metaitem:rocket.body.tier.1>)
   .property("cleanroom", "cleanroom")
   .duration(300).EUt(480).buildAndRegister();
 // Стабилизаторы
@@ -94,3 +98,21 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine>)
   .duration(300).EUt(480).buildAndRegister();
+// Сплав сверх-прочных пластин
+assembler.recipeBuilder()
+  .circuit(1)
+  .inputs([
+    <ore:plateDenseBlackSteel>,
+    <ore:plateDenseAluminium>,
+    <ore:plateDenseBronze>])
+  .fluidInputs([<liquid:stainless_steel> * 72])
+  .outputs(<metaitem:alloy.ingot.tier.1>)
+  .duration(300).EUt(480).buildAndRegister();
+// Сверх-прочные пластины
+implosion_compressor.recipeBuilder()
+	.inputs([<metaitem:alloy.ingot.tier.1>])
+	.outputs(
+      <galacticraftcore:heavy_plating>,
+      <metaitem:dustTinyStainlessSteel>)
+	.property("explosives", 6)
+	.duration(20).EUt(30).buildAndRegister();

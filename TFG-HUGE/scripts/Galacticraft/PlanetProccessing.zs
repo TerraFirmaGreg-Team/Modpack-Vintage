@@ -102,7 +102,7 @@ distillation_tower.recipeBuilder()
    .duration(2000).EUt(7680).buildAndRegister();
 
 // - Jupiter
-GenerateRecipesForAir("jupiter", -1026, 8, 8);
+GenerateRecipesForAir("jupiter", -15, 8, 8);
 // Air
 centrifuge.recipeBuilder()
    .fluidInputs(<liquid:jupiter_air> * 10000)

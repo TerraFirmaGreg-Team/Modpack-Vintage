@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-
 // --- Удаление рецептов
 
 // Удаление рецептов
@@ -60,5 +59,5 @@ recipes.addShaped("tfg/xtones/zome", <xtones:zome> * 8, [
 
 recipes.addShaped("tfg/xtones/zoea", <xtones:zoea> * 8, [
     [<xtones:base>, <xtones:base>, <xtones:base>],
-    [<xtones:base>, <tfc:raw/diorite>, <xtones:base>],
+    [<xtones:base>, <ore:stoneBrick>, <xtones:base>],
     [<xtones:base>, <xtones:base>, <xtones:base>]]);

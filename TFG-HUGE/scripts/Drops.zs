@@ -60,58 +60,116 @@ Dropt.list("tfg/dropt/packed_ice").add(Dropt.rule()
   .addDrop(Dropt.drop().items([<cellars:packed_ice_shard>])));
 
 // При копке ванильных блоков выпадают TFC варианты
-Dropt.list("tfg/dropt/gc_fix/cobblestone").add(Dropt.rule()
-  .matchDrops([<minecraft:cobblestone>])
-  .replaceStrategy("REPLACE_ITEMS").addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));
-
+// Камень
+Dropt.list("tfg/dropt/gc_fix/basalt")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:stone"]).addDrop(Dropt.drop().items([<tfc:raw/basalt>])));
+// Гранит
+Dropt.list("tfg/dropt/gc_fix/granite")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:stone:1"]).addDrop(Dropt.drop().items([<tfc:raw/granite>])));
+// Диорит
+Dropt.list("tfg/dropt/gc_fix/diorite")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:stone:3"]).addDrop(Dropt.drop().items([<tfc:raw/diorite>])));
+// Андезит
+Dropt.list("tfg/dropt/gc_fix/andesite")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:stone:5"]).addDrop(Dropt.drop().items([<tfc:raw/andesite>])));
+// Булыжник
+Dropt.list("tfg/dropt/gc_fix/cobble")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:cobblestone"]).addDrop(Dropt.drop().items([<tfc:cobble/basalt>])));
+// Дерн
+Dropt.list("tfg/dropt/gc_fix/grass")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:grass"]).addDrop(Dropt.drop().items([<tfc:grass/basalt>])));
+// Земля
 Dropt.list("tfg/dropt/gc_fix/dirt")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:dirt"]).addDrop(Dropt.drop().items([<tfc:dirt/basalt>])));
-
+// Каменистая земля
+Dropt.list("tfg/dropt/gc_fix/coarse_dirt")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:dirt:1"]).addDrop(Dropt.drop().items([<tfcflorae:coarse_dirt/basalt>])));
+// Подзол
+Dropt.list("tfg/dropt/gc_fix/podzol")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:dirt:2"]).addDrop(Dropt.drop().items([<tfcflorae:podzol/basalt>])));
+// Гравий
 Dropt.list("tfg/dropt/gc_fix/gravel")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:gravel"]).addDrop(Dropt.drop().items([<tfc:gravel/basalt>])));
-
-Dropt.list("tfg/dropt/gc_fix/cobblestone")
+// Сундук
+Dropt.list("tfg/dropt/gc_fix/chest")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:chest:*"]).addDrop(Dropt.drop().items([<tfc:wood/chest/oak>])));
-
-Dropt.list("tfg/dropt/gc_fix/spruce_wooden_planks")
+// Доски
+Dropt.list("tfg/dropt/gc_fix/wooden_planks")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:planks:1"]).addDrop(Dropt.drop().items([<tfc:wood/planks/spruce>])));
-
-Dropt.list("tfg/dropt/gc_fix/oak_log")
+  .matchBlocks(["minecraft:planks:*"]).addDrop(Dropt.drop().items([<tfc:wood/planks/oak>])));
+// Дерево
+Dropt.list("tfg/dropt/gc_fix/log")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:log"]).addDrop(Dropt.drop().items([<tfc:wood/log/oak>])));
-
-Dropt.list("tfg/dropt/gc_fix/dark_oak_fence")
+  .matchBlocks(["minecraft:log:*"]).addDrop(Dropt.drop().items([<tfc:wood/log/oak>])));
+Dropt.list("tfg/dropt/gc_fix/log2")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:dark_oak_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence/blackwood>])));
-
+  .matchBlocks(["minecraft:log2:*"]).addDrop(Dropt.drop().items([<tfc:wood/log/oak>])));
+// Саженцы
 Dropt.list("tfg/dropt/gc_fix/birch_sapling")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:sapling"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-
-Dropt.list("tfg/dropt/gc_fix/oak_sapling")
-  .add(Dropt.rule()
-  .matchBlocks(["minecraft:sapling:1"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-
-Dropt.list("tfg/dropt/gc_fix/spruce_sapling")
-  .add(Dropt.rule()
-  .matchBlocks(["minecraft:sapling:2"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-
+  .matchBlocks(["minecraft:sapling:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
+// Пашня
 Dropt.list("tfg/dropt/gc_fix/farmland")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:farmland:*"]).addDrop(Dropt.drop().items([<tfc:dirt/granite>])));
-
+// Калитка
+Dropt.list("tfg/dropt/gc_fix/spruce_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:spruce_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/birch_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:birch_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/jungle_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:jungle_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/dark_oak_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:dark_oak_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/acacia_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:acacia_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/cocoa_fence_gate")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:cocoa_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+// Забор
+Dropt.list("tfg/dropt/gc_fix/dark_oak_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:dark_oak_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/spruce_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:spruce_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/birch_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:birch_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/jungle_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:jungle_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/dark_oak_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:dark_oak_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+Dropt.list("tfg/dropt/gc_fix/acacia_fence")
+  .add(Dropt.rule()
+  .matchBlocks(["minecraft:acacia_fence"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
+// картошка
 Dropt.list("tfg/dropt/gc_fix/seeds/potato")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:potatoes:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-
+// Пшеница
 Dropt.list("tfg/dropt/gc_fix/seeds/wheat")
   .add(Dropt.rule()
-  .matchBlocks(["minecraft:wheat"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
-
+  .matchBlocks(["minecraft:wheat:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
+// Морковка
 Dropt.list("tfg/dropt/gc_fix/seeds/carrot")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:carrots:*"]).addDrop(Dropt.drop().items([<minecraft:stick>])));
