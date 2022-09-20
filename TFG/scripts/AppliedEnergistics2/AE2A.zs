@@ -7,7 +7,7 @@ recipes.removeByMod("aeadditions");
 
 // --- Добавление рецептов
 
-for i in 4 .. 7 {
+for i in 4 .. 8 {
   // Предметные ячейки
   // Сбор
   packer.recipeBuilder()
@@ -25,7 +25,7 @@ for i in 4 .. 7 {
       storageComponents[i]])
     .duration(10).EUt(7).buildAndRegister();
 }
-for i in 4 .. 6 {
+for i in 4 .. 7 {
   // Жидкостные ячейки
   // Сбор
   packer.recipeBuilder()

@@ -360,7 +360,7 @@ for i in 0 .. 16 {
     .outputs([paintBallsLumen[i]])
     .duration(20).EUt(7).buildAndRegister();
 }
-for i in 0 .. 3 {
+for i in 0 .. 4 {
   // Предметные ячейки
   // Сбор
   packer.recipeBuilder()
@@ -396,7 +396,7 @@ for i in 0 .. 3 {
 }
 
 // Хранилища крафта
-for i in 0 .. 7 {
+for i in 0 .. 8 {
 packer.recipeBuilder()
   .inputs([
     <appliedenergistics2:crafting_unit>,
