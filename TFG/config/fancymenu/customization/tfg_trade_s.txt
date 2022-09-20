@@ -17,6 +17,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = sendmessage
+  vr:showif:modloaded = false
   backgroundhovered = resources\modpack\icons\money_bags_h.png
   label = 
   loopbackgroundanimations = true
@@ -26,9 +27,9 @@ customization {
   actionid = 53869ae9-489d-4cd1-8ea6-d2b3f86afe1d1658530522788
   action = addbutton
   y = 1
+  vr:value:modloaded = thaumcraft
   backgroundnormal = resources\modpack\icons\money_bags.png
   value = /oxygenop merchants -open-menu @s 2 false
   height = 16
 }
-
 
