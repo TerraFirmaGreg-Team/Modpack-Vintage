@@ -1848,3 +1848,5 @@ val TravelersBackpacks as IItemStack[] = [
 for item in TravelersBackpacks {
     JEI.removeAndHide(item);
 }
+// BuildingGadgets
+JEI.removeAndHide(<buildinggadgets:constructionpastecontainercreative>);
