@@ -9,7 +9,14 @@ recipes.removeByMod("aunis");
 // Transportrings_block
 star_forge.recipeBuilder()
   .circuit(1)
-  .inputs(<metaitem:blockNaquadahAlloy> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
+  .inputs(
+    <metaitem:blockNaquadahAlloy> * 4, 
+    <aunis:crystal_red>,
+    <aunis:crystal_ender>,
+    <aunis:crystal_yellow>,
+    <aunis:crystal_blue>,
+    <aunis:transportrings_ring_fragment> * 16,
+    <aunis:circuit_control_naquadah> * 2)
   .fluidInputs([<liquid:naquadah_alloy> * 1000])
   .outputs(<aunis:transportrings_goauld_block>)
   .duration(200).EUt(2800).buildAndRegister();
@@ -17,7 +24,14 @@ star_forge.recipeBuilder()
 // Transportrings_block
 star_forge.recipeBuilder()
   .circuit(1)
-  .inputs(<metaitem:blockTrinium> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <aunis:transportrings_ring_fragment> * 16, <aunis:circuit_control_naquadah> * 2)
+  .inputs(
+    <metaitem:blockTrinium> * 4, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_yellow>, 
+    <aunis:crystal_blue>, 
+    <aunis:transportrings_ring_fragment> * 16, 
+    <aunis:circuit_control_naquadah> * 2)
   .fluidInputs([<liquid:naquadah_alloy> * 1000])
   .outputs(<aunis:transportrings_ori_block>)
   .duration(200).EUt(2800).buildAndRegister();
@@ -25,7 +39,11 @@ star_forge.recipeBuilder()
 // Transportrings_controller_block
 star_forge.recipeBuilder()
   .circuit(2)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 6, <aunis:crystal_ender>, <aunis:circuit_control_naquadah>, <projectred-illumination:light_button> * 9)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 6, 
+    <aunis:crystal_ender>, 
+    <aunis:circuit_control_naquadah>, 
+    <projectred-illumination:light_button> * 9)
 	.fluidInputs([<liquid:gold> * 2000])
   .outputs(<aunis:transportrings_controller_goauld_block>)
   .duration(200).EUt(980).buildAndRegister();
@@ -33,35 +51,52 @@ star_forge.recipeBuilder()
 // Transportrings_ring_fragment>
 star_forge.recipeBuilder()
   .circuit(3)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 2, <aunis:crystal_ender>, <aunis:crystal_blue>, <aunis:circuit_control_naquadah>)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 2, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_blue>, 
+    <aunis:circuit_control_naquadah>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:transportrings_ring_fragment>)
   .duration(200).EUt(1880).buildAndRegister();
 // Символьный кристалл наборного устройства
 star_forge.recipeBuilder()
   .circuit(4)
-  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>)
+  .inputs(
+    <aunis:crystal_ender>, 
+    <aunis:circuit_control_crystal>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:crystal_glyph_dhd>)
   .duration(1000).EUt(15880).buildAndRegister();
 // Символьный кристалл звездных врат
 star_forge.recipeBuilder()
   .circuit(5)
-  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>, <aunis:crystal_blue>)
+  .inputs(
+    <aunis:crystal_ender>, 
+    <aunis:circuit_control_crystal>, 
+    <aunis:crystal_blue>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:crystal_glyph_stargate>)
   .duration(1000).EUt(15880).buildAndRegister();
 // Символьный кристалл млечного пути
 star_forge.recipeBuilder()
   .circuit(5)
-  .inputs(<aunis:crystal_ender>, <aunis:circuit_control_crystal>, <aunis:crystal_red>, <aunis:crystal_blue>)
+  .inputs(
+    <aunis:crystal_ender>, 
+    <aunis:circuit_control_crystal>, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_blue>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:crystal_glyph_milkyway>)
   .duration(1000).EUt(15880).buildAndRegister();
 // Символьный кристалл колец
 star_forge.recipeBuilder()
   .circuit(6)
-  .inputs(<aunis:crystal_yellow>, <aunis:circuit_control_crystal>, <aunis:crystal_red>, <aunis:crystal_white>)
+  .inputs(
+    <aunis:crystal_yellow>, 
+    <aunis:circuit_control_crystal>, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_white>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:crystal_glyph_goauld>)
   .duration(100).EUt(10880).buildAndRegister();
@@ -69,14 +104,24 @@ star_forge.recipeBuilder()
 // Circuit_control_base
 circuit_assembler.recipeBuilder()
   .circuit(1)
-  .inputs(<aunis:crystal_ender>, <aunis:crystal_red>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
+  .inputs(
+    <aunis:crystal_ender>, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_yellow>, 
+    <aunis:crystal_blue>)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:circuit_control_base>)
   .duration(200).EUt(15880).buildAndRegister();
 
 // Circuit_control_naquadah
 circuit_assembler.recipeBuilder()
-  .inputs(<aunis:circuit_control_base> * 2, <aunis:crystal_ender>, <aunis:crystal_red>, <aunis:crystal_yellow>, <aunis:crystal_blue>, <ore:circuitLuv> * 4)
+  .inputs(
+    <aunis:circuit_control_base> * 2, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_yellow>, 
+    <aunis:crystal_blue>, 
+    <ore:circuitLuv> * 4)
 	.fluidInputs([<liquid:glass> * 4000])
   .outputs(<aunis:circuit_control_naquadah>)
   .duration(250).EUt(22080).buildAndRegister();
@@ -103,14 +148,19 @@ assembly_line.recipeBuilder()
 // Holder_crystal
 star_forge.recipeBuilder()
   .circuit(4)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 6, <aunis:crystal_red> * 3)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 6, 
+    <aunis:crystal_red> * 3)
   .outputs(<aunis:holder_crystal>)
   .duration(200).EUt(1880).buildAndRegister();
 
 // Dhd_brb
 star_forge.recipeBuilder()
   .circuit(5)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 6, <ore:circuitLuv>, <aunis:crystal_red> * 3)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 6, 
+    <ore:circuitLuv>, 
+    <aunis:crystal_red> * 3)
 	.fluidInputs([<liquid:glass> * 18000])
   .outputs(<aunis:dhd_brb>)
   .duration(300).EUt(1880).buildAndRegister();
@@ -181,33 +231,51 @@ autoclave.recipeBuilder()
 // stargate_milkyway_base_block
 star_forge.recipeBuilder()
   .circuit(6)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 6, <aunis:stargate_ring_fragment> * 4, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_blue>, <aunis:circuit_control_naquadah>)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 6, 
+    <aunis:stargate_ring_fragment> * 4, 
+    <aunis:crystal_red>, <aunis:crystal_ender>, 
+    <aunis:crystal_blue>, 
+    <aunis:circuit_control_naquadah>)
   .outputs(<aunis:stargate_milkyway_base_block>)
   .duration(4000).EUt(130880).buildAndRegister();
 
 star_forge.recipeBuilder()
   .circuit(7)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 2, <aunis:stargate_ring_fragment> * 2, <aunis:crystal_red>)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 2, 
+    <aunis:stargate_ring_fragment> * 2, 
+    <aunis:crystal_red>)
   .outputs(<aunis:stargate_milkyway_member_block:6>)
   .duration(2000).EUt(120880).buildAndRegister();
 
 star_forge.recipeBuilder()
   .circuit(8)
-  .inputs(<metaitem:ingotNaquadahAlloy> * 4, <aunis:stargate_ring_fragment> * 2, <aunis:crystal_ender>, <aunis:crystal_yellow>, <gregtech:transparent_casing> * 4)
+  .inputs(
+    <metaitem:ingotNaquadahAlloy> * 4, 
+    <aunis:stargate_ring_fragment> * 2, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_yellow>, 
+    <gregtech:transparent_casing> * 4)
   .outputs(<aunis:stargate_milkyway_member_block:14>)
   .duration(2000).EUt(130880).buildAndRegister();
 
 // stargate_ring_fragment
 star_forge.recipeBuilder()
   .circuit(9)
-  .inputs(<metaitem:plateDenseNaquadahAlloy> * 9, <ore:batteryUv>)
+  .inputs(
+    <metaitem:plateDenseNaquadahAlloy> * 9, 
+    <ore:batteryUv>)
   .outputs(<aunis:stargate_ring_fragment> * 2)
   .duration(2000).EUt(121880).buildAndRegister();
 
 // capacitor_block_empty
 star_forge.recipeBuilder()
   .circuit(10)
-  .inputs(<metaitem:plateDenseNaquadahAlloy> * 4, <aunis:crystal_red> * 4, <ore:batteryLuv> * 6)
+  .inputs(
+    <metaitem:plateDenseNaquadahAlloy> * 4, 
+    <aunis:crystal_red> * 4, 
+    <ore:batteryLuv> * 6)
   .outputs(<aunis:capacitor_block_empty>)
   .duration(2000).EUt(130880).buildAndRegister();
 
@@ -230,7 +298,12 @@ star_forge.recipeBuilder()
 // circuit_control_crystal>
 star_forge.recipeBuilder()
   .circuit(13)
-  .inputs(<metaitem:foilNaquadahAlloy> * 9, <aunis:circuit_control_naquadah> * 4, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
+  .inputs(
+    <metaitem:foilNaquadahAlloy> * 9, 
+    <aunis:circuit_control_naquadah> * 4, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_yellow>, 
+    <aunis:crystal_blue>)
   .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
   .outputs(<aunis:circuit_control_crystal>)
   .duration(200).EUt(280000).buildAndRegister();
@@ -238,7 +311,13 @@ star_forge.recipeBuilder()
 // beamer_block
 star_forge.recipeBuilder()
   .circuit(14)
-  .inputs(<metaitem:plateDenseNaquadahAlloy> * 2, <aunis:circuit_control_naquadah>, <aunis:crystal_red>, <aunis:crystal_ender>, <aunis:crystal_yellow>, <aunis:crystal_blue>)
+  .inputs(
+    <metaitem:plateDenseNaquadahAlloy> * 2, 
+    <aunis:circuit_control_naquadah>, 
+    <aunis:crystal_red>, 
+    <aunis:crystal_ender>, 
+    <aunis:crystal_yellow>, 
+    <aunis:crystal_blue>)
   .fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
   .outputs(<aunis:beamer_block>)
   .duration(200).EUt(282000).buildAndRegister();
