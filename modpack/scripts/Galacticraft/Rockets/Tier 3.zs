@@ -37,7 +37,7 @@ assembly_line.recipeBuilder()
   .fluidInputs([<liquid:desh> * 4608])
   .fluidInputs([<liquid:platinum> * 2608])
   .outputs([RocketT3])
-  .duration(1200).EUt(7680).buildAndRegister();
+  .duration(1200).EUt(4096).buildAndRegister();
 }
 // Ракетный компьютер
 assembler.recipeBuilder()
@@ -52,7 +52,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 1152])
   .outputs(<metaitem:rocket.control.computer.tier.3>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(7680).buildAndRegister();
+  .duration(600).EUt(4096).buildAndRegister();
 // Головоной обтекатель
 assembler.recipeBuilder()
   .circuit(3)
@@ -64,7 +64,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:heavy_nose_cone>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(7680).buildAndRegister();
+  .duration(600).EUt(4096).buildAndRegister();
 // Корпус
 assembler.recipeBuilder()
   .circuit(3)
@@ -75,7 +75,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<metaitem:rocket.body.tier.3>)
   .property("cleanroom", "cleanroom")
-  .duration(300).EUt(7680).buildAndRegister();
+  .duration(300).EUt(4096).buildAndRegister();
 // Стабилизаторы
 assembler.recipeBuilder()
   .circuit(3)
@@ -86,7 +86,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:2>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(7680).buildAndRegister();
+  .duration(600).EUt(4096).buildAndRegister();
 // Ракетные двигатели
 assembler.recipeBuilder()
   .circuit(3)
@@ -98,7 +98,7 @@ assembler.recipeBuilder()
     <metaitem:cableGtSingleAnnealedCopper> * 16])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
-  .duration(600).EUt(7680).buildAndRegister();
+  .duration(600).EUt(4096).buildAndRegister();
 // Сплав сверх-прочных пластин
 assembler.recipeBuilder()
   .circuit(3)
@@ -107,7 +107,7 @@ assembler.recipeBuilder()
     <metaitem:plateDenseDesh> * 4])
   .fluidInputs([<liquid:platinum> * 72])
   .outputs(<metaitem:alloy.ingot.tier.3>)
-  .duration(600).EUt(7680).buildAndRegister();
+  .duration(600).EUt(4096).buildAndRegister();
 // Сверх-прочные пластины
 implosion_compressor.recipeBuilder()
 	.inputs([<metaitem:alloy.ingot.tier.3>])
@@ -122,4 +122,4 @@ laser_engraver.recipeBuilder()
   .notConsumable([<metaitem:glass_lens.magenta>])
 	.outputs(<galacticraftplanets:schematic>)
   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(7680).buildAndRegister();
+	.duration(9000).EUt(4096).buildAndRegister();

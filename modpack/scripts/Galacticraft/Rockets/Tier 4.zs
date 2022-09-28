@@ -36,7 +36,7 @@ assembly_line.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 4608])
   .fluidInputs([<liquid:ruridit> * 4608])
   .outputs([RocketT4])
-  .duration(1200).EUt(30720).buildAndRegister();
+  .duration(1200).EUt(16384).buildAndRegister();
 }
 // Ракетный компьютер
 assembler.recipeBuilder()
@@ -51,7 +51,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 1728])
   .outputs(<metaitem:rocket.control.computer.tier.4>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(30720).buildAndRegister();
+  .duration(600).EUt(16384).buildAndRegister();
 // Головоной обтекатель
 assembler.recipeBuilder()
   .circuit(4)
@@ -63,7 +63,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:nose_cone_tier4>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(30720).buildAndRegister();
+  .duration(600).EUt(16384).buildAndRegister();
 // Корпус
 assembler.recipeBuilder()
   .circuit(4)
@@ -74,7 +74,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<metaitem:rocket.body.tier.4>)
   .property("cleanroom", "cleanroom")
-  .duration(300).EUt(30720).buildAndRegister();
+  .duration(300).EUt(16384).buildAndRegister();
 // Стабилизаторы
 assembler.recipeBuilder()
   .circuit(4)
@@ -85,7 +85,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items:2>)
   .property("cleanroom", "cleanroom")
-  .duration(300).EUt(30720).buildAndRegister();
+  .duration(300).EUt(16384).buildAndRegister();
 // Ракетные двигатели
 assembler.recipeBuilder()
   .circuit(4)
@@ -97,7 +97,7 @@ assembler.recipeBuilder()
     <metaitem:cableGtSingleAnnealedCopper> * 16])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items>)
-  .duration(300).EUt(30720).buildAndRegister();
+  .duration(300).EUt(16384).buildAndRegister();
 // Ускорители
 assembler.recipeBuilder()
   .circuit(4)
@@ -108,7 +108,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier4_items:1>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(30720).buildAndRegister();
+  .duration(600).EUt(16384).buildAndRegister();
 // Сплав сверх-прочных пластин
 assembly_line.recipeBuilder()
   .inputs([
@@ -118,7 +118,7 @@ assembly_line.recipeBuilder()
     <metaitem:boltRuridit> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 36])
   .outputs(<metaitem:alloy.ingot.tier.4>)
-  .duration(300).EUt(30720).buildAndRegister();
+  .duration(300).EUt(16384).buildAndRegister();
 // Сверх-прочные пластины
 implosion_compressor.recipeBuilder()
 	.inputs([<metaitem:alloy.ingot.tier.4>])
@@ -133,4 +133,4 @@ laser_engraver.recipeBuilder()
   .notConsumable([<metaitem:glass_lens.light_blue>])
 	.outputs(<extraplanets:schematic_tier4>)
   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(30720).buildAndRegister();
+	.duration(9000).EUt(16384).buildAndRegister();

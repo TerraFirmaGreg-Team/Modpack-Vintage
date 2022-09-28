@@ -686,34 +686,6 @@ recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
    [<metaitem:plateDenseBlackSteel>, <metaitem:plateBlackSteel>, <metaitem:plateDenseBlackSteel>]]);
 
 // Схема ракеты
-// // T7
-// laser_engraver.recipeBuilder()
-// 	.inputs([<metaitem:schematic.blank>])
-//    .notConsumable([<metaitem:glass_lens.pink>])
-// 	.outputs(<extraplanets:schematic_tier7>)
-//    .property("cleanroom", "cleanroom")
-// 	.duration(9000).EUt(491520).buildAndRegister();
-// // T8
-// laser_engraver.recipeBuilder()
-// 	.inputs([<metaitem:schematic.blank>])
-//    .notConsumable([<metaitem:glass_lens.gray>])
-// 	.outputs(<extraplanets:schematic_tier8>)
-//    .property("cleanroom", "cleanroom")
-// 	.duration(9000).EUt(491520).buildAndRegister();
-// // T9
-// laser_engraver.recipeBuilder()
-// 	.inputs([<metaitem:schematic.blank>])
-//    .notConsumable([<metaitem:glass_lens.light_gray>])
-// 	.outputs(<extraplanets:schematic_tier9>)
-//    .property("cleanroom", "cleanroom")
-// 	.duration(9000).EUt(122880).buildAndRegister();
-// // T10
-// laser_engraver.recipeBuilder()
-// 	.inputs([<metaitem:schematic.blank>])
-//    .notConsumable([<metaitem:glass_lens.cyan>])
-// 	.outputs(<extraplanets:schematic_tier10>)
-//    .property("cleanroom", "cleanroom")
-// 	.duration(9000).EUt(30720).buildAndRegister();
 // // T10 - Элекстрическая ракета
 // laser_engraver.recipeBuilder()
 // 	.inputs([<metaitem:schematic.blank>])

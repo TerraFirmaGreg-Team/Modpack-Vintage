@@ -36,7 +36,7 @@ assembly_line.recipeBuilder()
   .fluidInputs([<liquid:tungsten_steel> * 4608])
   .fluidInputs([<liquid:titanium> * 4608])
   .outputs([RocketT2])
-  .duration(1200).EUt(1920).buildAndRegister();
+  .duration(1200).EUt(1024).buildAndRegister();
 }
 // Ракетный компьютер
 assembler.recipeBuilder()
@@ -51,7 +51,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 864])
   .outputs(<metaitem:rocket.control.computer.tier.2>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(1920).buildAndRegister();
+  .duration(600).EUt(1024).buildAndRegister();
 // Корпус
 assembler.recipeBuilder()
   .circuit(2)
@@ -62,7 +62,7 @@ assembler.recipeBuilder()
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<metaitem:rocket.body.tier.2>)
   .property("cleanroom", "cleanroom")
-  .duration(300).EUt(1920).buildAndRegister();
+  .duration(300).EUt(1024).buildAndRegister();
 // Ускорители
 assembler.recipeBuilder()// метеоритоное железо
   .circuit(2)
@@ -77,7 +77,7 @@ assembler.recipeBuilder()// метеоритоное железо
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine:1>)
   .property("cleanroom", "cleanroom")
-  .duration(600).EUt(1920).buildAndRegister();
+  .duration(600).EUt(1024).buildAndRegister();
 // Сплав сверх-прочных пластин
 assembler.recipeBuilder()
   .circuit(2)
@@ -86,7 +86,7 @@ assembler.recipeBuilder()
     <metaitem:plateDenseTitanium> * 2])
   .fluidInputs([<liquid:tungsten_steel> * 72])
   .outputs(<metaitem:alloy.ingot.tier.2>)
-  .duration(300).EUt(1920).buildAndRegister();
+  .duration(300).EUt(1024).buildAndRegister();
 // Сверх-прочные пластины
 implosion_compressor.recipeBuilder()
 	.inputs([<metaitem:alloy.ingot.tier.2>])
@@ -101,4 +101,4 @@ laser_engraver.recipeBuilder()
   .notConsumable([<metaitem:glass_lens.orange>])
 	.outputs(<galacticraftcore:schematic:1>)
   .property("cleanroom", "cleanroom")
-	.duration(9000).EUt(1920).buildAndRegister();
+	.duration(9000).EUt(1024).buildAndRegister();
