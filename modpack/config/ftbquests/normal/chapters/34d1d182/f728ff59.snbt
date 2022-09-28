@@ -6,13 +6,14 @@
 			icon: "galacticraftcore:textures/gui/celestialbodies/earth.png"
 		}
 	},
-	x: 5.5d,
+	x: 0.0d,
 	y: 6.0d,
 	description: "{tfg.quests.space.start.subtitle}",
 	dependencies: [
 		"692e1ee5"
 	],
 	hide: true,
+	size: 2.0d,
 	tasks: [{
 		uid: "edb053f2",
 		type: "checkmark"

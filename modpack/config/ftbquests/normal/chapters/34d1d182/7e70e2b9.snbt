@@ -6,7 +6,7 @@
 			icon: "extraplanets:textures/gui/celestialbodies/pluto.png"
 		}
 	},
-	x: 24.0d,
+	x: 31.5d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -17,6 +17,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:pluto"
+		},
+		{
+			item: "extraplanets:pluto 1 1"
+		},
+		{
+			item: "extraplanets:pluto 1 2"
+		},
+		{
+			item: "extraplanets:pluto_gravel"
 		}]
 	}]
 }

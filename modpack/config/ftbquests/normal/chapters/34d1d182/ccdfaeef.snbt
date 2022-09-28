@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/rheya.png"
 		}
 	},
-	x: 16.25d,
-	y: 6.75d,
+	x: 20.0d,
+	y: 7.125d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"9dc473ee"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:rhea"
+		},
+		{
+			item: "extraplanets:rhea 1 1"
+		},
+		{
+			item: "extraplanets:rhea 1 2"
+		},
+		{
+			item: "extraplanets:rhea_gravel"
 		}]
 	}]
 }

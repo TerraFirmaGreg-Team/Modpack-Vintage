@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/io.png"
 		}
 	},
-	x: 13.5d,
-	y: 6.75d,
+	x: 14.25d,
+	y: 7.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:io"
+		},
+		{
+			item: "extraplanets:io 1 1"
+		},
+		{
+			item: "extraplanets:io 1 2"
+		},
+		{
+			item: "extraplanets:io_gravel"
 		}]
 	}]
 }

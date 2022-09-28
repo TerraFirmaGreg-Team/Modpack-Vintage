@@ -6,7 +6,7 @@
 			icon: "galacticraftcore:textures/gui/celestialbodies/mercury.png"
 		}
 	},
-	x: 1.5d,
+	x: -6.75d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -17,6 +17,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:mercury"
+		},
+		{
+			item: "extraplanets:mercury 1 1"
+		},
+		{
+			item: "extraplanets:mercury 1 2"
+		},
+		{
+			item: "extraplanets:mercury_gravel"
 		}]
 	}]
 }

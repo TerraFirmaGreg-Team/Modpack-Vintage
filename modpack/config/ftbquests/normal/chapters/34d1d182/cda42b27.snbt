@@ -1,6 +1,6 @@
 {
-	x: 4.0d,
-	y: 1.5d,
+	x: -1.75d,
+	y: -0.25d,
 	description: "{tfg.quests.space.ethernetIlona.subtitle}",
 	dependencies: [
 		"f7c7757a"

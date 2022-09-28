@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/titania.png"
 		}
 	},
-	x: 19.25d,
-	y: 6.75d,
+	x: 28.5d,
+	y: 6.875d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"a62ca553"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:titania"
+		},
+		{
+			item: "extraplanets:titania 1 1"
+		},
+		{
+			item: "extraplanets:titania 1 2"
+		},
+		{
+			item: "extraplanets:titania_gravel"
 		}]
 	}]
 }

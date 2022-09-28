@@ -1,9 +1,9 @@
 {
-	x: 30.0d,
-	y: 10.125d,
+	x: 39.0d,
+	y: 9.75d,
 	shape: "octagon",
 	dependencies: [
-		"adaf73c4"
+		"e0c31d58"
 	],
 	size: 1.5d,
 	tasks: [{

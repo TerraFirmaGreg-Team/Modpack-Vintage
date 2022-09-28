@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/phobos.png"
 		}
 	},
-	x: 8.0d,
-	y: 6.75d,
+	x: 3.75d,
+	y: 7.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"e4e7bcbf"
@@ -17,7 +17,16 @@
 		uid: "c8941e70",
 		type: "item",
 		items: [{
-			item: "extraplanets:mercury 1 1"
+			item: "extraplanets:phobos"
+		},
+		{
+			item: "extraplanets:phobos 1 1"
+		},
+		{
+			item: "extraplanets:phobos 1 2"
+		},
+		{
+			item: "extraplanets:phobos_gravel"
 		}]
 	}]
 }

@@ -6,17 +6,24 @@
 			icon: "extraplanets:textures/gui/celestialbodies/neptune.png"
 		}
 	},
-	x: 21.25d,
+	x: 23.5d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"285bd9fc"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "544ac885",
 		type: "item",
 		items: [{
 			item: "extraplanets:neptune"
+		},
+		{
+			item: "extraplanets:neptune 1 1"
+		},
+		{
+			item: "extraplanets:neptune 1 2"
 		}]
 	}]
 }

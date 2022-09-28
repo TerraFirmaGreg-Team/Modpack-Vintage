@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/europa.png"
 		}
 	},
-	x: 13.75d,
-	y: 7.25d,
+	x: 14.75d,
+	y: 7.5d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:europa"
+		},
+		{
+			item: "extraplanets:europa 1 1"
+		},
+		{
+			item: "extraplanets:europa 1 2"
+		},
+		{
+			item: "extraplanets:europa_gravel"
 		}]
 	}]
 }

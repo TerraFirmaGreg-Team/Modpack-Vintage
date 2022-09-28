@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.rocket2.title}",
-	x: 5.25d,
-	y: 10.0d,
+	x: 0.0d,
+	y: 9.75d,
 	shape: "octagon",
 	dependencies: [
 		"d03e8070"

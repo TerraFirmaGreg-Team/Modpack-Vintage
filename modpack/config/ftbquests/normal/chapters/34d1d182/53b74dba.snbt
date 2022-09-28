@@ -6,7 +6,7 @@
 			icon: "extraplanets:textures/gui/celestialbodies/ceres.png"
 		}
 	},
-	x: 11.25d,
+	x: 8.25d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -17,6 +17,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:ceres"
+		},
+		{
+			item: "extraplanets:ceres 1 1"
+		},
+		{
+			item: "extraplanets:ceres 1 2"
+		},
+		{
+			item: "extraplanets:ceres_gravel"
 		}]
 	}]
 }

@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/deimos.png"
 		}
 	},
-	x: 8.25d,
-	y: 7.25d,
+	x: 4.25d,
+	y: 7.625d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"e4e7bcbf"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:deimos"
+		},
+		{
+			item: "extraplanets:deimos 1 1"
+		},
+		{
+			item: "extraplanets:deimos 1 2"
+		},
+		{
+			item: "extraplanets:deimos_gravel"
 		}]
 	}]
 }

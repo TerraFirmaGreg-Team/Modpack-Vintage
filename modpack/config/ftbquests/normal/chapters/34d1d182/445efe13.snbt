@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/triton.png"
 		}
 	},
-	x: 21.75d,
-	y: 6.75d,
+	x: 24.375d,
+	y: 7.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"285bd9fc"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:triton"
+		},
+		{
+			item: "extraplanets:triton 1 1"
+		},
+		{
+			item: "extraplanets:triton 1 2"
+		},
+		{
+			item: "extraplanets:triton_gravel"
 		}]
 	}]
 }

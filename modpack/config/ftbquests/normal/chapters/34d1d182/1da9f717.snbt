@@ -6,16 +6,23 @@
 			icon: "galacticraftcore:textures/gui/celestialbodies/mars.png"
 		}
 	},
-	x: 7.5d,
+	x: 3.0d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"e4e7bcbf"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "9ea76d13",
 		type: "item",
 		items: [{
+			item: "galacticraftplanets:mars 1 5"
+		},
+		{
+			item: "galacticraftplanets:mars 1 6"
+		},
+		{
 			item: "galacticraftplanets:mars 1 9"
 		}]
 	}]

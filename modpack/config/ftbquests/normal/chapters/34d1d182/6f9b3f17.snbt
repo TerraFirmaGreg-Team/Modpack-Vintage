@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/ganymede.png"
 		}
 	},
-	x: 14.0d,
-	y: 7.75d,
+	x: 15.25d,
+	y: 8.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
@@ -18,6 +18,15 @@
 		type: "item",
 		items: [{
 			item: "extraplanets:ganymede"
+		},
+		{
+			item: "extraplanets:ganymede 1 1"
+		},
+		{
+			item: "extraplanets:ganymede 1 2"
+		},
+		{
+			item: "extraplanets:ganymede_gravel"
 		}]
 	}]
 }

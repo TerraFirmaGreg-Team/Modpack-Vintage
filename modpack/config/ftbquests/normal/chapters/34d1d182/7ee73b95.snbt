@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.airlock.title}",
-	x: -1.5d,
-	y: 12.25d,
+	x: -9.25d,
+	y: 9.75d,
 	description: "{tfg.quests.space.airlock.subtitle}",
 	dependencies: [
 		"63759119"

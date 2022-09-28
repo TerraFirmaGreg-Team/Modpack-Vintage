@@ -1,6 +1,6 @@
 {
-	x: 7.0d,
-	y: 0.0d,
+	x: 1.25d,
+	y: -1.75d,
 	dependencies: [
 		"ec24610c"
 	],

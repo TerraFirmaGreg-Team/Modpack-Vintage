@@ -6,11 +6,11 @@
 			icon: "galacticraftcore:textures/gui/celestialbodies/sun.png"
 		}
 	},
-	x: -1.5d,
+	x: -12.0d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"f728ff59"
 	],
-	size: 3.0d
+	size: 8.0d
 }
