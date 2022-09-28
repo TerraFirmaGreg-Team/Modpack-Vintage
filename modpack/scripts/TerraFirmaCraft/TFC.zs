@@ -278,10 +278,10 @@ electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "WROUGHT_IRON", 144, true);
 
 // Ковка монет
-Anvil.addRecipe("tfg/gt/copper_coin", <ore:plateCopper>, <metaitem:credit.copper>, 1, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/gold_coin", <ore:plateGold>, <metaitem:credit.gold>, 2, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/silver_coin", <ore:plateSilver>, <metaitem:credit.silver>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/cupronickel_coin", <ore:plateCupronickel>, <metaitem:credit.cupronickel>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/copper_coin", <metaitem:plateCopper>, <metaitem:credit.copper>, 1, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/gold_coin", <metaitem:plateGold>, <metaitem:credit.gold>, 2, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/silver_coin", <metaitem:plateSilver>, <metaitem:credit.silver>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/cupronickel_coin", <metaitem:plateCupronickel>, <metaitem:credit.cupronickel>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
 
 // Новые рецепты ковки GT мечей
 Anvil.addRecipe("tfg/tfc/sword_blade/copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
@@ -515,10 +515,10 @@ Barrel.addRecipe("tfg/tfc/alabaster", <metaitem:dustGypsum> * 2, <liquid:limewat
 Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
-recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
+recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:craftingToolSaw>]);
 
 // Alabaster Bricks
-recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:gtce.tool.files>]);
+recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:craftingToolFile>]);
 
 // Контроллер доменной печи
 recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
@@ -1558,7 +1558,7 @@ assembler.recipeBuilder()
 
 // Kaolinite Dust
 macerator.recipeBuilder()
-	.inputs(<ore:dustMica>)
+	.inputs(<metaitem:dustMica>)
 	.outputs(<tfc:powder/kaolinite> * 6)
 	.duration(100).EUt(2).buildAndRegister();
 
@@ -1570,7 +1570,7 @@ macerator.recipeBuilder()
 
 // Graphite Dust
 macerator.recipeBuilder()
-	.inputs(<ore:dustGraphite>)
+	.inputs(<metaitem:dustGraphite>)
 	.outputs(<tfc:powder/graphite> * 6)
 	.duration(100).EUt(2).buildAndRegister();
 

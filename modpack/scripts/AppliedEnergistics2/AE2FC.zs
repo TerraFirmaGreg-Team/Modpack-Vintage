@@ -8,7 +8,7 @@ recipes.removeByMod("ae2fc");
 
 // Fluid pattern encoder
 assembler.recipeBuilder()
-  .inputs(<ore:plateDenseIron> * 8, <appliedenergistics2:fluid_interface> * 2, <appliedenergistics2:material:23> * 3, <ore:craftingTableWood>)
+  .inputs(<metaitem:plateDenseIron> * 8, <appliedenergistics2:fluid_interface> * 2, <appliedenergistics2:material:23> * 3, <ore:craftingTableWood>)
   .circuit(24)
   .fluidInputs([<liquid:rubber> * 144])
   .outputs(<ae2fc:fluid_pattern_encoder>)
@@ -16,28 +16,28 @@ assembler.recipeBuilder()
 
 // Fluid discretizer
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:condenser>, <appliedenergistics2:part:221>, <appliedenergistics2:part:220>, <appliedenergistics2:material:24> * 8, <ore:plateDenseTitanium> * 6)
+  .inputs(<appliedenergistics2:condenser>, <appliedenergistics2:part:221>, <appliedenergistics2:part:220>, <appliedenergistics2:material:24> * 8, <metaitem:plateDenseTitanium> * 6)
   .circuit(24)
   .outputs(<ae2fc:fluid_discretizer>)
   .duration(100).EUt(480).buildAndRegister();
 
 // Fluid packet decoder
 assembler.recipeBuilder()
-  .inputs(<metaitem:fluid_filter> * 3, <ore:ae2.cable.glass> * 4, <appliedenergistics2:fluid_interface> * 2, <appliedenergistics2:material:24> * 8, <ore:plateDenseTitanium> * 4)
+  .inputs(<metaitem:fluid_filter> * 3, <ore:ae2.cable.glass> * 4, <appliedenergistics2:fluid_interface> * 2, <appliedenergistics2:material:24> * 8, <metaitem:plateDenseTitanium> * 4)
   .circuit(24)
   .outputs(<ae2fc:fluid_packet_decoder>)
   .duration(100).EUt(480).buildAndRegister();
 
 // Ingredient buffer
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:material:54> * 3, <appliedenergistics2:material:43> * 4, <appliedenergistics2:material:44> * 4, <appliedenergistics2:quartz_glass> * 2, <ore:plateDenseTitanium> * 4, <appliedenergistics2:material:35> * 2)
+  .inputs(<appliedenergistics2:material:54> * 3, <appliedenergistics2:material:43> * 4, <appliedenergistics2:material:44> * 4, <appliedenergistics2:quartz_glass> * 2, <metaitem:plateDenseTitanium> * 4, <appliedenergistics2:material:35> * 2)
   .circuit(24)
   .outputs(<ae2fc:ingredient_buffer>)
   .duration(100).EUt(480).buildAndRegister();
 
 // Fluid packet decoder
 assembler.recipeBuilder()
-  .inputs(<metaitem:fluid_filter> * 2, <appliedenergistics2:material:23> * 4, <gregtech:machine:1612> , <ore:plateDenseTitanium> * 4, <appliedenergistics2:quartz_glass> * 4)
+  .inputs(<metaitem:fluid_filter> * 2, <appliedenergistics2:material:23> * 4, <gregtech:machine:1612> , <metaitem:plateDenseTitanium> * 4, <appliedenergistics2:quartz_glass> * 4)
   .circuit(24)
   .outputs(<ae2fc:burette>)
   .duration(100).EUt(480).buildAndRegister();
@@ -58,7 +58,7 @@ assembler.recipeBuilder()
 
 // Fluid level maintainer
 assembler.recipeBuilder()
-  .inputs(<appliedenergistics2:crafting_monitor>, <appliedenergistics2:material:24> * 4, <ore:dustFluix> * 8, <appliedenergistics2:part:281>, <ore:plateLapis> * 2)
+  .inputs(<appliedenergistics2:crafting_monitor>, <appliedenergistics2:material:24> * 4, <metaitem:dustFluix> * 8, <appliedenergistics2:part:281>, <metaitem:plateLapis> * 2)
   .circuit(24)
   .outputs(<ae2fc:fluid_level_maintainer>)
   .duration(10).EUt(480).buildAndRegister();

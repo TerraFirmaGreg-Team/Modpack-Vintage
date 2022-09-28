@@ -138,275 +138,275 @@ bender.recipeBuilder()
 
 // Пласина плотного льда
 cutter.recipeBuilder()
-	.inputs(<ore:blockDenseIce>)
+	.inputs(<galacticraftplanets:dense_ice>)
 	.outputs(<metaitem:plateDenseIce> * 9)
 	.duration(200).EUt(7).buildAndRegister();
 // Блок -> Пыль плотного льда
 macerator.recipeBuilder()
-	.inputs(<ore:blockDenseIce>)
+	.inputs(<galacticraftplanets:dense_ice>)
 	.outputs(<metaitem:dustDenseIce> * 9)
 	.duration(300).EUt(2).buildAndRegister();
 // Пустая схема
 recipes.addShaped("tfg/gc/schematic_blank", <metaitem:schematic.blank>, [
    [null, <ore:paper>, null],
-   [null, <littletiles:recipeadvanced>, <ore:gtce.tool.hard.hammers>],
+   [null, <littletiles:recipeadvanced>, <ore:craftingToolHardHammer>],
    [null, <ore:paper>, null]]);
 
 // Шест
 recipes.addShaped("tfg/gc/steel_pole", <galacticraftcore:steel_pole> * 2, [
-   [null, <ore:plateDenseSteel>, null],
-   [null, <ore:plateDenseSteel>, <ore:gtce.tool.hard.hammers>],
-   [null, <ore:plateDenseSteel>, null]]);
+   [null, <metaitem:plateDenseSteel>, null],
+   [null, <metaitem:plateDenseSteel>, <ore:craftingToolHardHammer>],
+   [null, <metaitem:plateDenseSteel>, null]]);
 
 // Светофакел
 recipes.addShapeless("tfg/gc/glowstone_torch", <galacticraftcore:glowstone_torch> * 2, [<minecraft:torch>, <minecraft:glowstone_dust>]);
 
 // Slimeball
 recipes.addShaped("tfg/gc/slime_ball", <minecraft:slime_ball>, [
-   [<ore:dyeGreen>, <ore:dustSugar>, <ore:dyeGreen>],
-   [<ore:dustSugar>, <firmalife:cheddar_wheel>,<ore:dustSugar>],
-   [<ore:dyeGreen>, <ore:dustSugar>, <ore:dyeGreen>]]);
+   [<ore:dyeGreen>, <minecraft:sugar>, <ore:dyeGreen>],
+   [<minecraft:sugar>, <firmalife:cheddar_wheel>,<minecraft:sugar>],
+   [<ore:dyeGreen>, <minecraft:sugar>, <ore:dyeGreen>]]);
 
 // Slimeling Inventory Bag
 recipes.addShaped("tfg/gc/slimeling_inventory_bag", <galacticraftplanets:item_basic_mars:4>, [
-   [<ore:leather>, <ore:plateDiamond>, <ore:leather>],
+   [<ore:leather>, <metaitem:plateDiamond>, <ore:leather>],
    [<ore:leather>, <ore:slimeball>, <ore:leather>],
    [null, <ore:chestWood>, null]]);
 
 // Oxygen Mask
 recipes.addShaped("tfg/gc/oxygen_mask", <galacticraftcore:oxygen_mask>, [
    [<minecraft:glass_pane>, <ore:craftingLensWhite>, <minecraft:glass_pane>],
-   [<ore:plateDenseSteel>, <minecraft:leather_helmet>, <ore:plateDenseSteel>],
-   [<minecraft:glass_pane>, <ore:pipeTinyFluidStainlessSteel>, <minecraft:glass_pane>]]);
+   [<metaitem:plateDenseSteel>, <minecraft:leather_helmet>, <metaitem:plateDenseSteel>],
+   [<minecraft:glass_pane>, <metaitem:pipeTinyFluidStainlessSteel>, <minecraft:glass_pane>]]);
 
 // Oxygen Gear
 recipes.addShaped("tfg/gc/oxygen_gear", <galacticraftcore:oxygen_gear>, [
-   [<ore:plateAluminium>, <galacticraftcore:air_vent>, <ore:plateAluminium>],
+   [<metaitem:plateAluminium>, <galacticraftcore:air_vent>, <metaitem:plateAluminium>],
    [<galacticraftcore:oxygen_concentrator>, <metaitem:drum.stainless_steel>, <galacticraftcore:oxygen_concentrator>],
-   [<ore:cableGtQuadrupleCopper>, <ore:rotorStainlessSteel>, <ore:cableGtQuadrupleCopper>]]);
+   [<metaitem:cableGtQuadrupleCopper>, <metaitem:rotorStainlessSteel>, <metaitem:cableGtQuadrupleCopper>]]);
 
 // Oxygen Detector
 recipes.addShaped("tfg/gc/oxygen_detector", <galacticraftcore:oxygen_detector>, [
-   [<metaitem:sensor.hv>, <ore:plateAluminium>, <metaitem:sensor.hv>],
-   [<ore:plateAluminium>, <ore:circuitMv>, <ore:plateAluminium>],
-   [<ore:cableGtQuadrupleCopper>, <ore:plateAluminium>, <ore:cableGtQuadrupleCopper>]]);
+   [<metaitem:sensor.hv>, <metaitem:plateAluminium>, <metaitem:sensor.hv>],
+   [<metaitem:plateAluminium>, <ore:circuitMv>, <metaitem:plateAluminium>],
+   [<metaitem:cableGtQuadrupleCopper>, <metaitem:plateAluminium>, <metaitem:cableGtQuadrupleCopper>]]);
 
 // Oxygen Sealer
 recipes.addShaped("tfg/gc/oxygen_sealer", <galacticraftcore:sealer>, [
    [<metaitem:sensor.hv>, <galacticraftcore:air_vent>, <metaitem:sensor.hv>],
-   [<ore:circuitHv>, <ore:rotorStainlessSteel>, <ore:circuitHv>],
+   [<ore:circuitHv>, <metaitem:rotorStainlessSteel>, <ore:circuitHv>],
    [<metaitem:electric.pump.mv>, <galacticraftcore:oxygen_concentrator>, <metaitem:electric.pump.mv>]]);
 
 // Oxygen Bubble Distributor
 recipes.addShaped("tfg/gc/oxygen_buble_distributor", <galacticraftcore:distributor>, [
    [<metaitem:sensor.hv>, <galacticraftcore:air_vent>, <metaitem:sensor.hv>],
-   [<ore:circuitHv>, <ore:rotorStainlessSteel>, <ore:circuitHv>],
+   [<ore:circuitHv>, <metaitem:rotorStainlessSteel>, <ore:circuitHv>],
    [<metaitem:field.generator.ev>, <galacticraftcore:oxygen_concentrator>, <metaitem:field.generator.ev>]]);
 
 // Oxygen Collector
 recipes.addShaped("tfg/gc/oxygen_collector", <galacticraftcore:collector>, [
    [<galacticraftcore:air_vent>, <ore:circuitEv>, <galacticraftcore:air_vent>],
-   [<ore:rotorStainlessSteel>, <metaitem:hull.hv>, <ore:rotorStainlessSteel>],
+   [<metaitem:rotorStainlessSteel>, <metaitem:hull.hv>, <metaitem:rotorStainlessSteel>],
    [<metaitem:drum.stainless_steel>, <galacticraftcore:oxygen_concentrator>, <metaitem:drum.stainless_steel>]]);
 
 // Oxygen Compressor
 recipes.addShaped("tfg/gc/oxygen_compressor", <galacticraftcore:oxygen_compressor>, [
    [<ore:circuitHv>, <galacticraftcore:oxygen_concentrator>, <metaitem:electric.pump.hv>],
-   [<ore:pipeSmallFluidStainlessSteel>, <metaitem:hull.hv>, <ore:pipeSmallFluidStainlessSteel>],
-   [<metaitem:drum.stainless_steel>, <ore:plateBlackSteel>, <metaitem:electric.pump.hv>]]);
+   [<metaitem:pipeSmallFluidStainlessSteel>, <metaitem:hull.hv>, <metaitem:pipeSmallFluidStainlessSteel>],
+   [<metaitem:drum.stainless_steel>, <metaitem:plateBlackSteel>, <metaitem:electric.pump.hv>]]);
 
 // Oxygen Decompressor
 recipes.addShaped("tfg/gc/oxygen_decompressor", <galacticraftcore:oxygen_compressor:4>, [
    [<metaitem:electric.pump.hv>, <galacticraftcore:oxygen_concentrator>, <metaitem:drum.stainless_steel>],
-   [<ore:pipeSmallFluidStainlessSteel>, <metaitem:hull.hv>, <ore:pipeSmallFluidStainlessSteel>],
-   [<metaitem:electric.pump.hv>, <ore:plateBlackSteel>, <metaitem:compressor.hv>]]);
+   [<metaitem:pipeSmallFluidStainlessSteel>, <metaitem:hull.hv>, <metaitem:pipeSmallFluidStainlessSteel>],
+   [<metaitem:electric.pump.hv>, <metaitem:plateBlackSteel>, <metaitem:compressor.hv>]]);
 
 // Загручкик топлива
 recipes.addShaped("tfg/gc/fuel_loader", <galacticraftcore:fuel_loader>, [
-   [<ore:plateAluminium>, <ore:circuitMv>, <ore:plateAluminium>],
+   [<metaitem:plateAluminium>, <ore:circuitMv>, <metaitem:plateAluminium>],
    [<metaitem:drum.stainless_steel>, <metaitem:hull.hv>, <metaitem:electric.pump.mv>],
-   [<ore:pipeSmallFluidStainlessSteel>, <ore:pipeSmallFluidStainlessSteel>, <ore:pipeSmallFluidStainlessSteel>]]);
+   [<metaitem:pipeSmallFluidStainlessSteel>, <metaitem:pipeSmallFluidStainlessSteel>, <metaitem:pipeSmallFluidStainlessSteel>]]);
 
 // Воздушный шлюз каркас
 recipes.addShaped("tfg/gc/airlock_frame", <galacticraftcore:air_lock_frame> * 2, [
-   [<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>],
-   [<ore:plateStainlessSteel>, <ore:blockLead>, <ore:plateStainlessSteel>],
-   [<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>]]);
+   [<metaitem:plateStainlessSteel>, <metaitem:plateStainlessSteel>, <metaitem:plateStainlessSteel>],
+   [<metaitem:plateStainlessSteel>, <metaitem:blockLead>, <metaitem:plateStainlessSteel>],
+   [<metaitem:plateStainlessSteel>, <metaitem:plateStainlessSteel>, <metaitem:plateStainlessSteel>]]);
 
 // Контроллер воздушного шлюза
 recipes.addShaped("tfg/gc/airlock_frame_controller", <galacticraftcore:air_lock_frame:1>, [
-   [<ore:plateStainlessSteel>, <ore:cableGtDoubleGold>, <ore:plateStainlessSteel>],
-   [<ore:circuitHv>, <ore:blockLead>, <ore:circuitHv>],
-   [<ore:plateStainlessSteel>, <ore:cableGtDoubleGold>, <ore:plateStainlessSteel>]]);
+   [<metaitem:plateStainlessSteel>, <metaitem:cableGtDoubleGold>, <metaitem:plateStainlessSteel>],
+   [<ore:circuitHv>, <metaitem:blockLead>, <ore:circuitHv>],
+   [<metaitem:plateStainlessSteel>, <metaitem:cableGtDoubleGold>, <metaitem:plateStainlessSteel>]]);
 
 // Телеметрический блок
 recipes.addShaped("tfg/gc/telemetry", <galacticraftcore:telemetry>, [
-   [<metaitem:sensor.hv>, <ore:cableGtDoubleGold>, <ore:circuitHv>],
+   [<metaitem:sensor.hv>, <metaitem:cableGtDoubleGold>, <ore:circuitHv>],
    [<appliedenergistics2:wireless_access_point>, <metaitem:hull.hv>, <appliedenergistics2:wireless_access_point>],
-   [<ore:plateDenseStainlessSteel>, <appliedenergistics2:part:480>, <ore:plateDenseStainlessSteel>]]);
+   [<metaitem:plateDenseStainlessSteel>, <appliedenergistics2:part:480>, <metaitem:plateDenseStainlessSteel>]]);
 
 // Контроллер запуска
 recipes.addShaped("tfg/gc/start_controller", <galacticraftplanets:mars_machine:8>, [
    [<ore:circuitHv>, <ore:circuitHv>, <ore:circuitHv>],
    [<metaitem:sensor.ev>, <metaitem:hull.hv>, <metaitem:sensor.ev>],
-   [<ore:cableGtDoubleGold>, <ore:cableGtDoubleGold>, <ore:cableGtDoubleGold>]]);
+   [<metaitem:cableGtDoubleGold>, <metaitem:cableGtDoubleGold>, <metaitem:cableGtDoubleGold>]]);
 
 // Креокамера
 recipes.addShaped("tfg/gc/creogenic_chamber", <galacticraftplanets:mars_machine:4>, [
    [<metaitem:electric.pump.hv>, <ore:circuitHv>, <metaitem:emitter.hv>],
-   [<ore:plateDenseLead>, <ore:bed>, <ore:plateDenseLead>],
+   [<metaitem:plateDenseLead>, <ore:bed>, <metaitem:plateDenseLead>],
    [<galacticraftcore:oxygen_concentrator>, <ore:circuitHv>, <galacticraftcore:oxygen_concentrator>]]);
 
 // Терраформер
 recipes.addShaped("tfg/gc/terraformer", <galacticraftplanets:mars_machine>, [
    [<metaitem:sensor.ev>, <metaitem:emitter.ev>, <metaitem:sensor.ev>],
-   [<ore:plateLead>, <ore:circuitIv>, <ore:plateLead>],
-   [<ore:cableGtDoubleGold>, <metaitem:field.generator.ev>, <ore:cableGtDoubleGold>]]);
+   [<metaitem:plateLead>, <ore:circuitIv>, <metaitem:plateLead>],
+   [<metaitem:cableGtDoubleGold>, <metaitem:field.generator.ev>, <metaitem:cableGtDoubleGold>]]);
 
 // Контроллер щита
 recipes.addShaped("tfg/gc/shield_controller", <galacticraftplanets:basic_item_venus>, [
-   [<ore:paneGlassBlack>, <ore:stickNeodymiumMagnetic>, <ore:paneGlassBlack>],
-   [<ore:wireGtSingleMercuryBariumCalciumCuprate>, <metaitem:field.generator.ev>, <ore:wireGtSingleMercuryBariumCalciumCuprate>],
-   [<ore:paneGlassBlack>, <ore:stickNeodymiumMagnetic>, <ore:paneGlassBlack>]]);
+   [<ore:paneGlassBlack>, <metaitem:stickNeodymiumMagnetic>, <ore:paneGlassBlack>],
+   [<metaitem:wireGtSingleMercuryBariumCalciumCuprate>, <metaitem:field.generator.ev>, <metaitem:wireGtSingleMercuryBariumCalciumCuprate>],
+   [<ore:paneGlassBlack>, <metaitem:stickNeodymiumMagnetic>, <ore:paneGlassBlack>]]);
 
 // Базовая солнечная панель
 recipes.addShaped("tfg/gc/solar_panel/base", <galacticraftcore:solar>, [
    [<metaitem:cover.solar.panel>, <metaitem:cover.solar.panel>, <metaitem:cover.solar.panel>],
-   [<ore:gearStainlessSteel>, <ore:stickStainlessSteel>, <ore:gearStainlessSteel>],
-   [<metaitem:electric.piston.hv>, <metaitem:hull.mv>, <ore:cableGtQuadrupleGold>]]);
+   [<metaitem:gearStainlessSteel>, <metaitem:stickStainlessSteel>, <metaitem:gearStainlessSteel>],
+   [<metaitem:electric.piston.hv>, <metaitem:hull.mv>, <metaitem:cableGtQuadrupleGold>]]);
 
 // Улучшенная солнечная панель
 recipes.addShaped("tfg/gc/solar_panel/advanced", <galacticraftcore:solar:4>, [
    [<metaitem:cover.solar.panel.ulv>, <metaitem:cover.solar.panel.ulv>, <metaitem:cover.solar.panel.ulv>],
-   [<ore:gearStainlessSteel>, <ore:stickStainlessSteel>, <ore:gearStainlessSteel>],
-   [<metaitem:electric.piston.ev>, <metaitem:hull.hv>, <ore:cableGtQuadrupleGold>]]);
+   [<metaitem:gearStainlessSteel>, <metaitem:stickStainlessSteel>, <metaitem:gearStainlessSteel>],
+   [<metaitem:electric.piston.ev>, <metaitem:hull.hv>, <metaitem:cableGtQuadrupleGold>]]);
 
 // Клапан
 recipes.addShaped("tfg/gc/air_vent", <galacticraftcore:air_vent>, [
    [<galacticraftcore:grating>, <gregtech:meta_plate_dense:112>, <galacticraftcore:grating>],
-   [<gregtech:meta_plate_dense:112>, <ore:plateDenseSteel>, <gregtech:meta_plate_dense:112>],
+   [<gregtech:meta_plate_dense:112>, <metaitem:plateDenseSteel>, <gregtech:meta_plate_dense:112>],
    [<galacticraftcore:grating>, <gregtech:meta_plate_dense:112>, <galacticraftcore:grating>]]);
 
 // Частотный модуль
 recipes.addShaped("tfg/gc/freq_module", <galacticraftcore:basic_item:19>, [
-   [<ore:plateLead>, <metaitem:emitter.hv>, <ore:plateLead>],
-   [<metaitem:sensor.hv>, <ore:cableGtSingleRedAlloy>, <ore:circuitLv>],
+   [<metaitem:plateLead>, <metaitem:emitter.hv>, <metaitem:plateLead>],
+   [<metaitem:sensor.hv>, <metaitem:cableGtSingleRedAlloy>, <ore:circuitLv>],
    [<ore:componentResistor>, <metaitem:wireless>, <ore:componentResistor>]]);
 
 // Пешеходная дорожка
 recipes.addShaped("tfg/gc/walkway", <galacticraftplanets:walkway>, [
-   [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
-   [<ore:plateCurvedTitanium>, <ore:plateTitanium>, <ore:plateCurvedTitanium>],
-   [null, <ore:plateTitanium>, null]]);
+   [<metaitem:plateTitanium>, <metaitem:plateTitanium>, <metaitem:plateTitanium>],
+   [<metaitem:stickTitanium>, <metaitem:plateTitanium>, <metaitem:stickTitanium>],
+   [null, <metaitem:plateTitanium>, null]]);
 
 // Пеш. дор с проводом
 recipes.addShaped("tfg/gc/walkway/cable", <galacticraftplanets:walkway:1>, [
-   [<galacticraftplanets:walkway>, <ore:cableGtDoubleAluminium>, null],
-   [<ore:cableGtDoubleAluminium>, null, null],
+   [<galacticraftplanets:walkway>, <metaitem:cableGtDoubleAluminium>, null],
+   [<metaitem:cableGtDoubleAluminium>, null, null],
    [null, null, null]]);
 
 // Пеш. дор с жид. трубой
 recipes.addShaped("tfg/gc/walkway/fluid_pipe", <galacticraftplanets:walkway:2>, [
-   [<galacticraftplanets:walkway>, <ore:pipeTinyFluidStainlessSteel>, null],
-   [<ore:pipeTinyFluidStainlessSteel>, null, null],
+   [<galacticraftplanets:walkway>, <metaitem:pipeTinyFluidStainlessSteel>, null],
+   [<metaitem:pipeTinyFluidStainlessSteel>, null, null],
    [null, null, null]]);
 
 // Маяк ресивер
 recipes.addShaped("tfg/gc/beam_reciever", <galacticraftplanets:beam_receiver>, [
-   [<ore:plateBeryllium>, <ore:plateSilver>, <ore:plateBeryllium>],
-   [<ore:plateSilver>, <galacticraftplanets:item_basic_asteroids:8>, <ore:plateSilver>],
-   [<ore:plateBeryllium>, <ore:circuitIv>, <ore:plateBeryllium>]]);
+   [<metaitem:plateBeryllium>, <metaitem:plateSilver>, <metaitem:plateBeryllium>],
+   [<metaitem:plateSilver>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:plateSilver>],
+   [<metaitem:plateBeryllium>, <ore:circuitIv>, <metaitem:plateBeryllium>]]);
 
 // Лучевое ядро
 recipes.addShaped("tfg/gc/solar_core", <galacticraftplanets:item_basic_asteroids:8>, [
-   [<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>],
-   [<ore:platePlatinum>, <galacticraftplanets:basic_item_venus:2>, <ore:platePlatinum>],
-   [<ore:dustRedstone>, <ore:platePlatinum>, <ore:dustRedstone>]]);
+   [<minecraft:redstone>, <metaitem:platePlatinum>, <minecraft:redstone>],
+   [<metaitem:platePlatinum>, <galacticraftplanets:basic_item_venus:2>, <metaitem:platePlatinum>],
+   [<minecraft:redstone>, <metaitem:platePlatinum>, <minecraft:redstone>]]);
 
 // Радио-изотопное ядро
 recipes.addShaped("tfg/gc/radioisotopic_core", <galacticraftplanets:basic_item_venus:2>, [
-   [<ore:dustGraphite>, <metaitem:neutron_reflector>, <ore:dustGraphite>],
-   [<ore:stickUranium235>, <metaitem:neutron_reflector>, <ore:stickUranium235>],
-   [<ore:dustGraphite>, <metaitem:neutron_reflector>, <ore:dustGraphite>]]);
+   [<metaitem:dustGraphite>, <metaitem:neutron_reflector>, <metaitem:dustGraphite>],
+   [<metaitem:stickUranium235>, <metaitem:neutron_reflector>, <metaitem:stickUranium235>],
+   [<metaitem:dustGraphite>, <metaitem:neutron_reflector>, <metaitem:dustGraphite>]]);
 
 // Атомная батарейка
 recipes.addShaped("tfg/gc/atom_battery", <galacticraftplanets:atomic_battery>, [
-   [null, <ore:plateInvar>, null],
+   [null, <metaitem:plateInvar>, null],
    [null, <galacticraftplanets:basic_item_venus:2>, null],
    [null, <metaitem:large_fluid_cell.tungstensteel>, null]]);
 
 // Площадка телепортации
 recipes.addShaped("tfg/gc/telepad_short", <galacticraftplanets:telepad_short>, [
-   [<ore:plateDoubleTrinaquadalloy>, <ore:circuitIv>, <ore:plateDoubleTrinaquadalloy>],
+   [<metaitem:plateDoubleTrinaquadalloy>, <ore:circuitIv>, <metaitem:plateDoubleTrinaquadalloy>],
    [<metaitem:magic_energy_absorber>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:magic_energy_absorber>],
-   [<ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>, <ore:plateDoubleTrinaquadalloy>]]);
+   [<metaitem:plateDoubleTrinaquadalloy>, <metaitem:plateDoubleTrinaquadalloy>, <metaitem:plateDoubleTrinaquadalloy>]]);
 
 
 // Спасательная коробка
 recipes.addShaped("tfg/gc/emergency_box", <galacticraftcore:emergency_box>, [
-   [<ore:glowstone>, <ore:plateDenseTin>, <ore:glowstone>],
-   [<ore:plateDenseTin>, <ore:chestWood>, <ore:plateDenseTin>],
-   [<ore:glowstone>, <ore:plateDenseTin>, <ore:glowstone>]]);
+   [<ore:glowstone>, <metaitem:plateDenseTin>, <ore:glowstone>],
+   [<metaitem:plateDenseTin>, <ore:chestWood>, <metaitem:plateDenseTin>],
+   [<ore:glowstone>, <metaitem:plateDenseTin>, <ore:glowstone>]]);
 
 // Площадка для багги
 recipes.addShaped("tfg/gc/landing_pad/buggy", <galacticraftcore:landing_pad:1> * 9, [
    [null, null, null],
-   [<ore:plateDenseBlackSteel>, <ore:plateDenseBlackSteel>, <ore:plateDenseBlackSteel>],
-   [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]]);
+   [<metaitem:plateDenseBlackSteel>, <metaitem:plateDenseBlackSteel>, <metaitem:plateDenseBlackSteel>],
+   [<metaitem:blockSteel>, <metaitem:blockSteel>, <metaitem:blockSteel>]]);
 
 // Взлетная площадка 
 recipes.addShaped("tfg/gc/landing_pad/rocket", <galacticraftcore:landing_pad> * 9, [
    [null, null, null],
-   [<ore:plateDenseIron>, <ore:plateDenseIron>, <ore:plateDenseIron>],
-   [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
+   [<metaitem:plateDenseIron>, <metaitem:plateDenseIron>, <metaitem:plateDenseIron>],
+   [<ore:blockIronAny>, <ore:blockIronAny>, <ore:blockIronAny>]]);
 
 // Основания астрономического шахтера
 recipes.addShaped("tfg/gc/miner_base", <galacticraftplanets:miner_base>, [
-   [<ore:plateDenseBlackSteel>, <ore:chestWood>, <ore:plateDenseBlackSteel>],
+   [<metaitem:plateDenseBlackSteel>, <ore:chestWood>, <metaitem:plateDenseBlackSteel>],
    [<galacticraftplanets:item_basic_asteroids:8>, <ore:circuitHv>, <galacticraftplanets:item_basic_asteroids:8>],
-   [<ore:plateDenseBlackSteel>, <metaitem:battery_buffer.luv.16>, <ore:plateDenseBlackSteel>]]);
+   [<metaitem:plateDenseBlackSteel>, <metaitem:battery_buffer.luv.16>, <metaitem:plateDenseBlackSteel>]]);
 
 // Вращательный движок
 recipes.addShaped("tfg/gc/spin_thruster", <galacticraftcore:spin_thruster>, [
    [<galacticraftcore:oil_canister_partial:1>, <ore:circuitIv>, <galacticraftplanets:item_basic_asteroids:1>],
-   [<ore:plateDenseStainlessSteel>, <gregtech:metal_casing:7>, <ore:plateDenseStainlessSteel>],
-   [<ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>, <ore:wireGtDoubleElectrum>]]);
+   [<metaitem:plateDenseStainlessSteel>, <gregtech:metal_casing:7>, <metaitem:plateDenseStainlessSteel>],
+   [<metaitem:wireGtDoubleElectrum>, <metaitem:wireGtDoubleElectrum>, <metaitem:wireGtDoubleElectrum>]]);
 
 // Капсула из галактики под жидкости
 recipes.addShaped("tfg/gc/oil_canister", <galacticraftcore:oil_canister_partial:1001>, [
-   [<ore:plateDenseAluminium>, <ore:plateDenseBlackSteel>, <ore:plateDenseAluminium>],
-   [<ore:plateDenseAluminium>, <ore:blockGlass>, <ore:plateDenseAluminium>],
-   [<ore:plateDenseAluminium>, <galacticraftcore:canister>, <ore:plateDenseAluminium>]]);
+   [<metaitem:plateDenseAluminium>, <metaitem:plateDenseBlackSteel>, <metaitem:plateDenseAluminium>],
+   [<metaitem:plateDenseAluminium>, <ore:blockGlass>, <metaitem:plateDenseAluminium>],
+   [<metaitem:plateDenseAluminium>, <galacticraftcore:canister>, <metaitem:plateDenseAluminium>]]);
 
 // Канистра из олова
 recipes.addShaped("tfg/gc/canister", <galacticraftcore:canister>, [
-   [<ore:plateDenseTin>, null, <ore:plateDenseTin>],
-   [<ore:plateDenseTin>, <ore:gtce.tool.hard.hammers>, <ore:plateDenseTin>],
-   [<ore:plateDenseTin>, <ore:plateDenseTin>, <ore:plateDenseTin>]]);
+   [<metaitem:plateDenseTin>, null, <metaitem:plateDenseTin>],
+   [<metaitem:plateDenseTin>, <ore:craftingToolHardHammer>, <metaitem:plateDenseTin>],
+   [<metaitem:plateDenseTin>, <metaitem:plateDenseTin>, <metaitem:plateDenseTin>]]);
 
 // Дуговая лампа
 recipes.addShaped("tfg/gc/arclamp", <galacticraftcore:arclamp>, [
-   [<ore:plateBlackSteel>, <ore:dustGlowstone>, <ore:plateBlackSteel>],
-   [<ore:dustGlowstone>, <galacticraftplanets:atomic_battery>, <ore:dustGlowstone>],
-   [<ore:plateBlackSteel>, <ore:dustGlowstone>, <ore:plateBlackSteel>]]);
+   [<metaitem:plateBlackSteel>, <minecraft:glowstone_dust>, <metaitem:plateBlackSteel>],
+   [<minecraft:glowstone_dust>, <galacticraftplanets:atomic_battery>, <minecraft:glowstone_dust>],
+   [<metaitem:plateBlackSteel>, <minecraft:glowstone_dust>, <metaitem:plateBlackSteel>]]);
 
 // Багги сиденье
 recipes.addShaped("tfg/gc/buggy_seat", <galacticraftcore:buggymat:1>, [
-   [<ore:plateBlackSteel>, null, null],
-   [<ore:plateBlackSteel>, <ore:leather>, null],
-   [<ore:plateBlackSteel>, <ore:plateBlackSteel>, <ore:plateBlackSteel>]]);
+   [<metaitem:plateBlackSteel>, null, null],
+   [<metaitem:plateBlackSteel>, <ore:leather>, null],
+   [<metaitem:plateBlackSteel>, <metaitem:plateBlackSteel>, <metaitem:plateBlackSteel>]]);
 
 // Контейнер багги
 recipes.addShaped("tfg/gc/buggy_container", <galacticraftcore:buggymat:2>, [
-   [<ore:plateAluminium>, <ore:plateStainlessSteel>, <ore:plateAluminium>],
-   [<ore:plateAluminium>, <ore:chestWood>, <ore:plateAluminium>],
-   [<ore:plateAluminium>, <ore:plateStainlessSteel>, <ore:plateAluminium>]]);
+   [<metaitem:plateAluminium>, <metaitem:plateStainlessSteel>, <metaitem:plateAluminium>],
+   [<metaitem:plateAluminium>, <ore:chestWood>, <metaitem:plateAluminium>],
+   [<metaitem:plateAluminium>, <metaitem:plateStainlessSteel>, <metaitem:plateAluminium>]]);
 
 // Маяк дефлектор
 recipes.addShaped("tfg/gc/beam_reflector", <galacticraftplanets:beam_reflector>, [
    [null, <galacticraftplanets:item_basic_asteroids:8>, null],
-   [<ore:circuitMv>, <ore:plateTitanium>, <minecraft:lever>],
-   [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]]);
+   [<ore:circuitMv>, <metaitem:plateTitanium>, <minecraft:lever>],
+   [<metaitem:plateTitanium>, <metaitem:plateTitanium>, <metaitem:plateTitanium>]]);
 
 // Крюк
 recipes.addShaped("tfg/gc/grapple", <galacticraftplanets:grapple>, [
@@ -416,92 +416,92 @@ recipes.addShaped("tfg/gc/grapple", <galacticraftplanets:grapple>, [
 
 // Антена связи
 recipes.addShaped("tfg/gc/dishbase", <galacticraftcore:dishbase>, [
-   [<ore:plateDenseStainlessSteel>, <galacticraftcore:basic_item:19>, <ore:plateDenseStainlessSteel>],
-   [null, <ore:plateDenseStainlessSteel>, null],
-   [<ore:circuitIv>, <ore:blockSteel>, <ore:circuitIv>]]);
+   [<metaitem:plateDenseStainlessSteel>, <galacticraftcore:basic_item:19>, <metaitem:plateDenseStainlessSteel>],
+   [null, <metaitem:plateDenseStainlessSteel>, null],
+   [<ore:circuitIv>, <metaitem:blockSteel>, <ore:circuitIv>]]);
 
 // Тепловой контроллер
 recipes.addShaped("tfg/gc/thermal_controller", <galacticraftcore:basic_item:20>, [
-   [<ore:cableGtDoubleElectrum>, <ore:circuitIv>, <ore:cableGtDoubleElectrum>],
-   [<ore:plateBronze>, <ore:circuitIv>, <ore:plateBronze>],
-   [<ore:plateDenseTungstenSteel>, <ore:plateBlackSteel>, <ore:plateDenseTungstenSteel>]]);
+   [<metaitem:cableGtDoubleElectrum>, <ore:circuitIv>, <metaitem:cableGtDoubleElectrum>],
+   [<metaitem:plateBronze>, <ore:circuitIv>, <metaitem:plateBronze>],
+   [<metaitem:plateDenseTungstenSteel>, <metaitem:plateBlackSteel>, <metaitem:plateDenseTungstenSteel>]]);
 
 // Концентратор
 recipes.addShaped("tfg/gc/oxygen_concentrator", <galacticraftcore:oxygen_concentrator>, [
-   [<ore:plateDenseBlackSteel>, <ore:circuitMv>, <ore:plateDenseBlackSteel>],
-   [<ore:plateDenseTin>, <galacticraftcore:canister>, <ore:plateDenseTin>],
-   [<ore:plateDenseBlackSteel>, <galacticraftcore:air_vent>, <ore:plateDenseBlackSteel>]]);
+   [<metaitem:plateDenseBlackSteel>, <ore:circuitMv>, <metaitem:plateDenseBlackSteel>],
+   [<metaitem:plateDenseTin>, <galacticraftcore:canister>, <metaitem:plateDenseTin>],
+   [<metaitem:plateDenseBlackSteel>, <galacticraftcore:air_vent>, <metaitem:plateDenseBlackSteel>]]);
 
 // Привод ориона
 recipes.addShaped("tfg/gc/orion_drive", <galacticraftplanets:orion_drive>, [
-   [<ore:platePalladium>, <ore:circuitEv>, <ore:platePalladium>],
+   [<metaitem:platePalladium>, <ore:circuitEv>, <metaitem:platePalladium>],
    [<metaitem:robot.arm.iv>, <galacticraftplanets:miner_base>, <metaitem:robot.arm.iv>],
-   [<ore:platePalladium>, <ore:circuitIv>, <ore:platePalladium>]]);
+   [<metaitem:platePalladium>, <ore:circuitIv>, <metaitem:platePalladium>]]);
 
 // Колесо багги
 recipes.addShaped("tfg/gc/buggy_wheal", <galacticraftcore:buggymat>, [
-   [null, <ore:plateStyreneButadieneRubber>, null],
-   [<ore:plateStyreneButadieneRubber>, <ore:plateVanadiumSteel>, <ore:plateStyreneButadieneRubber>],
-   [null, <ore:plateStyreneButadieneRubber>, null]]);
+   [null, <metaitem:plateStyreneButadieneRubber>, null],
+   [<metaitem:plateStyreneButadieneRubber>, <metaitem:plateVanadiumSteel>, <metaitem:plateStyreneButadieneRubber>],
+   [null, <metaitem:plateStyreneButadieneRubber>, null]]);
 
 // Экран просмотра
 recipes.addShaped("tfg/gc/view_screen", <galacticraftcore:view_screen>, [
-   [<ore:plateDenseBlackSteel>, <ore:circuitLv>, <ore:plateDenseBlackSteel>],
+   [<metaitem:plateDenseBlackSteel>, <ore:circuitLv>, <metaitem:plateDenseBlackSteel>],
    [<ore:circuitLv>, <ore:paneGlass>, <ore:circuitLv>],
-   [<ore:plateDenseBlackSteel>, <ore:circuitLv>, <ore:plateDenseBlackSteel>]]);
+   [<metaitem:plateDenseBlackSteel>, <ore:circuitLv>, <metaitem:plateDenseBlackSteel>]]);
 
 // ДО 1
 recipes.addShaped("tfg/gc/decor_block_tin_1", <galacticraftcore:basic_block_core:4>, [
    [<ore:stone>, <ore:stone>, null],
-   [<ore:stone>, <ore:stone>, <ore:plateDenseTin>],
+   [<ore:stone>, <ore:stone>, <metaitem:plateDenseTin>],
    [null, null, null]]);
 
 // ДО 2
 recipes.addShaped("tfg/gc/decor_block_tin_2", <galacticraftcore:basic_block_core:3>, [
    [<ore:stone>, <ore:stone>, null],
    [<ore:stone>, <ore:stone>, null],
-   [null, <ore:plateDenseTin>, null]]);
+   [null, <metaitem:plateDenseTin>, null]]);
 
 // Свет панель 1
 recipes.addShaped("tfg/gc/lighting_panel_1", <galacticraftcore:panel_lighting>, [
    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
    [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
-   [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+   [<ore:paneGlass>, <metaitem:plateBlackSteel>, <ore:paneGlass>]]);
 
 // Свет панель 2
 recipes.addShaped("tfg/gc/lighting_panel_2", <galacticraftcore:panel_lighting:1>, [
    [<ore:paneGlass>, null, <ore:paneGlass>],
    [null, <galacticraftcore:glowstone_torch>, null],
-   [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+   [<ore:paneGlass>, <metaitem:plateBlackSteel>, <ore:paneGlass>]]);
 
 // Свет панель 3
 recipes.addShaped("tfg/gc/lighting_panel_3", <galacticraftcore:panel_lighting:2>, [
    [<ore:paneGlass>, null, <ore:paneGlass>],
    [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
-   [<ore:paneGlass>, <ore:plateBlackSteel>, <ore:paneGlass>]]);
+   [<ore:paneGlass>, <metaitem:plateBlackSteel>, <ore:paneGlass>]]);
 
 // Свет панель 4
 recipes.addShaped("tfg/gc/lighting_panel_4", <galacticraftcore:panel_lighting:3>, [
    [null, null, null],
    [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, <ore:paneGlass>],
-   [null, <ore:plateBlackSteel>, null]]);
+   [null, <metaitem:plateBlackSteel>, null]]);
 
 // Свет панель 5
 recipes.addShaped("tfg/gc/lighting_panel_5", <galacticraftcore:panel_lighting:4>, [
    [null, <ore:paneGlass>, null],
    [<ore:paneGlass>, <galacticraftcore:glowstone_torch>, null],
-   [null, <ore:plateBlackSteel>, null]]);
+   [null, <metaitem:plateBlackSteel>, null]]);
 
 // Sealable Alum. Wire
 recipes.addShaped("tfg/gc/sealable_something_1", <galacticraftcore:enclosed:14>, [
    [null, null, null],
-   [<galacticraftcore:basic_block_core:4>, <ore:cableGtDoubleAluminium>, <galacticraftcore:basic_block_core:4>],
+   [<galacticraftcore:basic_block_core:4>, <metaitem:cableGtDoubleAluminium>, <galacticraftcore:basic_block_core:4>],
    [null, null, null]]);
 
 // Sealable Alum. Wire
 recipes.addShaped("tfg/gc/sealable_something_2", <galacticraftcore:enclosed:15>, [
    [null, null, null],
-   [<galacticraftcore:basic_block_core:4>, <ore:cableGtOctalAluminium>, <galacticraftcore:basic_block_core:4>],
+   [<galacticraftcore:basic_block_core:4>, <metaitem:cableGtOctalAluminium>, <galacticraftcore:basic_block_core:4>],
    [null, null, null]]);
 
 // Sealable Alum. Wire
@@ -513,7 +513,7 @@ recipes.addShaped("tfg/gc/sealable_something_3", <galacticraftcore:enclosed:13>,
 // Sealable Alum. Wire
 recipes.addShaped("tfg/gc/sealable_something_4", <galacticraftcore:enclosed:1>, [
    [null, null, null],
-   [<galacticraftcore:basic_block_core:4>, <ore:pipeSmallFluidStainlessSteel>, <galacticraftcore:basic_block_core:4>],
+   [<galacticraftcore:basic_block_core:4>, <metaitem:pipeSmallFluidStainlessSteel>, <galacticraftcore:basic_block_core:4>],
    [null, null, null]]);
 
 // Еда
@@ -549,7 +549,7 @@ canner.recipeBuilder()
 
 // Слиток Дэш
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:dustDesh> * 4)
+	.inputs(<metaitem:dustDesh> * 4)
 	.outputs(<galacticraftplanets:item_basic_mars:2>)
 	.property("explosives", 2)
 	.duration(20).EUt(380).buildAndRegister();
@@ -557,21 +557,21 @@ implosion_compressor.recipeBuilder()
 // Баллоны
 // Легкий
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.lv>, <ore:pipeTinyFluidAluminium> * 4 , <ore:plateDenseTin> * 2, <metaitem:electric.pump.lv> * 2)
+   .inputs(<metaitem:super_tank.lv>, <metaitem:pipeTinyFluidAluminium> * 4 , <metaitem:plateDenseTin> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
    .property("cleanroom", "cleanroom")
    .duration(1000).EUt(128).buildAndRegister();
 // Средний
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.mv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 4, <metaitem:electric.pump.mv> * 2)
+   .inputs(<metaitem:super_tank.mv>, <metaitem:pipeTinyFluidAluminium> * 4, <metaitem:plateDenseTin> * 4, <metaitem:electric.pump.mv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
    .property("cleanroom", "cleanroom")
    .duration(1000).EUt(256).buildAndRegister();
 // Тяжелый
 assembler.recipeBuilder()
-   .inputs(<metaitem:super_tank.hv>, <ore:pipeTinyFluidAluminium> * 4, <ore:plateDenseTin> * 6, <metaitem:electric.pump.hv> * 2)
+   .inputs(<metaitem:super_tank.hv>, <metaitem:pipeTinyFluidAluminium> * 4, <metaitem:plateDenseTin> * 6, <metaitem:electric.pump.hv> * 2)
    .circuit(6)
    .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
    .property("cleanroom", "cleanroom")
@@ -579,14 +579,14 @@ assembler.recipeBuilder()
 
 // Гидравлический подьемник
 assembler.recipeBuilder()
-   .inputs(<ore:plateDenseTungstenSteel> * 16, <metaitem:electric.piston.iv> * 4, <ore:plateLead> * 6)
+   .inputs(<metaitem:plateDenseTungstenSteel> * 16, <metaitem:electric.piston.iv> * 4, <metaitem:plateLead> * 6)
    .circuit(7)
    .outputs(<galacticraftcore:platform>)
    .duration(1000).EUt(1012).buildAndRegister();
 
 // Вакумное стекло
 forming_press.recipeBuilder()
-   .inputs(<ore:plateDenseAluminium> * 4, <ore:blockGlass> * 5)
+   .inputs(<metaitem:plateDenseAluminium> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_strong> * 5)
    .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
@@ -599,7 +599,7 @@ forming_press.recipeBuilder()
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
-   .inputs(<ore:ingotTin> * 4, <ore:blockGlass> * 5)
+   .inputs(<metaitem:ingotTin> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_vanilla> * 5)
    .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
@@ -610,7 +610,7 @@ forming_press.recipeBuilder()
    .duration(300).EUt(480).buildAndRegister();
 
 forming_press.recipeBuilder()
-   .inputs(<ore:ingotAluminum> * 4, <ore:blockGlass> * 5)
+   .inputs(<metaitem:ingotAluminium> * 4, <ore:blockGlass> * 5)
    .outputs(<galacticraftcore:space_glass_clear> * 5)
    .property("cleanroom", "cleanroom")
    .duration(300).EUt(480).buildAndRegister();
@@ -622,13 +622,13 @@ forming_press.recipeBuilder()
 
 // Грузовой загрузчик
 assembler.recipeBuilder()
-   .inputs(<ore:plateDenseAluminium> * 2, <ore:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
+   .inputs(<metaitem:plateDenseAluminium> * 2, <metaitem:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
    .circuit(7)
    .outputs(<galacticraftcore:cargo>)
    .duration(1000).EUt(512).buildAndRegister();
 // Грузовой разгрузчик
 assembler.recipeBuilder()
-   .inputs(<ore:plateDenseAluminium> * 2, <ore:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
+   .inputs(<metaitem:plateDenseAluminium> * 2, <metaitem:plateDenseSteel> * 5, <ore:gtce.block.crate> * 6, <metaitem:robot.arm.hv> * 2)
    .circuit(8)
    .outputs(<galacticraftcore:cargo:4>)
    .duration(1000).EUt(512).buildAndRegister();
@@ -671,19 +671,19 @@ assembly_line.recipeBuilder()
 // Посадочный модуль
 // T1
 recipes.addShaped("tfg/gc/lander_tier1", <metaitem:lander.tier.1>,
-   [[<galacticraftcore:basic_item:19>, <ore:plateDenseSteel>, <ore:plateDenseSteel>],
-   [<ore:plateDenseSteel>, <galacticraftcore:buggymat:1>, <ore:plateDenseCopper>],
+   [[<galacticraftcore:basic_item:19>, <metaitem:plateDenseSteel>, <metaitem:plateDenseSteel>],
+   [<metaitem:plateDenseSteel>, <galacticraftcore:buggymat:1>, <metaitem:plateDenseCopper>],
    [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
 // Т2
 recipes.addShaped("tfg/gc/lander_tier2", <metaitem:lander.tier.2>,
-   [[<ore:foilGold>, <ore:gc.parachute>, <ore:foilGold>],
+   [[<metaitem:foilGold>, <ore:gc.parachute>, <metaitem:foilGold>],
    [<galacticraftcore:canvas>, <metaitem:lander.tier.1>, <galacticraftcore:canvas>],
-   [<ore:foilGold>, <galacticraftcore:canvas>, <ore:foilGold>]]);
+   [<metaitem:foilGold>, <galacticraftcore:canvas>, <metaitem:foilGold>]]);
 // T3
 recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
-   [[<ore:plateDenseBlackSteel>, <ore:chestWood>, <ore:plateDenseBlackSteel>],
+   [[<metaitem:plateDenseBlackSteel>, <ore:chestWood>, <metaitem:plateDenseBlackSteel>],
    [<galacticraftcore:steel_pole>, <metaitem:lander.tier.2>, <galacticraftcore:steel_pole>],
-   [<ore:plateDenseBlackSteel>, <ore:plateBlackSteel>, <ore:plateDenseBlackSteel>]]);
+   [<metaitem:plateDenseBlackSteel>, <metaitem:plateBlackSteel>, <metaitem:plateDenseBlackSteel>]]);
 
 // Схема ракеты
 // // T7

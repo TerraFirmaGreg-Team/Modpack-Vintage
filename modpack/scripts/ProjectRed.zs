@@ -379,7 +379,7 @@ furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stone>);
 for i, Illuminars_Array in Illuminars_Array {
     <ore:dustIlluminar>.add(Illuminars_Array);
     mixer.recipeBuilder()
-        .inputs(<ore:dustGlowstone>)
+        .inputs(<minecraft:glowstone_dust>)
         .circuit(24)
         .fluidInputs([colorLiquid[i] * 18])
         .outputs(Illuminars_Array)
@@ -390,7 +390,7 @@ for i, Illuminars_Array in Illuminars_Array {
 for i, Deactivated_Lamps_Array in Deactivated_Lamps_Array {
     <ore:lampBlockDeactivated>.add(Deactivated_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<ore:wireGtSingleRedAlloy>, <ore:paneGlass> * 6, <ore:stickSteel> * 12, Illuminars_Array[i] * 2)
+        .inputs(<metaitem:wireGtSingleRedAlloy>, <ore:paneGlass> * 6, <metaitem:stickSteel> * 12, Illuminars_Array[i] * 2)
         .circuit(12)
         .outputs(Deactivated_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -400,7 +400,7 @@ for i, Deactivated_Lamps_Array in Deactivated_Lamps_Array {
 for i, Activated_Lamps_Array in Activated_Lamps_Array {
     <ore:lampBlockActivated>.add(Activated_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(Deactivated_Lamps_Array[i], <ore:craftingRedstoneTorch>)
+        .inputs(Deactivated_Lamps_Array[i], <minecraft:redstone_torch>)
         .circuit(13)
         .outputs(Activated_Lamps_Array)
         .duration(16).EUt(2).buildAndRegister();
@@ -420,7 +420,7 @@ for i, Button_Lamps_Array in Button_Lamps_Array {
 for i, Feedback_Lamps_Array in Feedback_Lamps_Array {
     <ore:lampButtonFeedback>.add(Feedback_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<ore:craftingRedstoneTorch>, Button_Lamps_Array[i] * 2)
+        .inputs(<minecraft:redstone_torch>, Button_Lamps_Array[i] * 2)
         .circuit(15)
         .outputs(Feedback_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -430,7 +430,7 @@ for i, Feedback_Lamps_Array in Feedback_Lamps_Array {
 for i, Deactivated_Lantern_Lamps_Array in Deactivated_Lantern_Lamps_Array {
     <ore:lampLanternDeactivated>.add(Deactivated_Lantern_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<ore:wireGtSingleRedAlloy>, <ore:paneGlass> * 2, <ore:stickSteel> * 3, <ore:plateIron> * 4, Illuminars_Array[i])
+        .inputs(<metaitem:wireGtSingleRedAlloy>, <ore:paneGlass> * 2, <metaitem:stickSteel> * 3, <metaitem:plateIron> * 4, Illuminars_Array[i])
         .circuit(16)
         .outputs(Deactivated_Lantern_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -440,7 +440,7 @@ for i, Deactivated_Lantern_Lamps_Array in Deactivated_Lantern_Lamps_Array {
 for i, Activated_Lantern_Lamps_Array in Activated_Lantern_Lamps_Array {
     <ore:lampLanternActivated>.add(Activated_Lantern_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(Deactivated_Lantern_Lamps_Array[i], <ore:craftingRedstoneTorch>)
+        .inputs(Deactivated_Lantern_Lamps_Array[i], <minecraft:redstone_torch>)
         .circuit(17)
         .outputs(Activated_Lantern_Lamps_Array)
         .duration(16).EUt(2).buildAndRegister();
@@ -450,7 +450,7 @@ for i, Activated_Lantern_Lamps_Array in Activated_Lantern_Lamps_Array {
 for i, Deactivated_Fixture_Lamps_Array in Deactivated_Fixture_Lamps_Array {
     <ore:lampFixtureDeactivated>.add(Deactivated_Fixture_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 6, <ore:plateIron> * 4, <ore:paneGlass> * 5, Illuminars_Array[i] * 2)
+        .inputs(<projectred-core:resource_item:1>, <metaitem:stickSteel> * 6, <metaitem:plateIron> * 4, <ore:paneGlass> * 5, Illuminars_Array[i] * 2)
         .circuit(18)
         .outputs(Deactivated_Fixture_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -460,7 +460,7 @@ for i, Deactivated_Fixture_Lamps_Array in Deactivated_Fixture_Lamps_Array {
 for i, Activated_Fixture_Lamps_Array in Activated_Fixture_Lamps_Array {
     <ore:lampsFixtureActivated>.add(Deactivated_Fixture_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(Deactivated_Fixture_Lamps_Array[i], <ore:craftingRedstoneTorch>)
+        .inputs(Deactivated_Fixture_Lamps_Array[i], <minecraft:redstone_torch>)
         .circuit(19)
         .outputs(Activated_Fixture_Lamps_Array)
         .duration(16).EUt(2).buildAndRegister();
@@ -470,7 +470,7 @@ for i, Activated_Fixture_Lamps_Array in Activated_Fixture_Lamps_Array {
 for i, Deactivated_Fallout_Lamps_Array in Deactivated_Fallout_Lamps_Array {
     <ore:lampFalloutDeactivated>.add(Deactivated_Fallout_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 6, <ore:plateIron> * 2, <galacticraftcore:grating> * 6, Illuminars_Array[i] * 2)
+        .inputs(<projectred-core:resource_item:1>, <metaitem:stickSteel> * 6, <metaitem:plateIron> * 2, <galacticraftcore:grating> * 6, Illuminars_Array[i] * 2)
         .circuit(20)
         .outputs(Deactivated_Fallout_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -480,7 +480,7 @@ for i, Deactivated_Fallout_Lamps_Array in Deactivated_Fallout_Lamps_Array {
 for i, Activated_Fallout_Lamps_Array in Activated_Fallout_Lamps_Array {
     <ore:lampFalloutActivated>.add(Activated_Fallout_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(Deactivated_Fallout_Lamps_Array[i], <ore:craftingRedstoneTorch>)
+        .inputs(Deactivated_Fallout_Lamps_Array[i], <minecraft:redstone_torch>)
         .circuit(21)
         .outputs(Activated_Fallout_Lamps_Array)
         .duration(16).EUt(2).buildAndRegister();
@@ -490,7 +490,7 @@ for i, Activated_Fallout_Lamps_Array in Activated_Fallout_Lamps_Array {
 for i, Deactivated_Cage_Lamps_Array in Deactivated_Cage_Lamps_Array {
     <ore:lampCageDeactivated>.add(Deactivated_Cage_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(<projectred-core:resource_item:1>, <ore:stickSteel> * 2, <galacticraftcore:grating> * 4, Illuminars_Array[i])
+        .inputs(<projectred-core:resource_item:1>, <metaitem:stickSteel> * 2, <galacticraftcore:grating> * 4, Illuminars_Array[i])
         .circuit(22)
         .outputs(Deactivated_Cage_Lamps_Array)
         .duration(180).EUt(32).buildAndRegister();
@@ -500,7 +500,7 @@ for i, Deactivated_Cage_Lamps_Array in Deactivated_Cage_Lamps_Array {
 for i, Activated_Cage_Lamps_Array in Activated_Cage_Lamps_Array {
     <ore:lampCageActivated>.add(Activated_Cage_Lamps_Array);
     assembler.recipeBuilder()
-        .inputs(Deactivated_Cage_Lamps_Array[i], <ore:craftingRedstoneTorch>)
+        .inputs(Deactivated_Cage_Lamps_Array[i], <minecraft:redstone_torch>)
         .circuit(23)
         .outputs(Activated_Cage_Lamps_Array)
         .duration(16).EUt(2).buildAndRegister();
@@ -522,7 +522,7 @@ polarizer.recipeBuilder()
 
 // Red Alloy Wire
 assembler.recipeBuilder()
-    .inputs(<ore:wireGtSingleRedAlloy> * 2)
+    .inputs(<metaitem:wireGtSingleRedAlloy> * 2)
     .circuit(2)
     .fluidInputs([<liquid:redstone> * 144])
     .outputs(<projectred-transmission:wire> * 12)
@@ -539,7 +539,7 @@ for i, Transmission_Wires_Array in Transmission_Wires_Array {
 
 // IC Bluerprint
 circuit_assembler.recipeBuilder()
-    .inputs(<ore:circuitLv> * 2, <ore:dustLapis> * 4, <ore:wireGtSingleRedAlloy> * 6)
+    .inputs(<ore:circuitLv> * 2, <metaitem:dustLapis> * 4, <metaitem:wireGtSingleRedAlloy> * 6)
     .circuit(10)
     .fluidInputs([<liquid:soldering_alloy> * 144])
     .outputs(<projectred-fabrication:ic_blueprint>)
@@ -547,7 +547,7 @@ circuit_assembler.recipeBuilder()
 
 // Null-Logic Routing Chip
 circuit_assembler.recipeBuilder()
-    .inputs(<ore:circuitUlv> * 4, <ore:wireGtSingleRedAlloy> * 2, <projectred-core:resource_item:4>)
+    .inputs(<ore:circuitUlv> * 4, <metaitem:wireGtSingleRedAlloy> * 2, <projectred-core:resource_item:4>)
     .circuit(11)
     .fluidInputs([<liquid:soldering_alloy> * 144])
     .outputs(<projectred-core:resource_item:600>)
@@ -555,19 +555,19 @@ circuit_assembler.recipeBuilder()
 
 // IC Chip
 recipes.addShaped(<projectred-fabrication:ic_chip>, 
-    [[<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>],
+    [[<metaitem:cableGtSingleGold>, <metaitem:cableGtSingleGold>, <metaitem:cableGtSingleGold>],
     [<appliedenergistics2:material:16>, <projectred-core:resource_item>, <appliedenergistics2:material:16>],
-    [<ore:cableGtSingleGold>, <ore:cableGtSingleGold>, <ore:cableGtSingleGold>]]);
+    [<metaitem:cableGtSingleGold>, <metaitem:cableGtSingleGold>, <metaitem:cableGtSingleGold>]]);
 
 // IC Printer
 recipes.addShaped(<projectred-fabrication:ic_machine:1>, 
     [[<metaitem:robot.arm.lv>, <metaitem:sensor.lv>, <metaitem:robot.arm.lv>],
-    [<ore:blockSteel>, <ore:workbench>, <ore:blockSteel>],
+    [<metaitem:blockSteel>, <ore:workbench>, <metaitem:blockSteel>],
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 
 // Multimeter
 recipes.addShaped(<projectred-core:multimeter>, 
-    [[<ore:wireGtSingleGold>, null, <ore:wireGtSingleRedAlloy>],
-    [<ore:wireGtSingleGold>, <metaitem:cover.screen>, <ore:wireGtSingleRedAlloy>],
-    [<ore:circuitLv>, <ore:plateIron>, <ore:circuitLv>]]);
+    [[<metaitem:wireGtSingleGold>, null, <metaitem:wireGtSingleRedAlloy>],
+    [<metaitem:wireGtSingleGold>, <metaitem:cover.screen>, <metaitem:wireGtSingleRedAlloy>],
+    [<ore:circuitLv>, <metaitem:plateIron>, <ore:circuitLv>]]);
 

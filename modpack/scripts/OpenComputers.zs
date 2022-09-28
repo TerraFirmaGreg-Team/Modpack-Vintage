@@ -45,7 +45,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
-        <ore:boltIron> * 3,
+        <metaitem:boltIron> * 3,
         <minecraft:redstone>
     ])
     .outputs([<opencomputers:material:6>])
@@ -104,8 +104,8 @@ assembler.recipeBuilder()
 // Cable
 assembler.recipeBuilder()
     .inputs([
-        <ore:wireGtSingleCopper> * 8,
-        <ore:dustEmerald>
+        <metaitem:wireGtSingleCopper> * 8,
+        <metaitem:dustEmerald>
     ])
     .outputs([<opencomputers:cable>])
     .duration(200).EUt(30).buildAndRegister();

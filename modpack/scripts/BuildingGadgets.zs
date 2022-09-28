@@ -81,18 +81,18 @@ fluid_solidifier.recipeBuilder()
 
 // Paste Container
 recipes.addShaped("constructionpastecontainer", <buildinggadgets:constructionpastecontainer>, [
-    [<ore:screwIron>, <ore:ringIron>, <ore:screwIron>],
-    [<ore:plateIron>, <metaitem:fluid_cell>, <ore:plateIron>],
-    [<ore:screwIron>, <ore:ringIron>, <ore:screwIron>]]);
+    [<metaitem:screwIron>, <metaitem:ringIron>, <metaitem:screwIron>],
+    [<metaitem:plateIron>, <metaitem:fluid_cell>, <metaitem:plateIron>],
+    [<metaitem:screwIron>, <metaitem:ringIron>, <metaitem:screwIron>]]);
 
 // Paste Container T2
 recipes.addShaped("constructionpastecontainert2", <buildinggadgets:constructionpastecontainert2>, [
-    [<ore:screwRoseGold>, <ore:ringGold>, <ore:screwRoseGold>],
-    [<ore:plateRoseGold>, <buildinggadgets:constructionpastecontainer>, <ore:plateRoseGold>],
-    [<ore:screwRoseGold>, <ore:ringGold>, <ore:screwRoseGold>]]);
+    [<metaitem:screwRoseGold>, <metaitem:ringGold>, <metaitem:screwRoseGold>],
+    [<metaitem:plateRoseGold>, <buildinggadgets:constructionpastecontainer>, <metaitem:plateRoseGold>],
+    [<metaitem:screwRoseGold>, <metaitem:ringGold>, <metaitem:screwRoseGold>]]);
 
 // Paste Container T3
 recipes.addShaped("constructionpastecontainert3", <buildinggadgets:constructionpastecontainert3>, [
-    [<ore:screwDiamond>, <ore:ringTitanium>, <ore:screwDiamond>],
-    [<ore:plateTitanium>, <buildinggadgets:constructionpastecontainert2>, <ore:plateTitanium>],
-    [<ore:screwDiamond>, <ore:ringTitanium>, <ore:screwDiamond>]]);
+    [<metaitem:screwDiamond>, <metaitem:ringTitanium>, <metaitem:screwDiamond>],
+    [<metaitem:plateTitanium>, <buildinggadgets:constructionpastecontainert2>, <metaitem:plateTitanium>],
+    [<metaitem:screwDiamond>, <metaitem:ringTitanium>, <metaitem:screwDiamond>]]);

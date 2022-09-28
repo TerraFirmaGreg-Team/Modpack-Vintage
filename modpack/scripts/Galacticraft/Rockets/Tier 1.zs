@@ -58,7 +58,7 @@ assembler.recipeBuilder()
     <galacticraftcore:heavy_plating> * 4,
     <projectred-illumination:inverted_cage_lamp:14>,
     <metaitem:sensor.hv> * 2,
-    <ore:screwStainlessSteel> * 4])
+    <metaitem:screwStainlessSteel> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:nose_cone>)
   .property("cleanroom", "cleanroom")
@@ -79,8 +79,8 @@ assembler.recipeBuilder()
   .circuit(1)
   .inputs([
     <galacticraftcore:heavy_plating> * 4,
-    <ore:plateDenseSteel> * 2,
-    <ore:screwStainlessSteel> * 4])
+    <metaitem:plateDenseSteel> * 2,
+    <metaitem:screwStainlessSteel> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:rocket_fins>)
   .property("cleanroom", "cleanroom")
@@ -93,7 +93,7 @@ assembler.recipeBuilder()
     <galacticraftcore:oil_canister_partial:1001>,
     <metaitem:cover.activity.detector>,
     <metaitem:electric.pump.hv> * 4,
-    <ore:cableGtSingleAnnealedCopper> * 16,
+    <metaitem:cableGtSingleAnnealedCopper> * 16,
     <gregtech:boiler_firebox_casing:1>])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine>)
@@ -102,9 +102,9 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .circuit(1)
   .inputs([
-    <ore:plateDenseBlackSteel>,
-    <ore:plateDenseAluminium>,
-    <ore:plateDenseBronze>])
+    <metaitem:plateDenseBlackSteel>,
+    <metaitem:plateDenseAluminium>,
+    <metaitem:plateDenseBronze>])
   .fluidInputs([<liquid:stainless_steel> * 72])
   .outputs(<metaitem:alloy.ingot.tier.1>)
   .duration(300).EUt(480).buildAndRegister();

@@ -305,64 +305,6 @@ for item in TFC_Saws {
 // --- Добавление
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
-// Ключи
-<ore:gtce.tool.wrenches>.addItems([
-    <gregtech:meta_tool:8>.withEmptyTag(),
-    <gregtech:meta_tool:28>.withEmptyTag(),
-    <gregtech:meta_tool:29>.withEmptyTag(),
-    <gregtech:meta_tool:30>.withEmptyTag()
-]);
-// Отвертки
-<ore:gtce.tool.screwdrivers>.addItems([
-    <gregtech:meta_tool:11>.withEmptyTag(),
-    <gregtech:meta_tool:31>.withEmptyTag()
-]);
-// Молоты
-<ore:gtce.tool.hard.hammers>.addItems([
-    <gregtech:meta_tool:6>.withEmptyTag()
-]);
-
-<ore:gtce.tool.saws>.addItems([
-    <gregtech:meta_tool:5>.withEmptyTag(),
-    <gregtech:meta_tool:25>.withEmptyTag(),
-    <gregtech:meta_tool:26>.withEmptyTag(),
-    <gregtech:meta_tool:27>.withEmptyTag(),
-    <gregtech:meta_tool:32>.withEmptyTag()
-]);
-
-<ore:gtce.tool.files>.addItems([
-    <gregtech:meta_tool:9>.withEmptyTag()
-]);
-
-<ore:gtce.tool.cutters>.addItems([
-    <gregtech:meta_tool:13>.withEmptyTag()
-]);
-
-<ore:gtce.tool.soft.hammers>.addItems([
-    <gregtech:meta_tool:7>.withEmptyTag()
-]);
-
-<ore:gtce.tool.mortars>.addItems([
-    <gregtech:meta_tool:12>.withEmptyTag()
-]);
-
-<ore:gtce.tool.shovels>.addItems([
-    <gregtech:meta_tool:2>.withEmptyTag()
-]);
-
-<ore:gtce.tool.knife>.addItems([
-    <gregtech:meta_tool:15>.withEmptyTag(),
-    //<gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
-]);
-
-//<ore:gtce.tool.rolling.pins>.addItems([
-    //<gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
-//]);
-
-<ore:gtce.tool.tongs>.addItems([
-    <metaitem:tool.tongs>
-]);
-
 <ore:gtce.block.crate>.addItems([
     <gregtech:machine:1625>,
     <gregtech:machine:1626>,
@@ -469,12 +411,12 @@ for denseSmartCable in denseSmartCables {
 }
 // Шарик с краской
 for paintBall in paintBalls {
-  <ore:ae2.paint.ball.colors>.add(paintBall);
+    <ore:ae2.paint.ball.colors>.add(paintBall);
 }
 // Люмен шарик с краской
 for paintBallLumen in paintBallsLumen {
 	<ore:ae2.paint.ball.colors>.add(paintBallLumen);
-  <ore:ae2.paint.ball.colors.lumen>.add(paintBallLumen);
+    <ore:ae2.paint.ball.colors.lumen>.add(paintBallLumen);
 }
 // Изменчивый кристал
 <ore:gemFluix>.addItems([<appliedenergistics2:material:7>]);
@@ -526,159 +468,153 @@ for paintBallLumen in paintBallsLumen {
 
 // --- Добавление
 
-    <ore:herbalExtractHolder>.add([
-        <tfc:plants/raddia_grass>,
-        <tfc:plants/bromegrass>,
-        <tfc:plants/woolly_bush>,
-        <tfc:plants/prairie_junegrass>,
-        <tfc:plants/timothy_grass>,
-        <tfc:plants/tall_fescue_grass>,
-        <tfc:plants/orchard_grass>,
-        <tfc:plants/winged_kelp>,
-        <tfc:plants/turtle_grass>,
-        <tfc:plants/star_grass>,
-        <tfc:plants/seaweed>,
-        <tfc:plants/seagrass>,
-        <tfc:plants/pondweed>,
-        <tfc:plants/manatee_grass>,
-        <tfc:plants/leafy_kelp>,
-        <tfc:plants/giant_kelp>,
-        <tfc:plants/eel_grass>,
-        <tfc:plants/coontail>,
-        <tfc:plants/silvervein_creeper>,
-        <tfc:plants/jungle_vine>,
-        <tfc:plants/japanese_ivy>,
-        <tfc:plants/rattan>,
-        <tfc:plants/lipstick_palm>,
-        <tfc:plants/summer_asphodel>,
-        <tfc:plants/red_sealing_wax_palm>,
-        <tfc:plants/queen_sago>,
-        <tfc:plants/giant_feather_grass>,
-        <tfc:plants/giant_elephant_ear>,
-        <tfc:plants/dwarf_sugar_palm>,
-        <tfc:plants/drakensberg_cycad>,
-        <tfc:plants/climbing_cactus>,
-        <tfc:plants/takakia>,
-        <tfc:plants/tackweed>,
-        <tfc:plants/reed_mannagrass>,
-        <tfcflorae:coral/fan/tube/green>,
-        <tfcflorae:coral/fan/fire/green>,
-        <tfcflorae:coral/fan/bubble/green>,
-        <tfcflorae:coral/fan/brain/green>,
-        <tfcflorae:coral/fan/bubble/cyan>,
-        <tfcflorae:coral/fan/tube/lime>,
-        <tfcflorae:coral/tube/green>,
-        <tfcflorae:coral/fire/green>,
-        <tfcflorae:coral/bubble/green>,
-        <tfcflorae:coral/bubble/cyan>,
-        <tfcflorae:coral/fire/cyan>,
-        <tfcflorae:coral/tube/lime>,
-        <tfcflorae:coral/fire/lime>,
-        <tfcflorae:plants/coontail>,
-        <tfcflorae:plants/eel_grass>,
-        <tfcflorae:plants/giant_kelp>,
-        <tfcflorae:plants/leafy_kelp>,
-        <tfcflorae:plants/hanging_vine>,
-        <tfcflorae:plants/jungle_vine>,
-        <tfcflorae:plants/jungle_vine_creeping>,
-        <tfcflorae:plants/takakia>,
-        <tfcflorae:plants/leafy_kelp>
-    ]);
-
-    <ore:livelyExtractHolder>.add([
-        <tfc:plants/bromelia_laciniosa>,
-        <tfc:plants/pygmy_date_palm>,
-        <tfc:plants/zimbabwe_aloe>
-    ]);
-
-    <ore:energeticExtractHolder>.add([
-        <tfcflorae:plants/glowshroom>,
-        <tfcflorae:plants/glowing_sea_banana>,
-        <tfcflorae:coral/fan/horn/lime>,
-        <tfcflorae:coral/fan/bubble/lime>,
-        <tfcflorae:coral/fan/brain/lime>,
-        <tfcflorae:coral/brain/green>,
-        <tfcflorae:coral/horn/lime>,
-        <tfcflorae:coral/brain/lime>,
-        <tfcflorae:coral/bubble/lime>
-    ]);
-
-    <ore:focusedExtractHolder>.add([
-        <tfcflorae:crop/product/indigo>,
-        <tfcflorae:coral/bubble/magenta>,
-        <tfcflorae:coral/tube/magenta>,
-        <tfcflorae:coral/fire/purple>,
-        <tfcflorae:coral/tube/purple>,
-        <tfcflorae:coral/fan/bubble/pink>,
-        <tfcflorae:coral/fan/fire/purple>
-    ]);
-
-    <ore:earthyExtractHolder>.add([
-        <tfc:plants/bunch_grass_floating>,
-        <tfc:plants/cattail>,
-        <tfc:plants/milfoil>,
-        <tfc:plants/liana>,
-        <tfc:plants/bunch_grass_reed>,
-        <tfcflorae:plants/liana_creeping>,
-        <tfcflorae:plants/liana>,
-        <tfcflorae:plants/milfoil>,
-        <tfcflorae:plants/tackweed>,
-        <tfcflorae:plants/badderlocks>,
-        <tfcflorae:food/dried/cannabis_leaf>,
-        <tfcflorae:food/dried/coca_leaf>,
-        <tfcflorae:food/dried/tobacco_leaf>,
-        <tfcflorae:food/dried/cannabis_bud>,
-        <tfcflorae:live_starfish>,
-        <tfcflorae:coral/bubble/yellow>,
-        <tfcflorae:food/clove>,
-        <tfcflorae:food/roasted/parasol_mushroom>,
-        <tfcflorae:food/roasted/black_powderpuff>,
-        <tfcflorae:food/roasted/stinkhorn>,
-        <tfcflorae:food/roasted/weeping_milk_cap>,
-        <tfcflorae:food/roasted/turkey_tail>,
-        <tfcflorae:food/roasted/sulphur_shelf>,
-        <tfcflorae:food/roasted/artists_conk>,
-        <tfcflorae:food/butternut>,
-        <tfcflorae:food/black_walnut>,
-        <tfcflorae:food/beechnut>,
-        <tfcflorae:food/dried/barrel_cactus_fruit>
-    ]);
-
-    <ore:pureExtractHolder>.add([
-        <tfcflorae:coral/fan/horn/black>,
-        <tfcflorae:coral/fan/horn/blue>,
-        <tfcflorae:coral/fan/tube/silver>,
-        <tfcflorae:coral/fan/horn/silver>,
-        <tfcflorae:coral/fan/fire/silver>,
-        <tfcflorae:coral/fan/bubble/silver>,
-        <tfcflorae:coral/fan/brain/silver>,
-        <tfcflorae:coral/fan/horn/gray>,
-        <tfcflorae:coral/fan/horn/white>,
-        <tfcflorae:coral/fan/bubble/dead>,
-        <tfcflorae:coral/horn/black>,
-        <tfcflorae:coral/brain/black>,
-        <tfcflorae:coral/tube/silver>,
-        <tfcflorae:coral/horn/silver>,
-        <tfcflorae:coral/fire/silver>,
-        <tfcflorae:coral/bubble/silver>,
-        <tfcflorae:coral/brain/silver>,
-        <tfcflorae:coral/brain/gray>,
-        <tfcflorae:coral/horn/white>,
-        <tfcflorae:coral/brain/white>,
-        <tfcflorae:coral/tube/dead>,
-        <tfcflorae:plants/blueshroom>,
-        <tfcflorae:plants/sulphur_shroom>
-    ]);
-
-    <ore:fragrantExtractHolder>.add([
-        <tfcflorae:coral/fire/magenta>,
-        <tfcflorae:coral/bubble/purple>,
-        <tfcflorae:coral/fan/bubble/magenta>,
-        <tfcflorae:coral/fan/fire/magenta>,
-        <tfcflorae:coral/fan/tube/magenta>,
-        <tfcflorae:coral/fan/bubble/purple>,
-        <tfcflorae:coral/fan/tube/purple>
-    ]);
+<ore:herbalExtractHolder>.add([
+    <tfc:plants/raddia_grass>,
+    <tfc:plants/bromegrass>,
+    <tfc:plants/woolly_bush>,
+    <tfc:plants/prairie_junegrass>,
+    <tfc:plants/timothy_grass>,
+    <tfc:plants/tall_fescue_grass>,
+    <tfc:plants/orchard_grass>,
+    <tfc:plants/winged_kelp>,
+    <tfc:plants/turtle_grass>,
+    <tfc:plants/star_grass>,
+    <tfc:plants/seaweed>,
+    <tfc:plants/seagrass>,
+    <tfc:plants/pondweed>,
+    <tfc:plants/manatee_grass>,
+    <tfc:plants/leafy_kelp>,
+    <tfc:plants/giant_kelp>,
+    <tfc:plants/eel_grass>,
+    <tfc:plants/coontail>,
+    <tfc:plants/silvervein_creeper>,
+    <tfc:plants/jungle_vine>,
+    <tfc:plants/japanese_ivy>,
+    <tfc:plants/rattan>,
+    <tfc:plants/lipstick_palm>,
+    <tfc:plants/summer_asphodel>,
+    <tfc:plants/red_sealing_wax_palm>,
+    <tfc:plants/queen_sago>,
+    <tfc:plants/giant_feather_grass>,
+    <tfc:plants/giant_elephant_ear>,
+    <tfc:plants/dwarf_sugar_palm>,
+    <tfc:plants/drakensberg_cycad>,
+    <tfc:plants/climbing_cactus>,
+    <tfc:plants/takakia>,
+    <tfc:plants/tackweed>,
+    <tfc:plants/reed_mannagrass>,
+    <tfcflorae:coral/fan/tube/green>,
+    <tfcflorae:coral/fan/fire/green>,
+    <tfcflorae:coral/fan/bubble/green>,
+    <tfcflorae:coral/fan/brain/green>,
+    <tfcflorae:coral/fan/bubble/cyan>,
+    <tfcflorae:coral/fan/tube/lime>,
+    <tfcflorae:coral/tube/green>,
+    <tfcflorae:coral/fire/green>,
+    <tfcflorae:coral/bubble/green>,
+    <tfcflorae:coral/bubble/cyan>,
+    <tfcflorae:coral/fire/cyan>,
+    <tfcflorae:coral/tube/lime>,
+    <tfcflorae:coral/fire/lime>,
+    <tfcflorae:plants/coontail>,
+    <tfcflorae:plants/eel_grass>,
+    <tfcflorae:plants/giant_kelp>,
+    <tfcflorae:plants/leafy_kelp>,
+    <tfcflorae:plants/hanging_vine>,
+    <tfcflorae:plants/jungle_vine>,
+    <tfcflorae:plants/jungle_vine_creeping>,
+    <tfcflorae:plants/takakia>,
+    <tfcflorae:plants/leafy_kelp>
+]);
+<ore:livelyExtractHolder>.add([
+    <tfc:plants/bromelia_laciniosa>,
+    <tfc:plants/pygmy_date_palm>,
+    <tfc:plants/zimbabwe_aloe>
+]);
+<ore:energeticExtractHolder>.add([
+    <tfcflorae:plants/glowshroom>,
+    <tfcflorae:plants/glowing_sea_banana>,
+    <tfcflorae:coral/fan/horn/lime>,
+    <tfcflorae:coral/fan/bubble/lime>,
+    <tfcflorae:coral/fan/brain/lime>,
+    <tfcflorae:coral/brain/green>,
+    <tfcflorae:coral/horn/lime>,
+    <tfcflorae:coral/brain/lime>,
+    <tfcflorae:coral/bubble/lime>
+]);
+<ore:focusedExtractHolder>.add([
+    <tfcflorae:crop/product/indigo>,
+    <tfcflorae:coral/bubble/magenta>,
+    <tfcflorae:coral/tube/magenta>,
+    <tfcflorae:coral/fire/purple>,
+    <tfcflorae:coral/tube/purple>,
+    <tfcflorae:coral/fan/bubble/pink>,
+    <tfcflorae:coral/fan/fire/purple>
+]);
+<ore:earthyExtractHolder>.add([
+    <tfc:plants/bunch_grass_floating>,
+    <tfc:plants/cattail>,
+    <tfc:plants/milfoil>,
+    <tfc:plants/liana>,
+    <tfc:plants/bunch_grass_reed>,
+    <tfcflorae:plants/liana_creeping>,
+    <tfcflorae:plants/liana>,
+    <tfcflorae:plants/milfoil>,
+    <tfcflorae:plants/tackweed>,
+    <tfcflorae:plants/badderlocks>,
+    <tfcflorae:food/dried/cannabis_leaf>,
+    <tfcflorae:food/dried/coca_leaf>,
+    <tfcflorae:food/dried/tobacco_leaf>,
+    <tfcflorae:food/dried/cannabis_bud>,
+    <tfcflorae:live_starfish>,
+    <tfcflorae:coral/bubble/yellow>,
+    <tfcflorae:food/clove>,
+    <tfcflorae:food/roasted/parasol_mushroom>,
+    <tfcflorae:food/roasted/black_powderpuff>,
+    <tfcflorae:food/roasted/stinkhorn>,
+    <tfcflorae:food/roasted/weeping_milk_cap>,
+    <tfcflorae:food/roasted/turkey_tail>,
+    <tfcflorae:food/roasted/sulphur_shelf>,
+    <tfcflorae:food/roasted/artists_conk>,
+    <tfcflorae:food/butternut>,
+    <tfcflorae:food/black_walnut>,
+    <tfcflorae:food/beechnut>,
+    <tfcflorae:food/dried/barrel_cactus_fruit>
+]);
+<ore:pureExtractHolder>.add([
+    <tfcflorae:coral/fan/horn/black>,
+    <tfcflorae:coral/fan/horn/blue>,
+    <tfcflorae:coral/fan/tube/silver>,
+    <tfcflorae:coral/fan/horn/silver>,
+    <tfcflorae:coral/fan/fire/silver>,
+    <tfcflorae:coral/fan/bubble/silver>,
+    <tfcflorae:coral/fan/brain/silver>,
+    <tfcflorae:coral/fan/horn/gray>,
+    <tfcflorae:coral/fan/horn/white>,
+    <tfcflorae:coral/fan/bubble/dead>,
+    <tfcflorae:coral/horn/black>,
+    <tfcflorae:coral/brain/black>,
+    <tfcflorae:coral/tube/silver>,
+    <tfcflorae:coral/horn/silver>,
+    <tfcflorae:coral/fire/silver>,
+    <tfcflorae:coral/bubble/silver>,
+    <tfcflorae:coral/brain/silver>,
+    <tfcflorae:coral/brain/gray>,
+    <tfcflorae:coral/horn/white>,
+    <tfcflorae:coral/brain/white>,
+    <tfcflorae:coral/tube/dead>,
+    <tfcflorae:plants/blueshroom>,
+    <tfcflorae:plants/sulphur_shroom>
+]);
+<ore:fragrantExtractHolder>.add([
+    <tfcflorae:coral/fire/magenta>,
+    <tfcflorae:coral/bubble/purple>,
+    <tfcflorae:coral/fan/bubble/magenta>,
+    <tfcflorae:coral/fan/fire/magenta>,
+    <tfcflorae:coral/fan/tube/magenta>,
+    <tfcflorae:coral/fan/bubble/purple>,
+    <tfcflorae:coral/fan/tube/purple>
+]);
 
 ////////////////////////////////////////////////////////
 // --- GC/EP --- ///////////////////////////////////////

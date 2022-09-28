@@ -59,7 +59,7 @@ assembler.recipeBuilder()
     <extraplanets:nose_cone_tier4>,
     <extraplanets:tier5_items:3> * 4,
     <metaitem:sensor.zpm> * 2,
-    <ore:screwTungstenSteel> * 4])
+    <metaitem:screwTungstenSteel> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:nose_cone_tier5>)
   .property("cleanroom", "cleanroom")
@@ -81,7 +81,7 @@ assembler.recipeBuilder()
   .inputs([
     <extraplanets:tier5_items:3> * 2,
     <extraplanets:tier4_items:3> * 2,
-    <ore:screwRuridit> * 4])
+    <metaitem:screwRuridit> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items:2>)
   .property("cleanroom", "cleanroom")
@@ -94,7 +94,7 @@ assembler.recipeBuilder()
     <galacticraftplanets:item_basic_asteroids:1> * 2,
     <galacticraftcore:engine:1> * 2,
     <metaitem:electric.pump.zpm> * 4,
-    <ore:cableGtSingleAnnealedCopper> * 16])
+    <metaitem:cableGtSingleAnnealedCopper> * 16])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items>)
   .duration(300).EUt(122880).buildAndRegister();
@@ -104,7 +104,7 @@ assembler.recipeBuilder()
   .inputs([
     <galacticraftcore:engine:1>,
     <extraplanets:tier5_items:3> * 4,
-    <ore:plateDenseIce> * 3])
+    <metaitem:plateDenseIce> * 3])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<extraplanets:tier5_items:1>)
   .property("cleanroom", "cleanroom")
@@ -113,9 +113,9 @@ assembler.recipeBuilder()
 assembly_line.recipeBuilder()
   .inputs([
     <extraplanets:tier4_items:3>,
-    <ore:plateDenseAmericium> * 4,
-    <ore:plateDenseAmericium> * 4,
-    <ore:boltEuropium> * 8])
+    <metaitem:plateDenseAmericium> * 4,
+    <metaitem:plateDenseAmericium> * 4,
+    <metaitem:boltEuropium> * 8])
   .fluidInputs([<liquid:soldering_alloy> * 36])
   .outputs(<metaitem:alloy.ingot.tier.5>)
   .duration(300).EUt(122880).buildAndRegister();

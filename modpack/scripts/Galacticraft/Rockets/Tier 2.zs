@@ -71,8 +71,8 @@ assembler.recipeBuilder()// метеоритоное железо
     <galacticraftcore:fuel_canister_partial:1>,
     <galacticraftcore:heavy_plating> * 4,
     <metaitem:electric.pump.ev> * 4,
-    <ore:cableGtSingleAnnealedCopper> * 16,
-    <ore:pipeSmallFluidStainlessSteel> * 16,
+    <metaitem:cableGtSingleAnnealedCopper> * 16,
+    <metaitem:pipeSmallFluidStainlessSteel> * 16,
     <galacticraftcore:air_vent> * 2])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftcore:engine:1>)
@@ -83,7 +83,7 @@ assembler.recipeBuilder()
   .circuit(2)
   .inputs([
     <galacticraftcore:heavy_plating>,
-    <ore:plateDenseTitanium> * 2])
+    <metaitem:plateDenseTitanium> * 2])
   .fluidInputs([<liquid:tungsten_steel> * 72])
   .outputs(<metaitem:alloy.ingot.tier.2>)
   .duration(300).EUt(1920).buildAndRegister();

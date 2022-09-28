@@ -60,7 +60,7 @@ assembler.recipeBuilder()
     <galacticraftcore:nose_cone>,
     <galacticraftplanets:item_basic_asteroids:5> * 4,
     <metaitem:sensor.iv> * 2,
-    <ore:screwTitanium> * 4])
+    <metaitem:screwTitanium> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:heavy_nose_cone>)
   .property("cleanroom", "cleanroom")
@@ -82,7 +82,7 @@ assembler.recipeBuilder()
   .inputs([
     <galacticraftcore:heavy_plating> * 2,
     <galacticraftplanets:item_basic_asteroids:5> * 4,
-    <ore:screwStainlessSteel> * 4])
+    <metaitem:screwStainlessSteel> * 4])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:2>)
   .property("cleanroom", "cleanroom")
@@ -95,7 +95,7 @@ assembler.recipeBuilder()
     <galacticraftcore:engine:1> * 2,
     <galacticraftcore:engine> * 2,
     <metaitem:electric.pump.iv> * 4,
-    <ore:cableGtSingleAnnealedCopper> * 16])
+    <metaitem:cableGtSingleAnnealedCopper> * 16])
   .fluidInputs([<liquid:soldering_alloy> * 288])
   .outputs(<galacticraftplanets:item_basic_asteroids:1>)
   .duration(600).EUt(7680).buildAndRegister();
@@ -104,7 +104,7 @@ assembler.recipeBuilder()
   .circuit(3)
   .inputs([
     <galacticraftplanets:item_basic_mars:3>,
-    <ore:plateDenseDesh> * 4])
+    <metaitem:plateDenseDesh> * 4])
   .fluidInputs([<liquid:platinum> * 72])
   .outputs(<metaitem:alloy.ingot.tier.3>)
   .duration(600).EUt(7680).buildAndRegister();

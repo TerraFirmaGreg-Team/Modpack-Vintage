@@ -2,8 +2,6 @@ import crafttweaker.item.IItemStack;
 
 // --- Массивы
 
-val AllQuartzTypes = <ore:gemCertusQuartz> | <ore:gemQuartzite> | <ore:gemNetherQuartz>;
-
 val RemoveWorkbenchRecipes as IItemStack[] = [
 	<chisel:auto_chisel>,
 	<chisel:offsettool>,
@@ -83,36 +81,36 @@ for item in RemoveItemRecipesByName{
 recipes.addShaped("tfg/chisel/auto_chisel", <chisel:auto_chisel>, [
 	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
 	[<ore:blockGlass>, <chisel:chisel_iron> | <chisel:chisel_diamond> | <chisel:chisel_hitech>, <ore:blockGlass>],
-	[<ore:plateIronAny>, <ore:wireGtSingleRedAlloy>, <ore:plateIronAny>]]);
+	[<ore:plateIronAny>, <metaitem:wireGtSingleRedAlloy>, <ore:plateIronAny>]]);
 
 // Эндер палка смещения
 recipes.addShaped("tfg/chisel/offsettool", <chisel:offsettool>, [
-	[<ore:plateIron>, <ore:gemEnderEye>, <ore:gtce.tool.knife>],
-	[<minecraft:stick>, <ore:plateIron>, null],
-	[<ore:gtce.tool.hard.hammers>, null, null]]);
+	[<metaitem:plateIron>, <minecraft:ender_eye>, <ore:craftingToolKnife>],
+	[<minecraft:stick>, <metaitem:plateIron>, null],
+	[<ore:craftingToolHardHammer>, null, null]]);
 
 // Железная стамеска
 recipes.addShaped("tfg/chisel/chisel_iron", <chisel:chisel_iron>, [
-  [<ore:gtce.tool.files>, <ore:plateIronAny>, <ore:plateIronAny>],
-  [null, <ore:screwSteel>, <ore:plateIronAny>],
-  [<ore:stickBronze>, null, <ore:gtce.tool.hard.hammers>]]);
+  [<ore:craftingToolFile>, <ore:plateIronAny>, <ore:plateIronAny>],
+  [null, <metaitem:screwSteel>, <ore:plateIronAny>],
+  [<metaitem:stickBronze>, null, <ore:craftingToolHardHammer>]]);
 
 // Алмазная стамеска
 recipes.addShaped("tfg/chisel/chisel_diamond", <chisel:chisel_diamond>, [
-  [<ore:gtce.tool.files>, <ore:plateDiamond>, <ore:plateDiamond>],
-  [null, <chisel:chisel_iron>, <ore:plateDiamond>],
-  [<ore:stickRoseGold>, null, <ore:gtce.tool.hard.hammers>]]);
+  [<ore:craftingToolFile>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
+  [null, <chisel:chisel_iron>, <metaitem:plateDiamond>],
+  [<metaitem:stickRoseGold>, null, <ore:craftingToolHardHammer>]]);
 
 // Современная стамеска
 recipes.addShaped("tfg/chisel/chisel_hitech", <chisel:chisel_hitech>, [
-  [<ore:gtce.tool.files>, <ore:plateDiamond>, <ore:plateDiamond>],
-  [null, <chisel:chisel_diamond>, <ore:plateDiamond>],
-  [<ore:stickStainlessSteel>, null, <ore:gtce.tool.hard.hammers>]]);
+  [<ore:craftingToolFile>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
+  [null, <chisel:chisel_diamond>, <metaitem:plateDiamond>],
+  [<metaitem:stickStainlessSteel>, null, <ore:craftingToolHardHammer>]]);
 
 // Лабораторный блок
 recipes.addShaped("tfg/chisel/laboratory_block", <chisel:laboratory> * 8, [
 	[<ore:stone>, <ore:stone>, <ore:stone>],
-	[<ore:stone>, AllQuartzTypes, <ore:stone>],
+	[<ore:stone>, <minecraft:quartz>, <ore:stone>],
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
 
 // Храмовый блок

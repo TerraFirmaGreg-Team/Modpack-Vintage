@@ -5,7 +5,7 @@ import mods.gregtech.TerminalRegistry;
 
 // --- Массивы
 
-val Diamonds = <ore:gemFlawedDiamond> | <ore:gemDiamond> | <ore:gemFlawlessDiamond>;
+val Diamonds = <metaitem:gemFlawedDiamond> | <minecraft:diamond> | <metaitem:gemFlawlessDiamond>;
 
 val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
@@ -339,9 +339,9 @@ bender.recipeBuilder()
 // Удалить после исправления Контролера напряжения
 recipes.remove(<metaitem:gcym:tiered_hatch.uhv>);
 recipes.addShaped("tfg/gregtech/tiered_hatch_uv", <metaitem:gcym:tiered_hatch.uv>, [
-    [<ore:plateDarmstadtium>, <ore:plateDarmstadtium>, <ore:plateDarmstadtium>],
-    [<ore:plateDarmstadtium>, <ore:circuitUhv>, <ore:plateDarmstadtium>],
-    [<ore:plateDarmstadtium>, <ore:plateDarmstadtium>, <ore:plateDarmstadtium>]]);
+    [<metaitem:plateDarmstadtium>, <metaitem:plateDarmstadtium>, <metaitem:plateDarmstadtium>],
+    [<metaitem:plateDarmstadtium>, <ore:circuitUhv>, <metaitem:plateDarmstadtium>],
+    [<metaitem:plateDarmstadtium>, <metaitem:plateDarmstadtium>, <metaitem:plateDarmstadtium>]]);
 
 // Регистрация металлов для голов ножей
 ItemRegistry.registerItemMetal(<metaitem:toolHeadKnifeCopper>, "COPPER", 144, true);
@@ -392,21 +392,21 @@ recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktwea
 
 // Контроллер пилорамы
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
-    [<ore:screwSteel>, <ore:toolHeadBuzzSawSteel>, <ore:screwSteel>],
+    [<metaitem:screwSteel>, <metaitem:toolHeadBuzzSawSteel>, <metaitem:screwSteel>],
     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
     [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);
 
 // Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, [
-    [<ore:pipeSmallFluidBronze>, <ore:craftingPiston>, <ore:pipeSmallFluidBronze>],
-    [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
-    [<ore:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <ore:pipeSmallFluidBronze>]]);
+    [<metaitem:pipeSmallFluidBronze>, <ore:craftingPiston>, <metaitem:pipeSmallFluidBronze>],
+    [<metaitem:pipeSmallFluidBronze>, <gregtech:steam_casing>, <metaitem:pipeSmallFluidBronze>],
+    [<metaitem:pipeSmallFluidBronze>, <tfc:metal/anvil/wrought_iron>, <metaitem:pipeSmallFluidBronze>]]);
 
 // Стальной паровой молот
 recipes.addShaped("tfg/gregtech/steam_forge_hammer", <metaitem:steam_hammer_steel>, [
-    [<ore:pipeSmallFluidSteel>, <ore:craftingPiston>, <ore:pipeSmallFluidSteel>],
-    [<ore:pipeSmallFluidSteel>, <gregtech:steam_casing:2>, <ore:pipeSmallFluidSteel>],
-    [<ore:pipeSmallFluidSteel>, <tfc:metal/anvil/steel>, <ore:pipeSmallFluidSteel>]]);
+    [<metaitem:pipeSmallFluidSteel>, <ore:craftingPiston>, <metaitem:pipeSmallFluidSteel>],
+    [<metaitem:pipeSmallFluidSteel>, <gregtech:steam_casing:2>, <metaitem:pipeSmallFluidSteel>],
+    [<metaitem:pipeSmallFluidSteel>, <tfc:metal/anvil/steel>, <metaitem:pipeSmallFluidSteel>]]);
 
 // Скомпрессированная глина
 recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke_clay> * 3, [
@@ -418,49 +418,49 @@ recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke
 recipes.addShaped("tfg/gregtech/wooden_form", <metaitem:wooden_form.empty>, [
     [null, <ore:lumber>, null],
     [null, <ore:lumber>, null],
-    [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
+    [<ore:craftingToolSaw>, <ore:lumber>, null]]);
 
 // Бронзовый малый бойлер
 recipes.addShaped("tfg/gregtech/small_steam_coal_boiler", <metaitem:steam_boiler_coal_bronze>, [
-    [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
-    [<ore:plateBronze>, <ore:gtce.tool.wrenches>, <ore:plateBronze>],
+    [<metaitem:plateBronze>, <metaitem:plateBronze>, <metaitem:plateBronze>],
+    [<metaitem:plateBronze>, <ore:craftingToolWrench>, <metaitem:plateBronze>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Стальной малый бойлер
 recipes.addShaped("tfg/gregtech/high_pressure_coal_boiler", <metaitem:steam_boiler_coal_steel>, [
-    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
-    [<ore:plateSteel>, <ore:gtce.tool.wrenches>, <ore:plateSteel>],
+    [<metaitem:plateSteel>, <metaitem:plateSteel>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <ore:craftingToolWrench>, <metaitem:plateSteel>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Бронзовая паровая печь
 recipes.addShaped("tfg/gregtech/steam_furnace", <metaitem:steam_furnace_bronze>, [
-    [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
-    [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing:1>,<ore:pipeSmallFluidBronze>],
-    [<ore:pipeSmallFluidBronze>, <tfc:blast_furnace>, <ore:pipeSmallFluidBronze>]]);
+    [<metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>],
+    [<metaitem:pipeSmallFluidBronze>, <gregtech:steam_casing:1>,<metaitem:pipeSmallFluidBronze>],
+    [<metaitem:pipeSmallFluidBronze>, <tfc:blast_furnace>, <metaitem:pipeSmallFluidBronze>]]);
 
 // Бронзовый паровой сплавщик
 recipes.addShaped("tfg/gregtech/steam_alloy_smelter", <metaitem:steam_alloy_smelter_bronze>, [
-    [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>],
+    [<metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>],
     [<tfc:blast_furnace>, <gregtech:steam_casing:1>, <tfc:blast_furnace>],
-    [<ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>, <ore:pipeSmallFluidBronze>]]);
+    [<metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>, <metaitem:pipeSmallFluidBronze>]]);
 
 // Доменная печь
 recipes.addShaped("tfg/gregtech/ebf", <metaitem:electric_blast_furnace>, [
     [<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
     [<ore:circuitLv>, <gregtech:metal_casing:2>, <ore:circuitLv>],
-    [<ore:cableGtSingleTin>, <ore:circuitLv>, <ore:cableGtSingleTin>]]);
+    [<metaitem:cableGtSingleTin>, <ore:circuitLv>, <metaitem:cableGtSingleTin>]]);
 
 // Мульти-печь
 recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
     [<tfc:blast_furnace>, <tfc:blast_furnace>, <tfc:blast_furnace>],
     [<ore:circuitHv>, <gregtech:metal_casing:2>, <ore:circuitHv>],
-    [<ore:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <ore:cableGtSingleAnnealedCopper>]]);
+    [<metaitem:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <metaitem:cableGtSingleAnnealedCopper>]]);
 
 // // Стацния создания
 // recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
 //     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
 //     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
-//     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
+//     [<ore:plankWood>, <ore:craftingToolSaw>, <ore:plankWood>]]);
 
 // Обработанные доски
 recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
@@ -471,54 +471,54 @@ recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
 // Primitive water pump deck
 recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casing:4> * 2, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:gtce.tool.screwdrivers>, <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
+    [<ore:craftingToolScrewdriver>, <ore:slabCobblestone>, <ore:craftingToolHardHammer>]]);
 
 // Primitive water pump hatch
 recipes.addShaped("tfg/gregtech/primitive_water_pump_hatch", <metaitem:pump_hatch>, [
-    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:gtce.tool.screwdrivers>],
-    [<ore:plankTreatedWood>, <ore:pipeLargeFluidWood>, <ore:plankTreatedWood>],
+    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:craftingToolScrewdriver>],
+    [<ore:plankTreatedWood>, <metaitem:pipeLargeFluidWood>, <ore:plankTreatedWood>],
     [<ore:slabCobblestone>, <ore:ringIronAny>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped("tfg/gregtech/primitive_water_pump", <metaitem:primitive_water_pump>, [
-    [<ore:ringIronAny>, <ore:pipeNormalFluidWood>, <ore:screwIronAny>],
-    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:gtce.tool.screwdrivers>],
-    [<ore:slabCobblestone>, <ore:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
+    [<ore:ringIronAny>, <metaitem:pipeNormalFluidWood>, <ore:screwIronAny>],
+    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:craftingToolScrewdriver>],
+    [<ore:slabCobblestone>, <metaitem:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
 recipes.addShaped("tfg/gregtech/coke_oven", <metaitem:coke_oven>, [
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>],
-    [<ore:plateIronAny>, <ore:gtce.tool.wrenches>, <ore:plateIronAny>],
+    [<ore:plateIronAny>, <ore:craftingToolWrench>, <ore:plateIronAny>],
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>]]);
 
 // Steam Miner
 recipes.addShaped("tfg/gregtech/steam_miner", <metaitem:steam_miner>, [
-    [Diamonds, <ore:pipeSmallFluidBronze>, Diamonds],
-    [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
-    [<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>]]);
+    [Diamonds, <metaitem:pipeSmallFluidBronze>, Diamonds],
+    [<metaitem:pipeSmallFluidBronze>, <gregtech:steam_casing>, <metaitem:pipeSmallFluidBronze>],
+    [<ore:craftingPiston>, <metaitem:pipeSmallFluidBronze>, <ore:craftingPiston>]]);
 
 // Steam Macerator
 recipes.addShaped("tfg/gregtech/steam_macerator", <metaitem:steam_macerator_bronze>, [
-    [Diamonds, <ore:pipeNormalFluidBronze>, Diamonds],
-    [<ore:pipeNormalFluidBronze>, <gregtech:steam_casing>, <ore:pipeNormalFluidBronze>],
-    [<ore:gearSmallBronze>, <ore:pipeNormalFluidBronze>, <ore:gearSmallBronze>]]);
+    [Diamonds, <metaitem:pipeNormalFluidBronze>, Diamonds],
+    [<metaitem:pipeNormalFluidBronze>, <gregtech:steam_casing>, <metaitem:pipeNormalFluidBronze>],
+    [<metaitem:gearSmallBronze>, <metaitem:pipeNormalFluidBronze>, <metaitem:gearSmallBronze>]]);
 
 // Steam Rock Breaker
 recipes.addShaped("tfg/gregtech/steam_rick_breaker", <metaitem:steam_rock_breaker_bronze>, [
-    [<ore:craftingPiston>, <ore:pipeSmallFluidBronze>, <ore:craftingPiston>],
-    [<ore:pipeSmallFluidBronze>, <gregtech:steam_casing>, <ore:pipeSmallFluidBronze>],
-    [Diamonds, <ore:pipeSmallFluidBronze>, Diamonds]]);
+    [<ore:craftingPiston>, <metaitem:pipeSmallFluidBronze>, <ore:craftingPiston>],
+    [<metaitem:pipeSmallFluidBronze>, <gregtech:steam_casing>, <metaitem:pipeSmallFluidBronze>],
+    [Diamonds, <metaitem:pipeSmallFluidBronze>, Diamonds]]);
 
 // Firebrick GT
 recipes.addShaped("tfg/gregtech/fire_bricks", <gregtech:metal_casing:1>, [
-    [null, <ore:plateCopper>, null],
-    [<ore:plateCopper>, <tfc:fire_bricks>, <ore:plateCopper>],
-    [null, <ore:plateCopper>, null]]);
+    [null, <metaitem:plateCopper>, null],
+    [<metaitem:plateCopper>, <tfc:fire_bricks>, <metaitem:plateCopper>],
+    [null, <metaitem:plateCopper>, null]]);
 
 // Quartz Sand - 1
 recipes.addShaped("tfg/gregtech/quartz_sand", <metaitem:dustQuartzSand>, [
     [null, <ore:sand>, null],
-    [null, <ore:gtce.tool.mortars>, null],
+    [null, <ore:craftingToolMortar>, null],
     [null, null, null]]);
 
 // Steam Import Bus
@@ -536,20 +536,20 @@ recipes.addShaped("tfg/gregtech/steam_export_bus", <metaitem:steam_export_bus>, 
 // Wooden Crate
 recipes.addShaped("tfg/gregtech/wooden_crate", <metaitem:crate.wood>, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:craftingToolSaw>, <ore:plankWood>],
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>]]);
 
 // Блокнот
 recipes.addShaped("tfg/gregtech/clipboard", <metaitem:clipboard>, [
-    [null, <ore:screwIronAny>, <ore:gtce.tool.screwdrivers>],
+    [null, <ore:screwIronAny>, <ore:craftingToolScrewdriver>],
     [<ore:boltIronAny>, <metaitem:plateWood>, <ore:boltIronAny>],
     [<ore:paper>, <ore:paper>, <ore:paper>]]);
 
 // Лук
 recipes.addShaped(<minecraft:bow>, [
-    [<ore:gtce.tool.hard.hammers>, <metaitem:stickLongWood>, <ore:string>],
+    [<ore:craftingToolHardHammer>, <metaitem:stickLongWood>, <ore:string>],
     [<metaitem:stickLongWood>, <ore:ringIronAny>, <ore:string>],
-    [<ore:gtce.tool.files>, <metaitem:stickLongWood>, <ore:string>]]);
+    [<ore:craftingToolFile>, <metaitem:stickLongWood>, <ore:string>]]);
 
 // Чаровалка
 macerator.recipeBuilder()
@@ -566,7 +566,7 @@ assembler.recipeBuilder()
 // Extruder Shape (Sense Head)
 recipes.addShaped(<metaitem:shape.extruder.sense>, [
     [null, null, null],
-    [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
+    [<ore:craftingToolHardHammer>, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
@@ -601,8 +601,8 @@ assembly_line.recipeBuilder()
       <gcym:unique_casing:4> * 5, 
       <metaitem:conveyor.module.ev> * 3, 
       <metaitem:conveyor.module.ev> * 3, 
-      <ore:plateDoubleNaquadah> * 3, 
-      <ore:plateDoubleNaquadah> * 3
+      <metaitem:plateDoubleNaquadah> * 3, 
+      <metaitem:plateDoubleNaquadah> * 3
     ])
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
@@ -752,33 +752,33 @@ electrolyzer.recipeBuilder()
 
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
-    .inputs([<ore:dustDiamond>, <ore:dustIridium>])
+    .inputs([<metaitem:dustDiamond>, <metaitem:dustIridium>])
     .fluidInputs([<liquid:mars_air> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 2])
     .duration(200).EUt(7680).buildAndRegister();
 chemical_reactor.recipeBuilder()
-    .inputs([<ore:dustDiamond> * 2, <ore:dustIridium> * 2])
+    .inputs([<metaitem:dustDiamond> * 2, <metaitem:dustIridium> * 2])
     .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
     .outputs([<metaitem:dustNetherStar> * 1])
     .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
-recipes.addShapeless(<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
+recipes.addShapeless(<minecraft:flint>, [<ore:craftingToolMortar>, <ore:gravel>]);
 
 // Бронзовая пыль в TFC стиле
-recipes.addShapeless(<metaitem:dustBronze> * 9, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+recipes.addShapeless(<metaitem:dustBronze> * 9, [<metaitem:dustTin>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>]);
 
 // Исправление рецепта на бумагу
 
 // Крафт бумажной пыли
     recipes.addShaped(<metaitem:dustPaper> * 2,
     [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
-    [null, <ore:gtce.tool.mortars>, null]]);
+    [null, <ore:craftingToolMortar>, null]]);
 
 // Крафт бумаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
     [[null, <ore:slabStonePolished>.reuse(), null],
-    [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>],
+    [<metaitem:dustPaper>, <metaitem:dustPaper>, <metaitem:dustPaper>],
     [null, <ore:slabStonePolished>.reuse(), null]]);
 
 // Plant Ball Recipes
@@ -788,7 +788,7 @@ centrifuge.recipeBuilder()
     .inputs([<ore:dirt>])
     .chancedOutput(<metaitem:plant_ball>, 1200, 700)
     .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
-    .chancedOutput(<ore:dustTinyClay>.firstItem, 4000, 900)
+    .chancedOutput(<metaitem:dustTinyClay>, 4000, 900)
     .duration(275).EUt(30).buildAndRegister();
 
 // From Grass
@@ -796,7 +796,7 @@ centrifuge.recipeBuilder()
     .inputs([<ore:grass>])
     .chancedOutput(<metaitem:plant_ball>, 3000, 1200)
     .chancedOutput(<tfc:dirt/basalt>, 5000, 1200)
-    .chancedOutput(<ore:dustTinyClay>.firstItem, 5000, 900)
+    .chancedOutput(<metaitem:dustTinyClay>, 5000, 900)
     .duration(275).EUt(30).buildAndRegister();
 
 // From Cactus
@@ -916,7 +916,7 @@ extractor.recipeBuilder()
 // Сахарный тростник --> целлюлоза
 forge_hammer.recipeBuilder()
     .inputs([<ore:sugarcane> * 3])
-    .outputs(<ore:dustPaper>.firstItem * 2)
+    .outputs(<metaitem:dustPaper> * 2)
     .duration(105).EUt(4).buildAndRegister();
 
 // Песок + Гравий --> цемент тфк
@@ -933,7 +933,7 @@ assembler.recipeBuilder()
 
 // Fertilizer
 mixer.recipeBuilder()
-	.inputs(<ore:sand> * 4,<ore:dustWood> * 2, <ore:dirt>)
+	.inputs(<ore:sand> * 4,<metaitem:dustWood> * 2, <ore:dirt>)
     .fluidInputs(<liquid:water> * 1000)
 	.outputs(<metaitem:fertilizer>)
 	.duration(100).EUt(30).buildAndRegister();
@@ -977,17 +977,17 @@ TerminalRegistry.createAppRegistryBuilder("teleport")
 
 // Монеты
 forming_press.recipeBuilder()
-    .inputs(<ore:plateCopper>)
+    .inputs(<metaitem:plateCopper>)
     .notConsumable(<metaitem:shape.mold.credit>)
     .outputs(<metaitem:credit.copper>)
     .duration(40).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
-    .inputs(<ore:plateGold>)
+    .inputs(<metaitem:plateGold>)
     .notConsumable(<metaitem:shape.mold.credit>)
     .outputs(<metaitem:credit.gold>)
     .duration(40).EUt(480).buildAndRegister();
 forming_press.recipeBuilder()
-    .inputs(<ore:plateSilver>)
+    .inputs(<metaitem:plateSilver>)
     .notConsumable(<metaitem:shape.mold.credit>)
     .outputs(<metaitem:credit.silver>)
     .duration(40).EUt(480).buildAndRegister();

@@ -47,9 +47,9 @@ for i in 4 .. 7 {
 assembler.recipeBuilder()
 	.inputs([
     <metaitem:fluid.housing> * 2, 
-    <ore:gemQuartzite> * 2, 
-    <ore:plateStainlessSteel> * 4, 
-    <ore:screwStainlessSteel> * 2])
+    <metaitem:gemQuartzite> * 2, 
+    <metaitem:plateStainlessSteel> * 4, 
+    <metaitem:screwStainlessSteel> * 2])
 	.outputs(<aeadditions:storage.casing:1>)
 	.duration(20).EUt(480).buildAndRegister();
 // Recycle - Fluid Housing
@@ -71,9 +71,9 @@ arc_furnace.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs([
     <appliedenergistics2:material:39> * 2, 
-    <ore:gemQuartzite> * 2, 
-    <ore:plateTungstenSteel> * 4, 
-    <ore:screwTungstenSteel> * 2])
+    <metaitem:gemQuartzite> * 2, 
+    <metaitem:plateTungstenSteel> * 4, 
+    <metaitem:screwTungstenSteel> * 2])
 	.outputs(<aeadditions:storage.casing>)
 	.duration(20).EUt(480).buildAndRegister();
 // Recycle - Advanced Storage Housing
@@ -95,8 +95,8 @@ arc_furnace.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitZpm> * 4, 
-    <ore:plateNaquadahAlloy> * 4, 
-    <ore:dustCertusQuartz> * 16, 
+    <metaitem:plateNaquadahAlloy> * 4, 
+    <metaitem:dustCertusQuartz> * 16, 
     <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<aeadditions:storage.component>])
@@ -113,8 +113,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitZpm> * 4, 
-    <ore:plateAmericium> * 4, 
-    <ore:dustCertusQuartz> * 16, 
+    <metaitem:plateAmericium> * 4, 
+    <metaitem:dustCertusQuartz> * 16, 
     <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<aeadditions:storage.component:1>])
@@ -131,8 +131,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitUv> * 4, 
-    <ore:plateDarmstadtium> * 4, 
-    <ore:dustCertusQuartz> * 32, 
+    <metaitem:plateDarmstadtium> * 4, 
+    <metaitem:dustCertusQuartz> * 32, 
     <appliedenergistics2:material:23>])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<aeadditions:storage.component:2>])
@@ -149,8 +149,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitUv> * 4, 
-    <ore:plateNeutronium> * 4, 
-    <ore:dustCertusQuartz> * 32, 
+    <metaitem:plateNeutronium> * 4, 
+    <metaitem:dustCertusQuartz> * 32, 
     <appliedenergistics2:material:23>])
   .fluidInputs(<liquid:steel> * 144)
   .outputs([<aeadditions:storage.component:3>])
@@ -168,8 +168,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitZpm> * 4, 
-    <ore:plateNaquadahAlloy> * 4, 
-    <ore:dustNetherQuartz> * 16, 
+    <metaitem:plateNaquadahAlloy> * 4, 
+    <metaitem:dustNetherQuartz> * 16, 
     <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<aeadditions:storage.component:4>])
@@ -186,8 +186,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitZpm> * 4, 
-    <ore:plateAmericium> * 4, 
-    <ore:dustNetherQuartz> * 16, 
+    <metaitem:plateAmericium> * 4, 
+    <metaitem:dustNetherQuartz> * 16, 
     <appliedenergistics2:material:24>])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<aeadditions:storage.component:5>])
@@ -204,8 +204,8 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
   .inputs([
     <ore:circuitUv> * 4, 
-    <ore:plateDarmstadtium> * 4, 
-    <ore:dustNetherQuartz> * 32, 
+    <metaitem:plateDarmstadtium> * 4, 
+    <metaitem:dustNetherQuartz> * 32, 
     <appliedenergistics2:material:23>])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<aeadditions:storage.component:6>])
@@ -231,7 +231,7 @@ assembler.recipeBuilder()
     <ore:circuitHv> * 2,
     <metaitem:conveyor.module.hv> * 2,
     <metaitem:fluid.regulator.hv> * 2,
-    <ore:plateSteel> * 4])
+    <metaitem:plateSteel> * 4])
   .fluidInputs([<liquid:plastic> * 144])
   .outputs([<aeadditions:fluidcrafter>])
   .duration(200).EUt(480).buildAndRegister();
@@ -267,9 +267,9 @@ assembler.recipeBuilder()
 
 // Obsidian ME Drive
 recipes.addShaped("tfg/aeadditions/obsidian_me_drive", <aeadditions:hardmedrive>, [
-  [<ore:plateObsidian>, <ore:ae2.cable.dense.covered>, <ore:plateObsidian>],
-  [<ore:plateObsidian>, <appliedenergistics2:drive>, <ore:plateObsidian>],
-  [<ore:plateObsidian>, <minecraft:obsidian>, <ore:plateObsidian>]]);
+  [<metaitem:plateObsidian>, <ore:ae2.cable.dense.covered>, <metaitem:plateObsidian>],
+  [<metaitem:plateObsidian>, <appliedenergistics2:drive>, <metaitem:plateObsidian>],
+  [<metaitem:plateObsidian>, <minecraft:obsidian>, <metaitem:plateObsidian>]]);
 
 // ME Drive Fixture
 recipes.addShaped("tfg/aeadditions/me_drive_fixture", <aeadditions:part.base>, [

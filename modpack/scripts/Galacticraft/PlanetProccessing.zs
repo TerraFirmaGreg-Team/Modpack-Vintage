@@ -374,7 +374,7 @@ centrifuge.recipeBuilder()
 
 // Дэш блок
 compressor.recipeBuilder()
-   .inputs([<ore:ingotDesh> * 9])
+   .inputs([<galacticraftplanets:item_basic_mars:2> * 9])
    .outputs([<galacticraftplanets:mars:8>])
    .duration(300).EUt(480).buildAndRegister();
 

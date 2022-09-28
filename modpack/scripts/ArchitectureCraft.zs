@@ -12,16 +12,16 @@ recipes.removeByMod("architecturecraft");
 recipes.addShaped("tfg/architecturecraft/sawbench", <architecturecraft:sawbench>,
     [[<ore:plateIronAny>, <ore:toolHeadBuzzSawIronAny>, <ore:plateIronAny>],
     [<ore:plankWood>, <ore:gearIronAny>, <ore:plankWood>],
-    [<ore:stickWood>, <ore:pressurePlateWood>, <ore:stickWood>]]);
+    [<minecraft:stick>, <ore:pressurePlateWood>, <minecraft:stick>]]);
 
 // Hammer
 recipes.addShaped("tfg/architecturecraft/hammer", <architecturecraft:hammer>,
     [[<ore:plateIronAny>, <ore:plateIronAny>, null],
-    [<ore:dyeOrange>, <ore:stickWood>, <ore:plateIronAny>],
-    [<ore:dyeOrange>, <ore:stickWood>, null]]);
+    [<ore:dyeOrange>, <minecraft:stick>, <ore:plateIronAny>],
+    [<ore:dyeOrange>, <minecraft:stick>, null]]);
 
 // Chisel
 recipes.addShaped("tfg/architecturecraft/chisel", <architecturecraft:chisel>,
     [[<ore:plateIronAny>, null, null],
-    [<ore:dyeOrange>, <ore:stickWood>, null],
+    [<ore:dyeOrange>, <minecraft:stick>, null],
     [null, null, null]]);

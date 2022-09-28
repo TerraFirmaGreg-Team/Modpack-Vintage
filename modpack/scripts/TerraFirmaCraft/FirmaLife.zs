@@ -187,27 +187,27 @@ for i, RemoveTrapdoors in RemoveTrapdoors {
 
 // Климатическая станция уровня 0
 recipes.addShaped("tfg/firmalife/climate_station_0", <firmalife:climate_station>, [
-    [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>],
-    [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>],
-    [<ore:plateWroughtIron>, <ore:plankWood>, <ore:plateWroughtIron>]]);
+    [<metaitem:plateWroughtIron>, <ore:plankWood>, <metaitem:plateWroughtIron>],
+    [<minecraft:redstone>, <ore:blockGlass>, <minecraft:redstone>],
+    [<metaitem:plateWroughtIron>, <ore:plankWood>, <metaitem:plateWroughtIron>]]);
 
 // Климатическая станция уровня 1
 recipes.addShaped("tfg/firmalife/climate_station_1", <firmalife:climate_station_1>, [
-    [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>],
+    [<metaitem:plateWroughtIron>, <ore:blockGlass>, <metaitem:plateWroughtIron>],
     [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
-    [<ore:plateWroughtIron>, <ore:blockGlass>, <ore:plateWroughtIron>]]);
+    [<metaitem:plateWroughtIron>, <ore:blockGlass>, <metaitem:plateWroughtIron>]]);
 
 // Климатическая станция уровня 5
 recipes.addShaped("tfg/firmalife/climate_station_5", <firmalife:climate_station_5>, [
-    [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>],
+    [<metaitem:gearCobaltBrass>, <ore:gemFlawless>, <metaitem:gearCobaltBrass>],
     [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
-    [<ore:gearCobaltBrass>, <ore:gemFlawless>, <ore:gearCobaltBrass>]]);
+    [<metaitem:gearCobaltBrass>, <ore:gemFlawless>, <metaitem:gearCobaltBrass>]]);
 
 // Разбрызгиватель
 recipes.addShaped("tfg/firmalife/sprinkler", <firmalife:sprinkler>, [
-    [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>],
-    [<ore:plateRedSteel>, <firmalife:spout>, <ore:plateRedSteel>],
-    [<ore:gearCobaltBrass>, null, <ore:gearCobaltBrass>]]);
+    [<metaitem:gearCobaltBrass>, null, <metaitem:gearCobaltBrass>],
+    [<metaitem:plateRedSteel>, <firmalife:spout>, <metaitem:plateRedSteel>],
+    [<metaitem:gearCobaltBrass>, null, <metaitem:gearCobaltBrass>]]);
 
 // Jar
 recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
@@ -217,13 +217,13 @@ recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
 
 
 // Pizza Dough
-recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:gtce.tool.knife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
+recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:craftingToolKnife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
 
 // Свечка
 recipes.addShapeless("tfg/firmalife/candle", <firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
 
 // Обработанное дерево
-recipes.addShapeless("tfg/firmalife/treated_lumber", <firmalife:treated_lumber>, [<ore:lumber>, <ore:itemBeeswax>, <ore:dustSalt>]);
+recipes.addShapeless("tfg/firmalife/treated_lumber", <firmalife:treated_lumber>, [<ore:lumber>, <ore:itemBeeswax>, <metaitem:dustSalt>]);
 
 // Furnace recipes for TFC item
 furnace.addRecipe(<firmalife:unfired_mallet_mold>, <firmalife:mallet_mold>);
@@ -236,50 +236,50 @@ Drying.addRecipe("tfg/firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {Flui
 recipes.addShapeless(<metaitem:dustSmallSalt> * 2, [<metaitem:wooden.bucket.with.salt>.giveBack(<tfc:wooden_bucket>)]);
 
 // Greenhouse Door
-Anvil.addRecipe("tfg/firmalife/greenhouse_door", <ore:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg/firmalife/greenhouse_door", <metaitem:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
 
 // Бафф крафта стен теплицы
-Anvil.addRecipe("tfg/firmalife/greenhouse_wall", <ore:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
+Anvil.addRecipe("tfg/firmalife/greenhouse_wall", <metaitem:plateWroughtIron>, <firmalife:greenhouse_wall> * 4, 3, "general", "HIT_NOT_LAST", "PUNCH_NOT_LAST", "SHRINK_LAST");
 
 // Бафф крафта крыши теплицы
-Anvil.addRecipe("tfg/firmalife/greenhouse_roof", <ore:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
+Anvil.addRecipe("tfg/firmalife/greenhouse_roof", <metaitem:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
 
 // Treated Lumber
 Barrel.addRecipe("tfg/firmalife/treated_lumber", <ore:lumber>, <liquid:gtfo_olive_oil> * 500, <firmalife:treated_lumber>, 8);
 
 // Молотки
-Anvil.addRecipe("tfg:firmalife_bismuth_bronze_hammer", <ore:ingotBismuthBronze>, <firmalife:bismuth_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_black_bronze_hammer", <ore:ingotBlackBronze>, <firmalife:black_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_bronze_hammer", <ore:ingotBronze>, <firmalife:bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_copper_hammer", <ore:ingotCopper>, <firmalife:copper_mallet_head>, 1, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_wrought_iron_hammer", <ore:ingotWroughtIron>, <firmalife:wrought_iron_mallet_head>, 3, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_steel_hammer", <ore:ingotSteel>, <firmalife:steel_mallet_head>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_black_steel_hammer", <ore:ingotBlackSteel>, <firmalife:black_steel_mallet_head>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_blue_steel_hammer", <ore:ingotBlueSteel>, <firmalife:blue_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <ore:ingotRedSteel>, <firmalife:red_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_bismuth_bronze_hammer", <metaitem:ingotBismuthBronze>, <firmalife:bismuth_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_black_bronze_hammer", <metaitem:ingotBlackBronze>, <firmalife:black_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_bronze_hammer", <metaitem:ingotBronze>, <firmalife:bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_copper_hammer", <metaitem:ingotCopper>, <firmalife:copper_mallet_head>, 1, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_wrought_iron_hammer", <metaitem:ingotWroughtIron>, <firmalife:wrought_iron_mallet_head>, 3, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_steel_hammer", <metaitem:ingotSteel>, <firmalife:steel_mallet_head>, 4, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_black_steel_hammer", <metaitem:ingotBlackSteel>, <firmalife:black_steel_mallet_head>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_blue_steel_hammer", <metaitem:ingotBlueSteel>, <firmalife:blue_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
+Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <metaitem:ingotRedSteel>, <firmalife:red_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
 
 // Chestnut Dough
 mixer.recipeBuilder()
-    .inputs([<ore:chestnutFlour>, <ore:dustSmallSalt>, <ore:fruitDry>])
+    .inputs([<ore:chestnutFlour>, <metaitem:dustSmallSalt>, <ore:fruitDry>])
     .fluidInputs([<liquid:fresh_water> * 1000])
     .outputs(<firmalife:chestnut_dough> * 2)
     .duration(400).EUt(2).buildAndRegister();
 
 // Chestnut Bread
 baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <ore:gemCharcoal> * 2])
+    .inputs([<firmalife:chestnut_dough>, <minecraft:coal:1> * 2])
     .outputs(<firmalife:chestnut_bread>)
     .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <ore:gemCoal> * 2])
+    .inputs([<firmalife:chestnut_dough>, <minecraft:coal> * 2])
     .outputs(<firmalife:chestnut_bread>)
     .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
 baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <ore:gemCoke>])
+    .inputs([<firmalife:chestnut_dough>, <metaitem:gemCoke>])
     .outputs(<firmalife:chestnut_bread>)
     .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();

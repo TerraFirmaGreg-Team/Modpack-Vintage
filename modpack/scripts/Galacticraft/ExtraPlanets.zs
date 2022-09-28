@@ -94,11 +94,11 @@ val thermalPaddingBoots as IItemStack[] = [
    <extraplanets:tier3_thermal_padding:3>,
    <extraplanets:tier4_thermal_padding:3>
 ];
-val materialSpace as IOreDictEntry[] = [
-   <ore:plateDenseTitanium>,
-   <ore:plateDenseTungstenSteel>,
-   <ore:plateDenseRhodiumPlatedPalladium>,
-   <ore:plateDenseNaquadahAlloy>
+val materialSpace as IItemStack[] = [
+   <metaitem:plateDenseTitanium>,
+   <metaitem:plateDenseTungstenSteel>,
+   <metaitem:plateDenseRhodiumPlatedPalladium>,
+   <metaitem:plateDenseNaquadahAlloy>
 ];
 val thermalCloth as IItemStack[] = [
    <galacticraftplanets:item_basic_asteroids:7>,
@@ -106,11 +106,11 @@ val thermalCloth as IItemStack[] = [
    <extraplanets:thermal_cloth>,
    <extraplanets:thermal_cloth:1>
 ];
-val materialThermal as IOreDictEntry[] = [
-   <ore:plateRedAlloy>,
-   <ore:plateLead>,
-   <ore:plateDesh>,
-   <ore:plateCarbon>
+val materialThermal as IItemStack[] = [
+   <metaitem:plateRedAlloy>,
+   <metaitem:plateLead>,
+   <metaitem:plateDesh>,
+   <metaitem:plateCarbon>
 ];
 
 // --- Удаление рецептов
@@ -129,21 +129,21 @@ ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUG
 
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
-   .inputs(<galacticraftcore:landing_pad> * 3, <ore:plateDenseTitanium> * 6)
+   .inputs(<galacticraftcore:landing_pad> * 3, <metaitem:plateDenseTitanium> * 6)
    .circuit(6)
    .outputs(<extraplanets:advanced_launch_pad> * 5)
    .duration(300).EUt(1000).buildAndRegister();
 
 // Взлетная площадка 3 Tiers
 assembler.recipeBuilder()
-   .inputs(<extraplanets:advanced_launch_pad> * 3, <ore:plateDenseTungstenSteel> * 18, <ore:plateLead> * 2)
+   .inputs(<extraplanets:advanced_launch_pad> * 3, <metaitem:plateDenseTungstenSteel> * 18, <metaitem:plateLead> * 2)
    .circuit(6)
    .outputs(<extraplanets:advanced_launch_pad:1> * 5)
    .duration(1000).EUt(5208).buildAndRegister();
 
 // Взлетная площадка электрической ракеты
 assembler.recipeBuilder()
-   .inputs(<extraplanets:advanced_launch_pad:1> * 3, <ore:plateDensePlatinum> * 9 , <ore:plateLead> * 2, <metaitem:electric.pump.lv> * 2)
+   .inputs(<extraplanets:advanced_launch_pad:1> * 3, <metaitem:plateDensePlatinum> * 9 , <metaitem:plateLead> * 2, <metaitem:electric.pump.lv> * 2)
    .circuit(6)
    .outputs(<extraplanets:advanced_launch_pad:3> * 5)
    .duration(1000).EUt(30038).buildAndRegister();
@@ -158,25 +158,25 @@ implosion_compressor.recipeBuilder()
 // Защитные пластины
 // T1
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:plateDenseTitanium> * 4)
+	.inputs(<metaitem:plateDenseTitanium> * 4)
 	.outputs(<extraplanets:tier1_armor_layer>)
 	.property("explosives", 12)
 	.duration(20).EUt(2280).buildAndRegister();
 // T2
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:plateDenseTungstenSteel> * 8)
+	.inputs(<metaitem:plateDenseTungstenSteel> * 8)
 	.outputs(<extraplanets:tier2_armor_layer>)
 	.property("explosives", 24)
 	.duration(20).EUt(8680).buildAndRegister();
 // T3
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:plateDenseRhodiumPlatedPalladium> * 16)
+	.inputs(<metaitem:plateDenseRhodiumPlatedPalladium> * 16)
 	.outputs(<extraplanets:tier3_armor_layer>)
 	.property("explosives", 36)
 	.duration(20).EUt(38480).buildAndRegister();
 // T4
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:plateDenseNaquadahAlloy> * 32)
+	.inputs(<metaitem:plateDenseNaquadahAlloy> * 32)
 	.outputs(<extraplanets:tier4_armor_layer>)
 	.property("explosives", 48)
 	.duration(20).EUt(139480).buildAndRegister();
@@ -184,25 +184,25 @@ implosion_compressor.recipeBuilder()
 // T1
 assembler.recipeBuilder()
    .circuit(1)
-   .inputs(<ore:plateDoubleLead> * 6, <extraplanets:cloth> * 4)
+   .inputs(<metaitem:plateDoubleLead> * 6, <extraplanets:cloth> * 4)
    .outputs(<extraplanets:tier1_radiation_layer>)
    .duration(1000).EUt(2280).buildAndRegister();
 // T2
 assembler.recipeBuilder()
    .circuit(2)
-   .inputs(<ore:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier1_radiation_layer>)
+   .inputs(<metaitem:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier1_radiation_layer>)
    .outputs(<extraplanets:tier2_radiation_layer>)
    .duration(1000).EUt(8680).buildAndRegister();
 // T3
 assembler.recipeBuilder()
    .circuit(3)
-   .inputs(<ore:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier2_radiation_layer>)
+   .inputs(<metaitem:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier2_radiation_layer>)
    .outputs(<extraplanets:tier3_radiation_layer>)
    .duration(1000).EUt(38480).buildAndRegister();
 // T4
 assembler.recipeBuilder()
    .circuit(4)
-   .inputs(<ore:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier3_radiation_layer>)
+   .inputs(<metaitem:plateDoubleLead> * 6, <extraplanets:cloth> * 4, <extraplanets:tier3_radiation_layer>)
    .outputs(<extraplanets:tier4_radiation_layer>)
    .duration(1000).EUt(139480).buildAndRegister();
 // Пластины давления
@@ -234,26 +234,26 @@ assembler.recipeBuilder()
 // T1
 assembler.recipeBuilder()
    .circuit(1)
-   .inputs(<extraplanets:cloth> * 6, <ore:wireFineBorosilicateGlass> * 4, <ore:wireFineRedAlloy> * 9)
+   .inputs(<extraplanets:cloth> * 6, <metaitem:wireFineBorosilicateGlass> * 4, <metaitem:wireFineRedAlloy> * 9)
    .fluidInputs(<liquid:red_alloy> * 516)
    .outputs(<galacticraftplanets:item_basic_asteroids:7>)
    .duration(100).EUt(2280).buildAndRegister();
 // T2
 assembler.recipeBuilder()
    .circuit(2)
-   .inputs(<extraplanets:cloth> * 12, <ore:plateDenseLead>, <galacticraftplanets:item_basic_asteroids:7> * 8)
+   .inputs(<extraplanets:cloth> * 12, <metaitem:plateDenseLead>, <galacticraftplanets:item_basic_asteroids:7> * 8)
    .outputs(<galacticraftplanets:basic_item_venus:3>)
    .duration(1000).EUt(8680).buildAndRegister();
 // T3
 assembler.recipeBuilder()
    .circuit(3)
-   .inputs(<extraplanets:cloth> * 18, <ore:plateDenseDesh>, <galacticraftplanets:item_basic_asteroids:7> * 16)
+   .inputs(<extraplanets:cloth> * 18, <metaitem:plateDenseDesh>, <galacticraftplanets:item_basic_asteroids:7> * 16)
    .outputs(<extraplanets:thermal_cloth>)
    .duration(1000).EUt(38480).buildAndRegister();
 // T4
 assembler.recipeBuilder()
    .circuit(4)
-   .inputs(<extraplanets:cloth> * 24, <ore:plateDenseCarbon>, <galacticraftplanets:item_basic_asteroids:7> * 32)
+   .inputs(<extraplanets:cloth> * 24, <metaitem:plateDenseCarbon>, <galacticraftplanets:item_basic_asteroids:7> * 32)
    .outputs(<extraplanets:thermal_cloth:1>)
    .duration(1000).EUt(139480).buildAndRegister();
 // Заготовки под скафандры
