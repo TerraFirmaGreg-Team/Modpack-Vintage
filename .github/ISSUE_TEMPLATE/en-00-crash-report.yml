@@ -1,4 +1,4 @@
-name: Crash Report
+name: "[EN] Crash Report"
 description: Report a bug that crashes the game or prevents startup.
 labels: [ "status: unverified", "type: сrash" ]
 body:
@@ -9,8 +9,8 @@ body:
       description: Modpack type and version used when this error was encountered.
       placeholder: "Example: TFG:NH v4.1.4"
       options:
-        - "Default "
-        - "Extended "
+        - "Default"
+        - "Extended"
     validations:
       required: true
   - type: textarea
