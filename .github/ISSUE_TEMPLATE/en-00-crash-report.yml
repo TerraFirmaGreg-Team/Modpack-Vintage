@@ -1,9 +1,9 @@
-name: "[EN] Bug report"
-description: Report a bug where something is not working as expected, which does not crash the game.
-labels: [ "status: unverified", "type: bug" ]
+name: Crash Report
+description: Report a bug that crashes the game or prevents startup.
+labels: [ "status: unverified", "type: сrash" ]
 body:
   - type: input
-    id: modpack
+    id: version
     attributes:
       label: Modpack Used
       description: Modpack type and version used when this error was encountered.
@@ -30,49 +30,42 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: world
+    id: crash
     attributes:
-      label: New Worlds
-      description: Does this bug occur on a newly generated world?
+      label: Side Crashed
+      description: Where the game crashed.
       options:
-        - "Yes"
-        - "No"
+        - "Client"
+        - "Server"
+        - "Client and Server"
         - "Unsure"
     validations:
       required: true
   - type: dropdown
-    id: cross-mod
+    id: world
     attributes:
-      label: Cross-Mod Interaction
-      description: Is this error caused by another mod installed with the standard modpack?
+      label: New Worlds
+      description: Does this crash occur on a newly generated world?
       options:
         - "Yes"
         - "No"
         - "Unsure"
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected Behavior
-      description: What you expected to happen. Attach screenshots here as necessary.
-      placeholder: "Example: Expected to produce X by consuming Y."
-    validations:
-      required: true
-  - type: textarea
-    id: result
-    attributes:
-      label: Actual Behavior
-      description: What happened despite your expectations. Attach screenshots here as necessary.
-      placeholder: "Example: Produced one X but Y was not consumed."
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: Steps to Reproduce
-      description: How to reproduce the bug.
+      description: How to reproduce the crash.
       placeholder: "Example: 1) I did X..."
+    validations:
+      required: true
+  - type: textarea
+    id: crash-report
+    attributes:
+      label: Crash Report
+      description: "You can find the crash report in `installation/crash-reports/`, if one was created. Additionally, please attach `installation/logs/latest.log`. If either or both files do not exist, state such. Please link to a paste site with their content, such as GitHub Gists or Pastebin. **Do not paste the contents of either these files directly into the text box.**"
+      placeholder: "Example: a link to a paste site with the crash report and latest.log."
     validations:
       required: true
   - type: textarea
@@ -85,4 +78,4 @@ body:
       required: false
   - type: markdown
     attributes:
-      value: Thank you for taking the time to fill out this bug report.
+      value: Thank you for taking the time to fill out this crash report.
