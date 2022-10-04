@@ -1,4 +1,4 @@
-name: [EN] Bug Report
+name: Bug Report
 description: Report a bug where something is not working as expected, which does not crash the game.
 labels: [ "status: unverified", "type: bug" ]
 body:
