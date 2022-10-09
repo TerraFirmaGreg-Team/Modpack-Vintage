@@ -6,8 +6,8 @@
 			icon: "extraplanets:textures/gui/celestialbodies/kepler22b.png"
 		}
 	},
-	x: 40.24999999999999d,
-	y: 6.324999999999999d,
+	x: 40.5d,
+	y: 6.0d,
 	description: "{tfg.quests.space.end1.title}",
 	text: [
 		"{tfg.quests.space.end1.subtitle}"
@@ -16,7 +16,7 @@
 	dependencies: [
 		"7db5445d"
 	],
-	size: 2.3d,
+	size: 2.0d,
 	tasks: [{
 		uid: "bb8ad5f0",
 		type: "item",
