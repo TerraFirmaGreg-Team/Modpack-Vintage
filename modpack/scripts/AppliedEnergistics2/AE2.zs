@@ -414,7 +414,7 @@ packer.recipeBuilder()
 
 // Сетевой инструмент
 recipes.addShaped("tfg/ae2/network_tool", <appliedenergistics2:network_tool>, [
-  [<ore:craftingToolWrench>, <ore:circuitLv>],
+  [<ore:gtce.tool.wrenches>, <ore:circuitLv>],
   [<appliedenergistics2:material:23>, <ore:itemIlluminatedPanel>]]);
 
 // Wireless Access Point
@@ -1330,8 +1330,8 @@ assembler.recipeBuilder()
 
 // Charged Stuff
 recipes.addShaped("tfg/ae2/charged_staff", <appliedenergistics2:charged_staff>, [
-  [null, <ore:craftingToolHardHammer>, <appliedenergistics2:material:1>],
-  [null, <ore:stickIronAny>, <ore:craftingToolFile>],
+  [null, <ore:gtce.tool.hard.hammers>, <appliedenergistics2:material:1>],
+  [null, <ore:stickIronAny>, <ore:gtce.tool.files>],
   [<ore:stickIronAny>, null, null]]);
 
 // Датчик жидкостного уровня
@@ -1417,7 +1417,7 @@ assembler.recipeBuilder()
 // ME Chest
 recipes.addShaped("tfg/ae2/storage_chest", <appliedenergistics2:chest>, [
 	[<metaitem:plateStainlessSteel>, <ore:circuitMv>, <metaitem:plateStainlessSteel>],
-	[<ore:ae2.cable.glass>, <ore:chestWood>, <ore:ae2.cable.glass>],
+	[<ore:ae2.cable.glass>, <metaitem:crate.aluminium>, <ore:ae2.cable.glass>],
 	[<metaitem:plateStainlessSteel>, <ore:circuitMv>, <metaitem:plateStainlessSteel>]]);
 
 // ME Drive
@@ -1425,6 +1425,12 @@ recipes.addShaped("tfg/ae2/storage_drive", <appliedenergistics2:drive>, [
   [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>],
   [<ore:ae2.cable.glass>, <ore:circuitLv>, <ore:ae2.cable.glass>],
   [<metaitem:plateTitanium>, <appliedenergistics2:material:24>, <metaitem:plateTitanium>]]);
+
+// Cutting knife
+recipes.addShaped("tfg/ae2/cutting_knife", <appliedenergistics2:certus_quartz_cutting_knife>, [
+	[null, <ore:circuitMv>, <metaitem:stickTreatedWood>],
+	[<minecraft:iron_ingot>, <metaitem:stickTreatedWood>, null],
+	[<metaitem:gemCertusQuartz>, <metaitem:gemCertusQuartz>, null]]);
 
 // Quantum Ring
 assembly_line.recipeBuilder()
@@ -1620,37 +1626,37 @@ recipes.addShaped("tfg/ae2/planes_formation", <appliedenergistics2:part:320>, [
 
 // ME Terminal
 recipes.addShaped("tfg/ae2/terminals", <appliedenergistics2:part:380>, [
-  [<metaitem:stickSteel>, <ore:craftingToolScrewdriver>, <metaitem:stickSteel>],
+  [<metaitem:stickSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:stickSteel>],
   [<ore:itemIlluminatedPanel>, <ore:circuitHv>, <metaitem:plateSteel>],
   [<metaitem:stickSteel>,  <metaitem:screwSteel>, <metaitem:stickSteel>]]);
 
 // ME Fluid Terminal
 recipes.addShaped("tfg/ae2/terminals_fluid", <appliedenergistics2:part:520>, [
-  [<metaitem:stickStainlessSteel>, <ore:craftingToolScrewdriver>, <metaitem:stickStainlessSteel>],
+  [<metaitem:stickStainlessSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:stickStainlessSteel>],
   [<ore:itemIlluminatedPanel>, <ore:circuitHv>, <metaitem:plateStainlessSteel>],
   [<metaitem:stickStainlessSteel>,  <metaitem:screwStainlessSteel>, <metaitem:stickStainlessSteel>]]);
 
 // ME Crafting Terminal
 recipes.addShaped("tfg/ae2/terminals_crafting", <appliedenergistics2:part:360>, [
-    [<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>],
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
     [<metaitem:screwSteel>, <ore:workbench>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Interface Terminal
 recipes.addShaped("tfg/ae2/terminals_interface", <appliedenergistics2:part:480>, [
-    [<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>],
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
     [<metaitem:screwSteel>, <ore:ae2.interface.item>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Pattern Terminal
 recipes.addShaped("tfg/ae2/terminals_pattern", <appliedenergistics2:part:340>, [
-    [<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>],
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
     [<metaitem:screwSteel>, <appliedenergistics2:material:52>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Extanded Pattern Terminal
 recipes.addShaped("tfg/ae2/terminals_extended_pattern", <appliedenergistics2:part:341>, [
-    [<ore:craftingToolScrewdriver>, <appliedenergistics2:part:340>, <ore:craftingToolSoftHammer>],
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:340>, <ore:gtce.tool.soft.hammers>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:52>, <metaitem:plateTitanium>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:24>, <metaitem:plateTitanium>]]);
 
@@ -1666,11 +1672,11 @@ assembler.recipeBuilder()
   .duration(200).EUt(480).buildAndRegister();
 // Флакс блок
 compressor.recipeBuilder()
-    .inputs([<ore:crystalFluix> * 4])
+    .inputs([<ore:crystalFluix> * 9])
     .outputs([<appliedenergistics2:fluix_block>])
     .duration(300).EUt(480).buildAndRegister();
 compressor.recipeBuilder()
-    .inputs([<appliedenergistics2:material:12> * 8])
+    .inputs([<appliedenergistics2:material:12> * 9])
     .outputs([<appliedenergistics2:fluix_block>])
     .duration(300).EUt(480).buildAndRegister();
 // Флакс линза
