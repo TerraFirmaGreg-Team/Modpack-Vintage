@@ -4124,22 +4124,22 @@ global TFC_Saws as IItemStack[] = [
 
 // - All Glass Panes Array
 global Glass_Panes_Array as IItemStack[] = [
-    <minecraft:stained_glass_pane>,
-    <minecraft:stained_glass_pane:1>,
-    <minecraft:stained_glass_pane:2>,
-    <minecraft:stained_glass_pane:3>,
-    <minecraft:stained_glass_pane:4>,
-    <minecraft:stained_glass_pane:5>,
-    <minecraft:stained_glass_pane:6>,
-    <minecraft:stained_glass_pane:7>,
-    <minecraft:stained_glass_pane:8>,
-    <minecraft:stained_glass_pane:9>,
-    <minecraft:stained_glass_pane:10>,
-    <minecraft:stained_glass_pane:11>,
-    <minecraft:stained_glass_pane:12>,
-    <minecraft:stained_glass_pane:13>,
-    <minecraft:stained_glass_pane:14>,
-    <minecraft:stained_glass_pane:15>
+   <minecraft:stained_glass_pane>,
+   <minecraft:stained_glass_pane:1>,
+   <minecraft:stained_glass_pane:2>,
+   <minecraft:stained_glass_pane:3>,
+   <minecraft:stained_glass_pane:4>,
+   <minecraft:stained_glass_pane:5>,
+   <minecraft:stained_glass_pane:6>,
+   <minecraft:stained_glass_pane:7>,
+   <minecraft:stained_glass_pane:8>,
+   <minecraft:stained_glass_pane:9>,
+   <minecraft:stained_glass_pane:10>,
+   <minecraft:stained_glass_pane:11>,
+   <minecraft:stained_glass_pane:12>,
+   <minecraft:stained_glass_pane:13>,
+   <minecraft:stained_glass_pane:14>,
+   <minecraft:stained_glass_pane:15>
 ];
 
 // - All liquid dye Array
