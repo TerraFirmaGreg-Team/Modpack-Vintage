@@ -37,12 +37,12 @@
       "dimName": "Deimos"
     },
     {
-      "dimID": -20,
-      "dimName": "Ceres"
-    },
-    {
       "dimID": -30,
       "dimName": "Asteroids"
+    },
+    {
+      "dimID": -20,
+      "dimName": "Ceres"
     },
     {
       "dimID": -15,
