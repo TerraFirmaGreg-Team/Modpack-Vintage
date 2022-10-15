@@ -515,10 +515,10 @@ Barrel.addRecipe("tfg/tfc/alabaster", <metaitem:dustGypsum> * 2, <liquid:limewat
 Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
-recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:craftingToolSaw>]);
+recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
 
 // Alabaster Bricks
-recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:craftingToolFile>]);
+recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:gtce.tool.files>]);
 
 // Контроллер доменной печи
 recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
@@ -563,37 +563,37 @@ for i, TFC_Smooths in TFC_Smooths {
 // Булыжник -> Гравий
 for i, TFC_Gravel in TFC_Gravel {
     forge_hammer.recipeBuilder()
-    	.inputs([TFC_Cobbles[i]])
-    	.outputs(TFC_Gravel)
-    	.duration(200).EUt(7).buildAndRegister();
+			.inputs([TFC_Cobbles[i]])
+			.outputs(TFC_Gravel)
+			.duration(200).EUt(7).buildAndRegister();
 }
 
 // Гравий -> Песок
 for i, TFC_Sands in TFC_Sands {
     forge_hammer.recipeBuilder()
-    	.inputs([TFC_Gravel[i]])
-    	.outputs(TFC_Sands)
-    	.duration(200).EUt(7).buildAndRegister();
+			.inputs([TFC_Gravel[i]])
+			.outputs(TFC_Sands)
+			.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи -> Блоки кирпичей
 for i, TFC_Bricks_Block in TFC_Bricks_Block {
     assembler.recipeBuilder()
-    	.inputs([TFC_Bricks_Item[i] * 4])
+    .inputs([TFC_Bricks_Item[i] * 4])
 		.circuit(4)
 		.fluidInputs([<liquid:concrete> * 100])
-    	.outputs(TFC_Bricks_Block * 4)
-    	.duration(200).EUt(7).buildAndRegister();
+    .outputs(TFC_Bricks_Block * 4)
+    .duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи из грязи -> Блоки кирпичей
 for i, TFC_Mud_Bricks_Block in TFC_Mud_Bricks_Block {
     assembler.recipeBuilder()
-    	.inputs([TFC_Mud_Bricks_Item[i] * 4])
+    .inputs([TFC_Mud_Bricks_Item[i] * 4])
 		.circuit(4)
 		.fluidInputs([<liquid:concrete> * 100])
-    	.outputs(TFC_Mud_Bricks_Block * 4)
-    	.duration(200).EUt(7).buildAndRegister();
+    .outputs(TFC_Mud_Bricks_Block * 4)
+    .duration(200).EUt(7).buildAndRegister();
 }
 
 // Булыжник -> Полублок

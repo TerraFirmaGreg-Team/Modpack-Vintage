@@ -217,7 +217,7 @@ recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
 
 
 // Pizza Dough
-recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:craftingToolKnife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
+recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:gtce.tool.knife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:gtce.tool.rolling.pins>]);
 
 // Свечка
 recipes.addShapeless("tfg/firmalife/candle", <firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
