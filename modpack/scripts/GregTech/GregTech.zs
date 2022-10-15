@@ -418,18 +418,18 @@ recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke
 recipes.addShaped("tfg/gregtech/wooden_form", <metaitem:wooden_form.empty>, [
     [null, <ore:lumber>, null],
     [null, <ore:lumber>, null],
-    [<ore:craftingToolSaw>, <ore:lumber>, null]]);
+    [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
 
 // Бронзовый малый бойлер
 recipes.addShaped("tfg/gregtech/small_steam_coal_boiler", <metaitem:steam_boiler_coal_bronze>, [
     [<metaitem:plateBronze>, <metaitem:plateBronze>, <metaitem:plateBronze>],
-    [<metaitem:plateBronze>, <ore:craftingToolWrench>, <metaitem:plateBronze>],
+    [<metaitem:plateBronze>, <ore:gtce.tool.wrenches>, <metaitem:plateBronze>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Стальной малый бойлер
 recipes.addShaped("tfg/gregtech/high_pressure_coal_boiler", <metaitem:steam_boiler_coal_steel>, [
     [<metaitem:plateSteel>, <metaitem:plateSteel>, <metaitem:plateSteel>],
-    [<metaitem:plateSteel>, <ore:craftingToolWrench>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <ore:gtce.tool.wrenches>, <metaitem:plateSteel>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Бронзовая паровая печь
@@ -460,7 +460,7 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
 // recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
 //     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
 //     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
-//     [<ore:plankWood>, <ore:craftingToolSaw>, <ore:plankWood>]]);
+//     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
 // Обработанные доски
 recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
@@ -471,24 +471,24 @@ recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
 // Primitive water pump deck
 recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casing:4> * 2, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:craftingToolScrewdriver>, <ore:slabCobblestone>, <ore:craftingToolHardHammer>]]);
+    [<ore:gtce.tool.screwdrivers>, <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
 
 // Primitive water pump hatch
 recipes.addShaped("tfg/gregtech/primitive_water_pump_hatch", <metaitem:pump_hatch>, [
-    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:craftingToolScrewdriver>],
+    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:gtce.tool.screwdrivers>],
     [<ore:plankTreatedWood>, <metaitem:pipeLargeFluidWood>, <ore:plankTreatedWood>],
     [<ore:slabCobblestone>, <ore:ringIronAny>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped("tfg/gregtech/primitive_water_pump", <metaitem:primitive_water_pump>, [
     [<ore:ringIronAny>, <metaitem:pipeNormalFluidWood>, <ore:screwIronAny>],
-    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:craftingToolScrewdriver>],
+    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:gtce.tool.screwdrivers>],
     [<ore:slabCobblestone>, <metaitem:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
 recipes.addShaped("tfg/gregtech/coke_oven", <metaitem:coke_oven>, [
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>],
-    [<ore:plateIronAny>, <ore:craftingToolWrench>, <ore:plateIronAny>],
+    [<ore:plateIronAny>, <ore:gtce.tool.wrenches>, <ore:plateIronAny>],
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>]]);
 
 // Steam Miner
@@ -518,7 +518,7 @@ recipes.addShaped("tfg/gregtech/fire_bricks", <gregtech:metal_casing:1>, [
 // Quartz Sand - 1
 recipes.addShaped("tfg/gregtech/quartz_sand", <metaitem:dustQuartzSand>, [
     [null, <ore:sand>, null],
-    [null, <ore:craftingToolMortar>, null],
+    [null, <ore:gtce.tool.mortars>, null],
     [null, null, null]]);
 
 // Steam Import Bus
@@ -536,20 +536,20 @@ recipes.addShaped("tfg/gregtech/steam_export_bus", <metaitem:steam_export_bus>, 
 // Wooden Crate
 recipes.addShaped("tfg/gregtech/wooden_crate", <metaitem:crate.wood>, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:plankWood>, <ore:craftingToolSaw>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>],
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>]]);
 
 // Блокнот
 recipes.addShaped("tfg/gregtech/clipboard", <metaitem:clipboard>, [
-    [null, <ore:screwIronAny>, <ore:craftingToolScrewdriver>],
+    [null, <ore:screwIronAny>, <ore:gtce.tool.screwdrivers>],
     [<ore:boltIronAny>, <metaitem:plateWood>, <ore:boltIronAny>],
     [<ore:paper>, <ore:paper>, <ore:paper>]]);
 
 // Лук
 recipes.addShaped(<minecraft:bow>, [
-    [<ore:craftingToolHardHammer>, <metaitem:stickLongWood>, <ore:string>],
+    [<ore:gtce.tool.hard.hammers>, <metaitem:stickLongWood>, <ore:string>],
     [<metaitem:stickLongWood>, <ore:ringIronAny>, <ore:string>],
-    [<ore:craftingToolFile>, <metaitem:stickLongWood>, <ore:string>]]);
+    [<ore:gtce.tool.files>, <metaitem:stickLongWood>, <ore:string>]]);
 
 // Чаровалка
 macerator.recipeBuilder()
@@ -566,7 +566,7 @@ assembler.recipeBuilder()
 // Extruder Shape (Sense Head)
 recipes.addShaped(<metaitem:shape.extruder.sense>, [
     [null, null, null],
-    [<ore:craftingToolHardHammer>, <metaitem:shape.extruder.plate>, null],
+    [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
@@ -576,7 +576,7 @@ forming_press.recipeBuilder()
 
 // Mold (Knife Head)
 recipes.addShaped(<metaitem:shape.extruder.knife>, [
-    [null, <ore:craftingToolHardHammer>, <metaitem:shape.empty>],
+    [null, <ore:gtce.tool.hard.hammers>, <metaitem:shape.empty>],
     [null, null, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -602,8 +602,7 @@ assembly_line.recipeBuilder()
       <metaitem:conveyor.module.ev> * 3, 
       <metaitem:conveyor.module.ev> * 3, 
       <metaitem:plateDoubleNaquadah> * 3, 
-      <metaitem:plateDoubleNaquadah> * 3
-    ])
+      <metaitem:plateDoubleNaquadah> * 3])
     .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
     .outputs(<metaitem:multiblocktweaker:star_forge>)
     .duration(1300).EUt(8100).buildAndRegister();
@@ -616,8 +615,7 @@ assembly_line.recipeBuilder()
         <ore:circuitUlv> * 4,
         <metaitem:plate.ultra_low_power_integrated_circuit> * 4,
         <minecraft:glass>,
-        <metaitem:transformer.ulv>
-        ])
+        <metaitem:transformer.ulv>])
     .fluidInputs(<liquid:silicon> * 2304)
     .fluidInputs(<liquid:soldering_alloy> * 144)
     .outputs([<metaitem:cover.solar.panel.ulv>])
@@ -628,11 +626,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.ulv> * 4,
         <metaitem:sensor.lv> * 8,
-        <metaitem:circuit.electronic> * 4,
+        <ore:circuitLv> * 4,
         <metaitem:plate.ultra_low_power_integrated_circuit> * 16,
         <appliedenergistics2:quartz_glass>,
-        <metaitem:transformer.lv>
-        ])
+        <metaitem:transformer.lv>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 288)
     .outputs([<metaitem:cover.solar.panel.lv>])
@@ -643,11 +640,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.lv> * 4,
         <metaitem:sensor.mv> * 8,
-        <metaitem:circuit.good_electronic> * 4,
+        <ore:circuitMv> * 4,
         <metaitem:plate.low_power_integrated_circuit> * 4,
         <appliedenergistics2:quartz_vibrant_glass>,
-        <metaitem:transformer.mv>
-        ])
+        <metaitem:transformer.mv>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 576)
     .outputs([<metaitem:cover.solar.panel.mv>])
@@ -658,11 +654,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.mv> * 4,
         <metaitem:sensor.hv> * 8,
-        <metaitem:circuit.advanced_integrated> * 4,
+        <ore:circuitHv> * 4,
         <metaitem:plate.low_power_integrated_circuit> * 16,
         <appliedenergistics2:quartz_vibrant_glass>,
-        <metaitem:transformer.hv>
-        ])
+        <metaitem:transformer.hv>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 1152)
     .outputs([<metaitem:cover.solar.panel.hv>])
@@ -673,11 +668,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.hv> * 4,
         <metaitem:sensor.ev> * 8,
-        <metaitem:circuit.workstation> * 4,
+        <ore:circuitEv> * 4,
         <metaitem:plate.power_integrated_circuit> * 4,
         <gregtech:transparent_casing>,
-        <metaitem:transformer.ev>
-        ])
+        <metaitem:transformer.ev>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 2304)
     .outputs([<metaitem:cover.solar.panel.ev>])
@@ -688,11 +682,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.ev> * 4,
         <metaitem:sensor.iv> * 8,
-        <metaitem:circuit.mainframe> * 4,
+        <ore:circuitIv> * 4,
         <metaitem:plate.power_integrated_circuit> * 16,
         <gregtech:transparent_casing>,
-        <metaitem:transformer.iv>
-        ])
+        <metaitem:transformer.iv>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 4608)
     .outputs([<metaitem:cover.solar.panel.iv>])
@@ -703,7 +696,7 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.iv> * 4,
         <metaitem:sensor.luv> * 8,
-        <metaitem:circuit.nano_mainframe> * 4,
+        <ore:circuitLuv> * 4,
         <metaitem:plate.high_power_integrated_circuit> * 8,
         <gregtech:transparent_casing:1>,
         <metaitem:transformer.luv>
@@ -718,11 +711,10 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.luv> * 4,
         <metaitem:sensor.zpm> * 8,
-        <metaitem:circuit.quantum_mainframe> * 4,
+        <ore:circuitZpm> * 4,
         <metaitem:plate.high_power_integrated_circuit> * 32,
         <gregtech:transparent_casing:1>,
-        <metaitem:transformer.zpm>
-        ])
+        <metaitem:transformer.zpm>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 18432)
     .outputs([<metaitem:cover.solar.panel.zpm>])
@@ -733,22 +725,14 @@ assembly_line.recipeBuilder()
     .inputs([
         <metaitem:cover.solar.panel.zpm> * 4,
         <metaitem:sensor.uv> * 8,
-        <metaitem:circuit.crystal_mainframe> * 4,
+        <ore:circuitUv> * 4,
         <metaitem:plate.ultra_high_power_integrated_circuit> * 64,
         <gregtech:transparent_casing:1>,
-        <metaitem:transformer.uv>
-        ])
+        <metaitem:transformer.uv>])
     .fluidInputs(<liquid:silicon> * 1152)
     .fluidInputs(<liquid:soldering_alloy> * 36864)
     .outputs([<metaitem:cover.solar.panel.uv>])
     .duration(5120).EUt(491520).buildAndRegister();
-
-// Dry Ice -> Carbon + Oxygen
-electrolyzer.recipeBuilder()
-    .fluidInputs([<liquid:dry_ice> * 1000])
-    .fluidOutputs([<liquid:oxygen> * 2000])
-    .outputs([<metaitem:dustCarbon>])
-    .duration(200).EUt(7680).buildAndRegister();
 
 // Nether Star Dust
 chemical_reactor.recipeBuilder()
@@ -763,7 +747,7 @@ chemical_reactor.recipeBuilder()
     .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
-recipes.addShapeless(<minecraft:flint>, [<ore:craftingToolMortar>, <ore:gravel>]);
+recipes.addShapeless(<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
 
 // Бронзовая пыль в TFC стиле
 recipes.addShapeless(<metaitem:dustBronze> * 9, [<metaitem:dustTin>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>]);
@@ -773,7 +757,7 @@ recipes.addShapeless(<metaitem:dustBronze> * 9, [<metaitem:dustTin>, <metaitem:d
 // Крафт бумажной пыли
     recipes.addShaped(<metaitem:dustPaper> * 2,
     [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
-    [null, <ore:craftingToolMortar>, null]]);
+    [null, <ore:gtce.tool.mortars>, null]]);
 
 // Крафт бумаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,
