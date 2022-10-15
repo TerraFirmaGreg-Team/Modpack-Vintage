@@ -1,14 +1,14 @@
 {
-	x: -19.5d,
-	y: 14.5d,
+	x: -19.25d,
+	y: 2.0d,
 	dependencies: [
 		"49fd302f"
 	],
 	tasks: [{
-		uid: "5f5e264d",
+		uid: "2f9346ec",
 		type: "item",
 		items: [{
-			item: "tfc:animal/product/wool_yarn"
+			item: "tfc:animal/product/wool"
 		}]
 	}]
 }

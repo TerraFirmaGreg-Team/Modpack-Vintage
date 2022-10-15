@@ -1,5 +1,5 @@
 {
-	title: "Церера",
+	title: "{planet.ceres}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -13,19 +13,9 @@
 		"86dfb6d2"
 	],
 	tasks: [{
-		uid: "7aa8cf10",
-		type: "item",
-		items: [{
-			item: "extraplanets:ceres"
-		},
-		{
-			item: "extraplanets:ceres 1 1"
-		},
-		{
-			item: "extraplanets:ceres 1 2"
-		},
-		{
-			item: "extraplanets:ceres_gravel"
-		}]
+		uid: "3a6d8891",
+		type: "dimension",
+		title: "{planet.ceres}",
+		dim: -20
 	}]
 }

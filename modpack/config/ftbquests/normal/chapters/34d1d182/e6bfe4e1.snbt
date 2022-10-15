@@ -1,12 +1,12 @@
 {
-	title: "Нептун",
+	title: "{planet.neptune}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/neptune.png"
 		}
 	},
-	x: 23.5d,
+	x: 27.75d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -14,16 +14,9 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "544ac885",
-		type: "item",
-		items: [{
-			item: "extraplanets:neptune"
-		},
-		{
-			item: "extraplanets:neptune 1 1"
-		},
-		{
-			item: "extraplanets:neptune 1 2"
-		}]
+		uid: "0efa88cb",
+		type: "dimension",
+		title: "{planet.neptune}",
+		dim: -18
 	}]
 }

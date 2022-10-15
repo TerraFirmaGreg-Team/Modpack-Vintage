@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.saw.title}",
-	x: -18.0d,
+	x: -17.75d,
 	y: -1.0d,
 	shape: "octagon",
 	description: "{tfg.quests.primitive.saw.subtitle}",

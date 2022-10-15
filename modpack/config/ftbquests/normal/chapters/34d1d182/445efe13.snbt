@@ -1,12 +1,12 @@
 {
-	title: "Тритон",
+	title: "{moon.triton}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/triton.png"
 		}
 	},
-	x: 24.375d,
+	x: 28.625d,
 	y: 7.0d,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "dcd9b078",
-		type: "item",
-		items: [{
-			item: "extraplanets:triton"
-		},
-		{
-			item: "extraplanets:triton 1 1"
-		},
-		{
-			item: "extraplanets:triton 1 2"
-		},
-		{
-			item: "extraplanets:triton_gravel"
-		}]
+		uid: "5e60620f",
+		type: "dimension",
+		title: "{moon.triton}",
+		dim: -1504
 	}]
 }

@@ -1,5 +1,5 @@
 {
-	title: "Луна",
+	title: "{moon.moon}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -17,16 +17,9 @@
 	dependency_requirement: "one_completed",
 	size: 0.5d,
 	tasks: [{
-		uid: "104d8b4d",
-		type: "item",
-		items: [{
-			item: "galacticraftcore:basic_block_moon 1 3"
-		},
-		{
-			item: "galacticraftcore:basic_block_moon 1 4"
-		},
-		{
-			item: "galacticraftcore:basic_block_moon 1 5"
-		}]
+		uid: "fce4d969",
+		type: "dimension",
+		title: "{moon.moon}",
+		dim: -28
 	}]
 }

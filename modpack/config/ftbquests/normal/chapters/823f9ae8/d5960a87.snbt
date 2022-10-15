@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.fruits_and_berries.title}",
-	x: -23.5d,
-	y: 13.75d,
+	x: -13.75d,
+	y: 5.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.fruits_and_berries.subtitle}",
 	tasks: [{

@@ -1,5 +1,5 @@
 {
-	title: "Кеплер - 22b",
+	title: "{planet.kepler22b}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -18,13 +18,9 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "bb8ad5f0",
-		type: "item",
-		items: [{
-			item: "extraplanets:kepler22b"
-		},
-		{
-			item: "extraplanets:kepler22b 1 1"
-		}]
+		uid: "ae093c26",
+		type: "dimension",
+		title: "{planet.kepler22b}",
+		dim: -22
 	}]
 }

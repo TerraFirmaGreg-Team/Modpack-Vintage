@@ -1,5 +1,5 @@
 {
-	title: "Деймос",
+	title: "{moon.deimos}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "65cdf9ef",
-		type: "item",
-		items: [{
-			item: "extraplanets:deimos"
-		},
-		{
-			item: "extraplanets:deimos 1 1"
-		},
-		{
-			item: "extraplanets:deimos 1 2"
-		},
-		{
-			item: "extraplanets:deimos_gravel"
-		}]
+		uid: "912afb22",
+		type: "dimension",
+		title: "{moon.deimos}",
+		dim: -1503
 	}]
 }

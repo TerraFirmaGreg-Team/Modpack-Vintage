@@ -1,0 +1,32 @@
+{
+	x: -15.75d,
+	y: -1.0d,
+	dependencies: [
+		"a6f0f0dd",
+		"55482cc5"
+	],
+	tasks: [{
+		uid: "5936f16d",
+		type: "item",
+		items: [{
+			id: "tfcthings:rope_javelin/copper",
+			tag: {},
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

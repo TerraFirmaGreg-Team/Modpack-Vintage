@@ -1,5 +1,5 @@
 {
-	title: "Астероиды",
+	title: "{planet.asteroids}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -13,16 +13,9 @@
 		"e43ffe37"
 	],
 	tasks: [{
-		uid: "73f9e958",
-		type: "item",
-		items: [{
-			item: "galacticraftplanets:asteroids_block"
-		},
-		{
-			item: "galacticraftplanets:asteroids_block 1 1"
-		},
-		{
-			item: "galacticraftplanets:asteroids_block 1 2"
-		}]
+		uid: "f5ae271e",
+		type: "dimension",
+		title: "{planet.asteroids}",
+		dim: -30
 	}]
 }

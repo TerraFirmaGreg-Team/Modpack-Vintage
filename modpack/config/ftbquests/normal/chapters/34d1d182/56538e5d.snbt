@@ -1,5 +1,5 @@
 {
-	title: "Япет",
+	title: "{moon.iapetus}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "1e16a776",
-		type: "item",
-		items: [{
-			item: "extraplanets:iapetus"
-		},
-		{
-			item: "extraplanets:iapetus 1 1"
-		},
-		{
-			item: "extraplanets:iapetus 1 2"
-		},
-		{
-			item: "extraplanets:iapetus_gravel"
-		}]
+		uid: "00b0af10",
+		type: "dimension",
+		title: "{moon.iapetus}",
+		dim: -1511
 	}]
 }

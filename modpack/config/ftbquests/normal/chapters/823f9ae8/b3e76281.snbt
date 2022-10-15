@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_prospect.title}",
-	x: -20.0d,
+	x: -20.25d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.copper_prospect.subtitle}",
 	text: [

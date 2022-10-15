@@ -1,6 +1,6 @@
 {
-	x: -20.75d,
-	y: 11.0d,
+	x: -30.25d,
+	y: 4.0d,
 	description: "{tfg.quests.primitive.HorseChoppingBlock.subtitle}",
 	dependencies: [
 		"ffb7544a"
@@ -12,7 +12,7 @@
 			id: "horsepower:chopper",
 			tag: {
 				textureBlock: {
-					id: "minecraft:log",
+					id: "tfc:wood/log/holly",
 					Count: 1b,
 					Damage: 0s
 				}

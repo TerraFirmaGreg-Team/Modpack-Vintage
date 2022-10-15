@@ -1,5 +1,5 @@
 {
-	title: "Фобос",
+	title: "{moon.phobos}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "c8941e70",
-		type: "item",
-		items: [{
-			item: "extraplanets:phobos"
-		},
-		{
-			item: "extraplanets:phobos 1 1"
-		},
-		{
-			item: "extraplanets:phobos 1 2"
-		},
-		{
-			item: "extraplanets:phobos_gravel"
-		}]
+		uid: "5a9ca2ff",
+		type: "dimension",
+		title: "{moon.phobos}",
+		dim: -1502
 	}]
 }

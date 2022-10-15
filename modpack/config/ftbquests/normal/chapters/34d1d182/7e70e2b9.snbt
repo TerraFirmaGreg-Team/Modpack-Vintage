@@ -1,5 +1,5 @@
 {
-	title: "Плутон",
+	title: "{planet.pluto}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -13,19 +13,9 @@
 		"7b517356"
 	],
 	tasks: [{
-		uid: "bb2e8309",
-		type: "item",
-		items: [{
-			item: "extraplanets:pluto"
-		},
-		{
-			item: "extraplanets:pluto 1 1"
-		},
-		{
-			item: "extraplanets:pluto 1 2"
-		},
-		{
-			item: "extraplanets:pluto_gravel"
-		}]
+		uid: "f3d79926",
+		type: "dimension",
+		title: "{planet.pluto}",
+		dim: -19
 	}]
 }

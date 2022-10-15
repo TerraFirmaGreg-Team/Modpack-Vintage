@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_pick_head.title}",
-	x: -21.0d,
+	x: -21.25d,
 	y: -2.5d,
 	description: "{tfg.quests.primitive.copper_pick_head.subtitle}",
 	dependencies: [

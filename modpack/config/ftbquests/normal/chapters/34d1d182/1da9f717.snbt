@@ -1,5 +1,5 @@
 {
-	title: "Марс",
+	title: "{planet.mars}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,16 +14,9 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "9ea76d13",
-		type: "item",
-		items: [{
-			item: "galacticraftplanets:mars 1 5"
-		},
-		{
-			item: "galacticraftplanets:mars 1 6"
-		},
-		{
-			item: "galacticraftplanets:mars 1 9"
-		}]
+		uid: "545d26a0",
+		type: "dimension",
+		title: "{planet.mars}",
+		dim: -29
 	}]
 }

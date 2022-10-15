@@ -1,0 +1,15 @@
+{
+	x: -20.25d,
+	y: 6.25d,
+	shape: "diamond",
+	dependencies: [
+		"7a3b6605"
+	],
+	tasks: [{
+		uid: "79a8a803",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/cotton_yarn"
+		}]
+	}]
+}

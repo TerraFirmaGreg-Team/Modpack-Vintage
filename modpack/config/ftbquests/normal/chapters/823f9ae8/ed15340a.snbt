@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.graphitepile.title}",
-	x: -1.75d,
+	x: -1.5d,
 	y: 7.0d,
 	description: "{tfg.quests.primitive.graphitepile.subtitle}",
 	dependencies: [

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.grains.title}",
-	x: -22.0d,
-	y: 13.75d,
+	x: -13.75d,
+	y: 7.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.grains.subtitle}",
 	tasks: [{

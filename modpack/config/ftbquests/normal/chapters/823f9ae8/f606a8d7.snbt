@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_chisel.title}",
-	x: -19.0d,
+	x: -18.75d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.copper_chisel.subtitle}",
 	text: [

@@ -1,14 +1,16 @@
 {
 	title: "{tfg.quests.primitive.cheese.title}",
-	x: -22.75d,
-	y: 12.75d,
+	x: -12.5d,
+	y: 6.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.cheese.subtitle}",
+	min_required_dependencies: 2,
 	dependencies: [
 		"d2b461b8",
 		"d5960a87",
-		"ffb7544a"
+		"73937422"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "b59703fa",
 		type: "item",

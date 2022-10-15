@@ -1,5 +1,5 @@
 {
-	title: "Европа",
+	title: "{moon.europa}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "f7f4c484",
-		type: "item",
-		items: [{
-			item: "extraplanets:europa"
-		},
-		{
-			item: "extraplanets:europa 1 1"
-		},
-		{
-			item: "extraplanets:europa 1 2"
-		},
-		{
-			item: "extraplanets:europa_gravel"
-		}]
+		uid: "8d94b80a",
+		type: "dimension",
+		title: "{moon.europa}",
+		dim: -1501
 	}]
 }

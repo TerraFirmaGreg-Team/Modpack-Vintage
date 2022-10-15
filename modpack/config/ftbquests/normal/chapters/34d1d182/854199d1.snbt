@@ -1,5 +1,5 @@
 {
-	title: "Ио",
+	title: "{moon.io}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "96e27ec0",
-		type: "item",
-		items: [{
-			item: "extraplanets:io"
-		},
-		{
-			item: "extraplanets:io 1 1"
-		},
-		{
-			item: "extraplanets:io 1 2"
-		},
-		{
-			item: "extraplanets:io_gravel"
-		}]
+		uid: "7b6630c3",
+		type: "dimension",
+		title: "{moon.io}",
+		dim: -1500
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.meshokmochi.title}",
-	x: -10.25d,
-	y: 8.0d,
+	x: -16.5d,
+	y: 9.0d,
 	description: "{tfg.quests.primitive.meshokmochi.subtitle}",
 	hide_dependency_lines: true,
 	dependencies: [

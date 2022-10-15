@@ -1,5 +1,5 @@
 {
-	title: "Ганимед",
+	title: "{moon.ganymede}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "e3878609",
-		type: "item",
-		items: [{
-			item: "extraplanets:ganymede"
-		},
-		{
-			item: "extraplanets:ganymede 1 1"
-		},
-		{
-			item: "extraplanets:ganymede 1 2"
-		},
-		{
-			item: "extraplanets:ganymede_gravel"
-		}]
+		uid: "2212338b",
+		type: "dimension",
+		title: "{moon.ganymede}",
+		dim: -1506
 	}]
 }

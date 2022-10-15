@@ -1,5 +1,5 @@
 {
-	title: "Эрида",
+	title: "{planet.eris}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -13,19 +13,9 @@
 		"7fc8151e"
 	],
 	tasks: [{
-		uid: "116950f2",
-		type: "item",
-		items: [{
-			item: "extraplanets:eris"
-		},
-		{
-			item: "extraplanets:eris 1 1"
-		},
-		{
-			item: "extraplanets:eris 1 2"
-		},
-		{
-			item: "extraplanets:eris_gravel"
-		}]
+		uid: "bd30fadd",
+		type: "dimension",
+		title: "{planet.eris}",
+		dim: -21
 	}]
 }

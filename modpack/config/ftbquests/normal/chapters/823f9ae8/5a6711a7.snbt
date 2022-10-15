@@ -1,0 +1,14 @@
+{
+	x: -32.0d,
+	y: -11.25d,
+	dependencies: [
+		"37ebd99a"
+	],
+	tasks: [{
+		uid: "0f272f65",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:glowstone_torch"
+		}]
+	}]
+}

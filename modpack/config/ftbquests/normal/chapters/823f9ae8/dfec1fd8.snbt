@@ -1,13 +1,16 @@
 {
 	title: "{tfg.quests.primitive.woolcloth.title}",
 	icon: "tfc:animal/product/wool_cloth",
-	x: -18.25d,
-	y: 6.0d,
+	x: -20.25d,
+	y: 7.5d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.woolcloth.subtitle}",
 	dependencies: [
-		"9160e91d"
+		"9160e91d",
+		"872ba816",
+		"7f474855"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "a356319d",
 		type: "item",

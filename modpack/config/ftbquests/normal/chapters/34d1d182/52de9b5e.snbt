@@ -1,5 +1,5 @@
 {
-	title: "Венера",
+	title: "{planet.venus}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,13 +14,9 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "dba29476",
-		type: "item",
-		items: [{
-			item: "galacticraftplanets:venus"
-		},
-		{
-			item: "galacticraftplanets:venus 1 1"
-		}]
+		uid: "90a39e5f",
+		type: "dimension",
+		title: "{planet.venus}",
+		dim: -31
 	}]
 }

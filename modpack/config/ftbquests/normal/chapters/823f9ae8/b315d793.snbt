@@ -1,6 +1,7 @@
 {
-	x: -27.0d,
-	y: 12.0d,
+	x: -26.25d,
+	y: 6.25d,
+	shape: "diamond",
 	dependencies: [
 		"12858da6"
 	],
@@ -9,7 +10,6 @@
 		type: "item",
 		items: [{
 			item: "firmalife:pineapple_yarn"
-		}],
-		count: 8L
+		}]
 	}]
 }

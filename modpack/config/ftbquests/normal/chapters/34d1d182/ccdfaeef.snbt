@@ -1,5 +1,5 @@
 {
-	title: "Рея",
+	title: "{moon.rhea}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "20401389",
-		type: "item",
-		items: [{
-			item: "extraplanets:rhea"
-		},
-		{
-			item: "extraplanets:rhea 1 1"
-		},
-		{
-			item: "extraplanets:rhea 1 2"
-		},
-		{
-			item: "extraplanets:rhea_gravel"
-		}]
+		uid: "5b3d203a",
+		type: "dimension",
+		title: "{moon.rhea}",
+		dim: -1507
 	}]
 }

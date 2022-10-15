@@ -1,9 +1,9 @@
 {
-	x: -24.0d,
-	y: 2.0d,
+	x: -28.75d,
+	y: 0.0d,
 	description: "{tfg.quests.primitive.walkstick.subtitle}",
 	dependencies: [
-		"bf82a628"
+		"a0c1903e"
 	],
 	tasks: [{
 		uid: "cf2a7fef",

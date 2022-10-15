@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.molds.title}",
 	x: -30.0d,
-	y: -11.75d,
+	y: -11.25d,
 	description: "{tfg.quests.primitive.molds.subtitle}",
 	dependencies: [
 		"e4dda908"

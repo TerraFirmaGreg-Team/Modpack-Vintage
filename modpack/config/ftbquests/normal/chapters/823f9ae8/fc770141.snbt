@@ -1,6 +1,6 @@
 {
 	icon: "gregtech:meta_dust_small 1 386",
-	x: -3.25d,
+	x: -3.5d,
 	y: 8.5d,
 	shape: "diamond",
 	tasks: [{

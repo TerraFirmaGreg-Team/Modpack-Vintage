@@ -1,5 +1,5 @@
 {
-	title: "Сатурн",
+	title: "{planet.saturn}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -14,19 +14,9 @@
 	],
 	size: 2.5d,
 	tasks: [{
-		uid: "ff3a2337",
-		type: "item",
-		items: [{
-			item: "extraplanets:saturn"
-		},
-		{
-			item: "extraplanets:saturn 1 1"
-		},
-		{
-			item: "extraplanets:saturn 1 2"
-		},
-		{
-			item: "extraplanets:saturn_gravel"
-		}]
+		uid: "87782e1a",
+		type: "dimension",
+		title: "{planet.saturn}",
+		dim: -16
 	}]
 }

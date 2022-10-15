@@ -1,5 +1,5 @@
 {
-	title: "Меркурий",
+	title: "{planet.mercury}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
@@ -13,19 +13,9 @@
 		"e43ffe37"
 	],
 	tasks: [{
-		uid: "18a04bee",
-		type: "item",
-		items: [{
-			item: "extraplanets:mercury"
-		},
-		{
-			item: "extraplanets:mercury 1 1"
-		},
-		{
-			item: "extraplanets:mercury 1 2"
-		},
-		{
-			item: "extraplanets:mercury_gravel"
-		}]
+		uid: "48db8f05",
+		type: "dimension",
+		title: "{planet.mercury}",
+		dim: -13
 	}]
 }
