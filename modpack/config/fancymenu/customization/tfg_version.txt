@@ -90,7 +90,7 @@ customization {
   y = -44
   scale = 1.0
   alignment = left
-  value = Modpack Version: §cR4.1.3
+  value = Modpack Version: §cR4.1.5
 }
 
 customization {
@@ -105,7 +105,7 @@ customization {
   scale = 1.0
   vr:value:modloaded = thaumcraft
   alignment = left
-  value = Modpack Type: §b[Normal]
+  value = Modpack Type: §b[Default]
 }
 
 customization {
@@ -147,6 +147,6 @@ customization {
   scale = 1.0
   vr:value:modloaded = thaumcraft
   alignment = left
-  value = Modpack Type: §b[Huge]
+  value = Modpack Type: §b[Extended]
 }
 
