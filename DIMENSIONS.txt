@@ -4,8 +4,8 @@ planet.venus:               {-31}      {-63}
 overworld:                  {0}        {-27}
     moon.moon:              	{-28}
 planet.mars:                {-29}      {-67}
-    moon.deimos:            	{-1503}
     moon.phobos:            	{-1502}
+    moon.deimos:            	{-1503}
 planet.asteroids:           {-30}
 planet.ceres:               {-20}      {-65}
 planet.jupiter:             {-15}      {-69}
@@ -18,6 +18,7 @@ planet.saturn:              {-16}      {-71}
     moon.titan:             	{-1508}
     moon.iapetus:           	{-1511}
 planet.uranus:              {-17}      {-73}
+    moon.titania:               {-1510}
     moon.oberon:            	{-1509}
 planet.neptune:             {-18}      {-75}
     moon.triton:            	{-1504}
@@ -26,7 +27,6 @@ planet.eris:                {-21}      {-79}
 planet.kepler22b:           {-22}      {-81}
 
 // WTF
-moon.titania:               {-1510}
 planet.kuiperbelt:          {-1009}
 planet.haumea:              {-1023}
 the_nether:                 {-1}
