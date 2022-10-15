@@ -1,5 +1,5 @@
 {
-        "biomes":[
+			"biomes":[
                 {
                         "conditions":"biome.name == 'TerraFirmaCraft Mountains'",
                         "aurora":true
@@ -270,7 +270,7 @@
 						]
 				}
 		],
-        "blocks":[
+			"blocks":[
                 {
                         "blocks": [
                                 "minecraft:red_flower",
@@ -322,5 +322,106 @@
                                 }
                         ]
                 }
-        ]
+      ],
+			"items": {
+						"SHIELD": [
+							"tfc:metal/shield/bismuth_bronze",
+							"tfc:metal/shield/black_bronze",
+							"tfc:metal/shield/bronze",
+							"tfc:metal/shield/copper",
+							"tfc:metal/shield/wrought_iron",
+							"tfc:metal/shield/steel",
+							"tfc:metal/shield/black_steel",
+							"tfc:metal/shield/blue_steel",
+							"tfc:metal/shield/red_steel"
+						],
+						"SWORD": [
+							"tfc:metal/sword/bismuth_bronze",
+							"tfc:metal/sword/black_bronze",
+							"tfc:metal/sword/bronze",
+							"tfc:metal/sword/copper",
+							"tfc:metal/sword/wrought_iron",
+							"tfc:metal/sword/steel",
+							"tfc:metal/sword/black_steel",
+							"tfc:metal/sword/blue_steel",
+							"tfc:metal/sword/red_steel"
+						],
+						"AXE": [
+							"tfc:metal/axe/bismuth_bronze",
+							"tfc:metal/axe/black_bronze",
+							"tfc:metal/axe/bronze",
+							"tfc:metal/axe/copper",
+							"tfc:metal/axe/wrought_iron",
+							"tfc:metal/axe/steel",
+							"tfc:metal/axe/black_steel",
+							"tfc:metal/axe/blue_steel",
+							"tfc:metal/axe/red_steel",
+							"tfc:metal/pick/bismuth_bronze",
+							"tfc:metal/pick/black_bronze",
+							"tfc:metal/pick/bronze",
+							"tfc:metal/pick/copper",
+							"tfc:metal/pick/wrought_iron",
+							"tfc:metal/pick/steel",
+							"tfc:metal/pick/black_steel",
+							"tfc:metal/pick/blue_steel",
+							"tfc:metal/pick/red_steel",
+							"tfc:metal/mace/bismuth_bronze",
+							"tfc:metal/mace/black_bronze",
+							"tfc:metal/mace/bronze",
+							"tfc:metal/mace/copper",
+							"tfc:metal/mace/wrought_iron",
+							"tfc:metal/mace/steel",
+							"tfc:metal/mace/black_steel",
+							"tfc:metal/mace/blue_steel",
+							"tfc:metal/mace/red_steel"
+						],
+						"TOOL": [
+							"tfc:metal/javelin/bismuth_bronze",
+							"tfc:metal/javelin/black_bronze",
+							"tfc:metal/javelin/bronze",
+							"tfc:metal/javelin/copper",
+							"tfc:metal/javelin/wrought_iron",
+							"tfc:metal/javelin/steel",
+							"tfc:metal/javelin/black_steel",
+							"tfc:metal/javelin/blue_steel",
+							"tfc:metal/javelin/red_steel"
+						],
+						"PLATE": [
+							"tfc:metal/helmet/bismuth_bronze",
+							"tfc:metal/chestplate/bismuth_bronze",
+							"tfc:metal/boots/bismuth_bronze",
+							"tfc:metal/helmet/black_bronze",
+							"tfc:metal/chestplate/black_bronze",
+							"tfc:metal/greaves/black_bronze",
+							"tfc:metal/boots/black_bronze",
+							"tfc:metal/helmet/bronze",
+							"tfc:metal/chestplate/bronze",
+							"tfc:metal/greaves/bronze",
+							"tfc:metal/boots/bronze",
+							"tfc:metal/helmet/copper",
+							"tfc:metal/chestplate/copper",
+							"tfc:metal/greaves/copper",
+							"tfc:metal/boots/copper",
+							"tfc:metal/helmet/wrought_iron",
+							"tfc:metal/chestplate/wrought_iron",
+							"tfc:metal/greaves/wrought_iron",
+							"tfc:metal/boots/wrought_iron",
+							"tfc:metal/helmet/steel",
+							"tfc:metal/chestplate/steel",
+							"tfc:metal/greaves/steel",
+							"tfc:metal/boots/steel",
+							"tfc:metal/helmet/black_steel",
+							"tfc:metal/chestplate/black_steel",
+							"tfc:metal/greaves/black_steel",
+							"tfc:metal/boots/black_steel",
+							"tfc:metal/helmet/blue_steel",
+							"tfc:metal/chestplate/blue_steel",
+							"tfc:metal/greaves/blue_steel",
+							"tfc:metal/boots/blue_steel",
+							"tfc:metal/helmet/red_steel",
+							"tfc:metal/chestplate/red_steel",
+							"tfc:metal/greaves/red_steel",
+							"tfc:metal/boots/red_steel"
+						]
+			}
 }
