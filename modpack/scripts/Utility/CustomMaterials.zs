@@ -1,3 +1,4 @@
+#priority 988
 #loader gregtech
 
 import mods.gregtech.material.MaterialRegistry;
@@ -91,21 +92,78 @@ for material in MaterialRegistry.getAllMaterials() {
 // - Без категории
 
 // Сухой лед
-MaterialBuilder(32050, "dry_ice").dust().fluid("liquid", false).fluidTemp(293).color(0xB4CAD6).build();
+var dryIce = MaterialBuilder(32050, "dry_ice")
+    .fluid("liquid", false)
+    .fluidTemp(293)
+    .dust()
+    .color(0xB4CAD6)
+    .iconSet("DIAMOND")
+    .flags(["decomposition_by_electrolyzing"])
+    .components([<material:carbon> * 1, <material:oxygen> * 2])
+    .build();
 
 // Изменчивый кристал
-MaterialBuilder(32051, "fluix").dust().fluid("fluid", false).fluidTemp(1200).color(0x846994).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 2, <material:oxygen> * 4, <material:redstone> * 1]).build();
+var fluix = MaterialBuilder(32051, "fluix")
+    .fluid("fluid", false)
+    .fluidTemp(1200)
+    .dust()
+    .color(0x674FAF)
+    .iconSet("QUARTZ")
+    .flags([
+        "generate_lens", 
+        "generate_plate",
+        "decomposition_by_electrolyzing", 
+        "crystallizable"])
+    .components([<material:silicon> * 2, <material:oxygen> * 4, <material:redstone> * 1])
+    .build();
 
 // Заряженный изменчивый кристал
-MaterialBuilder(32052, "charged_certus_quartz").dust().fluid("fluid", false).fluidTemp(1200).color(0xCFDAFF).iconSet("QUARTZ").flags(["generate_plate", "generate_lens", "crystallizable"]).components([<material:silicon> * 1,<material:oxygen> * 2]).build();
+var chargedCertusQuartz = MaterialBuilder(32052, "charged_certus_quartz")
+    .fluid("fluid", false)
+    .fluidTemp(1200)
+    .dust()
+    .color(0xCFDAFF)
+    .iconSet("QUARTZ")
+    .flags([
+        "generate_lens", 
+        "generate_plate",
+        "decomposition_by_electrolyzing", 
+        "crystallizable"])
+    .components([<material:silicon> * 1,<material:oxygen> * 2])
+    .build();
 
 // Дэш
-MaterialBuilder(32053, "desh").dust().fluid("fluid", false).fluidTemp(2200).color(0x2b2d31).iconSet("FLINT").ore().flags(["generate_plate", "generate_dense"]).build();
+var desh = MaterialBuilder(32053, "desh")
+    .dust()
+    .fluid("fluid", false)
+    .fluidTemp(2200)
+    .color(0x2b2d31)
+    .iconSet("FLINT")
+    .ore()
+    .flags([
+        "generate_plate", 
+        "generate_dense"])
+    .build();
 
 // Плотный лед
-MaterialBuilder(32054, "dense_ice").dust().fluid("fluid", false).fluidTemp(0).color(0x52688d).flags(["generate_plate"]).build();
+var denseIce = MaterialBuilder(32054, "dense_ice")
+    .dust()
+    .fluid("fluid", false)
+    .fluidTemp(0)
+    .color(0x5c7297)
+    .flags(["generate_plate", "generate_dense"])
+    .build();
 
-// - Породы Земли
+// Метеоритное железо
+var meteoricIron = MaterialBuilder(32055, "meteoric_iron")
+    .dust()
+    .fluid("fluid", false)
+    .fluidTemp(2200)
+    .color(0x40311d)
+    .flags(["generate_plate", "generate_dense"])
+    .build();
+
+// - Породы Землик
 
 // Breccia
 MaterialBuilder(32100, "breccia").dust().color(0x706B5F).build();

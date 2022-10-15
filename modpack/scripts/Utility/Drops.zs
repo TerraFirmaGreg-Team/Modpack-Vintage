@@ -30,7 +30,7 @@ Dropt.list("tfg/dropt/puddles").add(Dropt.rule()
 
 // Выпадение секвои
 Dropt.list("tfg/dropt/sequoia").add(Dropt.rule()
-  .matchBlocks(["tfc:wood/leaves/sequoia"])
+  .matchBlocks(["tfc:wood/leaves/sequoia#decayable=true"])
   .replaceStrategy("ADD")
   .addDrop(Dropt.drop()
       .selector(Dropt.weight(65))) // шанс, что ничего не выпадет

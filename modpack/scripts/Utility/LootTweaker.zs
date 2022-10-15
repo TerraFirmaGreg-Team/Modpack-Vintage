@@ -8,5 +8,8 @@ LootTweaker.getTable("minecraft:gameplay/fishing/fish").getPool("main").removeEn
 LootTweaker.getTable("minecraft:gameplay/fishing/fish").getPool("main").removeEntry("minecraft:fish#1");
 LootTweaker.getTable("minecraft:gameplay/fishing/fish").getPool("main").removeEntry("minecraft:fish#2");
 
+
+
+
 // Добавление тфк рыбы в дроп, при рыбалке
 LootTweaker.getTable("minecraft:gameplay/fishing/fish").getPool("main").addItemEntry(<tfc:food/fish>, 100);

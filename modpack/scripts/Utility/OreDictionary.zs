@@ -1,4 +1,4 @@
-#priority 975
+#priority 979
 
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
@@ -305,6 +305,64 @@ for item in TFC_Saws {
 // --- Добавление
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
+// Ключи
+<ore:gtce.tool.wrenches>.addItems([
+    <gregtech:meta_tool:8>.withEmptyTag(),
+    <gregtech:meta_tool:28>.withEmptyTag(),
+    <gregtech:meta_tool:29>.withEmptyTag(),
+    <gregtech:meta_tool:30>.withEmptyTag()
+]);
+// Отвертки
+<ore:gtce.tool.screwdrivers>.addItems([
+    <gregtech:meta_tool:11>.withEmptyTag(),
+    <gregtech:meta_tool:31>.withEmptyTag()
+]);
+// Молоты
+<ore:gtce.tool.hard.hammers>.addItems([
+    <gregtech:meta_tool:6>.withEmptyTag()
+]);
+// Пилы
+<ore:gtce.tool.saws>.addItems([
+    <gregtech:meta_tool:5>.withEmptyTag(),
+    <gregtech:meta_tool:25>.withEmptyTag(),
+    <gregtech:meta_tool:26>.withEmptyTag(),
+    <gregtech:meta_tool:27>.withEmptyTag(),
+    <gregtech:meta_tool:32>.withEmptyTag()
+]);
+// Напильники
+<ore:gtce.tool.files>.addItems([
+    <gregtech:meta_tool:9>.withEmptyTag()
+]);
+// Кусачки
+<ore:gtce.tool.cutters>.addItems([
+    <gregtech:meta_tool:13>.withEmptyTag()
+]);
+// Киянки
+<ore:gtce.tool.soft.hammers>.addItems([
+    <gregtech:meta_tool:7>.withEmptyTag()
+]);
+// Ступки
+<ore:gtce.tool.mortars>.addItems([
+    <gregtech:meta_tool:12>.withEmptyTag()
+]);
+// Лопаты
+<ore:gtce.tool.shovels>.addItems([
+    <gregtech:meta_tool:2>.withEmptyTag()
+]);
+// Ножи
+<ore:gtce.tool.knife>.addItems([
+    <gregtech:meta_tool:15>.withEmptyTag(),
+    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
+]);
+// Скалки
+<ore:gtce.tool.rolling.pins>.addItems([
+    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+]);
+// Щипцы
+<ore:gtce.tool.tongs>.addItems([
+    <tfgmod:meta_tool>.withEmptyTag()
+]);
+// Ящики
 <ore:gtce.block.crate>.addItems([
     <gregtech:machine:1625>,
     <gregtech:machine:1626>,
@@ -621,8 +679,12 @@ for paintBallLumen in paintBallsLumen {
 ////////////////////////////////////////////////////////
 
 // --- Добавление
-//
+// Лунный камень
 <ore:stoneMoon>.add(<galacticraftcore:basic_block_moon:4>);
+
+// Сухой лед
+<ore:blockDryIce>.add(<extraplanets:iapetus:6>);
+
 // Парашуты
 for gcParachute in gcParachute {
     <ore:gc.parachute>.add(gcParachute);
@@ -650,11 +712,39 @@ for gcParachute in gcParachute {
     <extraplanets:kepler22b_planks:5>
 ]);
 
+<ore:gravel>.addItems([
+    <extraplanets:titania_gravel>,
+    <extraplanets:deimos_gravel>,
+    <extraplanets:io_gravel>,
+    <extraplanets:europa_gravel>,
+    <extraplanets:eris_gravel>,
+    <extraplanets:pluto_gravel>,
+    <extraplanets:saturn_gravel>,
+    <extraplanets:jupiter_gravel>,
+    <extraplanets:ceres_gravel>,
+    <extraplanets:mercury_gravel>,
+    <extraplanets:iapetus_gravel>,
+    <extraplanets:titania_gravel>,
+    <extraplanets:oberon_gravel>,
+    <extraplanets:titan_gravel>,
+    <extraplanets:rhea_gravel>,
+    <extraplanets:ganymede_gravel>,
+    <extraplanets:callisto_gravel>,
+    <extraplanets:triton_gravel>,
+    <extraplanets:phobos_gravel>
+]);
+
 // Дэш
 <ore:stickDesh>.addItems([<galacticraftplanets:item_basic_mars:1>]);
 
+// Плотный лед
 <ore:blockDenseIce>.addItems([<galacticraftplanets:dense_ice>]);
+
+// Метеоритное железо
+<ore:blockMeteoricIron>.addItems([<galacticraftcore:basic_block_core:12>]);
+
 // --- Удаление
+
 // Iron
 <ore:oreIron>.remove(<galacticraftplanets:mars:3>);
 <ore:oreIron>.remove(<galacticraftplanets:asteroids_block:5>);
@@ -699,20 +789,20 @@ for gcParachute in gcParachute {
 <ore:blockAluminum>.remove(<galacticraftcore:basic_block_core:11>);
 <ore:blockAluminium>.remove(<galacticraftcore:basic_block_core:11>);
 
-// Solar ore
+// Солнечная руда
 <ore:oreSolar>.remove(<galacticraftplanets:venus:13>);
 
-// Desh
+// Дэш
 <ore:oreDesh>.remove(<galacticraftplanets:mars:2>);
 
-// Silicon
+// Кремний
 <ore:oreSilicon>.remove([
     <galacticraftplanets:venus:10>,
     <galacticraftcore:basic_block_core:8>
     ]);
 <ore:blockSilicon>.remove(<galacticraftcore:basic_block_core:13>);
 
-// Quartz
+// Квартц
 <ore:oreQuartz>.remove(<galacticraftplanets:venus:9>);
 
 // Lead
@@ -727,6 +817,9 @@ for gcParachute in gcParachute {
 <ore:dustTitanium>.remove(<galacticraftplanets:item_basic_asteroids:9>);
 <ore:ingotTitanium>.remove(<galacticraftplanets:item_basic_asteroids>);
 <ore:blockTitanium>.remove(<galacticraftplanets:asteroids_block:7>);
+
+// Сыр
+<ore:foodCheese>.remove(<galacticraftcore:cheese_curd>);
 
 ////////////////////////////////////////////////////////
 // --- Vanilla --- /////////////////////////////////////
@@ -754,10 +847,18 @@ for gcParachute in gcParachute {
 <ore:plankWood>.remove(<minecraft:planks:*>);
 <ore:logWood>.remove(<minecraft:log:*>, <minecraft:log2:*>);
 <ore:chest>.remove(<minecraft:chest>, <minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:trapped_chest>);
-<ore:chestWood>.remove(<minecraft:chest>);
+<ore:chestWood>.remove(
+    <minecraft:trapped_chest>, 
+    <minecraft:chest>);
 <ore:chestTrapped>.remove(<minecraft:trapped_chest>);
-<ore:stairWood>.remove(<minecraft:oak_stairs>, <minecraft:spruce_stairs>, <minecraft:birch_stairs>, <minecraft:jungle_stairs>, <minecraft:acacia_stairs>, <minecraft:dark_oak_stairs>);
+<ore:stairWood>.remove([
+    <minecraft:oak_stairs>, 
+    <minecraft:spruce_stairs>, 
+    <minecraft:birch_stairs>, 
+    <minecraft:jungle_stairs>, 
+    <minecraft:acacia_stairs>, 
+    <minecraft:dark_oak_stairs>
+]);
 
 // Cobblestone
 <ore:cobblestone>.remove(<minecraft:cobblestone>);
@@ -776,24 +877,22 @@ for gcParachute in gcParachute {
 <ore:stoneAndesitePolished>.remove(<minecraft:stone:6>);
 
 ////////////////////////////////////////////////////////
-// --- Aunis --- ///////////////////////////////////////
+// --- jsg --- ///////////////////////////////////////
 ////////////////////////////////////////////////////////
 
 // --- Удаление
 // Титан
-<ore:ingotTitanium>.remove(<aunis:titanium_ingot>);
-<ore:blockTitanium>.remove(<aunis:titanium_block>);
+<ore:ingotTitanium>.remove(<jsg:titanium_ingot>);
+<ore:blockTitanium>.remove(<jsg:titanium_block>);
 // Триниум
-<ore:ingotTrinium>.remove(<aunis:trinium_ingot>);
-<ore:blockTrinium>.remove(<aunis:trinium_block>);
-<ore:oreTrinium>.remove(<aunis:trinium_ore>);
+<ore:ingotTrinium>.remove(<jsg:trinium_ingot>);
+<ore:blockTrinium>.remove(<jsg:trinium_block>);
+<ore:oreTrinium>.remove(<jsg:trinium_ore>);
 // Наквадах
-<ore:ingotNaquadahRefined>.remove(<aunis:naquadah_alloy>);
-<ore:blockNaquadahRefined>.remove(<aunis:naquadah_block>);
+<ore:ingotNaquadahRefined>.remove(<jsg:naquadah_alloy>);
+<ore:blockNaquadahRefined>.remove(<jsg:naquadah_block>);
 // Необработаный наквадах
-<ore:ingotNaquadahRaw>.remove(<aunis:naquadah_alloy_raw>);
-<ore:blockNaquadahRaw>.remove(<aunis:naquadah_block_raw>);
-<ore:oreNaquadahRaw>.remove(<aunis:naquadah_ore_stone>);
-<ore:oreNaquadahRaw>.remove(<aunis:naquadah_ore>);
-
-
+<ore:ingotNaquadahRaw>.remove(<jsg:naquadah_alloy_raw>);
+<ore:blockNaquadahRaw>.remove(<jsg:naquadah_block_raw>);
+<ore:oreNaquadahRaw>.remove(<jsg:naquadah_ore_stone>);
+<ore:oreNaquadahRaw>.remove(<jsg:naquadah_ore>);
