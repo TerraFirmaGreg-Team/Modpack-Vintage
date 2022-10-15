@@ -196,7 +196,7 @@ assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:24>,
     <ore:circuitZpm> * 2,
-    <aeadditions:storage.component:8> * 4])
+    <aeadditions:storage.component:4> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<aeadditions:storage.component:5>])
   .duration(200).EUt(122880).buildAndRegister();
@@ -214,7 +214,7 @@ assembler.recipeBuilder()
   .inputs([
     <appliedenergistics2:material:23>, 
     <ore:circuitUv> * 2, 
-    <aeadditions:storage.component:9> * 4])
+    <aeadditions:storage.component:5> * 4])
   .fluidInputs(<liquid:stainless_steel> * 144)
   .outputs([<aeadditions:storage.component:6>])
   .duration(200).EUt(491520).buildAndRegister();
