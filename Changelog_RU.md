@@ -46,6 +46,7 @@
 * LittleTiles
 * PlanetProgression
 * TFG-mod
+* FastWorkbench
 ### Удаленные моды
 * PotionCore
 * Oxygen-merchants
