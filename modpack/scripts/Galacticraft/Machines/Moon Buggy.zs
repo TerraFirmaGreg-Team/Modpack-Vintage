@@ -66,17 +66,15 @@ recipes.addShaped("tfg/gc/buggy_seat", <galacticraftcore:buggymat:1>, [
    [<metaitem:plateDenseSteel>, <ore:leather>, null],
    [<metaitem:plateDenseSteel>, <metaitem:plateDenseSteel>, <metaitem:plateDenseSteel>]]);
 
-// Контейнер багги
-recipes.addShaped("tfg/gc/buggy_container", <galacticraftcore:buggymat:2>, [
-   [<metaitem:plateDenseAluminium>, <metaitem:plateDenseStainlessSteel>, <metaitem:plateDenseAluminium>],
-   [<metaitem:plateDenseAluminium>, <ore:chestWood>, <metaitem:plateDenseAluminium>],
-   [<metaitem:plateDenseAluminium>, <metaitem:plateDenseStainlessSteel>, <metaitem:plateDenseAluminium>]]);
-
-// Колесо багги
-recipes.addShaped("tfg/gc/buggy_wheal", <galacticraftcore:buggymat>, [
-   [<metaitem:plateDenseSteel>, <metaitem:plateStyreneButadieneRubber>, <metaitem:plateDenseSteel>],
-   [<metaitem:plateStyreneButadieneRubber>, <metaitem:plateVanadiumSteel>, <metaitem:plateStyreneButadieneRubber>],
-   [<metaitem:plateDenseSteel>, <metaitem:plateStyreneButadieneRubber>, <metaitem:plateDenseSteel>]]);
+// Колесо
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs(
+      <metaitem:plateDenseStainlessSteel> * 2, 
+      <metaitem:stickStainlessSteel> * 8)
+   .fluidInputs(<liquid:rubber> * 544)
+   .outputs(<galacticraftcore:buggymat>)
+   .duration(200).EUt(440).buildAndRegister();
 
 // Схема
 laser_engraver.recipeBuilder()

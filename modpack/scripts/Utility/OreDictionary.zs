@@ -98,6 +98,8 @@ for item in TFC_Slabs_Smooth {
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- Удаление
+
+
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
 <ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
 <ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
@@ -691,6 +693,29 @@ for gcParachute in gcParachute {
     if (gcParachute has <galacticraftcore:parachute>) {}
     else {
         <ore:gc.parachute.colors>.add(gcParachute);
+    }
+}
+
+// Балоны
+for oxygenTankLight in oxygenTankLight {
+    <ore:gc.oxygen.tank.light>.add(oxygenTankLight);
+    if (oxygenTankLight has <extraplanets:oxygen_tank_light_full_white>) {}
+    else {
+        <ore:gc.oxygen.tank.light.colors>.add(oxygenTankLight);
+    }
+}
+for oxygenTankMed in oxygenTankMed {
+    <ore:gc.oxygen.tank.med>.add(oxygenTankMed);
+    if (oxygenTankMed has <extraplanets:oxygen_tank_med_full_white>) {}
+    else {
+        <ore:gc.oxygen.tank.med.colors>.add(oxygenTankMed);
+    }
+}
+for oxygenTankHeavy in oxygenTankHeavy {
+    <ore:gc.oxygen.tank.heavy>.add(oxygenTankHeavy);
+    if (oxygenTankHeavy has <extraplanets:oxygen_tank_heavy_full_white>) {}
+    else {
+        <ore:gc.oxygen.tank.heavy.colors>.add(oxygenTankHeavy);
     }
 }
 

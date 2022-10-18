@@ -10,9 +10,9 @@ val Mars as IItemStack[] = [
    <galacticraftplanets:mars:1>,
    <galacticraftplanets:mars:2>,
    <galacticraftplanets:mars:3>,
-   <galacticraftplanets:mars:8>,
    <galacticraftplanets:treasure_t2>,
    <galacticraftplanets:key>,
+   <galacticraftplanets:item_basic_mars>,
    <galacticraftplanets:item_basic_mars:6>,
    <galacticraftplanets:item_basic_mars:5>,
    <galacticraftplanets:desh_pick>,
@@ -71,24 +71,19 @@ centrifuge.recipeBuilder()
    .chancedOutput(<metaitem:dustSmallGold>, 650, 250)
    .duration(1250).EUt(512).buildAndRegister();
 
-// Dash --> Raw Dash
+// Dash --> пыль Dash
 macerator.recipeBuilder()
    .inputs(<galacticraftplanets:mars:8>)
-   .outputs(<galacticraftplanets:item_basic_mars> * 4)
-   .chancedOutput(<galacticraftplanets:item_basic_mars>, 2500, 500)
+   .outputs(<metaitem:dustDesh> * 7)
+   .chancedOutput(<metaitem:dustDesh>, 2500, 500)
    .duration(760).EUt(510).buildAndRegister();
 
-// Raw Dash
-centrifuge.recipeBuilder()
+// Raw Dash --> пыль Dash
+macerator.recipeBuilder()
    .inputs(<galacticraftplanets:item_basic_mars>)
-   .chancedOutput(<metaitem:dustStone>, 9000, 500)
-   .chancedOutput(<metaitem:dustSulfur>, 7000, 1000)
-   .chancedOutput(<metaitem:dustCarbon>, 5000, 1500)
-   .chancedOutput(<metaitem:dustSteel>, 3000, 2000)
-   .chancedOutput(<metaitem:dustImpureVanadiumMagnetite>, 1000, 2500)
-   .chancedOutput(<metaitem:dustRareEarth>, 1500, 1500)
-   .fluidOutputs(<liquid:water> * 50)
-   .duration(150).EUt(1750).buildAndRegister();
+   .outputs(<metaitem:dustSmallDesh> * 1)
+   .chancedOutput(<metaitem:dustSmallDesh>, 2500, 500)
+   .duration(760).EUt(510).buildAndRegister();
 
 // Дэш блок
 compressor.recipeBuilder()

@@ -22,7 +22,7 @@ assembly_line.recipeBuilder()
 	.fluidInputs([<liquid:aluminium> * 4608])
 	.fluidInputs([<liquid:bronze> * 4608])
 	.outputs([<galacticraftplanets:astro_miner>])
-	.duration(1200).EUt(480).buildAndRegister();
+	.duration(1200).EUt(4096).buildAndRegister();
 
 // Ракетный компьютер
 assembler.recipeBuilder()

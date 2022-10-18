@@ -2,110 +2,110 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-
+	
 // Glass Cable
 global glassCables as IItemStack[] = [
-    <appliedenergistics2:part>,
-    <appliedenergistics2:part:1>,
-    <appliedenergistics2:part:2>,
-    <appliedenergistics2:part:3>,
-    <appliedenergistics2:part:4>,
-    <appliedenergistics2:part:5>,
-    <appliedenergistics2:part:6>,
-    <appliedenergistics2:part:7>,
-    <appliedenergistics2:part:8>,
-    <appliedenergistics2:part:9>,
-    <appliedenergistics2:part:10>,
-    <appliedenergistics2:part:11>,
-    <appliedenergistics2:part:12>,
-    <appliedenergistics2:part:13>,
-    <appliedenergistics2:part:14>,
-    <appliedenergistics2:part:15>,
-    <appliedenergistics2:part:16>
+	<appliedenergistics2:part>,
+	<appliedenergistics2:part:1>,
+	<appliedenergistics2:part:2>,
+	<appliedenergistics2:part:3>,
+	<appliedenergistics2:part:4>,
+	<appliedenergistics2:part:5>,
+	<appliedenergistics2:part:6>,
+	<appliedenergistics2:part:7>,
+	<appliedenergistics2:part:8>,
+	<appliedenergistics2:part:9>,
+	<appliedenergistics2:part:10>,
+	<appliedenergistics2:part:11>,
+	<appliedenergistics2:part:12>,
+	<appliedenergistics2:part:13>,
+	<appliedenergistics2:part:14>,
+	<appliedenergistics2:part:15>,
+	<appliedenergistics2:part:16>
 ];
 
 // Covered Cable
 global coveredCables as IItemStack[] = [
-    <appliedenergistics2:part:20>,
-    <appliedenergistics2:part:21>,
-    <appliedenergistics2:part:22>,
-    <appliedenergistics2:part:23>,
-    <appliedenergistics2:part:24>,
-    <appliedenergistics2:part:25>,
-    <appliedenergistics2:part:26>,
-    <appliedenergistics2:part:27>,
-    <appliedenergistics2:part:28>,
-    <appliedenergistics2:part:29>,
-    <appliedenergistics2:part:30>,
-    <appliedenergistics2:part:31>,
-    <appliedenergistics2:part:32>,
-    <appliedenergistics2:part:33>,
-    <appliedenergistics2:part:34>,
-    <appliedenergistics2:part:35>,
-    <appliedenergistics2:part:36>
+	<appliedenergistics2:part:20>,
+	<appliedenergistics2:part:21>,
+	<appliedenergistics2:part:22>,
+	<appliedenergistics2:part:23>,
+	<appliedenergistics2:part:24>,
+	<appliedenergistics2:part:25>,
+	<appliedenergistics2:part:26>,
+	<appliedenergistics2:part:27>,
+	<appliedenergistics2:part:28>,
+	<appliedenergistics2:part:29>,
+	<appliedenergistics2:part:30>,
+	<appliedenergistics2:part:31>,
+	<appliedenergistics2:part:32>,
+	<appliedenergistics2:part:33>,
+	<appliedenergistics2:part:34>,
+	<appliedenergistics2:part:35>,
+	<appliedenergistics2:part:36>
 ];
 
 // Smart Cable
 global smartCables as IItemStack[] = [
-    <appliedenergistics2:part:40>,
-    <appliedenergistics2:part:41>,
-    <appliedenergistics2:part:42>,
-    <appliedenergistics2:part:43>,
-    <appliedenergistics2:part:44>,
-    <appliedenergistics2:part:45>,
-    <appliedenergistics2:part:46>,
-    <appliedenergistics2:part:47>,
-    <appliedenergistics2:part:48>,
-    <appliedenergistics2:part:49>,
-    <appliedenergistics2:part:50>,
-    <appliedenergistics2:part:51>,
-    <appliedenergistics2:part:52>,
-    <appliedenergistics2:part:53>,
-    <appliedenergistics2:part:54>,
-    <appliedenergistics2:part:55>,
-    <appliedenergistics2:part:56>
+	<appliedenergistics2:part:40>,
+	<appliedenergistics2:part:41>,
+	<appliedenergistics2:part:42>,
+	<appliedenergistics2:part:43>,
+	<appliedenergistics2:part:44>,
+	<appliedenergistics2:part:45>,
+	<appliedenergistics2:part:46>,
+	<appliedenergistics2:part:47>,
+	<appliedenergistics2:part:48>,
+	<appliedenergistics2:part:49>,
+	<appliedenergistics2:part:50>,
+	<appliedenergistics2:part:51>,
+	<appliedenergistics2:part:52>,
+	<appliedenergistics2:part:53>,
+	<appliedenergistics2:part:54>,
+	<appliedenergistics2:part:55>,
+	<appliedenergistics2:part:56>
 ];
 
 // Dense Smart Cable
 global denseSmartCables as IItemStack[] = [
-    <appliedenergistics2:part:60>,
-    <appliedenergistics2:part:61>,
-    <appliedenergistics2:part:62>,
-    <appliedenergistics2:part:63>,
-    <appliedenergistics2:part:64>,
-    <appliedenergistics2:part:65>,
-    <appliedenergistics2:part:66>,
-    <appliedenergistics2:part:67>,
-    <appliedenergistics2:part:68>,
-    <appliedenergistics2:part:69>,
-    <appliedenergistics2:part:70>,
-    <appliedenergistics2:part:71>,
-    <appliedenergistics2:part:72>,
-    <appliedenergistics2:part:73>,
-    <appliedenergistics2:part:74>,
-    <appliedenergistics2:part:75>,
-    <appliedenergistics2:part:76>
+	<appliedenergistics2:part:60>,
+	<appliedenergistics2:part:61>,
+	<appliedenergistics2:part:62>,
+	<appliedenergistics2:part:63>,
+	<appliedenergistics2:part:64>,
+	<appliedenergistics2:part:65>,
+	<appliedenergistics2:part:66>,
+	<appliedenergistics2:part:67>,
+	<appliedenergistics2:part:68>,
+	<appliedenergistics2:part:69>,
+	<appliedenergistics2:part:70>,
+	<appliedenergistics2:part:71>,
+	<appliedenergistics2:part:72>,
+	<appliedenergistics2:part:73>,
+	<appliedenergistics2:part:74>,
+	<appliedenergistics2:part:75>,
+	<appliedenergistics2:part:76>
 ];
 
 // Dense Covered Cable
 global denseCoveredCables as IItemStack[] = [
-    <appliedenergistics2:part:500>,
-    <appliedenergistics2:part:501>,
-    <appliedenergistics2:part:502>,
-    <appliedenergistics2:part:503>,
-    <appliedenergistics2:part:504>,
-    <appliedenergistics2:part:505>,
-    <appliedenergistics2:part:506>,
-    <appliedenergistics2:part:507>,
-    <appliedenergistics2:part:508>,
-    <appliedenergistics2:part:509>,
-    <appliedenergistics2:part:510>,
-    <appliedenergistics2:part:511>,
-    <appliedenergistics2:part:512>,
-    <appliedenergistics2:part:513>,
-    <appliedenergistics2:part:514>,
-    <appliedenergistics2:part:515>,
-    <appliedenergistics2:part:516>
+	<appliedenergistics2:part:500>,
+	<appliedenergistics2:part:501>,
+	<appliedenergistics2:part:502>,
+	<appliedenergistics2:part:503>,
+	<appliedenergistics2:part:504>,
+	<appliedenergistics2:part:505>,
+	<appliedenergistics2:part:506>,
+	<appliedenergistics2:part:507>,
+	<appliedenergistics2:part:508>,
+	<appliedenergistics2:part:509>,
+	<appliedenergistics2:part:510>,
+	<appliedenergistics2:part:511>,
+	<appliedenergistics2:part:512>,
+	<appliedenergistics2:part:513>,
+	<appliedenergistics2:part:514>,
+	<appliedenergistics2:part:515>,
+	<appliedenergistics2:part:516>
 ];
 
 // Paint ball
@@ -362,54 +362,54 @@ global TFC_QuernToMaceratorOutput as IItemStack[] = [
 
 // - TFC Cooked Meat Array
 global TFC_Cooked_Meat as IItemStack[] = [
-  <tfc:food/cooked_beef>,
-  <tfc:food/cooked_pork>,
-  <tfc:food/cooked_chicken>,
-  <tfc:food/cooked_mutton>,
-  <tfc:food/cooked_fish>,
-  <tfc:food/cooked_bear>,
-  <tfc:food/cooked_calamari>,
-  <tfc:food/cooked_horse_meat>,
-  <tfc:food/cooked_pheasant>,
-  <tfc:food/cooked_venison>,
-  <tfc:food/cooked_wolf>,
-  <tfc:food/cooked_rabbit>,
-  <tfc:food/cooked_mongoose>,
-  <tfc:food/cooked_gran_feline>,
-  <tfc:food/cooked_camelidae>,
-  <tfcflorae:food/cooked_eel>,
-  <tfcflorae:food/cooked_crab>,
-  <tfcflorae:food/cooked_clam>,
-  <tfcflorae:food/cooked_scallop>,
-  <tfcflorae:food/cooked_starfish>,
-  <tfcflorae:food/cooked_snail>,
-  <tfcflorae:food/cooked_worm>
+	<tfc:food/cooked_beef>,
+	<tfc:food/cooked_pork>,
+	<tfc:food/cooked_chicken>,
+	<tfc:food/cooked_mutton>,
+	<tfc:food/cooked_fish>,
+	<tfc:food/cooked_bear>,
+	<tfc:food/cooked_calamari>,
+	<tfc:food/cooked_horse_meat>,
+	<tfc:food/cooked_pheasant>,
+	<tfc:food/cooked_venison>,
+	<tfc:food/cooked_wolf>,
+	<tfc:food/cooked_rabbit>,
+	<tfc:food/cooked_mongoose>,
+	<tfc:food/cooked_gran_feline>,
+	<tfc:food/cooked_camelidae>,
+	<tfcflorae:food/cooked_eel>,
+	<tfcflorae:food/cooked_crab>,
+	<tfcflorae:food/cooked_clam>,
+	<tfcflorae:food/cooked_scallop>,
+	<tfcflorae:food/cooked_starfish>,
+	<tfcflorae:food/cooked_snail>,
+	<tfcflorae:food/cooked_worm>
 ];
 
 // - TFC Raw Meat Array
 global TFC_Raw_Meat as IItemStack[] = [
-  <tfc:food/beef>,
-  <tfc:food/pork>,
-  <tfc:food/chicken>,
-  <tfc:food/mutton>,
-  <tfc:food/fish>,
-  <tfc:food/bear>,
-  <tfc:food/calamari>,
-  <tfc:food/horse_meat>,
-  <tfc:food/pheasant>,
-  <tfc:food/venison>,
-  <tfc:food/wolf>,
-  <tfc:food/rabbit>,
-  <tfc:food/mongoose>,
-  <tfc:food/gran_feline>,
-  <tfc:food/camelidae>,
-  <tfcflorae:food/raw_eel>,
-  <tfcflorae:food/raw_crab>,
-  <tfcflorae:food/raw_clam>,
-  <tfcflorae:food/raw_scallop>,
-  <tfcflorae:food/raw_starfish>,
-  <tfcflorae:food/raw_snail>,
-  <tfcflorae:food/raw_worm>
+	<tfc:food/beef>,
+	<tfc:food/pork>,
+	<tfc:food/chicken>,
+	<tfc:food/mutton>,
+	<tfc:food/fish>,
+	<tfc:food/bear>,
+	<tfc:food/calamari>,
+	<tfc:food/horse_meat>,
+	<tfc:food/pheasant>,
+	<tfc:food/venison>,
+	<tfc:food/wolf>,
+	<tfc:food/rabbit>,
+	<tfc:food/mongoose>,
+	<tfc:food/gran_feline>,
+	<tfc:food/camelidae>,
+	<tfcflorae:food/raw_eel>,
+	<tfcflorae:food/raw_crab>,
+	<tfcflorae:food/raw_clam>,
+	<tfcflorae:food/raw_scallop>,
+	<tfcflorae:food/raw_starfish>,
+	<tfcflorae:food/raw_snail>,
+	<tfcflorae:food/raw_worm>
 ];
 
 // - TFC Fired Ceramics
@@ -3827,7 +3827,7 @@ global GT_TFC_Plates as IItemStack[] = [
 ];
 
 global All_Metal_Heads_From_TFC as IItemStack[] = [
-    // Pickaxe Heads
+	// Pickaxe Heads
 	<tfc:metal/pick_head/bismuth_bronze>,
 	<tfc:metal/pick_head/black_bronze>,
 	<tfc:metal/pick_head/bronze>,
@@ -4051,56 +4051,6 @@ global All_Plants as IItemStack[] = [
 	<tfcflorae:food/tobacco_leaf>
 ];
 
-// - All TFC-Tech Strips Array
-global TFC_Tech_Strips as IItemStack[] = [
-	<tfctech:metal/bismuth_strip>,
-	<tfctech:metal/bismuth_bronze_strip>,
-	<tfctech:metal/black_bronze_strip>,
-	<tfctech:metal/brass_strip>,
-	<tfctech:metal/bronze_strip>,
-	<tfctech:metal/copper_strip>,
-	<tfctech:metal/gold_strip>,
-	<tfctech:metal/lead_strip>,
-	<tfctech:metal/nickel_strip>,
-	<tfctech:metal/rose_gold_strip>,
-	<tfctech:metal/silver_strip>,
-	<tfctech:metal/tin_strip>,
-	<tfctech:metal/zinc_strip>,
-	<tfctech:metal/sterling_silver_strip>,
-	<tfctech:metal/wrought_iron_strip>,
-	<tfctech:metal/pig_iron_strip>,
-	<tfctech:metal/steel_strip>,
-	<tfctech:metal/platinum_strip>,
-	<tfctech:metal/black_steel_strip>,
-	<tfctech:metal/blue_steel_strip>,
-	<tfctech:metal/red_steel_strip>
-];
-
-// - All TFC-Tech Long Rods Array
-global TFC_Tech_Long_Rods as IItemStack[] = [
-	<tfctech:metal/bismuth_long_rod>,
-	<tfctech:metal/bismuth_bronze_long_rod>,
-	<tfctech:metal/black_bronze_long_rod>,
-	<tfctech:metal/brass_long_rod>,
-	<tfctech:metal/bronze_long_rod>,
-	<tfctech:metal/copper_long_rod>,
-	<tfctech:metal/gold_long_rod>,
-	<tfctech:metal/lead_long_rod>,
-	<tfctech:metal/nickel_long_rod>,
-	<tfctech:metal/rose_gold_long_rod>,
-	<tfctech:metal/silver_long_rod>,
-	<tfctech:metal/tin_long_rod>,
-	<tfctech:metal/zinc_long_rod>,
-	<tfctech:metal/sterling_silver_long_rod>,
-	<tfctech:metal/wrought_iron_long_rod>,
-	<tfctech:metal/pig_iron_long_rod>,
-	<tfctech:metal/steel_long_rod>,
-	<tfctech:metal/platinum_long_rod>,
-	<tfctech:metal/black_steel_long_rod>,
-	<tfctech:metal/blue_steel_long_rod>,
-	<tfctech:metal/red_steel_long_rod>
-];
-
 global TFC_Saws as IItemStack[] = [
 	<tfc:metal/saw/bismuth_bronze>,
 	<tfc:metal/saw/black_bronze>,
@@ -4123,23 +4073,23 @@ global TFC_Saws as IItemStack[] = [
 ];
 
 // - All Glass Panes Array
-global Glass_Panes_Array as IItemStack[] = [
-   <minecraft:stained_glass_pane>,
-   <minecraft:stained_glass_pane:1>,
-   <minecraft:stained_glass_pane:2>,
-   <minecraft:stained_glass_pane:3>,
-   <minecraft:stained_glass_pane:4>,
-   <minecraft:stained_glass_pane:5>,
-   <minecraft:stained_glass_pane:6>,
-   <minecraft:stained_glass_pane:7>,
-   <minecraft:stained_glass_pane:8>,
-   <minecraft:stained_glass_pane:9>,
-   <minecraft:stained_glass_pane:10>,
-   <minecraft:stained_glass_pane:11>,
-   <minecraft:stained_glass_pane:12>,
-   <minecraft:stained_glass_pane:13>,
-   <minecraft:stained_glass_pane:14>,
-   <minecraft:stained_glass_pane:15>
+global glassPanesArray as IItemStack[] = [
+	<minecraft:stained_glass_pane>,
+	<minecraft:stained_glass_pane:1>,
+	<minecraft:stained_glass_pane:2>,
+	<minecraft:stained_glass_pane:3>,
+	<minecraft:stained_glass_pane:4>,
+	<minecraft:stained_glass_pane:5>,
+	<minecraft:stained_glass_pane:6>,
+	<minecraft:stained_glass_pane:7>,
+	<minecraft:stained_glass_pane:8>,
+	<minecraft:stained_glass_pane:9>,
+	<minecraft:stained_glass_pane:10>,
+	<minecraft:stained_glass_pane:11>,
+	<minecraft:stained_glass_pane:12>,
+	<minecraft:stained_glass_pane:13>,
+	<minecraft:stained_glass_pane:14>,
+	<minecraft:stained_glass_pane:15>
 ];
 
 // - All liquid dye Array
@@ -4234,4 +4184,62 @@ global craftingStorage as IItemStack[] = [
 	<extracpus:crafting_storage_1024k>,
 	<extracpus:crafting_storage_4096k>,
 	<extracpus:crafting_storage_16384k>
+];
+
+// - All EP Oxygen Tank
+global oxygenTankLight as IItemStack[] = [
+	<extraplanets:oxygen_tank_light_full_white>,
+	<extraplanets:oxygen_tank_light_full_orange>,
+	<extraplanets:oxygen_tank_light_full_magenta>,
+	<extraplanets:oxygen_tank_light_full_light_blue>,
+	<extraplanets:oxygen_tank_light_full_yellow>,
+	<galacticraftcore:oxygen_tank_light_full>,
+	<extraplanets:oxygen_tank_light_full_pink>,
+	<extraplanets:oxygen_tank_light_full_gray>,
+	<extraplanets:oxygen_tank_light_full_light_gray>,
+	<extraplanets:oxygen_tank_light_full_cyan>,
+	<extraplanets:oxygen_tank_light_full_purple>,
+	<extraplanets:oxygen_tank_light_full_blue>,
+	<extraplanets:oxygen_tank_light_full_brown>,
+	<extraplanets:oxygen_tank_light_full_green>,
+	<extraplanets:oxygen_tank_light_full_red>,
+	<extraplanets:oxygen_tank_light_full_black>
+];
+
+global oxygenTankMed as IItemStack[] = [
+	<extraplanets:oxygen_tank_med_full_white>,
+	<galacticraftcore:oxygen_tank_med_full>,
+	<extraplanets:oxygen_tank_med_full_magenta>,
+	<extraplanets:oxygen_tank_med_full_light_blue>,
+	<extraplanets:oxygen_tank_med_full_yellow>,
+	<extraplanets:oxygen_tank_med_full_lime>,
+	<extraplanets:oxygen_tank_med_full_pink>,
+	<extraplanets:oxygen_tank_med_full_gray>,
+	<extraplanets:oxygen_tank_med_full_light_gray>,
+	<extraplanets:oxygen_tank_med_full_cyan>,
+	<extraplanets:oxygen_tank_med_full_purple>,
+	<extraplanets:oxygen_tank_med_full_blue>,
+	<extraplanets:oxygen_tank_med_full_brown>,
+	<extraplanets:oxygen_tank_med_full_green>,
+	<extraplanets:oxygen_tank_med_full_red>,
+	<extraplanets:oxygen_tank_med_full_black>
+];
+
+global oxygenTankHeavy as IItemStack[] = [
+	<extraplanets:oxygen_tank_heavy_full_white>,
+	<extraplanets:oxygen_tank_heavy_full_orange>,
+	<extraplanets:oxygen_tank_heavy_full_magenta>,
+	<extraplanets:oxygen_tank_heavy_full_light_blue>,
+	<extraplanets:oxygen_tank_heavy_full_yellow>,
+	<extraplanets:oxygen_tank_heavy_full_lime>,
+	<extraplanets:oxygen_tank_heavy_full_pink>,
+	<extraplanets:oxygen_tank_heavy_full_gray>,
+	<extraplanets:oxygen_tank_heavy_full_light_gray>,
+	<extraplanets:oxygen_tank_heavy_full_cyan>,
+	<extraplanets:oxygen_tank_heavy_full_purple>,
+	<extraplanets:oxygen_tank_heavy_full_blue>,
+	<extraplanets:oxygen_tank_heavy_full_brown>,
+	<extraplanets:oxygen_tank_heavy_full_green>,
+	<galacticraftcore:oxygen_tank_heavy_full>,
+	<extraplanets:oxygen_tank_heavy_full_black>
 ];

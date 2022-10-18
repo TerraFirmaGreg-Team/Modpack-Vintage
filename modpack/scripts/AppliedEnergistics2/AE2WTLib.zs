@@ -1,23 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val ItemsToRemove as IItemStack[] = [
-	<wct:wct>,
-  <wft:wft>,
-  <wit:wit>,
-  <wpt:wpt>,
-  <ae2wtlib:infinity_booster_card>,
-  <wct:magnet_card>,
-  <aenetvistool:net_visualizer>
-];
-
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in ItemsToRemove{
-  recipes.remove(item);
-}
 
 // --- Добавление рецептов
 

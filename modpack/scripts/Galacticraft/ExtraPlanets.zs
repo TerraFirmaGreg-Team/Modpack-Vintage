@@ -130,7 +130,96 @@ val materialEngine as IItemStack[] = [
    <extraplanets:tier8_items>
 ];
 
+
 // --- Добавление рецептов
+
+// // Кислородные баллоны
+// for i in 0 .. 16 {
+// // Обесцвечивание
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.light.colors>)
+//       .fluidInputs([<liquid:chlorine> * 144])
+//       .outputs([<extraplanets:oxygen_tank_light_full_white>])
+//       .duration(8).EUt(480).buildAndRegister();
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.med.colors>)
+//       .fluidInputs([<liquid:chlorine> * 144])
+//       .outputs([<extraplanets:oxygen_tank_med_full_white>])
+//       .duration(8).EUt(480).buildAndRegister();
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.heavy.colors>)
+//       .fluidInputs([<liquid:chlorine> * 144])
+//       .outputs([<extraplanets:oxygen_tank_heavy_full_white>])
+//       .duration(8).EUt(480).buildAndRegister();
+// // Окрашивание
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.light>)
+//       .fluidInputs([colorLiquid[i] * 18])
+//       .outputs([oxygenTankLight[i]])
+//       .duration(20).EUt(7).buildAndRegister();
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.med>)
+//       .fluidInputs([colorLiquid[i] * 18])
+//       .outputs([oxygenTankMed[i]])
+//       .duration(20).EUt(7).buildAndRegister();
+//    chemical_bath.recipeBuilder()
+//       .inputs(<ore:gc.oxygen.tank.heavy>)
+//       .fluidInputs([colorLiquid[i] * 18])
+//       .outputs([oxygenTankHeavy[i]])
+//       .duration(20).EUt(7).buildAndRegister();
+// }
+
+// Легкий
+assembler.recipeBuilder()
+   .circuit(6)
+   .inputs(
+      <galacticraftcore:canister> * 2, 
+      <metaitem:plateDenseCopper> * 2,
+      <metaitem:electric.pump.lv> * 2)
+   .outputs(<extraplanets:oxygen_tank_light_full_white>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(128).buildAndRegister();
+// Средний
+assembler.recipeBuilder()
+   .circuit(6)
+   .inputs(
+      <galacticraftcore:canister> * 4, 
+      <metaitem:plateDenseTin> * 4, 
+      <metaitem:electric.pump.mv> * 2)
+   .outputs(<extraplanets:oxygen_tank_med_full_white>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(512).buildAndRegister();
+// Тяжелый
+assembler.recipeBuilder()
+   .circuit(6)
+   .inputs(
+      <galacticraftcore:canister> * 6, 
+      <metaitem:plateDenseSteel> * 6, 
+      <metaitem:electric.pump.hv> * 2)
+   .outputs(<extraplanets:oxygen_tank_heavy_full_white>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(2048).buildAndRegister();
+
+// Очень тяжелый
+assembler.recipeBuilder()
+   .circuit(6)
+   .inputs(
+      <ore:gc.oxygen.tank.heavy> * 3, 
+      <metaitem:platePalladium> * 3, 
+      <metaitem:electric.pump.ev> * 2)
+   .outputs(<extraplanets:oxygen_tank_very_heavy_full>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(8192).buildAndRegister();
+// Экстремально тяжелый
+assembler.recipeBuilder()
+   .circuit(6)
+   .inputs(
+      <extraplanets:oxygen_tank_very_heavy_full> * 3, 
+      <metaitem:plateZinc> * 3, 
+      <metaitem:electric.pump.iv> * 2)
+   .outputs(<extraplanets:oxygen_tank_extremely_heavy_full>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(32768).buildAndRegister();
 
 // Взлетная площадка 2 Tiers
 assembler.recipeBuilder()
@@ -171,23 +260,40 @@ assembler.recipeBuilder()
    .outputs(<extraplanets:advanced_launch_pad:2> * 5)
    .duration(1000).EUt(5208).buildAndRegister();
 
-// Батареи
-// T1
+// Гравитационный контроллер
 assembler.recipeBuilder()
    .circuit(1)
    .inputs(
-      <ore:batteryIv> * 3, 
-      <galacticraftplanets:item_basic_mars:3> * 2)
-   .outputs(<extraplanets:electric_parts>)
-   .duration(200).EUt(8180).buildAndRegister();
-// T2
+      <metaitem:plateDenseMeteoricIron> * 9, 
+      <ore:batteryLuv> * 8,
+      <ore:circuitLuv> * 8)
+   .outputs(<extraplanets:gravity_controller>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(31123).buildAndRegister();
+
+// Кислородный контроллер
 assembler.recipeBuilder()
    .circuit(2)
    .inputs(
-      <ore:batteryLuv> * 3, 
-      <galacticraftplanets:item_basic_mars:3> * 3)
-   .outputs(<extraplanets:electric_parts:1>)
-   .duration(200).EUt(12680).buildAndRegister();
+      <metaitem:plateDenseDesh> * 9, 
+      <ore:batteryLuv> * 4,
+      <ore:circuitLuv> * 8,
+      <ore:gc.oxygen.tank.heavy>)
+   .outputs(<extraplanets:module_items:1>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(31123).buildAndRegister();
+
+// Космический контроллер
+assembler.recipeBuilder()
+   .circuit(3)
+   .inputs(
+      <metaitem:plateDenseTitanium> * 9, 
+      <ore:batteryLuv> * 4,
+      <ore:circuitLuv> * 8,
+      <galacticraftcore:oxygen_gear>)
+   .outputs(<extraplanets:module_items:2>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(31123).buildAndRegister();
 
 // Прочная ткань
 implosion_compressor.recipeBuilder()

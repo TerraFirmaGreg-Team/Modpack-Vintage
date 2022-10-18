@@ -59,6 +59,25 @@ assembler.recipeBuilder()
    .property("cleanroom", "cleanroom")
    .duration(600).EUt(1024).buildAndRegister();
 
+// Колесо
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs(
+      <metaitem:plateDenseTitanium> * 2, 
+      <metaitem:stickPlatinum> * 8)
+   .fluidInputs(<liquid:styrene_butadiene_rubber> * 544)
+   .outputs(<extraplanets:electric_parts:2>)
+   .duration(200).EUt(1340).buildAndRegister();
+
+// Батарея
+assembler.recipeBuilder()
+   .circuit(1)
+   .inputs(
+      <ore:batteryIv> * 3, 
+      <galacticraftplanets:item_basic_mars:3> * 2)
+   .outputs(<extraplanets:electric_parts>)
+   .duration(200).EUt(8180).buildAndRegister();
+
 // Схема
 laser_engraver.recipeBuilder()
 	.inputs([<metaitem:schematic.blank>])

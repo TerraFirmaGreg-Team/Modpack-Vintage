@@ -1,5 +1,8 @@
+#priority 980
+
 import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
+
 
 // --- Массивы
 
@@ -89,7 +92,9 @@ val RemoveAndHide as IItemStack[] = [
    <galacticraftplanets:rocket_t3:4>,
    <galacticraftplanets:crashed_probe>,
    <galacticraftplanets:basic_item_venus:6>,
-   <galacticraftplanets:carbon_fragments>
+   <galacticraftplanets:carbon_fragments>,
+   <galacticraftcore:canister:1>,
+   <galacticraftcore:buggymat:2>
 ];
 
 val RemoveRecipe as IItemStack[] = [
@@ -163,7 +168,8 @@ val RemoveRecipe as IItemStack[] = [
    <galacticraftcore:buggymat:*>,
    <galacticraftplanets:grapple>,
    <galacticraftcore:collector>,
-   <galacticraftcore:item_basic_moon>
+   <galacticraftcore:item_basic_moon>,
+   <galacticraftcore:canister>,
 ];
 
 val RemoveRecipeFurnace as IItemStack[] = [

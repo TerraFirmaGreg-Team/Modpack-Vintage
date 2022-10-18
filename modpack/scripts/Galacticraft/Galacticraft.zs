@@ -26,8 +26,6 @@ recipes.addShaped("tfg/gc/landing_pad/buggy", <galacticraftcore:landing_pad:1> *
    [<metaitem:plateDenseBlackSteel>, <metaitem:plateDenseBlackSteel>, <metaitem:plateDenseBlackSteel>],
    [<metaitem:blockSteel>, <metaitem:blockSteel>, <metaitem:blockSteel>]]);
 
-
-
 // Декоративный оловянный блок
 recipes.addShaped("tfg/gc/decor_block_tin_1", <galacticraftcore:basic_block_core:3>, [
    [<ore:stone>, <ore:stone>, null],
@@ -437,13 +435,13 @@ recipes.addShaped("tfg/gc/telepad_short", <galacticraftplanets:telepad_short>, [
    [<metaitem:magic_energy_absorber>, <galacticraftplanets:item_basic_asteroids:8>, <metaitem:magic_energy_absorber>],
    [<metaitem:plateDoubleTrinaquadalloy>, <metaitem:plateDoubleTrinaquadalloy>, <metaitem:plateDoubleTrinaquadalloy>]]);
 
-
-
 // Канистра из олова
-recipes.addShaped("tfg/gc/canister", <galacticraftcore:canister>, [
-   [<metaitem:plateDenseTin>, null, <metaitem:plateDenseTin>],
-   [<metaitem:plateDenseTin>, <ore:gtce.tool.hard.hammers>, <metaitem:plateDenseTin>],
-   [<metaitem:plateDenseTin>, <metaitem:plateDenseTin>, <metaitem:plateDenseTin>]]);
+bender.recipeBuilder()
+   .circuit(9)
+   .inputs(<metaitem:plateDenseTin> * 3)
+   .outputs(<galacticraftcore:canister>)
+   .duration(100).EUt(48).buildAndRegister();
+
 
 // Крюк
 recipes.addShaped("tfg/gc/grapple", <galacticraftplanets:grapple>, [
@@ -451,50 +449,22 @@ recipes.addShaped("tfg/gc/grapple", <galacticraftplanets:grapple>, [
    [<ore:stickIronAny>, <ore:string>, null],
    [<ore:gearIronAny>, <ore:stickIronAny>, null]]);
 
-
-
-
-
-
-
-
-
-
-
-// Баллоны
-// Легкий
-assembler.recipeBuilder()
-   .inputs(
-      <metaitem:super_tank.lv>, 
-      <metaitem:pipeTinyFluidAluminium> * 4 , 
-      <metaitem:plateDenseTin> * 2, 
-      <metaitem:electric.pump.lv> * 2)
-   .circuit(6)
-   .outputs(<galacticraftcore:oxygen_tank_light_full:900>)
-   .property("cleanroom", "cleanroom")
-   .duration(1000).EUt(128).buildAndRegister();
-// Средний
-assembler.recipeBuilder()
-   .inputs(
-      <metaitem:super_tank.mv>, 
-      <metaitem:pipeTinyFluidAluminium> * 4, 
-      <metaitem:plateDenseTin> * 4, 
-      <metaitem:electric.pump.mv> * 2)
-   .circuit(6)
-   .outputs(<galacticraftcore:oxygen_tank_med_full:1800>)
-   .property("cleanroom", "cleanroom")
-   .duration(1000).EUt(256).buildAndRegister();
-// Тяжелый
-assembler.recipeBuilder()
-   .inputs(
-      <metaitem:super_tank.hv>, 
-      <metaitem:pipeTinyFluidAluminium> * 4, 
-      <metaitem:plateDenseTin> * 6, 
-      <metaitem:electric.pump.hv> * 2)
-   .circuit(6)
-   .outputs(<galacticraftcore:oxygen_tank_heavy_full:2700>)
-   .property("cleanroom", "cleanroom")
-   .duration(1000).EUt(512).buildAndRegister();
+// Посадочный модуль
+// T1
+recipes.addShaped("tfg/gc/lander_tier1", <metaitem:lander.tier.1>,
+   [[<galacticraftcore:basic_item:19>, <metaitem:plateDenseSteel>, <metaitem:plateDenseSteel>],
+   [<metaitem:plateDenseSteel>, <galacticraftcore:buggymat:1>, <metaitem:plateDenseCopper>],
+   [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
+// Т2
+recipes.addShaped("tfg/gc/lander_tier2", <metaitem:lander.tier.2>,
+   [[<metaitem:foilGold>, <ore:gc.parachute>, <metaitem:foilGold>],
+   [<galacticraftcore:canvas>, <metaitem:lander.tier.1>, <galacticraftcore:canvas>],
+   [<metaitem:foilGold>, <galacticraftcore:canvas>, <metaitem:foilGold>]]);
+// T3
+recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
+   [[<metaitem:plateDenseBlackSteel>, <metaitem:crate.stainless_steel>, <metaitem:plateDenseBlackSteel>],
+   [<galacticraftcore:steel_pole>, <metaitem:lander.tier.2>, <galacticraftcore:steel_pole>],
+   [<metaitem:plateDenseBlackSteel>, <metaitem:plateBlackSteel>, <metaitem:plateDenseBlackSteel>]]);
 
 // Парашюты
 assembler.recipeBuilder()
@@ -516,20 +486,3 @@ for i in 0 .. 16 {
       .outputs([gcParachute[i]])
       .duration(20).EUt(7).buildAndRegister();
 }
-
-// Посадочный модуль
-// T1
-recipes.addShaped("tfg/gc/lander_tier1", <metaitem:lander.tier.1>,
-   [[<galacticraftcore:basic_item:19>, <metaitem:plateDenseSteel>, <metaitem:plateDenseSteel>],
-   [<metaitem:plateDenseSteel>, <galacticraftcore:buggymat:1>, <metaitem:plateDenseCopper>],
-   [<galacticraftcore:steel_pole>, <galacticraftcore:engine>, <galacticraftcore:steel_pole>]]);
-// Т2
-recipes.addShaped("tfg/gc/lander_tier2", <metaitem:lander.tier.2>,
-   [[<metaitem:foilGold>, <ore:gc.parachute>, <metaitem:foilGold>],
-   [<galacticraftcore:canvas>, <metaitem:lander.tier.1>, <galacticraftcore:canvas>],
-   [<metaitem:foilGold>, <galacticraftcore:canvas>, <metaitem:foilGold>]]);
-// T3
-recipes.addShaped("tfg/gc/lander_tier3", <metaitem:lander.tier.3>,
-   [[<metaitem:plateDenseBlackSteel>, <metaitem:crate.stainless_steel>, <metaitem:plateDenseBlackSteel>],
-   [<galacticraftcore:steel_pole>, <metaitem:lander.tier.2>, <galacticraftcore:steel_pole>],
-   [<metaitem:plateDenseBlackSteel>, <metaitem:plateBlackSteel>, <metaitem:plateDenseBlackSteel>]]);
