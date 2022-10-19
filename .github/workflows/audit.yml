@@ -1,4 +1,4 @@
-workflow "PR Audit" {
+workflow "audit" {
   on = "pull_request"
   resolves = ["EC Audit PR"]
 }
