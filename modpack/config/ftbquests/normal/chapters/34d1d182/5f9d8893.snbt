@@ -1,0 +1,13 @@
+{
+	x: 15.0d,
+	y: 18.5d,
+	tasks: [{
+		uid: "151c9ecf",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:sensor_glasses"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

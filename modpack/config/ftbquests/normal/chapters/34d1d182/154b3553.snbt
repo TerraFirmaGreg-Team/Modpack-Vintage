@@ -1,0 +1,11 @@
+{
+	x: -2.75d,
+	y: 17.25d,
+	tasks: [{
+		uid: "36109da2",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:platform"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -8.25d,
+	y: 22.25d,
+	dependencies: [
+		"40e28b07"
+	],
+	tasks: [{
+		uid: "49216c5e",
+		type: "item",
+		items: [{
+			item: "extraplanets:solar"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 2.75d,
+	y: 19.75d,
+	tasks: [{
+		uid: "63b5aed2",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:cargo"
+		}]
+	}]
+}

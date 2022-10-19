@@ -1,0 +1,18 @@
+{
+	x: 9.25d,
+	y: 17.25d,
+	tasks: [{
+		uid: "7d9e10b3",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:beam_receiver"
+		}]
+	},
+	{
+		uid: "66e6517f",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:beam_reflector"
+		}]
+	}]
+}

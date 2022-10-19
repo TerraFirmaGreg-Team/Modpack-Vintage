@@ -1,11 +1,8 @@
 {
 	title: "{tfg.quests.space.airlock.title}",
-	x: -9.25d,
-	y: 9.75d,
+	x: 20.5d,
+	y: 21.25d,
 	description: "{tfg.quests.space.airlock.subtitle}",
-	dependencies: [
-		"63759119"
-	],
 	tasks: [{
 		uid: "a1103d61",
 		type: "item",

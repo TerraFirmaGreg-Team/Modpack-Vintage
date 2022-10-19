@@ -1,0 +1,13 @@
+{
+	x: 3.0d,
+	y: 8.0d,
+	tasks: [{
+		uid: "54fc7879",
+		type: "item",
+		items: [{
+			item: "extraplanets:mars_rover"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

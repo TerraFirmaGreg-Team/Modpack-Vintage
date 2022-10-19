@@ -1,0 +1,11 @@
+{
+	x: 26.5d,
+	y: 21.25d,
+	tasks: [{
+		uid: "30030578",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:laser_turret"
+		}]
+	}]
+}

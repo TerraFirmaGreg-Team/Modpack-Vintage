@@ -1,0 +1,11 @@
+{
+	x: 4.75d,
+	y: 17.25d,
+	tasks: [{
+		uid: "9d7d61f1",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:solar_array_controller"
+		}]
+	}]
+}

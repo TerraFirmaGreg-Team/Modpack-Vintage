@@ -1,8 +1,9 @@
 {
-	x: -2.625d,
-	y: 12.375d,
+	x: 1.5d,
+	y: 10.5d,
+	shape: "octagon",
 	dependencies: [
-		"411b712c"
+		"c7763b9e"
 	],
 	size: 1.5d,
 	optional: true,
@@ -11,6 +12,12 @@
 		type: "item",
 		items: [{
 			item: "galacticraftplanets:rocket_t2 1 11"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 12"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 13"
 		}],
 		ignore_nbt: 2b
 	}]

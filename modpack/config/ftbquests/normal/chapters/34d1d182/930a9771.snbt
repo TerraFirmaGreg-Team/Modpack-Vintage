@@ -1,0 +1,13 @@
+{
+	x: -4.0d,
+	y: 8.0d,
+	tasks: [{
+		uid: "ccfa7037",
+		type: "item",
+		items: [{
+			item: "extraplanets:venus_rover"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

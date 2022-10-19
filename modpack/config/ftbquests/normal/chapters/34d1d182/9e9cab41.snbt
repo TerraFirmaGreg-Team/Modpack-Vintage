@@ -1,11 +1,7 @@
 {
-	x: -7.5d,
-	y: 18.0d,
+	x: -9.25d,
+	y: 19.75d,
 	description: "{tfg.quests.space.fuelloader.subtitle}",
-	dependencies: [
-		"f6e1782c",
-		"5f7fe3e6"
-	],
 	tasks: [{
 		uid: "da55bdad",
 		type: "item",

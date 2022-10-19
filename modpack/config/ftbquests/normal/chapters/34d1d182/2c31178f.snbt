@@ -1,0 +1,14 @@
+{
+	x: -9.25d,
+	y: 21.0d,
+	dependencies: [
+		"9e9cab41"
+	],
+	tasks: [{
+		uid: "becd32dc",
+		type: "item",
+		items: [{
+			item: "extraplanets:advanced_fuel_loader"
+		}]
+	}]
+}

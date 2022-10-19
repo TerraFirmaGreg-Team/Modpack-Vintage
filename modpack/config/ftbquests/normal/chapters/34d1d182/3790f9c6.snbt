@@ -1,0 +1,11 @@
+{
+	x: 0.75d,
+	y: 18.25d,
+	tasks: [{
+		uid: "163dd04b",
+		type: "item",
+		items: [{
+			item: "extraplanets:advanced_launch_pad 1 2"
+		}]
+	}]
+}

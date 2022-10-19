@@ -1,0 +1,11 @@
+{
+	x: -4.0d,
+	y: 4.25d,
+	tasks: [{
+		uid: "ebbde561",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:geothermal_generator"
+		}]
+	}]
+}

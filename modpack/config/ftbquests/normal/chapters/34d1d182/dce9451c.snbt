@@ -2,9 +2,6 @@
 	x: -8.25d,
 	y: 17.25d,
 	description: "{tfg.quests.space.shield.subtitle}",
-	dependencies: [
-		"9e9cab41"
-	],
 	optional: true,
 	tasks: [{
 		uid: "1186aab3",

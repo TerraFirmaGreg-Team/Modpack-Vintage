@@ -1,0 +1,14 @@
+{
+	x: -10.25d,
+	y: 22.25d,
+	dependencies: [
+		"6f6e40a2"
+	],
+	tasks: [{
+		uid: "f60ab0cb",
+		type: "item",
+		items: [{
+			item: "extraplanets:ultimate_oxygen_compressor 1 4"
+		}]
+	}]
+}

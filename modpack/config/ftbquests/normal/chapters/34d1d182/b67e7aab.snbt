@@ -1,0 +1,12 @@
+{
+	x: 12.0d,
+	y: 17.5d,
+	tasks: [{
+		uid: "333c2aad",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:panel_lighting"
+		}],
+		ignore_damage: true
+	}]
+}
