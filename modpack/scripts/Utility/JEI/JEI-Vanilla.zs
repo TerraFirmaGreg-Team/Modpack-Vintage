@@ -603,7 +603,7 @@ macerator.findRecipe(2, [<minecraft:nether_brick_stairs:0>], null).remove();
 macerator.findRecipe(2, [<minecraft:stone_slab:6>], null).remove();
 
 // Lava * 250
-extractor.findRecipe(140, [<minecraft:netherrack:0>], null).remove();
+// extractor.findRecipe(140, [<minecraft:netherrack:0>], null).remove();
 
 // Nether Brick
 compressor.findRecipe(2, [<minecraft:netherbrick:0> * 4], null).remove();

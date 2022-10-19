@@ -36,3 +36,4 @@ for item in ItemsToRemove{
 }
 
 recipes.removeByMod("ae2fc");
+recipes.removeByMod("extracpus");

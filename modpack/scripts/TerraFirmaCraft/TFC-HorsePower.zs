@@ -3,22 +3,6 @@ import crafttweaker.item.IItemStack;
 import mods.horsepower.Grindstone;
 import mods.horsepower.ChoppingBlock;
 
-// --- Массивы
-val RemoveRecipesFromGrindstone as IItemStack[] = [
-	<tfc:powder/flux> * 4,
-    <minecraft:redstone> * 8,
-    <tfc:powder/fertilizer> * 8,
-    <minecraft:glowstone_dust> * 8
-];
-
-// --- Удаление рецептов
-
-// Дробилка
-for item in RemoveRecipesFromGrindstone {
-    Grindstone.remove(item);
-}
-
-furnace.remove(<minecraft:bread>);
 
 // --- Добавление рецептов
 

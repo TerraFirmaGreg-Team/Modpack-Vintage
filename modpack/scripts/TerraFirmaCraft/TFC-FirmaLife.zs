@@ -7,127 +7,7 @@ import mods.terrafirmacraft.Barrel;
 import mods.firmalife.Oven;
 import mods.firmalife.Drying;
 
-// --- Массивы
 
-val ItemsToRemove as IItemStack[] = [
-	<firmalife:climate_station>,
-    <firmalife:climate_station_1>,
-    <firmalife:climate_station_5>,
-    <firmalife:sprinkler>,
-    <firmalife:candle> * 6,
-    <firmalife:treated_lumber>,
-    <firmalife:jar>,
-    <firmalife:pizza_dough>
-];
-
-val RemoveFences as IItemStack[] = [
-    <firmalife:cinnamon_fence>,
-	<firmalife:cocoa_fence>,
-	<firmalife:banana_fence>,
-	<firmalife:cherry_fence>,
-	<firmalife:green_apple_fence>,
-	<firmalife:lemon_fence>,
-	<firmalife:olive_fence>,
-	<firmalife:orange_fence>,
-	<firmalife:peach_fence>,
-	<firmalife:plum_fence>,
-	<firmalife:red_apple_fence>
-];
-
-val RemoveFenceGates as IItemStack[] = [
-    <firmalife:cinnamon_fence_gate>,
-	<firmalife:cocoa_fence_gate>,
-	<firmalife:banana_fence_gate>,
-	<firmalife:cherry_fence_gate>,
-	<firmalife:green_apple_fence_gate>,
-	<firmalife:lemon_fence_gate>,
-	<firmalife:olive_fence_gate>,
-	<firmalife:orange_fence_gate>,
-	<firmalife:peach_fence_gate>,
-	<firmalife:plum_fence_gate>,
-	<firmalife:red_apple_fence_gate>
-];
-
-val RemoveDoors as IItemStack[] = [
-    <firmalife:cinnamon_door>,
-	<firmalife:cocoa_door>,
-	<firmalife:banana_door>,
-	<firmalife:cherry_door>,
-	<firmalife:green_apple_door>,
-	<firmalife:lemon_door>,
-	<firmalife:olive_door>,
-	<firmalife:orange_door>,
-	<firmalife:peach_door>,
-	<firmalife:plum_door>,
-	<firmalife:red_apple_door>
-];
-
-val RemoveTrapdoors as IItemStack[] = [
-    <firmalife:cinnamon_trapdoor>,
-	<firmalife:cocoa_trapdoor>,
-	<firmalife:banana_trapdoor>,
-	<firmalife:cherry_trapdoor>,
-	<firmalife:green_apple_trapdoor>,
-	<firmalife:lemon_trapdoor>,
-	<firmalife:olive_trapdoor>,
-	<firmalife:orange_trapdoor>,
-	<firmalife:peach_trapdoor>,
-	<firmalife:plum_trapdoor>,
-	<firmalife:red_apple_trapdoor>
-];
-
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in ItemsToRemove{
-    recipes.remove(item);
-}
-
-// Удаление рецептов
-for item in RemoveFences {
-    recipes.remove(item);
-}
-
-// Удаление рецептов
-for item in RemoveFenceGates {
-    recipes.remove(item);
-}
-
-// Удаление рецептов
-for item in RemoveDoors {
-    recipes.remove(item);
-}
-
-// Удаление рецептов
-for item in RemoveTrapdoors {
-    recipes.remove(item);
-}
-
-// Молотки
-Anvil.removeRecipe(<firmalife:bismuth_bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:black_bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:copper_mallet_head>);
-Anvil.removeRecipe(<firmalife:wrought_iron_mallet_head>);
-Anvil.removeRecipe(<firmalife:steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:black_steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:blue_steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:red_steel_mallet_head>);
-
-// Cooked Pizza
-Oven.removeRecipe(<firmalife:cooked_pizza>);
-
-// Treated Lumber
-Barrel.removeRecipe(<firmalife:treated_lumber>);
-
-// Бафф крафта крыши теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
-
-// Бафф крафта стен теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
-
-// Greenhouse Door
-Anvil.removeRecipe(<firmalife:greenhouse_door>);
 
 // --- Добавление рецептов
 
@@ -154,32 +34,32 @@ ItemRegistry.registerItemMetal(<firmalife:blue_steel_mallet>, "BLUE_STEEL", 144,
 ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, true);
 
 // Забор
-for i, RemoveFences in RemoveFences {
-    recipes.addShaped("tfg/firmalife/fence_" + i, RemoveFences * 8,
+for i, FirmalifeFences in FirmalifeFences {
+    recipes.addShaped("tfg/firmalife/fence_" + i, FirmalifeFences * 8,
         [[null, null, null],
         [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]],
         [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]]]);
 }
 
 // Калитки
-for i, RemoveFenceGates in RemoveFenceGates {
-    recipes.addShaped("tfg/firmalife/fencegate_" + i, RemoveFenceGates * 2,
+for i, FirmalifeFenceGates in FirmalifeFenceGates {
+    recipes.addShaped("tfg/firmalife/fencegate_" + i, FirmalifeFenceGates * 2,
         [[null, null, null],
         [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]],
         [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]]]);
 }
 
 // Двери
-for i, RemoveDoors in RemoveDoors {
-    recipes.addShaped("tfg/firmalife/door_" + i, RemoveDoors * 2,
+for i, FirmalifeDoors in FirmalifeDoors {
+    recipes.addShaped("tfg/firmalife/door_" + i, FirmalifeDoors * 2,
         [[TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
         [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
         [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null]]);
 }
 
 // Люки
-for i, RemoveTrapdoors in RemoveTrapdoors {
-    recipes.addShaped("tfg/firmalife/trapdoor_" + i, RemoveTrapdoors * 3,
+for i, FirmalifeTrapdoors in FirmalifeTrapdoors {
+    recipes.addShaped("tfg/firmalife/trapdoor_" + i, FirmalifeTrapdoors * 3,
         [[null, null, null],
         [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]],
         [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]]]);

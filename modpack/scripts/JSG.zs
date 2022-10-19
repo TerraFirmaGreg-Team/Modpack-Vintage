@@ -1,9 +1,6 @@
 import crafttweaker.item.IItemStack;
 
 
-// Удаление рецептов
-recipes.removeByMod("jsg");
-
 // --- Добавление рецептов
 
 // Transportrings_block

@@ -497,6 +497,12 @@ for paintBallLumen in paintBallsLumen {
 // --- PROJECTRED --- //////////////////////////////////
 ////////////////////////////////////////////////////////
 
+// --- Добавление
+
+
+
+// --- Удаление
+
 <ore:ingotCopper>.remove(<projectred-core:resource_item:100>);
 <ore:ingotTin>.remove(<projectred-core:resource_item:101>);
 <ore:ingotSilver>.remove(<projectred-core:resource_item:102>);

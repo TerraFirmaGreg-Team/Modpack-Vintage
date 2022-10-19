@@ -36,55 +36,6 @@ JEI.removeAndHide(<enderstorage:ender_pouch>);
 // OpenComputers
 JEI.removeAndHide(<opencomputers:disassembler>);
 
-val HorsePower as IItemStack[] = [
-    <horsepower:flour>,
-	<horsepower:dough> 
-];
-for item in HorsePower {
-    JEI.removeAndHide(item);
-}
-
-
-val TFCThings as IItemStack[] = [
-	<tfcthings:pigvil>,
-	<tfcthings:pigvil_black_steel>,
-	<tfcthings:pigvil_blue_steel>,
-	<tfcthings:pigvil_red_steel>,
-	<tfcthings:pigvil_purple_steel>,
-	<tfcthings:mold/unfired/prospectors_hammer_head>,
-	<tfcthings:mold/prospectors_hammer_head>,
-	<tfcthings:pig_iron_carrot>,
-	<tfcthings:black_steel_carrot>,
-	<tfcthings:blue_steel_carrot>,
-	<tfcthings:red_steel_carrot>,
-	// Crowns
-	<tfcthings:crown/gold_beryl>,
-	<tfcthings:crown/gold_agate>,
-	<tfcthings:crown/gold_jade>,
-	<tfcthings:crown/gold_jasper>,
-	<tfcthings:crown/gold_tourmaline>,
-	<tfcthings:crown/platinum_jasper>,
-	<tfcthings:crown/platinum_jade>,
-	<tfcthings:crown/platinum_agate>,
-	<tfcthings:crown/platinum_beryl>,
-	<tfcthings:crown/platinum_tourmaline>,
-	// Затачивалки (Временно)
-	<tfcthings:honing_steel>,
-	<tfcthings:honing_steel_diamond>,
-	<tfcthings:honing_steel_head>,
-	<tfcthings:honing_steel_head_diamond>,
-	<tfcthings:grindstone_quartz>,
-	<tfcthings:grindstone_steel>,
-	<tfcthings:grindstone_diamond>,
-	<tfcthings:diamond_grit>,
-	<tfcthings:grindstone_base>,
-	<tfcthings:whetstone>
-
-];
-for item in TFCThings {
-    JEI.removeAndHide(item);
-}
-
 
 
 // ArchitectureCraft
@@ -122,47 +73,6 @@ for item in TheOneProbe {
     JEI.removeAndHide(item);
 }
 
-val ProjectRed as IItemStack[] = [
-	<projectred-core:resource_item:100>,
-	<projectred-core:resource_item:101>,
-	<projectred-core:resource_item:102>,
-	<projectred-core:resource_item:103>,
-	<projectred-core:resource_item:104>,
-	<projectred-core:resource_item:105>,
-	<projectred-core:resource_item:200>,
-	<projectred-core:resource_item:201>,
-	<projectred-core:resource_item:202>,
-	<projectred-core:resource_item:250>,
-	<projectred-core:resource_item:251>,
-	<projectred-core:resource_item:252>,
-	<projectred-core:resource_item:300>,
-	<projectred-core:resource_item:301>,
-	<projectred-core:resource_item:310>,
-	<projectred-core:resource_item:311>,
-	<projectred-core:resource_item:312>,
-	<projectred-core:resource_item:320>,
-	<projectred-core:resource_item:341>,
-	<projectred-core:resource_item:342>,
-	<projectred-core:resource_item:400>,
-	<projectred-core:resource_item:401>,
-	<projectred-core:resource_item:402>,
-	<projectred-core:resource_item:410>,
-	<projectred-core:drawplate>,
-	<projectred-core:screwdriver>,
-	<projectred-fabrication:ic_chip:1>
-];
-for item in ProjectRed {
-    JEI.removeAndHide(item);
-}
-
-val FirmaLife as IItemStack[] = [
-	<firmalife:finished_pizza>,
-	<firmalife:cooked_pizza>
-];
-for item in FirmaLife {
-    JEI.removeAndHide(item);
-}
-
 val MicroblocksCBE as IItemStack[] = [
 	<microblockcbe:microblock:1>,
 	<microblockcbe:saw_stone>,
@@ -174,42 +84,6 @@ for item in MicroblocksCBE {
     JEI.removeAndHide(item);
 }
 
-val jsg as IItemStack[] = [
-	<jsg:naquadah_ore>,
-	<jsg:naquadah_ore_stone>,
-	<jsg:naquadah_shard>,
-	<jsg:naquadah_block>,
-	<jsg:naquadah_block_raw>,
-	<jsg:naquadah_alloy>,
-	<jsg:naquadah_alloy_raw>,
-	<jsg:trinium_ore>,
-	<jsg:trinium_block>,
-	<jsg:trinium_ingot>,
-	<jsg:titanium_ore>,
-	<jsg:titanium_block>,
-	<jsg:titanium_ingot>,
-	// Врата (Орлин)
-	<jsg:stargate_orlin_member_block>,
-	<jsg:stargate_orlin_base_block>,
-	// Universe wip
-	// <jsg:invisible_block>,
-	// <jsg:stargate_universe_base_block>,
-	// <jsg:stargate_universe_member_block:6>,
-	// <jsg:stargate_universe_member_block:14>,
-	// <jsg:stargate_orlin_member_block>,
-	// <jsg:stargate_orlin_base_block>,
-	// <jsg:universe_dialer>,
-	// <jsg:universe_ring_fragment>,
-	// <jsg:crystal_white>,
-	// <jsg:naquadah_alloy_raw>,
-	// <jsg:naquadah_alloy>,
-	// <jsg:crystal_glyph_universe>,
-	// <jsg:crystal_glyph_pegasus>
-];
-for item in jsg {
-    JEI.removeAndHide(item);
-}
-
 val Weather2 as IItemStack[] = [
 	<weather2:sand_layer_placeable>,
 	<weather2:weather_machine>,
@@ -217,14 +91,6 @@ val Weather2 as IItemStack[] = [
 	<weather2:weather_item>
 ];
 for item in Weather2 {
-    JEI.removeAndHide(item);
-}
-
-val TFCMedicinal as IItemStack[] = [
-	<tfcmedicinal:catalyst>.withTag({Fluid: {FluidName: "acuity_concoction", Amount: 100}}),
-	<tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "acuity_concoction", Amount: 100}})
-];
-for item in TFCMedicinal {
     JEI.removeAndHide(item);
 }
 

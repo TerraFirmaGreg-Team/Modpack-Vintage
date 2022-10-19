@@ -2815,6 +2815,62 @@ global TFC_Fence_Gates as IItemStack[] = [
 	// <tfc:wood/fence_gate/eucalyptus>
 ];
 
+global FirmalifeFences as IItemStack[] = [
+   <firmalife:cinnamon_fence>,
+	<firmalife:cocoa_fence>,
+	<firmalife:banana_fence>,
+	<firmalife:cherry_fence>,
+	<firmalife:green_apple_fence>,
+	<firmalife:lemon_fence>,
+	<firmalife:olive_fence>,
+	<firmalife:orange_fence>,
+	<firmalife:peach_fence>,
+	<firmalife:plum_fence>,
+	<firmalife:red_apple_fence>
+];
+
+global FirmalifeFenceGates as IItemStack[] = [
+   <firmalife:cinnamon_fence_gate>,
+	<firmalife:cocoa_fence_gate>,
+	<firmalife:banana_fence_gate>,
+	<firmalife:cherry_fence_gate>,
+	<firmalife:green_apple_fence_gate>,
+	<firmalife:lemon_fence_gate>,
+	<firmalife:olive_fence_gate>,
+	<firmalife:orange_fence_gate>,
+	<firmalife:peach_fence_gate>,
+	<firmalife:plum_fence_gate>,
+	<firmalife:red_apple_fence_gate>
+];
+
+global FirmalifeDoors as IItemStack[] = [
+   <firmalife:cinnamon_door>,
+	<firmalife:cocoa_door>,
+	<firmalife:banana_door>,
+	<firmalife:cherry_door>,
+	<firmalife:green_apple_door>,
+	<firmalife:lemon_door>,
+	<firmalife:olive_door>,
+	<firmalife:orange_door>,
+	<firmalife:peach_door>,
+	<firmalife:plum_door>,
+	<firmalife:red_apple_door>
+];
+
+global FirmalifeTrapdoors as IItemStack[] = [
+   <firmalife:cinnamon_trapdoor>,
+	<firmalife:cocoa_trapdoor>,
+	<firmalife:banana_trapdoor>,
+	<firmalife:cherry_trapdoor>,
+	<firmalife:green_apple_trapdoor>,
+	<firmalife:lemon_trapdoor>,
+	<firmalife:olive_trapdoor>,
+	<firmalife:orange_trapdoor>,
+	<firmalife:peach_trapdoor>,
+	<firmalife:plum_trapdoor>,
+	<firmalife:red_apple_trapdoor>
+];
+
 // - TFC Fence Log Array
 global TFC_Fence_Log as IItemStack[] = [
 	<tfcflorae:wood/fence_log/arrow_bamboo>,

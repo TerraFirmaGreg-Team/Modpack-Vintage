@@ -3,6 +3,7 @@
 import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 
+
 // --- Массивы
 
 val RemoveAndHide as IItemStack[] = [
@@ -232,8 +233,8 @@ val RemoveRecipeFurnace as IItemStack[] = [
 	<extraplanets:tier5_items:12>
 ];
 
-// --- Удаление рецептов
 
+// --- Удаление рецептов
 
 for item in RemoveAndHide {
 	JEI.removeAndHide(item);
