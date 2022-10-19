@@ -15,7 +15,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: zbeekman/EditorConfig-Action@v1.1.1
+      - name: EditorConfig-Action
+        uses: zbeekman/EditorConfig-Action@v1.1.1
 
       - name: EC Audit PR
         run: env = { ALWAYS_LINT_ALL_FILES = "false"}
