@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.siliciasand.title}",
-	x: -6.0d,
+	x: -4.25d,
 	y: -20.25d,
 	description: "{tfg.quests.primitive.siliciasand.subtitle}",
 	dependencies: [

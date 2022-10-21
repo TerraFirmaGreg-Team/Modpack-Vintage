@@ -1,0 +1,14 @@
+{
+	x: -30.0d,
+	y: -13.25d,
+	dependencies: [
+		"6cd61c21"
+	],
+	tasks: [{
+		uid: "0701ee2c",
+		type: "item",
+		items: [{
+			item: "firmalife:large_planter"
+		}]
+	}]
+}

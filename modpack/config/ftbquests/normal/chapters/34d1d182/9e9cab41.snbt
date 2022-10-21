@@ -1,5 +1,5 @@
 {
-	x: -9.25d,
+	x: -14.0d,
 	y: 19.75d,
 	description: "{tfg.quests.space.fuelloader.subtitle}",
 	tasks: [{

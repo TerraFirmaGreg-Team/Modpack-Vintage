@@ -1,5 +1,5 @@
 {
-	x: -2.5d,
+	x: -2.25d,
 	y: -16.25d,
 	description: "{tfg.quests.primitive.climatestation1.subtitle}",
 	dependencies: [

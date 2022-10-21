@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.space.painter.title}",
-	x: 12.5d,
-	y: 21.25d,
+	x: 5.75d,
+	y: 19.75d,
 	description: "{tfg.quests.space.painter.subtitle}",
 	optional: true,
 	tasks: [{

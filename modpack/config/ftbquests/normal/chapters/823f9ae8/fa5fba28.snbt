@@ -1,14 +1,14 @@
 {
-	x: -9.25d,
-	y: -16.0d,
+	x: -3.25d,
+	y: -17.25d,
 	dependencies: [
-		"a2970148"
+		"d5001736"
 	],
 	tasks: [{
-		uid: "785f921c",
+		uid: "8bf53da0",
 		type: "item",
 		items: [{
-			item: "architecturecraft:chisel"
+			item: "firmalife:watering_can"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

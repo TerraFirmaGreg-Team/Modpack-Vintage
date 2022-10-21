@@ -26,16 +26,22 @@
 		}]
 	},
 	{
-		uid: "0c04db7a",
+		uid: "7c336957",
+		type: "fluid",
+		fluid: "rubber"
+	}],
+	rewards: [{
+		uid: "6b86d1b2",
 		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
 			tag: {
-				FluidName: "rubber",
-				Amount: 1000
+				Fluid: {
+					FluidName: "rubber",
+					Amount: 1000
+				}
 			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		}
 	}]
 }
