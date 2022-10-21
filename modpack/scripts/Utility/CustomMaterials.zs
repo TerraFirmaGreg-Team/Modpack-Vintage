@@ -80,6 +80,7 @@ import mods.gregtech.material.Material;
 <material:carbon>.addFlags("generate_dense");
 
 
+
 // --- Исправление прочности и скорости копки для большего соответствия TFC
 for material in MaterialRegistry.getAllMaterials() {
     if (material.hasTools()) {

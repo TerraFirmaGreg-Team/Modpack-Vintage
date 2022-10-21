@@ -45,4 +45,4 @@ for item in RemoveAndHide {
    JEI.removeAndHide(item);
 }
 
-recipes.removeByMod("jsg");
+// recipes.removeByMod("jsg");

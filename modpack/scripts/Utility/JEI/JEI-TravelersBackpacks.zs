@@ -1,100 +1,12 @@
 #priority 980
 
+import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 
-import mods.jei.JEI;
 
-// Categories
-val hideCategory as string[] = [
-	"galacticraft.rocketT1",
-	"galacticraft.buggy",
-	"galacticraft.oxygencompressor",
-	"minecraft.anvil",
-	"appliedenergistics2.inscriber",
-	"tfcflorae.casting",
-	"ftbquests.quests",
-	"planetprogression.satellite.builder",
-	"mpestle",
-	"galacticraft.ingotcompressor",
-	"galacticraft.rocketT3",
-	"galacticraft.astroMiner",
-	"galacticraft.rocketT2",
-	"galacticraft.cargoRocket"
-];
-for item in hideCategory {
-	JEI.hideCategory(item);
-}
+// --- Массивы
 
-// Скрытие предметов и удаление рецептов верстака
-
-// CatWalks
-JEI.removeAndHide(<catwalks:stair>);
-
-// EnderStorage
-JEI.removeAndHide(<enderstorage:ender_pouch>);
-
-// OpenComputers
-JEI.removeAndHide(<opencomputers:disassembler>);
-
-
-
-// ArchitectureCraft
-val ArchitectureCraft as IItemStack[] = [
-  <architecturecraft:sawblade>,
-	<architecturecraft:largepulley> 
-];
-for item in ArchitectureCraft {
-    JEI.removeAndHide(item);
-}
-
-// FTB
-val FTB as IItemStack[] = [
-  <ftbquests:chest>,
-	<ftbquests:barrier>,
-	<ftbquests:detector:1>,
-	<ftbquests:detector>,
-	<ftbquests:reward_collector>,
-	<ftbquests:loot_crate_opener>,
-	<ftbquests:loot_crate_storage>,
-	<itemfilters:filter>
-];
-for item in FTB {
-    JEI.removeAndHide(item);
-}
-
-val TheOneProbe as IItemStack[] = [
-  <theoneprobe:creativeprobe>,
-	<theoneprobe:probenote>,
-	<theoneprobe:diamond_helmet_probe>,
-	<theoneprobe:gold_helmet_probe>,
-	<theoneprobe:iron_helmet_probe>
-];
-for item in TheOneProbe {
-    JEI.removeAndHide(item);
-}
-
-val MicroblocksCBE as IItemStack[] = [
-	<microblockcbe:microblock:1>,
-	<microblockcbe:saw_stone>,
-	<microblockcbe:saw_iron>,
-	<microblockcbe:saw_diamond>,
-	<microblockcbe:stone_rod>
-];
-for item in MicroblocksCBE {
-    JEI.removeAndHide(item);
-}
-
-val Weather2 as IItemStack[] = [
-	<weather2:sand_layer_placeable>,
-	<weather2:weather_machine>,
-	<weather2:pocket_sand>,
-	<weather2:weather_item>
-];
-for item in Weather2 {
-    JEI.removeAndHide(item);
-}
-
-val TravelersBackpacks as IItemStack[] = [
+val RemoveAndHide as IItemStack[] = [
 	<travelersbackpack:travelers_backpack:76>,
 	<travelersbackpack:travelers_backpack:75>,
 	<travelersbackpack:travelers_backpack:74>,
@@ -174,8 +86,23 @@ val TravelersBackpacks as IItemStack[] = [
 	<travelersbackpack:backpack_tank>,
 	<travelersbackpack:sleeping_bag_bottom>,
 ];
-for item in TravelersBackpacks {
-    JEI.removeAndHide(item);
+
+val RemoveRecipe as IItemStack[] = [
+   <travelersbackpack:hose_nozzle>,
+   <travelersbackpack:hose>,
+];
+
+// --- Удаление рецептов
+
+for item in RemoveAndHide {
+	JEI.removeAndHide(item);
 }
-// BuildingGadgets
-JEI.removeAndHide(<buildinggadgets:constructionpastecontainercreative>);
+
+// Удаление рецептов
+for item in RemoveRecipe {
+   recipes.remove(item);
+}
+
+// Поименное удаление рецептов
+recipes.removeByRecipeName("travelersbackpack:travelers_backpack_standard");
+

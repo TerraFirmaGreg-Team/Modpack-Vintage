@@ -1,11 +1,6 @@
 import crafttweaker.item.IItemStack;
 
 
-// --- Удаление рецептов
-
-// Удаление рецептов
-recipes.removeByMod("architecturecraft");
-
 // --- Добавление рецептов
 
 // Arch Table

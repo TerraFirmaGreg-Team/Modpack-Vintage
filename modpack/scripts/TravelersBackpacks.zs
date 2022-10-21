@@ -1,21 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val RemoveWorkbenchRecipes as IItemStack[] = [
-    <travelersbackpack:hose_nozzle>,
-    <travelersbackpack:hose>,
-];
-
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in RemoveWorkbenchRecipes {
-    recipes.remove(item);
-}
-
-// Поименное удаление рецептов
-recipes.removeByRecipeName("travelersbackpack:travelers_backpack_standard");
 
 // --- Добавление рецептов
 
