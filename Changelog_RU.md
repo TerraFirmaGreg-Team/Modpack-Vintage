@@ -1,6 +1,6 @@
 # Список изменений
 
-## Version R4.1.5 - 23.10.2022
+## Version R4.1.5a - 23.10.2022
 
 ### Исправления модпака
 
@@ -132,7 +132,6 @@
 - Fancymenu
 - CustomSkinLoader
 - CraftTweaker2
-- Bogosorter
 
 ### Удаленные моды
 
