@@ -2,7 +2,7 @@
   {
     "id": 1659408964299,
     "amount": 1,
-    "price": 50,
+    "price": 500,
     "discount": 10,
     "itemstack": {
       "registry_name": "extraplanets:enviro_emergency_kit",
