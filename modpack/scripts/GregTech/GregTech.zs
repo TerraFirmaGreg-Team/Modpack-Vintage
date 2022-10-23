@@ -426,7 +426,7 @@ chemical_reactor.recipeBuilder()
 chemical_reactor.recipeBuilder()
     .inputs([<metaitem:dustDiamond> * 2, <metaitem:dustIridium> * 2])
     .fluidInputs([<liquid:sulfur_dioxide> * 6000, <liquid:carbon_monoxide> * 8000, <liquid:rocket_fuel> * 1000])
-    .outputs([<metaitem:dustNetherStar> * 1])
+    .outputs(<metaitem:dustNetherStar>)
     .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
@@ -676,8 +676,3 @@ compressor.recipeBuilder()
     .inputs([<metaitem:plateCarbon> * 9])
     .outputs([<metaitem:plateDenseCarbon>])
     .duration(504).EUt(96).buildAndRegister();
-
-// Щипцы из дерева
-recipes.addShaped("tfg/gt/tongs_wood", <tfgmod:meta_tool>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), 
-    [[<ore:stickWood>, null], 
-    [<ore:string>, <ore:stickWood>]]);
