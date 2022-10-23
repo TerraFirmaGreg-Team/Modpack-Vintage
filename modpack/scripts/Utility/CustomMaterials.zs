@@ -78,7 +78,9 @@ import mods.gregtech.material.Material;
 <material:americium>.addFlags("generate_dense");
 <material:naquadria>.addFlags("generate_dense");
 <material:carbon>.addFlags("generate_dense");
-
+<material:trinaquadalloy>.addFlags("generate_dense");
+<material:enriched_naquadah_trinium_europium_duranide>.addFlags("generate_dense");
+<material:trinium>.addFlags("generate_dense");
 
 
 // --- Исправление прочности и скорости копки для большего соответствия TFC
