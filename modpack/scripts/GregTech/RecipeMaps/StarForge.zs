@@ -7,7 +7,7 @@ import mods.gregtech.recipe.FactoryRecipeMap;
 // Создание карты рецептов для звездной кузни
 val star_forge as RecipeMap = FactoryRecipeMap.start("star_forge")
   .minInputs(1)
-  .maxInputs(9)
+  .maxInputs(12)
   .minOutputs(1)
   .maxOutputs(4)
   .minFluidInputs(0)
