@@ -133,41 +133,46 @@ val materialEngine as IItemStack[] = [
 
 // --- Добавление рецептов
 
-// // Кислородные баллоны
-// for i in 0 .. 16 {
-// // Обесцвечивание
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.light.colors>)
-//       .fluidInputs([<liquid:chlorine> * 144])
-//       .outputs([<extraplanets:oxygen_tank_light_full_white>])
-//       .duration(8).EUt(480).buildAndRegister();
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.med.colors>)
-//       .fluidInputs([<liquid:chlorine> * 144])
-//       .outputs([<extraplanets:oxygen_tank_med_full_white>])
-//       .duration(8).EUt(480).buildAndRegister();
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.heavy.colors>)
-//       .fluidInputs([<liquid:chlorine> * 144])
-//       .outputs([<extraplanets:oxygen_tank_heavy_full_white>])
-//       .duration(8).EUt(480).buildAndRegister();
-// // Окрашивание
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.light>)
-//       .fluidInputs([colorLiquid[i] * 18])
-//       .outputs([oxygenTankLight[i]])
-//       .duration(20).EUt(7).buildAndRegister();
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.med>)
-//       .fluidInputs([colorLiquid[i] * 18])
-//       .outputs([oxygenTankMed[i]])
-//       .duration(20).EUt(7).buildAndRegister();
-//    chemical_bath.recipeBuilder()
-//       .inputs(<ore:gc.oxygen.tank.heavy>)
-//       .fluidInputs([colorLiquid[i] * 18])
-//       .outputs([oxygenTankHeavy[i]])
-//       .duration(20).EUt(7).buildAndRegister();
-// }
+<extraplanets:thermal_cloth>.maxStackSize = 64;
+<extraplanets:thermal_cloth:1>.maxStackSize = 64;
+<extraplanets:thermal_cloth:2>.maxStackSize = 64;
+
+
+// Кислородные баллоны
+// Обесцвечивание
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.light.colors>)
+      .fluidInputs([<liquid:chlorine> * 144])
+      .outputs([<extraplanets:oxygen_tank_light_full_white>])
+      .duration(8).EUt(480).buildAndRegister();
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.med.colors>)
+      .fluidInputs([<liquid:chlorine> * 144])
+      .outputs([<extraplanets:oxygen_tank_med_full_white>])
+      .duration(8).EUt(480).buildAndRegister();
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.heavy.colors>)
+      .fluidInputs([<liquid:chlorine> * 144])
+      .outputs([<extraplanets:oxygen_tank_heavy_full_white>])
+      .duration(8).EUt(480).buildAndRegister();
+// Окрашивание
+for i in 0 .. 16 {
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.light>)
+      .fluidInputs([colorLiquid[i] * 18])
+      .outputs([oxygenTankLight[i]])
+      .duration(20).EUt(7).buildAndRegister();
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.med>)
+      .fluidInputs([colorLiquid[i] * 18])
+      .outputs([oxygenTankMed[i]])
+      .duration(20).EUt(7).buildAndRegister();
+   chemical_bath.recipeBuilder()
+      .inputs(<ore:gc.oxygen.tank.heavy>)
+      .fluidInputs([colorLiquid[i] * 18])
+      .outputs([oxygenTankHeavy[i]])
+      .duration(20).EUt(7).buildAndRegister();
+}
 
 // Легкий
 assembler.recipeBuilder()
@@ -295,9 +300,20 @@ assembler.recipeBuilder()
    .property("cleanroom", "cleanroom")
    .duration(1000).EUt(31123).buildAndRegister();
 
+// Модуль отсутствия повреждения при падении
+assembler.recipeBuilder()
+   .circuit(3)
+   .inputs( 
+      <extraplanets:tier2_un_prepared_space_suit_boots> * 4,
+      <extraplanets:gravity_controller>,
+      <extraplanets:module_items:2>)
+   .outputs(<extraplanets:module_items>)
+   .property("cleanroom", "cleanroom")
+   .duration(1000).EUt(31123).buildAndRegister();
+
 // Прочная ткань
 implosion_compressor.recipeBuilder()
-	.inputs(<ore:wool> * 4)
+	.inputs(<metaitem:platePolycaprolactam> * 4)
 	.outputs(<extraplanets:cloth>)
 	.property("explosives", 2)
 	.duration(20).EUt(380).buildAndRegister();
