@@ -1,6 +1,6 @@
 # List of changes
 
-## Version R4.1.5 - 10/23/2022
+## Version R4.1.5a - 10/23/2022
 
 ### Modpack fixes
 
@@ -14,7 +14,7 @@
 - Added craft for moon buggy.
 - Added craft for Mars and Venus rovers.
 - Fixed recipe for wire drawing bench and tongs.
-- Changed quests for the planets, now you need to visit the planet personally, and not just touch the pebbles from there.
+- Changed quests for planets, now you need to visit the planet in person, and not just touch the pebbles from there.
 - Fixed names for some planets not displaying correctly.
 - Added quests for cheesemakers, in the primitive era.
 - Added quest for Sweet Torch and Light Dust Torch.
@@ -37,9 +37,9 @@
 - Grass spawn chance reduced from 0.08 to 0.002.
 - Added crafting of Galacticraft magnetic workbench.
 - Changed the textures of the WaterFlasks mod.
-- Changed the texture of the light dust torch and the Galacticraft parachute crate, which now looks more high-tech.
+- Changed the texture of the light dust torch and the Galacticraft parachute box, which now looks more high-tech.
 - Added or changed the crafting of all Galacticraft oxygen tanks.
-- Added craft for Galacticraft sensor glasses, which will help detect ore at close range, about 5-7 blocks, monsters, as well as gaps in the hemitization of the space base.
+- Added craft for Galacticraft sensor glasses, which will help to detect ore at close range, about 5-7 blocks, monsters, as well as gaps in the sealing of the space base.
 - Added crafting for a geothermal generator that can be used to generate power on Venus.
 - Added craft for the astronomical miner, you can have them, maximum 2 per player.
 - Now the northern sowing will appear in the sky.
@@ -52,7 +52,7 @@
 - Installed SmoothFont, which will allow you to customize the font for yourself.
 - Things do not drop out of the workbench when it is closed, only when it is broken, and the craft is also visible on the workbench itself.
 - Now available in HEI:
-- History View: The ingredient you have viewed for a recipe will be displayed in the bottom right corner.
+  - History View: The ingredient you have viewed for a recipe will be displayed in the bottom right corner.
   - Recording Recipes: When you add recipe output to the HEI tab, the current recipe will be written, and opening a recipe through the HEI tab will open the recorded recipe.
   - Recipe Preview: Hold down the Ctrl key to display the recipe preview in the recipe tab.
   - Recipe Transfer: You can press ctrl + w to easily transfer a recipe from the recipe bookmark.
@@ -75,12 +75,12 @@
 - Changed the texture of smoke and steam. Now it's like in 1.18
 - Fixed barrel gui texture.
 - Added energy levels for opening and maintaining gates, by planets.
-- Now at the first spawn, a window appears that allows the player to choose the climate in which he wants to appear when entering the world.
+- Now at the first spawn, a window will appear that allows the player to choose the climate in which he wants to appear when entering the world.
 - Enabled compatibility between ProjectRed and OC.
 - Replaced the mod on the graves, yes, again, only now your corpse will appear when you die and will contain all the items that you had in your inventory. You can access items by right-clicking a corpse. When you get all the items, the corpse will disappear. After 1 hour, the corpse will turn into a skeleton, indicating that it has existed longer. This will not change the functionality of the corpse.
 - Chance of dropping gems when digging a stone changed from 0.008 -> 0.003875
 - The number of heat sources acting on the player has changed 4 -> 10
-- Enabled spawn of parrots.
+- Parrot spawn is enabled.
 - Frequency of generation of underground creepers changed 1.7 -> 5.0
 - Hanging plant frequency changed 1.7 -> 1.0
 - Frequency of generation of underground hanging vines changed 1.5 -> 1.0
@@ -102,7 +102,7 @@
 - Added crafting for diaphragms and stargate shield.
 - Changed the crafting of transport rings and components for it.
 - Added and changed the crafting of all three stargates.
-- To earn coins, you can convert not only gregtech coins, but also wood, with the /convert command.
+- To earn coins, you can now convert not only gregtech coins, but also wood, with the /convert command.
 
 ### New mods
 
@@ -132,7 +132,6 @@
 - Fancymenu
 - CustomSkinLoader
 - CraftTweaker2
-- Bogosorter
 
 ### Removed mods
 
