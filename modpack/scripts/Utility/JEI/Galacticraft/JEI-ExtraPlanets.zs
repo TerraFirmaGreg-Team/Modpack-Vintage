@@ -85,7 +85,9 @@ val RemoveAndHide as IItemStack[] = [
 	<extraplanets:chocolate_bar>,
 	<extraplanets:caramel_bar>,
 	<extraplanets:advanced_launch_pad_full>,
-	<extraplanets:canned_food:*>
+	<extraplanets:canned_food:*>,
+	<extraplanets:candy_blocks:*>,
+	<extraplanets:candy_blocks_horizontal:*>
 ];
 
 val RemoveRecipe as IItemStack[] = [
@@ -176,56 +178,12 @@ val RemoveRecipe as IItemStack[] = [
    <extraplanets:tier2_space_suit_jetpack_chest>,
    <extraplanets:tier3_space_suit_jetpack_chest>,
    <extraplanets:tier4_space_suit_jetpack_chest>,
-	<extraplanets:oxygen_tank_light_full_white>,
-	<extraplanets:oxygen_tank_light_full_orange>,
-	<extraplanets:oxygen_tank_light_full_magenta>,
-	<extraplanets:oxygen_tank_light_full_light_blue>,
-	<extraplanets:oxygen_tank_light_full_yellow>,
-	<extraplanets:oxygen_tank_light_full_pink>,
-	<extraplanets:oxygen_tank_light_full_gray>,
-	<extraplanets:oxygen_tank_light_full_light_gray>,
-	<extraplanets:oxygen_tank_light_full_cyan>,
-	<extraplanets:oxygen_tank_light_full_purple>,
-	<extraplanets:oxygen_tank_light_full_blue>,
-	<extraplanets:oxygen_tank_light_full_brown>,
-	<extraplanets:oxygen_tank_light_full_green>,
-	<extraplanets:oxygen_tank_light_full_red>,
-	<extraplanets:oxygen_tank_light_full_black>,
-	<extraplanets:oxygen_tank_med_full_white>,
-	<extraplanets:oxygen_tank_med_full_magenta>,
-	<extraplanets:oxygen_tank_med_full_light_blue>,
-	<extraplanets:oxygen_tank_med_full_yellow>,
-	<extraplanets:oxygen_tank_med_full_lime>,
-	<extraplanets:oxygen_tank_med_full_pink>,
-	<extraplanets:oxygen_tank_med_full_gray>,
-	<extraplanets:oxygen_tank_med_full_light_gray>,
-	<extraplanets:oxygen_tank_med_full_cyan>,
-	<extraplanets:oxygen_tank_med_full_purple>,
-	<extraplanets:oxygen_tank_med_full_blue>,
-	<extraplanets:oxygen_tank_med_full_brown>,
-	<extraplanets:oxygen_tank_med_full_green>,
-	<extraplanets:oxygen_tank_med_full_red>,
-	<extraplanets:oxygen_tank_med_full_black>,
-	<extraplanets:oxygen_tank_heavy_full_white>,
-	<extraplanets:oxygen_tank_heavy_full_orange>,
-	<extraplanets:oxygen_tank_heavy_full_magenta>,
-	<extraplanets:oxygen_tank_heavy_full_light_blue>,
-	<extraplanets:oxygen_tank_heavy_full_yellow>,
-	<extraplanets:oxygen_tank_heavy_full_lime>,
-	<extraplanets:oxygen_tank_heavy_full_pink>,
-	<extraplanets:oxygen_tank_heavy_full_gray>,
-	<extraplanets:oxygen_tank_heavy_full_light_gray>,
-	<extraplanets:oxygen_tank_heavy_full_cyan>,
-	<extraplanets:oxygen_tank_heavy_full_purple>,
-	<extraplanets:oxygen_tank_heavy_full_blue>,
-	<extraplanets:oxygen_tank_heavy_full_brown>,
-	<extraplanets:oxygen_tank_heavy_full_green>,
-	<galacticraftcore:oxygen_tank_heavy_full>,
-	<extraplanets:oxygen_tank_heavy_full_black>,
 	<extraplanets:oxygen_tank_very_heavy_full>,
 	<extraplanets:oxygen_tank_extremely_heavy_full>,
 	<extraplanets:gravity_controller>,
-	<extraplanets:module_items:*>
+	<extraplanets:module_items:*>,
+	<extraplanets:oxygen_tank_extremely_heavy_full:9000>,
+	<extraplanets:oxygen_tank_very_heavy_full:7200>
 ];
 
 val RemoveRecipeFurnace as IItemStack[] = [
@@ -233,6 +191,53 @@ val RemoveRecipeFurnace as IItemStack[] = [
 	<extraplanets:tier5_items:12>
 ];
 
+val RemoveRecipesByName as string[] = [
+	"extraplanets:oxygen_tank_light_full_white",
+	"extraplanets:oxygen_tank_light_full_orange",
+	"extraplanets:oxygen_tank_light_full_magenta",
+	"extraplanets:oxygen_tank_light_full_light_blue",
+	"extraplanets:oxygen_tank_light_full_yellow",
+	"extraplanets:oxygen_tank_light_full_pink",
+	"extraplanets:oxygen_tank_light_full_gray",
+	"extraplanets:oxygen_tank_light_full_light_gray",
+	"extraplanets:oxygen_tank_light_full_cyan",
+	"extraplanets:oxygen_tank_light_full_purple",
+	"extraplanets:oxygen_tank_light_full_blue",
+	"extraplanets:oxygen_tank_light_full_brown",
+	"extraplanets:oxygen_tank_light_full_green",
+	"extraplanets:oxygen_tank_light_full_red",
+	"extraplanets:oxygen_tank_light_full_black",
+	"extraplanets:oxygen_tank_med_full_white",
+	"extraplanets:oxygen_tank_med_full_magenta",
+	"extraplanets:oxygen_tank_med_full_light_blue",
+	"extraplanets:oxygen_tank_med_full_yellow",
+	"extraplanets:oxygen_tank_med_full_lime",
+	"extraplanets:oxygen_tank_med_full_pink",
+	"extraplanets:oxygen_tank_med_full_gray",
+	"extraplanets:oxygen_tank_med_full_light_gray",
+	"extraplanets:oxygen_tank_med_full_cyan",
+	"extraplanets:oxygen_tank_med_full_purple",
+	"extraplanets:oxygen_tank_med_full_blue",
+	"extraplanets:oxygen_tank_med_full_brown",
+	"extraplanets:oxygen_tank_med_full_green",
+	"extraplanets:oxygen_tank_med_full_red",
+	"extraplanets:oxygen_tank_med_full_black",
+	"extraplanets:oxygen_tank_heavy_full_white",
+	"extraplanets:oxygen_tank_heavy_full_orange",
+	"extraplanets:oxygen_tank_heavy_full_magenta",
+	"extraplanets:oxygen_tank_heavy_full_light_blue",
+	"extraplanets:oxygen_tank_heavy_full_yellow",
+	"extraplanets:oxygen_tank_heavy_full_lime",
+	"extraplanets:oxygen_tank_heavy_full_pink",
+	"extraplanets:oxygen_tank_heavy_full_gray",
+	"extraplanets:oxygen_tank_heavy_full_light_gray",
+	"extraplanets:oxygen_tank_heavy_full_cyan",
+	"extraplanets:oxygen_tank_heavy_full_purple",
+	"extraplanets:oxygen_tank_heavy_full_blue",
+	"extraplanets:oxygen_tank_heavy_full_brown",
+	"extraplanets:oxygen_tank_heavy_full_green",
+	"extraplanets:oxygen_tank_heavy_full_black"
+];
 
 // --- Удаление рецептов
 
@@ -246,4 +251,8 @@ for item in RemoveRecipe{
 
 for item in RemoveRecipeFurnace{
 	furnace.remove(item);
+}
+
+for item in RemoveRecipesByName{
+	recipes.removeByRecipeName(item);
 }
