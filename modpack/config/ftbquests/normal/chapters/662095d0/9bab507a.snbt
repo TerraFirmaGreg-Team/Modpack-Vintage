@@ -16,6 +16,7 @@
 		"1b13b5f1",
 		"1950edbf"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "5e3a64a8",
 		type: "fluid",

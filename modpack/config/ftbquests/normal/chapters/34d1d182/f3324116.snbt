@@ -1,14 +1,14 @@
 {
-	x: -6.0d,
-	y: 13.0d,
+	x: -5.0d,
+	y: 14.0d,
 	dependencies: [
 		"f0d8edbf"
 	],
 	tasks: [{
-		uid: "823dac19",
+		uid: "7df2f114",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:basic_item 1 19"
+			item: "galacticraftcore:oxygen_gear"
 		}]
 	}]
 }

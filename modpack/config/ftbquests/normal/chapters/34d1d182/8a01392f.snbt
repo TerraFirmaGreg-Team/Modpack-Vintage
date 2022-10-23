@@ -1,8 +1,12 @@
 {
 	title: "{tfg.quests.space.cosmicbed.title}",
-	x: -1.5d,
-	y: 17.25d,
+	x: 4.0d,
+	y: 2.75d,
 	description: "{tfg.quests.space.cosmicbed.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
 	optional: true,
 	tasks: [{
 		uid: "bb05991a",

@@ -1,13 +1,12 @@
 {
-	title: "{tfg.quests.space.tier1spacesuit.title}",
-	x: -5.25d,
-	y: 15.25d,
-	description: "{tfg.quests.space.tier1spacesuit.subtitle}",
+	x: -8.0d,
+	y: 12.0d,
+	hide_dependency_lines: true,
 	dependencies: [
-		"f0257b6e"
+		"f7c7757a"
 	],
 	tasks: [{
-		uid: "2d1aa1d9",
+		uid: "eb61302e",
 		type: "item",
 		items: [{
 			id: "extraplanets:tier1_space_suit_helmet",
@@ -18,15 +17,10 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "9c25f694",
+		uid: "33122f89",
 		type: "item",
 		items: [{
 			id: "extraplanets:tier1_space_suit_chest",
-			Damage: 100s,
-			tag: {}
-		},
-		{
-			id: "extraplanets:tier1_space_suit_jetpack_chest",
 			Damage: 100s,
 			tag: {}
 		}],
@@ -34,7 +28,7 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "7ad7be4b",
+		uid: "3b2af3ad",
 		type: "item",
 		items: [{
 			id: "extraplanets:tier1_space_suit_legings",
@@ -45,15 +39,10 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "ec32ef15",
+		uid: "f680c3bd",
 		type: "item",
 		items: [{
 			id: "extraplanets:tier1_space_suit_boots",
-			Damage: 100s,
-			tag: {}
-		},
-		{
-			id: "extraplanets:tier1_space_suit_gravity_boots",
 			Damage: 100s,
 			tag: {}
 		}],

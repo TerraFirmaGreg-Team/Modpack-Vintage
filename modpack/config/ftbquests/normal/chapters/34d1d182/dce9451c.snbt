@@ -1,7 +1,10 @@
 {
-	x: -8.25d,
-	y: 17.25d,
+	x: -5.0d,
+	y: 12.0d,
 	description: "{tfg.quests.space.shield.subtitle}",
+	dependencies: [
+		"f0d8edbf"
+	],
 	optional: true,
 	tasks: [{
 		uid: "1186aab3",
