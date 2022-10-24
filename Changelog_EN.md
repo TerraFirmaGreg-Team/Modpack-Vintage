@@ -25,10 +25,10 @@
 - Added recipe for cutting knife AE2, you need it to rename interfaces in the world, you can also rename them in vanilla anvil. This knife is no longer capable of anything.
 - Crafting a flux block now requires 9 crystals instead of 4.
 - Sunflower oil is now made in the extractor instead of the compressor.
-- Added or changed solar panel recipes from Basic to Ultimate.
-- Added or changed fuel loader recipes from Basic to Ultimate.
-- Added or changed oxygen compressor recipes from Basic to Ultimate.
-- Added or changed recipes for oxygen decompressor from basic to ultimate.
+- Added and changed solar panel recipes from Basic to Ultimate.
+- Added and changed fuel loader recipes from Basic to Ultimate.
+- Added and changed oxygen compressor recipes from Basic to Ultimate.
+- Added and changed recipes for oxygen decompressor from basic to ultimate.
 - Added recipe for base decontaminator block.
 - Added recipe for Chromatic Applicator Block.
 - Replaced mod EnderStorage, fork, with support.
@@ -38,7 +38,7 @@
 - Added crafting of Galacticraft magnetic workbench.
 - Changed the textures of the WaterFlasks mod.
 - Changed the texture of the light dust torch and the Galacticraft parachute box, which now looks more high-tech.
-- Added or changed the crafting of all Galacticraft oxygen tanks.
+- Added and changed the crafting of all Galacticraft oxygen tanks.
 - Added craft for Galacticraft sensor glasses, which will help to detect ore at close range, about 5-7 blocks, monsters, as well as gaps in the sealing of the space base.
 - Added crafting for a geothermal generator that can be used to generate power on Venus.
 - Added craft for the astronomical miner, you can have them, maximum 2 per player.
