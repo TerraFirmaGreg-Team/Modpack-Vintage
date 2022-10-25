@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: 7.75d,
+	dependencies: [
+		"49e91046"
+	],
+	tasks: [{
+		uid: "f5de5ad6",
+		type: "item",
+		items: [{
+			item: "firmalife:candle"
+		}]
+	}]
+}

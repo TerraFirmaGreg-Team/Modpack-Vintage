@@ -1,11 +1,10 @@
 {
 	title: "{tfg.quests.primitive.juteropes.title}",
-	x: -22.75d,
-	y: 6.0d,
+	x: -27.25d,
+	y: 5.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.juteropes.subtitle}",
 	dependencies: [
-		"bf82a628",
 		"137e3b1c"
 	],
 	tasks: [{

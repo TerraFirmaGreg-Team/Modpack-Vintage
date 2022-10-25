@@ -1,0 +1,14 @@
+{
+	x: -24.25d,
+	y: 5.0d,
+	dependencies: [
+		"d6afd299"
+	],
+	tasks: [{
+		uid: "abb3cc09",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/flax_fiber"
+		}]
+	}]
+}

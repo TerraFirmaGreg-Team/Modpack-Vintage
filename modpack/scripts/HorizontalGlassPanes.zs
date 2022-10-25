@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 
 // --- Массивы
 
-val Horizontal_Glass_Panes_Array as IItemStack[] = [
+val horizontalGlassPanesArray as IItemStack[] = [
     <hgp:hgpcoloredpane>,
     <hgp:hgpcoloredpane:1>,
     <hgp:hgpcoloredpane:2>,
@@ -23,7 +23,7 @@ val Horizontal_Glass_Panes_Array as IItemStack[] = [
 
 // --- Удаление рецептов
 
-for item in Horizontal_Glass_Panes_Array {
+for item in horizontalGlassPanesArray {
     recipes.remove(item);
 }
 
@@ -34,39 +34,35 @@ recipes.remove(<hgp:hgppane>);
 // Чистая панель -> Чистая горизонтальная панель
 recipes.addShapeless(<hgp:hgppane>, [<minecraft:glass_pane>]);
 assembler.recipeBuilder()
-	.inputs(<minecraft:glass_pane>)
 	.circuit(20)
+	.inputs(<minecraft:glass_pane>)
 	.outputs(<hgp:hgppane>)
 	.duration(16).EUt(2).buildAndRegister();
 
 // Крашенная панель 1х -> 1 Крашенная горизонтальная панель 1х
-for i, Horizontal_Glass_Panes_Array in Horizontal_Glass_Panes_Array {
+for i, horizontalGlassPanesArray in horizontalGlassPanesArray {
     
     // Верстак
-    recipes.addShapeless(Horizontal_Glass_Panes_Array, [Glass_Panes_Array[i]]);
+    recipes.addShapeless(horizontalGlassPanesArray, [glassPanesArray[i]]);
 
     // Ассемблер
     assembler.recipeBuilder()
-    	.inputs([Glass_Panes_Array[i]])
 		.circuit(20)
-    	.outputs(Horizontal_Glass_Panes_Array)
-    	.duration(16).EUt(2).buildAndRegister();
-}
+        .inputs([glassPanesArray[i]])
+        .outputs(horizontalGlassPanesArray)
+        .duration(16).EUt(2).buildAndRegister();
 
-// Хим.ванна, наложение цвета на панели
-for i, Horizontal_Glass_Panes_Array in Horizontal_Glass_Panes_Array {
+    // Хим.ванна, наложение цвета на панели
     chemical_bath.recipeBuilder()
-    	.inputs([<hgp:hgppane>])
+        .inputs([<hgp:hgppane>])
         .fluidInputs([colorLiquid[i] * 18])
-    	.outputs(Horizontal_Glass_Panes_Array)
-    	.duration(20).EUt(7).buildAndRegister();
-}
+        .outputs(horizontalGlassPanesArray)
+        .duration(20).EUt(7).buildAndRegister();
 
-// Хим.ванна, очистка цвета с панелей
-for item in Horizontal_Glass_Panes_Array {
+    // Хим.ванна, очистка цвета с панелей
     chemical_bath.recipeBuilder()
-    	.inputs([item])
-        .fluidInputs([<liquid:chlorine> * 20])
-    	.outputs(<hgp:hgppane>)
-    	.duration(400).EUt(2).buildAndRegister();
+        .inputs([horizontalGlassPanesArray])
+        .fluidInputs([<liquid:chlorine> * 144])
+        .outputs(<hgp:hgppane>)
+        .duration(400).EUt(2).buildAndRegister();
 }

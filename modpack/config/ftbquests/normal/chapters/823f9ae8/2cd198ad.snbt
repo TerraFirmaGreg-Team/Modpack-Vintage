@@ -1,0 +1,14 @@
+{
+	x: -25.25d,
+	y: 5.0d,
+	dependencies: [
+		"bc418a5a"
+	],
+	tasks: [{
+		uid: "c01a4187",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/sisal_fiber"
+		}]
+	}]
+}

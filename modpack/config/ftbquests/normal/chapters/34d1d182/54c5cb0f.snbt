@@ -1,22 +1,26 @@
 {
-	title: "Кеплер - 22b",
+	title: "{planet.kepler22b}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/kepler22b.png"
 		}
 	},
-	x: 30.0d,
+	x: 40.5d,
 	y: 6.0d,
+	description: "{tfg.quests.space.end1.title}",
+	text: [
+		"{tfg.quests.space.end1.subtitle}"
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"7db5445d"
 	],
+	size: 2.0d,
 	tasks: [{
-		uid: "bb8ad5f0",
-		type: "item",
-		items: [{
-			item: "extraplanets:kepler22b 1 1"
-		}]
+		uid: "ae093c26",
+		type: "dimension",
+		title: "{planet.kepler22b}",
+		dim: -22
 	}]
 }

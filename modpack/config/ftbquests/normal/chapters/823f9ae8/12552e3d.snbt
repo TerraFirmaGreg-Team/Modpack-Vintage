@@ -1,0 +1,37 @@
+{
+	x: -29.0d,
+	y: -12.25d,
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "e753ed43",
+		type: "item",
+		items: [{
+			id: "tfcflorae:storage/unfired/urn",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b6b995c6",
+		type: "item",
+		items: [{
+			id: "tfcflorae:storage/urn",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

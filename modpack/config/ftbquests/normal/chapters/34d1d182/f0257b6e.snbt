@@ -1,6 +1,6 @@
 {
-	x: 2.5d,
-	y: 16.25d,
+	x: -4.0d,
+	y: 13.0d,
 	dependencies: [
 		"f0d8edbf"
 	],
@@ -8,8 +8,20 @@
 		uid: "f5b97e1b",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:parachute"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gc.parachute"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "gc.parachute"
+				}
+			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}]
 }

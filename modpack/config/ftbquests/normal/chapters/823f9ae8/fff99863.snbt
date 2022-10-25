@@ -19,7 +19,7 @@
 		}
 	},
 	x: -14.5d,
-	y: -2.0d,
+	y: -2.5d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.bismuthpile.subtitle}",
 	hide_dependency_lines: true,

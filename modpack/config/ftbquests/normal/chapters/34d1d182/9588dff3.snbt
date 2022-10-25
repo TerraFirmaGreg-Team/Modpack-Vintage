@@ -1,10 +1,10 @@
 {
-	x: 1.0d,
-	y: 13.5d,
+	x: 2.25d,
+	y: 16.25d,
 	description: "{tfg.quests.space.lvl1solarpanel.subtitle}",
+	hide_dependency_lines: true,
 	dependencies: [
-		"63759119",
-		"abc9ab8d"
+		"f7c7757a"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

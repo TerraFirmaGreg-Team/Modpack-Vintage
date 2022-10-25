@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.stone_knife.title}",
-	x: -28.0d,
-	y: -3.0d,
+	x: -30.0d,
+	y: -2.25d,
 	description: "{tfg.quests.primitive.stone_knife.subtitle}",
 	dependencies: [
 		"8fc0c70f"

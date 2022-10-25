@@ -1,12 +1,12 @@
 {
 	title: "{tfg.quests.primitive.soaked_hide.title}",
-	x: -25.75d,
-	y: -1.0d,
+	x: -31.25d,
+	y: 3.0d,
 	description: "{tfg.quests.primitive.soaked_hide.subtitle}",
 	dependencies: [
-		"e61c6921",
 		"bf82a628",
-		"b34ad5dc"
+		"b34ad5dc",
+		"44403353"
 	],
 	tasks: [{
 		uid: "57159ff8",

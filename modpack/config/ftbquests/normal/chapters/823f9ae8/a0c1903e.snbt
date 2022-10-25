@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.straw.title}",
-	x: -29.25d,
-	y: -3.0d,
+	x: -28.75d,
+	y: -1.0d,
 	description: "{tfg.quests.primitive.straw.subtitle}",
 	text: [
 		"{tfg.quests.primitive.muchNeededStraw.desc}"

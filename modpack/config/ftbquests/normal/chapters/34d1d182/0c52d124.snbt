@@ -1,22 +1,21 @@
 {
-	title: "Эрида",
+	title: "{planet.eris}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/eris.png"
 		}
 	},
-	x: 27.0d,
+	x: 35.25d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"7fc8151e"
 	],
 	tasks: [{
-		uid: "116950f2",
-		type: "item",
-		items: [{
-			item: "extraplanets:eris"
-		}]
+		uid: "bd30fadd",
+		type: "dimension",
+		title: "{planet.eris}",
+		dim: -21
 	}]
 }

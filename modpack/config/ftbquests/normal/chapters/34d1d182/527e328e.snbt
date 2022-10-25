@@ -1,23 +1,22 @@
 {
-	title: "Деймос",
+	title: "{moon.deimos}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/deimos.png"
 		}
 	},
-	x: 8.25d,
-	y: 7.25d,
+	x: 4.25d,
+	y: 7.625d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"e4e7bcbf"
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "65cdf9ef",
-		type: "item",
-		items: [{
-			item: "extraplanets:deimos"
-		}]
+		uid: "912afb22",
+		type: "dimension",
+		title: "{moon.deimos}",
+		dim: -1503
 	}]
 }

@@ -3,14 +3,7 @@
 	y: 1.5d,
 	shape: "rsquare",
 	dependencies: [
-		"35e5bc75",
-		"f48f034a",
-		"c2517bf4",
-		"26f2259a",
-		"a4af0a36",
-		"587d7e11",
-		"9ba7b82b",
-		"e851e43f"
+		"59b097c6"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

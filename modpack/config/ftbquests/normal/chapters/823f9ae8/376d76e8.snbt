@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.harderbucket.title}",
-	x: -10.25d,
+	x: -13.5d,
 	y: 10.0d,
-	shape: "square",
+	shape: "rsquare",
 	description: "{tfg.quests.primitive.harderbucket.subtitle}",
 	dependencies: [
 		"06da47f2",

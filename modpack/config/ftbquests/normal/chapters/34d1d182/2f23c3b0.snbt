@@ -1,15 +1,26 @@
 {
-	x: 1.0d,
-	y: 11.0d,
+	x: -5.0d,
+	y: 15.0d,
 	dependencies: [
-		"040ea1d7",
-		"0f3c542f"
+		"f3324116"
 	],
 	tasks: [{
 		uid: "469b10df",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:oxygen_tank_heavy_full 1 2700"
+			item: "galacticraftcore:oxygen_tank_light_full"
+		},
+		{
+			item: "galacticraftcore:oxygen_tank_med_full"
+		},
+		{
+			item: "galacticraftcore:oxygen_tank_heavy_full"
+		},
+		{
+			item: "extraplanets:oxygen_tank_very_heavy_full"
+		},
+		{
+			item: "extraplanets:oxygen_tank_extremely_heavy_full"
 		}],
 		count: 2L,
 		ignore_damage: true,

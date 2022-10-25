@@ -1,0 +1,30 @@
+{
+	x: -16.75d,
+	y: -1.0d,
+	dependencies: [
+		"fcee7c20"
+	],
+	tasks: [{
+		uid: "fa20d6ac",
+		type: "item",
+		items: [{
+			id: "tfc:metal/javelin/copper",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

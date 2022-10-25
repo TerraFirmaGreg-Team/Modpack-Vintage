@@ -1,6 +1,6 @@
 {
 	x: -24.0d,
-	y: -6.0d,
+	y: -7.25d,
 	description: "{tfg.quests.primitive.flux_dust.subtitle}",
 	dependencies: [
 		"01aaa85a",

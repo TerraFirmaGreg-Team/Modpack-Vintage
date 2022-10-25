@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_file.title}",
-	x: -17.0d,
+	x: -16.75d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.copper_knife.subtitle}",
 	text: [

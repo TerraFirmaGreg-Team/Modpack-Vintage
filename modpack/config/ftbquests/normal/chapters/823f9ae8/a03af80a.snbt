@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.primitive.logs.title}",
 	icon: "tfc:wood/log/oak",
-	x: -30.0d,
-	y: -7.0d,
+	x: -31.0d,
+	y: -8.25d,
 	description: "{tfg.quests.primitive.logs.subtitle}",
 	text: [
 		"{tfg.quests.primitive.logs.desc}"

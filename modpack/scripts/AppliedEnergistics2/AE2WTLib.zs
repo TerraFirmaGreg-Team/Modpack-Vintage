@@ -1,23 +1,5 @@
 import crafttweaker.item.IItemStack;
 
-// --- Массивы
-
-val ItemsToRemove as IItemStack[] = [
-	<wct:wct>,
-  <wft:wft>,
-  <wit:wit>,
-  <wpt:wpt>,
-  <ae2wtlib:infinity_booster_card>,
-  <wct:magnet_card>,
-  <aenetvistool:net_visualizer>
-];
-
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in ItemsToRemove{
-  recipes.remove(item);
-}
 
 // --- Добавление рецептов
 
@@ -29,7 +11,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.luv> * 2,
     <appliedenergistics2:part:360>,
     <metaitem:emitter.luv>,
-    <ore:stickOsmiridium> * 2
+    <metaitem:stickOsmiridium> * 2
   ])
   .outputs(<wct:wct>)
   .duration(30).EUt(250).buildAndRegister();
@@ -42,7 +24,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.luv> * 2,
     <appliedenergistics2:part:520>,
     <metaitem:emitter.luv>,
-    <ore:stickOsmiridium> * 2
+    <metaitem:stickOsmiridium> * 2
   ])
   .outputs(<wft:wft>)
   .duration(30).EUt(250).buildAndRegister();
@@ -55,7 +37,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.luv> * 2,
     <appliedenergistics2:part:480>,
     <metaitem:emitter.luv>,
-    <ore:stickOsmiridium> * 2
+    <metaitem:stickOsmiridium> * 2
   ])
   .outputs(<wit:wit>)
   .duration(30).EUt(250).buildAndRegister();
@@ -68,7 +50,7 @@ assembler.recipeBuilder()
     <metaitem:sensor.luv> * 2,
     <appliedenergistics2:part:340>,
     <metaitem:emitter.luv>,
-    <ore:stickOsmiridium> * 2
+    <metaitem:stickOsmiridium> * 2
   ])
   .outputs(<wpt:wpt>)
   .duration(30).EUt(250).buildAndRegister();
@@ -87,11 +69,11 @@ assembler.recipeBuilder()
 // Magnet Card
 assembler.recipeBuilder()
   .inputs([
-    <ore:ingotNeodymiumMagnetic>, 
-    <ore:stickNeodymiumMagnetic> * 4,
+    <metaitem:ingotNeodymiumMagnetic>, 
+    <metaitem:stickNeodymiumMagnetic> * 4,
     <appliedenergistics2:part:300>,
-    <ore:plateRedstone>,
-    <ore:plateLapis>,
+    <metaitem:plateRedstone>,
+    <metaitem:plateLapis>,
     <appliedenergistics2:material:28>
   ])
   .outputs(<wct:magnet_card>)
@@ -99,6 +81,6 @@ assembler.recipeBuilder()
 
 // Network Visualization Tool
 recipes.addShaped("tfg/aenetvistool/net_visualizer", <aenetvistool:net_visualizer>, [
-    [<ore:plateAluminium>, <appliedenergistics2:material:43>, <ore:plateAluminium>],
+    [<metaitem:plateAluminium>, <appliedenergistics2:material:43>, <metaitem:plateAluminium>],
     [<appliedenergistics2:network_tool>, <metaitem:wireless>, <appliedenergistics2:entropy_manipulator>],
-    [<ore:plateAluminium>, <appliedenergistics2:material:44>, <ore:plateAluminium>]]);
+    [<metaitem:plateAluminium>, <appliedenergistics2:material:44>, <metaitem:plateAluminium>]]);

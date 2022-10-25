@@ -16,76 +16,6 @@ import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
 
-val RemoveItemRecipesByName = [
-  	"tfc:vanilla/redstone/observer",
-	"tfc:vanilla/tnt",
-	"tfc:vanilla/flint_and_steel",
-	"tfc:vanilla/compass",
-	"tfc:vanilla/redstone/redstone_lamp",
-	"tfc:vanilla/redstone/piston",
-	"tfc:vanilla/redstone/flawless_daylight_detector",
-	"tfc:vanilla/redstone/exquisite_daylight_detector",
-	"tfc:vanilla/redstone/daylight_detector",
-	"tfc:vanilla/redstone/redstone_repeater",
-	"tfc:vanilla/redstone/redstone_comparator",
-	"tfc:vanilla/redstone/steel_hopper",
-	"tfc:vanilla/redstone/hopper",
-	"tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate",
-	"tfc:vanilla/rail/steel_minecraft",
-	"tfc:vanilla/rail/minecraft",
-	"tfc:vanilla/lapis_lazuli_block",
-	"tfc:vanilla/ladder",
-	"tfc:vanilla/painting",
-	"tfc:vanilla/item_frame",
-	"tfc:vanilla/piston",
-	"tfc:vanilla/rail/powered_rail",
-	"tfc:vanilla/rail/steel_detector_rail",
-	"tfc:vanilla/rail/detector_rail",
-	"tfc:vanilla/rail/rail",
-	"tfc:vanilla/rail/steel_rail",
-	"tfc:vanilla/rail/activator_rail",
-	"tfc:vanilla/rail/steel_activator_rail",
-	"tfc:vanilla/rail/minecart",
-	"tfc:vanilla/rail/steel_minecart",
-	"tfc:paper",
-	"tfc:fire_clay",
-	"tfc:vanilla/cauldron",
-	"tfc:blast_furnace",
-	"tfc:alabaster_brick"
-] as string[];
-
-val RemoveRecipesInBarrel = [
-	// Concrete
-	"tfc:concrete_white",
-	"tfc:concrete_orange",
-	"tfc:concrete_magenta",
-	"tfc:concrete_light_blue",
-	"tfc:concrete_yellow",
-	"tfc:concrete_lime",
-	"tfc:concrete_pink",
-	"tfc:concrete_gray",
-	"tfc:concrete_light_gray",
-	"tfc:concrete_cyan",
-	"tfc:concrete_purple",
-	"tfc:concrete_blue",
-	"tfc:concrete_brown",
-	"tfc:concrete_green",
-	"tfc:concrete_red",
-	"tfc:concrete_black",
-	// Alabaster
-	"tfc:plain_alabaster"
-] as string[];
-
-val RemoveItemsFromQuern as IItemStack[] = [
-	<tfc:gem/diamond:2>,
-	<tfc:powder/fertilizer>,
-	<tfc:powder/malachite>,
-	<tfc:powder/limonite>,
-	<tfc:ore/gypsum>,
-	<tfc:powder/hematite>,
-	<minecraft:redstone> * 8,
-	<tfc:powder/flux> * 6
-];
 
 val Alabaster as IItemStack[] = [
 	<tfc:alabaster/raw/white>,
@@ -144,133 +74,6 @@ val AlabasterPolished as IItemStack[] = [
 	<tfc:alabaster/polished/black>
 ];
 
-// --- Удаление рецептов
-
-// Удаление рецептов
-for item in RemoveItemRecipesByName{
-    recipes.removeByRecipeName(item);
-}
-
-// Удаление рецептов цемента из бочки
-for item in RemoveRecipesInBarrel {
-    recipes.removeByRecipeName(item);
-}
-
-// Удаление неиспользуемых рецептов из Quern
-for item in RemoveItemsFromQuern {
-    Quern.removeRecipe(item);
-}
-
-// Удаление некоторых рецептов PigIron
-Welding.removeRecipe(<tfc:metal/double_ingot/pig_iron>);
-Anvil.removeRecipe(<tfc:metal/trapdoor/pig_iron>);
-
-// Удаление рецептов сундуков
-for item in TFC_Chests {
-    recipes.remove(item);
-}
-
-// Удаление рецептов лодок
-for item in TFC_Boats {
-    recipes.remove(item);
-}
-
-// Унификация высокоуглеродной стали
-Anvil.removeRecipe(<tfc:metal/ingot/high_carbon_steel>);
-
-// Унификация высокоуглеродной черной стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_black_steel>);
-
-// Унификация высокоуглеродной красной стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_red_steel>);
-
-// Унификация высокоуглеродной синей стали
-Welding.removeRecipe(<tfc:metal/ingot/high_carbon_blue_steel>);
-
-// Унификация стали
-Anvil.removeRecipe(<tfc:metal/ingot/steel>);
-
-// Унификация черной стали
-Anvil.removeRecipe(<tfc:metal/ingot/black_steel>);
-
-// Унификация красной стали
-Anvil.removeRecipe(<tfc:metal/ingot/red_steel>);
-
-// Унификация синей стали
-Anvil.removeRecipe(<tfc:metal/ingot/blue_steel>);
-
-// Унификация каолинита(Mica)
-Quern.removeRecipe(<tfc:powder/kaolinite> * 4);
-Heating.removeRecipe(<tfc:powder/kaolinite>);
-Oven.removeRecipe(<tfc:powder/kaolinite>);
-Grindstone.remove(<tfc:powder/kaolinite> * 6);
-
-// Унификация графита
-Quern.removeRecipe(<tfc:powder/graphite> * 4);
-Grindstone.remove(<tfc:powder/graphite> * 6);
-
-// Унификация серы
-Quern.removeRecipe(<tfc:powder/sulfur> * 4);
-Grindstone.remove(<tfc:powder/sulfur> * 8);
-
-// Унификация ляписа
-Quern.removeRecipe(<tfc:powder/lapis_lazuli> * 4);
-Grindstone.remove(<tfc:powder/lapis_lazuli> * 8);
-
-// Унификация древесный уголь
-Quern.removeRecipe(<tfc:powder/charcoal> * 4);
-Grindstone.remove(<tfc:powder/charcoal> * 8);
-
-// Унификация соли
-Quern.removeRecipe(<tfc:powder/salt>);
-Grindstone.remove(<tfc:powder/salt>);
-
-// Унификация сальпетера
-Quern.removeRecipe(<tfc:powder/saltpeter>);
-Grindstone.remove(<tfc:powder/saltpeter>);
-
-// Ром
-Barrel.removeRecipe(<liquid:rum> * 500);
-
-// Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
-// White Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_white> * 144]).remove();
-// Orange Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_orange> * 144]).remove();
-// Magenta Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_magenta> * 144]).remove();
-// Light Blue Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_blue> * 144]).remove();
-// Yellow Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_yellow> * 144]).remove();
-// Lime Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_lime> * 144]).remove();
-// Pink Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_pink> * 144]).remove();
-// Gray Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_gray> * 144]).remove();
-// Light Gray Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_light_gray> * 144]).remove();
-// Cyan Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_cyan> * 144]).remove();
-// Purple Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_purple> * 144]).remove();
-// Blue Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_blue> * 144]).remove();
-// Brown Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_brown> * 144]).remove();
-// Green Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_green> * 144]).remove();
-// Red Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_red> * 144]).remove();
-// Black Concrete Powder * 8
-mixer.findRecipe(7, [<minecraft:sand:0> * 4, <minecraft:gravel:0> * 4], [<liquid:dye_black> * 144]).remove();
-
-// Лассо
-assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], null).remove();
-
-// Песок --> Диоксид кремния
-electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 
 // --- Добавление рецептов
 
@@ -278,10 +81,10 @@ electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
 ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "WROUGHT_IRON", 144, true);
 
 // Ковка монет
-Anvil.addRecipe("tfg/gt/copper_coin", <ore:plateCopper>, <metaitem:credit.copper>, 1, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/gold_coin", <ore:plateGold>, <metaitem:credit.gold>, 2, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/silver_coin", <ore:plateSilver>, <metaitem:credit.silver>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
-Anvil.addRecipe("tfg/gt/cupronickel_coin", <ore:plateCupronickel>, <metaitem:credit.cupronickel>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/copper_coin", <metaitem:plateCopper>, <metaitem:credit.copper>, 1, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/gold_coin", <metaitem:plateGold>, <metaitem:credit.gold>, 2, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/silver_coin", <metaitem:plateSilver>, <metaitem:credit.silver>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
+Anvil.addRecipe("tfg/gt/cupronickel_coin", <metaitem:plateCupronickel>, <metaitem:credit.cupronickel>, 3, "tools", "HIT_LAST", "HIT_LAST", "HIT_LAST");
 
 // Новые рецепты ковки GT мечей
 Anvil.addRecipe("tfg/tfc/sword_blade/copper", <ore:ingotDoubleCopper>, <metaitem:toolHeadSwordCopper>, 1, "tools", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
@@ -523,8 +326,8 @@ recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<me
 // Контроллер доменной печи
 recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [
 	[<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>],
-    [<ore:plateDoubleIronAny>, <tfc:crucible>, <ore:plateDoubleIronAny>],
-    [<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>]]);
+	[<ore:plateDoubleIronAny>, <tfc:crucible>, <ore:plateDoubleIronAny>],
+	[<ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>, <ore:plateDoubleIronAny>]]);
 
 // Огнеупорная глина
 recipes.addShaped("tfg/tfc/fire_clay", <tfc:ceramics/fire_clay>, [
@@ -537,232 +340,232 @@ furnace.addRecipe(<metaitem:rubber_drop>, <tfc:plants/resin>);
 
 // Сырой камень -> Сырой камень
 for item in TFC_Raws {
-    rock_breaker.recipeBuilder()
-    	.notConsumable(item)
-    	.outputs(item)
-    	.duration(16).EUt(32).buildAndRegister();
+	rock_breaker.recipeBuilder()
+		.notConsumable(item)
+		.outputs(item)
+		.duration(16).EUt(32).buildAndRegister();
 }
 
 // Сырой камень -> Булыжник
 for i, TFC_Cobbles in TFC_Cobbles {
-    forge_hammer.recipeBuilder()
-    	.inputs([TFC_Raws[i]])
-    	.outputs(TFC_Cobbles)
-    	.duration(200).EUt(7).buildAndRegister();
+	forge_hammer.recipeBuilder()
+		.inputs([TFC_Raws[i]])
+		.outputs(TFC_Cobbles)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Сырой камень -> Гладкий
 for i, TFC_Smooths in TFC_Smooths {
-    laser_engraver.recipeBuilder()
-    	.inputs([TFC_Raws[i]])
+	laser_engraver.recipeBuilder()
+		.inputs([TFC_Raws[i]])
 		.notConsumable(<ore:craftingLensGlass>)
-    	.outputs(TFC_Smooths)
-    	.duration(200).EUt(30).buildAndRegister();
+		.outputs(TFC_Smooths)
+		.duration(200).EUt(30).buildAndRegister();
 }
 
 // Булыжник -> Гравий
 for i, TFC_Gravel in TFC_Gravel {
-    forge_hammer.recipeBuilder()
-    	.inputs([TFC_Cobbles[i]])
-    	.outputs(TFC_Gravel)
-    	.duration(200).EUt(7).buildAndRegister();
+	forge_hammer.recipeBuilder()
+			.inputs([TFC_Cobbles[i]])
+			.outputs(TFC_Gravel)
+			.duration(200).EUt(7).buildAndRegister();
 }
 
 // Гравий -> Песок
 for i, TFC_Sands in TFC_Sands {
-    forge_hammer.recipeBuilder()
-    	.inputs([TFC_Gravel[i]])
-    	.outputs(TFC_Sands)
-    	.duration(200).EUt(7).buildAndRegister();
+	forge_hammer.recipeBuilder()
+			.inputs([TFC_Gravel[i]])
+			.outputs(TFC_Sands)
+			.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи -> Блоки кирпичей
 for i, TFC_Bricks_Block in TFC_Bricks_Block {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Bricks_Item[i] * 4])
+	assembler.recipeBuilder()
+	.inputs([TFC_Bricks_Item[i] * 4])
 		.circuit(4)
 		.fluidInputs([<liquid:concrete> * 100])
-    	.outputs(TFC_Bricks_Block * 4)
-    	.duration(200).EUt(7).buildAndRegister();
+	.outputs(TFC_Bricks_Block * 4)
+	.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи из грязи -> Блоки кирпичей
 for i, TFC_Mud_Bricks_Block in TFC_Mud_Bricks_Block {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Mud_Bricks_Item[i] * 4])
+	assembler.recipeBuilder()
+	.inputs([TFC_Mud_Bricks_Item[i] * 4])
 		.circuit(4)
 		.fluidInputs([<liquid:concrete> * 100])
-    	.outputs(TFC_Mud_Bricks_Block * 4)
-    	.duration(200).EUt(7).buildAndRegister();
+	.outputs(TFC_Mud_Bricks_Block * 4)
+	.duration(200).EUt(7).buildAndRegister();
 }
 
 // Булыжник -> Полублок
 for i, TFC_Slabs_Cobble in TFC_Slabs_Cobble {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Cobbles[i]])
-    	.outputs(TFC_Slabs_Cobble * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	cutter.recipeBuilder()
+		.inputs([TFC_Cobbles[i]])
+		.outputs(TFC_Slabs_Cobble * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Булыжник -> Ступенька
 for i, TFC_Stairs_Cobble in TFC_Stairs_Cobble {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Cobbles[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Cobbles[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Stairs_Cobble * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Stairs_Cobble * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи -> Полублок
 for i, TFC_Slabs_Bricks in TFC_Slabs_Bricks {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Bricks_Block[i]])
-    	.outputs(TFC_Slabs_Bricks * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	cutter.recipeBuilder()
+		.inputs([TFC_Bricks_Block[i]])
+		.outputs(TFC_Slabs_Bricks * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи -> Ступенька
 for i, TFC_Stairs_Bricks in TFC_Stairs_Bricks {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Bricks_Block[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Bricks_Block[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Stairs_Bricks * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Stairs_Bricks * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Гладкий блок -> Полублок
 for i, TFC_Slabs_Smooth in TFC_Slabs_Smooth {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Smooths[i]])
-    	.outputs(TFC_Slabs_Smooth * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	cutter.recipeBuilder()
+		.inputs([TFC_Smooths[i]])
+		.outputs(TFC_Slabs_Smooth * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Гладкий блок -> Ступенька
 for i, TFC_Stairs_Smooth in TFC_Stairs_Smooth {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Smooths[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Smooths[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Stairs_Smooth * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Stairs_Smooth * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Сырой блок -> Полублок
 for i, TFC_Raw_Slabs in TFC_Raw_Slabs {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Raws[i]])
-    	.outputs(TFC_Raw_Slabs * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	cutter.recipeBuilder()
+		.inputs([TFC_Raws[i]])
+		.outputs(TFC_Raw_Slabs * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Сырой блок -> Ступенька
 for i, TFC_Raw_Stairs in TFC_Raw_Stairs {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Raws[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Raws[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Raw_Stairs * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Raw_Stairs * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи из грязи -> Полублок
 for i, TFC_Mud_Bricks_Slabs in TFC_Mud_Bricks_Slabs {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Mud_Bricks_Block[i]])
-    	.outputs(TFC_Mud_Bricks_Slabs * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	cutter.recipeBuilder()
+		.inputs([TFC_Mud_Bricks_Block[i]])
+		.outputs(TFC_Mud_Bricks_Slabs * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Кирпичи из грязи -> Ступенька
 for i, TFC_Mud_Bricks_Stairs in TFC_Mud_Bricks_Stairs {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Mud_Bricks_Block[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Mud_Bricks_Block[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Mud_Bricks_Stairs)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Mud_Bricks_Stairs)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Сырой камень -> Нажимные каменные пластины
 for i, TFC_Stone_Pressure_Plates in TFC_Stone_Pressure_Plates {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Raws[i] * 2, <metaitem:springIron>])
-    	.outputs(TFC_Stone_Pressure_Plates * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+	assembler.recipeBuilder()
+		.inputs([TFC_Raws[i] * 2, <metaitem:springIron>])
+		.outputs(TFC_Stone_Pressure_Plates * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Нажимные каменные пластины -> Кнопки
 for i, TFC_Stone_Buttons in TFC_Stone_Buttons {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Stone_Pressure_Plates[i] * 6])
+	cutter.recipeBuilder()
+		.inputs([TFC_Stone_Pressure_Plates[i] * 6])
 		.fluidInputs([<liquid:lubricant> * 1])
-    	.outputs(TFC_Stone_Buttons * 12)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Stone_Buttons * 12)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // 
 for i, GT_Dusts_For_Raw_Stones in GT_Dusts_For_Raw_Stones {
-    // Raw Block
+	// Raw Block
 	macerator.recipeBuilder()
-    	.inputs(TFC_Raws[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 3)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Raws[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 3)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Raw Stairs
 	macerator.recipeBuilder()
-    	.inputs(TFC_Raw_Stairs[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 2)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Raw_Stairs[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 2)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Raw Slab
 	macerator.recipeBuilder()
-    	.inputs(TFC_Raw_Slabs[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 1)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Raw_Slabs[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 1)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Smooth Block
 	macerator.recipeBuilder()
-    	.inputs(TFC_Smooths[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 3)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Smooths[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 3)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Smooth Stairs
 	macerator.recipeBuilder()
-    	.inputs(TFC_Stairs_Smooth[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 2)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Stairs_Smooth[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 2)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Smooth Slab
 	macerator.recipeBuilder()
-    	.inputs(TFC_Slabs_Smooth[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 1)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Slabs_Smooth[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 1)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Cobble Block
 	macerator.recipeBuilder()
-    	.inputs(TFC_Cobbles[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 3)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Cobbles[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 3)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Cobble Stairs
 	macerator.recipeBuilder()
-    	.inputs(TFC_Stairs_Cobble[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 2)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Stairs_Cobble[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 2)
+		.duration(100).EUt(4).buildAndRegister();
 
 	// Cobble Slab
 	macerator.recipeBuilder()
-    	.inputs(TFC_Slabs_Cobble[i])
-    	.outputs(GT_Dusts_For_Raw_Stones * 1)
-    	.duration(100).EUt(4).buildAndRegister();
+		.inputs(TFC_Slabs_Cobble[i])
+		.outputs(GT_Dusts_For_Raw_Stones * 1)
+		.duration(100).EUt(4).buildAndRegister();
 }
 
 // Дерево -> Пиломатериалы
 for i, TFC_Lumber in TFC_Lumber {
 	
 	cutter.recipeBuilder()
-    	.inputs([TFC_Logs[i]])
+		.inputs([TFC_Logs[i]])
 		.fluidInputs([<liquid:lubricant> * 1])
-    	.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Lumber * 16, <metaitem:dustWood> * 2)
+		.duration(200).EUt(7).buildAndRegister();
 	
 	saw_mill.recipeBuilder()
 		.inputs([TFC_Logs[i]])
@@ -778,10 +581,10 @@ for i, TFC_Lumber in TFC_Lumber {
 for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
 	
 	cutter.recipeBuilder()
-    	.inputs([TFC_EucaliptusLogs])
+		.inputs([TFC_EucaliptusLogs])
 		.fluidInputs([<liquid:lubricant> * 1])
-    	.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(<tfc:wood/lumber/eucalyptus> * 16, <metaitem:dustWood> * 2)
+		.duration(200).EUt(7).buildAndRegister();
 
 	saw_mill.recipeBuilder()
 		.inputs([TFC_EucaliptusLogs])
@@ -795,119 +598,119 @@ for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
 
 // Доски -> Пиломатериалы
 for i, TFC_Lumber in TFC_Lumber {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Planks[i]])
+	cutter.recipeBuilder()
+		.inputs([TFC_Planks[i]])
 		.fluidInputs([<liquid:lubricant> * 1])
-    	.outputs(TFC_Lumber * 8, <metaitem:dustWood> * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Lumber * 8, <metaitem:dustWood> * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Пиломатериалы -> Доски
 for i, TFC_Planks in TFC_Planks {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 4])
+	assembler.recipeBuilder()
+		.inputs([TFC_Lumber[i] * 4])
 		.circuit(3)
-    	.outputs(TFC_Planks)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Planks)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Доски -> Полу-блоки
 for i, TFC_Slabs in TFC_Slabs {
 	assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i]])
+		.inputs([TFC_Planks[i]])
 		.circuit(6)
-    	.outputs(TFC_Slabs * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Slabs * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Доски -> Ступеньки
 for i, TFC_Stairs in TFC_Stairs {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 6])
 		.circuit(7)
-    	.outputs(TFC_Stairs * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Stairs * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Доски -> Нажимные деревянные пластины
 for i, TFC_Pressure_Plates in TFC_Pressure_Plates {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 2, <metaitem:springIron>])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 2, <metaitem:springIron>])
 		.circuit(4)
-    	.outputs(TFC_Pressure_Plates * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Pressure_Plates * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Нажимные деревянные пластины -> Кнопки
 for i, TFC_Buttons in TFC_Buttons {
-    cutter.recipeBuilder()
-    	.inputs([TFC_Pressure_Plates[i] * 6])
+	cutter.recipeBuilder()
+		.inputs([TFC_Pressure_Plates[i] * 6])
 		.fluidInputs([<liquid:lubricant> * 1])
-    	.outputs(TFC_Buttons * 12)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Buttons * 12)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Доски -> Забор
 for i, TFC_Fences in TFC_Fences {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 2, <minecraft:stick> * 2])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 2, <minecraft:stick> * 2])
 		.circuit(1)
-    	.outputs(TFC_Fences * 8)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Fences * 8)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Доски -> Калитка
 for i, TFC_Fence_Gates in TFC_Fence_Gates {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 2, <minecraft:stick> * 3])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 2, <minecraft:stick> * 3])
 		.circuit(2)
-    	.outputs(TFC_Fence_Gates * 2)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Fence_Gates * 2)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Бревна -> Забор из бревен
 for i, TFC_Fence_Log in TFC_Fence_Log {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Logs[i + 83] * 2, <minecraft:stick> * 3])
+	assembler.recipeBuilder()
+		.inputs([TFC_Logs[i + 83] * 2, <minecraft:stick> * 3])
 		.circuit(1)
-    	.outputs(TFC_Fence_Log * 8)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Fence_Log * 8)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Бревна -> Калитка из бревен
 for i, TFC_Fence_Gates_Log in TFC_Fence_Gates_Log {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Logs[i] * 2, <minecraft:stick> * 3])
+	assembler.recipeBuilder()
+		.inputs([TFC_Logs[i] * 2, <minecraft:stick> * 3])
 		.circuit(2)
-    	.outputs(TFC_Fence_Gates_Log * 8)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Fence_Gates_Log * 8)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Бревна -> Опоры
 for i, TFC_Supports in TFC_Supports {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Logs[i] * 2])
+	assembler.recipeBuilder()
+		.inputs([TFC_Logs[i] * 2])
 		.circuit(7)
-    	.outputs(TFC_Supports * 16)
-    	.duration(200).EUt(7).buildAndRegister();
+		.outputs(TFC_Supports * 16)
+		.duration(200).EUt(7).buildAndRegister();
 }
 
 // Двери
 for i, TFC_Doors in TFC_Doors {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Lumber[i] * 6])
 		.circuit(8)
-    	.outputs(TFC_Doors * 2)
-    	.duration(350).EUt(4).buildAndRegister();
+		.outputs(TFC_Doors * 2)
+		.duration(350).EUt(4).buildAndRegister();
 }
 
 // Люки
 for i, TFC_Trapdoors in TFC_Trapdoors {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Lumber[i] * 6])
 		.circuit(9)
-    	.outputs(TFC_Trapdoors * 3)
-    	.duration(320).EUt(4).buildAndRegister();
+		.outputs(TFC_Trapdoors * 3)
+		.duration(320).EUt(4).buildAndRegister();
 }
 
 // Железные люки
@@ -920,20 +723,20 @@ for i, TFC_Metal_Trapdoors in TFC_Metal_Trapdoors  {
 }
 // Книжные полки
 for i, TFC_Bookshelfs in TFC_Bookshelfs {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 6, <minecraft:book> * 3])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 6, <minecraft:book> * 3])
 		.circuit(10)
-    	.outputs(TFC_Bookshelfs)
-    	.duration(400).EUt(4).buildAndRegister();
+		.outputs(TFC_Bookshelfs)
+		.duration(400).EUt(4).buildAndRegister();
 }
 
 // Верстаки
 for i, TFC_Workbenchs in TFC_Workbenchs {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Planks[i] * 4])
+	assembler.recipeBuilder()
+		.inputs([TFC_Planks[i] * 4])
 		.circuit(11)
-    	.outputs(TFC_Workbenchs)
-    	.duration(250).EUt(4).buildAndRegister();
+		.outputs(TFC_Workbenchs)
+		.duration(250).EUt(4).buildAndRegister();
 }
 
 // Сундуки
@@ -944,28 +747,28 @@ for i, TFC_Chests in TFC_Chests {
 		[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]]]);
 	
 	assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 8])
+		.inputs([TFC_Lumber[i] * 8])
 		.circuit(12)
-    	.outputs(TFC_Chests)
-    	.duration(280).EUt(4).buildAndRegister();
+		.outputs(TFC_Chests)
+		.duration(280).EUt(4).buildAndRegister();
 }
 
 // Прялки
 for i, TFC_Looms in TFC_Looms {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 7, <minecraft:stick>])
+	assembler.recipeBuilder()
+		.inputs([TFC_Lumber[i] * 7, <minecraft:stick>])
 		.circuit(13)
-    	.outputs(TFC_Looms)
-    	.duration(210).EUt(4).buildAndRegister();
+		.outputs(TFC_Looms)
+		.duration(210).EUt(4).buildAndRegister();
 }
 
 // Полка для инструментов
 for i, TFC_ToolRacks in TFC_ToolRacks  {
-    assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 6])
+	assembler.recipeBuilder()
+		.inputs([TFC_Lumber[i] * 6])
 		.circuit(14)
-    	.outputs(TFC_ToolRacks)
-    	.duration(205).EUt(4).buildAndRegister();
+		.outputs(TFC_ToolRacks)
+		.duration(205).EUt(4).buildAndRegister();
 }
 
 // Бочки
@@ -986,16 +789,16 @@ for i, TFC_Barrels in TFC_Barrels  {
 
 // Лодки
 for i, TFC_Boats in TFC_Boats  {
-    recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats, [
+	recipes.addShaped("tfg/tfc/boat_" + i,TFC_Boats, [
 		[<gregtech:meta_screw:*>, <gregtech:meta_screw:*>, <gregtech:meta_screw:*>],
 		[TFC_Lumber[i], <metaitem:rubber_drop>, TFC_Lumber[i]],
 		[TFC_Lumber[i], TFC_Lumber[i], TFC_Lumber[i]]]);
 	
 	assembler.recipeBuilder()
-    	.inputs([TFC_Lumber[i] * 5, <metaitem:rubber_drop>, <gregtech:meta_screw:*> * 3])
+		.inputs([TFC_Lumber[i] * 5, <metaitem:rubber_drop>, <gregtech:meta_screw:*> * 3])
 		.circuit(16)
-    	.outputs(TFC_Boats)
-    	.duration(270).EUt(4).buildAndRegister();
+		.outputs(TFC_Boats)
+		.duration(270).EUt(4).buildAndRegister();
 }
 
 
@@ -1003,20 +806,20 @@ for i, TFC_Boats in TFC_Boats  {
 // --- Furnace recipes for TFC items
 // Хавка
 for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
-    furnace.addRecipe(TFC_Cooked_Meat, TFC_Raw_Meat[i]);
+	furnace.addRecipe(TFC_Cooked_Meat, TFC_Raw_Meat[i]);
 }
 
 // Керамика
 for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
-    furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
+	furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
 }
 
 // Macerator recipes for Quern/Grindstone recipes
 for i, TFC_QuernToMaceratorOutput in TFC_QuernToMaceratorOutput {
-    macerator.recipeBuilder()
-    	.inputs(TFC_QuernToMaceratorInput[i])
-    	.outputs(TFC_QuernToMaceratorOutput * 2)
-    	.duration(50).EUt(2).buildAndRegister();
+	macerator.recipeBuilder()
+		.inputs(TFC_QuernToMaceratorInput[i])
+		.outputs(TFC_QuernToMaceratorOutput * 2)
+		.duration(50).EUt(2).buildAndRegister();
 }
 
 // Переработка TFC камня в ресурсы
@@ -1328,7 +1131,6 @@ centrifuge.recipeBuilder()
 // Saplings -> Logs + Saplings (Greenhouse)
 
 for i, TFC_Saplings in TFC_Saplings {
-  
 	greenhouse.recipeBuilder()
 		.inputs([TFC_Saplings, <metaitem:fertilizer> * 4])
 		.circuit(1)
@@ -1349,7 +1151,6 @@ for i, TFC_Saplings in TFC_Saplings {
 
 // Seeds -> AnyPlant (Greenhouse)
 for i, All_Seeds in All_Seeds {
-  
 	greenhouse.recipeBuilder()
 		.notConsumable([All_Seeds])
 		.circuit(1)
@@ -1357,7 +1158,7 @@ for i, All_Seeds in All_Seeds {
 		.fluidInputs([<liquid:fresh_water> * 1000])
 		.outputs([All_Plants[i] * 2])
 		.duration(1500).EUt(80).buildAndRegister();
-  
+
 	greenhouse.recipeBuilder()
 		.notConsumable([All_Seeds])
 		.circuit(2)
@@ -1558,7 +1359,7 @@ assembler.recipeBuilder()
 
 // Kaolinite Dust
 macerator.recipeBuilder()
-	.inputs(<ore:dustMica>)
+	.inputs(<metaitem:dustMica>)
 	.outputs(<tfc:powder/kaolinite> * 6)
 	.duration(100).EUt(2).buildAndRegister();
 
@@ -1570,57 +1371,57 @@ macerator.recipeBuilder()
 
 // Graphite Dust
 macerator.recipeBuilder()
-	.inputs(<ore:dustGraphite>)
+	.inputs(<metaitem:dustGraphite>)
 	.outputs(<tfc:powder/graphite> * 6)
 	.duration(100).EUt(2).buildAndRegister();
 
 // Alabaster -> Colored Alabaster
 for i, Alabaster in Alabaster {
 	chemical_bath.recipeBuilder()
-    	.inputs(<tfc:alabaster/raw/plain>)
-        .fluidInputs([colorLiquid[i] * 18])
-    	.outputs(Alabaster)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<tfc:alabaster/raw/plain>)
+		 .fluidInputs([colorLiquid[i] * 18])
+		.outputs(Alabaster)
+		.duration(20).EUt(7).buildAndRegister();
 }
 
 // Smooth Alabaster -> Colored Smooth Alabaster
 for i, AlabasterPolished in AlabasterPolished {
 	chemical_bath.recipeBuilder()
-    	.inputs(<tfc:alabaster/polished/plain>)
-        .fluidInputs([colorLiquid[i] * 18])
-    	.outputs(AlabasterPolished)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<tfc:alabaster/polished/plain>)
+		 .fluidInputs([colorLiquid[i] * 18])
+		.outputs(AlabasterPolished)
+		.duration(20).EUt(7).buildAndRegister();
 }
 
 // Bricks Alabaster -> Colored Bricks Alabaster
 for i, AlabasterBricks in AlabasterBricks {
 	chemical_bath.recipeBuilder()
-    	.inputs(<tfc:alabaster/bricks/plain>)
-        .fluidInputs([colorLiquid[i] * 18])
-    	.outputs(AlabasterBricks)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<tfc:alabaster/bricks/plain>)
+		 .fluidInputs([colorLiquid[i] * 18])
+		.outputs(AlabasterBricks)
+		.duration(20).EUt(7).buildAndRegister();
 }
 
 // Any Alabaster Raw -> Alabaster Plain
 chemical_bath.recipeBuilder()
-    	.inputs(<ore:alabasterRaw>)
-        .fluidInputs([<liquid:chlorine> * 20])
-    	.outputs(<tfc:alabaster/raw/plain>)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<ore:alabasterRaw>)
+		 .fluidInputs([<liquid:chlorine> * 20])
+		.outputs(<tfc:alabaster/raw/plain>)
+		.duration(20).EUt(7).buildAndRegister();
 
 // Any Alabaster Polished -> Alabaster Polished
 chemical_bath.recipeBuilder()
-    	.inputs(<ore:alabasterPolished>)
-        .fluidInputs([<liquid:chlorine> * 20])
-    	.outputs(<tfc:alabaster/polished/plain>)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<ore:alabasterPolished>)
+		 .fluidInputs([<liquid:chlorine> * 20])
+		.outputs(<tfc:alabaster/polished/plain>)
+		.duration(20).EUt(7).buildAndRegister();
 
 // Any Alabaster Bricks -> Alabaster Bricks
 chemical_bath.recipeBuilder()
-    	.inputs(<ore:alabasterBricks>)
-        .fluidInputs([<liquid:chlorine> * 20])
-    	.outputs(<tfc:alabaster/bricks/plain>)
-    	.duration(20).EUt(7).buildAndRegister();
+		.inputs(<ore:alabasterBricks>)
+		 .fluidInputs([<liquid:chlorine> * 20])
+		.outputs(<tfc:alabaster/bricks/plain>)
+		.duration(20).EUt(7).buildAndRegister();
 
 // Milk -> Curdled Milk
 mixer.recipeBuilder()

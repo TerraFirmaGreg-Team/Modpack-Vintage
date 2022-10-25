@@ -1,22 +1,22 @@
 {
-	title: "Сатурн",
+	title: "{planet.saturn}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/saturn.png"
 		}
 	},
-	x: 15.75d,
-	y: 6.0d,
+	x: 18.75d,
+	y: 6.25d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"9dc473ee"
 	],
+	size: 2.5d,
 	tasks: [{
-		uid: "ff3a2337",
-		type: "item",
-		items: [{
-			item: "extraplanets:saturn"
-		}]
+		uid: "87782e1a",
+		type: "dimension",
+		title: "{planet.saturn}",
+		dim: -16
 	}]
 }

@@ -1,22 +1,22 @@
 {
-	title: "Юпитер",
+	title: "{planet.jupiter}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/jupiter.png"
 		}
 	},
-	x: 13.0d,
+	x: 12.75d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
 	],
+	size: 3.0d,
 	tasks: [{
-		uid: "550e2676",
-		type: "item",
-		items: [{
-			item: "extraplanets:jupiter"
-		}]
+		uid: "77d70632",
+		type: "dimension",
+		title: "{planet.jupiter}",
+		dim: -15
 	}]
 }

@@ -1,6 +1,6 @@
 {
-	x: -24.75d,
-	y: 12.0d,
+	x: -26.25d,
+	y: 8.0d,
 	description: "{tfg.quests.primitive.pineappleleather.subtitle}",
 	dependencies: [
 		"b315d793",

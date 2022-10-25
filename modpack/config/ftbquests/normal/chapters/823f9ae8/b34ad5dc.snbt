@@ -1,7 +1,7 @@
 {
 	title: "{tfg.quests.primitive.raw_hide.title}",
-	x: -25.75d,
-	y: -3.0d,
+	x: -31.25d,
+	y: -1.0d,
 	description: "{tfg.quests.primitive.raw_hide.subtitle}",
 	dependencies: [
 		"ddb8daa8"

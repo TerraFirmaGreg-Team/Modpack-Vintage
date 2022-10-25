@@ -1,9 +1,9 @@
 {
-	x: -0.5d,
-	y: 19.75d,
+	x: -5.0d,
+	y: 12.0d,
 	description: "{tfg.quests.space.shield.subtitle}",
 	dependencies: [
-		"9e9cab41"
+		"f0d8edbf"
 	],
 	optional: true,
 	tasks: [{

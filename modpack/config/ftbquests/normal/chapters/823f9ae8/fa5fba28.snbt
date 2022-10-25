@@ -1,0 +1,16 @@
+{
+	x: -3.25d,
+	y: -17.25d,
+	dependencies: [
+		"d5001736"
+	],
+	tasks: [{
+		uid: "8bf53da0",
+		type: "item",
+		items: [{
+			item: "firmalife:watering_can"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,5 +1,5 @@
 {
-	x: -16.25d,
+	x: -15.75d,
 	y: -4.0d,
 	shape: "circle",
 	description: "{tfg.quests.primitive.copperingot.subtitle}",

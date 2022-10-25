@@ -1,10 +1,10 @@
 {
-	x: 0.25d,
-	y: 20.5d,
+	x: -3.5d,
+	y: 16.25d,
 	description: "{tfg.quests.space.fuelloader.subtitle}",
+	hide_dependency_lines: true,
 	dependencies: [
-		"f6e1782c",
-		"5f7fe3e6"
+		"f7c7757a"
 	],
 	tasks: [{
 		uid: "da55bdad",

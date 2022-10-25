@@ -1,23 +1,22 @@
 {
-	title: "Рея",
+	title: "{moon.rhea}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/rheya.png"
 		}
 	},
-	x: 16.25d,
-	y: 6.75d,
+	x: 20.0d,
+	y: 7.125d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"9dc473ee"
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "20401389",
-		type: "item",
-		items: [{
-			item: "extraplanets:rhea"
-		}]
+		uid: "5b3d203a",
+		type: "dimension",
+		title: "{moon.rhea}",
+		dim: -1507
 	}]
 }

@@ -1,23 +1,22 @@
 {
-	title: "Европа",
+	title: "{moon.europa}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/europa.png"
 		}
 	},
-	x: 13.75d,
-	y: 7.25d,
+	x: 14.75d,
+	y: 7.5d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
 	],
 	size: 0.5d,
 	tasks: [{
-		uid: "f7f4c484",
-		type: "item",
-		items: [{
-			item: "extraplanets:europa"
-		}]
+		uid: "8d94b80a",
+		type: "dimension",
+		title: "{moon.europa}",
+		dim: -1501
 	}]
 }

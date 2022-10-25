@@ -1,5 +1,5 @@
 {
-	x: -16.25d,
+	x: -15.75d,
 	y: -12.0d,
 	shape: "gear",
 	description: "{tfg.quests.primitive.copperanvil.subtitle}",

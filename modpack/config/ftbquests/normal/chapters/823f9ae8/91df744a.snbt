@@ -1,6 +1,6 @@
 {
 	x: -30.0d,
-	y: -9.0d,
+	y: -9.25d,
 	description: "{tfg.quests.primitive.spindle.subtitle}",
 	dependencies: [
 		"5dd94e80",

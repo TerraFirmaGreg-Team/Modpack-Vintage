@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: 6.75d,
+	dependencies: [
+		"fbbce24f"
+	],
+	tasks: [{
+		uid: "540a3086",
+		type: "item",
+		items: [{
+			item: "firmalife:beeswax"
+		}]
+	}]
+}

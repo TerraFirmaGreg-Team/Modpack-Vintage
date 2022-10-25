@@ -1,0 +1,17 @@
+{
+	x: -6.5d,
+	y: 5.75d,
+	tasks: [{
+		uid: "86ea311f",
+		type: "item",
+		items: [{
+			id: "firmalife:honeycomb",
+			ForgeCaps: {
+				"tfc:item_heat": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.kaolinitepile.title}",
-	x: -3.25d,
+	x: -3.5d,
 	y: 7.0d,
 	description: "{tfg.quests.primitive.kaolinitepile.subtitle}",
 	dependencies: [

@@ -1,22 +1,21 @@
 {
-	title: "Церера",
+	title: "{planet.ceres}",
 	icon: {
 		id: "ftbquests:custom_icon",
 		tag: {
 			icon: "extraplanets:textures/gui/celestialbodies/ceres.png"
 		}
 	},
-	x: 11.25d,
+	x: 8.25d,
 	y: 6.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"86dfb6d2"
 	],
 	tasks: [{
-		uid: "7aa8cf10",
-		type: "item",
-		items: [{
-			item: "extraplanets:ceres"
-		}]
+		uid: "3a6d8891",
+		type: "dimension",
+		title: "{planet.ceres}",
+		dim: -20
 	}]
 }

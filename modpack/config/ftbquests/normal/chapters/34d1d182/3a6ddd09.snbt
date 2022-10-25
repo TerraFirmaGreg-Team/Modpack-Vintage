@@ -1,0 +1,15 @@
+{
+	x: 35.25d,
+	y: 12.0d,
+	dependencies: [
+		"adaf73c4"
+	],
+	tasks: [{
+		uid: "59499d60",
+		type: "item",
+		items: [{
+			item: "extraplanets:schematic_tier9"
+		}],
+		ignore_nbt: 1b
+	}]
+}

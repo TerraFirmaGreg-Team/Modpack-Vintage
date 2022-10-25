@@ -1,6 +1,6 @@
 {
-	x: -30.0d,
-	y: -1.0d,
+	x: -27.75d,
+	y: -2.25d,
 	description: "{tfg.quests.primitive.leaf_mat.subtitle}",
 	dependencies: [
 		"8fc0c70f"

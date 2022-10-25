@@ -19,7 +19,7 @@
 		}
 	},
 	x: 6.0d,
-	y: -2.0d,
+	y: -2.75d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.nickelpile.subtitle}",
 	hide_dependency_lines: true,
