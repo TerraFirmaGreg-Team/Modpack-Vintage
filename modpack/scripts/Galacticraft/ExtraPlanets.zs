@@ -349,7 +349,7 @@ implosion_compressor.recipeBuilder()
 assembler.recipeBuilder()
    .circuit(1)
    .inputs(
-      <metaitem:plateDoubleLead> * 6, 
+      <metaitem:plateDoubleTungsten> * 6, 
       <extraplanets:cloth> * 4)
    .outputs(<extraplanets:tier1_radiation_layer>)
    .duration(1000).EUt(2280).buildAndRegister();
@@ -357,7 +357,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
    .circuit(2)
    .inputs(
-      <metaitem:plateDoubleLead> * 6, 
+      <metaitem:plateDoubleTungsten> * 6, 
       <extraplanets:cloth> * 4, 
       <extraplanets:tier1_radiation_layer>)
    .outputs(<extraplanets:tier2_radiation_layer>)
@@ -366,7 +366,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
    .circuit(3)
    .inputs(
-      <metaitem:plateDoubleLead> * 6, 
+      <metaitem:plateDoubleTungsten> * 6, 
       <extraplanets:cloth> * 4, 
       <extraplanets:tier2_radiation_layer>)
    .outputs(<extraplanets:tier3_radiation_layer>)
@@ -375,7 +375,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
    .circuit(4)
    .inputs(
-      <metaitem:plateDoubleLead> * 6, 
+      <metaitem:plateDoubleTungsten> * 6, 
       <extraplanets:cloth> * 4, 
       <extraplanets:tier3_radiation_layer>)
    .outputs(<extraplanets:tier4_radiation_layer>)
