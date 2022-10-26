@@ -45,4 +45,7 @@ macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
 
 // --- Добавление рецептов
 
-
+// Щипцы из дерева
+recipes.addShaped("tfg/gt/tongs_wood", <tfgmod:meta_tool>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), 
+    [[null, <ore:stickWood>], 
+    [<ore:stickWood>, <ore:string>]]);

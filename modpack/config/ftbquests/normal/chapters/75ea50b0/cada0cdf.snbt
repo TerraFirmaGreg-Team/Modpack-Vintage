@@ -1,6 +1,6 @@
 {
-	x: 3.0d,
-	y: 1.0d,
+	x: 4.0d,
+	y: 1.75d,
 	tasks: [{
 		uid: "5931ebcc",
 		type: "item",

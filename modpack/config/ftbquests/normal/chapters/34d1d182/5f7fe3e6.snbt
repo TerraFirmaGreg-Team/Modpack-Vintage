@@ -1,10 +1,11 @@
 {
 	title: "{tfg.quests.space.tier1termalarmor.title}",
-	x: -7.75d,
-	y: 14.0d,
+	x: -7.0d,
+	y: 12.0d,
 	description: "{tfg.quests.space.tier1termalarmor.subtitle}",
+	hide_dependency_lines: true,
 	dependencies: [
-		"f0d8edbf"
+		"f7c7757a"
 	],
 	tasks: [{
 		uid: "ee4cc1ca",

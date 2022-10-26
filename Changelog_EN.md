@@ -1,3 +1,145 @@
+# List of changes
+
+## Version R4.1.5a - 10/23/2022
+
+### Modpack fixes
+
+- Fixed crafting of liquid and item cells at 64k.
+- Added Building Gadgets and scripts for it.
+- Optimization and refactor in scripts.
+- Added preliminary recipes for missiles and their components from T7 to T11. Fully implemented will be after the release of GCYS.
+- Fixed stargate crystal recipe.
+- Added quests for different threads, which can be useful for those who do not know about their existence.
+- Completely completed and rewritten Space Age quests.
+- Added craft for moon buggy.
+- Added craft for Mars and Venus rovers.
+- Fixed recipe for wire drawing bench and tongs.
+- Changed quests for planets, now you need to visit the planet in person, and not just touch the pebbles from there.
+- Fixed names for some planets not displaying correctly.
+- Added quests for cheesemakers, in the primitive era.
+- Added quest for Sweet Torch and Light Dust Torch.
+- Added crafting for spacesuit gravity boots and jetpack bibs.
+- Added crafts for the thermal lining tier 5 ExtraPlanets.
+- Changed crafting for all ExtraPlanets thermal pads.
+- Added crafting for ExtraPlanets equipment sets, they are required to quickly put on the right equipment.
+- Added recipe for cutting knife AE2, you need it to rename interfaces in the world, you can also rename them in vanilla anvil. This knife is no longer capable of anything.
+- Crafting a flux block now requires 9 crystals instead of 4.
+- Sunflower oil is now made in the extractor instead of the compressor.
+- Added and changed solar panel recipes from Basic to Ultimate.
+- Added and changed fuel loader recipes from Basic to Ultimate.
+- Added and changed oxygen compressor recipes from Basic to Ultimate.
+- Added and changed recipes for oxygen decompressor from basic to ultimate.
+- Added recipe for base decontaminator block.
+- Added recipe for Chromatic Applicator Block.
+- Replaced mod EnderStorage, fork, with support.
+- Thanks to the TreeChop mod, the tree cutting mechanics have been changed.
+- Fixed a bug where when flying into space and back, the player becomes unkillable.
+- Grass spawn chance reduced from 0.08 to 0.002.
+- Added crafting of Galacticraft magnetic workbench.
+- Changed the textures of the WaterFlasks mod.
+- Changed the texture of the light dust torch and the Galacticraft parachute box, which now looks more high-tech.
+- Added and changed the crafting of all Galacticraft oxygen tanks.
+- Added craft for Galacticraft sensor glasses, which will help to detect ore at close range, about 5-7 blocks, monsters, as well as gaps in the sealing of the space base.
+- Added crafting for a geothermal generator that can be used to generate power on Venus.
+- Added craft for the astronomical miner, you can have them, maximum 2 per player.
+- Now the northern sowing will appear in the sky.
+- Fixed gui texture of the fire pot.
+- Fixed rendering of chests from Florae, thanks to BayerHeroine.
+- Changed the texture of all the stones that lay on the ground, as well as the texture of the bricks.
+- Fixed display of liquid in barrels.
+- Removed duplicate recipe for tongs that only accepted regular string.
+- Fixed a bug with displaying the modpack version when switching the language, with non-standard fonts.
+- Installed SmoothFont, which will allow you to customize the font for yourself.
+- Things do not drop out of the workbench when it is closed, only when it is broken, and the craft is also visible on the workbench itself.
+- Now available in HEI:
+  - History View: The ingredient you have viewed for a recipe will be displayed in the bottom right corner.
+  - Recording Recipes: When you add recipe output to the HEI tab, the current recipe will be written, and opening a recipe through the HEI tab will open the recorded recipe.
+  - Recipe Preview: Hold down the Ctrl key to display the recipe preview in the recipe tab.
+  - Recipe Transfer: You can press ctrl + w to easily transfer a recipe from the recipe bookmark.
+  - Bookmark Picker: Allows the player to use the middle mouse button to select a bookmark and place it in a different position.
+- Added ender bag recipe.
+- Ender chests, tanks, bags are now connected only within the same dimension, but now have a large capacity 3x9 -> 6x9.
+- Diamond "lock" on ender items now prevents other players from changing the color of your chest and prevents other players from copying colors into an ender bag.
+- Now something similar to the mechanics of nutrients in the soil, with some changes, which was present in 1.7.10 TFC. Each plant has a favorite N, P or K nutrient, you can check this by pressing Shift while viewing the respective tooltip. Once the player reaches Adept level in agriculture, pressing shift while holding a hoe and looking at a block will show the nutrient value of that particular block.
+  - Mechanics and details:
+    - Each crop consumes all of its favorite nutrients from the soil to grow from 0% to maturity.
+    - Farmland will passively receive about 3.14% of each nutrient each month of TFC. This means that it takes 32 in-game months to go from 0% to 100%.
+      - If, for example, a crop is planted that uses nutrient N, then that patch of soil will not regenerate nutrient N.
+        - This allows for a strategy of dividing the land into 3 (or more) parts and rotating crops based on their favorite nutrient each season in temperate regions.
+        - In TFC, each crop takes ~4 months to mature.
+    - A mature crop will still use nutrients, so make sure you collect them.
+    - A dead crop left on a piece of land will cause passive nutrient growth to drop by 20%.
+    - Fertilizers are present for each nutrient, which, when used, increase their specific nutritional value by 50%.
+      - Item called "Fertilizer" in TFC is now fertilizer for nutrient K, saltpeter is nutrient N, "Fertilizer (P) for nutrient P.
+      - Type "fertilizer" into HEI, you can check all three of them.
+- Changed the texture of smoke and steam. Now it's like in 1.18
+- Fixed barrel gui texture.
+- Added energy levels for opening and maintaining gates, by planets.
+- Now at the first spawn, a window will appear that allows the player to choose the climate in which he wants to appear when entering the world.
+- Enabled compatibility between ProjectRed and OC.
+- Replaced the mod on the graves, yes, again, only now your corpse will appear when you die and will contain all the items that you had in your inventory. You can access items by right-clicking a corpse. When you get all the items, the corpse will disappear. After 1 hour, the corpse will turn into a skeleton, indicating that it has existed longer. This will not change the functionality of the corpse.
+- Chance of dropping gems when digging a stone changed from 0.008 -> 0.003875
+- The number of heat sources acting on the player has changed 4 -> 10
+- Parrot spawn is enabled.
+- Frequency of generation of underground creepers changed 1.7 -> 5.0
+- Hanging plant frequency changed 1.7 -> 1.0
+- Frequency of generation of underground hanging vines changed 1.5 -> 1.0
+- List of animals that drop rennet now
+  - sheep
+  - cow
+  - deer
+  - goat
+  - zebu
+  - gazelle
+  - wildebeest
+  - muskox
+  - yak
+- Fixed a crash when leaving the server while exploring in the telescope.
+- Added crafting for ExtraPlanets modules, you can open the manager by pressing the H button (configurable), while wearing a space suit.
+- Added crafting for ME Terminal fluid interface configuration and ME Terminal configuration interfaces.
+- Fixed a bug where seeds from ae2 did not grow in the autoclave.
+- The northern lights will now appear in the sky.
+- Added crafting for diaphragms and stargate shield.
+- Changed the crafting of transport rings and components for it.
+- Added and changed the crafting of all three stargates.
+- To earn coins, you can now convert not only gregtech coins, but also wood, with the /convert command.
+
+### New mods
+
+- Building Gadgets
+- NaNPolice
+- Ender Storage continuation
+- TreeChop
+- JEI-Utilities
+- SecureEnderStorage
+- RealBench
+- SmoothFont
+- tfcfarming
+- TFC-TooHotAroundHere
+- Corpse
+
+### Update mods
+
+- Fluid Craft for AE2
+- Appliedenergistics2
+- GregTech Food Option
+- Aunis: Resurrection
+- Konkrete
+- LittleTiles
+- PlanetProgression
+- TFG-mod
+- FastWorkbench
+- Fancymenu
+- CustomSkinLoader
+- CraftTweaker2
+
+### Removed mods
+
+- PotionCore
+- Oxygen-merchants
+- EnderStorage
+- Simple-tomb
+
 # Changelog
 ## Version R4.1.4 - 09/19/2022
 ** Build type is now divided simply by TerraFirmaGreg: New Horizons, and prefixed with Huge

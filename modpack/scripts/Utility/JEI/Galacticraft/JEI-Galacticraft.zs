@@ -170,6 +170,7 @@ val RemoveRecipe as IItemStack[] = [
    <galacticraftcore:collector>,
    <galacticraftcore:item_basic_moon>,
    <galacticraftcore:canister>,
+   <galacticraftcore:oxygen_tank_heavy_full>
 ];
 
 val RemoveRecipeFurnace as IItemStack[] = [
@@ -190,7 +191,13 @@ val RemoveRecipesByName as string[] = [
 	"galacticraftcore:basic_item_17",
 	"galacticraftcore:basic_item_16",
 	"galacticraftcore:basic_item_15",
-   "galacticraftcore:furnace"
+   "galacticraftcore:furnace",
+   "galacticraftcore:oxygen_tank_light_full",
+   "galacticraftcore:oxygen_tank_med_full",
+   "galacticraftcore:oxygen_tank_heavy_full",
+   "galacticraftcore:oxygen_tank_light_full_1",
+   "galacticraftcore:oxygen_tank_med_full_1",
+   "galacticraftcore:oxygen_tank_heavy_full_1"
 ];
 
 

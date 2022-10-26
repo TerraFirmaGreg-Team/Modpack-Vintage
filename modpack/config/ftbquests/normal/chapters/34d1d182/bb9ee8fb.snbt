@@ -2,6 +2,9 @@
 	x: -3.5d,
 	y: 15.0d,
 	description: "{tfg.quests.space.flag.subtitle}",
+	dependencies: [
+		"f0d8edbf"
+	],
 	tasks: [{
 		uid: "1276e4bf",
 		type: "item",

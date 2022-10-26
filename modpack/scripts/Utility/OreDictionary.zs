@@ -432,7 +432,7 @@ for item in TFC_Saws {
 // Стеклянный кабель
 for glassCable in glassCables {
     <ore:ae2.cable.glass>.add(glassCable);
-    if (glassCable.displayName has "Fluix") {}
+    if (glassCable has <appliedenergistics2:part:16>) {}
     else {
         <ore:ae2.cable.glass.colors>.add(glassCable);
     }
@@ -440,7 +440,7 @@ for glassCable in glassCables {
 // Закрытый кабель
 for coveredCable in coveredCables {
     <ore:ae2.cable.covered>.add(coveredCable);
-    if (coveredCable.displayName has "Fluix") {}
+    if (coveredCable has <appliedenergistics2:part:36>) {}
     else {
         <ore:ae2.cable.covered.colors>.add(coveredCable);
     }
@@ -448,7 +448,7 @@ for coveredCable in coveredCables {
 // Умный кабель
 for smartCable in smartCables {
     <ore:ae2.cable.smart>.add(smartCable);
-    if (smartCable.displayName has "Fluix") {}
+    if (smartCable has <appliedenergistics2:part:56>) {}
     else {
         <ore:ae2.cable.smart.colors>.add(smartCable);
     }
@@ -456,7 +456,7 @@ for smartCable in smartCables {
 // Плотный закрытый кабель
 for denseCoveredCable in denseCoveredCables {
     <ore:ae2.cable.dense.covered>.add(denseCoveredCable);
-    if (denseCoveredCable.displayName has "Fluix") {}
+    if (denseCoveredCable has <appliedenergistics2:part:516>) {}
     else {
         <ore:ae2.cable.dense.covered.colors>.add(denseCoveredCable);
     }
@@ -464,7 +464,7 @@ for denseCoveredCable in denseCoveredCables {
 // Плотный умный кабель
 for denseSmartCable in denseSmartCables {
     <ore:ae2.cable.dense.smart>.add(denseSmartCable);
-    if (denseSmartCable.displayName has "Fluix") {}
+    if (denseSmartCable has <appliedenergistics2:part:76>) {}
     else {
         <ore:ae2.cable.dense.smart.colors>.add(denseSmartCable);
     }
@@ -499,7 +499,19 @@ for paintBallLumen in paintBallsLumen {
 
 // --- Добавление
 
-
+<ore:dustIlluminar>.add(illuminarsArray);
+<ore:lampBlockDeactivated>.add(deactivatedLampsArray);
+<ore:lampBlockActivated>.add(activatedLampsArray);
+<ore:lampButton>.add(buttonLampsArray);
+<ore:lampButtonFeedback>.add(feedbackLampsArray);
+<ore:lampLanternDeactivated>.add(deactivatedLanternLampsArray);
+<ore:lampLanternActivated>.add(activatedLanternLampsArray);
+<ore:lampFixtureDeactivated>.add(deactivatedFixtureLampsArray);
+<ore:lampFixtureActivated>.add(deactivatedFixtureLampsArray);
+<ore:lampFalloutDeactivated>.add(deactivatedFalloutLampsArray);
+<ore:lampFalloutActivated>.add(activatedFalloutLampsArray);
+<ore:lampCageDeactivated>.add(deactivatedCageLampsArray);
+<ore:lampCageActivated>.add(activatedCageLampsArray);
 
 // --- Удаление
 

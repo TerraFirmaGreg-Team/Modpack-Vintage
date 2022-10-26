@@ -1,8 +1,12 @@
 {
 	title: "{tfg.quests.space.painter.title}",
-	x: 5.75d,
-	y: 19.75d,
+	x: 16.25d,
+	y: 16.25d,
 	description: "{tfg.quests.space.painter.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
 	optional: true,
 	tasks: [{
 		uid: "7472bd63",

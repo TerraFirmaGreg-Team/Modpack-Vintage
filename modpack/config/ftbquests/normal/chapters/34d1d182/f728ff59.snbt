@@ -17,5 +17,10 @@
 	tasks: [{
 		uid: "edb053f2",
 		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "57afd634",
+		type: "item",
+		item: "galacticraftcore:prelaunch_checklist"
 	}]
 }

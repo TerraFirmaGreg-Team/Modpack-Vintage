@@ -327,15 +327,15 @@ alloy_smelter.recipeBuilder()
 // Pure Fluix Crystal
 mixer.recipeBuilder()
   .inputs([<metaitem:dustFluix>, <ore:sand>])
-  .outputs([<appliedenergistics2:crystal_seed:1200> * 2])
+  .outputs([<appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}) * 2])
   .duration(20).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed:1200>])
+  .inputs(<appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}))
   .fluidInputs([<liquid:distilled_water> * 144])
  	.chancedOutput(<appliedenergistics2:material:12> * 1, 8600, 700)
   .duration(50).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
- 	.inputs(<appliedenergistics2:crystal_seed:1200> * 1)
+  .inputs(<appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}))
  	.fluidInputs([<liquid:water> * 144])
  	.chancedOutput(<appliedenergistics2:material:12> * 1, 7500, 500)
   .duration(50).EUt(480).buildAndRegister();
@@ -343,15 +343,15 @@ autoclave.recipeBuilder()
 // Pure Certus Quartz Crystal
 mixer.recipeBuilder()
   .inputs([<metaitem:dustCertusQuartz>, <ore:sand>])
-  .outputs([<appliedenergistics2:crystal_seed> * 2])
+  .outputs([<appliedenergistics2:crystal_seed>.withTag({progress: 0}) * 2])
   .duration(20).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed>])
+  .inputs([<appliedenergistics2:crystal_seed>.withTag({progress: 0})])
   .fluidInputs([<liquid:distilled_water> * 144])
   .chancedOutput(<appliedenergistics2:material:10> * 1, 8600, 700)
   .duration(50).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed>])
+  .inputs([<appliedenergistics2:crystal_seed>.withTag({progress: 0})])
   .fluidInputs([<liquid:water> * 144])
   .chancedOutput(<appliedenergistics2:material:10> * 1, 7500, 500)
   .duration(50).EUt(480).buildAndRegister();
@@ -359,15 +359,15 @@ autoclave.recipeBuilder()
 // Pure Nether Quartz Crystal
 mixer.recipeBuilder()
   .inputs([<metaitem:dustNetherQuartz>, <ore:sand>])
-  .outputs([<appliedenergistics2:crystal_seed:600> * 2])
+  .outputs([<appliedenergistics2:crystal_seed:600>.withTag({progress: 600}) * 2])
   .duration(20).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed:600>])
+  .inputs([<appliedenergistics2:crystal_seed:600>.withTag({progress: 600})])
   .fluidInputs([<liquid:distilled_water> * 144])
   .chancedOutput(<appliedenergistics2:material:11> * 1, 8600, 700)
   .duration(50).EUt(480).buildAndRegister();
 autoclave.recipeBuilder()
-  .inputs([<appliedenergistics2:crystal_seed:600>])
+  .inputs([<appliedenergistics2:crystal_seed:600>.withTag({progress: 600})])
   .fluidInputs([<liquid:water> * 144])
   .chancedOutput(<appliedenergistics2:material:11> * 1, 7500, 500)
   .duration(50).EUt(480).buildAndRegister();
@@ -1295,7 +1295,7 @@ recipes.addShaped("tfg/ae2/storage_drive", <appliedenergistics2:drive>, [
 
 // Cutting knife
 recipes.addShaped("tfg/ae2/cutting_knife", <appliedenergistics2:certus_quartz_cutting_knife>, [
-	[null, <ore:circuitMv>, <metaitem:stickTreatedWood>],
+	[null, null, <metaitem:stickTreatedWood>],
 	[<minecraft:iron_ingot>, <metaitem:stickTreatedWood>, null],
 	[<metaitem:gemCertusQuartz>, <metaitem:gemCertusQuartz>, null]]);
 
@@ -1493,15 +1493,15 @@ recipes.addShaped("tfg/ae2/planes_formation", <appliedenergistics2:part:320>, [
 
 // ME Terminal
 recipes.addShaped("tfg/ae2/terminals", <appliedenergistics2:part:380>, [
-  [<metaitem:stickSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:stickSteel>],
-  [<ore:itemIlluminatedPanel>, <ore:circuitHv>, <metaitem:plateSteel>],
-  [<metaitem:stickSteel>,  <metaitem:screwSteel>, <metaitem:stickSteel>]]);
+  [<ore:gtce.tool.screwdrivers>, <ore:itemIlluminatedPanel>, <ore:gtce.tool.soft.hammers>],
+  [<metaitem:stickSteel>, <ore:circuitHv>, <metaitem:stickSteel>],
+  [<metaitem:plateSteel>,  <metaitem:screwSteel>, <metaitem:plateSteel>]]);
 
 // ME Fluid Terminal
 recipes.addShaped("tfg/ae2/terminals_fluid", <appliedenergistics2:part:520>, [
-  [<metaitem:stickStainlessSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:stickStainlessSteel>],
-  [<ore:itemIlluminatedPanel>, <ore:circuitHv>, <metaitem:plateStainlessSteel>],
-  [<metaitem:stickStainlessSteel>,  <metaitem:screwStainlessSteel>, <metaitem:stickStainlessSteel>]]);
+  [<ore:gtce.tool.screwdrivers>, <ore:itemIlluminatedPanel>, <ore:gtce.tool.soft.hammers>],
+  [<metaitem:stickStainlessSteel>, <ore:circuitHv>, <metaitem:stickStainlessSteel>],
+  [<metaitem:plateStainlessSteel>,  <metaitem:screwStainlessSteel>, <metaitem:plateStainlessSteel>]]);
 
 // ME Crafting Terminal
 recipes.addShaped("tfg/ae2/terminals_crafting", <appliedenergistics2:part:360>, [
@@ -1526,6 +1526,18 @@ recipes.addShaped("tfg/ae2/terminals_extended_pattern", <appliedenergistics2:par
     [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:340>, <ore:gtce.tool.soft.hammers>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:52>, <metaitem:plateTitanium>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:24>, <metaitem:plateTitanium>]]);
+
+// МЭ Терминал жидкостной конфигурации интерфейсов
+recipes.addShaped("tfg/ae2/terminals_conf_interface_fluid", <appliedenergistics2:part:522>, [
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:480>, <ore:gtce.tool.soft.hammers>],
+    [<metaitem:stickTitanium>, <appliedenergistics2:part:520>, <metaitem:stickTitanium>],
+    [<metaitem:plateTitanium>, <metaitem:screwTitanium>, <metaitem:plateTitanium>]]);
+
+// МЭ Терминал конфигурации интерфейсов
+recipes.addShaped("tfg/ae2/terminals_conf_interface", <appliedenergistics2:part:521>, [
+    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:480>, <ore:gtce.tool.soft.hammers>],
+    [<metaitem:stickTitanium>, <appliedenergistics2:part:380>, <metaitem:stickTitanium>],
+    [<metaitem:plateTitanium>, <metaitem:screwTitanium>, <metaitem:plateTitanium>]]);
 
 // Переносное предметное хранилище
 assembler.recipeBuilder()

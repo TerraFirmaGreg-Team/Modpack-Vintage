@@ -1,0 +1,52 @@
+{
+	x: -8.0d,
+	y: 12.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "eb61302e",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_helmet",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "33122f89",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_chest",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3b2af3ad",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_legings",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f680c3bd",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_boots",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
