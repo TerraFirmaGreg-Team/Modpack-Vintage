@@ -1,5 +1,22 @@
 # List of changes
 
+## Version R4.1.6 - 10/25/2022
+
+### Modpack fixes
+- In the crafting of anti-radiation plates, the double plates of lead were replaced with double plates of tungsten, due to the gt bug.
+- Removed SecureEnderStorage, was causing strange behavior on the server.
+- Fixed sound when running as if you have 4 legs.
+- Now everyone who found it can open corpses.
+- Fixed recipe for wooden tongs, it was crafted with zero durability.
+### Update mods
+- Appliedenergistics2
+- Fancy menu
+- TFGmod
+
+### Removed Mods
+- SecureEnderStorage
+
+
 ## Version R4.1.5a - 10/23/2022
 
 ### Modpack fixes
