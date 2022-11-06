@@ -357,9 +357,9 @@ for item in TFC_Saws {
     <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
 ]);
 // Скалки
-// <ore:gtce.tool.rolling.pins>.addItems([
-//     <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
-// ]);
+<ore:gtce.tool.rolling.pins>.addItems([
+    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+]);
 // Щипцы
 <ore:gtce.tool.tongs>.addItems([
     <tfgmod:meta_tool>.withEmptyTag()
