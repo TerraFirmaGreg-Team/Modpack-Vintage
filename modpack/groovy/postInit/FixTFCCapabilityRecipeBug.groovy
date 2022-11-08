@@ -523,6 +523,12 @@ for (int i = 0; i < SmallStonewareClayUnfiredColoredVessels.size(); i++) {
 
 // Clay Made Items
 for (int i = 0; i < ClayMadeFiredItems.size(); i++) {
+    mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('minecraft:clay_ball') * 3)
+        .circuitMeta(i + 1)
+        .outputs(ClayMadeUnfiredItems[i])
+        .duration(200).EUt(3).buildAndRegister()
+    
     mods.gregtech.macerator.recipeBuilder()
         .inputs(ClayMadeUnfiredItems[i])
         .outputs(metaitem('dustClay') * 3)
@@ -536,6 +542,12 @@ for (int i = 0; i < ClayMadeFiredItems.size(); i++) {
 
 // Earthenware Clay Made Items
 for (int i = 0; i < EathenwareClayMadeUnfiredItems.size(); i++) {
+    mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 3)
+        .circuitMeta(i + 1)
+        .outputs(EathenwareClayMadeUnfiredItems[i])
+        .duration(200).EUt(3).buildAndRegister()
+    
     mods.gregtech.macerator.recipeBuilder()
         .inputs(EathenwareClayMadeUnfiredItems[i])
         .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
@@ -548,7 +560,13 @@ for (int i = 0; i < EathenwareClayMadeUnfiredItems.size(); i++) {
 }
 
 // Kaolinite Clay Made Items
-for (int i = 0; i < KaoliniteClayMadeFiredItems.size(); i++) {
+for (int i = 0; i < KaoliniteClayMadeUnfiredItems.size(); i++) {
+    mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 3)
+        .circuitMeta(i + 1)
+        .outputs(KaoliniteClayMadeUnfiredItems[i])
+        .duration(200).EUt(3).buildAndRegister()
+
     mods.gregtech.macerator.recipeBuilder()
         .inputs(KaoliniteClayMadeUnfiredItems[i])
         .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
@@ -561,7 +579,13 @@ for (int i = 0; i < KaoliniteClayMadeFiredItems.size(); i++) {
 }
 
 // Stoneware Clay Made Items
-for (int i = 0; i < StonewareClayMadeFiredItems.size(); i++) {
+for (int i = 0; i < StonewareClayMadeUnfiredItems.size(); i++) {
+    mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 3)
+        .circuitMeta(i + 1)
+        .outputs(StonewareClayMadeUnfiredItems[i])
+        .duration(200).EUt(3).buildAndRegister()
+
     mods.gregtech.macerator.recipeBuilder()
         .inputs(StonewareClayMadeUnfiredItems[i])
         .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
@@ -572,3 +596,106 @@ for (int i = 0; i < StonewareClayMadeFiredItems.size(); i++) {
         .outputs(StonewareClayMadeFiredItems[i])
         .duration(100).EUt(3).buildAndRegister()
 }
+
+// TFC Clay Bricks
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('minecraft:clay_ball'))
+        .circuitMeta(0)
+        .outputs(item('tfc:ceramics/unfired/clay_brick') * 3)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/clay_brick'))
+        .outputs(metaitem('dustClay')) 
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/clay_brick'))
+        .outputs(item('minecraft:brick'))
+        .duration(100).EUt(3).buildAndRegister()
+
+// Florae Eathenware Clay Bricks
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay'))
+        .circuitMeta(0)
+        .outputs(item('tfcflorae:ceramics/earthenware/unfired/earthenware_brick') * 3)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/earthenware/unfired/earthenware_brick'))
+        .outputs(metaitem('dustClay')) // TODO: Заменить на новый материал созданный в GT.
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/earthenware/unfired/earthenware_brick'))
+        .outputs(item('tfcflorae:ceramics/earthenware/fired/earthenware_brick'))
+        .duration(100).EUt(3).buildAndRegister()
+
+// Florae Kaolinite Clay Bricks
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
+        .circuitMeta(0)
+        .outputs(item('tfcflorae:ceramics/kaolinite/unfired/kaolinite_brick') * 3)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/kaolinite/unfired/kaolinite_brick'))
+        .outputs(metaitem('dustClay')) // TODO: Заменить на новый материал созданный в GT.
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/kaolinite/unfired/kaolinite_brick'))
+        .outputs(item('tfcflorae:ceramics/kaolinite/fired/kaolinite_brick'))
+        .duration(100).EUt(3).buildAndRegister()
+
+
+// Florae Stoneware Clay Bricks
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay'))
+        .circuitMeta(0)
+        .outputs(item('tfcflorae:ceramics/stoneware/unfired/stoneware_brick') * 3)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/stoneware/unfired/stoneware_brick'))
+        .outputs(metaitem('dustClay')) // TODO: Заменить на новый материал созданный в GT.
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfcflorae:ceramics/stoneware/unfired/stoneware_brick'))
+        .outputs(item('tfcflorae:ceramics/stoneware/fired/stoneware_brick'))
+        .duration(100).EUt(3).buildAndRegister()
+
+// TFC Fire Clay
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('tfc:ceramics/fire_clay'))
+        .circuitMeta(0)
+        .outputs(item('tfc:ceramics/unfired/fire_brick') * 3)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/fire_brick'))
+        .outputs(metaitem('dustFireclay'))
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/fire_brick'))
+        .outputs(item('tfc:ceramics/fired/fire_brick'))
+        .duration(100).EUt(3).buildAndRegister()
+
+// TFC Flower Pot
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('minecraft:clay_ball'))
+        .circuitMeta(20)
+        .outputs(item('tfc:ceramics/unfired/clay_flower_pot') * 2)
+        .duration(200).EUt(3).buildAndRegister()
+
+mods.gregtech.macerator.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/clay_flower_pot'))
+        .outputs(metaitem('dustClay')) 
+        .duration(15).EUt(3).buildAndRegister()
+
+mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(item('tfc:ceramics/unfired/clay_flower_pot'))
+        .outputs(item('minecraft:flower_pot'))
+        .duration(100).EUt(3).buildAndRegister()
