@@ -191,7 +191,11 @@ def ClayMadeUnfiredItems = [
         item('tfc:ceramics/unfired/mold/shovel_head'),
         item('tfc:ceramics/unfired/mold/pick_head'),
         item('tfc:ceramics/unfired/mold/ingot'),
-        item('firmalife:unfired_mallet_mold')
+        item('firmalife:unfired_mallet_mold'),
+        item('tfctech:ceramics/unfired/glass_block'),
+        item('tfctech:ceramics/unfired/glass_pane'),
+        item('tfctech:ceramics/unfired/sleeve'),
+        item('tfctech:ceramics/unfired/rackwheel_piece')
 ]
 
 def ClayMadeFiredItems = [
@@ -214,7 +218,11 @@ def ClayMadeFiredItems = [
         item('tfc:ceramics/fired/mold/shovel_head'),
         item('tfc:ceramics/fired/mold/pick_head'),
         item('tfc:ceramics/fired/mold/ingot'),
-        item('firmalife:mallet_mold')
+        item('firmalife:mallet_mold'),
+        item('tfctech:ceramics/mold/glass_block'),
+        item('tfctech:ceramics/mold/glass_pane'),
+        item('tfctech:ceramics/mold/sleeve'),
+        item('tfctech:ceramics/mold/rackwheel_piece')
 ]
 
 def EathenwareClayMadeUnfiredItems = [
@@ -353,6 +361,108 @@ def StonewareClayMadeFiredItems = [
         item('tfcflorae:ceramics/stoneware/fired/mold/pick_head'),
         item('tfcflorae:ceramics/stoneware/fired/mold/ingot'),
         item('tfcflorae:ceramics/stoneware/fired/mold/mallet_head')
+]
+
+def MudBalls = [
+        item('tfcflorae:mud/mud_ball/catlinite'),
+        item('tfcflorae:mud/mud_ball/novaculite'),
+        item('tfcflorae:mud/mud_ball/soapstone'),
+        item('tfcflorae:mud/mud_ball/komatiite'),
+        item('tfcflorae:mud/mud_ball/granite'),
+        item('tfcflorae:mud/mud_ball/diorite'),
+        item('tfcflorae:mud/mud_ball/gabbro'),
+        item('tfcflorae:mud/mud_ball/shale'),
+        item('tfcflorae:mud/mud_ball/claystone'),
+        item('tfcflorae:mud/mud_ball/rocksalt'),
+        item('tfcflorae:mud/mud_ball/limestone'),
+        item('tfcflorae:mud/mud_ball/conglomerate'),
+        item('tfcflorae:mud/mud_ball/dolomite'),
+        item('tfcflorae:mud/mud_ball/chert'),
+        item('tfcflorae:mud/mud_ball/chalk'),
+        item('tfcflorae:mud/mud_ball/rhyolite'),
+        item('tfcflorae:mud/mud_ball/basalt'),
+        item('tfcflorae:mud/mud_ball/andesite'),
+        item('tfcflorae:mud/mud_ball/dacite'),
+        item('tfcflorae:mud/mud_ball/quartzite'),
+        item('tfcflorae:mud/mud_ball/slate'),
+        item('tfcflorae:mud/mud_ball/phyllite'),
+        item('tfcflorae:mud/mud_ball/schist'),
+        item('tfcflorae:mud/mud_ball/gneiss'),
+        item('tfcflorae:mud/mud_ball/marble'),
+        item('tfcflorae:mud/mud_ball/breccia'),
+        item('tfcflorae:mud/mud_ball/porphyry'),
+        item('tfcflorae:mud/mud_ball/peridotite'),
+        item('tfcflorae:mud/mud_ball/mudstone'),
+        item('tfcflorae:mud/mud_ball/sandstone'),
+        item('tfcflorae:mud/mud_ball/siltstone')
+]
+
+def MudBricksUnfired = [
+        item('tfcflorae:mud/unfired/mud_brick/catlinite'),
+        item('tfcflorae:mud/unfired/mud_brick/novaculite'),
+        item('tfcflorae:mud/unfired/mud_brick/soapstone'),
+        item('tfcflorae:mud/unfired/mud_brick/komatiite'),
+        item('tfcflorae:mud/unfired/mud_brick/granite'),
+        item('tfcflorae:mud/unfired/mud_brick/diorite'),
+        item('tfcflorae:mud/unfired/mud_brick/gabbro'),
+        item('tfcflorae:mud/unfired/mud_brick/shale'),
+        item('tfcflorae:mud/unfired/mud_brick/claystone'),
+        item('tfcflorae:mud/unfired/mud_brick/rocksalt'),
+        item('tfcflorae:mud/unfired/mud_brick/limestone'),
+        item('tfcflorae:mud/unfired/mud_brick/conglomerate'),
+        item('tfcflorae:mud/unfired/mud_brick/dolomite'),
+        item('tfcflorae:mud/unfired/mud_brick/chert'),
+        item('tfcflorae:mud/unfired/mud_brick/chalk'),
+        item('tfcflorae:mud/unfired/mud_brick/rhyolite'),
+        item('tfcflorae:mud/unfired/mud_brick/basalt'),
+        item('tfcflorae:mud/unfired/mud_brick/andesite'),
+        item('tfcflorae:mud/unfired/mud_brick/dacite'),
+        item('tfcflorae:mud/unfired/mud_brick/quartzite'),
+        item('tfcflorae:mud/unfired/mud_brick/slate'),
+        item('tfcflorae:mud/unfired/mud_brick/phyllite'),
+        item('tfcflorae:mud/unfired/mud_brick/schist'),
+        item('tfcflorae:mud/unfired/mud_brick/gneiss'),
+        item('tfcflorae:mud/unfired/mud_brick/marble'),
+        item('tfcflorae:mud/unfired/mud_brick/breccia'),
+        item('tfcflorae:mud/unfired/mud_brick/porphyry'),
+        item('tfcflorae:mud/unfired/mud_brick/peridotite'),
+        item('tfcflorae:mud/unfired/mud_brick/mudstone'),
+        item('tfcflorae:mud/unfired/mud_brick/sandstone'),
+        item('tfcflorae:mud/unfired/mud_brick/siltstone')
+]
+
+def MudBricksFired = [
+        item('tfcflorae:mud/fired/mud_brick/catlinite'),
+        item('tfcflorae:mud/fired/mud_brick/novaculite'),
+        item('tfcflorae:mud/fired/mud_brick/soapstone'),
+        item('tfcflorae:mud/fired/mud_brick/komatiite'),
+        item('tfcflorae:mud/fired/mud_brick/granite'),
+        item('tfcflorae:mud/fired/mud_brick/diorite'),
+        item('tfcflorae:mud/fired/mud_brick/gabbro'),
+        item('tfcflorae:mud/fired/mud_brick/shale'),
+        item('tfcflorae:mud/fired/mud_brick/claystone'),
+        item('tfcflorae:mud/fired/mud_brick/rocksalt'),
+        item('tfcflorae:mud/fired/mud_brick/limestone'),
+        item('tfcflorae:mud/fired/mud_brick/conglomerate'),
+        item('tfcflorae:mud/fired/mud_brick/dolomite'),
+        item('tfcflorae:mud/fired/mud_brick/chert'),
+        item('tfcflorae:mud/fired/mud_brick/chalk'),
+        item('tfcflorae:mud/fired/mud_brick/rhyolite'),
+        item('tfcflorae:mud/fired/mud_brick/basalt'),
+        item('tfcflorae:mud/fired/mud_brick/andesite'),
+        item('tfcflorae:mud/fired/mud_brick/dacite'),
+        item('tfcflorae:mud/fired/mud_brick/quartzite'),
+        item('tfcflorae:mud/fired/mud_brick/slate'),
+        item('tfcflorae:mud/fired/mud_brick/phyllite'),
+        item('tfcflorae:mud/fired/mud_brick/schist'),
+        item('tfcflorae:mud/fired/mud_brick/gneiss'),
+        item('tfcflorae:mud/fired/mud_brick/marble'),
+        item('tfcflorae:mud/fired/mud_brick/breccia'),
+        item('tfcflorae:mud/fired/mud_brick/porphyry'),
+        item('tfcflorae:mud/fired/mud_brick/peridotite'),
+        item('tfcflorae:mud/fired/mud_brick/mudstone'),
+        item('tfcflorae:mud/fired/mud_brick/sandstone'),
+        item('tfcflorae:mud/fired/mud_brick/siltstone')
 ]
 
 def AllMinecraftDyeFluids = [
@@ -686,7 +796,7 @@ mods.gregtech.electric_furnace.recipeBuilder()
 // TFC Flower Pot
 mods.gregtech.assembler.recipeBuilder()
         .inputs(item('minecraft:clay_ball'))
-        .circuitMeta(20)
+        .circuitMeta(21)
         .outputs(item('tfc:ceramics/unfired/clay_flower_pot') * 2)
         .duration(200).EUt(3).buildAndRegister()
 
@@ -699,3 +809,17 @@ mods.gregtech.electric_furnace.recipeBuilder()
         .inputs(item('tfc:ceramics/unfired/clay_flower_pot'))
         .outputs(item('minecraft:flower_pot'))
         .duration(100).EUt(3).buildAndRegister()
+
+// Mud Bricks
+for (int i = 0; i < MudBalls.size(); i++) {
+    mods.gregtech.assembler.recipeBuilder()
+        .inputs(MudBalls[i] * 3)
+        .circuitMeta(0)
+        .outputs(MudBricksUnfired[i])
+        .duration(200).EUt(3).buildAndRegister()
+
+    mods.gregtech.electric_furnace.recipeBuilder()
+        .inputs(MudBricksUnfired[i])
+        .outputs(MudBricksFired[i])
+        .duration(100).EUt(3).buildAndRegister()
+}
