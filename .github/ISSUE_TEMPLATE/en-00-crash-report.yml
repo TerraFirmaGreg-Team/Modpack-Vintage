@@ -2,22 +2,16 @@ name: "[EN] Crash Report"
 description: Report a bug that crashes the game or prevents startup.
 labels: [ "status: unverified", "type: сrash" ]
 body:
-  - type: input
+  - type: dropdown
     id: version
     attributes:
-      label: Modpack Used
-      description: Modpack type and version used when this error was encountered.
-      placeholder: "Example: TFG:NH v4.1.4"
+      label: Version modpack Used
+      description: Where the game crashed.
+      options:
+        - "Default"
+        - "Extended"
     validations:
       required: true
-  - type: textarea
-    id: additional
-    attributes:
-      label: Additional mods
-      description: The mods and their respective versions used when this bug was encountered. If you were not using mods, please leave this field blank.
-      placeholder: "Example: Xaero's Minimap v1.1.3"
-    validations:
-      required: false
   - type: input
     id: environment
     attributes:

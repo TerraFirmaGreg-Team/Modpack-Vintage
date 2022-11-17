@@ -2,12 +2,14 @@ name: "[EN] Request a Feature"
 description: Request a new feature or a change to an existing one.
 labels: [ "type: feature" ]
 body:
-  - type: input
+  - type: dropdown
     id: version
     attributes:
-      label: Modpack Used
-      description: Modpack type and version used when this error was encountered.
-      placeholder: "Example: TFG:NH v4.1.4"
+      label: Version modpack Used
+      description: Where the game crashed.
+      options:
+        - "Default"
+        - "Extended"
     validations:
       required: true
   - type: textarea
