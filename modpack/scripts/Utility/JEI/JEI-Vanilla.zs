@@ -311,7 +311,8 @@ assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.inte
 // Chiseled Sandstone
 laser_engraver.findRecipe(16, [<minecraft:sandstone:2>, <metaitem:lensGlass>], null).remove();
 // Sandstone
-assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
 // Sandstone
 compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
 // Sand
@@ -333,7 +334,7 @@ forge_hammer.findRecipe(2, [<minecraft:red_sandstone:0>], null).remove();
 // Chiseled Red Sandstone
 laser_engraver.findRecipe(16, [<minecraft:red_sandstone:2>, <metaitem:lensGlass>], null).remove();
 // Red Sandstone
-assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Деревянные ступени
 // Oak Wood Stairs

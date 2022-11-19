@@ -1347,6 +1347,7 @@ recipes.addShaped("tfg/ae2/spatial_io_port",<appliedenergistics2:spatial_io_port
 
 // Интерфейс
 recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
+recipes.addShapeless(<appliedenergistics2:part:440>, [<appliedenergistics2:interface>]);
 // MV
 assembler.recipeBuilder()
   .inputs([
@@ -1396,6 +1397,7 @@ assembler.recipeBuilder()
 
 // Жидкостный интерфейс
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
+recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 // MV
 assembler.recipeBuilder()
   .inputs([
