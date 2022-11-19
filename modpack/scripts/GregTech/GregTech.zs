@@ -12,13 +12,6 @@ val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
 
 // --- Добавление рецептов
-
-// !Удалить после исправления дюпа капсул
-bender.recipeBuilder()
-    .inputs(<gregtech:meta_plate:324>)
-    .circuit(13)
-    .outputs(<gregtech:meta_item_1:79>)
-    .duration(100).EUt(7).buildAndRegister();
 // !Удалить после исправления Контролера напряжения
 recipes.remove(<metaitem:gcym:tiered_hatch.uhv>);
 recipes.addShaped("tfg/gregtech/tiered_hatch_uv", <metaitem:gcym:tiered_hatch.uv>, [
