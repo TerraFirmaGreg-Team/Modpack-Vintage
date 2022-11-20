@@ -1,5 +1,52 @@
 # List of changes
 
+## Version R4.1.7 - 11/21/2022
+
+### Modpack fixes
+- Added more service information and RAM consumption to the loading screen.
+- Sheep spawn increased by 30%.
+- Nutrient source ~N~ is now GT Saltpeter instead of TFC.
+- Fixed a bug that caused some crop drops to not register.
+- Adds and fixes many missing or poorly defined recipes for the Firmalife planter.
+- Fixed placement of rice in water
+- Fixed a lot of not working recipes.
+- Minor quest fixes.
+- The chance of storms and cyclones spawning has been increased.
+- Capsule dupe fixed.
+- A lot of balancing in the temperature system.
+- Disabled inhabitants on planets.
+- Added recipe for flat versions of blocky AE interfaces.
+- Fixed the quest for the singularity when accepting the engineering processor instead of the singularity itself.
+- Fixed the recipe for soaked planks not spending the creosote capsule.
+- Changed recipe for AE processors.
+- Miners now dig chunks of ore instead of blocks.
+- Weather2 replaced with Weather2 Remastered, supported fork, with optimizations and bug fixes.
+### New mods
+- Floraefixes
+- GroovyScript
+- Gregification
+- Weather 2 Remastered
+### Update mods
+- Appliedenergistics2
+- fancy menu
+- TFGmod
+- Gregtech
+- GregTech Food Option
+- Greekity Multiblocks
+- Multiblocktweaker
+- BogoSorter
+- Galacticraft
+- TFCFarming
+- Fluid Craft for AE2
+- Mixinbooter
+- CraftTweaker2
+- HadEnoughItems
+- Little Tiles
+- TFC-Ambiental
+- JEI Utilities
+### Removed mods
+- Weather2
+
 ## Version R4.1.6 - 10/25/2022
 
 ### Modpack fixes
