@@ -18,10 +18,13 @@
 - Добавлен рецепт для плоских версий интерфейсов AE из блочных.
 - Исправлен квест на сингулярность, когда принимался инжинерный процессор, вместо самой сингулярности.
 - Исправлен рецепт пропитанных досок, когда не тратилась капсула с креозотом.
+- Изменен рецепт процессоров AE.
+- 
 ### Новые моды
 - Floraefixes
 - GroovyScript
 - Gregification
+- UniversalTweaks
 ### Обновление модов
 - Appliedenergistics2
 - Fancymenu
@@ -38,7 +41,10 @@
 - CraftTweaker2
 - HadEnoughItems
 - LittleTiles
-- tfcambiental
+- TFC-Ambiental
+- JEI-Utilities
+### Удаленные моды
+- Surge
 
 ## Version R4.1.6 - 25.10.2022
 
