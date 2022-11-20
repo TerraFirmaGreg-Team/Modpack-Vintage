@@ -20,10 +20,12 @@
 - Исправлен рецепт пропитанных досок, когда не тратилась капсула с креозотом.
 - Изменен рецепт процессоров AE.
 - Майнеры теперь копают куски руды, вместо блоков.
+- Weather2 заменен на Weather2 Remastered, поддерживаемый форк, с оптимизациями и исправлением ошибок.
 ### Новые моды
 - Floraefixes
 - GroovyScript
 - Gregification
+- Weather 2 Remastered
 ### Обновление модов
 - Appliedenergistics2
 - Fancymenu
@@ -42,6 +44,8 @@
 - LittleTiles
 - TFC-Ambiental
 - JEI-Utilities
+- ### Удаленные моды
+- Weather2
 
 ## Version R4.1.6 - 25.10.2022
 
