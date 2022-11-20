@@ -24,7 +24,6 @@
 - Floraefixes
 - GroovyScript
 - Gregification
-- UniversalTweaks
 ### Обновление модов
 - Appliedenergistics2
 - Fancymenu
@@ -43,8 +42,6 @@
 - LittleTiles
 - TFC-Ambiental
 - JEI-Utilities
-### Удаленные моды
-- Surge
 
 ## Version R4.1.6 - 25.10.2022
 
