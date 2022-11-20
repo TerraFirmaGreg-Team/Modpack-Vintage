@@ -19,7 +19,9 @@ val hideCategory as string[] = [
 	"galacticraft.rocketT3",
 	"galacticraft.astroMiner",
 	"galacticraft.rocketT2",
-	"galacticraft.cargoRocket"
+	"galacticraft.cargoRocket",
+	"tfc.rock_layer",
+	"tfc.vein"
 ];
 for item in hideCategory {
 	JEI.hideCategory(item);
