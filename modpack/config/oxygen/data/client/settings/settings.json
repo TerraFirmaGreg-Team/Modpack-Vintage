@@ -2,12 +2,12 @@
   "alignment_exchange_menu": 0,
   "alignment_mail_menu": 0,
   "alignment_market_menu": 0,
-  "alignment_merchant_menu": 0,
   "alignment_notifications_menu": 0,
   "alignment_oxygen_menu": 1,
   "alignment_players_list": 0,
   "alignment_privileges_menu": 0,
   "alignment_settings_menu": 0,
+  "alignment_shop_menu": 0,
   "alignment_teleportation_menu": 0,
   "color_active_element": "3200e51a",
   "color_active_text": "ff00e51a",
@@ -50,6 +50,7 @@
   "menu_add_players_list": true,
   "menu_add_privileges": false,
   "menu_add_settings": true,
+  "menu_add_shop_menu": true,
   "menu_add_teleportation_menu": true,
   "misc_background_vertical_gradient": false,
   "misc_enable_items_durability_bar": true,
@@ -65,7 +66,5 @@
   "scale_text_panel": 0.6,
   "scale_text_title": 0.85,
   "scale_text_tooltip": 0.6,
-  "text_sub": 0.6,
-  "alignment_shop_menu": 0,
-  "menu_add_shop_menu": true
+  "text_sub": 0.6
 }
