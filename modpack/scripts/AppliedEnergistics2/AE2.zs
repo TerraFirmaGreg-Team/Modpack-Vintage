@@ -446,6 +446,7 @@ laser_engraver.recipeBuilder()
 
 // Printed Silicon
 forming_press.recipeBuilder()
+  .circuit(4)
   .inputs([<metaitem:plateSilicon>])
   .notConsumable(<appliedenergistics2:material:19>)
   .outputs([<appliedenergistics2:material:20>])
@@ -453,6 +454,7 @@ forming_press.recipeBuilder()
 
 // Printed Logic Circuit
 forming_press.recipeBuilder()
+  .circuit(4)
   .inputs([<metaitem:plateGold>])
   .notConsumable(<appliedenergistics2:material:15>)
   .outputs([<appliedenergistics2:material:18>])
@@ -460,6 +462,7 @@ forming_press.recipeBuilder()
 
 // Printed Engineering Circuit
 forming_press.recipeBuilder()
+  .circuit(4)
   .inputs([<metaitem:plateDiamond>])
   .notConsumable(<appliedenergistics2:material:14>)
   .outputs([<appliedenergistics2:material:17>])
@@ -467,6 +470,7 @@ forming_press.recipeBuilder()
 
 // Printed Calulation Circuit
 forming_press.recipeBuilder()
+  .circuit(4)
   .inputs([<metaitem:plateCertusQuartz>])
   .notConsumable(<appliedenergistics2:material:13>)
   .outputs([<appliedenergistics2:material:16>])
