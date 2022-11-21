@@ -3,7 +3,6 @@
 import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 
-
 // --- Массивы
 
 val RemoveAndHide as IItemStack[] = [
@@ -504,6 +503,9 @@ macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
 
 // Гравий
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
+
+// Item Brick
+alloy_smelter.findRecipe(2, [<minecraft:clay_ball:0>, <metaitem:shape.mold.ingot>], null);
 
 // Книжные полки
 assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();

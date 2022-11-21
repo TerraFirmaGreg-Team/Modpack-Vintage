@@ -384,7 +384,7 @@ canner.findRecipe(32, [<metaitem:food.banana>], null).remove();
 extractor.findRecipe(2, [<metaitem:seed.soy>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Маленькая кучка древесных опилок
-<recipemap:extractor>.findRecipe(64, [<metaitem:seed.soy>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
+extractor.findRecipe(64, [<metaitem:seed.soy>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], null).remove();
 
 // Цедра
 extractor.findRecipe(5, [<metaitem:food.lime>], null).remove();
@@ -430,3 +430,6 @@ distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration:
 distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:gtfo_apple_cider> * 1000]).remove();
 distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 3})], [<liquid:gtfo_apple_cider> * 1000]).remove();
 distillery.findRecipe(30, [<metaitem:circuit.integrated>.withTag({Configuration: 5})], [<liquid:gtfo_apple_cider> * 1000]).remove();
+
+// Unfired Cup
+forming_press.findRecipe(30, [<minecraft:clay_ball> * 5, <metaitem:component.paper_cone>], null).remove();

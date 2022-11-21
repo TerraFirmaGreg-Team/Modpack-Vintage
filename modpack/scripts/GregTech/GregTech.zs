@@ -547,7 +547,7 @@ arc_furnace.recipeBuilder()
 
 // Coke Oven Bricks
 alloy_smelter.recipeBuilder()
-    .inputs([<ore:sand>, <minecraft:clay_ball:0>])
+    .inputs([<ore:sand>, <ore:ingotClay>])
     .outputs(<metaitem:brick.coke> * 2)
     .duration(175).EUt(7).buildAndRegister();
 
