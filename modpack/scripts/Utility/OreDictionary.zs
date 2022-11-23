@@ -531,9 +531,9 @@ for paintBallLumen in paintBallsLumen {
 
 // --- Добавление
 
-<ore:clay>.add(<tfcflorae:ceramics/stoneware/stoneware_clay>);
-<ore:clay>.add(<tfcflorae:ceramics/kaolinite/kaolinite_clay>);
-<ore:clay>.add(<tfcflorae:ceramics/earthenware/earthenware_clay>);
+<ore:ingotClay>.add(<tfcflorae:ceramics/stoneware/stoneware_clay>);
+<ore:ingotClay>.add(<tfcflorae:ceramics/kaolinite/kaolinite_clay>);
+<ore:ingotClay>.add(<tfcflorae:ceramics/earthenware/earthenware_clay>);
 
 
 // --- Удаление

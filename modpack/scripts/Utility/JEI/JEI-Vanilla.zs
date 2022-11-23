@@ -3,7 +3,6 @@
 import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 
-
 // --- Массивы
 
 val RemoveAndHide as IItemStack[] = [
@@ -311,7 +310,8 @@ assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.inte
 // Chiseled Sandstone
 laser_engraver.findRecipe(16, [<minecraft:sandstone:2>, <metaitem:lensGlass>], null).remove();
 // Sandstone
-assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+
 // Sandstone
 compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
 // Sand
@@ -333,7 +333,7 @@ forge_hammer.findRecipe(2, [<minecraft:red_sandstone:0>], null).remove();
 // Chiseled Red Sandstone
 laser_engraver.findRecipe(16, [<minecraft:red_sandstone:2>, <metaitem:lensGlass>], null).remove();
 // Red Sandstone
-assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+// assembler.findRecipe(4, [<minecraft:red_sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Деревянные ступени
 // Oak Wood Stairs
@@ -503,6 +503,9 @@ macerator.findRecipe(2, [<metaitem:bio_chaff>], null).remove();
 
 // Гравий
 forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
+
+// Item Brick
+alloy_smelter.findRecipe(2, [<minecraft:clay_ball:0>, <metaitem:shape.mold.ingot>], null);
 
 // Книжные полки
 assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();

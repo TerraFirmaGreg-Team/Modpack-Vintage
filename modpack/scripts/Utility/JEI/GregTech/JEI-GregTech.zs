@@ -159,10 +159,7 @@ val RemoveRecipesByName = [
    "gregtech:clipboard",
    "gregtech:coke_oven_hatch",
    "gregtech:cover_fluid_voiding",
-   "gregtech:cover_item_voiding",
-   // Удалить после исправления дюпа капсул
-   "gregtech:universal_fluid_cell_revert",
-   "gregtech:universal_fluid_cell"
+   "gregtech:cover_item_voiding"
 ] as string[];
 
 
@@ -280,6 +277,9 @@ alloy_smelter.findRecipe(7, [<minecraft:sand:0>, <minecraft:clay_ball:0>], null)
 // Hevea -> Rubber
 centrifuge.findRecipe(20, [<gregtech:rubber_log:0>], null).remove();
 
+// Нефтеностный песок
+// centrifuge.findRecipe(5, [<minecraft:sand:0>], [<liquid:oil> * 500]).remove();
+
 // Infinite Water Cover 
 assembler.findRecipe(480, [<metaitem:electric.pump.hv> * 2, <minecraft:cauldron:0>, <metaitem:circuit.advanced_integrated>], null).remove();
 
@@ -393,6 +393,3 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 
 // Nether Dust decomp
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
-
-// Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
-assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();

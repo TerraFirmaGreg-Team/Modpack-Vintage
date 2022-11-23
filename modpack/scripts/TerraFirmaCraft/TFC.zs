@@ -811,7 +811,7 @@ for i, TFC_Cooked_Meat in TFC_Cooked_Meat {
 
 // Керамика
 for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
-	furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
+	//furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
 }
 
 // Macerator recipes for Quern/Grindstone recipes

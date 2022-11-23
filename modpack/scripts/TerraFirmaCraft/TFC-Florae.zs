@@ -9,20 +9,20 @@ import mods.horsepower.Press;
 
 val CleanNets as IItemStack[] = [
 	<tfc:crop/product/jute_net>,
-  <tfcflorae:crop/product/sisal_net>,
-  <tfcflorae:crop/product/silk_net>,
-  <tfcflorae:crop/product/cotton_net>,
-  <tfcflorae:crop/product/linen_net>,
-  <tfcflorae:crop/product/hemp_net>
+	<tfcflorae:crop/product/sisal_net>,
+	<tfcflorae:crop/product/silk_net>,
+	<tfcflorae:crop/product/cotton_net>,
+	<tfcflorae:crop/product/linen_net>,
+	<tfcflorae:crop/product/hemp_net>
 ];
 
 val DirtyNets as IItemStack[] = [
 	<tfc:crop/product/dirty_jute_net>,
-  <tfcflorae:crop/product/dirty_sisal_net>,
-  <tfcflorae:crop/product/dirty_silk_net>,
-  <tfcflorae:crop/product/dirty_cotton_net>,
-  <tfcflorae:crop/product/dirty_linen_net>,
-  <tfcflorae:crop/product/dirty_hemp_net>
+	<tfcflorae:crop/product/dirty_sisal_net>,
+	<tfcflorae:crop/product/dirty_silk_net>,
+	<tfcflorae:crop/product/dirty_cotton_net>,
+	<tfcflorae:crop/product/dirty_linen_net>,
+	<tfcflorae:crop/product/dirty_hemp_net>
 ];
 
 val ItemsForJuices as IItemStack[] = [
@@ -77,6 +77,39 @@ val FluidsForJuices as ILiquidStack[] = [
 
 // --- Добавление рецептов
 
+// Переработка Earthenware Clay
+macerator.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/earthenware/earthenware_clay>)
+	.outputs(<metaitem:dustClay>)
+	.duration(15).EUt(2).buildAndRegister();
+
+compressor.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/earthenware/earthenware_clay> * 4)
+	.outputs(<tfcflorae:ceramics/earthenware/earthenware_clay_block>)
+	.duration(300).EUt(2).buildAndRegister();
+
+// Переработка Stoneware Clay
+macerator.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/stoneware/stoneware_clay>)
+	.outputs(<metaitem:dustClay>)
+	.duration(15).EUt(2).buildAndRegister();
+
+compressor.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/stoneware/stoneware_clay> * 4)
+	.outputs(<tfcflorae:ceramics/stoneware/stoneware_clay_block>)
+	.duration(300).EUt(2).buildAndRegister();
+
+// Переработка Kaolinite Clay
+macerator.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/kaolinite/kaolinite_clay>)
+	.outputs(<metaitem:dustClay>)
+	.duration(15).EUt(2).buildAndRegister();
+
+compressor.recipeBuilder()
+	.inputs(<tfcflorae:ceramics/kaolinite/kaolinite_clay> * 4)
+	.outputs(<tfcflorae:ceramics/kaolinite/kaolinite_clay_block>)
+	.duration(300).EUt(2).buildAndRegister();
+
 // Емкость под жидкость
 recipes.addShapeless(<tfctech:ceramics/fluid_bowl>, [<tfcflorae:ceramics/stoneware/fired/pot>]);
 recipes.addShapeless(<tfctech:ceramics/fluid_bowl>, [<tfcflorae:ceramics/kaolinite/fired/pot>]);
@@ -87,14 +120,14 @@ recipes.addShapeless(<tfcflorae:yeast> * 3, [<tfc:wooden_bucket>.withTag({Fluid:
 
 // Сок из ...
 for i, FluidsForJuices in FluidsForJuices {
-  // Конский пресс
+  	// Конский пресс
 	Press.add(ItemsForJuices[i], FluidsForJuices * 10);
 	// Центрифуга
 	centrifuge.recipeBuilder()
-    .inputs(ItemsForJuices[i])
-    .circuit(30)
-    .fluidOutputs(FluidsForJuices * 25)
-    .duration(300).EUt(2).buildAndRegister();
+		.inputs(ItemsForJuices[i])
+		.circuit(30)
+		.fluidOutputs(FluidsForJuices * 25)
+		.duration(300).EUt(2).buildAndRegister();
 }
 
 // Сок из яблок
@@ -111,12 +144,12 @@ centrifuge.recipeBuilder()
 
 // Dirty Net -> Net
 for i, CleanNets in CleanNets {
-  mixer.recipeBuilder()
-    .inputs(DirtyNets[i])
-    .fluidInputs(<liquid:fresh_water> * 50)
-    .circuit(17)
-    .outputs(CleanNets)
-    .duration(150).EUt(2).buildAndRegister();
+  	mixer.recipeBuilder()
+		.inputs(DirtyNets[i])
+		.fluidInputs(<liquid:fresh_water> * 50)
+		.circuit(17)
+		.outputs(CleanNets)
+		.duration(150).EUt(2).buildAndRegister();
 }
 
 // Net -> Dirty Net

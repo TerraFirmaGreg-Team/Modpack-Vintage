@@ -64,7 +64,6 @@ val TFC_Breads as IItemStack[] = [
 	<tfcflorae:food/millet_bread>
 ];
 
-
 // --- Добавление рецептов
 
 // Adobe Bricks
@@ -96,6 +95,13 @@ assembler.recipeBuilder()
 		<metaitem:plateBronze> * 3)
 	.outputs(<gregtechfoodoption:gtfo_casing:1> * 3)
 	.duration(80).EUt(28).buildAndRegister();
+
+// Unfired Cup
+forming_press.recipeBuilder()
+	.inputs(<ore:ingotClay> * 5)
+	.notConsumable(<metaitem:component.paper_cone>)
+	.outputs(<metaitem:component.unfired_cup> * 2)
+	.duration(30).EUt(18).buildAndRegister();
 
 // Baking Oven
 recipes.addShaped("tfg/gtfo/baking_oven", <metaitem:gregtechfoodoption:baking_oven>,
