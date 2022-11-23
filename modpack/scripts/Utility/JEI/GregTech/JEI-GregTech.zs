@@ -393,6 +393,3 @@ rock_breaker.findRecipe(7, [<minecraft:cobblestone>], null).remove();
 
 // Nether Dust decomp
 centrifuge.findRecipe(20, [<metaitem:dustNetherrack>], null).remove();
-
-// Crafting Table Cover * 1 (Пока не исправят этот, говно-верстак)
-assembler.findRecipe(16, [<metaitem:workbench>, <metaitem:plateIron>], null).remove();

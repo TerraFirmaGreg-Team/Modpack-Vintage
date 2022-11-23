@@ -133,10 +133,10 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
     [<metaitem:cableGtSingleAnnealedCopper>, <ore:circuitHv>, <metaitem:cableGtSingleAnnealedCopper>]]);
 
 // // Стацния создания
-// recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
-//     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
-//     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
-//     [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
+recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
+    [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
+    [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
 
 // Обработанные доски
 recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
@@ -547,7 +547,7 @@ arc_furnace.recipeBuilder()
 
 // Coke Oven Bricks
 alloy_smelter.recipeBuilder()
-    .inputs([<ore:sand>, <ore:ingotClay>])
+    .inputs([<ore:sand>, <minecraft:clay_ball:0>])
     .outputs(<metaitem:brick.coke> * 2)
     .duration(175).EUt(7).buildAndRegister();
 
