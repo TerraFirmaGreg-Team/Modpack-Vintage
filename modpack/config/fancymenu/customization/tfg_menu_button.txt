@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = tfg_slideshowse_menu
+  name = tfg_slideshows_new_year
   action = setbackgroundslideshow
 }
 
@@ -284,13 +284,13 @@ customization {
   description = %local:tfg.menu.discord%
   label = 
   loopbackgroundanimations = true
-  x = 65
+  x = 59
   width = 21
   actionid = 620c506e-ecea-47bc-80c7-23e90fa1c7aa1654658496753
   action = addbutton
   y = 71
   backgroundnormal = resources\modpack\icons\discord.png
-  value = https://discord.gg/TZx8Cfr
+  value = https://discord.gg/y4khKF9zjT
   height = 21
 }
 
@@ -319,13 +319,13 @@ customization {
   description = %local:tfg.menu.github%
   label = 
   loopbackgroundanimations = true
-  x = 106
+  x = 119
   width = 21
   actionid = 427e95c3-6bb6-40d3-b741-710cd8ed21261654658496753
   action = addbutton
   y = 71
   backgroundnormal = resources\modpack\icons\github.png
-  value = https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2
+  value = https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/issues
   height = 21
 }
 
@@ -347,6 +347,24 @@ customization {
   vr:value:modloaded = optifine
   backgroundnormal = resources\modpack\longbutton.png
   value = http://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar;mods/OptiFine_1.12.2_HD_U_G5.jar
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = resources/modpack/icons/youtube_h.png
+  description = %local:tfg.menu.youtube%
+  label = 
+  loopbackgroundanimations = true
+  x = 89
+  width = 21
+  actionid = edb9a962-a580-4295-8b78-f2c218487bc31671307889193
+  action = addbutton
+  y = 71
+  backgroundnormal = resources/modpack/icons/youtube.png
+  value = https://www.youtube.com/@SpeeDCraft
   height = 21
 }
 

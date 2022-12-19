@@ -118,7 +118,7 @@ customization {
   y = 10
   scale = 1.0
   alignment = left
-  value = Latest Modpack Version: %webtext:https://raw.githubusercontent.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/main/version.txt%
+  value = Latest Modpack Version: {"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/releases/latest","json_path":"$.tag_name"}}
 }
 
 customization {
