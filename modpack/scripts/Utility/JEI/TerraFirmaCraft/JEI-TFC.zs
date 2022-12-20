@@ -450,6 +450,7 @@ val RemoveRecipesByName = [
    "tfc:vanilla/rail/steel_activator_rail",
    "tfc:vanilla/rail/minecart",
    "tfc:vanilla/rail/steel_minecart",
+	"tfc:ceramics/unfired_fire_clay_recycle/fire_brick",
    "tfc:paper",
    "tfc:fire_clay",
    "tfc:vanilla/cauldron",
