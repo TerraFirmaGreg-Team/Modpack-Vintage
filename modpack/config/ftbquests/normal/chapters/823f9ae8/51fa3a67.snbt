@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.javelin.title}",
-	x: -32.0d,
+	x: -31.0d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.javelin.subtitle}",
 	dependencies: [

@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.stone_hoe.title}",
-	x: -31.0d,
+	x: -32.0d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.stone_hoe.subtitle}",
 	dependencies: [

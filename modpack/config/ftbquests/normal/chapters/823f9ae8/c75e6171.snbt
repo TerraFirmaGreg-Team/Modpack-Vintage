@@ -1,0 +1,17 @@
+{
+	x: -33.25d,
+	y: -6.25d,
+	dependencies: [
+		"88a7cec9"
+	],
+	tasks: [{
+		uid: "fcc20bd9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 1001"
+		},
+		{
+			item: "tfc:powder/fertilizer"
+		}]
+	}]
+}
