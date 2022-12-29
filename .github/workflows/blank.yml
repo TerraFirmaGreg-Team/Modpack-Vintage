@@ -1,0 +1,82 @@
+name: Deploy modpack
+on:
+  push:
+    tags:
+      - "R*"
+      - "R*-Extended"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get the version
+        id: get_version
+        run: |
+          echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
+          echo ::set-output name=LEVEL::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $2}')
+
+      - name: Set the version
+        run: |
+          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
+          echo "TFG New Horizons-${MODPACKVERSION}-Normal" > ./overrides/version.txt
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" manifest.json
+
+      - name: Archive Release CF
+        run: |
+          zip -r ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resources/ ./overrides/scripts/
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ./buildtools/requirements.txt
+
+      - name: Run Python
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: python buildtools/mod-install.py
+
+      - name: Archive Release MMC
+        run: |
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ./icon.png .minecraft/
+          zip -r ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          rm -rf .minecraft/icon.png
+
+      - name: Archive Release Server
+        run: |
+          mv -vf .minecraft/* ./
+          zip -r ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./bansoukou/ ./config/ ./local/ ./mods/ ./resources/ ./scripts/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
+            ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
+            ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+
+      - name: Upload Curseforge
+        uses: ./.github/actions/curseforge-modpack-upload
+        with:
+          api-token: ${{ secrets.CF_API_TOKEN }}
+          project-id: "385053"
+          modpack-path: ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
+          modpack-server-path: ./TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+          changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/SpeeeDCraft/TerraFirmaGreg-1.12.2/blob/Normal/Changelog_RU.md "")'
+          changelog-format: markdown
+          game-version: "6756" # 628 or 6756 (Accepted at either)
+          display-name: TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}
+          server-display-name: TFG New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server
+          release-type: ${{ steps.get_version.outputs.LEVEL }}
