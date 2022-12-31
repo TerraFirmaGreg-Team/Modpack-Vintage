@@ -1,5 +1,5 @@
 tfg.menu.server = Официальный сервер TFG
-tfg.menu.server.huge = Доступен только для lite
+tfg.menu.server.huge = Доступен только для Normal
 tfg.menu.mod = Настройки модов
 
 tfg.menu.github = Об ошибках писать сюда

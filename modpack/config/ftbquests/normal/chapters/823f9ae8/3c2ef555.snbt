@@ -13,7 +13,18 @@
 		uid: "6fc9ffa2",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_tool_head_file 1 25"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any toolHeadFileCopper"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "toolHeadFileCopper"
+				}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

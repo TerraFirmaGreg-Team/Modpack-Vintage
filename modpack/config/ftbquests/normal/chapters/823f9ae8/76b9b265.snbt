@@ -10,19 +10,16 @@
 		uid: "100e12ef",
 		type: "item",
 		items: [{
-			id: "tfc:metal/chisel_head/copper",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any chiselHead"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "chiselHead"
 				}
 			}
 		}],

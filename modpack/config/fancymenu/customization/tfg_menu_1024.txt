@@ -3,13 +3,15 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
+  biggerthanwidth = 900
   renderorder = background
   randommode = false
   randomonlyfirsttime = false
+  smallerthanwidth = 1950
 }
 
 customization {
-  name = tfg_slideshowse_menu
+  name = tfg_slideshows_new_year
   action = setbackgroundslideshow
 }
 
@@ -270,7 +272,7 @@ customization {
   basecolor = #ff1500
   vr:value:language = ru_ru
   shadow = true
-  splashfilepath = resources\modpack\words\en_us.txt
+  splashfilepath = resources/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
   refresh = true
@@ -289,17 +291,17 @@ customization {
   basecolor = #ff1500
   vr:value:language = en_us
   shadow = true
-  splashfilepath = resources\modpack\words\en_us.txt
+  splashfilepath = resources/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
-  refresh = false
+  refresh = true
   bouncing = true
   vanilla-like = false
   orientation_element = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
-  x = 137
-  actionid = 399bfb88-eed1-409e-8586-9ada544886ea1661549525291
+  x = 732
+  actionid = 962d0530-904d-48eb-957b-7f634789bee11671309037010
   action = addsplash
-  y = 90
+  y = 135
   vr:showif:language = true
 }
 

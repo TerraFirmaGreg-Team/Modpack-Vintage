@@ -60,12 +60,6 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, 
 // Люк коксовой печи
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
-// Контроллер теплицы
-recipes.addShaped("tfg/gregtech/greenhouse_controller", <metaitem:multiblocktweaker:greenhouse>, [
-    [<gregtech:transparent_casing>, <gregtech:transparent_casing>, <gregtech:transparent_casing>],
-    [<metaitem:electric.pump.mv>, <metaitem:gregtechfoodoption:farmer.mv>, <metaitem:electric.pump.mv>],
-    [<metaitem:wireGtQuadrupleCopper>, <ore:circuitMv>, <metaitem:wireGtQuadrupleCopper>]]);
-
 // Контроллер пилорамы
 recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
     [<metaitem:screwSteel>, <metaitem:toolHeadBuzzSawSteel>, <metaitem:screwSteel>],

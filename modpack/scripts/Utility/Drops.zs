@@ -30,7 +30,7 @@ Dropt.list("tfg/dropt/puddles").add(Dropt.rule()
 
 // Выпадение секвои
 Dropt.list("tfg/dropt/sequoia").add(Dropt.rule()
-  .matchBlocks(["tfc:wood/leaves/sequoia#decayable=true"])
+  .matchBlocks(["tfc:wood/leaves/sequoia"])
   .replaceStrategy("ADD")
   .addDrop(Dropt.drop()
       .selector(Dropt.weight(65))) // шанс, что ничего не выпадет
@@ -139,9 +139,6 @@ Dropt.list("tfg/dropt/gc_fix/dark_oak_fence_gate")
 Dropt.list("tfg/dropt/gc_fix/acacia_fence_gate")
   .add(Dropt.rule()
   .matchBlocks(["minecraft:acacia_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
-Dropt.list("tfg/dropt/gc_fix/cocoa_fence_gate")
-  .add(Dropt.rule()
-  .matchBlocks(["minecraft:cocoa_fence_gate"]).addDrop(Dropt.drop().items([<tfc:wood/fence_gate/box>])));
 // Забор
 Dropt.list("tfg/dropt/gc_fix/dark_oak_fence")
   .add(Dropt.rule()

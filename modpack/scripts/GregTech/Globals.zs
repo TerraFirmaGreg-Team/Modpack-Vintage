@@ -59,9 +59,9 @@ global slicer                    as RecipeMap = RecipeMap.getByName("slicer");
 global cuisine_assembler         as RecipeMap = RecipeMap.getByName("cuisine_assembler");
 global baking_oven               as RecipeMap = RecipeMap.getByName("baking_oven");
 global electric_baking_oven      as RecipeMap = RecipeMap.getByName("electric_baking_oven");
+global greenhouse                as RecipeMap = RecipeMap.getByName("greenhouse");
 // GM
 global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
 // Custom
-global greenhouse                as RecipeMap = RecipeMap.getByName("greenhouse");
 global saw_mill                  as RecipeMap = RecipeMap.getByName("saw_mill");
 global star_forge                as RecipeMap = RecipeMap.getByName("star_forge");

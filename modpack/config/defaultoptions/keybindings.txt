@@ -32,28 +32,23 @@ key_key.hotbar.8:9:NONE
 key_key.hotbar.9:10:NONE
 key_of.key.zoom:46:NONE
 key_Reload Menu | CTRL + ALT + :0:NONE
-key_Toggle Customization Overlay | CTRL + ALT + :0:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :39:NONE
 key_keybind.baublesinventory:48:SHIFT
 key_key.toggle_shaders:0:NONE
-key_[GC] Галактическая карта:50:NONE
-key_[GC] Открыть инвентарь космического корабля:33:SHIFT
-key_[GC] Переключить режим Очков с сенсорами:24:SHIFT
+key_[GC] Galaxy Map:50:NONE
+key_[GC] Open Spaceship Inventory:33:NONE
+key_[GC] Toggle Sensor Goggles Mode:37:NONE
+key_key.betterfoliage.gui:66:NONE
+key_key.death_history:22:NONE
 key_gregtech.key.armor_mode_switch:51:SHIFT
 key_gregtech.key.armor_hover:35:NONE
 key_gregtech.key.armor_charging:52:NONE
 key_gregtech.key.tool_aoe_change:49:SHIFT
-key_Open MPS Keybind GUI:0:NONE
-key_Go Down (MPS Flight Control):0:NONE
-key_Cycle Tool Backward (MPS):0:NONE
-key_Cycle Tool Forward (MPS):0:NONE
-key_Cosmetic (MPS):0:NONE
-key_key.betterfoliage.gui:66:NONE
-key_key.death_history:22:NONE
 key_key.findme.search:21:NONE
 key_key.ftbutilities.nbt:0:NONE
 key_key.ftbutilities.trash:211:NONE
 key_key.ftbquests.quests:0:NONE
-key_config.jsg.mode_scroll:0:NONE
+key_config.jsg.mode_scroll:29:NONE
 key_config.jsg.address_scroll:42:NONE
 key_config.jsg.mode_up:0:NONE
 key_config.jsg.mode_down:0:NONE
@@ -77,6 +72,11 @@ key_key.dismount:42:NONE
 key_key.narrator:0:NONE
 key_smoothfont.key.guiOpen:0:NONE
 key_key.toggle_focus.desc:15:NONE
+key_Open Powered Vehicle Inventory:34:NONE
+key_Open Module Manager:35:NONE
+key_Open Pre Launch Checklist GUI:25:NONE
+key_Open Portable NASA Workbench GUI:24:NONE
+key_key.astikorcarts.desc:19:SHIFT
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -88,12 +88,6 @@ key_key.jei.previousPage:201:NONE
 key_key.jei.nextPage:209:NONE
 key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
-key_keybind.fovfixtoggle:0:NONE
-key_Открыть инвентарь заряженного транспорта:34:NONE
-key_Открыть менеджер модулей:38:SHIFT
-key_Открыть интерфейс списка предзапуска:25:NONE
-key_Открыть интерфейс портативного верстака NASA:0:NONE
-key_key.astikorcarts.desc:19:SHIFT
 key_key.settings_menu:34:SHIFT
 key_key.range:19:SHIFT
 key_key.undo:22:SHIFT
@@ -140,7 +134,7 @@ key_key.jeiutilities.transferRecipe:17:CONTROL
 key_key.jeiutilities.transferRecipeMax:20:CONTROL
 key_jecalculation.key.gui_craft:0:NONE
 key_jecalculation.key.gui_math:0:NONE
-key_Открыть мастера ключей:64:NONE
+key_Open Key Wizard:65:NONE
 key_key.rotateup:200:NONE
 key_key.rotatedown:208:NONE
 key_key.rotateright:205:NONE
@@ -155,7 +149,7 @@ key_key.oxygen_core.reject:45:NONE
 key_key.oxygen_core.interact:33:NONE
 key_key.oxygen_menu.openMenu:15:NONE
 key_key.teleportation.moveToFavCamp:0:NONE
-key_key.toolbelt.open:46:SHIFT
+key_key.toolbelt.open:0:SHIFT
 key_key.toolbelt.cycle.left:0:NONE
 key_key.toolbelt.cycle.right:0:NONE
 key_key.toolbelt.slot:47:SHIFT
@@ -180,4 +174,4 @@ key_key.journeymap.fullscreen.north:200:NONE
 key_key.journeymap.fullscreen.south:208:NONE
 key_key.journeymap.fullscreen.east:205:NONE
 key_key.journeymap.fullscreen.west:203:NONE
-key_key.control:0:NONE
+key_key.control:29:NONE
