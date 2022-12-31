@@ -4,9 +4,9 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:8
+renderDistance:10
 guiScale:2
-particles:0
+particles:2
 bobView:true
 anaglyph3d:false
 maxFps:260
@@ -15,10 +15,10 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:[]
+resourcePacks:["TFC+Florae+Lite.zip"]
 incompatibleResourcePacks:[]
 lastServer:
-lang:ru_ru
+lang:en_us
 chatVisibility:0
 chatColors:true
 chatLinks:true
@@ -27,7 +27,7 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:false
-useVbo:false
+useVbo:true
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
