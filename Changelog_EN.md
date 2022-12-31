@@ -1,5 +1,74 @@
 # List of changes
 
+## Version R4.1.10 - 12/31/2022
+
+### Modpack fixes
+
+- Small Christmas decoration in GT (o^▽^o)
+- Fixing a script error for a couple of items to drop out.
+- By default, the TFC Florae Lite resource pack is enabled, it will allow you to use less RAM.
+- Added Clumps mod, which combines experience balls into one, due to which, if there are a large number, the client / server may freeze, there is also a known error with doubling experience, the problem is localized, transferred to the mod developer, we are waiting for a fix.
+
+### Update mods
+
+- Appliedenergistics2-extended_life
+- Fancy menu
+- Gregtech
+
+### New mods
+
+- Clumps
+
+## Version R4.1.9 - 12/22/2022
+
+### Modpack fixes
+
+- Christmas decoration (o^▽^o)
+- Some optimization mods have been removed and have been replaced by one, UniversalTweaks, which includes the same fixes.
+- The electric greenhouse has been completely replaced with an analogue of GTFO, the greenhouse controller that was before will disappear in your world, the land in the new greenhouse can be used differently, and not just the one that is shown in JEI.
+- Added quests for fertilizer.
+- The modpack relevance line is now taken by the parser from the json Git tag.
+- Updated Darkness mod, earlier there was a drop in fps when looking at the sky, this is fixed.
+- Reduced the number of mobs per player, this should improve performance, if you see that there are few mobs, report, 140 -> 30, per player.
+- Removed RealBench, no longer needed as the engineering station was fixed in the GT update.
+- Removed for now ModularPowersuits and Numina, will be added possibly with GCYS.
+- Removed Gregification, there is an initialization error with the new version of GT.
+- Changed Tooltips, for items, now it shows different skins for items, depending on the tier and rarity, more items will be involved in the next updates.
+- Included vanilla weather rules for Weather2, barrels now refill in the rain.
+- Removed the recipe for parsing bricks from refractory clay, back into clay, thus fixing the dupe.
+
+### Update mods
+
+- TFGmod
+- Fluid Craft for AE2
+- Appliedenergistics2-extended_life
+- Loliasm
+- Darkness
+- fancy menu
+- GregTech Food Option
+- HadEnoughItems
+- Konkrete
+- Little Tiles
+- RoughlyEnoughIDs
+
+### New mods
+
+- Entity Culling
+- LegendaryTooltips
+- RenderLib
+- Universal Tweaks
+
+### Removed mods
+
+- AI improvements
+-ColoredTooltips
+- FastFurnace
+- Modular Powersuits
+- Numina
+-RealBench
+- Rocksalt
+- Surge
+
 ## Version R4.1.8 - 11/23/2022
 
 ### Modpack fixes
