@@ -55,7 +55,7 @@ jobs:
           project-id: '385053'
           modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
           modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
-          changelog: ${{ steps.read_changelog.outputs.content }}
+          changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_RU.md "")' 
           changelog-format: markdown
           game-version: '1.12.2'
           display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}
