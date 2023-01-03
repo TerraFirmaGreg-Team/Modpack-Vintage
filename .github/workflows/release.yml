@@ -28,16 +28,9 @@ jobs:
         run: |
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
-      - name: Archive Release MMC
-        run: |
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ./icon.png .minecraft/
-          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
-          rm -rf .minecraft/icon.png
-
       - name: Archive Release Server
         run: |
-          mv -vf .minecraft/* ./
+          mv -vf ./overrides/* ./
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ 
 
       - name: Create GitHub Release
@@ -48,7 +41,6 @@ jobs:
           generate_release_notes: true
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
 
       - name: Upload Curseforge
