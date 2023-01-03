@@ -15,20 +15,18 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: |
-          echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
-          echo ::set-output name=LEVEL::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $2}')
+        run: echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
 
       - name: Set the version
         run: |
           MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons ${MODPACKVERSION}-${{ steps.get_version.outputs.LEVEL }}" > ./overrides/resources/custommainmenu/version.txt
+          echo "TFG-New-Horizons ${MODPACKVERSION}" > ./overrides/resources/custommainmenu/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
 
       - name: Archive Release CF
         run: |
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -43,20 +41,20 @@ jobs:
 
       - name: Run Python
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN_MODPACK }}
         run: python buildtools/mod-install.py
 
       - name: Archive Release MMC
         run: |
           mv -vf ./overrides/ .minecraft/
           cp -vf ./icon.png .minecraft/
-          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
           rm -rf .minecraft/icon.png
 
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ 
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ 
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
@@ -65,20 +63,19 @@ jobs:
           prerelease: false
           generate_release_notes: true
           files: |
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
 
       - name: Upload Curseforge
         uses: ./.github/actions/curseforge-modpack-upload
         with: 
-          api-token: ${{ secrets.CF_API_TOKEN }}
+          api-token: ${{ secrets.CF_API_TOKEN_MODPACK }}
           project-id: '385053'
-          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
+          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
           changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_RU.md "")' 
           changelog-format: markdown
           game-version: '6756' # 628 or 6756 (Accepted at either)
-          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}
-          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server
-          release-type: ${{ steps.get_version.outputs.LEVEL }}
+          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}
+          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server
