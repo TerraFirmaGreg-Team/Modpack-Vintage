@@ -46,7 +46,7 @@ jobs:
       - name: Upload Curseforge
         uses: ./.github/actions/curseforge-modpack-upload
         with: 
-          api-token: ${{ secrets.CF_API_TOKEN_MODPACK }}
+          api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: '385053'
           modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
           modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
@@ -55,3 +55,4 @@ jobs:
           game-version: '6756' # 628 or 6756 (Accepted at either)
           display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}
           server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server
+          release-type: release
