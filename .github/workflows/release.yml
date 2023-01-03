@@ -31,9 +31,9 @@ jobs:
 
       - name: Archive Release CF
         run: |
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/  ./overrides/scripts/
 
-# ./overrides/resourcepacks/
+# ./overrides/resources/
 
       # - name: Archive Release Server
       #   run: |
