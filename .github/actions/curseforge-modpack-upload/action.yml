@@ -1,0 +1,36 @@
+name: 'Upload CurseForge Modpack'
+description: 'Upload a Minecraft Modpack to CurseForge '
+inputs:
+  api-token:
+    description: 'The CurseForge API token'
+    required: true
+  project-id:
+    description: 'The ID of the project'
+    required: true
+  modpack-path:
+    description: 'The path to the modpack zip'
+    required: true
+  modpack-server-path:
+    description: 'The path to the modpack server zip'
+    required: false
+  changelog:
+    description: 'The changelog for the upload'
+    required: false
+  changelog-format:
+    description: 'The changelog format ["text", "html", "markdown"]'
+    required: false
+  game-version:
+    description: 'The game version'
+    required: false
+  display-name:
+    description: 'The display name of the file'
+    required: true
+  server-display-name:
+    description: 'The display name of the server file'
+    required: false
+  release-type:
+    description: 'The release type of the file ["alpha", "beta", "release"]'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

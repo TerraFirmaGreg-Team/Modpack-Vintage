@@ -1,10 +1,8 @@
-name: Deploy modpack
+name: Deploy preview modpack
 on:
   push:
     tags:
-      - 'R*'
-      - 'R*-Extended'
-      - 'R*-alpha'
+      - 'R*-preview'
 
 jobs:
   deploy:
@@ -56,29 +54,15 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./bansoukou/ ./config/ ./local/ ./mods/ ./resources/ ./scripts/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          prerelease: false
+          prerelease: true
           generate_release_notes: true
           files: |
             ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
             ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
             ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
-
-      - name: Upload Curseforge
-        uses: ./.github/actions/curseforge-modpack-upload
-        with: 
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: '385053'
-          modpack-path: ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-          modpack-server-path: ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
-          changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_RU.md "")' 
-          changelog-format: markdown
-          game-version: '6756' # 628 or 6756 (Accepted at either)
-          display-name: TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}
-          server-display-name: TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server
-          release-type: ${{ steps.get_version.outputs.LEVEL }}
