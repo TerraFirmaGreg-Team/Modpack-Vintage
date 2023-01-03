@@ -28,22 +28,6 @@ jobs:
         run: |
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r ./buildtools/requirements.txt
-
-      - name: Run Python
-        env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-        run: python buildtools/mod-install.py
-
       - name: Archive Release MMC
         run: |
           mv -vf ./overrides/ .minecraft/
