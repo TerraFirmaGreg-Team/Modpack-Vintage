@@ -15,7 +15,7 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo "VERSION = (echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')" >> $GITHUB_OUTPUT
+        run: echo ::set-output name=VERSION::$(echo ${GITHUB_REF} | sed -e 's#refs/tags/##g' | awk -F'-' '{print $1}')
 
       - name: Set the version
         run: |
