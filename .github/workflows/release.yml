@@ -56,7 +56,7 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ 
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
