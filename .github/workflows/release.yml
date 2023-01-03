@@ -22,13 +22,13 @@ jobs:
       - name: Set the version
         run: |
           MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New Horizons ${MODPACKVERSION}-${{ steps.get_version.outputs.LEVEL }}" > ./overrides/resources/custommainmenu/version.txt
+          echo "TFG-New-Horizons ${MODPACKVERSION}-${{ steps.get_version.outputs.LEVEL }}" > ./overrides/resources/custommainmenu/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
 
       - name: Archive Release CF
         run: |
-          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -56,7 +56,7 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* ./
-          zip -r ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
@@ -65,20 +65,20 @@ jobs:
           prerelease: false
           generate_release_notes: true
           files: |
-            ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-            ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
-            ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
 
       - name: Upload Curseforge
         uses: ./.github/actions/curseforge-modpack-upload
         with: 
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: '385053'
-          modpack-path: ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
-          modpack-server-path: ./TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
+          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-cf.zip
+          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server.zip
           changelog: 'Check the changes here. [Github - CHANGELOG.md](https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_RU.md "")' 
           changelog-format: markdown
           game-version: '6756' # 628 or 6756 (Accepted at either)
-          display-name: TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}
-          server-display-name: TFG-New Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server
+          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}
+          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-server
           release-type: ${{ steps.get_version.outputs.LEVEL }}
