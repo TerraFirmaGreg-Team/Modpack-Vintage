@@ -39,6 +39,7 @@ jobs:
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
           zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
+          mv -vf ./serverfiles/TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v0.1.15
@@ -48,7 +49,7 @@ jobs:
           generate_release_notes: false
           files: |
             TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
-            ./serverfiles/TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
+            TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip
 
       # - name: Upload Curseforge
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
