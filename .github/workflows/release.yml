@@ -35,8 +35,8 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          mv -vf ./overrides/* ./
           mv -vf ./serverfiles/* ./
+          mv -vf ./overrides/* ./
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ -x "jsg-1.12.2-4.10.1.1-client.jar"
 
       - name: Create GitHub Release
