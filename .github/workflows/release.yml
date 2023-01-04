@@ -20,7 +20,7 @@ jobs:
       - name: Set the version
         run: |
           MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons ${MODPACKVERSION}" > ./overrides/config/fancymenu/customization/tfg_version.txt
+          echo "TFG-New-Horizons ${MODPACKVERSION}" > ./overrides/resources/custommainmenu/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
 
       # - name: Read Changelog
