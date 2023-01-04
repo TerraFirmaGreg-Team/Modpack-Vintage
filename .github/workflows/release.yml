@@ -30,11 +30,6 @@ jobs:
           path: ./Changelog_RU.md
 
       - name: Archive Release CF
-        uses: thedoctor0/zip-release@main
-        with:
-          type: 'zip'
-          filename: 'TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
         run: |
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
