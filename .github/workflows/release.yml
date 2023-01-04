@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
 
       - name: Get the version
         id: get_version
@@ -30,13 +30,18 @@ jobs:
           path: ./Changelog_RU.md
 
       - name: Archive Release CF
+        uses: thedoctor0/zip-release@main
+        with:
+          type: 'zip'
+          filename: 'TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
         run: |
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release Server
         run: |
           mv -vf ./overrides/* ./
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ ./serverfiles/ !./mods/jsg-1.12.2-4.10.1.1-client.jar
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/ ./serverfiles/ -x!jsg-1.12.2-4.10.1.1-client.jar
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
