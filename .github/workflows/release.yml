@@ -36,8 +36,7 @@ jobs:
         run: |
           mv -vf ./overrides/* ./serverfiles/
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
-          mv -vf ./serverfiles/* ./
-          rm -f $(cat ./buildtools/client_mod.txt)
+          cat ./buildtools/client_mod.txt | xargs rm -rf
           zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./serverfiles/*
 
       - name: Create GitHub Release
