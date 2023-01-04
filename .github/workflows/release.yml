@@ -30,16 +30,15 @@ jobs:
       #     path: ./Changelog_RU.md
 
       - name: Archive Release CF
-        run: |
-          zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+        run: zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release Server
         run: |
-          mv -vf ./overrides/* ./
-          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./mods/
+          mv -vf ./overrides/* ./serverfiles/
+          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./mods/serverfiles/
           mv -vf ./serverfiles/* ./
-          rm -f $(cat /buildtools/client_mod.txt)
-          zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./bansoukou/ ./config/ ./mods/ ./scripts/ ./groovy/
+          rm -f $(cat ./buildtools/client_mod.txt)
+          zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./serverfiles/*
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v0.1.15
