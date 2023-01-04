@@ -30,5 +30,3 @@
 ./overrides/mods/tfctowerheat-1.2.jar
 ./overrides/mods/Tips-1.12.2-1.0.9.jar
 ./overrides/mods/Toast Control-1.12.2-1.8.1.jar
-./overrides/resourcepacks
-./overrides/resources

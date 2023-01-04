@@ -33,7 +33,9 @@ jobs:
         run: zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release Server
-        run: cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
+        run: |
+          cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
+          rm -r ./overrides/resourcepacks ./overrides/resources
 
       - name: Archive Release Server
         run: |
