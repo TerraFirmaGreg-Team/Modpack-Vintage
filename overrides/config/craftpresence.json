@@ -17,7 +17,7 @@
     "partyPrivacyLevel": 1,
     "preferredClientLevel": 3,
     "resetTimeOnInit": false,
-    "autoRegister": true
+    "autoRegister": false
   },
   "biomeSettings": {
     "fallbackBiomeIcon": "tfg_logo",
@@ -36,9 +36,9 @@
     }
   },
   "serverSettings": {
-    "fallbackServerIcon": "default",
-    "fallbackServerName": "Minecraft Server",
-    "fallbackServerMotd": "A Minecraft Server",
+    "fallbackServerIcon": "tfg_logo",
+    "fallbackServerName": "TFG Server",
+    "fallbackServerMotd": "TerraFirmaGreg Server",
     "serverData": {
       "default": {
         "textOverride": "Playing on {server.motd.raw}"
@@ -47,85 +47,33 @@
   },
   "statusMessages": {
     "mainMenuData": {
-      "textOverride": "In the Main Menu",
-      "iconOverride": "tfg_logo",
-      "data": {
-        "enabled": true,
-        "useAsMain": false,
-        "details": "",
-        "gameState": "",
-        "largeImageKey": "",
-        "largeImageText": "",
-        "smallImageKey": "",
-        "smallImageText": "",
-        "buttons": {
-          "default": {
-            "label": "Discord",
-            "url": "https://discord.gg/y4khKF9zjT"
-          }
-        }
-      }
+      "textOverride": "In the Main Menu"
     },
     "loadingData": {
-      "textOverride": "Loading...",
-      "iconOverride": "tfg_logo",
-      "data": {
-        "enabled": true,
-        "useAsMain": false,
-        "details": "",
-        "gameState": "",
-        "largeImageKey": "",
-        "largeImageText": "",
-        "smallImageKey": "",
-        "smallImageText": "",
-        "buttons": {
-          "default": {
-            "label": "Discord",
-            "url": "https://discord.gg/y4khKF9zjT"
-          }
-        }
-      }
+      "textOverride": "Loading..."
     },
     "lanData": {
-      "textOverride": "Playing on a LAN Server",
-      "iconOverride": "tfg_logo"
+      "textOverride": "Playing on a LAN Server"
     },
     "singleplayerData": {
-      "textOverride": "Playing Singleplayer",
-      "iconOverride": "tfg_logo",
-      "data": {
-        "enabled": true,
-        "useAsMain": false,
-        "details": "",
-        "gameState": "",
-        "largeImageKey": "",
-        "largeImageText": "",
-        "smallImageKey": "",
-        "smallImageText": "",
-        "buttons": {
-          "default": {
-            "label": "Discord",
-            "url": "https://discord.gg/y4khKF9zjT"
-          }
-        }
-      }
+      "textOverride": "Playing Singleplayer"
     }
   },
   "advancedSettings": {
-    "enableCommands": false,
-    "enablePerGui": true,
-    "enablePerItem": true,
-    "enablePerEntity": true,
+    "enableCommands": true,
+    "enablePerGui": false,
+    "enablePerItem": false,
+    "enablePerEntity": false,
     "renderTooltips": true,
     "formatWords": true,
-    "debugMode": true,
+    "debugMode": false,
     "verboseMode": false,
     "refreshRate": 2,
     "roundSize": 3,
     "includeExtraGuiClasses": false,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
-      "fallbackGuiIcon": "unknown",
+      "fallbackGuiIcon": "tfg_logo",
       "guiData": {
         "default": {
           "textOverride": "In {screen.name}"
@@ -136,7 +84,7 @@
       "default": "Holding {item.message.holding}"
     },
     "entitySettings": {
-      "fallbackEntityIcon": "unknown",
+      "fallbackEntityIcon": "tfg_logo",
       "targetData": {
         "default": {
           "textOverride": "Targeting {entity.target.name}"
@@ -162,7 +110,7 @@
     "stripTranslationColors": false,
     "showLoggingInChat": false,
     "stripExtraGuiElements": false,
-    "configKeyCode": 58
+    "configKeyCode": 41
   },
   "displaySettings": {
     "presenceData": {
@@ -183,11 +131,11 @@
     },
     "dynamicIcons": {
       "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f",
-      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/overrides/resources/modpack/icons/icon.png?raw=true",
-      "default": "https://via.placeholder.com/256.png"
+      "default": "https://via.placeholder.com/256.png",
+      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/overrides/resources/modpack/icons/icon.png?raw=true"
     },
     "dynamicVariables": {
-      "default": "Example Text",
+      "default": "Discord",
       "mods": "{general.mods} Mod(s)",
       "player_info_coordinate": "At {player.position.x}, {player.position.z}",
       "players": "{server.players.current} / {server.players.max} Players",
