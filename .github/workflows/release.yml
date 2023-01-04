@@ -32,14 +32,22 @@ jobs:
       - name: Archive Release CF
         run: zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
-      - name: Archive Release Server
+      - name: Archive Release MMC
+        run: |
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ./icon.png .minecraft/
+          zip -r ./GTExpert2-${{ steps.get_version.outputs.VERSION }}-${{ steps.get_version.outputs.LEVEL }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          rm -rf .minecraft/icon.png
+
+      - name: Deleting Client Resources
         run: |
           cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
           rm -r ./overrides/resourcepacks ./overrides/resources
+          rm -r ./icon.png
 
       - name: Archive Release Server
         run: |
-          mv -vf ./overrides/* ./serverfiles/
+          mv -vf .minecraft/ ./serverfiles/
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
           zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
