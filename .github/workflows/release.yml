@@ -34,7 +34,7 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          cat ./buildtools/client_mod.txt | xargs rm -rf
+          cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
           mv -vf ./overrides/* ./serverfiles/
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
