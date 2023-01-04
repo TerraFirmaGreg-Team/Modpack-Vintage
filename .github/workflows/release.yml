@@ -35,7 +35,7 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf ./overrides/* ./serverfiles/
-          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./mods/serverfiles/
+          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           mv -vf ./serverfiles/* ./
           rm -f $(cat ./buildtools/client_mod.txt)
           zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./serverfiles/*
