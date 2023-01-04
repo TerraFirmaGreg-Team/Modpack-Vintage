@@ -39,6 +39,7 @@ jobs:
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
           zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
+          cd ./
           mv -vf ./serverfiles/TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
 
       - name: Create GitHub Release
