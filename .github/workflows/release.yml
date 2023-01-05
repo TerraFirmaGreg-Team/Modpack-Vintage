@@ -5,7 +5,8 @@ on:
       - 'R*'
 
 jobs:
-  normal:
+  job_1:
+    name: Normal
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -52,7 +53,9 @@ jobs:
           name: normal
           path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
 
-  extended:
+  job_2:
+    name: Extended
+    needs: job_1
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -103,7 +106,9 @@ jobs:
           name: extended
           path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
 
-  deploy:
+  job_3:
+    name: Deploy
+    needs: job_2
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
