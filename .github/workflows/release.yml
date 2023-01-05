@@ -83,7 +83,7 @@ jobs:
           
       - name: normal -> extended
         run: |
-          cp -vf ./normal/overrides/* ./extended/overrides/
+          cp -r ./normal/overrides/* ./extended/overrides/
 
       - name: Archive Release CF
         run: |
