@@ -152,7 +152,7 @@ jobs:
 
   job_3:
     name: Deploy
-    needs: [job1, job2]
+    needs: [job_1, job_2]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
