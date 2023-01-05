@@ -1,3 +1,0 @@
-identifier = MainMenu
-title = DR Menu
-allowesc = true

@@ -1,7 +1,0 @@
-{
-  "version": "0.11.1:beta:0",
-  "client": {
-    "enable_players_list_key": true,
-    "players_list_key": 17
-  }
-}

@@ -1,7 +1,0 @@
-{
-	title: "{tfg.quests.ae2.era.title}",
-	icon: "chisel:futura 1 4",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "circle"
-}
