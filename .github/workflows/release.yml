@@ -31,7 +31,7 @@ jobs:
 
       - name: Archive Release MMC
         run: |
-          mv -vf overrides/ .minecraft/
+          mv -vf ./overrides/ .minecraft/
           cp -vf ./icon.png ./normal/.minecraft/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
 
@@ -83,14 +83,14 @@ jobs:
 
       - name: Archive Release CF
         run: |
-          cd /extended/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip manifest.json modlist.html overrides/bansoukou/ overrides/config/ overrides/resourcepacks/ overrides/groovy/ overrides/resources/ overrides/scripts/
+          cd ./extended/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release MMC
         run: |
-          mv -vf overrides/ .minecraft/
-          cp -vf /icon.png /extended/.minecraft/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip mmc-pack.json instance.cfg .minecraft/
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ./icon.png /extended/.minecraft/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
       - name: Deleting Client Resources
         run: |
@@ -99,10 +99,10 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          mv -vf .minecraft/* /serverfiles/
-          mv -vf /serverfiles/icon.png /serverfiles/server-icon.png
-          mv -vf /serverfiles/jsg-1.12.2-4.10.1.1-server.jar /serverfiles/mods/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip /serverfiles/*
+          mv -vf ./.minecraft/* ../serverfiles/
+          mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
+          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./serverfiles/*
 
       - name: Upload math result for normal
         uses: actions/upload-artifact@v3
