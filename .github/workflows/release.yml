@@ -25,12 +25,13 @@ jobs:
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./overrides/config/fancymenu/customization/tfg_version.txt
 
-      - name: Get Changelog Entry
-        id: changelog_reader
-        uses: mindsers/changelog-reader-action@v2
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1
         with:
-          path: ./Changelog_RU.md
-          validation_level: none
+          version: ${{ steps.get_version.outputs.version }}
+          path: Changelog_RU.md
+
           
 
       # - name: Archive Release CF
@@ -58,11 +59,9 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
-          tag: ${{ steps.changelog_reader.outputs.version }}
-          name: Release ${{ steps.changelog_reader.outputs.version }}
-          body: ${{ steps.changelog_reader.outputs.changes }}
-          prerelease: ${{ steps.changelog_reader.outputs.status == 'prereleased' }}
-          draft: ${{ steps.changelog_reader.outputs.status == 'unreleased' }}
+          tag: ${{ steps.changelog.outputs.version }}
+          name: Release ${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip
