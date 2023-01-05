@@ -45,17 +45,15 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          cd ./normal/
-          mv -vf .minecraft/* ../serverfiles/
-          cd ..
+          mv -vf ./normal/.minecraft/* ../serverfiles/
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./serverfiles/*
+          cd ./serverfiles/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Upload math result for normal
         uses: actions/upload-artifact@v3
         with:
-          name: normal
           path: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
@@ -120,12 +118,11 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          cd ./extended/
-          mv -vf .minecraft/* ../serverfiles/
-          cd ..
+          mv -vf ./extended/.minecraft/* ../serverfiles/
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
-          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./serverfiles/*
+          cd ./serverfiles/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./
 
       - name: Changelog Parser Ru
         id: changelog_ru
@@ -140,10 +137,7 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: Download Artifact
-        id: download
         uses: actions/download-artifact@v3
-        with:
-          path: ./
 
       # - name: Upload Curseforge
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
@@ -169,7 +163,6 @@ jobs:
           body: |
             ${{ steps.changelog_ru.outputs.description }}
             ${{ steps.changelog_eu.outputs.description }}
-          body_path: ./CHANGELOG_EN.txt
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
