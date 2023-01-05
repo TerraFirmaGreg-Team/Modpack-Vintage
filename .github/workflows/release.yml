@@ -15,7 +15,7 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/v}
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/R}
 
       # - name: Set the version
       #   run: |
@@ -30,9 +30,6 @@ jobs:
         uses: coditory/changelog-parser@v1
         with:
           path: CHANGELOG.md
-          version: ${{ steps.get_version.outputs.version }}
-
-          
 
       # - name: Archive Release CF
       #   run: zip -r TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
