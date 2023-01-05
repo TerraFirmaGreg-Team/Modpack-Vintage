@@ -80,7 +80,7 @@ jobs:
 
       - name: Archive Release Server normal
         run: |
-          cp -vf ./serverfiles/* ./normal/.minecraft/
+          cp -r ./serverfiles/* ./normal/.minecraft/
           cd ./normal/.minecraft/
           mv -vf ./icon.png ./server-icon.png
           mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
@@ -88,7 +88,7 @@ jobs:
       
       - name: Archive Release Server extended
         run: |
-          cp -vf ./serverfiles/* ./extended/.minecraft/
+          cp -r ./serverfiles/* ./extended/.minecraft/
           cd ./extended/.minecraft/
           mv -vf ./icon.png ./server-icon.png
           mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
