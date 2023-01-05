@@ -170,7 +170,6 @@ jobs:
             ${{ steps.changelog_ru.outputs.description }}
             ${{ steps.changelog_eu.outputs.description }}
           body_path: ./CHANGELOG_EN.txt
-          artifacts: "./*.zip"
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
