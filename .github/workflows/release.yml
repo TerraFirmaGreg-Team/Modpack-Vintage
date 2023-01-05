@@ -29,7 +29,6 @@ jobs:
         id: changelog
         uses: coditory/changelog-parser@v1
         with:
-          version: ${{ steps.get_version.outputs.version }}
           path: CHANGELOG.md
 
           
