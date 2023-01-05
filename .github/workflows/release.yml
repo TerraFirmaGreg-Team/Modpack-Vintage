@@ -23,12 +23,15 @@ jobs:
           echo "TFG-New-Horizons-${MODPACKVERSION}" > ./overrides/resources/modpack/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./overrides/config/fancymenu/customization/tfg_version.txt
 
-      # - name: Read Changelog
-      #   id: read_changelog
-      #   uses: juliangruber/read-file-action@v1
-      #   with:
-      #     path: ./Changelog_RU.md
+      - name: Get Changelog Entry
+        id: changelog_reader
+        uses: mindsers/changelog-reader-action@v2
+        with:
+          validation_level: warn
+          version: ${{ steps.get_version.outputs.current_version }}
+          path: ./Changelog_RU.md
 
       - name: Archive Release CF
         run: zip -r TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
@@ -52,12 +55,14 @@ jobs:
           cd ./serverfiles/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-server.zip ./
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v0.1.15
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
         with:
-          prerelease: false
-          generate_release_notes: false
+          tag: ${{ steps.changelog_reader.outputs.version }}
+          name: Release ${{ steps.changelog_reader.outputs.version }}
+          body: ${{ steps.changelog_reader.outputs.changes }}
+          prerelease: ${{ steps.changelog_reader.outputs.status == 'prereleased' }}
+          draft: ${{ steps.changelog_reader.outputs.status == 'unreleased' }}
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-mmc.zip
