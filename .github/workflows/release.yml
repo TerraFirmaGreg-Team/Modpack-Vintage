@@ -58,8 +58,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
-          tag: ${{ steps.changelog.outputs.version }}
-          name: ${{ steps.changelog.outputs.version }}
+          name: Release ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.VERSION }}-cf.zip
