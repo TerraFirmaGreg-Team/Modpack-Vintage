@@ -38,12 +38,15 @@ jobs:
 
       - name: Deleting Client Resources
         run: |
-          cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
+          cd ./normal/
+          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
           rm -r .minecraft/resourcepacks .minecraft/resources
 
       - name: Archive Release Server
         run: |
-          mv -vf .minecraft/* /serverfiles/
+          cd ./normal/
+          mv -vf .minecraft/* ../serverfiles/
+          cd ..
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./serverfiles/*
@@ -96,12 +99,15 @@ jobs:
 
       - name: Deleting Client Resources
         run: |
-          cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
+          cd ./extended/
+          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
           rm -r .minecraft/resourcepacks .minecraft/resources
 
       - name: Archive Release Server
         run: |
-          mv -vf ./.minecraft/* ../serverfiles/
+          cd ./extended/
+          mv -vf .minecraft/* ../serverfiles/
+          cd ..
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./serverfiles/*
@@ -111,9 +117,9 @@ jobs:
         with:
           name: extended
           path: |
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
 
   job_3:
     name: Deploy
@@ -145,12 +151,12 @@ jobs:
           name: Release ${{ steps.changelog_ru.outputs.version }}
           body: ${{ steps.changelog_ru.outputs.description }}${{ steps.changelog_eu.outputs.description }}
           files: |
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
 
       # - name: Upload Curseforge
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
