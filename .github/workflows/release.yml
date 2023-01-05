@@ -6,8 +6,7 @@ on:
       - 'R*'
 
 jobs:
-  job_1:
-    name: Normal
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,105 +23,8 @@ jobs:
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/instance.cfg
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/overrides/config/fancymenu/customization/tfg_version.txt
-
-      - name: Archive Release CF
-        run: |
-          cd ./normal/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
-
-      - name: Archive Release MMC
-        run: |
-          cd ./normal/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
-
-      - name: Deleting Client Resources
-        run: |
-          cd ./normal/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
-
-      - name: Archive Release Server
-        run: |
-          mv -vf ./normal/.minecraft/* ./serverfiles/
-          mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
-          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
-          cd ./serverfiles/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
-
-      - name: Upload math result for normal
-        uses: actions/upload-artifact@v3
-        with:
-          path: |
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-
-      
-      # - name: Upload Curseforge
-      #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
-      #   with: 
-      #     api-token: ${{ secrets.CF_API_TOKEN }}
-      #     project-id: '385053'
-      #     modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-      #     modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-      #     changelog: '${{ steps.changelog.outputs.description }}' 
-      #     changelog-format: markdown
-      #     game-version: '1.12.2'
-      #     display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
-      #     server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server
-      #     release-type: 'release'
-
-  job_2:
-    name: Extended
-    needs: job_1
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/R}
-
-      - name: Set the version
-        run: |
-          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./normal/overrides/resources/modpack/version.txt
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/overrides/config/fancymenu/customization/tfg_version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
-          
-      - name: normal -> extended
-        run: |
-          cp -r ./normal/overrides/* ./extended/overrides/
-
-      - name: Archive Release CF
-        run: |
-          cd ./extended/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
-
-      - name: Archive Release MMC
-        run: |
-          cd ./extended/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
-
-      - name: Deleting Client Resources
-        run: |
-          cd ./extended/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
-
-      - name: Archive Release Server
-        run: |
-          mv -vf ./extended/.minecraft/* ./serverfiles/
-          mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
-          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
-          cd ./serverfiles/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./
 
       - name: Changelog Parser Ru
         id: changelog_ru
@@ -136,10 +38,67 @@ jobs:
         with:
           path: CHANGELOG_EN.md
 
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
+      - name: normal -> extended
+        run: |
+          cp -r ./normal/overrides/* ./extended/overrides/
 
-      # - name: Upload Curseforge
+      - name: Archive Release CF
+        run: |
+          cd ./normal/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          cd ../extended/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+
+      - name: Archive Release MMC
+        run: |
+          cd ./normal/
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ../icon.png .minecraft/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          cd ../extended/
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ../icon.png .minecraft/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+
+      - name: Deleting Client Resources
+        run: |
+          cd ./normal/
+          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
+          rm -r .minecraft/resourcepacks .minecraft/resources
+          cd ../extended/
+          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
+          rm -r .minecraft/resourcepacks .minecraft/resources
+
+      - name: Archive Release Server
+        run: |
+          cp -vf ./serverfiles/* ./normal/.minecraft/
+          cd ./normal/.minecraft/
+          mv -vf ./icon.png ./server-icon.png
+          mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
+          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
+          cp -vf ./serverfiles/* ./extended/.minecraft/
+          cd ./extended/.minecraft/
+          mv -vf ./icon.png ./server-icon.png
+          mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
+          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./
+
+
+      
+      # - name: Upload Curseforge normal
+      #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+      #   with: 
+      #     api-token: ${{ secrets.CF_API_TOKEN }}
+      #     project-id: '385053'
+      #     modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+      #     modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+      #     changelog: '${{ steps.changelog.outputs.description }}' 
+      #     changelog-format: markdown
+      #     game-version: '1.12.2'
+      #     display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
+      #     server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server
+      #     release-type: 'release'
+
+      # - name: Upload Curseforge extended
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
       #   with: 
       #     api-token: ${{ secrets.CF_API_TOKEN }}
@@ -170,5 +129,3 @@ jobs:
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
-
-
