@@ -30,7 +30,7 @@ jobs:
         uses: mindsers/changelog-reader-action@v2
         with:
           validation_level: warn
-          version: ${{ steps.get_version.outputs.current_version }}
+          version: ${{ steps.get_version.outputs.VERSION }}
           path: ./Changelog_RU.md
 
       - name: Archive Release CF
