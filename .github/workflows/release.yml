@@ -30,7 +30,7 @@ jobs:
         uses: coditory/changelog-parser@v1
         with:
           version: ${{ steps.get_version.outputs.version }}
-          path: Changelog_RU.md
+          path: CHANGELOG.md
 
           
 
