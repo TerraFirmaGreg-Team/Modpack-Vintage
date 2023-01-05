@@ -1,0 +1,12 @@
+{
+	title: "Craftable in Steam & LV",
+	icon: "gregtech:steam_casing",
+	disable_toast: true,
+	x: -30.5d,
+	y: -8.0d,
+	text: [
+		"Early game Circuits are hand craftable.",
+		"",
+		"Get the §3Circuit Assembler§r to make them a lot more efficient."
+	]
+}

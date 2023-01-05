@@ -1,0 +1,23 @@
+{
+	title: "{tfg.quests.primitive.coal.title}",
+	x: -20.25d,
+	y: -1.0d,
+	description: "{tfg.quests.primitive.coal.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"639cd212"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "fe3f3b76",
+		type: "item",
+		items: [{
+			item: "minecraft:coal"
+		},
+		{
+			item: "gregtech:meta_ore_chunk 1 271"
+		}]
+	}]
+}

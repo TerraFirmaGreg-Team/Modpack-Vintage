@@ -1,0 +1,22 @@
+{
+	title: "Fiber-Reinforced Epoxy",
+	icon: "gregtech:meta_plate 1 1006",
+	x: -5.5d,
+	y: -6.0d,
+	text: [
+		"The next board material as easy as §aEpoxy§r, plus an added extra step in the §3Chemical Bath§r.",
+		"",
+		"§oHOORAY!§r"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "57588f54",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_plate 1 1006"
+		}]
+	}]
+}

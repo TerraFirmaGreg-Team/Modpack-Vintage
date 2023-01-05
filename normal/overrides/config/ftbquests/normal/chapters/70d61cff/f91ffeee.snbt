@@ -1,0 +1,18 @@
+{
+	x: -11.0d,
+	y: -1.0d,
+	description: "{tfg.quests.ev.superconductor.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"5928ecb5"
+	],
+	tasks: [{
+		uid: "cb2c0524",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 427"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: -7.5d,
+	y: 2.0d,
+	description: "{tfg.quests.primitive.wheel.subtitle}",
+	dependencies: [
+		"fbdff2ba",
+		"4a3aaaad"
+	],
+	tasks: [{
+		uid: "200afdc6",
+		type: "item",
+		items: [{
+			item: "astikorcarts:wheel"
+		}]
+	}]
+}

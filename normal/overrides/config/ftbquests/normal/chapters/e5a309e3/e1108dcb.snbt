@@ -1,0 +1,14 @@
+{
+	x: -9.5d,
+	y: -1.0d,
+	dependencies: [
+		"353a87ae"
+	],
+	tasks: [{
+		uid: "e24f9bfd",
+		type: "item",
+		items: [{
+			item: "mechtech:meta_item 1 3"
+		}]
+	}]
+}

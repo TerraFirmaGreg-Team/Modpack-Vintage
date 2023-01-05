@@ -1,0 +1,15 @@
+{
+	x: 3.0d,
+	y: -13.25d,
+	dependencies: [
+		"08d78f26"
+	],
+	tasks: [{
+		uid: "00bde6e1",
+		type: "item",
+		items: [{
+			item: "travelersbackpack:travelers_backpack"
+		}],
+		ignore_nbt: 1b
+	}]
+}

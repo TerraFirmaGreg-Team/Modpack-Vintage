@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.mv.inductors.title}",
+	icon: "gregtech:meta_item_1 1 522",
+	x: 20.0d,
+	y: -6.0d,
+	description: "{tfg.quests.mv.inductors.subtitle}",
+	text: [
+		"{tfg.quests.mv.inductors.desc1}"
+	],
+	dependencies: [
+		"08970ed3"
+	],
+	tasks: [{
+		uid: "135115f9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 522"
+		}]
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	title: "{tfg.quests.mv.persulfate.title}",
+	x: 18.0d,
+	y: -14.0d,
+	description: "{tfg.quests.mv.persulfate.subtitle}",
+	text: [
+		"{tfg.quests.mv.persulfate.desc1}",
+		"",
+		"{tfg.quests.mv.persulfate.desc2}",
+		"{tfg.quests.mv.persulfate.desc3}",
+		"{tfg.quests.mv.persulfate.desc4}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "eb26c9d6",
+		type: "fluid",
+		fluid: "sodium_persulfate"
+	},
+	{
+		uid: "85de6d55",
+		type: "fluid",
+		fluid: "iron_iii_chloride"
+	}],
+	rewards: [{
+		uid: "5854f3d4",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "sodium_persulfate",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "0132233a",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "iron_iii_chloride",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

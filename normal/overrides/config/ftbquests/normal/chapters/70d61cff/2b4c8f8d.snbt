@@ -1,0 +1,19 @@
+{
+	title: "{tfg.quests.ev.oreswithmorebyproducts.title}",
+	x: -7.0d,
+	y: -4.0d,
+	description: "{tfg.quests.ev.oreswithmorebyproducts.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"14263e77"
+	],
+	tasks: [{
+		uid: "1a043a2f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 68"
+		}]
+	}]
+}

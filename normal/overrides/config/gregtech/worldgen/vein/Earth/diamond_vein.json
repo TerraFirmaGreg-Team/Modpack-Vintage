@@ -1,0 +1,36 @@
+{
+  "name" : "Earth Diamond",
+  "weight": 45,
+  "density": 0.25,
+  "max_height": 135,
+  "min_height": 5,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "graphite"
+  },
+  "generation_predicate":["ore_dict:RawMetamorphic"],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:graphite"
+      },
+      {
+        "secondary": "ore:graphite"
+      },
+      {
+        "between": "ore:diamond"
+      },
+      {
+        "sporadic": "ore:coal"
+      }
+    ]
+  }
+}

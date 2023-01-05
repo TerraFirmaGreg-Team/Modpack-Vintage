@@ -1,0 +1,24 @@
+{
+	title: "Upgrading your EBF for the millionth time",
+	icon: "gregtech:machine 1 1215",
+	x: -15.5d,
+	y: -7.75d,
+	text: [
+		"This Quest will be completed with §eeither§r an §3IV Energy Hatch§r§r... or an §3IV Dynamo Hatch§r for your Multiblock Generators.",
+		"",
+		"Don't forget that §d4Amps§r variants exist! However they require §aNiobium-Titanium Cables§r, which needs §9Polyphenylene Sulfide§r.",
+		"Look down in the §dLuV§r Chapter for that (spoiler: it's easy to obtain!)."
+	],
+	dependencies: [
+		"8d1fb996",
+		"8d718783"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3a0b41c9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1215"
+		}]
+	}]
+}

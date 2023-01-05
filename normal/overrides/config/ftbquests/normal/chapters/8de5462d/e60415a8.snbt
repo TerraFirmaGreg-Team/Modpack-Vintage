@@ -1,0 +1,26 @@
+{
+	title: "Ultimate Batteries?",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 751s,
+		tag: {
+			Charge: 20000000000L
+		}
+	},
+	x: 1.5d,
+	y: 0.0d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"7a6804de"
+	],
+	tasks: [{
+		uid: "8c62cf1d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 751"
+		}],
+		ignore_nbt: 1b
+	}]
+}

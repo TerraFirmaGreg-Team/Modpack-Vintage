@@ -1,0 +1,16 @@
+{
+	x: -24.25d,
+	y: 10.0d,
+	dependencies: [
+		"2816fe72",
+		"6df7dbf0"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "88a9eae5",
+		type: "item",
+		items: [{
+			item: "tfctech:wiredraw/leather_belt"
+		}]
+	}]
+}

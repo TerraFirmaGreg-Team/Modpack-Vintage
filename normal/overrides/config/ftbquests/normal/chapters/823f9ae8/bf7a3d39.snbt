@@ -1,0 +1,17 @@
+{
+	x: -31.25d,
+	y: 10.0d,
+	dependencies: [
+		"2816fe72",
+		"ffb7544a",
+		"6df7dbf0"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "03c7a6cb",
+		type: "item",
+		items: [{
+			item: "tfc:halter"
+		}]
+	}]
+}

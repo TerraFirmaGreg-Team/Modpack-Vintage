@@ -1,0 +1,39 @@
+{
+	title: "{tfg.quests.mv.fluiddrillingrigs.title}",
+	icon: "gregtech:machine 1 1003",
+	x: 5.0d,
+	y: -8.0d,
+	description: "{tfg.quests.mv.fluiddrillingrigs.subtitle}",
+	text: [
+		"{tfg.quests.mv.fluiddrillingrigs.desc1}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc2}",
+		"",
+		"{tfg.quests.mv.fluiddrillingrigs.desc3}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc4}",
+		"",
+		"{tfg.quests.mv.fluiddrillingrigs.desc5}",
+		"",
+		"{tfg.quests.mv.fluiddrillingrigs.desc6}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc7}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc8}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc9}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc10}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc11}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc12}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc13}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc14}",
+		"{tfg.quests.mv.fluiddrillingrigs.desc15}",
+		"",
+		"{tfg.quests.mv.fluiddrillingrigs.desc16}"
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "cdc9f2cb",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1032"
+		}]
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "{planet.neptune}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/neptune.png"
+		}
+	},
+	x: 27.75d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"285bd9fc"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0efa88cb",
+		type: "dimension",
+		title: "{planet.neptune}",
+		dim: -18
+	}]
+}

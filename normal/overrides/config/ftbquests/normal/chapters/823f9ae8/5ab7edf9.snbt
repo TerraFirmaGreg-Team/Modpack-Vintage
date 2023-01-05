@@ -1,0 +1,19 @@
+{
+	title: "{tfg.quests.primitive.softbucket.title}",
+	x: -19.25d,
+	y: 9.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.primitive.softbucket.subtitle}",
+	dependencies: [
+		"06da47f2",
+		"9160e91d",
+		"a0270355"
+	],
+	tasks: [{
+		uid: "1918b2b6",
+		type: "item",
+		items: [{
+			item: "waterflasks:leather_flask"
+		}]
+	}]
+}

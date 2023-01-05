@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.hv.coilsbehaviour.title}",
+	icon: "gregtech:wire_coil 1 7",
+	x: 1.0d,
+	y: -5.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.coilsbehaviour.subtitle}",
+	text: [
+		"{tfg.quests.hv.coilsbehaviour.desc1}",
+		"",
+		"{tfg.quests.hv.coilsbehaviour.desc2}",
+		"",
+		"{tfg.quests.hv.coilsbehaviour.desc3}",
+		"{tfg.quests.hv.coilsbehaviour.desc4}",
+		"{tfg.quests.hv.coilsbehaviour.desc5}"
+	],
+	dependencies: [
+		"490b3016"
+	],
+	tasks: [{
+		uid: "6860c0cd",
+		type: "checkmark"
+	}]
+}

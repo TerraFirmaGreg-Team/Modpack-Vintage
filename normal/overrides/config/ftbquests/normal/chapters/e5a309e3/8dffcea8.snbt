@@ -1,0 +1,38 @@
+{
+	title: "{tfg.quests.hv.nitricacid.title}",
+	x: 7.0d,
+	y: -2.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.nitricacid.subtitle}",
+	text: [
+		"{tfg.quests.hv.nitricacid.desc1}",
+		"{tfg.quests.hv.nitricacid.desc2}",
+		"",
+		"{tfg.quests.hv.nitricacid.desc3}",
+		"",
+		"{tfg.quests.hv.nitricacid.desc4}"
+	],
+	dependencies: [
+		"ed948aa4",
+		"7354e826"
+	],
+	tasks: [{
+		uid: "ae3dd6a8",
+		type: "fluid",
+		fluid: "nitric_acid"
+	}],
+	rewards: [{
+		uid: "5641b0e0",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "nitric_acid",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

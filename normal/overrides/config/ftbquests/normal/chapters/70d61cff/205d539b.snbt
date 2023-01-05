@@ -1,0 +1,22 @@
+{
+	icon: "gregtech:meta_plate 1 1013",
+	x: -3.0d,
+	y: 5.25d,
+	text: [
+		""
+	],
+	dependencies: [
+		"1f0de8ce",
+		"c3849bbf",
+		"eb54e58b"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "52ba4b20",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_plate 16 1013"
+		}],
+		count: 16L
+	}]
+}

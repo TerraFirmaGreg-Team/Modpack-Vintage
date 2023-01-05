@@ -1,0 +1,22 @@
+{
+	title: "{moon.io}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/io.png"
+		}
+	},
+	x: 14.25d,
+	y: 7.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "7b6630c3",
+		type: "dimension",
+		title: "{moon.io}",
+		dim: -1500
+	}]
+}

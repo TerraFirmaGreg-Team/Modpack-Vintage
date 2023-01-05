@@ -1,0 +1,22 @@
+{
+	title: "{moon.titania}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/titania.png"
+		}
+	},
+	x: 24.25d,
+	y: 6.875d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a62ca553"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "0c8444e9",
+		type: "dimension",
+		title: "{moon.titania}",
+		dim: -1510
+	}]
+}

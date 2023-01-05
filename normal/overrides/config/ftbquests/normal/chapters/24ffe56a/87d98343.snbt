@@ -1,0 +1,65 @@
+{
+	title: "There is not limit to \"fun\"",
+	icon: "gregtech:meta_item_1 1 131",
+	x: -19.5d,
+	y: -2.5d,
+	text: [
+		"§1IV§r Components - fortunately for you - are not a big step up in terms of complexity.",
+		"",
+		"The amount of required §dTungsten§r is huge.",
+		"",
+		"§aEmitters§r and §aSensors§r are another topic though... as they require §dNether Star§r and §dIridium§r, both of which have their own dedicated Quests."
+	],
+	dependencies: [
+		"a4804e63"
+	],
+	tasks: [{
+		uid: "288ecd0f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 131"
+		}]
+	},
+	{
+		uid: "da754b44",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 176"
+		}]
+	},
+	{
+		uid: "9fcc7cce",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 146"
+		}]
+	},
+	{
+		uid: "7d3acc04",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 161"
+		}]
+	},
+	{
+		uid: "1a183dfc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 191"
+		}]
+	},
+	{
+		uid: "114c30b2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 236"
+		}]
+	},
+	{
+		uid: "0b98766e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 221"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	icon: "chisel:futura 1 2",
+	x: -3.0d,
+	y: 0.0d,
+	dependencies: [
+		"76dc4691"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a864a0a5",
+		type: "checkmark",
+		title: "AE2"
+	}]
+}

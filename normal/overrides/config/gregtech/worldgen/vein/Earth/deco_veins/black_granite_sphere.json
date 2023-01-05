@@ -1,0 +1,33 @@
+{
+  "name" : "Earth Black Granite Sphere",
+  "weight": 15,
+  "priority": 100,
+  "density": 1.0,
+  "min_height": 10,
+  "max_height": 40,
+  "count_as_vein": false,
+  "generation_predicate":["ore_dict:RawMetamorphic"],
+  "generator": {
+    "type": "sphere",
+    "radius": [
+      10,
+      40
+    ]
+  },
+  "filler": {
+    "type": "ignore_bedrock",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 100,
+          "value": {
+            "block": "gregtech:granite",
+            "variant": "black_granite",
+            "chiseling_variant": "normal"
+          }
+        }
+      ]
+    }
+  }
+}

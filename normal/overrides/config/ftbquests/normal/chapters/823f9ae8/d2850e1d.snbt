@@ -1,0 +1,29 @@
+{
+	x: -4.25d,
+	y: -14.25d,
+	dependencies: [
+		"f9339b52"
+	],
+	tasks: [{
+		uid: "01c30f2b",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_plate",
+			Damage: 335s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}

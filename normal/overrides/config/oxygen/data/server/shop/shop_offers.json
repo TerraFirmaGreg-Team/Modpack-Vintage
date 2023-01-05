@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1659408964299,
+    "amount": 1,
+    "price": 500,
+    "discount": 10,
+    "itemstack": {
+      "registry_name": "extraplanets:enviro_emergency_kit",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409015683,
+    "amount": 2,
+    "price": 25,
+    "discount": 5,
+    "itemstack": {
+      "registry_name": "minecraft:torch",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409169082,
+    "amount": 2,
+    "price": 200,
+    "discount": 10,
+    "itemstack": {
+      "registry_name": "tfc:crop/seeds/jute",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409343884,
+    "amount": 5,
+    "price": 90,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfc:food/elderberry",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": "{\"tfc:food\":{creationDate:122400000000L,traits:[]}}"
+    }
+  },
+  {
+    "id": 1659409409486,
+    "amount": 5,
+    "price": 190,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfc:food/wheat_bread_sandwich",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": "{Parent:{creationDate:122400000000L,foodData:{food:4,sat:3.0f,water:0.0f,decay:4.5f,grain:0.0f,veg:0.0f,fruit:0.0f,meat:0.0f,dairy:0.0f,buffed:0b},traits:[]},\"tfc:food\":{creationDate:1224000L,traits:[]}}"
+    }
+  },
+  {
+    "id": 1659409112933,
+    "amount": 2,
+    "price": 30,
+    "discount": 12,
+    "itemstack": {
+      "registry_name": "tfcflorae:crop/product/yucca_string",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409299334,
+    "amount": 1,
+    "price": 590,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfcmedicinal:medicine_vial",
+      "damage": 0,
+      "itemstack_nbt": "{Fluid:{FluidName:\"health_boost_concoction\",Amount:100}}",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409225338,
+    "amount": 1,
+    "price": 190,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfcmedicinal:medicine_vial",
+      "damage": 0,
+      "itemstack_nbt": "{Fluid:{FluidName:\"cooling_panacea\",Amount:100}}",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409315083,
+    "amount": 1,
+    "price": 490,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfcmedicinal:medicine_vial",
+      "damage": 0,
+      "itemstack_nbt": "{Fluid:{FluidName:\"nourishing_concoction\",Amount:100}}",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409222501,
+    "amount": 1,
+    "price": 190,
+    "discount": 30,
+    "itemstack": {
+      "registry_name": "tfcmedicinal:medicine_vial",
+      "damage": 0,
+      "itemstack_nbt": "{Fluid:{FluidName:\"warming_panacea\",Amount:100}}",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409207783,
+    "amount": 1,
+    "price": 200,
+    "discount": 50,
+    "itemstack": {
+      "registry_name": "tfcmedicinal:medicine_vial",
+      "damage": 0,
+      "itemstack_nbt": "{Fluid:{FluidName:\"death_sickness_antidote\",Amount:100}}",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409054934,
+    "amount": 1,
+    "price": 250,
+    "discount": 10,
+    "itemstack": {
+      "registry_name": "theoneprobe:probe_goggles",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  },
+  {
+    "id": 1659409046433,
+    "amount": 1,
+    "price": 25,
+    "discount": 50,
+    "itemstack": {
+      "registry_name": "theoneprobe:probenote",
+      "damage": 0,
+      "itemstack_nbt": "",
+      "capabilities_nbt": ""
+    }
+  }
+]

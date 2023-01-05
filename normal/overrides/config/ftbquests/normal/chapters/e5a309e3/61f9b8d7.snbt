@@ -1,0 +1,47 @@
+{
+	title: "{tfg.quests.hv.autobuild.title}",
+	icon: "gregtech:meta_item_1 1 504",
+	x: -2.5d,
+	y: 2.0d,
+	description: "{tfg.quests.hv.autobuild.subtitle}",
+	text: [
+		"{tfg.quests.hv.autobuild.desc1}",
+		"",
+		"{tfg.quests.hv.autobuild.desc2}",
+		"",
+		"{tfg.quests.hv.autobuild.desc3}",
+		"{tfg.quests.hv.autobuild.desc4}",
+		"",
+		"{tfg.quests.hv.autobuild.desc5}",
+		"",
+		"{tfg.quests.hv.autobuild.desc6}",
+		"",
+		"{tfg.quests.hv.autobuild.desc7}"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "70e14455",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 504"
+		}]
+	},
+	{
+		uid: "3150e67b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 219"
+		}],
+		count: 4L
+	},
+	{
+		uid: "31784679",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 630"
+		}],
+		count: 2L
+	}]
+}

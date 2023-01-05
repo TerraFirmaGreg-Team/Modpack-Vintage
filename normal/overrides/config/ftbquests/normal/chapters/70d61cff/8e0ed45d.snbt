@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.ev.UpgradingyourEBF.title}",
+	icon: "gregtech:machine 1 1214",
+	x: -1.5d,
+	y: -5.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"c96cd6c3",
+		"8a65a77a"
+	],
+	tasks: [{
+		uid: "23b5b878",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1214"
+		}]
+	}]
+}

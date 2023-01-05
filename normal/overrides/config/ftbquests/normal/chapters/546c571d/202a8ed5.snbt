@@ -1,0 +1,47 @@
+{
+	title: "{tfg.quests.lv.chemicalreactor.title}",
+	icon: "gregtech:machine 1 215",
+	x: 3.0d,
+	y: 15.0d,
+	description: "{tfg.quests.lv.chemicalreactor.subtitle}",
+	text: [
+		"{tfg.quests.lv.chemicalreactor.desc1}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc2}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc3}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc4}",
+		"",
+		"{tfg.quests.lv.chemicalreactor.desc5}"
+	],
+	dependencies: [
+		"a02702d7"
+	],
+	tasks: [{
+		uid: "fbe1e663",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 215"
+		}]
+	},
+	{
+		uid: "7c336957",
+		type: "fluid",
+		fluid: "rubber"
+	}],
+	rewards: [{
+		uid: "6b86d1b2",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "rubber",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

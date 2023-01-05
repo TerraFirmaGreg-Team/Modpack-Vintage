@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.lv.mvcircuits.title}",
+	icon: "gregtech:meta_item_1 1 622",
+	x: 7.0d,
+	y: 20.0d,
+	description: "{tfg.quests.lv.mvcircuits.subtitle}",
+	text: [
+		"{tfg.quests.lv.mvcircuits.desc1}",
+		"",
+		"{tfg.quests.lv.mvcircuits.desc2}",
+		"",
+		"{tfg.quests.lv.mvcircuits.desc3}"
+	],
+	dependencies: [
+		"dbcb3e47",
+		"d12bfe84"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "ddc48f54",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 622"
+		}]
+	}]
+}

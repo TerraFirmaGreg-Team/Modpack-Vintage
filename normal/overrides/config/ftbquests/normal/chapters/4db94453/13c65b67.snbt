@@ -1,0 +1,39 @@
+{
+	title: "Portable Cell",
+	icon: {
+		id: "appliedenergistics2:portable_cell",
+		tag: {
+			internalCurrentPower: 20000.0d,
+			internalMaxPower: 20000.0d
+		}
+	},
+	x: -9.5d,
+	y: 7.25d,
+	text: [
+		"§oA higher-tech backpack! Also seriously undervalued.§r",
+		"",
+		"The §9Portable Cell§r can hold items for you! It holds up to §a27§r types of items.",
+		"",
+		"What's more, it acts just like a regular AE2 Storage Cell. Once you get an ME System running, you can simply drop it into an §aME Drive§r or §b§aME IO Port§r for convenience.",
+		"",
+		"The Portable Cell's energy only drains when it's open. With §6167 minutes§r of juice stored in it thanks to changed config, you shouldn't worry about it running out of energy.",
+		"Regardless, you will be able to §dcharge§r it in §7LV§r Age in §3machine Charger slots§r, §3Turbo Chargers§r or §3Battery Buffers§r.",
+		"",
+		"§",
+		"§cWarning§r: Attempting to store items with very large NBT Tags may result in them getting §cstuck§r. So far it seems that the Building Gadgets, Terminal and Clipboards are safe, but we never know what could happen.",
+		"If something gets stuck, build a simple AE2 Network with just an Energy Acceptor, an IO Port and a Storage Bus on a chest. Then place your Portable Cell inside the IO Port."
+	],
+	dependencies: [
+		"74286683"
+	],
+	tasks: [{
+		uid: "3ecf762b",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:portable_cell",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

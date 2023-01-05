@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.primitive.copper_file.title}",
+	x: -16.75d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.copper_knife.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"3c2ef555"
+	],
+	tasks: [{
+		uid: "c3d97cc4",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 9s,
+			tag: {
+				GT.ToolStats: {
+					Material: "copper"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

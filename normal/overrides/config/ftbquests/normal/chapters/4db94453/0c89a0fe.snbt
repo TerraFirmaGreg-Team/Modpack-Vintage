@@ -1,0 +1,35 @@
+{
+	icon: "appliedenergistics2:quantum_ring",
+	x: -5.0d,
+	y: 15.0d,
+	shape: "octagon",
+	description: "{tfg.quests.ae2.quantumring.subtitle}",
+	dependencies: [
+		"4363961b"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "33165a3f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_ring"
+		}],
+		count: 16L
+	},
+	{
+		uid: "cb8bf7c4",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_link"
+		}],
+		count: 2L
+	},
+	{
+		uid: "665c1406",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 48"
+		}],
+		count: 2L
+	}]
+}

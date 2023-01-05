@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.mv.tricorder.title}",
+	icon: "gregtech:meta_item_1 1 470",
+	x: 16.5d,
+	y: -1.5d,
+	description: "{tfg.quests.mv.tricorder.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"03aed214"
+	],
+	tasks: [{
+		uid: "b89bdac9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 469"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

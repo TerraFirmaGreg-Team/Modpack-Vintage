@@ -1,0 +1,22 @@
+{
+	title: "{moon.triton}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/triton.png"
+		}
+	},
+	x: 28.625d,
+	y: 7.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"285bd9fc"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "5e60620f",
+		type: "dimension",
+		title: "{moon.triton}",
+		dim: -1504
+	}]
+}

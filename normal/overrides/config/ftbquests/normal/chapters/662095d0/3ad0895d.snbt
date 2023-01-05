@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.mv.advcutting.title}",
+	icon: "gregtech:machine 1 246",
+	x: 9.75d,
+	y: 0.0d,
+	description: "{tfg.quests.mv.advcutting.subtitle}",
+	text: [
+		"{tfg.quests.mv.advcutting.desc1}",
+		"",
+		"{tfg.quests.mv.advcutting.desc2}",
+		"{tfg.quests.mv.advcutting.desc3}"
+	],
+	dependencies: [
+		"abdc5738"
+	],
+	size: 1.5d,
+	or_tasks: true,
+	tasks: [{
+		uid: "79b6cbbc",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 246"
+		}]
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: -17.0d,
+	y: -5.5d,
+	description: "{tfg.quests.steam.drum.subtitle}",
+	text: [
+		"{tfg.quests.steam.drum.desc1}",
+		"{tfg.quests.steam.drum.desc2}",
+		"{tfg.quests.steam.drum.desc3}",
+		"",
+		"{tfg.quests.steam.drum.desc4}",
+		"",
+		"{tfg.quests.steam.drum.desc5}"
+	],
+	dependencies: [
+		"7d03eeb7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "be292c05",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1611"
+		}]
+	}]
+}

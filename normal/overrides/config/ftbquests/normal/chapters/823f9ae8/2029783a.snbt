@@ -1,0 +1,14 @@
+{
+	x: -29.25d,
+	y: 10.0d,
+	dependencies: [
+		"31b3b818"
+	],
+	tasks: [{
+		uid: "431f063e",
+		type: "item",
+		items: [{
+			item: "tfcthings:sling_ammo"
+		}]
+	}]
+}

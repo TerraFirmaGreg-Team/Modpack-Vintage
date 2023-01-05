@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.ev.gasoline.title}",
+	x: 0.5d,
+	y: 5.5d,
+	description: "{tfg.quests.ev.gasoline.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"1f0de8ce"
+	],
+	tasks: [{
+		uid: "7d93fc0a",
+		type: "fluid",
+		fluid: "gasoline"
+	}],
+	rewards: [{
+		uid: "8b6a281e",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "gasoline",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

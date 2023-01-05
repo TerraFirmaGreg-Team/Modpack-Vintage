@@ -1,0 +1,56 @@
+{
+	title: "{tfg.quests.primitive.fireplace.title}",
+	icon: "tfc:firepit",
+	x: -31.0d,
+	y: -9.25d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.fireplace.subtitle}",
+	text: [
+		"{tfg.quests.primitive.fireplace.desc1}",
+		"{tfg.quests.primitive.fireplace.desc2}",
+		"{tfg.quests.primitive.fireplace.desc3}",
+		"{tfg.quests.primitive.fireplace.desc4}",
+		"{tfg.quests.primitive.fireplace.desc5}",
+		"{tfg.quests.primitive.fireplace.desc6}"
+	],
+	dependencies: [
+		"a03af80a"
+	],
+	tasks: [{
+		uid: "ee89c644",
+		type: "item",
+		title: "{tfg.quests.primitive.fireplace.tasks.wood.title}",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}]
+	},
+	{
+		uid: "b5353036",
+		type: "item",
+		items: [{
+			id: "minecraft:stick",
+			ForgeCaps: {
+				"tfc:item_size": {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}],
+		count: 3L
+	},
+	{
+		uid: "5bfbc21b",
+		type: "item",
+		items: [{
+			item: "tfc:firestarter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

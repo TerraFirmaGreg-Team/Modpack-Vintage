@@ -1,0 +1,15 @@
+{
+	x: 7.25d,
+	y: 16.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "78491138",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:collector"
+		}]
+	}]
+}

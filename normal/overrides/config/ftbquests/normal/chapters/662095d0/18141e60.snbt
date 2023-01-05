@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.mv.bestLV.title}",
+	icon: "gregtech:meta_item_1 1 627",
+	x: 18.0d,
+	y: -4.5d,
+	description: "{tfg.quests.mv.bestLV.subtitle}",
+	text: [
+		"{tfg.quests.mv.bestLV.desc1}"
+	],
+	dependencies: [
+		"5ee4ef44",
+		"8a087468",
+		"08970ed3"
+	],
+	tasks: [{
+		uid: "2d4c98a9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 627"
+		}]
+	}]
+}

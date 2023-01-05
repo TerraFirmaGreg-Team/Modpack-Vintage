@@ -1,0 +1,25 @@
+{
+	x: -21.25d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"66e3b88a"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "c8217178",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			Damage: 1s,
+			tag: {
+				GT.ToolStats: {
+					Material: "copper"
+				}
+			}
+		}],
+		ignore_nbt: 2b
+	}]
+}

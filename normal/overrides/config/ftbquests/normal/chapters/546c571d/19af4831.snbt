@@ -1,0 +1,63 @@
+{
+	title: "{tfg.quests.lv.arc.title}",
+	icon: "gregtech:machine 1 95",
+	x: -6.0d,
+	y: 22.5d,
+	description: "{tfg.quests.lv.arc.subtitle}",
+	text: [
+		"{tfg.quests.lv.arc.desc1}",
+		"{tfg.quests.lv.arc.desc2}",
+		"{tfg.quests.lv.arc.desc3}"
+	],
+	dependencies: [
+		"422502ff"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "be9f400f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 95"
+		}]
+	},
+	{
+		uid: "87ddf729",
+		type: "item",
+		items: [{
+			item: "minecraft:glass 32"
+		}],
+		count: 32L
+	},
+	{
+		uid: "7d1c33da",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_ingot",
+			Count: 16b,
+			Damage: 335s,
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "55d4205b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 16 252"
+		}],
+		count: 16L
+	}]
+}

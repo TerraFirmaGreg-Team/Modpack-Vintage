@@ -1,0 +1,61 @@
+{
+	title: "{tfg.quests.primitive.glassmolds.title}",
+	x: -6.0d,
+	y: -20.25d,
+	description: "{tfg.quests.primitive.glassmolds.subtitle}",
+	dependencies: [
+		"5c797ee7"
+	],
+	tasks: [{
+		uid: "b4f458f5",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/unfired/glass_block",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "a198340b",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/unfired/glass_pane",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "572c50d4",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/mold/glass_block",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "1eb7973f",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/mold/glass_pane",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	}]
+}

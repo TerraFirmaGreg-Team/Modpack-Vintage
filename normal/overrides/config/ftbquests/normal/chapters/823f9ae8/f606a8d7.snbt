@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.primitive.copper_chisel.title}",
+	x: -18.75d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.copper_chisel.subtitle}",
+	text: [
+		"{tfg.quests.primitive.copper_prospect.desk1}",
+		"{tfg.quests.primitive.copper_prospect.desk2}",
+		"{tfg.quests.primitive.copper_prospect.desk3}",
+		"{tfg.quests.primitive.copper_prospect.desk4}",
+		"{tfg.quests.primitive.copper_prospect.desk5}"
+	],
+	dependencies: [
+		"76b9b265"
+	],
+	tasks: [{
+		uid: "cb1ef3f1",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any chisel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "chisel"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

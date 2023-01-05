@@ -1,0 +1,14 @@
+{
+	x: -29.25d,
+	y: 7.25d,
+	dependencies: [
+		"3bcc6936"
+	],
+	tasks: [{
+		uid: "e94fbf70",
+		type: "item",
+		items: [{
+			item: "tfcthings:rope_bridge_bundle"
+		}]
+	}]
+}

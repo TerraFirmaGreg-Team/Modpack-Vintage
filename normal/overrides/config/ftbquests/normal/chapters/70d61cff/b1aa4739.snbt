@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.ev.radon.title}",
+	x: -11.0d,
+	y: -2.0d,
+	description: "{tfg.quests.ev.radon.subtitle}",
+	text: [
+		"{tfg.quests.ev.radon.desc1}",
+		"",
+		"{tfg.quests.ev.radon.desc2}"
+	],
+	dependencies: [
+		"5928ecb5"
+	],
+	tasks: [{
+		uid: "12f83882",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 8 81"
+		}],
+		count: 8L
+	},
+	{
+		uid: "9e0fcfc2",
+		type: "fluid",
+		fluid: "radon"
+	}],
+	rewards: [{
+		uid: "826c6fd2",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "radon",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

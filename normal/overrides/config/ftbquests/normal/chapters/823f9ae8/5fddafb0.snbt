@@ -1,0 +1,24 @@
+{
+	x: 7.5d,
+	y: 5.75d,
+	dependencies: [
+		"4c521f7f",
+		"55e3785e",
+		"8b8b0136",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "cb01244f",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "nourishing_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

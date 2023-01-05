@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Mercury Oxygen Deposit",
+  "yield": {
+    "min": 400,
+    "max": 900
+  },
+  "dimension_filter": [
+    "dimension_id:-13"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "oxygen"
+}

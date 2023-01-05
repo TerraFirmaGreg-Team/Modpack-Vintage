@@ -1,0 +1,17 @@
+{
+  "weight": 80,
+  "name": "Moon Fresh Water Deposit",
+  "yield": {
+    "min": 1,
+    "max": 5
+  },
+  "dimension_filter": [
+    "dimension_id:-28"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 25,
+    "depleted_yield": 4
+  },
+  "fluid": "fresh_water"
+}

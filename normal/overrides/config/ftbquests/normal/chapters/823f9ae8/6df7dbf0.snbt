@@ -1,0 +1,16 @@
+{
+	x: -26.25d,
+	y: 8.0d,
+	description: "{tfg.quests.primitive.pineappleleather.subtitle}",
+	dependencies: [
+		"b315d793",
+		"14ed0d1e"
+	],
+	tasks: [{
+		uid: "0d9b7518",
+		type: "item",
+		items: [{
+			item: "firmalife:pineapple_leather"
+		}]
+	}]
+}

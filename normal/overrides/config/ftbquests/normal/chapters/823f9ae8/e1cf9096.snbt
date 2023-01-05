@@ -1,0 +1,25 @@
+{
+	x: 7.5d,
+	y: 11.25d,
+	dependencies: [
+		"2a41b9e1",
+		"83ebe4b7",
+		"8b8b0136",
+		"55e3785e",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "bd308634",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "death_sickness_antidote",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.pump.title}",
+	x: 1.0d,
+	y: 7.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.lv.pump.subtitle}",
+	text: [
+		"{tfg.quests.lv.pump.desc1}",
+		"",
+		"{tfg.quests.lv.pump.desc2}"
+	],
+	dependencies: [
+		"dd1bc7c8"
+	],
+	tasks: [{
+		uid: "c3998590",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 142"
+		}]
+	}]
+}

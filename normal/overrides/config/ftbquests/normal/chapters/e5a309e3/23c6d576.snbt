@@ -1,0 +1,28 @@
+{
+	title: "{tfg.quests.hv.advancedmaintenance.title}",
+	icon: "gregtech:machine 1 1656",
+	x: -2.0d,
+	y: 3.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.advancedmaintenance.subtitle}",
+	text: [
+		"{tfg.quests.hv.advancedmaintenance.desc1}",
+		"",
+		"{tfg.quests.hv.advancedmaintenance.desc2}",
+		"{tfg.quests.hv.advancedmaintenance.desc3}"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "4252df2f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1655"
+		},
+		{
+			item: "gregtech:machine 1 1656"
+		}]
+	}]
+}

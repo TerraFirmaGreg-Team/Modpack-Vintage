@@ -1,0 +1,76 @@
+{
+	title: "Rare Earth",
+	icon: "gregtech:meta_dust 1 1598",
+	x: -21.25d,
+	y: -6.75d,
+	text: [
+		"If you already made and centrifuged §aRare Earth§r, that's great! If you did not, obtain it as §9Byproduct§r from various ores, or from centrifuging §dMonazite§r.",
+		"",
+		"To extract the §aRare Earths§r§r, you should use §3Centrifuge§r §4as high tier as possible§r, due to the chanced output increasing.",
+		"",
+		"The elements you can obtain are:",
+		"§9-§r §aLanthanum§r is used in §3Fusion§r§r, you will eventually want a lot of it!",
+		"§9-§r §aYttrium§r is used in §dYttrium-Barium-Cuprate-Oxide§r (YBCO), a wire material for §3UV§r.",
+		"§9-§r §aCerium§r is not particularly useful.",
+		"§9-§r §aSaramium§r is used for §dIV Superconductors§r and §dMagnetic Rods§r for §dLuV§r+ Motors.",
+		"§9-§r §aNeodymium§r normally makes the strongest magnets, but gameplay balance... you know.",
+		"§9-§r §aCadmium§r is not particularly useful.",
+		"",
+		"",
+		"§bLore:§r Rare Earth Elements (REE) contain a lot more metals than these, but we are struggling enough as is to give them use. Gregicality Science will have a proper REE chain!"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "07564502",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 64 1598"
+		}],
+		count: 64L
+	},
+	{
+		uid: "95dcc494",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 53"
+		}]
+	},
+	{
+		uid: "9518298f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 121"
+		}]
+	},
+	{
+		uid: "a2e14087",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 20"
+		}]
+	},
+	{
+		uid: "9c26d834",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 95"
+		}]
+	},
+	{
+		uid: "cb04a073",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 66"
+		}]
+	},
+	{
+		uid: "4afd222e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_small 1 19"
+		}]
+	}]
+}

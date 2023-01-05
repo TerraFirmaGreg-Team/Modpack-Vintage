@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.ev.largesteamturbine.title}",
+	icon: "gregtech:machine 1 1010",
+	x: -11.0d,
+	y: -3.0d,
+	description: "{tfg.quests.ev.largesteamturbine.subtitle}",
+	text: [
+		"{tfg.quests.ev.largesteamturbine.desc1}",
+		"",
+		"{tfg.quests.ev.largesteamturbine.desc2}"
+	],
+	dependencies: [
+		"33373ad5"
+	],
+	tasks: [{
+		uid: "f00017b7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1010"
+		}]
+	},
+	{
+		uid: "4d5a265f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1228"
+		}]
+	}]
+}

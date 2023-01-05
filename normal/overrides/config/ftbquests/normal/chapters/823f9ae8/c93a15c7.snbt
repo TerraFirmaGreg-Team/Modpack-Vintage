@@ -1,0 +1,31 @@
+{
+	x: 2.0d,
+	y: -10.25d,
+	dependencies: [
+		"70dd31d7"
+	],
+	tasks: [{
+		uid: "cf40971d",
+		type: "item",
+		items: [{
+			id: "tfcthings:hook_javelin/steel",
+			tag: {},
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

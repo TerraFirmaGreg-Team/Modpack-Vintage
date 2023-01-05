@@ -1,0 +1,28 @@
+{
+	title: "{tfg.quests.hv.titanium.title}",
+	icon: "gregtech:meta_ingot 1 113",
+	x: 6.0d,
+	y: -6.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.titanium.subtitle}",
+	text: [
+		"{tfg.quests.hv.titanium.desc1}",
+		"",
+		"{tfg.quests.hv.titanium.desc2}",
+		"",
+		"{tfg.quests.hv.titanium.desc3}",
+		"",
+		"{tfg.quests.hv.titanium.desc4}"
+	],
+	dependencies: [
+		"5fce06c9"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c0761b7f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 113"
+		}]
+	}]
+}

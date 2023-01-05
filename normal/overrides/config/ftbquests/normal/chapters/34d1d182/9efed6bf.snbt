@@ -1,0 +1,24 @@
+{
+	x: 1.5d,
+	y: 10.5d,
+	shape: "octagon",
+	dependencies: [
+		"c7763b9e"
+	],
+	size: 1.5d,
+	optional: true,
+	tasks: [{
+		uid: "3a620c3a",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:rocket_t2 1 11"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 12"
+		},
+		{
+			item: "galacticraftplanets:rocket_t2 1 13"
+		}],
+		ignore_nbt: 2b
+	}]
+}

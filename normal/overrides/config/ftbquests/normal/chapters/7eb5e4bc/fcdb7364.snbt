@@ -1,0 +1,23 @@
+{
+	x: 4.5d,
+	y: -1.25d,
+	dependencies: [
+		"f32cc030"
+	],
+	tasks: [{
+		uid: "a2060321",
+		type: "fluid",
+		fluid: "plasma.helium"
+	}],
+	rewards: [{
+		uid: "9c7df46e",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "plasma.helium",
+				Amount: 1000
+			}
+		}
+	}]
+}

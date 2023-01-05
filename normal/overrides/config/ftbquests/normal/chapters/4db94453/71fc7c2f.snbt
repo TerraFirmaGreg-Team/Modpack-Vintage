@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: 9.0d,
+	dependencies: [
+		"7daba4fb"
+	],
+	tasks: [{
+		uid: "736352f9",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:cell_workbench"
+		}]
+	}]
+}

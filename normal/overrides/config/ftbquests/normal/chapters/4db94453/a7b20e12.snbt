@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: 12.0d,
+	shape: "circle",
+	dependencies: [
+		"353f5942"
+	],
+	tasks: [{
+		uid: "67b87d56",
+		type: "item",
+		items: [{
+			item: "aeadditions:hardmedrive"
+		}]
+	}]
+}

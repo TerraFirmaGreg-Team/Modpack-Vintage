@@ -1,0 +1,15 @@
+{
+	x: 8.25d,
+	y: 15.0d,
+	dependencies: [
+		"411b712c"
+	],
+	tasks: [{
+		uid: "19fa5753",
+		type: "item",
+		items: [{
+			item: "extraplanets:advanced_launch_pad"
+		}],
+		count: 25L
+	}]
+}

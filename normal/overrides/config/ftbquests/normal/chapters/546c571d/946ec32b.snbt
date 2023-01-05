@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.lv.bath.title}",
+	icon: "gregtech:machine 1 200",
+	x: -5.0d,
+	y: 13.5d,
+	description: "{tfg.quests.lv.bath.subtitle}",
+	text: [
+		"{tfg.quests.lv.bath.desc1}",
+		"{tfg.quests.lv.bath.desc2}",
+		"{tfg.quests.lv.bath.desc3}",
+		"",
+		"{tfg.quests.lv.bath.desc4}",
+		"",
+		"{tfg.quests.lv.bath.desc5}",
+		"{tfg.quests.lv.bath.desc6}"
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "0934488a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 200"
+		}]
+	}]
+}

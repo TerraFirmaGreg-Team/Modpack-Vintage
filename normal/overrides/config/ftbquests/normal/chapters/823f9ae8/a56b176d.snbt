@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.copper_prospect_head.title}",
+	x: -20.25d,
+	y: -5.5d,
+	description: "{tfg.quests.primitive.copper_prospect_head.subtitle}",
+	dependencies: [
+		"1a30f24f"
+	],
+	tasks: [{
+		uid: "e58aa9b4",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any propickHead"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "propickHead"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

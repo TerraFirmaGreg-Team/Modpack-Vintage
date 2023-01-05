@@ -1,0 +1,14 @@
+{
+	icon: "gregtech:meta_gear 1 2520",
+	x: -3.75d,
+	y: -4.0d,
+	dependencies: [
+		"573a84ba"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a2e52b29",
+		type: "checkmark",
+		title: "LuV"
+	}]
+}

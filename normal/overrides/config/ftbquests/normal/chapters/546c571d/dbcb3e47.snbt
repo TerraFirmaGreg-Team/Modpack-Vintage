@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.diodes.title}",
+	icon: "gregtech:meta_item_1 1 521",
+	x: 4.5d,
+	y: 18.0d,
+	description: "{tfg.quests.lv.diodes.subtitle}",
+	text: [
+		"{tfg.quests.lv.diodes.desc1}",
+		"{tfg.quests.lv.diodes.desc2}"
+	],
+	dependencies: [
+		"89d68b62",
+		"9c6e5aed"
+	],
+	tasks: [{
+		uid: "ebabc7f1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 521"
+		}]
+	}]
+}

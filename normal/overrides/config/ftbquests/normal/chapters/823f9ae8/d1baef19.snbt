@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.primitive_tools.title}",
+	x: -29.0d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.primitive_tools.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "0c4901ad",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any shovelStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "shovelStone"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

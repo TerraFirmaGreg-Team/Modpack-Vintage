@@ -1,0 +1,26 @@
+{
+	x: -12.0d,
+	y: -2.0d,
+	description: "{tfg.quests.steam.smallfluidpipe.subtitle}",
+	text: [
+		"{tfg.quests.steam.smallfluidpipe.desc1}",
+		"{tfg.quests.steam.smallfluidpipe.desc2}",
+		"{tfg.quests.steam.smallfluidpipe.desc3}",
+		"{tfg.quests.steam.smallfluidpipe.desc4}",
+		"",
+		"{tfg.quests.steam.smallfluidpipe.desc5}",
+		"",
+		"{tfg.quests.steam.smallfluidpipe.desc6}",
+		"{tfg.quests.steam.smallfluidpipe.desc7}"
+	],
+	dependencies: [
+		"8fdd423e"
+	],
+	tasks: [{
+		uid: "77a923d7",
+		type: "item",
+		items: [{
+			item: "gregtech:fluid_pipe_small 1 260"
+		}]
+	}]
+}

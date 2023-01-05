@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 4.25d,
+	dependencies: [
+		"f728ff59"
+	],
+	tasks: [{
+		uid: "3304b747",
+		type: "item",
+		items: [{
+			item: "planetprogression:telescope"
+		}]
+	}]
+}

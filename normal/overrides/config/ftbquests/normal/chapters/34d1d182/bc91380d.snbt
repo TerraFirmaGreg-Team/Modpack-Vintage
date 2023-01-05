@@ -1,0 +1,14 @@
+{
+	x: 1.25d,
+	y: 17.5d,
+	dependencies: [
+		"b8908e93"
+	],
+	tasks: [{
+		uid: "dca60b21",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:solar_array_module"
+		}]
+	}]
+}

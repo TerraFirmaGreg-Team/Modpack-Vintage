@@ -1,0 +1,14 @@
+{
+	x: -3.5d,
+	y: 18.75d,
+	dependencies: [
+		"2c31178f"
+	],
+	tasks: [{
+		uid: "3def6c17",
+		type: "item",
+		items: [{
+			item: "extraplanets:ultimate_fuel_loader"
+		}]
+	}]
+}

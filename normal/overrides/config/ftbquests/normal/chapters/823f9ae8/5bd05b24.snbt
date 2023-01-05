@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.copper_hammer_head.title}",
+	x: -21.25d,
+	y: -5.5d,
+	description: "{tfg.quests.primitive.copper_hammer_head.subtitle}",
+	dependencies: [
+		"1a30f24f"
+	],
+	tasks: [{
+		uid: "15b2d210",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_tool_head_hammer 1 25"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

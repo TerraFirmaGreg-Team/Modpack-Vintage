@@ -1,0 +1,15 @@
+{
+	x: 12.0d,
+	y: 2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"1fb52d2d"
+	],
+	tasks: [{
+		uid: "fdd7cba0",
+		type: "item",
+		items: [{
+			item: "aeadditions:fluidcrafter"
+		}]
+	}]
+}

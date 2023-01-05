@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.lv.separator.title}",
+	icon: "gregtech:machine 1 290",
+	x: -7.5d,
+	y: 16.0d,
+	description: "{tfg.quests.lv.separator.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "493ce538",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 290"
+		}]
+	}]
+}

@@ -1,0 +1,161 @@
+{
+	title: "{tfg.quests.ev.truedistillationorganic.title}",
+	x: 6.0d,
+	y: 0.0d,
+	description: "{tfg.quests.ev.truedistillationorganic.subtitle}",
+	text: [
+		"{tfg.quests.ev.truedistillationorganic.desc1}",
+		"{tfg.quests.ev.truedistillationorganic.desc2}",
+		"{tfg.quests.ev.truedistillationorganic.desc3}",
+		"{tfg.quests.ev.truedistillationorganic.desc4}",
+		"{tfg.quests.ev.truedistillationorganic.desc5}",
+		"",
+		"{tfg.quests.ev.truedistillationorganic.desc6}",
+		"",
+		"{tfg.quests.ev.truedistillationorganic.desc7}",
+		"{tfg.quests.ev.truedistillationorganic.desc8}",
+		"{tfg.quests.ev.truedistillationorganic.desc9}",
+		"{tfg.quests.ev.truedistillationorganic.desc10}",
+		"",
+		"{tfg.quests.ev.truedistillationorganic.desc11}",
+		"{tfg.quests.ev.truedistillationorganic.desc12}"
+	],
+	dependencies: [
+		"ff136331"
+	],
+	optional: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "47de5aba",
+		type: "fluid",
+		fluid: "phenol"
+	},
+	{
+		uid: "3ddd9c3a",
+		type: "fluid",
+		fluid: "benzene"
+	},
+	{
+		uid: "4787538b",
+		type: "fluid",
+		fluid: "toluene"
+	},
+	{
+		uid: "101790bf",
+		type: "fluid",
+		fluid: "dimethylbenzene"
+	},
+	{
+		uid: "5cb9b262",
+		type: "fluid",
+		fluid: "acetic_acid"
+	},
+	{
+		uid: "7c467a24",
+		type: "fluid",
+		fluid: "methanol"
+	},
+	{
+		uid: "90c51fae",
+		type: "fluid",
+		fluid: "acetone"
+	}],
+	rewards: [{
+		uid: "ea4ba95f",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "phenol",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "1aa0a33e",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "benzene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "84067222",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "toluene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "66b2fcb2",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "dimethylbenzene",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "3f7f3cd3",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "acetic_acid",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "dfb82836",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "methanol",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "c854da3c",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "acetone",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

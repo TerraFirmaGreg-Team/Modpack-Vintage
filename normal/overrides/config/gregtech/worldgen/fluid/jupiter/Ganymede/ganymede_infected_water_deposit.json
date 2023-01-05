@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Ganymede Infected Water Deposit",
+  "yield": {
+    "min": 5,
+    "max": 27
+  },
+  "dimension_filter": [
+    "dimension_id:-1506"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "infected_water_fluid"
+}

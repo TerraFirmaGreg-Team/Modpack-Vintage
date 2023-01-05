@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.mv.benzene.title}",
+	x: 4.0d,
+	y: -12.0d,
+	description: "{tfg.quests.mv.benzene.subtitle}",
+	text: [
+		"{tfg.quests.mv.benzene.desc1}",
+		"",
+		"{tfg.quests.mv.benzene.desc2}",
+		"",
+		"{tfg.quests.mv.benzene.desc4}",
+		"",
+		"{tfg.quests.mv.benzene.desc5}",
+		"",
+		"{tfg.quests.mv.benzene.desc6}",
+		"",
+		"{tfg.quests.mv.benzene.desc7}"
+	],
+	dependencies: [
+		"65405836"
+	],
+	tasks: [{
+		uid: "b1b753d9",
+		type: "fluid",
+		fluid: "benzene"
+	}],
+	rewards: [{
+		uid: "cefd6e0b",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "benzene",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 2.5d,
+	dependencies: [
+		"6597abd6"
+	],
+	tasks: [{
+		uid: "0cc5bd1a",
+		type: "item",
+		items: [{
+			item: "ae2fc:fluid_packet_decoder"
+		}]
+	}]
+}

@@ -1,0 +1,12 @@
+{
+	title: "Craftable in LuV",
+	icon: "gregtech:machine 1 991",
+	disable_toast: true,
+	x: -25.5d,
+	y: -8.0d,
+	text: [
+		"This is the §9Crystal§r Circuit line.",
+		"",
+		"It is locked behind §3Fusion§r."
+	]
+}

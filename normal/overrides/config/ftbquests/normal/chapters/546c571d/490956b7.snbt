@@ -1,0 +1,42 @@
+{
+	title: "{tfg.quests.lv.bus.title}",
+	x: 11.0d,
+	y: 9.0d,
+	description: "{tfg.quests.lv.bus.subtitle}",
+	text: [
+		"{tfg.quests.lv.bus.desc1}",
+		"",
+		"{tfg.quests.lv.bus.desc2}"
+	],
+	dependencies: [
+		"9dd3a20f"
+	],
+	tasks: [{
+		uid: "7ca4e1da",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1151"
+		}]
+	},
+	{
+		uid: "bf023d1f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1166"
+		}]
+	},
+	{
+		uid: "3119b330",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1181"
+		}]
+	},
+	{
+		uid: "86e43f71",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1196"
+		}]
+	}]
+}

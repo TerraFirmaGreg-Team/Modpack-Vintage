@@ -1,0 +1,29 @@
+{
+	title: "Extreme Combustion Engine",
+	icon: "gregtech:machine 1 1008",
+	x: -17.5d,
+	y: -6.75d,
+	text: [
+		"§oThe Ultimate Combustion fuel Generator!§r",
+		"",
+		"To run the §3Extreme Combustion Engine§r, you will most likely want to boost it (§oelse why would you bother...§r).",
+		"You will want a §34A IV Dynamo Hatch§r as the output, and one §3Vacuum Freezer§r for §aLiquid Oxygen§r.",
+		"",
+		"You can now harness the equivalent of 1 §dLuV§r Amp, while burning fuel at §6200% efficiency§r!",
+		"",
+		"Don't forge to keep it supplied with a small amount of §aLubricant§r.",
+		"",
+		"The §3ECE§r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
+	],
+	dependencies: [
+		"8d1fb996",
+		"bb92c8a5"
+	],
+	tasks: [{
+		uid: "32e59a0d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1008"
+		}]
+	}]
+}

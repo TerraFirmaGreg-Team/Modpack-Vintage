@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.stone_hammer.title}",
+	x: -28.0d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.stone_hammer.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9672083c",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any hammerStone"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "hammerStone"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

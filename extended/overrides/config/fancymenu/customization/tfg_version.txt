@@ -1,0 +1,138 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 510
+  width = 260
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 0982819a-a5e2-4cb8-a33b-d3a8a27785d91656498467152
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 163
+  action = deep_customization_element:title_screen_branding
+  actionid = e696ffb5-17fd-4edb-b9ee-3d4e628fdda91656498467152
+  y = 623
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 1057
+  width = 222
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = dcd5c8d9-2eef-4bd2-b37a-ab7ee226dab81656498467152
+  y = 665
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 743
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = b962cee4-8519-43e3-81c5-eb88907750d11656498467152
+  y = 271
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 503
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 295e34fc-6f80-4a32-a69a-f11ec5c17e951656498467152
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 9edf1bdc-01bc-44fc-a01d-d338c7b4d6941656498467152
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  actionid = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
+  action = addtext
+  y = -44
+  scale = 1.0
+  alignment = left
+  value = Modpack Version: §cR4.1.10
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
+  vr:showif:modloaded = false
+  x = 0
+  actionid = d7e78918-0328-4ddb-9751-2fb640691e3a1653954106814
+  action = addtext
+  y = 10
+  scale = 1.0
+  vr:value:modloaded = thaumcraft
+  alignment = left
+  value = Modpack Type: §b[Default]
+}
+
+customization {
+  orientation = element
+  shadow = true
+  orientation_element = d7e78918-0328-4ddb-9751-2fb640691e3a1653954106814
+  x = 0
+  actionid = 1ad922f9-7a2a-46f5-aff0-dedcf563852e1653954119314
+  action = addtext
+  y = 10
+  scale = 1.0
+  alignment = left
+  value = Latest Modpack Version: {"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/releases/latest","json_path":"$.tag_name"}}
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = d772bd60-9ea4-4ce3-9693-c90f1ce782491653953973712
+  vr:showif:modloaded = true
+  x = 0
+  actionid = 1662bc37-3dbc-4f8d-92bc-17a2530128b01654570169697
+  action = addtext
+  y = 10
+  scale = 1.0
+  vr:value:modloaded = thaumcraft
+  alignment = left
+  value = Modpack Type: §b[Extended]
+}
+

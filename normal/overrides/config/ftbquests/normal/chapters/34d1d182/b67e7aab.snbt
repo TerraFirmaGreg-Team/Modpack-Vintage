@@ -1,0 +1,16 @@
+{
+	x: 2.75d,
+	y: 1.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "333c2aad",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:panel_lighting"
+		}],
+		ignore_damage: true
+	}]
+}

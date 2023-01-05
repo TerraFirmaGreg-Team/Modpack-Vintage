@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.copper_chisel_head.title}",
+	x: -18.75d,
+	y: -5.5d,
+	description: "{tfg.quests.primitive.copper_chisel_head.subtitle}",
+	dependencies: [
+		"1a30f24f"
+	],
+	tasks: [{
+		uid: "100e12ef",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any chiselHead"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "chiselHead"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

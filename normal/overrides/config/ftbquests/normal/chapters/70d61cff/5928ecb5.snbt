@@ -1,0 +1,40 @@
+{
+	title: "{tfg.quests.ev.uraniumrefinement.title}",
+	icon: "gregtech:meta_dust 1 116",
+	x: -12.5d,
+	y: -3.0d,
+	description: "{tfg.quests.ev.uraniumrefinement.subtitle}",
+	text: [
+		"{tfg.quests.ev.uraniumrefinement.desc1}",
+		"",
+		"{tfg.quests.ev.uraniumrefinement.desc2}",
+		"",
+		"{tfg.quests.ev.uraniumrefinement.desc3}",
+		"{tfg.quests.ev.uraniumrefinement.desc4}",
+		"",
+		"{tfg.quests.ev.uraniumrefinement.desc5}"
+	],
+	dependencies: [
+		"14263e77"
+	],
+	tasks: [{
+		uid: "9c938d92",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 3 332"
+		}],
+		count: 3L
+	},
+	{
+		uid: "3a115050",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 116"
+		}]
+	},
+	{
+		uid: "c3137587",
+		type: "fluid",
+		fluid: "uranium_hexafluoride"
+	}]
+}

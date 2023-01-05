@@ -1,0 +1,22 @@
+{
+	title: "{planet.venus}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/venus.png"
+		}
+	},
+	x: -4.0d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e43ffe37"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "90a39e5f",
+		type: "dimension",
+		title: "{planet.venus}",
+		dim: -31
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Mega Batteries",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 750s,
+		tag: {
+			Charge: 4000000000L
+		}
+	},
+	x: 1.0d,
+	y: 2.0d,
+	text: [
+		"No Description"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"deb9f36d"
+	],
+	tasks: [{
+		uid: "0ba3ad2e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 750"
+		}],
+		ignore_nbt: 1b
+	}]
+}

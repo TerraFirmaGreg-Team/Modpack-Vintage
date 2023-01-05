@@ -1,0 +1,14 @@
+{
+	x: -10.75d,
+	y: -4.0d,
+	tasks: [{
+		uid: "4012b867",
+		type: "item",
+		items: [{
+			id: "gregtech:gt_armor",
+			Damage: 30s,
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}]
+}

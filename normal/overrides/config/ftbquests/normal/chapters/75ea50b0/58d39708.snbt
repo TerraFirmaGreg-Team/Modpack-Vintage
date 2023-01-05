@@ -1,0 +1,16 @@
+{
+	title: "Craftable in EV",
+	icon: "gregtech:machine 1 989",
+	disable_toast: true,
+	x: -27.5d,
+	y: -8.0d,
+	text: [
+		"This is the §9Nano§r Circuit line.",
+		"",
+		"Starting from here all circuits follow a similar pattern:",
+		"§9-§r Processor",
+		"§9-§r Assembly",
+		"§9-§r Cupercomputer",
+		"§9-§r Mainframe"
+	]
+}

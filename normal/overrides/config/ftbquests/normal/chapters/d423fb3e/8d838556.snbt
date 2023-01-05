@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.steam.screwdriver.title}",
+	x: -16.5d,
+	y: 0.0d,
+	description: "{tfg.quests.steam.screwdriver.subtitle}",
+	text: [
+		"{tfg.quests.steam.screwdriver.desc1}"
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "417e117c",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolScrewdriver"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolScrewdriver"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

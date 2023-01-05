@@ -1,0 +1,17 @@
+{
+  "weight": 70,
+  "name": "Mercury Helium Deposit",
+  "yield": {
+    "min": 5,
+    "max": 15
+  },
+  "dimension_filter": [
+    "dimension_id:-13"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "helium"
+}

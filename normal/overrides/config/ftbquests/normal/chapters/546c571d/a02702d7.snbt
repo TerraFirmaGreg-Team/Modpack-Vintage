@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.lv.progression.title}",
+	x: 0.0d,
+	y: 15.0d,
+	description: "{tfg.quests.lv.progression.subtitle}",
+	text: [
+		"{tfg.quests.lv.progression.desc1}",
+		"",
+		"{tfg.quests.lv.progression.desc2}",
+		"",
+		"{tfg.quests.lv.progression.desc3}",
+		"",
+		"{tfg.quests.lv.progression.desc4}"
+	],
+	dependencies: [
+		"a6716e45"
+	],
+	tasks: [{
+		uid: "63db760d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 464"
+		}],
+		ignore_nbt: 1b
+	}]
+}

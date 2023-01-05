@@ -1,0 +1,40 @@
+{
+	title: "{tfg.quests.lv.gallium.title}",
+	icon: "gregtech:meta_dust 1 351",
+	x: 0.0d,
+	y: 18.0d,
+	description: "{tfg.quests.lv.gallium.subtitle}",
+	text: [
+		"{tfg.quests.lv.gallium.desc1}",
+		"{tfg.quests.lv.gallium.desc2}",
+		"{tfg.quests.lv.gallium.desc3}",
+		"{tfg.quests.lv.gallium.desc4}",
+		"",
+		"{tfg.quests.lv.gallium.desc5}"
+	],
+	dependencies: [
+		"7ecf0fe2",
+		"3b9fc1a9"
+	],
+	tasks: [{
+		uid: "e20453d2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 39"
+		}]
+	},
+	{
+		uid: "2e7adb98",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 6"
+		}]
+	},
+	{
+		uid: "27332b35",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 351"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -20.0d,
+	y: -9.25d,
+	shape: "circle",
+	description: "{tfg.quests.steam.bronzecompressor.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzecompressor.desc1}",
+		"",
+		"{tfg.quests.steam.bronzecompressor.desc2}"
+	],
+	dependencies: [
+		"5347bf68"
+	],
+	tasks: [{
+		uid: "a901741f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 11"
+		}]
+	}]
+}

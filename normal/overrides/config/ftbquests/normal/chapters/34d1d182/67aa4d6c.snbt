@@ -1,0 +1,14 @@
+{
+	x: -1.5d,
+	y: -0.25d,
+	dependencies: [
+		"605707ed"
+	],
+	tasks: [{
+		uid: "018a8650",
+		type: "item",
+		items: [{
+			item: "planetprogression:satellite_controller"
+		}]
+	}]
+}

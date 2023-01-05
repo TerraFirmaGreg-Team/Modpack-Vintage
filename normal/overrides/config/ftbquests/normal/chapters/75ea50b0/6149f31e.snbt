@@ -1,0 +1,15 @@
+{
+	x: -2.5d,
+	y: 3.25d,
+	tasks: [{
+		uid: "66409af5",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier3_space_suit_helmet",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

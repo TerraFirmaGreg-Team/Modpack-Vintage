@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 6.0d,
+	text: [
+		"- Метеорологический радар, чтобы видеть активные штормы в этом районе"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "87390eb6",
+		type: "item",
+		items: [{
+			item: "weather2:weather_forecast"
+		}]
+	}]
+}

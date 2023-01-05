@@ -1,0 +1,36 @@
+{
+  "name" : "Earth Mica",
+  "weight": 60,
+  "density": 0.25,
+  "max_height": 120,
+  "min_height": 70,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "mica"
+  },
+  "generation_predicate": ["ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:kyanite"
+      },
+      {
+        "secondary": "ore:mica"
+      },
+      {
+        "between": "ore:bauxite"
+      },
+      {
+        "sporadic": "ore:pollucite"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 16.25d,
+	description: "{tfg.quests.space.fuelloader.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "da55bdad",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:fuel_loader"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 6.25d,
+	y: 3.75d,
+	dependencies: [
+		"ee8f2fbb"
+	],
+	tasks: [{
+		uid: "151c9ecf",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:sensor_glasses"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

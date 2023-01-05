@@ -1,0 +1,15 @@
+{
+	x: -11.25d,
+	y: 6.25d,
+	tasks: [{
+		uid: "542c16e1",
+		type: "item",
+		items: [{
+			id: "extraplanets:tier1_space_suit_gravity_boots",
+			Damage: 100s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

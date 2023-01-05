@@ -1,0 +1,83 @@
+{
+	title: "{tfg.quests.mv.church.title}",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 78s,
+		tag: {
+			Fluid: {
+				FluidName: "natural_gas",
+				Amount: 1000
+			}
+		}
+	},
+	x: 4.0d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.church.subtitle}",
+	text: [
+		"{tfg.quests.mv.church.desc1}",
+		"{tfg.quests.mv.church.desc2}",
+		"{tfg.quests.mv.church.desc3}",
+		"{tfg.quests.mv.church.desc4}",
+		"{tfg.quests.mv.church.desc5}"
+	],
+	dependencies: [
+		"13e690a9"
+	],
+	tasks: [{
+		uid: "8f525b12",
+		type: "fluid",
+		fluid: "refinery_gas"
+	},
+	{
+		uid: "c29dd540",
+		type: "fluid",
+		fluid: "methane"
+	},
+	{
+		uid: "7bdefcdf",
+		type: "fluid",
+		fluid: "lpg"
+	}],
+	rewards: [{
+		uid: "07e69777",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "refinery_gas",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "611cd9dd",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "methane",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "fdfd9961",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "lpg",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "Craftable in ZPM",
+	icon: "gregtech:machine 1 992",
+	disable_toast: true,
+	x: -24.5d,
+	y: -8.0d,
+	text: [
+		"This is the §9Wetware§r Circuit line.",
+		"",
+		"It will be the biggest automation challenge to face in this modpack.",
+		"",
+		"§2Gregicality Science§r will offer 5 new tiers of Circuits after this:",
+		"§9-§r Bioware",
+		"§9-§r Optical",
+		"§9-§r Exotic",
+		"§9-§r§r Cosmic",
+		"§9-§r Supracausal"
+	]
+}

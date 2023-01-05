@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.ev.mainframes.title}",
+	icon: "gregtech:meta_item_1 1 631",
+	x: -5.0d,
+	y: -1.0d,
+	shape: "circle",
+	description: "{tfg.quests.ev.mainframes.subtitle]",
+	text: [
+		"{tfg.quests.ev.mainframes.desc1}"
+	],
+	dependencies: [
+		"c824edb6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0dc8a130",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 631"
+		}]
+	}]
+}

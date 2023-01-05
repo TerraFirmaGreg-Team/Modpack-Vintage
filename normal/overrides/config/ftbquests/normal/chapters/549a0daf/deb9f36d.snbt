@@ -1,0 +1,14 @@
+{
+	icon: "gregtech:meta_gear 1 2042",
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"e0995a94"
+	],
+	hide: true,
+	tasks: [{
+		uid: "42989653",
+		type: "checkmark",
+		title: "ZPM"
+	}]
+}

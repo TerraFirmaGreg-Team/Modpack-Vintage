@@ -1,0 +1,20 @@
+{
+	title: "Duranium",
+	icon: "gregtech:meta_ingot 1 129",
+	x: -6.25d,
+	y: -2.5d,
+	text: [
+		"No Description"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"e0995a94"
+	],
+	tasks: [{
+		uid: "015f3e16",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 129"
+		}]
+	}]
+}

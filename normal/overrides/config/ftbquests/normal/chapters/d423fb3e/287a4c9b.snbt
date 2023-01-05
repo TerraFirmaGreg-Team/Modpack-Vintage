@@ -1,0 +1,23 @@
+{
+	x: -13.0d,
+	y: -11.25d,
+	description: "{tfg.quests.steam.primitivewatertank.subtitle}",
+	text: [
+		"{tfg.quests.steam.primitivewatertank.desc1}",
+		"{tfg.quests.steam.primitivewatertank.desc2}",
+		"{tfg.quests.steam.primitivewatertank.desc3}",
+		"{tfg.quests.steam.primitivewatertank.desc4}",
+		"{tfg.quests.steam.primitivewatertank.desc5}",
+		"{tfg.quests.steam.primitivewatertank.desc6}"
+	],
+	dependencies: [
+		"47b2f0d9"
+	],
+	tasks: [{
+		uid: "a43d02e1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1597"
+		}]
+	}]
+}

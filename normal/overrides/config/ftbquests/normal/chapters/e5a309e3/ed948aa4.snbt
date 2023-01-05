@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.hv.ammonia.title}",
+	x: 7.0d,
+	y: 0.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.ammonia.subtitle}",
+	text: [
+		"{tfg.quests.hv.ammonia.desc1}"
+	],
+	dependencies: [
+		"2f970f5b"
+	],
+	tasks: [{
+		uid: "45611fbd",
+		type: "fluid",
+		fluid: "ammonia"
+	}],
+	rewards: [{
+		uid: "f878dbc8",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "ammonia",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,90 @@
+{
+	title: "{tfg.quests.ev.truedistillationair.title}",
+	x: 5.5d,
+	y: 1.0d,
+	description: "{tfg.quests.ev.truedistillationair.subtitle}",
+	text: [
+		"{tfg.quests.ev.truedistillationair.desc1}",
+		"",
+		"{tfg.quests.ev.truedistillationair.desc2}"
+	],
+	dependencies: [
+		"ff136331"
+	],
+	tasks: [{
+		uid: "96e6ca0d",
+		type: "fluid",
+		fluid: "oxygen"
+	},
+	{
+		uid: "0b6bbf78",
+		type: "fluid",
+		fluid: "nitrogen"
+	},
+	{
+		uid: "7f806695",
+		type: "fluid",
+		fluid: "helium"
+	},
+	{
+		uid: "db913fa0",
+		type: "fluid",
+		fluid: "argon"
+	}],
+	rewards: [{
+		uid: "270d585d",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "oxygen",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "cfbe34d3",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "nitrogen",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "27fbec54",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "helium",
+					Amount: 1000
+				}
+			}
+		}
+	},
+	{
+		uid: "1fa61d96",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "argon",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}
