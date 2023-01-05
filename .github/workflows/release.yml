@@ -30,7 +30,6 @@ jobs:
         uses: mindsers/changelog-reader-action@v2.2.2
         with:
           path: ./Changelog_RU.md
-          version: ${{ steps.get_version.outputs.VERSION }}
           validation_level: none
           
 
