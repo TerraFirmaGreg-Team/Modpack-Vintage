@@ -33,7 +33,7 @@ jobs:
         run: |
           cd ./normal/
           mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png ./normal/.minecraft/
+          cp -vf ../icon.png .minecraft/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
 
       - name: Deleting Client Resources
@@ -91,7 +91,7 @@ jobs:
         run: |
           cd ./extended/
           mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png /extended/.minecraft/
+          cp -vf ../icon.png .minecraft/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
       - name: Deleting Client Resources
