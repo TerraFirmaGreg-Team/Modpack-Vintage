@@ -27,7 +27,7 @@ jobs:
 
       - name: Get Changelog Entry
         id: changelog_reader
-        uses: mindsers/changelog-reader-action@v2.2.2
+        uses: mindsers/changelog-reader-action@v2
         with:
           path: ./Changelog_RU.md
           validation_level: none
