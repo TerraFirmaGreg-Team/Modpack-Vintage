@@ -77,7 +77,7 @@ jobs:
           mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
           zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
           cp -vf ./serverfiles/* ./extended/.minecraft/
-          cd ./extended/.minecraft/
+          cd ../../extended/.minecraft/
           mv -vf ./icon.png ./server-icon.png
           mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
           zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./
