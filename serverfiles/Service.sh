@@ -4,8 +4,8 @@
 
 JAVA_PATH="/usr/lib/jvm/java-8-openjdk/bin/java"
 TMUX_SOCKET="steam"
-TMUX_SESSION="gte2"
-MC_HOME="/home/minecraft/gte2/"
+TMUX_SESSION="tfgnh"
+MC_HOME="/home/minecraft/tfgnh/"
 MC_JAR_FILE="forge-1.12.2-14.23.5.2860.jar"
 MC_MIN_RAM="2G"
 MC_MAX_RAM="8G"
