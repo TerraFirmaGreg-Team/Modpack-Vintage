@@ -1,8 +1,9 @@
 name: Deploy modpack
-on:
-  push:
-    tags:
-      - 'R*'
+on: [push]
+# on:
+#   push:
+#     tags:
+#       - 'R*'
 
 jobs:
   job_1:
@@ -141,7 +142,8 @@ jobs:
         with:
           path: CHANGELOG_EN.md
 
-      - uses: actions/download-artifact@v3
+      - name: Changelog Parser
+        uses: actions/download-artifact@v3
         with:
           path: ./
 
@@ -149,14 +151,16 @@ jobs:
         uses: ncipollo/release-action@v1.12.0
         with:
           name: Release ${{ steps.changelog_ru.outputs.version }}
-          body: ${{ steps.changelog_ru.outputs.description }}${{ steps.changelog_eu.outputs.description }}
-          files: |
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+          body: ${{ steps.changelog_ru.outputs.description }} ${{ steps.changelog_eu.outputs.description }}
+          # bodyFile: "CHANGELOG_RU.md, CHANGELOG_EN.md"
+          artifacts: "./*.zip"
+          # files: |
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
+          #   ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
 
       # - name: Upload Curseforge
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
