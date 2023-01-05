@@ -1,9 +1,9 @@
 name: Deploy modpack
-on: [push]
-# on:
-#   push:
-#     tags:
-#       - 'R*'
+
+on:
+  push:
+    tags:
+      - 'R*'
 
 jobs:
   job_1:
@@ -130,19 +130,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       
-      - name: Changelog Parser
+      - name: Changelog Parser Ru
         id: changelog_ru
         uses: coditory/changelog-parser@v1
         with:
           path: CHANGELOG_RU.md
       
-      - name: Changelog Parser
+      - name: Changelog Parser En
         id: changelog_en
         uses: coditory/changelog-parser@v1
         with:
           path: CHANGELOG_EN.md
 
-      - name: Changelog Parser
+      - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
           path: ./
