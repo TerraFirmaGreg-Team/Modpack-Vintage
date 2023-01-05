@@ -41,6 +41,21 @@ customization {
 }
 
 customization {
+  identifier = %id=502306%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/modpack/longbutton_h.png
+  backgroundnormal = resources/modpack/longbutton.png
+}
+
+customization {
+  identifier = %id=502306%
+  action = sethoverlabel
+  label = 
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
