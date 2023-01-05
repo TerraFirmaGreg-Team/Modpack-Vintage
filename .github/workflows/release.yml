@@ -20,7 +20,7 @@ jobs:
       - name: Set the version
         run: |
           MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./overrides/resources/custommainmenu/version.txt
+          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./overrides/resources/modpack/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
 
@@ -41,12 +41,12 @@ jobs:
 
       - name: Deleting Client Resources
         run: |
+          mv -vf .minecraft/ ./serverfiles/
           cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
+          rm -r ./serverfiles/resourcepacks ./serverfiles/resources
 
       - name: Archive Release Server
         run: |
-          mv -vf .minecraft/ ./serverfiles/
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
