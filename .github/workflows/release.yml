@@ -27,13 +27,13 @@ jobs:
       - name: Archive Release CF
         run: |
           cd ./normal/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release MMC
         run: |
           mv -vf overrides/ .minecraft/
-          cp -vf /icon.png normal/.minecraft/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          cp -vf ./icon.png ./normal/.minecraft/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
 
       - name: Deleting Client Resources
         run: |
@@ -43,18 +43,18 @@ jobs:
       - name: Archive Release Server
         run: |
           mv -vf .minecraft/* /serverfiles/
-          mv -vf /serverfiles/icon.png /serverfiles/server-icon.png
-          mv -vf /serverfiles/jsg-1.12.2-4.10.1.1-server.jar /serverfiles/mods/
-          zip -r /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip /serverfiles/*
+          mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
+          mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
+          zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./serverfiles/*
 
       - name: Upload math result for normal
         uses: actions/upload-artifact@v3
         with:
           name: normal
           path: |
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            /TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
             
 
   job_2:
