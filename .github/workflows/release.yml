@@ -127,15 +127,24 @@ jobs:
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           zip -r ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./serverfiles/*
 
-      - name: Upload math result for normal
-        uses: actions/upload-artifact@v3
+      - name: Changelog Parser Ru
+        id: changelog_ru
+        uses: coditory/changelog-parser@v1
         with:
-          name: extended
-          path: |
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+          path: CHANGELOG_RU.md
       
+      - name: Changelog Parser En
+        id: changelog_en
+        uses: coditory/changelog-parser@v1
+        with:
+          path: CHANGELOG_EN.md
+
+      - name: Download Artifact
+        id: download
+        uses: actions/download-artifact@v3
+        with:
+          path: ./
+
       # - name: Upload Curseforge
       #   uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
       #   with: 
@@ -150,30 +159,6 @@ jobs:
       #     server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server
       #     release-type: 'beta'
 
-  job_3:
-    name: Deploy
-    needs: [job_1, job_2]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      
-      - name: Changelog Parser Ru
-        id: changelog_ru
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_RU.md
-      
-      - name: Changelog Parser En
-        id: changelog_en
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_EN.md
-
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
-
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -184,13 +169,14 @@ jobs:
           body: |
             ${{ steps.changelog_ru.outputs.description }}
             ${{ steps.changelog_eu.outputs.description }}
-          body_path: CHANGELOG_EN.txt
+          body_path: ./CHANGELOG_EN.txt
           artifacts: "./*.zip"
           files: |
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+
 
