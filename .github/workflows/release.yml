@@ -46,7 +46,7 @@ jobs:
 
       - name: Archive Release Server
         run: |
-          mv -vf .minecraft/ ./serverfiles/
+          mv -vf .minecraft/* ./serverfiles/
           mv -vf ./serverfiles/icon.png ./serverfiles/server-icon.png
           mv -vf ./serverfiles/jsg-1.12.2-4.10.1.1-server.jar ./serverfiles/mods/
           cd ./serverfiles/
