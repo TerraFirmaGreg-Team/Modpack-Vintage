@@ -21,4 +21,3 @@ jobs:
         username: "GitHub Bot"
         message: The ${{ github.event_name }} event triggered first step.
         file: "./Changelog_RU.md"
-
