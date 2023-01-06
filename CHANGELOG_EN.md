@@ -1705,7 +1705,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Fixed some recipes from Thaumcraft.
 - The entire line of GC quests has been redesigned.
 
-## [2.6.1]2]
+## [2.6.12]
 - Fixed warpdrive logging(+fps)
 - Fixed ExtraPlanets Space Suit crafting
 - Updated mods
@@ -1713,7 +1713,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Rebuilded quests
 - Some tweaks
 
-## [2.6.1]1]
+## [2.6.11]
 - Fixed remelting of iron dust into iron ingot(again).
 - Fixed the recipes of the parser associated with the oven(can not be fixed, I looked in the documentation for access to the parser, but it is not there. Therefore, I will add a recipe that makes a stove block from the stove).
 - Fix of invar cases.
