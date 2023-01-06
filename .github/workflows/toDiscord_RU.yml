@@ -6,11 +6,14 @@ jobs:
   sending:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
     - name: Changelog Parser
       id: changelog
       uses: coditory/changelog-parser@v1
       with:
-        path: ./CHANGELOG_RU.md
+        path: CHANGELOG_RU.md
 
     - name: Discord notification
       uses: appleboy/discord-action@master
@@ -20,4 +23,4 @@ jobs:
         color: "#48f442"
         username: "GitHub Bot"
         message: ${{ steps.changelog.outputs.description }}
-        file: "./Changelog_RU.md"
+        file: "CHANGELOG_RU.md"
