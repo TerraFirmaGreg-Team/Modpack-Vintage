@@ -1,30 +1,83 @@
-name: Notification on push RU
-
-on: [push]
+name: "Build + Test"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+  workflow_dispatch:
 
 jobs:
-  sending:
+  build: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Changelog Parser
-      id: changelog
-      uses: coditory/changelog-parser@v1
-      with:
-        path: CHANGELOG_RU.md
-
-    - name: Discord notification
-      uses: tsickert/discord-webhook@v5.3.0
-      with:
-        webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-        username: "GitHub"
-        avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
-        embed-title: Релиз ${{ steps.changelog.outputs.version }}
-        embed-description: "${{ steps.changelog.outputs.description }}"
-        embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_RU.md
-        embed-color: 5814783
-        embed-image-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/footer.png?raw=true
-        embed-footer-text: ${{ steps.changelog.outputs.date }}
-        embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+      - uses: actions/checkout@v3
+      - run: |
+          npm install
+      - run: |
+          npm run all
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Basic Content Test
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN  }}
+          content: test
+      - name: Test `@ping`
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN  }}
+          content: Hey there <@211894927997534208>
+      - name: Test with JSON Payload Provided
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN  }}
+          raw-data: __tests__/data/content-only.json
+      - name: Upload File
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN  }}
+          filename: __tests__/data/content-only.json
+          username: Bill
+          content: You should definintely be able to do this
+          avatar-url: https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256
+      - name: Discord Webhook Action With Embed
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN  }}
+          username: Bill
+          avatar-url: https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256
+          embed-title: "Foo"
+          embed-url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          embed-description: "Bar [test](https://google.com)"
+          embed-author-name: "Bill"
+          embed-author-icon-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-author-url: "https://google.com"
+          embed-thumbnail-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-image-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-footer-icon-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-footer-text: "Foot text [test](https://google.com)"
+          embed-color: 15430476
+          embed-timestamp: "2021-09-24T02:17:53+0000"
+      - name: Sleep for a second
+        run: sleep 1s
+      - name: Discord Webhook Action With Embed Description That's Too Long
+        uses: ./
+        with:
+          webhook-url: ${{ secrets.WEBHOOK_URL }}
+          username: Bill
+          avatar-url: https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256
+          embed-title: "Foo"
+          embed-url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          embed-description: "steaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteaksteak"
+          embed-author-name: "Bill"
+          embed-author-icon-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-author-url: "https://google.com"
+          embed-thumbnail-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-image-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-footer-icon-url: "https://cdn.discordapp.com/avatars/742807869023322232/dd41912939ffccbea0276f70688fa0ec.webp?size=256"
+          embed-footer-text: "Foot text [test](https://google.com)"
+          embed-color: 15430476
+          embed-timestamp: "2021-09-24T02:17:53+0000"
