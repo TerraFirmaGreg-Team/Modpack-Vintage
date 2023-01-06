@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.1.11] - 2023-01-05
+## [4.1.11] - 2023-01-06
 ### Fixes
 - Replaced the mod with an RPC discord.
 - Removed optimization mods, as they were impleminted in UniversalTweaks.
@@ -21,42 +21,39 @@
 - "Super-hot torch": allows you to light objects once by hitting them with a torch.
 - Swing Through Grass: Allows you to hit objects through the grass, not break it.
 - Uncap FPS: Removes the hard-coded limit of 30 frames per second on screens such as the main menu.
+
 ### Mod Updates
 - UniversalTweaks
 - Supermartijn642corelib
 - Moving Elevators
-### New Mods
+
+### New mods
 - CraftPresence
-### Removed Mods
-- Eguilib
+
+### Removed mods- Eguilib
 - Discordrpc
 - NaNPolice
 - ClientTweaks
 - Smooth-scrolling-everywhere
 
-## Version R4.1.10 - 12/31/2022
-
+## [4.1.10] - 12/31/2022
 ### Modpack fixes
-
 - Small Christmas decoration in GT (o^▽^o)
 - Fixing a script error for a couple of items to drop out.
 - By default, the TFC Florae Lite resource pack is enabled, it will allow you to use less RAM.
 - Added Clumps mod, which combines experience balls into one, due to which, if there are a large number, the client / server may freeze, there is also a known error with doubling experience, the problem is localized, transferred to the mod developer, we are waiting for a fix.
 
 ### Update mods
-
 - Appliedenergistics2-extended_life
 - Fancy menu
 - Gregtech
 
 ### New mods
-
 - Clumps
 
-## Version R4.1.9 - 12/22/2022
+## [4.1.9- 12/22/2022
 
 ### Modpack fixes
-
 - Christmas decoration (o^▽^o)
 - Some optimization mods have been removed and have been replaced by one, UniversalTweaks, which includes the same fixes.
 - The electric greenhouse has been completely replaced with an analogue of GTFO, the greenhouse controller that was before will disappear in your world, the land in the new greenhouse can be used differently, and not just the one that is shown in JEI.
@@ -72,7 +69,6 @@
 - Removed the recipe for parsing bricks from refractory clay, back into clay, thus fixing the dupe.
 
 ### Update mods
-
 - TFGmod
 - Fluid Craft for AE2
 - Appliedenergistics2-extended_life
@@ -86,27 +82,24 @@
 - RoughlyEnoughIDs
 
 ### New mods
-
 - Entity Culling
 - LegendaryTooltips
 - RenderLib
 - Universal Tweaks
 
 ### Removed mods
-
 - AI improvements
--ColoredTooltips
+- ColoredTooltips
 - FastFurnace
 - Modular Powersuits
 - Numina
--RealBench
+- RealBench
 - Rocksalt
 - Surge
 
-## Version R4.1.8 - 11/23/2022
+## [4.1.8] - 11/23/2022
 
 ### Modpack fixes
-
 - Fixed a bug due to which recepts for tools did not work.
 - Minor temperature overlay adjustments.
 - The craft of the engineering workbench has been returned, so the dupes in it have been fixed.
@@ -116,17 +109,15 @@
 - Fixed bug with displaying saltpeter tooltip for fertilizer.
 
 ### Update mods
-
 - Appliedenergistics2
 - Fluid Craft for AE2
 - TFCFarming
 - Little Tiles
 - TFGmod
 
-## Version R4.1.7 - 11/21/2022
+## [4.1.7] - 11/21/2022
 
 ### Modpack fixes
-
 - Added more service information and RAM consumption to the loading screen.
 - Sheep spawn increased by 30%.
 - Nutrient source ~N~ is now GT Saltpeter instead of TFC.
@@ -147,14 +138,12 @@
 - Weather2 replaced with Weather2 Remastered, supported fork, with optimizations and bug fixes.
 
 ### New mods
-
 - Floraefixes
 - GroovyScript
 - Gregification
 - Weather 2 Remastered
 
 ### Update mods
-
 - Appliedenergistics2
 - fancy menu
 - TFGmod
@@ -174,13 +163,11 @@
 - JEI Utilities
 
 ### Removed mods
-
 - Weather2
 
-## Version R4.1.6 - 10/25/2022
+## [4.1.6] - 10/25/2022
 
 ### Modpack fixes
-
 - In the crafting of anti-radiation plates, the double plates of lead were replaced with double plates of tungsten, due to the gt bug.
 - Removed SecureEnderStorage, was causing strange behavior on the server.
 - Fixed sound when running as if you have 4 legs.
@@ -188,19 +175,16 @@
 - Fixed recipe for wooden tongs, it was crafted with zero durability.
 
 ### Update mods
-
 - Appliedenergistics2
 - Fancy menu
 - TFGmod
 
-### Removed Mods
-
+### Removed mods
 - SecureEnderStorage
 
-## Version R4.1.5a - 10/23/2022
+## [4.1.5] - 10/23/2022
 
 ### Modpack fixes
-
 - Fixed crafting of liquid and item cells at 64k.
 - Added Building Gadgets and scripts for it.
 - Optimization and refactor in scripts.
@@ -302,7 +286,6 @@
 - To earn coins, you can now convert not only gregtech coins, but also wood, with the /convert command.
 
 ### New mods
-
 - Building Gadgets
 - NaNPolice
 - Ender Storage continuation
@@ -316,7 +299,6 @@
 - Corpse
 
 ### Update mods
-
 - Fluid Craft for AE2
 - Appliedenergistics2
 - GregTech Food Option
@@ -331,30 +313,25 @@
 - CraftTweaker2
 
 ### Removed mods
-
 - PotionCore
 - Oxygen-merchants
 - EnderStorage
 - Simple-tomb
 
-## Version R4.1.4 - 09/19/2022
+## [4.1.4] - 09/19/2022
 
-** Build type is now divided simply by TerraFirmaGreg: New Horizons, and prefixed with Huge
-
+- Build type is now divided simply by TerraFirmaGreg: New Horizons, and prefixed with Huge
 - Fixed crash with Hot or Not.
 - Stargates are now medium in size.
 - Fixed crafting of the space suit where the same schemes were used.
 - Horizontal travel for transport rings is now 25 -> 56.
 
 ### Update mods
-
 - Hot or Not
-
 - GTFO
 
-## Version R4.1.3 - 09/19/2022
+## [4.1.3] - 09/19/2022
 ### Modpack fixes
-
 - Now the primitive pump produces fresh water, not salty.
 
 - Some code from TFGMod associated with TFCAmbiental has been moved to TFCAmbiental itself due to a fork
@@ -416,35 +393,29 @@
 - Removed duplicate recipes for GC loaders and unloaders.
 
 ### Update mods
-
 - Applied Energistics 2
-
 - fancy menu
 - Foamfix
 - GregTech Food Option
-*Bogosorter
+- Bogosorter
 - Little Tiles
-*TFGmod
-*OpenComputers
+- TFGmod
+- OpenComputers
 
 ### New mods
-
 - Simple tomb
-
 - Mod director
 - StuffASockInIt
 
 ### Removed mods
-
 - Tombstone
-*Base
+- Base
 
 - ContentTweaker
-*TFC Paths
+- TFC Paths
 
-## Version R4.1.2 - 09/05/2022
+## [4.1.2] - 09/05/2022
 ### Modpack fixes
-
 - Recipe for protected ProjectRed lamps now uses GC mesh.
 
 - The crafting of Little Exporter uses the GC mesh.
@@ -485,32 +456,25 @@
 - Changing sorting mod.
 
 ### Update mods
-
 - Charset Crafting
-
 - CraftTweaker2
 - MouseTweaks
 - OpenComputers
 
 ### New mods
-
 - Bogosorter
 
 ### Removed mods
-
 - Better FPS
-
 - Workbench Plus
 - QuickStore
 - Korgelin
 - HammerCore
 - InventoryTweaks
 
-## Version R4.1.0 - Expected ?
+## [4.1.0] - Expected ?
 ### Modpack fixes
-
 - Replaced mod for bags (due to a bug when things were lost in it). If you have items in your bags, please take them out, as they will disappear after the update.
-
 - Large dust from GTCEu can now be processed into TFC metal.
 - Now rods from GTCEu can be processed into TFC metal.
 - For large dust, dirty, medium, small, pieces, the values ​​of the number of metal units have been changed. All their values ​​are increased by 60-90%.
@@ -562,9 +526,7 @@
 - Fixed generation on some planets due to EP migration with GS.
 
 ### Update mods
-
 - GTCEu - Correction of all previously not working recipes that you wrote about in the discord.
-
 - fancy menu
 - Konkrete
 - Galacticraft
@@ -574,18 +536,13 @@
 - TFG mod
 
 ### New mods
-
 - Travelers&Backpacks
-
 - Baubles-LTS
 - AE2WTLib-LTS
 - Darkness
 - Spatialservermod
 
-### Removed Mods
-
-- ImprovedBackpacks
-
+### Removed mods- ImprovedBackpacks
 - Cherished worlds
 - Baubles - replaced by a fork
 - AE2WTLib - replaced by a fork
@@ -594,11 +551,9 @@
 - Parry - does not work with TFC shields
 - HardcoreDarkness
 
-## Version R4.0.1 - 08/02/2022
+## [4.0.1] - 08/02/2022
 ### Modpack fixes
-
 - Firmalife oven no longer produces heat when turned off. In the on state, the amount of heat is reduced.
-
 - Added support for Cellars Addon, now going into the refrigerator (basement) you will be cooled, if it's cold there of course.
 - Plants suitable for making medicines have been added, including now medicines can also be made from algae and carals.
 - Changed the mechanics of preparing extracts for medicines, since the old method did not work on servers.
@@ -639,9 +594,7 @@
 - Fixed a bug with cleaning the AE template.
 
 ### Update mods
-
 - Loliasms
-
 - TFCAmbiental
 - CustomSkinLoader
 - Tombstone
@@ -649,16 +602,13 @@
 - TFG mod
 - Fluid Craft for AE2
 
-## Version R4.0.0 - 07/25/2022
+## [4.0.0] - 07/25/2022
 ### New mods
-
 - REID - A mod that increases the id limit of minecraft blocks, is made much cleaner and has support from developers, which will allow it to be used with other mods in the future, fix strange generation and strange crashes associated with the absence of some classes in the game, also increase fps and reduce CPU load. **THIS MOD WILL DESTROY YOUR OLD WORLDS IN 95% OF THE CASES. IF YOU WANT TO CONTINUE PLAYING THE OLD WORLDS PLEASE REMOVE THIS MOD AND INSTALL BACK** [NEID](https://www.curseforge.com/minecraft/mc-mods/notenoughids?page=2).
 
-## Version R3.5 - 07/25/2022
+## [3.5 -] 07/25/2022
 ### Modpack fixes
-
 - Now furnaces, forges, etc. from TFC-Tech give off heat, and the refrigerator can even cool you down. Also, a FirmaLife stove will help you in winter. And the highlight of the program is the coils from GTCEu at the blast furnace and not only will burn you if you stand nearby, protect yourself by wearing leather, nano, or quantum armor.
-
 - Fixed juice recipes for making wine, also added recipes to GTCEu machines.
 - Hidden bows from Florae.
 - Fixed some inconsistencies in GTFO and Florae (applies to wines, juices and other garbage).
@@ -693,16 +643,12 @@
 - Reworked the crafting of lighting panels, storage monitor, transformation monitor, plane of destruction ID, level emitter, ore dictionary storage tires, ae2 storage tires.
 
 ### Server fixes that don't affect solo play
-
 - Fixed crash on Magma server with FastWorkbench mod.
-
 - GT Coins can be converted to virtual currency (/convert) to buy goodies in the game store.
 
 ### New mods
-
 - AE2Additions - mod, the same as ExtraCells2, but with many fixes and optimizations, before updating it is better to disassemble or remove items from the mod, this applies to high-level cells and some terminals.
-*TFCMedical
-
+- TFCMedical
 - When you die, your health will be at 20% and your hunger at half. Nutrient Blend - Drops your nutritional values ​​by up to half across the board.
 - When you die, your nutrition stats will not be half but close to 0.
 - After you respawn, you will be afflicted with a disease, a fatal disease that will prevent you from mining, building, or fighting for an entire day of TFC. Deadly disease antidote - cures a deadly disease when consumed.
@@ -715,44 +661,38 @@
 - Warming panacea (TFC Ambiental) - warms you up to 10 degrees for a while.
 - Aunis: Resurrection is a revised version of the regular Aunis that is still in development today.
 - JourneyMap
-*ColoredTooltips
+- ColoredTooltips
 - GalacticComputers
 - Oxygen-Players-list
 - Oxygen-cp
 - Grandeconomy
 
 ### Update mods
-
-*Hot Or Not
-
+- Hot Or Not
 - Fluid Craft for AE2
-*Appliedenergistics2
+- Appliedenergistics2
 - AsmodeusCore
-*CraftTweaker2
+- CraftTweaker2
 - fancy menu
 - Konkrete
-*Mixinbooter
-*ModularUI
+- Mixinbooter
+- ModularUI
 - Moving Elevators
 - TFC TowerHeat - fixed server crash when installing a mod.
 - TFCAmbiental - replaced by a fork from TFG.
-*loliasm
-*CustomSkinLoader
+- loliasm
+- CustomSkinLoader
 
-### Removed Mods
+### Removed mods- Aunis Beta - had too many bugs and shortcomings.
+- NotEnoughIDs
+- ExtraCells2
+- Xaeros Minimap
+- Xaeros World Map
+- GalaxySpace
 
-- Aunis Beta - had too many bugs and shortcomings.
-*NotEnoughIDs
-*ExtraCells2
-*Xaeros Minimap
-*Xaeros World Map
-*GalaxySpace
-
-## Version R3.4.4 - 11.07.2022
+## [3.4.4] - 11.07.2022
 ### Modpack fixes
-
 - Fixed a crash after right-clicking on the ground with a shovel in hand.
-
 - Fixed a crash after opening recipes with an iron flare in HEI.
 - Fixed many GTFO recipes again.
 - Fixed bugs with HotOrNot, there were a lot of them, not to list them all, but now they are all fixed (sort of).
@@ -770,9 +710,7 @@
 - Bags from Florae are disabled, as the author of the mod is not a very good person.
 
 ### Update mods
-
 - TFG mod
-
 - HotNot
 - fancy menu
 - HadEnoughItems
@@ -782,19 +720,15 @@
 - GregTech Food Option
 
 ### New mods
-
 - Extra CPUs
 
-## Version R3.4.3a - 07/06/2022
+## [3.4.31] - 07/06/2022
 ### Modpack fixes
-
 - The version of GregTech Food Option has been rolled back, as it causes crashes on servers, the developer has been informed, we are waiting for a fix.
 
-## Version R3.4.3 - 07/06/2022
+## [3.4.3] - 07/06/2022
 ### Modpack fixes
-
 - Fixed a bug where the gouishka could stay open when casting metal into molds or the like, now it closes, at least it should.
-
 - Now the strength consumption of tongs does not depend on the number of hot items in the inventory.
 - Fixed a bug where cutting wood for latex could be done with a pickaxe, but not with a knife (WTF).\
 - Included back Imission textures in GT.
@@ -806,18 +740,14 @@
 - Added deconstruction recipes for Advanced Storage Housing and Fluid Housing from AE2 and ExtraCells.
 
 ### Update mods
-
 - TFG mod
-
 - HotNot
 - Gregtech
 - GregTech Food Option
 
-## Version R3.4.2 - 07/04/2022
+## [3.4.2] - 07/04/2022
 ### Modpack fixes
-
 - Fixed bug when using geologist. hammer, minecraft crashed or kicked you from the server.
-
 - Fixed dupe in refrigerator.
 - Disabled Imission textures in GT to fix a bug with machines that run on multiple ticks. (Will be fixed by the GT developers in the next update).
 - Fixed blue steel bucket crafting recipe.
@@ -825,27 +755,19 @@
 - Turned on the temperature display, above the health bar.
 
 ### Update mods
-
 - Xaeros Minimap
-
 - Xaeros World Map
 - TFG mod
 
 ### New mods
-
 - InventoryTweaks
 
 ### Removing mods
-
 - Bogosorter
-
 - Nether Portal Fix
 
-## Version R3.4.1 - 07/03/2022
-### Modpack fixes
-
-- Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
-
+## [3.4.1] - 07/03/2022
+### Modpack fixes- Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
 - Renamed wrought iron to hematite to avoid confusion + the developers themselves will change it to this name in the future.
 - Fixed a bug where Quantum Armor tried to feed you but failed and destroyed all your food.
 - Added custom HotOrNot mod with liquid dupe fix and support for tongs from TFGMod.
@@ -881,20 +803,14 @@
 - Adjusted the energy cost of opening and maintaining the Stargate.
 - Fixed a bug when at night, when opening the inventory, the background is completely black.
 
-### Update mods
-
-- Обновлен GTCEu.
-
+### Update mods- Обновлен GTCEu.
 - Обновлен TFGMod.
 - CraftingTweaks
 - Fancymenu
 - ChunkAnimator
 - GregTech
 
-### New mods
-
-- HotOrNot (version from my favorite).
-
+### New mods- HotOrNot (version from my favorite).
 - TFC-Ambientnal.
 - Modularui
 - Bogosorter
@@ -905,18 +821,13 @@
 - FastFurnace
 
 ### Removing mods
-
 - HorOrNot versions from some developer.
-
 - InventoryTweaks
 - GregicProbe
 - GalacticraftTweaker
 
-## Version R3.4.0 - 06/26/2022
-### Modpack fixes
-
-- Added a recipe for tablets in the workbench.
-
+## [3.4.0] - 06/26/2022
+### Modpack fixes- Added a recipe for tablets in the workbench.
 - It seems that all GTFO recipes have been rewritten, but I'm not sure.
 - Fixed conflicting recipe for gravel.
 - Fixed recipe for fermented spider eye.
@@ -967,17 +878,11 @@
 - Return of MovingElevators.
 - On Kepler22b, the generation of candies, lollipops and diamond blocks is disabled.
 
-### Update mods
-
-- Xaeros Minimap
-
+### Update mods- Xaeros Minimap
 - Xaeros World Map
 - TFG mod
 
-### New mods
-
-- Sink
-
+### New mods- Sink
 - Supermartijn642configlib
 - Supermartijn642corelib
 - Moving elevators
@@ -991,42 +896,29 @@
 - Charset-Crafting
 
 ### Removing mods
-
 - RFTools
-
 - RFTools Control [Unofficial Maintance]
 - mcjtylib
 - CraftingTweaks
 - Phospor
 
-## Version R3.3.6 - 06.20.2022
-### Modpack fixes
-
-- Fixed wooden crate recipe
-
+## [3.3.6] - 06.20.2022
+### Modpack fixes- Fixed wooden crate recipe
 - Correction of metal units in double plates
 - Fixed Whetstone Base Recipe
 - Added recipe for iron hatches in GT machines
 - Fixed prop recipe
 - New corrected GTFO recipes
 
-### Update mods
+### Update mods- Modtweaker
 
-- Modtweaker
-
-## Version R3.3.5b-HotFix - 06.18.2022
-### Modpack fixes
-
-- AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
-
+## [3.3.51] - 06.18.2022
+### Modpack fixes- AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
 - Removed texture pack TFC Lite, saved RAM, but slowed down the launch of the game (you can optionally install)
 - Fixed a bug in AE2 recipes
 
-## Version 3.3.5 - 18.06.2022
-### Modpack Fixes
-
-- Added RFTools to the Lite version of the modpack.
-
+## [3.3.5] - 18.06.2022
+### Modpack fixes- Added RFTools to the Lite version of the modpack.
 - Pam's HarvestCraft has been replaced with the elaborate GregTech Food Option.
 - Rewritten GregTech Food Option recipes
 (not all because there are too many of them, there is no need to report errors in the recipes of this mod, we already know about them).
@@ -1069,9 +961,7 @@
 - Disabled ore generation in RFtools.
 
 ### Updating mods
-
 - Fluid Craft for AE2
-
 - Xaero's Minimap
 - Xaeros World Map
 - Fancy menu
@@ -1079,10 +969,7 @@
 - LoliASM
 - HadEnoughItems
 
-### New mods
-
-- Item Physics Lite
-
+### New mods- Item Physics Lite
 - RF Tools
 - RFTools Control [Unofficial Maintance]
 - mcjtylib
@@ -1092,9 +979,7 @@
 - DefaultOptions
 
 ### Removing Mods
-
 - Chisel And Bits
-
 - Unlimited Chiselworks (Reason: does not have TFC support).
 - Unlimited Chiselworkstfc (Reason: although it adds partial support for TFC, but not full, so a little later we will present our own mod that will work with TFC, TFC-Florae and other addons).
 - Supermartijn642configlib
@@ -1103,22 +988,14 @@
 - ExtraCells (Reason: the mod has been replaced with Additions, the same fork, but updated, if you have cells above 64K (ExtraCells), I recommend pulling all of them before updating)
 
 ### Downgraded version
-
 - Custom Skin Loader(up to Stable)
 
-#### [Huge]
-
 ### Removing Mods
-
 - Pam's HarvestCraft (The addon developer abandoned the mod, and we don't need dead weight).
-
 - TFC + Pam's HarvestCraft addon.
 
-## Version 3.3.4 - 09.06.2022
-### Modpack Fixes
-
-- Menu fixes.
-
+## [3.3.4] - 09.06.2022
+### Modpack fixes- Menu fixes.
 - Correction of the bucket recipe with salt.
 - Remelting of pieces of iron has been fixed.
 - Correction of the white screen at the first start and entry into the world.
@@ -1128,24 +1005,16 @@
 - Config correction
 
 ### Updating mods
+- Custom Skin Loader
 
-  - * Custom Skin Loader
-
-### New mods
-
-  - * Phosphor
+### New mods-  Phosphor
 
 ### Removing Mods
-
 - Hesperus
-
 - Performant
 
-## Version 3.3.3 - 08.06.2022
-### Modpack Fixes
-
-- Fixed the translation of GregTech
-
+## [3.3.3] - 08.06.2022
+### Modpack fixes- Fixed the translation of GregTech
 - Fixed quests
 - Added an Optifine installation button to the menu
 - Fixed Gemstone File recipes
@@ -1153,32 +1022,22 @@
 - Fixed iron bloom recipes
 
 ### Updating mods
-
 - TFG-mod
-
 - Supermartijn642configlib
 
-## Version 3.3.2 - 06/07/2022
-### Modpack Fixes
-
-- Fixed a bug with chicken
-
+## [3.3.2] - 06/07/2022
+### Modpack fixes- Fixed a bug with chicken
 - Temporarily disabled Powersuite Armor crafting
 - Fixed a bug with displaying blocks in the world and the world itself
 
 ### Updating mods
-
 - TFG-mod
 
 ### Removing Mods
-
 - Removed Oxygen-players-list
 
-## Version R3.3.1
-### Modpack fixes
-
-- Tweaked the alignment of GC energy with GT.
-
+## [3.3.1]
+### Modpack fixes- Tweaked the alignment of GC energy with GT.
 - Changed ME Drive model.
 - Changed gui ae2wtlib .
 - Changed the texture of the Tool belt.
@@ -1238,10 +1097,7 @@
 - Fixed dimension names in the GT config.
 - Maybe something else that we forgot.
 
-### Update mods
-
-- Fluid Craft for AE2
-
+### Update mods- Fluid Craft for AE2
 - Corail Tombstone
 - AE2 Unofficial Extended Life
 - GregTech CE: Unofficial
@@ -1251,26 +1107,18 @@
 - Sledgehammer
 
 ### Removing mods
-
 - Phosphorus
-
 - Portality
 
-### New mods
-
-- Hesperus
-
+### New mods- Hesperus
 - Performant
 - Aunis
 - Modular Powersuits
 - Numina
-
-#### [Huge]
-
 - Downgraded version of TFC Compatible
 - Downgraded version of Rocksalt
 
-## Version R3.3.0 - 26.05.2021
+## [3.3.0] - 26.05.2021
 - Graphite powder is now visible in HEI.
 - Ores, when dug up, drop pieces of ore that can be smelted into TFC metal, as well as processed in GT machines.
 - Now you need 144mb ​​for a TFC ingot, as in GT, in connection with this, the amount of metal in the plates and others has been changed in accordance with this.
@@ -1303,11 +1151,11 @@
   - fancy menu
   - tfctowerheat
 
-## Version R3.2.6 - 14.05.2022
+## [3.2.6] - 14.05.2022
 - Updated AE2EL.
 - Recipes for ores in the horse threshing machine have been returned.
 
-## Version R3.2.5 - 13.05.2022
+## [3.2.5] - 13.05.2022
 - Fixed ore processing.
 - Fixed graphite dust recipe from TFC.
 - Removed Steve's Carts (in the last update).
@@ -1316,7 +1164,7 @@
 - Updated textures of all planets in Galaxy Map.
 - Updated textures from GT.
 
-## Version R3.2.4 - 12.05.2022
+## [3.2.4] - 12.05.2022
 - Added Oxygen: PlayerLists
 - Added FindMe.
 - Updated MovingElevators.
@@ -1348,18 +1196,14 @@
 - Changed fireclay recipe (thanks to BayerHeroine).
 - And something else that we forgot.
 
-#### [Huge]
 
 - Fixed AstralSorcery config.
 - Fixed recipe with crystal and workbench from AstralSorcery (presumably).
 
-## Version R3.2.3d - 05.05.2022
+## [3.2.3] - 05.05.2022
 - ImmersiveRailroading was removed due to the lags and unloaded chunks that appeared because of it, as well as the colossal use of RAM (That's who knew that this piece of you know what is so not optimized).
 - Added Steve's Carts 2 and rewritten recipes for it.
 - Mouse Tweaks has been replaced with the Mouse Tweaks
-
-## Version from GTA developers
-
 - Urns with loot from Florae are included back and now drop excellent materials.
 - A bunch of localization in Russian from Xikaro.
 - Fixed metal dupe.
@@ -1370,7 +1214,7 @@
 - Updated LoliASM.
 - Updated XaeroMinimap.
 
-## Version R3.2.2 - 27.04.2022
+## [3.2.2] - 27.04.2022
 - Removed duplicate recipes between TFC in the anvil.
 - Added the latest ProjectRed recipes.
 - Fixed a bug when it was impossible to put containers in the cellar.
@@ -1386,24 +1230,18 @@
 - Fixed the display of recipes in JEI related to the forms from TFC, which were displayed slightly incorrectly.
 - Updated LoliASM.
 
-## Version R3.2.1 - 24.04.2022
+## [3.2.1] - 24.04.2022
 - Recipes for the ProjectRed mod.
 - Fixed crash when chopping a tree from Florae with a GTCEu axe.
 - Fixed a bug where it was possible to put the instrument in the cabinet from the cellars and get a neutron instrument at the output.
 - Removed some textures from TFG-Mod to reduce RAM usage.
 - HEI
-
-## Version reduced to 4.17.1
-
 - Updated LoliASM.
 
-## Version R3.2a - 23.04.2022
-
-#### [Huge]
-
+## [3.2.01] - 23.04.2022
 - Removed JEI.
 
-## Version R3.2 - 23.04.2022
+## [3.2.0] 23.04.2022
 - mods:
   - GregicProbe.
   - Puddles.
@@ -1435,9 +1273,6 @@
 - Removed a huge number of unused and not possible recipes from mods (but, which is logical not all, write about them in the discord channel).
 - Now TFG uses its own mod, not the patched TFC.
   - The mod has all the same features that were added to the TFC
-
-## Version (connection with GT)
-
 - Fixed a bug when it was possible to put items on V in someone else's private.
 - Added Puddles.
   - Fixed puddles from the Puddles mod appearing when the current average temperature is < -2.
@@ -1477,10 +1312,10 @@
 - Corrections of quests and textures, localization.
 - All resources (translations and textures) have been moved to our mod.
 
-## Version R3.1.5 - 19.03.2021
+## [3.1.5] - 19.03.2021
 - Fixed Fluix Dust recipe.
 
-## Version R3.1.4 - 18.03.2021
+## [3.1.4] - 18.03.2021
 - Corrected liquid and ordinary veins on the Moon:
   - Stone-ore veins:
     - Fixed a bug (again) when ore spawned above the surface.
@@ -1533,14 +1368,13 @@
 - In addition to a custom greenhouse, a sawmill has been added, allowing you to get billions of wood.
 - Fixed knife recipes. Now from the casting blade from TFC. You can make an adequate knife from GT.
 
-#### [Huge]
 
 - Added ThaumicJEI (the craft of the traveler's boots was, just not displayed).
 - Added vanilla block recipes (for the first time, for Thaumcraft, since most likely you will have to rewrite the mod code in order for everything to work with TFC).
 - Fixed a bug when the gutter could not be put on Rubber Fig.
 - Fixed a lot of crafting related to thaumium ingots, plates and the like.
 
-## Version R3.1.3 - 07.03.2022
+## [3.1.3] - 07.03.2022
 - Added a feature -> GT ores take the texture of the stone in which they were generated, now it looks beautiful.
 - Added ores to the Moon, Mars, Venus, Mercury.
 - Fixed heights of ore generation on Moon.
@@ -1561,7 +1395,7 @@
 - The Drying Rack has been removed, and some of its recipes have been transferred to the Drying Mat from FirmaLife.
 - And a lot more, but I forgot, and Xikaro forgot too.
 
-## Version R3.1.2 - 22.02.2022
+## [3.1.2] - 22.02.2022
 - Recipes have been created for rockets in the assembly line.
 - Created/rewritten recipes for rocket components in assembler.
 - The space age in quests has been moved after-iv shooting range.
@@ -1584,10 +1418,10 @@
 - Changed FTB/GT/AE2 textures
 - Added a new texture for the anvil gui
 
-## Version R3.1.1v2 - 13.02.2022
+## [3.1.1v]2 - 13.02.2022
 - Fixed CurseForge mod duplicate bug.
 
-## Version R3.1.1 - 13.02.2022
+## [3.1.1] - 13.02.2022
 - Fixed crafting blocks from some materials, mainly those that are duplicated between TFC and GT.
 - Fixed some recipe errors in AE2 related to the non-existence of some items in the crafting grid due to a missing ore dictionary.
 - Fixed a bug when TFC axe could not cut down the whole tree at once.
@@ -1605,7 +1439,7 @@
 - Updated XaeroMinimap/Worldmap.
 - Updated Craft Tweaker.
 
-## Version R3.1 - 09.02.2022
+## [3.1 -] 09.02.2022
 - Fixed energy consumption/duration when crafting brick blocks in assembler.
 - Added a bunch of recipes to cutting_saw -> Logs to lumber (with a huge bonus to the exit of the tree).
 - Added a bunch of recipes in assembler related to crafting different items from wood. For example, boards in steps/doors/buttons, etc.
@@ -1631,20 +1465,16 @@
 - DynamicSurr settings have been reset...
 - Fixed a bug in quests with liquids when a quest was counted without the right liquid.
 
-#### [Huge]
 
 - Fixed the Astral Sorcery curve script.
 
-## Version R3.0.10 - 06.02.2022
+## [3.0.10] - 06.02.2022
 - Fixed iron dust processing in TFC blast furnace.
 - Fixed forging of plates, double plates.
 - Fixed some problems with ore dictionaries.
-
-#### [Huge]
-
 - Fixed crash due to incorrect mod
 
-## Version R3.0.9 - 04.02.2022
+## [3.0.9] - 04.02.2022
 
 - Fixed and lightened elevator crafting.
 - Recipes have been added to Forge Hammer, for ingots made of high-carbon steels of all kinds, as well as for ingots of forged iron and cast iron to make less use of the TFC anvil. Available after receiving the steam hammer.
@@ -1676,25 +1506,24 @@
 - Some welding recipes can now be performed in alloy_smelter to get even further away from TFC forging.
 - And other changes that I certainly forgot about.
 
-## Version - R3.0.8
+## [3.0.8]
 - Fixed many recipes in the build related to changing the id of GT items. Now they use unique names that are static.
 - Added fishing -> added a fishing rod recipe + fixed the loss of vanilla fish, you can catch the TFC
 
-## Version of the fish, fry and eat, it will be useful in winter
+## [of th]e fish, fry and eat, it will be useful in winter
 
 - AE2 has been replaced by AE2 from Prototype Troussers, finally!
 
-#### [Huge]
 
 - Fixed a strange loot in astral sorcery dungeon.
 
 Important information: If the modpack does not start, delete the TerraFirmaCraft-MC1.12.2-1.7.21.179-patched(Just don't delete it in the name of which there is TFG*144) file in the mods folder, or TerraFirmaCraft*MC1.12.2*1.7.21.179. Because the CURSEFORGE does not know how to delete a file with a different name when changing the main mod. It is important. If nothing works for you anyway, delete the modpack completely and download it again.
 
-## Version - R3.0.6
+## [3.0.6]
 - Release 3.0.6 on Huge (not stable, report bugs) and Normal versions.
 - Fixed recipe with climate station 5 lvl.
 
-## Version - R3.0.5
+## [3.0.5]
 - Fixed incorrect forging level of some materials.
 - Removed the mod for voice chat, tk on 1.12.2, apparently people did not know how to make mods.
 - Replaced the mod for graves so that they do not break when blocks collapse.
@@ -1703,18 +1532,18 @@ Important information: If the modpack does not start, delete the TerraFirmaCraft
 - Fixed stone-types for lead spawn.
 - Other changes I forgot about-_-.
 
-## Version - R3.0.4
-Fixed low FPS bug
+## [3.0.4]
+- Fixed low FPS bug
 Fixed high RAM consumption
 
-## Version - R3.0.1
-fix crash with Cellar addon
+## [3.0.1]
+- fix crash with Cellar addon
 changed DiscordRP status
 
-## Version - R3.0.0
-There are too many changes to describe them here. Therefore, you can read them in the channel in my discord channel releases-ru
+## [3.0.0]
+- There are too many changes to describe them here. Therefore, you can read them in the channel in my discord channel releases-ru
 
-## Version - R2.9.1
+## [2.9.1]
 - Farm blocks from Forestry are now crafted in Carpenter.
 - Updated Xaeros Minimap / WorldMap.
 - Updated SneedASM.
@@ -1726,7 +1555,7 @@ There are too many changes to describe them here. Therefore, you can read them i
 - Updated Athenaeum.
 - Fixed a recipe with a clay plate / vessel, when, when crafting, she / he was not picked up / picked up.
 
-## Version - R2.9
+## [2.9.0]
 - Meteoric iron can now be recycled into something useful.
 - Fixed a bug when two doors dropped out of CellarsAddon when breaking a door.
 - Emeralds have been unified.
@@ -1735,12 +1564,9 @@ There are too many changes to describe them here. Therefore, you can read them i
 - Fixed packer and unpucker recipe related to diamonds and their unification.
 - Updated HorsePower mod (fixed bugs with recipes).
 
-## Version - R2.8.9
+## [2.8.9]
 - Unification diamonds. TFC diamonds are now used everywhere.
 - Removed the deletion of recipes for Frost and Temperature resistant hulls, since in the new
-
-## Version of Gregicality, new hulls are no longer needed
-
 - Fixed various scripting issues to make everything work properly with Gregicality 0.23.
 - Updated Gregicality (List of changes here: <https://www.curseforge.com/minecraft/mc*mods/gregicality/files/3449401>)
 - Updated other mods.
@@ -1750,7 +1576,7 @@ There are too many changes to describe them here. Therefore, you can read them i
 - Removed TFC-Paths mod, as not everyone liked it.
 - Other fixes I forgot about.
 
-## Version - R2.8.8
+## [2.8.8]
 - Added Forestry quests.
 - Added Gendustry quests.
 - Fixed Forestry recipes(which you can see on Git).
@@ -1766,14 +1592,14 @@ There are too many changes to describe them here. Therefore, you can read them i
 - GC food (canned food) now has the correct nutritional values.
 - And OTHER fixes :D.
 
-## Version R2.8.7v2 - 24.08.2021
+## [2.8.71] - 24.08.2021
 
 Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3405513>
 
 - Removed XaerosWorldMap, because of it, it was impossible to download the modpack. As soon as the author of the mod fixes it, I will add it back. In the meantime, you can download the mod from here and put it in the Mods folder.
 - The Normal and Huge versions were already released with this fix.
 
-## Version - R2.8.7
+## [2.8.7]
 - Correction of a million recipes related to Forestry.
 - The progression with Forestry is complicated(because it was possible to get high-end materials from bees too quickly).
 - Optimization and logical layout of scripts.
@@ -1785,7 +1611,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - The main menu has been changed, not completely yet, but it will be finalized in the future.
 - Other fixes that you can look at on the git.
 
-## Version - R2.8.6
+## [2.8.6]
 - Fixed the crafting of the grill.
 - Fixed crafting of iron bars.
 - Fixed the crafting of the iron hatch.
@@ -1802,7 +1628,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Probably broke something else :D
 - There is now a changed status in the discord.
 
-## Version - R2.8.5
+## [2.8.5]
 - Replaced in most Iron recipes with WroughtIron.
 - The recipe for drying salt has been removed(it does not work due to the curve of the Drying Rack mod).
 - Configs were cleaned from duplicates and other garbage.
@@ -1812,14 +1638,14 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Removed InGameInfoXML(useless, after updating XaeroMinimap).
 - Other fixes that I forgot about, you can see them on the git.
 
-## Version - R2.8.4
+## [2.8.4]
 - Changed the crafting of GC and GS cylinders.
 - Changed the crafting of the diamond sharpening tool.
 - Fixed and added some quests.
 - Changed the craft of the spacesuit.
 - Removed old iron hammer recipes from default iron.
 
-## Version - R2.8.3
+## [2.8.3]
 - Multiple quest fixes.
 - The AE2 quest line has been completely redesigned.
 - Fixed crafting of forged hammer from GT
@@ -1829,13 +1655,13 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Now you can wash diamond ore, but with a very small output, only for the first stages of the game.
 - Fixed the name of the quest line with the periodic table.
 
-## Version - R2.8.2
+## [2.8.2]
 - Fixed the crafting of cheese from FirmaLife.
 - Fixed the interface recipe from AE2.
 - Lignite coal is now dropped when digging up lignite coal GT. But when digging with a hammer, dust still falls.
 - Bituminous coal from TFC is now dropped when digging up ordinary GT coal. But when digging with a hammer, dust still falls.
 
-## Version - R2.8.1
+## [2.8.1]
 - Fixed most of the recipes of Wrought Iron.
 - Fixed FirmaLife recipes.
 - Fixed Cheese from FirmaLife.
@@ -1847,36 +1673,36 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Added InGameInfoXML.
 - Added Elevators.
 
-## Version - R2.7.5
+## [2.7.5]
 - Fix crusible craft.
 - Fix bronze craft, SHIT AGAIN.
 
-## Version - R2.7.4
+## [2.7.4]
 - TFC update(Many bugfixes and optimization improvements).
 - Improved quartz_vein (now appears in the Sedimentary stone type).
 - Improvement of yellow_garnet(increased the chance of spawn by 3 times more).
 - Deleted oregen on the planets(Will be added in the next update).
 - Other changes.
 
-## Version - R2.7.3
+## [2.7.3]
 - Forestry improvements.
 - Gendustry improvements.
 - BiggerPacketsPls(Fix server NBT error)
 - other tweaks
 
-## Version - R2.7.2
+## [2.7.2]
 - Fixes for some quests in the GC branch.
 - Quest fixes in the Primitive branch.
 - Fixed bronze crafting.
 - Fixes of GC recipes.
 
-## Version - R2.7.1hotfix
+## [2.7.11]
 - fix all old bugs(recipes and etc)
 
-## Version - R2.7.1
+## [2.7.1]
 - all bugs with worldgen fixed, install from curseforge launcher.
 
-## Version - R2.7
+## [2.7.0]
 - COMPLETE deleting of WarpDrive. To be honest, I thought the mod would be quite interesting and, as the authors of the mod say, compatible with GC, but as we have already understood, all this does not really converge with reality. Therefore, it is better to build on a clean GC than with crutches from WarpDrive.
 - Fixed a lot of GC recipes.
 - Added AEAdditions (Extracells2fork).
@@ -1885,7 +1711,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Fixed some recipes from Thaumcraft.
 - The entire line of GC quests has been redesigned.
 
-## Version - R2.6.12
+## [2.6.1]2]
 - Fixed warpdrive logging(+fps)
 - Fixed ExtraPlanets Space Suit crafting
 - Updated mods
@@ -1893,18 +1719,15 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Rebuilded quests
 - Some tweaks
 
-## Version - R2.6.11
+## [2.6.1]1]
 - Fixed remelting of iron dust into iron ingot(again).
 - Fixed the recipes of the parser associated with the oven(can not be fixed, I looked in the documentation for access to the parser, but it is not there. Therefore, I will add a recipe that makes a stove block from the stove).
 - Fix of invar cases.
 - SneedASM is enabled again for the Normal
-
-## Version(forgot to activate it just yet)
-
-- Ore*related optimizations.
+- Ore-related optimizations.
 - Fixed Bronze Quest(HUGE ver)
 
-## Version - R2.6.10
+## [2.6.10]
 - Fixed some Thaumcraft recipes at the initial stage.
 - Fixed the crafting of the greenhouse pot.
 - Fixed the durability of GT items.
@@ -1921,7 +1744,7 @@ Link: <https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/34055
 - Fixed crash with SneedASM. (Thanks to Rongmario).
 ew
 
-## Version - R2.6.9
+## [2.6.9]
 - Removed repetitions of items, such as red steel swords from GT and TFC, now only one is left.
 - Now there are two options for creating a pickaxe or, for example, a shovel. Either you forge and suffer, or you spend 2*3 times more resources, but you do not forge, but you suffer.
 - Cleaned the JEI from various garbage.
@@ -1932,14 +1755,14 @@ ew
 - Ordinary water is renamed Processing water.
 - Various fixes for Forestry recipes.
 
-## Version - R2.6.8
+## [2.6.8]
 - Updated 11 mods (sort of).
 - Removed ASM (FIXED CRASH BUG).
 - Fixed lv casing crafting.
 - Fixed red and blue steel dust crafting.
 - Now the tetrahedral dust has copper units again. -_-
 
-## Version - R2.6.7
+## [2.6.7]
 - Updated mods.
 - Added EnderStorage.
 - Added ParticleCulling with a special config. (+Optimization)
@@ -1950,22 +1773,18 @@ ew
 - Potentially fixed ladder crafting? Damn, it did not break, install the assembly adequately.
 - Returned taumkraft quests for the Huge
 
-## Version - R2.6.6
+## [2.6.6]
 - Potentially fixed the bronze quest.
 - Potentially fixed all crafting related to some bug that people had(A crooked recipe for blast furnaces and barrels).
 - Updated mod
 - Fixed SeedOil
 - Fixed paper quest
-
-## Version implemented optimization mod for TC]
-
 - Fixed GT and TFC scripts for GT.15 update.
-
 - Fixed honey pile crafting.
 - Some tweaks
 - Updated GT, Gregicality, Xaero, and etc.
 
-## Version - R2.6.4d
+## [2.6.4]
 - Added EnderIO
 - Added Blur
 - Updated modtweaker
@@ -1975,7 +1794,7 @@ ew
 - Updated MTLib
 - EnderIO crafts fixed
 
-## Version R2.6.3 - Released 15.05.2021
+## [2.6.3] - Released 15.05.2021
 
 - Pig iron -> Steel recipe moved back to ForgeHammer.
 - Pig iron plate recipe removed.
@@ -1991,7 +1810,7 @@ ew
 - Files can now be forged.
 - Some other changes I forgot (read about them on git).
 
-## Version R2.6.2 - Released 10.05.2021 - The modpack will from now on be separated into two versions, one with thaumcraft, one without it. The versions with thaumcraft will be called release. Versions with thaumcraft will be called beta
+## [2.6.2] - Released 10.05.2021 - The modpack will from now on be separated into two versions, one with thaumcraft, one without it. The versions with thaumcraft will be called release. Versions with thaumcraft will be called beta
 
 - Approximately 32% faster launch.
 - Warp Drive configs optimized.
@@ -2008,7 +1827,7 @@ ew
 - Removed WorldEdit.
 - Removed Morpheus.
 
-## Version R2.6.1 - 03.05.2021
+## [2.6.1] - 03.05.2021
 
 - Improved oregen for planets.
 - Warp Drive is now compatible with GC and GT internals.
@@ -2033,7 +1852,7 @@ ew
 - Fixed planet display in discord.
 - Chunkloaders from WarpDrive are back.
 
-## Version 2.6 - Released 24.04.2021
+## [2.6.0] - Released 24.04.2021
 
 YOU WILL NOT BE ABLE TO PLAY IN OLD WORLDS AFTER UPDATING.
 JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
@@ -2049,7 +1868,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Added gtce-inventorypipes. (GregTech addon).
 - Assorted crafting recipe fixes.
 
-## Version 2.5.13 - Released 22.04.2021
+## [2.5.13] - Released 22.04.2021
 
 - Removed Logistics Pipes.
 - Added Thermal Dynamic/Foundation/RedstoneFlux.
@@ -2062,7 +1881,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Nether mob spawn fixed.
 - Updated ThaumicAdditions.
 
-## Version 2.5.12 - Released 16.04.2021
+## [2.5.12] - Released 16.04.2021
 
 - Inventory tweaks removed because if screws with gregtech items.
 - TFC Ambiental removed.
@@ -2073,12 +1892,12 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - FirmaLife updated.
 - XaerosMinimap/WorldMap updated.
 
-## Version 2.5.11 - Released 11.04.2021
+## [2.5.11] - Released 11.04.2021
 
 - FirmaLife Updated.
 - Some scripts optimization.
 
-## Version 2.5.10 hotfix - Released 10.04.2021
+## [2.5.10] - Released 10.04.2021
 
 - Bronze quest fixed.
 - AE era forming press quest fixed.
@@ -2088,7 +1907,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Some settings for SledgeHammer changed.
 - You can now clean rock salt and normal salt by throwing it in water.
 
-## Version 2.5.9 - Released 06.04.2021
+## [2.5.9] - Released 06.04.2021
 
 - The rock quest fixed.
 - Pams Compat updated.
@@ -2099,14 +1918,14 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Copper hammer recipe changed. It can now be cast in a TFC mold.
 - Copper saw recipe fixed.
 
-## Version 2.5.8 - Released 31.03.2021
+## [2.5.8] - Released 31.03.2021
 
 - Added mod Logistics Pipes(Thanks Irgendwer).
 - Fix quest with certus quartz.
 - FirmaLife Updated.
 - Fixed slow loading minecraft. (Thanks stupid devs Crafttweaker).
 
-## Version 2.5.7 - Released 28.03.2021
+## [2.5.7] - Released 28.03.2021
 
 - Oregen for EP planets.
 - Stone reworked on EP planets.
@@ -2130,7 +1949,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Translation for old materials fixed.
 - Some mods updated.
 
-## Version 2.5.6 - Released 25.03.2021
+## [2.5.6] - Released 25.03.2021
 
 - GregTech updated.
 - CraftTweaker updated.
@@ -2138,7 +1957,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Some quest translations fixed.
 - Fixed tree leaves name.
 
-## Version 2.5.5 - Released 23.03.2021
+## [2.5.5] - Released 23.03.2021
 
 - Quest translation done.
 - Wrought iron item names changed.
@@ -2149,7 +1968,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - Crafttweaker updated.
 - Firmalife updated.
 
-## Version 2.5.4 - Released 22.03.2021
+## [2.5.4] - Released 22.03.2021
 
 - Magnetite vein readded to the overworld.
 - Tungsten vein readded.
@@ -2157,7 +1976,7 @@ JustEnoughIds broke biomes for Warp Drive so it was replaced with NotEnoughIds.
 - All ore veins removed from End.
 - Some oregen settings tweaked.
 
-## Version 2.5.3 - Released 21.03.2021
+## [2.5.3] - Released 21.03.2021
 
 - Proper translation added for TFC quests.
 - Updated Cellars addon.

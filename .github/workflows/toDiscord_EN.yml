@@ -1,20 +1,30 @@
-name: Notification on push EN
+name: Notification on push RU
 
-on:
-  release:
-    types: [published]
+on: [push]
 
 jobs:
   sending:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Changelog Parser
+      id: changelog
+      uses: coditory/changelog-parser@v1
+      with:
+        path: CHANGELOG_RU.md
+
     - name: Discord notification
-      uses: SpeeeDCraft/github-to-discord@main
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_EN }}
-        DISCORD_USERNAME: GitHub
-        DISCORD_AVATAR: https://cdn.discordapp.com/attachments/932122658219360287/983200453938511892/8a9134c7d8e6b822.jpg
-        MESSAGE_TITLE: New Version
-        MESSAGE_DESCRIPTION: Click on the blue version number above to see Changelog!
-        MESSAGE_URL: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_EN.md
-        MESSAGE_COLOR: 5814783
+      uses: tsickert/discord-webhook@v5.3.0
+      with:
+        webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+        username: "GitHub"
+        avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
+        embed-thumbnail-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+        embed-title: Релиз ${{ steps.changelog.outputs.version }}
+        embed-description: "${{ steps.changelog.outputs.description }}"
+        embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_EN.md
+        embed-color: 15430476
+        embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+        embed-footer-text: ${{ steps.changelog.outputs.date }}
