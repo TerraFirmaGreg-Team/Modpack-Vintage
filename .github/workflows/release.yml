@@ -101,7 +101,7 @@ jobs:
           project-id: '385053'
           modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
           modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-          changelog: '${{ steps.changelog.outputs.description }}' 
+          changelog: '${{ steps.changelog_ru.outputs.description }}' 
           changelog-format: markdown
           game-version: '1.12.2'
           display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
