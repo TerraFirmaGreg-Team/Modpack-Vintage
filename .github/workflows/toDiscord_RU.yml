@@ -20,6 +20,6 @@ jobs:
       with:
         webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
         username: "GitHub Bot"
+        embed-title: Релиз ${{ steps.changelog.outputs.version }}
         avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
-        content: "${{ steps.changelog.outputs.description }}"
-        filename: CHANGELOG_RU.md
+        embed-description: "${{ steps.changelog.outputs.description }}"
