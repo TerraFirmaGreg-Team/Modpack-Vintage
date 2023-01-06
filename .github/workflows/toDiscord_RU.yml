@@ -10,7 +10,7 @@ jobs:
       id: changelog
       uses: coditory/changelog-parser@v1
       with:
-        path: CHANGELOG_RU.md
+        path: ./CHANGELOG_RU.md
 
     - name: Discord notification
       uses: appleboy/discord-action@master
@@ -19,5 +19,5 @@ jobs:
         webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
         color: "#48f442"
         username: "GitHub Bot"
-        message: The ${{ github.event_name }} event triggered first step.
+        message: ${{ steps.changelog.outputs.description }}
         file: "./Changelog_RU.md"
