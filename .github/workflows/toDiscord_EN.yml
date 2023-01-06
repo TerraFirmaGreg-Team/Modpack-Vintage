@@ -1,4 +1,4 @@
-name: Notification on push RU
+name: Notification on push EN
 
 on: [push]
 
