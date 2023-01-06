@@ -19,7 +19,12 @@ jobs:
       uses: tsickert/discord-webhook@v5.3.0
       with:
         webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-        username: "GitHub Bot"
-        embed-title: Релиз ${{ steps.changelog.outputs.version }}
+        username: "GitHub"
         avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
+        embed-title: Релиз ${{ steps.changelog.outputs.version }}
         embed-description: "${{ steps.changelog.outputs.description }}"
+        embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_RU.md
+        embed-color: 5814783
+        embed-footer-text: test
+        embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+        embed-image-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/longbutton.png?raw=true
