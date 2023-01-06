@@ -1,20 +1,24 @@
 name: Notification on push RU
 
-on:
-  release:
-    types: [published]
+on: [push]
 
 jobs:
   sending:
     runs-on: ubuntu-latest
     steps:
+    - name: Changelog Parser
+      id: changelog
+      uses: coditory/changelog-parser@v1
+      with:
+        path: CHANGELOG_RU.md
+
     - name: Discord notification
-      uses: SpeeeDCraft/github-to-discord@main
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RU }}
-        DISCORD_USERNAME: GitHub
-        DISCORD_AVATAR: https://cdn.discordapp.com/attachments/932122658219360287/983200453938511892/8a9134c7d8e6b822.jpg
-        MESSAGE_TITLE: New Version
-        MESSAGE_DESCRIPTION: Нажмите на голубой номер версии выше, чтобы увидеть список изменений!
-        MESSAGE_URL: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/Changelog_RU.md
-        MESSAGE_COLOR: 5814783
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.DISCORD_CHANNEL_ID }}
+        webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+        color: "#48f442"
+        username: "GitHub Bot"
+        message: The ${{ github.event_name }} event triggered first step.
+        file: "./Changelog_RU.md"
+

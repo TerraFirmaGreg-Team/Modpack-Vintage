@@ -26,17 +26,11 @@ jobs:
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
 
-      - name: Changelog Parser Ru
-        id: changelog_ru
+      - name: Changelog Parser
+        id: changelog
         uses: coditory/changelog-parser@v1
         with:
           path: CHANGELOG_RU.md
-      
-      - name: Changelog Parser En
-        id: changelog_en
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_EN.md
 
       - name: normal -> extended
         run: |
@@ -130,10 +124,8 @@ jobs:
         with:
           prerelease: false
           generate_release_notes: false
-          name: Release ${{ steps.changelog_ru.outputs.version }}
-          body: |
-            ${{ steps.changelog_ru.outputs.description }}
-            ${{ steps.changelog_eu.outputs.description }}
+          name: Release ${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
