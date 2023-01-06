@@ -641,3 +641,68 @@ Anvil.addRecipe("tfg:thaumcraftvoidhelmet", <ore:plateVoidMetal>, <thaumcraft:vo
 Anvil.addRecipe("tfg:thaumcraftvoidchestplate", <tfc:metal/double_sheet/void_metal>, <thaumcraft:void_chest>, 5, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
 Anvil.addRecipe("tfg:thaumcraftvoidgreaves", <ore:plateVoidMetal>, <thaumcraft:void_legs>, 5, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
 Anvil.addRecipe("tfg:thaumcraftvoidboots", <ore:plateVoidMetal>, <thaumcraft:void_boots>, 5, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
+
+// Dirt
+assembler.recipeBuilder()
+	.inputs(<ore:dirt>)
+	.circuit(23)
+	.outputs(<minecraft:dirt>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Stone
+assembler.recipeBuilder()
+	.inputs(<ore:stone>)
+	.circuit(23)
+	.outputs(<minecraft:stone>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Wheat
+assembler.recipeBuilder()
+	.inputs(<ore:grain>)
+	.circuit(23)
+	.outputs(<minecraft:wheat>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Pumpkin
+assembler.recipeBuilder()
+	.inputs(<firmalife:pumpkin_fruit>)
+	.circuit(23)
+	.outputs(<minecraft:pumpkin>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Furnace
+assembler.recipeBuilder()
+	.inputs(<ore:cobblestone> * 8)
+	.circuit(23)
+	.outputs(<minecraft:furnace>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Pickaxe
+extruder.recipeBuilder()
+	.inputs(<metaitem:shape.extruder.pickaxe>, <ore:ingotThaumium>)
+	.outputs(<tfc:metal/pick_head/thaumium>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Sword
+extruder.recipeBuilder()
+	.inputs(<metaitem:shape.extruder.sword>, <ore:ingotThaumium>)
+	.outputs(<tfc:metal/sword_blade/thaumium>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Hoe
+extruder.recipeBuilder()
+	.inputs(<metaitem:shape.extruder.hoe>, <ore:ingotThaumium>)
+	.outputs(<tfc:metal/hoe_head/thaumium>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Shovel
+extruder.recipeBuilder()
+	.inputs(<metaitem:shape.extruder.shovel>, <ore:ingotThaumium>)
+	.outputs(<tfc:metal/shovel_head/thaumium>)
+	.duration(160).EUt(32).buildAndRegister();
+
+// Axe
+extruder.recipeBuilder()
+	.inputs(<metaitem:shape.extruder.axe>, <ore:ingotThaumium>)
+	.outputs(<tfc:metal/axe_head/thaumium>)
+	.duration(160).EUt(32).buildAndRegister();
