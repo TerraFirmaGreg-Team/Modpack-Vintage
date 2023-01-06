@@ -118,7 +118,7 @@ jobs:
           changelog: '${{ steps.changelog_ru.outputs.description }}' 
           changelog-format: markdown
           game-version: '1.12.2'
-          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
+          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended
           server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended
           release-type: 'beta'
 
