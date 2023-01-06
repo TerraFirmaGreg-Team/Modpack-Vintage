@@ -50,7 +50,7 @@ jobs:
       - name: Archive Release CF extended
         run: |
           cd ./extended/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
       - name: Archive Release MMC normal
         run: |
@@ -64,7 +64,7 @@ jobs:
           cd ./extended/
           mv -vf ./overrides/ .minecraft/
           cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
       - name: Deleting Client Resources normal
         run: |
@@ -92,7 +92,7 @@ jobs:
           cd ./extended/.minecraft/
           mv -vf ./icon.png ./server-icon.png
           mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
-          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip ./
+          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
       
       - name: Upload Curseforge normal
         uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
@@ -113,13 +113,13 @@ jobs:
         with: 
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: '385053'
-          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
+          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip
           changelog: '${{ steps.changelog_ru.outputs.description }}' 
           changelog-format: markdown
           game-version: '1.12.2'
-          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended
-          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server
+          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
+          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended
           release-type: 'beta'
 
       - name: Create GitHub Release
@@ -132,11 +132,11 @@ jobs:
           body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
             ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended-server.zip
+            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip
 
       - name: Discord notification RU
         uses: tsickert/discord-webhook@v5.3.0

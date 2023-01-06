@@ -21,6 +21,12 @@
 - "Super-hot torch": allows you to light objects once by hitting them with a torch.
 - Swing Through Grass: Allows you to hit objects through the grass, not break it.
 - Uncap FPS: Removes the hard-coded limit of 30 frames per second on screens such as the main menu.
+- Added the following recipes (and their respective use): (Thanks to MDetonados)
+  - Assembler: Circuit (23) + any Ore Dictionary Grain = Vanilla Wheat -- used for Thaumonomicon research;
+  - Assembler: Circuit (23) + any 8 Ore Dictionary Cobblestone = Vanilla Furnace -- Used for the Essentia Smelter recipe;
+  - Assembler: Circuit (23) + Pumpkin = Vanilla Pumpkin -- Used for creating a Snow Golem, that needs to be scanned for Thaumonomicon research;
+  - Assembler: Circuit (23) + any Ore Dictionary Dirt = Vanilla Dirt -- used for Thaumonomicon research;
+  - Extruder: Thaumium Ingot + Tool Mold (Pickaxe, Axe, Shovel, Hoe and Sword) = Tool Head -- used for the five special Thaumcraft Tools.
 
 ### Mod Updates
 - UniversalTweaks
