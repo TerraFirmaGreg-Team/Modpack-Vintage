@@ -2096,7 +2096,7 @@
 - Обновлен EntityCulling.
 - Обновлен FirmaLife.
 
-## [2.5] - 14.03.2021
+## [2.5.0] - 14.03.2021
 - Обновлен Cellars Addon(аддон ТФК).
 - Добавлен PamS HarvestCraft.
 - Добавлен мод PamsharvestCraft(аддон ТФК).
