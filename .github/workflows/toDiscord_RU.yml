@@ -16,11 +16,10 @@ jobs:
         path: CHANGELOG_RU.md
 
     - name: Discord notification
-      uses: appleboy/discord-action@master
+      uses: tsickert/discord-webhook@v5.3.0
       with:
-        webhook_id: ${{ secrets.DISCORD_CHANNEL_GIT_ID }}
-        webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-        color: "#48f442"
+        webhook-url: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
         username: "GitHub Bot"
-        message: ${{ steps.changelog.outputs.description }}
-        file: "CHANGELOG_RU.md"
+        avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
+        content: "${{ steps.changelog.outputs.description }}"
+        filename: CHANGELOG_RU.md
