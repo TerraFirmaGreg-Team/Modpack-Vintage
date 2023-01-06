@@ -1418,7 +1418,7 @@
 - Changed FTB/GT/AE2 textures
 - Added a new texture for the anvil gui
 
-## [3.1.1v]2 - 13.02.2022
+## [3.1.11] - 13.02.2022
 - Fixed CurseForge mod duplicate bug.
 
 ## [3.1.1] - 13.02.2022
@@ -1509,15 +1509,9 @@
 ## [3.0.8]
 - Fixed many recipes in the build related to changing the id of GT items. Now they use unique names that are static.
 - Added fishing -> added a fishing rod recipe + fixed the loss of vanilla fish, you can catch the TFC
-
-## [of th]e fish, fry and eat, it will be useful in winter
-
 - AE2 has been replaced by AE2 from Prototype Troussers, finally!
-
-
 - Fixed a strange loot in astral sorcery dungeon.
-
-Important information: If the modpack does not start, delete the TerraFirmaCraft-MC1.12.2-1.7.21.179-patched(Just don't delete it in the name of which there is TFG*144) file in the mods folder, or TerraFirmaCraft*MC1.12.2*1.7.21.179. Because the CURSEFORGE does not know how to delete a file with a different name when changing the main mod. It is important. If nothing works for you anyway, delete the modpack completely and download it again.
+- Important information: If the modpack does not start, delete the TerraFirmaCraft-MC1.12.2-1.7.21.179-patched(Just don't delete it in the name of which there is TFG-144) file in the mods folder, or TerraFirmaCraft-MC1.12.2-1.7.21.179. Because the CURSEFORGE does not know how to delete a file with a different name when changing the main mod. It is important. If nothing works for you anyway, delete the modpack completely and download it again.
 
 ## [3.0.6]
 - Release 3.0.6 on Huge (not stable, report bugs) and Normal versions.
