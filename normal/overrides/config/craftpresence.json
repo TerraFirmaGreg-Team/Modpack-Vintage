@@ -47,16 +47,35 @@
   },
   "statusMessages": {
     "mainMenuData": {
-      "textOverride": "In the Main Menu"
+      "textOverride": "In the Main Menu",
+      "iconOverride": "tfg_logo",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
     },
     "loadingData": {
-      "textOverride": "Loading..."
+      "textOverride": "Loading...",
+      "iconOverride": "tfg_logo"
     },
     "lanData": {
       "textOverride": "Playing on a LAN Server"
     },
     "singleplayerData": {
-      "textOverride": "Playing Singleplayer"
+      "textOverride": "Playing Singleplayer",
+      "iconOverride": "tfg_logo"
     }
   },
   "advancedSettings": {
@@ -132,7 +151,8 @@
     "dynamicIcons": {
       "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f",
       "default": "https://via.placeholder.com/256.png",
-      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/overrides/resources/modpack/icons/icon.png?raw=true"
+      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/overrides/resources/modpack/icons/icon.png?raw=true",
+      "tfg.terrafirmagreg.su": "https://api.mcsrvstat.us/icon/tfg.terrafirmagreg.su"
     },
     "dynamicVariables": {
       "default": "Discord",
