@@ -34,9 +34,24 @@ val TFC_Flat_Doughs as IItemStack[] = [
 	<tfcflorae:food/millet_flatbread_dough>
 ];
 
+val TFC_Flat_Breads as IItemStack[] = [
+	<tfcflorae:food/fonio_flatbread>,
+	<tfcflorae:food/buckwheat_flatbread>,
+	<tfcflorae:food/amaranth_flatbread>,
+	<firmalife:wheat_flatbread>,
+	<firmalife:rye_flatbread>,
+	<firmalife:rice_flatbread>,
+	<firmalife:oat_flatbread>,
+	<firmalife:corn_flatbread>,
+	<firmalife:barley_flatbread>,
+	<tfcflorae:food/spelt_flatbread>,
+	<tfcflorae:food/quinoa_flatbread>,
+	<tfcflorae:food/millet_flatbread>
+];
+
 val TFC_Doughs as IItemStack[] = [
 	<tfcflorae:food/fonio_dough>,
-	<tfcflorae:food/buckwheat_flatbread_dough>,
+	<tfcflorae:food/buckwheat_dough>,
 	<tfcflorae:food/amaranth_dough>,
 	<tfc:food/wheat_dough>,
 	<tfc:food/rye_dough>,
@@ -255,6 +270,34 @@ for i, TFC_Breads in TFC_Breads {
 	// electric_baking_oven.recipeBuilder()
 	// 	.inputs([TFC_Doughs[i]])
 	// 	.outputs(TFC_Breads)
+	//     .property("temperature", 500)
+	// 	.duration(225).EUt(1).buildAndRegister();
+}
+
+// Flatbread
+for i, TFC_Flat_Breads in TFC_Flat_Breads {
+	
+	baking_oven.recipeBuilder()
+		.inputs([TFC_Flat_Doughs[i], <minecraft:coal:1> * 2])
+		.outputs(TFC_Flat_Breads)
+		.property("temperature", 500)
+		.duration(400).EUt(1).buildAndRegister();
+
+	baking_oven.recipeBuilder()
+		.inputs([TFC_Flat_Doughs[i], <minecraft:coal> * 2])
+		.outputs(TFC_Flat_Breads)
+		.property("temperature", 500)
+		.duration(400).EUt(1).buildAndRegister();
+	
+	baking_oven.recipeBuilder()
+		.inputs([TFC_Flat_Doughs[i], <metaitem:gemCoke>])
+		.outputs(TFC_Flat_Breads)
+		.property("temperature", 500)
+		.duration(400).EUt(1).buildAndRegister();
+	
+	// electric_baking_oven.recipeBuilder()
+	// 	.inputs([TFC_Flat_Doughs[i]])
+	// 	.outputs(TFC_Flat_Breads)
 	//     .property("temperature", 500)
 	// 	.duration(225).EUt(1).buildAndRegister();
 }
