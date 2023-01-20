@@ -114,13 +114,13 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinyTin>, "TIN", 16, true);
 // Кусок руды
 ItemRegistry.registerItemMetal(<metaitem:oreChunkCassiterite>, "TIN", 72, true);
 // Чистая Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustCassiterite>, "TIN", 244, true);
+ItemRegistry.registerItemMetal(<metaitem:dustCassiterite>, "TIN", 122, true);
 // Грязная Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustImpureCassiterite>, "TIN", 210, true);
+ItemRegistry.registerItemMetal(<metaitem:dustImpureCassiterite>, "TIN", 105, true);
 // Средняя Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustSmallCassiterite>, "TIN", 61, true);
+ItemRegistry.registerItemMetal(<metaitem:dustSmallCassiterite>, "TIN", 30, true);
 // Маленькая Кучка
-ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiterite>, "TIN", 27, true);
+ItemRegistry.registerItemMetal(<metaitem:dustTinyCassiterite>, "TIN", 13, true);
 
 // --- Касситеритный песок
 
