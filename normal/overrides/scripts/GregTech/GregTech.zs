@@ -12,6 +12,36 @@ val Rubber_Trees = <tfc:wood/log/rubber_fig> | <tfc:wood/log/hevea>;
 
 
 // --- Добавление рецептов
+// Исправление переработки медной пластины
+macerator.recipeBuilder()
+  .inputs([<metaitem:plateCopper>])
+  .outputs([<metaitem:dustCopper>])
+  .duration(63).EUt(2).buildAndRegister();
+
+arc_furnace.recipeBuilder()
+  .inputs([<metaitem:plateCopper>])
+  .fluidInputs([<liquid:oxygen> * 63])
+  .outputs([<metaitem:ingotAnnealedCopper>])
+  .duration(63).EUt(30).buildAndRegister();
+
+extractor.recipeBuilder()
+  .inputs([<metaitem:plateCopper>])
+  .fluidOutputs([<liquid:copper> * 144])
+  .duration(63).EUt(30).buildAndRegister();
+
+// Исправление конфликта рецептов медной монеты и брони из MechTech в форминг прессе
+for plate in platesArmorPlatingArray {
+    forming_press.findRecipe(44, [plate * 2, plate * 2], null).remove();
+}
+
+for i, plate in platesArmorPlatingArray {
+  forming_press.recipeBuilder()
+    .circuit(1)
+    .inputs([plate * 4])
+    .outputs(armorPlatingsArray[i])
+    .duration(8).EUt(44).buildAndRegister();
+}
+
 // !Удалить после исправления Контролера напряжения
 recipes.remove(<metaitem:gcym:tiered_hatch.uhv>);
 recipes.addShaped("tfg/gregtech/tiered_hatch_uv", <metaitem:gcym:tiered_hatch.uv>, [

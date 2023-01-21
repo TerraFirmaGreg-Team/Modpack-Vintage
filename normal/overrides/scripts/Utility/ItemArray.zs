@@ -4566,3 +4566,45 @@ global transmissionWiresArray as IItemStack[] = [
 	<projectred-transmission:wire:15>,
 	<projectred-transmission:wire:16>
 ];
+
+// - Armor Platings Array
+global armorPlatingsArray as IItemStack[] = [
+	<metaitem:armor_plating_aluminium>,
+	<metaitem:armor_plating_copper>,
+	<metaitem:armor_plating_bronze>,
+	<metaitem:armor_plating_iron>,
+	<metaitem:armor_plating_cobalt>,
+	<metaitem:armor_plating_steel>,
+	<metaitem:armor_plating_stainless_steel>,
+	<metaitem:armor_plating_titanium>,
+	<metaitem:armor_plating_diamond>,
+	<metaitem:armor_plating_ruby>,
+	<metaitem:armor_plating_sapphire>,
+	<metaitem:armor_plating_osmium>,
+	<metaitem:armor_plating_iridium>,
+	<metaitem:armor_plating_osmiridium>,
+	<metaitem:armor_plating_hsse>,
+	<metaitem:armor_plating_hssg>,
+	<metaitem:armor_plating_neutronium>
+];
+
+// - Plates for Armor Platings Array
+global platesArmorPlatingArray as IItemStack[] = [
+	<metaitem:plateAluminium>,
+	<metaitem:plateCopper>,
+	<metaitem:plateBronze>,
+	<metaitem:plateIron>,
+	<metaitem:plateCobalt>,
+	<metaitem:plateSteel>,
+	<metaitem:plateStainlessSteel>,
+	<metaitem:plateTitanium>,
+	<metaitem:plateDiamond>,
+	<metaitem:plateRuby>,
+	<metaitem:plateSapphire>,
+	<metaitem:plateOsmium>,
+	<metaitem:plateIridium>,
+	<metaitem:plateOsmiridium>,
+	<metaitem:plateHsse>,
+	<metaitem:plateHssg>,
+	<metaitem:plateNeutronium>
+];
