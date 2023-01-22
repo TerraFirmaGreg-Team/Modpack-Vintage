@@ -74,6 +74,65 @@ val FluidsForJuices as ILiquidStack[] = [
 	<liquid:juice_peach>,
 	<liquid:gtfo_orange_extract>
 ];
+val MissingFreshFruits as IItemStack[] = [
+	<tfcflorae:food/baobab_fruit>,
+	<tfcflorae:food/barrel_cactus_fruit>,
+	<tfcflorae:food/hawthorn>,
+	<tfcflorae:food/osage_orange>,
+	<tfcflorae:food/pink_ivory_drupe>,
+	<tfcflorae:food/riberry>,
+	<tfcflorae:food/rowan_berry>,
+	<tfcflorae:food/sky_fruit>,
+	<tfcflorae:food/yew_berry>,
+	<tfcflorae:food/green_grape>,
+	<tfcflorae:food/purple_grape>
+];
+
+val MissingDriedFruits as IItemStack[] = [
+	<tfcflorae:food/dried/baobab_fruit>,
+	<tfcflorae:food/dried/barrel_cactus_fruit>,
+	<tfcflorae:food/dried/hawthorn>,
+	<tfcflorae:food/dried/osage_orange>,
+	<tfcflorae:food/dried/pink_ivory_drupe>,
+	<tfcflorae:food/dried/riberry>,
+	<tfcflorae:food/dried/rowan_berry>,
+	<tfcflorae:food/dried/sky_fruit>,
+	<tfcflorae:food/dried/yew_berry>,
+	<tfcflorae:food/dried/green_grape>,
+	<tfcflorae:food/dried/purple_grape>
+];
+
+val FreshFood as IItemStack[] = [
+	<tfcflorae:food/coffea_cherries>,
+	<tfcflorae:food/black_tea>,
+	<tfcflorae:food/green_tea>,
+	<tfcflorae:food/white_tea>,
+	<tfcflorae:crop/product/chamomile_head>,
+	<tfcflorae:crop/product/labrador_tea_head>,
+	<tfcflorae:crop/product/sunflower_head>,
+	<tfcflorae:food/cannabis_bud>,
+	<tfcflorae:food/cannabis_leaf>,
+	<tfcflorae:food/coca_leaf>,
+	<tfcflorae:food/opium_poppy_bulb>,
+	<tfcflorae:food/peyote>,
+	<tfcflorae:food/tobacco_leaf>
+];
+
+val DriedFood as IItemStack[] = [
+	<tfcflorae:food/dried/coffea_cherries>,
+	<tfcflorae:food/dried/black_tea>,
+	<tfcflorae:food/dried/green_tea>,
+	<tfcflorae:food/dried/white_tea>,
+	<tfcflorae:crop/product/dried/chamomile_head>,
+	<tfcflorae:crop/product/dried/labrador_tea_head>,
+	<tfcflorae:crop/product/dried/sunflower_head>,
+	<tfcflorae:food/dried/cannabis_bud>,
+	<tfcflorae:food/dried/cannabis_leaf>,
+	<tfcflorae:food/dried/coca_leaf>,
+	<tfcflorae:food/dried/opium_poppy_bulb>,
+	<tfcflorae:food/dried/peyote>,
+	<tfcflorae:food/dried/tobacco_leaf>
+];
 
 // --- Добавление рецептов
 
@@ -837,3 +896,18 @@ Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>,
 
 // Ящик
 recipes.addShapeless("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:storage/crate>, [<tfc:stick_bundle>, <ore:clay>, <ore:clay>, <tfc:stick_bundle> ]);
+
+// Сушенная еда
+for i, MissingFreshFruits in MissingFreshFruits{
+	Drying.addRecipe("tfg/tfcflorae/drying/"+i, MissingFreshFruits, MissingDriedFruits[i], 12000);
+	microwave.recipeBuilder()
+		.inputs(MissingFreshFruits)
+		.outputs(MissingDriedFruits[i])
+		.duration(300).EUt(16).buildAndRegister();
+}
+for i, FreshFood in FreshFood{
+	microwave.recipeBuilder()
+		.inputs(FreshFood)
+		.outputs(DriedFood[i])
+		.duration(300).EUt(16).buildAndRegister();
+}
