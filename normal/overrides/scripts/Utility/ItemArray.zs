@@ -4608,3 +4608,10 @@ global platesArmorPlatingArray as IItemStack[] = [
 	<metaitem:plateHssg>,
 	<metaitem:plateNeutronium>
 ];
+
+// - Fertilizers
+global dustFertilizerArray as IItemStack[] = [
+	<metaitem:dustSaltpeter>,
+	<tfcfarming:fertilizer_p>,
+	<metaitem:fertilizer>
+];
