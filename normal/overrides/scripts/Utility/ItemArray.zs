@@ -4609,6 +4609,13 @@ global platesArmorPlatingArray as IItemStack[] = [
 	<metaitem:plateNeutronium>
 ];
 
+
+// - Fertilizers
+global dustFertilizerArray as IItemStack[] = [
+	<metaitem:dustSaltpeter>,
+	<tfcfarming:fertilizer_p>,
+	<metaitem:fertilizer>
+
 // - Fibers
 global fibresArray as IItemStack[] = [
 	<tfc:animal/product/wool>,

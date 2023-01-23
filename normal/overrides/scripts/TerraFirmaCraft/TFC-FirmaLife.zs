@@ -216,6 +216,35 @@ baking_oven.recipeBuilder()
     .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
+// Greenhouse parts
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs(<metaitem:plateWroughtIron>)
+    .outputs([<firmalife:greenhouse_roof> * 4])
+    .duration(205).EUt(8).buildAndRegister();
+
+assembler.recipeBuilder()
+    .circuit(2)
+    .inputs(<metaitem:plateWroughtIron>)
+    .outputs([<firmalife:greenhouse_door> * 4])
+    .duration(205).EUt(8).buildAndRegister();
+
+assembler.recipeBuilder()
+    .circuit(3)
+    .inputs(<metaitem:plateWroughtIron>)
+    .outputs([<firmalife:greenhouse_wall> * 4])
+    .duration(205).EUt(8).buildAndRegister();
+
+recipes.addShaped(<firmalife:quad_planter>, [
+    [null, <ore:dustFertilizer>, null],
+    [null, <ore:dirt>, null],
+    [null, <minecraft:flower_pot>, null]]);
+
+recipes.addShapeless(<firmalife:trellis>, [<firmalife:greenhouse_wall>, <firmalife:greenhouse_wall>, <ore:dustFertilizer>]);
+recipes.addShapeless(<firmalife:pumpkin_hanging_planter>, [<firmalife:greenhouse_wall>, <firmalife:crop/seeds/pumpkin>, <ore:dustFertilizer>]);
+recipes.addShapeless(<firmalife:melon_hanging_planter>, [<firmalife:greenhouse_wall>, <firmalife:crop/seeds/melon>, <ore:dustFertilizer>]);
+recipes.addShapeless(<firmalife:squash_hanging_planter>, [<firmalife:greenhouse_wall>, <tfc:crop/seeds/squash>, <ore:dustFertilizer>]);
+
 //Drying food in microwave
 for i, FreshFood in FreshFood{
 	microwave.recipeBuilder()

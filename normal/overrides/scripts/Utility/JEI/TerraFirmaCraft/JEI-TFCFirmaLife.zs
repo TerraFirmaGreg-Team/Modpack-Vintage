@@ -66,7 +66,12 @@ val RemoveRecipe as IItemStack[] = [
 	<firmalife:orange_trapdoor>,
 	<firmalife:peach_trapdoor>,
 	<firmalife:plum_trapdoor>,
-	<firmalife:red_apple_trapdoor>
+	<firmalife:red_apple_trapdoor>,
+	<firmalife:trellis>,
+	<firmalife:squash_hanging_planter>,
+	<firmalife:melon_hanging_planter>,
+	<firmalife:pumpkin_hanging_planter>,
+	<firmalife:quad_planter>
 ];
 
 
