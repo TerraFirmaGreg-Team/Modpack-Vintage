@@ -604,7 +604,7 @@ for i, TFC_Lumber in TFC_Lumber {
 	cutter.recipeBuilder()
 		.inputs([TFC_Planks[i]])
 		.fluidInputs([<liquid:lubricant> * 1])
-		.outputs(TFC_Lumber * 8, <metaitem:dustWood> * 2)
+		.outputs(TFC_Lumber * 4)
 		.duration(200).EUt(7).buildAndRegister();
 }
 
