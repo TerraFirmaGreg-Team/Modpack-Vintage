@@ -8,6 +8,58 @@ import mods.firmalife.Oven;
 import mods.firmalife.Drying;
 
 
+// --- Массивы
+
+val FreshFood as IItemStack[] = [
+	<firmalife:cocoa_beans>,
+	<firmalife:pineapple>,
+	<tfc:food/banana>,
+	<tfc:food/blackberry>,
+	<tfc:food/blueberry>,
+	<tfc:food/bunch_berry>,
+	<tfc:food/cherry>,
+	<tfc:food/cloud_berry>,
+	<tfc:food/cranberry>,
+	<tfc:food/elderberry>,
+	<tfc:food/gooseberry>,
+	<tfc:food/green_apple>,
+	<tfc:food/lemon>,
+	<tfc:food/olive>,
+	<tfc:food/orange>,
+	<tfc:food/peach>,
+	<tfc:food/plum>,
+	<tfc:food/raspberry>,
+	<tfc:food/red_apple>,
+	<tfc:food/snow_berry>,
+	<tfc:food/strawberry>,
+	<tfc:food/wintergreen_berry>
+];
+
+val DriedFood as IItemStack[] = [
+	<firmalife:dried_cocoa_beans>,
+	<firmalife:dried_pineapple>,
+	<firmalife:dried_banana>,
+	<firmalife:dried_blackberry>,
+	<firmalife:dried_blueberry>,
+	<firmalife:dried_bunch_berry>,
+	<firmalife:dried_cherry>,
+	<firmalife:dried_cloud_berry>,
+	<firmalife:dried_cranberry>,
+	<firmalife:dried_elderberry>,
+	<firmalife:dried_gooseberry>,
+	<firmalife:dried_green_apple>,
+	<firmalife:dried_lemon>,
+	<firmalife:dried_olive>,
+	<firmalife:dried_orange>,
+	<firmalife:dried_peach>,
+	<firmalife:dried_plum>,
+	<firmalife:dried_raspberry>,
+	<firmalife:dried_red_apple>,
+	<firmalife:dried_snow_berry>,
+	<firmalife:dried_strawberry>,
+	<firmalife:dried_wintergreen_berry>
+];
+
 
 // --- Добавление рецептов
 
@@ -164,3 +216,10 @@ baking_oven.recipeBuilder()
     .property("temperature", 500)
     .duration(400).EUt(1).buildAndRegister();
 
+//Drying food in microwave
+for i, FreshFood in FreshFood{
+	microwave.recipeBuilder()
+		.inputs(FreshFood)
+		.outputs(DriedFood[i])
+		.duration(300).EUt(16).buildAndRegister();
+}

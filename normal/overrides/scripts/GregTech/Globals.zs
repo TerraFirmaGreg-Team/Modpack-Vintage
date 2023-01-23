@@ -60,6 +60,7 @@ global cuisine_assembler         as RecipeMap = RecipeMap.getByName("cuisine_ass
 global baking_oven               as RecipeMap = RecipeMap.getByName("baking_oven");
 global electric_baking_oven      as RecipeMap = RecipeMap.getByName("electric_baking_oven");
 global greenhouse                as RecipeMap = RecipeMap.getByName("greenhouse");
+global microwave                 as RecipeMap = RecipeMap.getByName("microwave");
 // GM
 global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
 // Custom
