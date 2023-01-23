@@ -817,6 +817,9 @@ for i, TFC_Fired_Ceramics in TFC_Fired_Ceramics {
 	//furnace.addRecipe(TFC_Fired_Ceramics, TFC_Unfired_Ceramics[i]);
 }
 
+// Spindle
+furnace.addRecipe(<tfc:ceramics/fired/spindle>, <tfc:ceramics/unfired/spindle>);
+
 // Macerator recipes for Quern/Grindstone recipes
 for i, TFC_QuernToMaceratorOutput in TFC_QuernToMaceratorOutput {
 	macerator.recipeBuilder()
@@ -1489,3 +1492,11 @@ mixer.recipeBuilder()
 	.circuit(16)
 	.outputs(<firmalife:shosha_wheel>)
 	.duration(150).EUt(2).buildAndRegister();
+
+// Wiremill recipes for yarn from fibers
+for i, fibresArray in fibresArray {
+	wiremill.recipeBuilder()
+		.inputs(fibresArray)
+		.outputs([stringsArray[i] * 12])
+		.duration(20).EUt(7).buildAndRegister();
+}

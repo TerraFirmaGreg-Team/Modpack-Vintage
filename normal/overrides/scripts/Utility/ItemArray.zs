@@ -4609,9 +4609,31 @@ global platesArmorPlatingArray as IItemStack[] = [
 	<metaitem:plateNeutronium>
 ];
 
+
 // - Fertilizers
 global dustFertilizerArray as IItemStack[] = [
 	<metaitem:dustSaltpeter>,
 	<tfcfarming:fertilizer_p>,
 	<metaitem:fertilizer>
+
+// - Fibers
+global fibresArray as IItemStack[] = [
+	<tfc:animal/product/wool>,
+	<firmalife:pineapple_fiber>,
+	<tfcflorae:crop/product/yucca_fiber>,
+	<tfcflorae:crop/product/sisal_fiber>,
+	<tfcflorae:crop/product/hemp_fiber>,
+	<tfcflorae:crop/product/flax_fiber>,
+	<tfcflorae:crop/product/cotton_boll>
+];
+
+// - Yarns
+global stringsArray as IItemStack[] = [
+	<tfc:animal/product/wool_yarn>,
+	<firmalife:pineapple_yarn>,
+	<tfcflorae:crop/product/yucca_string>,
+	<tfcflorae:crop/product/sisal_string>,
+	<tfcflorae:crop/product/hemp_string>,
+	<tfcflorae:crop/product/linen_string>,
+	<tfcflorae:crop/product/cotton_yarn>
 ];
