@@ -620,3 +620,5 @@ assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integ
 // Раскрафт ванильного верстака
 macerator.findRecipe(2, [<minecraft:crafting_table:0>], null).remove();
 
+// Исправление дюпа палок
+recipes.remove(<minecraft:stick>);
