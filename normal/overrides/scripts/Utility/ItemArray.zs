@@ -4590,6 +4590,7 @@ global dustFertilizerArray as IItemStack[] = [
 	<metaitem:dustSaltpeter>,
 	<tfcfarming:fertilizer_p>,
 	<metaitem:fertilizer>
+];
 
 // - Fibers
 global fibresArray as IItemStack[] = [
