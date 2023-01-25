@@ -411,3 +411,22 @@ recipes.addShaped("tfg/gc/slime_ball", <minecraft:slime_ball>, [
 	[<ore:dyeGreen>, <minecraft:sugar>, <ore:dyeGreen>],
 	[<minecraft:sugar>, <firmalife:cheddar_wheel>,<minecraft:sugar>],
 	[<ore:dyeGreen>, <minecraft:sugar>, <ore:dyeGreen>]]);
+
+// Палки
+recipes.addShapeless("tfg/tfc/sticks_from_bundle", <minecraft:stick> * 18, [<tfc:stick_bundle>, <ore:gtce.tool.saws>]);
+recipes.addShapeless("tfg/tfc/sticks_from_rod", <minecraft:stick> * 2, [<metaitem:stickLongWood>, <ore:gtce.tool.saws>]);
+recipes.addShapeless("tfg/tfc/sticks_from_bunch", <minecraft:stick> * 9, [<tfc:stick_bunch>]);
+recipes.addShapeless("tfg/tfc/sticks_from_twig", <minecraft:stick> * 3, [<tfcflorae:groundcover/twig>]);
+recipes.addShapeless("tfg/tfc/sticks_from_driftwood", <minecraft:stick> * 6, [<tfcflorae:groundcover/driftwood>]);
+
+cutter.recipeBuilder()
+	.inputs(<tfc:stick_bundle>)
+	.fluidInputs([<liquid:lubricant> * 1])
+	.outputs([<minecraft:stick> * 18])
+	.duration(200).EUt(7).buildAndRegister();
+
+cutter.recipeBuilder()
+	.inputs(<ore:lumber>)
+	.fluidInputs([<liquid:lubricant> * 1])
+	.outputs([<minecraft:stick> * 9])
+	.duration(200).EUt(7).buildAndRegister();
