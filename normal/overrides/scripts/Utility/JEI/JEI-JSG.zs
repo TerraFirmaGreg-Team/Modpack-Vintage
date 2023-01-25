@@ -9,9 +9,7 @@ import crafttweaker.item.IItemStack;
 val RemoveAndHide as IItemStack[] = [
 	<jsg:naquadah_ore>,
 	<jsg:naquadah_ore_stone>,
-	<jsg:naquadah_raw>,
-	<jsg:naquadah_impure>,
-	<jsg:naquadah_purified>,
+	<jsg:naquadah_shard>,
 	<jsg:naquadah_block>,
 	<jsg:naquadah_block_raw>,
 	<jsg:naquadah_alloy>,
@@ -25,10 +23,7 @@ val RemoveAndHide as IItemStack[] = [
 	// Врата (Орлин)
 	<jsg:stargate_orlin_member_block>,
 	<jsg:stargate_orlin_base_block>,
-	// Разное
-	<jsg:page_mysterious_milkyway>,
-	<jsg:page_mysterious_pegasus>,
-	<jsg:page_mysterious_universe>,
+	<jsg:page_mysterious>,
 	<jsg:platform_rings_block>,
 	<jsg:staff>,
 	<jsg:zat>
