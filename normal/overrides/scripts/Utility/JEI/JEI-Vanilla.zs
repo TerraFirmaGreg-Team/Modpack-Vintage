@@ -622,3 +622,6 @@ macerator.findRecipe(2, [<minecraft:crafting_table:0>], null).remove();
 
 // Исправление дюпа палок
 recipes.remove(<minecraft:stick>);
+
+// Лампа
+assembler.findRecipe(1, [<minecraft:redstone> * 4, <minecraft:glowstone_dust> * 4], null).remove();

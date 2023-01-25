@@ -127,6 +127,12 @@ recipes.addShaped("tfg/vanilla/redstone_lamp", <minecraft:redstone_lamp>, [
 	[<ore:stickIronAny>, <metaitem:cableGtSingleRedAlloy>, <ore:stickIronAny>],
 	[<metaitem:plateBrass>, <ore:stickIronAny>, <metaitem:plateBrass>]]);
 
+assembler.recipeBuilder()
+	.inputs(<metaitem:plateBrass> * 4, <ore:stickIronAny> * 4)
+	.fluidInputs([<liquid:redstone> * 72])
+	.outputs(<minecraft:redstone_lamp>)
+	.duration(100).EUt(1).buildAndRegister();
+
 // Удочка
 recipes.addShaped("tfg/vanilla/fishing_rod", <minecraft:fishing_rod>, [
 	[null, null, <minecraft:stick>],
