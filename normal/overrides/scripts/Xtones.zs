@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 
 // Удаление рецептов
 recipes.remove(<xtones:base>);
+recipes.remove(<xtones:lamp_flat>);
 
 // --- Добавление рецептов
 // Базовый блок
@@ -61,3 +62,15 @@ recipes.addShaped("tfg/xtones/zoea", <xtones:zoea> * 8, [
     [<xtones:base>, <xtones:base>, <xtones:base>],
     [<xtones:base>, <ore:stoneBrick>, <xtones:base>],
     [<xtones:base>, <xtones:base>, <xtones:base>]]);
+
+// Лампа
+assembler.recipeBuilder()
+	.circuit(25)
+	.inputs(
+		<metaitem:wireGtSingleRedAlloy>, 
+		<ore:paneGlass>,
+        <ore:plateIron>,
+		<metaitem:stickSteel> * 4, 
+		<projectred-core:resource_item:500> * 2)
+	.outputs(<xtones:lamp_flat>)
+	.duration(180).EUt(32).buildAndRegister();
