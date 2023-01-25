@@ -11,7 +11,7 @@ star_forge.recipeBuilder()
 	.circuit(6)
 	.inputs(
 		<metaitem:ingotTrinaquadalloy> * 6, 
-		<jsg:stargate_ring_fragment> * 2, 
+		<jsg:fragment_stargate_milkyway> * 3, 
 		<jsg:crystal_red>, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_blue>, 
@@ -23,7 +23,7 @@ star_forge.recipeBuilder()
 	.circuit(7)
 	.inputs(
 		<metaitem:ingotTrinaquadalloy> * 2, 
-		<jsg:stargate_ring_fragment> * 4, 
+		<jsg:fragment_stargate_milkyway> * 2, 
 		<jsg:crystal_red>)
 	.outputs(<jsg:stargate_milkyway_member_block:6>)
 	.duration(2000).EUt(120880).buildAndRegister();
@@ -32,12 +32,20 @@ star_forge.recipeBuilder()
 	.circuit(8)
 	.inputs(
 		<metaitem:ingotTrinaquadalloy> * 4, 
-		<jsg:stargate_ring_fragment> * 4, 
+		<jsg:fragment_stargate_milkyway> * 2, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_yellow>, 
 		<gregtech:transparent_casing> * 4)
 	.outputs(<jsg:stargate_milkyway_member_block:14>)
 	.duration(2000).EUt(130880).buildAndRegister();
+// Фрагмент врат
+star_forge.recipeBuilder()
+	.circuit(9)
+	.inputs(
+		<metaitem:plateDenseTrinaquadalloy> * 9,
+		<ore:batteryUv>)
+	.outputs(<jsg:fragment_stargate_milkyway> * 2)
+	.duration(2000).EUt(121880).buildAndRegister();
 
 // Звездные врата: Пегас
 // Основа
@@ -45,7 +53,7 @@ star_forge.recipeBuilder()
 	.circuit(6)
 	.inputs(
 		<metaitem:ingotUraniumRhodiumDinaquadide> * 6, 
-		<jsg:stargate_ring_fragment> * 2, 
+		<jsg:fragment_stargate_pegasus> * 3, 
 		<jsg:crystal_yellow>, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_blue>, 
@@ -57,7 +65,7 @@ star_forge.recipeBuilder()
 	.circuit(7)
 	.inputs(
 		<metaitem:ingotUraniumRhodiumDinaquadide> * 2, 
-		<jsg:stargate_ring_fragment> * 4, 
+		<jsg:fragment_stargate_pegasus> * 2, 
 		<jsg:crystal_blue>)
 	.outputs(<jsg:stargate_pegasus_member_block:6>)
 	.duration(2500).EUt(120880).buildAndRegister();
@@ -66,12 +74,20 @@ star_forge.recipeBuilder()
 	.circuit(8)
 	.inputs(
 		<metaitem:ingotUraniumRhodiumDinaquadide> * 4, 
-		<jsg:stargate_ring_fragment> * 4, 
+		<jsg:fragment_stargate_pegasus> * 2, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_blue>, 
 		<gregtech:transparent_casing> * 4)
 	.outputs(<jsg:stargate_pegasus_member_block:14>)
 	.duration(2500).EUt(130880).buildAndRegister();
+// Фрагмент врат
+star_forge.recipeBuilder()
+	.circuit(9)
+	.inputs(
+		<metaitem:plateDenseTrinaquadalloy> * 3,
+		<metaitem:plateDenseTrinium> * 3)
+	.outputs(<jsg:fragment_stargate_pegasus> * 2)
+	.duration(2000).EUt(121880).buildAndRegister();
 
 // Звездные врата: Вселенная
 // Основа
@@ -79,7 +95,7 @@ star_forge.recipeBuilder()
 	.circuit(6)
 	.inputs(
 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 6, 
-		<jsg:universe_ring_fragment> * 2, 
+		<jsg:fragment_stargate_universe> * 2, 
 		<jsg:crystal_red>, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_blue>, 
@@ -91,7 +107,7 @@ star_forge.recipeBuilder()
 	.circuit(7)
 	.inputs(
 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 2, 
-		<jsg:universe_ring_fragment> * 4, 
+		<jsg:fragment_stargate_universe> * 4, 
 		<jsg:crystal_red>)
 	.outputs(<jsg:stargate_universe_member_block:6>)
 	.duration(2000).EUt(500880).buildAndRegister();
@@ -100,29 +116,19 @@ star_forge.recipeBuilder()
 	.circuit(8)
 	.inputs(
 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 4, 
-		<jsg:universe_ring_fragment> * 4, 
+		<jsg:fragment_stargate_universe> * 4, 
 		<jsg:crystal_ender>, 
 		<jsg:crystal_yellow>, 
 		<gregtech:transparent_casing:1> * 4)
 	.outputs(<jsg:stargate_universe_member_block:14>)
 	.duration(2000).EUt(520880).buildAndRegister();
-
 // Фрагмент врат
 star_forge.recipeBuilder()
 	.circuit(9)
 	.inputs(
-		<metaitem:plateDenseTrinaquadalloy> * 9,
-		<ore:batteryUv>)
-	.outputs(<jsg:stargate_ring_fragment> * 2)
-	.duration(2000).EUt(121880).buildAndRegister();
-
-// Фрагмент врат вселенная
-star_forge.recipeBuilder()
-	.circuit(9)
-	.inputs(
 		<metaitem:plateDenseEnrichedNaquadahTriniumEuropiumDuranide> * 9,
-		<ore:batteryUv>)
-	.outputs(<jsg:universe_ring_fragment> * 2)
+		<metaitem:plateDenseTrinium> * 3)
+	.outputs(<jsg:fragment_stargate_universe> * 2)
 	.duration(2000).EUt(121880).buildAndRegister();
 
 // Конденсатор
@@ -210,20 +216,12 @@ autoclave.recipeBuilder()
  	.chancedOutput(<jsg:crystal_blue_pegasus> * 1, 6000, 250)
 	.duration(1000).EUt(13290).buildAndRegister();
 
-assembler.recipeBuilder()
-	.inputs(
-		<jsg:crystal_blue_pegasus>,
-		<metaitem:plateRedstone> * 4,
-		<ore:circuitZpm> * 9)
-	.fluidInputs([<liquid:redstone> * 15502])
-	.outputs([<jsg:raw_pegasus_dhd_crystal>])
-	.duration(300).EUt(32080).buildAndRegister();
 
 // Лучевой передатчик
 star_forge.recipeBuilder()
 	.circuit(14)
 	.inputs(
-		<metaitem:plateDenseNaquadahAlloy> * 2,
+		<metaitem:gearNaquadahAlloy> * 2,
 		<gregtech:transparent_casing>,
 		<metaitem:htmltech:laser_input_hatch.uv>,
 		<jsg:circuit_control_naquadah>, 
@@ -336,9 +334,11 @@ star_forge.recipeBuilder()
 star_forge.recipeBuilder()
 	.circuit(12)
 	.inputs(
-		<jsg:raw_pegasus_dhd_crystal> * 4,
-		<jsg:crystal_blue> * 4,
-		<jsg:crystal_ender>)
+		<jsg:circuit_control_naquadah>,
+		<jsg:crystal_blue>,
+		<jsg:crystal_ender>,
+		<jsg:crystal_red>,
+		<metaitem:dustNaquadah> * 4)
 	.fluidInputs(<liquid:silicon_molten_blue> * 544)
 	.outputs(<jsg:crystal_control_pegasus_dhd>)
 	.duration(2000).EUt(130880).buildAndRegister();
@@ -413,7 +413,7 @@ star_forge.recipeBuilder()
 	.outputs(<jsg:crystal_glyph_goauld>)
 	.duration(100).EUt(10880).buildAndRegister();
 
-// Транспортные кольца
+// Транспортные кольца: Goa'uld
 assembly_line.recipeBuilder()
 	.circuit(1)
 	.inputs(
@@ -421,12 +421,22 @@ assembly_line.recipeBuilder()
 		<jsg:crystal_ender>,
 		<jsg:crystal_yellow>,
 		<jsg:crystal_blue>,
-		<jsg:transportrings_ring_fragment> * 3,
+		<jsg:fragment_transportrings_goauld> * 3,
 		<jsg:circuit_control_naquadah> * 2)
 	.fluidInputs([<liquid:naquadah_alloy> * 1000])
 	.outputs(<jsg:transportrings_goauld_block>)
 	.duration(200).EUt(2800).buildAndRegister();
-// Транспортные кольца Ори
+// Фрагмент транспортных колец: Goa'uld
+assembler.recipeBuilder()
+	.circuit(3)
+	.inputs(
+		<metaitem:plateDenseTitanium> * 3,
+		<metaitem:plateDenseTitanium> * 3)
+	.fluidInputs([<liquid:glass> * 4000])
+	.outputs(<jsg:fragment_transportrings_goauld>)
+	.duration(200).EUt(1880).buildAndRegister();
+
+// Транспортные кольца: Ori
 assembly_line.recipeBuilder()
 	.circuit(1)
 	.inputs(
@@ -434,11 +444,43 @@ assembly_line.recipeBuilder()
 		<jsg:crystal_ender>, 
 		<jsg:crystal_yellow>, 
 		<jsg:crystal_blue>, 
-		<jsg:transportrings_ring_fragment> * 3, 
+		<jsg:fragment_transportrings_ori> * 3, 
 		<jsg:circuit_control_naquadah> * 2)
 	.fluidInputs([<liquid:trinium> * 1000])
 	.outputs(<jsg:transportrings_ori_block>)
 	.duration(200).EUt(2800).buildAndRegister();
+// Фрагмент транспортных колец: Ori
+assembler.recipeBuilder()
+	.circuit(3)
+	.inputs(
+		<metaitem:plateDenseTrinium> * 3,
+		<metaitem:plateDenseTrinium> * 3)
+	.fluidInputs([<liquid:glass> * 4000])
+	.outputs(<jsg:fragment_transportrings_ori>)
+	.duration(200).EUt(1880).buildAndRegister();
+
+// Транспортные кольца: Ancientу
+assembly_line.recipeBuilder()
+	.circuit(1)
+	.inputs(
+		<jsg:crystal_red>, 
+		<jsg:crystal_ender>, 
+		<jsg:crystal_yellow>, 
+		<jsg:crystal_blue>, 
+		<jsg:fragment_transportrings_ancient> * 3, 
+		<jsg:circuit_control_naquadah> * 2)
+	.fluidInputs([<liquid:trinium> * 1000])
+	.outputs(<jsg:transportrings_ancient_block>)
+	.duration(200).EUt(2800).buildAndRegister();
+// Фрагмент транспортных колец: Ancientу
+assembler.recipeBuilder()
+	.circuit(3)
+	.inputs(
+		<metaitem:plateDenseTrinium> * 3,
+		<metaitem:plateDenseTitanium> * 3)
+	.fluidInputs([<liquid:glass> * 4000])
+	.outputs(<jsg:fragment_transportrings_ancient>)
+	.duration(200).EUt(1880).buildAndRegister();
 
 // Панель транспортных колец
 assembly_line.recipeBuilder()
@@ -451,18 +493,6 @@ assembly_line.recipeBuilder()
 	.fluidInputs([<liquid:gold> * 4000])
 	.outputs(<jsg:transportrings_controller_goauld_block>)
 	.duration(200).EUt(980).buildAndRegister();
-
-// Фрагмент транспортных колец
-assembly_line.recipeBuilder()
-	.circuit(3)
-	.inputs(
-		<metaitem:plateNaquadahAlloy> * 2, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_blue>, 
-		<jsg:circuit_control_naquadah>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:transportrings_ring_fragment>)
-	.duration(200).EUt(1880).buildAndRegister();
 
 // Основа управляющей микросхемы
 circuit_assembler.recipeBuilder()

@@ -324,7 +324,10 @@ recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:l
 recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:gtce.tool.files>]);
 
 // Cladding
-alloy_smelter.recipeBuilder().inputs(metaitem:plateWroughtIron, metaitem:plateCopper).outputs(tfc:metal/sheet/wrought_iron).duration(400).EUt(2).buildAndRegister();
+alloy_smelter.recipeBuilder()
+	.inputs(<metaitem:plateWroughtIron>, <metaitem:plateCopper>)
+	.outputs(<tfc:metal/sheet/wrought_iron>)
+	.duration(400).EUt(2).buildAndRegister();
 
 // Контроллер доменной печи
 recipes.addShaped("tfg/tfc/blast_furnace", <tfc:blast_furnace>, [

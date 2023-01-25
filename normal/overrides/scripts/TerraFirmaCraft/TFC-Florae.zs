@@ -4,6 +4,7 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.terrafirmacraft.Barrel;
 
 import mods.horsepower.Press;
+import mods.firmalife.Drying;
 
 // --- Массивы
 
@@ -899,7 +900,7 @@ recipes.addShapeless("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:sto
 
 // Сушенная еда
 for i, MissingFreshFruits in MissingFreshFruits{
-	Drying.addRecipe("tfg/tfcflorae/drying/"+i, MissingFreshFruits, MissingDriedFruits[i], 12000);
+	Drying.addRecipe("tfg/tfcflorae/drying/" + i, MissingFreshFruits, MissingDriedFruits[i], 12000);
 	microwave.recipeBuilder()
 		.inputs(MissingFreshFruits)
 		.outputs(MissingDriedFruits[i])
