@@ -101,8 +101,6 @@ key_tfc.key.craft:0:NONE
 key_tfc.key.placeblock:47:NONE
 key_tfc.key.itemmode:50:NONE
 key_tfc.key.stack:45:NONE
-key_key.clienttweaks.disable_step_assist:0:NONE
-key_key.clienttweaks.hide_offhand_item:0:NONE
 key_key.craftingtweaks.rotate:0:NONE
 key_key.craftingtweaks.rotate_counter_clockwise:0:NONE
 key_key.craftingtweaks.balance:0:NONE
@@ -175,3 +173,4 @@ key_key.journeymap.fullscreen.south:208:NONE
 key_key.journeymap.fullscreen.east:205:NONE
 key_key.journeymap.fullscreen.west:203:NONE
 key_key.control:29:NONE
+key_key.craftpresence.config_keycode.name:41:NONE
