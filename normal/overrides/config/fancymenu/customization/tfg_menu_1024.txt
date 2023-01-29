@@ -11,11 +11,6 @@ customization-meta {
 }
 
 customization {
-  name = tfg_slideshows_new_year
-  action = setbackgroundslideshow
-}
-
-customization {
   action = setscale
   scale = 2
 }
@@ -136,11 +131,6 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   action = hidebutton
 }
 
