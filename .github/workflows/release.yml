@@ -80,18 +80,16 @@ jobs:
 
       - name: Archive Release Server normal
         run: |
-          cp -r ./serverfiles/* ./normal/.minecraft/
+          mv -r ./serverfiles/* ./normal/.minecraft/
           cd ./normal/.minecraft/
           mv -vf ./icon.png ./server-icon.png
-          mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
           zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
       
       - name: Archive Release Server extended
         run: |
-          cp -r ./serverfiles/* ./extended/.minecraft/
+          mv -r ./serverfiles/* ./extended/.minecraft/
           cd ./extended/.minecraft/
           mv -vf ./icon.png ./server-icon.png
-          mv -vf ./jsg-1.12.2-4.10.1.1-server.jar ./mods/
           zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
       
       - name: Upload Curseforge normal
