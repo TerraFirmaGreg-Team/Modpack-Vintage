@@ -21,6 +21,10 @@ val RemoveAndHide as IItemStack[] = [
 	<jsg:naquadah_block_raw>,
 	<jsg:naquadah_alloy>,
 	<jsg:naquadah_alloy_raw>,
+	<jsg:gear_naquadah_raw>,
+	<jsg:gear_naquadah>,
+	<jsg:plate_naquadah_raw>,
+	<jsg:plate_naquadah>,
 	// Триниум
 	<jsg:trinium_ore>,
 	<jsg:trinium_block>,
@@ -30,6 +34,7 @@ val RemoveAndHide as IItemStack[] = [
 	<jsg:trinium_raw>,
 	<jsg:trinium_dust>,
 	<jsg:trinium_nugget>,
+	<jsg:gear_trinium>,
 	// Титан
 	<jsg:titanium_ore>,
 	<jsg:titanium_block>,
@@ -39,6 +44,9 @@ val RemoveAndHide as IItemStack[] = [
 	<jsg:titanium_raw>,
 	<jsg:titanium_dust>,
 	<jsg:titanium_nugget>,
+	<jsg:gear_titanium>,
+	<jsg:plate_titanium>,
+	<jsg:plate_trinium>,
 	// Врата (Орлин)
 	<jsg:stargate_orlin_member_block>,
 	<jsg:stargate_orlin_base_block>,
@@ -47,6 +55,13 @@ val RemoveAndHide as IItemStack[] = [
 	<jsg:page_mysterious_milkyway>,
 	<jsg:page_mysterious_pegasus>,
 	<jsg:page_mysterious_universe>,
+	<jsg:crystal_control_dhd>,
+	<jsg:crystal_fragment>,
+	<jsg:wrench>.withTag({damage: 0}),
+	<jsg:screwdriver>.withTag({damage: 0}),
+	<jsg:pcb_fabricator_block>,
+	<jsg:ore_washing_machine_block>,
+	<jsg:zpm_slot_block>,
 	// <jsg:platform_rings_block>,
 	// <jsg:staff>,
 	// <jsg:zat>
@@ -58,6 +73,6 @@ for item in RemoveAndHide {
 	JEI.removeAndHide(item);
 }
 
-// recipes.removeByMod("jsg");
+recipes.removeByMod("jsg");
 
-recipes.remove(<jsg:universe_dialer>.withTag({mode: 0 as byte, saved: [], serverSideEnabledFastDial: 0 as byte, selected: 0 as byte, switchState: 1 as byte}));
+recipes.remove(<jsg:universe_dialer>.withTag({mode: 0 as byte, saved: [], serverSideEnabledFastDial: 0 as byte, selected: 0 as byte}));

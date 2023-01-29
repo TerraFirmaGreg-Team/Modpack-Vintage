@@ -933,18 +933,23 @@ for oxygenTankHeavy in oxygenTankHeavy {
 <ore:ingotTitanium>.remove(<jsg:titanium_ingot>);
 <ore:blockTitanium>.remove(<jsg:titanium_block>);
 <ore:plateTitanium>.remove(<jsg:plate_titanium>);
+<ore:gearTitanium>.remove(<jsg:gear_titanium>);
 // Триниум
 <ore:ingotTrinium>.remove(<jsg:trinium_ingot>);
 <ore:blockTrinium>.remove(<jsg:trinium_block>);
 <ore:oreTrinium>.remove(<jsg:trinium_ore>);
 <ore:plateTrinium>.remove(<jsg:plate_trinium>);
+<ore:gearTrinium>.remove(<jsg:gear_trinium>);
 // Наквадах
 <ore:ingotNaquadahRefined>.remove(<jsg:naquadah_alloy>);
 <ore:blockNaquadahRefined>.remove(<jsg:naquadah_block>);
 <ore:plateNaquadahRefined>.remove(<jsg:plate_naquadah>);
+<ore:gearNaquadahRefined>.remove(<jsg:gear_naquadah>);
 // Необработаный наквадах
 <ore:ingotNaquadahRaw>.remove(<jsg:naquadah_alloy_raw>);
 <ore:blockNaquadahRaw>.remove(<jsg:naquadah_block_raw>);
 <ore:plateNaquadahRaw>.remove(<jsg:plate_naquadah_raw>);
 <ore:oreNaquadahRaw>.remove(<jsg:naquadah_ore_stone>);
 <ore:oreNaquadahRaw>.remove(<jsg:naquadah_ore>);
+
+
