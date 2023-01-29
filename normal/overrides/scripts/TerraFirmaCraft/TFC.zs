@@ -574,10 +574,12 @@ for i, TFC_Lumber in TFC_Lumber {
 		.duration(200).EUt(7).buildAndRegister();
 	
 	saw_mill.recipeBuilder()
-		.inputs([TFC_Logs[i]])
 		.circuit(1)
+		.inputs([TFC_Logs[i]])
 		.fluidInputs([<liquid:lubricant> * 1000])
-		.outputs([TFC_Lumber * 64, <metaitem:dustWood> * 8])
+		.outputs(
+			TFC_Lumber * 64, 
+			<metaitem:dustWood> * 8)
 		.duration(450)
 		.EUt(32)
 		.buildAndRegister();
@@ -593,10 +595,12 @@ for TFC_EucaliptusLogs in TFC_EucaliptusLogs {
 		.duration(200).EUt(7).buildAndRegister();
 
 	saw_mill.recipeBuilder()
-		.inputs([TFC_EucaliptusLogs])
 		.circuit(1)
+		.inputs([TFC_EucaliptusLogs])
 		.fluidInputs([<liquid:lubricant> * 1000])
-		.outputs([<tfc:wood/lumber/eucalyptus> * 64, <metaitem:dustWood> * 8])
+		.outputs(
+			<tfc:wood/lumber/eucalyptus> * 64, 
+			<metaitem:dustWood> * 8)
 		.duration(450)
 		.EUt(32)
 		.buildAndRegister();
@@ -677,7 +681,9 @@ for i, TFC_Fence_Gates in TFC_Fence_Gates {
 // Бревна -> Забор из бревен
 for i, TFC_Fence_Log in TFC_Fence_Log {
 	assembler.recipeBuilder()
-		.inputs([TFC_Logs[i + 83] * 2, <minecraft:stick> * 3])
+		.inputs(
+			TFC_Logs[i + 83] * 2, 
+			<minecraft:stick> * 3)
 		.circuit(1)
 		.outputs(TFC_Fence_Log * 8)
 		.duration(200).EUt(7).buildAndRegister();
@@ -686,7 +692,9 @@ for i, TFC_Fence_Log in TFC_Fence_Log {
 // Бревна -> Калитка из бревен
 for i, TFC_Fence_Gates_Log in TFC_Fence_Gates_Log {
 	assembler.recipeBuilder()
-		.inputs([TFC_Logs[i] * 2, <minecraft:stick> * 3])
+		.inputs(
+			TFC_Logs[i] * 2, 
+			<minecraft:stick> * 3)
 		.circuit(2)
 		.outputs(TFC_Fence_Gates_Log * 8)
 		.duration(200).EUt(7).buildAndRegister();
@@ -1182,11 +1190,12 @@ for i, All_Seeds in All_Seeds {
 // Lumber -> dustWood
 for i, TFC_Logs in TFC_Logs {
 	saw_mill.recipeBuilder()
-		.inputs([TFC_Lumber[i]])
 		.circuit(2)
+		.inputs([TFC_Lumber[i]])
 		.fluidInputs([<liquid:lubricant> * 1000])
-		.outputs([<metaitem:dustWood> * 48])
-		.outputs([<metaitem:dustSmallWood> * 32])
+		.outputs(
+			<metaitem:dustWood> * 48,
+			<metaitem:dustSmallWood> * 32)
 		.duration(400).EUt(12).buildAndRegister();
 }
 
