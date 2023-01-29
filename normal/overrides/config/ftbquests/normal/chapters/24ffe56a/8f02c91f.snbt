@@ -11,7 +11,6 @@
 		"§aQubit CPUs§r are used in the production of §1Quantum§r Processors."
 	],
 	dependencies: [
-		"b1aa4739",
 		"2ecea6a5"
 	],
 	tasks: [{

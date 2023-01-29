@@ -18,7 +18,6 @@
 		"It does not come quite cheap though. The §dEngraved Lapotron Crystal Chips§r are worth §a8 Lapotron Crystals§r."
 	],
 	dependencies: [
-		"c94cfaf6",
 		"8b616946"
 	],
 	tasks: [{
