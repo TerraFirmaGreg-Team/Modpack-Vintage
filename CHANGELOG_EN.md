@@ -1,5 +1,48 @@
 # Changelog
 
+## [4.1.12] - 2023-01-30
+### Modpack fixes
+- Minor fixes in discord status display.
+- Correction of the recipe for buckwheat cakes.
+- Added recipes for baking cakes in GT ovens.
+- Correction of melting of cassiterite dust, reducing the output of liquid tin from cassiterite dust by half (rounding down).
+- Added recipe for Cladding in alloy smelter.
+- Added copper plate recycling recipes.
+- Correction of the conflict between copper coin and armor recipes in the forming press.
+- Correction of the quest for a steel harpoon.
+- Correction of the quest for the quiver.
+- Changed recipes for parts of the greenhouse.
+- Added thread and spindle recipes.
+- Added missing drying recipes + microwave drying.
+- Added microwave baking recipes.
+- Fixed eucalyptus barrel recipes and removed 5 euca stick recipe. boards.
+- Fixed lumber dupe.
+- Fixed stick dupe.
+- Minor changes to JSG recipes after updating the mod.
+- Added recipe for xtones lamp.
+- Changed vanilla lamp recipe in assembler.
+- Removed New Year decoration.
+- Optimization of RAM usage.
+- Correction of the opening error of the 7th Era.
+
+### Update mods
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- ArchitectureCraft - TridentMC Version
+- Craft Presence
+- Craft Tweaker
+- FancyMenu[Forge]
+- Inventory Bogo Sorter
+- JEI Utilities
+- Just Stargate Mod (Aunis: Resurrection)
+- Legendary Tooltips [Forge]
+- Little Tiles
+- Moving Elevators
+- SuperMartijn642's Core Lib
+
+### New contributors to development
+- kirilsgekiss
+
 ## [4.1.11] - 2023-01-06
 ### Fixes
 - Replaced the mod with an RPC discord.
