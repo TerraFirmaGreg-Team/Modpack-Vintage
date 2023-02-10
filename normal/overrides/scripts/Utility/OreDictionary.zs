@@ -10,6 +10,7 @@ import crafttweaker.item.IItemStack;
 // --- Добавление
 
 // Raw Igneous Intrusive Rocks To One OreDict
+/*
 for item in RawIgneousIntrusive {
 	<ore:RawIgneousIntrusive>.add(item);
 }
@@ -27,7 +28,7 @@ for item in RawMetamorphic {
 // Rock Sedimentary Rocks To One OreDict
 for item in RawSedimentary {
 	<ore:RawSedimentary>.add(item);
-}
+}*/
 
 // OreDicionary for all seeds
 for item in All_Seeds {
@@ -103,8 +104,6 @@ for item in dustFertilizerArray {
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- Удаление
-
-
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
 <ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
 <ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
@@ -313,6 +312,7 @@ for item in TFC_Saws {
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
 // Ключи
+/*
 <ore:gtce.tool.wrenches>.addItems([
     <gregtech:meta_tool:8>.withEmptyTag(),
     <gregtech:meta_tool:28>.withEmptyTag(),
@@ -368,7 +368,7 @@ for item in TFC_Saws {
 // Щипцы
 <ore:gtce.tool.tongs>.addItems([
     <tfgmod:meta_tool>.withEmptyTag()
-]);
+]);*/
 // Ящики
 <ore:gtce.block.crate>.addItems([
     <gregtech:machine:1625>,
@@ -408,11 +408,9 @@ for item in TFC_Saws {
 // Exquisite Gems from GT
 <ore:gemExquisite>.add(<gregtech:meta_gem_exquisite:*>);
 
-
-<ore:knife>.add(<metaitem:tool.knife>);
-<ore:hammer>.add(<metaitem:tool.hard_hammer>);
-<ore:saw>.add(<metaitem:tool.saw>);
-<ore:shovel>.add(<metaitem:tool.shovel>);
+<ore:knife>.add(<gregtech:knife>);
+<ore:hammer>.add(<gregtech:hammer>);
+<ore:saw>.add(<gregtech:saw>);
 
 // --- Удаление
 

@@ -45,8 +45,8 @@ var star_forge = Builder.start("star_forge", 32002)
                 .aisle("      C C      ", "     FFFFF     ", "               ", "               ", "               ", "               ", "               ", "     FFFFF     ", "      C C      ")
                 .aisle("               ", "      CSC      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      C C      ", "      CCC      ", "               ")
                 .where('M', CTPredicate.states(<metastate:gregtech:fusion_casing:3>))
-                .where('C', CTPredicate.states(<blockstate:htmltech:casing>).setMinGlobalLimited(133))
-                .where('V', CTPredicate.states(<blockstate:htmltech:casing>) | controller.autoAbilities())
+                .where('C', CTPredicate.states(<metastate:gregtech:fusion_casing:3>).setMinGlobalLimited(133)) // TODO
+                .where('V', CTPredicate.states(<metastate:gregtech:fusion_casing:3>) | controller.autoAbilities()) // tODO
                 .where('X', CTPredicate.states(<metastate:gregtech:wire_coil:5>))
                 .where('F', CTPredicate.states(<metastate:gregtech:fusion_casing>))
                 .where('S', controller.self())

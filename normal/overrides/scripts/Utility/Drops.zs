@@ -16,10 +16,6 @@ Dropt.list("tfg/dropt/florae_urn").add(Dropt.rule()
     .selector(Dropt.weight(33))
     .items([<tfc:crop/seeds/oat>, <tfc:crop/seeds/rice>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/carrot>, <tfc:crop/seeds/tomato>])
   )
-  .addDrop(Dropt.drop()
-    .selector(Dropt.weight(1))
-    .items([<gregtech:meta_tool>.withTag({"GT.ToolStats": {Material: "diamond"}})])
-  )
 );
 
 // Исправление выпадения луж

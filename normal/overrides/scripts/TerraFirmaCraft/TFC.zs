@@ -15,8 +15,6 @@ import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
-
-
 val Alabaster as IItemStack[] = [
 	<tfc:alabaster/raw/white>,
 	<tfc:alabaster/raw/orange>,
