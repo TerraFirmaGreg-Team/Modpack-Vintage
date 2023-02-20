@@ -282,9 +282,6 @@ assembler.findRecipe(7, [<minecraft:stone_slab> * 2, <ore:springIron>.firstItem]
 // Деревянный люк
 assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
 
-// Железный люк
-// assembler.findRecipe(16, [<metaitem:plateIron> * 4, <minecraft:trapdoor>], null).remove();
-
 // Сноп сена
 packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
 
@@ -464,18 +461,18 @@ assembler.findRecipe(4, [<minecraft:trapdoor:0>, <minecraft:planks:5> * 4], [<li
 assembler.findRecipe(30, [<minecraft:cobblestone:0> * 2, <metaitem:ringIron>, <metaitem:springIron> * 2, <metaitem:gearSmallIron> * 2, <metaitem:stickRedAlloy>, <minecraft:string:0>], null).remove();
 
 // Кусочки мяса
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
-// Mince Meat
-macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
-// Mince Meat
-macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
+// // Mince Meat
+// macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
+// // Mince Meat
+// macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
 
 // Гравий -> Каменная пыль, Кремний
 macerator.findRecipe(2, [<minecraft:gravel:0>], null).remove();
@@ -510,8 +507,7 @@ alloy_smelter.findRecipe(2, [<minecraft:clay_ball:0>, <metaitem:shape.mold.ingot
 // Книжные полки
 assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();
 extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
-//arc_furnace.findRecipe(30, [<minecraft:bookshelf:0>], [<liquid:oxygen>]).remove();
-//macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
+macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
 
 // Песок
 centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
@@ -570,7 +566,7 @@ assembler.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:ringIron> * 4], nul
 assembler.findRecipe(4, [<metaitem:stickIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
 
 // Железная дверь
-// assembler.findRecipe(7, [<minecraft:iron_bars:0>, <metaitem:plateIron> * 4], [<liquid:steel> * 16]).remove();
+assembler.findRecipe(7, [<minecraft:iron_bars:0>, <metaitem:plateIron> * 4], [<liquid:steel> * 16]).remove();
 
 // Ведро
 bender.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 12})], null).remove();
@@ -579,8 +575,8 @@ bender.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:circuit.integrated>.wi
 assembler.findRecipe(7, [<metaitem:stickIron>, <metaitem:gearSmallIron>, <tfc:slab/wood/maclura:0>, <chisel:cobblestone:0>], [<liquid:red_alloy> * 144]).remove();
 
 // Разбор железного люка
-//arc_furnace.findRecipe(30, [<minecraft:iron_trapdoor:0>], [<liquid:oxygen> * 56]).remove();
-//macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
+arc_furnace.findRecipe(30, [<minecraft:iron_trapdoor:0>], [<liquid:oxygen> * 56]).remove();
+macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
 // Fermented Spider Eye
 mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();

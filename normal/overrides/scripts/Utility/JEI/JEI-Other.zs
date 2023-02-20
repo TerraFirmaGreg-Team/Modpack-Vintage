@@ -13,7 +13,6 @@ val hideCategory as string[] = [
 	"appliedenergistics2.inscriber",
 	"tfcflorae.casting",
 	"ftbquests.quests",
-	"planetprogression.satellite.builder",
 	"mpestle",
 	"galacticraft.ingotcompressor",
 	"galacticraft.rocketT3",

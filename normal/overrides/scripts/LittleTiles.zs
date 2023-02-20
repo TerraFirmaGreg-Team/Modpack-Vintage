@@ -51,19 +51,19 @@ recipes.addShaped("tfg/littletiles/container", <littletiles:container>, [
 
 // Little Wrench
 recipes.addShaped("tfg/littletiles/wrench", <littletiles:wrench>, [
-	[<ore:gtce.tool.hard.hammers>, <ore:plateIronAny>, <ore:gtce.tool.files>],
+	[<ore:toolHammer>, <ore:plateIronAny>, <ore:toolFile>],
 	[null, <metaitem:stickLapis>, null],
 	[null, <metaitem:stickLapis>, null]]);
 
 // Little Hammer
 recipes.addShaped("tfg/littletiles/hammer", <littletiles:hammer>, [
 	[<ore:plateIronAny>, <ore:plateIronAny>, <ore:plateIronAny>],
-	[<ore:gtce.tool.hard.hammers>, <metaitem:stickLapis>, <ore:gtce.tool.files>],
+	[<ore:toolHammer>, <metaitem:stickLapis>, <ore:toolFile>],
 	[null, <metaitem:stickLapis>, null]]);
 
 // Little Chisel
 recipes.addShaped("tfg/littletiles/chisel", <littletiles:chisel>, [
-	[<ore:gtce.tool.hard.hammers>, <ore:plateIronAny>, <ore:gtce.tool.files>],
+	[<ore:toolHammer>, <ore:plateIronAny>, <ore:toolFile>],
 	[null, <ore:plateIronAny>, null],
 	[null, <metaitem:stickLapis>, null]]);
 

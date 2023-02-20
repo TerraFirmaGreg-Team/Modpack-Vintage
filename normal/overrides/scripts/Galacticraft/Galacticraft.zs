@@ -260,7 +260,7 @@ recipes.addShaped("tfg/gc/oxygen_concentrator", <galacticraftcore:oxygen_concent
 // Шест
 recipes.addShaped("tfg/gc/steel_pole", <galacticraftcore:steel_pole> * 2, [
    [null, <metaitem:plateDenseSteel>, null],
-   [null, <metaitem:plateDenseSteel>, <ore:gtce.tool.hard.hammers>],
+   [null, <metaitem:plateDenseSteel>, <ore:toolHammer>],
    [null, <metaitem:plateDenseSteel>, null]]);
 
 // Жидкостная капсула
@@ -384,7 +384,7 @@ recipes.addShaped("tfg/gc/shield_controller", <galacticraftplanets:basic_item_ve
 // Пустая схема
 recipes.addShaped("tfg/gc/schematic_blank", <metaitem:schematic.blank>, [
    [null, <ore:paper>, null],
-   [null, <littletiles:recipeadvanced>, <ore:gtce.tool.hard.hammers>],
+   [null, <littletiles:recipeadvanced>, <ore:toolHammer>],
    [null, <ore:paper>, null]]);
 
 // Радио-изотопное ядро

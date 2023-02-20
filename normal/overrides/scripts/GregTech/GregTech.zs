@@ -105,18 +105,18 @@ recipes.addShaped("tfg/gregtech/compressed_coke_clay", <metaitem:compressed.coke
 recipes.addShaped("tfg/gregtech/wooden_form", <metaitem:wooden_form.empty>, [
     [null, <ore:lumber>, null],
     [null, <ore:lumber>, null],
-    [<ore:gtce.tool.saws>, <ore:lumber>, null]]);
+    [<ore:toolSaw>, <ore:lumber>, null]]);
 
 // Бронзовый малый бойлер
 recipes.addShaped("tfg/gregtech/small_steam_coal_boiler", <metaitem:steam_boiler_coal_bronze>, [
     [<metaitem:plateBronze>, <metaitem:plateBronze>, <metaitem:plateBronze>],
-    [<metaitem:plateBronze>, <ore:gtce.tool.wrenches>, <metaitem:plateBronze>],
+    [<metaitem:plateBronze>, <ore:toolWrench>, <metaitem:plateBronze>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Стальной малый бойлер
 recipes.addShaped("tfg/gregtech/high_pressure_coal_boiler", <metaitem:steam_boiler_coal_steel>, [
     [<metaitem:plateSteel>, <metaitem:plateSteel>, <metaitem:plateSteel>],
-    [<metaitem:plateSteel>, <ore:gtce.tool.wrenches>, <metaitem:plateSteel>],
+    [<metaitem:plateSteel>, <ore:toolWrench>, <metaitem:plateSteel>],
     [<minecraft:brick_block>, <tfc:blast_furnace>, <minecraft:brick_block>]]);
 
 // Бронзовая паровая печь
@@ -147,7 +147,7 @@ recipes.addShaped("tfg/gregtech/multi_smelter", <metaitem:multi_furnace>, [
 recipes.addShaped("tfg/gregtech/crafting_station", <metaitem:workbench>, [
     [<ore:chestWood>, <ore:slabWood>, <ore:chestWood>],
     [<ore:plankWood>, <ore:craftingTableWood>, <ore:plankWood>],
-    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>]]);
+    [<ore:plankWood>, <ore:toolSaw>, <ore:plankWood>]]);
 
 // Обработанные доски
 recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
@@ -158,24 +158,24 @@ recipes.addShaped("tfg/gregtech/treated_wood_planks", <gregtech:planks:1>, [
 // Primitive water pump deck
 recipes.addShaped("tfg/gregtech/primitive_water_pump_deck", <gregtech:steam_casing:4> * 2, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:gtce.tool.screwdrivers>, <ore:slabCobblestone>, <ore:gtce.tool.hard.hammers>]]);
+    [<ore:toolScrewdriver>, <ore:slabCobblestone>, <ore:toolHammer>]]);
 
 // Primitive water pump hatch
 recipes.addShaped("tfg/gregtech/primitive_water_pump_hatch", <metaitem:pump_hatch>, [
-    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:gtce.tool.screwdrivers>],
+    [<ore:screwIronAny>, <ore:ringIronAny>, <ore:toolScrewdriver>],
     [<ore:plankTreatedWood>, <metaitem:pipeLargeFluidWood>, <ore:plankTreatedWood>],
     [<ore:slabCobblestone>, <ore:ringIronAny>, <ore:slabCobblestone>]]);
 
 // Primitive water pump
 recipes.addShaped("tfg/gregtech/primitive_water_pump", <metaitem:primitive_water_pump>, [
     [<ore:ringIronAny>, <metaitem:pipeNormalFluidWood>, <ore:screwIronAny>],
-    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:gtce.tool.screwdrivers>],
+    [<ore:rotorIronAny>, <ore:plankTreatedWood>, <ore:toolScrewdriver>],
     [<ore:slabCobblestone>, <metaitem:pipeLargeFluidWood>, <ore:slabCobblestone>]]);
 
 // Coke Oven
 recipes.addShaped("tfg/gregtech/coke_oven", <metaitem:coke_oven>, [
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>],
-    [<ore:plateIronAny>, <ore:gtce.tool.wrenches>, <ore:plateIronAny>],
+    [<ore:plateIronAny>, <ore:toolWrench>, <ore:plateIronAny>],
     [<gregtech:metal_casing:8>, <ore:plateIronAny>, <gregtech:metal_casing:8>]]);
 
 // Steam Miner
@@ -205,7 +205,7 @@ recipes.addShaped("tfg/gregtech/fire_bricks", <gregtech:metal_casing:1>, [
 // Quartz Sand - 1
 recipes.addShaped("tfg/gregtech/quartz_sand", <metaitem:dustQuartzSand>, [
     [null, <ore:sand>, null],
-    [null, <ore:gtce.tool.mortars>, null],
+    [null, <ore:toolMortar>, null],
     [null, null, null]]);
 
 // Steam Import Bus
@@ -223,20 +223,20 @@ recipes.addShaped("tfg/gregtech/steam_export_bus", <metaitem:steam_export_bus>, 
 // Wooden Crate
 recipes.addShaped("tfg/gregtech/wooden_crate", <metaitem:crate.wood>, [
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>],
-    [<ore:plankWood>, <ore:gtce.tool.saws>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:toolSaw>, <ore:plankWood>],
     [<ore:screwIronAny>, <ore:plankWood>, <ore:screwIronAny>]]);
 
 // Блокнот
 recipes.addShaped("tfg/gregtech/clipboard", <metaitem:clipboard>, [
-    [null, <ore:screwIronAny>, <ore:gtce.tool.screwdrivers>],
+    [null, <ore:screwIronAny>, <ore:toolScrewdriver>],
     [<ore:boltIronAny>, <metaitem:plateWood>, <ore:boltIronAny>],
     [<ore:paper>, <ore:paper>, <ore:paper>]]);
 
 // Лук
 recipes.addShaped(<minecraft:bow>, [
-    [<ore:gtce.tool.hard.hammers>, <metaitem:stickLongWood>, <ore:string>],
+    [<ore:toolHammer>, <metaitem:stickLongWood>, <ore:string>],
     [<metaitem:stickLongWood>, <ore:ringIronAny>, <ore:string>],
-    [<ore:gtce.tool.files>, <metaitem:stickLongWood>, <ore:string>]]);
+    [<ore:toolFile>, <metaitem:stickLongWood>, <ore:string>]]);
 
 // Чаровалка
 macerator.recipeBuilder()
@@ -253,7 +253,7 @@ assembler.recipeBuilder()
 // Extruder Shape (Sense Head)
 recipes.addShaped(<metaitem:shape.extruder.sense>, [
     [null, null, null],
-    [<ore:gtce.tool.hard.hammers>, <metaitem:shape.extruder.plate>, null],
+    [<ore:toolHammer>, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
@@ -262,14 +262,14 @@ forming_press.recipeBuilder()
     .duration(120).EUt(22).buildAndRegister();
 
 // Mold (Knife Head)
-recipes.addShaped(<metaitem:shape.extruder.knife>, [
-    [null, <ore:gtce.tool.hard.hammers>, <metaitem:shape.empty>],
+recipes.addShaped(<metaitem:shape.mold.knife>, [
+    [null, <ore:toolHammer>, <metaitem:shape.empty>],
     [null, null, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
     .inputs(<metaitem:shape.empty>)
-    .notConsumable(<metaitem:shape.extruder.knife>)
-    .outputs(<metaitem:shape.extruder.knife>)
+    .notConsumable(<metaitem:shape.mold.knife>)
+    .outputs(<metaitem:shape.mold.knife>)
     .duration(120).EUt(22).buildAndRegister();
 
 // Растительное масло
@@ -434,7 +434,7 @@ chemical_reactor.recipeBuilder()
     .duration(700).EUt(2000).buildAndRegister(); 
 
 // Ступка + Гравий -> Кремений
-recipes.addShapeless(<minecraft:flint>, [<ore:gtce.tool.mortars>, <ore:gravel>]);
+recipes.addShapeless(<minecraft:flint>, [<ore:toolMortar>, <ore:gravel>]);
 
 // Бронзовая пыль в TFC стиле
 recipes.addShapeless(<metaitem:dustBronze> * 9, [<metaitem:dustTin>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>, <metaitem:dustCopper>]);
@@ -444,7 +444,7 @@ recipes.addShapeless(<metaitem:dustBronze> * 9, [<metaitem:dustTin>, <metaitem:d
 // Крафт бумажной пыли
     recipes.addShaped(<metaitem:dustPaper> * 2,
     [[<tfc:food/sugarcane>, <tfc:food/sugarcane>, <tfc:food/sugarcane>],
-    [null, <ore:gtce.tool.mortars>, null]]);
+    [null, <ore:toolMortar>, null]]);
 
 // Крафт бумаги из пыли
 recipes.addShaped(<ore:paper>.firstItem * 2,

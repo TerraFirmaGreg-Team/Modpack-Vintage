@@ -11,8 +11,8 @@ recipes.removeByMod("catwalks");
 // Blowtorch
 recipes.addShaped("tfg/catwalks/blowtorch", <catwalks:blowtorch>, [
     [null, <metaitem:screwSteel>, <minecraft:flint_and_steel>],
-    [<ore:gtce.tool.screwdrivers>, <metaitem:stickLongSteel>, <metaitem:screwSteel>],
-    [<metaitem:stickLongSteel>, <ore:gtce.tool.wrenches>, null]]);
+    [<ore:toolScrewdriver>, <metaitem:stickLongSteel>, <metaitem:screwSteel>],
+    [<metaitem:stickLongSteel>, <ore:toolWrench>, null]]);
 
 // Раскрафты по НБТ
 recipes.addShapeless("tfg/catwalks/catwalk/treated_wood", <catwalks:catwalk>.withTag({material: "treated_wood"}), [<catwalks:catwalk>.withTag({material: "custom_0"})]);

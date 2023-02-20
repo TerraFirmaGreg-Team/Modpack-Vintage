@@ -6,13 +6,13 @@ import crafttweaker.item.IItemStack;
 recipes.addShaped("tfg/weather2/anemometer", <weather2:anemometer>, [
     [<ore:screwIronAny>, <ore:gearIronAny>, <ore:screwIronAny>],
     [null, <ore:stickLongIronAny>, null],
-    [<ore:screwIronAny>, <ore:gtce.tool.screwdrivers>, <ore:screwIronAny>]]);
+    [<ore:screwIronAny>, <ore:toolScrewdriver>, <ore:screwIronAny>]]);
 
 // Флюгер
 recipes.addShaped("tfg/weather2/wind_vane", <weather2:wind_vane>, [
     [<ore:stickLongIronAny>, <ore:gearIronAny>, <ore:stickLongIronAny>],
     [null, <ore:stickLongIronAny>, null],
-    [<ore:screwIronAny>, <ore:gtce.tool.screwdrivers>, <ore:screwIronAny>]]);
+    [<ore:screwIronAny>, <ore:toolScrewdriver>, <ore:screwIronAny>]]);
 
 // Датчик торнадо
 assembler.recipeBuilder()
