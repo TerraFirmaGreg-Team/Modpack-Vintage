@@ -281,7 +281,7 @@ packer.recipeBuilder()
 
 // Сетевой инструмент
 recipes.addShaped("tfg/ae2/network_tool", <appliedenergistics2:network_tool>, [
-  [<ore:gtce.tool.wrenches>, <ore:circuitLv>],
+  [<ore:toolWrench>, <ore:circuitLv>],
   [<appliedenergistics2:material:23>, <ore:itemIlluminatedPanel>]]);
 
 // Wireless Access Point
@@ -1201,8 +1201,8 @@ assembler.recipeBuilder()
 
 // Charged Stuff
 recipes.addShaped("tfg/ae2/charged_staff", <appliedenergistics2:charged_staff>, [
-  [null, <ore:gtce.tool.hard.hammers>, <appliedenergistics2:material:1>],
-  [null, <ore:stickIronAny>, <ore:gtce.tool.files>],
+  [null, <ore:toolHammer>, <appliedenergistics2:material:1>],
+  [null, <ore:stickIronAny>, <ore:toolFile>],
   [<ore:stickIronAny>, null, null]]);
 
 // Датчик жидкостного уровня
@@ -1499,49 +1499,49 @@ recipes.addShaped("tfg/ae2/planes_formation", <appliedenergistics2:part:320>, [
 
 // ME Terminal
 recipes.addShaped("tfg/ae2/terminals", <appliedenergistics2:part:380>, [
-  [<ore:gtce.tool.screwdrivers>, <ore:itemIlluminatedPanel>, <ore:gtce.tool.soft.hammers>],
+  [<ore:toolScrewdriver>, <ore:itemIlluminatedPanel>, <ore:toolMallet>],
   [<metaitem:stickSteel>, <ore:circuitHv>, <metaitem:stickSteel>],
   [<metaitem:plateSteel>,  <metaitem:screwSteel>, <metaitem:plateSteel>]]);
 
 // ME Fluid Terminal
 recipes.addShaped("tfg/ae2/terminals_fluid", <appliedenergistics2:part:520>, [
-  [<ore:gtce.tool.screwdrivers>, <ore:itemIlluminatedPanel>, <ore:gtce.tool.soft.hammers>],
+  [<ore:toolScrewdriver>, <ore:itemIlluminatedPanel>, <ore:toolMallet>],
   [<metaitem:stickStainlessSteel>, <ore:circuitHv>, <metaitem:stickStainlessSteel>],
   [<metaitem:plateStainlessSteel>,  <metaitem:screwStainlessSteel>, <metaitem:plateStainlessSteel>]]);
 
 // ME Crafting Terminal
 recipes.addShaped("tfg/ae2/terminals_crafting", <appliedenergistics2:part:360>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:380>, <ore:toolMallet>],
     [<metaitem:screwSteel>, <ore:workbench>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Interface Terminal
 recipes.addShaped("tfg/ae2/terminals_interface", <appliedenergistics2:part:480>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:380>, <ore:toolMallet>],
     [<metaitem:screwSteel>, <ore:ae2.interface.item>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Pattern Terminal
 recipes.addShaped("tfg/ae2/terminals_pattern", <appliedenergistics2:part:340>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:380>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:380>, <ore:toolMallet>],
     [<metaitem:screwSteel>, <appliedenergistics2:material:52>, <metaitem:screwSteel>],
     [<metaitem:plateSteel>, <appliedenergistics2:material:24>, <metaitem:plateSteel>]]);
 
 // ME Extanded Pattern Terminal
 recipes.addShaped("tfg/ae2/terminals_extended_pattern", <appliedenergistics2:part:341>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:340>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:340>, <ore:toolMallet>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:52>, <metaitem:plateTitanium>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:24>, <metaitem:plateTitanium>]]);
 
 // МЭ Терминал жидкостной конфигурации интерфейсов
 recipes.addShaped("tfg/ae2/terminals_conf_interface_fluid", <appliedenergistics2:part:522>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:480>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:480>, <ore:toolMallet>],
     [<metaitem:stickTitanium>, <appliedenergistics2:part:520>, <metaitem:stickTitanium>],
     [<metaitem:plateTitanium>, <metaitem:screwTitanium>, <metaitem:plateTitanium>]]);
 
 // МЭ Терминал конфигурации интерфейсов
 recipes.addShaped("tfg/ae2/terminals_conf_interface", <appliedenergistics2:part:521>, [
-    [<ore:gtce.tool.screwdrivers>, <appliedenergistics2:part:480>, <ore:gtce.tool.soft.hammers>],
+    [<ore:toolScrewdriver>, <appliedenergistics2:part:480>, <ore:toolMallet>],
     [<metaitem:stickTitanium>, <appliedenergistics2:part:380>, <metaitem:stickTitanium>],
     [<metaitem:plateTitanium>, <metaitem:screwTitanium>, <metaitem:plateTitanium>]]);
 

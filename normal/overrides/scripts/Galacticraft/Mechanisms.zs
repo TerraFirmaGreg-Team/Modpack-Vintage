@@ -195,14 +195,11 @@ recipes.addShaped("tfg/gc/machine/oxygen_collector", <galacticraftcore:collector
    [<metaitem:drum.stainless_steel>, <galacticraftcore:oxygen_concentrator>, <metaitem:drum.stainless_steel>]]);
 
 
-// TODO
 // Лазерная турель
-/*
 assembly_line.recipeBuilder()
    .inputs(
-      <metaitem:laserKrypton>,  
-      <metaitem:laserKrypton>,
-      <htmltech:laser_pipe_normal>,
+      <jsg:beamer_crystal_laser>,  
+      <jsg:beamer_crystal_laser>,
       <galacticraftcore:space_glass_clear> * 6, 
       <metaitem:hull.luv>,
       <metaitem:sensor.luv> * 2,
@@ -212,4 +209,3 @@ assembly_line.recipeBuilder()
       <liquid:molten.hssg> * 1432)
    .outputs(<galacticraftplanets:laser_turret>)
    .duration(1800).EUt(18100).buildAndRegister();
-*/
