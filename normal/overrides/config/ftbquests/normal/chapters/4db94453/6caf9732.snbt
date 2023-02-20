@@ -1,6 +1,6 @@
 {
 	x: 8.0d,
-	y: 6.0d,
+	y: 7.0d,
 	shape: "circle",
 	dependencies: [
 		"ba62aee7"
@@ -9,9 +9,10 @@
 		uid: "c4d68778",
 		type: "item",
 		items: [{
-			id: "wct:wct",
+			id: "appliedenergistics2:wireless_crafting_terminal",
 			tag: {
-				InfinityEnergy: 0
+				internalCurrentPower: 1600000.0d,
+				internalMaxPower: 1600000.0d
 			}
 		}],
 		ignore_damage: true,

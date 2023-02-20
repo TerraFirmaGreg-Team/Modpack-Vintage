@@ -17,16 +17,19 @@
 		uid: "cb1ef3f1",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:chisel",
 			tag: {
-				display: {
-					Name: "Any chisel"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "chisel"
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					Chisel: 1b
 				}
 			}
 		}],

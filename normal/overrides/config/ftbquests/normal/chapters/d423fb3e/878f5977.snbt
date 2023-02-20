@@ -16,13 +16,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any craftingToolPlunger"
+					Name: "Any toolPlunger"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "craftingToolPlunger"
+					data: "toolPlunger"
 				}
 			}
 		}],

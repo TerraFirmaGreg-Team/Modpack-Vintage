@@ -1,5 +1,5 @@
 {
-	x: -19.5d,
+	x: -19.75d,
 	y: -4.0d,
 	description: "{tfg.quests.primitive.tongs.subtitle}",
 	text: [
@@ -12,11 +12,16 @@
 		uid: "3a219f78",
 		type: "item",
 		items: [{
-			id: "tfgmod:meta_tool",
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					MaxDurability: 460,
-					Material: "wood"
+				display: {
+					Name: "Any craftingToolTongs"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolTongs"
 				}
 			}
 		}]

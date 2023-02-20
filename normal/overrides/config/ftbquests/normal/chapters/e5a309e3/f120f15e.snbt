@@ -1,8 +1,8 @@
 {
 	title: "{tfg.quests.hv.nanomuscle.title}",
 	icon: "gregtech:gt_armor 1 21",
-	x: -8.0d,
-	y: 3.5d,
+	x: -6.5d,
+	y: 2.0d,
 	description: "{tfg.quests.hv.nanomuscle.subtitle}",
 	text: [
 		"{tfg.quests.hv.nanomuscle.desc1}",

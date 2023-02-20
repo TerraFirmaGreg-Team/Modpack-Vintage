@@ -1,6 +1,6 @@
 {
 	x: 8.0d,
-	y: 7.0d,
+	y: 8.0d,
 	shape: "circle",
 	dependencies: [
 		"ba62aee7"
@@ -9,9 +9,10 @@
 		uid: "406bf6cf",
 		type: "item",
 		items: [{
-			id: "wft:wft",
+			id: "appliedenergistics2:wireless_fluid_terminal",
 			tag: {
-				InfinityEnergy: 0
+				internalCurrentPower: 1600000.0d,
+				internalMaxPower: 1600000.0d
 			}
 		}],
 		ignore_damage: true,

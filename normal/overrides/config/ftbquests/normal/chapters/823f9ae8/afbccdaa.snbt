@@ -13,12 +13,18 @@
 		uid: "c3d97cc4",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 9s,
+			id: "gregtech:file",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		}],
 		ignore_damage: true,

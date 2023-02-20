@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_prospect_head.title}",
-	x: -20.25d,
+	x: -20.75d,
 	y: -5.5d,
 	description: "{tfg.quests.primitive.copper_prospect_head.subtitle}",
 	dependencies: [
@@ -10,18 +10,7 @@
 		uid: "e58aa9b4",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any propickHead"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "propickHead"
-				}
-			}
+			item: "gregtech:meta_tool_head_propick 1 25"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

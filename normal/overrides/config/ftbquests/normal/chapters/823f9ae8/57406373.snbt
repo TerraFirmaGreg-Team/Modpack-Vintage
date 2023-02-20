@@ -18,7 +18,7 @@
 			}
 		}
 	},
-	x: -22.5d,
+	x: -23.0d,
 	y: -4.0d,
 	shape: "diamond",
 	description: "{tfg.quests.primitive.copper.subtitle}",

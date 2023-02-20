@@ -13,11 +13,16 @@
 		uid: "b57f2362",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 19s,
+			id: "itemfilters:filter",
 			tag: {
-				GT.ToolStats: {
-					Material: "any"
+				display: {
+					Name: "Any toolMiningHammer"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "toolMiningHammer"
 				}
 			}
 		}],

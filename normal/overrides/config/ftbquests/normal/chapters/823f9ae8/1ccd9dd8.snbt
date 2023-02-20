@@ -11,13 +11,24 @@
 		uid: "826458f4",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 5s,
+			id: "gregtech:saw",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 1.0f,
+					AttackSpeed: -2.6f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					HarvestIce: 1b
 				}
 			}
-		}]
+		}],
+		consume_items: false,
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

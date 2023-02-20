@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = tfg_slideshows_new_year
+  name = tfg_slideshowse_menu
   action = setbackgroundslideshow
 }
 

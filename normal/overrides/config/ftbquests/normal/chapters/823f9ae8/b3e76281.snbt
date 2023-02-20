@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.primitive.copper_prospect.title}",
-	x: -20.25d,
+	x: -20.75d,
 	y: -7.25d,
 	description: "{tfg.quests.primitive.copper_prospect.subtitle}",
 	text: [
@@ -19,16 +19,19 @@
 		uid: "2d8031a3",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:propick",
 			tag: {
-				display: {
-					Name: "Any propick"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "propick"
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					Prospector: 1b
 				}
 			}
 		}],

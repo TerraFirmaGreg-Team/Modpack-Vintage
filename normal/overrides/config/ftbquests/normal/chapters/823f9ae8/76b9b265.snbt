@@ -10,18 +10,7 @@
 		uid: "100e12ef",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any chiselHead"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "chiselHead"
-				}
-			}
+			item: "gregtech:meta_tool_head_chisel 1 25"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

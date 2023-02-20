@@ -12,14 +12,25 @@
 		uid: "c8217178",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 1s,
+			id: "gregtech:pickaxe",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					ToolSpeed: 7.0f,
+					HarvestLevel: 2,
+					AttackDamage: 3.0f,
+					AttackSpeed: -2.8f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					TorchPlacing: 1b
 				}
 			}
 		}],
-		ignore_nbt: 2b
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

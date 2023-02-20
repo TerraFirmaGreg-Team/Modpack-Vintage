@@ -10,12 +10,18 @@
 		uid: "b0371eaa",
 		type: "item",
 		items: [{
-			id: "gregtech:meta_tool",
-			Damage: 15s,
+			id: "gregtech:knife",
 			tag: {
-				GT.ToolStats: {
-					Material: "copper"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 2.0f,
+					AttackSpeed: 3.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		}],
 		ignore_damage: true,

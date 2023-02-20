@@ -1,15 +1,5 @@
 {
 	title: "{tfg.quests.lv.drillin.title}",
-	icon: {
-		id: "gregtech:meta_tool",
-		Damage: 20s,
-		tag: {
-			Charge: 100000L,
-			GT.ToolStats: {
-				Material: "neutronium"
-			}
-		}
-	},
 	x: 10.0d,
 	y: 14.0d,
 	description: "{tfg.quests.lv.drillin.subtitle}",
@@ -30,17 +20,30 @@
 		uid: "47d75781",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:drill_lv",
 			tag: {
-				display: {
-					Name: "Any craftingToolMiningDrill"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolMiningDrill"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "iron",
+					MaxDurability: 37632,
+					Durability: 0,
+					ToolSpeed: 8.0f,
+					HarvestLevel: 2,
+					AttackDamage: 3.0f,
+					AttackSpeed: -3.2f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					TorchPlacing: 1b,
+					MaxAoEColumn: 1,
+					MaxAoERow: 1,
+					MaxAoELayer: 0,
+					AoEColumn: 1,
+					AoERow: 1,
+					AoELayer: 0
+				},
+				MaxCharge: 2147483647L,
+				Charge: 2147483647L
 			}
 		}],
 		ignore_nbt: 1b

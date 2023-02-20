@@ -1,14 +1,14 @@
 {
-	x: -9.5d,
-	y: 3.0d,
+	x: -19.75d,
+	y: -5.5d,
 	dependencies: [
-		"353a87ae"
+		"1a30f24f"
 	],
 	tasks: [{
-		uid: "bdf21d0c",
+		uid: "6512ae81",
 		type: "item",
 		items: [{
-			item: "mechtech:meta_item 1 1000"
+			item: "gregtech:meta_tool_head_axe 1 25"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -7,8 +7,8 @@
 			Charge: 6400000L
 		}
 	},
-	x: -6.5d,
-	y: 3.5d,
+	x: -3.75d,
+	y: 2.0d,
 	shape: "circle",
 	description: "{tfg.quests.hv.superbattery.subtitle}",
 	text: [

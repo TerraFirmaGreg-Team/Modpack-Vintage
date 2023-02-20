@@ -10,10 +10,9 @@
 		uid: "5bc70ff5",
 		type: "item",
 		items: [{
-			id: "wct:magnet_card",
-			tag: {
-				MagnetMode: 0
-			}
+			id: "appliedenergistics2:material",
+			Damage: 60s,
+			tag: {}
 		}]
 	}]
 }
