@@ -66,6 +66,8 @@ val RemoveAndHide as IItemStack[] = [
 	<metaitem:dustFireclay>,
 	<metaitem:dustSmallFireclay>,
 	<metaitem:dustTinyFireclay>,
+	// Wooden Barrel
+	<metaitem:drum.wood>,
 	// Nether dust
 	<metaitem:dustNetherrack>,
 	<metaitem:dustSmallNetherrack>,
@@ -176,14 +178,23 @@ for item in RemoveRecipesByName {
    recipes.removeByRecipeName(item);
 }
 
+// Разбор бочки
+// macerator.findRecipe(2, [<metaitem:drum.wood>], null).remove();
+// arc_furnace.findRecipe(30, [<metaitem:drum.wood>], [<liquid:oxygen> * 59]).remove();
+
 // Разбор ведра из синей стали
 macerator.findRecipe(2, [<minecraft:bucket:0>], null).remove();
-
+// arc_furnace.findRecipe(30, [<minecraft:bucket:0>], [<liquid:oxygen> * 56]).remove();
 
 // Diamond Horse Armor -> 8x Diamond Dust
 macerator.findRecipe(2, [<minecraft:diamond_horse_armor:0>], null).remove();
 // Gold Horse Armor -> 8x Gold Dust
 macerator.findRecipe(2, [<minecraft:golden_horse_armor:0>], null).remove();
+// Gold Horse Armor -> 8x Gold Ingot
+//arc_furnace.findRecipe(30, [<minecraft:golden_horse_armor:0>], [<liquid:oxygen> * 196]).remove();
+
+// Деревянный ящик
+//assembler.findRecipe(16, [<metaitem:plateWood> * 4, <metaitem:screwIron> * 4, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
 // Чаровалка
 macerator.findRecipe(2, [<minecraft:enchanting_table:0>], null).remove();

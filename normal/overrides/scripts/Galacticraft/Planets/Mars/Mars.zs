@@ -112,6 +112,6 @@ implosion_compressor.recipeBuilder()
 
 // Палка Дэш
 recipes.addShaped("tfg/gc/desh_stick", <galacticraftplanets:item_basic_mars:1>, [
-   [<ore:toolFile>, null, null],
+   [<ore:gtce.tool.files>, null, null],
    [null, <galacticraftplanets:item_basic_mars:2>, null],
    [null, null, null]]);

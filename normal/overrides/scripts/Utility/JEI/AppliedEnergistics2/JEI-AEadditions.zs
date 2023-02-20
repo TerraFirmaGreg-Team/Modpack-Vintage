@@ -14,10 +14,6 @@ val RemoveAndHide as IItemStack[] = [
 	<aeadditions:part.base:2>
 ];
 
-val ItemsToRemove as IItemStack[] = [
-   <aenetvistool:net_visualizer>
-];
-
 
 // --- Удаление рецептов
 
@@ -25,10 +21,4 @@ for item in RemoveAndHide {
 	JEI.removeAndHide(item);
 }
 
-for item in ItemsToRemove{
-   recipes.remove(item);
-}
-
 recipes.removeByMod("aeadditions");
-recipes.removeByMod("ae2fc");
-recipes.removeByMod("extracpus");

@@ -223,6 +223,7 @@ star_forge.recipeBuilder()
 	.inputs(
 		<metaitem:gearNaquadahAlloy> * 2,
 		<gregtech:transparent_casing>,
+		//<metaitem:htmltech:laser_input_hatch.uv>, // todo
 		<jsg:circuit_control_naquadah>, 
 		<jsg:crystal_red>, 
 		<jsg:crystal_blue>)

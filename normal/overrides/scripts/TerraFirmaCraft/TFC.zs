@@ -15,8 +15,6 @@ import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.LeatherKnapping;
 
 // --- Массивы
-
-
 val Alabaster as IItemStack[] = [
 	<tfc:alabaster/raw/white>,
 	<tfc:alabaster/raw/orange>,
@@ -318,10 +316,10 @@ Barrel.addRecipe("tfg/tfc/alabaster", <metaitem:dustGypsum> * 2, <liquid:limewat
 Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> * 2);
 
 // Фикс палок из люмбера
-recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:toolSaw>]);
+recipes.addShapeless("tfg/tfc/stick_from_lumber", <minecraft:stick> * 6, [<ore:lumber>, <ore:gtce.tool.saws>]);
 
 // Alabaster Bricks
-recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:toolFile>]);
+recipes.addShapeless("tfg/tfc/alabaster_bricks", <tfc:alabaster_brick> * 4, [<metaitem:dustGypsum>, <ore:gtce.tool.files>]);
 
 // Cladding
 alloy_smelter.recipeBuilder()

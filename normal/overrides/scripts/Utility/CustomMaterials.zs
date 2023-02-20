@@ -39,7 +39,6 @@ import mods.gregtech.material.Material;
 // Другое
 <material:salt_water>.setMaterialRGB(0xFF1F5099);
 <material:glowstone>.setFormula("Au(Si(FeS2)5(CrAl2O3)Hg3)", true);
-// <material:copper>.addTools(7, 1, 85);
 <material:red_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
 <material:blue_steel>.addFlags("generate_long_rod", "generate_bolt_screw");
 <material:black_steel>.addFlags("generate_long_rod", "generate_dense", "generate_bolt_screw");
@@ -83,14 +82,6 @@ import mods.gregtech.material.Material;
 <material:trinium>.addFlags("generate_dense");
 <material:rhodium_plated_palladium>.addFlags("generate_foil");
 <material:darmstadtium>.addFlags("generate_foil");
-
-
-// --- Исправление прочности и скорости копки для большего соответствия TFC
-for material in MaterialRegistry.getAllMaterials() {
-    if (material.hasTools()) {
-        material.setToolStats(material.toolSpeed * 2, material.toolAttackDamage, material.toolDurability * 7);
-    }
-}
 
 // --- Новые материалы
 
@@ -167,77 +158,6 @@ var meteoricIron = MaterialBuilder(32055, "meteoric_iron")
     .color(0x40311d)
     .flags(["generate_plate", "generate_dense"])
     .build();
-
-// - Породы Земли
-
-// // Breccia
-// MaterialBuilder(32100, "breccia").dust().color(0x706B5F).build();
-
-// // Catlinite
-// MaterialBuilder(32101, "catlinite").dust().color(0xB46C62).build();
-
-// // Chalk
-// MaterialBuilder(32102, "chalk").dust().color(0xA4A39F).build();
-
-// // Chert
-// MaterialBuilder(32103, "chert").dust().color(0x7A6756).build();
-
-// // Claystone
-// MaterialBuilder(32104, "claystone").dust().color(0xAF9377).build();
-
-// // Conglomerate
-// MaterialBuilder(32105, "conglomerate").dust().color(0xA3977F).build();
-
-// // Dacite
-// MaterialBuilder(32106, "dacite").dust().color(0x979797).build();
-
-// // Dolomite
-// MaterialBuilder(32107, "dolomite").dust().color(0x515155).build();
-
-// // Gabbro
-// MaterialBuilder(32108, "gabbro").dust().color(0x7F8081).build();
-
-// // Gneiss
-// MaterialBuilder(32109, "gneiss").dust().color(0x6A6D60).build();
-
-// // Komatiite
-// MaterialBuilder(32110, "komatiite").dust().color(0x586455).build();
-
-// // Limestone
-// MaterialBuilder(32111, "limestone").dust().color(0xA09885).build();
-
-// // Mudstone
-// MaterialBuilder(32112, "mudstone").dust().color(0x938E84).build();
-
-// // Novaculite
-// MaterialBuilder(32113, "novaculite").dust().color(0xADA9A1).build();
-
-// // Peridotite
-// MaterialBuilder(32114, "peridotite").dust().color(0x565F56).build();
-
-// // Phyllite
-// MaterialBuilder(32115, "phyllite").dust().color(0x706B69).build();
-
-// // Porphyry
-// MaterialBuilder(32116, "porphyry").dust().color(0x422825).build();
-
-// // Rhyolite
-// MaterialBuilder(32117, "rhyolite").dust().color(0x726D69).build();
-
-// // Sandstone
-// MaterialBuilder(32118, "sandstone").dust().color(0xBAAE90).build();
-
-// // Schist
-// MaterialBuilder(32119, "schist").dust().color(0x6E735C).build();
-
-// // Shale
-// MaterialBuilder(32120, "shale").dust().color(0x686567).build();
-
-// // Siltstone
-// MaterialBuilder(32121, "siltstone").dust().color(0xA98D79).build();
-
-// // Slate
-// MaterialBuilder(32122, "slate").dust().color(0x989287).build();
 
 // - Породы планет
 

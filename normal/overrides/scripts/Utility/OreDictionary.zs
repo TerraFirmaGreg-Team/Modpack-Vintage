@@ -10,6 +10,7 @@ import crafttweaker.item.IItemStack;
 // --- Добавление
 
 // Raw Igneous Intrusive Rocks To One OreDict
+/*
 for item in RawIgneousIntrusive {
 	<ore:RawIgneousIntrusive>.add(item);
 }
@@ -27,7 +28,7 @@ for item in RawMetamorphic {
 // Rock Sedimentary Rocks To One OreDict
 for item in RawSedimentary {
 	<ore:RawSedimentary>.add(item);
-}
+}*/
 
 // OreDicionary for all seeds
 for item in All_Seeds {
@@ -103,8 +104,6 @@ for item in dustFertilizerArray {
 <ore:sheetDoubleAnyBronze>.add(<metaitem:plateDoubleBronze>, <metaitem:plateDoubleBlackBronze>, <metaitem:plateDoubleBismuthBronze>);
 
 // --- Удаление
-
-
 <ore:gemDiamond>.remove(<tfc:gem/diamond:2>);
 <ore:gemLapis>.remove(<tfc:ore/lapis_lazuli>);
 <ore:gemEmerald>.remove(<tfc:gem/emerald:2>);
@@ -312,6 +311,64 @@ for item in TFC_Saws {
 // --- Добавление
 <ore:damageTypeSlashing>.addAll(<ore:craftingToolSword>);
 
+// Ключи
+/*
+<ore:gtce.tool.wrenches>.addItems([
+    <gregtech:meta_tool:8>.withEmptyTag(),
+    <gregtech:meta_tool:28>.withEmptyTag(),
+    <gregtech:meta_tool:29>.withEmptyTag(),
+    <gregtech:meta_tool:30>.withEmptyTag()
+]);
+// Отвертки
+<ore:gtce.tool.screwdrivers>.addItems([
+    <gregtech:meta_tool:11>.withEmptyTag(),
+    <gregtech:meta_tool:31>.withEmptyTag()
+]);
+// Молоты
+<ore:gtce.tool.hard.hammers>.addItems([
+    <gregtech:meta_tool:6>.withEmptyTag()
+]);
+// Пилы
+<ore:gtce.tool.saws>.addItems([
+    <gregtech:meta_tool:5>.withEmptyTag(),
+    <gregtech:meta_tool:25>.withEmptyTag(),
+    <gregtech:meta_tool:26>.withEmptyTag(),
+    <gregtech:meta_tool:27>.withEmptyTag(),
+    <gregtech:meta_tool:32>.withEmptyTag()
+]);
+// Напильники
+<ore:gtce.tool.files>.addItems([
+    <gregtech:meta_tool:9>.withEmptyTag()
+]);
+// Кусачки
+<ore:gtce.tool.cutters>.addItems([
+    <gregtech:meta_tool:13>.withEmptyTag()
+]);
+// Киянки
+<ore:gtce.tool.soft.hammers>.addItems([
+    <gregtech:meta_tool:7>.withEmptyTag()
+]);
+// Ступки
+<ore:gtce.tool.mortars>.addItems([
+    <gregtech:meta_tool:12>.withEmptyTag()
+]);
+// Лопаты
+<ore:gtce.tool.shovels>.addItems([
+    <gregtech:meta_tool:2>.withEmptyTag()
+]);
+// Ножи
+<ore:gtce.tool.knife>.addItems([
+    <gregtech:meta_tool:15>.withEmptyTag(),
+    <gregtechfoodoption:gtfo_meta_tool:1>.withEmptyTag()
+]);
+// Скалки
+<ore:gtce.tool.rolling.pins>.addItems([
+    <gregtechfoodoption:gtfo_meta_tool>.withEmptyTag()
+]);
+// Щипцы
+<ore:gtce.tool.tongs>.addItems([
+    <tfgmod:meta_tool>.withEmptyTag()
+]);*/
 // Ящики
 <ore:gtce.block.crate>.addItems([
     <gregtech:machine:1625>,
@@ -350,6 +407,10 @@ for item in TFC_Saws {
 <ore:gemFlawless>.add(<gregtech:meta_gem_flawless:*>);
 // Exquisite Gems from GT
 <ore:gemExquisite>.add(<gregtech:meta_gem_exquisite:*>);
+
+<ore:knife>.add(<gregtech:knife>);
+<ore:hammer>.add(<gregtech:hammer>);
+<ore:saw>.add(<gregtech:saw>);
 
 // --- Удаление
 

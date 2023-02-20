@@ -32,20 +32,21 @@ for item in RemoveItemRecipesByName{
 }
 
 // Отключение переработки кремниевых инструментов
-macerator.findRecipe(2, [<metaitem:toolHeadSwordFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadPickaxeFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadShovelFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadAxeFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadHoeFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadHammerFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadSwordFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadPickaxeFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadShovelFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadAxeFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadHoeFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadHammerFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
+//macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
 
 // --- Добавление рецептов
 
 // Щипцы из дерева
-recipes.addShaped("tfg/gt/tongs_wood", <gregtech:tongs>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), 
+/*
+recipes.addShaped("tfg/gt/tongs_wood", <tfgmod:meta_tool>.withTag({"GT.ToolStats": {Material: "wood", MaxDurability: 460}}), 
     [[null, <ore:stickWood>], 
-    [<ore:stickWood>, <ore:string>]]);
+    [<ore:stickWood>, <ore:string>]]);*/

@@ -11,27 +11,27 @@ recipes.addShaped("tfg/chisel/auto_chisel", <chisel:auto_chisel>, [
 
 // Эндер палка смещения
 recipes.addShaped("tfg/chisel/offsettool", <chisel:offsettool>, [
-	[<metaitem:plateIron>, <minecraft:ender_eye>, <ore:toolKnife>],
+	[<metaitem:plateIron>, <minecraft:ender_eye>, <ore:gtce.tool.knife>],
 	[<minecraft:stick>, <metaitem:plateIron>, null],
-	[<ore:toolHammer>, null, null]]);
+	[<ore:gtce.tool.hard.hammers>, null, null]]);
 
 // Железная стамеска
 recipes.addShaped("tfg/chisel/chisel_iron", <chisel:chisel_iron>, [
-	[<ore:toolFile>, <ore:plateIronAny>, <ore:plateIronAny>],
+	[<ore:gtce.tool.files>, <ore:plateIronAny>, <ore:plateIronAny>],
 	[null, <metaitem:screwSteel>, <ore:plateIronAny>],
-	[<metaitem:stickBronze>, null, <ore:toolHammer>]]);
+	[<metaitem:stickBronze>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Алмазная стамеска
 recipes.addShaped("tfg/chisel/chisel_diamond", <chisel:chisel_diamond>, [
-	[<ore:toolFile>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
+	[<ore:gtce.tool.files>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
 	[null, <chisel:chisel_iron>, <metaitem:plateDiamond>],
-	[<metaitem:stickRoseGold>, null, <ore:toolHammer>]]);
+	[<metaitem:stickRoseGold>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Современная стамеска
 recipes.addShaped("tfg/chisel/chisel_hitech", <chisel:chisel_hitech>, [
-	[<ore:toolFile>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
+	[<ore:gtce.tool.files>, <metaitem:plateDiamond>, <metaitem:plateDiamond>],
 	[null, <chisel:chisel_diamond>, <metaitem:plateDiamond>],
-	[<metaitem:stickStainlessSteel>, null, <ore:toolHammer>]]);
+	[<metaitem:stickStainlessSteel>, null, <ore:gtce.tool.hard.hammers>]]);
 
 // Лабораторный блок
 recipes.addShaped("tfg/chisel/laboratory_block", <chisel:laboratory> * 8, [

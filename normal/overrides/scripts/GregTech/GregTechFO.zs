@@ -89,7 +89,7 @@ recipes.addShaped("tfg/gtfo/adobe_bricks", <gregtechfoodoption:gtfo_casing>,
 
 // Reinforced Adobe Bricks
 recipes.addShaped("tfg/gtfo/reinforced_adobe_bricks", <gregtechfoodoption:gtfo_casing:1>,
-	[[null, <ore:toolHammer>, null],
+	[[null, <ore:gtce.tool.hard.hammers>, null],
 	[<ore:mudBrick>, <metaitem:plateBronze>, <ore:mudBrick>],
 	[null, <gregtechfoodoption:gtfo_casing>, null]]);
 
@@ -120,12 +120,12 @@ forming_press.recipeBuilder()
 
 // Baking Oven
 recipes.addShaped("tfg/gtfo/baking_oven", <metaitem:gregtechfoodoption:baking_oven>,
-	[[<ore:toolScrewdriver>, <ore:screwIronAny>, <ore:screwIronAny>],
+	[[<ore:gtce.tool.screwdrivers>, <ore:screwIronAny>, <ore:screwIronAny>],
 	[<ore:stickIronAny>, <ore:stickIronAny>, <gregtechfoodoption:gtfo_casing>],
-	[<ore:toolFile>, <ore:screwIronAny>, <ore:screwIronAny>]]);
+	[<ore:gtce.tool.files>, <ore:screwIronAny>, <ore:screwIronAny>]]);
 
 // Apple Slice
-recipes.addShapeless("tfg/gtfo/apple_slice", <metaitem:component.apple_slice>, [<ore:toolKnife>, <ore:apple>]);
+recipes.addShapeless("tfg/gtfo/apple_slice", <metaitem:component.apple_slice>, [<ore:gtce.tool.knife>, <ore:apple>]);
 
 slicer.recipeBuilder()
 	.inputs(<ore:apple>)
@@ -134,7 +134,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Mushroom Slice
-recipes.addShapeless("tfg/gtfo/myshroom_slice", <metaitem:component.mushroom_slice>, [<ore:toolKnife>, <tfc:plants/porcini>]);
+recipes.addShapeless("tfg/gtfo/myshroom_slice", <metaitem:component.mushroom_slice>, [<ore:gtce.tool.knife>, <tfc:plants/porcini>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:plants/porcini>)
@@ -149,7 +149,7 @@ extractor.recipeBuilder()
 	.duration(200).EUt(1920).buildAndRegister();
 
 // Kebab Meat Raw
-recipes.addShapeless("tfg/gtfo/kebab_meat_raw", <metaitem:component.kebab.meat> * 2, [<ore:craftingToolRollingPin>, <metaitem:component.skewer>, <metaitem:component.skewer>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <metaitem:dustSmallSalt>]);
+recipes.addShapeless("tfg/gtfo/kebab_meat_raw", <metaitem:component.kebab.meat> * 2, [<ore:gtce.tool.rolling.pins>, <metaitem:component.skewer>, <metaitem:component.skewer>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <ore:categoryMeat>, <metaitem:dustSmallSalt>]);
 
 cuisine_assembler.recipeBuilder()
 	.inputs(
@@ -303,7 +303,7 @@ for i, TFC_Flat_Breads in TFC_Flat_Breads {
 }
 
 // Uncooked Bacon
-recipes.addShapeless("tfg/gtfo/uncooked_bacon", <metaitem:component.bacon> * 3, [<tfc:food/pork>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/uncooked_bacon", <metaitem:component.bacon> * 3, [<tfc:food/pork>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/pork>)
@@ -376,7 +376,7 @@ chemical_reactor.recipeBuilder()
 	.duration(50).EUt(30).buildAndRegister();
 
 // Pre-Sliced Bread
-recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/presliced_bread", <metaitem:component.breads>, [<ore:categoryBread>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<ore:categoryBread>)
@@ -385,7 +385,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Carrot Slice
-recipes.addShapeless("tfg/gtfo/carrot_slice", <metaitem:component.carrot_slice> * 4, [<tfc:food/carrot>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/carrot_slice", <metaitem:component.carrot_slice> * 4, [<tfc:food/carrot>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/carrot>)
@@ -394,7 +394,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Onion Slice
-recipes.addShapeless("tfg/gtfo/onion_slice", <metaitem:component.onion_slice> * 4, [<tfc:food/onion>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/onion_slice", <metaitem:component.onion_slice> * 4, [<tfc:food/onion>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/onion>)
@@ -403,7 +403,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Olive Slice
-recipes.addShapeless("tfg/gtfo/olive_slice", <metaitem:component.olive_slice> * 4, [<tfc:food/olive>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/olive_slice", <metaitem:component.olive_slice> * 4, [<tfc:food/olive>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/olive>)
@@ -412,7 +412,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Tomato Slice
-recipes.addShapeless("tfg/gtfo/tomato_slice", <metaitem:component.tomato_slice> * 4, [<tfc:food/tomato>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/tomato_slice", <metaitem:component.tomato_slice> * 4, [<tfc:food/tomato>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/tomato>)
@@ -421,7 +421,7 @@ slicer.recipeBuilder()
 	.duration(30).EUt(18).buildAndRegister();
 
 // Cabbage Slice
-recipes.addShapeless("tfg/gtfo/cabbage_slice", <metaitem:component.cucumber_slice> * 4, [<tfc:food/cabbage>, <ore:toolKnife>]);
+recipes.addShapeless("tfg/gtfo/cabbage_slice", <metaitem:component.cucumber_slice> * 4, [<tfc:food/cabbage>, <ore:gtce.tool.knife>]);
 
 slicer.recipeBuilder()
 	.inputs(<tfc:food/cabbage>)
@@ -451,7 +451,7 @@ extractor.recipeBuilder()
 	.duration(200).EUt(1920).buildAndRegister();
 
 // Carrots on a Skewel Kebab
-recipes.addShapeless("tfg/gtfo/kebab_carrot", <metaitem:component.kebab.carrot> * 2, [<ore:toolKnife>, <metaitem:dustSalt>, <tfc:food/carrot>, <tfc:food/carrot>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
+recipes.addShapeless("tfg/gtfo/kebab_carrot", <metaitem:component.kebab.carrot> * 2, [<ore:gtce.tool.knife>, <metaitem:dustSalt>, <tfc:food/carrot>, <tfc:food/carrot>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
 
 // Beetroot Soup
 mixer.recipeBuilder()
@@ -534,7 +534,7 @@ cuisine_assembler.recipeBuilder()
 	.duration(400).EUt(180).buildAndRegister();
 
 // Pie Crust
-recipes.addShapeless("tfg/gtfo/pie_crust", <metaitem:component.pie_crust>, [<ore:doughYeast>, <ore:craftingToolRollingPin>]);
+recipes.addShapeless("tfg/gtfo/pie_crust", <metaitem:component.pie_crust>, [<ore:doughYeast>, <ore:gtce.tool.rolling.pins>]);
 
 // Unbaked Baguette
 recipes.addShaped("tfg/gtfo/unbaked_baguette", <metaitem:component.baguette>,
@@ -576,7 +576,7 @@ extractor.recipeBuilder()
 
 // Raw Koobideh Kebab
 recipes.addShaped("tfg/gtfo/raw_koobideh_kebab", <metaitem:component.kebab.kubide>, [
-	[<ore:craftingToolRollingPin>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
+	[<ore:gtce.tool.rolling.pins>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
 	[<metaitem:dustSmallSalt>, <metaitem:kubide_meat_dust>, <metaitem:kubide_meat_dust>],
 	[<metaitem:component.skewer>, <tfc:food/tomato>, <metaitem:dustSmallSalt>]]);
 
@@ -608,7 +608,7 @@ recipes.addShaped("tfg/gtfo/barg_ingredients", <metaitem:barg_meat_dust> * 4, [
 	[<metaitem:zest_dust>, <metaitem:dustMeat>, <metaitem:zest_dust>]]);
 
 // Nailed Onions Kebab
-recipes.addShapeless("tfg/gtfo/nailed_onions_kebab", <metaitem:component.kebab.onion> * 2, [<ore:toolKnife>, <metaitem:dustSalt>, <tfc:food/onion>, <tfc:food/onion>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
+recipes.addShapeless("tfg/gtfo/nailed_onions_kebab", <metaitem:component.kebab.onion> * 2, [<ore:gtce.tool.knife>, <metaitem:dustSalt>, <tfc:food/onion>, <tfc:food/onion>, <metaitem:component.skewer>, <metaitem:component.skewer>]);
 
 // Kebab e Soltani!
 cuisine_assembler.recipeBuilder()
@@ -656,10 +656,10 @@ extractor.recipeBuilder()
 	.duration(200).EUt(16).buildAndRegister();
 
 // Zest From Lemon
-recipes.addShapeless("tfg/gtfo/zest_from_lemon", <metaitem:zest_dust>, [<tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <ore:toolMortar>]);
+recipes.addShapeless("tfg/gtfo/zest_from_lemon", <metaitem:zest_dust>, [<tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <tfc:food/lemon>, <ore:gtce.tool.mortars>]);
 
 // Zest From Orange
-recipes.addShapeless("tfg/gtfo/zest_from_orange", <metaitem:zest_dust>, [<tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <ore:toolMortar>]);
+recipes.addShapeless("tfg/gtfo/zest_from_orange", <metaitem:zest_dust>, [<tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <tfc:food/orange>, <ore:gtce.tool.mortars>]);
 
 // Zest + Orange Juice
 extractor.recipeBuilder()
