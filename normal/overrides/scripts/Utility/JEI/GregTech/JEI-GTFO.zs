@@ -201,6 +201,8 @@ fermenter.findRecipe(8, [<minecraft:fish:0>], [<liquid:water> * 100]).remove();
 fermenter.findRecipe(8, [<minecraft:beef:0>], [<liquid:water> * 100]).remove();
 
 // Cooked Meat
+// baking_oven.findRecipe(1, [<minecraft:mutton:0>, <tfc:ore/bituminous_coal:0> * 2], null).remove();
+// baking_oven.findRecipe(1, [<minecraft:mutton:0>, <minecraft:coal:1> * 2], null).remove();
 // baking_oven.findRecipe(1, [<minecraft:mutton:0>, <metaitem:gemCoke>], null).remove();
 // baking_oven.findRecipe(1, [<minecraft:rabbit:0>, <minecraft:coal:1> * 2], null).remove();
 // baking_oven.findRecipe(1, [<minecraft:rabbit:0>, <metaitem:gemCoke>], null).remove();
@@ -235,7 +237,7 @@ slicer.findRecipe(18, [<minecraft:porkchop:0>, <metaitem:config.slicer_blade.fla
 slicer.findRecipe(24, [<minecraft:beef:0>, <metaitem:config.slicer_blade.stripes>], null).remove();
 
 // Meat Sandwich
-// cuisine_assembler.findRecipe(24, [<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0>], null).remove();
+cuisine_assembler.findRecipe(24, [<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0>], null).remove();
 
 // Large Meat Sandwich
 cuisine_assembler.findRecipe(75, [<metaitem:component.baguettes> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0> * 3], null).remove();
@@ -247,9 +249,9 @@ mixer.findRecipe(8, [<minecraft:brown_mushroom:0>, <minecraft:carrot:0>, <minecr
 cuisine_assembler.findRecipe(7, [<minecraft:sugar:0>, <minecraft:egg:0>, <metaitem:food.cake_bottom_baked>], [<liquid:milk> * 3000]).remove();
 
 // Baked Cake Bottom
-baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <tfc:ore/bituminous_coal:0> * 3], null).remove();
-baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <metaitem:gemCoke>], null).remove();
-baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <minecraft:coal:1> * 3], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <tfc:ore/bituminous_coal:0> * 3], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <metaitem:gemCoke>], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>, <minecraft:coal:1> * 3], null).remove();
 // electric_baking_oven.findRecipe(1, [<metaitem:food.cake_bottom>], null).remove();
 
 // Cake Bottom
@@ -270,9 +272,9 @@ large_chemical_reactor.findRecipe(30, [<minecraft:melon:0>, <minecraft:gold_nugg
 slicer.findRecipe(18, [<minecraft:bread:0>, <metaitem:config.slicer_blade.flat>], null).remove();
 
 // Bread
-baking_oven.findRecipe(1, [<metaitem:component.bread>, <metaitem:gemCoke>], null).remove();
-baking_oven.findRecipe(1, [<metaitem:component.bread>, <tfc:ore/bituminous_coal:0> * 2], null).remove();
-baking_oven.findRecipe(1, [<metaitem:component.bread>, <minecraft:coal:1> * 2], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:component.bread>, <metaitem:gemCoke>], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:component.bread>, <tfc:ore/bituminous_coal:0> * 2], null).remove();
+//baking_oven.findRecipe(1, [<metaitem:component.bread>, <minecraft:coal:1> * 2], null).remove();
 // electric_baking_oven.findRecipe(1, [<metaitem:component.bread>], null).remove();
 
 // Unbaked Bread
@@ -304,9 +306,9 @@ slicer.findRecipe(8, [<minecraft:potato:0>, <metaitem:config.slicer_blade.flat>]
 macerator.findRecipe(4, [<minecraft:potato:0>], null).remove();
 
 // Baked Potato
-baking_oven.findRecipe(1, [<minecraft:potato:0>, <minecraft:coal:1>], null).remove();
-baking_oven.findRecipe(1, [<minecraft:potato:0>, <tfc:ore/bituminous_coal:0>], null).remove();
-baking_oven.findRecipe(1, [<minecraft:potato:0>, <metaitem:gemCoke>], null).remove();
+//baking_oven.findRecipe(1, [<minecraft:potato:0>, <minecraft:coal:1>], null).remove();
+//baking_oven.findRecipe(1, [<minecraft:potato:0>, <tfc:ore/bituminous_coal:0>], null).remove();
+//baking_oven.findRecipe(1, [<minecraft:potato:0>, <metaitem:gemCoke>], null).remove();
 // electric_baking_oven.findRecipe(1, [<minecraft:potato:0>], null).remove();
 
 // Roasted Potato

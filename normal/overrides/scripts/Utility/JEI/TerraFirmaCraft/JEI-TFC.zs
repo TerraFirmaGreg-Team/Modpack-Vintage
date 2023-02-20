@@ -7,6 +7,7 @@ import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.Welding;
+import mods.terrafirmacraft.StoneKnapping;
 import mods.horsepower.Grindstone;
 import mods.firmalife.Oven;
 
@@ -415,48 +416,110 @@ val RemoveAndHide as IItemStack[] = [
 	<tfc:metal/bucket/blue_steel>,
 	// Dups
 	<tfc:wood/sapling/joshua_tree>,
-	<tfc:wood/log/joshua_tree>
+	<tfc:wood/log/joshua_tree>,
+	// Stone Tools
+	<tfc:stone/knife/metamorphic>,
+	<tfc:stone/knife/sedimentary>,
+	<tfc:stone/knife/igneous_extrusive>,
+	<tfc:stone/knife/igneous_intrusive>,
+	<tfc:stone/axe/igneous_extrusive>,
+	<tfc:stone/axe/sedimentary>,
+	<tfc:stone/axe/metamorphic>,
+	<tfc:stone/axe/igneous_intrusive>,
+	<tfc:stone/hammer/igneous_extrusive>,
+	<tfc:stone/hammer/metamorphic>,
+	<tfc:stone/hammer/sedimentary>,
+	<tfc:stone/hammer/igneous_intrusive>,
+	<tfc:stone/hoe/metamorphic>,
+	<tfc:stone/hoe/sedimentary>,
+	<tfc:stone/hoe/igneous_extrusive>,
+	<tfc:stone/hoe/igneous_intrusive>,
+	<tfc:stone/shovel/metamorphic>,
+	<tfc:stone/shovel/sedimentary>,
+	<tfc:stone/shovel/igneous_extrusive>,
+	<tfc:stone/shovel/igneous_intrusive>,
+	<tfc:stone/javelin/igneous_intrusive>,
+	<tfc:stone/javelin/igneous_extrusive>,
+	<tfc:stone/javelin/sedimentary>,
+	<tfc:stone/javelin/metamorphic>,
+	// Stone Tool Heads
+	<tfc:stone/axe_head/igneous_extrusive>,
+	<tfc:stone/axe_head/sedimentary>,
+	<tfc:stone/axe_head/metamorphic>,
+	<tfc:stone/axe_head/igneous_intrusive>,
+	<tfc:stone/knife_head/metamorphic>,
+	<tfc:stone/knife_head/sedimentary>,
+	<tfc:stone/knife_head/igneous_extrusive>,
+	<tfc:stone/knife_head/igneous_intrusive>,
+	<tfc:stone/hammer_head/igneous_intrusive>,
+	<tfc:stone/hammer_head/igneous_extrusive>,
+	<tfc:stone/hammer_head/sedimentary>,
+	<tfc:stone/hammer_head/metamorphic>,
+	<tfc:stone/hoe_head/metamorphic>,
+	<tfc:stone/hoe_head/sedimentary>,
+	<tfc:stone/hoe_head/igneous_extrusive>,
+	<tfc:stone/hoe_head/igneous_intrusive>,
+	<tfc:stone/shovel_head/metamorphic>,
+	<tfc:stone/shovel_head/sedimentary>,
+	<tfc:stone/shovel_head/igneous_extrusive>,
+	<tfc:stone/shovel_head/igneous_intrusive>,
+	<tfc:stone/javelin_head/igneous_intrusive>,
+	<tfc:stone/javelin_head/igneous_extrusive>,
+	<tfc:stone/javelin_head/sedimentary>,
+	<tfc:stone/javelin_head/metamorphic>,
+	// Flint Tools
+	<tfcflorae:tools/flint/axe/flint>,
+	<tfcflorae:tools/flint/hoe/flint>,
+	<tfcflorae:tools/flint/javelin/flint>,
+	<tfcflorae:tools/flint/knife/flint>,
+	<tfcflorae:tools/flint/shovel/flint>,
+	// Flint Tool Heads
+	<tfcflorae:tools/flint/axe_head/flint>,
+	<tfcflorae:tools/flint/shovel_head/flint>,
+	<tfcflorae:tools/flint/javelin_head/flint>,
+	<tfcflorae:tools/flint/knife_head/flint>,
+	<tfcflorae:tools/flint/hoe_head/flint>
 ];
 
 
 val RemoveRecipesByName = [
-   "tfc:vanilla/redstone/observer",
-   "tfc:vanilla/tnt",
-   "tfc:vanilla/flint_and_steel",
-   "tfc:vanilla/compass",
-   "tfc:vanilla/redstone/redstone_lamp",
-   "tfc:vanilla/redstone/piston",
-   "tfc:vanilla/redstone/flawless_daylight_detector",
-   "tfc:vanilla/redstone/exquisite_daylight_detector",
-   "tfc:vanilla/redstone/daylight_detector",
-   "tfc:vanilla/redstone/redstone_repeater",
-   "tfc:vanilla/redstone/redstone_comparator",
-   "tfc:vanilla/redstone/steel_hopper",
-   "tfc:vanilla/redstone/hopper",
-   "tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate",
-   "tfc:vanilla/rail/steel_minecraft",
-   "tfc:vanilla/rail/minecraft",
-   "tfc:vanilla/lapis_lazuli_block",
-   "tfc:vanilla/ladder",
-   "tfc:vanilla/painting",
-   "tfc:vanilla/item_frame",
-   "tfc:vanilla/piston",
-   "tfc:vanilla/rail/powered_rail",
-   "tfc:vanilla/rail/steel_detector_rail",
-   "tfc:vanilla/rail/detector_rail",
-   "tfc:vanilla/rail/rail",
-   "tfc:vanilla/rail/steel_rail",
-   "tfc:vanilla/rail/activator_rail",
-   "tfc:vanilla/rail/steel_activator_rail",
-   "tfc:vanilla/rail/minecart",
-   "tfc:vanilla/rail/steel_minecart",
+   	"tfc:vanilla/redstone/observer",
+	"tfc:vanilla/tnt",
+	"tfc:vanilla/flint_and_steel",
+	"tfc:vanilla/compass",
+	"tfc:vanilla/redstone/redstone_lamp",
+	"tfc:vanilla/redstone/piston",
+	"tfc:vanilla/redstone/flawless_daylight_detector",
+	"tfc:vanilla/redstone/exquisite_daylight_detector",
+	"tfc:vanilla/redstone/daylight_detector",
+	"tfc:vanilla/redstone/redstone_repeater",
+	"tfc:vanilla/redstone/redstone_comparator",
+	"tfc:vanilla/redstone/steel_hopper",
+	"tfc:vanilla/redstone/hopper",
+	"tfc:vanilla/pressure_plate/heavy_weighted_pressure_plate",
+	"tfc:vanilla/rail/steel_minecraft",
+	"tfc:vanilla/rail/minecraft",
+	"tfc:vanilla/lapis_lazuli_block",
+	"tfc:vanilla/ladder",
+	"tfc:vanilla/painting",
+	"tfc:vanilla/item_frame",
+	"tfc:vanilla/piston",
+	"tfc:vanilla/rail/powered_rail",
+	"tfc:vanilla/rail/steel_detector_rail",
+	"tfc:vanilla/rail/detector_rail",
+	"tfc:vanilla/rail/rail",
+	"tfc:vanilla/rail/steel_rail",
+	"tfc:vanilla/rail/activator_rail",
+	"tfc:vanilla/rail/steel_activator_rail",
+	"tfc:vanilla/rail/minecart",
+	"tfc:vanilla/rail/steel_minecart",
 	"tfc:ceramics/unfired_fire_clay_recycle/fire_brick",
-   "tfc:paper",
-   "tfc:fire_clay",
-   "tfc:vanilla/cauldron",
-   "tfc:blast_furnace",
-   "tfc:alabaster_brick",
-   // Concrete
+	"tfc:paper",
+	"tfc:fire_clay",
+	"tfc:vanilla/cauldron",
+	"tfc:blast_furnace",
+	"tfc:alabaster_brick",
+	// Concrete
 	"tfc:concrete_white",
 	"tfc:concrete_orange",
 	"tfc:concrete_magenta",
@@ -614,3 +677,50 @@ assembler.findRecipe(2, [<minecraft:string:0> * 4, <minecraft:slime_ball:0>], nu
 
 // Песок --> Диоксид кремния
 electrolyzer.findRecipe(25, [<minecraft:sand> * 8], null).remove();
+
+// Удаление рецептов голов каменных инструментов
+StoneKnapping.removeRecipe(<tfc:stone/axe_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/axe_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/axe_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/axe_head/metamorphic>);
+StoneKnapping.removeRecipe(<tfc:stone/shovel_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/shovel_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/shovel_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/shovel_head/metamorphic>);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/metamorphic>);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/metamorphic>);
+StoneKnapping.removeRecipe(<tfc:stone/javelin_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/javelin_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/javelin_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/javelin_head/metamorphic>);
+StoneKnapping.removeRecipe(<tfc:stone/hammer_head/igneous_intrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/hammer_head/igneous_extrusive>);
+StoneKnapping.removeRecipe(<tfc:stone/hammer_head/sedimentary>);
+StoneKnapping.removeRecipe(<tfc:stone/hammer_head/metamorphic>);
+
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/igneous_intrusive> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/igneous_extrusive> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/sedimentary> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/hoe_head/metamorphic> * 2);
+
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_intrusive> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_extrusive> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/sedimentary> * 2);
+StoneKnapping.removeRecipe(<tfc:stone/knife_head/metamorphic> * 2);
+
+// Удаление голов флинтовых инструментов
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/axe_head/flint>);
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/shovel_head/flint>);
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/javelin_head/flint>);
+
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/hoe_head/flint>);
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/knife_head/flint>);
+
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/hoe_head/flint> * 2);
+StoneKnapping.removeRecipe(<tfcflorae:tools/flint/knife_head/flint> * 2);

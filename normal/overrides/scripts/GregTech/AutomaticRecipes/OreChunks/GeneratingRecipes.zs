@@ -21,14 +21,6 @@ oreChunk.generateRecipes(function(orePrefix as OrePrefix, material as Material) 
     // Конская дробилка
     Grindstone.add(Utils.item(orePrefix, material), Utils.item("dustImpure", material) * 3, 10, false);
 
-    // Руды в их куски при выкапывании
-    Dropt.list("tfg/gregtech/ore_chunk/" + material.name).add(Dropt.rule()
-        .matchBlocks(["gregtech:ore_" + material.name + "_0:*", "gregtech:ore_" + material.name + "_1:*", "gregtech:ore_" + material.name + "_2:*"])
-        .addDrop(Dropt.drop().force().items([Utils.item(orePrefix, material)]))    
-        .addDrop(Dropt.drop().selector(Dropt.weight(70)))
-        .addDrop(Dropt.drop().selector(Dropt.weight(30)).items([Utils.item(orePrefix, material)]))
-        );
-
 } as IOreRecipeHandler);
 
 // Fix strange bug with oreQuartzite
