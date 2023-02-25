@@ -396,6 +396,12 @@ mixer.recipeBuilder()
  	.outputs(<appliedenergistics2:material:7> * 12)
 	.duration(40).EUt(18).buildAndRegister();
 
+// Флакс пыль
+macerator.recipeBuilder()
+  .inputs(<appliedenergistics2:material:7>)
+  .outputs(<metaitem:dustFluix>)
+  .duration(30).EUt(2).buildAndRegister();
+
 // Inscriber Silicon Press
 laser_engraver.recipeBuilder()
 	.inputs(<metaitem:plateIron>)
@@ -520,6 +526,12 @@ electrolyzer.recipeBuilder()
 	.inputs(<metaitem:gemCertusQuartz>)
 	.outputs(<appliedenergistics2:material:1>)
 	.duration(520).EUt(82).buildAndRegister();
+
+// Charged Certus Quartz dust
+macerator.recipeBuilder()
+  .inputs(<appliedenergistics2:material:1>)
+  .outputs(<metaitem:dustChargedCertusQuartz>)
+  .duration(30).EUt(2).buildAndRegister();
 
 // Blank Pattern
 assembler.recipeBuilder()

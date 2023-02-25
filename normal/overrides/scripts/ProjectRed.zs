@@ -165,8 +165,8 @@ polarizer.recipeBuilder()
 
 // Red Alloy Wire
 assembler.recipeBuilder()
-	.inputs(<metaitem:wireGtSingleRedAlloy> * 2)
 	.circuit(2)
+	.inputs(<metaitem:wireGtSingleRedAlloy> * 2)
 	.fluidInputs([<liquid:redstone> * 144])
 	.outputs(<projectred-transmission:wire> * 12)
 	.duration(180).EUt(32).buildAndRegister();
@@ -177,6 +177,23 @@ for i, transmissionWiresArray in transmissionWiresArray {
 		.inputs([<projectred-transmission:wire>])
 		.fluidInputs([colorLiquid[i] * 18])
 		.outputs(transmissionWiresArray)
+		.duration(100).EUt(16).buildAndRegister();
+}
+
+// Red Alloy Wire
+assembler.recipeBuilder()
+	.circuit(3)
+	.inputs(<projectred-transmission:wire> * 5)
+	.inputs(<ore:string> * 4)
+	.outputs(<projectred-transmission:wire:17> * 12)
+	.duration(180).EUt(32).buildAndRegister();
+
+// Bundled Cable
+for i, bundledCableArray in bundledCableArray {
+	chemical_bath.recipeBuilder()
+		.inputs([<projectred-transmission:wire>])
+		.fluidInputs([colorLiquid[i] * 18])
+		.outputs(bundledCableArray)
 		.duration(100).EUt(16).buildAndRegister();
 }
 

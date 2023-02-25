@@ -83,51 +83,51 @@ for item in RemoveRecipesByName{
 furnace.remove(<metaitem:brick.adobe_fired>);
 
 // Удаление рецептов метана
-centrifuge.findRecipe(5, [<metaitem:crop.onion>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.grapes>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:crop.tomato>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.apricot>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.mango>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.banana>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.orange>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.lime>], null).remove();
-centrifuge.findRecipe(5, [<metaitem:food.lemon>], null).remove();
-centrifuge.findRecipe(5, [<galacticraftcore:food:6>], null).remove();
-centrifuge.findRecipe(5, [<galacticraftcore:food:7>], null).remove();
-centrifuge.findRecipe(5, [<extraplanets:chocolate_bar:0>], null).remove();
-centrifuge.findRecipe(5, [<extraplanets:caramel_bar:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:brown_mushroom:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:red_mushroom:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:melon:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:carrot:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:baked_potato:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:rabbit:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:chicken:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:fish:1>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:rabbit_stew:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_mutton:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:apple:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:potato:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:beef:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:mutton:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:fish:2>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_rabbit:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_fish:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_beef:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:beetroot_soup:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:pumpkin_pie:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_chicken:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:fish:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cookie:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:bread:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_porkchop:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:beetroot:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:fish:3>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:poisonous_potato:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:porkchop:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:mushroom_stew:0>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:cooked_fish:1>], null).remove();
-centrifuge.findRecipe(5, [<minecraft:nether_wart:0>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:crop.onion>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.grapes>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:crop.tomato>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.apricot>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.mango>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.banana>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.orange>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.lime>], null).remove();
+// centrifuge.findRecipe(5, [<metaitem:food.lemon>], null).remove();
+// centrifuge.findRecipe(5, [<galacticraftcore:food:6>], null).remove();
+// centrifuge.findRecipe(5, [<galacticraftcore:food:7>], null).remove();
+// centrifuge.findRecipe(5, [<extraplanets:chocolate_bar:0>], null).remove();
+// centrifuge.findRecipe(5, [<extraplanets:caramel_bar:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:brown_mushroom:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:red_mushroom:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:melon:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:carrot:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:baked_potato:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:rabbit:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:chicken:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:fish:1>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:rabbit_stew:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_mutton:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:apple:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:potato:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:beef:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:mutton:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:fish:2>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_rabbit:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_fish:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_beef:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:beetroot_soup:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:pumpkin_pie:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_chicken:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:fish:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cookie:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:bread:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_porkchop:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:beetroot:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:fish:3>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:poisonous_potato:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:porkchop:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:mushroom_stew:0>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:cooked_fish:1>], null).remove();
+// centrifuge.findRecipe(5, [<minecraft:nether_wart:0>], null).remove();
 
 // GT Mud Bricks
 forming_press.findRecipe(30, [<tfc:sand/diorite:0> * 3, <tfc:gravel/phyllite:0> * 2, <metaitem:dustBentonite>, <metaitem:dustTalc>, <minecraft:wheat:0>, <metaitem:wooden_form.brick>], null).remove();
@@ -237,7 +237,7 @@ slicer.findRecipe(18, [<minecraft:porkchop:0>, <metaitem:config.slicer_blade.fla
 slicer.findRecipe(24, [<minecraft:beef:0>, <metaitem:config.slicer_blade.stripes>], null).remove();
 
 // Meat Sandwich
-cuisine_assembler.findRecipe(24, [<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0>], null).remove();
+//cuisine_assembler.findRecipe(24, [<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0>], null).remove();
 
 // Large Meat Sandwich
 cuisine_assembler.findRecipe(75, [<metaitem:component.baguettes> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0> * 3], null).remove();
@@ -333,10 +333,10 @@ forge_hammer.findRecipe(60, [<metaitem:component.dough>], null).remove();
 mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaitem:dustTinySodaAsh>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:water> * 1000]).remove();
 
 // Raw Olive and Mushroom Pizza
-cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 3, <metaitem:component.mushroom_slice> * 8, <metaitem:component.olive_slice> * 8], [<liquid:gtfo_tomato_sauce> * 300]).remove();
+// cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 3, <metaitem:component.mushroom_slice> * 8, <metaitem:component.olive_slice> * 8], [<liquid:gtfo_tomato_sauce> * 300]).remove();
 
 // Raw Cheese Pizza
-cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 8, <metaitem:circuit.integrated>], [<liquid:gtfo_tomato_sauce> * 600]).remove();
+// cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 8, <metaitem:circuit.integrated>], [<liquid:gtfo_tomato_sauce> * 600]).remove();
 
 // Raw Mince Meat Pizza
 cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10], [<liquid:gtfo_tomato_sauce> * 450]).remove();

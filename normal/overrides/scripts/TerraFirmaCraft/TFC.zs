@@ -1281,7 +1281,7 @@ mixer.recipeBuilder()
 	.inputs(<tfc:hide/scraped/medium>)
 	.fluidInputs(<liquid:tannin> * 200)
 	.circuit(16)
-	.outputs(<minecraft:leather>)
+	.outputs(<minecraft:leather> * 2)
 	.duration(150).EUt(2).buildAndRegister();
 
 // Hide Prepared Large -> Leather
@@ -1289,7 +1289,7 @@ mixer.recipeBuilder()
 	.inputs(<tfc:hide/scraped/large>)
 	.fluidInputs(<liquid:tannin> * 300)
 	.circuit(16)
-	.outputs(<minecraft:leather>)
+	.outputs(<minecraft:leather> * 3)
 	.duration(150).EUt(2).buildAndRegister();
 
 // WoodTannin -> Liquid Tanin

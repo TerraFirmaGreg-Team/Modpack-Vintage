@@ -4542,6 +4542,25 @@ global transmissionWiresArray as IItemStack[] = [
 	<projectred-transmission:wire:16>
 ];
 
+global bundledCableArray as IItemStack[] = [
+	<projectred-transmission:wire:18>,
+	<projectred-transmission:wire:19>,
+	<projectred-transmission:wire:20>,
+	<projectred-transmission:wire:21>,
+	<projectred-transmission:wire:22>,
+	<projectred-transmission:wire:23>,
+	<projectred-transmission:wire:24>,
+	<projectred-transmission:wire:25>,
+	<projectred-transmission:wire:26>,
+	<projectred-transmission:wire:27>,
+	<projectred-transmission:wire:28>,
+	<projectred-transmission:wire:29>,
+	<projectred-transmission:wire:30>,
+	<projectred-transmission:wire:31>,
+	<projectred-transmission:wire:32>,
+	<projectred-transmission:wire:33>,
+];
+
 // - Fertilizers
 global dustFertilizerArray as IItemStack[] = [
 	<metaitem:dustSaltpeter>,
