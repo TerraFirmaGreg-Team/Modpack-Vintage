@@ -1,5 +1,63 @@
 # Changelog
 
+## [4.2.0] - 2023-02-25
+### Modpack fixes
+- **Attention**
+- **Upgrading to this version will remove all GregTech tools and wireless terminals from AE2WTLib addons.**
+- Also a big change, all the costume textures that were used earlier, as well as music and something else, are now placed in a separate resource pack, by default it is already in your resourcepacks folder, you can turn it on or off as you wish.
+- Moved crafttweaker Utility\JEI\AppliedEnergistics2 scripts to groovy.
+- Moved crafttweaker Utility\JEI\JEI-Other scripts to groovy.
+- Removed AE2WTLib scripts on AE wireless terminals,
+- Added recipes for new AE2 wireless terminals.
+- Removed and hidden the fluidcrafter block recipe from aeadditions, use the alternative block from the ae2fc mod, the functionality is much wider there.
+- Added liquid faucet recipe from ae2fc
+- Changed OreDicionary of seeds <ore:listAllSeeds> -> <ore:allSeeds>
+- Fixed crafting leather in the mixer, now the output of the skin is the same as in the barrel.
+- Adjusted quests, due to changes in GregTech, you will need to re-do quests related to tools, as well as AE2 wireless terminals.
+- Another attempt to fix the duplication of planets on the star map.
+- Fixed player getting stuck in subspace when flying to another planet, again.
+- Added crafts for crushing charged and flux crystals into dust.
+- Fixed a game crash when a tool/item is not completely broken.
+- Fixed game crash when switching sort mode in AE2 terminal.
+- Added crafting for ProjectRed multi-channel cable.
+- Removed Simple Login for the public server package, if you need it for authorization, set it manually.
+- The Inventory Bogo Sorter mod has been removed, while there are many problems with it, it will be replaced by the sorting function from the Quark mod.
+- Added mod Quark most of the features included, later their list will be adjusted as needed.
+
+### Update mods
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- TFG Mod
+- Craft Presence
+- Craft Tweaker
+- Custom Skin Loader
+- Galacticraft
+- GreekityMultiblocks
+- Gregtech
+- GregTech Food Option
+- GroovyScript
+- Just Stargate Mod (Aunis: Resurrection)
+- Little Tiles
+- Multiblock Tweaker
+- RoughlyEnoughIDs
+- Supermartijn642corelib
+- Universal Tweaks
+
+### New mods
+- AutoRegLib
+- Quark
+
+### Removed mods
+- Inventory Bogo Sorter
+- Mechtech
+- Htmltech
+- AE2WTLib
+- Wireless Interface Terminal
+- Wireless Fluid Terminal
+- WirelessCraftingTerminal
+- WirelessPatternTerminal
+- FastWorkbench
+
 ## [4.1.12] - 2023-01-30
 ### Modpack fixes
 - Minor fixes in discord status display.
