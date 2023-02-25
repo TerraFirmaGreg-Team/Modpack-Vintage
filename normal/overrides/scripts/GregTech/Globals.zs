@@ -64,5 +64,5 @@ global microwave                 as RecipeMap = RecipeMap.getByName("microwave")
 // GM
 global large_chemical_reactor    as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
 // Custom
-global saw_mill                  as RecipeMap = RecipeMap.getByName("saw_mill");
-global star_forge                as RecipeMap = RecipeMap.getByName("star_forge");
+// global saw_mill                  as RecipeMap = RecipeMap.getByName("saw_mill");
+// global star_forge                as RecipeMap = RecipeMap.getByName("star_forge");

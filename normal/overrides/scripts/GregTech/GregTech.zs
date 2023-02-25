@@ -77,12 +77,6 @@ ItemRegistry.registerItemMetal(<metaitem:plateDoublePlatinum>, "PLATINUM", 288, 
 // Люк коксовой печи
 recipes.addShapeless("tfg/gregtech/coke_oven_hatch", <metaitem:coke_oven_hatch>, [<gregtech:metal_casing:8>, <ore:barrel>]);
 
-// Контроллер пилорамы
-recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
-    [<metaitem:screwSteel>, <metaitem:toolHeadBuzzSawSteel>, <metaitem:screwSteel>],
-    [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
-    [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);
-
 // Бронзовый паровой молот
 recipes.addShaped("tfg/gregtech/bronze_forge_hammer", <metaitem:steam_hammer_bronze>, [
     [<metaitem:pipeSmallFluidBronze>, <ore:craftingPiston>, <metaitem:pipeSmallFluidBronze>],
@@ -276,23 +270,6 @@ forming_press.recipeBuilder()
 extractor.recipeBuilder()
     .inputs(<ore:allSeeds>)
     .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
-
-// Контроллер звездной кузни
-
-assembly_line.recipeBuilder()
-    .inputs([
-      <ore:batteryIv> * 4,  
-      <ore:circuitIv> * 9, 
-      <metaitem:robot.arm.iv> * 14, 
-      <metaitem:tool.dataorb> * 4, 
-      <gcym:unique_casing:4> * 5, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <metaitem:conveyor.module.ev> * 3, 
-      <metaitem:plateDoubleNaquadah> * 3, 
-      <metaitem:plateDoubleNaquadah> * 3])
-    .fluidInputs(<liquid:molten.titanium_carbide> * 6864, <liquid:molten.hssg> * 4432)
-    .outputs(<metaitem:multiblocktweaker:star_forge>)
-    .duration(1300).EUt(8100).buildAndRegister();
 
 // Solar Panel (ULV)
 assembly_line.recipeBuilder()

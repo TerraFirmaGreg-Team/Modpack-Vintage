@@ -7,139 +7,139 @@ import crafttweaker.oredict.IOreDictEntry;
 
 // Звездные врата: Млечный путь
 // Основа
-star_forge.recipeBuilder()
-	.circuit(6)
-	.inputs(
-		<metaitem:ingotTrinaquadalloy> * 6, 
-		<jsg:fragment_stargate_milkyway> * 3, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_blue>, 
-		<jsg:circuit_control_naquadah>)
-	.outputs(<jsg:stargate_milkyway_base_block>)
-	.duration(4000).EUt(130880).buildAndRegister();
-// Кольцо
-star_forge.recipeBuilder()
-	.circuit(7)
-	.inputs(
-		<metaitem:ingotTrinaquadalloy> * 2, 
-		<jsg:fragment_stargate_milkyway> * 2, 
-		<jsg:crystal_red>)
-	.outputs(<jsg:stargate_milkyway_member_block:6>)
-	.duration(2000).EUt(120880).buildAndRegister();
-// Шеврон
-star_forge.recipeBuilder()
-	.circuit(8)
-	.inputs(
-		<metaitem:ingotTrinaquadalloy> * 4, 
-		<jsg:fragment_stargate_milkyway> * 2, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_yellow>, 
-		<gregtech:transparent_casing> * 4)
-	.outputs(<jsg:stargate_milkyway_member_block:14>)
-	.duration(2000).EUt(130880).buildAndRegister();
-// Фрагмент врат
-star_forge.recipeBuilder()
-	.circuit(9)
-	.inputs(
-		<metaitem:plateDenseTrinaquadalloy> * 9,
-		<ore:batteryUv>)
-	.outputs(<jsg:fragment_stargate_milkyway> * 2)
-	.duration(2000).EUt(121880).buildAndRegister();
+// star_forge.recipeBuilder()
+// 	.circuit(6)
+// 	.inputs(
+// 		<metaitem:ingotTrinaquadalloy> * 6, 
+// 		<jsg:fragment_stargate_milkyway> * 3, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_blue>, 
+// 		<jsg:circuit_control_naquadah>)
+// 	.outputs(<jsg:stargate_milkyway_base_block>)
+// 	.duration(4000).EUt(130880).buildAndRegister();
+// // Кольцо
+// star_forge.recipeBuilder()
+// 	.circuit(7)
+// 	.inputs(
+// 		<metaitem:ingotTrinaquadalloy> * 2, 
+// 		<jsg:fragment_stargate_milkyway> * 2, 
+// 		<jsg:crystal_red>)
+// 	.outputs(<jsg:stargate_milkyway_member_block:6>)
+// 	.duration(2000).EUt(120880).buildAndRegister();
+// // Шеврон
+// star_forge.recipeBuilder()
+// 	.circuit(8)
+// 	.inputs(
+// 		<metaitem:ingotTrinaquadalloy> * 4, 
+// 		<jsg:fragment_stargate_milkyway> * 2, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_yellow>, 
+// 		<gregtech:transparent_casing> * 4)
+// 	.outputs(<jsg:stargate_milkyway_member_block:14>)
+// 	.duration(2000).EUt(130880).buildAndRegister();
+// // Фрагмент врат
+// star_forge.recipeBuilder()
+// 	.circuit(9)
+// 	.inputs(
+// 		<metaitem:plateDenseTrinaquadalloy> * 9,
+// 		<ore:batteryUv>)
+// 	.outputs(<jsg:fragment_stargate_milkyway> * 2)
+// 	.duration(2000).EUt(121880).buildAndRegister();
 
-// Звездные врата: Пегас
-// Основа
-star_forge.recipeBuilder()
-	.circuit(6)
-	.inputs(
-		<metaitem:ingotUraniumRhodiumDinaquadide> * 6, 
-		<jsg:fragment_stargate_pegasus> * 3, 
-		<jsg:crystal_yellow>, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_blue>, 
-		<jsg:circuit_control_naquadah>)
-	.outputs(<jsg:stargate_pegasus_base_block>)
-	.duration(4500).EUt(130880).buildAndRegister();
-// Кольцо
-star_forge.recipeBuilder()
-	.circuit(7)
-	.inputs(
-		<metaitem:ingotUraniumRhodiumDinaquadide> * 2, 
-		<jsg:fragment_stargate_pegasus> * 2, 
-		<jsg:crystal_blue>)
-	.outputs(<jsg:stargate_pegasus_member_block:6>)
-	.duration(2500).EUt(120880).buildAndRegister();
-// Шеврон
-star_forge.recipeBuilder()
-	.circuit(8)
-	.inputs(
-		<metaitem:ingotUraniumRhodiumDinaquadide> * 4, 
-		<jsg:fragment_stargate_pegasus> * 2, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_blue>, 
-		<gregtech:transparent_casing> * 4)
-	.outputs(<jsg:stargate_pegasus_member_block:14>)
-	.duration(2500).EUt(130880).buildAndRegister();
-// Фрагмент врат
-star_forge.recipeBuilder()
-	.circuit(9)
-	.inputs(
-		<metaitem:plateDenseTrinaquadalloy> * 3,
-		<metaitem:plateDenseTrinium> * 3)
-	.outputs(<jsg:fragment_stargate_pegasus> * 2)
-	.duration(2000).EUt(121880).buildAndRegister();
+// // Звездные врата: Пегас
+// // Основа
+// star_forge.recipeBuilder()
+// 	.circuit(6)
+// 	.inputs(
+// 		<metaitem:ingotUraniumRhodiumDinaquadide> * 6, 
+// 		<jsg:fragment_stargate_pegasus> * 3, 
+// 		<jsg:crystal_yellow>, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_blue>, 
+// 		<jsg:circuit_control_naquadah>)
+// 	.outputs(<jsg:stargate_pegasus_base_block>)
+// 	.duration(4500).EUt(130880).buildAndRegister();
+// // Кольцо
+// star_forge.recipeBuilder()
+// 	.circuit(7)
+// 	.inputs(
+// 		<metaitem:ingotUraniumRhodiumDinaquadide> * 2, 
+// 		<jsg:fragment_stargate_pegasus> * 2, 
+// 		<jsg:crystal_blue>)
+// 	.outputs(<jsg:stargate_pegasus_member_block:6>)
+// 	.duration(2500).EUt(120880).buildAndRegister();
+// // Шеврон
+// star_forge.recipeBuilder()
+// 	.circuit(8)
+// 	.inputs(
+// 		<metaitem:ingotUraniumRhodiumDinaquadide> * 4, 
+// 		<jsg:fragment_stargate_pegasus> * 2, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_blue>, 
+// 		<gregtech:transparent_casing> * 4)
+// 	.outputs(<jsg:stargate_pegasus_member_block:14>)
+// 	.duration(2500).EUt(130880).buildAndRegister();
+// // Фрагмент врат
+// star_forge.recipeBuilder()
+// 	.circuit(9)
+// 	.inputs(
+// 		<metaitem:plateDenseTrinaquadalloy> * 3,
+// 		<metaitem:plateDenseTrinium> * 3)
+// 	.outputs(<jsg:fragment_stargate_pegasus> * 2)
+// 	.duration(2000).EUt(121880).buildAndRegister();
 
-// Звездные врата: Вселенная
-// Основа
-star_forge.recipeBuilder()
-	.circuit(6)
-	.inputs(
-		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 6, 
-		<jsg:fragment_stargate_universe> * 2, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_blue>, 
-		<jsg:circuit_control_naquadah>)
-	.outputs(<jsg:stargate_universe_base_block>)
-	.duration(4000).EUt(520880).buildAndRegister();
-// Кольцо
-star_forge.recipeBuilder()
-	.circuit(7)
-	.inputs(
-		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 2, 
-		<jsg:fragment_stargate_universe> * 4, 
-		<jsg:crystal_red>)
-	.outputs(<jsg:stargate_universe_member_block:6>)
-	.duration(2000).EUt(500880).buildAndRegister();
-// Шеврон
-star_forge.recipeBuilder()
-	.circuit(8)
-	.inputs(
-		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 4, 
-		<jsg:fragment_stargate_universe> * 4, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_yellow>, 
-		<gregtech:transparent_casing:1> * 4)
-	.outputs(<jsg:stargate_universe_member_block:14>)
-	.duration(2000).EUt(520880).buildAndRegister();
-// Фрагмент врат
-star_forge.recipeBuilder()
-	.circuit(9)
-	.inputs(
-		<metaitem:plateDenseEnrichedNaquadahTriniumEuropiumDuranide> * 9,
-		<metaitem:plateDenseTrinium> * 3)
-	.outputs(<jsg:fragment_stargate_universe> * 2)
-	.duration(2000).EUt(121880).buildAndRegister();
+// // Звездные врата: Вселенная
+// // Основа
+// star_forge.recipeBuilder()
+// 	.circuit(6)
+// 	.inputs(
+// 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 6, 
+// 		<jsg:fragment_stargate_universe> * 2, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_blue>, 
+// 		<jsg:circuit_control_naquadah>)
+// 	.outputs(<jsg:stargate_universe_base_block>)
+// 	.duration(4000).EUt(520880).buildAndRegister();
+// // Кольцо
+// star_forge.recipeBuilder()
+// 	.circuit(7)
+// 	.inputs(
+// 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 2, 
+// 		<jsg:fragment_stargate_universe> * 4, 
+// 		<jsg:crystal_red>)
+// 	.outputs(<jsg:stargate_universe_member_block:6>)
+// 	.duration(2000).EUt(500880).buildAndRegister();
+// // Шеврон
+// star_forge.recipeBuilder()
+// 	.circuit(8)
+// 	.inputs(
+// 		<metaitem:ingotEnrichedNaquadahTriniumEuropiumDuranide> * 4, 
+// 		<jsg:fragment_stargate_universe> * 4, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_yellow>, 
+// 		<gregtech:transparent_casing:1> * 4)
+// 	.outputs(<jsg:stargate_universe_member_block:14>)
+// 	.duration(2000).EUt(520880).buildAndRegister();
+// // Фрагмент врат
+// star_forge.recipeBuilder()
+// 	.circuit(9)
+// 	.inputs(
+// 		<metaitem:plateDenseEnrichedNaquadahTriniumEuropiumDuranide> * 9,
+// 		<metaitem:plateDenseTrinium> * 3)
+// 	.outputs(<jsg:fragment_stargate_universe> * 2)
+// 	.duration(2000).EUt(121880).buildAndRegister();
 
-// Конденсатор
-star_forge.recipeBuilder()
-	.circuit(10)
-	.inputs(
-		<metaitem:battery_buffer.uv.16> * 4, 
-		<jsg:crystal_red> * 4, 
-		<metaitem:plateTrinaquadalloy> * 6)
-	.outputs(<jsg:capacitor_block_empty>)
-	.duration(2000).EUt(130880).buildAndRegister();
+// // Конденсатор
+// star_forge.recipeBuilder()
+// 	.circuit(10)
+// 	.inputs(
+// 		<metaitem:battery_buffer.uv.16> * 4, 
+// 		<jsg:crystal_red> * 4, 
+// 		<metaitem:plateTrinaquadalloy> * 6)
+// 	.outputs(<jsg:capacitor_block_empty>)
+// 	.duration(2000).EUt(130880).buildAndRegister();
 canner.recipeBuilder()
 	.circuit(10)
 	.inputs(<jsg:capacitor_block_empty>)
@@ -218,17 +218,17 @@ autoclave.recipeBuilder()
 
 
 // Лучевой передатчик
-star_forge.recipeBuilder()
-	.circuit(14)
-	.inputs(
-		<metaitem:gearNaquadahAlloy> * 2,
-		<gregtech:transparent_casing>,
-		<jsg:circuit_control_naquadah>, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_blue>)
-	.fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
-	.outputs(<jsg:beamer_block>)
-	.duration(200).EUt(282000).buildAndRegister();
+// star_forge.recipeBuilder()
+// 	.circuit(14)
+// 	.inputs(
+// 		<metaitem:gearNaquadahAlloy> * 2,
+// 		<gregtech:transparent_casing>,
+// 		<jsg:circuit_control_naquadah>, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_blue>)
+// 	.fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
+// 	.outputs(<jsg:beamer_block>)
+// 	.duration(200).EUt(282000).buildAndRegister();
 
 // Портативное устройство древних
 recipes.addShapeless("tfg/jsg/universe_dialer", <jsg:universe_dialer>, [<jsg:universe_dialer:1>, <galacticraftcore:space_glass_clear>]);
@@ -246,42 +246,42 @@ assembly_line.recipeBuilder()
 	.duration(1800).EUt(18100).buildAndRegister();
 
 // БКК
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<metaitem:gearSmallNaquadahAlloy> * 12, 
-		<ore:circuitLuv> * 2, 
-		<jsg:crystal_red> * 3)
-	.fluidInputs([<liquid:glass> * 18000])
-	.outputs(<jsg:dhd_brb>)
-	.duration(300).EUt(1880).buildAndRegister();
-// БСК
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<metaitem:gearSmallNaquadahAlloy> * 12, 
-		<ore:circuitZpm> * 2, 
-		<jsg:crystal_blue> * 3)
-	.fluidInputs([<liquid:glass> * 18000])
-	.outputs(<jsg:dhd_bbb>)
-	.duration(300).EUt(1880).buildAndRegister();
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<metaitem:gearSmallNaquadahAlloy> * 12, 
+// 		<ore:circuitLuv> * 2, 
+// 		<jsg:crystal_red> * 3)
+// 	.fluidInputs([<liquid:glass> * 18000])
+// 	.outputs(<jsg:dhd_brb>)
+// 	.duration(300).EUt(1880).buildAndRegister();
+// // БСК
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<metaitem:gearSmallNaquadahAlloy> * 12, 
+// 		<ore:circuitZpm> * 2, 
+// 		<jsg:crystal_blue> * 3)
+// 	.fluidInputs([<liquid:glass> * 18000])
+// 	.outputs(<jsg:dhd_bbb>)
+// 	.duration(300).EUt(1880).buildAndRegister();
 
-// Держатель кристалла
-star_forge.recipeBuilder()
-	.circuit(4)
-	.inputs(
-		<metaitem:foilNaquadahAlloy> * 8, 
-		<jsg:crystal_red> * 3)
-	.outputs(<jsg:holder_crystal>)
-	.duration(200).EUt(1880).buildAndRegister();
-// Держатель кристалла Пегаса
-star_forge.recipeBuilder()
-	.circuit(4)
-	.inputs(
-		<metaitem:foilEuropium> * 8, 
-		<jsg:crystal_ender> * 3)
-	.outputs(<jsg:holder_crystal_pegasus>)
-	.duration(200).EUt(4880).buildAndRegister();
+// // Держатель кристалла
+// star_forge.recipeBuilder()
+// 	.circuit(4)
+// 	.inputs(
+// 		<metaitem:foilNaquadahAlloy> * 8, 
+// 		<jsg:crystal_red> * 3)
+// 	.outputs(<jsg:holder_crystal>)
+// 	.duration(200).EUt(1880).buildAndRegister();
+// // Держатель кристалла Пегаса
+// star_forge.recipeBuilder()
+// 	.circuit(4)
+// 	.inputs(
+// 		<metaitem:foilEuropium> * 8, 
+// 		<jsg:crystal_ender> * 3)
+// 	.outputs(<jsg:holder_crystal_pegasus>)
+// 	.duration(200).EUt(4880).buildAndRegister();
 
 // DHD
 assembly_line.recipeBuilder()
@@ -321,96 +321,96 @@ assembly_line.recipeBuilder()
 	.duration(1800).EUt(183100).buildAndRegister();
 
 // Контрольный кристал DHD
-star_forge.recipeBuilder()
-	.circuit(12)
-	.inputs(
-		<jsg:crystal_red> * 4,
-		<ore:batteryLuv> * 2)
-	.fluidInputs(<liquid:silicon_molten_red> * 544)
-	.outputs(<jsg:crystal_control_dhd>)
-	.duration(2000).EUt(130880).buildAndRegister();
-// Контрольный кристал DHD Пегаса
-star_forge.recipeBuilder()
-	.circuit(12)
-	.inputs(
-		<jsg:circuit_control_naquadah>,
-		<jsg:crystal_blue>,
-		<jsg:crystal_ender>,
-		<jsg:crystal_red>,
-		<metaitem:dustNaquadah> * 4)
-	.fluidInputs(<liquid:silicon_molten_blue> * 544)
-	.outputs(<jsg:crystal_control_pegasus_dhd>)
-	.duration(2000).EUt(130880).buildAndRegister();
+// star_forge.recipeBuilder()
+// 	.circuit(12)
+// 	.inputs(
+// 		<jsg:crystal_red> * 4,
+// 		<ore:batteryLuv> * 2)
+// 	.fluidInputs(<liquid:silicon_molten_red> * 544)
+// 	.outputs(<jsg:crystal_control_dhd>)
+// 	.duration(2000).EUt(130880).buildAndRegister();
+// // Контрольный кристал DHD Пегаса
+// star_forge.recipeBuilder()
+// 	.circuit(12)
+// 	.inputs(
+// 		<jsg:circuit_control_naquadah>,
+// 		<jsg:crystal_blue>,
+// 		<jsg:crystal_ender>,
+// 		<jsg:crystal_red>,
+// 		<metaitem:dustNaquadah> * 4)
+// 	.fluidInputs(<liquid:silicon_molten_blue> * 544)
+// 	.outputs(<jsg:crystal_control_pegasus_dhd>)
+// 	.duration(2000).EUt(130880).buildAndRegister();
 
-// Символьный кристалл наборного устройства
-star_forge.recipeBuilder()
-	.circuit(4)
-	.inputs(
-		<jsg:crystal_ender>, 
-		<jsg:circuit_control_crystal>,
-		<jsg:crystal_ender>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_dhd>)
-	.duration(1000).EUt(15880).buildAndRegister();
+// // Символьный кристалл наборного устройства
+// star_forge.recipeBuilder()
+// 	.circuit(4)
+// 	.inputs(
+// 		<jsg:crystal_ender>, 
+// 		<jsg:circuit_control_crystal>,
+// 		<jsg:crystal_ender>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_dhd>)
+// 	.duration(1000).EUt(15880).buildAndRegister();
 
-// Символьный кристалл звездных врат
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<jsg:crystal_ender>, 
-		<jsg:circuit_control_crystal>, 
-		<jsg:crystal_blue>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_stargate>)
-	.duration(1000).EUt(15880).buildAndRegister();
+// // Символьный кристалл звездных врат
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<jsg:crystal_ender>, 
+// 		<jsg:circuit_control_crystal>, 
+// 		<jsg:crystal_blue>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_stargate>)
+// 	.duration(1000).EUt(15880).buildAndRegister();
 
-// Символьный кристалл Млечного пути
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<jsg:crystal_ender>, 
-		<jsg:circuit_control_crystal>, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_blue>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_milkyway>)
-	.duration(1000).EUt(15880).buildAndRegister();
+// // Символьный кристалл Млечного пути
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<jsg:crystal_ender>, 
+// 		<jsg:circuit_control_crystal>, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_blue>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_milkyway>)
+// 	.duration(1000).EUt(15880).buildAndRegister();
 
-// Символьный кристалл Пегаса
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<jsg:crystal_blue>, 
-		<jsg:circuit_control_crystal>, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_blue>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_pegasus>)
-	.duration(1000).EUt(60880).buildAndRegister();
+// // Символьный кристалл Пегаса
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<jsg:crystal_blue>, 
+// 		<jsg:circuit_control_crystal>, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_blue>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_pegasus>)
+// 	.duration(1000).EUt(60880).buildAndRegister();
 
-// Символьный кристалл Вселенной
-star_forge.recipeBuilder()
-	.circuit(5)
-	.inputs(
-		<jsg:crystal_yellow>, 
-		<jsg:circuit_control_naquadah>, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_white>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_universe>)
-	.duration(1000).EUt(130880).buildAndRegister();
+// // Символьный кристалл Вселенной
+// star_forge.recipeBuilder()
+// 	.circuit(5)
+// 	.inputs(
+// 		<jsg:crystal_yellow>, 
+// 		<jsg:circuit_control_naquadah>, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_white>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_universe>)
+// 	.duration(1000).EUt(130880).buildAndRegister();
 
-// Символьный кристалл колец
-star_forge.recipeBuilder()
-	.circuit(6)
-	.inputs(
-		<jsg:crystal_yellow>, 
-		<jsg:circuit_control_crystal>, 
-		<jsg:crystal_red>, 
-		<jsg:crystal_white>)
-	.fluidInputs([<liquid:glass> * 4000])
-	.outputs(<jsg:crystal_glyph_goauld>)
-	.duration(100).EUt(10880).buildAndRegister();
+// // Символьный кристалл колец
+// star_forge.recipeBuilder()
+// 	.circuit(6)
+// 	.inputs(
+// 		<jsg:crystal_yellow>, 
+// 		<jsg:circuit_control_crystal>, 
+// 		<jsg:crystal_red>, 
+// 		<jsg:crystal_white>)
+// 	.fluidInputs([<liquid:glass> * 4000])
+// 	.outputs(<jsg:crystal_glyph_goauld>)
+// 	.duration(100).EUt(10880).buildAndRegister();
 
 // Транспортные кольца: Goa'uld
 assembly_line.recipeBuilder()
@@ -505,18 +505,18 @@ circuit_assembler.recipeBuilder()
 	.outputs(<jsg:circuit_control_base>)
 	.duration(200).EUt(15880).buildAndRegister();
 
-// Кристальная управляющая микросхема
-star_forge.recipeBuilder()
-	.circuit(13)
-	.inputs(
-		<metaitem:foilNaquadahAlloy> * 9, 
-		<jsg:circuit_control_naquadah> * 4, 
-		<jsg:crystal_ender>, 
-		<jsg:crystal_yellow>, 
-		<jsg:crystal_blue>)
-	.fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
-	.outputs(<jsg:circuit_control_crystal>)
-	.duration(200).EUt(280000).buildAndRegister();
+// // Кристальная управляющая микросхема
+// star_forge.recipeBuilder()
+// 	.circuit(13)
+// 	.inputs(
+// 		<metaitem:foilNaquadahAlloy> * 9, 
+// 		<jsg:circuit_control_naquadah> * 4, 
+// 		<jsg:crystal_ender>, 
+// 		<jsg:crystal_yellow>, 
+// 		<jsg:crystal_blue>)
+// 	.fluidInputs([<liquid:molten.incoloy_ma_956> * 1000])
+// 	.outputs(<jsg:circuit_control_crystal>)
+// 	.duration(200).EUt(280000).buildAndRegister();
 
 // Управляющая микросхема из наквадаха
 circuit_assembler.recipeBuilder()
