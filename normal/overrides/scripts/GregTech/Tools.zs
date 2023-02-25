@@ -37,9 +37,9 @@ macerator.findRecipe(2, [<metaitem:toolHeadPickaxeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadShovelFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadAxeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadHoeFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadHammerFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
-macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
+// macerator.findRecipe(2, [<metaitem:toolHeadHammerFlint>], null).remove();
+// macerator.findRecipe(2, [<metaitem:toolHeadFileFlint>], null).remove();
+// macerator.findRecipe(2, [<metaitem:toolHeadSawFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadKnifeFlint>], null).remove();
 macerator.findRecipe(2, [<metaitem:toolHeadSenseFlint>], null).remove();
 

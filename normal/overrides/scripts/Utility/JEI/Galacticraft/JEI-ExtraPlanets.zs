@@ -256,3 +256,6 @@ for item in RemoveRecipeFurnace{
 for item in RemoveRecipesByName{
 	recipes.removeByRecipeName(item);
 }
+
+centrifuge.findRecipe(5, [<extraplanets:chocolate_bar:0>], null).remove();
+centrifuge.findRecipe(5, [<extraplanets:caramel_bar:0>], null).remove();

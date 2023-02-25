@@ -30,16 +30,16 @@ for item in RawSedimentary {
 }
 
 // OreDicionary for all seeds
-for item in All_Seeds {
-	<ore:listAllSeeds>.add(item);
+for item in allSeeds {
+	<ore:allSeeds>.add(item);
 }
 
-for item in TFC_Looms {
+for item in allLooms {
 	<ore:loom>.add(item);
 }
 
 // OreDicionary for all slab
-for item in TFC_Slabs_Smooth {
+for item in allSlabsSmooth {
 	<ore:slabStone>.add(item);
 }
 

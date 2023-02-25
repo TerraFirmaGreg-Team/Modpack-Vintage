@@ -440,10 +440,10 @@ for i, TFC_Stairs_Bricks in TFC_Stairs_Bricks {
 }
 
 // Гладкий блок -> Полублок
-for i, TFC_Slabs_Smooth in TFC_Slabs_Smooth {
+for i, allSlabsSmooth in allSlabsSmooth {
 	cutter.recipeBuilder()
 		.inputs([TFC_Smooths[i]])
-		.outputs(TFC_Slabs_Smooth * 2)
+		.outputs(allSlabsSmooth * 2)
 		.duration(200).EUt(7).buildAndRegister();
 }
 
@@ -541,7 +541,7 @@ for i, GT_Dusts_For_Raw_Stones in GT_Dusts_For_Raw_Stones {
 
 	// Smooth Slab
 	macerator.recipeBuilder()
-		.inputs(TFC_Slabs_Smooth[i])
+		.inputs(allSlabsSmooth[i])
 		.outputs(GT_Dusts_For_Raw_Stones * 1)
 		.duration(100).EUt(4).buildAndRegister();
 
@@ -768,11 +768,11 @@ for i, TFC_Chests in TFC_Chests {
 }
 
 // Прялки
-for i, TFC_Looms in TFC_Looms {
+for i, allLooms in allLooms {
 	assembler.recipeBuilder()
 		.inputs([TFC_Lumber[i] * 7, <minecraft:stick>])
 		.circuit(13)
-		.outputs(TFC_Looms)
+		.outputs(allLooms)
 		.duration(210).EUt(4).buildAndRegister();
 }
 
@@ -1167,22 +1167,22 @@ for i, TFC_Saplings in TFC_Saplings {
 }
 
 // Seeds -> AnyPlant (Greenhouse)
-for i, All_Seeds in All_Seeds {
+for i, allSeeds in allSeeds {
 	greenhouse.recipeBuilder()
-		.notConsumable([All_Seeds])
+		.notConsumable([allSeeds])
 		.circuit(1)
 		.inputs([<metaitem:fertilizer> * 2])
 		.fluidInputs([<liquid:fresh_water> * 1000])
-		.outputs([All_Plants[i] * 2])
+		.outputs([allPlants[i] * 2])
 		.duration(1500).EUt(80).buildAndRegister();
 
 	greenhouse.recipeBuilder()
-		.notConsumable([All_Seeds])
+		.notConsumable([allSeeds])
 		.circuit(2)
 		.inputs([<metaitem:fertilizer> * 2])
 		.fluidInputs([<liquid:distilled_water> * 1000])
-		.outputs([All_Plants[i] * 2])
-		.chancedOutput(All_Plants[i].withAmount(2), 7500, 0)
+		.outputs([allPlants[i] * 2])
+		.chancedOutput(allPlants[i].withAmount(2), 7500, 0)
 		.duration(1000).EUt(80).buildAndRegister();
 }
 

@@ -219,19 +219,6 @@ assembler.recipeBuilder()
 // recipes.addShapeless("oredict_storage_bus", <aeadditions:part.base:12>,
 //   [<appliedenergistics2:part:220>, <metaitem:ore_dictionary_filter>]);
 
-// Жидкостный сборщик
-recipes.remove(<aeadditions:fluidcrafter>);
-assembler.recipeBuilder()
-  .inputs([
-    <ore:paneGlassColorless> * 2,
-    <ore:circuitHv> * 2,
-    <metaitem:conveyor.module.hv> * 2,
-    <metaitem:fluid.regulator.hv> * 2,
-    <metaitem:plateSteel> * 4])
-  .fluidInputs([<liquid:plastic> * 144])
-  .outputs([<aeadditions:fluidcrafter>])
-  .duration(200).EUt(480).buildAndRegister();
-
 // Жидкостный автозаполнитель
 assembler.recipeBuilder()
   .inputs([

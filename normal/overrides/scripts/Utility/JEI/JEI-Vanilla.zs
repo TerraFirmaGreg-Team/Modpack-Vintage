@@ -465,17 +465,17 @@ assembler.findRecipe(30, [<minecraft:cobblestone:0> * 2, <metaitem:ringIron>, <m
 
 // Кусочки мяса
 // Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
+//macerator.findRecipe(2, [<minecraft:porkchop:0>], null).remove();
 // Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
-// Small Pile of Mince Meat
-macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
-// Mince Meat
-macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
-// Mince Meat
-macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
+// macerator.findRecipe(2, [<minecraft:beef:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:fish:0>], null).remove();
+// // Small Pile of Mince Meat
+// macerator.findRecipe(2, [<minecraft:rabbit:0>], null).remove();
+// // Mince Meat
+// macerator.findRecipe(2, [<minecraft:chicken:0>], null).remove();
+// // Mince Meat
+// macerator.findRecipe(2, [<minecraft:mutton:0>], null).remove();
 
 // Гравий -> Каменная пыль, Кремний
 macerator.findRecipe(2, [<minecraft:gravel:0>], null).remove();

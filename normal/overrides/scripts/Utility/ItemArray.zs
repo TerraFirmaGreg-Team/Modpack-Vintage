@@ -783,7 +783,7 @@ global TFC_Slabs_Cobble as IItemStack[] = [
 ];
 
 // - TFC Slabs Smooth Array
-global TFC_Slabs_Smooth as IItemStack[] = [
+global allSlabsSmooth as IItemStack[] = [
 	<tfc:slab/smooth/granite>,
 	<tfc:slab/smooth/diorite>,
 	<tfc:slab/smooth/gabbro>,
@@ -3017,7 +3017,7 @@ global TFC_Fence_Gates_Log as IItemStack[] = [
 ];
 
 // - TFC Loom Array
-global TFC_Looms as IItemStack[] = [
+global allLooms as IItemStack[] = [
 	<tfc:wood/loom/acacia>,
 	<tfc:wood/loom/african_padauk>,
 	<tfc:wood/loom/alder>,
@@ -3973,7 +3973,7 @@ global All_Metal_Heads_From_TFC as IItemStack[] = [
 ];
 
 // - All Seeds Array
-global All_Seeds as IItemStack[] = [
+global allSeeds as IItemStack[] = [
 	<tfc:crop/seeds/barley>,
 	<tfc:crop/seeds/maize>,
 	<tfc:crop/seeds/oat>,
@@ -4028,7 +4028,7 @@ global All_Seeds as IItemStack[] = [
 ];
 
 // - All Seeds Array
-global All_Plants as IItemStack[] = [
+global allPlants as IItemStack[] = [
 	<tfc:food/barley>,
 	<tfc:food/maize>,
 	<tfc:food/oat>,

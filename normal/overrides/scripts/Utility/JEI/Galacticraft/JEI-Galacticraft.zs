@@ -218,3 +218,7 @@ for item in RemoveRecipeFurnace{
 for item in RemoveRecipesByName{
 	recipes.removeByRecipeName(item);
 }
+
+
+centrifuge.findRecipe(5, [<galacticraftcore:food:6>], null).remove();
+centrifuge.findRecipe(5, [<galacticraftcore:food:7>], null).remove();

@@ -686,17 +686,17 @@ canner.recipeBuilder()
 	.outputs(<metaitem:food.vodka>)
 	.duration(30).EUt(12).buildAndRegister();
 
-// Vodka Liquid
-fermenter.recipeBuilder()
-	.fluidInputs([<liquid:gtfo_potato_juice> * 2000])
-	.fluidOutputs([<liquid:vodka> * 2000])
-	.duration(3000).EUt(8).buildAndRegister();
+// // Vodka Liquid
+// fermenter.recipeBuilder()
+// 	.fluidInputs([<liquid:gtfo_potato_juice> * 2000])
+// 	.fluidOutputs([<liquid:vodka> * 2000])
+// 	.duration(3000).EUt(8).buildAndRegister();
 
-// Cider Liquid
-fermenter.recipeBuilder()
-	.fluidInputs([<liquid:gtfo_apple_extract> * 100])
-	.fluidOutputs([<liquid:cider> * 100])
-	.duration(150).EUt(2).buildAndRegister();
+// // Cider Liquid
+// fermenter.recipeBuilder()
+// 	.fluidInputs([<liquid:gtfo_apple_extract> * 100])
+// 	.fluidOutputs([<liquid:cider> * 100])
+// 	.duration(150).EUt(2).buildAndRegister();
 
 // Cider -> Plant Ball
 distillation_tower.recipeBuilder()

@@ -274,7 +274,7 @@ forming_press.recipeBuilder()
 
 // Растительное масло
 extractor.recipeBuilder()
-    .inputs(<ore:listAllSeeds>)
+    .inputs(<ore:allSeeds>)
     .fluidOutputs(<liquid:seed_oil> * 10).EUt(2).duration(32).buildAndRegister();
 
 // Контроллер звездной кузни

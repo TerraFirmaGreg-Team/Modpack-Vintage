@@ -652,6 +652,83 @@ recipes.addShaped("tfg/ae2/wireless_terminal", <appliedenergistics2:wireless_ter
   [<appliedenergistics2:material:24>, <ore:circuitHv>, <appliedenergistics2:material:24>],
   [<metaitem:plateNetherQuartz>, <appliedenergistics2:dense_energy_cell>, <metaitem:plateNetherQuartz>]]);
 
+// Wireless Crafting Terminal
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:dense_energy_cell> * 2, 
+    <appliedenergistics2:wireless_terminal> * 1,
+    <metaitem:sensor.luv> * 2,
+    <appliedenergistics2:part:360>,
+    <metaitem:emitter.luv>,
+    <metaitem:stickOsmiridium> * 2
+  ])
+  .outputs(<appliedenergistics2:wireless_crafting_terminal>)
+  .duration(30).EUt(250).buildAndRegister();
+
+// Wireless Pattern Terminal
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:dense_energy_cell> * 2, 
+    <appliedenergistics2:wireless_terminal> * 1,
+    <metaitem:sensor.luv> * 2,
+    <appliedenergistics2:part:340>,
+    <metaitem:emitter.luv>,
+    <metaitem:stickOsmiridium> * 2
+  ])
+  .outputs(<appliedenergistics2:wireless_pattern_terminal>)
+  .duration(30).EUt(250).buildAndRegister();
+
+// Wireless Fluid Terminal
+assembler.recipeBuilder()
+  .inputs([
+    <appliedenergistics2:dense_energy_cell> * 2, 
+    <appliedenergistics2:wireless_terminal> * 1,
+    <metaitem:sensor.luv> * 2,
+    <appliedenergistics2:part:520>,
+    <metaitem:emitter.luv>,
+    <metaitem:stickOsmiridium> * 2
+  ])
+  .outputs(<appliedenergistics2:wireless_fluid_terminal>)
+  .duration(30).EUt(250).buildAndRegister();
+
+// // Wireless Interface Terminal
+// assembler.recipeBuilder()
+//   .inputs([
+//     <appliedenergistics2:dense_energy_cell> * 2, 
+//     <appliedenergistics2:wireless_terminal> * 1,
+//     <metaitem:sensor.luv> * 2,
+//     <appliedenergistics2:part:480>,
+//     <metaitem:emitter.luv>,
+//     <metaitem:stickOsmiridium> * 2
+//   ])
+//   .outputs(<appliedenergistics2:wireless_interface_terminal>)
+//   .duration(30).EUt(250).buildAndRegister();
+
+// Magnet Card
+assembler.recipeBuilder()
+  .inputs([
+    <metaitem:ingotNeodymiumMagnetic>, 
+    <metaitem:stickNeodymiumMagnetic> * 4,
+    <appliedenergistics2:part:300>,
+    <metaitem:plateRedstone>,
+    <metaitem:plateLapis>,
+    <appliedenergistics2:material:28>
+  ])
+  .outputs(<appliedenergistics2:material:60>)
+  .duration(30).EUt(250).buildAndRegister();
+
+// Quantum link Card
+assembler.recipeBuilder()
+  .inputs([
+    <metaitem:sensor.iv> * 4, 
+    <appliedenergistics2:material:42> * 4,
+    <metaitem:sensor.luv> * 2,
+    <metaitem:cover.digital.wireless>,
+  ])
+  .outputs(<appliedenergistics2:material:59>)
+  .duration(30).EUt(250).buildAndRegister();
+
+
 // Basic Card
 recipes.addShaped("tfg/ae2/basic_card", <appliedenergistics2:material:25> * 2, [
   [<metaitem:wireFineRedAlloy>, <metaitem:plateAluminium>, null],

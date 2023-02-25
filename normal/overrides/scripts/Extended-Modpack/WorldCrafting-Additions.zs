@@ -3,7 +3,7 @@
 import mods.inworldcrafting.FluidToItem;
 
 // Igneous Instrisuve -> Stone
-FluidToItem.transform(<minecraft:stone>, <liquid:astralsorcery.liquidstarlight>, [<ore:RawIgneousIntrusive>]);
+FluidToItem.transform(<minecraft:stone>, <liquid:astralsorcery.liquidstarlight>, [<ore:rawIgneousIntrusive>]);
 
 // TFC Button -> Vanilla Button
 FluidToItem.transform(<minecraft:wooden_button>, <liquid:astralsorcery.liquidstarlight>, [<ore:buttonWood>]);

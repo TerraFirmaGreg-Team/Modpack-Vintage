@@ -110,7 +110,6 @@ assembler.recipeBuilder()
 
 // Dual interface
 recipes.addShapeless("tfg/ae2fc/dual_interface", <ae2fc:dual_interface>, [<ae2fc:part_dual_interface>]);
-recipes.addShapeless("tfg/ae2fc/part_dual_interface", <ae2fc:part_dual_interface>, [<ae2fc:dual_interface>]);
 assembler.recipeBuilder()
   .circuit(24)
   .inputs(
@@ -121,3 +120,15 @@ assembler.recipeBuilder()
 
 // Очистка шаблона
   recipes.addShapeless(<appliedenergistics2:material:52>, [<ae2fc:dense_encoded_pattern>]);
+
+// Жидкостный сборщик
+assembler.recipeBuilder()
+  .inputs([
+    <ore:paneGlassColorless> * 2,
+    <ore:circuitHv> * 2,
+    <metaitem:conveyor.module.hv> * 2,
+    <metaitem:fluid.regulator.hv> * 2,
+    <metaitem:plateSteel> * 4])
+  .fluidInputs([<liquid:plastic> * 144])
+  .outputs([<ae2fc:fluid_assembler>])
+  .duration(200).EUt(480).buildAndRegister();
