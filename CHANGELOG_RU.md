@@ -2,6 +2,8 @@
 
 ## [4.2.0] - 2023-02-25
 ### Исправления модпака
+- **Внимание**
+- **При обновлении на эту версию, у вас изчезнут все инструменты GregTech, а так же беспроводные терминалы из аддонов AE2WTLib.**
 - Перенесены скрипты crafttweaker  Utility\JEI\AppliedEnergistics2  в groovy.
 - Перенесены скрипты crafttweaker  Utility\JEI\JEI-Other  в groovy.
 - Удалены скрипты AE2WTLib на беспроводные терминалы AE, 
@@ -17,9 +19,42 @@
 - Исправлен краш игры при не полной поломке инструмента/предмета.
 - Добавлен крафт для многоканального кабеля ProjectRed.
 - Для серверного пакета общего пользования удален Simple Login, если он вам нужен для авторизации, установите в ручную.
+- Мод Inventory Bogo Sorter был удален, пока с ним много проблем, его заменит функция сортировки из мода Quark. 
+- Добавлен мод Quark большинство фич включено, позже их список будет корректироваться по мере надобновсти.
 
 ### Обновление модов
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- TFG-Mod
+- CraftPresence
+- CraftTweaker
+- CustomSkinLoader
+- Galacticraft
+- GregicalityMultiblocks
+- GregTech
+- GregTech Food Option
+- GroovyScript
+- Just Stargate Mod (Aunis: Resurrection)
+- LittleTiles
+- MultiblockTweaker
+- RoughlyEnoughIDs
+- Supermartijn642corelib
+- UniversalTweaks
 
+### Новые моды
+- AutoRegLib
+- Quark
+
+### Удаленные моды
+- Inventory Bogo Sorter
+- Mechtech
+- HtmlTech
+- AE2WTLib
+- WirelessInterfaceTerminal
+- WirelessFluidTerminal
+- WirelessCraftingTerminal
+- WirelessPatternTerminal
+- FastWorkbench
 
 ## [4.1.12] - 2023-01-30
 ### Исправления модпака
