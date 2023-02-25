@@ -1,7 +1,7 @@
 version:1343
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.5
 gamma:1.0
 saturation:0.0
 renderDistance:8
@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["TFC+Florae+Lite.zip","JSG-SD-1.12.2-1.0.0.0.zip"]
+resourcePacks:["TFG-Resourcepacks-1.0.0.zip","TFC+Florae+Lite.zip","JSG-SD-1.12.2-1.0.0.0.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -24,12 +24,12 @@ chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
-snooperEnabled:true
+snooperEnabled:false
 fullscreen:false
 enableVsync:false
-useVbo:false
+useVbo:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 touchscreen:false
 overrideWidth:0
@@ -49,7 +49,7 @@ attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:false
+autoJump:true
 narrator:0
 tutorialStep:movement
 soundCategory_master:1.0
