@@ -1190,7 +1190,6 @@ for i, allSeeds in allSeeds {
 // Lumber -> dustWood
 for i, TFC_Logs in TFC_Logs {
 	cutter.recipeBuilder()
-		.circuit(2)
 		.inputs([TFC_Lumber[i]])
 		.fluidInputs([<liquid:lubricant> * 1000])
 		.outputs(

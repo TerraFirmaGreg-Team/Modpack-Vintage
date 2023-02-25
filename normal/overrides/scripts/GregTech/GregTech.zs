@@ -266,6 +266,116 @@ forming_press.recipeBuilder()
     .outputs(<metaitem:shape.mold.knife>)
     .duration(120).EUt(22).buildAndRegister();
 
+// Extruder Shape (Sword Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_sword", <metaitem:shape.extruder.sword>, [
+    [null,null, null],
+    [null, <metaitem:shape.extruder.plate>, <gregtech:wire_cutter>],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.sword>)
+  .outputs([<metaitem:shape.extruder.sword>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Saw Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_saw", <metaitem:shape.extruder.saw>, [
+    [null,null, null],
+    [null, <metaitem:shape.extruder.plate>, null],
+    [null, null, <gregtech:wire_cutter>]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.saw>)
+  .outputs([<metaitem:shape.extruder.saw>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Hammer Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_hammer", <metaitem:shape.extruder.hammer>, [
+    [null,null, <gregtech:wire_cutter>],
+    [null, <metaitem:shape.extruder.ingot>, null],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.hammer>)
+  .outputs([<metaitem:shape.extruder.hammer>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (File Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_file", <metaitem:shape.extruder.file>, [
+    [null,null, <gregtech:wire_cutter>],
+    [null, <metaitem:shape.extruder.plate>, null],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.file>)
+  .outputs([<metaitem:shape.extruder.file>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Hoe Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_hoe", <metaitem:shape.extruder.hoe>, [
+    [null,null, null],
+    [null, <metaitem:shape.extruder.ingot>, <gregtech:wire_cutter>],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.hoe>)
+  .outputs([<metaitem:shape.extruder.hoe>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Axe Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_axe", <metaitem:shape.extruder.axe>, [
+    [<gregtech:wire_cutter>,null, null],
+    [null, <metaitem:shape.extruder.plate>, null],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.axe>)
+  .outputs([<metaitem:shape.extruder.axe>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Shovel Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_shovel", <metaitem:shape.extruder.shovel>, [
+    [<gregtech:wire_cutter>,null, null],
+    [null, <metaitem:shape.extruder.plate>, null],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.shovel>)
+  .outputs([<metaitem:shape.extruder.shovel>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Pickaxe Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_pickaxe", <metaitem:shape.extruder.pickaxe>, [
+    [null,null, <gregtech:wire_cutter>],
+    [null, <metaitem:shape.extruder.ingot>, null],
+    [null, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.pickaxe>)
+  .outputs([<metaitem:shape.extruder.pickaxe>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Extruder Shape (Chisel Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_chisel", <metaitem:shape.extruder.chisel>, [
+    [null,null, null],
+    [null, <metaitem:shape.extruder.plate>, null],
+    [<gregtech:wire_cutter>, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.extruder.chisel>)
+  .outputs([<metaitem:shape.extruder.chisel>])
+  .duration(120).EUt(22).buildAndRegister();
+
+// Mold (Propick Head)
+recipes.addShaped("tfg/gregtech/shape_extruder_propick", <metaitem:shape.mold.propick>, [
+    [<metaitem:shape.extruder.plate>,null, null],
+    [null, null, null],
+    [<gregtech:hammer>, null, null]]);
+forming_press.recipeBuilder()
+  .inputs([<metaitem:shape.empty>])
+  .notConsumable(<metaitem:shape.mold.propick>)
+  .outputs([<metaitem:shape.mold.propick>])
+  .duration(120).EUt(22).buildAndRegister();
+
 // Растительное масло
 extractor.recipeBuilder()
     .inputs(<ore:allSeeds>)

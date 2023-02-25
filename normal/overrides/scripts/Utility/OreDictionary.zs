@@ -351,6 +351,10 @@ for item in TFC_Saws {
 // Exquisite Gems from GT
 <ore:gemExquisite>.add(<gregtech:meta_gem_exquisite:*>);
 
+<ore:knife>.add(<gregtech:knife>);
+<ore:hammer>.add(<gregtech:hammer>);
+<ore:saw>.add(<gregtech:saw>);
+
 // --- Удаление
 
 <ore:stoneBasalt>.remove(<gregtech:stone_smooth:3>);
