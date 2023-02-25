@@ -1,5 +1,26 @@
 # Changelog
 
+## [4.2.1] - 2023-02-26
+### Modpack fixes
+- Returned Inventory Bogo Sorter as there are no alternatives for sorting boxes from GregTech.
+- Fixed a crash when using tongs with hot items.
+- While the Star Forge and Sawmill multiblocks are removed, due to a bug that occurs only on the server, it will be added again in the future, but through TFG-Mod, if you already have these multiblocks, only controllers will disappear.
+- Fixed not being able to use a hammer in an anvil.
+- Fixed recipes for the saw.
+- Added missing recipes for extruder molds.
+- Added some missing tfcflorae textures.
+- Fixed yellow light when using night vision.
+
+### Update mods
+- Universal Tweaks
+- Hot or Not
+
+### New mods
+- Inventory Bogo Sorter
+
+### Removed Mods
+- Multiblock Tweaker
+
 ## [4.2.0] - 2023-02-25
 ### Modpack fixes
 - **Attention**
