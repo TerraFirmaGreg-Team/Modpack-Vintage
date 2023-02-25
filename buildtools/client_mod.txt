@@ -29,3 +29,4 @@
 .minecraft/mods/tfctowerheat-1.2.jar
 .minecraft/mods/Tips-1.12.2-1.0.9.jar
 .minecraft/mods/Toast Control-1.12.2-1.8.1.jar
+.minecraft/mods/simplelogin-1.2.4-beta+build127.jar
