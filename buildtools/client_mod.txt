@@ -2,7 +2,7 @@
 .minecraft/mods/betterchat-1.4.jar
 .minecraft/mods/BetterFoliage-MC1.12-2.3.3.jar
 .minecraft/mods/ChunkAnimator-1.12.2-1.2.1.jar
-.minecraft/mods/CraftPresence-2.0.0-alpha.3+1.12.2.jar
+.minecraft/mods/CraftPresence-2.0.0-beta.2+1.12.2.jar
 .minecraft/mods/CustomLoadingScreen-1.12.2-1.5.7.jar
 .minecraft/mods/darkness-forge-1.12.x-0.5.0.jar
 .minecraft/mods/DefaultOptions_1.12.2-9.2.8.jar
@@ -12,7 +12,7 @@
 .minecraft/mods/InventoryHUD-1.12.2.forge-3.4.4.jar
 .minecraft/mods/ItemPhysic Lite 1.3.7 mc1.12.2.jar
 .minecraft/mods/jetif-1.12.2-1.5.2.jar
-.minecraft/mods/jsg-1.12.2-4.11.0.3-client.jar
+.minecraft/mods/jsg-1.12.2-4.11.0.5-client.jar
 .minecraft/mods/keywizard-1.12.2-1.7.3.jar
 .minecraft/mods/konkrete_forge_1.6.0_MC_1.12-1.12.2.jar
 .minecraft/mods/LegendaryTooltips-1.12.2-1.1.9.jar
