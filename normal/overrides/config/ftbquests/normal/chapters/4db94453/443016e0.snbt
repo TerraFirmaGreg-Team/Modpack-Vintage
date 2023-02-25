@@ -9,7 +9,7 @@
 		uid: "fdd7cba0",
 		type: "item",
 		items: [{
-			item: "aeadditions:fluidcrafter"
+			item: "ae2fc:fluid_assembler"
 		}]
 	}]
 }

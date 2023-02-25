@@ -1,13 +1,12 @@
 {
   "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
-  "_schemaVersion": 1,
+  "_schemaVersion": 2,
   "_lastMCVersionId": 340,
   "generalSettings": {
     "detectCurseManifest": true,
     "detectMultiMCManifest": true,
     "detectMCUpdaterInstance": true,
     "detectTechnicPack": true,
-    "showTime": true,
     "detectBiomeData": true,
     "detectDimensionData": true,
     "detectWorldData": true,
@@ -23,7 +22,25 @@
     "fallbackBiomeIcon": "tfg_logo",
     "biomeData": {
       "default": {
-        "textOverride": "Playing in {biome.name}"
+        "textOverride": "Playing in {biome.name}",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {
+            "default": {
+              "label": "Example Text",
+              "url": "https://google.com"
+            }
+          }
+        }
       }
     }
   },
@@ -31,7 +48,25 @@
     "fallbackDimensionIcon": "tfg_logo",
     "dimensionData": {
       "default": {
-        "textOverride": "In the {dimension.name}"
+        "textOverride": "In the {dimension.name}",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {
+            "default": {
+              "label": "Example Text",
+              "url": "https://google.com"
+            }
+          }
+        }
       }
     }
   },
@@ -41,7 +76,25 @@
     "fallbackServerMotd": "TerraFirmaGreg Server",
     "serverData": {
       "default": {
-        "textOverride": "Playing on {server.motd.raw}"
+        "textOverride": "Playing on {server.motd.raw}",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {
+            "default": {
+              "label": "Example Text",
+              "url": "https://google.com"
+            }
+          }
+        }
       }
     }
   },
@@ -58,6 +111,8 @@
         "largeImageText": "",
         "smallImageKey": "",
         "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
         "buttons": {
           "default": {
             "label": "Example Text",
@@ -68,14 +123,68 @@
     },
     "loadingData": {
       "textOverride": "Loading...",
-      "iconOverride": "tfg_logo"
+      "iconOverride": "tfg_logo",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
     },
     "lanData": {
-      "textOverride": "Playing on a LAN Server"
+      "textOverride": "Playing on a LAN Server",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
     },
     "singleplayerData": {
       "textOverride": "Playing Singleplayer",
-      "iconOverride": "tfg_logo"
+      "iconOverride": "tfg_logo",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
     }
   },
   "advancedSettings": {
@@ -95,7 +204,25 @@
       "fallbackGuiIcon": "tfg_logo",
       "guiData": {
         "default": {
-          "textOverride": "In {screen.name}"
+          "textOverride": "In {screen.name}",
+          "data": {
+            "enabled": true,
+            "useAsMain": false,
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
+            "endTimestamp": "",
+            "buttons": {
+              "default": {
+                "label": "Example Text",
+                "url": "https://google.com"
+              }
+            }
+          }
         }
       }
     },
@@ -106,12 +233,48 @@
       "fallbackEntityIcon": "tfg_logo",
       "targetData": {
         "default": {
-          "textOverride": "Targeting {entity.target.name}"
+          "textOverride": "Targeting {entity.target.name}",
+          "data": {
+            "enabled": true,
+            "useAsMain": false,
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
+            "endTimestamp": "",
+            "buttons": {
+              "default": {
+                "label": "Example Text",
+                "url": "https://google.com"
+              }
+            }
+          }
         }
       },
       "ridingData": {
         "default": {
-          "textOverride": "Riding {entity.riding.name}"
+          "textOverride": "Riding {entity.riding.name}",
+          "data": {
+            "enabled": true,
+            "useAsMain": false,
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
+            "endTimestamp": "",
+            "buttons": {
+              "default": {
+                "label": "Example Text",
+                "url": "https://google.com"
+              }
+            }
+          }
         }
       }
     },
@@ -141,6 +304,8 @@
       "largeImageText": "{menu.message != null ? menu.message : (dimension.message != null ? dimension.message : '')}",
       "smallImageKey": "{server.icon != null ? server.icon : (pack.name != null ? pack.name : '')}",
       "smallImageText": "{server.message != null ? server.message : ''} {pack.name != null ? pack.name : ''}",
+      "startTimestamp": "{data.general.time}",
+      "endTimestamp": "",
       "buttons": {
         "default": {
           "label": "Discord",
