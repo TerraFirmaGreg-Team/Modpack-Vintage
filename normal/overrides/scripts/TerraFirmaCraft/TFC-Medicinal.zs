@@ -4,7 +4,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 // Массивы
-val ExtractHolder as IOreDictEntry[] = [
+val extractHolder as IOreDictEntry[] = [
   <ore:herbalExtractHolder>,
   <ore:livelyExtractHolder>,
   <ore:energeticExtractHolder>,
@@ -14,7 +14,7 @@ val ExtractHolder as IOreDictEntry[] = [
   <ore:fragrantExtractHolder>
 ];
 
-val Extract as IItemStack[] = [
+val extract as IItemStack[] = [
   <tfcmedicinal:extract/herbal>, 
   <tfcmedicinal:extract/lively>, 
   <tfcmedicinal:extract/energetic>,
@@ -24,7 +24,7 @@ val Extract as IItemStack[] = [
   <tfcmedicinal:extract/fragrant>
 ];
 
-val MedicineVial as IItemStack[] = [
+val medicineVial as IItemStack[] = [
   <tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "warming_panacea", Amount: 100}}), 
   <tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "health_boost_concoction", Amount: 100}}), 
   <tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "death_sickness_antidote", Amount: 100}}),
@@ -36,7 +36,7 @@ val MedicineVial as IItemStack[] = [
   <tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "nourishing_concoction", Amount: 100}})
 ];
 
-val Catalyst as IItemStack[] = [
+val catalyst as IItemStack[] = [
   <tfcmedicinal:catalyst>.withTag({Fluid: {FluidName: "warming_panacea", Amount: 100}}),
   <tfcmedicinal:catalyst>.withTag({Fluid: {FluidName: "health_boost_concoction", Amount: 100}}),
   <tfcmedicinal:catalyst>.withTag({Fluid: {FluidName: "death_sickness_antidote", Amount: 100}}),
@@ -48,21 +48,22 @@ val Catalyst as IItemStack[] = [
   <tfcmedicinal:catalyst>.withTag({Fluid: {FluidName: "nourishing_concoction", Amount: 100}})
 ];
 
-for i, Extract in Extract {
-    recipes.addShapeless(Extract, [ExtractHolder[i], <tfcmedicinal:mpestle>.reuse()]);
+
+for i, extract in extract {
+    recipes.addShapeless(extract, [extractHolder[i], <tfcmedicinal:mpestle>.reuse()]);
     macerator.recipeBuilder()
-      .inputs(ExtractHolder[i])
-      .outputs(Extract)
+      .inputs(extractHolder[i])
+      .outputs(extract)
       .duration(20).EUt(7).buildAndRegister();
 }
 
-for i, MedicineVial in MedicineVial {
-    chemical_reactor.recipeBuilder()
-      .inputs(Catalyst[i])
-      .inputs(<tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "base_concoction", Amount: 100}}))
-      .outputs(MedicineVial)
-      .duration(20).EUt(7).buildAndRegister();
-}
+// for i, medicineVial in medicineVial {
+//     chemical_reactor.recipeBuilder()
+//       .inputs(catalyst[i])
+//       .inputs(<tfcmedicinal:medicine_vial>.withTag({Fluid: {FluidName: "base_concoction", Amount: 100}}))
+//       .outputs(medicineVial)
+//       .duration(20).EUt(7).buildAndRegister();
+// }
 
 chemical_reactor.recipeBuilder()
   .inputs(<tfc:plants/turkey_tail>)

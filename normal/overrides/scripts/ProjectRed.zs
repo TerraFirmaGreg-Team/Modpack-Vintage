@@ -170,8 +170,6 @@ assembler.recipeBuilder()
 	.fluidInputs([<liquid:redstone> * 144])
 	.outputs(<projectred-transmission:wire> * 12)
 	.duration(180).EUt(32).buildAndRegister();
-
-// Покраска проводов
 for i, transmissionWiresArray in transmissionWiresArray {
 	chemical_bath.recipeBuilder()
 		.inputs([<projectred-transmission:wire>])
@@ -180,18 +178,16 @@ for i, transmissionWiresArray in transmissionWiresArray {
 		.duration(100).EUt(16).buildAndRegister();
 }
 
-// Red Alloy Wire
+// Bundled Cable
 assembler.recipeBuilder()
 	.circuit(3)
 	.inputs(<projectred-transmission:wire> * 5)
 	.inputs(<ore:string> * 4)
 	.outputs(<projectred-transmission:wire:17> * 12)
 	.duration(180).EUt(32).buildAndRegister();
-
-// Bundled Cable
 for i, bundledCableArray in bundledCableArray {
 	chemical_bath.recipeBuilder()
-		.inputs([<projectred-transmission:wire>])
+		.inputs(<projectred-transmission:wire:17>)
 		.fluidInputs([colorLiquid[i] * 18])
 		.outputs(bundledCableArray)
 		.duration(100).EUt(16).buildAndRegister();

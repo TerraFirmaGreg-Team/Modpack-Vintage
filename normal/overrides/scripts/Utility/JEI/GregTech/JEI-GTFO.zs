@@ -339,7 +339,7 @@ mixer.findRecipe(8, [<metaitem:dustWheat> * 4, <metaitem:dustTinySalt>, <metaite
 // cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 8, <metaitem:circuit.integrated>], [<liquid:gtfo_tomato_sauce> * 600]).remove();
 
 // Raw Mince Meat Pizza
-cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10], [<liquid:gtfo_tomato_sauce> * 450]).remove();
+//cuisine_assembler.findRecipe(180, [<metaitem:component.flat_dough>, <metaitem:component.mozzarella_slice> * 4, <metaitem:dustMeat> * 10], [<liquid:gtfo_tomato_sauce> * 450]).remove();
 
 // Sugary Dough
 mixer.findRecipe(7, [<minecraft:sugar:0>, <metaitem:component.dough>], null).remove();
