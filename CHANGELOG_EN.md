@@ -1,9 +1,16 @@
 # Changelog
 
-## [4.2.2] - 2023-02-26
+## [4.2.2] - 2023-02-27
 ### Modpack fixes
 - Fixed quest for stone tools.
 - Fixed recipe for wooden tongs.
+- Fixed Extruder Shape recipes.
+- Removed TFC-Farming mod, since GT tools are not supported, we will fix this later, or it will already be part of the TFK fork.
+- Quern now gives you 1 Dust instead of 2.
+- Grindstone now gives you 2 Dust instead of 3.
+
+### Removed mods
+- TFC Farming
 
 ## [4.2.1] - 2023-02-26
 ### Modpack fixes
