@@ -3,7 +3,7 @@ name: Deploy modpack
 on:
   push:
     tags:
-      - 'R*'
+      - 'R*.*.*'
 
 jobs:
   Deploy:
