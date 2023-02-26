@@ -43,11 +43,6 @@ for item in allSlabsSmooth {
 	<ore:slabStone>.add(item);
 }
 
-// OreDictionary for all fertilizers
-for item in dustFertilizerArray {
-    <ore:dustFertilizer>.add(item);
-}
-
 <ore:itemBeeswax>.add(<firmalife:beeswax>);
 <ore:sugarcane>.add(<tfc:food/sugarcane>);
 <ore:ingotUnfinishedWroughtIron>.add(<tfc:metal/ingot/wrought_iron>);
