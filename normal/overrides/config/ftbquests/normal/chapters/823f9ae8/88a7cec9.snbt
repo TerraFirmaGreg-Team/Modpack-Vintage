@@ -10,17 +10,18 @@
 		uid: "3ce16c52",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:hoe",
 			tag: {
-				display: {
-					Name: "Any hoeStone"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "hoeStone"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "stone",
+					MaxDurability: 42,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -1.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		}],
 		ignore_damage: true,

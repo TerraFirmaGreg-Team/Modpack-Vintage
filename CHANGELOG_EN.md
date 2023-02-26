@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.2.2] - 2023-02-26
+### Modpack fixes
+- Fixed quest for stone tools.
+- Fixed recipe for wooden tongs.
+
 ## [4.2.1] - 2023-02-26
 ### Modpack fixes
 - Returned Inventory Bogo Sorter as there are no alternatives for sorting boxes from GregTech.

@@ -11,17 +11,20 @@
 		uid: "9672083c",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:hammer",
 			tag: {
-				display: {
-					Name: "Any hammerStone"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "hammerStone"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "stone",
+					MaxDurability: 42,
+					Durability: 0,
+					ToolSpeed: 5.0f,
+					HarvestLevel: 1,
+					AttackDamage: 2.0f,
+					AttackSpeed: -2.8f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		}],
 		ignore_nbt: 1b
