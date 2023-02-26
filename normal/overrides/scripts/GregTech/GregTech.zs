@@ -269,7 +269,7 @@ forming_press.recipeBuilder()
 // Extruder Shape (Sword Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_sword", <metaitem:shape.extruder.sword>, [
     [null,null, null],
-    [null, <metaitem:shape.extruder.plate>, <gregtech:wire_cutter>],
+    [null, <metaitem:shape.extruder.plate>, <ore:toolWireCutter>],
     [null, null, null]]);
 forming_press.recipeBuilder()
   .inputs([<metaitem:shape.empty>])
@@ -281,7 +281,7 @@ forming_press.recipeBuilder()
 recipes.addShaped("tfg/gregtech/shape_extruder_saw", <metaitem:shape.extruder.saw>, [
     [null,null, null],
     [null, <metaitem:shape.extruder.plate>, null],
-    [null, null, <gregtech:wire_cutter>]]);
+    [null, null, <ore:toolWireCutter>]]);
 forming_press.recipeBuilder()
   .inputs([<metaitem:shape.empty>])
   .notConsumable(<metaitem:shape.extruder.saw>)
@@ -290,7 +290,7 @@ forming_press.recipeBuilder()
 
 // Extruder Shape (Hammer Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_hammer", <metaitem:shape.extruder.hammer>, [
-    [null,null, <gregtech:wire_cutter>],
+    [null,null, <ore:toolWireCutter>],
     [null, <metaitem:shape.extruder.ingot>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -301,7 +301,7 @@ forming_press.recipeBuilder()
 
 // Extruder Shape (File Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_file", <metaitem:shape.extruder.file>, [
-    [null,null, <gregtech:wire_cutter>],
+    [null,null, <ore:toolWireCutter>],
     [null, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -313,7 +313,7 @@ forming_press.recipeBuilder()
 // Extruder Shape (Hoe Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_hoe", <metaitem:shape.extruder.hoe>, [
     [null,null, null],
-    [null, <metaitem:shape.extruder.ingot>, <gregtech:wire_cutter>],
+    [null, <metaitem:shape.extruder.ingot>, <ore:toolWireCutter>],
     [null, null, null]]);
 forming_press.recipeBuilder()
   .inputs([<metaitem:shape.empty>])
@@ -323,7 +323,7 @@ forming_press.recipeBuilder()
 
 // Extruder Shape (Axe Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_axe", <metaitem:shape.extruder.axe>, [
-    [<gregtech:wire_cutter>,null, null],
+    [<ore:toolWireCutter>,null, null],
     [null, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -334,7 +334,7 @@ forming_press.recipeBuilder()
 
 // Extruder Shape (Shovel Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_shovel", <metaitem:shape.extruder.shovel>, [
-    [<gregtech:wire_cutter>,null, null],
+    [<ore:toolWireCutter>,null, null],
     [null, <metaitem:shape.extruder.plate>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -345,7 +345,7 @@ forming_press.recipeBuilder()
 
 // Extruder Shape (Pickaxe Head)
 recipes.addShaped("tfg/gregtech/shape_extruder_pickaxe", <metaitem:shape.extruder.pickaxe>, [
-    [null,null, <gregtech:wire_cutter>],
+    [null,null, <ore:toolWireCutter>],
     [null, <metaitem:shape.extruder.ingot>, null],
     [null, null, null]]);
 forming_press.recipeBuilder()
@@ -358,7 +358,7 @@ forming_press.recipeBuilder()
 recipes.addShaped("tfg/gregtech/shape_extruder_chisel", <metaitem:shape.extruder.chisel>, [
     [null,null, null],
     [null, <metaitem:shape.extruder.plate>, null],
-    [<gregtech:wire_cutter>, null, null]]);
+    [<ore:toolWireCutter>, null, null]]);
 forming_press.recipeBuilder()
   .inputs([<metaitem:shape.empty>])
   .notConsumable(<metaitem:shape.extruder.chisel>)
@@ -369,7 +369,7 @@ forming_press.recipeBuilder()
 recipes.addShaped("tfg/gregtech/shape_extruder_propick", <metaitem:shape.mold.propick>, [
     [<metaitem:shape.extruder.plate>,null, null],
     [null, null, null],
-    [<gregtech:hammer>, null, null]]);
+    [<ore:toolHammer>, null, null]]);
 forming_press.recipeBuilder()
   .inputs([<metaitem:shape.empty>])
   .notConsumable(<metaitem:shape.mold.propick>)
