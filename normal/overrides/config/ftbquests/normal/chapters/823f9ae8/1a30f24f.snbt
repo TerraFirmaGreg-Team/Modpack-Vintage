@@ -12,18 +12,21 @@
 		uid: "3a219f78",
 		type: "item",
 		items: [{
-			id: "itemfilters:filter",
+			id: "gregtech:tongs",
 			tag: {
-				display: {
-					Name: "Any craftingToolTongs"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "craftingToolTongs"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "wood",
+					MaxDurability: 400,
+					Durability: 0,
+					AttackDamage: 5.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
-		}]
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }
