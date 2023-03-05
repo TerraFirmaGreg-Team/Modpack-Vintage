@@ -27,9 +27,9 @@ def RemoveRecipe = [
 // --- Удаление рецептов
 
 for (item in RemoveAndHide) {
-    mods.jei.removeAndHide(item);
+    mods.jei.removeAndHide(item)
 }
 
 for (item in RemoveRecipe) {
-    crafting.removeByOutput(item);
+    crafting.removeByOutput(item)
 }

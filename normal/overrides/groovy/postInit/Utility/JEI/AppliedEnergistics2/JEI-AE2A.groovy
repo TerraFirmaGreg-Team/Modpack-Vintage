@@ -1,6 +1,10 @@
 
 // --- Массивы
 
+def hide = [
+    item('aeadditions:pattern.fluid').withNbt([Fluid: [FluidName: "*.*", Amount: 1000]])
+]
+
 def removeAndHide = [
   item('aeadditions:certustank'),
   item('aeadditions:vibrantchamberfluid'),
@@ -46,10 +50,14 @@ def removeRecipe = [
 
 // --- Удаление рецептов
 
+for (item in hide) {
+	mods.jei.hide(item)
+}
+
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item);
+    mods.jei.removeAndHide(item)
 }
 
 for (item in removeRecipe) {
-    crafting.removeByOutput(item);
+    crafting.removeByOutput(item)
 }
