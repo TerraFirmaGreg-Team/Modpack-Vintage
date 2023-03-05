@@ -16,11 +16,16 @@
 			}
 		},
 		items: [{
-			id: "tfc:food/sugarcane",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any sugarcane"
+				}
+			},
 			ForgeCaps: {
-				"tfc:food": {
-					creationDate: -9223372036854775808L,
-					traits: []
+				Parent: {
+					id: "ore",
+					data: "sugarcane"
 				}
 			}
 		}],

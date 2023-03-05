@@ -18,7 +18,7 @@
 		uid: "642e5f0b",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 32000"
+			item: "gregtech:machine 1 8565"
 		}]
 	}]
 }
