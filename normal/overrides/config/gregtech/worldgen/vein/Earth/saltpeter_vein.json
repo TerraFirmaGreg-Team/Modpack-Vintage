@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Saltpeter",
+  "name": "Earth Saltpeter",
   "weight": 40,
   "density": 0.25,
   "min_height": 5,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "saltpeter"
   },
-  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawMetamorphic"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawMetamorphic"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      14,
-      32
-    ]
+    "radius": [14, 32]
   },
   "filler": {
     "type": "layered",

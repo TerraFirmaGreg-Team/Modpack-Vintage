@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Coal",
+  "name": "Earth Coal",
   "weight": 80,
   "density": 0.15,
   "max_height": 80,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "coal"
   },
-  "generation_predicate":["ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generation_predicate": [
+    "ore_dict:rawSedimentary",
+    "ore_dict:rawMetamorphic"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      20,
-      32
-    ]
+    "radius": [20, 32]
   },
   "filler": {
     "type": "layered",

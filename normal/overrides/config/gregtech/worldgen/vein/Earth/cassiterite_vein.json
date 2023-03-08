@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Cassiterite",
+  "name": "Earth Cassiterite",
   "weight": 90,
   "density": 0.2,
   "max_height": 220,
@@ -8,13 +8,15 @@
     "type": "surface_rock",
     "material": "cassiterite"
   },
-  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawIgneousExtrusive",
+    "ore_dict:rawSedimentary",
+    "ore_dict:rawMetamorphic"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      17,
-      32
-    ]
+    "radius": [17, 32]
   },
   "filler": {
     "type": "layered",

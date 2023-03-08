@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Pitchblende",
+  "name": "Earth Pitchblende",
   "weight": 15,
   "density": 0.1,
   "min_height": 10,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "uraninite"
   },
-  "generation_predicate": ["ore_dict:RawIgneousIntrusive", "ore_dict:RawMetamorphic"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawMetamorphic"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      7,
-      16
-    ]
+    "radius": [7, 16]
   },
   "filler": {
     "type": "layered",

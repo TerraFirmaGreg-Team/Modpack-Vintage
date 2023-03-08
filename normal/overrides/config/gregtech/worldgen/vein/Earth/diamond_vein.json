@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Diamond",
+  "name": "Earth Diamond",
   "weight": 45,
   "density": 0.25,
   "max_height": 135,
@@ -8,13 +8,10 @@
     "type": "surface_rock",
     "material": "graphite"
   },
-  "generation_predicate":["ore_dict:RawMetamorphic"],
+  "generation_predicate": ["ore_dict:rawMetamorphic"],
   "generator": {
     "type": "layered",
-    "radius": [
-      14,
-      32
-    ]
+    "radius": [14, 32]
   },
   "filler": {
     "type": "layered",

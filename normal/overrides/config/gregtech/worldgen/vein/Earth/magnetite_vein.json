@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Magnetite",
+  "name": "Earth Magnetite",
   "weight": 80,
   "density": 0.15,
   "max_height": 140,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "magnetite"
   },
-  "generation_predicate": ["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawIgneousExtrusive"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      20,
-      32
-    ]
+    "radius": [20, 32]
   },
   "filler": {
     "type": "layered",

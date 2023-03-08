@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Glowstone",
+  "name": "Earth Glowstone",
   "weight": 60,
   "density": 0.2,
   "max_height": 125,
@@ -8,13 +8,10 @@
     "type": "surface_rock",
     "material": "glowstone"
   },
-  "generation_predicate": ["ore_dict:RawIgneousIntrusive"],
+  "generation_predicate": ["ore_dict:rawIgneousIntrusive"],
   "generator": {
     "type": "layered",
-    "radius": [
-      12,
-      18
-    ]
+    "radius": [12, 18]
   },
   "filler": {
     "type": "layered",

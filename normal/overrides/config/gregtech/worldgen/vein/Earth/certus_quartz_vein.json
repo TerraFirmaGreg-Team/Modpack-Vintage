@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Certus Quartz",
+  "name": "Earth Certus Quartz",
   "weight": 40,
   "density": 0.25,
   "min_height": 45,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "barite"
   },
-  "generation_predicate":["ore_dict:RawSedimentary", "ore_dict:RawMetamorphic"],
+  "generation_predicate": [
+    "ore_dict:rawSedimentary",
+    "ore_dict:rawMetamorphic"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      14,
-      32
-    ]
+    "radius": [14, 32]
   },
   "filler": {
     "type": "layered",

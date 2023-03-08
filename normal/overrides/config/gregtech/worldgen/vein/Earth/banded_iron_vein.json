@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Banded Iron",
+  "name": "Earth Banded Iron",
   "weight": 75,
   "density": 0.2,
   "max_height": 110,
@@ -8,13 +8,14 @@
     "type": "surface_rock",
     "material": "banded_iron"
   },
-  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawIgneousExtrusive", "ore_dict:RawSedimentary"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawIgneousExtrusive",
+    "ore_dict:rawSedimentary"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      17,
-      32
-    ]
+    "radius": [17, 32]
   },
   "filler": {
     "type": "layered",

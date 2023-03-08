@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Sulfur",
+  "name": "Earth Sulfur",
   "weight": 75,
   "density": 0.35,
   "max_height": 115,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "sphalerite"
   },
-  "generation_predicate": ["ore_dict:RawIgneousIntrusive", "ore_dict:RawSedimentary"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawSedimentary"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      17,
-      32
-    ]
+    "radius": [17, 32]
   },
   "filler": {
     "type": "layered",

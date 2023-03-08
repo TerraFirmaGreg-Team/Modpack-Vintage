@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Galena",
+  "name": "Earth Galena",
   "weight": 40,
   "density": 0.25,
   "max_height": 120,
@@ -8,13 +8,13 @@
     "type": "surface_rock",
     "material": "galena"
   },
-  "generation_predicate":["ore_dict:RawIgneousIntrusive", "ore_dict:RawSedimentary"],
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawSedimentary"
+  ],
   "generator": {
     "type": "layered",
-    "radius": [
-      14,
-      32
-    ]
+    "radius": [14, 32]
   },
   "filler": {
     "type": "layered",

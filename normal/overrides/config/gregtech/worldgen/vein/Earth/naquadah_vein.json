@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Naquadah",
+  "name": "Earth Naquadah",
   "weight": 20,
   "density": 0.05,
   "max_height": 75,
@@ -8,13 +8,10 @@
     "type": "surface_rock",
     "material": "naquadah"
   },
-  "generation_predicate": ["ore_dict:RawMetamorphic"],
+  "generation_predicate": ["ore_dict:rawMetamorphic"],
   "generator": {
     "type": "layered",
-    "radius": [
-      10,
-      16
-    ]
+    "radius": [10, 16]
   },
   "filler": {
     "type": "layered",

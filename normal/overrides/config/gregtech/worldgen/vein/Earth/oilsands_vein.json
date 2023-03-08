@@ -1,5 +1,5 @@
 {
-  "name" : "Earth Oilsands",
+  "name": "Earth Oilsands",
   "weight": 40,
   "density": 0.3,
   "max_height": 150,
@@ -8,13 +8,10 @@
     "type": "surface_rock",
     "material": "oilsands"
   },
-  "generation_predicate": ["ore_dict:RawSedimentary"],
+  "generation_predicate": ["ore_dict:rawSedimentary"],
   "generator": {
     "type": "layered",
-    "radius": [
-      20,
-      32
-    ]
+    "radius": [20, 32]
   },
   "filler": {
     "type": "layered",
