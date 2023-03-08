@@ -15,13 +15,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any RawIgneousExtrusive"
+					Name: "Any rawIgneousExtrusive"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "RawIgneousExtrusive"
+					data: "rawIgneousExtrusive"
 				}
 			}
 		},
@@ -29,13 +29,13 @@
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any RawIgneousIntrusive"
+					Name: "Any rawIgneousIntrusive"
 				}
 			},
 			ForgeCaps: {
 				Parent: {
 					id: "ore",
-					data: "RawIgneousIntrusive"
+					data: "rawIgneousIntrusive"
 				}
 			}
 		}],

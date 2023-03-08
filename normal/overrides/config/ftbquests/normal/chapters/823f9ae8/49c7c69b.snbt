@@ -8,19 +8,16 @@
 		uid: "85271f27",
 		type: "item",
 		items: [{
-			id: "tfc:metal/unfinished_helmet/copper",
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any unfinishedHelmet"
+				}
+			},
 			ForgeCaps: {
 				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					forge: {
-						work: 0,
-						steps: {
-							last: -1,
-							second: -1,
-							third: -1
-						}
-					}
+					id: "ore",
+					data: "unfinishedHelmet"
 				}
 			}
 		}],
