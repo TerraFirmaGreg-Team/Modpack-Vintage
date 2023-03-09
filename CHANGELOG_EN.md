@@ -1,5 +1,44 @@
 # Changelog
 
+## [4.2.3] - 2023-03-09
+### Modpack fixes
+- A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
+- Fixed a bug with tools when they could not be used in TFK mechanics at the slightest break.
+- Recipe transfer JEI prefers to use an existing item in the ME network.
+- Added split mode button to allow items and liquid to be inserted on the same side or not.
+- In AE, fixed a customized UI element not being displayed if the amount is greater than 128.
+- New cell models.
+- Fixed many bugs with AE2 recipes, OS.
+- Fixed missing electrical tool recipes.
+- Fixed bug opening GT center monitor interface.
+- Fixed inability to process some of the plates in GT machines.
+- Corrections in the quest for the greenhouse.
+- Correction in the quest for sugar cane.
+- Remove quests that are not used.
+- The quest for the "endless water" improvement has been moved to another branch.
+- Fixed display of electric tool.
+- The name of the resource pack will now be the same, so that when updating it does not switch it every time you update.
+- Fixed rights error when using FTB utilities.
+- Improved TFCFlorae textures moved from resource pack to modpack.
+- Disabled "back/home" commands.
+- Minimum and maximum rtp distance increased to 10000 and 50000 respectively.
+- Added some missing TFCFlorae textures.
+- All OC recipes moved to scripts and completely rewritten.
+- Fixed sky bug with Astral Sorcery again.
+- Enabled use of Lua54 for OC.
+
+### Update mods
+- TFG mod
+- Fluid Craft for AE2
+- Appliedenergistics2
+- EnderStorage
+- Entity Culling
+- GreekityMultiblocks
+- Gregtech
+- GregTech Food Option
+- RenderLib
+- Universal Tweaks
+
 ## [4.2.2] - 2023-02-27
 ### Modpack fixes
 - Fixed quest for stone tools.
