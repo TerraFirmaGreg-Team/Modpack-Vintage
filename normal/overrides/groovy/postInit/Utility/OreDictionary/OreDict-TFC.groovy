@@ -38,6 +38,26 @@ for (item in ArrayTFC.tfcSlabsSmooth) {
 	ore('slabStone').add(item)
 }
 
+// OreDicionary for all helmets
+for (item in ArrayTFC.tfcHelmets) {
+	ore('helmet').add(item)
+}
+
+// OreDicionary for all chestplates
+for (item in ArrayTFC.tfcChestplates) {
+	ore('chestplate').add(item)
+}
+
+// OreDicionary for all greaves
+for (item in ArrayTFC.tfcGreaves) {
+	ore('greaves').add(item)
+}
+
+// OreDicionary for all boots
+for (item in ArrayTFC.tfcBoots) {
+	ore('boots').add(item)
+}
+
 // OreDictionary for all fertilizers
 // for (item in ItemArray.dustFertilizerArray) {
 //     ore('dustFertilizer').add(item)

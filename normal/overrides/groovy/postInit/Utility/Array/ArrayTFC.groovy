@@ -3735,4 +3735,51 @@ public class ArrayTFC {
 		item('tfcflorae:crop/seeds/tobacco')
 	]
 
+	static tfcHelmets = [
+		item('tfc:metal/helmet/bismuth_bronze'),
+		item('tfc:metal/helmet/black_bronze'),
+		item('tfc:metal/helmet/bronze'),
+		item('tfc:metal/helmet/copper'),
+		item('tfc:metal/helmet/wrought_iron'),
+		item('tfc:metal/helmet/steel'),
+		item('tfc:metal/helmet/black_steel'),
+		item('tfc:metal/helmet/blue_steel'),
+		item('tfc:metal/helmet/red_steel')
+	]
+
+	static tfcChestplates = [
+		item('tfc:metal/chestplate/bismuth_bronze'),
+		item('tfc:metal/chestplate/black_bronze'),
+		item('tfc:metal/chestplate/bronze'),
+		item('tfc:metal/chestplate/copper'),
+		item('tfc:metal/chestplate/wrought_iron'),
+		item('tfc:metal/chestplate/steel'),
+		item('tfc:metal/chestplate/black_steel'),
+		item('tfc:metal/chestplate/blue_steel'),
+		item('tfc:metal/chestplate/red_steel')
+	]
+
+	static tfcGreaves = [
+		item('tfc:metal/greaves/bismuth_bronze'),
+		item('tfc:metal/greaves/black_bronze'),
+		item('tfc:metal/greaves/bronze'),
+		item('tfc:metal/greaves/copper'),
+		item('tfc:metal/greaves/wrought_iron'),
+		item('tfc:metal/greaves/steel'),
+		item('tfc:metal/greaves/black_steel'),
+		item('tfc:metal/greaves/blue_steel'),
+		item('tfc:metal/greaves/red_steel')
+	]
+
+	static tfcBoots = [
+		item('tfc:metal/boots/bismuth_bronze'),
+		item('tfc:metal/boots/black_bronze'),
+		item('tfc:metal/boots/bronze'),
+		item('tfc:metal/boots/copper'),
+		item('tfc:metal/boots/wrought_iron'),
+		item('tfc:metal/boots/steel'),
+		item('tfc:metal/boots/black_steel'),
+		item('tfc:metal/boots/blue_steel'),
+		item('tfc:metal/boots/red_steel')
+	]
 }
