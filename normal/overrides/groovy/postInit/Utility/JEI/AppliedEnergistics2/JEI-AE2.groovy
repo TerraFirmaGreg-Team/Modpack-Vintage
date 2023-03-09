@@ -3,7 +3,9 @@ import postInit.Utility.Array.ItemArray
 // --- Массивы
 
 def hide = [
-    item('appliedenergistics2:facade').withNbt([item: "*:*", damage: 0])
+    item('appliedenergistics2:facade').withNbt([item: "*:*", damage: 0]),
+    item('appliedenergistics2:creative_storage_cell'),
+    item('appliedenergistics2:creative_energy_cell')
 ]
 
 def removeAndHide = [
@@ -145,34 +147,6 @@ for (item in removeAndHide) {
     mods.jei.removeAndHide(item)
 }
 
-for (item in removeRecipe) {
-    crafting.removeByOutput(item)
-}
-
-// for (item in ItemArray.glassCables) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.coveredCables) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.smartCables) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.denseSmartCables) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.denseCoveredCables) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.paintBalls) {
-//     crafting.removeByOutput(item)
-// }
-
-// for (item in ItemArray.paintBallsLumen) {
+// for (item in removeRecipe) {
 //     crafting.removeByOutput(item)
 // }

@@ -1,6 +1,6 @@
 {
   "packName": "TerraFirmaGreg:New Horizons 1.12.2",
-  "version": "4.2.3",
+  "version": "4.2.4",
   "debug": true,
   "classes": [
     "postInit/Utility/Array/",

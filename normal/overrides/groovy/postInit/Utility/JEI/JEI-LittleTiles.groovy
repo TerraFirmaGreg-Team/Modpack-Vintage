@@ -11,15 +11,18 @@ def removeRecipe = [
 	item('littletiles:chisel'),
 	item('littletiles:colortube'),
 	item('littletiles:grabber'),
-	item('littletiles:premade').withNbt([structure: [id: "exporter"]]),
-	item('littletiles:premade').withNbt([structure: [id: "importer"]]),
-	item('littletiles:premade').withNbt([structure: [id: "structure_builder"]]),
-	item('littletiles:premade').withNbt([structure: [id: "blankomatic"]]),
-	item('littletiles:premade').withNbt([structure: [id: "workbench"]]),
 	item('littletiles:signal_converter'),
 	item('littletiles:lttransparentcoloredblock', 5),
 	item('littletiles:ltcoloredblock', 12),
 	item('littletiles:ltstorageblocktile')
+]
+
+def removeRecipesByName = [
+	'littletiles:exporter',
+	'littletiles:importer',
+	'littletiles:structure_builder',
+	'littletiles:blankomatic',
+	'littletiles:workbench',
 ]
 
 // --- Удаление рецептов
@@ -27,4 +30,8 @@ def removeRecipe = [
 // Удаление рецептов
 for (item in removeRecipe) {
     crafting.removeByOutput(item)
+}
+
+for (item in removeRecipesByName) {
+   crafting.remove(item)
 }
