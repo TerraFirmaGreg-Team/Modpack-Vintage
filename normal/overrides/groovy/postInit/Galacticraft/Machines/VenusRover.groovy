@@ -17,11 +17,6 @@ def crate = [
    metaitem('crate.titanium')
 ]
 
-
-// Вес и размер
-//ItemRegistry.registerItemSize(item('extraplanets:venus_rover:*'), "HUGE", "VERY_HEAVY")
-
-
 // --- Добавление рецептов
 
 for (int i = 0; i < rover.size(); i++) {

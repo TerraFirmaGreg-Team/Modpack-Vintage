@@ -4,16 +4,6 @@ import postInit.Utility.Array.ItemArray
 
 // --- Добавление рецептов
 
-// item('galacticraftcore:oil_canister_partial:1001').maxStackSize = 16
-
-// Еда из GC
-//ItemRegistry.registerFood(item('galacticraftcore:food'), 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0)
-//ItemRegistry.registerFood(item('galacticraftcore:food', 1), 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0)
-//ItemRegistry.registerFood(item('galacticraftcore:food', 2), 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0)
-//ItemRegistry.registerFood(item('galacticraftcore:food', 3), 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0)
-//ItemRegistry.registerFood(item('galacticraftcore:food:9'), 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0)
-
-
 // Взлетная площадка 
 crafting.addShaped("tfg/gc/landing_pad/rocket", item('galacticraftcore:landing_pad') * 9, [
    [null, null, null],

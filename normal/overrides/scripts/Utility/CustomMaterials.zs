@@ -73,6 +73,7 @@ import mods.gregtech.material.Material;
 <material:wheat>.addFlags("no_unification");
 <material:electrotine>.addFlags("generate_plate");
 <material:ruridit>.addFlags( "generate_bolt_screw");
+<material:ruridit>.addFluid("liquid", true);
 <material:europium>.addFlags( "generate_bolt_screw");
 <material:americium>.addFlags("generate_dense");
 <material:naquadria>.addFlags("generate_dense");

@@ -342,3 +342,86 @@ ItemRegistry.registerItemMetal(<metaitem:dustImpureSilver>, "SILVER", 120, true)
 ItemRegistry.registerItemMetal(<metaitem:dustSmallSilver>, "SILVER", 36, true);
 // Маленькая Кучка
 ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 16, true);
+
+
+
+
+
+// Регистрация металла
+ItemRegistry.registerItemMetal(<minecraft:iron_bars>, "WROUGHT_IRON", 18, true);
+ItemRegistry.registerItemMetal(<minecraft:bucket>, "BLUE_STEEL", 144, true);
+
+// Register Food Stats for TFC
+ItemRegistry.registerFood(<minecraft:mushroom_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 0, 0);
+ItemRegistry.registerFood(<minecraft:rabbit_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 1.0, 0);
+ItemRegistry.registerFood(<minecraft:beetroot_soup>, 4, 22, 2.0, 2.0, 0, 3.0, 0, 0, 0);
+
+// Регистрация брони
+ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);
+ItemRegistry.registerArmor(<minecraft:leather_chestplate>, 3.0, 6.0, 4.5);
+ItemRegistry.registerArmor(<minecraft:leather_leggings>, 3.0, 6.0, 4.5);
+ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
+
+
+
+
+<galacticraftcore:oil_canister_partial:1001>.maxStackSize = 16;
+
+// Еда из GC
+ItemRegistry.registerFood(<galacticraftcore:food>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:1>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:2>, 4, 0.6, 0.7, 0.5, 0, 0, 1.0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:3>, 4, 0.6, 0.7, 0.5, 0, 1.0, 0, 0, 0);
+ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 1.0, 0);
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftplanets:astro_miner>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:mars_rover:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
+
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftcore:buggy:*>, "HUGE", "VERY_HEAVY");
+
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:venus_rover:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
+
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
+
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");

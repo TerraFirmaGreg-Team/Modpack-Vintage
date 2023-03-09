@@ -1,5 +1,6 @@
 
 // Categories
+
 def hideCategory = [
     "minecraft.anvil",
     "appliedenergistics2.inscriber",

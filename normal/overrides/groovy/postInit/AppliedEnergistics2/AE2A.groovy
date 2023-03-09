@@ -266,3 +266,76 @@ crafting.addShaped("tfg/aeadditions/me_energy_cell_fixture", item('aeadditions:p
   [ore('ae2.cable.glass'), item('appliedenergistics2:part:120'), ore('ae2.cable.glass')],
   [item('appliedenergistics2:part:120'), item('appliedenergistics2:energy_cell'), item('appliedenergistics2:part:120')],
   [ore('ae2.cable.glass'), item('appliedenergistics2:part:120'), ore('ae2.cable.glass')]])
+
+
+// ME Upgrade - Tier 1
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        metaitem('circuit_board.advanced'),
+        metaitem('plateStainlessSteel') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:7'))
+    .fluidInputs(fluid('tin') * 288)
+    .outputs(item('aeadditions:oc.upgrade:2'))
+    .duration(200).EUt(480).buildAndRegister()
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        metaitem('circuit_board.advanced'),
+        metaitem('plateStainlessSteel') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:7'))
+    .fluidInputs(fluid('soldering_alloy') * 144)
+    .outputs([item('aeadditions:oc.upgrade:2')])
+    .duration(200).EUt(480).buildAndRegister()
+
+// ME Upgrade - Tier 2
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        metaitem('circuit_board.extreme'),
+        metaitem('plateTitanium') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:8'))
+    .fluidInputs(fluid('tin') * 288)
+    .outputs(item('aeadditions:oc.upgrade:1'))
+    .duration(200).EUt(1920).buildAndRegister()
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        metaitem('circuit_board.extreme'),
+        metaitem('plateTitanium') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:8'))
+    .fluidInputs(fluid('soldering_alloy') * 144)
+    .outputs(item('aeadditions:oc.upgrade:1'))
+    .duration(200).EUt(1920).buildAndRegister()
+
+// ME Upgrade - Tier 3
+assembler.recipeBuilder()
+    .circuitMeta(2)
+    .inputs(
+        metaitem('circuit_board.extreme'),
+        metaitem('plateTungstenSteel') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:9'))
+    .fluidInputs(fluid('tin') * 288)
+    .outputs(item('aeadditions:oc.upgrade'))
+    .duration(200).EUt(1920).buildAndRegister()
+assembler.recipeBuilder()
+    .circuitMeta(2)
+    .inputs(
+        metaitem('circuit_board.extreme'),
+        metaitem('plateTungstenSteel') * 2,
+        item('opencomputers:card:7'),
+        item('appliedenergistics2:material:41'),
+        item('opencomputers:material:9'))
+    .fluidInputs(fluid('soldering_alloy') * 144)
+    .outputs(item('aeadditions:oc.upgrade'))
+    .duration(200).EUt(1920).buildAndRegister()

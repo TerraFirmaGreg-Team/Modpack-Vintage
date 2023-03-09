@@ -17,9 +17,6 @@ def crate = [
 ]
 
 
-// Вес и размер
-//ItemRegistry.registerItemSize(item('extraplanets:item_tier4_rocket:*'), "HUGE", "VERY_HEAVY")
-
 
 // --- Добавление рецептов
 

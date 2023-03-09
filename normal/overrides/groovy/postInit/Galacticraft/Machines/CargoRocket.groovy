@@ -14,11 +14,6 @@ def crate = [
    metaitem('crate.titanium')
 ]
 
-
-// Вес и размер
-//ItemRegistry.registerItemSize(item('galacticraftplanets:rocket_t2:*'), "HUGE", "VERY_HEAVY")
-
-
 // --- Добавление рецептов
 
 for (int i = 0; i < rocket.size(); i++)  {

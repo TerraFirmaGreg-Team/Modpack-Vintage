@@ -46,9 +46,9 @@ ore('gemFlawless').add(item('gregtech:meta_gem_flawless:*'))
 ore('gemExquisite').add(item('gregtech:meta_gem_exquisite:*'))
 
 // Инструменты
-ore('knife').add(item('gregtech:knife').withNbt([DisallowContainerItem: (byte) 0, "GT.Tool": [], "GT.Behaviours": []]))
-ore('hammer').add(item('gregtech:hammer'))
-ore('saw').add(item('gregtech:saw'))
+ore('knife').add(item('gregtech:knife:*'))
+ore('hammer').add(item('gregtech:hammer:*'))
+ore('saw').add(item('gregtech:saw:*'))
 
 // Алмазы
 ore('diamonds').add(

@@ -240,7 +240,7 @@ slicer.findRecipe(24, [<minecraft:beef:0>, <metaitem:config.slicer_blade.stripes
 //cuisine_assembler.findRecipe(24, [<metaitem:component.breads> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0>], null).remove();
 
 // Large Meat Sandwich
-cuisine_assembler.findRecipe(75, [<metaitem:component.baguettes> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0> * 3], null).remove();
+// cuisine_assembler.findRecipe(75, [<metaitem:component.baguettes> * 3, <metaitem:food.cheddar_slice> * 3, <minecraft:cooked_beef:0> * 3], null).remove();
 
 // Rabbit Stew
 mixer.findRecipe(8, [<minecraft:brown_mushroom:0>, <minecraft:carrot:0>, <minecraft:cooked_rabbit:0>, <metaitem:mashed_potato_dust>, <metaitem:dustWheat>], [<liquid:water> * 50]).remove();

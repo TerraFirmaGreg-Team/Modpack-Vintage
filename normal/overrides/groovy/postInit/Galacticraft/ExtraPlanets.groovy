@@ -347,7 +347,7 @@ implosion_compressor.recipeBuilder()
 // Антирадиоционные пластины
 // T1
 assembler.recipeBuilder()
-   .circuitMeta(1)
+   .circuitMeta(11)
    .inputs(
       metaitem('plateDoubleTungsten') * 6, 
       item('extraplanets:cloth') * 4)
@@ -355,7 +355,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(2280).buildAndRegister()
 // T2
 assembler.recipeBuilder()
-   .circuitMeta(2)
+   .circuitMeta(12)
    .inputs(
       metaitem('plateDoubleTungsten') * 6, 
       item('extraplanets:cloth') * 4, 
@@ -364,7 +364,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(8680).buildAndRegister()
 // T3
 assembler.recipeBuilder()
-   .circuitMeta(3)
+   .circuitMeta(13)
    .inputs(
       metaitem('plateDoubleTungsten') * 6, 
       item('extraplanets:cloth') * 4, 
@@ -373,7 +373,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(38480).buildAndRegister()
 // T4
 assembler.recipeBuilder()
-   .circuitMeta(4)
+   .circuitMeta(14)
    .inputs(
       metaitem('plateDoubleTungsten') * 6, 
       item('extraplanets:cloth') * 4, 
@@ -384,7 +384,7 @@ assembler.recipeBuilder()
 // Пластины давления
 // T1
 assembler.recipeBuilder()
-   .circuitMeta(1)
+   .circuitMeta(11)
    .inputs(
       item('galacticraftcore:oxygen_concentrator') * 4, 
       item('extraplanets:cloth') * 4)
@@ -392,7 +392,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(2280).buildAndRegister()
 // T2
 assembler.recipeBuilder()
-   .circuitMeta(2)
+   .circuitMeta(12)
    .inputs(
       item('galacticraftcore:oxygen_concentrator') * 6, 
       item('extraplanets:cloth') * 8, 
@@ -401,7 +401,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(8680).buildAndRegister()
 // T3
 assembler.recipeBuilder()
-   .circuitMeta(3)
+   .circuitMeta(13)
    .inputs(
       item('galacticraftcore:oxygen_concentrator') * 8, 
       item('extraplanets:cloth') * 16, 
@@ -410,7 +410,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(38480).buildAndRegister()
 // T4
 assembler.recipeBuilder()
-   .circuitMeta(4)
+   .circuitMeta(14)
    .inputs(
       item('galacticraftcore:oxygen_concentrator') * 10, 
       item('extraplanets:cloth') * 32, 
@@ -421,7 +421,7 @@ assembler.recipeBuilder()
 // Теплоизолирующая ткань
 // T1
 assembler.recipeBuilder()
-   .circuitMeta(1)
+   .circuitMeta(11)
    .inputs(
       item('extraplanets:cloth') * 6, 
       metaitem('wireFineBorosilicateGlass') * 3)
@@ -429,7 +429,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(1024).buildAndRegister()
 // T2
 assembler.recipeBuilder()
-   .circuitMeta(2)
+   .circuitMeta(12)
    .inputs(
       item('extraplanets:cloth') * 12, 
       metaitem('wireFineLead') * 3)
@@ -437,7 +437,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(4096).buildAndRegister()
 // T3
 assembler.recipeBuilder()
-   .circuitMeta(3)
+   .circuitMeta(13)
    .inputs(
       item('extraplanets:cloth') * 18, 
       metaitem('wireFineAluminium') * 3)
@@ -445,7 +445,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(16384).buildAndRegister()
 // T4
 assembler.recipeBuilder()
-   .circuitMeta(4)
+   .circuitMeta(14)
    .inputs(
       item('extraplanets:cloth') * 24, 
       metaitem('wireFineIndiumTinBariumTitaniumCuprate') * 3)
@@ -453,7 +453,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(65536).buildAndRegister()
 // T5
 assembler.recipeBuilder()
-   .circuitMeta(5)
+   .circuitMeta(15)
    .inputs(
       item('extraplanets:cloth') * 28, 
       metaitem('plateDenseCarbon'), 
@@ -465,25 +465,25 @@ assembler.recipeBuilder()
 // Шлем
 for (int i = 0; i < materialSpace.size(); i++) {
 assembler.recipeBuilder()
-   .circuitMeta(5)
+   .circuitMeta(15)
    .inputs(materialSpace[i] * 5)
    .outputs(unSpaceSuitHelmet[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
-   .circuitMeta(6)
+   .circuitMeta(16)
    .inputs(materialSpace[i] * 8)
    .outputs(unSpaceSuitChest[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
-   .circuitMeta(7)
+   .circuitMeta(17)
    .inputs(materialSpace[i] * 7)
    .outputs(unSpaceSuitLegings[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
-   .circuitMeta(8)
+   .circuitMeta(18)
    .inputs(materialSpace[i] * 4)
    .outputs(unSpaceSuitBoots[i])
    .duration(500).EUt(2000).buildAndRegister()
@@ -492,7 +492,7 @@ assembler.recipeBuilder()
 // Шлем
 for (int i = 0; i < armorLayer.size(); i++) {
 assembler.recipeBuilder()
-   .circuitMeta(5)
+   .circuitMeta(15)
    .inputs(armorLayer[i] * 2)
    .inputs(radiationLayer[i] * 3)
    .inputs(pressureLayer[i] * 3)
@@ -501,7 +501,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(8002).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
-   .circuitMeta(6)
+   .circuitMeta(16)
    .inputs(armorLayer[i] * 2)
    .inputs(radiationLayer[i] * 3)
    .inputs(pressureLayer[i] * 3)
@@ -510,7 +510,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(8002).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
-   .circuitMeta(7)
+   .circuitMeta(17)
    .inputs(armorLayer[i] * 2)
    .inputs(radiationLayer[i] * 3)
    .inputs(pressureLayer[i] * 3)
@@ -519,7 +519,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(8002).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
-   .circuitMeta(8)
+   .circuitMeta(18)
    .inputs(armorLayer[i] * 2)
    .inputs(radiationLayer[i] * 3)
    .inputs(pressureLayer[i] * 3)
@@ -529,7 +529,7 @@ assembler.recipeBuilder()
 }
 for (int i = 0; i < armorLayer.size(); i++) {
    assembler.recipeBuilder()
-   .circuitMeta(9)
+   .circuitMeta(19)
    .inputs(materialEngine[i] * 2)
    .inputs(ore('batteryLuv') * 3)
    .inputs(spaceSuitChest[i])
@@ -541,28 +541,28 @@ for (int i = 0; i < armorLayer.size(); i++) {
 // Шлем
 for (int i = 0; i < armorLayer.size(); i++) {
 assembler.recipeBuilder()
-   .circuitMeta(5)
+   .circuitMeta(15)
    .inputs(thermalCloth[i] * 5)
    .inputs(materialThermal[i] * 2)
    .outputs(thermalPaddingHelmet[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
-   .circuitMeta(6)
+   .circuitMeta(16)
    .inputs(thermalCloth[i] * 8)
    .inputs(materialThermal[i] * 2)
    .outputs(thermalPaddingChest[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
-   .circuitMeta(7)
+   .circuitMeta(17)
    .inputs(thermalCloth[i] * 7)
    .inputs(materialThermal[i] * 2)
    .outputs(thermalPaddingLegings[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
-   .circuitMeta(8)
+   .circuitMeta(18)
    .inputs(thermalCloth[i] * 4)
    .inputs(materialThermal[i] * 2)
    .outputs(thermalPaddingBoots[i])

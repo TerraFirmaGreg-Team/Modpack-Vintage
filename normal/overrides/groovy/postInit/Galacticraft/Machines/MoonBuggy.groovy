@@ -16,11 +16,6 @@ def crate = [
    metaitem('crate.titanium')
 ]
 
-
-// Вес и размер
-//ItemRegistry.registerItemSize(item('galacticraftcore:buggy:*'), "HUGE", "VERY_HEAVY")
-
-
 // --- Добавление рецептов
 
 for (int i = 0; i < buggy.size(); i++) {

@@ -17,9 +17,6 @@ def crate = [
 ]
 
 
-// Вес и размер
-//ItemRegistry.registerItemSize(item('galacticraftcore:rocket_t1:*'), "HUGE", "VERY_HEAVY")
-
 
 // --- Добавление рецептов
 

@@ -17,10 +17,6 @@ def crate = [
 ]
 
 
-// Вес и размер
-// //ItemRegistry.registerItemSize(item('extraplanets:item_tier10_electric_rocket:*'), "HUGE", "VERY_HEAVY")
-
-
 // --- Добавление рецептов
 
 for (int i = 0; i < rocket.size(); i++) {

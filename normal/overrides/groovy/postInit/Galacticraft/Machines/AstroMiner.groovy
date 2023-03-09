@@ -1,9 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
 
 
-// Вес и размер
-//ItemRegistry.registerItemSize(item('galacticraftplanets:astro_miner'), "HUGE", "VERY_HEAVY")
-
 // Майнер
 assembly_line.recipeBuilder()
 	.inputs(item('galacticraftplanets:item_basic_mars:3') * 8)

@@ -48,6 +48,12 @@ def removeRecipe = [
   item('aenetvistool:net_visualizer')
 ]
 
+def removeByRecipeName = [
+  "aeadditions:oc/upgradet1",
+  "aeadditions:oc/upgradet2",
+  "aeadditions:oc/upgradet3",
+]
+
 // --- Удаление рецептов
 
 for (item in hide) {
@@ -60,4 +66,8 @@ for (item in removeAndHide) {
 
 for (item in removeRecipe) {
     crafting.removeByOutput(item)
+}
+
+for (item in removeByRecipeName) {
+    crafting.remove(item)
 }

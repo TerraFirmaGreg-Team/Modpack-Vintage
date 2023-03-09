@@ -1,12 +1,7 @@
-#priority 980
-
-import mods.jei.JEI
-import crafttweaker.item.IItemStack
-
 
 // --- Массивы
 
-def (RemoveAndHide) = [
+def RemoveAndHide = [
 	metaitem('brick.adobe_fired'),
 	metaitem('brick.adobe'),
 	metaitem('food.potato_on_a_stick'),
@@ -18,7 +13,7 @@ def (RemoveAndHide) = [
 	metaitem('component.sugary_dough')
 ]
 
-def (RemoveRecipe) = [
+def RemoveRecipe = [
    metaitem('component.apple_slice'),
    metaitem('brick.adobe_fired'),
    metaitem('component.mushroom_slice'),
@@ -29,7 +24,7 @@ def (RemoveRecipe) = [
    metaitem('component.cucumber_slice')
 ]
 
-def (RemoveRecipesByName) = [
+def RemoveRecipesByName = [
    "gregtechfoodoption:casing_adobe_bricks",
    "gregtechfoodoption:casing_reinforced_adobe_bricks",
    "gregtechfoodoption:baking_oven",
@@ -62,20 +57,20 @@ def (RemoveRecipesByName) = [
    "gregtechfoodoption:gtfo_hand_zest1",
    "gregtechfoodoption:gtfo_hand_zest2",
    "gregtechfoodoption:gtfo_hand_zest3"
-] as string[]
+]
 
 
 // --- Удаление рецептов
 
-for item in RemoveAndHide {
+for (item in RemoveAndHide) {
    JEI.removeAndHide(item)
 }
 
-for item in RemoveRecipe{
+for (item in RemoveRecipe) {
    crafting.removeByOutput(item)
 }
 
-for item in RemoveRecipesByName{
+for (item in RemoveRecipesByName) {
    crafting.removeByOutputByRecipeName(item)
 }
 
