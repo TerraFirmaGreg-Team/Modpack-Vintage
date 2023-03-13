@@ -45,11 +45,3 @@ def hideCategory = [
 for(name in hideCategory) {
     mods.jei.hideCategory(name)
 }
-
-// Скрытие предметов и удаление рецептов верстака
-
-// CatWalks
-mods.jei.removeAndHide(item('catwalks:stair'))
-
-// BuildingGadgets
-mods.jei.removeAndHide(item('buildinggadgets:constructionpastecontainercreative'))

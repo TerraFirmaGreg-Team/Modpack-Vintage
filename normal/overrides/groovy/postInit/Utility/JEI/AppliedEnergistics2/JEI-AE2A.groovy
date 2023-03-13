@@ -52,6 +52,7 @@ def removeByRecipeName = [
   "aeadditions:oc/upgradet1",
   "aeadditions:oc/upgradet2",
   "aeadditions:oc/upgradet3",
+  "aeadditions:ctoragecells/fluid/e2acasing",
 ]
 
 // --- Удаление рецептов

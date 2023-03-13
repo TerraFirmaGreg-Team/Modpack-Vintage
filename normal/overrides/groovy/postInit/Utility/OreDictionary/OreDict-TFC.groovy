@@ -38,25 +38,27 @@ for (item in arrayTFC.tfcSlabsSmooth) {
 }
 
 // OreDicionary for all helmets
-for (item in ArrayTFC.tfcHelmets) {
+for (item in arrayTFC.tfcHelmets) {
 	ore('helmet').add(item)
 }
 // OreDicionary for all chestplates
-for (item in ArrayTFC.tfcChestplates) {
+for (item in arrayTFC.tfcChestplates) {
 	ore('chestplate').add(item)
 }
 // OreDicionary for all greaves
-for (item in ArrayTFC.tfcGreaves) {
+for (item in arrayTFC.tfcGreaves) {
 	ore('greaves').add(item)
 }
 // OreDicionary for all boots
-for (item in ArrayTFC.tfcBoots) {
+for (item in arrayTFC.tfcBoots) {
 	ore('boots').add(item)
 }
 
-ore('ingotClay').add(item('tfcflorae:ceramics/stoneware/stoneware_clay'))
-ore('ingotClay').add(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
-ore('ingotClay').add(item('tfcflorae:ceramics/earthenware/earthenware_clay'))
+ore('ingotClay').add(
+	item('tfcflorae:ceramics/stoneware/stoneware_clay'), 
+	item('tfcflorae:ceramics/kaolinite/kaolinite_clay'), 
+	item('tfcflorae:ceramics/earthenware/earthenware_clay'))
+
 
 ore('itemBeeswax').add(item('firmalife:beeswax'))
 ore('sugarcane').add(item('tfc:food/sugarcane'))
@@ -132,7 +134,6 @@ ore('mushrooms').add(
 )
 
 // --- Удаление
-
 
 ore('gemDiamond').remove(item('tfc:gem/diamond', 2))
 ore('gemLapis').remove(item('tfc:ore/lapis_lazuli'))

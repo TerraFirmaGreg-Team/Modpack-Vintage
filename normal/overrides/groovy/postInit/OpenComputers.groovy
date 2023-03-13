@@ -124,23 +124,21 @@ assembler.recipeBuilder()
 // Card Container - Tier 1
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateAluminium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:7')
-    ])
+        item('opencomputers:material:7'))
     .fluidInputs(fluid('tin') * 144)
     .outputs([item('opencomputers:upgrade:5')])
     .duration(100).EUt(120).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateAluminium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:7')
-    ])
+        item('opencomputers:material:7'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:5')])
     .duration(100).EUt(120).buildAndRegister()
@@ -148,23 +146,21 @@ assembler.recipeBuilder()
 // Card Container - Tier 2
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateStainlessSteel') * 2,
         ore('chestWood'),
-        item('opencomputers:material:8')
-    ])
+        item('opencomputers:material:8'))
     .fluidInputs(fluid('tin') * 144)
-    .outputs([item('opencomputers:upgrade:6')])
+    .outputs(item('opencomputers:upgrade:6'))
     .duration(100).EUt(480).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateStainlessSteel') * 2,
         ore('chestWood'),
-        item('opencomputers:material:8')
-    ])
+        item('opencomputers:material:8'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:6')])
     .duration(100).EUt(480).buildAndRegister()
@@ -172,23 +168,21 @@ assembler.recipeBuilder()
 // Card Container - Tier 3
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateTitanium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:9')
-    ])
+        item('opencomputers:material:9'))
     .fluidInputs(fluid('tin') * 144)
-    .outputs([item('opencomputers:upgrade:7')])
+    .outputs(item('opencomputers:upgrade:7'))
     .duration(100).EUt(1920).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         item('opencomputers:material:5'),
         metaitem('plateTitanium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:9')
-    ])
+        item('opencomputers:material:9'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:7')])
     .duration(100).EUt(1920).buildAndRegister()
@@ -196,23 +190,21 @@ assembler.recipeBuilder()
 // Upgrade Container - Tier 1
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.plastic'),
         metaitem('plateAluminium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:7')
-    ])
+        item('opencomputers:material:7'))
     .fluidInputs(fluid('tin') * 144)
     .outputs([item('opencomputers:upgrade:8')])
     .duration(100).EUt(120).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.plastic'),
         metaitem('plateAluminium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:7')
-    ])
+        item('opencomputers:material:7'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:8')])
     .duration(100).EUt(120).buildAndRegister()
@@ -220,23 +212,21 @@ assembler.recipeBuilder()
 // Upgrade Container - Tier 2
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.advanced'),
         metaitem('plateStainlessSteel') * 2,
         ore('chestWood'),
-        item('opencomputers:material:8')
-    ])
+        item('opencomputers:material:8'))
     .fluidInputs(fluid('tin') * 144)
     .outputs([item('opencomputers:upgrade:9')])
     .duration(100).EUt(480).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.advanced'),
         metaitem('plateStainlessSteel') * 2,
         ore('chestWood'),
-        item('opencomputers:material:8')
-    ])
+        item('opencomputers:material:8'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:8')])
     .duration(100).EUt(480).buildAndRegister()
@@ -244,26 +234,78 @@ assembler.recipeBuilder()
 // Upgrade Container - Tier 3
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.extreme'),
         metaitem('plateTitanium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:9')
-    ])
+        item('opencomputers:material:9'))
     .fluidInputs(fluid('tin') * 144)
     .outputs([item('opencomputers:upgrade:10')])
     .duration(100).EUt(1920).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs([
+    .inputs(
         metaitem('circuit_board.extreme'),
         metaitem('plateTitanium') * 2,
         ore('chestWood'),
-        item('opencomputers:material:9')
-    ])
+        item('opencomputers:material:9'))
     .fluidInputs(fluid('soldering_alloy') * 72)
     .outputs([item('opencomputers:upgrade:8')])
     .duration(100).EUt(1920).buildAndRegister()
+
+// Disassembler
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        ore('oc:materialCU'),
+        ore('paneGlass'),
+        ore('oc:analyzer'),
+        ore('craftingPiston'),
+        ore('obsidian') * 2,
+        ore('ingotIron') * 2)
+    .fluidInputs(fluid('lava') * 144)
+    .outputs(item('opencomputers:disassembler'))
+    .duration(100).EUt(1920).buildAndRegister()
+
+// Hologram1
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        ore('oc:circuitChip2') * 2,
+        ore('paneGlass'),
+        ore('circuitEv') * 2,
+        ore('gemDiamond'),
+        ore('obsidian') * 2,
+        item('projectred-core:resource_item', 504) * 4)
+    .outputs(item('opencomputers:hologram1'))
+    .duration(100).EUt(1920).buildAndRegister()
+
+// Hologram2
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        ore('oc:circuitChip3') * 2,
+        ore('blockGlass'),
+        ore('circuitEv') * 2,
+        ore('blockDiamond'),
+        ore('obsidian'))
+    .fluidInputs(fluid('blaze') * 144)
+    .outputs(item('opencomputers:hologram2'))
+    .duration(100).EUt(2920).buildAndRegister()
+
+// Printer
+crafting.addShaped('tfg/oc/printer', item('opencomputers:printer'), [
+        [ore('screwIronAny'), ore('hopper'), ore('screwIronAny')],
+        [ore('craftingPiston'), ore('oc:circuitChip3'), ore('craftingPiston')],
+        [ore('ingotIron'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
+
+// Netsplitter
+crafting.addShaped('tfg/oc/netsplitter', item('opencomputers:netsplitter'), [
+        [ore('screwIronAny'), metaitem('cableGtSingleIron'), ore('screwIronAny')],
+        [metaitem('cableGtSingleIron'), ore('craftingPiston'), metaitem('cableGtSingleIron')],
+        [ore('screwIronAny'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
+
+crafting.addShapeless('tfg/oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore('oc:capacitor')])
 
 // Crafting Upgrade
 assembler.recipeBuilder()

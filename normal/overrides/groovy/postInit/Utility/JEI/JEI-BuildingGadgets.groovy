@@ -14,3 +14,7 @@ def removeRecipesByName = [
 for (item in removeRecipesByName) {
    crafting.remove(item)
 }
+
+
+// BuildingGadgets
+mods.jei.removeAndHide(item('buildinggadgets:constructionpastecontainercreative'))

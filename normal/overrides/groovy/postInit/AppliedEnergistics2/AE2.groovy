@@ -679,7 +679,7 @@ assembler.recipeBuilder()
   .duration(20).EUt(7680).buildAndRegister()
 
 // Wireless Terminal
-crafting.addShaped("tfg/ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal:*'), [
+crafting.addShaped("tfg/ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal', 0), [
   [item('appliedenergistics2:material', 41), item('appliedenergistics2:part:380'), item('appliedenergistics2:material', 41)],
   [item('appliedenergistics2:material', 24), ore('circuitHv'), item('appliedenergistics2:material', 24)],
   [metaitem('plateNetherQuartz'), item('appliedenergistics2:dense_energy_cell'), metaitem('plateNetherQuartz')]])
@@ -693,7 +693,7 @@ assembler.recipeBuilder()
     item('appliedenergistics2:part', 360),
     metaitem('emitter.luv'),
     metaitem('stickOsmiridium') * 2)
-  .outputs(item('appliedenergistics2:wireless_crafting_terminal'))
+  .outputs(item('appliedenergistics2:wireless_crafting_terminal', 0))
   .duration(30).EUt(250).buildAndRegister()
 
 // Wireless Pattern Terminal
@@ -705,7 +705,7 @@ assembler.recipeBuilder()
     item('appliedenergistics2:part', 340),
     metaitem('emitter.luv'),
     metaitem('stickOsmiridium') * 2)
-  .outputs(item('appliedenergistics2:wireless_pattern_terminal'))
+  .outputs(item('appliedenergistics2:wireless_pattern_terminal', 0))
   .duration(30).EUt(250).buildAndRegister()
 
 // Wireless Fluid Terminal
@@ -714,10 +714,10 @@ assembler.recipeBuilder()
     item('appliedenergistics2:dense_energy_cell') * 2, 
     item('appliedenergistics2:wireless_terminal') * 1,
     metaitem('sensor.luv') * 2,
-    item('appliedenergistics2:part:520'),
+    item('appliedenergistics2:part', 520),
     metaitem('emitter.luv'),
     metaitem('stickOsmiridium') * 2)
-  .outputs(item('appliedenergistics2:wireless_fluid_terminal'))
+  .outputs(item('appliedenergistics2:wireless_fluid_terminal', 0))
   .duration(30).EUt(250).buildAndRegister()
 
 // // Wireless Interface Terminal

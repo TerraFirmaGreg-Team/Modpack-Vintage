@@ -25,3 +25,5 @@ for (item in removeRecipe) {
 for (item in removeRecipesByName) {
    crafting.remove(item)
 }
+
+mods.jei.removeAndHide(item('catwalks:stair'))

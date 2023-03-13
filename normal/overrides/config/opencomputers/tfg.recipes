@@ -1,159 +1,59 @@
-# Do not change this file, it is rewritten each time you start the game.
-# Instead, use the user.recipes file to edit recipes by redefining them there.
+# some of known gtce machines:
+#
+# gtce_compressor
+# gtce_extractor
+# gtce_macerator
+# gtce_oreWasher
+# gtce_thermalCentrifuge
+# gtce_furnace
+# gtce_microwave
+# gtce_assembler
+# gtce_formingPress
+# gtce_fluidCanner
+# gtce_plasmaArcFurnace
+# gtce_arcFurnace
+# gtce_sifter
+# gtce_laserEngraver
+# gtce_mixer
+# gtce_autoclave
+# gtce_electromagneticSeparator
+# gtce_polarizer
+# gtce_chemicalBath
+# gtce_brewing
+# gtce_fluidHeater
+# gtce_distillery
+# gtce_fermenting
+# gtce_fluidSolidfication
+# gtce_fluidExtraction
+# gtce_fusion
+# gtce_centrifuge
+# gtce_electrolyzer
+# gtce_blast
+# gtce_implosion
+# gtce_vacuum
+# gtce_chemical
+# gtce_distillation
+# gtce_cracking
+# gtce_pyrolyse
+# gtce_wiremill
+# gtce_bender
+# gtce_alloySmelter
+# gtce_canner
+# gtce_lathe
+# gtce_cutter
+# gtce_extruder
+# gtce_forgeHammer
+# gtce_packer
+# gtce_unpacker
 
-analyzer = true
-hoverboots = true
-manual = true
-nanomachines = true
-texturepicker = true
-wrench = true
-lootdisks: = true
-luabios = true
+include file("default.recipes")
 
-dronecase1 = true
-dronecase2 = true
-microcontrollercase1 = true
-microcontrollercase2 = true
-terminal true
-tabletcase1 = true
-tabletcase2 = true
-
-diskdrivemountable = true
-server1 = true
-server2 = true
-server3 = true
-terminalserver = true
-
-ram1 = true
-ram2 = true
-ram3 = true
-ram4 = true
-ram5 = true
-ram6 = true
-
-eeprom = true
-floppy = true
-hdd1 = true
-hdd2 = true
-hdd3 = true
-
-datacard1 = true
-datacard2 = true
-datacard3 = true
-graphicscard1 = true
-graphicscard2 = true
-graphicscard3 = true
-internetcard = true
-redstonecard1 = true
-redstonecard2 = true
-lancard = true
-wlancard1 = true
-wlancard2 = true
-linkedcard = true
-
-abstractbuscard = true
-worldsensorcard = true
-
-angelupgrade = true
-batteryupgrade1 = true
-batteryupgrade2 = true
-batteryupgrade3 = true
-chunkloaderupgrade = true
-craftingupgrade = true
-databaseupgrade1 = true
-databaseupgrade2 = true
-databaseupgrade3 = true
-experienceupgrade = true
-generatorupgrade = true
-hoverupgrade1 = true
-hoverupgrade2 = true
-inventoryupgrade = true
-inventorycontrollerupgrade = true
-mfu = true
-leashupgrade = true
-navigationupgrade = true
-pistonupgrade = true
-stickypistonupgrade = true
-signupgrade = true
-solargeneratorupgrade = true
-tankupgrade = true
-tankcontrollerupgrade = true
-tractorbeamupgrade = true
-tradingupgrade = true
-
-cardcontainer1 = true
-cardcontainer2 = true
-cardcontainer3 = true
-upgradecontainer1 = true
-upgradecontainer2 = true
-upgradecontainer3 = true
-
-ingotiron = true
-chipdiamond = true
-gemDiamond = false
-
-cuttingwire = true
-acid = true
-disk = true
-chamelium = true
-chameliumblock = true
-endstone = true
-inkcartridgeempty = true
-inkcartridge = true
-
-buttongroup = true
-arrowkeys = true
-numpad = true
-
-transistor = true
-chip1 = true
-chip2 = true
-chip3 = true
-alu = true
-apu1 = true
-apu2 = true
-componentbus1 = true
-componentbus2 = true
-componentbus3 = true
-cpu1 = true
-cpu2 = true
-cpu3 = true
-cu = true
-
-rawcircuitboard = true
+rawcircuitboard = false
 circuitboard = false
-printedcircuitboard = true
-card = true
-
-interweb = true
-
-adapter = true
-assembler = false
-cable = true
-luaBios = true
-carpetedcapacitor = true
-capacitor = true
-charger = true
-case1 = true
-case2 = true
-case3 = true
-disassembler = false
-diskdrive = true
-geolyzer = true
-hologram1 = true
-hologram2 = true
-keyboard = true
-motionsensor = true
-netsplitter = true
-printer = true
-powerconverter = true
-powerdistributor = true
-rack = true
-raid = true
-redstone = true
-relay = true
-screen1 = true
-screen2 = true
-screen3 = true
-transposer = true
-waypoint = true
+printedcircuitboard = false
+powerdistributor = false
+wrench = false
+ingotiron = false
+chipdiamond = false
+cuttingwire = false
+chunkloaderupgrade = false
