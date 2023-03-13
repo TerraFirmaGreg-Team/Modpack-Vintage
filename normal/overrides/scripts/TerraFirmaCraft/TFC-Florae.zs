@@ -282,13 +282,13 @@ for i, DirtyNets in DirtyNets {
 }
 
 // Raw -> Mossy Raw
-for i, TFC_Raw_Mossy in TFC_Raw_Mossy {
+for i, tfcRaw_Mossy in tfcRaw_Mossy {
     
     mixer.recipeBuilder()
-        .inputs(TFC_Raws[i])
+        .inputs(tfcRaws[i])
         .fluidInputs(<liquid:hot_water> * 200)
         .circuit(18)
-        .outputs(TFC_Raw_Mossy)
+        .outputs(tfcRaw_Mossy)
         .fluidOutputs(<liquid:fresh_water> * 50)
         .duration(150).EUt(2).buildAndRegister();
 }

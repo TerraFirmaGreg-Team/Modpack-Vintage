@@ -1,9 +1,9 @@
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayHGP
 
 
 // --- Удаление рецептов
 
-for (item in ItemArray.horizontalGlassPanesArray) {
+for (item in arrayHGP.horizontalGlassPanes) {
     crafting.removeByOutput(item)
 }
 

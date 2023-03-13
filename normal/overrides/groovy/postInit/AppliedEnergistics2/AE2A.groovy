@@ -1,5 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayAE2
 
 
 // --- Добавление рецептов
@@ -10,16 +11,16 @@ for (int i = 4; i < 8; i++) {
   packer.recipeBuilder()
     .inputs(
       item('aeadditions:storage.casing'),
-      ItemArray.storageComponents[i])
-    .outputs(ItemArray.storageCells[i])
+      arrayAE2.storageComponents[i])
+    .outputs(arrayAE2.storageCells[i])
     .cleanroom(CleanroomType.STERILE_CLEANROOM)
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()
-    .inputs(ItemArray.storageCells[i])
+    .inputs(arrayAE2.storageCells[i])
     .outputs(
       item('aeadditions:storage.casing'),
-      ItemArray.storageComponents[i])
+      arrayAE2.storageComponents[i])
     .duration(10).EUt(7).buildAndRegister()
 }
 for (int i = 4; i < 7; i++) {
@@ -28,16 +29,16 @@ for (int i = 4; i < 7; i++) {
   packer.recipeBuilder()
     .inputs(
       item('aeadditions:storage.casing', 1),
-      ItemArray.fluidStorageComponents[i])
-    .outputs(ItemArray.fluidStorageCells[i])
+      arrayAE2.fluidStorageComponents[i])
+    .outputs(arrayAE2.fluidStorageCells[i])
     .cleanroom(CleanroomType.STERILE_CLEANROOM)
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()
-    .inputs(ItemArray.fluidStorageCells[i])
+    .inputs(arrayAE2.fluidStorageCells[i])
     .outputs(
       item('aeadditions:storage.casing', 1),
-      ItemArray.fluidStorageComponents[i])
+      arrayAE2.fluidStorageComponents[i])
     .duration(10).EUt(7).buildAndRegister()
 }
 // Fluid Storage Housing

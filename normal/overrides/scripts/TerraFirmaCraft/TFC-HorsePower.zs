@@ -7,8 +7,8 @@ import mods.horsepower.ChoppingBlock;
 // --- Добавление рецептов
 
 // Дерево -> Пиломатериалы
-for i, TFC_Lumber in TFC_Lumber {
-    ChoppingBlock.add(TFC_Logs[i], TFC_Lumber * 10, 2, false);
+for i, tfcLumber in tfcLumber {
+    ChoppingBlock.add(tfcLogs[i], tfcLumber * 10, 2, false);
 }
 
 // Другие рецепты

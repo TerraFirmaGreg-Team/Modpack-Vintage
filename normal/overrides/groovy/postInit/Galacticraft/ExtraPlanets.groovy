@@ -1,134 +1,10 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayGC
 
 
 // Массивы
-def armorLayer = [
-   item('extraplanets:tier1_armor_layer'),
-   item('extraplanets:tier2_armor_layer'),
-   item('extraplanets:tier3_armor_layer'),
-   item('extraplanets:tier4_armor_layer')
-]
-def radiationLayer = [
-   item('extraplanets:tier1_radiation_layer'),
-   item('extraplanets:tier2_radiation_layer'),
-   item('extraplanets:tier3_radiation_layer'),
-   item('extraplanets:tier4_radiation_layer')
-]
-def pressureLayer = [
-   item('extraplanets:tier1_pressure_layer'),
-   item('extraplanets:tier2_pressure_layer'),
-   item('extraplanets:tier3_pressure_layer'),
-   item('extraplanets:tier4_pressure_layer')
-]
-def spaceSuitHelmet = [
-   item('extraplanets:tier1_space_suit_helmet:100'),
-   item('extraplanets:tier2_space_suit_helmet:100'),
-   item('extraplanets:tier3_space_suit_helmet:100'),
-   item('extraplanets:tier4_space_suit_helmet:100')
-]
-def spaceSuitChest = [
-   item('extraplanets:tier1_space_suit_chest:100'),
-   item('extraplanets:tier2_space_suit_chest:100'),
-   item('extraplanets:tier3_space_suit_chest:100'),
-   item('extraplanets:tier4_space_suit_chest:100')
-]
-def spaceSuitChestJet = [
-   item('extraplanets:tier1_space_suit_jetpack_chest'),
-   item('extraplanets:tier2_space_suit_jetpack_chest'),
-   item('extraplanets:tier3_space_suit_jetpack_chest'),
-   item('extraplanets:tier4_space_suit_jetpack_chest')
-]
-def spaceSuitLegings = [
-   item('extraplanets:tier1_space_suit_legings:100'),
-   item('extraplanets:tier2_space_suit_legings:100'),
-   item('extraplanets:tier3_space_suit_legings:100'),
-   item('extraplanets:tier4_space_suit_legings:100')
-]
-def spaceSuitBoots = [
-   item('extraplanets:tier1_space_suit_boots:100'),
-   item('extraplanets:tier2_space_suit_boots:100'),
-   item('extraplanets:tier3_space_suit_boots:100'),
-   item('extraplanets:tier4_space_suit_boots:100')
-]
-def unSpaceSuitHelmet = [
-   item('extraplanets:tier1_un_prepared_space_suit_helmet'),
-   item('extraplanets:tier2_un_prepared_space_suit_helmet'),
-   item('extraplanets:tier3_un_prepared_space_suit_helmet'),
-   item('extraplanets:tier4_un_prepared_space_suit_helmet')
-]
-def unSpaceSuitChest = [
-   item('extraplanets:tier1_un_prepared_space_suit_chest'),
-   item('extraplanets:tier2_un_prepared_space_suit_chest'),
-   item('extraplanets:tier3_un_prepared_space_suit_chest'),
-   item('extraplanets:tier4_un_prepared_space_suit_chest')
-]
-def unSpaceSuitLegings = [
-   item('extraplanets:tier1_un_prepared_space_suit_legings'),
-   item('extraplanets:tier2_un_prepared_space_suit_legings'),
-   item('extraplanets:tier3_un_prepared_space_suit_legings'),
-   item('extraplanets:tier4_un_prepared_space_suit_legings')
-]
-def unSpaceSuitBoots = [
-   item('extraplanets:tier1_un_prepared_space_suit_boots'),
-   item('extraplanets:tier2_un_prepared_space_suit_boots'),
-   item('extraplanets:tier3_un_prepared_space_suit_boots'),
-   item('extraplanets:tier4_un_prepared_space_suit_boots')
-]
-def thermalPaddingHelmet = [
-   item('galacticraftplanets:thermal_padding'),
-   item('galacticraftplanets:thermal_padding_t2'),
-   item('extraplanets:tier3_thermal_padding'),
-   item('extraplanets:tier4_thermal_padding'),
-   item('extraplanets:tier5_thermal_padding')
-]
-def thermalPaddingChest = [
-   item('galacticraftplanets:thermal_padding:1'),
-   item('galacticraftplanets:thermal_padding_t2:1'),
-   item('extraplanets:tier3_thermal_padding:1'),
-   item('extraplanets:tier4_thermal_padding:1'),
-   item('extraplanets:tier5_thermal_padding:1')
-]
-def thermalPaddingLegings = [
-   item('galacticraftplanets:thermal_padding:2'),
-   item('galacticraftplanets:thermal_padding_t2:2'),
-   item('extraplanets:tier3_thermal_padding:2'),
-   item('extraplanets:tier4_thermal_padding:2'),
-   item('extraplanets:tier5_thermal_padding:2')
-]
-def thermalPaddingBoots = [
-   item('galacticraftplanets:thermal_padding:3'),
-   item('galacticraftplanets:thermal_padding_t2:3'),
-   item('extraplanets:tier3_thermal_padding:3'),
-   item('extraplanets:tier4_thermal_padding:3'),
-   item('extraplanets:tier5_thermal_padding:3')
-]
-def materialSpace = [
-   metaitem('plateDenseAluminium'),
-   metaitem('plateDenseTitanium'),
-   metaitem('plateDenseRhodiumPlatedPalladium'),
-   metaitem('plateDenseDarmstadtium')
-]
-def thermalCloth = [
-   item('galacticraftplanets:item_basic_asteroids:7'),
-   item('galacticraftplanets:basic_item_venus:3'),
-   item('extraplanets:thermal_cloth'),
-   item('extraplanets:thermal_cloth:1'),
-   item('extraplanets:thermal_cloth:2')
-]
-def materialThermal = [
-   metaitem('foilLead'),
-   metaitem('foilTungstenCarbide'),
-   metaitem('foilRhodiumPlatedPalladium'),
-   metaitem('foilIridium'),
-   metaitem('foilDarmstadtium')
-]
-def materialEngine = [
-   item('galacticraftplanets:item_basic_asteroids:1'),
-   item('extraplanets:tier4_items'),
-   item('extraplanets:tier6_items'),
-   item('extraplanets:tier8_items')
-]
+
 
 
 // --- Добавление рецептов
@@ -159,18 +35,18 @@ def materialEngine = [
 for (int i = 0; i < 16; i++) {
    chemical_bath.recipeBuilder()
       .inputs(ore('gc.oxygen.tank.light'))
-      .fluidInputs(ItemArray.colorLiquid[i] * 18)
-      .outputs(ItemArray.oxygenTankLight[i])
+      .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+      .outputs(arrayGC.oxygenTankLight[i])
       .duration(20).EUt(7).buildAndRegister()
    chemical_bath.recipeBuilder()
       .inputs(ore('gc.oxygen.tank.med'))
-      .fluidInputs(ItemArray.colorLiquid[i] * 18)
-      .outputs(ItemArray.oxygenTankMed[i])
+      .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+      .outputs(arrayGC.oxygenTankMed[i])
       .duration(20).EUt(7).buildAndRegister()
    chemical_bath.recipeBuilder()
       .inputs(ore('gc.oxygen.tank.heavy'))
-      .fluidInputs(ItemArray.colorLiquid[i] * 18)
-      .outputs(ItemArray.oxygenTankHeavy[i])
+      .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+      .outputs(arrayGC.oxygenTankHeavy[i])
       .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -463,108 +339,108 @@ assembler.recipeBuilder()
 
 // Заготовки под скафандры
 // Шлем
-for (int i = 0; i < materialSpace.size(); i++) {
+for (int i = 0; i < arrayGC.materialSpace.size(); i++) {
 assembler.recipeBuilder()
    .circuitMeta(15)
-   .inputs(materialSpace[i] * 5)
-   .outputs(unSpaceSuitHelmet[i])
+   .inputs(arrayGC.materialSpace[i] * 5)
+   .outputs(arrayGC.unSpaceSuitHelmet[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
    .circuitMeta(16)
-   .inputs(materialSpace[i] * 8)
-   .outputs(unSpaceSuitChest[i])
+   .inputs(arrayGC.materialSpace[i] * 8)
+   .outputs(arrayGC.unSpaceSuitChest[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
    .circuitMeta(17)
-   .inputs(materialSpace[i] * 7)
-   .outputs(unSpaceSuitLegings[i])
+   .inputs(arrayGC.materialSpace[i] * 7)
+   .outputs(arrayGC.unSpaceSuitLegings[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
    .circuitMeta(18)
-   .inputs(materialSpace[i] * 4)
-   .outputs(unSpaceSuitBoots[i])
+   .inputs(arrayGC.materialSpace[i] * 4)
+   .outputs(arrayGC.unSpaceSuitBoots[i])
    .duration(500).EUt(2000).buildAndRegister()
 }
 // Скафандры
 // Шлем
-for (int i = 0; i < armorLayer.size(); i++) {
+for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
 assembler.recipeBuilder()
    .circuitMeta(15)
-   .inputs(armorLayer[i] * 2)
-   .inputs(radiationLayer[i] * 3)
-   .inputs(pressureLayer[i] * 3)
-   .inputs(unSpaceSuitHelmet[i])
-   .outputs(spaceSuitHelmet[i])
+   .inputs(arrayGC.armorLayer[i] * 2)
+   .inputs(arrayGC.radiationLayer[i] * 3)
+   .inputs(arrayGC.pressureLayer[i] * 3)
+   .inputs(arrayGC.unSpaceSuitHelmet[i])
+   .outputs(arrayGC.spaceSuitHelmet[i])
    .duration(1000).EUt(8002).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
    .circuitMeta(16)
-   .inputs(armorLayer[i] * 2)
-   .inputs(radiationLayer[i] * 3)
-   .inputs(pressureLayer[i] * 3)
-   .inputs(unSpaceSuitChest[i])
-   .outputs(spaceSuitChest[i])
+   .inputs(arrayGC.armorLayer[i] * 2)
+   .inputs(arrayGC.radiationLayer[i] * 3)
+   .inputs(arrayGC.pressureLayer[i] * 3)
+   .inputs(arrayGC.unSpaceSuitChest[i])
+   .outputs(arrayGC.spaceSuitChest[i])
    .duration(1000).EUt(8002).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
    .circuitMeta(17)
-   .inputs(armorLayer[i] * 2)
-   .inputs(radiationLayer[i] * 3)
-   .inputs(pressureLayer[i] * 3)
-   .inputs(unSpaceSuitLegings[i])
-   .outputs(spaceSuitLegings[i])
+   .inputs(arrayGC.armorLayer[i] * 2)
+   .inputs(arrayGC.radiationLayer[i] * 3)
+   .inputs(arrayGC.pressureLayer[i] * 3)
+   .inputs(arrayGC.unSpaceSuitLegings[i])
+   .outputs(arrayGC.spaceSuitLegings[i])
    .duration(1000).EUt(8002).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
    .circuitMeta(18)
-   .inputs(armorLayer[i] * 2)
-   .inputs(radiationLayer[i] * 3)
-   .inputs(pressureLayer[i] * 3)
-   .inputs(unSpaceSuitBoots[i])
-   .outputs(spaceSuitBoots[i])
+   .inputs(arrayGC.armorLayer[i] * 2)
+   .inputs(arrayGC.radiationLayer[i] * 3)
+   .inputs(arrayGC.pressureLayer[i] * 3)
+   .inputs(arrayGC.unSpaceSuitBoots[i])
+   .outputs(arrayGC.spaceSuitBoots[i])
    .duration(1000).EUt(8002).buildAndRegister()
 }
-for (int i = 0; i < armorLayer.size(); i++) {
+for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
    assembler.recipeBuilder()
    .circuitMeta(19)
-   .inputs(materialEngine[i] * 2)
+   .inputs(arrayGC.materialEngine[i] * 2)
    .inputs(ore('batteryLuv') * 3)
-   .inputs(spaceSuitChest[i])
-   .outputs(spaceSuitChestJet[i])
+   .inputs(arrayGC.spaceSuitChest[i])
+   .outputs(arrayGC.spaceSuitChestJet[i])
    .duration(1000).EUt(8002).buildAndRegister()
 }
 
 //  Теплоустойчивая броня
 // Шлем
-for (int i = 0; i < armorLayer.size(); i++) {
+for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
 assembler.recipeBuilder()
    .circuitMeta(15)
-   .inputs(thermalCloth[i] * 5)
-   .inputs(materialThermal[i] * 2)
-   .outputs(thermalPaddingHelmet[i])
+   .inputs(arrayGC.thermalCloth[i] * 5)
+   .inputs(arrayGC.materialThermal[i] * 2)
+   .outputs(arrayGC.thermalPaddingHelmet[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Нагрудник
 assembler.recipeBuilder()
    .circuitMeta(16)
-   .inputs(thermalCloth[i] * 8)
-   .inputs(materialThermal[i] * 2)
-   .outputs(thermalPaddingChest[i])
+   .inputs(arrayGC.thermalCloth[i] * 8)
+   .inputs(arrayGC.materialThermal[i] * 2)
+   .outputs(arrayGC.thermalPaddingChest[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Штаны
 assembler.recipeBuilder()
    .circuitMeta(17)
-   .inputs(thermalCloth[i] * 7)
-   .inputs(materialThermal[i] * 2)
-   .outputs(thermalPaddingLegings[i])
+   .inputs(arrayGC.thermalCloth[i] * 7)
+   .inputs(arrayGC.materialThermal[i] * 2)
+   .outputs(arrayGC.thermalPaddingLegings[i])
    .duration(500).EUt(2000).buildAndRegister()
 // Ботинки
 assembler.recipeBuilder()
    .circuitMeta(18)
-   .inputs(thermalCloth[i] * 4)
-   .inputs(materialThermal[i] * 2)
-   .outputs(thermalPaddingBoots[i])
+   .inputs(arrayGC.thermalCloth[i] * 4)
+   .inputs(arrayGC.materialThermal[i] * 2)
+   .outputs(arrayGC.thermalPaddingBoots[i])
    .duration(500).EUt(2000).buildAndRegister()
 }

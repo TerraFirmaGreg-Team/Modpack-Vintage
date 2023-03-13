@@ -7,10 +7,6 @@ import mods.horsepower.Grindstone;
 
 // --- Массивы
 
-val RemoveAndHide as IItemStack[] = [
-   <horsepower:flour>,
-   <horsepower:dough> 
-];
 
 val RemoveRecipesGrindstone as IItemStack[] = [
    <tfc:powder/flux> * 4,
@@ -21,9 +17,6 @@ val RemoveRecipesGrindstone as IItemStack[] = [
 
 // --- Удаление рецептов
 
-for item in RemoveAndHide {
-   JEI.removeAndHide(item);
-}
 
 // Дробилка
 for item in RemoveRecipesGrindstone {

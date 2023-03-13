@@ -1,19 +1,9 @@
-#priority 980
+import postInit.Utility.Array.arrayTFC
 
-import mods.jei.JEI
-import crafttweaker.item.IItemStack
-import mods.terrafirmacraft.Quern
-import mods.terrafirmacraft.Anvil
-import mods.terrafirmacraft.Heating
-import mods.terrafirmacraft.Barrel
-import mods.terrafirmacraft.Welding
-import mods.terrafirmacraft.StoneKnapping
-import mods.horsepower.Grindstone
-import mods.firmalife.Oven
 
 // --- Массивы
 
-def (RemoveAndHide) = [
+def removeAndHide = [
 	// Nuggets
 	item('tfc:metal/nugget/bismuth'),
 	item('tfc:metal/nugget/bismuth_bronze'),
@@ -482,7 +472,7 @@ def (RemoveAndHide) = [
 ]
 
 
-def (RemoveRecipesByName) = [
+def removeRecipesByName = [
    	"tfc:vanilla/redstone/observer",
 	"tfc:vanilla/tnt",
 	"tfc:vanilla/flint_and_steel",
@@ -538,189 +528,28 @@ def (RemoveRecipesByName) = [
 	"tfc:concrete_black",
 	// Alabaster
 	"tfc:plain_alabaster"
-] as string[]
-
-def (RemoveItemsQuern) = [
-	item('tfc:gem/diamond:2'),
-	item('tfc:powder/fertilizer'),
-	item('tfc:powder/malachite'),
-	item('tfc:powder/limonite'),
-	item('tfc:ore/gypsum'),
-	item('tfc:powder/hematite'),
-	item('minecraft:redstone') * 8,
-	item('tfc:powder/flux') * 6
 ]
+
 
 
 // --- Удаление рецептов
 
-for item in RemoveAndHide {
-   JEI.removeAndHide(item)
+for (item in removeAndHide) {
+   mods.jei.removeAndHide(item)
 }
 
-for item in RemoveRecipesByName{
-   crafting.removeByOutputByRecipeName(item)
-}
-
-// Удаление неиспользуемых рецептов из Quern
-for item in RemoveItemsQuern {
-   Quern.removeRecipe(item)
+for (item in removeRecipesByName) {
+   crafting.remove(item)
 }
 
 // Удаление рецептов сундуков
-for item in TFC_Chests {
+for (item in arrayTFC.tfcChests) {
    crafting.removeByOutput(item)
 }
 
 // Удаление рецептов лодок
-for item in TFC_Boats {
+for (item in arrayTFC.tfcBoats) {
    crafting.removeByOutput(item)
 }
 
-// Удаление некоторых рецептов PigIron
-Welding.removeRecipe(item('tfc:metal/double_ingot/pig_iron'))
-Anvil.removeRecipe(item('tfc:metal/trapdoor/pig_iron'))
 
-// Унификация высокоуглеродной стали
-Anvil.removeRecipe(item('tfc:metal/ingot/high_carbon_steel'))
-
-// Унификация высокоуглеродной черной стали
-Welding.removeRecipe(item('tfc:metal/ingot/high_carbon_black_steel'))
-
-// Унификация высокоуглеродной красной стали
-Welding.removeRecipe(item('tfc:metal/ingot/high_carbon_red_steel'))
-
-// Унификация высокоуглеродной синей стали
-Welding.removeRecipe(item('tfc:metal/ingot/high_carbon_blue_steel'))
-
-// Унификация стали
-Anvil.removeRecipe(item('tfc:metal/ingot/steel'))
-
-// Унификация черной стали
-Anvil.removeRecipe(item('tfc:metal/ingot/black_steel'))
-
-// Унификация красной стали
-Anvil.removeRecipe(item('tfc:metal/ingot/red_steel'))
-
-// Унификация синей стали
-Anvil.removeRecipe(item('tfc:metal/ingot/blue_steel'))
-
-// Унификация каолинита(Mica)
-Quern.removeRecipe(item('tfc:powder/kaolinite') * 4)
-Heating.removeRecipe(item('tfc:powder/kaolinite'))
-Oven.removeRecipe(item('tfc:powder/kaolinite'))
-Grindstone.remove(item('tfc:powder/kaolinite') * 6)
-
-// Унификация графита
-Quern.removeRecipe(item('tfc:powder/graphite') * 4)
-Grindstone.remove(item('tfc:powder/graphite') * 6)
-
-// Унификация серы
-Quern.removeRecipe(item('tfc:powder/sulfur') * 4)
-Grindstone.remove(item('tfc:powder/sulfur') * 8)
-
-// Унификация ляписа
-Quern.removeRecipe(item('tfc:powder/lapis_lazuli') * 4)
-Grindstone.remove(item('tfc:powder/lapis_lazuli') * 8)
-
-// Унификация древесный уголь
-Quern.removeRecipe(item('tfc:powder/charcoal') * 4)
-Grindstone.remove(item('tfc:powder/charcoal') * 8)
-
-// Унификация соли
-Quern.removeRecipe(item('tfc:powder/salt'))
-Grindstone.remove(item('tfc:powder/salt'))
-
-// Унификация сальпетера
-Quern.removeRecipe(item('tfc:powder/saltpeter'))
-Grindstone.remove(item('tfc:powder/saltpeter'))
-
-// Ром
-Barrel.removeRecipe(fluid('rum') * 500)
-
-// Удаление рецептов цемента 4х песок + 4х гравий без словаря руд
-// White Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_white') * 144]).remove()
-// Orange Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_orange') * 144]).remove()
-// Magenta Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_magenta') * 144]).remove()
-// Light Blue Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_light_blue') * 144]).remove()
-// Yellow Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_yellow') * 144]).remove()
-// Lime Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_lime') * 144]).remove()
-// Pink Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_pink') * 144]).remove()
-// Gray Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_gray') * 144]).remove()
-// Light Gray Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_light_gray') * 144]).remove()
-// Cyan Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_cyan') * 144]).remove()
-// Purple Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_purple') * 144]).remove()
-// Blue Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_blue') * 144]).remove()
-// Brown Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_brown') * 144]).remove()
-// Green Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_green') * 144]).remove()
-// Red Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_red') * 144]).remove()
-// Black Concrete Powder * 8
-mixer.findRecipe(7, [item('minecraft:sand:0') * 4, item('minecraft:gravel:0') * 4], [fluid('dye_black') * 144]).remove()
-
-// Лассо
-assembler.findRecipe(2, [item('minecraft:string:0') * 4, item('minecraft:slime_ball:0')], null).remove()
-
-// Песок --') Диоксид кремния
-electrolyzer.findRecipe(25, [item('minecraft:sand') * 8], null).remove()
-
-// Удаление рецептов голов каменных инструментов
-StoneKnapping.removeRecipe(item('tfc:stone/axe_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/axe_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/axe_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/axe_head/metamorphic'))
-StoneKnapping.removeRecipe(item('tfc:stone/shovel_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/shovel_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/shovel_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/shovel_head/metamorphic'))
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/metamorphic'))
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/metamorphic'))
-StoneKnapping.removeRecipe(item('tfc:stone/javelin_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/javelin_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/javelin_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/javelin_head/metamorphic'))
-StoneKnapping.removeRecipe(item('tfc:stone/hammer_head/igneous_intrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/hammer_head/igneous_extrusive'))
-StoneKnapping.removeRecipe(item('tfc:stone/hammer_head/sedimentary'))
-StoneKnapping.removeRecipe(item('tfc:stone/hammer_head/metamorphic'))
-
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/igneous_intrusive') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/igneous_extrusive') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/sedimentary') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/hoe_head/metamorphic') * 2)
-
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/igneous_intrusive') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/igneous_extrusive') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/sedimentary') * 2)
-StoneKnapping.removeRecipe(item('tfc:stone/knife_head/metamorphic') * 2)
-
-// Удаление голов флинтовых инструментов
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/axe_head/flint'))
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/shovel_head/flint'))
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/javelin_head/flint'))
-
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/hoe_head/flint'))
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/knife_head/flint'))
-
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/hoe_head/flint') * 2)
-StoneKnapping.removeRecipe(item('tfcflorae:tools/flint/knife_head/flint') * 2)

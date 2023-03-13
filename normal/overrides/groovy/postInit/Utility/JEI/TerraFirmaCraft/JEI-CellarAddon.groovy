@@ -1,12 +1,8 @@
-#priority 980
 
-import mods.jei.JEI
-import crafttweaker.item.IItemStack
-import mods.terrafirmacraft.Anvil
 
 // --- Массивы
 
-def (RemoveAndHide) = [
+def removeAndHide = [
    // Saws
    item('cellars:bronze_ice_saw'),
    item('cellars:bismuth_bronze_ice_saw'),
@@ -27,18 +23,7 @@ def (RemoveAndHide) = [
    item('cellars:blue_steel_ice_saw_head')
 ]
 
-def (RemoveRecipesAnvil) = [
-   item('cellars:bronze_ice_saw_head'),
-   item('cellars:bismuth_bronze_ice_saw_head'),
-   item('cellars:black_bronze_ice_saw_head'),
-   item('cellars:wrought_iron_ice_saw_head'),
-   item('cellars:steel_ice_saw_head'),
-   item('cellars:black_steel_ice_saw_head'),
-   item('cellars:red_steel_ice_saw_head'),
-   item('cellars:blue_steel_ice_saw_head')
-]
-
-def (RemoveRecipe) = [
+def removeRecipe = [
    item('cellars:cellar_wall'),
    item('cellars:cellar_door')
 ]
@@ -46,15 +31,11 @@ def (RemoveRecipe) = [
 
 // --- Удаление рецептов
 
-for item in RemoveAndHide {
-   JEI.removeAndHide(item)
-}
-
-for item in RemoveRecipesAnvil{
-   Anvil.removeRecipe(item)
+for (item in removeAndHide) {
+   mods.jei.removeAndHide(item)
 }
 
 // Удаление рецептов верстака
-for item in RemoveRecipe {
+for (item in removeRecipe) {
    crafting.removeByOutput(item)
 }

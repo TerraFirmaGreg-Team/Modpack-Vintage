@@ -1,5 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayGC
 
 
 // --- Добавление рецептов
@@ -472,7 +473,7 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++) {
    chemical_bath.recipeBuilder()
       .inputs(ore('gc.parachute'))
-      .fluidInputs(ItemArray.colorLiquid[i] * 18)
-      .outputs(ItemArray.gcParachute[i])
+      .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+      .outputs(arrayGC.gcParachute[i])
       .duration(20).EUt(7).buildAndRegister()
 }

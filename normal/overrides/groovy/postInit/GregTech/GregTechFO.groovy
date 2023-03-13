@@ -1,4 +1,4 @@
-import postInit.Utility.Array.ArrayTFC
+import postInit.Utility.Array.arrayTFC
 
 // --- Добавление рецептов
 
@@ -141,99 +141,99 @@ fermenter.recipeBuilder()
 	.duration(100).EUt(8).buildAndRegister()
 
 // Cooked Meat
-for (int i = 0; i < ArrayTFC.tfcCookedMeat.size(); i++) {
+for (int i = 0; i < arrayTFC.tfcCookedMeat.size(); i++) {
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcRawMeat[i], 
+			arrayTFC.tfcRawMeat[i], 
 			item('minecraft:coal:*') * 2)
-		.outputs(ArrayTFC.tfcCookedMeat[i])
+		.outputs(arrayTFC.tfcCookedMeat[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcRawMeat[i], 
+			arrayTFC.tfcRawMeat[i], 
 			metaitem('gemCoke'))
-		.outputs(ArrayTFC.tfcCookedMeat[i])
+		.outputs(arrayTFC.tfcCookedMeat[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 
 	// electric_baking_oven.recipeBuilder()
-	//     .inputs(ArrayTFC.tfcRawMeat[i])
-	//     .outputs(ArrayTFC.tfcCookedMeat[i])
+	//     .inputs(arrayTFC.tfcRawMeat[i])
+	//     .outputs(arrayTFC.tfcCookedMeat[i])
 	//     .temperature(400)
 	//     .duration(225).EUt(1).buildAndRegister()
 }
 
 // Bread
-for (int i = 0; i < ArrayTFC.tfcBreads.size(); i++) {
+for (int i = 0; i < arrayTFC.tfcBreads.size(); i++) {
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcDoughs[i], 
+			arrayTFC.tfcDoughs[i], 
 			item('minecraft:coal:*') * 2)
-		.outputs(ArrayTFC.tfcBreads[i])
+		.outputs(arrayTFC.tfcBreads[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 	
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcDoughs[i], 
+			arrayTFC.tfcDoughs[i], 
 			metaitem('gemCoke'))
-		.outputs(ArrayTFC.tfcBreads[i])
+		.outputs(arrayTFC.tfcBreads[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 	
 	// electric_baking_oven.recipeBuilder()
-	// 	.inputs(ArrayTFC.tfcDoughs[i])
-	// 	.outputs(ArrayTFC.tfcBreads[i])
+	// 	.inputs(arrayTFC.tfcDoughs[i])
+	// 	.outputs(arrayTFC.tfcBreads[i])
 	//  .temperature(500)
 	// 	.duration(225).EUt(1).buildAndRegister()
 }
 
 // Flatbread
-for (int i = 0; i < ArrayTFC.tfcFlatBreads.size(); i++) {
+for (int i = 0; i < arrayTFC.tfcFlatBreads.size(); i++) {
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcFlatDoughs[i], 
+			arrayTFC.tfcFlatDoughs[i], 
 			item('minecraft:coal:*') * 2)
-		.outputs(ArrayTFC.tfcFlatBreads[i])
+		.outputs(arrayTFC.tfcFlatBreads[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 	
 	baking_oven.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcFlatDoughs[i], 
+			arrayTFC.tfcFlatDoughs[i], 
 			metaitem('gemCoke'))
-		.outputs(ArrayTFC.tfcFlatBreads[i])
+		.outputs(arrayTFC.tfcFlatBreads[i])
 		.temperature(500)
 		.duration(400).EUt(1).buildAndRegister()
 	
 	// electric_baking_oven.recipeBuilder()
-	// 	.inputs(ArrayTFC.tfcFlatDoughs[i])
-	// 	.outputs(ArrayTFC.tfcFlatBreads[i])
+	// 	.inputs(arrayTFC.tfcFlatDoughs[i])
+	// 	.outputs(arrayTFC.tfcFlatBreads[i])
 	//  .temperature(500)
 	// 	.duration(225).EUt(1).buildAndRegister()
 }
 
 // Flour -') Flat Dough
-for (int i = 0; i < ArrayTFC.tfcFlatDoughs.size(); i++) {
+for (int i = 0; i < arrayTFC.tfcFlatDoughs.size(); i++) {
 	mixer.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcFlour[i], 
+			arrayTFC.tfcFlour[i], 
 			metaitem('dustSmallSalt'))
 		.fluidInputs(fluid('fresh_water') * 1000)
-		.outputs(ArrayTFC.tfcFlatDoughs[i])
+		.outputs(arrayTFC.tfcFlatDoughs[i])
 		.duration(400).EUt(2).buildAndRegister()
 }
 
 // Flat Dough -') Dough
-for (int i = 0; i < ArrayTFC.tfcDoughs.size(); i++) {
+for (int i = 0; i < arrayTFC.tfcDoughs.size(); i++) {
 	mixer.recipeBuilder()
 		.inputs(
-			ArrayTFC.tfcFlatDoughs[i], 
+			arrayTFC.tfcFlatDoughs[i], 
 			ore('sweetener'))
 		.fluidInputs(fluid('yeast_starter') * 1000)
-		.outputs(ArrayTFC.tfcDoughs[i])
+		.outputs(arrayTFC.tfcDoughs[i])
 		.duration(400).EUt(2).buildAndRegister()
 }
 

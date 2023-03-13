@@ -1,40 +1,39 @@
-import postInit.Utility.Array.ItemArray
-import postInit.Utility.Array.ArrayTFC
+import postInit.Utility.Array.arrayTFC
 
 
 // --- Добавление
 
 // Raw Igneous Intrusive Rocks To One OreDict
-for (item in ItemArray.rawIgneousIntrusive) {
+for (item in arrayTFC.rawIgneousIntrusive) {
 	ore('rawIgneousIntrusive').add(item)
 }
 
 // Raw Igneous Extrusive Rocks To One OreDict
-for (item in ItemArray.rawIgneousExtrusive) {
+for (item in arrayTFC.rawIgneousExtrusive) {
 	ore('rawIgneousExtrusive').add(item)
 }
 
 // Rock Metamorphic Rocks To One OreDict
-for (item in ItemArray.rawMetamorphic) {
+for (item in arrayTFC.rawMetamorphic) {
 	ore('rawMetamorphic').add(item)
 }
 
 // Rock Sedimentary Rocks To One OreDict
-for (item in ItemArray.rawSedimentary) {
+for (item in arrayTFC.rawSedimentary) {
 	ore('rawSedimentary').add(item)
 }
 
 // OreDicionary for all seeds
-for (item in ArrayTFC.tfcSeeds) {
+for (item in arrayTFC.tfcSeeds) {
 	ore('allSeeds').add(item)
 }
 
-for (item in ArrayTFC.tfcLooms) {
+for (item in arrayTFC.tfcLooms) {
 	ore('loom').add(item)
 }
 
 // OreDicionary for all slab
-for (item in ArrayTFC.tfcSlabsSmooth) {
+for (item in arrayTFC.tfcSlabsSmooth) {
 	ore('slabStone').add(item)
 }
 
@@ -42,26 +41,18 @@ for (item in ArrayTFC.tfcSlabsSmooth) {
 for (item in ArrayTFC.tfcHelmets) {
 	ore('helmet').add(item)
 }
-
 // OreDicionary for all chestplates
 for (item in ArrayTFC.tfcChestplates) {
 	ore('chestplate').add(item)
 }
-
 // OreDicionary for all greaves
 for (item in ArrayTFC.tfcGreaves) {
 	ore('greaves').add(item)
 }
-
 // OreDicionary for all boots
 for (item in ArrayTFC.tfcBoots) {
 	ore('boots').add(item)
 }
-
-// OreDictionary for all fertilizers
-// for (item in ItemArray.dustFertilizerArray) {
-//     ore('dustFertilizer').add(item)
-// }
 
 ore('ingotClay').add(item('tfcflorae:ceramics/stoneware/stoneware_clay'))
 ore('ingotClay').add(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
@@ -221,7 +212,7 @@ ore('sheetDoubleBlackSteel').remove(item('tfc:metal/double_sheet/black_steel'))
 ore('sheetDoubleBlueSteel').remove(item('tfc:metal/double_sheet/blue_steel'))
 ore('sheetDoubleRedSteel').remove(item('tfc:metal/double_sheet/red_steel'))
 
-for (item in ItemArray.allSaws) {
+for (item in arrayTFC.tfcSaws) {
     ore('saw').remove(item)
 }
 

@@ -1,21 +1,21 @@
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayProjectRed
 
 
 // --- Добавление
 
-ore('dustIlluminar').add(ItemArray.illuminarsArray)
-ore('lampBlockDeactivated').add(ItemArray.deactivatedLampsArray)
-ore('lampBlockActivated').add(ItemArray.activatedLampsArray)
-ore('lampButton').add(ItemArray.buttonLampsArray)
-ore('lampButtonFeedback').add(ItemArray.feedbackLampsArray)
-ore('lampLanternDeactivated').add(ItemArray.deactivatedLanternLampsArray)
-ore('lampLanternActivated').add(ItemArray.activatedLanternLampsArray)
-ore('lampFixtureDeactivated').add(ItemArray.deactivatedFixtureLampsArray)
-ore('lampFixtureActivated').add(ItemArray.deactivatedFixtureLampsArray)
-ore('lampFalloutDeactivated').add(ItemArray.deactivatedFalloutLampsArray)
-ore('lampFalloutActivated').add(ItemArray.activatedFalloutLampsArray)
-ore('lampCageDeactivated').add(ItemArray.deactivatedCageLampsArray)
-ore('lampCageActivated').add(ItemArray.activatedCageLampsArray)
+ore('dustIlluminar').add(arrayProjectRed.illuminars)
+ore('lampBlockDeactivated').add(arrayProjectRed.deLamps)
+ore('lampBlockActivated').add(arrayProjectRed.aLamps)
+ore('lampButton').add(arrayProjectRed.buttonLamps)
+ore('lampButtonFeedback').add(arrayProjectRed.feedbackLamps)
+ore('lampLanternDeactivated').add(arrayProjectRed.deLanternLamps)
+ore('lampLanternActivated').add(arrayProjectRed.aLanternLamps)
+ore('lampFixtureDeactivated').add(arrayProjectRed.deFixtureLamps)
+ore('lampFixtureActivated').add(arrayProjectRed.aFixtureLamps)
+ore('lampFalloutDeactivated').add(arrayProjectRed.deFalloutLamps)
+ore('lampFalloutActivated').add(arrayProjectRed.aFalloutLamps)
+ore('lampCageDeactivated').add(arrayProjectRed.deCageLamps)
+ore('lampCageActivated').add(arrayProjectRed.aCageLamps)
 
 // --- Удаление
 

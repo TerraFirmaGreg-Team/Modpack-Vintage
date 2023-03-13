@@ -9,7 +9,7 @@
   "loaders": {
     "preInit": ["preInit/"],
     "postInit": [
-      "postInit/Utility/ItemArray/",
+      "postInit/Utility/Array/",
       "postInit/Utility/Function.groovy",
       "postInit/Utility/Globals.groovy",
       "postInit/Utility/OreDictionary/",

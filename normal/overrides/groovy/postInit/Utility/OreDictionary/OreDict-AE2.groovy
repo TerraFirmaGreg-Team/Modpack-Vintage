@@ -1,10 +1,10 @@
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayAE2
 
 
 // --- Добавление
 
 // Стеклянный кабель
-for (glassCable in ItemArray.glassCables) {
+for (glassCable in arrayAE2.glassCables) {
     ore('ae2.cable.glass').add(glassCable)
     if (glassCable == item('appliedenergistics2:part', 16)) {}
     else {
@@ -13,7 +13,7 @@ for (glassCable in ItemArray.glassCables) {
 }
 
 // Закрытый кабель
-for (coveredCable in ItemArray.coveredCables) {
+for (coveredCable in arrayAE2.coveredCables) {
     ore('ae2.cable.covered').add(coveredCable)
     if (coveredCable == item('appliedenergistics2:part:', 36)) {}
     else {
@@ -22,7 +22,7 @@ for (coveredCable in ItemArray.coveredCables) {
 }
 
 // Умный кабель
-for (smartCable in ItemArray.smartCables) {
+for (smartCable in arrayAE2.smartCables) {
     ore('ae2.cable.smart').add(smartCable)
     if (smartCable == item('appliedenergistics2:part', 56)) {}
     else {
@@ -31,7 +31,7 @@ for (smartCable in ItemArray.smartCables) {
 }
 
 // Плотный закрытый кабель
-for (denseCoveredCable in ItemArray.denseCoveredCables) {
+for (denseCoveredCable in arrayAE2.denseCoveredCables) {
     ore('ae2.cable.dense.covered').add(denseCoveredCable)
     if (denseCoveredCable == item('appliedenergistics2:part', 516)) {}
     else {
@@ -40,7 +40,7 @@ for (denseCoveredCable in ItemArray.denseCoveredCables) {
 }
 
 // Плотный умный кабель
-for (denseSmartCable in ItemArray.denseSmartCables) {
+for (denseSmartCable in arrayAE2.denseSmartCables) {
     ore('ae2.cable.dense.smart').add(denseSmartCable)
     if (denseSmartCable == item('appliedenergistics2:part', 76)) {}
     else {
@@ -49,12 +49,12 @@ for (denseSmartCable in ItemArray.denseSmartCables) {
 }
 
 // Шарик с краской
-for (paintBall in ItemArray.paintBalls) {
+for (paintBall in arrayAE2.paintBalls) {
     ore('ae2.paint.ball.colors').add(paintBall)
 }
 
 // Люмен шарик с краской
-for (paintBallLumen in ItemArray.paintBallsLumen) {
+for (paintBallLumen in arrayAE2.paintBallsLumen) {
 	ore('ae2.paint.ball.colors').add(paintBallLumen)
     ore('ae2.paint.ball.colors.lumen').add(paintBallLumen)
 }
@@ -93,7 +93,9 @@ ore('ae2.interface.fluid').add([
 // Пыль жемчуга эндера
 ore('dustEnder').remove(item('appliedenergistics2:material', 46))
 ore('dustEnderPearl').remove(item('appliedenergistics2:material', 46))
+
 // Истинный кварц
 ore('crystalCertusQuartz').remove(item('appliedenergistics2:material'))
+
 // Силикон
 ore('itemSilicon').remove(item('appliedenergistics2:material', 5))

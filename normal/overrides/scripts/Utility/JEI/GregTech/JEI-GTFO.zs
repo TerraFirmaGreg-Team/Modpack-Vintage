@@ -4,80 +4,6 @@ import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 
 
-// --- Массивы
-
-val RemoveAndHide as IItemStack[] = [
-	<metaitem:brick.adobe_fired>,
-	<metaitem:brick.adobe>,
-	<metaitem:food.potato_on_a_stick>,
-	<metaitem:food.fish_rotten>,
-	<metaitem:component.dough>,
-	<metaitem:component.flat_dough>,
-	<metaitem:component.bread>,
-	<metaitem:wooden_form.bread>,
-	<metaitem:component.sugary_dough>
-];
-
-val RemoveRecipe as IItemStack[] = [
-   <metaitem:component.apple_slice>,
-   <metaitem:brick.adobe_fired>,
-   <metaitem:component.mushroom_slice>,
-   <metaitem:component.carrot_slice>,
-   <metaitem:component.onion_slice>,
-   <metaitem:component.olive_slice>,
-   <metaitem:component.tomato_slice>,
-   <metaitem:component.cucumber_slice>
-];
-
-val RemoveRecipesByName = [
-   "gregtechfoodoption:casing_adobe_bricks",
-   "gregtechfoodoption:casing_reinforced_adobe_bricks",
-   "gregtechfoodoption:baking_oven",
-   "gregtechfoodoption:gtfo_hand_meat_kebab_0",
-   "gregtechfoodoption:gtfo_hand_meat_kebab_1",
-   "gregtechfoodoption:gtfo_hand_meat_kebab_2",
-   "gregtechfoodoption:gtfo_hand_meat_kebab_3",
-   "gregtechfoodoption:gtfo_hand_meat_kebab_4",
-   "gregtechfoodoption:gtfo_bacon",
-   "gregtechfoodoption:gtfo_sandwich_steak_from_oredict",
-   "gregtechfoodoption:gtfo_pumpkin_pie",
-   "gregtechfoodoption:gtfo_cake",
-   "gregtechfoodoption:cake_bottom",
-   "gregtechfoodoption:gtfo_cookie",
-   "gregtechfoodoption:gtfo_slice_bread",
-   "gregtechfoodoption:bread_dough",
-   "gregtechfoodoption:gtfo_hand_carrot_kebab",
-   "gregtechfoodoption:gtfo_flat_dough",
-   "gregtechfoodoption:dough_2",
-   "gregtechfoodoption:dough_4",
-   "gregtechfoodoption:sugary_dough",
-   "gregtechfoodoption:gtfo_pie_crust",
-   "gregtechfoodoption:baguette_dough",
-   "gregtechfoodoption:bun_dough",
-   "gregtechfoodoption:gtfo_hand_kubide_kebab",
-   "gregtechfoodoption:meat_hand_recipe",
-   "gregtechfoodoption:gtfo_hand_kubide_kebab_meat",
-   "gregtechfoodoption:gtfo_hand_barg_kebab_meat",
-   "gregtechfoodoption:gtfo_hand_onion_kebab",
-   "gregtechfoodoption:gtfo_hand_zest1",
-   "gregtechfoodoption:gtfo_hand_zest2",
-   "gregtechfoodoption:gtfo_hand_zest3"
-] as string[];
-
-
-// --- Удаление рецептов
-
-for item in RemoveAndHide {
-   JEI.removeAndHide(item);
-}
-
-for item in RemoveRecipe{
-   recipes.remove(item);
-}
-
-for item in RemoveRecipesByName{
-   recipes.removeByRecipeName(item);
-}
 
 // Удаление рецептов печи
 furnace.remove(<metaitem:brick.adobe_fired>);
@@ -171,7 +97,7 @@ extractor.findRecipe(4, [<minecraft:fish:1>], null).remove();
 // Sludge
 mixer.findRecipe(16, [<minecraft:fish:2>], [<liquid:sulfuric_acid> * 200]).remove();
 mixer.findRecipe(16, [<minecraft:rabbit:0>], [<liquid:sulfuric_acid> * 200]).remove();
-mixer.findRecipe(16, [<minecraft:porkchop:0>], [<liquid:sulfuric_acid> * 200]).remove();
+// mixer.findRecipe(16, [<minecraft:porkchop:0>], [<liquid:sulfuric_acid> * 200]).remove();
 mixer.findRecipe(16, [<minecraft:chicken:0>], [<liquid:sulfuric_acid> * 200]).remove();
 mixer.findRecipe(16, [<minecraft:mutton:0>], [<liquid:sulfuric_acid> * 200]).remove();
 mixer.findRecipe(16, [<minecraft:fish:0>], [<liquid:sulfuric_acid> * 200]).remove();

@@ -1,4 +1,4 @@
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayGC
 
 
 // --- Добавление
@@ -9,7 +9,7 @@ ore('stoneMoon').add(item('galacticraftcore:basic_block_moon:4'))
 ore('blockDryIce').add(item('extraplanets:iapetus:6'))
 
 // Парашуты
-for (gcParachute in ItemArray.gcParachute) {
+for (gcParachute in arrayGC.gcParachute) {
     ore('gc.parachute').add(gcParachute)
     if (gcParachute == item('galacticraftcore:parachute')) {}
     else {
@@ -18,21 +18,21 @@ for (gcParachute in ItemArray.gcParachute) {
 }
 
 // Балоны
-for (oxygenTankLight in ItemArray.oxygenTankLight) {
+for (oxygenTankLight in arrayGC.oxygenTankLight) {
     ore('gc.oxygen.tank.light').add(oxygenTankLight)
     if (oxygenTankLight == item('extraplanets:oxygen_tank_light_full_white')) {}
     else {
         ore('gc.oxygen.tank.light.colors').add(oxygenTankLight)
     }
 }
-for (oxygenTankMed in ItemArray.oxygenTankMed) {
+for (oxygenTankMed in arrayGC.oxygenTankMed) {
     ore('gc.oxygen.tank.med').add(oxygenTankMed)
     if (oxygenTankMed == item('extraplanets:oxygen_tank_med_full_white')) {}
     else {
         ore('gc.oxygen.tank.med.colors').add(oxygenTankMed)
     }
 }
-for (oxygenTankHeavy in ItemArray.oxygenTankHeavy) {
+for (oxygenTankHeavy in arrayGC.oxygenTankHeavy) {
     ore('gc.oxygen.tank.heavy').add(oxygenTankHeavy)
     if (oxygenTankHeavy == item('extraplanets:oxygen_tank_heavy_full_white')) {}
     else {

@@ -1,4 +1,5 @@
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayProjectRed
 
 // --- Добавление рецептов
 
@@ -6,13 +7,13 @@ import postInit.Utility.Array.ItemArray
 // furnace.addRecipe(item('projectred-core:resource_item') * 2, ore('stone'))
 
 
-for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.illuminars.size(); i++) {
 	// Illuminar dusts
 	mixer.recipeBuilder()
-		.notConsumable(item('gregtech:meta_item_1', 461).withNbt([Configuration: 24]))
+		.notConsumable(circuit24)
 		.inputs(item('minecraft:glowstone_dust'))
-		.fluidInputs(ItemArray.colorLiquid[i] * 18)
-		.outputs(ItemArray.illuminarsArray[i])
+		.fluidInputs(arrayVanila.colorLiquid[i] * 18)
+		.outputs(arrayProjectRed.illuminars[i])
 		.duration(20).EUt(7).buildAndRegister()
 
 	// Deactivated Lamps
@@ -22,8 +23,8 @@ for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
 			metaitem('wireGtSingleRedAlloy'), 
 			ore('paneGlass') * 6, 
 			metaitem('stickSteel') * 12, 
-			ItemArray.illuminarsArray[i] * 2)
-		.outputs(ItemArray.deactivatedLampsArray[i])
+			arrayProjectRed.illuminars[i] * 2)
+		.outputs(arrayProjectRed.deLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 
 	// Button Lamps
@@ -31,8 +32,8 @@ for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
 		.circuitMeta(14)
 		.inputs(
 			ore('buttonStone'), 
-			ItemArray.illuminarsArray[i] * 2)
-		.outputs(ItemArray.buttonLampsArray[i])
+			arrayProjectRed.illuminars[i] * 2)
+		.outputs(arrayProjectRed.buttonLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 
 	// All Deactivated Lantern Lamps
@@ -43,8 +44,8 @@ for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
 			ore('paneGlass') * 2, 
 			metaitem('stickSteel') * 3, 
 			metaitem('plateIron') * 4, 
-			ItemArray.illuminarsArray[i])
-		.outputs(ItemArray.deactivatedLanternLampsArray[i])
+			arrayProjectRed.illuminars[i])
+		.outputs(arrayProjectRed.deLanternLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 
 	// Deactivated Fixture Lamps
@@ -55,8 +56,8 @@ for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
 			metaitem('stickSteel') * 6, 
 			metaitem('plateIron') * 4, 
 			ore('paneGlass') * 5, 
-			ItemArray.illuminarsArray[i] * 2)
-		.outputs(ItemArray.deactivatedFixtureLampsArray[i])
+			arrayProjectRed.illuminars[i] * 2)
+		.outputs(arrayProjectRed.deFixtureLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 		
 	// Deactivated Fallout Lamps
@@ -67,87 +68,87 @@ for (int i = 0; i < ItemArray.illuminarsArray.size(); i++) {
 			metaitem('stickSteel') * 6, 
 			metaitem('plateIron') * 2, 
 			item('galacticraftcore:grating') * 6, 
-			ItemArray.illuminarsArray[i] * 2)
-		.outputs(ItemArray.deactivatedFalloutLampsArray[i])
+			arrayProjectRed.illuminars[i] * 2)
+		.outputs(arrayProjectRed.deFalloutLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 }
 
 // Activated Lamps
-for (int i = 0; i < ItemArray.activatedLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.aLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(13)
 		.inputs(
-			ItemArray.deactivatedLampsArray[i], 
+			arrayProjectRed.deLamps[i], 
 			item('minecraft:redstone_torch'))
-		.outputs(ItemArray.activatedLampsArray[i])
+		.outputs(arrayProjectRed.aLamps[i])
 		.duration(16).EUt(2).buildAndRegister()
 }
 
 // Feedback Lamps
-for (int i = 0; i < ItemArray.feedbackLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.feedbackLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(15)
 		.inputs(
 			item('minecraft:redstone_torch'), 
-			ItemArray.buttonLampsArray[i] * 2)
-		.outputs(ItemArray.feedbackLampsArray[i])
+			arrayProjectRed.buttonLamps[i] * 2)
+		.outputs(arrayProjectRed.feedbackLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 }
 
 // Activated Lantern Lamps
-for (int i = 0; i < ItemArray.activatedLanternLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.aLanternLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(17)
 		.inputs(
-			ItemArray.deactivatedLanternLampsArray[i], 
+			arrayProjectRed.deLanternLamps[i], 
 			item('minecraft:redstone_torch'))
-		.outputs(ItemArray.activatedLanternLampsArray[i])
+		.outputs(arrayProjectRed.aLanternLamps[i])
 		.duration(16).EUt(2).buildAndRegister()
 }
 
 // Activated Fixture Lamps
-for (int i = 0; i < ItemArray.activatedFixtureLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.aFixtureLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(19)
 		.inputs(
-			ItemArray.deactivatedFixtureLampsArray[i], 
+			arrayProjectRed.deFixtureLamps[i], 
 			item('minecraft:redstone_torch'))
-		.outputs(ItemArray.activatedFixtureLampsArray[i])
+		.outputs(arrayProjectRed.aFixtureLamps[i])
 		.duration(16).EUt(2).buildAndRegister()
 }
 
 // Activated Fallout Lamps
-for (int i = 0; i < ItemArray.activatedFalloutLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.aFalloutLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(21)
 		.inputs(
-			ItemArray.deactivatedFalloutLampsArray[i], 
+			arrayProjectRed.deFalloutLamps[i], 
 			item('minecraft:redstone_torch'))
-		.outputs(ItemArray.activatedFalloutLampsArray[i])
+		.outputs(arrayProjectRed.aFalloutLamps[i])
 		.duration(16).EUt(2).buildAndRegister()
 }
 
 // Deactivated Cage Lamps
-for (int i = 0; i < ItemArray.deactivatedCageLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.deCageLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(22)
 		.inputs(
 			item('projectred-core:resource_item:1'), 
 			metaitem('stickSteel') * 2,
 			item('galacticraftcore:grating') * 4,
-			ItemArray.illuminarsArray[i])
-		.outputs(ItemArray.deactivatedCageLampsArray[i])
+			arrayProjectRed.illuminars[i])
+		.outputs(arrayProjectRed.deCageLamps[i])
 		.duration(180).EUt(32).buildAndRegister()
 }
 
 // Activated Cage Lamps
-for (int i = 0; i < ItemArray.activatedCageLampsArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.aCageLamps.size(); i++) {
 	assembler.recipeBuilder()
 		.circuitMeta(23)
 		.inputs(
-			ItemArray.deactivatedCageLampsArray[i], 
+			arrayProjectRed.deCageLamps[i], 
 			item('minecraft:redstone_torch'))
-		.outputs(ItemArray.activatedCageLampsArray[i])
+		.outputs(arrayProjectRed.aCageLamps[i])
 		.duration(16).EUt(2).buildAndRegister()
 }
 
@@ -173,11 +174,12 @@ assembler.recipeBuilder()
 	.fluidInputs(fluid('redstone') * 144)
 	.outputs(item('projectred-transmission:wire') * 12)
 	.duration(180).EUt(32).buildAndRegister()
-for (int i = 0; i < ItemArray.transmissionWiresArray.size(); i++) {
+
+for (int i = 0; i < arrayProjectRed.transmissionWires.size(); i++) {
 	chemical_bath.recipeBuilder()
 		.inputs(item('projectred-transmission:wire'))
-		.fluidInputs(ItemArray.colorLiquid[i] * 18)
-		.outputs(ItemArray.transmissionWiresArray[i])
+		.fluidInputs(arrayVanila.colorLiquid[i] * 18)
+		.outputs(arrayProjectRed.transmissionWires[i])
 		.duration(100).EUt(16).buildAndRegister()
 }
 
@@ -188,11 +190,11 @@ assembler.recipeBuilder()
 	.inputs(ore('string') * 4)
 	.outputs(item('projectred-transmission:wire', 17) * 12)
 	.duration(180).EUt(32).buildAndRegister()
-for (int i = 0; i < ItemArray.bundledCableArray.size(); i++) {
+for (int i = 0; i < arrayProjectRed.bundledCable.size(); i++) {
 	chemical_bath.recipeBuilder()
 		.inputs(item('projectred-transmission:wire', 17))
-		.fluidInputs(ItemArray.colorLiquid[i] * 18)
-		.outputs(ItemArray.bundledCableArray[i])
+		.fluidInputs(arrayVanila.colorLiquid[i] * 18)
+		.outputs(arrayProjectRed.bundledCable[i])
 		.duration(100).EUt(16).buildAndRegister()
 }
 

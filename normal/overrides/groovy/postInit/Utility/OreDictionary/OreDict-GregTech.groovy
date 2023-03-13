@@ -49,6 +49,10 @@ ore('gemExquisite').add(item('gregtech:meta_gem_exquisite:*'))
 ore('knife').add(item('gregtech:knife:*'))
 ore('hammer').add(item('gregtech:hammer:*'))
 ore('saw').add(item('gregtech:saw:*'))
+ore('propick').add(item('gregtech:propick:*'))
+ore('damageTypePiercing').add(item('gregtech:propick:*'))
+ore('chisel').add(item('gregtech:chisel:*'))
+ore('damageTypeSlashing').add(item('gregtech:chisel:*'))
 
 // Алмазы
 ore('diamonds').add(

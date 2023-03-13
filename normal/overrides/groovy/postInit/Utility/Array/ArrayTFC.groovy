@@ -1,5 +1,52 @@
 
-public class ArrayTFC {
+public class arrayTFC {
+
+		// - Raw Igneous Intrusive Rocks Array
+	static rawIgneousIntrusive = [
+		item('tfc:raw/granite'), 
+		item('tfc:raw/gabbro'), 
+		item('tfc:raw/rhyolite'), 
+		item('tfc:raw/diorite'), 
+		item('tfc:raw/breccia'), 
+		item('tfc:raw/porphyry')
+	]
+	
+	// - Raw Igneous Extrusive Rocks Array
+	static rawIgneousExtrusive = [
+		item('tfc:raw/basalt'), 
+		item('tfc:raw/dacite'), 
+		item('tfc:raw/andesite'),
+		item('tfc:raw/peridotite')
+	]
+	
+	// - Raw Metamorphic Rocks Array
+	static rawMetamorphic = [
+		item('tfc:raw/marble'), 
+		item('tfc:raw/gneiss'), 
+		item('tfc:raw/schist'), 
+		item('tfc:raw/quartzite'), 
+		item('tfc:raw/phyllite'), 
+		item('tfc:raw/slate'), 
+		item('tfc:raw/catlinite'), 
+		item('tfc:raw/novaculite'), 
+		item('tfc:raw/soapstone'), 
+		item('tfc:raw/komatiite')
+	]
+	
+	// - Raw Sedimentary Rocks Array
+	static rawSedimentary = [
+		item('tfc:raw/shale'), 
+		item('tfc:raw/dolomite'), 
+		item('tfc:raw/conglomerate'), 
+		item('tfc:raw/limestone'), 
+		item('tfc:raw/rocksalt'), 
+		item('tfc:raw/claystone'), 
+		item('tfc:raw/chert'), 
+		item('tfc:raw/chalk'), 
+		item('tfc:raw/mudstone'), 
+		item('tfc:raw/sandstone'), 
+		item('tfc:raw/siltstone')
+	]
 
     static tfcFlour = [
     	item('tfcflorae:food/fonio_flour'),
@@ -3735,6 +3782,186 @@ public class ArrayTFC {
 		item('tfcflorae:crop/seeds/tobacco')
 	]
 
+	
+	static tfcAlabaster = [
+		item('tfc:alabaster/raw/white'),
+		item('tfc:alabaster/raw/orange'),
+		item('tfc:alabaster/raw/magenta'),
+		item('tfc:alabaster/raw/light_blue'),
+		item('tfc:alabaster/raw/yellow'),
+		item('tfc:alabaster/raw/lime'),
+		item('tfc:alabaster/raw/pink'),
+		item('tfc:alabaster/raw/gray'),
+		item('tfc:alabaster/raw/silver'),
+		item('tfc:alabaster/raw/cyan'),
+		item('tfc:alabaster/raw/purple'),
+		item('tfc:alabaster/raw/blue'),
+		item('tfc:alabaster/raw/brown'),
+		item('tfc:alabaster/raw/green'),
+		item('tfc:alabaster/raw/red'),
+		item('tfc:alabaster/raw/black')
+	]
+
+	static tfcAlabasterBricks = [
+		item('tfc:alabaster/bricks/white'),
+		item('tfc:alabaster/bricks/orange'),
+		item('tfc:alabaster/bricks/magenta'),
+		item('tfc:alabaster/bricks/light_blue'),
+		item('tfc:alabaster/bricks/yellow'),
+		item('tfc:alabaster/bricks/lime'),
+		item('tfc:alabaster/bricks/pink'),
+		item('tfc:alabaster/bricks/gray'),
+		item('tfc:alabaster/bricks/silver'),
+		item('tfc:alabaster/bricks/cyan'),
+		item('tfc:alabaster/bricks/purple'),
+		item('tfc:alabaster/bricks/blue'),
+		item('tfc:alabaster/bricks/brown'),
+		item('tfc:alabaster/bricks/green'),
+		item('tfc:alabaster/bricks/red'),
+		item('tfc:alabaster/bricks/black')
+	]
+
+	static tfcAlabasterPolished = [
+		item('tfc:alabaster/polished/white'),
+		item('tfc:alabaster/polished/orange'),
+		item('tfc:alabaster/polished/magenta'),
+		item('tfc:alabaster/polished/light_blue'),
+		item('tfc:alabaster/polished/yellow'),
+		item('tfc:alabaster/polished/lime'),
+		item('tfc:alabaster/polished/pink'),
+		item('tfc:alabaster/polished/gray'),
+		item('tfc:alabaster/polished/silver'),
+		item('tfc:alabaster/polished/cyan'),
+		item('tfc:alabaster/polished/purple'),
+		item('tfc:alabaster/polished/blue'),
+		item('tfc:alabaster/polished/brown'),
+		item('tfc:alabaster/polished/green'),
+		item('tfc:alabaster/polished/red'),
+		item('tfc:alabaster/polished/black')
+	]
+
+	// - TFC Metal Trapdoors
+	static tfcMetalTrapdoors = [
+		item('tfc:metal/trapdoor/gold'),
+		item('tfc:metal/trapdoor/lead'),
+		item('tfc:metal/trapdoor/nickel'),
+		item('tfc:metal/trapdoor/rose_gold'),
+		item('tfc:metal/trapdoor/silver'),
+		item('tfc:metal/trapdoor/tin'),
+		item('tfc:metal/trapdoor/zinc'),
+		item('tfc:metal/trapdoor/sterling_silver'),
+		item('tfc:metal/trapdoor/copper'),
+		item('tfc:metal/trapdoor/bismuth'),
+		item('tfc:metal/trapdoor/brass'),
+		item('tfc:metal/trapdoor/bismuth_bronze'),
+		item('tfc:metal/trapdoor/bronze'),
+		item('tfc:metal/trapdoor/black_bronze'),
+		item('tfc:metal/trapdoor/wrought_iron'),
+		item('tfc:metal/trapdoor/steel'),
+		item('tfc:metal/trapdoor/platinum'),
+		item('tfc:metal/trapdoor/black_steel'),
+		item('tfc:metal/trapdoor/blue_steel'),
+		item('tfc:metal/trapdoor/red_steel')
+	]
+
+	// - All Plants Array
+	static tfcPlants = [
+		item('tfc:food/barley'),
+		item('tfc:food/maize'),
+		item('tfc:food/oat'),
+		item('tfc:food/rice'),
+		item('tfc:food/rye'),
+		item('tfc:food/wheat'),
+		item('tfc:food/beet'),
+		item('tfc:food/cabbage'),
+		item('tfc:food/carrot'),
+		item('tfc:food/garlic'),
+		item('tfc:food/green_bean'),
+		item('tfc:food/onion'),
+		item('tfc:food/potato'),
+		item('tfc:food/soybean'),
+		item('tfc:food/squash'),
+		item('tfc:food/sugarcane'),
+		item('tfc:food/tomato'),
+		item('tfc:food/red_bell_pepper'),
+		item('tfc:food/yellow_bell_pepper'),
+		item('tfc:crop/product/jute'),
+		item('tfcflorae:crop/product/malt_spelt'),
+		item('tfcflorae:food/amaranth'),
+		item('tfcflorae:food/buckwheat'),
+		item('tfcflorae:food/fonio'),
+		item('tfcflorae:food/millet'),
+		item('tfcflorae:food/quinoa'),
+		item('tfcflorae:food/spelt'),
+		item('tfcflorae:food/black_eyed_peas'),
+		item('tfcflorae:food/red_cayenne_pepper'),
+		item('tfcflorae:food/ginger'),
+		item('tfcflorae:food/ginseng'),
+		item('tfcflorae:food/rutabaga'),
+		item('tfcflorae:food/turnip'),
+		item('tfcflorae:food/sugar_beet'),
+		item('tfcflorae:food/purple_grape'),
+		item('tfcflorae:food/green_grape'),
+		item('tfcflorae:food/liquorice_root'),
+		item('tfcflorae:food/coffea_cherries'),
+		item('tfcflorae:crop/product/agave'),
+		item('tfcflorae:food/coca_leaf'),
+		item('tfcflorae:crop/product/cotton_boll'),
+		item('tfcflorae:crop/product/flax'),
+		item('tfcflorae:crop/product/hemp'),
+		item('tfcflorae:crop/product/hops'),
+		item('tfcflorae:crop/product/indigo'),
+		item('tfcflorae:crop/product/madder'),
+		item('tfcflorae:food/opium_poppy_seed'),
+		item('tfcflorae:crop/product/rape'),
+		item('tfcflorae:crop/product/weld'),
+		item('tfcflorae:crop/product/woad'),
+		item('tfcflorae:food/tobacco_leaf')
+	]
+
+	static tfcSaws = [
+		item('tfc:metal/saw/bismuth_bronze'),
+		item('tfc:metal/saw/black_bronze'),
+		item('tfc:metal/saw/black_steel'),
+		item('tfc:metal/saw/blue_steel'),
+		item('tfc:metal/saw/bronze'),
+		item('tfc:metal/saw/copper'),
+		item('tfc:metal/saw/red_steel'),
+		item('tfc:metal/saw/steel'),
+		item('tfc:metal/saw/wrought_iron'),
+		item('tfc:metal/saw_blade/bismuth_bronze'),
+		item('tfc:metal/saw_blade/black_bronze'),
+		item('tfc:metal/saw_blade/black_steel'),
+		item('tfc:metal/saw_blade/blue_steel'),
+		item('tfc:metal/saw_blade/bronze'),
+		item('tfc:metal/saw_blade/copper'),
+		item('tfc:metal/saw_blade/red_steel'),
+		item('tfc:metal/saw_blade/steel'),
+		item('tfc:metal/saw_blade/wrought_iron')
+	]
+
+	// - Fibers
+	static tfcFibres = [
+		item('tfc:animal/product/wool'),
+		item('firmalife:pineapple_fiber'),
+		item('tfcflorae:crop/product/yucca_fiber'),
+		item('tfcflorae:crop/product/sisal_fiber'),
+		item('tfcflorae:crop/product/hemp_fiber'),
+		item('tfcflorae:crop/product/flax_fiber'),
+		item('tfcflorae:crop/product/cotton_boll')
+	]
+	
+	// - Yarns
+	static tfcStrings = [
+		item('tfc:animal/product/wool_yarn'),
+		item('firmalife:pineapple_yarn'),
+		item('tfcflorae:crop/product/yucca_string'),
+		item('tfcflorae:crop/product/sisal_string'),
+		item('tfcflorae:crop/product/hemp_string'),
+		item('tfcflorae:crop/product/linen_string'),
+		item('tfcflorae:crop/product/cotton_yarn')
+	]
+
 	static tfcHelmets = [
 		item('tfc:metal/helmet/bismuth_bronze'),
 		item('tfc:metal/helmet/black_bronze'),
@@ -3746,7 +3973,6 @@ public class ArrayTFC {
 		item('tfc:metal/helmet/blue_steel'),
 		item('tfc:metal/helmet/red_steel')
 	]
-
 	static tfcChestplates = [
 		item('tfc:metal/chestplate/bismuth_bronze'),
 		item('tfc:metal/chestplate/black_bronze'),
@@ -3758,7 +3984,6 @@ public class ArrayTFC {
 		item('tfc:metal/chestplate/blue_steel'),
 		item('tfc:metal/chestplate/red_steel')
 	]
-
 	static tfcGreaves = [
 		item('tfc:metal/greaves/bismuth_bronze'),
 		item('tfc:metal/greaves/black_bronze'),
@@ -3770,7 +3995,6 @@ public class ArrayTFC {
 		item('tfc:metal/greaves/blue_steel'),
 		item('tfc:metal/greaves/red_steel')
 	]
-
 	static tfcBoots = [
 		item('tfc:metal/boots/bismuth_bronze'),
 		item('tfc:metal/boots/black_bronze'),
@@ -3782,4 +4006,5 @@ public class ArrayTFC {
 		item('tfc:metal/boots/blue_steel'),
 		item('tfc:metal/boots/red_steel')
 	]
+
 }

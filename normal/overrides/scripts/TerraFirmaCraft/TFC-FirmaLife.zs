@@ -89,32 +89,32 @@ ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, t
 for i, FirmalifeFences in FirmalifeFences {
     recipes.addShaped("tfg/firmalife/fence_" + i, FirmalifeFences * 8,
         [[null, null, null],
-        [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]],
-        [TFC_Planks[i + 95], TFC_Lumber[i + 95], TFC_Planks[i + 95]]]);
+        [tfcPlanks[i + 95], tfcLumber[i + 95], tfcPlanks[i + 95]],
+        [tfcPlanks[i + 95], tfcLumber[i + 95], tfcPlanks[i + 95]]]);
 }
 
 // Калитки
 for i, FirmalifeFenceGates in FirmalifeFenceGates {
     recipes.addShaped("tfg/firmalife/fencegate_" + i, FirmalifeFenceGates * 2,
         [[null, null, null],
-        [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]],
-        [TFC_Lumber[i + 95], TFC_Planks[i + 95], TFC_Lumber[i + 95]]]);
+        [tfcLumber[i + 95], tfcPlanks[i + 95], tfcLumber[i + 95]],
+        [tfcLumber[i + 95], tfcPlanks[i + 95], tfcLumber[i + 95]]]);
 }
 
 // Двери
 for i, FirmalifeDoors in FirmalifeDoors {
     recipes.addShaped("tfg/firmalife/door_" + i, FirmalifeDoors * 2,
-        [[TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
-        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null],
-        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], null]]);
+        [[tfcLumber[i + 95], tfcLumber[i + 95], null],
+        [tfcLumber[i + 95], tfcLumber[i + 95], null],
+        [tfcLumber[i + 95], tfcLumber[i + 95], null]]);
 }
 
 // Люки
 for i, FirmalifeTrapdoors in FirmalifeTrapdoors {
     recipes.addShaped("tfg/firmalife/trapdoor_" + i, FirmalifeTrapdoors * 3,
         [[null, null, null],
-        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]],
-        [TFC_Lumber[i + 95], TFC_Lumber[i + 95], TFC_Lumber[i + 95]]]);
+        [tfcLumber[i + 95], tfcLumber[i + 95], tfcLumber[i + 95]],
+        [tfcLumber[i + 95], tfcLumber[i + 95], tfcLumber[i + 95]]]);
 }
 
 // Климатическая станция уровня 0

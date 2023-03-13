@@ -1,5 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.ItemArray
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayAE2
 
 
 // --- Добавление рецептов
@@ -31,8 +32,8 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++)  {
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.cable.glass'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.glassCables[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.glassCables[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -63,8 +64,8 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++)  {
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.cable.covered'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.coveredCables[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.coveredCables[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -112,8 +113,8 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++) {
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.cable.smart'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.smartCables[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.smartCables[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -149,8 +150,8 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++) {
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.cable.dense.covered'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.denseCoveredCables[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.denseCoveredCables[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -211,8 +212,8 @@ chemical_bath.recipeBuilder()
 for (int i = 0; i < 16; i++) {
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.cable.dense.smart'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.denseSmartCables[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.denseSmartCables[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 
@@ -220,13 +221,13 @@ for (int i = 0; i < 16; i++) {
 for (int i = 0; i < 16; i++) {
   chemical_bath.recipeBuilder()
     .inputs(item('appliedenergistics2:material', 6))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.paintBalls[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.paintBalls[i])
     .duration(20).EUt(7).buildAndRegister()
   chemical_bath.recipeBuilder()
     .inputs(ore('ae2.paint.ball.colors'))
-    .fluidInputs(ItemArray.colorLiquid[i] * 18)
-    .outputs(ItemArray.paintBallsLumen[i])
+    .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+    .outputs(arrayAE2.paintBallsLumen[i])
     .duration(20).EUt(7).buildAndRegister()
 }
 for (int i = 0; i < 4; i++) {
@@ -235,16 +236,16 @@ for (int i = 0; i < 4; i++) {
   packer.recipeBuilder()
     .inputs(
       item('appliedenergistics2:material', 39),
-      ItemArray.storageComponents[i])
-    .outputs(ItemArray.storageCells[i])
+      arrayAE2.storageComponents[i])
+    .outputs(arrayAE2.storageCells[i])
     .cleanroom(CleanroomType.STERILE_CLEANROOM )
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()
-    .inputs(ItemArray.storageCells[i])
+    .inputs(arrayAE2.storageCells[i])
     .outputs(
       item('appliedenergistics2:material', 39),
-      ItemArray.storageComponents[i])
+      arrayAE2.storageComponents[i])
     .duration(10).EUt(7).buildAndRegister()
 
   // Жидкостные ячейки
@@ -252,16 +253,16 @@ for (int i = 0; i < 4; i++) {
   packer.recipeBuilder()
     .inputs(
       metaitem('fluid.housing'),
-      ItemArray.fluidStorageComponents[i])
-    .outputs(ItemArray.fluidStorageCells[i])
+      arrayAE2.fluidStorageComponents[i])
+    .outputs(arrayAE2.fluidStorageCells[i])
     .cleanroom(CleanroomType.STERILE_CLEANROOM)
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()
-    .inputs(ItemArray.fluidStorageCells[i])
+    .inputs(arrayAE2.fluidStorageCells[i])
     .outputs(
       metaitem('fluid.housing'),
-      ItemArray.fluidStorageComponents[i])
+      arrayAE2.fluidStorageComponents[i])
     .duration(10).EUt(7).buildAndRegister()
 }
 
@@ -270,15 +271,15 @@ for (int i = 0; i < 8; i++) {
 packer.recipeBuilder()
   .inputs(
     item('appliedenergistics2:crafting_unit'),
-    ItemArray.storageComponents[i])
-  .outputs(ItemArray.craftingStorage[i])
+    arrayAE2.storageComponents[i])
+  .outputs(arrayAE2.craftingStorage[i])
   .cleanroom(CleanroomType.STERILE_CLEANROOM)
   .duration(10).EUt(7).buildAndRegister()
 packer.recipeBuilder()
-  .inputs(ItemArray.craftingStorage[i])
+  .inputs(arrayAE2.craftingStorage[i])
   .outputs(
     item('appliedenergistics2:crafting_unit'),
-    ItemArray.storageComponents[i])
+    arrayAE2.storageComponents[i])
   .duration(10).EUt(7).buildAndRegister()
 }
 
@@ -678,7 +679,7 @@ assembler.recipeBuilder()
   .duration(20).EUt(7680).buildAndRegister()
 
 // Wireless Terminal
-crafting.addShaped("tfg/ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal'), [
+crafting.addShaped("tfg/ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal:*'), [
   [item('appliedenergistics2:material', 41), item('appliedenergistics2:part:380'), item('appliedenergistics2:material', 41)],
   [item('appliedenergistics2:material', 24), ore('circuitHv'), item('appliedenergistics2:material', 24)],
   [metaitem('plateNetherQuartz'), item('appliedenergistics2:dense_energy_cell'), metaitem('plateNetherQuartz')]])
@@ -1131,9 +1132,9 @@ assembler.recipeBuilder()
 
 // Плоскость истребления ID
 assembler.recipeBuilder()
-  .inputs([
+  .inputs(
     item('appliedenergistics2:part:300'),
-    ore('pearlFluix')])
+    ore('pearlFluix'))
   .fluidInputs(fluid('plastic') * 144)
   .outputs(item('appliedenergistics2:part', 301))
   .duration(200).EUt(480).buildAndRegister()
