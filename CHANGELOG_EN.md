@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.5] - 2023-03-14
+### Modpack fixes
+- Added missing OC recipes.
+- Fixed script name error that caused errors in TFC.
+- Fixed sterile clean room requirement in many recipes.
+
 ## [4.2.4] - 2023-03-14
 ### Modpack fixes
 - A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
