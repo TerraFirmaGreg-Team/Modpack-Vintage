@@ -13,7 +13,7 @@ for (int i = 4; i < 8; i++) {
       item('aeadditions:storage.casing'),
       arrayAE2.storageComponents[i])
     .outputs(arrayAE2.storageCells[i])
-    .cleanroom(CleanroomType.STERILE_CLEANROOM)
+    .cleanroom(CleanroomType.CLEANROOM)
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()
@@ -31,7 +31,7 @@ for (int i = 4; i < 7; i++) {
       item('aeadditions:storage.casing', 1),
       arrayAE2.fluidStorageComponents[i])
     .outputs(arrayAE2.fluidStorageCells[i])
-    .cleanroom(CleanroomType.STERILE_CLEANROOM)
+    .cleanroom(CleanroomType.CLEANROOM)
     .duration(10).EUt(7).buildAndRegister()
   // Разбор
   packer.recipeBuilder()

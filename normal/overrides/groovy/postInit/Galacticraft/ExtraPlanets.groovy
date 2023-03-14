@@ -58,7 +58,7 @@ assembler.recipeBuilder()
       metaitem('plateDenseCopper') * 2,
       metaitem('electric.pump.lv') * 2)
    .outputs(item('extraplanets:oxygen_tank_light_full_white'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(128).buildAndRegister()
 // Средний
 assembler.recipeBuilder()
@@ -68,7 +68,7 @@ assembler.recipeBuilder()
       metaitem('plateDenseTin') * 4, 
       metaitem('electric.pump.mv') * 2)
    .outputs(item('extraplanets:oxygen_tank_med_full_white'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(512).buildAndRegister()
 // Тяжелый
 assembler.recipeBuilder()
@@ -78,7 +78,7 @@ assembler.recipeBuilder()
       metaitem('plateDenseSteel') * 6, 
       metaitem('electric.pump.hv') * 2)
    .outputs(item('extraplanets:oxygen_tank_heavy_full_white'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(2048).buildAndRegister()
 
 // Очень тяжелый
@@ -89,7 +89,7 @@ assembler.recipeBuilder()
       metaitem('platePalladium') * 3, 
       metaitem('electric.pump.ev') * 2)
    .outputs(item('extraplanets:oxygen_tank_very_heavy_full'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(8192).buildAndRegister()
 // Экстремально тяжелый
 assembler.recipeBuilder()
@@ -99,7 +99,7 @@ assembler.recipeBuilder()
       metaitem('plateZinc') * 3, 
       metaitem('electric.pump.iv') * 2)
    .outputs(item('extraplanets:oxygen_tank_extremely_heavy_full'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(32768).buildAndRegister()
 
 // Взлетная площадка 2 Tiers
@@ -149,7 +149,7 @@ assembler.recipeBuilder()
       ore('batteryLuv') * 8,
       ore('circuitLuv') * 8)
    .outputs(item('extraplanets:gravity_controller'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(31123).buildAndRegister()
 
 // Кислородный контроллер
@@ -161,7 +161,7 @@ assembler.recipeBuilder()
       ore('circuitLuv') * 8,
       ore('gc.oxygen.tank.heavy'))
    .outputs(item('extraplanets:module_items:1'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(31123).buildAndRegister()
 
 // Космический контроллер
@@ -173,7 +173,7 @@ assembler.recipeBuilder()
       ore('circuitLuv') * 8,
       item('galacticraftcore:oxygen_gear'))
    .outputs(item('extraplanets:module_items:2'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(31123).buildAndRegister()
 
 // Модуль отсутствия повреждения при падении
@@ -184,7 +184,7 @@ assembler.recipeBuilder()
       item('extraplanets:gravity_controller'),
       item('extraplanets:module_items:2'))
    .outputs(item('extraplanets:module_items'))
-   .cleanroom(CleanroomType.STERILE_CLEANROOM)
+   .cleanroom(CleanroomType.CLEANROOM)
    .duration(1000).EUt(31123).buildAndRegister()
 
 // Прочная ткань

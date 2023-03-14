@@ -206,7 +206,7 @@ assembler.recipeBuilder()
         ore('chestWood'),
         item('opencomputers:material:7'))
     .fluidInputs(fluid('soldering_alloy') * 72)
-    .outputs([item('opencomputers:upgrade:8')])
+    .outputs(item('opencomputers:upgrade:8'))
     .duration(100).EUt(120).buildAndRegister()
 
 // Upgrade Container - Tier 2
@@ -240,7 +240,7 @@ assembler.recipeBuilder()
         ore('chestWood'),
         item('opencomputers:material:9'))
     .fluidInputs(fluid('tin') * 144)
-    .outputs([item('opencomputers:upgrade:10')])
+    .outputs(item('opencomputers:upgrade:10'))
     .duration(100).EUt(1920).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
@@ -265,6 +265,19 @@ assembler.recipeBuilder()
         ore('ingotIron') * 2)
     .fluidInputs(fluid('lava') * 144)
     .outputs(item('opencomputers:disassembler'))
+    .duration(100).EUt(1920).buildAndRegister()
+
+// Assembler
+assembler.recipeBuilder()
+    .circuitMeta(1)
+    .inputs(
+        ore('workbench'),
+        ore('screwIronAny') * 3,
+        ore('craftingPiston') * 2,
+        ore('oc:circuitChip2'),
+        ore('circuitLv') * 2,
+        ore('craftingToolScrewdriver'))
+    .outputs(item('opencomputers:assembler'))
     .duration(100).EUt(1920).buildAndRegister()
 
 // Hologram1

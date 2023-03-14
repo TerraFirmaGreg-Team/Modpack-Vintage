@@ -6,9 +6,9 @@ ingotiron = false
 chipdiamond = false
 gemDiamond = false
 
-rawcircuitboard = false
-circuitboard = false
-printedcircuitboard = false
+#rawcircuitboard = false
+#circuitboard = false
+#printedcircuitboard = false
 
 dronecase1 = true
 dronecase2 = true
@@ -51,7 +51,7 @@ motionsensor = true
 netsplitter = true
 
 adapter = true
-assembler = false
+assembler = true
 
 graphicscard1 = true
 graphicscard2 = true
@@ -81,8 +81,8 @@ disassembler = true
 diskdrive = true
 geolyzer = true
 
-tabletcase1 = true
-tabletcase2 = true
+#tabletcase1 = true
+#tabletcase2 = true
 
 diskdrivemountable = true
 
@@ -129,7 +129,7 @@ databaseupgrade3 = true
 hoverupgrade1 = true
 hoverupgrade2 = true
 
-angelupgrade = true
+#angelupgrade = true
 
 tankupgrade = true
 tankcontrollerupgrade = true
@@ -137,7 +137,7 @@ tankcontrollerupgrade = true
 chunkloaderupgrade = true
 craftingupgrade = true
 experienceupgrade = true
-generatorupgrade = true
+#generatorupgrade = true
 inventoryupgrade = true
 inventorycontrollerupgrade = true
 leashupgrade = true
@@ -145,7 +145,7 @@ navigationupgrade = true
 pistonupgrade = true
 stickypistonupgrade = true
 signupgrade = true
-solargeneratorupgrade = true
+#solargeneratorupgrade = true
 
 tractorbeamupgrade = true
 tradingupgrade = true
