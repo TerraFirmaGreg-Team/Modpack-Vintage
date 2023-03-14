@@ -1,5 +1,26 @@
 # Changelog
 
+## [4.2.4] - 2023-03-14
+### Modpack fixes
+- A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
+- Fixed forging and casting crafting for chisel and propick tool heads.
+- Added missing OS recipes.
+- Fixed a bug with obtaining colored steel ingots in the steam hammer.
+- Fixed T1 rocket engine recipe not working.
+- Fixed not working recipe for obtaining salt from a bucket of salt.
+- The armor quest now accepts armor from all materials.
+- Fixed another portion of AE2 recipes not working.
+
+### Update mods
+- TFG mod
+- Fluid Craft for AE2
+- Appliedenergistics2
+- Entity Culling
+- Gregtech
+- Particle Culling
+- RenderLib
+- Supermartijn642corelib
+
 ## [4.2.3] - 2023-03-09
 ### Modpack fixes
 - A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
