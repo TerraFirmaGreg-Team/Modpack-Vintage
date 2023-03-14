@@ -7,6 +7,7 @@
 .minecraft/mods/darkness-forge-1.12.x-0.5.0.jar
 .minecraft/mods/DefaultOptions_1.12.2-9.2.8.jar
 .minecraft/mods/DynamicSurroundings-1.12.2-3.6.3.jar
+.minecraft/mods/EntityCulling-1.12.2-6.3.1.jar
 .minecraft/mods/fancymenu_forge_2.13.3_MC_1.12-1.12.2.jar
 .minecraft/mods/FpsReducer-mc1.12.2-1.20.jar
 .minecraft/mods/InventoryHUD-1.12.2.forge-3.4.4.jar
@@ -20,9 +21,9 @@
 .minecraft/mods/moreoverlays-1.15.1-mc1.12.2.jar
 .minecraft/mods/MouseTweaks-3.1.2-mc1.12.2.jar
 .minecraft/mods/OptiFine_1.12.2_HD_U_G5.jar
-.minecraft/mods/particleculling-1.12.2-v1.3.1.jar
+.minecraft/mods/particleculling-1.12.2-v1.4.jar
 .minecraft/mods/phosphor-1.12.2-0.2.9.2-SNAPSHOT-universal.jar
-.minecraft/mods/RenderLib-1.12.2-1.2.6.jar
+.minecraft/mods/RenderLib-1.12.2-1.2.7.jar
 .minecraft/mods/ResourceLoader-MC1.12.1-1.5.3.jar
 .minecraft/mods/SmoothFont-mc1.12.2-2.1.4.jar
 .minecraft/mods/SoundFilters-0.12.1_for_1.12.jar
