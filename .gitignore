@@ -1,6 +1,3 @@
-
-normal/overrides/config/oxygen/data/client/*
-normal/overrides/config/jei/worldSettings.cfg
 .minecraft/.mixin.out
 .minecraft/crafttweaker.log
 .minecraft/local
@@ -24,3 +21,7 @@ natives
 .minecraft/config/JustEnoughCalculation/record.json
 .minecraft/oxygen/worlds
 instance.cfg
+.minecraft/config/AppliedEnergistics2/items.csv
+.minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
+.minecraft/caches
+.minecraft/asm
