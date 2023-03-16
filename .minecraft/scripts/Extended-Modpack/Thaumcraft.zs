@@ -242,10 +242,10 @@ Infusion.registerRecipe("thaumcraft:seal:7F", "", <thaumcraft:seal:7>, 1,
     [<aspect:herba>*10, <aspect:sensus>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
     [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/jute>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/beet>, <tfc:crop/seeds/sugarcane>, <tfc:crop/seeds/potato>]);
 
-// Печать разрушение блоков
+// Печать разрушение блоков 2 кирки и топор
 Infusion.registerRecipe("thaumcraft:seal:12F", "", <thaumcraft:seal:12>, 1, 
     [<aspect:instrumentum>*10, <aspect:perditio>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
-    [<gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:3>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
+    [<gregtech:pickaxe>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:pickaxe>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:axe>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
 
 // Печать забивание
 Infusion.registerRecipe("thaumcraft:seal:8F", "", <thaumcraft:seal:8>, 1, 
@@ -290,7 +290,7 @@ Infusion.registerRecipe("thaumcraft:curiosity_bandF", "", <thaumcraft:curiosity_
 // Мистический бур
 Infusion.registerRecipe("thaumcraft:turret:2F", "", <thaumcraft:turret:2>, 4, 
     [<aspect:machina>*100, <aspect:potentia>*25, <aspect:terra>*25, <aspect:vacuos>*25, <aspect:motus>*25], <thaumcraft:turret>,
-    [<gregtech:meta_item_1:12094>, <gregtech:meta_item_1:12094>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:nugget:10>, <thaumcraft:morphic_resonator>, <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
+    [<gregtech:meta_item_1:12094>, <gregtech:meta_item_1:12094>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>,<thaumcraft:plank_greatwood>,<thaumcraft:nugget:10>, <thaumcraft:morphic_resonator>, <gregtech:pickaxe>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:shovel>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
 
 // Зеркало эссенсий
 Infusion.registerRecipe("thaumcraft:mirror_essentiaF", "", <thaumcraft:mirror_essentia>, 2, 

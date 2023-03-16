@@ -26,3 +26,5 @@ instance.cfg
 .minecraft/caches
 .minecraft/asm
 .minecraft/config/JustEnoughCalculation/record.json
+.minecraft/hei_bookmarks.ini
+.minecraft/config/thaumicjei_itemstack_aspects.json
