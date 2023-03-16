@@ -17,3 +17,7 @@ natives
 .minecraft/journeymap
 .minecraft/knownkeys.txt
 .minecraft/config/jei/worldSettings.cfg
+.minecraft/saves
+.minecraft/usercache.json
+.minecraft/usernamecache.json
+.minecraft/config/oxygen/data/client/worlds
