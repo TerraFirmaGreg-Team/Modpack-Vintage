@@ -2,7 +2,7 @@ name: Deploy preview modpack
 on:
   push:
     tags:
-      - 'Pre-*'
+      - 'R-test'
 
 jobs:
   Deploy:
@@ -25,17 +25,17 @@ jobs:
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
 
-      - name: Changelog Parser RU
-        id: changelog_ru
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_RU.md
+      # - name: Changelog Parser RU
+      #   id: changelog_ru
+      #   uses: coditory/changelog-parser@v1
+      #   with:
+      #     path: CHANGELOG_RU.md
 
-      - name: Changelog Parser EN
-        id: changelog_en
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_EN.md
+      # - name: Changelog Parser EN
+      #   id: changelog_en
+      #   uses: coditory/changelog-parser@v1
+      #   with:
+      #     path: CHANGELOG_EN.md
 
       - name: normal -> extended
         run: cp -r .minecraft/* ./extended/.minecraft/
