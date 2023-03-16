@@ -60,7 +60,7 @@ assembler.recipeBuilder()
         ore('componentTransistor') * 2,
         metaitem('boltSilver') * 8)
     .fluidInputs(fluid('tin') * 144)
-    .outputs([item('opencomputers:upgrade:2')])
+    .outputs(item('opencomputers:upgrade:2'))
     .duration(100).EUt(480).buildAndRegister()
 assembler.recipeBuilder()
     .circuitMeta(1)
