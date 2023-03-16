@@ -18,10 +18,9 @@ jobs:
       - name: Set the version
         run: |
           MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./normal/overrides/resources/modpack/version.txt
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/manifest.json
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/instance.cfg
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/overrides/config/fancymenu/customization/tfg_version.txt
+          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
 
