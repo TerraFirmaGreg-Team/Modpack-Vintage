@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.6] - 2023-00-00
+### Modpack fixes
+- Fixed script errors in the Extended version, due to the use of old GT tools.
+- Fixed a bug with obtaining salt from a bucket of salt.
+- Almost all CT scripts moved to groovy.
+
 ## [4.2.5] - 2023-03-14
 ### Modpack fixes
 - Added missing OC recipes.
