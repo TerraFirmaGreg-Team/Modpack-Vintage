@@ -1,0 +1,14 @@
+{
+	x: -30.0d,
+	y: -12.25d,
+	dependencies: [
+		"1ec200dc"
+	],
+	tasks: [{
+		uid: "4d023711",
+		type: "item",
+		items: [{
+			item: "firmalife:quad_planter"
+		}]
+	}]
+}

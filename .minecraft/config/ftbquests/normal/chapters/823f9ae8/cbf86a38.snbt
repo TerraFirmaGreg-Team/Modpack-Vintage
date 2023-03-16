@@ -1,0 +1,29 @@
+{
+	x: -14.0d,
+	y: -8.5d,
+	dependencies: [
+		"68bfa880"
+	],
+	tasks: [{
+		uid: "603bd1c6",
+		type: "item",
+		items: [{
+			id: "tfc:metal/double_ingot/bismuth_bronze",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}],
+		count: 7L
+	}]
+}

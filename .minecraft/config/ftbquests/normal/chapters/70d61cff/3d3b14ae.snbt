@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.ev.advancedcircuitboards.title}",
+	icon: "gregtech:meta_item_1 1 404",
+	x: -5.0d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"205d539b"
+	],
+	tasks: [{
+		uid: "2d11e1c1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 384"
+		}]
+	},
+	{
+		uid: "5067a310",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 404"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 6.0d,
+	y: 10.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.wirelessboostercard.subtitle}",
+	dependencies: [
+		"56452da4"
+	],
+	tasks: [{
+		uid: "ea8158bd",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 59"
+		}]
+	}]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Venus Trona Vein",
+    "weight": 50,
+    "density": 0.3,
+    "max_height": 90,
+    "min_height": 5,
+    "generation_predicate":["block:galacticraftplanets:venus:1"],
+    "dimension_filter": [
+      "dimension_id:-31"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:trona"
+        },
+        {
+          "secondary": "ore:talc"
+        },
+        {
+          "between": "ore:salt"
+        },
+        {
+          "sporadic": "ore:talc"
+        }
+      ]
+    }
+}

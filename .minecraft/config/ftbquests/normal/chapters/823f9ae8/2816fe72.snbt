@@ -1,0 +1,18 @@
+{
+	title: "{tfg.quests.primitive.leather.title}",
+	x: -26.25d,
+	y: 12.0d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.leather.subtitle}",
+	dependencies: [
+		"df6ac7ce",
+		"755f0c3c"
+	],
+	tasks: [{
+		uid: "d79c858a",
+		type: "item",
+		items: [{
+			item: "minecraft:leather"
+		}]
+	}]
+}

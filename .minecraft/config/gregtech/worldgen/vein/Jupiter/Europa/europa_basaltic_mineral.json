@@ -1,0 +1,35 @@
+{
+    "name": "Europa Basaltic Mineral",
+    "weight": 80,
+    "density": 0.35,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:europa:2"],
+    "dimension_filter": [
+      "dimension_id:-1501"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:basaltic_mineral_sand"
+        },
+        {
+          "secondary": "ore:granitic_mineral_sand"
+        },
+        {
+          "between": "ore:fullers_earth"
+        },
+        {
+          "sporadic": "ore:gypsum"
+        }
+      ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+	title: "{tfg.quests.primitive.logs.title}",
+	icon: "tfc:wood/log/oak",
+	x: -31.0d,
+	y: -8.25d,
+	description: "{tfg.quests.primitive.logs.subtitle}",
+	text: [
+		"{tfg.quests.primitive.logs.desc}"
+	],
+	dependencies: [
+		"ea2bbdf5"
+	],
+	tasks: [{
+		uid: "c87b32e7",
+		type: "item",
+		title: "{tfg.quests.primitive.logs.tasks.logs.title}",
+		items: [{
+			id: "itemfilters:filter",
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}],
+		count: 16L
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "{tfg.quests.ev.tungsticacid.title}",
+	icon: "gregtech:meta_dust 1 343",
+	x: -1.5d,
+	y: -4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"efe6446b"
+	],
+	tasks: [{
+		uid: "73cc220b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 343"
+		}]
+	}]
+}

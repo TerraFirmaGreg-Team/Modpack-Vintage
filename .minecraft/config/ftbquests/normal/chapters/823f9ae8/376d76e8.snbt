@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.primitive.harderbucket.title}",
+	x: -13.5d,
+	y: 10.0d,
+	shape: "rsquare",
+	description: "{tfg.quests.primitive.harderbucket.subtitle}",
+	dependencies: [
+		"06da47f2",
+		"a0270355",
+		"1787f830",
+		"24382b4f"
+	],
+	tasks: [{
+		uid: "984b481d",
+		type: "item",
+		items: [{
+			item: "waterflasks:iron_flask"
+		}]
+	}]
+}

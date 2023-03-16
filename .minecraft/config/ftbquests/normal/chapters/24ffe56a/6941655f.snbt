@@ -1,0 +1,35 @@
+{
+	title: "Polybenzimidazole",
+	icon: "gregtech:meta_ingot 1 1010",
+	x: -19.5d,
+	y: -4.25d,
+	text: [
+		"§oThe toughest Polymer to make in GTCEu!§r",
+		"",
+		"You should have all the tools available to produce §aPolybenzimidazole§r on your own!",
+		"",
+		"I will give you nothing but one advice. When looking through recipes, pin them in §2JEI§r (default 'A' hotkey). I hope you have been doing that this whole time, as it makes planning a lot easier!",
+		"",
+		"§aPBI§r only becomes mandatory to progress from §dLuV§r to ZPM, but having it made earlier will unlock the §6Advanced SMDs§r.",
+		"",
+		"The Quest can be completed with §eany§r PBI form. However you may want Bars for automation purposes."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "aa539f20",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 1010"
+		}]
+	},
+	{
+		uid: "39c08ab9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_plate 1 1010"
+		}]
+	}]
+}

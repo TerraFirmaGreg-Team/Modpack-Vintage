@@ -1,0 +1,22 @@
+{
+	title: "{moon.ganymede}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/ganymede.png"
+		}
+	},
+	x: 15.25d,
+	y: 8.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "2212338b",
+		type: "dimension",
+		title: "{moon.ganymede}",
+		dim: -1506
+	}]
+}

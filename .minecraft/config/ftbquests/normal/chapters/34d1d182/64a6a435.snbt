@@ -1,0 +1,16 @@
+{
+	x: 6.25d,
+	y: 16.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "014d9628",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_detector"
+		}]
+	}]
+}

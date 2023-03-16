@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: 7.0d,
+	dependencies: [
+		"7daba4fb"
+	],
+	tasks: [{
+		uid: "a06a04fb",
+		type: "item",
+		items: [{
+			item: "ae2fc:fluid_pattern_encoder"
+		}]
+	}]
+}

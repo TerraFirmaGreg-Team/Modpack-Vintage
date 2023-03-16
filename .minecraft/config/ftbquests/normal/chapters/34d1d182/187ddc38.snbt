@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: -0.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "7d9e10b3",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:beam_receiver"
+		}]
+	},
+	{
+		uid: "66e6517f",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:beam_reflector"
+		}]
+	}]
+}

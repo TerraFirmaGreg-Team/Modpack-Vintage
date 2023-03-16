@@ -1,0 +1,16 @@
+{
+	title: "{tfg.quests.primitive.charcoal.title}",
+	x: -32.0d,
+	y: -8.25d,
+	description: "{tfg.quests.primitive.charcoal.subtitle}",
+	dependencies: [
+		"a03af80a"
+	],
+	tasks: [{
+		uid: "31a642c1",
+		type: "item",
+		items: [{
+			item: "minecraft:coal 1 1"
+		}]
+	}]
+}

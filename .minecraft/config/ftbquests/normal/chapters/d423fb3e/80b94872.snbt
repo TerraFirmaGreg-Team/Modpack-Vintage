@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.steam.mininghammer.title}",
+	x: -15.0d,
+	y: 2.0d,
+	description: "{tfg.quests.steam.mininghammer.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9ea61464"
+	],
+	tasks: [{
+		uid: "b57f2362",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any toolMiningHammer"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "toolMiningHammer"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

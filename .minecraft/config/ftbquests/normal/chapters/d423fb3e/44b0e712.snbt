@@ -1,0 +1,17 @@
+{
+	x: -11.0d,
+	y: -7.25d,
+	description: "{tfg.quests.steam.steelboiler.subtitle}",
+	dependencies: [
+		"e6318f88"
+	],
+	optional: true,
+	tasks: [{
+		uid: "80198050",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

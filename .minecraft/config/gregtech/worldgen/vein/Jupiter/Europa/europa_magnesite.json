@@ -1,0 +1,35 @@
+{
+    "name": "Europa Magnesite",
+    "weight": 110,
+    "density": 0.55,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:europa:2"],
+    "dimension_filter": [
+      "dimension_id:-1501"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:magnesite"
+        },
+        {
+          "secondary": "ore:banded_iron"
+        },
+        {
+          "between": "ore:sulfur"
+        },
+        {
+          "sporadic": "ore:opal"
+        }
+      ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	shape: "circle",
+	description: "{tfg.quests.ae2.fluxpipe.subtitle}",
+	dependencies: [
+		"848cab62"
+	],
+	tasks: [{
+		uid: "aa16b584",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ae2.cable.glass"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ae2.cable.glass"
+				}
+			}
+		}]
+	}]
+}

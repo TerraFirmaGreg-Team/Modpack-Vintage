@@ -1,0 +1,49 @@
+{
+	title: "{tfg.quests.mv.USsimulator.title}",
+	icon: "gregtech:machine 1 1530",
+	x: 4.0d,
+	y: -11.0d,
+	description: "{tfg.quests.mv.USsimulator.subtitle}",
+	text: [
+		"{tfg.quests.mv.USsimulator.desc1}",
+		"{tfg.quests.mv.USsimulator.desc2}",
+		"",
+		"{tfg.quests.mv.USsimulator.desc3}",
+		"",
+		"{tfg.quests.mv.USsimulator.desc4}",
+		"{tfg.quests.mv.USsimulator.desc5}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "4ed6001c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1530"
+		},
+		{
+			item: "gregtech:machine 1 1531"
+		}]
+	},
+	{
+		uid: "7f949d14",
+		type: "fluid",
+		fluid: "oil_medium"
+	}],
+	rewards: [{
+		uid: "0c7161b0",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "oil_medium",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

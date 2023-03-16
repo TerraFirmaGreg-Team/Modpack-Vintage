@@ -1,0 +1,27 @@
+{
+	x: 2.0d,
+	y: -2.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e0995a94"
+	],
+	tasks: [{
+		uid: "733f0bbe",
+		type: "fluid",
+		fluid: "deuterium"
+	}],
+	rewards: [{
+		uid: "6ba7e5a2",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "deuterium",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

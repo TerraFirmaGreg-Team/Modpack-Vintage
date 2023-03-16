@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.lv.gascollector.title}",
+	icon: "gregtech:machine 1 530",
+	x: -6.0d,
+	y: 17.0d,
+	description: "{tfg.quests.lv.gascollector.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"0ca753fa"
+	],
+	tasks: [{
+		uid: "23c3812b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 530"
+		}]
+	}]
+}

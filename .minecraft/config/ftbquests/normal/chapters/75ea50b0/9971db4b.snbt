@@ -1,0 +1,10 @@
+{
+	title: "ULV equivalent",
+	icon: "gregtech:machine_casing",
+	disable_toast: true,
+	x: -32.0d,
+	y: -6.0d,
+	text: [
+		"On this line you can see the Steam, or §8§8ULV§r equivalents."
+	]
+}

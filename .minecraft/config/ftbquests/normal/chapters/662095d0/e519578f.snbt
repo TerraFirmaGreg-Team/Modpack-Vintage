@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.mv.multiple.title}",
+	icon: "gregtech:fluid_pipe_nonuple 1 2013",
+	x: 7.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.multiple.subtitle}",
+	text: [
+		"{tfg.quests.mv.multiple.desc1}",
+		"",
+		"{tfg.quests.mv.multiple.desc2}",
+		"",
+		"{tfg.quests.mv.multiple.desc3}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "e2c4a9db",
+		type: "item",
+		items: [{
+			item: "gregtech:fluid_pipe_quadruple 1 2037"
+		}]
+	},
+	{
+		uid: "42df1920",
+		type: "item",
+		items: [{
+			item: "gregtech:fluid_pipe_nonuple 1 2037"
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "Even More IV Circuits",
+	icon: "gregtech:meta_item_1 1 637",
+	x: -7.0d,
+	y: -3.75d,
+	text: [
+		"Better IV Circuits, so progressing within the IV Age doesn't feel as painful."
+	],
+	dependencies: [
+		"233c94ae"
+	],
+	tasks: [{
+		uid: "180380f4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 637"
+		}]
+	}]
+}

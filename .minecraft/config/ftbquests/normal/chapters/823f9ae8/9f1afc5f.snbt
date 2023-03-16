@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.primitive.copper_hammer.title}",
+	x: -22.0d,
+	y: -7.25d,
+	shape: "circle",
+	description: "{tfg.quests.primitive.copper_hammer.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"5bd05b24"
+	],
+	tasks: [{
+		uid: "d1dd8b8a",
+		type: "item",
+		items: [{
+			id: "gregtech:hammer",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					ToolSpeed: 7.0f,
+					HarvestLevel: 2,
+					AttackDamage: 3.0f,
+					AttackSpeed: -2.8f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

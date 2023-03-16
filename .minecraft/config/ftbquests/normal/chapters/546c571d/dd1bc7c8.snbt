@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.motora.title}",
+	x: 0.0d,
+	y: 8.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.lv.motora.subtitle}",
+	text: [
+		"{tfg.quests.lv.motora.desc1}",
+		"",
+		"{tfg.quests.lv.motora.desc2}"
+	],
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "0e63b2d9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 127"
+		}]
+	}]
+}

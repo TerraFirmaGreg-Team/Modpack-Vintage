@@ -1,0 +1,37 @@
+{
+  "name": "Mercury Uranium Vein",
+  "weight": 10,
+  "density": 0.1,
+  "max_height": 45,
+  "min_height": 5,
+  "generation_predicate": [
+    "block:extraplanets:mercury:2"
+  ],
+  "dimension_filter": [
+    "dimension_id:-13"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:pitchblende"
+      },
+      {
+        "secondary": "ore:pitchblende"
+      },
+      {
+        "between": "ore:pitchblende"
+      },
+      {
+        "sporadic": "ore:pitchblende"
+      }
+    ]
+  }
+}

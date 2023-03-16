@@ -1,0 +1,26 @@
+{
+	x: 6.0d,
+	y: -10.0d,
+	dependencies: [
+		"1950edbf"
+	],
+	tasks: [{
+		uid: "7656c5fb",
+		type: "fluid",
+		fluid: "wood_gas"
+	}],
+	rewards: [{
+		uid: "5b81337e",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "wood_gas",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "{moon.callisto}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/callisto.png"
+		}
+	},
+	x: 15.75d,
+	y: 8.5d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"86dfb6d2"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "315b75f3",
+		type: "dimension",
+		title: "{moon.callisto}",
+		dim: -1505
+	}]
+}

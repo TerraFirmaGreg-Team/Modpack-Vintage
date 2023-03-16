@@ -1,0 +1,21 @@
+{
+	x: 8.0d,
+	y: 9.0d,
+	shape: "circle",
+	dependencies: [
+		"ba62aee7"
+	],
+	tasks: [{
+		uid: "17b5443b",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:wireless_pattern_terminal",
+			tag: {
+				internalCurrentPower: 1600000.0d,
+				internalMaxPower: 1600000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	title: "{tfg.quests.primitive.jute.title}",
+	x: -27.25d,
+	y: 3.75d,
+	description: "{tfg.quests.primitive.jute.subtitle}",
+	hide_dependency_lines: true,
+	dependencies: [
+		"b320933e"
+	],
+	tasks: [{
+		uid: "a7199f9c",
+		type: "item",
+		items: [{
+			item: "tfc:crop/product/jute"
+		}]
+	}]
+}

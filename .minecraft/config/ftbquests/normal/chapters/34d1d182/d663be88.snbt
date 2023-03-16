@@ -1,0 +1,16 @@
+{
+	x: -0.75d,
+	y: 16.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c1e2db81",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_compressor 1 4"
+		}]
+	}]
+}

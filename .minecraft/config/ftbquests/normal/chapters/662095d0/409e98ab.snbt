@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.mv.advelectrolyzer.title}",
+	icon: "gregtech:machine 1 276",
+	x: 6.0d,
+	y: -4.0d,
+	description: "{tfg.quests.mv.advelectrolyzer.subtitle}",
+	text: [
+		"{tfg.quests.mv.advelectrolyzer.desc1}"
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "e6bf4335",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 276"
+		}]
+	}]
+}

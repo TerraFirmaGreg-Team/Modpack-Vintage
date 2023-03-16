@@ -1,0 +1,56 @@
+{
+	title: "{tfg.quests.lv.washing.title}",
+	icon: "gregtech:machine 1 485",
+	x: -4.5d,
+	y: 14.25d,
+	description: "{tfg.quests.lv.washing.subtitle}",
+	text: [
+		"{tfg.quests.lv.washing.desc1}",
+		"",
+		"{tfg.quests.lv.washing.desc2}",
+		"",
+		"{tfg.quests.lv.washing.desc3}"
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "83598f04",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 485"
+		}]
+	},
+	{
+		uid: "5a77104c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed 6 311"
+		}],
+		count: 6L
+	},
+	{
+		uid: "388e2f0c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_crushed_purified 6 311"
+		}],
+		count: 6L
+	},
+	{
+		uid: "5631d76b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust_tiny 18 22"
+		}],
+		count: 18L
+	},
+	{
+		uid: "8a0270e7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 2 22"
+		}],
+		count: 2L
+	}]
+}

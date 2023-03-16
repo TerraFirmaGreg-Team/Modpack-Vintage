@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.mv.pyrolyseoven.title}",
+	icon: "gregtech:machine 1 1004",
+	x: 6.0d,
+	y: -9.0d,
+	description: "{tfg.quests.mv.pyrolyseoven.subtitle}",
+	text: [
+		"{tfg.quests.mv.pyrolyseoven.desc1}",
+		"{tfg.quests.mv.pyrolyseoven.desc2}",
+		"",
+		"{tfg.quests.mv.pyrolyseoven.desc3}",
+		"{tfg.quests.mv.pyrolyseoven.desc4}",
+		"",
+		"{tfg.quests.mv.pyrolyseoven.desc5}",
+		"{tfg.quests.mv.pyrolyseoven.desc6}",
+		"",
+		"{tfg.quests.mv.pyrolyseoven.desc7}",
+		"",
+		"{tfg.quests.mv.pyrolyseoven.desc8}",
+		"{tfg.quests.mv.pyrolyseoven.desc9}"
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "99386901",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1004"
+		}]
+	}]
+}

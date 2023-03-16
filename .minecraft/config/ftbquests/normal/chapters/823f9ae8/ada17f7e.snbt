@@ -1,0 +1,16 @@
+{
+	x: -6.0d,
+	y: 3.0d,
+	dependencies: [
+		"fb6454c0"
+	],
+	tasks: [{
+		uid: "4896859e",
+		type: "item",
+		items: [{
+			item: "astikorcarts:cargocart"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

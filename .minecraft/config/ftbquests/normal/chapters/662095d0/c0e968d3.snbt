@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.mv.believe.title}",
+	x: 12.0d,
+	y: -14.0d,
+	description: "{tfg.quests.mv.believe.subtitle}",
+	text: [
+		"{tfg.quests.mv.believe.desc1}",
+		"",
+		"{tfg.quests.mv.believe.desc2}"
+	],
+	dependencies: [
+		"f517b2ba"
+	],
+	tasks: [{
+		uid: "2b774e9c",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

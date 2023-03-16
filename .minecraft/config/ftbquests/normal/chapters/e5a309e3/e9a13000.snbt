@@ -1,0 +1,24 @@
+{
+	title: "{tfg.quests.hv.highvoltagemachines.title}",
+	icon: "gregtech:machine_casing 1 3",
+	x: -1.0d,
+	y: 2.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.highvoltagemachines.subtitle}",
+	text: [
+		"{tfg.quests.hv.highvoltagemachines.desc1}",
+		"",
+		"{tfg.quests.hv.highvoltagemachines.desc2}"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "3406776c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 6 988"
+		}],
+		count: 6L
+	}]
+}

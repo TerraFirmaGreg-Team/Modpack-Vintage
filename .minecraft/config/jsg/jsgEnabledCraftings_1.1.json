@@ -1,0 +1,48 @@
+{
+  "Ancient Assembler": {
+    "jsg:transportrings_ori_block": false,
+    "jsg:transportrings_goauld_block": false,
+    "jsg:stargate_milkyway_base_block": false,
+    "jsg:transportrings_controller_goauld_block": false,
+    "jsg:stargate_universe_base_block": false,
+    "jsg:stargate_universe_member_block": false,
+    "jsg:stargate_milkyway_member_block": false,
+    "jsg:transportrings_ancient_block": false,
+    "jsg:stargate_pegasus_base_block": false,
+    "jsg:stargate_pegasus_member_block": false,
+    "jsg:dhd_pegasus_block": false,
+    "jsg:dhd_block": false,
+    "jsg:destiny_countdown_block": false
+  },
+  "PCB Fabricator": {
+    "jsg:circuit_control_crystal": false,
+    "jsg:crystal_control_pegasus_dhd": false,
+    "jsg:crystal_glyph_dhd": false,
+    "jsg:crystal_upgrade_efficiency": false,
+    "jsg:crystal_glyph_stargate": false,
+    "jsg:crystal_glyph_ori": false,
+    "jsg:crystal_upgrade_capacity": false,
+    "jsg:crystal_glyph_pegasus": false,
+    "jsg:crystal_glyph_ancient": false,
+    "jsg:crystal_glyph_universe": false,
+    "jsg:crystal_glyph_goauld": false,
+    "jsg:crystal_glyph_milkyway": false,
+    "jsg:circuit_control_naquadah": false
+  },
+  "Crystal Chamber": {
+    "jsg:crystal_blue_pegasus": false,
+    "jsg:crystal_red": false,
+    "jsg:crystal_white": false,
+    "jsg:crystal_blue": false,
+    "jsg:crystal_ender": false,
+    "jsg:crystal_yellow": false
+  },
+  "Ore Washing Machine": {
+    "jsg:titanium_purified": false,
+    "jsg:naquadah_purified": false,
+    "jsg:trinium_raw": false,
+    "jsg:naquadah_raw": false,
+    "jsg:titanium_raw": false,
+    "jsg:trinium_purified": false
+  }
+}

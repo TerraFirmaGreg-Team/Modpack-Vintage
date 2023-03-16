@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.mv.biomass.title}",
+	icon: "gregtech:meta_item_1 1 439",
+	x: 7.75d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.biomass.subtitle}",
+	text: [
+		"{tfg.quests.mv.biomass.desc1}",
+		"",
+		"{tfg.quests.mv.biomass.desc2}",
+		"{tfg.quests.mv.biomass.desc3}",
+		"",
+		"{tfg.quests.mv.biomass.desc4}"
+	],
+	dependencies: [
+		"1b13b5f1",
+		"1950edbf"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "5e3a64a8",
+		type: "fluid",
+		fluid: "biomass"
+	}]
+}

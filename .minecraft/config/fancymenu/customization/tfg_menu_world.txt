@@ -1,0 +1,87 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiWorldSelection
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = tfg_slideshowse_menu
+  action = setbackgroundslideshow
+}
+
+customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=504948%
+  orientation = bottom-centered
+  x = 10
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=504948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=346948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=582972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=424972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+

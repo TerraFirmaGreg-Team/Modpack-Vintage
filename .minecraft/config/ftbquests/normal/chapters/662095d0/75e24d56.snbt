@@ -1,0 +1,39 @@
+{
+	title: "{tfg.quests.mv.sulfuricacid.title}",
+	x: 12.0d,
+	y: -10.0d,
+	description: "{tfg.quests.mv.sulfuricacid.subtitle}",
+	text: [
+		"{tfg.quests.mv.sulfuricacid.desc1}",
+		"",
+		"{tfg.quests.mv.sulfuricacid.desc2}",
+		"{tfg.quests.mv.sulfuricacid.desc3}",
+		"{tfg.quests.mv.sulfuricacid.desc4}",
+		"{tfg.quests.mv.sulfuricacid.desc5}",
+		"",
+		"{tfg.quests.mv.sulfuricacid.desc6}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"40d77c21"
+	],
+	tasks: [{
+		uid: "8798f936",
+		type: "fluid",
+		fluid: "sulfuric_acid"
+	}],
+	rewards: [{
+		uid: "47c75f25",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "sulfuric_acid",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

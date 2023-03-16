@@ -1,0 +1,12 @@
+{
+	x: -10.75d,
+	y: -2.0d,
+	tasks: [{
+		uid: "ffea1cb5",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 41"
+		}],
+		ignore_nbt: 1b
+	}]
+}

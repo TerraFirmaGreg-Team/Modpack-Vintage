@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.mv.advassembling.title}",
+	icon: "gregtech:machine 1 111",
+	x: 12.0d,
+	y: -6.0d,
+	description: "{tfg.quests.mv.advassembling.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "1f513661",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 111"
+		}]
+	}]
+}

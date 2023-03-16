@@ -1,0 +1,25 @@
+{
+	title: "{tfg.quests.ev.multiblockcracking.title}",
+	icon: "gregtech:machine 1 1009",
+	x: 4.5d,
+	y: -2.0d,
+	description: "{tfg.quests.ev.multiblockcracking.subtitle}",
+	text: [
+		"{tfg.quests.ev.multiblockcracking.desc1}",
+		"",
+		"{tfg.quests.ev.multiblockcracking.desc2}",
+		"",
+		"{tfg.quests.ev.multiblockcracking.desc3}"
+	],
+	dependencies: [
+		"ff136331"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f6b594c6",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1009"
+		}]
+	}]
+}

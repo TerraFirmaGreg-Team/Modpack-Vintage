@@ -18,11 +18,10 @@ jobs:
 
       - name: Set the version
         run: |
-          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
-          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./normal/overrides/resources/modpack/version.txt
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/manifest.json
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/instance.cfg
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./normal/overrides/config/fancymenu/customization/tfg_version.txt
+          MODPACKVERSION=${{ steps.get_version.outputs.version }}
+          echo "TFG-NewHorizons-${MODPACKVERSION}" > ./.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
+          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
 
@@ -39,72 +38,65 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: normal -> extended
-        run: |
-          cp -r ./normal/overrides/* ./extended/overrides/
-
-      - name: Archive Release CF normal
-        run: |
-          cd ./normal/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
-      
-      - name: Archive Release CF extended
-        run: |
-          cd ./extended/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+        run: cp -r .minecraft/* ./extended/.minecraft/
 
       - name: Archive Release MMC normal
-        run: |
-          cd ./normal/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+        run: zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
       
       - name: Archive Release MMC extended
         run: |
           cd ./extended/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+
+      - name: Archive Release CF normal
+        run: |
+          mv -vf .minecraft/ ./overrides/ 
+          zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+      
+      - name: Archive Release CF extended
+        run: |
+          cd ./extended/
+          mv -vf .minecraft/ ./overrides/ 
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+
 
       - name: Deleting Client Resources normal
         run: |
-          cd ./normal/
+          cd ./
           cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
+          rm -r ./overrides/resourcepacks ./overrides/resources ./overrides/shaderpacks/
       
       - name: Deleting Client Resources extended
         run: |
           cd ./extended/
           cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
+          rm -r ./overrides/resourcepacks ./overrides/resources ./overrides/shaderpacks/
 
       - name: Archive Release Server normal
         run: |
-          cp -r ./serverfiles/* ./normal/.minecraft/
-          cd ./normal/.minecraft/
+          cp -r ./serverfiles/* ./overrides/
+          cd ./overrides/
           mv -vf ./icon.png ./server-icon.png
-          mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
-          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip ./
       
       - name: Archive Release Server extended
         run: |
-          cp -r ./serverfiles/* ./extended/.minecraft/
-          cd ./extended/.minecraft/
-          mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
-          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
+          cp -r ./serverfiles/* ./extended/overrides/
+          cd ./extended/overrides/
+          zip -r ../../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
       
       - name: Upload Curseforge normal
         uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with: 
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: '385053'
-          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
+          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
+          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
           changelog: '${{ steps.changelog_ru.outputs.description }}' 
           changelog-format: markdown
           game-version: '1.12.2'
-          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}
-          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server
+          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}
+          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server
           release-type: 'release'
 
       - name: Upload Curseforge extended
@@ -112,13 +104,13 @@ jobs:
         with: 
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: '385053'
-          modpack-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-          modpack-server-path: ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip
+          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
+          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
           changelog: '${{ steps.changelog_ru.outputs.description }}' 
           changelog-format: markdown
           game-version: '1.12.2'
-          display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-extended
-          server-display-name: TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended
+          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-extended
+          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended
           release-type: 'beta'
 
       - name: Create GitHub Release
@@ -130,25 +122,25 @@ jobs:
           name: Release ${{ steps.changelog_ru.outputs.version }}
           body: ${{ steps.changelog_ru.outputs.description }}
           files: |
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip
-            ./TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
 
       - name: Discord notification RU
         uses: tsickert/discord-webhook@v5.3.0
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_RU }}
           username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+          avatar-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
+          embed-thumbnail-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
           embed-title: Релиз ${{ steps.changelog_ru.outputs.version }}
           embed-description: "${{ steps.changelog_ru.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_RU.md
+          embed-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_RU.md
           embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+          embed-footer-icon-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
           embed-footer-text: ${{ steps.changelog.outputs.date }}
 
       - name: Discord notification EN
@@ -156,11 +148,11 @@ jobs:
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_EN }}
           username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
-          embed-title: Релиз ${{ steps.changelog_en.outputs.version }}
+          avatar-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/github.png?raw=true
+          embed-thumbnail-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+          embed-title: Release ${{ steps.changelog_en.outputs.version }}
           embed-description: "${{ steps.changelog_en.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_EN.md
+          embed-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/CHANGELOG_EN.md
           embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
+          embed-footer-icon-url: https://github.com/TerraFirmaGreg-NewHorizons/TFG-NewHorizons-1.12.2/blob/main/normal/overrides/resources/modpack/icons/icon.png?raw=true
           embed-footer-text: ${{ steps.changelog.outputs.date }}

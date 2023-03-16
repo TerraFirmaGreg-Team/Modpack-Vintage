@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.hv.enderfluidlinking.title}",
+	icon: "gregtech:meta_item_1 1 311",
+	x: -3.0d,
+	y: -2.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.enderfluidlinking.subtitle}",
+	text: [
+		"{tfg.quests.hv.enderfluidlinking.desc1}",
+		"",
+		"{tfg.quests.hv.enderfluidlinking.desc2}",
+		"",
+		"{tfg.quests.hv.enderfluidlinking.desc3}"
+	],
+	dependencies: [
+		"2e62dccf",
+		"7027f5f1"
+	],
+	tasks: [{
+		uid: "fccf64bf",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 311"
+		}]
+	}]
+}

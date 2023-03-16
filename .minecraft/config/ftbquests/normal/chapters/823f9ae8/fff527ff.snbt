@@ -1,0 +1,25 @@
+{
+	x: 9.75d,
+	y: 5.75d,
+	description: "{tfg.quests.primitive.concoction.desc3}",
+	text: [
+		""
+	],
+	dependencies: [
+		"5fddafb0"
+	],
+	tasks: [{
+		uid: "2a425538",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:medicine_vial",
+			tag: {
+				Fluid: {
+					FluidName: "nourishing_concoction",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 2b
+	}]
+}

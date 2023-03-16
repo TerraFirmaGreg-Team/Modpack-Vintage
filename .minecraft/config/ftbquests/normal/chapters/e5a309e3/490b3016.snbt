@@ -1,0 +1,31 @@
+{
+	title: "{tfg.quests.hv.kanthalcoils.title}",
+	icon: "gregtech:wire_coil 1 1",
+	x: -1.0d,
+	y: -6.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.kanthalcoils.subtitle}",
+	text: [
+		"{tfg.quests.hv.kanthalcoils.desc1}",
+		"",
+		"{tfg.quests.hv.kanthalcoils.desc2}"
+	],
+	dependencies: [
+		"b3d40b60"
+	],
+	tasks: [{
+		uid: "59a4cd82",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 288"
+		}]
+	},
+	{
+		uid: "23a99db0",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 1"
+		}],
+		count: 16L
+	}]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "player_uuid": "ea112821-f404-38c5-b469-801e5199a3bd",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  },
+  {
+    "player_uuid": "3eb93960-46f7-363e-a216-bee991eea215",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  },
+  {
+    "player_uuid": "c472132e-dde7-380c-a334-2a835baab03e",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  },
+  {
+    "player_uuid": "52383fae-4c74-3ddf-b755-1e44b19e5935",
+    "roles": [
+      110,
+      100,
+      50
+    ],
+    "chat_formatting_role": 110
+  },
+  {
+    "player_uuid": "e8f083ea-12ab-3df6-a910-5f34fd33c578",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  },
+  {
+    "player_uuid": "3c251404-2f3d-3b22-a8f8-ab4f7a7fccd9",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  },
+  {
+    "player_uuid": "4c76a630-c4d0-3920-8a41-0079c00f7b3e",
+    "roles": [
+      50
+    ],
+    "chat_formatting_role": 50
+  }
+]

@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.lv.centrifuge.title}",
+	icon: "gregtech:machine 1 185",
+	x: -4.0d,
+	y: 18.0d,
+	text: [
+		"{tfg.quests.lv.centrifuge.desc1}",
+		"{tfg.quests.lv.centrifuge.desc2}",
+		"{tfg.quests.lv.centrifuge.desc3}"
+	],
+	dependencies: [
+		"3418fbbb"
+	],
+	tasks: [{
+		uid: "c579e2ea",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 185"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "{tfg.quests.lv.circuitassembling.title}",
+	x: 12.0d,
+	y: 20.0d,
+	description: "{tfg.quests.lv.circuitassembling.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"b9ccf07f",
+		"3fa2f09d"
+	],
+	tasks: [{
+		uid: "26677c8a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 635"
+		}]
+	}]
+}

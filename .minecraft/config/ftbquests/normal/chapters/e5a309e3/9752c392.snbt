@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.hv.mvsuperconductors.title}",
+	icon: "gregtech:wire_single 1 425",
+	x: 1.0d,
+	y: -7.0d,
+	shape: "circle",
+	description: "{tfg.quests.hv.mvsuperconductors.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"490b3016"
+	],
+	tasks: [{
+		uid: "1f4d6610",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 425"
+		}]
+	}]
+}

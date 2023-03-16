@@ -1,0 +1,20 @@
+{
+	title: "Tritanium Coils",
+	icon: "gregtech:wire_coil 1 7",
+	x: -1.5d,
+	y: 1.5d,
+	text: [
+		"No Description"
+	],
+	dependencies: [
+		"a117c525"
+	],
+	tasks: [{
+		uid: "91e723bd",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 7"
+		}],
+		count: 16L
+	}]
+}

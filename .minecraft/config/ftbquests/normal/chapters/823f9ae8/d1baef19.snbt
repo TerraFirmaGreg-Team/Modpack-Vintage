@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.primitive.primitive_tools.title}",
+	x: -29.0d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.primitive_tools.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "0c4901ad",
+		type: "item",
+		items: [{
+			id: "gregtech:shovel",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "stone",
+					MaxDurability: 42,
+					Durability: 0,
+					ToolSpeed: 5.0f,
+					HarvestLevel: 1,
+					AttackDamage: 2.5f,
+					AttackSpeed: -3.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

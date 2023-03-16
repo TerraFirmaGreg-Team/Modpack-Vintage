@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.mv.voltage.title}",
+	icon: "minecraft:tnt",
+	x: 8.0d,
+	y: -7.5d,
+	description: "{tfg.quests.mv.voltage.subtitle}",
+	text: [
+		"{tfg.quests.mv.voltage.desc1}",
+		"",
+		"{tfg.quests.mv.voltage.desc2}",
+		"",
+		"{tfg.quests.mv.voltage.desc3}",
+		"{tfg.quests.mv.voltage.desc4}",
+		"{tfg.quests.mv.voltage.desc5}",
+		"{tfg.quests.mv.voltage.desc6}",
+		"",
+		"{tfg.quests.mv.voltage.desc7}",
+		"{tfg.quests.mv.voltage.desc8}",
+		"{tfg.quests.mv.voltage.desc9}",
+		"{tfg.quests.mv.voltage.desc10}",
+		"{tfg.quests.mv.voltage.desc11}",
+		"",
+		"{tfg.quests.mv.voltage.desc12}",
+		"{tfg.quests.mv.voltage.desc13}",
+		"{tfg.quests.mv.voltage.desc14}",
+		"",
+		"{tfg.quests.mv.voltage.desc15}",
+		"{tfg.quests.mv.voltage.desc16}",
+		"",
+		"{tfg.quests.mv.voltage.desc17}",
+		"{tfg.quests.mv.voltage.desc18}"
+	],
+	dependencies: [
+		"9c437db6"
+	],
+	tasks: [{
+		uid: "4b2a248e",
+		type: "checkmark",
+		title: "    difficulty {        # Range of pixels on either side of the working target that can be accepted to complete a smithing recipe        # Min: 0        # Max: 2147483647        I:acceptableAnvilRange=0        # This controls how many animals (any ki"
+	}]
+}

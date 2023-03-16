@@ -1,0 +1,19 @@
+{
+	x: -18.0d,
+	y: -13.25d,
+	text: [
+		"{tfg.quests.steam.circuiter.desc1}",
+		"",
+		"{tfg.quests.steam.circuiter.desc2}"
+	],
+	dependencies: [
+		"94cafd40"
+	],
+	tasks: [{
+		uid: "2415d426",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 401"
+		}]
+	}]
+}

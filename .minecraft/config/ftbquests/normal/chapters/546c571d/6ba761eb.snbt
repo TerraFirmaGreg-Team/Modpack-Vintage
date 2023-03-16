@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.lv.rotor.title}",
+	x: 7.0d,
+	y: 15.0d,
+	description: "{tfg.quests.lv.rotor.subtitle}",
+	text: [
+		"{tfg.quests.lv.rotor.desc1}",
+		"{tfg.quests.lv.rotor.desc2}",
+		"",
+		"{tfg.quests.lv.rotor.desc3}"
+	],
+	dependencies: [
+		"970a426f",
+		"b9ccf07f"
+	],
+	tasks: [{
+		uid: "cf7db9e4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_rotor 1 112"
+		}]
+	},
+	{
+		uid: "9c12da2f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 24"
+		}]
+	}]
+}

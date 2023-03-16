@@ -1,0 +1,1034 @@
+{
+  "persistent_id": 2,
+  "version_id": 73,
+  "display_name": "дровосек",
+  "currency_index": 0,
+  "currency_itemstack": {
+    "registry_name": "minecraft:air",
+    "damage": 0,
+    "itemstack_nbt": "",
+    "capabilities_nbt": ""
+  },
+  "offers": [
+    {
+      "id": 1,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/acacia",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 2,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/ash",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 3,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/aspen",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 4,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/birch",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 5,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/blackwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 6,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/chestnut",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 7,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/douglas_fir",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 8,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hickory",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 9,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/kapok",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 10,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/maple",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 11,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/oak",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 12,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/palm",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 13,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/pine",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 14,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/rosewood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 15,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/sequoia",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 16,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/spruce",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 17,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/spruce",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 18,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/sycamore",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 19,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/white_cedar",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 20,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/willow",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 21,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/african_padauk",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 22,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/angelim",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 23,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/box",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 24,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/brazilwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 25,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/cocobolo",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 26,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/ebony",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 27,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/fever",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 28,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/fruitwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 29,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/greenheart",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 30,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/holly",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 31,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/iroko",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 32,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/ironwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 33,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/kauri",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 34,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/limba",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 35,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/logwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 36,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/mahoe",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 37,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/mangrove",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 38,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/marblewood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 39,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/messmate",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 40,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/mountain_ash",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 41,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/purpleheart",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 42,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/rubber_fig",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 43,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/teak",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 44,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/wenge",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 45,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/yellow_meranti",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 46,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/zebrawood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 47,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/bald_cypress",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 48,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/cypress",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 49,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hemlock",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 50,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/nordmann_fir",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 51,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/norway_spruce",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 52,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/redwood",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 53,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/joshua_tree",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 54,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/baobab",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 55,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/eucalyptus",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 56,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hawthorn",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 57,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/maclura",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 58,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/mahogany",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 59,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/pink_ivory",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 60,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/red_cedar",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 61,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/rowan",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 62,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/syzygium",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 63,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/yew",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 64,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/jacaranda",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 65,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/juniper",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 66,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/ipe",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 67,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/pink_cherry",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 68,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/white_cherry",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 69,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/sweetgum",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 70,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/larch",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 71,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/alder",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 72,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/beech",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 73,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/black_walnut",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 74,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/butternut",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 75,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/european_oak",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 76,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/ginkgo",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 77,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hazel",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 78,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hornbeam",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 79,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/locust",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 80,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/poplar",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 81,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/red_elm",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 82,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/walnut",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 83,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/white_elm",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 84,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/whitebeam",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    },
+    {
+      "id": 85,
+      "amount": 32,
+      "buy_cost": 0,
+      "selling_cost": 24,
+      "itemstack": {
+        "registry_name": "tfc:wood/log/hevea",
+        "damage": 0,
+        "itemstack_nbt": "",
+        "capabilities_nbt": ""
+      }
+    }
+  ]
+}

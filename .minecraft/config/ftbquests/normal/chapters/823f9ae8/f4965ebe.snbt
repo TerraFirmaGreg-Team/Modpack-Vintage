@@ -1,0 +1,11 @@
+{
+	x: -23.25d,
+	y: 3.75d,
+	tasks: [{
+		uid: "171fc137",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/hemp"
+		}]
+	}]
+}

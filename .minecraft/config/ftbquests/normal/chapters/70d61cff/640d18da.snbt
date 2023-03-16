@@ -1,0 +1,45 @@
+{
+	title: "{tfg.quests.ev.powerintegrationcircuit.title}",
+	icon: "gregtech:meta_item_1 1 604",
+	x: -7.0d,
+	y: -5.0d,
+	description: "{tfg.quests.ev.powerintegrationcircuit.subtitle}",
+	text: [
+		"{tfg.quests.ev.powerintegrationcircuit.desc1}",
+		"{tfg.quests.ev.powerintegrationcircuit.desc2}",
+		"{tfg.quests.ev.powerintegrationcircuit.desc3}",
+		"{tfg.quests.ev.powerintegrationcircuit.desc4}",
+		"{tfg.quests.ev.powerintegrationcircuit.desc5}"
+	],
+	dependencies: [
+		"8a65a77a"
+	],
+	tasks: [{
+		uid: "ce83b6a0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 248"
+		}]
+	},
+	{
+		uid: "04216f4f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 832"
+		}]
+	},
+	{
+		uid: "ebd8be3d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 604"
+		}]
+	},
+	{
+		uid: "ef619e3c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 100"
+		}]
+	}]
+}

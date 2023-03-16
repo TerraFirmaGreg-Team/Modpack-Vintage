@@ -1,0 +1,16 @@
+{
+	x: -2.25d,
+	y: -16.25d,
+	description: "{tfg.quests.primitive.climatestation1.subtitle}",
+	dependencies: [
+		"d5001736",
+		"5d07cc95"
+	],
+	tasks: [{
+		uid: "3b8caa12",
+		type: "item",
+		items: [{
+			item: "firmalife:climate_station"
+		}]
+	}]
+}

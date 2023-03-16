@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: 10.25d,
+	dependencies: [
+		"6c622d78"
+	],
+	optional: true,
+	tasks: [{
+		uid: "24850bbe",
+		type: "item",
+		items: [{
+			item: "theoneprobe:probe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

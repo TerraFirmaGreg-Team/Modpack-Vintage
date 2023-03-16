@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.primitive.blowpipe.title}",
+	x: -4.25d,
+	y: -19.25d,
+	description: "{tfg.quests.primitive.blowpipe.subtitle}",
+	dependencies: [
+		"f573e4d8"
+	],
+	tasks: [{
+		uid: "72a26bb5",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any blowpipe"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "blowpipe"
+				}
+			}
+		}]
+	}]
+}

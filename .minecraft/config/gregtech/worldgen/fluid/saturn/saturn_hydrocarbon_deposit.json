@@ -1,0 +1,17 @@
+{
+  "weight": 20,
+  "name": "Saturn Hydrocarbon Deposit",
+  "yield": {
+    "min": 5,
+    "max": 27
+  },
+  "dimension_filter": [
+    "dimension_id:-16"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "liquid_hydrocarbon_fluid"
+}

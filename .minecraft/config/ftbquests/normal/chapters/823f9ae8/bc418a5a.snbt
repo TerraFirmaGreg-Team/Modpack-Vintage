@@ -1,0 +1,11 @@
+{
+	x: -25.25d,
+	y: 3.75d,
+	tasks: [{
+		uid: "0ac793e2",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/agave"
+		}]
+	}]
+}

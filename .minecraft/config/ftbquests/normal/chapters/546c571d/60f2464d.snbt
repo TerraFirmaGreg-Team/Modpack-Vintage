@@ -1,0 +1,22 @@
+{
+	title: "Vacuum Hopper",
+	icon: "gregtech:machine 1 980",
+	x: 1.0d,
+	y: 10.5d,
+	text: [
+		"§oThis quest's subject is optional and less useful. We have put it here in the name of completeness, but if this is not useful to you, feel free to skip it.§r",
+		"",
+		"The §3Item Collector§o§r collects dropped items in its radius. Useful for something like a mob farm."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6c622d78"
+	],
+	tasks: [{
+		uid: "ebdd87b2",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 980"
+		}]
+	}]
+}

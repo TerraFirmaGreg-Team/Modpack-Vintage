@@ -1,0 +1,33 @@
+{
+	x: -19.75d,
+	y: -7.25d,
+	dependencies: [
+		"29faf52e"
+	],
+	tasks: [{
+		uid: "d199884c",
+		type: "item",
+		items: [{
+			id: "gregtech:axe",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					ToolSpeed: 5.0f,
+					HarvestLevel: 2,
+					AttackDamage: 7.0f,
+					AttackSpeed: -3.2f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					DisableShields: 1b,
+					TreeFelling: 1b
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

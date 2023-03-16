@@ -1,0 +1,39 @@
+{
+	title: "{tfg.quests.primitive.copper_chisel.title}",
+	x: -18.75d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.copper_chisel.subtitle}",
+	text: [
+		"{tfg.quests.primitive.copper_prospect.desk1}",
+		"{tfg.quests.primitive.copper_prospect.desk2}",
+		"{tfg.quests.primitive.copper_prospect.desk3}",
+		"{tfg.quests.primitive.copper_prospect.desk4}",
+		"{tfg.quests.primitive.copper_prospect.desk5}"
+	],
+	dependencies: [
+		"76b9b265"
+	],
+	tasks: [{
+		uid: "cb1ef3f1",
+		type: "item",
+		items: [{
+			id: "gregtech:chisel",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					Chisel: 1b
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

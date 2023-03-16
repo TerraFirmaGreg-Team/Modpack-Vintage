@@ -1,0 +1,22 @@
+{
+	title: "{planet.uranus}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/uranus.png"
+		}
+	},
+	x: 23.25d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a62ca553"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "152f1805",
+		type: "dimension",
+		title: "{planet.uranus}",
+		dim: -17
+	}]
+}

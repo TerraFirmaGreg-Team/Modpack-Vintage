@@ -1,0 +1,41 @@
+{
+	title: "{tfg.quests.primitive.copper_prospect.title}",
+	x: -20.75d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.copper_prospect.subtitle}",
+	text: [
+		"{tfg.quests.primitive.copper_prospect.desk1}",
+		"{tfg.quests.primitive.copper_prospect.desk2}",
+		"{tfg.quests.primitive.copper_prospect.desk3}",
+		"{tfg.quests.primitive.copper_prospect.desk4}",
+		"{tfg.quests.primitive.copper_prospect.desk5}",
+		"{tfg.quests.primitive.copper_prospect.desk6}",
+		"{tfg.quests.primitive.copper_prospect.desk7}"
+	],
+	dependencies: [
+		"a56b176d"
+	],
+	tasks: [{
+		uid: "2d8031a3",
+		type: "item",
+		items: [{
+			id: "gregtech:propick",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {
+					Prospector: 1b
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

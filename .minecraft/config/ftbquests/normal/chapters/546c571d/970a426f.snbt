@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.solidifier.title}",
+	x: 5.0d,
+	y: 15.0d,
+	description: "{tfg.quests.lv.solidifier.subtitle}",
+	text: [
+		"{tfg.quests.lv.solidifier.desc1}",
+		"{tfg.quests.lv.solidifier.desc2}",
+		"",
+		"{tfg.quests.lv.solidifier.desc3}"
+	],
+	dependencies: [
+		"202a8ed5"
+	],
+	tasks: [{
+		uid: "0eabc23c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 395"
+		}]
+	}]
+}

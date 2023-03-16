@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.lv.transformers.title}",
+	icon: "gregtech:machine 1 1286",
+	x: 7.0d,
+	y: 7.0d,
+	description: "{tfg.quests.lv.transformers.subtitle}",
+	text: [
+		"{tfg.quests.lv.transformers.desc1}",
+		"",
+		"{tfg.quests.lv.transformers.desc2}",
+		"",
+		"{tfg.quests.lv.transformers.desc3}",
+		"",
+		"{tfg.quests.lv.transformers.desc4}",
+		"",
+		"{tfg.quests.lv.transformers.desc5}"
+	],
+	dependencies: [
+		"bc19757c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "54b6d409",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1271"
+		}]
+	},
+	{
+		uid: "b358d819",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1286"
+		}]
+	}]
+}

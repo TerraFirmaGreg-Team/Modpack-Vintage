@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.hv.cookers.title}",
+	x: -1.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	description: "{tfg.quests.hv.cookers.subtitle}",
+	text: [
+		"{tfg.quests.hv.cookers.desc1}",
+		"",
+		"{tfg.quests.hv.cookers.desc2}"
+	],
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "470ef79b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1014"
+		}]
+	}]
+}

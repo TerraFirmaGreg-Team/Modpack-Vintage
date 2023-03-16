@@ -1,0 +1,173 @@
+
+
+include file("default.recipes")
+
+ingotiron = false
+chipdiamond = false
+gemDiamond = false
+
+#rawcircuitboard = false
+#circuitboard = false
+#printedcircuitboard = false
+
+dronecase1 = true
+dronecase2 = true
+
+microcontrollercase1 = true
+microcontrollercase2 = true
+
+terminal = true
+
+buttongroup = true
+arrowkeys = true
+numpad = true
+
+screen1 = true
+screen2 = true
+screen3 = true
+
+datacard1 = true
+datacard2 = true
+datacard3 = true
+
+disk = true
+eeprom = true
+
+analyzer = true
+inkcartridgeempty = true
+interweb = true
+cable = true
+carpetedcapacitor = true
+capacitor = true
+charger = true
+rack = true
+raid = true
+redstone = true
+relay = true
+waypoint = true
+transposer = true
+keyboard = true
+motionsensor = true
+netsplitter = true
+
+adapter = true
+assembler = true
+
+graphicscard1 = true
+graphicscard2 = true
+graphicscard3 = true
+
+internetcard = true
+
+redstonecard1 = true
+redstonecard2 = true
+
+lancard = true
+
+wlancard1 = true
+wlancard2 = true
+
+printer = true
+
+powerconverter = true
+powerdistributor = true
+
+linkedcard = true
+
+abstractbuscard = true
+worldsensorcard = true
+
+disassembler = true
+diskdrive = true
+geolyzer = true
+
+#tabletcase1 = true
+#tabletcase2 = true
+
+diskdrivemountable = true
+
+server1 = true
+server2 = true
+server3 = true
+
+terminalserver = true
+
+ram1 = true
+ram2 = true
+ram3 = true
+ram4 = true
+ram5 = true
+ram6 = true
+
+hdd1 = true
+hdd2 = true
+hdd3 = true
+
+case1 = true
+case2 = true
+case3 = true
+
+hologram1 = true
+hologram2 = true
+
+cardcontainer1 = true
+cardcontainer2 = true
+cardcontainer3 = true
+
+upgradecontainer1 = true
+upgradecontainer2 = true
+upgradecontainer3 = true
+
+batteryupgrade1 = true
+batteryupgrade2 = true
+batteryupgrade3 = true
+
+databaseupgrade1 = true
+databaseupgrade2 = true
+databaseupgrade3 = true
+
+hoverupgrade1 = true
+hoverupgrade2 = true
+
+#angelupgrade = true
+
+tankupgrade = true
+tankcontrollerupgrade = true
+
+chunkloaderupgrade = true
+craftingupgrade = true
+experienceupgrade = true
+#generatorupgrade = true
+inventoryupgrade = true
+inventorycontrollerupgrade = true
+leashupgrade = true
+navigationupgrade = true
+pistonupgrade = true
+stickypistonupgrade = true
+signupgrade = true
+#solargeneratorupgrade = true
+
+tractorbeamupgrade = true
+tradingupgrade = true
+
+mfu = true
+
+transistor = true
+
+chip1 = true
+chip2 = true
+chip3 = true
+
+alu = true
+apu1 = true
+apu2 = true
+
+componentbus1 = true
+componentbus2 = true
+componentbus3 = true
+
+cpu1 = true
+cpu2 = true
+cpu3 = true
+
+cu = true

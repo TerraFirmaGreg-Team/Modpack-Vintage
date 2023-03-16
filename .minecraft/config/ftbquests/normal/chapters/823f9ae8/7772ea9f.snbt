@@ -1,0 +1,24 @@
+{
+	x: 7.5d,
+	y: 1.0d,
+	dependencies: [
+		"2a41b9e1",
+		"83ebe4b7",
+		"8b8b0136",
+		"9c92ef6d"
+	],
+	tasks: [{
+		uid: "97f987a5",
+		type: "item",
+		items: [{
+			id: "tfcmedicinal:catalyst",
+			tag: {
+				Fluid: {
+					FluidName: "warming_panacea",
+					Amount: 100
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

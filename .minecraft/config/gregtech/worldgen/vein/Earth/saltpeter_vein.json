@@ -1,0 +1,36 @@
+{
+  "name": "Earth Saltpeter",
+  "weight": 40,
+  "density": 0.25,
+  "min_height": 5,
+  "max_height": 100,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "saltpeter"
+  },
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawMetamorphic"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [14, 32]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:saltpeter"
+      },
+      {
+        "secondary": "ore:diatomite"
+      },
+      {
+        "between": "ore:electrotine"
+      },
+      {
+        "sporadic": "ore:alunite"
+      }
+    ]
+  }
+}

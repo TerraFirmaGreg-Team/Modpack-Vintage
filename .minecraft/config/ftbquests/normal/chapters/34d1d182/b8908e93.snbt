@@ -1,0 +1,15 @@
+{
+	x: 1.25d,
+	y: 16.25d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "9d7d61f1",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:solar_array_controller"
+		}]
+	}]
+}

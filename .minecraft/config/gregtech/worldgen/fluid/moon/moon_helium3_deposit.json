@@ -1,0 +1,17 @@
+{
+  "weight": 20,
+  "name": "Moon Helium-3 Deposit",
+  "yield": {
+    "min": 5,
+    "max": 50
+  },
+  "dimension_filter": [
+    "dimension_id:-28"
+  ],
+  "depletion": {
+    "amount": 1,
+    "chance": 75,
+    "depleted_yield": 20
+  },
+  "fluid": "helium_3"
+}

@@ -1,0 +1,29 @@
+{
+	x: -10.0d,
+	y: -4.0d,
+	description: "{tfg.quests.primitive.blackbronzeingot.subtitle}",
+	dependencies: [
+		"72877b1a",
+		"57406373",
+		"517eb449"
+	],
+	tasks: [{
+		uid: "019c5dd1",
+		type: "item",
+		title: "{tfg.quests.primitive.blackbronzeingot.title}",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBlackBronze"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBlackBronze"
+				}
+			}
+		}]
+	}]
+}

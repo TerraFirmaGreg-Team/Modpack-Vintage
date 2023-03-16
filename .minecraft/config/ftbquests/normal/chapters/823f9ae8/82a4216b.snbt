@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.knifegt.title}",
+	x: -17.75d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.knifegt.subtitle}",
+	dependencies: [
+		"7a1a087e"
+	],
+	tasks: [{
+		uid: "b0371eaa",
+		type: "item",
+		items: [{
+			id: "gregtech:knife",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "copper",
+					MaxDurability: 4312,
+					Durability: 0,
+					AttackDamage: 2.0f,
+					AttackSpeed: 3.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "Rocket Fuel",
+	x: -10.25d,
+	y: -8.0d,
+	text: [
+		"§oRocket Fuel mostly exists for compatibility with other mods. Modpack devs love it!",
+		"As an actual fuel for power though? Terrible!§r",
+		"",
+		"§aRocket Fuel§r in this modpack is required to obtain §dNether Stars§r (§oplease don't farm Withers!§r).",
+		"",
+		"Automating it may be a big sink for your resources, but you can safely batch craft using an overclocked §3Large Chemical Reactor§r, if you desire."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "50184934",
+		type: "fluid",
+		fluid: "rocket_fuel"
+	}],
+	rewards: [{
+		uid: "dbe10241",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "rocket_fuel",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

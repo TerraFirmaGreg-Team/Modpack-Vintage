@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.primitive.firmalife_oven.title}",
+	x: -30.0d,
+	y: -10.25d,
+	description: "{tfg.quests.primitive.firmalife_oven.subtitle}",
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "75ab4f4c",
+		type: "item",
+		items: [{
+			item: "firmalife:oven"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "16cf60a0",
+		type: "item",
+		items: [{
+			item: "firmalife:oven_wall"
+		}]
+	},
+	{
+		uid: "6e44d16a",
+		type: "item",
+		items: [{
+			item: "firmalife:oven_chimney"
+		}]
+	}]
+}

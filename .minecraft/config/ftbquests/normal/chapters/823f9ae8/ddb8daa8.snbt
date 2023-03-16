@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.stone_knife.title}",
+	x: -30.0d,
+	y: -2.25d,
+	description: "{tfg.quests.primitive.stone_knife.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "6fc034bc",
+		type: "item",
+		items: [{
+			id: "gregtech:knife",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "stone",
+					MaxDurability: 42,
+					Durability: 0,
+					AttackDamage: 1.0f,
+					AttackSpeed: 3.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

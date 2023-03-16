@@ -1,0 +1,15 @@
+{
+	x: -5.0d,
+	y: 13.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f7c7757a"
+	],
+	tasks: [{
+		uid: "562594d2",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_mask"
+		}]
+	}]
+}

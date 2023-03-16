@@ -1,0 +1,15 @@
+{
+	x: -5.5d,
+	y: 9.25d,
+	description: "{tfg.quests.ae2.fluidcell.subtitle}",
+	dependencies: [
+		"017067d1"
+	],
+	tasks: [{
+		uid: "db908d1c",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 54"
+		}]
+	}]
+}

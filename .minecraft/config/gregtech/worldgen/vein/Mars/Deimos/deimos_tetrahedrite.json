@@ -1,0 +1,35 @@
+{
+    "name": "Deimos Tetrahedrite",
+    "weight": 70,
+    "density": 0.35,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:deimos:2"],
+    "dimension_filter": [
+      "dimension_id:-1503"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:tetrahedrite"
+        },
+        {
+          "secondary": "ore:tetrahedrite"
+        },
+        {
+          "between": "ore:copper"
+        },
+        {
+          "sporadic": "ore:stibnite"
+        }
+      ]
+    }
+}

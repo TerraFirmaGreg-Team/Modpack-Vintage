@@ -1,0 +1,21 @@
+{
+	title: "{planet.mercury}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "galacticraftcore:textures/gui/celestialbodies/mercury.png"
+		}
+	},
+	x: -6.75d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e43ffe37"
+	],
+	tasks: [{
+		uid: "48db8f05",
+		type: "dimension",
+		title: "{planet.mercury}",
+		dim: -13
+	}]
+}

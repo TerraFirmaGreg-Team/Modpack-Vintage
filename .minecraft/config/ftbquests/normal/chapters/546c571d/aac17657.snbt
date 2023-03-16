@@ -1,0 +1,23 @@
+{
+	title: "{tfg.quests.lv.can.title}",
+	x: 4.0d,
+	y: 16.0d,
+	description: "{tfg.quests.lv.can.subtitle}",
+	text: [
+		"{tfg.quests.lv.can.desc1}",
+		"",
+		"{tfg.quests.lv.can.desc2}",
+		"",
+		"{tfg.quests.lv.can.desc3}"
+	],
+	dependencies: [
+		"89d68b62"
+	],
+	tasks: [{
+		uid: "b4672197",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 61"
+		}]
+	}]
+}

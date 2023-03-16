@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.mv.plasticboards.title}",
+	icon: "gregtech:meta_item_1 1 403",
+	x: 18.0d,
+	y: -12.0d,
+	description: "{tfg.quests.mv.plasticboards.subtitle}",
+	text: [
+		"{tfg.quests.mv.plasticboards.desc1}"
+	],
+	dependencies: [
+		"ccd03dfd",
+		"4e8615d1"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "6cb7f35d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 383"
+		}]
+	},
+	{
+		uid: "9ca4afcb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 403"
+		}]
+	}]
+}

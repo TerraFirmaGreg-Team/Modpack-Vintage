@@ -1,0 +1,48 @@
+{
+	title: "Platinum Group Processing",
+	icon: "gregtech:meta_dust 1 364",
+	x: -11.25d,
+	y: -10.5d,
+	text: [
+		"The §aPlatinum Group Metals§r are six rare metals with useful catalytic properties. They are §3Ruthenium§r, §dRhodium§r, §7Palladium§r, §9Osmium§r, §bIridium§r, and §ePlatinum§r.",
+		"You will need to §4automate§r this entire process, as all these metals are used extensively in the late game.",
+		"",
+		"To begin, treat various PGM-bearing §aPurified Crushed Ores§r with §dNitric Acid§r to produce §aPlatinum Group Sludge§r.",
+		"Then, centrifuge it with §dAqua Regia§r to produce the various PGM salts.",
+		"",
+		"§dChlorine§r is perfectly recycled from the §eRaw Platinum Powder§r.",
+		"§dNitric Acid§r is sort of recycled from §7Raw Palladium Powder§r through §dAmmonia§r, though I would recommend to keep that Ammonia for other uses (Rocket Fuel and PBI).",
+		"",
+		"The other PGM salts have their mini-chain associated to them, more or on the next quests.",
+		"",
+		"§9Note:§r §ePlatinum§r and §7Palladium§r can also be obtained from The End or through normal Ore Processing.",
+		"",
+		"§bLore:§r Have you heard of the infamous \"Platline\" from either Gregicality of GregTech: New Horizons? The extremely daunting chain was added in GT:NH through Bartworks. The concept is amazing, but we had to tune it down significantly to make the entry point to late game in GTCEu much smoother."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"692e1ee5"
+	],
+	tasks: [{
+		uid: "18bd2f70",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 6 364"
+		}],
+		count: 6L
+	},
+	{
+		uid: "6f96a503",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 299"
+		}]
+	},
+	{
+		uid: "21ff2a3d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2058"
+		}]
+	}]
+}

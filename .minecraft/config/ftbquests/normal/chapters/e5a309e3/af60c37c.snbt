@@ -1,0 +1,32 @@
+{
+	title: "{tfg.quests.hv.colours.title}",
+	icon: "gregtech:meta_item_1 1 821",
+	x: 1.0d,
+	y: -3.0d,
+	description: "{tfg.quests.hv.colours.subtitle}",
+	text: [
+		"{tfg.quests.hv.colours.desc1}",
+		"{tfg.quests.hv.colours.desc2}",
+		"{tfg.quests.hv.colours.desc3}",
+		"",
+		"{tfg.quests.hv.colours.desc4}"
+	],
+	dependencies: [
+		"b381cff0"
+	],
+	tasks: [{
+		uid: "d0a1c2d9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 821"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cbc350a9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 603"
+		}]
+	}]
+}

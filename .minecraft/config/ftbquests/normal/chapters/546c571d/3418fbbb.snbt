@@ -1,0 +1,26 @@
+{
+	title: "{tfg.quests.lv.what.title}",
+	icon: "gregtech:meta_crushed_purified 1 250",
+	x: -6.0d,
+	y: 15.0d,
+	description: "{tfg.quests.lv.what.subtitle}",
+	text: [
+		"{tfg.quests.lv.what.desc1}",
+		"",
+		"{tfg.quests.lv.what.desc2}",
+		"{tfg.quests.lv.what.desc3}",
+		"",
+		"{tfg.quests.lv.what.desc4}",
+		"",
+		"{tfg.quests.lv.what.desc5}",
+		"",
+		"{tfg.quests.lv.what.desc6}"
+	],
+	dependencies: [
+		"a02702d7"
+	],
+	tasks: [{
+		uid: "ab545b9c",
+		type: "checkmark"
+	}]
+}

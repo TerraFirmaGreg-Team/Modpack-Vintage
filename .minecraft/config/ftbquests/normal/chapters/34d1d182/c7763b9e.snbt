@@ -1,0 +1,15 @@
+{
+	x: 1.5d,
+	y: 12.25d,
+	dependencies: [
+		"411b712c"
+	],
+	tasks: [{
+		uid: "de59295e",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:schematic 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

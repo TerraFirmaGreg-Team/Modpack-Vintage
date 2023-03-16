@@ -1,0 +1,17 @@
+{
+	x: -26.25d,
+	y: 9.25d,
+	dependencies: [
+		"9cbb865e"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "f84819f1",
+		type: "item",
+		items: [{
+			item: "tfcthings:hiking_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

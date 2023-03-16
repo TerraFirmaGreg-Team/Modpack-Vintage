@@ -1,0 +1,14 @@
+{
+	x: -22.25d,
+	y: 5.0d,
+	dependencies: [
+		"31f72617"
+	],
+	tasks: [{
+		uid: "45f44192",
+		type: "item",
+		items: [{
+			item: "tfcflorae:crop/product/yucca_fiber"
+		}]
+	}]
+}

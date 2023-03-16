@@ -1,0 +1,39 @@
+{
+	title: "{tfg.quests.hv.almosttitanium2.title}",
+	x: 3.0d,
+	y: -6.0d,
+	description: "{tfg.quests.hv.almosttitanium2.subtitle}",
+	text: [
+		"{tfg.quests.hv.almosttitanium2.desc1}",
+		"",
+		"{tfg.quests.hv.almosttitanium2.desc2}",
+		"",
+		"{tfg.quests.hv.almosttitanium2.desc3}",
+		"{tfg.quests.hv.almosttitanium2.desc4}"
+	],
+	dependencies: [
+		"2f970f5b",
+		"490b3016",
+		"cf0f1498"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "0e8a0700",
+		type: "fluid",
+		fluid: "titanium_tetrachloride"
+	}],
+	rewards: [{
+		uid: "fd4b264f",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			Damage: 78s,
+			tag: {
+				Fluid: {
+					FluidName: "titanium_tetrachloride",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

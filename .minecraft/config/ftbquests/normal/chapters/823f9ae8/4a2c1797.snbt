@@ -1,0 +1,66 @@
+{
+	title: "{tfg.quests.primitive.jug.title}",
+	x: -28.0d,
+	y: -9.25d,
+	description: "{tfg.quests.primitive.jug.subtitle}",
+	dependencies: [
+		"e4dda908"
+	],
+	tasks: [{
+		uid: "6129e564",
+		type: "item",
+		items: [{
+			id: "tfc:ceramics/unfired/jug",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		},
+		{
+			id: "tfcflorae:ceramics/stoneware/unfired/jug",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		},
+		{
+			id: "tfcflorae:ceramics/kaolinite/unfired/jug",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		},
+		{
+			id: "tfcflorae:ceramics/earthenware/unfired/jug",
+			ForgeCaps: {
+				Parent: {
+					ticks: -1L,
+					heat: 0.0f
+				}
+			}
+		}]
+	},
+	{
+		uid: "4c42c6b9",
+		type: "item",
+		items: [{
+			item: "tfc:ceramics/fired/jug"
+		},
+		{
+			item: "tfcflorae:ceramics/stoneware/fired/jug"
+		},
+		{
+			item: "tfcflorae:ceramics/kaolinite/fired/jug"
+		},
+		{
+			item: "tfcflorae:ceramics/earthenware/fired/jug"
+		}],
+		ignore_nbt: 1b
+	}]
+}

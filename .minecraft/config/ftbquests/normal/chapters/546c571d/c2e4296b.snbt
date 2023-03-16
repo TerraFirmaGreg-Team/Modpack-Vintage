@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.lv.superconductor.title}",
+	x: 11.0d,
+	y: 7.0d,
+	description: "{tfg.quests.lv.superconductor.subtitle}",
+	text: [
+		"{tfg.quests.lv.superconductor.desc1}",
+		"{tfg.quests.lv.superconductor.desc2}",
+		"",
+		"{tfg.quests.lv.superconductor.desc3}"
+	],
+	dependencies: [
+		"9dd3a20f"
+	],
+	tasks: [{
+		uid: "e228a840",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 424"
+		}]
+	}]
+}

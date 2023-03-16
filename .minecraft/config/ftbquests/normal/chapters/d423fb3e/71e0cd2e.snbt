@@ -1,0 +1,33 @@
+{
+	x: -19.0d,
+	y: -11.25d,
+	description: "{tfg.quests.steam.bronzeoven.subtitle}",
+	text: [
+		"{tfg.quests.steam.bronzeoven.desc1}",
+		"",
+		"{tfg.quests.steam.bronzeoven.desc2}",
+		"",
+		"{tfg.quests.steam.bronzeoven.desc3}",
+		"",
+		"{tfg.quests.steam.bronzeoven.desc4}",
+		"{tfg.quests.steam.bronzeoven.desc5}",
+		"{tfg.quests.steam.bronzeoven.desc6}",
+		"{tfg.quests.steam.bronzeoven.desc7}",
+		"{tfg.quests.steam.bronzeoven.desc8}",
+		"",
+		"{tfg.quests.steam.bronzeoven.desc9}",
+		"",
+		"{tfg.quests.steam.bronzeoven.desc10}"
+	],
+	dependencies: [
+		"06a42a78"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "58d6db11",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1024"
+		}]
+	}]
+}

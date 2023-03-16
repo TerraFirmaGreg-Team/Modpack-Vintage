@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: -7.0d,
+	dependencies: [
+		"8ffdb6a8"
+	],
+	tasks: [{
+		uid: "d983d198",
+		type: "item",
+		items: [{
+			id: "betterp2p:advanced_memory_card",
+			tag: {
+				selectedIndex: -1
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

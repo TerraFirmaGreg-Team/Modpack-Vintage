@@ -1,0 +1,22 @@
+{
+	title: "{tfg.quests.mv.HV.title}",
+	icon: "gregtech:meta_item_1 1 625",
+	x: 15.0d,
+	y: -3.0d,
+	description: "{tfg.quests.mv.HV.subtitle}",
+	text: [
+		"{tfg.quests.mv.HV.desc1}"
+	],
+	dependencies: [
+		"a4d0e869",
+		"a9cdae40",
+		"1115e5d0"
+	],
+	tasks: [{
+		uid: "9ca2bc20",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 625"
+		}]
+	}]
+}

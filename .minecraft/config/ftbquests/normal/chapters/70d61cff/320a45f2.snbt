@@ -1,0 +1,52 @@
+{
+	title: "{tfg.quests.ev.largegasturbine.title}",
+	icon: "gregtech:machine 1 1011",
+	x: -9.0d,
+	y: -5.0d,
+	description: "{tfg.quests.ev.largegasturbine.subtitle}",
+	text: [
+		"{tfg.quests.ev.largegasturbine.desc1}",
+		"",
+		"{tfg.quests.ev.largegasturbine.desc2}",
+		"",
+		"{tfg.quests.ev.largegasturbine.desc3}"
+	],
+	dependencies: [
+		"640d18da"
+	],
+	tasks: [{
+		uid: "b9ef7f4a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1011"
+		}]
+	},
+	{
+		uid: "48d8c19f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1641"
+		}]
+	},
+	{
+		uid: "24917907",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1229"
+		}]
+	},
+	{
+		uid: "4e0dc0e7",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_item_1",
+			Damage: 711s,
+			tag: {
+				GT.PartStats: {
+					Material: "chrome"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

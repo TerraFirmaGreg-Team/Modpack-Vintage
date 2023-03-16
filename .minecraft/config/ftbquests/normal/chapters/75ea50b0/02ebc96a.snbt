@@ -1,0 +1,12 @@
+{
+	x: -12.25d,
+	y: 3.25d,
+	tasks: [{
+		uid: "f19e97e5",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:thermal_padding 1 2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

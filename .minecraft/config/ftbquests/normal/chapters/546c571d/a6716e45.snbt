@@ -1,0 +1,23 @@
+{
+	title: "{tfg.quests.lv.wiremill.title}",
+	x: 0.0d,
+	y: 12.5d,
+	description: "{tfg.quests.lv.wiremill.subtitle}",
+	text: [
+		"{tfg.quests.lv.wiremill.desc1}",
+		"",
+		"{tfg.quests.lv.wiremill.desc2}",
+		"",
+		"{tfg.quests.lv.wiremill.desc3}"
+	],
+	dependencies: [
+		"dd1bc7c8"
+	],
+	tasks: [{
+		uid: "7ba5ef82",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 620"
+		}]
+	}]
+}

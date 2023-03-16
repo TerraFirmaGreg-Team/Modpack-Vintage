@@ -1,0 +1,29 @@
+{
+	title: "{tfg.quests.primitive.bed.title}",
+	icon: "minecraft:bed",
+	x: -25.25d,
+	y: 7.5d,
+	description: "{tfg.quests.primitive.bed.subtitle}",
+	dependencies: [
+		"dfec1fd8"
+	],
+	tasks: [{
+		uid: "7cd97ddc",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any bed"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "bed"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Earth Coal",
+  "weight": 80,
+  "density": 0.15,
+  "max_height": 80,
+  "min_height": 30,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "coal"
+  },
+  "generation_predicate": [
+    "ore_dict:rawSedimentary",
+    "ore_dict:rawMetamorphic"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [20, 32]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:coal"
+      },
+      {
+        "secondary": "ore:coal"
+      },
+      {
+        "between": "ore:coal"
+      },
+      {
+        "sporadic": "ore:coal"
+      }
+    ]
+  }
+}

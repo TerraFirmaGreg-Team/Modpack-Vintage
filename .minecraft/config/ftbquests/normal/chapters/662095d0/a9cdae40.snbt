@@ -1,0 +1,21 @@
+{
+	title: "{tfg.quests.mv.transistors.title}",
+	icon: "gregtech:meta_item_1 1 518",
+	x: 15.0d,
+	y: -6.0d,
+	description: "{tfg.quests.mv.transistors.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"76dc4691",
+		"4e8615d1"
+	],
+	tasks: [{
+		uid: "d416840a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 518"
+		}]
+	}]
+}

@@ -1,9 +1,0 @@
-{
-	title: "{tfg.quests.primitive.start.title}",
-	icon: "gregtech:meta_gear 1 1617",
-	x: -33.0d,
-	y: -4.0d,
-	shape: "rsquare",
-	description: "{tfg.quests.primitive.start.subtitle}",
-	size: 2.0d
-}

@@ -1,0 +1,36 @@
+{
+	title: "{tfg.quests.hv.almosttitanium.title}",
+	icon: "gregtech:meta_dust 1 285",
+	x: 3.0d,
+	y: -8.5d,
+	shape: "circle",
+	description: "{tfg.quests.hv.almosttitanium.subtitle}",
+	text: [
+		"{tfg.quests.hv.almosttitanium.desc1}",
+		"",
+		"{tfg.quests.hv.almosttitanium.desc2}",
+		"",
+		"{tfg.quests.hv.almosttitanium.desc3}",
+		"",
+		"{tfg.quests.hv.almosttitanium.desc4}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"05af19ec"
+	],
+	tasks: [{
+		uid: "78b7c81b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 15 286"
+		}],
+		count: 15L
+	},
+	{
+		uid: "27ac518c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 285"
+		}]
+	}]
+}

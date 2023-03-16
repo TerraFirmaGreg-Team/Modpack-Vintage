@@ -1,0 +1,30 @@
+{
+	title: "{tfg.quests.primitive.stone_hoe.title}",
+	x: -32.0d,
+	y: -7.25d,
+	description: "{tfg.quests.primitive.stone_hoe.subtitle}",
+	dependencies: [
+		"8fc0c70f"
+	],
+	tasks: [{
+		uid: "3ce16c52",
+		type: "item",
+		items: [{
+			id: "gregtech:hoe",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "stone",
+					MaxDurability: 42,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -1.0f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: -26.25d,
+	y: 6.25d,
+	shape: "diamond",
+	dependencies: [
+		"12858da6"
+	],
+	tasks: [{
+		uid: "d9a88815",
+		type: "item",
+		items: [{
+			item: "firmalife:pineapple_yarn"
+		}]
+	}]
+}

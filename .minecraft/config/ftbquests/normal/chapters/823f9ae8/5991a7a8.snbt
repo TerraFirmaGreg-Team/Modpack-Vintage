@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: -16.0d,
+	description: "{tfg.quests.primitive.woodencrate.subtitle}",
+	dependencies: [
+		"242ce5c1"
+	],
+	tasks: [{
+		uid: "a9340f97",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1625"
+		}]
+	}]
+}

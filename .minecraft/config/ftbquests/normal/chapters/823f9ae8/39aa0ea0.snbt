@@ -1,0 +1,27 @@
+{
+	x: -15.75d,
+	y: -20.25d,
+	dependencies: [
+		"734b42fd"
+	],
+	tasks: [{
+		uid: "622e7188",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any unfinishedBoots"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "unfinishedBoots"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

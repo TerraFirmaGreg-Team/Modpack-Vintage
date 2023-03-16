@@ -1,0 +1,35 @@
+{
+    "name": "Pluto Wulfenite",
+    "weight": 5,
+    "density": 0.25,
+    "max_height": 55,
+    "min_height": 5,
+    "generation_predicate":["block:extraplanets:pluto:2"],
+    "dimension_filter": [
+      "dimension_id:-19"
+  ],
+    "generator": {
+      "type": "layered",
+      "radius": [
+        14,
+        32
+      ]
+    },
+    "filler": {
+      "type": "layered",
+      "values": [
+        {
+          "primary": "ore:wulfenite"
+        },
+        {
+          "secondary": "ore:molybdenite"
+        },
+        {
+          "between": "ore:molybdenum"
+        },
+        {
+          "sporadic": "ore:powellite"
+        }
+      ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+	x: -14.0d,
+	y: -11.25d,
+	description: "{tfg.quests.steam.primitivewaterpump.subtitle}",
+	text: [
+		"{tfg.quests.steam.primitivewaterpump.desc1}",
+		"{tfg.quests.steam.primitivewaterpump.desc2}",
+		"{tfg.quests.steam.primitivewaterpump.desc3}",
+		"{tfg.quests.steam.primitivewaterpump.desc4}",
+		"",
+		"{tfg.quests.steam.primitivewaterpump.desc5}",
+		"",
+		"{tfg.quests.steam.primitivewaterpump.desc6}"
+	],
+	dependencies: [
+		"47b2f0d9"
+	],
+	tasks: [{
+		uid: "7553d3a7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1648"
+		}]
+	}]
+}

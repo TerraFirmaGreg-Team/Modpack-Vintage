@@ -1,0 +1,17 @@
+{
+	x: 40.5d,
+	y: 9.75d,
+	shape: "octagon",
+	dependencies: [
+		"2d76d538"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "d7cc1a4f",
+		type: "item",
+		items: [{
+			item: "extraplanets:item_tier10_electric_rocket"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,53 @@
+{
+	title: "{tfg.quests.hv.nanomuscle.title}",
+	icon: "gregtech:gt_armor 1 21",
+	x: -6.5d,
+	y: 2.0d,
+	description: "{tfg.quests.hv.nanomuscle.subtitle}",
+	text: [
+		"{tfg.quests.hv.nanomuscle.desc1}",
+		"",
+		"{tfg.quests.hv.nanomuscle.desc2}",
+		"",
+		"{tfg.quests.hv.nanomuscle.desc3}",
+		"",
+		"{tfg.quests.hv.nanomuscle.desc4}",
+		"",
+		"{tfg.quests.hv.nanomuscle.desc5}"
+	],
+	dependencies: [
+		"550b2cd3"
+	],
+	tasks: [{
+		uid: "840048c0",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 20"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9115ab5f",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 21"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "93bdd5fb",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 22"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f50b0088",
+		type: "item",
+		items: [{
+			item: "gregtech:gt_armor 1 23"
+		}],
+		ignore_nbt: 1b
+	}]
+}

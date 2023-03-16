@@ -1,0 +1,33 @@
+{
+	title: "{tfg.quests.primitive.bucket.title}",
+	x: 9.5d,
+	y: -8.5d,
+	shape: "gear",
+	description: "{tfg.quests.primitive.bucket.subtitle}",
+	dependencies: [
+		"f1e04348",
+		"f2a0d9e8"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "6cba2584",
+		type: "item",
+		items: [{
+			id: "minecraft:bucket",
+			ForgeCaps: {
+				"tfc:item_forge": {
+					ticks: -1L,
+					heat: 0.0f,
+					forge: {
+						work: 0,
+						steps: {
+							last: -1,
+							second: -1,
+							third: -1
+						}
+					}
+				}
+			}
+		}]
+	}]
+}

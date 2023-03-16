@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 12.0d,
+	dependencies: [
+		"353f5942"
+	],
+	tasks: [{
+		uid: "9bc32017",
+		type: "item",
+		items: [{
+			item: "aeadditions:part.base"
+		}]
+	}]
+}

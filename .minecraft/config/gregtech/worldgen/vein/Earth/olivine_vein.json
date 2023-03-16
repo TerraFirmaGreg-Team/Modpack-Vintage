@@ -1,0 +1,36 @@
+{
+  "name": "Earth Olivine",
+  "weight": 15,
+  "density": 0.25,
+  "max_height": 95,
+  "min_height": 15,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "olivine"
+  },
+  "generation_predicate": [
+    "ore_dict:rawIgneousIntrusive",
+    "ore_dict:rawIgneousExtrusive"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [14, 32]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:bentonite"
+      },
+      {
+        "secondary": "ore:magnesite"
+      },
+      {
+        "between": "ore:olivine"
+      },
+      {
+        "sporadic": "ore:glauconite_sand"
+      }
+    ]
+  }
+}

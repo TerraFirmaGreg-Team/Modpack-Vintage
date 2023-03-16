@@ -1,0 +1,43 @@
+{
+	title: "{tfg.quests.mv.distillation.title}",
+	icon: "gregtech:machine 1 261",
+	x: 6.0d,
+	y: -12.0d,
+	text: [
+		"{tfg.quests.mv.distillation.desc1}",
+		"{tfg.quests.mv.distillation.desc2}",
+		"{tfg.quests.mv.distillation.desc3}",
+		"{tfg.quests.mv.distillation.desc4}",
+		"",
+		"{tfg.quests.mv.distillation.desc5}",
+		"",
+		"{tfg.quests.mv.distillation.desc6}",
+		"{tfg.quests.mv.distillation.desc7}",
+		"",
+		"{tfg.quests.mv.distillation.desc8}",
+		"{tfg.quests.mv.distillation.desc9}",
+		"",
+		"{tfg.quests.mv.distillation.desc10}",
+		"{tfg.quests.mv.distillation.desc11}"
+	],
+	min_required_dependencies: 1,
+	dependencies: [
+		"9bab507a",
+		"56665807",
+		"f8b02db5",
+		"ec954713",
+		"13e690a9"
+	],
+	size: 1.5d,
+	or_tasks: true,
+	tasks: [{
+		uid: "c1d53673",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 260"
+		},
+		{
+			item: "gregtech:machine 1 261"
+		}]
+	}]
+}

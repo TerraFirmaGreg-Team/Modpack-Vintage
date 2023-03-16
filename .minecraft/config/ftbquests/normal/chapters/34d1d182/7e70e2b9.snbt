@@ -1,0 +1,21 @@
+{
+	title: "{planet.pluto}",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "extraplanets:textures/gui/celestialbodies/pluto.png"
+		}
+	},
+	x: 31.5d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"7b517356"
+	],
+	tasks: [{
+		uid: "f3d79926",
+		type: "dimension",
+		title: "{planet.pluto}",
+		dim: -19
+	}]
+}
