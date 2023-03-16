@@ -62,8 +62,8 @@ jobs:
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r resourcepacks resources shaderpacks/
+          cat ./buildtools/client_mod.txt | while read f; do rm "$f"; done
+          rm -r resourcepacks resources shaderpacks
       
       - name: Deleting Client Resources extended
         run: |
