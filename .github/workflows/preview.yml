@@ -84,19 +84,19 @@ jobs:
           cd ./extended/overrides/
           zip -r ../../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
-      # - name: Create GitHub Release
-      #   uses: softprops/action-gh-release@v1
-      #   if: startsWith(github.ref, 'refs/tags/')
-      #   with:
-      #     prerelease: false
-      #     generate_release_notes: false
-      #     name: Release ${{ steps.changelog_ru.outputs.version }}
-      #     body: ${{ steps.changelog_ru.outputs.description }}
-      #     files: |
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
-      #       ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: false
+          generate_release_notes: false
+          # name: Release ${{ steps.changelog_ru.outputs.version }}
+          # body: ${{ steps.changelog_ru.outputs.description }}
+          files: |
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
+            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
 
