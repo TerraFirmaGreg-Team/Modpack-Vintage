@@ -1,5 +1,73 @@
 {
+  "moon.iapetus": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "moon.deimos": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "planet.mars": {
+    "energyToOpen": 11059200,
+    "keepAlive": 4800,
+    "groups": [],
+    "milkyWayOrigins": {
+      "NORMAL": 4
+    }
+  },
+  "planet.Mercury": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "moon.phobos": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
   "planet.Jupiter": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "moon.europa": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "moon.titania": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "moon.titan": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "planet.asteroids": {
+    "energyToOpen": 14745600,
+    "keepAlive": 6400,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "Storage Cell": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "planet.Saturn": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
@@ -17,27 +85,7 @@
     "groups": [],
     "milkyWayOrigins": {}
   },
-  "the_end": {
-    "energyToOpen": 5529600,
-    "keepAlive": 2400,
-    "groups": [],
-    "milkyWayOrigins": {
-      "NORMAL": 1
-    }
-  },
-  "moon.titan": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.Pluto": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.Saturn": {
+  "planet.Uranus": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
@@ -49,79 +97,21 @@
     "groups": [],
     "milkyWayOrigins": {}
   },
-  "planet.mars": {
-    "energyToOpen": 11059200,
-    "keepAlive": 4800,
+  "moon.io": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "the_end": {
+    "energyToOpen": 5529600,
+    "keepAlive": 2400,
     "groups": [],
     "milkyWayOrigins": {
-      "NORMAL": 4
+      "NORMAL": 1
     }
-  },
-  "Storage Cell": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.asteroids": {
-    "energyToOpen": 14745600,
-    "keepAlive": 6400,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.venus": {
-    "energyToOpen": 12288000,
-    "keepAlive": 5334,
-    "groups": [],
-    "milkyWayOrigins": {
-      "NORMAL": 4
-    }
-  },
-  "moon.titania": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.Eris": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "moon.europa": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "moon.iapetus": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "overworld": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [
-      "netherOv"
-    ],
-    "milkyWayOrigins": {}
-  },
-  "moon.phobos": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
   },
   "moon.oberon": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.Neptune": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
@@ -133,7 +123,7 @@
     "groups": [],
     "milkyWayOrigins": {}
   },
-  "planet.kepler22b": {
+  "emptiness": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
@@ -149,10 +139,12 @@
       "NORMAL": 2
     }
   },
-  "moon.io": {
+  "overworld": {
     "energyToOpen": 0,
     "keepAlive": 0,
-    "groups": [],
+    "groups": [
+      "netherOv"
+    ],
     "milkyWayOrigins": {}
   },
   "moon.triton": {
@@ -161,25 +153,39 @@
     "groups": [],
     "milkyWayOrigins": {}
   },
-  "planet.Mercury": {
+  "planet.kepler22b": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
     "milkyWayOrigins": {}
   },
-  "moon.deimos": {
+  "planet.venus": {
+    "energyToOpen": 12288000,
+    "keepAlive": 5334,
+    "groups": [],
+    "milkyWayOrigins": {
+      "NORMAL": 4
+    }
+  },
+  "planet.Pluto": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "planet.Neptune": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "planet.Eris": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
     "milkyWayOrigins": {}
   },
   "planet.Ceres": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "planet.Uranus": {
     "energyToOpen": 0,
     "keepAlive": 0,
     "groups": [],
