@@ -1,3 +1,19 @@
 
 normal/overrides/config/oxygen/data/client/*
 normal/overrides/config/jei/worldSettings.cfg
+.minecraft/.mixin.out
+.minecraft/crafttweaker.log
+.minecraft/local
+.minecraft/logs
+natives
+.minecraft/servers.dat
+.minecraft/optionsof.txt
+.minecraft/options.txt
+.minecraft/OpenComputersMod-*
+.minecraft/groovy.log
+.minecraft/fancymenu_data
+.minecraft/dropt.log
+.minecraft/CustomSkinLoader
+.minecraft/journeymap
+.minecraft/knownkeys.txt
+.minecraft/config/jei/worldSettings.cfg
