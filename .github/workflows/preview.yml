@@ -39,7 +39,18 @@ jobs:
 
       - name: normal -> extended
         run: |
-          cp -r ./normal/overrides/* ./extended/overrides/
+          cp -r .minecraft/* ./extended/.minecraft/
+
+      - name: Archive Release MMC normal
+        run: |
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+      
+      - name: Archive Release MMC extended
+        run: |
+          cd ./extended/
+          mv -vf ./overrides/ .minecraft/
+          cp -vf ../icon.png .minecraft/
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
       - name: Archive Release CF normal
         run: |
@@ -51,19 +62,6 @@ jobs:
           cd ./extended/
           zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
-      - name: Archive Release MMC normal
-        run: |
-          cd ./normal/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
-      
-      - name: Archive Release MMC extended
-        run: |
-          cd ./extended/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
       - name: Deleting Client Resources normal
         run: |
