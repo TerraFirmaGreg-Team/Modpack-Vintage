@@ -38,57 +38,53 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: normal -> extended
-        run: |
-          cp -r .minecraft/* ./extended/.minecraft/
+        run: cp -r .minecraft/* ./extended/.minecraft/
 
       - name: Archive Release MMC normal
-        run: |
-          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+        run: zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
       
       - name: Archive Release MMC extended
         run: |
           cd ./extended/
-          mv -vf ./overrides/ .minecraft/
-          cp -vf ../icon.png .minecraft/
           zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
 
-      - name: Archive Release CF normal
-        run: |
-          cd ./normal/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+      # - name: Archive Release CF normal
+      #   run: |
+      #     cd ./normal/
+      #     zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
       
-      - name: Archive Release CF extended
-        run: |
-          cd ./extended/
-          zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
+      # - name: Archive Release CF extended
+      #   run: |
+      #     cd ./extended/
+      #     zip -r ../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
 
-      - name: Deleting Client Resources normal
-        run: |
-          cd ./normal/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
+      # - name: Deleting Client Resources normal
+      #   run: |
+      #     cd ./normal/
+      #     cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
+      #     rm -r .minecraft/resourcepacks .minecraft/resources
       
-      - name: Deleting Client Resources extended
-        run: |
-          cd ./extended/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r .minecraft/resourcepacks .minecraft/resources
+      # - name: Deleting Client Resources extended
+      #   run: |
+      #     cd ./extended/
+      #     cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
+      #     rm -r .minecraft/resourcepacks .minecraft/resources
 
-      - name: Archive Release Server normal
-        run: |
-          cp -r ./serverfiles/* ./normal/.minecraft/
-          cd ./normal/.minecraft/
-          mv -vf ./icon.png ./server-icon.png
-          mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
-          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
+      # - name: Archive Release Server normal
+      #   run: |
+      #     cp -r ./serverfiles/* ./normal/.minecraft/
+      #     cd ./normal/.minecraft/
+      #     mv -vf ./icon.png ./server-icon.png
+      #     mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
+      #     zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server.zip ./
       
-      - name: Archive Release Server extended
-        run: |
-          cp -r ./serverfiles/* ./extended/.minecraft/
-          cd ./extended/.minecraft/
-          mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
-          zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
+      # - name: Archive Release Server extended
+      #   run: |
+      #     cp -r ./serverfiles/* ./extended/.minecraft/
+      #     cd ./extended/.minecraft/
+      #     mv -vf ./jsg-1.12.2-4.11.0.5-server.jar ./mods/
+      #     zip -r ../../TFG-New-Horizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
       # - name: Create GitHub Release
       #   uses: softprops/action-gh-release@v1
