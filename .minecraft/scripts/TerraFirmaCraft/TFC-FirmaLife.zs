@@ -8,59 +8,6 @@ import mods.firmalife.Oven;
 import mods.firmalife.Drying;
 
 
-// --- Массивы
-
-val FreshFood as IItemStack[] = [
-	<firmalife:cocoa_beans>,
-	<firmalife:pineapple>,
-	<tfc:food/banana>,
-	<tfc:food/blackberry>,
-	<tfc:food/blueberry>,
-	<tfc:food/bunch_berry>,
-	<tfc:food/cherry>,
-	<tfc:food/cloud_berry>,
-	<tfc:food/cranberry>,
-	<tfc:food/elderberry>,
-	<tfc:food/gooseberry>,
-	<tfc:food/green_apple>,
-	<tfc:food/lemon>,
-	<tfc:food/olive>,
-	<tfc:food/orange>,
-	<tfc:food/peach>,
-	<tfc:food/plum>,
-	<tfc:food/raspberry>,
-	<tfc:food/red_apple>,
-	<tfc:food/snow_berry>,
-	<tfc:food/strawberry>,
-	<tfc:food/wintergreen_berry>
-];
-
-val DriedFood as IItemStack[] = [
-	<firmalife:dried_cocoa_beans>,
-	<firmalife:dried_pineapple>,
-	<firmalife:dried_banana>,
-	<firmalife:dried_blackberry>,
-	<firmalife:dried_blueberry>,
-	<firmalife:dried_bunch_berry>,
-	<firmalife:dried_cherry>,
-	<firmalife:dried_cloud_berry>,
-	<firmalife:dried_cranberry>,
-	<firmalife:dried_elderberry>,
-	<firmalife:dried_gooseberry>,
-	<firmalife:dried_green_apple>,
-	<firmalife:dried_lemon>,
-	<firmalife:dried_olive>,
-	<firmalife:dried_orange>,
-	<firmalife:dried_peach>,
-	<firmalife:dried_plum>,
-	<firmalife:dried_raspberry>,
-	<firmalife:dried_red_apple>,
-	<firmalife:dried_snow_berry>,
-	<firmalife:dried_strawberry>,
-	<firmalife:dried_wintergreen_berry>
-];
-
-
 // --- Добавление рецептов
 
 // Присвоение единиц металла
@@ -85,87 +32,12 @@ ItemRegistry.registerItemMetal(<firmalife:black_steel_mallet>, "BLACK_STEEL", 14
 ItemRegistry.registerItemMetal(<firmalife:blue_steel_mallet>, "BLUE_STEEL", 144, true);
 ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, true);
 
-// Забор
-for i, FirmalifeFences in FirmalifeFences {
-    recipes.addShaped("tfg/firmalife/fence_" + i, FirmalifeFences * 8,
-        [[null, null, null],
-        [tfcPlanks[i + 95], tfcLumber[i + 95], tfcPlanks[i + 95]],
-        [tfcPlanks[i + 95], tfcLumber[i + 95], tfcPlanks[i + 95]]]);
-}
-
-// Калитки
-for i, FirmalifeFenceGates in FirmalifeFenceGates {
-    recipes.addShaped("tfg/firmalife/fencegate_" + i, FirmalifeFenceGates * 2,
-        [[null, null, null],
-        [tfcLumber[i + 95], tfcPlanks[i + 95], tfcLumber[i + 95]],
-        [tfcLumber[i + 95], tfcPlanks[i + 95], tfcLumber[i + 95]]]);
-}
-
-// Двери
-for i, FirmalifeDoors in FirmalifeDoors {
-    recipes.addShaped("tfg/firmalife/door_" + i, FirmalifeDoors * 2,
-        [[tfcLumber[i + 95], tfcLumber[i + 95], null],
-        [tfcLumber[i + 95], tfcLumber[i + 95], null],
-        [tfcLumber[i + 95], tfcLumber[i + 95], null]]);
-}
-
-// Люки
-for i, FirmalifeTrapdoors in FirmalifeTrapdoors {
-    recipes.addShaped("tfg/firmalife/trapdoor_" + i, FirmalifeTrapdoors * 3,
-        [[null, null, null],
-        [tfcLumber[i + 95], tfcLumber[i + 95], tfcLumber[i + 95]],
-        [tfcLumber[i + 95], tfcLumber[i + 95], tfcLumber[i + 95]]]);
-}
-
-// Климатическая станция уровня 0
-recipes.addShaped("tfg/firmalife/climate_station_0", <firmalife:climate_station>, [
-    [<metaitem:plateWroughtIron>, <ore:plankWood>, <metaitem:plateWroughtIron>],
-    [<minecraft:redstone>, <ore:blockGlass>, <minecraft:redstone>],
-    [<metaitem:plateWroughtIron>, <ore:plankWood>, <metaitem:plateWroughtIron>]]);
-
-// Климатическая станция уровня 1
-recipes.addShaped("tfg/firmalife/climate_station_1", <firmalife:climate_station_1>, [
-    [<metaitem:plateWroughtIron>, <ore:blockGlass>, <metaitem:plateWroughtIron>],
-    [<ore:blockGlass>, <firmalife:climate_station>, <ore:blockGlass>],
-    [<metaitem:plateWroughtIron>, <ore:blockGlass>, <metaitem:plateWroughtIron>]]);
-
-// Климатическая станция уровня 5
-recipes.addShaped("tfg/firmalife/climate_station_5", <firmalife:climate_station_5>, [
-    [<metaitem:gearCobaltBrass>, <ore:gemFlawless>, <metaitem:gearCobaltBrass>],
-    [<ore:gemFlawless>, <firmalife:climate_station_4>, <ore:gemFlawless>],
-    [<metaitem:gearCobaltBrass>, <ore:gemFlawless>, <metaitem:gearCobaltBrass>]]);
-
-// Разбрызгиватель
-recipes.addShaped("tfg/firmalife/sprinkler", <firmalife:sprinkler>, [
-    [<metaitem:gearCobaltBrass>, null, <metaitem:gearCobaltBrass>],
-    [<metaitem:plateRedSteel>, <firmalife:spout>, <metaitem:plateRedSteel>],
-    [<metaitem:gearCobaltBrass>, null, <metaitem:gearCobaltBrass>]]);
-
-// Jar
-recipes.addShaped("tfg/firmalife/jar", <firmalife:jar>, [
-    [null, <ore:plateIronAny>, null],
-    [<ore:paneGlass>, null, <ore:paneGlass>],
-    [null, <ore:paneGlass>, null]]);
-
-
-// Pizza Dough
-recipes.addShapeless("tfg/firmalife/pizza_dough", <firmalife:pizza_dough>, [<ore:toolKnife>, <ore:doughFlat>, <tfc:plants/basil>, <firmalife:tomato_sauce>, <ore:craftingToolRollingPin>]);
-
-// Свечка
-recipes.addShapeless("tfg/firmalife/candle", <firmalife:candle> * 6, [<ore:itemBeeswax>, <ore:string>]);
-
-// Обработанное дерево
-recipes.addShapeless("tfg/firmalife/treated_lumber", <firmalife:treated_lumber>, [<ore:lumber>, <ore:itemBeeswax>, <metaitem:dustSalt>]);
-
-// Furnace recipes for TFC item
-furnace.addRecipe(<firmalife:unfired_mallet_mold>, <firmalife:mallet_mold>);
 
 // Удобрение
 Drying.addRecipe("tfg/firmalife/fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
 
 // Высушивание соли
 Drying.addRecipe("tfg/firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <metaitem:wooden.bucket.with.salt>, 24000);
-recipes.addShapeless(<metaitem:dustSmallSalt> * 2, [<metaitem:wooden.bucket.with.salt>.giveBack(<tfc:wooden_bucket>)]);
 
 // Greenhouse Door
 Anvil.addRecipe("tfg/firmalife/greenhouse_door", <metaitem:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
@@ -189,66 +61,3 @@ Anvil.addRecipe("tfg:firmalife_steel_hammer", <metaitem:ingotSteel>, <firmalife:
 Anvil.addRecipe("tfg:firmalife_black_steel_hammer", <metaitem:ingotBlackSteel>, <firmalife:black_steel_mallet_head>, 5, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
 Anvil.addRecipe("tfg:firmalife_blue_steel_hammer", <metaitem:ingotBlueSteel>, <firmalife:blue_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
 Anvil.addRecipe("tfg:firmalife_red_steel_hammer", <metaitem:ingotRedSteel>, <firmalife:red_steel_mallet_head>, 6, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");
-
-// Chestnut Dough
-mixer.recipeBuilder()
-    .inputs([<ore:chestnutFlour>, <metaitem:dustSmallSalt>, <ore:fruitDry>])
-    .fluidInputs([<liquid:fresh_water> * 1000])
-    .outputs(<firmalife:chestnut_dough> * 2)
-    .duration(400).EUt(2).buildAndRegister();
-
-// Chestnut Bread
-baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <minecraft:coal:1> * 2])
-    .outputs(<firmalife:chestnut_bread>)
-    .property("temperature", 500)
-    .duration(400).EUt(1).buildAndRegister();
-
-baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <minecraft:coal> * 2])
-    .outputs(<firmalife:chestnut_bread>)
-    .property("temperature", 500)
-    .duration(400).EUt(1).buildAndRegister();
-
-baking_oven.recipeBuilder()
-    .inputs([<firmalife:chestnut_dough>, <metaitem:gemCoke>])
-    .outputs(<firmalife:chestnut_bread>)
-    .property("temperature", 500)
-    .duration(400).EUt(1).buildAndRegister();
-
-// Greenhouse parts
-assembler.recipeBuilder()
-    .circuit(1)
-    .inputs(<metaitem:plateWroughtIron>)
-    .outputs([<firmalife:greenhouse_roof> * 4])
-    .duration(205).EUt(8).buildAndRegister();
-
-assembler.recipeBuilder()
-    .circuit(2)
-    .inputs(<metaitem:plateWroughtIron>)
-    .outputs([<firmalife:greenhouse_door> * 4])
-    .duration(205).EUt(8).buildAndRegister();
-
-assembler.recipeBuilder()
-    .circuit(3)
-    .inputs(<metaitem:plateWroughtIron>)
-    .outputs([<firmalife:greenhouse_wall> * 4])
-    .duration(205).EUt(8).buildAndRegister();
-
-recipes.addShaped(<firmalife:quad_planter>, [
-    [null, <ore:dustFertilizer>, null],
-    [null, <ore:dirt>, null],
-    [null, <minecraft:flower_pot>, null]]);
-
-recipes.addShapeless(<firmalife:trellis>, [<firmalife:greenhouse_wall>, <firmalife:greenhouse_wall>, <ore:dustFertilizer>]);
-recipes.addShapeless(<firmalife:pumpkin_hanging_planter>, [<firmalife:greenhouse_wall>, <firmalife:crop/seeds/pumpkin>, <ore:dustFertilizer>]);
-recipes.addShapeless(<firmalife:melon_hanging_planter>, [<firmalife:greenhouse_wall>, <firmalife:crop/seeds/melon>, <ore:dustFertilizer>]);
-recipes.addShapeless(<firmalife:squash_hanging_planter>, [<firmalife:greenhouse_wall>, <tfc:crop/seeds/squash>, <ore:dustFertilizer>]);
-
-//Drying food in microwave
-for i, FreshFood in FreshFood{
-	microwave.recipeBuilder()
-		.inputs(FreshFood)
-		.outputs(DriedFood[i])
-		.duration(300).EUt(16).buildAndRegister();
-}

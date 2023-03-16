@@ -118,29 +118,6 @@ Anvil.addRecipe("tfctech:tfg_long_rod_nickel", <metaitem:ingotNickel>, <metaitem
 Anvil.addRecipe("tfctech:tfg_long_rod_bismuth", <metaitem:ingotBismuth>, <metaitem:stickLongBismuth>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 Anvil.addRecipe("tfctech:tfg_long_rod_zinc", <metaitem:ingotZinc>, <metaitem:stickLongZinc>, 1, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
-// Рецепты Strips
-recipes.addShapeless(<tfctech:metal/copper_strip> * 2, [<ore:toolFile>, <metaitem:plateCopper>]);
-recipes.addShapeless(<tfctech:metal/gold_strip> * 2, [<ore:toolFile>, <metaitem:plateGold>]);
-recipes.addShapeless(<tfctech:metal/lead_strip> * 2, [<ore:toolFile>, <metaitem:plateLead>]);
-recipes.addShapeless(<tfctech:metal/nickel_strip> * 2, [<ore:toolFile>, <metaitem:plateNickel>]);
-recipes.addShapeless(<tfctech:metal/silver_strip> * 2, [<ore:toolFile>, <metaitem:plateSilver>]);
-recipes.addShapeless(<tfctech:metal/tin_strip> * 2, [<ore:toolFile>, <metaitem:plateTin>]);
-recipes.addShapeless(<tfctech:metal/wrought_iron_strip> * 2, [<ore:toolFile>, <metaitem:plateWroughtIron>]);
-recipes.addShapeless(<tfctech:metal/steel_strip> * 2, [<ore:toolFile>, <metaitem:plateSteel>]);
-recipes.addShapeless(<tfctech:metal/platinum_strip> * 2, [<ore:toolFile>, <metaitem:platePlatinum>]);
-recipes.addShapeless(<tfctech:metal/black_steel_strip> * 2, [<ore:toolFile>, <metaitem:plateBlackSteel>]);
-
-// Крафт поташа с увеличенным выходом
-recipes.addShapeless("tfg/tfctech/dust_potash", <metaitem:dustPotash> * 4, [<tfctech:pot_potash>]);
-
-// Исправление рецепта емкости с поташем
-recipes.addShapeless("tfg/tfctech/pot_ash", <tfctech:pot_ash>, [<metaitem:dustAsh>, <metaitem:dustAsh>, <metaitem:dustAsh>, <metaitem:dustAsh>, <tfc:ceramics/fired/pot>.noReturn(), <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}})]);
-
-// Резина для первых этапов
-recipes.addShapeless("tfg/tfctech/plate_rubber", <metaitem:plateRubber> * 2, [<tfctech:latex/rubber>, <ore:toolKnife>]);
-
-// Вулканизирующие агенты
-recipes.addShapeless("tfg/tfctech/vulcanizing_agents", <tfctech:latex/vulcanizing_agents> * 4, [<tfc:powder/graphite>, <ore:dustKaolinite>, <ore:dustFlux>, <metaitem:dustSulfur>]);
 
 // Уменьшение выхода рецепта с резиной
 Barrel.addRecipe("tfg:tfctech/rubber_mix", <tfctech:latex/vulcanizing_agents>, <liquid:latex> * 1000, <tfctech:latex/rubber_mix> * 6, 8);
@@ -159,51 +136,3 @@ Anvil.addRecipe("tfg:tfctech/blowpipe/steel", <metaitem:plateSteel>, <tfctech:me
 Anvil.addRecipe("tfg:tfctech/blowpipe/black_steel", <metaitem:plateBlackSteel>, <tfctech:metal/black_steel_blowpipe>, 5, "general", "BEND_LAST", "BEND_SECOND_LAST");
 Anvil.addRecipe("tfg:tfctech/blowpipe/blue_steel", <metaitem:plateBlueSteel>, <tfctech:metal/blue_steel_blowpipe>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST");
 Anvil.addRecipe("tfg:tfctech/blowpipe/red_steel", <metaitem:plateRedSteel>, <tfctech:metal/red_steel_blowpipe>, 6, "general", "BEND_LAST", "BEND_SECOND_LAST");
-
-// Холодильник
-recipes.addShaped("tfg/tfctech/fridge", <tfctech:fridge>, [
-   [<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>],
-   [<metaitem:plateSteel>, <ore:plateDoubleIronAny>, <metaitem:plateSteel>],
-   [<metaitem:plateSteel>, <tfctech:metal/copper_inductor>, <metaitem:plateSteel>]]);
-
-// Winch
-recipes.addShaped("tfg/tfctech/winch", <tfctech:wiredraw/winch>, [
-   [<ore:stickIronAny>, null, <ore:stickIronAny>],
-   [null, <ore:stickIronAny>, null],
-   [<ore:stickIronAny>, null, <ore:stickIronAny>]]);
-
-// Медный индуктор
-recipes.addShaped("tfg/tfctech/copper_inductor", <tfctech:metal/copper_inductor>, [
-   [null, <metaitem:wireGtSingleCopper>, null],
-   [<metaitem:wireGtSingleCopper>, <ore:toolHammer>, <metaitem:wireGtSingleCopper>],
-   [null, <metaitem:wireGtSingleCopper>, null]]);
-
-// Тигель
-recipes.addShaped("tfg/tfctech/crucible", <tfctech:induction_crucible>, [
-   [<metaitem:plateSteel>, null, <metaitem:plateSteel>],
-   [<tfctech:metal/copper_inductor>, <tfc:crucible>, <tfctech:metal/copper_inductor>],
-   [<metaitem:plateSteel>, <metaitem:wireGtSingleCopper>, <metaitem:plateSteel>]]);
-
-// Электро наковальня
-recipes.addShaped("tfg/tfctech/electric_forge", <tfctech:electric_forge>, [
-   [<metaitem:plateSteel>, <metaitem:wireGtSingleCopper>, <metaitem:plateSteel>],
-   [<tfctech:metal/copper_inductor>, <tfc:fire_bricks>, <tfctech:metal/copper_inductor>],
-   [<metaitem:plateSteel>, <metaitem:wireGtSingleCopper>, <metaitem:plateSteel>]]);
-
-// Smeltery Cauldron
-recipes.addShaped("tfg/tfctech/smeltery_cauldron", <tfctech:smeltery_cauldron>, [
-   [<metaitem:plateWroughtIron>, <metaitem:plateWroughtIron>, <metaitem:plateWroughtIron>],
-   [<metaitem:plateWroughtIron>, null, <metaitem:plateWroughtIron>],
-   [<metaitem:stickLongWroughtIron>, null, <metaitem:stickLongWroughtIron>]]);
-
-// Smeltery Firebox
-recipes.addShaped("tfg/tfctech/smeltery_firebox", <tfctech:smeltery_firebox>, [
-   [<metaitem:stickWroughtIron>, <metaitem:plateWroughtIron>, <metaitem:stickWroughtIron>],
-   [<metaitem:plateWroughtIron>, <tfc:fire_bricks>, <metaitem:plateWroughtIron>],
-   [<metaitem:stickWroughtIron>, <metaitem:plateWroughtIron>, <metaitem:stickWroughtIron>]]);
-
-// Wire Draw Bench
-recipes.addShaped("tfg/tfctech/wire_draw_bench", <tfctech:wire_draw_bench>, [
-   [<tfctech:wiredraw/winch>, <tfctech:wiredraw/leather_belt>, <ore:toolTongs>],
-   [<metaitem:plateWroughtIron>, <metaitem:plateWroughtIron>, <metaitem:plateWroughtIron>],
-   [<metaitem:plateWroughtIron>, null, <metaitem:plateWroughtIron>]]);

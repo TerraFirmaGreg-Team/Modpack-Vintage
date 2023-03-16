@@ -2709,62 +2709,6 @@ public class arrayTFC {
 		// item('tfc:wood/fence_gate/eucalyptus')
 	]
 	
-	static FirmalifeFences = [
-	   item('firmalife:cinnamon_fence'),
-		item('firmalife:cocoa_fence'),
-		item('firmalife:banana_fence'),
-		item('firmalife:cherry_fence'),
-		item('firmalife:green_apple_fence'),
-		item('firmalife:lemon_fence'),
-		item('firmalife:olive_fence'),
-		item('firmalife:orange_fence'),
-		item('firmalife:peach_fence'),
-		item('firmalife:plum_fence'),
-		item('firmalife:red_apple_fence')
-	]
-	
-	static FirmalifeFenceGates = [
-	   item('firmalife:cinnamon_fence_gate'),
-		item('firmalife:cocoa_fence_gate'),
-		item('firmalife:banana_fence_gate'),
-		item('firmalife:cherry_fence_gate'),
-		item('firmalife:green_apple_fence_gate'),
-		item('firmalife:lemon_fence_gate'),
-		item('firmalife:olive_fence_gate'),
-		item('firmalife:orange_fence_gate'),
-		item('firmalife:peach_fence_gate'),
-		item('firmalife:plum_fence_gate'),
-		item('firmalife:red_apple_fence_gate')
-	]
-	
-	static FirmalifeDoors = [
-	   item('firmalife:cinnamon_door'),
-		item('firmalife:cocoa_door'),
-		item('firmalife:banana_door'),
-		item('firmalife:cherry_door'),
-		item('firmalife:green_apple_door'),
-		item('firmalife:lemon_door'),
-		item('firmalife:olive_door'),
-		item('firmalife:orange_door'),
-		item('firmalife:peach_door'),
-		item('firmalife:plum_door'),
-		item('firmalife:red_apple_door')
-	]
-	
-	static FirmalifeTrapdoors = [
-	   item('firmalife:cinnamon_trapdoor'),
-		item('firmalife:cocoa_trapdoor'),
-		item('firmalife:banana_trapdoor'),
-		item('firmalife:cherry_trapdoor'),
-		item('firmalife:green_apple_trapdoor'),
-		item('firmalife:lemon_trapdoor'),
-		item('firmalife:olive_trapdoor'),
-		item('firmalife:orange_trapdoor'),
-		item('firmalife:peach_trapdoor'),
-		item('firmalife:plum_trapdoor'),
-		item('firmalife:red_apple_trapdoor')
-	]
-	
 	// - TFC Fence Log Array
 	static tfcFenceLog = [
 		item('tfcflorae:wood/fence_log/arrow_bamboo'),

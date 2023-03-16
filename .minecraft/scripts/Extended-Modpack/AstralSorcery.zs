@@ -167,7 +167,7 @@ Altar.addTraitAltarRecipe("pelotrio_cape", <astralsorcery:itemcape>.withTag({ast
 	<ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>,
 	<minecraft:rotten_flesh>, <ore:listAllegg>, <ore:apple>, <ore:dustBlaze>], "astralsorcery.constellation.pelotrio");	
 
-//Yellow Lens // кирка
+//Yellow Lens
 Altar.addConstellationAltarRecipe("yellow_lens", <astralsorcery:itemcoloredlens:1>, 2000, 10, [
 			null, <ore:gemDiamond>, null,
 			null, <astralsorcery:itemcraftingcomponent:3>, null,

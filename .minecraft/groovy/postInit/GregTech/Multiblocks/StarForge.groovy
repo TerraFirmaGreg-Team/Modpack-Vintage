@@ -1,16 +1,14 @@
-// #priority 98
-
-// import crafttweaker.item.IItemStack;
-
-// import mods.gregtech.multiblock.Builder;
-// import mods.gregtech.multiblock.FactoryBlockPattern;
-// import mods.gregtech.multiblock.RelativeDirection;
-// import mods.gregtech.multiblock.functions.IPatternBuilderFunction;
-// import mods.gregtech.IControllerTile;
-// import mods.gregtech.multiblock.CTPredicate;
-// import mods.gregtech.multiblock.IBlockPattern;
-// import mods.gregtech.recipe.FactoryRecipeMap;
-// import mods.gregtech.recipe.RecipeMap;
+import gregtech.api.metatileentity.MetaTileEntity
+import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
+import gregtech.api.metatileentity.multiblock.IMultiblockPart
+import gregtech.api.metatileentity.multiblock.RecipeMapMultiblockController
+import gregtech.api.pattern.BlockPattern
+import gregtech.api.pattern.FactoryBlockPattern
+import gregtech.api.recipes.RecipeMaps
+import gregtech.client.renderer.ICubeRenderer
+import gregtech.client.renderer.texture.Textures
+import gregtech.common.blocks.BlockMetalCasing.MetalCasingType
+import gregtech.common.blocks.MetaBlocks
 
 // ########################################
 // # Multiblock Builder
@@ -18,7 +16,7 @@
 // # Star forge
 // ########################################
 
-// // Создание карты рецептов для звездной кузни
+// Создание карты рецептов для звездной кузни
 // global star_forge as RecipeMap = FactoryRecipeMap.start("star_forge")
 //   .minInputs(1)
 //   .maxInputs(12)

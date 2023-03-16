@@ -1,25 +1,14 @@
-// #priority 98
-
-
-// import crafttweaker.item.IItemStack;
-
-// import mods.gregtech.IControllerTile;
-// import mods.gregtech.recipe.RecipeMap;
-// import mods.gregtech.recipe.RecipeMaps;
-// import mods.gregtech.recipe.FactoryRecipeMap;
-// import mods.gregtech.recipe.RecipeMapBuilder;
-// import mods.gregtech.recipe.functions.IRunOverclockingLogicFunction;
-// import mods.gregtech.recipe.IRecipe;
-// import mods.gregtech.recipe.IRecipeLogic;
-// import mods.gregtech.multiblock.Builder;
-// import mods.gregtech.multiblock.FactoryBlockPattern;
-// import mods.gregtech.multiblock.RelativeDirection;
-// import mods.gregtech.multiblock.functions.IPatternBuilderFunction;
-// import mods.gregtech.multiblock.functions.IGetBaseTextureFunction;
-// import mods.gregtech.multiblock.CTPredicate;
-// import mods.gregtech.multiblock.IBlockPattern;
-// import mods.gregtech.multiblock.IIMultiblockPart;
-// import mods.gregtech.render.MoveType;
+import gregtech.api.metatileentity.MetaTileEntity
+import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
+import gregtech.api.metatileentity.multiblock.IMultiblockPart
+import gregtech.api.metatileentity.multiblock.RecipeMapMultiblockController
+import gregtech.api.pattern.BlockPattern
+import gregtech.api.pattern.FactoryBlockPattern
+import gregtech.api.recipes.RecipeMaps
+import gregtech.client.renderer.ICubeRenderer
+import gregtech.client.renderer.texture.Textures
+import gregtech.common.blocks.BlockMetalCasing.MetalCasingType
+import gregtech.common.blocks.MetaBlocks
 
 // ########################################
 // # Multiblock Builder

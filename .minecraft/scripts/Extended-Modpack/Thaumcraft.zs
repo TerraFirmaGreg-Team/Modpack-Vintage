@@ -53,6 +53,7 @@ val RemoveItemsFromJEI as IItemStack[] = [
     <tfctech:metal/thaumium_blowpipe>,
     <tfc:metal/trapdoor/thaumium>
 ];
+
 for item in RemoveItemsFromJEI{
     JEI.removeAndHide(item);
 }
@@ -104,6 +105,7 @@ val RemoveItemsFromArcaneWorkBench as IItemStack[] = [
     <thaumcraft:golem_bell>,
     <thaumcraft:focus_pouch>
 ];
+
 for item in RemoveItemsFromArcaneWorkBench{
     ArcaneWorkbench.removeRecipe(item);
 }
@@ -124,6 +126,7 @@ val RemoveItemsFromInfusion as IItemStack[] = [
     <thaumcraft:turret:2>, 
     <thaumcraft:mirror_essentia>
 ];
+
 for item in RemoveItemsFromInfusion{
     Infusion.removeRecipe(item);
 }
@@ -135,6 +138,7 @@ val RemoveItemsFromCrucible as IItemStack[] = [
     <thaumicbases:rainbowcactus>,
     <minecraft:web>
 ];
+
 for item in RemoveItemsFromCrucible{
     Crucible.removeRecipe(item);
 }
@@ -169,6 +173,7 @@ val RemoveItemRecipes as IItemStack[] = [
     <thaumcraft:void_boots>,
 	
 ];
+
 for item in RemoveItemRecipes{
     recipes.remove(item);
 }
@@ -193,6 +198,7 @@ val RemoveItemRecipesByName = [
     "thaumcraft:leadtonuggets",
     "thaumcraft:brasstonuggets"
 ] as string[];
+
 for item in RemoveItemRecipesByName{
     recipes.removeByRecipeName(item);
 }
@@ -242,7 +248,7 @@ Infusion.registerRecipe("thaumcraft:seal:7F", "", <thaumcraft:seal:7>, 1,
     [<aspect:herba>*10, <aspect:sensus>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
     [<tfc:crop/seeds/carrot>, <tfc:crop/seeds/jute>, <tfc:crop/seeds/wheat>, <tfc:crop/seeds/beet>, <tfc:crop/seeds/sugarcane>, <tfc:crop/seeds/potato>]);
 
-// Печать разрушение блоков 2 кирки и топор
+// Печать разрушение блоков
 Infusion.registerRecipe("thaumcraft:seal:12F", "", <thaumcraft:seal:12>, 1, 
     [<aspect:instrumentum>*10, <aspect:perditio>*10, <aspect:humanus>*10], <thaumcraft:seal>, 
     [<gregtech:pickaxe>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:pickaxe>.withTag({"GT.ToolStats": {Material: "blue_steel"}}), <gregtech:axe>.withTag({"GT.ToolStats": {Material: "blue_steel"}})]);
