@@ -21,3 +21,6 @@ natives
 .minecraft/usercache.json
 .minecraft/usernamecache.json
 .minecraft/config/oxygen/data/client/worlds
+.minecraft/config/JustEnoughCalculation/record.json
+.minecraft/oxygen/worlds
+instance.cfg
