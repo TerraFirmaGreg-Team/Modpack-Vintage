@@ -25,3 +25,4 @@ instance.cfg
 .minecraft/config/AppliedEnergistics2/CustomRecipes.cfg
 .minecraft/caches
 .minecraft/asm
+.minecraft/config/JustEnoughCalculation/record.json
