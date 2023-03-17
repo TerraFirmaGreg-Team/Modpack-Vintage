@@ -67,7 +67,6 @@ large_chemical_reactor    = recipemap('large_chemical_reactor')
 
 
 
-
 circuit0 = metaitem('circuit.integrated').withNbt([Configuration: 0])
 circuit1 = metaitem('circuit.integrated').withNbt([Configuration: 1])
 circuit2 = metaitem('circuit.integrated').withNbt([Configuration: 2])

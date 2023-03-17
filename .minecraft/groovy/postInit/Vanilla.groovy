@@ -425,12 +425,15 @@ crafting.addShaped("tfg/gc/slime_ball", item('minecraft:slime_ball'), [
 	[item('minecraft:sugar'), item('firmalife:cheddar_wheel'), item('minecraft:sugar')],
 	[ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')]])
 
+
+def transformer = { stack -> stack.copyWithMeta(stack.getItemDamage() + 1)}
+
 // Палки
-crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(stack -> stack.copyWithDamage(stack.getDamage() + 1))])
-crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(stack -> stack.copyWithDamage(stack.getDamage() + 1))])
+crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(transformer)])
+crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(transformer)])
 crafting.addShapeless("tfg/tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
 crafting.addShapeless("tfg/tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
-crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(stack -> stack.copyWithDamage(stack.getDamage() + 1))])
+crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(transformer)])
 crafting.addShapeless("tfg/tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
 cutter.recipeBuilder()
