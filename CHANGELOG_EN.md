@@ -5,6 +5,8 @@
 - Fixed script errors in the Extended version, due to the use of old GT tools.
 - Fixed a bug with obtaining salt from a bucket of salt.
 - Almost all CT scripts have been ported to groovy.
+- Fixed a stick recipe bug where the saw would disappear when used.
+- In mmc package, by default added java arguments for optimization.
 
 ## [4.2.5] - 2023-03-14
 ### Modpack fixes
