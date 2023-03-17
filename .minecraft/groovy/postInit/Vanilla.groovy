@@ -414,22 +414,23 @@ assembler.recipeBuilder()
 
 // Ведро
 bender.recipeBuilder()
-	.inputs(metaitem('plateBlueSteel') * 3)
 	.circuitMeta(12)
+	.inputs(metaitem('plateBlueSteel') * 3)
 	.outputs(item('minecraft:bucket'))
 	.duration(100).EUt(7).buildAndRegister()
 
 // Slimeball
 crafting.addShaped("tfg/gc/slime_ball", item('minecraft:slime_ball'), [
 	[ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')],
-	[item('minecraft:sugar'), item('firmalife:cheddar_wheel'),item('minecraft:sugar')],
+	[item('minecraft:sugar'), item('firmalife:cheddar_wheel'), item('minecraft:sugar')],
 	[ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')]])
 
 // Палки
-crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw')])
-crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw')])
+crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').reuse()])
+crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').reuse()])
 crafting.addShapeless("tfg/tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
 crafting.addShapeless("tfg/tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
+crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').reuse()])
 crafting.addShapeless("tfg/tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
 cutter.recipeBuilder()

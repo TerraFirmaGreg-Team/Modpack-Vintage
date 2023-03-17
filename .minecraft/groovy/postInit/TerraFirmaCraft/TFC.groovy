@@ -2,8 +2,7 @@ import postInit.Utility.Array.arrayVanila
 import postInit.Utility.Array.arrayTFC
 import postInit.Utility.Array.arrayGT
 
-// Фикс палок из люмбера
-crafting.addShapeless("tfg/tfc/stick_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw')])
+
 
 // Alabaster Bricks
 crafting.addShapeless("tfg/tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile')])
