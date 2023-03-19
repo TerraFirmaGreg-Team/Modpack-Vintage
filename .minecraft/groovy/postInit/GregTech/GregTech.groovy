@@ -18,13 +18,6 @@ extractor.recipeBuilder()
   .fluidOutputs(fluid('copper') * 144)
   .duration(63).EUt(30).buildAndRegister()
 
-// !Удалить после исправления Контролера напряжения
-// crafting.removeByOutput(metaitem('gcym:tiered_hatch.uhv'))
-crafting.addShaped("tfg/gregtech/tiered_hatch_uv", metaitem('gcym:tiered_hatch.uv'), [
-    [metaitem('plateDarmstadtium'), metaitem('plateDarmstadtium'), metaitem('plateDarmstadtium')],
-    [metaitem('plateDarmstadtium'), ore('circuitUhv'), metaitem('plateDarmstadtium')],
-    [metaitem('plateDarmstadtium'), metaitem('plateDarmstadtium'), metaitem('plateDarmstadtium')]])
-
 // Люк коксовой печи
 crafting.addShapeless("tfg/gregtech/coke_oven_hatch", metaitem('coke_oven_hatch'), [item('gregtech:metal_casing:8'), ore('barrel')])
 
