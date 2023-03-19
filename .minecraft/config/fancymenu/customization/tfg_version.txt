@@ -90,7 +90,7 @@ customization {
   y = -44
   scale = 1.0
   alignment = left
-  value = Modpack Version: §cMODPACKVERSION§r
+  value = Modpack Version: §cDEV§r
 }
 
 customization {

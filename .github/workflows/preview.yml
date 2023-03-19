@@ -2,7 +2,7 @@ name: Deploy preview modpack
 on:
   push:
     tags:
-      - 'Pre*'
+      - "Pre*"
 
 jobs:
   Deploy:
@@ -17,12 +17,12 @@ jobs:
 
       - name: Set the version
         run: |
-          MODPACKVERSION=${{ steps.get_version.outputs.version }}
-          echo "TFG-New-Horizons-${MODPACKVERSION}" > ./.minecraft/config/fancymenu/customization/tfg_version.txt
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/manifest.json
-          sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./extended/instance.cfg
+          DEV=${{ steps.get_version.outputs.version }}
+          echo "TFG-New-Horizons-${DEV}" > ./.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
+          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" ./extended/manifest.json
+          sed -i -e "s/DEV/${DEV}/g" ./extended/instance.cfg
 
       - name: Changelog Parser RU
         id: changelog_ru
@@ -41,7 +41,7 @@ jobs:
 
       - name: Archive Release MMC normal
         run: zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
-      
+
       - name: Archive Release MMC extended
         run: |
           cd ./extended/
@@ -51,20 +51,19 @@ jobs:
         run: |
           mv -vf .minecraft/ ./overrides/ 
           zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
-      
+
       - name: Archive Release CF extended
         run: |
           cd ./extended/
           mv -vf .minecraft/ ./overrides/ 
           zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/resources/ ./overrides/scripts/
 
-
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
           cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
           rm -r resourcepacks resources shaderpacks
-      
+
       - name: Deleting Client Resources extended
         run: |
           cd ./extended/overrides/
@@ -77,7 +76,7 @@ jobs:
           cd ./overrides/
           mv -vf ./icon.png ./server-icon.png
           zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip ./
-      
+
       - name: Archive Release Server extended
         run: |
           cp -r ./serverfiles/* ./extended/overrides/
@@ -99,4 +98,3 @@ jobs:
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
-
