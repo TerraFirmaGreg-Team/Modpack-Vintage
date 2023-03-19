@@ -30,3 +30,4 @@ instance.cfg
 .minecraft/config/thaumicjei_itemstack_aspects.json
 .minecraft/astralsorcery
 .minecraft/crash-reports
+*.log
