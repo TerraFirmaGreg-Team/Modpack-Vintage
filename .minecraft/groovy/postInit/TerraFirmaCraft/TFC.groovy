@@ -1,11 +1,12 @@
 import postInit.Utility.Array.arrayVanila
 import postInit.Utility.Array.arrayTFC
 import postInit.Utility.Array.arrayGT
+import postInit.Utility.Function
 
 
 
 // Alabaster Bricks
-crafting.addShapeless("tfg/tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile')])
+crafting.addShapeless("tfg/tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile').transform(Function.setToolDamage)])
 
 // Cladding
 alloy_smelter.recipeBuilder()

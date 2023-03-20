@@ -1,5 +1,6 @@
 import postInit.Utility.Array.arrayTFCFL
 import postInit.Utility.Array.arrayTFC
+import postInit.Utility.Function
 
 
 // --- Добавление рецептов
@@ -69,7 +70,7 @@ crafting.addShaped("tfg/firmalife/jar", item('firmalife:jar'), [
 
 
 // Pizza Dough
-crafting.addShapeless("tfg/firmalife/pizza_dough", item('firmalife:pizza_dough'), [ore('toolKnife'), ore('doughFlat'), item('tfc:plants/basil'), item('firmalife:tomato_sauce'), ore('craftingToolRollingPin')])
+crafting.addShapeless("tfg/firmalife/pizza_dough", item('firmalife:pizza_dough'), [ore('toolKnife').transform(Function.setToolDamage), ore('doughFlat'), item('tfc:plants/basil'), item('firmalife:tomato_sauce'), ore('craftingToolRollingPin')])
 
 // Свечка
 crafting.addShapeless("tfg/firmalife/candle", item('firmalife:candle') * 6, [ore('itemBeeswax'), ore('string')])

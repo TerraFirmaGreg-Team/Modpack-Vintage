@@ -1,4 +1,4 @@
-
+import postInit.Utility.Function
 
 // --- Добавление рецептов
 
@@ -47,21 +47,21 @@ crafting.addShaped("tfg/vanilla/observer/quartzite", item('minecraft:observer'),
 
 // Железная нажимная плита
 crafting.addShaped("tfg/vanilla/light_weighted_pressure_plate", item('minecraft:heavy_weighted_pressure_plate'), [
-	[metaitem('screwSteel'), ore('toolHammer'), metaitem('screwSteel')],
+	[metaitem('screwSteel'), ore('toolHammer').transform(Function.setToolDamage), metaitem('screwSteel')],
 	[ore('plateIronAny'), metaitem('springSteel'), ore('plateIronAny')],
-	[metaitem('screwSteel'), ore('toolScrewdriver'), metaitem('screwSteel')]])
+	[metaitem('screwSteel'), ore('toolScrewdriver').transform(Function.setToolDamage), metaitem('screwSteel')]])
 
 // Котёл
 crafting.addShaped("tfg/vanilla/cauldron", item('minecraft:cauldron'), [
 	[ore('plateIronAny'), null, ore('plateIronAny')],
-	[ore('plateIronAny'), ore('toolHammer'), ore('plateIronAny')],
+	[ore('plateIronAny'), ore('toolHammer').transform(Function.setToolDamage), ore('plateIronAny')],
 	[ore('plateIronAny'), ore('plateIronAny'), ore('plateIronAny')]])
 
 // Воронка
 crafting.addShaped("tfg/vanilla/hopper", item('minecraft:hopper'), [
 	[ore('plateIronAny'), ore('chest'), ore('plateIronAny')],
 	[ore('plateIronAny'), ore('gearIronAny'), ore('plateIronAny')],
-	[ore('toolWrench'), ore('plateIronAny'), ore('toolHammer')]])
+	[ore('toolWrench').transform(Function.setToolDamage), ore('plateIronAny'), ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Наковальня
 crafting.addShaped("tfg/vanilla/anvil", item('minecraft:anvil'), [
@@ -71,8 +71,8 @@ crafting.addShaped("tfg/vanilla/anvil", item('minecraft:anvil'), [
 
 // Вагонетка
 crafting.addShaped("tfg/vanilla/minecart", item('minecraft:minecart'), [
-	[ore('ringIronAny'), ore('toolHammer'), ore('ringIronAny')],
-	[ore('plateIronAny'), ore('toolWrench'), ore('plateIronAny')],
+	[ore('ringIronAny'), ore('toolHammer').transform(Function.setToolDamage), ore('ringIronAny')],
+	[ore('plateIronAny'), ore('toolWrench').transform(Function.setToolDamage), ore('plateIronAny')],
 	[ore('ringIronAny'), ore('plateIronAny'), ore('ringIronAny')]])
 
 // Проигрыватель
@@ -137,7 +137,7 @@ crafting.addShaped("tfg/vanilla/book", item('minecraft:book'), [
 
 // Ведро
 crafting.addShaped("tfg/vanilla/iron_bucket", item('minecraft:bucket'), [
-	[null, ore('toolHammer'), null],
+	[null, ore('toolHammer').transform(Function.setToolDamage), null],
 	[metaitem('plateBlueSteel'), item('tfc:metal/bucket/red_steel'), metaitem('plateBlueSteel')],
 	[null, metaitem('plateBlueSteel'), null]])
 
@@ -155,26 +155,26 @@ crafting.addShaped("tfg/vanilla/name_tag", item('minecraft:name_tag'), [
 // Повторитель
 crafting.addShaped("tfg/vanilla/repeater", item('minecraft:repeater'), [
 	[ore('screwIronAny'), null, ore('screwIronAny')],
-	[item('minecraft:redstone_torch'), ore('toolScrewdriver'), item('minecraft:redstone_torch')],
+	[item('minecraft:redstone_torch'), ore('toolScrewdriver').transform(Function.setToolDamage), item('minecraft:redstone_torch')],
 	[ore('pressurePlateStone'), metaitem('stickRedAlloy'),ore('pressurePlateStone')]])
 
 // Компаратор - истинный кварц
 crafting.addShaped("tfg/vanilla/comparator/certus_quartz", item('minecraft:comparator'), [
 	[ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
 	[item('minecraft:redstone_torch'), metaitem('plateCertusQuartz'), item('minecraft:redstone_torch')],
-	[ore('pressurePlateStone'), ore('toolScrewdriver'), ore('pressurePlateStone')]])
+	[ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Компаратор - адский кварц
 crafting.addShaped("tfg/vanilla/comparator/nether_quartz", item('minecraft:comparator'), [
 	[ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
 	[item('minecraft:redstone_torch'), metaitem('plateNetherQuartz'), item('minecraft:redstone_torch')],
-	[ore('pressurePlateStone'), ore('toolScrewdriver'), ore('pressurePlateStone')]])
+	[ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Компаратор - кварцит
 crafting.addShaped("tfg/vanilla/comparator/quartzite", item('minecraft:comparator'), [
 	[ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
 	[item('minecraft:redstone_torch'), metaitem('plateQuartzite'), item('minecraft:redstone_torch')],
-	[ore('pressurePlateStone'), ore('toolScrewdriver'), ore('pressurePlateStone')]])
+	[ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Детектор света - истинный кварц
 crafting.addShaped("tfg/vanilla/daylight_detector/certus_quartz", item('minecraft:daylight_detector'), [
@@ -196,7 +196,7 @@ crafting.addShaped("tfg/vanilla/daylight_detector/quartzite", item('minecraft:da
 
 // Конская броня - железо
 crafting.addShaped("tfg/vanilla/horse_armor/iron", item('minecraft:iron_horse_armor'), [
-	[ore('toolHammer'), ore('toolScrewdriver'), item('tfc:metal/helmet/wrought_iron')],
+	[ore('toolHammer').transform(Function.setToolDamage), ore('toolScrewdriver').transform(Function.setToolDamage), item('tfc:metal/helmet/wrought_iron')],
 	[ore('plateIronAny'), item('tfc:metal/chestplate/wrought_iron'), ore('plateIronAny')],
 	[item('tfc:metal/greaves/wrought_iron'), ore('screwIronAny'), item('tfc:metal/boots/wrought_iron')]])
 
@@ -426,14 +426,17 @@ crafting.addShaped("tfg/gc/slime_ball", item('minecraft:slime_ball'), [
 	[ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')]])
 
 
-def transformer = { stack -> stack.copyWithMeta(stack.getItemDamage() + 1)}
+
 
 // Палки
-crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(transformer)])
-crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(transformer)])
+crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(Function.setToolDamage)])
+
+
+
+crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
 crafting.addShapeless("tfg/tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
 crafting.addShapeless("tfg/tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
-crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(transformer)])
+crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
 crafting.addShapeless("tfg/tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
 cutter.recipeBuilder()

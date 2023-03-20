@@ -2,14 +2,35 @@
 	x: -3.5d,
 	y: 2.5d,
 	shape: "circle",
-	description: "20mb",
 	dependencies: [
 		"db7a9dde"
 	],
 	tasks: [{
-		uid: "9fc7740f",
-		type: "fluid",
-		fluid: "latex",
-		amount: 20
+		uid: "80698acb",
+		type: "item",
+		items: [{
+			id: "tfctech:ceramics/fluid_bowl",
+			tag: {
+				Fluid: {
+					FluidName: "latex",
+					Amount: 1000
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3b9930c0",
+		type: "item",
+		item: {
+			id: "tfctech:ceramics/fluid_bowl",
+			tag: {
+				Fluid: {
+					FluidName: "latex",
+					Amount: 1000
+				}
+			}
+		}
 	}]
 }

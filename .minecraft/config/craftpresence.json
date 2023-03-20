@@ -1,6 +1,6 @@
 {
   "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
-  "_schemaVersion": 2,
+  "_schemaVersion": 3,
   "_lastMCVersionId": 340,
   "generalSettings": {
     "detectCurseManifest": true,
@@ -145,6 +145,7 @@
     },
     "lanData": {
       "textOverride": "Playing on a LAN Server",
+      "iconOverride": "tfg_logo",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -299,7 +300,7 @@
       "enabled": true,
       "useAsMain": false,
       "details": "{menu.message != null ? menu.message : (dimension.message != null ? dimension.message : '')}",
-      "gameState": "{server.message != null ? server.message : ''} {pack.name != null ? pack.name : ''}",
+      "gameState": "{server.message != null ? server.message : ''}",
       "largeImageKey": "{menu.icon != null ? menu.icon : (dimension.icon != null ? dimension.icon : '')}",
       "largeImageText": "{menu.message != null ? menu.message : (dimension.message != null ? dimension.message : '')}",
       "smallImageKey": "{server.icon != null ? server.icon : (pack.name != null ? pack.name : '')}",
@@ -314,10 +315,9 @@
       }
     },
     "dynamicIcons": {
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f",
-      "default": "https://via.placeholder.com/256.png",
-      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/blob/main/overrides/resources/modpack/icons/icon.png?raw=true",
-      "tfg.terrafirmagreg.su": "https://api.mcsrvstat.us/icon/tfg.terrafirmagreg.su"
+      "default": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/.minecraft/resources/modpack/icons/icon.png?raw=true",
+      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/.minecraft/resources/modpack/icons/icon.png?raw=true",
+      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
     },
     "dynamicVariables": {
       "default": "Discord",

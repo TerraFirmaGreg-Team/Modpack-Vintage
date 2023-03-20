@@ -3,6 +3,14 @@ import gregtech.api.GTValues
 
 public class Function {
 
+
+  // Урон по инструменту item('gregtech:saw').transform(Function.setToolDamage)
+  static setToolDamage = { stack -> 
+    stack.setItemDamage(stack.getItemDamage() + 1)
+    return stack
+  }
+
+
 // --- Атмосферы
 
   static GenerateGasCollectorRecipes(int dimension, int circuitConfig) {

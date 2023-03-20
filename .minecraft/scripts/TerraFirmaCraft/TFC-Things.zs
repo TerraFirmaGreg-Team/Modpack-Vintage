@@ -53,25 +53,6 @@ ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/red_steel>, "RED_STEEL", 
 ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/steel>, "STEEL", 144, true);
 ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/wrought_iron>, "WROUGHT_IRON", 144, true);
 
-// Серебрянные короны
-recipes.addShapeless("tfg/tfcthings/platinum_crown/garnet", <tfcthings:crown/platinum_garnet>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteGarnetRed>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/emerald", <tfcthings:crown/platinum_emerald>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteEmerald>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/diamond", <tfcthings:crown/platinum_diamond>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteDiamond>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/amethyst", <tfcthings:crown/platinum_amethyst>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteAmethyst>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/sapphire", <tfcthings:crown/platinum_sapphire>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteSapphire>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/topaz", <tfcthings:crown/platinum_topaz>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteTopaz>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/ruby", <tfcthings:crown/platinum_ruby>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteRuby>]);
-recipes.addShapeless("tfg/tfcthings/platinum_crown/opal", <tfcthings:crown/platinum_opal>, [<ore:toolHammer>, <tfcthings:crown/platinum_empty>, <metaitem:gemExquisiteOpal>]);
-// Золотые короны
-recipes.addShapeless("tfg/tfcthings/gold_crown/garnet", <tfcthings:crown/gold_garnet>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteGarnetRed>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/emerald", <tfcthings:crown/gold_emerald>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteEmerald>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/diamond", <tfcthings:crown/gold_diamond>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteDiamond>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/amethyst", <tfcthings:crown/gold_amethyst>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteAmethyst>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/sapphire", <tfcthings:crown/gold_sapphire>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteSapphire>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/topaz", <tfcthings:crown/gold_topaz>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteTopaz>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/ruby", <tfcthings:crown/gold_ruby>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteRuby>]);
-recipes.addShapeless("tfg/tfcthings/gold_crown/opal", <tfcthings:crown/gold_opal>, [<ore:toolHammer>, <tfcthings:crown/gold_empty>, <metaitem:gemExquisiteOpal>]);
-
 // Минус точильный камень
 // recipes.addShaped("tfg/tfcthings/grindstone_base", <tfcthings:grindstone_base>, [
 //    [<ore:stickIronAny>, <ore:stickIronAny>, <ore:stickIronAny>],

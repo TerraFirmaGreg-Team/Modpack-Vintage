@@ -1,4 +1,4 @@
-
+import postInit.Utility.Function
 
 // --- Добавление рецептов
 
@@ -6,13 +6,13 @@
 crafting.addShaped("tfg/weather2/anemometer", item('weather2:anemometer'), [
     [ore('screwIronAny'), ore('gearIronAny'), ore('screwIronAny')],
     [null, ore('stickLongIronAny'), null],
-    [ore('screwIronAny'), ore('toolScrewdriver'), ore('screwIronAny')]])
+    [ore('screwIronAny'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('screwIronAny')]])
 
 // Флюгер
 crafting.addShaped("tfg/weather2/wind_vane", item('weather2:wind_vane'), [
     [ore('stickLongIronAny'), ore('gearIronAny'), ore('stickLongIronAny')],
     [null, ore('stickLongIronAny'), null],
-    [ore('screwIronAny'), ore('toolScrewdriver'), ore('screwIronAny')]])
+    [ore('screwIronAny'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('screwIronAny')]])
 
 // Датчик торнадо
 assembler.recipeBuilder()

@@ -1,4 +1,4 @@
-
+import postInit.Utility.Function
 
 // --- Добавление рецептов
 
@@ -22,19 +22,19 @@ crafting.addShaped("tfg/littletiles/container", item('littletiles:container'), [
 
 // Little Wrench
 crafting.addShaped("tfg/littletiles/wrench", item('littletiles:wrench'), [
-	[ore('toolHammer'), ore('plateIronAny'), ore('toolFile')],
+	[ore('toolHammer').transform(Function.setToolDamage), ore('plateIronAny'), ore('toolFile').transform(Function.setToolDamage)],
 	[null, metaitem('stickLapis'), null],
 	[null, metaitem('stickLapis'), null]])
 
 // Little Hammer
 crafting.addShaped("tfg/littletiles/hammer", item('littletiles:hammer'), [
 	[ore('plateIronAny'), ore('plateIronAny'), ore('plateIronAny')],
-	[ore('toolHammer'), metaitem('stickLapis'), ore('toolFile')],
+	[ore('toolHammer').transform(Function.setToolDamage), metaitem('stickLapis'), ore('toolFile').transform(Function.setToolDamage)],
 	[null, metaitem('stickLapis'), null]])
 
 // Little Chisel
 crafting.addShaped("tfg/littletiles/chisel", item('littletiles:chisel'), [
-	[ore('toolHammer'), ore('plateIronAny'), ore('toolFile')],
+	[ore('toolHammer').transform(Function.setToolDamage), ore('plateIronAny'), ore('toolFile').transform(Function.setToolDamage)],
 	[null, ore('plateIronAny'), null],
 	[null, metaitem('stickLapis'), null]])
 

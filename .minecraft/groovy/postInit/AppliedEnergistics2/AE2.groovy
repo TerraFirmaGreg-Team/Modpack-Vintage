@@ -1,6 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import postInit.Utility.Array.arrayVanila
 import postInit.Utility.Array.arrayAE2
+import postInit.Utility.Function
 
 
 // --- Добавление рецептов
@@ -285,7 +286,7 @@ packer.recipeBuilder()
 
 // Сетевой инструмент
 crafting.addShaped("tfg/ae2/network_tool", item('appliedenergistics2:network_tool'), [
-  [ore('toolWrench'), ore('circuitLv')],
+  [ore('toolWrench').transform(Function.setToolDamage), ore('circuitLv')],
   [item('appliedenergistics2:material', 23), ore('itemIlluminatedPanel')]])
 
 // Wireless Access Point
@@ -1307,8 +1308,8 @@ assembler.recipeBuilder()
 
 // Charged Stuff
 crafting.addShaped("tfg/ae2/charged_staff", item('appliedenergistics2:charged_staff'), [
-  [null, ore('toolHammer'), item('appliedenergistics2:material', 1)],
-  [null, ore('stickIronAny'), ore('toolFile')],
+  [null, ore('toolHammer').transform(Function.setToolDamage), item('appliedenergistics2:material', 1)],
+  [null, ore('stickIronAny'), ore('toolFile').transform(Function.setToolDamage)],
   [ore('stickIronAny'), null, null]])
 
 // Датчик жидкостного уровня
@@ -1603,49 +1604,49 @@ crafting.addShaped("tfg/ae2/planes_formation", item('appliedenergistics2:part:32
 
 // ME Terminal
 crafting.addShaped("tfg/ae2/terminals", item('appliedenergistics2:part:380'), [
-  [ore('toolScrewdriver'), ore('itemIlluminatedPanel'), ore('toolMallet')],
+  [ore('toolScrewdriver').transform(Function.setToolDamage), ore('itemIlluminatedPanel'), ore('toolMallet').transform(Function.setToolDamage)],
   [metaitem('stickSteel'), ore('circuitHv'), metaitem('stickSteel')],
   [metaitem('plateSteel'),  metaitem('screwSteel'), metaitem('plateSteel')]])
 
 // ME Fluid Terminal
 crafting.addShaped("tfg/ae2/terminals_fluid", item('appliedenergistics2:part:520'), [
-  [ore('toolScrewdriver'), ore('itemIlluminatedPanel'), ore('toolMallet')],
+  [ore('toolScrewdriver').transform(Function.setToolDamage), ore('itemIlluminatedPanel'), ore('toolMallet').transform(Function.setToolDamage)],
   [metaitem('stickStainlessSteel'), ore('circuitHv'), metaitem('stickStainlessSteel')],
   [metaitem('plateStainlessSteel'),  metaitem('screwStainlessSteel'), metaitem('plateStainlessSteel')]])
 
 // ME Crafting Terminal
 crafting.addShaped("tfg/ae2/terminals_crafting", item('appliedenergistics2:part', 360), [
-  [ore('toolScrewdriver'), item('appliedenergistics2:part:380'), ore('toolMallet')],
+  [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
   [metaitem('screwSteel'), ore('workbench'), metaitem('screwSteel')],
   [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Interface Terminal
 crafting.addShaped("tfg/ae2/terminals_interface", item('appliedenergistics2:part:480'), [
-  [ore('toolScrewdriver'), item('appliedenergistics2:part:380'), ore('toolMallet')],
+  [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
   [metaitem('screwSteel'), ore('ae2.interface.item'), metaitem('screwSteel')],
   [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Pattern Terminal
 crafting.addShaped("tfg/ae2/terminals_pattern", item('appliedenergistics2:part', 340), [
-    [ore('toolScrewdriver'), item('appliedenergistics2:part:380'), ore('toolMallet')],
+    [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
     [metaitem('screwSteel'), item('appliedenergistics2:material', 52), metaitem('screwSteel')],
     [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Extanded Pattern Terminal
 crafting.addShaped("tfg/ae2/terminals_extended_pattern", item('appliedenergistics2:part:341'), [
-    [ore('toolScrewdriver'), item('appliedenergistics2:part', 340), ore('toolMallet')],
+    [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part', 340), ore('toolMallet').transform(Function.setToolDamage)],
     [metaitem('plateTitanium'), item('appliedenergistics2:material', 52), metaitem('plateTitanium')],
     [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // МЭ Терминал жидкостной конфигурации интерфейсов
 crafting.addShaped("tfg/ae2/terminals_conf_interface_fluid", item('appliedenergistics2:part:522'), [
-    [ore('toolScrewdriver'), item('appliedenergistics2:part:480'), ore('toolMallet')],
+    [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:480'), ore('toolMallet').transform(Function.setToolDamage)],
     [metaitem('stickTitanium'), item('appliedenergistics2:part:520'), metaitem('stickTitanium')],
     [metaitem('plateTitanium'), metaitem('screwTitanium'), metaitem('plateTitanium')]])
 
 // МЭ Терминал конфигурации интерфейсов
 crafting.addShaped("tfg/ae2/terminals_conf_interface", item('appliedenergistics2:part:521'), [
-    [ore('toolScrewdriver'), item('appliedenergistics2:part:480'), ore('toolMallet')],
+    [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:480'), ore('toolMallet').transform(Function.setToolDamage)],
     [metaitem('stickTitanium'), item('appliedenergistics2:part:380'), metaitem('stickTitanium')],
     [metaitem('plateTitanium'), metaitem('screwTitanium'), metaitem('plateTitanium')]])
 

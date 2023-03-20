@@ -31,3 +31,4 @@ instance.cfg
 .minecraft/astralsorcery
 .minecraft/crash-reports
 *.log
+.minecraft/backups

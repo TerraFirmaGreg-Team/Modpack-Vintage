@@ -93,3 +93,4 @@ circuit22 = metaitem('circuit.integrated').withNbt([Configuration: 22])
 circuit23 = metaitem('circuit.integrated').withNbt([Configuration: 23])
 circuit24 = metaitem('circuit.integrated').withNbt([Configuration: 24])
 
+

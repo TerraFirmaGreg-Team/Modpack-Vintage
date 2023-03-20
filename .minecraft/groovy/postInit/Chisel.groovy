@@ -1,4 +1,4 @@
-
+import postInit.Utility.Function
 
 // --- Добавление рецептов
 
@@ -10,27 +10,27 @@ crafting.addShaped("tfg/chisel/auto_chisel", item('chisel:auto_chisel'), [
 
 // Эндер палка смещения
 crafting.addShaped("tfg/chisel/offsettool", item('chisel:offsettool'), [
-    [metaitem('plateIron'), item('minecraft:ender_eye'), ore('toolKnife')],
+    [metaitem('plateIron'), item('minecraft:ender_eye'), ore('toolKnife').transform(Function.setToolDamage)],
     [item('minecraft:stick'), metaitem('plateIron'), null],
-    [ore('toolHammer'), null, null]])
+    [ore('toolHammer').transform(Function.setToolDamage), null, null]])
 
 // Железная стамеска
 crafting.addShaped("tfg/chisel/chisel_iron", item('chisel:chisel_iron'), [
-    [ore('toolFile'), ore('plateIronAny'), ore('plateIronAny')],
+    [ore('toolFile').transform(Function.setToolDamage), ore('plateIronAny'), ore('plateIronAny')],
     [null, metaitem('screwSteel'), ore('plateIronAny')],
-    [metaitem('stickBronze'), null, ore('toolHammer')]])
+    [metaitem('stickBronze'), null, ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Алмазная стамеска
 crafting.addShaped("tfg/chisel/chisel_diamond", item('chisel:chisel_diamond'), [
-    [ore('toolFile'), metaitem('plateDiamond'), metaitem('plateDiamond')],
+    [ore('toolFile').transform(Function.setToolDamage), metaitem('plateDiamond'), metaitem('plateDiamond')],
     [null, item('chisel:chisel_iron'), metaitem('plateDiamond')],
-    [metaitem('stickRoseGold'), null, ore('toolHammer')]])
+    [metaitem('stickRoseGold'), null, ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Современная стамеска
 crafting.addShaped("tfg/chisel/chisel_hitech", item('chisel:chisel_hitech'), [
-    [ore('toolFile'), metaitem('plateDiamond'), metaitem('plateDiamond')],
+    [ore('toolFile').transform(Function.setToolDamage), metaitem('plateDiamond'), metaitem('plateDiamond')],
     [null, item('chisel:chisel_diamond'), metaitem('plateDiamond')],
-    [metaitem('stickStainlessSteel'), null, ore('toolHammer')]])
+    [metaitem('stickStainlessSteel'), null, ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Лабораторный блок
 crafting.addShaped("tfg/chisel/laboratory_block", item('chisel:laboratory') * 8, [

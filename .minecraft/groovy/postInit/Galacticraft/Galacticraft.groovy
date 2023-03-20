@@ -1,6 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import postInit.Utility.Array.arrayVanila
 import postInit.Utility.Array.arrayGC
+import postInit.Utility.Function
 
 
 // --- Добавление рецептов
@@ -251,7 +252,7 @@ crafting.addShaped("tfg/gc/oxygen_concentrator", item('galacticraftcore:oxygen_c
 // Шест
 crafting.addShaped("tfg/gc/steel_pole", item('galacticraftcore:steel_pole') * 2, [
    [null, metaitem('plateDenseSteel'), null],
-   [null, metaitem('plateDenseSteel'), ore('toolHammer')],
+   [null, metaitem('plateDenseSteel'), ore('toolHammer').transform(Function.setToolDamage)],
    [null, metaitem('plateDenseSteel'), null]])
 
 // Жидкостная капсула
@@ -375,7 +376,7 @@ crafting.addShaped("tfg/gc/shield_controller", item('galacticraftplanets:basic_i
 // Пустая схема
 crafting.addShaped("tfg/gc/schematic_blank", metaitem('schematic.blank'), [
    [null, ore('paper'), null],
-   [null, item('littletiles:recipeadvanced'), ore('toolHammer')],
+   [null, item('littletiles:recipeadvanced'), ore('toolHammer').transform(Function.setToolDamage)],
    [null, ore('paper'), null]])
 
 // Радио-изотопное ядро

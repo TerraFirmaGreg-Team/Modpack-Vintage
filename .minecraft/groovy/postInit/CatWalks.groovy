@@ -1,12 +1,12 @@
-
+import postInit.Utility.Function
 
 // --- Добавление рецептов
 
 // Blowtorch
 crafting.addShaped("tfg/catwalks/blowtorch", item('catwalks:blowtorch'), [
     [null, metaitem('screwSteel'), item('minecraft:flint_and_steel')],
-    [ore('toolScrewdriver'), metaitem('stickLongSteel'), metaitem('screwSteel')],
-    [metaitem('stickLongSteel'), ore('toolWrench'), null]])
+    [ore('toolScrewdriver').transform(Function.setToolDamage), metaitem('stickLongSteel'), metaitem('screwSteel')],
+    [metaitem('stickLongSteel'), ore('toolWrench').transform(Function.setToolDamage).transform(Function.setToolDamage), null]])
 
 // Раскрафты по НБТ
 crafting.addShapeless("tfg/catwalks/catwalk/treated_wood", item('catwalks:catwalk').withNbt([material: "treated_wood"]), [item('catwalks:catwalk').withNbt([material: "custom_0"])])

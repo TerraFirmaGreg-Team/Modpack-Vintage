@@ -119,7 +119,7 @@ for (int i = 0; i < arrayTFCF.tfcfDirtyNets.size(); i++) {
         .fluidInputs(fluid('sunflower_seed_water') * 125)
         .circuitMeta(18)
         .fluidOutputs(fluid('sunflower_seed_oil') * 125)
-        .outputs(arrayTFCF.tfcfDirtyNets)
+        .outputs(arrayTFCF.tfcfDirtyNets[i])
         .duration(150).EUt(2).buildAndRegister()
 
     // Opium Poppy Seed Water -> Opium Poppy Seed Oil
