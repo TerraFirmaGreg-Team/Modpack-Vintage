@@ -2,7 +2,7 @@ mods/AmbientSounds_v3.1.7_mc1.12.2.jar
 mods/betterchat-1.4.jar
 mods/BetterFoliage-MC1.12-2.3.3.jar
 mods/ChunkAnimator-1.12.2-1.2.1.jar
-mods/CraftPresence-2.0.0-beta.2+1.12.2.jar
+mods/CraftPresence-2.0.0-beta.3+1.12.2.jar
 mods/CustomLoadingScreen-1.12.2-1.5.7.jar
 mods/darkness-forge-1.12.x-0.5.0.jar
 mods/DefaultOptions_1.12.2-9.2.8.jar
