@@ -21,7 +21,7 @@ mods/mod-director-launchwrapper-1.5.1-SNAPSHOT-all.jar
 mods/moreoverlays-1.15.1-mc1.12.2.jar
 mods/MouseTweaks-3.1.2-mc1.12.2.jar
 mods/OptiFine_1.12.2_HD_U_G5.jar
-mods/particleculling-1.12.2-v1.4.jar
+mods/particleculling-1.12.2-v1.4.1.jar
 mods/phosphor-1.12.2-0.2.9.2-SNAPSHOT-universal.jar
 mods/RenderLib-1.12.2-1.2.7.jar
 mods/ResourceLoader-MC1.12.1-1.5.3.jar
