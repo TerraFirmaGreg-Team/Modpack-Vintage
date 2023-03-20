@@ -1,12 +1,24 @@
 # Changelog
 
-## [4.2.6] - 2023-00-00
+## [4.2.6] - 2023-03-20
 ### Modpack fixes
 - Fixed script errors in the Extended version, due to the use of old GT tools.
 - Fixed a bug with obtaining salt from a bucket of salt.
-- Almost all CT scripts have been ported to groovy.
+- Almost all CT scripts have been moved to groovy.
 - Fixed a stick recipe bug where the saw would disappear when used.
 - In mmc package, by default added java arguments for optimization.
+- Fixed work of geological hammer.
+- Fixed crown crafting recipes.
+- Fixed a bug when using gt tools, when they simply disappeared after one craft.
+- Fixed crafting of volcanic agents.
+- Changed the quest in the primitive era to latex.
+### Update mods
+- TFG mod
+- Craft Presence
+- Groovyscript
+- HadEnoughItems
+- Particleculling
+- Thaumic Augmentation (extended)
 
 ## [4.2.5] - 2023-03-14
 ### Modpack fixes

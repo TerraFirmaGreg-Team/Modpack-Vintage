@@ -3,7 +3,7 @@
 // --- Массивы
 
 def hide = [
-    item('appliedenergistics2:facade').withNbt(["item": "*:*", "damage": 0]),
+    // item('appliedenergistics2:facade').withNbt(["item": "*:*", "damage": 0]),
     item('appliedenergistics2:creative_storage_cell'),
     item('appliedenergistics2:creative_energy_cell')
 ]
