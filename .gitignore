@@ -32,3 +32,4 @@ instance.cfg
 .minecraft/crash-reports
 *.log
 .minecraft/backups
+.minecraft/sl_password.txt

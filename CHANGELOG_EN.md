@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.7] - 2023-03-21
+### Modpack fixes
+- Disabled high tier cars that got into the modpack by mistake
+
 ## [4.2.6] - 2023-03-20
 ### Modpack fixes
 - Fixed script errors in the Extended version, due to the use of old GT tools.
