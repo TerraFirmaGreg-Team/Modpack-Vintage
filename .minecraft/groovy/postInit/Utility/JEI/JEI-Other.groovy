@@ -11,7 +11,6 @@ def hideCategory = [
     "galacticraft.oxygencompressor",
     "galacticraft.ingotcompressor",
     "galacticraft.circuitMetas",
-    "galacticraft.circuitMetas",
     "galacticraft.refinery",
     "galacticraft.gas_liquefier",
     "galacticraft.methaneSynthesizer",
