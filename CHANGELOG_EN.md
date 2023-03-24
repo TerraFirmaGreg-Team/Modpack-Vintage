@@ -3,6 +3,7 @@
 ## [4.2.8] - 2023-03-25
 ### Modpack fixes
 - Added PreventGhost mod that prevents (but completely) the creation of ghost blocks. When out of sync.
+- Fixed Yeast recipe.
 ### Update mods
 - AppliedEnergistics2
 - HadEnoughItems
