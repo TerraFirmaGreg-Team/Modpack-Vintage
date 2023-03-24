@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.2.8] - 2023-03-25
+### Modpack fixes
+- Added PreventGhost mod that prevents (but completely) the creation of ghost blocks. When out of sync.
+### Update mods
+- AppliedEnergistics2
+- HadEnoughItems
+- Bogosorter
+- CraftTweaker2
+- ModularUI
+### New mods
+- PreventGhost
+
 ## [4.2.7] - 2023-03-21
 ### Modpack fixes
 - Disabled high tier machines that got into the modpack by mistake.
