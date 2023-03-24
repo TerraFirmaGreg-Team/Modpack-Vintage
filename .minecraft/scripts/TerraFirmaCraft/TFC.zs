@@ -281,3 +281,6 @@ Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> *
 
 // Различные крафты для лассо
 LeatherKnapping.addRecipe("tfg/tfc/lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
+
+// Yeast
+recipes.addShapeless(<tfcflorae:yeast> * 3, [<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "yeast_starter", Amount: 1000}}).giveBack(<tfc:wooden_bucket>)]);
