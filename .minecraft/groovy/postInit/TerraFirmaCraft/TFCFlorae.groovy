@@ -42,8 +42,8 @@ crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:cera
 crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:ceramics/kaolinite/fired/pot')])
 crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:ceramics/earthenware/fired/pot')])
 
-// // Yeast
-// crafting.addShapeless(item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({item('tfc:wooden_bucket', 0)})])
+// Yeast
+crafting.addShapeless(item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({item('tfc:wooden_bucket', 0)})])
 
 // Сок из ...
 for (int i = 0; i < arrayTFCF.tfcfFluidsForJuices.size(); i++)  {
