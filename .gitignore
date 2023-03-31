@@ -33,3 +33,4 @@ instance.cfg
 *.log
 .minecraft/backups
 .minecraft/sl_password.txt
+.minecraft/optionsshaders.txt
