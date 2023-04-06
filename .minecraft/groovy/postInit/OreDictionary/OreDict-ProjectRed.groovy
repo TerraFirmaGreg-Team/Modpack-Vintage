@@ -1,5 +1,6 @@
 import preinit.Array.arrayProjectRed
 
+if (isLoaded("projectred-core")) {
 
 // --- Добавление
 
@@ -28,3 +29,4 @@ ore('gemRuby').remove(item('projectred-core:resource_item', 200))
 ore('gemSapphire').remove(item('projectred-core:resource_item', 201))
 ore('gemPeridot').remove(item('projectred-core:resource_item', 202))
 ore('dustElectrotine').remove(item('projectred-core:resource_item', 105))
+}

@@ -1,6 +1,6 @@
 import preinit.Array.arrayAE2
 
-
+if (isLoaded("appliedenergistics2")) {
 // --- Добавление
 
 // Стеклянный кабель
@@ -99,3 +99,5 @@ ore('crystalCertusQuartz').remove(item('appliedenergistics2:material'))
 
 // Силикон
 ore('itemSilicon').remove(item('appliedenergistics2:material', 5))
+
+}

@@ -1,4 +1,4 @@
-
+if (isLoaded("jsg")) {
 
 // --- Удаление
 
@@ -27,3 +27,4 @@ ore('blockNaquadahRaw').remove(item('jsg:naquadah_block_raw'))
 ore('plateNaquadahRaw').remove(item('jsg:plate_naquadah_raw'))
 ore('oreNaquadahRaw').remove(item('jsg:naquadah_ore_stone'))
 ore('oreNaquadahRaw').remove(item('jsg:naquadah_ore'))
+}
