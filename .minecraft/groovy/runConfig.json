@@ -17,6 +17,7 @@
       "postInit/Utility/Globals.groovy",
       "postInit/Utility/OreDictionary/",
       "postInit/Utility/JEI/",
+      "postInit/*/JEI/",
       "postInit/Utility/",
       "postInit/"
     ]
