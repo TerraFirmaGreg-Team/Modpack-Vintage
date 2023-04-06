@@ -1,4 +1,4 @@
-import preInit.Function
+import preinit.Function
 
 // --- Добавление рецептов
 // Исправление переработки медной пластины

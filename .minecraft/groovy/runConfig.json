@@ -2,22 +2,18 @@
   "packName": "TFG:New Horizons 1.12.2",
   "version": "4.3.0",
   "debug": true,
-  "classes": [
-    "preInit/Utility/Array/",
-    "preInit/Utility/Function.groovy"
-  ],
+  "classes": ["preinit/Utility/Array/", "preinit/Utility/Function.groovy"],
   "loaders": {
-    "preInit": [
-      "preInit/Utility/Array/",
-      "preInit/Utility/Function.groovy",
-      "preInit/Utility/",
-      "preInit/"
+    "preinit": [
+      "preinit/Utility/Array/",
+      "preinit/Utility/Function.groovy",
+      "preinit/Utility/",
+      "preinit/"
     ],
     "postInit": [
       "postInit/Utility/Globals.groovy",
-      "postInit/Utility/OreDictionary/",
-      "postInit/Utility/JEI/",
-      "postInit/*/JEI/",
+      "postInit/OreDictionary/",
+      "postInit/JEI/",
       "postInit/Utility/",
       "postInit/"
     ]

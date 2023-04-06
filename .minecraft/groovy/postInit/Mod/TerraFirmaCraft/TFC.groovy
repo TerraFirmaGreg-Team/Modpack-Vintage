@@ -1,7 +1,7 @@
-import preInit.Array.arrayVanila
-import preInit.Array.arrayTFC
-import preInit.Array.arrayGT
-import preInit.Function
+import preinit.Array.arrayVanila
+import preinit.Array.arrayTFC
+import preinit.Array.arrayGT
+import preinit.Function
 
 
 

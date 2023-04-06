@@ -1,4 +1,4 @@
-import preInit.Function
+import preinit.Function
 
 if (isLoaded("weather2")) {
 // --- Добавление рецептов

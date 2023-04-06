@@ -1,4 +1,4 @@
-import preInit.Array.arrayTFCM
+import preinit.Array.arrayTFCM
 
 
 

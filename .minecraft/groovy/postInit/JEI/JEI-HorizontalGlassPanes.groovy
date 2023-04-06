@@ -1,4 +1,4 @@
-import preInit.Array.arrayHGP
+import preinit.Array.arrayHGP
 
 
 // --- Удаление рецептов

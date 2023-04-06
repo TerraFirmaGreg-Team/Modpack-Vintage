@@ -1,4 +1,4 @@
-import preInit.Array.arrayGC
+import preinit.Array.arrayGC
 
 
 // --- Добавление

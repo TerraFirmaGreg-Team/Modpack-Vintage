@@ -1,5 +1,5 @@
-import preInit.Array.arrayVanila
-import preInit.Array.arrayProjectRed
+import preinit.Array.arrayVanila
+import preinit.Array.arrayProjectRed
 
 if (isLoaded("projectred-core")) {
 // --- Добавление рецептов

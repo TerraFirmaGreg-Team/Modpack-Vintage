@@ -1,6 +1,6 @@
-import preInit.Array.arrayTFCFL
-import preInit.Array.arrayTFC
-import preInit.Function
+import preinit.Array.arrayTFCFL
+import preinit.Array.arrayTFC
+import preinit.Function
 
 
 // --- Добавление рецептов

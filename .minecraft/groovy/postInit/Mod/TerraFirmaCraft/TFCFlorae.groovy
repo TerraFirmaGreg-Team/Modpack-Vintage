@@ -1,5 +1,5 @@
-import preInit.Array.arrayTFCF
-import preInit.Array.arrayTFC
+import preinit.Array.arrayTFCF
+import preinit.Array.arrayTFC
 
 
 // --- Добавление рецептов

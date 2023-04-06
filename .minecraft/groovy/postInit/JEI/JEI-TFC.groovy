@@ -1,4 +1,4 @@
-import preInit.Array.arrayTFC
+import preinit.Array.arrayTFC
 
 
 // --- Массивы

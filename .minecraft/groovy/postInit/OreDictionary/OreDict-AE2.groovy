@@ -1,4 +1,4 @@
-import preInit.Array.arrayAE2
+import preinit.Array.arrayAE2
 
 
 // --- Добавление

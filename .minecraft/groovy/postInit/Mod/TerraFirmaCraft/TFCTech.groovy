@@ -1,4 +1,4 @@
-import preInit.Function
+import preinit.Function
 
 // Рецепты Strips
 crafting.addShapeless(item('tfctech:metal/copper_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateCopper')])
