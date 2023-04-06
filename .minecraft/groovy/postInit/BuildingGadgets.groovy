@@ -1,4 +1,4 @@
-
+if (isLoaded("buildinggadgets")) {
 
 // --- Добавление рецептов
 
@@ -88,3 +88,5 @@ crafting.addShaped("constructionpastecontainert3", item('buildinggadgets:constru
     [metaitem('screwDiamond'), metaitem('ringTitanium'), metaitem('screwDiamond')],
     [metaitem('plateTitanium'), item('buildinggadgets:constructionpastecontainert2'), metaitem('plateTitanium')],
     [metaitem('screwDiamond'), metaitem('ringTitanium'), metaitem('screwDiamond')]]);
+
+}

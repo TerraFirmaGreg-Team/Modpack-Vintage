@@ -1,7 +1,9 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayAE2
+import preInit.Utility.Array.arrayVanila
+import preInit.Utility.Array.arrayAE2
 
+
+if (isLoaded("aeadditions")) {
 
 // --- Добавление рецептов
 
@@ -340,3 +342,5 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('soldering_alloy') * 144)
     .outputs(item('aeadditions:oc.upgrade'))
     .duration(200).EUt(1920).buildAndRegister()
+
+}

@@ -1,6 +1,7 @@
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayProjectRed
+import preInit.Utility.Array.arrayVanila
+import preInit.Utility.Array.arrayProjectRed
 
+if (isLoaded("projectred-core")) {
 // --- Добавление рецептов
 
 // Circuit Plate
@@ -236,3 +237,4 @@ crafting.addShaped(item('projectred-core:multimeter'),
 	[metaitem('wireGtSingleGold'), metaitem('cover.screen'), metaitem('wireGtSingleRedAlloy')],
 	[ore('circuitLv'), metaitem('plateIron'), ore('circuitLv')]])
 
+}

@@ -1,6 +1,7 @@
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayHGP
+import preInit.Utility.Array.arrayVanila
+import preInit.Utility.Array.arrayHGP
 
+if (isLoaded("hgp")) {
 
 // --- Создание рецептов
 
@@ -37,4 +38,5 @@ for (int i = 0; i < arrayHGP.horizontalGlassPanes.size(); i++) {
         .fluidInputs(fluid('chlorine') * 144)
         .outputs(item('hgp:hgppane'))
         .duration(400).EUt(2).buildAndRegister()
+}
 }

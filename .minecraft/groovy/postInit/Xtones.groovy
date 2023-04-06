@@ -1,4 +1,5 @@
 
+if (isLoaded("xtones")) {
 
 // --- Добавление рецептов
 
@@ -70,3 +71,4 @@ assembler.recipeBuilder()
 	.outputs(item('xtones:lamp_flat'))
 	.duration(180).EUt(32).buildAndRegister()
 
+}

@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayProjectRed
+import preInit.Utility.Array.arrayProjectRed
 
 
 // --- Добавление

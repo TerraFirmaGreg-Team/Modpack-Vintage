@@ -1,4 +1,5 @@
 
+if (isLoaded("travelersbackpack")) {
 
 // --- Добавление рецептов
 
@@ -17,3 +18,4 @@ crafting.addShaped("tfg/travelersbackpacks/hose", item('travelersbackpack:hose')
     [item('travelersbackpack:hose_nozzle'), ore('dyeGreen'), null],
     [ore('dyeGreen'), metaitem('plateRubber'), ore('dyeGreen')],
     [null, ore('dyeGreen'), metaitem('plateRubber')]])
+}

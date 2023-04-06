@@ -1,4 +1,5 @@
 
+if (isLoaded("movingelevators")) {
 
 // --- Добавление рецептов
 
@@ -19,3 +20,4 @@ crafting.addShaped("tfg/movingelevators/button_block", item('movingelevators:but
     [[null, item('appliedenergistics2:material:41'), null],
      [item('projectred-illumination:light_button'), item('movingelevators:elevator_block'), item('projectred-illumination:light_button')],
      [null, null, null]])
+}

@@ -1,8 +1,10 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayAE2
-import postInit.Utility.Function
+import preInit.Utility.Array.arrayVanila
+import preInit.Utility.Array.arrayAE2
+import preInit.Utility.Function
 
+
+if (isLoaded("appliedenergistics2")) {
 
 // --- Добавление рецептов
 
@@ -1730,3 +1732,4 @@ extractor.recipeBuilder()
     .inputs(item('appliedenergistics2:material', 1))
     .fluidOutputs(fluid('charged_certus_quartz') * 144)
     .duration(20).EUt(7).buildAndRegister()
+}

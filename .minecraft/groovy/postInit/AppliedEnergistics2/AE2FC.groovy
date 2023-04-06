@@ -1,5 +1,7 @@
 
 
+if (isLoaded("ae2fc")) {
+
 // --- Добавление рецептов
 
 // Fluid pattern encoder
@@ -131,3 +133,5 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('plastic') * 144)
   .outputs([item('ae2fc:fluid_assembler')])
   .duration(200).EUt(480).buildAndRegister()
+
+}

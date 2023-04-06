@@ -1,5 +1,5 @@
-import postInit.Utility.Array.arrayTFC
-import postInit.Utility.Function
+import preInit.Utility.Array.arrayTFC
+import preInit.Utility.Function
 
 // --- Добавление рецептов
 

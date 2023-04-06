@@ -1,4 +1,4 @@
-import postInit.Utility.Function
+import preInit.Utility.Function
 import gregtech.api.GTValues
 
 // Массивы

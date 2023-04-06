@@ -1,4 +1,5 @@
 
+if (isLoaded("jsg")) {
 
 // --- Добавление рецептов
 
@@ -602,3 +603,4 @@ assembler.recipeBuilder()
 	.fluidInputs(fluid('iron') * 2100)
 	.outputs(item('jsg:gdo'))
 	.duration(420).EUt(112900).buildAndRegister()
+}

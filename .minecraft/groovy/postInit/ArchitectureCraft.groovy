@@ -1,4 +1,4 @@
-
+if (isLoaded("architecturecraft")) {
 
 // --- Добавление рецептов
 
@@ -19,3 +19,4 @@ crafting.addShaped("tfg/architecturecraft/chisel", item('architecturecraft:chise
     [[ore('plateIronAny'), null, null],
     [ore('dyeOrange'), item('minecraft:stick'), null],
     [null, null, null]])
+}

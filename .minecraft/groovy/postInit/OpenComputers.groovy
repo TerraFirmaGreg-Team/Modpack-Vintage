@@ -1,4 +1,5 @@
 
+if (isLoaded("opencomputers")) {
 
 // --- Добавление рецептов
 
@@ -2055,3 +2056,4 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('plastic') * 72)
     .outputs([item('opencomputers:case3')])
     .duration(200).EUt(1920).buildAndRegister()
+}

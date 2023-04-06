@@ -1,5 +1,6 @@
-import postInit.Utility.Function
+import preInit.Utility.Function
 
+if (isLoaded("weather2")) {
 // --- Добавление рецептов
 
 // Анемометр
@@ -49,3 +50,4 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('redstone') * 20)
     .outputs(item('weather2:tornado_siren_manual'))
     .duration(100).EUt(7).buildAndRegister()
+}

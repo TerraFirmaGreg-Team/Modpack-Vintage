@@ -1,11 +1,9 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayGC
+import preInit.Utility.Array.arrayVanila
+import preInit.Utility.Array.arrayGC
 
 
-// Массивы
-
-
+if (isLoaded("extraplanets")) {
 
 // --- Добавление рецептов
 
@@ -443,4 +441,5 @@ assembler.recipeBuilder()
    .inputs(arrayGC.materialThermal[i] * 2)
    .outputs(arrayGC.thermalPaddingBoots[i])
    .duration(500).EUt(2000).buildAndRegister()
+}
 }

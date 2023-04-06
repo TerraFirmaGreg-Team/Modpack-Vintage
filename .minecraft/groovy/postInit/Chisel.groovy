@@ -1,4 +1,6 @@
-import postInit.Utility.Function
+import preInit.Utility.Function
+
+if (isLoaded("chisel")) {
 
 // --- Добавление рецептов
 
@@ -61,3 +63,5 @@ crafting.addShaped("tfg/chisel/brownstone", item('chisel:brownstone') * 8, [
     [ore('sand'), ore('sand'), ore('sand')],
     [ore('sand'), ore('clay'), ore('sand')],
     [ore('sand'), ore('sand'), ore('sand')]])
+
+}

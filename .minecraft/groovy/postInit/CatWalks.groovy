@@ -1,5 +1,7 @@
-import postInit.Utility.Function
+import preInit.Utility.Function
 
+
+if (isLoaded("catwalks")) {
 // --- Добавление рецептов
 
 // Blowtorch
@@ -94,3 +96,4 @@ assembler.recipeBuilder()
     .inputs(metaitem('stickLongBlackSteel') * 3)
     .outputs(item('catwalks:cable') * 32)
     .duration(45).EUt(7).buildAndRegister()
+}

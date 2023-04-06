@@ -1,4 +1,6 @@
-import postInit.Utility.Function
+import preInit.Utility.Function
+
+if (isLoaded("littletiles")) {
 
 // --- Добавление рецептов
 
@@ -85,3 +87,5 @@ crafting.addShaped("tfg/littletiles/premade/signal_converter", item('littletiles
 	[null, item('minecraft:redstone'), null],
 	[null, ore('cobblestone'), null],
 	[null, null, null]])
+
+}

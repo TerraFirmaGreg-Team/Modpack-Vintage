@@ -1,5 +1,7 @@
 
 
+if (isLoaded("planetprogression")) {
+
 // --- Создание рецептов
 
 // Satellite controller
@@ -94,3 +96,5 @@ assembly_line.recipeBuilder()
    .fluidInputs(fluid('lead') * 4608)
    .outputs(item('planetprogression:item_satellite_rocket:1'))
    .duration(300).EUt(4000).buildAndRegister()
+
+}

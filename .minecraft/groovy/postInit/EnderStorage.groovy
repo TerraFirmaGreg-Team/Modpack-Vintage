@@ -1,5 +1,7 @@
 
 
+if (isLoaded("enderstorage")) {
+
 // ---- Добавление рецептов
 
 // Chest
@@ -42,3 +44,4 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('blaze') * 1152)
   .outputs(item('enderstorage:ender_pouch'))
   .duration(980).EUt(7080).buildAndRegister()
+}

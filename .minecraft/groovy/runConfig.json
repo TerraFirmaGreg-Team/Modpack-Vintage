@@ -1,16 +1,19 @@
 {
-  "packName": "TerraFirmaGreg:New Horizons 1.12.2",
-  "version": "4.2.9",
+  "packName": "TFG:New Horizons 1.12.2",
+  "version": "4.3.0",
   "debug": true,
   "classes": [
-    "postInit/Utility/Array/",
-    "postInit/Utility/Function.groovy"
+    "preInit/Utility/Array/",
+    "preInit/Utility/Function.groovy"
   ],
   "loaders": {
-    "preInit": ["preInit/"],
+    "preInit": [
+      "preInit/Utility/Array/",
+      "preInit/Utility/Function.groovy",
+      "preInit/Utility/",
+      "preInit/"
+    ],
     "postInit": [
-      "postInit/Utility/Array/",
-      "postInit/Utility/Function.groovy",
       "postInit/Utility/Globals.groovy",
       "postInit/Utility/OreDictionary/",
       "postInit/Utility/JEI/",

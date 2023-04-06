@@ -1,5 +1,5 @@
 
-
+if (isLoaded("toolbelt")) {
 
 // --- Добавление рецептов
 
@@ -14,3 +14,4 @@ crafting.addShaped("tfg/toolbelts/belt", item('toolbelt:belt'), [
     [ore('string'), ore('leather'), ore('string')],
     [ore('leather'), null, ore('leather')],
     [ore('leather'), ore('ringIronAny'), ore('leather')]])
+}
