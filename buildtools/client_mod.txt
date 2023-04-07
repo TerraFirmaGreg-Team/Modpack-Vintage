@@ -13,7 +13,6 @@ mods/FpsReducer-mc1.12.2-1.20.jar
 mods/InventoryHUD-1.12.2.forge-3.4.4.jar
 mods/ItemPhysic Lite 1.3.7 mc1.12.2.jar
 mods/jetif-1.12.2-1.5.2.jar
-mods/jsg-1.12.2-4.11.0.5-client.jar
 mods/keywizard-1.12.2-1.7.3.jar
 mods/konkrete_forge_1.6.0_MC_1.12-1.12.2.jar
 mods/LegendaryTooltips-1.12.2-1.1.9.jar
