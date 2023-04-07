@@ -377,8 +377,7 @@ ItemRegistry.registerFood(<galacticraftcore:food:9>, 4, 0.6, 0.9, 0.5, 0, 0, 0, 
 // Вес и размер
 ItemRegistry.registerItemSize(<galacticraftplanets:astro_miner>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:mars_rover:*>, "HUGE", "VERY_HEAVY");
+
 
 // Вес и размер
 ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_HEAVY");
@@ -388,8 +387,7 @@ ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_H
 ItemRegistry.registerItemSize(<galacticraftcore:buggy:*>, "HUGE", "VERY_HEAVY");
 
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:venus_rover:*>, "HUGE", "VERY_HEAVY");
+
 
 // Вес и размер
 ItemRegistry.registerItemSize(<galacticraftcore:rocket_t1:*>, "HUGE", "VERY_HEAVY");
@@ -400,28 +398,34 @@ ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_H
 // Вес и размер
 ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:venus_rover:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:mars_rover:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
 
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
 
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// Вес и размер
-ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");
+// // Вес и размер
+// ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");

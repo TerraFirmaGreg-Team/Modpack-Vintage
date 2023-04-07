@@ -176,8 +176,8 @@ crafting.addShaped("tfg/gc/machine/oxygen_collector", item('galacticraftcore:col
 // Лазерная турель
 assembly_line.recipeBuilder()
    .inputs(
-      item('jsg:beamer_crystal_laser'),  
-      item('jsg:beamer_crystal_laser'),
+      item('aunis:crystal_red'),  
+      item('aunis:crystal_red'),
       item('galacticraftcore:space_glass_clear') * 6, 
       metaitem('hull.luv'),
       metaitem('sensor.luv') * 2,

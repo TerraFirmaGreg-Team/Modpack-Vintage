@@ -40,45 +40,45 @@ for (oxygenTankHeavy in arrayGC.oxygenTankHeavy) {
     }
 }
 
-ore('logWood').add([
-    item('extraplanets:kepler22b_maple_logs:2'),
-    item('extraplanets:kepler22b_maple_logs:3'),
-    item('extraplanets:kepler22b_maple_logs:1'),
-    item('extraplanets:kepler22b_maple_logs'),
-    item('extraplanets:kepler22b_maple_logs2:1'),
-    item('extraplanets:kepler22b_maple_logs2')
-])
+// ore('logWood').add([
+//     item('extraplanets:kepler22b_maple_logs:2'),
+//     item('extraplanets:kepler22b_maple_logs:3'),
+//     item('extraplanets:kepler22b_maple_logs:1'),
+//     item('extraplanets:kepler22b_maple_logs'),
+//     item('extraplanets:kepler22b_maple_logs2:1'),
+//     item('extraplanets:kepler22b_maple_logs2')
+// ])
 
-ore('plankWood').add([
-    item('extraplanets:kepler22b_planks:4'),
-    item('extraplanets:kepler22b_planks:1'),
-    item('extraplanets:kepler22b_planks:3'),
-    item('extraplanets:kepler22b_planks:2'),
-    item('extraplanets:kepler22b_planks'),
-    item('extraplanets:kepler22b_planks:5')
-])
+// ore('plankWood').add([
+//     item('extraplanets:kepler22b_planks:4'),
+//     item('extraplanets:kepler22b_planks:1'),
+//     item('extraplanets:kepler22b_planks:3'),
+//     item('extraplanets:kepler22b_planks:2'),
+//     item('extraplanets:kepler22b_planks'),
+//     item('extraplanets:kepler22b_planks:5')
+// ])
 
-ore('gravel').add([
-    item('extraplanets:titania_gravel'),
-    item('extraplanets:deimos_gravel'),
-    item('extraplanets:io_gravel'),
-    item('extraplanets:europa_gravel'),
-    item('extraplanets:eris_gravel'),
-    item('extraplanets:pluto_gravel'),
-    item('extraplanets:saturn_gravel'),
-    item('extraplanets:jupiter_gravel'),
-    item('extraplanets:ceres_gravel'),
-    item('extraplanets:mercury_gravel'),
-    item('extraplanets:iapetus_gravel'),
-    item('extraplanets:titania_gravel'),
-    item('extraplanets:oberon_gravel'),
-    item('extraplanets:titan_gravel'),
-    item('extraplanets:rhea_gravel'),
-    item('extraplanets:ganymede_gravel'),
-    item('extraplanets:callisto_gravel'),
-    item('extraplanets:triton_gravel'),
-    item('extraplanets:phobos_gravel')
-])
+// ore('gravel').add([
+//     item('extraplanets:titania_gravel'),
+//     item('extraplanets:deimos_gravel'),
+//     item('extraplanets:io_gravel'),
+//     item('extraplanets:europa_gravel'),
+//     item('extraplanets:eris_gravel'),
+//     item('extraplanets:pluto_gravel'),
+//     item('extraplanets:saturn_gravel'),
+//     item('extraplanets:jupiter_gravel'),
+//     item('extraplanets:ceres_gravel'),
+//     item('extraplanets:mercury_gravel'),
+//     item('extraplanets:iapetus_gravel'),
+//     item('extraplanets:titania_gravel'),
+//     item('extraplanets:oberon_gravel'),
+//     item('extraplanets:titan_gravel'),
+//     item('extraplanets:rhea_gravel'),
+//     item('extraplanets:ganymede_gravel'),
+//     item('extraplanets:callisto_gravel'),
+//     item('extraplanets:triton_gravel'),
+//     item('extraplanets:phobos_gravel')
+// ])
 
 // Дэш
 ore('stickDesh').add(item('galacticraftplanets:item_basic_mars', 1))

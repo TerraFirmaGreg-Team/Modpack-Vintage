@@ -1,20 +1,23 @@
 
 
-// --- Массивы
+if (isLoaded("buildinggadgets")) {
 
-def removeRecipesByName = [
-   "buildinggadgets:buildingtool",
-   "buildinggadgets:exchangertool",
-   "buildinggadgets:copypastetool",
-   "buildinggadgets:destructiontool"
-]
+   // --- Массивы
 
-// --- Удаление рецептов
+   def removeRecipesByName = [
+      "buildinggadgets:buildingtool",
+      "buildinggadgets:exchangertool",
+      "buildinggadgets:copypastetool",
+      "buildinggadgets:destructiontool"
+   ]
 
-for (item in removeRecipesByName) {
-   crafting.remove(item)
+   // --- Удаление рецептов
+
+   for (item in removeRecipesByName) {
+      crafting.remove(item)
+   }
+
+
+   // BuildingGadgets
+   mods.jei.removeAndHide(item('buildinggadgets:constructionpastecontainercreative'))
 }
-
-
-// BuildingGadgets
-mods.jei.removeAndHide(item('buildinggadgets:constructionpastecontainercreative'))

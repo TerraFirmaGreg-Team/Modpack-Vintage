@@ -1,21 +1,22 @@
 
 
-// --- Массивы
+if (isLoaded("opencomputers")) {
 
-def hide = [
-    item('opencomputers:casecreative'),
-    item('opencomputers:material', 19),
-    item('opencomputers:material', 22),
-    item('opencomputers:material', 25),
-    item('opencomputers:component', 12),
-    item('opencomputers:component', 18),
-    item('opencomputers:upgrade', 32)
-]
+    // --- Массивы
 
-// --- Удаление рецептов
+    def hide = [
+        item('opencomputers:casecreative'),
+        item('opencomputers:material', 19),
+        item('opencomputers:material', 22),
+        item('opencomputers:material', 25),
+        item('opencomputers:component', 12),
+        item('opencomputers:component', 18),
+        item('opencomputers:upgrade', 32)
+    ]
 
-for (item in hide) {
-	mods.jei.hide(item)
+    // --- Удаление рецептов
+
+    for (item in hide) {
+    	mods.jei.hide(item)
+    }
 }
-
-

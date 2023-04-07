@@ -2,8 +2,8 @@
 
 if (isLoaded("chisel")) {
 
-// --- Добавление
+    // --- Добавление
 
-// Стамески
-ore('hiChisel').add(item('chisel:chisel_iron'), item('chisel:chisel_diamond'), item('chisel:chisel_hitech'))
+    // Стамески
+    ore('hiChisel').add(item('chisel:chisel_iron'), item('chisel:chisel_diamond'), item('chisel:chisel_hitech'))
 }

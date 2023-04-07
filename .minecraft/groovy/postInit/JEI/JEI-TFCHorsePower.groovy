@@ -1,16 +1,18 @@
 
 
-// --- Массивы
+if (isLoaded("horsepower")) {
 
-def removeAndHide = [
-   item('horsepower:flour'),
-   item('horsepower:dough') 
-]
-
-
-// --- Удаление рецептов
-
-for (item in removeAndHide) {
-   mods.jei.removeAndHide(item)
+   // --- Массивы
+   
+   def removeAndHide = [
+      item('horsepower:flour'),
+      item('horsepower:dough') 
+   ]
+   
+   
+   // --- Удаление рецептов
+   
+   for (item in removeAndHide) {
+      mods.jei.removeAndHide(item)
+   }
 }
-

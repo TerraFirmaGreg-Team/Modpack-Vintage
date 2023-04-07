@@ -1,10 +1,13 @@
 import preinit.Array.arrayHGP
 
 
-// --- Удаление рецептов
+if (isLoaded("hgp")) {
 
-for (item in arrayHGP.horizontalGlassPanes) {
-    crafting.removeByOutput(item)
+    // --- Удаление рецептов
+    
+    for (item in arrayHGP.horizontalGlassPanes) {
+        crafting.removeByOutput(item)
+    }
+    
+    crafting.removeByOutput(item('hgp:hgppane'))
 }
-
-crafting.removeByOutput(item('hgp:hgppane'))
