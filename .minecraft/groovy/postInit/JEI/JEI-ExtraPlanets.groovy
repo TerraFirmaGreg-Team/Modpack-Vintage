@@ -3,6 +3,30 @@
 if (isLoaded("extraplanets")) {
 
 	// --- Массивы
+
+	// Categories
+
+	def hideCategory = [
+	    "extraplanets.rocketT4",
+	    "extraplanets.rocketT5",
+	    "extraplanets.rocketT6",
+	    "extraplanets.rocketT7",
+	    "extraplanets.rocketT8",
+	    "extraplanets.rocketT9",
+	    "extraplanets.rocketT10",
+	    "extraplanets.rocketT10Electric",
+	    "extraplanets.marsRover",
+	    "extraplanets.venusRover",
+	    "extraplanets.blockSmasher",
+	    "extraplanets.solarEvaporationChamber",
+	    "extraplanets.chemicalInjector",
+	    "extraplanets.crystallizer",
+	    "extraplanets.purifier",
+	    "extraplanets.densifier"
+	]
+
+
+
 	
 	def hide = [
 		item('extraplanets:item_tier4_rocket', 4),
@@ -241,6 +265,10 @@ if (isLoaded("extraplanets")) {
 	]
 	
 	// --- Удаление рецептов
+
+	for(name in hideCategory) {
+    	mods.jei.hideCategory(name)
+	}
 	
 	for (item in hide) {
 		mods.jei.hide(item)

@@ -191,11 +191,11 @@ assembler.recipeBuilder()
    .outputs(item('galacticraftcore:platform'))
    .duration(1000).EUt(1012).buildAndRegister()
 
-// Oxygen Mask
-crafting.addShaped("tfg/gc/oxygen_mask", item('galacticraftcore:oxygen_mask'), [
-   [item('minecraft:glass_pane'), metaitem('lensGlass'), item('minecraft:glass_pane')],
-   [item('minecraft:glass_pane'), item('extraplanets:tier1_un_prepared_space_suit_helmet'), item('minecraft:glass_pane')],
-   [metaitem('plateDenseSteel'), metaitem('pipeTinyFluidStainlessSteel'), metaitem('plateDenseSteel')]])
+// // Oxygen Mask
+// crafting.addShaped("tfg/gc/oxygen_mask", item('galacticraftcore:oxygen_mask'), [
+//    [item('minecraft:glass_pane'), metaitem('lensGlass'), item('minecraft:glass_pane')],
+//    [item('minecraft:glass_pane'), item('extraplanets:tier1_un_prepared_space_suit_helmet'), item('minecraft:glass_pane')],
+//    [metaitem('plateDenseSteel'), metaitem('pipeTinyFluidStainlessSteel'), metaitem('plateDenseSteel')]])
 
 // Oxygen Gear
 crafting.addShaped("tfg/gc/oxygen_gear", item('galacticraftcore:oxygen_gear'), [

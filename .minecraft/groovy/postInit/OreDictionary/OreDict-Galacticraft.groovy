@@ -5,8 +5,8 @@ import preinit.Array.arrayGC
 // Лунный камень
 ore('stoneMoon').add(item('galacticraftcore:basic_block_moon:4'))
 
-// Сухой лед
-ore('blockDryIce').add(item('extraplanets:iapetus:6'))
+// // Сухой лед
+// ore('blockDryIce').add(item('extraplanets:iapetus:6'))
 
 // Парашуты
 for (gcParachute in arrayGC.gcParachute) {
@@ -18,27 +18,27 @@ for (gcParachute in arrayGC.gcParachute) {
 }
 
 // Балоны
-for (oxygenTankLight in arrayGC.oxygenTankLight) {
-    ore('gc.oxygen.tank.light').add(oxygenTankLight)
-    if (oxygenTankLight == item('extraplanets:oxygen_tank_light_full_white')) {}
-    else {
-        ore('gc.oxygen.tank.light.colors').add(oxygenTankLight)
-    }
-}
-for (oxygenTankMed in arrayGC.oxygenTankMed) {
-    ore('gc.oxygen.tank.med').add(oxygenTankMed)
-    if (oxygenTankMed == item('extraplanets:oxygen_tank_med_full_white')) {}
-    else {
-        ore('gc.oxygen.tank.med.colors').add(oxygenTankMed)
-    }
-}
-for (oxygenTankHeavy in arrayGC.oxygenTankHeavy) {
-    ore('gc.oxygen.tank.heavy').add(oxygenTankHeavy)
-    if (oxygenTankHeavy == item('extraplanets:oxygen_tank_heavy_full_white')) {}
-    else {
-        ore('gc.oxygen.tank.heavy.colors').add(oxygenTankHeavy)
-    }
-}
+// for (oxygenTankLight in arrayGC.oxygenTankLight) {
+//     ore('gc.oxygen.tank.light').add(oxygenTankLight)
+//     if (oxygenTankLight == item('extraplanets:oxygen_tank_light_full_white')) {}
+//     else {
+//         ore('gc.oxygen.tank.light.colors').add(oxygenTankLight)
+//     }
+// }
+// for (oxygenTankMed in arrayGC.oxygenTankMed) {
+//     ore('gc.oxygen.tank.med').add(oxygenTankMed)
+//     if (oxygenTankMed == item('extraplanets:oxygen_tank_med_full_white')) {}
+//     else {
+//         ore('gc.oxygen.tank.med.colors').add(oxygenTankMed)
+//     }
+// }
+// for (oxygenTankHeavy in arrayGC.oxygenTankHeavy) {
+//     ore('gc.oxygen.tank.heavy').add(oxygenTankHeavy)
+//     if (oxygenTankHeavy == item('extraplanets:oxygen_tank_heavy_full_white')) {}
+//     else {
+//         ore('gc.oxygen.tank.heavy.colors').add(oxygenTankHeavy)
+//     }
+// }
 
 // ore('logWood').add([
 //     item('extraplanets:kepler22b_maple_logs:2'),

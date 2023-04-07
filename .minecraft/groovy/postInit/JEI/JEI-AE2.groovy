@@ -3,6 +3,10 @@
 if (isLoaded("appliedenergistics2")) {
 
     // --- Массивы
+
+    def hideCategory = [
+        "appliedenergistics2.inscriber"
+    ]
     
     def hide = [
         // item('appliedenergistics2:facade').withNbt(["item": "*:*", "damage": 0]),
@@ -140,6 +144,10 @@ if (isLoaded("appliedenergistics2")) {
     
     
     // --- Удаление рецептов
+
+    for(item in hideCategory) {
+        mods.jei.hideCategory(item)
+    }
     
     for (item in hide) {
     	mods.jei.hide(item)

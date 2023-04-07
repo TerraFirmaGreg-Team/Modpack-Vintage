@@ -3,6 +3,11 @@
 if (isLoaded("planetprogression")) {
 
 	// --- Массивы
+
+	def hideCategory = [
+	    "planetprogression.satellite.rocket",
+	    "planetprogression.satellite.builder"
+	]
 	
 	def removeAndHide = [
 		item('planetprogression:telescope_fake_block'),
@@ -21,6 +26,10 @@ if (isLoaded("planetprogression")) {
 	]
 	
 	// --- Удаление рецептов
+
+	for(item in hideCategory) {
+    	mods.jei.hideCategory(item)
+	}
 	
 	for (item in removeAndHide) {
 	   mods.jei.removeAndHide(item)

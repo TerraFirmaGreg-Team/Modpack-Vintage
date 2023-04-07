@@ -3,6 +3,10 @@
 if (isLoaded("ftbquests")) {
 
     // --- Массивы
+
+    def hideCategory = [
+        "ftbquests.quests"
+    ]
     
     def removeAndHide = [
         item('ftbquests:chest'),
@@ -16,6 +20,10 @@ if (isLoaded("ftbquests")) {
     ]
     
     // --- Удаление рецептов
+
+    for(item in hideCategory) {
+        mods.jei.hideCategory(item)
+    }
     
     for (item in removeAndHide) {
        mods.jei.removeAndHide(item)

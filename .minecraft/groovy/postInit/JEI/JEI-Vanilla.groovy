@@ -2,6 +2,10 @@
 
 // --- Массивы
 
+def hideCategory = [
+    "minecraft.anvil"
+]
+
 def removeAndHide = [
    // Blocks
    item('minecraft:stone:*'),
@@ -211,6 +215,10 @@ def removeRecipesByName = [
 ]
 
 // --- Удаление рецептов
+
+for(item in hideCategory) {
+    mods.jei.hideCategory(item)
+}
 
 for (item in removeAndHide) {
    mods.jei.removeAndHide(item)

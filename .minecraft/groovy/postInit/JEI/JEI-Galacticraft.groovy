@@ -3,6 +3,21 @@
 if (isLoaded("galacticraftcore")) {
 
    // --- Массивы
+
+   def hideCategory = [
+      //  "galacticraft.buggy",
+      //  "galacticraft.oxygencompressor",
+      //  "galacticraft.ingotcompressor",
+      //  "galacticraft.circuitMetas",
+      //  "galacticraft.refinery",
+      //  "galacticraft.gas_liquefier",
+      //  "galacticraft.methaneSynthesizer",
+      //  "galacticraft.astroMiner",
+      //  "galacticraft.cargoRocket",
+      //  "galacticraft.rocketT1",
+      //  "galacticraft.rocketT2",
+      //  "galacticraft.rocketT3"
+   ]
    
    def hide = [
       item('galacticraftcore:rocket_t1', 4),
@@ -203,6 +218,10 @@ if (isLoaded("galacticraftcore")) {
    
    
    // --- Удаление рецептов
+
+   for(item in hideCategory) {
+      mods.jei.hideCategory(item)
+   }
    
    for (item in hide) {
    	mods.jei.hide(item)

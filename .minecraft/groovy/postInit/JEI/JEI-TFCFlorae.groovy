@@ -4,6 +4,10 @@ if (isLoaded("tfcflorae")) {
 
    // --- Массивы
 
+   def hideCategory = [
+      "tfcflorae.casting"
+   ]
+
    def removeAndHide = [
       item('tfcflorae:tools/flint/hammer/flint'),
       item('tfcflorae:tools/flint/hammer_head/flint'),
@@ -38,6 +42,11 @@ if (isLoaded("tfcflorae")) {
    ]
 
    // --- Удаление рецептов
+
+   for(item in hideCategory) {
+      mods.jei.hideCategory(item)
+   }
+
 
    for (item in removeAndHide) {
       mods.jei.removeAndHide(item)

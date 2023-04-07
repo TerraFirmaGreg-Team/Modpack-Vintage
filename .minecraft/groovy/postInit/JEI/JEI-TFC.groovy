@@ -4,6 +4,11 @@ import preinit.Array.arrayTFC
 if (isLoaded("tfc")) {
 
 	// --- Массивы
+
+	def hideCategory = [
+    	"tfc.rock_layer",
+    	"tfc.vein"
+	]
 	
 	def removeAndHide = [
 		// Nuggets
@@ -575,22 +580,26 @@ if (isLoaded("tfc")) {
 	
 	
 	// --- Удаление рецептов
+
+	for(item in hideCategory) {
+    	mods.jei.hideCategory(item)
+	}
 	
 	for (item in removeAndHide) {
-	   mods.jei.removeAndHide(item)
+	   	mods.jei.removeAndHide(item)
 	}
 	
 	for (item in removeRecipesByName) {
-	   crafting.remove(item)
+	   	crafting.remove(item)
 	}
 	
 	// Удаление рецептов сундуков
 	for (item in arrayTFC.tfcChests) {
-	   crafting.removeByOutput(item)
+	   	crafting.removeByOutput(item)
 	}
 	
 	// Удаление рецептов лодок
 	for (item in arrayTFC.tfcBoats) {
-	   crafting.removeByOutput(item)
+	   	crafting.removeByOutput(item)
 	}
 }
