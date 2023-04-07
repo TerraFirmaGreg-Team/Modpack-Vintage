@@ -8,7 +8,7 @@ if (isLoaded("extraplanets")) {
     // Сухой лед
     ore('blockDryIce').add(item('extraplanets:iapetus:6'))
     
-    Балоны
+    // Балоны
     for (oxygenTankLight in arrayGC.oxygenTankLight) {
         ore('gc.oxygen.tank.light').add(oxygenTankLight)
         if (oxygenTankLight == item('extraplanets:oxygen_tank_light_full_white')) {}
