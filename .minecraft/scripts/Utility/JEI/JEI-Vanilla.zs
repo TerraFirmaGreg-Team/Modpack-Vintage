@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 
 // --- Массивы
 
-val RemoveRecipeFurnace as IItemStack[] = [
+val removeRecipeFurnace as IItemStack[] = [
    <minecraft:dye:2>,
    <minecraft:stone>,
    <minecraft:gold_nugget>,
@@ -16,7 +16,7 @@ val RemoveRecipeFurnace as IItemStack[] = [
 // --- Удаление рецептов
 
 // Удаление рецептов печи
-for item in RemoveRecipeFurnace {
+for item in removeRecipeFurnace {
    furnace.remove(item);
 }
 
@@ -28,59 +28,12 @@ furnace.remove(<minecraft:redstone>, <minecraft:redstone_ore>);
 furnace.remove(<minecraft:diamond>, <minecraft:diamond_ore>);
 furnace.remove(<minecraft:emerald>, <minecraft:emerald_ore>);
 
-// Верстак
-assembler.findRecipe(6, [<ore:logWood>.firstItem, <minecraft:flint>], null).remove();
 
-// Печь
-assembler.findRecipe(7, [<ore:stoneCobble>.firstItem * 8, <minecraft:flint>, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
-
-// Деревянная нажимная плита
-assembler.findRecipe(7, [<ore:plankWood>.firstItem * 2, <ore:springIron>.firstItem], null).remove();
-
-// Каменная нажимная плита
-assembler.findRecipe(7, [<minecraft:stone_slab> * 2, <ore:springIron>.firstItem], null).remove();
-
-// Деревянный люк
-assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
-
-// Железный люк
-// assembler.findRecipe(16, [<metaitem:plateIron> * 4, <minecraft:trapdoor>], null).remove();
-
-// Сноп сена
-packer.findRecipe(2, [<minecraft:wheat> * 9, <metaitem:circuit.integrated>.withTag({Configuration: 9})], null).remove();
-
-// Сундук
-assembler.findRecipe(4, [<metaitem:plateWood> * 8, <metaitem:circuit.integrated>.withTag({Configuration: 8})], null).remove();
-
-// Земля с гравием
-mixer.findRecipe(4, [<minecraft:gravel:0>, <minecraft:dirt:0>], null).remove();
 
 // Замшелые камни
 // Mossy Stone Bricks
 assembler.findRecipe(1, [<minecraft:stonebrick:0>, <minecraft:vine:0>], null).remove();
-// Moss Stone
-assembler.findRecipe(1, [<chisel:cobblestone:0>, <minecraft:vine:0>], null).remove();
 
-// Стены
-// Cobblestone Wall
-assembler.findRecipe(7, [<minecraft:cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
-// Mossy Cobblestone Wall
-assembler.findRecipe(7, [<minecraft:mossy_cobblestone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 6})], null).remove();
-
-// Обычный песок
-// Chiseled Sandstone
-laser_engraver.findRecipe(16, [<minecraft:sandstone:2>, <metaitem:lensGlass>], null).remove();
-// Sandstone
-// assembler.findRecipe(4, [<minecraft:sandstone:2>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
-
-// Sandstone
-compressor.findRecipe(2, [<minecraft:sand:0> * 4], null).remove();
-// Sand
-forge_hammer.findRecipe(16, [<minecraft:gravel:0>], null).remove();
-// Sand
-forge_hammer.findRecipe(2, [<minecraft:sandstone:0>], null).remove();
-// Smooth Sandstone
-assembler.findRecipe(4, [<minecraft:sandstone:0>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 // Sandstone Stairs
 assembler.findRecipe(1, [<minecraft:sandstone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
@@ -245,10 +198,6 @@ sifter.findRecipe(16, [<minecraft:gravel:0>], null).remove();
 // Стойка для брони
 assembler.findRecipe(7, [<minecraft:stone_slab:0>, <minecraft:stick:0> * 6], null).remove();
 
-// Воронка
-// assembler.findRecipe(2, [<minecraft:chest:0>, <metaitem:plateIron> * 5], null).remove();
-assembler.findRecipe(2, [<minecraft:trapped_chest:0>, <metaitem:plateWroughtIron> * 5], null).remove();
-
 // Булыжник
 assembler.findRecipe(1, [<minecraft:mossy_cobblestone:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 forge_hammer.findRecipe(16, [<chisel:cobblestone:0>], null).remove();
@@ -268,11 +217,6 @@ forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 // Item Brick
 alloy_smelter.findRecipe(2, [<minecraft:clay_ball:0>, <metaitem:shape.mold.ingot>], null);
 
-// Книжные полки
-assembler.findRecipe(4, [<metaitem:plateWood> * 6, <minecraft:book:0> * 3], null).remove();
-extractor.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
-//arc_furnace.findRecipe(30, [<minecraft:bookshelf:0>], [<liquid:oxygen>]).remove();
-//macerator.findRecipe(2, [<minecraft:bookshelf:0>], null).remove();
 
 // Песок
 centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
@@ -321,27 +265,9 @@ assembler.findRecipe(4, [<metaitem:plateIron> * 7, <metaitem:circuit.integrated>
 // Компас
 assembler.findRecipe(4, [<minecraft:redstone:0>, <metaitem:plateIron> * 4, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
 
-// Нажимная пластина из железа
-assembler.findRecipe(16, [<metaitem:springSteel>, <metaitem:plateIron>], null).remove();
-
-// Вагонетка
-assembler.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:ringIron> * 4], null).remove();
-
-// Железные прутья
-assembler.findRecipe(4, [<metaitem:stickIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 3})], null).remove();
-
-// Железная дверь
-// assembler.findRecipe(7, [<minecraft:iron_bars:0>, <metaitem:plateIron> * 4], [<liquid:steel> * 16]).remove();
-
-// Ведро
-bender.findRecipe(4, [<metaitem:plateIron> * 3, <metaitem:circuit.integrated>.withTag({Configuration: 12})], null).remove();
 
 // Поршень
 assembler.findRecipe(7, [<metaitem:stickIron>, <metaitem:gearSmallIron>, <tfc:slab/wood/maclura:0>, <chisel:cobblestone:0>], [<liquid:red_alloy> * 144]).remove();
-
-// Разбор железного люка
-//arc_furnace.findRecipe(30, [<minecraft:iron_trapdoor:0>], [<liquid:oxygen> * 56]).remove();
-//macerator.findRecipe(2, [<minecraft:iron_trapdoor:0>], null).remove();
 
 // Fermented Spider Eye
 mixer.findRecipe(7, [<minecraft:sugar:0>, <minecraft:brown_mushroom:0>, <minecraft:spider_eye:0>], null).remove();
@@ -378,11 +304,5 @@ assembler.findRecipe(4, [<minecraft:nether_brick:0>, <metaitem:circuit.integrate
 // Nether Brick Stairs
 assembler.findRecipe(1, [<minecraft:nether_brick:0> * 6, <metaitem:circuit.integrated>.withTag({Configuration: 7})], null).remove();
 
-// Раскрафт ванильного верстака
-macerator.findRecipe(2, [<minecraft:crafting_table:0>], null).remove();
-
 // Исправление дюпа палок
 recipes.remove(<minecraft:stick>);
-
-// Лампа
-assembler.findRecipe(1, [<minecraft:redstone> * 4, <minecraft:glowstone_dust> * 4], null).remove();

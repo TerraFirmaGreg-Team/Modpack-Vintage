@@ -772,7 +772,7 @@ if (isLoaded("opencomputers")) {
     assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
-            item('minecraft:stone_button') * 4,
+            ore('buttonStone') * 4,
             ore('circuitLv')
         ])
         .outputs([item('opencomputers:material:15')])
@@ -782,7 +782,7 @@ if (isLoaded("opencomputers")) {
     assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
-            item('minecraft:stone_button') * 6,
+            ore('buttonStone') * 6,
             ore('circuitLv')
         ])
         .outputs([item('opencomputers:material:14')])
@@ -792,7 +792,7 @@ if (isLoaded("opencomputers")) {
     assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
-            item('minecraft:stone_button') * 9,
+            ore('buttonStone') * 9,
             ore('circuitLv')
         ])
         .outputs([item('opencomputers:material:16')])

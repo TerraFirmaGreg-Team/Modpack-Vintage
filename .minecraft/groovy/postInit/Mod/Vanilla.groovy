@@ -107,7 +107,9 @@ crafting.addShaped("tfg/vanilla/redstone_lamp", item('minecraft:redstone_lamp'),
 	[metaitem('plateBrass'), ore('stickIronAny'), metaitem('plateBrass')]])
 
 assembler.recipeBuilder()
-	.inputs(metaitem('plateBrass') * 4, ore('stickIronAny') * 4)
+	.inputs(
+		metaitem('plateBrass') * 4, 
+		ore('stickIronAny') * 4)
 	.fluidInputs(fluid('redstone') * 72)
 	.outputs(item('minecraft:redstone_lamp'))
 	.duration(100).EUt(1).buildAndRegister()
@@ -387,7 +389,7 @@ assembler.recipeBuilder()
 		metaitem('springSteel'), 
 		ore('plateIronAny'))
 	.outputs(item('minecraft:heavy_weighted_pressure_plate'))
-	.duration(100).EUt(16).buildAndRegister()
+	.duration(200).EUt(16).buildAndRegister()
 
 // Вагонетка
 assembler.recipeBuilder()
