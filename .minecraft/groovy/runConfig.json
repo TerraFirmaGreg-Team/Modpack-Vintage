@@ -3,16 +3,16 @@
   "version": "4.3.0",
   "debug": true,
   "classes": [
-    "preinit/Array/", 
-    "preinit/Function.groovy"
+    "postInit/Utility/Array/", 
+    "postInit/Utility/Function.groovy"
   ],
   "loaders": {
     "preinit": [
-      "preinit/Array/",
-      "preinit/Function.groovy",
       "preinit/"
     ],
     "postInit": [
+      "postInit/Utility/Array/",
+      "postInit/Utility/Function.groovy",
       "postInit/Utility/Globals.groovy",
       "postInit/OreDictionary/",
       "postInit/JEI/",

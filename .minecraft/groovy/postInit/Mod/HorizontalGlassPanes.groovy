@@ -1,5 +1,5 @@
-import preinit.Array.arrayVanila
-import preinit.Array.arrayHGP
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayHGP
 
 
 if (isLoaded("hgp")) {

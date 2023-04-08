@@ -1,6 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import preinit.Array.arrayVanila
-import preinit.Array.arrayGC
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayGC
 
 
 if (isLoaded("extraplanets")) {

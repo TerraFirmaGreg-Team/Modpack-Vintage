@@ -1,4 +1,4 @@
-import preinit.Function
+import postInit.Utility.Function
 
 // Массивы
 def oberon = [

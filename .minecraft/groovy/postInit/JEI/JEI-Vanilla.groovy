@@ -233,3 +233,10 @@ for (item in removeRecipe) {
 for (item in removeRecipesByName) {
    crafting.remove(item)
 }
+
+
+// Воронка
+mods.gregtech.assembler.removeByInput(2, [item('tfc:wood/chest_trap/fever'), metaitem('plateIron') * 5, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+mods.gregtech.assembler.removeByInput(2, [item('tfc:wood/chest_trap/fever'), metaitem('plateWroughtIron') * 5, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+
+

@@ -1,4 +1,4 @@
-import preinit.Function
+import postInit.Utility.Function
 
 
 // --- Добавление рецептов
@@ -306,7 +306,7 @@ assembler.recipeBuilder()
 		ore('plateIronAny') * 5, 
 		ore('gearIronAny'))
 	.outputs(item('minecraft:hopper'))
-	.duration(100).EUt(2).buildAndRegister()
+	.duration(600).EUt(2).buildAndRegister()
 
 // Базальтовый камень
 compressor.recipeBuilder()

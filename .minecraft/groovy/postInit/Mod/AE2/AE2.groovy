@@ -1,7 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import preinit.Array.arrayVanila
-import preinit.Array.arrayAE2
-import preinit.Function
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayAE2
+import postInit.Utility.Function
 
 
 if (isLoaded("appliedenergistics2")) {

@@ -1,6 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import preinit.Array.arrayVanila
-import preinit.Array.arrayAE2
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayAE2
 
 
 if (isLoaded("aeadditions")) {

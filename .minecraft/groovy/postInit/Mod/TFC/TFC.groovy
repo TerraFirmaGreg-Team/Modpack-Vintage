@@ -1,7 +1,7 @@
-import preinit.Array.arrayVanila
-import preinit.Array.arrayTFC
-import preinit.Array.arrayGT
-import preinit.Function
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayTFC
+import postInit.Utility.Array.arrayGT
+import postInit.Utility.Function
 
 
 if (isLoaded("tfc")) {

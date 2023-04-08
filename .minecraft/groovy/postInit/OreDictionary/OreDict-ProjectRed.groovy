@@ -1,4 +1,4 @@
-import preinit.Array.arrayProjectRed
+import postInit.Utility.Array.arrayProjectRed
 
 if (isLoaded("projectred-core")) {
 

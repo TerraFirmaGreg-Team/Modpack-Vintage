@@ -1,6 +1,6 @@
-import preinit.Array.arrayTFCFL
-import preinit.Array.arrayTFC
-import preinit.Function
+import postInit.Utility.Array.arrayTFCFL
+import postInit.Utility.Array.arrayTFC
+import postInit.Utility.Function
 
 
 if (isLoaded("firmalife")) {

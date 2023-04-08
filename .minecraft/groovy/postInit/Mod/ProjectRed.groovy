@@ -1,5 +1,5 @@
-import preinit.Array.arrayVanila
-import preinit.Array.arrayProjectRed
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayProjectRed
 
 
 if (isLoaded("projectred-core")) {

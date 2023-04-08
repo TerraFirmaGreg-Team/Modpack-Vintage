@@ -1,4 +1,4 @@
-import preinit.Array.arrayTFC
+import postInit.Utility.Array.arrayTFC
 
 
 if (isLoaded("tfc")) {
@@ -138,7 +138,10 @@ if (isLoaded("tfc")) {
 	ore('dustSaltpeter').remove(item('tfc:powder/saltpeter'))
 	ore('dustGraphite').remove(item('tfc:powder/graphite'))
 	ore('logWood').remove(item('tfc:stick_bundle'))
-	ore('sheetDoubleAnyBronze').remove(item('tfc:metal/double_sheet/bismuth_bronze'), item('tfc:metal/double_sheet/	bronze'), item('tfc:metal/double_sheet/black_bronze'))
+	ore('sheetDoubleAnyBronze').remove(
+		item('tfc:metal/double_sheet/bismuth_bronze'), 
+		item('tfc:metal/double_sheet/bronze'), 
+		item('tfc:metal/double_sheet/black_bronze'))
 	ore('gemSulfur').remove(item('tfc:ore/sulfur'))
 	ore('gemSaltpeter').remove(item('tfc:ore/saltpeter'))
 	ore('gemGraphite').remove(item('tfc:ore/graphite'))

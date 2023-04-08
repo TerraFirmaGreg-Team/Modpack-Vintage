@@ -1,7 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import preinit.Array.arrayVanila
-import preinit.Array.arrayGC
-import preinit.Function
+import postInit.Utility.Array.arrayVanila
+import postInit.Utility.Array.arrayGC
+import postInit.Utility.Function
 
 
 // --- Добавление рецептов
