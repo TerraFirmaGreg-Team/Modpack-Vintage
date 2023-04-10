@@ -5,6 +5,7 @@
 ### Обновление модов
 - CraftPresence
 - Fancymenu
+- GregicalityMultiblocks
 ### Новые моды
 
 ## [4.2.8] - 2023-03-25
