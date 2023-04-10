@@ -6,7 +6,21 @@
 - CraftPresence
 - Fancymenu
 - GregicalityMultiblocks
+- GregTech
+- Supermartijn642corelib
+- TFGmod
 ### Новые моды
+- Aunis
+### Удаленные моды
+- FantasticLib
+- NoAdvancements
+- Preventghost
+- Tips
+- Toast Control
+- Performant
+- Particleculling
+- EntityCulling
+- jsg
 
 ## [4.2.8] - 2023-03-25
 ### Исправления модпака
