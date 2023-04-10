@@ -20,7 +20,7 @@
 - Performant
 - Particleculling
 - EntityCulling
-- jsg
+- JSG
 
 ## [4.2.8] - 2023-03-25
 ### Исправления модпака
