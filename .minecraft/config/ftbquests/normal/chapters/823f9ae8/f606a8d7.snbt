@@ -4,11 +4,11 @@
 	y: -7.25d,
 	description: "{tfg.quests.primitive.copper_chisel.subtitle}",
 	text: [
-		"{tfg.quests.primitive.copper_prospect.desk1}",
-		"{tfg.quests.primitive.copper_prospect.desk2}",
-		"{tfg.quests.primitive.copper_prospect.desk3}",
-		"{tfg.quests.primitive.copper_prospect.desk4}",
-		"{tfg.quests.primitive.copper_prospect.desk5}"
+		"{tfg.quests.primitive.copper_chisel.desk1}",
+		"{tfg.quests.primitive.copper_chisel.desk2}",
+		"{tfg.quests.primitive.copper_chisel.desk3}",
+		"{tfg.quests.primitive.copper_chisel.desk4}",
+		"{tfg.quests.primitive.copper_chisel.desk5}"
 	],
 	dependencies: [
 		"76b9b265"
