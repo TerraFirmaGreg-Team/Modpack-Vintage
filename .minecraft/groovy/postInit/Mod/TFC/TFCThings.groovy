@@ -19,4 +19,8 @@ if (isLoaded("tfcthings")) {
     crafting.addShapeless("tfg/tfcthings/gold_crown/topaz", item('tfcthings:crown/gold_topaz'), [ore('toolHammer'), item('tfcthings:crown/gold_empty'), metaitem('gemExquisiteTopaz')])
     crafting.addShapeless("tfg/tfcthings/gold_crown/ruby", item('tfcthings:crown/gold_ruby'), [ore('toolHammer'), item('tfcthings:crown/gold_empty'), metaitem('gemExquisiteRuby')])
     crafting.addShapeless("tfg/tfcthings/gold_crown/opal", item('tfcthings:crown/gold_opal'), [ore('toolHammer'), item('tfcthings:crown/gold_empty'), metaitem('gemExquisiteOpal')])
+
+    // TFC-Things Sling Ammo с помощью GT молота
+    crafting.addShapeless("tfg/tfcthings/sling_ammo/spread", item('tfcthings:sling_ammo_spread'), [ore('toolHammer'), item('tfcthings:sling_ammo')])
+    crafting.addShapeless("tfg/tfcthings/sling_ammo/light", item('tfcthings:sling_ammo_light'), [ore('toolHammer'), item('tfcthings:sling_ammo'), ore('toolFile')])
 }

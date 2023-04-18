@@ -7,7 +7,7 @@ if (isLoaded("projectred-core")) {
 	// --- Добавление рецептов
 
 	// Circuit Plate
-	// furnace.addRecipe(item('projectred-core:resource_item') * 2, ore('stone'))
+	furnace.add(ore('stone'), item('projectred-core:resource_item') * 2)
 
 
 	for (int i = 0; i < arrayProjectRed.illuminars.size(); i++) {

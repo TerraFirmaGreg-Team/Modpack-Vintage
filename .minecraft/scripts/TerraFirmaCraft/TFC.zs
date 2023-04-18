@@ -281,3 +281,6 @@ Quern.addRecipe("tfg/tfc/flux_rock_to_flux", <ore:rockFlux>, <tfc:powder/flux> *
 
 // Различные крафты для лассо
 LeatherKnapping.addRecipe("tfg/tfc/lead", <minecraft:lead>, "XXXXX", "X XXX", "X X X", "X   X", "XXXXX");
+
+
+Crucible.registerRecipe("thaumcraft:amberF0", "TB.EXCHANG", <thaumcraft:amber>, <tfc:wood/sapling/douglas_fir>, [<aspect:vinculum>*14]);

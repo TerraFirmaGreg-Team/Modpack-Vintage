@@ -62,10 +62,6 @@ ItemRegistry.registerItemMetal(<tfcthings:rope_javelin/wrought_iron>, "WROUGHT_I
 Anvil.addRecipe("tfg/tfcthings/bracing/wrought_iron", <metaitem:ingotWroughtIron>, <tfcthings:metal_bracing>, 3, "general", "BEND_LAST", "HIT_NOT_LAST", "DRAW_NOT_LAST");
 Anvil.addRecipe("tfg/tfcthings/bracing/steel", <metaitem:ingotSteel>, <tfcthings:metal_bracing> * 2, 4, "general", "BEND_LAST", "HIT_NOT_LAST", "DRAW_NOT_LAST");
 
-// TFC-Things Sling Ammo с помощью GT молота
-recipes.addShapeless("tfg/tfcthings/sling_ammo/spread", <tfcthings:sling_ammo_spread>, [<ore:toolHammer>, <tfcthings:sling_ammo>]);
-recipes.addShapeless("tfg/tfcthings/sling_ammo/light", <tfcthings:sling_ammo_light>, [<ore:toolHammer>, <tfcthings:sling_ammo>, <ore:toolFile>]);
-
 // Алмазная пыль --> крошка TFC
 // Quern.addRecipe("tfg/tfcthings/diamond_grit", <metaitem:dustDiamond>, <tfcthings:diamond_grit>);
 

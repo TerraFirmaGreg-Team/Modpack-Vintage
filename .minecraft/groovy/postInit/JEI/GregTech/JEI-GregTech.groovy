@@ -175,4 +175,8 @@ if (isLoaded("gregtech")) {
    for (item in removeRecipesByName) {
       crafting.remove(item)
    }
+
+   // Sodium Dust * 1 (#144)
+   mods.gregtech.electrolyzer.removeByInput(30, [metaitem('dustSalt') * 2], null)
+
 }

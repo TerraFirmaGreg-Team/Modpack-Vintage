@@ -176,54 +176,54 @@ tfg.quests.primitive.copper_prospect.desk7=5 ... The center of the two lines for
 
 tfg.quests.primitive.copper_chisel.title=First Copper Chisel
 tfg.quests.primitive.copper_chisel.subtitle=Chisel Modes
-tfg.quests.primitive.copper_chisel.desk1=Press §4M§4 to switch chisel modes.
+tfg.quests.primitive.copper_chisel.desk1=Press §4M§4 to switch chisel modes.§r
 tfg.quests.primitive.copper_chisel.desk2=Smoothing: This setting turns raw stone into smooth stone.
 tfg.quests.primitive.copper_chisel.desk3=Ladder: Right click on a complete block to turn it into a ladder.
 tfg.quests.primitive.copper_chisel.desk4=Slabs: Turn solid blocks into slabs.
 tfg.quests.primitive.copper_chisel.desk5=Note: You can only sharpen blocks with stairs/slabs."
 
 tfg.quests.primitive.copper_knife.title=The First Copper Knife
-tfg.quests.primitive.copper_knife.subtitle=&aIt's much better than the stone one, at least in terms of durability.
+tfg.quests.primitive.copper_knife.subtitle=&aIt's much better than the stone one, at least in terms of durability.§r
 
 tfg.quests.primitive.copper_file.title=The First Copper File
-tfg.quests.primitive.copper_file.subtitle=&aHow many adventures began with him.
+tfg.quests.primitive.copper_file.subtitle=&aHow many adventures began with him.§r
 
 tfg.quests.primitive.leather.title=Skin
-tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.
+tfg.quests.primitive.leather.subtitle=&aTo craft the skin, the recipe is in JEI.§r
 
 tfg.quests.primitive.planks.title=Lumber
-tfg.quests.primitive.planks.subtitle=&aUsing a saw, we get this tunnel.
+tfg.quests.primitive.planks.subtitle=&aUsing a saw, we get this tunnel.§r
 
-tfg.quests.primitive.alloycalc.subtitle=&aThe alloys calculator will allow you to fuse metals easier and more clearly.
+tfg.quests.primitive.alloycalc.subtitle=&aThe alloys calculator will allow you to fuse metals easier and more clearly.§r
 
 tfg.quests.primitive.woodchest.title=Chests
-tfg.quests.primitive.woodchest.subtitle=&aSome moron came up with several crafts for chests, draw conclusions which recipe is more profitable.
+tfg.quests.primitive.woodchest.subtitle=&aSome moron came up with several crafts for chests, draw conclusions which recipe is more profitable.§r
 tfg.quests.primitive.woodchest.task.chest.title=&aAny chest
 
-tfg.quests.primitive.woodencrate.subtitle=&aYour first box that can store ores in the form of a block.
+tfg.quests.primitive.woodencrate.subtitle=&aYour first box that can store ores in the form of a block.§r
 
-tfg.quests.primitive.woodenbarrel.subtitle=&aA wooden barrel, similar to a TFK barrel, but you can't craft anything in it, just a liquid storage compatible with GT cars.
+tfg.quests.primitive.woodenbarrel.subtitle=&aA wooden barrel, similar to a TFK barrel, but you can't craft anything in it, just a liquid storage compatible with GT cars.§r
 
 tfg.quests.primitive.barrel.title=The barrel!
-tfg.quests.primitive.barrel.subtitle=&aThe monkey poured water, the water remained in the barrel.
+tfg.quests.primitive.barrel.subtitle=&aThe monkey poured water, the water remained in the barrel.§r
 
 tfg.quests.primitive.juteropes.title=I'll be a rag!
-tfg.quests.primitive.juteropes.subtitle=&aJute with a crisis of self-perception.
+tfg.quests.primitive.juteropes.subtitle=&aJute with a crisis of self-perception.§r
 
 tfg.quests.primitive.supports.title=Supports!
-tfg.quests.primitive.supports.subtitle=&aYou don't want to be buried alive, do you?
+tfg.quests.primitive.supports.subtitle=&aYou don't want to be buried alive, do you?§r
 
 tfg.quests.primitive.grinder.title=Hand Mill
-tfg.quests.primitive.grinder.subtitle=&aCreate a hand mill.
+tfg.quests.primitive.grinder.subtitle=&aCreate a hand mill.§r
 
 tfg.quests.primitive.copperanvil.title=Anvil No. 1 "Pacification"
-tfg.quests.primitive.copperanvil.subtitle=&aThis is more expensive than any bronze. Have you been sweating for a long time to get it?
+tfg.quests.primitive.copperanvil.subtitle=&aThis is more expensive than any bronze. Have you been sweating for a long time to get it?§r
 
 tfg.quests.primitive.bronzeanvil.title=Anvil No. 2 "Rebirth"
-tfg.quests.primitive.bronzeanvil.subtitle=&aThere must be bronze.
+tfg.quests.primitive.bronzeanvil.subtitle=&aThere must be bronze.§r
 
 tfg.quests.primitive.ironanvil.title=Anvil No. 3 "Becoming"
-tfg.quests.primitive.ironanvil.subtitle=&aWhy is there no self-closing iron maiden? Or spikes?
+tfg.quests.primitive.ironanvil.subtitle=&aWhy is there no self-closing iron maiden? Or spikes?§r
 
 tfg.quests.primitive.steelanvil.title=Anvil No. 4 "Steel Nut"
 tfg.quests.primitive.steelanvil.subtitle=&aAre the anvils falling in tfc? I don't know. Check on the most braking in the group.
@@ -433,7 +433,7 @@ tfg.quests.primitive.walkstick.subtitle=&aWith this stick, you can walk much fas
 ############################################################ d423fb3e ############################################################
 ##################################################################################################################################
 
-tfg.quests.steam.era.title=§cEra 2 §4-§4 §6Steam
+tfg.quests.steam.era.title=§cEra 2 §4-§4 §6Steam§r
 
 tfg.quests.steam.maincheck.title=Let's start the steam era!
 tfg.quests.steam.maincheck.subtitle=&aThe steam era begins, here you will finally be able to make a furnace, and an alloy furnace that will save you from the million hours you spent forging.
