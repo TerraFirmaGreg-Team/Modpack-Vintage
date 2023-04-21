@@ -1,0 +1,146 @@
+{
+  "minecraft": {
+    "version": "1.12.2",
+    "modLoaders": [
+      {
+        "id": "forge-14.23.5.2860",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "TFG-New-Horizons",
+  "version": "DEV-Extended",
+  "author": "SpeeeDCraft_YT",
+  "files": [
+    {
+      "projectID": 238003,
+      "fileID": 2559089,
+      "required": true
+    },
+    {
+      "projectID": 293505,
+      "fileID": 2766866,
+      "required": true
+    },
+    {
+      "projectID": 241721,
+      "fileID": 3044416,
+      "required": true
+    },
+    {
+      "projectID": 389203,
+      "fileID": 3775152,
+      "required": true
+    },
+    {
+      "projectID": 319441,
+      "fileID": 4486505,
+      "required": true
+    },
+    {
+      "projectID": 230495,
+      "fileID": 3007966,
+      "required": true
+    },
+    {
+      "projectID": 285492,
+      "fileID": 2705304,
+      "required": true
+    },
+    {
+      "projectID": 223628,
+      "fileID": 2629023,
+      "required": true
+    },
+    {
+      "projectID": 295765,
+      "fileID": 2579495,
+      "required": true
+    },
+    {
+      "projectID": 398969,
+      "fileID": 3419071,
+      "required": true
+    },
+    {
+      "projectID": 75598,
+      "fileID": 2957213,
+      "required": true
+    },
+    {
+      "projectID": 293406,
+      "fileID": 4117847,
+      "required": true
+    },
+    {
+      "projectID": 409880,
+      "fileID": 3614638,
+      "required": true
+    },
+    {
+      "projectID": 232564,
+      "fileID": 3663195,
+      "required": true
+    },
+    {
+      "projectID": 266491,
+      "fileID": 2611426,
+      "required": true
+    },
+    {
+      "projectID": 319037,
+      "fileID": 2710957,
+      "required": true
+    },
+    {
+      "projectID": 324709,
+      "fileID": 3928584,
+      "required": true
+    },
+    {
+      "projectID": 297365,
+      "fileID": 2702806,
+      "required": true
+    },
+    {
+      "projectID": 316632,
+      "fileID": 3009422,
+      "required": true
+    },
+    {
+      "projectID": 849094,
+      "fileID": 4485344,
+      "required": true
+    },
+    {
+      "projectID": 245755,
+      "fileID": 2859589,
+      "required": true
+    },
+    {
+      "projectID": 551619,
+      "fileID": 3544037,
+      "required": true
+    },
+    {
+      "projectID": 220954,
+      "fileID": 3840577,
+      "required": true
+    },
+    {
+      "projectID": 523198,
+      "fileID": 3447883,
+      "required": true
+    },
+    {
+      "projectID": 554387,
+      "fileID": 3556105,
+      "required": true
+    },
+    {
+      "projectID": 247401,
+      "fileID": 3611193,
+      "required": true
+    },

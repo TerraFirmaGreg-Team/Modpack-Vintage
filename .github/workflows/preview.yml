@@ -15,15 +15,6 @@ jobs:
         id: get_version
         run: echo ::set-output name=version::${GITHUB_REF#refs/tags/Pre}
 
-      - name: Set the version
-        run: |
-          DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/tfg_version.txt
-          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
-          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
-          sed -i -e "s/DEV/${DEV}/g" ./extended/manifest.json
-          sed -i -e "s/DEV/${DEV}/g" ./extended/instance.cfg
-
       - name: Changelog Parser RU
         id: changelog_ru
         uses: coditory/changelog-parser@v1
@@ -37,7 +28,24 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: normal -> extended
-        run: cp -r .minecraft/* ./extended/.minecraft/
+        run: | 
+          cp -r .minecraft/* ./extended/.minecraft/
+          cp -r ./modlist.html ./extended/modlist_temp.html
+          sed '1d' ./extended/modlist_temp.html
+          cat ./extended/modlist_extended.html ./extended/modlist_temp.html > ./extended/modlist.html
+          cp -r ./manifest.json ./extended/manifest_temp.json
+          sed '1,16d' ./extended/manifest_temp.json
+          cat ./extended//manifest_extended.json ./extended/manifest_temp.json > ./extended/manifest.json
+
+      - name: Set the version
+        run: |
+          DEV=${{ steps.get_version.outputs.version }}
+          sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
+          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" ./extended/.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/DEV/${DEV}/g" ./extended/manifest.json
+          sed -i -e "s/DEV/${DEV}/g" ./extended/instance.cfg
 
       - name: Archive Release MMC normal
         run: zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
