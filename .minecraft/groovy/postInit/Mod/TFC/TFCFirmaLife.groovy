@@ -134,7 +134,7 @@ if (isLoaded("firmalife")) {
         .duration(205).EUt(8).buildAndRegister()
     
     assembler.recipeBuilder()
-        .circuitMeta(2)
+        .circuitMeta(4)
         .inputs(metaitem('plateWroughtIron'))
         .outputs(item('firmalife:greenhouse_door') * 4)
         .duration(205).EUt(8).buildAndRegister()
