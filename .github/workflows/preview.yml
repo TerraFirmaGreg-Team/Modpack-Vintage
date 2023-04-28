@@ -69,7 +69,8 @@ jobs:
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
-          rm -rf mods/fancymenu_forge_*
+          cat ../buildtools/client_mod.txt | while read f; do find . -type f -name '$f*' -delete; done
+          rm -rf resourcepacks resources shaderpacks
 
       - name: Deleting Client Resources extended
         run: |
