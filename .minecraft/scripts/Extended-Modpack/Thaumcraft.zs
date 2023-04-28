@@ -712,3 +712,6 @@ extruder.recipeBuilder()
 	.inputs(<metaitem:shape.extruder.axe>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/axe_head/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
+
+
+Crucible.registerRecipe("thaumcraft:amberF0", "TB.EXCHANG", <thaumcraft:amber>, <tfc:wood/sapling/douglas_fir>, [<aspect:vinculum>*14]);

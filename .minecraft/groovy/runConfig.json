@@ -1,14 +1,15 @@
 {
   "packName": "TFG-New-Horizons",
+  "packId": "tfg",
   "version": "4.3.0",
-  "debug": true,
+  "debug": false,
   "classes": [
     "postInit/Utility/Array/",
     "postInit/Utility/Function.groovy"
   ],
   "loaders": {
-    "preinit": [
-      "preinit/"
+    "preInit": [
+      "preInit/"
     ],
     "postInit": [
       "postInit/Utility/Array/",

@@ -7,7 +7,7 @@ mods/CustomLoadingScreen-1.12.2-1.5.7.jar
 mods/darkness-forge-1.12.x-0.5.0.jar
 mods/DefaultOptions_1.12.2-9.2.8.jar
 mods/DynamicSurroundings-1.12.2-3.6.3.jar
-mods/fancymenu_forge_2.14.3_MC_1.12-1.12.2.jar
+mods/fancymenu_forge_*.jar
 mods/FpsReducer-mc1.12.2-1.20.jar
 mods/InventoryHUD-1.12.2.forge-3.4.4.jar
 mods/ItemPhysic Lite 1.3.7 mc1.12.2.jar
