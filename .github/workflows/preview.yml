@@ -69,14 +69,13 @@ jobs:
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
-          cat ../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r resourcepacks resources shaderpacks
+          rm -rf mods/fancymenu_forge_*
 
       - name: Deleting Client Resources extended
         run: |
           cd ./extended/overrides/
-          cat ../../buildtools/client_mod.txt | while read f; do rm "$f"; done
-          rm -r resourcepacks resources shaderpacks
+          cat ../../buildtools/client_mod.txt | while read f; do rm -rf "$f"; done
+          rm -rf resourcepacks resources shaderpacks
 
       - name: Archive Release Server normal
         run: |
