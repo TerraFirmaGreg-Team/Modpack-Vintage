@@ -13,7 +13,7 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/Pre}
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/}
 
       - name: Changelog Parser RU
         id: changelog_ru
@@ -69,13 +69,13 @@ jobs:
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
-          cat ../buildtools/client_mod.txt | while read f; do find . -type f -name '$f*' -delete; done
+          cat ../buildtools/client_mod.txt | while read "f"; do rm -rf "$f"; done
           rm -rf resourcepacks resources shaderpacks
 
       - name: Deleting Client Resources extended
         run: |
           cd ./extended/overrides/
-          cat ../../buildtools/client_mod.txt | while read f; do rm -rf "$f"; done
+          cat ../../buildtools/client_mod.txt | while read 'f'; do rm -rf "$f"; done
           rm -rf resourcepacks resources shaderpacks
 
       - name: Archive Release Server normal
