@@ -9,7 +9,7 @@ B:forcefullscreen = 'false';
 B:playbackgroundsounds = 'false';
 [A minecraft restart is required after changing this value.]
 B:enablehotkeys = 'true';
-B:playmenumusic = 'false';
+B:playmenumusic = 'true';
 S:variables_to_reset_on_launch = '';
 B:showdebugwarnings = 'false';
 [Sets the default GUI scale on first launch. Useful for modpacks. Cache data is saved in '/mods/fancymenu/'.]
@@ -33,7 +33,7 @@ S:copyrightcolor = '#ff2e2e';
 B:allowgameintroskip = 'false';
 B:showanimationloadingstatus = 'false';
 S:gameintroanimation = '';
-B:preloadanimations = 'false';
+B:preloadanimations = 'true';
 S:customgameintroskiptext = '';
 
 
@@ -67,7 +67,7 @@ B:showvanillamovewarning = 'false';
 ##[ui]
 
 B:show_unicode_warning = 'true';
-F:uiscale = '1.5';
+F:uiscale = '1';
 
 
 ##[compatibility]

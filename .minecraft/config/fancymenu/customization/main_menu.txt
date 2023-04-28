@@ -1,0 +1,493 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = tfg_slideshowse_menu
+  action = setbackgroundslideshow
+}
+
+customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 10
+  action = movebutton
+  y = 111
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 180
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 9
+  action = movebutton
+  y = 171
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 109
+  action = movebutton
+  y = 171
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 81
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 95
+  action = movebutton
+  y = 240
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 9
+  action = movebutton
+  y = 81
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 181
+  action = resizebutton
+  height = 21
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundnormal = resources\modpack\longbutton.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 510
+  width = 260
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 6685a7fe-4803-47f8-b77f-94fa9907f03e1656498261763
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 163
+  action = deep_customization_element:title_screen_branding
+  actionid = ada8f14d-70b4-4208-b50c-f59048caba881656498261763
+  y = 623
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 1057
+  width = 222
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 713e9ed6-f8ef-4d09-a870-70b7d6299c9d1656498261763
+  y = 665
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 743
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 7e697f66-fc1e-4bd9-81b2-9fc356deb6f11656498261763
+  y = 271
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 503
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 3af81f51-c7af-4930-bc35-0dfb1e72f58e1656498261763
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = d666f931-891d-4b92-8b82-7d54822b47631656498261763
+  y = 0
+  height = 30
+}
+
+customization {
+  path = resources/modpack/tfg_logo.png
+  orientation = top-centered
+  x = -202
+  width = 627
+  actionid = f68baef0-a3a3-45f4-95f0-261dfeba7b611652985074076
+  action = addtexture
+  y = 38
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][req_id:8adebb2a-103b-483b-970b-0eda302060771682701688046] = 1920
+  height = 244
+}
+
+customization {
+  showname = false
+  orientation = top-left
+  skinpath = resources/modpack/skins/xikaro.png
+  crouching = false
+  x = 33
+  slim = false
+  actionid = 391dfb3e-cfa3-485a-8f81-b299140346bd1625506599349
+  action = addentity
+  y = 69
+  scale = 30
+  playername = Xikaro
+  parrot = false
+}
+
+customization {
+  showname = true
+  orientation = top-left
+  skinpath = config/fancymenu/modpack/syber.png
+  crouching = false
+  x = 957
+  slim = false
+  actionid = f82cd154-8929-42e4-8e1a-fb5976426ec01625508134345
+  action = addentity
+  y = 581
+  scale = 1
+  parrot = false
+}
+
+customization {
+  showname = false
+  orientation = top-left
+  skinpath = resources/modpack/skins/speeedcraft.png
+  crouching = false
+  x = 162
+  slim = false
+  actionid = 9e74612c-c1f7-4ff3-af1d-33b4e4cd32f81625508163945
+  action = addentity
+  y = 68
+  scale = 30
+  playername = SpeeeDCraft
+  parrot = false
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ff1500
+  shadow = true
+  splashfilepath = resources/modpack/words/en_us.txt
+  rotation = 0.0
+  scale = 1.0
+  refresh = true
+  bouncing = true
+  vanilla-like = false
+  x = 88
+  actionid = dfe9da8d-e635-4473-9bca-9f30ff0e15a41661549675641
+  action = addsplash
+  y = 220
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][req_id:a2d53cb5-f82e-496e-af7e-8515d4b3bcc61682699709159] = 1920
+}
+
+customization {
+  path = resources/modpack/sidebar_full_left.png
+  orientation = top-left
+  x = 0
+  width = 219
+  actionid = dfc5e859-91fc-4a19-9d6a-3150bbe44a821682690929954
+  action = addtexture
+  y = 0
+  height = 719
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu;%btnaction_splitter_fm%
+  backgroundhovered = resources\modpack\reload_h.png
+  label = 
+  loopbackgroundanimations = true
+  x = 88
+  width = 21
+  action = addbutton
+  actionid = 197d91f5-1380-402d-83e5-247a6aebf7b51682691033654
+  y = 21
+  backgroundnormal = resources\modpack\reload.png
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/y4khKF9zjT%btnaction_splitter_fm%
+  backgroundhovered = resources\modpack\icons\discord_h.png
+  description = %local:tfg.menu.discord%
+  label = 
+  loopbackgroundanimations = true
+  x = 59
+  width = 21
+  action = addbutton
+  actionid = ae5bdb1f-1c09-45ee-8d7c-83184e32b5a21682691033654
+  y = 51
+  backgroundnormal = resources\modpack\icons\discord.png
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://www.youtube.com/@SpeeDCraft%btnaction_splitter_fm%
+  backgroundhovered = resources/modpack/icons/youtube_h.png
+  description = %local:tfg.menu.youtube%
+  label = 
+  loopbackgroundanimations = true
+  x = 89
+  width = 21
+  action = addbutton
+  actionid = 1abb4d5f-3978-455d-a97b-0d62789e68e81682691033654
+  y = 50
+  backgroundnormal = resources/modpack/icons/youtube.png
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/issues%btnaction_splitter_fm%
+  backgroundhovered = resources\modpack\icons\github_h.png
+  description = %local:tfg.menu.github%
+  label = 
+  loopbackgroundanimations = true
+  x = 119
+  width = 21
+  action = addbutton
+  actionid = 8cad47ef-6db8-419b-ad66-5ac19e83daab1682691033654
+  y = 50
+  backgroundnormal = resources\modpack\icons\github.png
+  height = 21
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = joinserver;tfg.terrafirmagreg.su%btnaction_splitter_fm%
+  backgroundhovered = resources\modpack\longbutton_h.png
+  label = %local:tfg.menu.server%
+  loopbackgroundanimations = true
+  x = 9
+  width = 181
+  action = addbutton
+  actionid = ab98b1c6-36eb-4d2e-a4df-e6f8320449351682691033654
+  y = 141
+  backgroundnormal = resources\modpack\longbutton.png
+  height = 21
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = downloadfile;http://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar;mods/OptiFine_1.12.2_HD_U_G5.jar%btnaction_splitter_fm%
+  backgroundhovered = resources\modpack\longbutton_h.png
+  description = %local:tfg.menu.optifine.hover%
+  label = %local:tfg.menu.optifine.download%
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][req_id:7290aae8-089b-42ed-9db3-b620d45215d71682701137735] = 900
+  loopbackgroundanimations = true
+  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
+  x = 10
+  width = 180
+  action = addbutton
+  actionid = 39e6387b-6e47-49aa-a320-d73fab9a0d131682691033654
+  y = 201
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if_not][req_id:13d36547-1e17-4449-8bc8-7196e10b5d751682698445295] = optifine
+  backgroundnormal = resources\modpack\longbutton.png
+  height = 21
+}
+
+customization {
+  path = resources/modpack/tfg_logo.png
+  orientation = top-centered
+  x = -64
+  width = 337
+  actionid = 42dd916a-abff-466e-b503-d741019efc661682699289254
+  action = addtexture
+  y = 103
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:1600][req_id:68ee5fd0-ca5b-41b1-908a-b684d60127441682701654188] = 1919
+  [loading_requirement_group:1600] = [group_mode:and]
+  height = 116
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:1600][req_id:17685183-4f2f-4425-99cd-f364e45fe3241682703953191] = 1300
+}
+
+customization {
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:900][req_id:023ea79c-2678-4fe3-8759-8d9ad9aa3a941682701574887] = 1000
+  path = resources/modpack/tfg_logo.png
+  orientation = top-centered
+  x = -45
+  width = 312
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:900][req_id:99451fb3-adcd-45b5-9b99-55b2b697e23e1682701592987] = 1299
+  actionid = 9ae83ff6-c1f2-4038-a364-3002b54186701682699979298
+  action = addtexture
+  y = 50
+  [loading_requirement_group:900] = [group_mode:and]
+  height = 115
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ff1500
+  shadow = true
+  splashfilepath = resources/modpack/words/en_us.txt
+  rotation = 0.0
+  scale = 1.0
+  refresh = true
+  [loading_requirement_group:1600] = [group_mode:and]
+  bouncing = true
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:1600][req_id:6c242b61-3c08-4e3e-ae59-7158a64461371682703138749] = 1300
+  vanilla-like = false
+  x = 75
+  actionid = 081c22b4-ea51-4dd8-9bd6-b9ddd10f9bba1682699512648
+  action = addsplash
+  y = 182
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:1600][req_id:9c527efe-5f3c-4ffa-9c97-544e52632c721682703148300] = 1919
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ff1500
+  shadow = true
+  [loading_requirement_group:1280] = [group_mode:and]
+  splashfilepath = resources/modpack/words/en_us.txt
+  rotation = 0.0
+  scale = 1.0
+  refresh = true
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:1280][req_id:7deb5a53-0d14-4bd2-9b28-6d7a7406822d1682702344796] = 1000
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:1280][req_id:369aee77-3401-4861-a2fe-11b48a943c641682702361197] = 1300
+  bouncing = true
+  vanilla-like = false
+  x = 90
+  actionid = 7b5c9499-9abc-49a0-b577-9d5d309906191682699979298
+  action = addsplash
+  y = 120
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ff1500
+  shadow = true
+  splashfilepath = resources/modpack/words/en_us.txt
+  rotation = 0.0
+  scale = 1.0
+  refresh = true
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:900][req_id:269273e7-74ec-44c4-b37c-e7bc4f5420d31682703449895] = 1000
+  [loading_requirement:fancymenu_loading_requirement_is_window_width][requirement_mode:if][group:900][req_id:1f4a4476-022d-432b-9a50-7cb577b623811682703461044] = 760
+  bouncing = true
+  vanilla-like = false
+  x = 84
+  actionid = 7be6f52f-0333-4e2b-804c-2be9c6f8f9e61682700200156
+  action = addsplash
+  y = 69
+  [loading_requirement_group:900] = [group_mode:or]
+}
+
+customization {
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:900][req_id:cdff1e3a-6c56-451e-8555-833600d762e11682703357937] = 1000
+  path = resources/modpack/tfg_logo.png
+  orientation = top-centered
+  x = 18
+  width = 185
+  actionid = 6ba88b29-bf93-401a-af4a-18cdac6d8b0d1682700200156
+  action = addtexture
+  y = 13
+  [loading_requirement_group:900] = [group_mode:and]
+  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:900][req_id:55de22ed-d518-4827-9cce-0557158783b51682703369188] = 760
+  height = 80
+}
+
