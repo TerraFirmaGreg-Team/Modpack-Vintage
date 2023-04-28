@@ -75,7 +75,7 @@ jobs:
       - name: Deleting Client Resources extended
         run: |
           cd ./extended/overrides/
-          cat ../../buildtools/client_mod.txt | while read 'f'; do rm -rf "\$f\"; done
+          cat ../../buildtools/client_mod.txt | while read f; do rm -rf "$f"; done
           rm -rf resourcepacks resources shaderpacks
 
       - name: Archive Release Server normal
