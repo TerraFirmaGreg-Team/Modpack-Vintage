@@ -2,7 +2,7 @@ name: Deploy preview modpack
 on:
   push:
     tags:
-      - "Pre*.*.*"
+      - "Pre-*-R*.*.*"
 
 jobs:
   Deploy:
@@ -98,7 +98,7 @@ jobs:
           prerelease: true
           generate_release_notes: true
           name: Pre-Release ${{ steps.changelog_ru.outputs.version }}
-          # body: ${{ steps.changelog_ru.outputs.description }}
+          body: ${{ steps.changelog_ru.outputs.description }}
           files: |
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
