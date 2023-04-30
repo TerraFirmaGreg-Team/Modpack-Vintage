@@ -5,9 +5,7 @@
 	y: 0.0d,
 	description: "{tfg.quests.mv.steelalloys.subtitle}",
 	text: [
-		"{tfg.quests.mv.steelalloys.desc1}",
-		"",
-		"{tfg.quests.mv.steelalloys.desc2}"
+		"{tfg.quests.mv.steelalloys.desc1}"
 	],
 	dependencies: [
 		"b937f82b"

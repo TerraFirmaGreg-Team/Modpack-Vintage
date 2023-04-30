@@ -43,7 +43,7 @@ ofTime:0
 ofClearWater:true
 ofAaLevel:0
 ofAfLevel:1
-ofProfiler:true
+ofProfiler:false
 ofBetterSnow:true
 ofSwampColors:true
 ofRandomEntities:true

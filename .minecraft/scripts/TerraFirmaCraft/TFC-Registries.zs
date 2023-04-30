@@ -398,34 +398,34 @@ ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t2:*>, "HUGE", "VERY_H
 // Вес и размер
 ItemRegistry.registerItemSize(<galacticraftplanets:rocket_t3:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:venus_rover:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:venus_rover:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:mars_rover:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:mars_rover:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier4_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier5_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier6_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
-
-
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier7_rocket:*>, "HUGE", "VERY_HEAVY");
 
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier8_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
 
-// // Вес и размер
-// ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier9_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_rocket:*>, "HUGE", "VERY_HEAVY");
+
+// Вес и размер
+ItemRegistry.registerItemSize(<extraplanets:item_tier10_electric_rocket:*>, "HUGE", "VERY_HEAVY");
