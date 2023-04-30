@@ -1,0 +1,27 @@
+{
+	title: "{tfg.quests.primitive.primitive_bed.title}",
+	x: -28.75d,
+	y: 0.75d,
+	description: "{tfg.quests.primitive.primitive_bed.subtitle}",
+	text: [
+		""
+	],
+	dependencies: [
+		"a0c1903e"
+	],
+	tasks: [{
+		uid: "9d923601",
+		type: "item",
+		items: [{
+			item: "tfc:thatch"
+		}],
+		count: 2L
+	},
+	{
+		uid: "b4c79444",
+		type: "item",
+		items: [{
+			item: "tfc:hide/raw/large"
+		}]
+	}]
+}
