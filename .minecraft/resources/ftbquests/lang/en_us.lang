@@ -31,6 +31,9 @@ tfg.quests.primitive.salt.subtitle=&aFirst you need to make a wooden bucket, the
 tfg.quests.primitive.straw.title=Straw!
 tfg.quests.primitive.straw.subtitle=&aAlmost everything in the world in TFC is useful to us. Use your knife to destroy some tall grass, and get some Straw. Spend some time gathering a stack or two. You'll want a lot of it!
 
+tfg.quests.primitive.primitive_bed.title=Primitive bed
+tfg.quests.primitive.primitive_bed.subtitle=&aPlace two blocks of hay next to each other and right-click on them with a large skin
+
 tfg.quests.primitive.firestarter.subtitle=&aYour primitive lighter. Hold down the right mouse button on the block you want to ignite and release it at maximum tension. It may not work the first time!
 
 tfg.quests.primitive.stone_hoe.title=Stone Hoe!
