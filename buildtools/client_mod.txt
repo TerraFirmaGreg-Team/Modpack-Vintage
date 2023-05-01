@@ -30,3 +30,4 @@ mods/simplelogin-*
 mods/SmoothFont-*
 mods/SoundFilters-*
 mods/tfctowerheat-*
+mods/jsg-1.12.2-*
