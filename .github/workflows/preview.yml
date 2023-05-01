@@ -35,7 +35,7 @@ jobs:
           sed '1,16d' ./extended/manifest_temp.txt
           sed 1d ./extended/modlist_temp.html
           cat ./extended/modlist_extended.html ./extended/modlist_temp.html > ./extended/modlist.html
-          cat ./extended/manifest_extended.txt ./extended/manifest_temp.json > ./extended/manifest.json
+          cat ./extended/manifest_extended.json ./extended/manifest_temp.txt > ./extended/manifest.json
 
       - name: Set the version
         run: |
