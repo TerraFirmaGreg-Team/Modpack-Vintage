@@ -34,3 +34,4 @@ instance.cfg
 .minecraft/backups
 .minecraft/sl_password.txt
 .minecraft/optionsshaders.txt
+.minecraft/opframe_cache/

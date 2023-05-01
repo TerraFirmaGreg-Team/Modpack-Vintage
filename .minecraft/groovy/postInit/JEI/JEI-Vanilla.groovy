@@ -183,7 +183,6 @@ def removeAndHide = [
    item('minecraft:stone_button'),
    item('minecraft:trapdoor'),
    item('minecraft:reeds'),
-   item('minecraft:book'),
    item('minecraft:vine'),
    item('minecraft:waterlily'),
    item('minecraft:golden_horse_armor'),
@@ -199,6 +198,7 @@ def removeRecipe = [
    item('minecraft:bucket'),
    item('minecraft:enchanting_table'),
    item('minecraft:name_tag'),
+   item('minecraft:book'),
    // item('minecraft:daylight_detector'),
    // item('minecraft:comparator')
 ]
