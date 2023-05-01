@@ -2,7 +2,7 @@ name: Deploy preview modpack
 on:
   push:
     tags:
-      - "Pre-*-R*.*.*"
+      - "Pre*-R*.*.*"
 
 jobs:
   Deploy:
