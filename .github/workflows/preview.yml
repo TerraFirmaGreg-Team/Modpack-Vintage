@@ -68,13 +68,13 @@ jobs:
 
       - name: Deleting Client Resources normal
         run: |
-          cd ./overrides/mods/
+          cd ./overrides/
           while read -r line; do find ./mods -name "$line" -delete; done < ../buildtools/client_mod.txt
           rm -rf ./resourcepacks ./resources ./shaderpacks
 
       - name: Deleting Client Resources extended
         run: |
-          cd ./extended/overrides/mods/
+          cd ./extended/overrides/
           cat ../../buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
           rm -rf ./resourcepacks ./resources ./shaderpacks
 
