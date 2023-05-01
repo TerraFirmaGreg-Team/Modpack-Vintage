@@ -1,27 +1,51 @@
 # Changelog
 
-## [4.3.0] - 2023-??-??
+## [4.3.0] - 2023-05-01
 ### Исправления модпака
+- Теперь все те, кто еще играет на старых версиях сборки, 2.x.x и 3.x.x, начиная с этой версии, могут безопасно обновится, миры автоматически сами сконввертируются в новый формат без потери прогресса, но обратно вы уже не сможете вернуться.
+- Мелкие исправления в описании квестов.
+- Добавлен квест на примитивную кровать, который поможет новичкам.
+- Исправление главного меню, теперь не будет двойных лого при первом запуске.
+- Исправлен рецепт двери firmalife в assembler.
+- Некоторые моды были удалены, так как их функционал теперь есть в UniversalTweaks.
+- В какой раз исправлен баг с полетами к планетам на серверах.
+- Исправление текстур в TFG-Resourcepacks.
+- Что то еще, что мы сделали, но забыли.
 ### Обновление модов
 - CraftPresence
+- Fluid Craft for AE2
+- Appliedenergistics2
+- Carryon
+- CraftTweaker2
+- CustomSkinLoader_ForgeLegacy
+- ExtraPlanets
+- GregTech Food Option
+- Groovyscript
+- HadEnoughItems
+- Bogosorter
 - Fancymenu
+- JSG
+- Mixinbooter
+- Modularui
+- RenderLib
+- RoughlyEnoughIDs
+- Sledgehammer
+- UniversalTweaks
+- MovingElevators
+- LegendaryTooltips
 - GregicalityMultiblocks
 - GregTech
 - Supermartijn642corelib
 - TFGmod
 ### Новые моды
-- Aunis
+- File Director
 ### Удаленные моды
 - FantasticLib
 - NoAdvancements
 - Preventghost
 - Tips
 - Toast Control
-- Performant
-- Particleculling
-- EntityCulling
-- JSG
-- Modtweaker
+- ModDirector
 
 ## [4.2.8] - 2023-03-25
 ### Исправления модпака

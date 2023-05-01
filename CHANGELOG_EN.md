@@ -1,5 +1,52 @@
 # Changelog
 
+## [4.3.0] - 2023-05-01
+### Modpack fixes
+- Now all those who still play on the old versions of the assembly, 2.x.x and 3.x.x, starting from this version, can safely upgrade, the worlds will automatically convert to the new format without losing progress, but you will not be able to go back.
+- Minor corrections in the description of quests.
+- Added a quest for a primitive bed, which will help beginners.
+- Correction of the main menu, now there will be no double logos at the first start.
+- Fixed firmalife door recipe in assembler.
+- Some mods have been removed as their functionality is now in UniversalTweaks.
+- Fixed a bug with flights to planets on servers.
+- Fixed textures in TFG-Resourcepacks.
+- Something else that we did but forgot.
+### Update mods
+- CraftPresence
+- Fluid Craft for AE2
+- Appliedenergistics2
+- Carryon
+- CraftTweaker2
+- CustomSkinLoader_ForgeLegacy
+- ExtraPlanets
+- GregTech Food Option
+- Groovyscript
+- HadEnoughItems
+- Bogosorter
+- Fancymenu
+- JSG
+- Mixinbooter
+- Modularui
+- RenderLib
+- RoughlyEnoughIDs
+- Sledgehammer
+- UniversalTweaks
+- MovingElevators
+- LegendaryTooltips
+- GregicalityMultiblocks
+- GregTech
+- Supermartijn642corelib
+- TFGmod
+### New mods
+- File Director
+### Removed Mods
+- FantasticLib
+- NoAdvancements
+- Preventghost
+- Tips
+- Toast Control
+- ModDirector
+
 ## [4.2.8] - 2023-03-25
 ### Modpack fixes
 - Added PreventGhost mod that prevents (but completely) the creation of ghost blocks. When out of sync.
