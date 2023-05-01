@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.3.1] - 2023-05-01
+### Modpack fixes
+- Disabled "Force New Location" and "Auto Switch Tools" options
+### Update mods
+- Craft Presence
+- CustomSkinLoader_ForgeLegacy(downgrade)
+- Konkrete
+### Removed Mods
+- Entity Culling
+- RenderLib
+
 ## [4.3.0] - 2023-05-01
 ### Modpack fixes
 - Now all those who still play on the old versions of the assembly, 2.x.x and 3.x.x, starting from this version, can safely upgrade, the worlds will automatically convert to the new format without losing progress, but you will not be able to go back.
