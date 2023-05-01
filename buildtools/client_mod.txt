@@ -13,6 +13,7 @@ FpsReducer-*
 InventoryHUD-*
 ItemPhysic Lite *
 jetif-1.12.2-*
+jsg-1.12.2-*
 keywizard-1.12.2-*
 konkrete_forge_*
 LegendaryTooltips-1.12.2-*
@@ -24,10 +25,7 @@ particleculling-*
 phosphor-1.12.2-*
 RenderLib-1.12.2-*
 ResourceLoader-MC1.12.1-*
+simplelogin-*
 SmoothFont-mc1.12.2-*
 SoundFilters-*
 tfctowerheat-*
-Tips-1.12.2-*
-Toast Control-1.12.2-*
-simplelogin-*
-jsg-1.12.2-*

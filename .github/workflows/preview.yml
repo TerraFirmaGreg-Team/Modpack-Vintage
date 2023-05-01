@@ -33,7 +33,7 @@ jobs:
           cp -r ./modlist.html ./extended/modlist_temp.html
           cp -r ./manifest.json ./extended/manifest_temp.json
           sed 1d ./extended/modlist_temp.html
-          sed 1,16d ./extended/manifest_temp.json
+          sed '1,/files/d' ./extended/manifest_temp.json
           cat ./extended/modlist_extended.html ./extended/modlist_temp.html > ./extended/modlist.html
           cat ./extended/manifest_extended.json ./extended/manifest_temp.json > ./extended/manifest.json
 
@@ -69,7 +69,7 @@ jobs:
       - name: Deleting Client Resources normal
         run: |
           cd ./overrides/
-          while read -r line; do find ./mods -name "$line" -delete; done < ../buildtools/client_mod.txt
+          cat ../buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
           rm -rf ./resourcepacks ./resources ./shaderpacks
 
       - name: Deleting Client Resources extended
