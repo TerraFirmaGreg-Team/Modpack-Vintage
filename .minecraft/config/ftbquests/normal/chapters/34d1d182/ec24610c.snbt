@@ -8,7 +8,7 @@
 		uid: "606b7271",
 		type: "item",
 		items: [{
-			item: "planetprogression:item_satellite_rocket 1 1"
+			item: "galacticresearch:satellite_rocket"
 		}],
 		ignore_nbt: 1b
 	}]

@@ -8,7 +8,7 @@
 		uid: "3304b747",
 		type: "item",
 		items: [{
-			item: "planetprogression:telescope"
+			item: "galacticresearch:telescope"
 		}]
 	}]
 }

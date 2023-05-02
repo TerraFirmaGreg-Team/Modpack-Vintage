@@ -1,11 +1,10 @@
 {
 	icon: "galacticraftplanets:astro_miner",
-	x: 5.625d,
+	x: 5.25d,
 	y: 10.5d,
 	shape: "octagon",
-	hide_dependency_lines: true,
 	dependencies: [
-		"1da9f717"
+		"d6299dc5"
 	],
 	size: 1.5d,
 	tasks: [{

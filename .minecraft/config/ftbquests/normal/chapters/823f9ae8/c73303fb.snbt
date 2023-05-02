@@ -30,12 +30,12 @@
 				Parent: {
 					input: {
 						id: "minecraft:air",
-						Count: 1b,
+						Count: 1,
 						Damage: 0s
 					},
 					output: {
 						id: "minecraft:air",
-						Count: 1b,
+						Count: 1,
 						Damage: 0s
 					}
 				}

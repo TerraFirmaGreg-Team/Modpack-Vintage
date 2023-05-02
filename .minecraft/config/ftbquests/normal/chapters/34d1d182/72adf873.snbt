@@ -8,7 +8,7 @@
 		uid: "6eb77c30",
 		type: "item",
 		items: [{
-			item: "planetprogression:satellite_launcher"
+			item: "galacticresearch:launchpad_tower"
 		}]
 	}]
 }

@@ -8,7 +8,8 @@
 		uid: "ce9dfb9f",
 		type: "item",
 		items: [{
-			item: "planetprogression:satellite_module_basic"
+			id: "galacticresearch:mission_control_station",
+			tag: {}
 		}]
 	}]
 }

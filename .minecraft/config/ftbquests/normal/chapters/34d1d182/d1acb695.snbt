@@ -1,14 +1,14 @@
 {
 	x: 0.0d,
-	y: -0.25d,
+	y: 1.25d,
 	dependencies: [
-		"d1acb695"
+		"91b4a46b"
 	],
 	tasks: [{
-		uid: "b8708e8d",
+		uid: "58da280d",
 		type: "item",
 		items: [{
-			item: "galacticresearch:mining_rocket"
+			item: "galacticresearch:mining_rocket_schematic"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

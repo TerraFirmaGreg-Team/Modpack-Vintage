@@ -1,6 +1,6 @@
 {
 	title: "{tfg.quests.space.era.title}",
-	icon: "planetprogression:satellite_basic",
+	icon: "galacticresearch:probe",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"
