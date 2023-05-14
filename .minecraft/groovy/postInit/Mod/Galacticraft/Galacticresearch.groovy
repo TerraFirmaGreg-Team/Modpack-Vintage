@@ -13,7 +13,7 @@ if (isLoaded("galacticresearch")) {
          metaitem('plateDenseTin') * 4 
          metaitem('wafer.glowstone') * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2, 
-         metaitem('sensor.iv') * 3,
+         metaitem('sensor.iv'),
          item('galacticraftcore:telemetry'))
       .outputs(item('galacticresearch:mission_control_station'))
       .duration(200).EUt(2000).buildAndRegister()
@@ -36,7 +36,7 @@ if (isLoaded("galacticresearch")) {
    assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
-         metaitem('sensor.iv') * 3, 
+         metaitem('sensor.iv'), 
          metaitem('plateDenseAluminium') * 4,
          metaitem('plateDenseBronze') * 4 
          ore('craftingLensWhite') * 3, 

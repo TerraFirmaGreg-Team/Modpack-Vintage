@@ -42,7 +42,9 @@ crafting.addShaped("tfg/gc/machine/airlock_frame_controller", item('galacticraft
 
 // Вакумное стекло
 forming_press.recipeBuilder()
-   .inputs(metaitem('plateDenseAluminium') * 4, ore('blockGlass') * 5)
+   .inputs(
+      metaitem('plateDenseAluminium') * 4, 
+      ore('blockGlass') * 5)
    .outputs(item('galacticraftcore:space_glass_strong') * 5)
    .cleanroom(CleanroomType.CLEANROOM)
    .duration(300).EUt(480).buildAndRegister()
