@@ -29,3 +29,4 @@ simplelogin-*
 SmoothFont-mc1.12.2-*
 SoundFilters-*
 tfctowerheat-*
+OptionsEnforcer-*
