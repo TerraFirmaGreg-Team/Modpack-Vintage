@@ -35,3 +35,4 @@ instance.cfg
 .minecraft/sl_password.txt
 .minecraft/optionsshaders.txt
 .minecraft/opframe_cache/
+.minecraft/config/gregtech/terminal/

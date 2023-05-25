@@ -1,5 +1,5 @@
 
-if (isLoaded("aunis")) {
+if (isLoaded("jsg")) {
 
 	// --- Массивы
 

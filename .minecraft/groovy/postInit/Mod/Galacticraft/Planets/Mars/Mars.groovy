@@ -67,14 +67,14 @@ centrifuge.recipeBuilder()
    .chancedOutput(metaitem('dustSmallGold'), 650, 250)
    .duration(1250).EUt(512).buildAndRegister()
 
-// Dash --') пыль Dash
+// Dash --> пыль Dash
 macerator.recipeBuilder()
    .inputs(item('galacticraftplanets:mars:8'))
    .outputs(metaitem('dustDesh') * 7)
    .chancedOutput(metaitem('dustDesh'), 2500, 500)
    .duration(760).EUt(510).buildAndRegister()
 
-// Raw Dash --') пыль Dash
+// Raw Dash --> пыль Dash
 macerator.recipeBuilder()
    .inputs(item('galacticraftplanets:item_basic_mars'))
    .outputs(metaitem('dustSmallDesh') * 1)

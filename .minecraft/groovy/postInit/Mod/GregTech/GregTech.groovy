@@ -479,7 +479,7 @@ if (isLoaded("gregtech")) {
         .outputs(metaitem('dustNetherStar'))
         .duration(700).EUt(2000).buildAndRegister() 
     
-    // Ступка + Гравий -') Кремений
+    // Ступка + Гравий -> Кремений
     crafting.addShapeless(item('minecraft:flint'), [ore('toolMortar').transform(Function.setToolDamage), ore('gravel')])
     
     // Бронзовая пыль в TFC стиле
@@ -608,7 +608,7 @@ if (isLoaded("gregtech")) {
         .outputs(metaitem('brick.coke') * 2)
         .duration(175).EUt(7).buildAndRegister()
     
-    // Hevea -') Rubber
+    // Hevea -> Rubber
     centrifuge.recipeBuilder()
         .inputs(ore('rubberTrees'))
         .chancedOutput(metaitem('dustCarbon'), 2500, 600)
@@ -630,13 +630,13 @@ if (isLoaded("gregtech")) {
         .fluidOutputs(fluid('lava') * 750)
         .duration(220).EUt(140).buildAndRegister()
     
-    // Сахарный тростник --') целлюлоза
+    // Сахарный тростник --> целлюлоза
     forge_hammer.recipeBuilder()
         .inputs([ore('sugarcane') * 3])
         .outputs(metaitem('dustPaper') * 2)
         .duration(105).EUt(4).buildAndRegister()
     
-    // Песок + Гравий --') цемент тфк
+    // Песок + Гравий --> цемент тфк
     mixer.recipeBuilder()
         .inputs(ore('sand') * 4, ore('gravel') * 4)
         .outputs(item('tfc:aggregate') * 8)

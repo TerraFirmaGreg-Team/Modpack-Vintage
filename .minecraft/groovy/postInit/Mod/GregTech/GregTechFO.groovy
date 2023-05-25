@@ -219,7 +219,7 @@ if (isLoaded("gregtechfoodoption")) {
 		// 	.duration(225).EUt(1).buildAndRegister()
 	}
 	
-	// Flour -') Flat Dough
+	// Flour -> Flat Dough
 	for (int i = 0; i < arrayTFC.tfcFlatDoughs.size(); i++) {
 		mixer.recipeBuilder()
 			.inputs(
@@ -230,7 +230,7 @@ if (isLoaded("gregtechfoodoption")) {
 			.duration(400).EUt(2).buildAndRegister()
 	}
 	
-	// Flat Dough -') Dough
+	// Flat Dough -> Dough
 	for (int i = 0; i < arrayTFC.tfcDoughs.size(); i++) {
 		mixer.recipeBuilder()
 			.inputs(
@@ -624,7 +624,7 @@ if (isLoaded("gregtechfoodoption")) {
 	// 	.fluidOutputs([fluid('cider') * 100])
 	// 	.duration(150).EUt(2).buildAndRegister()
 	
-	// Cider -') Plant Ball
+	// Cider -> Plant Ball
 	distillation_tower.recipeBuilder()
 		.fluidInputs(fluid('cider') * 1000)
 		.outputs(metaitem('plant_ball'))

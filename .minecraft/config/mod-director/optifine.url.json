@@ -1,12 +1,12 @@
 {
-    "url": "http://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar",
+    "url": "https://optifine.net/downloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar&x=ec9d9b443816c6b0986d9529af62d92b",
     "follows": [
         "OptiFine 1.12.2 HD U G5"
     ],
     "metadata": {
         "side": "CLIENT"
     },
-    "fileName": "Optifine_1.12.2_HD_U_G5.jar",
+    "fileName": "preview_OptiFine_1.12.2_HD_U_G6_pre1.jar",
     "options": {
         "launchwrapperTweakerForceNext": true
     }

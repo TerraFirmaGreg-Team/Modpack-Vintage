@@ -2,10 +2,11 @@
   "packName": "TFG-New-Horizons",
   "packId": "tfg",
   "version": "4.3.0",
-  "debug": false,
+  "debug": true,
   "classes": [
     "postInit/Utility/Array/",
-    "postInit/Utility/Function.groovy"
+    "postInit/Utility/Function.groovy",
+    "postInit/Utility/CustomMaterials.groovy"
   ],
   "loaders": {
     "preInit": [
@@ -15,9 +16,10 @@
       "postInit/Utility/Array/",
       "postInit/Utility/Function.groovy",
       "postInit/Utility/Globals.groovy",
+      "postInit/Utility/CustomMaterials.groovy",
+      "postInit/Utility/",
       "postInit/OreDictionary/",
       "postInit/JEI/",
-      "postInit/Utility/",
       "postInit/"
     ]
   }

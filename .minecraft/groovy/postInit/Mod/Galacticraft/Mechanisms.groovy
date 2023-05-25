@@ -112,8 +112,8 @@ if (isLoaded("galacticraftcore")) {
    // Лазерная турель
    assembly_line.recipeBuilder()
       .inputs(
-         item('jsg:beamer_crystal_laser'),  
-         item('jsg:beamer_crystal_laser'),
+         // item('jsg:beamer_crystal_laser'),  
+         // item('jsg:beamer_crystal_laser'),
          item('galacticraftcore:space_glass_clear') * 6, 
          metaitem('hull.luv'),
          metaitem('sensor.luv') * 2,

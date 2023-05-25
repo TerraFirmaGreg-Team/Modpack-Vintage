@@ -14,7 +14,6 @@ FpsReducer-*
 InventoryHUD-*
 ItemPhysic Lite *
 jetif-1.12.2-*
-jsg-1.12.2-*
 keywizard-1.12.2-*
 konkrete_forge_*
 LegendaryTooltips-1.12.2-*

@@ -1,6 +1,6 @@
 
 
-if (isLoaded("galacticresearch")) {
+if (isLoaded("planetprogression")) {
 
    // --- Создание рецептов
 
@@ -9,7 +9,6 @@ if (isLoaded("galacticresearch")) {
       .circuitMeta(7)
       .inputs(
          ore('circuitIv'), 
-         metaitem('plateDenseAluminium') * 2,
          metaitem('plateDenseTin') * 4 
          metaitem('wafer.glowstone') * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2, 

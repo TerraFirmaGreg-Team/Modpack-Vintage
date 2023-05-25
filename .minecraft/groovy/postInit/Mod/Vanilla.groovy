@@ -209,27 +209,27 @@ mixer.recipeBuilder()
 	.outputs(item('minecraft:fermented_spider_eye'))
 	.duration(300).EUt(2).buildAndRegister()
 
-// Тростник -') Сахар
+// Тростник -> Сахар
 macerator.recipeBuilder()
 	.inputs(ore('sugarcane'))
 	.outputs(item('minecraft:sugar'))
 	.duration(300).EUt(2).buildAndRegister()
 
-// Тростник -') Бумага (Вода)
+// Тростник -> Бумага (Вода)
 chemical_bath.recipeBuilder()
 	.inputs(ore('sugarcane'))
 	.fluidInputs(fluid('water') * 100)
 	.outputs(item('minecraft:paper'))
 	.duration(100).EUt(7).buildAndRegister()
 
-// Тростник -') Бумага (Дист. Вода)
+// Тростник -> Бумага (Дист. Вода)
 chemical_bath.recipeBuilder()
 	.inputs(ore('sugarcane'))
 	.fluidInputs(fluid('distilled_water') * 100)
 	.outputs(item('minecraft:paper'))
 	.duration(100).EUt(7).buildAndRegister()
 
-// Саженцы -') Палки
+// Саженцы -> Палки
 lathe.recipeBuilder()
 	.inputs(ore('treeSapling'))
 	.outputs(
@@ -237,7 +237,7 @@ lathe.recipeBuilder()
 		metaitem('dustTinyWood'))
 	.duration(16).EUt(7).buildAndRegister()
 
-// Полублок -') Миска
+// Полублок -> Миска
 lathe.recipeBuilder()
 	.inputs(ore('slabWood'))
 	.outputs(
@@ -257,14 +257,14 @@ assembler.recipeBuilder()
 	.outputs(item('minecraft:dispenser'))
 	.duration(100).EUt(30).buildAndRegister()
 
-// Гравий -') Каменная пыль, Кремний
+// Гравий -> Каменная пыль, Кремний
 macerator.recipeBuilder()
 	.inputs(ore('gravel'))
 	.outputs(metaitem('dustStone'))
 	.chancedOutput(item('minecraft:flint'), 100, 100)
 	.duration(105).EUt(2).buildAndRegister()
 
-// Гравий -') Каменная пыль, Кремний
+// Гравий -> Каменная пыль, Кремний
 sifter.recipeBuilder()
 	.inputs(ore('gravel'))
 	.outputs(item('minecraft:flint'))
@@ -281,13 +281,13 @@ macerator.recipeBuilder()
 	.outputs(metaitem('dustMeat'), metaitem('dustTinyBone'))
 	.duration(105).EUt(2).buildAndRegister()
 
-// Коричневый гриб -') Метан
+// Коричневый гриб -> Метан
 centrifuge.recipeBuilder()
 	.inputs(ore('mushroombrown'))
 	.fluidOutputs(fluid('methane') * 18)
 	.duration(150).EUt(5).buildAndRegister()
 
-// Красный гриб -') Метан
+// Красный гриб -> Метан
 centrifuge.recipeBuilder()
 	.inputs(ore('mushroomRed'))
 	.fluidOutputs(fluid('methane') * 18)
@@ -322,7 +322,7 @@ macerator.recipeBuilder()
 	.outputs(item('tfc:dirt/basalt'))
 	.duration(300).EUt(2).buildAndRegister()
 
-// Кварцитовый песок -') Алмазы и тд.
+// Кварцитовый песок -> Алмазы и тд.
 centrifuge.recipeBuilder()
 	.inputs(item('tfc:sand/quartzite'))
 	.chancedOutput(metaitem('dustTinyDiamond'), 100, 100)
@@ -330,14 +330,14 @@ centrifuge.recipeBuilder()
 	.chancedOutput(item('tfc:sand/basalt'), 5000, 5000)
 	.duration(275).EUt(30).buildAndRegister()
 
-// Нефтеносные пески -') Базальтовый песок, Нефть 
+// Нефтеносные пески -> Базальтовый песок, Нефть 
 centrifuge.recipeBuilder()
 	.inputs(ore('oreOilsands'))
 	.chancedOutput(item('tfc:sand/basalt'), 5000, 5000)
 	.fluidOutputs(fluid('oil') * 500)
 	.duration(200).EUt(5).buildAndRegister()
 
-// Песок -') Кварцитовая пыль
+// Песок -> Кварцитовая пыль
 macerator.recipeBuilder()
 	.inputs(ore('sand'))
 	.outputs(metaitem('dustQuartzSand'))

@@ -45,7 +45,7 @@ public class Function {
 
   static GenerateRecipesForSurfaceStones3(surface, sub_surface, stone, output, durationMulti, euMulti) {
 
-    // Поверхность --') Пыль х1
+    // Поверхность --> Пыль х1
     mods.gregtech.macerator.recipeBuilder()
         .inputs(surface * 3)
         .outputs(output)
@@ -56,7 +56,7 @@ public class Function {
         .EUt(240 * GTValues.VA[euMulti])
         .buildAndRegister()
 
-    // Подповерхность --') х2
+    // Подповерхность --> х2
     mods.gregtech.macerator.recipeBuilder()
         .inputs(sub_surface * 3)
         .outputs(output)
@@ -67,7 +67,7 @@ public class Function {
         .EUt(240 * GTValues.VA[euMulti])
         .buildAndRegister()
 
-    // Порода --') Пыль х3
+    // Порода --> Пыль х3
     mods.gregtech.macerator.recipeBuilder()
         .inputs(stone  * 3)
         .outputs(output)
@@ -81,7 +81,7 @@ public class Function {
 
   static GenerateRecipesForSurfaceStones2(surface, sub_surface, output, durationMulti, euMulti) {
 
-    // Поверхность --') Пыль х1
+    // Поверхность --> Пыль х1
       mods.gregtech.macerator.recipeBuilder()
         .inputs(surface * 3)
         .outputs(output)
@@ -92,7 +92,7 @@ public class Function {
         .EUt(240 * GTValues.VA[euMulti])
         .buildAndRegister()
 
-    // Подповерхность --') х2
+    // Подповерхность --> х2
     mods.gregtech.macerator.recipeBuilder()
         .inputs(sub_surface * 3)
         .outputs(output)
@@ -106,7 +106,7 @@ public class Function {
 
   static GenerateRecipesForSurfaceStones1(surface, output, durationMulti, euMulti) {
 
-    // Поверхность --') Пыль х1
+    // Поверхность --> Пыль х1
     mods.gregtech.macerator.recipeBuilder()
         .inputs(surface * 3)
         .outputs(output)

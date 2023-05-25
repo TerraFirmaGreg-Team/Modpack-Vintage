@@ -6,7 +6,7 @@ if (isLoaded("hgp")) {
 
     // --- Создание рецептов
     
-    // Чистая панель -') Чистая горизонтальная панель
+    // Чистая панель -> Чистая горизонтальная панель
     crafting.addShapeless(item('hgp:hgppane'), [item('minecraft:glass_pane')])
     assembler.recipeBuilder()
     	.circuitMeta(20)
@@ -14,7 +14,7 @@ if (isLoaded("hgp")) {
     	.outputs(item('hgp:hgppane'))
     	.duration(16).EUt(2).buildAndRegister()
     
-    // Крашенная панель 1х -') 1 Крашенная горизонтальная панель 1х
+    // Крашенная панель 1х -> 1 Крашенная горизонтальная панель 1х
     for (int i = 0; i < arrayHGP.horizontalGlassPanes.size(); i++) {
         // Верстак
         crafting.addShapeless(arrayHGP.horizontalGlassPanes[i], [arrayVanila.glassPanes[i]])
