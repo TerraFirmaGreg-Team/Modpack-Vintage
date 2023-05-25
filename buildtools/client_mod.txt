@@ -1,6 +1,7 @@
 AmbientSounds_*
 betterchat-*
 BetterFoliage-*
+Blur-*
 ChunkAnimator-*
 CraftPresence-*
 CustomLoadingScreen-*
@@ -21,6 +22,7 @@ mod-director-launchwrapper-*
 moreoverlays-*
 MouseTweaks-*
 OptiFine_*
+OptionsEnforcer-*
 particleculling-*
 phosphor-1.12.2-*
 RenderLib-1.12.2-*
@@ -29,4 +31,3 @@ simplelogin-*
 SmoothFont-mc1.12.2-*
 SoundFilters-*
 tfctowerheat-*
-OptionsEnforcer-*
