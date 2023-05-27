@@ -1,15 +1,42 @@
 # Changelog
 
-## [4.3.1] - 2023-05-01
+## [4.3.1] - 2023-05-27
 ### Modpack fixes
 - Disabled "Force New Location" and "Auto Switch Tools" options
+- The Stargate mod has been removed, while it makes no sense to use it in a modpack, without the GT GCYS addon, if anyone wants to use it, you can put it, the scripts remain.
+- Replaced mod for planetary exploration.
+- Disabled automatic download of Optifine in the version of CurseForge, on weak PCs it can increase the number of FPS.
+- Many small optimizations.
 ### Update mods
 - Craft Presence
 - CustomSkinLoader_ForgeLegacy(downgrade)
 - Konkrete
-### Removed Mods
+- TFG mod
+- Fluid Craft for AE2
+- AE2
+- Censoredasm
+- GreekityMultiblocks
+- Gregtech
+- HadEnoughItems
+- Little Tiles
+- Modularui
+- Moving elevators
+- OpenComputers
+- Supermartijn642corelib
+- Universal Tweaks
+- Weather2Remastered
+- CraftTweaker2
+### New mods
+- Galactic Research
+- OptionsEnforcer
+### Removed mods
 - Entity Culling
 - RenderLib
+- JSG
+- AsmodeusCore
+- default options
+- Mod director
+- PlanetProgression
 
 ## [4.3.0] - 2023-05-01
 ### Modpack fixes

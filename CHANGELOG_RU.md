@@ -1,15 +1,42 @@
 # Changelog
 
-## [4.3.1] - 2023-05-01
+## [4.3.1] - 2023-05-27
 ### Исправления модпака
 - Отключены опции "Force New Location" и "Auto Switch Tools"
+- Удален мод на Звездные врата, пока нет смысла его использовать в модпаке, без аддона GT GCYS, если кто захочет его использовать, можете поставить, скрипты остались.
+- Заменен мод на иследования планет.
+- Отключено автоматическое скачивание Optifine в версии CurseForge, на слабых пк может увеличть колличество FPS.
+- Много небольших оптимизаций.
 ### Обновление модов
 - CraftPresence
 - CustomSkinLoader_ForgeLegacy(downgrade)
 - Konkrete
+- TFG-mod
+- Fluid Craft for AE2
+- AE2
+- Censoredasm
+- GregicalityMultiblocks
+- Gregtech
+- HadEnoughItems
+- LittleTiles
+- Modularui
+- Movingelevators
+- OpenComputers
+- Supermartijn642corelib
+- UniversalTweaks
+- Weather2Remastered
+- CraftTweaker2
+### Новые моды
+- GalacticResearch
+- OptionsEnforcer
 ### Удаленные моды
 - EntityCulling
 - RenderLib
+- JSG
+- AsmodeusCore
+- DefaultOptions
+- Mod-director
+- PlanetProgression
 
 ## [4.3.0] - 2023-05-01
 ### Исправления модпака

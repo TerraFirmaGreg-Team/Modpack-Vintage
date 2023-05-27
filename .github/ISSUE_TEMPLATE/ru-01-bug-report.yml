@@ -3,13 +3,22 @@ description: Сообщите об ошибке, когда что-то рабо
 labels: [ "status: unverified", "type: bug" ]
 body:
   - type: dropdown
-    id: version
+    id: type_version
     attributes:
       label: Тип используемого модпака
       description: Удостоверьтесь что у вас последняя версия
       options:
         - "Default"
         - "Extended"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Вы используете последнюю доступную версию?
+      description: Если нет, обновите.
+      options:
+        - "Yes"
     validations:
       required: true
   - type: input

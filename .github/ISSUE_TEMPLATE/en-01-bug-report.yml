@@ -3,13 +3,22 @@ description: Report a bug where something is not working as expected, which does
 labels: [ "status: unverified", "type: bug" ]
 body:
   - type: dropdown
-    id: version
+    id: type_version
     attributes:
-      label: Version modpack Used
+      label: Type modpack Used
       description: Where the game crashed.
       options:
         - "Default"
         - "Extended"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Are you using the latest available version?
+      description: If not, update.
+      options:
+        - "Yes"
     validations:
       required: true
   - type: input
