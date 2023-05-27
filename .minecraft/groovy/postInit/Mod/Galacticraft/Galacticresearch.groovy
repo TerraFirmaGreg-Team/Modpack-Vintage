@@ -1,6 +1,6 @@
 
 
-if (isLoaded("planetprogression")) {
+if (isLoaded("galacticresearch")) {
 
    // --- Создание рецептов
 
@@ -9,7 +9,7 @@ if (isLoaded("planetprogression")) {
       .circuitMeta(7)
       .inputs(
          ore('circuitIv'), 
-         metaitem('plateDenseTin') * 4 
+         metaitem('plateDenseTin') * 4,
          metaitem('wafer.glowstone') * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2, 
          metaitem('sensor.iv'),
@@ -37,7 +37,7 @@ if (isLoaded("planetprogression")) {
       .inputs(
          metaitem('sensor.iv'), 
          metaitem('plateDenseAluminium') * 4,
-         metaitem('plateDenseBronze') * 4 
+         metaitem('plateDenseBronze') * 4,
          ore('craftingLensWhite') * 3, 
          ore('circuitEv') * 2, 
          metaitem('sensor.ev') * 2,
@@ -88,6 +88,6 @@ if (isLoaded("planetprogression")) {
       .inputs(metaitem('crate.steel'))
       .fluidInputs(fluid('soldering_alloy') * 9216)
       .fluidInputs(fluid('lead') * 4608)
-      .outputs(item('galacticresearch:satellite_rocket'))
+      .outputs(item('galacticresearch:mining_rocket'))
       .duration(300).EUt(4000).buildAndRegister()
 }

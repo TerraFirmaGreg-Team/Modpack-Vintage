@@ -1,23 +1,21 @@
 
 
-if (isLoaded("planetprogression")) {
+if (isLoaded("galacticresearch")) {
 
 	// --- Массивы
 
 	def hideCategory = [
-	    "galacticresearchsatellite",
-	    "galacticresearchmining"
+
 	]
 	
 	def removeAndHide = [
-		item('planetprogression:telescope_fake_block'),
-	   	item('planetprogression:block_multi'),
-		item('planetprogression:satellite_builder'),
-		item('planetprogression:advanced_launch_pad_full')
 	]
 	
 	def removeRecipe = [
-		item('galacticresearch:probe')
+		item('galacticresearch:mission_control_station'),
+		item('galacticresearch:launchpad_tower'),
+		item('galacticresearch:probe'),
+		item('galacticresearch:telescope')
 	]
 	
 	// --- Удаление рецептов
