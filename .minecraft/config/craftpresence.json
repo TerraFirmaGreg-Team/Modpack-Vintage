@@ -1,6 +1,7 @@
 {
   "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
-  "_schemaVersion": 3,
+  "_SOURCE": "https://gitlab.com/CDAGaming/CraftPresence",
+  "_schemaVersion": 5,
   "_lastMCVersionId": 340,
   "generalSettings": {
     "detectATLauncherInstance": true,
@@ -11,7 +12,7 @@
     "detectBiomeData": true,
     "detectDimensionData": true,
     "detectWorldData": true,
-    "clientId": "1034886132774731786",
+    "clientId": "450485984333660181",
     "defaultIcon": "grass",
     "enableJoinRequests": false,
     "partyPrivacyLevel": 1,
@@ -20,7 +21,7 @@
     "autoRegister": false
   },
   "biomeSettings": {
-    "fallbackBiomeIcon": "tfg_logo",
+    "fallbackBiomeIcon": "unknown",
     "biomeData": {
       "default": {
         "textOverride": "Playing in {biome.name}",
@@ -46,7 +47,7 @@
     }
   },
   "dimensionSettings": {
-    "fallbackDimensionIcon": "tfg_logo",
+    "fallbackDimensionIcon": "unknown",
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}",
@@ -72,9 +73,9 @@
     }
   },
   "serverSettings": {
-    "fallbackServerIcon": "tfg_logo",
-    "fallbackServerName": "TFG Server",
-    "fallbackServerMotd": "TerraFirmaGreg Server",
+    "fallbackServerIcon": "default",
+    "fallbackServerName": "Minecraft Server",
+    "fallbackServerMotd": "A Minecraft Server",
     "serverData": {
       "default": {
         "textOverride": "Playing on {server.motd.raw}",
@@ -102,7 +103,6 @@
   "statusMessages": {
     "mainMenuData": {
       "textOverride": "In the Main Menu",
-      "iconOverride": "tfg_logo",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -124,7 +124,6 @@
     },
     "loadingData": {
       "textOverride": "Loading...",
-      "iconOverride": "tfg_logo",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -146,7 +145,6 @@
     },
     "lanData": {
       "textOverride": "Playing on a LAN Server",
-      "iconOverride": "tfg_logo",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -168,7 +166,6 @@
     },
     "singleplayerData": {
       "textOverride": "Playing Singleplayer",
-      "iconOverride": "tfg_logo",
       "data": {
         "enabled": true,
         "useAsMain": false,
@@ -202,7 +199,7 @@
     "includeExtraGuiClasses": false,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
-      "fallbackGuiIcon": "tfg_logo",
+      "fallbackGuiIcon": "unknown",
       "guiData": {
         "default": {
           "textOverride": "In {screen.name}",
@@ -231,7 +228,7 @@
       "default": "Holding {item.message.holding}"
     },
     "entitySettings": {
-      "fallbackEntityIcon": "tfg_logo",
+      "fallbackEntityIcon": "unknown",
       "targetData": {
         "default": {
           "textOverride": "Targeting {entity.target.name}",
@@ -280,47 +277,95 @@
       }
     },
     "allowEndpointIcons": true,
-    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address != null ? server.address : server.address.raw}",
-    "playerSkinEndpoint": "https://mc-heads.net/avatar/{player.uuid.short != null ? player.uuid.short : player.name}"
+    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
+    "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}"
   },
   "accessibilitySettings": {
-    "tooltipBackgroundColor": "0xF0100010",
-    "tooltipBorderColor": "0x505000FF",
-    "guiBackgroundColor": "minecraft:textures/gui/options_background.png",
-    "buttonBackgroundColor": "minecraft:textures/gui/widgets.png",
+    "tooltipBackground": {
+      "start": {
+        "red": 16,
+        "green": 0,
+        "blue": 16,
+        "alpha": 240
+      }
+    },
+    "tooltipBorder": {
+      "start": {
+        "red": 80,
+        "green": 0,
+        "blue": 255,
+        "alpha": 80
+      },
+      "end": {
+        "red": 40,
+        "green": 0,
+        "blue": 127,
+        "alpha": 80
+      }
+    },
+    "guiBackground": {
+      "start": {
+        "red": 64,
+        "green": 64,
+        "blue": 64,
+        "alpha": 255
+      },
+      "texLocation": "minecraft:textures/gui/options_background.png"
+    },
+    "worldGuiBackground": {
+      "start": {
+        "red": 16,
+        "green": 16,
+        "blue": 16,
+        "alpha": 192
+      },
+      "end": {
+        "red": 16,
+        "green": 16,
+        "blue": 16,
+        "alpha": 208
+      }
+    },
+    "buttonBackground": {
+      "start": {
+        "red": 255,
+        "green": 255,
+        "blue": 255,
+        "alpha": 255
+      },
+      "texLocation": "minecraft:textures/gui/widgets.png"
+    },
     "languageId": "en_us",
-    "showBackgroundAsDark": true,
     "stripTranslationColors": false,
     "showLoggingInChat": false,
     "stripExtraGuiElements": false,
-    "configKeyCode": ""
+    "configKeyCode": 41
   },
   "displaySettings": {
     "presenceData": {
       "enabled": true,
       "useAsMain": false,
-      "details": "{menu.message != null ? menu.message : (dimension.message != null ? dimension.message : '')}",
-      "gameState": "{server.message != null ? server.message : ''}",
-      "largeImageKey": "{menu.icon != null ? menu.icon : (dimension.icon != null ? dimension.icon : '')}",
-      "largeImageText": "{menu.message != null ? menu.message : (dimension.message != null ? dimension.message : '')}",
-      "smallImageKey": "{server.icon != null ? server.icon : (pack.name != null ? pack.name : '')}",
-      "smallImageText": "{server.message != null ? server.message : ''} {pack.name != null ? pack.name : ''}",
+      "details": "{getFirst(menu.message, dimension.message)}",
+      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
+      "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
+      "largeImageText": "{getFirst(menu.message, dimension.message)}",
+      "smallImageKey": "{getFirst(server.icon, pack.icon)}",
+      "smallImageText": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
       "startTimestamp": "{data.general.time}",
       "endTimestamp": "",
       "buttons": {
         "default": {
-          "label": "Discord",
-          "url": "https://discord.gg/y4khKF9zjT"
+          "label": "Example Text",
+          "url": "https://google.com"
         }
       }
     },
     "dynamicIcons": {
-      "default": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/.minecraft/resources/modpack/icons/icon.png?raw=true",
-      "tfg_logo": "https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/.minecraft/resources/modpack/icons/icon.png?raw=true",
+      "default": "https://via.placeholder.com/256.png",
       "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
     },
     "dynamicVariables": {
-      "default": "Discord",
+      "default": "Example Text",
       "mods": "{general.mods} Mod(s)",
       "player_info_coordinate": "At {player.position.x}, {player.position.z}",
       "players": "{server.players.current} / {server.players.max} Players",
