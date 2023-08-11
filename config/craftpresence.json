@@ -4,12 +4,12 @@
   "_schemaVersion": 6,
   "_lastMCVersionId": 340,
   "generalSettings": {
-    "detectATLauncherInstance": true,
-    "detectCurseManifest": true,
-    "detectMultiMCManifest": true,
-    "detectMCUpdaterInstance": true,
-    "detectTechnicPack": true,
-    "detectBiomeData": true,
+    "detectATLauncherInstance": false,
+    "detectCurseManifest": false,
+    "detectMultiMCManifest": false,
+    "detectMCUpdaterInstance": false,
+    "detectTechnicPack": false,
+    "detectBiomeData": false,
     "detectDimensionData": true,
     "detectWorldData": true,
     "clientId": "750607394895298570",
@@ -156,7 +156,6 @@
     },
     "languageId": "en_us",
     "stripTranslationColors": false,
-    "showLoggingInChat": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
     "configKeyCode": 41
@@ -165,8 +164,8 @@
     "presenceData": {
       "enabled": true,
       "useAsMain": false,
-      "details": "New Horizons",
-      "gameState": "{getFirst(menu.message, dimension.message)}",
+      "details": "{getFirst(menu.message, dimension.message)}",
+      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
       "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
       "largeImageText": "{getFirst(menu.message, dimension.message)}",
       "smallImageKey": "{getFirst(server.icon, pack.icon)}",
@@ -182,8 +181,7 @@
     },
     "dynamicIcons": {
       "default": "https://via.placeholder.com/256.png",
-      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51",
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
+      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51"
     },
     "dynamicVariables": {
       "default": "Example Text",
