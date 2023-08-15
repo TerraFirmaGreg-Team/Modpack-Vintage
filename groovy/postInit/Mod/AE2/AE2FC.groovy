@@ -5,7 +5,7 @@ if (isLoaded("ae2fc")) {
 // --- Добавление рецептов
 
 // Fluid pattern encoder
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     metaitem('plateDenseIron') * 8, 
@@ -17,7 +17,7 @@ assembler.recipeBuilder()
   .duration(20).EUt(480).buildAndRegister()
 
 // Fluid discretizer
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('appliedenergistics2:condenser'), 
@@ -29,7 +29,7 @@ assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Fluid packet decoder
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     metaitem('fluid_filter') * 3, 
@@ -41,7 +41,7 @@ assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Ingredient buffer
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('appliedenergistics2:material:54') * 3, 
@@ -54,7 +54,7 @@ assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Fluid packet decoder
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     metaitem('fluid_filter') * 2, 
@@ -66,7 +66,7 @@ assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Fluid pattern ex terminal
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('ae2fc:part_fluid_pattern_terminal') * 2, 
@@ -77,7 +77,7 @@ assembler.recipeBuilder()
   .duration(10).EUt(880).buildAndRegister()
 
 // Fluid pattern terminal
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('appliedenergistics2:part:340'), 
@@ -88,7 +88,7 @@ assembler.recipeBuilder()
   .duration(10).EUt(480).buildAndRegister()
 
 // Fluid level maintainer
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('appliedenergistics2:crafting_monitor'), 
@@ -100,7 +100,7 @@ assembler.recipeBuilder()
   .duration(10).EUt(480).buildAndRegister()
 
 // Large ingredient buffer
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('ae2fc:ingredient_buffer') * 4, 
@@ -111,7 +111,7 @@ assembler.recipeBuilder()
 
 // Dual interface
 crafting.addShapeless("tfg/ae2fc/dual_interface", item('ae2fc:dual_interface'), [item('ae2fc:part_dual_interface')])
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
     item('appliedenergistics2:fluid_interface'), 
@@ -123,7 +123,7 @@ assembler.recipeBuilder()
   crafting.addShapeless(item('appliedenergistics2:material:52'), [item('ae2fc:dense_encoded_pattern')])
 
 // Жидкостный сборщик
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs([
     ore('paneGlassColorless') * 2,
     ore('circuitHv') * 2,

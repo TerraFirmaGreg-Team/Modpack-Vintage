@@ -5,7 +5,7 @@ if (isLoaded("planetprogression")) {
    // --- Создание рецептов
 
    // Satellite controller
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          item('planetprogression:satellite_basic') * 2, 
@@ -17,7 +17,7 @@ if (isLoaded("planetprogression")) {
       .duration(200).EUt(2000).buildAndRegister()
 
    // Satellite launcher
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          item('galacticraftcore:basic_item:19') * 2, 
@@ -28,7 +28,7 @@ if (isLoaded("planetprogression")) {
       .duration(150).EUt(2000).buildAndRegister()
 
    // Базовый модуль спутника
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          ore('circuitEv') * 2, 
@@ -39,7 +39,7 @@ if (isLoaded("planetprogression")) {
       .duration(150).EUt(2000).buildAndRegister()
 
    // Dish keycard
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          metaitem('sensor.iv') * 3, 
@@ -50,7 +50,7 @@ if (isLoaded("planetprogression")) {
       .duration(200).EUt(1700).buildAndRegister()
 
    // Telescope
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          metaitem('sensor.iv') * 3, 

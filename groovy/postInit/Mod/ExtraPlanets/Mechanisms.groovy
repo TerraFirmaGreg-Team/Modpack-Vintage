@@ -58,7 +58,7 @@ if (isLoaded("extraplanets")) {
       [metaitem('plateDenseDesh'), ore('batteryIv'), metaitem('plateDenseDesh')]])
 
    // Блок базового обеззараживателя
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .inputs(
          item('extraplanets:tools:3') * 6,
          item('extraplanets:iodide_salt') * 14,

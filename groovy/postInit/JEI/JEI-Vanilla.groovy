@@ -325,3 +325,11 @@ mods.gregtech.assembler.removeByInput(1, [item('minecraft:redstone') * 4, item('
 
 // Glowstone Dust * 4
 mods.gregtech.macerator.removeByInput(2, [item('minecraft:redstone_lamp')], null)
+
+// Heavy Oil * 2000
+mods.gregtech.centrifuge.removeByInput(30, [item('gregtech:ore_oilsands_0')], null)
+mods.gregtech.centrifuge.removeByInput(30, [item('minecraft:mycelium')], null)
+// Helium * 120
+mods.gregtech.centrifuge.removeByInput(20, [metaitem('dustEndstone')], null)
+// Oil * 80
+mods.gregtech.centrifuge.removeByInput(80, [item('minecraft:soul_sand')], null)

@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayGC
+import classes.Array.arrayGC
 
 
 if (isLoaded("galacticraftcore")) {

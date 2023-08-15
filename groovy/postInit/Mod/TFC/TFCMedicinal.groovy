@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayTFCM
+import classes.Array.arrayTFCM
 
 
 if (isLoaded("tfcmedicinal")) {

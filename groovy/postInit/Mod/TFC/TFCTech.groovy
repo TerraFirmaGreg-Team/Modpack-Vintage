@@ -1,4 +1,4 @@
-import postInit.Utility.Function
+import classes.Function
 
 
 if (isLoaded("tfctech")) {

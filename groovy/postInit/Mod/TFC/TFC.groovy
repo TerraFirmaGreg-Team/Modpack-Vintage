@@ -1,7 +1,7 @@
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayTFC
-import postInit.Utility.Array.arrayGT
-import postInit.Utility.Function
+import classes.Array.arrayVanila
+import classes.Array.arrayTFC
+import classes.Array.arrayGT
+import classes.Function
 
 
 if (isLoaded("tfc")) {
@@ -75,7 +75,7 @@ if (isLoaded("tfc")) {
 	
 	// Кирпичи -> Блоки кирпичей
 	for (int i = 0; i < arrayTFC.tfcBricksBlock.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(4)
 		    .inputs(arrayTFC.tfcBricksItem[i] * 4)
 			.fluidInputs(fluid('concrete') * 100)
@@ -85,7 +85,7 @@ if (isLoaded("tfc")) {
 	
 	// Кирпичи из грязи -> Блоки кирпичей
 	for (int i = 0; i < arrayTFC.tfcMudBricksItem.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(4)
 		    .inputs(arrayTFC.tfcMudBricksItem[i] * 4)
 			.fluidInputs(fluid('concrete') * 100)
@@ -103,7 +103,7 @@ if (isLoaded("tfc")) {
 	
 	// Булыжник -> Ступенька
 	for (int i = 0; i < arrayTFC.tfcCobbles.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(7)
 			.inputs(arrayTFC.tfcCobbles[i] * 6)
 			.outputs(arrayTFC.tfcStairsCobble[i] * 16)
@@ -120,7 +120,7 @@ if (isLoaded("tfc")) {
 	
 	// Кирпичи -> Ступенька
 	for (int i = 0; i < arrayTFC.tfcBricksBlock.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(7)
 			.inputs(arrayTFC.tfcBricksBlock[i] * 6)
 			.outputs(arrayTFC.tfcStairsBricks[i] * 16)
@@ -137,7 +137,7 @@ if (isLoaded("tfc")) {
 	
 	// Гладкий блок -> Ступенька
 	for (int i = 0; i < arrayTFC.tfcSmooths.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcSmooths[i] * 6)
 			.circuitMeta(7)
 			.outputs(arrayTFC.tfcStairsSmooth[i] * 16)
@@ -154,7 +154,7 @@ if (isLoaded("tfc")) {
 	
 	// Сырой блок -> Ступенька
 	for (int i = 0; i < arrayTFC.tfcRaws.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcRaws[i] * 6)
 			.circuitMeta(7)
 			.outputs(arrayTFC.tfcRawStairs[i] * 16)
@@ -171,7 +171,7 @@ if (isLoaded("tfc")) {
 	
 	// Кирпичи из грязи -> Ступенька
 	for (int i = 0; i < arrayTFC.tfcMudBricksBlock.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcMudBricksBlock[i] * 6)
 			.circuitMeta(7)
 			.outputs(arrayTFC.tfcMudBricksStairs[i])
@@ -180,7 +180,7 @@ if (isLoaded("tfc")) {
 	
 	// Сырой камень -> Нажимные каменные пластины
 	for (int i = 0; i < arrayTFC.tfcRaws.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcRaws[i] * 2, 
 	            metaitem('springIron'))
@@ -200,7 +200,7 @@ if (isLoaded("tfc")) {
 	for (int i = 0; i == 83 < arrayTFC.tfcLumber.size(); i++) {
 	// Бочки
 	    // if (i != 83 .. 107) {
-			assembler.recipeBuilder()
+			mods.gregtech.assembler.recipeBuilder()
 	            .circuitMeta(15)
 				.inputs(arrayTFC.tfcLumber[i] * 7)
 				.outputs(arrayTFC.tfcBarrels[i])
@@ -296,28 +296,28 @@ if (isLoaded("tfc")) {
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Пиломатериалы -> Доски
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcLumber[i] * 4)
 			.circuitMeta(3)
 			.outputs(arrayTFC.tfcPlanks[i])
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Доски -> Полу-блоки
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcPlanks[i])
 			.circuitMeta(6)
 			.outputs(arrayTFC.tfcSlabs[i] * 2)
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Доски -> Ступеньки
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcPlanks[i] * 6)
 			.circuitMeta(7)
 			.outputs(arrayTFC.tfcStairs[i] * 16)
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Доски -> Нажимные деревянные пластины
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcPlanks[i] * 2, 
 	            metaitem('springIron'))
@@ -326,7 +326,7 @@ if (isLoaded("tfc")) {
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Доски -> Забор
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcPlanks[i] * 2, 
 	            item('minecraft:stick') * 2)
@@ -335,7 +335,7 @@ if (isLoaded("tfc")) {
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Доски -> Калитка
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcPlanks[i] * 2, 
 	            item('minecraft:stick') * 3)
@@ -355,7 +355,7 @@ if (isLoaded("tfc")) {
 	
 	// Бревна -> Забор из бревен
 	for (int i = 0; i < arrayTFC.tfcFenceLog.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(1)
 			.inputs(
 				arrayTFC.tfcLogs[i + 83] * 2, 
@@ -367,7 +367,7 @@ if (isLoaded("tfc")) {
 	for (int i = 0; i < arrayTFC.tfcLogs.size(); i++) {
 	
 	// Бревна -> Калитка из бревен
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 				arrayTFC.tfcLogs[i] * 2, 
 				item('minecraft:stick') * 3)
@@ -376,7 +376,7 @@ if (isLoaded("tfc")) {
 			.duration(200).EUt(7).buildAndRegister()
 	
 	// Бревна -> Опоры
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(7)
 			.inputs(arrayTFC.tfcLogs[i] * 2)
 			.outputs(arrayTFC.tfcSupports[i] * 16)
@@ -386,14 +386,14 @@ if (isLoaded("tfc")) {
 	for (int i = 0; i < arrayTFC.tfcLumber.size(); i++) {
 	
 	// Двери
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(8)
 			.inputs(arrayTFC.tfcLumber[i] * 6)
 			.outputs(arrayTFC.tfcDoors[i] * 2)
 			.duration(350).EUt(4).buildAndRegister()
 	
 	// Люки
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(9)
 			.inputs(arrayTFC.tfcLumber[i] * 6)
 			.outputs(arrayTFC.tfcTrapdoors[i] * 3)
@@ -405,14 +405,14 @@ if (isLoaded("tfc")) {
 			[arrayTFC.tfcLumber[i], null, arrayTFC.tfcLumber[i]],
 			[arrayTFC.tfcLumber[i], arrayTFC.tfcLumber[i], arrayTFC.tfcLumber[i]]])
 		
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(12)
 			.inputs(arrayTFC.tfcLumber[i] * 8)
 			.outputs(arrayTFC.tfcChests[i])
 			.duration(280).EUt(4).buildAndRegister()
 	
 	// Прялки
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(13)
 			.inputs(
 	            arrayTFC.tfcLumber[i] * 7, 
@@ -422,7 +422,7 @@ if (isLoaded("tfc")) {
 	
 	
 	// Полка для инструментов
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	    	.circuitMeta(14)
 			.inputs(arrayTFC.tfcLumber[i] * 6)
 			.outputs(arrayTFC.tfcToolRacks[i])
@@ -434,7 +434,7 @@ if (isLoaded("tfc")) {
 			[arrayTFC.tfcLumber[i], metaitem('rubber_drop'), arrayTFC.tfcLumber[i]],
 			[arrayTFC.tfcLumber[i], arrayTFC.tfcLumber[i], arrayTFC.tfcLumber[i]]])
 	
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcLumber[i] * 5, 
 	            metaitem('rubber_drop'), 
@@ -476,7 +476,7 @@ if (isLoaded("tfc")) {
 	
 	// Железные люки
 	for (int i = 0; i < arrayGT.gtTFCPlates.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 	        .circuitMeta(22)
 			.inputs(arrayGT.gtTFCPlates[i])
 			.outputs(arrayTFC.tfcMetalTrapdoors[i])
@@ -485,7 +485,7 @@ if (isLoaded("tfc")) {
 	
 	// Книжные полки
 	for (int i = 0; i < arrayTFC.tfcPlanks.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(
 	            arrayTFC.tfcPlanks[i] * 6, 
 	            item('minecraft:book') * 3)
@@ -494,7 +494,7 @@ if (isLoaded("tfc")) {
 			.duration(400).EUt(4).buildAndRegister()
 	
 	// Верстаки
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.inputs(arrayTFC.tfcPlanks[i] * 4)
 			.circuitMeta(11)
 			.outputs(arrayTFC.tfcWorkbenchs[i])
@@ -784,7 +784,7 @@ if (isLoaded("tfc")) {
 	// vacuum_freezer.recipeBuilder().fluidInputs(fluid('fresh_water') * 2000).outputs(item('minecraft:packed_ice')).duration(1500).EUt(512).buildAndRegister()
 	
 	// Различные крафты для лассо
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.inputs(ore('string') * 2, ore('leather'))
 		.outputs(item('minecraft:lead'))
 		.duration(250).EUt(2).buildAndRegister()
@@ -902,21 +902,21 @@ if (isLoaded("tfc")) {
 		.duration(150).EUt(2).buildAndRegister()
 	
 	// Hide Soaked Small -> Hide Scraped Small
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.inputs(item('tfc:hide/soaked/small'))
 		.circuitMeta(16)
 		.outputs(item('tfc:hide/scraped/small'))
 		.duration(150).EUt(2).buildAndRegister()
 	
 	// Hide Soaked Medium -> Hide Scraped Medium
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.inputs(item('tfc:hide/soaked/medium'))
 		.circuitMeta(16)
 		.outputs(item('tfc:hide/scraped/medium'))
 		.duration(150).EUt(2).buildAndRegister()
 	
 	// Hide Soaked Large -> Hide Scraped Large
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.inputs(item('tfc:hide/soaked/large'))
 		.circuitMeta(16)
 		.outputs(item('tfc:hide/scraped/large'))
@@ -1051,7 +1051,7 @@ if (isLoaded("tfc")) {
 		.duration(150).EUt(2).buildAndRegister()
 	
 	// Powderkeg
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.inputs(
 			item('minecraft:gunpowder'), 
 			ore('barrel'), 

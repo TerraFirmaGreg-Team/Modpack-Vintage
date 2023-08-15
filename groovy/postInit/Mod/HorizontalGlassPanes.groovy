@@ -1,5 +1,5 @@
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayHGP
+import classes.Array.arrayVanila
+import classes.Array.arrayHGP
 
 
 if (isLoaded("hgp")) {
@@ -8,7 +8,7 @@ if (isLoaded("hgp")) {
     
     // Чистая панель -> Чистая горизонтальная панель
     crafting.addShapeless(item('hgp:hgppane'), [item('minecraft:glass_pane')])
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
     	.circuitMeta(20)
     	.inputs(item('minecraft:glass_pane'))
     	.outputs(item('hgp:hgppane'))
@@ -20,7 +20,7 @@ if (isLoaded("hgp")) {
         crafting.addShapeless(arrayHGP.horizontalGlassPanes[i], [arrayVanila.glassPanes[i]])
     
         // Ассемблер
-        assembler.recipeBuilder()
+        mods.gregtech.assembler.recipeBuilder()
     		.circuitMeta(20)
             .inputs(arrayVanila.glassPanes[i])
             .outputs(arrayHGP.horizontalGlassPanes[i])

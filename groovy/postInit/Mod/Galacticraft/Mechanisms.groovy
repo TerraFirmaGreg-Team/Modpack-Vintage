@@ -57,7 +57,7 @@ if (isLoaded("galacticraftcore")) {
       [item('projectred-transmission:wire'), metaitem('plateDenseAluminium'), item('projectred-transmission:wire')]])
    
    // Грузовой загрузчик
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          metaitem('plateDenseAluminium') * 2, 
@@ -68,7 +68,7 @@ if (isLoaded("galacticraftcore")) {
       .duration(1000).EUt(512).buildAndRegister()
    
    // Грузовой разгрузчик
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(8)
       .inputs(
          metaitem('plateDenseAluminium') * 2, 
@@ -85,7 +85,7 @@ if (isLoaded("galacticraftcore")) {
       [ore('dyeLime'), ore('dyeGreen'), ore('dyeCyan')]])
    
    // Контроллер запуска
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          metaitem('plateDenseDesh') * 2, 

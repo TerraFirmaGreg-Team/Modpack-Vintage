@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayTFC
+import classes.Array.arrayTFC
 
 
 if (isLoaded("tfc")) {

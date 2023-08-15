@@ -1,3 +1,5 @@
+import classes.Globals.*
+
 // --- Массивы
 
 def SmallClayUnfiredColoredVessels = [
@@ -525,7 +527,7 @@ extractor.recipeBuilder()
 
 // TFC Clay Small Colored Vessels
 // Обычный сосуд
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('minecraft:clay_ball') * 3)
         .circuitMeta(1)
         .outputs(item('tfc:ceramics/unfired/vessel'))
@@ -551,7 +553,7 @@ for (int i = 0; i < SmallClayUnfiredColoredVessels.size(); i++) {
 
 // Florae Earthenware Clay Small Colored Vessels
 // Обычный сосуд
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 3)
         .circuitMeta(1)
         .outputs(item('tfcflorae:ceramics/earthenware/unfired/vessel'))
@@ -580,7 +582,7 @@ for (int i = 0; i < SmallEarthenwareClayUnfiredColoredVessels.size(); i++) {
 
 // Florae Kaolinite Clay Small Colored Vessels
 // Обычный сосуд
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 3)
         .circuitMeta(1)
         .outputs(item('tfcflorae:ceramics/kaolinite/unfired/vessel'))
@@ -606,7 +608,7 @@ for (int i = 0; i < SmallKaoliniteClayUnfiredColoredVessels.size(); i++) {
 
 // Florae Stoneware Clay Small Colored Vessels
 // Обычный сосуд
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 3)
         .circuitMeta(1)
         .outputs(item('tfcflorae:ceramics/stoneware/unfired/vessel'))
@@ -633,7 +635,7 @@ for (int i = 0; i < SmallStonewareClayUnfiredColoredVessels.size(); i++) {
 
 // Clay Made Items
 for (int i = 0; i < ClayMadeFiredItems.size(); i++) {
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(item('minecraft:clay_ball') * 3)
         .circuitMeta(i + 1)
         .outputs(ClayMadeUnfiredItems[i])
@@ -652,7 +654,7 @@ for (int i = 0; i < ClayMadeFiredItems.size(); i++) {
 
 // Earthenware Clay Made Items
 for (int i = 0; i < EathenwareClayMadeUnfiredItems.size(); i++) {
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 3)
         .circuitMeta(i + 1)
         .outputs(EathenwareClayMadeUnfiredItems[i])
@@ -671,7 +673,7 @@ for (int i = 0; i < EathenwareClayMadeUnfiredItems.size(); i++) {
 
 // Kaolinite Clay Made Items
 for (int i = 0; i < KaoliniteClayMadeUnfiredItems.size(); i++) {
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 3)
         .circuitMeta(i + 1)
         .outputs(KaoliniteClayMadeUnfiredItems[i])
@@ -690,7 +692,7 @@ for (int i = 0; i < KaoliniteClayMadeUnfiredItems.size(); i++) {
 
 // Stoneware Clay Made Items
 for (int i = 0; i < StonewareClayMadeUnfiredItems.size(); i++) {
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 3)
         .circuitMeta(i + 1)
         .outputs(StonewareClayMadeUnfiredItems[i])
@@ -708,7 +710,7 @@ for (int i = 0; i < StonewareClayMadeUnfiredItems.size(); i++) {
 }
 
 // TFC Clay Bricks
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('minecraft:clay_ball'))
         .circuitMeta(0)
         .outputs(item('tfc:ceramics/unfired/clay_brick') * 3)
@@ -725,7 +727,7 @@ electric_furnace.recipeBuilder()
         .duration(100).EUt(3).buildAndRegister()
 
 // Florae Eathenware Clay Bricks
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay'))
         .circuitMeta(0)
         .outputs(item('tfcflorae:ceramics/earthenware/unfired/earthenware_brick') * 3)
@@ -742,7 +744,7 @@ electric_furnace.recipeBuilder()
         .duration(100).EUt(3).buildAndRegister()
 
 // Florae Kaolinite Clay Bricks
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
         .circuitMeta(0)
         .outputs(item('tfcflorae:ceramics/kaolinite/unfired/kaolinite_brick') * 3)
@@ -760,7 +762,7 @@ electric_furnace.recipeBuilder()
 
 
 // Florae Stoneware Clay Bricks
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay'))
         .circuitMeta(0)
         .outputs(item('tfcflorae:ceramics/stoneware/unfired/stoneware_brick') * 3)
@@ -777,7 +779,7 @@ electric_furnace.recipeBuilder()
         .duration(100).EUt(3).buildAndRegister()
 
 // TFC Fire Clay
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('tfc:ceramics/fire_clay'))
         .circuitMeta(0)
         .outputs(item('tfc:ceramics/unfired/fire_brick') * 3)
@@ -794,7 +796,7 @@ electric_furnace.recipeBuilder()
         .duration(100).EUt(3).buildAndRegister()
 
 // TFC Flower Pot
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
         .inputs(item('minecraft:clay_ball'))
         .circuitMeta(21)
         .outputs(item('tfc:ceramics/unfired/clay_flower_pot') * 2)
@@ -812,7 +814,7 @@ electric_furnace.recipeBuilder()
 
 // Mud Bricks
 for (int i = 0; i < MudBalls.size(); i++) {
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(MudBalls[i] * 3)
         .circuitMeta(0)
         .outputs(MudBricksUnfired[i])

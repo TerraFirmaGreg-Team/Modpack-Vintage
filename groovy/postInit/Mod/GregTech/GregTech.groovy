@@ -1,4 +1,4 @@
-import postInit.Utility.Function
+import classes.Function
 
 
 if (isLoaded("gregtech")) {
@@ -187,7 +187,7 @@ if (isLoaded("gregtech")) {
         .duration(135).EUt(2).buildAndRegister()
     
     // Crafting Table Cover
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(ore('plateIronAny'), ore('workbench'))
         .outputs(metaitem('cover.crafting'))
         .duration(400).EUt(16).buildAndRegister()
@@ -643,7 +643,7 @@ if (isLoaded("gregtech")) {
         .duration(20).EUt(4).buildAndRegister()
     
     // Infinite Water Cover 
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             metaitem('electric.pump.iv') * 2, 
             item('minecraft:cauldron:0'), 
@@ -664,7 +664,7 @@ if (isLoaded("gregtech")) {
     	.duration(100).EUt(30).buildAndRegister()
     
     // Деревянный ящик
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             ore('screwIronAny') * 4, 
             ore('plankWood') * 4)

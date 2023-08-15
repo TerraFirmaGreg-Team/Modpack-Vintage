@@ -45,7 +45,7 @@ if (isLoaded("galacticraftcore")) {
 		.duration(1200).EUt(4096).buildAndRegister()
 	}
 	// Ракетный компьютер
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('opencomputers:case1'),
@@ -59,7 +59,7 @@ if (isLoaded("galacticraftcore")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(4096).buildAndRegister()
 	// Головоной обтекатель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('galacticraftcore:nose_cone'),
@@ -71,7 +71,7 @@ if (isLoaded("galacticraftcore")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(4096).buildAndRegister()
 	// Корпус
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('galacticraftplanets:item_basic_asteroids:5') * 2,
@@ -82,7 +82,7 @@ if (isLoaded("galacticraftcore")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(4096).buildAndRegister()
 	// Стабилизаторы
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('galacticraftcore:heavy_plating') * 2,
@@ -93,7 +93,7 @@ if (isLoaded("galacticraftcore")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(4096).buildAndRegister()
 	// Ракетные двигатели
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('galacticraftplanets:item_basic_asteroids:5') * 5,
@@ -105,7 +105,7 @@ if (isLoaded("galacticraftcore")) {
 		.outputs(item('galacticraftplanets:item_basic_asteroids:1'))
 		.duration(600).EUt(4096).buildAndRegister()
 	// Сплав сверх-прочных пластин
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(
 			item('galacticraftplanets:item_basic_mars:3'),

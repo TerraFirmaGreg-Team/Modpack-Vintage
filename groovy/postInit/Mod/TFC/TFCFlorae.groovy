@@ -1,5 +1,5 @@
-import postInit.Utility.Array.arrayTFCF
-import postInit.Utility.Array.arrayTFC
+import classes.Array.arrayTFCF
+import classes.Array.arrayTFC
 
 
 if (isLoaded("tfcflorae")) {

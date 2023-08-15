@@ -218,19 +218,6 @@ forge_hammer.findRecipe(16, [<ore:cobblestone>.firstItem], null);
 alloy_smelter.findRecipe(2, [<minecraft:clay_ball:0>, <metaitem:shape.mold.ingot>], null);
 
 
-// Песок
-centrifuge.findRecipe(30, [<minecraft:sand:1>], null).remove();
-centrifuge.findRecipe(5, [<gregtech:ore_oilsands_0:0>], null).remove();
-
-// Нефть из песка душ
-centrifuge.findRecipe(80, [<minecraft:soul_sand:0>], null).remove();
-
-// Гелий из эндстоуна
-centrifuge.findRecipe(20, [<metaitem:dustEndstone>], null).remove();
-
-// Гриб из мицелия
-centrifuge.findRecipe(30, [<minecraft:mycelium:0>], null).remove();
-
 // Песок -> Кварцитовая пыль
 macerator.findRecipe(2, [<minecraft:sand>], null).remove();
 

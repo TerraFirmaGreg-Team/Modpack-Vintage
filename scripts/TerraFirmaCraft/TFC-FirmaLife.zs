@@ -37,7 +37,7 @@ ItemRegistry.registerItemMetal(<firmalife:red_steel_mallet>, "RED_STEEL", 144, t
 Drying.addRecipe("tfg/firmalife/fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
 
 // Высушивание соли
-Drying.addRecipe("tfg/firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <metaitem:wooden.bucket.with.salt>, 24000);
+Drying.addRecipe("tfg/firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <tfgmod:meta_item:51>, 24000);
 
 // Greenhouse Door
 Anvil.addRecipe("tfg/firmalife/greenhouse_door", <metaitem:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");

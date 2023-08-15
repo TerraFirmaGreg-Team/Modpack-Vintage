@@ -1,12 +1,17 @@
 
-// import gregtech.api.GregTechAPI.PostMaterialEvent
-// import gregtech.api.GregTechAPI.MaterialEvent
+// import gregtech.api.unification.material.event.PostMaterialEvent
+// import gregtech.api.unification.material.event.MaterialEvent
 // import gregtech.api.unification.material.Material
+// import gregtech.api.unification.material.Materials
 
 
 // // --- Кастомные настройки материалов
 
-// // Новые руды
+
+
+// event_manager.listen { PostMaterialEvent event ->
+
+//     // Новые руды
 // material('bismuth').addOre(1, 1, true)
 // material('perlite').addOre(1, 1, true)
 // material('uvarovite').addOre(1, 1, true)
@@ -35,7 +40,6 @@
 // material('naquadah_enriched').addOre(1, 1, true)
 // material('glowstone').addOre(1, 1, true)
 
-// event_manager.listen { PostMaterialEvent event ->
 //     // Другое
 //     material('salt_water').setMaterialRGB(0x1F5099)
 //     material('glowstone').setFormula("Au(Si(FeS2)5(CrAl2O3)Hg3)", true)

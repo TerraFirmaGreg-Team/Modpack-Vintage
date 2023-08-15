@@ -43,7 +43,7 @@ if (isLoaded("extraplanets")) {
 		.duration(1200).EUt(16384).buildAndRegister()
 	}
 	// Ракетный компьютер
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('opencomputers:case2'),
@@ -57,7 +57,7 @@ if (isLoaded("extraplanets")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(16384).buildAndRegister()
 	// Головоной обтекатель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('galacticraftplanets:heavy_nose_cone'),
@@ -69,7 +69,7 @@ if (isLoaded("extraplanets")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(16384).buildAndRegister()
 	// Корпус
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('extraplanets:tier4_items:3') * 2,
@@ -80,7 +80,7 @@ if (isLoaded("extraplanets")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(16384).buildAndRegister()
 	// Стабилизаторы
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('extraplanets:tier4_items:3') * 2,
@@ -91,7 +91,7 @@ if (isLoaded("extraplanets")) {
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(16384).buildAndRegister()
 	// Ракетные двигатели
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('extraplanets:tier4_items:3') * 5,
@@ -103,7 +103,7 @@ if (isLoaded("extraplanets")) {
 		.outputs(item('extraplanets:tier4_items'))
 		.duration(300).EUt(16384).buildAndRegister()
 	// Ускорители
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(4)
 		.inputs(
 			item('galacticraftcore:engine:1'),

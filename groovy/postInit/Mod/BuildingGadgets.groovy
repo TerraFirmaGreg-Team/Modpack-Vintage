@@ -5,7 +5,7 @@ if (isLoaded("buildinggadgets")) {
     // --- Добавление рецептов
 
     // Building Gadget
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('stickRedAlloy') * 2,
@@ -17,7 +17,7 @@ if (isLoaded("buildinggadgets")) {
         .outputs(item('buildinggadgets:buildingtool'))
         .duration(100).EUt(7).buildAndRegister();
     // Exchanging Gadget
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs(
             metaitem('stickRedAlloy') * 3,
@@ -30,7 +30,7 @@ if (isLoaded("buildinggadgets")) {
         .duration(100).EUt(7).buildAndRegister();
 
     // Copy-Paste Gadget
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('stickRedAlloy') * 2,
@@ -43,7 +43,7 @@ if (isLoaded("buildinggadgets")) {
         .duration(100).EUt(7).buildAndRegister();
 
     // Template Manager
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(4)
         .inputs(
             metaitem('plateSteel') * 3,
@@ -54,7 +54,7 @@ if (isLoaded("buildinggadgets")) {
         .duration(100).EUt(7).buildAndRegister();
 
     // Destruction Gadget
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(4)
         .inputs(
             metaitem('stickRedAlloy') * 2,

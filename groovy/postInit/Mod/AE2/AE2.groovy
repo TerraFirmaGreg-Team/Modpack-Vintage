@@ -1,7 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayAE2
-import postInit.Utility.Function
+import classes.Array.arrayVanila
+import classes.Array.arrayAE2
+import classes.Function
 
 
 if (isLoaded("appliedenergistics2")) {
@@ -10,7 +10,7 @@ if (isLoaded("appliedenergistics2")) {
 	
 	// Покраска, обесвечивание кабелей
 	// Стеклянные кабеля
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    metaitem('stickAluminium') * 2,
@@ -18,7 +18,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('fluix') * 144)
 	  .outputs(item('appliedenergistics2:part', 16) * 6)
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    metaitem('stickAluminium') * 2,
@@ -41,19 +41,19 @@ if (isLoaded("appliedenergistics2")) {
 	}
 	
 	// Закрытый кабель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(item('appliedenergistics2:part', 16) * 3)
 	  .fluidInputs(fluid('styrene_butadiene_rubber') * 108)
 	  .outputs(item('appliedenergistics2:part', 36))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(item('appliedenergistics2:part', 16) * 3)
 	  .fluidInputs(fluid('silicone_rubber') * 216)
 	  .outputs(item('appliedenergistics2:part', 36))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(item('appliedenergistics2:part', 16) * 3)
 	  .fluidInputs(fluid('rubber') * 432)
@@ -73,7 +73,7 @@ if (isLoaded("appliedenergistics2")) {
 	}
 	
 	// Умный кабель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -81,7 +81,7 @@ if (isLoaded("appliedenergistics2")) {
 	    item('appliedenergistics2:part', 36))
 	  .outputs(item('appliedenergistics2:part:56'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -90,7 +90,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('styrene_butadiene_rubber') * 108)
 	  .outputs(item('appliedenergistics2:part:56'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -99,7 +99,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('silicone_rubber') * 216)
 	  .outputs(item('appliedenergistics2:part:56'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -122,24 +122,24 @@ if (isLoaded("appliedenergistics2")) {
 	}
 	
 	// Плотный закрытый кабель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(item('appliedenergistics2:part', 36) * 4)
 	  .outputs(item('appliedenergistics2:part:516'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(item('appliedenergistics2:part', 16) * 12)
 	  .fluidInputs(fluid('styrene_butadiene_rubber') * 432)
 	  .outputs(item('appliedenergistics2:part:516'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(item('appliedenergistics2:part', 16) * 12)
 	  .fluidInputs(fluid('silicone_rubber') * 864)
 	  .outputs(item('appliedenergistics2:part:516'))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(item('appliedenergistics2:part', 16) * 12)
 	  .fluidInputs(fluid('rubber') * 1728)
@@ -159,12 +159,12 @@ if (isLoaded("appliedenergistics2")) {
 	}
 	
 	// Плотный умный кабель
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(item('appliedenergistics2:part:56') * 4)
 	  .outputs(item('appliedenergistics2:part', 76))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -172,7 +172,7 @@ if (isLoaded("appliedenergistics2")) {
 	    item('appliedenergistics2:part:516'))
 	  .outputs(item('appliedenergistics2:part', 76))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -180,7 +180,7 @@ if (isLoaded("appliedenergistics2")) {
 	    item('appliedenergistics2:part', 36) * 4)
 	  .outputs(item('appliedenergistics2:part', 76))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -189,7 +189,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('styrene_butadiene_rubber') * 432)
 	  .outputs(item('appliedenergistics2:part', 76))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -198,7 +198,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('silicone_rubber') * 864)
 	  .outputs(item('appliedenergistics2:part', 76))
 	  .duration(20).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(4)
 	  .inputs(
 	    item('minecraft:redstone'),
@@ -255,7 +255,7 @@ if (isLoaded("appliedenergistics2")) {
 	  // Сбор
 	  packer.recipeBuilder()
 	    .inputs(
-	      metaitem('fluid.housing'),
+	      item('tfgmod:meta_item', 50),
 	      arrayAE2.fluidStorageComponents[i])
 	    .outputs(arrayAE2.fluidStorageCells[i])
 	    .cleanroom(CleanroomType.CLEANROOM)
@@ -264,7 +264,7 @@ if (isLoaded("appliedenergistics2")) {
 	  packer.recipeBuilder()
 	    .inputs(arrayAE2.fluidStorageCells[i])
 	    .outputs(
-	      metaitem('fluid.housing'),
+	      item('tfgmod:meta_item', 50),
 	      arrayAE2.fluidStorageComponents[i])
 	    .duration(10).EUt(7).buildAndRegister()
 	}
@@ -555,28 +555,28 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(30).EUt(2).buildAndRegister()
 	
 	// Blank Pattern
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(metaitem('plateSteel') * 3)
 	  .inputs(metaitem('platePlastic') * 2)
 	  .inputs(metaitem('wireFineRedAlloy') * 4)
 	  .inputs(ore('circuitMv'))
 	  .outputs(item('appliedenergistics2:material', 52))
 	  .duration(200).EUt(120).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(metaitem('plateSteel') * 3)
 	  .inputs(metaitem('platePolyvinylChloride') * 2)
 	  .inputs(metaitem('wireFineRedAlloy') * 4)
 	  .inputs(ore('circuitMv'))
 	  .outputs(item('appliedenergistics2:material', 52) * 4)
 	  .duration(200).EUt(120).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(metaitem('plateSteel') * 3)
 	  .inputs(metaitem('platePolytetrafluoroethylene') * 2)
 	  .inputs(metaitem('wireFineRedAlloy') * 4)
 	  .inputs(ore('circuitMv'))
 	  .outputs(item('appliedenergistics2:material', 52) * 16)
 	  .duration(200).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(metaitem('plateSteel') * 3)
 	  .inputs(metaitem('platePolybenzimidazole') * 2)
 	  .inputs(metaitem('wireFineRedAlloy') * 4)
@@ -653,7 +653,7 @@ if (isLoaded("appliedenergistics2")) {
 	  [item('appliedenergistics2:material', 24), ore('crystalPureCertusQuartz'), item('appliedenergistics2:material', 24)],
 	  [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')]])
 	
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 			metaitem('stickAluminium') * 2,
@@ -670,7 +670,7 @@ if (isLoaded("appliedenergistics2")) {
 	  [item('appliedenergistics2:material', 24), ore('crystalPureNetherQuartz'), item('appliedenergistics2:material', 24)],
 	  [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')]])
 	
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    metaitem('stickAluminium') * 2,
@@ -688,7 +688,7 @@ if (isLoaded("appliedenergistics2")) {
 	  [metaitem('plateNetherQuartz'), item('appliedenergistics2:dense_energy_cell'), metaitem('plateNetherQuartz')]])
 	
 	// Wireless Crafting Terminal
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:dense_energy_cell') * 2, 
 	    item('appliedenergistics2:wireless_terminal') * 1,
@@ -700,7 +700,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(30).EUt(250).buildAndRegister()
 	
 	// Wireless Pattern Terminal
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:dense_energy_cell') * 2, 
 	    item('appliedenergistics2:wireless_terminal') * 1,
@@ -712,7 +712,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(30).EUt(250).buildAndRegister()
 	
 	// Wireless Fluid Terminal
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:dense_energy_cell') * 2, 
 	    item('appliedenergistics2:wireless_terminal') * 1,
@@ -724,7 +724,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(30).EUt(250).buildAndRegister()
 	
 	// // Wireless Interface Terminal
-	// assembler.recipeBuilder()
+	// mods.gregtech.assembler.recipeBuilder()
 	//   .inputs(
 	//     item('appliedenergistics2:dense_energy_cell') * 2, 
 	//     item('appliedenergistics2:wireless_terminal') * 1,
@@ -736,7 +736,7 @@ if (isLoaded("appliedenergistics2")) {
 	//   .duration(30).EUt(250).buildAndRegister()
 	
 	// Magnet Card
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('ingotNeodymiumMagnetic'), 
 	    metaitem('stickNeodymiumMagnetic') * 4,
@@ -748,7 +748,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(30).EUt(250).buildAndRegister()
 	
 	// Quantum link Card
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('sensor.iv') * 4, 
 	    item('appliedenergistics2:material', 42) * 4,
@@ -848,20 +848,20 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(56).EUt(30).buildAndRegister()
 	
 	// ME Fluid Storage Housing
-	crafting.addShaped("tfg/ae2/me_fluid_storage_housing", metaitem('fluid.housing'), [
+	crafting.addShaped("tfg/ae2/me_fluid_storage_housing", item('tfgmod:meta_item', 50), [
 	  [item('appliedenergistics2:quartz_glass'), metaitem('plateStainlessSteel'), item('appliedenergistics2:quartz_glass')],
 	  [metaitem('wireFineRedAlloy'), ore('circuitLv'), metaitem('wireFineRedAlloy')],
 	  [metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel')]])
 	
 	// Recycle - Fluid Storage Housing
 	macerator.recipeBuilder()
-	  .inputs(metaitem('fluid.housing'))
+	  .inputs(item('tfgmod:meta_item', 50))
 	  .outputs(
 	    metaitem('dustStainlessSteel') * 2,
 	    metaitem('dustTinyStainlessSteel') * 2)
 	  .duration(100).EUt(16).buildAndRegister()
 	arc_furnace.recipeBuilder()
-	  .inputs(metaitem('fluid.housing'))
+	  .inputs(item('tfgmod:meta_item', 50))
 	  .fluidInputs(fluid('oxygen') * 56)
 	  .outputs(
 	    metaitem('ingotStainlessSteel') * 2,
@@ -914,7 +914,7 @@ if (isLoaded("appliedenergistics2")) {
 	    .duration(10).EUt(7).buildAndRegister()
 	
 	// 1k Storage Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('batteryUlv') * 4,
 	    metaitem('plateWroughtIron') * 4,
@@ -924,7 +924,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material', 35))
 	  .duration(200).EUt(480).buildAndRegister()
 	// 4k Storage Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitEv') * 4,
 	    metaitem('plateTitanium') * 4,
@@ -934,7 +934,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material', 36))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1920).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 22),
 	    ore('circuitEv') * 2,
@@ -944,7 +944,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(400).EUt(1920).buildAndRegister()
 	// 16k Storage Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitIv') * 4,
 	    metaitem('plateTungstenSteel') * 4,
@@ -954,7 +954,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs([item('appliedenergistics2:material:37')])
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(7680).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 24),
 	    ore('circuitIv') * 2,
@@ -964,7 +964,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(400).EUt(7680).buildAndRegister()
 	// 64k Storage Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitLuv') * 4,
 	    metaitem('plateRhodiumPlatedPalladium') * 4,
@@ -974,7 +974,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:38'))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(30720).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    item('appliedenergistics2:material', 24),
@@ -986,7 +986,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(400).EUt(30720).buildAndRegister()
 	
 	// 1k Fluid Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('batteryUlv') * 4,
 	    metaitem('plateWroughtIron') * 4,
@@ -996,7 +996,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:54'))
 	  .duration(200).EUt(480).buildAndRegister()
 	// 4k Fluid Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitEv') * 4,
 	    metaitem('plateTitanium') * 4,
@@ -1006,7 +1006,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:55'))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(400).EUt(1920).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 22),
 	    ore('circuitEv') * 2,
@@ -1016,7 +1016,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1920).buildAndRegister()
 	// 16k Fluid Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitIv') * 4,
 	    metaitem('plateTungstenSteel') * 4,
@@ -1026,7 +1026,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:56'))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(400).EUt(480).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 24),
 	    ore('circuitIv') * 2,
@@ -1036,7 +1036,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(7680).buildAndRegister()
 	// 64k Fluid Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitLuv') * 4,
 	    metaitem('plateRhodiumPlatedPalladium') * 4,
@@ -1045,7 +1045,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .fluidInputs(fluid('stainless_steel') * 144)
 	  .outputs(item('appliedenergistics2:material:57'))
 	  .duration(400).EUt(30720).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 24),
 	    ore('circuitLuv') * 2,
@@ -1056,7 +1056,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(30720).buildAndRegister()
 	
 	// 2³ Spatial Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitEv') * 4,
 	    metaitem('plateTitanium') * 4,
@@ -1067,7 +1067,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1920).buildAndRegister()
 	// 16³ Spatial Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitIv') * 4,
 	    metaitem('plateTungstenSteel') * 4,
@@ -1077,7 +1077,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:33'))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(7680).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 23),
 	    ore('circuitLuv') * 4,
@@ -1087,7 +1087,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(400).EUt(7680).buildAndRegister()
 	// 128³ Spatial Component
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('circuitLuv') * 4,
 	    metaitem('plateRhodiumPlatedPalladium') * 4,
@@ -1097,7 +1097,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:material:34'))
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(30720).buildAndRegister()
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 23),
 	    ore('circuitLuv') * 4,
@@ -1115,7 +1115,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(100).EUt(4).buildAndRegister()
 	
 	// Монитор хранения
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    ore('itemIlluminatedPanel'),
 	    item('appliedenergistics2:part', 280))
@@ -1124,7 +1124,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Монитор преобразования
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 44) * 2,
 	    item('appliedenergistics2:material', 43) * 2,
@@ -1134,7 +1134,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Плоскость истребления ID
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:part:300'),
 	    ore('pearlFluix'))
@@ -1147,7 +1147,7 @@ if (isLoaded("appliedenergistics2")) {
 	  [null, metaitem('plateSteel'), null],
 	  [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
 	  [null, metaitem('plateSteel'), null]])
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    item('minecraft:redstone_torch'),
@@ -1158,7 +1158,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(20).EUt(7680).buildAndRegister()
 	
 	// Шина хранения по словарю руд
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    ore('ae2.interface.item'),
@@ -1169,7 +1169,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Шина хранения
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    ore('ae2.interface.item'),
@@ -1180,7 +1180,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Жидкостная шина хранения
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    ore('ae2.interface.fluid'),
@@ -1191,7 +1191,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Шина импорта
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    ore('plateIronAny'),
@@ -1203,7 +1203,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Жидкостная шина импорта
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(20)
 	  .inputs(
 	    ore('plateIronAny'),
@@ -1215,7 +1215,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Шина экспорта
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(
 	    ore('plateIronAny'),
@@ -1227,7 +1227,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Жидкостная шина экспорта
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(3)
 	  .inputs(
 	    ore('plateIronAny'),
@@ -1253,7 +1253,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(10).EUt(7).buildAndRegister()
 	
 	// CPU Crafting Unit
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    item('appliedenergistics2:material', 22),
@@ -1266,7 +1266,7 @@ if (isLoaded("appliedenergistics2")) {
 	
 	// Molecular Assembler
 	// HV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs([
 	    item('appliedenergistics2:quartz_glass') * 2,
 	    ore('circuitHv') * 2,
@@ -1280,7 +1280,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(480).buildAndRegister()
 	// EV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:quartz_glass') * 2,
 	    ore('circuitHv') * 2,
@@ -1294,7 +1294,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1980).buildAndRegister()
 	// IV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:quartz_glass') * 2,
 	    ore('circuitHv') * 2,
@@ -1319,7 +1319,7 @@ if (isLoaded("appliedenergistics2")) {
 	  [null, metaitem('plateStainlessSteel'), null],
 	  [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
 	  [null, metaitem('plateStainlessSteel'), null]])
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(2)
 	  .inputs(
 	    item('minecraft:redstone_torch'),
@@ -1357,7 +1357,7 @@ if (isLoaded("appliedenergistics2")) {
 	crafting.addShapeless("tfg/ae2/tunnels_p2p_eu", item('appliedenergistics2:part:470'), [item('appliedenergistics2:part:460'), metaitem('cableGtDoubleCobalt')])
 	
 	// ME Контроллер
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 24) * 2,
 	    ore('circuitHv') * 2,
@@ -1369,7 +1369,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(480).buildAndRegister()
 	
 	// Energy Cell
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    metaitem('plateCertusQuartz') * 6,
@@ -1381,7 +1381,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .duration(200).EUt(500).buildAndRegister()
 	
 	// Dense Energy Cell
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .circuitMeta(1)
 	  .inputs(
 	    item('appliedenergistics2:energy_cell') * 8,
@@ -1460,7 +1460,7 @@ if (isLoaded("appliedenergistics2")) {
 	crafting.addShapeless(item('appliedenergistics2:interface'), [item('appliedenergistics2:part:440')])
 	crafting.addShapeless(item('appliedenergistics2:part:440'), [item('appliedenergistics2:interface')])
 	// MV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('conveyor.module.mv'),
 	    metaitem('plateGlass') * 8,
@@ -1471,7 +1471,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:interface'))
 	  .duration(200).EUt(120).buildAndRegister()
 	// HV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('conveyor.module.hv'),
 	    metaitem('plateGlass') * 8,
@@ -1482,7 +1482,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:interface') * 2)
 	  .duration(200).EUt(480).buildAndRegister()
 	// EV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('conveyor.module.ev'),
 	    metaitem('plateGlass') * 8,
@@ -1494,7 +1494,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1980).buildAndRegister()
 	// IV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('conveyor.module.iv'),
 	    metaitem('plateGlass') * 8,
@@ -1510,7 +1510,7 @@ if (isLoaded("appliedenergistics2")) {
 	crafting.addShapeless(item('appliedenergistics2:fluid_interface'), [item('appliedenergistics2:part:441')])
 	crafting.addShapeless(item('appliedenergistics2:part:441'), [item('appliedenergistics2:fluid_interface')])
 	// MV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('electric.pump.mv'),
 	    metaitem('plateGlass') * 8,
@@ -1521,7 +1521,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:fluid_interface'))
 	  .duration(200).EUt(120).buildAndRegister()
 	// HV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('electric.pump.hv'),
 	    metaitem('plateGlass') * 8,
@@ -1532,7 +1532,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .outputs(item('appliedenergistics2:fluid_interface') * 2)
 	  .duration(200).EUt(480).buildAndRegister()
 	// EV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('electric.pump.ev'),
 	    metaitem('plateGlass') * 8,
@@ -1544,7 +1544,7 @@ if (isLoaded("appliedenergistics2")) {
 	  .cleanroom(CleanroomType.CLEANROOM)
 	  .duration(200).EUt(1980).buildAndRegister()
 	// IV
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    metaitem('electric.pump.iv'),
 	    metaitem('plateGlass') * 8,
@@ -1653,7 +1653,7 @@ if (isLoaded("appliedenergistics2")) {
 	    [metaitem('plateTitanium'), metaitem('screwTitanium'), metaitem('plateTitanium')]])
 	
 	// Переносное предметное хранилище
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 	  .inputs(
 	    item('appliedenergistics2:material', 35),
 	    item('appliedenergistics2:chest'),

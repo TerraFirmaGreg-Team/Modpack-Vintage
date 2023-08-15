@@ -45,7 +45,7 @@ if (isLoaded("extraplanets")) {
 		.duration(1200).EUt(268435456).buildAndRegister()
 	}
 	// Ракетный компьютер
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(11)
 		.inputs(
 			item('opencomputers:case3'),

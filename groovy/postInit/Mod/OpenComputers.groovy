@@ -5,7 +5,7 @@ if (isLoaded("opencomputers")) {
     // --- Добавление рецептов
     
     // Ink Cartridge
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -29,7 +29,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Battery Upgrade - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -40,7 +40,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:1'))
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -53,7 +53,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Battery Upgrade - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -64,7 +64,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:2'))
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -77,7 +77,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Battery Upgrade - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.extreme'),
@@ -88,7 +88,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:3')])
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.extreme'),
@@ -102,7 +102,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Chunkloader Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -112,7 +112,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:4'))
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -124,7 +124,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Card Container - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -134,7 +134,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:5')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -146,7 +146,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Card Container - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -156,7 +156,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:6'))
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -168,7 +168,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Card Container - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -178,7 +178,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:7'))
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:material:5'),
@@ -190,7 +190,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Upgrade Container - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -200,7 +200,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:8')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -212,7 +212,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Upgrade Container - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -222,7 +222,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:9')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -234,7 +234,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Upgrade Container - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.extreme'),
@@ -244,7 +244,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:10'))
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.extreme'),
@@ -256,7 +256,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Disassembler
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             ore('oc:materialCU'),
@@ -270,7 +270,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Assembler
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             ore('workbench'),
@@ -279,11 +279,11 @@ if (isLoaded("opencomputers")) {
             ore('oc:circuitChip2'),
             ore('circuitLv') * 2,
             ore('craftingToolScrewdriver'))
-        .outputs(item('opencomputers:assembler'))
+        .outputs(item('opencomputers:mods.gregtech.assembler'))
         .duration(100).EUt(1920).buildAndRegister()
     
     // Hologram1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             ore('oc:circuitChip2') * 2,
@@ -296,7 +296,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Hologram2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             ore('oc:circuitChip3') * 2,
@@ -323,7 +323,7 @@ if (isLoaded("opencomputers")) {
     crafting.addShapeless('tfg/oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore  ('oc:capacitor')])
     
     // Crafting Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -333,7 +333,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:11')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -345,7 +345,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Database Upgrade - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -356,7 +356,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:12')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -369,7 +369,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Database Upgrade - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.advanced'),
@@ -380,7 +380,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:13')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.advanced'),
@@ -393,7 +393,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Database Upgrade - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.extreme'),
@@ -404,7 +404,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:14')])
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.extreme'),
@@ -417,7 +417,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Experience Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -427,7 +427,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:15')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -439,7 +439,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Hover Upgrade - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -451,7 +451,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:27')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -465,7 +465,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Hover Upgrade - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.advanced'),
@@ -477,7 +477,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:28')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.advanced'),
@@ -491,7 +491,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Inventory Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -502,7 +502,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:17')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -515,7 +515,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Inventory Controller Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             item('opencomputers:upgrade:17'),
@@ -525,7 +525,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:18')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             item('opencomputers:upgrade:17'),
@@ -537,7 +537,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Tank Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -547,7 +547,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:23')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -559,7 +559,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Tank Controller Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             item('opencomputers:upgrade:23'),
@@ -569,7 +569,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:24')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             item('opencomputers:upgrade:23'),
@@ -581,7 +581,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Leash Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -591,7 +591,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:26')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -603,7 +603,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // MFU
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('opencomputers:adapter'),
@@ -613,7 +613,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:30')])
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('opencomputers:adapter'),
@@ -625,7 +625,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(1920).buildAndRegister()
     
     // Navigation Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.extreme'),
@@ -635,7 +635,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:19')])
         .duration(100).EUt(1920).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.extreme'),
@@ -648,7 +648,7 @@ if (isLoaded("opencomputers")) {
     
     // Piston Upgrade
     crafting.addShapeless(item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -657,7 +657,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:20'))
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -672,7 +672,7 @@ if (isLoaded("opencomputers")) {
     crafting.addShapeless(item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), item ('minecraft:slime_ball')])
     
     // Sign Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -683,7 +683,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:21')])
         .duration(100).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.plastic'),
@@ -696,7 +696,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Tractor Beam Upgrade
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('circuit_board.advanced'),
@@ -706,7 +706,7 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:25')])
         .duration(100).EUt(480).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -717,7 +717,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Microcontroller Case - Tier 1
-        assembler.recipeBuilder()
+        mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
             item('gregtech:machine_casing:2'),
@@ -730,7 +730,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Microcontroller Case - Tier 2
-        assembler.recipeBuilder()
+        mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
             item('gregtech:machine_casing:3'),
@@ -743,7 +743,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Drone Case - Tier 1
-        assembler.recipeBuilder()
+        mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
             item('opencomputers:material:20'),
@@ -756,7 +756,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Drone Case - Tier 2
-        assembler.recipeBuilder()
+        mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
             item('opencomputers:material:21'),
@@ -769,7 +769,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Arrow Keys
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             ore('buttonStone') * 4,
@@ -779,7 +779,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Button Group
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             ore('buttonStone') * 6,
@@ -789,7 +789,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Numeric Keypad
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs([
             ore('buttonStone') * 9,
@@ -799,7 +799,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Keyboard
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(4)
         .inputs([
             item('opencomputers:material', 14) * 4,
@@ -812,7 +812,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Disk Platter
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('lensGlass'),
@@ -847,7 +847,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(120).buildAndRegister()
     
     // Floppy Disk
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('opencomputers:material:12'),
@@ -857,7 +857,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Hard Disk Drive - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('plateSteel') * 2,
@@ -869,7 +869,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Hard Disk Drive - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('plateAluminium') * 2,
@@ -881,7 +881,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Hard Disk Drive - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('plateStainlessSteel') * 2,
@@ -1051,7 +1051,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(30).buildAndRegister()
     
     // Transistor
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             ore('boltIron') * 3,
@@ -1061,7 +1061,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(30).buildAndRegister()
     
     // Card Base
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             ore('circuitLv'),
@@ -1522,7 +1522,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Linked Card
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('opencomputers:card:7'),
@@ -1533,7 +1533,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Interweb
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             metaitem('platePlastic'),
@@ -1690,7 +1690,7 @@ if (isLoaded("opencomputers")) {
         .duration(100).EUt(480).buildAndRegister()
     
     // Disk Drive
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('opencomputers:diskdrive'),
@@ -1703,7 +1703,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(480).buildAndRegister()
     
     // Terminal Server
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.extreme'),
@@ -1716,7 +1716,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(1920).buildAndRegister()
     
     // Server - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.plastic'),
@@ -1729,7 +1729,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Server - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.advanced'),
@@ -1742,7 +1742,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(480).buildAndRegister()
     
     // Server - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('circuit_board.extreme'),
@@ -1755,14 +1755,14 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(1920).buildAndRegister()
     
     // Cable
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('cableGtSingleGold'),
             metaitem('dustTinyRedAlloy'))
         .outputs(item('opencomputers:cable'))
         .duration(200).EUt(120).buildAndRegister()
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             metaitem('cableGtSingleGold'),
@@ -1771,7 +1771,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Adapter
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('gregtech:machine_casing:2'),
@@ -1783,7 +1783,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Capacitor
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
             item('gregtech:machine_casing:1'),
@@ -1796,7 +1796,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Charger
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('gregtech:machine_casing:1'),
@@ -1810,7 +1810,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Power Distributor
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             item('gregtech:machine_casing:3'),
@@ -1825,7 +1825,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(480).buildAndRegister()
     
     // Power Converter
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('transformer.mv'),
@@ -1839,7 +1839,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Waypoint
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs([
             item('gregtech:machine_casing:2'),
@@ -1854,7 +1854,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Net Splitter
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs([
             metaitem('buffer.mv'),
@@ -1933,7 +1933,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(1920).buildAndRegister()
     
     // Disk Drive
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:2'),
             item('opencomputers:material:8') * 2,
@@ -1946,7 +1946,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Geolyzer
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:2'),
             metaitem('circuit_board.plastic'),
@@ -1958,7 +1958,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Motion Sensor
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             metaitem('circuit_board.plastic'),
             item('opencomputers:component:1'),
@@ -1970,7 +1970,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Raid
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('opencomputers:diskdrive'),
             item('opencomputers:component:2'),
@@ -1982,7 +1982,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(480).buildAndRegister()
     
     // Redstone I/O
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:2'),
             metaitem('circuit_board.plastic') * 2,
@@ -1995,7 +1995,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Relay
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:2'),
             metaitem('circuit_board.plastic') * 2,
@@ -2008,7 +2008,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Rack
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs([
             item('opencomputers:relay'),
             item('opencomputers:powerdistributor'),
@@ -2022,7 +2022,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Computer Case - Tier 1
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs([
             item('gregtech:machine_casing:2'),
             metaitem('plateAluminium') * 4,
@@ -2035,7 +2035,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(120).buildAndRegister()
     
     // Computer Case - Tier 2
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:3'),
             metaitem('plateStainlessSteel') * 4,
@@ -2047,7 +2047,7 @@ if (isLoaded("opencomputers")) {
         .duration(200).EUt(480).buildAndRegister()
     
     // Computer Case - Tier 3
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:4'),
             metaitem('plateTitanium') * 4,

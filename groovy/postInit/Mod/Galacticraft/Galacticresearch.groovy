@@ -5,7 +5,7 @@ if (isLoaded("galacticresearch")) {
    // --- Создание рецептов
 
    // Satellite controller
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          ore('circuitIv'), 
@@ -18,7 +18,7 @@ if (isLoaded("galacticresearch")) {
       .duration(200).EUt(2000).buildAndRegister()
 
    // Satellite launcher
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          item('galacticraftcore:grating') * 8, 
@@ -32,7 +32,7 @@ if (isLoaded("galacticresearch")) {
       .duration(150).EUt(2000).buildAndRegister()
 
    // Telescope
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(7)
       .inputs(
          metaitem('sensor.iv'), 

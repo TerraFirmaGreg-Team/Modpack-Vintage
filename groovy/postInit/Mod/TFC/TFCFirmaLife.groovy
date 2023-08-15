@@ -1,6 +1,6 @@
-import postInit.Utility.Array.arrayTFCFL
-import postInit.Utility.Array.arrayTFC
-import postInit.Utility.Function
+import classes.Array.arrayTFCFL
+import classes.Array.arrayTFC
+import classes.Function
 
 
 if (isLoaded("firmalife")) {
@@ -83,7 +83,7 @@ if (isLoaded("firmalife")) {
     furnace.add(item('firmalife:unfired_mallet_mold'), item('firmalife:mallet_mold'))
     
     // Высушивание соли
-    crafting.addShapeless(metaitem('dustSmallSalt') * 2, [metaitem('wooden.bucket.with.salt').transform({item('tfc:wooden_bucket')})])
+    crafting.addShapeless(metaitem('dustSmallSalt') * 2, [item('tfgmod:meta_item', 51).transform({item('tfc:wooden_bucket')})])
     
     crafting.addShapeless(item('firmalife:trellis'), [item('firmalife:greenhouse_wall'), item('firmalife:greenhouse_wall'), ore('dustFertilizer')])
     crafting.addShapeless(item('firmalife:pumpkin_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])
@@ -127,19 +127,19 @@ if (isLoaded("firmalife")) {
         .duration(400).EUt(1).buildAndRegister()
     
     // Greenhouse parts
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(metaitem('plateWroughtIron'))
         .outputs(item('firmalife:greenhouse_roof') * 4)
         .duration(205).EUt(8).buildAndRegister()
     
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(4)
         .inputs(metaitem('plateWroughtIron'))
         .outputs(item('firmalife:greenhouse_door') * 4)
         .duration(205).EUt(8).buildAndRegister()
     
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(3)
         .inputs(metaitem('plateWroughtIron'))
         .outputs(item('firmalife:greenhouse_wall') * 4)

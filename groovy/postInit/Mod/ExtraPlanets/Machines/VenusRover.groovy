@@ -40,7 +40,7 @@ if (isLoaded("extraplanets")) {
    }
 
    // Ракетный компьютер
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(3)
       .inputs(
          item('opencomputers:case1'),
@@ -55,7 +55,7 @@ if (isLoaded("extraplanets")) {
       .duration(600).EUt(4096).buildAndRegister()
 
    // Колесо
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(1)
       .inputs(
          metaitem('plateDenseTungstenSteel') * 2, 
@@ -65,7 +65,7 @@ if (isLoaded("extraplanets")) {
       .duration(200).EUt(1340).buildAndRegister()
 
    // Батарея
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(2)
       .inputs(
          ore('batteryLuv') * 3, 

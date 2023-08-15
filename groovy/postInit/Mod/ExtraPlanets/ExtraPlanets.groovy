@@ -1,6 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayGC
+import classes.Array.arrayVanila
+import classes.Array.arrayGC
 
 
 if (isLoaded("extraplanets")) {
@@ -49,7 +49,7 @@ if (isLoaded("extraplanets")) {
    }
    
    // Легкий
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('galacticraftcore:canister') * 2, 
@@ -59,7 +59,7 @@ if (isLoaded("extraplanets")) {
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(1000).EUt(128).buildAndRegister()
    // Средний
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('galacticraftcore:canister') * 4, 
@@ -69,7 +69,7 @@ if (isLoaded("extraplanets")) {
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(1000).EUt(512).buildAndRegister()
    // Тяжелый
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('galacticraftcore:canister') * 6, 
@@ -80,7 +80,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(2048).buildAndRegister()
    
    // Очень тяжелый
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          ore('gc.oxygen.tank.heavy') * 3, 
@@ -90,7 +90,7 @@ if (isLoaded("extraplanets")) {
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(1000).EUt(8192).buildAndRegister()
    // Экстремально тяжелый
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('extraplanets:oxygen_tank_very_heavy_full') * 3, 
@@ -101,7 +101,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(32768).buildAndRegister()
    
    // Взлетная площадка 2 Tiers
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('galacticraftcore:landing_pad') * 3, 
@@ -110,7 +110,7 @@ if (isLoaded("extraplanets")) {
       .duration(300).EUt(1000).buildAndRegister()
    
    // Взлетная площадка 3 Tiers
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('extraplanets:advanced_launch_pad') * 3, 
@@ -120,7 +120,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(5208).buildAndRegister()
    
    // Взлетная площадка электрической ракеты
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('extraplanets:advanced_launch_pad:1') * 3, 
@@ -131,7 +131,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(30038).buildAndRegister()
    
    // Площадка для роверов
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(6)
       .inputs(
          item('galacticraftplanets:mars:8') * 3, 
@@ -140,7 +140,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(5208).buildAndRegister()
    
    // Гравитационный контроллер
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(1)
       .inputs(
          metaitem('plateDenseMeteoricIron') * 9, 
@@ -151,7 +151,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(31123).buildAndRegister()
    
    // Кислородный контроллер
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(2)
       .inputs(
          metaitem('plateDenseDesh') * 9, 
@@ -163,7 +163,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(31123).buildAndRegister()
    
    // Космический контроллер
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(3)
       .inputs(
          metaitem('plateDenseTitanium') * 9, 
@@ -175,7 +175,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(31123).buildAndRegister()
    
    // Модуль отсутствия повреждения при падении
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(3)
       .inputs( 
          item('extraplanets:tier2_un_prepared_space_suit_boots') * 4,
@@ -220,7 +220,7 @@ if (isLoaded("extraplanets")) {
    
    // Антирадиоционные пластины
    // T1
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(11)
       .inputs(
          metaitem('plateDoubleTungsten') * 6, 
@@ -228,7 +228,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier1_radiation_layer'))
       .duration(1000).EUt(2280).buildAndRegister()
    // T2
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(12)
       .inputs(
          metaitem('plateDoubleTungsten') * 6, 
@@ -237,7 +237,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier2_radiation_layer'))
       .duration(1000).EUt(8680).buildAndRegister()
    // T3
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(13)
       .inputs(
          metaitem('plateDoubleTungsten') * 6, 
@@ -246,7 +246,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier3_radiation_layer'))
       .duration(1000).EUt(38480).buildAndRegister()
    // T4
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(14)
       .inputs(
          metaitem('plateDoubleTungsten') * 6, 
@@ -257,7 +257,7 @@ if (isLoaded("extraplanets")) {
    
    // Пластины давления
    // T1
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(11)
       .inputs(
          item('galacticraftcore:oxygen_concentrator') * 4, 
@@ -265,7 +265,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier1_pressure_layer'))
       .duration(1000).EUt(2280).buildAndRegister()
    // T2
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(12)
       .inputs(
          item('galacticraftcore:oxygen_concentrator') * 6, 
@@ -274,7 +274,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier2_pressure_layer'))
       .duration(1000).EUt(8680).buildAndRegister()
    // T3
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(13)
       .inputs(
          item('galacticraftcore:oxygen_concentrator') * 8, 
@@ -283,7 +283,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:tier3_pressure_layer'))
       .duration(1000).EUt(38480).buildAndRegister()
    // T4
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(14)
       .inputs(
          item('galacticraftcore:oxygen_concentrator') * 10, 
@@ -294,7 +294,7 @@ if (isLoaded("extraplanets")) {
    
    // Теплоизолирующая ткань
    // T1
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(11)
       .inputs(
          item('extraplanets:cloth') * 6, 
@@ -302,7 +302,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('galacticraftplanets:item_basic_asteroids:7'))
       .duration(100).EUt(1024).buildAndRegister()
    // T2
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(12)
       .inputs(
          item('extraplanets:cloth') * 12, 
@@ -310,7 +310,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('galacticraftplanets:basic_item_venus:3'))
       .duration(100).EUt(4096).buildAndRegister()
    // T3
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(13)
       .inputs(
          item('extraplanets:cloth') * 18, 
@@ -318,7 +318,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:thermal_cloth'))
       .duration(100).EUt(16384).buildAndRegister()
    // T4
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(14)
       .inputs(
          item('extraplanets:cloth') * 24, 
@@ -326,7 +326,7 @@ if (isLoaded("extraplanets")) {
       .outputs(item('extraplanets:thermal_cloth:1'))
       .duration(100).EUt(65536).buildAndRegister()
    // T5
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(15)
       .inputs(
          item('extraplanets:cloth') * 28, 
@@ -338,25 +338,25 @@ if (isLoaded("extraplanets")) {
    // Заготовки под скафандры
    // Шлем
    for (int i = 0; i < arrayGC.materialSpace.size(); i++) {
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(15)
       .inputs(arrayGC.materialSpace[i] * 5)
       .outputs(arrayGC.unSpaceSuitHelmet[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Нагрудник
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(16)
       .inputs(arrayGC.materialSpace[i] * 8)
       .outputs(arrayGC.unSpaceSuitChest[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Штаны
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(17)
       .inputs(arrayGC.materialSpace[i] * 7)
       .outputs(arrayGC.unSpaceSuitLegings[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Ботинки
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(18)
       .inputs(arrayGC.materialSpace[i] * 4)
       .outputs(arrayGC.unSpaceSuitBoots[i])
@@ -365,7 +365,7 @@ if (isLoaded("extraplanets")) {
    // Скафандры
    // Шлем
    for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(15)
       .inputs(arrayGC.armorLayer[i] * 2)
       .inputs(arrayGC.radiationLayer[i] * 3)
@@ -374,7 +374,7 @@ if (isLoaded("extraplanets")) {
       .outputs(arrayGC.spaceSuitHelmet[i])
       .duration(1000).EUt(8002).buildAndRegister()
    // Нагрудник
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(16)
       .inputs(arrayGC.armorLayer[i] * 2)
       .inputs(arrayGC.radiationLayer[i] * 3)
@@ -383,7 +383,7 @@ if (isLoaded("extraplanets")) {
       .outputs(arrayGC.spaceSuitChest[i])
       .duration(1000).EUt(8002).buildAndRegister()
    // Штаны
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(17)
       .inputs(arrayGC.armorLayer[i] * 2)
       .inputs(arrayGC.radiationLayer[i] * 3)
@@ -392,7 +392,7 @@ if (isLoaded("extraplanets")) {
       .outputs(arrayGC.spaceSuitLegings[i])
       .duration(1000).EUt(8002).buildAndRegister()
    // Ботинки
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(18)
       .inputs(arrayGC.armorLayer[i] * 2)
       .inputs(arrayGC.radiationLayer[i] * 3)
@@ -402,7 +402,7 @@ if (isLoaded("extraplanets")) {
       .duration(1000).EUt(8002).buildAndRegister()
    }
    for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
-      assembler.recipeBuilder()
+      mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(19)
       .inputs(arrayGC.materialEngine[i] * 2)
       .inputs(ore('batteryLuv') * 3)
@@ -414,28 +414,28 @@ if (isLoaded("extraplanets")) {
    //  Теплоустойчивая броня
    // Шлем
    for (int i = 0; i < arrayGC.armorLayer.size(); i++) {
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(15)
       .inputs(arrayGC.thermalCloth[i] * 5)
       .inputs(arrayGC.materialThermal[i] * 2)
       .outputs(arrayGC.thermalPaddingHelmet[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Нагрудник
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(16)
       .inputs(arrayGC.thermalCloth[i] * 8)
       .inputs(arrayGC.materialThermal[i] * 2)
       .outputs(arrayGC.thermalPaddingChest[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Штаны
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(17)
       .inputs(arrayGC.thermalCloth[i] * 7)
       .inputs(arrayGC.materialThermal[i] * 2)
       .outputs(arrayGC.thermalPaddingLegings[i])
       .duration(500).EUt(2000).buildAndRegister()
    // Ботинки
-   assembler.recipeBuilder()
+   mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(18)
       .inputs(arrayGC.thermalCloth[i] * 4)
       .inputs(arrayGC.materialThermal[i] * 2)

@@ -5,7 +5,7 @@ if (isLoaded("enderstorage")) {
     // ---- Добавление рецептов
     
     // Chest
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(1)
       .inputs(
         metaitem('foilBronze') * 4,
@@ -19,7 +19,7 @@ if (isLoaded("enderstorage")) {
       .duration(980).EUt(7080).buildAndRegister()
     
     // Tank
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(2)
       .inputs(
         metaitem('foilBronze') * 4,
@@ -33,7 +33,7 @@ if (isLoaded("enderstorage")) {
       .duration(980).EUt(7080).buildAndRegister()
     
     // Pouch
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
       .circuitMeta(3)
       .inputs(
         metaitem('foilBronze') * 4,

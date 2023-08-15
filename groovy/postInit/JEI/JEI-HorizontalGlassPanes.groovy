@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayHGP
+import classes.Array.arrayHGP
 
 
 if (isLoaded("hgp")) {

@@ -61,7 +61,7 @@ if (isLoaded("xtones")) {
         [item('xtones:base'), item('xtones:base'), item('xtones:base')]])
 
     // Лампа
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
     	.circuitMeta(25)
     	.inputs(
     		metaitem('wireGtSingleRedAlloy'), 

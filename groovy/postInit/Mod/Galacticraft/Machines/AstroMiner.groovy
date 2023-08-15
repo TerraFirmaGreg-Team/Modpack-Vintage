@@ -20,7 +20,7 @@ assembly_line.recipeBuilder()
 	.duration(1200).EUt(4096).buildAndRegister()
 
 // Ракетный компьютер
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(3)
 	.inputs(
 		item('opencomputers:case2'),

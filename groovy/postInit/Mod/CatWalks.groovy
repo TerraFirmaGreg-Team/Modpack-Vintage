@@ -1,4 +1,4 @@
-import postInit.Utility.Function
+import classes.Function
 
 
 if (isLoaded("catwalks")) {
@@ -15,7 +15,7 @@ if (isLoaded("catwalks")) {
     crafting.addShapeless("tfg/catwalks/catwalk/custom_0", item('catwalks:catwalk').withNbt([material: "custom_0"]), [item('catwalks:catwalk').withNbt([material: "treated_wood"])])
     
     // Classic Catwalk * 4
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameSteel'), 
@@ -25,7 +25,7 @@ if (isLoaded("catwalks")) {
         .duration(20).EUt(7).buildAndRegister()
     
     // Classic Catwalk * 16
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameBlackSteel'), 
@@ -35,7 +35,7 @@ if (isLoaded("catwalks")) {
         .duration(40).EUt(7).buildAndRegister()
     
     // Glass Catwalk * 4
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameSteel'), 
@@ -45,7 +45,7 @@ if (isLoaded("catwalks")) {
         .duration(20).EUt(7).buildAndRegister()
     
     // Glass Catwalk * 16
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameBlackSteel'), 
@@ -55,7 +55,7 @@ if (isLoaded("catwalks")) {
         .duration(40).EUt(7).buildAndRegister()
     
     // Wood Catwalk * 4
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameTreatedWood'), 
@@ -65,7 +65,7 @@ if (isLoaded("catwalks")) {
         .duration(20).EUt(7).buildAndRegister()
     
     // Wood Catwalk * 16
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(16)
         .inputs(
             metaitem('frameTreatedWood'), 
@@ -75,7 +75,7 @@ if (isLoaded("catwalks")) {
         .duration(40).EUt(7).buildAndRegister()
     
     // Classic Ladder
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(17)
         .inputs(
             item('minecraft:ladder'), 
@@ -84,14 +84,14 @@ if (isLoaded("catwalks")) {
         .duration(15).EUt(7).buildAndRegister()
     
     // Classic Support Cables * 12
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(18)
         .inputs(metaitem('stickLongSteel') * 3)
         .outputs(item('catwalks:cable') * 12)
         .duration(25).EUt(7).buildAndRegister()
     
     // Classic Support Cables * 32
-    assembler.recipeBuilder()
+    mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(18)
         .inputs(metaitem('stickLongBlackSteel') * 3)
         .outputs(item('catwalks:cable') * 32)

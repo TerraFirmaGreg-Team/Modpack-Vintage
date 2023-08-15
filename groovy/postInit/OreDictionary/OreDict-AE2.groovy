@@ -1,4 +1,4 @@
-import postInit.Utility.Array.arrayAE2
+import classes.Array.arrayAE2
 
 if (isLoaded("appliedenergistics2")) {
     // --- Добавление

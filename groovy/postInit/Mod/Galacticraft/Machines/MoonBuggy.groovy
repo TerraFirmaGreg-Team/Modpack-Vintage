@@ -39,7 +39,7 @@ assembly_line.recipeBuilder()
 }
 
 // Ракетный компьютер
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(1)
    .inputs(
       item('opencomputers:case1'),
@@ -60,7 +60,7 @@ crafting.addShaped("tfg/gc/buggy_seat", item('galacticraftcore:buggymat:1'), [
    [metaitem('plateDenseSteel'), metaitem('plateDenseSteel'), metaitem('plateDenseSteel')]])
 
 // Колесо
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(1)
    .inputs(
       metaitem('plateDenseStainlessSteel') * 2, 

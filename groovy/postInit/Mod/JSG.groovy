@@ -424,7 +424,7 @@ assembly_line.recipeBuilder()
 	.outputs(item('jsg:transportrings_goauld_block'))
 	.duration(200).EUt(2800).buildAndRegister()
 // Фрагмент транспортных колец: Goa'uld
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		metaitem('plateDenseTitanium') * 3,
 		metaitem('plateDenseTitanium') * 3)
@@ -446,7 +446,7 @@ assembly_line.recipeBuilder()
 	.duration(200).EUt(2800).buildAndRegister()
 
 // Фрагмент транспортных колец: Ori
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		metaitem('plateDenseTrinium') * 3,
 		metaitem('plateDenseTrinium') * 3)
@@ -467,7 +467,7 @@ assembly_line.recipeBuilder()
 	.outputs(item('jsg:transportrings_ancient_block'))
 	.duration(200).EUt(2800).buildAndRegister()
 // Фрагмент транспортных колец: Ancientу
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(3)
 	.inputs(
 		metaitem('plateDenseTrinium') * 3,
@@ -530,13 +530,13 @@ crafting.addShaped("tfg/jsg/iris_blade", item('jsg:iris_blade'), [
 	[null, metaitem('plateDenseTitanium'), metaitem('plateDenseTitanium')],
 	[null, null, metaitem('plateDenseTitanium')]])
 
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(item('jsg:iris_blade') * 4)
 	.outputs(item('jsg:quad_iris_blade'))
 	.duration(20).EUt(2900).buildAndRegister()
 
 // Диафрагма (Титан)
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(16)
 	.inputs(
 		item('jsg:quad_iris_blade') * 5, 
@@ -551,13 +551,13 @@ crafting.addShaped("tfg/jsg/iris_blade_trinium", item('jsg:iris_blade_trinium'),
 	[null, metaitem('plateDenseTrinium'), metaitem('plateDenseTrinium')],
 	[null, null, metaitem('plateDenseTrinium')]])
 
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(item('jsg:iris_blade_trinium') * 4)
 	.outputs(item('jsg:quad_iris_blade_trinium'))
 	.duration(20).EUt(2900).buildAndRegister()
 
 // Диафрагма (Триниум)
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(16)
 	.inputs(
 		item('jsg:quad_iris_blade_trinium') * 5, 
@@ -580,7 +580,7 @@ assembly_line.recipeBuilder()
 	.duration(400).EUt(42900).buildAndRegister()
 
 // Щит
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(16)
 	.inputs(
 		item('jsg:shield_emitter') * 2, 
@@ -591,7 +591,7 @@ assembler.recipeBuilder()
 	.duration(420).EUt(112900).buildAndRegister()
 
 // GDO
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(16)
 	.inputs(
 		item('jsg:crystal_red'), 

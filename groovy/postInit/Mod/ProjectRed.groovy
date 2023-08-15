@@ -1,5 +1,5 @@
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayProjectRed
+import classes.Array.arrayVanila
+import classes.Array.arrayProjectRed
 
 
 if (isLoaded("projectred-core")) {
@@ -20,7 +20,7 @@ if (isLoaded("projectred-core")) {
 			.duration(20).EUt(7).buildAndRegister()
 
 		// Deactivated Lamps
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(12)
 			.inputs(
 				metaitem('wireGtSingleRedAlloy'), 
@@ -31,7 +31,7 @@ if (isLoaded("projectred-core")) {
 			.duration(180).EUt(32).buildAndRegister()
 
 		// Button Lamps
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(14)
 			.inputs(
 				ore('buttonStone'), 
@@ -40,7 +40,7 @@ if (isLoaded("projectred-core")) {
 			.duration(180).EUt(32).buildAndRegister()
 
 		// All Deactivated Lantern Lamps
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(16)
 			.inputs(
 				metaitem('wireGtSingleRedAlloy'), 
@@ -52,7 +52,7 @@ if (isLoaded("projectred-core")) {
 			.duration(180).EUt(32).buildAndRegister()
 
 		// Deactivated Fixture Lamps
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(18)
 			.inputs(
 				item('projectred-core:resource_item:1'), 
@@ -64,7 +64,7 @@ if (isLoaded("projectred-core")) {
 			.duration(180).EUt(32).buildAndRegister()
 
 		// Deactivated Fallout Lamps
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(20)
 			.inputs(
 				item('projectred-core:resource_item:1'), 
@@ -78,7 +78,7 @@ if (isLoaded("projectred-core")) {
 
 	// Activated Lamps
 	for (int i = 0; i < arrayProjectRed.aLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(13)
 			.inputs(
 				arrayProjectRed.deLamps[i], 
@@ -89,7 +89,7 @@ if (isLoaded("projectred-core")) {
 
 	// Feedback Lamps
 	for (int i = 0; i < arrayProjectRed.feedbackLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(15)
 			.inputs(
 				item('minecraft:redstone_torch'), 
@@ -100,7 +100,7 @@ if (isLoaded("projectred-core")) {
 
 	// Activated Lantern Lamps
 	for (int i = 0; i < arrayProjectRed.aLanternLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(17)
 			.inputs(
 				arrayProjectRed.deLanternLamps[i], 
@@ -111,7 +111,7 @@ if (isLoaded("projectred-core")) {
 
 	// Activated Fixture Lamps
 	for (int i = 0; i < arrayProjectRed.aFixtureLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(19)
 			.inputs(
 				arrayProjectRed.deFixtureLamps[i], 
@@ -122,7 +122,7 @@ if (isLoaded("projectred-core")) {
 
 	// Activated Fallout Lamps
 	for (int i = 0; i < arrayProjectRed.aFalloutLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(21)
 			.inputs(
 				arrayProjectRed.deFalloutLamps[i], 
@@ -133,7 +133,7 @@ if (isLoaded("projectred-core")) {
 
 	// Deactivated Cage Lamps
 	for (int i = 0; i < arrayProjectRed.deCageLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(22)
 			.inputs(
 				item('projectred-core:resource_item:1'), 
@@ -146,7 +146,7 @@ if (isLoaded("projectred-core")) {
 
 	// Activated Cage Lamps
 	for (int i = 0; i < arrayProjectRed.aCageLamps.size(); i++) {
-		assembler.recipeBuilder()
+		mods.gregtech.assembler.recipeBuilder()
 			.circuitMeta(23)
 			.inputs(
 				arrayProjectRed.deCageLamps[i], 
@@ -171,7 +171,7 @@ if (isLoaded("projectred-core")) {
 		.duration(200).EUt(32).buildAndRegister()
 
 	// Red Alloy Wire
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(2)
 		.inputs(metaitem('wireGtSingleRedAlloy') * 2)
 		.fluidInputs(fluid('redstone') * 144)
@@ -187,7 +187,7 @@ if (isLoaded("projectred-core")) {
 	}
 
 	// Bundled Cable
-	assembler.recipeBuilder()
+	mods.gregtech.assembler.recipeBuilder()
 		.circuitMeta(3)
 		.inputs(item('projectred-transmission:wire') * 5)
 		.inputs(ore('string') * 4)

@@ -1,6 +1,6 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayAE2
+import classes.Array.arrayVanila
+import classes.Array.arrayAE2
 
 
 if (isLoaded("aeadditions")) {
@@ -44,9 +44,9 @@ for (int i = 4; i < 7; i++) {
     .duration(10).EUt(7).buildAndRegister()
 }
 // Fluid Storage Housing
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
-    metaitem('fluid.housing') * 2, 
+    item('tfgmod:meta_item', 50) * 2, 
     metaitem('gemQuartzite') * 2, 
     metaitem('plateStainlessSteel') * 4, 
     metaitem('screwStainlessSteel') * 2)
@@ -68,7 +68,7 @@ arc_furnace.recipeBuilder()
   .duration(56).EUt(30).buildAndRegister()
 
 // Advanced Storage Housing
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
     item('appliedenergistics2:material:39') * 2, 
     metaitem('gemQuartzite') * 2, 
@@ -92,7 +92,7 @@ arc_furnace.recipeBuilder()
   .duration(56).EUt(30).buildAndRegister()
 
 // 256k Storage Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitZpm') * 4, 
     metaitem('plateNaquadahAlloy') * 4, 
@@ -101,7 +101,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('steel') * 144)
   .outputs(item('aeadditions:storage.component'))
   .duration(400).EUt(122880).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 24), 
     ore('circuitZpm') * 2, 
@@ -110,7 +110,7 @@ assembler.recipeBuilder()
   .outputs(item('aeadditions:storage.component'))
   .duration(200).EUt(122880).buildAndRegister()
 // 1024k Storage Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitZpm') * 4, 
     metaitem('plateAmericium') * 4, 
@@ -119,7 +119,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('steel') * 144)
   .outputs(item('aeadditions:storage.component', 1))
   .duration(400).EUt(122880).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 24), 
     ore('circuitZpm') * 2, 
@@ -128,7 +128,7 @@ assembler.recipeBuilder()
   .outputs(item('aeadditions:storage.component', 1))
   .duration(200).EUt(122880).buildAndRegister()
 // 4096k Storage Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitUv') * 4, 
     metaitem('plateDarmstadtium') * 4, 
@@ -137,7 +137,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('steel') * 144)
   .outputs(item('aeadditions:storage.component', 2))
   .duration(400).EUt(491520).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 23), 
     ore('circuitUv') * 2, 
@@ -146,7 +146,7 @@ assembler.recipeBuilder()
   .outputs(item('aeadditions:storage.component', 2))
   .duration(200).EUt(491520).buildAndRegister()
 // 16384k Storage Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitUv') * 4, 
     metaitem('plateNeutronium') * 4, 
@@ -155,7 +155,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('steel') * 144)
   .outputs(item('aeadditions:storage.component', 3))
   .duration(400).EUt(491520).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 23), 
     ore('circuitUv') * 2, 
@@ -165,7 +165,7 @@ assembler.recipeBuilder()
   .duration(200).EUt(491520).buildAndRegister()
 
 // 256k Fluid Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitZpm') * 4, 
     metaitem('plateNaquadahAlloy') * 4, 
@@ -174,7 +174,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('stainless_steel') * 144)
   .outputs(item('aeadditions:storage.component:4'))
   .duration(400).EUt(122880).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 24), 
     ore('circuitZpm') * 2, 
@@ -183,7 +183,7 @@ assembler.recipeBuilder()
   .outputs(item('aeadditions:storage.component:4'))
   .duration(200).EUt(122880).buildAndRegister()
 // 1024k Fluid Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitZpm') * 4, 
     metaitem('plateAmericium') * 4, 
@@ -192,7 +192,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('stainless_steel') * 144)
   .outputs(item('aeadditions:storage.component:5'))
   .duration(400).EUt(122880).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 24),
     ore('circuitZpm') * 2,
@@ -201,7 +201,7 @@ assembler.recipeBuilder()
   .outputs(item('aeadditions:storage.component:5'))
   .duration(200).EUt(122880).buildAndRegister()
 // 4096k Fluid Component
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     ore('circuitUv') * 4, 
     metaitem('plateDarmstadtium') * 4, 
@@ -210,7 +210,7 @@ assembler.recipeBuilder()
   .fluidInputs(fluid('stainless_steel') * 144)
   .outputs(item('aeadditions:storage.component:6'))
   .duration(400).EUt(491520).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material', 23), 
     ore('circuitUv') * 2, 
@@ -224,7 +224,7 @@ assembler.recipeBuilder()
 //   [item('appliedenergistics2:part:220'), metaitem('ore_dictionary_filter')])
 
 // Жидкостный автозаполнитель
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('aeadditions:fluidcrafter'),
     item('appliedenergistics2:part:520'))
@@ -233,7 +233,7 @@ assembler.recipeBuilder()
   .duration(200).EUt(480).buildAndRegister()
 
 // Переносное жидкостное хранилище
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('appliedenergistics2:material:54'),
     item('appliedenergistics2:chest'),
@@ -243,7 +243,7 @@ assembler.recipeBuilder()
   .duration(200).EUt(480).buildAndRegister()
 
 // Переносное предметное хранилище
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
   .inputs(
     item('aeadditions:storage.component'),
     item('appliedenergistics2:chest'),
@@ -272,7 +272,7 @@ crafting.addShaped("tfg/aeadditions/me_energy_cell_fixture", item('aeadditions:p
 
 
 // ME Upgrade - Tier 1
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
     .inputs(
         metaitem('circuit_board.advanced'),
@@ -283,7 +283,7 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('tin') * 288)
     .outputs(item('aeadditions:oc.upgrade:2'))
     .duration(200).EUt(480).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
     .inputs(
         metaitem('circuit_board.advanced'),
@@ -296,7 +296,7 @@ assembler.recipeBuilder()
     .duration(200).EUt(480).buildAndRegister()
 
 // ME Upgrade - Tier 2
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
     .inputs(
         metaitem('circuit_board.extreme'),
@@ -307,7 +307,7 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('tin') * 288)
     .outputs(item('aeadditions:oc.upgrade:1'))
     .duration(200).EUt(1920).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
     .inputs(
         metaitem('circuit_board.extreme'),
@@ -320,7 +320,7 @@ assembler.recipeBuilder()
     .duration(200).EUt(1920).buildAndRegister()
 
 // ME Upgrade - Tier 3
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(2)
     .inputs(
         metaitem('circuit_board.extreme'),
@@ -331,7 +331,7 @@ assembler.recipeBuilder()
     .fluidInputs(fluid('tin') * 288)
     .outputs(item('aeadditions:oc.upgrade'))
     .duration(200).EUt(1920).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(2)
     .inputs(
         metaitem('circuit_board.extreme'),

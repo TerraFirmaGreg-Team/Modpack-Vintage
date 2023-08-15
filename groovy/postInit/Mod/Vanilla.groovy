@@ -1,4 +1,4 @@
-import postInit.Utility.Function
+import classes.Function
 
 
 // --- Добавление рецептов
@@ -106,7 +106,7 @@ crafting.addShaped("tfg/vanilla/redstone_lamp", item('minecraft:redstone_lamp'),
 	[ore('stickIronAny'), metaitem('cableGtSingleRedAlloy'), ore('stickIronAny')],
 	[metaitem('plateBrass'), ore('stickIronAny'), metaitem('plateBrass')]])
 
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		metaitem('plateBrass') * 4, 
 		ore('stickIronAny') * 4)
@@ -246,7 +246,7 @@ lathe.recipeBuilder()
 	.duration(16).EUt(7).buildAndRegister()
 
 // Раздатчик
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		ore('cobblestone') * 2, 
 		ore('ringIronAny'), 
@@ -294,7 +294,7 @@ centrifuge.recipeBuilder()
 	.duration(150).EUt(5).buildAndRegister()
 
 // Стойка для брони
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		ore('slabStonePolished'), 
 		item('minecraft:stick') * 6)
@@ -302,7 +302,7 @@ assembler.recipeBuilder()
 	.duration(100).EUt(7).buildAndRegister()
 
 // Воронка
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		ore('chest'), 
 		ore('plateIronAny') * 5, 
@@ -344,7 +344,7 @@ macerator.recipeBuilder()
 	.duration(50).EUt(2).buildAndRegister()
 
 // Крюк
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		item('minecraft:stick') * 2, 
 		ore('ringIronAny') * 2)
@@ -352,13 +352,13 @@ assembler.recipeBuilder()
 	.duration(100).EUt(4).buildAndRegister()
 
 // Проигрыватель
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(metaitem('boltDiamond'), ore('gearIronAny'), ore('ringIronAny'), metaitem('plateWood') * 4, item('minecraft:noteblock') * 2)
 	.outputs(item('minecraft:jukebox'))
 	.duration(100).EUt(16).buildAndRegister()
 
 // Поршень
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		ore('cobblestone'), 
 		ore('slabWood'), 
@@ -369,14 +369,14 @@ assembler.recipeBuilder()
 	.duration(100).EUt(7).buildAndRegister()
 
 // Котёл
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(ore('plateIronAny') * 7)
 	.circuitMeta(7)
 	.outputs(item('minecraft:cauldron'))
 	.duration(100).EUt(4).buildAndRegister()
 
 // Компас
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		metaitem('stickIronMagnetic'), 
 		ore('plateIronAny') * 4)
@@ -384,7 +384,7 @@ assembler.recipeBuilder()
 	.duration(100).EUt(4).buildAndRegister()
 
 // Нажимная пластина из железа
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		metaitem('springSteel'), 
 		ore('plateIronAny'))
@@ -392,7 +392,7 @@ assembler.recipeBuilder()
 	.duration(200).EUt(16).buildAndRegister()
 
 // Вагонетка
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		ore('plateIronAny') * 3, 
 		ore('ringIronAny') * 4)
@@ -400,14 +400,14 @@ assembler.recipeBuilder()
 	.duration(100).EUt(4).buildAndRegister()
 
 // Железные прутья
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(ore('stickIronAny') * 3)
 	.circuitMeta(3)
 	.outputs(item('minecraft:iron_bars') * 4)
 	.duration(100).EUt(4).buildAndRegister()
 
 // Железная дверь
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
 	.inputs(
 		item('minecraft:iron_bars'), 
 		ore('plateIronAny') * 4)

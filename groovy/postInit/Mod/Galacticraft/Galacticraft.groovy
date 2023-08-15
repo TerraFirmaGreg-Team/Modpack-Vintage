@@ -1,7 +1,7 @@
 import gregtech.api.metatileentity.multiblock.CleanroomType
-import postInit.Utility.Array.arrayVanila
-import postInit.Utility.Array.arrayGC
-import postInit.Utility.Function
+import classes.Array.arrayVanila
+import classes.Array.arrayGC
+import classes.Function
 
 
 // --- Добавление рецептов
@@ -114,7 +114,7 @@ crafting.addShaped("tfg/gc/machine/dishbase", item('galacticraftcore:dishbase'),
    [ore('circuitIv'), metaitem('hull.ev'), ore('circuitIv')]])
 
 // Световые панели
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(1)
    .inputs(
       metaitem('plateDenseBlackSteel'),
@@ -122,7 +122,7 @@ assembler.recipeBuilder()
    .fluidInputs(fluid('glass') * 432)
    .outputs(item('galacticraftcore:panel_lighting'))
    .duration(20).EUt(58).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(2)
    .inputs(
       metaitem('plateDenseBlackSteel'),
@@ -130,7 +130,7 @@ assembler.recipeBuilder()
    .fluidInputs(fluid('glass') * 432)
    .outputs(item('galacticraftcore:panel_lighting', 1))
    .duration(20).EUt(58).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(3)
    .inputs(
       metaitem('plateDenseBlackSteel'),
@@ -138,7 +138,7 @@ assembler.recipeBuilder()
    .fluidInputs(fluid('glass') * 432)
    .outputs(item('galacticraftcore:panel_lighting', 2))
    .duration(20).EUt(58).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(4)
    .inputs(
       metaitem('plateDenseBlackSteel'),
@@ -146,7 +146,7 @@ assembler.recipeBuilder()
    .fluidInputs(fluid('glass') * 432)
    .outputs(item('galacticraftcore:panel_lighting', 3))
    .duration(20).EUt(58).buildAndRegister()
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(5)
    .inputs(
       metaitem('plateDenseBlackSteel'),
@@ -183,7 +183,7 @@ crafting.addShaped("tfg/gc/arclamp", item('galacticraftcore:arclamp'), [
    [metaitem('plateDesh'), item('minecraft:glowstone_dust'), metaitem('plateDesh')]])
 
 // Гидравлический подьемник
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('plateDenseTungstenSteel') * 16, 
@@ -206,7 +206,7 @@ crafting.addShaped("tfg/gc/oxygen_gear", item('galacticraftcore:oxygen_gear'), [
    [metaitem('pipeTinyFluidStainlessSteel'), item('galacticraftcore:air_fan'), metaitem('pipeTinyFluidStainlessSteel')]])
 
 // Сенсорные линза
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('plateDenseMeteoricIron'), 
@@ -216,7 +216,7 @@ assembler.recipeBuilder()
    .duration(1000).EUt(2012).buildAndRegister()
 
 // Сенсорные очки
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       item('galacticraftcore:sensor_lens') * 2, 
@@ -235,7 +235,7 @@ crafting.addShaped("tfg/gc/air_vent", item('galacticraftcore:air_vent'), [
    [item('galacticraftcore:grating'), metaitem('plateDenseTin'), item('galacticraftcore:grating')]])
 
 // Воздушный ротор
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('plateDenseSteel') * 4, 
@@ -307,7 +307,7 @@ canner.recipeBuilder()
    .duration(460).EUt(2).buildAndRegister()
 
 // Креокамера
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('plateDenseDesh') * 6, 
@@ -340,7 +340,7 @@ crafting.addShaped("tfg/gc/orion_drive", item('galacticraftplanets:orion_drive')
    [metaitem('plateDenseSteel'), item('galacticraftplanets:item_basic_asteroids', 8), metaitem('plateDenseSteel')]])
 
 // Модуль солнечной батареи
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('cableGtDoubleAluminium') * 2, 
@@ -350,7 +350,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(1480).buildAndRegister()
 
 // Панель солнечной батареи
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       metaitem('cover.solar.panel.luv') * 3, 
@@ -360,7 +360,7 @@ assembler.recipeBuilder()
    .duration(100).EUt(1480).buildAndRegister()
 
 // Контролер солнечной батареи
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(7)
    .inputs(
       ore('circuitLuv') * 2,
@@ -461,7 +461,7 @@ crafting.addShaped("tfg/gc/lander_tier3", metaitem('lander.tier.3'),
    [metaitem('plateDenseBlackSteel'), metaitem('plateBlackSteel'), metaitem('plateDenseBlackSteel')]])
 
 // Парашюты
-assembler.recipeBuilder()
+mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(1)
    .inputs(
       item('galacticraftcore:canvas') * 6,
