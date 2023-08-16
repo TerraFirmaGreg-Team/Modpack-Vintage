@@ -1,0 +1,16 @@
+{
+	x: -4.0d,
+	y: 1.0d,
+	dependencies: [
+		"854c4803"
+	],
+	tasks: [{
+		uid: "1ffebc14",
+		type: "item",
+		items: [{
+			item: "nae2:pattern_multiplier"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -126,7 +126,7 @@ if (isLoaded("gregtechfoodoption1")) {
 
    // Chum on Skewel Kebab * 4
    mods.gregtech.cuisine_assembler.removeByInput(16, [metaitem('food.chum') * 8, metaitem('component.banana_peel') * 2, metaitem('crop.onion'), metaitem('mashed_potato_dust') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], [fluid('gtfo_yolk') * 200, fluid('gtfo_stearin') * 400])
-   Kebab Meat Raw * 4
+   // Kebab Meat Raw * 4
    mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:chicken') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
    // Kebab Meat Raw * 4
    mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:beef') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
@@ -140,7 +140,7 @@ if (isLoaded("gregtechfoodoption1")) {
    mods.gregtech.cuisine_assembler.removeByInput(7, [item('minecraft:sugar'), item('minecraft:egg'), metaitem('food.cake_bottom_baked')], [fluid('milk') * 3000])
    // Large Meat Sandwich * 3
    mods.gregtech.cuisine_assembler.removeByInput(75, [metaitem('component.baguettes') * 3, metaitem('food.cheddar_slice') * 3, item('minecraft:cooked_beef') * 3], null)
-   Kebab e Soltani! * 2
+   // Kebab e Soltani! * 2
    mods.gregtech.cuisine_assembler.removeByInput(120, [metaitem('food.kebab.barg') * 2, metaitem('food.kebab.kubide'), metaitem('crop.tomato') * 3, metaitem('crop.onion') * 2, metaitem('food.lemon')], [fluid('gtfo_stearin') * 1000, fluid('gtfo_lemon_extract') * 250])
 
 
@@ -172,9 +172,9 @@ if (isLoaded("gregtechfoodoption1")) {
 
    // Sugary Dough * 2
    mods.gregtech.mixer.removeByInput(7, [item('minecraft:sugar'), metaitem('component.dough')], null)
-   Rabbit Stew * 125
+   // Rabbit Stew * 125
    mods.gregtech.mixer.removeByInput(8, [item('minecraft:brown_mushroom'), item('minecraft:carrot'), item('minecraft:cooked_rabbit'), metaitem('mashed_potato_dust'), metaitem('dustWheat')], [fluid('water') * 50])
-   Chum * 3
+   // Chum * 3
    mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100])
    // Chum * 6
    mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100, fluid('gtfo_purple_drink') * 100])
