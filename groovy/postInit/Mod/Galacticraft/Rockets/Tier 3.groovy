@@ -26,7 +26,7 @@ if (isLoaded("galacticraftcore")) {
 	assembly_line.recipeBuilder()
 		.inputs(item('galacticraftplanets:heavy_nose_cone'))
 		.inputs(item('galacticraftcore:heavy_plating') * 2)
-		.inputs(metaitem('rocket.body.tier.3') * 12)
+		.inputs(item('tfgmod:meta_item', 15) * 12)
 		.inputs(item('galacticraftplanets:item_basic_asteroids:2') * 4)
 		.inputs(item('galacticraftplanets:item_basic_asteroids:1'))
 		.inputs(item('galacticraftcore:engine:1') * 2)
@@ -78,7 +78,7 @@ if (isLoaded("galacticraftcore")) {
 			metaitem('voltage_coil.iv') * 2,
 			metaitem('field.generator.iv') * 3)
 		.fluidInputs(fluid('soldering_alloy') * 288)
-		.outputs(metaitem('rocket.body.tier.3'))
+		.outputs(item('tfgmod:meta_item', 15))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(4096).buildAndRegister()
 	// Стабилизаторы

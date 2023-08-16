@@ -20,7 +20,7 @@ for (int i = 0; i < rocket.size(); i++)  {
 // Ракета
 assembly_line.recipeBuilder()
    .inputs(item('galacticraftcore:nose_cone'))
-   .inputs(metaitem('rocket.body.tier.2') * 8)
+   .inputs(item('tfgmod:meta_item', 14) * 8)
    .inputs(item('galacticraftcore:rocket_fins') * 4)
    .inputs(item('galacticraftcore:engine'))
    .inputs(item('galacticraftcore:oil_canister_partial:1001') * 3)

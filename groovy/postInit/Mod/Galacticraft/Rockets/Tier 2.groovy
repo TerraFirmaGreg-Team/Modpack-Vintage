@@ -26,7 +26,7 @@ if (isLoaded("galacticraftcore")) {
 	// Ракета
 	assembly_line.recipeBuilder()
 		.inputs(item('galacticraftcore:nose_cone'))
-		.inputs(metaitem('rocket.body.tier.2') * 10)
+		.inputs(item('tfgmod:meta_item', 14) * 10)
 		.inputs(item('galacticraftcore:rocket_fins') * 4)
 		.inputs(item('galacticraftcore:engine') * 2)
 		.inputs(item('galacticraftcore:engine:1') * 2)
@@ -66,7 +66,7 @@ if (isLoaded("galacticraftcore")) {
 			metaitem('voltage_coil.ev') * 2,
 			metaitem('field.generator.ev') * 2)
 		.fluidInputs(fluid('soldering_alloy') * 288)
-		.outputs(metaitem('rocket.body.tier.2'))
+		.outputs(item('tfgmod:meta_item', 14))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(1024).buildAndRegister()
 	// Ускорители

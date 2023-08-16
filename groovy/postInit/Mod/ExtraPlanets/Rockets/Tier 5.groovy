@@ -26,7 +26,7 @@ if (isLoaded("extraplanets")) {
 	// Ракета
 	assembly_line.recipeBuilder()
 		.inputs(item('extraplanets:nose_cone_tier5'))
-		.inputs(metaitem('rocket.body.tier.5') * 12)
+		.inputs(item('tfgmod:meta_item', 17) * 12)
 		.inputs(item('extraplanets:tier5_items:2') * 6)
 		.inputs(item('extraplanets:tier5_items:1') * 4)
 		.inputs(item('extraplanets:tier5_items') * 4)
@@ -78,7 +78,7 @@ if (isLoaded("extraplanets")) {
 			metaitem('voltage_coil.zpm') * 2,
 			metaitem('field.generator.zpm'))
 		.fluidInputs(fluid('soldering_alloy') * 288)
-		.outputs(metaitem('rocket.body.tier.5'))
+		.outputs(item('tfgmod:meta_item', 17))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(300).EUt(65536).buildAndRegister()
 	// Стабилизаторы
