@@ -30,7 +30,8 @@ jobs:
 
       - name: normal -> extended
         run: | 
-          cp -r .minecraft/* ./extended/.minecraft/
+          rsync -av --exclude-from='buildtools/filelist.txt' ./ ./.minecraft/
+          cp -r ./.minecraft/* ./extended/.minecraft/
           cp -r ./modlist.html ./extended/modlist_temp.html
           cp -r ./manifest.json ./extended/manifest_temp.json
           sed -i -e 1,16d ./extended/manifest_temp.json
