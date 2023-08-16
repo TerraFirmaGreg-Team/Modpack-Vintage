@@ -7,6 +7,7 @@ resources/
 scripts/
 shaderpacks/
 instance.cfg
+icon.png
 manifest.json
 mmc-pack.json
 modlist.html
