@@ -308,7 +308,7 @@ customization {
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink;https://discord.gg/y4khKF9zjT%btnaction_splitter_fm%
+  buttonaction = openlink;https://discord.gg/terrafirmagreg%btnaction_splitter_fm%
   backgroundhovered = resources\modpack\icons\discord_h.png
   description = %local:tfg.menu.discord%
   label = 
@@ -342,7 +342,7 @@ customization {
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink;https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/issues%btnaction_splitter_fm%
+  buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues%btnaction_splitter_fm%
   backgroundhovered = resources\modpack\icons\github_h.png
   description = %local:tfg.menu.github%
   label = 
@@ -375,7 +375,7 @@ customization {
 customization {
   orientation = element
   restartbackgroundanimations = true
-  buttonaction = downloadfile;https://optifine.net/downloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar&x=a473a93bebb63fabfe3d199843b9e379%btnaction_splitter_fm%
+  buttonaction = downloadfile;https://optifine.net/downloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar&x=ee509abd331ed9e2d70a045b2b90a37d%btnaction_splitter_fm%
   backgroundhovered = resources\modpack\longbutton_h.png
   description = %local:tfg.menu.optifine.hover%
   label = %local:tfg.menu.optifine.download%

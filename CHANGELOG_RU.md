@@ -1,4 +1,53 @@
 # Changelog
+## [4.3.2] - 2023-08-16
+### Исправления модпака
+- Исправлен дроп кусков руды.
+- Исправлено отображение статуса дискорд, когда вы играете в модпак.
+- Проведены оптимизации.
+- Исправлены ссылки в меню для дискорда и GitHub.
+### Обновление модов
+- UniversalTweaks
+- TFC TooHotAroundHere
+- TFG-Core
+- TFC TowerHeat
+- SuperMartijn642's Config Lib
+- SuperMartijn642's Core Lib
+- QuarkRotN
+- Placebo
+- OpenComputers
+- ModularUI
+- LittleTiles
+- JEI-Utilities
+- HadEnoughItems
+- GroovyScript
+- GalacticResearch
+- Galacticraft
+- GregicalityMultiblocks
+- Gregtech
+- Fluid Craft for AE2
+- FancyMenu
+- Censoredasm
+- Bogosorter
+- Devtech
+- MouseTweaks
+- Mixinbooter
+- Athenaeum
+- CraftTweaker2
+- CraftPresence
+- Appliedenergistics2
+- GregTech Food Option
+### Новые моды
+- NotEnoughEnergistics
+- Neeve's AE2: Extended Life Additions
+- Visualores
+- Vintagefix
+- DoubleSlabs
+- Betterp2p plusplus
+- configanytime
+### Удаленные моды
+- Randompatches
+- Foamfix
+- betterp2p
 
 ## [4.3.1] - 2023-05-27
 ### Исправления модпака

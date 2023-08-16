@@ -1,4 +1,53 @@
 # Changelog
+## [4.3.2] - 2023-08-16
+### Modpack fixes
+- Fixed drop of chank of ore.
+- Fixed discord status display when you play modpack.
+- Conducted optimizations.
+- Fixed links in the menu for Discord and GitHub.
+### Update mods
+- UniversalTweaks
+- TFC TooHotAroundHere
+- TFG-Core
+- TFC TowerHeat
+- SuperMartijn642's Config Lib
+- SuperMartijn642's Core Lib
+- QuarkRotN
+- Placebo
+- OpenComputers
+- ModularUI
+- LittleTiles
+- JEI-Utilities
+- HadEnoughItems
+- GroovyScript
+- GalacticResearch
+- Galacticraft
+- GregicalityMultiblocks
+- Gregtech
+- Fluid Craft for AE2
+- FancyMenu
+- Censoredasm
+- Bogosorter
+- Devtech
+- MouseTweaks
+- Mixinbooter
+- Athenaeum
+- CraftTweaker2
+- CraftPresence
+- Appliedenergistics2
+- GregTech Food Option
+### New mods
+- NotEnoughEnergistics
+- Neeve's AE2: Extended Life Additions
+- Visualores
+- Vintagefix
+- DoubleSlabs
+- Betterp2p plusplus
+- configanytime
+### Removed mods
+- Randompatches
+- Foamfix
+- betterp2p
 
 ## [4.3.1] - 2023-05-27
 ### Modpack fixes
