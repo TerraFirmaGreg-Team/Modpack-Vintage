@@ -143,12 +143,12 @@ jobs:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_RU }}
           username: "GitHub"
           avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/icon.png?raw=true
+          embed-thumbnail-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/blob/main/resources/modpack/icons/icon.png?raw=true
           embed-title: Релиз ${{ steps.changelog_ru.outputs.version }}
           embed-description: "${{ steps.changelog_ru.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/CHANGELOG_RU.md
           embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/icon.png?raw=true
+          embed-footer-icon-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/blob/main/resources/modpack/icons/icon.png?raw=true
           embed-footer-text: ${{ steps.changelog_ru.outputs.date }}
 
       - name: Discord notification EN
@@ -157,10 +157,10 @@ jobs:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_EN }}
           username: "GitHub"
           avatar-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/icon.png?raw=true
+          embed-thumbnail-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/blob/main/resources/modpack/icons/icon.png?raw=true
           embed-title: Release ${{ steps.changelog_en.outputs.version }}
           embed-description: "${{ steps.changelog_en.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/blob/main/CHANGELOG_EN.md
           embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/.minecraft/resources/modpack/icons/icon.png?raw=true
+          embed-footer-icon-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/blob/main/resources/modpack/icons/icon.png?raw=true
           embed-footer-text: ${{ steps.changelog_en.outputs.date }}
