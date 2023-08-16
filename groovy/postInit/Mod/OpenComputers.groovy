@@ -279,7 +279,7 @@ if (isLoaded("opencomputers")) {
             ore('oc:circuitChip2'),
             ore('circuitLv') * 2,
             ore('craftingToolScrewdriver'))
-        .outputs(item('opencomputers:mods.gregtech.assembler'))
+        .outputs(item('opencomputers:assembler'))
         .duration(100).EUt(1920).buildAndRegister()
     
     // Hologram1

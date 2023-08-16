@@ -193,135 +193,135 @@ if (isLoaded("gregtech")) {
         .duration(400).EUt(16).buildAndRegister()
     
     // Extruder Shape (Sense Head)
-    crafting.addShaped(metaitem('shape.extruder.sense'), [
+    crafting.addShaped(item('tfgmod:meta_item', 6), [
         [null, null, null],
         [ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.extruder.plate'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
         .inputs(metaitem('shape.empty'))
-        .notConsumable(metaitem('shape.extruder.sense'))
-        .outputs(metaitem('shape.extruder.sense'))
+        .notConsumable(item('tfgmod:meta_item', 6))
+        .outputs(item('tfgmod:meta_item', 6))
         .duration(120).EUt(22).buildAndRegister()
     
     // Mold (Knife Head)
-    crafting.addShaped(metaitem('shape.mold.knife'), [
+    crafting.addShaped(item('tfgmod:meta_item', 10), [
         [null, ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.empty')],
         [null, null, null],
         [null, null, null]])
     forming_press.recipeBuilder()
         .inputs(metaitem('shape.empty'))
-        .notConsumable(metaitem('shape.mold.knife'))
-        .outputs(metaitem('shape.mold.knife'))
+        .notConsumable(item('tfgmod:meta_item', 10))
+        .outputs(item('tfgmod:meta_item', 10))
         .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Sword Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_sword", metaitem('shape.extruder.sword'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_sword", item('tfgmod:meta_item', 1), [
         [null,null, null],
         [null, metaitem('shape.extruder.plate'), ore('toolWireCutter').transform(Function.setToolDamage)],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.sword'))
-      .outputs(metaitem('shape.extruder.sword'))
+      .notConsumable(item('tfgmod:meta_item', 1))
+      .outputs(item('tfgmod:meta_item', 1))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Saw Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_saw", metaitem('shape.extruder.saw'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_saw", item('tfgmod:meta_item', 9), [
         [null,null, null],
         [null, metaitem('shape.extruder.plate'), null],
         [null, null, ore('toolWireCutter').transform(Function.setToolDamage)]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.saw'))
-      .outputs(metaitem('shape.extruder.saw'))
+      .notConsumable(item('tfgmod:meta_item', 9))
+      .outputs(item('tfgmod:meta_item', 9))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Hammer Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_hammer", metaitem('shape.extruder.hammer'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_hammer", item('tfgmod:meta_item', 8), [
         [null, ore('toolWireCutter').transform(Function.setToolDamage), null],
         [null, metaitem('shape.extruder.ingot'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.hammer'))
-      .outputs(metaitem('shape.extruder.hammer'))
+      .notConsumable(item('tfgmod:meta_item', 8))
+      .outputs(item('tfgmod:meta_item', 8))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (File Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_file", metaitem('shape.extruder.file'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_file", item('tfgmod:meta_item', 7), [
         [null,null, ore('toolWireCutter').transform(Function.setToolDamage)],
         [null, metaitem('shape.extruder.plate'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.file'))
-      .outputs(metaitem('shape.extruder.file'))
+      .notConsumable(item('tfgmod:meta_item', 7))
+      .outputs(item('tfgmod:meta_item', 7))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Hoe Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_hoe", metaitem('shape.extruder.hoe'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_hoe", item('tfgmod:meta_item', 5), [
         [null,null, null],
         [null, metaitem('shape.extruder.ingot'), ore('toolWireCutter').transform(Function.setToolDamage)],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.hoe'))
-      .outputs(metaitem('shape.extruder.hoe'))
+      .notConsumable(item('tfgmod:meta_item', 5))
+      .outputs(item('tfgmod:meta_item', 5))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Axe Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_axe", metaitem('shape.extruder.axe'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_axe", item('tfgmod:meta_item', 4), [
         [ore('toolWireCutter').transform(Function.setToolDamage), null, null],
         [null, metaitem('shape.extruder.plate'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.axe'))
-      .outputs(metaitem('shape.extruder.axe'))
+      .notConsumable(item('tfgmod:meta_item', 4))
+      .outputs(item('tfgmod:meta_item', 4))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Shovel Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_shovel", metaitem('shape.extruder.shovel'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_shovel", item('tfgmod:meta_item', 3), [
         [ore('toolWireCutter').transform(Function.setToolDamage),null, null],
         [null, metaitem('shape.extruder.plate'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.shovel'))
-      .outputs(metaitem('shape.extruder.shovel'))
+      .notConsumable(item('tfgmod:meta_item', 3))
+      .outputs(item('tfgmod:meta_item', 3))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Pickaxe Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_pickaxe", metaitem('shape.extruder.pickaxe'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_pickaxe", item('tfgmod:meta_item', 2), [
         [null,null, ore('toolWireCutter').transform(Function.setToolDamage)],
         [null, metaitem('shape.extruder.ingot'), null],
         [null, null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.pickaxe'))
-      .outputs(metaitem('shape.extruder.pickaxe'))
+      .notConsumable(item('tfgmod:meta_item', 2))
+      .outputs(item('tfgmod:meta_item', 2))
       .duration(120).EUt(22).buildAndRegister()
     
     // Extruder Shape (Chisel Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_chisel", metaitem('shape.extruder.chisel'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_chisel", item('tfgmod:meta_item', 12), [
         [null,null, null],
         [null, metaitem('shape.extruder.plate'), null],
         [ore('toolWireCutter').transform(Function.setToolDamage), null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.extruder.chisel'))
-      .outputs(metaitem('shape.extruder.chisel'))
+      .notConsumable(item('tfgmod:meta_item', 12))
+      .outputs(item('tfgmod:meta_item', 12))
       .duration(120).EUt(22).buildAndRegister()
     
     // Mold (Propick Head)
-    crafting.addShaped("tfg/gregtech/shape_extruder_propick", metaitem('shape.mold.propick'), [
+    crafting.addShaped("tfg/gregtech/shape_extruder_propick", item('tfgmod:meta_item', 11), [
         [metaitem('shape.extruder.plate'),null, null],
         [null, null, null],
         [ore('toolHammer').transform(Function.setToolDamage), null, null]])
     forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
-      .notConsumable(metaitem('shape.mold.propick'))
-      .outputs(metaitem('shape.mold.propick'))
+      .notConsumable(item('tfgmod:meta_item', 11))
+      .outputs(item('tfgmod:meta_item', 11))
       .duration(120).EUt(22).buildAndRegister()
     
     // Растительное масло

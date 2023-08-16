@@ -30,12 +30,12 @@ if (isLoaded("extraplanets")) {
       .inputs(item('extraplanets:tier9_items:1') * 6)
       .inputs(item('extraplanets:tier9_items') * 5)
       .inputs(item('galacticraftcore:oil_canister_partial:1001') * 64)
-      .inputs(metaitem('lander.tier.3'))
+      .inputs(item('tfgmod:meta_item', 49))
       .inputs(metaitem('electric.motor.uiv') * 4)
       .inputs(metaitem('emitter.uiv') * 4)
       .inputs(ore('circuitUhv') * 8)
       .inputs(crate[i] * 18)
-      .inputs(metaitem('rocket.control.computer.tier.9'))
+      .inputs(item('tfgmod:meta_item', 43))
       .inputs(item('extraplanets:schematic_tier9'))
       .fluidInputs(fluid('naquadria') * 9216)
       .fluidInputs(fluid('soldering_alloy') * 4608)
@@ -54,7 +54,7 @@ if (isLoaded("extraplanets")) {
         metaitem('sensor.uiv'),
         item('extraplanets:tier9_items:3'))
       .fluidInputs(fluid('soldering_alloy') * 7612)
-      .outputs(metaitem('rocket.control.computer.tier.9'))
+      .outputs(item('tfgmod:meta_item', 43))
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(600).EUt(16777216).buildAndRegister()
     // Головоной обтекатель
@@ -122,11 +122,11 @@ if (isLoaded("extraplanets")) {
         metaitem('plateDenseNaquadria') * 4,
         metaitem('boltTritanium') * 8)
       .fluidInputs(fluid('soldering_alloy') * 144)
-      .outputs(metaitem('alloy.ingot.tier.9'))
+      .outputs(item('tfgmod:meta_item', 32))
       .duration(300).EUt(16777216).buildAndRegister()
     // Сверх-прочные пластины
     implosion_compressor.recipeBuilder()
-    	.inputs(metaitem('alloy.ingot.tier.9'))
+    	.inputs(item('tfgmod:meta_item', 32))
     	.outputs(
             item('extraplanets:tier9_items:3'),
             metaitem('dustTinyTritanium') * 6)
@@ -134,7 +134,7 @@ if (isLoaded("extraplanets")) {
     	.duration(20).EUt(30).buildAndRegister()
     // Схема ракеты
     laser_engraver.recipeBuilder()
-    	.inputs(metaitem('schematic.blank'))
+    	.inputs(item('tfgmod:meta_item', 46))
         .notConsumable(metaitem('glass_lens.light_gray'))
     	.outputs(item('extraplanets:schematic_tier9'))
         .cleanroom(CleanroomType.CLEANROOM)

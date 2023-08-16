@@ -8,11 +8,11 @@ assembly_line.recipeBuilder()
 	.inputs(item('galacticraftplanets:orion_drive') * 5)
 	.inputs(item('galacticraftcore:steel_pole') * 4)
 	.inputs(item('galacticraftplanets:item_basic_asteroids:8'))
-	.inputs(metaitem('wafer.glowstone') * 4)
+	.inputs(item('gregtech:meta_item_1', 372) * 4)
 	.inputs(metaitem('crate.titanium') * 4)
 	.inputs(metaitem('electric.motor.ev') * 4)
 	.inputs(item('galacticraftplanets:beam_receiver'))
-	.inputs(metaitem('astro.miner.computer'))
+	.inputs(item('tfgmod:meta_item', 52))
 	.fluidInputs(fluid('black_steel') * 9216)
 	.fluidInputs(fluid('aluminium') * 4608)
 	.fluidInputs(fluid('bronze') * 4608)
@@ -24,13 +24,13 @@ mods.gregtech.assembler.recipeBuilder()
 	.circuitMeta(3)
 	.inputs(
 		item('opencomputers:case2'),
-		metaitem('wafer.glowstone'),
+		item('gregtech:meta_item_1', 372),
 		ore('circuitLuv'),
 		metaitem('emitter.iv'),
 		metaitem('sensor.iv'),
 		item('galacticraftplanets:item_basic_asteroids:5'))
 	.fluidInputs(fluid('soldering_alloy') * 1152)
-	.outputs(metaitem('astro.miner.computer'))
+	.outputs(item('tfgmod:meta_item', 52))
 	.cleanroom(CleanroomType.CLEANROOM)
 	.duration(600).EUt(7680).buildAndRegister()
 
@@ -42,7 +42,7 @@ crafting.addShaped("tfg/gc/miner_base", item('galacticraftplanets:miner_base'), 
 
 // Схема
 laser_engraver.recipeBuilder()
-	.inputs(metaitem('schematic.blank'))
+	.inputs(item('tfgmod:meta_item', 46))
    .notConsumable(metaitem('glass_lens.brown'))
 	.outputs(item('galacticraftplanets:schematic:2'))
    .cleanroom(CleanroomType.CLEANROOM)

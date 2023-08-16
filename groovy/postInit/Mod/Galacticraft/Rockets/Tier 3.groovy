@@ -31,11 +31,11 @@ if (isLoaded("galacticraftcore")) {
 		.inputs(item('galacticraftplanets:item_basic_asteroids:1'))
 		.inputs(item('galacticraftcore:engine:1') * 2)
 		.inputs(item('galacticraftcore:oil_canister_partial:1001') * 8)
-		.inputs(metaitem('lander.tier.3'))
+		.inputs(item('tfgmod:meta_item', 49))
 		.inputs(metaitem('electric.motor.iv') * 4)
 		.inputs(metaitem('emitter.iv') * 4)
 		.inputs(ore('circuitIv') * 8)
-		.inputs(metaitem('rocket.control.computer.tier.3'))
+		.inputs(item('tfgmod:meta_item', 37))
 		.inputs(item('galacticraftplanets:schematic'))
 		.inputs(crate[i] * 9)
 		.fluidInputs(fluid('soldering_alloy') * 9216)
@@ -55,7 +55,7 @@ if (isLoaded("galacticraftcore")) {
 			metaitem('sensor.iv'),
 			item('galacticraftplanets:item_basic_asteroids:5'))
 		.fluidInputs(fluid('soldering_alloy') * 1152)
-		.outputs(metaitem('rocket.control.computer.tier.3'))
+		.outputs(item('tfgmod:meta_item', 37))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(4096).buildAndRegister()
 	// Головоной обтекатель
@@ -111,11 +111,11 @@ if (isLoaded("galacticraftcore")) {
 			item('galacticraftplanets:item_basic_mars:3'),
 			metaitem('plateDenseDesh') * 4)
 		.fluidInputs(fluid('platinum') * 72)
-		.outputs(metaitem('alloy.ingot.tier.3'))
+		.outputs(item('tfgmod:meta_item', 26))
 		.duration(300).EUt(4096).buildAndRegister()
 	// Сверх-прочные пластины
 	implosion_compressor.recipeBuilder()
-		.inputs(metaitem('alloy.ingot.tier.3'))
+		.inputs(item('tfgmod:meta_item', 26))
 		.outputs(
 	      item('galacticraftplanets:item_basic_asteroids:5'),
 	      metaitem('dustTinyPlatinum') * 3)
@@ -123,7 +123,7 @@ if (isLoaded("galacticraftcore")) {
 		.duration(20).EUt(30).buildAndRegister()
 	// Схема ракеты
 	laser_engraver.recipeBuilder()
-		.inputs(metaitem('schematic.blank'))
+		.inputs(item('tfgmod:meta_item', 46))
 		.notConsumable(metaitem('glass_lens.magenta'))
 		.outputs(item('galacticraftplanets:schematic'))
 		.cleanroom(CleanroomType.CLEANROOM)

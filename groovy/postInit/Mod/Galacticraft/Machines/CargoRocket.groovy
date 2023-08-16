@@ -25,7 +25,7 @@ assembly_line.recipeBuilder()
    .inputs(item('galacticraftcore:engine'))
    .inputs(item('galacticraftcore:oil_canister_partial:1001') * 3)
    .inputs(item('galacticraftplanets:schematic:1'))
-   .inputs(metaitem('cargo.rocket.computer'))
+   .inputs(item('tfgmod:meta_item', 56))
    .inputs(crate[i] * 3)
    .fluidInputs(fluid('black_steel') * 9216)
    .fluidInputs(fluid('aluminium') * 4608)
@@ -38,19 +38,19 @@ mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(2)
    .inputs(
       item('opencomputers:case1'),
-      metaitem('wafer.glowstone'),
+      item('gregtech:meta_item_1', 372),
       ore('circuitIv'),
       metaitem('emitter.ev'),
       metaitem('sensor.ev'),
       item('galacticraftplanets:item_basic_mars:3'))
    .fluidInputs(fluid('soldering_alloy') * 864)
-   .outputs(metaitem('cargo.rocket.computer'))
+   .outputs(item('tfgmod:meta_item', 56))
    .cleanroom(CleanroomType.CLEANROOM)
    .duration(600).EUt(1920).buildAndRegister()
 
 // Схема
 laser_engraver.recipeBuilder()
-	.inputs(metaitem('schematic.blank'))
+	.inputs(item('tfgmod:meta_item', 46))
    .notConsumable(metaitem('glass_lens.green'))
 	.outputs(item('galacticraftplanets:schematic:1'))
    .cleanroom(CleanroomType.CLEANROOM)

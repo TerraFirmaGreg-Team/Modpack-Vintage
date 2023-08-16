@@ -83,7 +83,8 @@ import mods.gregtech.material.Material;
 <material:trinium>.addFlags("generate_dense");
 <material:rhodium_plated_palladium>.addFlags("generate_foil");
 <material:darmstadtium>.addFlags("generate_foil");
-
+<material:hsse>.addFlags("generate_double_plate");
+<material:tritanium>.addFlags("generate_double_plate");
 
 // --- Новые материалы
 

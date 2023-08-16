@@ -10,7 +10,7 @@ if (isLoaded("galacticresearch")) {
       .inputs(
          ore('circuitIv'), 
          metaitem('plateDenseTin') * 4,
-         metaitem('wafer.glowstone') * 2, 
+         item('gregtech:meta_item_1', 372) * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2, 
          metaitem('sensor.iv'),
          item('galacticraftcore:telemetry'))
@@ -23,7 +23,7 @@ if (isLoaded("galacticresearch")) {
       .inputs(
          item('galacticraftcore:grating') * 8, 
          metaitem('plateDenseSteel') * 8 , 
-         metaitem('wafer.glowstone') * 2, 
+         item('gregtech:meta_item_1', 372) * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2,
          item('galacticraftcore:steel_pole') * 2,
          item('galacticraftcore:cargo', 4),

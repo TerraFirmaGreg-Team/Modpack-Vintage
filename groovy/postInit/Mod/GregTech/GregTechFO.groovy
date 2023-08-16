@@ -2,7 +2,7 @@ import classes.Array.arrayTFC
 import classes.Function
 
 
-if (isLoaded("gregtechfoodoption")) {
+if (isLoaded("gregtechfoodoption1")) {
 
 	// --- Добавление рецептов
 	

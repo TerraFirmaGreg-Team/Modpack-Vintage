@@ -29,7 +29,7 @@ assembly_line.recipeBuilder()
    .inputs(metaitem('screwStainlessSteel') * 8)
    .inputs(metaitem('stickStainlessSteel') * 4)
    .inputs(metaitem('electric.motor.ev') * 4)
-   .inputs(metaitem('moon.buggy.computer'))
+   .inputs(item('tfgmod:meta_item', 53))
    .inputs(item('galacticraftcore:schematic'))
    .inputs(crate[i] * 2)
    .fluidInputs(fluid('tungsten_steel') * 4608)
@@ -43,13 +43,13 @@ mods.gregtech.assembler.recipeBuilder()
    .circuitMeta(1)
    .inputs(
       item('opencomputers:case1'),
-      metaitem('wafer.glowstone'),
+      item('gregtech:meta_item_1', 372),
       ore('circuitEv'),
       metaitem('emitter.hv'),
       metaitem('sensor.hv'),
       item('galacticraftcore:heavy_plating'))
    .fluidInputs(fluid('soldering_alloy') * 576)
-   .outputs(metaitem('moon.buggy.computer'))
+   .outputs(item('tfgmod:meta_item', 53))
    .cleanroom(CleanroomType.CLEANROOM)
    .duration(600).EUt(480).buildAndRegister()
 
@@ -71,7 +71,7 @@ mods.gregtech.assembler.recipeBuilder()
 
 // Схема
 laser_engraver.recipeBuilder()
-	.inputs(metaitem('schematic.blank'))
+	.inputs(item('tfgmod:meta_item', 46))
    .notConsumable(metaitem('glass_lens.black'))
 	.outputs(item('galacticraftcore:schematic'))
    .cleanroom(CleanroomType.CLEANROOM)

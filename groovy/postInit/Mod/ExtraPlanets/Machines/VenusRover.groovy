@@ -30,7 +30,7 @@ if (isLoaded("extraplanets")) {
       .inputs(metaitem('screwStainlessSteel') * 8)
       .inputs(metaitem('stickStainlessSteel') * 4)
       .inputs(metaitem('electric.motor.luv') * 4)
-      .inputs(metaitem('venus.rover.computer'))
+      .inputs(item('tfgmod:meta_item', 55))
       .inputs(item('extraplanets:schematic_venus_rover'))
       .inputs(crate[i] * 2)
       .fluidInputs(fluid('tungsten_steel') * 4608)
@@ -44,13 +44,13 @@ if (isLoaded("extraplanets")) {
       .circuitMeta(3)
       .inputs(
          item('opencomputers:case1'),
-         metaitem('wafer.glowstone'),
+         item('gregtech:meta_item_1', 372),
          ore('circuitLuv'),
          metaitem('emitter.iv'),
          metaitem('sensor.iv'),
          item('galacticraftplanets:item_basic_asteroids:5'))
       .fluidInputs(fluid('soldering_alloy') * 1152)
-      .outputs(metaitem('venus.rover.computer'))
+      .outputs(item('tfgmod:meta_item', 55))
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(600).EUt(4096).buildAndRegister()
 
@@ -75,7 +75,7 @@ if (isLoaded("extraplanets")) {
 
    // Схема
    laser_engraver.recipeBuilder()
-   	.inputs(metaitem('schematic.blank'))
+   	.inputs(item('tfgmod:meta_item', 46))
       .notConsumable(metaitem('glass_lens.purple'))
    	.outputs(item('extraplanets:schematic_venus_rover'))
       .cleanroom(CleanroomType.CLEANROOM)

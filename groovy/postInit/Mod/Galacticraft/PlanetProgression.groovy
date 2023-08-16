@@ -10,7 +10,7 @@ if (isLoaded("planetprogression")) {
       .inputs(
          item('planetprogression:satellite_basic') * 2, 
          metaitem('plateDenseAluminium') * 8 , 
-         metaitem('wafer.glowstone') * 2, 
+         item('gregtech:meta_item_1', 372) * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2, 
          metaitem('sensor.iv') * 3)
       .outputs(item('planetprogression:satellite_controller'))
@@ -22,7 +22,7 @@ if (isLoaded("planetprogression")) {
       .inputs(
          item('galacticraftcore:basic_item:19') * 2, 
          metaitem('plateDenseSteel') * 8 , 
-         metaitem('wafer.glowstone') * 2, 
+         item('gregtech:meta_item_1', 372) * 2, 
          metaitem('wireGtQuadrupleAluminium') * 2)
       .outputs(item('planetprogression:satellite_launcher'))
       .duration(150).EUt(2000).buildAndRegister()
@@ -33,7 +33,7 @@ if (isLoaded("planetprogression")) {
       .inputs(
          ore('circuitEv') * 2, 
          metaitem('plateDenseAluminium') * 2, 
-         metaitem('wafer.glowstone') * 2, 
+         item('gregtech:meta_item_1', 372) * 2, 
          metaitem('component.smd.diode') * 4)
       .outputs(item('planetprogression:satellite_module_basic'))
       .duration(150).EUt(2000).buildAndRegister()

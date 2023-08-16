@@ -1,6 +1,6 @@
 
 
-if (isLoaded("gregtechfoodoption")) {
+if (isLoaded("gregtechfoodoption1")) {
 
    // --- Массивы
    
@@ -113,119 +113,119 @@ if (isLoaded("gregtechfoodoption")) {
    mods.gregtech.centrifuge.removeByInput(5, [item('extraplanets:chocolate_bar')], null)
    mods.gregtech.centrifuge.removeByInput(5, [item('galacticraftcore:food', 6)], null)
    mods.gregtech.centrifuge.removeByInput(5, [item('galacticraftcore:food', 7)], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 77)], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 76)], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 124)], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.apricot')], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.mango')], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.banana')], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.orange')], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.lime')], null)
-   // mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.lemon')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 77)], null)
+   mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 76)], null)
+   mods.gregtech.centrifuge.removeByInput(5, [item('gregtechfoodoption:gtfo_meta_item', 124)], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.apricot')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.mango')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.banana')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.orange')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.lime')], null)
+   mods.gregtech.centrifuge.removeByInput(5, [metaitem('food.lemon')], null)
 
 
    // Chum on Skewel Kebab * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [metaitem('food.chum') * 8, metaitem('component.banana_peel') * 2, metaitem('crop.onion'), metaitem('mashed_potato_dust') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], [fluid('gtfo_yolk') * 200, fluid('gtfo_stearin') * 400])
+   mods.gregtech.cuisine_assembler.removeByInput(16, [metaitem('food.chum') * 8, metaitem('component.banana_peel') * 2, metaitem('crop.onion'), metaitem('mashed_potato_dust') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], [fluid('gtfo_yolk') * 200, fluid('gtfo_stearin') * 400])
+   Kebab Meat Raw * 4
+   mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:chicken') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
    // Kebab Meat Raw * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:chicken') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
-   // // Kebab Meat Raw * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:beef') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
-   // // Kebab Meat Raw * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:mutton') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
-   // // Kebab Meat Raw * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:porkchop') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
-   // // Kebab Meat Raw * 4
-   // mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:rabbit') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
-   // // Cake * 1
-   // mods.gregtech.cuisine_assembler.removeByInput(7, [item('minecraft:sugar'), item('minecraft:egg'), metaitem('food.cake_bottom_baked')], [fluid('milk') * 3000])
-   // // Large Meat Sandwich * 3
-   // mods.gregtech.cuisine_assembler.removeByInput(75, [metaitem('component.baguettes') * 3, metaitem('food.cheddar_slice') * 3, item('minecraft:cooked_beef') * 3], null)
-   // Kebab e Soltani! * 2
-   // mods.gregtech.cuisine_assembler.removeByInput(120, [metaitem('food.kebab.barg') * 2, metaitem('food.kebab.kubide'), metaitem('crop.tomato') * 3, metaitem('crop.onion') * 2, metaitem('food.lemon')], [fluid('gtfo_stearin') * 1000, fluid('gtfo_lemon_extract') * 250])
+   mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:beef') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
+   // Kebab Meat Raw * 4
+   mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:mutton') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
+   // Kebab Meat Raw * 4
+   mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:porkchop') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
+   // Kebab Meat Raw * 4
+   mods.gregtech.cuisine_assembler.removeByInput(16, [item('minecraft:rabbit') * 4, metaitem('dustTinySalt') * 4, item('gregtechfoodoption:gtfo_meta_item', 135) * 4], null)
+   // Cake * 1
+   mods.gregtech.cuisine_assembler.removeByInput(7, [item('minecraft:sugar'), item('minecraft:egg'), metaitem('food.cake_bottom_baked')], [fluid('milk') * 3000])
+   // Large Meat Sandwich * 3
+   mods.gregtech.cuisine_assembler.removeByInput(75, [metaitem('component.baguettes') * 3, metaitem('food.cheddar_slice') * 3, item('minecraft:cooked_beef') * 3], null)
+   Kebab e Soltani! * 2
+   mods.gregtech.cuisine_assembler.removeByInput(120, [metaitem('food.kebab.barg') * 2, metaitem('food.kebab.kubide'), metaitem('crop.tomato') * 3, metaitem('crop.onion') * 2, metaitem('food.lemon')], [fluid('gtfo_stearin') * 1000, fluid('gtfo_lemon_extract') * 250])
 
 
    // Cake Bottom * 1
-   // mods.gregtech.forming_press.removeByInput(30, [metaitem('component.sugary_dough') * 4, metaitem('shape.mold.cylinder')], null)
-   // // Unbaked Bread * 3
-   // mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 3, metaitem('wooden_form.bread')], null)
-   // // Unbaked Bun * 3
-   // mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 2, metaitem('wooden_form.bun')], null)
-   // // Unbaked Baguette * 1
-   // mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 2, metaitem('wooden_form.baguette')], null)
-   // Unfired Cup * 2
-   // mods.gregtech.forming_press.removeByInput(30, [item('minecraft:clay_ball') * 5, metaitem('component.paper_cone')], null)
+   mods.gregtech.forming_press.removeByInput(30, [metaitem('component.sugary_dough') * 4, metaitem('shape.mold.cylinder')], null)
+   // Unbaked Bread * 3
+   mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 3, metaitem('wooden_form.bread')], null)
+   // Unbaked Bun * 3
+   mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 2, metaitem('wooden_form.bun')], null)
+   // Unbaked Baguette * 1
+   mods.gregtech.forming_press.removeByInput(20, [metaitem('component.dough') * 2, metaitem('wooden_form.baguette')], null)
+   Unfired Cup * 2
+   mods.gregtech.forming_press.removeByInput(30, [item('minecraft:clay_ball') * 5, metaitem('component.paper_cone')], null)
 
 
    // Banana Peel * 1
-   // mods.gregtech.canner.removeByInput(32, [metaitem('food.banana')], null)
+   mods.gregtech.canner.removeByInput(32, [metaitem('food.banana')], null)
 
 
    // Reinforced Adobe Bricks * 1
-   // mods.gregtech.assembler.removeByInput(28, [metaitem('plateBronze'), metaitem('brick.adobe_fired') * 2, item('gregtechfoodoption:gtfo_casing'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
-   // // Reinforced Adobe Bricks * 3
-   // mods.gregtech.assembler.removeByInput(28, [item('gregtechfoodoption:gtfo_casing') * 3, metaitem('plateBronze') * 3, metaitem('brick.adobe_fired') * 6, metaitem('circuit.integrated').withNbt(["Configuration": 3])], null)
+   mods.gregtech.assembler.removeByInput(28, [metaitem('plateBronze'), metaitem('brick.adobe_fired') * 2, item('gregtechfoodoption:gtfo_casing'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+   // Reinforced Adobe Bricks * 3
+   mods.gregtech.assembler.removeByInput(28, [item('gregtechfoodoption:gtfo_casing') * 3, metaitem('plateBronze') * 3, metaitem('brick.adobe_fired') * 6, metaitem('circuit.integrated').withNbt(["Configuration": 3])], null)
 
 
    // Flat Dough * 1
-   // mods.gregtech.forge_hammer.removeByInput(60, [metaitem('component.dough')], null)
+   mods.gregtech.forge_hammer.removeByInput(60, [metaitem('component.dough')], null)
 
 
    // Sugary Dough * 2
-   // mods.gregtech.mixer.removeByInput(7, [item('minecraft:sugar'), metaitem('component.dough')], null)
-   // Rabbit Stew * 125
-   // mods.gregtech.mixer.removeByInput(8, [item('minecraft:brown_mushroom'), item('minecraft:carrot'), item('minecraft:cooked_rabbit'), metaitem('mashed_potato_dust'), metaitem('dustWheat')], [fluid('water') * 50])
+   mods.gregtech.mixer.removeByInput(7, [item('minecraft:sugar'), metaitem('component.dough')], null)
+   Rabbit Stew * 125
+   mods.gregtech.mixer.removeByInput(8, [item('minecraft:brown_mushroom'), item('minecraft:carrot'), item('minecraft:cooked_rabbit'), metaitem('mashed_potato_dust'), metaitem('dustWheat')], [fluid('water') * 50])
+   Chum * 3
+   mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100])
+   // Chum * 6
+   mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100, fluid('gtfo_purple_drink') * 100])
    // Chum * 3
-   // mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100])
-   // // Chum * 6
-   // mods.gregtech.mixer.removeByInput(24, [metaitem('food.meat_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100, fluid('gtfo_purple_drink') * 100])
-   // // Chum * 3
-   // mods.gregtech.mixer.removeByInput(24, [metaitem('food.fish_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100])
-   // // Chum * 6
-   // mods.gregtech.mixer.removeByInput(24, [metaitem('food.fish_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100, fluid('gtfo_purple_drink') * 100])
+   mods.gregtech.mixer.removeByInput(24, [metaitem('food.fish_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100])
+   // Chum * 6
+   mods.gregtech.mixer.removeByInput(24, [metaitem('food.fish_rotten'), item('minecraft:red_mushroom'), item('minecraft:poisonous_potato'), item('minecraft:fermented_spider_eye')], [fluid('gtfo_sludge') * 100, fluid('gtfo_purple_drink') * 100])
 
 
 
 
    // Zest * 1
-   // mods.gregtech.extractor.removeByInput(5, [metaitem('food.lemon')], null)
-   // // Olive Oil * 100
-   // mods.gregtech.extractor.removeByInput(27, [metaitem('crop.olive')], null)
-   // // Zest * 1
-   // mods.gregtech.extractor.removeByInput(5, [metaitem('food.lime')], null)
-   // // Zest * 1
-   // mods.gregtech.extractor.removeByInput(5, [metaitem('food.orange')], null)
-   // // Seed Oil * 8
-   // mods.gregtech.extractor.removeByInput(2, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 3])], null)
-   // // Raw Soybean Oil * 15
-   // mods.gregtech.extractor.removeByInput(2, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
-   // // Small Pile of Wood Pulp * 1
-   // mods.gregtech.extractor.removeByInput(64, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 2])], null)
+   mods.gregtech.extractor.removeByInput(5, [metaitem('food.lemon')], null)
+   // Olive Oil * 100
+   mods.gregtech.extractor.removeByInput(27, [metaitem('crop.olive')], null)
+   // Zest * 1
+   mods.gregtech.extractor.removeByInput(5, [metaitem('food.lime')], null)
+   // Zest * 1
+   mods.gregtech.extractor.removeByInput(5, [metaitem('food.orange')], null)
+   // Seed Oil * 8
+   mods.gregtech.extractor.removeByInput(2, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 3])], null)
+   // Raw Soybean Oil * 15
+   mods.gregtech.extractor.removeByInput(2, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+   // Small Pile of Wood Pulp * 1
+   mods.gregtech.extractor.removeByInput(64, [metaitem('seed.soy'), metaitem('circuit.integrated').withNbt(["Configuration": 2])], null)
 
 
 
 
-   // // Mushroom Slice * 8
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:brown_mushroom'), metaitem('config.slicer_blade.flat')], null)
-   // // Uncooked Bacon
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:porkchop'), metaitem('config.slicer_blade.flat')], null)
-   // // Pre-Sliced Bread
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:bread'), metaitem('config.slicer_blade.flat')], null)
-   // // Tomato Slice
-   // mods.gregtech.slicer.removeByInput(18, [metaitem('crop.tomato'), metaitem('config.slicer_blade.flat')], null)
-   // // Cucumber Slice
-   // mods.gregtech.slicer.removeByInput(18, [metaitem('crop.cucumber'), metaitem('config.slicer_blade.flat')], null)
-   // // Olive Slice
-   // mods.gregtech.slicer.removeByInput(18, [metaitem('crop.olive'), metaitem('config.slicer_blade.flat')], null)
-   // // Onion Slice
-   // // mods.gregtech.slicer.removeByInput(18, [metaitem('crop.onion'), metaitem('config.slicer_blade.flat')], null)
-   // // Carrot Slice
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:carrot'), metaitem('config.slicer_blade.flat')], null)
-   // // Peeled Potato
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:potato'), metaitem('config.slicer_blade.flat')], null)
-   // // Apple Slice
-   // mods.gregtech.slicer.removeByInput(18, [item('minecraft:apple'), metaitem('config.slicer_blade.octagonal')], null)
-   // // Beef Slice
-   // mods.gregtech.slicer.removeByInput(24, [item('minecraft:beef'), metaitem('config.slicer_blade.stripes')], null)
+   // Mushroom Slice * 8
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:brown_mushroom'), metaitem('config.slicer_blade.flat')], null)
+   // Uncooked Bacon
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:porkchop'), metaitem('config.slicer_blade.flat')], null)
+   // Pre-Sliced Bread
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:bread'), metaitem('config.slicer_blade.flat')], null)
+   // Tomato Slice
+   mods.gregtech.slicer.removeByInput(18, [metaitem('crop.tomato'), metaitem('config.slicer_blade.flat')], null)
+   // Cucumber Slice
+   mods.gregtech.slicer.removeByInput(18, [metaitem('crop.cucumber'), metaitem('config.slicer_blade.flat')], null)
+   // Olive Slice
+   mods.gregtech.slicer.removeByInput(18, [metaitem('crop.olive'), metaitem('config.slicer_blade.flat')], null)
+   // Onion Slice
+   // mods.gregtech.slicer.removeByInput(18, [metaitem('crop.onion'), metaitem('config.slicer_blade.flat')], null)
+   // Carrot Slice
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:carrot'), metaitem('config.slicer_blade.flat')], null)
+   // Peeled Potato
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:potato'), metaitem('config.slicer_blade.flat')], null)
+   // Apple Slice
+   mods.gregtech.slicer.removeByInput(18, [item('minecraft:apple'), metaitem('config.slicer_blade.octagonal')], null)
+   // Beef Slice
+   mods.gregtech.slicer.removeByInput(24, [item('minecraft:beef'), metaitem('config.slicer_blade.stripes')], null)
 
 
 

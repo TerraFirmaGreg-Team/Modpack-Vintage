@@ -32,12 +32,12 @@ if (isLoaded("extraplanets")) {
 		.inputs(item('extraplanets:tier6_items:1') * 6)
 		.inputs(item('extraplanets:tier6_items') * 5)
 		.inputs(item('galacticraftcore:oil_canister_partial:1001') * 64)
-		.inputs(metaitem('lander.tier.3'))
+		.inputs(item('tfgmod:meta_item', 49))
 		.inputs(metaitem('electric.motor.uv') * 4)
 		.inputs(metaitem('emitter.uv') * 4)
 		.inputs(ore('circuitUv') * 8)
 		.inputs(crate[i] * 18)
-		.inputs(metaitem('rocket.control.computer.tier.6'))
+		.inputs(item('tfgmod:meta_item', 40))
 		.inputs(item('extraplanets:schematic_tier6'))
 		.fluidInputs(fluid('naquadria') * 9216)
 		.fluidInputs(fluid('soldering_alloy') * 4608)
@@ -56,7 +56,7 @@ if (isLoaded("extraplanets")) {
 			metaitem('sensor.uv'),
 			item('extraplanets:tier6_items:3'))
 		.fluidInputs(fluid('soldering_alloy') * 3456)
-		.outputs(metaitem('rocket.control.computer.tier.6'))
+		.outputs(item('tfgmod:meta_item', 40))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(262144).buildAndRegister()
 	// Головоной обтекатель
@@ -124,11 +124,11 @@ if (isLoaded("extraplanets")) {
 			metaitem('plateDoubleHsse') * 6,
 			metaitem('boltTritanium') * 8)
 		.fluidInputs(fluid('indium') * 144)
-		.outputs(metaitem('alloy.ingot.tier.6'))
+		.outputs(item('tfgmod:meta_item', 29))
 		.duration(300).EUt(262144).buildAndRegister()
 	// Сверх-прочные пластины
 	implosion_compressor.recipeBuilder()
-		.inputs(metaitem('alloy.ingot.tier.6'))
+		.inputs(item('tfgmod:meta_item', 29))
 		.outputs(
 	      item('extraplanets:tier6_items:3'),
 	      metaitem('dustTinyTritanium') * 6)
@@ -136,7 +136,7 @@ if (isLoaded("extraplanets")) {
 		.duration(20).EUt(30).buildAndRegister()
 	// Схема ракеты
 	laser_engraver.recipeBuilder()
-		.inputs(metaitem('schematic.blank'))
+		.inputs(item('tfgmod:meta_item', 46))
 		.notConsumable(metaitem('glass_lens.lime'))
 		.outputs(item('extraplanets:schematic_tier6'))
 		.cleanroom(CleanroomType.CLEANROOM)

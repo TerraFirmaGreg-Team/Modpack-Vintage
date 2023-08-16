@@ -30,11 +30,11 @@ if (isLoaded("galacticraftcore")) {
 		.inputs(item('galacticraftcore:rocket_fins') * 4)
 		.inputs(item('galacticraftcore:engine'))
 		.inputs(item('galacticraftcore:oil_canister_partial:1001') * 2)
-		.inputs(metaitem('lander.tier.1'))
+		.inputs(item('tfgmod:meta_item', 47))
 		.inputs(metaitem('electric.motor.hv') * 4)
 		.inputs(metaitem('emitter.hv') * 4)
 		.inputs(ore('circuitHv') * 8)
-		.inputs(metaitem('rocket.control.computer.tier.1'))
+		.inputs(item('tfgmod:meta_item', 35))
 		.inputs(crate[i] * 3)
 		.fluidInputs(fluid('black_steel') * 9216)
 		.fluidInputs(fluid('aluminium') * 4608)
@@ -53,7 +53,7 @@ if (isLoaded("galacticraftcore")) {
 			metaitem('sensor.hv'),
 			item('galacticraftcore:heavy_plating'))
 		.fluidInputs(fluid('soldering_alloy') * 576)
-		.outputs(metaitem('rocket.control.computer.tier.1'))
+		.outputs(item('tfgmod:meta_item', 35))
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(600).EUt(480).buildAndRegister()
 	// Головоной обтекатель
@@ -111,11 +111,11 @@ if (isLoaded("galacticraftcore")) {
 			metaitem('plateDenseAluminium'),
 			metaitem('plateDenseBronze'))
 		.fluidInputs(fluid('stainless_steel') * 72)
-		.outputs(metaitem('alloy.ingot.tier.1'))
+		.outputs(item('tfgmod:meta_item', 24))
 		.duration(300).EUt(480).buildAndRegister()
 	// Сверх-прочные пластины
 	implosion_compressor.recipeBuilder()
-		.inputs(metaitem('alloy.ingot.tier.1'))
+		.inputs(item('tfgmod:meta_item', 24))
 		.outputs(
 	      item('galacticraftcore:heavy_plating'),
 	      metaitem('dustTinyStainlessSteel'))
