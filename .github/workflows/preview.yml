@@ -29,7 +29,7 @@ jobs:
 
       - name: normal -> extended
         run: | 
-          rsync -av --files-from='buildtools/filelist.txt' ./ ./.minecraft/
+          rsync -av --exclude-from='buildtools/filelist.txt' ./ ./.minecraft/
           cp -r ./.minecraft/* ./extended/.minecraft/
           cp -r ./modlist.html ./extended/modlist_temp.html
           cp -r ./manifest.json ./extended/manifest_temp.json
@@ -41,7 +41,7 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" extended/.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/DEV/${DEV}/g" ./extended/.minecraft/config/fancymenu/customization/tfg_version.txt
           sed -i -e "s/DEV/${DEV}/g" ./manifest.json
           sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
           sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/tfg_version.txt
