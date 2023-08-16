@@ -373,26 +373,6 @@ customization {
 }
 
 customization {
-  orientation = element
-  restartbackgroundanimations = true
-  buttonaction = downloadfile;https://optifine.net/downloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar&x=ee509abd331ed9e2d70a045b2b90a37d%btnaction_splitter_fm%
-  backgroundhovered = resources\modpack\longbutton_h.png
-  description = %local:tfg.menu.optifine.hover%
-  label = %local:tfg.menu.optifine.download%
-  [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][req_id:7290aae8-089b-42ed-9db3-b620d45215d71682701137735] = 900
-  loopbackgroundanimations = true
-  orientation_element = 2f2a0982-3a26-4e6a-95ab-377a8b07c4c11626554305606
-  x = 10
-  width = 180
-  action = addbutton
-  actionid = 39e6387b-6e47-49aa-a320-d73fab9a0d131682691033654
-  y = 201
-  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if_not][req_id:13d36547-1e17-4449-8bc8-7196e10b5d751682698445295] = optifine
-  backgroundnormal = resources\modpack\longbutton.png
-  height = 21
-}
-
-customization {
   path = resources/modpack/tfg_logo.png
   orientation = top-centered
   x = -64
