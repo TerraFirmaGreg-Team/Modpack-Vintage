@@ -30,7 +30,6 @@ jobs:
       - name: normal -> extended
         run: | 
           rsync -av --exclude='.github' --exclude='.git' --exclude='buildtools' --exclude='.gitignore' ./ ./.minecraft/
-          cp -r ./buildtools/extended/* ./extended/
           cp -r ./.minecraft/* ./extended/.minecraft/
           cp -r ./modlist.html ./extended/modlist_temp.html
           cp -r ./manifest.json ./extended/manifest_temp.json
