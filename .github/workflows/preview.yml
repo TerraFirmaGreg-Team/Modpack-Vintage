@@ -41,7 +41,7 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" ./extended/.minecraft/config/fancymenu/customization/tfg_version.txt
+          sed -i -e "s/DEV/${DEV}/g" extended/.minecraft/config/fancymenu/customization/tfg_version.txt
           sed -i -e "s/DEV/${DEV}/g" ./manifest.json
           sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
           sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/tfg_version.txt
