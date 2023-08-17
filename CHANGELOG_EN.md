@@ -1,4 +1,11 @@
 # Changelog
+## [4.3.4] - 2023-08-17
+### Modpack fixes
+- Correction of different versions of mods on the extended version.
+### Update mods
+- HammerLib
+- Thaumicenergistics-extended_life
+
 ## [4.3.3] - 2023-08-17
 ### Modpack fixes
 - Downgraded version of CustomSkinLoader
