@@ -3,7 +3,7 @@ name: Deploy modpack
 on:
   push:
     tags:
-      - "R*.*.*|"
+      - "R*.*.*"
 
 jobs:
   Deploy:
@@ -29,7 +29,7 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: normal -> extended
-        run: | 
+        run: |
           rsync -av --exclude-from='buildtools/filelist.txt' ./ ./.minecraft/
           cp -r ./.minecraft/* ./extended/.minecraft/
           cp -r ./modlist.html ./extended/modlist_temp.html
