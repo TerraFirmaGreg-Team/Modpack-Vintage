@@ -3,7 +3,7 @@ name: Deploy modpack
 on:
   push:
     tags:
-      - "R*.*.*|"
+      - "R*.*.*"
 
 jobs:
   Deploy:
@@ -29,7 +29,7 @@ jobs:
           path: CHANGELOG_EN.md
 
       - name: normal -> extended
-        run: | 
+        run: |
           rsync -av --exclude-from='buildtools/filelist.txt' ./ ./.minecraft/
           cp -r ./.minecraft/* ./extended/.minecraft/
           cp -r ./modlist.html ./extended/modlist_temp.html
@@ -92,34 +92,6 @@ jobs:
           cp -r ./buildtools/serverfiles/* ./extended/overrides/
           cd ./extended/overrides/
           zip -r ../../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
-
-      - name: Upload Curseforge normal
-        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: "385053"
-          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
-          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
-          changelog: "${{ steps.changelog_ru.outputs.description }}"
-          changelog-format: markdown
-          game-version: "1.12.2"
-          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}
-          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server
-          release-type: "release"
-
-      - name: Upload Curseforge extended
-        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: "385053"
-          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
-          changelog: "${{ steps.changelog_ru.outputs.description }}"
-          changelog-format: markdown
-          game-version: "1.12.2"
-          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-extended
-          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended
-          release-type: "beta"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
