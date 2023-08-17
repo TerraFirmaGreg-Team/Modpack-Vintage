@@ -7,10 +7,6 @@
 - Custom Skin Loader
 ### Removed mods
 - visualores
-### Update mods
-- Custom Skin Loader
-### Removed mods
-- visualores
 
 ## [4.3.2] - 2023-08-16
 ### Modpack fixes
