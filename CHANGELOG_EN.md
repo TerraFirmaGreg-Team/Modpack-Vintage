@@ -1,4 +1,12 @@
 # Changelog
+## [4.3.5] - 2023-08-18
+### Modpack fixes
+- Fix of the appearance of dust particles on the surface
+### New mods
+- Multi-threading and tweaks
+### Update mods
+-TFG Core
+
 ## [4.3.4] - 2023-08-17
 ### Modpack fixes
 - Correction of different versions of mods on the extended version.
