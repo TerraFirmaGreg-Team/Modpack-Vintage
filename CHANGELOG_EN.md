@@ -1,4 +1,9 @@
 # Changelog
+## [4.3.6] - 2023-08-18
+### Modpack fixes
+- Downgraded GC version to fix freezing.
+- Fixed missing dependencies
+
 ## [4.3.5] - 2023-08-18
 ### Modpack fixes
 - Fix of the appearance of dust particles on the surface
