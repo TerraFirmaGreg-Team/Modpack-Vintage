@@ -83,7 +83,6 @@ jobs:
         run: |
           cp -r ./buildtools/serverfiles/* ./overrides/
           cd ./overrides/
-          mv -vf ./icon.png ./server-icon.png
           zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Archive Release Server extended
