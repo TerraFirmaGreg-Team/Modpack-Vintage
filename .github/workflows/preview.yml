@@ -15,17 +15,11 @@ jobs:
         id: get_version
         run: echo ::set-output name=version::${GITHUB_REF#refs/tags/}
 
-      - name: Changelog Parser RU
-        id: changelog_ru
+      - name: Changelog Parser
+        id: changelog
         uses: coditory/changelog-parser@v1
         with:
-          path: CHANGELOG_RU.md
-
-      - name: Changelog Parser EN
-        id: changelog_en
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_EN.md
+          path: CHANGELOG.md
 
       - name: normal -> extended
         run: | 
@@ -97,8 +91,8 @@ jobs:
         with:
           prerelease: true
           generate_release_notes: true
-          name: Pre-Release ${{ steps.changelog_ru.outputs.version }}
-          body: ${{ steps.changelog_ru.outputs.description }}
+          name: Pre-Release ${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip

@@ -16,17 +16,11 @@ jobs:
         id: get_version
         run: echo ::set-output name=version::${GITHUB_REF#refs/tags/R}
 
-      - name: Changelog Parser RU
-        id: changelog_ru
+      - name: Changelog Parser
+        id: changelog
         uses: coditory/changelog-parser@v1
         with:
-          path: CHANGELOG_RU.md
-
-      - name: Changelog Parser EN
-        id: changelog_en
-        uses: coditory/changelog-parser@v1
-        with:
-          path: CHANGELOG_EN.md
+          path: CHANGELOG.md
 
       - name: normal -> extended
         run: |
@@ -99,7 +93,7 @@ jobs:
           project-id: "385053"
           modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
           modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
-          changelog: "${{ steps.changelog_ru.outputs.description }}"
+          changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.12.2"
           display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}
@@ -113,7 +107,7 @@ jobs:
           project-id: "385053"
           modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
           modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
-          changelog: "${{ steps.changelog_ru.outputs.description }}"
+          changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.12.2"
           display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-extended
@@ -126,8 +120,8 @@ jobs:
         with:
           prerelease: false
           generate_release_notes: true
-          name: Release ${{ steps.changelog_ru.outputs.version }}
-          body: ${{ steps.changelog_ru.outputs.description }}
+          name: Release ${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
@@ -136,30 +130,16 @@ jobs:
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
 
-      - name: Discord notification RU
+      - name: Discord notification
         uses: tsickert/discord-webhook@v5.3.0
         with:
-          webhook-url: ${{ secrets.DISCORD_WEBHOOK_RU }}
+          webhook-url: ${{ secrets.RELEASES_1_12 }}
           username: "GitHub"
           avatar-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/github.png?raw=true
           embed-thumbnail-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/icon.png?raw=true
-          embed-title: Релиз ${{ steps.changelog_ru.outputs.version }}
-          embed-description: "${{ steps.changelog_ru.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/CHANGELOG_RU.md
+          embed-title: Релиз ${{ steps.changelog.outputs.version }}
+          embed-description: "${{ steps.changelog.outputs.description }}"
+          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/CHANGELOG.md
           embed-color: 15430476
           embed-footer-icon-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/icon.png?raw=true
-          embed-footer-text: ${{ steps.changelog_ru.outputs.date }}
-
-      - name: Discord notification EN
-        uses: tsickert/discord-webhook@v5.3.0
-        with:
-          webhook-url: ${{ secrets.DISCORD_WEBHOOK_EN }}
-          username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/icon.png?raw=true
-          embed-title: Release ${{ steps.changelog_en.outputs.version }}
-          embed-description: "${{ steps.changelog_en.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/CHANGELOG_EN.md
-          embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/resources/modpack/icons/icon.png?raw=true
-          embed-footer-text: ${{ steps.changelog_en.outputs.date }}
+          embed-footer-text: ${{ steps.changelog.outputs.date }}
