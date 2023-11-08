@@ -36,8 +36,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -45,8 +45,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -54,8 +54,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -63,8 +63,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -72,8 +72,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -81,7 +81,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 

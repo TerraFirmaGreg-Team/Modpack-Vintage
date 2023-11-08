@@ -43,8 +43,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -67,8 +67,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -91,8 +91,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -128,8 +128,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources\modpack\longbutton_h.png
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
 }
 
 customization {
@@ -206,7 +206,7 @@ customization {
 }
 
 customization {
-  path = resources/modpack/tfg_logo.png
+  path = config/txloader/load/modpack/tfg_logo.png
   orientation = top-centered
   x = -202
   width = 627
@@ -220,7 +220,7 @@ customization {
 customization {
   showname = false
   orientation = top-left
-  skinpath = resources/modpack/skins/xikaro.png
+  skinpath = config/txloader/load/modpack/skins/xikaro.png
   crouching = false
   x = 33
   slim = false
@@ -249,7 +249,7 @@ customization {
 customization {
   showname = false
   orientation = top-left
-  skinpath = resources/modpack/skins/speeedcraft.png
+  skinpath = config/txloader/load/modpack/skins/speeedcraft.png
   crouching = false
   x = 162
   slim = false
@@ -265,7 +265,7 @@ customization {
   orientation = top-centered
   basecolor = #ff1500
   shadow = true
-  splashfilepath = resources/modpack/words/en_us.txt
+  splashfilepath = config/txloader/load/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
   refresh = true
@@ -279,7 +279,7 @@ customization {
 }
 
 customization {
-  path = resources/modpack/sidebar_full_left.png
+  path = config/txloader/load/modpack/sidebar_full_left.png
   orientation = top-left
   x = 0
   width = 219
@@ -293,7 +293,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = reloadmenu;%btnaction_splitter_fm%
-  backgroundhovered = resources\modpack\reload_h.png
+  backgroundhovered = config\txloader\load\modpack\reload_h.png
   label = 
   loopbackgroundanimations = true
   x = 88
@@ -301,7 +301,7 @@ customization {
   action = addbutton
   actionid = 197d91f5-1380-402d-83e5-247a6aebf7b51682691033654
   y = 21
-  backgroundnormal = resources\modpack\reload.png
+  backgroundnormal = config\txloader\load\modpack\reload.png
   height = 21
 }
 
@@ -309,7 +309,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://discord.gg/terrafirmagreg%btnaction_splitter_fm%
-  backgroundhovered = resources\modpack\icons\discord_h.png
+  backgroundhovered = config\txloader\load\modpack\icons\discord_h.png
   description = %local:tfg.menu.discord%
   label = 
   loopbackgroundanimations = true
@@ -318,7 +318,7 @@ customization {
   action = addbutton
   actionid = ae5bdb1f-1c09-45ee-8d7c-83184e32b5a21682691033654
   y = 51
-  backgroundnormal = resources\modpack\icons\discord.png
+  backgroundnormal = config\txloader\load\modpack\icons\discord.png
   height = 21
 }
 
@@ -326,7 +326,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://www.youtube.com/@SpeeDCraft%btnaction_splitter_fm%
-  backgroundhovered = resources/modpack/icons/youtube_h.png
+  backgroundhovered = config/txloader/load/modpack/icons/youtube_h.png
   description = %local:tfg.menu.youtube%
   label = 
   loopbackgroundanimations = true
@@ -335,7 +335,7 @@ customization {
   action = addbutton
   actionid = 1abb4d5f-3978-455d-a97b-0d62789e68e81682691033654
   y = 50
-  backgroundnormal = resources/modpack/icons/youtube.png
+  backgroundnormal = config/txloader/load/modpack/icons/youtube.png
   height = 21
 }
 
@@ -343,7 +343,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues%btnaction_splitter_fm%
-  backgroundhovered = resources\modpack\icons\github_h.png
+  backgroundhovered = config\txloader\load\modpack\icons\github_h.png
   description = %local:tfg.menu.github%
   label = 
   loopbackgroundanimations = true
@@ -352,7 +352,7 @@ customization {
   action = addbutton
   actionid = 8cad47ef-6db8-419b-ad66-5ac19e83daab1682691033654
   y = 50
-  backgroundnormal = resources\modpack\icons\github.png
+  backgroundnormal = config\txloader\load\modpack\icons\github.png
   height = 21
 }
 
@@ -360,7 +360,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = joinserver;tfg.terrafirmagreg.su%btnaction_splitter_fm%
-  backgroundhovered = resources\modpack\longbutton_h.png
+  backgroundhovered = config\txloader\load\modpack\longbutton_h.png
   label = %local:tfg.menu.server%
   loopbackgroundanimations = true
   x = 9
@@ -368,12 +368,12 @@ customization {
   action = addbutton
   actionid = ab98b1c6-36eb-4d2e-a4df-e6f8320449351682691033654
   y = 141
-  backgroundnormal = resources\modpack\longbutton.png
+  backgroundnormal = config\txloader\load\modpack\longbutton.png
   height = 21
 }
 
 customization {
-  path = resources/modpack/tfg_logo.png
+  path = config/txloader/load/modpack/tfg_logo.png
   orientation = top-centered
   x = -64
   width = 337
@@ -388,7 +388,7 @@ customization {
 
 customization {
   [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if][group:900][req_id:023ea79c-2678-4fe3-8759-8d9ad9aa3a941682701574887] = 1000
-  path = resources/modpack/tfg_logo.png
+  path = config/txloader/load/modpack/tfg_logo.png
   orientation = top-centered
   x = -45
   width = 312
@@ -404,7 +404,7 @@ customization {
   orientation = top-centered
   basecolor = #ff1500
   shadow = true
-  splashfilepath = resources/modpack/words/en_us.txt
+  splashfilepath = config/txloader/load/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
   refresh = true
@@ -424,7 +424,7 @@ customization {
   basecolor = #ff1500
   shadow = true
   [loading_requirement_group:1280] = [group_mode:and]
-  splashfilepath = resources/modpack/words/en_us.txt
+  splashfilepath = config/txloader/load/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
   refresh = true
@@ -442,7 +442,7 @@ customization {
   orientation = top-centered
   basecolor = #ff1500
   shadow = true
-  splashfilepath = resources/modpack/words/en_us.txt
+  splashfilepath = config/txloader/load/modpack/words/en_us.txt
   rotation = 0.0
   scale = 1.0
   refresh = true
@@ -459,7 +459,7 @@ customization {
 
 customization {
   [loading_requirement:fancymenu_loading_requirement_is_window_width_bigger_than][requirement_mode:if_not][group:900][req_id:cdff1e3a-6c56-451e-8555-833600d762e11682703357937] = 1000
-  path = resources/modpack/tfg_logo.png
+  path = config/txloader/load/modpack/tfg_logo.png
   orientation = top-centered
   x = 18
   width = 185
