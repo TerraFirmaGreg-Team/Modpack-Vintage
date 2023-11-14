@@ -5,17 +5,6 @@
     <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/4980f6f22fd8a7ecab65230b87964c8db23efbc2/branding/logo.png?raw=true" alt="Logo" height="75">
   </a>
   <br/>
-  <br/>
-  <p align="center">
-    <p>This is the most difficult modpack in minecraft!</p>
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/wiki">Explore the wiki</a>
-    ·
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues">Report Bugs</a>
-    ·
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues">Request Features</a>
-    ·
-    <a href="https://github.com/TerraFirmaGreg-Team/projects/9">Roadmap</a>
-  </p>
   <a href="https://modrinth.com/modpack/terrafirmagreg/versions?g=1.12.2">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/modrinth_vector.svg" alt="Available on Modrinth"></a>
 
@@ -24,28 +13,50 @@
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.12.2">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
+  <br/>
+  <p align="center">
+    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/wiki">Explore the wiki</a>
+    ·
+    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues">Report Bugs</a>
+    ·
+    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/issues">Request Features</a>
+    ·
+    <a href="https://github.com/TerraFirmaGreg-Team/projects/9">Roadmap</a>
+  </p>
 </div>
-<br />
-
+<br/>
 
 ![logotfg](https://user-images.githubusercontent.com/52341158/131987786-bf99e1af-318c-4ed4-a6f8-c4617d692adb.png)
 
 ***
 
-# Description
+# Survival Modpack As It Should've Been
 
-This is the most difficult modpack in minecraft! In this modpack there are 2 of the coolest and most difficult mods that change the process of survival and the game in general. TerraFirmaCraft and GregTechCEu.
+**TerraFirmaGreg** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft) and [GregTech](https://modrinth.com/mod/gregtech-ce-unofficial).
 
-Of course, there are other mods in the modpack, such as AE2EL, GC, OpenComputers and heaps of addons to the main mods, you can't list them all, there are also more than 1000 quests in the build that will help you survive, so go in and try to survive yourself in a world ruled by technology, if you dare of course!
+Modpack developers have carefully combined TerraFirmaCraft, which has little compatibility ability, and [GregTech](https://modrinth.com/mod/gregtech-ce-unofficial), the best of the technical mods.
 
-***
+Also in the modpack there are other interesting mods that will allow you to pass the time with pleasure (or not): 
 
 # The modpack has two versions:
 
+**Main mods by modpack type:**
+
 **Default** - The main and priority version of the modpack. It contains only what meets the modpack canon.
+
+- [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft)
+- [GregTech CEu](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial)
+- [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)
+- [Galacticraft](https://www.curseforge.com/minecraft/mc-mods/galacticraft-legacy)
+- [OpenComputers](https://www.curseforge.com/minecraft/mc-mods/opencomputers)
+- [and more!](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/relations/dependencies)
 
 **Extended** - The main modpack with the addition of magic mods, such as Thaumcraft and AstralSorcery and addons to them.
 
-***
+- [Thaumcraft](https://www.curseforge.com/minecraft/mc-mods/thaumcraft)
+- [AstralSorcery](https://www.curseforge.com/minecraft/mc-mods/astral-sorcery)
+
+
+and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
 
 ![img](https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
