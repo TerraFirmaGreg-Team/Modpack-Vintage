@@ -29,6 +29,7 @@
 - Sledgehammer 2.0.23 -> 2.0.25
 - supermartijn642configlib 1.1.7 -> 1.1.8
 - vintagefix 0.2.12 - 0.3.3
+- movingelevators 1.4.4 -> 1.4.5
 - theoneprobe -> TheOneProbe-CE
 - ResourceLoader -> txloader
 - Hesperus -> Alfheim
