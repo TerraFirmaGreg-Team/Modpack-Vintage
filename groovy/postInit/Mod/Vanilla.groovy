@@ -436,20 +436,4 @@ crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [m
 
 
 
-crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfg/tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
-crafting.addShapeless("tfg/tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
-crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfg/tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
-cutter.recipeBuilder()
-	.inputs(item('tfc:stick_bundle'))
-	.fluidInputs(fluid('lubricant') * 1)
-	.outputs(item('minecraft:stick') * 18)
-	.duration(200).EUt(7).buildAndRegister()
-
-cutter.recipeBuilder()
-	.inputs(ore('lumber'))
-	.fluidInputs(fluid('lubricant') * 1)
-	.outputs(item('minecraft:stick') * 9)
-	.duration(200).EUt(7).buildAndRegister()

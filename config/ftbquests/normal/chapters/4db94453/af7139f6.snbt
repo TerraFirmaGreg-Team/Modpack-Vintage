@@ -8,11 +8,10 @@
 		uid: "d983d198",
 		type: "item",
 		items: [{
-			id: "betterp2p_plusplus:advanced_memory_card",
+			id: "betterp2p:advanced_memory_card",
 			tag: {
 				selectedIndex: -1
-			},
-			Count: 1b
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
