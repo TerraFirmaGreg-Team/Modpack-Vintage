@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x">
-    <img src="https://raw.githubusercontent.com/intergrav/Branding/main/additive/additive_textlogo_256h.png" alt="Logo" height="75">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/4980f6f22fd8a7ecab65230b87964c8db23efbc2/branding/logo.png" alt="Logo" height="75">
   </a>
   <br/>
   <br/>
