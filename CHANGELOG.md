@@ -1,8 +1,20 @@
 # Changelog
 ## [4.3.7] - 2023-08-18
 ### Modpack fixes
-- Сменен загрузчик ресурсов, теперь папка со всеми ресурсами необходимых для модпака, перемещена из resources -> config\txloader\load.
-- 
+- Сменен загрузчик ресурсов, теперь папка со всеми ресурсами, необходимых для модпака, перемещена из resources -> config\txloader\load.
+- Исправлено отображение дождя.
+- Исправлен баг отображения craftpresence.
+- Исправлено #153: Рецепт палок из досок в Cutting machine.
+- Исправлено #195: Cooking meat is backwards.
+- Исправлено #186: MultiMC pack zip does not launch when imported into MMC.
+- Исправлено #194: Anvil forging recipe for wrought iron propick has 2 final steps blocking creation.
+- Исправлено #189: Батарейки не опустошаются.
+- Исправлено #192: Weather Siren Quest not translated to English.
+- Исправлено #202: Добавление улучшенного SMD Resistor в крафт.
+- Исправлено #207: LV input bus requires a vanilla chest.
+- Исправлено #212: Flint tool Knapping error.
+- Исправлено #214: Easy to fix crash report!
+- Исправлено #215: Extruder Recipe Errors when starting world.
 ### Update mods
 - !mixinbooter 8.4 -> 8.9
 - _supermartijn642corelib 1.1.12a -> 1.1.15
