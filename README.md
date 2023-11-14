@@ -1,4 +1,4 @@
-# TerraFirmaGreg - 1.12.2
+# TerraFirmaGreg - 1.12.x
 
 <div align="center">
   <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x">
