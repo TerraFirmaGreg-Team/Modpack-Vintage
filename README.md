@@ -28,3 +28,4 @@ Of course, there are other mods in the modpack, such as AE2EL, GC, OpenComputers
 Default - The main and priority version of the modpack. It contains only what meets the modpack canon.
 
 Extended - The main modpack with the addition of magic mods, such as Thaumcraft and AstralSorcery and addons to them.
+![73a631b23cbc75203ecee9eab08126dbdbdf3094](https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
