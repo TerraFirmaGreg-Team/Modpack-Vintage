@@ -1208,6 +1208,9 @@ tfg.quests.mv.siliconlottery.desc4=§cWarning:§r Each Silicon Boule takes 7.5 m
 tfg.quests.mv.MV.title=More MV Circuits
 tfg.quests.mv.MV.subtitle=The MV Circuit for the Integrated Tier.
 
+tfg.quests.mv.weather_siren.title=Weather siren
+tfg.quests.mv.weather_siren.subtitle=- Weather siren to warn you of deadly storms
+
 tfg.quests.mv.HV.title=First HV Circuits!
 tfg.quests.mv.HV.subtitle=§oAlright, technically HV Circuit and Stainless Steel means you can move to HV... but let's not rush things.§r
 tfg.quests.mv.HV.desc1=The first thing you should probably do is a §3MV Circuit Assembler§r, to unlock the new tier of Circuits right away, as they are the §dreal payoff§r.
