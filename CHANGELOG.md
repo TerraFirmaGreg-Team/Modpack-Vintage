@@ -1,4 +1,43 @@
 # Changelog
+## [4.3.7] - 2023-08-18
+### Modpack fixes
+- Сменен загрузчик ресурсов, теперь папка со всеми ресурсами необходимых для модпака, перемещена из resources -> config\txloader\load.
+- 
+### Update mods
+- !mixinbooter 8.4 -> 8.9
+- _supermartijn642corelib 1.1.12a -> 1.1.15
+- appliedenergistics2-extended_life 0.55.21 -> 0.55.27
+- betterp2p-extended_life -> betterp2p_plusplus-extended_life
+- bogosorter 1.2.9 -> 1.4.5
+- censoredasm 5.14 -> 5.18
+- CraftPresence 2.2.1 -> 2.2.4
+- CraftTweaker2 4.1.20.691 -> 4.1.20.695
+- CreativeCore 1.10.70 -> 1.10.71
+- CustomSkinLoader 14.15.2 -> 14.18.1
+- ExtraPlanets 0.7.6 -> 0.7.7
+- Fluid Craft for AE2 2.4.28-r - 2.4.33-r
+- Galacticraft 4.0.5 -> 4.0.6
+- GalacticResearch 1.0.6 -> 1.0.7
+- gregtech 2.7.3-beta -> 2.7.4-beta
+- gregtechfoodoption 1.9.3.1 -> 1.10.1
+- groovyscript 0.6.1 -> 0.6.4
+- HadEnoughItems 4.25.0 -> 4.25.1
+- LittleTiles 1.5.80 -> 1.5.82
+- modularui 2.1.0 -> 2.3.1
+- movingelevators 1.4.3 -> 1.4.4
+- nae2 1.3.0 -> 1.5.3
+- Sledgehammer 2.0.23 -> 2.0.25
+- supermartijn642configlib 1.1.7 -> 1.1.8
+- vintagefix 0.2.12 - 0.3.3
+- theoneprobe -> TheOneProbe-CE
+- ResourceLoader -> txloader
+- Hesperus -> Alfheim
+- Clumps -> Fixeroo
+### New mods
+- Red-Core
+- visualores
+- Valkyrie
+
 ## [4.3.6] - 2023-08-18
 ### Modpack fixes
 - Downgraded GC version to fix freezing.
