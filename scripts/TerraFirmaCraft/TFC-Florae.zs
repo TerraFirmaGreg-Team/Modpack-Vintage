@@ -125,3 +125,7 @@ for i, MissingFreshFruits in MissingFreshFruits{
 	Drying.addRecipe("tfg/tfcflorae/drying/" + i, MissingFreshFruits, MissingDriedFruits[i], 12000);
 }
 
+
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_1", <gregtech:meta_tool_head_knife:2049> * 2, "X  X ", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_2", <gregtech:meta_tool_head_knife:2049> * 2, "X   X", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_3", <gregtech:meta_tool_head_knife:2049> * 2, " X X ", "XX XX", "XX XX", "XX XX", "XX XX");

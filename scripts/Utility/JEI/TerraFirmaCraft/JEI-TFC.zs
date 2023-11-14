@@ -168,14 +168,3 @@ StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_intrusive> * 2);
 StoneKnapping.removeRecipe(<tfc:stone/knife_head/igneous_extrusive> * 2);
 StoneKnapping.removeRecipe(<tfc:stone/knife_head/sedimentary> * 2);
 StoneKnapping.removeRecipe(<tfc:stone/knife_head/metamorphic> * 2);
-
-// Удаление голов флинтовых инструментов
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/axe_head/flint>);
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/shovel_head/flint>);
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/javelin_head/flint>);
-
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/hoe_head/flint>);
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/knife_head/flint>);
-
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/hoe_head/flint> * 2);
-StoneKnapping.removeRecipe(<tfcflorae:tools/flint/knife_head/flint> * 2);
