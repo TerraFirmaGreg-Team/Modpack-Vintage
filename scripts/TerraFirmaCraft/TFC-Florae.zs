@@ -126,6 +126,11 @@ for i, MissingFreshFruits in MissingFreshFruits{
 }
 
 
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_1", <gregtech:meta_tool_head_knife:2049> * 2, "X  X ", "XX XX", "XX XX", "XX XX", "XX XX");
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_2", <gregtech:meta_tool_head_knife:2049> * 2, "X   X", "XX XX", "XX XX", "XX XX", "XX XX");
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/knife_3", <gregtech:meta_tool_head_knife:2049> * 2, " X X ", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_1", <gregtech:meta_tool_head_knife:2049> * 2, "X  X ", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_2", <gregtech:meta_tool_head_knife:2049> * 2, "X   X", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_3", <gregtech:meta_tool_head_knife:2049> * 2, " X X ", "XX XX", "XX XX", "XX XX", "XX XX");
+
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_shovel", <gregtech:meta_tool_head_shovel:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
+
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_hoe", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
+mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_hoe_2", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");

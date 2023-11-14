@@ -33,6 +33,10 @@ LeatherKnapping.removeRecipe(<tfcflorae:container/leather_bag>);
 LeatherKnapping.removeRecipe(<tfcflorae:container/pineapple_leather_bag>);
 
 // Удаление голов флинтовых инструментов
+mods.tfcflorae.knapping.remove("flint", <tfcflorae:tools/flint/javelin_head/flint>);
+
+mods.tfcflorae.knapping.remove("flint", <tfcflorae:tools/flint/hammer_head/flint>);
+
 mods.tfcflorae.knapping.remove("flint", <tfcflorae:tools/flint/knife_head/flint>);
 mods.tfcflorae.knapping.remove("flint", <tfcflorae:tools/flint/knife_head/flint> * 2);
 

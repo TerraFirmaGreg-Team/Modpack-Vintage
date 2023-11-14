@@ -137,15 +137,15 @@ Anvil.addRecipe("tfg/tfc/file_head/red_steel", <metaitem:ingotRedSteel>, <metait
 Anvil.addRecipe("tfg/tfc/file_head/blue_steel", <metaitem:ingotBlueSteel>, <metaitem:toolHeadFileBlueSteel>, 6, "tools", "SHRINK_NOT_LAST", "DRAW_NOT_LAST", "PUNCH_LAST");
 
 // Новые рецепты ковки GT propick
-Anvil.addRecipe("tfg/tfc/propick/copper", <metaitem:ingotCopper>, <metaitem:toolHeadPropickCopper>, 1, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/bronze", <metaitem:ingotBronze>, <metaitem:toolHeadPropickBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/bismuth_bronze", <metaitem:ingotBismuthBronze>, <metaitem:toolHeadPropickBismuthBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/black_bronze", <metaitem:ingotBlackBronze>, <metaitem:toolHeadPropickBlackBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/wrought_iron", <metaitem:ingotWroughtIron>, <metaitem:toolHeadPropickWroughtIron>, 3, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/steel", <metaitem:ingotSteel>, <metaitem:toolHeadPropickSteel>, 4, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/black_steel", <metaitem:ingotBlackSteel>, <metaitem:toolHeadPropickBlackSteel>, 5, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/red_steel", <metaitem:ingotRedSteel>, <metaitem:toolHeadPropickRedSteel>, 6, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
-Anvil.addRecipe("tfg/tfc/propick/blue_steel", <metaitem:ingotBlueSteel>, <metaitem:toolHeadPropickBlueSteel>, 6, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "SHRINK_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/copper", <metaitem:ingotCopper>, <metaitem:toolHeadPropickCopper>, 1, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/bronze", <metaitem:ingotBronze>, <metaitem:toolHeadPropickBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/bismuth_bronze", <metaitem:ingotBismuthBronze>, <metaitem:toolHeadPropickBismuthBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/black_bronze", <metaitem:ingotBlackBronze>, <metaitem:toolHeadPropickBlackBronze>, 2, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/wrought_iron", <metaitem:ingotWroughtIron>, <metaitem:toolHeadPropickWroughtIron>, 3, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/steel", <metaitem:ingotSteel>, <metaitem:toolHeadPropickSteel>, 4, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/black_steel", <metaitem:ingotBlackSteel>, <metaitem:toolHeadPropickBlackSteel>, 5, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/red_steel", <metaitem:ingotRedSteel>, <metaitem:toolHeadPropickRedSteel>, 6, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
+Anvil.addRecipe("tfg/tfc/propick/blue_steel", <metaitem:ingotBlueSteel>, <metaitem:toolHeadPropickBlueSteel>, 6, "tools", "PUNCH_LAST", "DRAW_NOT_LAST", "BEND_NOT_LAST");
 
 // Новые рецепты ковки GT чизеля
 Anvil.addRecipe("tfg/tfc/chisel/copper", <metaitem:ingotCopper>, <metaitem:toolHeadChiselCopper>, 1, "tools", "HIT_LAST", "HIT_NOT_LAST", "DRAW_NOT_LAST");
