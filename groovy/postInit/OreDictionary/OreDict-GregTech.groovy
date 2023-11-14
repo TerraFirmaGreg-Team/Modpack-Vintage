@@ -62,6 +62,8 @@ if (isLoaded("gregtech")) {
         item('minecraft:diamond'), 
         metaitem('gemFlawlessDiamond')
     )
+
+    ore('componentResistor').add(metaitem('component.advanced_smd.resistor'))
     
     // --- Удаление
     
