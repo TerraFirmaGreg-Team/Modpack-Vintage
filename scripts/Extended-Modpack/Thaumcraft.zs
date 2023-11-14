@@ -685,31 +685,31 @@ assembler.recipeBuilder()
 
 // Pickaxe
 extruder.recipeBuilder()
-	.inputs(<metaitem:shape.extruder.pickaxe>, <ore:ingotThaumium>)
+	.inputs(<tfgmod:meta_item:2>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/pick_head/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
 
 // Sword
 extruder.recipeBuilder()
-	.inputs(<metaitem:shape.extruder.sword>, <ore:ingotThaumium>)
+	.inputs(<tfgmod:meta_item:1>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/sword_blade/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
 
 // Hoe
 extruder.recipeBuilder()
-	.inputs(<metaitem:shape.extruder.hoe>, <ore:ingotThaumium>)
+	.inputs(<tfgmod:meta_item:5>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/hoe_head/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
 
 // Shovel
 extruder.recipeBuilder()
-	.inputs(<metaitem:shape.extruder.shovel>, <ore:ingotThaumium>)
+	.inputs(<tfgmod:meta_item:3>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/shovel_head/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
 
 // Axe
 extruder.recipeBuilder()
-	.inputs(<metaitem:shape.extruder.axe>, <ore:ingotThaumium>)
+	.inputs(<tfgmod:meta_item:4>, <ore:ingotThaumium>)
 	.outputs(<tfc:metal/axe_head/thaumium>)
 	.duration(160).EUt(32).buildAndRegister();
 
