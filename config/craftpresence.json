@@ -2,15 +2,15 @@
   "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
   "_SOURCE": "https://gitlab.com/CDAGaming/CraftPresence",
   "_schemaVersion": 6,
-  "_lastMCVersionId": 340,
+  "_lastMCVersionId": 763,
   "generalSettings": {
     "detectATLauncherInstance": false,
     "detectCurseManifest": false,
     "detectMultiMCManifest": false,
     "detectMCUpdaterInstance": false,
     "detectTechnicPack": false,
-    "detectModrinthPack": true,
-    "detectBiomeData": false,
+    "detectModrinthPack": false,
+    "detectBiomeData": true,
     "detectDimensionData": true,
     "detectWorldData": true,
     "clientId": "750607394895298570",
@@ -150,14 +150,14 @@
     "stripTranslationColors": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
-    "configKeyCode": 41
+    "configKeyCode": 96
   },
   "displaySettings": {
     "presenceData": {
       "enabled": true,
       "useAsMain": false,
-      "details": "{getFirst(menu.message, dimension.message)}",
-      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
+      "details": "Modpack Version: 1.12.2",
+      "gameState": "{getFirst(menu.message, dimension.message)}",
       "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
       "largeImageText": "{getFirst(menu.message, dimension.message)}",
       "smallImageKey": "{getFirst(server.icon, pack.icon)}",
@@ -173,8 +173,7 @@
     },
     "dynamicIcons": {
       "default": "https://via.placeholder.com/256.png",
-      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51",
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
+      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51"
     },
     "dynamicVariables": {
       "default": "Example Text",
