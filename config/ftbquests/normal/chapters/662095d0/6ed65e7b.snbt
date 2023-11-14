@@ -1,8 +1,9 @@
 {
+	title: "{tfg.quests.mv.weather_siren.title}",
 	x: 4.0d,
 	y: -3.0d,
 	text: [
-		"- Погодная сирена, чтобы предупредить вас о смертоносных штормах"
+		"{tfg.quests.mv.weather_siren.subtitle}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
