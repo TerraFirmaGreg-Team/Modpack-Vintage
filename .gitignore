@@ -37,3 +37,5 @@ opframe_cache/
 config/gregtech/terminal/
 visualores/
 .curseclient
+vintagefix/transformerCache/jarDiscoverer.cache
+config/splash.properties
