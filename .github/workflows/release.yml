@@ -135,11 +135,9 @@ jobs:
         with:
           webhook-url: ${{ secrets.RELEASES_1_12 }}
           username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/config/txloader/load/modpack/icons/github.png?raw=true
-          embed-thumbnail-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/config/txloader/load/modpack/icons/icon.png?raw=true
-          embed-title: Релиз ${{ steps.changelog.outputs.version }}
+          avatar-url: https://github.com/TerraFirmaGreg-Team/.github/blob/6279c7b205e642fd6b1398f55df988dfd306d265/branding/logo.png
+          embed-title: Release ${{ steps.changelog.outputs.version }}
           embed-description: "${{ steps.changelog.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/CHANGELOG.md
           embed-color: 15430476
-          embed-footer-icon-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/config/txloader/load/modpack/icons/icon.png?raw=true
           embed-footer-text: ${{ steps.changelog.outputs.date }}

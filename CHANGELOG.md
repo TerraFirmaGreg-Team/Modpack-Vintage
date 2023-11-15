@@ -1,20 +1,20 @@
 # Changelog
 ## [4.4.0] - 2023-08-18
 ### Modpack fixes
-- Сменен загрузчик ресурсов, теперь папка со всеми ресурсами, необходимых для модпака, перемещена из resources -> config\txloader\load.
-- Исправлено отображение дождя.
-- Исправлен баг отображения craftpresence.
-- Исправлено #153: Рецепт палок из досок в Cutting machine.
-- Исправлено #195: Cooking meat is backwards.
-- Исправлено #186: MultiMC pack zip does not launch when imported into MMC.
-- Исправлено #194: Anvil forging recipe for wrought iron propick has 2 final steps blocking creation.
-- Исправлено #189: Батарейки не опустошаются.
-- Исправлено #192: Weather Siren Quest not translated to English.
-- Исправлено #202: Добавление улучшенного SMD Resistor в крафт.
-- Исправлено #207: LV input bus requires a vanilla chest.
-- Исправлено #212: Flint tool Knapping error.
-- Исправлено #214: Easy to fix crash report!
-- Исправлено #215: Extruder Recipe Errors when starting world.
+- The resource loader has been changed. Now, the folder with all the applications required for the modpack has been moved from resources -> config\txloader\load.
+- Fixed the use of rain.
+- Fixed a bug with displaying CraftPresence.
+- Fixed #153: Recipe for plank sticks in the cutting machine.
+- Fixed #195: Meat is cooked in reverse order.
+- Fixed #186: The MultiMC package zip archive does not run when imported into MMC.
+- Fixed #194: The recipe for forging wrought iron on an anvil has the last two steps blocking creation.
+- Fixed #189: Batteries are not drained.
+- Fixed #192: The Weather Siren Quest is not translated into English.
+- Fixed #202: Adding an improved SMD resistor to the craft.
+- Fixed #207: The low voltage input bus requires a standard chest.
+- Fixed #212: Flint tool clamping error.
+- Fixed #214: Easily fix crash reports!
+- Fixed #215: Extruder recipe errors when starting a world.
 ### Update mods
 - !mixinbooter 8.4 -> 8.9
 - _supermartijn642corelib 1.1.12a -> 1.1.15
