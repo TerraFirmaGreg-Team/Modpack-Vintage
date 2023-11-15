@@ -53,13 +53,13 @@ jobs:
       - name: Archive Release CF normal
         run: |
           mv -vf .minecraft/ ./overrides/ 
-          zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
 
       - name: Archive Release CF extended
         run: |
           cd ./extended/
           mv -vf .minecraft/ ./overrides/ 
-          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/resourcepacks/ ./overrides/shaderpacks/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
 
       - name: Deleting Client Resources normal
         run: |
