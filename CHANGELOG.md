@@ -7,6 +7,8 @@
 - Removed Alfheim from the server-pack.
 ### Update mods
 - CustomSkinLoader_ForgeLegacy 14.18.1 -> 14.15.2
+### Removed mods
+- multithreadingandtweaks
 
 ## [4.4.0] - 2023-11-15
 ### Modpack fixes
