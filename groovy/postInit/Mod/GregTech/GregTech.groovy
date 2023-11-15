@@ -85,7 +85,7 @@ if (isLoaded("gregtech")) {
         [ore('circuitHv'), item('gregtech:metal_casing:2'), ore('circuitHv')],
         [metaitem('cableGtSingleAnnealedCopper'), ore('circuitHv'), metaitem('cableGtSingleAnnealedCopper')]])
     
-    // // Стацния создания
+    // Стацния создания
     crafting.addShaped("tfg/gregtech/crafting_station", metaitem('workbench'), [
         [ore('chestWood'), ore('slabWood'), ore('chestWood')],
         [ore('plankWood'), ore('craftingTableWood'), ore('plankWood')],
@@ -732,7 +732,8 @@ if (isLoaded("gregtech")) {
     // Входной люк ULV
     mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
-        .inputs(ore('chestWood'), metaitem('hull.ulv'))
+        .inputs(ore('chestWood'))
+        .inputs(metaitem('hull.ulv'))
         .fluidInputs(fluid('glue') * 250)
         .outputs(metaitem('item_bus.import.ulv'))
         .duration(300).EUt(7).buildAndRegister()
