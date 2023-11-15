@@ -87,7 +87,7 @@ jobs:
           zip -r ../../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
       - name: Upload Curseforge normal
-        uses: juraj-hrivnak/upload-curseforge-modpack-action@v2.0.0
+        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
@@ -101,7 +101,7 @@ jobs:
           release-type: "release"
 
       - name: Upload Curseforge extended
-        uses: juraj-hrivnak/upload-curseforge-modpack-action@v2.0.0
+        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"

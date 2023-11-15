@@ -89,9 +89,9 @@ jobs:
         uses: softprops/action-gh-release@v0.1.15
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          prerelease: false
+          prerelease: true
           generate_release_notes: true
-          name: Release ${{ steps.changelog.outputs.version }}
+          name: Pre-Release ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
