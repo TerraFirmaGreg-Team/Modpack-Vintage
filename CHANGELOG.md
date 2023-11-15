@@ -5,6 +5,7 @@
 - Downgraded version of CustomSkinLoader.
 - Extended autobuild fix.
 - Removed Alfheim from the server-pack.
+- Retrogen disabled.
 ### Update mods
 - CustomSkinLoader_ForgeLegacy 14.18.1 -> 14.15.2
 ### Removed mods
