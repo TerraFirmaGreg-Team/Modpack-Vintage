@@ -446,10 +446,9 @@ if (isLoaded("tfc")) {
 	// Lumber -> dustWood
 		macerator.recipeBuilder()
 			.inputs(arrayTFC.tfcLumber[i])
-			.fluidInputs(fluid('lubricant') * 1000)
 			.outputs(
-				metaitem('dustWood') * 48,
-				metaitem('dustSmallWood') * 32)
+				metaitem('dustWood') * 5,
+				metaitem('dustSmallWood') * 2)
 			.duration(400).EUt(12).buildAndRegister()
 	
 	// Дерево -> Пиломатериалы
