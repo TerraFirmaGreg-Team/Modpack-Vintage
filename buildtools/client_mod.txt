@@ -32,3 +32,4 @@ SmoothFont-mc1.12.2-*
 SoundFilters-*
 tfctowerheat-*
 thah-*
+Alfheim-*

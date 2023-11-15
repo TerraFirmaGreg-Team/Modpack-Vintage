@@ -1,10 +1,9 @@
 .git/
 .github/
+.gitignore
 buildtools/
 extended/
-.gitignore
-CHANGELOG_EN.md
-CHANGELOG_RU.md
+CHANGELOG.md
 minecraftinstance.json
 LICENSE
 README.md

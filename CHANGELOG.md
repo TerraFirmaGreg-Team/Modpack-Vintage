@@ -1,9 +1,14 @@
 # Changelog
-## [4.4.1] - 2023-08-18
+## [4.4.1] - 2023-11-15
 ### Modpack fixes
 - From the archive cf deleted resource packages and shader packages, they remain in mmc and on git.
+- Downgraded version of CustomSkinLoader.
+- Extended autobuild fix.
+- Removed Alfheim from the server-pack.
+### Update mods
+- CustomSkinLoader_ForgeLegacy 14.18.1 -> 14.15.2
 
-## [4.4.0] - 2023-11-12
+## [4.4.0] - 2023-11-15
 ### Modpack fixes
 - The resource loader has been changed. Now, the folder with all the applications required for the modpack has been moved from resources -> config\txloader\load.
 - Fixed the use of rain.
