@@ -95,7 +95,7 @@ jobs:
           modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
-          game-version: 1.12.2
+          game-version: "1.12.2"
           display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}
           server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server
           release-type: "release"
@@ -109,7 +109,7 @@ jobs:
           modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
-          game-version: 1.12.2
+          game-version: "1.12.2"
           display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-extended
           server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended
           release-type: "beta"
