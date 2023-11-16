@@ -117,7 +117,7 @@ customization {
   y = 10
   scale = 1.0
   alignment = left
-  value = Latest Modpack Version: {"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-New-Horizons/TFG-NewHorizons-1.12.2/releases/latest","json_path":"$.tag_name"}}
+  value = Latest Modpack Version: {"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/releases/latest","json_path":"$.tag_name"}}
 }
 
 customization {
