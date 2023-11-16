@@ -10,9 +10,9 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "TFG-New-Horizons",
+  "name": "TerraFirmaGreg-1.12.x",
   "version": "DEV",
-  "author": "SpeeeDCraft_YT",
+  "author": "Exception, Xikaro",
   "files": [
     {
       "projectID": 357540,

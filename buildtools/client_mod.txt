@@ -5,7 +5,6 @@ Blur-*
 ChunkAnimator-*
 CraftPresence-*
 CustomLoadingScreen-*
-CustomSkinLoader_ForgeLegacy-*
 darkness-forge-*
 DefaultOptions_*
 DynamicSurroundings-*
