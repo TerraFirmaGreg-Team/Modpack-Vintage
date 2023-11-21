@@ -39,3 +39,4 @@ visualores/
 .curseclient
 vintagefix/transformerCache/jarDiscoverer.cache
 config/splash.properties
+minecraftinstance.json
