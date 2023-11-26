@@ -1,4 +1,14 @@
 # Changelog
+## [4.4.2] - 2023-11-26
+### Modpack fixes
+- Прочность у всех инструментов увеличена в 7 раз.
+- 
+### Update mods
+- Red-Core 0.5.1 -> 0.6-Dev-1
+- TerraFirmaGreg 2.0.18 -> 2.0.19
+### Removed mods
+- multithreadingandtweaks
+- 
 ## [4.4.1] - 2023-11-15
 ### Modpack fixes
 - From the archive cf deleted resource packages and shader packages, they remain in mmc and on git.
