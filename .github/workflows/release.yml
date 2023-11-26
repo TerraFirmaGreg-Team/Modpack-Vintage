@@ -31,7 +31,7 @@ jobs:
 
       - name: Move
         run: |
-          rsync -av --exclude-from='buildtools/filelist.txt' ./ .minecraft/
+          rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
           cp -r .minecraft/* extended/.minecraft/
           cp -r modlist.html extended/modlist_temp.html
           cp -r manifest.json extended/manifest_temp.json
@@ -42,34 +42,29 @@ jobs:
 
       - name: Archive MMC
         run: |
-          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
           cd ./extended/
-          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc-extended.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive CF
         run: |
-          mv -vf .minecraft/ ./overrides/ 
-          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/resourcepacks/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
+          mv -vf .minecraft/ overrides/ 
+          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides/bansoukou/ overrides/resourcepacks/ overrides/config/ overrides/groovy/ overrides/scripts/
           cd ./extended/
-          mv -vf .minecraft/ ./overrides/ 
-          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/resourcepacks/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
-
-      - name: Deleting Client Resources
-        run: |
-          cd ./overrides/
-          cat ../.github/buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
-          rm -rf ./resourcepacks ./config/txloader ./shaderpacks
-          cd ./extended/overrides/
-          cat ../../.github/buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
-          rm -rf ./resourcepacks ./config/txloader ./shaderpacks
+          mv -vf .minecraft/ overrides/ 
+          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf-extended.zip manifest.json modlist.html overrides/bansoukou/ overrides/resourcepacks/ overrides/config/ overrides/groovy/ overrides/scripts/
 
       - name: Archive Server
         run: |
-          cp -r ./.github/buildtools/serverfiles/* ./overrides/
+          cp -r .github/buildtools/serverfiles/* overrides/
+          cp -r .github/buildtools/serverfiles/* extended/overrides/
           cd ./overrides/
+          cat ./.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
+          rm -rf resourcepacks config/txloader
           zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip ./
-          cp -r ./.github/buildtools/serverfiles/* ./extended/overrides/
-          cd ./extended/overrides/
+          cd ../extended/overrides/
+          cat ../../.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
+          rm -rf resourcepacks config/txloader
           zip -r ../../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
       - name: Upload Curseforge Normal
@@ -91,8 +86,8 @@ jobs:
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
-          modpack-path: ./TerraFirmaGreg-1.12${{ steps.get_version.outputs.version }}-cf-extended.zip
-          modpack-server-path: ./TerraFirmaGreg-1.12${{ steps.get_version.outputs.version }}-server-extended.zip
+          modpack-path: ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf-extended.zip
+          modpack-server-path: ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.12.2"
@@ -124,6 +119,6 @@ jobs:
           avatar-url: https://github.com/TerraFirmaGreg-Team/.github/blob/6279c7b205e642fd6b1398f55df988dfd306d265/branding/logo.png
           embed-title: Release ${{ steps.changelog.outputs.version }}
           embed-description: "${{ steps.changelog.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-New-Horizons/TFG-Modpack-1.12.x/tree/main/CHANGELOG.md
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/tree/main/CHANGELOG.md
           embed-color: 15430476
           embed-footer-text: ${{ steps.changelog.outputs.date }}

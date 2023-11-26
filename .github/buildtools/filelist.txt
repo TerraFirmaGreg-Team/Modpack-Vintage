@@ -1,9 +1,11 @@
 .git/
 .github/
-.gitignore
-buildtools/
 extended/
+.gitignore
 CHANGELOG.md
-minecraftinstance.json
 LICENSE
 README.md
+instance.cfg
+manifest.json
+mmc-pack.json
+modlist.html
