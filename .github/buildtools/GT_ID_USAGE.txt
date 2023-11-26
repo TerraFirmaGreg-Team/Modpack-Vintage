@@ -1,6 +1,0 @@
-32000 - Greenhouse controller
-32001 - Sawnill controller
-32002 - Starforge controller
-32050 - Dry Ice
-32100 - 32150 - StoneType Rocks
-32200 - 32227 - Airs
