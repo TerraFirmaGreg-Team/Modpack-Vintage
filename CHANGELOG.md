@@ -2,13 +2,16 @@
 ## [4.4.2] - 2023-11-26
 ### Modpack fixes
 - Прочность у всех инструментов увеличена в 7 раз.
-- 
 ### Update mods
 - Red-Core 0.5.1 -> 0.6-Dev-1
 - TerraFirmaGreg 2.0.18 -> 2.0.19
-### Removed mods
-- multithreadingandtweaks
-- 
+- Alfheim 1.1-Dev-2 -> 1.1
+- nae 1.5.3 -> 1.5.4
+- littletiles 1.5.82 -> 1.5.84
+- CraftPresence 2.2.4 -> 2.2.5
+### New mods
+- farsight
+
 ## [4.4.1] - 2023-11-15
 ### Modpack fixes
 - From the archive cf deleted resource packages and shader packages, they remain in mmc and on git.

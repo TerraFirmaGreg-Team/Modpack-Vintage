@@ -3,7 +3,7 @@ name: Deploy modpack
 on:
   push:
     tags:
-      - "R*.*.*"
+      - "*.*.*"
 
 jobs:
   Deploy:
@@ -14,7 +14,7 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/R}
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/}
 
       - name: Changelog Parser
         id: changelog
@@ -22,96 +22,82 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: normal -> extended
-        run: |
-          rsync -av --exclude-from='buildtools/filelist.txt' ./ ./.minecraft/
-          cp -r ./.minecraft/* ./extended/.minecraft/
-          cp -r ./modlist.html ./extended/modlist_temp.html
-          cp -r ./manifest.json ./extended/manifest_temp.json
-          sed -i -e 1,16d ./extended/manifest_temp.json
-          sed 1d ./extended/modlist_temp.html
-          cat ./extended/modlist_extended.html ./extended/modlist_temp.html > ./extended/modlist.html
-          cat ./extended/manifest_extended.json ./extended/manifest_temp.json > ./extended/manifest.json
-
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" ./extended/.minecraft/config/fancymenu/customization/tfg_version.txt
-          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
-          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
-          sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/tfg_version.txt
-          sed -i -e "s/DEV/${DEV}/g" ./extended/manifest.json
-          sed -i -e "s/DEV/${DEV}/g" ./extended/instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" manifest.json
+          sed -i -e "s/DEV/${DEV}/g" instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/tfg_version.txt
 
-      - name: Archive Release MMC normal
-        run: zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
-
-      - name: Archive Release MMC extended
+      - name: Move
         run: |
-          cd ./extended/
-          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+          rsync -av --exclude-from='buildtools/filelist.txt' ./ .minecraft/
+          cp -r .minecraft/* extended/.minecraft/
+          cp -r modlist.html extended/modlist_temp.html
+          cp -r manifest.json extended/manifest_temp.json
+          sed -i -e 1,16d extended/manifest_temp.json
+          sed 1d extended/modlist_temp.html
+          cat extended/modlist_extended.html extended/modlist_temp.html > extended/modlist.html
+          cat extended/manifest_extended.json extended/manifest_temp.json > extended/manifest.json
 
-      - name: Archive Release CF normal
+      - name: Archive MMC
+        run: |
+          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+          cd ./extended/
+          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc-extended.zip ./mmc-pack.json ./instance.cfg ./.minecraft/
+
+      - name: Archive CF
         run: |
           mv -vf .minecraft/ ./overrides/ 
-          zip -r ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
-
-      - name: Archive Release CF extended
-        run: |
+          zip -r ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/resourcepacks/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
           cd ./extended/
           mv -vf .minecraft/ ./overrides/ 
-          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
+          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf-extended.zip ./manifest.json ./modlist.html ./overrides/bansoukou/ ./overrides/resourcepacks/ ./overrides/config/ ./overrides/groovy/ ./overrides/scripts/
 
-      - name: Deleting Client Resources normal
+      - name: Deleting Client Resources
         run: |
           cd ./overrides/
-          cat ../buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
+          cat ../.github/buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
           rm -rf ./resourcepacks ./config/txloader ./shaderpacks
-
-      - name: Deleting Client Resources extended
-        run: |
           cd ./extended/overrides/
-          cat ../../buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
+          cat ../../.github/buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
           rm -rf ./resourcepacks ./config/txloader ./shaderpacks
 
-      - name: Archive Release Server normal
+      - name: Archive Server
         run: |
-          cp -r ./buildtools/serverfiles/* ./overrides/
+          cp -r ./.github/buildtools/serverfiles/* ./overrides/
           cd ./overrides/
-          zip -r ../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip ./
-
-      - name: Archive Release Server extended
-        run: |
-          cp -r ./buildtools/serverfiles/* ./extended/overrides/
+          zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip ./
+          cp -r ./.github/buildtools/serverfiles/* ./extended/overrides/
           cd ./extended/overrides/
-          zip -r ../../TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip ./
+          zip -r ../../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
-      - name: Upload Curseforge normal
+      - name: Upload Curseforge Normal
         uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
-          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
-          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
+          modpack-path: ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf.zip
+          modpack-server-path: ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.12.2"
-          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}
-          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server
+          display-name: TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}
+          server-display-name: TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server
           release-type: "release"
 
-      - name: Upload Curseforge extended
+      - name: Upload Curseforge Extended
         uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
-          modpack-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-          modpack-server-path: ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
+          modpack-path: ./TerraFirmaGreg-1.12${{ steps.get_version.outputs.version }}-cf-extended.zip
+          modpack-server-path: ./TerraFirmaGreg-1.12${{ steps.get_version.outputs.version }}-server-extended.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.12.2"
-          display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-extended
-          server-display-name: TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended
+          display-name: TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-extended
+          server-display-name: TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended
           release-type: "beta"
 
       - name: Create GitHub Release
@@ -123,12 +109,12 @@ jobs:
           name: Release ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-cf-extended.zip
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-mmc-extended.zip
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server.zip
-            ./TFG-NewHorizons-${{ steps.get_version.outputs.version }}-server-extended.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-cf-extended.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-mmc-extended.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip
+            ./TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip
 
       - name: Discord notification
         uses: tsickert/discord-webhook@v5.3.0

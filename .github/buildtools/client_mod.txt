@@ -32,3 +32,4 @@ SoundFilters-*
 tfctowerheat-*
 thah-*
 Alfheim-*
+farsight-*
