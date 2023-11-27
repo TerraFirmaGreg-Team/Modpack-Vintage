@@ -40,3 +40,9 @@ visualores/
 vintagefix/transformerCache/jarDiscoverer.cache
 config/splash.properties
 minecraftinstance.json
+.github/buildtools/serverfiles/world/
+.github/buildtools/serverfiles/whitelist.json
+.github/buildtools/serverfiles/ops.json
+.github/buildtools/serverfiles/config/
+.github/buildtools/serverfiles/banned-ips.json
+.github/buildtools/serverfiles/banned-players.json
