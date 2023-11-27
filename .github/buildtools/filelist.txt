@@ -1,5 +1,6 @@
 .git/
 .github/
+shaderpacks/
 extended/
 .gitignore
 CHANGELOG.md
