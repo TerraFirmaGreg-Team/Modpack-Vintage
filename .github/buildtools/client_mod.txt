@@ -33,3 +33,4 @@ tfctowerheat-*
 thah-*
 Alfheim-*
 farsight-*
+txloader-*
