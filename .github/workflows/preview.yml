@@ -60,11 +60,11 @@ jobs:
           cp -r .github/buildtools/serverfiles/* extended/overrides/
           cd ./overrides/
           cat ./.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
-          rm -rf resourcepacks config/txloader
+          rm -rf resourcepacks config/txloader shaderpacks
           zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip ./
           cd ../extended/overrides/
           cat ../../.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
-          rm -rf resourcepacks config/txloader
+          rm -rf resourcepacks config/txloader shaderpacks
           zip -r ../../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
       - name: Create GitHub Release
