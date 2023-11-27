@@ -58,12 +58,12 @@ jobs:
         run: |
           cp -r .github/buildtools/serverfiles/* overrides/
           cp -r .github/buildtools/serverfiles/* extended/overrides/
-          cd ./overrides/
-          cat ./.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
+          cat .github/buildtools/client_mod.txt | while read -r line; do find overrides/mods -name "$line" -delete; done
+          cat .github/buildtools/client_mod.txt | while read -r line; do find extended/overrides/mods -name "$line" -delete; done
+          cd overrides/
           rm -rf resourcepacks config/txloader
           zip -r ../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server.zip ./
           cd ../extended/overrides/
-          cat ../../.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
           rm -rf resourcepacks config/txloader
           zip -r ../../TerraFirmaGreg-1.12-${{ steps.get_version.outputs.version }}-server-extended.zip ./
 
