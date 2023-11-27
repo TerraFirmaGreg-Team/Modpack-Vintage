@@ -1,3 +1,4 @@
+Alfheim-*
 AmbientSounds_*
 betterchat-*
 BetterFoliage-*
@@ -10,6 +11,7 @@ DefaultOptions_*
 DynamicSurroundings-*
 EntityCulling-*
 fancymenu_forge_*
+farsight-*
 FpsReducer-*
 InventoryHUD-*
 ItemPhysic Lite *
@@ -31,6 +33,4 @@ SmoothFont-mc1.12.2-*
 SoundFilters-*
 tfctowerheat-*
 thah-*
-Alfheim-*
-farsight-*
 txloader-*
