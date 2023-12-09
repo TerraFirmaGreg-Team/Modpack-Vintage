@@ -27,6 +27,7 @@ jobs:
           DEV=${{ steps.get_version.outputs.version }}
           sed -i -e "s/DEV/${DEV}/g" manifest.json
           sed -i -e "s/DEV/${DEV}/g" instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" groovy/runConfig.json
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/tfg_version.txt
 
       - name: Move
