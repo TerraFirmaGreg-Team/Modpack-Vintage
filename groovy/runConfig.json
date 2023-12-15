@@ -1,8 +1,8 @@
 {
-  "packName": "TFG-New-Horizons",
+  "packName": "TerraFirmaGreg",
   "packId": "tfg",
-  "version": "4.3.2",
-  "debug": false,
+  "version": "DEV",
+  "debug": true,
   "classes": [
     "classes/"
   ],
@@ -14,9 +14,7 @@
       "init/"
     ],
     "postInit": [
-      "postInit/Utility/Globals.groovy",
-      "postInit/OreDictionary/",
-      "postInit/JEI/",
+      "postInit/oredict/",
       "postInit/"
     ]
   }
