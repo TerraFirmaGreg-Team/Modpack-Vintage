@@ -2,6 +2,8 @@
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/JustEnoughCalculation/record.json
+config/oxygen/data/client/worlds/*
+config/customloadingscreen_timings.nbt
 config/splash.properties
 config/jei/worldSettings.cfg
 config/gregtech/terminal/*
@@ -45,7 +47,8 @@ usernamecache.json
 usercache.json
 rhino.local.properties
 fancymenu_data/last_world.fmdata
-config/oxygen/data/client/worlds/*
+fancymenu_data/default_scale_set.fm
+OpenComputersMod-*
 
 profile.json
 servers.dat
@@ -73,3 +76,5 @@ hei_bookmarks.ini
 .github/buildtools/serverpack/banned-players.json
 .github/buildtools/serverpack/ops.json
 .github/buildtools/serverpack/whitelist.json
+
+
