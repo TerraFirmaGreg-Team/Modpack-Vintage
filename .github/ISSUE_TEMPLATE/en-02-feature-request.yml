@@ -1,15 +1,13 @@
 name: "[EN] Request a Feature"
 description: Request a new feature or a change to an existing one.
-labels: [ "type: feature" ]
+labels: [ "1. Type: Feature" ]
 body:
-  - type: dropdown
+  - type: input
     id: version
     attributes:
       label: Version modpack Used
-      description: Where the game crashed.
-      options:
-        - "Default"
-        - "Extended"
+      description: Write which version of the modpack you are using.
+      placeholder: "Example: 0.1.1"
     validations:
       required: true
   - type: textarea

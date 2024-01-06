@@ -1,15 +1,13 @@
 name: "[EN] Crash Report"
 description: Report a bug that crashes the game or prevents startup.
-labels: [ "status: unverified", "type: сrash" ]
+labels: [ "1. Type: Crash", "2. Status: Unverified" ]
 body:
-  - type: dropdown
+  - type: input
     id: version
     attributes:
       label: Version modpack Used
-      description: Where the game crashed.
-      options:
-        - "Default"
-        - "Extended"
+      description: Write which version of the modpack you are using.
+      placeholder: "Example: 0.1.1"
     validations:
       required: true
   - type: input
