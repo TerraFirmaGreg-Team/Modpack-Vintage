@@ -3,7 +3,7 @@
     {
       "image": {
         "parent": "builtin/slideshow",
-        "image": "modpack:background/#.png",
+        "image": "config:images/image_#.png",
         "frame": "slideshow_frame(transition_duration, frame_count)",
         "position_type": "CENTER",
         "offset_pos": "CENTER",
@@ -25,7 +25,7 @@
     {
       "image": {
         "parent": "builtin/slideshow",
-        "image": "modpack:background/#.png",
+        "image": "config:images/image_#.png",
         "frame": "slideshow_frame(0, frame_count)",
         "position_type": "CENTER",
         "offset_pos": "CENTER",
@@ -47,188 +47,84 @@
     {
       "image": {
         "parent": "builtin/image",
-        "image": "modpack:tfg_logo.png",
-        "position_type": "TOP_CENTER",
-        "offset_pos": "TOP_CENTER",
-        "position": {
-          "x": "0",
-          "y": "-40",
-          "width": "400",
-          "height": "160"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/image",
-        "image": "modpack:panel_bottom.png",
-        "position_type": "BOTTOM_CENTER",
-        "offset_pos": "BOTTOM_CENTER",
-        "colour": "0xFF_FF_FF_FF",
+        "image": "tfgmod:textures/logo.png",
+        "position_type": "CENTER",
+        "offset_pos": "CENTER",
         "position": {
           "x": "0",
           "y": "0",
-          "width": "screen_width",
-          "height": "31"
+          "width": "100",
+          "height": "90"
         }
       }
     },
     {
       "image": {
         "parent": "sample/bottom_bar",
-        "position_type": "BOTTOM_LEFT",
+        "position_type": "CENTER",
         "offset_pos": "BOTTOM_LEFT",
-        "colour": "0xFF000000",
+        "colour": "0xFFFFFFFF",
         "position": {
-          "width": "screen_width",
-          "height": "2",
-          "y": "-29"
+          "width": "256",
+          "height": "1",
+          "x": "-128",
+          "y": "78"
         }
       }
     },
     {
       "image": {
         "parent": "sample/bottom_bar",
-        "position_type": "BOTTOM_LEFT",
+        "position_type": "CENTER",
         "offset_pos": "BOTTOM_LEFT",
-        "colour": "0xFFB30000",
-        "position": {
-          "height": "2",
-          "y": "-29"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "text": "(floor(percentage * 100)) + '%'",
-        "scale": 2,
-        "position_type": "BOTTOM_RIGHT",
-        "offset_pos": "BOTTOM_RIGHT",
-        "position": {
-          "x": "-10",
-          "y": "-5"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
-        "text": "forge_progress_bar_message(0)",
-        "position_type": "BOTTOM_LEFT",
-        "offset_pos": "BOTTOM_LEFT",
-        "scale": 0.6,
-        "position": {
-          "x": "3",
-          "y": "-20"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
         "colour": "0xFFFFFFFF",
-        "text": "showSecond ? forge_progress_bar_message(1) : ''",
-        "position_type": "BOTTOM_LEFT",
-        "offset_pos": "BOTTOM_LEFT",
-        "scale": 0.5,
         "position": {
-          "x": "3",
-          "y": "-15"
+          "width": "256",
+          "height": "1",
+          "x": "-128",
+          "y": "87"
         }
       }
     },
     {
       "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
+        "parent": "sample/bottom_bar",
+        "position_type": "CENTER",
+        "offset_pos": "BOTTOM_LEFT",
         "colour": "0xFFFFFFFF",
-        "text": "showThird ? forge_progress_bar_message(2) : ''",
-        "position_type": "BOTTOM_LEFT",
-        "offset_pos": "BOTTOM_LEFT",
-        "scale": 0.5,
         "position": {
-          "x": "3",
-          "y": "-10"
+          "width": "252 * percentage",
+          "height": "6",
+          "x": "-126",
+          "y": "85"
         }
       }
     },
     {
       "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
+        "parent": "sample/bottom_bar",
+        "position_type": "CENTER",
+        "offset_pos": "BOTTOM_LEFT",
         "colour": "0xFFFFFFFF",
-        "text": "showFourth ? forge_progress_bar_message(3) : ''",
-        "position_type": "BOTTOM_LEFT",
+        "position": {
+          "width": "1",
+          "height": "10",
+          "x": "128",
+          "y": "87"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "sample/bottom_bar",
+        "position_type": "CENTER",
         "offset_pos": "BOTTOM_LEFT",
-        "scale": 0.5,
+        "colour": "0xFFFFFFFF",
         "position": {
-          "x": "3",
-          "y": "-5",
-          "width": "screen_width * 30%"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/image",
-        "image": "customloadingscreen:textures/generic/white.png",
-        "position_type": "BOTTOM_CENTER",
-        "offset_pos": "BOTTOM_CENTER",
-        "colour": "memFloorPercent > 50 ? (memFloorPercent > 90 ? 0x6FC40222 : 0x6FBCD102) : 0x6F11BD02",
-        "position": {
-          "x": "0",
-          "y": "0",
-          "width": "screen_width * memPercent",
-          "height": "2"
-        },
-        "texture": {
-          "x": "0",
-          "y": "0",
-          "width": "50",
-          "height": "1"
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
-        "position_type": "BOTTOM_CENTER",
-        "offset_pos": "BOTTOM_CENTER",
-        "scale": 0.5,
-        "text": "'RAM: ' + memory_used() + '/' + memory_max() + ' MB'",
-        "position": {
-          "x": 3,
-          "y": -4
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "text": "has_tips() ? tip(floor(time / 8)) : ''",
-        "position_type": "BOTTOM_CENTER",
-        "offset_pos": "BOTTOM_CENTER",
-        "position": {
-          "x": 0,
-          "y": -16
-        }
-      }
-    },
-    {
-      "image": {
-        "parent": "builtin/text",
-        "image": "textures/font/ascii.png",
-        "text": "floor(time / 60) + 'm ' + floor((time % 60) / 10) + floor(time % 60 % 10) + 's elapsed'",
-        "scale": 0.6,
-        "position_type": "BOTTOM_RIGHT",
-        "offset_pos": "BOTTOM_RIGHT",
-        "position": {
-          "x": -10,
-          "y": -2
+          "width": "1",
+          "height": "10",
+          "x": "-128",
+          "y": "87"
         }
       }
     }
