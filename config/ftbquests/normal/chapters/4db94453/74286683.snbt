@@ -1,5 +1,5 @@
 {
-	x: -4.5d,
+	x: -2.75d,
 	y: 7.25d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mestoragehousing.subtitle}",

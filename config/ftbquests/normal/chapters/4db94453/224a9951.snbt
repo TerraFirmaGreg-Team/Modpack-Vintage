@@ -8,7 +8,7 @@
 		uid: "b839aa2b",
 		type: "item",
 		items: [{
-			item: "aenetvistool:net_visualizer"
+			item: "ae2stuff:visualiser"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

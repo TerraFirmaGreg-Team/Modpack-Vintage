@@ -1,6 +1,6 @@
 {
-	x: -8.5d,
-	y: 4.25d,
+	x: -9.0d,
+	y: 5.0d,
 	dependencies: [
 		"66d9fc61"
 	],
@@ -8,12 +8,8 @@
 		uid: "a8817f69",
 		type: "item",
 		items: [{
-			id: "aeadditions:storage.physical",
-			tag: {
-				upgrades: {},
-				config: {},
-				fuzzyMode: "IGNORE_ALL"
-			}
+			id: "nae2:storage_cell_256k",
+			tag: {}
 		}],
 		ignore_nbt: 1b
 	}]

@@ -1,15 +1,14 @@
 {
-	x: 4.75d,
+	x: 7.75d,
 	y: 10.5d,
-	shape: "circle",
 	dependencies: [
 		"ba62aee7"
 	],
 	tasks: [{
-		uid: "c4d68778",
+		uid: "c132d282",
 		type: "item",
 		items: [{
-			id: "appliedenergistics2:wireless_crafting_terminal",
+			id: "ae2fc:wireless_fluid_pattern_terminal",
 			tag: {
 				internalCurrentPower: 1600000.0d,
 				internalMaxPower: 1600000.0d

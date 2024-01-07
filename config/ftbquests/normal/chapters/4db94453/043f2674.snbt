@@ -1,10 +1,10 @@
 {
-	x: -2.0d,
-	y: 13.0d,
+	x: -4.0d,
+	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.dvaVTretyey.subtitle}",
 	dependencies: [
-		"457a5289"
+		"7daba4fb"
 	],
 	tasks: [{
 		uid: "4280e5ef",

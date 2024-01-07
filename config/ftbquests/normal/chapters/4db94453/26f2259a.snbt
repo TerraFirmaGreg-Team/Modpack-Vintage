@@ -8,7 +8,7 @@
 		uid: "4ca5eef6",
 		type: "item",
 		items: [{
-			item: "extracpus:crafting_storage_1024k"
+			item: "nae2:storage_crafting_1024k"
 		}]
 	}]
 }

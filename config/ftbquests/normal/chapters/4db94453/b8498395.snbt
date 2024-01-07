@@ -1,14 +1,14 @@
 {
-	x: -6.5d,
-	y: 10.5d,
+	x: -12.75d,
+	y: 11.75d,
 	dependencies: [
-		"c913ca2f"
+		"1c7aa05a"
 	],
 	tasks: [{
-		uid: "d4ed71fc",
+		uid: "665eade8",
 		type: "item",
 		items: [{
-			id: "appliedenergistics2:fluid_storage_cell_16k",
+			id: "nae2:storage_cell_fluid_16384k",
 			tag: {}
 		}],
 		ignore_damage: true,

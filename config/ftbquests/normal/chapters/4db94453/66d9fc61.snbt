@@ -1,15 +1,15 @@
 {
-	x: -9.5d,
-	y: 4.75d,
+	x: -9.0d,
+	y: 6.0d,
 	dependencies: [
-		"b880a5e6"
+		"81e0b028"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "85d5617e",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component"
+			item: "nae2:material 1 1"
 		}]
 	}]
 }

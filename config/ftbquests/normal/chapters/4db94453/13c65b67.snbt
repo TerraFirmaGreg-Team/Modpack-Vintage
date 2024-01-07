@@ -7,8 +7,8 @@
 			internalMaxPower: 20000.0d
 		}
 	},
-	x: -9.5d,
-	y: 7.25d,
+	x: -2.75d,
+	y: 6.25d,
 	text: [
 		"§oA higher-tech backpack! Also seriously undervalued.§r",
 		"",

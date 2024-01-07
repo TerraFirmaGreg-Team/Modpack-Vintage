@@ -1,14 +1,14 @@
 {
-	x: -9.5d,
-	y: 11.25d,
+	x: -9.0d,
+	y: 10.0d,
 	dependencies: [
-		"10b6e5fb"
+		"d4495a75"
 	],
 	tasks: [{
 		uid: "37469aba",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 4"
+			item: "nae2:material 1 5"
 		}]
 	}]
 }

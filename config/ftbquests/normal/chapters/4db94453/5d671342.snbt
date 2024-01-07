@@ -1,14 +1,14 @@
 {
 	x: 18.5d,
-	y: 0.25d,
+	y: 2.5d,
 	dependencies: [
-		"59b097c6"
+		"446cc334"
 	],
 	tasks: [{
-		uid: "366a4e9d",
+		uid: "1330477b",
 		type: "item",
 		items: [{
-			item: "nae2:storage_crafting_4096k"
+			item: "nae2:coprocessor_64x"
 		}]
 	}]
 }

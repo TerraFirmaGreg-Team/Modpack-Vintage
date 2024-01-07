@@ -1,6 +1,6 @@
 {
-	x: 3.0d,
-	y: 11.0d,
+	x: 3.75d,
+	y: 8.0d,
 	shape: "circle",
 	description: "{tfg.quests.ae2.mesecurity.subtitle}",
 	dependencies: [
