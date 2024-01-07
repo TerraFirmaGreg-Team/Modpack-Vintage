@@ -1696,7 +1696,7 @@ if (isLoaded("opencomputers")) {
             item('opencomputers:diskdrive'),
             item('opencomputers:material:7'),
             metaitem('circuit_board.advanced'),
-            item('aeadditions:hardmedrive') * 2,
+            blockstate('appliedenergistics2:drive'),
             metaitem('plateObsidian') * 4)
         .fluidInputs(fluid('plastic') * 72)
         .outputs([item('opencomputers:component:20')])

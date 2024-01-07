@@ -1,6 +1,5 @@
+// MODS_LOADED: ae2fc
 
-
-if (isLoaded("ae2fc")) {
 
 // --- Добавление рецептов
 
@@ -15,6 +14,18 @@ mods.gregtech.assembler.recipeBuilder()
   .fluidInputs(fluid('rubber') * 144)
   .outputs(item('ae2fc:fluid_pattern_encoder'))
   .duration(20).EUt(480).buildAndRegister()
+
+// Ultimate encoder
+mods.gregtech.assembler.recipeBuilder()
+  .circuitMeta(24)
+  .inputs(
+    item('appliedenergistics2:material', 24) * 8, 
+    item('ae2fc:part_fluid_pattern_ex_terminal'), 
+    ore('blockFluix') * 2, 
+    item('ae2fc:fluid_pattern_encoder') * 3)
+  .fluidInputs(fluid('rubber') * 144)
+  .outputs(item('ae2fc:ultimate_encoder'))
+  .duration(20).EUt(748).buildAndRegister()
 
 // Fluid discretizer
 mods.gregtech.assembler.recipeBuilder()
@@ -133,5 +144,3 @@ mods.gregtech.assembler.recipeBuilder()
   .fluidInputs(fluid('plastic') * 144)
   .outputs([item('ae2fc:fluid_assembler')])
   .duration(200).EUt(480).buildAndRegister()
-
-}

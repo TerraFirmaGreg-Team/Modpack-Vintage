@@ -1,4 +1,4 @@
-//MOD_LOADED appliedenergistics2
+// MODS_LOADED: appliedenergistics2
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import classes.array.Minecraft
@@ -6,7 +6,6 @@ import classes.array.AppliedEnergistics2
 import classes.Function
 
 
-if (isLoaded("appliedenergistics2")) {
 
     // --- Добавление рецептов
     
@@ -269,10 +268,9 @@ if (isLoaded("appliedenergistics2")) {
           item('tfgmod:meta_item', 50),
           AppliedEnergistics2.fluidStorageComponents[i])
         .duration(10).EUt(7).buildAndRegister()
-    }
+
     
     // Хранилища крафта
-    for (int i = 0; i < 8; i++) {
     mods.gregtech.packer.recipeBuilder()
       .inputs(
         item('appliedenergistics2:crafting_unit'),
@@ -1063,6 +1061,51 @@ if (isLoaded("appliedenergistics2")) {
       .outputs(item('appliedenergistics2:material:34'))
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(400).EUt(30720).buildAndRegister()
+
+    // 2³ Spatial Cell
+    mods.gregtech.packer.recipeBuilder()
+      .inputs(
+        item('appliedenergistics2:material', 39),
+        item('appliedenergistics2:material:32'))
+      .outputs(item('appliedenergistics2:spatial_storage_cell_2_cubed'))
+      .cleanroom(CleanroomType.CLEANROOM)
+      .duration(10).EUt(7).buildAndRegister()
+    mods.gregtech.packer.recipeBuilder()
+        .inputs(item('appliedenergistics2:spatial_storage_cell_2_cubed'))
+        .outputs(
+            item('appliedenergistics2:material', 39),
+            item('appliedenergistics2:material:32'))
+        .duration(10).EUt(7).buildAndRegister()
+    
+    // 16³ Spatial Cell
+    mods.gregtech.packer.recipeBuilder()
+      .inputs(
+        item('appliedenergistics2:material', 39),
+        item('appliedenergistics2:material:33'))
+      .outputs(item('appliedenergistics2:spatial_storage_cell_16_cubed'))
+      .cleanroom(CleanroomType.CLEANROOM)
+      .duration(10).EUt(7).buildAndRegister()
+    mods.gregtech.packer.recipeBuilder()
+        .inputs(item('appliedenergistics2:spatial_storage_cell_16_cubed'))
+        .outputs(
+            item('appliedenergistics2:material', 39),
+            item('appliedenergistics2:material:33'))
+        .duration(10).EUt(7).buildAndRegister()
+    
+    // 128³ Spatial Cell
+    mods.gregtech.packer.recipeBuilder()
+      .inputs(
+        item('appliedenergistics2:material', 39),
+        item('appliedenergistics2:material:34'))
+      .outputs(item('appliedenergistics2:spatial_storage_cell_128_cubed'))
+      .cleanroom(CleanroomType.CLEANROOM)
+      .duration(10).EUt(7).buildAndRegister()
+    mods.gregtech.packer.recipeBuilder()
+        .inputs(item('appliedenergistics2:spatial_storage_cell_128_cubed'))
+        .outputs(
+            item('appliedenergistics2:material', 39),
+            item('appliedenergistics2:material:34'))
+        .duration(10).EUt(7).buildAndRegister()
     
     // Crafting Co-Processing Unit
     mods.gregtech.packer.recipeBuilder()
@@ -1689,4 +1732,3 @@ if (isLoaded("appliedenergistics2")) {
         .inputs(item('appliedenergistics2:material', 1))
         .fluidOutputs(fluid('charged_certus_quartz') * 144)
         .duration(20).EUt(7).buildAndRegister()
-}

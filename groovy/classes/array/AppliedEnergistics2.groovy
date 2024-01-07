@@ -152,11 +152,7 @@ public class AppliedEnergistics2 {
         item('appliedenergistics2:material:35'),
         item('appliedenergistics2:material:36'),
         item('appliedenergistics2:material:37'),
-        item('appliedenergistics2:material:38'),
-        item('aeadditions:storage.component'),
-        item('aeadditions:storage.component:1'),
-        item('aeadditions:storage.component:2'),
-        item('aeadditions:storage.component:3')
+        item('appliedenergistics2:material:38')
     ]
 
     // - All ME Storage cell
@@ -164,11 +160,7 @@ public class AppliedEnergistics2 {
         item('appliedenergistics2:storage_cell_1k'),
         item('appliedenergistics2:storage_cell_4k'),
         item('appliedenergistics2:storage_cell_16k'),
-        item('appliedenergistics2:storage_cell_64k'),
-        item('aeadditions:storage.physical'),
-        item('aeadditions:storage.physical:1'),
-        item('aeadditions:storage.physical:2'),
-        item('aeadditions:storage.physical:3')
+        item('appliedenergistics2:storage_cell_64k')
     ]
 
     // - All ME Fluid Storage component
@@ -176,10 +168,7 @@ public class AppliedEnergistics2 {
         item('appliedenergistics2:material:54'),
         item('appliedenergistics2:material:55'),
         item('appliedenergistics2:material:56'),
-        item('appliedenergistics2:material:57'),
-        item('aeadditions:storage.component:4'),
-        item('aeadditions:storage.component:5'),
-        item('aeadditions:storage.component:6')
+        item('appliedenergistics2:material:57')
     ]
 
     // - All ME Fluid Storage cell
@@ -187,10 +176,7 @@ public class AppliedEnergistics2 {
         item('appliedenergistics2:fluid_storage_cell_1k'),
         item('appliedenergistics2:fluid_storage_cell_4k'),
         item('appliedenergistics2:fluid_storage_cell_16k'),
-        item('appliedenergistics2:fluid_storage_cell_64k'),
-        item('aeadditions:storage.fluid'),
-        item('aeadditions:storage.fluid:1'),
-        item('aeadditions:storage.fluid:2')
+        item('appliedenergistics2:fluid_storage_cell_64k')
     ]
     
     // - All ME Crafting Storage
@@ -198,11 +184,7 @@ public class AppliedEnergistics2 {
         item('appliedenergistics2:crafting_storage_1k'),
         item('appliedenergistics2:crafting_storage_4k'),
         item('appliedenergistics2:crafting_storage_16k'),
-        item('appliedenergistics2:crafting_storage_64k'),
-        item('extracpus:crafting_storage_256k'),
-        item('extracpus:crafting_storage_1024k'),
-        item('extracpus:crafting_storage_4096k'),
-        item('extracpus:crafting_storage_16384k')
+        item('appliedenergistics2:crafting_storage_64k')
     ]
 
 }
