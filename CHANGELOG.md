@@ -9,6 +9,7 @@
 ### Обновленные моды
 ### Новые моды
 - EnhancedVisuals
+- PlayerRevive
 ### Удаленные моды
 - TXloader
 
