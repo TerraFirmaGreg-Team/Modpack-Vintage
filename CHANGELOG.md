@@ -7,7 +7,12 @@
 - Перенесено с версии 1.20, оформление главного меню и окна загрузки.
 - Модпак значительно похудел 105.88 MB -> 12,3 МБ(Архив Curse).
 - AE2 Network Visualiser заменен на альтернативу в AE2 Stuff Unofficial.
+- ExtraCPUs удален и заменен на расширеный процессоры из NAE2. 
+- AEAdditions удален и почти весь функционал заменен на NAE2.
+- Изменен рецепт oc Disk Drive.
+- 
 ### Обновленные моды
+- Fluid Craft for AE2 -> 2.5.3-r
 ### Новые моды
 - EnhancedVisuals
 - PlayerRevive
@@ -15,6 +20,9 @@
 ### Удаленные моды
 - TXloader
 - AE2 Network Visualiser
+- FTBBackups
+- extracpus
+- aeadditions
 
 ## [4.4.2] - 2023-11-27
 ### Modpack fixes
