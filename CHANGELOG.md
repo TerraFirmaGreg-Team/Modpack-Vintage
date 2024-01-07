@@ -13,10 +13,12 @@
 - Добавлен рецепт для Ultimate encoder.
 ### Обновленные моды
 - Fluid Craft for AE2 -> 2.5.3-r
+- Betterp2p -> 1.3.2
 ### Новые моды
 - EnhancedVisuals
 - PlayerRevive
 - AE2 Stuff Unofficial
+- ExtendedAE
 ### Удаленные моды
 - TXloader
 - AE2 Network Visualiser
