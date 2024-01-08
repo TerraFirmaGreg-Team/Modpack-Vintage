@@ -1,6 +1,4 @@
-
-
-if (isLoaded("buildinggadgets")) {
+// MODS_LOADED: buildinggadgets
 
    // --- Массивы
 
@@ -20,4 +18,3 @@ if (isLoaded("buildinggadgets")) {
 
    // BuildingGadgets
    mods.jei.removeAndHide(item('buildinggadgets:constructionpastecontainercreative'))
-}

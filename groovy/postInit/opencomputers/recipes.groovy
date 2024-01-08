@@ -1,6 +1,4 @@
-
-
-if (isLoaded("opencomputers")) {
+// MODS_LOADED: opencomputers
 
     // --- Добавление рецептов
     
@@ -704,14 +702,16 @@ if (isLoaded("opencomputers")) {
             item('opencomputers:material:9')
         ])
         .fluidInputs(fluid('tin') * 144)
-        .outputs([item('opencomputers:upgrade:25')])
+        .outputs(item('opencomputers:upgrade:25'))
         .duration(100).EUt(480).buildAndRegister()
+
     mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
-        .inputs(
+        .inputs([
             metaitem('circuit_board.advanced'),
             metaitem('item_magnet.hv'),
-            item('opencomputers:material:9'))
+            item('opencomputers:material:9')
+        ])
         .fluidInputs(fluid('soldering_alloy') * 72)
         .outputs(item('opencomputers:upgrade:25'))
         .duration(100).EUt(480).buildAndRegister()
@@ -1243,14 +1243,14 @@ if (isLoaded("opencomputers")) {
     
     // Memory Card - Tier 3
     mods.gregtech.circuit_assembler.recipeBuilder()
-        .circuitMeta(1)
+        .circuitMeta(1) 
         .inputs([
             metaitem('circuit_board.extreme'),
             metaitem('plate.random_access_memory') * 64,
             metaitem('plate.nand_memory_chip') * 32,
             item('opencomputers:material:9') * 2,
             metaitem('foilElectrum') * 16
-        ])
+        ]) 
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:component:10')])
         .duration(100).EUt(1920).buildAndRegister()
@@ -1694,12 +1694,12 @@ if (isLoaded("opencomputers")) {
         .circuitMeta(1)
         .inputs(
             item('opencomputers:diskdrive'),
-            item('opencomputers:material:7'),
+            item('opencomputers:material', 7),
             metaitem('circuit_board.advanced'),
             blockstate('appliedenergistics2:drive'),
             metaitem('plateObsidian') * 4)
         .fluidInputs(fluid('plastic') * 72)
-        .outputs([item('opencomputers:component:20')])
+        .outputs(item('opencomputers:diskdrive'))
         .duration(200).EUt(480).buildAndRegister()
     
     // Terminal Server
@@ -1712,7 +1712,7 @@ if (isLoaded("opencomputers")) {
             metaitem('plateObsidian') * 4,
             metaitem('boltElectrum') * 16)
         .fluidInputs(fluid('plastic') * 72)
-        .outputs([item('opencomputers:component:19')])
+        .outputs(item('opencomputers:component:19'))
         .duration(200).EUt(1920).buildAndRegister()
     
     // Server - Tier 1
@@ -2057,4 +2057,3 @@ if (isLoaded("opencomputers")) {
         .fluidInputs(fluid('plastic') * 72)
         .outputs([item('opencomputers:case3')])
         .duration(200).EUt(1920).buildAndRegister()
-}

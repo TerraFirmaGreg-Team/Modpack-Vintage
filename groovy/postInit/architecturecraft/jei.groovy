@@ -1,6 +1,5 @@
+// MODS_LOADED: architecturecraft
 
-
-if (isLoaded("architecturecraft")) {
 
    // --- Массивы
    
@@ -25,4 +24,3 @@ if (isLoaded("architecturecraft")) {
    for (item in removeRecipe) {
        crafting.removeByOutput(item)
    }
-}

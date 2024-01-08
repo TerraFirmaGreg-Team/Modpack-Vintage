@@ -1715,13 +1715,11 @@ import classes.Function
     
     // Certus Quartz (Override)
     mods.gregtech.extractor.recipeBuilder()
-        .inputs(metaitem('blockCertusQuartz'))
-        .fluidOutputs(fluid('certus_quartz') * 576)
-        .duration(80).EUt(30).buildAndRegister()
-    mods.gregtech.extractor.recipeBuilder()
         .inputs(ore('crystalPureCertusQuartz'))
         .fluidOutputs(fluid('certus_quartz') * 72)
         .duration(20).EUt(30).buildAndRegister()
+        // Liquid Certus Quartz * 72
+
     
     // Charged Certus Quartz Crystal
     mods.gregtech.electrolyzer.recipeBuilder()

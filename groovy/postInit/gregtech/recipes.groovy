@@ -186,12 +186,6 @@ if (isLoaded("gregtech")) {
         .outputs(metaitem('dustPaper') * 9, metaitem('dustObsidian') * 3)
         .duration(135).EUt(2).buildAndRegister()
     
-    // Crafting Table Cover
-    mods.gregtech.assembler.recipeBuilder()
-        .inputs(ore('plateIronAny'), ore('workbench'))
-        .outputs(metaitem('cover.crafting'))
-        .duration(400).EUt(16).buildAndRegister()
-    
     // Extruder Shape (Sense Head)
     crafting.addShaped(item('tfgmod:meta_item', 6), [
         [null, null, null],

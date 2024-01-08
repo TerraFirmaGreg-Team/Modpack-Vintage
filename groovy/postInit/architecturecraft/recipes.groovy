@@ -1,6 +1,4 @@
-
-
-if (isLoaded("architecturecraft")) {
+// MODS_LOADED: architecturecraft
 
     // --- Добавление рецептов
     
@@ -21,4 +19,3 @@ if (isLoaded("architecturecraft")) {
         [[ore('plateIronAny'), null, null],
         [ore('dyeOrange'), item('minecraft:stick'), null],
         [null, null, null]])
-}

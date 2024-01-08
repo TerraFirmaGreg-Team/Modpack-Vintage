@@ -1,6 +1,5 @@
+// MODS_LOADED: buildinggadgets
 
-
-if (isLoaded("buildinggadgets")) {
 
     // --- Добавление рецептов
 
@@ -90,4 +89,3 @@ if (isLoaded("buildinggadgets")) {
         [metaitem('screwDiamond'), metaitem('ringTitanium'), metaitem('screwDiamond')],
         [metaitem('plateTitanium'), item('buildinggadgets:constructionpastecontainert2'), metaitem('plateTitanium')],
         [metaitem('screwDiamond'), metaitem('ringTitanium'), metaitem('screwDiamond')]]);
-}
