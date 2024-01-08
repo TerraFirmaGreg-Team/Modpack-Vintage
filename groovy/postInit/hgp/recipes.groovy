@@ -1,3 +1,5 @@
+// MODS_LOADED: hgp
+
 import classes.array.Minecraft
 import classes.array.HGP
 
