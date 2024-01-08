@@ -37,9 +37,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_98x20_hovered.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -54,10 +51,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_98x20_hovered.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
-}
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
@@ -71,9 +64,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_98x20_hovered.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -101,9 +91,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hovered.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button.png
 }
 
 customization {
@@ -125,9 +112,6 @@ customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_98x20_hovered.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -202,7 +186,6 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_98x20_hovered.png
   label = Offical Server
   loopbackgroundanimations = true
   x = 47
@@ -210,7 +193,6 @@ customization {
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = -28
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
   height = 20
 }
 
