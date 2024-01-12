@@ -38,8 +38,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_100x20.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_100x20.png
+  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_98x20.png
+  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -55,8 +55,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_100x20.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_100x20.png
+  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_98x20.png
+  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -72,8 +72,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_100x20.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_100x20.png
+  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_98x20.png
+  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -126,8 +126,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_100x20.png
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_100x20.png
+  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_98x20.png
+  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
 }
 
 customization {
@@ -202,7 +202,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
-  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_100x20.png
+  backgroundhovered = groovy/assets/tfg/textures/gui/button_hover_98x20.png
   label = Offical Server
   loopbackgroundanimations = true
   x = 47
@@ -210,7 +210,7 @@ customization {
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = -28
-  backgroundnormal = groovy/assets/tfg/textures/gui/button_100x20.png
+  backgroundnormal = groovy/assets/tfg/textures/gui/button_98x20.png
   height = 20
 }
 

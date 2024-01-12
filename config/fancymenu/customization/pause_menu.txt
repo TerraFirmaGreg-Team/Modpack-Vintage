@@ -1,0 +1,80 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiIngameMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_disconnect_button
+  x = 102
+  action = movebutton
+  y = -48
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 98
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_disconnect_button
+  x = 0
+  action = movebutton
+  y = -48
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_pausescreen_mods_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_disconnect_button
+  x = 0
+  action = movebutton
+  y = -24
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_pausescreen_mods_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_disconnect_button
+  x = 0
+  action = movebutton
+  y = -72
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 20
+}
+
