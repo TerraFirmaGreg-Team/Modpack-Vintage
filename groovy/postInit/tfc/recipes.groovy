@@ -847,52 +847,52 @@ if (isLoaded("tfc")) {
 	
 	// Saplings -> Logs + Saplings (Greenhouse)
 	
-	for (int i = 0; i < TerraFirmaCraft.tfcSaplings.size(); i++) {
-		mods.gregtech.greenhouse.recipeBuilder()
-			.inputs(
-	            TerraFirmaCraft.tfcSaplings[i], 
-	            metaitem('fertilizer') * 4)
-			.circuitMeta(1)
-			.fluidInputs(fluid('fresh_water') * 1000)
-			.outputs(
-	            TerraFirmaCraft.logs[i] * 16, 
-	            TerraFirmaCraft.tfcSaplings[i])
-			.chancedOutput(TerraFirmaCraft.tfcSaplings[i], 5000, 0)
-			.duration(2000).EUt(80).buildAndRegister()
+	// for (int i = 0; i < TerraFirmaCraft.tfcSaplings.size(); i++) {
+	// 	mods.gregtech.greenhouse.recipeBuilder()
+	// 		.inputs(
+	//             TerraFirmaCraft.tfcSaplings[i], 
+	//             metaitem('fertilizer') * 4)
+	// 		.circuitMeta(1)
+	// 		.fluidInputs(fluid('fresh_water') * 1000)
+	// 		.outputs(
+	//             TerraFirmaCraft.logs[i] * 16, 
+	//             TerraFirmaCraft.tfcSaplings[i])
+	// 		.chancedOutput(TerraFirmaCraft.tfcSaplings[i], 5000, 0)
+	// 		.duration(2000).EUt(80).buildAndRegister()
 	
-		mods.gregtech.greenhouse.recipeBuilder()
-			.inputs(
-	            TerraFirmaCraft.tfcSaplings[i], 
-	            metaitem('fertilizer') * 4)
-			.circuitMeta(2)
-			.fluidInputs(fluid('distilled_water') * 1000)
-			.outputs(
-	            TerraFirmaCraft.logs[i] * 16, 
-	            TerraFirmaCraft.tfcSaplings[i])
-			.chancedOutput(TerraFirmaCraft.tfcSaplings[i].withAmount(2), 5000, 0)
-			.duration(1500).EUt(80).buildAndRegister()
+	// 	mods.gregtech.greenhouse.recipeBuilder()
+	// 		.inputs(
+	//             TerraFirmaCraft.tfcSaplings[i], 
+	//             metaitem('fertilizer') * 4)
+	// 		.circuitMeta(2)
+	// 		.fluidInputs(fluid('distilled_water') * 1000)
+	// 		.outputs(
+	//             TerraFirmaCraft.logs[i] * 16, 
+	//             TerraFirmaCraft.tfcSaplings[i])
+	// 		.chancedOutput(TerraFirmaCraft.tfcSaplings[i].withAmount(2), 5000, 0)
+	// 		.duration(1500).EUt(80).buildAndRegister()
 	
-	}
+	// }
 	
-	// Seeds -> AnyPlant (Greenhouse)
-	for (int i = 0; i < TerraFirmaCraft.tfcSeeds.size(); i++) {
-		mods.gregtech.greenhouse.recipeBuilder()
-			.notConsumable(TerraFirmaCraft.tfcSeeds[i])
-			.circuitMeta(1)
-			.inputs(metaitem('fertilizer') * 2)
-			.fluidInputs(fluid('fresh_water') * 1000)
-			.outputs(TerraFirmaCraft.tfcPlants[i] * 2)
-			.duration(1500).EUt(80).buildAndRegister()
+	// // Seeds -> AnyPlant (Greenhouse)
+	// for (int i = 0; i < TerraFirmaCraft.tfcSeeds.size(); i++) {
+	// 	mods.gregtech.greenhouse.recipeBuilder()
+	// 		.notConsumable(TerraFirmaCraft.tfcSeeds[i])
+	// 		.circuitMeta(1)
+	// 		.inputs(metaitem('fertilizer') * 2)
+	// 		.fluidInputs(fluid('fresh_water') * 1000)
+	// 		.outputs(TerraFirmaCraft.tfcPlants[i] * 2)
+	// 		.duration(1500).EUt(80).buildAndRegister()
 	
-		mods.gregtech.greenhouse.recipeBuilder()
-			.notConsumable(TerraFirmaCraft.tfcSeeds[i])
-			.circuitMeta(2)
-			.inputs(metaitem('fertilizer') * 2)
-			.fluidInputs(fluid('distilled_water') * 1000)
-			.outputs(TerraFirmaCraft.tfcPlants[i] * 2)
-			.chancedOutput(TerraFirmaCraft.tfcPlants[i].withAmount(2), 7500, 0)
-			.duration(1000).EUt(80).buildAndRegister()
-	}
+	// 	mods.gregtech.greenhouse.recipeBuilder()
+	// 		.notConsumable(TerraFirmaCraft.tfcSeeds[i])
+	// 		.circuitMeta(2)
+	// 		.inputs(metaitem('fertilizer') * 2)
+	// 		.fluidInputs(fluid('distilled_water') * 1000)
+	// 		.outputs(TerraFirmaCraft.tfcPlants[i] * 2)
+	// 		.chancedOutput(TerraFirmaCraft.tfcPlants[i].withAmount(2), 7500, 0)
+	// 		.duration(1000).EUt(80).buildAndRegister()
+	// }
 	
 	// Hide Raw Small -> Hide Soaked Small
 	mods.gregtech.mixer.recipeBuilder()

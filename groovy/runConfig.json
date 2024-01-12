@@ -3,19 +3,10 @@
   "packId": "terrafirmagreg",
   "version": "DEV",
   "debug": true,
-  "classes": [
-    "classes/"
-  ],
+  "classes": ["classes/"],
   "loaders": {
-    "preInit": [
-      "preInit/"
-    ],
-    "init": [
-      "init/"
-    ],
-    "postInit": [
-      "postInit/oredict/",
-      "postInit/"
-    ]
+    "preInit": ["preInit/"],
+    "init": ["init/"],
+    "postInit": ["postInit/oredict/", "postInit/"]
   }
 }

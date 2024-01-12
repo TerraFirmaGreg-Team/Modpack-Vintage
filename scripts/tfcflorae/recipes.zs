@@ -62,7 +62,7 @@ val FluidsForJuices as ILiquidStack[] = [
 	<liquid:juice_purple_grape>,
 	<liquid:juice_plum>,
 	<liquid:juice_peach>,
-	<liquid:gtfo_orange_extract>
+	<liquid:juice_orange>
 ];
 val DirtyNets as IItemStack[] = [
 	<tfc:crop/product/dirty_jute_net>,
@@ -114,11 +114,11 @@ Press.add(<ore:apple>, <liquid:juice_apple> * 10);
 // Net -> Dirty Net
 for i, DirtyNets in DirtyNets {
     
-    Barrel.addRecipe("tfg/tfcflorae/olive_oil_water_to_olive_oil_" + i, CleanNets[i], <liquid:olive_oil_water> * 250, DirtyNets, <liquid:gtfo_olive_oil> * 50, 0);
+    Barrel.addRecipe("tfg/tfcflorae/olive_oil_water_to_olive_oil_" + i, CleanNets[i], <liquid:olive_oil_water> * 250, DirtyNets, <liquid:olive_oil> * 50, 0);
 }
 
 // GT Orange Juice -> Orange Vine
-Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:gtfo_orange_extract> * 500, <liquid:orange_wine> * 500, 72);
+Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:juice_orange> * 500, <liquid:orange_wine> * 500, 72);
 
 // Сушенная еда
 for i, MissingFreshFruits in MissingFreshFruits{

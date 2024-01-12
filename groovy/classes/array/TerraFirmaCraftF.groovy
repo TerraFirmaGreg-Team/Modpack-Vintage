@@ -68,7 +68,7 @@ public class TerraFirmaCraftF {
     	fluid('juice_purple_grape'),
     	fluid('juice_plum'),
     	fluid('juice_peach'),
-    	fluid('gtfo_orange_extract')
+    	fluid('juice_orange')
     ]
     static tfcfMissingFreshFruits = [
     	item('tfcflorae:food/baobab_fruit'),

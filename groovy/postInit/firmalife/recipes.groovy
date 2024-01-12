@@ -101,31 +101,6 @@ mods.gregtech.mixer.recipeBuilder()
     .outputs(item('firmalife:chestnut_dough') * 2)
     .duration(400).EUt(2).buildAndRegister()
 
-// Chestnut Bread
-mods.gregtech.baking_oven.recipeBuilder()
-    .inputs(
-        item('firmalife:chestnut_dough'), 
-        item('minecraft:coal:1') * 2)
-    .outputs(item('firmalife:chestnut_bread'))
-    .temperature(500)
-    .duration(400).EUt(1).buildAndRegister()
-
-mods.gregtech.baking_oven.recipeBuilder()
-    .inputs(
-        item('firmalife:chestnut_dough'), 
-        item('minecraft:coal') * 2)
-    .outputs(item('firmalife:chestnut_bread'))
-    .temperature(500)
-    .duration(400).EUt(1).buildAndRegister()
-
-mods.gregtech.baking_oven.recipeBuilder()
-    .inputs(
-        item('firmalife:chestnut_dough'), 
-        ore('gemCoke'))
-    .outputs(item('firmalife:chestnut_bread'))
-    .temperature(500)
-    .duration(400).EUt(1).buildAndRegister()
-
 // Greenhouse parts
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
@@ -149,11 +124,3 @@ crafting.addShaped(item('firmalife:quad_planter'), [
     [null, ore('dustFertilizer'), null],
     [null, ore('dirt'), null],
     [null, item('minecraft:flower_pot'), null]])
-
-//Drying food in microwave
-for (int i = 0; i < TerraFirmaCraftFL.flFreshFood.size(); i++) {
-	mods.gregtech.microwave.recipeBuilder()
-		.inputs(TerraFirmaCraftFL.flFreshFood[i])
-		.outputs(TerraFirmaCraftFL.flFreshFood[i])
-		.duration(300).EUt(16).buildAndRegister()
-}

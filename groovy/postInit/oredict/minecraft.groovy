@@ -1,4 +1,4 @@
-
+// MODS_LOADED: minecraft
 
 // --- Удаление
 

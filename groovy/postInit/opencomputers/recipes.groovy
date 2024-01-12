@@ -326,7 +326,7 @@
         .inputs([
             metaitem('circuit_board.plastic'),
             item('opencomputers:material:8'),
-            metaitem('cover.crafting')
+            item('appliedenergistics2:part', 360)
         ])
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:11')])
@@ -336,7 +336,7 @@
         .inputs([
             metaitem('circuit_board.plastic'),
             item('opencomputers:material:8'),
-            metaitem('cover.crafting')
+            item('appliedenergistics2:part', 360)
         ])
         .fluidInputs(fluid('soldering_alloy') * 72)
         .outputs([item('opencomputers:upgrade:11')])
@@ -1689,19 +1689,6 @@
         .outputs(item('opencomputers:material:9'))
         .duration(100).EUt(480).buildAndRegister()
     
-    // Disk Drive
-    mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-            item('opencomputers:diskdrive'),
-            item('opencomputers:material', 7),
-            metaitem('circuit_board.advanced'),
-            blockstate('appliedenergistics2:drive'),
-            metaitem('plateObsidian') * 4)
-        .fluidInputs(fluid('plastic') * 72)
-        .outputs(item('opencomputers:diskdrive'))
-        .duration(200).EUt(480).buildAndRegister()
-    
     // Terminal Server
     mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
@@ -1936,7 +1923,7 @@
     mods.gregtech.assembler.recipeBuilder()
         .inputs(
             item('gregtech:machine_casing:2'),
-            item('opencomputers:material:8') * 2,
+            item('opencomputers:material', 8) * 2,
             metaitem('electric.motor.mv'),
             metaitem('springSmallCopper'),
             metaitem('stickIronMagnetic'),

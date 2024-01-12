@@ -49,7 +49,7 @@ Anvil.addRecipe("tfg/firmalife/greenhouse_wall", <metaitem:plateWroughtIron>, <f
 Anvil.addRecipe("tfg/firmalife/greenhouse_roof", <metaitem:plateWroughtIron>, <firmalife:greenhouse_roof> * 4, 3, "general", "HIT_THIRD_LAST", "PUNCH_SECOND_LAST", "PUNCH_LAST");
 
 // Treated Lumber
-Barrel.addRecipe("tfg/firmalife/treated_lumber", <ore:lumber>, <liquid:gtfo_olive_oil> * 500, <firmalife:treated_lumber>, 8);
+Barrel.addRecipe("tfg/firmalife/treated_lumber", <ore:lumber>, <liquid:olive_oil> * 500, <firmalife:treated_lumber>, 8);
 
 // Молотки
 Anvil.addRecipe("tfg:firmalife_bismuth_bronze_hammer", <metaitem:ingotBismuthBronze>, <firmalife:bismuth_bronze_mallet_head>, 2, "general", "PUNCH_LAST", "PUNCH_SECOND_LAST", "SHRINK_THIRD_LAST");

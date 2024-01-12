@@ -188,7 +188,12 @@ def removeAndHide = [
    item('minecraft:golden_horse_armor'),
    item('minecraft:diamond_horse_armor'),
    item('minecraft:iron_trapdoor'),
-   item('minecraft:spawn_egg')
+   item('minecraft:spawn_egg'),
+   
+]
+
+def hideItem = [
+   item('forge:bucketfilled:*')
 ]
 
 def removeRecipe = [
@@ -197,7 +202,7 @@ def removeRecipe = [
 //    item('minecraft:leather_leggings'),
 //    item('minecraft:leather_boots'),
    item('minecraft:bucket'),
-   item('minecraft:enchanting_table'),
+   // item('minecraft:enchanting_table'),
    item('minecraft:name_tag'),
    item('minecraft:book'),
    // item('minecraft:daylight_detector'),
@@ -237,8 +242,14 @@ for(item in hideCategory) {
     mods.jei.hideCategory(item)
 }
 
+// Удаление рецептов и скрытие предметов
 for (item in removeAndHide) {
    mods.jei.removeAndHide(item)
+}
+
+// Удаление рецептов печи по входу
+for (item in hideItem) {
+   mods.jei.hide(item)
 }
 
 // Удаление рецептов
@@ -251,14 +262,17 @@ for (item in removeRecipesByName) {
    crafting.remove(item)
 }
 
-// Удаление рецептов печи
+// Удаление рецептов печи по входу
 for (item in removeByInputFurnace) {
    furnace.removeByInput(item)
 }
 
+// Удаление рецептов печи по выходу
 for (item in removeByOutputFurnace) {
    furnace.removeByOutput(item)
 }
+
+
 
 // // Crafting Table * 1
 // mods.gregtech.assembler.removeByInput(6, [item('tfc:wood/log/marblewood'), item('minecraft:flint')], null)
@@ -406,4 +420,6 @@ mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:red_sandstone')], n
 mods.gregtech.assembler.removeByInput(4, [item('minecraft:red_sandstone', 2), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
 // Chiseled Red Sandstone * 1
 mods.gregtech.laser_engraver.removeByInput(16, [item('minecraft:red_sandstone', 2), metaitem('lensGlass')], null)
+// Stone Bricks * 1
+mods.gregtech.assembler.removeByInput(4, [item('minecraft:stone'), metaitem('circuit.integrated').withNbt(["Configuration": 4])], null)
 

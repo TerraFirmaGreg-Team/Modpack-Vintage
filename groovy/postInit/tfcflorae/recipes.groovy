@@ -84,7 +84,7 @@ if (isLoaded("tfcflorae")) {
 	        .inputs(TerraFirmaCraftF.tfcfCleanNets[i])
 	        .fluidInputs(fluid('olive_oil_water') * 250)
 	        .circuitMeta(18)
-	        .fluidOutputs(fluid('gtfo_olive_oil') * 125)
+	        .fluidOutputs(fluid('olive_oil') * 125)
 	        .outputs(TerraFirmaCraftF.tfcfDirtyNets[i])
 	        .duration(150).EUt(2).buildAndRegister()
 	
@@ -757,18 +757,5 @@ if (isLoaded("tfcflorae")) {
 	
 	// Ящик
 	crafting.addShapeless("tfg/tfcflorae/orange_juice_to_orange_vine", item('tfcflorae:storage/crate'), [item('tfc:stick_bundle'), ore('clay'), ore('clay'), item('tfc:stick_bundle') ])
-	
-	// Сушенная еда
-	for (int i = 0; i < TerraFirmaCraftF.tfcfMissingFreshFruits.size(); i++) {
-		mods.gregtech.microwave.recipeBuilder()
-			.inputs(TerraFirmaCraftF.tfcfMissingFreshFruits[i])
-			.outputs(TerraFirmaCraftF.tfcfMissingDriedFruits[i])
-			.duration(300).EUt(16).buildAndRegister()
-	}
-	for (int i = 0; i < TerraFirmaCraftF.tfcfFreshFood.size(); i++) {
-		mods.gregtech.microwave.recipeBuilder()
-			.inputs(TerraFirmaCraftF.tfcfFreshFood[i])
-			.outputs(TerraFirmaCraftF.tfcfDriedFood[i])
-			.duration(300).EUt(16).buildAndRegister()
-	}
+
 }

@@ -1,13 +1,9 @@
+// MODS_LOADED: firmalife
 
 
+// --- Добавление
 
-if (isLoaded("firmalife")) {
+ore('itemBeeswax').add(item('firmalife:beeswax'))
 
-    // --- Добавление
+// --- Удаление
 
-    ore('itemBeeswax').add(item('firmalife:beeswax'))
-
-
-    // --- Удаление
-
-}
