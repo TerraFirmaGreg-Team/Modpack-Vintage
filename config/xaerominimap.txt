@@ -75,8 +75,8 @@ lightOverlayMaxLight:7
 lightOverlayMinLight:0
 lightOverlayColor:13
 uiScale:0
-bossHealthPushBox:1
-potionEffectPushBox:1
+bossHealthPushBox:0
+potionEffectPushBox:0
 minimapFrame:0
 minimapFrameColor:9
 compassColor:9
@@ -124,5 +124,5 @@ interface:dummy:0:36:true:false:false:false
 interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false
 interface:dummy:0:36:true:false:false:false
-interface:gui.xaero_minimap:0:0:false:false:false:false
+interface:gui.xaero_minimap:88:0:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
