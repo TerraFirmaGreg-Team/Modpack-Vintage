@@ -5,26 +5,77 @@
 - ПРИ ОБНОВЛЕНИИ, СДЕЛАЙТЕ БЕКАП МИРА!!!!!!
 - Завершена поддержка extended версии, в этом релизе она уже не получит обновления, к сожалению я не нашел нормального способа конвертации предметов из extended версии в стандартную. Но вы так же можете просто запустить ваш extended мир, в обычной версии сборки, существенного урона миру не должно быть.
 - Перенесено с версии 1.20, оформление главного меню и окна загрузки.
-- Модпак значительно похудел 105.88 MB -> 12,3 МБ(Архив Curse).
+- Модпак значительно уменьшен 105.88 MB -> 12,3 МБ(Архив CurseForge).
 - AE2 Network Visualiser заменен на альтернативу в AE2 Stuff Unofficial.
 - ExtraCPUs удален и заменен на расширеный процессоры из NAE2. 
 - AEAdditions удален и почти весь функционал заменен на NAE2.
 - Изменен рецепт oc Disk Drive.
 - Добавлен рецепт для Ultimate encoder.
 ### Обновленные моды
-- Fluid Craft for AE2 -> 2.5.3-r
+- Fluid Craft for AE2 -> 2.5.5-r
 - Betterp2p -> 1.3.2
+- Supermartijn642corelib -> 1.1.16a
+- ae2-uel -> 0.56.2
+- Alfheim -> 1.2
+- bogosorter -> 1.4.6
+- CraftPresence -> 2.3.0
+- CraftTweaker2 -> 4.1.20.698
+- GalacticResearch -> 1.0.9
+- GregicalityMultiblocks -> 1.2.7
+- gregtech -> 2.8.6
+- groovyscript -> 0.7.3
+- modularui -> 2.4.2
+- nae2 -> 1.6.1
+- RoughlyEnoughIDs -> 2.0.7
+- TerraFirmaGreg-Core -> 2.0.21
+- UniversalTweaks -> 1.9.0
+- vintagefix -> 0.4.0
+- visualores -> 0.2.4
 ### Новые моды
 - EnhancedVisuals
 - PlayerRevive
 - AE2 Stuff Unofficial
 - ExtendedAE
+- AmbientEnvironment
+- bdlib
+- BetterLineBreak
+- BetterThirdPerson
+- Cherishedworlds
+- Controlling
+- CosmeticArmorReworked
+- Enhanced_annihilation_planes
+- EnhancedVisuals
+- EverlastingSkins
+- Ksyxis
+- MyServerIsCompatible
+- Placementpreview
+- RealFirstPerson2
+- Sound-Physics
+- Xaeros Minimap
+- XaerosWorldMap
 ### Удаленные моды
 - TXloader
 - AE2 Network Visualiser
 - FTBBackups
-- extracpus
-- aeadditions
+- Extracpus
+- AEadditions
+- Coroutil
+- CustomSkinLoader
+- Devtech
+- DoubleSlabs
+- FTBBackups
+- GrandEconomy
+- Journeymap
+- Inworldcrafting
+- Keywizard
+- LittleTiles
+- LootTweaker
+- Oxygen
+- QuarkRotN
+- SoundFilters
+- Weather2Remastered
+- Xtones
+
 
 ## [4.4.2] - 2023-11-27
 ### Modpack fixes
