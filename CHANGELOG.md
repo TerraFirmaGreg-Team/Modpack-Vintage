@@ -77,6 +77,7 @@
 - Weather2Remastered
 - Xtones
 - NotEnoughEnergistics
+- SmoothFont
 
 
 ## [4.4.2] - 2023-11-27
