@@ -3,7 +3,7 @@
 ## [4.5.0] - 28.01.2024
 ### Changes
 - WHEN UPDATING, MAKE A BACKUP OF THE WORLD!!!!!!
-- Support for the extended version has been completed, it will no longer receive updates in this release. Unfortunately, I have not found a normal way to convert objects from the extended version to the standard one. But you can also just launch your expanded world in the normal version of the build; there should be no damage to the world.
+- Support for the extended version has been completed, it will no longer receive updates in this release. Unfortunately, I have not found a normal way to convert objects - from the extended version to the standard one. But you can also just launch your expanded world in the normal version of the build, there should be no damage to the world.
 - Moved from version 1.20: main menu design and window loading.
 - Modpack significantly reduced: 105.88 MB -> 12.3 MB (CurseForge Archive).
 - AE2 Network Visualizer has been replaced with an alternative in AE2 Stuff Unofficial.
@@ -11,6 +11,7 @@
 - AEAAdditions have been removed and almost all functionality has been replaced by NAE2.
 - Changed OC Disk Drive recipe.
 - Added recipe for Ultimate Encoder.
+- This version includes major removals, updates, and new features, as well as minor fixes and optimizations of recipes.
 - There were many small changes that I have already forgotten about.
 ### Update mods
 - Fluid Craft for AE2 -> 2.5.5-r
