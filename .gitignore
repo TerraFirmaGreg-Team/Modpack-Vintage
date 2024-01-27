@@ -1,6 +1,7 @@
 # Configs
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
+config/cherishedworlds/favorites.dat
 config/JustEnoughCalculation/record.json
 config/oxygen/data/client/worlds/*
 config/customloadingscreen_timings.nbt
@@ -11,6 +12,7 @@ config/jei/world/*
 config/roughlyenoughitems/*
 config/fml.toml
 config/forge-client.toml
+config/xaerominimap_entities.json
 
 # .minecraft
 .mixin.out
@@ -64,19 +66,4 @@ hei_bookmarks.ini
 
 
 # Server Pack
-.github/buildtools/serverpack/logs/
-.github/buildtools/serverpack/world/
-.github/buildtools/serverpack/config/
-.github/buildtools/serverpack/crash-reports/
-.github/buildtools/serverpack/mods/
-.github/buildtools/serverpack/local/
-.github/buildtools/serverpack/xaerominimap-common.txt
-.github/buildtools/serverpack/xaeroworldmap-common.txt
-.github/buildtools/serverpack/banned-ips.json
-.github/buildtools/serverpack/banned-players.json
-.github/buildtools/serverpack/ops.json
-.github/buildtools/serverpack/whitelist.json
-
-
-config/xaerominimap_entities.json
-config/cherishedworlds/favorites.dat
+.github/buildtools/serverpack/*
