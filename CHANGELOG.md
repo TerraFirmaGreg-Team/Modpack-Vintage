@@ -54,6 +54,7 @@
 - Sound-Physics
 - Xaeros Minimap
 - XaerosWorldMap
+- DynamicLights
 ### Removed mods
 - TXloader
 - AE2 Network Visualiser
@@ -75,6 +76,7 @@
 - SoundFilters
 - Weather2Remastered
 - Xtones
+- NotEnoughEnergistics
 
 
 ## [4.4.2] - 2023-11-27
