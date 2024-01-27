@@ -1,17 +1,18 @@
 # Changelog
 
-## [4.5.0]
-### Изменения
-- ПРИ ОБНОВЛЕНИИ, СДЕЛАЙТЕ БЕКАП МИРА!!!!!!
-- Завершена поддержка extended версии, в этом релизе она уже не получит обновления, к сожалению я не нашел нормального способа конвертации предметов из extended версии в стандартную. Но вы так же можете просто запустить ваш extended мир, в обычной версии сборки, существенного урона миру не должно быть.
-- Перенесено с версии 1.20, оформление главного меню и окна загрузки.
-- Модпак значительно уменьшен 105.88 MB -> 12,3 МБ(Архив CurseForge).
-- AE2 Network Visualiser заменен на альтернативу в AE2 Stuff Unofficial.
-- ExtraCPUs удален и заменен на расширеный процессоры из NAE2. 
-- AEAdditions удален и почти весь функционал заменен на NAE2.
-- Изменен рецепт oc Disk Drive.
-- Добавлен рецепт для Ultimate encoder.
-### Обновленные моды
+## [4.5.0] - 28.01.2024
+### Changes
+- WHEN UPDATING, MAKE A BACKUP OF THE WORLD!!!!!!
+- Support for the extended version has been completed, it will no longer receive updates in this release. Unfortunately, I have not found a normal way to convert objects from the extended version to the standard one. But you can also just launch your expanded world in the normal version of the build; there should be no damage to the world.
+- Moved from version 1.20: main menu design and window loading.
+- Modpack significantly reduced: 105.88 MB -> 12.3 MB (CurseForge Archive).
+- AE2 Network Visualizer has been replaced with an alternative in AE2 Stuff Unofficial.
+- ExtraCPUs removed and replaced with extended processors from NAE2.
+- AEAAdditions have been removed and almost all functionality has been replaced by NAE2.
+- Changed OC Disk Drive recipe.
+- Added recipe for Ultimate Encoder.
+- There were many small changes that I have already forgotten about.
+### Update mods
 - Fluid Craft for AE2 -> 2.5.5-r
 - Betterp2p -> 1.3.2
 - Supermartijn642corelib -> 1.1.16a
@@ -31,7 +32,7 @@
 - UniversalTweaks -> 1.9.0
 - vintagefix -> 0.4.0
 - visualores -> 0.2.4
-### Новые моды
+### New mods
 - EnhancedVisuals
 - PlayerRevive
 - AE2 Stuff Unofficial
@@ -53,7 +54,7 @@
 - Sound-Physics
 - Xaeros Minimap
 - XaerosWorldMap
-### Удаленные моды
+### Removed mods
 - TXloader
 - AE2 Network Visualiser
 - FTBBackups
@@ -63,7 +64,6 @@
 - CustomSkinLoader
 - Devtech
 - DoubleSlabs
-- FTBBackups
 - GrandEconomy
 - Journeymap
 - Inworldcrafting
@@ -78,7 +78,7 @@
 
 
 ## [4.4.2] - 2023-11-27
-### Modpack fixes
+### Changes
 - Прочность у всех инструментов увеличена в 7 раз.
 ### Update mods
 - Red-Core 0.5.1 -> 0.6-Dev-1
@@ -91,7 +91,7 @@
 - farsight
 
 ## [4.4.1] - 2023-11-15
-### Modpack fixes
+### Changes
 - From the archive cf deleted resource packages and shader packages, they remain in mmc and on git.
 - Downgraded version of CustomSkinLoader.
 - Extended autobuild fix.
@@ -103,7 +103,7 @@
 - multithreadingandtweaks
 
 ## [4.4.0] - 2023-11-15
-### Modpack fixes
+### Changes
 - The resource loader has been changed. Now, the folder with all the applications required for the modpack has been moved from resources -> config\txloader\load.
 - Fixed the use of rain.
 - Fixed a bug with displaying CraftPresence.
@@ -155,12 +155,12 @@
 - Valkyrie
 
 ## [4.3.6] - 2023-08-18
-### Modpack fixes
+### Changes
 - Downgraded GC version to fix freezing.
 - Fixed missing dependencies
 
 ## [4.3.5] - 2023-08-18
-### Modpack fixes
+### Changes
 - Fix of the appearance of dust particles on the surface
 ### New mods
 - Multi-threading and tweaks
@@ -168,14 +168,14 @@
 -TFG Core
 
 ## [4.3.4] - 2023-08-17
-### Modpack fixes
+### Changes
 - Correction of different versions of mods on the extended version.
 ### Update mods
 - HammerLib
 - Thaumicenergistics-extended_life
 
 ## [4.3.3] - 2023-08-17
-### Modpack fixes
+### Changes
 - Downgraded version of CustomSkinLoader
 - Removed visualores mod, cached too long in old worlds.
 ### Update mods
@@ -184,7 +184,7 @@
 - visualores
 
 ## [4.3.2] - 2023-08-16
-### Modpack fixes
+### Changes
 - Fixed drop of chank of ore.
 - Fixed discord status display when you play modpack.
 - Conducted optimizations.
@@ -234,7 +234,7 @@
 - betterp2p
 
 ## [4.3.1] - 2023-05-27
-### Modpack fixes
+### Changes
 - Disabled "Force New Location" and "Auto Switch Tools" options
 - The Stargate mod has been removed, while it makes no sense to use it in a modpack, without the GT GCYS addon, if anyone wants to use it, you can put it, the scripts remain.
 - Replaced mod for planetary exploration.
@@ -272,7 +272,7 @@
 - PlanetProgression
 
 ## [4.3.0] - 2023-05-01
-### Modpack fixes
+### Changes
 - Now all those who still play on the old versions of the assembly, 2.x.x and 3.x.x, starting from this version, can safely upgrade, the worlds will automatically convert to the new format without losing progress, but you will not be able to go back.
 - Minor corrections in the description of quests.
 - Added a quest for a primitive bed, which will help beginners.
@@ -319,7 +319,7 @@
 - ModDirector
 
 ## [4.2.8] - 2023-03-25
-### Modpack fixes
+### Changes
 - Added PreventGhost mod that prevents (but completely) the creation of ghost blocks. When out of sync.
 - Fixed Yeast recipe.
 ### Update mods
@@ -332,11 +332,11 @@
 - PreventGhost
 
 ## [4.2.7] - 2023-03-21
-### Modpack fixes
+### Changes
 - Disabled high tier machines that got into the modpack by mistake.
 
 ## [4.2.6] - 2023-03-20
-### Modpack fixes
+### Changes
 - Fixed script errors in the Extended version, due to the use of old GT tools.
 - Fixed a bug with obtaining salt from a bucket of salt.
 - Almost all CT scripts have been moved to groovy.
@@ -356,13 +356,13 @@
 - Thaumic Augmentation (extended)
 
 ## [4.2.5] - 2023-03-14
-### Modpack fixes
+### Changes
 - Added missing OC recipes.
 - Fixed script name error that caused errors in TFC.
 - Fixed sterile clean room requirement in many recipes.
 
 ## [4.2.4] - 2023-03-14
-### Modpack fixes
+### Changes
 - A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
 - Fixed forging and casting crafting for chisel and propick tool heads.
 - Added missing OS recipes.
@@ -383,7 +383,7 @@
 - Supermartijn642corelib
 
 ## [4.2.3] - 2023-03-09
-### Modpack fixes
+### Changes
 - A lot of scripts have been transferred from ZenScript to GroovyScript, it is recommended to install the modpack from scratch, after saving the world, map and everything you need.
 - Fixed a bug with tools when they could not be used in TFK mechanics at the slightest break.
 - Recipe transfer JEI prefers to use an existing item in the ME network.
@@ -422,7 +422,7 @@
 - Universal Tweaks
 
 ## [4.2.2] - 2023-02-27
-### Modpack fixes
+### Changes
 - Fixed quest for stone tools.
 - Fixed recipe for wooden tongs.
 - Fixed Extruder Shape recipes.
@@ -434,7 +434,7 @@
 - TFC Farming
 
 ## [4.2.1] - 2023-02-26
-### Modpack fixes
+### Changes
 - Returned Inventory Bogo Sorter as there are no alternatives for sorting boxes from GregTech.
 - Fixed a crash when using tongs with hot items.
 - While the Star Forge and Sawmill multiblocks are removed, due to a bug that occurs only on the server, it will be added again in the future, but through TFG-Mod, if you already have these multiblocks, only controllers will disappear.
@@ -455,7 +455,7 @@
 - Multiblock Tweaker
 
 ## [4.2.0] - 2023-02-25
-### Modpack fixes
+### Changes
 - **Attention**
 - **Upgrading to this version will remove all GregTech tools and wireless terminals from AE2WTLib addons.**
 - Also a big change, all the costume textures that were used earlier, as well as music and something else, are now placed in a separate resource pack, by default it is already in your resourcepacks folder, you can turn it on or off as you wish.
@@ -513,7 +513,7 @@
 - FastWorkbench
 
 ## [4.1.12] - 2023-01-30
-### Modpack fixes
+### Changes
 - Minor fixes in discord status display.
 - Correction of the recipe for buckwheat cakes.
 - Added recipes for baking cakes in GT ovens.
@@ -598,7 +598,7 @@
 - Smooth-scrolling-everywhere
 
 ## [4.1.10] - 12/31/2022
-### Modpack fixes
+### Changes
 - Small Christmas decoration in GT (o^▽^o)
 - Fixing a script error for a couple of items to drop out.
 - By default, the TFC Florae Lite resource pack is enabled, it will allow you to use less RAM.
@@ -614,7 +614,7 @@
 
 ## [4.1.9- 12/22/2022
 
-### Modpack fixes
+### Changes
 - Christmas decoration (o^▽^o)
 - Some optimization mods have been removed and have been replaced by one, UniversalTweaks, which includes the same fixes.
 - The electric greenhouse has been completely replaced with an analogue of GTFO, the greenhouse controller that was before will disappear in your world, the land in the new greenhouse can be used differently, and not just the one that is shown in JEI.
@@ -660,7 +660,7 @@
 
 ## [4.1.8] - 11/23/2022
 
-### Modpack fixes
+### Changes
 - Fixed a bug due to which recepts for tools did not work.
 - Minor temperature overlay adjustments.
 - The craft of the engineering workbench has been returned, so the dupes in it have been fixed.
@@ -678,7 +678,7 @@
 
 ## [4.1.7] - 11/21/2022
 
-### Modpack fixes
+### Changes
 - Added more service information and RAM consumption to the loading screen.
 - Sheep spawn increased by 30%.
 - Nutrient source ~N~ is now GT Saltpeter instead of TFC.
@@ -728,7 +728,7 @@
 
 ## [4.1.6] - 10/25/2022
 
-### Modpack fixes
+### Changes
 - In the crafting of anti-radiation plates, the double plates of lead were replaced with double plates of tungsten, due to the gt bug.
 - Removed SecureEnderStorage, was causing strange behavior on the server.
 - Fixed sound when running as if you have 4 legs.
@@ -745,7 +745,7 @@
 
 ## [4.1.5] - 10/23/2022
 
-### Modpack fixes
+### Changes
 - Fixed crafting of liquid and item cells at 64k.
 - Added Building Gadgets and scripts for it.
 - Optimization and refactor in scripts.
@@ -892,7 +892,7 @@
 - GTFO
 
 ## [4.1.3] - 09/19/2022
-### Modpack fixes
+### Changes
 - Now the primitive pump produces fresh water, not salty.
 
 - Some code from TFGMod associated with TFCAmbiental has been moved to TFCAmbiental itself due to a fork
@@ -976,7 +976,7 @@
 - TFC Paths
 
 ## [4.1.2] - 09/05/2022
-### Modpack fixes
+### Changes
 - Recipe for protected ProjectRed lamps now uses GC mesh.
 
 - The crafting of Little Exporter uses the GC mesh.
@@ -1034,7 +1034,7 @@
 - InventoryTweaks
 
 ## [4.1.0] - Expected ?
-### Modpack fixes
+### Changes
 - Replaced mod for bags (due to a bug when things were lost in it). If you have items in your bags, please take them out, as they will disappear after the update.
 - Large dust from GTCEu can now be processed into TFC metal.
 - Now rods from GTCEu can be processed into TFC metal.
@@ -1113,7 +1113,7 @@
 - HardcoreDarkness
 
 ## [4.0.1] - 08/02/2022
-### Modpack fixes
+### Changes
 - Firmalife oven no longer produces heat when turned off. In the on state, the amount of heat is reduced.
 - Added support for Cellars Addon, now going into the refrigerator (basement) you will be cooled, if it's cold there of course.
 - Plants suitable for making medicines have been added, including now medicines can also be made from algae and carals.
@@ -1168,7 +1168,7 @@
 - REID - A mod that increases the id limit of minecraft blocks, is made much cleaner and has support from developers, which will allow it to be used with other mods in the future, fix strange generation and strange crashes associated with the absence of some classes in the game, also increase fps and reduce CPU load. **THIS MOD WILL DESTROY YOUR OLD WORLDS IN 95% OF THE CASES. IF YOU WANT TO CONTINUE PLAYING THE OLD WORLDS PLEASE REMOVE THIS MOD AND INSTALL BACK** [NEID](https://www.curseforge.com/minecraft/mc-mods/notenoughids?page=2).
 
 ## [3.5.0] - 07/25/2022
-### Modpack fixes
+### Changes
 - Now furnaces, forges, etc. from TFC-Tech give off heat, and the refrigerator can even cool you down. Also, a FirmaLife stove will help you in winter. And the highlight of the program is the coils from GTCEu at the blast furnace and not only will burn you if you stand nearby, protect yourself by wearing leather, nano, or quantum armor.
 - Fixed juice recipes for making wine, also added recipes to GTCEu machines.
 - Hidden bows from Florae.
@@ -1252,7 +1252,7 @@
 - GalaxySpace
 
 ## [3.4.4] - 11.07.2022
-### Modpack fixes
+### Changes
 - Fixed a crash after right-clicking on the ground with a shovel in hand.
 - Fixed a crash after opening recipes with an iron flare in HEI.
 - Fixed many GTFO recipes again.
@@ -1284,11 +1284,11 @@
 - Extra CPUs
 
 ## [3.4.31] - 07/06/2022
-### Modpack fixes
+### Changes
 - The version of GregTech Food Option has been rolled back, as it causes crashes on servers, the developer has been informed, we are waiting for a fix.
 
 ## [3.4.3] - 07/06/2022
-### Modpack fixes
+### Changes
 - Fixed a bug where the gouishka could stay open when casting metal into molds or the like, now it closes, at least it should.
 - Now the strength consumption of tongs does not depend on the number of hot items in the inventory.
 - Fixed a bug where cutting wood for latex could be done with a pickaxe, but not with a knife (WTF).\
@@ -1307,7 +1307,7 @@
 - GregTech Food Option
 
 ## [3.4.2] - 07/04/2022
-### Modpack fixes
+### Changes
 - Fixed bug when using geologist. hammer, minecraft crashed or kicked you from the server.
 - Fixed dupe in refrigerator.
 - Disabled Imission textures in GT to fix a bug with machines that run on multiple ticks. (Will be fixed by the GT developers in the next update).
@@ -1328,7 +1328,7 @@
 - Nether Portal Fix
 
 ## [3.4.1] - 07/03/2022
-### Modpack fixes- Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
+### Changes- Added TFC-Ambientnal (with fixes, for example: TFC temperature system will only work on Earth, on other planets, GC temperature system).
 - Renamed wrought iron to hematite to avoid confusion + the developers themselves will change it to this name in the future.
 - Fixed a bug where Quantum Armor tried to feed you but failed and destroyed all your food.
 - Added custom HotOrNot mod with liquid dupe fix and support for tongs from TFGMod.
@@ -1388,7 +1388,7 @@
 - GalacticraftTweaker
 
 ## [3.4.0] - 06/26/2022
-### Modpack fixes- Added a recipe for tablets in the workbench.
+### Changes- Added a recipe for tablets in the workbench.
 - It seems that all GTFO recipes have been rewritten, but I'm not sure.
 - Fixed conflicting recipe for gravel.
 - Fixed recipe for fermented spider eye.
@@ -1464,7 +1464,7 @@
 - Phospor
 
 ## [3.3.6] - 06.20.2022
-### Modpack fixes- Fixed wooden crate recipe
+### Changes- Fixed wooden crate recipe
 - Correction of metal units in double plates
 - Fixed Whetstone Base Recipe
 - Added recipe for iron hatches in GT machines
@@ -1474,12 +1474,12 @@
 ### Update mods- Modtweaker
 
 ## [3.3.51] - 06.18.2022
-### Modpack fixes- AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
+### Changes- AEAdditions changed back to ExtraCells, when loading the old world, on the server, causes a crash, reported to the developer
 - Removed texture pack TFC Lite, saved RAM, but slowed down the launch of the game (you can optionally install)
 - Fixed a bug in AE2 recipes
 
 ## [3.3.5] - 18.06.2022
-### Modpack fixes- Added RFTools to the Lite version of the modpack.
+### Changes- Added RFTools to the Lite version of the modpack.
 - Pam's HarvestCraft has been replaced with the elaborate GregTech Food Option.
 - Rewritten GregTech Food Option recipes
 (not all because there are too many of them, there is no need to report errors in the recipes of this mod, we already know about them).
@@ -1556,7 +1556,7 @@
 - TFC + Pam's HarvestCraft addon.
 
 ## [3.3.4] - 09.06.2022
-### Modpack fixes- Menu fixes.
+### Changes- Menu fixes.
 - Correction of the bucket recipe with salt.
 - Remelting of pieces of iron has been fixed.
 - Correction of the white screen at the first start and entry into the world.
@@ -1575,7 +1575,7 @@
 - Performant
 
 ## [3.3.3] - 08.06.2022
-### Modpack fixes- Fixed the translation of GregTech
+### Changes- Fixed the translation of GregTech
 - Fixed quests
 - Added an Optifine installation button to the menu
 - Fixed Gemstone File recipes
@@ -1587,7 +1587,7 @@
 - Supermartijn642configlib
 
 ## [3.3.2] - 06/07/2022
-### Modpack fixes- Fixed a bug with chicken
+### Changes- Fixed a bug with chicken
 - Temporarily disabled Powersuite Armor crafting
 - Fixed a bug with displaying blocks in the world and the world itself
 
@@ -1598,7 +1598,7 @@
 - Removed Oxygen-players-list
 
 ## [3.3.1]
-### Modpack fixes- Tweaked the alignment of GC energy with GT.
+### Changes- Tweaked the alignment of GC energy with GT.
 - Changed ME Drive model.
 - Changed gui ae2wtlib .
 - Changed the texture of the Tool belt.
