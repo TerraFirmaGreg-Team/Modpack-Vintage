@@ -21,8 +21,7 @@ jobs:
       project_name: ${{ steps.info.outputs.project_name }}
       project_version: ${{ steps.info.outputs.project_version }}
       mc_version: ${{ steps.info.outputs.mc_version }}
-      changelog_ru: ${{ steps.changelog_ru.outputs.description }}
-      changelog_en: ${{ steps.changelog_en.outputs.description }}
+      changelog: ${{ steps.changelog.outputs.description }}
     
     steps:
       - name: Checkout
@@ -58,16 +57,10 @@ jobs:
           fi
 
       - name: Changelog Parser
-        id: changelog_ru
+        id: changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
-          path: CHANGELOG_RU.md
-
-      - name: Changelog Parser
-        id: changelog_en
-        uses: coditory/changelog-parser@v1.0.2
-        with:
-          path: CHANGELOG_EN.md
+          path: CHANGELOG.md
 
   build-cf-modpack:
     name: Build CF Modpack
@@ -83,7 +76,7 @@ jobs:
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" groocy/runConfig.json
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
 
       - name: Export CF
         run: |
@@ -201,18 +194,13 @@ jobs:
 
       - name: Upload Curseforge
         id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
+        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ vars.CF_MODPACK_ID }}
           modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
           modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-          changelog: |
-            RU
-            ${{ needs.modpack-info.outputs.changelog_ru }}
-
-            EN
-            ${{ needs.modpack-info.outputs.changelog_en }}
+          changelog: ${{ needs.modpack-info.outputs.changelog }}
           changelog-format: markdown
           game-version: ${{ needs.modpack-info.outputs.mc_version }}
           display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
@@ -248,9 +236,7 @@ jobs:
     #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
     #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
     #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-    #         changelog: |
-    #           ${{ needs.modpack-info.outputs.changelog_ru }}
-    #           ${{ needs.modpack-info.outputs.changelog_en }}
+    #         changelog: ${{ needs.modpack-info.outputs.changelog }}
     #         changelog-format: markdown
     #         game-version: ${{ needs.modpack-info.outputs.mc_version }}
     #         display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
@@ -273,12 +259,7 @@ jobs:
           prerelease: false
           generate_release_notes: true
           name: ${{ needs.modpack-info.outputs.project_version }}
-          body: |
-            RU
-            ${{ needs.modpack-info.outputs.changelog_ru }}
-
-            EN
-            ${{ needs.modpack-info.outputs.changelog_en }}
+          body: ${{ needs.modpack-info.outputs.changelog }}
           files: |
             ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
             ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
@@ -306,11 +287,8 @@ jobs:
             **GameVersion**: `${{ needs.modpack-info.outputs.mc_version }}`
             **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
 
-            **Changelog** 
-            :flag_ru: 
-            ```${{ needs.modpack-info.outputs.changelog_ru }}```
-            :flag_gb:
-            ```${{ needs.modpack-info.outputs.changelog_en }}```
+            [Сhangelog](https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/blob/main/CHANGELOG.md) **
+            ```${{ needs.modpack-info.outputs.changelog }}```
           embed-color: 5814783
 
   # close-fixed-issues:
