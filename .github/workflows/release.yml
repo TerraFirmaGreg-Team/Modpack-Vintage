@@ -81,7 +81,7 @@ jobs:
       - name: Export CF
         run: |
           mkdir -p overrides
-          mv -vf {config,groovy,scripts,bansoukou}  overrides/
+          mv -vf {config,groovy,scripts,bansoukou,resourcepacks}  overrides/
           mv -vf .github/buildtools/modpack/manifest.json ./
           mv -vf .github/buildtools/modpack/modlist.html ./
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
@@ -122,7 +122,7 @@ jobs:
         run: |
           mkdir -p .minecraft
           mkdir -p flame
-          mv -vf {config,groovy,scripts,mods,bansoukou} .minecraft/
+          mv -vf {config,groovy,scripts,mods,bansoukou,resourcepacks} .minecraft/
           mv -vf .github/buildtools/modpack/mmc-pack.json ./
           mv -vf .github/buildtools/modpack/instance.cfg ./
           mv -vf .github/buildtools/modpack/modlist.html ./
