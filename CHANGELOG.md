@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.5.1] - 28.01.2024
+### Changes
+- Fixed crash when breaking objects that emit light.
+### Update mods
+- XaerosWorldMap -> 1.37.7
+- Xaeros_Minimap -> 23.9.7
+- Alfheim -> 1.1.1
+### New mods
+- Betterhorses
+- Elegant-networking
+
 ## [4.5.0] - 28.01.2024
 ### Changes
 - WHEN UPDATING, MAKE A BACKUP OF THE WORLD!!!!!!
