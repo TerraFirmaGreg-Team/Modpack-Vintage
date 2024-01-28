@@ -47,7 +47,6 @@
 - CosmeticArmorReworked
 - Enhanced_annihilation_planes
 - EnhancedVisuals
-- EverlastingSkins
 - Ksyxis
 - MyServerIsCompatible
 - Placementpreview
@@ -64,7 +63,6 @@
 - Extracpus
 - AEadditions
 - Coroutil
-- CustomSkinLoader
 - Devtech
 - DoubleSlabs
 - GrandEconomy
