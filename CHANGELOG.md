@@ -56,6 +56,7 @@
 - Xaeros Minimap
 - XaerosWorldMap
 - DynamicLights
+- Betterpingdisplay
 ### Removed mods
 - TXloader
 - AE2 Network Visualiser
