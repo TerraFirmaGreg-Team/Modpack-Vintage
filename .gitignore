@@ -41,6 +41,7 @@ visualores/*
 .idea/
 .curseclient
 .sl_password
+sl_password.txt
 config/simplelogin.cfg
 optionsof.txt
 options.txt
@@ -68,4 +69,5 @@ hei_bookmarks.ini
 
 # Server Pack
 .github/buildtools/serverpack/*
+
 
