@@ -106,7 +106,7 @@ jobs:
         run: |
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
-          sed -i -e "s/DEV/${VERSION}/g" groocy/runConfig.json
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Download Mods
@@ -153,6 +153,14 @@ jobs:
               echo "username=Xikaro"; 
               echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          VERSION=${{ needs.modpack-info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Export serverpack
         run: |
