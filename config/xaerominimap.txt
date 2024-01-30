@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:372
+ignoreUpdate:0
 settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
@@ -75,8 +75,8 @@ lightOverlayMaxLight:7
 lightOverlayMinLight:0
 lightOverlayColor:13
 uiScale:0
-bossHealthPushBox:0
-potionEffectPushBox:0
+bossHealthPushBox:1
+potionEffectPushBox:1
 minimapFrame:0
 minimapFrameColor:9
 compassColor:9
