@@ -2,47 +2,51 @@
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/cherishedworlds/favorites.dat
-config/JustEnoughCalculation/record.json
-config/oxygen/data/client/worlds/*
-config/customloadingscreen_timings.nbt
-config/splash.properties
+config/roughlyenoughitems/
+config/jei/world/
 config/jei/worldSettings.cfg
-config/gregtech/terminal/*
-config/jei/world/*
-config/roughlyenoughitems/*
+config/JustEnoughCalculation/record.json
+config/gregtech/terminal/
+config/splash.properties
+config/customloadingscreen_timings.nbt
+config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
 config/xaerominimap_entities.json
 
 # .minecraft
 .mixin.out
-crash-reports/*
-vintagefix/transformerCache/jarDiscoverer.cache
-logs/*
-saves/*
-local/*
-XaeroWaypoints*
-XaeroWorldMap/*
-CustomSkinLoader/*
-screenshots/*
-shaderpacks/*
-EverlastingSkins/*
-oxygen/worlds/*
-journeymap/*
-visualores/*
+crash-reports/
+vintagefix/
+logs/
+saves/
+local/
+XaeroWaypoints/
+XaeroWorldMap/
+XaeroWaypoints_*/
+CustomSkinLoader/
+screenshots/
+shaderpacks/
+EverlastingSkins/
+visualores/
+mods-carryover/
+fancymenu_data/
+fancymenu_setups/
+downloads/
 
 # Extensions
 **/*.log
 **/*.gz
 **/*.DS_Store
 **/*.jar
+*.code-workspace
+*.zip
 
 # Client data
 .idea/
 .curseclient
 .sl_password
 sl_password.txt
-config/simplelogin.cfg
 optionsof.txt
 options.txt
 optionsshaders.txt
@@ -50,10 +54,7 @@ patchouli_data.json
 usernamecache.json
 usercache.json
 rhino.local.properties
-fancymenu_data/last_world.fmdata
-fancymenu_data/default_scale_set.fm
 OpenComputersMod-*
-
 profile.json
 servers.dat
 servers.dat_old
@@ -63,11 +64,13 @@ minecraftinstance.json
 knownkeys.txt
 hei_bookmarks.ini
 
-*.code-workspace
-*.zip
-
-
 # Server Pack
+!.github/buildtools/serverpack/forge-auto-install.txt
+!.github/buildtools/serverpack/minecraft_server.jar
+!.github/buildtools/serverpack/server.properties
+!.github/buildtools/serverpack/server_starter.conf
+!.github/buildtools/serverpack/server-icon.png
+!.github/buildtools/serverpack/start_server.bat
 .github/buildtools/serverpack/*
 
 
