@@ -5,6 +5,7 @@ config/cherishedworlds/favorites.dat
 config/roughlyenoughitems/
 config/jei/world/
 config/jei/worldSettings.cfg
+config/fantasticlib/
 config/JustEnoughCalculation/record.json
 config/gregtech/terminal/
 config/splash.properties
@@ -33,6 +34,7 @@ mods-carryover/
 fancymenu_data/
 fancymenu_setups/
 downloads/
+
 
 # Extensions
 **/*.log
@@ -72,5 +74,3 @@ hei_bookmarks.ini
 !.github/buildtools/serverpack/server-icon.png
 !.github/buildtools/serverpack/start_server.bat
 .github/buildtools/serverpack/*
-
-
