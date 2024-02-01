@@ -1,5 +1,26 @@
 # Changelog
 
+## [4.5.2] - 01.02.2024
+### Changes
+- Hot or Not and TFC Ambiental moved to TerraFirmaGreg Core.
+- Fixed a bug with the appearance of ore piles on the surface.
+- Achievements disabled.
+- Fixed chunk rendering bug.
+### Update mods
+- Configanytime -> 2.0
+- Mixinbooter -> 9.0
+- Fluid Craft for AE2 -> 2.5.6-r
+### New mods
+- CommonCapabilities
+- CyclopsCore
+- FantasticLib
+- NoAdvancements
+### Deleted mods
+- BetterFoliage
+- Hot or Not
+- TFC Ambiental
+- TreeChop
+
 ## [4.5.1] - 28.01.2024
 ### Changes
 - Fixed crash when breaking objects that emit light.
@@ -64,7 +85,7 @@
 - XaerosWorldMap
 - DynamicLights
 - Betterpingdisplay
-### Removed mods
+### Deleted mods
 - TXloader
 - AE2 Network Visualiser
 - FTBBackups
@@ -110,7 +131,7 @@
 - Retrogen disabled.
 ### Update mods
 - CustomSkinLoader_ForgeLegacy 14.18.1 -> 14.15.2
-### Removed mods
+### Deleted mods
 - multithreadingandtweaks
 
 ## [4.4.0] - 2023-11-15
@@ -191,7 +212,7 @@
 - Removed visualores mod, cached too long in old worlds.
 ### Update mods
 - Custom Skin Loader
-### Removed mods
+### Deleted mods
 - visualores
 
 ## [4.3.2] - 2023-08-16
@@ -239,7 +260,7 @@
 - DoubleSlabs
 - Betterp2p plusplus
 - configanytime
-### Removed mods
+### Deleted mods
 - Randompatches
 - Foamfix
 - betterp2p
@@ -273,7 +294,7 @@
 ### New mods
 - Galactic Research
 - OptionsEnforcer
-### Removed mods
+### Deleted mods
 - Entity Culling
 - RenderLib
 - JSG
@@ -321,7 +342,7 @@
 - TFGmod
 ### New mods
 - File Director
-### Removed Mods
+### Deleted mods
 - FantasticLib
 - NoAdvancements
 - Preventghost
@@ -441,7 +462,7 @@
 - Quern now gives you 1 Dust instead of 2.
 - Grindstone now gives you 2 Dust instead of 3.
 
-### Removed mods
+### Deleted mods
 - TFC Farming
 
 ## [4.2.1] - 2023-02-26
@@ -462,7 +483,7 @@
 ### New mods
 - Inventory Bogo Sorter
 
-### Removed Mods
+### Deleted mods
 - Multiblock Tweaker
 
 ## [4.2.0] - 2023-02-25
@@ -512,7 +533,7 @@
 - AutoRegLib
 - Quark
 
-### Removed mods
+### Deleted mods
 - Inventory Bogo Sorter
 - Mechtech
 - Htmltech
@@ -602,7 +623,7 @@
 ### New mods
 - CraftPresence
 
-### Removed mods- Eguilib
+### Deleted mods- Eguilib
 - Discordrpc
 - NaNPolice
 - ClientTweaks
@@ -659,7 +680,7 @@
 - RenderLib
 - Universal Tweaks
 
-### Removed mods
+### Deleted mods
 - AI improvements
 - ColoredTooltips
 - FastFurnace
@@ -734,7 +755,7 @@
 - TFC-Ambiental
 - JEI Utilities
 
-### Removed mods
+### Deleted mods
 - Weather2
 
 ## [4.1.6] - 10/25/2022
@@ -751,7 +772,7 @@
 - Fancy menu
 - TFGmod
 
-### Removed mods
+### Deleted mods
 - SecureEnderStorage
 
 ## [4.1.5] - 10/23/2022
@@ -884,7 +905,7 @@
 - CustomSkinLoader
 - CraftTweaker2
 
-### Removed mods
+### Deleted mods
 - PotionCore
 - Oxygen-merchants
 - EnderStorage
@@ -979,7 +1000,7 @@
 - Mod director
 - StuffASockInIt
 
-### Removed mods
+### Deleted mods
 - Tombstone
 - Base
 
@@ -1036,7 +1057,7 @@
 ### New mods
 - Bogosorter
 
-### Removed mods
+### Deleted mods
 - Better FPS
 - Workbench Plus
 - QuickStore
@@ -1114,7 +1135,7 @@
 - Darkness
 - Spatialservermod
 
-### Removed mods- ImprovedBackpacks
+### Deleted mods- ImprovedBackpacks
 - Cherished worlds
 - Baubles - replaced by a fork
 - AE2WTLib - replaced by a fork
@@ -1255,7 +1276,7 @@
 - loliasm
 - CustomSkinLoader
 
-### Removed mods- Aunis Beta - had too many bugs and shortcomings.
+### Deleted mods- Aunis Beta - had too many bugs and shortcomings.
 - NotEnoughIDs
 - ExtraCells2
 - Xaeros Minimap
