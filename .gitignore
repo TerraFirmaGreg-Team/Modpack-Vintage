@@ -14,6 +14,8 @@ config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
 config/xaerominimap_entities.json
+config/fancymenu/menu_identifiers.db
+config/fancymenu/user_variables.db
 
 # .minecraft
 .mixin.out
