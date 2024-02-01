@@ -13,7 +13,7 @@ if (isLoaded("galacticraftcore")) {
         .inputs(metaitem('crate.titanium') * 4)
         .inputs(metaitem('electric.motor.ev') * 4)
         .inputs(item('galacticraftplanets:beam_receiver'))
-        .inputs(item('tfgmod:meta_item', 52))
+        .inputs(item('tfg:meta_item', 52))
         .fluidInputs(fluid('black_steel') * 9216)
         .fluidInputs(fluid('aluminium') * 4608)
         .fluidInputs(fluid('bronze') * 4608)
@@ -31,7 +31,7 @@ if (isLoaded("galacticraftcore")) {
             metaitem('sensor.iv'),
             item('galacticraftplanets:item_basic_asteroids:5'))
         .fluidInputs(fluid('soldering_alloy') * 1152)
-        .outputs(item('tfgmod:meta_item', 52))
+        .outputs(item('tfg:meta_item', 52))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(600).EUt(7680).buildAndRegister()
 
@@ -43,7 +43,7 @@ if (isLoaded("galacticraftcore")) {
 
     // Схема
     mods.gregtech.laser_engraver.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 46))
+        .inputs(item('tfg:meta_item', 46))
        .notConsumable(metaitem('glass_lens.brown'))
         .outputs(item('galacticraftplanets:schematic:2'))
        .cleanroom(CleanroomType.CLEANROOM)

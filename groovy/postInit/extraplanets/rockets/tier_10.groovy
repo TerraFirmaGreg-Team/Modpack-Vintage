@@ -27,17 +27,17 @@ if (isLoaded("extraplanets")) {
   // Ракета
   mods.gregtech.assembly_line.recipeBuilder()
     .inputs(item('extraplanets:nose_cone_tier10'))
-    .inputs(item('tfgmod:meta_item', 22) * 12)
+    .inputs(item('tfg:meta_item', 22) * 12)
     .inputs(item('extraplanets:tier10_items:2') * 8)
     .inputs(item('extraplanets:tier10_items:1') * 6)
     .inputs(item('extraplanets:tier10_items') * 5)
     .inputs(item('galacticraftcore:oil_canister_partial:1001') * 64)
-    .inputs(item('tfgmod:meta_item', 49))
+    .inputs(item('tfg:meta_item', 49))
     .inputs(metaitem('electric.motor.uxv') * 4)
     .inputs(metaitem('emitter.uxv') * 4)
     .inputs(ore('circuitUhv') * 8)
     .inputs(crate[i] * 18)
-    .inputs(item('tfgmod:meta_item', 44))
+    .inputs(item('tfg:meta_item', 44))
     .inputs(item('extraplanets:schematic_tier10'))
     .fluidInputs(fluid('naquadria') * 9216)
     .fluidInputs(fluid('soldering_alloy') * 4608)
@@ -56,7 +56,7 @@ if (isLoaded("extraplanets")) {
       metaitem('sensor.uxv'),
       item('extraplanets:tier10_items:3'))
     .fluidInputs(fluid('soldering_alloy') * 9112)
-    .outputs(item('tfgmod:meta_item', 44))
+    .outputs(item('tfg:meta_item', 44))
     .cleanroom(CleanroomType.CLEANROOM)
     .duration(600).EUt(67108864).buildAndRegister()
   // Головоной обтекатель
@@ -79,7 +79,7 @@ if (isLoaded("extraplanets")) {
       metaitem('voltage_coil.uv') * 2,
       metaitem('field.generator.uxv'))
     .fluidInputs(fluid('soldering_alloy') * 288)
-    .outputs(item('tfgmod:meta_item', 22))
+    .outputs(item('tfg:meta_item', 22))
     .cleanroom(CleanroomType.CLEANROOM)
     .duration(300).EUt(67108864).buildAndRegister()
   // Стабилизаторы
@@ -124,11 +124,11 @@ if (isLoaded("extraplanets")) {
       metaitem('plateDenseNaquadria') * 4,
       metaitem('boltTritanium') * 8)
     .fluidInputs(fluid('soldering_alloy') * 144)
-    .outputs(item('tfgmod:meta_item', 33))
+    .outputs(item('tfg:meta_item', 33))
     .duration(300).EUt(67108864).buildAndRegister()
   // Сверх-прочные пластины
   mods.gregtech.implosion_compressor.recipeBuilder()
-      .inputs(item('tfgmod:meta_item', 33))
+      .inputs(item('tfg:meta_item', 33))
       .outputs(
         item('extraplanets:tier10_items:3'),
         metaitem('dustTinyTritanium') * 6)
@@ -136,7 +136,7 @@ if (isLoaded("extraplanets")) {
       .duration(20).EUt(30).buildAndRegister()
   // Схема ракеты
   mods.gregtech.laser_engraver.recipeBuilder()
-      .inputs(item('tfgmod:meta_item', 46))
+      .inputs(item('tfg:meta_item', 46))
     .notConsumable(metaitem('glass_lens.cyan'))
       .outputs(item('extraplanets:schematic_tier10'))
     .cleanroom(CleanroomType.CLEANROOM)

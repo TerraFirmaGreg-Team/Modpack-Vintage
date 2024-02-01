@@ -26,15 +26,15 @@ if (isLoaded("galacticraftcore")) {
     // Ракета
     mods.gregtech.assembly_line.recipeBuilder()
         .inputs(item('galacticraftcore:nose_cone'))
-        .inputs(item('tfgmod:meta_item', 13) * 8)
+        .inputs(item('tfg:meta_item', 13) * 8)
         .inputs(item('galacticraftcore:rocket_fins') * 4)
         .inputs(item('galacticraftcore:engine'))
         .inputs(item('galacticraftcore:oil_canister_partial:1001') * 2)
-        .inputs(item('tfgmod:meta_item', 47))
+        .inputs(item('tfg:meta_item', 47))
         .inputs(metaitem('electric.motor.hv') * 4)
         .inputs(metaitem('emitter.hv') * 4)
         .inputs(ore('circuitHv') * 8)
-        .inputs(item('tfgmod:meta_item', 35))
+        .inputs(item('tfg:meta_item', 35))
         .inputs(crate[i] * 3)
         .fluidInputs(fluid('black_steel') * 9216)
         .fluidInputs(fluid('aluminium') * 4608)
@@ -53,7 +53,7 @@ if (isLoaded("galacticraftcore")) {
             metaitem('sensor.hv'),
             item('galacticraftcore:heavy_plating'))
         .fluidInputs(fluid('soldering_alloy') * 576)
-        .outputs(item('tfgmod:meta_item', 35))
+        .outputs(item('tfg:meta_item', 35))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(600).EUt(480).buildAndRegister()
     // Головоной обтекатель
@@ -76,7 +76,7 @@ if (isLoaded("galacticraftcore")) {
             metaitem('voltage_coil.hv') * 2,
             metaitem('field.generator.hv'))
         .fluidInputs(fluid('soldering_alloy') * 288)
-        .outputs(item('tfgmod:meta_item', 13))
+        .outputs(item('tfg:meta_item', 13))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300).EUt(480).buildAndRegister()
     // Стабилизаторы
@@ -111,11 +111,11 @@ if (isLoaded("galacticraftcore")) {
             metaitem('plateDenseAluminium'),
             metaitem('plateDenseBronze'))
         .fluidInputs(fluid('stainless_steel') * 72)
-        .outputs(item('tfgmod:meta_item', 24))
+        .outputs(item('tfg:meta_item', 24))
         .duration(300).EUt(480).buildAndRegister()
     // Сверх-прочные пластины
     mods.gregtech.implosion_compressor.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 24))
+        .inputs(item('tfg:meta_item', 24))
         .outputs(
           item('galacticraftcore:heavy_plating'),
           metaitem('dustTinyStainlessSteel'))

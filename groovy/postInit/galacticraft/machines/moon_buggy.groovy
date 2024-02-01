@@ -30,7 +30,7 @@ if (isLoaded("galacticraftcore")) {
       .inputs(metaitem('screwStainlessSteel') * 8)
       .inputs(metaitem('stickStainlessSteel') * 4)
       .inputs(metaitem('electric.motor.ev') * 4)
-      .inputs(item('tfgmod:meta_item', 53))
+      .inputs(item('tfg:meta_item', 53))
       .inputs(item('galacticraftcore:schematic'))
       .inputs(crate[i] * 2)
       .fluidInputs(fluid('tungsten_steel') * 4608)
@@ -50,7 +50,7 @@ if (isLoaded("galacticraftcore")) {
          metaitem('sensor.hv'),
          item('galacticraftcore:heavy_plating'))
       .fluidInputs(fluid('soldering_alloy') * 576)
-      .outputs(item('tfgmod:meta_item', 53))
+      .outputs(item('tfg:meta_item', 53))
       .cleanroom(CleanroomType.CLEANROOM)
       .duration(600).EUt(480).buildAndRegister()
 
@@ -72,7 +72,7 @@ if (isLoaded("galacticraftcore")) {
 
    // Схема
    mods.gregtech.laser_engraver.recipeBuilder()
-       .inputs(item('tfgmod:meta_item', 46))
+       .inputs(item('tfg:meta_item', 46))
       .notConsumable(metaitem('glass_lens.black'))
        .outputs(item('galacticraftcore:schematic'))
       .cleanroom(CleanroomType.CLEANROOM)

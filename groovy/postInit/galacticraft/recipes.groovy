@@ -377,7 +377,7 @@ if (isLoaded("galacticraftcore")) {
       [ore('paneGlassBlack'), metaitem('stickNeodymiumMagnetic'), ore('paneGlassBlack')]])
 
    // Пустая схема
-   crafting.addShaped("tfg/gc/schematic_blank", item('tfgmod:meta_item', 46), [
+   crafting.addShaped("tfg/gc/schematic_blank", item('tfg:meta_item', 46), [
       [null, ore('paper'), null],
       [null, item('littletiles:recipeadvanced'), ore('toolHammer').transform(Function.setToolDamage)],
       [null, ore('paper'), null]])
@@ -446,19 +446,19 @@ if (isLoaded("galacticraftcore")) {
 
    // Посадочный модуль
    // T1
-   crafting.addShaped("tfg/gc/lander_tier1", item('tfgmod:meta_item', 47),
+   crafting.addShaped("tfg/gc/lander_tier1", item('tfg:meta_item', 47),
       [[item('galacticraftcore:basic_item:19'), metaitem('plateDenseSteel'), metaitem('plateDenseSteel')],
       [metaitem('plateDenseSteel'), item('galacticraftcore:buggymat', 1), metaitem('plateDenseCopper')],
       [item('galacticraftcore:steel_pole'), item('galacticraftcore:engine'), item('galacticraftcore:steel_pole')]])
    // Т2
-   crafting.addShaped("tfg/gc/lander_tier2", item('tfgmod:meta_item', 48),
+   crafting.addShaped("tfg/gc/lander_tier2", item('tfg:meta_item', 48),
       [[metaitem('foilGold'), ore('gc.parachute'), metaitem('foilGold')],
-      [item('galacticraftcore:canvas'), item('tfgmod:meta_item', 47), item('galacticraftcore:canvas')],
+      [item('galacticraftcore:canvas'), item('tfg:meta_item', 47), item('galacticraftcore:canvas')],
       [metaitem('foilGold'), item('galacticraftcore:canvas'), metaitem('foilGold')]])
    // T3
-   crafting.addShaped("tfg/gc/lander_tier3", item('tfgmod:meta_item', 49),
+   crafting.addShaped("tfg/gc/lander_tier3", item('tfg:meta_item', 49),
       [[metaitem('plateDenseBlackSteel'), metaitem('crate.stainless_steel'), metaitem('plateDenseBlackSteel')],
-      [item('galacticraftcore:steel_pole'), item('tfgmod:meta_item', 48), item('galacticraftcore:steel_pole')],
+      [item('galacticraftcore:steel_pole'), item('tfg:meta_item', 48), item('galacticraftcore:steel_pole')],
       [metaitem('plateDenseBlackSteel'), metaitem('plateBlackSteel'), metaitem('plateDenseBlackSteel')]])
 
    // Парашюты

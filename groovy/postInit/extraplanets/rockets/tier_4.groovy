@@ -24,17 +24,17 @@ if (isLoaded("extraplanets")) {
     // Ракета
     mods.gregtech.assembly_line.recipeBuilder()
         .inputs(item('extraplanets:nose_cone_tier4'))
-        .inputs(item('tfgmod:meta_item', 16) * 12)
+        .inputs(item('tfg:meta_item', 16) * 12)
         .inputs(item('extraplanets:tier4_items:2') * 6)
         .inputs(item('extraplanets:tier4_items:1') * 4)
         .inputs(item('extraplanets:tier4_items') * 2)
         .inputs(item('galacticraftcore:oil_canister_partial:1001') * 16)
-        .inputs(item('tfgmod:meta_item', 49))
+        .inputs(item('tfg:meta_item', 49))
         .inputs(metaitem('electric.motor.luv') * 4)
         .inputs(metaitem('emitter.luv') * 4)
         .inputs(ore('circuitLuv') * 8)
         .inputs(crate[i] * 12)
-        .inputs(item('tfgmod:meta_item', 38))
+        .inputs(item('tfg:meta_item', 38))
         .inputs(item('extraplanets:schematic_tier4'))
         .fluidInputs(fluid('dense_ice') * 9216)
         .fluidInputs(fluid('soldering_alloy') * 4608)
@@ -53,7 +53,7 @@ if (isLoaded("extraplanets")) {
             metaitem('sensor.luv'),
             item('extraplanets:tier4_items:3'))
         .fluidInputs(fluid('soldering_alloy') * 1728)
-        .outputs(item('tfgmod:meta_item', 38))
+        .outputs(item('tfg:meta_item', 38))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(600).EUt(16384).buildAndRegister()
     // Головоной обтекатель
@@ -76,7 +76,7 @@ if (isLoaded("extraplanets")) {
             metaitem('voltage_coil.luv') * 2,
             metaitem('field.generator.luv'))
         .fluidInputs(fluid('soldering_alloy') * 288)
-        .outputs(item('tfgmod:meta_item', 16))
+        .outputs(item('tfg:meta_item', 16))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300).EUt(16384).buildAndRegister()
     // Стабилизаторы
@@ -121,11 +121,11 @@ if (isLoaded("extraplanets")) {
             metaitem('plateDenseDenseIce') * 3,
             metaitem('boltRuridit') * 4)
         .fluidInputs(fluid('indium') * 36)
-        .outputs(item('tfgmod:meta_item', 27))
+        .outputs(item('tfg:meta_item', 27))
         .duration(300).EUt(16384).buildAndRegister()
     // Сверх-прочные пластины
     mods.gregtech.implosion_compressor.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 27))
+        .inputs(item('tfg:meta_item', 27))
         .outputs(
           item('extraplanets:tier4_items:3'),
           metaitem('dustTinyRuridit') * 4)
@@ -133,7 +133,7 @@ if (isLoaded("extraplanets")) {
         .duration(20).EUt(30).buildAndRegister()
     // Схема ракеты
     mods.gregtech.laser_engraver.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 46))
+        .inputs(item('tfg:meta_item', 46))
         .notConsumable(metaitem('glass_lens.light_blue'))
         .outputs(item('extraplanets:schematic_tier4'))
         .cleanroom(CleanroomType.CLEANROOM)

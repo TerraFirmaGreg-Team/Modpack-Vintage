@@ -36,7 +36,7 @@ if (isLoaded("extraplanets")) {
         .inputs(metaitem('emitter.opv') * 4)
         .inputs(ore('circuitUhv') * 8)
         .inputs(crate[i] * 18)
-        .inputs(item('tfgmod:meta_item', 45))
+        .inputs(item('tfg:meta_item', 45))
         .inputs(item('extraplanets:schematic_tier10_electric_rocket'))
         .fluidInputs(fluid('naquadria') * 9216)
         .fluidInputs(fluid('soldering_alloy') * 4608)
@@ -55,12 +55,12 @@ if (isLoaded("extraplanets")) {
             metaitem('sensor.opv'),
             item('extraplanets:tier10_items:3'))
         .fluidInputs(fluid('soldering_alloy') * 12312)
-        .outputs(item('tfgmod:meta_item', 45))
+        .outputs(item('tfg:meta_item', 45))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(600).EUt(268435456).buildAndRegister()
     // Схема ракеты
     mods.gregtech.laser_engraver.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 46))
+        .inputs(item('tfg:meta_item', 46))
         .notConsumable(metaitem('lensNetherStar'))
         .outputs(item('extraplanets:schematic_tier10_electric_rocket'))
         .cleanroom(CleanroomType.CLEANROOM)

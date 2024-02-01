@@ -256,7 +256,7 @@ import classes.Function
       // Сбор
       mods.gregtech.packer.recipeBuilder()
         .inputs(
-          item('tfgmod:meta_item', 50),
+          item('tfg:meta_item', 50),
           AppliedEnergistics2.fluidStorageComponents[i])
         .outputs(AppliedEnergistics2.fluidStorageCells[i])
         .cleanroom(CleanroomType.CLEANROOM)
@@ -265,7 +265,7 @@ import classes.Function
       mods.gregtech.packer.recipeBuilder()
         .inputs(AppliedEnergistics2.fluidStorageCells[i])
         .outputs(
-          item('tfgmod:meta_item', 50),
+          item('tfg:meta_item', 50),
           AppliedEnergistics2.fluidStorageComponents[i])
         .duration(10).EUt(7).buildAndRegister()
 
@@ -848,20 +848,20 @@ import classes.Function
       .duration(56).EUt(30).buildAndRegister()
     
     // ME Fluid Storage Housing
-    crafting.addShaped("tfg/ae2/me_fluid_storage_housing", item('tfgmod:meta_item', 50), [
+    crafting.addShaped("tfg/ae2/me_fluid_storage_housing", item('tfg:meta_item', 50), [
       [item('appliedenergistics2:quartz_glass'), metaitem('plateStainlessSteel'), item('appliedenergistics2:quartz_glass')],
       [metaitem('wireFineRedAlloy'), ore('circuitLv'), metaitem('wireFineRedAlloy')],
       [metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel')]])
     
     // Recycle - Fluid Storage Housing
     mods.gregtech.macerator.recipeBuilder()
-      .inputs(item('tfgmod:meta_item', 50))
+      .inputs(item('tfg:meta_item', 50))
       .outputs(
         metaitem('dustStainlessSteel') * 2,
         metaitem('dustTinyStainlessSteel') * 2)
       .duration(100).EUt(16).buildAndRegister()
     mods.gregtech.arc_furnace.recipeBuilder()
-      .inputs(item('tfgmod:meta_item', 50))
+      .inputs(item('tfg:meta_item', 50))
       .fluidInputs(fluid('oxygen') * 56)
       .outputs(
         metaitem('ingotStainlessSteel') * 2,

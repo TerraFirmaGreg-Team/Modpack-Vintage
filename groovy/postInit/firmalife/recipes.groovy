@@ -83,7 +83,7 @@ crafting.addShapeless("tfg/firmalife/treated_lumber", item('firmalife:treated_lu
 furnace.add(item('firmalife:unfired_mallet_mold'), item('firmalife:mallet_mold'))
 
 // Высушивание соли
-crafting.addShapeless(metaitem('dustSmallSalt') * 2, [item('tfgmod:meta_item', 51).transform({item('tfc:wooden_bucket')})])
+crafting.addShapeless(metaitem('dustSmallSalt') * 2, [item('tfg:meta_item', 51).transform({item('tfc:wooden_bucket')})])
 
 crafting.addShapeless(item('firmalife:trellis'), [item('firmalife:greenhouse_wall'), item('firmalife:greenhouse_wall'), ore('dustFertilizer')])
 crafting.addShapeless(item('firmalife:pumpkin_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])

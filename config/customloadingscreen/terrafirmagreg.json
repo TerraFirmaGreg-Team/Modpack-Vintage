@@ -47,7 +47,7 @@
     {
       "image": {
         "parent": "builtin/image",
-        "image": "tfgmod:textures/logo.png",
+        "image": "tfg:textures/gui/logo.png",
         "position_type": "CENTER",
         "offset_pos": "CENTER",
         "position": {

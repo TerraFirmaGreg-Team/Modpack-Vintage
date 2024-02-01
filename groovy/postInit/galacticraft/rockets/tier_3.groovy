@@ -26,16 +26,16 @@ if (isLoaded("galacticraftcore")) {
     mods.gregtech.assembly_line.recipeBuilder()
         .inputs(item('galacticraftplanets:heavy_nose_cone'))
         .inputs(item('galacticraftcore:heavy_plating') * 2)
-        .inputs(item('tfgmod:meta_item', 15) * 12)
+        .inputs(item('tfg:meta_item', 15) * 12)
         .inputs(item('galacticraftplanets:item_basic_asteroids:2') * 4)
         .inputs(item('galacticraftplanets:item_basic_asteroids:1'))
         .inputs(item('galacticraftcore:engine:1') * 2)
         .inputs(item('galacticraftcore:oil_canister_partial:1001') * 8)
-        .inputs(item('tfgmod:meta_item', 49))
+        .inputs(item('tfg:meta_item', 49))
         .inputs(metaitem('electric.motor.iv') * 4)
         .inputs(metaitem('emitter.iv') * 4)
         .inputs(ore('circuitIv') * 8)
-        .inputs(item('tfgmod:meta_item', 37))
+        .inputs(item('tfg:meta_item', 37))
         .inputs(item('galacticraftplanets:schematic'))
         .inputs(crate[i] * 9)
         .fluidInputs(fluid('soldering_alloy') * 9216)
@@ -55,7 +55,7 @@ if (isLoaded("galacticraftcore")) {
             metaitem('sensor.iv'),
             item('galacticraftplanets:item_basic_asteroids:5'))
         .fluidInputs(fluid('soldering_alloy') * 1152)
-        .outputs(item('tfgmod:meta_item', 37))
+        .outputs(item('tfg:meta_item', 37))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(600).EUt(4096).buildAndRegister()
     // Головоной обтекатель
@@ -78,7 +78,7 @@ if (isLoaded("galacticraftcore")) {
             metaitem('voltage_coil.iv') * 2,
             metaitem('field.generator.iv') * 3)
         .fluidInputs(fluid('soldering_alloy') * 288)
-        .outputs(item('tfgmod:meta_item', 15))
+        .outputs(item('tfg:meta_item', 15))
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300).EUt(4096).buildAndRegister()
     // Стабилизаторы
@@ -111,11 +111,11 @@ if (isLoaded("galacticraftcore")) {
             item('galacticraftplanets:item_basic_mars:3'),
             metaitem('plateDenseDesh') * 4)
         .fluidInputs(fluid('platinum') * 72)
-        .outputs(item('tfgmod:meta_item', 26))
+        .outputs(item('tfg:meta_item', 26))
         .duration(300).EUt(4096).buildAndRegister()
     // Сверх-прочные пластины
     mods.gregtech.implosion_compressor.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 26))
+        .inputs(item('tfg:meta_item', 26))
         .outputs(
           item('galacticraftplanets:item_basic_asteroids:5'),
           metaitem('dustTinyPlatinum') * 3)
@@ -123,7 +123,7 @@ if (isLoaded("galacticraftcore")) {
         .duration(20).EUt(30).buildAndRegister()
     // Схема ракеты
     mods.gregtech.laser_engraver.recipeBuilder()
-        .inputs(item('tfgmod:meta_item', 46))
+        .inputs(item('tfg:meta_item', 46))
         .notConsumable(metaitem('glass_lens.magenta'))
         .outputs(item('galacticraftplanets:schematic'))
         .cleanroom(CleanroomType.CLEANROOM)
