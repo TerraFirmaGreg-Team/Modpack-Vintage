@@ -4,10 +4,7 @@
 	description: "{tfg.quests.mv.hca.subtitle}",
 	text: [
 		"{tfg.quests.mv.hca.desc1}",
-		"{tfg.quests.mv.hca.desc2}",
-		"",
-		"{tfg.quests.mv.hca.desc3}",
-		"{tfg.quests.mv.hca.desc4}"
+		"{tfg.quests.mv.hca.desc2}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
