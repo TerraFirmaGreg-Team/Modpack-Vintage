@@ -243,9 +243,9 @@ if (isLoaded("gregtech")) {
     
     // Extruder Shape (File Head)
     crafting.addShaped("tfg/gregtech/shape_extruder_file", item('tfg:meta_item', 7), [
-        [null,null, ore('toolWireCutter').transform(Function.setToolDamage)],
+        [null,null, null],
         [null, metaitem('shape.extruder.plate'), null],
-        [null, null, null]])
+        [null, ore('toolWireCutter').transform(Function.setToolDamage), null]])
     mods.gregtech.forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
       .notConsumable(item('tfg:meta_item', 7))
@@ -265,8 +265,8 @@ if (isLoaded("gregtech")) {
     
     // Extruder Shape (Axe Head)
     crafting.addShaped("tfg/gregtech/shape_extruder_axe", item('tfg:meta_item', 4), [
-        [ore('toolWireCutter').transform(Function.setToolDamage), null, null],
-        [null, metaitem('shape.extruder.plate'), null],
+        [null, null, null],
+        [ore('toolWireCutter').transform(Function.setToolDamage), metaitem('shape.extruder.plate'), null],
         [null, null, null]])
     mods.gregtech.forming_press.recipeBuilder()
       .inputs(metaitem('shape.empty'))
