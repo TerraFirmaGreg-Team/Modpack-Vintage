@@ -56,11 +56,11 @@ ore('chisel').add(item('gregtech:chisel:*'))
 ore('damageTypeSlashing').add(item('gregtech:chisel:*'))
 
 // Алмазы
-// ore('diamonds').add(
-//     metaitem('gemFlawedDiamond'), 
-//     item('minecraft:diamond'), 
-//     metaitem('gemFlawlessDiamond')
-// )
+ore('diamonds').add(
+    metaitem('gemFlawedDiamond'), 
+    item('minecraft:diamond'), 
+    metaitem('gemFlawlessDiamond')
+)
 ore('componentResistor').add(metaitem('component.advanced_smd.resistor'))
 
 // --- Удаление
