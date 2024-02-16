@@ -8,7 +8,7 @@
 		uid: "529969a0",
 		type: "item",
 		items: [{
-			item: "tfgmod:meta_item 1 50"
+			item: "tfg:meta_item 1 50"
 		}]
 	}]
 }
