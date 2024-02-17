@@ -8,6 +8,7 @@ BetterF3*
 BetterPingDisplay*
 BetterThirdPerson*
 BetterLineBreak*
+Better Quest Pop-up*
 ChunkAnimator*
 CraftPresence*
 CustomLoadingScreen*
@@ -16,7 +17,7 @@ cherishedworlds*
 clienttweaks*
 CTM*
 Controlling*
-darkness-forge*
+darkness*
 defaultoptions*
 dynamiclights*
 DynamicSurroundings*
@@ -40,6 +41,7 @@ jetif*
 JEI-Utilities*
 keywizard*
 konkrete_forge*
+keydescfix*
 LegendaryTooltips*
 mod-director-launchwrapper*
 moreoverlays*
@@ -66,3 +68,4 @@ textrues_embeddium_options*
 tfctowerheat*
 thah*
 txloader*
+WrapFix*
