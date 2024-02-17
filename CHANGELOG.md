@@ -7,6 +7,8 @@
 - Fixed the diamond ore dictionary issue.
 - Fixed the pure flux crystal recipe in the autoclave.
 - Fixed an error in the quests.
+- Fixed the issue with ore chunks dropping.
+- Now it's not possible to put a Vessel into another Vessel.
 ### Update mods
 - !mixinbooter -> 9.1
 - !Red-Core-MC -> 0.6-Dev-2
