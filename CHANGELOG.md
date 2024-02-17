@@ -2,7 +2,26 @@
 
 ## [4.5.3] - 18.02.2024
 ### Changes
+- Removed the ender pouch recipe.
+- Fixed the shape extruder file recipe.
+- Fixed the diamond ore dictionary issue.
+- Fixed the pure flux crystal recipe in the autoclave.
+- Fixed an error in the quests.
 ### Update mods
+- !mixinbooter -> 9.1
+- !Red-Core-MC -> 0.6-Dev-2
+- Supermartijn642corelib -> 1.1.17
+- ae2-uel -> 0.56.3
+- bogosorter -> 1.4.7
+- EnderStorage -> 2.5.0
+- Gregtechfoodoption -> 1.11.0.1
+- Movingelevators -> 1.4.6
+- XaerosWorldMap -> 1.37.8
+### New mods
+- BetterQuestPopup
+- Keydescfix
+- ModifierKeyFix
+- WrapFix
 
 ## [4.5.2] - 01.02.2024
 ### Changes
