@@ -3,7 +3,6 @@
 import classes.array.HGP
 
 
-
 // --- Удаление рецептов
 
 for (item in HGP.horizontalGlassPanes) {

@@ -4,9 +4,9 @@
 // --- Массивы
 
 def removeRecipe = [
-   item('movingelevators:display_block'),
-   item('movingelevators:elevator_block'),
-   item('movingelevators:button_block')
+        item('movingelevators:display_block'),
+        item('movingelevators:elevator_block'),
+        item('movingelevators:button_block')
 ]
 
 // --- Удаление рецептов

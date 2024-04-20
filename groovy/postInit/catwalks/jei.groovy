@@ -4,16 +4,16 @@
 // --- Массивы
 
 def removeRecipe = [
-   item('catwalks:cable'),
-   item('catwalks:ladder'),
-   item('catwalks:blowtorch')
+        item('catwalks:cable'),
+        item('catwalks:ladder'),
+        item('catwalks:blowtorch')
 ]
 
 def removeRecipesByName = [
-   "catwalks:catwalks/glass_catwalks",
-   "catwalks:catwalks/classic_catwalks",
-   "catwalks:catwalks/steel_catwalks",
-   "catwalks:catwalks/custom_catwalks"
+        "catwalks:catwalks/glass_catwalks",
+        "catwalks:catwalks/classic_catwalks",
+        "catwalks:catwalks/steel_catwalks",
+        "catwalks:catwalks/custom_catwalks"
 ]
 
 
@@ -24,7 +24,7 @@ for (item in removeRecipe) {
 }
 
 for (item in removeRecipesByName) {
-   crafting.remove(item)
+    crafting.remove(item)
 }
 
 mods.jei.removeAndHide(item('catwalks:stair'))

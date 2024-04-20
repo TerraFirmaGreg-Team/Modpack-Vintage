@@ -27,12 +27,12 @@ ore('chest').remove(item('minecraft:chest'), item('minecraft:trapped_chest'))
 ore('chestWood').remove(item('minecraft:trapped_chest'), item('minecraft:chest'))
 ore('chestTrapped').remove(item('minecraft:trapped_chest'))
 ore('stairWood').remove([
-    item('minecraft:oak_stairs'), 
-    item('minecraft:spruce_stairs'), 
-    item('minecraft:birch_stairs'), 
-    item('minecraft:jungle_stairs'), 
-    item('minecraft:acacia_stairs'), 
-    item('minecraft:dark_oak_stairs')
+        item('minecraft:oak_stairs'),
+        item('minecraft:spruce_stairs'),
+        item('minecraft:birch_stairs'),
+        item('minecraft:jungle_stairs'),
+        item('minecraft:acacia_stairs'),
+        item('minecraft:dark_oak_stairs')
 ])
 
 // Cobblestone

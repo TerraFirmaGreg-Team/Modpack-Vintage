@@ -4,13 +4,13 @@
 // --- Массивы
 
 def removeAndHide = [
-   item('horsepower:flour'),
-   item('horsepower:dough') 
+        item('horsepower:flour'),
+        item('horsepower:dough')
 ]
 
 
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-   mods.jei.removeAndHide(item)
+    mods.jei.removeAndHide(item)
 }

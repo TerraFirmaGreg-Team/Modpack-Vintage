@@ -11,8 +11,8 @@ ore('stoneMoon').add(item('galacticraftcore:basic_block_moon:4'))
 // Парашуты
 for (gcParachute in Galacticraft.gcParachute) {
     ore('gc.parachute').add(gcParachute)
-    if (gcParachute == item('galacticraftcore:parachute')) {}
-    else {
+    if (gcParachute == item('galacticraftcore:parachute')) {
+    } else {
         ore('gc.parachute.colors').add(gcParachute)
     }
 }
@@ -34,35 +34,35 @@ ore('oreIron').remove(item('galacticraftplanets:asteroids_block', 5))
 
 // Copper
 ore('oreCopper').remove([
-    item('galacticraftcore:basic_block_moon'),
-    item('galacticraftplanets:mars'),
-    item('galacticraftcore:basic_block_core', 5),
-    item('galacticraftplanets:venus', 7)])
+        item('galacticraftcore:basic_block_moon'),
+        item('galacticraftplanets:mars'),
+        item('galacticraftcore:basic_block_core', 5),
+        item('galacticraftplanets:venus', 7)])
 ore('ingotCopper').remove(item('galacticraftcore:basic_item', 3))
 ore('blockCopper').remove(item('galacticraftcore:basic_block_core', 9))
 
 // Tin
 ore('oreTin').remove([
-    item('galacticraftcore:basic_block_moon', 1),
-    item('galacticraftplanets:mars', 1),
-    item('galacticraftplanets:venus', 11),
-    item('galacticraftcore:basic_block_core', 6)])
+        item('galacticraftcore:basic_block_moon', 1),
+        item('galacticraftplanets:mars', 1),
+        item('galacticraftplanets:venus', 11),
+        item('galacticraftcore:basic_block_core', 6)])
 ore('ingotTin').remove(item('galacticraftcore:basic_item', 4))
 ore('blockTin').remove(item('galacticraftcore:basic_block_core', 10))
 
 // Aluminium/Aluminum etc
 ore('oreAluminium').remove([
-    item('galacticraftplanets:asteroids_block', 3),
-    item('galacticraftcore:basic_block_core', 7),
-    item('galacticraftplanets:venus', 6)])
+        item('galacticraftplanets:asteroids_block', 3),
+        item('galacticraftcore:basic_block_core', 7),
+        item('galacticraftplanets:venus', 6)])
 ore('oreAluminum').remove([
-    item('galacticraftplanets:asteroids_block', 3),
-    item('galacticraftcore:basic_block_core', 7),
-    item('galacticraftplanets:venus', 6)])
+        item('galacticraftplanets:asteroids_block', 3),
+        item('galacticraftcore:basic_block_core', 7),
+        item('galacticraftplanets:venus', 6)])
 ore('oreNaturalAluminum').remove([
-    item('galacticraftplanets:asteroids_block', 3),
-    item('galacticraftcore:basic_block_core', 7),
-    item('galacticraftplanets:venus', 6)])
+        item('galacticraftplanets:asteroids_block', 3),
+        item('galacticraftcore:basic_block_core', 7),
+        item('galacticraftplanets:venus', 6)])
 ore('ingotAluminum').remove(item('galacticraftcore:basic_item', 5))
 ore('blockAluminum').remove(item('galacticraftcore:basic_block_core', 11))
 ore('blockAluminium').remove(item('galacticraftcore:basic_block_core', 11))
@@ -75,8 +75,8 @@ ore('oreDesh').remove(item('galacticraftplanets:mars', 2))
 
 // Кремний
 ore('oreSilicon').remove([
-    item('galacticraftplanets:venus', 10),
-    item('galacticraftcore:basic_block_core', 8)])
+        item('galacticraftplanets:venus', 10),
+        item('galacticraftcore:basic_block_core', 8)])
 ore('blockSilicon').remove(item('galacticraftcore:basic_block_core', 13))
 
 // Квартц

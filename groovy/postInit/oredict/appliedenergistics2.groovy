@@ -64,8 +64,8 @@ ore('gemChargedCertusQuartz').add(item('appliedenergistics2:material', 1))
 
 // Квартцевые стержни
 ore('stickQuartz').add([
-    metaitem('stickCertusQuartz'),
-    metaitem('stickNetherQuartz')
+        metaitem('stickCertusQuartz'),
+        metaitem('stickNetherQuartz')
 ])
 
 // Интерфейсы
@@ -73,14 +73,14 @@ ore('crystalFluix').add(item('appliedenergistics2:material', 12))
 
 // Интерфейсы
 ore('ae2.interface.item').add([
-    item('appliedenergistics2:interface'),
-    item('appliedenergistics2:part', 440)
+        item('appliedenergistics2:interface'),
+        item('appliedenergistics2:part', 440)
 ])
 
 // Жидкостные интерфейсы
 ore('ae2.interface.fluid').add([
-    item('appliedenergistics2:fluid_interface'),
-    item('appliedenergistics2:part', 441)
+        item('appliedenergistics2:fluid_interface'),
+        item('appliedenergistics2:part', 441)
 ])
 
 // --- Удаление

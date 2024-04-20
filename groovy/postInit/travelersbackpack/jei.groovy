@@ -1,10 +1,8 @@
+// MODS_LOADED: travelersbackpack
 
+// --- Массивы
 
-if (isLoaded("travelersbackpack")) {
-
-    // --- Массивы
-
-    def removeAndHide = [
+def removeAndHide = [
         item('travelersbackpack:travelers_backpack', 76),
         item('travelersbackpack:travelers_backpack', 75),
         item('travelersbackpack:travelers_backpack', 74),
@@ -83,24 +81,23 @@ if (isLoaded("travelersbackpack")) {
         item('travelersbackpack:travelers_backpack', 1),
         item('travelersbackpack:backpack_tank'),
         item('travelersbackpack:sleeping_bag_bottom'),
-    ]
+]
 
-    def removeRecipe = [
-       item('travelersbackpack:hose_nozzle'),
-       item('travelersbackpack:hose'),
-    ]
+def removeRecipe = [
+        item('travelersbackpack:hose_nozzle'),
+        item('travelersbackpack:hose'),
+]
 
-    // --- Удаление рецептов
+// --- Удаление рецептов
 
-    for (item in removeAndHide) {
-        mods.jei.removeAndHide(item)
-    }
-
-    // Удаление рецептов
-    for (item in removeRecipe) {
-       crafting.removeByOutput(item)
-    }
-
-    // Поименное удаление рецептов
-    crafting.remove("travelersbackpack:travelers_backpack_standard")
+for (item in removeAndHide) {
+    mods.jei.removeAndHide(item)
 }
+
+// Удаление рецептов
+for (item in removeRecipe) {
+    crafting.removeByOutput(item)
+}
+
+// Поименное удаление рецептов
+crafting.remove("travelersbackpack:travelers_backpack_standard")

@@ -7,56 +7,56 @@ import classes.array.TerraFirmaCraft
 
 // Raw Igneous Intrusive Rocks To One OreDict
 for (item in TerraFirmaCraft.rawIgneousIntrusive) {
-	ore('rawIgneousIntrusive').add(item)
+    ore('rawIgneousIntrusive').add(item)
 }
 
 // Raw Igneous Extrusive Rocks To One OreDict
 for (item in TerraFirmaCraft.rawIgneousExtrusive) {
-	ore('rawIgneousExtrusive').add(item)
+    ore('rawIgneousExtrusive').add(item)
 }
 
 // Rock Metamorphic Rocks To One OreDict
 for (item in TerraFirmaCraft.rawMetamorphic) {
-	ore('rawMetamorphic').add(item)
+    ore('rawMetamorphic').add(item)
 }
 
 // Rock Sedimentary Rocks To One OreDict
 for (item in TerraFirmaCraft.rawSedimentary) {
-	ore('rawSedimentary').add(item)
+    ore('rawSedimentary').add(item)
 }
 
 // OreDicionary for all seeds
 for (item in TerraFirmaCraft.tfcSeeds) {
-	ore('allSeeds').add(item)
+    ore('allSeeds').add(item)
 }
 
 for (item in TerraFirmaCraft.tfcLooms) {
-	ore('loom').add(item)
+    ore('loom').add(item)
 }
 
 // OreDicionary for all slab
 for (item in TerraFirmaCraft.tfcSlabsSmooth) {
-	ore('slabStone').add(item)
+    ore('slabStone').add(item)
 }
 
 // OreDicionary for all helmets
 for (item in TerraFirmaCraft.tfcHelmets) {
-	ore('helmet').add(item)
+    ore('helmet').add(item)
 }
 
 // OreDicionary for all chestplates
 for (item in TerraFirmaCraft.tfcChestplates) {
-	ore('chestplate').add(item)
+    ore('chestplate').add(item)
 }
 
 // OreDicionary for all greaves
 for (item in TerraFirmaCraft.tfcGreaves) {
-	ore('greaves').add(item)
+    ore('greaves').add(item)
 }
 
 // OreDicionary for all boots
 for (item in TerraFirmaCraft.tfcBoots) {
-	ore('boots').add(item)
+    ore('boots').add(item)
 }
 
 ore('sugarcane').add(item('tfc:food/sugarcane'))
@@ -108,27 +108,27 @@ ore('sheetDoubleRedSteel').add(metaitem('plateDoubleRedSteel'))
 
 // BronzeAny Single Sheets
 ore('sheetAnyBronze').add(
-	metaitem('plateBronze'), 
-	metaitem('plateBlackBronze'), 
-	metaitem('plateBismuthBronze'))
+        metaitem('plateBronze'),
+        metaitem('plateBlackBronze'),
+        metaitem('plateBismuthBronze'))
 
 // BronzeAny Double Sheets
 ore('sheetDoubleAnyBronze').add(
-	metaitem('plateDoubleBronze'), 
-	metaitem('plateDoubleBlackBronze'), 
-	metaitem('plateDoubleBismuthBronze'))
+        metaitem('plateDoubleBronze'),
+        metaitem('plateDoubleBlackBronze'),
+        metaitem('plateDoubleBismuthBronze'))
 
 // Резиновые деревья
 ore('rubberTrees').add(
-    item('tfc:wood/log/rubber_fig'), 
-    item('tfc:wood/log/hevea')
+        item('tfc:wood/log/rubber_fig'),
+        item('tfc:wood/log/hevea')
 )
 
 // Грибы
 ore('mushrooms').add(
-    item('tfc:plants/amanita'), 
-    item('tfc:plants/porcini'),
-	item('tfc:plants/stinkhorn')
+        item('tfc:plants/amanita'),
+        item('tfc:plants/porcini'),
+        item('tfc:plants/stinkhorn')
 )
 
 // --- Удаление
@@ -143,22 +143,22 @@ ore('mushrooms').add(
 // ore('gemSulfur').remove(item('tfc:ore/sulfur'))
 // ore('gemSaltpeter').remove(item('tfc:ore/saltpeter'))
 // ore('gemGraphite').remove(item('tfc:ore/graphite'))
-	// 	item('tfc:gem/lapis_lazuli:*'),
-	// item('tfc:gem/emerald:*'),
-	// item('tfc:gem/sulfur:*'),
-	// item('tfc:gem/saltpeter:*'),
-	// item('tfc:gem/graphite:*'),
+// 	item('tfc:gem/lapis_lazuli:*'),
+// item('tfc:gem/emerald:*'),
+// item('tfc:gem/sulfur:*'),
+// item('tfc:gem/saltpeter:*'),
+// item('tfc:gem/graphite:*'),
 ore('gemDiamond').remove(
-	item('tfc:gem/diamond')
+        item('tfc:gem/diamond')
 )
 ore('dustSalt').remove(item('tfc:powder/salt'))
 ore('dustSaltpeter').remove(item('tfc:powder/saltpeter'))
 ore('dustGraphite').remove(item('tfc:powder/graphite'))
 ore('logWood').remove(item('tfc:stick_bundle'))
 ore('sheetDoubleAnyBronze').remove(
-	item('tfc:metal/double_sheet/bismuth_bronze'), 
-	item('tfc:metal/double_sheet/bronze'), 
-	item('tfc:metal/double_sheet/black_bronze'))
+        item('tfc:metal/double_sheet/bismuth_bronze'),
+        item('tfc:metal/double_sheet/bronze'),
+        item('tfc:metal/double_sheet/black_bronze'))
 
 // Removing OreDicts from TFC ingots
 ore('ingotBismuth').remove(item('tfc:metal/ingot/bismuth'))

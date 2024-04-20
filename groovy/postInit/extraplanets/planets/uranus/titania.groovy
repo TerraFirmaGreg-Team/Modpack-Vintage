@@ -2,9 +2,9 @@ import classes.Function
 
 // Массивы
 def titania = [
-    item('extraplanets:titania:3'),
-    item('extraplanets:titania:4'),
-    item('extraplanets:titania:5')
+        item('extraplanets:titania:3'),
+        item('extraplanets:titania:4'),
+        item('extraplanets:titania:5')
 ]
 
 // --- Удаление рецептов
@@ -17,7 +17,6 @@ for (item in titania) {
 // --- Добавление рецептов
 
 // --- Атмосфера
-
 
 
 // --- Породы

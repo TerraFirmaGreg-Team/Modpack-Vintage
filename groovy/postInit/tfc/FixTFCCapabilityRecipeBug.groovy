@@ -494,24 +494,24 @@ mods.gregtech.macerator.recipeBuilder()
 
 for (int i = 0; i < StainedHardenedClay.size(); i++) {
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(item('minecraft:hardened_clay'))
-        .fluidInputs(AllMinecraftDyeFluids[i] * 18)
-        .outputs(StainedHardenedClay[i])
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(item('minecraft:hardened_clay'))
+            .fluidInputs(AllMinecraftDyeFluids[i] * 18)
+            .outputs(StainedHardenedClay[i])
+            .duration(400).EUt(3).buildAndRegister()
 }
 
 // All Colored Terracotta
 for (i in StainedHardenedClay) {
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(i)
-        .outputs(metaitem('dustClay') * 4)
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(i)
+            .outputs(metaitem('dustClay') * 4)
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(i)
-        .fluidInputs(fluid('chlorine') * 50)
-        .outputs(item('minecraft:hardened_clay'))
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(i)
+            .fluidInputs(fluid('chlorine') * 50)
+            .outputs(item('minecraft:hardened_clay'))
+            .duration(400).EUt(3).buildAndRegister()
 }
 
 // Clay Block
@@ -535,20 +535,20 @@ mods.gregtech.assembler.recipeBuilder()
 
 for (int i = 0; i < SmallClayUnfiredColoredVessels.size(); i++) {
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(item('tfc:ceramics/unfired/vessel'))
-        .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
-        .outputs(SmallClayUnfiredColoredVessels[i])
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(item('tfc:ceramics/unfired/vessel'))
+            .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
+            .outputs(SmallClayUnfiredColoredVessels[i])
+            .duration(400).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(SmallClayUnfiredColoredVessels[i])
-        .outputs(metaitem('dustClay') * 3)
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(SmallClayUnfiredColoredVessels[i])
+            .outputs(metaitem('dustClay') * 3)
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(SmallClayUnfiredColoredVessels[i])
-        .outputs(SmallClayFiredColoredVessels[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(SmallClayUnfiredColoredVessels[i])
+            .outputs(SmallClayFiredColoredVessels[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Florae Earthenware Clay Small Colored Vessels
@@ -560,24 +560,24 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(3).buildAndRegister()
 
 for (int i = 0; i < SmallEarthenwareClayUnfiredColoredVessels.size(); i++) {
-    
+
     // TODO: Добавить knapping рецепты
 
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/earthenware/unfired/vessel'))
-        .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
-        .outputs(SmallEarthenwareClayUnfiredColoredVessels[i])
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(item('tfcflorae:ceramics/earthenware/unfired/vessel'))
+            .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
+            .outputs(SmallEarthenwareClayUnfiredColoredVessels[i])
+            .duration(400).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(SmallEarthenwareClayUnfiredColoredVessels[i])
-        .outputs(metaitem('dustClay') * 3) // Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(SmallEarthenwareClayUnfiredColoredVessels[i])
+            .outputs(metaitem('dustClay') * 3) // Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(SmallEarthenwareClayUnfiredColoredVessels[i])
-        .outputs(SmallEarthenwareClayFiredColoredVessels[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(SmallEarthenwareClayUnfiredColoredVessels[i])
+            .outputs(SmallEarthenwareClayFiredColoredVessels[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Florae Kaolinite Clay Small Colored Vessels
@@ -590,20 +590,20 @@ mods.gregtech.assembler.recipeBuilder()
 
 for (int i = 0; i < SmallKaoliniteClayUnfiredColoredVessels.size(); i++) {
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/kaolinite/unfired/vessel'))
-        .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
-        .outputs(SmallKaoliniteClayUnfiredColoredVessels[i])
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(item('tfcflorae:ceramics/kaolinite/unfired/vessel'))
+            .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
+            .outputs(SmallKaoliniteClayUnfiredColoredVessels[i])
+            .duration(400).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(SmallKaoliniteClayUnfiredColoredVessels[i])
-        .outputs(metaitem('dustClay') * 3) // Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(SmallKaoliniteClayUnfiredColoredVessels[i])
+            .outputs(metaitem('dustClay') * 3) // Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(SmallKaoliniteClayUnfiredColoredVessels[i])
-        .outputs(SmallKaoliniteClayFiredColoredVessels[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(SmallKaoliniteClayUnfiredColoredVessels[i])
+            .outputs(SmallKaoliniteClayFiredColoredVessels[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Florae Stoneware Clay Small Colored Vessels
@@ -616,97 +616,97 @@ mods.gregtech.assembler.recipeBuilder()
 
 for (int i = 0; i < SmallStonewareClayUnfiredColoredVessels.size(); i++) {
     mods.gregtech.chemical_bath.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/stoneware/unfired/vessel'))
-        .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
-        .outputs(SmallStonewareClayUnfiredColoredVessels[i])
-        .duration(400).EUt(3).buildAndRegister()
+            .inputs(item('tfcflorae:ceramics/stoneware/unfired/vessel'))
+            .fluidInputs(AllMinecraftDyeFluids[15 - i] * 18)
+            .outputs(SmallStonewareClayUnfiredColoredVessels[i])
+            .duration(400).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(SmallStonewareClayUnfiredColoredVessels[i])
-        .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(SmallStonewareClayUnfiredColoredVessels[i])
+            .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(SmallStonewareClayUnfiredColoredVessels[i])
-        .outputs(SmallStonewareClayFiredColoredVessels[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(SmallStonewareClayUnfiredColoredVessels[i])
+            .outputs(SmallStonewareClayFiredColoredVessels[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 
 // Clay Made Items
 for (int i = 0; i < ClayMadeFiredItems.size(); i++) {
     mods.gregtech.assembler.recipeBuilder()
-        .inputs(item('minecraft:clay_ball') * 3)
-        .circuitMeta(i + 1)
-        .outputs(ClayMadeUnfiredItems[i])
-        .duration(200).EUt(3).buildAndRegister()
-    
+            .inputs(item('minecraft:clay_ball') * 3)
+            .circuitMeta(i + 1)
+            .outputs(ClayMadeUnfiredItems[i])
+            .duration(200).EUt(3).buildAndRegister()
+
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(ClayMadeUnfiredItems[i])
-        .outputs(metaitem('dustClay') * 3)
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(ClayMadeUnfiredItems[i])
+            .outputs(metaitem('dustClay') * 3)
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(ClayMadeUnfiredItems[i])
-        .outputs(ClayMadeFiredItems[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(ClayMadeUnfiredItems[i])
+            .outputs(ClayMadeFiredItems[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Earthenware Clay Made Items
 for (int i = 0; i < EathenwareClayMadeUnfiredItems.size(); i++) {
     mods.gregtech.assembler.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 3)
-        .circuitMeta(i + 1)
-        .outputs(EathenwareClayMadeUnfiredItems[i])
-        .duration(200).EUt(3).buildAndRegister()
-    
+            .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 3)
+            .circuitMeta(i + 1)
+            .outputs(EathenwareClayMadeUnfiredItems[i])
+            .duration(200).EUt(3).buildAndRegister()
+
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(EathenwareClayMadeUnfiredItems[i])
-        .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(EathenwareClayMadeUnfiredItems[i])
+            .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(EathenwareClayMadeUnfiredItems[i])
-        .outputs(EathenwareClayMadeFiredItems[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(EathenwareClayMadeUnfiredItems[i])
+            .outputs(EathenwareClayMadeFiredItems[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Kaolinite Clay Made Items
 for (int i = 0; i < KaoliniteClayMadeUnfiredItems.size(); i++) {
     mods.gregtech.assembler.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 3)
-        .circuitMeta(i + 1)
-        .outputs(KaoliniteClayMadeUnfiredItems[i])
-        .duration(200).EUt(3).buildAndRegister()
+            .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 3)
+            .circuitMeta(i + 1)
+            .outputs(KaoliniteClayMadeUnfiredItems[i])
+            .duration(200).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(KaoliniteClayMadeUnfiredItems[i])
-        .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(KaoliniteClayMadeUnfiredItems[i])
+            .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(KaoliniteClayMadeUnfiredItems[i])
-        .outputs(KaoliniteClayMadeFiredItems[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(KaoliniteClayMadeUnfiredItems[i])
+            .outputs(KaoliniteClayMadeFiredItems[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // Stoneware Clay Made Items
 for (int i = 0; i < StonewareClayMadeUnfiredItems.size(); i++) {
     mods.gregtech.assembler.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 3)
-        .circuitMeta(i + 1)
-        .outputs(StonewareClayMadeUnfiredItems[i])
-        .duration(200).EUt(3).buildAndRegister()
+            .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 3)
+            .circuitMeta(i + 1)
+            .outputs(StonewareClayMadeUnfiredItems[i])
+            .duration(200).EUt(3).buildAndRegister()
 
     mods.gregtech.macerator.recipeBuilder()
-        .inputs(StonewareClayMadeUnfiredItems[i])
-        .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
-        .duration(15).EUt(3).buildAndRegister()
+            .inputs(StonewareClayMadeUnfiredItems[i])
+            .outputs(metaitem('dustClay') * 3) // TODO: Заменить на новый материал созданный в GT.
+            .duration(15).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(StonewareClayMadeUnfiredItems[i])
-        .outputs(StonewareClayMadeFiredItems[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(StonewareClayMadeUnfiredItems[i])
+            .outputs(StonewareClayMadeFiredItems[i])
+            .duration(100).EUt(3).buildAndRegister()
 }
 
 // TFC Clay Bricks
@@ -718,7 +718,7 @@ mods.gregtech.assembler.recipeBuilder()
 
 mods.gregtech.macerator.recipeBuilder()
         .inputs(item('tfc:ceramics/unfired/clay_brick'))
-        .outputs(metaitem('dustClay')) 
+        .outputs(metaitem('dustClay'))
         .duration(15).EUt(3).buildAndRegister()
 
 mods.gregtech.electric_furnace.recipeBuilder()
@@ -804,7 +804,7 @@ mods.gregtech.assembler.recipeBuilder()
 
 mods.gregtech.macerator.recipeBuilder()
         .inputs(item('tfc:ceramics/unfired/clay_flower_pot'))
-        .outputs(metaitem('dustClay')) 
+        .outputs(metaitem('dustClay'))
         .duration(15).EUt(3).buildAndRegister()
 
 mods.gregtech.electric_furnace.recipeBuilder()
@@ -815,13 +815,13 @@ mods.gregtech.electric_furnace.recipeBuilder()
 // Mud Bricks
 for (int i = 0; i < MudBalls.size(); i++) {
     mods.gregtech.assembler.recipeBuilder()
-        .inputs(MudBalls[i] * 3)
-        .circuitMeta(0)
-        .outputs(MudBricksUnfired[i])
-        .duration(200).EUt(3).buildAndRegister()
+            .inputs(MudBalls[i] * 3)
+            .circuitMeta(0)
+            .outputs(MudBricksUnfired[i])
+            .duration(200).EUt(3).buildAndRegister()
 
     mods.gregtech.electric_furnace.recipeBuilder()
-        .inputs(MudBricksUnfired[i])
-        .outputs(MudBricksFired[i])
-        .duration(100).EUt(3).buildAndRegister()
+            .inputs(MudBricksUnfired[i])
+            .outputs(MudBricksFired[i])
+            .duration(100).EUt(3).buildAndRegister()
 }

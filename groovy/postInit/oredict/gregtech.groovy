@@ -9,13 +9,13 @@ for (def allToolSword : ore('toolSword')) {
 
 // Ящики
 ore('crate').add(
-    item('gregtech:machine', 1625),
-    item('gregtech:machine', 1626),
-    item('gregtech:machine', 1627),
-    item('gregtech:machine', 1628),
-    item('gregtech:machine', 1629),
-    item('gregtech:machine', 1630),
-    item('gregtech:machine', 1631)
+        item('gregtech:machine', 1625),
+        item('gregtech:machine', 1626),
+        item('gregtech:machine', 1627),
+        item('gregtech:machine', 1628),
+        item('gregtech:machine', 1629),
+        item('gregtech:machine', 1630),
+        item('gregtech:machine', 1631)
 )
 
 // Wrought Iron + Iron
@@ -57,9 +57,9 @@ ore('damageTypeSlashing').add(item('gregtech:chisel:*'))
 
 // Алмазы
 ore('diamonds').add(
-    metaitem('gemFlawedDiamond'), 
-    item('minecraft:diamond'), 
-    metaitem('gemFlawlessDiamond')
+        metaitem('gemFlawedDiamond'),
+        item('minecraft:diamond'),
+        metaitem('gemFlawlessDiamond')
 )
 ore('componentResistor').add(metaitem('component.advanced_smd.resistor'))
 

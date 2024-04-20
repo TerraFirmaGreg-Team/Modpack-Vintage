@@ -1,12 +1,10 @@
+// MODS_LOADED: extraplanets
+// MODS_LOADED: extraplanets
+// --- Массивы
 
+// Categories
 
-if (isLoaded("extraplanets")) {
-
-    // --- Массивы
-
-    // Categories
-
-    def hideCategory = [
+def hideCategory = [
         "extraplanets.rocketT4",
         "extraplanets.rocketT5",
         "extraplanets.rocketT6",
@@ -23,12 +21,10 @@ if (isLoaded("extraplanets")) {
         "extraplanets.crystallizer",
         "extraplanets.purifier",
         "extraplanets.densifier"
-    ]
+]
 
 
-
-    
-    def hide = [
+def hide = [
         item('extraplanets:item_tier4_rocket', 4),
         item('extraplanets:item_tier5_rocket', 4),
         item('extraplanets:item_tier6_rocket', 4),
@@ -39,9 +35,9 @@ if (isLoaded("extraplanets")) {
         item('extraplanets:item_tier10_electric_rocket', 4),
         item('extraplanets:oxygen_tank_extremely_heavy_full'),
         item('extraplanets:oxygen_tank_very_heavy_full'),
-    ]
-    
-    def removeAndHide = [
+]
+
+def removeAndHide = [
         item('extraplanets:basic_decontamination_unit_fake_block'),
         item('extraplanets:decorative_blocks', 8),
         item('extraplanets:decorative_blocks', 11),
@@ -115,9 +111,9 @@ if (isLoaded("extraplanets")) {
         item('extraplanets:canned_food:*'),
         item('extraplanets:candy_blocks:*'),
         item('extraplanets:candy_blocks_horizontal:*')
-    ]
-    
-    def removeRecipe = [
+]
+
+def removeRecipe = [
         item('extraplanets:advanced_launch_pad:*'),
         item('extraplanets:solar'),
         item('extraplanets:solar:4'),
@@ -209,14 +205,14 @@ if (isLoaded("extraplanets")) {
         item('extraplanets:module_items:*'),
         item('extraplanets:oxygen_tank_extremely_heavy_full', 9000),
         item('extraplanets:oxygen_tank_very_heavy_full', 7200)
-    ]
-    
-    def removeRecipeFurnace = [
+]
+
+def removeRecipeFurnace = [
         item('extraplanets:kepler22b', 12),
         item('extraplanets:volcanic_rock')
-    ]
-    
-    def removeRecipesByName = [
+]
+
+def removeRecipesByName = [
         "extraplanets:oxygen_tank_light_full_white",
         "extraplanets:oxygen_tank_light_full_orange",
         "extraplanets:oxygen_tank_light_full_magenta",
@@ -262,35 +258,34 @@ if (isLoaded("extraplanets")) {
         "extraplanets:oxygen_tank_heavy_full_brown",
         "extraplanets:oxygen_tank_heavy_full_green",
         "extraplanets:oxygen_tank_heavy_full_black"
-    ]
-    
-    // --- Удаление рецептов
+]
 
-    for(name in hideCategory) {
-        mods.jei.hideCategory(name)
-    }
-    
-    for (item in hide) {
-        mods.jei.hide(item)
-    }
-    
-    for (item in removeAndHide) {
-        mods.jei.removeAndHide(item)
-    }
-    
-    for (item in removeRecipe) {
-        crafting.removeByOutput(item)
-    }
-    
-    for (item in removeRecipeFurnace) {
-        furnace.removeByInput(item)
-    }
-    
-    for (item in removeRecipesByName) {
-        crafting.remove(item)
-    }
-    
-    // Метан
-    // mods.gregtech.centrifuge.removeByInput(5, [item('extraplanets:chocolate_bar')], null)
-    // mods.gregtech.centrifuge.removeByInput(5, [item('extraplanets:caramel_bar')], null)
+// --- Удаление рецептов
+
+for (name in hideCategory) {
+    mods.jei.hideCategory(name)
 }
+
+for (item in hide) {
+    mods.jei.hide(item)
+}
+
+for (item in removeAndHide) {
+    mods.jei.removeAndHide(item)
+}
+
+for (item in removeRecipe) {
+    crafting.removeByOutput(item)
+}
+
+for (item in removeRecipeFurnace) {
+    furnace.removeByInput(item)
+}
+
+for (item in removeRecipesByName) {
+    crafting.remove(item)
+}
+
+// Метан
+// mods.gregtech.centrifuge.removeByInput(5, [item('extraplanets:chocolate_bar')], null)
+// mods.gregtech.centrifuge.removeByInput(5, [item('extraplanets:caramel_bar')], null)
