@@ -1,6 +1,8 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.machines
+
 import gregtech.api.metatileentity.multiblock.CleanroomType
 
-if (isLoaded("galacticraftcore")) {
 
     // Майнер
     mods.gregtech.assembly_line.recipeBuilder()
@@ -48,4 +50,3 @@ if (isLoaded("galacticraftcore")) {
             .outputs(item('galacticraftplanets:schematic:2'))
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(9000).EUt(1024).buildAndRegister()
-}

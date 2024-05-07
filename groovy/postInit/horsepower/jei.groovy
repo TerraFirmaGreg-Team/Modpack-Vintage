@@ -1,5 +1,5 @@
 // MODS_LOADED: horsepower
-
+package horsepower
 
 // --- Массивы
 
@@ -12,5 +12,5 @@ def removeAndHide = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }

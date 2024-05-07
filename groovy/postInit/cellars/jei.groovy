@@ -1,4 +1,5 @@
 // MODS_LOADED: cellars
+package cellars
 
 // --- Массивы
 
@@ -32,7 +33,7 @@ def removeRecipe = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // Удаление рецептов верстака

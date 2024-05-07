@@ -1,5 +1,5 @@
 // MODS_LOADED: microblockcbe
-
+package microblockcbe
 
 // --- Массивы
 
@@ -14,5 +14,5 @@ def removeAndHide = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }

@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.rockets
+
 import gregtech.api.metatileentity.multiblock.CleanroomType
 
 

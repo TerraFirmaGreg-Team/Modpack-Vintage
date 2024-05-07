@@ -1,4 +1,5 @@
 // MODS_LOADED: tfc
+package tfc
 
 import classes.array.TerraFirmaCraft
 
@@ -581,11 +582,11 @@ def removeRecipesByName = [
 // --- Удаление рецептов
 
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipesByName) {

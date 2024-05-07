@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.neptune
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def triton = [
 
 // Удаление рецептов
 for (item in triton) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

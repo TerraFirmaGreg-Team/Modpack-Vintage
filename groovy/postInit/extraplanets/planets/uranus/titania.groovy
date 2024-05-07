@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.uranus
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def titania = [
 
 // Удаление рецептов
 for (item in titania) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

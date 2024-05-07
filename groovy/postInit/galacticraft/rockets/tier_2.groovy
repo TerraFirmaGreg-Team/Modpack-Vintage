@@ -1,7 +1,9 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.rockets
+
 import gregtech.api.metatileentity.multiblock.CleanroomType
 
 
-if (isLoaded("galacticraftcore")) {
 
     // --- Массивы
 
@@ -107,4 +109,3 @@ if (isLoaded("galacticraftcore")) {
             .outputs(item('galacticraftcore:schematic:1'))
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(9000).EUt(1024).buildAndRegister()
-}

@@ -1,4 +1,6 @@
 // MODS_LOADED: travelersbackpack
+package travelersbackpack
+
 
 // --- Массивы
 
@@ -91,7 +93,7 @@ def removeRecipe = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // Удаление рецептов

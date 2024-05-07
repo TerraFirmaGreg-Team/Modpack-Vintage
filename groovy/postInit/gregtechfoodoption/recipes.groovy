@@ -1,4 +1,5 @@
 // MODS_LOADED: gregtechfoodoption1
+package gregtechfoodoption
 
 import classes.Array.TerraFirmaCraft
 import classes.Function

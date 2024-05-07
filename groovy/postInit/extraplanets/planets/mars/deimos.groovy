@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.mars
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def deimos = [
 
 // Удаление рецептов
 for (item in deimos) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

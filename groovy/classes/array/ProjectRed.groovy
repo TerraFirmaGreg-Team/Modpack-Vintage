@@ -1,4 +1,4 @@
-
+package classes.array
 
 public class ProjectRed {
     // - All ProjectRed Illuminars Array

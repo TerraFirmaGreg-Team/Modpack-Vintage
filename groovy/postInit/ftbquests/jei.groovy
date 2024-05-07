@@ -1,5 +1,5 @@
 // MODS_LOADED: ftbquests
-
+package ftbquests
 
 // --- Массивы
 def hideCategory = [
@@ -19,9 +19,9 @@ def removeAndHide = [
 
 // --- Удаление рецептов
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }

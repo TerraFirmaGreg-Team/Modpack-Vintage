@@ -1,4 +1,5 @@
 // MODS_LOADED: ae2stuff
+package ae2stuff
 
 // --- Массивы
 def hide = [
@@ -19,11 +20,11 @@ def removeByRecipeName = [
 // --- Удаление рецептов
 
 for (item in hide) {
-    mods.jei.hide(item)
+    mods.jei.ingredient.hide(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

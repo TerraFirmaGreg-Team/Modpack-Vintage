@@ -1,4 +1,5 @@
 // MODS_LOADED: catwalks
+package catwalks
 
 import classes.Function
 

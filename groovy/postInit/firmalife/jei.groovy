@@ -1,5 +1,5 @@
 // MODS_LOADED: firmalife
-
+package firmalife
 
 // --- Массивы
 
@@ -70,7 +70,7 @@ def removeRecipe = [
 
 // --- Удаление рецептов
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

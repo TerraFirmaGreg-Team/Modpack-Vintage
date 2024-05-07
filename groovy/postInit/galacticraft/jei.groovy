@@ -1,4 +1,6 @@
-if (isLoaded("galacticraftcore")) {
+// MODS_LOADED: galacticraftcore
+package galacticraftcore
+
 
     // --- Массивы
 
@@ -218,15 +220,15 @@ if (isLoaded("galacticraftcore")) {
     // --- Удаление рецептов
 
     for (item in hideCategory) {
-        mods.jei.hideCategory(item)
+        mods.jei.category.hideCategory(item)
     }
 
     for (item in hide) {
-        mods.jei.hide(item)
+        mods.jei.ingredient.hide(item)
     }
 
     for (item in removeAndHide) {
-        mods.jei.removeAndHide(item)
+        mods.jei.ingredient.removeAndHide(item)
     }
 
     for (item in removeRecipe) {
@@ -247,4 +249,3 @@ if (isLoaded("galacticraftcore")) {
     // mods.gregtech.centrifuge.removeByInput(5, [item('galacticraftcore:food', 6)], null)
     // mods.gregtech.centrifuge.removeByInput(5, [item('galacticraftcore:food', 7)], null)
     // mods.gregtech.centrifuge.removeByInput(5, [item('galacticraftcore:food', 8)], null)
-}

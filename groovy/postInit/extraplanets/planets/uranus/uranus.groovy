@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.uranus
+
 import classes.Function
 
 // Массивы
@@ -13,7 +16,7 @@ def uranus = [
 
 // Удаление рецептов
 for (item in uranus) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

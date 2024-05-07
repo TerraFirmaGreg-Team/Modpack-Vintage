@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.jupiter
+
 import classes.Function
 
 // Массивы
@@ -18,7 +21,7 @@ def jupiter = [
 
 // Удаление рецептов
 for (item in jupiter) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

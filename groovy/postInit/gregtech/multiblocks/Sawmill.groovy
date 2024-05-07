@@ -1,3 +1,6 @@
+// MODS_LOADED: gregtech
+package gregtech.multiblocks
+
 import gregtech.api.metatileentity.MetaTileEntity
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
 import gregtech.api.metatileentity.multiblock.IMultiblockPart

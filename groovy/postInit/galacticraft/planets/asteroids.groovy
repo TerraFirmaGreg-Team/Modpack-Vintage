@@ -1,7 +1,10 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.planets
+
 import classes.Function
 import gregtech.api.GTValues
 
-if (isLoaded("galacticraftcore")) {
+
 
     // Массивы
     def asteroids = [
@@ -29,7 +32,7 @@ if (isLoaded("galacticraftcore")) {
 
     // Удаление рецептов
     for (item in asteroids) {
-        mods.jei.removeAndHide(item)
+        mods.jei.ingredient.removeAndHide(item)
     }
 
     // --- Добавление рецептов
@@ -94,4 +97,3 @@ if (isLoaded("galacticraftcore")) {
             .inputs(metaitem('plateDenseIce') * 9)
             .outputs(metaitem('plateDenseDenseIce'))
             .duration(100).EUt(48).buildAndRegister()
-}

@@ -1,5 +1,5 @@
 // MODS_LOADED: catwalks
-
+package catwalks
 
 // --- Массивы
 
@@ -27,4 +27,4 @@ for (item in removeRecipesByName) {
     crafting.remove(item)
 }
 
-mods.jei.removeAndHide(item('catwalks:stair'))
+mods.jei.ingredient.removeAndHide(item('catwalks:stair'))

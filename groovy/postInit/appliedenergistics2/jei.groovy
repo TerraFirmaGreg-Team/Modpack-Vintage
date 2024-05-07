@@ -1,4 +1,6 @@
+
 // MODS_LOADED: appliedenergistics2
+package appliedenergistics2
 
 // --- Массивы
 def hideCategory = [
@@ -141,15 +143,15 @@ def removeRecipe = [
 
 // --- Удаление рецептов
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 for (item in hide) {
-    mods.jei.hide(item)
+    mods.jei.ingredient.hide(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // for (item in removeRecipe) {

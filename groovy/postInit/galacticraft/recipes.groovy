@@ -1,9 +1,11 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore
+
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import classes.array.Minecraft
 import classes.array.Galacticraft
 import classes.Function
 
-if (isLoaded("galacticraftcore")) {
 
     // --- Добавление рецептов
 
@@ -601,4 +603,3 @@ if (isLoaded("galacticraftcore")) {
             .outputs(item('galacticraftplanets:laser_turret'))
             .duration(1800).EUt(18100).buildAndRegister()
 
-}

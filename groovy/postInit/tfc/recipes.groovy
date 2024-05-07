@@ -1,4 +1,5 @@
 // MODS_LOADED: tfc
+package tfc
 
 import classes.array.Minecraft
 import classes.array.TerraFirmaCraft

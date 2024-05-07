@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.saturn
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def rhea = [
 
 // Удаление рецептов
 for (item in rhea) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

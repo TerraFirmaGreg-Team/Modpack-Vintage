@@ -1,6 +1,8 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.planets
+
 import classes.Function
 
-if (isLoaded("galacticraftcore")) {
 
     // Массивы
     def venus = [
@@ -24,7 +26,7 @@ if (isLoaded("galacticraftcore")) {
 
     // Удаление рецептов
     for (item in venus) {
-        mods.jei.removeAndHide(item)
+        mods.jei.ingredient.removeAndHide(item)
     }
 
     // --- Добавление рецептов
@@ -61,4 +63,3 @@ if (isLoaded("galacticraftcore")) {
             .chancedOutput(metaitem('dustSmallBismuth'), 750, 350)
             .chancedOutput(metaitem('dustTinySulfur'), 650, 250)
             .duration(1250).EUt(1024).buildAndRegister()
-}

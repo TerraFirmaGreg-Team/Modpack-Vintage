@@ -1,5 +1,5 @@
 // MODS_LOADED: architecturecraft
-
+package architecturecraft
 
 // --- Массивы
 
@@ -18,7 +18,7 @@ def removeRecipe = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

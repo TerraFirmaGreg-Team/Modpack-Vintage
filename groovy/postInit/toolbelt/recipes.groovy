@@ -1,4 +1,5 @@
 // MODS_LOADED: toolbelt
+package toolbelt
 
 // --- Добавление рецептов
 

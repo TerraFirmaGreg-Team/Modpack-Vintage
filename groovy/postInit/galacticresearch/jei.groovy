@@ -1,5 +1,5 @@
 // MODS_LOADED: galacticresearch
-
+package galacticresearch
 
 // --- Массивы
 def hideCategory = [
@@ -18,11 +18,11 @@ def removeRecipe = [
 // --- Удаление рецептов
 
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

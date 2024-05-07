@@ -1,5 +1,5 @@
 // MODS_LOADED: galacticresearch
-
+package galacticresearch
 
 // --- Создание рецептов
 

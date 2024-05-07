@@ -1,3 +1,6 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.planets.mars
+
 import classes.Function
 
 if (isLoaded("galacticraftcore")) {
@@ -29,7 +32,7 @@ if (isLoaded("galacticraftcore")) {
 
     // Удаление рецептов
     for (item in mars) {
-        mods.jei.removeAndHide(item)
+        mods.jei.ingredient.removeAndHide(item)
     }
 
 

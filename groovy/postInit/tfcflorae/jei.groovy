@@ -1,4 +1,5 @@
 // MODS_LOADED: tfcflorae
+package tfcflorae
 
 // --- Массивы
 
@@ -42,12 +43,12 @@ def removeRecipesByName = [
 // --- Удаление рецептов
 
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // Поименное удаление рецептов

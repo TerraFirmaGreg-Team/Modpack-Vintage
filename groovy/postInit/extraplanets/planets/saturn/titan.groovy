@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.saturn
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def titan = [
 
 // Удаление рецептов
 for (item in titan) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

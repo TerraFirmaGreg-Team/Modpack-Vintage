@@ -1,7 +1,9 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.rockets
+
 import gregtech.api.metatileentity.multiblock.CleanroomType
 
 
-if (isLoaded("galacticraftcore")) {
 
     // --- Массивы
 
@@ -120,4 +122,3 @@ if (isLoaded("galacticraftcore")) {
                     metaitem('dustTinyStainlessSteel'))
             .explosivesAmount(6)
             .duration(20).EUt(30).buildAndRegister()
-}

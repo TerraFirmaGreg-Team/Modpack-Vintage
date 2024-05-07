@@ -1,4 +1,5 @@
 // MODS_LOADED: extraplanets
+package extraplanets
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import classes.array.Minecraft

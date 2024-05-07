@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets
+
 import classes.Function
 
 // Массивы
@@ -14,7 +17,7 @@ def pluto = [
 
 // Удаление рецептов
 for (item in pluto) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

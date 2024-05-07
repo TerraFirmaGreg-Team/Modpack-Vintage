@@ -1,4 +1,5 @@
 // MODS_LOADED: nae2
+package nae2
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import classes.array.Minecraft

@@ -1,4 +1,5 @@
 // MODS_LOADED: opencomputers
+package opencomputers
 
 // --- Добавление рецептов
 

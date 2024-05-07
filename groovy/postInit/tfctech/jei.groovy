@@ -1,4 +1,5 @@
 // MODS_LOADED: tfctech
+package tfctech
 
 // --- Массивы
 
@@ -219,7 +220,7 @@ def removeRecipesByName = [
 // --- Удаление рецептов
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

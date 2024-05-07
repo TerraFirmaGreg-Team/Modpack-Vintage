@@ -1,5 +1,5 @@
 // MODS_LOADED: enderstorage
-
+package enderstorage
 
 // --- Массивы
 

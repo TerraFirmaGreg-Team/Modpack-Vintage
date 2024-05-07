@@ -1,3 +1,5 @@
+package classes
+
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.api.GTValues
 

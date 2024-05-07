@@ -1,4 +1,4 @@
-
+package classes.array
 
 public class GregTech {
     // - GT Dusts for Raw Stones Array

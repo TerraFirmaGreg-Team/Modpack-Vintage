@@ -1,5 +1,5 @@
 // MODS_LOADED: opencomputers
-
+package opencomputers
 
 // --- Массивы
 
@@ -16,5 +16,5 @@ def hide = [
 // --- Удаление рецептов
 
 for (item in hide) {
-    mods.jei.hide(item)
+    mods.jei.ingredient.hide(item)
 }

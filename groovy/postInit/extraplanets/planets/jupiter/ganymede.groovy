@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.jupiter
+
 import classes.Function
 
 // Массивы
@@ -11,7 +14,7 @@ def ganymede = [
 
 // Удаление рецептов
 for (item in ganymede) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

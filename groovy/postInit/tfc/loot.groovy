@@ -1,3 +1,5 @@
+package tfc
+
 import com.cleanroommc.groovyscript.event.LootTablesLoadedEvent
 
 event_manager.listen { LootTablesLoadedEvent event ->

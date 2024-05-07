@@ -1,6 +1,8 @@
+// MODS_LOADED: galacticraftcore
+package galacticraftcore.planets
+
 import classes.Function
 
-if (isLoaded("galacticraftcore")) {
 
     // Массивы
     def moon = [
@@ -19,7 +21,7 @@ if (isLoaded("galacticraftcore")) {
 
     // Удаление рецептов
     for (item in moon) {
-        mods.jei.removeAndHide(item)
+        mods.jei.ingredient.removeAndHide(item)
     }
 
 
@@ -90,4 +92,3 @@ if (isLoaded("galacticraftcore")) {
             .inputs(metaitem('plateMeteoricIron') * 9)
             .outputs(metaitem('plateDenseMeteoricIron'))
             .duration(100).EUt(48).buildAndRegister()
-}

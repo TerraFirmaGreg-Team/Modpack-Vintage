@@ -1,5 +1,6 @@
 // MODS_LOADED: extraplanets
-// MODS_LOADED: extraplanets
+package extraplanets
+
 // --- Массивы
 
 // Categories
@@ -263,15 +264,15 @@ def removeRecipesByName = [
 // --- Удаление рецептов
 
 for (name in hideCategory) {
-    mods.jei.hideCategory(name)
+    mods.jei.category.hideCategory(name)
 }
 
 for (item in hide) {
-    mods.jei.hide(item)
+    mods.jei.ingredient.hide(item)
 }
 
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 for (item in removeRecipe) {

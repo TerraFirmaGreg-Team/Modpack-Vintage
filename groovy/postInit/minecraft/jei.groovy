@@ -1,3 +1,5 @@
+package minecraft
+
 // --- Массивы
 
 def hideCategory = [
@@ -237,17 +239,17 @@ def removeByOutputFurnace = [
 // --- Удаление рецептов
 
 for (item in hideCategory) {
-    mods.jei.hideCategory(item)
+    mods.jei.category.hideCategory(item)
 }
 
 // Удаление рецептов и скрытие предметов
 for (item in removeAndHide) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // Удаление рецептов печи по входу
 for (item in hideItem) {
-    mods.jei.hide(item)
+    mods.jei.ingredient.hide(item)
 }
 
 // Удаление рецептов

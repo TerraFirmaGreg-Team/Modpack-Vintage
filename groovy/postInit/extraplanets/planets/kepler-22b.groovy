@@ -1,3 +1,6 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets
+
 import classes.Function
 
 // Массивы
@@ -21,7 +24,7 @@ def kepler22b = [
 
 // Удаление рецептов
 for (item in kepler22b) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов

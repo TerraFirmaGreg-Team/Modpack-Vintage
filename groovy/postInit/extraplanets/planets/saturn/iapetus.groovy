@@ -1,3 +1,7 @@
+// MODS_LOADED: extraplanets
+package extraplanets.planets.saturn
+
+
 import classes.Function
 
 // Массивы
@@ -11,7 +15,7 @@ def iapetus = [
 
 // Удаление рецептов
 for (item in iapetus) {
-    mods.jei.removeAndHide(item)
+    mods.jei.ingredient.removeAndHide(item)
 }
 
 // --- Добавление рецептов
