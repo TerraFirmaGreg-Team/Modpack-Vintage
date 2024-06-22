@@ -243,20 +243,20 @@ mods.gregtech.chemical_bath.recipeBuilder()
         .duration(100).EUt(7).buildAndRegister()
 
 // Саженцы -> Палки
-mods.gregtech.lathe.recipeBuilder()
-        .inputs(ore('treeSapling'))
-        .outputs(
-                item('minecraft:stick'),
-                metaitem('dustTinyWood'))
-        .duration(16).EUt(7).buildAndRegister()
+// mods.gregtech.lathe.recipeBuilder()
+//         .inputs(ore('treeSapling'))
+//         .outputs(
+//                 item('minecraft:stick'),
+//                 metaitem('dustTinyWood'))
+//         .duration(16).EUt(7).buildAndRegister()
 
 // Полублок -> Миска
-mods.gregtech.lathe.recipeBuilder()
-        .inputs(ore('slabWood'))
-        .outputs(
-                item('minecraft:bowl'),
-                metaitem('dustTinyWood'))
-        .duration(16).EUt(7).buildAndRegister()
+// mods.gregtech.lathe.recipeBuilder()
+//         .inputs(ore('slabWood'))
+//         .outputs(
+//                 item('minecraft:bowl'),
+//                 metaitem('dustTinyWood'))
+//         .duration(16).EUt(7).buildAndRegister()
 
 // Раздатчик
 mods.gregtech.assembler.recipeBuilder()
@@ -330,10 +330,10 @@ mods.gregtech.compressor.recipeBuilder()
         .duration(300).EUt(2).buildAndRegister()
 
 // Базальтовая земля
-mods.gregtech.macerator.recipeBuilder()
-        .inputs(metaitem('bio_chaff'))
-        .outputs(item('tfc:dirt/basalt'))
-        .duration(300).EUt(2).buildAndRegister()
+// mods.gregtech.macerator.recipeBuilder()
+//         .inputs(metaitem('bio_chaff'))
+//         .outputs(item('tfc:dirt/basalt'))
+//         .duration(300).EUt(2).buildAndRegister()
 
 // Кварцитовый песок -> Алмазы и тд.
 mods.gregtech.centrifuge.recipeBuilder()
@@ -344,11 +344,11 @@ mods.gregtech.centrifuge.recipeBuilder()
         .duration(275).EUt(30).buildAndRegister()
 
 // Нефтеносные пески -> Базальтовый песок, Нефть 
-mods.gregtech.centrifuge.recipeBuilder()
-        .inputs(ore('oreOilsands'))
-        .chancedOutput(item('tfc:sand/basalt'), 5000, 5000)
-        .fluidOutputs(fluid('oil') * 500)
-        .duration(200).EUt(5).buildAndRegister()
+// mods.gregtech.centrifuge.recipeBuilder()
+//         .inputs(ore('oreOilsands'))
+//         .chancedOutput(item('tfc:sand/basalt'), 5000, 5000)
+//         .fluidOutputs(fluid('oil') * 500)
+//         .duration(200).EUt(5).buildAndRegister()
 
 // Песок -> Кварцитовая пыль
 mods.gregtech.macerator.recipeBuilder()

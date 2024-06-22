@@ -39,17 +39,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:1'))
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                item('opencomputers:capacitor'),
-                item('opencomputers:material:6') * 2,
-                metaitem('boltRedAlloy') * 4)
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs(item('opencomputers:upgrade:1'))
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 item('opencomputers:capacitor'),
+//                 item('opencomputers:material:6') * 2,
+//                 metaitem('boltRedAlloy') * 4)
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs(item('opencomputers:upgrade:1'))
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Battery Upgrade - Tier 2
 mods.gregtech.assembler.recipeBuilder()
@@ -63,17 +63,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:2'))
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.advanced'),
-                metaitem('plateStainlessSteel') * 2,
-                item('opencomputers:capacitor') * 2,
-                ore('componentTransistor') * 2,
-                metaitem('boltSilver') * 8)
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:2')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.advanced'),
+//                 metaitem('plateStainlessSteel') * 2,
+//                 item('opencomputers:capacitor') * 2,
+//                 ore('componentTransistor') * 2,
+//                 metaitem('boltSilver') * 8)
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:2')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Battery Upgrade - Tier 3
 mods.gregtech.assembler.recipeBuilder()
@@ -87,18 +87,18 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:3')])
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.extreme'),
-                metaitem('plateTungstenSteel') * 2,
-                item('opencomputers:capacitor') * 4,
-                metaitem('component.advanced_smd.transistor'),
-                metaitem('boltElectrum') * 16
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:3')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.extreme'),
+//                 metaitem('plateTungstenSteel') * 2,
+//                 item('opencomputers:capacitor') * 4,
+//                 metaitem('component.advanced_smd.transistor'),
+//                 metaitem('boltElectrum') * 16
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:3')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Chunkloader Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -111,16 +111,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:4'))
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                ore('circuitEv'),
-                item('opencomputers:material:9'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs(item('opencomputers:upgrade:4'))
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 ore('circuitEv'),
+//                 item('opencomputers:material:9'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs(item('opencomputers:upgrade:4'))
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Card Container - Tier 1
 mods.gregtech.assembler.recipeBuilder()
@@ -133,16 +133,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:5')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                item('opencomputers:material:5'),
-                metaitem('plateAluminium') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:7'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:5')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 item('opencomputers:material:5'),
+//                 metaitem('plateAluminium') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:7'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:5')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Card Container - Tier 2
 mods.gregtech.assembler.recipeBuilder()
@@ -155,16 +155,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:6'))
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                item('opencomputers:material:5'),
-                metaitem('plateStainlessSteel') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:8'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:6')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 item('opencomputers:material:5'),
+//                 metaitem('plateStainlessSteel') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:8'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:6')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Card Container - Tier 3
 mods.gregtech.assembler.recipeBuilder()
@@ -177,16 +177,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:7'))
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                item('opencomputers:material:5'),
-                metaitem('plateTitanium') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:9'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:7')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 item('opencomputers:material:5'),
+//                 metaitem('plateTitanium') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:9'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:7')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Upgrade Container - Tier 1
 mods.gregtech.assembler.recipeBuilder()
@@ -199,16 +199,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:8')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:7'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs(item('opencomputers:upgrade:8'))
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:7'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs(item('opencomputers:upgrade:8'))
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Upgrade Container - Tier 2
 mods.gregtech.assembler.recipeBuilder()
@@ -221,16 +221,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:9')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.advanced'),
-                metaitem('plateStainlessSteel') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:8'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:8')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.advanced'),
+//                 metaitem('plateStainlessSteel') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:8'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:8')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Upgrade Container - Tier 3
 mods.gregtech.assembler.recipeBuilder()
@@ -243,16 +243,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:10'))
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.extreme'),
-                metaitem('plateTitanium') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:9'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:8')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.extreme'),
+//                 metaitem('plateTitanium') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:9'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:8')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Disassembler
 mods.gregtech.assembler.recipeBuilder()
@@ -332,16 +332,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:11')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                item('opencomputers:material:8'),
-                item('appliedenergistics2:part', 360)
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:11')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 item('opencomputers:material:8'),
+//                 item('appliedenergistics2:part', 360)
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:11')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Database Upgrade - Tier 1
 mods.gregtech.assembler.recipeBuilder()
@@ -355,17 +355,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:12')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                item('opencomputers:tool'),
-                item('opencomputers:storage:2'),
-                item('opencomputers:material:8') * 2
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:12')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 item('opencomputers:tool'),
+//                 item('opencomputers:storage:2'),
+//                 item('opencomputers:material:8') * 2
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:12')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Database Upgrade - Tier 2
 mods.gregtech.assembler.recipeBuilder()
@@ -379,17 +379,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:13')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.advanced'),
-                item('opencomputers:tool'),
-                item('opencomputers:storage:3'),
-                item('opencomputers:material:9') * 2
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:13')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.advanced'),
+//                 item('opencomputers:tool'),
+//                 item('opencomputers:storage:3'),
+//                 item('opencomputers:material:9') * 2
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:13')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Database Upgrade - Tier 3
 mods.gregtech.assembler.recipeBuilder()
@@ -403,17 +403,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:14')])
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.extreme'),
-                item('opencomputers:tool'),
-                item('opencomputers:storage:4'),
-                item('opencomputers:material:10') * 2
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:14')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.extreme'),
+//                 item('opencomputers:tool'),
+//                 item('opencomputers:storage:4'),
+//                 item('opencomputers:material:10') * 2
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:14')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Experience Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -426,16 +426,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:15')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.advanced'),
-                item('opencomputers:tool'),
-                item('opencomputers:material:9'),
-                item('minecraft:experience_bottle'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:15')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.advanced'),
+//                 item('opencomputers:tool'),
+//                 item('opencomputers:material:9'),
+//                 item('minecraft:experience_bottle'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:15')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Hover Upgrade - Tier 1
 mods.gregtech.assembler.recipeBuilder()
@@ -450,18 +450,18 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:27')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                metaitem('rotorSteel') * 4,
-                item('opencomputers:material:8') * 2,
-                metaitem('electric.motor.mv')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:27')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 metaitem('rotorSteel') * 4,
+//                 item('opencomputers:material:8') * 2,
+//                 metaitem('electric.motor.mv')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:27')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Hover Upgrade - Tier 2
 mods.gregtech.assembler.recipeBuilder()
@@ -476,18 +476,18 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:28')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.advanced'),
-                metaitem('plateAluminium') * 2,
-                metaitem('rotorStainlessSteel') * 4,
-                item('opencomputers:material:9') * 2,
-                metaitem('electric.motor.hv')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:28')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.advanced'),
+//                 metaitem('plateAluminium') * 2,
+//                 metaitem('rotorStainlessSteel') * 4,
+//                 item('opencomputers:material:9') * 2,
+//                 metaitem('electric.motor.hv')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:28')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Inventory Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -501,17 +501,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:17')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(2)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                ore('chestWood'),
-                item('opencomputers:material:8')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:17')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(2)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 ore('chestWood'),
+//                 item('opencomputers:material:8')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:17')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Inventory Controller Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -524,16 +524,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:18')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(2)
-        .inputs([
-                item('opencomputers:upgrade:17'),
-                metaitem('plateStainlessSteel') * 2,
-                item('opencomputers:material:9')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:18')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(2)
+//         .inputs([
+//                 item('opencomputers:upgrade:17'),
+//                 metaitem('plateStainlessSteel') * 2,
+//                 item('opencomputers:material:9')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:18')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Tank Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -546,16 +546,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:23')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(2)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                metaitem('drum.aluminium'),
-                item('opencomputers:material:8')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:23')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(2)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('drum.aluminium'),
+//                 item('opencomputers:material:8')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:23')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Tank Controller Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -568,16 +568,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:24')])
         .duration(100).EUt(480).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(2)
-        .inputs([
-                item('opencomputers:upgrade:23'),
-                metaitem('plateStainlessSteel') * 2,
-                item('opencomputers:material:9')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:24')])
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(2)
+//         .inputs([
+//                 item('opencomputers:upgrade:23'),
+//                 metaitem('plateStainlessSteel') * 2,
+//                 item('opencomputers:material:9')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:24')])
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Leash Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -590,16 +590,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:26')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                item('opencomputers:material:11'),
-                item('minecraft:lead') * 4
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:26')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 item('opencomputers:material:11'),
+//                 item('minecraft:lead') * 4
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:26')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // MFU
 mods.gregtech.assembler.recipeBuilder()
@@ -612,16 +612,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:30')])
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                item('opencomputers:adapter'),
-                item('opencomputers:card:9') * 2,
-                item('opencomputers:material:9')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:30')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 item('opencomputers:adapter'),
+//                 item('opencomputers:card:9') * 2,
+//                 item('opencomputers:material:9')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:30')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Navigation Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -634,16 +634,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:19')])
         .duration(100).EUt(1920).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.extreme'),
-                item('opencomputers:material:9') * 2,
-                item('minecraft:map')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:19')])
-        .duration(100).EUt(1920).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.extreme'),
+//                 item('opencomputers:material:9') * 2,
+//                 item('minecraft:map')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:19')])
+//         .duration(100).EUt(1920).buildAndRegister()
 
 // Piston Upgrade
 crafting.addShapeless(item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
@@ -656,15 +656,15 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:20'))
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(
-                metaitem('circuit_board.plastic'),
-                metaitem('drum.aluminium'),
-                item('opencomputers:material:8'))
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:20')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs(
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('drum.aluminium'),
+//                 item('opencomputers:material:8'))
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:20')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Sticky Piston Upgrade
 crafting.addShapeless(item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), metaitem('rubber_drop')])
@@ -682,17 +682,17 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs([item('opencomputers:upgrade:21')])
         .duration(100).EUt(120).buildAndRegister()
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.plastic'),
-                metaitem('plateAluminium') * 2,
-                item('minecraft:sign'),
-                item('opencomputers:material:8') * 2
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs([item('opencomputers:upgrade:21')])
-        .duration(100).EUt(120).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.plastic'),
+//                 metaitem('plateAluminium') * 2,
+//                 item('minecraft:sign'),
+//                 item('opencomputers:material:8') * 2
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs([item('opencomputers:upgrade:21')])
+//         .duration(100).EUt(120).buildAndRegister()
 
 // Tractor Beam Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -705,17 +705,16 @@ mods.gregtech.assembler.recipeBuilder()
         .fluidInputs(fluid('tin') * 144)
         .outputs(item('opencomputers:upgrade:25'))
         .duration(100).EUt(480).buildAndRegister()
-
-mods.gregtech.assembler.recipeBuilder()
-        .circuitMeta(1)
-        .inputs([
-                metaitem('circuit_board.advanced'),
-                metaitem('item_magnet.hv'),
-                item('opencomputers:material:9')
-        ])
-        .fluidInputs(fluid('soldering_alloy') * 72)
-        .outputs(item('opencomputers:upgrade:25'))
-        .duration(100).EUt(480).buildAndRegister()
+// mods.gregtech.assembler.recipeBuilder()
+//         .circuitMeta(1)
+//         .inputs([
+//                 metaitem('circuit_board.advanced'),
+//                 metaitem('item_magnet.hv'),
+//                 item('opencomputers:material:9')
+//         ])
+//         .fluidInputs(fluid('soldering_alloy') * 72)
+//         .outputs(item('opencomputers:upgrade:25'))
+//         .duration(100).EUt(480).buildAndRegister()
 
 // Microcontroller Case - Tier 1
 mods.gregtech.assembler.recipeBuilder()

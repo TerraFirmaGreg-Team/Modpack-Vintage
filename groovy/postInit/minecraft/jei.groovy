@@ -386,11 +386,11 @@ mods.gregtech.cutter.removeByInput(7, [item('minecraft:stonebrick')], [fluid('lu
 // Cracked Stone Bricks * 1
 mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:stonebrick')], null)
 // Stone Brick Stairs * 4
-mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
+//mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
 // Stone Brick Stairs * 4
-mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
+//mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
 // Stone Brick Stairs * 4
-mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
+//mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:stonebrick') * 6], null)
 // Sandstone Stairs * 4
 mods.gregtech.assembler.removeByInput(1, [metaitem('circuit.integrated').withNbt(["Configuration": 7]), item('minecraft:sandstone') * 6], null)
 // Sandstone Slab * 2
@@ -412,9 +412,9 @@ mods.gregtech.cutter.removeByInput(7, [item('minecraft:red_sandstone')], [fluid(
 // Red Sandstone Slab * 2
 mods.gregtech.cutter.removeByInput(7, [item('minecraft:red_sandstone')], [fluid('lubricant')])
 // Red Sand * 1
-mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:red_sandstone')], null)
+//mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:red_sandstone')], null)
 // Red Sand * 1
-mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:red_sandstone')], null)
+//mods.gregtech.forge_hammer.removeByInput(2, [item('minecraft:red_sandstone')], null)
 // Red Sandstone * 1
 mods.gregtech.assembler.removeByInput(4, [item('minecraft:red_sandstone', 2), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
 // Chiseled Red Sandstone * 1

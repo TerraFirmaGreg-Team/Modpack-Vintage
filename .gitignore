@@ -25,7 +25,6 @@ crash-reports/
 vintagefix/
 logs/
 saves/
-local/
 cache/
 XaeroWaypoints/
 XaeroWorldMap/
@@ -71,6 +70,7 @@ realms_persistence.json
 minecraftinstance.json
 knownkeys.txt
 hei_bookmarks.ini
+local/ftbutilities/players.txt
 
 # Server Pack
 !.github/buildtools/serverpack/forge-auto-install.txt
@@ -80,5 +80,3 @@ hei_bookmarks.ini
 !.github/buildtools/serverpack/server-icon.png
 !.github/buildtools/serverpack/start_server.bat
 .github/buildtools/serverpack/*
-
-
