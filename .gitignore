@@ -1,13 +1,22 @@
+# Extensions
+**/*.log
+**/*.gz
+**/*.DS_Store
+**/*.jar
+**/*.code-workspace
+**/*.zip
+
 # Configs
+config/jei/world/
+config/gregtech/terminal/
+config/roughlyenoughitems/
+config/fantasticlib/
+
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/cherishedworlds/favorites.dat
-config/roughlyenoughitems/
-config/jei/world/
 config/jei/worldSettings.cfg
-config/fantasticlib/
 config/JustEnoughCalculation/record.json
-config/gregtech/terminal/
 config/splash.properties
 config/customloadingscreen_timings.nbt
 config/simplelogin.cfg
@@ -18,65 +27,77 @@ config/fancymenu/menu_identifiers.db
 config/fancymenu/user_variables.db
 config/xaerominimap.txt
 config/xaeroworldmap.txt
+config/oculus.properties
+config/fml.toml
+config/forge-client.toml
+config/xaerominimap_entities.json
+config/voicechat/username-cache.json
+config/xaerominimap.txt
+config/xaeroworldmap.txt
 
-# .minecraft
-.mixin.out
+# Client data
+.vscode/
+.idea/
+.bobby/
+.mixin.out/
+classOut/
+backups/
+profileImage/
 crash-reports/
-vintagefix/
 logs/
 saves/
-cache/
-XaeroWaypoints/
-XaeroWorldMap/
-XaeroWaypoints_*/
-CustomSkinLoader/
-screenshots/
-shaderpacks/
-EverlastingSkins/
+ldlib/
+local/
+vintagefix/
+modernfix/
+XaeroWaypoints*/
+XaeroWorldMap*/
+xaero/
 visualores/
 mods-carryover/
 fancymenu_data/
 fancymenu_setups/
 downloads/
-profileImage
+CustomSkinLoader/
+EverlastingSkins/
+cache/
+screenshots/
+shaderpacks/
+chiselsandbits/
 
-
-# Extensions
-**/*.log
-**/*.gz
-**/*.DS_Store
-**/*.jar
-*.code-workspace
-*.zip
-
-# Client data
-.idea/
 .curseclient
 .sl_password
-sl_password.txt
-optionsof.txt
 options.txt
-optionsshaders.txt
 patchouli_data.json
 usernamecache.json
 usercache.json
 rhino.local.properties
-OpenComputersMod-*
 profile.json
+emi.json
+sl_password.txt
 servers.dat
 servers.dat_old
 cherishedworlds-favorites.dat
 realms_persistence.json
 minecraftinstance.json
 knownkeys.txt
+optionsof.txt
+optionsshaders.txt
+OpenComputersMod-*
 hei_bookmarks.ini
-local/ftbutilities/players.txt
 
-# Server Pack
+
+
+# Server data
+.github/buildtools/serverpack/
+
 !.github/buildtools/serverpack/forge-auto-install.txt
-!.github/buildtools/serverpack/minecraft_server.jar
 !.github/buildtools/serverpack/server.properties
 !.github/buildtools/serverpack/server_starter.conf
 !.github/buildtools/serverpack/server-icon.png
 !.github/buildtools/serverpack/start_server.bat
-.github/buildtools/serverpack/*
+!.github/buildtools/serverpack/user_jvm_args.txt
+!.github/buildtools/serverpack/minecraft_server.jar
+
+
+
