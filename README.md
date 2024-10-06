@@ -18,7 +18,7 @@
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/issues">Request Features</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/projects/9">Roadmap</a>
+    <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/9">Roadmap</a>
   </p>
 </div>
 <br/>
