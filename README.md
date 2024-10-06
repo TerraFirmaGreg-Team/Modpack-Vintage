@@ -1,29 +1,30 @@
-# TerraFirmaGreg - 1.12.x
+# TerraFirmaGreg - Vintage
 
 <div align="center">
-  <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/4980f6f22fd8a7ecab65230b87964c8db23efbc2/branding/logo.png?raw=true" alt="Logo" height="75">
+  <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="75">
   </a>
   <br/>
-  <a href="https://discord.gg/terrafirmagreg">
+
+  <a href="https://discord.com/invite/AEaCzCTUwQ">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.12.2">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
   <br/>
   <p align="center">
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/wiki">Explore the wiki</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage/wiki">Explore the wiki</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/issues">Report Bugs</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage/issues">Report Bugs</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/issues">Request Features</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage/issues">Request Features</a>
     ·
     <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/9">Roadmap</a>
   </p>
 </div>
 <br/>
 
-![logotfg](https://user-images.githubusercontent.com/52341158/131987786-bf99e1af-318c-4ed4-a6f8-c4617d692adb.png)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/terrafirmagreg-og.png?raw=true)
 
 ***
 
