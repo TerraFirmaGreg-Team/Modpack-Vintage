@@ -6,8 +6,8 @@
   </a>
   <br/>
 
-  <a href="https://discord.com/invite/AEaCzCTUwQ">
- <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
+  <a href="https://discord.gg/AEaCzCTUwQ">
+  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.12.2">
   <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
