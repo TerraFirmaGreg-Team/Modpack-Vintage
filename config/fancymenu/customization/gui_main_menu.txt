@@ -201,7 +201,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = joinserver;legacy.terrafirmagreg.su%btnaction_splitter_fm%
+  buttonaction = joinserver;vintage.terrafirmagreg.su%btnaction_splitter_fm%
   backgroundhovered = groovy/assets/terrafirmagreg/textures/gui/button_hover_98x20.png
   label = Offical Server
   loopbackgroundanimations = true
