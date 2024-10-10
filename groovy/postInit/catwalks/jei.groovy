@@ -1,5 +1,5 @@
 // MODS_LOADED: catwalks
-package catwalks
+
 
 // --- Массивы
 

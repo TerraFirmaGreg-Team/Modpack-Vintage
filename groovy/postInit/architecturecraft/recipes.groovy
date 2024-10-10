@@ -1,5 +1,5 @@
 // MODS_LOADED: architecturecraft
-package architecturecraft
+
 
 // --- Добавление рецептов
 

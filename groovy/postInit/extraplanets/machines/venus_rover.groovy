@@ -1,5 +1,5 @@
 // MODS_LOADED: extraplanets
-package extraplanets.machines
+
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 

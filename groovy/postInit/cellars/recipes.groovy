@@ -1,5 +1,5 @@
 // MODS_LOADED: cellars
-package cellars
+
 
 // --- Добавление рецептов
 

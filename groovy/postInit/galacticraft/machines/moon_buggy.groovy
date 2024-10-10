@@ -1,5 +1,5 @@
 // MODS_LOADED: galacticraftcore
-package galacticraftcore.machines
+
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 

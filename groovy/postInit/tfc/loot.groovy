@@ -1,4 +1,4 @@
-package tfc
+
 
 import com.cleanroommc.groovyscript.event.LootTablesLoadedEvent
 

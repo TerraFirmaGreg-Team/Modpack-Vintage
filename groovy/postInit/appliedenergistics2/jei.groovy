@@ -1,6 +1,6 @@
 
 // MODS_LOADED: appliedenergistics2
-package appliedenergistics2
+
 
 // --- Массивы
 def hideCategory = [

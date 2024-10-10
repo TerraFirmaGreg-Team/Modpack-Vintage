@@ -1,5 +1,5 @@
 // MODS_LOADED: galacticraftcore
-package galacticraftcore.planets
+
 
 import classes.Function
 import gregtech.api.GTValues

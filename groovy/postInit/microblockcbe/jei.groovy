@@ -1,5 +1,5 @@
 // MODS_LOADED: microblockcbe
-package microblockcbe
+
 
 // --- Массивы
 

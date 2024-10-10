@@ -1,5 +1,5 @@
 // MODS_LOADED: ae2stuff
-package ae2stuff
+
 
 // --- Массивы
 def hide = [

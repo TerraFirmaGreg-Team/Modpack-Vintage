@@ -1,5 +1,5 @@
 // MODS_LOADED: tfcthings
-package tfcthings
+
 
 // Серебрянные короны
 crafting.addShapeless("tfg/tfcthings/platinum_crown/garnet", item('tfcthings:crown/platinum_garnet'), [ore('toolHammer'), item('tfcthings:crown/platinum_empty'), metaitem('gemExquisiteGarnetRed')])

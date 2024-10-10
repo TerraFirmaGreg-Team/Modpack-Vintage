@@ -1,5 +1,5 @@
 // MODS_LOADED: opencomputers
-package opencomputers
+
 
 // --- Массивы
 

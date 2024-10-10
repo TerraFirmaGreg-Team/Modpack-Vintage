@@ -1,5 +1,6 @@
 // MODS_LOADED: minecraft
 
+
 // --- Удаление
 
 ore('grass').remove(item('minecraft:grass'))

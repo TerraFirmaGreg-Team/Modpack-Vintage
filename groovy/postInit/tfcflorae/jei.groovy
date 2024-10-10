@@ -1,5 +1,5 @@
 // MODS_LOADED: tfcflorae
-package tfcflorae
+
 
 // --- Массивы
 

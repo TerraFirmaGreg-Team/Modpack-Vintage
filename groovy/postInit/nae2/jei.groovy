@@ -1,5 +1,5 @@
 // MODS_LOADED: nae2
-package nae2
+
 
 // --- Массивы
 def hide = [

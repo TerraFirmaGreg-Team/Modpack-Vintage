@@ -1,5 +1,5 @@
 // MODS_LOADED: firmalife
-package firmalife
+
 
 // --- Массивы
 

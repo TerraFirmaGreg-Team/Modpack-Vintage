@@ -1,5 +1,5 @@
 // MODS_LOADED: ftbquests
-package ftbquests
+
 
 // --- Массивы
 def hideCategory = [

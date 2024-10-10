@@ -1,5 +1,5 @@
 // MODS_LOADED: extraplanets
-package extraplanets.planets.neptune
+
 
 import classes.Function
 
