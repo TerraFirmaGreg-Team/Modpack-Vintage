@@ -67,6 +67,7 @@ jobs:
           VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" ./.github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
 
       - name: Export CurseForge
         run: |
@@ -112,7 +113,7 @@ jobs:
         run: |
           mkdir -p .minecraft
           mkdir -p flame
-          mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
+          mv -vf {config,groovy,scripts,mods,bansoukou,resourcepacks} .minecraft/
           mv -vf .github/buildtools/modpack/mmc-pack.json ./
           mv -vf .github/buildtools/modpack/instance.cfg ./
           mv -vf .github/buildtools/modpack/modlist.html ./
@@ -144,6 +145,14 @@ jobs:
               echo "username=Xikaro"; 
               echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Export serverpack
         run: |
@@ -282,7 +291,7 @@ jobs:
       - name: Send Discord message
         uses: tsickert/discord-webhook@v6.0.0
         with:
-          webhook-url: ${{secrets.RELEASES_1_12}}
+          webhook-url: ${{ secrets.RELEASES_1_12 }}
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
           embed-title: Release ${{ needs.info.outputs.project_version }}
