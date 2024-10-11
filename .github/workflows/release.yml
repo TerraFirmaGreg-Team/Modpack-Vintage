@@ -25,7 +25,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
 
       - name: Get tag
         id: project_version
@@ -59,7 +59,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
 
       - name: Replace strings
         shell: bash
@@ -78,7 +78,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip manifest.json modlist.html overrides
 
       - name: Upload zip CurseForge
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
@@ -90,7 +90,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
 
       - name: Replace strings
         shell: bash
@@ -123,7 +123,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip multimc
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
@@ -135,7 +135,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
 
       - name: Download Mods
         run: |
@@ -162,7 +162,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip .minecraft/*
 
       - name: Upload zip
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
@@ -249,7 +249,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
 
       - name: Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
