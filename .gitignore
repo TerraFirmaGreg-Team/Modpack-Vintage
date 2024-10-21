@@ -40,6 +40,7 @@ config/xaeroworldmap.txt
 .idea/
 .bobby/
 .mixin.out/
+!bansoukou/**.zip
 classOut/
 backups/
 profileImage/
