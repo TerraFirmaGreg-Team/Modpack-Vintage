@@ -12,6 +12,13 @@
     "client_overrides": [
         "resourcepacks"
     ],
+    "server_overrides": [
+        "forge-auto-install.txt",
+        "minecraft_server.jar",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat"
+    ],
     "paths": {
         "mods": "mods",
         "resource_packs": "resourcepacks"
