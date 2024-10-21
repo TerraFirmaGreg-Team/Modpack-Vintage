@@ -1,0 +1,16 @@
+{
+    "name": "Modpack-Vintage ",
+    "version": "4.5.3",
+    "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.12.x.",
+    "author": "Exception, Xikaro",
+    "overrides": [
+        "bansoukou",
+        "config",
+        "groovy",
+        "resourcepacks",
+        "scripts"
+    ],
+    "server_overrides": [],
+    "client_overrides": [],
+    "projects": {}
+}
