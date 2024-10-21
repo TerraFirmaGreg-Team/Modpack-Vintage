@@ -6,6 +6,10 @@
 **/*.code-workspace
 **/*.zip
 
+# Pakku
+build/
+pakku.jar
+
 # Configs
 config/jei/world/
 config/gregtech/terminal/
@@ -35,7 +39,7 @@ config/voicechat/username-cache.json
 config/xaerominimap.txt
 config/xaeroworldmap.txt
 
-# Client data
+# .minecraft
 .vscode/
 .idea/
 .bobby/
@@ -66,6 +70,7 @@ screenshots/
 shaderpacks/
 chiselsandbits/
 
+# Client data
 .curseclient
 .sl_password
 options.txt
@@ -99,6 +104,3 @@ hei_bookmarks.ini
 !.github/buildtools/serverpack/start_server.bat
 !.github/buildtools/serverpack/user_jvm_args.txt
 !.github/buildtools/serverpack/minecraft_server.jar
-
-
-

@@ -12,6 +12,124 @@
     "client_overrides": [
         "resourcepacks"
     ],
-    "server_overrides": [],
-    "projects": {}
+    "paths": {
+        "mods": "mods",
+        "resource_packs": "resourcepacks"
+    },
+    "projects": {
+        "ambient-environment": {
+            "side": "CLIENT"
+        },
+        "ambientsounds": {
+            "side": "CLIENT"
+        },
+        "better-chat": {
+            "side": "CLIENT"
+        },
+        "blur": {
+            "side": "CLIENT"
+        },
+        "better-ping-display": {
+            "side": "CLIENT"
+        },
+        "better-third-person": {
+            "side": "CLIENT"
+        },
+        "chunk-animator": {
+            "side": "CLIENT"
+        },
+        "craftpresence": {
+            "side": "CLIENT"
+        },
+        "better-loading-screen": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "dynamic-darkness": {
+            "side": "CLIENT"
+        },
+        "dynamic-lights": {
+            "side": "CLIENT"
+        },
+        "dynamic-surroundings": {
+            "side": "CLIENT"
+        },
+        "fancymenu": {
+            "side": "CLIENT"
+        },
+        "farsight": {
+            "side": "CLIENT"
+        },
+        "fps-reducer": {
+            "side": "CLIENT"
+        },
+        "inventory-hud-forge": {
+            "side": "CLIENT"
+        },
+        "itemphysic-lite": {
+            "side": "CLIENT"
+        },
+        "legendary-tooltips": {
+            "side": "CLIENT"
+        },
+        "konkrete": {
+            "side": "CLIENT"
+        },
+        "more-overlays": {
+            "side": "CLIENT"
+        },
+        "my-server-is-compatible": {
+            "side": "CLIENT"
+        },
+        "mouse-tweaks-unofficial": {
+            "side": "CLIENT"
+        },
+        "options-enforcer": {
+            "side": "CLIENT"
+        },
+        "particle-culling": {
+            "side": "CLIENT"
+        },
+        "placement-preview": {
+            "side": "CLIENT"
+        },
+        "real-first-person-render": {
+            "side": "CLIENT"
+        },
+        "valkyrie": {
+            "side": "CLIENT"
+        },
+        "wrapfix": {
+            "side": "CLIENT"
+        },
+        "sound-physics-remixin": {
+            "side": "CLIENT"
+        },
+        "tfc-towerheat": {
+            "side": "CLIENT"
+        },
+        "tfc-toohotaroundhere": {
+            "side": "CLIENT"
+        },
+        "keybind-description-fix": {
+            "side": "CLIENT"
+        },
+        "better-quest-pop-up": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "simple-login": {
+            "side": "CLIENT"
+        },
+        "cherished-worlds": {
+            "side": "CLIENT"
+        },
+        "jetif": {
+            "side": "CLIENT"
+        }
+    }
 }
