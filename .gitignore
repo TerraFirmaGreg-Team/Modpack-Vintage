@@ -3,6 +3,7 @@
 **/*.gz
 **/*.DS_Store
 **/*.jar
+**/*.mrpack
 **/*.code-workspace
 **/*.zip
 
@@ -95,12 +96,6 @@ hei_bookmarks.ini
 
 
 # Server data
-.github/buildtools/serverpack/
+pakku/serverpack/
 
-!.github/buildtools/serverpack/forge-auto-install.txt
-!.github/buildtools/serverpack/server.properties
-!.github/buildtools/serverpack/server_starter.conf
-!.github/buildtools/serverpack/server-icon.png
-!.github/buildtools/serverpack/start_server.bat
-!.github/buildtools/serverpack/user_jvm_args.txt
-!.github/buildtools/serverpack/minecraft_server.jar
+
