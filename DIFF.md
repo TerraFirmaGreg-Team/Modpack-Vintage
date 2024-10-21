@@ -1,0 +1,61 @@
+```diff
++ AE2 Crafting Tree - Legacy
++ ArchitectureCraft - Spocel Version
++ Bubbles
++ GT TOP Addition
++ Gregic Probe: CEu
++ PaperFixes
++ StellarCore
++ UniLib
+- ArchitectureCraft - TridentMC Version
+- Baubles-LTS
+- Better Ping Display
+- GregTech Food Option
+- No Advancements
+- TOP Extras
+! Fluid Craft for AE2-2.5.6-r.jar                 -> Fluid Craft for AE2-2.6.6-r.jar
+! ae2-uel-v0.56.3.jar                             -> ae2-uel-v0.56.6.jar
+! Alfheim-1.1.1.jar                               -> Alfheim-1.4.jar
+! _bansoukou-4.3.1.jar                            -> !bansoukou-5.0.0.jar
+! BetterQuestPopup-1.12.2-1.2.0.jar               -> BetterQuestPopup-1.12.2-1.2.1.jar
+! censoredasm5.18.jar                             -> censoredasm5.20.jar
+! Charset-Crafting-0.5.6.6.jar                    -> Charset-Crafting-0.5.6.7.jar
+! !configanytime-2.0.jar                          -> !configanytime-3.0.jar
+! Controlling-3.0.12.2.jar                        -> Controlling-3.0.12.4.jar
+! CraftPresence-2.3.0+1.12.2.jar                  -> CraftPresence-2.5.1+1.12.2-forge.jar
+! CraftTweaker2-1.12-4.1.20.698.jar               -> CraftTweaker2-1.12-4.1.20.700.jar
+! CustomLoadingScreen-1.12.2-1.5.7.jar            -> CustomLoadingScreen-1.12.2-1.5.8.jar
+! CustomSkinLoader_ForgeLegacy-14.19.1.jar        -> CustomSkinLoader_ForgeV1-14.20.jar
+! dropt-1.12.2-1.19.3.jar                         -> dropt-1.12.2-1.19.4.jar
+! EnderStorage-1.12.2-2.5.0.jar                   -> EnderStorage-1.12.2-2.6.3.jar
+! ExtraPlanets-1.12.2-0.7.7.jar                   -> ExtraPlanets-1.12.2-0.8.0.jar
+! Fixeroo-2.0.jar                                 -> Fixeroo-2.3.2.jar
+! GalacticResearch-1.0.9.jar                      -> GalacticResearch-1.1.3.jar
+! gregtech-1.12.2-2.8.6-beta.jar                  -> gregtech-1.12.2-2.8.10-beta.jar
+! GregicalityMultiblocks-1.2.7.jar                -> GregicalityMultiblocks-1.2.11.jar
+! groovyscript-0.7.3.jar                          -> groovyscript-1.2.0-hotfix1.jar
+! HadEnoughItems_1.12.2-4.25.1.jar                -> HadEnoughItems_1.12.2-4.26.1.jar
+! bogosorter-1.4.7.jar                            -> bogosorter-1.4.9.jar
+! Ksyxis-1.2.2.jar                                -> Ksyxis-1.3.2.jar
+! LegendaryTooltips-1.12.2-1.1.10.jar             -> LegendaryTooltips-1.12.2-1.1.11.jar
+! !mixinbooter-9.1.jar                            -> !mixinbooter-9.4.jar
+! modularui-2.4.2.jar                             -> modularui-2.4.3.jar
+! movingelevators-1.4.6-forge-mc1.12.jar          -> movingelevators-1.4.8a-forge-mc1.12.jar
+! nae2-1.6.1.jar                                  -> nae2-1.6.4.jar
+! OpenComputers-MC1.12.2-1.8.3+274990f.jar        -> OpenComputers-MC1.12.2-1.8.6+cd8851e.jar
+! particleculling-1.12.2-v1.4.1.jar               -> particleculling-1.12.2-v1.4.3.jar
+! !Red-Core-MC-1.7-1.12-0.6-Dev-2.jar             -> !Red-Core-MC-1.8-1.12-0.6-Dev-7.jar
+! RoughlyEnoughIDs-2.0.7.jar                      -> RoughlyEnoughIDs-2.2.1.jar
+! Sledgehammer-1.12.2-2.0.25.jar                  -> Sledgehammer-1.12.2-2.0.26.jar
+! _supermartijn642corelib-1.1.17-forge-mc1.12.jar -> _supermartijn642corelib-1.1.17a-forge-mc1.12.jar
+! TerraFirmaGreg-Core-1.12.x-2.1.2.jar            -> TerraFirmaGreg-Core-Vintage-2.1.4.jar
+! TheOneProbe-CE-1.12-1.2.0.jar                   -> TheOneProbe-CE-1.12-1.2.9.jar
+! UniversalTweaks-1.12.2-1.9.0.jar                -> UniversalTweaks-1.12.2-1.12.0.jar
+! Valkyrie-0.2-Dev-10.jar                         -> Valkyrie-0.2.jar
+! vintagefix-0.4.0.jar                            -> vintagefix-0.5.1.jar
+! visualores-0.2.4.jar                            -> visualores-0.2.6.jar
+! Xaeros_Minimap_23.9.7_Forge_1.12.jar            -> Xaeros_Minimap_24.5.0_Forge_1.12.jar
+! XaerosWorldMap_1.37.8_Forge_1.12.jar            -> XaerosWorldMap_1.39.0_Forge_1.12.jar
+! WrapFix-1.2.0-beta.jar                          -> WrapFix-1.3.5-beta.jar
+! Sound-Physics-1.12.2-1.1.0.jar                  -> Sound-Physics-1.12.2-1.1.3.jar
+```
