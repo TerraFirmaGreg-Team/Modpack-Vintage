@@ -132,7 +132,7 @@ jobs:
 
       - run: |
           cd ./build/curseforge/
-          mv "$(ls)" "$(ls)-curseforge"
+          rename.ul .zip -curseforge.zip *.zip
           ls
 
       - name: Upload artifact CurseForge
@@ -144,7 +144,7 @@ jobs:
 
       - run: |
           cd ./build/serverpack/
-          mv "$(ls)" "$(ls)-serverpack"
+          rename.ul .zip -serverpack.zip *.zip
           ls
 
       - name: Upload artifact Server
@@ -156,7 +156,7 @@ jobs:
 
       - run: |
           cd ./build/modrinth/
-          mv "$(ls)" "$(ls)-modrinth"
+          rename.ul .zip -modrinth.zip *.zip
           ls
 
       - name: Upload artifact modrinth
@@ -195,6 +195,9 @@ jobs:
           java -jar ./pakku.jar --debug export
           java -jar pakku.jar --debug fetch
 
+      - name: Move files
+        run: |
+          ls
           cd ./.pakku/multimc-overrides/
           mkdir -p flame
 
