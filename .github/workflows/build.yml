@@ -6,8 +6,8 @@ env:
 
 on:
   push:
-    tags:
-      - "*.*.*"
+    # tags:
+    #   - "*.*.*"
 
 concurrency:
   group: ${{ github.ref }}
@@ -159,7 +159,7 @@ jobs:
       - run: |
           cd ./build/modrinth/
           mv "$(ls)" "$(ls)-modrinth"
-          
+
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.0
         with:
