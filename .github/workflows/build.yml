@@ -201,12 +201,12 @@ jobs:
 
       - name: Move files
         run: |
-          ls -R
-          cd ./build/.cache/curseforge/
+          mv -vf ./build/.cache/curseforge/* ./.pakku/multimc-overrides/
+          cd ./.pakku/multimc-overrides/
           mkdir -p flame
 
-          mv -vf overrides .minecraft
-          mv -vf manifest.json flame/
+          
+          # mv -vf manifest.json flame/
 
           mv -vf ./build/.cache/curseforge/* ./.pakku/multimc-overrides/
           cd ./.pakku/multimc-overrides/
@@ -217,7 +217,7 @@ jobs:
         uses: actions/upload-artifact@v4.4.0
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
+          path: ./.pakku/multimc-overrides/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
           if-no-files-found: error
 
   # release:
