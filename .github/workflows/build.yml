@@ -48,7 +48,7 @@ jobs:
             echo "✔️ pakku.json"
           fi
 
-      - name: Check lockfile
+      - name: Get previous lockfile
         shell: bash
         run: |
           set +e
@@ -62,7 +62,6 @@ jobs:
               java -jar ./pakku.jar diff ./pakku-lock-prev.json ./pakku-lock.json -v --markdown PROJECTS_DIFF.md
             else
               echo "❌ File pakku-lock.json not found in previous tag"
-              touch PROJECTS_DIFF.md
             fi
           fi
 
@@ -94,7 +93,11 @@ jobs:
 
       - name: Diff Mod
         id: diff
-        run: cat PROJECTS_DIFF.md
+        run: |
+          if [ ! -f PROJECTS_DIFF.md ]; then
+            touch PROJECTS_DIFF.md
+          fi
+          cat PROJECTS_DIFF.md
 
       - name: Generate list using Markdown
         run: |
