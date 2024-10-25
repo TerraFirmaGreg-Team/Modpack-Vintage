@@ -132,7 +132,7 @@ jobs:
 
       - run: |
           cd ./build/curseforge/
-          rename.ul .zip -curseforge.zip *.zip
+          mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           ls
 
       - name: Upload artifact CurseForge
@@ -144,7 +144,7 @@ jobs:
 
       - run: |
           cd ./build/serverpack/
-          rename.ul .zip -serverpack.zip *.zip
+          mv *.zip $(basename -s .zip *.zip)-serverpack.zip
           ls
 
       - name: Upload artifact Server
@@ -156,7 +156,7 @@ jobs:
 
       - run: |
           cd ./build/modrinth/
-          rename.ul .zip -modrinth.zip *.zip
+          mv *.zip $(basename -s .zip *.zip)-modrinth.zip
           ls
 
       - name: Upload artifact modrinth
