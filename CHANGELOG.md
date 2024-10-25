@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.5.4] - 26.10.2024
+### Changes
+
 ## [4.5.3] - 18.02.2024
 ### Changes
 - Removed the ender pouch recipe.
