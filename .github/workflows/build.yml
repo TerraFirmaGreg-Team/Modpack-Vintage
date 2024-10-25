@@ -126,44 +126,48 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-pakku-cache-
 
-      - name: Export
+      - name: Export modpack
         run: |
           java -jar ./pakku.jar --debug export
 
-      - run: |
+      - name: Rename artifact curseforge
+        run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
-          ls
+          mv
+          ls -R
 
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.0
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+          path: ./build/curseforge/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
           if-no-files-found: error
 
-      - run: |
+      - name: Rename artifact server
+        run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
-          ls
+          ls -R
 
-      - name: Upload artifact Server
+      - name: Upload artifact server
         uses: actions/upload-artifact@v4.4.0
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+          path: ./build/serverpack/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
           if-no-files-found: error
 
-      - run: |
+      - name: Rename artifact modrinth
+        run: |
           cd ./build/modrinth/
-          mv *.zip $(basename -s .zip *.zip)-modrinth.zip
-          ls
+          mv *.zip $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+          ls -R
 
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.0
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
+          path: ./build/modrinth/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
           if-no-files-found: error
 
   build-multimc:
@@ -197,12 +201,15 @@ jobs:
 
       - name: Move files
         run: |
-          ls
-          cd ./.pakku/multimc-overrides/
+          ls -R
+          cd ./build/.cache/curseforge/
           mkdir -p flame
 
-          mv -vf ./build/.cache/curseforge/overrides ./.pakku/multimc-overrides/.minecraft
-          mv -vf ./build/.cache/curseforge/manifest.json ./.pakku/multimc-overrides/flame/
+          mv -vf overrides .minecraft
+          mv -vf manifest.json flame/
+
+          mv -vf ./build/.cache/curseforge/* ./.pakku/multimc-overrides/
+          cd ./.pakku/multimc-overrides/
           
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
