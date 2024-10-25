@@ -83,7 +83,7 @@ jobs:
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku-lock.json"
-          prop_path: "mc_versions"
+          prop_path: "mc_versions[]"
 
       - name: Changelog Parser
         id: changelog
@@ -139,6 +139,7 @@ jobs:
       - run: |
           cd ./build/curseforge/
           mv "$(ls)" "$(ls)-curseforge"
+          ls
 
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.0
@@ -150,6 +151,7 @@ jobs:
       - run: |
           cd ./build/serverpack/
           mv "$(ls)" "$(ls)-serverpack"
+          ls
 
       - name: Upload artifact Server
         uses: actions/upload-artifact@v4.4.0
@@ -161,6 +163,7 @@ jobs:
       - run: |
           cd ./build/modrinth/
           mv "$(ls)" "$(ls)-modrinth"
+          ls
 
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.0
