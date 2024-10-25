@@ -163,7 +163,7 @@ jobs:
         run: |
           cd ./build/modrinth/
           ls
-          mv *.zip $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.0
