@@ -135,6 +135,8 @@ jobs:
           cd ./build/curseforge/
           ls
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
+      
+      - run: ls R
           
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.0
@@ -206,8 +208,6 @@ jobs:
 
           
           # mv -vf manifest.json flame/
-
-          mv -vf ./build/.cache/curseforge/* ./.pakku/multimc-overrides/
           cd ./.pakku/multimc-overrides/
           
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
