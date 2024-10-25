@@ -10,9 +10,6 @@
         "local",
         "scripts"
     ],
-    "client_overrides": [
-        "resourcepacks"
-    ],
     "server_overrides": [
         "forge-auto-install.txt",
         "minecraft_server.jar",
@@ -20,10 +17,9 @@
         "server-icon.png",
         "start_server.bat"
     ],
-    "paths": {
-        "mods": "mods",
-        "resource_packs": "resourcepacks"
-    },
+    "client_overrides": [
+        "resourcepacks"
+    ],
     "projects": {
         "ambient-environment": {
             "side": "CLIENT"

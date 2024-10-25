@@ -1,0 +1,228 @@
+name: Build
+run-name: Build #${{ github.run_number }} by @${{ github.actor }}
+
+env:
+  RELEASE_TYPE: "release"
+
+on:
+  push:
+    tags:
+      - "*.*.*"
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  info:
+    name: Project Info
+    runs-on: ubuntu-latest
+
+    outputs:
+      project_version: ${{ steps.project_version.outputs.tag }}
+      project_name: ${{ steps.project_name.outputs.value }}
+      mc_version: ${{ steps.mc_version.outputs.value }}
+      changelog: ${{ steps.changelog.outputs.description }}
+      diff: ${{ steps.diff.outputs.description }}
+      release_type: ${{ env.RELEASE_TYPE }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Check lockfile
+        shell: bash
+        run: |
+          set +e
+          echo "🔎 Getting modpack info..."
+
+          if [ ! -f pakku-lock.json ]; then
+            echo "::error::Could not find pakku-lock.json" && exit 1
+          else
+            echo "✔️ pakku-lock.json"
+          fi
+
+          if [ ! -f pakku.json ]; then
+            echo "::error::Could not find pakku.json" && exit 1
+          else
+            echo "✔️ pakku.json"
+          fi
+
+      - name: Check lockfile
+        shell: bash
+        run: |
+          set +e
+          echo "🔎 Getting previous lockfile..."
+          if [ "$latest_tag" = ${{ github.ref_name }} ]; then
+            latest_tag_prev=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
+            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev | sed -n 2p)
+
+            if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
+              git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+              java -jar ./pakku.jar diff ./pakku-lock-prev.json ./pakku-lock.json -v --markdown PROJECTS_DIFF.md
+            else
+              echo "❌ File pakku-lock.json not found in previous tag"
+              touch PROJECTS_DIFF.md
+            fi
+          fi
+
+      - name: Get Project Name
+        id: project_name
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "name"
+
+      - name: Get Project Version
+        id: project_version
+        uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
+        with:
+          fallback: build.${{ github.run_number }}
+
+      - name: Get MC Versions
+        id: mc_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku-lock.json"
+          prop_path: "mc_versions"
+
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+
+      - name: Diff Mod
+        id: diff
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: PROJECTS_DIFF.md
+
+      - name: Generate list using Markdown
+        run: |
+          echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ steps.mc_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
+
+  build-modpack:
+    name: Build Modpack
+    runs-on: ubuntu-latest
+    needs: [info]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Set GroovyScript debug mode to 'false'
+        shell: bash
+        run: |
+          set +e
+
+          grooovy="./groovy/runConfig.json"
+          cat <<< $(jq '.debug = false' $grooovy) > $grooovy
+
+      - name: Cache pakku
+        uses: actions/cache@v4.1.2
+        with:
+          path: build/.cache
+          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+          restore-keys: |
+            ${{ runner.OS }}-pakku-cache-
+
+      - name: Export
+        run: |
+          java -jar ./pakku.jar --debug export
+
+      - run: |
+          cd ./build/curseforge/
+          mv "$(ls)" "$(ls)-curseforge"
+
+      - name: Upload artifact CurseForge
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+          if-no-files-found: error
+
+      - run: |
+          cd ./build/serverpack/
+          mv "$(ls)" "$(ls)-serverpack"
+
+      - name: Upload artifact Server
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+          if-no-files-found: error
+
+      - run: |
+          cd ./build/modrinth/
+          mv "$(ls)" "$(ls)-modrinth"
+          
+      - name: Upload artifact modrinth
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
+          if-no-files-found: error
+
+  build-multimc:
+    name: Build MultiMC Pack
+    runs-on: ubuntu-latest
+    needs: [info]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Set GroovyScript debug mode to 'false'
+        shell: bash
+        run: |
+          set +e
+
+          grooovy="./groovy/runConfig.json"
+          cat <<< $(jq '.debug = false' $grooovy) > $grooovy
+
+      - name: Cache pakku
+        uses: actions/cache@v4.1.2
+        with:
+          path: build/.cache
+          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+          restore-keys: |
+            ${{ runner.OS }}-pakku-cache-
+
+      - name: Export
+        run: |
+          java -jar ./pakku.jar --debug export
+          java -jar pakku.jar --debug fetch
+
+          cd ./build/.cache/curseforge/
+          mkdir -p flame
+
+          mv -vf overrides .minecraft
+          mv -vf manifest.json flame/
+          mv -vf .pakku/multimc-overrides/icon.png ./
+          mv -vf .pakku/multimc-overrides/mmc-pack.json ./
+          mv -vf .pakku/multimc-overrides/instance.cfg ./
+          
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+      
+      - name: Upload zip multimc
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
+          if-no-files-found: error
+
+  # release:
+  #   name: Release
+  #   needs: [info, build-multimc, build-server]
+  #   if: startsWith(github.ref, 'refs/tags/')
+  #   uses: ./.github/workflows/release.yml
+  #   with:
+  #     project_name: ${{ needs.info.outputs.project_name }}
+  #     project_version: ${{ needs.info.outputs.project_version }}
+  #     mc_version: ${{ needs.info.outputs.mc_version }}
+  #     release_type: ${{ needs.info.outputs.release_type }}
+  #     changelog: ${{ needs.info.outputs.changelog }}
+  #   secrets: inherit

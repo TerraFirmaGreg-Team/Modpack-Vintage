@@ -9,6 +9,8 @@
 
 # Pakku
 build/
+!.pakku/**/*
+
 
 # Configs
 config/jei/world/
@@ -95,6 +97,6 @@ hei_bookmarks.ini
 
 
 # Server data
-pakku/serverpack/
+
 
 
