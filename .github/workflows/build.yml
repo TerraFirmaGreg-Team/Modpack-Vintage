@@ -133,10 +133,9 @@ jobs:
       - name: Rename artifact curseforge
         run: |
           cd ./build/curseforge/
+          ls
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
-          mv
-          ls -R
-
+          
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.0
         with:
@@ -147,8 +146,8 @@ jobs:
       - name: Rename artifact server
         run: |
           cd ./build/serverpack/
+          ls
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
-          ls -R
 
       - name: Upload artifact server
         uses: actions/upload-artifact@v4.4.0
@@ -160,8 +159,8 @@ jobs:
       - name: Rename artifact modrinth
         run: |
           cd ./build/modrinth/
+          ls
           mv *.zip $(basename -s .mrpack *.mrpack)-modrinth.mrpack
-          ls -R
 
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.0
@@ -196,7 +195,7 @@ jobs:
 
       - name: Export
         run: |
-          java -jar ./pakku.jar --debug export
+          java -jar pakku.jar --debug export
           java -jar pakku.jar --debug fetch
 
       - name: Move files
