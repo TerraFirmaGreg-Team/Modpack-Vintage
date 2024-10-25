@@ -9,7 +9,6 @@
 
 # Pakku
 build/
-pakku.jar
 
 # Configs
 config/jei/world/
