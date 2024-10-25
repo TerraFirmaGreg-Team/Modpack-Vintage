@@ -3,6 +3,7 @@ run-name: Build #${{ github.run_number }} by @${{ github.actor }}
 
 env:
   RELEASE_TYPE: "release"
+  MC_VERSION: "1.12.2"
 
 on:
   push:
@@ -21,10 +22,10 @@ jobs:
     outputs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
-      mc_version: ${{ steps.mc_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.diff.outputs.description }}
       release_type: ${{ env.RELEASE_TYPE }}
+      mc_version: ${{ env.MC_VERSION }}
     
     steps:
       - name: Checkout
@@ -78,13 +79,6 @@ jobs:
         with:
           fallback: build.${{ github.run_number }}
 
-      - name: Get MC Versions
-        id: mc_version
-        uses: ActionsTools/read-json-action@v1.0.5
-        with:
-          file_path: "pakku-lock.json"
-          prop_path: "mc_versions[]"
-
       - name: Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
@@ -103,7 +97,7 @@ jobs:
         run: |
           echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 MC Versions=${{ steps.mc_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.diff.outputs.value }}" >> $GITHUB_STEP_SUMMARY
@@ -201,14 +195,11 @@ jobs:
           java -jar ./pakku.jar --debug export
           java -jar pakku.jar --debug fetch
 
-          cd ./build/.cache/curseforge/
+          cd ./.pakku/multimc-overrides/
           mkdir -p flame
 
-          mv -vf overrides .minecraft
-          mv -vf manifest.json flame/
-          mv -vf .pakku/multimc-overrides/icon.png ./
-          mv -vf .pakku/multimc-overrides/mmc-pack.json ./
-          mv -vf .pakku/multimc-overrides/instance.cfg ./
+          mv -vf ./build/.cache/curseforge/overrides ./.pakku/multimc-overrides/.minecraft
+          mv -vf ./build/.cache/curseforge/manifest.json ./.pakku/multimc-overrides/flame/
           
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
