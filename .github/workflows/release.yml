@@ -103,7 +103,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.diff.outputs.description }}" >> $GITHUB_STEP_SUMMARY
+          echo ```${{ steps.diff.outputs.description }}``` >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
@@ -351,7 +351,7 @@ jobs:
   #         name: ${{ needs.info.outputs.project_version }}
   #         body: |
   #           ${{ needs.info.outputs.changelog }}
-  #           ${{ needs.info.outputs.diff }}
+  #           ```${{ needs.info.outputs.diff }}```
   #         files: |
   #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
   #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
@@ -375,8 +375,8 @@ jobs:
     #       content: |
     #         **Release**: `${{ needs.info.outputs.project_version }}`
     #         **Release Type**: `${{ needs.info.outputs.release_type }}`
-    #         **GameVersion**: `${{ needs.info.outputs.mc_version }}`
+    #         **Game Version**: `${{ needs.info.outputs.mc_version }}`
     #         [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
-    #         ```${{ needs.info.outputs.changelog }}```
+    #         ${{ needs.info.outputs.changelog }}
     #         ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
