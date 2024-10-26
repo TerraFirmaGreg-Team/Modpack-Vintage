@@ -1,13 +1,8 @@
 # Changelog
 
-## [4.5.4] - 26.10.2024
+## [4.5.4] - ??.10.2024
 ### Changes
-- Lorem ipsum odor amet, consectetuer adipiscing elit.
-- Ornare fringilla eleifend arcu litora nulla sem tempor.
-- Aliquet consequat eros porta hendrerit nascetur interdum viverra. Integer gravida posuere himenaeos at maximus donec.
-- Natoque mi vel vestibulum cursus; cursus magna ac sagittis. Turpis duis ipsum sed; mi phasellus consectetur nec efficitur. Natoque hac amet ligula nisi quam lorem. Hac cubilia varius mus proin ex potenti ad ridiculus.
-- Enim curabitur leo consectetur posuere dapibus felis.
-- Sociosqu erat volutpat diam tortor aliquet. Pharetra metus aliquam iaculis taciti auctor eleifend condimentum suscipit. Enim et est nec platea diam fringilla eleifend.
+- ??
 
 ## [4.5.3] - 18.02.2024
 ### Changes
