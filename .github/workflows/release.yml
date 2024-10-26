@@ -352,8 +352,7 @@ jobs:
         uses: softprops/action-gh-release@v2.0.8
         with:
           name: ${{ needs.info.outputs.project_version }}
-          tag_name: 4.5.3
-          # tag_name: ${{ needs.info.outputs.project_version }}
+          tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
             ```markdown
