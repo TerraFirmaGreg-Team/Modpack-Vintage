@@ -3,8 +3,14 @@
 **/*.gz
 **/*.DS_Store
 **/*.jar
+**/*.mrpack
 **/*.code-workspace
 **/*.zip
+
+# Pakku
+build/
+!.pakku/**/*
+
 
 # Configs
 config/jei/world/
@@ -35,7 +41,7 @@ config/voicechat/username-cache.json
 config/xaerominimap.txt
 config/xaeroworldmap.txt
 
-# Client data
+# .minecraft
 .vscode/
 .idea/
 .bobby/
@@ -66,6 +72,7 @@ screenshots/
 shaderpacks/
 chiselsandbits/
 
+# Client data
 .curseclient
 .sl_password
 options.txt
@@ -90,15 +97,6 @@ hei_bookmarks.ini
 
 
 # Server data
-.github/buildtools/serverpack/
-
-!.github/buildtools/serverpack/forge-auto-install.txt
-!.github/buildtools/serverpack/server.properties
-!.github/buildtools/serverpack/server_starter.conf
-!.github/buildtools/serverpack/server-icon.png
-!.github/buildtools/serverpack/start_server.bat
-!.github/buildtools/serverpack/user_jvm_args.txt
-!.github/buildtools/serverpack/minecraft_server.jar
 
 
 
