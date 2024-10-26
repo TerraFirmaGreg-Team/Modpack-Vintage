@@ -93,7 +93,7 @@ jobs:
           if [ ! -f PROJECTS_DIFF.md ]; then
             touch PROJECTS_DIFF.md
           fi
-          cat PROJECTS_DIFF.md
+          cat PROJECTS_DIFF.md >> "$GITHUB_OUTPUT"
 
       - name: Generate list using Markdown
         run: |
