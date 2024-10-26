@@ -25,7 +25,7 @@ jobs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
-      diff: ${{ steps.lockfile.outputs.diff }}
+      diff: ${{ steps.diff.outputs.description }}
       release_type: ${{ env.RELEASE_TYPE }}
       mc_version: ${{ env.MC_VERSION }}
     
@@ -95,6 +95,12 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
+
+      - name: Diff Parser
+        id: diff
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: PROJECTS_DIFF.md
           
       - name: Generate list using Markdown
         run: |
@@ -103,7 +109,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.diff.outputs.description }}" >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
@@ -323,45 +329,45 @@ jobs:
   #           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
   #           release-type: ${{ needs.info.outputs.release_type }}
 
-  release-github:
-    name: Deploy to GitHub
-    needs: [info, build-modpack, build-server, build-multimc]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
+  # release-github:
+  #   name: Deploy to GitHub
+  #   needs: [info, build-modpack, build-server, build-multimc]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.2.2
 
-      - name: Download artifact
-        uses: actions/download-artifact@v4.1.8
-        with:
-          merge-multiple: true
+  #     - name: Download artifact
+  #       uses: actions/download-artifact@v4.1.8
+  #       with:
+  #         merge-multiple: true
 
-      - name: Сlose fixed in dev
-        uses: Xikaro/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: In Dev"
-          COMMENT: In ${{ needs.info.outputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     - name: Сlose fixed in dev
+  #       uses: Xikaro/close-issues-based-on-label@master
+  #       env:
+  #         LABEL: "2. Status: In Dev"
+  #         COMMENT: In ${{ needs.info.outputs.project_version }}
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create release
-        uses: softprops/action-gh-release@v2.0.8
-        with:
-          prerelease: false
-          generate_release_notes: true
-          name: ${{ needs.info.outputs.project_version }}
-          body: |
-            ${{ needs.info.outputs.changelog }}
-            ${{ needs.info.outputs.diff }}
-          files: |
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
-          tag_name: 4.5.3
-          # tag_name: ${{ needs.info.outputs.project_version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     - name: Create release
+  #       uses: softprops/action-gh-release@v2.0.8
+  #       with:
+  #         prerelease: false
+  #         generate_release_notes: true
+  #         name: ${{ needs.info.outputs.project_version }}
+  #         body: |
+  #           ${{ needs.info.outputs.changelog }}
+  #           ${{ needs.info.outputs.diff }}
+  #         files: |
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
+  #         tag_name: 4.5.3
+  #         # tag_name: ${{ needs.info.outputs.project_version }}
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  discord-message:
+  # discord-message:
     name: Discord Message
     needs: [info, release-github]
     runs-on: ubuntu-latest
