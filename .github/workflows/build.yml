@@ -73,7 +73,7 @@ jobs:
           fi
           {
             echo 'diff<<EOF'
-            cat PROJECTS_DIFF.md
+            cat -p PROJECTS_DIFF.md
             echo EOF
           } >> "$GITHUB_OUTPUT"
 
