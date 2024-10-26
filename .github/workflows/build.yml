@@ -250,7 +250,7 @@ jobs:
   release:
     name: Release
     needs: [info, build-modpack, build-server, build-multimc]
-    if: startsWith(github.ref, 'refs/tags/')
+    # if: startsWith(github.ref, 'refs/tags/')
     uses: ./.github/workflows/release.yml
     with:
       project_name: ${{ needs.info.outputs.project_name }}

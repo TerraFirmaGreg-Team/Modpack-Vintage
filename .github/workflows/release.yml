@@ -139,7 +139,8 @@ jobs:
             ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge.zip
             ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack.zip
             ${{ inputs.project_name }}-${{ inputs.project_version }}-multimc.zip
-          tag_name: ${{ inputs.project_version }}
+          tag_name: 4.5.3
+          # tag_name: ${{ inputs.project_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
