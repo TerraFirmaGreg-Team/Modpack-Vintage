@@ -94,6 +94,13 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
+
+      - name: Diff Parser
+        id: diff
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: diff
+          path: ./PROJECTS_DIFF.md
           
       - name: Generate Github Summary
         run: |
@@ -102,7 +109,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "```${{ steps.lockfile.outputs.diff }}```" >> $GITHUB_STEP_SUMMARY
+          cat PROJECTS_DIFF.md >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
