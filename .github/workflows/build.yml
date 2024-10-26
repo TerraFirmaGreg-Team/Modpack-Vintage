@@ -231,11 +231,11 @@ jobs:
           
       - name: Move files
         run: |
-          l
+          ls
           mkdir -p .pakku/multimc-overrides/flame
           mv -vf ./build/.cache/curseforge/* .pakku/multimc-overrides/
           cd .pakku/multimc-overrides/
-          l -R
+          ls -R
           mv -vf ./mods ./.pakku/multimc-overrides/.minecraft/mods
           cd .pakku/multimc-overrides/
           mv -vf manifest.json flame/
