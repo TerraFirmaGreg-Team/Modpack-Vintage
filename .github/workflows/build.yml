@@ -25,7 +25,7 @@ jobs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
-      diff: ${{ steps.diff.outputs.description }}
+      diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       mc_version: ${{ env.MC_VERSION }}
     
@@ -52,6 +52,7 @@ jobs:
           fi
 
       - name: Get previous lockfile
+        id: lockfile
         shell: bash
         run: |
           set +e
@@ -62,11 +63,19 @@ jobs:
 
             if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
               git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
-              java -jar ./pakku.jar diff ./pakku-lock-pre.json ./pakku-lock.json -v --markdown PROJECTS_DIFF.md
+              java -jar ./pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json 
             else
               echo "❌ File pakku-lock.json not found in previous tag"
             fi
           fi
+          if [ ! -f PROJECTS_DIFF.md ]; then
+            touch PROJECTS_DIFF.md
+          fi
+          {
+            echo 'diff<<EOF'
+            cat PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
 
       - name: Get Project Name
         id: project_name
@@ -86,15 +95,7 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-
-      - name: Diff Mod
-        id: diff
-        run: |
-          if [ ! -f PROJECTS_DIFF.md ]; then
-            touch PROJECTS_DIFF.md
-          fi
-          cat PROJECTS_DIFF.md >> "$GITHUB_OUTPUT"
-
+          
       - name: Generate list using Markdown
         run: |
           echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
@@ -102,7 +103,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.diff.outputs }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
 
   # build-modpack:
   #   name: Build Modpack
