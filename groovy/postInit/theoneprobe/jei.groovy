@@ -1,5 +1,5 @@
 // MODS_LOADED: theoneprobe
-package theoneprobe
+
 
 // --- Массивы
 

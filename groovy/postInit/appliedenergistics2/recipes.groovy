@@ -1,5 +1,5 @@
 // MODS_LOADED: appliedenergistics2
-package appliedenergistics2
+
 
 import gregtech.api.metatileentity.multiblock.CleanroomType
 import classes.array.Minecraft

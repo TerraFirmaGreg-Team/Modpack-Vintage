@@ -1,5 +1,5 @@
 // MODS_LOADED: tfcthings
-package tfcthings
+
 
 // --- Массивы
 

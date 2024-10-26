@@ -201,9 +201,9 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = joinserver;legacy.terrafirmagreg.su%btnaction_splitter_fm%
+  buttonaction = joinserver;vintage.terrafirmagreg.su%btnaction_splitter_fm%
   backgroundhovered = groovy/assets/terrafirmagreg/textures/gui/button_hover_98x20.png
-  label = Offical Server
+  label = Official Server
   loopbackgroundanimations = true
   x = 47
   width = 98
@@ -244,7 +244,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://discord.gg/terrafirmagreg%btnaction_splitter_fm%
+  buttonaction = openlink;https://discord.com/invite/AEaCzCTUwQ%btnaction_splitter_fm%
   backgroundhovered = groovy/assets/terrafirmagreg/textures/gui/discord_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -260,7 +260,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x%btnaction_splitter_fm%
+  buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/Modpack-Vintage%btnaction_splitter_fm%
   backgroundhovered = groovy/assets/terrafirmagreg/textures/gui/github_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -294,7 +294,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.12.x/releases/latest","json_path":"$.tag_name"}}§r
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §c@version@§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-Vintage/releases/latest","json_path":"$.tag_name"}}§r
   text_border = 0
   case_mode = normal
   source_mode = direct

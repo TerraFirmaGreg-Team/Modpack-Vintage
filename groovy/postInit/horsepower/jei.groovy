@@ -1,5 +1,5 @@
 // MODS_LOADED: horsepower
-package horsepower
+
 
 // --- Массивы
 

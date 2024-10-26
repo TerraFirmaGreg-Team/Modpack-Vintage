@@ -1,5 +1,5 @@
 // MODS_LOADED: galacticraftcore
-package galacticraftcore.planets.mars
+
 
 import classes.Function
 

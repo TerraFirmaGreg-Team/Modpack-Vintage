@@ -1,5 +1,5 @@
 // MODS_LOADED: movingelevators
-package movingelevators
+
 
 // --- Массивы
 

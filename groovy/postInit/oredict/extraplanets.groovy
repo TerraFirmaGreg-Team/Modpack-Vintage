@@ -1,5 +1,6 @@
 // MODS_LOADED: extraplanets
 
+
 import classes.array.Galacticraft
 
 // --- Добавление

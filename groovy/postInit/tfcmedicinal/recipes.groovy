@@ -1,5 +1,5 @@
 // MODS_LOADED: tfcmedicinal
-package tfcmedicinal
+
 
 import classes.array.TerraFirmaCraftM
 

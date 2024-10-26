@@ -1,5 +1,5 @@
 // MODS_LOADED: gregtech
-package gregtech
+
 
 import classes.Function
 

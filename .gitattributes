@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+* text=auto eol=lf
+
+*.zip binary
+*.png binary
+
+dumps/**/*.* linguist-generated=true
+*.log linguist-generated=true

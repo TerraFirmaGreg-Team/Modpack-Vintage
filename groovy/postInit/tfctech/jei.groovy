@@ -1,5 +1,5 @@
 // MODS_LOADED: tfctech
-package tfctech
+
 
 // --- Массивы
 

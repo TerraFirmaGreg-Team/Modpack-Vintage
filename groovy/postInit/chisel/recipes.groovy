@@ -1,5 +1,5 @@
 // MODS_LOADED: chisel
-package chisel
+
 
 import classes.Function
 

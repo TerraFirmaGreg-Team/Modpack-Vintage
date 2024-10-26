@@ -1,5 +1,5 @@
 // MODS_LOADED: hgp
-package hgp
+
 
 import classes.array.HGP
 

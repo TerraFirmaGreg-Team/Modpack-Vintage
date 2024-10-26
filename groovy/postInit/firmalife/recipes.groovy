@@ -1,5 +1,5 @@
 // MODS_LOADED: firmalife
-package firmalife
+
 
 import classes.array.TerraFirmaCraftFL
 import classes.array.TerraFirmaCraft

@@ -1,5 +1,5 @@
 // MODS_LOADED: projectred-core
-package projectred
+
 
 // --- Массивы
 
