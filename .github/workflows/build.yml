@@ -93,11 +93,7 @@ jobs:
           if [ ! -f PROJECTS_DIFF.md ]; then
             touch PROJECTS_DIFF.md
           fi
-          {
-            echo 'diff<<EOF'
-            cat PROJECTS_DIFF.md
-            echo EOF
-          } >> "$GITHUB_OUTPUT"
+          cat PROJECTS_DIFF.md >> "$GITHUB_OUTPUT"
 
       - name: Generate list using Markdown
         run: |
@@ -106,7 +102,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.diff.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.diff.outputs }}" >> $GITHUB_STEP_SUMMARY
 
   # build-modpack:
   #   name: Build Modpack
