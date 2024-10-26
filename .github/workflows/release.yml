@@ -19,104 +19,106 @@ on:
       changelog:
         required: true
         type: string
+      diff:
+        required: false
+        type: string
 
 concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  release-curseforge:
-    name: Deploy to CurseForge
-    runs-on: ubuntu-latest
-    outputs:
-      cf_release_id: ${{ steps.cf_release.outputs.id }}
-    steps:
-      
-      - name: Check if CF_API_TOKEN exist
-        shell: bash
-        run: |
-          if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
-            echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-          fi  
+  # release-curseforge:
+  #   name: Deploy to CurseForge
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     cf_release_id: ${{ steps.cf_release.outputs.id }}
+  #   steps:
+  #     - name: Check if CF_API_TOKEN exist
+  #       shell: bash
+  #       run: |
+  #         if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
+  #           echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #         fi  
 
-      - name: Download cf modpack
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge
+  #     - name: Download artifact curseforge
+  #       uses: actions/download-artifact@v4.1.8
+  #       with:
+  #         name: ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge
 
-      - name: Download serverpack
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
+  #     - name: Download artifact server
+  #       uses: actions/download-artifact@v4.1.8
+  #       with:
+  #         name: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack
 
-      - name: Upload Curseforge
-        id: cf_release
-        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ vars.CF_MODPACK_ID }}
-          display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
-          modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge.zip
-          server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
-          modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          changelog: ${{ inputs.changelog }}
-          changelog-format: markdown
-          game-version: ${{ inputs.mc_version }}
-          release-type: ${{ inputs.release_type }}
+  #     - name: Upload Curseforge
+  #       id: cf_release
+  #       uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #       with:
+  #         api-token: ${{ secrets.CF_API_TOKEN }}
+  #         project-id: ${{ vars.CF_MODPACK_ID }}
+  #         display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+  #         modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge.zip
+  #         server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack
+  #         modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack.zip
+  #         changelog: ${{ inputs.changelog }}
+  #         changelog-format: markdown
+  #         game-version: ${{ inputs.mc_version }}
+  #         release-type: ${{ inputs.release_type }}
 
   # release-modrinth:
-    #   name: Deploy to Modrinth
-    #   runs-on: ubuntu-latest
-    #   steps:
-    #     - name: Check if MODRINTH_API_TOKEN exist
-    #       shell: bash
-    #       run: |
-    #         if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
-    #           echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-    #         fi  
+  #     name: Deploy to Modrinth
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - name: Check if MODRINTH_API_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
     
-    #     - name: Download modpack
-    #       uses: actions/download-artifact@v4.1.0
-    #       with:
-    #         name: modpack_mrd
+  #       - name: Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ inputs.project_name }}-${{ inputs.project_version }}-modrinth
     
-    #     - name: Download serverpack
-    #       uses: actions/download-artifact@v4.1.0
-    #       with:
-    #         name: server_pack
+  #       - name: Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack
     
-    #     - name: Upload Modrinth
-    #       id: cf_release
-    #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
-    #       with:
-    #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-    #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
-    #         modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-mrd.zip
-    #         modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-    #         changelog: ${{ inputs.changelog }}
-    #         changelog-format: markdown
-    #         game-version: ${{ inputs.mc_version }}
-    #         display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
-    #         server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
-    #         release-type: ${{ inputs.release_type }}
+  #       - name: Upload Modrinth
+  #         id: cf_release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_API_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_MODPACK_ID }}
+  #           modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-modrinth.mrpack
+  #           modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack.zip
+  #           changelog: ${{ inputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ inputs.mc_version }}
+  #           display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+  #           server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack
+  #           release-type: ${{ inputs.release_type }}
 
-  close-fixed-issues:
-    name: Close Fixed Issues
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.0
+  # close-fixed-issues:
+  #   name: Close Fixed Issues
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.2.2
 
-      - name: Сlose fixed in dev
-        uses: Xikaro/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: In Dev"
-          COMMENT: In ${{ inputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     - name: Сlose fixed in dev
+  #       uses: Xikaro/close-issues-based-on-label@master
+  #       env:
+  #         LABEL: "2. Status: In Dev"
+  #         COMMENT: In ${{ inputs.project_version }}
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-github:
     name: Deploy to GitHub
-    needs: [ close-fixed-issues]
+    needs: [ ]
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
@@ -125,23 +127,25 @@ jobs:
           merge-multiple: true
 
       - name: Create release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2.0.8
         with:
           prerelease: false
           generate_release_notes: true
           name: ${{ inputs.project_version }}
-          body: ${{ inputs.changelog }}
+          body: |
+            ${{ inputs.changelog }}
+            ${{ inputs.diff }}
           files: |
             ${{ inputs.project_name }}-${{ inputs.project_version }}-curseforge.zip
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-serverpack.zip
             ${{ inputs.project_name }}-${{ inputs.project_version }}-multimc.zip
-            ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
           tag_name: ${{ inputs.project_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: Discord Message
-    needs: [release-curseforge, release-github, ]
+    needs: [release-github]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -154,11 +158,11 @@ jobs:
           embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ inputs.project_version }}
           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png
           embed-description: |
+            **Release**: `${{ inputs.project_version }}`
             **Release Type**: `${{ inputs.release_type }}`
             **GameVersion**: `${{ inputs.mc_version }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ inputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues
 
-            ** Сhangelog **
             ```${{ inputs.changelog }}```
-            ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-Vintage/blob/main/CHANGELOG.md) **
+            ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ inputs.project_version }}) **
           embed-color: 5814783
