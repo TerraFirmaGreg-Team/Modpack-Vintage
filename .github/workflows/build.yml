@@ -1,5 +1,5 @@
 name: Build
-run-name: Build #${{ github.run_number }} by @${{ github.actor }}
+run-name: "Build #${{ github.run_number }} by @${{ github.actor }}"
 
 env:
   RELEASE_TYPE: "release"

@@ -1,5 +1,5 @@
 name: Release
-run-name: Release #${{ github.run_number }} by @${{ github.actor }}
+run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
 
 on:
   workflow_call:
@@ -22,10 +22,6 @@ on:
       diff:
         required: true
         type: string
-
-concurrency:
-  group: ${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   # release-curseforge:
