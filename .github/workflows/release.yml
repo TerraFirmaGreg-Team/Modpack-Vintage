@@ -109,7 +109,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo "```${{ steps.lockfile.outputs.diff }}```" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
@@ -358,7 +358,6 @@ jobs:
           body: |
             ${{ needs.info.outputs.changelog }}
             ```${{ needs.info.outputs.diff }}```
-          body_path: PROJECTS_DIFF.md
           files: |
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
@@ -374,16 +373,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
-        uses: tsickert/discord-webhook@v6.0.0
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.2
         with:
-          webhook-url: ${{ secrets.RELEASES_1_12 }}
+          key: ${{ secrets.RELEASES_1_12 }}
           username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
+          avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
+          content_links_no_embed: .+
           content: |
             **Release**: `${{ needs.info.outputs.project_version }}`
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
-            ${{ needs.info.outputs.changelog }}
+            ```${{ needs.info.outputs.changelog }}```
             ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
