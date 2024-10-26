@@ -92,9 +92,7 @@ jobs:
 
       - name: Diff Parser
         id: diff
-        uses: coditory/changelog-parser@v1.0.2
-        with:
-          path: PROJECTS_DIFF.md
+        run: cat -v --show-nonprinting PROJECTS_DIFF.md >> "$GITHUB_OUTPUT"
           
       - name: Generate list using Markdown
         run: |
@@ -103,7 +101,7 @@ jobs:
           echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          echo ```${{ steps.diff.outputs.description }}``` >> $GITHUB_STEP_SUMMARY
+          echo "```${{ steps.diff.outputs.description }}```"" >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
