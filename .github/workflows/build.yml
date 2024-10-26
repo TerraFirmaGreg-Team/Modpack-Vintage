@@ -62,7 +62,7 @@ jobs:
 
             if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
               git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
-              java -jar ./pakku.jar diff ./pakku-lock-prev.json ./pakku-lock.json -v --markdown PROJECTS_DIFF.md
+              java -jar ./pakku.jar diff ./pakku-lock-pre.json ./pakku-lock.json -v --markdown PROJECTS_DIFF.md
             else
               echo "❌ File pakku-lock.json not found in previous tag"
             fi
