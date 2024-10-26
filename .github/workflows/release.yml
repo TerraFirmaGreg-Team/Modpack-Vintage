@@ -31,6 +31,7 @@ jobs:
     outputs:
       cf_release_id: ${{ steps.cf_release.outputs.id }}
     steps:
+      
       - name: Check if CF_API_TOKEN exist
         shell: bash
         run: |
