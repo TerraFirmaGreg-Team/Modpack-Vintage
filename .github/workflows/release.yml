@@ -20,7 +20,7 @@ on:
         required: true
         type: string
       diff:
-        required: false
+        required: true
         type: string
 
 concurrency:
