@@ -11,7 +11,6 @@
 build/
 !.pakku/**/*
 
-
 # Configs
 config/jei/world/
 config/gregtech/terminal/
@@ -29,24 +28,24 @@ config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
 config/xaerominimap_entities.json
+# config/xaerominimap.txt
+# config/xaeroworldmap.txt
 config/fancymenu/menu_identifiers.db
 config/fancymenu/user_variables.db
-config/xaerominimap.txt
-config/xaeroworldmap.txt
 config/oculus.properties
+config/embeddium-fingerprint.json
+config/everycomp-hazardous.properties
 config/fml.toml
 config/forge-client.toml
-config/xaerominimap_entities.json
 config/voicechat/username-cache.json
-config/xaerominimap.txt
-config/xaeroworldmap.txt
 
 # .minecraft
+!bansoukou/**.zip
+
 .vscode/
 .idea/
 .bobby/
 .mixin.out/
-!bansoukou/**.zip
 classOut/
 backups/
 profileImage/
@@ -59,6 +58,7 @@ vintagefix/
 modernfix/
 XaeroWaypoints*/
 XaeroWorldMap*/
+defaultconfigs/
 xaero/
 visualores/
 mods-carryover/
@@ -94,9 +94,4 @@ optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
 
-
-
 # Server data
-
-
-
