@@ -250,7 +250,7 @@ jobs:
   release:
     name: Release
     needs: [info, build-modpack, build-server, build-multimc]
-    uses: .github/workflows/release.yml
+    uses: ./.github/workflows/release.yml
     with:
       project_name: ${{ needs.info.outputs.project_name }}
       project_version: ${{ needs.info.outputs.project_version }}
