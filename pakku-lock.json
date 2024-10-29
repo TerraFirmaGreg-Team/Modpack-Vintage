@@ -780,7 +780,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Baubles-1.5.2-bubbles-2.2b-1.jar",
+                    "file_name": "Bubbles-2.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -788,17 +788,17 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5776/79/Baubles-1.5.2-bubbles-2.2b-1.jar",
-                    "id": "5776079",
+                    "url": "https://edge.forgecdn.net/files/5844/968/Bubbles-2.2.jar",
+                    "id": "5844968",
                     "parent_id": "995393",
                     "hashes": {
-                        "sha1": "7479a280acc43def98d1b6d7ad938d51236cacfc",
-                        "md5": "e92f0b19711578ac5caf452a87d82607"
+                        "sha1": "fa278295586026ed7cb13dca2ee152899c3741b8",
+                        "md5": "e14b57564807266797a9150ce5611c61"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 257481,
-                    "date_published": "2024-10-02T10:29:20.527Z"
+                    "size": 274788,
+                    "date_published": "2024-10-25T16:29:41.530Z"
                 }
             ]
         },
@@ -3614,7 +3614,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "movingelevators-1.4.8a-forge-mc1.12.jar",
+                    "file_name": "movingelevators-1.4.9a-forge-mc1.12.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -3624,19 +3624,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5713/81/movingelevators-1.4.8a-forge-mc1.12.jar",
-                    "id": "5713081",
+                    "url": "https://edge.forgecdn.net/files/5843/142/movingelevators-1.4.9a-forge-mc1.12.jar",
+                    "id": "5843142",
                     "parent_id": "373051",
                     "hashes": {
-                        "sha1": "5edcd7ed5449740a56d36d07934dbfb75f894153",
-                        "md5": "6d2b0ee975e9d241efc3f0ffae3a8055"
+                        "sha1": "e4d64a8138817c6d3d5d9144de1fd4746cc468de",
+                        "md5": "fb81b0523c452375478cda20ee3fafac"
                     },
                     "required_dependencies": [
                         "438332",
                         "454372"
                     ],
-                    "size": 1274195,
-                    "date_published": "2024-09-11T09:28:09.507Z"
+                    "size": 1276632,
+                    "date_published": "2024-10-24T22:53:12.647Z"
                 }
             ]
         },
@@ -5135,41 +5135,6 @@
             ]
         },
         {
-            "pakku_id": "DAYBmdOuSBJJMLkI",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "top-addons"
-            },
-            "name": {
-                "curseforge": "TOP Addons"
-            },
-            "id": {
-                "curseforge": "247111"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "topaddons-1.12.2-1.13.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2887/479/topaddons-1.12.2-1.13.0.jar",
-                    "id": "2887479",
-                    "parent_id": "247111",
-                    "hashes": {
-                        "sha1": "81fd91d9b4579a3f07a8d3b860f7db5426e77c72",
-                        "md5": "e165a54c43f48b42725225b87530b168"
-                    },
-                    "required_dependencies": [
-                        "245211"
-                    ],
-                    "size": 243603,
-                    "date_published": "2020-02-23T18:24:20.240Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "7CMDy0Glw0saIhKU",
             "type": "MOD",
             "slug": {
@@ -5301,25 +5266,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TheOneProbe-CE-1.12-1.2.9.jar",
+                    "file_name": "TheOneProbe-CE-1.12-1.3.0-a2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5745/309/TheOneProbe-CE-1.12-1.2.9.jar",
-                    "id": "5745309",
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/5824/252/TheOneProbe-CE-1.12-1.3.0-a2.jar",
+                    "id": "5824252",
                     "parent_id": "885670",
                     "hashes": {
-                        "sha1": "32e29775d3a4e4085e13b7e00fa40fcf4a91c445",
-                        "md5": "0f79af5adcad36d1698bdf17f56577d1"
+                        "sha1": "6e2b741bdb29520ff23b00b1847761ae3490bad1",
+                        "md5": "81815971049d47b04788a601ef5359d0"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 393639,
-                    "date_published": "2024-09-22T06:44:15.320Z"
+                    "size": 325416,
+                    "date_published": "2024-10-19T10:52:55.533Z"
                 }
             ]
         },
@@ -5357,6 +5322,42 @@
                     ],
                     "size": 161592,
                     "date_published": "2021-09-14T21:18:46.397Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "hDrXOjFDLsqu9iVd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "topalldependents"
+            },
+            "name": {
+                "curseforge": "TopAllDependents"
+            },
+            "id": {
+                "curseforge": "1120632"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TopAllDependents-1.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5808/89/TopAllDependents-1.0.jar",
+                    "id": "5808089",
+                    "parent_id": "1120632",
+                    "hashes": {
+                        "sha1": "b49407c614236b1bbdfe2fbaefbc774b6142dc5b",
+                        "md5": "4b8d32b0b0dfbd7a1fac09a187eeea5d"
+                    },
+                    "required_dependencies": [],
+                    "size": 329037,
+                    "date_published": "2024-10-13T08:45:57.997Z"
                 }
             ]
         },

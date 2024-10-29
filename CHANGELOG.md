@@ -1,8 +1,11 @@
 # Changelog
 
-## [4.5.4] - ??.10.2024
+## [4.5.4] - 30.10.2024
 ### Changes
-- ??
+- Make a backup before updating, there were quite a few changes that I don't remember anymore.
+- Removed GTFO mod due to some compatibility issues with tfc.
+- Fixed a bug with dust piles forming on the surface.
+- 100500 changes that were mostly noticeable with mods.
 
 ## [4.5.3] - 18.02.2024
 ### Changes
