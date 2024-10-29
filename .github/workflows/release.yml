@@ -3,7 +3,7 @@ run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
 
 env:
   RELEASE_TYPE: "release"
-  MC_VERSION: "1.12.2"
+  MINECRAFT_VERSION: "1.12.2"
 
 on:
   push:
@@ -22,9 +22,11 @@ jobs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
+      truncated_changelog: ${{ steps.truncated.outputs.text }}
       diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
-      mc_version: ${{ env.MC_VERSION }}
+      minecraft_version: ${{ env.MINECRAFT_VERSION }}
+      # exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
       - name: Checkout
@@ -61,7 +63,7 @@ jobs:
             if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
               git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
               curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-              java -jar ./pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json 
+              java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json 
             else
               echo "❌ File pakku-lock.json not found in previous tag"
             fi
@@ -94,26 +96,42 @@ jobs:
         with:
           path: CHANGELOG.md
 
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ steps.changelog.outputs.description }}'
+          max_chars: '1450'
+
       - name: Upload Diff
         id: diff
         uses: actions/upload-artifact@v4.4.3
+        if: ${{ steps.lockfile.outputs.diff != '' }}
         with:
-          name: diff
+          name: Mods-diff
           path: PROJECTS_DIFF.md
+
+      # - name: Check if tag exists
+      #   uses: mukunku/tag-exists-action@v1.6.0
+      #   id: check_tag
+      #   with:
+      #     tag: ${{ steps.project_version.outputs.tag }}
           
       - name: Generate Github Summary
         run: |
           echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
 
   build-modpack:
     name: Build Modpack
     runs-on: ubuntu-latest
     needs: [info]
+    # if: needs.info.outputs.exists != 'true'
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -125,19 +143,22 @@ jobs:
 
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
-          sed -i -e "s/DEV/${{ needs.info.outputs.project_version }}/g" pakku.json
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export modpack
         run: |
-          java -jar ./pakku.jar export
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
 
       - name: Rename artifact curseforge
         run: |
@@ -178,20 +199,23 @@ jobs:
 
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
-          sed -i -e "s/DEV/${{ needs.info.outputs.project_version }}/g" pakku.json
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export modpack
         run: |
           mv -vf ./.pakku/server-overrides/* ./
-          java -jar ./pakku.jar export
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
 
       - name: Rename artifact server
         run: |
@@ -221,16 +245,21 @@ jobs:
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export
         run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar --debug fetch
           java -jar pakku.jar --debug export
           
@@ -286,9 +315,11 @@ jobs:
           modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-          changelog: ${{ needs.info.outputs.changelog }}
+          changelog: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.diff }}
           changelog-format: markdown
-          game-version: ${{ needs.info.outputs.mc_version }}
+          game-version: ${{ needs.info.outputs.minecraft_version }}
           release-type: ${{ needs.info.outputs.release_type }}
 
   # release-modrinth:
@@ -323,7 +354,7 @@ jobs:
   #           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
   #           changelog: ${{ needs.info.outputs.changelog }}
   #           changelog-format: markdown
-  #           game-version: ${{ needs.info.outputs.mc_version }}
+  #           game-version: ${{ needs.info.outputs.minecraft_version }}
   #           display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
   #           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
   #           release-type: ${{ needs.info.outputs.release_type }}
@@ -355,14 +386,12 @@ jobs:
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ```markdown
-            ${{ needs.info.outputs.diff }}
-            ```
+            ${{ steps.info.outputs.diff != '' && format('```markdown\n{}\n```', steps.info.outputs.diff) }}
           files: |
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
-          prerelease: false
+          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -381,10 +410,11 @@ jobs:
           content: |
             **Release**: `${{ needs.info.outputs.project_version }}`
             **Release Type**: `${{ needs.info.outputs.release_type }}`
-            **Game Version**: `${{ needs.info.outputs.mc_version }}`
+            **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
+
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
-            ```markdown
-            ${{ needs.info.outputs.changelog }}
-            ```
+             ```markdown
+            ${{ needs.info.outputs.truncated_changelog }}
+            - ...```
             ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
