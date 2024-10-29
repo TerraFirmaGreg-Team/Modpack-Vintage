@@ -20,11 +20,6 @@
     "client_overrides": [
         "resourcepacks"
     ],
-    "multimc_overrides": [
-        "icon.png",
-        "instance.cfg",
-        "mmc-pack.json"
-    ],
     "projects": {
         "ambient-environment": {
             "side": "CLIENT"
