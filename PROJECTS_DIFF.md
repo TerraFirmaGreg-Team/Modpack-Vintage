@@ -6,6 +6,7 @@
 - Gregic Probe: CEu
 - PaperFixes
 - StellarCore
+- TopAllDependents
 - UniLib
 
 ### Removed
@@ -14,6 +15,7 @@
 - Better Ping Display
 - GregTech Food Option
 - No Advancements
+- TOP Addons
 - TOP Extras
 
 ### Updated
@@ -44,7 +46,7 @@
 - LegendaryTooltips-1.12.2-1.1.10.jar             -> LegendaryTooltips-1.12.2-1.1.11.jar
 - !mixinbooter-9.1.jar                            -> !mixinbooter-9.4.jar
 - modularui-2.4.2.jar                             -> modularui-2.4.3.jar
-- movingelevators-1.4.6-forge-mc1.12.jar          -> movingelevators-1.4.8a-forge-mc1.12.jar
+- movingelevators-1.4.6-forge-mc1.12.jar          -> movingelevators-1.4.9a-forge-mc1.12.jar
 - nae2-1.6.1.jar                                  -> nae2-1.6.4.jar
 - OpenComputers-MC1.12.2-1.8.3+274990f.jar        -> OpenComputers-MC1.12.2-1.8.6+cd8851e.jar
 - particleculling-1.12.2-v1.4.1.jar               -> particleculling-1.12.2-v1.4.3.jar
@@ -53,7 +55,7 @@
 - Sledgehammer-1.12.2-2.0.25.jar                  -> Sledgehammer-1.12.2-2.0.26.jar
 - _supermartijn642corelib-1.1.17-forge-mc1.12.jar -> _supermartijn642corelib-1.1.17a-forge-mc1.12.jar
 - TerraFirmaGreg-Core-1.12.x-2.1.2.jar            -> TerraFirmaGreg-Core-Vintage-2.1.4.jar
-- TheOneProbe-CE-1.12-1.2.0.jar                   -> TheOneProbe-CE-1.12-1.2.9.jar
+- TheOneProbe-CE-1.12-1.2.0.jar                   -> TheOneProbe-CE-1.12-1.3.0-a2.jar
 - UniversalTweaks-1.12.2-1.9.0.jar                -> UniversalTweaks-1.12.2-1.12.0.jar
 - Valkyrie-0.2-Dev-10.jar                         -> Valkyrie-0.2.jar
 - vintagefix-0.4.0.jar                            -> vintagefix-0.5.1.jar
