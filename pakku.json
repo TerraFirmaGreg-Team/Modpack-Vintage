@@ -134,6 +134,9 @@
         },
         "jetif": {
             "side": "CLIENT"
+        },
+        "customskinloader": {
+            "side": "CLIENT"
         }
     }
 }
