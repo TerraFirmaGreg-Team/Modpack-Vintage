@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.5.5] - 30.10.2024
+### Changes
+- Serverpack fix. Removed CustomSkinLoader.
+- Added ILAORE texture-packs.
+- Fixed NBT reading error.
+
 ## [4.5.4] - 30.10.2024
 ### Changes
 - Make a backup before updating, there were quite a few changes that I don't remember anymore.

@@ -16,6 +16,7 @@ config/jei/world/
 config/gregtech/terminal/
 config/roughlyenoughitems/
 config/fantasticlib/
+config/better_quest_popup/completed-cache/
 
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
@@ -99,4 +100,12 @@ OpenComputersMod-*
 hei_bookmarks.ini
 
 # Server data
+.pakku/server-overrides/libraries
+.pakku/server-overrides/config
+.pakku/server-overrides/defaultconfigs
+.pakku/server-overrides/groovy
+.pakku/server-overrides/scripts
+.pakku/server-overrides/mods
+.pakku/server-overrides/user_jvm_args.txt
+
 

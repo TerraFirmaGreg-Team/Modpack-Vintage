@@ -1623,6 +1623,7 @@
         {
             "pakku_id": "4i5141UHqqIuGKnq",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "customskinloader"
             },
@@ -2679,6 +2680,66 @@
             ]
         },
         {
+            "pakku_id": "CFuHY1cq7vdgfRpr",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "gregtech-revival-32x",
+                "modrinth": "gregtech-revival-32x"
+            },
+            "name": {
+                "curseforge": "GregTech Revival 32x",
+                "modrinth": "GregTech Revival 32x"
+            },
+            "id": {
+                "curseforge": "964322",
+                "modrinth": "fUawEtti"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "GregTech Revival 32x 1.12.2 ver 0.01.zip",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5144/278/GregTech Revival 32x 1.12.2 ver 0.01.zip",
+                    "id": "5144278",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "ed260035bc2764d8ee36f87af873b86d2ac85693",
+                        "md5": "3b2e27e93af3f8d2c18e822df77fd0b6"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 5920444,
+                    "date_published": "2024-02-28T21:25:25.773Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "GregTech Revival 32x 1.12.2 ver 0.03.zip",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/o5zEUuUj/GregTech Revival 32x 1.12.2 ver 0.03.zip",
+                    "id": "o5zEUuUj",
+                    "parent_id": "fUawEtti",
+                    "hashes": {
+                        "sha512": "42e0f7be01f19b30b95f26446263a4f6b4f1244d8caa992cb198f7e9b0ac8e6f4b1c9ee22b3e5da234b8c5dfa6b15aa856cb24da17b8bd11a84d9fff53c82651",
+                        "sha1": "fd7f155ae613536cc4d2a9e94f104915b4608f42"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 36859447,
+                    "date_published": "2024-08-18T20:32:45.811368Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ap6yndDuW78bmNfW",
             "type": "MOD",
             "slug": {
@@ -2903,6 +2964,44 @@
                     ],
                     "size": 396958,
                     "date_published": "2021-09-11T08:14:10.960Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "bcy6maCbGazOaYeu",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "improved-applied-energistics-2",
+                "modrinth": "improved-applied-energistics-2"
+            },
+            "name": {
+                "curseforge": "Improved Applied Energistics 2 (ae2, ae 2)",
+                "modrinth": "Improved Applied Energistics 2"
+            },
+            "id": {
+                "curseforge": "891816",
+                "modrinth": "dOV2wnYX"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Improved AE 2 1.12.2 ver 0.01 - 32x32.zip",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5150/860/Improved AE 2 1.12.2 ver 0.01 - 32x32.zip",
+                    "id": "5150860",
+                    "parent_id": "891816",
+                    "hashes": {
+                        "sha1": "73e1decef50ebfff85d39dc45601c67364b4ce31",
+                        "md5": "824072cbb98b853d4447cb5d9b87617a"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 1419779,
+                    "date_published": "2024-03-02T11:43:28.353Z"
                 }
             ]
         },
@@ -5355,7 +5454,8 @@
                         "sha1": "b49407c614236b1bbdfe2fbaefbc774b6142dc5b",
                         "md5": "4b8d32b0b0dfbd7a1fac09a187eeea5d"
                     },
-                    "required_dependencies": [],
+                    "required_dependencies": [
+                    ],
                     "size": 329037,
                     "date_published": "2024-10-13T08:45:57.997Z"
                 }
