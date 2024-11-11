@@ -9,7 +9,7 @@
 		uid: "afdaf1e9",
 		type: "item",
 		items: [{
-			item: "tfcalloycalc:alloy_calculator"
+			item: "tfc:alloy_calculator"
 		}]
 	}]
 }
