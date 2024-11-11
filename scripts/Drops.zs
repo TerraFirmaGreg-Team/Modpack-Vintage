@@ -24,7 +24,7 @@ Dropt.list("tfg/dropt/florae_urn").add(Dropt.rule()
 
 // Исправление выпадения луж
 Dropt.list("tfg/dropt/puddles").add(Dropt.rule()
-  .matchDrops([<puddles:puddle>])
+  .matchDrops([<tfc:puddle>])
   .replaceStrategy("REPLACE_ITEMS")
   .addDrop(Dropt.drop()));
 
