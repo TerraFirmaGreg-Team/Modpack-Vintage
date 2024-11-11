@@ -108,9 +108,6 @@
         "wrapfix": {
             "side": "CLIENT"
         },
-        "tfc-towerheat": {
-            "side": "CLIENT"
-        },
         "tfc-toohotaroundhere": {
             "side": "CLIENT"
         },
