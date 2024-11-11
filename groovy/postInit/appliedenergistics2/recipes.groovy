@@ -665,7 +665,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // Formation Core
-crafting.addShaped("tfg/ae2/formation_core_alt", item('appliedenergistics2:material', 43) * 2, [
+crafting.addShaped("tfg/ae2/formation_core_alt", item('appliedenergistics2:material', 43), [
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')],
         [item('appliedenergistics2:material', 24), ore('crystalPureNetherQuartz'), item('appliedenergistics2:material', 24)],
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')]])
