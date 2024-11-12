@@ -131,10 +131,10 @@ jobs:
           
       - name: Generate Github Summary
         run: |
-          echo "📃 **Name**: `${{ steps.project_name.outputs.value }}`" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release**: `${{ steps.project_version.outputs.value }}`" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release Type**: `${{ env.RELEASE_TYPE }}`" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Game Version**: `${{ env.MINECRAFT_VERSION }}`" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           
           echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
           if [ -n "${{ steps.lockfile.outputs.diff }}" ]; then
