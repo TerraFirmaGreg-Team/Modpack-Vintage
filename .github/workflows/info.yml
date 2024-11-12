@@ -58,12 +58,6 @@ jobs:
 
           echo "🔎 Getting previous lockfile..."
 
-          # Проверяем, есть ли теги в репозитории
-          if ! git tag -l &> /dev/null; then
-            echo "❌ No tags found in repository"
-            exit 1
-          fi
-
           # Получаем последний тег
           latest_tag=$(git describe --tags --abbrev=0)
           if [ -z "$latest_tag" ]; then
