@@ -99,6 +99,9 @@ jobs:
             echo "❌ File pakku-lock.json not found in current commit" && exit 1
           else
             echo "✔️ File pakku-lock.json found in current commit: $pakku_lock_current"
+
+            echo "🔍 Contents of ./pakku-lock-prev.json:"
+            cat ./pakku-lock-prev.json
           fi
 
           # Выполняем сравнение пакетов с помощью пакета pakku.jar
