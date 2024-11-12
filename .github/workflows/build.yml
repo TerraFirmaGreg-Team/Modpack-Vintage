@@ -183,3 +183,18 @@ jobs:
           name: ${{ inputs.project_full_name }}-multimc
           path: .pakku/multimc-overrides/${{ inputs.project_full_name }}-multimc.zip
           if-no-files-found: error
+
+
+  build:
+    name: Build
+    needs: [build-modpack, build-server, build-multimc]
+    uses: ./.github/workflows/release.yml
+    with:
+      project_version: ${{ inputs.project_version }}
+      project_name: ${{ inputs.project_name }}
+      project_full_name: ${{ inputs.project_full_name }}
+      changelog: ${{ inputs.changelog }}
+      diff: ${{ inputs.diff }}
+      release_type: ${{ inputs.release_type }}
+      minecraft_version: ${{ inputs.minecraft_version }}
+    secrets: inherit

@@ -23,7 +23,7 @@ jobs:
       project_name: ${{ steps.project_name.outputs.value }}
       project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
       changelog: ${{ steps.changelog.outputs.description }}
-      diff: ${{ steps.lockfile.outputs.diff }}
+      diff: ${{ steps.check.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
       exists: ${{ steps.check_tag.outputs.exists }}
@@ -35,28 +35,25 @@ jobs:
           fetch-depth: 0
     
       - name: Check file
+        id: check
         shell: bash
         run: |
           set +e
           echo "🔎 Getting modpack info..."
+
+          # Проверяем, существет ли pakku-lock.json
           if [ ! -f pakku-lock.json ]; then
             echo "❌ Could not find pakku-lock.json" && exit 1
           else
             echo "✔️ pakku-lock.json"
           fi
+
+          # Проверяем, существет ли pakku.json
           if [ ! -f pakku.json ]; then
             echo "❌ Could not find pakku.json" && exit 1
           else
             echo "✔️ pakku.json"
           fi
-    
-      - name: Get previous lockfile
-        id: lockfile
-        shell: bash
-        run: |
-          set +e
-
-          echo "🔎 Getting previous lockfile..."
 
           # Получаем последний тег
           latest_tag=$(git describe --tags --abbrev=0)
@@ -99,6 +96,7 @@ jobs:
             cat -v PROJECTS_DIFF.md
             echo EOF
           } >> "$GITHUB_OUTPUT"
+          echo "✔️ Formatting completed"
   
 
       - name: Get Project Name
@@ -123,7 +121,7 @@ jobs:
 
       - name: Upload Diff
         id: diff
-        if: ${{ steps.lockfile.outputs.diff != '' }}
+        if: ${{ steps.check.outputs.diff != '' }}
         uses: actions/upload-artifact@v4.4.3
         with:
           name: Mods-diff
@@ -143,8 +141,8 @@ jobs:
           echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          if [ -n "${{ steps.lockfile.outputs.diff != '' }}" ]; then
-            echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          if [ -n "${{ steps.check.outputs.diff != '' }}" ]; then
+            echo "${{ steps.check.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
           fi
 
   build:
