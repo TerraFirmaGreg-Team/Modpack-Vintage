@@ -3357,6 +3357,74 @@
             ]
         },
         {
+            "pakku_id": "v9OolJk2B05GI4Hy",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "modernity",
+                "modrinth": "modernity"
+            },
+            "name": {
+                "curseforge": "Modernity",
+                "modrinth": "Modernity"
+            },
+            "id": {
+                "curseforge": "300317",
+                "modrinth": "rx58ZUPu"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Modernity-f3-3.10.2.zip",
+                    "mc_versions": [
+                        "1.12.1",
+                        "1.12",
+                        "1.12.2",
+                        "1.12-Snapshot"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5789/809/Modernity-f3-3.10.2.zip",
+                    "id": "5789809",
+                    "parent_id": "300317",
+                    "hashes": {
+                        "sha1": "58babf749ab21af4a9a7c7f77ddce91e430ebedb",
+                        "md5": "052ef1de9afdbbbf0f5236af20be647c"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 2249122,
+                    "date_published": "2024-10-06T21:40:11.523Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Modernity-f3-3.10.2.zip",
+                    "mc_versions": [
+                        "1.11",
+                        "1.11.1",
+                        "1.11.2",
+                        "1.12",
+                        "1.12.1",
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/rx58ZUPu/versions/qn52HWf6/Modernity-f3-3.10.2.zip",
+                    "id": "qn52HWf6",
+                    "parent_id": "rx58ZUPu",
+                    "hashes": {
+                        "sha512": "a277b17437de4b79acd750e3b2fb63ae24c22da2b285e9b6fca9bb299611b9e96926d5609620480e7a68939b34e8286021f407c46db8d723600a191dd7f138be",
+                        "sha1": "58babf749ab21af4a9a7c7f77ddce91e430ebedb"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 2249122,
+                    "date_published": "2024-10-06T21:40:41.151549Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "b3JLUNziFSjLdUrv",
             "type": "MOD",
             "slug": {
@@ -4678,7 +4746,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.1.5.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.1.6.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4686,18 +4754,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5893/78/TerraFirmaGreg-Core-Vintage-2.1.5.jar",
-                    "id": "5893078",
+                    "url": "https://edge.forgecdn.net/files/5894/867/TerraFirmaGreg-Core-Vintage-2.1.6.jar",
+                    "id": "5894867",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "a39fa9498a64df9c5a93733e6fd888dd5e3ac7fd",
-                        "md5": "5be37ec03648ea4fc9935b5890fc4e86"
+                        "sha1": "e860d7c6cfa2630111670637473eb3fda4ebaa37",
+                        "md5": "3cfb2af3d214c966e4f7724eb1a5166a"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 65317705,
-                    "date_published": "2024-11-11T03:34:50.520Z"
+                    "size": 65372551,
+                    "date_published": "2024-11-11T20:02:41.690Z"
                 }
             ]
         },
