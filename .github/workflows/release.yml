@@ -16,9 +16,6 @@ on:
       changelog:
         required: true
         type: string
-      truncated_changelog:
-        required: true
-        type: string
       diff:
         required: true
         type: string
@@ -50,12 +47,12 @@ jobs:
       - name: Download artifact curseforge
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-curseforge
+          name: ${{ inputs.project_full_name }}-curseforge
 
       - name: Download artifact server
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          name: ${{ inputs.project_full_name }}-serverpack
 
       - name: Upload Curseforge
         id: release
@@ -63,16 +60,16 @@ jobs:
         with:
           api-token: ${{ secrets.CURSEFORGE_TOKEN }}
           project-id: ${{ vars.CURSEFORGE_ID }}
-          display-name: ${{ needs.info.outputs.project_full_name }}
-          modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          display-name: ${{ inputs.project_full_name }}
+          modpack-path: ${{ inputs.project_full_name }}-curseforge.zip
+          server-display-name: ${{ inputs.project_full_name }}-serverpack
+          modpack-server-path: ${{ inputs.project_full_name }}-serverpack.zip
           changelog: |
-            ${{ needs.info.outputs.changelog }}
-            ${{ needs.info.outputs.diff }}
+            ${{ inputs.changelog }}
+            ${{ inputs.diff }}
           changelog-format: markdown
-          game-version: ${{ needs.info.outputs.minecraft_version }}
-          release-type: ${{ needs.info.outputs.release_type }}
+          game-version: ${{ inputs.minecraft_version }}
+          release-type: ${{ inputs.release_type }}
 
   release-modrinth:
       name: Release to Modrinth
@@ -88,12 +85,12 @@ jobs:
         - name: Download artifact modrinth
           uses: actions/download-artifact@v4.1.8
           with:
-            name: ${{ needs.info.outputs.project_full_name }}-modrinth
+            name: ${{ inputs.project_full_name }}-modrinth
     
         - name: Download artifact server
           uses: actions/download-artifact@v4.1.8
           with:
-            name: ${{ needs.info.outputs.project_full_name }}-serverpack
+            name: ${{ inputs.project_full_name }}-serverpack
     
         - name: Upload Modrinth
           id: release
@@ -101,14 +98,14 @@ jobs:
           with:
             api-token: ${{ secrets.MODRINTH_TOKEN }}
             project-id: ${{ vars.MODRINTH_ID }}
-            modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-            modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-            changelog: ${{ needs.info.outputs.changelog }}
+            modpack-path: ${{ inputs.project_full_name }}-modrinth.mrpack
+            modpack-server-path: ${{ inputs.project_full_name }}-serverpack.zip
+            changelog: ${{ inputs.changelog }}
             changelog-format: markdown
-            game-version: ${{ needs.info.outputs.minecraft_version }}
-            display-name: ${{ needs.info.outputs.project_full_name }}
-            server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-            release-type: ${{ needs.info.outputs.release_type }}
+            game-version: ${{ inputs.minecraft_version }}
+            display-name: ${{ inputs.project_full_name }}
+            server-display-name: ${{ inputs.project_full_name }}-serverpack
+            release-type: ${{ inputs.release_type }}
 
   release-github:
     name: Release to GitHub
@@ -129,25 +126,25 @@ jobs:
         uses: Xikaro/close-issues-based-on-label@master
         env:
           LABEL: "2. Status: In Dev"
-          COMMENT: In ${{ needs.info.outputs.project_version }}
+          COMMENT: In ${{ inputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create release
         id: release
         uses: softprops/action-gh-release@v2.0.9
         with:
-          name: ${{ needs.info.outputs.project_version }}
-          tag_name: ${{ needs.info.outputs.project_version }}
+          name: ${{ inputs.project_version }}
+          tag_name: ${{ inputs.project_version }}
           body: |
-            ${{ needs.info.outputs.changelog }}
+            ${{ inputs.changelog }}
             ```markdown
-            ${{ needs.info.outputs.diff }}
+            ${{ inputs.diff }}
             ```
           files: |
-            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-            ${{ needs.info.outputs.project_full_name }}-multimc.zip
-          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
+            ${{ inputs.project_full_name }}-curseforge.zip
+            ${{ inputs.project_full_name }}-serverpack.zip
+            ${{ inputs.project_full_name }}-multimc.zip
+          prerelease: ${{ inputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -156,6 +153,13 @@ jobs:
     needs: [release-curseforge, release-github]
     runs-on: ubuntu-latest
     steps:
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ inputs.changelog }}'
+          max_chars: '1450'
+
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.2
         with:
@@ -164,13 +168,13 @@ jobs:
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
           content_links_no_embed: .+
           content: |
-            **Release**: `${{ needs.info.outputs.project_version }}`
-            **Release Type**: `${{ needs.info.outputs.release_type }}`
-            **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
+            **Release**: `${{ inputs.project_version }}`
+            **Release Type**: `${{ inputs.release_type }}`
+            **Game Version**: `${{ inputs.minecraft_version }}`
 
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-vintage/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
              ```markdown
-            ${{ needs.info.outputs.truncated_changelog }}
+            ${{ steps.truncated.outputs.text  }}
             - ...```
             ** [Read more...](${{ needs.release-github.outputs.url }}) **

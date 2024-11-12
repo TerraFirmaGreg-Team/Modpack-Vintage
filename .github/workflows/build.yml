@@ -16,9 +16,6 @@ on:
       changelog:
         required: true
         type: string
-      truncated_changelog:
-        required: true
-        type: string
       diff:
         required: true
         type: string
@@ -50,7 +47,7 @@ jobs:
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
-          VERSION=${{ needs.info.outputs.project_version }}
+          VERSION=${{ inputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -74,8 +71,8 @@ jobs:
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-curseforge
-          path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          name: ${{ inputs.project_full_name }}-curseforge
+          path: ./build/curseforge/${{ inputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
       - name: Rename artifact modrinth
@@ -86,8 +83,8 @@ jobs:
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-modrinth
-          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+          name: ${{ inputs.project_full_name }}-modrinth
+          path: ./build/modrinth/${{ inputs.project_full_name }}-modrinth.mrpack
           if-no-files-found: warn
 
   build-server:
@@ -106,7 +103,7 @@ jobs:
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
-          VERSION=${{ needs.info.outputs.project_version }}
+          VERSION=${{ inputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -131,8 +128,8 @@ jobs:
       - name: Upload artifact server
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          name: ${{ inputs.project_full_name }}-serverpack
+          path: ./build/serverpack/${{ inputs.project_full_name }}-serverpack.zip
           if-no-files-found: error
 
   build-multimc:
@@ -151,7 +148,7 @@ jobs:
           grooovy="./groovy/runConfig.json"
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
-          VERSION=${{ needs.info.outputs.project_version }}
+          VERSION=${{ inputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
@@ -178,11 +175,11 @@ jobs:
           mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
           cd .pakku/multimc-overrides/
           
-          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+          zip -r ${{ inputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip multimc
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_full_name }}-multimc
-          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
+          name: ${{ inputs.project_full_name }}-multimc
+          path: .pakku/multimc-overrides/${{ inputs.project_full_name }}-multimc.zip
           if-no-files-found: error

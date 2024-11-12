@@ -3,7 +3,7 @@
 ## [4.5.6] - 12.11.2024
 ### Changes
 - Fixed crash error in server pack due to bansoukou.
-- TFC and almost all addons were dined in TFG-Core, all their functions will gradually be rewritten and implement TFC-Core. So far, EasyBreedingTFC, TFC-Florae-Fixes, TFC-TowerHeat, TFCAlloyCalc, TFC-Alcohols have been completely merged. If addons include blocks, items or substances, they are automatically converted to new ones.
+- TFC and almost all addons were dined in TerraFirmaGreg-Core, all their functions will gradually be rewritten and implement TerraFirmaGreg-Core. So far, EasyBreedingTFC, TFC-Florae-Fixes, TFC-TowerHeat, TFCAlloyCalc, TFC-Alcohols have been completely merged. If addons include blocks, items or substances, they are automatically converted to new ones.
 - Fixed AE recipe, core formation, now you get 1 core instead of 2.
 - Fixed a bug when you could put anything in the alloy calculator, now you can only put what has metal units.
 - Fixed a bug in the translation of forms with saws.
