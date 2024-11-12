@@ -66,16 +66,8 @@ jobs:
             echo "✔️ Latest tag found: $latest_tag"
           fi
 
-          # Получаем предыдущий тег
-          latest_tag_prev=$(git describe --tags --abbrev=0 $latest_tag^)
-          if [ -z "$latest_tag_prev" ]; then
-            echo "❌ Previous tag not found" && exit 1
-          else
-            echo "✔️ Previous tag found: $latest_tag_prev"
-          fi
-
           # Получаем хеш коммита, на котором основан предыдущий тег
-          latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev)
+          latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
           if [ -z "$latest_tagged_commit" ]; then
             echo "❌ Latest tagged commit not found" && exit 1
           else
