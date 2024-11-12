@@ -185,8 +185,8 @@ jobs:
           if-no-files-found: error
 
 
-  build:
-    name: Build
+  release:
+    name: Release
     needs: [build-modpack, build-server, build-multimc]
     uses: ./.github/workflows/release.yml
     with:
