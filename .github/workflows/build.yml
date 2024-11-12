@@ -1,0 +1,188 @@
+name: Build
+run-name: "Build #${{ github.run_number }}"
+
+on:
+  workflow_call:
+    inputs:
+      project_version:
+        required: true
+        type: string
+      project_name:
+        required: true
+        type: string
+      project_full_name:
+        required: true
+        type: string
+      changelog:
+        required: true
+        type: string
+      truncated_changelog:
+        required: true
+        type: string
+      diff:
+        required: true
+        type: string
+      release_type:
+        required: true
+        type: string
+      minecraft_version:
+        required: true
+        type: string
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-modpack:
+    name: Build Modpack
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          set +e
+
+          grooovy="./groovy/runConfig.json"
+          cat <<< $(jq '.debug = false' $grooovy) > $grooovy
+
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+
+      - name: Export modpack
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
+
+      - name: Rename artifact curseforge
+        run: |
+          cd ./build/curseforge/
+          mv *.zip $(basename -s .zip *.zip)-curseforge.zip
+          
+      - name: Upload artifact CurseForge
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
+          path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          if-no-files-found: error
+
+      - name: Rename artifact modrinth
+        run: |
+          cd ./build/modrinth/
+          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+
+      - name: Upload artifact modrinth
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-modrinth
+          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+          if-no-files-found: warn
+
+  build-server:
+    name: Build Server Pack
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          set +e
+
+          grooovy="./groovy/runConfig.json"
+          cat <<< $(jq '.debug = false' $grooovy) > $grooovy
+
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+
+      - name: Export modpack
+        run: |
+          mv -vf ./.pakku/server-overrides/* ./
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
+
+      - name: Rename artifact server
+        run: |
+          cd ./build/serverpack/
+          mv *.zip $(basename -s .zip *.zip)-serverpack.zip
+
+      - name: Upload artifact server
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          if-no-files-found: error
+
+  build-multimc:
+    name: Build MultiMC Pack
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          set +e
+
+          grooovy="./groovy/runConfig.json"
+          cat <<< $(jq '.debug = false' $grooovy) > $grooovy
+
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+
+      - name: Export
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar --debug fetch
+          java -jar pakku.jar --debug export
+          
+      - name: Move files
+        run: |
+          ls
+          mkdir -p .pakku/multimc-overrides/flame
+          mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
+          mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
+          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
+          cd .pakku/multimc-overrides/
+          
+          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+      
+      - name: Upload zip multimc
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-multimc
+          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
+          if-no-files-found: error

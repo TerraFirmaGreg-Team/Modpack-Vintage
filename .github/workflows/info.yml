@@ -1,0 +1,155 @@
+name: Info
+run-name: "Info #${{ github.run_number }}"
+
+env:
+  RELEASE_TYPE: "release"
+  MINECRAFT_VERSION: "1.12.2"
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  info:
+    name: Project Info
+    runs-on: ubuntu-latest
+    outputs:
+      project_version: ${{ steps.project_version.outputs.tag }}
+      project_name: ${{ steps.project_name.outputs.value }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
+      changelog: ${{ steps.changelog.outputs.description }}
+      truncated_changelog: ${{ steps.truncated.outputs.text }}
+      diff: ${{ steps.lockfile.outputs.diff }}
+      release_type: ${{ env.RELEASE_TYPE }}
+      minecraft_version: ${{ env.MINECRAFT_VERSION }}
+      exists: ${{ steps.check_tag.outputs.exists }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+    
+      - name: Check lockfile
+        shell: bash
+        run: |
+          set +e
+          echo "🔎 Getting modpack info..."
+          if [ ! -f pakku-lock.json ]; then
+            echo "::error::Could not find pakku-lock.json" && exit 1
+          else
+            echo "✔️ pakku-lock.json"
+          fi
+          if [ ! -f pakku.json ]; then
+            echo "::error::Could not find pakku.json" && exit 1
+          else
+            echo "✔️ pakku.json"
+          fi
+    
+      - name: Get previous lockfile
+        id: lockfile
+        shell: bash
+        run: |
+          set +e
+
+          echo "🔎 Getting previous lockfile..."
+          if [ "$latest_tag" = ${{ github.ref_name }} ]; then
+            latest_tag_prev=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
+            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev | sed -n 2p)
+    
+            if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
+              echo "📦 pakku-lock.json found in previous tag"
+              git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+              curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+              java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json
+            else
+              echo "❌ File pakku-lock.json not found in previous tag"
+            fi
+          fi
+    
+      - name: Create PROJECTS_DIFF.md
+        shell: bash
+        run: |
+          if [ ! -f PROJECTS_DIFF.md ]; then
+            touch PROJECTS_DIFF.md
+            echo "📝 Created PROJECTS_DIFF.md"
+          fi
+    
+      - name: Format PROJECTS_DIFF.md
+        shell: bash
+        run: |
+          echo "📝 Formatting PROJECTS_DIFF.md..."
+          {
+            echo 'diff<<EOF'
+            cat -v PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Get Project Name
+        id: project_name
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "name"
+
+      - name: Get Project Version
+        id: project_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "version"
+
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ steps.changelog.outputs.description }}'
+          max_chars: '1450'
+
+      - name: Upload Diff
+        id: diff
+        uses: actions/upload-artifact@v4.4.3
+        if: ${{ steps.lockfile.outputs.diff != '' }}
+        with:
+          name: Mods-diff
+          path: PROJECTS_DIFF.md
+
+      - name: Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.project_version.outputs.tag }}
+          
+      - name: Generate Github Summary
+        run: |
+          echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+
+  build:
+    name: Build
+    needs: [info]
+    if: needs.info.outputs.exists != 'true'
+    uses: ./.github/workflows/build.yml
+    with:
+      project_version: ${{ needs.info.outputs.project_version }}
+      project_name: ${{ needs.info.outputs.project_name }}
+      project_full_name: ${{ needs.info.outputs.project_full_name }}
+      changelog: ${{ needs.info.outputs.changelog }}
+      truncated_changelog: ${{ needs.info.outputs.truncated_changelog }}
+      diff: ${{ needs.info.outputs.diff }}
+      release_type: ${{ needs.info.outputs.release_type }}
+      minecraft_version: ${{ needs.info.outputs.minecraft_version }}
+    secrets: inherit
