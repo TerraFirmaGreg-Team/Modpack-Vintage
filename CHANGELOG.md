@@ -2,13 +2,13 @@
 
 ## [4.5.6] - 12.11.2024
 ### Changes
-- Устранена ошибка краша, в серверпаке, из-за bansoukou.
-- TFC и почти все аддоны были обедены в TFG-Core, постепенно все их функции будут переписаны и обедены в TFC-Core. Пока полностью обьеденены EasyBreedingTFC, TFC-Florae-Fixes, TFC-TowerHeat, TFCAlloyCalc, TFC-Alcohols. Если аддоны добавляют блоки, предметы или сущности, они будут автоматически конвертироваться в новые.
-- Исправлен рецепт AE, ядра формирования, теперь получается 1 ядро, вместо 2.
-- Исправлена ошибка, когда в калькулятор сплавов можно было класть все что угодно, теперь класть можно только то, что имеет юниты метала.
-- Исправлена ошибка в переводе для формы с пилы.
-- Добавлен texturepack Modernity по умолчанию.
-- Устранено зависание и краш, при наступлении весны.
+- Fixed crash error in server pack due to bansoukou.
+- TFC and almost all addons were dined in TFG-Core, all their functions will gradually be rewritten and implement TFC-Core. So far, EasyBreedingTFC, TFC-Florae-Fixes, TFC-TowerHeat, TFCAlloyCalc, TFC-Alcohols have been completely merged. If addons include blocks, items or substances, they are automatically converted to new ones.
+- Fixed AE recipe, core formation, now you get 1 core instead of 2.
+- Fixed a bug when you could put anything in the alloy calculator, now you can only put what has metal units.
+- Fixed a bug in the translation of forms with saws.
+- Added the Modernity texture pack by default.
+- Eliminated dependency and crash when spring arrives.
 
 ## [4.5.5] - 30.10.2024
 ### Changes
