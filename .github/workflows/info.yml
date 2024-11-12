@@ -83,9 +83,13 @@ jobs:
 
           # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
           git show $latest_tagged_commit -- ./pakku-lock.json > ./pakku-lock-prev.json
-          echo "✔️ File pakku-lock-prev.json created"
+          if [ -s ./pakku-lock-prev.json ]; then
+            echo "✔️ File pakku-lock-prev.json created"
+          else
+            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
+          fi
 
-          # Качаем последний пакет pakku.jar
+          # Качаем последний пакет pakku
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "✔️ pakku.jar downloaded"
 
@@ -99,7 +103,11 @@ jobs:
 
           # Выполняем сравнение пакетов с помощью пакета pakku.jar
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
-          echo "✔️ Comparison completed"
+          if [ -f PROJECTS_DIFF.md ]; then
+            echo "✔️ Comparison completed"
+          else
+            echo "❌ Error: File PROJECTS_DIFF.md not created" && exit 1
+          fi
     
       - name: Format PROJECTS_DIFF.md
         shell: bash
