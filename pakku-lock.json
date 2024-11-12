@@ -3956,43 +3956,6 @@
             ]
         },
         {
-            "pakku_id": "sEznLvsdHpdiaiux",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "placement-preview"
-            },
-            "name": {
-                "curseforge": "Placement Preview"
-            },
-            "id": {
-                "curseforge": "248402"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "placementpreview-1.12.2-0.3.2.jar",
-                    "mc_versions": [
-                        "1.12.1",
-                        "1.12",
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2493/33/placementpreview-1.12.2-0.3.2.jar",
-                    "id": "2493033",
-                    "parent_id": "248402",
-                    "hashes": {
-                        "sha1": "c91d1c8aee33434cd7a0739e46961ca060e17255",
-                        "md5": "2844a18f497e9b2b866d1cca4243cf19"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 51226,
-                    "date_published": "2017-10-22T04:23:07.890Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "xb7HgSfWcy8wEvJL",
             "type": "MOD",
             "slug": {
