@@ -83,7 +83,7 @@ jobs:
           fi
 
           # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
-          git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+          git show $latest_tagged_commit -- ./pakku-lock.json > ./pakku-lock-prev.json
           echo "✔️ File pakku-lock-prev.json created"
 
           # Качаем последний пакет pakku.jar
