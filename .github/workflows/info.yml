@@ -82,13 +82,6 @@ jobs:
             echo "✔️ Latest tagged commit found: $latest_tagged_commit"
           fi
 
-          # Проверяем, существует ли файл pakku-lock.json в предыдущем теге
-          if ! git ls-tree -r $latest_tagged_commit -- pakku-lock.json &> /dev/null; then
-            echo "❌ File pakku-lock.json not found in previous tag" && exit 1
-          else
-            echo "✔️ File pakku-lock.json found in previous tag"
-          fi
-
           # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
           git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
           echo "✔️ File pakku-lock-prev.json created"
