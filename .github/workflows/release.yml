@@ -71,41 +71,41 @@ jobs:
           game-version: ${{ inputs.minecraft_version }}
           release-type: ${{ inputs.release_type }}
 
-  release-modrinth:
-      name: Release to Modrinth
-      runs-on: ubuntu-latest
-      steps:
-        - name: Check if MODRINTH_API_TOKEN exist
-          shell: bash
-          run: |
-            if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-            fi  
+  # release-modrinth:
+  #     name: Release to Modrinth
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - name: Check if MODRINTH_API_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
     
-        - name: Download artifact modrinth
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ inputs.project_full_name }}-modrinth
+  #       - name: Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ inputs.project_full_name }}-modrinth
     
-        - name: Download artifact server
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ inputs.project_full_name }}-serverpack
+  #       - name: Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ inputs.project_full_name }}-serverpack
     
-        - name: Upload Modrinth
-          id: release
-          uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-          with:
-            api-token: ${{ secrets.MODRINTH_TOKEN }}
-            project-id: ${{ vars.MODRINTH_ID }}
-            modpack-path: ${{ inputs.project_full_name }}-modrinth.mrpack
-            modpack-server-path: ${{ inputs.project_full_name }}-serverpack.zip
-            changelog: ${{ inputs.changelog }}
-            changelog-format: markdown
-            game-version: ${{ inputs.minecraft_version }}
-            display-name: ${{ inputs.project_full_name }}
-            server-display-name: ${{ inputs.project_full_name }}-serverpack
-            release-type: ${{ inputs.release_type }}
+  #       - name: Upload Modrinth
+  #         id: release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_ID }}
+  #           modpack-path: ${{ inputs.project_full_name }}-modrinth.mrpack
+  #           modpack-server-path: ${{ inputs.project_full_name }}-serverpack.zip
+  #           changelog: ${{ inputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ inputs.minecraft_version }}
+  #           display-name: ${{ inputs.project_full_name }}
+  #           server-display-name: ${{ inputs.project_full_name }}-serverpack
+  #           release-type: ${{ inputs.release_type }}
 
   release-github:
     name: Release to GitHub
