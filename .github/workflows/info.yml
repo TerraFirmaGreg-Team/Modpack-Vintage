@@ -63,6 +63,8 @@ jobs:
           if [ -z "$latest_tag" ]; then
             echo "❌ Latest tag not found"
             exit 1
+          else
+            echo "✔️ Latest tag found: $latest_tag"
           fi
 
           # Получаем предыдущий тег
@@ -70,6 +72,8 @@ jobs:
           if [ -z "$latest_tag_prev" ]; then
             echo "❌ Previous tag not found"
             exit 1
+          else
+            echo "✔️ Previous tag found: $latest_tag_prev"
           fi
 
           # Получаем хеш коммита, на котором основан предыдущий тег
@@ -77,29 +81,38 @@ jobs:
           if [ -z "$latest_tagged_commit" ]; then
             echo "❌ Latest tagged commit not found"
             exit 1
+          else
+            echo "✔️ Latest tagged commit found: $latest_tagged_commit"
           fi
 
           # Проверяем, существует ли файл pakku-lock.json в предыдущем теге
           if ! git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
             echo "❌ File pakku-lock.json not found in previous tag"
             exit 1
+          else
+            echo "✔️ File pakku-lock.json found in previous tag"
           fi
 
           # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
           git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+          echo "✔️ File pakku-lock-prev.json created"
 
           # Качаем последний пакет pakku.jar
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          echo "✔️ pakku.jar downloaded"
 
           # Получаем хеш текущего файла pakku-lock.json
           pakku_lock_current=$(git ls-files --error-unmatch ./pakku-lock.json)
           if [ -z "$pakku_lock_current" ]; then
             echo "❌ File pakku-lock.json not found in current commit"
             exit 1
+          else
+            echo "✔️ File pakku-lock.json found in current commit: $pakku_lock_current"
           fi
 
           # Выполняем сравнение пакетов с помощью пакета pakku.jar
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
+          echo "✔️ Comparison completed"
     
       - name: Format PROJECTS_DIFF.md
         shell: bash
