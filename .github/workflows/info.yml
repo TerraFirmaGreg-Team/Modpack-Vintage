@@ -82,7 +82,7 @@ jobs:
           fi
 
           # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
-          git show $latest_tagged_commit -- ./pakku-lock.json > ./pakku-lock-prev.json
+          git show -s $latest_tagged_commit -- ./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
