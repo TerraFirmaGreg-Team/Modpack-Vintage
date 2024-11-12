@@ -1,5 +1,5 @@
-name: Release
-run-name: "Release #${{ github.run_number }}"
+name: Project Release
+run-name: "Project Release #${{ github.run_number }}"
 
 on:
   workflow_call:

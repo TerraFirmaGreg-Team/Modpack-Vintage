@@ -1,5 +1,5 @@
-name: Info
-run-name: "Info #${{ github.run_number }}"
+name: Project Info
+run-name: "Project Info #${{ github.run_number }}"
 
 env:
   RELEASE_TYPE: "release"
@@ -127,12 +127,12 @@ jobs:
         uses: mukunku/tag-exists-action@v1.6.0
         id: check_tag
         with:
-          tag: ${{ steps.project_version.outputs.tag }}
+          tag: ${{ steps.project_version.outputs.value }}
           
       - name: Generate Github Summary
         run: |
           echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Project Version=${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY

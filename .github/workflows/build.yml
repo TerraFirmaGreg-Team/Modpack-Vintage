@@ -1,5 +1,5 @@
-name: Build
-run-name: "Build #${{ github.run_number }}"
+name: Project Build
+run-name: "Project Build #${{ github.run_number }}"
 
 on:
   workflow_call:
