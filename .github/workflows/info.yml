@@ -117,8 +117,8 @@ jobs:
 
       - name: Upload Diff
         id: diff
-        uses: actions/upload-artifact@v4.4.3
         if: ${{ steps.lockfile.outputs.diff != '' }}
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Mods-diff
           path: PROJECTS_DIFF.md
@@ -131,12 +131,15 @@ jobs:
           
       - name: Generate Github Summary
         run: |
-          echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 Project Version=${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Name**: `${{ steps.project_name.outputs.value }}`" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release**: `${{ steps.project_version.outputs.value }}`" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release Type**: `${{ env.RELEASE_TYPE }}`" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Game Version**: `${{ env.MINECRAFT_VERSION }}`" >> $GITHUB_STEP_SUMMARY
+          
           echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          if [ -n "${{ steps.lockfile.outputs.diff }}" ]; then
+            echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          fi
 
   build:
     name: Build
