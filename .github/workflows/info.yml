@@ -40,12 +40,12 @@ jobs:
           set +e
           echo "🔎 Getting modpack info..."
           if [ ! -f pakku-lock.json ]; then
-            echo "::error::Could not find pakku-lock.json" && exit 1
+            echo "❌ Could not find pakku-lock.json" && exit 1
           else
             echo "✔️ pakku-lock.json"
           fi
           if [ ! -f pakku.json ]; then
-            echo "::error::Could not find pakku.json" && exit 1
+            echo "❌ Could not find pakku.json" && exit 1
           else
             echo "✔️ pakku.json"
           fi
@@ -61,8 +61,7 @@ jobs:
           # Получаем последний тег
           latest_tag=$(git describe --tags --abbrev=0)
           if [ -z "$latest_tag" ]; then
-            echo "❌ Latest tag not found"
-            exit 1
+            echo "❌ Latest tag not found" && exit 1
           else
             echo "✔️ Latest tag found: $latest_tag"
           fi
@@ -70,8 +69,7 @@ jobs:
           # Получаем предыдущий тег
           latest_tag_prev=$(git describe --tags --abbrev=0 $latest_tag^)
           if [ -z "$latest_tag_prev" ]; then
-            echo "❌ Previous tag not found"
-            exit 1
+            echo "❌ Previous tag not found" && exit 1
           else
             echo "✔️ Previous tag found: $latest_tag_prev"
           fi
@@ -79,16 +77,14 @@ jobs:
           # Получаем хеш коммита, на котором основан предыдущий тег
           latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev)
           if [ -z "$latest_tagged_commit" ]; then
-            echo "❌ Latest tagged commit not found"
-            exit 1
+            echo "❌ Latest tagged commit not found" && exit 1
           else
             echo "✔️ Latest tagged commit found: $latest_tagged_commit"
           fi
 
           # Проверяем, существует ли файл pakku-lock.json в предыдущем теге
-          if ! git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
-            echo "❌ File pakku-lock.json not found in previous tag"
-            exit 1
+          if ! git ls-tree -r $latest_tagged_commit -- pakku-lock.json &> /dev/null; then
+            echo "❌ File pakku-lock.json not found in previous tag" && exit 1
           else
             echo "✔️ File pakku-lock.json found in previous tag"
           fi
@@ -104,8 +100,7 @@ jobs:
           # Получаем хеш текущего файла pakku-lock.json
           pakku_lock_current=$(git ls-files --error-unmatch ./pakku-lock.json)
           if [ -z "$pakku_lock_current" ]; then
-            echo "❌ File pakku-lock.json not found in current commit"
-            exit 1
+            echo "❌ File pakku-lock.json not found in current commit" && exit 1
           else
             echo "✔️ File pakku-lock.json found in current commit: $pakku_lock_current"
           fi
