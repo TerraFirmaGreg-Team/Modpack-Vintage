@@ -105,9 +105,6 @@
         "valkyrie": {
             "side": "CLIENT"
         },
-        "wrapfix": {
-            "side": "CLIENT"
-        },
         "tfc-toohotaroundhere": {
             "side": "CLIENT"
         },
