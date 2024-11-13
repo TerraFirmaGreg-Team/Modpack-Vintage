@@ -3,7 +3,6 @@ run-name: "Project Info #${{ github.run_number }}"
 
 env:
   RELEASE_TYPE: "release"
-  MINECRAFT_VERSION: "1.12.2"
 
 on:
   push:
@@ -25,7 +24,7 @@ jobs:
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
-      minecraft_version: ${{ env.MINECRAFT_VERSION }}
+      minecraft_version: ${{ steps.minecraft_version.outputs.value }}
       exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
@@ -55,7 +54,7 @@ jobs:
           fi
         
       - name: 📈 Get latest tag
-        id: get_latest_tag
+        id: latest_tag
         shell: bash
         run: |
           tag=$(git describe --tags --abbrev=0)
@@ -70,7 +69,7 @@ jobs:
         id: check_pakku_lock_prev
         shell: bash
         run: |
-          if ! git ls-tree -r ${{ steps.get_latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
+          if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
             echo "❌ File pakku-lock.json not found in previous tag" && exit 1
           else
             echo "✔️ File pakku-lock.json found in previous tag"
@@ -80,7 +79,7 @@ jobs:
         id: copy_pakku_lock_prev
         shell: bash
         run: |
-          git show tags/${{ steps.get_latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
+          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
@@ -95,7 +94,7 @@ jobs:
           echo "✔️ Downloaded pakku.jar "
         
       - name: 🔄 Run pakku diff
-        id: run_pakku_diff
+        id: pakku_diff
         shell: bash
         run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
@@ -130,6 +129,13 @@ jobs:
         with:
           file_path: "pakku.json"
           prop_path: "version"
+
+      - name: 📊 Get Minecraft Version
+        id: minecraft_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku-lock.json"
+          prop_path: "mc_versions"
         
       - name: 📄 Changelog Parser
         id: changelog
@@ -138,7 +144,7 @@ jobs:
           path: CHANGELOG.md
         
       - name: 📈 Upload Diff
-        id: diff
+        id: upload_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
         uses: actions/upload-artifact@v4.4.3
         with:
@@ -156,7 +162,7 @@ jobs:
           echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
           if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
