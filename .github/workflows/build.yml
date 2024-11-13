@@ -171,7 +171,7 @@ jobs:
   
 
   build-modpack:
-    name: Build Modpack
+    name: 📦 Build Modpack
     needs: [info]
     runs-on: ubuntu-latest
     if: needs.info.outputs.exists != 'true'
@@ -180,7 +180,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
@@ -199,29 +199,29 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export modpack
+      - name: 📦 Export modpack
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
-      - name: Rename artifact curseforge
+      - name: 📁 Rename artifact curseforge
         run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
-      - name: Upload artifact CurseForge
+      - name: 🚀 Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: Rename artifact modrinth
+      - name: 📁 Rename artifact modrinth
         run: |
           cd ./build/modrinth/
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: Upload artifact modrinth
+      - name: 🚀 Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
@@ -229,7 +229,7 @@ jobs:
           if-no-files-found: warn
 
   build-server:
-    name: Build Server
+    name: 📦 Build Server
     needs: [info]
     runs-on: ubuntu-latest
     if: needs.info.outputs.exists != 'true'
@@ -238,7 +238,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
@@ -257,18 +257,18 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export modpack
+      - name: 📦 Export modpack
         run: |
           mv -vf ./.pakku/server-overrides/* ./
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
-      - name: Rename artifact server
+      - name: 📁 Rename artifact server
         run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
-      - name: Upload artifact server
+      - name: 🚀 Upload artifact server
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
@@ -276,7 +276,7 @@ jobs:
           if-no-files-found: error
 
   build-multimc:
-    name: Build MultiMC
+    name: 📦 Build MultiMC
     needs: [info]
     runs-on: ubuntu-latest
     if: needs.info.outputs.exists != 'true'
@@ -285,7 +285,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
@@ -305,13 +305,13 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export
+      - name: 📦 Export
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar --debug fetch
           java -jar pakku.jar --debug export
           
-      - name: Move files
+      - name: 📁 Move files
         run: |
           ls
           mkdir -p .pakku/multimc-overrides/flame
@@ -322,7 +322,7 @@ jobs:
           
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
-      - name: Upload zip multimc
+      - name: 🚀 Upload zip multimc
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
@@ -330,31 +330,31 @@ jobs:
           if-no-files-found: error
 
   release-curseforge:
-    name: Release to CurseForge
+    name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server]
     runs-on: ubuntu-latest
     outputs:
       id: ${{ steps.release.outputs.id }}
 
     steps:
-      - name: Check if CURSEFORGE_TOKEN exist
+      - name: 🔒 Check if CURSEFORGE_TOKEN exist
         shell: bash
         run: |
           if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
             echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
           fi  
 
-      - name: Download artifact curseforge
+      - name: 📦 Download artifact curseforge
         uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
-      - name: Download artifact server
+      - name: 📦 Download artifact server
         uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
-      - name: Upload Curseforge
+      - name: 🚀 Upload Curseforge
         id: release
         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
@@ -372,29 +372,29 @@ jobs:
           release-type: ${{ needs.info.outputs.release_type }}
 
   release-modrinth:
-      name: Release to Modrinth
+      name: 🚀 Release to Modrinth
       needs: [info, build-modpack, build-server]
       runs-on: ubuntu-latest
 
       steps:
-        - name: Check if MODRINTH_API_TOKEN exist
+        - name: 🔒 Check if MODRINTH_API_TOKEN exist
           shell: bash
           run: |
             if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
               echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
             fi  
     
-        - name: Download artifact modrinth
+        - name: 📦 Download artifact modrinth
           uses: actions/download-artifact@v4.1.8
           with:
             name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
-        - name: Download artifact server
+        - name: 📦 Download artifact server
           uses: actions/download-artifact@v4.1.8
           with:
             name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
-        - name: Upload Modrinth
+        - name: 🚀 Upload Modrinth
           id: release
           uses: Xikaro/upload-curseforge-modpack-action@1.1.1
           with:
@@ -417,22 +417,22 @@ jobs:
       url: ${{ steps.release.outputs.url }}
 
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Download artifact
+      - name: 📦 Download artifact
         uses: actions/download-artifact@v4.1.8
         with:
           merge-multiple: true
 
-      - name: Сlose fixed in dev
+      - name: 🚫 Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
         env:
           LABEL: "2. Status: In Dev"
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create release
+      - name: 🚀 Create release
         id: release
         uses: softprops/action-gh-release@v2.0.9
         with:
@@ -452,18 +452,18 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
-    name: Discord Message
+    name: 📱 Discord Message
     needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
     steps:
-      - name: Truncate Changelog
+      - name: ✂️ Truncate Changelog
         id: truncated
         uses: cisox/read-more-action@v1.0.2
         with:
           text: '${{ needs.info.outputs.changelog }}'
           max_chars: '1450'
 
-      - name: Send Discord message
+      - name: 📨 Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.2
         with:
           key: ${{ secrets.DISCORD_RELEASES }}
