@@ -134,10 +134,9 @@ jobs:
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku-lock.json"
-          prop_path: "mc_versions"
 
       - run: |
-          echo ${{steps.minecraft_version.outputs.value}}
+          echo ${{steps.minecraft_version.outputs.mc_versions}}
         
       - name: 📄 Changelog Parser
         id: changelog
