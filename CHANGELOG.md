@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.5.7] - 13.11.2024
+### Changes
+- Fixed missing texture bug.
+
 ## [4.5.6] - 13.11.2024
 ### Changes
 - Fixed crash error in server pack due to bansoukou.
