@@ -110,9 +110,12 @@ jobs:
         shell: bash
         run: |
           echo "📝 Reading PROJECTS_DIFF.md to variable..."
-          DIFF_CONTENT=$(cat PROJECTS_DIFF.md)
+          {
+            echo 'diff<<EOF'
+            cat -v PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
           echo "✔️ Diff content read to variable"
-          echo "diff=${DIFF_CONTENT}" >> $GITHUB_OUTPUT
         
       - name: 📊 Get Project Name
         id: project_name
