@@ -20,6 +20,7 @@ jobs:
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
           content_links_no_embed: .+
+          allowed_mentions_parse_users: true
           allowed_mentions_users: 619555447443030028
           content: |
             **Server updated to**: `${{ inputs.project_version }}`
