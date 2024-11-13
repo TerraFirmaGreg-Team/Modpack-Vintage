@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   info:
-    name: Project Info
+    name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
       project_version: ${{ steps.project_version.outputs.tag }}
@@ -29,7 +29,7 @@ jobs:
       exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
-      - name: Checkout
+      - name: 📁 Checkout
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
@@ -70,7 +70,7 @@ jobs:
         id: check_pakku_lock_prev
         shell: bash
         run: |
-          if ! git ls-tree -r ${latest_tag} -- ./pakku-lock.json &> /dev/null; then
+          if ! git ls-tree -r ${{ steps.get_latest_tag.outputs.value }} -- ./pakku-lock.json &> /dev/null; then
             echo "❌ File pakku-lock.json not found in previous tag" && exit 1
           else
             echo "✔️ File pakku-lock.json found in previous tag"
@@ -80,7 +80,7 @@ jobs:
         id: copy_pakku_lock_prev
         shell: bash
         run: |
-          git show tags/$latest_tag:./pakku-lock.json > ./pakku-lock-prev.json
+          git show tags/${{ steps.get_latest_tag.outputs.value }}:./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
