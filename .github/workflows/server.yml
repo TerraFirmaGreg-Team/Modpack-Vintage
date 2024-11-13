@@ -22,5 +22,5 @@ jobs:
           content_links_no_embed: .+
           allowed_mentions_parse_users: true
           content: |
-            @619555447443030028
+            @Xikaro
             **Server updated to**: `${{ inputs.project_version }}`
