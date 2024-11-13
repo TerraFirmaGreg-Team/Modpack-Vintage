@@ -18,9 +18,9 @@ jobs:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.project_version.outputs.tag }}
+      project_version: ${{ steps.project_version.outputs.value }}
       project_name: ${{ steps.project_name.outputs.value }}
-      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
@@ -371,43 +371,43 @@ jobs:
           game-version: ${{ needs.info.outputs.minecraft_version }}
           release-type: ${{ needs.info.outputs.release_type }}
 
-  release-modrinth:
-      name: 🚀 Release to Modrinth
-      needs: [info, build-modpack, build-server]
-      runs-on: ubuntu-latest
+  # release-modrinth:
+  #     name: 🚀 Release to Modrinth
+  #     needs: [info, build-modpack, build-server]
+  #     runs-on: ubuntu-latest
 
-      steps:
-        - name: 🔒 Check if MODRINTH_API_TOKEN exist
-          shell: bash
-          run: |
-            if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-            fi  
+  #     steps:
+  #       - name: 🔒 Check if MODRINTH_API_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
     
-        - name: 📦 Download artifact modrinth
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ needs.info.outputs.project_full_name }}-modrinth
+  #       - name: 📦 Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
-        - name: 📦 Download artifact server
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ needs.info.outputs.project_full_name }}-serverpack
+  #       - name: 📦 Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
-        - name: 🚀 Upload Modrinth
-          id: release
-          uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-          with:
-            api-token: ${{ secrets.MODRINTH_TOKEN }}
-            project-id: ${{ vars.MODRINTH_ID }}
-            modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-            modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-            changelog: ${{ needs.info.outputs.changelog }}
-            changelog-format: markdown
-            game-version: ${{ needs.info.outputs.minecraft_version }}
-            display-name: ${{ needs.info.outputs.project_full_name }}
-            server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-            release-type: ${{ needs.info.outputs.release_type }}
+  #       - name: 🚀 Upload Modrinth
+  #         id: release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_ID }}
+  #           modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+  #           modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+  #           changelog: ${{ needs.info.outputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ needs.info.outputs.minecraft_version }}
+  #           display-name: ${{ needs.info.outputs.project_full_name }}
+  #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+  #           release-type: ${{ needs.info.outputs.release_type }}
 
   release-github:
     name: 🚀 Release to GitHub
