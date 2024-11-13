@@ -1,5 +1,5 @@
-name: Project Info
-run-name: "Project Info #${{ github.run_number }}"
+name: Project Build
+run-name: "Project Build #${{ github.run_number }}"
 on:
   push:
     branches:
@@ -410,7 +410,7 @@ jobs:
             release-type: ${{ needs.info.outputs.release_type }}
 
   release-github:
-    name: Release to GitHub
+    name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
     outputs:
