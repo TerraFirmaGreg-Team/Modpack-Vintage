@@ -134,9 +134,6 @@ jobs:
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku-lock.json"
-
-      - run: |
-          echo ${{steps.minecraft_version.outputs.mc_versions}}
         
       - name: 📄 Changelog Parser
         id: changelog
@@ -163,7 +160,7 @@ jobs:
           echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Game Version**: ${{ steps.minecraft_version.outputs.mc_versions }}" >> $GITHUB_STEP_SUMMARY
           
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
           if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
