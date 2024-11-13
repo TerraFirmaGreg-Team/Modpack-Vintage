@@ -440,9 +440,11 @@ jobs:
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
+            {% if needs.info.outputs.diff != '' %}
             ```markdown
             ${{ needs.info.outputs.diff }}
             ```
+            {% endif %}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
