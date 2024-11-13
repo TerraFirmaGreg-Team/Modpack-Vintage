@@ -23,7 +23,7 @@ jobs:
       project_name: ${{ steps.project_name.outputs.value }}
       project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
       changelog: ${{ steps.changelog.outputs.description }}
-      diff: ${{ steps.check.outputs.diff }}
+      diff: ${{ steps.read_diff.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
       exists: ${{ steps.check_tag.outputs.exists }}
@@ -34,28 +34,30 @@ jobs:
         with:
           fetch-depth: 0
     
-      - name: Check file
-        id: check
+      - name: 🔎 Check pakku-lock.json
+        id: check_pakku_lock
         shell: bash
         run: |
-          set +e
-          echo "🔎 Getting modpack info..."
-
-          # Проверяем, существет ли pakku-lock.json
           if [ ! -f pakku-lock.json ]; then
             echo "❌ Could not find pakku-lock.json" && exit 1
           else
             echo "✔️ pakku-lock.json"
           fi
 
-          # Проверяем, существет ли pakku.json
+      - name: 🔎 Check pakku.json
+        id: check_pakku
+        shell: bash
+        run: |
           if [ ! -f pakku.json ]; then
             echo "❌ Could not find pakku.json" && exit 1
           else
             echo "✔️ pakku.json"
           fi
 
-          # Получаем последний тег
+      - name: Get latest tag
+        id: get_latest_tag
+        shell: bash
+        run: |
           latest_tag=$(git describe --tags --abbrev=0)
           if [ -z "$latest_tag" ]; then
             echo "❌ Latest tag not found" && exit 1
@@ -63,14 +65,20 @@ jobs:
             echo "✔️ Latest tag found: $latest_tag"
           fi
 
-          # Проверяем, существует ли файл pakku-lock.json в предыдущем теге
+      - name: 🔎 Check pakku-lock.json in previous tag
+        id: check_pakku_lock_prev
+        shell: bash
+        run: |
           if ! git ls-tree -r $latest_tag -- ./pakku-lock.json &> /dev/null; then
             echo "❌ File pakku-lock.json not found in previous tag" && exit 1
           else
             echo "✔️ File pakku-lock.json found in previous tag"
           fi
 
-          # Копируем файл pakku-lock.json из предыдущего тега в текущий каталог
+      - name: Copy pakku-lock.json from previous tag
+        id: copy_pakku_lock_prev
+        shell: bash
+        run: |
           git show tags/$latest_tag:./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
@@ -78,11 +86,17 @@ jobs:
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
 
-          # Качаем последний пакет pakku
+      - name: Download pakku.jar
+        id: download_pakku
+        shell: bash
+        run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "✔️ Downloaded pakku.jar "
 
-          # Выполняем сравнение пакетов с помощью пакета pakku.jar
+      - name: Run pakku diff
+        id: run_pakku_diff
+        shell: bash
+        run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
           if [ -f PROJECTS_DIFF.md ]; then
             echo "✔️ Comparison completed"
@@ -90,13 +104,14 @@ jobs:
             echo "❌ Error: File PROJECTS_DIFF.md not created" && exit 1
           fi
 
-          echo "📝 Formatting PROJECTS_DIFF.md..."
-          {
-            echo 'diff<<EOF'
-            cat -v PROJECTS_DIFF.md
-            echo EOF
-          } >> "$GITHUB_OUTPUT"
-          echo "✔️ Formatting completed"
+      - name: Read PROJECTS_DIFF.md to variable
+        id: read_diff
+        shell: bash
+        run: |
+          echo "📝 Reading PROJECTS_DIFF.md to variable..."
+          DIFF_CONTENT=$(cat PROJECTS_DIFF.md)
+          echo "✔️ Diff content read to variable"
+          echo "diff=${DIFF_CONTENT}" >> $GITHUB_OUTPUT
   
 
       - name: Get Project Name
@@ -121,7 +136,7 @@ jobs:
 
       - name: Upload Diff
         id: diff
-        if: ${{ steps.check.outputs.diff != '' }}
+        if: ${{ steps.read_diff.outputs.diff != '' }}
         uses: actions/upload-artifact@v4.4.3
         with:
           name: Mods-diff
@@ -141,8 +156,8 @@ jobs:
           echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          if [ -n "${{ steps.check.outputs.diff != '' }}" ]; then
-            echo "${{ steps.check.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
+            echo "${{ steps.read_diff.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
           fi
 
   build:
