@@ -1,7 +1,7 @@
 name: Project Server News
 run-name: "Project Server News #${{ github.run_number }}"
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       project_version:
         required: true
