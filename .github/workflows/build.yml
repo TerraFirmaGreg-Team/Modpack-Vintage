@@ -432,6 +432,18 @@ jobs:
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Format diff
+        id: format_diff
+        run: |
+          if [ -n "${{ needs.info.outputs.diff }}" ]; then
+            value="```markdown
+            ${{ needs.info.outputs.diff }}
+            ```"
+          else
+            value=""
+          fi
+          echo "value=${formatted_diff}" >> $GITHUB_OUTPUT
+
       - name: 🚀 Create release
         id: release
         uses: softprops/action-gh-release@v2.0.9
@@ -440,11 +452,7 @@ jobs:
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            {% if needs.info.outputs.diff != '' %}
-            ```markdown
-            ${{ needs.info.outputs.diff }}
-            ```
-            {% endif %}
+            ${{ steps.format_diff.outputs.value }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
