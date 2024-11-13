@@ -146,7 +146,6 @@ jobs:
           fi
 
   build:
-    name: Build
     needs: [info]
     if: needs.info.outputs.exists != 'true'
     uses: ./.github/workflows/build.yml
