@@ -1561,7 +1561,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CustomSkinLoader_ForgeV1-14.21.1.jar",
+                    "file_name": "CustomSkinLoader_ForgeV1-14.21.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -1571,17 +1571,17 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5884/290/CustomSkinLoader_ForgeV1-14.21.1.jar",
-                    "id": "5884290",
+                    "url": "https://edge.forgecdn.net/files/5896/870/CustomSkinLoader_ForgeV1-14.21.2.jar",
+                    "id": "5896870",
                     "parent_id": "286924",
                     "hashes": {
-                        "sha1": "f4bef87f3c51b5ab32af51b75c7eac1dc40d56d1",
-                        "md5": "afe8973ce6d83156e46bdd908b2d7a3e"
+                        "sha1": "2da8b1fd3f8bbd2f75e3504c8e0ad1a0b6a168f3",
+                        "md5": "2383461ae6850532e55c7f3fe1575079"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 193905,
-                    "date_published": "2024-11-08T05:18:36.443Z"
+                    "size": 194069,
+                    "date_published": "2024-11-12T13:40:09.803Z"
                 }
             ]
         },

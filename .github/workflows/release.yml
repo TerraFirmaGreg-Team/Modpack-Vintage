@@ -173,7 +173,6 @@ jobs:
             **Game Version**: `${{ inputs.minecraft_version }}`
 
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-vintage/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
-
              ```markdown
             ${{ steps.truncated.outputs.text  }}
             - ...```

@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.5.6] - 12.11.2024
+## [4.5.6] - 13.11.2024
 ### Changes
 - Fixed crash error in server pack due to bansoukou.
 - TFC and almost all addons were dined in TerraFirmaGreg-Core, all their functions will gradually be rewritten and implement TerraFirmaGreg-Core. So far, EasyBreedingTFC, TFC-Florae-Fixes, TFC-TowerHeat, TFCAlloyCalc, TFC-Alcohols have been completely merged. If addons include blocks, items or substances, they are automatically converted to new ones.
