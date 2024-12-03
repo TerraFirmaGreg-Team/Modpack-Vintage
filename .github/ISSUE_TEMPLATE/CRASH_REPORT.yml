@@ -67,7 +67,7 @@ body:
         "We recommend always using https://mclo.gs/."
         
         
-        > [!WARNING]
+        > [!CAUTION]
         > **Do not paste the contents of either these files directly into the text box.**
         > If you skip this step, this issue might be **labeled** with `please add a reproduction` and **closed**.
       placeholder: https://mclo.gs/MydIQBu...
