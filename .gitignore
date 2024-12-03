@@ -6,6 +6,7 @@
 **/*.mrpack
 **/*.code-workspace
 **/*.zip
+**/*.iml
 
 # Pakku
 build/
@@ -39,7 +40,6 @@ config/everycomp-hazardous.properties
 config/fml.toml
 config/forge-client.toml
 config/voicechat/username-cache.json
-
 config/stellarcore_stitcher_cache_jei.dat
 config/stellarcore_stitcher_cache_vanilla.dat
 
@@ -79,7 +79,8 @@ shaderpacks/
 chiselsandbits/
 
 # Client data
-bansoukou
+bansoukou/
+
 .curseclient
 .sl_password
 options.txt
@@ -102,10 +103,11 @@ OpenComputersMod-*
 hei_bookmarks.ini
 
 # Server data
-.pakku/server-overrides/libraries
-.pakku/server-overrides/config
-.pakku/server-overrides/defaultconfigs
-.pakku/server-overrides/groovy
-.pakku/server-overrides/scripts
-.pakku/server-overrides/mods
+.pakku/server-overrides/libraries/
+.pakku/server-overrides/config/
+.pakku/server-overrides/defaultconfigs/
+.pakku/server-overrides/groovy/
+.pakku/server-overrides/scripts/
+.pakku/server-overrides/mods/
+
 .pakku/server-overrides/user_jvm_args.txt
