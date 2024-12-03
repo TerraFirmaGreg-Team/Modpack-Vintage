@@ -50,7 +50,7 @@ body:
       description: |
         "The `latest.log` file is found in `\/logs\/` within the modpack files.\nWe recommend always using https://mclo.gs/."
         
-        > [!CAUTION]
+        > [!WARNING]
         > If you skip this step, this issue might be **labeled** with `please add a reproduction` and **closed**.
       placeholder: https://mclo.gs/MydIQBu...
 
