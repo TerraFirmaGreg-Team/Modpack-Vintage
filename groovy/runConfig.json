@@ -1,7 +1,7 @@
 {
   "packName": "TerraFirmaGreg-Vintage",
   "packId": "terrafirmagreg",
-  "version": "@version@",
+  "version": "DEV",
   "debug": true,
   "classes": [
     "classes/"

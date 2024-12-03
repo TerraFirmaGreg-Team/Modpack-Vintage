@@ -50,6 +50,7 @@ config/stellarcore_stitcher_cache_vanilla.dat
 .idea/
 .bobby/
 .mixin.out/
+assets/
 classOut/
 backups/
 profileImage/
@@ -66,6 +67,7 @@ defaultconfigs/
 xaero/
 visualores/
 mods-carryover/
+EnderStorage/
 fancymenu_data/
 fancymenu_setups/
 downloads/
@@ -107,5 +109,3 @@ hei_bookmarks.ini
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
-
-

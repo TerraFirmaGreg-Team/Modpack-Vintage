@@ -189,7 +189,7 @@ jobs:
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -247,7 +247,7 @@ jobs:
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -294,7 +294,7 @@ jobs:
           cat <<< $(jq '.debug = false' $grooovy) > $grooovy
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" groovy/runConfig.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
