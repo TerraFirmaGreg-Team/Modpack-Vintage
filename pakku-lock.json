@@ -178,27 +178,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Alfheim-1.4.jar",
+                    "file_name": "Alfheim-1.5-Dev-1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5650/399/Alfheim-1.4.jar",
-                    "id": "5650399",
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/5904/15/Alfheim-1.5-Dev-1.jar",
+                    "id": "5904015",
                     "parent_id": "910715",
                     "hashes": {
-                        "sha1": "3f0db29f174b28ae23e3f72c12adb3a7cb716b8b",
-                        "md5": "8a80be70833902bb839b192e770787f0"
+                        "sha1": "ed789d7854d972e03e571600b7475b6ebfb6e2f6",
+                        "md5": "575c0cbb638884beb2ffa14a62717245"
                     },
                     "required_dependencies": [
-                        "873867",
-                        "419286"
+                        "419286",
+                        "873867"
                     ],
-                    "size": 69745,
-                    "date_published": "2024-08-21T16:55:06.460Z"
+                    "size": 69783,
+                    "date_published": "2024-11-15T01:11:17.063Z"
                 }
             ]
         },
@@ -1376,7 +1376,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftPresence-2.5.1+1.12.2-forge.jar",
+                    "file_name": "CraftPresence-2.5.2+1.12.2-forge.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -1384,18 +1384,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5798/179/CraftPresence-2.5.1+1.12.2-forge.jar",
-                    "id": "5798179",
+                    "url": "https://edge.forgecdn.net/files/5947/458/CraftPresence-2.5.2+1.12.2-forge.jar",
+                    "id": "5947458",
                     "parent_id": "297038",
                     "hashes": {
-                        "sha1": "3570fa3eb7e28e2b6af00b3b6a1ce5cab1b88a5e",
-                        "md5": "a6a427021de9a46fe790e11745735dce"
+                        "sha1": "f5c7a772563ca40629904d076b7928b8ea5e6a0d",
+                        "md5": "2120c78e4566403118f4afec719e2c37"
                     },
                     "required_dependencies": [
                         "1056812"
                     ],
-                    "size": 2045975,
-                    "date_published": "2024-10-09T19:03:36.327Z"
+                    "size": 2122475,
+                    "date_published": "2024-11-29T17:13:51.703Z"
                 }
             ]
         },
@@ -2723,7 +2723,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HadEnoughItems_1.12.2-4.26.1.jar",
+                    "file_name": "HadEnoughItems_1.12.2-4.26.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2731,17 +2731,17 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5815/590/HadEnoughItems_1.12.2-4.26.1.jar",
-                    "id": "5815590",
+                    "url": "https://edge.forgecdn.net/files/5906/628/HadEnoughItems_1.12.2-4.26.2.jar",
+                    "id": "5906628",
                     "parent_id": "557549",
                     "hashes": {
-                        "sha1": "ffa6e8c7ae76ce55b4c02605d2725f7885b361a0",
-                        "md5": "5c5f15c6fc386e65f681be99e301e1dc"
+                        "sha1": "4e3f8aab2511779983615909692549d38fb118e7",
+                        "md5": "c58c8af8cdf30ec71e8f4bb61d5fee71"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 691171,
-                    "date_published": "2024-10-15T23:47:16.627Z"
+                    "size": 690848,
+                    "date_published": "2024-11-16T00:31:02.987Z"
                 }
             ]
         },
@@ -3332,7 +3332,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "!mixinbooter-10.1.jar",
+                    "file_name": "!mixinbooter-10.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -3341,18 +3341,18 @@
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5873/555/!mixinbooter-10.1.jar",
-                    "id": "5873555",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5906/634/!mixinbooter-10.2.jar",
+                    "id": "5906634",
                     "parent_id": "419286",
                     "hashes": {
-                        "sha1": "df8bd4f7e39300e485231fd0095b814a43539dbf",
-                        "md5": "9f10cf1c8c1f136043472b5151c735bb"
+                        "sha1": "69f649f03f1b8706ec96945ed2722c653da07c33",
+                        "md5": "44a2e61eac8db4cf57fb37dd7835b8da"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 2376017,
-                    "date_published": "2024-11-04T02:31:13.047Z"
+                    "size": 2376035,
+                    "date_published": "2024-11-16T00:34:18.860Z"
                 }
             ]
         },
@@ -4480,7 +4480,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "StellarCore-1.5.13.jar",
+                    "file_name": "StellarCore-1.5.21.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4488,19 +4488,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5862/63/StellarCore-1.5.13.jar",
-                    "id": "5862063",
+                    "url": "https://edge.forgecdn.net/files/5952/608/StellarCore-1.5.21.jar",
+                    "id": "5952608",
                     "parent_id": "1064321",
                     "hashes": {
-                        "sha1": "8fc01c4332820c36eae1c2dbe820024169b62d8b",
-                        "md5": "b37cfb0a2508cede86ed9eefa7e484aa"
+                        "sha1": "a1be216f5d0d82daee54c6d8bbedb3c3f89c551d",
+                        "md5": "7af25d73f0a588c1f9e0aa220b1a44b6"
                     },
                     "required_dependencies": [
-                        "870276",
-                        "419286"
+                        "419286",
+                        "870276"
                     ],
-                    "size": 1316332,
-                    "date_published": "2024-10-31T05:26:02.323Z"
+                    "size": 1326160,
+                    "date_published": "2024-12-01T06:46:25.410Z"
                 }
             ]
         },
@@ -4709,7 +4709,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.1.6.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.1.7.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4717,18 +4717,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5894/867/TerraFirmaGreg-Core-Vintage-2.1.6.jar",
-                    "id": "5894867",
+                    "url": "https://edge.forgecdn.net/files/5970/317/TerraFirmaGreg-Core-Vintage-2.1.7.jar",
+                    "id": "5970317",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "e860d7c6cfa2630111670637473eb3fda4ebaa37",
-                        "md5": "3cfb2af3d214c966e4f7724eb1a5166a"
+                        "sha1": "5b656b156bcaf73fc28ea9df54e0b52ef608b55b",
+                        "md5": "e1038f9b74177ac42c17ad4df4b29901"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 65372551,
-                    "date_published": "2024-11-11T20:02:41.690Z"
+                    "size": 65360376,
+                    "date_published": "2024-12-07T07:17:55.943Z"
                 }
             ]
         },
@@ -4892,7 +4892,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniLib-1.0.3+1.12.2-forge.jar",
+                    "file_name": "UniLib-1.0.4+1.12.2-forge.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4900,17 +4900,17 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5797/752/UniLib-1.0.3+1.12.2-forge.jar",
-                    "id": "5797752",
+                    "url": "https://edge.forgecdn.net/files/5946/214/UniLib-1.0.4+1.12.2-forge.jar",
+                    "id": "5946214",
                     "parent_id": "1056812",
                     "hashes": {
-                        "sha1": "10b43ff782f4d3e212d19f56405d66e3dcc1c075",
-                        "md5": "e8dda0b0a0bed4a64380f1f72bceb76b"
+                        "sha1": "920924267ca9503bee098f4d95745f2f7ed1b2c8",
+                        "md5": "6df33f18d05cb43193f637bfefa3ccea"
                     },
                     "required_dependencies": [
                     ],
-                    "size": 1000930,
-                    "date_published": "2024-10-09T17:07:07.630Z"
+                    "size": 1076741,
+                    "date_published": "2024-11-29T06:07:57.280Z"
                 }
             ]
         },
@@ -5241,7 +5241,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Sound-Physics-1.12.2-1.1.3.jar",
+                    "file_name": "Sound-Physics-1.12.2-1.1.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5249,18 +5249,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5461/56/Sound-Physics-1.12.2-1.1.3.jar",
-                    "id": "5461056",
+                    "url": "https://edge.forgecdn.net/files/5967/242/Sound-Physics-1.12.2-1.1.5.jar",
+                    "id": "5967242",
                     "parent_id": "951159",
                     "hashes": {
-                        "sha1": "aee7d9de608f6b07bb64b1077cc6b9fd429999e0",
-                        "md5": "c68dbdfbd044e783e0512924e592a1d5"
+                        "sha1": "86e9b93491a8110b44cd488a3e302f51246909b9",
+                        "md5": "9f3ffd673b70060042c9794ceb8ce750"
                     },
                     "required_dependencies": [
                         "419286"
                     ],
-                    "size": 60521,
-                    "date_published": "2024-06-23T03:12:57.597Z"
+                    "size": 60541,
+                    "date_published": "2024-12-06T07:40:55.040Z"
                 }
             ]
         }
