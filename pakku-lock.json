@@ -116,8 +116,7 @@
                         "sha1": "496e74477ea7070f77eba1190d36c09bf35492f1",
                         "md5": "7f4b736010da6ba3fcaa1b722500a5fe"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 495515,
                     "date_published": "2024-01-02T17:11:27.223Z"
                 }
@@ -153,8 +152,7 @@
                         "sha1": "5cdc64def700aa1554bca3584dc3d278ba608d22",
                         "md5": "a41ea01263db95526e93016a50274958"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 4425522,
                     "date_published": "2024-06-09T04:58:56.133Z"
                 }
@@ -178,7 +176,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Alfheim-1.5-Dev-1.jar",
+                    "file_name": "Alfheim-1.5-Dev-2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -186,19 +184,19 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/5904/15/Alfheim-1.5-Dev-1.jar",
-                    "id": "5904015",
+                    "url": "https://edge.forgecdn.net/files/6000/171/Alfheim-1.5-Dev-2.jar",
+                    "id": "6000171",
                     "parent_id": "910715",
                     "hashes": {
-                        "sha1": "ed789d7854d972e03e571600b7475b6ebfb6e2f6",
-                        "md5": "575c0cbb638884beb2ffa14a62717245"
+                        "sha1": "e39acb7ced34abf4013b348eb8a0c2083eae89ee",
+                        "md5": "96396d36f928007529eff945cd9a8c61"
                     },
                     "required_dependencies": [
                         "419286",
                         "873867"
                     ],
-                    "size": 69783,
-                    "date_published": "2024-11-15T01:11:17.063Z"
+                    "size": 69678,
+                    "date_published": "2024-12-17T22:48:19.827Z"
                 }
             ]
         },
@@ -230,8 +228,7 @@
                         "sha1": "6959d9f89b3b9bd0b0c16949b111370f5158d647",
                         "md5": "b4b80455cd51785cb551406c679763ac"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 25707,
                     "date_published": "2019-09-13T22:46:19.320Z"
                 }
@@ -307,81 +304,9 @@
                         "sha1": "06622ba056d149dd4ca78ff3a13eb1dc2c4ce640",
                         "md5": "065a75b97d059456341d224edaed30a5"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 933349,
                     "date_published": "2024-06-18T14:15:17.633Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "S4c1u9ALNnVutTZ0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "athenaeum"
-            },
-            "name": {
-                "curseforge": "Athenaeum"
-            },
-            "id": {
-                "curseforge": "284350"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "athenaeum-1.12.2-1.19.6.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/4633/750/athenaeum-1.12.2-1.19.6.jar",
-                    "id": "4633750",
-                    "parent_id": "284350",
-                    "hashes": {
-                        "sha1": "d2e8821968a8ae5ea1bf5d7dd221b3e8e1b645bd",
-                        "md5": "0e023eac3a2e18d0370932f1679a7263"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 332993,
-                    "date_published": "2023-07-09T17:39:09.423Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "UljoG727JYid5k2l",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "autoreglib"
-            },
-            "name": {
-                "curseforge": "AutoRegLib"
-            },
-            "id": {
-                "curseforge": "250363"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AutoRegLib-1.3-32.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2746/11/AutoRegLib-1.3-32.jar",
-                    "id": "2746011",
-                    "parent_id": "250363",
-                    "hashes": {
-                        "sha1": "267269ca7f1a71fb3bb35bdb8e61702a4da6263e",
-                        "md5": "4e5a4b881c27b1e4502a9a16c00882ad"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 108306,
-                    "date_published": "2019-07-22T11:42:20Z"
                 }
             ]
         },
@@ -415,8 +340,7 @@
                         "sha1": "6cb8cb1edc2897cf30f5071b04c29a2482d2b109",
                         "md5": "139f537240f0ab0ab666ead8879f9062"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 2313893,
                     "date_published": "2023-08-01T05:32:02.710Z"
                 }
@@ -453,8 +377,7 @@
                         "sha1": "ef0e6ed7e93ee7f5956d3749157e6dd95f4f980f",
                         "md5": "fcee5583c5b36de3214bfb754050920f"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 20203,
                     "date_published": "2020-09-02T19:52:16.077Z"
                 }
@@ -476,7 +399,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BetterQuestPopup-1.12.2-1.2.1.jar",
+                    "file_name": "BetterQuestPopup-1.12.2-1.2.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -484,18 +407,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5122/801/BetterQuestPopup-1.12.2-1.2.1.jar",
-                    "id": "5122801",
+                    "url": "https://edge.forgecdn.net/files/5989/480/BetterQuestPopup-1.12.2-1.2.3.jar",
+                    "id": "5989480",
                     "parent_id": "962385",
                     "hashes": {
-                        "sha1": "e6d0305de208eaa66ac25f4747e0f5d44736153a",
-                        "md5": "d831a1bfa7bd858875d7684616007dd6"
+                        "sha1": "98f932a98bd663b85a6777a89147e422b46f7438",
+                        "md5": "63253ae3d056f35b5e39fd712cbc6435"
                     },
                     "required_dependencies": [
                         "289412"
                     ],
-                    "size": 342905,
-                    "date_published": "2024-02-20T08:30:02.903Z"
+                    "size": 343377,
+                    "date_published": "2024-12-14T03:40:34.587Z"
                 }
             ]
         },
@@ -530,8 +453,7 @@
                         "sha1": "ec1f374ca4ea12672bc3acad9e3e9d84c8b0a7c4",
                         "md5": "7a8779a36445c22617a0b8b23f657bab"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 943468,
                     "date_published": "2022-12-21T10:56:38.380Z"
                 }
@@ -567,8 +489,7 @@
                         "sha1": "5d0c93fbc7bfb7ea36410ae770af1259c0c14a37",
                         "md5": "6e2355c1c5cad08c0a186f75898ebebb"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 247704,
                     "date_published": "2023-12-05T04:24:33.437Z"
                 }
@@ -604,89 +525,9 @@
                         "sha1": "921d17cfc8aae8df23e30e4547dc30927d6236a8",
                         "md5": "fe6c57af5be36a9ed96f8ff7de61bbd1"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 16146,
                     "date_published": "2017-08-06T03:52:20.457Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "sJUirguckfqKrLdI",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "bookshelf"
-            },
-            "name": {
-                "curseforge": "Bookshelf"
-            },
-            "id": {
-                "curseforge": "228525"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Bookshelf-1.12.2-2.3.590.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2836/960/Bookshelf-1.12.2-2.3.590.jar",
-                    "id": "2836960",
-                    "parent_id": "228525",
-                    "hashes": {
-                        "sha1": "83a1864dd78f48102609849dd36866d6cf32b907",
-                        "md5": "85a44d3299449545e435f5ec55fc914b"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 266636,
-                    "date_published": "2019-12-05T08:56:35.050Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "lCwXObMvPaLbKWVf",
-            "pakku_links": [
-                "zadYq8j0koVdc1N9"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "brandons-core"
-            },
-            "name": {
-                "curseforge": "Brandon's Core"
-            },
-            "id": {
-                "curseforge": "231382"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "BrandonsCore-1.12.2-2.4.20.162-universal.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3408/276/BrandonsCore-1.12.2-2.4.20.162-universal.jar",
-                    "id": "3408276",
-                    "parent_id": "231382",
-                    "hashes": {
-                        "sha1": "f6035eb93d9c7b91334ed7bfc17ed36c8c9d86c8",
-                        "md5": "4a67ccad9d684466010c02164d7ff13e"
-                    },
-                    "required_dependencies": [
-                        "242818",
-                        "270789"
-                    ],
-                    "size": 827900,
-                    "date_published": "2021-08-01T06:21:57.003Z"
                 }
             ]
         },
@@ -720,8 +561,7 @@
                         "sha1": "fa278295586026ed7cb13dca2ee152899c3741b8",
                         "md5": "e14b57564807266797a9150ce5611c61"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 274788,
                     "date_published": "2024-10-25T16:29:41.530Z"
                 }
@@ -795,8 +635,7 @@
                         "sha1": "6b48020b113f227d92a2d5ea3d763c9bf6196554",
                         "md5": "5f012220863d68a26f68c62015320a80"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 309188,
                     "date_published": "2023-04-25T20:49:16.580Z"
                 }
@@ -832,8 +671,7 @@
                         "sha1": "aa93c38eec189f40d00fd88ec02b3cfd962d539d",
                         "md5": "85d969acd1ac3e1aff4fb0450e2c9ffd"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 210199,
                     "date_published": "2020-04-21T20:48:11.430Z"
                 }
@@ -869,8 +707,7 @@
                         "sha1": "bdfaa0211280b44a18ac9751030409595d3b7750",
                         "md5": "bde8ed946487497806360ec5f111c617"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1647684,
                     "date_published": "2024-04-13T00:31:00.747Z"
                 }
@@ -906,8 +743,7 @@
                         "sha1": "9c9b9e497bc48e6512696847a709d8f86ea80a4c",
                         "md5": "53b5c18e0e5c4a5ab4b2b36a54e354b1"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 113697,
                     "date_published": "2024-04-27T16:41:28.457Z"
                 }
@@ -978,8 +814,7 @@
                         "sha1": "41912cdaaad5c22e1972092c7a73c9eab2de5650",
                         "md5": "9255572f568b54823a781026b9397652"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1057690,
                     "date_published": "2022-02-21T21:50:11.590Z"
                 }
@@ -1013,8 +848,7 @@
                         "sha1": "ea5fd7e61fb7c8ab6a546e2a17a6f4929e904ec0",
                         "md5": "278ace4ec3c481b36c0c2378fdb78b3a"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 37519,
                     "date_published": "2019-12-07T07:23:31.523Z"
                 }
@@ -1089,8 +923,7 @@
                         "sha1": "c3906436c1f04aab656dd1627a9378b673e644fa",
                         "md5": "dfd5498a6c93b40f7cd74c9fcf959478"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 24940,
                     "date_published": "2022-06-27T12:36:52.103Z"
                 }
@@ -1123,51 +956,9 @@
                         "sha1": "b6a7e3b889c354216059a3bfad298e30a1e46a2d",
                         "md5": "3b5e44db5ac96fb23a439590b6731a31"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 704330,
                     "date_published": "2019-09-06T23:00:03.483Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "GtdXC8UTZvzN56x0",
-            "pakku_links": [
-                "TRTwXrSHgQqG8iS0"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "common-capabilities"
-            },
-            "name": {
-                "curseforge": "Common Capabilities"
-            },
-            "id": {
-                "curseforge": "247007"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "CommonCapabilities-1.12.2-2.4.8.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3053/17/CommonCapabilities-1.12.2-2.4.8.jar",
-                    "id": "3053017",
-                    "parent_id": "247007",
-                    "hashes": {
-                        "sha1": "1f9554d8595d7833f983e5dcd973081bdd725825",
-                        "md5": "bdd2457d21b0007d44b04a4cc5acd3ef"
-                    },
-                    "required_dependencies": [
-                        "232758"
-                    ],
-                    "size": 361018,
-                    "date_published": "2020-09-09T15:13:24.790Z"
                 }
             ]
         },
@@ -1201,8 +992,7 @@
                         "sha1": "b6d8a10219d3802e04de6b1e815a5853e50adbcc",
                         "md5": "3adfd6a9e04453888e68d858c0347ded"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 5201,
                     "date_published": "2024-03-26T13:07:43.840Z"
                 }
@@ -1239,8 +1029,7 @@
                         "sha1": "892e0788531269bfa2f356e4e12825e19d4e5412",
                         "md5": "77a8bb5486c97e3eaa6f45e5bd768864"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 199045,
                     "date_published": "2020-03-29T00:19:35.120Z"
                 }
@@ -1315,8 +1104,7 @@
                         "sha1": "e367bec5785091dc9c928c1a95672a4774b0f0fd",
                         "md5": "d79e51706d18eab2ccfa0070c0b7592b"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 67966,
                     "date_published": "2020-07-21T17:10:32.573Z"
                 }
@@ -1350,8 +1138,7 @@
                         "sha1": "dae97e0a1539702b07ffa5e48410e57c470e3bd0",
                         "md5": "18d7753f69e6f8fed9350b4d908008a9"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 72111,
                     "date_published": "2020-04-22T22:07:29.417Z"
                 }
@@ -1426,8 +1213,7 @@
                         "sha1": "431fa9277f8e429dada81bfef76339073c4d3e05",
                         "md5": "fa52eebe2afea008ad20ee262b26e404"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1589227,
                     "date_published": "2024-06-29T17:54:00.047Z"
                 }
@@ -1463,8 +1249,7 @@
                         "sha1": "0185dcfe6dcf35723ef7b5e177838870d26349d4",
                         "md5": "47add0002138c9a9e689bda4ad28d811"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 101956,
                     "date_published": "2022-06-29T12:51:26.243Z"
                 }
@@ -1500,8 +1285,7 @@
                         "sha1": "2c60a20ae9c9431a3b215a331c2b2af7fa3a060c",
                         "md5": "df1051927921c2852946cc4fd20da86e"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1321137,
                     "date_published": "2023-08-25T21:17:19.180Z"
                 }
@@ -1538,8 +1322,7 @@
                         "sha1": "b18ec02512ce7e63cd70731e8716818385252a5d",
                         "md5": "d98cac2402a378555ae90f0627411120"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 978691,
                     "date_published": "2024-10-19T22:17:37.340Z"
                 }
@@ -1578,85 +1361,9 @@
                         "sha1": "2da8b1fd3f8bbd2f75e3504c8e0ad1a0b6a168f3",
                         "md5": "2383461ae6850532e55c7f3fe1575079"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 194069,
                     "date_published": "2024-11-12T13:40:09.803Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "TRTwXrSHgQqG8iS0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cyclops-core"
-            },
-            "name": {
-                "curseforge": "Cyclops Core"
-            },
-            "id": {
-                "curseforge": "232758"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "CyclopsCore-1.12.2-1.6.7.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3159/497/CyclopsCore-1.12.2-1.6.7.jar",
-                    "id": "3159497",
-                    "parent_id": "232758",
-                    "hashes": {
-                        "sha1": "29939475b84a3771d8675dd48cd7d9c74b0771d8",
-                        "md5": "dc635fec13b1245323a58799fa6e6b39"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 1060985,
-                    "date_published": "2021-01-05T19:02:14.620Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "NSFMkUn6TYsV7SOx",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "dropt"
-            },
-            "name": {
-                "curseforge": "Dropt"
-            },
-            "id": {
-                "curseforge": "284973"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "dropt-1.12.2-1.19.4.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5405/50/dropt-1.12.2-1.19.4.jar",
-                    "id": "5405050",
-                    "parent_id": "284973",
-                    "hashes": {
-                        "sha1": "7e64ac572a30161b42d698aacfd5b842ab99d742",
-                        "md5": "a693f65a82490fc9c98a8200633e8e13"
-                    },
-                    "required_dependencies": [
-                        "284350"
-                    ],
-                    "size": 150794,
-                    "date_published": "2024-06-07T00:51:21.437Z"
                 }
             ]
         },
@@ -1691,8 +1398,7 @@
                         "sha1": "e305092922affc619e2a7206a4949c24363fbf3d",
                         "md5": "b52ea41bdb82d4b12da93478c9b53f21"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 28387,
                     "date_published": "2022-11-27T04:42:29.233Z"
                 }
@@ -1729,8 +1435,7 @@
                         "sha1": "fd011557b484f764367b9bc9d93e22a5ab2051d1",
                         "md5": "bbf46497e737f88bbfeb8cce74fb3099"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 102000,
                     "date_published": "2018-05-19T12:44:15.993Z"
                 }
@@ -1767,8 +1472,7 @@
                         "sha1": "62fc23aa49ba392f4bbeb14ff0aae276ff3a27f4",
                         "md5": "77e815ce9c8dd68ecba4eb884d6db4d2"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 15778870,
                     "date_published": "2021-10-20T18:05:39.843Z"
                 }
@@ -1804,8 +1508,7 @@
                         "sha1": "29ff6d8543e1aedba8304e9696b6906de62ea5b2",
                         "md5": "3f87cad7643852f047a584c5396f72d2"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 240686,
                     "date_published": "2024-08-02T23:55:02.627Z"
                 }
@@ -1999,8 +1702,7 @@
                         "sha1": "50c323de01f2235d351bf5417da6d4ef494b12e6",
                         "md5": "7e88042f94dbfccba9e839b640cf592e"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 79700,
                     "date_published": "2021-06-23T14:23:25.787Z"
                 }
@@ -2034,8 +1736,7 @@
                         "sha1": "20ddf96ff380f1f3219305f2efc6742ab5999449",
                         "md5": "932a6981ff08c35bbdf83bb9f7af8d17"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 43764,
                     "date_published": "2019-10-31T20:25:08.137Z"
                 }
@@ -2068,8 +1769,7 @@
                         "sha1": "7c20cd223bc2334edf153e074f35acdbcab3c976",
                         "md5": "ea749a3a3391d490ffcdf025e5de48d9"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 934370,
                     "date_published": "2020-06-22T13:44:34.150Z"
                 }
@@ -2195,44 +1895,6 @@
             ]
         },
         {
-            "pakku_id": "VEIyXAyMBeJeJrhm",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "farsight"
-            },
-            "name": {
-                "curseforge": "Farsight [Forge/Neo]"
-            },
-            "id": {
-                "curseforge": "495693"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "farsight-1.6.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4716/907/farsight-1.6.jar",
-                    "id": "4716907",
-                    "parent_id": "495693",
-                    "hashes": {
-                        "sha1": "87187014fda84b3b1e74cc79c3bf9f81e96d3546",
-                        "md5": "c0a8e094c42e5080aa2bb448fa5042d6"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 958808,
-                    "date_published": "2023-08-22T11:46:50.470Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "e78mAfLQkDV0zVpH",
             "type": "MOD",
             "slug": {
@@ -2261,8 +1923,7 @@
                         "sha1": "8f078c9f4389687103dc5f053403a921e9ac849d",
                         "md5": "9f7c289b438817d581a3825ef0015611"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 32750,
                     "date_published": "2017-12-22T23:12:32.117Z"
                 }
@@ -2304,44 +1965,6 @@
             ]
         },
         {
-            "pakku_id": "0LScksrWiBXpy4zD",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "xp-orb-clump"
-            },
-            "name": {
-                "curseforge": "Fixeroo"
-            },
-            "id": {
-                "curseforge": "633806"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Fixeroo-2.3.2.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5745/976/Fixeroo-2.3.2.jar",
-                    "id": "5745976",
-                    "parent_id": "633806",
-                    "hashes": {
-                        "sha1": "830fdba6dd103baa7378567f3356c0564086462b",
-                        "md5": "ed9087394495ea0026b2dc1ca62f277f"
-                    },
-                    "required_dependencies": [
-                        "870276"
-                    ],
-                    "size": 206311,
-                    "date_published": "2024-09-22T12:12:11.610Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "7PjLb2nQim6VUHm0",
             "type": "MOD",
             "slug": {
@@ -2371,8 +1994,7 @@
                         "sha1": "d8258a0dcfaf76fd4058bfec19dd367685a4bd72",
                         "md5": "95b6c972a9e3aee98b213de16b353f0f"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 36196,
                     "date_published": "2024-10-03T14:47:53.423Z"
                 }
@@ -2447,8 +2069,7 @@
                         "sha1": "1a922da6cb1bb6f9e95e524e981eb618c41e9878",
                         "md5": "304b6885fff8987f82bc7702299cd76b"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 819200,
                     "date_published": "2024-05-24T20:54:23.270Z"
                 }
@@ -2484,8 +2105,7 @@
                         "sha1": "fa626be5ec34567b5b7b2a1279bb24e428a550f9",
                         "md5": "cb4cc1f63559675971914c8742d89c32"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 15679501,
                     "date_published": "2023-07-29T15:19:01.993Z"
                 }
@@ -2563,8 +2183,7 @@
                         "sha512": "42e0f7be01f19b30b95f26446263a4f6b4f1244d8caa992cb198f7e9b0ac8e6f4b1c9ee22b3e5da234b8c5dfa6b15aa856cb24da17b8bd11a84d9fff53c82651",
                         "sha1": "fd7f155ae613536cc4d2a9e94f104915b4608f42"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 36859447,
                     "date_published": "2024-08-18T20:32:45.811368Z"
                 },
@@ -2582,8 +2201,7 @@
                         "sha1": "fd7f155ae613536cc4d2a9e94f104915b4608f42",
                         "md5": "2cdbc4ac9e7aae3557d5bfed7d0b8ae6"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 36859447,
                     "date_published": "2024-08-18T20:35:17.250Z"
                 }
@@ -2738,8 +2356,7 @@
                         "sha1": "4e3f8aab2511779983615909692549d38fb118e7",
                         "md5": "c58c8af8cdf30ec71e8f4bb61d5fee71"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 690848,
                     "date_published": "2024-11-16T00:31:02.987Z"
                 }
@@ -2772,8 +2389,7 @@
                         "sha1": "3975a01259a62840caa355f33f4149d00f48ef58",
                         "md5": "a246fcd9e8e8e94c8ef7b3de001fe321"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 29944,
                     "date_published": "2018-03-02T16:55:40.903Z"
                 }
@@ -2810,8 +2426,7 @@
                         "sha1": "73e1decef50ebfff85d39dc45601c67364b4ce31",
                         "md5": "824072cbb98b853d4447cb5d9b87617a"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1419779,
                     "date_published": "2024-03-02T11:43:28.353Z"
                 }
@@ -2890,8 +2505,7 @@
                         "sha1": "b2ce2d6fdb0842139b892b27af08b3aaec7f2d19",
                         "md5": "3698c90450b9a418be3536b8137a1822"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 217960,
                     "date_published": "2021-12-14T03:09:24.710Z"
                 }
@@ -2924,25 +2538,27 @@
                         "sha1": "6b6560aea35c6e0e8a550ea7044501412b0fb335",
                         "md5": "c89d595cdef3cc93f2acbc31333e418b"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 78935,
                     "date_published": "2020-07-12T22:57:19.817Z"
                 }
             ]
         },
         {
-            "pakku_id": "JVkak2JFOYv0JsNx",
+            "pakku_id": "SuChAPfpwB9YpCNe",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
-                "curseforge": "itemphysic-lite"
+                "curseforge": "itemphysic-lite",
+                "modrinth": "itemphysic-lite"
             },
             "name": {
-                "curseforge": "ItemPhysic Lite"
+                "curseforge": "ItemPhysic Lite",
+                "modrinth": "ItemPhysic Lite"
             },
             "id": {
-                "curseforge": "270441"
+                "curseforge": "270441",
+                "modrinth": "OuyCgP8t"
             },
             "files": [
                 {
@@ -2959,8 +2575,7 @@
                         "sha1": "63fd419d636d509023fdc435aab2ba379970a334",
                         "md5": "1f4474187b22bc1112f2bd6b6fb6bc1e"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 471292,
                     "date_published": "2017-10-15T19:43:16.230Z"
                 }
@@ -3039,6 +2654,42 @@
                     ],
                     "size": 298222,
                     "date_published": "2021-11-13T16:37:46.920Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "8n4POCuaV7jxHmZr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "just-enough-microblocks"
+            },
+            "name": {
+                "curseforge": "Just Enough Microblocks"
+            },
+            "id": {
+                "curseforge": "1156114"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jemicroblocks-1.0.1.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5982/381/jemicroblocks-1.0.1.jar",
+                    "id": "5982381",
+                    "parent_id": "1156114",
+                    "hashes": {
+                        "sha1": "445b1ae720c78da5ebae26db189991687c835fe1",
+                        "md5": "9e491a0cf51f51c0646411314caab236"
+                    },
+                    "required_dependencies": [],
+                    "size": 29296,
+                    "date_published": "2024-12-11T11:41:58.333Z"
                 }
             ]
         },
@@ -3197,8 +2848,7 @@
                         "sha1": "21c82ab70e7b427e07cee07cec26ba603301d83e",
                         "md5": "287b5b24a48264d493f76db2a5db8411"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 26235,
                     "date_published": "2024-06-12T02:40:36.497Z"
                 }
@@ -3235,8 +2885,7 @@
                         "sha1": "f174a9ccf33df0bc1594713ef40dc8c0fce32205",
                         "md5": "162b746d9ac25be72329de3c8f6f1754"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 36553,
                     "date_published": "2024-09-18T17:50:21.150Z"
                 }
@@ -3272,8 +2921,7 @@
                         "sha1": "f1ffc295eaf2e22e24673946e46219d4bb4b39b9",
                         "md5": "2574d7dded03b088be7ff5909f66d9c9"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 116827,
                     "date_published": "2021-06-08T20:03:14.147Z"
                 }
@@ -3349,8 +2997,7 @@
                         "sha1": "69f649f03f1b8706ec96945ed2722c653da07c33",
                         "md5": "44a2e61eac8db4cf57fb37dd7835b8da"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 2376035,
                     "date_published": "2024-11-16T00:34:18.860Z"
                 }
@@ -3390,8 +3037,7 @@
                         "sha1": "58babf749ab21af4a9a7c7f77ddce91e430ebedb",
                         "md5": "052ef1de9afdbbbf0f5236af20be647c"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 2249122,
                     "date_published": "2024-10-06T21:40:11.523Z"
                 },
@@ -3417,8 +3063,7 @@
                         "sha512": "a277b17437de4b79acd750e3b2fb63ae24c22da2b285e9b6fca9bb299611b9e96926d5609620480e7a68939b34e8286021f407c46db8d723600a191dd7f138be",
                         "sha1": "58babf749ab21af4a9a7c7f77ddce91e430ebedb"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 2249122,
                     "date_published": "2024-10-06T21:40:41.151549Z"
                 }
@@ -3454,8 +3099,7 @@
                         "sha1": "304a6c223e560c1a01ae7ec4f0ae63f0c5b64e0d",
                         "md5": "f5152d01ab8052b9edec88abbe3d4afd"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 4859,
                     "date_published": "2020-10-15T14:26:36.977Z"
                 }
@@ -3530,8 +3174,7 @@
                         "sha1": "b308fe363f23343d0b073d04883c5fca63b08d0b",
                         "md5": "7b5200f51245b61ef149f7a33860e930"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 51284,
                     "date_published": "2019-07-21T20:16:59.573Z"
                 }
@@ -3568,8 +3211,7 @@
                         "sha1": "793920175608d000688a88fce14f4c04efdedc58",
                         "md5": "842b6b4c23cb6a7db7c6cef231c5c9b2"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 201591,
                     "date_published": "2024-11-05T01:34:26.840Z"
                 }
@@ -3688,8 +3330,7 @@
                         "sha1": "27c91fe732f42d61d45d6b238fd9283458372411",
                         "md5": "bda5ea1b541ad39f0ede60550de32993"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 948417,
                     "date_published": "2021-06-09T23:12:15.137Z"
                 }
@@ -3764,8 +3405,7 @@
                         "sha1": "fbd297d36827876c67b00d574d5e1d341c15373e",
                         "md5": "1a4b720fe1ff309821ebbe6c1f8045e9"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 16532582,
                     "date_published": "2024-09-21T05:28:25.667Z"
                 }
@@ -3802,8 +3442,7 @@
                         "sha1": "f7226db5f26148e27e33d3f4dbfd1dd4f113e86b",
                         "md5": "cc84f6b2944904727e62636da31add39"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 70106,
                     "date_published": "2022-08-22T23:17:23.880Z"
                 }
@@ -3839,30 +3478,65 @@
                         "sha1": "5debb0481552c54bb6ad72d56b05b31d92e2f5d8",
                         "md5": "00cce3b240365458adcad3e77782358a"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 341728,
                     "date_published": "2019-11-02T17:33:29.310Z"
                 }
             ]
         },
         {
-            "pakku_id": "Ff6Vr6JBw64EtE4T",
+            "pakku_id": "QHpoT0suT8cOoplm",
             "type": "MOD",
-            "side": "CLIENT",
             "slug": {
-                "curseforge": "particle-culling"
+                "curseforge": "pack-crash-info"
             },
             "name": {
-                "curseforge": "Particle Culling"
+                "curseforge": "Pack Crash Info"
             },
             "id": {
-                "curseforge": "408853"
+                "curseforge": "303808"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "particleculling-1.12.2-v1.4.3.jar",
+                    "file_name": "packcrashinfo-1.0.1.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2621/858/packcrashinfo-1.0.1.jar",
+                    "id": "2621858",
+                    "parent_id": "303808",
+                    "hashes": {
+                        "sha1": "35048f14c2d60040d57e8a4789a985c5b2507892",
+                        "md5": "37692b6f708b6ac24e384b95541ef827"
+                    },
+                    "required_dependencies": [],
+                    "size": 6611,
+                    "date_published": "2018-09-28T17:21:42.980Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "nCCAmcNEQokjxhVj",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "packet-fixer",
+                "modrinth": "packet-fixer"
+            },
+            "name": {
+                "curseforge": "Packet Fixer",
+                "modrinth": "Packet Fixer"
+            },
+            "id": {
+                "curseforge": "689467",
+                "modrinth": "c7m1mi73"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "PacketFixer-forge-1.0.2-1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3870,17 +3544,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5337/217/particleculling-1.12.2-v1.4.3.jar",
-                    "id": "5337217",
-                    "parent_id": "408853",
+                    "url": "https://edge.forgecdn.net/files/5880/44/PacketFixer-forge-1.0.2-1.12.2.jar",
+                    "id": "5880044",
+                    "parent_id": "689467",
                     "hashes": {
-                        "sha1": "2c4847ca6c7cf1d41ff320943394ff61028c7e72",
-                        "md5": "cf620abe081f88ce35f1a2c585405e73"
+                        "sha1": "e4f61e5109c5b83f672f97ba679de4b29b909f93",
+                        "md5": "d8c182f21ff4afd8d751564f40c5b3a8"
                     },
-                    "required_dependencies": [
+                    "required_dependencies": [],
+                    "size": 13415,
+                    "date_published": "2024-11-06T15:26:28.057Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "PacketFixer-forge-1.0.2-1.12.2.jar",
+                    "mc_versions": [
+                        "1.12.2"
                     ],
-                    "size": 17450,
-                    "date_published": "2024-05-12T09:22:06.240Z"
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/VCeh21Yo/PacketFixer-forge-1.0.2-1.12.2.jar",
+                    "id": "VCeh21Yo",
+                    "parent_id": "c7m1mi73",
+                    "hashes": {
+                        "sha512": "b8241e7ba1a8004c5df1eed4174d9e956fb96e2fef7e7aca987b3b17c99e34a9b5f5ebdc335939f35a5dbfbfd95138e4c655d4c2c8682d83f423e441425fa098",
+                        "sha1": "e4f61e5109c5b83f672f97ba679de4b29b909f93"
+                    },
+                    "required_dependencies": [],
+                    "size": 13415,
+                    "date_published": "2024-11-05T21:51:16.366428Z"
                 }
             ]
         },
@@ -3911,8 +3605,7 @@
                         "sha1": "033c589ceb8026d66ee9b2332185ae273fa77993",
                         "md5": "9d71048d2ee92951461c2c99bf7c427b"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 8387,
                     "date_published": "2021-11-01T13:47:56.710Z"
                 }
@@ -3948,8 +3641,7 @@
                         "sha1": "d2142220e0944a8ad9d76ad7f50a5aa8d4e5fd80",
                         "md5": "5de720fd198f0d3db6d594eeb835fe63"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 77207,
                     "date_published": "2023-07-07T07:54:34.250Z"
                 }
@@ -4141,41 +3833,6 @@
             ]
         },
         {
-            "pakku_id": "zHwaXFVFS0d6ZOac",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "real-first-person-render"
-            },
-            "name": {
-                "curseforge": "Real First Person 2"
-            },
-            "id": {
-                "curseforge": "248451"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "RealFirstPerson2-1.12.2-1.3.2.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2878/496/RealFirstPerson2-1.12.2-1.3.2.jar",
-                    "id": "2878496",
-                    "parent_id": "248451",
-                    "hashes": {
-                        "sha1": "86595b64e41da2cdbf230b58c1016b56110159e0",
-                        "md5": "ca24362c3c696c837a2612aefce21770"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 33240,
-                    "date_published": "2020-02-09T21:10:41.043Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "12NcazlpaVDf6KAr",
             "type": "MOD",
             "slug": {
@@ -4206,44 +3863,9 @@
                         "sha1": "75a26e40a2a15d43a46798e101aee02825f6361f",
                         "md5": "2260035108ccb6414e41343cb68eb06a"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 130943,
                     "date_published": "2024-11-10T20:10:51.793Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "eYPlss2nxEZS4jGE",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "redstone-flux"
-            },
-            "name": {
-                "curseforge": "Redstone Flux"
-            },
-            "id": {
-                "curseforge": "270789"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "RedstoneFlux-1.12-2.1.1.1-universal.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2920/436/RedstoneFlux-1.12-2.1.1.1-universal.jar",
-                    "id": "2920436",
-                    "parent_id": "270789",
-                    "hashes": {
-                        "sha1": "7835c1dcc006e5d4a406a6b0615012b825e25044",
-                        "md5": "93b1715f05be1878da93fca36dd37f2a"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 31802,
-                    "date_published": "2020-04-03T23:52:41.640Z"
                 }
             ]
         },
@@ -4315,8 +3937,7 @@
                         "sha1": "7a87553fcb808a45d9c7e03f113b355ac7fd10d7",
                         "md5": "2da79fce72265eab0541e565636d389d"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 6278399,
                     "date_published": "2019-09-13T20:25:19.377Z"
                 }
@@ -4353,15 +3974,14 @@
                         "sha1": "5c04d7858e1253aae2707594e95bb1a939b11580",
                         "md5": "e59c2cc56c7b293e9187490578c7da0e"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 93902,
                     "date_published": "2020-07-05T03:42:24.447Z"
                 }
             ]
         },
         {
-            "pakku_id": "2LXCjHYaliHUgNxA",
+            "pakku_id": "S3VoP7Ewbh5jDnoj",
             "type": "MOD",
             "slug": {
                 "curseforge": "sink"
@@ -4387,8 +4007,7 @@
                         "sha1": "95731a05b72b570898d6c13c9618b4b82e53c5e8",
                         "md5": "69863657d109a83e49046f1b132eed9d"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 229526,
                     "date_published": "2021-07-31T18:36:10.633Z"
                 }
@@ -4424,44 +4043,9 @@
                         "sha1": "bdd413df8203a1af255231d2026907fe62700e25",
                         "md5": "4a16cc73554e74aa86011eb5c185042e"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 2368416,
                     "date_published": "2024-04-15T05:07:46.143Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2fK3cFjRyP8duF0e",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "spatialcompat"
-            },
-            "name": {
-                "curseforge": "SpatialCompat"
-            },
-            "id": {
-                "curseforge": "277136"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "spatialservermod-1.3.1.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3270/601/spatialservermod-1.3.1.jar",
-                    "id": "3270601",
-                    "parent_id": "277136",
-                    "hashes": {
-                        "sha1": "b5e189764265cd871fdc9d6315b6f6561de926fc",
-                        "md5": "3ad93af4a28d69d8af81871a97c1face"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 8536,
-                    "date_published": "2021-04-09T18:39:15.620Z"
                 }
             ]
         },
@@ -4534,8 +4118,7 @@
                         "sha1": "4041607128a3cea77d72d0bc7dcea90df6836c7f",
                         "md5": "d16b7d56aa3b1246ae481c2320b6cdab"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 20713,
                     "date_published": "2019-10-16T00:57:21.833Z"
                 }
@@ -4574,8 +4157,7 @@
                         "sha1": "49f6b461ff22ad8e23bb99679c1f64eee85ee958",
                         "md5": "c2f110988f172e3010855231adb58cd1"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 204829,
                     "date_published": "2023-08-21T13:06:36.803Z"
                 }
@@ -4613,84 +4195,9 @@
                         "sha1": "848b6a0c2c0e8624940c60266b59b11c631ac78b",
                         "md5": "c9b5efb769a4d4dd0699b8ee0b8c3863"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1479141,
                     "date_published": "2024-08-30T11:29:28.873Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "EH2kTo82nebciSCa",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-medicinal"
-            },
-            "name": {
-                "curseforge": "TFC Medicinal"
-            },
-            "id": {
-                "curseforge": "414233"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TFCMedicinal-1.0.6.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3137/708/TFCMedicinal-1.0.6.jar",
-                    "id": "3137708",
-                    "parent_id": "414233",
-                    "hashes": {
-                        "sha1": "c4a8665983c48f943ecbcd54758e98f792e8f4ab",
-                        "md5": "706487de76a0b672f10dc841e4514829"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 369290,
-                    "date_published": "2020-12-13T19:05:09.557Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "xkTO1Tf8hTGrfYcs",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "tfc-toohotaroundhere"
-            },
-            "name": {
-                "curseforge": "TFC TooHotAroundHere"
-            },
-            "id": {
-                "curseforge": "641267"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "thah-1.2.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4671/603/thah-1.2.0.jar",
-                    "id": "4671603",
-                    "parent_id": "641267",
-                    "hashes": {
-                        "sha1": "bb569fc6831965770926083384adf1ad29e0a462",
-                        "md5": "620a692b9e6d2b92fa6dc94a4e177b16"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 25269,
-                    "date_published": "2023-07-29T21:20:48.523Z"
                 }
             ]
         },
@@ -4709,7 +4216,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.1.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4717,37 +4224,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5970/317/TerraFirmaGreg-Core-Vintage-2.1.7.jar",
-                    "id": "5970317",
+                    "url": "https://edge.forgecdn.net/files/6000/305/TerraFirmaGreg-Core-Vintage-2.2.0.jar",
+                    "id": "6000305",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "5b656b156bcaf73fc28ea9df54e0b52ef608b55b",
-                        "md5": "e1038f9b74177ac42c17ad4df4b29901"
+                        "sha1": "2e4b0ec852119f0008f1433900e104ed591615d3",
+                        "md5": "347c0c49da530e5ebe7df65f82b8494f"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 65360376,
-                    "date_published": "2024-12-07T07:17:55.943Z"
+                    "size": 65087652,
+                    "date_published": "2024-12-17T23:53:40.627Z"
                 }
             ]
         },
         {
-            "pakku_id": "Fai27aC0gh37fUFX",
+            "pakku_id": "fXYNS14dQr4oqiNT",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "the-one-probe-community-edition"
+                "curseforge": "theonesmeagle",
+                "modrinth": "theonesmeagle"
             },
             "name": {
-                "curseforge": "The One Probe Community Edition"
+                "curseforge": "TheOneSmeagle",
+                "modrinth": "TheOneSmeagle"
             },
             "id": {
-                "curseforge": "885670"
+                "curseforge": "977883",
+                "modrinth": "Pw6vHeGo"
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TheOneProbe-CE-1.12-1.3.1.jar",
+                    "type": "modrinth",
+                    "file_name": "theonesmeagle-1.12-1.0.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4755,17 +4266,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5868/69/TheOneProbe-CE-1.12-1.3.1.jar",
-                    "id": "5868069",
-                    "parent_id": "885670",
+                    "url": "https://cdn.modrinth.com/data/Pw6vHeGo/versions/XUDZaZwg/theonesmeagle-1.12-1.0.3.jar",
+                    "id": "XUDZaZwg",
+                    "parent_id": "Pw6vHeGo",
                     "hashes": {
-                        "sha1": "bb369f1fea86fc458bdc83cd666d0c41f41d2c75",
-                        "md5": "6407a0900278fc6cdcf1eda9656aafeb"
+                        "sha512": "1418fbf5f9c5f54857bcf29007bac93654959d1845b3bb0828afa1aecef71cbd2fc3cf2d5ea885a9e84b915519983f0f4aac9ae27ee5a8f4a691b4a68ae1f9dc",
+                        "sha1": "3a08c9b4ffc02a66c3396c0f77dc1fc42c8bfe04"
                     },
-                    "required_dependencies": [
+                    "required_dependencies": [],
+                    "size": 342169,
+                    "date_published": "2024-12-17T16:26:34.284463Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "theonesmeagle-1.12-1.0.3.jar",
+                    "mc_versions": [
+                        "1.12.2"
                     ],
-                    "size": 325488,
-                    "date_published": "2024-11-02T12:42:27.147Z"
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5998/953/theonesmeagle-1.12-1.0.3.jar",
+                    "id": "5998953",
+                    "parent_id": "977883",
+                    "hashes": {
+                        "sha1": "3a08c9b4ffc02a66c3396c0f77dc1fc42c8bfe04",
+                        "md5": "09316dce7ee3aeb0fe5c427d3bfe69a2"
+                    },
+                    "required_dependencies": [],
+                    "size": 342169,
+                    "date_published": "2024-12-17T16:29:42.907Z"
                 }
             ]
         },
@@ -4799,47 +4330,9 @@
                         "sha1": "6a9078c5d0f9e92a9f66ded407cba4b48dadbdf8",
                         "md5": "e3b914de3d6a52c2e63ceb3c93f5c5c8"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 161592,
                     "date_published": "2021-09-14T21:18:46.397Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "hDrXOjFDLsqu9iVd",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "topalldependents"
-            },
-            "name": {
-                "curseforge": "TopAllDependents"
-            },
-            "id": {
-                "curseforge": "1120632"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TopAllDependents-1.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5808/89/TopAllDependents-1.0.jar",
-                    "id": "5808089",
-                    "parent_id": "1120632",
-                    "hashes": {
-                        "sha1": "b49407c614236b1bbdfe2fbaefbc774b6142dc5b",
-                        "md5": "4b8d32b0b0dfbd7a1fac09a187eeea5d"
-                    },
-                    "required_dependencies": [
-                    ],
-                    "size": 329037,
-                    "date_published": "2024-10-13T08:45:57.997Z"
                 }
             ]
         },
@@ -4870,8 +4363,7 @@
                         "sha1": "5c9157582cc081f0d3b4090f3a2dbc5cfbe70cc6",
                         "md5": "ec9e10a72424dc0d0fd73e5af8d6544d"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 397467,
                     "date_published": "2020-12-28T01:35:41.420Z"
                 }
@@ -4907,8 +4399,7 @@
                         "sha1": "920924267ca9503bee098f4d95745f2f7ed1b2c8",
                         "md5": "6df33f18d05cb43193f637bfefa3ccea"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1076741,
                     "date_published": "2024-11-29T06:07:57.280Z"
                 }
@@ -4989,8 +4480,7 @@
                         "sha1": "0342a9eb2cdf5bf054ba6577d74cf6fa440037ed",
                         "md5": "286c91bcfbd007b40a49e264c3da0cda"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1041680,
                     "date_published": "2024-11-10T17:52:50.600Z"
                 }
@@ -5106,8 +4596,7 @@
                         "sha1": "354d51a03b81e49a44f64c48e3e0b417db2ffce1",
                         "md5": "1a9d639495988b3f80eb1ff3a0de55eb"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 1795556,
                     "date_published": "2024-10-31T08:01:11.933Z"
                 }
@@ -5128,7 +4617,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "XaerosWorldMap_1.39.0_Forge_1.12.jar",
+                    "file_name": "XaerosWorldMap_1.39.2_Forge_1.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5136,17 +4625,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5658/210/XaerosWorldMap_1.39.0_Forge_1.12.jar",
-                    "id": "5658210",
+                    "url": "https://edge.forgecdn.net/files/5987/126/XaerosWorldMap_1.39.2_Forge_1.12.jar",
+                    "id": "5987126",
                     "parent_id": "317780",
                     "hashes": {
-                        "sha1": "8ad908298e7ac33828860f37230c33a3d7483133",
-                        "md5": "c1f769910aaf43c1eb76f7b1d92a5f93"
+                        "sha1": "39b8d2cc68ed7827df3deddf68fe785cdda8c8ff",
+                        "md5": "0ae2f3e451389eb07a330a872dffac37"
                     },
-                    "required_dependencies": [
-                    ],
-                    "size": 852198,
-                    "date_published": "2024-08-24T07:12:08.630Z"
+                    "required_dependencies": [],
+                    "size": 854439,
+                    "date_published": "2024-12-13T08:11:08.030Z"
                 }
             ]
         },
@@ -5180,8 +4668,7 @@
                         "sha1": "be56bc229b7f418675bf46277e37a8272def5327",
                         "md5": "0f90369081c895ad54f5a011044d1779"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 328793,
                     "date_published": "2019-11-21T03:52:55.193Z"
                 }
@@ -5218,17 +4705,18 @@
                         "sha1": "6ed99fc8eba9c958522966a0cf36168e95bbdc47",
                         "md5": "85d6c8540aa1f8d5995b75003d2e5394"
                     },
-                    "required_dependencies": [
-                    ],
+                    "required_dependencies": [],
                     "size": 14431195,
                     "date_published": "2024-08-17T04:03:36.640Z"
                 }
             ]
         },
         {
-            "pakku_id": "KpHJyLWGoYNLhRW0",
+            "pakku_id": "wsdbklsZYM0b5RPr",
+            "pakku_links": [
+                "G0DXfGoMnDW6vCfu"
+            ],
             "type": "MOD",
-            "side": "CLIENT",
             "slug": {
                 "curseforge": "sound-physics-remixin"
             },
