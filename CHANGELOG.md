@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.5.8] - 19.12.2024
+### Changes
+- Removed TFC Medicinal mod, deadly disease will no longer haunt you.
+- Removed a decent amount of mods. Which are no longer required or their functionality is in another mod.
+- Part of the CT scripts have been moved to our TerraFirmaGreg-Core mod.
+- Disabled point-to-point storage tunnel from nae2 mod. #261
+- Added recipe for inverted_toggle_bus ae2. #245
+- Fixed a bug where some trees do not have seedlings. #177
+- Added a preliminary fix when the game crashes when leaving the server.
+- Removed different types of clay added by TFCFlorae. Only one is left. The corresponding items and blocks will be removed.
+
 ## [4.5.7] - 13.11.2024
 ### Changes
 - Fixed missing texture bug.
