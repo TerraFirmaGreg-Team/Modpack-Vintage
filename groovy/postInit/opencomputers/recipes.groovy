@@ -308,18 +308,18 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(100).EUt(2920).buildAndRegister()
 
 // Printer
-crafting.addShaped('tfg/oc/printer', item('opencomputers:printer'), [
+crafting.addShaped('oc/printer', item('opencomputers:printer'), [
         [ore('screwIronAny'), ore('hopper'), ore('screwIronAny')],
         [ore('craftingPiston'), ore('oc:circuitChip3'), ore('craftingPiston')],
         [ore('ingotIron'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
 
 // Netsplitter
-crafting.addShaped('tfg/oc/netsplitter', item('opencomputers:netsplitter'), [
+crafting.addShaped('oc/netsplitter', item('opencomputers:netsplitter'), [
         [ore('screwIronAny'), metaitem('cableGtSingleIron'), ore('screwIronAny')],
         [metaitem('cableGtSingleIron'), ore('craftingPiston'), metaitem('cableGtSingleIron')],
         [ore('screwIronAny'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
 
-crafting.addShapeless('tfg/oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore('oc:capacitor')])
+crafting.addShapeless('oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore('oc:capacitor')])
 
 // Crafting Upgrade
 mods.gregtech.assembler.recipeBuilder()

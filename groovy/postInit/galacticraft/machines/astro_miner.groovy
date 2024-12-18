@@ -38,7 +38,7 @@ import gregtech.api.metatileentity.multiblock.CleanroomType
             .duration(600).EUt(7680).buildAndRegister()
 
     // Основания астрономического шахтера
-    crafting.addShaped("tfg/gc/miner_base", item('galacticraftplanets:miner_base'), [
+    crafting.addShaped("gc/miner_base", item('galacticraftplanets:miner_base'), [
             [metaitem('plateDenseDesh'), metaitem('crate.stainless_steel'), metaitem('plateDenseDesh')],
             [item('galacticraftplanets:item_basic_asteroids:8'), metaitem('frameTungsten'), item('galacticraftplanets:item_basic_asteroids:8')],
             [metaitem('plateDenseDesh'), metaitem('battery_buffer.luv.16'), metaitem('plateDenseDesh')]])

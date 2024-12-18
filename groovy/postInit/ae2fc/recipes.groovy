@@ -121,7 +121,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(10).EUt(980).buildAndRegister()
 
 // Dual interface
-crafting.addShapeless("tfg/ae2fc/dual_interface", item('ae2fc:dual_interface'), [item('ae2fc:part_dual_interface')])
+crafting.addShapeless("ae2fc/dual_interface", item('ae2fc:dual_interface'), [item('ae2fc:part_dual_interface')])
 mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(24)
         .inputs(

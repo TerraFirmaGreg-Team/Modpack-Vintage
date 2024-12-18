@@ -37,9 +37,9 @@ for (int i = 0; i < 4; i++) {
             .duration(10).EUt(7).buildAndRegister()
     // Разбор
     mods.gregtech.packer.recipeBuilder()
-            .inputs(NAE2.fluidStorageCells[i])
+            .inputs(NAE2.fluidStorageCells[i]) 
             .outputs(
-                    item('appliedenergistics2:material', 39),
+                    item('appliedenergistics2:material', 39), 
                     NAE2.fluidStorageComponents[i])
             .duration(10).EUt(7).buildAndRegister()
 

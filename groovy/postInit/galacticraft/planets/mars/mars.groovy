@@ -112,7 +112,7 @@ if (isLoaded("galacticraftcore")) {
             .duration(20).EUt(380).buildAndRegister()
 
     // Палка Дэш
-    crafting.addShaped("tfg/gc/desh_stick", item('galacticraftplanets:item_basic_mars:1'), [
+    crafting.addShaped("gc/desh_stick", item('galacticraftplanets:item_basic_mars:1'), [
             [ore('toolFile').transform(Function.setToolDamage), null, null],
             [null, item('galacticraftplanets:item_basic_mars:2'), null],
             [null, null, null]])

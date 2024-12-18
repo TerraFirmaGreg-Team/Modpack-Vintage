@@ -9,16 +9,6 @@ import mods.firmalife.Oven;
 
 // --- Удаление рецептов
 
-// Молотки
-Anvil.removeRecipe(<firmalife:bismuth_bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:black_bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:bronze_mallet_head>);
-Anvil.removeRecipe(<firmalife:copper_mallet_head>);
-Anvil.removeRecipe(<firmalife:wrought_iron_mallet_head>);
-Anvil.removeRecipe(<firmalife:steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:black_steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:blue_steel_mallet_head>);
-Anvil.removeRecipe(<firmalife:red_steel_mallet_head>);
 
 // Cooked Pizza
 Oven.removeRecipe(<firmalife:cooked_pizza>);

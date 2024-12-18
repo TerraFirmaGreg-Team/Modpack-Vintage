@@ -55,7 +55,7 @@ import gregtech.common.blocks.MetaBlocks
 
 
 // // Контроллер пилорамы
-// recipes.addShaped("tfg/gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
+// recipes.addShaped("gregtech/saw_mill_controller", <metaitem:multiblocktweaker:saw_mill>, [
 //     [<metaitem:screwSteel>, <metaitem:toolHeadBuzzSawSteel>, <metaitem:screwSteel>],
 //     [<metaitem:electric.motor.mv>, <metaitem:hull.mv>, <metaitem:electric.motor.mv>],
 //     [<ore:circuitMv>, <metaitem:conveyor.module.mv>, <ore:circuitMv>]]);

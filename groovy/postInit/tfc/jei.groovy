@@ -388,12 +388,31 @@ def removeAndHide = [
         item('tfc:metal/scythe_blade/black_steel'),
         item('tfc:metal/scythe_blade/blue_steel'),
         item('tfc:metal/scythe_blade/red_steel'),
+        //  // Saws
+        // item('tfc:metal/ice_saw/bronze'),
+        // item('tfc:metal/ice_saw/bismuth_bronze'),
+        // item('tfc:metal/ice_saw/black_bronze'),
+        // item('tfc:metal/ice_saw/wrought_iron'),
+        // item('tfc:metal/ice_saw/steel'),
+        // item('tfc:metal/ice_saw/black_steel'),
+        // item('tfc:metal/ice_saw/red_steel'),
+        // item('tfc:metal/ice_saw/blue_steel'),
+        // // Saw Heads
+        // item('tfc:metal/ice_saw/bronze'),
+        // item('tfc:metal/ice_saw/bismuth_bronze'),
+        // item('tfc:metal/ice_saw/black_bronze'),
+        // item('tfc:metal/ice_saw/wrought_iron'),
+        // item('tfc:metal/ice_saw/steel'),
+        // item('tfc:metal/ice_saw/black_steel'),
+        // item('tfc:metal/ice_saw/red_steel'),
+        // item('tfc:metal/ice_saw/blue_steel')
         // Gems [Hidden]
         item('tfc:gem/beryl:*'),
         item('tfc:gem/agate:*'),
         item('tfc:gem/tourmaline:*'),
         item('tfc:gem/jade:*'),
         item('tfc:gem/jasper:*'),
+        item('tfc:gem/amber:*'),
         // Gems [Unhidden]
         item('tfc:gem/amethyst:*'),
         item('tfc:gem/emerald:*'),

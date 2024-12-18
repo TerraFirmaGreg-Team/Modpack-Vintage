@@ -26,8 +26,6 @@ def removeAndHide = [
         item('tfcflorae:tools/bows/red_snake/red_snake'),
         item('tfcflorae:tools/bows/rosebow/rosebow'),
         item('tfcflorae:tools/bows/sabrewing/sabrewing'),
-        // Gems
-        item('tfcflorae:gem/amber:*')
 ]
 
 def removeRecipesByName = [

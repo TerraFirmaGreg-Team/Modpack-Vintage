@@ -8,7 +8,7 @@ import classes.Function
 
 
 // Alabaster Bricks
-crafting.addShapeless("tfg/tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile').transform(Function.setToolDamage)])
+crafting.addShapeless("tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile').transform(Function.setToolDamage)])
 
 // Cladding
 mods.gregtech.alloy_smelter.recipeBuilder()
@@ -19,13 +19,13 @@ mods.gregtech.alloy_smelter.recipeBuilder()
         .duration(400).EUt(2).buildAndRegister()
 
 // Контроллер доменной печи
-crafting.addShaped("tfg/tfc/blast_furnace", item('tfc:blast_furnace'), [
+crafting.addShaped("tfc/blast_furnace", item('tfc:blast_furnace'), [
         [ore('plateDoubleIronAny'), ore('plateDoubleIronAny'), ore('plateDoubleIronAny')],
         [ore('plateDoubleIronAny'), item('tfc:crucible'), ore('plateDoubleIronAny')],
         [ore('plateDoubleIronAny'), ore('plateDoubleIronAny'), ore('plateDoubleIronAny')]])
 
 // Огнеупорная глина
-crafting.addShaped("tfg/tfc/fire_clay", item('tfc:ceramics/fire_clay'), [
+crafting.addShaped("tfc/fire_clay", item('tfc:ceramics/fire_clay'), [
         [item('tfc:powder/kaolinite'), item('tfc:powder/graphite'), item('tfc:powder/kaolinite')],
         [item('tfc:powder/graphite'), ore('clay'), item('tfc:powder/graphite')],
         [item('tfc:powder/kaolinite'), item('tfc:powder/graphite'), item('tfc:powder/kaolinite')]])
@@ -401,7 +401,7 @@ for (int i = 0; i < TerraFirmaCraft.lumbers.size(); i++) {
             .duration(320).EUt(4).buildAndRegister()
 
     // Сундуки
-    crafting.addShaped("tfg/tfc/chest_" + i, TerraFirmaCraft.tfcChests[i], [
+    crafting.addShaped("tfc/chest_" + i, TerraFirmaCraft.tfcChests[i], [
             [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]],
             [TerraFirmaCraft.lumbers[i], null, TerraFirmaCraft.lumbers[i]],
             [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]]])
@@ -430,7 +430,7 @@ for (int i = 0; i < TerraFirmaCraft.lumbers.size(); i++) {
             .duration(205).EUt(4).buildAndRegister()
 
     // Лодки
-    crafting.addShaped("tfg/tfc/boat_" + i, TerraFirmaCraft.tfcBoats[i], [
+    crafting.addShaped("tfc/boat_" + i, TerraFirmaCraft.tfcBoats[i], [
             [item('gregtech:meta_screw:*'), item('gregtech:meta_screw:*'), item('gregtech:meta_screw:*')],
             [TerraFirmaCraft.lumbers[i], metaitem('rubber_drop'), TerraFirmaCraft.lumbers[i]],
             [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]]])
@@ -473,11 +473,11 @@ for (int i = 0; i < TerraFirmaCraft.lumbers.size(); i++) {
     // 	.buildAndRegister()
 }
 
-crafting.addShapeless("tfg/tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfg/tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
-crafting.addShapeless("tfg/tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
-crafting.addShapeless("tfg/tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfg/tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
+crafting.addShapeless("tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
+crafting.addShapeless("tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
+crafting.addShapeless("tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
+crafting.addShapeless("tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
+crafting.addShapeless("tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
 mods.gregtech.cutter.recipeBuilder()
         .inputs(item('tfc:stick_bundle'))
@@ -1174,14 +1174,6 @@ mods.gregtech.mixer.recipeBuilder()
         .fluidInputs(fluid('zebu_milk') * 2000)
         .circuitMeta(16)
         .fluidOutputs(fluid('milk_curdled') * 2000)
-        .duration(150).EUt(2).buildAndRegister()
-
-// Kaolinite -> Kaolinite Clay
-mods.gregtech.mixer.recipeBuilder()
-        .inputs(item('tfc:powder/kaolinite'))
-        .fluidInputs(fluid('fresh_water') * 100)
-        .circuitMeta(16)
-        .outputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
         .duration(150).EUt(2).buildAndRegister()
 
 // Milk Curd -> Gouda Wheel

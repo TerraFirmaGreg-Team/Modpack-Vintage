@@ -21,9 +21,9 @@ public class NAE2 {
     // - All ME Fluid Storage component
     static fluidStorageComponents = [
         item('nae2:material', 5),
-        item('nae2:material', 6),
+        item('nae2:material', 6), 
         item('nae2:material', 7),
-        item('nae2:material', 8)
+        item('nae2:material', 8) 
     ]
 
     // - All ME Fluid Storage cell

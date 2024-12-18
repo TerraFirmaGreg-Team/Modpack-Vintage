@@ -114,23 +114,23 @@ Press.add(<ore:apple>, <liquid:juice_apple> * 10);
 // Net -> Dirty Net
 for i, DirtyNets in DirtyNets {
     
-    Barrel.addRecipe("tfg/tfcflorae/olive_oil_water_to_olive_oil_" + i, CleanNets[i], <liquid:olive_oil_water> * 250, DirtyNets, <liquid:olive_oil> * 50, 0);
+    Barrel.addRecipe("tfcflorae/olive_oil_water_to_olive_oil_" + i, CleanNets[i], <liquid:olive_oil_water> * 250, DirtyNets, <liquid:olive_oil> * 50, 0);
 }
 
 // GT Orange Juice -> Orange Vine
-Barrel.addRecipe("tfg/tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:juice_orange> * 500, <liquid:orange_wine> * 500, 72);
+Barrel.addRecipe("tfcflorae/orange_juice_to_orange_vine", <tfcflorae:yeast>, <liquid:juice_orange> * 500, <liquid:orange_wine> * 500, 72);
 
 // Сушенная еда
 for i, MissingFreshFruits in MissingFreshFruits{
-	Drying.addRecipe("tfg/tfcflorae/drying/" + i, MissingFreshFruits, MissingDriedFruits[i], 12000);
+	Drying.addRecipe("tfcflorae/drying/" + i, MissingFreshFruits, MissingDriedFruits[i], 12000);
 }
 
 
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_1", <gregtech:meta_tool_head_knife:2049> * 2, "X  X ", "XX XX", "XX XX", "XX XX", "XX XX");
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_2", <gregtech:meta_tool_head_knife:2049> * 2, "X   X", "XX XX", "XX XX", "XX XX", "XX XX");
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_knife_3", <gregtech:meta_tool_head_knife:2049> * 2, " X X ", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_knife_1", <gregtech:meta_tool_head_knife:2049> * 2, "X  X ", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_knife_2", <gregtech:meta_tool_head_knife:2049> * 2, "X   X", "XX XX", "XX XX", "XX XX", "XX XX");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_knife_3", <gregtech:meta_tool_head_knife:2049> * 2, " X X ", "XX XX", "XX XX", "XX XX", "XX XX");
 
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_shovel", <gregtech:meta_tool_head_shovel:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_shovel", <gregtech:meta_tool_head_shovel:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
 
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_hoe", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
-mods.tfcflorae.knapping.add("flint", "tfg/tfcflorae/flint/head_hoe_2", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_hoe", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");
+mods.tfcflorae.knapping.add("flint", "tfcflorae/flint/head_hoe_2", <gregtech:meta_tool_head_hoe:2049> * 2, " XXX ", " XXX ", " XXX ", " XXX ", "  X  ");

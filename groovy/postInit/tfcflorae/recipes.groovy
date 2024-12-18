@@ -7,44 +7,6 @@ import classes.array.TerraFirmaCraft
 
 // --- Добавление рецептов
 
-// Переработка Earthenware Clay
-mods.gregtech.macerator.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay'))
-        .outputs(metaitem('dustClay'))
-        .duration(15).EUt(2).buildAndRegister()
-
-mods.gregtech.compressor.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/earthenware/earthenware_clay') * 4)
-        .outputs(item('tfcflorae:ceramics/earthenware/earthenware_clay_block'))
-        .duration(300).EUt(2).buildAndRegister()
-
-// Переработка Stoneware Clay
-mods.gregtech.macerator.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay'))
-        .outputs(metaitem('dustClay'))
-        .duration(15).EUt(2).buildAndRegister()
-
-mods.gregtech.compressor.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/stoneware/stoneware_clay') * 4)
-        .outputs(item('tfcflorae:ceramics/stoneware/stoneware_clay_block'))
-        .duration(300).EUt(2).buildAndRegister()
-
-// Переработка Kaolinite Clay
-mods.gregtech.macerator.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay'))
-        .outputs(metaitem('dustClay'))
-        .duration(15).EUt(2).buildAndRegister()
-
-mods.gregtech.compressor.recipeBuilder()
-        .inputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay') * 4)
-        .outputs(item('tfcflorae:ceramics/kaolinite/kaolinite_clay_block'))
-        .duration(300).EUt(2).buildAndRegister()
-
-// Емкость под жидкость
-crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:ceramics/stoneware/fired/pot')])
-crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:ceramics/kaolinite/fired/pot')])
-crafting.addShapeless(item('tfctech:ceramics/fluid_bowl'), [item('tfcflorae:ceramics/earthenware/fired/pot')])
-
 // Yeast
 crafting.addShapeless(item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({ item('tfc:wooden_bucket', 0) })])
 
@@ -757,5 +719,5 @@ mods.gregtech.mixer.recipeBuilder()
 
 
 // Ящик
-crafting.addShapeless("tfg/tfcflorae/orange_juice_to_orange_vine", item('tfcflorae:storage/crate'), [item('tfc:stick_bundle'), ore('clay'), ore('clay'), item('tfc:stick_bundle')])
+crafting.addShapeless("tfcflorae/orange_juice_to_orange_vine", item('tfcflorae:storage/crate'), [item('tfc:stick_bundle'), ore('clay'), ore('clay'), item('tfc:stick_bundle')])
 

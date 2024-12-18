@@ -6,115 +6,115 @@ import classes.Function
 // --- Добавление рецептов
 
 // Водная хрень
-crafting.addShapeless("tfg/vanilla/prismarine/block_raw_0", item('minecraft:prismarine'), 
+crafting.addShapeless("vanilla/prismarine/block_raw_0", item('minecraft:prismarine'), 
         [item('minecraft:prismarine_shard'), item('minecraft:prismarine_shard'), 
         item('minecraft:prismarine_shard'), item('minecraft:prismarine_shard')])
 
-crafting.addShapeless("tfg/vanilla/prismarine/block_raw_1", item('minecraft:prismarine'), 
+crafting.addShapeless("vanilla/prismarine/block_raw_1", item('minecraft:prismarine'), 
         [ore('blockQuartz'), ore('dyeCyan')])
 
-crafting.addShapeless("tfg/vanilla/prismarine/bricks", item('minecraft:prismarine:1') * 4, 
+crafting.addShapeless("vanilla/prismarine/bricks", item('minecraft:prismarine:1') * 4, 
         [item('minecraft:prismarine'), item('minecraft:prismarine'), 
         item('minecraft:prismarine'), item('minecraft:prismarine')])
 
-crafting.addShapeless("tfg/vanilla/prismarine/sea_lantern", item('minecraft:sea_lantern'), 
+crafting.addShapeless("vanilla/prismarine/sea_lantern", item('minecraft:sea_lantern'), 
         [ore('glowstone'), ore('dyeCyan')])
 
-crafting.addShapeless("tfg/vanilla/prismarine/dark", item('minecraft:prismarine:2'), 
+crafting.addShapeless("vanilla/prismarine/dark", item('minecraft:prismarine:2'), 
         [item('minecraft:prismarine'), ore('dyeBlack')])
 
 // Табличка
-crafting.addShaped("tfg/vanilla/sign", item('minecraft:sign'), [
+crafting.addShaped("vanilla/sign", item('minecraft:sign'), [
         [ore('plankWood'), ore('plankWood'), ore('plankWood')],
         [ore('plankWood'), ore('plankWood'), ore('plankWood')],
         [null, item('minecraft:stick'), null]])
 
 // Раздатчик
-crafting.addShaped("tfg/vanilla/dispenser", item('minecraft:dispenser'), [
+crafting.addShaped("vanilla/dispenser", item('minecraft:dispenser'), [
         [ore('cobblestone'), ore('ringIronAny'), ore('cobblestone')],
         [ore('springIronAny'), ore('string'), ore('springIronAny')],
         [ore('gearSmallIronAny'), metaitem('stickRedAlloy'), ore('gearSmallIronAny')]])
 
 // Выбрасыватель
-crafting.addShaped("tfg/vanilla/dropper", item('minecraft:dropper'), [
+crafting.addShaped("vanilla/dropper", item('minecraft:dropper'), [
         [ore('cobblestone'), ore('ringIronAny'), ore('cobblestone')],
         [ore('springSmallIronAny'), ore('string'), ore('springSmallIronAny')],
         [ore('gearSmallIronAny'), metaitem('stickRedAlloy'), ore('gearSmallIronAny')]])
 
 // Наблюдатель - истинный кварц
-crafting.addShaped("tfg/vanilla/observer/certus_quartz", item('minecraft:observer'), [
+crafting.addShaped("vanilla/observer/certus_quartz", item('minecraft:observer'), [
         [ore('ringIronAny'), ore('cobblestone'), ore('ringIronAny')],
         [ore('cobblestone'), metaitem('plateCertusQuartz'), ore('cobblestone')],
         [ore('ringIronAny'), metaitem('stickRedAlloy'), ore('ringIronAny')]])
 
 // Наблюдатель - адский кварц
-crafting.addShaped("tfg/vanilla/observer/nether_quartz", item('minecraft:observer'), [
+crafting.addShaped("vanilla/observer/nether_quartz", item('minecraft:observer'), [
         [ore('ringIronAny'), ore('cobblestone'), ore('ringIronAny')],
         [ore('cobblestone'), metaitem('plateNetherQuartz'), ore('cobblestone')],
         [ore('ringIronAny'), metaitem('stickRedAlloy'), ore('ringIronAny')]])
 
 // Наблюдатель - кварцит
-crafting.addShaped("tfg/vanilla/observer/quartzite", item('minecraft:observer'), [
+crafting.addShaped("vanilla/observer/quartzite", item('minecraft:observer'), [
         [ore('ringIronAny'), ore('cobblestone'), ore('ringIronAny')],
         [ore('cobblestone'), metaitem('plateQuartzite'), ore('cobblestone')],
         [ore('ringIronAny'), metaitem('stickRedAlloy'), ore('ringIronAny')]])
 
 // Железная нажимная плита
-crafting.addShaped("tfg/vanilla/light_weighted_pressure_plate", item('minecraft:heavy_weighted_pressure_plate'), [
+crafting.addShaped("vanilla/light_weighted_pressure_plate", item('minecraft:heavy_weighted_pressure_plate'), [
         [metaitem('screwSteel'), ore('toolHammer').transform(Function.setToolDamage), metaitem('screwSteel')],
         [ore('plateIronAny'), metaitem('springSteel'), ore('plateIronAny')],
         [metaitem('screwSteel'), ore('toolScrewdriver').transform(Function.setToolDamage), metaitem('screwSteel')]])
 
 // Котёл
-crafting.addShaped("tfg/vanilla/cauldron", item('minecraft:cauldron'), [
+crafting.addShaped("vanilla/cauldron", item('minecraft:cauldron'), [
         [ore('plateIronAny'), null, ore('plateIronAny')],
         [ore('plateIronAny'), ore('toolHammer').transform(Function.setToolDamage), ore('plateIronAny')],
         [ore('plateIronAny'), ore('plateIronAny'), ore('plateIronAny')]])
 
 // Воронка
-crafting.addShaped("tfg/vanilla/hopper", item('minecraft:hopper'), [
+crafting.addShaped("vanilla/hopper", item('minecraft:hopper'), [
         [ore('plateIronAny'), ore('chest'), ore('plateIronAny')],
         [ore('plateIronAny'), ore('gearIronAny'), ore('plateIronAny')],
         [ore('toolWrench').transform(Function.setToolDamage), ore('plateIronAny'), ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Наковальня
-crafting.addShaped("tfg/vanilla/anvil", item('minecraft:anvil'), [
+crafting.addShaped("vanilla/anvil", item('minecraft:anvil'), [
         [ore('blockIronAny'), ore('blockIronAny'), ore('blockIronAny')],
         [ore('screwIronAny'), ore('blockIronAny'), ore('screwIronAny')],
         [ore('plateIronAny'), ore('blockIronAny'), ore('plateIronAny')]])
 
 // Вагонетка
-crafting.addShaped("tfg/vanilla/minecart", item('minecraft:minecart'), [
+crafting.addShaped("vanilla/minecart", item('minecraft:minecart'), [
         [ore('ringIronAny'), ore('toolHammer').transform(Function.setToolDamage), ore('ringIronAny')],
         [ore('plateIronAny'), ore('toolWrench').transform(Function.setToolDamage), ore('plateIronAny')],
         [ore('ringIronAny'), ore('plateIronAny'), ore('ringIronAny')]])
 
 // Проигрыватель
-crafting.addShaped("tfg/vanilla/jukebox", item('minecraft:jukebox'), [
+crafting.addShaped("vanilla/jukebox", item('minecraft:jukebox'), [
         [ore('logWood'), metaitem('screwDiamond'), ore('logWood')],
         [item('minecraft:noteblock'), ore('ringIronAny'), item('minecraft:noteblock')],
         [ore('logWood'), ore('gearIronAny'), ore('logWood')]])
 
 // Хук
-crafting.addShaped("tfg/vanilla/tripwire_hook", item('minecraft:tripwire_hook'), [
+crafting.addShaped("vanilla/tripwire_hook", item('minecraft:tripwire_hook'), [
         [ore('ringIronAny'), item('minecraft:stick'), ore('ringIronAny')],
         [ore('string'), item('minecraft:stick'), ore('string')],
         [null, ore('string'), null]])
 
 // Картина
-crafting.addShaped("tfg/vanilla/painting", item('minecraft:painting'), [
+crafting.addShaped("vanilla/painting", item('minecraft:painting'), [
         [ore('string'), ore('ringIronAny'), ore('string')],
         [item('minecraft:stick'), ore('carpet'), item('minecraft:stick')],
         [item('minecraft:stick'), item('minecraft:stick'), item('minecraft:stick')]])
 
 // Рамка
-crafting.addShaped("tfg/vanilla/item_frame", item('minecraft:item_frame'), [
+crafting.addShaped("vanilla/item_frame", item('minecraft:item_frame'), [
         [ore('string'), ore('ringIronAny'), ore('string')],
         [item('minecraft:stick'), ore('leather'), item('minecraft:stick')],
         [item('minecraft:stick'), item('minecraft:stick'), item('minecraft:stick')]])
 
 // Лампа
-crafting.addShaped("tfg/vanilla/redstone_lamp", item('minecraft:redstone_lamp'), [
+crafting.addShaped("vanilla/redstone_lamp", item('minecraft:redstone_lamp'), [
         [metaitem('plateBrass'), ore('stickIronAny'), metaitem('plateBrass')],
         [ore('stickIronAny'), metaitem('cableGtSingleRedAlloy'), ore('stickIronAny')],
         [metaitem('plateBrass'), ore('stickIronAny'), metaitem('plateBrass')]])
@@ -128,90 +128,90 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(100).EUt(1).buildAndRegister()
 
 // Удочка
-crafting.addShaped("tfg/vanilla/fishing_rod", item('minecraft:fishing_rod'), [
+crafting.addShaped("vanilla/fishing_rod", item('minecraft:fishing_rod'), [
         [null, null, item('minecraft:stick')],
         [null, item('minecraft:stick'), ore('string')],
         [item('minecraft:stick'), null, ore('string')]])
 
 // Чар стол
-crafting.addShaped("tfg/vanilla/enchanting_table", item('minecraft:enchanting_table'), [
+crafting.addShaped("vanilla/enchanting_table", item('minecraft:enchanting_table'), [
         [null, item('minecraft:book'), null],
         [ore('gemFlawless'), ore('obsidian'), ore('gemFlawless')],
         [ore('obsidian'), ore('obsidian'), ore('obsidian')]])
 
 // Поршень
-crafting.addShaped("tfg/vanilla/piston", item('minecraft:piston'), [
+crafting.addShaped("vanilla/piston", item('minecraft:piston'), [
         [ore('lumber'), ore('lumber'), ore('lumber')],
         [ore('gearIronAny'), ore('stickLongIronAny'), ore('gearIronAny')],
         [ore('cobblestone'), item('minecraft:redstone'), ore('cobblestone')]])
 
 // Книга
-crafting.addShaped("tfg/vanilla/book", item('minecraft:book'), [
+crafting.addShaped("vanilla/book", item('minecraft:book'), [
         [ore('string'), ore('paper'), ore('leather')],
         [ore('string'), ore('paper'), metaitem('rubber_drop')],
         [ore('string'), ore('paper'), ore('leather')]])
 
 // Ведро
-crafting.addShaped("tfg/vanilla/iron_bucket", item('minecraft:bucket'), [
+crafting.addShaped("vanilla/iron_bucket", item('minecraft:bucket'), [
         [null, ore('toolHammer').transform(Function.setToolDamage), null],
         [metaitem('plateBlueSteel'), item('tfc:metal/bucket/red_steel'), metaitem('plateBlueSteel')],
         [null, metaitem('plateBlueSteel'), null]])
 
 // Рычаг
-crafting.addShaped("tfg/vanilla/lever", item('minecraft:lever'), [
+crafting.addShaped("vanilla/lever", item('minecraft:lever'), [
         [null, ore('buttonStone'), null],
         [null, item('minecraft:stick'), null]])
 
 // Бирка
-crafting.addShaped("tfg/vanilla/name_tag", item('minecraft:name_tag'), [
+crafting.addShaped("vanilla/name_tag", item('minecraft:name_tag'), [
         [ore('string'), ore('string'), null],
         [ore('string'), item('minecraft:paper'), null],
         [ore('string'), ore('string'), null]])
 
 // Повторитель
-crafting.addShaped("tfg/vanilla/repeater", item('minecraft:repeater'), [
+crafting.addShaped("vanilla/repeater", item('minecraft:repeater'), [
         [ore('screwIronAny'), null, ore('screwIronAny')],
         [item('minecraft:redstone_torch'), ore('toolScrewdriver').transform(Function.setToolDamage), item('minecraft:redstone_torch')],
         [ore('pressurePlateStone'), metaitem('stickRedAlloy'), ore('pressurePlateStone')]])
 
 // Компаратор - истинный кварц
-crafting.addShaped("tfg/vanilla/comparator/certus_quartz", item('minecraft:comparator'), [
+crafting.addShaped("vanilla/comparator/certus_quartz", item('minecraft:comparator'), [
         [ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
         [item('minecraft:redstone_torch'), metaitem('plateCertusQuartz'), item('minecraft:redstone_torch')],
         [ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Компаратор - адский кварц
-crafting.addShaped("tfg/vanilla/comparator/nether_quartz", item('minecraft:comparator'), [
+crafting.addShaped("vanilla/comparator/nether_quartz", item('minecraft:comparator'), [
         [ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
         [item('minecraft:redstone_torch'), metaitem('plateNetherQuartz'), item('minecraft:redstone_torch')],
         [ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Компаратор - кварцит
-crafting.addShaped("tfg/vanilla/comparator/quartzite", item('minecraft:comparator'), [
+crafting.addShaped("vanilla/comparator/quartzite", item('minecraft:comparator'), [
         [ore('screwIronAny'), item('minecraft:redstone_torch'), ore('screwIronAny')],
         [item('minecraft:redstone_torch'), metaitem('plateQuartzite'), item('minecraft:redstone_torch')],
         [ore('pressurePlateStone'), ore('toolScrewdriver').transform(Function.setToolDamage), ore('pressurePlateStone')]])
 
 // Детектор света - истинный кварц
-crafting.addShaped("tfg/vanilla/daylight_detector/certus_quartz", item('minecraft:daylight_detector'), [
+crafting.addShaped("vanilla/daylight_detector/certus_quartz", item('minecraft:daylight_detector'), [
         [ore('paneGlass'), ore('paneGlass'), ore('paneGlass')],
         [metaitem('plateCertusQuartz'), metaitem('plateCertusQuartz'), metaitem('plateCertusQuartz')],
         [ore('slabWood'), metaitem('stickRedAlloy'), ore('slabWood')]])
 
 // Детектор света - адский кварц
-crafting.addShaped("tfg/vanilla/daylight_detector/nether_quartz", item('minecraft:daylight_detector'), [
+crafting.addShaped("vanilla/daylight_detector/nether_quartz", item('minecraft:daylight_detector'), [
         [ore('paneGlass'), ore('paneGlass'), ore('paneGlass')],
         [metaitem('plateNetherQuartz'), metaitem('plateNetherQuartz'), metaitem('plateNetherQuartz')],
         [ore('slabWood'), metaitem('stickRedAlloy'), ore('slabWood')]])
 
 // Детектор света - кварцит
-crafting.addShaped("tfg/vanilla/daylight_detector/quartzite", item('minecraft:daylight_detector'), [
+crafting.addShaped("vanilla/daylight_detector/quartzite", item('minecraft:daylight_detector'), [
         [ore('paneGlass'), ore('paneGlass'), ore('paneGlass')],
         [metaitem('plateQuartzite'), metaitem('plateQuartzite'), metaitem('plateQuartzite')],
         [ore('slabWood'), metaitem('stickRedAlloy'), ore('slabWood')]])
 
 // Конская броня - железо
-crafting.addShaped("tfg/vanilla/horse_armor/iron", item('minecraft:iron_horse_armor'), [
+crafting.addShaped("vanilla/horse_armor/iron", item('minecraft:iron_horse_armor'), [
         [ore('toolHammer').transform(Function.setToolDamage), ore('toolScrewdriver').transform(Function.setToolDamage), item('tfc:metal/helmet/wrought_iron')],
         [ore('plateIronAny'), item('tfc:metal/chestplate/wrought_iron'), ore('plateIronAny')],
         [item('tfc:metal/greaves/wrought_iron'), ore('screwIronAny'), item('tfc:metal/boots/wrought_iron')]])
@@ -436,14 +436,14 @@ mods.gregtech.bender.recipeBuilder()
         .duration(100).EUt(7).buildAndRegister()
 
 // Slimeball
-crafting.addShaped("tfg/gc/slime_ball", item('minecraft:slime_ball'), [
+crafting.addShaped("gc/slime_ball", item('minecraft:slime_ball'), [
         [ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')],
         [item('minecraft:sugar'), item('firmalife:cheddar_wheel'), item('minecraft:sugar')],
         [ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')]])
 
 
 // Палки
-crafting.addShapeless("tfg/tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(Function.setToolDamage)])
+crafting.addShapeless("tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(Function.setToolDamage)])
 
 
 

@@ -12,61 +12,6 @@ import mods.terrafirmacraft.ItemRegistry;
 
 // --- Добавление рецептов
 
-// Присвоение единиц металла
-// Groove
-ItemRegistry.registerItemMetal(<tfctech:metal/iron_groove>, "WROUGHT_IRON", 72, true);
-// Bowl Mount
-ItemRegistry.registerItemMetal(<tfctech:metal/iron_bowl_mount>, "WROUGHT_IRON", 144, true);
-// Draw Plates
-ItemRegistry.registerItemMetal(<tfctech:metal/iron_draw_plate>, "WROUGHT_IRON", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_draw_plate>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_draw_plate>, "BLACK_STEEL", 144, true);
-// BlowPipes
-ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_blowpipe>, "WROUGHT_IRON", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_blowpipe>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_blowpipe>, "BLACK_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_blowpipe>, "BLUE_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_blowpipe>, "RED_STEEL", 144, true);
-// Inductor
-ItemRegistry.registerItemMetal(<tfctech:metal/copper_inductor>, "COPPER", 288, true);
-// Sleeves
-ItemRegistry.registerItemMetal(<tfctech:metal/tin_sleeve>, "TIN", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/brass_sleeve>, "BRASS", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_sleeve>, "STEEL", 144, true);
-// Rackwheel Pieces
-ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel_piece>, "BISMUTH", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel_piece>, "BLACK_BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel_piece>, "BRONZE", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel_piece>, "NICKEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel_piece>, "ZINC", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel_piece>, "WROUGHT_IRON", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel_piece>, "STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel_piece>, "BLACK_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel_piece>, "BLUE_STEEL", 144, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel_piece>, "RED_STEEL", 144, true);
-// Rackwheels
-ItemRegistry.registerItemMetal(<tfctech:metal/bismuth_rackwheel>, "BISMUTH", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_bronze_rackwheel>, "BLACK_BRONZE", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/bronze_rackwheel>, "BRONZE", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/nickel_rackwheel>, "NICKEL", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/zinc_rackwheel>, "ZINC", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_rackwheel>, "WROUGHT_IRON", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_rackwheel>, "STEEL", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_rackwheel>, "BLACK_STEEL", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/blue_steel_rackwheel>, "BLUE_STEEL", 576, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/red_steel_rackwheel>, "RED_STEEL", 576, true);
-// Strips
-ItemRegistry.registerItemMetal(<tfctech:metal/copper_strip>, "COPPER", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/gold_strip>, "GOLD", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/lead_strip>, "LEAD", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/nickel_strip>, "NICKEL", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/silver_strip>, "SILVER", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/tin_strip>, "TIN", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/wrought_iron_strip>, "WROUGHT_IRON", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/steel_strip>, "STEEL", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/platinum_strip>, "PLATINUM", 72, true);
-ItemRegistry.registerItemMetal(<tfctech:metal/black_steel_strip>, "BLACK_STEEL", 72, true);
-
 // --- Furnace recipes for TFC items
 furnace.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>);
 furnace.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>);

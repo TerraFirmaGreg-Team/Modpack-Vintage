@@ -57,7 +57,7 @@ import gregtech.api.metatileentity.multiblock.CleanroomType
             .duration(600).EUt(480).buildAndRegister()
 
     // Багги сиденье
-    crafting.addShaped("tfg/gc/buggy_seat", item('galacticraftcore:buggymat:1'), [
+    crafting.addShaped("gc/buggy_seat", item('galacticraftcore:buggymat:1'), [
             [metaitem('plateDenseSteel'), null, null],
             [metaitem('plateDenseSteel'), ore('leather'), null],
             [metaitem('plateDenseSteel'), metaitem('plateDenseSteel'), metaitem('plateDenseSteel')]])
