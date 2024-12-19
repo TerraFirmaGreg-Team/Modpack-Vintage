@@ -440,9 +440,9 @@ jobs:
           else
             {
               echo 'value<<EOF'
-              echo 'value=```markdown'
+              echo ```markdown
               echo "${{ needs.info.outputs.diff }}"
-              echo '```'
+              echo ```
               echo EOF
             } >> "$GITHUB_OUTPUT"
           fi
