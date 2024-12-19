@@ -176,7 +176,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Alfheim-1.5-Dev-2.jar",
+                    "file_name": "Alfheim-1.5-Dev-4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -184,19 +184,19 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6000/171/Alfheim-1.5-Dev-2.jar",
-                    "id": "6000171",
+                    "url": "https://edge.forgecdn.net/files/6003/953/Alfheim-1.5-Dev-4.jar",
+                    "id": "6003953",
                     "parent_id": "910715",
                     "hashes": {
-                        "sha1": "e39acb7ced34abf4013b348eb8a0c2083eae89ee",
-                        "md5": "96396d36f928007529eff945cd9a8c61"
+                        "sha1": "f8e043eea7c125df7cec6113f4ea0fd5e6322a4d",
+                        "md5": "76fd6cde196d10ca64451104bbecbf4a"
                     },
                     "required_dependencies": [
                         "419286",
                         "873867"
                     ],
-                    "size": 69678,
-                    "date_published": "2024-12-17T22:48:19.827Z"
+                    "size": 70063,
+                    "date_published": "2024-12-19T05:29:19.293Z"
                 }
             ]
         },
@@ -4216,7 +4216,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.0.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4224,18 +4224,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6000/305/TerraFirmaGreg-Core-Vintage-2.2.0.jar",
-                    "id": "6000305",
+                    "url": "https://edge.forgecdn.net/files/6002/255/TerraFirmaGreg-Core-Vintage-2.2.1.jar",
+                    "id": "6002255",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "2e4b0ec852119f0008f1433900e104ed591615d3",
-                        "md5": "347c0c49da530e5ebe7df65f82b8494f"
+                        "sha1": "0b772b10d3a11013f87721898f80d3f4049366b3",
+                        "md5": "85bb39dfb80a3b89e6f3f8d1f27b93ba"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 65087652,
-                    "date_published": "2024-12-17T23:53:40.627Z"
+                    "size": 62367027,
+                    "date_published": "2024-12-18T15:57:01.460Z"
                 }
             ]
         },
