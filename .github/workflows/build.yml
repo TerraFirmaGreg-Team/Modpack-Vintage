@@ -438,9 +438,13 @@ jobs:
           if [ -z "${{ needs.info.outputs.diff }}" ]; then
             echo "value=" >> $GITHUB_OUTPUT
           else
-            echo 'value=```markdown' >> $GITHUB_OUTPUT
-            echo "${{ needs.info.outputs.diff }}" >> $GITHUB_OUTPUT
-            echo '```' >> $GITHUB_OUTPUT
+            {
+              echo 'value<<EOF'
+              echo 'value=```markdown'
+              echo "${{ needs.info.outputs.diff }}"
+              echo '```'
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
           fi
 
       - name: 🚀 Create release
