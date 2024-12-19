@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.5.8] - 19.12.2024
+## [4.5.8] - 20.12.2024
 ### Changes
 - Removed TFC Medicinal mod, deadly disease will no longer haunt you.
 - Removed a decent amount of mods. Which are no longer required or their functionality is in another mod.
