@@ -82,12 +82,12 @@ crafting.addShapeless("firmalife/treated_lumber", item('firmalife:treated_lumber
 
 
 // Высушивание соли
-crafting.addShapeless(metaitem('dustSmallSalt') * 2, [item('tfg:meta_item', 51).transform({ item('tfc:wooden_bucket') })])
+crafting.addShapeless("firmalife/small_salt", metaitem('dustSmallSalt') * 2, [item('tfg:meta_item', 51).transform({ item('tfc:wooden_bucket') })])
 
-crafting.addShapeless(item('firmalife:trellis'), [item('firmalife:greenhouse_wall'), item('firmalife:greenhouse_wall'), ore('dustFertilizer')])
-crafting.addShapeless(item('firmalife:pumpkin_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])
-crafting.addShapeless(item('firmalife:melon_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/melon'), ore('dustFertilizer')])
-crafting.addShapeless(item('firmalife:squash_hanging_planter'), [item('firmalife:greenhouse_wall'), item('tfc:crop/seeds/squash'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/trellis", item('firmalife:trellis'), [item('firmalife:greenhouse_wall'), item('firmalife:greenhouse_wall'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/pumpkin_hanging_planter", item('firmalife:pumpkin_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/melon_hanging_planter", item('firmalife:melon_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/melon'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/squash_hanging_planter", item('firmalife:squash_hanging_planter'), [item('firmalife:greenhouse_wall'), item('tfc:crop/seeds/squash'), ore('dustFertilizer')])
 
 
 // Chestnut Dough
@@ -119,7 +119,7 @@ mods.gregtech.assembler.recipeBuilder()
         .outputs(item('firmalife:greenhouse_wall') * 4)
         .duration(205).EUt(8).buildAndRegister()
 
-crafting.addShaped(item('firmalife:quad_planter'), [
+crafting.addShaped("firmalife/quad_planter", item('firmalife:quad_planter'), [
         [null, ore('dustFertilizer'), null],
         [null, ore('dirt'), null],
         [null, item('minecraft:flower_pot'), null]])

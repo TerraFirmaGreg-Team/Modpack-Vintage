@@ -177,7 +177,7 @@ crafting.addShaped("gregtech/clipboard", metaitem('clipboard'), [
         [ore('paper'), ore('paper'), ore('paper')]])
 
 // Лук
-crafting.addShaped(item('minecraft:bow'), [
+crafting.addShaped("gregtech/bow", item('minecraft:bow'), [
         [ore('toolHammer').transform(Function.setToolDamage), metaitem('stickLongWood'), ore('string')],
         [metaitem('stickLongWood'), ore('ringIronAny'), ore('string')],
         [ore('toolFile').transform(Function.setToolDamage), metaitem('stickLongWood'), ore('string')]])
@@ -189,7 +189,7 @@ mods.gregtech.macerator.recipeBuilder()
         .duration(135).EUt(2).buildAndRegister()
 
 // Extruder Shape (Sense Head)
-crafting.addShaped(item('tfg:meta_item', 6), [
+crafting.addShaped("gregtech/extruder_shape_sense", item('tfg:meta_item', 6), [
         [null, null, null],
         [ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.extruder.plate'), null],
         [null, null, null]])
@@ -200,7 +200,7 @@ mods.gregtech.forming_press.recipeBuilder()
         .duration(120).EUt(22).buildAndRegister()
 
 // Mold (Knife Head)
-crafting.addShaped(item('tfg:meta_item', 10), [
+crafting.addShaped("gregtech/mold_knife", item('tfg:meta_item', 10), [
         [null, ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.empty')],
         [null, null, null],
         [null, null, null]])
@@ -476,20 +476,20 @@ mods.gregtech.chemical_reactor.recipeBuilder()
         .duration(700).EUt(2000).buildAndRegister()
 
 // Ступка + Гравий -> Кремений
-crafting.addShapeless(item('minecraft:flint'), [ore('toolMortar').transform(Function.setToolDamage), ore('gravel')])
+crafting.addShapeless("gregtech/flint", item('minecraft:flint'), [ore('toolMortar').transform(Function.setToolDamage), ore('gravel')])
 
 // Бронзовая пыль в TFC стиле
-crafting.addShapeless(metaitem('dustBronze') * 9, [metaitem('dustTin'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper')])
+crafting.addShapeless("gregtech/dust_bronze", metaitem('dustBronze') * 9, [metaitem('dustTin'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper')])
 
 // Исправление рецепта на бумагу
 
 // Крафт бумажной пыли
-crafting.addShaped(metaitem('dustPaper') * 2, [
+crafting.addShaped("gregtech/dust_paper", metaitem('dustPaper') * 2, [
         [item('tfc:food/sugarcane'), item('tfc:food/sugarcane'), item('tfc:food/sugarcane')],
         [null, ore('toolMortar').transform(Function.setToolDamage), null]])
 
 // Крафт бумаги из пыли
-// crafting.addShaped(item('minecraft:paper') * 2,[
+// crafting.addShaped("gregtech/paper", item('minecraft:paper') * 2,[
 //     [null, ore('slabStonePolished').reuse(), null],
 //     [metaitem('dustPaper'), metaitem('dustPaper'), metaitem('dustPaper')],
 //     [null, ore('slabStonePolished').reuse(), null]])
@@ -730,7 +730,7 @@ def tongs_wood = item('gregtech:tongs').withNbt([DisallowContainerItem: (byte) 0
 // --- Добавление рецептов
 
 // Щипцы из дерева
-crafting.addShaped('gt/tongs_wood', tongs_wood, [
+crafting.addShaped('gregtech/tongs_wood', tongs_wood, [
         [null, ore('stickWood')],
         [ore('stickWood'), ore('string')]
 ])

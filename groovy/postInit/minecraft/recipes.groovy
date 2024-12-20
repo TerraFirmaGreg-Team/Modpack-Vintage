@@ -436,14 +436,14 @@ mods.gregtech.bender.recipeBuilder()
         .duration(100).EUt(7).buildAndRegister()
 
 // Slimeball
-crafting.addShaped("gc/slime_ball", item('minecraft:slime_ball'), [
+crafting.addShaped("vanilla/slime_ball", item('minecraft:slime_ball'), [
         [ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')],
         [item('minecraft:sugar'), item('firmalife:cheddar_wheel'), item('minecraft:sugar')],
         [ore('dyeGreen'), item('minecraft:sugar'), ore('dyeGreen')]])
 
 
 // Палки
-crafting.addShapeless("tfc/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(Function.setToolDamage)])
+crafting.addShapeless("vanilla/sticks_from_rod", item('minecraft:stick') * 2, [metaitem('stickLongWood'), ore('toolSaw').transform(Function.setToolDamage)])
 
 
 

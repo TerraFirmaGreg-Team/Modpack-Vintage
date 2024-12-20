@@ -646,7 +646,7 @@ mods.gregtech.assembler.recipeBuilder()
 //         .duration(100).EUt(1920).buildAndRegister()
 
 // Piston Upgrade
-crafting.addShapeless(item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
+crafting.addShapeless("oc/upgrade_20", item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
 mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
@@ -667,8 +667,8 @@ mods.gregtech.assembler.recipeBuilder()
 //         .duration(100).EUt(120).buildAndRegister()
 
 // Sticky Piston Upgrade
-crafting.addShapeless(item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), metaitem('rubber_drop')])
-crafting.addShapeless(item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), item('minecraft:slime_ball')])
+crafting.addShapeless("oc/upgrade_33", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), metaitem('rubber_drop')])
+crafting.addShapeless("oc/upgrade_33_2", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), item('minecraft:slime_ball')])
 
 // Sign Upgrade
 mods.gregtech.assembler.recipeBuilder()

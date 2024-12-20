@@ -292,7 +292,7 @@ crafting.addShaped("ae2/network_tool", item('appliedenergistics2:network_tool'),
         [item('appliedenergistics2:material', 23), ore('itemIlluminatedPanel')]])
 
 // Wireless Access Point
-crafting.addShaped(item('appliedenergistics2:wireless_access_point'), [
+crafting.addShaped("ae2/wireless_access_point", item('appliedenergistics2:wireless_access_point'), [
         [null, item('appliedenergistics2:material', 41), null],
         [null, item('appliedenergistics2:material', 23), null],
         [null, ore('ae2.cable.glass'), null]])
@@ -1146,10 +1146,11 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(480).buildAndRegister()
 
 // Излучатель уровня
-crafting.addShaped(item('appliedenergistics2:part', 280), [
+crafting.addShaped("ae2/level_emitter", item('appliedenergistics2:part', 280), [
         [null, metaitem('plateSteel'), null],
         [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
         [null, metaitem('plateSteel'), null]])
+
 mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(1)
         .inputs(
@@ -1318,10 +1319,11 @@ crafting.addShaped("ae2/charged_staff", item('appliedenergistics2:charged_staff'
         [ore('stickIronAny'), null, null]])
 
 // Датчик жидкостного уровня
-crafting.addShaped(item('appliedenergistics2:part:281'), [
+crafting.addShaped("ae2/fluid_level_emitter", item('appliedenergistics2:part:281'), [
         [null, metaitem('plateStainlessSteel'), null],
         [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
         [null, metaitem('plateStainlessSteel'), null]])
+
 mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(2)
         .inputs(
@@ -1333,7 +1335,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // Очистка шаблона
-crafting.addShapeless(item('appliedenergistics2:material', 52), [item('appliedenergistics2:encoded_pattern')])
+crafting.addShapeless("ae2/encoded_pattern", item('appliedenergistics2:material', 52), [item('appliedenergistics2:encoded_pattern')])
 
 // P2P Tunnel
 crafting.addShaped("ae2/tunnels_p2p", item('appliedenergistics2:part:460') * 2, [
@@ -1460,8 +1462,8 @@ crafting.addShaped("ae2/spatial_io_port", item('appliedenergistics2:spatial_io_p
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // Интерфейс
-crafting.addShapeless(item('appliedenergistics2:interface'), [item('appliedenergistics2:part:440')])
-crafting.addShapeless(item('appliedenergistics2:part:440'), [item('appliedenergistics2:interface')])
+crafting.addShapeless("ae2/interface", item('appliedenergistics2:interface'), [item('appliedenergistics2:part:440')])
+crafting.addShapeless("ae2/interface_2", item('appliedenergistics2:part:440'), [item('appliedenergistics2:interface')])
 // MV
 mods.gregtech.assembler.recipeBuilder()
         .inputs(
@@ -1510,8 +1512,8 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(7480).buildAndRegister()
 
 // Жидкостный интерфейс
-crafting.addShapeless(item('appliedenergistics2:fluid_interface'), [item('appliedenergistics2:part:441')])
-crafting.addShapeless(item('appliedenergistics2:part:441'), [item('appliedenergistics2:fluid_interface')])
+crafting.addShapeless("ae2/fluid_interface",item('appliedenergistics2:fluid_interface'), [item('appliedenergistics2:part:441')])
+crafting.addShapeless("ae2/fluid_interface_2",item('appliedenergistics2:part:441'), [item('appliedenergistics2:fluid_interface')])
 // MV
 mods.gregtech.assembler.recipeBuilder()
         .inputs(
@@ -1578,7 +1580,7 @@ crafting.addShaped("ae2/energy_acceptor", item('appliedenergistics2:energy_accep
         [metaitem('plateSteel'), metaitem('plateStainlessSteel'), metaitem('plateSteel')]])
 
 // Security Terminal
-crafting.addShaped(item('appliedenergistics2:security_station'), [
+crafting.addShaped("ae2/security_station", item('appliedenergistics2:security_station'), [
         [metaitem('plateSteel'), item('appliedenergistics2:chest'), metaitem('plateSteel')],
         [ore('ae2.cable.glass'), item('appliedenergistics2:material:37'), ore('ae2.cable.glass')],
         [metaitem('plateSteel'), item('appliedenergistics2:material', 22), metaitem('plateSteel')]])

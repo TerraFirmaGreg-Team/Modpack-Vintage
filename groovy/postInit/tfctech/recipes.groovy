@@ -5,16 +5,16 @@ import classes.Function
 
 
 // Рецепты Strips
-crafting.addShapeless(item('tfctech:metal/copper_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateCopper')])
-crafting.addShapeless(item('tfctech:metal/gold_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateGold')])
-crafting.addShapeless(item('tfctech:metal/lead_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateLead')])
-crafting.addShapeless(item('tfctech:metal/nickel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateNickel')])
-crafting.addShapeless(item('tfctech:metal/silver_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateSilver')])
-crafting.addShapeless(item('tfctech:metal/tin_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateTin')])
-crafting.addShapeless(item('tfctech:metal/wrought_iron_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateWroughtIron')])
-crafting.addShapeless(item('tfctech:metal/steel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateSteel')])
-crafting.addShapeless(item('tfctech:metal/platinum_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('platePlatinum')])
-crafting.addShapeless(item('tfctech:metal/black_steel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateBlackSteel')])
+crafting.addShapeless("tfctech/copper_strip", item('tfctech:metal/copper_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateCopper')])
+crafting.addShapeless("tfctech/gold_strip", item('tfctech:metal/gold_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateGold')])
+crafting.addShapeless("tfctech/lead_strip", item('tfctech:metal/lead_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateLead')])
+crafting.addShapeless("tfctech/nickel_strip", item('tfctech:metal/nickel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateNickel')])
+crafting.addShapeless("tfctech/silver_strip", item('tfctech:metal/silver_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateSilver')])
+crafting.addShapeless("tfctech/tin_strip", item('tfctech:metal/tin_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateTin')])
+crafting.addShapeless("tfctech/wrought_iron_strip", item('tfctech:metal/wrought_iron_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateWroughtIron')])
+crafting.addShapeless("tfctech/steel_strip", item('tfctech:metal/steel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateSteel')])
+crafting.addShapeless("tfctech/platinum_strip", item('tfctech:metal/platinum_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('platePlatinum')])
+crafting.addShapeless("tfctech/black_steel_strip", item('tfctech:metal/black_steel_strip') * 2, [ore('toolFile').transform(Function.setToolDamage), metaitem('plateBlackSteel')])
 
 // Крафт поташа с увеличенным выходом
 crafting.addShapeless("tfctech/dust_potash", metaitem('dustPotash') * 4, [item('tfctech:pot_potash')])

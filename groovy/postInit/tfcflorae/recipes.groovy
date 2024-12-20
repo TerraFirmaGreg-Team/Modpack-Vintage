@@ -8,7 +8,7 @@ import classes.array.TerraFirmaCraft
 // --- Добавление рецептов
 
 // Yeast
-crafting.addShapeless(item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({ item('tfc:wooden_bucket', 0) })])
+crafting.addShapeless("tfcflorae/yeast", item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({ item('tfc:wooden_bucket', 0) })])
 
 // Сок из ...
 for (int i = 0; i < TerraFirmaCraftF.tfcfFluidsForJuices.size(); i++) {

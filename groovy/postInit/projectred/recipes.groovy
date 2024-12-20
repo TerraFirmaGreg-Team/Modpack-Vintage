@@ -215,19 +215,19 @@ mods.gregtech.circuit_assembler.recipeBuilder()
         .duration(200).EUt(32).buildAndRegister()
 
 // IC Chip
-crafting.addShaped(item('projectred-fabrication:ic_chip'),
+crafting.addShaped("projectred/ic_chip", item('projectred-fabrication:ic_chip'),
         [[metaitem('cableGtSingleGold'), metaitem('cableGtSingleGold'), metaitem('cableGtSingleGold')],
          [item('appliedenergistics2:material', 16), item('projectred-core:resource_item'), item('appliedenergistics2:material', 16)],
          [metaitem('cableGtSingleGold'), metaitem('cableGtSingleGold'), metaitem('cableGtSingleGold')]])
 
 // IC Printer
-crafting.addShaped(item('projectred-fabrication:ic_machine:1'),
+crafting.addShaped("projectred/ic_machine_1", item('projectred-fabrication:ic_machine:1'),
         [[metaitem('robot.arm.lv'), metaitem('sensor.lv'), metaitem('robot.arm.lv')],
          [metaitem('blockSteel'), ore('workbench'), metaitem('blockSteel')],
          [ore('plankWood'), ore('plankWood'), ore('plankWood')]])
 
 // Multimeter
-crafting.addShaped(item('projectred-core:multimeter'),
+crafting.addShaped("projectred/multimeter", item('projectred-core:multimeter'),
         [[metaitem('wireGtSingleGold'), null, metaitem('wireGtSingleRedAlloy')],
          [metaitem('wireGtSingleGold'), metaitem('cover.screen'), metaitem('wireGtSingleRedAlloy')],
          [ore('circuitLv'), metaitem('plateIron'), ore('circuitLv')]])

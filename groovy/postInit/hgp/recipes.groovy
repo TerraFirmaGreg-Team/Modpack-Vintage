@@ -8,7 +8,7 @@ import classes.array.HGP
 // --- Создание рецептов
 
 // Чистая панель -> Чистая горизонтальная панель
-crafting.addShapeless(item('hgp:hgppane'), [item('minecraft:glass_pane')])
+crafting.addShapeless("hgp/hgppane", item('hgp:hgppane'), [item('minecraft:glass_pane')])
 mods.gregtech.assembler.recipeBuilder()
         .circuitMeta(20)
         .inputs(item('minecraft:glass_pane'))
@@ -18,7 +18,7 @@ mods.gregtech.assembler.recipeBuilder()
 // Крашенная панель 1х -> 1 Крашенная горизонтальная панель 1х
 for (int i = 0; i < HGP.horizontalGlassPanes.size(); i++) {
     // Верстак
-    crafting.addShapeless(HGP.horizontalGlassPanes[i], [Minecraft.glassPanes[i]])
+    crafting.addShapeless("hgp/hgpcoloredpane_" + i, HGP.horizontalGlassPanes[i], [Minecraft.glassPanes[i]])
 
     // Ассемблер
     mods.gregtech.assembler.recipeBuilder()
