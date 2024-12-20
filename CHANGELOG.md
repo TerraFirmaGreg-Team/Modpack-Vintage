@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.5.9] - 20.12.2024
+### Changes
+- Fixed crash when leaving the server.
+- Fixed crash on the server.
+
 ## [4.5.8] - 20.12.2024
 ### Changes
 - Removed TFC Medicinal mod, deadly disease will no longer haunt you.
