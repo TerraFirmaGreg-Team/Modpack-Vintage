@@ -88,7 +88,6 @@ jobs:
           else
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
-          fi
         
       - name: 📦 Download pakku.jar
         id: download_pakku
