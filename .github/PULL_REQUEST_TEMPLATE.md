@@ -1,41 +1,19 @@
-<!--- Please provide a general summary of your changes in the title above -->
-
-## Pull Request type
-
-<!-- Please try to limit your pull request to one type; submit multiple pull requests if needed. -->
-
-Please check the type of change your PR introduces:
-
-- [ ] Bugfix
-- [ ] Feature
-- [ ] Code style update (formatting, renaming)
-- [ ] Refactoring (no functional changes)
-- [ ] Other (please describe):
-
-## What is the current behavior?
-
-<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
-
-Issue Number: #123
 
 ## What is the new behavior?
+_This section describes what this PR is about. It should be a clear and concise description concerning what this PR is for, why this PR is needed, and why it should be accepted._
+_Linking an issue can be used alternatively to writing a description._
 
-<!-- Please describe the behavior or changes that are being added by this PR. -->
+## Implementation Details
+_Any implementations in this PR that should be carefully looked over, or that could/should have alternate solutions proposed._
 
--
--
--
+## Outcome
+_A short description of what this PR added/fixed/changed/removed._
+_For correct linking of issues please use any of the Closes/Fixes/Resolves keywords. Example: When a PR is fixing a bug use "Fixes: #number-of-bug"_
 
-## Does this introduce a breaking change?
+## Additional Information
+_This section is for screenshots to demonstrate any GUI or rendering changes, or any other additional information that reviewers should be aware of._
 
-- [ ] Yes
-- [ ] No
+## Potential Compatibility Issues
+_This section is for defining possible compatibility issues._
 
-<!-- If this does introduce a breaking change, please describe the impact and migration path for existing applications below. -->
-
-## Other information
-
-<!-- Any other information that is important to this PR, such as screenshots of how the component looks before and after the change. -->
-
-
-
+**Please fill in as much useful information as possible. Also, please remove all unused sections, including this and the other explanations.**
