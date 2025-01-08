@@ -1,4 +1,4 @@
-# Contributing to Underdog
+# Contributing to TerraFirmaGreg-Vintage
 
 ## Required software
 
