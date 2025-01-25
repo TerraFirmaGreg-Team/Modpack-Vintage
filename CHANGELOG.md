@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.5.11] - 26.01.2025
+### Changes
+- Fixed a server side crash.
+- Fixed server pack.
+- Fixed quests.
+
 ## [4.5.10] - 25.01.2025
 ### Changes
 - Fixed a bug where the knife from GT did not work on the Hevea. #268
