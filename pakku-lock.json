@@ -5782,7 +5782,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5790,22 +5790,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/AbxvdLGV/TerraFirmaGreg-Core-Vintage-2.2.4.jar",
-                    "id": "AbxvdLGV",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/bKaVxKgh/TerraFirmaGreg-Core-Vintage-2.2.5.jar",
+                    "id": "bKaVxKgh",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "e7c1a181ffc2cd8217ff1eae06b769b3bf31b9123ba6a2ccfad2582f974269f34a6881cc6d09c8cca7617ea4b7a6e1621ebd6beb01719c7e351ed57ddd8a75d6",
-                        "sha1": "983544db6245c2955b3bf9d3a795683d4fdc5e49"
+                        "sha512": "60c9f720ed13f8b656f6d7f9ecf6fab87b0e241aa1d96c3fe760b194e600413ca78331a5c3ab9b62e16b44033cf44812940a3248fdaf01b5410d79cc14550c43",
+                        "sha1": "8aee279f36485895941066070054c1ec165236bc"
                     },
                     "required_dependencies": [
                         "tULldUx4"
                     ],
-                    "size": 77005867,
-                    "date_published": "2025-01-25T19:52:08.029869Z"
+                    "size": 77005883,
+                    "date_published": "2025-01-25T20:57:09.435221Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5813,18 +5813,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6124/325/TerraFirmaGreg-Core-Vintage-2.2.4.jar",
-                    "id": "6124325",
+                    "url": "https://edge.forgecdn.net/files/6124/505/TerraFirmaGreg-Core-Vintage-2.2.5.jar",
+                    "id": "6124505",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "983544db6245c2955b3bf9d3a795683d4fdc5e49",
-                        "md5": "6295c767f4c8c7b07bef2c13199cdbb8"
+                        "sha1": "8aee279f36485895941066070054c1ec165236bc",
+                        "md5": "d7ce8c64be553ad2dc2e25aae2f1d9ac"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 77005867,
-                    "date_published": "2025-01-25T19:51:53.183Z"
+                    "size": 77005883,
+                    "date_published": "2025-01-25T20:56:57.117Z"
                 }
             ]
         },
