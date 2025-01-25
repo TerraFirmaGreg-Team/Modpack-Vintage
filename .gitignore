@@ -115,5 +115,4 @@ hei_bookmarks.ini
 .pakku/server-overrides/banned-players.json
 .pakku/server-overrides/banned-ips.json
 .pakku/server-overrides/ops.json
-.pakku/server-overrides/server.properties
 .pakku/server-overrides/whitelist.json
