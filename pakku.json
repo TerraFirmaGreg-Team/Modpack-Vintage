@@ -11,13 +11,13 @@
         "scripts"
     ],
     "server_overrides": [
-      "forge-auto-install.txt",
-      "generate_auto_installation_file.bat",
-      "minecraft_server.jar",
-      "server.properties",
-      "server_starter.conf",
-      "server-icon.png",
-      "start_server.bat"
+        "forge-auto-install.txt",
+        "generate_auto_installation_file.bat",
+        "minecraft_server.jar",
+        "server.properties",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -126,9 +126,6 @@
             "side": "CLIENT"
         },
         "jetif": {
-            "side": "CLIENT"
-        },
-        "customskinloader": {
             "side": "CLIENT"
         },
         "ftb-backups-forge": {

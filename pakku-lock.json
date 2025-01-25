@@ -2816,7 +2816,7 @@
         {
             "pakku_id": "56J4XztDUB2c162u",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "had-enough-items",
                 "modrinth": "had-enough-items"
@@ -5764,7 +5764,7 @@
             ]
         },
         {
-            "pakku_id": "9mkq9zgnxHfLGOex",
+            "pakku_id": "882jVEkSCBLF9qZB",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -5782,7 +5782,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.3.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5790,22 +5790,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/jH5wnEa6/TerraFirmaGreg-Core-Vintage-2.2.3.jar",
-                    "id": "jH5wnEa6",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/AbxvdLGV/TerraFirmaGreg-Core-Vintage-2.2.4.jar",
+                    "id": "AbxvdLGV",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "2764f170df2e5fbd7004501a708c718b2b4530fc0896f0d628401a4d359a2bf18d988c8e0cba3feecb23a8f18a44685e8121e38d00b0216e51086dd9a62d615f",
-                        "sha1": "ab98e53f35da3e9f7d9218d048f62213a8151046"
+                        "sha512": "e7c1a181ffc2cd8217ff1eae06b769b3bf31b9123ba6a2ccfad2582f974269f34a6881cc6d09c8cca7617ea4b7a6e1621ebd6beb01719c7e351ed57ddd8a75d6",
+                        "sha1": "983544db6245c2955b3bf9d3a795683d4fdc5e49"
                     },
                     "required_dependencies": [
                         "tULldUx4"
                     ],
-                    "size": 77005869,
-                    "date_published": "2025-01-25T16:16:28.583805Z"
+                    "size": 77005867,
+                    "date_published": "2025-01-25T19:52:08.029869Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.1.jar",
+                    "file_name": "TerraFirmaGreg-Core-Vintage-2.2.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5813,18 +5813,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6002/255/TerraFirmaGreg-Core-Vintage-2.2.1.jar",
-                    "id": "6002255",
+                    "url": "https://edge.forgecdn.net/files/6124/325/TerraFirmaGreg-Core-Vintage-2.2.4.jar",
+                    "id": "6124325",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "0b772b10d3a11013f87721898f80d3f4049366b3",
-                        "md5": "85bb39dfb80a3b89e6f3f8d1f27b93ba"
+                        "sha1": "983544db6245c2955b3bf9d3a795683d4fdc5e49",
+                        "md5": "6295c767f4c8c7b07bef2c13199cdbb8"
                     },
                     "required_dependencies": [
                         "557242"
                     ],
-                    "size": 62367027,
-                    "date_published": "2024-12-18T15:57:01.460Z"
+                    "size": 77005867,
+                    "date_published": "2025-01-25T19:51:53.183Z"
                 }
             ]
         },
@@ -6045,7 +6045,11 @@
             ]
         },
         {
-            "pakku_id": "PbRttsp8EMUG8xUH",
+            "pakku_id": "vLzVUVpt8G1srPiE",
+            "pakku_links": [
+                "MTGggphZx5ebfP1n",
+                "G0DXfGoMnDW6vCfu"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -6062,8 +6066,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "UniversalTweaks-1.12.2-1.13.0.jar",
+                    "type": "curseforge",
+                    "file_name": "UniversalTweaks-1.12.2-1.14.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -6071,43 +6075,43 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/s32LssQX/versions/Pb7ELn6C/UniversalTweaks-1.12.2-1.13.0.jar",
-                    "id": "Pb7ELn6C",
+                    "url": "https://edge.forgecdn.net/files/6123/916/UniversalTweaks-1.12.2-1.14.0.jar",
+                    "id": "6123916",
+                    "parent_id": "705000",
+                    "hashes": {
+                        "sha1": "5aba6b295a6ed66a75c0d393c537ef2cdc4206c7",
+                        "md5": "1f432191c9052a94766041c512e12385"
+                    },
+                    "required_dependencies": [
+                        "870276",
+                        "419286"
+                    ],
+                    "size": 1527305,
+                    "date_published": "2025-01-25T18:14:43.243Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "UniversalTweaks-1.12.2-1.14.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/s32LssQX/versions/FtuwJn6k/UniversalTweaks-1.12.2-1.14.0.jar",
+                    "id": "FtuwJn6k",
                     "parent_id": "s32LssQX",
                     "hashes": {
-                        "sha512": "16f596a00ffbca9c6934d17e312611706dfe98d14b19462e9d6774e7d38bf69f3492d59658e657f5cee6616402c64c32fd357fce099267d99ee5218b44981bab",
-                        "sha1": "1645310ef714920af062f9c612d077b7a7683aad"
+                        "sha512": "737c75a04b60702c011ee1f8bb0807da91f3f7afcac6382fc6d68a989ba6413d4f716474ca58ac4a64c7d496fbc53316b1b01023d2cdb09041854793ee780820",
+                        "sha1": "5aba6b295a6ed66a75c0d393c537ef2cdc4206c7"
                     },
                     "required_dependencies": [
                         "Bnsrfd1o",
                         "G1ckZuWK"
                     ],
-                    "size": 1477608,
-                    "date_published": "2024-10-30T15:42:48.496171Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "UniversalTweaks-1.12.2-1.13.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5860/191/UniversalTweaks-1.12.2-1.13.0.jar",
-                    "id": "5860191",
-                    "parent_id": "705000",
-                    "hashes": {
-                        "sha1": "1645310ef714920af062f9c612d077b7a7683aad",
-                        "md5": "0016dee8c17109703354c79fdcbe099e"
-                    },
-                    "required_dependencies": [
-                        "419286",
-                        "870276"
-                    ],
-                    "size": 1477608,
-                    "date_published": "2024-10-30T15:41:37.877Z"
+                    "size": 1527305,
+                    "date_published": "2025-01-25T18:17:18.886509Z"
                 }
             ]
         },
@@ -6222,7 +6226,7 @@
         {
             "pakku_id": "C8ofacEyzn5V0LZC",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "visualores",
                 "modrinth": "visualores"
@@ -6286,7 +6290,7 @@
         {
             "pakku_id": "k4YTsgdwosa1pAoN",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "xaeros-minimap",
                 "modrinth": "xaeros-minimap"
@@ -6444,7 +6448,7 @@
         {
             "pakku_id": "sloD2VHbEsEPQuqH",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "wrapfix"
             },
