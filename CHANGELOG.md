@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.5.10] - 25.01.2025
+### Changes
+- Fixed a bug where the knife from GT did not work on the Hevea. #268
+- Lots of internal changes that shouldn't affect the game.
+
 ## [4.5.9] - 20.12.2024
 ### Changes
 - Fixed crash when leaving the server.
