@@ -4,6 +4,7 @@
 ### Changes
 - Fixed bug with animal drops.
 - Fixed pineapple drop bug.
+- Fixed quests.
 
 ## [4.5.11] - 26.01.2025
 ### Changes
