@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.5.12] - 26.01.2025
+### Changes
+- Fixed bug with animal drops.
+- Fixed pineapple drop bug.
+
 ## [4.5.11] - 26.01.2025
 ### Changes
 - Fixed a server side crash.
