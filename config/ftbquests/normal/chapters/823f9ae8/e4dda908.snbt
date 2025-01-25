@@ -32,33 +32,6 @@
 					heat: 0.0f
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/stoneware_clay",
-			ForgeCaps: {
-				"tfc:item_heat": {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/kaolinite_clay",
-			ForgeCaps: {
-				"tfc:item_heat": {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/earthenware_clay",
-			ForgeCaps: {
-				"tfc:item_heat": {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
 		}]
 	}]
 }

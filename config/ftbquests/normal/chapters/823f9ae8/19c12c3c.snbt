@@ -20,33 +20,6 @@
 					heat: 0.0f
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/vessel",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/vessel",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/vessel",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
 		}]
 	},
 	{
@@ -54,48 +27,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/fired/vessel",
-			ForgeCaps: {
-				Parent: {
-					fluidMode: 0b,
-					ticks: -1L,
-					heat: 0.0f,
-					items: {
-						Items: [],
-						Size: 4
-					}
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/vessel",
-			ForgeCaps: {
-				Parent: {
-					fluidMode: 0b,
-					ticks: -1L,
-					heat: 0.0f,
-					items: {
-						Items: [],
-						Size: 4
-					}
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/vessel",
-			ForgeCaps: {
-				Parent: {
-					fluidMode: 0b,
-					ticks: -1L,
-					heat: 0.0f,
-					items: {
-						Items: [],
-						Size: 4
-					}
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/vessel",
 			ForgeCaps: {
 				Parent: {
 					fluidMode: 0b,

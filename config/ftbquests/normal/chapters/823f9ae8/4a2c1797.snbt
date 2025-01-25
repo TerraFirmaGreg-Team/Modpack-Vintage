@@ -17,33 +17,6 @@
 					heat: 0.0f
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/jug",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/jug",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/jug",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
 		}]
 	},
 	{
@@ -51,15 +24,6 @@
 		type: "item",
 		items: [{
 			item: "tfc:ceramics/fired/jug"
-		},
-		{
-			item: "tfcflorae:ceramics/stoneware/fired/jug"
-		},
-		{
-			item: "tfcflorae:ceramics/kaolinite/fired/jug"
-		},
-		{
-			item: "tfcflorae:ceramics/earthenware/fired/jug"
 		}],
 		ignore_nbt: 1b
 	}]

@@ -18,36 +18,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -55,33 +25,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/knife_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/knife_blade",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -102,36 +45,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -139,33 +52,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/scythe_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/scythe_blade",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -186,36 +72,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -223,33 +79,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/ingot",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/ingot",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -270,36 +99,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -307,33 +106,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/pick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/pick_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -354,36 +126,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -391,33 +133,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/shovel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/shovel_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -438,36 +153,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -475,33 +160,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/axe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/axe_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -522,36 +180,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -559,33 +187,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/hoe_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/hoe_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -606,36 +207,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -643,33 +214,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/chisel_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/chisel_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -690,36 +234,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -727,33 +241,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/sword_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/sword_blade",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -774,36 +261,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -811,33 +268,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/mace_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/mace_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -858,36 +288,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -895,33 +295,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/saw_blade",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/saw_blade",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -942,36 +315,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -979,33 +322,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/javelin_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/javelin_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -1026,36 +342,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -1063,33 +349,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/hammer_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/hammer_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
@@ -1110,36 +369,6 @@
 					Empty: ""
 				}
 			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/fired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/fired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/fired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f,
-					Empty: ""
-				}
-			}
 		}]
 	},
 	{
@@ -1147,33 +376,6 @@
 		type: "item",
 		items: [{
 			id: "tfc:ceramics/unfired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/earthenware/unfired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/stoneware/unfired/mold/propick_head",
-			ForgeCaps: {
-				Parent: {
-					ticks: -1L,
-					heat: 0.0f
-				}
-			}
-		},
-		{
-			id: "tfcflorae:ceramics/kaolinite/unfired/mold/propick_head",
 			ForgeCaps: {
 				Parent: {
 					ticks: -1L,
