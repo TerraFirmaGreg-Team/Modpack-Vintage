@@ -1,0 +1,26 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "xtones:zeta"
+  },
+  "variants": {
+    "variant": {
+      "one": { "textures": { "all": "xtones:blocks/zeta/0", "emissive": "xtones:blocks/zeta/0_emissive" } },
+      "two": { "textures": { "all": "xtones:blocks/zeta/1", "emissive": "xtones:blocks/zeta/1_emissive" } },
+      "three": { "textures": { "all": "xtones:blocks/zeta/2", "emissive": "xtones:blocks/zeta/2_emissive" } },
+      "four": { "textures": { "all": "xtones:blocks/zeta/3", "emissive": "xtones:blocks/zeta/3_emissive" } },
+      "five": { "textures": { "all": "xtones:blocks/zeta/4", "emissive": "xtones:blocks/zeta/4_emissive" } },
+      "six": { "textures": { "all": "xtones:blocks/zeta/5", "emissive": "xtones:blocks/zeta/5_emissive" } },
+      "seven": { "textures": { "all": "xtones:blocks/zeta/6", "emissive": "xtones:blocks/zeta/6_emissive" } },
+      "eight": { "textures": { "all": "xtones:blocks/zeta/7", "emissive": "xtones:blocks/zeta/7_emissive" } },
+      "nine": { "textures": { "all": "xtones:blocks/zeta/8", "emissive": "xtones:blocks/zeta/8_emissive" } },
+      "ten": { "textures": { "all": "xtones:blocks/zeta/9", "emissive": "xtones:blocks/zeta/9_emissive" } },
+      "eleven": { "textures": { "all": "xtones:blocks/zeta/10", "emissive": "xtones:blocks/zeta/10_emissive" } },
+      "twelve": { "textures": { "all": "xtones:blocks/zeta/11", "emissive": "xtones:blocks/zeta/11_emissive" } },
+      "thirteen": { "textures": { "all": "xtones:blocks/zeta/12", "emissive": "xtones:blocks/zeta/12_emissive" } },
+      "fourteen": { "textures": { "all": "xtones:blocks/zeta/13", "emissive": "xtones:blocks/zeta/13_emissive" } },
+      "fifteen": { "textures": { "all": "xtones:blocks/zeta/14", "emissive": "xtones:blocks/zeta/14_emissive" } },
+      "sixteen": { "textures": { "all": "xtones:blocks/zeta/15", "emissive": "xtones:blocks/zeta/15_emissive" } }
+    }
+  }
+}
