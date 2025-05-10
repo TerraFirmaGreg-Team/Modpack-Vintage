@@ -351,12 +351,12 @@ jobs:
           fi  
 
       - name: 📦 Download artifact curseforge
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
       - name: 📦 Download artifact server
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
@@ -391,12 +391,12 @@ jobs:
   #           fi  
     
   #       - name: 📦 Download artifact modrinth
-  #         uses: actions/download-artifact@v4.2.1
+  #         uses: actions/download-artifact@v4.3.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
   #       - name: 📦 Download artifact server
-  #         uses: actions/download-artifact@v4.2.1
+  #         uses: actions/download-artifact@v4.3.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
@@ -427,7 +427,7 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           merge-multiple: true
 
@@ -450,7 +450,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.1
+        uses: softprops/action-gh-release@v2.2.2
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
