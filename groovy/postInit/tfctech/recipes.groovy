@@ -30,48 +30,48 @@ crafting.addShapeless("tfctech/vulcanizing_agents", item('tfctech:latex/vulcaniz
 
 // Холодильник
 crafting.addShaped("tfctech/fridge", item('tfctech:fridge'), [
-        [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')],
-        [metaitem('plateSteel'), ore('plateDoubleIronAny'), metaitem('plateSteel')],
-        [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')]])
+  [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')],
+  [metaitem('plateSteel'), ore('plateDoubleIronAny'), metaitem('plateSteel')],
+  [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')]])
 
 // Winch
 crafting.addShaped("tfctech/winch", item('tfctech:wiredraw/winch'), [
-        [ore('stickIronAny'), null, ore('stickIronAny')],
-        [null, ore('stickIronAny'), null],
-        [ore('stickIronAny'), null, ore('stickIronAny')]])
+  [ore('stickIronAny'), null, ore('stickIronAny')],
+  [null, ore('stickIronAny'), null],
+  [ore('stickIronAny'), null, ore('stickIronAny')]])
 
 // Медный индуктор
 crafting.addShaped("tfctech/copper_inductor", item('tfctech:metal/copper_inductor'), [
-        [null, metaitem('wireGtSingleCopper'), null],
-        [metaitem('wireGtSingleCopper'), ore('toolHammer').transform(Function.setToolDamage), metaitem('wireGtSingleCopper')],
-        [null, metaitem('wireGtSingleCopper'), null]])
+  [null, metaitem('wireGtSingleCopper'), null],
+  [metaitem('wireGtSingleCopper'), ore('toolHammer').transform(Function.setToolDamage), metaitem('wireGtSingleCopper')],
+  [null, metaitem('wireGtSingleCopper'), null]])
 
 // Тигель
 crafting.addShaped("tfctech/crucible", item('tfctech:induction_crucible'), [
-        [metaitem('plateSteel'), null, metaitem('plateSteel')],
-        [item('tfctech:metal/copper_inductor'), item('tfc:crucible'), item('tfctech:metal/copper_inductor')],
-        [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')]])
+  [metaitem('plateSteel'), null, metaitem('plateSteel')],
+  [item('tfctech:metal/copper_inductor'), item('tfg:device/crucible'), item('tfctech:metal/copper_inductor')],
+  [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')]])
 
 // Электро наковальня
 crafting.addShaped("tfctech/electric_forge", item('tfctech:electric_forge'), [
-        [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')],
-        [item('tfctech:metal/copper_inductor'), item('tfc:fire_bricks'), item('tfctech:metal/copper_inductor')],
-        [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')]])
+  [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')],
+  [item('tfctech:metal/copper_inductor'), item('tfg:core/fire_bricks'), item('tfctech:metal/copper_inductor')],
+  [metaitem('plateSteel'), metaitem('wireGtSingleCopper'), metaitem('plateSteel')]])
 
 // Smeltery Cauldron
 crafting.addShaped("tfctech/smeltery_cauldron", item('tfctech:smeltery_cauldron'), [
-        [metaitem('plateWroughtIron'), metaitem('plateWroughtIron'), metaitem('plateWroughtIron')],
-        [metaitem('plateWroughtIron'), null, metaitem('plateWroughtIron')],
-        [metaitem('stickLongWroughtIron'), null, metaitem('stickLongWroughtIron')]])
+  [metaitem('plateWroughtIron'), metaitem('plateWroughtIron'), metaitem('plateWroughtIron')],
+  [metaitem('plateWroughtIron'), null, metaitem('plateWroughtIron')],
+  [metaitem('stickLongWroughtIron'), null, metaitem('stickLongWroughtIron')]])
 
 // Smeltery Firebox
 crafting.addShaped("tfctech/smeltery_firebox", item('tfctech:smeltery_firebox'), [
-        [metaitem('stickWroughtIron'), metaitem('plateWroughtIron'), metaitem('stickWroughtIron')],
-        [metaitem('plateWroughtIron'), item('tfc:fire_bricks'), metaitem('plateWroughtIron')],
-        [metaitem('stickWroughtIron'), metaitem('plateWroughtIron'), metaitem('stickWroughtIron')]])
+  [metaitem('stickWroughtIron'), metaitem('plateWroughtIron'), metaitem('stickWroughtIron')],
+  [metaitem('plateWroughtIron'), item('tfg:core/fire_bricks'), metaitem('plateWroughtIron')],
+  [metaitem('stickWroughtIron'), metaitem('plateWroughtIron'), metaitem('stickWroughtIron')]])
 
 // Wire Draw Bench
 crafting.addShaped("tfctech/wire_draw_bench", item('tfctech:wire_draw_bench'), [
-        [item('tfctech:wiredraw/winch'), item('tfctech:wiredraw/leather_belt'), ore('toolTongs').transform(Function.setToolDamage)],
-        [metaitem('plateWroughtIron'), metaitem('plateWroughtIron'), metaitem('plateWroughtIron')],
-        [metaitem('plateWroughtIron'), null, metaitem('plateWroughtIron')]])
+  [item('tfctech:wiredraw/winch'), item('tfctech:wiredraw/leather_belt'), ore('toolTongs').transform(Function.setToolDamage)],
+  [metaitem('plateWroughtIron'), metaitem('plateWroughtIron'), metaitem('plateWroughtIron')],
+  [metaitem('plateWroughtIron'), null, metaitem('plateWroughtIron')]])

@@ -5,13 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.terrafirmacraft.ItemRegistry;
 
-// --- Массивы 
-
-// --- Регистрация топлива
-ItemRegistry.registerFuel(<metaitem:gemCoke>, 3200, 1510, false, true);
-ItemRegistry.registerFuel(<minecraft:coal>, 1600, 1400, true, true);
-ItemRegistry.registerFuel(<metaitem:oreChunkCoal>, 1400, 1400, true, true);
-ItemRegistry.registerFuel(<tfc:peat>, 3200, 500, true, false);
+// --- Массивы
 
 // ---//--- Вариации Меди
 
@@ -345,17 +339,6 @@ ItemRegistry.registerItemMetal(<metaitem:dustTinySilver>, "SILVER", 16, true);
 // Регистрация металла
 ItemRegistry.registerItemMetal(<minecraft:iron_bars>, "WROUGHT_IRON", 18, true);
 ItemRegistry.registerItemMetal(<minecraft:bucket>, "BLUE_STEEL", 144, true);
-
-// Register Food Stats for TFC
-ItemRegistry.registerFood(<minecraft:mushroom_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 0, 0);
-ItemRegistry.registerFood(<minecraft:rabbit_stew>, 4, 20, 2.0, 2.0, 0, 3.0, 0, 1.0, 0);
-ItemRegistry.registerFood(<minecraft:beetroot_soup>, 4, 22, 2.0, 2.0, 0, 3.0, 0, 0, 0);
-
-// Регистрация брони
-ItemRegistry.registerArmor(<minecraft:leather_helmet>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_chestplate>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_leggings>, 3.0, 6.0, 4.5);
-ItemRegistry.registerArmor(<minecraft:leather_boots>, 3.0, 6.0, 4.5);
 
 
 
