@@ -12,7 +12,7 @@ import mods.firmalife.Drying;
 
 
 // Удобрение
-Drying.addRecipe("firmalife/fertilizer", <tfc:wood_ash>, <tfc:powder/fertilizer>, 8000);
+Drying.addRecipe("firmalife/fertilizer", <tfg:core/wood_ash>, <tfc:powder/fertilizer>, 8000);
 
 // Высушивание соли
 Drying.addRecipe("firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <tfg:meta_item:51>, 24000);

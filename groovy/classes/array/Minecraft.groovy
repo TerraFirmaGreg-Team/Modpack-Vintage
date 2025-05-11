@@ -40,4 +40,23 @@ class Minecraft {
     fluid('dye_red'),
     fluid('dye_black')
   ]
+
+  static final List stainedHardenedClay = [
+    item('minecraft:stained_hardened_clay', 0),
+    item('minecraft:stained_hardened_clay', 1),
+    item('minecraft:stained_hardened_clay', 2),
+    item('minecraft:stained_hardened_clay', 3),
+    item('minecraft:stained_hardened_clay', 4),
+    item('minecraft:stained_hardened_clay', 5),
+    item('minecraft:stained_hardened_clay', 6),
+    item('minecraft:stained_hardened_clay', 7),
+    item('minecraft:stained_hardened_clay', 8),
+    item('minecraft:stained_hardened_clay', 9),
+    item('minecraft:stained_hardened_clay', 10),
+    item('minecraft:stained_hardened_clay', 11),
+    item('minecraft:stained_hardened_clay', 12),
+    item('minecraft:stained_hardened_clay', 13),
+    item('minecraft:stained_hardened_clay', 14),
+    item('minecraft:stained_hardened_clay', 15)
+  ]
 }

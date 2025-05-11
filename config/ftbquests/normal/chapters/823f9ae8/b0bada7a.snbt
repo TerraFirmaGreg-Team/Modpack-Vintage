@@ -12,7 +12,7 @@
 		uid: "fc2df85e",
 		type: "item",
 		items: [{
-			item: "tfc:bellows"
+			item: "tfg:device/bellows"
 		}]
 	}]
 }

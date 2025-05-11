@@ -2,17 +2,23 @@
   "packName": "TerraFirmaGreg-Vintage",
   "packId": "terrafirmagreg",
   "version": "DEV",
-  "debug": true,
+  "debug": false,
   "loaders": {
     "preInit": [
       "preInit/"
     ],
     "init": [
+      "classes/",
+      "init/oredict/remove",
+      "init/oredict/add",
       "init/"
     ],
     "postInit": [
-      "classes/",
-      "postInit/oredict/",
+      "postInit/jei",
+      "postInit/recipe/remove",
+      "postInit/recipe/add",
+      "postInit/loot/remove",
+      "postInit/loot/add",
       "postInit/"
     ]
   },

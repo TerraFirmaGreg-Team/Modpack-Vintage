@@ -9,14 +9,14 @@
 		uid: "694e24a8",
 		type: "item",
 		items: [{
-			item: "tfctech:smeltery_firebox"
+			item: "tfg:device/smeltery/firebox"
 		}]
 	},
 	{
 		uid: "026a23be",
 		type: "item",
 		items: [{
-			item: "tfctech:smeltery_cauldron"
+			item: "tfg:device/smeltery/cauldron"
 		}]
 	}]
 }

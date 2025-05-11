@@ -1,5 +1,3 @@
-package classes
-
 import gregtech.api.GTValues
 
 class Function {
