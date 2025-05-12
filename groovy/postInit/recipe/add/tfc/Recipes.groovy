@@ -1,12 +1,12 @@
 // MODS_LOADED: tfc
 // --- Добавление рецептов
 
+
 import classes.Function
 import classes.array.GregTech
 import classes.array.Minecraft
 import classes.array.TerraFirmaCraft
 import classes.array.TerraFirmaCraftF
-
 
 // FixTFCCapabilityRecipeBug
 
