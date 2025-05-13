@@ -5,6 +5,13 @@
 import classes.Function
 import classes.array.TerraFirmaCraft
 import classes.array.TerraFirmaCraftFL
+import net.dries007.tfc.objects.recipes.DryingRecipe
+
+// Удобрение
+DryingRecipe.addRecipe("firmalife/fertilizer", item('tfg:core/wood_ash'), item('tfc:powder/fertilizer'), 8000)
+
+// Высушивание соли
+DryingRecipe.addRecipe("firmalife/salt", item('tfc:wooden_bucket').withNbt([Fluid: [FluidName: "salt_water", Amount: 1000]]), item('tfg:meta_item:51'), 24000);
 
 // Забор
 for (int i = 0; i < TerraFirmaCraftFL.flFences.size(); i++) {

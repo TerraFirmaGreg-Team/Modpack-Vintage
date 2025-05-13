@@ -11,12 +11,6 @@ import mods.firmalife.Drying;
 // --- Добавление рецептов
 
 
-// Удобрение
-Drying.addRecipe("firmalife/fertilizer", <tfg:core/wood_ash>, <tfc:powder/fertilizer>, 8000);
-
-// Высушивание соли
-Drying.addRecipe("firmalife/salt", <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "salt_water", Amount: 1000}}), <tfg:meta_item:51>, 24000);
-
 // Greenhouse Door
 Anvil.addRecipe("firmalife/greenhouse_door", <metaitem:plateWroughtIron>, <firmalife:greenhouse_door> * 4, 3, "general", "HIT_NOT_LAST", "HIT_NOT_LAST", "PUNCH_LAST");
 
