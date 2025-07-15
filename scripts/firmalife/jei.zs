@@ -17,10 +17,10 @@ Oven.removeRecipe(<firmalife:cooked_pizza>);
 Barrel.removeRecipe(<firmalife:treated_lumber>);
 
 // Бафф крафта крыши теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_roof> * 2);
+Anvil.removeRecipe(<tfg:device/greenhouse/roof> * 2);
 
 // Бафф крафта стен теплицы
-Anvil.removeRecipe(<firmalife:greenhouse_wall> * 2);
+Anvil.removeRecipe(<tfg:device/greenhouse/wall> * 2);
 
 // Greenhouse Door
 Anvil.removeRecipe(<firmalife:greenhouse_door>);

@@ -18,7 +18,6 @@ val RemoveItemsQuern as IItemStack[] = [
 	<tfc:powder/fertilizer>,
 	<tfc:powder/malachite>,
 	<tfc:powder/limonite>,
-	<tfc:ore/gypsum>,
 	<tfc:powder/hematite>,
 	<minecraft:redstone> * 8,
 	<tfc:powder/flux> * 6

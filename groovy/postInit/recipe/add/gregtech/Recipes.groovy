@@ -633,7 +633,7 @@ mods.gregtech.forge_hammer.recipeBuilder()
 // Песок + Гравий --> цемент тфк
 mods.gregtech.mixer.recipeBuilder()
   .inputs(ore('sand') * 4, ore('gravel') * 4)
-  .outputs(item('tfc:aggregate') * 8)
+  .outputs(item('tfg:core/aggregate') * 8)
   .duration(20).EUt(4).buildAndRegister()
 
 // Infinite Water Cover

@@ -832,37 +832,37 @@ mods.gregtech.electrolyzer.recipeBuilder()
 
 // Цемент из тфк -> цемент разных цветов
 // White Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_white') * 144).outputs(item('minecraft:concrete_powder') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_white') * 144).outputs(item('minecraft:concrete_powder') * 4).duration(15).EUt(7).buildAndRegister()
 // Orange Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_orange') * 144).outputs(item('minecraft:concrete_powder:1') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_orange') * 144).outputs(item('minecraft:concrete_powder:1') * 4).duration(15).EUt(7).buildAndRegister()
 // Magenta Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_magenta') * 144).outputs(item('minecraft:concrete_powder:2') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_magenta') * 144).outputs(item('minecraft:concrete_powder:2') * 4).duration(15).EUt(7).buildAndRegister()
 // Light Blue Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_light_blue') * 144).outputs(item('minecraft:concrete_powder:3') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_light_blue') * 144).outputs(item('minecraft:concrete_powder:3') * 4).duration(15).EUt(7).buildAndRegister()
 // Yellow Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_yellow') * 144).outputs(item('minecraft:concrete_powder:4') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_yellow') * 144).outputs(item('minecraft:concrete_powder:4') * 4).duration(15).EUt(7).buildAndRegister()
 // Lime Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_lime') * 144).outputs(item('minecraft:concrete_powder:5') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_lime') * 144).outputs(item('minecraft:concrete_powder:5') * 4).duration(15).EUt(7).buildAndRegister()
 // Pink Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_pink') * 144).outputs(item('minecraft:concrete_powder:6') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_pink') * 144).outputs(item('minecraft:concrete_powder:6') * 4).duration(15).EUt(7).buildAndRegister()
 // Gray Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_gray') * 144).outputs(item('minecraft:concrete_powder:7') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_gray') * 144).outputs(item('minecraft:concrete_powder:7') * 4).duration(15).EUt(7).buildAndRegister()
 // Light Gray Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_light_gray') * 144).outputs(item('minecraft:concrete_powder:8') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_light_gray') * 144).outputs(item('minecraft:concrete_powder:8') * 4).duration(15).EUt(7).buildAndRegister()
 // Cyan Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_cyan') * 144).outputs(item('minecraft:concrete_powder:9') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_cyan') * 144).outputs(item('minecraft:concrete_powder:9') * 4).duration(15).EUt(7).buildAndRegister()
 // Purple Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_purple') * 144).outputs(item('minecraft:concrete_powder:10') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_purple') * 144).outputs(item('minecraft:concrete_powder:10') * 4).duration(15).EUt(7).buildAndRegister()
 // Blue Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_blue') * 144).outputs(item('minecraft:concrete_powder:11') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_blue') * 144).outputs(item('minecraft:concrete_powder:11') * 4).duration(15).EUt(7).buildAndRegister()
 // Brown Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_brown') * 144).outputs(item('minecraft:concrete_powder:12') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_brown') * 144).outputs(item('minecraft:concrete_powder:12') * 4).duration(15).EUt(7).buildAndRegister()
 // Green Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_green') * 144).outputs(item('minecraft:concrete_powder:13') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_green') * 144).outputs(item('minecraft:concrete_powder:13') * 4).duration(15).EUt(7).buildAndRegister()
 // Red Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_red') * 144).outputs(item('minecraft:concrete_powder:14') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_red') * 144).outputs(item('minecraft:concrete_powder:14') * 4).duration(15).EUt(7).buildAndRegister()
 // Black Concrete Powder * 8
-mods.gregtech.mixer.recipeBuilder().inputs(item('tfc:aggregate') * 4).fluidInputs(fluid('dye_black') * 144).outputs(item('minecraft:concrete_powder:15') * 4).duration(15).EUt(7).buildAndRegister()
+mods.gregtech.mixer.recipeBuilder().inputs(item('tfg:core/aggregate') * 4).fluidInputs(fluid('dye_black') * 144).outputs(item('minecraft:concrete_powder:15') * 4).duration(15).EUt(7).buildAndRegister()
 
 // Переработка тфк еды в метан
 // Мясо
@@ -1094,12 +1094,12 @@ mods.gregtech.mixer.recipeBuilder()
   .inputs(item('minecraft:dye:15'))
   .fluidInputs(fluid('limewater') * 500)
   .circuitMeta(16)
-  .outputs(item('tfc:glue'))
+  .outputs(item('tfg:core/glue'))
   .duration(150).EUt(2).buildAndRegister()
 
 // Primitive Glue -> GT Glue
 mods.gregtech.centrifuge.recipeBuilder()
-  .inputs(item('tfc:glue'))
+  .inputs(item('tfg:core/glue'))
   .fluidOutputs(fluid('glue') * 10)
   .duration(150).EUt(2).buildAndRegister()
 
@@ -1116,7 +1116,7 @@ mods.gregtech.mixer.recipeBuilder()
   .inputs(ore('sand'))
   .fluidInputs(fluid('limewater') * 50)
   .circuitMeta(16)
-  .outputs(item('tfc:mortar') * 32)
+  .outputs(item('tfg:core/mortar') * 32)
   .duration(150).EUt(2).buildAndRegister()
 
 // Wood Ash - ') Lye

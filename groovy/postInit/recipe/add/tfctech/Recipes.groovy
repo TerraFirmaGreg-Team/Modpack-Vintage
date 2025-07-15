@@ -22,7 +22,7 @@ crafting.addShapeless("tfctech/dust_potash", metaitem('dustPotash') * 4, [item('
 // Исправление рецепта емкости с поташем
 crafting.addShapeless("tfctech/pot_ash", item('tfctech:pot_ash'), [
   metaitem('dustAsh'), metaitem('dustAsh'), metaitem('dustAsh'),
-  metaitem('dustAsh'), item('tfc:ceramics/fired/pot').noReturn(), item('tfc:wooden_bucket').withNbt(["Fluid": ["FluidName": "fresh_water", "Amount": 1000]])])
+  metaitem('dustAsh'), item('tfc:ceramics/fired/pot').noReturn(), item('tfg:device/bucket/wood').withNbt(["Fluid": ["FluidName": "fresh_water", "Amount": 1000]])])
 
 // Резина для первых этапов
 crafting.addShapeless("tfctech/plate_rubber", metaitem('plateRubber') * 2, [item('tfctech:latex/rubber'), ore('toolKnife').transform(Function.setToolDamage)])
@@ -31,7 +31,7 @@ crafting.addShapeless("tfctech/plate_rubber", metaitem('plateRubber') * 2, [item
 crafting.addShapeless("tfctech/vulcanizing_agents", item('tfctech:latex/vulcanizing_agents') * 4, [item('tfc:powder/graphite'), ore('dustKaolinite'), ore('dustFlux'), metaitem('dustSulfur')])
 
 // Холодильник
-crafting.addShaped("tfctech/fridge", item('tfctech:fridge'), [
+crafting.addShaped("tfctech/fridge", item('tfg:device/fridge'), [
   [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')],
   [metaitem('plateSteel'), ore('plateDoubleIronAny'), metaitem('plateSteel')],
   [metaitem('plateSteel'), item('tfctech:metal/copper_inductor'), metaitem('plateSteel')]])

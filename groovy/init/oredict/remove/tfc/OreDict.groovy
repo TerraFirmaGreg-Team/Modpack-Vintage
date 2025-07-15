@@ -100,6 +100,3 @@ ore('sheetDoubleRedSteel').remove(item('tfc:metal/double_sheet/red_steel'))
 for (item in TerraFirmaCraft.tfcSaws) {
   ore('saw').remove(item)
 }
-
-// Removing OreDicts from Gypsum
-ore('gemGypsum').remove(item('tfc:ore/gypsum'))

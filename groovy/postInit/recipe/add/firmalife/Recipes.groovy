@@ -11,7 +11,7 @@ import net.dries007.tfc.objects.recipes.DryingRecipe
 DryingRecipe.addRecipe("firmalife/fertilizer", item('tfg:core/wood_ash'), item('tfc:powder/fertilizer'), 8000)
 
 // Высушивание соли
-DryingRecipe.addRecipe("firmalife/salt", item('tfc:wooden_bucket').withNbt([Fluid: [FluidName: "salt_water", Amount: 1000]]), item('tfg:meta_item:51'), 24000);
+DryingRecipe.addRecipe("firmalife/salt", item('tfg:device/bucket/wood').withNbt([Fluid: [FluidName: "salt_water", Amount: 1000]]), item('tfg:meta_item:51'), 24000);
 
 // Забор
 for (int i = 0; i < TerraFirmaCraftFL.flFences.size(); i++) {
@@ -87,12 +87,12 @@ crafting.addShapeless("firmalife/treated_lumber", item('firmalife:treated_lumber
 
 
 // Высушивание соли
-crafting.addShapeless("firmalife/small_salt", metaitem('dustSmallSalt') * 2, [item('tfg:meta_item', 51).transform({ item('tfc:wooden_bucket') })])
+crafting.addShapeless("firmalife/small_salt", metaitem('dustSmallSalt') * 2, [item('tfg:meta_item', 51).transform({ item('tfg:device/bucket/wood') })])
 
-crafting.addShapeless("firmalife/trellis", item('firmalife:trellis'), [item('firmalife:greenhouse_wall'), item('firmalife:greenhouse_wall'), ore('dustFertilizer')])
-crafting.addShapeless("firmalife/pumpkin_hanging_planter", item('firmalife:pumpkin_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])
-crafting.addShapeless("firmalife/melon_hanging_planter", item('firmalife:melon_hanging_planter'), [item('firmalife:greenhouse_wall'), item('firmalife:crop/seeds/melon'), ore('dustFertilizer')])
-crafting.addShapeless("firmalife/squash_hanging_planter", item('firmalife:squash_hanging_planter'), [item('firmalife:greenhouse_wall'), item('tfc:crop/seeds/squash'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/trellis", item('firmalife:trellis'), [item('tfg:device/greenhouse/wall'), item('tfg:device/greenhouse/wall'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/pumpkin_hanging_planter", item('firmalife:pumpkin_hanging_planter'), [item('tfg:device/greenhouse/wall'), item('firmalife:crop/seeds/pumpkin'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/melon_hanging_planter", item('firmalife:melon_hanging_planter'), [item('tfg:device/greenhouse/wall'), item('firmalife:crop/seeds/melon'), ore('dustFertilizer')])
+crafting.addShapeless("firmalife/squash_hanging_planter", item('firmalife:squash_hanging_planter'), [item('tfg:device/greenhouse/wall'), item('tfc:crop/seeds/squash'), ore('dustFertilizer')])
 
 
 // Chestnut Dough
@@ -109,7 +109,7 @@ mods.gregtech.mixer.recipeBuilder()
 mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(1)
   .inputs(metaitem('plateWroughtIron'))
-  .outputs(item('firmalife:greenhouse_roof') * 4)
+  .outputs(item('tfg:device/greenhouse/roof') * 4)
   .duration(205).EUt(8).buildAndRegister()
 
 mods.gregtech.assembler.recipeBuilder()
@@ -121,7 +121,7 @@ mods.gregtech.assembler.recipeBuilder()
 mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(3)
   .inputs(metaitem('plateWroughtIron'))
-  .outputs(item('firmalife:greenhouse_wall') * 4)
+  .outputs(item('tfg:device/greenhouse/wall') * 4)
   .duration(205).EUt(8).buildAndRegister()
 
 crafting.addShaped("firmalife/quad_planter", item('firmalife:quad_planter'), [

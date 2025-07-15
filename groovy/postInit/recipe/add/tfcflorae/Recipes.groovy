@@ -766,7 +766,7 @@ mods.gregtech.mixer.recipeBuilder()
 crafting.addShapeless("tfcflorae/orange_juice_to_orange_vine", item('tfcflorae:storage/crate'), [item('tfc:stick_bundle'), ore('clay'), ore('clay'), item('tfc:stick_bundle')])
 
 // Yeast
-crafting.addShapeless("tfcflorae/yeast", item('tfcflorae:yeast') * 3, [item('tfc:wooden_bucket', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({ item('tfc:wooden_bucket', 0) })])
+crafting.addShapeless("tfcflorae/yeast", item('tfcflorae:yeast') * 3, [item('tfg:device/bucket/wood', 0).withNbtExact(["Fluid": ["FluidName": "yeast_starter", "Amount": 1000]]).transform({ item('tfg:device/bucket/wood', 0) })])
 
 // Mud Bricks
 for (int i = 0; i < TerraFirmaCraftF.mudBalls.size(); i++) {
