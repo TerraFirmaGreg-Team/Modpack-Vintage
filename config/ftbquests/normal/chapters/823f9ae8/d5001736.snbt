@@ -18,7 +18,7 @@
 		uid: "e1f4f43a",
 		type: "item",
 		items: [{
-			item: "firmalife:greenhouse_wall"
+			item: "tfg:device/greenhouse/wall"
 		}],
 		count: 20L
 	},
@@ -26,7 +26,7 @@
 		uid: "30d728f2",
 		type: "item",
 		items: [{
-			item: "firmalife:greenhouse_roof"
+			item: "tfg:device/greenhouse/roof"
 		}],
 		count: 20L
 	}]

@@ -8,7 +8,7 @@
 		uid: "a49d2d13",
 		type: "item",
 		items: [{
-			item: "tfc:wooden_bucket"
+			item: "tfg:device/bucket/wood"
 		}]
 	}]
 }
