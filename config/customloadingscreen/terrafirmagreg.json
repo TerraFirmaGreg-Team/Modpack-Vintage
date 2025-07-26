@@ -47,14 +47,14 @@
     {
       "image": {
         "parent": "builtin/image",
-        "image": "tfg:textures/gui/logo.png",
+        "image": "config:logo_title.png",
         "position_type": "CENTER",
         "offset_pos": "CENTER",
         "position": {
           "x": "0",
-          "y": "0",
-          "width": "100",
-          "height": "90"
+          "y": "-20",
+          "width": "294",
+          "height": "48"
         }
       }
     },
