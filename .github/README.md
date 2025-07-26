@@ -2,15 +2,16 @@
 
 <div align="center">
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="100">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/icon/v3/1080x_1080p_still_ring.gif?raw=true" alt="Logo" height="120"/>
   </a>
   <br/>
-
   <a href="https://discord.gg/AEaCzCTUwQ">
-  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/brands/discord_logo_32x.png?raw=true" alt="Join our Discord" height="50"/>
+  </a>
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-vintage">
-  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/brands/curseforge_logo_32x.png?raw=true" alt="Available on CurseForge" height="50"/>
+  </a>
   <br/>
   <p align="center">
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Vintage/wiki">Explore the wiki</a>
@@ -24,7 +25,7 @@
 </div>
 <br/>
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/title/large.png?raw=true)
+![Logo_Title](https://github.com/TerraFirmaGreg-Team/.github/blob/main/storage/vintage/title_logo.png?raw=true)
 
 ***
 
@@ -49,7 +50,7 @@ and others, also all these mods have addons to diversify the gameplay even more!
 
 For the set-up guide, please feel free to head to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
+![Image_Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/storage/vintage/image_readme.png?raw=true)
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft
