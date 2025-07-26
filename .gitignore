@@ -9,7 +9,7 @@
 **/*.iml
 
 # Dev
-/CLASSLOADER_TEMP
+/CLASSLOADER_TEMP*
 
 # Pakku
 build/
