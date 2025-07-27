@@ -2,19 +2,23 @@
   "packName": "TerraFirmaGreg-Vintage",
   "packId": "terrafirmagreg",
   "version": "DEV",
-  "debug": true,
-  "classes": [
-    "classes/"
-  ],
+  "debug": false,
   "loaders": {
     "preInit": [
       "preInit/"
     ],
     "init": [
+      "classes/",
+      "init/oredict/remove",
+      "init/oredict/add",
       "init/"
     ],
     "postInit": [
-      "postInit/oredict/",
+      "postInit/jei",
+      "postInit/recipe/remove",
+      "postInit/recipe/add",
+      "postInit/loot/remove",
+      "postInit/loot/add",
       "postInit/"
     ]
   },
@@ -23,6 +27,7 @@
       "normal"
     ],
     "default": "normal",
+    "_comment": "By default the packmode is not synced with the packmode mod. You can enable integration, but you can no longer change packmode on the fly.",
     "integratePackmodeMod": false
   }
 }

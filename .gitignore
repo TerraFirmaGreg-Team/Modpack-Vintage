@@ -8,6 +8,9 @@
 **/*.zip
 **/*.iml
 
+# Dev
+/CLASSLOADER_TEMP*
+
 # Pakku
 build/
 !.pakku/**/*
@@ -46,40 +49,38 @@ config/stellarcore_stitcher_cache_vanilla.dat
 # .minecraft
 !bansoukou/**.zip
 
-.vscode/
-.idea/
-.bobby/
-.mixin.out/
-assets/
-classOut/
-backups/
-profileImage/
-crash-reports/
-logs/
-saves/
-ldlib/
-local/
-vintagefix/
-modernfix/
-XaeroWaypoints*/
-XaeroWorldMap*/
-defaultconfigs/
-xaero/
-visualores/
-mods-carryover/
-EnderStorage/
-fancymenu_data/
-fancymenu_setups/
-downloads/
-CustomSkinLoader/
-EverlastingSkins/
-cache/
-screenshots/
-shaderpacks/
-chiselsandbits/
+/.vscode/
+/.idea/
+/.bobby/
+/.mixin.out/
+/classOut/
+/backups/
+/profileImage/
+/crash-reports/
+/logs/
+/saves/
+/ldlib/
+/local/
+/vintagefix/
+/modernfix/
+/XaeroWaypoints*/
+/XaeroWorldMap*/
+/defaultconfigs/
+/xaero/
+/visualores/
+/mods-carryover/
+/EnderStorage/
+/fancymenu_data/
+/fancymenu_setups/
+/downloads/
+/CustomSkinLoader/
+/EverlastingSkins/
+/cache/
+/screenshots/
+/shaderpacks/
+/chiselsandbits/
 
 # Client data
-bansoukou/
 
 .curseclient
 .sl_password
@@ -116,3 +117,4 @@ hei_bookmarks.ini
 .pakku/server-overrides/banned-ips.json
 .pakku/server-overrides/ops.json
 .pakku/server-overrides/whitelist.json
+
