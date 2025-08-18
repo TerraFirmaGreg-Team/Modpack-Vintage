@@ -29,7 +29,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
         
@@ -184,7 +184,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -242,7 +242,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -289,7 +289,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -351,12 +351,12 @@ jobs:
           fi  
 
       - name: 📦 Download artifact curseforge
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
       - name: 📦 Download artifact server
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
@@ -391,12 +391,12 @@ jobs:
   #           fi  
     
   #       - name: 📦 Download artifact modrinth
-  #         uses: actions/download-artifact@v4.3.0
+  #         uses: actions/download-artifact@v5.0.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
   #       - name: 📦 Download artifact server
-  #         uses: actions/download-artifact@v4.3.0
+  #         uses: actions/download-artifact@v5.0.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
@@ -424,10 +424,10 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           merge-multiple: true
 
@@ -441,7 +441,7 @@ jobs:
       - name: Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.12.0
+        uses: roamingowl/template-output-with-eta@v1.13.0
         with:
           template: |
             ```markdown
