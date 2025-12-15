@@ -29,7 +29,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
         
@@ -152,13 +152,13 @@ jobs:
       - name: 📈 Upload Diff
         id: upload_diff
         if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.outputs.file_found == 'true'
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: Mods-diff
           path: PROJECTS_DIFF.md
         
       - name: 🔍 Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
+        uses: mukunku/tag-exists-action@v1.7.0
         id: check_tag
         with:
           tag: ${{ steps.project_version.outputs.value }}
@@ -184,7 +184,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 🔄 Replace strings
         shell: bash
@@ -216,7 +216,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: 🚀 Upload artifact CurseForge
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
@@ -228,7 +228,7 @@ jobs:
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
@@ -242,7 +242,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 🔄 Replace strings
         shell: bash
@@ -275,7 +275,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: 🚀 Upload artifact server
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
@@ -289,7 +289,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 🔄 Replace strings
         shell: bash
@@ -329,7 +329,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: 🚀 Upload zip multimc
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
@@ -351,12 +351,12 @@ jobs:
           fi  
 
       - name: 📦 Download artifact curseforge
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
       - name: 📦 Download artifact server
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
@@ -391,12 +391,12 @@ jobs:
   #           fi  
     
   #       - name: 📦 Download artifact modrinth
-  #         uses: actions/download-artifact@v5.0.0
+  #         uses: actions/download-artifact@v7.0.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
   #       - name: 📦 Download artifact server
-  #         uses: actions/download-artifact@v5.0.0
+  #         uses: actions/download-artifact@v7.0.0
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
@@ -424,10 +424,10 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           merge-multiple: true
 
@@ -441,7 +441,7 @@ jobs:
       - name: Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.13.0
+        uses: roamingowl/template-output-with-eta@v2.2.0
         with:
           template: |
             ```markdown
@@ -450,7 +450,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.3.2
+        uses: softprops/action-gh-release@v2.5.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
