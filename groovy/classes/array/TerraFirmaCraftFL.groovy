@@ -1,3 +1,5 @@
+// MODS_LOADED: firmalife
+
 class TerraFirmaCraftFL {
 
   static final List flFreshFood = [

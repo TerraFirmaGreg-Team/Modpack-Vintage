@@ -307,18 +307,18 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(100).EUt(2920).buildAndRegister()
 
 // Printer
-crafting.addShaped('oc/printer', item('opencomputers:printer'), [
+mods.minecraft.crafting.addShaped('oc/printer', item('opencomputers:printer'), [
   [ore('screwIronAny'), ore('hopper'), ore('screwIronAny')],
   [ore('craftingPiston'), ore('oc:circuitChip3'), ore('craftingPiston')],
   [ore('ingotIron'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
 
 // Netsplitter
-crafting.addShaped('oc/netsplitter', item('opencomputers:netsplitter'), [
+mods.minecraft.crafting.addShaped('oc/netsplitter', item('opencomputers:netsplitter'), [
   [ore('screwIronAny'), metaitem('cableGtSingleIron'), ore('screwIronAny')],
   [metaitem('cableGtSingleIron'), ore('craftingPiston'), metaitem('cableGtSingleIron')],
   [ore('screwIronAny'), ore('circuitLv'), ore('craftingToolScrewdriver')]])
 
-crafting.addShapeless('oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore('oc:capacitor')])
+mods.minecraft.crafting.addShapeless('oc/carpetedcapacitor', item('opencomputers:carpetedcapacitor'), [ore('carpet'), ore('oc:capacitor')])
 
 // Crafting Upgrade
 mods.gregtech.assembler.recipeBuilder()
@@ -645,7 +645,7 @@ mods.gregtech.assembler.recipeBuilder()
 //         .duration(100).EUt(1920).buildAndRegister()
 
 // Piston Upgrade
-crafting.addShapeless("oc/upgrade_20", item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
+mods.minecraft.crafting.addShapeless("oc/upgrade_20", item('opencomputers:upgrade:20'), [item('opencomputers:upgrade:33')])
 mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(1)
   .inputs(
@@ -666,8 +666,8 @@ mods.gregtech.assembler.recipeBuilder()
 //         .duration(100).EUt(120).buildAndRegister()
 
 // Sticky Piston Upgrade
-crafting.addShapeless("oc/upgrade_33", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), metaitem('rubber_drop')])
-crafting.addShapeless("oc/upgrade_33_2", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), item('minecraft:slime_ball')])
+mods.minecraft.crafting.addShapeless("oc/upgrade_33", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), metaitem('rubber_drop')])
+mods.minecraft.crafting.addShapeless("oc/upgrade_33_2", item('opencomputers:upgrade:33'), [item('opencomputers:upgrade:20'), item('minecraft:slime_ball')])
 
 // Sign Upgrade
 mods.gregtech.assembler.recipeBuilder()

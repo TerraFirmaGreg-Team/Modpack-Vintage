@@ -1,3 +1,5 @@
+// MODS_LOADED: projectred-core
+
 class ProjectRed {
   // - All ProjectRed Illuminars Array
   static final List illuminars = [

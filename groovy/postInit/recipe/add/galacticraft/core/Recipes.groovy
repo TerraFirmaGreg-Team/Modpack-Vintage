@@ -9,35 +9,35 @@ import gregtech.api.metatileentity.multiblock.CleanroomType
 
 
 // Взлетная площадка
-crafting.addShaped("gc/landing_pad/rocket", item('galacticraftcore:landing_pad') * 9, [
+mods.minecraft.crafting.addShaped("gc/landing_pad/rocket", item('galacticraftcore:landing_pad') * 9, [
   [null, null, null],
   [metaitem('plateDenseIron'), metaitem('plateDenseIron'), metaitem('plateDenseIron')],
   [ore('blockIronAny'), ore('blockIronAny'), ore('blockIronAny')]])
 
 // Площадка для багги
-crafting.addShaped("gc/landing_pad/buggy", item('galacticraftcore:landing_pad', 1) * 9, [
+mods.minecraft.crafting.addShaped("gc/landing_pad/buggy", item('galacticraftcore:landing_pad', 1) * 9, [
   [null, null, null],
   [metaitem('plateDenseBlackSteel'), metaitem('plateDenseBlackSteel'), metaitem('plateDenseBlackSteel')],
   [metaitem('blockSteel'), metaitem('blockSteel'), metaitem('blockSteel')]])
 
 // Декоративный оловянный блок
-crafting.addShaped("gc/decor_block_tin_1", item('galacticraftcore:basic_block_core', 3), [
+mods.minecraft.crafting.addShaped("gc/decor_block_tin_1", item('galacticraftcore:basic_block_core', 3), [
   [ore('stone'), ore('stone'), null],
   [ore('stone'), ore('stone'), metaitem('plateDenseTin')],
   [null, null, null]])
-crafting.addShaped("gc/decor_block_tin_2", item('galacticraftcore:basic_block_core', 4), [
+mods.minecraft.crafting.addShaped("gc/decor_block_tin_2", item('galacticraftcore:basic_block_core', 4), [
   [ore('stone'), ore('stone'), null],
   [ore('stone'), ore('stone'), null],
   [null, metaitem('plateDenseTin'), null]])
 
 // Каркас воздушного шлюза
-crafting.addShaped("gc/airlock_frame", item('galacticraftcore:air_lock_frame') * 2, [
+mods.minecraft.crafting.addShaped("gc/airlock_frame", item('galacticraftcore:air_lock_frame') * 2, [
   [metaitem('plateDenseAluminium'), metaitem('plateDenseAluminium'), metaitem('plateDenseAluminium')],
   [metaitem('plateDenseSteel'), item('galacticraftcore:oxygen_concentrator'), metaitem('plateDenseSteel')],
   [metaitem('plateDenseAluminium'), metaitem('plateDenseAluminium'), metaitem('plateDenseAluminium')]])
 
 // Контроллер воздушного шлюза
-crafting.addShaped("gc/machine/airlock_frame_controller", item('galacticraftcore:air_lock_frame', 1), [
+mods.minecraft.crafting.addShaped("gc/machine/airlock_frame_controller", item('galacticraftcore:air_lock_frame', 1), [
   [metaitem('plateDenseStainlessSteel'), metaitem('cableGtDoubleGold'), metaitem('plateDenseStainlessSteel')],
   [ore('circuitHv'), metaitem('hull.ev'), ore('circuitHv')],
   [metaitem('plateDenseStainlessSteel'), metaitem('cableGtDoubleGold'), metaitem('plateDenseStainlessSteel')]])
@@ -79,38 +79,38 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(300).EUt(480).buildAndRegister()
 
 // Магнитный верстак
-crafting.addShaped("gc/magnetic_table", item('galacticraftcore:magnetic_table'), [
+mods.minecraft.crafting.addShaped("gc/magnetic_table", item('galacticraftcore:magnetic_table'), [
   [ore('workbench'), metaitem('plateDenseIron'), null],
   [null, null, null],
   [null, null, null]])
 
 // Герметичная жидкостная труба
-crafting.addShaped("gc/sealable_something_1", item('galacticraftcore:enclosed', 1), [
+mods.minecraft.crafting.addShaped("gc/sealable_something_1", item('galacticraftcore:enclosed', 1), [
   [null, null, null],
   [item('galacticraftcore:basic_block_core', 4), metaitem('pipeSmallFluidStainlessSteel'), item('galacticraftcore:basic_block_core', 4)],
   [null, null, null]])
 
 // Герметичный МЕ кабель
-crafting.addShaped("gc/sealable_something_2", item('galacticraftcore:enclosed', 13), [
+mods.minecraft.crafting.addShaped("gc/sealable_something_2", item('galacticraftcore:enclosed', 13), [
   [null, null, null],
   [item('galacticraftcore:basic_block_core', 4), ore('ae2.cable.glass'), item('galacticraftcore:basic_block_core', 4)],
   [null, null, null]])
 
 // Герметичный кабель
-crafting.addShaped("gc/sealable_something_3", item('galacticraftcore:enclosed', 14), [
+mods.minecraft.crafting.addShaped("gc/sealable_something_3", item('galacticraftcore:enclosed', 14), [
   [null, null, null],
   [item('galacticraftcore:basic_block_core', 4), metaitem('cableGtDoubleAluminium'), item('galacticraftcore:basic_block_core', 4)],
   [null, null, null]])
 
 // Герметичный толстый кабель
-crafting.addShaped("gc/sealable_something_4", item('galacticraftcore:enclosed:15'), [
+mods.minecraft.crafting.addShaped("gc/sealable_something_4", item('galacticraftcore:enclosed:15'), [
   [null, null, null],
   [item('galacticraftcore:basic_block_core', 4), metaitem('cableGtOctalAluminium'), item('galacticraftcore:basic_block_core', 4)],
   [null, null, null]])
 
 
 // Антена связи
-crafting.addShaped("gc/machine/dishbase", item('galacticraftcore:dishbase'), [
+mods.minecraft.crafting.addShaped("gc/machine/dishbase", item('galacticraftcore:dishbase'), [
   [metaitem('plateDenseStainlessSteel'), item('galacticraftcore:basic_item:19'), metaitem('plateDenseStainlessSteel')],
   [null, metaitem('plateDenseStainlessSteel'), null],
   [ore('circuitIv'), metaitem('hull.ev'), ore('circuitIv')]])
@@ -158,28 +158,28 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(20).EUt(58).buildAndRegister()
 
 // Светофакел
-crafting.addShapeless("gc/glowstone_torch", item('galacticraftcore:glowstone_torch') * 2, [item('minecraft:torch'), item('minecraft:glowstone_dust')])
+mods.minecraft.crafting.addShapeless("gc/glowstone_torch", item('galacticraftcore:glowstone_torch') * 2, [item('minecraft:torch'), item('minecraft:glowstone_dust')])
 
 // Подруливающее устройство
-crafting.addShaped("gc/machine/spin_thruster", item('galacticraftcore:spin_thruster'), [
+mods.minecraft.crafting.addShaped("gc/machine/spin_thruster", item('galacticraftcore:spin_thruster'), [
   [item('galacticraftcore:oil_canister_partial', 1), ore('circuitIv'), item('galacticraftcore:engine')],
   [metaitem('plateDenseMeteoricIron'), item('gregtech:metal_casing', 7), metaitem('plateDenseMeteoricIron')],
   [metaitem('wireGtDoubleElectrum'), metaitem('wireGtDoubleElectrum'), metaitem('wireGtDoubleElectrum')]])
 
 // Экран просмотра
-crafting.addShaped("gc/machine/view_screen", item('galacticraftcore:view_screen'), [
+mods.minecraft.crafting.addShaped("gc/machine/view_screen", item('galacticraftcore:view_screen'), [
   [metaitem('plateDenseBlackSteel'), ore('circuitLv'), metaitem('plateDenseBlackSteel')],
   [ore('circuitLv'), ore('blockGlass'), ore('circuitLv')],
   [metaitem('plateDenseBlackSteel'), ore('circuitLv'), metaitem('plateDenseBlackSteel')]])
 
 // Телеметрический блок
-crafting.addShaped("gc/machine/telemetry", item('galacticraftcore:telemetry'), [
+mods.minecraft.crafting.addShaped("gc/machine/telemetry", item('galacticraftcore:telemetry'), [
   [metaitem('sensor.hv'), metaitem('cableGtDoubleGold'), ore('circuitHv')],
   [item('appliedenergistics2:wireless_access_point'), metaitem('hull.ev'), item('appliedenergistics2:wireless_access_point')],
   [metaitem('plateDenseStainlessSteel'), item('galacticraftcore:basic_item:19'), metaitem('plateDenseStainlessSteel')]])
 
 // Дуговая лампа
-crafting.addShaped("gc/arclamp", item('galacticraftcore:arclamp'), [
+mods.minecraft.crafting.addShaped("gc/arclamp", item('galacticraftcore:arclamp'), [
   [metaitem('plateDesh'), item('minecraft:glowstone_dust'), metaitem('plateDesh')],
   [item('minecraft:glowstone_dust'), item('galacticraftplanets:atomic_battery'), item('minecraft:glowstone_dust')],
   [metaitem('plateDesh'), item('minecraft:glowstone_dust'), metaitem('plateDesh')]])
@@ -196,13 +196,13 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(1000).EUt(1012).buildAndRegister()
 
 // // Oxygen Mask
-// crafting.addShaped("gc/oxygen_mask", item('galacticraftcore:oxygen_mask'), [
+// mods.minecraft.crafting.addShaped("gc/oxygen_mask", item('galacticraftcore:oxygen_mask'), [
 //    [item('minecraft:glass_pane'), metaitem('lensGlass'), item('minecraft:glass_pane')],
 //    [item('minecraft:glass_pane'), item('extraplanets:tier1_un_prepared_space_suit_helmet'), item('minecraft:glass_pane')],
 //    [metaitem('plateDenseSteel'), metaitem('pipeTinyFluidStainlessSteel'), metaitem('plateDenseSteel')]])
 
 // Oxygen Gear
-crafting.addShaped("gc/oxygen_gear", item('galacticraftcore:oxygen_gear'), [
+mods.minecraft.crafting.addShaped("gc/oxygen_gear", item('galacticraftcore:oxygen_gear'), [
   [metaitem('plateAluminium'), item('galacticraftcore:air_vent'), metaitem('plateAluminium')],
   [metaitem('large_fluid_cell.stainless_steel'), item('galacticraftcore:oxygen_concentrator'), metaitem('large_fluid_cell.stainless_steel')],
   [metaitem('pipeTinyFluidStainlessSteel'), item('galacticraftcore:air_fan'), metaitem('pipeTinyFluidStainlessSteel')]])
@@ -231,7 +231,7 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(1000).EUt(4012).buildAndRegister()
 
 // Воздушный клапан
-crafting.addShaped("gc/air_vent", item('galacticraftcore:air_vent'), [
+mods.minecraft.crafting.addShaped("gc/air_vent", item('galacticraftcore:air_vent'), [
   [item('galacticraftcore:grating'), metaitem('plateDenseTin'), item('galacticraftcore:grating')],
   [metaitem('plateDenseTin'), metaitem('plateDenseSteel'), metaitem('plateDenseTin')],
   [item('galacticraftcore:grating'), metaitem('plateDenseTin'), item('galacticraftcore:grating')]])
@@ -248,31 +248,31 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(100).EUt(400).buildAndRegister()
 
 // Воздушный концентратор
-crafting.addShaped("gc/oxygen_concentrator", item('galacticraftcore:oxygen_concentrator'), [
+mods.minecraft.crafting.addShaped("gc/oxygen_concentrator", item('galacticraftcore:oxygen_concentrator'), [
   [metaitem('plateDenseBlackSteel'), ore('circuitMv'), metaitem('plateDenseBlackSteel')],
   [metaitem('plateDenseTin'), item('galacticraftcore:canister'), metaitem('plateDenseTin')],
   [metaitem('plateDenseBlackSteel'), item('galacticraftcore:air_vent'), metaitem('plateDenseBlackSteel')]])
 
 // Шест
-crafting.addShaped("gc/steel_pole", item('galacticraftcore:steel_pole') * 2, [
+mods.minecraft.crafting.addShaped("gc/steel_pole", item('galacticraftcore:steel_pole') * 2, [
   [null, metaitem('plateDenseSteel'), null],
   [null, metaitem('plateDenseSteel'), ore('toolHammer').transform(Function.setToolDamage)],
   [null, metaitem('plateDenseSteel'), null]])
 
 // Жидкостная капсула
-crafting.addShaped("gc/oil_canister", item('galacticraftcore:oil_canister_partial:1001'), [
+mods.minecraft.crafting.addShaped("gc/oil_canister", item('galacticraftcore:oil_canister_partial:1001'), [
   [metaitem('plateDenseAluminium'), metaitem('plateDenseBlackSteel'), metaitem('plateDenseAluminium')],
   [metaitem('plateDenseAluminium'), ore('blockGlass'), metaitem('plateDenseAluminium')],
   [metaitem('plateDenseAluminium'), item('galacticraftcore:canister'), metaitem('plateDenseAluminium')]])
 
 // Частотный модуль
-crafting.addShaped("gc/freq_module", item('galacticraftcore:basic_item:19'), [
+mods.minecraft.crafting.addShaped("gc/freq_module", item('galacticraftcore:basic_item:19'), [
   [metaitem('plateLead'), metaitem('emitter.hv'), metaitem('plateLead')],
   [metaitem('sensor.hv'), metaitem('cableGtSingleRedAlloy'), ore('circuitLv')],
   [ore('componentResistor'), metaitem('wireless'), ore('componentResistor')]])
 
 // Тепловой контроллер
-crafting.addShaped("gc/thermal_controller", item('galacticraftcore:basic_item:20'), [
+mods.minecraft.crafting.addShaped("gc/thermal_controller", item('galacticraftcore:basic_item:20'), [
   [metaitem('cableGtDoubleElectrum'), item('galacticraftcore:air_vent'), metaitem('cableGtDoubleElectrum')],
   [metaitem('plateDenseBronze'), metaitem('plateDenseSteel'), metaitem('plateDenseBronze')],
   [metaitem('plateDenseTungstenSteel'), ore('circuitIv'), metaitem('plateDenseTungstenSteel')]])
@@ -310,7 +310,7 @@ mods.gregtech.canner.recipeBuilder()
 
 
 // Пустая схема
-crafting.addShaped("gc/schematic_blank", item('tfg:meta_item', 46), [
+mods.minecraft.crafting.addShaped("gc/schematic_blank", item('tfg:meta_item', 46), [
   [null, ore('paper'), null],
   [null, metaitem('plateStainlessSteel'), ore('toolHammer').transform(Function.setToolDamage)],
   [null, ore('paper'), null]])
@@ -325,17 +325,17 @@ mods.gregtech.bender.recipeBuilder()
 
 // Посадочный модуль
 // T1
-crafting.addShaped("gc/lander_tier1", item('tfg:meta_item', 47),
+mods.minecraft.crafting.addShaped("gc/lander_tier1", item('tfg:meta_item', 47),
   [[item('galacticraftcore:basic_item:19'), metaitem('plateDenseSteel'), metaitem('plateDenseSteel')],
    [metaitem('plateDenseSteel'), item('galacticraftcore:buggymat', 1), metaitem('plateDenseCopper')],
    [item('galacticraftcore:steel_pole'), item('galacticraftcore:engine'), item('galacticraftcore:steel_pole')]])
 // Т2
-crafting.addShaped("gc/lander_tier2", item('tfg:meta_item', 48),
+mods.minecraft.crafting.addShaped("gc/lander_tier2", item('tfg:meta_item', 48),
   [[metaitem('foilGold'), ore('gc.parachute'), metaitem('foilGold')],
    [item('galacticraftcore:canvas'), item('tfg:meta_item', 47), item('galacticraftcore:canvas')],
    [metaitem('foilGold'), item('galacticraftcore:canvas'), metaitem('foilGold')]])
 // T3
-crafting.addShaped("gc/lander_tier3", item('tfg:meta_item', 49),
+mods.minecraft.crafting.addShaped("gc/lander_tier3", item('tfg:meta_item', 49),
   [[metaitem('plateDenseBlackSteel'), metaitem('crate.stainless_steel'), metaitem('plateDenseBlackSteel')],
    [item('galacticraftcore:steel_pole'), item('tfg:meta_item', 48), item('galacticraftcore:steel_pole')],
    [metaitem('plateDenseBlackSteel'), metaitem('plateBlackSteel'), metaitem('plateDenseBlackSteel')]])
@@ -362,52 +362,52 @@ for (int i = 0; i < 16; i++) {
 }
 
 // Базовая солнечная панель
-crafting.addShaped("gc/machine/solar_panel/base", item('galacticraftcore:solar'), [
+mods.minecraft.crafting.addShaped("gc/machine/solar_panel/base", item('galacticraftcore:solar'), [
   [metaitem('cover.solar.panel.mv'), metaitem('cover.solar.panel.mv'), metaitem('cover.solar.panel.mv')],
   [metaitem('gearSmallAluminium'), metaitem('stickAluminium'), metaitem('gearSmallAluminium')],
   [metaitem('electric.piston.mv'), metaitem('hull.ev'), metaitem('cableGtSingleGold')]])
 
 // Улучшенная солнечная панель
-crafting.addShaped("gc/machine/solar_panel/advanced", item('galacticraftcore:solar:4'), [
+mods.minecraft.crafting.addShaped("gc/machine/solar_panel/advanced", item('galacticraftcore:solar:4'), [
   [metaitem('cover.solar.panel.ev'), metaitem('cover.solar.panel.ev'), metaitem('cover.solar.panel.ev')],
   [metaitem('gearSmallTitanium'), metaitem('stickTitanium'), metaitem('gearSmallTitanium')],
   [metaitem('electric.piston.ev'), item('galacticraftcore:solar'), metaitem('cableGtDoublePlatinum')]])
 
 
 // Загручкик топлива
-crafting.addShaped("gc/machine/fuel_loader/basic", item('galacticraftcore:fuel_loader'), [
+mods.minecraft.crafting.addShaped("gc/machine/fuel_loader/basic", item('galacticraftcore:fuel_loader'), [
   [metaitem('plateDenseAluminium'), ore('circuitEv'), metaitem('plateDenseAluminium')],
   [metaitem('drum.stainless_steel'), metaitem('hull.ev'), metaitem('electric.pump.ev')],
   [metaitem('pipeSmallFluidStainlessSteel'), metaitem('pipeSmallFluidStainlessSteel'), metaitem('pipeSmallFluidStainlessSteel')]])
 
 
 // Кислородный компрессор
-crafting.addShaped("gc/machine/oxygen_decompressor/basic", item('galacticraftcore:oxygen_compressor:4'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_decompressor/basic", item('galacticraftcore:oxygen_compressor:4'), [
   [ore('circuitEv'), item('galacticraftcore:oxygen_concentrator'), metaitem('electric.pump.ev')],
   [metaitem('pipeSmallFluidStainlessSteel'), metaitem('hull.ev'), metaitem('pipeSmallFluidStainlessSteel')],
   [metaitem('drum.stainless_steel'), metaitem('plateDenseAluminium'), metaitem('electric.pump.ev')]])
 
 
 // Кислородный декомпрессор
-crafting.addShaped("gc/machine/oxygen_compressor/basic", item('galacticraftcore:oxygen_compressor'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_compressor/basic", item('galacticraftcore:oxygen_compressor'), [
   [metaitem('electric.pump.hv'), item('galacticraftcore:oxygen_concentrator'), metaitem('drum.stainless_steel')],
   [metaitem('pipeSmallFluidStainlessSteel'), metaitem('hull.ev'), metaitem('pipeSmallFluidStainlessSteel')],
   [metaitem('electric.pump.hv'), metaitem('plateDenseAluminium'), metaitem('compressor.hv')]])
 
 // Распределитель кислородного пузыря
-crafting.addShaped("gc/machine/oxygen_buble_distributor", item('galacticraftcore:distributor'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_buble_distributor", item('galacticraftcore:distributor'), [
   [metaitem('sensor.hv'), ore('circuitHv'), metaitem('sensor.hv')],
   [item('galacticraftcore:air_vent'), item('galacticraftcore:air_fan'), item('galacticraftcore:air_vent')],
   [metaitem('field.generator.ev'), item('galacticraftcore:oxygen_concentrator'), metaitem('field.generator.ev')]])
 
 // Кислородный герметик
-crafting.addShaped("gc/machine/oxygen_sealer", item('galacticraftcore:sealer'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_sealer", item('galacticraftcore:sealer'), [
   [metaitem('plateDenseAluminium'), ore('circuitHv'), metaitem('plateDenseAluminium')],
   [item('galacticraftcore:air_vent'), item('galacticraftcore:air_fan'), item('galacticraftcore:air_vent')],
   [metaitem('electric.pump.mv'), item('galacticraftcore:oxygen_concentrator'), metaitem('electric.pump.mv')]])
 
 // Кислородный детектор
-crafting.addShaped("gc/machine/oxygen_detector", item('galacticraftcore:oxygen_detector'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_detector", item('galacticraftcore:oxygen_detector'), [
   [metaitem('plateDenseAluminium'), metaitem('sensor.hv'), metaitem('plateDenseAluminium')],
   [item('galacticraftcore:air_vent'), ore('circuitMv'), item('galacticraftcore:air_vent')],
   [item('projectred-transmission:wire'), metaitem('plateDenseAluminium'), item('projectred-transmission:wire')]])
@@ -435,13 +435,13 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(1000).EUt(512).buildAndRegister()
 
 // Хроматический аппликатор
-crafting.addShaped("gc/machine/chromatic_applicator", item('galacticraftcore:machine3'), [
+mods.minecraft.crafting.addShaped("gc/machine/chromatic_applicator", item('galacticraftcore:machine3'), [
   [ore('dyeOrange'), ore('dyeRed'), ore('dyeMagenta')],
   [ore('dyeYellow'), metaitem('hull.ev'), ore('dyeBlue')],
   [ore('dyeLime'), ore('dyeGreen'), ore('dyeCyan')]])
 
 // Oxygen Collector
-crafting.addShaped("gc/machine/oxygen_collector", item('galacticraftcore:collector'), [
+mods.minecraft.crafting.addShaped("gc/machine/oxygen_collector", item('galacticraftcore:collector'), [
   [item('galacticraftcore:air_vent'), ore('circuitEv'), item('galacticraftcore:air_vent')],
   [item('galacticraftcore:air_fan'), metaitem('hull.ev'), item('galacticraftcore:air_fan')],
   [metaitem('drum.stainless_steel'), item('galacticraftcore:oxygen_concentrator'), metaitem('drum.stainless_steel')]])

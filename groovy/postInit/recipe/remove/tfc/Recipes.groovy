@@ -64,15 +64,7 @@ def removeRecipesByName = [
 
 
 for (item in removeRecipesByName) {
-  crafting.remove(item)
+  mods.minecraft.crafting.remove(item)
 }
 
 
-for (item in TerraFirmaCraft.tfcChests) {
-  crafting.removeByOutput(item)
-}
-
-
-for (item in TerraFirmaCraft.tfcBoats) {
-  crafting.removeByOutput(item)
-}

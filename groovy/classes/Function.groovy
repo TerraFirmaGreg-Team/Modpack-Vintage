@@ -9,6 +9,10 @@ class Function {
     return stack
   }
 
+  static type(String path, type) {
+    return path + "/" + type.name
+}
+
 
 // --- Атмосферы
 

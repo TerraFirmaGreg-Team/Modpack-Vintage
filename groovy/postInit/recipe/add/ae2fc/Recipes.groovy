@@ -119,7 +119,7 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(10).EUt(980).buildAndRegister()
 
 // Dual interface
-crafting.addShapeless('ae2fc/dual_interface', item('ae2fc:dual_interface'), [item('ae2fc:part_dual_interface')])
+mods.minecraft.crafting.addShapeless('ae2fc/dual_interface', item('ae2fc:dual_interface'), [item('ae2fc:part_dual_interface')])
 mods.gregtech.assembler.recipeBuilder()
   .circuitMeta(24)
   .inputs(
@@ -129,7 +129,7 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(10).EUt(480).buildAndRegister()
 
 // Очистка шаблона
-crafting.addShapeless('ae2fc/dense_encoded_pattern', item('appliedenergistics2:material:52'), [item('ae2fc:dense_encoded_pattern')])
+mods.minecraft.crafting.addShapeless('ae2fc/dense_encoded_pattern', item('appliedenergistics2:material:52'), [item('ae2fc:dense_encoded_pattern')])
 
 // Жидкостный сборщик
 mods.gregtech.assembler.recipeBuilder()

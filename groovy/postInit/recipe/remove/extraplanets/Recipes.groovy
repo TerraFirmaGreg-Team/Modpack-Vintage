@@ -150,7 +150,7 @@ def removeRecipesByName = [
 ]
 
 for (item in removeRecipe) {
-  crafting.removeByOutput(item)
+  mods.minecraft.crafting.removeByOutput(item)
 }
 
 for (item in removeRecipeFurnace) {
@@ -158,7 +158,7 @@ for (item in removeRecipeFurnace) {
 }
 
 for (item in removeRecipesByName) {
-  crafting.remove(item)
+  mods.minecraft.crafting.remove(item)
 }
 
 // Метан

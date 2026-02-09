@@ -40,7 +40,7 @@ def removeRecipeFurnace = [
 
 
 for (item in removeRecipe) {
-  crafting.removeByOutput(item)
+  mods.minecraft.crafting.removeByOutput(item)
 }
 
 for (item in removeRecipeFurnace) {

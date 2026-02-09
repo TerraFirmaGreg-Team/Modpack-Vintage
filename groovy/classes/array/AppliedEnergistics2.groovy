@@ -1,3 +1,5 @@
+// MODS_LOADED: appliedenergistics2
+
 class AppliedEnergistics2 {
 
   // Glass Cable

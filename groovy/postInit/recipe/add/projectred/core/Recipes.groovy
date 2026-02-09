@@ -30,7 +30,7 @@ mods.gregtech.circuit_assembler.recipeBuilder()
 
 
 // Multimeter
-crafting.addShaped("projectred/multimeter", item('projectred-core:multimeter'),
+mods.minecraft.crafting.addShaped("projectred/multimeter", item('projectred-core:multimeter'),
   [[metaitem('wireGtSingleGold'), null, metaitem('wireGtSingleRedAlloy')],
    [metaitem('wireGtSingleGold'), metaitem('cover.screen'), metaitem('wireGtSingleRedAlloy')],
    [ore('circuitLv'), metaitem('plateIron'), ore('circuitLv')]])
