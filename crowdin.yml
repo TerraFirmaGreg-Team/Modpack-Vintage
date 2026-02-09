@@ -1,3 +1,8 @@
 files:
   - source: /groovy/assets/*/lang/*.lang
     translation: /groovy/assets/%original_path%/%locale_with_underscore%.lang
+    type: properties
+    languages_mapping:
+      locale_with_underscore:
+        en-US: en_us
+        ru-RU: ru_ru
