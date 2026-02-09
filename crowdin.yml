@@ -1,0 +1,3 @@
+files:
+  - source: /groovy/assets/*/lang/*.lang
+    translation: /groovy/assets/%original_path%/%locale_with_underscore%.lang
