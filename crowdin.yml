@@ -26,3 +26,16 @@ files:
         en-CA: en_ca
         uk-UA: uk_ua
         en-US: en_us
+
+branches:
+  - translate/*
+
+sync_options:
+  one_time_import: true
+  always_import_new_translations: true
+  push_sources: false
+  allow_target_translation_to_match_source: true
+  approve_added_translations: true
+
+sync_schedule:
+  interval: 1h
