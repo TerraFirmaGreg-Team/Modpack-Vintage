@@ -1,3 +1,5 @@
+// MODS_LOADED: hgp
+
 class HGP {
   // Панели
   static final List horizontalGlassPanes = [

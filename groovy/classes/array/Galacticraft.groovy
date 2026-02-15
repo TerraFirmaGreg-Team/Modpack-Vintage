@@ -1,3 +1,5 @@
+// MODS_LOADED: galacticraftcore
+
 class Galacticraft {
 
   // - All GC Parachute Array

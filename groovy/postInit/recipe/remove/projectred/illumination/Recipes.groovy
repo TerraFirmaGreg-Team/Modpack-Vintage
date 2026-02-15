@@ -18,6 +18,6 @@ def removeRecipe = [
 
 
 for (item in removeRecipe) {
-  crafting.removeByOutput(item)
+  mods.minecraft.crafting.removeByOutput(item)
 }
 

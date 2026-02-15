@@ -1,3 +1,5 @@
+// MODS_LOADED: gregtech
+
 class GregTech {
   // - GT Dusts for Raw Stones Array
   static final List gtDustsForRawStones = [

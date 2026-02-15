@@ -13,5 +13,5 @@ def removeRecipesByName = [
 ]
 
 for (item in removeRecipesByName) {
-  crafting.remove(item)
+  mods.minecraft.crafting.remove(item)
 }

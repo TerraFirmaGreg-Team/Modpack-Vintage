@@ -45,12 +45,12 @@ def removeByOutputFurnace = [
 
 // Удаление рецептов
 for (item in removeRecipe) {
-  crafting.removeByOutput(item)
+  mods.minecraft.crafting.removeByOutput(item)
 }
 
 // Поименное удаление рецептов
 for (item in removeRecipesByName) {
-  crafting.remove(item)
+  mods.minecraft.crafting.remove(item)
 }
 
 // Удаление рецептов печи по входу

@@ -31,10 +31,6 @@ for (item in TerraFirmaCraft.tfcSeeds) {
   ore('allSeeds').add(item)
 }
 
-for (item in TerraFirmaCraft.tfcLooms) {
-  ore('loom').add(item)
-}
-
 // OreDicionary for all slab
 for (item in TerraFirmaCraft.tfcSlabsSmooth) {
   ore('slabStone').add(item)

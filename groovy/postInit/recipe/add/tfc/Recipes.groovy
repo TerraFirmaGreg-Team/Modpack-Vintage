@@ -151,7 +151,7 @@ mods.gregtech.electric_furnace.recipeBuilder()
 // Other
 
 // Alabaster Bricks
-crafting.addShapeless("tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile').transform(Function.setToolDamage)])
+mods.minecraft.crafting.addShapeless("tfc/alabaster_bricks", item('tfc:alabaster_brick') * 4, [metaitem('dustGypsum'), ore('toolFile').transform(Function.setToolDamage)])
 
 // Cladding
 mods.gregtech.alloy_smelter.recipeBuilder()
@@ -162,7 +162,7 @@ mods.gregtech.alloy_smelter.recipeBuilder()
   .duration(400).EUt(2).buildAndRegister()
 
 // Огнеупорная глина
-crafting.addShaped("tfc/fire_clay", item('tfc:ceramics/fire_clay'), [
+mods.minecraft.crafting.addShaped("tfc/fire_clay", item('tfc:ceramics/fire_clay'), [
   [item('tfc:powder/kaolinite'), item('tfc:powder/graphite'), item('tfc:powder/kaolinite')],
   [item('tfc:powder/graphite'), ore('clay'), item('tfc:powder/graphite')],
   [item('tfc:powder/kaolinite'), item('tfc:powder/graphite'), item('tfc:powder/kaolinite')]])
@@ -302,16 +302,6 @@ for (int i = 0; i < TerraFirmaCraft.tfcStoneButtons.size(); i++) {
     .duration(200).EUt(7).buildAndRegister()
 }
 
-for (int i = 0; i == 83 < TerraFirmaCraft.lumbers.size(); i++) {
-  // Бочки
-  // if (i != 83 .. 107) {
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(15)
-    .inputs(TerraFirmaCraft.lumbers[i] * 7)
-    .outputs(TerraFirmaCraft.tfcBarrels[i])
-    .duration(205).EUt(4).buildAndRegister()
-  // }
-}
 //
 for (int i = 0; i < GregTech.gtDustsForRawStones.size(); i++) {
   // Raw Block
@@ -358,219 +348,12 @@ for (int i = 0; i < GregTech.gtDustsForRawStones.size(); i++) {
     .duration(100).EUt(4).buildAndRegister()
 }
 
-// Дерево -> Пиломатериалы (Для эвкалипта)
-for (int i = 0; i < TerraFirmaCraft.tfcEucaliptusLogs.size(); i++) {
 
-  mods.gregtech.cutter.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcEucaliptusLogs[i])
-    .fluidInputs(fluid('lubricant') * 1)
-    .outputs(
-      item('tfc:wood/lumber/eucalyptus') * 16,
-      metaitem('dustWood') * 2)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // saw_mill.recipeBuilder()
-  // 	.circuitMeta(1)
-  // 	.inputs([TerraFirmaCraft.tfcEucaliptusLogs])
-  // 	.fluidInputs(fluid('lubricant') * 1000)
-  // 	.outputs(
-  // 		item('tfc:wood/lumber/eucalyptus') * 64,
-  // 		metaitem('dustWood') * 8)
-  // 	.duration(450)
-  // 	.EUt(32)
-  // 	.buildAndRegister()
-}
-
-// Доски -> Пиломатериалы
-for (int i = 0; i < TerraFirmaCraft.tfcPlanks.size(); i++) {
-  mods.gregtech.cutter.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcPlanks[i])
-    .fluidInputs(fluid('lubricant') * 1)
-    .outputs(TerraFirmaCraft.lumbers[i] * 4)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Пиломатериалы -> Доски
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(TerraFirmaCraft.lumbers[i] * 4)
-    .circuitMeta(3)
-    .outputs(TerraFirmaCraft.tfcPlanks[i])
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Доски -> Полу-блоки
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcPlanks[i])
-    .circuitMeta(6)
-    .outputs(TerraFirmaCraft.tfcSlabs[i] * 2)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Доски -> Ступеньки
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcPlanks[i] * 6)
-    .circuitMeta(7)
-    .outputs(TerraFirmaCraft.tfcStairs[i] * 16)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Доски -> Нажимные деревянные пластины
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.tfcPlanks[i] * 2,
-      metaitem('springIron'))
-    .circuitMeta(4)
-    .outputs(TerraFirmaCraft.tfcPressurePlates[i] * 2)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Доски -> Забор
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.tfcPlanks[i] * 2,
-      item('minecraft:stick') * 2)
-    .circuitMeta(1)
-    .outputs(TerraFirmaCraft.tfcFences[i] * 8)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Доски -> Калитка
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.tfcPlanks[i] * 2,
-      item('minecraft:stick') * 3)
-    .circuitMeta(2)
-    .outputs(TerraFirmaCraft.tfcFenceGates[i] * 2)
-    .duration(200).EUt(7).buildAndRegister()
-}
-
-// Нажимные деревянные пластины -> Кнопки
-for (int i = 0; i < TerraFirmaCraft.tfcPressurePlates.size(); i++) {
-  mods.gregtech.cutter.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcPressurePlates[i] * 6)
-    .fluidInputs(fluid('lubricant') * 1)
-    .outputs(TerraFirmaCraft.tfcButtons[i] * 12)
-    .duration(200).EUt(7).buildAndRegister()
-}
-
-// Бревна -> Забор из бревен
-for (int i = 0; i < TerraFirmaCraftF.fenceLog.size(); i++) {
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(1)
-    .inputs(
-      TerraFirmaCraft.logs[i + 83] * 2,
-      item('minecraft:stick') * 3)
-    .outputs(TerraFirmaCraftF.fenceLog[i])
-    .duration(200).EUt(7).buildAndRegister()
-}
-
-for (int i = 0; i < TerraFirmaCraft.logs.size(); i++) {
-
-  // Бревна -> Калитка из бревен
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.logs[i] * 2,
-      item('minecraft:stick') * 3)
-    .circuitMeta(2)
-    .outputs(TerraFirmaCraftF.fenceGatesLog[i] * 8)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // Бревна -> Опоры
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(7)
-    .inputs(TerraFirmaCraft.logs[i] * 2)
-    .outputs(TerraFirmaCraft.tfcSupports[i] * 16)
-    .duration(200).EUt(7).buildAndRegister()
-}
-
-for (int i = 0; i < TerraFirmaCraft.lumbers.size(); i++) {
-
-  // Двери
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(8)
-    .inputs(TerraFirmaCraft.lumbers[i] * 6)
-    .outputs(TerraFirmaCraft.tfcDoors[i] * 2)
-    .duration(350).EUt(4).buildAndRegister()
-
-  // Люки
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(9)
-    .inputs(TerraFirmaCraft.lumbers[i] * 6)
-    .outputs(TerraFirmaCraft.tfcTrapdoors[i] * 3)
-    .duration(320).EUt(4).buildAndRegister()
-
-  // Сундуки
-  crafting.addShaped("tfc/chest_" + i, TerraFirmaCraft.tfcChests[i], [
-    [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]],
-    [TerraFirmaCraft.lumbers[i], null, TerraFirmaCraft.lumbers[i]],
-    [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]]])
-
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(12)
-    .inputs(TerraFirmaCraft.lumbers[i] * 8)
-    .outputs(TerraFirmaCraft.tfcChests[i])
-    .duration(280).EUt(4).buildAndRegister()
-
-  // Прялки
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(13)
-    .inputs(
-      TerraFirmaCraft.lumbers[i] * 7,
-      item('minecraft:stick'))
-    .outputs(TerraFirmaCraft.tfcLooms[i])
-    .duration(210).EUt(4).buildAndRegister()
-
-
-  // Полка для инструментов
-  mods.gregtech.assembler.recipeBuilder()
-    .circuitMeta(14)
-    .inputs(TerraFirmaCraft.lumbers[i] * 6)
-    .outputs(TerraFirmaCraft.tfcToolRacks[i])
-    .duration(205).EUt(4).buildAndRegister()
-
-  // Лодки
-  crafting.addShaped("tfc/boat_" + i, TerraFirmaCraft.tfcBoats[i], [
-    [item('gregtech:meta_screw:*'), item('gregtech:meta_screw:*'), item('gregtech:meta_screw:*')],
-    [TerraFirmaCraft.lumbers[i], metaitem('rubber_drop'), TerraFirmaCraft.lumbers[i]],
-    [TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i], TerraFirmaCraft.lumbers[i]]])
-
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.lumbers[i] * 5,
-      metaitem('rubber_drop'),
-      item('gregtech:meta_screw:*') * 3)
-    .circuitMeta(16)
-    .outputs(TerraFirmaCraft.tfcBoats[i])
-    .duration(270).EUt(4).buildAndRegister()
-
-  // Lumber -> dustWood
-  mods.gregtech.macerator.recipeBuilder()
-    .inputs(TerraFirmaCraft.lumbers[i])
-    .outputs(
-      metaitem('dustWood') * 5,
-      metaitem('dustSmallWood') * 2)
-    .duration(400).EUt(12).buildAndRegister()
-
-  // Дерево -> Пиломатериалы
-  mods.gregtech.cutter.recipeBuilder()
-    .inputs(TerraFirmaCraft.logs[i])
-    .fluidInputs(fluid('lubricant') * 1)
-    .outputs(
-      TerraFirmaCraft.lumbers[i] * 16,
-      metaitem('dustWood') * 2)
-    .duration(200).EUt(7).buildAndRegister()
-
-  // saw_mill.recipeBuilder()
-  // 	.circuitMeta(1)
-  // 	.inputs([TerraFirmaCraft.logs[i]])
-  // 	.fluidInputs(fluid('lubricant') * 1000)
-  // 	.outputs(
-  // 		TerraFirmaCraft.lumbers * 64,
-  // 		metaitem('dustWood') * 8)
-  // 	.duration(450)
-  // 	.EUt(32)
-  // 	.buildAndRegister()
-}
-
-crafting.addShapeless("tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
-crafting.addShapeless("tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
-crafting.addShapeless("tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
-crafting.addShapeless("tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
+mods.minecraft.crafting.addShapeless("tfc/sticks_from_bundle", item('minecraft:stick') * 18, [item('tfc:stick_bundle'), ore('toolSaw').transform(Function.setToolDamage)])
+mods.minecraft.crafting.addShapeless("tfc/sticks_from_bunch", item('minecraft:stick') * 9, [item('tfc:stick_bunch')])
+mods.minecraft.crafting.addShapeless("tfc/sticks_from_twig", item('minecraft:stick') * 3, [item('tfcflorae:groundcover/twig')])
+mods.minecraft.crafting.addShapeless("tfc/sticks_from_lumber", item('minecraft:stick') * 6, [ore('lumber'), ore('toolSaw').transform(Function.setToolDamage)])
+mods.minecraft.crafting.addShapeless("tfc/sticks_from_driftwood", item('minecraft:stick') * 6, [item('tfcflorae:groundcover/driftwood')])
 
 mods.gregtech.cutter.recipeBuilder()
   .inputs(item('tfc:stick_bundle'))
@@ -592,24 +375,6 @@ for (int i = 0; i < GregTech.gtTFCPlates.size(); i++) {
     .inputs(GregTech.gtTFCPlates[i])
     .outputs(TerraFirmaCraft.tfcMetalTrapdoors[i])
     .duration(205).EUt(8).buildAndRegister()
-}
-
-// Книжные полки
-for (int i = 0; i < TerraFirmaCraft.tfcPlanks.size(); i++) {
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(
-      TerraFirmaCraft.tfcPlanks[i] * 6,
-      item('minecraft:book') * 3)
-    .circuitMeta(10)
-    .outputs(TerraFirmaCraft.tfcBookshelfs[i])
-    .duration(400).EUt(4).buildAndRegister()
-
-  // Верстаки
-  mods.gregtech.assembler.recipeBuilder()
-    .inputs(TerraFirmaCraft.tfcPlanks[i] * 4)
-    .circuitMeta(11)
-    .outputs(TerraFirmaCraft.tfcWorkbenchs[i])
-    .duration(250).EUt(4).buildAndRegister()
 }
 
 // --- Furnace recipes for TFC items

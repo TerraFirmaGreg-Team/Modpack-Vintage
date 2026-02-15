@@ -285,18 +285,18 @@ for (int i = 0; i < 4; i++) {
 }
 
 // Сетевой инструмент
-crafting.addShaped("ae2/network_tool", item('appliedenergistics2:network_tool'), [
+mods.minecraft.crafting.addShaped("ae2/network_tool", item('appliedenergistics2:network_tool'), [
         [ore('toolWrench').transform(Function.setToolDamage), ore('circuitLv')],
         [item('appliedenergistics2:material', 23), ore('itemIlluminatedPanel')]])
 
 // Wireless Access Point
-crafting.addShaped("ae2/wireless_access_point", item('appliedenergistics2:wireless_access_point'), [
+mods.minecraft.crafting.addShaped("ae2/wireless_access_point", item('appliedenergistics2:wireless_access_point'), [
         [null, item('appliedenergistics2:material', 41), null],
         [null, item('appliedenergistics2:material', 23), null],
         [null, ore('ae2.cable.glass'), null]])
 
 // Беспроводной раздатчик сигнала
-crafting.addShaped("ae2/wireless_part", item('appliedenergistics2:material', 41), [
+mods.minecraft.crafting.addShaped("ae2/wireless_part", item('appliedenergistics2:material', 41), [
         [ore('ae2.cable.glass'), item('appliedenergistics2:material', 9), ore('ae2.cable.glass')],
         [metaitem('sensor.ev'), metaitem('stickTitanium'), metaitem('sensor.ev')],
         [metaitem('plateCertusQuartz'), ore('circuitEv'), metaitem('plateCertusQuartz')]])
@@ -583,62 +583,62 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(480).buildAndRegister()
 
 // Illuminated Panel
-crafting.addShaped("ae2/illuminated_panel", item('appliedenergistics2:part:180'), [
+mods.minecraft.crafting.addShaped("ae2/illuminated_panel", item('appliedenergistics2:part:180'), [
         [null, metaitem('plateGlowstone'), null],
         [metaitem('plateAluminium'), metaitem('plateRedAlloy'), item('minecraft:redstone')],
         [null, metaitem('plateGlowstone'), null]])
 
 // Toggle Bus
-crafting.addShaped("ae2/toggle_bus", item('appliedenergistics2:part', 80), [
+mods.minecraft.crafting.addShaped("ae2/toggle_bus", item('appliedenergistics2:part', 80), [
         [null, metaitem('plateRedAlloy'), null],
         [ore('ae2.cable.glass'), item('minecraft:lever'), ore('ae2.cable.glass')],
         [null, metaitem('plateRedAlloy'), null]])
 
-crafting.addShapeless("ae2/toggle_bus_2", item('appliedenergistics2:part', 80), [item('appliedenergistics2:part', 100)])
-crafting.addShapeless("ae2/inverted_toggle_bus", item('appliedenergistics2:part', 100), [item('appliedenergistics2:part', 80)])
+mods.minecraft.crafting.addShapeless("ae2/toggle_bus_2", item('appliedenergistics2:part', 80), [item('appliedenergistics2:part', 100)])
+mods.minecraft.crafting.addShapeless("ae2/inverted_toggle_bus", item('appliedenergistics2:part', 100), [item('appliedenergistics2:part', 80)])
 
 // Capacity Card
-crafting.addShaped("ae2/capacity_card", item('appliedenergistics2:material', 27), [
+mods.minecraft.crafting.addShaped("ae2/capacity_card", item('appliedenergistics2:material', 27), [
         [item('appliedenergistics2:material', 25), item('appliedenergistics2:material', 35), null],
         [item('appliedenergistics2:material', 35), metaitem('gemCertusQuartz'), null],
         [null, null, null]])
 
 // Crafting Card
-crafting.addShaped("ae2/crafting_card", item('appliedenergistics2:material', 53), [
+mods.minecraft.crafting.addShaped("ae2/crafting_card", item('appliedenergistics2:material', 53), [
         [item('appliedenergistics2:material', 25), item('appliedenergistics2:material', 35), null],
         [item('appliedenergistics2:material', 35), ore('workbench'), null],
         [null, null, null]])
 
 // Redstone Card
-crafting.addShaped("ae2/redstone_card", item('appliedenergistics2:material', 26), [
+mods.minecraft.crafting.addShaped("ae2/redstone_card", item('appliedenergistics2:material', 26), [
         [item('appliedenergistics2:material', 25), item('minecraft:redstone_torch'), null],
         [item('minecraft:redstone_torch'), item('appliedenergistics2:material', 23), null],
         [null, null, null]])
 
 // Fuzzy Card
-crafting.addShaped("ae2/fuzzy_card", item('appliedenergistics2:material', 29), [
+mods.minecraft.crafting.addShaped("ae2/fuzzy_card", item('appliedenergistics2:material', 29), [
         [item('appliedenergistics2:material', 28), item('appliedenergistics2:material', 24), null],
         [item('appliedenergistics2:material', 22), item('appliedenergistics2:material', 23), null],
         [null, null, null]])
 
 // Inverter Card
-crafting.addShaped("ae2/inverter_card", item('appliedenergistics2:material', 31), [
+mods.minecraft.crafting.addShaped("ae2/inverter_card", item('appliedenergistics2:material', 31), [
         [item('appliedenergistics2:material', 28), item('appliedenergistics2:part', 100), null],
         [item('appliedenergistics2:part', 100), item('appliedenergistics2:material', 23), null],
         [null, null, null]])
 
 // Acceleration Card
-crafting.addShaped("ae2/acceleration_card", item('appliedenergistics2:material', 30), [
+mods.minecraft.crafting.addShaped("ae2/acceleration_card", item('appliedenergistics2:material', 30), [
         [item('appliedenergistics2:material', 28), item('appliedenergistics2:material', 24), null],
         [item('appliedenergistics2:material', 22), ore('crystalFluix'), null],
         [null, null, null]])
 
 // Quartz Fixture
-crafting.addShapeless("ae2/quartz_fixture", item('appliedenergistics2:quartz_fixture'),
+mods.minecraft.crafting.addShapeless("ae2/quartz_fixture", item('appliedenergistics2:quartz_fixture'),
         [item('appliedenergistics2:material', 1), metaitem('stickAluminium')])
 
 // Light Detecting Fixture
-crafting.addShapeless("ae2/light_detector", item('appliedenergistics2:light_detector'),
+mods.minecraft.crafting.addShapeless("ae2/light_detector", item('appliedenergistics2:light_detector'),
         [metaitem('gemCertusQuartz'), ore('stickIronAny')])
 
 // Cable Anchor
@@ -649,7 +649,7 @@ mods.gregtech.extruder.recipeBuilder()
         .duration(20).EUt(16).buildAndRegister()
 
 // Annihilation Core
-crafting.addShaped("ae2/annihilation_core_alt", item('appliedenergistics2:material', 44), [
+mods.minecraft.crafting.addShaped("ae2/annihilation_core_alt", item('appliedenergistics2:material', 44), [
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')],
         [item('appliedenergistics2:material', 24), ore('crystalPureCertusQuartz'), item('appliedenergistics2:material', 24)],
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')]])
@@ -666,7 +666,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // Formation Core
-crafting.addShaped("ae2/formation_core_alt", item('appliedenergistics2:material', 43), [
+mods.minecraft.crafting.addShaped("ae2/formation_core_alt", item('appliedenergistics2:material', 43), [
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')],
         [item('appliedenergistics2:material', 24), ore('crystalPureNetherQuartz'), item('appliedenergistics2:material', 24)],
         [metaitem('stickAluminium'), item('appliedenergistics2:material', 24), metaitem('stickAluminium')]])
@@ -683,7 +683,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // Wireless Terminal
-crafting.addShaped("ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal', 0), [
+mods.minecraft.crafting.addShaped("ae2/wireless_terminal", item('appliedenergistics2:wireless_terminal', 0), [
         [item('appliedenergistics2:material', 41), item('appliedenergistics2:part:380'), item('appliedenergistics2:material', 41)],
         [item('appliedenergistics2:material', 24), ore('circuitHv'), item('appliedenergistics2:material', 24)],
         [metaitem('plateNetherQuartz'), item('appliedenergistics2:dense_energy_cell'), metaitem('plateNetherQuartz')]])
@@ -759,24 +759,24 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(30).EUt(250).buildAndRegister()
 
 // Basic Card
-crafting.addShaped("ae2/basic_card", item('appliedenergistics2:material', 25) * 2, [
+mods.minecraft.crafting.addShaped("ae2/basic_card", item('appliedenergistics2:material', 25) * 2, [
         [metaitem('wireFineRedAlloy'), metaitem('plateAluminium'), null],
         [item('appliedenergistics2:material', 23), ore('circuitMv'), metaitem('plateAluminium')],
         [metaitem('wireFineGold'), metaitem('plateAluminium'), null]])
 
 // Advanced Card
-crafting.addShaped("ae2/advanced_card", item('appliedenergistics2:material', 28) * 2, [
+mods.minecraft.crafting.addShaped("ae2/advanced_card", item('appliedenergistics2:material', 28) * 2, [
         [metaitem('wireFineRedAlloy'), metaitem('plateStainlessSteel'), null],
         [item('appliedenergistics2:material', 23), ore('circuitHv'), metaitem('plateStainlessSteel')],
         [metaitem('wireFineSilver'), metaitem('plateStainlessSteel'), null]])
 
 // Pattern Expansion Card
-crafting.addShapeless("ae2/pattern_expansion_card", item('appliedenergistics2:material', 58), [
+mods.minecraft.crafting.addShapeless("ae2/pattern_expansion_card", item('appliedenergistics2:material', 58), [
         item('appliedenergistics2:material', 28), ore('ae2.interface.item'),
         ore('ae2.interface.fluid'), item('appliedenergistics2:material', 23)])
 
 // Wireless Booster
-crafting.addShaped("ae2/wireless_booster", item('appliedenergistics2:material', 42), [
+mods.minecraft.crafting.addShaped("ae2/wireless_booster", item('appliedenergistics2:material', 42), [
         [metaitem('dustFluix'), metaitem('gemCertusQuartz'), metaitem('plateEnderPearl')],
         [metaitem('plateTitanium'), metaitem('plateTitanium'), metaitem('plateTitanium')],
         [null, null, null]])
@@ -791,31 +791,31 @@ mods.gregtech.chemical_reactor.recipeBuilder()
         .duration(200).EUt(480).buildAndRegister()
 
 // Matter Cannon
-crafting.addShaped("ae2/matter_cannon", item('appliedenergistics2:matter_cannon'), [
+mods.minecraft.crafting.addShaped("ae2/matter_cannon", item('appliedenergistics2:matter_cannon'), [
         [metaitem('plateSteel'), metaitem('plateSteel'), item('appliedenergistics2:material', 43)],
         [item('appliedenergistics2:material', 36), item('appliedenergistics2:dense_energy_cell'), null],
         [metaitem('plateSteel'), null, null]])
 
 // Memory Card
-crafting.addShaped("ae2/network_memory_card", item('appliedenergistics2:memory_card'), [
+mods.minecraft.crafting.addShaped("ae2/network_memory_card", item('appliedenergistics2:memory_card'), [
         [item('appliedenergistics2:material', 23), metaitem('plateIron'), metaitem('plateIron')],
         [metaitem('plateGold'), metaitem('plateRedAlloy'), metaitem('plateGold')],
         [null, null, null]])
 
 // Entropy Manipulator
-crafting.addShaped("ae2/entropy_manipulator", item('appliedenergistics2:entropy_manipulator'), [
+mods.minecraft.crafting.addShaped("ae2/entropy_manipulator", item('appliedenergistics2:entropy_manipulator'), [
         [null, item('appliedenergistics2:material', 22), item('appliedenergistics2:material', 7)],
         [null, item('appliedenergistics2:energy_cell'), item('appliedenergistics2:material', 24)],
         [metaitem('stickSteel'), null, null]])
 
 // Color Applicator
-crafting.addShaped("ae2/color_applicator", item('appliedenergistics2:color_applicator'), [
+mods.minecraft.crafting.addShaped("ae2/color_applicator", item('appliedenergistics2:color_applicator'), [
         [metaitem('wireGtSingleAluminium'), item('appliedenergistics2:material', 43), metaitem('wireGtSingleAluminium')],
         [item('appliedenergistics2:material', 36), item('appliedenergistics2:energy_cell'), item('appliedenergistics2:material', 36)],
         [null, metaitem('stickSteel'), null]])
 
 // Biometric Card
-crafting.addShaped("ae2/biometric_card", item('appliedenergistics2:biometric_card'), [
+mods.minecraft.crafting.addShaped("ae2/biometric_card", item('appliedenergistics2:biometric_card'), [
         [item('appliedenergistics2:material', 24), metaitem('plateIron'), metaitem('plateIron')],
         [metaitem('plateGold'), metaitem('plateRedAlloy'), metaitem('plateGold')],
         [null, null, null]])
@@ -828,7 +828,7 @@ mods.gregtech.canner.recipeBuilder()
         .duration(100).EUt(4).buildAndRegister()
 
 // ME Storage Housing
-crafting.addShaped("ae2/me_storage_housing", item('appliedenergistics2:material', 39), [
+mods.minecraft.crafting.addShaped("ae2/me_storage_housing", item('appliedenergistics2:material', 39), [
         [item('appliedenergistics2:quartz_glass'), metaitem('plateSteel'), item('appliedenergistics2:quartz_glass')],
         [metaitem('wireFineRedAlloy'), ore('circuitLv'), metaitem('wireFineRedAlloy')],
         [metaitem('plateSteel'), metaitem('plateSteel'), metaitem('plateSteel')]])
@@ -849,7 +849,7 @@ mods.gregtech.arc_furnace.recipeBuilder()
         .duration(56).EUt(30).buildAndRegister()
 
 // ME Fluid Storage Housing
-crafting.addShaped("ae2/me_fluid_storage_housing", item('tfg:meta_item', 50), [
+mods.minecraft.crafting.addShaped("ae2/me_fluid_storage_housing", item('tfg:meta_item', 50), [
         [item('appliedenergistics2:quartz_glass'), metaitem('plateStainlessSteel'), item('appliedenergistics2:quartz_glass')],
         [metaitem('wireFineRedAlloy'), ore('circuitLv'), metaitem('wireFineRedAlloy')],
         [metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel'), metaitem('plateStainlessSteel')]])
@@ -1144,7 +1144,7 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(480).buildAndRegister()
 
 // Излучатель уровня
-crafting.addShaped("ae2/level_emitter", item('appliedenergistics2:part', 280), [
+mods.minecraft.crafting.addShaped("ae2/level_emitter", item('appliedenergistics2:part', 280), [
         [null, metaitem('plateSteel'), null],
         [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
         [null, metaitem('plateSteel'), null]])
@@ -1311,13 +1311,13 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(7480).buildAndRegister()
 
 // Charged Stuff
-crafting.addShaped("ae2/charged_staff", item('appliedenergistics2:charged_staff'), [
+mods.minecraft.crafting.addShaped("ae2/charged_staff", item('appliedenergistics2:charged_staff'), [
         [null, ore('toolHammer').transform(Function.setToolDamage), item('appliedenergistics2:material', 1)],
         [null, ore('stickIronAny'), ore('toolFile').transform(Function.setToolDamage)],
         [ore('stickIronAny'), null, null]])
 
 // Датчик жидкостного уровня
-crafting.addShaped("ae2/fluid_level_emitter", item('appliedenergistics2:part:281'), [
+mods.minecraft.crafting.addShaped("ae2/fluid_level_emitter", item('appliedenergistics2:part:281'), [
         [null, metaitem('plateStainlessSteel'), null],
         [ore('ae2.cable.glass'), item('minecraft:redstone_torch'), ore('ae2.cable.glass')],
         [null, metaitem('plateStainlessSteel'), null]])
@@ -1333,31 +1333,31 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // Очистка шаблона
-crafting.addShapeless("ae2/encoded_pattern", item('appliedenergistics2:material', 52), [item('appliedenergistics2:encoded_pattern')])
+mods.minecraft.crafting.addShapeless("ae2/encoded_pattern", item('appliedenergistics2:material', 52), [item('appliedenergistics2:encoded_pattern')])
 
 // P2P Tunnel
-crafting.addShaped("ae2/tunnels_p2p", item('appliedenergistics2:part:460') * 2, [
+mods.minecraft.crafting.addShaped("ae2/tunnels_p2p", item('appliedenergistics2:part:460') * 2, [
         [item('appliedenergistics2:material', 24), metaitem('plateAluminium'), item('appliedenergistics2:material', 24)],
         [metaitem('plateAluminium'), item('appliedenergistics2:part:180'), metaitem('plateAluminium')],
         [item('appliedenergistics2:material', 12), item('appliedenergistics2:material', 12), item('appliedenergistics2:material', 12)]])
 
 // P2P Tunnel Fluid
-crafting.addShapeless("ae2/tunnels_p2p_fluid", item('appliedenergistics2:part:463'), [item('appliedenergistics2:part:460'), item('minecraft:water_bucket')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_fluid", item('appliedenergistics2:part:463'), [item('appliedenergistics2:part:460'), item('minecraft:water_bucket')])
 
 // P2P Tunnel Redstone
-crafting.addShapeless("ae2/tunnels_p2p_redstone", item('appliedenergistics2:part:461'), [item('appliedenergistics2:part:460'), item('minecraft:redstone_torch')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_redstone", item('appliedenergistics2:part:461'), [item('appliedenergistics2:part:460'), item('minecraft:redstone_torch')])
 
 // P2P Tunnel Light
-crafting.addShapeless("ae2/tunnels_p2p_light", item('appliedenergistics2:part:467'), [item('appliedenergistics2:part:460'), ore('glowstone')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_light", item('appliedenergistics2:part:467'), [item('appliedenergistics2:part:460'), ore('glowstone')])
 
 // P2P Tunnel Item
-crafting.addShapeless("ae2/tunnels_p2p_item", item('appliedenergistics2:part:462'), [item('appliedenergistics2:part:460'), metaitem('pipeLargeItemCobalt')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_item", item('appliedenergistics2:part:462'), [item('appliedenergistics2:part:460'), metaitem('pipeLargeItemCobalt')])
 
 // P2P Tunnel FE
-crafting.addShapeless("ae2/tunnels_p2p_fe", item('appliedenergistics2:part:469'), [item('appliedenergistics2:part:460'), metaitem('cableGtQuadrupleCobalt')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_fe", item('appliedenergistics2:part:469'), [item('appliedenergistics2:part:460'), metaitem('cableGtQuadrupleCobalt')])
 
 // P2P Tunnel EU
-crafting.addShapeless("ae2/tunnels_p2p_eu", item('appliedenergistics2:part:470'), [item('appliedenergistics2:part:460'), metaitem('cableGtDoubleCobalt')])
+mods.minecraft.crafting.addShapeless("ae2/tunnels_p2p_eu", item('appliedenergistics2:part:470'), [item('appliedenergistics2:part:460'), metaitem('cableGtDoubleCobalt')])
 
 // ME Контроллер
 mods.gregtech.assembler.recipeBuilder()
@@ -1398,19 +1398,19 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(20).EUt(7680).buildAndRegister()
 
 // ME Chest
-crafting.addShaped("ae2/storage_chest", item('appliedenergistics2:chest'), [
+mods.minecraft.crafting.addShaped("ae2/storage_chest", item('appliedenergistics2:chest'), [
         [metaitem('plateStainlessSteel'), ore('circuitMv'), metaitem('plateStainlessSteel')],
         [ore('ae2.cable.glass'), metaitem('crate.aluminium'), ore('ae2.cable.glass')],
         [metaitem('plateStainlessSteel'), ore('circuitMv'), metaitem('plateStainlessSteel')]])
 
 // ME Drive
-crafting.addShaped("ae2/storage_drive", item('appliedenergistics2:drive'), [
+mods.minecraft.crafting.addShaped("ae2/storage_drive", item('appliedenergistics2:drive'), [
         [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')],
         [ore('ae2.cable.glass'), ore('circuitLv'), ore('ae2.cable.glass')],
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // Cutting knife
-crafting.addShaped("ae2/cutting_knife", item('appliedenergistics2:certus_quartz_cutting_knife'), [
+mods.minecraft.crafting.addShaped("ae2/cutting_knife", item('appliedenergistics2:certus_quartz_cutting_knife'), [
         [null, null, metaitem('stickTreatedWood')],
         [item('minecraft:iron_ingot'), metaitem('stickTreatedWood'), null],
         [metaitem('gemCertusQuartz'), metaitem('gemCertusQuartz'), null]])
@@ -1442,26 +1442,26 @@ mods.gregtech.assembly_line.recipeBuilder()
         .duration(700).EUt(8300).buildAndRegister()
 
 // Spatial Pylon
-crafting.addShaped("ae2/spatial_pylon", item('appliedenergistics2:spatial_pylon'), [
+mods.minecraft.crafting.addShaped("ae2/spatial_pylon", item('appliedenergistics2:spatial_pylon'), [
         [metaitem('plateGlass'), ore('ae2.cable.glass'), metaitem('plateGlass')],
         [metaitem('dustFluix'), item('appliedenergistics2:material', 7), metaitem('dustFluix')],
         [metaitem('plateGlass'), ore('ae2.cable.glass'), metaitem('plateGlass')]])
 
 // IO Port
-crafting.addShaped("ae2/io_port", item('appliedenergistics2:io_port'), [
+mods.minecraft.crafting.addShaped("ae2/io_port", item('appliedenergistics2:io_port'), [
         [metaitem('plateGlass'), metaitem('plateGlass'), metaitem('plateGlass')],
         [item('appliedenergistics2:drive'), ore('ae2.cable.glass'), item('appliedenergistics2:drive')],
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // Spatial IO Port
-crafting.addShaped("ae2/spatial_io_port", item('appliedenergistics2:spatial_io_port'), [
+mods.minecraft.crafting.addShaped("ae2/spatial_io_port", item('appliedenergistics2:spatial_io_port'), [
         [metaitem('plateGlass'), metaitem('plateGlass'), metaitem('plateGlass')],
         [ore('ae2.cable.glass'), item('appliedenergistics2:io_port'), ore('ae2.cable.glass')],
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // Интерфейс
-crafting.addShapeless("ae2/interface", item('appliedenergistics2:interface'), [item('appliedenergistics2:part:440')])
-crafting.addShapeless("ae2/interface_2", item('appliedenergistics2:part:440'), [item('appliedenergistics2:interface')])
+mods.minecraft.crafting.addShapeless("ae2/interface", item('appliedenergistics2:interface'), [item('appliedenergistics2:part:440')])
+mods.minecraft.crafting.addShapeless("ae2/interface_2", item('appliedenergistics2:part:440'), [item('appliedenergistics2:interface')])
 // MV
 mods.gregtech.assembler.recipeBuilder()
         .inputs(
@@ -1510,8 +1510,8 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(7480).buildAndRegister()
 
 // Жидкостный интерфейс
-crafting.addShapeless("ae2/fluid_interface",item('appliedenergistics2:fluid_interface'), [item('appliedenergistics2:part:441')])
-crafting.addShapeless("ae2/fluid_interface_2",item('appliedenergistics2:part:441'), [item('appliedenergistics2:fluid_interface')])
+mods.minecraft.crafting.addShapeless("ae2/fluid_interface",item('appliedenergistics2:fluid_interface'), [item('appliedenergistics2:part:441')])
+mods.minecraft.crafting.addShapeless("ae2/fluid_interface_2",item('appliedenergistics2:part:441'), [item('appliedenergistics2:fluid_interface')])
 // MV
 mods.gregtech.assembler.recipeBuilder()
         .inputs(
@@ -1560,97 +1560,97 @@ mods.gregtech.assembler.recipeBuilder()
         .duration(200).EUt(7480).buildAndRegister()
 
 // Cell Workbench
-crafting.addShaped("ae2/cell_workbench", item('appliedenergistics2:cell_workbench'), [
+mods.minecraft.crafting.addShaped("ae2/cell_workbench", item('appliedenergistics2:cell_workbench'), [
         [metaitem('item_filter'), metaitem('cover.screen'), metaitem('fluid_filter')],
         [metaitem('plateAluminium'), item('appliedenergistics2:material', 23), metaitem('plateAluminium')],
         [metaitem('plateAluminium'), metaitem('plateAluminium'), metaitem('plateAluminium')]])
 
 // Matter Condenser
-crafting.addShaped("ae2/matter_condenser", item('appliedenergistics2:condenser'), [
+mods.minecraft.crafting.addShaped("ae2/matter_condenser", item('appliedenergistics2:condenser'), [
         [metaitem('plateStainlessSteel'), metaitem('electric.piston.hv'), metaitem('plateStainlessSteel')],
         [metaitem('electric.piston.hv'), ore('circuitHv'), metaitem('electric.piston.hv')],
         [metaitem('plateStainlessSteel'), metaitem('electric.piston.hv'), metaitem('plateStainlessSteel')]])
 
 // Energy Acceptor
-crafting.addShaped("ae2/energy_acceptor", item('appliedenergistics2:energy_acceptor'), [
+mods.minecraft.crafting.addShaped("ae2/energy_acceptor", item('appliedenergistics2:energy_acceptor'), [
         [metaitem('plateSteel'), metaitem('plateStainlessSteel'), metaitem('plateSteel')],
         [metaitem('plateStainlessSteel'), metaitem('voltage_coil.lv'), metaitem('plateStainlessSteel')],
         [metaitem('plateSteel'), metaitem('plateStainlessSteel'), metaitem('plateSteel')]])
 
 // Security Terminal
-crafting.addShaped("ae2/security_station", item('appliedenergistics2:security_station'), [
+mods.minecraft.crafting.addShaped("ae2/security_station", item('appliedenergistics2:security_station'), [
         [metaitem('plateSteel'), item('appliedenergistics2:chest'), metaitem('plateSteel')],
         [ore('ae2.cable.glass'), item('appliedenergistics2:material:37'), ore('ae2.cable.glass')],
         [metaitem('plateSteel'), item('appliedenergistics2:material', 22), metaitem('plateSteel')]])
 
 // ME Fluid Formation Plane
-crafting.addShaped("ae2/planes_formation_fluid", item('appliedenergistics2:part:321'), [
+mods.minecraft.crafting.addShaped("ae2/planes_formation_fluid", item('appliedenergistics2:part:321'), [
         [metaitem('dustFluix'), metaitem('dustFluix'), metaitem('dustFluix')],
         [item('minecraft:dye:4'), item('minecraft:dye:4'), item('minecraft:dye:4')],
         [metaitem('plateAluminium'), item('appliedenergistics2:material', 43), metaitem('plateAluminium')]])
 
 // ME Fluid Annihilation Plane
-crafting.addShaped("ae2/planes_annihilation_fluid", item('appliedenergistics2:part:302'), [
+mods.minecraft.crafting.addShaped("ae2/planes_annihilation_fluid", item('appliedenergistics2:part:302'), [
         [metaitem('dustFluix'), metaitem('dustFluix'), metaitem('dustFluix')],
         [item('minecraft:dye:4'), item('minecraft:dye:4'), item('minecraft:dye:4')],
         [metaitem('plateAluminium'), item('appliedenergistics2:material', 44), metaitem('plateAluminium')]])
 
 // ME Annihilation Plane
-crafting.addShaped("ae2/planes_annihilation", item('appliedenergistics2:part:300'), [
+mods.minecraft.crafting.addShaped("ae2/planes_annihilation", item('appliedenergistics2:part:300'), [
         [metaitem('dustFluix'), metaitem('dustFluix'), metaitem('dustFluix')],
         [metaitem('plateAluminium'), item('appliedenergistics2:material', 44), metaitem('plateAluminium')],
         [null, null, null]])
 
 // ME Formation Plane
-crafting.addShaped("ae2/planes_formation", item('appliedenergistics2:part:320'), [
+mods.minecraft.crafting.addShaped("ae2/planes_formation", item('appliedenergistics2:part:320'), [
         [metaitem('dustFluix'), metaitem('dustFluix'), metaitem('dustFluix')],
         [metaitem('plateAluminium'), item('appliedenergistics2:material', 43), metaitem('plateAluminium')],
         [null, null, null]])
 
 // ME Terminal
-crafting.addShaped("ae2/terminals", item('appliedenergistics2:part:380'), [
+mods.minecraft.crafting.addShaped("ae2/terminals", item('appliedenergistics2:part:380'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), ore('itemIlluminatedPanel'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('stickSteel'), ore('circuitHv'), metaitem('stickSteel')],
         [metaitem('plateSteel'), metaitem('screwSteel'), metaitem('plateSteel')]])
 
 // ME Fluid Terminal
-crafting.addShaped("ae2/terminals_fluid", item('appliedenergistics2:part:520'), [
+mods.minecraft.crafting.addShaped("ae2/terminals_fluid", item('appliedenergistics2:part:520'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), ore('itemIlluminatedPanel'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('stickStainlessSteel'), ore('circuitHv'), metaitem('stickStainlessSteel')],
         [metaitem('plateStainlessSteel'), metaitem('screwStainlessSteel'), metaitem('plateStainlessSteel')]])
 
 // ME Crafting Terminal
-crafting.addShaped("ae2/terminals_crafting", item('appliedenergistics2:part', 360), [
+mods.minecraft.crafting.addShaped("ae2/terminals_crafting", item('appliedenergistics2:part', 360), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('screwSteel'), ore('workbench'), metaitem('screwSteel')],
         [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Interface Terminal
-crafting.addShaped("ae2/terminals_interface", item('appliedenergistics2:part:480'), [
+mods.minecraft.crafting.addShaped("ae2/terminals_interface", item('appliedenergistics2:part:480'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('screwSteel'), ore('ae2.interface.item'), metaitem('screwSteel')],
         [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Pattern Terminal
-crafting.addShaped("ae2/terminals_pattern", item('appliedenergistics2:part', 340), [
+mods.minecraft.crafting.addShaped("ae2/terminals_pattern", item('appliedenergistics2:part', 340), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:380'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('screwSteel'), item('appliedenergistics2:material', 52), metaitem('screwSteel')],
         [metaitem('plateSteel'), item('appliedenergistics2:material', 24), metaitem('plateSteel')]])
 
 // ME Extanded Pattern Terminal
-crafting.addShaped("ae2/terminals_extended_pattern", item('appliedenergistics2:part:341'), [
+mods.minecraft.crafting.addShaped("ae2/terminals_extended_pattern", item('appliedenergistics2:part:341'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part', 340), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 52), metaitem('plateTitanium')],
         [metaitem('plateTitanium'), item('appliedenergistics2:material', 24), metaitem('plateTitanium')]])
 
 // МЭ Терминал жидкостной конфигурации интерфейсов
-crafting.addShaped("ae2/terminals_conf_interface_fluid", item('appliedenergistics2:part:522'), [
+mods.minecraft.crafting.addShaped("ae2/terminals_conf_interface_fluid", item('appliedenergistics2:part:522'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:480'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('stickTitanium'), item('appliedenergistics2:part:520'), metaitem('stickTitanium')],
         [metaitem('plateTitanium'), metaitem('screwTitanium'), metaitem('plateTitanium')]])
 
 // МЭ Терминал конфигурации интерфейсов
-crafting.addShaped("ae2/terminals_conf_interface", item('appliedenergistics2:part:521'), [
+mods.minecraft.crafting.addShaped("ae2/terminals_conf_interface", item('appliedenergistics2:part:521'), [
         [ore('toolScrewdriver').transform(Function.setToolDamage), item('appliedenergistics2:part:480'), ore('toolMallet').transform(Function.setToolDamage)],
         [metaitem('stickTitanium'), item('appliedenergistics2:part:380'), metaitem('stickTitanium')],
         [metaitem('plateTitanium'), metaitem('screwTitanium'), metaitem('plateTitanium')]])

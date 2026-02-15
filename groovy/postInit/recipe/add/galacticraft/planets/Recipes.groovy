@@ -19,20 +19,20 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Сумка для инвентаря слизи
-crafting.addShaped("gc/slimeling_inventory_bag", item('galacticraftplanets:item_basic_mars', 4), [
+mods.minecraft.crafting.addShaped("gc/slimeling_inventory_bag", item('galacticraftplanets:item_basic_mars', 4), [
   [ore('leather'), metaitem('plateDiamond'), ore('leather')],
   [ore('leather'), ore('slimeball'), ore('leather')],
   [null, metaitem('crate.aluminium'), null]])
 
 
 // Лучевое ядро
-crafting.addShaped("gc/solar_core", item('galacticraftplanets:item_basic_asteroids', 8), [
+mods.minecraft.crafting.addShaped("gc/solar_core", item('galacticraftplanets:item_basic_asteroids', 8), [
   [metaitem('foilRedAlloy'), metaitem('platePlatinum'), metaitem('foilRedAlloy')],
   [metaitem('platePlatinum'), item('galacticraftplanets:basic_item_venus', 2), metaitem('platePlatinum')],
   [metaitem('foilRedAlloy'), metaitem('platePlatinum'), metaitem('foilRedAlloy')]])
 
 // Привод ориона
-crafting.addShaped("gc/orion_drive", item('galacticraftplanets:orion_drive'), [
+mods.minecraft.crafting.addShaped("gc/orion_drive", item('galacticraftplanets:orion_drive'), [
   [metaitem('plateDenseTitanium'), item('galacticraftplanets:item_basic_asteroids', 8), metaitem('plateDenseTitanium')],
   [ore('circuitLuv'), item('opencomputers:storage', 4), ore('circuitLuv')],
   [metaitem('plateDenseSteel'), item('galacticraftplanets:item_basic_asteroids', 8), metaitem('plateDenseSteel')]])
@@ -69,63 +69,63 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(100).EUt(1480).buildAndRegister()
 
 // Контроллер щита
-crafting.addShaped("gc/shield_controller", item('galacticraftplanets:basic_item_venus'), [
+mods.minecraft.crafting.addShaped("gc/shield_controller", item('galacticraftplanets:basic_item_venus'), [
   [ore('paneGlassBlack'), metaitem('stickNeodymiumMagnetic'), ore('paneGlassBlack')],
   [metaitem('wireGtSingleMercuryBariumCalciumCuprate'), metaitem('field.generator.luv'), metaitem('wireGtSingleMercuryBariumCalciumCuprate')],
   [ore('paneGlassBlack'), metaitem('stickNeodymiumMagnetic'), ore('paneGlassBlack')]])
 
 
 // Радио-изотопное ядро
-crafting.addShaped("gc/radioisotopic_core", item('galacticraftplanets:basic_item_venus', 2), [
+mods.minecraft.crafting.addShaped("gc/radioisotopic_core", item('galacticraftplanets:basic_item_venus', 2), [
   [metaitem('dustGraphite'), metaitem('neutron_reflector'), metaitem('dustGraphite')],
   [metaitem('stickUranium235'), metaitem('neutron_reflector'), metaitem('stickUranium235')],
   [metaitem('dustGraphite'), metaitem('neutron_reflector'), metaitem('dustGraphite')]])
 
 // Атомная батарейка
-crafting.addShaped("gc/atom_battery", item('galacticraftplanets:atomic_battery'), [
+mods.minecraft.crafting.addShaped("gc/atom_battery", item('galacticraftplanets:atomic_battery'), [
   [null, metaitem('plateInvar'), null],
   [null, item('galacticraftplanets:basic_item_venus', 2), null],
   [null, metaitem('large_fluid_cell.tungstensteel'), null]])
 
 // Пешеходная дорожка
-crafting.addShaped("gc/walkway", item('galacticraftplanets:walkway'), [
+mods.minecraft.crafting.addShaped("gc/walkway", item('galacticraftplanets:walkway'), [
   [null, null, null],
   [metaitem('plateDenseTitanium'), metaitem('plateDenseTitanium'), metaitem('plateDenseTitanium')],
   [metaitem('stickTitanium'), metaitem('plateDenseTitanium'), metaitem('stickTitanium')]])
 
 // Пеш. дор с проводом
-crafting.addShaped("gc/walkway/cable", item('galacticraftplanets:walkway', 1), [
+mods.minecraft.crafting.addShaped("gc/walkway/cable", item('galacticraftplanets:walkway', 1), [
   [item('galacticraftplanets:walkway'), metaitem('cableGtDoubleAluminium'), null],
   [metaitem('cableGtDoubleAluminium'), null, null],
   [null, null, null]])
 
 // Пеш. дор с жид. трубой
-crafting.addShaped("gc/walkway/fluid_pipe", item('galacticraftplanets:walkway', 2), [
+mods.minecraft.crafting.addShaped("gc/walkway/fluid_pipe", item('galacticraftplanets:walkway', 2), [
   [item('galacticraftplanets:walkway'), metaitem('pipeTinyFluidStainlessSteel'), null],
   [metaitem('pipeTinyFluidStainlessSteel'), null, null],
   [null, null, null]])
 
 // Маяк дефлектор
-crafting.addShaped("gc/beam_reflector", item('galacticraftplanets:beam_reflector'), [
+mods.minecraft.crafting.addShaped("gc/beam_reflector", item('galacticraftplanets:beam_reflector'), [
   [null, item('galacticraftplanets:item_basic_asteroids', 8), null],
   [ore('circuitMv'), metaitem('plateDenseTitanium'), item('minecraft:lever')],
   [metaitem('plateDenseTitanium'), metaitem('plateDenseTitanium'), metaitem('plateDenseTitanium')]])
 
 // Маяк ресивер
-crafting.addShaped("gc/beam_reciever", item('galacticraftplanets:beam_receiver'), [
+mods.minecraft.crafting.addShaped("gc/beam_reciever", item('galacticraftplanets:beam_receiver'), [
   [metaitem('plateBeryllium'), metaitem('plateDenseDesh'), metaitem('plateBeryllium')],
   [metaitem('plateDenseDesh'), item('galacticraftplanets:item_basic_asteroids', 8), metaitem('plateDenseDesh')],
   [metaitem('plateBeryllium'), ore('circuitIv'), metaitem('plateBeryllium')]])
 
 // Площадка телепортации
-crafting.addShaped("gc/telepad_short", item('galacticraftplanets:telepad_short'), [
+mods.minecraft.crafting.addShaped("gc/telepad_short", item('galacticraftplanets:telepad_short'), [
   [metaitem('plateDoubleTrinaquadalloy'), ore('circuitIv'), metaitem('plateDoubleTrinaquadalloy')],
   [metaitem('magic_energy_absorber'), item('galacticraftplanets:item_basic_asteroids', 8), metaitem('magic_energy_absorber')],
   [metaitem('plateDoubleTrinaquadalloy'), metaitem('plateDoubleTrinaquadalloy'), metaitem('plateDoubleTrinaquadalloy')]])
 
 
 // Крюк
-crafting.addShaped("gc/grapple", item('galacticraftplanets:grapple'), [
+mods.minecraft.crafting.addShaped("gc/grapple", item('galacticraftplanets:grapple'), [
   [null, null, ore('string')],
   [ore('stickIronAny'), ore('string'), null],
   [ore('gearIronAny'), ore('stickIronAny'), null]])
@@ -158,7 +158,7 @@ mods.gregtech.assembler.recipeBuilder()
   .duration(100).EUt(480).buildAndRegister()
 
 // Геотермальный генератор
-crafting.addShaped("gc/machine/geothermal_generator", item('galacticraftplanets:geothermal_generator'), [
+mods.minecraft.crafting.addShaped("gc/machine/geothermal_generator", item('galacticraftplanets:geothermal_generator'), [
   [metaitem('plateDenseBronze'), item('galacticraftplanets:atmospheric_valve'), metaitem('plateDenseBronze')],
   [metaitem('cableGtQuadrupleAluminium'), metaitem('combustion_generator.hv'), metaitem('cableGtQuadrupleAluminium')],
   [metaitem('plateDenseBronze'), metaitem('plateDenseLead'), metaitem('plateDenseBronze')]])
@@ -238,7 +238,7 @@ mods.gregtech.implosion_compressor.recipeBuilder()
   .duration(20).EUt(380).buildAndRegister()
 
 // Палка Дэш
-crafting.addShaped("gc/desh_stick", item('galacticraftplanets:item_basic_mars:1'), [
+mods.minecraft.crafting.addShaped("gc/desh_stick", item('galacticraftplanets:item_basic_mars:1'), [
   [ore('toolFile').transform(Function.setToolDamage), null, null],
   [null, item('galacticraftplanets:item_basic_mars:2'), null],
   [null, null, null]])

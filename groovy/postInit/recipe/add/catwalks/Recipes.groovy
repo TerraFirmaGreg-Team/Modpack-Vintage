@@ -5,14 +5,14 @@ import classes.Function
 
 
 // Blowtorch
-crafting.addShaped("catwalks/blowtorch", item('catwalks:blowtorch'), [
+mods.minecraft.crafting.addShaped("catwalks/blowtorch", item('catwalks:blowtorch'), [
   [null, metaitem('screwSteel'), item('minecraft:flint_and_steel')],
   [ore('toolScrewdriver').transform(Function.setToolDamage), metaitem('stickLongSteel'), metaitem('screwSteel')],
   [metaitem('stickLongSteel'), ore('toolWrench').transform(Function.setToolDamage).transform(Function.setToolDamage), null]])
 
 // Раскрафты по НБТ
-crafting.addShapeless("catwalks/catwalk/treated_wood", item('catwalks:catwalk').withNbt([material: "treated_wood"]), [item('catwalks:catwalk').withNbt([material: "custom_0"])])
-crafting.addShapeless("catwalks/catwalk/custom_0", item('catwalks:catwalk').withNbt([material: "custom_0"]), [item('catwalks:catwalk').withNbt([material: "treated_wood"])])
+mods.minecraft.crafting.addShapeless("catwalks/catwalk/treated_wood", item('catwalks:catwalk').withNbt([material: "treated_wood"]), [item('catwalks:catwalk').withNbt([material: "custom_0"])])
+mods.minecraft.crafting.addShapeless("catwalks/catwalk/custom_0", item('catwalks:catwalk').withNbt([material: "custom_0"]), [item('catwalks:catwalk').withNbt([material: "treated_wood"])])
 
 // Classic Catwalk * 4
 mods.gregtech.assembler.recipeBuilder()

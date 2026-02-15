@@ -1,3 +1,5 @@
+// MODS_LOADED: nae2
+
 class NAE2 {
 
   // - All ME Storage component

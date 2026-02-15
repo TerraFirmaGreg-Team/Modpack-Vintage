@@ -22,160 +22,160 @@ mods.gregtech.extractor.recipeBuilder()
   .duration(63).EUt(30).buildAndRegister()
 
 // Люк коксовой печи
-crafting.addShapeless("gregtech/coke_oven_hatch", metaitem('coke_oven_hatch'), [
+mods.minecraft.crafting.addShapeless("gregtech/coke_oven_hatch", metaitem('coke_oven_hatch'), [
   item('gregtech:metal_casing:8'), ore('barrel')])
 
 // Бронзовый паровой молот
-crafting.addShaped("gregtech/bronze_forge_hammer", metaitem('steam_hammer_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/bronze_forge_hammer", metaitem('steam_hammer_bronze'), [
   [metaitem('pipeSmallFluidBronze'), ore('craftingPiston'), metaitem('pipeSmallFluidBronze')],
   [metaitem('pipeSmallFluidBronze'), item('gregtech:steam_casing'), metaitem('pipeSmallFluidBronze')],
   [metaitem('pipeSmallFluidBronze'), item('tfc:metal/anvil/wrought_iron'), metaitem('pipeSmallFluidBronze')]])
 
 // Стальной паровой молот
-crafting.addShaped("gregtech/steam_forge_hammer", metaitem('steam_hammer_steel'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_forge_hammer", metaitem('steam_hammer_steel'), [
   [metaitem('pipeSmallFluidSteel'), ore('craftingPiston'), metaitem('pipeSmallFluidSteel')],
   [metaitem('pipeSmallFluidSteel'), item('gregtech:steam_casing:2'), metaitem('pipeSmallFluidSteel')],
   [metaitem('pipeSmallFluidSteel'), item('tfc:metal/anvil/steel'), metaitem('pipeSmallFluidSteel')]])
 
 // Скомпрессированная глина
-crafting.addShaped("gregtech/compressed_coke_clay", metaitem('compressed.coke_clay') * 3, [
+mods.minecraft.crafting.addShaped("gregtech/compressed_coke_clay", metaitem('compressed.coke_clay') * 3, [
   [item('tfc:ceramics/unfired/clay_brick'), item('tfc:ceramics/unfired/clay_brick'), item('tfc:ceramics/unfired/clay_brick')],
   [ore('sand'), metaitem('wooden_form.brick'), ore('sand')],
   [ore('sand'), ore('sand'), ore('sand')]])
 
 // Деревянная форма
-crafting.addShaped("gregtech/wooden_form", metaitem('wooden_form.empty'), [
+mods.minecraft.crafting.addShaped("gregtech/wooden_form", metaitem('wooden_form.empty'), [
   [null, ore('lumber'), null],
   [null, ore('lumber'), null],
   [ore('toolSaw').transform(Function.setToolDamage), ore('lumber'), null]])
 
 // Бронзовый малый бойлер
-crafting.addShaped("gregtech/small_steam_coal_boiler", metaitem('steam_boiler_coal_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/small_steam_coal_boiler", metaitem('steam_boiler_coal_bronze'), [
   [metaitem('plateBronze'), metaitem('plateBronze'), metaitem('plateBronze')],
   [metaitem('plateBronze'), ore('toolWrench').transform(Function.setToolDamage), metaitem('plateBronze')],
   [item('minecraft:brick_block'), item('tfg:device/blast_furnace'), item('minecraft:brick_block')]])
 
 // Стальной малый бойлер
-crafting.addShaped("gregtech/high_pressure_coal_boiler", metaitem('steam_boiler_coal_steel'), [
+mods.minecraft.crafting.addShaped("gregtech/high_pressure_coal_boiler", metaitem('steam_boiler_coal_steel'), [
   [metaitem('plateSteel'), metaitem('plateSteel'), metaitem('plateSteel')],
   [metaitem('plateSteel'), ore('toolWrench').transform(Function.setToolDamage), metaitem('plateSteel')],
   [item('minecraft:brick_block'), item('tfg:device/blast_furnace'), item('minecraft:brick_block')]])
 
 // Бронзовая паровая печь
-crafting.addShaped("gregtech/steam_furnace", metaitem('steam_furnace_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_furnace", metaitem('steam_furnace_bronze'), [
   [metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze')],
   [metaitem('pipeSmallFluidBronze'), item('gregtech:steam_casing:1'), metaitem('pipeSmallFluidBronze')],
   [metaitem('pipeSmallFluidBronze'), item('tfg:device/blast_furnace'), metaitem('pipeSmallFluidBronze')]])
 
 // Бронзовый паровой сплавщик
-crafting.addShaped("gregtech/steam_alloy_smelter", metaitem('steam_alloy_smelter_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_alloy_smelter", metaitem('steam_alloy_smelter_bronze'), [
   [metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze')],
   [item('tfg:device/blast_furnace'), item('gregtech:steam_casing:1'), item('tfg:device/blast_furnace')],
   [metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze'), metaitem('pipeSmallFluidBronze')]])
 
 // Доменная печь
-crafting.addShaped("gregtech/ebf", metaitem('electric_blast_furnace'), [
+mods.minecraft.crafting.addShaped("gregtech/ebf", metaitem('electric_blast_furnace'), [
   [item('tfg:device/blast_furnace'), item('tfg:device/blast_furnace'), item('tfg:device/blast_furnace')],
   [ore('circuitLv'), item('gregtech:metal_casing:2'), ore('circuitLv')],
   [metaitem('cableGtSingleTin'), ore('circuitLv'), metaitem('cableGtSingleTin')]])
 
 // Мульти-печь
-crafting.addShaped("gregtech/multi_smelter", metaitem('multi_furnace'), [
+mods.minecraft.crafting.addShaped("gregtech/multi_smelter", metaitem('multi_furnace'), [
   [item('tfg:device/blast_furnace'), item('tfg:device/blast_furnace'), item('tfg:device/blast_furnace')],
   [ore('circuitHv'), item('gregtech:metal_casing:2'), ore('circuitHv')],
   [metaitem('cableGtSingleAnnealedCopper'), ore('circuitHv'), metaitem('cableGtSingleAnnealedCopper')]])
 
 // Стацния создания
-crafting.addShaped("gregtech/crafting_station", metaitem('workbench'), [
+mods.minecraft.crafting.addShaped("gregtech/crafting_station", metaitem('workbench'), [
   [ore('chestWood'), ore('slabWood'), ore('chestWood')],
   [ore('plankWood'), ore('craftingTableWood'), ore('plankWood')],
   [ore('plankWood'), ore('toolSaw').transform(Function.setToolDamage), ore('plankWood')]])
 
 // Обработанные доски
-crafting.addShaped("gregtech/treated_wood_planks", item('gregtech:planks', 1), [
+mods.minecraft.crafting.addShaped("gregtech/treated_wood_planks", item('gregtech:planks', 1), [
   [ore('plankWood'), ore('plankWood'), ore('plankWood')],
   [ore('plankWood'), item('tfc:metal/bucket/red_steel').withNbt([Fluid: [FluidName: "creosote", Amount: 1000]]), ore('plankWood')],
   [ore('plankWood'), ore('plankWood'), ore('plankWood')]])
 
 // Primitive water pump deck
-crafting.addShaped("gregtech/primitive_water_pump_deck", item('gregtech:steam_casing:4') * 2, [
+mods.minecraft.crafting.addShaped("gregtech/primitive_water_pump_deck", item('gregtech:steam_casing:4') * 2, [
   [ore('screwIronAny'), ore('plankWood'), ore('screwIronAny')],
   [ore('toolScrewdriver').transform(Function.setToolDamage), ore('slabCobblestone'), ore('toolHammer').transform(Function.setToolDamage)]])
 
 // Primitive water pump hatch
-crafting.addShaped("gregtech/primitive_water_pump_hatch", metaitem('pump_hatch'), [
+mods.minecraft.crafting.addShaped("gregtech/primitive_water_pump_hatch", metaitem('pump_hatch'), [
   [ore('screwIronAny'), ore('ringIronAny'), ore('toolScrewdriver').transform(Function.setToolDamage)],
   [ore('plankTreatedWood'), metaitem('pipeLargeFluidWood'), ore('plankTreatedWood')],
   [ore('slabCobblestone'), ore('ringIronAny'), ore('slabCobblestone')]])
 
 // Primitive water pump
-crafting.addShaped("gregtech/primitive_water_pump", metaitem('primitive_water_pump'), [
+mods.minecraft.crafting.addShaped("gregtech/primitive_water_pump", metaitem('primitive_water_pump'), [
   [ore('ringIronAny'), metaitem('pipeNormalFluidWood'), ore('screwIronAny')],
   [ore('rotorIronAny'), ore('plankTreatedWood'), ore('toolScrewdriver').transform(Function.setToolDamage)],
   [ore('slabCobblestone'), metaitem('pipeLargeFluidWood'), ore('slabCobblestone')]])
 
 // Coke Oven
-crafting.addShaped("gregtech/coke_oven", metaitem('coke_oven'), [
+mods.minecraft.crafting.addShaped("gregtech/coke_oven", metaitem('coke_oven'), [
   [item('gregtech:metal_casing:8'), ore('plateIronAny'), item('gregtech:metal_casing:8')],
   [ore('plateIronAny'), ore('toolWrench').transform(Function.setToolDamage), ore('plateIronAny')],
   [item('gregtech:metal_casing:8'), ore('plateIronAny'), item('gregtech:metal_casing:8')]])
 
 // Steam Miner
-crafting.addShaped("gregtech/steam_miner", metaitem('steam_miner'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_miner", metaitem('steam_miner'), [
   [ore('diamonds'), metaitem('pipeSmallFluidBronze'), ore('diamonds')],
   [metaitem('pipeSmallFluidBronze'), item('gregtech:steam_casing'), metaitem('pipeSmallFluidBronze')],
   [ore('craftingPiston'), metaitem('pipeSmallFluidBronze'), ore('craftingPiston')]])
 
 // Steam Macerator
-crafting.addShaped("gregtech/steam_macerator", metaitem('steam_macerator_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_macerator", metaitem('steam_macerator_bronze'), [
   [ore('diamonds'), metaitem('pipeNormalFluidBronze'), ore('diamonds')],
   [metaitem('pipeNormalFluidBronze'), item('gregtech:steam_casing'), metaitem('pipeNormalFluidBronze')],
   [metaitem('gearSmallBronze'), metaitem('pipeNormalFluidBronze'), metaitem('gearSmallBronze')]])
 
 // Steam Rock Breaker
-crafting.addShaped("gregtech/steam_rick_breaker", metaitem('steam_rock_breaker_bronze'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_rick_breaker", metaitem('steam_rock_breaker_bronze'), [
   [ore('craftingPiston'), metaitem('pipeSmallFluidBronze'), ore('craftingPiston')],
   [metaitem('pipeSmallFluidBronze'), item('gregtech:steam_casing'), metaitem('pipeSmallFluidBronze')],
   [ore('diamonds'), metaitem('pipeSmallFluidBronze'), ore('diamonds')]])
 
 // Firebrick GT
-crafting.addShaped("gregtech/fire_bricks", item('gregtech:metal_casing:1'), [
+mods.minecraft.crafting.addShaped("gregtech/fire_bricks", item('gregtech:metal_casing:1'), [
   [null, metaitem('plateCopper'), null],
   [metaitem('plateCopper'), item('tfg:core/fire_bricks'), metaitem('plateCopper')],
   [null, metaitem('plateCopper'), null]])
 
 // Quartz Sand - 1
-crafting.addShaped("gregtech/quartz_sand", metaitem('dustQuartzSand'), [
+mods.minecraft.crafting.addShaped("gregtech/quartz_sand", metaitem('dustQuartzSand'), [
   [null, ore('sand'), null],
   [null, ore('toolMortar').transform(Function.setToolDamage), null],
   [null, null, null]])
 
 // Steam Import Bus
-crafting.addShaped("gregtech/steam_import_bus", metaitem('steam_import_bus'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_import_bus", metaitem('steam_import_bus'), [
   [null, ore('chest'), null],
   [null, item('gregtech:steam_casing'), null],
   [null, null, null]])
 
 // Steam Export Bus
-crafting.addShaped("gregtech/steam_export_bus", metaitem('steam_export_bus'), [
+mods.minecraft.crafting.addShaped("gregtech/steam_export_bus", metaitem('steam_export_bus'), [
   [null, item('gregtech:steam_casing'), null],
   [null, ore('chest'), null],
   [null, null, null]])
 
 // Wooden Crate
-crafting.addShaped("gregtech/wooden_crate", metaitem('crate.wood'), [
+mods.minecraft.crafting.addShaped("gregtech/wooden_crate", metaitem('crate.wood'), [
   [ore('screwIronAny'), ore('plankWood'), ore('screwIronAny')],
   [ore('plankWood'), ore('toolSaw').transform(Function.setToolDamage), ore('plankWood')],
   [ore('screwIronAny'), ore('plankWood'), ore('screwIronAny')]])
 
 // Блокнот
-crafting.addShaped("gregtech/clipboard", metaitem('clipboard'), [
+mods.minecraft.crafting.addShaped("gregtech/clipboard", metaitem('clipboard'), [
   [null, ore('screwIronAny'), ore('toolScrewdriver').transform(Function.setToolDamage)],
   [ore('boltIronAny'), metaitem('plateWood'), ore('boltIronAny')],
   [ore('paper'), ore('paper'), ore('paper')]])
 
 // Лук
-crafting.addShaped("gregtech/bow", item('minecraft:bow'), [
+mods.minecraft.crafting.addShaped("gregtech/bow", item('minecraft:bow'), [
   [ore('toolHammer').transform(Function.setToolDamage), metaitem('stickLongWood'), ore('string')],
   [metaitem('stickLongWood'), ore('ringIronAny'), ore('string')],
   [ore('toolFile').transform(Function.setToolDamage), metaitem('stickLongWood'), ore('string')]])
@@ -187,7 +187,7 @@ mods.gregtech.macerator.recipeBuilder()
   .duration(135).EUt(2).buildAndRegister()
 
 // Extruder Shape (Sense Head)
-crafting.addShaped("gregtech/extruder_shape_sense", item('tfg:meta_item', 6), [
+mods.minecraft.crafting.addShaped("gregtech/extruder_shape_sense", item('tfg:meta_item', 6), [
   [null, null, null],
   [ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.extruder.plate'), null],
   [null, null, null]])
@@ -198,7 +198,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Mold (Knife Head)
-crafting.addShaped("gregtech/mold_knife", item('tfg:meta_item', 10), [
+mods.minecraft.crafting.addShaped("gregtech/mold_knife", item('tfg:meta_item', 10), [
   [null, ore('toolHammer').transform(Function.setToolDamage), metaitem('shape.empty')],
   [null, null, null],
   [null, null, null]])
@@ -209,7 +209,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Sword Head)
-crafting.addShaped("gregtech/shape_extruder_sword", item('tfg:meta_item', 1), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_sword", item('tfg:meta_item', 1), [
   [null, null, null],
   [null, metaitem('shape.extruder.plate'), ore('toolWireCutter').transform(Function.setToolDamage)],
   [null, null, null]])
@@ -220,7 +220,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Saw Head)
-crafting.addShaped("gregtech/shape_extruder_saw", item('tfg:meta_item', 9), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_saw", item('tfg:meta_item', 9), [
   [null, null, null],
   [null, metaitem('shape.extruder.plate'), null],
   [null, null, ore('toolWireCutter').transform(Function.setToolDamage)]])
@@ -231,7 +231,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Hammer Head)
-crafting.addShaped("gregtech/shape_extruder_hammer", item('tfg:meta_item', 8), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_hammer", item('tfg:meta_item', 8), [
   [null, ore('toolWireCutter').transform(Function.setToolDamage), null],
   [null, metaitem('shape.extruder.ingot'), null],
   [null, null, null]])
@@ -242,7 +242,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (File Head)
-crafting.addShaped("gregtech/shape_extruder_file", item('tfg:meta_item', 7), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_file", item('tfg:meta_item', 7), [
   [null, null, null],
   [null, metaitem('shape.extruder.plate'), null],
   [null, ore('toolWireCutter').transform(Function.setToolDamage), null]])
@@ -253,7 +253,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Hoe Head)
-crafting.addShaped("gregtech/shape_extruder_hoe", item('tfg:meta_item', 5), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_hoe", item('tfg:meta_item', 5), [
   [null, null, null],
   [null, metaitem('shape.extruder.ingot'), ore('toolWireCutter').transform(Function.setToolDamage)],
   [null, null, null]])
@@ -264,7 +264,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Axe Head)
-crafting.addShaped("gregtech/shape_extruder_axe", item('tfg:meta_item', 4), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_axe", item('tfg:meta_item', 4), [
   [null, null, null],
   [ore('toolWireCutter').transform(Function.setToolDamage), metaitem('shape.extruder.plate'), null],
   [null, null, null]])
@@ -275,7 +275,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Shovel Head)
-crafting.addShaped("gregtech/shape_extruder_shovel", item('tfg:meta_item', 3), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_shovel", item('tfg:meta_item', 3), [
   [ore('toolWireCutter').transform(Function.setToolDamage), null, null],
   [null, metaitem('shape.extruder.plate'), null],
   [null, null, null]])
@@ -286,7 +286,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Pickaxe Head)
-crafting.addShaped("gregtech/shape_extruder_pickaxe", item('tfg:meta_item', 2), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_pickaxe", item('tfg:meta_item', 2), [
   [null, null, ore('toolWireCutter').transform(Function.setToolDamage)],
   [null, metaitem('shape.extruder.ingot'), null],
   [null, null, null]])
@@ -297,7 +297,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Extruder Shape (Chisel Head)
-crafting.addShaped("gregtech/shape_extruder_chisel", item('tfg:meta_item', 12), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_chisel", item('tfg:meta_item', 12), [
   [null, null, null],
   [null, metaitem('shape.extruder.plate'), null],
   [ore('toolWireCutter').transform(Function.setToolDamage), null, null]])
@@ -308,7 +308,7 @@ mods.gregtech.forming_press.recipeBuilder()
   .duration(120).EUt(22).buildAndRegister()
 
 // Mold (Propick Head)
-crafting.addShaped("gregtech/shape_extruder_propick", item('tfg:meta_item', 11), [
+mods.minecraft.crafting.addShaped("gregtech/shape_extruder_propick", item('tfg:meta_item', 11), [
   [metaitem('shape.extruder.plate'), null, null],
   [null, null, null],
   [ore('toolHammer').transform(Function.setToolDamage), null, null]])
@@ -474,20 +474,20 @@ mods.gregtech.chemical_reactor.recipeBuilder()
   .duration(700).EUt(2000).buildAndRegister()
 
 // Ступка + Гравий -> Кремений
-crafting.addShapeless("gregtech/flint", item('minecraft:flint'), [ore('toolMortar').transform(Function.setToolDamage), ore('gravel')])
+mods.minecraft.crafting.addShapeless("gregtech/flint", item('minecraft:flint'), [ore('toolMortar').transform(Function.setToolDamage), ore('gravel')])
 
 // Бронзовая пыль в TFC стиле
-crafting.addShapeless("gregtech/dust_bronze", metaitem('dustBronze') * 9, [metaitem('dustTin'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper')])
+mods.minecraft.crafting.addShapeless("gregtech/dust_bronze", metaitem('dustBronze') * 9, [metaitem('dustTin'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper'), metaitem('dustCopper')])
 
 // Исправление рецепта на бумагу
 
 // Крафт бумажной пыли
-crafting.addShaped("gregtech/dust_paper", metaitem('dustPaper') * 2, [
+mods.minecraft.crafting.addShaped("gregtech/dust_paper", metaitem('dustPaper') * 2, [
   [item('tfc:food/sugarcane'), item('tfc:food/sugarcane'), item('tfc:food/sugarcane')],
   [null, ore('toolMortar').transform(Function.setToolDamage), null]])
 
 // Крафт бумаги из пыли
-// crafting.addShaped("gregtech/paper", item('minecraft:paper') * 2,[
+// mods.minecraft.crafting.addShaped("gregtech/paper", item('minecraft:paper') * 2,[
 //     [null, ore('slabStonePolished').reuse(), null],
 //     [metaitem('dustPaper'), metaitem('dustPaper'), metaitem('dustPaper')],
 //     [null, ore('slabStonePolished').reuse(), null]])
@@ -712,7 +712,7 @@ mods.gregtech.electric_furnace.recipeBuilder()
   .duration(40).EUt(7).buildAndRegister()
 
 // Passthrough hatch item
-crafting.addShaped("gregtech/passthrough_hatch_item", metaitem('passthrough_hatch_item'), [
+mods.minecraft.crafting.addShaped("gregtech/passthrough_hatch_item", metaitem('passthrough_hatch_item'), [
   [null, metaitem('conveyor.module.hv'), null],
   [metaitem('gearSmallSteel'), metaitem('hull.hv'), metaitem('gearSmallSteel')],
   [null, ore('chestWood'), null]])
@@ -728,7 +728,7 @@ def tongs_wood = item('gregtech:tongs').withNbt([DisallowContainerItem: (byte) 0
 // --- Добавление рецептов
 
 // Щипцы из дерева
-crafting.addShaped('gregtech/tongs_wood', tongs_wood, [
+mods.minecraft.crafting.addShaped('gregtech/tongs_wood', tongs_wood, [
   [null, ore('stickWood')],
   [ore('stickWood'), ore('string')]
 ])
