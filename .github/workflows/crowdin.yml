@@ -145,5 +145,5 @@ crowdin-status:
         configuration: crowdin.yml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+        CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+        CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
