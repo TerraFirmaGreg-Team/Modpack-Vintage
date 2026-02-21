@@ -16,7 +16,7 @@
     "type": "properties",
     "update_option": "update_without_changes",
     "languages_mapping" : {
-      "two_letters_code" : {
+      "locale_with_underscore" : {
         "da-DK": "da_dk",
         "de-AT": "de_at",
         "de-CH": "de_ch",
