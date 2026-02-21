@@ -9,7 +9,7 @@
 
 "files" : [
   {
-    "source" : "/groovy/assets/*/lang/en_us.lang",
+    "source" : "/groovy/assets/*/lang/*.lang",
     "translation" : "/%original_path%/%locale_with_underscore%.%file_extension%",
     "type": "properties",
     "update_option": "update_without_changes",
