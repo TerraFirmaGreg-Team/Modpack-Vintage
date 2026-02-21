@@ -5,37 +5,37 @@ on:
     branches: [ dev, translations ]
     paths:
       - 'groovy/assets/**/lang/en_us.lang'
-    workflow_dispatch:
-      inputs:
-        operation:
-          description: 'Operation type'
-          required: true
-          default: 'both'
-          type: choice
-          options:
-            - upload
-            - download
-            - both
-            - init
-        force_upload:
-          description: 'Force upload all sources (for initialization)'
-          required: false
-          default: false
-          type: boolean
-        skip_pr:
-          description: 'Skip pull request creation'
-          required: false
-          default: false
-          type: boolean
-        download_language:
-          description: 'Download specific language only (optional)'
-          required: false
-          type: string
-        export_approved_only:
-          description: 'Export only approved translations'
-          required: false
-          default: false
-          type: boolean
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'Operation type'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - upload
+          - download
+          - both
+          - init
+      force_upload:
+        description: 'Force upload all sources (for initialization)'
+        required: false
+        default: false
+        type: boolean
+      skip_pr:
+        description: 'Skip pull request creation'
+        required: false
+        default: false
+        type: boolean
+      download_language:
+        description: 'Download specific language only (optional)'
+        required: false
+        type: string
+      export_approved_only:
+        description: 'Export only approved translations'
+        required: false
+        default: false
+        type: boolean
   schedule:
     # Run daily at 2 AM UTC
     - cron: '0 2 * * *'
