@@ -60,7 +60,7 @@ jobs:
           upload_sources_args: '--auto-update --preserve-hierarchy'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
 
       - name: Download All Translations
@@ -78,7 +78,7 @@ jobs:
           pull_request_labels: "Pull request: Translation,setup"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
 
 #   crowdin-sync:
@@ -101,7 +101,7 @@ jobs:
 #           upload_sources_args: ${{ github.event.inputs.force_upload == 'true' && '--auto-update' || '' }}
 #         env:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+#           CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_ID }}
 #           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           
 #       - name: Crowdin Download Translations
@@ -125,7 +125,7 @@ jobs:
 #           download_translations_args: ${{ github.event.inputs.export_approved_only == 'true' && '--export-approved-only' || '' }}
 #         env:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+#           CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_ID }}
 #           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
  
 # crowdin-status:
@@ -144,5 +144,5 @@ jobs:
 #         configuration: crowdin.yml
 #       env:
 #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_ID }}
+#         CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_ID }}
 #         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
