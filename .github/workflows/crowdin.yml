@@ -47,7 +47,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -134,7 +134,7 @@ jobs:
   
 #   steps:
 #     - name: Checkout repository
-#       uses: actions/checkout@v4
+#       uses: actions/checkout@v6
       
 #     - name: Get Crowdin Project Status
 #       uses: crowdin/github-action@v2

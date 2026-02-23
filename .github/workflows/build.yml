@@ -29,7 +29,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
         
@@ -184,7 +184,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
 
       - name: 🔄 Replace strings
         shell: bash
@@ -242,7 +242,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
 
       - name: 🔄 Replace strings
         shell: bash
@@ -289,7 +289,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
 
       - name: 🔄 Replace strings
         shell: bash
@@ -424,7 +424,7 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
 
       - name: 📦 Download artifact
         uses: actions/download-artifact@v7.0.0
